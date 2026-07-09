@@ -1,0 +1,21 @@
+# Sage Academy RAG Tool Vision
+For v0.1 of the Sage Academy question-answering (QA) system, we will be implementing a Retrieval Augmented Generation (RAG) system for identifying the appropriate context to pass to an LLM to answer a student’s question. The high-level flow is as follows with necessary components to build bolded:
+1. All transcripts across all courses will be extracted using the tool from member of team. (before RAG system uses it)
+2. Every sentence of every transcript will be passed through an embedding API or pretrained embedding model to return a single vector representation for each sentence. 
+3. The embeddings will be stored in a vector database with the metadata of the video the sentence came from, where that video falls in the sequence of the course, and the timestamp within that specific video of the sentence. Some vector databases to consider are Pinecone DB, Neo4j (for graph based approach), MongoDB, and many others.
+4. Student types a question into a web application for QA.
+5. The question is passed through the same embedding model or API as the transcripts to return an embedding vector for the question.
+6. The question embedding vector is compared to the sentence vectors in the vector database via cosine similarity (or some other distance/similarity measure). The most similar sentence will be extracted and, depending on context window of the QA model, either the full relevant video where that sentence appeared will be passed to the QA system or simply a few sentences around that specific one.
+7. This text/video context will be passed along with the student question to an LLM via an API call to provide as relevant of a response as possible that contextualizes the answer based on our curriculum. The timestamp and video link should also be returned with the answer to provide students with a reference point for where in the video they should start watching.
+8. (Bonus) If possible, it would be ideal to return the graph of where the content in the answer falls in the “knowledge graph” of all of our Sage Academy curriculum, that way the student knows what may be foundational material that they haven’t completed yet before jumping to that next step.
+
+So to breakdown the things we’ll need to build/implement:
+* Embedding model or API
+* Vector database
+* Web application for question answering
+
+This is basically just a RAG system so any tutorial on that will be relevant. It’s also not critical to implement the most robust, efficient solution yet. Functionality and time-to-test are the most important things right now, since we can always make things better. My biggest concern is that we have something to show.
+
+## Documentation Files
+- MVP: [aiDocs/mvp.md](mvp.md)
+- PRD: [aiDocs/prd.md](prd.md)
