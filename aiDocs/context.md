@@ -16,6 +16,16 @@ So to breakdown the things we’ll need to build/implement:
 
 This is basically just a RAG system so any tutorial on that will be relevant. It’s also not critical to implement the most robust, efficient solution yet. Functionality and time-to-test are the most important things right now, since we can always make things better. My biggest concern is that we have something to show.
 
+## Behavior
+Whenever creating plan docs and roadmap docs, always save them in ai/roadmaps. Prefix the name with the date. Add a note that we need to avoid over-engineering, cruft, and legacy-compatibility features in this clean code project. Make sure they reference each other.
+
+Whenever finishing with implementing a plan / roadmap doc pair, make sure the roadmap is up to date (tasks checked off, etc). Then save the docs to ai/roadmaps/complete. Then update aiDocs/changelog.md accordingly.
+
+## Coding Style
+
+* Keep files small and single-responsibility. One screen per file.
+* No over-engineering, no premature abstractions, no legacy-compatibility shims.
+* Avoid adding dependencies unless necessary — check [aiDocs/architecture.md](architecture.md) first.
 
 ## Project File Reference
 | File Path | Purpose |
