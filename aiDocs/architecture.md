@@ -3,6 +3,8 @@
 ## Purpose
 This document outlines the recommended structure for the first version of the Sage Academy RAG tool. The goal is to build a working prototype that helps students ask course-related questions and receive answers grounded in course video transcripts, with a clear reference to the relevant video and timestamp.
 
+This architecture is intended to support the v0.1 MVP and PRD in a simple, demo-oriented way. It is not meant to define a long-term enterprise platform.
+
 ## Guiding Principles
 - Prioritize a working demo over perfect engineering.
 - Keep the first version simple enough to build and extend.

@@ -3,8 +3,10 @@
 ## Product Overview
 Sage Academy RAG Tool is a study assistant for students in data analytics and information systems courses. It helps users find the most relevant course video content and receive answers grounded in that curriculum.
 
+These requirements support the v0.1 MVP described in [aiDocs/mvp.md](mvp.md) and the implementation approach in [aiDocs/architecture.md](architecture.md).
+
 ## Target Users
-- Students in data analytics, information systems, and related courses
+- Freshmen or first year students in data analytics, information systems, and related courses
 - Instructors or teaching assistants who want a searchable study aid
 
 ## Key Features

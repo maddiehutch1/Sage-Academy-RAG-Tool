@@ -3,6 +3,9 @@
 ## Goal
 Create a working prototype that helps students ask course-related questions and receive answers grounded in video transcripts, along with the relevant video and timestamp.
 
+## Alignment with Other Docs
+This MVP is the implementation boundary for v0.1. It should be read alongside [aiDocs/prd.md](prd.md) and [aiDocs/architecture.md](architecture.md) so the product scope, requirements, and technical plan stay aligned.
+
 ## Scope
 - Ingest a small set of course transcripts
 - Split transcripts into meaningful chunks
