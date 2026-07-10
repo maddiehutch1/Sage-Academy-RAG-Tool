@@ -25,12 +25,104 @@ This plan organizes the v0.1 build into a staged roadmap so the team can move fr
 - Make retrieval and source attribution visible from the start.
 - Delay advanced features until the core flow works reliably.
 
-## Milestones
-- A clear MVP definition is agreed.
-- Sample transcript data can be ingested and indexed.
-- The system can answer a test question using course content.
-- A simple web experience presents the answer and source reference.
-- The prototype is ready to demo and iterate on.
+## Milestone-Based Delivery Plan
+The project should be built in short, verifiable milestones. Each milestone should produce a working increment that can be tested and reviewed before moving to the next step.
+
+### Milestone 1 — Define the MVP and Scope
+**Goal**: Lock the product direction and confirm what v0.1 must do.
+
+**Tasks**
+- [ ] Confirm the core student use case
+- [ ] Define the expected answer contract
+- [ ] Select the first course or transcript set for the prototype
+- [ ] Write down what is intentionally out of scope
+
+**Exit criteria**
+- The team agrees on the first usable end-to-end experience
+- The MVP is narrow enough to build quickly
+
+### Milestone 2 — Set Up the Project Foundation
+**Goal**: Create the project skeleton and establish the basic technical environment.
+
+**Tasks**
+- [ ] Choose the frontend, backend, and database stack
+- [ ] Create the repository structure
+- [ ] Set up environment variables and local configuration patterns
+- [ ] Define the initial data model for courses, videos, and chunks
+
+**Exit criteria**
+- The project can be opened and run locally in a basic form
+- The key folders and services are in place
+
+### Milestone 3 — Build the Ingestion and Indexing Pipeline
+**Goal**: Turn transcript content into indexed chunks with metadata.
+
+**Tasks**
+- [ ] Support the first transcript input format
+- [ ] Implement transcript ingestion from local files
+- [ ] Normalize the transcript content and preserve timing data
+- [ ] Chunk the transcript into meaningful retrieval units
+- [ ] Attach metadata to each chunk
+- [ ] Generate embeddings and store them in PostgreSQL with pgvector
+
+**Exit criteria**
+- At least one transcript can be ingested and indexed successfully
+- Chunks can be retrieved from storage with metadata intact
+
+### Milestone 4 — Implement Retrieval and Answer Generation
+**Goal**: Make the system answer questions using the indexed content.
+
+**Tasks**
+- [ ] Embed the user question using the same model as the index
+- [ ] Implement similarity search against indexed chunks
+- [ ] Select the top-k chunk set for each answer
+- [ ] Create a prompt template with retrieved context and the question
+- [ ] Connect the answer flow to the LLM API
+- [ ] Return the answer plus source video and timestamp metadata
+
+**Exit criteria**
+- A sample question returns a grounded answer with supporting context
+- The system can point to a relevant part of the transcript/video
+
+### Milestone 5 — Build the Demo UI
+**Goal**: Expose the core product experience to a user in a simple interface.
+
+**Tasks**
+- [ ] Create a basic question input page
+- [ ] Display the answer in the UI
+- [ ] Show the relevant video reference and timestamp
+- [ ] Add simple loading and error handling
+- [ ] Keep the layout clear enough for a live demo
+
+**Exit criteria**
+- A user can ask a question and see a result from the backend
+- The UI clearly communicates the answer and its source reference
+
+### Milestone 6 — Validate and Tune the Prototype
+**Goal**: Test the experience with realistic questions and improve weak areas.
+
+**Tasks**
+- [ ] Run representative student questions against the system
+- [ ] Check whether retrieval is selecting the correct evidence
+- [ ] Adjust chunking, overlap, prompt wording, or retrieval count as needed
+- [ ] Improve answer clarity and citation quality
+
+**Exit criteria**
+- The prototype performs well enough to be shown convincingly
+- The main quality issues are either fixed or documented
+
+### Milestone 7 — Prepare for Demo and Handoff
+**Goal**: Leave the project in a demo-ready state that others can understand and extend.
+
+**Tasks**
+- [ ] Add clear setup instructions
+- [ ] Document the architecture and core workflow
+- [ ] Clean up obvious rough edges and dead code
+- [ ] Note what should be improved in future versions
+
+**Exit criteria**
+- The project is understandable to a new contributor
+- The demo can be run and explained without confusion
 
 ## Expected Outcome
 By the end of the plan, the team should have a working prototype that demonstrates the core product idea and provides a strong base for future improvements.

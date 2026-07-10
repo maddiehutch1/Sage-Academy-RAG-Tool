@@ -16,6 +16,14 @@ So to breakdown the things we’ll need to build/implement:
 
 This is basically just a RAG system so any tutorial on that will be relevant. It’s also not critical to implement the most robust, efficient solution yet. Functionality and time-to-test are the most important things right now, since we can always make things better. My biggest concern is that we have something to show.
 
-## Documentation Files
-- MVP: [aiDocs/mvp.md](mvp.md)
-- PRD: [aiDocs/prd.md](prd.md)
+
+## Project File Reference
+| File Path | Purpose |
+| --- | --- |
+| [aiDocs/context.md](context.md) | Core product vision and initial system description |
+| [aiDocs/mvp.md](mvp.md) | Defines the v0.1 scope and success criteria |
+| [aiDocs/prd.md](prd.md) | Captures product requirements and expectations |
+| [aiDocs/architecture.md](architecture.md) | Describes the recommended stack, architecture, and data flow |
+| [ai/roadmaps/2026-07-10-high-level-plan.md](../ai/roadmaps/2026-07-10-high-level-plan.md) | Main phased roadmap for implementation |
+| [ai/roadmaps/2026-07-10-milestone-delivery-plan.md](../ai/roadmaps/2026-07-10-milestone-delivery-plan.md) | Ordered milestone-based delivery plan |
+| [aiDocs/changelog.md](../aiDocs/changelog.md) | Log of changes as project progresses |
