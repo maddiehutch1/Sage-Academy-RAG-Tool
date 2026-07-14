@@ -20,12 +20,44 @@ A lightweight prototype for helping students ask questions about course content 
 - ai/roadmaps/: planning and milestone documents
 
 ## Quick start
-1. Copy .env.example to .env and update the values.
-2. Start PostgreSQL with docker-compose up -d.
-3. Install backend dependencies: pip install -r backend/requirements.txt
-4. Install frontend dependencies: cd frontend && npm install
-5. Run the backend: uvicorn backend.main:app --reload
-6. Run the frontend: cd frontend && npm run dev
+
+### Prerequisites
+- Python 3.11 or 3.12
+- Node.js 18+
+- Docker Desktop (for PostgreSQL)
+
+### Steps
+1. Copy `.env.example` to `.env` and fill in your values.
+2. Start PostgreSQL (the schema is applied automatically on first run):
+   ```
+   docker-compose up -d
+   ```
+3. Create and activate a Python virtual environment:
+   ```
+   python -m venv .venv
+   # Windows
+   .venv\Scripts\activate
+   # macOS / Linux
+   source .venv/bin/activate
+   ```
+4. Install backend dependencies:
+   ```
+   pip install -r backend/requirements.txt
+   ```
+5. Install frontend dependencies:
+   ```
+   cd frontend && npm install
+   ```
+6. Run the backend:
+   ```
+   uvicorn backend.main:app --reload
+   ```
+7. Run the frontend (in a separate terminal):
+   ```
+   cd frontend && npm run dev
+   ```
+8. Verify the backend health check: open http://127.0.0.1:8000/health and confirm you see `{"status":"ok",...}`.
+9. Verify the frontend: open http://localhost:3000 and confirm the page loads.
 
 ## What is implemented so far
 - Backend health endpoint
