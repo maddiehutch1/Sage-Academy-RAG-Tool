@@ -1,0 +1,6 @@
+Course: Data Analytics Foundations
+Video: Introduction to SQL
+
+Welcome to this lesson on SQL joins. In this video, we introduce the core idea of combining rows from multiple tables using joins. We discuss inner joins, left joins, and how they affect the resulting dataset.
+
+A left join keeps all rows from the left table and adds matching values from the right table when available. An inner join returns only rows that have matching values in both tables.
