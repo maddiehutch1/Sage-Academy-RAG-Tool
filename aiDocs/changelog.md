@@ -4,7 +4,11 @@ This file is a concise record of project changes as the Sage Academy RAG Tool ev
 
 ## 2026-07-15
 
-- Started Phase 3 (Retrieval and Answer Generation). Source: [ai/roadmaps/2026-07-10-phase-03-retrieval-answer-plan.md](../ai/roadmaps/2026-07-10-phase-03-retrieval-answer-plan.md)
+- Completed Phase 3 (Retrieval and Answer Generation). Validated via Swagger UI — grounded answers with source citations confirmed working. Source: [ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md](../ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md)
+- Started Phase 4 (Demo User Experience). Source: [ai/roadmaps/2026-07-10-phase-04-demo-ui-plan.md](../ai/roadmaps/2026-07-10-phase-04-demo-ui-plan.md)
+- Added Tailwind CSS (v3), PostCSS, and Autoprefixer to the frontend. Created `globals.css` and `tailwind.config.ts`.
+- Replaced placeholder `page.tsx` with a full demo UI: question textarea, submit button with loading spinner, answer card, and per-source citation cards showing course, video, timestamp range (MM:SS), and excerpt.
+- Updated `layout.tsx` to import global styles.
 - Created `backend/db.py`: thin connection helper wrapping psycopg2 + DATABASE_URL.
 - Created `backend/retrieval.py`: embeds a user question with text-embedding-3-small and returns top-5 nearest transcript chunks from pgvector with full metadata.
 - Created `backend/answer.py`: builds a grounded prompt from retrieved chunks and calls gpt-4o-mini (temperature=0.2) to produce a student-facing answer with source citations.

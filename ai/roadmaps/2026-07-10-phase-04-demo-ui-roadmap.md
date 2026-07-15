@@ -3,11 +3,15 @@
 Date: 2026-07-10
 
 ## Steps
-1. Create a simple page layout with a question input and a response panel.
-2. Connect the frontend to the backend answer endpoint.
-3. Display the answer, video reference, timestamp, and relevance explanation in a clear layout.
-4. Add basic loading and error handling so the UI feels polished enough for a demo.
-5. Review the experience from a student perspective and simplify any confusing parts.
+1. [x] Create a simple page layout with a question input and a response panel.
+   - Tailwind CSS added to frontend. Single-page layout with centered max-w-2xl column.
+2. [x] Connect the frontend to the backend answer endpoint.
+   - fetch() POST to NEXT_PUBLIC_API_URL/ask. Enter key and button both submit.
+3. [x] Display the answer, video reference, timestamp, and relevance explanation in a clear layout.
+   - Answer card + source cards with course name, video title, MM:SS timestamp range, and excerpt.
+4. [x] Add basic loading and error handling so the UI feels polished enough for a demo.
+   - Spinner + "Thinking…" during request. Error banner on failure. Button disabled while loading.
+5. [ ] Review the experience from a student perspective and simplify any confusing parts.
 
 ## Implementation Notes
 - Favor a straightforward interface over elaborate visual design.

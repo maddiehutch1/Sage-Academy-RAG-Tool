@@ -11,11 +11,11 @@ This is a clean-start project with no existing users, no existing data, and no m
 Create a simple, student-friendly interface that lets a user ask a question and see a grounded answer with a clear video reference.
 
 ## Checklist
-- [ ] Build a minimal question input form
-- [ ] Display the answer in a clear, readable format
-- [ ] Show the relevant video and timestamp or time range
-- [ ] Include a short explanation of why the selected section is relevant
-- [ ] Add basic loading, empty, and error states
+- [x] Build a minimal question input form
+- [x] Display the answer in a clear, readable format
+- [x] Show the relevant video and timestamp or time range
+- [x] Include a short explanation of why the selected section is relevant
+- [x] Add basic loading, empty, and error states
 - [ ] Make the interface simple enough for a live demo
 
 ## What Should Happen in This Phase

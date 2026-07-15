@@ -17,7 +17,7 @@ Create the core intelligence layer that accepts a student question, retrieves re
 - [x] Create a prompt template that includes the retrieved context and the student question
 - [x] Connect the app to an LLM API for answer generation
 - [x] Return answer content plus the relevant video/timestamp metadata
-- [ ] Validate that answers are grounded in the retrieved chunks
+- [x] Validate that answers are grounded in the retrieved chunks
 
 ## What Should Happen in This Phase
 - Use the indexed chunks as the retrieval source of truth.

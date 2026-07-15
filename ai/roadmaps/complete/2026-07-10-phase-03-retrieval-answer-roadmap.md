@@ -15,7 +15,8 @@ Date: 2026-07-10
    - gpt-4o-mini via chat completions. temperature=0.2 for consistent, grounded output.
 6. [x] Add metadata to the response for the recommended video and timestamp range.
    - AskResponse includes sources list: course, video, chunk_index, start_time, end_time, excerpt.
-7. [ ] Run sample questions and inspect whether the output is grounded and relevant.
+7. [x] Run sample questions and inspect whether the output is grounded and relevant.
+   - Validated via Swagger UI (/docs). All questions returned coherent, on-topic answers with correct source metadata.
 
 ## Implementation Notes
 - Keep the retrieval logic straightforward rather than introducing multiple ranking layers too early.
