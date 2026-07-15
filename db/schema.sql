@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
 CREATE TABLE IF NOT EXISTS courses (
   id SERIAL PRIMARY KEY,
   course_id VARCHAR(100) UNIQUE NOT NULL,
@@ -21,7 +23,7 @@ CREATE TABLE IF NOT EXISTS transcript_chunks (
   start_time INTEGER,
   end_time INTEGER,
   chunk_index INTEGER,
-  embedding BYTEA
+  embedding vector(1536)
 );
 
 CREATE TABLE IF NOT EXISTS question_logs (

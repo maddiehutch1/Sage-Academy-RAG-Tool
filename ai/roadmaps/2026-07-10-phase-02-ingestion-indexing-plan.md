@@ -11,12 +11,12 @@ This is a clean-start project with no existing users, no existing data, and no m
 Turn raw transcript sources into structured, retrievable chunks with metadata so the system can later search and answer questions from course content.
 
 ## Checklist
-- [ ] Define the initial transcript input formats to support
-- [ ] Build or script a transcript ingestion flow from local files
-- [ ] Normalize transcript text and preserve time metadata where available
-- [ ] Create a chunking strategy for meaningful retrieval units
-- [ ] Attach metadata such as course, video, timestamp range, and source reference
-- [ ] Generate embeddings for each chunk and store them in the vector store
+- [x] Define the initial transcript input formats to support
+- [x] Build or script a transcript ingestion flow from local files
+- [x] Normalize transcript text and preserve time metadata where available
+- [x] Create a chunking strategy for meaningful retrieval units
+- [x] Attach metadata such as course, video, timestamp range, and source reference
+- [x] Generate embeddings for each chunk and store them in the vector store
 - [ ] Validate that indexed chunks can be retrieved for known sample questions
 
 ## What Should Happen in This Phase
