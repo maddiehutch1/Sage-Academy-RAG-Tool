@@ -11,7 +11,7 @@ This is a clean-start project with no existing users, no existing data, and no m
 Test the prototype with realistic student questions and improve the retrieval, prompting, and source attribution quality where needed.
 
 ## Checklist
-- [ ] Run sample questions from the intended student use cases
+- [x] Run sample questions from the intended student use cases
 - [ ] Review whether retrieved chunks are actually relevant
 - [ ] Tune chunk size, overlap, and retrieval count if needed
 - [ ] Improve prompt wording and answer brevity if the output is weak

@@ -16,7 +16,7 @@ Create a simple, student-friendly interface that lets a user ask a question and 
 - [x] Show the relevant video and timestamp or time range
 - [x] Include a short explanation of why the selected section is relevant
 - [x] Add basic loading, empty, and error states
-- [ ] Make the interface simple enough for a live demo
+- [x] Make the interface simple enough for a live demo
 
 ## What Should Happen in This Phase
 - Focus on clarity rather than visual polish.

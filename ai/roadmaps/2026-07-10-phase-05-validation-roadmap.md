@@ -3,12 +3,14 @@
 Date: 2026-07-10
 
 ## Steps
-1. Prepare a small set of realistic student questions that reflect the expected use cases.
-2. Run those questions through the retrieval and answer flow.
-3. Review the matched chunks and the returned answer for relevance and grounding.
-4. Adjust chunk size, overlap, retrieval count, and prompt wording where needed.
-5. Fix major issues in the output contract or UI presentation.
-6. Capture unresolved issues and decide what should be deferred to later phases.
+1. [x] Prepare a small set of realistic student questions that reflect the expected use cases.
+   - tests/eval_questions.json: 8 questions covering cloud models, AWS services, pricing, compute, and course tools.
+2. [x] Run those questions through the retrieval and answer flow.
+   - scripts/run_eval.py: runs all questions end-to-end, scores distances, checks keyword coverage, saves a timestamped Markdown report to tests/eval_results/.
+3. [ ] Review the matched chunks and the returned answer for relevance and grounding.
+4. [ ] Adjust chunk size, overlap, retrieval count, and prompt wording where needed.
+5. [ ] Fix major issues in the output contract or UI presentation.
+6. [ ] Capture unresolved issues and decide what should be deferred to later phases.
 
 ## Implementation Notes
 - Keep the validation loop small and practical.

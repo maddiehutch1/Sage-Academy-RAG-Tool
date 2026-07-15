@@ -1,0 +1,50 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the difference between IaaS, PaaS, and SaaS?",
+    "topic": "cloud service models",
+    "expected_keywords": ["infrastructure", "platform", "software", "service"]
+  },
+  {
+    "id": "q02",
+    "question": "What are EC2 and S3 and why are they important?",
+    "topic": "core AWS services",
+    "expected_keywords": ["EC2", "S3", "compute", "storage"]
+  },
+  {
+    "id": "q03",
+    "question": "How does AWS free tier work and what are its limitations?",
+    "topic": "AWS free tier",
+    "expected_keywords": ["free", "trial", "limit", "tier"]
+  },
+  {
+    "id": "q04",
+    "question": "What is the difference between on-demand and reserved instances?",
+    "topic": "EC2 pricing models",
+    "expected_keywords": ["on-demand", "reserved", "cost", "pricing"]
+  },
+  {
+    "id": "q05",
+    "question": "What is the difference between vCPUs and physical cores?",
+    "topic": "compute concepts",
+    "expected_keywords": ["vCPU", "core", "processor", "compute"]
+  },
+  {
+    "id": "q06",
+    "question": "How does cloud storage pricing work on AWS?",
+    "topic": "storage and pricing",
+    "expected_keywords": ["storage", "S3", "cost", "terabyte"]
+  },
+  {
+    "id": "q07",
+    "question": "Why would a company choose the cloud over on-premise hardware?",
+    "topic": "cloud vs on-premise",
+    "expected_keywords": ["cost", "hardware", "cloud", "on-premise"]
+  },
+  {
+    "id": "q08",
+    "question": "What tools will students be using in this course?",
+    "topic": "course tools",
+    "expected_keywords": ["AWS", "EC2", "S3", "tools"]
+  }
+]

@@ -11,7 +11,8 @@ Date: 2026-07-10
    - Answer card + source cards with course name, video title, MM:SS timestamp range, and excerpt.
 4. [x] Add basic loading and error handling so the UI feels polished enough for a demo.
    - Spinner + "Thinking…" during request. Error banner on failure. Button disabled while loading.
-5. [ ] Review the experience from a student perspective and simplify any confusing parts.
+5. [x] Review the experience from a student perspective and simplify any confusing parts.
+   - UI reviewed and confirmed clean, no errors, source cards returning correct metadata. Ready for demo.
 
 ## Implementation Notes
 - Favor a straightforward interface over elaborate visual design.

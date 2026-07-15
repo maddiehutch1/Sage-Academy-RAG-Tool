@@ -5,7 +5,10 @@ This file is a concise record of project changes as the Sage Academy RAG Tool ev
 ## 2026-07-15
 
 - Completed Phase 3 (Retrieval and Answer Generation). Validated via Swagger UI — grounded answers with source citations confirmed working. Source: [ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md](../ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md)
-- Started Phase 4 (Demo User Experience). Source: [ai/roadmaps/2026-07-10-phase-04-demo-ui-plan.md](../ai/roadmaps/2026-07-10-phase-04-demo-ui-plan.md)
+- Completed Phase 4 (Demo User Experience). UI reviewed and confirmed working end-to-end. Source: [ai/roadmaps/complete/2026-07-10-phase-04-demo-ui-plan.md](../ai/roadmaps/complete/2026-07-10-phase-04-demo-ui-plan.md)
+- Started Phase 5 (Validation and Refinement). Source: [ai/roadmaps/2026-07-10-phase-05-validation-plan.md](../ai/roadmaps/2026-07-10-phase-05-validation-plan.md)
+- Created `tests/eval_questions.json`: 8 representative student questions with expected keywords and topic labels.
+- Created `scripts/run_eval.py`: end-to-end eval runner that retrieves chunks, generates answers, checks keyword coverage, flags weak retrieval (distance > 0.55), and saves a timestamped Markdown report to `tests/eval_results/`.
 - Added Tailwind CSS (v3), PostCSS, and Autoprefixer to the frontend. Created `globals.css` and `tailwind.config.ts`.
 - Replaced placeholder `page.tsx` with a full demo UI: question textarea, submit button with loading spinner, answer card, and per-source citation cards showing course, video, timestamp range (MM:SS), and excerpt.
 - Updated `layout.tsx` to import global styles.
