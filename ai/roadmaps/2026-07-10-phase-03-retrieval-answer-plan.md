@@ -11,12 +11,12 @@ This is a clean-start project with no existing users, no existing data, and no m
 Create the core intelligence layer that accepts a student question, retrieves relevant course chunks, and returns a grounded answer with citation metadata.
 
 ## Checklist
-- [ ] Build a question embedding path using the same embedding model as the index
-- [ ] Implement similarity search against the indexed chunks
-- [ ] Select the number of chunks to retrieve for each question
-- [ ] Create a prompt template that includes the retrieved context and the student question
-- [ ] Connect the app to an LLM API for answer generation
-- [ ] Return answer content plus the relevant video/timestamp metadata
+- [x] Build a question embedding path using the same embedding model as the index
+- [x] Implement similarity search against the indexed chunks
+- [x] Select the number of chunks to retrieve for each question
+- [x] Create a prompt template that includes the retrieved context and the student question
+- [x] Connect the app to an LLM API for answer generation
+- [x] Return answer content plus the relevant video/timestamp metadata
 - [ ] Validate that answers are grounded in the retrieved chunks
 
 ## What Should Happen in This Phase

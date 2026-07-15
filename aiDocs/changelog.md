@@ -2,6 +2,14 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-15
+
+- Started Phase 3 (Retrieval and Answer Generation). Source: [ai/roadmaps/2026-07-10-phase-03-retrieval-answer-plan.md](../ai/roadmaps/2026-07-10-phase-03-retrieval-answer-plan.md)
+- Created `backend/db.py`: thin connection helper wrapping psycopg2 + DATABASE_URL.
+- Created `backend/retrieval.py`: embeds a user question with text-embedding-3-small and returns top-5 nearest transcript chunks from pgvector with full metadata.
+- Created `backend/answer.py`: builds a grounded prompt from retrieved chunks and calls gpt-4o-mini (temperature=0.2) to produce a student-facing answer with source citations.
+- Updated `backend/main.py`: added `POST /ask` endpoint accepting a question and returning an `AskResponse` (answer + sources list). Questions and answers are logged to `question_logs`.
+
 ## 2026-07-14
 
 - Completed Phase 1 (Foundation). Verified local environment end-to-end: PostgreSQL via Docker, FastAPI health endpoint, Next.js frontend shell. Source: [ai/roadmaps/complete/2026-07-10-phase-01-foundation-plan.md](../ai/roadmaps/complete/2026-07-10-phase-01-foundation-plan.md)
