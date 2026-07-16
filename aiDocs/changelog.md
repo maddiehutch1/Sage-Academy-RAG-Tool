@@ -2,7 +2,14 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
-## 2026-07-16
+## 2026-07-16 (Phase 6)
+
+- Completed Phase 6 (Demo Readiness and Extensibility). Source: [ai/roadmaps/complete/2026-07-10-phase-06-demo-readiness-roadmap.md](../ai/roadmaps/complete/2026-07-10-phase-06-demo-readiness-roadmap.md)
+- Rewrote README.md: replaced stale Phase 1 content with accurate setup instructions, flow diagram, repo layout, ingestion/eval usage, and a Future Improvements section.
+- Tightened `backend/answer.py` system prompt: removed over-refusal behavior for questions where the answer requires combining context across excerpts (fixes q04-style regressions from Phase 5).
+- No structural or API changes — codebase is stable and demo-ready.
+
+## 2026-07-16 (Phase 5)
 
 - Completed Phase 5 (Validation and Refinement). Source: [ai/roadmaps/complete/2026-07-10-phase-05-validation-roadmap.md](../ai/roadmaps/complete/2026-07-10-phase-05-validation-roadmap.md)
 - Added JSON sidecar metadata files for all 52 previously missing SRT transcripts (26 IS 3600 lectures, 26 DATA 2100 lectures). Root cause of prior weak retrieval: ingest.py silently skipped files without a sidecar.
