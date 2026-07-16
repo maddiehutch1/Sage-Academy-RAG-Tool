@@ -1,0 +1,1161 @@
+1
+00:00:00,780 --> 00:00:02,260
+REAGAN: Hi, Data 2,100 students.
+
+2
+00:00:02,260 --> 00:00:04,390
+As a part two of our
+introduction to programming,
+
+3
+00:00:04,390 --> 00:00:06,860
+we are going to work
+through some examples today.
+
+4
+00:00:06,860 --> 00:00:08,580
+Now, what I would
+like you to do is
+
+5
+00:00:08,580 --> 00:00:11,910
+when you click on the
+examples up above,
+
+6
+00:00:11,910 --> 00:00:16,140
+that link to the Google Colab
+examples, you'll come here
+
+7
+00:00:16,140 --> 00:00:19,200
+and you're going to
+click Copy to drive.
+
+8
+00:00:19,200 --> 00:00:22,920
+And it's going to
+create a copy for you
+
+9
+00:00:22,920 --> 00:00:26,260
+to complete in your
+own personal drive.
+
+10
+00:00:26,260 --> 00:00:29,100
+So I'm going to rename
+this Sigurd underscore
+
+11
+00:00:29,100 --> 00:00:31,170
+intro to programming,
+and then that way you
+
+12
+00:00:31,170 --> 00:00:35,110
+can keep all of these
+examples in your Google Drive.
+
+13
+00:00:35,110 --> 00:00:38,310
+They'll all be in a
+Google Colab folder,
+
+14
+00:00:38,310 --> 00:00:42,750
+so that will be nice for you
+as you study this content.
+
+15
+00:00:42,750 --> 00:00:43,420
+All right.
+
+16
+00:00:43,420 --> 00:00:45,760
+So when we're outputting
+something in Python,
+
+17
+00:00:45,760 --> 00:00:49,840
+we output to the console
+using the print function.
+
+18
+00:00:49,840 --> 00:00:53,850
+Now, I should say there's a
+lot of other ways to output
+
+19
+00:00:53,850 --> 00:00:55,710
+things in Python,
+but generally you're
+
+20
+00:00:55,710 --> 00:00:58,090
+going to print to the
+console as we are learning.
+
+21
+00:00:58,090 --> 00:01:00,440
+So we can output
+values from a variable.
+
+22
+00:01:00,440 --> 00:01:04,340
+So I can say print the value
+from the variable x here.
+
+23
+00:01:04,340 --> 00:01:05,990
+That should be a little arrow.
+
+24
+00:01:05,990 --> 00:01:08,930
+This prints the value
+of that variable x.
+
+25
+00:01:08,930 --> 00:01:11,240
+Then we can output text values.
+
+26
+00:01:11,240 --> 00:01:16,660
+So the text needs to be here in
+straight quotes and this outputs
+
+27
+00:01:16,660 --> 00:01:17,720
+"happy day."
+
+28
+00:01:17,720 --> 00:01:21,890
+Then we also have this can
+combine text and variables.
+
+29
+00:01:21,890 --> 00:01:26,020
+We can say "Hello there" and
+then I want to input the value
+
+30
+00:01:26,020 --> 00:01:27,170
+from the first name.
+
+31
+00:01:27,170 --> 00:01:31,630
+So we can just print values
+like these literal values
+
+32
+00:01:31,630 --> 00:01:34,130
+here within those
+literal values.
+
+33
+00:01:34,130 --> 00:01:37,790
+But we can also print values
+from specific variables.
+
+34
+00:01:37,790 --> 00:01:41,360
+We can use this-- oftentimes
+we'll do this using f-strings.
+
+35
+00:01:41,360 --> 00:01:44,080
+F-strings allow us to embed
+expressions and variables
+
+36
+00:01:44,080 --> 00:01:47,720
+inside string literals
+using curly braces.
+
+37
+00:01:47,720 --> 00:01:52,400
+This is preceded by an f to
+denote a formatted string.
+
+38
+00:01:52,400 --> 00:01:56,260
+This makes them extremely
+readable and concise.
+
+39
+00:01:56,260 --> 00:01:58,990
+--Examples document, I want
+you to write a program that
+
+40
+00:01:58,990 --> 00:02:01,180
+assigns your name to
+the variable, myName,
+
+41
+00:02:01,180 --> 00:02:04,870
+prints your name using
+the variable myName,
+
+42
+00:02:04,870 --> 00:02:08,860
+and then say now
+print my name is blank
+
+43
+00:02:08,860 --> 00:02:10,449
+using the variable myName.
+
+44
+00:02:10,449 --> 00:02:13,580
+Don't use f-strings or
+Python placeholders.
+
+45
+00:02:13,580 --> 00:02:14,930
+So let's go ahead and do this.
+
+46
+00:02:14,930 --> 00:02:16,970
+So I want to say my name.
+
+47
+00:02:16,970 --> 00:02:20,290
+So I'm declaring that variable
+using an assignment statement.
+
+48
+00:02:20,290 --> 00:02:23,480
+Say my name is equal to Reagan.
+
+49
+00:02:23,480 --> 00:02:26,352
+Then I want to print.
+
+50
+00:02:26,352 --> 00:02:28,560
+Actually, I'm going to run
+that I guess really quick.
+
+51
+00:02:28,560 --> 00:02:32,270
+[LAUGHS] Then I'm going
+to, as that's running,
+
+52
+00:02:32,270 --> 00:02:35,150
+I'm going to say Print my name.
+
+53
+00:02:35,150 --> 00:02:37,970
+You'll notice that when I ran
+just my name equal to Reagan,
+
+54
+00:02:37,970 --> 00:02:40,130
+it just declared
+the variable name.
+
+55
+00:02:40,130 --> 00:02:41,840
+It didn't actually
+print anything.
+
+56
+00:02:41,840 --> 00:02:44,090
+So now if I say Shift
+Enter, that will run.
+
+57
+00:02:44,090 --> 00:02:46,850
+And it will print
+out to me, Reagan
+
+58
+00:02:46,850 --> 00:02:49,840
+Now, I want to print
+my name is blank
+
+59
+00:02:49,840 --> 00:02:51,400
+using the variable, my name.
+
+60
+00:02:51,400 --> 00:02:53,592
+Don't use f-strings or
+Python placeholders.
+
+61
+00:02:53,592 --> 00:02:54,800
+So let's take a look at this.
+
+62
+00:02:54,800 --> 00:03:03,510
+So what we'll do here is
+I'll say print, my name is.
+
+63
+00:03:03,510 --> 00:03:04,620
+Then that's the end.
+
+64
+00:03:04,620 --> 00:03:06,110
+Those are my literal values.
+
+65
+00:03:06,110 --> 00:03:07,500
+I am typing in.
+
+66
+00:03:07,500 --> 00:03:08,990
+I want the literal
+value, my name
+
+67
+00:03:08,990 --> 00:03:12,750
+is, to print, so I have those
+within my quotation marks.
+
+68
+00:03:12,750 --> 00:03:14,810
+And then I want to
+say print the value
+
+69
+00:03:14,810 --> 00:03:16,560
+from the variable, my name.
+
+70
+00:03:16,560 --> 00:03:19,890
+Then I also notice that I
+have a period after my name.
+
+71
+00:03:19,890 --> 00:03:22,680
+So then I'll say oh, actually
+add a period to that end.
+
+72
+00:03:22,680 --> 00:03:25,680
+So I'm saying, my name is,
+that's all literal values.
+
+73
+00:03:25,680 --> 00:03:27,920
+Then I want to
+place in the value
+
+74
+00:03:27,920 --> 00:03:30,320
+from the variable, my
+name, and then we'll
+
+75
+00:03:30,320 --> 00:03:31,890
+place a period at the end.
+
+76
+00:03:31,890 --> 00:03:34,360
+Now when we run this.
+
+77
+00:03:34,360 --> 00:03:36,760
+We can see here that
+my name is Reagan
+
+78
+00:03:36,760 --> 00:03:42,590
+and I have a space after
+Reagan and after is.
+
+79
+00:03:42,590 --> 00:03:45,940
+So these commas, when
+I have a comma here
+
+80
+00:03:45,940 --> 00:03:49,390
+that's separating these
+parameters inside my print
+
+81
+00:03:49,390 --> 00:03:52,280
+statement, it's
+adding a space there.
+
+82
+00:03:52,280 --> 00:03:56,050
+So what I can use is I can use
+my separation method, which this
+
+83
+00:03:56,050 --> 00:03:58,370
+is not definitely not my
+favorite way to do this,
+
+84
+00:03:58,370 --> 00:04:01,760
+but this is how we're supposed
+to do it for this example.
+
+85
+00:04:01,760 --> 00:04:05,650
+But we can use our
+separation and say
+
+86
+00:04:05,650 --> 00:04:09,453
+that I want to separate this.
+
+87
+00:04:12,770 --> 00:04:16,230
+I want to-- the commas
+that are separating these.
+
+88
+00:04:16,230 --> 00:04:19,279
+These parameters
+separate with nothing.
+
+89
+00:04:19,279 --> 00:04:21,920
+So I just have a
+beginning and ending quote
+
+90
+00:04:21,920 --> 00:04:23,280
+with nothing in between.
+
+91
+00:04:23,280 --> 00:04:25,370
+So basically, when
+I rerun this, you'll
+
+92
+00:04:25,370 --> 00:04:29,490
+notice what happens is it gets
+rid of those extra spaces.
+
+93
+00:04:29,490 --> 00:04:32,030
+So the separate now has--
+
+94
+00:04:32,030 --> 00:04:33,810
+there's nothing in there, right.
+
+95
+00:04:33,810 --> 00:04:38,900
+We are not separating with
+a space when I have commas.
+
+96
+00:04:38,900 --> 00:04:40,950
+We're saying don't
+separate with anything.
+
+97
+00:04:40,950 --> 00:04:44,430
+But now I need to go back
+in and add a space here.
+
+98
+00:04:44,430 --> 00:04:47,490
+After is before
+Reagan prints, and now
+
+99
+00:04:47,490 --> 00:04:49,190
+I can see that my
+name is Reagan.
+
+100
+00:04:49,190 --> 00:04:53,220
+Now, you'll notice that this
+is a little bit of a rough.
+
+101
+00:04:53,220 --> 00:04:54,480
+A way to do this.
+
+102
+00:04:54,480 --> 00:04:57,470
+It's a lot harder than the way
+that I'm going to show you now.
+
+103
+00:04:57,470 --> 00:04:59,220
+So now we're going to
+write a program that
+
+104
+00:04:59,220 --> 00:05:00,520
+builds upon program 1.
+
+105
+00:05:00,520 --> 00:05:03,817
+So notice here that within my--
+this is a Jupyter Notebook file.
+
+106
+00:05:03,817 --> 00:05:05,400
+We're using our
+Jupyter Notebooks here
+
+107
+00:05:05,400 --> 00:05:06,820
+within Google Colab.
+
+108
+00:05:06,820 --> 00:05:10,740
+And once I run this
+cell, my variables,
+
+109
+00:05:10,740 --> 00:05:13,630
+once I've ran the cell
+that's created up here,
+
+110
+00:05:13,630 --> 00:05:15,840
+I can reference those
+variables throughout the rest
+
+111
+00:05:15,840 --> 00:05:17,980
+of my Jupyter Notebook file.
+
+112
+00:05:17,980 --> 00:05:18,480
+So what.
+
+113
+00:05:18,480 --> 00:05:20,790
+You have to run
+the cell in order
+
+114
+00:05:20,790 --> 00:05:23,850
+to be able to reference
+the variables up above.
+
+115
+00:05:23,850 --> 00:05:25,360
+So here's a code cell.
+
+116
+00:05:25,360 --> 00:05:26,770
+Here's another code cell.
+
+117
+00:05:26,770 --> 00:05:28,770
+And these are just text cells.
+
+118
+00:05:28,770 --> 00:05:31,530
+So now we're going to write a
+program that builds upon program
+
+119
+00:05:31,530 --> 00:05:34,290
+one, and we're going to use
+variables from program one
+
+120
+00:05:34,290 --> 00:05:36,610
+to print out, my name is blank.
+
+121
+00:05:36,610 --> 00:05:39,550
+Use a variable, my
+name, and use f-strings.
+
+122
+00:05:39,550 --> 00:05:42,520
+So again, because we're using
+this Jupyter Notebook files,
+
+123
+00:05:42,520 --> 00:05:43,690
+these are just text.
+
+124
+00:05:43,690 --> 00:05:45,730
+This is actual code
+that we're running.
+
+125
+00:05:45,730 --> 00:05:49,270
+Once I've ran this, I've
+declared the variable my name.
+
+126
+00:05:49,270 --> 00:05:52,980
+And so I can reference that
+variable my name down here
+
+127
+00:05:52,980 --> 00:05:54,480
+in my other code.
+
+128
+00:05:54,480 --> 00:06:00,680
+So now I want to print out
+same thing, print my name
+
+129
+00:06:00,680 --> 00:06:03,360
+is, but I want to use
+f strings this time.
+
+130
+00:06:03,360 --> 00:06:05,490
+So in order to use
+f-strings right here,
+
+131
+00:06:05,490 --> 00:06:11,960
+before I begin printing out or
+before I begin my literal values
+
+132
+00:06:11,960 --> 00:06:14,540
+that I want to print out,
+I place just the letter
+
+133
+00:06:14,540 --> 00:06:17,850
+f there to tell I'm going
+to use formatted strings.
+
+134
+00:06:17,850 --> 00:06:21,440
+I'm going to say my name is
+then within curly brackets
+
+135
+00:06:21,440 --> 00:06:24,560
+I place the value or
+the variable's name
+
+136
+00:06:24,560 --> 00:06:29,160
+that I want to place the
+value of into this sentence.
+
+137
+00:06:29,160 --> 00:06:33,140
+So I want the value of my name
+to be added to this sentence,
+
+138
+00:06:33,140 --> 00:06:34,370
+right here.
+
+139
+00:06:34,370 --> 00:06:40,280
+So basically, I'm going to have
+Reagan replace that my name
+
+140
+00:06:40,280 --> 00:06:42,120
+variable once this is ran.
+
+141
+00:06:42,120 --> 00:06:44,150
+So now I run this and
+we'll see that my name is
+
+142
+00:06:44,150 --> 00:06:45,450
+Reagan returns to me.
+
+143
+00:06:45,450 --> 00:06:48,150
+So we again, to use
+formatted strings,
+
+144
+00:06:48,150 --> 00:06:51,110
+we place an f there
+at the beginning
+
+145
+00:06:51,110 --> 00:06:53,900
+and then we have
+our literal values,
+
+146
+00:06:53,900 --> 00:06:57,240
+my name is, then
+within curly brackets,
+
+147
+00:06:57,240 --> 00:06:59,160
+we place the
+variable's name that we
+
+148
+00:06:59,160 --> 00:07:00,740
+want to replace the value of.
+
+149
+00:07:00,740 --> 00:07:02,160
+So my name is Reagan.
+
+150
+00:07:02,160 --> 00:07:03,730
+All right, perfect.
+
+151
+00:07:03,730 --> 00:07:07,260
+Then for program 3,
+we're going to do
+
+152
+00:07:07,260 --> 00:07:08,890
+a little bit of arithmetic.
+
+153
+00:07:08,890 --> 00:07:12,280
+So we have a lot of arithmetic
+operators in Python.
+
+154
+00:07:12,280 --> 00:07:14,170
+There are addition
+multiplication,
+
+155
+00:07:14,170 --> 00:07:19,210
+subtraction, division, we can
+use exponents and remainders.
+
+156
+00:07:19,210 --> 00:07:21,330
+So that's the code
+for each of them.
+
+157
+00:07:21,330 --> 00:07:24,053
+We're adding values, multiplying
+values, subtracting values.
+
+158
+00:07:24,053 --> 00:07:26,220
+And we'll see here that
+we're using these assignment
+
+159
+00:07:26,220 --> 00:07:30,280
+statements to say that y, the
+variable y is equal to 4 plus 5.
+
+160
+00:07:30,280 --> 00:07:32,380
+So we know that y is
+going to be equal to 9.
+
+161
+00:07:32,380 --> 00:07:34,230
+When we want to
+use exponents, we
+
+162
+00:07:34,230 --> 00:07:36,750
+have to use those
+double asterisks that
+
+163
+00:07:36,750 --> 00:07:39,550
+say 3 to the power of 7.
+
+164
+00:07:39,550 --> 00:07:43,210
+The remainder is kind
+of an interesting one.
+
+165
+00:07:43,210 --> 00:07:44,670
+Basically the
+remainder was going
+
+166
+00:07:44,670 --> 00:07:48,640
+to return just the remainder
+of 43 divided by 10.
+
+167
+00:07:48,640 --> 00:07:53,230
+So 43 divided by 10 is
+4 with a remainder of 3.
+
+168
+00:07:53,230 --> 00:07:54,850
+So remain here.
+
+169
+00:07:54,850 --> 00:07:58,120
+This variable is going
+to be equal to 3,
+
+170
+00:07:58,120 --> 00:08:02,080
+which is the remainder
+of 43 divided by 10.
+
+171
+00:08:02,080 --> 00:08:07,730
+So that's what the
+remainder operation will do.
+
+172
+00:08:07,730 --> 00:08:08,340
+All right.
+
+173
+00:08:08,340 --> 00:08:10,590
+So let's go ahead and
+use that arithmetic.
+
+174
+00:08:10,590 --> 00:08:13,370
+And we're going to write a
+program that assigns your age
+
+175
+00:08:13,370 --> 00:08:14,790
+to the variable, My age.
+
+176
+00:08:14,790 --> 00:08:17,480
+So my age equal to, let's--
+
+177
+00:08:17,480 --> 00:08:20,220
+I'm not 35, but
+let's say I'm 35.
+
+178
+00:08:20,220 --> 00:08:20,960
+All right.
+
+179
+00:08:20,960 --> 00:08:22,470
+And I'll say shift, enter.
+
+180
+00:08:22,470 --> 00:08:23,930
+OK, awesome.
+
+181
+00:08:23,930 --> 00:08:26,930
+So I'm going to say
+after that I want
+
+182
+00:08:26,930 --> 00:08:30,170
+to multiply my age
+variable by 12 to find out
+
+183
+00:08:30,170 --> 00:08:31,580
+how many months old I am.
+
+184
+00:08:31,580 --> 00:08:35,030
+In this same line of
+code, assign this value
+
+185
+00:08:35,030 --> 00:08:38,370
+to my age and month,
+then print this value.
+
+186
+00:08:38,370 --> 00:08:40,190
+So I'm going to say
+my age and months
+
+187
+00:08:40,190 --> 00:08:44,660
+because I know that I want
+to assign the output of 35
+
+188
+00:08:44,660 --> 00:08:47,000
+by 12 to my age in months.
+
+189
+00:08:47,000 --> 00:08:49,800
+When I'm declaring a variable
+or assigning a variable,
+
+190
+00:08:49,800 --> 00:08:52,530
+that variable's name
+must come first.
+
+191
+00:08:52,530 --> 00:08:59,340
+So I can't say 35 times 12
+equal to my age in months.
+
+192
+00:08:59,340 --> 00:09:00,150
+I can't do that.
+
+193
+00:09:00,150 --> 00:09:03,200
+I must have my age
+in months first,
+
+194
+00:09:03,200 --> 00:09:10,140
+I'm declaring that variable
+and then I say 35 times is 12.
+
+195
+00:09:10,140 --> 00:09:13,780
+So now when I run this, I
+hope that you're thinking,
+
+196
+00:09:13,780 --> 00:09:15,550
+am I going to receive
+any output here?
+
+197
+00:09:15,550 --> 00:09:17,310
+So let's take a look.
+
+198
+00:09:17,310 --> 00:09:20,070
+And I don't actually receive
+any output because I never
+
+199
+00:09:20,070 --> 00:09:21,700
+told it to print to my console.
+
+200
+00:09:21,700 --> 00:09:24,520
+It never printed
+that code for me.
+
+201
+00:09:24,520 --> 00:09:27,990
+So I don't need to
+do that or I don't
+
+202
+00:09:27,990 --> 00:09:30,010
+need to do anything
+else with that per se,
+
+203
+00:09:30,010 --> 00:09:32,550
+but just know that those
+variables are created
+
+204
+00:09:32,550 --> 00:09:35,340
+and now I can use them
+right as I come down here
+
+205
+00:09:35,340 --> 00:09:38,620
+and I want to write
+my new sentence,
+
+206
+00:09:38,620 --> 00:09:42,240
+I want to construct a sentence
+that says, my name is blank
+
+207
+00:09:42,240 --> 00:09:43,690
+and I am blank, months old.
+
+208
+00:09:43,690 --> 00:09:44,830
+How old are you?
+
+209
+00:09:44,830 --> 00:09:48,250
+So I will say print and then
+I want to use f-strings.
+
+210
+00:09:48,250 --> 00:09:52,930
+So I'll say f my name is.
+
+211
+00:09:52,930 --> 00:09:54,880
+And then I want to replace.
+
+212
+00:09:54,880 --> 00:09:57,810
+I want to place the value
+from the variable name
+
+213
+00:09:57,810 --> 00:09:59,630
+to be right there.
+
+214
+00:09:59,630 --> 00:10:13,340
+And I am, again brackets,
+my age in months old.
+
+215
+00:10:13,340 --> 00:10:17,540
+So I want to place value from
+the variable age in months
+
+216
+00:10:17,540 --> 00:10:19,890
+to be here within
+these curly brackets.
+
+217
+00:10:19,890 --> 00:10:23,060
+So now when I output this,
+it'll say my name is Reagan
+
+218
+00:10:23,060 --> 00:10:26,820
+and I am 420 months old.
+
+219
+00:10:26,820 --> 00:10:31,400
+So here is these
+programming examples for you
+
+220
+00:10:31,400 --> 00:10:33,720
+to continue to work
+through as you would like.
+
+221
+00:10:33,720 --> 00:10:34,680
+A couple other things.
+
+222
+00:10:34,680 --> 00:10:37,770
+With Python, I can
+concatenate values together.
+
+223
+00:10:37,770 --> 00:10:41,280
+So I can say x is
+equal to Glacier.
+
+224
+00:10:41,280 --> 00:10:44,240
+Glacier is a literal
+value plus rain
+
+225
+00:10:44,240 --> 00:10:49,160
+and that will have Glacier
+rain to be the value of x.
+
+226
+00:10:49,160 --> 00:10:52,110
+I can also tell Python to
+print in a particular way.
+
+227
+00:10:52,110 --> 00:10:55,010
+So I can use this
+backslash, which basically
+
+228
+00:10:55,010 --> 00:10:58,440
+means that if I wanted to print
+something on a new line here,
+
+229
+00:10:58,440 --> 00:11:02,570
+I can use backslash n and--
+
+230
+00:11:02,570 --> 00:11:06,860
+or I can do a tab or I
+can use a single quotation
+
+231
+00:11:06,860 --> 00:11:07,860
+mark, what have you.
+
+232
+00:11:07,860 --> 00:11:10,400
+So let's take a look here
+in my print statement
+
+233
+00:11:10,400 --> 00:11:12,320
+that I just did in
+my last example.
+
+234
+00:11:12,320 --> 00:11:14,770
+Say that I want to
+print, My name is Reagan.
+
+235
+00:11:14,770 --> 00:11:20,880
+And then on a new line, I want
+to say an I am 420 months old.
+
+236
+00:11:20,880 --> 00:11:22,830
+So now when I run
+this, you'll notice
+
+237
+00:11:22,830 --> 00:11:25,240
+that it says, my name
+is Reagan, new line,
+
+238
+00:11:25,240 --> 00:11:27,160
+and I am 420 months old.
+
+239
+00:11:27,160 --> 00:11:32,640
+So you can format strings in
+really interesting way using
+
+240
+00:11:32,640 --> 00:11:34,930
+those, we call them
+escape characters,
+
+241
+00:11:34,930 --> 00:11:39,430
+their backslashes
+with that code,
+
+242
+00:11:39,430 --> 00:11:43,830
+that backslash end for new
+line or for tab what have you.
+
+243
+00:11:43,830 --> 00:11:46,770
+So that's a good example
+of another introduction
+
+244
+00:11:46,770 --> 00:11:47,890
+to programming.
+
+245
+00:11:47,890 --> 00:11:49,810
+Continue on in our videos.
+
+246
+00:11:49,810 --> 00:11:51,800
+Thanks for your hard work.

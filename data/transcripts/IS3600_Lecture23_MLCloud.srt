@@ -1,0 +1,6043 @@
+1
+00:00:00,000 --> 00:00:01,083
+INSTRUCTOR: Hey, everyone.
+
+2
+00:00:01,083 --> 00:00:02,100
+Welcome back.
+
+3
+00:00:02,100 --> 00:00:04,100
+So in today's lecture,
+as you can see,
+
+4
+00:00:04,100 --> 00:00:07,310
+we're going to be talking about
+machine learning in the cloud.
+
+5
+00:00:07,310 --> 00:00:10,070
+This is probably the topic
+I'm most excited to get to.
+
+6
+00:00:10,070 --> 00:00:11,570
+I, kind of, left
+it for the end both
+
+7
+00:00:11,570 --> 00:00:13,695
+because I think it makes
+the most sense at the end,
+
+8
+00:00:13,695 --> 00:00:17,130
+but also because I wanted to
+be like my last main module,
+
+9
+00:00:17,130 --> 00:00:17,663
+we cover.
+
+10
+00:00:17,663 --> 00:00:19,580
+We may have some time
+for some special topics,
+
+11
+00:00:19,580 --> 00:00:23,690
+but for the most part, I
+wanted to leave this to the end
+
+12
+00:00:23,690 --> 00:00:25,460
+because this is
+really where we start
+
+13
+00:00:25,460 --> 00:00:28,950
+seeing the huge value of what
+we're doing in the cloud.
+
+14
+00:00:28,950 --> 00:00:31,850
+Or at least for me, this is
+where I start to see this.
+
+15
+00:00:31,850 --> 00:00:34,370
+It's also how I first started
+to interact with the cloud.
+
+16
+00:00:34,370 --> 00:00:37,400
+You know, as far
+as history goes,
+
+17
+00:00:37,400 --> 00:00:40,580
+with my background, at
+least, I was working
+
+18
+00:00:40,580 --> 00:00:43,130
+as a data scientist
+working on these, you know,
+
+19
+00:00:43,130 --> 00:00:44,610
+real world problems.
+
+20
+00:00:44,610 --> 00:00:48,260
+And as the scales of-- or
+the size of our data sets
+
+21
+00:00:48,260 --> 00:00:51,290
+continue to increase, it became
+kind of prohibitively expensive
+
+22
+00:00:51,290 --> 00:00:53,480
+for us to keep having
+bigger and bigger laptops
+
+23
+00:00:53,480 --> 00:00:55,580
+that we were working
+on in our office.
+
+24
+00:00:55,580 --> 00:00:57,290
+And so we did have
+servers at our office,
+
+25
+00:00:57,290 --> 00:01:00,493
+but then taking that to the
+next level, at some point
+
+26
+00:01:00,493 --> 00:01:01,910
+we'd exceed those
+capacity, and we
+
+27
+00:01:01,910 --> 00:01:03,710
+had to keep building
+more servers
+
+28
+00:01:03,710 --> 00:01:05,160
+and maintaining those servers.
+
+29
+00:01:05,160 --> 00:01:08,750
+And so, you know, our big move,
+at least when I was at Carvana,
+
+30
+00:01:08,750 --> 00:01:10,562
+was when we decided
+to say, hey, let's
+
+31
+00:01:10,562 --> 00:01:12,020
+take a lot of what
+we're doing now,
+
+32
+00:01:12,020 --> 00:01:13,710
+and let's push it up
+to the cloud, right.
+
+33
+00:01:13,710 --> 00:01:15,960
+So that's where we first
+started to leverage redshift,
+
+34
+00:01:15,960 --> 00:01:18,290
+as I talked about
+before, and then also
+
+35
+00:01:18,290 --> 00:01:19,830
+really expand our capacity.
+
+36
+00:01:19,830 --> 00:01:21,590
+And ever since then,
+I mean, every job
+
+37
+00:01:21,590 --> 00:01:23,630
+I've been in, in the
+data science world,
+
+38
+00:01:23,630 --> 00:01:26,560
+at least we've leveraged the
+cloud in some way or another,
+
+39
+00:01:26,560 --> 00:01:27,060
+right.
+
+40
+00:01:27,060 --> 00:01:30,270
+Even if it's just a matter of,
+you know, using EC2 instances.
+
+41
+00:01:30,270 --> 00:01:33,770
+So I can spin up a big computer
+with a GPU and everything
+
+42
+00:01:33,770 --> 00:01:36,530
+on board and we'll
+talk plenty about that.
+
+43
+00:01:36,530 --> 00:01:41,770
+But that has been really my
+personal tie to Cloud computing,
+
+44
+00:01:41,770 --> 00:01:42,270
+right.
+
+45
+00:01:42,270 --> 00:01:44,110
+So, you know, again,
+I'm hoping that this
+
+46
+00:01:44,110 --> 00:01:46,110
+will be a little bit more
+coherent than anything
+
+47
+00:01:46,110 --> 00:01:46,970
+up to this point, though.
+
+48
+00:01:46,970 --> 00:01:49,303
+I'm hoping that you've been
+enjoying at least the topics
+
+49
+00:01:49,303 --> 00:01:50,308
+we've covered so far.
+
+50
+00:01:50,308 --> 00:01:52,850
+But this is the one that I do
+feel a little bit of confidence
+
+51
+00:01:52,850 --> 00:01:53,600
+in, right.
+
+52
+00:01:53,600 --> 00:01:56,850
+I guess that's never too good
+when you go on overconfident.
+
+53
+00:01:56,850 --> 00:01:58,850
+But what I want to talk
+about today at least,
+
+54
+00:01:58,850 --> 00:02:01,068
+is just introducing
+why that exists, right.
+
+55
+00:02:01,068 --> 00:02:02,860
+First off, what machine
+learning is, right.
+
+56
+00:02:02,860 --> 00:02:06,240
+I'm going to hopefully give
+you some good vocabulary
+
+57
+00:02:06,240 --> 00:02:08,241
+to discuss and talk
+about these things.
+
+58
+00:02:08,241 --> 00:02:10,449
+Maybe also make a pitch for
+some of my other courses.
+
+59
+00:02:10,449 --> 00:02:12,600
+I'll talk about those
+throughout as we
+
+60
+00:02:12,600 --> 00:02:14,280
+go through this of
+what those offer
+
+61
+00:02:14,280 --> 00:02:16,060
+as they're more dedicated
+towards machine learning.
+
+62
+00:02:16,060 --> 00:02:17,550
+But I want you to at
+least have the vocabulary
+
+63
+00:02:17,550 --> 00:02:19,927
+to understand what somebody
+is talking about when
+
+64
+00:02:19,927 --> 00:02:21,010
+they say machine learning.
+
+65
+00:02:21,010 --> 00:02:24,160
+So it's not just this magic
+black box that exists out there.
+
+66
+00:02:24,160 --> 00:02:27,247
+So let's dive into it
+and just get into it.
+
+67
+00:02:27,247 --> 00:02:29,580
+And please, if you ever have
+any questions that come up,
+
+68
+00:02:29,580 --> 00:02:30,730
+come talk to me about it.
+
+69
+00:02:30,730 --> 00:02:34,560
+I'm again always excited
+to talk about this topic.
+
+70
+00:02:34,560 --> 00:02:36,390
+So I'll slide myself
+out of the way now.
+
+71
+00:02:36,390 --> 00:02:39,540
+Let's go full screen.
+
+72
+00:02:39,540 --> 00:02:42,190
+And so right away I'm
+already in the way.
+
+73
+00:02:42,190 --> 00:02:43,570
+Let's just do like right here.
+
+74
+00:02:43,570 --> 00:02:48,090
+So, you know, this slide
+is really just motivated
+
+75
+00:02:48,090 --> 00:02:51,660
+to show you at least how
+I define machine learning,
+
+76
+00:02:51,660 --> 00:02:54,640
+and also how that relates
+to artificial intelligence.
+
+77
+00:02:54,640 --> 00:02:57,990
+I want to get this out of the
+way right away or at the start.
+
+78
+00:02:57,990 --> 00:03:01,020
+There's a lot of hype
+around the concept
+
+79
+00:03:01,020 --> 00:03:02,410
+of artificial intelligence.
+
+80
+00:03:02,410 --> 00:03:06,070
+And as an avid sci-fi
+fan, I am all here for it.
+
+81
+00:03:06,070 --> 00:03:07,960
+I love the idea of
+artificial intelligence.
+
+82
+00:03:07,960 --> 00:03:09,690
+I think it's, you know,
+there's so many cool things
+
+83
+00:03:09,690 --> 00:03:10,390
+that come out of it.
+
+84
+00:03:10,390 --> 00:03:11,765
+I mean, there's
+some things we'll
+
+85
+00:03:11,765 --> 00:03:14,430
+need to consider as far as the
+biases and whatnot associated
+
+86
+00:03:14,430 --> 00:03:18,300
+with it but from just
+purely conceptual level,
+
+87
+00:03:18,300 --> 00:03:19,900
+I think it's a really fun idea.
+
+88
+00:03:19,900 --> 00:03:21,780
+But practically
+speaking, I don't
+
+89
+00:03:21,780 --> 00:03:24,150
+think what we're
+doing today falls
+
+90
+00:03:24,150 --> 00:03:26,602
+into how we view
+artificial intelligence.
+
+91
+00:03:26,602 --> 00:03:28,560
+So I kind of drawn this
+here as a Venn diagram,
+
+92
+00:03:28,560 --> 00:03:30,780
+and arguably they
+should overlap some.
+
+93
+00:03:30,780 --> 00:03:33,330
+I was being a bit harsh
+probably when I made this.
+
+94
+00:03:33,330 --> 00:03:35,370
+But I really view
+artificial intelligence
+
+95
+00:03:35,370 --> 00:03:37,120
+as kind of falling
+into two buckets.
+
+96
+00:03:37,120 --> 00:03:39,210
+So there's artificial
+general intelligence,
+
+97
+00:03:39,210 --> 00:03:40,867
+that is sci-fi level.
+
+98
+00:03:40,867 --> 00:03:43,450
+You know, when I'm watching a
+movie, they're talking about AI.
+
+99
+00:03:43,450 --> 00:03:45,075
+That's what we're
+talking about, right.
+
+100
+00:03:45,075 --> 00:03:48,460
+That is a completely sentient,
+intelligent being robot
+
+101
+00:03:48,460 --> 00:03:49,950
+whatever it is.
+
+102
+00:03:49,950 --> 00:03:52,050
+Everything we do
+today, if you want
+
+103
+00:03:52,050 --> 00:03:53,580
+to call it artificial
+intelligence,
+
+104
+00:03:53,580 --> 00:03:55,140
+I think at best you
+can say it falls
+
+105
+00:03:55,140 --> 00:03:58,570
+under the sphere of artificial
+narrow intelligence.
+
+106
+00:03:58,570 --> 00:04:01,560
+And I say narrow
+because we're building
+
+107
+00:04:01,560 --> 00:04:03,480
+these tools, these
+models that are
+
+108
+00:04:03,480 --> 00:04:06,490
+designed to solve, kind of,
+a narrow channel of problems.
+
+109
+00:04:06,490 --> 00:04:10,445
+We as humans have to define
+the task very explicitly.
+
+110
+00:04:10,445 --> 00:04:12,570
+We have to provide the data
+necessary for the task,
+
+111
+00:04:12,570 --> 00:04:14,070
+or at least the
+sensors such that it
+
+112
+00:04:14,070 --> 00:04:16,230
+can understand its environment.
+
+113
+00:04:16,230 --> 00:04:17,800
+We'll talk about what those are.
+
+114
+00:04:17,800 --> 00:04:20,037
+But, you know, this
+narrow intelligence,
+
+115
+00:04:20,037 --> 00:04:21,579
+it doesn't breach
+beyond that, right.
+
+116
+00:04:21,579 --> 00:04:23,220
+It can't just all of a
+sudden go out and decide
+
+117
+00:04:23,220 --> 00:04:24,470
+it wants to do something else.
+
+118
+00:04:24,470 --> 00:04:29,070
+I built a robot to help
+me farm more efficiently
+
+119
+00:04:29,070 --> 00:04:31,902
+or an artificial intelligence to
+help me farm more efficiently.
+
+120
+00:04:31,902 --> 00:04:33,360
+It can't all of a
+sudden then pivot
+
+121
+00:04:33,360 --> 00:04:36,263
+and decide it wants to
+go become an artist.
+
+122
+00:04:36,263 --> 00:04:38,680
+It would only be able to do
+the task I have defined to it.
+
+123
+00:04:38,680 --> 00:04:40,350
+And that's everything
+we've done today, right.
+
+124
+00:04:40,350 --> 00:04:42,250
+We have not done anything
+that breaches beyond that.
+
+125
+00:04:42,250 --> 00:04:44,208
+There does not exist in
+artificial intelligence
+
+126
+00:04:44,208 --> 00:04:45,220
+at that scale.
+
+127
+00:04:45,220 --> 00:04:48,462
+And so because of that,
+I want to keep our focus
+
+128
+00:04:48,462 --> 00:04:49,920
+more on what is
+actually happening,
+
+129
+00:04:49,920 --> 00:04:51,300
+because I think there's
+really cool things that we're
+
+130
+00:04:51,300 --> 00:04:51,800
+doing right.
+
+131
+00:04:51,800 --> 00:04:53,190
+Again, my whole
+career has so far
+
+132
+00:04:53,190 --> 00:04:55,330
+has been based on this concept.
+
+133
+00:04:55,330 --> 00:04:58,620
+So the bottom diagram here
+shows this a bit better
+
+134
+00:04:58,620 --> 00:05:00,120
+of what actually
+is happening there.
+
+135
+00:05:00,120 --> 00:05:02,100
+This is the narrow
+intelligence world.
+
+136
+00:05:02,100 --> 00:05:04,725
+And I'll also say, as far
+as these Venn diagrams go,
+
+137
+00:05:04,725 --> 00:05:06,600
+everything we're going
+to talk about today is
+
+138
+00:05:06,600 --> 00:05:10,078
+falling under the machine
+learning bucket writ large.
+
+139
+00:05:10,078 --> 00:05:12,120
+There's other stuff, you
+know, rule-based methods
+
+140
+00:05:12,120 --> 00:05:14,340
+that could probably fall
+into the artificial narrow
+
+141
+00:05:14,340 --> 00:05:15,840
+intelligence band.
+
+142
+00:05:15,840 --> 00:05:17,760
+And then within
+machine learning,
+
+143
+00:05:17,760 --> 00:05:19,510
+there's also this
+realm of deep learning.
+
+144
+00:05:19,510 --> 00:05:21,210
+And we'll clarify
+why that's different
+
+145
+00:05:21,210 --> 00:05:22,930
+and why people care
+about this so much today.
+
+146
+00:05:22,930 --> 00:05:25,222
+But again, all of it still
+is falling under the machine
+
+147
+00:05:25,222 --> 00:05:26,640
+learning bucket.
+
+148
+00:05:26,640 --> 00:05:28,680
+At a high level,
+though, when we're
+
+149
+00:05:28,680 --> 00:05:30,330
+talking about machine
+learning, we're
+
+150
+00:05:30,330 --> 00:05:32,280
+usually talking about
+something like this,
+
+151
+00:05:32,280 --> 00:05:36,120
+a situation like this, where we
+have some, sort of, input data
+
+152
+00:05:36,120 --> 00:05:38,760
+and there's some, sort of,
+label associated with it, right.
+
+153
+00:05:38,760 --> 00:05:40,740
+I have pictures
+of cats and dogs,
+
+154
+00:05:40,740 --> 00:05:43,530
+and I know which ones of
+those are cats and dogs.
+
+155
+00:05:43,530 --> 00:05:45,910
+I put those into my
+black box, right.
+
+156
+00:05:45,910 --> 00:05:48,270
+We've designated this
+as a Black box for now.
+
+157
+00:05:48,270 --> 00:05:51,350
+And then its job is
+to learn a mapping.
+
+158
+00:05:51,350 --> 00:05:53,850
+And when I say mapping, you can
+think of that as a function,
+
+159
+00:05:53,850 --> 00:05:54,350
+right.
+
+160
+00:05:54,350 --> 00:05:57,190
+Some input produces some
+sort of output, right.
+
+161
+00:05:57,190 --> 00:06:00,730
+If I say y equals mx
+plus b and I plug-in--
+
+162
+00:06:00,730 --> 00:06:03,760
+and I have an M and B there,
+and I plug-in some input data x,
+
+163
+00:06:03,760 --> 00:06:04,900
+I produce a y.
+
+164
+00:06:04,900 --> 00:06:07,173
+That's a mapping
+between x and y now.
+
+165
+00:06:07,173 --> 00:06:08,590
+And that's exactly
+what I'm hoping
+
+166
+00:06:08,590 --> 00:06:10,465
+to do with these machine
+learning algorithms.
+
+167
+00:06:10,465 --> 00:06:12,697
+I want them to be more
+complex mappings such
+
+168
+00:06:12,697 --> 00:06:14,530
+that now if I have a
+new observation, right,
+
+169
+00:06:14,530 --> 00:06:17,660
+a new picture of an animal,
+I don't know which it is.
+
+170
+00:06:17,660 --> 00:06:19,870
+I put it through my
+mapping, my function,
+
+171
+00:06:19,870 --> 00:06:22,060
+and it says, OK, well,
+given this image,
+
+172
+00:06:22,060 --> 00:06:25,630
+I predict that it is a dog or
+I predict that it is a cat.
+
+173
+00:06:25,630 --> 00:06:26,720
+This is what we're doing.
+
+174
+00:06:26,720 --> 00:06:29,620
+And we're using all
+of the labeled data
+
+175
+00:06:29,620 --> 00:06:34,570
+to learn this pattern, to
+learn this mapping, OK.
+
+176
+00:06:34,570 --> 00:06:38,120
+Now, within that bucket, though,
+there's kind of two camps.
+
+177
+00:06:38,120 --> 00:06:40,300
+So we have supervised
+learning on one side
+
+178
+00:06:40,300 --> 00:06:42,410
+and unsupervised learning
+on the other side.
+
+179
+00:06:42,410 --> 00:06:45,440
+What I just described to you
+was mostly supervised learning.
+
+180
+00:06:45,440 --> 00:06:47,510
+Supervised learning
+is exactly that.
+
+181
+00:06:47,510 --> 00:06:50,330
+It's saying I have some sort
+of labels associated with it.
+
+182
+00:06:50,330 --> 00:06:52,403
+So if I want to
+predict your salary,
+
+183
+00:06:52,403 --> 00:06:54,070
+given how many years
+you went to school,
+
+184
+00:06:54,070 --> 00:06:55,990
+that's something where
+I'd be using supervised
+
+185
+00:06:55,990 --> 00:06:57,580
+learning because I could
+look at how many years
+
+186
+00:06:57,580 --> 00:06:59,920
+previous people went to school,
+and what their salaries were,
+
+187
+00:06:59,920 --> 00:07:00,420
+right.
+
+188
+00:07:00,420 --> 00:07:01,880
+Their starting
+salaries, let's say.
+
+189
+00:07:01,880 --> 00:07:04,630
+Or if I'm doing predictive
+text, right, I'm using my phone
+
+190
+00:07:04,630 --> 00:07:06,670
+and I'm typing in text
+message to a friend,
+
+191
+00:07:06,670 --> 00:07:08,613
+and it suggests the
+next word to me.
+
+192
+00:07:08,613 --> 00:07:10,780
+That's a supervised learning
+problem, or better yet,
+
+193
+00:07:10,780 --> 00:07:12,470
+a supervised learning model.
+
+194
+00:07:12,470 --> 00:07:13,870
+When I train one
+of these things,
+
+195
+00:07:13,870 --> 00:07:16,930
+they become referred
+to as models.
+
+196
+00:07:16,930 --> 00:07:21,310
+And so in that sense, I could
+train this model to say,
+
+197
+00:07:21,310 --> 00:07:24,010
+OK, well, let's look at
+all of previous text data,
+
+198
+00:07:24,010 --> 00:07:25,780
+maybe every text
+message I've ever sent
+
+199
+00:07:25,780 --> 00:07:31,420
+and let's say how often did easy
+follow the phrase this class is.
+
+200
+00:07:31,420 --> 00:07:34,400
+And it's going to say, OK, well,
+that's the most common mapping,
+
+201
+00:07:34,400 --> 00:07:34,900
+right.
+
+202
+00:07:34,900 --> 00:07:36,040
+That's the most
+common occurrence
+
+203
+00:07:36,040 --> 00:07:38,630
+or something similar to that has
+happened more often than not.
+
+204
+00:07:38,630 --> 00:07:40,990
+And therefore, I will
+suggest the word easy
+
+205
+00:07:40,990 --> 00:07:42,290
+when I provide as input.
+
+206
+00:07:42,290 --> 00:07:43,628
+This class is, OK.
+
+207
+00:07:43,628 --> 00:07:45,670
+So again, it's learning
+that mapping because it's
+
+208
+00:07:45,670 --> 00:07:48,130
+seen examples, it's
+seen labeled examples
+
+209
+00:07:48,130 --> 00:07:50,560
+or as I described to you,
+recognizing what's in an image,
+
+210
+00:07:50,560 --> 00:07:51,110
+right.
+
+211
+00:07:51,110 --> 00:07:53,450
+Saying, OK, well, this
+is a cat, this is a dog.
+
+212
+00:07:53,450 --> 00:07:55,600
+That's the task they're.
+
+213
+00:07:55,600 --> 00:07:58,360
+Unsupervised learning is kind
+of a different beast altogether.
+
+214
+00:07:58,360 --> 00:08:00,693
+Unsupervised learning is
+saying, OK, well, maybe we just
+
+215
+00:08:00,693 --> 00:08:05,110
+have a bunch of images or
+maybe we have, I don't know,
+
+216
+00:08:05,110 --> 00:08:08,410
+you know, a bunch of salary
+data about our employees
+
+217
+00:08:08,410 --> 00:08:10,150
+or characteristic
+about our employees,
+
+218
+00:08:10,150 --> 00:08:12,280
+but we don't know necessarily
+what we're trying to predict
+
+219
+00:08:12,280 --> 00:08:14,405
+or maybe we're not even
+trying to predict anything.
+
+220
+00:08:14,405 --> 00:08:16,000
+Maybe I have a
+bunch of customers
+
+221
+00:08:16,000 --> 00:08:17,680
+that come to my store
+and buy products,
+
+222
+00:08:17,680 --> 00:08:19,867
+and I have-- you know, they
+use their shoppers cart.
+
+223
+00:08:19,867 --> 00:08:22,450
+So I get a bunch of information
+about what they typically buy.
+
+224
+00:08:22,450 --> 00:08:24,220
+And then I could say,
+OK, well, my goal
+
+225
+00:08:24,220 --> 00:08:26,800
+now is to identify which groups
+of people are like each other
+
+226
+00:08:26,800 --> 00:08:28,217
+because maybe
+that's how I'm going
+
+227
+00:08:28,217 --> 00:08:29,830
+to send them ads or whatnot.
+
+228
+00:08:29,830 --> 00:08:32,799
+And so I could use
+unsupervised learning to say,
+
+229
+00:08:32,799 --> 00:08:36,309
+OK, well, let's identify-- let's
+try to automatically identify
+
+230
+00:08:36,309 --> 00:08:37,159
+clusters, right.
+
+231
+00:08:37,159 --> 00:08:39,669
+Natural groupings where
+certain people are more
+
+232
+00:08:39,669 --> 00:08:41,710
+like each other than others.
+
+233
+00:08:41,710 --> 00:08:44,930
+So that would fall under the
+bucket of unsupervised learning.
+
+234
+00:08:44,930 --> 00:08:47,410
+So again, we have machine
+learning, and within machine
+
+235
+00:08:47,410 --> 00:08:50,170
+learning, you, kind of, fall
+into supervised or unsupervised
+
+236
+00:08:50,170 --> 00:08:53,500
+learning, OK.
+
+237
+00:08:53,500 --> 00:08:55,420
+Then let's now
+imagine that we've
+
+238
+00:08:55,420 --> 00:08:57,850
+fallen into the bucket
+of supervised learning,
+
+239
+00:08:57,850 --> 00:09:00,710
+machine learning, supervised
+learning, unsupervised learning.
+
+240
+00:09:00,710 --> 00:09:02,510
+Let's go down the
+supervised learning path.
+
+241
+00:09:02,510 --> 00:09:05,990
+And now within that, there's
+another question I have to ask.
+
+242
+00:09:05,990 --> 00:09:09,800
+Is my task a regression task
+or is it a classification task?
+
+243
+00:09:09,800 --> 00:09:12,880
+So in regression we're saying,
+OK, well, we're taking--
+
+244
+00:09:12,880 --> 00:09:15,630
+or we're trying to predict
+some sort of continuous output,
+
+245
+00:09:15,630 --> 00:09:16,130
+right.
+
+246
+00:09:16,130 --> 00:09:18,220
+So again, my predictor
+variable maybe
+
+247
+00:09:18,220 --> 00:09:20,260
+is something like,
+well, how many years
+
+248
+00:09:20,260 --> 00:09:21,740
+would that person in school.
+
+249
+00:09:21,740 --> 00:09:23,830
+My response variable,
+that's something that's,
+
+250
+00:09:23,830 --> 00:09:26,410
+kind of, the outcome, right.
+
+251
+00:09:26,410 --> 00:09:29,210
+My response variable
+is the starting salary.
+
+252
+00:09:29,210 --> 00:09:30,860
+So that's a
+continuous prediction.
+
+253
+00:09:30,860 --> 00:09:33,690
+So my best thing I can hope to
+do is fit some sort of function
+
+254
+00:09:33,690 --> 00:09:34,190
+to it.
+
+255
+00:09:34,190 --> 00:09:36,565
+Maybe it's a line, maybe it's
+some sort of squiggly line,
+
+256
+00:09:36,565 --> 00:09:38,980
+maybe it's a parabola,
+whatever it is,
+
+257
+00:09:38,980 --> 00:09:40,660
+but it's to fit some
+sort of function
+
+258
+00:09:40,660 --> 00:09:43,690
+to it such that
+on average, things
+
+259
+00:09:43,690 --> 00:09:46,280
+are closest to this function
+that I've found, right.
+
+260
+00:09:46,280 --> 00:09:47,830
+In this case, this line.
+
+261
+00:09:47,830 --> 00:09:51,700
+I want to minimize the distance
+to all the points using
+
+262
+00:09:51,700 --> 00:09:52,562
+just a single line.
+
+263
+00:09:52,562 --> 00:09:54,520
+Because what that does
+is it says, OK, well now
+
+264
+00:09:54,520 --> 00:09:56,170
+I have a simplified
+representation
+
+265
+00:09:56,170 --> 00:09:59,257
+of this relationship between
+years of education and salary
+
+266
+00:09:59,257 --> 00:10:01,090
+and everything else
+around that I'm assuming
+
+267
+00:10:01,090 --> 00:10:02,068
+is just noise, right.
+
+268
+00:10:02,068 --> 00:10:03,860
+There's going to be
+some above, some below.
+
+269
+00:10:03,860 --> 00:10:07,630
+But for the most
+part, it's just noise.
+
+270
+00:10:07,630 --> 00:10:09,228
+On the classification
+side, that's
+
+271
+00:10:09,228 --> 00:10:11,020
+more of what I was
+talking about of saying,
+
+272
+00:10:11,020 --> 00:10:13,145
+well, maybe it falls into
+one of two groups, right.
+
+273
+00:10:13,145 --> 00:10:16,330
+Maybe it's cats, maybe
+it's dogs, maybe it's
+
+274
+00:10:16,330 --> 00:10:18,745
+survival or not survival.
+
+275
+00:10:18,745 --> 00:10:20,120
+It could be any
+number of things.
+
+276
+00:10:20,120 --> 00:10:21,495
+It could be multiple
+labels, too.
+
+277
+00:10:21,495 --> 00:10:24,550
+It could be that something
+could be one of 1,000 different
+
+278
+00:10:24,550 --> 00:10:25,160
+categories.
+
+279
+00:10:25,160 --> 00:10:27,970
+Maybe I have 1,000 different
+types of things that could
+
+280
+00:10:27,970 --> 00:10:29,180
+appear in my images.
+
+281
+00:10:29,180 --> 00:10:32,650
+And so therefore, I have
+technically 1,000 different
+
+282
+00:10:32,650 --> 00:10:34,795
+classes that it could fall into.
+
+283
+00:10:34,795 --> 00:10:36,670
+And you can kind of
+visually think about this
+
+284
+00:10:36,670 --> 00:10:38,920
+as like, well, it's kind of
+like the clustering thing
+
+285
+00:10:38,920 --> 00:10:41,025
+where points fall
+closer together.
+
+286
+00:10:41,025 --> 00:10:42,400
+But in the
+unsupervised learning,
+
+287
+00:10:42,400 --> 00:10:43,567
+I don't necessarily know it.
+
+288
+00:10:43,567 --> 00:10:47,230
+I mean, here I showed
+you know blue and orange
+
+289
+00:10:47,230 --> 00:10:50,080
+as separate objects,
+but really in practice,
+
+290
+00:10:50,080 --> 00:10:51,520
+in unsupervised
+learning, I don't
+
+291
+00:10:51,520 --> 00:10:53,870
+know that these clusters exist.
+
+292
+00:10:53,870 --> 00:10:55,480
+I would just see
+only orange points,
+
+293
+00:10:55,480 --> 00:10:57,370
+and I'd have to say,
+OK, well, these ones
+
+294
+00:10:57,370 --> 00:10:59,420
+are so close together that I
+think they're one grouping.
+
+295
+00:10:59,420 --> 00:11:01,545
+And these are so close I
+think they're one grouping
+
+296
+00:11:01,545 --> 00:11:03,230
+and these have some
+sort of patterns
+
+297
+00:11:03,230 --> 00:11:05,950
+I think they're one grouping,
+but I would never know for sure
+
+298
+00:11:05,950 --> 00:11:07,300
+if that's right or wrong.
+
+299
+00:11:07,300 --> 00:11:09,490
+In classification
+I'm saying, well,
+
+300
+00:11:09,490 --> 00:11:12,520
+this is how these two
+poin-- or these two groups
+
+301
+00:11:12,520 --> 00:11:14,985
+are related to each other
+given that I have two predictor
+
+302
+00:11:14,985 --> 00:11:15,860
+variables now, right.
+
+303
+00:11:15,860 --> 00:11:16,695
+So two inputs.
+
+304
+00:11:16,695 --> 00:11:18,320
+So here I had a
+predictor and response.
+
+305
+00:11:18,320 --> 00:11:20,440
+Here's two predictor variables.
+
+306
+00:11:20,440 --> 00:11:23,680
+But within this space of
+data that I've collected,
+
+307
+00:11:23,680 --> 00:11:27,080
+I do actually know that these
+points are this grayish color
+
+308
+00:11:27,080 --> 00:11:29,300
+and these points are
+this chartreuse, yellow,
+
+309
+00:11:29,300 --> 00:11:31,590
+whatever the color this is.
+
+310
+00:11:31,590 --> 00:11:33,190
+And then I would
+just say, OK, great,
+
+311
+00:11:33,190 --> 00:11:37,000
+I want to classify
+this or group these
+
+312
+00:11:37,000 --> 00:11:38,770
+together and say
+that, well, anything
+
+313
+00:11:38,770 --> 00:11:42,020
+that is within this circle,
+I think is a gray point
+
+314
+00:11:42,020 --> 00:11:44,770
+and otherwise it's you
+know the yellow point.
+
+315
+00:11:44,770 --> 00:11:46,450
+OK.
+
+316
+00:11:46,450 --> 00:11:47,950
+Now, I'll also say
+to you, I'm going
+
+317
+00:11:47,950 --> 00:11:49,908
+to keep talking about
+this supervised learning,
+
+318
+00:11:49,908 --> 00:11:52,420
+but if this isn't clicking
+yet, that is perfectly OK
+
+319
+00:11:52,420 --> 00:11:55,420
+because I have a literal
+whole course dedicated
+
+320
+00:11:55,420 --> 00:11:58,900
+to this because this is not a
+one lecture, kind of, topic, OK.
+
+321
+00:11:58,900 --> 00:12:00,940
+I've 12 minutes into
+this, so you're not
+
+322
+00:12:00,940 --> 00:12:02,740
+going to be getting this yet.
+
+323
+00:12:02,740 --> 00:12:04,510
+But if you are
+interested, if it's
+
+324
+00:12:04,510 --> 00:12:06,130
+starting to pique
+your interest, I'd
+
+325
+00:12:06,130 --> 00:12:08,680
+highly recommend considering
+first off Data 3300
+
+326
+00:12:08,680 --> 00:12:11,180
+if you haven't taken that
+yet, is a great opportunity.
+
+327
+00:12:11,180 --> 00:12:13,300
+It's modern data analytics
+that will expose you
+
+328
+00:12:13,300 --> 00:12:17,630
+to a lot of these concepts right
+away, kind of a lower level.
+
+329
+00:12:17,630 --> 00:12:20,350
+And then if you take
+Data 5600, from me,
+
+330
+00:12:20,350 --> 00:12:23,260
+that is a course that dives
+deeper into the machine learning
+
+331
+00:12:23,260 --> 00:12:25,270
+and regression side of
+things and gives you
+
+332
+00:12:25,270 --> 00:12:27,740
+a nice thorough
+background on all this.
+
+333
+00:12:27,740 --> 00:12:32,620
+And then there's actually
+also Data 5610/6610,
+
+334
+00:12:32,620 --> 00:12:34,260
+which is my deep
+learning course.
+
+335
+00:12:34,260 --> 00:12:37,330
+And we'll talk about what
+deep learning is in a second.
+
+336
+00:12:37,330 --> 00:12:40,240
+But first, I wanted to
+show you a simple version
+
+337
+00:12:40,240 --> 00:12:43,330
+of what one of these machine
+learning algorithms looks like.
+
+338
+00:12:43,330 --> 00:12:44,770
+Because before we
+said, OK, great,
+
+339
+00:12:44,770 --> 00:12:46,910
+well, maybe I can fit
+a line to the data
+
+340
+00:12:46,910 --> 00:12:48,740
+and that is simple
+enough to understand.
+
+341
+00:12:48,740 --> 00:12:51,310
+But with decision trees,
+these are saying, well,
+
+342
+00:12:51,310 --> 00:12:53,050
+what if I want to
+just fit or find
+
+343
+00:12:53,050 --> 00:12:55,060
+some sort of natural
+grouping right.
+
+344
+00:12:55,060 --> 00:12:58,030
+Here in this data set over
+on the right-hand side
+
+345
+00:12:58,030 --> 00:13:02,560
+of the screen, we were
+looking at trying to predict
+
+346
+00:13:02,560 --> 00:13:04,035
+baseball player salary, right.
+
+347
+00:13:04,035 --> 00:13:06,160
+So I think it's on the
+order of millions of dollars
+
+348
+00:13:06,160 --> 00:13:08,200
+at this data set was in.
+
+349
+00:13:08,200 --> 00:13:10,763
+But either way, you can
+see on the horizontal axis
+
+350
+00:13:10,763 --> 00:13:12,430
+on this plot, I have
+the number of years
+
+351
+00:13:12,430 --> 00:13:13,520
+they were in the league.
+
+352
+00:13:13,520 --> 00:13:15,880
+And then on the
+vertical axis, I have
+
+353
+00:13:15,880 --> 00:13:17,530
+the number of hits they had.
+
+354
+00:13:17,530 --> 00:13:19,360
+So how many hits did
+they have probably
+
+355
+00:13:19,360 --> 00:13:21,990
+on average or total for the
+season or whatever it is.
+
+356
+00:13:21,990 --> 00:13:23,350
+It looks like probably total.
+
+357
+00:13:23,350 --> 00:13:25,018
+I'm not a baseball
+fan, so I apologize
+
+358
+00:13:25,018 --> 00:13:26,560
+if I butcher any of
+this explanation,
+
+359
+00:13:26,560 --> 00:13:29,045
+but it's more just
+as an example here.
+
+360
+00:13:29,045 --> 00:13:30,670
+But either way, you
+can kind of imagine
+
+361
+00:13:30,670 --> 00:13:32,170
+that each one of
+these orange points
+
+362
+00:13:32,170 --> 00:13:35,890
+is an individual player in our
+data set, and any one of them
+
+363
+00:13:35,890 --> 00:13:38,510
+has a known salary value.
+
+364
+00:13:38,510 --> 00:13:40,655
+But maybe me, I'm
+an agent, let's say,
+
+365
+00:13:40,655 --> 00:13:42,280
+and I'm trying to
+say, well, I'm trying
+
+366
+00:13:42,280 --> 00:13:46,840
+to get a sense of how much
+can I expect my client to ask
+
+367
+00:13:46,840 --> 00:13:50,270
+for in salary in two years.
+
+368
+00:13:50,270 --> 00:13:52,120
+Well, why not just
+use all the data
+
+369
+00:13:52,120 --> 00:13:54,020
+we have of historical
+performances, right.
+
+370
+00:13:54,020 --> 00:13:55,480
+Know how many years they
+would be in the league
+
+371
+00:13:55,480 --> 00:13:57,460
+for at that point in
+time, how many hits
+
+372
+00:13:57,460 --> 00:13:59,710
+we'd expect them to have,
+or given how many hits,
+
+373
+00:13:59,710 --> 00:14:00,890
+how much could they expect.
+
+374
+00:14:00,890 --> 00:14:03,605
+So that would be maybe
+the motivation there.
+
+375
+00:14:03,605 --> 00:14:05,980
+And so now I just want to find
+some sort of function that
+
+376
+00:14:05,980 --> 00:14:09,220
+tells me, well, what's this
+relationship between years hits
+
+377
+00:14:09,220 --> 00:14:12,730
+and then the outcome, the
+response variable being salary?
+
+378
+00:14:12,730 --> 00:14:15,370
+So decision trees take a
+really clever approach.
+
+379
+00:14:15,370 --> 00:14:18,560
+Is they say, well, let me look
+at these two dimensions, right,
+
+380
+00:14:18,560 --> 00:14:21,140
+hits and years, these are
+dimensions in my data set.
+
+381
+00:14:21,140 --> 00:14:22,250
+And let me see.
+
+382
+00:14:22,250 --> 00:14:25,738
+Well, if I draw a line kind of
+a vertical or horizontal line
+
+383
+00:14:25,738 --> 00:14:27,280
+through this data
+set, I could choose
+
+384
+00:14:27,280 --> 00:14:29,920
+either vertical or horizontal
+and it could be anywhere
+
+385
+00:14:29,920 --> 00:14:32,740
+in there but it has to be one
+of those directions, which
+
+386
+00:14:32,740 --> 00:14:34,960
+one of those would
+result in the most
+
+387
+00:14:34,960 --> 00:14:37,750
+similar groupings or the
+most similar outcome groups
+
+388
+00:14:37,750 --> 00:14:38,990
+from this.
+
+389
+00:14:38,990 --> 00:14:41,290
+And so it turns out
+that for this data set,
+
+390
+00:14:41,290 --> 00:14:44,390
+the number of years is the
+first most important thing.
+
+391
+00:14:44,390 --> 00:14:47,680
+It says any case or any
+situation where there are--
+
+392
+00:14:47,680 --> 00:14:49,660
+or where there is
+less than 4.5 years,
+
+393
+00:14:49,660 --> 00:14:52,330
+or for all those people that
+are less than 4.5 years,
+
+394
+00:14:52,330 --> 00:14:54,670
+those are similar
+enough such that I
+
+395
+00:14:54,670 --> 00:14:56,360
+don't want to split any more.
+
+396
+00:14:56,360 --> 00:14:58,720
+I can just stop there and
+say, OK, for the most part,
+
+397
+00:14:58,720 --> 00:15:01,830
+anyone less than 4 and
+1/2 years on average,
+
+398
+00:15:01,830 --> 00:15:05,380
+plus or minus some
+noise is about 5.11,
+
+399
+00:15:05,380 --> 00:15:07,680
+I guess a million
+for the salary.
+
+400
+00:15:07,680 --> 00:15:10,180
+So that just tells me maybe
+that's rookie contracts, right.
+
+401
+00:15:10,180 --> 00:15:13,980
+Those early in your career, you
+can expect on average, no matter
+
+402
+00:15:13,980 --> 00:15:18,240
+how many hits you have,
+it's just about 5.11.
+
+403
+00:15:18,240 --> 00:15:21,550
+But after that point, right,
+once they're greater than 5.--
+
+404
+00:15:21,550 --> 00:15:24,717
+or 4.5 years well,
+then what matters.
+
+405
+00:15:24,717 --> 00:15:26,550
+Well, I've kind of
+gotten to this group now,
+
+406
+00:15:26,550 --> 00:15:28,050
+and maybe I could
+have stopped there
+
+407
+00:15:28,050 --> 00:15:30,322
+and just averaged everything
+to the right here.
+
+408
+00:15:30,322 --> 00:15:32,280
+So R1 representing those
+that are in the rookie
+
+409
+00:15:32,280 --> 00:15:35,040
+years or the early
+years and then
+
+410
+00:15:35,040 --> 00:15:38,110
+the veterans falling in
+these two regions here.
+
+411
+00:15:38,110 --> 00:15:41,010
+But I imagine before I've
+made this split at R2 and R--
+
+412
+00:15:41,010 --> 00:15:44,250
+to create R2 and R3, this
+is just one big group,
+
+413
+00:15:44,250 --> 00:15:45,990
+but for whatever
+reason, maybe I didn't
+
+414
+00:15:45,990 --> 00:15:48,970
+feel that this one big group
+was homogeneous enough, right.
+
+415
+00:15:48,970 --> 00:15:50,770
+There was too much
+spread in the salaries.
+
+416
+00:15:50,770 --> 00:15:52,770
+So I decide to split again.
+
+417
+00:15:52,770 --> 00:15:55,577
+And so then the next best split
+that could possibly happen
+
+418
+00:15:55,577 --> 00:15:57,160
+and it could have
+been vertical again,
+
+419
+00:15:57,160 --> 00:15:58,360
+it could have been horizontal.
+
+420
+00:15:58,360 --> 00:16:00,000
+This time, though, it
+seemed that it was actually
+
+421
+00:16:00,000 --> 00:16:01,260
+horizontal was the best--
+
+422
+00:16:01,260 --> 00:16:04,290
+was with hits less than 117.5.
+
+423
+00:16:04,290 --> 00:16:08,340
+So it seems now that for those
+or basically to hit the highest
+
+424
+00:16:08,340 --> 00:16:12,780
+average salary, you need to not
+only be beyond your 4 and 1/2
+
+425
+00:16:12,780 --> 00:16:17,500
+year mark, but you also need
+to get more than 117.5 hits.
+
+426
+00:16:17,500 --> 00:16:20,490
+This group up here is
+homogeneous enough now
+
+427
+00:16:20,490 --> 00:16:24,180
+to say that, well, if we just go
+ahead and average all of those,
+
+428
+00:16:24,180 --> 00:16:27,420
+the average salary is
+about 6.74 and then I
+
+429
+00:16:27,420 --> 00:16:29,080
+decide not to split anymore.
+
+430
+00:16:29,080 --> 00:16:30,908
+And the other side
+of it is those
+
+431
+00:16:30,908 --> 00:16:32,200
+that don't have that many hits.
+
+432
+00:16:32,200 --> 00:16:33,850
+And so they end up
+with a lower salary.
+
+433
+00:16:33,850 --> 00:16:35,970
+It's kind of
+intuitively makes sense.
+
+434
+00:16:35,970 --> 00:16:38,430
+But the nice thing is here
+this is a general enough
+
+435
+00:16:38,430 --> 00:16:40,260
+architecture, a general
+enough algorithm,
+
+436
+00:16:40,260 --> 00:16:43,920
+such that even if I had
+1,000 different cate--
+
+437
+00:16:43,920 --> 00:16:45,900
+or dimensions that I
+could look at, right,
+
+438
+00:16:45,900 --> 00:16:48,720
+maybe it's not just hits,
+but it's, you know, rbis,
+
+439
+00:16:48,720 --> 00:16:50,380
+it's at bats.
+
+440
+00:16:50,380 --> 00:16:52,200
+It's any number
+[INAUDIBLE] right.
+
+441
+00:16:52,200 --> 00:16:54,000
+What year you were
+born, how tall you are,
+
+442
+00:16:54,000 --> 00:16:57,190
+weight, all these other
+characteristics even handedness.
+
+443
+00:16:57,190 --> 00:16:59,250
+I could have right left
+handed where you hit
+
+444
+00:16:59,250 --> 00:17:01,380
+where you pitch whatever it is.
+
+445
+00:17:01,380 --> 00:17:03,930
+All those could be different
+dimensions I have in my data
+
+446
+00:17:03,930 --> 00:17:04,630
+set.
+
+447
+00:17:04,630 --> 00:17:07,109
+And rather than having to
+manually go through and figure
+
+448
+00:17:07,109 --> 00:17:08,859
+out the relationship
+between these groups,
+
+449
+00:17:08,859 --> 00:17:10,260
+this algorithm
+will automatically
+
+450
+00:17:10,260 --> 00:17:12,510
+go through and cut this
+data set in such a way
+
+451
+00:17:12,510 --> 00:17:15,150
+that we end up with the
+best prediction possible.
+
+452
+00:17:15,150 --> 00:17:18,630
+That's, kind of, the
+brilliance of machine learning,
+
+453
+00:17:18,630 --> 00:17:21,030
+is that it's this
+structure really,
+
+454
+00:17:21,030 --> 00:17:24,420
+the learning aspect of it is
+that I've created this algorithm
+
+455
+00:17:24,420 --> 00:17:28,560
+or structured this algorithm in
+such a way that it allows my,
+
+456
+00:17:28,560 --> 00:17:34,350
+you know, my computer here
+to just look at the real data
+
+457
+00:17:34,350 --> 00:17:36,180
+and make the best
+choice to define
+
+458
+00:17:36,180 --> 00:17:38,070
+this correct mapping
+or the best mapping
+
+459
+00:17:38,070 --> 00:17:39,858
+possible between
+my inputs, which
+
+460
+00:17:39,858 --> 00:17:41,400
+is all these dimensions
+I'm measuring
+
+461
+00:17:41,400 --> 00:17:45,000
+about the players themselves,
+and then the outputs which
+
+462
+00:17:45,000 --> 00:17:48,730
+are-- which is the actual salary
+that those players received.
+
+463
+00:17:48,730 --> 00:17:50,693
+And again, I don't have
+to do anything manual,
+
+464
+00:17:50,693 --> 00:17:52,860
+I don't have to go in here
+and find patterns myself,
+
+465
+00:17:52,860 --> 00:17:54,670
+it automatically does that.
+
+466
+00:17:54,670 --> 00:17:57,888
+And that is, again where the
+learning aspect or why people
+
+467
+00:17:57,888 --> 00:18:00,180
+feel like sometimes this is
+artificial intelligence is,
+
+468
+00:18:00,180 --> 00:18:03,160
+you know, it's finding patterns
+amongst massive data sets
+
+469
+00:18:03,160 --> 00:18:07,130
+that would take me an impossibly
+long time to try to do myself.
+
+470
+00:18:07,130 --> 00:18:09,040
+And it's able to find
+those in, you know,
+
+471
+00:18:09,040 --> 00:18:11,380
+minuscule amounts
+of time sometimes.
+
+472
+00:18:11,380 --> 00:18:13,390
+But as we'll see,
+you don't always
+
+473
+00:18:13,390 --> 00:18:15,958
+have a situation where it's
+that fast and a lot of times
+
+474
+00:18:15,958 --> 00:18:18,250
+it's speed is dependent upon
+the computer you're using.
+
+475
+00:18:18,250 --> 00:18:22,560
+Hint, hint why we
+need cloud computing.
+
+476
+00:18:22,560 --> 00:18:26,100
+So that brings us then-- and
+I'll slide a little bit more
+
+477
+00:18:26,100 --> 00:18:27,390
+out of the way over here.
+
+478
+00:18:27,390 --> 00:18:30,690
+That brings us then to
+this idea of deep learning.
+
+479
+00:18:30,690 --> 00:18:34,230
+So deep learning is trying to do
+a similar thing to what we just
+
+480
+00:18:34,230 --> 00:18:36,510
+talked about with decision
+trees it's just saying,
+
+481
+00:18:36,510 --> 00:18:38,930
+what if I made this
+even more flexible.
+
+482
+00:18:38,930 --> 00:18:41,770
+What if I kind of expanded
+what it could possibly do?
+
+483
+00:18:41,770 --> 00:18:45,160
+Because here or a better
+statement if we go back.
+
+484
+00:18:45,160 --> 00:18:47,340
+Oops, back.
+
+485
+00:18:47,340 --> 00:18:48,280
+There we go.
+
+486
+00:18:48,280 --> 00:18:51,270
+Here it is constrained
+in that it can only cut
+
+487
+00:18:51,270 --> 00:18:52,900
+this way and this way, right.
+
+488
+00:18:52,900 --> 00:18:55,750
+Every line on this plot was
+either vertical or horizontal.
+
+489
+00:18:55,750 --> 00:18:59,220
+Well, what if the best shape was
+actually some weird curvy shape
+
+490
+00:18:59,220 --> 00:19:00,850
+that separates these groups.
+
+491
+00:19:00,850 --> 00:19:02,058
+Decision trees can't do that.
+
+492
+00:19:02,058 --> 00:19:04,142
+And there exists other
+algorithms that aren't deep
+
+493
+00:19:04,142 --> 00:19:05,470
+learning that could do that.
+
+494
+00:19:05,470 --> 00:19:07,890
+But really what we're getting
+at is the more flexible
+
+495
+00:19:07,890 --> 00:19:12,210
+we make the algorithm, the
+more complex of relationships
+
+496
+00:19:12,210 --> 00:19:12,895
+we can learn.
+
+497
+00:19:12,895 --> 00:19:15,270
+And deep learning is, kind
+of, taking that to the extreme
+
+498
+00:19:15,270 --> 00:19:17,940
+and saying, well, what if we
+create what is arguably the most
+
+499
+00:19:17,940 --> 00:19:19,680
+general architecture.
+
+500
+00:19:19,680 --> 00:19:22,150
+I did some work
+before in actually
+
+501
+00:19:22,150 --> 00:19:25,570
+when I was doing my
+PhD here at Utah State
+
+502
+00:19:25,570 --> 00:19:27,760
+on trying to find a
+direct mapping actually
+
+503
+00:19:27,760 --> 00:19:29,950
+between decision trees
+and deep learning.
+
+504
+00:19:29,950 --> 00:19:32,410
+And it turns out, using the
+deep learning algorithm,
+
+505
+00:19:32,410 --> 00:19:35,410
+I can actually recreate
+exactly what decision trees do.
+
+506
+00:19:35,410 --> 00:19:38,050
+That won't make any
+sense now, but it's just
+
+507
+00:19:38,050 --> 00:19:41,177
+to show that for the most part,
+these algorithms are typically
+
+508
+00:19:41,177 --> 00:19:42,760
+doing the same thing,
+and they usually
+
+509
+00:19:42,760 --> 00:19:46,120
+have some sort of
+underlying shared structure.
+
+510
+00:19:46,120 --> 00:19:48,070
+But at a high
+level, deep learning
+
+511
+00:19:48,070 --> 00:19:51,400
+seems to be the most general
+approach right now at least.
+
+512
+00:19:51,400 --> 00:19:55,090
+So to, you know,
+distill what is now,
+
+513
+00:19:55,090 --> 00:19:57,370
+you know, not just
+an advanced topic,
+
+514
+00:19:57,370 --> 00:20:00,130
+but, you know, kind of two
+courses, three courses down
+
+515
+00:20:00,130 --> 00:20:03,803
+the line for you into one slide,
+so, again, an impossible task,
+
+516
+00:20:03,803 --> 00:20:05,470
+but I just want you
+to be exposed to it,
+
+517
+00:20:05,470 --> 00:20:08,140
+at least in case you're curious.
+
+518
+00:20:08,140 --> 00:20:10,720
+You know, we're still, kind
+of, doing the same thing here.
+
+519
+00:20:10,720 --> 00:20:13,590
+So we have our
+input X data, right.
+
+520
+00:20:13,590 --> 00:20:14,740
+This is our inputs.
+
+521
+00:20:14,740 --> 00:20:16,450
+And we have our true Y's.
+
+522
+00:20:16,450 --> 00:20:17,515
+These are our outputs.
+
+523
+00:20:17,515 --> 00:20:18,890
+These are our
+response variables.
+
+524
+00:20:18,890 --> 00:20:20,015
+Kind of same thing we said.
+
+525
+00:20:20,015 --> 00:20:23,650
+So predictor variables
+and response variables.
+
+526
+00:20:23,650 --> 00:20:26,470
+Now, the clever thing
+is with deep learning
+
+527
+00:20:26,470 --> 00:20:28,200
+is we do something
+kind of iterative.
+
+528
+00:20:28,200 --> 00:20:30,505
+So what we do is we
+establish these layers.
+
+529
+00:20:30,505 --> 00:20:33,130
+You can think of them, think of
+them as transformations, right.
+
+530
+00:20:33,130 --> 00:20:35,530
+Ways that we can
+manipulate the input data.
+
+531
+00:20:35,530 --> 00:20:37,270
+And the way that
+they're manipulated
+
+532
+00:20:37,270 --> 00:20:40,180
+is actually defined
+by these weights.
+
+533
+00:20:40,180 --> 00:20:43,240
+Funny enough, if you have, you
+know, taken an algebra course,
+
+534
+00:20:43,240 --> 00:20:45,370
+and you remember y
+equals mx plus b,
+
+535
+00:20:45,370 --> 00:20:48,130
+it's actually the same algorithm
+or same equation that's
+
+536
+00:20:48,130 --> 00:20:49,510
+happening under the hood here.
+
+537
+00:20:49,510 --> 00:20:52,740
+It's a little bit-- there's a
+few more m's and a few more b's,
+
+538
+00:20:52,740 --> 00:20:53,240
+right.
+
+539
+00:20:53,240 --> 00:20:54,782
+Those are the
+parameters of the model
+
+540
+00:20:54,782 --> 00:20:56,560
+or the weights of
+the model, right. m
+
+541
+00:20:56,560 --> 00:20:59,470
+and b could be
+referred to as weights.
+
+542
+00:20:59,470 --> 00:21:01,520
+But that's basically
+what's happening here.
+
+543
+00:21:01,520 --> 00:21:02,937
+It's just that
+we've expanded this
+
+544
+00:21:02,937 --> 00:21:05,290
+now to allow it to be
+arbitrarily many m's and b's,
+
+545
+00:21:05,290 --> 00:21:08,170
+however many weights that we'd
+like to have in the model.
+
+546
+00:21:08,170 --> 00:21:11,740
+So we put our x data through
+this y equals mx plus
+
+547
+00:21:11,740 --> 00:21:14,200
+b esque type function,
+and then that
+
+548
+00:21:14,200 --> 00:21:15,770
+produces some sort of output.
+
+549
+00:21:15,770 --> 00:21:17,530
+But rather than that
+actually being our y,
+
+550
+00:21:17,530 --> 00:21:19,155
+that could just be
+an intermediate step
+
+551
+00:21:19,155 --> 00:21:21,730
+and we could take that
+and make that, you know,
+
+552
+00:21:21,730 --> 00:21:23,135
+go through the next layer.
+
+553
+00:21:23,135 --> 00:21:25,510
+And the next layer after that,
+and we could stack as many
+
+554
+00:21:25,510 --> 00:21:27,910
+of these layers as we wanted
+to, each of them having
+
+555
+00:21:27,910 --> 00:21:30,370
+a unique random set of weights.
+
+556
+00:21:30,370 --> 00:21:32,440
+And that's the
+deep-learning aspect of it,
+
+557
+00:21:32,440 --> 00:21:35,110
+is there's depth, there's this
+depth wise operation that's
+
+558
+00:21:35,110 --> 00:21:36,130
+happening.
+
+559
+00:21:36,130 --> 00:21:38,260
+But at the end of
+the day, no matter
+
+560
+00:21:38,260 --> 00:21:41,980
+what happens in this big
+black box of weights in here,
+
+561
+00:21:41,980 --> 00:21:44,650
+the input is x and
+the output will still
+
+562
+00:21:44,650 --> 00:21:47,140
+be some y, some sort
+of predicted value.
+
+563
+00:21:47,140 --> 00:21:50,260
+So again, think of this in the
+context of the baseball player
+
+564
+00:21:50,260 --> 00:21:51,400
+salaries.
+
+565
+00:21:51,400 --> 00:21:55,840
+I put in all the variables I
+know about the baseball players.
+
+566
+00:21:55,840 --> 00:21:57,910
+I predict their salary.
+
+567
+00:21:57,910 --> 00:21:59,680
+Well, now what I
+can do is I can say,
+
+568
+00:21:59,680 --> 00:22:01,060
+well, I know what
+the true salary
+
+569
+00:22:01,060 --> 00:22:02,840
+was because it's labeled data.
+
+570
+00:22:02,840 --> 00:22:07,510
+And so I'll compare the true
+salary to the value I predicted.
+
+571
+00:22:07,510 --> 00:22:09,510
+And what I'll actually
+do is I'll just calculate
+
+572
+00:22:09,510 --> 00:22:11,040
+the mean squared error, right.
+
+573
+00:22:11,040 --> 00:22:11,742
+The difference.
+
+574
+00:22:11,742 --> 00:22:13,200
+Think about it this
+way, I can just
+
+575
+00:22:13,200 --> 00:22:16,110
+subtract the true y
+from the predicted y
+
+576
+00:22:16,110 --> 00:22:19,260
+or vice versa, square those
+so that the numbers are always
+
+577
+00:22:19,260 --> 00:22:23,610
+positive, such that a bigger
+number means that it's not
+
+578
+00:22:23,610 --> 00:22:24,910
+as good of a predicted y.
+
+579
+00:22:24,910 --> 00:22:26,705
+Because if the error
+is smaller, that
+
+580
+00:22:26,705 --> 00:22:28,080
+means even when
+I square it, it's
+
+581
+00:22:28,080 --> 00:22:29,427
+still relatively small number.
+
+582
+00:22:29,427 --> 00:22:30,760
+That would be a good prediction.
+
+583
+00:22:30,760 --> 00:22:33,570
+So we want to minimize the
+distance between these true wise
+
+584
+00:22:33,570 --> 00:22:34,990
+and predicted wise.
+
+585
+00:22:34,990 --> 00:22:36,880
+But either way, I
+make my prediction.
+
+586
+00:22:36,880 --> 00:22:38,615
+I look at the error
+between those two.
+
+587
+00:22:38,615 --> 00:22:40,240
+That's what the loss
+function is doing.
+
+588
+00:22:40,240 --> 00:22:42,340
+The mean squared error
+here is my loss function.
+
+589
+00:22:42,340 --> 00:22:44,340
+And so if it's a big
+mean squared error,
+
+590
+00:22:44,340 --> 00:22:45,520
+that means it's a bad loss.
+
+591
+00:22:45,520 --> 00:22:46,452
+My loss is large.
+
+592
+00:22:46,452 --> 00:22:47,910
+If it's a small
+mean squared error,
+
+593
+00:22:47,910 --> 00:22:50,710
+that means it's a
+small loss value.
+
+594
+00:22:50,710 --> 00:22:52,573
+And my goal is to
+minimize the loss.
+
+595
+00:22:52,573 --> 00:22:54,240
+That's what I'm trying
+to do is minimize
+
+596
+00:22:54,240 --> 00:22:56,160
+the error in this model.
+
+597
+00:22:56,160 --> 00:22:57,990
+And so that's what
+the optimizer does,
+
+598
+00:22:57,990 --> 00:23:00,540
+is the optimizer does a
+little bit of calculus in here
+
+599
+00:23:00,540 --> 00:23:02,940
+and it says, OK,
+well, what direction
+
+600
+00:23:02,940 --> 00:23:04,680
+do I need to move
+all the weights
+
+601
+00:23:04,680 --> 00:23:07,000
+in this model at the same time?
+
+602
+00:23:07,000 --> 00:23:09,385
+How do I need to adjust
+these numbers, these--
+
+603
+00:23:09,385 --> 00:23:12,100
+I think about that, and that's
+that y equals mx plus b.
+
+604
+00:23:12,100 --> 00:23:15,430
+In what ways do I need to
+adjust those m's and b's such
+
+605
+00:23:15,430 --> 00:23:18,460
+that I reduce the distance
+between the true y
+
+606
+00:23:18,460 --> 00:23:20,320
+and the predicted y.
+
+607
+00:23:20,320 --> 00:23:21,830
+And I only do a small step.
+
+608
+00:23:21,830 --> 00:23:24,470
+I don't try to make this in
+one jump in one training pass,
+
+609
+00:23:24,470 --> 00:23:25,510
+I let this be iterative.
+
+610
+00:23:25,510 --> 00:23:27,490
+So it just takes a little
+step here each time.
+
+611
+00:23:27,490 --> 00:23:28,690
+And then every time
+through is trying
+
+612
+00:23:28,690 --> 00:23:30,350
+to get better and
+better and better.
+
+613
+00:23:30,350 --> 00:23:33,190
+And so given enough data
+and enough compute power,
+
+614
+00:23:33,190 --> 00:23:35,950
+I should conceivably be able
+to learn any sort of function,
+
+615
+00:23:35,950 --> 00:23:38,240
+any mapping between
+inputs X and Y's.
+
+616
+00:23:38,240 --> 00:23:41,630
+It's just a matter of
+data and compute power.
+
+617
+00:23:41,630 --> 00:23:44,090
+And so that's basically
+deep learning.
+
+618
+00:23:44,090 --> 00:23:48,140
+So I guess if you don't want to
+take my 5610 class or 5600, that
+
+619
+00:23:48,140 --> 00:23:49,280
+will get you there.
+
+620
+00:23:49,280 --> 00:23:51,437
+But I'd imagine there's
+probably a little bit more
+
+621
+00:23:51,437 --> 00:23:52,770
+that you didn't pick up in that.
+
+622
+00:23:52,770 --> 00:23:54,510
+So there's a lot
+more to go with that
+
+623
+00:23:54,510 --> 00:23:57,392
+but I just want you to
+be aware of what this is.
+
+624
+00:23:57,392 --> 00:23:58,850
+And then also we'll
+see-- actually,
+
+625
+00:23:58,850 --> 00:24:00,240
+we'll try to utilize this some--
+
+626
+00:24:00,240 --> 00:24:02,240
+or at least start exploring
+how we could utilize
+
+627
+00:24:02,240 --> 00:24:07,100
+this, some leveraging a
+lot of these cloud tools.
+
+628
+00:24:07,100 --> 00:24:08,942
+And this is just,
+kind of, a visual,
+
+629
+00:24:08,942 --> 00:24:11,400
+I guess this is the most math
+I'll ever show in this class.
+
+630
+00:24:11,400 --> 00:24:14,030
+So not any of this am I
+expecting you to understand.
+
+631
+00:24:14,030 --> 00:24:15,530
+But just so you can
+again see what's
+
+632
+00:24:15,530 --> 00:24:17,510
+happening at this lower level.
+
+633
+00:24:17,510 --> 00:24:20,610
+We have some sort of
+inputs or hidden values.
+
+634
+00:24:20,610 --> 00:24:22,440
+Those go through another layer.
+
+635
+00:24:22,440 --> 00:24:24,345
+And within one of
+these little nodes
+
+636
+00:24:24,345 --> 00:24:26,220
+here, each of these
+little circles are nodes.
+
+637
+00:24:26,220 --> 00:24:27,470
+This is a deep learning model.
+
+638
+00:24:27,470 --> 00:24:30,140
+So multilayer perception
+feed forward neural network,
+
+639
+00:24:30,140 --> 00:24:32,482
+deep learning, those are
+all saying the same thing,
+
+640
+00:24:32,482 --> 00:24:34,440
+even though they're
+completely different words.
+
+641
+00:24:34,440 --> 00:24:36,560
+Sorry, that's how we do it.
+
+642
+00:24:36,560 --> 00:24:39,110
+But the moral of the
+story is what we have
+
+643
+00:24:39,110 --> 00:24:43,490
+here is a function that is z
+equals w times a plus w times
+
+644
+00:24:43,490 --> 00:24:45,580
+a plus w times a plus b.
+
+645
+00:24:45,580 --> 00:24:47,330
+And each of these w's
+and a's are slightly
+
+646
+00:24:47,330 --> 00:24:48,210
+different from each other.
+
+647
+00:24:48,210 --> 00:24:50,360
+You see, there's different,
+different notations.
+
+648
+00:24:50,360 --> 00:24:56,420
+But functionally speaking,
+that's kind of like y equals mx
+
+649
+00:24:56,420 --> 00:24:59,380
+plus b.
+
+650
+00:24:59,380 --> 00:25:02,090
+Now I'm doing a couple
+mixes each time through,
+
+651
+00:25:02,090 --> 00:25:04,880
+because I have different
+numbers or different--
+
+652
+00:25:04,880 --> 00:25:06,950
+I have more than one
+predictor variable,
+
+653
+00:25:06,950 --> 00:25:09,510
+so I'll have as many
+X's as I have there.
+
+654
+00:25:09,510 --> 00:25:11,280
+And I'm using A's
+instead of X's.
+
+655
+00:25:11,280 --> 00:25:13,010
+But that's irrelevant for now.
+
+656
+00:25:13,010 --> 00:25:14,510
+The moral of the
+story is we're just
+
+657
+00:25:14,510 --> 00:25:18,490
+learning a linear function here
+with a nonlinear activation, OK.
+
+658
+00:25:18,490 --> 00:25:19,740
+I won't worry about that word.
+
+659
+00:25:19,740 --> 00:25:22,580
+But just note we're introducing
+some bit of non-linearity
+
+660
+00:25:22,580 --> 00:25:26,000
+in here so that it can learn
+nonlinear functions too.
+
+661
+00:25:26,000 --> 00:25:28,740
+I hope I didn't just completely
+demystify or mystify you there.
+
+662
+00:25:28,740 --> 00:25:30,710
+It's not to show you that
+it's even more of a black box
+
+663
+00:25:30,710 --> 00:25:31,530
+than it was before.
+
+664
+00:25:31,530 --> 00:25:34,980
+It's more to show you that,
+like it can be understood a bit.
+
+665
+00:25:34,980 --> 00:25:37,010
+And I think it's a
+really interesting topic,
+
+666
+00:25:37,010 --> 00:25:38,390
+so I can highly
+recommend you all
+
+667
+00:25:38,390 --> 00:25:39,890
+try to learn more about this.
+
+668
+00:25:39,890 --> 00:25:42,432
+And again, if you ever want any
+sources to start diving into,
+
+669
+00:25:42,432 --> 00:25:44,710
+I'm happy to give you that.
+
+670
+00:25:44,710 --> 00:25:50,110
+But from there, I want to
+show one more concept that
+
+671
+00:25:50,110 --> 00:25:53,330
+is actually a bit more general
+than just deep learning.
+
+672
+00:25:53,330 --> 00:25:55,780
+So if I go back here for
+a brief, brief second,
+
+673
+00:25:55,780 --> 00:25:57,490
+we said there's
+supervised learning
+
+674
+00:25:57,490 --> 00:25:59,270
+and there's
+unsupervised learning.
+
+675
+00:25:59,270 --> 00:26:02,000
+Supervised learning is
+when I have labels, right.
+
+676
+00:26:02,000 --> 00:26:03,850
+Predict salary, given
+years of education
+
+677
+00:26:03,850 --> 00:26:05,830
+or predict salary,
+given number of hits,
+
+678
+00:26:05,830 --> 00:26:08,030
+or predict the next
+word in a sentence.
+
+679
+00:26:08,030 --> 00:26:11,630
+Unsupervised learning is saying,
+well, I don't know any labels.
+
+680
+00:26:11,630 --> 00:26:14,290
+I don't know what groups go
+together so just find any sort
+
+681
+00:26:14,290 --> 00:26:16,300
+of patterns that might exist.
+
+682
+00:26:16,300 --> 00:26:18,700
+There's one more
+quirk to all of these,
+
+683
+00:26:18,700 --> 00:26:20,290
+or I guess third option to--
+
+684
+00:26:20,290 --> 00:26:22,540
+there's not-- so there's
+not just supervised learning
+
+685
+00:26:22,540 --> 00:26:24,220
+and unsupervised
+learning, we also
+
+686
+00:26:24,220 --> 00:26:26,920
+have something called
+reinforcement learning.
+
+687
+00:26:26,920 --> 00:26:29,690
+And this you might have heard
+of in the context of games.
+
+688
+00:26:29,690 --> 00:26:32,650
+So this is a link here, and
+I'll put this up on canvas,
+
+689
+00:26:32,650 --> 00:26:34,550
+but you can also
+search it on YouTube.
+
+690
+00:26:34,550 --> 00:26:36,020
+It's just a documentary.
+
+691
+00:26:36,020 --> 00:26:37,280
+It's about AlphaGo.
+
+692
+00:26:37,280 --> 00:26:39,810
+And so this was a couple
+of years back now.
+
+693
+00:26:39,810 --> 00:26:42,310
+But this was a case where there
+was a reinforcement learning
+
+694
+00:26:42,310 --> 00:26:45,470
+agent, that's what we refer
+to these as, that was learning
+
+695
+00:26:45,470 --> 00:26:47,660
+how to play the game of Go.
+
+696
+00:26:47,660 --> 00:26:51,440
+Go is in the similar
+vein to chess,
+
+697
+00:26:51,440 --> 00:26:53,240
+it's more of an
+area control game
+
+698
+00:26:53,240 --> 00:26:56,600
+than chess is, though arguably
+chess is kind of that as well.
+
+699
+00:26:56,600 --> 00:26:59,520
+But it has many, many
+board combinations, right.
+
+700
+00:26:59,520 --> 00:27:02,000
+So where chess has on
+the order of millions,
+
+701
+00:27:02,000 --> 00:27:06,140
+potentially even billions of
+different board configurations,
+
+702
+00:27:06,140 --> 00:27:09,690
+Go is on the order, I think
+it's like 10 to the 170th power.
+
+703
+00:27:09,690 --> 00:27:13,290
+It's an unholy amount of
+number of board configurations.
+
+704
+00:27:13,290 --> 00:27:16,250
+So it's not something where I
+can find the correct or the best
+
+705
+00:27:16,250 --> 00:27:17,870
+move possible.
+
+706
+00:27:17,870 --> 00:27:21,710
+There is a level of learning
+or, kind of, you know,
+
+707
+00:27:21,710 --> 00:27:24,770
+I hate to say the word
+intelligence necessary to try
+
+708
+00:27:24,770 --> 00:27:26,490
+to find the next best move.
+
+709
+00:27:26,490 --> 00:27:28,730
+Well, reinforcement
+learning is an algorithm
+
+710
+00:27:28,730 --> 00:27:30,475
+that allows us to do that.
+
+711
+00:27:30,475 --> 00:27:32,600
+And so this documentary is
+about this whole process
+
+712
+00:27:32,600 --> 00:27:35,100
+of training AlphaGo and
+what it allowed us to do.
+
+713
+00:27:35,100 --> 00:27:37,158
+But at a high
+level, reinforcement
+
+714
+00:27:37,158 --> 00:27:39,200
+learning differs from
+supervised learning in that
+
+715
+00:27:39,200 --> 00:27:41,990
+rather than having existing
+labeled data instead
+
+716
+00:27:41,990 --> 00:27:45,135
+I just put my algorithm
+into an environment, right.
+
+717
+00:27:45,135 --> 00:27:46,760
+So let's think about
+a game like chess.
+
+718
+00:27:46,760 --> 00:27:48,510
+That's something
+we all know, right.
+
+719
+00:27:48,510 --> 00:27:50,310
+So let's take a game like chess.
+
+720
+00:27:50,310 --> 00:27:53,190
+There are-- there's
+the space, right.
+
+721
+00:27:53,190 --> 00:27:54,950
+The state space,
+the way the board
+
+722
+00:27:54,950 --> 00:27:57,860
+is configured, right, where
+each position is on the board.
+
+723
+00:27:57,860 --> 00:27:59,270
+And that changes over time.
+
+724
+00:27:59,270 --> 00:28:00,770
+So let's just start
+out with a board
+
+725
+00:28:00,770 --> 00:28:03,150
+that's completely, you know,
+at the start of the game.
+
+726
+00:28:03,150 --> 00:28:04,890
+At any point in
+time, there's a set
+
+727
+00:28:04,890 --> 00:28:06,450
+of actions that
+can be made, right.
+
+728
+00:28:06,450 --> 00:28:08,160
+I'm allowed to move
+any of my pieces
+
+729
+00:28:08,160 --> 00:28:10,890
+in a specific predefined way.
+
+730
+00:28:10,890 --> 00:28:14,340
+And so my question is then, what
+reinforcement learning agent has
+
+731
+00:28:14,340 --> 00:28:18,300
+to do is say, OK, well, what's
+the best action to take such
+
+732
+00:28:18,300 --> 00:28:20,230
+that I maximize the reward.
+
+733
+00:28:20,230 --> 00:28:22,150
+So I'll have to define
+a reward, right.
+
+734
+00:28:22,150 --> 00:28:25,410
+Maybe a reward is a number of
+pieces of opponent's pieces
+
+735
+00:28:25,410 --> 00:28:26,830
+I've knocked off the board.
+
+736
+00:28:26,830 --> 00:28:29,440
+Or maybe reward is
+just win the game.
+
+737
+00:28:29,440 --> 00:28:30,232
+Don't win the game.
+
+738
+00:28:30,232 --> 00:28:32,107
+And so I'll just make
+a bunch of random moves
+
+739
+00:28:32,107 --> 00:28:33,827
+until I get to the
+very end of the game.
+
+740
+00:28:33,827 --> 00:28:35,410
+And that's actually
+how they did this.
+
+741
+00:28:35,410 --> 00:28:36,060
+That's how they trained this.
+
+742
+00:28:36,060 --> 00:28:37,800
+Is they said, OK,
+well, let's just
+
+743
+00:28:37,800 --> 00:28:41,430
+let two reinforcement learning
+agents play against each other,
+
+744
+00:28:41,430 --> 00:28:44,820
+make random moves, and then,
+eventually, one of them
+
+745
+00:28:44,820 --> 00:28:47,130
+will win, meaning that
+some move in there,
+
+746
+00:28:47,130 --> 00:28:48,870
+some set of moves
+in there was better
+
+747
+00:28:48,870 --> 00:28:50,470
+than what the other one did.
+
+748
+00:28:50,470 --> 00:28:51,820
+And let's learn from that.
+
+749
+00:28:51,820 --> 00:28:54,340
+I've now created labeled
+data to some extent, right.
+
+750
+00:28:54,340 --> 00:28:58,440
+The state, the
+observation about my space
+
+751
+00:28:58,440 --> 00:29:03,530
+is the input x and the
+output is the action.
+
+752
+00:29:03,530 --> 00:29:05,590
+Given the input,
+state of the board,
+
+753
+00:29:05,590 --> 00:29:07,820
+predict the next
+best action to take.
+
+754
+00:29:07,820 --> 00:29:10,360
+And the loss
+function here is now
+
+755
+00:29:10,360 --> 00:29:12,680
+trying to actually maximize
+the reward function.
+
+756
+00:29:12,680 --> 00:29:14,350
+So as opposed to
+minimizing the loss,
+
+757
+00:29:14,350 --> 00:29:16,120
+I'm trying to
+maximize the reward.
+
+758
+00:29:16,120 --> 00:29:17,890
+Similar idea though.
+
+759
+00:29:17,890 --> 00:29:20,530
+This same idea persists
+and is used a lot
+
+760
+00:29:20,530 --> 00:29:22,440
+in training self-driving cars.
+
+761
+00:29:22,440 --> 00:29:25,040
+Is I can observe the
+state of my world, right.
+
+762
+00:29:25,040 --> 00:29:27,005
+I can collect all the
+data from every sensor
+
+763
+00:29:27,005 --> 00:29:28,630
+that I have in my
+car, all the cameras,
+
+764
+00:29:28,630 --> 00:29:30,880
+lidar, radar, whatever it is.
+
+765
+00:29:30,880 --> 00:29:33,520
+I can feed that into my
+reinforcement learning agent,
+
+766
+00:29:33,520 --> 00:29:34,850
+which is just a neural network.
+
+767
+00:29:34,850 --> 00:29:37,970
+And the way we've implemented
+them in the modern era.
+
+768
+00:29:37,970 --> 00:29:40,390
+So I feed all of
+those sensors as input
+
+769
+00:29:40,390 --> 00:29:42,880
+to my reinforcement learning
+agent, to my neural network,
+
+770
+00:29:42,880 --> 00:29:44,860
+and I predict the next
+best action, right?
+
+771
+00:29:44,860 --> 00:29:46,090
+Steer left, steer right.
+
+772
+00:29:46,090 --> 00:29:48,670
+How much to steer left,
+how much to steer right,
+
+773
+00:29:48,670 --> 00:29:50,000
+accelerate, brake.
+
+774
+00:29:50,000 --> 00:29:52,010
+That's all part of
+my action space.
+
+775
+00:29:52,010 --> 00:29:54,530
+So I decide the next
+best action to take
+
+776
+00:29:54,530 --> 00:29:55,970
+and then I evaluate that.
+
+777
+00:29:55,970 --> 00:29:58,880
+I take that action and I see
+how good that action was.
+
+778
+00:29:58,880 --> 00:30:00,762
+And if it got me closer
+to my destination
+
+779
+00:30:00,762 --> 00:30:02,470
+or didn't result in
+an accident, however,
+
+780
+00:30:02,470 --> 00:30:06,070
+I define my reward
+function that will be
+
+781
+00:30:06,070 --> 00:30:09,860
+or that will be, kind of,
+what I try to maximize, right.
+
+782
+00:30:09,860 --> 00:30:12,500
+I'm going to try to maximize
+that reward function.
+
+783
+00:30:12,500 --> 00:30:14,602
+And that's a
+non-trivial task also.
+
+784
+00:30:14,602 --> 00:30:16,060
+So I'm not going
+to pretend that is
+
+785
+00:30:16,060 --> 00:30:18,520
+an easy thing by any means,
+because, for example, let's
+
+786
+00:30:18,520 --> 00:30:20,150
+take the self-driving car case.
+
+787
+00:30:20,150 --> 00:30:24,820
+If I define my reward function
+as getting to my destination,
+
+788
+00:30:24,820 --> 00:30:26,920
+well then it's likely
+going to just break
+
+789
+00:30:26,920 --> 00:30:30,160
+every rule of the road to just
+maximize the reward of getting
+
+790
+00:30:30,160 --> 00:30:31,150
+to the destination.
+
+791
+00:30:31,150 --> 00:30:34,480
+Or potentially, I don't
+know what's worse,
+
+792
+00:30:34,480 --> 00:30:36,910
+it'll do the opposite
+and just say, well, I'll
+
+793
+00:30:36,910 --> 00:30:39,970
+drive 1 miles per hour
+because at least then I
+
+794
+00:30:39,970 --> 00:30:43,150
+don't crash into things
+and so I will eventually
+
+795
+00:30:43,150 --> 00:30:44,660
+make it to my destination.
+
+796
+00:30:44,660 --> 00:30:47,650
+So maybe I say, OK, I'll
+penalize you for every second
+
+797
+00:30:47,650 --> 00:30:50,030
+that you're not at
+the destination.
+
+798
+00:30:50,030 --> 00:30:52,060
+Well, then it will
+learn to go faster,
+
+799
+00:30:52,060 --> 00:30:55,000
+but it'll likely go too fast and
+again, break every rule of road,
+
+800
+00:30:55,000 --> 00:30:56,518
+crash into things and just race.
+
+801
+00:30:56,518 --> 00:30:58,060
+And it'll find some
+balance, probably
+
+802
+00:30:58,060 --> 00:31:01,070
+between crashing into things
+and getting to the destination
+
+803
+00:31:01,070 --> 00:31:04,250
+but it'll likely be a huge
+risk and a huge liability.
+
+804
+00:31:04,250 --> 00:31:07,060
+And so this question of how
+to actually optimize this
+
+805
+00:31:07,060 --> 00:31:08,560
+or how to define
+the reward function
+
+806
+00:31:08,560 --> 00:31:11,080
+such that the reinforcement
+learning agent, the neural net
+
+807
+00:31:11,080 --> 00:31:13,030
+doesn't find some
+sort of shortcut,
+
+808
+00:31:13,030 --> 00:31:15,530
+that is a really, really
+hard research question.
+
+809
+00:31:15,530 --> 00:31:18,320
+And they talk about this again
+a bit in this documentary.
+
+810
+00:31:18,320 --> 00:31:20,150
+So it's a really
+interesting one to watch.
+
+811
+00:31:20,150 --> 00:31:20,900
+It's for free on YouTube.
+
+812
+00:31:20,900 --> 00:31:23,200
+I think it's like an hour
+and a half, but very popular.
+
+813
+00:31:23,200 --> 00:31:24,260
+Won a ton of rewards.
+
+814
+00:31:24,260 --> 00:31:27,640
+So highly recommend that if
+you're interested at all.
+
+815
+00:31:27,640 --> 00:31:30,100
+But yeah, so this kind
+of gives us another realm
+
+816
+00:31:30,100 --> 00:31:32,120
+of things we can do.
+
+817
+00:31:32,120 --> 00:31:34,870
+And one of the main reasons I
+actually want to show you this
+
+818
+00:31:34,870 --> 00:31:38,530
+is because this is something
+that AWS has been really
+
+819
+00:31:38,530 --> 00:31:39,850
+heavily behind.
+
+820
+00:31:39,850 --> 00:31:43,750
+For that matter, I kind of have
+it sitting next to me over here.
+
+821
+00:31:43,750 --> 00:31:49,240
+Let's see if I can pull it up
+on the internet really quick.
+
+822
+00:31:49,240 --> 00:31:53,080
+So Amazon built this tool here.
+
+823
+00:31:53,080 --> 00:31:55,090
+Now I can't see my screen.
+
+824
+00:31:55,090 --> 00:31:58,280
+Let's go with our--
+
+825
+00:31:58,280 --> 00:32:00,510
+here we go.
+
+826
+00:32:00,510 --> 00:32:03,690
+So this is the AWS
+DeepRacer, and I actually
+
+827
+00:32:03,690 --> 00:32:05,440
+have one right here.
+
+828
+00:32:05,440 --> 00:32:07,260
+This is the shell for it.
+
+829
+00:32:07,260 --> 00:32:11,910
+And the body, the computer
+of it is taken apart from it
+
+830
+00:32:11,910 --> 00:32:12,460
+right now.
+
+831
+00:32:12,460 --> 00:32:16,910
+So this is what's sitting
+underneath all of the components
+
+832
+00:32:16,910 --> 00:32:17,410
+right there.
+
+833
+00:32:17,410 --> 00:32:20,010
+But you can see the front
+end a little bit here.
+
+834
+00:32:20,010 --> 00:32:22,230
+This is where the cameras
+technically plug into,
+
+835
+00:32:22,230 --> 00:32:24,010
+but they're all
+disconnected right now.
+
+836
+00:32:24,010 --> 00:32:25,560
+I was playing with
+something else, so sorry,
+
+837
+00:32:25,560 --> 00:32:26,268
+it's not working.
+
+838
+00:32:26,268 --> 00:32:28,990
+I was to show it or do a
+demo if it was working.
+
+839
+00:32:28,990 --> 00:32:31,530
+But either way,
+this is something
+
+840
+00:32:31,530 --> 00:32:34,230
+that Amazon put forth
+not only to teach people
+
+841
+00:32:34,230 --> 00:32:37,950
+how self-driving cars work,
+but also to push their services
+
+842
+00:32:37,950 --> 00:32:40,150
+and give you a way to play
+around with their tools.
+
+843
+00:32:40,150 --> 00:32:43,200
+So they train-- or they--
+if you purchase this,
+
+844
+00:32:43,200 --> 00:32:46,380
+you can use your
+free-tiered Amazon
+
+845
+00:32:46,380 --> 00:32:48,750
+account to train
+a self-driving car
+
+846
+00:32:48,750 --> 00:32:50,610
+or train this little
+self-driving car
+
+847
+00:32:50,610 --> 00:32:55,890
+in a simulator on AWS, like on
+an EC2 instance, doing that,
+
+848
+00:32:55,890 --> 00:32:59,200
+and then you can deploy it and
+actually run it on real track.
+
+849
+00:32:59,200 --> 00:33:01,730
+So they have a league
+and all kinds of things.
+
+850
+00:33:01,730 --> 00:33:03,805
+So there's some really
+cool tools out there.
+
+851
+00:33:03,805 --> 00:33:05,680
+So you can see this is
+a fully built out one,
+
+852
+00:33:05,680 --> 00:33:07,805
+and this is actually their
+second generation, which
+
+853
+00:33:07,805 --> 00:33:09,620
+has a LiDAR sensor
+and a second camera.
+
+854
+00:33:09,620 --> 00:33:11,690
+My version just has one
+camera and no LiDAR.
+
+855
+00:33:11,690 --> 00:33:16,030
+But either way, Amazon
+has put a lot of effort
+
+856
+00:33:16,030 --> 00:33:19,300
+behind these tools--
+
+857
+00:33:19,300 --> 00:33:21,280
+where's my-- I'll
+close my slides,
+
+858
+00:33:21,280 --> 00:33:22,520
+open these back up again.
+
+859
+00:33:22,520 --> 00:33:23,950
+But Amazon has put
+a lot of effort
+
+860
+00:33:23,950 --> 00:33:28,370
+behind these tools for
+reinforcement learning.
+
+861
+00:33:28,370 --> 00:33:30,592
+And so really,
+really cool topic.
+
+862
+00:33:30,592 --> 00:33:32,050
+Again, if you're
+interested at all,
+
+863
+00:33:32,050 --> 00:33:33,530
+happy to chat
+about it some more.
+
+864
+00:33:33,530 --> 00:33:37,760
+But yeah, that's what
+we got going so far.
+
+865
+00:33:37,760 --> 00:33:41,280
+So now how does this intersect
+with cloud computing.
+
+866
+00:33:41,280 --> 00:33:44,150
+That's kind of the
+big question then.
+
+867
+00:33:44,150 --> 00:33:49,010
+And I, you know, this is kind
+of my best guess as to how
+
+868
+00:33:49,010 --> 00:33:51,230
+I would say it
+intersects, but I think
+
+869
+00:33:51,230 --> 00:33:53,337
+it covers the bases
+because it really
+
+870
+00:33:53,337 --> 00:33:54,920
+presents-- or cloud
+computing presents
+
+871
+00:33:54,920 --> 00:33:56,628
+a benefit in a couple
+of different areas.
+
+872
+00:33:56,628 --> 00:34:00,010
+And that's data collection,
+data labeling, the development
+
+873
+00:34:00,010 --> 00:34:02,510
+of these models, right, the
+actual training of these models,
+
+874
+00:34:02,510 --> 00:34:04,410
+and then the deployment of them.
+
+875
+00:34:04,410 --> 00:34:06,800
+So to take those piece
+by piece, let's start
+
+876
+00:34:06,800 --> 00:34:08,389
+with data collection.
+
+877
+00:34:08,389 --> 00:34:13,040
+And this is, you know, the
+kind of unsung hero of machine
+
+878
+00:34:13,040 --> 00:34:16,062
+learning, because if I don't
+have good labeled data,
+
+879
+00:34:16,062 --> 00:34:17,520
+I'm not going to
+have good results.
+
+880
+00:34:17,520 --> 00:34:20,630
+As we talked about, we use
+those real labeled data
+
+881
+00:34:20,630 --> 00:34:23,730
+points to find a mapping
+between inputs and outputs.
+
+882
+00:34:23,730 --> 00:34:26,850
+And so AWS is a great,
+great tool for this.
+
+883
+00:34:26,850 --> 00:34:30,199
+So this example here above
+is from my dissertation work.
+
+884
+00:34:30,199 --> 00:34:33,113
+So for this work, I was trying
+to and I cannot remember if I
+
+885
+00:34:33,113 --> 00:34:35,280
+explained this to you all,
+so I apologize if I have.
+
+886
+00:34:35,280 --> 00:34:37,489
+But at a high level, at
+least what I was trying to do
+
+887
+00:34:37,489 --> 00:34:41,655
+is I was trying to say, well,
+there exists a lot of satellite
+
+888
+00:34:41,655 --> 00:34:42,530
+imagery of the world.
+
+889
+00:34:42,530 --> 00:34:44,179
+And actually, to some
+extent, satellite
+
+890
+00:34:44,179 --> 00:34:46,096
+imagery some of the
+easiest we can get, right.
+
+891
+00:34:46,096 --> 00:34:48,440
+If there's a natural disaster,
+it's probably pretty hard
+
+892
+00:34:48,440 --> 00:34:50,360
+to get somebody on the
+ground to that location
+
+893
+00:34:50,360 --> 00:34:52,350
+or if there's a wildfire
+that comes through.
+
+894
+00:34:52,350 --> 00:34:54,885
+But it's not impossible to
+get a satellite overhead.
+
+895
+00:34:54,885 --> 00:34:57,260
+And actually, for that matter,
+there's likely going to be
+
+896
+00:34:57,260 --> 00:35:01,640
+a satellite overhead on the
+order of like 90ish minutes
+
+897
+00:35:01,640 --> 00:35:03,150
+to a couple hours.
+
+898
+00:35:03,150 --> 00:35:06,710
+And so I can get a great
+view from an overhead
+
+899
+00:35:06,710 --> 00:35:07,980
+of what it looks like.
+
+900
+00:35:07,980 --> 00:35:09,560
+But that doesn't always tell
+me the whole story of what
+
+901
+00:35:09,560 --> 00:35:10,727
+it looks like on the ground.
+
+902
+00:35:10,727 --> 00:35:13,730
+There's a reason we use Google
+Street View as much as we do.
+
+903
+00:35:13,730 --> 00:35:16,310
+Now the problem is, is again,
+street view, first off,
+
+904
+00:35:16,310 --> 00:35:18,360
+doesn't exist for
+everywhere on the globe
+
+905
+00:35:18,360 --> 00:35:20,250
+and second, it
+doesn't update, right.
+
+906
+00:35:20,250 --> 00:35:21,230
+Once they've taken
+that image, it
+
+907
+00:35:21,230 --> 00:35:23,230
+might be years, if not
+decades, before they ever
+
+908
+00:35:23,230 --> 00:35:24,690
+decide to update it up again.
+
+909
+00:35:24,690 --> 00:35:27,200
+My house on Google Street View
+looks completely different
+
+910
+00:35:27,200 --> 00:35:28,640
+than it does right now.
+
+911
+00:35:28,640 --> 00:35:31,170
+And so what we wanted to do
+is we wanted to see, well,
+
+912
+00:35:31,170 --> 00:35:33,960
+could I train a
+machine learning model
+
+913
+00:35:33,960 --> 00:35:37,560
+that, given as input the
+satellite image and maybe also
+
+914
+00:35:37,560 --> 00:35:39,990
+a description of what it looks
+like on the ground there,
+
+915
+00:35:39,990 --> 00:35:42,450
+predict what it actually
+looks like on the ground.
+
+916
+00:35:42,450 --> 00:35:44,290
+And so to do that,
+I needed data.
+
+917
+00:35:44,290 --> 00:35:47,188
+I needed labeled data to do
+this and I needed a lot of data.
+
+918
+00:35:47,188 --> 00:35:49,230
+So, you know, it's not
+something where I can just
+
+919
+00:35:49,230 --> 00:35:51,840
+go out and find three
+images or go to Google Earth
+
+920
+00:35:51,840 --> 00:35:54,690
+and take some screenshots, I
+need on the order of thousands,
+
+921
+00:35:54,690 --> 00:35:55,703
+if not millions.
+
+922
+00:35:55,703 --> 00:35:57,870
+Unfortunately, we didn't
+have the order of millions,
+
+923
+00:35:57,870 --> 00:36:00,768
+but we ended up with a few
+tens of thousands of images.
+
+924
+00:36:00,768 --> 00:36:02,310
+So on the right hand
+side here, which
+
+925
+00:36:02,310 --> 00:36:07,970
+you can see this is actually a
+map of all the satellite images
+
+926
+00:36:07,970 --> 00:36:08,470
+I had.
+
+927
+00:36:08,470 --> 00:36:10,407
+So I was working for
+a company that had--
+
+928
+00:36:10,407 --> 00:36:12,240
+that was a satellite
+imagery company, right.
+
+929
+00:36:12,240 --> 00:36:13,490
+So I was working for Maxar.
+
+930
+00:36:13,490 --> 00:36:15,360
+And so we had at least
+first party access
+
+931
+00:36:15,360 --> 00:36:16,600
+to satellite images.
+
+932
+00:36:16,600 --> 00:36:18,090
+Each one of these
+yellowish strips
+
+933
+00:36:18,090 --> 00:36:20,173
+here is actually
+a satellite image.
+
+934
+00:36:20,173 --> 00:36:21,840
+So the it takes the
+picture is, kind of,
+
+935
+00:36:21,840 --> 00:36:24,630
+almost like a panned
+shot right over the top.
+
+936
+00:36:24,630 --> 00:36:26,130
+And so there's these
+long, you know,
+
+937
+00:36:26,130 --> 00:36:29,492
+few hundred kilometer strips
+of images that you have.
+
+938
+00:36:29,492 --> 00:36:30,950
+And then we crop
+out little regions
+
+939
+00:36:30,950 --> 00:36:33,180
+that because these are
+such big images, but really
+
+940
+00:36:33,180 --> 00:36:33,880
+high resolution.
+
+941
+00:36:33,880 --> 00:36:37,770
+So on the order of 30
+centimeters per pixel.
+
+942
+00:36:37,770 --> 00:36:42,250
+So you can see anything that's
+about down to that scale, right.
+
+943
+00:36:42,250 --> 00:36:44,983
+You know, if you imagine
+30 centimeters by 30cm,
+
+944
+00:36:44,983 --> 00:36:46,650
+if there's some object
+that's that size,
+
+945
+00:36:46,650 --> 00:36:49,170
+it would just show
+up as one pixel.
+
+946
+00:36:49,170 --> 00:36:50,142
+So we had this.
+
+947
+00:36:50,142 --> 00:36:51,850
+We could get that and
+that was organized.
+
+948
+00:36:51,850 --> 00:36:53,975
+And granted, we use a little
+bit of cloud computing
+
+949
+00:36:53,975 --> 00:36:55,913
+to store this because
+it was so much imagery,
+
+950
+00:36:55,913 --> 00:36:57,330
+each of these
+images being usually
+
+951
+00:36:57,330 --> 00:37:00,690
+on the order of a
+gigabyte or two per them.
+
+952
+00:37:00,690 --> 00:37:02,370
+But these images on
+the left hand side
+
+953
+00:37:02,370 --> 00:37:03,870
+were the Street
+View ones, because I
+
+954
+00:37:03,870 --> 00:37:05,740
+needed some sort of Street
+View to train this on.
+
+955
+00:37:05,740 --> 00:37:07,620
+Is if I wanted to be able
+to predict from a satellite
+
+956
+00:37:07,620 --> 00:37:09,245
+image what it looks
+like on the ground,
+
+957
+00:37:09,245 --> 00:37:11,260
+I need to have labeled examples.
+
+958
+00:37:11,260 --> 00:37:14,040
+And so this is a website
+that they've actually
+
+959
+00:37:14,040 --> 00:37:15,870
+changed their ownership
+now so I forget
+
+960
+00:37:15,870 --> 00:37:18,412
+what the name is now but at the
+time, it was open street Cam.
+
+961
+00:37:18,412 --> 00:37:22,290
+So it was an open source data
+set or open source website
+
+962
+00:37:22,290 --> 00:37:27,878
+where users could just go on and
+upload images from their dash
+
+963
+00:37:27,878 --> 00:37:29,670
+Cam or the cell phone
+that they had sitting
+
+964
+00:37:29,670 --> 00:37:31,150
+on the dash, whatever it was.
+
+965
+00:37:31,150 --> 00:37:33,548
+And it'll have the
+associated Lat long,
+
+966
+00:37:33,548 --> 00:37:35,340
+you know, the heading
+where they were going
+
+967
+00:37:35,340 --> 00:37:37,560
+and all that stuff, the
+direction they were going.
+
+968
+00:37:37,560 --> 00:37:41,785
+And so you could click on any
+one of these-- every little one
+
+969
+00:37:41,785 --> 00:37:42,660
+of these purple dots.
+
+970
+00:37:42,660 --> 00:37:44,050
+There's actually a bunch
+of little dots in there.
+
+971
+00:37:44,050 --> 00:37:45,670
+Every one of these
+purple dots is an image
+
+972
+00:37:45,670 --> 00:37:46,890
+because if you imagine
+if somebody's driving
+
+973
+00:37:46,890 --> 00:37:48,480
+and it's taking
+video, you know, even
+
+974
+00:37:48,480 --> 00:37:50,313
+if it's sampling only
+one every few seconds,
+
+975
+00:37:50,313 --> 00:37:51,420
+there's a lot of images.
+
+976
+00:37:51,420 --> 00:37:53,847
+And so there was a ton
+of these images online,
+
+977
+00:37:53,847 --> 00:37:55,680
+but they didn't have
+some sort of simple API
+
+978
+00:37:55,680 --> 00:37:57,180
+where I could just
+go grab them all.
+
+979
+00:37:57,180 --> 00:37:59,340
+So I needed to actually
+crawl through and download
+
+980
+00:37:59,340 --> 00:38:00,870
+each one of these images.
+
+981
+00:38:00,870 --> 00:38:03,630
+And to avoid overwhelming
+their servers
+
+982
+00:38:03,630 --> 00:38:05,490
+and also automate
+this on my side
+
+983
+00:38:05,490 --> 00:38:08,790
+so I don't have to eat up my
+computer, we leveraged AWS.
+
+984
+00:38:08,790 --> 00:38:11,350
+And so we'll talk
+about AWS Lambda next.
+
+985
+00:38:11,350 --> 00:38:13,680
+But AWS Lambda is
+a tool that allows
+
+986
+00:38:13,680 --> 00:38:14,920
+us to do exactly this, right.
+
+987
+00:38:14,920 --> 00:38:19,320
+So I defined a function that
+said, hey, download this image.
+
+988
+00:38:19,320 --> 00:38:22,050
+And maybe I had-- and I had a
+path for basically saying, OK,
+
+989
+00:38:22,050 --> 00:38:24,600
+I'll give you this latitude
+and longitude, based off
+
+990
+00:38:24,600 --> 00:38:26,010
+of the satellite image I have.
+
+991
+00:38:26,010 --> 00:38:28,710
+Go download the
+closest image to that.
+
+992
+00:38:28,710 --> 00:38:30,520
+And so that's
+exactly what it did.
+
+993
+00:38:30,520 --> 00:38:33,240
+And AWS Lambda is, is
+a completely serverless
+
+994
+00:38:33,240 --> 00:38:35,430
+compute platform, which
+we'll talk about plenty.
+
+995
+00:38:35,430 --> 00:38:37,170
+But a serverless compute
+platform in that sense
+
+996
+00:38:37,170 --> 00:38:39,045
+that I don't have to
+spin up an EC2 instance,
+
+997
+00:38:39,045 --> 00:38:41,520
+I just say, hey, run this
+function on a schedule
+
+998
+00:38:41,520 --> 00:38:44,100
+or based off a triggered
+event or whatever it is,
+
+999
+00:38:44,100 --> 00:38:46,480
+and do this task that I have.
+
+1000
+00:38:46,480 --> 00:38:49,290
+And so you can just set this
+up, download all these images,
+
+1001
+00:38:49,290 --> 00:38:52,660
+push them to S3 and now you
+have all your images downloaded.
+
+1002
+00:38:52,660 --> 00:38:54,750
+Don't have to eat up any
+of your compute resources
+
+1003
+00:38:54,750 --> 00:38:56,850
+and you only pay
+for however many
+
+1004
+00:38:56,850 --> 00:38:58,980
+computations you end up doing.
+
+1005
+00:38:58,980 --> 00:39:02,640
+So this is one way,
+one of many, many ways
+
+1006
+00:39:02,640 --> 00:39:05,400
+that we can leverage
+AWS for data collection.
+
+1007
+00:39:05,400 --> 00:39:08,070
+So we'll talk about
+Lambda in this sense.
+
+1008
+00:39:08,070 --> 00:39:10,980
+Then from a labeling side,
+we won't really do this,
+
+1009
+00:39:10,980 --> 00:39:14,010
+I don't think but it's still
+a very valuable skill or thing
+
+1010
+00:39:14,010 --> 00:39:15,510
+to recognize that
+we can do in here,
+
+1011
+00:39:15,510 --> 00:39:17,398
+and that's the actual
+labeling of it.
+
+1012
+00:39:17,398 --> 00:39:19,690
+So in my case, that was
+actually already labeled right.
+
+1013
+00:39:19,690 --> 00:39:22,380
+Once I had the location,
+that was exactly the label.
+
+1014
+00:39:22,380 --> 00:39:24,870
+But maybe I've collected or
+downloaded a bunch of images,
+
+1015
+00:39:24,870 --> 00:39:28,180
+and I want to go through and
+I'm training a self-driving car
+
+1016
+00:39:28,180 --> 00:39:30,460
+and so I want to know
+what's in the image.
+
+1017
+00:39:30,460 --> 00:39:32,175
+Well, unfortunately,
+there's no shortcut
+
+1018
+00:39:32,175 --> 00:39:34,050
+to this other than having
+a human go in there
+
+1019
+00:39:34,050 --> 00:39:36,717
+and say, OK, well, this is
+a car, this is a handbag,
+
+1020
+00:39:36,717 --> 00:39:38,550
+this is a purse, and
+this is a traffic light
+
+1021
+00:39:38,550 --> 00:39:40,560
+and manually label each
+one of these points,
+
+1022
+00:39:40,560 --> 00:39:43,020
+draw a bounding
+box around it, too.
+
+1023
+00:39:43,020 --> 00:39:44,700
+And this is how it's done.
+
+1024
+00:39:44,700 --> 00:39:47,610
+It takes many,
+many hours, if not
+
+1025
+00:39:47,610 --> 00:39:50,640
+years of, or-- human
+years of effort
+
+1026
+00:39:50,640 --> 00:39:52,660
+to label some of these
+massive data sets.
+
+1027
+00:39:52,660 --> 00:39:55,810
+But one way you can scale this
+is by using cloud resources.
+
+1028
+00:39:55,810 --> 00:39:58,020
+And one of the more
+interesting cloud tools,
+
+1029
+00:39:58,020 --> 00:39:59,437
+if you haven't
+heard of it before,
+
+1030
+00:39:59,437 --> 00:40:01,020
+is Amazon's Mechanical Turk.
+
+1031
+00:40:01,020 --> 00:40:05,730
+This is an online on demand
+24/7 platform that you can go
+
+1032
+00:40:05,730 --> 00:40:08,380
+on and say, hey, I have
+a stack of images, right.
+
+1033
+00:40:08,380 --> 00:40:12,730
+I have a stack of million images
+and I'll pay fractions of a cent
+
+1034
+00:40:12,730 --> 00:40:15,640
+or a few cents per labeled
+image, right per image
+
+1035
+00:40:15,640 --> 00:40:17,330
+that people go in
+here and label.
+
+1036
+00:40:17,330 --> 00:40:19,750
+And then I'll just put it out
+there for the world to do.
+
+1037
+00:40:19,750 --> 00:40:22,600
+And, you know, give an
+economies of scale here,
+
+1038
+00:40:22,600 --> 00:40:24,460
+right, I have enough
+people on this platform
+
+1039
+00:40:24,460 --> 00:40:26,860
+that if they go
+through here and click
+
+1040
+00:40:26,860 --> 00:40:28,750
+a few hundred or a
+few thousand of these
+
+1041
+00:40:28,750 --> 00:40:31,490
+takes a amount of time for
+them but they can balance that.
+
+1042
+00:40:31,490 --> 00:40:34,570
+They can weigh that value of
+them going through and manually
+
+1043
+00:40:34,570 --> 00:40:36,710
+labeling that versus not.
+
+1044
+00:40:36,710 --> 00:40:39,640
+And so this is one way
+that companies heavily
+
+1045
+00:40:39,640 --> 00:40:41,720
+leverage the cloud.
+
+1046
+00:40:41,720 --> 00:40:44,020
+And it's not even,
+again, a cloud,
+
+1047
+00:40:44,020 --> 00:40:47,380
+you know, computer,
+it's just humans
+
+1048
+00:40:47,380 --> 00:40:49,750
+sharing information and
+sharing knowledge and resources
+
+1049
+00:40:49,750 --> 00:40:50,860
+through the cloud.
+
+1050
+00:40:50,860 --> 00:40:51,860
+Human resource, right.
+
+1051
+00:40:51,860 --> 00:40:52,960
+Like human capital.
+
+1052
+00:40:52,960 --> 00:40:56,360
+So this is a super-valuable
+tool for machine learning.
+
+1053
+00:40:56,360 --> 00:40:58,827
+And I mean, honestly,
+couldn't be valued enough.
+
+1054
+00:40:58,827 --> 00:41:00,910
+There's other platforms
+for it but Mechanical Turk
+
+1055
+00:41:00,910 --> 00:41:02,080
+is probably the most famous.
+
+1056
+00:41:02,080 --> 00:41:03,890
+And, you know, there's all
+kinds of other things too.
+
+1057
+00:41:03,890 --> 00:41:05,680
+It's not just, you
+know, labeling data
+
+1058
+00:41:05,680 --> 00:41:08,110
+for machine learning, but
+it is one of the biggest use
+
+1059
+00:41:08,110 --> 00:41:10,910
+cases for it.
+
+1060
+00:41:10,910 --> 00:41:13,497
+Then on to the actual
+model development side.
+
+1061
+00:41:13,497 --> 00:41:15,830
+So this is actually when I'm
+getting to my deep learning
+
+1062
+00:41:15,830 --> 00:41:18,470
+models and I need to
+physically train those things.
+
+1063
+00:41:18,470 --> 00:41:21,620
+As we talked about, the
+number of computations
+
+1064
+00:41:21,620 --> 00:41:25,688
+necessary to do that can be
+incomprehensibly large, right.
+
+1065
+00:41:25,688 --> 00:41:27,230
+For some of these
+models, like again,
+
+1066
+00:41:27,230 --> 00:41:29,640
+we talked about these weights,
+the number of weights.
+
+1067
+00:41:29,640 --> 00:41:32,760
+Well, if I'm doing y equals mx
+plus b, there's really one way.
+
+1068
+00:41:32,760 --> 00:41:34,428
+There's one m
+value, maybe the b,
+
+1069
+00:41:34,428 --> 00:41:35,720
+if you count that you'll give--
+
+1070
+00:41:35,720 --> 00:41:38,840
+I'll give you two weights
+that you have to learn.
+
+1071
+00:41:38,840 --> 00:41:41,030
+For the largest
+models today, you're
+
+1072
+00:41:41,030 --> 00:41:44,250
+usually on the order of a few
+trillion parameters, right.
+
+1073
+00:41:44,250 --> 00:41:46,060
+Trillion with a T.
+
+1074
+00:41:46,060 --> 00:41:48,560
+Even for the models that I was
+training, which is actually--
+
+1075
+00:41:48,560 --> 00:41:50,602
+this was my computer that
+I was training them on,
+
+1076
+00:41:50,602 --> 00:41:53,270
+this was at my house, that
+was on the order of millions
+
+1077
+00:41:53,270 --> 00:41:54,630
+of parameters still.
+
+1078
+00:41:54,630 --> 00:41:57,978
+And you know, this was having
+to run for days on end.
+
+1079
+00:41:57,978 --> 00:42:00,020
+I wouldn't have been able
+to afford this computer
+
+1080
+00:42:00,020 --> 00:42:01,770
+if I wasn't doing
+this for a company.
+
+1081
+00:42:01,770 --> 00:42:03,978
+I mean, this computer alone
+was probably on the order
+
+1082
+00:42:03,978 --> 00:42:04,677
+of $10,000.
+
+1083
+00:42:04,677 --> 00:42:06,260
+I mean, for example,
+this GPU that you
+
+1084
+00:42:06,260 --> 00:42:08,660
+see on the top that
+was a Titan RTX.
+
+1085
+00:42:08,660 --> 00:42:11,080
+At the time, that was $2,500.
+
+1086
+00:42:11,080 --> 00:42:12,420
+That was pre-pandemic.
+
+1087
+00:42:12,420 --> 00:42:16,200
+When the pandemic hit and then
+we had crypto boom happening,
+
+1088
+00:42:16,200 --> 00:42:18,660
+paired with everybody being
+at home and wanting to gain,
+
+1089
+00:42:18,660 --> 00:42:21,540
+paired with machine learning
+continuing to be a need,
+
+1090
+00:42:21,540 --> 00:42:22,868
+these skyrocketed.
+
+1091
+00:42:22,868 --> 00:42:24,660
+And so after like three
+years of having it,
+
+1092
+00:42:24,660 --> 00:42:27,370
+its value was up to
+around $5,000 or $6,000.
+
+1093
+00:42:27,370 --> 00:42:30,000
+So that fluctuation
+in market value
+
+1094
+00:42:30,000 --> 00:42:32,460
+can be a huge burden on
+companies doing machine
+
+1095
+00:42:32,460 --> 00:42:33,960
+learning research.
+
+1096
+00:42:33,960 --> 00:42:36,480
+But either way, an
+absolute necessity
+
+1097
+00:42:36,480 --> 00:42:38,200
+to have this massive
+compute power.
+
+1098
+00:42:38,200 --> 00:42:39,950
+And that's the reason
+the cloud has become
+
+1099
+00:42:39,950 --> 00:42:41,610
+so valuable for
+machine learning,
+
+1100
+00:42:41,610 --> 00:42:44,670
+at least, is because I can
+scale up to any size of computer
+
+1101
+00:42:44,670 --> 00:42:46,243
+at any point in
+time, and I don't
+
+1102
+00:42:46,243 --> 00:42:48,910
+need to buy all of this hardware
+upfront and maintain it, right.
+
+1103
+00:42:48,910 --> 00:42:52,320
+This was sitting in my room
+getting dusty, needing updates
+
+1104
+00:42:52,320 --> 00:42:52,960
+constantly.
+
+1105
+00:42:52,960 --> 00:42:55,260
+I mean, it was a hassle
+to keep take care of.
+
+1106
+00:42:55,260 --> 00:42:58,050
+Not to mention also it was
+just drawing a ton of energy
+
+1107
+00:42:58,050 --> 00:42:58,810
+at my house.
+
+1108
+00:42:58,810 --> 00:43:01,230
+You know, I was paying that
+electricity bill, generating
+
+1109
+00:43:01,230 --> 00:43:03,150
+a ton of heat in my
+house, which was actually
+
+1110
+00:43:03,150 --> 00:43:03,940
+nice in the winter time.
+
+1111
+00:43:03,940 --> 00:43:05,065
+I used it as a foot warmer.
+
+1112
+00:43:05,065 --> 00:43:06,910
+But, you know, not winter time.
+
+1113
+00:43:06,910 --> 00:43:07,660
+That's not ideal.
+
+1114
+00:43:07,660 --> 00:43:09,300
+Now I have to pay
+more energy to cool
+
+1115
+00:43:09,300 --> 00:43:12,750
+this room so it doesn't overheat
+and it can run at full capacity.
+
+1116
+00:43:12,750 --> 00:43:17,202
+Leveraging the cloud, I wouldn't
+have to worry about that at all.
+
+1117
+00:43:17,202 --> 00:43:18,660
+What you see on
+the right over here
+
+1118
+00:43:18,660 --> 00:43:20,638
+actually is Google's, right.
+
+1119
+00:43:20,638 --> 00:43:22,680
+So this is a plug for
+Google because they're kind
+
+1120
+00:43:22,680 --> 00:43:23,847
+of leading the game in this.
+
+1121
+00:43:23,847 --> 00:43:27,755
+Amazon does have access to
+a massive number of GPUs
+
+1122
+00:43:27,755 --> 00:43:29,880
+and they have a bunch of
+GPUs at their data centers
+
+1123
+00:43:29,880 --> 00:43:31,870
+that you can put
+on EC2 instances
+
+1124
+00:43:31,870 --> 00:43:35,460
+but this is a custom built
+chip specifically designed
+
+1125
+00:43:35,460 --> 00:43:36,550
+for machine learning.
+
+1126
+00:43:36,550 --> 00:43:38,110
+It's called a tensor
+processing unit.
+
+1127
+00:43:38,110 --> 00:43:40,240
+So TPU as opposed to GPU.
+
+1128
+00:43:40,240 --> 00:43:46,625
+And these are the most efficient
+compute chips today, right,
+
+1129
+00:43:46,625 --> 00:43:49,000
+for neural networks or for
+machine learning specifically.
+
+1130
+00:43:49,000 --> 00:43:50,850
+And I think the last
+time I looked-- it's
+
+1131
+00:43:50,850 --> 00:43:52,000
+been a while since I've looked.
+
+1132
+00:43:52,000 --> 00:43:54,430
+They're usually on the order
+of a couple dollars per hour
+
+1133
+00:43:54,430 --> 00:43:56,200
+to reserve.
+
+1134
+00:43:56,200 --> 00:43:58,093
+And for some of
+the larger projects
+
+1135
+00:43:58,093 --> 00:44:00,510
+you might need still on the
+order of hundreds or thousands
+
+1136
+00:44:00,510 --> 00:44:01,930
+of these at a time.
+
+1137
+00:44:01,930 --> 00:44:04,420
+So it still can be very,
+very expensive per hour
+
+1138
+00:44:04,420 --> 00:44:06,180
+but they're so
+efficient that you
+
+1139
+00:44:06,180 --> 00:44:08,520
+don't need to train for as
+long and so they can save you
+
+1140
+00:44:08,520 --> 00:44:09,910
+money in the long run.
+
+1141
+00:44:09,910 --> 00:44:14,340
+And so this is again by far why
+I've used the cloud the most,
+
+1142
+00:44:14,340 --> 00:44:17,520
+is just to leverage cloud
+resources for training machine
+
+1143
+00:44:17,520 --> 00:44:18,330
+learning models.
+
+1144
+00:44:18,330 --> 00:44:20,253
+Because I can now use my laptop.
+
+1145
+00:44:20,253 --> 00:44:21,670
+Don't ever have
+to worry about it.
+
+1146
+00:44:21,670 --> 00:44:24,660
+I don't care what my laptop does
+or what kind of laptop it is.
+
+1147
+00:44:24,660 --> 00:44:26,880
+Because the second I
+need to train a model,
+
+1148
+00:44:26,880 --> 00:44:28,900
+I'm going to spin
+up an EC2 instance.
+
+1149
+00:44:28,900 --> 00:44:30,600
+I'm going to add a
+bunch of GPUs to it,
+
+1150
+00:44:30,600 --> 00:44:31,920
+and I'm going to do
+all my training there,
+
+1151
+00:44:31,920 --> 00:44:34,400
+and then I'm only going to
+return my results to my laptop.
+
+1152
+00:44:34,400 --> 00:44:36,150
+So no matter what
+device I'm on, no matter
+
+1153
+00:44:36,150 --> 00:44:38,970
+where I'm at in the world, I'll
+always have, kind of, high end
+
+1154
+00:44:38,970 --> 00:44:39,940
+compute power.
+
+1155
+00:44:39,940 --> 00:44:42,150
+And the fact that I can
+spin up a supercomputer
+
+1156
+00:44:42,150 --> 00:44:45,132
+in a matter of seconds
+on an EC2 instance
+
+1157
+00:44:45,132 --> 00:44:46,590
+is, again, one of
+those things that
+
+1158
+00:44:46,590 --> 00:44:52,030
+puts us so far ahead of where
+we used to be in this space.
+
+1159
+00:44:52,030 --> 00:44:54,620
+And then finally, the
+last side of things.
+
+1160
+00:44:54,620 --> 00:44:56,020
+And this one, you,
+kind of, we'll
+
+1161
+00:44:56,020 --> 00:44:58,750
+touch less because there's
+not a real good hands on way
+
+1162
+00:44:58,750 --> 00:44:59,860
+to show it.
+
+1163
+00:44:59,860 --> 00:45:02,410
+But we've seen it actually,
+to some extent, in the model--
+
+1164
+00:45:02,410 --> 00:45:03,790
+with model deployment.
+
+1165
+00:45:03,790 --> 00:45:05,665
+Because at some point
+I've trained the model,
+
+1166
+00:45:05,665 --> 00:45:07,207
+I have this model
+that can now detect
+
+1167
+00:45:07,207 --> 00:45:08,420
+whether it's a cat or a dog.
+
+1168
+00:45:08,420 --> 00:45:08,920
+Great.
+
+1169
+00:45:08,920 --> 00:45:11,000
+That's a fun tool
+to have in isolation
+
+1170
+00:45:11,000 --> 00:45:13,930
+but maybe I need to put this out
+into the world for other users
+
+1171
+00:45:13,930 --> 00:45:14,770
+to use, right.
+
+1172
+00:45:14,770 --> 00:45:17,440
+Maybe I'm Netflix and I'm using
+machine learning to recommend
+
+1173
+00:45:17,440 --> 00:45:19,010
+the next best movie to you.
+
+1174
+00:45:19,010 --> 00:45:21,080
+I need to deploy that
+feature in some way, right.
+
+1175
+00:45:21,080 --> 00:45:22,453
+That recommended filtering.
+
+1176
+00:45:22,453 --> 00:45:24,620
+And there's a couple of
+ways I could do that, right.
+
+1177
+00:45:24,620 --> 00:45:27,830
+I can do a web app or an API
+like we've been doing, right.
+
+1178
+00:45:27,830 --> 00:45:30,585
+I could put a machine-learning
+model on the back end of my API
+
+1179
+00:45:30,585 --> 00:45:32,710
+that we've seen how to
+build out because we already
+
+1180
+00:45:32,710 --> 00:45:33,650
+have it in Python.
+
+1181
+00:45:33,650 --> 00:45:35,620
+So as long as I have
+an EC2 instance that
+
+1182
+00:45:35,620 --> 00:45:39,670
+has the code and the weights and
+the models loaded onto there,
+
+1183
+00:45:39,670 --> 00:45:42,200
+it's actually the same as
+what we already have built.
+
+1184
+00:45:42,200 --> 00:45:46,150
+So you could build one today
+using exactly those steps.
+
+1185
+00:45:46,150 --> 00:45:51,080
+The other way I could deploy
+it is using an edge device.
+
+1186
+00:45:51,080 --> 00:45:54,100
+So maybe I have something
+that is maybe a fruit quality
+
+1187
+00:45:54,100 --> 00:45:54,830
+detector, right.
+
+1188
+00:45:54,830 --> 00:45:58,240
+It detects whether a tomato is
+good or bad as it's coming down
+
+1189
+00:45:58,240 --> 00:45:59,110
+my assembly line.
+
+1190
+00:45:59,110 --> 00:46:01,210
+And maybe I don't
+have the time to wait
+
+1191
+00:46:01,210 --> 00:46:05,890
+for it to go all the way
+from the side of my factory,
+
+1192
+00:46:05,890 --> 00:46:10,630
+all the way out to Amazon's, you
+know, data center and US West
+
+1193
+00:46:10,630 --> 00:46:14,230
+to my specific EC2 instance,
+to make that prediction,
+
+1194
+00:46:14,230 --> 00:46:16,940
+I need to have it happen
+as fast as possible.
+
+1195
+00:46:16,940 --> 00:46:20,870
+So I could either use AWS's
+global presence, right.
+
+1196
+00:46:20,870 --> 00:46:23,110
+The fact that they have
+these edge locations where
+
+1197
+00:46:23,110 --> 00:46:25,913
+I could just send it to an
+edge or a regional cache
+
+1198
+00:46:25,913 --> 00:46:27,580
+to either store the
+information or maybe
+
+1199
+00:46:27,580 --> 00:46:29,230
+do some sort of inference
+if they have the resources
+
+1200
+00:46:29,230 --> 00:46:31,450
+at that regional location
+or that edge location.
+
+1201
+00:46:31,450 --> 00:46:33,220
+Or even it might
+be something where
+
+1202
+00:46:33,220 --> 00:46:35,800
+I do all my model
+training in the cloud
+
+1203
+00:46:35,800 --> 00:46:38,750
+and then push updates
+to my edge devices.
+
+1204
+00:46:38,750 --> 00:46:40,540
+And so these two things
+here on the right
+
+1205
+00:46:40,540 --> 00:46:42,910
+are actually small
+little computers
+
+1206
+00:46:42,910 --> 00:46:45,250
+that are specifically
+designed to make predictions
+
+1207
+00:46:45,250 --> 00:46:46,830
+for machine learning models.
+
+1208
+00:46:46,830 --> 00:46:48,920
+So they're not fully
+built out big GPUs,
+
+1209
+00:46:48,920 --> 00:46:51,170
+they're kind of smaller
+devices that have one purpose,
+
+1210
+00:46:51,170 --> 00:46:52,680
+and that's just to
+make predictions.
+
+1211
+00:46:52,680 --> 00:46:56,755
+And I can put this physically
+on my machine, my factory,
+
+1212
+00:46:56,755 --> 00:46:58,130
+and it just makes
+the predictions
+
+1213
+00:46:58,130 --> 00:46:59,397
+right there as fast as it can.
+
+1214
+00:46:59,397 --> 00:47:00,980
+But it communicates
+up with the cloud.
+
+1215
+00:47:00,980 --> 00:47:03,300
+It sends data back and
+forth and all that stuff
+
+1216
+00:47:03,300 --> 00:47:06,170
+but the prediction can
+still be made on device.
+
+1217
+00:47:06,170 --> 00:47:08,180
+Or, kind of, the last
+way you'll see this
+
+1218
+00:47:08,180 --> 00:47:10,127
+is actually leveraging
+the Lambda functions.
+
+1219
+00:47:10,127 --> 00:47:12,710
+So just as we saw bef-- or as I
+was talking about before where
+
+1220
+00:47:12,710 --> 00:47:14,640
+I could use lambda
+function to collect data,
+
+1221
+00:47:14,640 --> 00:47:16,490
+I could also use them
+to make predictions.
+
+1222
+00:47:16,490 --> 00:47:20,510
+Such that if somebody sends in
+data or uploads data to my API,
+
+1223
+00:47:20,510 --> 00:47:23,823
+right, they'd be pushed data
+to my S3 bucket in some way.
+
+1224
+00:47:23,823 --> 00:47:25,490
+They have an Upload
+button on my web app
+
+1225
+00:47:25,490 --> 00:47:27,450
+and they send data
+to my S3 bucket.
+
+1226
+00:47:27,450 --> 00:47:29,900
+Well, I can have that S3
+bucket having a new file
+
+1227
+00:47:29,900 --> 00:47:34,730
+added trigger an event that
+kicks off a AWS Lambda function.
+
+1228
+00:47:34,730 --> 00:47:36,803
+And that lambda function
+maybe runs my model
+
+1229
+00:47:36,803 --> 00:47:38,720
+that makes a prediction
+of what's in the image
+
+1230
+00:47:38,720 --> 00:47:41,850
+and sends that information
+back to the user, right.
+
+1231
+00:47:41,850 --> 00:47:43,860
+So I can have this
+all pipe together.
+
+1232
+00:47:43,860 --> 00:47:46,880
+Just leveraging cloud tools,
+never stepping out of the cloud
+
+1233
+00:47:46,880 --> 00:47:49,890
+and having a seamless,
+scalable experience.
+
+1234
+00:47:49,890 --> 00:47:52,730
+And again, that is I think,
+the real power and weight
+
+1235
+00:47:52,730 --> 00:47:54,470
+of being able to leverage the--
+
+1236
+00:47:54,470 --> 00:47:57,740
+you know, the cloud
+for machine learning.
+
+1237
+00:47:57,740 --> 00:48:01,760
+So that's it for my
+thoughts on this.
+
+1238
+00:48:01,760 --> 00:48:04,405
+I'll say again-- you know,
+kind of go back full screen--
+
+1239
+00:48:04,405 --> 00:48:06,530
+I'll say again that we're
+going to talk about a few
+
+1240
+00:48:06,530 --> 00:48:09,120
+more examples of how
+to do this directly.
+
+1241
+00:48:09,120 --> 00:48:12,428
+And by no means, just as
+with the web app development,
+
+1242
+00:48:12,428 --> 00:48:14,970
+are we going to cover everything
+or even close to everything.
+
+1243
+00:48:14,970 --> 00:48:17,150
+We're just going to introduce
+these ideas and these topics,
+
+1244
+00:48:17,150 --> 00:48:19,520
+and I hope that it's at least
+enough motivation for you
+
+1245
+00:48:19,520 --> 00:48:20,950
+to try to pursue this further.
+
+1246
+00:48:20,950 --> 00:48:24,523
+You'll see, again, me leverage
+cloud tools in machine learning
+
+1247
+00:48:24,523 --> 00:48:25,440
+classes in the future.
+
+1248
+00:48:25,440 --> 00:48:26,510
+So if you take one
+of those classes,
+
+1249
+00:48:26,510 --> 00:48:28,302
+you're definitely still
+be using the cloud.
+
+1250
+00:48:28,302 --> 00:48:30,110
+You'll just now
+know why and what's
+
+1251
+00:48:30,110 --> 00:48:31,820
+going on behind the scenes.
+
+1252
+00:48:31,820 --> 00:48:33,290
+So we'll leave it
+at that for now.
+
+1253
+00:48:33,290 --> 00:48:34,770
+It's already running
+a little bit long.
+
+1254
+00:48:34,770 --> 00:48:35,900
+I figured this
+would be the topic
+
+1255
+00:48:35,900 --> 00:48:37,483
+that I could rant
+on for way too long,
+
+1256
+00:48:37,483 --> 00:48:39,235
+so I'll try to keep
+it short and then
+
+1257
+00:48:39,235 --> 00:48:41,610
+I'll keep the next video a
+little bit shorter as well too
+
+1258
+00:48:41,610 --> 00:48:43,820
+so we can just get into
+the weeds of it, OK.
+
+1259
+00:48:43,820 --> 00:48:46,030
+So I'll see you next time.

@@ -2,6 +2,14 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-16
+
+- Completed Phase 5 (Validation and Refinement). Source: [ai/roadmaps/complete/2026-07-10-phase-05-validation-roadmap.md](../ai/roadmaps/complete/2026-07-10-phase-05-validation-roadmap.md)
+- Added JSON sidecar metadata files for all 52 previously missing SRT transcripts (26 IS 3600 lectures, 26 DATA 2100 lectures). Root cause of prior weak retrieval: ingest.py silently skipped files without a sidecar.
+- Re-ran `scripts/ingest.py` — all 53 lectures now indexed in pgvector across both IS 3600 and DATA 2100.
+- Re-ran `scripts/run_eval.py` — 0 weak retrieval flags (down from 2). q07 top-chunk distance improved from 0.5523 to 0.4121; q08 from 0.6276 to 0.4909. Full report: `tests/eval_results/eval_2026-07-16_14-05-57.md`.
+- Fixed `UnicodeEncodeError` in `scripts/ingest.py` — replaced `→` with `->` in print statement for Windows cp1252 compatibility.
+
 ## 2026-07-15
 
 - Completed Phase 3 (Retrieval and Answer Generation). Validated via Swagger UI — grounded answers with source citations confirmed working. Source: [ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md](../ai/roadmaps/complete/2026-07-10-phase-03-retrieval-answer-plan.md)

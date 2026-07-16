@@ -1,0 +1,2930 @@
+1
+00:00:01,790 --> 00:00:03,212
+Hi, DATA 2100 students.
+
+2
+00:00:03,212 --> 00:00:04,670
+In this video, we
+are going to walk
+
+3
+00:00:04,670 --> 00:00:07,580
+through this in-class
+assignment of Python and SQL,
+
+4
+00:00:07,580 --> 00:00:10,470
+specifically using insert
+and update queries.
+
+5
+00:00:10,470 --> 00:00:11,840
+We'll also do some select.
+
+6
+00:00:11,840 --> 00:00:13,800
+But if you have any
+questions about this,
+
+7
+00:00:13,800 --> 00:00:16,580
+make sure that you have already
+watched all the videos regarding
+
+8
+00:00:16,580 --> 00:00:19,580
+the SQL and Python
+connection, so that you
+
+9
+00:00:19,580 --> 00:00:21,530
+are well aware of
+what we are doing
+
+10
+00:00:21,530 --> 00:00:23,630
+and that it doesn't
+catch you too off guard
+
+11
+00:00:23,630 --> 00:00:25,670
+because the programs
+we're going to do today
+
+12
+00:00:25,670 --> 00:00:28,798
+are going to be fairly
+intense and going
+
+13
+00:00:28,798 --> 00:00:30,590
+to cover a lot of the
+components that we've
+
+14
+00:00:30,590 --> 00:00:32,100
+covered thus far in the course.
+
+15
+00:00:32,100 --> 00:00:33,540
+So just keep that in mind.
+
+16
+00:00:33,540 --> 00:00:37,310
+Please have already downloaded
+the Overland SQLite database
+
+17
+00:00:37,310 --> 00:00:41,880
+file, and then we're going to be
+prepared to load that in today.
+
+18
+00:00:41,880 --> 00:00:48,110
+So I'm going to come over here
+into our in-class assignment.
+
+19
+00:00:48,110 --> 00:00:51,420
+On program 1 and the
+Overland database,
+
+20
+00:00:51,420 --> 00:00:53,940
+we want to return Penny
+Peter's first name, last name,
+
+21
+00:00:53,940 --> 00:00:54,720
+and ski level.
+
+22
+00:00:54,720 --> 00:00:57,690
+Penny's employee ID is 12389.
+
+23
+00:00:57,690 --> 00:01:00,162
+We're going to change Penny's
+ski level to advanced,
+
+24
+00:01:00,162 --> 00:01:02,620
+and then we're going to output
+the employee ID, first name,
+
+25
+00:01:02,620 --> 00:01:05,533
+last name, and ski levels for
+the record, we just updated.
+
+26
+00:01:05,533 --> 00:01:07,200
+So I'm going to come
+over here to files,
+
+27
+00:01:07,200 --> 00:01:14,310
+and I'm going to upload
+our Overland SQLite file.
+
+28
+00:01:14,310 --> 00:01:16,980
+As a reminder, if this
+ever does time out
+
+29
+00:01:16,980 --> 00:01:19,555
+may need to upload that
+file one more time.
+
+30
+00:01:19,555 --> 00:01:20,680
+So let's come on down here.
+
+31
+00:01:20,680 --> 00:01:23,700
+We're going to copy
+in this code up above
+
+32
+00:01:23,700 --> 00:01:25,660
+and paste it down below.
+
+33
+00:01:25,660 --> 00:01:27,248
+And let's just run
+this and make sure
+
+34
+00:01:27,248 --> 00:01:28,540
+that it doesn't get any errors.
+
+35
+00:01:28,540 --> 00:01:29,380
+OK, awesome.
+
+36
+00:01:29,380 --> 00:01:35,380
+So now I want to return Penny
+Peters's information here.
+
+37
+00:01:35,380 --> 00:01:39,400
+So after I have connected
+to that Overland database,
+
+38
+00:01:39,400 --> 00:01:43,160
+then I'm going to
+create a cursor,
+
+39
+00:01:43,160 --> 00:01:45,570
+and I'm going to
+base that cursor,
+
+40
+00:01:45,570 --> 00:01:48,440
+I'm going to create
+that cursor to go
+
+41
+00:01:48,440 --> 00:01:50,520
+to this connected database.
+
+42
+00:01:50,520 --> 00:01:56,120
+And this cursor is what runs
+my database query for me.
+
+43
+00:01:56,120 --> 00:01:58,730
+The data is then returned
+inside of that cursor,
+
+44
+00:01:58,730 --> 00:02:02,420
+and I must extract the
+data from that cursor using
+
+45
+00:02:02,420 --> 00:02:05,160
+a fetch all command, which
+we'll do in just a second.
+
+46
+00:02:05,160 --> 00:02:06,690
+So once I've
+created that cursor,
+
+47
+00:02:06,690 --> 00:02:08,065
+then I'm going to
+tell the cursor
+
+48
+00:02:08,065 --> 00:02:10,110
+to go ahead and execute
+the following query.
+
+49
+00:02:10,110 --> 00:02:13,880
+And I know that I want
+to return the employee
+
+50
+00:02:13,880 --> 00:02:15,540
+ID, first name, last name.
+
+51
+00:02:15,540 --> 00:02:18,400
+So let's look at
+this Overland SQL--
+
+52
+00:02:18,400 --> 00:02:19,460
+oh, no.
+
+53
+00:02:19,460 --> 00:02:21,006
+No, that's not what I wanted.
+
+54
+00:02:21,006 --> 00:02:21,506
+Overland.
+
+55
+00:02:24,290 --> 00:02:25,770
+ERD into a dictionary.
+
+56
+00:02:25,770 --> 00:02:27,960
+There we go.
+
+57
+00:02:27,960 --> 00:02:29,220
+We take a look here.
+
+58
+00:02:29,220 --> 00:02:31,700
+I can see here that
+the employee has
+
+59
+00:02:31,700 --> 00:02:33,240
+the record ID as a primary key.
+
+60
+00:02:33,240 --> 00:02:34,920
+First name, last name.
+
+61
+00:02:34,920 --> 00:02:37,860
+And then we have the
+ski level as well.
+
+62
+00:02:37,860 --> 00:02:38,930
+All right.
+
+63
+00:02:38,930 --> 00:02:45,250
+So I'm going to say
+cursor.execute select, RecID,
+
+64
+00:02:45,250 --> 00:02:54,250
+employee first name, employee
+last name, and ski level.
+
+65
+00:02:54,250 --> 00:02:58,690
+And I want to look specifically.
+
+66
+00:02:58,690 --> 00:03:02,260
+I'm going to be pulling data
+from, let's exit out of there,
+
+67
+00:03:02,260 --> 00:03:06,560
+from the employee table.
+
+68
+00:03:06,560 --> 00:03:09,330
+So let's just go
+ahead and run this.
+
+69
+00:03:09,330 --> 00:03:11,900
+And I can see here that
+it's just showing me
+
+70
+00:03:11,900 --> 00:03:16,220
+that the query did run,
+but all of the data
+
+71
+00:03:16,220 --> 00:03:18,297
+is currently contained
+within that cursor.
+
+72
+00:03:18,297 --> 00:03:19,880
+So to grab all the
+data out, I'm going
+
+73
+00:03:19,880 --> 00:03:26,281
+to say results equal
+to cursor.fetchall.
+
+74
+00:03:26,281 --> 00:03:27,323
+So I'm going to retrieve.
+
+75
+00:03:33,540 --> 00:03:39,260
+Place all output
+records from the query
+
+76
+00:03:39,260 --> 00:03:42,970
+into a list called results.
+
+77
+00:03:42,970 --> 00:03:43,470
+OK.
+
+78
+00:03:43,470 --> 00:03:44,930
+Then I will go ahead.
+
+79
+00:03:44,930 --> 00:03:52,140
+And we'll say for y
+in results, print y.
+
+80
+00:03:52,140 --> 00:03:56,510
+So as a reminder, once I run
+this query, all of the data
+
+81
+00:03:56,510 --> 00:03:58,560
+is stored inside of that cursor.
+
+82
+00:03:58,560 --> 00:04:01,320
+Then to retrieve
+all of that data,
+
+83
+00:04:01,320 --> 00:04:04,700
+I create a results
+variable that is
+
+84
+00:04:04,700 --> 00:04:10,370
+going to be a list that
+grabs all of the data
+
+85
+00:04:10,370 --> 00:04:13,670
+using this fetchall
+method from the cursor
+
+86
+00:04:13,670 --> 00:04:19,350
+and places them in all of those
+tuples inside of my results.
+
+87
+00:04:19,350 --> 00:04:23,400
+Then I loop through my
+results list, and I print y.
+
+88
+00:04:23,400 --> 00:04:25,340
+So I'm going to go
+ahead and run this.
+
+89
+00:04:25,340 --> 00:04:28,430
+And we can see here that I
+have all of my employee data
+
+90
+00:04:28,430 --> 00:04:30,100
+returned to me.
+
+91
+00:04:30,100 --> 00:04:32,460
+RecID, employee first
+name, employee last name,
+
+92
+00:04:32,460 --> 00:04:34,990
+and ski level all
+outputting to me.
+
+93
+00:04:34,990 --> 00:04:37,570
+Now this time though, I'm
+outputting everything.
+
+94
+00:04:37,570 --> 00:04:41,790
+But I really just want to look
+at employee ID or record ID,
+
+95
+00:04:41,790 --> 00:04:42,450
+right?
+
+96
+00:04:42,450 --> 00:04:44,020
+12389.
+
+97
+00:04:44,020 --> 00:04:50,490
+So I'll say where RecID,
+which is the unique identifier
+
+98
+00:04:50,490 --> 00:04:54,760
+for the employees, is 12389.
+
+99
+00:04:54,760 --> 00:04:59,130
+So now when I run
+this query, you'll
+
+100
+00:04:59,130 --> 00:05:02,500
+notice that we get
+12389, Penny and Peters.
+
+101
+00:05:02,500 --> 00:05:07,200
+And Penny is currently
+an intermediate skier.
+
+102
+00:05:07,200 --> 00:05:09,120
+So now what I want
+to do is after I've
+
+103
+00:05:09,120 --> 00:05:11,880
+fetched all that
+information, then
+
+104
+00:05:11,880 --> 00:05:19,900
+I want to update Penny's
+ski level to advanced.
+
+105
+00:05:19,900 --> 00:05:23,820
+And the way that I do that
+is I say cursor.execute,
+
+106
+00:05:23,820 --> 00:05:27,690
+and I will update employee.
+
+107
+00:05:27,690 --> 00:05:35,280
+And I'll set the ski
+level equal to advanced,
+
+108
+00:05:35,280 --> 00:05:41,730
+where the RecID is
+equal to that 12389.
+
+109
+00:05:41,730 --> 00:05:44,430
+So my update command, the most
+important part of the update
+
+110
+00:05:44,430 --> 00:05:45,950
+command is the where clause.
+
+111
+00:05:45,950 --> 00:05:48,840
+So I update the employee table.
+
+112
+00:05:48,840 --> 00:05:55,270
+I set the value of the ski level
+field to be equal to advanced,
+
+113
+00:05:55,270 --> 00:06:00,470
+but only on the record that
+has the rec ID of 12389.
+
+114
+00:06:00,470 --> 00:06:03,570
+So now when I, I'm
+gonna go back here,
+
+115
+00:06:03,570 --> 00:06:09,360
+and I'm going to say commit
+the changes to the database.
+
+116
+00:06:09,360 --> 00:06:11,380
+As we've talked
+about, I must say,
+
+117
+00:06:11,380 --> 00:06:15,310
+conn.commit to commit the
+changes to the database.
+
+118
+00:06:15,310 --> 00:06:17,580
+If I don't say this,
+then the changes
+
+119
+00:06:17,580 --> 00:06:19,860
+do not fully commit
+to the database.
+
+120
+00:06:19,860 --> 00:06:21,820
+They will do like
+a partial commit,
+
+121
+00:06:21,820 --> 00:06:25,140
+but that partial
+commit will only
+
+122
+00:06:25,140 --> 00:06:26,830
+last for the duration
+of the program.
+
+123
+00:06:26,830 --> 00:06:30,930
+So in order for me to
+fully commit, fully change
+
+124
+00:06:30,930 --> 00:06:34,350
+the database, I've got
+to do that conn.commit.
+
+125
+00:06:34,350 --> 00:06:39,090
+Then I'm going to run the same
+query that I did up here above.
+
+126
+00:06:39,090 --> 00:06:46,090
+And I want to say return
+Penny's updated information.
+
+127
+00:06:46,090 --> 00:06:49,620
+And I will run that same query.
+
+128
+00:06:49,620 --> 00:06:51,720
+After again, I run
+what it, originally
+
+129
+00:06:51,720 --> 00:06:54,240
+was I update the ski
+level, and then I'm
+
+130
+00:06:54,240 --> 00:06:58,840
+going to check that the update
+was persisted or update worked.
+
+131
+00:06:58,840 --> 00:07:04,810
+So I'll say maybe output
+equal to cursor.fetchall.
+
+132
+00:07:04,810 --> 00:07:08,470
+I'm going to name my two outputs
+from the different queries,
+
+133
+00:07:08,470 --> 00:07:10,460
+different things.
+
+134
+00:07:10,460 --> 00:07:17,190
+And then I'll say for
+x in output, print x.
+
+135
+00:07:17,190 --> 00:07:20,010
+OK, let's go ahead and run this.
+
+136
+00:07:20,010 --> 00:07:23,400
+So now, once I run
+this, I can see here
+
+137
+00:07:23,400 --> 00:07:32,300
+that Penny's information,
+database is locked.
+
+138
+00:07:32,300 --> 00:07:32,800
+OK.
+
+139
+00:07:32,800 --> 00:07:34,200
+Let's go ahead and
+run this one more time
+
+140
+00:07:34,200 --> 00:07:35,575
+and see if we get
+the same error.
+
+141
+00:07:40,670 --> 00:07:41,170
+OK.
+
+142
+00:07:41,170 --> 00:07:42,270
+Database is locked.
+
+143
+00:07:42,270 --> 00:07:46,750
+Let's just come up here and I'm
+going to say restart session.
+
+144
+00:07:46,750 --> 00:07:49,160
+And then I'll need to re-upload.
+
+145
+00:07:49,160 --> 00:07:51,350
+Let me delete out
+my database file.
+
+146
+00:07:51,350 --> 00:07:53,210
+If you're getting the
+same error as I am,
+
+147
+00:07:53,210 --> 00:07:55,940
+we're just going to basically
+refresh our database connection.
+
+148
+00:07:55,940 --> 00:07:58,400
+So I'm going to re-upload
+my database file.
+
+149
+00:07:58,400 --> 00:08:01,250
+Now when I run this again.
+
+150
+00:08:01,250 --> 00:08:04,520
+We'll see here that Penny
+Peters was originally
+
+151
+00:08:04,520 --> 00:08:05,970
+an intermediate skier.
+
+152
+00:08:05,970 --> 00:08:08,100
+Then this update command ran.
+
+153
+00:08:08,100 --> 00:08:12,620
+Then we said, all right,
+rerun this program
+
+154
+00:08:12,620 --> 00:08:14,970
+and make sure that
+the update persisted.
+
+155
+00:08:14,970 --> 00:08:17,030
+And we can see that it
+did, that Penny Peters now
+
+156
+00:08:17,030 --> 00:08:19,375
+has an advanced ski level.
+
+157
+00:08:19,375 --> 00:08:20,330
+Awesome.
+
+158
+00:08:20,330 --> 00:08:24,170
+Now program number 2,
+similar to the above, but now
+
+159
+00:08:24,170 --> 00:08:27,620
+turn the above program into
+a ski level update program
+
+160
+00:08:27,620 --> 00:08:30,180
+that anyone can use to
+update their ski level.
+
+161
+00:08:30,180 --> 00:08:33,080
+The program should welcome the
+user to the ski level update
+
+162
+00:08:33,080 --> 00:08:33,870
+program.
+
+163
+00:08:33,870 --> 00:08:37,460
+Ask the user, the
+employee for their RecID.
+
+164
+00:08:37,460 --> 00:08:40,190
+Then validate that they did
+enter an integer and not
+
+165
+00:08:40,190 --> 00:08:41,100
+a blink.
+
+166
+00:08:41,100 --> 00:08:43,919
+Ask them to enter their ski
+level, beginner, intermediate,
+
+167
+00:08:43,919 --> 00:08:45,260
+advanced, or expert.
+
+168
+00:08:45,260 --> 00:08:47,600
+Verify they entered one
+of the four ski levels.
+
+169
+00:08:47,600 --> 00:08:50,100
+Make their entry
+not case sensitive.
+
+170
+00:08:50,100 --> 00:08:53,280
+Then update their ski level
+in the database and output
+
+171
+00:08:53,280 --> 00:08:56,100
+thank you and then
+their first name.
+
+172
+00:08:56,100 --> 00:08:58,090
+Your ski level is now blank.
+
+173
+00:08:58,090 --> 00:08:58,590
+All right.
+
+174
+00:08:58,590 --> 00:09:02,280
+So we've got quite
+a bit going on here.
+
+175
+00:09:02,280 --> 00:09:04,150
+Before we jump down
+into this program,
+
+176
+00:09:04,150 --> 00:09:06,990
+I just want to show you here
+really quickly, I apologize.
+
+177
+00:09:06,990 --> 00:09:10,800
+If we wanted to get this
+last print statement out
+
+178
+00:09:10,800 --> 00:09:12,810
+of this form, I can
+say, you know what?
+
+179
+00:09:12,810 --> 00:09:17,160
+Print the 0 index
+value of the x, which
+
+180
+00:09:17,160 --> 00:09:19,920
+is the tuple, because
+our records are
+
+181
+00:09:19,920 --> 00:09:24,520
+returned to us in tuples and
+contained within the output list
+
+182
+00:09:24,520 --> 00:09:25,300
+now.
+
+183
+00:09:25,300 --> 00:09:29,350
+The 0 index value of
+this tuple is 12389.
+
+184
+00:09:29,350 --> 00:09:32,230
+The first index value is Penny.
+
+185
+00:09:32,230 --> 00:09:34,930
+The second index
+value is Peters,
+
+186
+00:09:34,930 --> 00:09:38,100
+and the third index
+value is advanced.
+
+187
+00:09:38,100 --> 00:09:42,900
+So now when we run this, we'll
+notice that it did change
+
+188
+00:09:42,900 --> 00:09:43,720
+in the database.
+
+189
+00:09:43,720 --> 00:09:45,810
+So the original
+query is running--
+
+190
+00:09:45,810 --> 00:09:48,910
+the ski level is now
+advanced to begin with.
+
+191
+00:09:48,910 --> 00:09:50,125
+Then my update runs again.
+
+192
+00:09:50,125 --> 00:09:51,250
+It doesn't change anything.
+
+193
+00:09:51,250 --> 00:09:54,330
+But now this time, at
+least it's outputting to me
+
+194
+00:09:54,330 --> 00:09:57,450
+without being contained
+within these parentheses
+
+195
+00:09:57,450 --> 00:10:00,760
+and within those quotation
+marks and things.
+
+196
+00:10:00,760 --> 00:10:02,310
+All right.
+
+197
+00:10:02,310 --> 00:10:05,310
+So now here on
+program number 2, we
+
+198
+00:10:05,310 --> 00:10:11,970
+are going to still copy down
+this import SQLite3 library.
+
+199
+00:10:11,970 --> 00:10:15,180
+And then we're going to
+paste it down here below
+
+200
+00:10:15,180 --> 00:10:17,010
+and run the program.
+
+201
+00:10:17,010 --> 00:10:17,530
+All right.
+
+202
+00:10:17,530 --> 00:10:25,030
+Then I want to welcome the user
+to the ski level update program.
+
+203
+00:10:25,030 --> 00:10:25,530
+OK.
+
+204
+00:10:25,530 --> 00:10:28,338
+I'm going to first
+off create my cursor
+
+205
+00:10:28,338 --> 00:10:30,880
+because I know I'm going to be
+running some database queries.
+
+206
+00:10:30,880 --> 00:10:34,560
+So I'm going to say
+cursor equals conn.cursor.
+
+207
+00:10:37,250 --> 00:10:38,250
+OK, perfect.
+
+208
+00:10:38,250 --> 00:10:47,620
+Now I will print Welcome to
+the employee ski level update
+
+209
+00:10:47,620 --> 00:10:49,810
+program.
+
+210
+00:10:49,810 --> 00:10:50,800
+Perfect.
+
+211
+00:10:50,800 --> 00:10:53,980
+OK now, once I want
+to do is we want
+
+212
+00:10:53,980 --> 00:10:56,020
+to validate that they
+did enter an integer,
+
+213
+00:10:56,020 --> 00:10:58,000
+and we're going to
+keep asking them
+
+214
+00:10:58,000 --> 00:10:59,570
+over and over and over again.
+
+215
+00:10:59,570 --> 00:11:01,790
+But since we're going
+to keep asking them,
+
+216
+00:11:01,790 --> 00:11:04,190
+we know that a while loop
+will be involved here,
+
+217
+00:11:04,190 --> 00:11:06,620
+but we're not going to get
+too carried away with that.
+
+218
+00:11:06,620 --> 00:11:09,620
+We're going to have the while
+loop add at the very end.
+
+219
+00:11:09,620 --> 00:11:13,910
+So I first off want to ask the
+user to enter their employee ID.
+
+220
+00:11:13,910 --> 00:11:19,390
+So I'll say user ID
+is equal to input.
+
+221
+00:11:19,390 --> 00:11:22,990
+What is your employee ID?
+
+222
+00:11:22,990 --> 00:11:27,700
+And then I want to validate
+that they did enter
+
+223
+00:11:27,700 --> 00:11:29,590
+an integer and not a blank.
+
+224
+00:11:29,590 --> 00:11:32,410
+So once they entered
+that, I am going
+
+225
+00:11:32,410 --> 00:11:36,410
+to validate that they
+did not enter a blank.
+
+226
+00:11:36,410 --> 00:11:40,340
+So I'll say validate they
+did not enter a blank.
+
+227
+00:11:40,340 --> 00:11:42,250
+The way that I'll
+do that is I'll
+
+228
+00:11:42,250 --> 00:11:47,060
+say if the user ID
+is equal to nothing.
+
+229
+00:11:47,060 --> 00:11:56,430
+So if they entered
+a blank, right?
+
+230
+00:11:56,430 --> 00:11:58,110
+Do this.
+
+231
+00:11:58,110 --> 00:12:04,140
+I'll say print nothing entered.
+
+232
+00:12:04,140 --> 00:12:10,920
+You must enter your employee ID.
+
+233
+00:12:10,920 --> 00:12:11,670
+OK?
+
+234
+00:12:11,670 --> 00:12:13,847
+So if what they enter is
+blank, that should run.
+
+235
+00:12:13,847 --> 00:12:15,430
+So I'm going to go
+ahead and run this.
+
+236
+00:12:15,430 --> 00:12:17,910
+I'm not going to hit enter
+anything into the cell
+
+237
+00:12:17,910 --> 00:12:19,720
+upon prompt.
+
+238
+00:12:19,720 --> 00:12:20,910
+So I'll hit enter.
+
+239
+00:12:20,910 --> 00:12:22,240
+And it says nothing entered.
+
+240
+00:12:22,240 --> 00:12:23,920
+You must enter your employee ID.
+
+241
+00:12:23,920 --> 00:12:24,520
+OK, awesome.
+
+242
+00:12:24,520 --> 00:12:27,030
+If I was to run this again
+and I did enter something,
+
+243
+00:12:27,030 --> 00:12:30,720
+well, then my program
+just ends because that
+
+244
+00:12:30,720 --> 00:12:32,230
+if statement is not true.
+
+245
+00:12:32,230 --> 00:12:36,820
+Now if my if
+statement is not true,
+
+246
+00:12:36,820 --> 00:12:43,290
+then evaluate what they entered.
+
+247
+00:12:43,290 --> 00:12:44,250
+Let's see.
+
+248
+00:12:44,250 --> 00:12:47,680
+Make sure they
+entered an integer.
+
+249
+00:12:47,680 --> 00:12:49,920
+So I know they've
+entered something
+
+250
+00:12:49,920 --> 00:12:52,850
+if this else block runs.
+
+251
+00:12:52,850 --> 00:12:54,980
+And let's see.
+
+252
+00:12:54,980 --> 00:13:00,170
+Maybe I'll say if they
+entered anything, do this.
+
+253
+00:13:00,170 --> 00:13:03,270
+Then I will try.
+
+254
+00:13:03,270 --> 00:13:08,340
+And let's see.
+
+255
+00:13:08,340 --> 00:13:13,180
+Try to validate they
+entered an integer.
+
+256
+00:13:13,180 --> 00:13:14,080
+OK.
+
+257
+00:13:14,080 --> 00:13:18,370
+So once this else
+block runs, then I'm
+
+258
+00:13:18,370 --> 00:13:23,440
+going to try and validate
+that what they did enter
+
+259
+00:13:23,440 --> 00:13:25,310
+was indeed an integer.
+
+260
+00:13:25,310 --> 00:13:30,160
+So the way that I'll do that is
+I'll say if the user is equal,
+
+261
+00:13:30,160 --> 00:13:33,040
+or I'll try and
+convert the user ID
+
+262
+00:13:33,040 --> 00:13:37,920
+to be equal to the integer
+value of user ID, OK?
+
+263
+00:13:37,920 --> 00:13:39,420
+I'm going to indent that.
+
+264
+00:13:39,420 --> 00:13:42,210
+Something is not liking my try.
+
+265
+00:13:42,210 --> 00:13:49,630
+So I'm going to just hit tab
+and see if that will work.
+
+266
+00:13:49,630 --> 00:13:50,300
+OK.
+
+267
+00:13:50,300 --> 00:13:51,770
+One more time here.
+
+268
+00:13:51,770 --> 00:13:54,750
+My try block.
+
+269
+00:13:54,750 --> 00:13:55,410
+OK.
+
+270
+00:13:55,410 --> 00:13:56,470
+Hopefully that will work.
+
+271
+00:13:56,470 --> 00:13:57,800
+All right.
+
+272
+00:13:57,800 --> 00:13:59,150
+If not, we'll adjust.
+
+273
+00:13:59,150 --> 00:14:02,475
+So chart validated that
+it did enter an integer.
+
+274
+00:14:02,475 --> 00:14:03,850
+If they did enter
+an integer, I'm
+
+275
+00:14:03,850 --> 00:14:08,120
+going to say print Thanks
+for entering an integer.
+
+276
+00:14:08,120 --> 00:14:13,370
+As we know, with try and
+accept, if this throws an error,
+
+277
+00:14:13,370 --> 00:14:15,810
+if what they did enter
+is not an integer,
+
+278
+00:14:15,810 --> 00:14:22,700
+so if this cannot happen
+then my except block runs,
+
+279
+00:14:22,700 --> 00:14:30,120
+and the except block says print
+You must enter an integer.
+
+280
+00:14:30,120 --> 00:14:30,790
+OK.
+
+281
+00:14:30,790 --> 00:14:35,210
+So as long as my if statement
+is true, then what prints
+
+282
+00:14:35,210 --> 00:14:36,230
+is Nothing entered.
+
+283
+00:14:36,230 --> 00:14:38,810
+You must enter your employee ID.
+
+284
+00:14:38,810 --> 00:14:42,960
+If my if statement is not true,
+meaning they entered something,
+
+285
+00:14:42,960 --> 00:14:44,690
+then I'm going to
+try and validate
+
+286
+00:14:44,690 --> 00:14:46,140
+that they entered an integer.
+
+287
+00:14:46,140 --> 00:14:49,310
+So I'll try and convert
+their entry to be an integer.
+
+288
+00:14:49,310 --> 00:14:52,710
+If that works, then I'll print
+Thanks for entering an integer.
+
+289
+00:14:52,710 --> 00:14:55,682
+If that doesn't work, then I'll
+say you must enter an integer.
+
+290
+00:14:55,682 --> 00:14:57,265
+So I'm going to go
+ahead and run this.
+
+291
+00:15:00,260 --> 00:15:01,860
+So what is your employee ID?
+
+292
+00:15:01,860 --> 00:15:04,750
+I'm going to do a blank for
+now, and I'll just hit enter.
+
+293
+00:15:04,750 --> 00:15:06,020
+It says nothing entered.
+
+294
+00:15:06,020 --> 00:15:07,530
+You must enter your employee ID.
+
+295
+00:15:07,530 --> 00:15:08,460
+OK, awesome.
+
+296
+00:15:08,460 --> 00:15:12,000
+Now what if they enter 17, OK?
+
+297
+00:15:12,000 --> 00:15:15,260
+So this if statement is
+going to evaluate as false
+
+298
+00:15:15,260 --> 00:15:19,350
+and what is indented and
+beneath it will not run.
+
+299
+00:15:19,350 --> 00:15:22,970
+The else block will run,
+and it will try and convert
+
+300
+00:15:22,970 --> 00:15:27,320
+what they did enter, that
+user ID to be an integer.
+
+301
+00:15:27,320 --> 00:15:31,320
+If this fails, which it
+will, this will fail,
+
+302
+00:15:31,320 --> 00:15:33,890
+and so my except block
+will run, and it will say,
+
+303
+00:15:33,890 --> 00:15:35,580
+you must enter an integer.
+
+304
+00:15:35,580 --> 00:15:36,780
+So I'll hit enter.
+
+305
+00:15:36,780 --> 00:15:40,200
+But again, the try and accept
+will not let my program crash.
+
+306
+00:15:40,200 --> 00:15:44,300
+Rather, it just says, oh,
+there's an error that occurred.
+
+307
+00:15:44,300 --> 00:15:45,120
+All right, perfect.
+
+308
+00:15:45,120 --> 00:15:47,570
+So you must enter an
+integer is what ran.
+
+309
+00:15:47,570 --> 00:15:52,970
+Now this time, let's say 1,
+2, 3, and I'll hit enter.
+
+310
+00:15:52,970 --> 00:15:55,260
+And it says, thanks for
+entering an integer.
+
+311
+00:15:55,260 --> 00:15:56,490
+OK, awesome.
+
+312
+00:15:56,490 --> 00:16:01,320
+So I know that the base
+logic of validating
+
+313
+00:16:01,320 --> 00:16:12,210
+that they entered an integer and
+not a blank as their employee
+
+314
+00:16:12,210 --> 00:16:12,710
+ID.
+
+315
+00:16:12,710 --> 00:16:14,490
+I know that this is now working.
+
+316
+00:16:14,490 --> 00:16:16,550
+So what I'm going to do
+is I'm going to put this
+
+317
+00:16:16,550 --> 00:16:17,900
+all within a while loop.
+
+318
+00:16:17,900 --> 00:16:21,330
+And I'm going to
+say, while true,
+
+319
+00:16:21,330 --> 00:16:24,940
+and have everything
+indented and beneath it.
+
+320
+00:16:24,940 --> 00:16:26,360
+Oh, no.
+
+321
+00:16:26,360 --> 00:16:28,950
+So I'll highlight
+it all and hit tab.
+
+322
+00:16:28,950 --> 00:16:32,030
+And I want to break
+out of this while loop
+
+323
+00:16:32,030 --> 00:16:34,710
+once they know that they
+have entered an integer.
+
+324
+00:16:34,710 --> 00:16:38,240
+So I'll say, thanks for entering
+an integer, and I will break.
+
+325
+00:16:38,240 --> 00:16:41,720
+And I'll leave the while loop.
+
+326
+00:16:41,720 --> 00:16:42,220
+OK.
+
+327
+00:16:42,220 --> 00:16:44,360
+So let's try this again.
+
+328
+00:16:44,360 --> 00:16:46,680
+So says welcome to your
+skill level update program.
+
+329
+00:16:46,680 --> 00:16:47,990
+What is your employee ID?
+
+330
+00:16:47,990 --> 00:16:49,260
+I hit enter.
+
+331
+00:16:49,260 --> 00:16:50,250
+Nothing entered.
+
+332
+00:16:50,250 --> 00:16:51,890
+You must enter your employee ID.
+
+333
+00:16:51,890 --> 00:16:54,990
+Then I say 17, and I hit enter.
+
+334
+00:16:54,990 --> 00:16:56,550
+It says you must
+enter an integer.
+
+335
+00:16:56,550 --> 00:16:57,240
+OK, perfect.
+
+336
+00:16:57,240 --> 00:17:00,020
+Then I say 1, 2,
+3, and hit enter.
+
+337
+00:17:00,020 --> 00:17:01,520
+It says Thanks for
+entering integer,
+
+338
+00:17:01,520 --> 00:17:03,600
+and my program finally ends.
+
+339
+00:17:03,600 --> 00:17:06,750
+Now I don't need to tell my user
+thanks for entering an integer.
+
+340
+00:17:06,750 --> 00:17:08,750
+We're just going to break
+out of that while loop
+
+341
+00:17:08,750 --> 00:17:12,369
+because they've moved on to
+the next part of my program.
+
+342
+00:17:12,369 --> 00:17:12,869
+All right.
+
+343
+00:17:12,869 --> 00:17:13,490
+Perfect.
+
+344
+00:17:13,490 --> 00:17:21,714
+So now here below, I'm actually
+going to return to this.
+
+345
+00:17:21,714 --> 00:17:23,839
+This is not part necessarily
+of the program prompt,
+
+346
+00:17:23,839 --> 00:17:27,490
+but I'm going to
+print f strings.
+
+347
+00:17:27,490 --> 00:17:31,570
+Thank you for entering
+your employee ID.
+
+348
+00:17:31,570 --> 00:17:36,170
+And then I'm going to return
+the value that they entered.
+
+349
+00:17:36,170 --> 00:17:40,450
+So I'll say, user ID.
+
+350
+00:17:40,450 --> 00:17:42,250
+OK?
+
+351
+00:17:42,250 --> 00:17:43,660
+We'll just say that for now.
+
+352
+00:17:43,660 --> 00:17:47,190
+So now when I run this again,
+we're just going to say 123.
+
+353
+00:17:47,190 --> 00:17:47,750
+I hit enter.
+
+354
+00:17:47,750 --> 00:17:51,310
+It says thank you for
+entering your employee ID 123.
+
+355
+00:17:51,310 --> 00:17:52,070
+Awesome.
+
+356
+00:17:52,070 --> 00:17:57,550
+Now once I've done that, I
+need to validate that once
+
+357
+00:17:57,550 --> 00:18:01,120
+I entered their ski level, that
+once they enter their ski level,
+
+358
+00:18:01,120 --> 00:18:04,400
+that it is an appropriate ski
+level, beginner, intermediate,
+
+359
+00:18:04,400 --> 00:18:05,540
+advanced, and expert.
+
+360
+00:18:05,540 --> 00:18:09,880
+It's not like they enter
+in totally advanced
+
+361
+00:18:09,880 --> 00:18:12,050
+and that my program
+will accept it.
+
+362
+00:18:12,050 --> 00:18:14,420
+These are four levels
+that we will accept.
+
+363
+00:18:14,420 --> 00:18:16,900
+So we're doing two types of
+input validation here, right?
+
+364
+00:18:16,900 --> 00:18:19,597
+We are validating
+whether it's-- well,
+
+365
+00:18:19,597 --> 00:18:21,180
+we're doing a lot
+of input validation.
+
+366
+00:18:21,180 --> 00:18:24,410
+But up here, we're validating
+that what they enter
+
+367
+00:18:24,410 --> 00:18:26,850
+is not blank and that
+it is an integer.
+
+368
+00:18:26,850 --> 00:18:29,900
+And then down here, we're
+validating that what they enter
+
+369
+00:18:29,900 --> 00:18:32,130
+is one of these
+four options, OK?
+
+370
+00:18:32,130 --> 00:18:34,440
+So super important.
+
+371
+00:18:34,440 --> 00:18:37,910
+This is how we maintain data
+integrity in a database, right?
+
+372
+00:18:37,910 --> 00:18:40,980
+That we're saying these
+are our four options.
+
+373
+00:18:40,980 --> 00:18:44,030
+So for consistency
+here, we only are
+
+374
+00:18:44,030 --> 00:18:45,830
+going to allow
+these four options
+
+375
+00:18:45,830 --> 00:18:50,286
+to be entered into my database
+under their ski level, OK?
+
+376
+00:18:50,286 --> 00:18:51,350
+All right.
+
+377
+00:18:51,350 --> 00:18:52,948
+So now what we're
+going to do is we're
+
+378
+00:18:52,948 --> 00:18:55,490
+going to make sure that they
+enter one of those four options.
+
+379
+00:18:55,490 --> 00:18:57,790
+And so I'm going to
+ask them, again, we're
+
+380
+00:18:57,790 --> 00:18:59,330
+going to keep asking them this.
+
+381
+00:18:59,330 --> 00:19:04,600
+But for now, I am going to just
+have this outside of a while
+
+382
+00:19:04,600 --> 00:19:06,180
+loop for right now.
+
+383
+00:19:06,180 --> 00:19:06,680
+All right.
+
+384
+00:19:06,680 --> 00:19:09,970
+So user key level, I'll
+say equal to input.
+
+385
+00:19:09,970 --> 00:19:14,850
+What is your current ski level?
+
+386
+00:19:14,850 --> 00:19:19,860
+And then they will enter
+their current ski level.
+
+387
+00:19:19,860 --> 00:19:22,230
+We're going to make sure
+that their entry is not
+
+388
+00:19:22,230 --> 00:19:23,360
+case sensitive.
+
+389
+00:19:23,360 --> 00:19:27,490
+So I'm going to lower their
+ski level, all lower case.
+
+390
+00:19:27,490 --> 00:19:34,230
+And then I'm going to
+say, if the user ski level
+
+391
+00:19:34,230 --> 00:19:37,860
+is one of these three,
+then they can go ahead,
+
+392
+00:19:37,860 --> 00:19:42,308
+and I can update their
+record based on that.
+
+393
+00:19:42,308 --> 00:19:43,350
+Sorry, one of these four.
+
+394
+00:19:43,350 --> 00:19:46,840
+So I'm going to say
+if user ski level.
+
+395
+00:19:46,840 --> 00:19:50,430
+And then I can
+use this handy in,
+
+396
+00:19:50,430 --> 00:19:57,140
+a keyword that says if user
+ski level in intermediate,
+
+397
+00:19:57,140 --> 00:20:11,980
+in beginner,
+advanced, or expert.
+
+398
+00:20:11,980 --> 00:20:16,550
+If your user ski level is
+in one of these values,
+
+399
+00:20:16,550 --> 00:20:21,170
+so very similar to
+what we've done in SQL,
+
+400
+00:20:21,170 --> 00:20:28,360
+then I want to print, thank you
+for entering a valid ski level.
+
+401
+00:20:28,360 --> 00:20:30,040
+Then what I'm actually
+going to do here
+
+402
+00:20:30,040 --> 00:20:33,640
+is I'm going to place
+the update query
+
+403
+00:20:33,640 --> 00:20:37,450
+to update their ski level here.
+
+404
+00:20:37,450 --> 00:20:39,850
+But I'm not going to
+do that for right now.
+
+405
+00:20:39,850 --> 00:20:45,147
+But then I'll also commit
+changes to the database.
+
+406
+00:20:45,147 --> 00:20:47,230
+Right now I'm just going
+to make these as comments
+
+407
+00:20:47,230 --> 00:20:50,200
+and make sure that my logic is
+working before I start making
+
+408
+00:20:50,200 --> 00:20:52,900
+all these query updates, OK?
+
+409
+00:20:52,900 --> 00:21:01,490
+Else, if they did not enter
+one of the valid ski levels,
+
+410
+00:21:01,490 --> 00:21:10,400
+then output this, which is
+print invalid ski level.
+
+411
+00:21:10,400 --> 00:21:12,420
+Please try again.
+
+412
+00:21:12,420 --> 00:21:13,070
+OK.
+
+413
+00:21:13,070 --> 00:21:15,930
+So here in my what is
+your current ski level?
+
+414
+00:21:15,930 --> 00:21:26,240
+I actually might put the options
+of beginner, intermediate,
+
+415
+00:21:26,240 --> 00:21:30,500
+advanced, and expert.
+
+416
+00:21:30,500 --> 00:21:33,860
+So I may just give them that
+kind of push, if you will.
+
+417
+00:21:33,860 --> 00:21:38,330
+So let's go ahead
+and run this now.
+
+418
+00:21:38,330 --> 00:21:39,512
+So what is your employee ID?
+
+419
+00:21:39,512 --> 00:21:40,470
+I know this is working.
+
+420
+00:21:40,470 --> 00:21:41,760
+So I'm going to say 123.
+
+421
+00:21:41,760 --> 00:21:43,610
+Thank you for entering
+your employee ID.
+
+422
+00:21:43,610 --> 00:21:46,430
+Now let's say that I enter
+something that's totally
+
+423
+00:21:46,430 --> 00:21:50,460
+not part of my if statement.
+
+424
+00:21:50,460 --> 00:21:52,850
+It's not in this set of values.
+
+425
+00:21:52,850 --> 00:21:54,480
+So I'm going to go
+ahead and run this.
+
+426
+00:21:54,480 --> 00:21:55,890
+It says invalid ski level.
+
+427
+00:21:55,890 --> 00:21:56,750
+Please try again.
+
+428
+00:21:56,750 --> 00:21:57,420
+OK, perfect.
+
+429
+00:21:57,420 --> 00:22:01,260
+Now let's run one that is
+in this list of values.
+
+430
+00:22:01,260 --> 00:22:03,620
+So I'm using this as a
+conditional statement.
+
+431
+00:22:03,620 --> 00:22:06,710
+If user ski levels in one
+of these four values, then
+
+432
+00:22:06,710 --> 00:22:11,520
+print, thanks for entering a
+ski level, a valid ski level.
+
+433
+00:22:11,520 --> 00:22:13,080
+So let's say advanced.
+
+434
+00:22:13,080 --> 00:22:14,280
+I'm going to hit enter.
+
+435
+00:22:14,280 --> 00:22:16,980
+It says thank you for
+entering a valid ski level.
+
+436
+00:22:16,980 --> 00:22:18,250
+OK, perfect.
+
+437
+00:22:18,250 --> 00:22:21,620
+So this is working
+like we want it to.
+
+438
+00:22:21,620 --> 00:22:24,170
+But now here, instead
+of saying thank you
+
+439
+00:22:24,170 --> 00:22:27,650
+for entering a valid
+ski level, I actually
+
+440
+00:22:27,650 --> 00:22:32,450
+want to place the update
+query that we're going
+
+441
+00:22:32,450 --> 00:22:33,780
+to run to make these changes.
+
+442
+00:22:33,780 --> 00:22:39,210
+So I'll say
+cursor.execute f string.
+
+443
+00:22:39,210 --> 00:22:40,257
+No, stop that.
+
+444
+00:22:40,257 --> 00:22:41,590
+I don't want to run the program.
+
+445
+00:22:41,590 --> 00:22:44,400
+OK, f string.
+
+446
+00:22:44,400 --> 00:22:47,790
+I want to update
+the employee table.
+
+447
+00:22:47,790 --> 00:22:52,410
+Set ski level equal to,
+and I must contain this
+
+448
+00:22:52,410 --> 00:22:55,110
+within single quotes,
+just like we did when
+
+449
+00:22:55,110 --> 00:22:56,620
+we were writing SQL queries.
+
+450
+00:22:56,620 --> 00:22:58,500
+We talked a lot about this.
+
+451
+00:22:58,500 --> 00:23:03,420
+But I need to put user ski
+level in those single quotes
+
+452
+00:23:03,420 --> 00:23:04,920
+within the square brackets.
+
+453
+00:23:04,920 --> 00:23:08,910
+Because this query is
+going to be taken directly
+
+454
+00:23:08,910 --> 00:23:14,500
+from this program and
+ran against the database.
+
+455
+00:23:14,500 --> 00:23:22,220
+And then I'll say where
+RecID equal to the user ID
+
+456
+00:23:22,220 --> 00:23:23,500
+that they entered.
+
+457
+00:23:23,500 --> 00:23:24,030
+OK.
+
+458
+00:23:24,030 --> 00:23:26,900
+So I am changing the ski
+level to be whatever they
+
+459
+00:23:26,900 --> 00:23:28,560
+entered their ski level to be.
+
+460
+00:23:28,560 --> 00:23:32,120
+And then the record
+ID is a value
+
+461
+00:23:32,120 --> 00:23:36,330
+of user idea which they entered,
+which is their employee ID.
+
+462
+00:23:36,330 --> 00:23:39,950
+So I'm only updating
+the record where
+
+463
+00:23:39,950 --> 00:23:42,320
+the user is equal
+to whatever they've
+
+464
+00:23:42,320 --> 00:23:44,690
+entered as their employee ID.
+
+465
+00:23:44,690 --> 00:23:49,500
+Then I'm going to make sure
+that I say conn.commit.
+
+466
+00:23:49,500 --> 00:23:52,260
+Sometimes, if you do
+not have conn.commit,
+
+467
+00:23:52,260 --> 00:23:53,960
+that database is locked.
+
+468
+00:23:53,960 --> 00:23:54,795
+Issue will pop up.
+
+469
+00:23:54,795 --> 00:23:56,503
+So make sure that you
+commit the changes.
+
+470
+00:24:01,730 --> 00:24:02,330
+All right.
+
+471
+00:24:02,330 --> 00:24:04,520
+Perfect.
+
+472
+00:24:04,520 --> 00:24:07,920
+Now, once we've
+done all of that,
+
+473
+00:24:07,920 --> 00:24:13,850
+then I can say, let's
+go ahead and run this.
+
+474
+00:24:13,850 --> 00:24:15,040
+Make sure it works.
+
+475
+00:24:15,040 --> 00:24:17,420
+So what is your employee ID?
+
+476
+00:24:17,420 --> 00:24:27,170
+I say let's use our friend
+Penny up here as our test case.
+
+477
+00:24:27,170 --> 00:24:29,810
+So I'm going to say,
+what is your employee ID?
+
+478
+00:24:29,810 --> 00:24:30,700
+I'll hit enter.
+
+479
+00:24:30,700 --> 00:24:32,750
+Thank you for entering
+your employee ID.
+
+480
+00:24:32,750 --> 00:24:34,560
+What is your
+current skill level?
+
+481
+00:24:34,560 --> 00:24:36,510
+And I'll say beginner
+and hit enter.
+
+482
+00:24:36,510 --> 00:24:37,860
+And now my program ends, right?
+
+483
+00:24:37,860 --> 00:24:39,690
+I think it updated
+in the database,
+
+484
+00:24:39,690 --> 00:24:42,810
+but now I need to prove that
+it updated in the database.
+
+485
+00:24:42,810 --> 00:24:46,100
+So I'll say cursor.execute.
+
+486
+00:24:46,100 --> 00:24:50,182
+And let's come up here and grab.
+
+487
+00:24:50,182 --> 00:24:51,390
+Actually, we'll try it again.
+
+488
+00:24:51,390 --> 00:24:56,340
+We'll say select
+RecID, first name.
+
+489
+00:24:56,340 --> 00:25:03,330
+Employee first name,
+employee last name.
+
+490
+00:25:03,330 --> 00:25:18,650
+Ski level from employee
+where RecID equal to user ID.
+
+491
+00:25:18,650 --> 00:25:19,400
+OK.
+
+492
+00:25:19,400 --> 00:25:20,560
+Awesome.
+
+493
+00:25:20,560 --> 00:25:21,610
+Perfect.
+
+494
+00:25:21,610 --> 00:25:28,430
+Now once I've done this, then
+we can say, output results.
+
+495
+00:25:28,430 --> 00:25:31,540
+And I need to grab all
+the data returned to me.
+
+496
+00:25:31,540 --> 00:25:34,940
+I'll say cursor.fetchall.
+
+497
+00:25:34,940 --> 00:25:38,540
+And we'll say for
+y in outputresults.
+
+498
+00:25:38,540 --> 00:25:45,590
+Or Print y for now.
+
+499
+00:25:45,590 --> 00:25:48,620
+So now let's go
+ahead and run this.
+
+500
+00:25:48,620 --> 00:25:50,190
+What is your employee ID?
+
+501
+00:25:50,190 --> 00:25:54,020
+Let's just paste in
+that 12389 of pennies.
+
+502
+00:25:54,020 --> 00:25:56,550
+Thank you for entering
+your employee ID 12389.
+
+503
+00:25:56,550 --> 00:25:58,700
+What is your
+current skill level?
+
+504
+00:25:58,700 --> 00:26:00,990
+Let's say advanced.
+
+505
+00:26:00,990 --> 00:26:02,390
+So we're going to
+change pennies,
+
+506
+00:26:02,390 --> 00:26:04,130
+scale back to be advanced.
+
+507
+00:26:04,130 --> 00:26:05,600
+And what row?
+
+508
+00:26:05,600 --> 00:26:07,920
+Unrecognized token.
+
+509
+00:26:07,920 --> 00:26:09,320
+OK.
+
+510
+00:26:09,320 --> 00:26:14,450
+Up here, make sure that we are
+using an f string in my select.
+
+511
+00:26:14,450 --> 00:26:15,570
+My apologies.
+
+512
+00:26:15,570 --> 00:26:20,550
+It was like, that's not actually
+a thing unless f strings exist.
+
+513
+00:26:20,550 --> 00:26:21,120
+All right.
+
+514
+00:26:21,120 --> 00:26:23,870
+So now we'll run 12389.
+
+515
+00:26:23,870 --> 00:26:27,140
+We'll change pennies
+to be advanced.
+
+516
+00:26:27,140 --> 00:26:28,080
+I'll hit enter.
+
+517
+00:26:28,080 --> 00:26:33,780
+And now we see that pennies
+ski level is too advanced.
+
+518
+00:26:33,780 --> 00:26:37,160
+Let's run it one more time
+and make sure it is changing.
+
+519
+00:26:37,160 --> 00:26:40,440
+We'll say beginner,
+and I'll hit enter.
+
+520
+00:26:40,440 --> 00:26:43,590
+And now we see that Penny
+Peters is now a beginner skier.
+
+521
+00:26:43,590 --> 00:26:45,900
+Everything is output to
+me in the same order.
+
+522
+00:26:45,900 --> 00:26:48,830
+We request it here in
+my select statement.
+
+523
+00:26:48,830 --> 00:26:51,860
+So the RecID, first name, last
+name, and then that ski level
+
+524
+00:26:51,860 --> 00:26:53,000
+is beginner.
+
+525
+00:26:53,000 --> 00:26:54,000
+OK, perfect.
+
+526
+00:26:54,000 --> 00:26:56,930
+Now up here though, we
+need to enter a while loop
+
+527
+00:26:56,930 --> 00:27:00,320
+to make sure that we keep
+asking right until they
+
+528
+00:27:00,320 --> 00:27:02,010
+enter a valid ski level.
+
+529
+00:27:02,010 --> 00:27:05,330
+So I'll say, while true, we can
+also use a marker variable here
+
+530
+00:27:05,330 --> 00:27:06,360
+if we wanted.
+
+531
+00:27:06,360 --> 00:27:11,720
+But I want to run this
+part of the program
+
+532
+00:27:11,720 --> 00:27:17,900
+over and over again until we
+break once we have updated
+
+533
+00:27:17,900 --> 00:27:21,200
+the employee table,
+committed the changes,
+
+534
+00:27:21,200 --> 00:27:22,490
+and then we break out of it.
+
+535
+00:27:22,490 --> 00:27:25,720
+So let's go ahead
+and run this again.
+
+536
+00:27:25,720 --> 00:27:27,620
+12389.
+
+537
+00:27:27,620 --> 00:27:29,570
+Thank you for answering
+your employee ID.
+
+538
+00:27:29,570 --> 00:27:31,100
+What is your
+current skill level?
+
+539
+00:27:31,100 --> 00:27:32,590
+We'll say beginner.
+
+540
+00:27:32,590 --> 00:27:34,010
+And I'll hit enter.
+
+541
+00:27:34,010 --> 00:27:37,370
+Now we'll see here that Penny
+Peters is now a beginner.
+
+542
+00:27:37,370 --> 00:27:39,470
+Let's try it one more time.
+
+543
+00:27:39,470 --> 00:27:40,700
+12389.
+
+544
+00:27:40,700 --> 00:27:43,330
+This time, let's say
+advanced, or let's
+
+545
+00:27:43,330 --> 00:27:46,180
+say a bunch of
+random shenanigans.
+
+546
+00:27:46,180 --> 00:27:47,930
+And it says,
+invalid skill level.
+
+547
+00:27:47,930 --> 00:27:49,060
+Please try again.
+
+548
+00:27:49,060 --> 00:27:50,420
+Let's do one more time.
+
+549
+00:27:50,420 --> 00:27:51,440
+Invalid skill level.
+
+550
+00:27:51,440 --> 00:27:52,460
+Please try again.
+
+551
+00:27:52,460 --> 00:27:54,350
+Now let's make sure
+it's not case sensitive.
+
+552
+00:27:54,350 --> 00:27:56,600
+I'm going to say
+capital A expert.
+
+553
+00:27:56,600 --> 00:27:58,090
+I run it.
+
+554
+00:27:58,090 --> 00:28:01,660
+And it still runs for me
+because it lowered expert
+
+555
+00:28:01,660 --> 00:28:08,800
+to be all lowercase, which is
+what I had here in my options,
+
+556
+00:28:08,800 --> 00:28:12,550
+in my list of values
+that it could be, OK?
+
+557
+00:28:12,550 --> 00:28:13,070
+All right.
+
+558
+00:28:13,070 --> 00:28:13,870
+Perfect.
+
+559
+00:28:13,870 --> 00:28:18,200
+Now I need to output to
+them as denoted above.
+
+560
+00:28:18,200 --> 00:28:19,910
+Thank you, first name.
+
+561
+00:28:19,910 --> 00:28:21,860
+Your ski level is now ski level.
+
+562
+00:28:21,860 --> 00:28:22,400
+OK.
+
+563
+00:28:22,400 --> 00:28:24,920
+So I know based upon
+what's outputting to me,
+
+564
+00:28:24,920 --> 00:28:28,520
+that first name has the first
+index value in this tuple.
+
+565
+00:28:28,520 --> 00:28:32,270
+So I'll say print f strings.
+
+566
+00:28:32,270 --> 00:28:34,090
+Thank you.
+
+567
+00:28:34,090 --> 00:28:40,630
+And use the 0 or the one
+index value of Penny.
+
+568
+00:28:40,630 --> 00:28:42,290
+Thank you, Penny.
+
+569
+00:28:42,290 --> 00:28:45,320
+Your new ski level is.
+
+570
+00:28:45,320 --> 00:28:49,513
+And then I will use the third
+index position here of expert.
+
+571
+00:28:58,730 --> 00:28:59,760
+OK, perfect.
+
+572
+00:28:59,760 --> 00:29:02,950
+Now I run this.
+
+573
+00:29:02,950 --> 00:29:04,750
+What is your employee ID?
+
+574
+00:29:04,750 --> 00:29:05,590
+I paste it in.
+
+575
+00:29:05,590 --> 00:29:07,010
+12389.
+
+576
+00:29:07,010 --> 00:29:09,890
+Thank you for entering
+your employee ID 12389.
+
+577
+00:29:09,890 --> 00:29:13,870
+Let's make sure
+that we say Penny
+
+578
+00:29:13,870 --> 00:29:17,822
+is going to be an intermediate
+now, and we'll hit enter.
+
+579
+00:29:17,822 --> 00:29:18,530
+Thank you, Penny.
+
+580
+00:29:18,530 --> 00:29:20,690
+Your new skill
+level is advanced.
+
+581
+00:29:20,690 --> 00:29:21,280
+Oh, That's.
+
+582
+00:29:21,280 --> 00:29:22,095
+Not what we want.
+
+583
+00:29:24,780 --> 00:29:26,633
+Let us see here.
+
+584
+00:29:35,770 --> 00:29:37,360
+Want to watch that
+one more time.
+
+585
+00:29:37,360 --> 00:29:38,780
+Something went awry there.
+
+586
+00:29:38,780 --> 00:29:39,280
+All right.
+
+587
+00:29:39,280 --> 00:29:41,460
+Let's look at 12389.
+
+588
+00:29:41,460 --> 00:29:43,180
+We're looking at
+Penny's information.
+
+589
+00:29:43,180 --> 00:29:44,560
+What is your
+current skill level?
+
+590
+00:29:44,560 --> 00:29:46,246
+We want to change
+it to intermediate.
+
+591
+00:29:50,250 --> 00:29:51,770
+OK.
+
+592
+00:29:51,770 --> 00:29:53,270
+Oh, jeez.
+
+593
+00:29:53,270 --> 00:29:59,090
+I use your current ski level is
+x3, which is actually stored up
+
+594
+00:29:59,090 --> 00:30:03,260
+here in this program, right?
+
+595
+00:30:03,260 --> 00:30:06,260
+The x is the output returning.
+
+596
+00:30:06,260 --> 00:30:08,690
+X is the tuple of--
+
+597
+00:30:08,690 --> 00:30:10,890
+Penny's tuple right
+here outputting to me.
+
+598
+00:30:10,890 --> 00:30:14,580
+And the third index
+position of x is advanced.
+
+599
+00:30:14,580 --> 00:30:16,557
+So I need to change
+this to be y.
+
+600
+00:30:16,557 --> 00:30:17,640
+So now let's try it again.
+
+601
+00:30:17,640 --> 00:30:19,730
+I'm like, this was working.
+
+602
+00:30:19,730 --> 00:30:24,560
+12389.
+
+603
+00:30:24,560 --> 00:30:27,200
+Let's change it now
+to intermediate.
+
+604
+00:30:27,200 --> 00:30:28,112
+Now I run it.
+
+605
+00:30:28,112 --> 00:30:28,820
+Thank you, Penny.
+
+606
+00:30:28,820 --> 00:30:31,250
+Your new ski level
+is intermediate.
+
+607
+00:30:31,250 --> 00:30:31,770
+OK.
+
+608
+00:30:31,770 --> 00:30:33,728
+Let's try all one
+more time here.
+
+609
+00:30:33,728 --> 00:30:34,770
+What is your employee ID?
+
+610
+00:30:34,770 --> 00:30:37,260
+I'm going to hit enter,
+like I'm using a blank.
+
+611
+00:30:37,260 --> 00:30:38,617
+Nothing entered.
+
+612
+00:30:38,617 --> 00:30:39,950
+You must enter your employee ID.
+
+613
+00:30:39,950 --> 00:30:43,320
+So it's validating that
+the entry is not blank.
+
+614
+00:30:43,320 --> 00:30:46,470
+Then I'm going to enter
+some string values.
+
+615
+00:30:46,470 --> 00:30:48,740
+Well, actually, let
+me put like 7 here.
+
+616
+00:30:48,740 --> 00:30:51,070
+And it says must
+enter an integer.
+
+617
+00:30:51,070 --> 00:30:53,340
+Now I actually enter an integer.
+
+618
+00:30:53,340 --> 00:30:55,900
+Then here, what is
+your current ski level?
+
+619
+00:30:55,900 --> 00:30:59,380
+If I just hit enter here,
+it says invalid ski level.
+
+620
+00:30:59,380 --> 00:31:01,450
+I must enter at least something.
+
+621
+00:31:01,450 --> 00:31:05,220
+So if I say super
+beginner and I hit enter,
+
+622
+00:31:05,220 --> 00:31:06,610
+it says invalid ski level.
+
+623
+00:31:06,610 --> 00:31:07,630
+Please try again.
+
+624
+00:31:07,630 --> 00:31:08,830
+Now if I say, you know what?
+
+625
+00:31:08,830 --> 00:31:10,247
+We're going to end
+up that Penny's
+
+626
+00:31:10,247 --> 00:31:13,680
+going to be advanced, just
+like as we were instructed
+
+627
+00:31:13,680 --> 00:31:14,920
+on the first one.
+
+628
+00:31:14,920 --> 00:31:16,510
+Then we see here,
+thank you, Penny.
+
+629
+00:31:16,510 --> 00:31:18,600
+Your new ski level is advanced.
+
+630
+00:31:18,600 --> 00:31:23,520
+So that's what we have for
+this in class assignment today.
+
+631
+00:31:23,520 --> 00:31:25,590
+Two awesome programs
+that utilize
+
+632
+00:31:25,590 --> 00:31:28,390
+a ton of what we've done
+thus far in the class.
+
+633
+00:31:28,390 --> 00:31:30,990
+And I hope this has been
+really helpful for you
+
+634
+00:31:30,990 --> 00:31:32,670
+as we've worked through this.
+
+635
+00:31:32,670 --> 00:31:35,050
+Thanks for being an awesome
+class and for your hard work.
+
+636
+00:31:35,050 --> 00:31:36,710
+Take care.

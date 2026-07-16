@@ -1,0 +1,2581 @@
+1
+00:00:01,070 --> 00:00:02,850
+INSTRUCTOR: Hi,
+Data 2100 students.
+
+2
+00:00:02,850 --> 00:00:05,390
+We're going to jump into our
+in-class assignment called
+
+3
+00:00:05,390 --> 00:00:06,990
+Python Basics today.
+
+4
+00:00:06,990 --> 00:00:09,530
+Now, if you have not already
+watched the prior videos
+
+5
+00:00:09,530 --> 00:00:11,460
+regarding our
+introduction to Python,
+
+6
+00:00:11,460 --> 00:00:12,860
+please make sure that you have.
+
+7
+00:00:12,860 --> 00:00:15,750
+In this in-class assignment, I
+want you to try it on your own,
+
+8
+00:00:15,750 --> 00:00:17,840
+and then we're going to
+come together and work
+
+9
+00:00:17,840 --> 00:00:19,250
+on it together.
+
+10
+00:00:19,250 --> 00:00:21,620
+So if you've yet
+to try to attempt
+
+11
+00:00:21,620 --> 00:00:24,210
+to complete this on your
+own, please pause the video,
+
+12
+00:00:24,210 --> 00:00:26,550
+go and complete it,
+and then come back.
+
+13
+00:00:26,550 --> 00:00:31,820
+All right, so if you click
+on the link in the assignment
+
+14
+00:00:31,820 --> 00:00:34,140
+itself, on that
+Python Basics link,
+
+15
+00:00:34,140 --> 00:00:37,010
+it will take you to this Jupyter
+Notebook file hosted here
+
+16
+00:00:37,010 --> 00:00:38,340
+in Google Colab.
+
+17
+00:00:38,340 --> 00:00:41,330
+So Google Colab is our
+Python integrated development
+
+18
+00:00:41,330 --> 00:00:43,260
+environment that we
+have talked about.
+
+19
+00:00:43,260 --> 00:00:46,100
+This is where we're going
+to code, debug, deploy
+
+20
+00:00:46,100 --> 00:00:48,530
+our Python code.
+
+21
+00:00:48,530 --> 00:00:51,415
+You will notice that once
+you click on that link,
+
+22
+00:00:51,415 --> 00:00:53,790
+if you're already signed
+in to your Gmail account,
+
+23
+00:00:53,790 --> 00:00:56,870
+then you can just
+press Copy to Drive.
+
+24
+00:00:56,870 --> 00:00:58,320
+I have not yet signed in.
+
+25
+00:00:58,320 --> 00:01:00,396
+So I'm going to go ahead
+and do that with you.
+
+26
+00:01:03,060 --> 00:01:05,980
+So we'll see, make sure
+that that works just fine.
+
+27
+00:01:05,980 --> 00:01:06,790
+OK, perfect.
+
+28
+00:01:06,790 --> 00:01:08,410
+So then we'll press Continue.
+
+29
+00:01:08,410 --> 00:01:12,340
+So then once I'm signed in, I'm
+going to click on Copy to Drive.
+
+30
+00:01:12,340 --> 00:01:15,900
+This is going to make a copy
+of this in-class assignment
+
+31
+00:01:15,900 --> 00:01:19,660
+in your own Google Drive folder.
+
+32
+00:01:19,660 --> 00:01:23,520
+And it will autoassign it to
+a folder called Google Colabs.
+
+33
+00:01:23,520 --> 00:01:29,920
+So now instead of saying,
+Copy of ICA:Python Basics,
+
+34
+00:01:29,920 --> 00:01:33,610
+I'm going to say
+Siggard_ICA:Python Basics.
+
+35
+00:01:33,610 --> 00:01:37,500
+So I've asked you,
+again, to rename all
+
+36
+00:01:37,500 --> 00:01:40,500
+of your Jupyter Notebook files.
+
+37
+00:01:40,500 --> 00:01:43,000
+You're going to say,
+"Siggard" or your last name.
+
+38
+00:01:43,000 --> 00:01:48,676
+So do your last
+name_ICA:Python Basics, OK?
+
+39
+00:01:48,676 --> 00:01:51,990
+All right, so now,
+in this assignment,
+
+40
+00:01:51,990 --> 00:01:53,860
+we're going to do
+some basic Python.
+
+41
+00:01:53,860 --> 00:01:56,850
+You are going to submit
+two files for all
+
+42
+00:01:56,850 --> 00:01:58,600
+of our Python assignments.
+
+43
+00:01:58,600 --> 00:02:02,750
+You're going to submit a
+PDF version of the file
+
+44
+00:02:02,750 --> 00:02:05,060
+as well as a Jupyter
+Notebook file.
+
+45
+00:02:05,060 --> 00:02:07,030
+Basically, Jupyter
+Notebooks allow us
+
+46
+00:02:07,030 --> 00:02:10,090
+to-- so if you see here,
+this is all textual data
+
+47
+00:02:10,090 --> 00:02:12,860
+or textual instructions.
+
+48
+00:02:12,860 --> 00:02:15,350
+Then I give you Program
+1's instructions.
+
+49
+00:02:15,350 --> 00:02:17,060
+And then I give
+you a code block.
+
+50
+00:02:17,060 --> 00:02:19,660
+This is where we will
+write our Python code
+
+51
+00:02:19,660 --> 00:02:21,560
+to complete Program number 1.
+
+52
+00:02:21,560 --> 00:02:24,250
+So this will hopefully
+work out very well
+
+53
+00:02:24,250 --> 00:02:27,950
+for our Python
+assignments this semester.
+
+54
+00:02:27,950 --> 00:02:32,298
+All right, so I want you
+to create four programs.
+
+55
+00:02:32,298 --> 00:02:34,340
+And we're going to go
+ahead and do this together.
+
+56
+00:02:34,340 --> 00:02:36,550
+So we are going to create
+a program by following the
+
+57
+00:02:36,550 --> 00:02:38,000
+below instructions.
+
+58
+00:02:38,000 --> 00:02:40,850
+"Assign the variable
+x a value of 20.22.
+
+59
+00:02:40,850 --> 00:02:42,472
+Do not create any
+other variables."
+
+60
+00:02:42,472 --> 00:02:44,180
+All right, so let's
+go ahead and do that.
+
+61
+00:02:44,180 --> 00:02:46,263
+So I'm going to delete out
+that "write that code."
+
+62
+00:02:46,263 --> 00:02:51,730
+# And I'm going to say,
+all right, #declaring x.
+
+63
+00:02:51,730 --> 00:02:54,740
+I'm going to make good
+use of comments here.
+
+64
+00:02:54,740 --> 00:03:00,440
+And I'll say, all
+right, x = 20.22.
+
+65
+00:03:00,440 --> 00:03:05,610
+Then I will use the variable
+to print out x = to 20.22.
+
+66
+00:03:05,610 --> 00:03:08,520
+And then the square
+root of x is blank.
+
+67
+00:03:08,520 --> 00:03:10,440
+All right, so let's
+go ahead and do this.
+
+68
+00:03:10,440 --> 00:03:14,250
+So I'm going to say, print.
+
+69
+00:03:14,250 --> 00:03:17,580
+We're going to use the f strings
+that we've been learning about.
+
+70
+00:03:17,580 --> 00:03:21,060
+And I want to print
+"X is equal to."
+
+71
+00:03:21,060 --> 00:03:23,670
+And I want to use
+that variable x.
+
+72
+00:03:23,670 --> 00:03:26,850
+So I'm going to use my
+brackets, my square brackets.
+
+73
+00:03:26,850 --> 00:03:28,920
+You'll have to press Shift.
+
+74
+00:03:28,920 --> 00:03:33,780
+And then the square brackets
+are generally the default.
+
+75
+00:03:33,780 --> 00:03:36,090
+But we actually want
+the curly brackets.
+
+76
+00:03:36,090 --> 00:03:38,160
+So we're going to
+say, "X is equal to."
+
+77
+00:03:38,160 --> 00:03:41,280
+And then I want to place
+the variable x there,
+
+78
+00:03:41,280 --> 00:03:43,940
+which means that when
+this code is run,
+
+79
+00:03:43,940 --> 00:03:47,660
+it will place the value
+from the variable x
+
+80
+00:03:47,660 --> 00:03:51,720
+exactly where we have this here.
+
+81
+00:03:51,720 --> 00:03:56,310
+Then I'll say, The
+square root of x is.
+
+82
+00:03:56,310 --> 00:03:59,177
+And then I want to
+do some arithmetic.
+
+83
+00:03:59,177 --> 00:04:00,510
+So I want to say, you know what?
+
+84
+00:04:00,510 --> 00:04:02,230
+Let's have x.
+
+85
+00:04:02,230 --> 00:04:05,950
+And I want to "square
+root of x is."
+
+86
+00:04:05,950 --> 00:04:07,490
+And I'll do some arithmetic.
+
+87
+00:04:07,490 --> 00:04:09,980
+And I'm going to say, x** 0.5.
+
+88
+00:04:09,980 --> 00:04:14,900
+What this means is take the
+value from the variable x,
+
+89
+00:04:14,900 --> 00:04:17,959
+raise it to the 1/2
+power, if you will,
+
+90
+00:04:17,959 --> 00:04:22,370
+which is the same thing as
+taking the square root of x.
+
+91
+00:04:22,370 --> 00:04:24,480
+So let's just run this
+and see how this works.
+
+92
+00:04:30,220 --> 00:04:31,760
+It's going to take
+a second here.
+
+93
+00:04:31,760 --> 00:04:33,320
+It's initializing.
+
+94
+00:04:33,320 --> 00:04:34,000
+Perfect.
+
+95
+00:04:34,000 --> 00:04:39,440
+So now we'll say, X
+is equal to 20.22.
+
+96
+00:04:39,440 --> 00:04:41,000
+The square root of x is blank.
+
+97
+00:04:41,000 --> 00:04:43,340
+So I can use variables here.
+
+98
+00:04:43,340 --> 00:04:46,060
+And I can also manipulate
+those variables a little bit
+
+99
+00:04:46,060 --> 00:04:48,350
+inside of those curly brackets.
+
+100
+00:04:48,350 --> 00:04:50,140
+OK, perfect.
+
+101
+00:04:50,140 --> 00:04:53,170
+Now, the next thing that I
+want to do is I want to say,
+
+102
+00:04:53,170 --> 00:04:57,770
+20.22 + 20.22 is equal to blank.
+
+103
+00:04:57,770 --> 00:05:02,600
+And, I again, just want
+to use the x variable
+
+104
+00:05:02,600 --> 00:05:05,450
+to help me do this.
+
+105
+00:05:05,450 --> 00:05:08,780
+So I'll go ahead and
+say, print, again,
+
+106
+00:05:08,780 --> 00:05:14,210
+using my f strings that are
+very concise and readable.
+
+107
+00:05:14,210 --> 00:05:17,600
+And I want to grab the
+value from the variable x
+
+108
+00:05:17,600 --> 00:05:18,870
+to place here.
+
+109
+00:05:18,870 --> 00:05:27,750
+So I'll say, x + x is equal to.
+
+110
+00:05:27,750 --> 00:05:32,130
+And then I want to place the
+value that x is equal to.
+
+111
+00:05:32,130 --> 00:05:34,590
+So x + x is equal to.
+
+112
+00:05:34,590 --> 00:05:36,930
+So then I'll say, all right,
+let's do some arithmetic.
+
+113
+00:05:36,930 --> 00:05:40,790
+So I'll say, return
+the value of x + x
+
+114
+00:05:40,790 --> 00:05:43,050
+right here in these
+curly brackets.
+
+115
+00:05:43,050 --> 00:05:45,390
+So, again, x is my variable.
+
+116
+00:05:45,390 --> 00:05:49,160
+I am using these variables
+in my print statements
+
+117
+00:05:49,160 --> 00:05:52,170
+to make sure that I'm only
+referencing that one variable.
+
+118
+00:05:52,170 --> 00:05:54,920
+Then it makes it a lot
+easier as we're just
+
+119
+00:05:54,920 --> 00:05:58,470
+referencing those variables here
+and using these curly brackets.
+
+120
+00:05:58,470 --> 00:06:00,610
+So again, these curly
+brackets are saying,
+
+121
+00:06:00,610 --> 00:06:02,790
+take the value
+from that variable
+
+122
+00:06:02,790 --> 00:06:05,100
+and place it here
+where I'm basically
+
+123
+00:06:05,100 --> 00:06:08,130
+saving a place for it
+using these curly brackets
+
+124
+00:06:08,130 --> 00:06:09,700
+and f strings.
+
+125
+00:06:09,700 --> 00:06:12,930
+All right, so now I'll
+go ahead and press Play.
+
+126
+00:06:12,930 --> 00:06:19,110
+And I have 20.22 +
+20.22 is equal to 40.44,
+
+127
+00:06:19,110 --> 00:06:20,590
+which is perfect.
+
+128
+00:06:20,590 --> 00:06:22,780
+So question number
+1 then is done.
+
+129
+00:06:22,780 --> 00:06:26,610
+And, again, I know my
+program is done running when
+
+130
+00:06:26,610 --> 00:06:31,240
+the Play icon shows back up.
+
+131
+00:06:31,240 --> 00:06:33,250
+And there's that
+green check mark.
+
+132
+00:06:33,250 --> 00:06:34,540
+I know that that's done.
+
+133
+00:06:34,540 --> 00:06:37,390
+I can just press Play here,
+or I can say Shift-Enter.
+
+134
+00:06:37,390 --> 00:06:39,760
+Either way, it will
+run this code block.
+
+135
+00:06:39,760 --> 00:06:41,400
+You'll notice that
+up above, we say
+
+136
+00:06:41,400 --> 00:06:44,140
+that you write the code for
+each of the programs below.
+
+137
+00:06:44,140 --> 00:06:46,950
+After completing the coding,
+run each of your programs
+
+138
+00:06:46,950 --> 00:06:51,030
+by clicking the Play button on
+the left side of each code box.
+
+139
+00:06:51,030 --> 00:06:53,520
+Before submitting, make sure
+the output of each program
+
+140
+00:06:53,520 --> 00:06:55,840
+is viewable beneath
+the code box,
+
+141
+00:06:55,840 --> 00:06:57,430
+basically, that you've ran this.
+
+142
+00:06:57,430 --> 00:06:59,220
+So you'll see here
+that this program
+
+143
+00:06:59,220 --> 00:07:01,580
+output is viewable to us.
+
+144
+00:07:01,580 --> 00:07:03,008
+So we're good to go there.
+
+145
+00:07:03,008 --> 00:07:04,550
+And then I'll show
+you how to submit.
+
+146
+00:07:04,550 --> 00:07:06,618
+So now on question
+number 2, we're
+
+147
+00:07:06,618 --> 00:07:08,410
+going to write a program
+that asks the user
+
+148
+00:07:08,410 --> 00:07:09,503
+to input their last name.
+
+149
+00:07:09,503 --> 00:07:11,170
+So we learned about
+variables this week.
+
+150
+00:07:11,170 --> 00:07:12,740
+We learned about input.
+
+151
+00:07:12,740 --> 00:07:15,340
+So let's go ahead and do that.
+
+152
+00:07:15,340 --> 00:07:17,480
+We also learned about,
+of course, arithmetic.
+
+153
+00:07:17,480 --> 00:07:21,710
+# So I'm going to say,
+#ask for user's name.
+
+154
+00:07:21,710 --> 00:07:24,230
+All right, so let's
+go ahead and do this.
+
+155
+00:07:24,230 --> 00:07:28,000
+I'm going to say,
+user name, also,
+
+156
+00:07:28,000 --> 00:07:34,670
+uname is equal to input
+"What is your name?"
+
+157
+00:07:34,670 --> 00:07:36,590
+So I'm going to ask my user.
+
+158
+00:07:36,590 --> 00:07:41,410
+Now, as a reminder, these angle
+brackets are not necessary.
+
+159
+00:07:41,410 --> 00:07:46,450
+But this command here is
+going to grab whatever
+
+160
+00:07:46,450 --> 00:07:53,750
+my user's input as the input and
+assign it to the variable uname.
+
+161
+00:07:53,750 --> 00:07:56,680
+So the value of
+the variable uname
+
+162
+00:07:56,680 --> 00:08:01,380
+is going to be equal to whatever
+my user inputs to this question.
+
+163
+00:08:01,380 --> 00:08:05,030
+So now I'll run this, and
+I'll say, what is your name?
+
+164
+00:08:05,030 --> 00:08:06,480
+And let's just say, Reagan.
+
+165
+00:08:06,480 --> 00:08:07,790
+Now, I enter that.
+
+166
+00:08:07,790 --> 00:08:10,490
+Nothing else happens because
+I didn't tell my program
+
+167
+00:08:10,490 --> 00:08:12,040
+to output anything.
+
+168
+00:08:12,040 --> 00:08:13,670
+So it's just saying,
+all right, we
+
+169
+00:08:13,670 --> 00:08:16,440
+know that uname is
+now equal to Reagan,
+
+170
+00:08:16,440 --> 00:08:19,670
+but that's all that
+we really know.
+
+171
+00:08:19,670 --> 00:08:21,800
+So once I've asked the
+user to input their name,
+
+172
+00:08:21,800 --> 00:08:25,170
+then I want to-- oh, sorry,
+to the variable username.
+
+173
+00:08:25,170 --> 00:08:27,300
+I did not follow my
+own instructions.
+
+174
+00:08:27,300 --> 00:08:27,930
+Whoa, whoa.
+
+175
+00:08:27,930 --> 00:08:28,580
+Sorry.
+
+176
+00:08:28,580 --> 00:08:29,955
+All right, there
+we go, username.
+
+177
+00:08:29,955 --> 00:08:32,900
+[LAUGHS] OK, there we go.
+
+178
+00:08:32,900 --> 00:08:35,520
+Then print out "Hi, [username].
+
+179
+00:08:35,520 --> 00:08:37,190
+How are you?"
+
+180
+00:08:37,190 --> 00:08:40,320
+using f strings on
+two different lines.
+
+181
+00:08:40,320 --> 00:08:41,940
+Only use one print statement.
+
+182
+00:08:41,940 --> 00:08:45,420
+That should say,
+using an f string.
+
+183
+00:08:45,420 --> 00:08:47,840
+I'll just fix that really quick.
+
+184
+00:08:47,840 --> 00:08:50,130
+Your version will be fixed.
+
+185
+00:08:50,130 --> 00:08:51,300
+So don't worry about that.
+
+186
+00:08:51,300 --> 00:08:54,450
+But as I'm recording,
+this I just noticed that.
+
+187
+00:08:54,450 --> 00:08:56,960
+All right, so let's
+go ahead and do that.
+
+188
+00:08:56,960 --> 00:09:01,900
+I will say, all right,
+print Hi, [username].
+
+189
+00:09:01,900 --> 00:09:04,320
+So we'll say, f shtring "Hi."
+
+190
+00:09:04,320 --> 00:09:08,690
+And then I want to place the
+value from the variable username
+
+191
+00:09:08,690 --> 00:09:09,190
+in here.
+
+192
+00:09:09,190 --> 00:09:10,350
+So I'll use my brackets.
+
+193
+00:09:10,350 --> 00:09:11,413
+I'll say, username.
+
+194
+00:09:11,413 --> 00:09:11,913
+Sweet.
+
+195
+00:09:15,570 --> 00:09:18,030
+Hi, username.
+
+196
+00:09:18,030 --> 00:09:20,340
+Awesome.
+
+197
+00:09:20,340 --> 00:09:22,360
+"How are you?"
+
+198
+00:09:22,360 --> 00:09:24,445
+OK, but it says,
+using an f string
+
+199
+00:09:24,445 --> 00:09:25,570
+and on two different lines.
+
+200
+00:09:25,570 --> 00:09:27,640
+Let's just run this.
+
+201
+00:09:27,640 --> 00:09:29,740
+We run our programs often.
+
+202
+00:09:29,740 --> 00:09:32,110
+So I'll say, "Reagan,"
+and it says, "Hi, Reagan.
+
+203
+00:09:32,110 --> 00:09:32,710
+How are you?"
+
+204
+00:09:32,710 --> 00:09:33,430
+How cool.
+
+205
+00:09:33,430 --> 00:09:36,240
+We are inputting some
+data into our program,
+
+206
+00:09:36,240 --> 00:09:40,180
+and it is outputting to us
+that same data and using it.
+
+207
+00:09:40,180 --> 00:09:43,120
+But it says here, using an f
+string, which we did, right?
+
+208
+00:09:43,120 --> 00:09:46,720
+Our formatting strings here,
+and on two different lines.
+
+209
+00:09:46,720 --> 00:09:50,970
+So here, I want to create
+using my escape characters
+
+210
+00:09:50,970 --> 00:09:51,970
+that we've talked about.
+
+211
+00:09:51,970 --> 00:09:55,350
+I'm going to use a backslash n.
+
+212
+00:09:55,350 --> 00:09:59,110
+On my keyboard, that backslash
+is up above the Enter.
+
+213
+00:09:59,110 --> 00:10:01,910
+But you're going to have to
+find it on your own keyboard.
+
+214
+00:10:01,910 --> 00:10:03,380
+All right, so now I run this.
+
+215
+00:10:03,380 --> 00:10:06,560
+And we'll say, "Reagan" again.
+
+216
+00:10:06,560 --> 00:10:07,530
+It says, "Hi, Reagan.
+
+217
+00:10:07,530 --> 00:10:08,460
+How are you?"
+
+218
+00:10:08,460 --> 00:10:13,320
+Notice this backslash n says,
+hey, enter a new line, "Hi,
+
+219
+00:10:13,320 --> 00:10:17,280
+Reagan," period, new
+line, "How are you?"
+
+220
+00:10:17,280 --> 00:10:19,520
+That's what this
+backslash n does.
+
+221
+00:10:19,520 --> 00:10:21,420
+These are called
+escape characters.
+
+222
+00:10:21,420 --> 00:10:22,740
+And we can do a new line.
+
+223
+00:10:22,740 --> 00:10:24,630
+We can do a tab, what have you.
+
+224
+00:10:24,630 --> 00:10:28,590
+But this is one way that
+we can format our program.
+
+225
+00:10:28,590 --> 00:10:30,210
+So those are escape characters.
+
+226
+00:10:30,210 --> 00:10:32,330
+They're really
+helpful in formatting
+
+227
+00:10:32,330 --> 00:10:34,310
+our output of our program.
+
+228
+00:10:34,310 --> 00:10:37,820
+All right, now I want to create
+a program by following, again,
+
+229
+00:10:37,820 --> 00:10:39,950
+the instructions.
+
+230
+00:10:39,950 --> 00:10:43,290
+And I want to ask the user to
+input their favorite number.
+
+231
+00:10:43,290 --> 00:10:44,782
+All right, so let's see here.
+
+232
+00:10:44,782 --> 00:10:47,240
+You're going to see that these
+programs are going to become
+
+233
+00:10:47,240 --> 00:10:48,630
+a little bit more advanced.
+
+234
+00:10:48,630 --> 00:10:53,910
+But we're just starting out with
+what we've learned thus far.
+
+235
+00:10:53,910 --> 00:10:56,250
+So some of these programs
+are kind of funny.
+
+236
+00:10:56,250 --> 00:11:00,180
+But I promise that
+we'll be increasing
+
+237
+00:11:00,180 --> 00:11:03,070
+the difficulty and the business
+questions associated with them.
+
+238
+00:11:03,070 --> 00:11:05,050
+But this is just
+great to practice.
+
+239
+00:11:05,050 --> 00:11:11,050
+# All right, so #ask the user
+for their favorite number.
+
+240
+00:11:11,050 --> 00:11:12,940
+That's my first thing
+that I want to do.
+
+241
+00:11:12,940 --> 00:11:15,460
+So I'm going to say,
+all right, favenumber.
+
+242
+00:11:15,460 --> 00:11:17,880
+So I'm declaring the
+variable favenumber.
+
+243
+00:11:17,880 --> 00:11:21,090
+I'm assigning the
+value of that variable
+
+244
+00:11:21,090 --> 00:11:26,443
+to be whatever is returned
+to me by my user's input.
+
+245
+00:11:30,540 --> 00:11:32,800
+Again, angle bracket
+is not necessary.
+
+246
+00:11:32,800 --> 00:11:35,140
+It just helps with
+formatting OK,
+
+247
+00:11:35,140 --> 00:11:36,632
+so let's just make
+sure this runs.
+
+248
+00:11:36,632 --> 00:11:37,840
+What is your favorite number?
+
+249
+00:11:37,840 --> 00:11:38,430
+I say, 6.
+
+250
+00:11:38,430 --> 00:11:39,790
+I hit Enter.
+
+251
+00:11:39,790 --> 00:11:41,800
+All right, that ran just fine.
+
+252
+00:11:41,800 --> 00:11:44,850
+Then what I'm supposed to do is
+assign the value of the input
+
+253
+00:11:44,850 --> 00:11:46,990
+to the variable favenumber,
+which we just did.
+
+254
+00:11:46,990 --> 00:11:50,453
+"If the number is over 10, tell
+the user that their number is
+
+255
+00:11:50,453 --> 00:11:52,870
+incredibly high and to please
+tone it down for next time."
+
+256
+00:11:52,870 --> 00:11:55,050
+All right, so once
+we have declared
+
+257
+00:11:55,050 --> 00:11:57,480
+the variable
+favenumber, whatever
+
+258
+00:11:57,480 --> 00:12:01,000
+the input is going to be
+assigned to that variable fave
+
+259
+00:12:01,000 --> 00:12:03,340
+number as its value.
+
+260
+00:12:03,340 --> 00:12:09,960
+# Now, I want to say, #if the
+number is over 10, do this.
+
+261
+00:12:09,960 --> 00:12:12,590
+So we're going to use
+conditional statements,
+
+262
+00:12:12,590 --> 00:12:15,200
+using if statements
+that we've talked about.
+
+263
+00:12:15,200 --> 00:12:17,120
+So I'll use a
+conditional statement.
+
+264
+00:12:17,120 --> 00:12:24,010
+And I'll say, if the favenumber
+is greater than 10, then
+
+265
+00:12:24,010 --> 00:12:25,250
+what do I want to do?
+
+266
+00:12:25,250 --> 00:12:26,890
+Well, when I hit
+Enter, you'll notice
+
+267
+00:12:26,890 --> 00:12:29,980
+that it'll automatically
+indent beneath
+
+268
+00:12:29,980 --> 00:12:31,820
+that conditional statement.
+
+269
+00:12:31,820 --> 00:12:36,320
+Everything indented and beneath
+this conditional statement,
+
+270
+00:12:36,320 --> 00:12:40,250
+if this is true,
+if that is true,
+
+271
+00:12:40,250 --> 00:12:43,880
+then I will do everything
+indented in beneath it.
+
+272
+00:12:43,880 --> 00:12:49,580
+So if that's true, then I
+want to print to them "Yikes!
+
+273
+00:12:49,580 --> 00:12:55,790
+That is an incredibly
+high number.
+
+274
+00:12:55,790 --> 00:12:59,360
+Please tone it down
+for next time."
+
+275
+00:12:59,360 --> 00:13:01,550
+All right, OK, so
+let's just go ahead
+
+276
+00:13:01,550 --> 00:13:02,880
+and run what we have thus far.
+
+277
+00:13:02,880 --> 00:13:05,842
+So I can say Shift-Enter,
+and it will run.
+
+278
+00:13:05,842 --> 00:13:07,050
+What is your favorite number?
+
+279
+00:13:07,050 --> 00:13:08,730
+We can see my
+program is running.
+
+280
+00:13:08,730 --> 00:13:11,250
+It's waiting for
+us to enter input.
+
+281
+00:13:11,250 --> 00:13:14,460
+So you wait for your program
+to run-- or it's running.
+
+282
+00:13:14,460 --> 00:13:17,100
+Now, I'm going to say,
+7 is my favorite number.
+
+283
+00:13:17,100 --> 00:13:19,910
+Then I hit Enter.
+
+284
+00:13:19,910 --> 00:13:21,590
+Rut-row.
+
+285
+00:13:21,590 --> 00:13:25,100
+It's like, OK, TypeError--
+greater than not supported
+
+286
+00:13:25,100 --> 00:13:27,380
+between instances
+of 'str' and 'int'.
+
+287
+00:13:27,380 --> 00:13:29,600
+OK, let's figure this out.
+
+288
+00:13:29,600 --> 00:13:33,630
+So if you remember back
+in our lecture videos,
+
+289
+00:13:33,630 --> 00:13:37,730
+I told you that input is
+always interpreted as a string.
+
+290
+00:13:37,730 --> 00:13:41,100
+String, think textual
+data, like a name, right?
+
+291
+00:13:41,100 --> 00:13:43,400
+That's going to be
+interpreted as a string.
+
+292
+00:13:43,400 --> 00:13:47,240
+10 is an integer.
+
+293
+00:13:47,240 --> 00:13:49,020
+So 10 is an integer.
+
+294
+00:13:49,020 --> 00:13:53,580
+But favenumber, you can
+see here is a string,
+
+295
+00:13:53,580 --> 00:13:57,110
+because the value from
+the input is assigned
+
+296
+00:13:57,110 --> 00:13:59,360
+to be the favenumber's value.
+
+297
+00:13:59,360 --> 00:14:03,040
+And input is always
+interpreted as a string.
+
+298
+00:14:03,040 --> 00:14:09,280
+So I cannot compare a string and
+an integer, because it's like,
+
+299
+00:14:09,280 --> 00:14:11,560
+well, these are apples
+and oranges, right?
+
+300
+00:14:11,560 --> 00:14:14,400
+So instead, I need to make
+sure I convert favenumber
+
+301
+00:14:14,400 --> 00:14:19,080
+to actually be an integer
+before this if statement runs.
+
+302
+00:14:19,080 --> 00:14:22,260
+So I'll say, favenumber = to
+input "What Is your favorite
+
+303
+00:14:22,260 --> 00:14:22,930
+number?"
+
+304
+00:14:22,930 --> 00:14:27,150
+And before I can do that, I'm
+going to say, you know what?
+
+305
+00:14:27,150 --> 00:14:29,350
+I'm going to ask, what
+is your favorite number?
+
+306
+00:14:29,350 --> 00:14:32,520
+Then after that, I'm
+going to use this integer.
+
+307
+00:14:32,520 --> 00:14:36,780
+It's going to convert, using
+this integer function, whatever
+
+308
+00:14:36,780 --> 00:14:40,090
+they entered as their
+input to be an integer.
+
+309
+00:14:40,090 --> 00:14:44,508
+So now 16 is their
+favorite number.
+
+310
+00:14:44,508 --> 00:14:47,050
+We're going to assume that they
+actually put an integer here.
+
+311
+00:14:47,050 --> 00:14:51,840
+Then I'm going to convert
+that entry into an integer
+
+312
+00:14:51,840 --> 00:14:54,280
+and assign it to favenumber.
+
+313
+00:14:54,280 --> 00:14:58,120
+So input runs here first,
+this inner parenthesis,
+
+314
+00:14:58,120 --> 00:15:00,000
+then the integer value.
+
+315
+00:15:00,000 --> 00:15:02,220
+The integer function works next.
+
+316
+00:15:02,220 --> 00:15:05,040
+So now when I run this, What
+is your favorite number?
+
+317
+00:15:05,040 --> 00:15:06,030
+I'm going to say, 7.
+
+318
+00:15:06,030 --> 00:15:07,760
+Hit Enter.
+
+319
+00:15:07,760 --> 00:15:12,000
+My program is done, and
+nothing returns to me, right?
+
+320
+00:15:12,000 --> 00:15:14,600
+Because this
+condition is not true.
+
+321
+00:15:14,600 --> 00:15:16,470
+My favorite number is
+not greater than 10,
+
+322
+00:15:16,470 --> 00:15:17,940
+so nothing output to me.
+
+323
+00:15:17,940 --> 00:15:19,170
+So let's do it again.
+
+324
+00:15:19,170 --> 00:15:22,070
+And let's say,
+actually, it's 12.
+
+325
+00:15:22,070 --> 00:15:25,080
+Now, I'll hit Enter again,
+and it says, "Yikes!
+
+326
+00:15:25,080 --> 00:15:26,670
+That is an incredibly
+high number.
+
+327
+00:15:26,670 --> 00:15:29,990
+Please tone it down
+for next time."
+
+328
+00:15:29,990 --> 00:15:33,120
+So this conditional
+statement is true.
+
+329
+00:15:33,120 --> 00:15:36,080
+So then this print runs, right?
+
+330
+00:15:36,080 --> 00:15:38,010
+All right, OK, perfect.
+
+331
+00:15:38,010 --> 00:15:39,030
+Now, what I want to do--
+
+332
+00:15:39,030 --> 00:15:40,760
+"Otherwise, tell the user that
+you appreciate them entering
+
+333
+00:15:40,760 --> 00:15:43,580
+their favorite number and return
+their favorite number to them."
+
+334
+00:15:43,580 --> 00:15:46,220
+OK, so let's come down here.
+
+335
+00:15:46,220 --> 00:15:50,720
+I'm going to say,
+else favenumber--
+
+336
+00:15:50,720 --> 00:15:53,600
+oh, sorry. else-- and
+else does not have--
+
+337
+00:15:53,600 --> 00:15:55,080
+I was thinking I
+was doing an elif.
+
+338
+00:15:55,080 --> 00:15:57,500
+Else does not have any
+conditional expression
+
+339
+00:15:57,500 --> 00:15:58,410
+after that.
+
+340
+00:15:58,410 --> 00:16:00,390
+So it's just basically
+saying, else,
+
+341
+00:16:00,390 --> 00:16:03,900
+meaning if the number
+is 10 or less, right?
+
+342
+00:16:03,900 --> 00:16:09,230
+If this is not true,
+then run my else block
+
+343
+00:16:09,230 --> 00:16:11,768
+and we'll print
+out to them print.
+
+344
+00:16:11,768 --> 00:16:13,560
+And we're going to use
+some variables here.
+
+345
+00:16:13,560 --> 00:16:22,100
+So we'll say, print "Thank
+you for sharing your favorite
+
+346
+00:16:22,100 --> 00:16:23,430
+number."
+
+347
+00:16:23,430 --> 00:16:25,580
+And I'm going to place
+their favorite number
+
+348
+00:16:25,580 --> 00:16:29,450
+in here using that favenumber
+variable that they entered.
+
+349
+00:16:29,450 --> 00:16:34,850
+And I'll say, "It
+is a great choice."
+
+350
+00:16:34,850 --> 00:16:37,530
+All right, so we'll go
+ahead and press Play.
+
+351
+00:16:37,530 --> 00:16:39,240
+What is your favorite number?
+
+352
+00:16:39,240 --> 00:16:40,850
+Let's say, 12.
+
+353
+00:16:40,850 --> 00:16:41,760
+I'll hit Enter.
+
+354
+00:16:41,760 --> 00:16:42,260
+"Yikes!
+
+355
+00:16:42,260 --> 00:16:43,650
+That is an incredibly
+high number.
+
+356
+00:16:43,650 --> 00:16:44,910
+Please tone it down
+for next time."
+
+357
+00:16:44,910 --> 00:16:46,020
+I'm going to run it again.
+
+358
+00:16:46,020 --> 00:16:48,120
+You'll notice my program
+is still running.
+
+359
+00:16:48,120 --> 00:16:50,340
+It's waiting for me
+to enter my input.
+
+360
+00:16:50,340 --> 00:16:53,040
+So now I'll say,
+7, and I hit Enter.
+
+361
+00:16:53,040 --> 00:16:55,980
+It says, "Thank you for sharing
+your favorite number, 7.
+
+362
+00:16:55,980 --> 00:16:57,630
+It is a great choice."
+
+363
+00:16:57,630 --> 00:16:58,770
+All right, perfect.
+
+364
+00:16:58,770 --> 00:17:01,670
+So I don't know why I chose
+that-- the number was over 10.
+
+365
+00:17:01,670 --> 00:17:02,540
+I have no idea.
+
+366
+00:17:02,540 --> 00:17:06,330
+But this demonstrates
+the if and the else.
+
+367
+00:17:06,330 --> 00:17:08,200
+All right, awesome.
+
+368
+00:17:08,200 --> 00:17:10,300
+And of course,
+input and how is it
+
+369
+00:17:10,300 --> 00:17:11,690
+always interpreted as a string.
+
+370
+00:17:11,690 --> 00:17:13,523
+So we must convert it
+to be an integer if we
+
+371
+00:17:13,523 --> 00:17:15,200
+want to use it like an integer.
+
+372
+00:17:15,200 --> 00:17:16,270
+All right, finally,
+here, we're going
+
+373
+00:17:16,270 --> 00:17:18,603
+to create a program by following
+the below instructions.
+
+374
+00:17:18,603 --> 00:17:20,750
+"Create a variable
+called mypassword."
+
+375
+00:17:20,750 --> 00:17:23,530
+So down here, I'm going
+to say, all right,
+
+376
+00:17:23,530 --> 00:17:26,680
+#create variable mypassword.
+
+377
+00:17:26,680 --> 00:17:30,020
+I'm going to say,
+mypassword is equal to.
+
+378
+00:17:30,020 --> 00:17:33,100
+And I want to "assign a
+five-letter fake password
+
+379
+00:17:33,100 --> 00:17:33,920
+to this variable."
+
+380
+00:17:33,920 --> 00:17:37,610
+So I'm going to say
+my password = 'happy.'
+
+381
+00:17:40,863 --> 00:17:43,030
+And we'll notice here we
+can use these single quotes
+
+382
+00:17:43,030 --> 00:17:43,990
+or double quotes.
+
+383
+00:17:43,990 --> 00:17:50,170
+I tend to focus more
+on the double quotes.
+
+384
+00:17:50,170 --> 00:17:52,070
+That's just my
+personal preference.
+
+385
+00:17:52,070 --> 00:17:58,360
+All right, so then I'm going
+to say, userguess is equal to--
+
+386
+00:17:58,360 --> 00:18:00,220
+it says up here,
+"to this variable.
+
+387
+00:18:00,220 --> 00:18:02,160
+Ask user to guess your
+five-letter password.
+
+388
+00:18:02,160 --> 00:18:04,810
+If they guess your password
+correctly, output 'Nice job!
+
+389
+00:18:04,810 --> 00:18:06,040
+You guessed my password'.
+
+390
+00:18:06,040 --> 00:18:07,210
+Insert password."
+
+391
+00:18:07,210 --> 00:18:16,590
+So you can say, userguess =
+input "Guess my five-character
+
+392
+00:18:16,590 --> 00:18:18,010
+password."
+
+393
+00:18:18,010 --> 00:18:19,710
+So we're going to
+ask the user to guess
+
+394
+00:18:19,710 --> 00:18:22,620
+my five-character password.
+
+395
+00:18:22,620 --> 00:18:24,725
+So my user is going
+to guess that.
+
+396
+00:18:27,450 --> 00:18:29,770
+It's not going to matter.
+
+397
+00:18:29,770 --> 00:18:34,170
+If it's interpreted as a
+string, that's great actually,
+
+398
+00:18:34,170 --> 00:18:38,270
+because mypassword itself,
+if it is a string, if they
+
+399
+00:18:38,270 --> 00:18:40,270
+guess your password
+correctly, output "Nice job!
+
+400
+00:18:40,270 --> 00:18:41,560
+You guess my password."
+
+401
+00:18:41,560 --> 00:18:43,410
+So I'm going to
+compare, did they
+
+402
+00:18:43,410 --> 00:18:44,800
+guess my password correctly?
+
+403
+00:18:44,800 --> 00:18:46,660
+So I'm going to use
+an if statement.
+
+404
+00:18:46,660 --> 00:18:48,540
+And I'm going to
+say, you know what?
+
+405
+00:18:48,540 --> 00:18:50,880
+And I oftentimes
+will put, especially
+
+406
+00:18:50,880 --> 00:18:52,980
+as we get more complex,
+my conditional statements
+
+407
+00:18:52,980 --> 00:18:54,540
+within parentheses.
+
+408
+00:18:54,540 --> 00:18:59,930
+I'll say, if my
+userguess == mypassword,
+
+409
+00:18:59,930 --> 00:19:04,870
+we must use these double equal
+signs when doing a conditional
+
+410
+00:19:04,870 --> 00:19:06,890
+statement or a comparison here.
+
+411
+00:19:06,890 --> 00:19:09,910
+If not, that's going to think
+I'm trying to assign userguess
+
+412
+00:19:09,910 --> 00:19:10,837
+to mypassword.
+
+413
+00:19:10,837 --> 00:19:12,170
+It just doesn't work quite well.
+
+414
+00:19:12,170 --> 00:19:15,100
+So we need to use those
+double equal sign.
+
+415
+00:19:15,100 --> 00:19:22,210
+# And I'll say, you know what? #if
+the user guesses my password,
+
+416
+00:19:22,210 --> 00:19:25,510
+do this.
+
+417
+00:19:25,510 --> 00:19:30,093
+So then I'm going
+to print "Nice job!
+
+418
+00:19:36,460 --> 00:19:40,820
+You guessed my password."
+
+419
+00:19:40,820 --> 00:19:43,990
+And I'm going to return
+to them my password, which
+
+420
+00:19:43,990 --> 00:19:47,600
+is the value from the
+variable [? mypassword ?].
+
+421
+00:19:47,600 --> 00:19:50,230
+You notice here
+that I forgot to put
+
+422
+00:19:50,230 --> 00:19:53,960
+the f in front of the
+double quotes to tell it.
+
+423
+00:19:53,960 --> 00:19:56,590
+I'm using a formatting string.
+
+424
+00:19:56,590 --> 00:19:58,460
+So make sure that you do that.
+
+425
+00:19:58,460 --> 00:19:59,960
+All right, so I'm
+going to tell them
+
+426
+00:19:59,960 --> 00:20:04,000
+that you guessed my
+password, which is awesome.
+
+427
+00:20:04,000 --> 00:20:06,790
+Now, let's go
+ahead and run this.
+
+428
+00:20:06,790 --> 00:20:09,350
+It's going to wait for me to
+guess my five-letter password.
+
+429
+00:20:09,350 --> 00:20:10,330
+Let's say, apple.
+
+430
+00:20:10,330 --> 00:20:11,450
+I hit Enter.
+
+431
+00:20:11,450 --> 00:20:15,200
+Nothing runs because
+this is not true.
+
+432
+00:20:15,200 --> 00:20:16,550
+And so nothing runs.
+
+433
+00:20:16,550 --> 00:20:18,000
+Now, let's play this again.
+
+434
+00:20:18,000 --> 00:20:19,250
+Guess my five-letter password.
+
+435
+00:20:19,250 --> 00:20:22,190
+If I say, happy, then "Nice job!
+
+436
+00:20:22,190 --> 00:20:24,670
+You guessed, oh, my
+password, happy."
+
+437
+00:20:24,670 --> 00:20:26,557
+So I'm going to
+delete that L there.
+
+438
+00:20:26,557 --> 00:20:27,890
+All right, and we're good to go.
+
+439
+00:20:27,890 --> 00:20:30,093
+Now, the next part
+that I want to do
+
+440
+00:20:30,093 --> 00:20:32,260
+is if they didn't guess
+your password correctly, see
+
+441
+00:20:32,260 --> 00:20:34,343
+if the password was the
+correct number of letters.
+
+442
+00:20:34,343 --> 00:20:36,230
+If they did enter a
+five-letter password,
+
+443
+00:20:36,230 --> 00:20:39,650
+then tell them they did not
+correctly guess your password.
+
+444
+00:20:39,650 --> 00:20:42,050
+But they did guess the
+right number of letters.
+
+445
+00:20:42,050 --> 00:20:46,330
+OK, so let's come over here,
+and we're going to say,
+
+446
+00:20:46,330 --> 00:20:47,080
+you know what?
+
+447
+00:20:47,080 --> 00:20:50,180
+Elif, so this is just another
+conditional statement.
+
+448
+00:20:50,180 --> 00:20:53,710
+If I'm dealing here, I'm
+in the same if block,
+
+449
+00:20:53,710 --> 00:20:56,330
+still working with my
+userguess and password.
+
+450
+00:20:56,330 --> 00:21:01,620
+So if this one is not true, then
+try and see if my elif is true.
+
+451
+00:21:01,620 --> 00:21:05,510
+And I'll say, elif
+is the length.
+
+452
+00:21:05,510 --> 00:21:07,470
+Len is my length function.
+
+453
+00:21:07,470 --> 00:21:12,380
+And it goes in and identifies
+how many characters is
+
+454
+00:21:12,380 --> 00:21:15,570
+my userguess variable's value.
+
+455
+00:21:15,570 --> 00:21:22,790
+So if the length of userguess is
+== to the length of mypassword,
+
+456
+00:21:22,790 --> 00:21:25,020
+so is it the correct length?
+
+457
+00:21:25,020 --> 00:21:28,100
+Is it five letters?
+
+458
+00:21:28,100 --> 00:21:30,360
+I'm going to say, print.
+
+459
+00:21:30,360 --> 00:21:34,855
+So I could say elif
+length == to 5,
+
+460
+00:21:34,855 --> 00:21:36,540
+or I can say length
+of my password.
+
+461
+00:21:36,540 --> 00:21:48,296
+I might actually say because
+I'm being specific up here
+
+462
+00:21:48,296 --> 00:21:49,470
+that they did--
+
+463
+00:21:49,470 --> 00:21:51,240
+I'm just going to
+say equal to 5.
+
+464
+00:21:51,240 --> 00:21:53,750
+So I could do either way
+here because my password
+
+465
+00:21:53,750 --> 00:21:55,730
+is of five characters.
+
+466
+00:21:55,730 --> 00:21:58,880
+I could say the length
+of userguess == to length
+
+467
+00:21:58,880 --> 00:22:00,940
+of my password or
+just equal to 5.
+
+468
+00:22:00,940 --> 00:22:03,190
+But I want to be
+specific to 5 here.
+
+469
+00:22:03,190 --> 00:22:05,250
+Either way could work.
+
+470
+00:22:05,250 --> 00:22:08,496
+So I'm going to tell them
+that if this is true, then--
+
+471
+00:22:11,010 --> 00:22:17,100
+# let's see-- #they don't
+guess my password,
+
+472
+00:22:17,100 --> 00:22:22,280
+but they do guess a
+five-letter password.
+
+473
+00:22:22,280 --> 00:22:25,870
+So I'll say if that length
+of userguess is == to 5,
+
+474
+00:22:25,870 --> 00:22:32,290
+I'll print "You incorrectly
+guessed my password,
+
+475
+00:22:32,290 --> 00:22:37,440
+but you did guess a
+five-letter password."
+
+476
+00:22:37,440 --> 00:22:38,530
+Perfect.
+
+477
+00:22:38,530 --> 00:22:42,670
+Then the next thing that I'm
+going to do is let's run this.
+
+478
+00:22:42,670 --> 00:22:44,920
+So I'm going to say, apple.
+
+479
+00:22:44,920 --> 00:22:46,300
+That's five characters.
+
+480
+00:22:46,300 --> 00:22:48,490
+And it says, "You incorrectly
+guessed my password,"
+
+481
+00:22:48,490 --> 00:22:51,580
+which is true, "but you did
+guess a five-letter password."
+
+482
+00:22:51,580 --> 00:22:55,020
+So what it does is it goes
+through this if statement first.
+
+483
+00:22:55,020 --> 00:22:58,300
+If that userguess is ==
+to mypassword, run this.
+
+484
+00:22:58,300 --> 00:23:00,870
+This was not true
+for this instance.
+
+485
+00:23:00,870 --> 00:23:02,250
+So then the elif ran.
+
+486
+00:23:02,250 --> 00:23:03,030
+Is this true?
+
+487
+00:23:03,030 --> 00:23:05,850
+This was true because
+apple is five characters.
+
+488
+00:23:05,850 --> 00:23:09,410
+So it ran "You incorrectly
+guessed my password,
+
+489
+00:23:09,410 --> 00:23:11,370
+but you did guess a
+five-letter password."
+
+490
+00:23:11,370 --> 00:23:12,990
+So now let's run it again.
+
+491
+00:23:12,990 --> 00:23:14,250
+Oh, actually, I'm not
+going to run it again.
+
+492
+00:23:14,250 --> 00:23:15,875
+I'm going to stop it
+here really quick.
+
+493
+00:23:15,875 --> 00:23:17,560
+So I keyboard interrupted it.
+
+494
+00:23:17,560 --> 00:23:18,260
+[LAUGHS]
+
+495
+00:23:18,260 --> 00:23:21,620
+Last thing I want to
+do, if they did not
+
+496
+00:23:21,620 --> 00:23:24,480
+input a five-character password
+nor guess your password,
+
+497
+00:23:24,480 --> 00:23:25,980
+tell them of their failure.
+
+498
+00:23:25,980 --> 00:23:28,950
+So we're going to go
+ahead and say else,
+
+499
+00:23:28,950 --> 00:23:30,990
+if neither of these
+conditions are true,
+
+500
+00:23:30,990 --> 00:23:33,530
+then they know that they didn't
+guess my password correctly,
+
+501
+00:23:33,530 --> 00:23:36,240
+and that they didn't guess
+a five-character password.
+
+502
+00:23:36,240 --> 00:23:44,070
+So I'll say print "You did not
+correctly guess my password,
+
+503
+00:23:44,070 --> 00:23:49,050
+nor did you enter a
+five-letter password."
+
+504
+00:23:49,050 --> 00:23:52,100
+So now when I run
+this, let's just enter
+
+505
+00:23:52,100 --> 00:23:54,347
+a random number of characters.
+
+506
+00:23:54,347 --> 00:23:56,430
+It says, "You did not
+correctly guess my password,
+
+507
+00:23:56,430 --> 00:23:58,740
+nor did you enter a
+five-letter password."
+
+508
+00:23:58,740 --> 00:24:00,850
+I'll run it again, check
+everything on more time.
+
+509
+00:24:00,850 --> 00:24:01,720
+I'll say, happy.
+
+510
+00:24:01,720 --> 00:24:03,100
+This is the correct password.
+
+511
+00:24:03,100 --> 00:24:04,210
+I hit Enter.
+
+512
+00:24:04,210 --> 00:24:05,290
+It says, "Nice job!
+
+513
+00:24:05,290 --> 00:24:07,050
+You guessed my password, happy."
+
+514
+00:24:07,050 --> 00:24:10,380
+If I run this one
+more time and I say,
+
+515
+00:24:10,380 --> 00:24:12,880
+guess my five-letter
+password and I say, apple,
+
+516
+00:24:12,880 --> 00:24:15,850
+I hit Enter again, "You
+incorrectly guessed my password,
+
+517
+00:24:15,850 --> 00:24:18,040
+but you did guess a
+five-letter password."
+
+518
+00:24:18,040 --> 00:24:20,250
+So my elif ran that time.
+
+519
+00:24:20,250 --> 00:24:23,250
+All right, so here, you have
+your in-class assignment
+
+520
+00:24:23,250 --> 00:24:26,460
+done for Python Basics.
+
+521
+00:24:26,460 --> 00:24:29,740
+Please review workbook files
+as you need to as well.
+
+522
+00:24:29,740 --> 00:24:32,680
+I'm going to submit two
+different files to Canvas.
+
+523
+00:24:32,680 --> 00:24:33,850
+So go File.
+
+524
+00:24:33,850 --> 00:24:36,580
+You're going to first submit a--
+
+525
+00:24:36,580 --> 00:24:38,557
+so go File and
+then down to Print.
+
+526
+00:24:38,557 --> 00:24:40,890
+You can't see it on my end,
+but I'm going to say, Print.
+
+527
+00:24:40,890 --> 00:24:45,430
+And you'll say, Microsoft
+Print to PDF or Save as PDF.
+
+528
+00:24:45,430 --> 00:24:47,350
+And then you'll say, Print.
+
+529
+00:24:47,350 --> 00:24:49,570
+And you have to do
+the Print to PDF.
+
+530
+00:24:49,570 --> 00:24:51,117
+It won't let you Save As.
+
+531
+00:24:51,117 --> 00:24:53,200
+Maybe I'm going to save
+it to my Downloads folder.
+
+532
+00:24:53,200 --> 00:24:57,060
+And I'll say,
+Siggard_ICAPythonBasics.
+
+533
+00:25:01,460 --> 00:25:05,360
+So oh, it might not
+let that happen.
+
+534
+00:25:05,360 --> 00:25:07,640
+All right, PythonBasics.
+
+535
+00:25:07,640 --> 00:25:09,910
+Now, I'll press Save.
+
+536
+00:25:09,910 --> 00:25:16,420
+Then I also want you to just
+download the Jupyter Notebook
+
+537
+00:25:16,420 --> 00:25:17,360
+file.
+
+538
+00:25:17,360 --> 00:25:19,100
+And it's downloaded
+that as well.
+
+539
+00:25:19,100 --> 00:25:22,960
+So I want you to submit
+both this and the PDF
+
+540
+00:25:22,960 --> 00:25:24,110
+that you just created.
+
+541
+00:25:24,110 --> 00:25:26,270
+I'll show you what
+the PDF looks like.
+
+542
+00:25:26,270 --> 00:25:29,920
+The PDF is actually really
+helpful for grading,
+
+543
+00:25:29,920 --> 00:25:35,710
+because on our end, once we have
+ensured that all of that output
+
+544
+00:25:35,710 --> 00:25:38,535
+has ran, we ran all
+of our programs,
+
+545
+00:25:38,535 --> 00:25:41,240
+we can go through and see,
+oh, there's your output.
+
+546
+00:25:41,240 --> 00:25:42,830
+There's your output
+for number 2.
+
+547
+00:25:42,830 --> 00:25:46,040
+There's your output
+for number 3.
+
+548
+00:25:46,040 --> 00:25:49,356
+And there's your
+output for number 4.
+
+549
+00:25:49,356 --> 00:25:52,280
+So please make sure you
+follow the instructions.
+
+550
+00:25:52,280 --> 00:25:55,160
+You're going to submit the PDF
+and the Jupyter Notebook file.
+
+551
+00:25:55,160 --> 00:25:56,862
+Thanks for being
+an awesome class.
+
+552
+00:25:56,862 --> 00:25:58,070
+This has been a fun semester.
+
+553
+00:25:58,070 --> 00:25:59,500
+Take care.

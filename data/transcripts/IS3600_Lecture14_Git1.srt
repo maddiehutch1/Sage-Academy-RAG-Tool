@@ -1,0 +1,2750 @@
+1
+00:00:00,645 --> 00:00:01,770
+INSTRUCTOR: Hey, everybody.
+
+2
+00:00:01,770 --> 00:00:02,562
+Welcome back.
+
+3
+00:00:02,562 --> 00:00:04,520
+So in today's video,
+we're going to be covering
+
+4
+00:00:04,520 --> 00:00:08,600
+a topic that, we're sticking
+with this theme of web
+
+5
+00:00:08,600 --> 00:00:11,332
+deployment, web
+development in the cloud,
+
+6
+00:00:11,332 --> 00:00:13,790
+this is one of those tools that
+you just kind of absolutely
+
+7
+00:00:13,790 --> 00:00:14,430
+need.
+
+8
+00:00:14,430 --> 00:00:16,513
+Some of you might have
+been already exposed to it,
+
+9
+00:00:16,513 --> 00:00:18,967
+but hopefully you'll
+still learn something new.
+
+10
+00:00:18,967 --> 00:00:20,550
+And if you haven't
+been exposed to it,
+
+11
+00:00:20,550 --> 00:00:22,592
+pay attention because this
+is one of those skills
+
+12
+00:00:22,592 --> 00:00:27,260
+that we constantly get feedback,
+not only from our past students
+
+13
+00:00:27,260 --> 00:00:29,520
+or employers, but
+also just in general,
+
+14
+00:00:29,520 --> 00:00:31,452
+our personal experiences, right.
+
+15
+00:00:31,452 --> 00:00:33,770
+We're going to be talking
+about Git and GitHub today
+
+16
+00:00:33,770 --> 00:00:34,890
+specifically.
+
+17
+00:00:34,890 --> 00:00:37,070
+And this is just, again,
+one of those skills
+
+18
+00:00:37,070 --> 00:00:40,310
+that you don't
+often see in school
+
+19
+00:00:40,310 --> 00:00:43,680
+but is becoming absolutely
+critical in the working world.
+
+20
+00:00:43,680 --> 00:00:48,530
+So to explain broadly what
+that is, you all have now
+
+21
+00:00:48,530 --> 00:00:52,310
+probably taken either Data 3500,
+or maybe some other programming
+
+22
+00:00:52,310 --> 00:00:52,910
+class.
+
+23
+00:00:52,910 --> 00:00:54,200
+Or even in this
+class, you've seen
+
+24
+00:00:54,200 --> 00:00:56,580
+that we've started to do a
+little bit of code development,
+
+25
+00:00:56,580 --> 00:00:56,760
+right?
+
+26
+00:00:56,760 --> 00:00:58,135
+When we've deployed
+our websites,
+
+27
+00:00:58,135 --> 00:01:00,540
+we've had code that
+underlies that.
+
+28
+00:01:00,540 --> 00:01:03,590
+As you might expect, very
+few companies or websites
+
+29
+00:01:03,590 --> 00:01:05,519
+are built by a single person.
+
+30
+00:01:05,519 --> 00:01:07,700
+So that begs the question
+almost immediately is,
+
+31
+00:01:07,700 --> 00:01:12,140
+how do you manage this
+interactive collaborative work
+
+32
+00:01:12,140 --> 00:01:13,980
+in a coding environment?
+
+33
+00:01:13,980 --> 00:01:18,440
+And Git has become kind of the
+de facto tool in this space.
+
+34
+00:01:18,440 --> 00:01:23,550
+So Git, G-I-T, that is
+the underlying software.
+
+35
+00:01:23,550 --> 00:01:25,460
+It is a version control
+system, that would
+
+36
+00:01:25,460 --> 00:01:27,500
+be the formal definition of it.
+
+37
+00:01:27,500 --> 00:01:29,450
+Version control in
+the sense that, hey, I
+
+38
+00:01:29,450 --> 00:01:31,250
+have one version of the code.
+
+39
+00:01:31,250 --> 00:01:34,190
+I write my initial code, it
+goes up there on the website,
+
+40
+00:01:34,190 --> 00:01:36,770
+or goes live wherever
+it is, and then
+
+41
+00:01:36,770 --> 00:01:38,810
+I might make a change
+to it, therefore, there
+
+42
+00:01:38,810 --> 00:01:40,290
+is a new version of it.
+
+43
+00:01:40,290 --> 00:01:41,780
+Similarly, I might
+have a coworker
+
+44
+00:01:41,780 --> 00:01:44,370
+that makes a change to it, that
+is a different version of it.
+
+45
+00:01:44,370 --> 00:01:46,010
+So Git is software
+that allows us
+
+46
+00:01:46,010 --> 00:01:48,920
+to manage kind of the
+interaction of these two things.
+
+47
+00:01:48,920 --> 00:01:51,600
+How do we make sure that they
+work together effectively?
+
+48
+00:01:51,600 --> 00:01:53,300
+How do we make
+sure that we don't
+
+49
+00:01:53,300 --> 00:01:54,810
+overwrite each other's work?
+
+50
+00:01:54,810 --> 00:01:57,740
+And if we need to roll back
+to previous code, where
+
+51
+00:01:57,740 --> 00:02:00,738
+maybe like the new feature we've
+implemented breaks everything,
+
+52
+00:02:00,738 --> 00:02:02,280
+how can we roll back
+to a point where
+
+53
+00:02:02,280 --> 00:02:03,730
+we knew things were stable?
+
+54
+00:02:03,730 --> 00:02:05,620
+So that's what Git does.
+
+55
+00:02:05,620 --> 00:02:09,660
+And then GitHub, G-I-T
+hub, is a website
+
+56
+00:02:09,660 --> 00:02:14,050
+where you can go online and
+push your code repositories.
+
+57
+00:02:14,050 --> 00:02:16,590
+So there's a bunch of other
+platforms to do this on.
+
+58
+00:02:16,590 --> 00:02:17,340
+You'll see GitLab.
+
+59
+00:02:19,950 --> 00:02:23,410
+Atlassian has their suite of
+tools around this as well.
+
+60
+00:02:23,410 --> 00:02:26,685
+But really, most of them are
+using Git under the hood,
+
+61
+00:02:26,685 --> 00:02:28,060
+though there do
+exist other ones.
+
+62
+00:02:28,060 --> 00:02:29,643
+It's just that Git
+is the most famous,
+
+63
+00:02:29,643 --> 00:02:31,860
+and GitHub is arguably
+the most popular,
+
+64
+00:02:31,860 --> 00:02:36,030
+mostly because it has wide
+support across the open source
+
+65
+00:02:36,030 --> 00:02:36,750
+community.
+
+66
+00:02:36,750 --> 00:02:41,160
+And it's usually more user
+facing as opposed to public
+
+67
+00:02:41,160 --> 00:02:44,480
+facing-- or private within
+internal to a company facing.
+
+68
+00:02:44,480 --> 00:02:46,890
+Though they do have kind of
+enterprise versions as well.
+
+69
+00:02:46,890 --> 00:02:49,050
+So that's what we're going
+to be covering today.
+
+70
+00:02:49,050 --> 00:02:51,160
+If you can't tell as well,
+I'm on an EC2 instance,
+
+71
+00:02:51,160 --> 00:02:53,243
+so feel free to get that
+started up while I'm just
+
+72
+00:02:53,243 --> 00:02:54,220
+talking some more.
+
+73
+00:02:54,220 --> 00:02:56,012
+But to keep highlighting
+a few other things
+
+74
+00:02:56,012 --> 00:02:58,090
+that we want to be
+able to do with this.
+
+75
+00:02:58,090 --> 00:03:01,290
+Obviously, like I said,
+version control is key.
+
+76
+00:03:01,290 --> 00:03:04,780
+Collaboration, not only
+just with somebody else,
+
+77
+00:03:04,780 --> 00:03:06,160
+but just across a broader team.
+
+78
+00:03:06,160 --> 00:03:07,630
+How do you collaborate broadly?
+
+79
+00:03:07,630 --> 00:03:09,840
+Git will enable us to do that.
+
+80
+00:03:09,840 --> 00:03:11,950
+We won't talk about it
+a ton in this course,
+
+81
+00:03:11,950 --> 00:03:15,270
+but this is a core way
+that a lot of companies
+
+82
+00:03:15,270 --> 00:03:18,060
+operate is via, you'll
+see the acronym CI/CD
+
+83
+00:03:18,060 --> 00:03:20,650
+is continuous integration,
+continuous deployment.
+
+84
+00:03:20,650 --> 00:03:24,390
+This idea that you will always
+have a version of the website
+
+85
+00:03:24,390 --> 00:03:27,420
+live, and you need to
+have a pipeline in place,
+
+86
+00:03:27,420 --> 00:03:32,460
+a CI/CD pipeline in place such
+that I can seamlessly basically
+
+87
+00:03:32,460 --> 00:03:36,790
+commit or submit new
+code to our website.
+
+88
+00:03:36,790 --> 00:03:41,070
+And that is automatically tested
+and built into the website,
+
+89
+00:03:41,070 --> 00:03:44,850
+and deployed live so that
+we don't have to ever take
+
+90
+00:03:44,850 --> 00:03:47,208
+the website down basically.
+
+91
+00:03:47,208 --> 00:03:48,750
+And then, finally,
+as well, and we'll
+
+92
+00:03:48,750 --> 00:03:53,370
+use this in a future lecture
+when we talk about deployment,
+
+93
+00:03:53,370 --> 00:03:56,590
+plenty of platforms use
+this kind of framework.
+
+94
+00:03:56,590 --> 00:03:59,620
+We've talked about
+infrastructure as software,
+
+95
+00:03:59,620 --> 00:04:01,230
+but this is more of--
+
+96
+00:04:01,230 --> 00:04:02,980
+or infrastructure as a service.
+
+97
+00:04:02,980 --> 00:04:03,870
+Sorry.
+
+98
+00:04:03,870 --> 00:04:05,860
+That IaaS acronym.
+
+99
+00:04:05,860 --> 00:04:08,160
+You'll also sometimes
+see this IAC acronym,
+
+100
+00:04:08,160 --> 00:04:10,600
+that is infrastructure as code.
+
+101
+00:04:10,600 --> 00:04:13,020
+And that just says, hey,
+basically, all we need to do
+
+102
+00:04:13,020 --> 00:04:15,670
+is manage our Git repositories.
+
+103
+00:04:15,670 --> 00:04:18,430
+That's what our code bases
+are called, is repositories.
+
+104
+00:04:18,430 --> 00:04:20,519
+We just manage our
+Git repositories,
+
+105
+00:04:20,519 --> 00:04:22,660
+and then everything
+else is handled, right?
+
+106
+00:04:22,660 --> 00:04:26,700
+So I just deploy my code
+to my Git repository,
+
+107
+00:04:26,700 --> 00:04:31,100
+and then my website is
+live and maintained.
+
+108
+00:04:31,100 --> 00:04:34,770
+So given that as kind
+of our backing for this.
+
+109
+00:04:34,770 --> 00:04:37,650
+Again, I'm assuming you got
+your EC2 instance launched now.
+
+110
+00:04:37,650 --> 00:04:41,720
+Now we're going to move toward
+testing this out, building out
+
+111
+00:04:41,720 --> 00:04:44,040
+some of these capabilities.
+
+112
+00:04:44,040 --> 00:04:47,030
+So first order of
+business is just
+
+113
+00:04:47,030 --> 00:04:50,990
+getting Git installed
+on our EC2 instance.
+
+114
+00:04:50,990 --> 00:04:53,840
+Like I said, this Git
+is just the software
+
+115
+00:04:53,840 --> 00:04:55,320
+for version control.
+
+116
+00:04:55,320 --> 00:04:57,200
+We can have any
+number of interfaces
+
+117
+00:04:57,200 --> 00:04:59,330
+to this, whether
+that means we just
+
+118
+00:04:59,330 --> 00:05:01,430
+use the kind of
+command line here
+
+119
+00:05:01,430 --> 00:05:04,700
+or if we actually use
+some sort of interactive,
+
+120
+00:05:04,700 --> 00:05:06,358
+kind of graphical
+user interface, where
+
+121
+00:05:06,358 --> 00:05:08,400
+we can click and drag and
+do all that good stuff.
+
+122
+00:05:08,400 --> 00:05:11,168
+So we're unsurprisingly going
+to do everything via the command
+
+123
+00:05:11,168 --> 00:05:12,960
+line, but just know
+that there are options.
+
+124
+00:05:12,960 --> 00:05:16,550
+So feel free to look at,
+for your specific operating
+
+125
+00:05:16,550 --> 00:05:19,340
+system, whether it be
+Windows, or Mac, at what some
+
+126
+00:05:19,340 --> 00:05:22,650
+of the different interfaces are.
+
+127
+00:05:22,650 --> 00:05:24,690
+But for Linux, it's pretty easy.
+
+128
+00:05:24,690 --> 00:05:27,800
+First we're going to do
+our usual sudo apt update
+
+129
+00:05:27,800 --> 00:05:34,050
+-y to update our library
+of packages here.
+
+130
+00:05:34,050 --> 00:05:36,090
+And then once we do
+that, we are going
+
+131
+00:05:36,090 --> 00:05:39,220
+to install the Git
+software itself, too.
+
+132
+00:05:39,220 --> 00:05:41,745
+So we'll do, and I hope-- let
+me double check, make sure
+
+133
+00:05:41,745 --> 00:05:42,870
+on my video side of things.
+
+134
+00:05:42,870 --> 00:05:44,490
+Yeah, it's still visible.
+
+135
+00:05:44,490 --> 00:05:45,700
+I'll actually do this.
+
+136
+00:05:45,700 --> 00:05:47,890
+We're going to use GitHub
+in a little bit anyways.
+
+137
+00:05:47,890 --> 00:05:51,570
+So I'll just slide this over, so
+we're kind of on a split screen
+
+138
+00:05:51,570 --> 00:05:53,700
+mode here, and I ensure
+that I never cover up
+
+139
+00:05:53,700 --> 00:05:55,120
+the code base itself.
+
+140
+00:05:55,120 --> 00:05:57,310
+So we'll come back to the
+right side of the screen.
+
+141
+00:05:57,310 --> 00:05:57,977
+In a little bit.
+
+142
+00:05:57,977 --> 00:06:06,340
+But for now we're just going to
+say, OK, sudo apt install Git.
+
+143
+00:06:06,340 --> 00:06:08,980
+And if that worked,
+you can check
+
+144
+00:06:08,980 --> 00:06:12,370
+by just running Git
+and then --version,
+
+145
+00:06:12,370 --> 00:06:14,960
+and that should show you what
+version of Git you're on.
+
+146
+00:06:14,960 --> 00:06:18,970
+In this case, I'm on 2.34.1.
+
+147
+00:06:18,970 --> 00:06:21,070
+Though, again, whatever
+version installed for you
+
+148
+00:06:21,070 --> 00:06:23,550
+is perfectly fine.
+
+149
+00:06:23,550 --> 00:06:27,520
+Now common practice is to set
+up your configuration of this.
+
+150
+00:06:27,520 --> 00:06:30,040
+That is to say, when
+I'm submitting code,
+
+151
+00:06:30,040 --> 00:06:33,030
+we want to know who the person
+is that's submitting code.
+
+152
+00:06:33,030 --> 00:06:35,310
+How do I ensure that I
+can get a hold of them
+
+153
+00:06:35,310 --> 00:06:37,170
+if I need to know
+what changes they made
+
+154
+00:06:37,170 --> 00:06:38,940
+or why they did certain things?
+
+155
+00:06:38,940 --> 00:06:46,470
+So you can do Git config
+--global user.name
+
+156
+00:06:46,470 --> 00:06:50,850
+and then space,
+and then your name.
+
+157
+00:06:50,850 --> 00:06:52,050
+Oops.
+
+158
+00:06:52,050 --> 00:06:54,792
+Of course, I have
+to type this, right?
+
+159
+00:06:54,792 --> 00:06:56,470
+Let me slide this
+up a little bit.
+
+160
+00:06:56,470 --> 00:06:59,710
+That's what I'm blocking
+myself from seeing this.
+
+161
+00:06:59,710 --> 00:07:01,630
+There we go.
+
+162
+00:07:01,630 --> 00:07:03,200
+Now should be a little easier.
+
+163
+00:07:03,200 --> 00:07:07,360
+There we go, global
+user.name and Sharad.
+
+164
+00:07:07,360 --> 00:07:09,460
+And then we're going to
+do the same thing, git
+
+165
+00:07:09,460 --> 00:07:18,160
+config global user.email, and
+then I'll do my email address.
+
+166
+00:07:18,160 --> 00:07:21,070
+And again, we're not doing
+any sort of logging in
+
+167
+00:07:21,070 --> 00:07:23,180
+or we're not sharing our
+information publicly.
+
+168
+00:07:23,180 --> 00:07:24,730
+All that's happening
+is that anybody
+
+169
+00:07:24,730 --> 00:07:28,420
+else who is submitting
+code to this repository
+
+170
+00:07:28,420 --> 00:07:29,980
+that we're going
+to create, they're
+
+171
+00:07:29,980 --> 00:07:32,110
+going to see any
+changes I made are
+
+172
+00:07:32,110 --> 00:07:35,390
+going to be labeled with my
+username and my user email.
+
+173
+00:07:35,390 --> 00:07:37,230
+So the username
+is arbitrary here.
+
+174
+00:07:37,230 --> 00:07:40,220
+It's not even saying necessarily
+it's your GitHub username.
+
+175
+00:07:40,220 --> 00:07:41,690
+We're not to GitHub yet, right?
+
+176
+00:07:41,690 --> 00:07:43,820
+We're just focusing
+on Git right now.
+
+177
+00:07:43,820 --> 00:07:47,710
+So before GitHub even existed,
+Git was already there, right?
+
+178
+00:07:47,710 --> 00:07:49,690
+So this is already an
+option to collaborate
+
+179
+00:07:49,690 --> 00:07:51,250
+with other developers.
+
+180
+00:07:51,250 --> 00:07:53,630
+You can check to see
+configurations here.
+
+181
+00:07:53,630 --> 00:07:56,970
+Just doing git config --list.
+
+182
+00:07:56,970 --> 00:08:00,870
+And now we're set up to
+create our first repository.
+
+183
+00:08:00,870 --> 00:08:02,860
+So I'm going to do mkdir.
+
+184
+00:08:02,860 --> 00:08:04,680
+Remember, that's make directory.
+
+185
+00:08:04,680 --> 00:08:06,915
+And it will be called
+my-git-project.
+
+186
+00:08:09,550 --> 00:08:14,840
+Then I'll cd into there,
+so cd into my-git-project.
+
+187
+00:08:14,840 --> 00:08:18,420
+And then to initialize
+it as a Git repository,
+
+188
+00:08:18,420 --> 00:08:20,750
+basically saying to
+tell Git that, hey, you
+
+189
+00:08:20,750 --> 00:08:23,930
+should start monitoring this
+repository for any changes,
+
+190
+00:08:23,930 --> 00:08:30,380
+we'll call it git init,
+for initialize, -b main,
+
+191
+00:08:30,380 --> 00:08:33,500
+where the -b main
+sets the default
+
+192
+00:08:33,500 --> 00:08:35,850
+branch to the main branch.
+
+193
+00:08:35,850 --> 00:08:37,799
+And we'll talk about
+branching in a second.
+
+194
+00:08:37,799 --> 00:08:39,424
+But the way to think
+about it right now
+
+195
+00:08:39,424 --> 00:08:41,150
+is just that the
+branch just defines
+
+196
+00:08:41,150 --> 00:08:44,370
+kind of what thread of work am
+I doing, what am I building.
+
+197
+00:08:44,370 --> 00:08:47,690
+And the default is to
+have a main branch that
+
+198
+00:08:47,690 --> 00:08:50,820
+is kind of the live or working
+version of the application,
+
+199
+00:08:50,820 --> 00:08:51,980
+ideally.
+
+200
+00:08:51,980 --> 00:08:54,200
+That way, anything
+new that's developed
+
+201
+00:08:54,200 --> 00:08:56,490
+has to get merged
+into the main branch.
+
+202
+00:08:56,490 --> 00:08:58,550
+But again, we'll
+come back to that.
+
+203
+00:08:58,550 --> 00:09:02,070
+So first, let's actually
+just create a file in here.
+
+204
+00:09:02,070 --> 00:09:05,130
+So I'll do nano, and
+we'll call the file,
+
+205
+00:09:05,130 --> 00:09:06,530
+we'll just make a readme.
+
+206
+00:09:06,530 --> 00:09:09,950
+And we'll make it a
+markdown file, so .md.
+
+207
+00:09:09,950 --> 00:09:12,270
+And a markdown file, if
+you're not familiar with that,
+
+208
+00:09:12,270 --> 00:09:17,070
+is just a special file type that
+is often used for text files.
+
+209
+00:09:17,070 --> 00:09:20,480
+And in this case, you can
+use special characters,
+
+210
+00:09:20,480 --> 00:09:23,730
+like this hash mark
+here, we'll do a header.
+
+211
+00:09:23,730 --> 00:09:28,230
+So we're just making the
+title of this my-git-project.
+
+212
+00:09:28,230 --> 00:09:29,435
+So we'll save that.
+
+213
+00:09:32,100 --> 00:09:36,780
+And now we have to go through
+what I kind of treat as the--
+
+214
+00:09:36,780 --> 00:09:41,310
+or part of the default loop
+for tracking changes or pushing
+
+215
+00:09:41,310 --> 00:09:43,260
+changes to your repository.
+
+216
+00:09:43,260 --> 00:09:46,210
+So first thing I usually
+do is I run git status.
+
+217
+00:09:46,210 --> 00:09:48,720
+That tells me what
+branch I'm on,
+
+218
+00:09:48,720 --> 00:09:52,600
+do I have any commits that
+have been submitted yet,
+
+219
+00:09:52,600 --> 00:09:56,550
+and importantly, are there any
+untracked files or changes will
+
+220
+00:09:56,550 --> 00:09:59,181
+also show up show up here too.
+
+221
+00:09:59,181 --> 00:10:02,820
+To add something to a
+track-- to be a tracked file,
+
+222
+00:10:02,820 --> 00:10:07,080
+we run git add, and
+you can either specify
+
+223
+00:10:07,080 --> 00:10:08,550
+the specific files name.
+
+224
+00:10:08,550 --> 00:10:10,330
+Or if you've made
+a bunch of changes,
+
+225
+00:10:10,330 --> 00:10:13,590
+there's a bunch of new files, a
+shortcut is to just say git add
+
+226
+00:10:13,590 --> 00:10:16,500
+and then period, and that'll
+add everything that's untracked
+
+227
+00:10:16,500 --> 00:10:19,410
+or any new changes to
+just being tracked.
+
+228
+00:10:19,410 --> 00:10:23,100
+Or-- yeah, to being monitored.
+
+229
+00:10:23,100 --> 00:10:25,890
+So now, after I've run
+the git add everything,
+
+230
+00:10:25,890 --> 00:10:27,930
+and I run git status,
+you can see now
+
+231
+00:10:27,930 --> 00:10:30,060
+that we have no
+commits still, but we
+
+232
+00:10:30,060 --> 00:10:36,280
+have some changes that are
+kind of staged to be committed.
+
+233
+00:10:36,280 --> 00:10:42,040
+And then to commit it, we
+just run git commit /m.
+
+234
+00:10:42,040 --> 00:10:44,080
+And we'll just say
+initial commit,
+
+235
+00:10:44,080 --> 00:10:46,930
+because this is
+our first commit.
+
+236
+00:10:46,930 --> 00:10:49,870
+So the way to think about
+this is what we've done so far
+
+237
+00:10:49,870 --> 00:10:52,180
+is we've said, hey,
+we've made some change.
+
+238
+00:10:52,180 --> 00:10:55,610
+We need to be watching this
+change, monitoring this change.
+
+239
+00:10:55,610 --> 00:10:57,830
+And now I'm committing
+this change to saying,
+
+240
+00:10:57,830 --> 00:11:01,070
+hey, this is a new change
+that has been made.
+
+241
+00:11:01,070 --> 00:11:03,860
+But again, recognize that this
+is all just still isolated
+
+242
+00:11:03,860 --> 00:11:05,690
+to my local repository.
+
+243
+00:11:05,690 --> 00:11:08,780
+Or this is only on this
+machine, on this EC2 instance.
+
+244
+00:11:08,780 --> 00:11:11,210
+It's not accessible
+anywhere else.
+
+245
+00:11:11,210 --> 00:11:13,220
+Now what we want to
+do is push that up
+
+246
+00:11:13,220 --> 00:11:14,910
+to our remote repository.
+
+247
+00:11:14,910 --> 00:11:17,520
+Our remote repository
+is going to be GitHub.
+
+248
+00:11:17,520 --> 00:11:20,640
+We're going to use GitHub as the
+place to push all our code to.
+
+249
+00:11:20,640 --> 00:11:23,710
+So that way anybody
+can interact with it.
+
+250
+00:11:23,710 --> 00:11:25,930
+So one of the first
+things you need to do
+
+251
+00:11:25,930 --> 00:11:28,720
+is come to github.com and
+just create an account
+
+252
+00:11:28,720 --> 00:11:30,420
+if you don't already have one.
+
+253
+00:11:30,420 --> 00:11:33,200
+If you do have one,
+just log in to it.
+
+254
+00:11:33,200 --> 00:11:36,190
+And so, yeah, feel free to pause
+it if you're in that moment
+
+255
+00:11:36,190 --> 00:11:41,812
+right now, just kind of waiting
+for that to create your account.
+
+256
+00:11:41,812 --> 00:11:43,520
+Once you've created
+your account, though,
+
+257
+00:11:43,520 --> 00:11:45,603
+what I want you to do is
+click on your little icon
+
+258
+00:11:45,603 --> 00:11:50,080
+on the top right here and
+scroll down, click Settings.
+
+259
+00:11:50,080 --> 00:11:52,690
+And then if you scroll to
+the very bottom of settings
+
+260
+00:11:52,690 --> 00:11:56,530
+here and click
+developer settings,
+
+261
+00:11:56,530 --> 00:12:01,650
+you can click Personal access
+tokens, Tokens classic.
+
+262
+00:12:01,650 --> 00:12:04,710
+And then, we're going to
+generate a new token up here
+
+263
+00:12:04,710 --> 00:12:08,580
+on the top right, and
+Generate new token classic.
+
+264
+00:12:08,580 --> 00:12:12,900
+So personal access tokens are
+basically kind of secure way
+
+265
+00:12:12,900 --> 00:12:17,260
+to interact with our repository
+from a remote machine.
+
+266
+00:12:17,260 --> 00:12:19,170
+Basically, it's kind
+of like our secret keys
+
+267
+00:12:19,170 --> 00:12:20,950
+that we've had before
+where it says, hey,
+
+268
+00:12:20,950 --> 00:12:24,120
+I have to have this secret
+key to be able to interact
+
+269
+00:12:24,120 --> 00:12:25,420
+with the remote repository.
+
+270
+00:12:25,420 --> 00:12:27,990
+If you don't have one of these,
+you won't be able to do it.
+
+271
+00:12:27,990 --> 00:12:30,580
+So we can call us
+whatever we want to.
+
+272
+00:12:30,580 --> 00:12:33,060
+I'll call mine
+temporarytoken, because I'm
+
+273
+00:12:33,060 --> 00:12:35,880
+going to delete it
+basically immediately.
+
+274
+00:12:35,880 --> 00:12:38,705
+I'm going to set the
+expiration for seven days.
+
+275
+00:12:38,705 --> 00:12:40,830
+But note that, again, the
+expiration is, treat this
+
+276
+00:12:40,830 --> 00:12:43,620
+as another kind of
+security protocol,
+
+277
+00:12:43,620 --> 00:12:47,130
+is to say that I will
+set a amount of time
+
+278
+00:12:47,130 --> 00:12:51,720
+that I want this token
+to be viable for.
+
+279
+00:12:51,720 --> 00:12:53,910
+And then, after
+that point, it is
+
+280
+00:12:53,910 --> 00:12:56,410
+going to be basically just
+an expired token, right?
+
+281
+00:12:56,410 --> 00:12:59,820
+I won't be able to
+use it for validation
+
+282
+00:12:59,820 --> 00:13:02,670
+of my personal profile.
+
+283
+00:13:02,670 --> 00:13:04,103
+The reason we do
+this is that it's
+
+284
+00:13:04,103 --> 00:13:05,770
+kind of the same as
+changing a password.
+
+285
+00:13:05,770 --> 00:13:08,320
+After a certain amount of
+time, just from a security
+
+286
+00:13:08,320 --> 00:13:09,850
+perspective, it's
+probably better
+
+287
+00:13:09,850 --> 00:13:11,947
+to just revoke
+that token's access
+
+288
+00:13:11,947 --> 00:13:13,780
+and then create a new
+one, just to make sure
+
+289
+00:13:13,780 --> 00:13:15,010
+that you're staying
+relevant with it
+
+290
+00:13:15,010 --> 00:13:16,450
+and you don't have anything
+that's kind of lingering
+
+291
+00:13:16,450 --> 00:13:17,990
+around unnecessarily.
+
+292
+00:13:17,990 --> 00:13:20,990
+So 7 days, 30 days, 60 days, 90
+days, whatever you want to do.
+
+293
+00:13:20,990 --> 00:13:22,280
+We're just doing this for now.
+
+294
+00:13:22,280 --> 00:13:23,470
+And you'll have
+assignments where
+
+295
+00:13:23,470 --> 00:13:25,137
+you'll need to push
+to GitHub, so you're
+
+296
+00:13:25,137 --> 00:13:26,590
+welcome to do it for longer.
+
+297
+00:13:26,590 --> 00:13:27,980
+But again, no expiration.
+
+298
+00:13:27,980 --> 00:13:29,563
+It's going to probably
+flag you, yeah.
+
+299
+00:13:29,563 --> 00:13:31,820
+And say, hey, this isn't
+very secure to do this.
+
+300
+00:13:31,820 --> 00:13:33,900
+So you probably
+shouldn't do that.
+
+301
+00:13:33,900 --> 00:13:34,540
+For right now.
+
+302
+00:13:34,540 --> 00:13:36,150
+I'm going to set mine to 7.
+
+303
+00:13:36,150 --> 00:13:37,950
+And then you need to
+basically just specify
+
+304
+00:13:37,950 --> 00:13:40,000
+what it has access to.
+
+305
+00:13:40,000 --> 00:13:41,670
+And for right now,
+we really just need
+
+306
+00:13:41,670 --> 00:13:44,650
+to have access over
+our repositories.
+
+307
+00:13:44,650 --> 00:13:47,280
+So I'll just give it
+permissions to the repos.
+
+308
+00:13:47,280 --> 00:13:51,210
+And then everything else, I'm
+just going to leave blank.
+
+309
+00:13:51,210 --> 00:13:53,850
+And then click Generate token.
+
+310
+00:13:53,850 --> 00:13:57,120
+Now on this page,
+you'll see this
+
+311
+00:13:57,120 --> 00:13:59,560
+is your secret token, your
+personal access token.
+
+312
+00:13:59,560 --> 00:14:01,060
+Again, this is a private thing.
+
+313
+00:14:01,060 --> 00:14:03,720
+Obviously, mine, you
+guys can see it here.
+
+314
+00:14:03,720 --> 00:14:05,380
+So that's not very secure.
+
+315
+00:14:05,380 --> 00:14:07,117
+But I'm obviously
+also, first off,
+
+316
+00:14:07,117 --> 00:14:08,950
+going to delete this
+once I'm done using it.
+
+317
+00:14:08,950 --> 00:14:10,710
+So it won't even
+be viable anymore.
+
+318
+00:14:10,710 --> 00:14:12,550
+And also, in seven
+days, no matter what,
+
+319
+00:14:12,550 --> 00:14:15,300
+the access, the permissions to
+this are going to be revoked.
+
+320
+00:14:15,300 --> 00:14:18,090
+But you need to make sure
+to copy this and store it
+
+321
+00:14:18,090 --> 00:14:19,360
+somewhere secure.
+
+322
+00:14:19,360 --> 00:14:21,435
+So wherever that
+works for you, we're
+
+323
+00:14:21,435 --> 00:14:22,810
+going to need it
+throughout this.
+
+324
+00:14:22,810 --> 00:14:26,550
+So I'm putting it in a little
+notepad for myself temporarily,
+
+325
+00:14:26,550 --> 00:14:28,320
+while I'm using it.
+
+326
+00:14:28,320 --> 00:14:32,050
+But there are a whole suite of
+more secure ways to do that.
+
+327
+00:14:32,050 --> 00:14:34,540
+But for now, again,
+perfectly fine,
+
+328
+00:14:34,540 --> 00:14:38,220
+just put it in a little
+notepad for yourself to access.
+
+329
+00:14:38,220 --> 00:14:40,590
+So we have that now.
+
+330
+00:14:40,590 --> 00:14:43,230
+So let's come back over and
+click on the little icon
+
+331
+00:14:43,230 --> 00:14:46,780
+up here, the octocat
+icon for GitHub.
+
+332
+00:14:46,780 --> 00:14:49,750
+And then we're going to
+create a new repository.
+
+333
+00:14:49,750 --> 00:14:52,300
+And we're just going to name
+this repository exactly what we
+
+334
+00:14:52,300 --> 00:14:58,850
+named our other-- or our local
+repository, my-git-project.
+
+335
+00:14:58,850 --> 00:15:02,820
+And note that it needs to be
+unique within your account.
+
+336
+00:15:02,820 --> 00:15:05,600
+So if it's-- it doesn't
+have to be unique globally,
+
+337
+00:15:05,600 --> 00:15:08,190
+kind of like our S3 buckets do.
+
+338
+00:15:08,190 --> 00:15:11,150
+It just needs to be
+unique within our account.
+
+339
+00:15:11,150 --> 00:15:13,350
+You can add a
+description if you want.
+
+340
+00:15:13,350 --> 00:15:18,080
+You can specify whether your
+repository is public or private.
+
+341
+00:15:18,080 --> 00:15:21,740
+Public is good if you want
+to show this off to others.
+
+342
+00:15:21,740 --> 00:15:23,450
+Or, for example,
+like when you guys
+
+343
+00:15:23,450 --> 00:15:26,780
+are going to need to send me
+links to your repositories
+
+344
+00:15:26,780 --> 00:15:28,440
+to show me that
+you completed work.
+
+345
+00:15:28,440 --> 00:15:29,990
+Easiest thing to do would
+be to make it public,
+
+346
+00:15:29,990 --> 00:15:31,865
+so you don't have to
+add me as a collaborator
+
+347
+00:15:31,865 --> 00:15:33,380
+or anything like that.
+
+348
+00:15:33,380 --> 00:15:35,120
+Though, note you
+can still choose who
+
+349
+00:15:35,120 --> 00:15:36,585
+actually can commit code to it.
+
+350
+00:15:36,585 --> 00:15:38,210
+So it's not saying
+I'm making it public
+
+351
+00:15:38,210 --> 00:15:39,810
+and anybody can change my code.
+
+352
+00:15:39,810 --> 00:15:42,920
+It's just saying it's
+visible publicly.
+
+353
+00:15:42,920 --> 00:15:45,680
+And then private
+is you basically
+
+354
+00:15:45,680 --> 00:15:49,210
+choose who can see and
+commit to this repository.
+
+355
+00:15:49,210 --> 00:15:51,487
+So I'll just leave mine
+as private for now.
+
+356
+00:15:51,487 --> 00:15:54,070
+So I don't have just a million
+of these private repositories--
+
+357
+00:15:54,070 --> 00:15:56,840
+or default repositories created.
+
+358
+00:15:56,840 --> 00:15:58,680
+But leave everything
+else here blank.
+
+359
+00:15:58,680 --> 00:16:00,430
+I'll explain what
+these are, but we
+
+360
+00:16:00,430 --> 00:16:02,033
+don't want to change
+anything here,
+
+361
+00:16:02,033 --> 00:16:03,700
+because we're pushing
+all of our changes
+
+362
+00:16:03,700 --> 00:16:05,270
+from our local repository.
+
+363
+00:16:05,270 --> 00:16:07,610
+So don't add any of
+these things here.
+
+364
+00:16:07,610 --> 00:16:09,845
+But in case you're
+curious, the readme
+
+365
+00:16:09,845 --> 00:16:11,470
+file, we'll we just
+created one, right?
+
+366
+00:16:11,470 --> 00:16:13,070
+We created one our
+local repository.
+
+367
+00:16:13,070 --> 00:16:14,510
+So that's why we don't need one.
+
+368
+00:16:14,510 --> 00:16:17,320
+This is where you typically
+will see the description of what
+
+369
+00:16:17,320 --> 00:16:18,680
+the project does.
+
+370
+00:16:18,680 --> 00:16:20,023
+So that's kind of a default one.
+
+371
+00:16:20,023 --> 00:16:21,940
+And that's why they have
+it as an option here.
+
+372
+00:16:21,940 --> 00:16:25,430
+We'll talk about gitignores
+in a future lecture,
+
+373
+00:16:25,430 --> 00:16:28,330
+but the short version
+of it is that gitignore
+
+374
+00:16:28,330 --> 00:16:31,420
+is a special file that
+says, hey, I maybe
+
+375
+00:16:31,420 --> 00:16:34,490
+want to ignore specific file
+types within my repository.
+
+376
+00:16:34,490 --> 00:16:37,040
+Like never push those
+up to my remote.
+
+377
+00:16:37,040 --> 00:16:40,090
+So if, for example, I
+had a public repository
+
+378
+00:16:40,090 --> 00:16:42,168
+for some sort of
+application I built
+
+379
+00:16:42,168 --> 00:16:43,710
+and I want it to be
+visible to others
+
+380
+00:16:43,710 --> 00:16:47,060
+so they could build off of it or
+kind of see the work I've done,
+
+381
+00:16:47,060 --> 00:16:51,800
+but it requires that I
+have some secret tokens
+
+382
+00:16:51,800 --> 00:16:54,300
+to launch the website
+on my local machine.
+
+383
+00:16:54,300 --> 00:16:58,580
+I can add my secret tokens
+file to the gitignore
+
+384
+00:16:58,580 --> 00:17:01,650
+and say, hey, even though
+this is in that repository,
+
+385
+00:17:01,650 --> 00:17:05,030
+never track it, never
+push it to the repository.
+
+386
+00:17:05,030 --> 00:17:07,140
+And then finally is the license.
+
+387
+00:17:07,140 --> 00:17:09,500
+And this is basically
+where you can
+
+388
+00:17:09,500 --> 00:17:11,869
+define who has what sort
+of legal permissions
+
+389
+00:17:11,869 --> 00:17:14,190
+to interact with your code.
+
+390
+00:17:14,190 --> 00:17:16,819
+Even though oftentimes,
+and actually many of these
+
+391
+00:17:16,819 --> 00:17:18,980
+are open source licenses
+in the sense that they
+
+392
+00:17:18,980 --> 00:17:22,010
+say anybody can use this
+code, certain licenses
+
+393
+00:17:22,010 --> 00:17:23,880
+will say, hey, you
+can use this code,
+
+394
+00:17:23,880 --> 00:17:26,280
+but just not for
+commercial purposes.
+
+395
+00:17:26,280 --> 00:17:27,980
+So this will be
+relevant to you as you
+
+396
+00:17:27,980 --> 00:17:29,630
+start to build
+products and companies,
+
+397
+00:17:29,630 --> 00:17:30,630
+and all sorts of things.
+
+398
+00:17:30,630 --> 00:17:33,530
+But for right now, that's
+not a big deal for us.
+
+399
+00:17:33,530 --> 00:17:36,890
+So we'll click
+Create repository.
+
+400
+00:17:36,890 --> 00:17:38,610
+And now we'll be
+brought to this page.
+
+401
+00:17:38,610 --> 00:17:40,920
+So our repository
+has been created.
+
+402
+00:17:40,920 --> 00:17:42,930
+We haven't put
+anything in it yet,
+
+403
+00:17:42,930 --> 00:17:45,320
+but we have all
+that set up there.
+
+404
+00:17:45,320 --> 00:17:48,740
+So now I'll slide this over
+out the way for a little bit
+
+405
+00:17:48,740 --> 00:17:52,100
+so we can type again.
+
+406
+00:17:52,100 --> 00:17:55,340
+And so now we want to
+push our local code up
+
+407
+00:17:55,340 --> 00:17:57,090
+to our remote repository.
+
+408
+00:17:57,090 --> 00:17:59,370
+So first thing I need
+to do is come down here.
+
+409
+00:17:59,370 --> 00:18:02,090
+You'll see there's this line
+here that gives us some tips,
+
+410
+00:18:02,090 --> 00:18:03,620
+actually, if we want to
+create a new repository,
+
+411
+00:18:03,620 --> 00:18:05,340
+or if we want to
+push an existing one.
+
+412
+00:18:05,340 --> 00:18:07,070
+We want to push an
+existing one. so we'll
+
+413
+00:18:07,070 --> 00:18:14,700
+do copy this top line that
+says git remote add origin,
+
+414
+00:18:14,700 --> 00:18:16,470
+and then it has a URL.
+
+415
+00:18:16,470 --> 00:18:20,510
+So that's saying, hey, we're
+adding a remote repository.
+
+416
+00:18:20,510 --> 00:18:24,110
+And origin is just the standard
+name for remote repository.
+
+417
+00:18:24,110 --> 00:18:30,030
+And it is going to be
+pushing to this URL here,
+
+418
+00:18:30,030 --> 00:18:32,762
+so github.com/sharadkj/mid
+git project.git.
+
+419
+00:18:35,750 --> 00:18:37,520
+And so that's
+saying, hey, now we
+
+420
+00:18:37,520 --> 00:18:41,630
+have our local repository that
+has a remote connection that
+
+421
+00:18:41,630 --> 00:18:43,280
+goes out to this
+location, right,
+
+422
+00:18:43,280 --> 00:18:46,040
+to this specific
+remote repository.
+
+423
+00:18:46,040 --> 00:18:48,800
+So hit Enter and it shouldn't
+say anything if it worked.
+
+424
+00:18:48,800 --> 00:18:53,140
+And then, last step here,
+we have-- if you remember,
+
+425
+00:18:53,140 --> 00:18:56,490
+if we do git status,
+we have some--
+
+426
+00:18:56,490 --> 00:18:59,800
+or better statement, we
+have committed our changes.
+
+427
+00:18:59,800 --> 00:19:03,780
+We have some initial--
+
+428
+00:19:03,780 --> 00:19:05,530
+we have initial file in there.
+
+429
+00:19:05,530 --> 00:19:08,350
+And so now we want to push this
+up to our remote repository.
+
+430
+00:19:08,350 --> 00:19:16,150
+So we'll run git
+push -u origin main.
+
+431
+00:19:16,150 --> 00:19:20,320
+And so this just sets the-- the
+u sets the upstream reference
+
+432
+00:19:20,320 --> 00:19:23,560
+basically for any sort of future
+pushes or pulls we're doing.
+
+433
+00:19:23,560 --> 00:19:26,710
+So we're saying git
+push u origin main.
+
+434
+00:19:26,710 --> 00:19:29,770
+Then it's going to say,
+give me your username.
+
+435
+00:19:29,770 --> 00:19:31,270
+And then, for the
+password, we're
+
+436
+00:19:31,270 --> 00:19:33,400
+not going to put
+our GitHub password,
+
+437
+00:19:33,400 --> 00:19:35,800
+we're going to paste that
+personal access token that we
+
+438
+00:19:35,800 --> 00:19:38,120
+created and stored into a file.
+
+439
+00:19:38,120 --> 00:19:39,680
+So literally, just
+copy and paste.
+
+440
+00:19:39,680 --> 00:19:41,290
+That's all I did
+there, is Control-C
+
+441
+00:19:41,290 --> 00:19:44,110
+and Control-V. It doesn't show
+anything when you paste it
+
+442
+00:19:44,110 --> 00:19:45,740
+there, so don't panic.
+
+443
+00:19:45,740 --> 00:19:48,850
+But if it showed like this
+correctly or if it shows
+
+444
+00:19:48,850 --> 00:19:51,370
+basically branch main setup
+to track remote manage main
+
+445
+00:19:51,370 --> 00:19:55,030
+from origin, all that good
+stuff, then you're great.
+
+446
+00:19:55,030 --> 00:19:57,740
+If it threw an error of
+any sort, easy enough.
+
+447
+00:19:57,740 --> 00:20:00,130
+Just rerun this command,
+put in your username,
+
+448
+00:20:00,130 --> 00:20:04,390
+and put in the personal
+access token as your password.
+
+449
+00:20:04,390 --> 00:20:08,020
+Now, if we come back over
+here to our remote repository
+
+450
+00:20:08,020 --> 00:20:11,960
+and hit Refresh,
+we see that we have
+
+451
+00:20:11,960 --> 00:20:15,330
+now a file, an initial
+commit for that file.
+
+452
+00:20:15,330 --> 00:20:20,910
+That initial commit is the
+readme that we created.
+
+453
+00:20:20,910 --> 00:20:24,980
+And we can see that it was 9
+minutes ago that I pushed that,
+
+454
+00:20:24,980 --> 00:20:26,763
+or that I made that
+initial commit.
+
+455
+00:20:26,763 --> 00:20:28,430
+It wasn't 9 minutes
+ago that I pushed it
+
+456
+00:20:28,430 --> 00:20:29,730
+to the remote repository.
+
+457
+00:20:29,730 --> 00:20:33,350
+It was just 9 minutes ago
+that I made that commit.
+
+458
+00:20:33,350 --> 00:20:35,360
+And so now you have a--
+
+459
+00:20:35,360 --> 00:20:38,930
+you've kind of seen the
+workflow of making changes
+
+460
+00:20:38,930 --> 00:20:40,730
+to a Git repository.
+
+461
+00:20:40,730 --> 00:20:42,810
+The standard approach
+is to say, hey, well,
+
+462
+00:20:42,810 --> 00:20:46,260
+maybe I want to add some
+more text to my file here,
+
+463
+00:20:46,260 --> 00:20:47,930
+and this file could
+be anything, right?
+
+464
+00:20:47,930 --> 00:20:48,990
+In our case, it's a readme.
+
+465
+00:20:48,990 --> 00:20:50,657
+But this could just
+be your regular code
+
+466
+00:20:50,657 --> 00:20:53,600
+for your website, your
+application, whatever it is.
+
+467
+00:20:53,600 --> 00:20:57,740
+So if I want to make a change,
+maybe I say, OK, great,
+
+468
+00:20:57,740 --> 00:21:02,520
+Sharad is the coolest.
+
+469
+00:21:02,520 --> 00:21:04,415
+And that is going
+to make it bold.
+
+470
+00:21:07,540 --> 00:21:09,490
+And then we'll
+save those changes.
+
+471
+00:21:09,490 --> 00:21:11,740
+And if we do git
+status again, you'll
+
+472
+00:21:11,740 --> 00:21:14,030
+see, OK, well, I modified this.
+
+473
+00:21:14,030 --> 00:21:16,750
+So I need to run git
+add, and even tells you
+
+474
+00:21:16,750 --> 00:21:19,090
+that, use git add.
+
+475
+00:21:19,090 --> 00:21:21,100
+I'm going to add everything.
+
+476
+00:21:21,100 --> 00:21:25,540
+And then I'll do git
+commit slash m, which
+
+477
+00:21:25,540 --> 00:21:28,090
+is how I can pass a message
+along with the commit.
+
+478
+00:21:28,090 --> 00:21:37,390
+And I'll say, added important
+details to the readme.
+
+479
+00:21:37,390 --> 00:21:39,340
+And again, this message
+is just for reference
+
+480
+00:21:39,340 --> 00:21:40,630
+for other developers
+that are working,
+
+481
+00:21:40,630 --> 00:21:42,672
+and they're like, oh, hey,
+what did they do here?
+
+482
+00:21:42,672 --> 00:21:45,490
+I can see very easily
+from this description.
+
+483
+00:21:45,490 --> 00:21:53,750
+So git add, git commit, and then
+we'll run our git push origin
+
+484
+00:21:53,750 --> 00:21:58,250
+main, and then sharadkj.
+
+485
+00:21:58,250 --> 00:22:03,340
+And then I'll copy and paste
+my personal access token.
+
+486
+00:22:03,340 --> 00:22:06,850
+And then I'll come over
+here and I'll hit Refresh.
+
+487
+00:22:06,850 --> 00:22:08,190
+And boom, there you go.
+
+488
+00:22:08,190 --> 00:22:09,880
+Sharad is the coolest.
+
+489
+00:22:09,880 --> 00:22:15,250
+So that is, again, the general
+workflow of using GitHub.
+
+490
+00:22:15,250 --> 00:22:18,160
+And honestly, like gets you
+probably like 95% of the way
+
+491
+00:22:18,160 --> 00:22:20,890
+there with most things that
+you'll do on a daily basis
+
+492
+00:22:20,890 --> 00:22:23,440
+on GitHub, whenever I'm
+working on a project, some sort
+
+493
+00:22:23,440 --> 00:22:26,110
+of coding project, I usually
+just have a terminal up
+
+494
+00:22:26,110 --> 00:22:28,630
+like this that in the
+background after I've
+
+495
+00:22:28,630 --> 00:22:31,570
+made meaningful changes,
+I've added some new feature
+
+496
+00:22:31,570 --> 00:22:33,130
+or element to this.
+
+497
+00:22:33,130 --> 00:22:36,310
+I'll run git add, git commit,
+git push, git add, git commit,
+
+498
+00:22:36,310 --> 00:22:36,950
+git push.
+
+499
+00:22:36,950 --> 00:22:38,870
+I just keep iterating
+through that.
+
+500
+00:22:38,870 --> 00:22:42,920
+It's kind of like saving
+your work on your computer.
+
+501
+00:22:42,920 --> 00:22:44,980
+And the reason we want
+to do this so frequently
+
+502
+00:22:44,980 --> 00:22:48,850
+is not to say every time I make
+a single like code line or code
+
+503
+00:22:48,850 --> 00:22:53,810
+change, but every time I really
+add some new element to my code,
+
+504
+00:22:53,810 --> 00:22:56,620
+it's great to have a check-in
+to basically say like, hey, I
+
+505
+00:22:56,620 --> 00:22:58,310
+added a relevant new feature.
+
+506
+00:22:58,310 --> 00:23:01,220
+And so therefore, now I'm going
+to push this code up there.
+
+507
+00:23:01,220 --> 00:23:05,040
+So that anybody can go in and
+see all of my past changes,
+
+508
+00:23:05,040 --> 00:23:05,760
+right?
+
+509
+00:23:05,760 --> 00:23:07,760
+So I can go in here and
+look at this last commit
+
+510
+00:23:07,760 --> 00:23:09,805
+and see, OK, that's
+what was added there.
+
+511
+00:23:12,420 --> 00:23:15,125
+So now that we've
+got that, we'll
+
+512
+00:23:15,125 --> 00:23:16,750
+have to understand
+the other direction.
+
+513
+00:23:16,750 --> 00:23:18,070
+So we've pushed code.
+
+514
+00:23:18,070 --> 00:23:20,410
+Now we need to understand
+what it means to pull code.
+
+515
+00:23:20,410 --> 00:23:22,320
+Now, this would
+typically mean in a case
+
+516
+00:23:22,320 --> 00:23:25,590
+where I'm collaborating
+with a friend or my company,
+
+517
+00:23:25,590 --> 00:23:28,200
+and somebody else has made
+a change to this code base,
+
+518
+00:23:28,200 --> 00:23:30,390
+because we all have
+access to push code here.
+
+519
+00:23:30,390 --> 00:23:32,080
+And I want to pull any changes.
+
+520
+00:23:32,080 --> 00:23:35,220
+So there's a remote repository
+that's different than my local,
+
+521
+00:23:35,220 --> 00:23:37,800
+and I want to pull those
+changes back to local.
+
+522
+00:23:37,800 --> 00:23:40,475
+So we're going to make an edit
+to file up here on GitHub,
+
+523
+00:23:40,475 --> 00:23:41,850
+but this would
+work just the same
+
+524
+00:23:41,850 --> 00:23:44,340
+if somebody else had
+pushed their own code up
+
+525
+00:23:44,340 --> 00:23:46,730
+to our main branch here.
+
+526
+00:23:46,730 --> 00:23:48,680
+So to do that, first
+thing I'm going to do
+
+527
+00:23:48,680 --> 00:23:50,730
+is I'm going to edit
+this readme file.
+
+528
+00:23:50,730 --> 00:23:53,090
+So I'm just going to
+this little Edit button,
+
+529
+00:23:53,090 --> 00:23:58,100
+and then come into this nice
+little text editor and say,
+
+530
+00:23:58,100 --> 00:23:59,120
+Sharad is the coolest.
+
+531
+00:23:59,120 --> 00:24:00,930
+And will provide
+some clarification.
+
+532
+00:24:00,930 --> 00:24:03,240
+Professor at USU.
+
+533
+00:24:03,240 --> 00:24:05,100
+I'm not biasing
+you guys' opinions.
+
+534
+00:24:05,100 --> 00:24:07,250
+You can put whatever
+you want here.
+
+535
+00:24:07,250 --> 00:24:09,900
+But either way, we'll
+make that change.
+
+536
+00:24:09,900 --> 00:24:11,960
+We'll commit it up here.
+
+537
+00:24:11,960 --> 00:24:13,980
+And we'll say, update readme.md.
+
+538
+00:24:13,980 --> 00:24:16,410
+Great, we'll commit it
+directly to the main branch.
+
+539
+00:24:16,410 --> 00:24:17,420
+Perfect.
+
+540
+00:24:17,420 --> 00:24:19,010
+Commit changes.
+
+541
+00:24:19,010 --> 00:24:22,830
+So now up here, on
+our remote repository,
+
+542
+00:24:22,830 --> 00:24:25,400
+says Sharad is the
+coolest professor at USU.
+
+543
+00:24:25,400 --> 00:24:28,320
+But if I look at my
+readme down here,
+
+544
+00:24:28,320 --> 00:24:30,740
+it just says Sharad
+is the coolest.
+
+545
+00:24:30,740 --> 00:24:32,810
+So again, we need
+to pull that change
+
+546
+00:24:32,810 --> 00:24:34,970
+from our remote repository.
+
+547
+00:24:34,970 --> 00:24:39,020
+So, all we do, very
+kind of expected,
+
+548
+00:24:39,020 --> 00:24:46,100
+is we do git pull origin main.
+
+549
+00:24:46,100 --> 00:24:51,770
+Same thing, username, grab
+my personal access token
+
+550
+00:24:51,770 --> 00:24:53,060
+for the password.
+
+551
+00:24:53,060 --> 00:24:56,900
+And boom, we've now
+pulled that locally.
+
+552
+00:24:56,900 --> 00:24:58,920
+And you can see, worked well.
+
+553
+00:24:58,920 --> 00:25:00,030
+One file was changed.
+
+554
+00:25:00,030 --> 00:25:01,170
+There was one insertion.
+
+555
+00:25:01,170 --> 00:25:05,210
+There was one deletion because
+I think we removed the period.
+
+556
+00:25:05,210 --> 00:25:08,810
+But we can do now
+cat and read me,
+
+557
+00:25:08,810 --> 00:25:11,480
+and we'll see that we
+pulled those remote changes,
+
+558
+00:25:11,480 --> 00:25:14,340
+so pulled them from
+our remote repository.
+
+559
+00:25:17,770 --> 00:25:21,550
+So I'll leave it there for now.
+
+560
+00:25:21,550 --> 00:25:23,042
+Yeah, we'll leave
+it there for now.
+
+561
+00:25:23,042 --> 00:25:25,000
+And I'll introduce-- let
+me see actually really
+
+562
+00:25:25,000 --> 00:25:26,000
+quick before I say that.
+
+563
+00:25:26,000 --> 00:25:29,090
+I don't want to make
+this video too long, but.
+
+564
+00:25:29,090 --> 00:25:31,090
+I do think we have a
+couple other things that we
+
+565
+00:25:31,090 --> 00:25:32,070
+want to add on to it.
+
+566
+00:25:32,070 --> 00:25:34,743
+So yeah, I will call
+this for now here,
+
+567
+00:25:34,743 --> 00:25:36,160
+and then I'll
+record another video
+
+568
+00:25:36,160 --> 00:25:38,900
+that includes some extra details
+on branching and merging.
+
+569
+00:25:38,900 --> 00:25:40,895
+So that way, this one
+video isn't crazy long.
+
+570
+00:25:40,895 --> 00:25:42,770
+But this should be enough
+to get you started.
+
+571
+00:25:42,770 --> 00:25:44,600
+And in all honesty,
+I think this is all,
+
+572
+00:25:44,600 --> 00:25:46,130
+we will need for the project.
+
+573
+00:25:46,130 --> 00:25:48,310
+So the next video will
+just be a short explainer
+
+574
+00:25:48,310 --> 00:25:52,567
+for adding a few more
+skills to our tool belt.
+
+575
+00:25:52,567 --> 00:25:53,650
+So thank you for watching.
+
+576
+00:25:53,650 --> 00:25:56,070
+And we'll pick up next time.

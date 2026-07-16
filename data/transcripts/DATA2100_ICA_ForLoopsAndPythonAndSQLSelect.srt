@@ -1,0 +1,3143 @@
+1
+00:00:01,845 --> 00:00:03,470
+REAGAN SIGGARD: Hi,
+DATA 2100 students.
+
+2
+00:00:03,470 --> 00:00:05,120
+In this in-class
+assignment, we're
+
+3
+00:00:05,120 --> 00:00:08,180
+going to learn what we have
+applied this week in for loops
+
+4
+00:00:08,180 --> 00:00:11,880
+and combining our knowledge
+of SQL and Python.
+
+5
+00:00:11,880 --> 00:00:15,360
+So we've talked about lists
+and for loops this week,
+
+6
+00:00:15,360 --> 00:00:16,850
+and then we talked
+about how do we
+
+7
+00:00:16,850 --> 00:00:20,570
+write an SQL SELECT
+statement in Python
+
+8
+00:00:20,570 --> 00:00:25,620
+and then have that output
+to us in our Python program?
+
+9
+00:00:25,620 --> 00:00:28,130
+So we're going to go through
+our in-class assignment today.
+
+10
+00:00:28,130 --> 00:00:30,630
+If you have not already watched
+all the videos of this week,
+
+11
+00:00:30,630 --> 00:00:33,370
+please make sure to do so.
+
+12
+00:00:33,370 --> 00:00:35,350
+In this in-class
+assignment, we're
+
+13
+00:00:35,350 --> 00:00:37,460
+going to click Copy to Drive.
+
+14
+00:00:37,460 --> 00:00:40,580
+And then, you'll notice that
+mine now-- that is gone.
+
+15
+00:00:40,580 --> 00:00:44,710
+That prompt is gone once
+I've copied it to Drive.
+
+16
+00:00:44,710 --> 00:00:47,252
+And then, I'll type in
+my first and last name.
+
+17
+00:00:47,252 --> 00:00:48,460
+All right, we're ready to go.
+
+18
+00:00:48,460 --> 00:00:50,840
+Here, you're going to turn
+in two different files--
+
+19
+00:00:50,840 --> 00:00:54,490
+the PDF and the
+Jupyter Notebook file.
+
+20
+00:00:54,490 --> 00:00:56,560
+So make sure that you do that.
+
+21
+00:00:56,560 --> 00:00:59,560
+All right, so here,
+using Python and SQL,
+
+22
+00:00:59,560 --> 00:01:02,270
+for each of the problems
+below, you will need to know--
+
+23
+00:01:02,270 --> 00:01:03,770
+and we've already
+talked about this.
+
+24
+00:01:03,770 --> 00:01:07,580
+But we are accessing our
+database via a database file.
+
+25
+00:01:07,580 --> 00:01:09,980
+So previously, when we
+were writing SQL queries,
+
+26
+00:01:09,980 --> 00:01:11,500
+we were accessing
+the database as it
+
+27
+00:01:11,500 --> 00:01:16,000
+was being stored on our server,
+our Microsoft SQL Server.
+
+28
+00:01:16,000 --> 00:01:18,310
+For feasibility,
+we have actually
+
+29
+00:01:18,310 --> 00:01:20,500
+downloaded that
+database into a file.
+
+30
+00:01:20,500 --> 00:01:24,200
+But it still behaves the same
+as the database on the server.
+
+31
+00:01:24,200 --> 00:01:27,860
+However, it's just much easier
+to access within Google Colab.
+
+32
+00:01:27,860 --> 00:01:30,340
+But this is still extremely
+applicable in industry
+
+33
+00:01:30,340 --> 00:01:34,000
+because the only thing
+that will change,
+
+34
+00:01:34,000 --> 00:01:36,280
+as far as if you
+were to be accessing
+
+35
+00:01:36,280 --> 00:01:41,060
+a server, say, on Amazon Web
+server or somewhere else,
+
+36
+00:01:41,060 --> 00:01:43,450
+then you just change
+this connection code,
+
+37
+00:01:43,450 --> 00:01:45,000
+and everything else is the same.
+
+38
+00:01:45,000 --> 00:01:47,040
+So it's good that way.
+
+39
+00:01:47,040 --> 00:01:48,980
+So you'll notice
+you'll be prompted
+
+40
+00:01:48,980 --> 00:01:52,880
+to download the
+overland_sqlite database file
+
+41
+00:01:52,880 --> 00:01:55,850
+as well to make sure that you
+can go through this with me.
+
+42
+00:01:55,850 --> 00:01:58,640
+And should just note here that
+the database file will only
+
+43
+00:01:58,640 --> 00:02:02,700
+persist while your Colab
+Notebook session remains active.
+
+44
+00:02:02,700 --> 00:02:05,730
+So if it sits for some
+time, if you sign out,
+
+45
+00:02:05,730 --> 00:02:08,220
+you're going to need to
+reupload the database file.
+
+46
+00:02:08,220 --> 00:02:10,178
+But we'll get to that in
+just a [? question. ?]
+
+47
+00:02:10,178 --> 00:02:11,310
+That's not till program 3.
+
+48
+00:02:11,310 --> 00:02:12,768
+But here in programs
+1 and 2, we're
+
+49
+00:02:12,768 --> 00:02:15,660
+going to practice our for
+loops as well as our lists.
+
+50
+00:02:15,660 --> 00:02:17,910
+And we're going to create a
+variable called favemovie.
+
+51
+00:02:17,910 --> 00:02:20,160
+And then we're going to set
+the value of this variable
+
+52
+00:02:20,160 --> 00:02:22,437
+to be your favorite
+movie, then ask the user
+
+53
+00:02:22,437 --> 00:02:24,770
+to guess your favorite movie,
+then append the movie they
+
+54
+00:02:24,770 --> 00:02:26,840
+guessed to a list.
+
+55
+00:02:26,840 --> 00:02:30,090
+All right, let's go
+ahead and do this here.
+
+56
+00:02:30,090 --> 00:02:32,500
+So I don't know if I've
+told this online class.
+
+57
+00:02:32,500 --> 00:02:33,550
+I probably have.
+
+58
+00:02:33,550 --> 00:02:37,840
+But I am not at
+all a movie person.
+
+59
+00:02:37,840 --> 00:02:38,950
+I'm not against them.
+
+60
+00:02:38,950 --> 00:02:41,400
+I just never really
+watch movies.
+
+61
+00:02:41,400 --> 00:02:43,480
+So when I'm asked
+my favorite movie,
+
+62
+00:02:43,480 --> 00:02:47,950
+I'm like, um,
+[LAUGHS] I don't know.
+
+63
+00:02:47,950 --> 00:02:49,410
+I don't actually
+know if I've ever
+
+64
+00:02:49,410 --> 00:02:52,860
+seen Cinderella or anything.
+
+65
+00:02:52,860 --> 00:02:54,780
+I don't think I've
+seen Cars, but we're
+
+66
+00:02:54,780 --> 00:02:56,410
+going to say Cars is
+my favorite movie.
+
+67
+00:02:56,410 --> 00:02:58,870
+It's not, but we're
+going to say that.
+
+68
+00:02:58,870 --> 00:03:01,110
+So set your favorite movie here.
+
+69
+00:03:01,110 --> 00:03:02,620
+And I know, it's weird.
+
+70
+00:03:02,620 --> 00:03:05,200
+I need to, I guess, watch
+more movies, but here we are.
+
+71
+00:03:05,200 --> 00:03:10,150
+So then I want to ask the user
+to guess my favorite movie,
+
+72
+00:03:10,150 --> 00:03:12,790
+then append the movie
+they guessed to a list.
+
+73
+00:03:12,790 --> 00:03:19,960
+So I first need to
+ask my user to guess.
+
+74
+00:03:19,960 --> 00:03:22,090
+So I'll make a comment here.
+
+75
+00:03:22,090 --> 00:03:26,533
+# #ask user to guess
+my favorite movie.
+
+76
+00:03:29,150 --> 00:03:33,874
+And I'll say, userguess equal to
+Input("Please guess my favorite
+
+77
+00:03:33,874 --> 00:03:34,440
+movie").
+
+78
+00:03:42,545 --> 00:03:44,160
+So I'm going to ask that.
+
+79
+00:03:44,160 --> 00:03:47,170
+Because users input it as a
+string, that's totally fine.
+
+80
+00:03:47,170 --> 00:03:48,430
+That's what we want it as.
+
+81
+00:03:48,430 --> 00:03:53,200
+# And then, I want to
+#create an empty list
+
+82
+00:03:53,200 --> 00:03:57,860
+so that I can actually append
+the values to that list.
+
+83
+00:03:57,860 --> 00:04:02,270
+So I'm going to say,
+userguesslist equal to empty.
+
+84
+00:04:02,270 --> 00:04:05,940
+[LAUGHS] And I'm actually
+going to maybe move this up,
+
+85
+00:04:05,940 --> 00:04:06,850
+if you will.
+
+86
+00:04:06,850 --> 00:04:11,460
+I like to declare all of my
+variables and things up front.
+
+87
+00:04:11,460 --> 00:04:14,290
+So I'm going to go ahead and
+move that userguesslist up.
+
+88
+00:04:14,290 --> 00:04:16,680
+And then what I'm going to
+do after I ask for my user
+
+89
+00:04:16,680 --> 00:04:22,120
+to guess, I'm going to say, you
+know what, userguesslist.append.
+
+90
+00:04:22,120 --> 00:04:25,980
+And I'm going to, again,
+use that append() method,
+
+91
+00:04:25,980 --> 00:04:30,630
+and I'm going to place the value
+from the variable userguess
+
+92
+00:04:30,630 --> 00:04:34,822
+into the userguesslist.
+
+93
+00:04:34,822 --> 00:04:37,500
+So again, I'm
+appending this value
+
+94
+00:04:37,500 --> 00:04:41,380
+that my user guesses
+to my userguesslist.
+
+95
+00:04:41,380 --> 00:04:42,740
+So let's go ahead and run this.
+
+96
+00:04:45,670 --> 00:04:47,205
+It's going to take
+a second here.
+
+97
+00:04:50,480 --> 00:04:52,230
+It says, "Please guess
+my favorite movie."
+
+98
+00:04:52,230 --> 00:04:56,900
+If I say, let's see,
+sandlot, and I hit Enter,
+
+99
+00:04:56,900 --> 00:05:00,170
+then all I know is that
+it appends to a list,
+
+100
+00:05:00,170 --> 00:05:00,840
+and that's it.
+
+101
+00:05:00,840 --> 00:05:05,430
+So maybe I could say,
+print(userguesslist).
+
+102
+00:05:05,430 --> 00:05:08,310
+Now, when I run it again,
+and I guess Sandlot again,
+
+103
+00:05:08,310 --> 00:05:11,480
+then the only thing that's going
+to return to me is sandlot.
+
+104
+00:05:11,480 --> 00:05:14,010
+So just keep in mind here this
+is a fairly simple program.
+
+105
+00:05:14,010 --> 00:05:16,500
+We're just asking the
+user to guess something.
+
+106
+00:05:16,500 --> 00:05:20,960
+Then, we are going to add the
+value that they guess to a list,
+
+107
+00:05:20,960 --> 00:05:23,000
+and then we're
+printing out that list.
+
+108
+00:05:23,000 --> 00:05:25,250
+All right, now, same as
+above, but if the user guesses
+
+109
+00:05:25,250 --> 00:05:27,625
+your favorite movie, then
+congratulate them and tell them
+
+110
+00:05:27,625 --> 00:05:28,980
+how many times they guessed.
+
+111
+00:05:28,980 --> 00:05:30,620
+Also, output to
+the user once they
+
+112
+00:05:30,620 --> 00:05:33,510
+guess the correct movie all of
+the names of the movies they
+
+113
+00:05:33,510 --> 00:05:34,010
+guessed.
+
+114
+00:05:34,010 --> 00:05:35,968
+If the user does not
+guess your favorite movie,
+
+115
+00:05:35,968 --> 00:05:37,440
+encourage them to try again.
+
+116
+00:05:37,440 --> 00:05:41,040
+Continue until the user
+guesses your favorite movie.
+
+117
+00:05:41,040 --> 00:05:43,372
+Be sure this program
+is not case-sensitive.
+
+118
+00:05:43,372 --> 00:05:44,580
+So I'm going to come up here.
+
+119
+00:05:44,580 --> 00:05:47,900
+I'm going to grab my
+program from up above.
+
+120
+00:05:47,900 --> 00:05:49,560
+I'm going to paste it down here.
+
+121
+00:05:49,560 --> 00:05:54,350
+And I'm going to still have my
+favorite movie declared up here.
+
+122
+00:05:54,350 --> 00:05:57,150
+I'm going to still
+create my userguesslist.
+
+123
+00:05:57,150 --> 00:06:01,640
+And then, down here, after
+I've appended my userguess,
+
+124
+00:06:01,640 --> 00:06:03,800
+I am going to then evaluate.
+
+125
+00:06:03,800 --> 00:06:05,870
+Did what they enter--
+
+126
+00:06:05,870 --> 00:06:08,330
+is it actually my
+favorite movie?
+
+127
+00:06:08,330 --> 00:06:20,030
+So I'll say, if the userguess
+is not equal to favemovie,
+
+128
+00:06:20,030 --> 00:06:33,700
+then I want to print "You did
+not guess my favorite movie--"
+
+129
+00:06:33,700 --> 00:06:36,550
+and then I want to tell them
+how many times they've guessed--
+
+130
+00:06:36,550 --> 00:06:38,990
+"You have guessed blank times."
+
+131
+00:06:38,990 --> 00:06:41,780
+I'm going to add in my counter
+variable here sometime.
+
+132
+00:06:41,780 --> 00:06:44,230
+As a reminder, the best
+thing to do with while loops
+
+133
+00:06:44,230 --> 00:06:47,980
+is add them at the very
+end of your program.
+
+134
+00:06:47,980 --> 00:06:49,930
+While loops will
+make your program
+
+135
+00:06:49,930 --> 00:06:52,010
+happen over and
+over and over again,
+
+136
+00:06:52,010 --> 00:06:53,490
+and that can cause issues.
+
+137
+00:06:53,490 --> 00:06:55,240
+If you're stuck in
+this infinite loop that
+
+138
+00:06:55,240 --> 00:06:57,740
+just keeps running and running
+and running and running,
+
+139
+00:06:57,740 --> 00:06:58,910
+that's going to be an issue.
+
+140
+00:06:58,910 --> 00:07:02,905
+So I prefer to get my base
+program working, meaning
+
+141
+00:07:02,905 --> 00:07:07,030
+my variables created my
+inputs, and my program
+
+142
+00:07:07,030 --> 00:07:14,880
+that I want to happen
+over and over again,
+
+143
+00:07:14,880 --> 00:07:18,370
+I want that to exist before
+I put in my while loop.
+
+144
+00:07:18,370 --> 00:07:22,670
+So I'm going to use
+eventually a counter variable
+
+145
+00:07:22,670 --> 00:07:24,330
+to guess the number of times.
+
+146
+00:07:24,330 --> 00:07:26,840
+But for right now, I'm just
+going to say "blank times."
+
+147
+00:07:26,840 --> 00:07:28,680
+And then I'll add in
+here in just a bit,
+
+148
+00:07:28,680 --> 00:07:31,532
+once I add in my while
+loop, my counter variable.
+
+149
+00:07:31,532 --> 00:07:36,190
+All right, so then, ELSE means--
+
+150
+00:07:36,190 --> 00:07:41,930
+# else, #they did guess
+my favorite movie.
+
+151
+00:07:41,930 --> 00:07:44,830
+And once they do guess
+my favorite movie,
+
+152
+00:07:44,830 --> 00:07:47,570
+I want to output to them
+everything that they guessed.
+
+153
+00:07:47,570 --> 00:07:49,624
+So let me first tell
+them-- print("Great job!
+
+154
+00:07:49,624 --> 00:07:51,559
+You guessed my favorite movie!
+
+155
+00:07:51,559 --> 00:07:53,500
+It took you blank times.").
+
+156
+00:08:05,260 --> 00:08:08,370
+So again, I'm going to have a
+counter variable eventually when
+
+157
+00:08:08,370 --> 00:08:09,848
+I add in my while loop.
+
+158
+00:08:09,848 --> 00:08:11,640
+But for now, I'm just
+going to say "blank,"
+
+159
+00:08:11,640 --> 00:08:13,680
+and then I'll come
+and fill that in.
+
+160
+00:08:13,680 --> 00:08:16,330
+All right, so once they have
+guessed my favorite movie--
+
+161
+00:08:16,330 --> 00:08:19,660
+so if this IF()
+evaluates as true,
+
+162
+00:08:19,660 --> 00:08:22,000
+meaning they did not
+guess my favorite movie,
+
+163
+00:08:22,000 --> 00:08:23,830
+then this PRINT
+statement will run.
+
+164
+00:08:23,830 --> 00:08:27,905
+If this evaluates as false,
+then my ELSE will run.
+
+165
+00:08:30,420 --> 00:08:34,230
+Now, what I want to do
+is I want to now loop
+
+166
+00:08:34,230 --> 00:08:37,110
+through my
+userguesslist and output
+
+167
+00:08:37,110 --> 00:08:40,542
+to them the movies
+that they have guessed.
+
+168
+00:08:40,542 --> 00:08:42,000
+So let's run what
+we have right now
+
+169
+00:08:42,000 --> 00:08:44,650
+and just make sure
+this logic's working.
+
+170
+00:08:44,650 --> 00:08:45,580
+Run our code often.
+
+171
+00:08:45,580 --> 00:08:47,640
+So what if I say "cinderella"?
+
+172
+00:08:47,640 --> 00:08:48,478
+I hit Enter.
+
+173
+00:08:48,478 --> 00:08:50,020
+"You did not guess
+my favorite movie.
+
+174
+00:08:50,020 --> 00:08:51,520
+You have guessed blank times."
+
+175
+00:08:51,520 --> 00:08:52,740
+OK, that's perfect.
+
+176
+00:08:52,740 --> 00:08:53,940
+"cars."
+
+177
+00:08:53,940 --> 00:08:56,760
+The ELSE should run when they
+do guess my favorite movie.
+
+178
+00:08:56,760 --> 00:08:57,760
+And it says, "Great job!
+
+179
+00:08:57,760 --> 00:08:59,010
+You guessed my favorite movie!
+
+180
+00:08:59,010 --> 00:09:00,130
+It took you blank times."
+
+181
+00:09:00,130 --> 00:09:01,180
+OK, perfect.
+
+182
+00:09:01,180 --> 00:09:03,840
+Now, this next time, I
+actually want to output
+
+183
+00:09:03,840 --> 00:09:04,960
+to them their guesses.
+
+184
+00:09:04,960 --> 00:09:10,000
+So I'm going to say,
+for x in userguesslist.
+
+185
+00:09:10,000 --> 00:09:14,560
+So now, this is a list, and I'm
+going to loop through this list.
+
+186
+00:09:14,560 --> 00:09:17,340
+I want to print(x).
+
+187
+00:09:17,340 --> 00:09:21,643
+So now, I run it, and I say
+"cinderella," for example.
+
+188
+00:09:21,643 --> 00:09:23,560
+It says, "You did not
+guess my favorite movie.
+
+189
+00:09:23,560 --> 00:09:24,670
+You have guessed blank times."
+
+190
+00:09:24,670 --> 00:09:25,170
+Perfect.
+
+191
+00:09:25,170 --> 00:09:28,370
+When I type in "cars,"
+then it says, "Great job!
+
+192
+00:09:28,370 --> 00:09:29,620
+You guessed my favorite movie!
+
+193
+00:09:29,620 --> 00:09:31,830
+It took you blank times."
+
+194
+00:09:31,830 --> 00:09:35,950
+And then I'm printing
+to them "cars."
+
+195
+00:09:35,950 --> 00:09:38,790
+Maybe up here, when I am
+printing to them "It took you
+
+196
+00:09:38,790 --> 00:09:42,150
+blank times," I'm going to
+say, "You guessed--" and then,
+
+197
+00:09:42,150 --> 00:09:45,265
+that way, when my
+for loop runs again,
+
+198
+00:09:45,265 --> 00:09:46,390
+it'll look a little better.
+
+199
+00:09:46,390 --> 00:09:47,260
+It says, "Great job!
+
+200
+00:09:47,260 --> 00:09:49,600
+You guessed my favorite movie!
+
+201
+00:09:49,600 --> 00:09:51,010
+It took you blank times.
+
+202
+00:09:51,010 --> 00:09:54,130
+You guessed," colon,
+and then "cars."
+
+203
+00:09:54,130 --> 00:09:58,710
+So once I add in my while loop,
+and this append() is run more
+
+204
+00:09:58,710 --> 00:10:05,930
+than once, then I will get
+more than one guess appended
+
+205
+00:10:05,930 --> 00:10:08,735
+to my list, and it
+will output more to me.
+
+206
+00:10:08,735 --> 00:10:13,430
+So now, I also want to add
+in here a counter variable.
+
+207
+00:10:13,430 --> 00:10:16,810
+counter = 0.
+
+208
+00:10:16,810 --> 00:10:23,590
+In this counter variable, I want
+to increase by one every time
+
+209
+00:10:23,590 --> 00:10:25,910
+I ask for user's input.
+
+210
+00:10:25,910 --> 00:10:28,145
+So now, I'm going
+to run this again.
+
+211
+00:10:28,145 --> 00:10:29,520
+"Please guess my
+favorite movie."
+
+212
+00:10:29,520 --> 00:10:31,160
+I'd say "cinderella."
+
+213
+00:10:31,160 --> 00:10:31,728
+I hit Enter.
+
+214
+00:10:31,728 --> 00:10:33,270
+"You did not guess
+my favorite movie.
+
+215
+00:10:33,270 --> 00:10:34,520
+You have guessed blank times."
+
+216
+00:10:34,520 --> 00:10:38,310
+Oh, I need to come here
+in this "blank times."
+
+217
+00:10:38,310 --> 00:10:42,990
+I want to change this and
+have it actually be "(counter)
+
+218
+00:10:42,990 --> 00:10:45,760
+times."
+
+219
+00:10:45,760 --> 00:10:49,340
+Same thing here,
+"(counter) times."
+
+220
+00:10:49,340 --> 00:10:50,210
+OK, awesome.
+
+221
+00:10:50,210 --> 00:10:52,280
+Now, let's run it.
+
+222
+00:10:52,280 --> 00:10:54,290
+"Please guess my
+favorite movie."
+
+223
+00:10:54,290 --> 00:10:56,253
+I say "cinderella," hit Enter.
+
+224
+00:10:56,253 --> 00:10:58,170
+It says, "You did not
+guess my favorite movie.
+
+225
+00:10:58,170 --> 00:10:59,970
+You have guessed 1
+times," which is great.
+
+226
+00:10:59,970 --> 00:11:01,720
+That's what it's supposed to do.
+
+227
+00:11:01,720 --> 00:11:05,610
+Now, at this point, I want
+to continue asking them
+
+228
+00:11:05,610 --> 00:11:09,460
+because we notice here,
+every time I answer, I
+
+229
+00:11:09,460 --> 00:11:11,215
+have to rerun the program.
+
+230
+00:11:11,215 --> 00:11:14,180
+So I want to continue making
+this happen over and over
+
+231
+00:11:14,180 --> 00:11:15,150
+and over again.
+
+232
+00:11:15,150 --> 00:11:18,230
+So I'm going to
+use a while loop.
+
+233
+00:11:18,230 --> 00:11:20,780
+And I'm going to say--
+
+234
+00:11:20,780 --> 00:11:23,140
+well, I'm going to
+use a marker variable.
+
+235
+00:11:27,880 --> 00:11:31,150
+Well, actually, I'll say--
+
+236
+00:11:31,150 --> 00:11:33,050
+the marker variable
+can be anything.
+
+237
+00:11:33,050 --> 00:11:36,340
+So I'm going to say,
+y is equal to 0.
+
+238
+00:11:36,340 --> 00:11:37,970
+And this is my marker variable.
+
+239
+00:11:37,970 --> 00:11:40,090
+Now, this is
+something that you're
+
+240
+00:11:40,090 --> 00:11:41,450
+going to be tested on as well.
+
+241
+00:11:41,450 --> 00:11:44,920
+But a marker
+variable, its purpose
+
+242
+00:11:44,920 --> 00:11:49,190
+is to start the while loop
+and then exit the while loop.
+
+243
+00:11:49,190 --> 00:11:54,250
+So I'm going to say, while
+the marker variable is equal,
+
+244
+00:11:54,250 --> 00:11:58,360
+equal to 0, continue
+doing this over and over
+
+245
+00:11:58,360 --> 00:12:05,860
+and over again until you
+break out of the loop.
+
+246
+00:12:05,860 --> 00:12:08,050
+And I want to leave
+the loop once they've
+
+247
+00:12:08,050 --> 00:12:11,140
+guessed my favorite movie and
+once I've output to them what
+
+248
+00:12:11,140 --> 00:12:12,910
+they guessed to me.
+
+249
+00:12:12,910 --> 00:12:17,320
+So a marker variable, when I
+run this, if I say "cinderella,"
+
+250
+00:12:17,320 --> 00:12:19,540
+and I hit Enter, this
+should return to me--
+
+251
+00:12:19,540 --> 00:12:21,140
+"You did not guess
+my favorite movie.
+
+252
+00:12:21,140 --> 00:12:22,370
+You have guessed 1 times."
+
+253
+00:12:22,370 --> 00:12:22,970
+OK, great.
+
+254
+00:12:22,970 --> 00:12:24,980
+Let's say "sandlot."
+
+255
+00:12:24,980 --> 00:12:26,780
+So I'm still guessing
+the incorrect movie.
+
+256
+00:12:26,780 --> 00:12:28,430
+I've guessed two
+times at this point.
+
+257
+00:12:28,430 --> 00:12:31,000
+And now I finally say
+"cars," it says, "Great job!
+
+258
+00:12:31,000 --> 00:12:32,420
+You guessed my favorite movie!"
+
+259
+00:12:32,420 --> 00:12:35,750
+So my ELSE block ran everything
+indented and beneath it.
+
+260
+00:12:35,750 --> 00:12:37,360
+"It took you 3 times."
+
+261
+00:12:37,360 --> 00:12:40,660
+And then, "You guessed--" and my
+for loop runs because it's also
+
+262
+00:12:40,660 --> 00:12:42,830
+indented beneath the ELSE block.
+
+263
+00:12:42,830 --> 00:12:47,325
+And then I finally leave the
+loop, and my program ends.
+
+264
+00:12:47,325 --> 00:12:49,660
+Now, a good question for
+this would be, well, now,
+
+265
+00:12:49,660 --> 00:12:56,380
+what if I actually had my
+marker variable equal to one,
+
+266
+00:12:56,380 --> 00:13:00,280
+something different than up
+here, what I established it as?
+
+267
+00:13:00,280 --> 00:13:01,370
+What would happen?
+
+268
+00:13:01,370 --> 00:13:04,210
+And the answer is nothing
+runs in my program
+
+269
+00:13:04,210 --> 00:13:12,300
+because this while loop never
+runs because y is equal to zero.
+
+270
+00:13:12,300 --> 00:13:14,630
+So this is not true.
+
+271
+00:13:14,630 --> 00:13:16,890
+So the while loop
+will never run.
+
+272
+00:13:16,890 --> 00:13:19,700
+So if I have it like this,
+then the while loop never runs,
+
+273
+00:13:19,700 --> 00:13:23,115
+and my program just
+ends, and that's it.
+
+274
+00:13:23,115 --> 00:13:24,490
+All right, so I
+want to make sure
+
+275
+00:13:24,490 --> 00:13:26,650
+that that marker variable
+is equal to whatever
+
+276
+00:13:26,650 --> 00:13:29,060
+I've established it
+for to start that loop.
+
+277
+00:13:29,060 --> 00:13:31,820
+And then, again, we can
+try a few other things.
+
+278
+00:13:31,820 --> 00:13:33,800
+But that is good to go.
+
+279
+00:13:33,800 --> 00:13:35,310
+OK, perfect.
+
+280
+00:13:35,310 --> 00:13:39,080
+Now, finally, here, we're
+going to get into our SQL.
+
+281
+00:13:39,080 --> 00:13:40,190
+I think we did it all.
+
+282
+00:13:40,190 --> 00:13:40,690
+Yeah.
+
+283
+00:13:40,690 --> 00:13:41,290
+Oh!
+
+284
+00:13:41,290 --> 00:13:43,430
+Be sure this program
+is not case-sensitive.
+
+285
+00:13:43,430 --> 00:13:47,440
+So up here, right now, if I was
+to type in-- let's come back up
+
+286
+00:13:47,440 --> 00:13:48,110
+here--
+
+287
+00:13:48,110 --> 00:13:52,340
+"Cars" with a capital C, it says
+that I did not guess my favorite
+
+288
+00:13:52,340 --> 00:13:52,840
+movie.
+
+289
+00:13:52,840 --> 00:13:54,240
+And I'm like, but why?
+
+290
+00:13:54,240 --> 00:13:58,390
+Well, the reason is because
+I have established that
+
+291
+00:13:58,390 --> 00:14:01,820
+my favorite movie is equal
+to "cars," all undercase.
+
+292
+00:14:01,820 --> 00:14:05,630
+So when I run this, and I
+input "Cars" with an uppercase,
+
+293
+00:14:05,630 --> 00:14:07,990
+then it says, oh,
+yeah, this is true
+
+294
+00:14:07,990 --> 00:14:09,650
+because it's case-sensitive.
+
+295
+00:14:09,650 --> 00:14:16,330
+So what I want to do is I want
+to come here and use my .lower()
+
+296
+00:14:16,330 --> 00:14:20,840
+method to lower my userguess
+to be all lowercase.
+
+297
+00:14:20,840 --> 00:14:25,130
+So now, when I enter, even if
+I enter something with capital
+
+298
+00:14:25,130 --> 00:14:29,996
+"Cars," and I hit Enter,
+it will still run.
+
+299
+00:14:29,996 --> 00:14:32,080
+And it still
+recognizes that, oh,
+
+300
+00:14:32,080 --> 00:14:35,270
+that's the correct guess
+because I've used .lower().
+
+301
+00:14:35,270 --> 00:14:37,635
+So just keep that in mind.
+
+302
+00:14:37,635 --> 00:14:39,070
+Now, down here on
+program 3, we're
+
+303
+00:14:39,070 --> 00:14:41,020
+going to connect to
+the Overland database,
+
+304
+00:14:41,020 --> 00:14:42,478
+and we're going to
+run a query that
+
+305
+00:14:42,478 --> 00:14:45,100
+outputs the first and last
+name, age, season pass
+
+306
+00:14:45,100 --> 00:14:48,820
+status of all guests
+who have a season pass
+
+307
+00:14:48,820 --> 00:14:51,700
+and are between the
+ages of 30 and 35.
+
+308
+00:14:51,700 --> 00:14:53,650
+I'll say "season pass."
+
+309
+00:14:53,650 --> 00:14:55,700
+There we go.
+
+310
+00:14:55,700 --> 00:14:57,590
+Have a season pass--
+
+311
+00:14:57,590 --> 00:15:01,160
+all right, apologies
+about that--
+
+312
+00:15:01,160 --> 00:15:03,782
+and are between the
+ages of 30 and 35.
+
+313
+00:15:03,782 --> 00:15:05,990
+So what I'm going to do is
+I'm going to come up here.
+
+314
+00:15:05,990 --> 00:15:11,255
+I'm going to copy this
+code from up above
+
+315
+00:15:11,255 --> 00:15:16,085
+and paste it down here
+into Program 3 code.
+
+316
+00:15:16,085 --> 00:15:20,450
+And what I'm going to
+say is that once I--
+
+317
+00:15:20,450 --> 00:15:26,280
+you'll notice that it's just
+going to run my overland_sqlite.
+
+318
+00:15:26,280 --> 00:15:29,490
+So I'm going to make sure
+that we upload that file.
+
+319
+00:15:29,490 --> 00:15:32,810
+So let's just make sure that
+we upload this file here
+
+320
+00:15:32,810 --> 00:15:34,140
+before we run that again.
+
+321
+00:15:34,140 --> 00:15:36,777
+So make sure you upload
+the file and make
+
+322
+00:15:36,777 --> 00:15:37,860
+sure you've downloaded it.
+
+323
+00:15:37,860 --> 00:15:40,430
+So I'm going to click
+overland_sqlite.
+
+324
+00:15:40,430 --> 00:15:42,680
+And you'll notice here that
+it gives that warning that
+
+325
+00:15:42,680 --> 00:15:45,390
+if you sit here with the
+Python program too long,
+
+326
+00:15:45,390 --> 00:15:48,230
+then you're going to
+notice that it times out.
+
+327
+00:15:48,230 --> 00:15:50,070
+And you need to upload
+that file again.
+
+328
+00:15:50,070 --> 00:15:52,410
+So I had previously
+had that file in here,
+
+329
+00:15:52,410 --> 00:15:54,890
+but I am just going
+to reupload that.
+
+330
+00:15:54,890 --> 00:15:57,390
+And we're good to go.
+
+331
+00:15:57,390 --> 00:15:59,220
+So now that I have
+this file-- it's
+
+332
+00:15:59,220 --> 00:16:02,950
+basically my storage of
+all my files over here
+
+333
+00:16:02,950 --> 00:16:05,610
+that I'm using to access
+in this Colab notebook.
+
+334
+00:16:05,610 --> 00:16:08,240
+So you could add in all
+sorts of other data over here
+
+335
+00:16:08,240 --> 00:16:09,790
+and just connect to it.
+
+336
+00:16:09,790 --> 00:16:13,970
+So once I've done that, and
+I'm connecting to that database
+
+337
+00:16:13,970 --> 00:16:16,820
+file, then I want to
+come down here and create
+
+338
+00:16:16,820 --> 00:16:19,002
+what we call a cursor.
+
+339
+00:16:19,002 --> 00:16:21,536
+And a cursor is basically--
+
+340
+00:16:24,720 --> 00:16:32,565
+it's an object in Python that
+will go and run this SQL query
+
+341
+00:16:32,565 --> 00:16:34,140
+that we tell it to go run.
+
+342
+00:16:34,140 --> 00:16:37,930
+And then it brings back the
+data for us from that database.
+
+343
+00:16:37,930 --> 00:16:42,515
+So I'm going to tell the cursor
+to go ahead and run this query.
+
+344
+00:16:42,515 --> 00:16:44,140
+So I'm going to give
+it a query to run.
+
+345
+00:16:44,140 --> 00:16:48,600
+I'm going to say, you know what,
+SELECT first name, last name,
+
+346
+00:16:48,600 --> 00:16:50,220
+Age, and SeasonPass.
+
+347
+00:16:50,220 --> 00:16:53,340
+Remember, all this comes
+from my Guest table.
+
+348
+00:16:53,340 --> 00:16:55,780
+OK, so we want to
+check that out.
+
+349
+00:16:55,780 --> 00:16:59,820
+My Guest table contains the
+first name, last name, age,
+
+350
+00:16:59,820 --> 00:17:02,500
+and season pass status
+of all of my guests.
+
+351
+00:17:02,500 --> 00:17:04,770
+So we're back here
+to our database.
+
+352
+00:17:04,770 --> 00:17:06,540
+We're going to make
+sure that we're
+
+353
+00:17:06,540 --> 00:17:08,140
+pointing to that right table.
+
+354
+00:17:08,140 --> 00:17:11,250
+So I'm going to say,
+FROM the Guest table
+
+355
+00:17:11,250 --> 00:17:26,060
+WHERE Age BETWEEN 30 AND 35
+AND SeasonPass equal to yes.
+
+356
+00:17:26,060 --> 00:17:29,250
+So that's the query that
+I want to have it run.
+
+357
+00:17:29,250 --> 00:17:32,240
+Now, what you'll notice
+is I'm going to play this,
+
+358
+00:17:32,240 --> 00:17:35,220
+and it gives me where
+the cursor is located.
+
+359
+00:17:35,220 --> 00:17:38,280
+So basically, it's saying,
+all right, Reagan, we went,
+
+360
+00:17:38,280 --> 00:17:39,180
+we've run the query.
+
+361
+00:17:39,180 --> 00:17:41,690
+Now, what is my
+responsibility is
+
+362
+00:17:41,690 --> 00:17:43,850
+to now pull that
+data that's basically
+
+363
+00:17:43,850 --> 00:17:48,390
+sitting in that cursor,
+if you will, into a list.
+
+364
+00:17:48,390 --> 00:17:50,660
+So just like what
+we did up above,
+
+365
+00:17:50,660 --> 00:17:52,650
+and we've talked about
+this in our videos,
+
+366
+00:17:52,650 --> 00:17:55,580
+we're going to pull this
+into a list called results.
+
+367
+00:17:55,580 --> 00:17:59,310
+And we're going to say,
+results = cursor.fetchall().
+
+368
+00:17:59,310 --> 00:18:02,270
+What this fetchall() means
+is pull all of those records
+
+369
+00:18:02,270 --> 00:18:07,760
+of data returned to you, fetch
+all of them from the cursor,
+
+370
+00:18:07,760 --> 00:18:12,300
+and place it in the
+results variable as a list.
+
+371
+00:18:12,300 --> 00:18:14,990
+Then what I can do is I can
+come here, and I can say,
+
+372
+00:18:14,990 --> 00:18:19,020
+you know what,
+for x in results--
+
+373
+00:18:19,020 --> 00:18:22,900
+or actually, let's just
+say print(results) for now.
+
+374
+00:18:22,900 --> 00:18:25,330
+OK, so let's go
+ahead and run this.
+
+375
+00:18:25,330 --> 00:18:26,950
+And what you'll
+notice is returned
+
+376
+00:18:26,950 --> 00:18:29,150
+to me is this is all on a list.
+
+377
+00:18:29,150 --> 00:18:30,980
+This results is a list.
+
+378
+00:18:30,980 --> 00:18:34,670
+And every value in
+this list is a tuple,
+
+379
+00:18:34,670 --> 00:18:35,810
+which we've talked about.
+
+380
+00:18:35,810 --> 00:18:37,798
+The tuple is similar to a list.
+
+381
+00:18:37,798 --> 00:18:38,840
+It's just not changeable.
+
+382
+00:18:38,840 --> 00:18:41,910
+But basically, what this is
+is this is a database record--
+
+383
+00:18:41,910 --> 00:18:45,890
+Jaelynn, Stephens, age 31,
+does have a season pass.
+
+384
+00:18:45,890 --> 00:18:52,160
+So Jaelynn is a
+guest in my database.
+
+385
+00:18:52,160 --> 00:18:53,860
+This is all of
+Jaelynn's information
+
+386
+00:18:53,860 --> 00:18:56,600
+that is returned to me
+based upon this query.
+
+387
+00:18:56,600 --> 00:19:00,650
+So this is like a horizontal
+record that's output to me,
+
+388
+00:19:00,650 --> 00:19:03,190
+just like it would
+be in Beekeeper.
+
+389
+00:19:03,190 --> 00:19:05,020
+So if I was to run
+this-- let's just
+
+390
+00:19:05,020 --> 00:19:06,430
+pull up Beekeeper here quick.
+
+391
+00:19:06,430 --> 00:19:08,823
+And I'm going to run
+the same query there.
+
+392
+00:19:13,985 --> 00:19:16,740
+And I do not need connection.
+
+393
+00:19:16,740 --> 00:19:20,400
+Let me just grab this here
+really quick and press Connect.
+
+394
+00:19:20,400 --> 00:19:22,984
+Doo, doo, doo, doo, doo.
+
+395
+00:19:22,984 --> 00:19:24,345
+And I run this.
+
+396
+00:19:24,345 --> 00:19:26,710
+Oh, now it's mad at me.
+
+397
+00:19:26,710 --> 00:19:27,350
+Hold on.
+
+398
+00:19:27,350 --> 00:19:30,250
+Make sure I'm in my
+Overland database.
+
+399
+00:19:30,250 --> 00:19:30,980
+OK.
+
+400
+00:19:30,980 --> 00:19:33,830
+So we'll notice here's
+Jaelynn Stephens; age, 31;
+
+401
+00:19:33,830 --> 00:19:34,690
+season pass, yes.
+
+402
+00:19:34,690 --> 00:19:37,520
+So this is all a tuple.
+
+403
+00:19:37,520 --> 00:19:40,270
+This is a record of
+my database that's
+
+404
+00:19:40,270 --> 00:19:42,825
+being returned to me here.
+
+405
+00:19:42,825 --> 00:19:47,710
+So Jaelynn, Stephens, age 31,
+yes-- this is a database record.
+
+406
+00:19:47,710 --> 00:19:49,798
+And I can work with
+those database record.
+
+407
+00:19:49,798 --> 00:19:51,590
+All right, so now that
+we figured this out,
+
+408
+00:19:51,590 --> 00:19:54,140
+what I want to do is instead
+of printing it just like this,
+
+409
+00:19:54,140 --> 00:19:55,883
+just like in this
+weird list format,
+
+410
+00:19:55,883 --> 00:19:57,550
+I actually want to
+come up here, and I'm
+
+411
+00:19:57,550 --> 00:20:00,543
+going to say, for y in results.
+
+412
+00:20:04,565 --> 00:20:07,892
+And I want to print
+these different values.
+
+413
+00:20:07,892 --> 00:20:09,350
+So I'm going to
+use f-strings here.
+
+414
+00:20:09,350 --> 00:20:11,910
+And I'm going to say I want
+to print the first name,
+
+415
+00:20:11,910 --> 00:20:13,770
+so I'm going to label this data.
+
+416
+00:20:13,770 --> 00:20:17,217
+Then I'm going to
+print the last name.
+
+417
+00:20:17,217 --> 00:20:19,050
+OK, I'll fill in this
+data here in a second.
+
+418
+00:20:19,050 --> 00:20:20,550
+Then, I'm going
+to print the age.
+
+419
+00:20:20,550 --> 00:20:24,990
+Then, I'm going to print
+the season pass status.
+
+420
+00:20:24,990 --> 00:20:28,250
+And the way that I'm
+going to do this is I'm
+
+421
+00:20:28,250 --> 00:20:30,900
+going to use what we've already
+learned so far in the class,
+
+422
+00:20:30,900 --> 00:20:32,490
+which are index values.
+
+423
+00:20:32,490 --> 00:20:35,720
+And I know that the
+0 index position
+
+424
+00:20:35,720 --> 00:20:37,290
+is the one that we start with.
+
+425
+00:20:37,290 --> 00:20:42,890
+So the 0 index position of this
+tuple, its value is Jaelynn.
+
+426
+00:20:42,890 --> 00:20:44,330
+It's the first name.
+
+427
+00:20:44,330 --> 00:20:46,410
+Remember, Python
+starts counting at 0.
+
+428
+00:20:46,410 --> 00:20:48,960
+So the 0 index value is Jaelynn.
+
+429
+00:20:48,960 --> 00:20:51,750
+The Stephens is the
+second index value.
+
+430
+00:20:51,750 --> 00:20:54,390
+31 is the third index value.
+
+431
+00:20:54,390 --> 00:20:56,900
+And the fourth or the-- sorry.
+
+432
+00:20:56,900 --> 00:21:00,750
+[CACKLES]
+
+433
+00:21:00,750 --> 00:21:02,820
+Jaelynn's index value is 0.
+
+434
+00:21:02,820 --> 00:21:05,270
+Stephen's index value is 1.
+
+435
+00:21:05,270 --> 00:21:07,870
+31's index value is 2.
+
+436
+00:21:07,870 --> 00:21:09,940
+And then the season pass'--
+
+437
+00:21:09,940 --> 00:21:12,400
+this y-- index value is 3.
+
+438
+00:21:12,400 --> 00:21:15,730
+So when I come up here,
+I can say, you know what,
+
+439
+00:21:15,730 --> 00:21:21,400
+bring the value,
+again, here within y.
+
+440
+00:21:21,400 --> 00:21:23,820
+So again, remember, because
+when we loop through,
+
+441
+00:21:23,820 --> 00:21:29,890
+this tuple is assigned to be
+the value of y one time through.
+
+442
+00:21:29,890 --> 00:21:32,160
+And then it prints out
+"Jaelynn," "Stephens," "31,"
+
+443
+00:21:32,160 --> 00:21:35,290
+"y," and then it's going to
+print out "Chase" and "Morales."
+
+444
+00:21:35,290 --> 00:21:37,665
+So let's go ahead, and we're
+going to say, you know what,
+
+445
+00:21:37,665 --> 00:21:39,870
+print y.
+
+446
+00:21:39,870 --> 00:21:42,390
+And then we're going to pull
+the 0 index value, which
+
+447
+00:21:42,390 --> 00:21:43,960
+would be Jaelynn here.
+
+448
+00:21:43,960 --> 00:21:46,500
+Then we're going to
+print y, and we're
+
+449
+00:21:46,500 --> 00:21:49,500
+going to say-- oh, that's
+not the way I want to do it.
+
+450
+00:21:49,500 --> 00:21:54,630
+Nope, we're going to say the
+variable is y with the 0 index
+
+451
+00:21:54,630 --> 00:21:55,320
+value.
+
+452
+00:21:55,320 --> 00:21:56,910
+There we go.
+
+453
+00:21:56,910 --> 00:22:01,860
+And then, the variable is
+y with the 1 index value.
+
+454
+00:22:01,860 --> 00:22:08,146
+And then, the age
+variable, our age is 1--
+
+455
+00:22:08,146 --> 00:22:10,105
+or sorry, 2.
+
+456
+00:22:10,105 --> 00:22:14,240
+And then season pass is 3.
+
+457
+00:22:14,240 --> 00:22:17,000
+OK, so now, when
+I run this, we'll
+
+458
+00:22:17,000 --> 00:22:20,040
+notice here that we get
+all of this output to me.
+
+459
+00:22:20,040 --> 00:22:21,595
+So I get "Firstname--
+
+460
+00:22:21,595 --> 00:22:22,970
+Jaelynn Lastname--
+Stephens Age--
+
+461
+00:22:22,970 --> 00:22:24,330
+31 SeasonPass-- y.
+
+462
+00:22:24,330 --> 00:22:29,800
+So I am pulling the data that
+we have returned from this SQL
+
+463
+00:22:29,800 --> 00:22:32,532
+query into this list.
+
+464
+00:22:32,532 --> 00:22:34,540
+Then, from there,
+each of that list
+
+465
+00:22:34,540 --> 00:22:36,560
+contains a series of tuples.
+
+466
+00:22:36,560 --> 00:22:39,880
+And each of those tuples, I can
+refer to an individual value
+
+467
+00:22:39,880 --> 00:22:42,740
+within those tuples
+using index positions,
+
+468
+00:22:42,740 --> 00:22:48,790
+and I can print out this nicely
+labeled data set here for us.
+
+469
+00:22:48,790 --> 00:22:50,475
+OK, awesome.
+
+470
+00:22:50,475 --> 00:22:52,850
+Now, I'm going to again connect
+to the Overland database.
+
+471
+00:22:52,850 --> 00:22:55,142
+I'm going to ask the user
+for their first and last name
+
+472
+00:22:55,142 --> 00:22:55,975
+duh, duh, duh.
+
+473
+00:22:55,975 --> 00:22:59,710
+Look up the user in the database
+based on first and last names.
+
+474
+00:22:59,710 --> 00:23:01,205
+Assume they are in our database.
+
+475
+00:23:01,205 --> 00:23:02,830
+If they are in our
+database, thank them
+
+476
+00:23:02,830 --> 00:23:04,700
+for being a valued member
+of our Overland community.
+
+477
+00:23:04,700 --> 00:23:06,280
+Output to them the
+information we have about them
+
+478
+00:23:06,280 --> 00:23:07,280
+in the database.
+
+479
+00:23:07,280 --> 00:23:08,488
+So I'm going to come up here.
+
+480
+00:23:10,740 --> 00:23:14,080
+Actually, I'm going to
+copy these lines of code,
+
+481
+00:23:14,080 --> 00:23:16,150
+so from the import--
+
+482
+00:23:16,150 --> 00:23:19,090
+again, this import
+imports these capabilities
+
+483
+00:23:19,090 --> 00:23:23,500
+of this sqlite3 library.
+
+484
+00:23:23,500 --> 00:23:25,090
+And these capabilities
+are the fact
+
+485
+00:23:25,090 --> 00:23:30,500
+that I can go and
+run this SQL query,
+
+486
+00:23:30,500 --> 00:23:35,020
+and that's based upon the
+fact that I can also create
+
+487
+00:23:35,020 --> 00:23:36,805
+cursors and things like that.
+
+488
+00:23:36,805 --> 00:23:40,100
+So now, I come down
+here, and I have this.
+
+489
+00:23:40,100 --> 00:23:45,010
+I want to ask the user for
+their first and last name.
+
+490
+00:23:45,010 --> 00:23:46,340
+And then I'll run a query.
+
+491
+00:23:46,340 --> 00:23:49,720
+So I'm just basically using
+this as a template, that program
+
+492
+00:23:49,720 --> 00:23:51,105
+I just copied from up above.
+
+493
+00:23:53,710 --> 00:23:55,540
+Basically, it's
+a Lookup program.
+
+494
+00:23:55,540 --> 00:24:01,210
+I'm looking up the
+individuals in my database.
+
+495
+00:24:01,210 --> 00:24:04,528
+So I'm going to say,
+print("Welcome to Overland Ski
+
+496
+00:24:04,528 --> 00:24:16,100
+Resort.") And then I'm going
+to ask them userfirstname.
+
+497
+00:24:16,100 --> 00:24:18,980
+I'm going to ask them to input--
+
+498
+00:24:18,980 --> 00:24:24,490
+"Please enter your first name."
+
+499
+00:24:27,470 --> 00:24:30,700
+Then, I want to ask
+them userlastname, say,
+
+500
+00:24:30,700 --> 00:24:33,280
+input("Please enter
+your last name").
+
+501
+00:24:36,058 --> 00:24:38,350
+So I'm going to ask them for
+their first and last name.
+
+502
+00:24:38,350 --> 00:24:40,517
+And then I'm going to assume
+they're in my database.
+
+503
+00:24:40,517 --> 00:24:44,010
+And then I'm going to output
+to them their information.
+
+504
+00:24:44,010 --> 00:24:45,350
+So let's come down here.
+
+505
+00:24:45,350 --> 00:24:46,960
+So after I've asked
+for their username
+
+506
+00:24:46,960 --> 00:24:49,330
+and their first and
+last name, then I
+
+507
+00:24:49,330 --> 00:24:52,420
+want to amend my cursor here.
+
+508
+00:24:52,420 --> 00:24:57,410
+And I want to go
+into the database
+
+509
+00:24:57,410 --> 00:25:02,455
+and enter their first and last
+name into my WHERE clause.
+
+510
+00:25:02,455 --> 00:25:08,840
+So if I was to write this here
+in SQL and Beekeeper-- oh,
+
+511
+00:25:08,840 --> 00:25:10,400
+sorry.
+
+512
+00:25:10,400 --> 00:25:12,440
+Why-- let's see.
+
+513
+00:25:12,440 --> 00:25:13,625
+There-- no.
+
+514
+00:25:13,625 --> 00:25:14,750
+That's not wanting to show.
+
+515
+00:25:14,750 --> 00:25:16,770
+Hold on.
+
+516
+00:25:16,770 --> 00:25:17,845
+Oh, it's down here.
+
+517
+00:25:17,845 --> 00:25:18,740
+[LAUGHS]
+
+518
+00:25:18,740 --> 00:25:23,600
+So I would say, WHERE first name
+equal to-- let's just say if we
+
+519
+00:25:23,600 --> 00:25:24,720
+were looking for me--
+
+520
+00:25:24,720 --> 00:25:33,820
+'Reagan' AND last name
+equal to 'Siggard.'
+
+521
+00:25:33,820 --> 00:25:36,373
+Let's just say this is
+what I was looking for.
+
+522
+00:25:40,220 --> 00:25:46,520
+So you will notice I have to
+include these straight quotes
+
+523
+00:25:46,520 --> 00:25:48,600
+around 'Reagan' and 'Siggard."
+
+524
+00:25:48,600 --> 00:25:52,710
+And so I run this, and there
+is nothing output to me
+
+525
+00:25:52,710 --> 00:25:54,150
+because I'm not in the database.
+
+526
+00:25:54,150 --> 00:25:56,790
+So let's come up here to the
+program that I wrote before.
+
+527
+00:25:56,790 --> 00:26:00,000
+An Ella Foster, I know,
+is in my database,
+
+528
+00:26:00,000 --> 00:26:03,440
+so let's instead write
+'Ella,' 'Foster.'
+
+529
+00:26:03,440 --> 00:26:07,760
+So I'm just getting the format
+here of this database program.
+
+530
+00:26:07,760 --> 00:26:09,270
+And I'm going to press Run.
+
+531
+00:26:09,270 --> 00:26:12,410
+And here I have that
+Ella Foster is aged 33,
+
+532
+00:26:12,410 --> 00:26:15,300
+and their season pass is one.
+
+533
+00:26:15,300 --> 00:26:16,950
+So perfect.
+
+534
+00:26:16,950 --> 00:26:21,863
+Now, I'm just going to
+keep the information--
+
+535
+00:26:21,863 --> 00:26:23,280
+says, if they are
+in our database,
+
+536
+00:26:23,280 --> 00:26:24,680
+thank them for being a
+valued member of our Overland
+
+537
+00:26:24,680 --> 00:26:25,080
+community.
+
+538
+00:26:25,080 --> 00:26:27,122
+Output to them the
+information we have about them
+
+539
+00:26:27,122 --> 00:26:27,840
+in the database.
+
+540
+00:26:27,840 --> 00:26:29,120
+I'm just going to
+output them for right
+
+541
+00:26:29,120 --> 00:26:31,810
+now their first name, last name,
+age, and season pass status.
+
+542
+00:26:31,810 --> 00:26:33,180
+That will be just fine.
+
+543
+00:26:33,180 --> 00:26:36,690
+So here in my WHERE
+clause, I'm going
+
+544
+00:26:36,690 --> 00:26:39,210
+to use a value from the
+variables userfirstname
+
+545
+00:26:39,210 --> 00:26:41,790
+and userlastname
+just like I would
+
+546
+00:26:41,790 --> 00:26:44,400
+here, where I actually
+put in the user's
+
+547
+00:26:44,400 --> 00:26:46,930
+first name and last
+name, like Ella Foster.
+
+548
+00:26:46,930 --> 00:26:50,025
+So I'll come over here, and
+I'll say, WHERE userfirstname--
+
+549
+00:26:53,222 --> 00:26:54,031
+oh, no, no.
+
+550
+00:26:54,031 --> 00:26:55,162
+[CHUCKLES]
+
+551
+00:26:55,162 --> 00:26:57,790
+WHERE first name equal to--
+
+552
+00:26:57,790 --> 00:27:02,600
+and then, within the single
+straight marks, I have to put--
+
+553
+00:27:02,600 --> 00:27:07,770
+again, I have to use those
+because this is going and being
+
+554
+00:27:07,770 --> 00:27:09,250
+ran as an SQL query.
+
+555
+00:27:09,250 --> 00:27:12,060
+And we know from
+our prior experience
+
+556
+00:27:12,060 --> 00:27:15,060
+and just from the
+program we just wrote,
+
+557
+00:27:15,060 --> 00:27:18,540
+they have to be within these
+marks in order for my SQL query
+
+558
+00:27:18,540 --> 00:27:22,231
+to run and recognize
+them as string data.
+
+559
+00:27:22,231 --> 00:27:24,490
+So WHERE firstname
+equal to userfirstname
+
+560
+00:27:24,490 --> 00:27:34,765
+and lastname equal to the value
+from the variable userlastname.
+
+561
+00:27:34,765 --> 00:27:37,170
+And again, I have
+to use those so
+
+562
+00:27:37,170 --> 00:27:41,070
+that Python will
+recognize it, as those are
+
+563
+00:27:41,070 --> 00:27:43,110
+these little straight marks.
+
+564
+00:27:43,110 --> 00:27:46,120
+So now, when I run this,
+I'm going to come up here.
+
+565
+00:27:46,120 --> 00:27:55,240
+I'm going to grab actually
+from up above this cursor.
+
+566
+00:27:55,240 --> 00:27:56,790
+I'm going to grab that code.
+
+567
+00:27:56,790 --> 00:27:58,350
+This time, instead
+of using results,
+
+568
+00:27:58,350 --> 00:28:01,340
+I'm going to say
+outputresults just
+
+569
+00:28:01,340 --> 00:28:05,060
+to make the variable
+name a little bit
+
+570
+00:28:05,060 --> 00:28:07,880
+different from the
+one that I used prior.
+
+571
+00:28:07,880 --> 00:28:12,570
+OK, so now, when I run this,
+I'm going to use Ella Foster.
+
+572
+00:28:12,570 --> 00:28:15,170
+I would recommend using
+somebody as a test case.
+
+573
+00:28:15,170 --> 00:28:18,150
+So I am to assume they
+are in my database.
+
+574
+00:28:18,150 --> 00:28:20,960
+So I'm going to say "ella,"
+and then I'll say "foster"
+
+575
+00:28:20,960 --> 00:28:21,710
+is my last name.
+
+576
+00:28:21,710 --> 00:28:25,015
+And I hit Enter, but
+nothing returns to me.
+
+577
+00:28:25,015 --> 00:28:27,500
+Hmm, that's weird.
+
+578
+00:28:27,500 --> 00:28:28,980
+All right, let's
+take a look here.
+
+579
+00:28:28,980 --> 00:28:33,860
+And last name = userlastname.
+userfirstname, userlastname.
+
+580
+00:28:33,860 --> 00:28:37,170
+outputresults.
+
+581
+00:28:37,170 --> 00:28:40,482
+[LIP BURBLING]
+
+582
+00:28:40,482 --> 00:28:42,190
+Let's just see if
+there's something here.
+
+583
+00:28:42,190 --> 00:28:46,025
+What if I just
+print(outputresults)?
+
+584
+00:28:49,207 --> 00:28:50,290
+You're probably seeing it.
+
+585
+00:28:50,290 --> 00:28:52,290
+You're probably like,
+Reagan, this is the issue.
+
+586
+00:28:52,290 --> 00:28:54,000
+Hold on.
+
+587
+00:28:54,000 --> 00:28:55,070
+Let me run this again.
+
+588
+00:28:55,070 --> 00:28:58,950
+I'm going to say "ella"
+and then "foster."
+
+589
+00:28:58,950 --> 00:29:00,760
+And I hit Enter.
+
+590
+00:29:00,760 --> 00:29:03,760
+OK, so my program runs, and
+I just have this empty list.
+
+591
+00:29:03,760 --> 00:29:09,106
+So nothing is returning to me.
+
+592
+00:29:09,106 --> 00:29:11,230
+Oh, dear, now I know
+what's going on.
+
+593
+00:29:11,230 --> 00:29:15,560
+I forgot to use f-strings up
+here within my cursor.execute().
+
+594
+00:29:15,560 --> 00:29:18,330
+So it's actually
+looking for somebody
+
+595
+00:29:18,330 --> 00:29:22,780
+with this as their first name
+and that as their last name.
+
+596
+00:29:22,780 --> 00:29:25,090
+All right, now, we
+need to use f-string.
+
+597
+00:29:25,090 --> 00:29:29,160
+So it says, I'll pull the data
+from the variable userfirstname
+
+598
+00:29:29,160 --> 00:29:30,330
+and place it here.
+
+599
+00:29:30,330 --> 00:29:31,760
+All right, let's run this again.
+
+600
+00:29:31,760 --> 00:29:35,380
+Let's say "ella," enter,
+"foster," hit Enter.
+
+601
+00:29:35,380 --> 00:29:35,940
+Sweet.
+
+602
+00:29:35,940 --> 00:29:38,070
+And there's Ella's information.
+
+603
+00:29:38,070 --> 00:29:42,340
+Now, this one, I'm assuming
+that they are in our database.
+
+604
+00:29:42,340 --> 00:29:47,955
+Oh, I'm going to output to
+them, for y in outputresults,
+
+605
+00:29:47,955 --> 00:29:54,057
+"Thank you for being a part
+of our overland community."
+
+606
+00:29:54,057 --> 00:29:56,390
+And then I'll just return
+them first name and last name.
+
+607
+00:29:56,390 --> 00:29:57,980
+Let's try this again.
+
+608
+00:29:57,980 --> 00:30:02,240
+"ella," "foster," and I hit
+Enter, and it returns them.
+
+609
+00:30:02,240 --> 00:30:05,930
+Now, what if I was to put
+"Reagan Siggard" here?
+
+610
+00:30:05,930 --> 00:30:08,380
+I'm not in the database.
+
+611
+00:30:08,380 --> 00:30:10,820
+Nothing outputs to me because
+I'm not in the database.
+
+612
+00:30:10,820 --> 00:30:13,550
+This query did not
+return anything to me.
+
+613
+00:30:13,550 --> 00:30:16,740
+So we're going to address
+that down here in program 5.
+
+614
+00:30:16,740 --> 00:30:18,330
+This time, same
+thing, but we're going
+
+615
+00:30:18,330 --> 00:30:23,240
+to verify that they
+are in our database.
+
+616
+00:30:23,240 --> 00:30:27,570
+So I'm going to copy
+down this program,
+
+617
+00:30:27,570 --> 00:30:31,210
+and paste it here in program 5.
+
+618
+00:30:31,210 --> 00:30:36,590
+And in this program 5, I am
+going to add a few things in.
+
+619
+00:30:36,590 --> 00:30:39,197
+So I just want to verify
+they're in my database.
+
+620
+00:30:39,197 --> 00:30:41,530
+So one way that I can verify
+that they're in my database
+
+621
+00:30:41,530 --> 00:30:48,110
+is I know that if I run this,
+and nothing returns to me,
+
+622
+00:30:48,110 --> 00:30:53,910
+that the outputresults is empty.
+
+623
+00:30:53,910 --> 00:30:57,880
+There is nothing in this
+outputresults list because, like
+
+624
+00:30:57,880 --> 00:31:03,400
+we just saw above, if I was to
+print(outputresults) and, again,
+
+625
+00:31:03,400 --> 00:31:06,820
+just run this again, I
+say "reagan," "siggard,"
+
+626
+00:31:06,820 --> 00:31:09,430
+then what returns to
+me is this empty list.
+
+627
+00:31:09,430 --> 00:31:10,990
+So there's nothing in it.
+
+628
+00:31:10,990 --> 00:31:13,600
+So what I can do is I can
+actually say, you know what,
+
+629
+00:31:13,600 --> 00:31:17,160
+I'm going to use my len()
+function that finds out how many
+
+630
+00:31:17,160 --> 00:31:19,030
+characters is in a string.
+
+631
+00:31:19,030 --> 00:31:20,940
+I can actually do the
+same thing with list.
+
+632
+00:31:20,940 --> 00:31:22,450
+And I can use that
+len() function.
+
+633
+00:31:22,450 --> 00:31:28,020
+I can say, count the number
+of values in this list.
+
+634
+00:31:28,020 --> 00:31:35,370
+So I will then say, if the
+length of outputresults is
+
+635
+00:31:35,370 --> 00:31:40,800
+# equal, equal to 0, meaning
+#the list is empty,
+
+636
+00:31:40,800 --> 00:31:48,120
+nothing returned to
+me, if that is true,
+
+637
+00:31:48,120 --> 00:31:50,139
+then I just want
+to print("Shoot!
+
+638
+00:31:50,139 --> 00:32:05,320
+You are not in our database.")
+Now, if this is not true,
+
+639
+00:32:05,320 --> 00:32:10,160
+then I want to run ELSE.
+
+640
+00:32:10,160 --> 00:32:13,290
+And then I want to output
+to them this for loop.
+
+641
+00:32:15,880 --> 00:32:22,460
+So if they are in our
+database, do this.
+
+642
+00:32:22,460 --> 00:32:24,020
+So now, we can go
+ahead and run this.
+
+643
+00:32:24,020 --> 00:32:26,385
+And I'm going to
+say ella foster,
+
+644
+00:32:26,385 --> 00:32:28,410
+I know, is in my database.
+
+645
+00:32:28,410 --> 00:32:29,140
+Perfect.
+
+646
+00:32:29,140 --> 00:32:32,260
+This evaluated as
+false because there
+
+647
+00:32:32,260 --> 00:32:35,210
+is one record returned
+in my outputresults,
+
+648
+00:32:35,210 --> 00:32:36,640
+so it's not empty.
+
+649
+00:32:36,640 --> 00:32:40,130
+And then my ELSE block ran, and
+it output their information.
+
+650
+00:32:40,130 --> 00:32:41,630
+I'm going to run this again.
+
+651
+00:32:41,630 --> 00:32:45,400
+And I'm going to say
+"reagan," "siggard."
+
+652
+00:32:45,400 --> 00:32:48,190
+The length of my
+outputresults will be zero.
+
+653
+00:32:48,190 --> 00:32:50,320
+So my IF block is true.
+
+654
+00:32:50,320 --> 00:32:51,325
+And it says, "Shoot!
+
+655
+00:32:51,325 --> 00:32:53,440
+You are not in our database."
+
+656
+00:32:53,440 --> 00:32:54,740
+So that's what you have.
+
+657
+00:32:54,740 --> 00:32:57,337
+That's how we can verify that
+they are in our database.
+
+658
+00:32:57,337 --> 00:32:59,170
+And then, this way, we
+can inform them, ooh,
+
+659
+00:32:59,170 --> 00:33:00,397
+you're not in our database.
+
+660
+00:33:00,397 --> 00:33:02,980
+But if they are, we can return
+to them in their output, still.
+
+661
+00:33:02,980 --> 00:33:05,020
+Now, make sure you add
+in a couple of comments
+
+662
+00:33:05,020 --> 00:33:14,120
+# here, like #running
+the query, #grabbing
+
+663
+00:33:14,120 --> 00:33:22,240
+all the output
+(database records)
+
+664
+00:33:22,240 --> 00:33:26,530
+and adding it to a
+list, and so forth, just
+
+665
+00:33:26,530 --> 00:33:29,550
+to make good comments
+throughout and to help you.
+
+666
+00:33:29,550 --> 00:33:32,350
+So that's what you have here
+for this in-class assignment.
+
+667
+00:33:32,350 --> 00:33:33,890
+Thanks so much for
+your hard work.
+
+668
+00:33:33,890 --> 00:33:36,790
+Again, get this turned in.
+
+669
+00:33:36,790 --> 00:33:39,160
+And you're going to turn in
+those two different files.
+
+670
+00:33:39,160 --> 00:33:40,493
+All right, take care, everybody.
+
+671
+00:33:40,493 --> 00:33:41,500
+Thank you.

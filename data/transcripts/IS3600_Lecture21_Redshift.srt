@@ -1,0 +1,3604 @@
+1
+00:00:00,543 --> 00:00:01,710
+SHARAD JONES: Hey, everyone.
+
+2
+00:00:01,710 --> 00:00:02,520
+Welcome back.
+
+3
+00:00:02,520 --> 00:00:05,510
+So in today's video, we're
+going to be talking about--
+
+4
+00:00:05,510 --> 00:00:07,490
+I'm sorry, my shirt
+keeps blinking
+
+5
+00:00:07,490 --> 00:00:08,490
+in and out of existence.
+
+6
+00:00:08,490 --> 00:00:10,435
+The sun's coming right
+in, so it's just--
+
+7
+00:00:10,435 --> 00:00:11,810
+we'll talk about
+machine learning
+
+8
+00:00:11,810 --> 00:00:14,040
+and how it does this detection
+and why it's failing.
+
+9
+00:00:14,040 --> 00:00:15,240
+So don't worry.
+
+10
+00:00:15,240 --> 00:00:17,593
+This is all part
+of the plan, right?
+
+11
+00:00:17,593 --> 00:00:19,260
+But hopefully, it's
+not too distracting.
+
+12
+00:00:19,260 --> 00:00:20,870
+But either way, in
+today's lecture,
+
+13
+00:00:20,870 --> 00:00:22,830
+we'll be talking
+about Amazon Redshift.
+
+14
+00:00:22,830 --> 00:00:26,430
+So in Amazon Redshift--
+maybe I can just shift this.
+
+15
+00:00:26,430 --> 00:00:27,160
+I have a light--
+
+16
+00:00:27,160 --> 00:00:29,160
+or something I'm trying
+to block the light with.
+
+17
+00:00:29,160 --> 00:00:31,035
+So hopefully, that'll
+make it slightly better
+
+18
+00:00:31,035 --> 00:00:32,100
+on one side at least.
+
+19
+00:00:32,100 --> 00:00:36,800
+But either way, with Amazon
+Redshift, up until now,
+
+20
+00:00:36,800 --> 00:00:38,480
+at least, we've been
+talking about RDS.
+
+21
+00:00:38,480 --> 00:00:40,400
+So that's relational
+database service,
+
+22
+00:00:40,400 --> 00:00:43,430
+that's Amazon's relational
+database service-- a fully
+
+23
+00:00:43,430 --> 00:00:45,450
+managed service in the cloud.
+
+24
+00:00:45,450 --> 00:00:47,190
+And here, I'll blink
+to the next slide.
+
+25
+00:00:47,190 --> 00:00:50,270
+And that has served us
+well and, to some extent,
+
+26
+00:00:50,270 --> 00:00:53,460
+encompasses the vast
+majority of database work.
+
+27
+00:00:53,460 --> 00:00:55,310
+But RDS or
+specifically, Redshift,
+
+28
+00:00:55,310 --> 00:00:59,300
+will give us a little bit of
+a variation on that, that will
+
+29
+00:00:59,300 --> 00:01:01,800
+justify the use case for it.
+
+30
+00:01:01,800 --> 00:01:04,110
+But either way, to
+review briefly on RDS,
+
+31
+00:01:04,110 --> 00:01:07,200
+what it is, as I was
+saying, a completely managed
+
+32
+00:01:07,200 --> 00:01:09,070
+relational database
+as a service.
+
+33
+00:01:09,070 --> 00:01:11,130
+So that means that we are--
+
+34
+00:01:11,130 --> 00:01:13,950
+we can choose the hardware type.
+
+35
+00:01:13,950 --> 00:01:16,380
+Really, that's going to be
+through the instance type.
+
+36
+00:01:16,380 --> 00:01:20,070
+So we chose T2 micro, for
+example, or whatever it was.
+
+37
+00:01:20,070 --> 00:01:21,030
+And you can alter--
+
+38
+00:01:21,030 --> 00:01:22,405
+you can choose
+that instance type
+
+39
+00:01:22,405 --> 00:01:26,070
+set to optimize performance,
+memory, I/O, whatever it may be,
+
+40
+00:01:26,070 --> 00:01:27,840
+for your specific use case.
+
+41
+00:01:27,840 --> 00:01:31,530
+You also have a choice
+of the database engine.
+
+42
+00:01:31,530 --> 00:01:35,400
+And the nice thing, though, is
+being a database or, basically,
+
+43
+00:01:35,400 --> 00:01:39,780
+a managed service, it's going to
+handle all of the back-end admin
+
+44
+00:01:39,780 --> 00:01:42,210
+tasks, so the actual
+hardware provisioning,
+
+45
+00:01:42,210 --> 00:01:45,330
+making sure things stay up to
+date, the database gets set up,
+
+46
+00:01:45,330 --> 00:01:51,150
+patches, updates, OS updates, as
+well as actual software updates,
+
+47
+00:01:51,150 --> 00:01:52,450
+security updates.
+
+48
+00:01:52,450 --> 00:01:56,280
+And remember we saw how we could
+do that on a regular cadence,
+
+49
+00:01:56,280 --> 00:01:58,680
+or schedule that to
+be done only nightly
+
+50
+00:01:58,680 --> 00:02:00,880
+or whenever they come up,
+but only in the evenings.
+
+51
+00:02:00,880 --> 00:02:04,050
+So, all these things
+really allow us
+
+52
+00:02:04,050 --> 00:02:05,760
+to just set it and forget it.
+
+53
+00:02:05,760 --> 00:02:07,500
+And then they will handle--
+
+54
+00:02:07,500 --> 00:02:09,900
+AWS's RD-- or Amazon's
+RDS will handle
+
+55
+00:02:09,900 --> 00:02:12,470
+all of the rest of
+the management aspect.
+
+56
+00:02:15,780 --> 00:02:19,080
+These are running on
+individual virtual instances.
+
+57
+00:02:19,080 --> 00:02:21,330
+And we have max capacity there.
+
+58
+00:02:21,330 --> 00:02:25,590
+You can see 32
+vCPUs, so 32 cores.
+
+59
+00:02:25,590 --> 00:02:27,150
+32 CPUs.
+
+60
+00:02:27,150 --> 00:02:28,840
+Cores is totally
+a different count.
+
+61
+00:02:28,840 --> 00:02:32,860
+And then up to 244 gigs of
+RAM, 64 terabytes of storage.
+
+62
+00:02:32,860 --> 00:02:35,310
+So for, I mean, the
+vast, vast majority
+
+63
+00:02:35,310 --> 00:02:37,420
+of use cases, that's
+plenty sufficient.
+
+64
+00:02:37,420 --> 00:02:40,020
+I mean, if you think about
+the standard laptop you're
+
+65
+00:02:40,020 --> 00:02:44,490
+running on, even if you were
+doing some really hardcore
+
+66
+00:02:44,490 --> 00:02:46,590
+development, you probably
+don't have more than 32,
+
+67
+00:02:46,590 --> 00:02:49,440
+maybe 64 gigabytes of RAM.
+
+68
+00:02:49,440 --> 00:02:54,040
+244 gigabytes of RAM, that's
+truly a server-scale operation.
+
+69
+00:02:54,040 --> 00:02:57,700
+Same with 32 vCPUs or even
+64 terabytes of storage.
+
+70
+00:02:57,700 --> 00:02:59,640
+So, again, for
+most things you're
+
+71
+00:02:59,640 --> 00:03:01,868
+going to be doing,
+unless you know
+
+72
+00:03:01,868 --> 00:03:03,660
+you're going to be in
+a different workspace
+
+73
+00:03:03,660 --> 00:03:05,940
+or different use
+case, for most things,
+
+74
+00:03:05,940 --> 00:03:08,640
+RDS is going to
+serve those needs.
+
+75
+00:03:08,640 --> 00:03:12,115
+But Redshift is saying,
+what if you know our problem
+
+76
+00:03:12,115 --> 00:03:14,490
+is a bit bigger or maybe even
+just a little bit different
+
+77
+00:03:14,490 --> 00:03:16,650
+or differently specified?
+
+78
+00:03:16,650 --> 00:03:19,140
+So it's still a fully
+managed service,
+
+79
+00:03:19,140 --> 00:03:22,690
+though it's explicitly a
+data warehouse as a service.
+
+80
+00:03:22,690 --> 00:03:26,040
+And so, with a database
+or a relational database,
+
+81
+00:03:26,040 --> 00:03:29,940
+we're just talking
+about a set of--
+
+82
+00:03:29,940 --> 00:03:34,950
+yeah, a set of tables that
+fall under the umbrella of one
+
+83
+00:03:34,950 --> 00:03:36,480
+of our databases.
+
+84
+00:03:36,480 --> 00:03:42,600
+But a data warehouse is
+really kind of a larger scale
+
+85
+00:03:42,600 --> 00:03:44,700
+tool that handles
+not only the data
+
+86
+00:03:44,700 --> 00:03:49,440
+analy-- or the kind of
+database storage and whatnot,
+
+87
+00:03:49,440 --> 00:03:54,840
+but also potentially the
+actual storage of raw data.
+
+88
+00:03:54,840 --> 00:03:56,310
+Maybe even some
+of the analysis is
+
+89
+00:03:56,310 --> 00:03:57,643
+leveraged through this platform.
+
+90
+00:03:57,643 --> 00:04:01,680
+So the data warehouse
+is kind of a bigger
+
+91
+00:04:01,680 --> 00:04:05,723
+scale than the database.
+
+92
+00:04:05,723 --> 00:04:07,140
+It's really-- the
+database, again,
+
+93
+00:04:07,140 --> 00:04:09,430
+is only storing that data
+that we need to power
+
+94
+00:04:09,430 --> 00:04:13,780
+our specific application,
+whereas the data warehouse
+
+95
+00:04:13,780 --> 00:04:18,013
+might, again, have the
+current data, historical data.
+
+96
+00:04:18,013 --> 00:04:20,680
+It might have it in a structured
+format, an unstructured format,
+
+97
+00:04:20,680 --> 00:04:24,910
+all these different things
+that then can be put together
+
+98
+00:04:24,910 --> 00:04:26,570
+into a useful platform.
+
+99
+00:04:26,570 --> 00:04:31,060
+So that's the high-level
+explanation or justification
+
+100
+00:04:31,060 --> 00:04:33,900
+for a data warehouse.
+
+101
+00:04:33,900 --> 00:04:36,450
+But nicely, it's not--
+
+102
+00:04:36,450 --> 00:04:41,340
+Redshift is specifically still
+using a Postgres-compliant SQL
+
+103
+00:04:41,340 --> 00:04:42,040
+engine.
+
+104
+00:04:42,040 --> 00:04:44,550
+So things are going to look
+very similar to PostgreSQL
+
+105
+00:04:44,550 --> 00:04:46,050
+if you're familiar
+with that at all.
+
+106
+00:04:46,050 --> 00:04:48,370
+If not, we'll show you the
+little bit you need for this.
+
+107
+00:04:48,370 --> 00:04:49,745
+I don't think
+we'll even actually
+
+108
+00:04:49,745 --> 00:04:53,460
+have an explicit assignment to
+set up a Redshift database just
+
+109
+00:04:53,460 --> 00:04:55,890
+because it's such a specific
+use case that I don't think
+
+110
+00:04:55,890 --> 00:05:00,000
+it's worth our time to have
+you guys do a designated
+
+111
+00:05:00,000 --> 00:05:03,870
+assignment on it, though I do
+want you to be exposed to it.
+
+112
+00:05:03,870 --> 00:05:07,020
+Funny enough, Redshift was
+actually the first AWS product
+
+113
+00:05:07,020 --> 00:05:09,820
+that I used of all
+the AWS products.
+
+114
+00:05:09,820 --> 00:05:14,040
+So not EC2 instances, not
+S3 instances, or S3 buckets.
+
+115
+00:05:14,040 --> 00:05:15,630
+The first one that
+I explicitly used
+
+116
+00:05:15,630 --> 00:05:17,610
+was Redshift because
+I was working
+
+117
+00:05:17,610 --> 00:05:19,390
+on an analytics workload.
+
+118
+00:05:19,390 --> 00:05:21,300
+I was working on a
+very specific task
+
+119
+00:05:21,300 --> 00:05:23,370
+where we had a
+massive amount of data
+
+120
+00:05:23,370 --> 00:05:26,550
+that was coming in every day.
+
+121
+00:05:26,550 --> 00:05:29,670
+On the order of hundreds
+of gigabytes a day
+
+122
+00:05:29,670 --> 00:05:31,740
+of data that I was
+working with, and I
+
+123
+00:05:31,740 --> 00:05:35,240
+needed to be able to perform
+some sort of analysis on it.
+
+124
+00:05:35,240 --> 00:05:39,430
+So I guess to be more
+specific on the problem,
+
+125
+00:05:39,430 --> 00:05:41,710
+this is back when I was
+working for Carvana.
+
+126
+00:05:41,710 --> 00:05:44,950
+And we were trying to-- or
+specifically, for my task,
+
+127
+00:05:44,950 --> 00:05:49,030
+the job I was working on, I
+was trying to determine where
+
+128
+00:05:49,030 --> 00:05:54,250
+to list vehicles on a website,
+or which specific car websites
+
+129
+00:05:54,250 --> 00:05:54,880
+where to list--
+
+130
+00:05:54,880 --> 00:05:56,380
+where should the
+vehicles be listed.
+
+131
+00:05:56,380 --> 00:05:58,600
+So, for example, if you were
+looking for a car today,
+
+132
+00:05:58,600 --> 00:06:01,900
+you might go to autotrader.com
+or cars.com or CarGurus
+
+133
+00:06:01,900 --> 00:06:04,940
+or any number of car
+websites that list used cars.
+
+134
+00:06:04,940 --> 00:06:07,960
+And at that time, at least--
+
+135
+00:06:07,960 --> 00:06:11,995
+this was 2014, 2015-ish,
+somewhere around then--
+
+136
+00:06:15,100 --> 00:06:19,900
+[? no ?] car reps [? that ?] had
+really heard of a national used
+
+137
+00:06:19,900 --> 00:06:22,300
+car retailer outside of CarMax.
+
+138
+00:06:22,300 --> 00:06:25,780
+And even CarMax still
+only ever really sold cars
+
+139
+00:06:25,780 --> 00:06:27,500
+where they're
+physically located.
+
+140
+00:06:27,500 --> 00:06:29,890
+We were saying that, well, we
+can deliver cars nationally
+
+141
+00:06:29,890 --> 00:06:31,932
+so we should be able to
+list our cars nationally.
+
+142
+00:06:31,932 --> 00:06:33,980
+They did not agree with
+that mission at the time.
+
+143
+00:06:33,980 --> 00:06:35,937
+They do now and
+it's all easy going.
+
+144
+00:06:35,937 --> 00:06:38,020
+I was actually still around
+when those discussions
+
+145
+00:06:38,020 --> 00:06:38,645
+were happening.
+
+146
+00:06:38,645 --> 00:06:41,170
+But at that time,
+initially, they
+
+147
+00:06:41,170 --> 00:06:46,120
+said, hey, Sharad, how do we
+list these cars somewhere such
+
+148
+00:06:46,120 --> 00:06:49,570
+that we maximize their
+probability of sale
+
+149
+00:06:49,570 --> 00:06:51,970
+and minimize the cost to list
+them because some of them
+
+150
+00:06:51,970 --> 00:06:55,220
+wouldn't even let us list them
+across multiple locations,
+
+151
+00:06:55,220 --> 00:06:56,770
+some would charge
+us for every city
+
+152
+00:06:56,770 --> 00:06:58,640
+we physically
+listed a vehicle in?
+
+153
+00:06:58,640 --> 00:07:01,900
+So even if I had a car that I
+could sell in Dallas or Houston,
+
+154
+00:07:01,900 --> 00:07:04,990
+Texas, if I chose to list it
+in Dallas and Houston, Texas,
+
+155
+00:07:04,990 --> 00:07:06,990
+they would charge me for
+both of those listings.
+
+156
+00:07:06,990 --> 00:07:08,907
+So now I have this kind
+of trade-off of, well,
+
+157
+00:07:08,907 --> 00:07:10,880
+what's the cost associated
+with each of those,
+
+158
+00:07:10,880 --> 00:07:12,620
+and which one should it go into?
+
+159
+00:07:12,620 --> 00:07:14,598
+And so one component
+of this was I
+
+160
+00:07:14,598 --> 00:07:16,640
+need to know what supply
+looked like in the area.
+
+161
+00:07:16,640 --> 00:07:20,530
+And not just our available
+supply because, remember,
+
+162
+00:07:20,530 --> 00:07:25,750
+our available supply is kind
+of known and, to some extent,
+
+163
+00:07:25,750 --> 00:07:26,810
+constrained.
+
+164
+00:07:26,810 --> 00:07:30,320
+But I needed to know what the
+rest of the market looked like.
+
+165
+00:07:30,320 --> 00:07:32,530
+And so one of the ways we
+did this was, well, first
+
+166
+00:07:32,530 --> 00:07:36,070
+I had some crawlers that were
+going out and collecting data
+
+167
+00:07:36,070 --> 00:07:39,290
+just from Craigslist
+and listing sites.
+
+168
+00:07:39,290 --> 00:07:40,840
+But then we also
+had another company
+
+169
+00:07:40,840 --> 00:07:42,880
+we worked with that had--
+
+170
+00:07:42,880 --> 00:07:44,680
+basically, their
+whole business model
+
+171
+00:07:44,680 --> 00:07:47,570
+was they just scraped
+individual dealership websites.
+
+172
+00:07:47,570 --> 00:07:51,640
+So they scraped the individual
+dealership websites and then--
+
+173
+00:07:51,640 --> 00:07:53,862
+for example, "Larry H.
+Miller, Volkswagen,"
+
+174
+00:07:53,862 --> 00:07:54,820
+or something like that.
+
+175
+00:07:54,820 --> 00:07:56,278
+They would grab
+every car that they
+
+176
+00:07:56,278 --> 00:07:58,360
+had on their site every day.
+
+177
+00:07:58,360 --> 00:08:00,675
+And they would do this
+across the whole country.
+
+178
+00:08:00,675 --> 00:08:02,050
+And every day,
+they would give us
+
+179
+00:08:02,050 --> 00:08:05,510
+a dump of all vehicles
+across the country.
+
+180
+00:08:05,510 --> 00:08:08,440
+And then I needed to go in
+and say, OK, well, amongst all
+
+181
+00:08:08,440 --> 00:08:09,955
+those cars that
+were listed today,
+
+182
+00:08:09,955 --> 00:08:11,330
+which ones were
+listed yesterday,
+
+183
+00:08:11,330 --> 00:08:13,612
+which ones were
+listed the day before?
+
+184
+00:08:13,612 --> 00:08:15,820
+If the same vehicle is listed
+multiple days in a row,
+
+185
+00:08:15,820 --> 00:08:17,420
+then I'm assuming
+it hasn't sold.
+
+186
+00:08:17,420 --> 00:08:21,100
+If the same vehicle disappears,
+then I'm assuming it has sold
+
+187
+00:08:21,100 --> 00:08:23,442
+or something has happened
+that it's kind of transacted.
+
+188
+00:08:23,442 --> 00:08:25,400
+Could have been just
+shipped off to a location.
+
+189
+00:08:25,400 --> 00:08:26,710
+It could have been
+that all of a sudden
+
+190
+00:08:26,710 --> 00:08:28,960
+they determined it was a
+lemon and they got rid of it.
+
+191
+00:08:28,960 --> 00:08:30,787
+But either way,
+something happened.
+
+192
+00:08:30,787 --> 00:08:32,870
+So we have some assumptions
+we have to make there,
+
+193
+00:08:32,870 --> 00:08:34,870
+but either way, we
+have a ton of data
+
+194
+00:08:34,870 --> 00:08:36,940
+that's coming in constantly.
+
+195
+00:08:36,940 --> 00:08:40,960
+And I need to not only bring it
+in and process it and structure
+
+196
+00:08:40,960 --> 00:08:42,395
+it because you can--
+
+197
+00:08:42,395 --> 00:08:45,020
+I'm sure all of you have been to
+a dealership's website before.
+
+198
+00:08:45,020 --> 00:08:46,720
+They're not
+necessarily the best.
+
+199
+00:08:46,720 --> 00:08:49,100
+They don't have the
+most structured fields.
+
+200
+00:08:49,100 --> 00:08:51,290
+So a lot of that was
+parsing that information.
+
+201
+00:08:51,290 --> 00:08:54,280
+And then from there, running it
+through our statistical models
+
+202
+00:08:54,280 --> 00:08:56,340
+to then say which
+location should it go to.
+
+203
+00:08:56,340 --> 00:08:58,840
+And again, this needs to happen
+on at least a nightly basis,
+
+204
+00:08:58,840 --> 00:09:01,150
+potentially at a faster cadence.
+
+205
+00:09:01,150 --> 00:09:05,830
+And so that level of processing
+is far and above of what--
+
+206
+00:09:05,830 --> 00:09:08,890
+or at least the time was
+above what any other managed
+
+207
+00:09:08,890 --> 00:09:11,950
+service was able to do on
+RDS, and so Redshift was kind
+
+208
+00:09:11,950 --> 00:09:14,290
+of the obvious solution for us.
+
+209
+00:09:14,290 --> 00:09:16,570
+And so because of that--
+
+210
+00:09:16,570 --> 00:09:19,720
+that is kind of my best use
+case of why I, all of a sudden,
+
+211
+00:09:19,720 --> 00:09:23,957
+might want to step up to
+something like Redshift.
+
+212
+00:09:23,957 --> 00:09:26,540
+Again, you can see here, it can
+scale up to petabytes of data.
+
+213
+00:09:26,540 --> 00:09:30,550
+So where RDS, on the
+order-- or was maxing out
+
+214
+00:09:30,550 --> 00:09:34,820
+at 64 terabytes of storage,
+Redshift is petabytes.
+
+215
+00:09:34,820 --> 00:09:38,668
+So that's over a thousand
+terabytes many times over.
+
+216
+00:09:38,668 --> 00:09:41,210
+There's really not-- you're not
+going to hit the constraints.
+
+217
+00:09:41,210 --> 00:09:43,460
+You're usually going to run
+out of data before you hit
+
+218
+00:09:43,460 --> 00:09:45,040
+the constraints on Redshift.
+
+219
+00:09:45,040 --> 00:09:47,930
+And they use a cluster-based
+architecture for this.
+
+220
+00:09:47,930 --> 00:09:49,360
+So rather than just having--
+
+221
+00:09:49,360 --> 00:09:51,490
+spinning up a single
+big RDS instance,
+
+222
+00:09:51,490 --> 00:09:53,860
+which is just a big
+virtual machine that
+
+223
+00:09:53,860 --> 00:09:56,110
+houses all our data, they
+say, instead, well, this
+
+224
+00:09:56,110 --> 00:09:59,830
+is kind of an inefficient way to
+at least query this information,
+
+225
+00:09:59,830 --> 00:10:04,570
+as we might have the storage
+located in one location
+
+226
+00:10:04,570 --> 00:10:07,400
+or in S3 or something like that.
+
+227
+00:10:07,400 --> 00:10:09,190
+But really, what I
+want to do is when
+
+228
+00:10:09,190 --> 00:10:14,430
+I'm computing, I want to
+have this data sitting
+
+229
+00:10:14,430 --> 00:10:17,610
+in a cluster of computers,
+such that there's one node that
+
+230
+00:10:17,610 --> 00:10:19,740
+serves as the leader
+node and their job
+
+231
+00:10:19,740 --> 00:10:23,162
+is to get the request
+from the client.
+
+232
+00:10:23,162 --> 00:10:25,620
+That client might be the actual
+user who's running a query.
+
+233
+00:10:25,620 --> 00:10:27,745
+It might be an application,
+which is what ours was.
+
+234
+00:10:27,745 --> 00:10:30,037
+It was just an application
+that said, give me this data
+
+235
+00:10:30,037 --> 00:10:30,760
+and process it.
+
+236
+00:10:30,760 --> 00:10:33,310
+And so they're going to
+handle that communication,
+
+237
+00:10:33,310 --> 00:10:34,123
+the leader node is.
+
+238
+00:10:34,123 --> 00:10:35,790
+And again, [? the ?]
+node is a computer,
+
+239
+00:10:35,790 --> 00:10:37,630
+right, so a virtual instance.
+
+240
+00:10:37,630 --> 00:10:39,660
+So the leader node
+handles that communication
+
+241
+00:10:39,660 --> 00:10:42,060
+and then also plans
+out the optimal way
+
+242
+00:10:42,060 --> 00:10:43,150
+to structure this query.
+
+243
+00:10:43,150 --> 00:10:47,290
+How should this query be
+optimized and then executed?
+
+244
+00:10:47,290 --> 00:10:50,700
+And ideally, I should figure out
+a way that-- or the leader node,
+
+245
+00:10:50,700 --> 00:10:53,460
+really, should figure out a
+way, such that it can optimally
+
+246
+00:10:53,460 --> 00:10:55,770
+delegate this task
+to many member nodes.
+
+247
+00:10:55,770 --> 00:10:57,765
+The more it can be
+parallelized, the faster
+
+248
+00:10:57,765 --> 00:10:59,640
+this should be able to
+run, because, the idea
+
+249
+00:10:59,640 --> 00:11:01,950
+is that most of the
+things we're doing,
+
+250
+00:11:01,950 --> 00:11:03,930
+or at least a lot of
+the things we could do,
+
+251
+00:11:03,930 --> 00:11:05,770
+can be parallelized.
+
+252
+00:11:05,770 --> 00:11:08,130
+And what I mean by
+parallelize, if you're not
+
+253
+00:11:08,130 --> 00:11:12,030
+familiar with that concept,
+is that in computing,
+
+254
+00:11:12,030 --> 00:11:16,210
+if I want to,
+gosh, I don't know,
+
+255
+00:11:16,210 --> 00:11:20,690
+log into my bank, that has
+to happen sequentially.
+
+256
+00:11:20,690 --> 00:11:22,540
+I have to go to the website.
+
+257
+00:11:22,540 --> 00:11:25,000
+I have to click
+the login button.
+
+258
+00:11:25,000 --> 00:11:28,670
+I have to type in my
+username and my password.
+
+259
+00:11:28,670 --> 00:11:30,470
+I have to click Submit.
+
+260
+00:11:30,470 --> 00:11:33,160
+Then there's likely going to be
+a two-factor authentication that
+
+261
+00:11:33,160 --> 00:11:35,180
+sends a message to my phone.
+
+262
+00:11:35,180 --> 00:11:37,660
+I agree to it, and then
+that sends that back
+
+263
+00:11:37,660 --> 00:11:38,720
+and it logs me in.
+
+264
+00:11:38,720 --> 00:11:41,200
+All of those steps have
+to happen in order.
+
+265
+00:11:41,200 --> 00:11:44,500
+There's no way that I can do
+each of those steps all at
+
+266
+00:11:44,500 --> 00:11:46,810
+once because they kind of
+rely on the previous step
+
+267
+00:11:46,810 --> 00:11:48,730
+to be confirmed.
+
+268
+00:11:48,730 --> 00:11:50,540
+That is a serial process.
+
+269
+00:11:50,540 --> 00:11:52,300
+That is in order.
+
+270
+00:11:52,300 --> 00:11:54,310
+Nothing I can do about
+that to speed it up,
+
+271
+00:11:54,310 --> 00:11:56,620
+outside of speed up
+the individual steps.
+
+272
+00:11:56,620 --> 00:11:59,122
+A parallelizable
+process, which is not
+
+273
+00:11:59,122 --> 00:12:00,580
+a word I want to
+say 10 times fast,
+
+274
+00:12:00,580 --> 00:12:04,150
+parallelizable, a
+parallelizable process
+
+275
+00:12:04,150 --> 00:12:07,930
+is something where
+doing one thing
+
+276
+00:12:07,930 --> 00:12:10,880
+isn't dependent upon the
+other thing happening.
+
+277
+00:12:10,880 --> 00:12:14,870
+Let's say that I have, I don't
+know, a bunch of timesheets
+
+278
+00:12:14,870 --> 00:12:15,980
+that I have to approve.
+
+279
+00:12:15,980 --> 00:12:18,530
+I'm a massive corporation and
+I have a bunch of time sheets
+
+280
+00:12:18,530 --> 00:12:19,650
+I have to approve.
+
+281
+00:12:19,650 --> 00:12:21,350
+The only thing
+I'm looking for is
+
+282
+00:12:21,350 --> 00:12:24,920
+where there any
+flags for managers
+
+283
+00:12:24,920 --> 00:12:28,760
+and/or did somebody go
+over 40 hours a week.
+
+284
+00:12:28,760 --> 00:12:32,720
+And so the way I do this then is
+rather than going from employee
+
+285
+00:12:32,720 --> 00:12:35,120
+one to employee two to
+employee three, well,
+
+286
+00:12:35,120 --> 00:12:37,080
+I just calculate
+all those at once.
+
+287
+00:12:37,080 --> 00:12:39,170
+I say-- for example,
+I could have
+
+288
+00:12:39,170 --> 00:12:43,670
+one leader computer
+that would say, OK, here
+
+289
+00:12:43,670 --> 00:12:46,440
+are all the 10 million
+employees we have.
+
+290
+00:12:46,440 --> 00:12:49,130
+It's a massive company,
+10 million employees.
+
+291
+00:12:49,130 --> 00:12:51,390
+I have 1,000 computers.
+
+292
+00:12:51,390 --> 00:12:54,870
+And so what I'll do is I'll
+evenly split up each of those 10
+
+293
+00:12:54,870 --> 00:12:58,760
+million employees to
+those 1,000 computers.
+
+294
+00:12:58,760 --> 00:13:01,130
+And maybe for whatever
+reason, my software
+
+295
+00:13:01,130 --> 00:13:04,050
+can't handle doing more than
+one timesheet at a time.
+
+296
+00:13:04,050 --> 00:13:06,920
+That's OK as long as I can
+spread it across those 1,000
+
+297
+00:13:06,920 --> 00:13:07,700
+computers.
+
+298
+00:13:07,700 --> 00:13:09,890
+Then it'll go a thousand
+times faster than
+
+299
+00:13:09,890 --> 00:13:12,260
+if I had to do this
+all at once or I had
+
+300
+00:13:12,260 --> 00:13:14,070
+to do this all on one machine.
+
+301
+00:13:14,070 --> 00:13:17,350
+So that's this idea about
+parallelizing a process.
+
+302
+00:13:17,350 --> 00:13:20,460
+And so Redshift is
+specifically designed
+
+303
+00:13:20,460 --> 00:13:25,740
+to parallelize our queries,
+our operations that we're
+
+304
+00:13:25,740 --> 00:13:26,920
+going to perform.
+
+305
+00:13:26,920 --> 00:13:29,100
+And the nice thing
+is it integrates
+
+306
+00:13:29,100 --> 00:13:33,870
+a lot of standard
+analytical calculations
+
+307
+00:13:33,870 --> 00:13:36,607
+that you might want to do
+into its querying structure.
+
+308
+00:13:36,607 --> 00:13:38,940
+Meaning that it kind of limits
+the amount of extra stuff
+
+309
+00:13:38,940 --> 00:13:40,600
+I have to do
+outside of Redshift.
+
+310
+00:13:40,600 --> 00:13:45,210
+I can do a lot of stuff just
+baked into Redshift right away.
+
+311
+00:13:45,210 --> 00:13:46,660
+Oops, I lost my screen here.
+
+312
+00:13:46,660 --> 00:13:48,740
+There we go.
+
+313
+00:13:48,740 --> 00:13:54,290
+So again, this is
+kind of a visual image
+
+314
+00:13:54,290 --> 00:13:56,780
+of what Redshift
+looks like or what it
+
+315
+00:13:56,780 --> 00:13:58,260
+looks like Redshift is doing.
+
+316
+00:13:58,260 --> 00:14:00,567
+So, again, client
+application setup here,
+
+317
+00:14:00,567 --> 00:14:02,900
+that might be me sitting at
+my computer, typing a query.
+
+318
+00:14:02,900 --> 00:14:05,160
+That might be some application
+running in the cloud.
+
+319
+00:14:05,160 --> 00:14:07,410
+That might be some application
+running on my computer.
+
+320
+00:14:07,410 --> 00:14:09,050
+It could be anything.
+
+321
+00:14:09,050 --> 00:14:12,330
+Then we're going to set up some
+sort of database connection--
+
+322
+00:14:12,330 --> 00:14:17,370
+database connection, sorry,
+to the machine itself.
+
+323
+00:14:17,370 --> 00:14:22,670
+And so ODBC stands for
+Open Database Connectivity.
+
+324
+00:14:22,670 --> 00:14:27,050
+And JDBC is Java
+Database Connectivity.
+
+325
+00:14:27,050 --> 00:14:29,060
+And that just is
+the kind of language
+
+326
+00:14:29,060 --> 00:14:31,422
+that's used to communicate
+between the application
+
+327
+00:14:31,422 --> 00:14:32,130
+and the software.
+
+328
+00:14:32,130 --> 00:14:34,580
+So you can set up an Open
+Database Connection or a Java
+
+329
+00:14:34,580 --> 00:14:37,160
+Database Connection, depending
+on what language you're using.
+
+330
+00:14:37,160 --> 00:14:40,190
+And that is how
+you'll make requests
+
+331
+00:14:40,190 --> 00:14:45,170
+in the language of the data-- of
+the data warehouse, the Redshift
+
+332
+00:14:45,170 --> 00:14:46,490
+instance.
+
+333
+00:14:46,490 --> 00:14:49,050
+And so, again, those
+commands and those queries
+
+334
+00:14:49,050 --> 00:14:51,600
+are going to be sent
+to the leader node.
+
+335
+00:14:51,600 --> 00:14:54,300
+And then the leader node
+says, let me pass those out
+
+336
+00:14:54,300 --> 00:14:57,210
+to a bunch of
+different compute nodes
+
+337
+00:14:57,210 --> 00:15:01,320
+that exist within my cluster.
+
+338
+00:15:01,320 --> 00:15:02,280
+Oops.
+
+339
+00:15:02,280 --> 00:15:05,790
+And so starting at the
+leader node side of things,
+
+340
+00:15:05,790 --> 00:15:07,510
+this is kind of what it's doing.
+
+341
+00:15:07,510 --> 00:15:09,870
+So, again, like I
+said, it's handling
+
+342
+00:15:09,870 --> 00:15:12,300
+all external and
+internal communication.
+
+343
+00:15:12,300 --> 00:15:14,430
+Internal communication
+being the communication
+
+344
+00:15:14,430 --> 00:15:15,870
+within the cluster.
+
+345
+00:15:15,870 --> 00:15:18,060
+External communication
+being the communication
+
+346
+00:15:18,060 --> 00:15:21,500
+out to the client or the
+tools that we're using.
+
+347
+00:15:21,500 --> 00:15:25,070
+It comes up with that query
+execution plan whenever a query
+
+348
+00:15:25,070 --> 00:15:26,330
+is submitted to the cluster.
+
+349
+00:15:26,330 --> 00:15:29,120
+And then once it has
+that plan figured out,
+
+350
+00:15:29,120 --> 00:15:31,880
+it delegates those
+tasks, distributes them
+
+351
+00:15:31,880 --> 00:15:35,330
+amongst the compute nodes,
+but also, importantly,
+
+352
+00:15:35,330 --> 00:15:37,710
+it also distributes
+the slices of data.
+
+353
+00:15:37,710 --> 00:15:40,820
+So each of those compute nodes
+will handle some number of--
+
+354
+00:15:40,820 --> 00:15:42,300
+some number of slices of data.
+
+355
+00:15:42,300 --> 00:15:44,960
+So this is just kind of an
+extra step of parallelization.
+
+356
+00:15:44,960 --> 00:15:47,040
+So we can parallelize
+across the compute nodes,
+
+357
+00:15:47,040 --> 00:15:50,280
+but also these compute nodes
+themselves are computers.
+
+358
+00:15:50,280 --> 00:15:52,970
+They can also-- themselves, they
+might have multiple processors,
+
+359
+00:15:52,970 --> 00:15:55,790
+multiple cores, so they
+can probably also handle
+
+360
+00:15:55,790 --> 00:15:57,270
+multiple slices at once.
+
+361
+00:15:57,270 --> 00:15:59,690
+And so the idea is that we
+parallelize across the nodes,
+
+362
+00:15:59,690 --> 00:16:02,670
+and within the nodes, we
+parallelize across the slices.
+
+363
+00:16:02,670 --> 00:16:05,330
+And so the hope is that the
+operations we're performing
+
+364
+00:16:05,330 --> 00:16:07,880
+can be completed on the
+slices independently,
+
+365
+00:16:07,880 --> 00:16:10,640
+and then we just send back
+the relevant information
+
+366
+00:16:10,640 --> 00:16:13,130
+to the leader node.
+
+367
+00:16:13,130 --> 00:16:14,870
+And so, like I said,
+those compute nodes,
+
+368
+00:16:14,870 --> 00:16:17,210
+they handle the actual
+execution of the queries,
+
+369
+00:16:17,210 --> 00:16:20,330
+though the plan is made
+by the leader node.
+
+370
+00:16:20,330 --> 00:16:21,852
+And then they
+execute the queries,
+
+371
+00:16:21,852 --> 00:16:23,810
+return those intermediate
+results to the leader
+
+372
+00:16:23,810 --> 00:16:25,430
+node for aggregation.
+
+373
+00:16:25,430 --> 00:16:28,010
+And we have two different
+types of compute nodes
+
+374
+00:16:28,010 --> 00:16:29,010
+we can choose from.
+
+375
+00:16:29,010 --> 00:16:32,130
+So we can choose from dense
+storage and dense compute nodes.
+
+376
+00:16:32,130 --> 00:16:34,173
+And so dense storage
+nodes are exactly
+
+377
+00:16:34,173 --> 00:16:35,840
+like they say-- they're
+basically trying
+
+378
+00:16:35,840 --> 00:16:38,070
+to optimize storage for price.
+
+379
+00:16:38,070 --> 00:16:39,900
+So it's dense in
+the terms of price.
+
+380
+00:16:39,900 --> 00:16:42,290
+A hard drive-- a hard
+disk drive is much larger
+
+381
+00:16:42,290 --> 00:16:44,240
+than a solid state
+drive, but it's
+
+382
+00:16:44,240 --> 00:16:46,700
+trying to create
+the largest data
+
+383
+00:16:46,700 --> 00:16:49,650
+warehouse possible for
+the lowest price possible.
+
+384
+00:16:49,650 --> 00:16:52,290
+So that's called the dense
+storage compute node.
+
+385
+00:16:52,290 --> 00:16:57,170
+And the dense compute
+ones sacrifice price
+
+386
+00:16:57,170 --> 00:16:58,770
+in the name of efficiency.
+
+387
+00:16:58,770 --> 00:17:01,250
+So if you know this is a really
+high-performance workload,
+
+388
+00:17:01,250 --> 00:17:03,127
+you need to have
+that high throughput,
+
+389
+00:17:03,127 --> 00:17:05,210
+you're going to have to
+go with the dense compute.
+
+390
+00:17:05,210 --> 00:17:08,650
+That's going to give you
+your fastest performance.
+
+391
+00:17:08,650 --> 00:17:10,359
+And then, like I said,
+each compute node
+
+392
+00:17:10,359 --> 00:17:13,000
+is going to have multiple
+slices with each slice utilizing
+
+393
+00:17:13,000 --> 00:17:16,047
+a portion of the node's
+memory and disk space.
+
+394
+00:17:16,047 --> 00:17:18,130
+So it's almost partitioning
+out itself and saying,
+
+395
+00:17:18,130 --> 00:17:19,182
+OK, well, I can handle--
+
+396
+00:17:19,182 --> 00:17:21,640
+I have enough memory to handle
+a couple of different slices
+
+397
+00:17:21,640 --> 00:17:22,640
+of this size.
+
+398
+00:17:22,640 --> 00:17:25,329
+And I can operate on each
+of those in parallel,
+
+399
+00:17:25,329 --> 00:17:27,520
+independent of each other.
+
+400
+00:17:27,520 --> 00:17:29,290
+And then the type
+of node, obviously,
+
+401
+00:17:29,290 --> 00:17:31,090
+is going to determine
+how many slices
+
+402
+00:17:31,090 --> 00:17:34,520
+and what size those slices
+are per the compute node.
+
+403
+00:17:34,520 --> 00:17:37,780
+So the more you can have on
+a-- or the larger the instance,
+
+404
+00:17:37,780 --> 00:17:39,980
+the more slices you can
+have per compute node.
+
+405
+00:17:39,980 --> 00:17:42,160
+But this is kind of the
+trade-off-- there actually
+
+406
+00:17:42,160 --> 00:17:43,870
+is kind of an
+interesting optimization
+
+407
+00:17:43,870 --> 00:17:46,270
+problem within this,
+of saying, well,
+
+408
+00:17:46,270 --> 00:17:50,800
+let's take the extreme example
+of one really, really powerful
+
+409
+00:17:50,800 --> 00:17:53,080
+computer as our compute node.
+
+410
+00:17:53,080 --> 00:17:55,180
+And that one really,
+really powerful computer
+
+411
+00:17:55,180 --> 00:17:59,240
+has a lot of ability to handle
+a bunch of different slices.
+
+412
+00:17:59,240 --> 00:18:01,510
+So conceivably, we wouldn't
+even need to pass it out
+
+413
+00:18:01,510 --> 00:18:03,610
+to a bunch of compute
+nodes, but the idea
+
+414
+00:18:03,610 --> 00:18:08,450
+is that the effort to create
+such a reliable and capable
+
+415
+00:18:08,450 --> 00:18:12,020
+system is much more expensive
+than maybe me creating
+
+416
+00:18:12,020 --> 00:18:17,480
+a bunch of smaller instances,
+a bunch of small compute nodes
+
+417
+00:18:17,480 --> 00:18:19,700
+that are very, very
+cheap and I can almost
+
+418
+00:18:19,700 --> 00:18:20,910
+have them be redundant.
+
+419
+00:18:20,910 --> 00:18:23,243
+And to some extent, you will
+have a level of redundancy,
+
+420
+00:18:23,243 --> 00:18:26,930
+such that I could send the same
+slice of data to another machine
+
+421
+00:18:26,930 --> 00:18:29,090
+or to five different
+machines and just say, "Well,
+
+422
+00:18:29,090 --> 00:18:31,673
+I hope you guys all come up with
+the same result or you should
+
+423
+00:18:31,673 --> 00:18:34,410
+come up with the same result,"
+and then I'll just verify that.
+
+424
+00:18:34,410 --> 00:18:35,990
+And that gives me,
+actually, some really nice
+
+425
+00:18:35,990 --> 00:18:37,730
+statistical properties
+to ensure that I
+
+426
+00:18:37,730 --> 00:18:40,370
+get the best result possible
+or the most appropriate result
+
+427
+00:18:40,370 --> 00:18:43,140
+possible while also
+minimizing the cost.
+
+428
+00:18:43,140 --> 00:18:46,490
+So that's one of the reasons
+why this distributed computing
+
+429
+00:18:46,490 --> 00:18:52,030
+structure architecture is so
+critical in analytics workloads.
+
+430
+00:18:52,030 --> 00:18:54,160
+And so, yeah, our
+multiple compute nodes
+
+431
+00:18:54,160 --> 00:18:57,790
+now can execute that same query
+code and portion of the data,
+
+432
+00:18:57,790 --> 00:19:01,840
+maximize parallel processing,
+and minimize those costs,
+
+433
+00:19:01,840 --> 00:19:03,075
+and really compute time.
+
+434
+00:19:06,520 --> 00:19:09,490
+Another unique
+component of Redshift
+
+435
+00:19:09,490 --> 00:19:12,920
+is that it utilizes
+columnar-based data storage.
+
+436
+00:19:12,920 --> 00:19:16,540
+So most SQL databases
+you're familiar with--
+
+437
+00:19:16,540 --> 00:19:19,420
+MySQL, Microsoft SQL Server--
+
+438
+00:19:19,420 --> 00:19:22,120
+all of those are
+row-based storage systems,
+
+439
+00:19:22,120 --> 00:19:23,780
+whether you realized it or not.
+
+440
+00:19:23,780 --> 00:19:25,655
+Think about what they're
+really trying to do.
+
+441
+00:19:25,655 --> 00:19:27,830
+They're trying to handle
+transaction-level data
+
+442
+00:19:27,830 --> 00:19:29,915
+one row at a time, one
+transaction at a time.
+
+443
+00:19:29,915 --> 00:19:31,790
+And that transaction
+might be an actual sale.
+
+444
+00:19:31,790 --> 00:19:33,415
+It might be a user
+hitting our website.
+
+445
+00:19:33,415 --> 00:19:34,870
+It could be any
+number of things,
+
+446
+00:19:34,870 --> 00:19:37,330
+but it's at the row level.
+
+447
+00:19:37,330 --> 00:19:39,850
+And this is actually really,
+really efficient for querying
+
+448
+00:19:39,850 --> 00:19:42,010
+for most standard queries
+that you are probably
+
+449
+00:19:42,010 --> 00:19:42,920
+used to running.
+
+450
+00:19:42,920 --> 00:19:45,560
+That's the best way
+to store that data.
+
+451
+00:19:45,560 --> 00:19:49,580
+It allows it to identify
+primary keys and sort
+
+452
+00:19:49,580 --> 00:19:51,020
+and search very, very quickly.
+
+453
+00:19:51,020 --> 00:19:53,770
+And so that is one of the
+reasons why they do leverage
+
+454
+00:19:53,770 --> 00:19:55,300
+that row-based storage.
+
+455
+00:19:55,300 --> 00:19:57,230
+But Redshift does
+something a bit different.
+
+456
+00:19:57,230 --> 00:20:00,310
+It stores it in a columnar-based
+fashion, which the idea here
+
+457
+00:20:00,310 --> 00:20:03,370
+is that the columns kind
+of matter a little bit more
+
+458
+00:20:03,370 --> 00:20:06,500
+in the context of an analytics
+workload because our columns
+
+459
+00:20:06,500 --> 00:20:07,835
+are our variables now.
+
+460
+00:20:07,835 --> 00:20:09,210
+They're the things
+that can vary.
+
+461
+00:20:09,210 --> 00:20:11,002
+We're looking at this
+as a big picture now.
+
+462
+00:20:11,002 --> 00:20:13,520
+We're not looking at an
+individual transaction level.
+
+463
+00:20:13,520 --> 00:20:16,460
+And by storing in a
+columnar-based fashion,
+
+464
+00:20:16,460 --> 00:20:22,460
+it will dramatically reduce the
+input/output time on our disks
+
+465
+00:20:22,460 --> 00:20:24,560
+when we're running
+any sort of query,
+
+466
+00:20:24,560 --> 00:20:26,450
+as well as the amount
+of data we need to load
+
+467
+00:20:26,450 --> 00:20:28,765
+into memory to execute a query.
+
+468
+00:20:28,765 --> 00:20:32,540
+I don't need to know everything
+to even-- for example,
+
+469
+00:20:32,540 --> 00:20:35,390
+if I wanted to
+start sorting data,
+
+470
+00:20:35,390 --> 00:20:39,080
+I don't need to wait till I
+have loaded in all the rows,
+
+471
+00:20:39,080 --> 00:20:41,850
+including all the values
+for each of those rows.
+
+472
+00:20:41,850 --> 00:20:44,830
+I can just load in
+one column at a time,
+
+473
+00:20:44,830 --> 00:20:46,550
+or I can just load in
+the one column that
+
+474
+00:20:46,550 --> 00:20:50,030
+matters, sort that one, and
+then map it back if necessary
+
+475
+00:20:50,030 --> 00:20:51,510
+to return other columns.
+
+476
+00:20:51,510 --> 00:20:53,060
+But the idea is
+that I can just do
+
+477
+00:20:53,060 --> 00:20:56,410
+what I need because I might
+just need to print out
+
+478
+00:20:56,410 --> 00:20:58,160
+a bunch of sorted
+values, and therefore, I
+
+479
+00:20:58,160 --> 00:21:00,440
+don't need to return
+every single row with all
+
+480
+00:21:00,440 --> 00:21:02,180
+the values in each row.
+
+481
+00:21:02,180 --> 00:21:04,160
+And so the
+columnar-based fashion--
+
+482
+00:21:04,160 --> 00:21:08,000
+the columnar-based storage is
+much more efficient for that.
+
+483
+00:21:08,000 --> 00:21:11,290
+If you're familiar with R, or
+in Python, you might have seen--
+
+484
+00:21:11,290 --> 00:21:13,487
+I think we have used Pandas now.
+
+485
+00:21:13,487 --> 00:21:15,820
+I can't remember if we've
+used Pandas explicitly or not,
+
+486
+00:21:15,820 --> 00:21:17,862
+or maybe even talked about
+it, but Pandas is just
+
+487
+00:21:17,862 --> 00:21:20,720
+another columnar-based
+storage system.
+
+488
+00:21:20,720 --> 00:21:22,630
+It's dataframes.
+
+489
+00:21:22,630 --> 00:21:25,580
+Those are-- better statement--
+
+490
+00:21:25,580 --> 00:21:27,770
+R and Pandas are
+columnar-based storage systems,
+
+491
+00:21:27,770 --> 00:21:31,000
+so we have interacted
+with them before,
+
+492
+00:21:31,000 --> 00:21:32,950
+whether we realize it or not.
+
+493
+00:21:32,950 --> 00:21:37,400
+And so we talked about
+the last two points,
+
+494
+00:21:37,400 --> 00:21:41,140
+but again, when I'm thinking
+about trying to average sales
+
+495
+00:21:41,140 --> 00:21:43,960
+price across millions
+and millions of entries,
+
+496
+00:21:43,960 --> 00:21:49,460
+I don't really care to return
+the user who bought the product.
+
+497
+00:21:49,460 --> 00:21:51,820
+But if I'm doing a query,
+that to some extent kind of
+
+498
+00:21:51,820 --> 00:21:52,450
+has to happen.
+
+499
+00:21:52,450 --> 00:21:55,002
+I can't really ignore the fact
+that that information exists.
+
+500
+00:21:55,002 --> 00:21:56,710
+And so I have to at
+least load it up once
+
+501
+00:21:56,710 --> 00:21:59,560
+or I have to deal with a
+little bit of I/O overhead just
+
+502
+00:21:59,560 --> 00:22:02,168
+to pull in the
+actual sales price.
+
+503
+00:22:02,168 --> 00:22:04,210
+And then from there, I
+can calculate the average.
+
+504
+00:22:04,210 --> 00:22:06,460
+So the idea is that I should
+be able to just grab that
+
+505
+00:22:06,460 --> 00:22:11,490
+without having to worry about
+those extra overheads for it.
+
+506
+00:22:11,490 --> 00:22:15,390
+So yeah, that's all I had
+as far as differentiating.
+
+507
+00:22:15,390 --> 00:22:21,420
+Let me open up RDS now and run
+through a quick, quick demo
+
+508
+00:22:21,420 --> 00:22:24,100
+of how we can start a cluster
+and query some sample data.
+
+509
+00:22:24,100 --> 00:22:26,110
+So I'll pause and
+come right back.
+
+510
+00:22:26,110 --> 00:22:29,010
+And I guess for now,
+you can also launch AWS
+
+511
+00:22:29,010 --> 00:22:31,710
+and then we'll pull it up.
+
+512
+00:22:31,710 --> 00:22:34,080
+All right, so once
+you've logged in--
+
+513
+00:22:34,080 --> 00:22:36,570
+and actually, I'd
+recommend, for that matter,
+
+514
+00:22:36,570 --> 00:22:38,490
+probably, would use
+your personal account.
+
+515
+00:22:38,490 --> 00:22:40,198
+We've been having
+enough technical issues
+
+516
+00:22:40,198 --> 00:22:43,650
+with the university account
+that I'd recommend using, again,
+
+517
+00:22:43,650 --> 00:22:46,200
+your personal account so that
+we don't have any permissions
+
+518
+00:22:46,200 --> 00:22:47,710
+or connection issues.
+
+519
+00:22:47,710 --> 00:22:50,610
+It seems, really, it's the scale
+at which we're doing things
+
+520
+00:22:50,610 --> 00:22:54,300
+since we have about 50 people
+across both sections hitting
+
+521
+00:22:54,300 --> 00:22:56,820
+this and then people
+creating multiple copies
+
+522
+00:22:56,820 --> 00:23:00,150
+and trying things out and
+instance is not getting deleted.
+
+523
+00:23:00,150 --> 00:23:02,400
+So either way, we're ending
+up running out of capacity
+
+524
+00:23:02,400 --> 00:23:04,710
+multiple times now,
+which is kind of counter
+
+525
+00:23:04,710 --> 00:23:07,770
+to the whole mission of
+cloud computing, which
+
+526
+00:23:07,770 --> 00:23:10,360
+is a different issue we'll
+talk about in the future.
+
+527
+00:23:10,360 --> 00:23:12,818
+But for now, I think it'll save
+us a little bit of headache
+
+528
+00:23:12,818 --> 00:23:15,510
+if you just run this on
+your personal account.
+
+529
+00:23:15,510 --> 00:23:17,310
+Again, nothing we're
+doing will cost.
+
+530
+00:23:17,310 --> 00:23:19,500
+And also, if you're
+more comfortable with
+
+531
+00:23:19,500 --> 00:23:22,140
+or if you'd prefer not to
+run anything regardless,
+
+532
+00:23:22,140 --> 00:23:25,140
+to save or avoid any
+chance of anything
+
+533
+00:23:25,140 --> 00:23:27,317
+happening, then by
+all means, we're
+
+534
+00:23:27,317 --> 00:23:28,900
+not going to do an
+assignment on this.
+
+535
+00:23:28,900 --> 00:23:32,340
+But I do want you to see this
+workload or this workflow,
+
+536
+00:23:32,340 --> 00:23:33,310
+better statement.
+
+537
+00:23:33,310 --> 00:23:37,338
+So either way, once you've
+connected or logged in,
+
+538
+00:23:37,338 --> 00:23:39,630
+you can either click on
+Redshift if you have it already
+
+539
+00:23:39,630 --> 00:23:43,290
+pulled up or as always,
+just hit the Search button.
+
+540
+00:23:43,290 --> 00:23:47,770
+"Fast, Simple, Cost-Effective
+Data Warehousing."
+
+541
+00:23:47,770 --> 00:23:49,250
+So I'll pull this up.
+
+542
+00:23:49,250 --> 00:23:50,870
+And now we need to
+create a cluster.
+
+543
+00:23:50,870 --> 00:23:53,620
+So the easiest way to do it
+is click Create a cluster.
+
+544
+00:23:53,620 --> 00:23:59,610
+And so in there, we need to
+specify a unique identifier.
+
+545
+00:23:59,610 --> 00:24:04,090
+I believe this just needs to be
+unique within our organization
+
+546
+00:24:04,090 --> 00:24:05,090
+or our account.
+
+547
+00:24:05,090 --> 00:24:06,090
+So if you're sharing--
+
+548
+00:24:06,090 --> 00:24:07,840
+again, if you're using
+the university one,
+
+549
+00:24:07,840 --> 00:24:09,140
+it'll have to be
+unique across there.
+
+550
+00:24:09,140 --> 00:24:10,973
+But I think if you're
+on a personal account,
+
+551
+00:24:10,973 --> 00:24:13,550
+you can do anything that
+you haven't used before.
+
+552
+00:24:13,550 --> 00:24:15,623
+So I'll just say
+"redshift-cluster-sharad"
+
+553
+00:24:15,623 --> 00:24:17,290
+so I make sure that
+if there's multiple,
+
+554
+00:24:17,290 --> 00:24:18,622
+I can easily find mine.
+
+555
+00:24:18,622 --> 00:24:20,830
+And then, obviously, we want
+to run on the free trial
+
+556
+00:24:20,830 --> 00:24:22,497
+because there's no
+reason to pay for it.
+
+557
+00:24:22,497 --> 00:24:24,250
+But once the free
+trial ends, you'll
+
+558
+00:24:24,250 --> 00:24:28,410
+have to pay for
+anything you use.
+
+559
+00:24:28,410 --> 00:24:31,280
+And be mindful, this can
+be very, very expensive.
+
+560
+00:24:31,280 --> 00:24:34,380
+So here, you can see the
+estimated on-demand compute
+
+561
+00:24:34,380 --> 00:24:34,880
+price.
+
+562
+00:24:34,880 --> 00:24:38,830
+And for that matter, here,
+let me pull up the information
+
+563
+00:24:38,830 --> 00:24:44,330
+on the free trial.
+
+564
+00:24:44,330 --> 00:24:48,090
+I think it shows it
+in here somewhere.
+
+565
+00:24:48,090 --> 00:24:48,845
+Let's see.
+
+566
+00:24:52,190 --> 00:24:53,407
+AWS Free Tier.
+
+567
+00:24:53,407 --> 00:24:55,490
+All right, so, yeah, as
+part of the AWS Free Tier,
+
+568
+00:24:55,490 --> 00:24:57,907
+if your organization has never
+created a Redshift cluster,
+
+569
+00:24:57,907 --> 00:25:00,840
+you're eligible for a two-month
+free trial of our large node.
+
+570
+00:25:00,840 --> 00:25:03,230
+You get 750 hours
+per month for free,
+
+571
+00:25:03,230 --> 00:25:07,250
+enough to continuously
+run one DC2 with 160 gigs.
+
+572
+00:25:07,250 --> 00:25:08,870
+Once your two-month
+free trial expires
+
+573
+00:25:08,870 --> 00:25:11,390
+or your usage exceeds
+750 hours per month,
+
+574
+00:25:11,390 --> 00:25:14,030
+you can shut down your
+cluster to avoid any charges
+
+575
+00:25:14,030 --> 00:25:16,680
+or keep it running at our
+standard on-demand rate.
+
+576
+00:25:16,680 --> 00:25:20,180
+So again, I would recommend,
+if you're running this,
+
+577
+00:25:20,180 --> 00:25:22,380
+run it on your personal
+account with the free trial,
+
+578
+00:25:22,380 --> 00:25:24,590
+but don't keep it live
+for any amount of time
+
+579
+00:25:24,590 --> 00:25:27,085
+because the prices
+can run pretty fast.
+
+580
+00:25:27,085 --> 00:25:29,460
+So here, you can see that this
+is on the free trial tier.
+
+581
+00:25:29,460 --> 00:25:30,930
+This is kind of
+the smallest one.
+
+582
+00:25:30,930 --> 00:25:34,790
+It's one node, a
+large node here.
+
+583
+00:25:34,790 --> 00:25:38,490
+We have two vCPUs.
+
+584
+00:25:38,490 --> 00:25:42,240
+The estimated on-demand
+compute price is about $0.33
+
+585
+00:25:42,240 --> 00:25:44,150
+per node per hour.
+
+586
+00:25:44,150 --> 00:25:47,910
+And so that's what-- we're
+using on-demand, obviously.
+
+587
+00:25:47,910 --> 00:25:50,500
+And then you're still
+going to pay for the 160
+
+588
+00:25:50,500 --> 00:25:51,790
+gigabytes of storage.
+
+589
+00:25:51,790 --> 00:25:55,570
+So this is going to
+be likely GP2 rates.
+
+590
+00:25:55,570 --> 00:26:02,560
+So GP2 pricing.
+
+591
+00:26:02,560 --> 00:26:04,100
+So what is that again?
+
+592
+00:26:04,100 --> 00:26:06,470
+Yeah, about $0.10 per
+gigabyte per month.
+
+593
+00:26:06,470 --> 00:26:10,660
+So about 16 bucks per
+gigabyte, or better statement,
+
+594
+00:26:10,660 --> 00:26:14,560
+about 16 bucks
+per month for this
+
+595
+00:26:14,560 --> 00:26:16,400
+alone, for just
+the storage alone.
+
+596
+00:26:16,400 --> 00:26:19,340
+And then $0.33
+per node per hour.
+
+597
+00:26:19,340 --> 00:26:24,750
+So if you imagine if we're
+running this for, let's see--
+
+598
+00:26:24,750 --> 00:26:26,940
+Let's, for example, say
+that we have 10 nodes, which
+
+599
+00:26:26,940 --> 00:26:27,797
+is not unrealistic.
+
+600
+00:26:27,797 --> 00:26:29,880
+To have multiple nodes is
+the whole point of this,
+
+601
+00:26:29,880 --> 00:26:32,040
+is to be able to scale this up.
+
+602
+00:26:32,040 --> 00:26:34,990
+But either way, if we had
+multiple nodes, we had 10 nodes,
+
+603
+00:26:34,990 --> 00:26:38,040
+that means that's
+$3.30 per hour.
+
+604
+00:26:38,040 --> 00:26:40,230
+If we ran this for
+24 hours a day,
+
+605
+00:26:40,230 --> 00:26:42,490
+that's 80 bucks for the day.
+
+606
+00:26:42,490 --> 00:26:44,760
+And then across 30
+days in the month,
+
+607
+00:26:44,760 --> 00:26:46,870
+that's 2,300 bucks a month.
+
+608
+00:26:46,870 --> 00:26:49,750
+So then there, again, showing
+the best-case scenario here,
+
+609
+00:26:49,750 --> 00:26:51,430
+you're just running
+the one node,
+
+610
+00:26:51,430 --> 00:26:53,680
+and you're still going to
+have some pretty high costs.
+
+611
+00:26:53,680 --> 00:26:57,990
+But at this rate, you'd be
+paying 2,300 bucks per month.
+
+612
+00:26:57,990 --> 00:27:01,110
+And if we divide
+that by 10, that'll
+
+613
+00:27:01,110 --> 00:27:02,970
+give us the cost for
+one node, so it's still
+
+614
+00:27:02,970 --> 00:27:06,100
+230 bucks per month
+plus the 16 for storage.
+
+615
+00:27:06,100 --> 00:27:11,910
+So about 250 bucks to
+run even the free tier
+
+616
+00:27:11,910 --> 00:27:15,890
+if you're not utilizing or if
+you're outside of the free tier
+
+617
+00:27:15,890 --> 00:27:16,390
+range.
+
+618
+00:27:16,390 --> 00:27:17,555
+So keep that in mind.
+
+619
+00:27:17,555 --> 00:27:18,930
+Definitely, don't
+keep this thing
+
+620
+00:27:18,930 --> 00:27:21,000
+live for any realistic
+period of time
+
+621
+00:27:21,000 --> 00:27:24,380
+unless you're ready
+to pay those costs.
+
+622
+00:27:24,380 --> 00:27:25,730
+But for now, this is fine.
+
+623
+00:27:25,730 --> 00:27:26,920
+It's just to show you.
+
+624
+00:27:26,920 --> 00:27:28,333
+So I'm going to start.
+
+625
+00:27:28,333 --> 00:27:31,000
+And actually, the nice thing is
+it starts, by default, uploading
+
+626
+00:27:31,000 --> 00:27:32,417
+some sample data,
+so we don't even
+
+627
+00:27:32,417 --> 00:27:36,640
+have to worry about how to push
+or deploy this sample data.
+
+628
+00:27:36,640 --> 00:27:39,580
+So we'll just leverage
+that as it is and then we
+
+629
+00:27:39,580 --> 00:27:43,830
+can look and see how we
+can query it and whatnot.
+
+630
+00:27:43,830 --> 00:27:45,520
+And then also,
+unsurprisingly, we
+
+631
+00:27:45,520 --> 00:27:49,520
+need to specify the username
+and then a password for it.
+
+632
+00:27:49,520 --> 00:27:53,690
+So you can put-- just leave the
+answer by default. It's fine.
+
+633
+00:27:53,690 --> 00:27:55,903
+And then I'll just
+put a password.
+
+634
+00:27:59,050 --> 00:27:59,580
+There we go.
+
+635
+00:28:02,140 --> 00:28:03,743
+And then let's do
+Create cluster.
+
+636
+00:28:07,870 --> 00:28:09,980
+And then we'll
+wait a second here.
+
+637
+00:28:09,980 --> 00:28:13,760
+Why is-- I see.
+
+638
+00:28:13,760 --> 00:28:15,945
+Missing something.
+
+639
+00:28:15,945 --> 00:28:18,690
+Ah, my password
+isn't complex enough.
+
+640
+00:28:18,690 --> 00:28:19,660
+Let's try this again.
+
+641
+00:28:29,210 --> 00:28:29,710
+There we go.
+
+642
+00:28:29,710 --> 00:28:30,530
+Now let's try it.
+
+643
+00:28:35,350 --> 00:28:38,230
+All righty, and we don't
+need to save that password,
+
+644
+00:28:38,230 --> 00:28:39,610
+so let's do Never.
+
+645
+00:28:39,610 --> 00:28:42,380
+And so our Redshift cluster
+is getting created now.
+
+646
+00:28:42,380 --> 00:28:48,880
+And so we're going to pause here
+for now and then I'll come back
+
+647
+00:28:48,880 --> 00:28:50,050
+once we have--
+
+648
+00:28:50,050 --> 00:28:52,160
+once it's live.
+
+649
+00:28:52,160 --> 00:28:54,480
+All right, that took
+about five or six minutes.
+
+650
+00:28:54,480 --> 00:28:57,710
+So once that's live
+for you, though, then
+
+651
+00:28:57,710 --> 00:29:00,090
+you can go ahead and
+click into the cluster.
+
+652
+00:29:00,090 --> 00:29:04,700
+And then under Query data,
+you can click here and then
+
+653
+00:29:04,700 --> 00:29:06,600
+Query and query editor V2.
+
+654
+00:29:06,600 --> 00:29:11,150
+I haven't used V1, so
+I'll have to figure out
+
+655
+00:29:11,150 --> 00:29:12,120
+what the difference is.
+
+656
+00:29:12,120 --> 00:29:14,430
+I'm sure there's just
+some slight updates.
+
+657
+00:29:14,430 --> 00:29:16,520
+You also don't have
+to use a query editor.
+
+658
+00:29:16,520 --> 00:29:18,750
+Kind of the same way that
+we query from Python,
+
+659
+00:29:18,750 --> 00:29:20,900
+you could set up an
+Open Database Connection
+
+660
+00:29:20,900 --> 00:29:28,010
+to query to your Redshift
+cluster via any sort of Open
+
+661
+00:29:28,010 --> 00:29:30,630
+Database or Java Database
+Connection-- connectivity.
+
+662
+00:29:30,630 --> 00:29:32,780
+So that's another way to
+do it, but for now, I'm
+
+663
+00:29:32,780 --> 00:29:35,180
+just going to show quickly
+that if we click on this,
+
+664
+00:29:35,180 --> 00:29:39,020
+it actually launches a nice
+little query window for us.
+
+665
+00:29:39,020 --> 00:29:42,560
+And in here, it's just a nice
+little interface where you
+
+666
+00:29:42,560 --> 00:29:46,370
+can explore example queries.
+
+667
+00:29:46,370 --> 00:29:50,360
+They have a bunch of queries
+that you could share,
+
+668
+00:29:50,360 --> 00:29:53,040
+or we'll just do Create a query.
+
+669
+00:29:53,040 --> 00:29:57,360
+And so let's-- sorry,
+where are we at here?
+
+670
+00:29:57,360 --> 00:30:00,040
+Oh, duh, I'm in a
+query window already.
+
+671
+00:30:00,040 --> 00:30:03,370
+So, yeah, you should already
+have the query window
+
+672
+00:30:03,370 --> 00:30:06,650
+up or at least one tab
+up that you can query in.
+
+673
+00:30:06,650 --> 00:30:09,580
+And so I'm just going to
+copy and paste a query,
+
+674
+00:30:09,580 --> 00:30:10,427
+an example query.
+
+675
+00:30:10,427 --> 00:30:12,010
+It's in the notes
+as well, too, if you
+
+676
+00:30:12,010 --> 00:30:13,630
+want to use it from there.
+
+677
+00:30:13,630 --> 00:30:15,880
+I'm just going to copy
+and paste this one.
+
+678
+00:30:15,880 --> 00:30:20,440
+It does a few things, not too,
+too, complex, but selecting--
+
+679
+00:30:20,440 --> 00:30:22,965
+find total sales on a
+given calendar date,
+
+680
+00:30:22,965 --> 00:30:28,060
+find top 10 buyers for a given--
+
+681
+00:30:31,210 --> 00:30:33,230
+actually, hold on
+for one second.
+
+682
+00:30:33,230 --> 00:30:36,580
+I don't know if this is
+where I can run them from.
+
+683
+00:30:36,580 --> 00:30:38,070
+Let's see here.
+
+684
+00:30:38,070 --> 00:30:38,593
+My queries.
+
+685
+00:30:42,680 --> 00:30:44,210
+I can't remember why we can't.
+
+686
+00:30:44,210 --> 00:30:46,530
+We need to save first.
+
+687
+00:30:46,530 --> 00:30:48,035
+Let's just save
+this for a second.
+
+688
+00:30:53,360 --> 00:30:56,853
+The joys of working with a tool
+as they change things on you.
+
+689
+00:30:56,853 --> 00:30:59,520
+Let me pause real quick and make
+sure I tell you the right thing
+
+690
+00:30:59,520 --> 00:31:02,270
+so I don't waste too
+much of your time.
+
+691
+00:31:02,270 --> 00:31:04,220
+I realized I just
+hadn't clicked in here
+
+692
+00:31:04,220 --> 00:31:05,640
+and selected my
+Redshift cluster.
+
+693
+00:31:05,640 --> 00:31:08,570
+So if you're in the same boat
+like me and you can't read,
+
+694
+00:31:08,570 --> 00:31:10,820
+just click on this
+little dropdown
+
+695
+00:31:10,820 --> 00:31:12,270
+in the Redshift cluster.
+
+696
+00:31:12,270 --> 00:31:14,280
+And actually, let's
+just do one query first
+
+697
+00:31:14,280 --> 00:31:16,910
+so we can look at it a
+little bit at a time.
+
+698
+00:31:16,910 --> 00:31:18,410
+So here we're just
+selecting the sum
+
+699
+00:31:18,410 --> 00:31:21,620
+of some quantity sold,
+where sales data ID
+
+700
+00:31:21,620 --> 00:31:27,092
+equals the date ID And so--
+
+701
+00:31:27,092 --> 00:31:28,795
+and calendar date
+is set to this.
+
+702
+00:31:31,790 --> 00:31:34,850
+And I'm already
+throwing errors in here.
+
+703
+00:31:34,850 --> 00:31:35,590
+Let me see.
+
+704
+00:31:38,450 --> 00:31:39,250
+Syntax error.
+
+705
+00:31:39,250 --> 00:31:41,270
+Pretty sure I just
+copied this query here,
+
+706
+00:31:41,270 --> 00:31:45,960
+so let me just double-check,
+make sure this is--
+
+707
+00:31:45,960 --> 00:31:47,180
+here we go.
+
+708
+00:31:47,180 --> 00:31:50,970
+Oh, and I guess you could have
+dropped off the Explain graph,
+
+709
+00:31:50,970 --> 00:31:53,688
+but let's just do
+limit 100 for now
+
+710
+00:31:53,688 --> 00:31:55,230
+so we just get the
+first 100 results,
+
+711
+00:31:55,230 --> 00:31:57,605
+or I guess it's only going to
+be one result because we're
+
+712
+00:31:57,605 --> 00:31:58,740
+doing the sum.
+
+713
+00:31:58,740 --> 00:32:00,390
+But let's do one
+of the other ones
+
+714
+00:32:00,390 --> 00:32:03,340
+here where we might have
+a little bit longer.
+
+715
+00:32:03,340 --> 00:32:06,810
+So here is find events.
+
+716
+00:32:06,810 --> 00:32:09,330
+So we're finding events
+in the 99.9 percentile
+
+717
+00:32:09,330 --> 00:32:11,110
+in terms of all-time
+gross sales.
+
+718
+00:32:11,110 --> 00:32:15,840
+So you can see we have a
+nice subquery going on here,
+
+719
+00:32:15,840 --> 00:32:18,100
+just a good little
+mess of a query.
+
+720
+00:32:18,100 --> 00:32:19,720
+We're doing some ordering.
+
+721
+00:32:19,720 --> 00:32:23,550
+So something that I would argue
+would probably take a while.
+
+722
+00:32:23,550 --> 00:32:25,950
+We don't have a baseline
+to compare it to right now,
+
+723
+00:32:25,950 --> 00:32:27,370
+but here, we'll just run it.
+
+724
+00:32:27,370 --> 00:32:29,010
+And we can see that,
+in general, this
+
+725
+00:32:29,010 --> 00:32:31,870
+is actually a relatively
+quick process to do.
+
+726
+00:32:31,870 --> 00:32:33,990
+They have a nice interface.
+
+727
+00:32:33,990 --> 00:32:37,260
+And so if you happen
+to be in a situation
+
+728
+00:32:37,260 --> 00:32:41,700
+where you need to do
+some advanced analytics
+
+729
+00:32:41,700 --> 00:32:45,240
+and you already have the
+data or you have a way
+
+730
+00:32:45,240 --> 00:32:47,920
+to set up your Redshift
+database or loading your data--
+
+731
+00:32:47,920 --> 00:32:49,837
+and we'll actually see
+how to do that as well.
+
+732
+00:32:49,837 --> 00:32:53,060
+How to load in some data, too,
+via S3 in the next lecture.
+
+733
+00:32:53,060 --> 00:32:54,910
+But then Redshift
+is a great tool
+
+734
+00:32:54,910 --> 00:32:58,330
+to do some really quick
+and fast and efficient
+
+735
+00:32:58,330 --> 00:32:59,680
+analytics at scale.
+
+736
+00:32:59,680 --> 00:33:02,038
+So we'll leave it at that.
+
+737
+00:33:02,038 --> 00:33:03,580
+Again, this is just
+one of those ones
+
+738
+00:33:03,580 --> 00:33:05,680
+where I want you to see a tool.
+
+739
+00:33:05,680 --> 00:33:07,730
+And then the next lecture,
+I'll show you again
+
+740
+00:33:07,730 --> 00:33:10,640
+how to pull in data
+from an external source.
+
+741
+00:33:10,640 --> 00:33:12,250
+And then after
+that, we'll be off
+
+742
+00:33:12,250 --> 00:33:13,990
+of database and
+into some machine
+
+743
+00:33:13,990 --> 00:33:16,700
+learning and other
+analytics-type workloads.
+
+744
+00:33:16,700 --> 00:33:18,520
+OK, thanks for watching.
+
+745
+00:33:18,520 --> 00:33:19,270
+Bye.
+
+746
+00:33:19,270 --> 00:33:20,720
+One final point before I go.
+
+747
+00:33:20,720 --> 00:33:22,720
+I forgot to show you that
+we should delete this.
+
+748
+00:33:22,720 --> 00:33:27,220
+So you can close out of
+your query editor here.
+
+749
+00:33:27,220 --> 00:33:31,390
+And then don't forget to
+go to Actions and Delete.
+
+750
+00:33:31,390 --> 00:33:34,330
+And then you don't need to
+create a final snapshot.
+
+751
+00:33:34,330 --> 00:33:37,510
+Type "delete" and then
+hit Delete cluster.
+
+752
+00:33:37,510 --> 00:33:39,950
+So make sure you do that,
+and then you're good to go.
+
+753
+00:33:39,950 --> 00:33:40,970
+OK, catch you later.
+
+754
+00:33:40,970 --> 00:33:42,250
+Bye.

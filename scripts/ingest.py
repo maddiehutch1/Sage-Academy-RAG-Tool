@@ -227,7 +227,7 @@ def ingest_file(cur, srt_path: Path) -> None:
     cur.execute("DELETE FROM transcript_chunks WHERE video_id = %s", (video_db_id,))
 
     chunks = chunk_entries(entries, CHUNK_MAX_TOKENS, CHUNK_OVERLAP_ENTRIES)
-    print(f"  {len(chunks)} chunk(s) → '{video_title}'")
+    print(f"  {len(chunks)} chunk(s) -> '{video_title}'")
 
     for i, chunk in enumerate(chunks):
         vec = embed(chunk["text"])

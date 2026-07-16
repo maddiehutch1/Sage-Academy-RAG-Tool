@@ -1,0 +1,3020 @@
+1
+00:00:00,000 --> 00:00:01,260
+SHARAD JONES: Hey, everybody.
+
+2
+00:00:01,260 --> 00:00:02,040
+Welcome back.
+
+3
+00:00:02,040 --> 00:00:05,000
+So in today's video, we're going
+to be talking about web app
+
+4
+00:00:05,000 --> 00:00:05,970
+development.
+
+5
+00:00:05,970 --> 00:00:08,210
+This is really our
+chance to move on
+
+6
+00:00:08,210 --> 00:00:10,190
+from very, very
+simple websites, where
+
+7
+00:00:10,190 --> 00:00:13,010
+we have to manage
+the firewall, we
+
+8
+00:00:13,010 --> 00:00:16,370
+have to also write all
+of our code into HTML.
+
+9
+00:00:16,370 --> 00:00:20,167
+And really now start to unlock
+this capability to, let's say,
+
+10
+00:00:20,167 --> 00:00:22,250
+tap into all the tools and
+technologies we already
+
+11
+00:00:22,250 --> 00:00:25,500
+know and a lot of tools and
+technology we don't know yet,
+
+12
+00:00:25,500 --> 00:00:27,200
+but it expands our capacity.
+
+13
+00:00:27,200 --> 00:00:30,830
+And to be more concrete,
+what we've done so far
+
+14
+00:00:30,830 --> 00:00:33,180
+has been a static website.
+
+15
+00:00:33,180 --> 00:00:35,220
+Meaning that you
+go to this page,
+
+16
+00:00:35,220 --> 00:00:40,700
+it loads up a website or
+it loads up the HTML file,
+
+17
+00:00:40,700 --> 00:00:42,740
+and the HTML file
+has text on it.
+
+18
+00:00:42,740 --> 00:00:44,280
+In the early days
+of the internet,
+
+19
+00:00:44,280 --> 00:00:46,650
+that was very much how
+most of the web was.
+
+20
+00:00:46,650 --> 00:00:49,940
+It was a place you go to just
+view information, and have
+
+21
+00:00:49,940 --> 00:00:51,380
+it listed out there.
+
+22
+00:00:51,380 --> 00:00:53,540
+But we know today
+that we interact
+
+23
+00:00:53,540 --> 00:00:56,180
+more often than not with very,
+very interactive websites that
+
+24
+00:00:56,180 --> 00:00:59,090
+have all sorts of
+back end components
+
+25
+00:00:59,090 --> 00:01:03,060
+that are creating new
+views or new analyzes,
+
+26
+00:01:03,060 --> 00:01:06,005
+or providing us some
+recommendations, feature sets.
+
+27
+00:01:06,005 --> 00:01:08,130
+We're interacting with
+components on the front end.
+
+28
+00:01:08,130 --> 00:01:10,445
+Like think about if I go
+to spotify.com right now,
+
+29
+00:01:10,445 --> 00:01:11,820
+I'm going to get
+on there and I'm
+
+30
+00:01:11,820 --> 00:01:16,060
+going to see links to create
+playlists, new music there.
+
+31
+00:01:16,060 --> 00:01:17,550
+I can play music right.
+
+32
+00:01:17,550 --> 00:01:19,620
+On the back end, it
+has all my data stored.
+
+33
+00:01:19,620 --> 00:01:21,880
+Every year I get
+my Spotify Wrapped.
+
+34
+00:01:21,880 --> 00:01:25,742
+All that stuff is enabled
+by modern web technologies.
+
+35
+00:01:25,742 --> 00:01:27,450
+And so we want to
+start to move ourselves
+
+36
+00:01:27,450 --> 00:01:30,330
+towards that or at least
+understand how that
+
+37
+00:01:30,330 --> 00:01:32,590
+is done, how that is managed.
+
+38
+00:01:32,590 --> 00:01:35,640
+As I've said before, this is
+not a web development class.
+
+39
+00:01:35,640 --> 00:01:38,740
+My goal today is not to or
+in any of these lectures
+
+40
+00:01:38,740 --> 00:01:42,190
+is not to teach you all the
+aspects of web development.
+
+41
+00:01:42,190 --> 00:01:45,502
+I would encourage you to explore
+our web development sequence
+
+42
+00:01:45,502 --> 00:01:47,710
+that we have in the department,
+and that really dives
+
+43
+00:01:47,710 --> 00:01:49,480
+much, much deeper into it.
+
+44
+00:01:49,480 --> 00:01:51,400
+What I do want to
+show you is that there
+
+45
+00:01:51,400 --> 00:01:52,888
+is a deeper side to this.
+
+46
+00:01:52,888 --> 00:01:54,430
+There's justification
+that you should
+
+47
+00:01:54,430 --> 00:01:55,940
+go take some of these classes.
+
+48
+00:01:55,940 --> 00:02:00,400
+But also then the cloud
+is a really valuable asset
+
+49
+00:02:00,400 --> 00:02:02,808
+in this in that, as you
+build up these skill sets,
+
+50
+00:02:02,808 --> 00:02:05,350
+what we're going to do today is
+going to be applicable there.
+
+51
+00:02:05,350 --> 00:02:08,949
+Because you'll learn how to make
+a really cool modern website
+
+52
+00:02:08,949 --> 00:02:10,883
+and web application.
+
+53
+00:02:10,883 --> 00:02:12,550
+But what we're going
+to do today is just
+
+54
+00:02:12,550 --> 00:02:14,710
+talk about how can
+we build on that
+
+55
+00:02:14,710 --> 00:02:17,000
+or deploy that into a
+cloud based environment.
+
+56
+00:02:17,000 --> 00:02:19,208
+So we have all those features
+that we've talked about
+
+57
+00:02:19,208 --> 00:02:20,938
+so far that are valuable to us.
+
+58
+00:02:20,938 --> 00:02:22,730
+But yeah, plenty of
+other things we can do.
+
+59
+00:02:22,730 --> 00:02:25,880
+So tap into databases, so we
+can pull up relevant data,
+
+60
+00:02:25,880 --> 00:02:28,930
+we can have a login page, we
+can have Python on the back end.
+
+61
+00:02:28,930 --> 00:02:31,555
+That's really the thing that's
+going to be helpful for us today
+
+62
+00:02:31,555 --> 00:02:33,650
+is we're going to show
+how we can basically
+
+63
+00:02:33,650 --> 00:02:36,250
+build our websites in Python.
+
+64
+00:02:36,250 --> 00:02:37,990
+What that really gives
+us the capability
+
+65
+00:02:37,990 --> 00:02:42,280
+for is now every skill you learn
+in Python throughout your time
+
+66
+00:02:42,280 --> 00:02:44,900
+here and in other places,
+you can now show that,
+
+67
+00:02:44,900 --> 00:02:48,930
+display that on a website
+in a very interactive way.
+
+68
+00:02:48,930 --> 00:02:52,760
+This unlocks another level
+to everything you show,
+
+69
+00:02:52,760 --> 00:02:54,700
+because now there's a
+level of interactivity
+
+70
+00:02:54,700 --> 00:02:55,790
+you can put into this.
+
+71
+00:02:55,790 --> 00:03:00,130
+So let's say that you
+are in your Python class,
+
+72
+00:03:00,130 --> 00:03:03,385
+and you're learning
+how to build some new
+
+73
+00:03:03,385 --> 00:03:07,070
+or highlight some new skill,
+some new coding technique.
+
+74
+00:03:07,070 --> 00:03:09,370
+Well, you can put that
+right away into a website
+
+75
+00:03:09,370 --> 00:03:13,810
+such that now I can show my
+future employers, say so.
+
+76
+00:03:13,810 --> 00:03:18,290
+This is going to be a really
+core component of that.
+
+77
+00:03:18,290 --> 00:03:24,600
+Now from a website side, you
+have typically two main aspects,
+
+78
+00:03:24,600 --> 00:03:25,850
+the front end or the back end.
+
+79
+00:03:25,850 --> 00:03:28,430
+Front end typically
+referring to anything
+
+80
+00:03:28,430 --> 00:03:29,955
+that the user is seeing.
+
+81
+00:03:29,955 --> 00:03:32,580
+And more importantly, actually
+is not just what they're seeing,
+
+82
+00:03:32,580 --> 00:03:35,750
+but it's what's being
+processed on their side, what
+
+83
+00:03:35,750 --> 00:03:36,980
+the browser is doing.
+
+84
+00:03:36,980 --> 00:03:39,710
+That's referred to
+as the client side.
+
+85
+00:03:39,710 --> 00:03:43,250
+So this can be handled by any
+number of front end frameworks
+
+86
+00:03:43,250 --> 00:03:44,610
+or languages.
+
+87
+00:03:44,610 --> 00:03:47,030
+So we've already seen
+HTML, and for the most part
+
+88
+00:03:47,030 --> 00:03:50,340
+we'll stick in HTML in
+this course and CSS.
+
+89
+00:03:50,340 --> 00:03:54,380
+JavaScript gives us some more
+again, interactive features.
+
+90
+00:03:54,380 --> 00:03:57,140
+But then you get into more
+complex modern frameworks
+
+91
+00:03:57,140 --> 00:04:01,350
+like AngularJS, React,
+and many others.
+
+92
+00:04:01,350 --> 00:04:03,625
+And again, every day
+there's a new framework
+
+93
+00:04:03,625 --> 00:04:04,500
+and a new technology.
+
+94
+00:04:04,500 --> 00:04:05,820
+So we're not here
+to list these out.
+
+95
+00:04:05,820 --> 00:04:08,278
+Again, like I said, that is
+for the web development course.
+
+96
+00:04:08,278 --> 00:04:10,700
+But just know that there is
+this whole aspect of front end
+
+97
+00:04:10,700 --> 00:04:12,385
+as well as back end development.
+
+98
+00:04:12,385 --> 00:04:13,760
+For what we're
+doing today, we're
+
+99
+00:04:13,760 --> 00:04:15,860
+actually more concerned
+about the back end.
+
+100
+00:04:15,860 --> 00:04:17,970
+That is what's on
+the server side.
+
+101
+00:04:17,970 --> 00:04:21,010
+And again, remember the server
+is going to be our EC2 instance.
+
+102
+00:04:21,010 --> 00:04:23,730
+So the server is what's
+hosting this and managing this.
+
+103
+00:04:23,730 --> 00:04:26,560
+And this is the code that
+we can execute locally.
+
+104
+00:04:26,560 --> 00:04:28,415
+So we're going to
+do Flask today.
+
+105
+00:04:28,415 --> 00:04:30,540
+But know that there are,
+again, many other back end
+
+106
+00:04:30,540 --> 00:04:35,340
+frameworks as well too, and
+combinations of both Djangos
+
+107
+00:04:35,340 --> 00:04:40,020
+and other popular
+Python based back end.
+
+108
+00:04:40,020 --> 00:04:41,812
+And significantly more features.
+
+109
+00:04:41,812 --> 00:04:43,270
+We'll talk about
+Flask in a second.
+
+110
+00:04:43,270 --> 00:04:45,603
+We're going to do Flask for
+the most part in this class.
+
+111
+00:04:45,603 --> 00:04:49,830
+But just to say that if you want
+to do a more complex website,
+
+112
+00:04:49,830 --> 00:04:53,940
+Django enables quite
+a few other things.
+
+113
+00:04:53,940 --> 00:04:55,760
+There's also a lot
+of times, again,
+
+114
+00:04:55,760 --> 00:04:57,260
+being a data scientist
+myself, there
+
+115
+00:04:57,260 --> 00:04:59,802
+are a lot of times where I just
+want to demonstrate something
+
+116
+00:04:59,802 --> 00:05:01,500
+about my analysis,
+whether that's
+
+117
+00:05:01,500 --> 00:05:03,600
+creating an
+interactive dashboard
+
+118
+00:05:03,600 --> 00:05:06,450
+or trying to highlight
+how a machine learning
+
+119
+00:05:06,450 --> 00:05:08,020
+model I've built works.
+
+120
+00:05:08,020 --> 00:05:11,100
+I'll sometimes build very
+small, lightweight applications
+
+121
+00:05:11,100 --> 00:05:12,870
+that I can host on the
+web so that again I
+
+122
+00:05:12,870 --> 00:05:15,210
+can share that with anybody.
+
+123
+00:05:15,210 --> 00:05:17,860
+Also sometimes it's just a
+case of needing a prototype.
+
+124
+00:05:17,860 --> 00:05:22,260
+If I'm working on a project with
+a company or the only company
+
+125
+00:05:22,260 --> 00:05:24,630
+I'm working at, and
+they need to see
+
+126
+00:05:24,630 --> 00:05:28,380
+what I believe a valuable
+feature could be, rather than me
+
+127
+00:05:28,380 --> 00:05:30,640
+wasting time building
+out a whole application,
+
+128
+00:05:30,640 --> 00:05:33,210
+oftentimes I'll build a
+prototype in a much easier
+
+129
+00:05:33,210 --> 00:05:35,308
+to use language just
+to get it working
+
+130
+00:05:35,308 --> 00:05:37,350
+or easier to use framework
+just to get it working
+
+131
+00:05:37,350 --> 00:05:38,740
+and show the capability.
+
+132
+00:05:38,740 --> 00:05:43,260
+And then I can always pass
+that off or work on a more
+
+133
+00:05:43,260 --> 00:05:44,680
+fully featured implementation.
+
+134
+00:05:44,680 --> 00:05:46,055
+But it's really
+good to have some
+
+135
+00:05:46,055 --> 00:05:47,850
+of these other frameworks
+in your toolkit
+
+136
+00:05:47,850 --> 00:05:50,850
+so that you can build on that.
+
+137
+00:05:50,850 --> 00:05:53,200
+But to that point, so
+there are quite a few
+
+138
+00:05:53,200 --> 00:05:55,430
+other very, very
+simple, friendly,
+
+139
+00:05:55,430 --> 00:06:00,470
+easy to use web frameworks for
+hosting data based applications,
+
+140
+00:06:00,470 --> 00:06:01,660
+I'd call them.
+
+141
+00:06:01,660 --> 00:06:04,520
+You're probably familiar with
+Tableau, maybe even Power BI.
+
+142
+00:06:04,520 --> 00:06:07,900
+These are dedicated
+towards data visualization.
+
+143
+00:06:07,900 --> 00:06:10,990
+So you provide a data set or
+a database that has the data
+
+144
+00:06:10,990 --> 00:06:13,840
+sets, and then you put
+together the visual experience
+
+145
+00:06:13,840 --> 00:06:15,190
+around that.
+
+146
+00:06:15,190 --> 00:06:18,545
+Streamlit is a Python
+based tool that is actually
+
+147
+00:06:18,545 --> 00:06:19,420
+really well featured.
+
+148
+00:06:19,420 --> 00:06:23,600
+Maybe I'll just pull it up here
+really quick for reference.
+
+149
+00:06:23,600 --> 00:06:25,900
+So let's see here.
+
+150
+00:06:25,900 --> 00:06:28,030
+I debated even having us
+going through Streamlit
+
+151
+00:06:28,030 --> 00:06:31,820
+in this course, mostly
+because it's so easy to use,
+
+152
+00:06:31,820 --> 00:06:33,880
+but it also doesn't
+really highlight really
+
+153
+00:06:33,880 --> 00:06:34,610
+web development.
+
+154
+00:06:34,610 --> 00:06:35,840
+So that's why I avoided it.
+
+155
+00:06:35,840 --> 00:06:39,190
+But you can see here, this
+is how simple Streamlit code
+
+156
+00:06:39,190 --> 00:06:39,830
+looks like.
+
+157
+00:06:39,830 --> 00:06:43,370
+So import the Streamlit library.
+
+158
+00:06:43,370 --> 00:06:48,190
+Streamlit you can have it create
+sliders, and all sorts of other
+
+159
+00:06:48,190 --> 00:06:48,830
+features too.
+
+160
+00:06:48,830 --> 00:06:52,120
+So if you're just making a very
+simple web application that
+
+161
+00:06:52,120 --> 00:06:55,580
+just has to have data
+connection on the back end,
+
+162
+00:06:55,580 --> 00:06:56,450
+I love Streamlit.
+
+163
+00:06:56,450 --> 00:06:59,650
+It is a go to for
+me all the time.
+
+164
+00:06:59,650 --> 00:07:02,980
+Now again, very limited
+in what it can do as
+
+165
+00:07:02,980 --> 00:07:05,060
+far as a full application goes.
+
+166
+00:07:05,060 --> 00:07:07,750
+So that's why we're not
+talking about it in this class.
+
+167
+00:07:07,750 --> 00:07:09,640
+But just know that that's
+another tool that's
+
+168
+00:07:09,640 --> 00:07:10,880
+available to you as well.
+
+169
+00:07:10,880 --> 00:07:12,820
+So check Streamlit out.
+
+170
+00:07:12,820 --> 00:07:17,440
+Again, if you know Python,
+this is 10 seconds effort,
+
+171
+00:07:17,440 --> 00:07:18,880
+and you've got a website app.
+
+172
+00:07:18,880 --> 00:07:20,860
+And actually, the same practice
+that we're going to do today
+
+173
+00:07:20,860 --> 00:07:22,960
+will still apply because
+again, we're not really
+
+174
+00:07:22,960 --> 00:07:24,490
+focusing too much
+on the framework
+
+175
+00:07:24,490 --> 00:07:29,720
+so much as on what it enables
+us from a deployment side.
+
+176
+00:07:29,720 --> 00:07:30,780
+A Shiny as well.
+
+177
+00:07:30,780 --> 00:07:34,430
+That's if you are familiar
+with the R programming
+
+178
+00:07:34,430 --> 00:07:36,560
+language like the
+letter R, Shiny
+
+179
+00:07:36,560 --> 00:07:40,830
+is a similar kind of
+framework but written in R.
+
+180
+00:07:40,830 --> 00:07:42,740
+So that's another tool
+is available for you
+
+181
+00:07:42,740 --> 00:07:45,750
+to use if you are interested.
+
+182
+00:07:45,750 --> 00:07:51,090
+Oops, but yeah, Flask
+itself is really nice, easy
+
+183
+00:07:51,090 --> 00:07:54,917
+to use framework, and
+actually fairly robust.
+
+184
+00:07:54,917 --> 00:07:57,000
+Again like I noted here,
+plenty of other companies
+
+185
+00:07:57,000 --> 00:07:59,740
+use them, use Flask in
+their web applications.
+
+186
+00:07:59,740 --> 00:08:03,870
+So Netflix, Reddit, AirBnB,
+Lyft, and a slew of others.
+
+187
+00:08:03,870 --> 00:08:05,590
+It's not their
+whole application.
+
+188
+00:08:05,590 --> 00:08:09,540
+So don't misunderstand,
+Netflix is not built in Python.
+
+189
+00:08:09,540 --> 00:08:13,020
+But there are pieces of it
+that are still leveraging
+
+190
+00:08:13,020 --> 00:08:13,990
+Flask as a framework.
+
+191
+00:08:13,990 --> 00:08:17,880
+So it's widely used
+in the industry,
+
+192
+00:08:17,880 --> 00:08:19,830
+but even more importantly,
+its core principles
+
+193
+00:08:19,830 --> 00:08:21,220
+hold across quite a few things.
+
+194
+00:08:21,220 --> 00:08:22,690
+So that's why we're
+focusing on it.
+
+195
+00:08:22,690 --> 00:08:25,350
+And I'm making an assumption
+that, you all either have
+
+196
+00:08:25,350 --> 00:08:26,850
+been or will be
+exposed to Python
+
+197
+00:08:26,850 --> 00:08:29,488
+quite a bit in this program.
+
+198
+00:08:29,488 --> 00:08:31,780
+I've also thrown around the
+word framework quite a bit,
+
+199
+00:08:31,780 --> 00:08:32,880
+and I realize I
+should have defined
+
+200
+00:08:32,880 --> 00:08:34,360
+that earlier on in the video.
+
+201
+00:08:34,360 --> 00:08:37,860
+But a framework again,
+this is just saying, hey,
+
+202
+00:08:37,860 --> 00:08:40,590
+I have a library of code.
+
+203
+00:08:40,590 --> 00:08:44,410
+The same way that if
+you've used Python before,
+
+204
+00:08:44,410 --> 00:08:46,630
+you've used NumPy, or
+as I just showed there,
+
+205
+00:08:46,630 --> 00:08:49,810
+Streamlit is a library that
+I could import in Python.
+
+206
+00:08:49,810 --> 00:08:52,660
+So Python is the language.
+
+207
+00:08:52,660 --> 00:08:53,990
+These are libraries.
+
+208
+00:08:53,990 --> 00:08:56,580
+Flask itself is a library.
+
+209
+00:08:56,580 --> 00:08:59,070
+And we call it a
+framework more because it
+
+210
+00:08:59,070 --> 00:09:02,160
+is creating the scaffolding
+almost of what it means
+
+211
+00:09:02,160 --> 00:09:03,910
+to build a web application.
+
+212
+00:09:03,910 --> 00:09:08,040
+They have a lot of back end
+code that handles all the things
+
+213
+00:09:08,040 --> 00:09:10,450
+that we had to manually
+define before and much,
+
+214
+00:09:10,450 --> 00:09:13,180
+much more but within this code.
+
+215
+00:09:13,180 --> 00:09:16,140
+And so that's why we call it
+a framework as opposed to,
+
+216
+00:09:16,140 --> 00:09:19,080
+it's not a language, Python
+is still the language,
+
+217
+00:09:19,080 --> 00:09:22,130
+and it's a little bit
+more than just a library.
+
+218
+00:09:22,130 --> 00:09:25,900
+And so that's where that
+term framework comes in.
+
+219
+00:09:25,900 --> 00:09:28,310
+But like I said, I've used
+this in a ton of cases.
+
+220
+00:09:28,310 --> 00:09:31,450
+I've pushed applications
+live that users have used
+
+221
+00:09:31,450 --> 00:09:32,660
+that I've written in Flask.
+
+222
+00:09:32,660 --> 00:09:36,620
+So very much a usable tool,
+but there are plenty others.
+
+223
+00:09:36,620 --> 00:09:39,460
+So keep that in mind as
+we're going through this.
+
+224
+00:09:39,460 --> 00:09:41,150
+Let me going through
+this demonstration,
+
+225
+00:09:41,150 --> 00:09:43,300
+but I just want
+to point that out.
+
+226
+00:09:43,300 --> 00:09:45,788
+So yeah, like the slide
+said, let's stop talking,
+
+227
+00:09:45,788 --> 00:09:46,580
+let's do something.
+
+228
+00:09:46,580 --> 00:09:48,630
+So I'll close out a
+PowerPoint for a second.
+
+229
+00:09:48,630 --> 00:09:49,130
+Yeah.
+
+230
+00:09:49,130 --> 00:09:51,430
+Let's save any changes I made.
+
+231
+00:09:51,430 --> 00:09:53,760
+So here I am on
+my console window.
+
+232
+00:09:53,760 --> 00:09:55,600
+I'll full screen this.
+
+233
+00:09:55,600 --> 00:09:57,100
+Or sorry, on my terminal window.
+
+234
+00:09:57,100 --> 00:09:59,536
+And then let me pull up.
+
+235
+00:09:59,536 --> 00:10:06,460
+I'll drag this up to the top
+as well to my AWS Console.
+
+236
+00:10:06,460 --> 00:10:09,852
+So it's the AWS Console as
+you guys all know and love.
+
+237
+00:10:09,852 --> 00:10:11,560
+All we're going to do
+today, though, it's
+
+238
+00:10:11,560 --> 00:10:12,893
+actually pretty straightforward.
+
+239
+00:10:12,893 --> 00:10:16,060
+We are going to create
+an EC2 instance.
+
+240
+00:10:16,060 --> 00:10:21,580
+We are going to install all the
+relevant libraries to get Flask
+
+241
+00:10:21,580 --> 00:10:24,190
+running on our environment.
+
+242
+00:10:24,190 --> 00:10:26,500
+Push a very, very
+simple website, nothing
+
+243
+00:10:26,500 --> 00:10:27,750
+more than a Hello World.
+
+244
+00:10:27,750 --> 00:10:29,500
+But just to show how
+we can push a website
+
+245
+00:10:29,500 --> 00:10:33,980
+live in or via
+Python on our server.
+
+246
+00:10:33,980 --> 00:10:36,530
+And then from there
+we'll call it,
+
+247
+00:10:36,530 --> 00:10:39,707
+but we'll go on to next in
+the future video creating
+
+248
+00:10:39,707 --> 00:10:40,790
+a more full featured apps.
+
+249
+00:10:40,790 --> 00:10:44,597
+So this again just going to be
+bare bones introduction to this.
+
+250
+00:10:44,597 --> 00:10:46,430
+So I just wanted to
+walk through these steps
+
+251
+00:10:46,430 --> 00:10:50,450
+so you can see how
+I'm setting mine up.
+
+252
+00:10:50,450 --> 00:10:52,120
+I'm just calling a test server.
+
+253
+00:10:52,120 --> 00:10:57,010
+I'm doing Ubuntu, and
+I'm going to do 22.04.
+
+254
+00:10:57,010 --> 00:10:58,910
+Depending on when you're
+watching this video,
+
+255
+00:10:58,910 --> 00:11:01,690
+different versions might be
+available under the free tier.
+
+256
+00:11:01,690 --> 00:11:04,570
+You'll typically see me
+though always use the one
+
+257
+00:11:04,570 --> 00:11:05,900
+just below the newest one.
+
+258
+00:11:05,900 --> 00:11:08,660
+So 24.04 is the
+current newest one.
+
+259
+00:11:08,660 --> 00:11:11,530
+I just stepped down to 22.04.
+
+260
+00:11:11,530 --> 00:11:14,120
+Just in case there is
+an issue I run into,
+
+261
+00:11:14,120 --> 00:11:16,390
+I like to use the one
+that's like slightly older
+
+262
+00:11:16,390 --> 00:11:18,560
+just because there tend
+to be more search results.
+
+263
+00:11:18,560 --> 00:11:22,700
+And that's only because 24.04
+is relatively new right now.
+
+264
+00:11:22,700 --> 00:11:25,970
+But broadly speaking,
+either should be fine.
+
+265
+00:11:25,970 --> 00:11:27,740
+But otherwise
+everything else can
+
+266
+00:11:27,740 --> 00:11:32,510
+be left default. If you have a
+preexisting key pair that you've
+
+267
+00:11:32,510 --> 00:11:35,057
+used, you're welcome to do
+that or create a new one.
+
+268
+00:11:35,057 --> 00:11:36,890
+And then the only other
+thing I want to note
+
+269
+00:11:36,890 --> 00:11:43,400
+is we'll add HTTP
+traffic as a port
+
+270
+00:11:43,400 --> 00:11:46,320
+to open just in case we
+want to access it that way.
+
+271
+00:11:46,320 --> 00:11:47,610
+Otherwise launch instance.
+
+272
+00:11:50,465 --> 00:11:51,815
+And then we wait a second.
+
+273
+00:11:54,350 --> 00:11:55,850
+Another thing to
+note, just like we
+
+274
+00:11:55,850 --> 00:11:58,620
+said or I showed before
+in previous videos,
+
+275
+00:11:58,620 --> 00:12:01,290
+when we want to access
+the website publicly,
+
+276
+00:12:01,290 --> 00:12:04,920
+we're going to use this IP
+address or you can use this DNS.
+
+277
+00:12:04,920 --> 00:12:07,740
+If you click it right now,
+again like you've seen before--
+
+278
+00:12:07,740 --> 00:12:10,320
+First off, it's going
+to, I guess not.
+
+279
+00:12:10,320 --> 00:12:12,350
+Let me even pull it up.
+
+280
+00:12:12,350 --> 00:12:14,240
+But you basically
+you shouldn't try.
+
+281
+00:12:14,240 --> 00:12:15,680
+There's nothing there.
+
+282
+00:12:15,680 --> 00:12:18,450
+Even if I remove that, there's
+nothing at this website.
+
+283
+00:12:18,450 --> 00:12:24,030
+So we have to obviously create
+all the details on there
+
+284
+00:12:24,030 --> 00:12:26,190
+or the web application on there.
+
+285
+00:12:26,190 --> 00:12:29,920
+So now if we come and
+copy our link here,
+
+286
+00:12:29,920 --> 00:12:33,210
+come back over to the
+terminal, paste this.
+
+287
+00:12:33,210 --> 00:12:34,290
+Oh, great.
+
+288
+00:12:34,290 --> 00:12:35,740
+Connection refused.
+
+289
+00:12:35,740 --> 00:12:39,880
+Let me pause real quick, and
+then make sure mine is working.
+
+290
+00:12:39,880 --> 00:12:44,060
+So just to clarify what, what
+I did there as far as a change,
+
+291
+00:12:44,060 --> 00:12:46,600
+I just did not switch over
+to the right directory
+
+292
+00:12:46,600 --> 00:12:48,560
+where my key pair was.
+
+293
+00:12:48,560 --> 00:12:51,130
+Recording videos is always
+harder than just doing it
+
+294
+00:12:51,130 --> 00:12:52,010
+on your own.
+
+295
+00:12:52,010 --> 00:12:54,860
+So I make sure I had my key pair
+still in my Downloads folder,
+
+296
+00:12:54,860 --> 00:12:57,482
+which we would not say is
+best practice, but either way,
+
+297
+00:12:57,482 --> 00:12:59,690
+that's where it was and why
+I wasn't able to connect.
+
+298
+00:12:59,690 --> 00:13:02,020
+So if you just see the
+change your directory
+
+299
+00:13:02,020 --> 00:13:05,680
+over to your Downloads folder or
+wherever you have your key pair
+
+300
+00:13:05,680 --> 00:13:06,380
+saved.
+
+301
+00:13:06,380 --> 00:13:10,240
+This is my key pair,
+my test one that I use.
+
+302
+00:13:10,240 --> 00:13:11,127
+That's how it is.
+
+303
+00:13:11,127 --> 00:13:13,460
+And then I'm just going to
+type clear to clear this out,
+
+304
+00:13:13,460 --> 00:13:17,600
+So it's a little easier
+to see for us here.
+
+305
+00:13:17,600 --> 00:13:20,540
+So with that, now
+all we need to do
+
+306
+00:13:20,540 --> 00:13:22,920
+is get Flask set
+up and installed,
+
+307
+00:13:22,920 --> 00:13:25,110
+get some code over there
+to push our website live.
+
+308
+00:13:25,110 --> 00:13:27,438
+So first thing I'm
+going to do is run sudo.
+
+309
+00:13:27,438 --> 00:13:29,480
+And actually I can increase
+the size of this too,
+
+310
+00:13:29,480 --> 00:13:32,090
+so it's not so
+small for you all.
+
+311
+00:13:32,090 --> 00:13:36,620
+Sudo apt update slash y.
+
+312
+00:13:36,620 --> 00:13:42,560
+And again, all that does is
+go through and push or make
+
+313
+00:13:42,560 --> 00:13:45,700
+available to us any new packages
+that we might want to download.
+
+314
+00:13:45,700 --> 00:13:48,880
+Make sure everything's up
+to date and good to go.
+
+315
+00:13:48,880 --> 00:13:51,310
+Also the notes for this
+lecture are on Canvas
+
+316
+00:13:51,310 --> 00:13:52,970
+there just under
+the file section,
+
+317
+00:13:52,970 --> 00:13:55,100
+under lecture 12 web app dev.
+
+318
+00:13:55,100 --> 00:13:56,780
+So you can always
+reference it there
+
+319
+00:13:56,780 --> 00:13:58,738
+if you don't want to type
+any of these commands
+
+320
+00:13:58,738 --> 00:14:01,090
+or you need to
+copy anything over.
+
+321
+00:14:01,090 --> 00:14:03,680
+I'm going to type it all out to
+make sure I don't go too fast,
+
+322
+00:14:03,680 --> 00:14:06,490
+but you don't have to.
+
+323
+00:14:06,490 --> 00:14:10,180
+So, oh gosh, there we go.
+
+324
+00:14:10,180 --> 00:14:18,110
+Sudo curl, so C-U-R-L. That is
+to download a file from a URL.
+
+325
+00:14:18,110 --> 00:14:21,220
+And the URL where we're
+doing that from is
+
+326
+00:14:21,220 --> 00:14:33,470
+bootstrap.pypa.io/get-pip.py.
+
+327
+00:14:33,470 --> 00:14:37,080
+So we're downloading
+the pip package manager.
+
+328
+00:14:37,080 --> 00:14:38,790
+So if you've ever
+used Python before,
+
+329
+00:14:38,790 --> 00:14:42,270
+you might have already had this
+preinstalled on your machine.
+
+330
+00:14:42,270 --> 00:14:44,180
+This is just saying,
+hey, we don't have it
+
+331
+00:14:44,180 --> 00:14:46,170
+installed on our machine yet.
+
+332
+00:14:46,170 --> 00:14:49,580
+And a package manager
+just manager just
+
+333
+00:14:49,580 --> 00:14:53,030
+makes available to
+us a library that
+
+334
+00:14:53,030 --> 00:14:56,000
+can handle the
+installation of packages
+
+335
+00:14:56,000 --> 00:14:59,370
+specifically from the
+pip library of packages.
+
+336
+00:14:59,370 --> 00:15:03,680
+So it's a way to install Python
+packages, maybe an easier way
+
+337
+00:15:03,680 --> 00:15:05,390
+to say that.
+
+338
+00:15:05,390 --> 00:15:07,710
+So we run the curl
+to download it.
+
+339
+00:15:07,710 --> 00:15:11,240
+And then this command I just
+run the Python 3 get pip.py,
+
+340
+00:15:11,240 --> 00:15:13,440
+that just installs it for us.
+
+341
+00:15:13,440 --> 00:15:15,477
+And now we're going
+to do, one other thing
+
+342
+00:15:15,477 --> 00:15:17,060
+it's going to be a
+little bit verbose.
+
+343
+00:15:17,060 --> 00:15:19,430
+This you're welcome to copy.
+
+344
+00:15:19,430 --> 00:15:24,680
+Export path equals, and then
+I'm do this forward slash colon
+
+345
+00:15:24,680 --> 00:15:34,130
+backward slash home
+Ubuntu slash .local bin,
+
+346
+00:15:34,130 --> 00:15:36,830
+sorry I'll explain this once
+I'm finished typing so I
+
+347
+00:15:36,830 --> 00:15:39,770
+don't confuse myself.
+
+348
+00:15:39,770 --> 00:15:44,470
+Space into there.
+
+349
+00:15:44,470 --> 00:15:48,910
+It's slash dot dash bashrc.
+
+350
+00:15:48,910 --> 00:15:51,020
+So what this command
+does is it says,
+
+351
+00:15:51,020 --> 00:15:54,638
+OK, let's remember this double--
+
+352
+00:15:54,638 --> 00:15:56,180
+make sure you can
+see this over here.
+
+353
+00:15:56,180 --> 00:15:58,638
+Actually, I just realized now
+that I'm probably in the way.
+
+354
+00:15:58,638 --> 00:16:01,343
+So let's move my
+screen up slightly.
+
+355
+00:16:04,380 --> 00:16:05,710
+Let's try it this way.
+
+356
+00:16:05,710 --> 00:16:06,350
+There we go.
+
+357
+00:16:09,290 --> 00:16:13,580
+So remember this double
+or this double caret
+
+358
+00:16:13,580 --> 00:16:17,142
+kind of greater than sign
+says append to a file.
+
+359
+00:16:17,142 --> 00:16:18,600
+So paste it at the
+end of the file.
+
+360
+00:16:18,600 --> 00:16:21,350
+Well, the file that we want
+to append to is this bashrc.
+
+361
+00:16:21,350 --> 00:16:23,450
+This file is run
+basically anytime
+
+362
+00:16:23,450 --> 00:16:26,540
+we create a new instance
+of our terminal.
+
+363
+00:16:26,540 --> 00:16:29,120
+It contains a bunch of
+configuration and setup
+
+364
+00:16:29,120 --> 00:16:33,810
+and organizational things
+for our environment.
+
+365
+00:16:33,810 --> 00:16:35,390
+And then what we're
+doing is we're
+
+366
+00:16:35,390 --> 00:16:38,810
+putting in there this line
+export path equals yada, yada,
+
+367
+00:16:38,810 --> 00:16:39,740
+yada, yada, yada.
+
+368
+00:16:39,740 --> 00:16:42,170
+All this is saying
+is that, hey, this
+
+369
+00:16:42,170 --> 00:16:45,200
+is where I want you to
+look for, and install
+
+370
+00:16:45,200 --> 00:16:46,692
+pip certain packages.
+
+371
+00:16:46,692 --> 00:16:48,150
+So that's why we're
+adding it here.
+
+372
+00:16:48,150 --> 00:16:50,300
+So anytime we install a
+Python library or something
+
+373
+00:16:50,300 --> 00:16:53,640
+like that, that's where
+we want it installed.
+
+374
+00:16:53,640 --> 00:17:01,300
+Then we are going to
+source the bashrc file.
+
+375
+00:17:01,300 --> 00:17:03,530
+And what that does, it
+basically just runs it.
+
+376
+00:17:03,530 --> 00:17:05,920
+Since we don't want to have
+to close out of our terminal
+
+377
+00:17:05,920 --> 00:17:07,230
+and then reopen it again.
+
+378
+00:17:07,230 --> 00:17:09,480
+This just says, OK, we'll
+rerun this file because I've
+
+379
+00:17:09,480 --> 00:17:11,560
+made some changes to it.
+
+380
+00:17:11,560 --> 00:17:12,488
+But now we're good.
+
+381
+00:17:12,488 --> 00:17:14,530
+Our environment doesn't
+look any different, aside
+
+382
+00:17:14,530 --> 00:17:16,540
+from having to get
+pip file in there.
+
+383
+00:17:16,540 --> 00:17:18,730
+But what we want
+to do now is make
+
+384
+00:17:18,730 --> 00:17:20,530
+a directory for where
+we're going to build
+
+385
+00:17:20,530 --> 00:17:24,010
+our personal site here.
+
+386
+00:17:24,010 --> 00:17:27,960
+I'll call it personal
+website for now.
+
+387
+00:17:27,960 --> 00:17:33,670
+And then we'll go
+cd personal website.
+
+388
+00:17:33,670 --> 00:17:36,640
+And now we're in this
+newly created one.
+
+389
+00:17:36,640 --> 00:17:38,710
+And what we want
+to do is we want
+
+390
+00:17:38,710 --> 00:17:42,950
+to create a virtual environment
+for where we do all this work.
+
+391
+00:17:42,950 --> 00:17:45,625
+A virtual environment
+is kind of like,
+
+392
+00:17:45,625 --> 00:17:48,700
+it's actually somewhat similar
+to our virtual machines,
+
+393
+00:17:48,700 --> 00:17:51,742
+except it's almost
+a smaller entity.
+
+394
+00:17:51,742 --> 00:17:53,200
+Really, what it
+is, is we're trying
+
+395
+00:17:53,200 --> 00:17:56,050
+to create an isolated
+environment for where we do all
+
+396
+00:17:56,050 --> 00:17:57,530
+our Python development.
+
+397
+00:17:57,530 --> 00:18:00,550
+This is best practice or a good
+practice, at least I'll say,
+
+398
+00:18:00,550 --> 00:18:03,350
+because that means then
+that anything I install,
+
+399
+00:18:03,350 --> 00:18:04,930
+any packages I
+need or any changes
+
+400
+00:18:04,930 --> 00:18:06,880
+I make to the
+environment are isolated
+
+401
+00:18:06,880 --> 00:18:08,150
+to this virtual environment.
+
+402
+00:18:08,150 --> 00:18:12,808
+That way I can have multiple
+different projects going on,
+
+403
+00:18:12,808 --> 00:18:15,100
+that maybe use all sorts of
+different versions or maybe
+
+404
+00:18:15,100 --> 00:18:17,360
+the same library, but a
+different version of it.
+
+405
+00:18:17,360 --> 00:18:19,310
+And it won't cause any problems.
+
+406
+00:18:19,310 --> 00:18:21,490
+So we want to create
+a virtual environment.
+
+407
+00:18:21,490 --> 00:18:23,050
+To do that, we just
+need to install
+
+408
+00:18:23,050 --> 00:18:25,880
+some software that allows us to
+create the virtual environment.
+
+409
+00:18:25,880 --> 00:18:28,570
+And the first thing I want to do
+is check what version of Python
+
+410
+00:18:28,570 --> 00:18:33,440
+I have because that will let me
+know which version to install.
+
+411
+00:18:33,440 --> 00:18:37,060
+So if you do Python 3 and
+then hyphen hyphen version.
+
+412
+00:18:37,060 --> 00:18:40,840
+That will print out what
+version of Python you're on.
+
+413
+00:18:40,840 --> 00:18:46,990
+And then what you want to
+run is sudo apt install.
+
+414
+00:18:46,990 --> 00:18:51,740
+And then I'm doing Python
+3.10 because -3.10,
+
+415
+00:18:51,740 --> 00:18:53,530
+that's the major version.
+
+416
+00:18:53,530 --> 00:18:59,110
+Oops, 3.10 hyphen venv.
+
+417
+00:18:59,110 --> 00:19:01,000
+And then hit Enter.
+
+418
+00:19:01,000 --> 00:19:03,640
+And then I'll say, yes.
+
+419
+00:19:03,640 --> 00:19:05,890
+And that's going to install
+the virtual environment
+
+420
+00:19:05,890 --> 00:19:08,480
+software that we need.
+
+421
+00:19:08,480 --> 00:19:10,170
+So give that two seconds.
+
+422
+00:19:10,170 --> 00:19:12,650
+You can just hit go
+down or just hit Enter
+
+423
+00:19:12,650 --> 00:19:15,140
+on that when it pops
+up on that screen.
+
+424
+00:19:15,140 --> 00:19:16,495
+Leave it with default settings.
+
+425
+00:19:19,030 --> 00:19:25,210
+And then you can do
+Python 3 Python m,
+
+426
+00:19:25,210 --> 00:19:27,100
+and then I'm just
+going to call, I'm
+
+427
+00:19:27,100 --> 00:19:30,010
+using the virtual
+environment library,
+
+428
+00:19:30,010 --> 00:19:34,970
+and I'm going to call
+it my environment.
+
+429
+00:19:34,970 --> 00:19:36,280
+And then wait a second.
+
+430
+00:19:38,900 --> 00:19:42,230
+And now if I do ls you'll see
+this my environment library was
+
+431
+00:19:42,230 --> 00:19:44,390
+created in my
+personal or directory
+
+432
+00:19:44,390 --> 00:19:47,260
+it was created in my
+personal website directory.
+
+433
+00:19:47,260 --> 00:19:49,510
+And then I can activate
+my virtual environment
+
+434
+00:19:49,510 --> 00:19:55,104
+by doing dot space
+my environment slash
+
+435
+00:19:55,104 --> 00:19:57,697
+bin slash activate.
+
+436
+00:19:57,697 --> 00:19:59,530
+And you could have named
+it again, anything.
+
+437
+00:19:59,530 --> 00:20:02,690
+I just called mine
+my environment.
+
+438
+00:20:02,690 --> 00:20:04,670
+And now you'll see that
+it shows in parentheses
+
+439
+00:20:04,670 --> 00:20:06,140
+before your commands here.
+
+440
+00:20:06,140 --> 00:20:10,310
+Always it's going
+to show this myenv.
+
+441
+00:20:10,310 --> 00:20:12,885
+That's how I know that
+I'm in my environment.
+
+442
+00:20:12,885 --> 00:20:14,510
+And then I can run
+deactivate, and that
+
+443
+00:20:14,510 --> 00:20:16,020
+will deactivate my environment.
+
+444
+00:20:16,020 --> 00:20:18,140
+But this again just
+isolates all my libraries
+
+445
+00:20:18,140 --> 00:20:20,870
+in there, which we'll see
+becomes really, really useful
+
+446
+00:20:20,870 --> 00:20:22,180
+as we go to deploy the website.
+
+447
+00:20:24,920 --> 00:20:27,550
+So now we can run
+pip install Flask.
+
+448
+00:20:27,550 --> 00:20:30,350
+Remember, pip is
+the package manager.
+
+449
+00:20:30,350 --> 00:20:33,800
+So pip install Flask.
+
+450
+00:20:33,800 --> 00:20:37,000
+And now we're all set up to
+basically build our website.
+
+451
+00:20:37,000 --> 00:20:40,790
+So all we need to do is create
+a minimal website to make sure
+
+452
+00:20:40,790 --> 00:20:41,910
+that works.
+
+453
+00:20:41,910 --> 00:20:45,050
+So I'll just do nano
+and app.py right here
+
+454
+00:20:45,050 --> 00:20:48,470
+in my personal
+website directory.
+
+455
+00:20:48,470 --> 00:20:52,590
+And then I'll just start
+typing some Python code.
+
+456
+00:20:52,590 --> 00:20:54,052
+Again, this is not
+a Python class.
+
+457
+00:20:54,052 --> 00:20:56,760
+So by no means I do I expect you
+to know all of what we're doing,
+
+458
+00:20:56,760 --> 00:21:00,260
+but I'll explain it in
+case it does matter to you.
+
+459
+00:21:00,260 --> 00:21:02,100
+And also for anything
+we do in this class,
+
+460
+00:21:02,100 --> 00:21:04,017
+you're welcome to just
+copy and paste my code.
+
+461
+00:21:04,017 --> 00:21:06,710
+I'm not going to have you guys
+write any sort of novel code
+
+462
+00:21:06,710 --> 00:21:10,820
+that's beyond the
+scope of this course.
+
+463
+00:21:10,820 --> 00:21:17,780
+Then app equals Flask name.
+
+464
+00:21:17,780 --> 00:21:20,240
+So what this does is create
+an instance of a Flask
+
+465
+00:21:20,240 --> 00:21:25,100
+app and one nice short line.
+
+466
+00:21:25,100 --> 00:21:27,770
+We could have also done,
+if name equals main,
+
+467
+00:21:27,770 --> 00:21:29,720
+then do app.run
+like the usual way
+
+468
+00:21:29,720 --> 00:21:31,910
+you do that if you're
+familiar with writing
+
+469
+00:21:31,910 --> 00:21:33,420
+Python applications.
+
+470
+00:21:33,420 --> 00:21:37,310
+But this is a little
+shortcut for that.
+
+471
+00:21:37,310 --> 00:21:40,100
+Then we'll do at, so this
+is literally at symbol
+
+472
+00:21:40,100 --> 00:21:43,010
+like I'm typing shift and 2
+to create that little symbol.
+
+473
+00:21:43,010 --> 00:21:49,250
+And then app.route
+parentheses slash.
+
+474
+00:21:49,250 --> 00:21:52,860
+So what this says is whenever
+somebody comes to my IP address,
+
+475
+00:21:52,860 --> 00:21:55,770
+right, my website at
+the default location.
+
+476
+00:21:55,770 --> 00:22:00,170
+So just at the route or at
+the home directory in a sense,
+
+477
+00:22:00,170 --> 00:22:02,130
+then this function
+is going to run.
+
+478
+00:22:02,130 --> 00:22:04,830
+And I'm going to just
+call my hello world.
+
+479
+00:22:04,830 --> 00:22:08,520
+But basically, whatever
+you have after that route,
+
+480
+00:22:08,520 --> 00:22:13,463
+that's going to run
+at that location.
+
+481
+00:22:16,010 --> 00:22:18,470
+So you'll see what that
+means here in a second.
+
+482
+00:22:18,470 --> 00:22:22,140
+We'll do return hello world.
+
+483
+00:22:22,140 --> 00:22:23,140
+We'll do it as a header.
+
+484
+00:22:32,990 --> 00:22:38,700
+So again, to repeat that,
+when I go to my IP address,
+
+485
+00:22:38,700 --> 00:22:44,110
+just set the regular IP address,
+it's going to run this function.
+
+486
+00:22:44,110 --> 00:22:46,820
+It just knows that, hey,
+they came to this location,
+
+487
+00:22:46,820 --> 00:22:48,240
+I should run this function.
+
+488
+00:22:48,240 --> 00:22:49,640
+What does this function do?
+
+489
+00:22:49,640 --> 00:22:51,765
+Well, right now it doesn't
+do anything interesting.
+
+490
+00:22:51,765 --> 00:22:55,030
+It just immediately returns a
+text string, and specifically
+
+491
+00:22:55,030 --> 00:22:58,420
+an HTML text string, because
+the default assumption
+
+492
+00:22:58,420 --> 00:23:02,240
+or the default rendering of
+these pages will be HTML.
+
+493
+00:23:02,240 --> 00:23:04,130
+We'll do HTML only
+in this class.
+
+494
+00:23:04,130 --> 00:23:07,940
+But again, just know that that
+is why it's returning that.
+
+495
+00:23:07,940 --> 00:23:10,430
+As we'll see in the next
+video or in future videos,
+
+496
+00:23:10,430 --> 00:23:12,350
+we can add all sorts of things.
+
+497
+00:23:12,350 --> 00:23:15,640
+And we can have very, very
+complex file structures
+
+498
+00:23:15,640 --> 00:23:18,550
+where we have separate
+HTML templates that allow
+
+499
+00:23:18,550 --> 00:23:19,912
+us to pass information to them.
+
+500
+00:23:19,912 --> 00:23:21,370
+But for right now,
+we're just going
+
+501
+00:23:21,370 --> 00:23:26,240
+to have it return raw
+HTML exactly like this.
+
+502
+00:23:26,240 --> 00:23:29,150
+So I now I'm going
+to click Control X
+
+503
+00:23:29,150 --> 00:23:30,770
+so I can exit out of this.
+
+504
+00:23:30,770 --> 00:23:33,650
+And then Y to say, yes,
+I'm going to save this.
+
+505
+00:23:33,650 --> 00:23:37,410
+And then enter that I'm
+fine with this name.
+
+506
+00:23:37,410 --> 00:23:41,090
+So we see that we have the
+file there that app.py.
+
+507
+00:23:41,090 --> 00:23:42,980
+It has all of our code in it.
+
+508
+00:23:42,980 --> 00:23:46,610
+If I just cat app.py, I can
+see all the code we just wrote.
+
+509
+00:23:46,610 --> 00:23:49,940
+And now we're almost
+ready to launch it
+
+510
+00:23:49,940 --> 00:23:51,830
+or the launch the application.
+
+511
+00:23:51,830 --> 00:23:53,840
+Now one thing we
+do want to change,
+
+512
+00:23:53,840 --> 00:23:57,750
+is we need to actually allow
+users to come into our page.
+
+513
+00:23:57,750 --> 00:24:02,790
+So we showed how before
+with the previous website
+
+514
+00:24:02,790 --> 00:24:08,720
+when we accessed via HTTP
+that we accessed at port 80.
+
+515
+00:24:08,720 --> 00:24:10,810
+So this is exactly
+the same idea.
+
+516
+00:24:10,810 --> 00:24:12,450
+So if I come back
+to this instance
+
+517
+00:24:12,450 --> 00:24:14,980
+here, and go to Security.
+
+518
+00:24:14,980 --> 00:24:18,480
+So this is just me going back
+to my EC2 instance on this page.
+
+519
+00:24:18,480 --> 00:24:20,400
+And then go to Security.
+
+520
+00:24:20,400 --> 00:24:23,380
+You'll see my inbound rules,
+my outbound rules again.
+
+521
+00:24:23,380 --> 00:24:25,990
+So again, inbound rules
+right here, that's port 22.
+
+522
+00:24:25,990 --> 00:24:27,840
+That's for SSH
+access because that's
+
+523
+00:24:27,840 --> 00:24:29,250
+how we're connecting to it.
+
+524
+00:24:29,250 --> 00:24:34,000
+Port 80 is for our HTTP access.
+
+525
+00:24:34,000 --> 00:24:37,760
+And then the default port
+for Flask applications.
+
+526
+00:24:37,760 --> 00:24:41,320
+When we launch the flask app,
+it's going to put it into port
+
+527
+00:24:41,320 --> 00:24:42,730
+5,000.
+
+528
+00:24:42,730 --> 00:24:45,830
+That's just what they chose as
+the default location for it.
+
+529
+00:24:45,830 --> 00:24:48,110
+Meaning that if I
+want to access that,
+
+530
+00:24:48,110 --> 00:24:52,130
+I need to go to my IP
+address colon 5000.
+
+531
+00:24:52,130 --> 00:24:54,460
+If I do that without
+changing the security rules,
+
+532
+00:24:54,460 --> 00:24:56,080
+we can actually
+try it right now.
+
+533
+00:24:56,080 --> 00:24:58,850
+If I launch this website,
+we shall keep this,
+
+534
+00:24:58,850 --> 00:25:00,110
+it doesn't want to do this.
+
+535
+00:25:00,110 --> 00:25:02,260
+Let's copy this
+here, paste this here
+
+536
+00:25:02,260 --> 00:25:07,040
+and do colon 5000 It's
+just going to hang there.
+
+537
+00:25:07,040 --> 00:25:10,720
+Nothing's going to happen, and
+it's going to throw me an error.
+
+538
+00:25:10,720 --> 00:25:13,390
+So what I'm going to do,
+is I'm going to come over
+
+539
+00:25:13,390 --> 00:25:15,110
+here, go to Security.
+
+540
+00:25:15,110 --> 00:25:15,930
+Security groups.
+
+541
+00:25:15,930 --> 00:25:18,160
+So I'm going to click
+on my security group.
+
+542
+00:25:18,160 --> 00:25:21,010
+I'm going to edit inbound rules.
+
+543
+00:25:21,010 --> 00:25:22,640
+Go to Add Rule.
+
+544
+00:25:22,640 --> 00:25:25,300
+You can leave it as custom TCP.
+
+545
+00:25:25,300 --> 00:25:29,860
+Then I'm going to add
+5000 here for this one.
+
+546
+00:25:29,860 --> 00:25:33,680
+And then just to be
+pedantic, we'll do 5000,
+
+547
+00:25:33,680 --> 00:25:36,750
+and I'm going to click this
+one just to colon slash 0.
+
+548
+00:25:36,750 --> 00:25:39,640
+So I'm just adding
+these two rules.
+
+549
+00:25:39,640 --> 00:25:43,450
+Then I'm going to click
+save rule or save rules.
+
+550
+00:25:43,450 --> 00:25:48,670
+And now we have or we are
+allowing traffic in through port
+
+551
+00:25:48,670 --> 00:25:52,730
+5000 from anywhere.
+
+552
+00:25:52,730 --> 00:25:58,850
+So conceivably-- Oh, actually I
+should launch the website first,
+
+553
+00:25:58,850 --> 00:26:00,240
+then that should work.
+
+554
+00:26:00,240 --> 00:26:04,800
+So to launch the website, we're
+just going to come over here.
+
+555
+00:26:04,800 --> 00:26:10,400
+I'm going to do export
+Flask app equals app.py.
+
+556
+00:26:10,400 --> 00:26:12,530
+And this just allows
+me to type just
+
+557
+00:26:12,530 --> 00:26:15,290
+Flask run any time I want to
+launch the site without having
+
+558
+00:26:15,290 --> 00:26:17,420
+to specify what application
+because I'm just
+
+559
+00:26:17,420 --> 00:26:19,130
+running this specific site.
+
+560
+00:26:19,130 --> 00:26:30,880
+So now I'll do Flask run hyphen
+hyphen host equals 0.0.0.0
+
+561
+00:26:30,880 --> 00:26:34,790
+And, ops, so we
+go a bad request.
+
+562
+00:26:34,790 --> 00:26:37,640
+Weird, what a bad request.
+
+563
+00:26:37,640 --> 00:26:38,640
+Check here really quick.
+
+564
+00:26:41,864 --> 00:26:44,670
+I make sure I didn't
+miss a step on here.
+
+565
+00:26:44,670 --> 00:26:57,930
+So we're doing, let's
+run host 0.0.0.0.
+
+566
+00:26:57,930 --> 00:27:00,670
+Sorry I'll pause here and
+I'll come back to that one.
+
+567
+00:27:00,670 --> 00:27:02,910
+Once again, I should
+never be a live performer
+
+568
+00:27:02,910 --> 00:27:05,880
+because it's very simple fixes.
+
+569
+00:27:05,880 --> 00:27:08,380
+But either way, the only
+thing I had to change.
+
+570
+00:27:08,380 --> 00:27:14,210
+So if I come over here, you'll
+notice that I have HTTPS.
+
+571
+00:27:14,210 --> 00:27:17,300
+I just need to remove that HTTPS
+and turn it back to an HTTP
+
+572
+00:27:17,300 --> 00:27:19,550
+because like we said, we're
+not doing a secure website
+
+573
+00:27:19,550 --> 00:27:20,400
+right now.
+
+574
+00:27:20,400 --> 00:27:23,000
+So just changing that to 5000.
+
+575
+00:27:23,000 --> 00:27:26,720
+So again, to clarify, if
+you run into the same issue,
+
+576
+00:27:26,720 --> 00:27:31,610
+I clicked open address or
+I copied this one here,
+
+577
+00:27:31,610 --> 00:27:37,580
+and then I pasted that and
+the default assumption here.
+
+578
+00:27:37,580 --> 00:27:40,760
+Or better say that if
+I go colon 5000 here,
+
+579
+00:27:40,760 --> 00:27:43,980
+and I ensure that it's not
+HTTPS at the beginning,
+
+580
+00:27:43,980 --> 00:27:46,610
+then it should work just fine.
+
+581
+00:27:46,610 --> 00:27:48,290
+But either way, you
+can see now we've
+
+582
+00:27:48,290 --> 00:27:49,940
+got a publicly hosted website.
+
+583
+00:27:49,940 --> 00:27:52,140
+Again, if you were to go
+to an Incognito Window,
+
+584
+00:27:52,140 --> 00:27:54,600
+you'd be able to hit this
+in the exact same way.
+
+585
+00:27:54,600 --> 00:27:57,730
+So you only just copy and paste.
+
+586
+00:27:57,730 --> 00:28:00,790
+Again, this is not logged
+into anything on my account.
+
+587
+00:28:00,790 --> 00:28:03,180
+So this is as if you're
+coming from any other computer
+
+588
+00:28:03,180 --> 00:28:04,150
+in the world.
+
+589
+00:28:04,150 --> 00:28:08,670
+Notice on the back end here too,
+we can see successful requests.
+
+590
+00:28:08,670 --> 00:28:10,330
+All these are when
+I reload the page.
+
+591
+00:28:10,330 --> 00:28:12,420
+So if I hit run
+here again, it'll
+
+592
+00:28:12,420 --> 00:28:14,490
+put another entry,
+another log entry in here
+
+593
+00:28:14,490 --> 00:28:17,150
+if we're running the page
+or launching the page live.
+
+594
+00:28:17,150 --> 00:28:19,950
+So it's all to
+say now that we've
+
+595
+00:28:19,950 --> 00:28:22,560
+got a way to build
+a web application,
+
+596
+00:28:22,560 --> 00:28:24,772
+and launch a page again.
+
+597
+00:28:24,772 --> 00:28:26,480
+Nothing different
+fundamentally from what
+
+598
+00:28:26,480 --> 00:28:28,490
+we did before in the
+sense of we still just
+
+599
+00:28:28,490 --> 00:28:30,930
+have a very bare bones
+hello world page.
+
+600
+00:28:30,930 --> 00:28:33,830
+I mean, you can paste
+the same HTML code
+
+601
+00:28:33,830 --> 00:28:35,400
+you had from before into here.
+
+602
+00:28:35,400 --> 00:28:38,300
+The real power to me is
+that now all of a sudden
+
+603
+00:28:38,300 --> 00:28:40,920
+we have this live web page.
+
+604
+00:28:40,920 --> 00:28:44,000
+Also to close out of that, I
+just click Control C. Notice
+
+605
+00:28:44,000 --> 00:28:47,210
+here, Control C exited
+out of this kind of a--
+
+606
+00:28:47,210 --> 00:28:48,710
+or stop the app from running.
+
+607
+00:28:48,710 --> 00:28:50,210
+If you reload the
+page now, it won't
+
+608
+00:28:50,210 --> 00:28:52,760
+load because it's not running.
+
+609
+00:28:52,760 --> 00:28:54,410
+But either way,
+the real power is
+
+610
+00:28:54,410 --> 00:28:58,230
+that now we have all
+of this in Python code.
+
+611
+00:28:58,230 --> 00:29:02,930
+So you can now imagine we can
+do basically anything in Python,
+
+612
+00:29:02,930 --> 00:29:04,850
+and push it to the site.
+
+613
+00:29:04,850 --> 00:29:07,820
+Opens a whole world of
+opportunities for us.
+
+614
+00:29:07,820 --> 00:29:09,150
+So we'll call it there for now.
+
+615
+00:29:09,150 --> 00:29:11,188
+I had enough errors for one day.
+
+616
+00:29:11,188 --> 00:29:12,480
+So we'll call it there for now.
+
+617
+00:29:12,480 --> 00:29:14,270
+And in the next
+video, we'll elaborate
+
+618
+00:29:14,270 --> 00:29:18,020
+a lot more on how we can build
+all sorts of other features.
+
+619
+00:29:18,020 --> 00:29:20,010
+Last thing I'll
+note is just again,
+
+620
+00:29:20,010 --> 00:29:22,550
+we want to terminate everything
+that we don't need anymore.
+
+621
+00:29:22,550 --> 00:29:26,150
+So since I'm done with
+this, I'm going to exit.
+
+622
+00:29:26,150 --> 00:29:29,420
+Then I'm going to come back
+over to my Console here.
+
+623
+00:29:29,420 --> 00:29:31,380
+Come over on Instances.
+
+624
+00:29:31,380 --> 00:29:34,190
+Note the test server
+was the one I was using.
+
+625
+00:29:34,190 --> 00:29:38,930
+Instance state,
+terminate, and terminate.
+
+626
+00:29:38,930 --> 00:29:41,690
+So that was 30
+minutes, not even,
+
+627
+00:29:41,690 --> 00:29:44,710
+probably 15-20 ish minutes
+of having the instance live.
+
+628
+00:29:44,710 --> 00:29:48,678
+So we're still talking
+probably around $0.01 of cost
+
+629
+00:29:48,678 --> 00:29:49,970
+if you're not on the free tier.
+
+630
+00:29:49,970 --> 00:29:52,220
+So hopefully it's not
+costing you too much
+
+631
+00:29:52,220 --> 00:29:54,560
+to work through this, but
+just make a note of that.
+
+632
+00:29:54,560 --> 00:29:55,852
+Either way, thank you for that.
+
+633
+00:29:55,852 --> 00:29:57,102
+Thank you for bearing with me.
+
+634
+00:29:57,102 --> 00:29:58,800
+When you inevitably
+run into issues,
+
+635
+00:29:58,800 --> 00:30:01,620
+now I hope you feel
+better to reach out to me.
+
+636
+00:30:01,620 --> 00:30:04,560
+Let me know if I can help
+you out and debug this.
+
+637
+00:30:04,560 --> 00:30:07,450
+So I appreciate,
+and have a good one.

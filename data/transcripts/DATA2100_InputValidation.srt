@@ -1,0 +1,1697 @@
+1
+00:00:02,568 --> 00:00:04,110
+INSTRUCTOR: Hi there,
+2,100 students.
+
+2
+00:00:04,110 --> 00:00:07,100
+We're going to talk about
+input validation today.
+
+3
+00:00:07,100 --> 00:00:09,770
+So our objectives are to
+understand and apply the two
+
+4
+00:00:09,770 --> 00:00:11,960
+ways in this class,
+I should say,
+
+5
+00:00:11,960 --> 00:00:13,700
+that we will
+validate user input.
+
+6
+00:00:13,700 --> 00:00:16,079
+There's a variety
+of ways to do so,
+
+7
+00:00:16,079 --> 00:00:20,180
+but as we're focusing on
+these core Python objectives
+
+8
+00:00:20,180 --> 00:00:23,360
+in this class, we're going
+to look at try and accept
+
+9
+00:00:23,360 --> 00:00:26,060
+and how we can use
+while loops generally
+
+10
+00:00:26,060 --> 00:00:29,270
+with the help of some
+if-statements to validate user
+
+11
+00:00:29,270 --> 00:00:30,530
+input.
+
+12
+00:00:30,530 --> 00:00:33,350
+Validating user input goes
+directly along with the idea
+
+13
+00:00:33,350 --> 00:00:35,090
+of data quality
+that we are asked
+
+14
+00:00:35,090 --> 00:00:39,770
+if we're asking our users to
+input, say some sort of form
+
+15
+00:00:39,770 --> 00:00:41,750
+where they're filling
+out their information
+
+16
+00:00:41,750 --> 00:00:43,430
+and we want to
+validate that they
+
+17
+00:00:43,430 --> 00:00:48,170
+enter a valid, a valid email
+address, or a valid phone
+
+18
+00:00:48,170 --> 00:00:51,470
+number, or what have
+you, that then we
+
+19
+00:00:51,470 --> 00:00:53,810
+can enter that
+data from that form
+
+20
+00:00:53,810 --> 00:00:58,020
+that we're receiving through our
+Python script into a database.
+
+21
+00:00:58,020 --> 00:01:02,100
+And it can be data quality,
+it can have good data quality
+
+22
+00:01:02,100 --> 00:01:02,980
+characteristics.
+
+23
+00:01:02,980 --> 00:01:05,220
+So Python and databases
+go hand in hand
+
+24
+00:01:05,220 --> 00:01:07,140
+and doing things like this.
+
+25
+00:01:07,140 --> 00:01:10,330
+So as a reminder, while loops
+right set of instructions
+
+26
+00:01:10,330 --> 00:01:11,880
+happen over and
+over and over again
+
+27
+00:01:11,880 --> 00:01:14,200
+until some condition is met.
+
+28
+00:01:14,200 --> 00:01:17,140
+Now, we can validate
+with while loops,
+
+29
+00:01:17,140 --> 00:01:20,220
+we can say you must enter
+something that starts with an A,
+
+30
+00:01:20,220 --> 00:01:23,040
+or you must have at least
+a five character password,
+
+31
+00:01:23,040 --> 00:01:24,490
+or what have you.
+
+32
+00:01:24,490 --> 00:01:27,750
+So while loops just can
+enforce that repetition.
+
+33
+00:01:27,750 --> 00:01:30,878
+And try and accept
+handles errors.
+
+34
+00:01:30,878 --> 00:01:32,920
+So we're going to talk
+about both of those today.
+
+35
+00:01:32,920 --> 00:01:35,580
+So try and accept allows
+you to try something
+
+36
+00:01:35,580 --> 00:01:37,230
+if there's something
+that you try
+
+37
+00:01:37,230 --> 00:01:40,380
+doesn't work more than likely
+because there is an error rather
+
+38
+00:01:40,380 --> 00:01:42,660
+than crash, Python does
+whatever you tell it to do
+
+39
+00:01:42,660 --> 00:01:44,320
+in the case of an exception.
+
+40
+00:01:44,320 --> 00:01:48,150
+So this is mainly used to
+verify the kind of data
+
+41
+00:01:48,150 --> 00:01:49,780
+from the input is valid.
+
+42
+00:01:49,780 --> 00:01:53,770
+So for example, if we ask our
+users to enter an integer,
+
+43
+00:01:53,770 --> 00:01:58,050
+we then convert that entry into
+an integer and the conversion
+
+44
+00:01:58,050 --> 00:01:59,050
+fails.
+
+45
+00:01:59,050 --> 00:02:01,120
+Then instead of my
+program just crashing,
+
+46
+00:02:01,120 --> 00:02:02,850
+we can actually use
+a try and accept
+
+47
+00:02:02,850 --> 00:02:04,350
+and we can actually
+output something
+
+48
+00:02:04,350 --> 00:02:08,139
+to the user like, wrong data
+type, enter something different.
+
+49
+00:02:08,139 --> 00:02:09,690
+So with while loops,
+we're generally
+
+50
+00:02:09,690 --> 00:02:13,183
+focused on the content
+of my user's input.
+
+51
+00:02:13,183 --> 00:02:14,850
+And with try and
+accept, we're generally
+
+52
+00:02:14,850 --> 00:02:18,480
+focused on the type
+of data being entered.
+
+53
+00:02:18,480 --> 00:02:21,330
+So again, try and accept
+validates the type of user input
+
+54
+00:02:21,330 --> 00:02:24,090
+without the program
+crashing, while loop
+
+55
+00:02:24,090 --> 00:02:27,060
+will validate the content
+of the user's input.
+
+56
+00:02:27,060 --> 00:02:30,600
+So let's jump into our
+examples for today.
+
+57
+00:02:30,600 --> 00:02:33,657
+Here, under question number one,
+we're going to use a while loop.
+
+58
+00:02:33,657 --> 00:02:36,240
+We're going to ask the user to
+input a 5 character string that
+
+59
+00:02:36,240 --> 00:02:38,310
+starts with the letter
+A if the user inputs
+
+60
+00:02:38,310 --> 00:02:40,560
+a string of the wrong length,
+tell them of their error
+
+61
+00:02:40,560 --> 00:02:43,180
+and insist that they input
+a correct length string.
+
+62
+00:02:43,180 --> 00:02:45,760
+If the user inputs a string
+that does not start with an A,
+
+63
+00:02:45,760 --> 00:02:47,020
+tell them of their error.
+
+64
+00:02:47,020 --> 00:02:48,930
+The string is 5
+characters long and does
+
+65
+00:02:48,930 --> 00:02:51,060
+start with an A output
+for the user their string
+
+66
+00:02:51,060 --> 00:02:52,837
+and congratulate them.
+
+67
+00:02:52,837 --> 00:02:55,170
+All right, so I'm going to
+use what we just talked about
+
+68
+00:02:55,170 --> 00:02:57,400
+in our while discussion.
+
+69
+00:02:57,400 --> 00:03:00,400
+We're going to say good
+input is equal to 0.
+
+70
+00:03:00,400 --> 00:03:04,930
+This is going to be my marker
+variable here for this program.
+
+71
+00:03:04,930 --> 00:03:07,170
+Again, my marker
+variable is what
+
+72
+00:03:07,170 --> 00:03:10,260
+begin-- is basically
+what I'm going
+
+73
+00:03:10,260 --> 00:03:13,140
+to use as my conditional
+statement within my while loop.
+
+74
+00:03:13,140 --> 00:03:16,320
+Before I add my
+while loop in, let's
+
+75
+00:03:16,320 --> 00:03:20,470
+just talk about the core
+part of this program.
+
+76
+00:03:20,470 --> 00:03:22,853
+So let's get our base
+program running then we'll
+
+77
+00:03:22,853 --> 00:03:23,770
+add in the while loop.
+
+78
+00:03:23,770 --> 00:03:25,145
+When I talk about
+a base program,
+
+79
+00:03:25,145 --> 00:03:27,900
+I mean the program
+that's actually
+
+80
+00:03:27,900 --> 00:03:31,450
+has the logic built into it,
+the if statements, the input,
+
+81
+00:03:31,450 --> 00:03:33,600
+then we'll just add a
+while loop at the end.
+
+82
+00:03:33,600 --> 00:03:36,600
+So let's ask my user--
+
+83
+00:03:36,600 --> 00:03:40,930
+I'm going to say user
+string is equal to input,
+
+84
+00:03:40,930 --> 00:03:44,010
+so I'm going to validate
+that it's 5 characters
+
+85
+00:03:44,010 --> 00:03:44,950
+and starts with an A.
+
+86
+00:03:44,950 --> 00:03:47,490
+So I'm going to say,
+let's be good prompt,
+
+87
+00:03:47,490 --> 00:03:48,640
+write a good prompt here.
+
+88
+00:03:48,640 --> 00:03:53,190
+I'll say, please
+enter a five character
+
+89
+00:03:53,190 --> 00:04:00,240
+string that starts with an A.
+So let's go ahead and do that.
+
+90
+00:04:00,240 --> 00:04:04,260
+Then I'm going to run it
+and make sure that works.
+
+91
+00:04:04,260 --> 00:04:05,400
+I'll say Apple.
+
+92
+00:04:05,400 --> 00:04:06,400
+OK, perfect.
+
+93
+00:04:06,400 --> 00:04:07,458
+Nothing else runs.
+
+94
+00:04:07,458 --> 00:04:09,000
+I haven't determined
+if they actually
+
+95
+00:04:09,000 --> 00:04:11,490
+entered a five character
+string that starts with an A,
+
+96
+00:04:11,490 --> 00:04:13,600
+but my user input is working.
+
+97
+00:04:13,600 --> 00:04:16,110
+So let's first off,
+if the user inputs
+
+98
+00:04:16,110 --> 00:04:18,540
+a string of the wrong length,
+tell them of their error
+
+99
+00:04:18,540 --> 00:04:20,829
+and insist that they input
+a correct length string.
+
+100
+00:04:20,829 --> 00:04:26,470
+So I'm going to say if they
+enter an incorrect length
+
+101
+00:04:26,470 --> 00:04:26,970
+string.
+
+102
+00:04:26,970 --> 00:04:29,387
+Now, there's a variety of ways
+you can write this program.
+
+103
+00:04:29,387 --> 00:04:30,480
+This is just one way.
+
+104
+00:04:30,480 --> 00:04:32,550
+I'm going to say
+if the-- and then
+
+105
+00:04:32,550 --> 00:04:36,000
+I'm going to use the length
+command, which determines
+
+106
+00:04:36,000 --> 00:04:38,350
+the length of my user string.
+
+107
+00:04:38,350 --> 00:04:41,760
+So I'll say if the
+length of my user string
+
+108
+00:04:41,760 --> 00:04:46,452
+is not equal to five.
+
+109
+00:04:46,452 --> 00:04:49,510
+So if they enter an
+incorrect string length,
+
+110
+00:04:49,510 --> 00:04:52,360
+again, my length command
+goes into the user string
+
+111
+00:04:52,360 --> 00:04:55,000
+and says and counts the
+number of characters.
+
+112
+00:04:55,000 --> 00:04:56,950
+If it is not equal to five.
+
+113
+00:04:56,950 --> 00:04:59,750
+So if this is true,
+right not equal to five,
+
+114
+00:04:59,750 --> 00:05:07,400
+then I'll say print invalid
+input was not long enough.
+
+115
+00:05:07,400 --> 00:05:10,870
+So if that is true,
+then the input
+
+116
+00:05:10,870 --> 00:05:13,730
+was not long enough,
+which is right.
+
+117
+00:05:13,730 --> 00:05:16,130
+And then it says that they
+input a correct length string.
+
+118
+00:05:16,130 --> 00:05:16,630
+All right.
+
+119
+00:05:16,630 --> 00:05:19,910
+If the user inputs a string
+that does not start with an A,
+
+120
+00:05:19,910 --> 00:05:21,590
+tell them of their error.
+
+121
+00:05:21,590 --> 00:05:24,160
+So if this is not true--
+
+122
+00:05:24,160 --> 00:05:26,050
+or sorry if this
+is true, then we
+
+123
+00:05:26,050 --> 00:05:28,580
+know that they did not enter
+a correct length string.
+
+124
+00:05:28,580 --> 00:05:37,090
+If that is not true, then they
+did enter a correct length
+
+125
+00:05:37,090 --> 00:05:38,180
+string.
+
+126
+00:05:38,180 --> 00:05:41,180
+And I want to determine
+in my else block,
+
+127
+00:05:41,180 --> 00:05:43,870
+I'm going to embed
+an if and I'm going
+
+128
+00:05:43,870 --> 00:05:50,260
+to say let's determine that
+what they did enter actually
+
+129
+00:05:50,260 --> 00:05:56,535
+started with an A. So I'm going
+to say if the user string--
+
+130
+00:05:56,535 --> 00:05:57,910
+and this is
+something that we are
+
+131
+00:05:57,910 --> 00:06:02,410
+going to cover more in just
+a bit but let's talk about it
+
+132
+00:06:02,410 --> 00:06:03,080
+right now.
+
+133
+00:06:03,080 --> 00:06:05,390
+I'll say, if the user
+string, I want to say,
+
+134
+00:06:05,390 --> 00:06:07,480
+does it start with an A--
+
+135
+00:06:07,480 --> 00:06:08,690
+does it start with an A?
+
+136
+00:06:08,690 --> 00:06:12,730
+And we are going to utilize
+indexes, which is basically
+
+137
+00:06:12,730 --> 00:06:18,710
+I can pinpoint a character
+within my string variable.
+
+138
+00:06:18,710 --> 00:06:22,670
+And I want to say that is the
+first value of the user string,
+
+139
+00:06:22,670 --> 00:06:24,170
+does it start with an A?
+
+140
+00:06:24,170 --> 00:06:29,480
+And I can pinpoint that first
+value by utilizing indexes.
+
+141
+00:06:29,480 --> 00:06:32,650
+Indexes come directly
+after my variable's name
+
+142
+00:06:32,650 --> 00:06:36,400
+in brackets and indexes start--
+
+143
+00:06:36,400 --> 00:06:38,930
+Python starts counting at 0.
+
+144
+00:06:38,930 --> 00:06:43,900
+So if I want to look at user
+string is equal to Apple.
+
+145
+00:06:43,900 --> 00:06:46,340
+A would be 0.
+
+146
+00:06:46,340 --> 00:06:48,010
+The first P would be one.
+
+147
+00:06:48,010 --> 00:06:50,210
+The second P would be two.
+
+148
+00:06:50,210 --> 00:06:53,690
+So indexes again, Python
+starts counting at 0.
+
+149
+00:06:53,690 --> 00:06:56,400
+We'll get more into this,
+this is just an introduction,
+
+150
+00:06:56,400 --> 00:07:00,020
+but I want to say if the first
+value of that user string.
+
+151
+00:07:00,020 --> 00:07:01,950
+Again, Python starts
+counting at 0.
+
+152
+00:07:01,950 --> 00:07:10,110
+So we say if user string index
+value 0 is equal-equal to A.
+
+153
+00:07:10,110 --> 00:07:13,110
+So if they entered
+the correct length
+
+154
+00:07:13,110 --> 00:07:15,660
+string and the first
+value of their user string
+
+155
+00:07:15,660 --> 00:07:18,660
+is equal to a then I'll print.
+
+156
+00:07:18,660 --> 00:07:22,740
+Thank you for entering
+a correct length
+
+157
+00:07:22,740 --> 00:07:31,320
+string that starts with
+an A. And then I will--
+
+158
+00:07:31,320 --> 00:07:32,550
+that's correct.
+
+159
+00:07:32,550 --> 00:07:35,310
+They have correctly entered
+a five character string
+
+160
+00:07:35,310 --> 00:07:42,890
+that starts with the letter A.
+Else I will print, make sure
+
+161
+00:07:42,890 --> 00:07:51,050
+your five character string
+starts with an A. OK, perfect.
+
+162
+00:07:51,050 --> 00:07:53,570
+So now once I run this,
+let's try it out here.
+
+163
+00:07:53,570 --> 00:07:55,070
+Please enter a five
+character string
+
+164
+00:07:55,070 --> 00:07:58,550
+that starts with an A. Let's
+enter a way too long character
+
+165
+00:07:58,550 --> 00:08:00,060
+string and I'll hit Enter.
+
+166
+00:08:00,060 --> 00:08:01,085
+It says invalid input.
+
+167
+00:08:01,085 --> 00:08:02,660
+Input was not long enough.
+
+168
+00:08:02,660 --> 00:08:03,840
+That's not actually true.
+
+169
+00:08:03,840 --> 00:08:09,320
+Let's just say input was
+not the correct length.
+
+170
+00:08:09,320 --> 00:08:11,630
+OK because actually
+it was too long.
+
+171
+00:08:11,630 --> 00:08:14,130
+All right, so let's
+change that up now.
+
+172
+00:08:14,130 --> 00:08:15,720
+Let's type in
+something too long.
+
+173
+00:08:15,720 --> 00:08:19,520
+It says invalid input was not
+the correct length, perfect.
+
+174
+00:08:19,520 --> 00:08:21,650
+Now, let's enter
+five characters that
+
+175
+00:08:21,650 --> 00:08:24,835
+does not start with the
+letter A. I'll hit Enter.
+
+176
+00:08:24,835 --> 00:08:26,960
+It says make sure your five
+character string starts
+
+177
+00:08:26,960 --> 00:08:28,740
+with an A. So it does.
+
+178
+00:08:28,740 --> 00:08:32,490
+It came here the if
+block was not true.
+
+179
+00:08:32,490 --> 00:08:34,460
+So my else block ran.
+
+180
+00:08:34,460 --> 00:08:39,320
+This if was not true so my else
+block ran and it output that
+
+181
+00:08:39,320 --> 00:08:39,919
+to me.
+
+182
+00:08:39,919 --> 00:08:41,970
+Now, let's enter
+a five character
+
+183
+00:08:41,970 --> 00:08:44,640
+string that starts
+with the letter A.
+
+184
+00:08:44,640 --> 00:08:47,320
+And my if block is not true.
+
+185
+00:08:47,320 --> 00:08:50,713
+So my else block runs,
+this if was true.
+
+186
+00:08:50,713 --> 00:08:53,130
+So then it prints, thank you
+for entering a correct length
+
+187
+00:08:53,130 --> 00:08:55,510
+string that starts
+with an A. All right.
+
+188
+00:08:55,510 --> 00:08:56,440
+Awesome.
+
+189
+00:08:56,440 --> 00:09:00,750
+Now, I want to start with
+an A and I want to output
+
+190
+00:09:00,750 --> 00:09:03,120
+to them their output your.
+
+191
+00:09:03,120 --> 00:09:08,050
+So once they-- sorry, once they
+enter a correct length string,
+
+192
+00:09:08,050 --> 00:09:09,810
+then what starts
+with the letter A,
+
+193
+00:09:09,810 --> 00:09:11,493
+I want to output to
+them their string.
+
+194
+00:09:11,493 --> 00:09:13,660
+So thank you for entering
+your correct length string
+
+195
+00:09:13,660 --> 00:09:18,920
+that starts with the
+letter A. Entered.
+
+196
+00:09:18,920 --> 00:09:25,200
+And then I will add in here the
+value from the variable user
+
+197
+00:09:25,200 --> 00:09:26,020
+string.
+
+198
+00:09:26,020 --> 00:09:30,210
+I'm going to then tell it
+that I'm using f strings.
+
+199
+00:09:30,210 --> 00:09:30,730
+All right.
+
+200
+00:09:30,730 --> 00:09:35,892
+So now when I run this, I
+will say Apple and perfect.
+
+201
+00:09:35,892 --> 00:09:37,600
+Thank you for entering
+the correct length
+
+202
+00:09:37,600 --> 00:09:40,750
+string that starts with
+an A. You entered Apple.
+
+203
+00:09:40,750 --> 00:09:44,880
+Now, I want to do this,
+but I want to continue.
+
+204
+00:09:44,880 --> 00:09:46,810
+I'm going to add in
+a while loop here,
+
+205
+00:09:46,810 --> 00:09:49,800
+so I want to continue asking
+them to enter a correct length
+
+206
+00:09:49,800 --> 00:09:57,910
+string starts with the letter A.
+So I'll say while good input is
+
+207
+00:09:57,910 --> 00:10:00,040
+equal-equal to 0.
+
+208
+00:10:00,040 --> 00:10:02,260
+Again, I have my
+colon, then everything
+
+209
+00:10:02,260 --> 00:10:03,470
+indented and beneath this.
+
+210
+00:10:03,470 --> 00:10:06,410
+I want this to continue running
+over and over and over again.
+
+211
+00:10:06,410 --> 00:10:08,200
+So let's play this now.
+
+212
+00:10:08,200 --> 00:10:10,582
+Let's enter Apple and
+it says, Thank you
+
+213
+00:10:10,582 --> 00:10:13,040
+for entering a correct length
+string that starts with an A,
+
+214
+00:10:13,040 --> 00:10:14,030
+you entered Apple.
+
+215
+00:10:14,030 --> 00:10:15,530
+Well, then it asks me again.
+
+216
+00:10:15,530 --> 00:10:17,282
+So I forgot to enter.
+
+217
+00:10:17,282 --> 00:10:19,240
+I forgot to add something
+here to actually make
+
+218
+00:10:19,240 --> 00:10:21,010
+me leave the while loop.
+
+219
+00:10:21,010 --> 00:10:23,800
+So let's say here that once
+they enter a correct length
+
+220
+00:10:23,800 --> 00:10:27,880
+string that starts with the
+letter A. So in my nested
+
+221
+00:10:27,880 --> 00:10:33,130
+if block, I'm going to then
+say good input equal to 1
+
+222
+00:10:33,130 --> 00:10:35,320
+and I'll leave the loop.
+
+223
+00:10:35,320 --> 00:10:38,380
+All right, so now
+let's run this again.
+
+224
+00:10:38,380 --> 00:10:39,940
+Please enter a
+correct length string
+
+225
+00:10:39,940 --> 00:10:42,800
+that starts with the letter A.
+Let's enter something too long.
+
+226
+00:10:42,800 --> 00:10:44,150
+Perfect, not the correct length.
+
+227
+00:10:44,150 --> 00:10:45,770
+Let's enter five
+characters but it
+
+228
+00:10:45,770 --> 00:10:47,020
+doesn't start with the letter.
+
+229
+00:10:47,020 --> 00:10:48,710
+All right, perfect.
+
+230
+00:10:48,710 --> 00:10:49,910
+Now, let's enter Apple.
+
+231
+00:10:49,910 --> 00:10:51,993
+It says, thank you for
+entering the correct length
+
+232
+00:10:51,993 --> 00:10:54,310
+string that starts with
+an A, you entered Apple.
+
+233
+00:10:54,310 --> 00:10:55,340
+All right, perfect.
+
+234
+00:10:55,340 --> 00:10:59,205
+So there is that program
+number one up there for us now,
+
+235
+00:10:59,205 --> 00:11:00,330
+same as program number one.
+
+236
+00:11:00,330 --> 00:11:01,640
+But tell the user
+how many times it
+
+237
+00:11:01,640 --> 00:11:03,170
+took them to enter
+a five character
+
+238
+00:11:03,170 --> 00:11:05,628
+string that starts with an A.
+So I'm going to come up here.
+
+239
+00:11:05,628 --> 00:11:08,820
+I'm going to copy this
+program down again.
+
+240
+00:11:08,820 --> 00:11:12,550
+And this time, I want to
+use my counter variables
+
+241
+00:11:12,550 --> 00:11:15,690
+and I want to tell them how
+many times it took them to guess
+
+242
+00:11:15,690 --> 00:11:17,410
+the correct length string.
+
+243
+00:11:17,410 --> 00:11:19,950
+So I'm going to elicit a
+counter variables help here
+
+244
+00:11:19,950 --> 00:11:23,170
+and I'll say counter
+is equal to 0.
+
+245
+00:11:23,170 --> 00:11:27,050
+And then I want to every
+time through the loop,
+
+246
+00:11:27,050 --> 00:11:30,110
+I want to increase
+the counter variable.
+
+247
+00:11:30,110 --> 00:11:34,250
+So I want to say, all
+right, after I ask my user,
+
+248
+00:11:34,250 --> 00:11:36,500
+I want to increase
+counter by one,
+
+249
+00:11:36,500 --> 00:11:39,470
+so increase my counter by one.
+
+250
+00:11:39,470 --> 00:11:42,890
+So again, every time that
+I ask my user to input,
+
+251
+00:11:42,890 --> 00:11:46,100
+the next thing it's going to do
+is increase the counter by one.
+
+252
+00:11:46,100 --> 00:11:49,720
+And then I use if my
+else my if and my else.
+
+253
+00:11:49,720 --> 00:11:51,820
+All right, so now
+let's run this.
+
+254
+00:11:51,820 --> 00:11:54,340
+I'll say Apple.
+
+255
+00:11:54,340 --> 00:11:55,490
+I hit Enter.
+
+256
+00:11:55,490 --> 00:11:57,740
+Thank you for entering
+correct length string.
+
+257
+00:11:57,740 --> 00:11:58,660
+Awesome.
+
+258
+00:11:58,660 --> 00:12:01,600
+And-- but I need to tell
+them how many times it
+
+259
+00:12:01,600 --> 00:12:04,120
+took them to enter a valid
+five character string that
+
+260
+00:12:04,120 --> 00:12:06,850
+starts with an A. So I
+need to tell them that once
+
+261
+00:12:06,850 --> 00:12:10,370
+they enter a five character
+string that starts with an A,
+
+262
+00:12:10,370 --> 00:12:12,910
+so down here in my nested if.
+
+263
+00:12:12,910 --> 00:12:16,090
+I'm going to say you
+entered user string.
+
+264
+00:12:16,090 --> 00:12:22,010
+It took you-- and then
+I'll tell it, it took you--
+
+265
+00:12:22,010 --> 00:12:30,280
+enter my curly brackets,
+curly braces, counter times.
+
+266
+00:12:30,280 --> 00:12:33,560
+So I'm going to enter the
+value from the variable counter
+
+267
+00:12:33,560 --> 00:12:38,430
+there on my correct
+print statement.
+
+268
+00:12:38,430 --> 00:12:40,700
+So now I'll run this.
+
+269
+00:12:40,700 --> 00:12:42,200
+Please enter a five
+character string
+
+270
+00:12:42,200 --> 00:12:44,910
+that starts with the letter A,
+I do something way too long.
+
+271
+00:12:44,910 --> 00:12:46,640
+So I guess one time.
+
+272
+00:12:46,640 --> 00:12:48,070
+I'm going to guess
+a second time.
+
+273
+00:12:48,070 --> 00:12:49,560
+I'm going to guess a third time.
+
+274
+00:12:49,560 --> 00:12:52,260
+Then finally on the last one,
+I'm going to guess correctly.
+
+275
+00:12:52,260 --> 00:12:55,790
+So it took me four times to
+guess the correct length string
+
+276
+00:12:55,790 --> 00:12:59,300
+or to get to input a 5
+character string that
+
+277
+00:12:59,300 --> 00:13:01,550
+starts with the letter
+A. So you can see here
+
+278
+00:13:01,550 --> 00:13:04,400
+that as you're entering
+your A number, that
+
+279
+00:13:04,400 --> 00:13:09,770
+could be a check that there's
+a program behind whatever
+
+280
+00:13:09,770 --> 00:13:11,930
+interface you're working
+with that says, all right
+
+281
+00:13:11,930 --> 00:13:14,120
+we must check that
+there a number starts
+
+282
+00:13:14,120 --> 00:13:18,796
+with an A. Same thing that
+we just did right here.
+
+283
+00:13:18,796 --> 00:13:19,630
+All right.
+
+284
+00:13:19,630 --> 00:13:22,410
+On program number 3, we're
+going to ask the user
+
+285
+00:13:22,410 --> 00:13:23,610
+to input an integer.
+
+286
+00:13:23,610 --> 00:13:25,410
+If they enter an integer,
+congratulate them
+
+287
+00:13:25,410 --> 00:13:27,010
+on knowing what an integer is.
+
+288
+00:13:27,010 --> 00:13:29,020
+Otherwise, tell
+them of their error.
+
+289
+00:13:29,020 --> 00:13:32,310
+The program should not crash.
+
+290
+00:13:32,310 --> 00:13:38,510
+All right, so let's say
+x is equal to input.
+
+291
+00:13:38,510 --> 00:13:42,200
+Please enter an integer.
+
+292
+00:13:42,200 --> 00:13:44,990
+So I just want my user
+to enter an integer.
+
+293
+00:13:44,990 --> 00:13:50,380
+Then I want to say, x is
+equal to integer form of x.
+
+294
+00:13:50,380 --> 00:13:57,380
+So I'm going to convert
+their entry to an integer.
+
+295
+00:13:57,380 --> 00:14:00,500
+Now remember, input is always
+interpreted as a string,
+
+296
+00:14:00,500 --> 00:14:03,160
+so we've got to convert
+it to be an integer.
+
+297
+00:14:03,160 --> 00:14:08,020
+Now, when I run this-- and I and
+then let's say, let's print x.
+
+298
+00:14:08,020 --> 00:14:10,560
+So when I run this.
+
+299
+00:14:10,560 --> 00:14:12,930
+Let's say I actually
+entered an integer 7
+
+300
+00:14:12,930 --> 00:14:16,330
+and I hit Enter, seven
+outputs to me, which is great.
+
+301
+00:14:16,330 --> 00:14:21,170
+Now, what if I actually
+type out the word 7, right.
+
+302
+00:14:21,170 --> 00:14:25,350
+I hit Enter and I get
+a value error invalid
+
+303
+00:14:25,350 --> 00:14:27,640
+literal for int with base 10 7.
+
+304
+00:14:27,640 --> 00:14:29,310
+What this means is
+that it's saying
+
+305
+00:14:29,310 --> 00:14:32,370
+I can't convert your entry to
+be an integer because it's not
+
+306
+00:14:32,370 --> 00:14:33,100
+an integer.
+
+307
+00:14:33,100 --> 00:14:35,830
+So my program crashed.
+
+308
+00:14:35,830 --> 00:14:36,970
+My program crashed.
+
+309
+00:14:36,970 --> 00:14:38,080
+This is an error.
+
+310
+00:14:38,080 --> 00:14:39,393
+So my program just ends.
+
+311
+00:14:39,393 --> 00:14:41,310
+My user is like, I have
+no idea what happened.
+
+312
+00:14:41,310 --> 00:14:42,760
+Some sort of error popped up.
+
+313
+00:14:42,760 --> 00:14:44,110
+Maybe nothing popped up.
+
+314
+00:14:44,110 --> 00:14:45,527
+So what we're going
+to do is we're
+
+315
+00:14:45,527 --> 00:14:49,050
+going to be good programmers and
+we're going to after we ask them
+
+316
+00:14:49,050 --> 00:14:53,310
+to enter their input,
+then I'm going to say,
+
+317
+00:14:53,310 --> 00:15:00,570
+I'm going to try and convert
+their entry to be an integer.
+
+318
+00:15:00,570 --> 00:15:10,000
+If that does not work,
+so if there is an error,
+
+319
+00:15:10,000 --> 00:15:12,810
+this will run, and
+I'm going to say,
+
+320
+00:15:12,810 --> 00:15:19,200
+Print ugh that was
+not an integer.
+
+321
+00:15:19,200 --> 00:15:19,980
+All right.
+
+322
+00:15:19,980 --> 00:15:22,690
+Up here in my try block
+instead of just printing x,
+
+323
+00:15:22,690 --> 00:15:29,280
+I'm going to say that was,
+print that was an integer.
+
+324
+00:15:29,280 --> 00:15:30,990
+Good job.
+
+325
+00:15:30,990 --> 00:15:33,990
+So I'm going to ask my user
+to please enter an integer.
+
+326
+00:15:33,990 --> 00:15:36,530
+Then my try block
+will run and it's
+
+327
+00:15:36,530 --> 00:15:39,290
+going to first say,
+all right, let's try
+
+328
+00:15:39,290 --> 00:15:41,780
+and convert their
+entry to be an integer.
+
+329
+00:15:41,780 --> 00:15:45,980
+If this fails, then nothing
+else in my try block will run
+
+330
+00:15:45,980 --> 00:15:48,480
+and my except block
+will run instead.
+
+331
+00:15:48,480 --> 00:15:51,920
+If this actually works,
+then just my print
+
+332
+00:15:51,920 --> 00:15:56,610
+within my try block will
+run and we're good to go.
+
+333
+00:15:56,610 --> 00:15:57,660
+All right.
+
+334
+00:15:57,660 --> 00:15:58,940
+So let's press Play here.
+
+335
+00:15:58,940 --> 00:15:59,940
+Please enter an integer.
+
+336
+00:15:59,940 --> 00:16:01,470
+I say 7, I hit Enter.
+
+337
+00:16:01,470 --> 00:16:02,640
+It says that was an integer.
+
+338
+00:16:02,640 --> 00:16:03,510
+Good job.
+
+339
+00:16:03,510 --> 00:16:04,800
+My program is over.
+
+340
+00:16:04,800 --> 00:16:07,890
+Just my try block ran
+Now, let's try it again.
+
+341
+00:16:07,890 --> 00:16:10,380
+And I'm going to type
+out the word seven.
+
+342
+00:16:10,380 --> 00:16:11,490
+I'll hit Enter.
+
+343
+00:16:11,490 --> 00:16:13,410
+It says Ugh, that
+was not an integer.
+
+344
+00:16:13,410 --> 00:16:16,460
+So it tried to
+convert their value,
+
+345
+00:16:16,460 --> 00:16:18,060
+their entry to be an integer.
+
+346
+00:16:18,060 --> 00:16:19,290
+That did not work.
+
+347
+00:16:19,290 --> 00:16:22,340
+So then it ran my except
+block and it said,
+
+348
+00:16:22,340 --> 00:16:23,760
+Ugh, That was not an integer.
+
+349
+00:16:23,760 --> 00:16:25,110
+And it printed that out to me.
+
+350
+00:16:25,110 --> 00:16:29,380
+But at least then I can
+communicate with my user.
+
+351
+00:16:29,380 --> 00:16:33,300
+So try and accept focuses
+on the type of data
+
+352
+00:16:33,300 --> 00:16:34,650
+that we're entering.
+
+353
+00:16:34,650 --> 00:16:38,100
+Is it an integer, is it
+a float, what have you?
+
+354
+00:16:38,100 --> 00:16:42,210
+And then while loops really
+focus on the content of it,
+
+355
+00:16:42,210 --> 00:16:43,947
+of my user's input.
+
+356
+00:16:43,947 --> 00:16:45,280
+All right, so there you have it.
+
+357
+00:16:45,280 --> 00:16:47,890
+Here's three programs
+validating user input.
+
+358
+00:16:47,890 --> 00:16:49,738
+We'll continue to
+work with this,
+
+359
+00:16:49,738 --> 00:16:52,030
+but I hope that this was
+helpful to work through today.
+
+360
+00:16:52,030 --> 00:16:52,780
+Thanks, everybody.
+
+361
+00:16:52,780 --> 00:16:54,230
+Take care.

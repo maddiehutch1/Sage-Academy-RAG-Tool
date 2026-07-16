@@ -1,0 +1,3229 @@
+1
+00:00:00,177 --> 00:00:01,260
+INSTRUCTOR: Hey, everyone.
+
+2
+00:00:01,260 --> 00:00:02,540
+Welcome back.
+
+3
+00:00:02,540 --> 00:00:05,780
+In today's video, I want to talk
+to you about another high level
+
+4
+00:00:05,780 --> 00:00:06,300
+topic.
+
+5
+00:00:06,300 --> 00:00:08,550
+And I promise we'll get into
+kind of the meat of cloud
+
+6
+00:00:08,550 --> 00:00:10,800
+computing as soon as possible.
+
+7
+00:00:10,800 --> 00:00:13,980
+But I think this is an
+interesting one to discuss.
+
+8
+00:00:13,980 --> 00:00:15,880
+Kind of one of the big
+reasons, arguably, I
+
+9
+00:00:15,880 --> 00:00:19,910
+would say the biggest reason why
+people and technologists love
+
+10
+00:00:19,910 --> 00:00:21,860
+to leverage cloud
+infrastructure,
+
+11
+00:00:21,860 --> 00:00:26,090
+and that's primarily because
+it is a set of resources
+
+12
+00:00:26,090 --> 00:00:28,910
+globally available
+that we can kind of tap
+
+13
+00:00:28,910 --> 00:00:30,330
+into at the click of a button.
+
+14
+00:00:30,330 --> 00:00:33,410
+And so understanding how that
+structure is really important
+
+15
+00:00:33,410 --> 00:00:37,220
+to know what and when to
+use these different tools
+
+16
+00:00:37,220 --> 00:00:38,070
+and resources.
+
+17
+00:00:38,070 --> 00:00:41,270
+So I'll stop blabbering on about
+it and just kind of dive right
+
+18
+00:00:41,270 --> 00:00:42,443
+into it.
+
+19
+00:00:42,443 --> 00:00:43,860
+Again, hopefully
+it's a quick one,
+
+20
+00:00:43,860 --> 00:00:46,940
+but I think, again, it's
+still very relevant.
+
+21
+00:00:46,940 --> 00:00:49,790
+So, first off, just kind of
+think about some of the threats
+
+22
+00:00:49,790 --> 00:00:54,470
+that data companies, online
+companies, in general, face.
+
+23
+00:00:54,470 --> 00:00:57,570
+Obviously leaks,
+hacks, latency, right?
+
+24
+00:00:57,570 --> 00:01:00,000
+So how long it takes
+for me to load an app
+
+25
+00:01:00,000 --> 00:01:03,150
+or load a website, running
+out of resources, the capacity
+
+26
+00:01:03,150 --> 00:01:04,060
+itself.
+
+27
+00:01:04,060 --> 00:01:05,967
+If my server gets knocked out.
+
+28
+00:01:05,967 --> 00:01:08,050
+We've talked about some
+of these different things.
+
+29
+00:01:08,050 --> 00:01:09,520
+Accidental deletion
+of data, right?
+
+30
+00:01:09,520 --> 00:01:11,680
+You hire on an intern,
+they're new to this.
+
+31
+00:01:11,680 --> 00:01:14,470
+They accidentally
+delete everything.
+
+32
+00:01:14,470 --> 00:01:17,620
+All these things are real
+risks that companies face.
+
+33
+00:01:17,620 --> 00:01:22,200
+And by leveraging kind of the
+geographic effects of having
+
+34
+00:01:22,200 --> 00:01:24,270
+multiple servers across
+different locations
+
+35
+00:01:24,270 --> 00:01:26,680
+with automatic backups
+and redundancy,
+
+36
+00:01:26,680 --> 00:01:29,890
+you start to at least, I won't
+say completely get rid of,
+
+37
+00:01:29,890 --> 00:01:33,610
+but mitigate some of the
+issues associated with these.
+
+38
+00:01:33,610 --> 00:01:34,110
+I
+
+39
+00:01:34,110 --> 00:01:37,500
+Can remove the effect
+or I can isolate regions
+
+40
+00:01:37,500 --> 00:01:40,290
+so that maybe a leak or
+a hack in one location
+
+41
+00:01:40,290 --> 00:01:42,420
+isn't affecting my
+data in another region
+
+42
+00:01:42,420 --> 00:01:44,200
+or my backup in another region.
+
+43
+00:01:44,200 --> 00:01:48,730
+I can ensure that I have
+resources close to my users
+
+44
+00:01:48,730 --> 00:01:50,200
+to reduce that latency.
+
+45
+00:01:50,200 --> 00:01:53,590
+I can have limitless
+capacity, effectively, right?
+
+46
+00:01:53,590 --> 00:01:56,050
+I can just continue to use
+these economies of scale.
+
+47
+00:01:56,050 --> 00:01:58,080
+I can ensure that bad
+weather in one location
+
+48
+00:01:58,080 --> 00:02:00,190
+can't hit the
+other data centers.
+
+49
+00:02:00,190 --> 00:02:02,370
+All these different
+things are enabled
+
+50
+00:02:02,370 --> 00:02:04,650
+by leveraging kind of
+these geographic effects
+
+51
+00:02:04,650 --> 00:02:07,440
+of these large cloud providers.
+
+52
+00:02:07,440 --> 00:02:10,900
+So as a concrete
+example of this,
+
+53
+00:02:10,900 --> 00:02:12,490
+think about Crumbl Cookies.
+
+54
+00:02:12,490 --> 00:02:15,150
+It's a Logan company
+or started in Logan,
+
+55
+00:02:15,150 --> 00:02:17,940
+not that long ago, 2017.
+
+56
+00:02:17,940 --> 00:02:20,740
+And in that short
+amount of time now,
+
+57
+00:02:20,740 --> 00:02:24,910
+they have a Crumbl location
+in every state, all 50 states,
+
+58
+00:02:24,910 --> 00:02:27,900
+Alaska and Hawaii included.
+
+59
+00:02:27,900 --> 00:02:30,990
+If you take the classic model,
+kind of precloud computing
+
+60
+00:02:30,990 --> 00:02:33,490
+model, Crumbl has an app
+where you go on there,
+
+61
+00:02:33,490 --> 00:02:35,460
+you select your cookies,
+and you hit send.
+
+62
+00:02:35,460 --> 00:02:38,470
+And they grab your
+cookies, put them in a box,
+
+63
+00:02:38,470 --> 00:02:41,670
+and then a driver will
+drive them to your location.
+
+64
+00:02:41,670 --> 00:02:43,870
+Well, that's a lot
+of coordination.
+
+65
+00:02:43,870 --> 00:02:46,450
+That's a lot of internet
+traffic that has to happen.
+
+66
+00:02:46,450 --> 00:02:48,340
+I send a request from my phone.
+
+67
+00:02:48,340 --> 00:02:49,600
+I pull up the Crumbl app.
+
+68
+00:02:49,600 --> 00:02:52,990
+I send a request that is
+coming through my home network,
+
+69
+00:02:52,990 --> 00:02:56,850
+going through whatever channels,
+or whatever kind of networking
+
+70
+00:02:56,850 --> 00:02:59,250
+infrastructure is in
+my local area, that
+
+71
+00:02:59,250 --> 00:03:02,440
+is going to have to
+go to Crumbl servers.
+
+72
+00:03:02,440 --> 00:03:05,050
+Now, that's the question,
+is where is that server?
+
+73
+00:03:05,050 --> 00:03:08,230
+There's going to be latency
+if it's very far away.
+
+74
+00:03:08,230 --> 00:03:11,790
+Again, imagine we have
+one server in Logan
+
+75
+00:03:11,790 --> 00:03:15,390
+that is the app server
+for all of Crumbl Cookies.
+
+76
+00:03:15,390 --> 00:03:17,380
+Well, then I'm in
+Anchorage, Alaska,
+
+77
+00:03:17,380 --> 00:03:19,380
+and I want Crumbl
+Cookies, my request
+
+78
+00:03:19,380 --> 00:03:23,100
+has to travel from my home,
+through my local network,
+
+79
+00:03:23,100 --> 00:03:25,800
+across some sort of either,
+satellite connection
+
+80
+00:03:25,800 --> 00:03:28,247
+or high speed Lan network,
+whatever the networking
+
+81
+00:03:28,247 --> 00:03:30,330
+infrastructure looks like
+between those locations,
+
+82
+00:03:30,330 --> 00:03:31,870
+to get all the way to Logan.
+
+83
+00:03:31,870 --> 00:03:32,470
+So great.
+
+84
+00:03:32,470 --> 00:03:34,740
+OK, I've got that now.
+
+85
+00:03:34,740 --> 00:03:37,540
+So I get the request
+in Logan, process it.
+
+86
+00:03:37,540 --> 00:03:39,700
+Then I need to send it back
+over the same channels,
+
+87
+00:03:39,700 --> 00:03:43,060
+back to the Crumbl location
+in Anchorage, Alaska, to say,
+
+88
+00:03:43,060 --> 00:03:45,870
+hey, the cookies or
+this is the person
+
+89
+00:03:45,870 --> 00:03:47,620
+in this location
+wants these cookies.
+
+90
+00:03:47,620 --> 00:03:48,940
+Here's the order.
+
+91
+00:03:48,940 --> 00:03:51,630
+Then in Anchorage, Alaska, they
+have to send a request back
+
+92
+00:03:51,630 --> 00:03:53,230
+to say, OK, order confirmed.
+
+93
+00:03:53,230 --> 00:03:57,570
+And then every time we want
+to do any sort of update
+
+94
+00:03:57,570 --> 00:04:00,010
+on time to deliver or
+anything like that,
+
+95
+00:04:00,010 --> 00:04:03,990
+that's all going over that
+same long distance network.
+
+96
+00:04:03,990 --> 00:04:06,310
+That's OK, maybe?
+
+97
+00:04:06,310 --> 00:04:10,410
+But, again, as you can see, I
+pulled some numbers and rough--
+
+98
+00:04:10,410 --> 00:04:14,280
+again, this is back of
+the envelope calculations,
+
+99
+00:04:14,280 --> 00:04:16,360
+going to be around
+200 milliseconds.
+
+100
+00:04:16,360 --> 00:04:19,709
+Which doesn't sound
+that slow, but I
+
+101
+00:04:19,709 --> 00:04:21,899
+want you to try to
+think about, and maybe
+
+102
+00:04:21,899 --> 00:04:24,490
+time, how long a typical
+web page takes to load,
+
+103
+00:04:24,490 --> 00:04:27,700
+and you'd be surprised how long
+200 milliseconds feels like.
+
+104
+00:04:27,700 --> 00:04:30,910
+But even more importantly,
+the cost associated with that.
+
+105
+00:04:30,910 --> 00:04:36,090
+I now have to worry that if the
+networking infrastructure is
+
+106
+00:04:36,090 --> 00:04:38,130
+expensive across
+these locations, now
+
+107
+00:04:38,130 --> 00:04:40,530
+I'm paying higher
+premiums because I'm just
+
+108
+00:04:40,530 --> 00:04:43,090
+having to constantly transport
+information back and forth.
+
+109
+00:04:43,090 --> 00:04:45,450
+But maybe that's not
+even that big of a deal.
+
+110
+00:04:45,450 --> 00:04:49,110
+But, as we said before, what if
+there is a bad storm in Logan
+
+111
+00:04:49,110 --> 00:04:51,580
+that all of a sudden
+knocks out our power lines?
+
+112
+00:04:51,580 --> 00:04:54,570
+Well, then it's not just the
+Logan Crumbl Cookies that
+
+113
+00:04:54,570 --> 00:04:56,470
+are kind of hindered by that.
+
+114
+00:04:56,470 --> 00:04:59,015
+It would technically be
+every Crumbl Cookies.
+
+115
+00:04:59,015 --> 00:04:59,890
+And so you can start.
+
+116
+00:04:59,890 --> 00:05:03,490
+To see that really having
+these multiple, different data
+
+117
+00:05:03,490 --> 00:05:05,470
+centers that kind
+of host or serve
+
+118
+00:05:05,470 --> 00:05:07,390
+your content or your
+resource or your users
+
+119
+00:05:07,390 --> 00:05:12,130
+can be really critical for
+just a variety of reasons.
+
+120
+00:05:12,130 --> 00:05:14,440
+So in the context
+of AWS, again, this
+
+121
+00:05:14,440 --> 00:05:16,610
+is kind of AWS
+specific verbiage,
+
+122
+00:05:16,610 --> 00:05:18,010
+but take it to
+any cloud platform
+
+123
+00:05:18,010 --> 00:05:19,130
+and they have something similar.
+
+124
+00:05:19,130 --> 00:05:20,807
+They're all structured
+roughly the same.
+
+125
+00:05:20,807 --> 00:05:22,640
+They just will use their
+different branding.
+
+126
+00:05:22,640 --> 00:05:25,880
+So AWS defines everything
+in the context of regions.
+
+127
+00:05:25,880 --> 00:05:27,400
+And you saw this
+when you or when
+
+128
+00:05:27,400 --> 00:05:28,900
+we talked in some
+of the last videos
+
+129
+00:05:28,900 --> 00:05:32,110
+about kind of opening
+up your AWS console
+
+130
+00:05:32,110 --> 00:05:34,460
+and you can see the region
+in the top right hand corner.
+
+131
+00:05:34,460 --> 00:05:35,990
+This is what we're
+talking about.
+
+132
+00:05:35,990 --> 00:05:39,250
+This is the high
+level kind of location
+
+133
+00:05:39,250 --> 00:05:42,830
+of resources you want to
+use, that you get to select.
+
+134
+00:05:42,830 --> 00:05:45,940
+You can, in some cases, and
+we'll see those specific ones,
+
+135
+00:05:45,940 --> 00:05:48,500
+select down to the level
+of an availability zone.
+
+136
+00:05:48,500 --> 00:05:50,815
+So within a region,
+that's kind of a big area.
+
+137
+00:05:50,815 --> 00:05:52,940
+That's what these dots are
+showing on the map here.
+
+138
+00:05:52,940 --> 00:05:55,420
+These are AWS regions
+with the first one
+
+139
+00:05:55,420 --> 00:05:58,000
+being northern Virginia,
+that was launched in 2006.
+
+140
+00:05:58,000 --> 00:06:00,613
+So regions, within
+regions, there's
+
+141
+00:06:00,613 --> 00:06:02,280
+going to be multiple
+availability zones.
+
+142
+00:06:02,280 --> 00:06:04,940
+I think there's at least
+two in every region.
+
+143
+00:06:04,940 --> 00:06:07,760
+But some have multiple,
+especially the bigger regions.
+
+144
+00:06:07,760 --> 00:06:10,070
+And then within each
+availability zone,
+
+145
+00:06:10,070 --> 00:06:11,990
+there's going to
+be data centers.
+
+146
+00:06:11,990 --> 00:06:16,522
+So the region gives us a
+rough geographical location,
+
+147
+00:06:16,522 --> 00:06:18,230
+and we'll talk about
+it a little bit, why
+
+148
+00:06:18,230 --> 00:06:19,980
+we don't get exact locations.
+
+149
+00:06:19,980 --> 00:06:22,770
+But it'll give us a rough
+geographic location of, hey,
+
+150
+00:06:22,770 --> 00:06:24,360
+the servers are over here.
+
+151
+00:06:24,360 --> 00:06:26,600
+And then within
+that we are going
+
+152
+00:06:26,600 --> 00:06:29,720
+to have multiple availability
+zones, which these are then
+
+153
+00:06:29,720 --> 00:06:33,590
+going to have different
+resources or access or latency
+
+154
+00:06:33,590 --> 00:06:35,600
+potentially, even.
+
+155
+00:06:35,600 --> 00:06:37,800
+And then within each of
+these availability zones,
+
+156
+00:06:37,800 --> 00:06:39,510
+we'll have multiple
+data centers.
+
+157
+00:06:39,510 --> 00:06:41,910
+The data centers, the
+actual physical building.
+
+158
+00:06:41,910 --> 00:06:45,320
+Everything else above
+that is an abstraction.
+
+159
+00:06:45,320 --> 00:06:47,810
+But we can never get down
+to the level of data centers
+
+160
+00:06:47,810 --> 00:06:48,990
+or selecting data centers.
+
+161
+00:06:48,990 --> 00:06:51,320
+Again, that information is
+typically kept very private,
+
+162
+00:06:51,320 --> 00:06:54,210
+of what the, or where exactly
+those data centers are.
+
+163
+00:06:54,210 --> 00:06:56,745
+So we typically only worry
+about the region level,
+
+164
+00:06:56,745 --> 00:06:59,120
+but it's important to know
+that there are some underlying
+
+165
+00:06:59,120 --> 00:06:59,400
+things.
+
+166
+00:06:59,400 --> 00:07:00,900
+And, again, we will
+see occasionally
+
+167
+00:07:00,900 --> 00:07:04,880
+where we can select the
+availability zone of our choice.
+
+168
+00:07:04,880 --> 00:07:08,250
+Other things, regions are
+isolated from one another.
+
+169
+00:07:08,250 --> 00:07:09,890
+So they are going to be--
+
+170
+00:07:09,890 --> 00:07:12,270
+you can kind of see, I mean,
+they look close together,
+
+171
+00:07:12,270 --> 00:07:17,750
+but broadly speaking, these
+are kind of logically isolated
+
+172
+00:07:17,750 --> 00:07:19,490
+assets or resources.
+
+173
+00:07:19,490 --> 00:07:21,717
+I believe there is high
+speed network connections
+
+174
+00:07:21,717 --> 00:07:24,050
+between different regions so
+that they can transfer data
+
+175
+00:07:24,050 --> 00:07:25,710
+quickly and cheaply.
+
+176
+00:07:25,710 --> 00:07:29,540
+But, yeah, so communication
+between regions,
+
+177
+00:07:29,540 --> 00:07:30,800
+uses AWS backbone network.
+
+178
+00:07:30,800 --> 00:07:32,900
+I already said that.
+
+179
+00:07:32,900 --> 00:07:35,720
+User content-- or
+better said, we
+
+180
+00:07:35,720 --> 00:07:39,480
+can control any data replication
+across regions as well too.
+
+181
+00:07:39,480 --> 00:07:42,260
+So if, for example,
+I have data that's
+
+182
+00:07:42,260 --> 00:07:44,400
+stored in the northern
+Virginia region,
+
+183
+00:07:44,400 --> 00:07:46,850
+I could replicate
+it and force it
+
+184
+00:07:46,850 --> 00:07:50,180
+to be stored in Oregon, for
+example, or the US west two
+
+185
+00:07:50,180 --> 00:07:52,515
+region, which is broadly
+listed as Oregon.
+
+186
+00:07:52,515 --> 00:07:54,140
+And so if I want to
+ensure that they're
+
+187
+00:07:54,140 --> 00:07:56,060
+kind of on opposite
+sides of the country,
+
+188
+00:07:56,060 --> 00:08:00,650
+again, really isolated from
+one another, I can do that.
+
+189
+00:08:00,650 --> 00:08:02,910
+There are some special
+regions as well, too,
+
+190
+00:08:02,910 --> 00:08:04,590
+that we're never going to use.
+
+191
+00:08:04,590 --> 00:08:07,220
+You'll know if you use
+these or need to use these.
+
+192
+00:08:07,220 --> 00:08:10,020
+There's a China region,
+at least as of right now,
+
+193
+00:08:10,020 --> 00:08:11,220
+there's a China region.
+
+194
+00:08:11,220 --> 00:08:12,845
+There are two China
+regions, I believe.
+
+195
+00:08:12,845 --> 00:08:14,930
+Yeah, Beijing and Ningxia.
+
+196
+00:08:14,930 --> 00:08:20,558
+These are isolated from kind of
+the broader internet network.
+
+197
+00:08:20,558 --> 00:08:22,350
+So, for example, if
+you have an application
+
+198
+00:08:22,350 --> 00:08:23,820
+you're deploying
+in China, you'll
+
+199
+00:08:23,820 --> 00:08:27,420
+need to use something
+like AWS China region
+
+200
+00:08:27,420 --> 00:08:31,050
+because that's going
+to logically isolate it
+
+201
+00:08:31,050 --> 00:08:32,640
+from other resources
+that are not
+
+202
+00:08:32,640 --> 00:08:34,840
+permitted to be used in there.
+
+203
+00:08:34,840 --> 00:08:37,990
+Kind of similar to that,
+actually, is the AWS gov cloud.
+
+204
+00:08:37,990 --> 00:08:41,010
+So this is a so it's for
+confidential, unclassified
+
+205
+00:08:41,010 --> 00:08:44,130
+information, so CUI,
+CUI as that designation.
+
+206
+00:08:44,130 --> 00:08:46,590
+So anything that is
+at that level or below
+
+207
+00:08:46,590 --> 00:08:52,270
+can leverage as far as
+security level or access level.
+
+208
+00:08:52,270 --> 00:08:55,800
+Anything at CUI
+or below could be
+
+209
+00:08:55,800 --> 00:08:58,540
+or could leverage AWS gov cloud.
+
+210
+00:08:58,540 --> 00:09:00,280
+Sorry, it's a mouthful.
+
+211
+00:09:00,280 --> 00:09:04,170
+But either way, that allows
+US government agencies
+
+212
+00:09:04,170 --> 00:09:07,380
+to kind of do their
+work in the cloud.
+
+213
+00:09:07,380 --> 00:09:09,210
+Having come from
+this space, that
+
+214
+00:09:09,210 --> 00:09:13,020
+is a really, really valuable
+resource for the same reason
+
+215
+00:09:13,020 --> 00:09:16,470
+that every other tech company
+wants to use cloud resources.
+
+216
+00:09:16,470 --> 00:09:18,450
+The government and
+government contractors
+
+217
+00:09:18,450 --> 00:09:19,900
+can benefit from them as well.
+
+218
+00:09:19,900 --> 00:09:22,698
+And so being able to have
+a place where you can use
+
+219
+00:09:22,698 --> 00:09:24,240
+or kind of leverage
+the fact that you
+
+220
+00:09:24,240 --> 00:09:26,577
+need a secure environment
+to work in, but still
+
+221
+00:09:26,577 --> 00:09:28,410
+in the cloud with all
+the scalable resources
+
+222
+00:09:28,410 --> 00:09:31,350
+and everything, is
+really valuable.
+
+223
+00:09:31,350 --> 00:09:34,750
+And then there's less
+information on these publicly,
+
+224
+00:09:34,750 --> 00:09:37,740
+but there are,
+seemingly there are
+
+225
+00:09:37,740 --> 00:09:41,910
+two top secret regions so that
+are at the top secret level.
+
+226
+00:09:41,910 --> 00:09:45,300
+These, seemingly, are separated
+by a very large distance,
+
+227
+00:09:45,300 --> 00:09:48,070
+multiple availability zones,
+just as we seen before.
+
+228
+00:09:48,070 --> 00:09:53,978
+And, again, they are designed
+to very heavily mitigate
+
+229
+00:09:53,978 --> 00:09:55,770
+all the risks, not just
+environmental risk,
+
+230
+00:09:55,770 --> 00:09:58,650
+realistically, but every
+risk possible because it
+
+231
+00:09:58,650 --> 00:10:01,402
+is such sensitive information
+that's leveraging that.
+
+232
+00:10:01,402 --> 00:10:03,860
+It's just important to know
+that there are these restricted
+
+233
+00:10:03,860 --> 00:10:04,650
+access regions.
+
+234
+00:10:04,650 --> 00:10:06,400
+You're not just going
+to be able to select
+
+235
+00:10:06,400 --> 00:10:09,620
+them, one click button,
+use these different regions
+
+236
+00:10:09,620 --> 00:10:10,520
+in the cloud.
+
+237
+00:10:10,520 --> 00:10:12,660
+But if you need them,
+they are available.
+
+238
+00:10:12,660 --> 00:10:17,020
+So it's nice to
+see as a resource.
+
+239
+00:10:17,020 --> 00:10:19,630
+So, yeah, really, I would
+say like the main things
+
+240
+00:10:19,630 --> 00:10:24,280
+to consider is if you
+want to or when you're
+
+241
+00:10:24,280 --> 00:10:26,390
+selecting a region,
+for us, in this class,
+
+242
+00:10:26,390 --> 00:10:28,820
+it's probably just going to
+be whatever one you want to.
+
+243
+00:10:28,820 --> 00:10:32,170
+I typically, again, as I've said
+before, prefer to choose one
+
+244
+00:10:32,170 --> 00:10:33,580
+closest to me.
+
+245
+00:10:33,580 --> 00:10:37,900
+If you hit up this
+website here, CloudPing.
+
+246
+00:10:37,900 --> 00:10:42,260
+Let me just pull that up here,
+you can see and run this,
+
+247
+00:10:42,260 --> 00:10:44,650
+click this button
+HTTP ping, and it'll
+
+248
+00:10:44,650 --> 00:10:48,610
+ping the distance to different
+cloud servers or regions, better
+
+249
+00:10:48,610 --> 00:10:49,273
+statement.
+
+250
+00:10:49,273 --> 00:10:51,440
+So you can see kind of the
+latency in your location.
+
+251
+00:10:51,440 --> 00:10:54,440
+So I'm here on my home
+network in Logan right now.
+
+252
+00:10:54,440 --> 00:10:58,100
+This is the latency between me
+and these different regions.
+
+253
+00:10:58,100 --> 00:11:01,520
+So 74 milliseconds to
+the Virginia region.
+
+254
+00:11:01,520 --> 00:11:04,040
+My lowest time here is
+to the California region.
+
+255
+00:11:04,040 --> 00:11:06,050
+Not too surprising, right,
+or the Oregon region.
+
+256
+00:11:06,050 --> 00:11:08,630
+Both of these are
+relatively close to us here.
+
+257
+00:11:08,630 --> 00:11:11,170
+So 52 milliseconds,
+62 milliseconds.
+
+258
+00:11:11,170 --> 00:11:14,050
+And you can see that there's
+a bunch of other ones as well.
+
+259
+00:11:14,050 --> 00:11:15,530
+All the EU ones.
+
+260
+00:11:15,530 --> 00:11:18,950
+And you can see this gets to
+really be far away or long
+
+261
+00:11:18,950 --> 00:11:21,110
+times, long latencies.
+
+262
+00:11:21,110 --> 00:11:23,690
+All the Asian regions.
+
+263
+00:11:23,690 --> 00:11:25,860
+And then actually, yeah,
+you can see the gov cloud.
+
+264
+00:11:25,860 --> 00:11:28,700
+So you can see the one
+that's at the CUI level
+
+265
+00:11:28,700 --> 00:11:33,590
+and that's the US gov west
+one is pretty close to us.
+
+266
+00:11:33,590 --> 00:11:36,480
+And they have other cloud
+platforms as well too.
+
+267
+00:11:36,480 --> 00:11:39,870
+So if you're using Digital
+Ocean, Core Weave, Google cloud,
+
+268
+00:11:39,870 --> 00:11:42,050
+as we've talked about
+before, all of these
+
+269
+00:11:42,050 --> 00:11:44,880
+have different regions.
+
+270
+00:11:44,880 --> 00:11:47,220
+So you can see they all
+function roughly the same,
+
+271
+00:11:47,220 --> 00:11:50,510
+but just something to note.
+
+272
+00:11:50,510 --> 00:11:53,900
+So, yeah, latency is
+probably the main reason
+
+273
+00:11:53,900 --> 00:11:56,700
+I choose different
+regions right now.
+
+274
+00:11:56,700 --> 00:11:59,930
+But know, as well, if there
+are any kind of data governance
+
+275
+00:11:59,930 --> 00:12:01,980
+or legal requirements,
+for example,
+
+276
+00:12:01,980 --> 00:12:04,610
+again, sometimes you
+can't move data outside
+
+277
+00:12:04,610 --> 00:12:06,070
+of geographical boundaries.
+
+278
+00:12:06,070 --> 00:12:08,228
+Maybe we can't move
+data outside of the US.
+
+279
+00:12:08,228 --> 00:12:09,770
+So I know that that's
+going to define
+
+280
+00:12:09,770 --> 00:12:11,750
+the set of regions I can use.
+
+281
+00:12:11,750 --> 00:12:13,370
+Or, similarly, maybe
+some state laws
+
+282
+00:12:13,370 --> 00:12:16,565
+that say, hey, if this protected
+information is being stored,
+
+283
+00:12:16,565 --> 00:12:18,440
+it has to be it, has to
+stay within the state
+
+284
+00:12:18,440 --> 00:12:22,190
+borders or something like that.
+
+285
+00:12:22,190 --> 00:12:24,210
+Services can also drive that.
+
+286
+00:12:24,210 --> 00:12:26,370
+So some services aren't
+available in every region.
+
+287
+00:12:26,370 --> 00:12:28,940
+The main four US ones have
+pretty much every resource
+
+288
+00:12:28,940 --> 00:12:32,280
+that you could want, so it's
+not really a big issue for us.
+
+289
+00:12:32,280 --> 00:12:33,630
+And then cost, as well, too.
+
+290
+00:12:33,630 --> 00:12:36,170
+So as you start to get
+to scale, right, you're
+
+291
+00:12:36,170 --> 00:12:38,057
+spinning up a ton
+of resources, then
+
+292
+00:12:38,057 --> 00:12:40,140
+you might want to really
+look at this as well too.
+
+293
+00:12:40,140 --> 00:12:41,640
+Because it might
+be something where,
+
+294
+00:12:41,640 --> 00:12:43,830
+hey, if I'm willing to have
+a little bit of latency,
+
+295
+00:12:43,830 --> 00:12:47,690
+I can push this over to this
+lower utilization region
+
+296
+00:12:47,690 --> 00:12:51,590
+and, therefore, lower my costs.
+
+297
+00:12:51,590 --> 00:12:54,140
+And, as we said,
+outside of the--
+
+298
+00:12:54,140 --> 00:12:57,380
+or we have regions
+that we can select.
+
+299
+00:12:57,380 --> 00:13:00,920
+Within each region we have
+multiple availability zones.
+
+300
+00:13:00,920 --> 00:13:03,320
+And then each one of
+those availability zones
+
+301
+00:13:03,320 --> 00:13:07,500
+is going to be isolated,
+kind of partitioned.
+
+302
+00:13:07,500 --> 00:13:10,703
+So these aren't going to--
+
+303
+00:13:10,703 --> 00:13:12,120
+They're going to
+have, again, kind
+
+304
+00:13:12,120 --> 00:13:14,490
+of some sort of logical
+or physical isolation
+
+305
+00:13:14,490 --> 00:13:15,300
+between each other.
+
+306
+00:13:15,300 --> 00:13:17,460
+So these availability zones
+are going to basically house
+
+307
+00:13:17,460 --> 00:13:18,100
+data centers.
+
+308
+00:13:18,100 --> 00:13:19,920
+Data centers will have really,
+really fast connections
+
+309
+00:13:19,920 --> 00:13:21,040
+between each other.
+
+310
+00:13:21,040 --> 00:13:24,863
+The availability zones
+might have kind of some--
+
+311
+00:13:24,863 --> 00:13:26,280
+Yeah so they have
+their high speed
+
+312
+00:13:26,280 --> 00:13:30,330
+kind of networking between them,
+but they are kind of separated
+
+313
+00:13:30,330 --> 00:13:31,240
+logically.
+
+314
+00:13:31,240 --> 00:13:33,212
+So, again, this is
+why I say it's, it's
+
+315
+00:13:33,212 --> 00:13:34,420
+more of an abstraction of it.
+
+316
+00:13:34,420 --> 00:13:36,730
+The data centers are the
+actual physical buildings.
+
+317
+00:13:36,730 --> 00:13:39,180
+The availability
+zones are just a kind
+
+318
+00:13:39,180 --> 00:13:41,940
+of logical isolation of
+a set of data centers
+
+319
+00:13:41,940 --> 00:13:43,930
+that then, between
+availability zones,
+
+320
+00:13:43,930 --> 00:13:47,435
+you have high speed networking
+to allow for easy data
+
+321
+00:13:47,435 --> 00:13:48,810
+transfer between
+the availability
+
+322
+00:13:48,810 --> 00:13:50,610
+zones, but not
+quite as fast as you
+
+323
+00:13:50,610 --> 00:13:52,210
+would get between data centers.
+
+324
+00:13:52,210 --> 00:13:56,070
+So you can basically imagine is
+like I'm selecting availability
+
+325
+00:13:56,070 --> 00:13:59,320
+zone and I'm expecting kind of
+the fastest speeds within there.
+
+326
+00:13:59,320 --> 00:14:01,740
+Any transfer or
+kind of manipulation
+
+327
+00:14:01,740 --> 00:14:04,930
+within that availability
+zone will be really fast.
+
+328
+00:14:04,930 --> 00:14:08,260
+If I'm duplicating across
+availability zones,
+
+329
+00:14:08,260 --> 00:14:11,440
+it might be a little
+slower, but not as slow
+
+330
+00:14:11,440 --> 00:14:14,920
+as going between regions, if you
+want to think about it that way.
+
+331
+00:14:14,920 --> 00:14:17,793
+So, yeah, they'll recommend and
+you'll see this a lot of times
+
+332
+00:14:17,793 --> 00:14:19,210
+that they'll ask,
+hey, do you want
+
+333
+00:14:19,210 --> 00:14:20,627
+to replicate this
+one button click
+
+334
+00:14:20,627 --> 00:14:22,460
+across multiple
+availability zones?
+
+335
+00:14:22,460 --> 00:14:24,110
+You can do that where necessary.
+
+336
+00:14:24,110 --> 00:14:26,710
+Sometimes there's a
+cost associated with it,
+
+337
+00:14:26,710 --> 00:14:27,770
+or oftentimes there are.
+
+338
+00:14:27,770 --> 00:14:29,830
+Sometimes there's not, though.
+
+339
+00:14:29,830 --> 00:14:32,200
+And yeah, you can choose
+availability zones
+
+340
+00:14:32,200 --> 00:14:33,545
+in a lot of cases.
+
+341
+00:14:33,545 --> 00:14:35,170
+Again, at the high
+level, though, we're
+
+342
+00:14:35,170 --> 00:14:37,900
+only seeing the regions when
+we click that little dropdown
+
+343
+00:14:37,900 --> 00:14:40,810
+menu on the top right, but
+then within specific resources
+
+344
+00:14:40,810 --> 00:14:45,310
+you'll see the ability to
+select an availability zone.
+
+345
+00:14:45,310 --> 00:14:47,330
+And then, yeah, down to
+the data center level,
+
+346
+00:14:47,330 --> 00:14:52,780
+this is kind of the finest
+grain, isolation of kind
+
+347
+00:14:52,780 --> 00:14:55,230
+of large scale AWS resources.
+
+348
+00:14:55,230 --> 00:14:57,925
+This is where the
+kind of data exists.
+
+349
+00:14:57,925 --> 00:14:59,550
+This is where the
+actual processing is.
+
+350
+00:14:59,550 --> 00:15:02,000
+This is a physical
+building, a data center.
+
+351
+00:15:02,000 --> 00:15:04,100
+You do not specify
+a data center.
+
+352
+00:15:04,100 --> 00:15:07,000
+You don't have access to
+which, or we don't even
+
+353
+00:15:07,000 --> 00:15:08,590
+know how many data
+centers comprise
+
+354
+00:15:08,590 --> 00:15:10,480
+of individual
+availability zones,
+
+355
+00:15:10,480 --> 00:15:12,370
+though there are multiple.
+
+356
+00:15:12,370 --> 00:15:14,960
+Each one is going to have
+redundant power, networking,
+
+357
+00:15:14,960 --> 00:15:17,350
+connectivity.
+
+358
+00:15:17,350 --> 00:15:19,150
+They're going to be
+separate facilities.
+
+359
+00:15:19,150 --> 00:15:25,150
+And, yeah, tens of thousands
+of servers per data center.
+
+360
+00:15:25,150 --> 00:15:28,990
+Now, importantly, there is a
+lot of security considerations
+
+361
+00:15:28,990 --> 00:15:30,230
+around those.
+
+362
+00:15:30,230 --> 00:15:33,340
+So each location
+is selected to try
+
+363
+00:15:33,340 --> 00:15:35,200
+to mitigate
+environmental risk, which
+
+364
+00:15:35,200 --> 00:15:38,870
+itself is kind of an interesting
+like bigger discussion to have.
+
+365
+00:15:38,870 --> 00:15:41,810
+That's really not, you know,
+this isn't the time for it.
+
+366
+00:15:41,810 --> 00:15:43,690
+But thinking about
+the fact that like
+
+367
+00:15:43,690 --> 00:15:48,550
+there is some known analysis
+happening around which regions
+
+368
+00:15:48,550 --> 00:15:51,040
+are safest to live
+in, or better,
+
+369
+00:15:51,040 --> 00:15:53,150
+safest to store information,
+which I could maybe
+
+370
+00:15:53,150 --> 00:15:54,800
+translate to safest
+to live in as well,
+
+371
+00:15:54,800 --> 00:15:56,840
+from an environmental
+standpoint.
+
+372
+00:15:56,840 --> 00:15:59,780
+And so AWS is definitely picking
+up all that prime real estate,
+
+373
+00:15:59,780 --> 00:16:02,690
+and all the cloud
+providers are, to mitigate
+
+374
+00:16:02,690 --> 00:16:04,020
+the risk to their data storage.
+
+375
+00:16:04,020 --> 00:16:07,910
+So that's kind of
+one consideration.
+
+376
+00:16:07,910 --> 00:16:11,060
+They have so many
+redundancies within them
+
+377
+00:16:11,060 --> 00:16:15,575
+to try to reduce any sort
+of failures or downtime.
+
+378
+00:16:15,575 --> 00:16:17,450
+Critical components are
+going to be backed up
+
+379
+00:16:17,450 --> 00:16:19,320
+across multiple
+availability zones.
+
+380
+00:16:19,320 --> 00:16:22,080
+So any sort of the kind of
+like core resources of them,
+
+381
+00:16:22,080 --> 00:16:25,298
+they'll be backed
+up automatically.
+
+382
+00:16:25,298 --> 00:16:27,340
+Caveat with this statement,
+that we'll talk about
+
+383
+00:16:27,340 --> 00:16:29,830
+in the next slide, but,
+officially, data center
+
+384
+00:16:29,830 --> 00:16:32,740
+locations are not
+disclosed and there is kind
+
+385
+00:16:32,740 --> 00:16:36,430
+of no public access to them.
+
+386
+00:16:36,430 --> 00:16:40,602
+In the event of failures, they
+have kind of automated processes
+
+387
+00:16:40,602 --> 00:16:43,060
+that will kind of transfer the
+data across to other regions
+
+388
+00:16:43,060 --> 00:16:44,740
+quickly so that
+they can mitigate
+
+389
+00:16:44,740 --> 00:16:47,518
+the amount of information lost.
+
+390
+00:16:47,518 --> 00:16:49,060
+What I find most
+interesting, though,
+
+391
+00:16:49,060 --> 00:16:50,435
+is this kind of
+next bullet point
+
+392
+00:16:50,435 --> 00:16:52,450
+here, in that they
+don't use kind
+
+393
+00:16:52,450 --> 00:16:56,890
+of a single,
+standard manufacturer
+
+394
+00:16:56,890 --> 00:16:59,230
+for the actual physical
+servers or any sort of hardware
+
+395
+00:16:59,230 --> 00:17:00,142
+in that space.
+
+396
+00:17:00,142 --> 00:17:01,600
+Because if you
+think about it, if I
+
+397
+00:17:01,600 --> 00:17:03,920
+have a single
+provider that's like,
+
+398
+00:17:03,920 --> 00:17:08,920
+hey, Dell produces all of the
+servers for AWS's servers.
+
+399
+00:17:08,920 --> 00:17:11,890
+Well, now I know that if
+I'm a bad actor, that all
+
+400
+00:17:11,890 --> 00:17:14,020
+I really need to do is
+penetrate Dell's systems
+
+401
+00:17:14,020 --> 00:17:17,266
+to embed some sort
+of vulnerability
+
+402
+00:17:17,266 --> 00:17:19,599
+or if I can just identify the
+vulnerability in some sort
+
+403
+00:17:19,599 --> 00:17:21,520
+of existing Dell system,
+then I know that I
+
+404
+00:17:21,520 --> 00:17:24,470
+can hit all of AWS's servers.
+
+405
+00:17:24,470 --> 00:17:27,140
+So they use equipment
+from multiple, different
+
+406
+00:17:27,140 --> 00:17:29,600
+manufacturers and
+actually very explicitly,
+
+407
+00:17:29,600 --> 00:17:35,360
+they have kind of this layer of
+almost shell companies to hide,
+
+408
+00:17:35,360 --> 00:17:37,310
+in a sense, who is
+making the order.
+
+409
+00:17:37,310 --> 00:17:39,560
+So let's say they're like,
+we need some new networking
+
+410
+00:17:39,560 --> 00:17:42,800
+equipment or some new
+high speed cables.
+
+411
+00:17:42,800 --> 00:17:45,440
+Rather than saying this
+order is coming from AWS,
+
+412
+00:17:45,440 --> 00:17:48,440
+it's going to be some other
+company branded around that so
+
+413
+00:17:48,440 --> 00:17:52,790
+that it's not clear
+what all equipment is
+
+414
+00:17:52,790 --> 00:17:54,420
+going into these data centers.
+
+415
+00:17:54,420 --> 00:17:56,180
+So there's a lot
+of consideration
+
+416
+00:17:56,180 --> 00:17:58,370
+and thought going
+around ensuring
+
+417
+00:17:58,370 --> 00:18:02,960
+the security and the
+reliability of AWS data centers
+
+418
+00:18:02,960 --> 00:18:06,470
+and really, again,
+any cloud platform.
+
+419
+00:18:06,470 --> 00:18:08,875
+But again, as I said, there
+is a caveat with that.
+
+420
+00:18:11,480 --> 00:18:13,820
+There have been quite
+a few data leaks
+
+421
+00:18:13,820 --> 00:18:17,730
+that have leaked official
+locations of AWS data centers.
+
+422
+00:18:17,730 --> 00:18:20,720
+And this isn't me trying
+to put them on blast.
+
+423
+00:18:20,720 --> 00:18:22,160
+This is just the nature of it.
+
+424
+00:18:22,160 --> 00:18:23,810
+And for that matter,
+too, quite a few
+
+425
+00:18:23,810 --> 00:18:26,370
+have been identified just
+based off of outages.
+
+426
+00:18:26,370 --> 00:18:29,330
+Again, when all of a
+sudden, half of the internet
+
+427
+00:18:29,330 --> 00:18:32,750
+goes down for, on
+a random Wednesday,
+
+428
+00:18:32,750 --> 00:18:36,590
+and we see that there are
+major storms in this one
+
+429
+00:18:36,590 --> 00:18:38,880
+specific region in
+the United States,
+
+430
+00:18:38,880 --> 00:18:43,130
+then you can probably drill in
+pretty quickly and say the data
+
+431
+00:18:43,130 --> 00:18:44,690
+centers might be over here.
+
+432
+00:18:44,690 --> 00:18:47,210
+Or, again, hey, there
+was a massive fire
+
+433
+00:18:47,210 --> 00:18:51,470
+at a warehouse in some random
+location in northern Virginia.
+
+434
+00:18:51,470 --> 00:18:55,535
+And also, conveniently, there
+were a bunch of outages on AWS
+
+435
+00:18:55,535 --> 00:18:58,160
+Then I might know that there was
+some sort of strong connection
+
+436
+00:18:58,160 --> 00:18:58,800
+between these.
+
+437
+00:18:58,800 --> 00:19:01,820
+So there have been a lot of--
+
+438
+00:19:01,820 --> 00:19:03,890
+you can just search and
+find countless examples
+
+439
+00:19:03,890 --> 00:19:06,990
+of this, where different data
+centers have been identified.
+
+440
+00:19:06,990 --> 00:19:09,120
+So it's just the nature of it.
+
+441
+00:19:09,120 --> 00:19:11,910
+With the ease of information
+spread right now,
+
+442
+00:19:11,910 --> 00:19:13,970
+or the kind of the
+era we're in, there's
+
+443
+00:19:13,970 --> 00:19:16,050
+no way to completely hide these.
+
+444
+00:19:16,050 --> 00:19:20,000
+But a lot of steps are taken
+to try to mitigate that risk.
+
+445
+00:19:20,000 --> 00:19:22,170
+I'll say more
+interestingly, too,
+
+446
+00:19:22,170 --> 00:19:26,960
+is the history on kind of cloud
+computing development is deeply
+
+447
+00:19:26,960 --> 00:19:30,890
+intertwined with kind of
+our government contracting
+
+448
+00:19:30,890 --> 00:19:31,515
+infrastructure.
+
+449
+00:19:31,515 --> 00:19:33,307
+And so there's a really
+interesting article
+
+450
+00:19:33,307 --> 00:19:34,125
+from The Atlantic.
+
+451
+00:19:34,125 --> 00:19:35,250
+I encourage you to read it.
+
+452
+00:19:35,250 --> 00:19:39,590
+It's just about why, first
+off, AWS, their first region is
+
+453
+00:19:39,590 --> 00:19:42,890
+northern Virginia, where again,
+DC and all the government
+
+454
+00:19:42,890 --> 00:19:44,600
+contracting locations are.
+
+455
+00:19:44,600 --> 00:19:46,765
+So an interesting discussion
+on why that happened
+
+456
+00:19:46,765 --> 00:19:48,390
+and kind of how that's
+grown out of it.
+
+457
+00:19:48,390 --> 00:19:54,750
+So, yes, a lot of history here,
+a lot of interesting innovation
+
+458
+00:19:54,750 --> 00:19:57,223
+happening, for very
+intentional reasons.
+
+459
+00:19:57,223 --> 00:19:59,640
+So I encourage you to kind of
+get some background on this,
+
+460
+00:19:59,640 --> 00:20:04,180
+to understand how these
+technologies evolved.
+
+461
+00:20:04,180 --> 00:20:08,290
+OK, a few more kind of, I'll
+say kind of vocabulary words
+
+462
+00:20:08,290 --> 00:20:10,390
+that you might see
+throughout this.
+
+463
+00:20:10,390 --> 00:20:14,270
+AWS often talks about
+points of presences,
+
+464
+00:20:14,270 --> 00:20:16,990
+but really this just consists
+of all of their other
+
+465
+00:20:16,990 --> 00:20:19,670
+like edge locations and
+regional edge caches.
+
+466
+00:20:19,670 --> 00:20:23,140
+So what that means is that, OK,
+we have our data centers that
+
+467
+00:20:23,140 --> 00:20:26,770
+are scattered around,
+but also there are these,
+
+468
+00:20:26,770 --> 00:20:29,710
+think about almost like
+smaller data centers that
+
+469
+00:20:29,710 --> 00:20:31,720
+are cheaper to build.
+
+470
+00:20:31,720 --> 00:20:33,860
+They can put them up
+in many more locations.
+
+471
+00:20:33,860 --> 00:20:37,520
+And these are designed to
+just really minimize latency.
+
+472
+00:20:37,520 --> 00:20:41,170
+So might make more sense with
+an example, here So imagine,
+
+473
+00:20:41,170 --> 00:20:42,150
+again, I'm Netflix.
+
+474
+00:20:42,150 --> 00:20:44,030
+That was been our
+example for a while now.
+
+475
+00:20:44,030 --> 00:20:46,870
+Imagine I'm Netflix
+and I want to ensure
+
+476
+00:20:46,870 --> 00:20:51,160
+that we have the absolute
+lowest latency for all
+
+477
+00:20:51,160 --> 00:20:52,525
+of our high quality videos.
+
+478
+00:20:52,525 --> 00:20:53,900
+I mean, you probably
+notice this,
+
+479
+00:20:53,900 --> 00:20:55,940
+you can be in some
+really obscure locations.
+
+480
+00:20:55,940 --> 00:20:57,770
+Other websites are very slow.
+
+481
+00:20:57,770 --> 00:21:00,310
+Netflix still seems to be
+able to stream really, really
+
+482
+00:21:00,310 --> 00:21:03,290
+high quality video with
+relatively low latency, very
+
+483
+00:21:03,290 --> 00:21:04,500
+minimal buffering.
+
+484
+00:21:04,500 --> 00:21:06,440
+And that's because
+they're heavily utilizing
+
+485
+00:21:06,440 --> 00:21:08,007
+these sort of edge caches.
+
+486
+00:21:08,007 --> 00:21:09,590
+So what they're
+saying is, hey, rather
+
+487
+00:21:09,590 --> 00:21:14,150
+than us storing all of our
+videos, all of our movies and TV
+
+488
+00:21:14,150 --> 00:21:17,300
+shows, in kind of these Amazon
+data centers and these broader
+
+489
+00:21:17,300 --> 00:21:19,250
+regions, we're
+going to try to put
+
+490
+00:21:19,250 --> 00:21:21,770
+them as close to the
+customer as possible.
+
+491
+00:21:21,770 --> 00:21:24,320
+So kind of taking it from
+an example perspective,
+
+492
+00:21:24,320 --> 00:21:25,910
+I'm here in Logan.
+
+493
+00:21:25,910 --> 00:21:30,290
+I want to go watch, I don't
+know, insert random new show
+
+494
+00:21:30,290 --> 00:21:31,880
+on Netflix.
+
+495
+00:21:31,880 --> 00:21:35,730
+When I connect to Netflix
+or click on this video,
+
+496
+00:21:35,730 --> 00:21:39,560
+if I was just using kind of the
+standard AWS infrastructure,
+
+497
+00:21:39,560 --> 00:21:42,030
+like we've talked about
+with the data centers,
+
+498
+00:21:42,030 --> 00:21:44,270
+then my request would
+have to go to at least
+
+499
+00:21:44,270 --> 00:21:46,920
+wherever the closest
+data center is, which,
+
+500
+00:21:46,920 --> 00:21:49,970
+let's say it's 500 miles.
+
+501
+00:21:49,970 --> 00:21:51,987
+And then that has
+to come back to me.
+
+502
+00:21:51,987 --> 00:21:53,570
+And everybody's
+hitting that same data
+
+503
+00:21:53,570 --> 00:21:57,160
+center or that same smaller
+set of data centers.
+
+504
+00:21:57,160 --> 00:22:00,040
+But, again, now imagine
+that, or especially
+
+505
+00:22:00,040 --> 00:22:03,460
+if I'm really kind of far out in
+away in the country somewhere,
+
+506
+00:22:03,460 --> 00:22:05,390
+where I'm not close
+to a major city,
+
+507
+00:22:05,390 --> 00:22:08,830
+it's going to be
+really slow latency
+
+508
+00:22:08,830 --> 00:22:12,338
+or high latency to get that
+video out to me quickly.
+
+509
+00:22:12,338 --> 00:22:14,380
+So instead, what they do,
+is they have these edge
+
+510
+00:22:14,380 --> 00:22:16,840
+caches where they say, let's
+put all the movies that we can
+
+511
+00:22:16,840 --> 00:22:20,080
+or all the TV shows as close
+to the customer as possible
+
+512
+00:22:20,080 --> 00:22:23,443
+so that we can ensure that
+they have the lowest latency.
+
+513
+00:22:23,443 --> 00:22:26,110
+It's going to come at a premium,
+because I'm replicating storage
+
+514
+00:22:26,110 --> 00:22:28,780
+across a bunch of
+locations, but I'm
+
+515
+00:22:28,780 --> 00:22:30,950
+going to make a better
+experience for my customer
+
+516
+00:22:30,950 --> 00:22:33,680
+and they're going to prefer my
+platform over other platforms.
+
+517
+00:22:33,680 --> 00:22:36,020
+And for that matter, too,
+I can be creative about it.
+
+518
+00:22:36,020 --> 00:22:40,480
+If there's a less popular show,
+then I can say, hey, maybe
+
+519
+00:22:40,480 --> 00:22:42,583
+I'm not going to put
+that one close to them.
+
+520
+00:22:42,583 --> 00:22:44,500
+I'm going to predict
+what videos are typically
+
+521
+00:22:44,500 --> 00:22:45,500
+watched in this area.
+
+522
+00:22:45,500 --> 00:22:47,712
+So I'll just kind of pull
+that one back and say,
+
+523
+00:22:47,712 --> 00:22:49,670
+if they want to watch
+it, I'll send it to them.
+
+524
+00:22:49,670 --> 00:22:52,180
+It might be a little
+bit slower, but I'm not
+
+525
+00:22:52,180 --> 00:22:54,380
+going to waste those
+excess resources.
+
+526
+00:22:54,380 --> 00:22:56,960
+So there's all sorts
+of creative ways
+
+527
+00:22:56,960 --> 00:23:02,000
+that you can structure
+these sort of utilizations
+
+528
+00:23:02,000 --> 00:23:04,018
+of AWS infrastructure.
+
+529
+00:23:04,018 --> 00:23:06,560
+And so that's why it's important
+to know that you have access
+
+530
+00:23:06,560 --> 00:23:07,592
+to all of these.
+
+531
+00:23:07,592 --> 00:23:10,050
+You'll see this as well, too,
+you've probably noticed like,
+
+532
+00:23:10,050 --> 00:23:11,758
+for example, if you
+pick on a random news
+
+533
+00:23:11,758 --> 00:23:16,552
+website, your local news, they
+might have really long load
+
+534
+00:23:16,552 --> 00:23:17,510
+times for their videos.
+
+535
+00:23:17,510 --> 00:23:19,400
+And you're like, how
+are you so slow compared
+
+536
+00:23:19,400 --> 00:23:21,540
+to YouTube, for example?
+
+537
+00:23:21,540 --> 00:23:23,580
+And that's, again, because
+of things like this.
+
+538
+00:23:23,580 --> 00:23:25,670
+They're not going to be
+ensuring that they're
+
+539
+00:23:25,670 --> 00:23:28,685
+using these regional edge
+caches to minimize latency
+
+540
+00:23:28,685 --> 00:23:29,810
+and all that sort of stuff.
+
+541
+00:23:29,810 --> 00:23:32,060
+They're like, we're going
+to host this on our website.
+
+542
+00:23:32,060 --> 00:23:35,130
+We have this stored at one data
+center on one server somewhere.
+
+543
+00:23:35,130 --> 00:23:36,620
+And so, therefore,
+it's just going
+
+544
+00:23:36,620 --> 00:23:38,910
+to be slow because
+it's not close to you,
+
+545
+00:23:38,910 --> 00:23:41,060
+and we don't have a ton
+of resources spun up
+
+546
+00:23:41,060 --> 00:23:42,090
+to serve this out.
+
+547
+00:23:42,090 --> 00:23:46,343
+So recognize this, as you're
+starting to browse the internet
+
+548
+00:23:46,343 --> 00:23:48,510
+or just kind of go about
+your daily life, scrolling,
+
+549
+00:23:48,510 --> 00:23:53,240
+Instagram, TikTok, whatever,
+just start to think about what
+
+550
+00:23:53,240 --> 00:23:58,280
+you're experiencing and
+how the kind of back end
+
+551
+00:23:58,280 --> 00:24:01,386
+might be structured leveraging
+some of these resources.
+
+552
+00:24:04,130 --> 00:24:06,740
+So, again, up to
+this point, we've
+
+553
+00:24:06,740 --> 00:24:11,540
+been talking about the
+global infrastructure of AWS
+
+554
+00:24:11,540 --> 00:24:14,150
+and of cloud providers.
+
+555
+00:24:14,150 --> 00:24:17,240
+I do want to, again,
+address some of these points
+
+556
+00:24:17,240 --> 00:24:21,980
+and at least give you some food
+for thought around them related
+
+557
+00:24:21,980 --> 00:24:24,780
+to kind of the
+implications of that.
+
+558
+00:24:24,780 --> 00:24:28,130
+And even if these are
+robust enough statements
+
+559
+00:24:28,130 --> 00:24:31,440
+around saying that this is a
+truly global infrastructure.
+
+560
+00:24:31,440 --> 00:24:33,830
+What I mean by that is
+if you look at this map
+
+561
+00:24:33,830 --> 00:24:38,120
+here on the left, each one of
+these dots, ignore the colors.
+
+562
+00:24:38,120 --> 00:24:40,440
+That's just based off of
+their existing regions,
+
+563
+00:24:40,440 --> 00:24:43,100
+or if at this time, when some
+of these were coming soon.
+
+564
+00:24:43,100 --> 00:24:45,990
+And you can see a pattern, a
+pretty interesting pattern,
+
+565
+00:24:45,990 --> 00:24:48,880
+not too surprising.
+
+566
+00:24:48,880 --> 00:24:51,310
+But these are all of
+the regions that we
+
+567
+00:24:51,310 --> 00:24:55,310
+see for AWS cloud resources.
+
+568
+00:24:55,310 --> 00:25:01,430
+And they tend to stretch
+broadly across the US,
+
+569
+00:25:01,430 --> 00:25:04,850
+a bunch of Western Europe, you
+here through the Middle East,
+
+570
+00:25:04,850 --> 00:25:10,150
+right through Saudi Arabia,
+down across into southeast Asia,
+
+571
+00:25:10,150 --> 00:25:11,510
+and then onto east Asia.
+
+572
+00:25:11,510 --> 00:25:14,920
+And you see some as well
+on the coast in Australia.
+
+573
+00:25:14,920 --> 00:25:17,030
+One dot in South Africa.
+
+574
+00:25:17,030 --> 00:25:20,140
+One dot here would be
+probably like Brazil-ish area.
+
+575
+00:25:20,140 --> 00:25:23,443
+And below, as well, these
+are just the edge locations
+
+576
+00:25:23,443 --> 00:25:24,860
+and like the
+regional edge caches,
+
+577
+00:25:24,860 --> 00:25:26,110
+so kind of those smaller ones.
+
+578
+00:25:26,110 --> 00:25:28,570
+But they still kind of follow
+that same general pattern.
+
+579
+00:25:28,570 --> 00:25:31,640
+And this is what I mean by
+the global infrastructure,
+
+580
+00:25:31,640 --> 00:25:34,180
+is what we see
+actually is that this
+
+581
+00:25:34,180 --> 00:25:37,930
+is a, or these resources are
+typically deployed where you
+
+582
+00:25:37,930 --> 00:25:41,500
+have higher, not only
+population centers,
+
+583
+00:25:41,500 --> 00:25:45,003
+but also spending power towards
+those population centers.
+
+584
+00:25:45,003 --> 00:25:46,670
+Which, again, that's
+no fault of theirs.
+
+585
+00:25:46,670 --> 00:25:48,045
+That's exactly
+what you should do
+
+586
+00:25:48,045 --> 00:25:51,720
+to kind of minimize your costs
+and maximize returns on this.
+
+587
+00:25:51,720 --> 00:25:55,430
+But it does present a
+really interesting effect,
+
+588
+00:25:55,430 --> 00:25:57,470
+where it's going to be hard.
+
+589
+00:25:57,470 --> 00:26:00,330
+If I find myself in
+sub-Saharan Africa,
+
+590
+00:26:00,330 --> 00:26:03,230
+it is going to be very
+difficult to ensure
+
+591
+00:26:03,230 --> 00:26:06,770
+that I can build resources
+in my region that
+
+592
+00:26:06,770 --> 00:26:09,740
+serve my customers as
+effectively as a company that
+
+593
+00:26:09,740 --> 00:26:12,320
+is, again, based in
+northern Virginia.
+
+594
+00:26:12,320 --> 00:26:16,100
+And so this is one worry
+with cloud resources.
+
+595
+00:26:16,100 --> 00:26:19,820
+That it does tend to
+reinforce patterns of kind
+
+596
+00:26:19,820 --> 00:26:22,610
+of wealth concentration.
+
+597
+00:26:22,610 --> 00:26:24,525
+Because, again, it is
+a commercial entity.
+
+598
+00:26:24,525 --> 00:26:25,650
+So they have to make money.
+
+599
+00:26:25,650 --> 00:26:29,640
+They can't just do things out
+of the goodness of their heart.
+
+600
+00:26:29,640 --> 00:26:31,520
+But it does present an issue.
+
+601
+00:26:31,520 --> 00:26:34,020
+This funky map here on the right
+that I'm showing, actually,
+
+602
+00:26:34,020 --> 00:26:36,490
+this is highlighting as
+well another thing that's
+
+603
+00:26:36,490 --> 00:26:37,740
+kind of exaggerated from this.
+
+604
+00:26:37,740 --> 00:26:40,220
+So the outlined
+black map, that's
+
+605
+00:26:40,220 --> 00:26:42,800
+probably most familiar
+to you, that's
+
+606
+00:26:42,800 --> 00:26:44,670
+the mercator
+projection of the map.
+
+607
+00:26:44,670 --> 00:26:46,910
+That's what, this, I'm
+pretty sure is mercator.
+
+608
+00:26:46,910 --> 00:26:49,070
+Don't quote me on
+that, but might
+
+609
+00:26:49,070 --> 00:26:50,930
+be mercator or one of
+the other ones that's
+
+610
+00:26:50,930 --> 00:26:52,170
+slipping my mind right now.
+
+611
+00:26:52,170 --> 00:26:54,410
+But, anyway, one of the
+most common representations
+
+612
+00:26:54,410 --> 00:26:55,790
+of the map we see.
+
+613
+00:26:55,790 --> 00:27:01,400
+And what it tries to
+do is highlight or kind
+
+614
+00:27:01,400 --> 00:27:05,070
+of show the shapes of these
+nations or of these continents.
+
+615
+00:27:05,070 --> 00:27:09,530
+But what it does tend to do is
+it exaggerates at the poles.
+
+616
+00:27:09,530 --> 00:27:11,230
+And so you can see
+here, for example,
+
+617
+00:27:11,230 --> 00:27:15,260
+makes Greenland look very, very
+large, makes Africa look not too
+
+618
+00:27:15,260 --> 00:27:16,910
+much larger than Greenland.
+
+619
+00:27:16,910 --> 00:27:18,440
+What this map on
+the right shows,
+
+620
+00:27:18,440 --> 00:27:20,510
+with kind of this
+green outline, is
+
+621
+00:27:20,510 --> 00:27:25,640
+a map that better represents
+the physical landmass
+
+622
+00:27:25,640 --> 00:27:26,670
+of the countries.
+
+623
+00:27:26,670 --> 00:27:28,430
+So it looks a little bit
+more exaggerated than what
+
+624
+00:27:28,430 --> 00:27:28,920
+we're used to.
+
+625
+00:27:28,920 --> 00:27:29,750
+That's because we're
+trying to project
+
+626
+00:27:29,750 --> 00:27:31,590
+a sphere onto a flat surface.
+
+627
+00:27:31,590 --> 00:27:34,293
+But this more accurately
+represents landmasses.
+
+628
+00:27:34,293 --> 00:27:35,960
+So you can see, when
+you kind of, if you
+
+629
+00:27:35,960 --> 00:27:39,950
+were to overlay the dots
+in your head, from this map
+
+630
+00:27:39,950 --> 00:27:42,590
+onto this green map, you
+would see that they actually
+
+631
+00:27:42,590 --> 00:27:46,580
+fall on even smaller of an
+area of the of the world.
+
+632
+00:27:46,580 --> 00:27:48,500
+So there's a lot of
+the world that isn't
+
+633
+00:27:48,500 --> 00:27:51,475
+served by these resources now.
+
+634
+00:27:51,475 --> 00:27:53,600
+And it does present some
+interesting opportunities,
+
+635
+00:27:53,600 --> 00:27:56,270
+even from a kind of
+monetary perspective,
+
+636
+00:27:56,270 --> 00:27:58,880
+to serve these resources.
+
+637
+00:27:58,880 --> 00:28:00,540
+I'd encourage you
+to check out some
+
+638
+00:28:00,540 --> 00:28:03,010
+of these links, a
+variety of stories.
+
+639
+00:28:03,010 --> 00:28:06,510
+This one about, a couple of
+these are podcasts as well.
+
+640
+00:28:06,510 --> 00:28:09,600
+This one about Detroit residents
+building their own internet
+
+641
+00:28:09,600 --> 00:28:11,280
+service.
+
+642
+00:28:11,280 --> 00:28:14,790
+There are some other interesting
+ones like both Facebook's here
+
+643
+00:28:14,790 --> 00:28:17,980
+and this was an Alphabet
+companies project,
+
+644
+00:28:17,980 --> 00:28:21,300
+but this was to try to
+provide internet resources,
+
+645
+00:28:21,300 --> 00:28:23,160
+or kind of computing
+resources, actually,
+
+646
+00:28:23,160 --> 00:28:28,530
+internet resources specifically,
+to under served regions
+
+647
+00:28:28,530 --> 00:28:29,470
+in the world.
+
+648
+00:28:29,470 --> 00:28:32,160
+And so they've done this
+for a variety of reasons
+
+649
+00:28:32,160 --> 00:28:33,992
+and using a couple of
+different approaches.
+
+650
+00:28:33,992 --> 00:28:35,700
+But it does present
+some interesting kind
+
+651
+00:28:35,700 --> 00:28:39,510
+of ethical questions around
+the global infrastructure
+
+652
+00:28:39,510 --> 00:28:41,910
+of the cloud that we have today.
+
+653
+00:28:41,910 --> 00:28:44,520
+So, again, it's all just
+to say we have access
+
+654
+00:28:44,520 --> 00:28:46,230
+to a lot of resources now.
+
+655
+00:28:46,230 --> 00:28:52,060
+We have, again, with
+the caveat of the globe,
+
+656
+00:28:52,060 --> 00:28:54,050
+but we have basically
+access to, I
+
+657
+00:28:54,050 --> 00:28:57,900
+would say, at least a large
+swath of the world's population
+
+658
+00:28:57,900 --> 00:28:59,230
+via these cloud resources.
+
+659
+00:28:59,230 --> 00:29:02,660
+I can launch a website today
+and push it live in India,
+
+660
+00:29:02,660 --> 00:29:04,970
+and have it available,
+with super low latency,
+
+661
+00:29:04,970 --> 00:29:07,440
+to most southeast
+Asian customers.
+
+662
+00:29:07,440 --> 00:29:10,070
+So there's a lot of
+value and strength
+
+663
+00:29:10,070 --> 00:29:13,070
+in that, and that is one of
+the superpowers of the cloud
+
+664
+00:29:13,070 --> 00:29:15,770
+that we'll have to learn
+how to leverage, if we want
+
+665
+00:29:15,770 --> 00:29:17,660
+to be most effective with this.
+
+666
+00:29:17,660 --> 00:29:20,840
+So I'll leave it at that.
+
+667
+00:29:20,840 --> 00:29:23,700
+Again, like I said, take into
+account some of these questions.
+
+668
+00:29:23,700 --> 00:29:25,940
+Think about this some.
+
+669
+00:29:25,940 --> 00:29:30,390
+Read slash listen to some of
+these articles and information.
+
+670
+00:29:30,390 --> 00:29:31,790
+And then we'll
+catch up next time
+
+671
+00:29:31,790 --> 00:29:34,610
+and start to dive a little bit
+deeper into actually leveraging
+
+672
+00:29:34,610 --> 00:29:35,610
+some of these resources.
+
+673
+00:29:35,610 --> 00:29:38,410
+So thanks and have a good one.

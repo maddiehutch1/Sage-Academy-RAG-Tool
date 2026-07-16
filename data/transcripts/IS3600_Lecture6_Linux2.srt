@@ -1,0 +1,3305 @@
+1
+00:00:00,000 --> 00:00:01,125
+INSTRUCTOR: Hey, everybody.
+
+2
+00:00:01,125 --> 00:00:02,009
+Welcome back.
+
+3
+00:00:02,009 --> 00:00:05,330
+So last time, we talked about
+quite a few basic commands
+
+4
+00:00:05,330 --> 00:00:06,152
+in Linux.
+
+5
+00:00:06,152 --> 00:00:08,610
+And today, I just want to expand
+on that a little bit more.
+
+6
+00:00:08,610 --> 00:00:11,405
+Show you some more advanced
+things, not necessarily
+
+7
+00:00:11,405 --> 00:00:12,780
+that we're going
+to do every day,
+
+8
+00:00:12,780 --> 00:00:15,200
+but you might see me
+type or reference.
+
+9
+00:00:15,200 --> 00:00:18,060
+And I just want you to have
+seen it before in some place.
+
+10
+00:00:18,060 --> 00:00:20,870
+Again, as I said before,
+none of this or am I
+
+11
+00:00:20,870 --> 00:00:24,180
+expecting you to
+memorize or store away.
+
+12
+00:00:24,180 --> 00:00:26,990
+This is stuff that
+is easily searchable.
+
+13
+00:00:26,990 --> 00:00:30,620
+So view this video as an
+explainer, not necessarily
+
+14
+00:00:30,620 --> 00:00:31,920
+a comprehensive guide.
+
+15
+00:00:31,920 --> 00:00:34,730
+Certainly Google things,
+reference things as necessary.
+
+16
+00:00:34,730 --> 00:00:36,480
+This is not something
+I memorize either.
+
+17
+00:00:36,480 --> 00:00:39,150
+So either way, kind of
+jumping back into it.
+
+18
+00:00:39,150 --> 00:00:44,430
+So notice again that I'm
+back in my ec2 instance here.
+
+19
+00:00:44,430 --> 00:00:47,930
+So I'm just reconnected to
+the same one I was on before.
+
+20
+00:00:47,930 --> 00:00:51,090
+You can easily do that if I
+just exit out for a second.
+
+21
+00:00:51,090 --> 00:00:54,350
+You can rerun the command on
+your PowerShell or your terminal
+
+22
+00:00:54,350 --> 00:00:55,140
+window here.
+
+23
+00:00:55,140 --> 00:00:56,490
+Just your ssh.
+
+24
+00:00:56,490 --> 00:01:01,710
+It's still the same pem or the
+same key pair that I'm using.
+
+25
+00:01:01,710 --> 00:01:03,980
+So that SharadsMacbookPro.pem.
+
+26
+00:01:03,980 --> 00:01:07,650
+And I'm still connecting
+to the exact same URL.
+
+27
+00:01:07,650 --> 00:01:10,400
+So you can see
+ubuntu@ec2 whatever,
+
+28
+00:01:10,400 --> 00:01:13,080
+whatever .compute.amazonaws.com.
+
+29
+00:01:13,080 --> 00:01:16,640
+So just rerun that and
+you'll reconnect to it.
+
+30
+00:01:16,640 --> 00:01:19,700
+One thing I will note, though,
+depending on your network,
+
+31
+00:01:19,700 --> 00:01:20,820
+you might run into issues.
+
+32
+00:01:20,820 --> 00:01:22,445
+I just realized this
+today when I tried
+
+33
+00:01:22,445 --> 00:01:23,880
+to reconnect actually to this.
+
+34
+00:01:23,880 --> 00:01:28,430
+If I was on just the standard
+or the guest blue zone network
+
+35
+00:01:28,430 --> 00:01:29,930
+here on campus or sorry.
+
+36
+00:01:29,930 --> 00:01:32,030
+The Guest Now, what it's called.
+
+37
+00:01:32,030 --> 00:01:33,390
+I was not able to do that.
+
+38
+00:01:33,390 --> 00:01:35,700
+And that's likely because
+for security reasons,
+
+39
+00:01:35,700 --> 00:01:39,480
+they block ssh access when
+you're on that network.
+
+40
+00:01:39,480 --> 00:01:41,730
+That's a whole separate
+discussion to get into.
+
+41
+00:01:41,730 --> 00:01:44,550
+But just note that when
+I connected to eduroam,
+
+42
+00:01:44,550 --> 00:01:46,890
+I was perfectly able to
+just reconnect to it.
+
+43
+00:01:46,890 --> 00:01:50,060
+So if you hit an error where it
+says something like Connection
+
+44
+00:01:50,060 --> 00:01:52,940
+Refused, then you might
+be having an issue
+
+45
+00:01:52,940 --> 00:01:54,420
+with your network connection.
+
+46
+00:01:54,420 --> 00:01:57,072
+So I would just try
+a different network.
+
+47
+00:01:57,072 --> 00:01:59,280
+Either way, and actually,
+I also workaround for that.
+
+48
+00:01:59,280 --> 00:02:01,153
+You can always use the
+ec2 instance connect
+
+49
+00:02:01,153 --> 00:02:03,570
+that I showed you before where
+you just click to Connect 2
+
+50
+00:02:03,570 --> 00:02:04,612
+when you're on that page.
+
+51
+00:02:04,612 --> 00:02:08,340
+So workarounds, but that's
+something to keep in mind.
+
+52
+00:02:08,340 --> 00:02:10,840
+So getting back into
+it, if you remember,
+
+53
+00:02:10,840 --> 00:02:13,530
+and I'm going to type
+clear here and hit Enter.
+
+54
+00:02:13,530 --> 00:02:15,070
+Clear just clears out that page.
+
+55
+00:02:15,070 --> 00:02:17,770
+So if you ever have it
+printing out way too far,
+
+56
+00:02:17,770 --> 00:02:21,360
+it's an easy enough thing
+to do to just clear out
+
+57
+00:02:21,360 --> 00:02:24,000
+the history here.
+
+58
+00:02:24,000 --> 00:02:27,510
+So that gets us to where
+we were last time, where
+
+59
+00:02:27,510 --> 00:02:34,060
+we had seen how to edit, copy,
+remove, move files themselves.
+
+60
+00:02:34,060 --> 00:02:38,460
+And so now, I just want to talk
+a little bit about the hierarchy
+
+61
+00:02:38,460 --> 00:02:41,350
+of our Linux environment here.
+
+62
+00:02:41,350 --> 00:02:46,791
+So if you remember, if
+I go cd and just slash,
+
+63
+00:02:46,791 --> 00:02:48,880
+that'll take me to
+the root directory.
+
+64
+00:02:48,880 --> 00:02:50,830
+Remember, the root
+directory looked like this.
+
+65
+00:02:50,830 --> 00:02:54,390
+The root directory is again
+the absolute top most directory
+
+66
+00:02:54,390 --> 00:02:56,670
+in our file system hierarchy.
+
+67
+00:02:56,670 --> 00:02:58,750
+There is nothing above
+the root directory.
+
+68
+00:02:58,750 --> 00:03:00,900
+Everything else is going
+to exist below that.
+
+69
+00:03:00,900 --> 00:03:03,820
+And all of yours will look
+like this or something very,
+
+70
+00:03:03,820 --> 00:03:07,290
+very similar to this by default.
+These are a bunch of things that
+
+71
+00:03:07,290 --> 00:03:12,120
+are pre-installed or set
+up in advance on any kind
+
+72
+00:03:12,120 --> 00:03:14,340
+of fresh Ubuntu install.
+
+73
+00:03:14,340 --> 00:03:17,620
+Windows has an equivalent
+version of this, as does Mac.
+
+74
+00:03:17,620 --> 00:03:21,240
+They all have the
+core ideas though.
+
+75
+00:03:21,240 --> 00:03:24,780
+So the home directory, that is
+the one we use the most often.
+
+76
+00:03:24,780 --> 00:03:26,130
+So cd home.
+
+77
+00:03:26,130 --> 00:03:28,180
+And remember in there
+is our user directory.
+
+78
+00:03:28,180 --> 00:03:32,800
+So cd ubuntu was our actual
+user name for this account.
+
+79
+00:03:32,800 --> 00:03:35,650
+And so this had our
+documents folder in it.
+
+80
+00:03:35,650 --> 00:03:38,340
+But if I go back for a second,
+and notice that I can just
+
+81
+00:03:38,340 --> 00:03:42,700
+directly path myself or give the
+absolute path to this location.
+
+82
+00:03:42,700 --> 00:03:44,620
+If I go back to the
+home for a second,
+
+83
+00:03:44,620 --> 00:03:48,070
+this will always contain all the
+personal directories for users.
+
+84
+00:03:48,070 --> 00:03:52,120
+So if there were multiple
+users on this specific machine,
+
+85
+00:03:52,120 --> 00:03:53,410
+this specific instance.
+
+86
+00:03:53,410 --> 00:03:57,390
+You would have multiple users
+listed here when I run ls.
+
+87
+00:03:57,390 --> 00:03:59,135
+So that's one thing to note.
+
+88
+00:04:02,040 --> 00:04:07,320
+Then if we go back up a level,
+so back to the root directory,
+
+89
+00:04:07,320 --> 00:04:09,270
+we have this etc directory.
+
+90
+00:04:09,270 --> 00:04:12,060
+And that'll just contain all
+sorts of system configuration
+
+91
+00:04:12,060 --> 00:04:12,640
+files.
+
+92
+00:04:12,640 --> 00:04:15,750
+So a bunch of stuff
+that we have no need
+
+93
+00:04:15,750 --> 00:04:17,740
+to dig into or touch right now.
+
+94
+00:04:17,740 --> 00:04:20,040
+It's all installed by
+default. But it's there
+
+95
+00:04:20,040 --> 00:04:21,080
+for us to reference.
+
+96
+00:04:21,080 --> 00:04:23,330
+And again, remember, if I
+want to clear out this page,
+
+97
+00:04:23,330 --> 00:04:25,122
+I'm not looking at a
+bunch of junk on here.
+
+98
+00:04:25,122 --> 00:04:26,730
+I can just type clear.
+
+99
+00:04:26,730 --> 00:04:30,720
+So that's the etc directory.
+
+100
+00:04:30,720 --> 00:04:35,970
+If we go back, then we can
+look at the var directory.
+
+101
+00:04:35,970 --> 00:04:39,857
+And this contains all sorts
+of variable data files.
+
+102
+00:04:39,857 --> 00:04:41,440
+So anything that's
+changing over time.
+
+103
+00:04:41,440 --> 00:04:43,420
+So logs, the spool.
+
+104
+00:04:43,420 --> 00:04:44,620
+This will be stored here.
+
+105
+00:04:44,620 --> 00:04:47,760
+So if you're ever debugging
+things or something says
+
+106
+00:04:47,760 --> 00:04:49,750
+it's dumping to
+your logs directory,
+
+107
+00:04:49,750 --> 00:04:52,420
+it's going to be
+in that var folder.
+
+108
+00:04:52,420 --> 00:04:56,640
+So it's for files that
+change frequently.
+
+109
+00:04:56,640 --> 00:04:59,655
+And we can go back up a level.
+
+110
+00:04:59,655 --> 00:05:01,530
+And remember, again,
+I'm just keep going back
+
+111
+00:05:01,530 --> 00:05:03,070
+to this root directory here.
+
+112
+00:05:03,070 --> 00:05:07,320
+So now, I'm going to go to
+this usr or user directory.
+
+113
+00:05:07,320 --> 00:05:09,330
+This isn't necessarily--
+or this isn't
+
+114
+00:05:09,330 --> 00:05:12,450
+our home directory or our
+user account within our home
+
+115
+00:05:12,450 --> 00:05:13,330
+directory.
+
+116
+00:05:13,330 --> 00:05:15,570
+This folder is specifically
+designed for anything
+
+117
+00:05:15,570 --> 00:05:16,840
+that you might have installed.
+
+118
+00:05:16,840 --> 00:05:20,560
+Any user-installed
+software and/or libraries.
+
+119
+00:05:20,560 --> 00:05:23,340
+So it'll have a bin in
+here, which will typically
+
+120
+00:05:23,340 --> 00:05:25,470
+contain executable programs.
+
+121
+00:05:25,470 --> 00:05:27,095
+And then it'll
+have a lib in here,
+
+122
+00:05:27,095 --> 00:05:29,470
+which will have all your
+libraries that you've installed.
+
+123
+00:05:29,470 --> 00:05:33,057
+So that's all that's in there.
+
+124
+00:05:33,057 --> 00:05:34,890
+Again, none of this
+stuff is really critical
+
+125
+00:05:34,890 --> 00:05:36,223
+to have a deep understanding of.
+
+126
+00:05:36,223 --> 00:05:38,040
+But just know that
+if you're ever
+
+127
+00:05:38,040 --> 00:05:41,340
+looking for system-level files,
+start from the root directory.
+
+128
+00:05:41,340 --> 00:05:42,910
+And you'll probably find it.
+
+129
+00:05:42,910 --> 00:05:45,640
+If you're looking for
+your personal files,
+
+130
+00:05:45,640 --> 00:05:51,060
+then they'll be in your
+actual user account.
+
+131
+00:05:51,060 --> 00:05:53,880
+So another really helpful one.
+
+132
+00:05:53,880 --> 00:05:56,080
+If you need to
+access manual pages.
+
+133
+00:05:56,080 --> 00:05:58,440
+So like you're curious what
+a specific function does
+
+134
+00:05:58,440 --> 00:06:00,830
+or what it can do,
+one way to do that
+
+135
+00:06:00,830 --> 00:06:02,220
+is to just pull up its manual.
+
+136
+00:06:02,220 --> 00:06:04,340
+So for example,
+here now I'm saying
+
+137
+00:06:04,340 --> 00:06:07,760
+the command is man for manual.
+
+138
+00:06:07,760 --> 00:06:09,590
+And the option in
+this case, remember
+
+139
+00:06:09,590 --> 00:06:12,710
+we said it's always
+command, option, arguments,
+
+140
+00:06:12,710 --> 00:06:14,220
+or the argument, in this case.
+
+141
+00:06:14,220 --> 00:06:15,330
+There's no options used.
+
+142
+00:06:15,330 --> 00:06:17,810
+Those are usually the
+hyphen something else.
+
+143
+00:06:17,810 --> 00:06:19,640
+The argument used here is ls.
+
+144
+00:06:19,640 --> 00:06:22,790
+So we're saying we want the
+manual page for the listing
+
+145
+00:06:22,790 --> 00:06:25,560
+function or the listing command.
+
+146
+00:06:25,560 --> 00:06:28,490
+And you can see this just prints
+out all the different options
+
+147
+00:06:28,490 --> 00:06:31,820
+that we have for the ls command.
+
+148
+00:06:31,820 --> 00:06:35,660
+So bunch a bunch of
+information here.
+
+149
+00:06:35,660 --> 00:06:38,280
+Then I can back out of that.
+
+150
+00:06:38,280 --> 00:06:40,790
+Oops.
+
+151
+00:06:40,790 --> 00:06:43,650
+Man, I need to really
+find my commands here.
+
+152
+00:06:43,650 --> 00:06:45,190
+Forget exactly how to back out.
+
+153
+00:06:45,190 --> 00:06:45,690
+Oh.
+
+154
+00:06:45,690 --> 00:06:45,780
+Yeah.
+
+155
+00:06:45,780 --> 00:06:46,360
+That's right.
+
+156
+00:06:46,360 --> 00:06:47,810
+I actually need to q.
+
+157
+00:06:50,510 --> 00:06:52,490
+Let me try this one more time.
+
+158
+00:06:52,490 --> 00:06:53,420
+There we go.
+
+159
+00:06:53,420 --> 00:06:55,548
+I was not clicked
+into the actual page.
+
+160
+00:06:55,548 --> 00:06:57,340
+And I also was covering
+at the bottom here.
+
+161
+00:06:57,340 --> 00:07:01,410
+But if you saw there, if I pull
+that back up at the very bottom
+
+162
+00:07:01,410 --> 00:07:03,880
+here, which, again, was
+blocked by my laptop here,
+
+163
+00:07:03,880 --> 00:07:05,530
+it says press q to quit.
+
+164
+00:07:05,530 --> 00:07:08,610
+So you just tap the q key.
+
+165
+00:07:08,610 --> 00:07:10,990
+Similarly, there's
+also the help function.
+
+166
+00:07:10,990 --> 00:07:14,440
+It's a similar idea
+to the manual page.
+
+167
+00:07:14,440 --> 00:07:19,650
+But this should just provide a
+simpler shorter explanation of--
+
+168
+00:07:19,650 --> 00:07:22,180
+or help for that specific
+function or command.
+
+169
+00:07:22,180 --> 00:07:24,570
+So if you have specific
+questions about a command
+
+170
+00:07:24,570 --> 00:07:26,695
+or you're like, I don't
+know what this command does
+
+171
+00:07:26,695 --> 00:07:29,320
+or what it's for,
+run help on that.
+
+172
+00:07:29,320 --> 00:07:32,920
+So you saw, ls
+hyphen hyphen help.
+
+173
+00:07:32,920 --> 00:07:36,600
+Another useful one to
+check or to use is history.
+
+174
+00:07:36,600 --> 00:07:40,340
+And history just prints out a
+history of all the past commands
+
+175
+00:07:40,340 --> 00:07:40,840
+we've done.
+
+176
+00:07:40,840 --> 00:07:42,548
+So you can see this
+goes all the way back
+
+177
+00:07:42,548 --> 00:07:45,190
+to us running nano and
+all this stuff before.
+
+178
+00:07:45,190 --> 00:07:48,190
+So all of our past commands
+will show up in the history.
+
+179
+00:07:48,190 --> 00:07:52,390
+So if I ever need to
+reference back to it,
+
+180
+00:07:52,390 --> 00:07:54,730
+then I can just look at this.
+
+181
+00:07:54,730 --> 00:07:58,650
+And also, if I ever want
+to rerun something or rerun
+
+182
+00:07:58,650 --> 00:08:02,730
+a past command, I should just
+be able to do exclamation point.
+
+183
+00:08:02,730 --> 00:08:07,800
+And let's say 114, which
+was command 114, which
+
+184
+00:08:07,800 --> 00:08:09,370
+was the ls command.
+
+185
+00:08:09,370 --> 00:08:11,040
+And then it runs ls.
+
+186
+00:08:11,040 --> 00:08:15,270
+So if for example, you had a
+really long command you ran
+
+187
+00:08:15,270 --> 00:08:17,530
+and you didn't want to
+have to retype all of it,
+
+188
+00:08:17,530 --> 00:08:19,830
+then you could just quickly
+access the history that way
+
+189
+00:08:19,830 --> 00:08:22,800
+or access that command
+that way and rerun it.
+
+190
+00:08:22,800 --> 00:08:24,597
+You can also just
+tap the Up arrow key,
+
+191
+00:08:24,597 --> 00:08:26,680
+and that'll just scroll
+back through your history.
+
+192
+00:08:26,680 --> 00:08:27,555
+Same thing with Down.
+
+193
+00:08:27,555 --> 00:08:29,710
+It'll scroll up and down
+through your history.
+
+194
+00:08:29,710 --> 00:08:31,380
+But if you have a
+long history, then you
+
+195
+00:08:31,380 --> 00:08:35,669
+might not want to have
+to hunt that far for it.
+
+196
+00:08:35,669 --> 00:08:41,429
+So that gets us through all
+of the functions in that way,
+
+197
+00:08:41,429 --> 00:08:45,120
+or the functions around file
+manipulation and navigation
+
+198
+00:08:45,120 --> 00:08:49,500
+of the file structure, the
+hierarchy within our Linux
+
+199
+00:08:49,500 --> 00:08:51,180
+environment here.
+
+200
+00:08:51,180 --> 00:08:53,370
+Another tool or command
+that you've seen me run,
+
+201
+00:08:53,370 --> 00:08:55,330
+though, is the chmod.
+
+202
+00:08:55,330 --> 00:08:56,740
+So we ran this way--
+
+203
+00:08:56,740 --> 00:08:58,030
+I think we ran it up here.
+
+204
+00:08:58,030 --> 00:08:58,560
+Oh, no.
+
+205
+00:08:58,560 --> 00:08:59,352
+We ran that-- yeah.
+
+206
+00:08:59,352 --> 00:09:01,650
+We ran this one here,
+where we changed
+
+207
+00:09:01,650 --> 00:09:04,165
+the permissions of this file.
+
+208
+00:09:04,165 --> 00:09:06,540
+And we actually also ran it
+when we were initially trying
+
+209
+00:09:06,540 --> 00:09:09,330
+to ssh into this ec2 instance.
+
+210
+00:09:09,330 --> 00:09:12,160
+But to explain a little
+bit more about that,
+
+211
+00:09:12,160 --> 00:09:14,620
+if we just go into
+our Documents folder,
+
+212
+00:09:14,620 --> 00:09:16,030
+I think we had a file in there.
+
+213
+00:09:16,030 --> 00:09:16,530
+OK.
+
+214
+00:09:16,530 --> 00:09:17,860
+We created a Contracts folder.
+
+215
+00:09:17,860 --> 00:09:18,250
+Yeah.
+
+216
+00:09:18,250 --> 00:09:19,042
+We had a file here.
+
+217
+00:09:19,042 --> 00:09:21,822
+So let's do ls hyphen l.
+
+218
+00:09:21,822 --> 00:09:23,530
+Actually make sure
+I'm not blocking this.
+
+219
+00:09:23,530 --> 00:09:24,030
+Yeah.
+
+220
+00:09:24,030 --> 00:09:28,920
+Ls hyphen l for our test3.txt.
+
+221
+00:09:28,920 --> 00:09:33,450
+And so you can see now we have
+a bunch of different r's, w's.
+
+222
+00:09:33,450 --> 00:09:35,940
+And there could also
+be an x in there.
+
+223
+00:09:35,940 --> 00:09:41,890
+So what these stand for is
+read, write, and execute.
+
+224
+00:09:41,890 --> 00:09:44,610
+It basically states
+whether the user
+
+225
+00:09:44,610 --> 00:09:47,646
+has access to read that file.
+
+226
+00:09:47,646 --> 00:09:50,020
+That's, I believe,
+the first one here.
+
+227
+00:09:50,020 --> 00:09:52,545
+So this will be
+whether the user has--
+
+228
+00:09:52,545 --> 00:09:54,610
+this specific user
+that we're logged into
+
+229
+00:09:54,610 --> 00:09:59,050
+has access to read, write, or
+execute this specific file.
+
+230
+00:09:59,050 --> 00:10:00,570
+This test3.txt.
+
+231
+00:10:00,570 --> 00:10:02,860
+This will reference the group.
+
+232
+00:10:02,860 --> 00:10:05,068
+So any sort of group-level
+permissions that you find.
+
+233
+00:10:05,068 --> 00:10:06,818
+Whether they are read
+or write permissions
+
+234
+00:10:06,818 --> 00:10:08,130
+or execute permissions.
+
+235
+00:10:08,130 --> 00:10:09,850
+And this will be
+for anybody else.
+
+236
+00:10:09,850 --> 00:10:10,740
+So other.
+
+237
+00:10:10,740 --> 00:10:13,660
+Anybody else on this
+machine, that's accessing it
+
+238
+00:10:13,660 --> 00:10:15,300
+but isn't part of this group.
+
+239
+00:10:15,300 --> 00:10:17,710
+So if we want to change
+the permissions of it,
+
+240
+00:10:17,710 --> 00:10:20,010
+we would do it in this way.
+
+241
+00:10:20,010 --> 00:10:24,460
+And so chmod is the
+command we use to do that.
+
+242
+00:10:24,460 --> 00:10:32,190
+So for example, we could run,
+let's see here. chmod 755.
+
+243
+00:10:32,190 --> 00:10:33,960
+And then let's do it
+for our test3.txt.
+
+244
+00:10:37,680 --> 00:10:39,350
+And let's look at our
+permissions again.
+
+245
+00:10:44,210 --> 00:10:47,240
+And now, you can see we
+have more things listed.
+
+246
+00:10:47,240 --> 00:10:51,140
+We have a bunch of
+r's, wx's, and r's.
+
+247
+00:10:51,140 --> 00:10:55,950
+And so what this has done is
+it set the file to be readable,
+
+248
+00:10:55,950 --> 00:10:59,330
+writable, and
+executable by the owner.
+
+249
+00:10:59,330 --> 00:11:04,850
+It set it to be
+readable and executable
+
+250
+00:11:04,850 --> 00:11:08,700
+by others either
+from the group-level,
+
+251
+00:11:08,700 --> 00:11:12,390
+so you see r and x
+and r and x here.
+
+252
+00:11:12,390 --> 00:11:15,050
+So by the group and
+the others also then
+
+253
+00:11:15,050 --> 00:11:18,530
+have permissions for this.
+
+254
+00:11:18,530 --> 00:11:21,155
+You can google all the
+different numeric commands,
+
+255
+00:11:21,155 --> 00:11:23,530
+but to explain like what this
+means because again, we did
+
+256
+00:11:23,530 --> 00:11:27,260
+chmod 755, basically,
+the digits themselves
+
+257
+00:11:27,260 --> 00:11:31,560
+stand for read, write,
+execute, or no permissions.
+
+258
+00:11:31,560 --> 00:11:38,240
+So a 0 is no permissions,
+1 is execute permissions,
+
+259
+00:11:38,240 --> 00:11:42,150
+a 2 is write permissions,
+and a 4 is read permissions.
+
+260
+00:11:42,150 --> 00:11:45,760
+And so what ends up happening is
+the first number in that list,
+
+261
+00:11:45,760 --> 00:11:48,570
+so if we go again here,
+this first number, the 7,
+
+262
+00:11:48,570 --> 00:11:53,190
+is the sum of 4
+plus 2 plus 1, which
+
+263
+00:11:53,190 --> 00:11:54,780
+means that it's
+given read, which
+
+264
+00:11:54,780 --> 00:11:59,070
+was 4 points, 2
+points for write,
+
+265
+00:11:59,070 --> 00:12:01,060
+and then 1 point for execute.
+
+266
+00:12:01,060 --> 00:12:02,830
+So it's a clever
+trick to say, OK.
+
+267
+00:12:02,830 --> 00:12:04,570
+Well, whatever the
+sum of this is,
+
+268
+00:12:04,570 --> 00:12:06,670
+that'll specify the
+level of permissions.
+
+269
+00:12:06,670 --> 00:12:11,680
+So since the first digit is 7,
+that means the owner or sorry.
+
+270
+00:12:11,680 --> 00:12:14,980
+The user has read, write,
+and execute permissions.
+
+271
+00:12:14,980 --> 00:12:18,300
+This second number
+being 5 means that we
+
+272
+00:12:18,300 --> 00:12:25,420
+are summing the 1 and the 4
+because 1 plus 4 gives us 5.
+
+273
+00:12:25,420 --> 00:12:29,820
+That means we have read
+and execute permissions.
+
+274
+00:12:29,820 --> 00:12:31,620
+If we had done-- oh.
+
+275
+00:12:31,620 --> 00:12:33,180
+Let's go back here.
+
+276
+00:12:33,180 --> 00:12:36,700
+If we had made this last digit
+of 4, then that would have said,
+
+277
+00:12:36,700 --> 00:12:40,123
+well, 4 is just
+read permissions.
+
+278
+00:12:40,123 --> 00:12:41,290
+So that would have said, OK.
+
+279
+00:12:41,290 --> 00:12:44,700
+Well, let's run it really
+quick and just show that.
+
+280
+00:12:44,700 --> 00:12:49,600
+So now you can see that the
+owner or the user has read,
+
+281
+00:12:49,600 --> 00:12:53,370
+write, and execute
+permissions, the group has read
+
+282
+00:12:53,370 --> 00:12:54,370
+and execute permissions.
+
+283
+00:12:54,370 --> 00:12:56,100
+So that's the sum of 5.
+
+284
+00:12:56,100 --> 00:12:58,860
+And then the read
+permissions only
+
+285
+00:12:58,860 --> 00:13:01,540
+for others on this computer.
+
+286
+00:13:01,540 --> 00:13:04,360
+So you'll see this run in
+a bunch of different ways.
+
+287
+00:13:04,360 --> 00:13:09,690
+Remember, when we ran this
+just on our ec2 instance or ssh
+
+288
+00:13:09,690 --> 00:13:12,930
+into our ec2 instance, it said,
+you have to run chmod 400,
+
+289
+00:13:12,930 --> 00:13:14,820
+if you're on a Mac, for example.
+
+290
+00:13:14,820 --> 00:13:16,570
+On the windows, we
+didn't have to do this.
+
+291
+00:13:16,570 --> 00:13:18,360
+But if you think
+about what that means,
+
+292
+00:13:18,360 --> 00:13:22,980
+is when we did
+chmod 400, whatever,
+
+293
+00:13:22,980 --> 00:13:27,660
+whatever our pem key
+was, that set read
+
+294
+00:13:27,660 --> 00:13:31,680
+permissions for the user account
+but only read permissions,
+
+295
+00:13:31,680 --> 00:13:33,790
+and then 0 for anybody else.
+
+296
+00:13:33,790 --> 00:13:35,620
+That means nobody
+else on that machine,
+
+297
+00:13:35,620 --> 00:13:37,470
+no matter what user
+account they are on
+
+298
+00:13:37,470 --> 00:13:40,000
+or how they're logged
+into that machine,
+
+299
+00:13:40,000 --> 00:13:44,170
+nobody else has access to read,
+write, or execute for that file.
+
+300
+00:13:44,170 --> 00:13:46,720
+And the user account only
+has read permissions.
+
+301
+00:13:46,720 --> 00:13:49,980
+So that's a way to ensure that
+I don't overwrite things or mess
+
+302
+00:13:49,980 --> 00:13:51,540
+anything up in any way.
+
+303
+00:13:51,540 --> 00:13:55,300
+So permissions can be very,
+very helpful to control, modify,
+
+304
+00:13:55,300 --> 00:13:56,680
+edit, and all that good stuff.
+
+305
+00:13:56,680 --> 00:14:01,520
+And that's exactly how we
+do it just via that chmod.
+
+306
+00:14:01,520 --> 00:14:05,820
+We can also change
+ownership of a file.
+
+307
+00:14:05,820 --> 00:14:07,820
+So if we say--
+because right now,
+
+308
+00:14:07,820 --> 00:14:11,060
+this is saying this user
+has read, write, and execute
+
+309
+00:14:11,060 --> 00:14:11,830
+permissions.
+
+310
+00:14:11,830 --> 00:14:14,210
+If we had another user
+on here, though, they
+
+311
+00:14:14,210 --> 00:14:15,410
+wouldn't be treated--
+
+312
+00:14:15,410 --> 00:14:17,570
+or their user account,
+since let's say,
+
+313
+00:14:17,570 --> 00:14:19,845
+they were part of
+our group, they
+
+314
+00:14:19,845 --> 00:14:21,720
+would only have read
+and execute permissions.
+
+315
+00:14:21,720 --> 00:14:23,845
+But maybe we're saying,
+actually, it's this other--
+
+316
+00:14:23,845 --> 00:14:25,790
+or this other user's file now.
+
+317
+00:14:25,790 --> 00:14:28,020
+We want to transfer the
+ownership over to them.
+
+318
+00:14:28,020 --> 00:14:32,100
+So the way we can do
+that is we can say, OK.
+
+319
+00:14:32,100 --> 00:14:35,310
+Well-- and there's not
+another user on this account.
+
+320
+00:14:35,310 --> 00:14:38,840
+So I'm just going to use the
+root account as an example.
+
+321
+00:14:38,840 --> 00:14:44,420
+But what this says now is I want
+to move the ownership, change
+
+322
+00:14:44,420 --> 00:14:46,310
+ownership chown.
+
+323
+00:14:46,310 --> 00:14:48,770
+I want to change the
+ownership from the root
+
+324
+00:14:48,770 --> 00:14:51,860
+or from who it is right
+now to the root account.
+
+325
+00:14:51,860 --> 00:14:54,920
+So if I rerun this
+ls dash l, you'll
+
+326
+00:14:54,920 --> 00:14:58,380
+see now that instead of it
+showing the owner being Ubuntu,
+
+327
+00:14:58,380 --> 00:15:01,740
+it'll show the owner
+as the root account.
+
+328
+00:15:01,740 --> 00:15:05,052
+Now, Ubuntu user account
+happens to also have
+
+329
+00:15:05,052 --> 00:15:06,010
+root-level permissions.
+
+330
+00:15:06,010 --> 00:15:10,250
+So that's why we didn't have the
+actual permissions themselves
+
+331
+00:15:10,250 --> 00:15:10,750
+change.
+
+332
+00:15:10,750 --> 00:15:14,070
+But notice that the
+ownership has changed.
+
+333
+00:15:14,070 --> 00:15:16,170
+Also, to take a
+step back, you'll
+
+334
+00:15:16,170 --> 00:15:21,390
+see me use this
+sudo command a lot.
+
+335
+00:15:21,390 --> 00:15:23,650
+That's not because
+it's best practice,
+
+336
+00:15:23,650 --> 00:15:26,920
+but because of, oftentimes,
+what we're doing requires this.
+
+337
+00:15:26,920 --> 00:15:29,370
+So it stands for super user do.
+
+338
+00:15:29,370 --> 00:15:31,890
+It basically gives you
+root-level permissions
+
+339
+00:15:31,890 --> 00:15:34,020
+for a specific command.
+
+340
+00:15:34,020 --> 00:15:39,630
+So to back out and
+explain this a little bit,
+
+341
+00:15:39,630 --> 00:15:42,360
+every user on this
+machine-- or think
+
+342
+00:15:42,360 --> 00:15:44,520
+about your personal computer.
+
+343
+00:15:44,520 --> 00:15:46,800
+On your personal computer,
+you have a user account
+
+344
+00:15:46,800 --> 00:15:48,160
+that's maybe your name.
+
+345
+00:15:48,160 --> 00:15:50,280
+You log in to that user
+account, and then you
+
+346
+00:15:50,280 --> 00:15:51,760
+can do whatever you want.
+
+347
+00:15:51,760 --> 00:15:55,320
+But technically speaking, there
+needs to be an admin that has
+
+348
+00:15:55,320 --> 00:15:57,213
+"complete" ownership
+over your computer.
+
+349
+00:15:57,213 --> 00:15:59,380
+They can do anything and
+everything to the computer.
+
+350
+00:15:59,380 --> 00:16:00,780
+And best practice
+would typically
+
+351
+00:16:00,780 --> 00:16:03,930
+have us not use the
+root-level account always
+
+352
+00:16:03,930 --> 00:16:05,880
+for every little
+thing we need to do.
+
+353
+00:16:05,880 --> 00:16:08,740
+So that's why we don't actually
+log in to that admin account.
+
+354
+00:16:08,740 --> 00:16:09,660
+You sometimes see
+this when you go
+
+355
+00:16:09,660 --> 00:16:11,110
+to install some software,
+something like that.
+
+356
+00:16:11,110 --> 00:16:12,960
+It's like you need
+to put in a password
+
+357
+00:16:12,960 --> 00:16:14,627
+because you need
+admin-level permissions
+
+358
+00:16:14,627 --> 00:16:16,220
+or root-level
+permissions to do that.
+
+359
+00:16:16,220 --> 00:16:17,220
+That's what it's saying.
+
+360
+00:16:17,220 --> 00:16:20,640
+Is basically we need to
+take a step back or ensure
+
+361
+00:16:20,640 --> 00:16:22,800
+that this person
+installing the software
+
+362
+00:16:22,800 --> 00:16:24,910
+has complete control
+of this machine.
+
+363
+00:16:24,910 --> 00:16:27,250
+And so you have to do
+it at the root level.
+
+364
+00:16:27,250 --> 00:16:30,540
+And that's what we're doing here
+with this S-U-D-O, sudo command.
+
+365
+00:16:30,540 --> 00:16:31,990
+Is we're saying, OK.
+
+366
+00:16:31,990 --> 00:16:34,560
+For this one command, I'm
+running this change ownership.
+
+367
+00:16:34,560 --> 00:16:36,780
+I want to pretend
+for one command
+
+368
+00:16:36,780 --> 00:16:39,390
+that I am the root user account.
+
+369
+00:16:39,390 --> 00:16:41,178
+If you do this on
+your personal machine,
+
+370
+00:16:41,178 --> 00:16:42,970
+sometimes, if you have,
+for example, a Mac,
+
+371
+00:16:42,970 --> 00:16:45,180
+you can use sudo
+as well, I believe,
+
+372
+00:16:45,180 --> 00:16:48,990
+you'll be prompted to use a
+password or put in a password
+
+373
+00:16:48,990 --> 00:16:50,820
+when you run that,
+because you have
+
+374
+00:16:50,820 --> 00:16:53,190
+to have complete
+ownership of that machine
+
+375
+00:16:53,190 --> 00:16:54,660
+to be able to do that.
+
+376
+00:16:54,660 --> 00:16:57,470
+So that's what the sudo
+command does there.
+
+377
+00:16:57,470 --> 00:16:59,220
+And you'll see this,
+again, a lot of times
+
+378
+00:16:59,220 --> 00:17:01,320
+when we have to do
+things at a lower level
+
+379
+00:17:01,320 --> 00:17:02,900
+or at a root level
+on the machine.
+
+380
+00:17:05,550 --> 00:17:07,329
+A couple other
+helpful tips here.
+
+381
+00:17:07,329 --> 00:17:10,230
+We'll clear it out for a second,
+so I can see it a little easier.
+
+382
+00:17:10,230 --> 00:17:13,500
+We have the ps
+command, which the ps
+
+383
+00:17:13,500 --> 00:17:17,230
+command lists all the processes
+that are running on our system.
+
+384
+00:17:17,230 --> 00:17:20,010
+So, for example, if we run--
+
+385
+00:17:20,010 --> 00:17:21,930
+let's actually go back to our--
+
+386
+00:17:21,930 --> 00:17:22,839
+not that it matters.
+
+387
+00:17:22,839 --> 00:17:26,770
+But if I run this now, I
+can-- and so I'm sorry.
+
+388
+00:17:26,770 --> 00:17:29,370
+I just ran ps aux here.
+
+389
+00:17:29,370 --> 00:17:33,270
+This printed out all of
+the processes running here
+
+390
+00:17:33,270 --> 00:17:34,650
+on my computer.
+
+391
+00:17:34,650 --> 00:17:37,278
+So every little thing
+here that is possibly
+
+392
+00:17:37,278 --> 00:17:39,570
+running in the background--
+you see, most of this stuff
+
+393
+00:17:39,570 --> 00:17:43,320
+is using 0% of the CPU.
+
+394
+00:17:43,320 --> 00:17:45,340
+This is all
+happening right here.
+
+395
+00:17:45,340 --> 00:17:48,070
+Or I can actually access
+all these individual things.
+
+396
+00:17:48,070 --> 00:17:50,940
+This can be very helpful, if
+you run into a situation where
+
+397
+00:17:50,940 --> 00:17:53,250
+something is really
+freezing up a computer
+
+398
+00:17:53,250 --> 00:17:54,960
+or is eating up a
+lot of resources
+
+399
+00:17:54,960 --> 00:17:56,740
+and you want to
+kill the process.
+
+400
+00:17:56,740 --> 00:18:00,850
+Then you want to be able
+to identify the PID here,
+
+401
+00:18:00,850 --> 00:18:02,990
+the process ID, and specify it.
+
+402
+00:18:02,990 --> 00:18:05,490
+And so you can say things like,
+for example, if I wanted to,
+
+403
+00:18:05,490 --> 00:18:08,245
+and I'm not going to
+because I'm not running
+
+404
+00:18:08,245 --> 00:18:09,370
+anything in the background.
+
+405
+00:18:09,370 --> 00:18:12,700
+So let's say, for example, I
+wanted to kill that process,
+
+406
+00:18:12,700 --> 00:18:14,528
+I would run kill,
+and I'm not actually
+
+407
+00:18:14,528 --> 00:18:15,820
+going to put it in real number.
+
+408
+00:18:15,820 --> 00:18:20,100
+But let's say I had a process
+that was number 6,000.
+
+409
+00:18:20,100 --> 00:18:22,620
+Then I would run kill 6000.
+
+410
+00:18:22,620 --> 00:18:24,870
+And that would end that process.
+
+411
+00:18:24,870 --> 00:18:29,490
+It's like forced quitting
+on Macs or like the--
+
+412
+00:18:29,490 --> 00:18:31,630
+I forget the equivalent
+it is on Windows now.
+
+413
+00:18:31,630 --> 00:18:35,020
+But ending the process or
+stopping the process here.
+
+414
+00:18:35,020 --> 00:18:39,420
+So that's one way to directly
+shut down a process that's
+
+415
+00:18:39,420 --> 00:18:41,580
+running in the background.
+
+416
+00:18:41,580 --> 00:18:44,430
+Another way to monitor
+usage is to run top.
+
+417
+00:18:44,430 --> 00:18:46,890
+So again, I'll just
+show here what I did.
+
+418
+00:18:46,890 --> 00:18:49,830
+So T-O-P and then hit Enter.
+
+419
+00:18:49,830 --> 00:18:52,060
+And that'll bring
+up a live view.
+
+420
+00:18:52,060 --> 00:18:53,590
+So this is constantly changing.
+
+421
+00:18:53,590 --> 00:18:56,610
+You'll see this constantly
+change every couple of seconds.
+
+422
+00:18:56,610 --> 00:18:58,273
+And that'll show
+you actively what's
+
+423
+00:18:58,273 --> 00:18:59,440
+being done on your computer.
+
+424
+00:18:59,440 --> 00:19:01,070
+So what's using
+memory, how much memory
+
+425
+00:19:01,070 --> 00:19:04,490
+it's using, what percent of
+the CPU that's being utilized.
+
+426
+00:19:04,490 --> 00:19:06,433
+So top can be a
+really helpful command
+
+427
+00:19:06,433 --> 00:19:07,850
+to just keep an
+eye on things that
+
+428
+00:19:07,850 --> 00:19:09,800
+are running in the background.
+
+429
+00:19:09,800 --> 00:19:13,740
+And then if I want
+to back out of top,
+
+430
+00:19:13,740 --> 00:19:16,970
+then all I need to do
+is hit Control and C.
+
+431
+00:19:16,970 --> 00:19:18,690
+And that'll stop the process.
+
+432
+00:19:18,690 --> 00:19:21,570
+So that's a way I can
+get back to my console.
+
+433
+00:19:21,570 --> 00:19:26,450
+And Control - C is the go-to
+default to shut down something
+
+434
+00:19:26,450 --> 00:19:29,840
+that's actively running or like
+eating up your terminal window
+
+435
+00:19:29,840 --> 00:19:32,580
+here.
+
+436
+00:19:32,580 --> 00:19:34,950
+Another helpful tool here.
+
+437
+00:19:34,950 --> 00:19:37,850
+If you want to see some
+of your network details,
+
+438
+00:19:37,850 --> 00:19:42,176
+like IP address, for example, or
+any other network information,
+
+439
+00:19:42,176 --> 00:19:42,718
+oop.
+
+440
+00:19:42,718 --> 00:19:44,010
+I have config is not installed.
+
+441
+00:19:44,010 --> 00:19:46,623
+Let's do IP address.
+
+442
+00:19:46,623 --> 00:19:47,540
+Is that one installed?
+
+443
+00:19:47,540 --> 00:19:48,040
+Yeah.
+
+444
+00:19:48,040 --> 00:19:49,223
+So IP addr.
+
+445
+00:19:49,223 --> 00:19:51,390
+And we'll show how to install
+something in a second.
+
+446
+00:19:51,390 --> 00:19:52,973
+But I don't want to
+do that right now.
+
+447
+00:19:55,610 --> 00:19:58,440
+And this is your local host.
+
+448
+00:19:58,440 --> 00:20:00,310
+This is showing your
+local IP address.
+
+449
+00:20:00,310 --> 00:20:01,620
+This 172.
+
+450
+00:20:01,620 --> 00:20:03,960
+And then it should
+show your public,
+
+451
+00:20:03,960 --> 00:20:06,547
+or might not show
+your public as well.
+
+452
+00:20:06,547 --> 00:20:08,380
+I have to use if config
+to show your public.
+
+453
+00:20:08,380 --> 00:20:10,672
+But either way, you can see
+your local IP address here.
+
+454
+00:20:10,672 --> 00:20:14,130
+This 172.31 and all
+that good stuff.
+
+455
+00:20:14,130 --> 00:20:15,190
+ubuntu@ip.
+
+456
+00:20:15,190 --> 00:20:17,080
+So you can see it
+matches up here.
+
+457
+00:20:17,080 --> 00:20:19,870
+The .31.29.34.
+
+458
+00:20:19,870 --> 00:20:23,940
+So that's one way to check that.
+
+459
+00:20:23,940 --> 00:20:27,480
+If you ever want to check
+that your network is connected
+
+460
+00:20:27,480 --> 00:20:32,790
+to the internet,
+or just to see how
+
+461
+00:20:32,790 --> 00:20:36,460
+the speeds, the
+ping to other sites,
+
+462
+00:20:36,460 --> 00:20:40,840
+you can run ping and then put in
+a website name like google.com.
+
+463
+00:20:40,840 --> 00:20:44,823
+And that'll tell you how long
+it takes to ping a website.
+
+464
+00:20:44,823 --> 00:20:46,990
+If this didn't return
+anything or returned an error,
+
+465
+00:20:46,990 --> 00:20:49,350
+then you might know you have an
+internet or a network connection
+
+466
+00:20:49,350 --> 00:20:49,850
+issue.
+
+467
+00:20:49,850 --> 00:20:51,870
+So it's just sending
+little packets over there
+
+468
+00:20:51,870 --> 00:20:53,328
+to see, basically,
+how long does it
+
+469
+00:20:53,328 --> 00:20:55,105
+take to communicate
+to google.com?
+
+470
+00:20:55,105 --> 00:20:56,730
+Right now, we're at
+pretty consistently
+
+471
+00:20:56,730 --> 00:20:58,810
+just short of 6 milliseconds.
+
+472
+00:20:58,810 --> 00:21:02,130
+So again, a helpful tool
+to quickly easily access
+
+473
+00:21:02,130 --> 00:21:03,036
+that information.
+
+474
+00:21:06,300 --> 00:21:08,820
+From there, we saw
+just an example
+
+475
+00:21:08,820 --> 00:21:12,480
+above where I had a
+library or a function
+
+476
+00:21:12,480 --> 00:21:15,540
+that I-- command that I wanted
+to run that was installed.
+
+477
+00:21:15,540 --> 00:21:17,250
+Another example
+like htop is-- oh.
+
+478
+00:21:17,250 --> 00:21:18,460
+Actually, htop is installed.
+
+479
+00:21:18,460 --> 00:21:19,930
+So let's do it with ifconfig.
+
+480
+00:21:19,930 --> 00:21:25,560
+So if I want to install a
+package or a function, command,
+
+481
+00:21:25,560 --> 00:21:29,310
+whatever it is, first off, I
+need to know what it's called.
+
+482
+00:21:29,310 --> 00:21:32,310
+In this case, if you remember,
+when we ran ifconfig,
+
+483
+00:21:32,310 --> 00:21:34,360
+it gave us a hint and said, hey.
+
+484
+00:21:34,360 --> 00:21:35,980
+I don't think this is installed.
+
+485
+00:21:35,980 --> 00:21:38,670
+So you should
+probably install it.
+
+486
+00:21:38,670 --> 00:21:41,070
+Way to do that,
+relatively simple.
+
+487
+00:21:41,070 --> 00:21:43,883
+So we're going to
+use the sudo again.
+
+488
+00:21:43,883 --> 00:21:45,550
+The first thing I'm
+going to do, though,
+
+489
+00:21:45,550 --> 00:21:49,500
+is run apt hyphen
+get and then update.
+
+490
+00:21:49,500 --> 00:21:52,830
+And what that does is it's
+updating in the background
+
+491
+00:21:52,830 --> 00:21:57,690
+all of the directories
+that have listings
+
+492
+00:21:57,690 --> 00:22:01,450
+of packages and libraries
+that I can install.
+
+493
+00:22:01,450 --> 00:22:03,242
+You don't have to
+run this necessarily,
+
+494
+00:22:03,242 --> 00:22:04,200
+but it's good practice.
+
+495
+00:22:04,200 --> 00:22:06,075
+And you'll see me do
+this a lot, to say, hey.
+
+496
+00:22:06,075 --> 00:22:07,980
+Well, I want to
+install this library.
+
+497
+00:22:07,980 --> 00:22:10,500
+Rather than just
+trying to install it
+
+498
+00:22:10,500 --> 00:22:13,270
+and grabbing maybe an
+older version of it,
+
+499
+00:22:13,270 --> 00:22:17,340
+let me make sure I have the most
+recent directory stored here
+
+500
+00:22:17,340 --> 00:22:18,270
+on my computer.
+
+501
+00:22:18,270 --> 00:22:22,800
+And then I can say, OK.
+sudo apt-get ifconfig.
+
+502
+00:22:25,880 --> 00:22:28,630
+Is it the wrong one?
+
+503
+00:22:28,630 --> 00:22:29,130
+Oh.
+
+504
+00:22:29,130 --> 00:22:30,422
+We need to do sudo apt install.
+
+505
+00:22:30,422 --> 00:22:32,760
+Sorry. sudo apt install.
+
+506
+00:22:32,760 --> 00:22:35,460
+net-tools first.
+
+507
+00:22:35,460 --> 00:22:36,520
+So sorry. net-tools.
+
+508
+00:22:36,520 --> 00:22:37,210
+You can see it up here.
+
+509
+00:22:37,210 --> 00:22:38,320
+It prompted me to do this.
+
+510
+00:22:38,320 --> 00:22:40,290
+It's that it's net
+tools is the library.
+
+511
+00:22:40,290 --> 00:22:43,080
+So apt install or
+apt hyphen get.
+
+512
+00:22:43,080 --> 00:22:44,230
+Either one works.
+
+513
+00:22:44,230 --> 00:22:47,500
+They both will
+install libraries.
+
+514
+00:22:47,500 --> 00:22:50,460
+So sudo apt install net-tools.
+
+515
+00:22:50,460 --> 00:22:53,080
+And that installed ifconfig.
+
+516
+00:22:53,080 --> 00:22:57,690
+And now I can run ifconfig to
+see all that good information.
+
+517
+00:22:57,690 --> 00:23:03,560
+Again, as I said before, you are
+not expected to know all this.
+
+518
+00:23:03,560 --> 00:23:05,560
+I am referencing notes
+here as I go through this
+
+519
+00:23:05,560 --> 00:23:06,730
+because I don't remember
+all these things
+
+520
+00:23:06,730 --> 00:23:07,688
+off the top of my head.
+
+521
+00:23:07,688 --> 00:23:09,470
+So yeah.
+
+522
+00:23:09,470 --> 00:23:11,800
+Definitely look back at that
+and look back at the notes
+
+523
+00:23:11,800 --> 00:23:13,170
+as we're going through that.
+
+524
+00:23:15,850 --> 00:23:20,210
+So the final thing I want to
+talk about is shell scripts.
+
+525
+00:23:20,210 --> 00:23:23,410
+So let's clear out
+our window again.
+
+526
+00:23:23,410 --> 00:23:26,650
+So a shell script, it's
+a really simple idea.
+
+527
+00:23:26,650 --> 00:23:28,760
+You've actually-- if you've
+done any programming,
+
+528
+00:23:28,760 --> 00:23:30,760
+you've interacted with
+something like this.
+
+529
+00:23:30,760 --> 00:23:33,970
+Where I want to write a file
+down that has a set of commands.
+
+530
+00:23:33,970 --> 00:23:36,430
+And then I want to be able to
+execute those commands just
+
+531
+00:23:36,430 --> 00:23:37,760
+by running the file.
+
+532
+00:23:37,760 --> 00:23:39,770
+That's exactly what
+a Python program is.
+
+533
+00:23:39,770 --> 00:23:43,910
+I write some lines in there
+that have a specific format.
+
+534
+00:23:43,910 --> 00:23:48,380
+That specific format is readable
+by the Python interpreter.
+
+535
+00:23:48,380 --> 00:23:49,880
+The Python interpreter says, OK.
+
+536
+00:23:49,880 --> 00:23:52,870
+Well, when I say,
+this, this, this, that
+
+537
+00:23:52,870 --> 00:23:54,190
+must mean to execute this.
+
+538
+00:23:54,190 --> 00:23:57,080
+So we write def to
+define a function.
+
+539
+00:23:57,080 --> 00:24:00,310
+And then we use a special syntax
+or how we write the function.
+
+540
+00:24:00,310 --> 00:24:02,435
+And then we make sure
+we tab everything in.
+
+541
+00:24:02,435 --> 00:24:04,310
+And then we write our
+function, we return it.
+
+542
+00:24:04,310 --> 00:24:07,090
+And then if I run that code,
+where I execute the function
+
+543
+00:24:07,090 --> 00:24:09,730
+there, then I actually go
+through this line by line
+
+544
+00:24:09,730 --> 00:24:12,040
+pretty much and
+execute the steps.
+
+545
+00:24:12,040 --> 00:24:15,163
+We can do the same thing really
+simply on the command line.
+
+546
+00:24:15,163 --> 00:24:16,580
+We can do that
+with Python scripts
+
+547
+00:24:16,580 --> 00:24:18,620
+right here on the command line.
+
+548
+00:24:18,620 --> 00:24:22,020
+But also a common thing to
+do is to write shell scripts.
+
+549
+00:24:22,020 --> 00:24:24,840
+So shell scripts are, again,
+just a sequence of commands.
+
+550
+00:24:24,840 --> 00:24:26,720
+They are listed out in a file.
+
+551
+00:24:26,720 --> 00:24:29,190
+And then you execute
+them all together.
+
+552
+00:24:29,190 --> 00:24:31,680
+So, for example, you might
+have something that says, hey.
+
+553
+00:24:31,680 --> 00:24:33,725
+Every day I want
+you to go in there,
+
+554
+00:24:33,725 --> 00:24:36,530
+or I want you to go through
+and clean out any log
+
+555
+00:24:36,530 --> 00:24:38,010
+files that have been created.
+
+556
+00:24:38,010 --> 00:24:40,790
+I can write that as a shell
+script and use something called
+
+557
+00:24:40,790 --> 00:24:43,340
+cron, which you'll get some
+experience with in this class
+
+558
+00:24:43,340 --> 00:24:45,320
+to say, hey.
+
+559
+00:24:45,320 --> 00:24:49,590
+Every day, run this shell script
+that says, open the log files,
+
+560
+00:24:49,590 --> 00:24:51,968
+remove all the files,
+or open this logs folder
+
+561
+00:24:51,968 --> 00:24:53,760
+and remove all the
+files that are in there.
+
+562
+00:24:53,760 --> 00:24:54,380
+Delete them.
+
+563
+00:24:54,380 --> 00:24:57,350
+So that way, I cannot overrun
+my memory or my storage
+
+564
+00:24:57,350 --> 00:24:58,760
+or something like that.
+
+565
+00:24:58,760 --> 00:25:01,760
+So to do that, we just write a--
+
+566
+00:25:01,760 --> 00:25:04,470
+we can write a script
+using our nano.
+
+567
+00:25:04,470 --> 00:25:07,010
+So nano was the text editor
+or one of the text editors
+
+568
+00:25:07,010 --> 00:25:09,140
+we introduced in
+the previous videos.
+
+569
+00:25:09,140 --> 00:25:14,250
+So let's say-- let's
+call this testscript.sh.
+
+570
+00:25:14,250 --> 00:25:17,690
+So just nano
+testscript.sh or whatever
+
+571
+00:25:17,690 --> 00:25:20,060
+you want to call the file.
+
+572
+00:25:20,060 --> 00:25:23,600
+And then it's going to open it
+up in our text editor window
+
+573
+00:25:23,600 --> 00:25:24,380
+here.
+
+574
+00:25:24,380 --> 00:25:27,120
+And then in here,
+we're going to write.
+
+575
+00:25:27,120 --> 00:25:30,530
+We're going to do the little
+hash mark and then exclamation
+
+576
+00:25:30,530 --> 00:25:31,970
+point /bin/bash.
+
+577
+00:25:36,500 --> 00:25:38,790
+What this is, this says, hey.
+
+578
+00:25:38,790 --> 00:25:39,990
+This is a bash script.
+
+579
+00:25:39,990 --> 00:25:41,900
+So you're going to use
+the bash interpreter
+
+580
+00:25:41,900 --> 00:25:43,860
+to execute those commands.
+
+581
+00:25:43,860 --> 00:25:47,330
+I could have, again, similarly
+written a Python function,
+
+582
+00:25:47,330 --> 00:25:48,540
+where instead I said, hey.
+
+583
+00:25:48,540 --> 00:25:50,730
+Let's say, I had Python
+installed on my computer.
+
+584
+00:25:50,730 --> 00:25:51,780
+I could have said, OK.
+
+585
+00:25:51,780 --> 00:25:53,610
+Well, Python is installed here.
+
+586
+00:25:53,610 --> 00:25:56,990
+So run the commands
+that are going
+
+587
+00:25:56,990 --> 00:25:59,035
+to come below using
+the Python interpreter.
+
+588
+00:25:59,035 --> 00:26:01,410
+And then it's going to use
+Python to execute that script.
+
+589
+00:26:01,410 --> 00:26:03,020
+So that's exactly
+what we're saying.
+
+590
+00:26:03,020 --> 00:26:06,920
+Is we're just saying we have
+some sort of interpreter
+
+591
+00:26:06,920 --> 00:26:08,220
+that needs to execute those.
+
+592
+00:26:08,220 --> 00:26:09,762
+And this one
+specifically we're going
+
+593
+00:26:09,762 --> 00:26:12,890
+to use bash, which is
+super common on pretty
+
+594
+00:26:12,890 --> 00:26:15,950
+much any Unix-based operating
+system or Linux-based operating
+
+595
+00:26:15,950 --> 00:26:16,910
+system.
+
+596
+00:26:16,910 --> 00:26:20,240
+And we're going to have this
+file just do two things.
+
+597
+00:26:20,240 --> 00:26:25,090
+First, we're going to have
+it print out Hello, world.
+
+598
+00:26:25,090 --> 00:26:27,800
+And then after that, we
+want to print out the date.
+
+599
+00:26:27,800 --> 00:26:31,880
+This is just special syntax
+for our bash scripts here.
+
+600
+00:26:31,880 --> 00:26:34,168
+So that's why we can
+just call it that.
+
+601
+00:26:34,168 --> 00:26:35,710
+If it was Python,
+we'd obviously have
+
+602
+00:26:35,710 --> 00:26:37,360
+to write that in a
+more Pythonic way
+
+603
+00:26:37,360 --> 00:26:39,730
+or use Python
+functions to do that.
+
+604
+00:26:39,730 --> 00:26:41,420
+So now, we can exit this.
+
+605
+00:26:41,420 --> 00:26:44,080
+Remember to exit, we
+just do Control and X,
+
+606
+00:26:44,080 --> 00:26:46,210
+and then we say yes to save.
+
+607
+00:26:46,210 --> 00:26:47,450
+And then we say, yep.
+
+608
+00:26:47,450 --> 00:26:48,860
+That file name is right.
+
+609
+00:26:48,860 --> 00:26:52,480
+So control - X. y
+for yes, and then
+
+610
+00:26:52,480 --> 00:26:54,970
+Enter to accept that file name.
+
+611
+00:26:54,970 --> 00:26:59,980
+So if we look in here now,
+we have this testscript.sh.
+
+612
+00:26:59,980 --> 00:27:02,800
+And then we just need to
+do one extra step here
+
+613
+00:27:02,800 --> 00:27:04,220
+to actually execute it.
+
+614
+00:27:04,220 --> 00:27:06,393
+We're going to use
+our chmod again.
+
+615
+00:27:06,393 --> 00:27:08,560
+And then we're going to use
+the special option here,
+
+616
+00:27:08,560 --> 00:27:13,300
+plus x, that makes
+our script executable.
+
+617
+00:27:13,300 --> 00:27:17,870
+If we don't do this, then it's
+not-- you can see here it just--
+
+618
+00:27:17,870 --> 00:27:19,680
+or it'll just be
+viewed as a text file.
+
+619
+00:27:19,680 --> 00:27:21,295
+It's not viewed as
+an executable file.
+
+620
+00:27:21,295 --> 00:27:22,920
+So we just have to
+tell it to say, hey.
+
+621
+00:27:22,920 --> 00:27:23,790
+This is executable.
+
+622
+00:27:23,790 --> 00:27:25,400
+You can run this as a program.
+
+623
+00:27:25,400 --> 00:27:28,340
+Now, if I do ls, you'll
+see it highlights it green.
+
+624
+00:27:28,340 --> 00:27:30,870
+That's just a special way
+of it specifying, hey.
+
+625
+00:27:30,870 --> 00:27:34,220
+This is some sort
+of executable file.
+
+626
+00:27:34,220 --> 00:27:37,020
+And then finally,
+to run that script,
+
+627
+00:27:37,020 --> 00:27:42,230
+you do dot slash and then
+the script name itself.
+
+628
+00:27:42,230 --> 00:27:44,990
+Dot because we're saying it's
+right here in this folder.
+
+629
+00:27:44,990 --> 00:27:47,810
+And then we're just
+saying it's testscript.sh.
+
+630
+00:27:47,810 --> 00:27:49,740
+And you can see here now.
+
+631
+00:27:49,740 --> 00:27:50,990
+Hello, world.
+
+632
+00:27:50,990 --> 00:27:52,530
+And the date when I ran this.
+
+633
+00:27:52,530 --> 00:27:54,030
+So depending on
+when you see this,
+
+634
+00:27:54,030 --> 00:27:55,655
+maybe this is close
+to the date or not.
+
+635
+00:27:55,655 --> 00:28:01,220
+But either way, that is how
+we can run a shell script.
+
+636
+00:28:01,220 --> 00:28:04,580
+This is a really,
+really, really powerful
+
+637
+00:28:04,580 --> 00:28:08,450
+step to be able to write these
+scripts like this that allow us
+
+638
+00:28:08,450 --> 00:28:10,940
+to go in, and I'll just
+cat this test script,
+
+639
+00:28:10,940 --> 00:28:14,015
+so you can see all
+the text again.
+
+640
+00:28:14,015 --> 00:28:16,430
+Where I can go in and
+write a set of commands.
+
+641
+00:28:16,430 --> 00:28:19,123
+And all I need to do
+now is have my commands
+
+642
+00:28:19,123 --> 00:28:20,790
+or know what the
+appropriate command is,
+
+643
+00:28:20,790 --> 00:28:22,520
+and then I can execute
+those tasks just
+
+644
+00:28:22,520 --> 00:28:24,440
+by writing it as a function.
+
+645
+00:28:24,440 --> 00:28:28,370
+As I mentioned before, anything
+I can do in the AWS console,
+
+646
+00:28:28,370 --> 00:28:30,180
+I can do on the command line.
+
+647
+00:28:30,180 --> 00:28:32,010
+There is an AWS
+command line interface.
+
+648
+00:28:32,010 --> 00:28:35,840
+So I can write scripts that
+execute all sorts of AWS console
+
+649
+00:28:35,840 --> 00:28:38,550
+functions just by running
+the scripts themselves.
+
+650
+00:28:38,550 --> 00:28:40,610
+So let's say, again,
+every morning I
+
+651
+00:28:40,610 --> 00:28:43,730
+want to launch my
+company's EC2 instances.
+
+652
+00:28:43,730 --> 00:28:46,083
+And let's say we have
+100 EC2 instances.
+
+653
+00:28:46,083 --> 00:28:47,750
+Rather than having
+to go in and manually
+
+654
+00:28:47,750 --> 00:28:49,670
+click into each
+of those instances
+
+655
+00:28:49,670 --> 00:28:52,530
+and hit Launch Instance, Launch
+Instance, Launch Instance,
+
+656
+00:28:52,530 --> 00:28:54,510
+I can write a bash script
+that just says, OK.
+
+657
+00:28:54,510 --> 00:28:59,090
+For this set of resources,
+I want you to launch them.
+
+658
+00:28:59,090 --> 00:29:01,588
+And I'm going to set it
+up using a scheduled job.
+
+659
+00:29:01,588 --> 00:29:03,380
+And you're going to do
+that using something
+
+660
+00:29:03,380 --> 00:29:06,350
+called cron, which we're not
+going to get into cron right
+
+661
+00:29:06,350 --> 00:29:08,760
+now, but you're going to get
+to explore it in a homework.
+
+662
+00:29:08,760 --> 00:29:11,313
+And cron is basically
+a tool for--
+
+663
+00:29:11,313 --> 00:29:13,230
+and you can see, as the
+description says here,
+
+664
+00:29:13,230 --> 00:29:17,650
+starting tasks automatically.
+
+665
+00:29:17,650 --> 00:29:21,530
+So I can execute things
+based off of time schedules.
+
+666
+00:29:21,530 --> 00:29:23,890
+So that'll be a
+task for you to dig
+
+667
+00:29:23,890 --> 00:29:25,460
+into some more on your own time.
+
+668
+00:29:25,460 --> 00:29:26,990
+But for now, we'll
+leave it at that.
+
+669
+00:29:26,990 --> 00:29:33,010
+So that is a whirlwind tour
+of the Linux command line.
+
+670
+00:29:33,010 --> 00:29:34,642
+I know it's a lot.
+
+671
+00:29:34,642 --> 00:29:36,850
+It's an entirely new way to
+interact with a computer,
+
+672
+00:29:36,850 --> 00:29:38,980
+if you've never done it before.
+
+673
+00:29:38,980 --> 00:29:42,700
+I have been interacting
+with Linux command lines
+
+674
+00:29:42,700 --> 00:29:46,610
+now probably 10 plus
+years, almost 15 years.
+
+675
+00:29:46,610 --> 00:29:50,870
+And it still is a new
+beast to me every time.
+
+676
+00:29:50,870 --> 00:29:53,900
+But you'll start to learn a
+handful of tools and techniques
+
+677
+00:29:53,900 --> 00:29:54,400
+here.
+
+678
+00:29:54,400 --> 00:29:59,620
+And it really creates a level
+of efficiency in your workflow
+
+679
+00:29:59,620 --> 00:30:02,620
+that you can't get by using
+a graphical interface.
+
+680
+00:30:02,620 --> 00:30:05,060
+Again, if every time I
+want to access a computer,
+
+681
+00:30:05,060 --> 00:30:07,510
+I have to launch a window or
+I have to connect a monitor
+
+682
+00:30:07,510 --> 00:30:08,360
+and do this.
+
+683
+00:30:08,360 --> 00:30:09,740
+It's just not necessary.
+
+684
+00:30:09,740 --> 00:30:13,240
+Oftentimes, all I want to
+do is just run a script
+
+685
+00:30:13,240 --> 00:30:16,530
+or execute a quick command or
+change something on my computer.
+
+686
+00:30:16,530 --> 00:30:19,790
+Or maybe the interface
+is freaking out
+
+687
+00:30:19,790 --> 00:30:20,640
+for whatever reason.
+
+688
+00:30:20,640 --> 00:30:23,960
+So this is a nice, easy,
+clean, lightweight way
+
+689
+00:30:23,960 --> 00:30:25,130
+to interact with computers.
+
+690
+00:30:25,130 --> 00:30:26,713
+And will be an invaluable tool.
+
+691
+00:30:26,713 --> 00:30:28,130
+Again, this is one
+of those things
+
+692
+00:30:28,130 --> 00:30:31,940
+that employers, former
+students always come back to us
+
+693
+00:30:31,940 --> 00:30:32,658
+and tell us, hey.
+
+694
+00:30:32,658 --> 00:30:34,200
+I wish students knew
+more about this.
+
+695
+00:30:34,200 --> 00:30:36,030
+I wish students knew
+more about this.
+
+696
+00:30:36,030 --> 00:30:38,090
+So this is my way
+to say like, we're
+
+697
+00:30:38,090 --> 00:30:39,982
+going to get a brief
+introduction to it now.
+
+698
+00:30:39,982 --> 00:30:41,940
+You're going to use it
+throughout the semester.
+
+699
+00:30:41,940 --> 00:30:44,510
+And then hopefully, you'll
+start to gain some confidence
+
+700
+00:30:44,510 --> 00:30:46,460
+and can explore it on
+your own time as well.
+
+701
+00:30:46,460 --> 00:30:47,790
+So leave it at that.
+
+702
+00:30:47,790 --> 00:30:49,410
+And then we'll talk next time.
+
+703
+00:30:49,410 --> 00:30:51,660
+Dig into some more things
+here in the cloud computing.
+
+704
+00:30:51,660 --> 00:30:53,410
+Thank you.

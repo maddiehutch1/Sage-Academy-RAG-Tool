@@ -1,0 +1,4254 @@
+1
+00:00:00,000 --> 00:00:01,260
+SHARAD JONES: Hey, everyone.
+
+2
+00:00:01,260 --> 00:00:02,130
+Welcome back.
+
+3
+00:00:02,130 --> 00:00:06,110
+So in today's video, we're going
+to be talking about lambda.
+
+4
+00:00:06,110 --> 00:00:07,900
+So in the last video--
+
+5
+00:00:07,900 --> 00:00:09,150
+I'm sorry, I'm sliding myself.
+
+6
+00:00:09,150 --> 00:00:10,700
+I'll just stop moving.
+
+7
+00:00:10,700 --> 00:00:13,520
+In the last video, we talked
+about machine learning and all
+
+8
+00:00:13,520 --> 00:00:17,300
+the ways that we may want
+to or need to leverage cloud
+
+9
+00:00:17,300 --> 00:00:18,930
+computing for machine learning.
+
+10
+00:00:18,930 --> 00:00:22,880
+And I mentioned lambda as kind
+of an example of something I use
+
+11
+00:00:22,880 --> 00:00:26,130
+personally for collecting data.
+
+12
+00:00:26,130 --> 00:00:28,370
+And I want to walk
+through now what
+
+13
+00:00:28,370 --> 00:00:30,009
+lambda is in a bit more detail.
+
+14
+00:00:30,009 --> 00:00:32,009
+And again, I gave kind
+of a high-level overview,
+
+15
+00:00:32,009 --> 00:00:33,920
+but I want to show
+you this in detail
+
+16
+00:00:33,920 --> 00:00:39,050
+just so you get a sense for how
+versatile of a tool this is.
+
+17
+00:00:39,050 --> 00:00:42,870
+As far as commonly used AWS
+tools are for me at least,
+
+18
+00:00:42,870 --> 00:00:45,620
+I put obviously S3, EC2
+up there towards the top
+
+19
+00:00:45,620 --> 00:00:50,370
+as far as straightforward
+useful resources in the Cloud.
+
+20
+00:00:50,370 --> 00:00:53,385
+Lambda is up there as
+the third tier for me.
+
+21
+00:00:53,385 --> 00:00:55,010
+That's the next thing
+that I'd probably
+
+22
+00:00:55,010 --> 00:00:56,960
+say if I needed
+something or if I
+
+23
+00:00:56,960 --> 00:00:58,460
+was going to leverage
+the Cloud, I'd
+
+24
+00:00:58,460 --> 00:01:01,530
+probably end up using Lambda
+for something before, honestly,
+
+25
+00:01:01,530 --> 00:01:03,530
+a lot of the other tools
+we've even seen so far.
+
+26
+00:01:03,530 --> 00:01:06,030
+And again, that's obviously
+given my background and the type
+
+27
+00:01:06,030 --> 00:01:07,790
+of projects I'm
+working on, but it's
+
+28
+00:01:07,790 --> 00:01:11,030
+such a versatile and useful
+tool that I want you to see it.
+
+29
+00:01:11,030 --> 00:01:13,260
+So let's just dive
+into it right away
+
+30
+00:01:13,260 --> 00:01:17,130
+so we can get some context
+for why it is so valuable.
+
+31
+00:01:17,130 --> 00:01:20,190
+So at a high level,
+as I mentioned before,
+
+32
+00:01:20,190 --> 00:01:22,980
+Lambda is a serverless
+compute service.
+
+33
+00:01:22,980 --> 00:01:27,350
+So what that means is that I am
+not spinning up EC2 instances
+
+34
+00:01:27,350 --> 00:01:28,230
+explicitly.
+
+35
+00:01:28,230 --> 00:01:32,090
+I'm not actually determining
+the amount of resources
+
+36
+00:01:32,090 --> 00:01:34,020
+I need to do a specific task.
+
+37
+00:01:34,020 --> 00:01:37,190
+I basically just define my code.
+
+38
+00:01:37,190 --> 00:01:39,930
+I come up with the code
+for my task at hand.
+
+39
+00:01:39,930 --> 00:01:41,970
+I upload it to
+the Lambda service
+
+40
+00:01:41,970 --> 00:01:43,800
+or basically I create
+a Lambda function,
+
+41
+00:01:43,800 --> 00:01:46,080
+which houses my code in it.
+
+42
+00:01:46,080 --> 00:01:49,310
+And then either
+based off of events
+
+43
+00:01:49,310 --> 00:01:51,690
+or I can run on a
+schedule every night,
+
+44
+00:01:51,690 --> 00:01:54,980
+every day, whatever it is,
+I will kick off this lambda
+
+45
+00:01:54,980 --> 00:01:57,240
+function and then
+it'll just run it.
+
+46
+00:01:57,240 --> 00:01:59,300
+So to me as a user,
+I actually don't even
+
+47
+00:01:59,300 --> 00:02:02,110
+have to think about this
+as a Cloud infrastructure
+
+48
+00:02:02,110 --> 00:02:02,860
+that's being used.
+
+49
+00:02:02,860 --> 00:02:03,985
+How much time is it taking?
+
+50
+00:02:03,985 --> 00:02:05,470
+I don't worry about that at all.
+
+51
+00:02:05,470 --> 00:02:07,930
+All I think about is
+I want this task done.
+
+52
+00:02:07,930 --> 00:02:10,000
+And I don't want to
+do it on my computer.
+
+53
+00:02:10,000 --> 00:02:11,710
+Therefore, I write
+the Lambda function,
+
+54
+00:02:11,710 --> 00:02:14,880
+deploy it there, and it
+runs at the pace that I need
+
+55
+00:02:14,880 --> 00:02:18,540
+or on the schedule that I need
+or for the events that I need.
+
+56
+00:02:18,540 --> 00:02:22,020
+That level of
+hands off is really
+
+57
+00:02:22,020 --> 00:02:25,107
+what again can start to make
+the Cloud such a useful tool.
+
+58
+00:02:25,107 --> 00:02:27,190
+The more that we have to
+get in the weeds with it,
+
+59
+00:02:27,190 --> 00:02:28,847
+the less valuable
+it starts to become,
+
+60
+00:02:28,847 --> 00:02:31,180
+the more headaches we have
+debugging and all that stuff,
+
+61
+00:02:31,180 --> 00:02:32,380
+as you all have seen.
+
+62
+00:02:32,380 --> 00:02:35,700
+But I just want to try to get us
+or introduce us to these tools.
+
+63
+00:02:35,700 --> 00:02:39,270
+Anytime you see a
+serverless service, that
+
+64
+00:02:39,270 --> 00:02:41,010
+is what we're really
+talking about,
+
+65
+00:02:41,010 --> 00:02:44,340
+is you're removing all of that
+management away from yourself.
+
+66
+00:02:44,340 --> 00:02:48,250
+So again, upload your code,
+deploy a Lambda function,
+
+67
+00:02:48,250 --> 00:02:50,790
+runs on a schedule or
+in response to events.
+
+68
+00:02:50,790 --> 00:02:52,270
+Only runs when it's triggered.
+
+69
+00:02:52,270 --> 00:02:55,333
+And again, you only pay
+for the time that you use.
+
+70
+00:02:55,333 --> 00:02:58,000
+So if you're not using any-- if
+you're not running the function,
+
+71
+00:02:58,000 --> 00:02:59,042
+you're not paying for it.
+
+72
+00:02:59,042 --> 00:03:01,270
+It's not like something
+where, with the EC2 instance,
+
+73
+00:03:01,270 --> 00:03:03,150
+if I have it up, I have to
+remember to stop it and all that
+
+74
+00:03:03,150 --> 00:03:04,270
+or terminate it.
+
+75
+00:03:04,270 --> 00:03:05,620
+None of that matters.
+
+76
+00:03:05,620 --> 00:03:07,440
+I only pay for it
+when I'm using it.
+
+77
+00:03:07,440 --> 00:03:09,690
+So I can just set up the
+function, deploy it, and then
+
+78
+00:03:09,690 --> 00:03:11,160
+I don't have to worry that
+I'm all of a sudden running up
+
+79
+00:03:11,160 --> 00:03:13,200
+the cost, unless I'm
+triggering a bunch of events
+
+80
+00:03:13,200 --> 00:03:14,742
+or if there's a
+bunch of computations
+
+81
+00:03:14,742 --> 00:03:17,010
+that have to be done.
+
+82
+00:03:17,010 --> 00:03:19,710
+So as far as pros
+and cons go then,
+
+83
+00:03:19,710 --> 00:03:22,038
+pros by far one of the
+best things about it
+
+84
+00:03:22,038 --> 00:03:24,580
+is that it supports multiple
+different programming languages.
+
+85
+00:03:24,580 --> 00:03:25,500
+So we're going to
+use it obviously
+
+86
+00:03:25,500 --> 00:03:27,792
+in Python, given that that's
+what we teach for the most
+
+87
+00:03:27,792 --> 00:03:28,950
+part in our department.
+
+88
+00:03:28,950 --> 00:03:33,378
+But it encompasses a bunch
+of other tools and languages
+
+89
+00:03:33,378 --> 00:03:34,920
+or better statement
+can work directly
+
+90
+00:03:34,920 --> 00:03:36,820
+with those other languages too.
+
+91
+00:03:36,820 --> 00:03:40,530
+So if you're coding in C++, you
+can just deploy your function
+
+92
+00:03:40,530 --> 00:03:41,798
+directly in that language.
+
+93
+00:03:41,798 --> 00:03:43,590
+You don't to rewrite
+it into something else
+
+94
+00:03:43,590 --> 00:03:44,590
+or worry about that.
+
+95
+00:03:44,590 --> 00:03:47,890
+It just knows how to
+interpret that language.
+
+96
+00:03:47,890 --> 00:03:49,910
+And I don't have the exact
+list, but if you just
+
+97
+00:03:49,910 --> 00:03:52,327
+go to Lambda site, you'll see
+obviously the listing there.
+
+98
+00:03:52,327 --> 00:03:54,390
+And we'll see when we
+do a demo of what we
+
+99
+00:03:54,390 --> 00:03:57,000
+have available for ourselves.
+
+100
+00:03:57,000 --> 00:03:58,740
+The other thing
+again is completely
+
+101
+00:03:58,740 --> 00:04:00,100
+automated administration.
+
+102
+00:04:00,100 --> 00:04:02,340
+So we don't have to worry
+about it, like being
+
+103
+00:04:02,340 --> 00:04:03,840
+the admins of our
+services, we don't
+
+104
+00:04:03,840 --> 00:04:07,060
+have to start anything like
+that, worry about instances.
+
+105
+00:04:07,060 --> 00:04:09,240
+It just handles itself.
+
+106
+00:04:09,240 --> 00:04:10,930
+Built-in fault tolerance.
+
+107
+00:04:10,930 --> 00:04:13,260
+So it's doing these
+computations itself
+
+108
+00:04:13,260 --> 00:04:15,390
+across multiple
+availability zones
+
+109
+00:04:15,390 --> 00:04:18,540
+to protect against any sort
+of individual machine or data
+
+110
+00:04:18,540 --> 00:04:19,630
+center failures.
+
+111
+00:04:19,630 --> 00:04:23,110
+So when I kick off my Lambda
+function, unbeknownst to me,
+
+112
+00:04:23,110 --> 00:04:25,530
+it's going to be running
+in multiple locations
+
+113
+00:04:25,530 --> 00:04:27,910
+so that I can avoid
+any of those risks.
+
+114
+00:04:27,910 --> 00:04:32,440
+So again, completely
+managed serverless service.
+
+115
+00:04:32,440 --> 00:04:35,790
+You're not worrying
+about any of that at all.
+
+116
+00:04:35,790 --> 00:04:38,278
+You can orchestrate multiple
+functions as well too.
+
+117
+00:04:38,278 --> 00:04:40,570
+So you can have one function
+kick off another function.
+
+118
+00:04:40,570 --> 00:04:42,237
+They can sync up and
+do things together.
+
+119
+00:04:42,237 --> 00:04:46,085
+So very flexible toolkit that
+again, we pay per usage for.
+
+120
+00:04:46,085 --> 00:04:47,460
+So it's billed in
+increments of I
+
+121
+00:04:47,460 --> 00:04:49,870
+think milliseconds or
+something like that.
+
+122
+00:04:49,870 --> 00:04:53,730
+So again, we're only going to be
+paying for exactly what we need.
+
+123
+00:04:53,730 --> 00:04:55,650
+Actually, for that
+matter, we could
+
+124
+00:04:55,650 --> 00:04:58,300
+and we'll pull it up in a
+second here the pricing on that.
+
+125
+00:04:58,300 --> 00:05:02,680
+But that is kind of the
+consideration for it.
+
+126
+00:05:02,680 --> 00:05:06,910
+Now, as far as cons go,
+everything has downsides.
+
+127
+00:05:06,910 --> 00:05:09,490
+For one, it's not really--
+
+128
+00:05:09,490 --> 00:05:10,390
+I don't want to say--
+
+129
+00:05:10,390 --> 00:05:12,250
+I think not suitable for
+small projects is maybe
+
+130
+00:05:12,250 --> 00:05:13,460
+a bit harsh of a statement.
+
+131
+00:05:13,460 --> 00:05:16,580
+It's just that it's a little
+bit overkill for small projects.
+
+132
+00:05:16,580 --> 00:05:19,120
+Like we'll see, for example,
+when we build our own Lambda
+
+133
+00:05:19,120 --> 00:05:21,777
+functions, if I'm just
+doing something one time,
+
+134
+00:05:21,777 --> 00:05:23,860
+I don't really need to
+worry about being scheduled
+
+135
+00:05:23,860 --> 00:05:24,910
+or something like that.
+
+136
+00:05:24,910 --> 00:05:26,990
+It's not really worth setting
+up as a Lambda function.
+
+137
+00:05:26,990 --> 00:05:29,198
+It's going to take me just
+as much time to create it,
+
+138
+00:05:29,198 --> 00:05:31,510
+debug it as it would to
+just spin up an EC2 instance
+
+139
+00:05:31,510 --> 00:05:32,660
+and do the task.
+
+140
+00:05:32,660 --> 00:05:36,040
+So instead, I really want to
+keep these reserved for cases
+
+141
+00:05:36,040 --> 00:05:38,440
+where I need to do something
+at scale or in a way
+
+142
+00:05:38,440 --> 00:05:40,885
+that I really am going to be
+repeating this process over
+
+143
+00:05:40,885 --> 00:05:41,510
+and over again.
+
+144
+00:05:41,510 --> 00:05:45,340
+I don't want to have to
+manage that orchestration.
+
+145
+00:05:45,340 --> 00:05:48,802
+You'll also need
+to know in advance,
+
+146
+00:05:48,802 --> 00:05:50,510
+or at least that may
+be a debugging step.
+
+147
+00:05:50,510 --> 00:05:54,760
+And actually in preparation
+for one of the future demos,
+
+148
+00:05:54,760 --> 00:05:57,070
+I forgot this
+point, but you need
+
+149
+00:05:57,070 --> 00:05:59,570
+to have a sense of the memory
+needs of your function.
+
+150
+00:05:59,570 --> 00:06:01,520
+So when we deploy
+this function, it's
+
+151
+00:06:01,520 --> 00:06:05,330
+going to have a set minimum
+or maximum memory like RAM
+
+152
+00:06:05,330 --> 00:06:06,860
+that it utilizes.
+
+153
+00:06:06,860 --> 00:06:08,730
+And also it'll have
+a timeout command.
+
+154
+00:06:08,730 --> 00:06:11,523
+So if it runs for I think
+longer than a few seconds,
+
+155
+00:06:11,523 --> 00:06:13,190
+it'll just assume
+that maybe it's broken
+
+156
+00:06:13,190 --> 00:06:15,590
+and I should shut it down,
+such that I'm not charging you
+
+157
+00:06:15,590 --> 00:06:17,370
+for all the seconds
+that it's live.
+
+158
+00:06:17,370 --> 00:06:19,127
+And that's a great
+feature to have.
+
+159
+00:06:19,127 --> 00:06:21,710
+But also if my function actually
+does take a long time to run,
+
+160
+00:06:21,710 --> 00:06:23,880
+like I know it's going to
+take on the order of minutes,
+
+161
+00:06:23,880 --> 00:06:25,630
+I need to make sure I
+give it the capacity
+
+162
+00:06:25,630 --> 00:06:28,950
+to be able to run for minutes
+so that I don't have that issue.
+
+163
+00:06:28,950 --> 00:06:30,680
+Now, the risk is
+obviously if I set it
+
+164
+00:06:30,680 --> 00:06:34,050
+for just infinite amount of
+time as far as the timeout,
+
+165
+00:06:34,050 --> 00:06:36,350
+then I could be
+charged continuously
+
+166
+00:06:36,350 --> 00:06:38,610
+for something that could
+quickly run up in costs.
+
+167
+00:06:38,610 --> 00:06:42,920
+So that balancing act
+is necessary still.
+
+168
+00:06:42,920 --> 00:06:46,333
+And then finally, you are
+still constrained to only run
+
+169
+00:06:46,333 --> 00:06:47,250
+your commands in code.
+
+170
+00:06:47,250 --> 00:06:50,270
+So you can't-- and this
+is easily behind my head.
+
+171
+00:06:50,270 --> 00:06:52,260
+You couldn't just go
+and say, OK, well,
+
+172
+00:06:52,260 --> 00:06:54,685
+I need to do something
+in Microsoft Word
+
+173
+00:06:54,685 --> 00:06:56,810
+and grab that and upload
+it or something like that.
+
+174
+00:06:56,810 --> 00:06:58,790
+You're not going
+to be orchestrating
+
+175
+00:06:58,790 --> 00:07:03,490
+or being able to tie together a
+bunch of external applications.
+
+176
+00:07:03,490 --> 00:07:05,688
+Everything you do is
+going to be in code.
+
+177
+00:07:05,688 --> 00:07:07,730
+So if it's something where
+you're still learning,
+
+178
+00:07:07,730 --> 00:07:09,820
+you're kind of going through the
+process of understanding Python,
+
+179
+00:07:09,820 --> 00:07:12,670
+how to code in Python, this
+might not be the tool for you
+
+180
+00:07:12,670 --> 00:07:13,460
+yet.
+
+181
+00:07:13,460 --> 00:07:15,580
+But as you start to
+understand a coding language
+
+182
+00:07:15,580 --> 00:07:17,658
+or if you have that
+experience, then this
+
+183
+00:07:17,658 --> 00:07:18,950
+can be a really great resource.
+
+184
+00:07:18,950 --> 00:07:21,650
+But again, you will need
+to do everything in code.
+
+185
+00:07:21,650 --> 00:07:23,096
+So considerations.
+
+186
+00:07:25,720 --> 00:07:29,380
+So then as far as what can
+trigger a Lambda function,
+
+187
+00:07:29,380 --> 00:07:32,810
+I think first off, the easiest
+to explain is not listed here,
+
+188
+00:07:32,810 --> 00:07:35,350
+but the easiest to understand
+would be just using
+
+189
+00:07:35,350 --> 00:07:40,810
+some sort of schedule, is if I
+have a scheduled event that--
+
+190
+00:07:40,810 --> 00:07:42,310
+and we'll see how
+to set that up,
+
+191
+00:07:42,310 --> 00:07:45,550
+where every night it has to
+run or every 10 seconds I need
+
+192
+00:07:45,550 --> 00:07:49,880
+to run or maybe every day
+at 3:00 and 5:00 PM it runs,
+
+193
+00:07:49,880 --> 00:07:51,470
+that is the easiest one to do.
+
+194
+00:07:51,470 --> 00:07:53,210
+And it basically will
+send off an alert.
+
+195
+00:07:53,210 --> 00:07:57,100
+And I believe it uses
+Amazon's EventBridge service
+
+196
+00:07:57,100 --> 00:07:59,210
+to kick off those events.
+
+197
+00:07:59,210 --> 00:08:02,160
+And that will trigger-- or that
+can trigger a Lambda function.
+
+198
+00:08:02,160 --> 00:08:06,020
+So you can set it up such that
+it triggers on the schedule.
+
+199
+00:08:06,020 --> 00:08:08,120
+But I think arguably
+more interesting
+
+200
+00:08:08,120 --> 00:08:10,680
+are all the other ways that
+we can trigger a function.
+
+201
+00:08:10,680 --> 00:08:13,530
+So for example, entry
+into an S3 bucket.
+
+202
+00:08:13,530 --> 00:08:17,270
+So upload, deletion, moving
+of a file, any of those things
+
+203
+00:08:17,270 --> 00:08:19,200
+can technically
+send off a trigger.
+
+204
+00:08:19,200 --> 00:08:21,680
+Meaning that again,
+if somebody maybe
+
+205
+00:08:21,680 --> 00:08:24,260
+uploads a file to my S3 bucket.
+
+206
+00:08:24,260 --> 00:08:25,460
+Maybe you guys are students.
+
+207
+00:08:25,460 --> 00:08:27,210
+Maybe if we did this,
+and I could do this,
+
+208
+00:08:27,210 --> 00:08:29,490
+for example, for a project.
+
+209
+00:08:29,490 --> 00:08:32,700
+Maybe I say when you are
+done with your assignment,
+
+210
+00:08:32,700 --> 00:08:34,559
+upload it to this S3 bucket.
+
+211
+00:08:34,559 --> 00:08:36,409
+And then every
+time the S3 bucket
+
+212
+00:08:36,409 --> 00:08:40,820
+gets a new file into there,
+I could trigger an AWS Lambda
+
+213
+00:08:40,820 --> 00:08:45,332
+function that would then
+maybe go and check to see if--
+
+214
+00:08:45,332 --> 00:08:47,040
+and let's tie this
+into machine learning.
+
+215
+00:08:47,040 --> 00:08:49,610
+Maybe it would look to see
+if your screenshot looks
+
+216
+00:08:49,610 --> 00:08:53,590
+like the screenshot of
+a A, B, a C, or a D.
+
+217
+00:08:53,590 --> 00:08:56,413
+And it classifies A, B, C, or D.
+
+218
+00:08:56,413 --> 00:08:58,580
+I could set up a function
+that does that, assuming I
+
+219
+00:08:58,580 --> 00:09:01,080
+have trained a model that
+can make that prediction.
+
+220
+00:09:01,080 --> 00:09:03,260
+But let's imagine we
+have this magic black box
+
+221
+00:09:03,260 --> 00:09:06,080
+that taking as input a
+screenshot of your website
+
+222
+00:09:06,080 --> 00:09:07,670
+can predict the grade.
+
+223
+00:09:07,670 --> 00:09:09,890
+Well, then maybe I
+could, again, when
+
+224
+00:09:09,890 --> 00:09:12,200
+you upload your file
+to the S3 bucket,
+
+225
+00:09:12,200 --> 00:09:14,040
+it triggers my Lambda function.
+
+226
+00:09:14,040 --> 00:09:21,110
+It runs and it immediately
+scores your assignment,
+
+227
+00:09:21,110 --> 00:09:25,953
+and then returns to me a JSON
+file or maybe pushes it to--
+
+228
+00:09:25,953 --> 00:09:27,870
+the Lambda function is
+again just Python code.
+
+229
+00:09:27,870 --> 00:09:30,083
+So I could have a
+push to a database.
+
+230
+00:09:30,083 --> 00:09:32,000
+I could probably even
+find a way to sync it up
+
+231
+00:09:32,000 --> 00:09:34,670
+with Canvas honestly, such
+that Canvas automatically
+
+232
+00:09:34,670 --> 00:09:35,970
+gets an uploaded grade.
+
+233
+00:09:35,970 --> 00:09:38,150
+So all these things are
+now at your disposal.
+
+234
+00:09:38,150 --> 00:09:40,050
+Anything you can think
+about piping together,
+
+235
+00:09:40,050 --> 00:09:43,790
+as long as you can do it
+in code, you can do it.
+
+236
+00:09:43,790 --> 00:09:48,110
+And again, it can be triggered
+by S3 bucket actions.
+
+237
+00:09:48,110 --> 00:09:51,360
+Similarly, insertions
+in a DynamoDB table.
+
+238
+00:09:51,360 --> 00:09:53,940
+So DynamoDB is a NoSQL database.
+
+239
+00:09:53,940 --> 00:09:56,540
+So if some of the adds,
+updates, deletes data
+
+240
+00:09:56,540 --> 00:09:58,320
+in this database, same thing.
+
+241
+00:09:58,320 --> 00:09:59,862
+I can trigger an
+AWS Lambda function.
+
+242
+00:09:59,862 --> 00:10:01,862
+And again, this is assuming
+everything's running
+
+243
+00:10:01,862 --> 00:10:02,520
+in the Cloud.
+
+244
+00:10:02,520 --> 00:10:03,480
+It's all set up.
+
+245
+00:10:03,480 --> 00:10:06,080
+Then yeah, you can
+do it that way.
+
+246
+00:10:06,080 --> 00:10:08,670
+There's also Amazon simple
+notification service.
+
+247
+00:10:08,670 --> 00:10:11,400
+So it's used for
+push notifications.
+
+248
+00:10:11,400 --> 00:10:17,742
+So if I have a
+service maybe where
+
+249
+00:10:17,742 --> 00:10:19,700
+I'm trying to think of
+an example now coming up
+
+250
+00:10:19,700 --> 00:10:21,200
+with business ideas on the fly.
+
+251
+00:10:21,200 --> 00:10:28,370
+But maybe I send push
+notifications from my app
+
+252
+00:10:28,370 --> 00:10:35,820
+that's hosted in AWS to my
+customer, or I want to--
+
+253
+00:10:35,820 --> 00:10:41,480
+or I want to send an SMS, a text
+message to a customer or I'm
+
+254
+00:10:41,480 --> 00:10:42,980
+doing some sort of
+political polling
+
+255
+00:10:42,980 --> 00:10:46,710
+and I'm texting every person
+that's a registered voter.
+
+256
+00:10:46,710 --> 00:10:49,460
+I'm sure some of you
+received those recently,
+
+257
+00:10:49,460 --> 00:10:51,990
+that can be also used
+as a trigger then.
+
+258
+00:10:51,990 --> 00:10:55,770
+So when there's an event in the
+simple notification service,
+
+259
+00:10:55,770 --> 00:11:00,140
+so sending a text message
+out to the phone number,
+
+260
+00:11:00,140 --> 00:11:01,640
+and actually for
+that matter, we can
+
+261
+00:11:01,640 --> 00:11:04,550
+send messages using simple
+notification services
+
+262
+00:11:04,550 --> 00:11:07,980
+to the phone number
+using AWS Lambda.
+
+263
+00:11:07,980 --> 00:11:11,630
+Either a vice versa, you
+can trigger lambda events.
+
+264
+00:11:11,630 --> 00:11:14,450
+API Gateway is just a
+fully managed service
+
+265
+00:11:14,450 --> 00:11:15,450
+for creating APIs.
+
+266
+00:11:15,450 --> 00:11:18,810
+So we obviously built our
+APIs using Flask directly.
+
+267
+00:11:18,810 --> 00:11:21,350
+But there is a managed
+service for creating APIs.
+
+268
+00:11:21,350 --> 00:11:24,870
+And so we can set up that such
+that any sort of requests--
+
+269
+00:11:24,870 --> 00:11:26,630
+GET requests, PUT
+requests, those
+
+270
+00:11:26,630 --> 00:11:28,880
+can trigger Lambda functions.
+
+271
+00:11:28,880 --> 00:11:33,240
+We can use CloudFront, which is
+AWS's content delivery network.
+
+272
+00:11:33,240 --> 00:11:34,890
+So if you're hosting
+your website,
+
+273
+00:11:34,890 --> 00:11:39,560
+maybe using the
+Lambda@Edge feature,
+
+274
+00:11:39,560 --> 00:11:41,247
+if there's some sort
+of header request.
+
+275
+00:11:41,247 --> 00:11:43,580
+So you remember how we had
+like the question mark equals
+
+276
+00:11:43,580 --> 00:11:45,320
+something or question
+mark ID equals
+
+277
+00:11:45,320 --> 00:11:47,175
+something or other in the URL.
+
+278
+00:11:47,175 --> 00:11:49,800
+So there's some sort of request
+that gets passed in the header,
+
+279
+00:11:49,800 --> 00:11:53,870
+I can have Lambda process that
+can trigger a Lambda function.
+
+280
+00:11:53,870 --> 00:11:56,340
+There's so many things
+you can keep listing here.
+
+281
+00:11:56,340 --> 00:11:58,820
+Kinesis, CloudTrail, all
+these different things
+
+282
+00:11:58,820 --> 00:12:01,120
+can trigger off
+Lambda functions.
+
+283
+00:12:01,120 --> 00:12:03,923
+So the moral of the story
+is for the most part,
+
+284
+00:12:03,923 --> 00:12:05,340
+for anything you
+can come up with,
+
+285
+00:12:05,340 --> 00:12:09,000
+you can usually find a way to
+string together something such
+
+286
+00:12:09,000 --> 00:12:11,190
+that it triggers your
+Lambda function based off
+
+287
+00:12:11,190 --> 00:12:12,940
+of surrounding
+events in the Cloud.
+
+288
+00:12:12,940 --> 00:12:16,950
+And that is really what gives
+us a lot of value in this.
+
+289
+00:12:16,950 --> 00:12:19,140
+So at a high level,
+the way that looks then
+
+290
+00:12:19,140 --> 00:12:21,930
+is you'll have your
+function code right,
+
+291
+00:12:21,930 --> 00:12:23,675
+you'll have some
+sort of dependency.
+
+292
+00:12:23,675 --> 00:12:25,050
+So maybe these
+are like packages.
+
+293
+00:12:25,050 --> 00:12:30,240
+Like maybe I'm using Pandas
+or NumPy if I'm in Python.
+
+294
+00:12:30,240 --> 00:12:33,300
+And those will need to be
+tagged along or passed along
+
+295
+00:12:33,300 --> 00:12:35,987
+to my Lambda function in a way.
+
+296
+00:12:35,987 --> 00:12:37,570
+And we'll talk about
+how they do that.
+
+297
+00:12:37,570 --> 00:12:40,050
+And then also we'll have
+some sort of execution role.
+
+298
+00:12:40,050 --> 00:12:42,940
+IAM role that gives
+permissions to do that task.
+
+299
+00:12:42,940 --> 00:12:44,940
+And so my AWS Lambda
+function is going
+
+300
+00:12:44,940 --> 00:12:46,750
+to be comprised of all of this.
+
+301
+00:12:46,750 --> 00:12:48,850
+And once I define
+my Lambda function,
+
+302
+00:12:48,850 --> 00:12:52,980
+I'm going to use
+lambda to deploy that.
+
+303
+00:12:52,980 --> 00:12:56,677
+And so I can run my code.
+
+304
+00:12:56,677 --> 00:12:58,510
+When it's trigger, I
+can set up the trigger.
+
+305
+00:12:58,510 --> 00:13:00,690
+Either I can
+manually test it or I
+
+306
+00:13:00,690 --> 00:13:03,340
+can set up the schedule
+or event-based triggers.
+
+307
+00:13:03,340 --> 00:13:06,120
+And then it can also use
+Amazon's CloudWatch tool
+
+308
+00:13:06,120 --> 00:13:10,590
+and we'll see how that works as
+well to view logs and metrics
+
+309
+00:13:10,590 --> 00:13:13,620
+and monitor it and see, well,
+how long did the last Lambda
+
+310
+00:13:13,620 --> 00:13:15,100
+function call run for?
+
+311
+00:13:15,100 --> 00:13:18,780
+How long did or how much
+did the most recent call
+
+312
+00:13:18,780 --> 00:13:20,350
+cost me as far as dollars?
+
+313
+00:13:20,350 --> 00:13:23,090
+All those things can be
+observed in CloudWatch.
+
+314
+00:13:25,860 --> 00:13:28,432
+Trying to make sure I didn't
+miss anything in my notes.
+
+315
+00:13:28,432 --> 00:13:29,890
+A few other things
+to note, though.
+
+316
+00:13:29,890 --> 00:13:30,760
+So we add a trigger.
+
+317
+00:13:30,760 --> 00:13:31,910
+We add our function code.
+
+318
+00:13:31,910 --> 00:13:34,410
+Again, like I said, we do need
+to specify the memory as well
+
+319
+00:13:34,410 --> 00:13:35,020
+too.
+
+320
+00:13:35,020 --> 00:13:38,370
+So how much memory we're going
+to allocate to this function.
+
+321
+00:13:38,370 --> 00:13:40,650
+Could be anywhere
+from 128 megabytes up
+
+322
+00:13:40,650 --> 00:13:42,100
+to about 10 gigabytes.
+
+323
+00:13:42,100 --> 00:13:45,120
+So a decently large
+instance effectively
+
+324
+00:13:45,120 --> 00:13:46,320
+is what you're allowing.
+
+325
+00:13:46,320 --> 00:13:48,782
+10 gigabytes should be
+enough for most simple tasks.
+
+326
+00:13:48,782 --> 00:13:50,490
+If it's larger than
+that, you're probably
+
+327
+00:13:50,490 --> 00:13:52,555
+going to be doing it
+in another way anyways.
+
+328
+00:13:52,555 --> 00:13:54,430
+Maybe you need to set
+up a little application
+
+329
+00:13:54,430 --> 00:13:55,805
+or build a little
+web application
+
+330
+00:13:55,805 --> 00:13:58,080
+and run that on an
+EC2 instance or using
+
+331
+00:13:58,080 --> 00:13:59,920
+one of these other
+managed services.
+
+332
+00:13:59,920 --> 00:14:04,110
+But 10 gigabytes will
+get you a long way.
+
+333
+00:14:04,110 --> 00:14:06,950
+And Yeah, either way you
+zip up all this information
+
+334
+00:14:06,950 --> 00:14:08,480
+here, the
+dependencies, the code,
+
+335
+00:14:08,480 --> 00:14:10,490
+and everything into a
+nice little deployment
+
+336
+00:14:10,490 --> 00:14:13,320
+package and that is
+what Lambda uses then.
+
+337
+00:14:13,320 --> 00:14:15,320
+So when the event
+is triggered, it's
+
+338
+00:14:15,320 --> 00:14:18,300
+basically going to grab
+this code, this zip file,
+
+339
+00:14:18,300 --> 00:14:20,820
+unzip it, spin up the
+relevant instances,
+
+340
+00:14:20,820 --> 00:14:23,070
+install the relevant
+libraries, run your code,
+
+341
+00:14:23,070 --> 00:14:25,017
+and then shut it
+back down again.
+
+342
+00:14:25,017 --> 00:14:26,850
+So you only pay for the
+time that it's live,
+
+343
+00:14:26,850 --> 00:14:30,630
+that it's actually
+executing your code.
+
+344
+00:14:30,630 --> 00:14:33,960
+So some examples of that then.
+
+345
+00:14:33,960 --> 00:14:36,390
+So this is kind of what a
+schedule-based event would
+
+346
+00:14:36,390 --> 00:14:36,990
+look like.
+
+347
+00:14:36,990 --> 00:14:39,540
+So let's say you have--
+
+348
+00:14:39,540 --> 00:14:41,530
+you're working for a
+company, small business,
+
+349
+00:14:41,530 --> 00:14:43,810
+and you all have a
+bunch of EC2 instances.
+
+350
+00:14:43,810 --> 00:14:45,790
+You're using Cloud resources.
+
+351
+00:14:45,790 --> 00:14:49,790
+Well, you realize that people
+are leaving their EC2 instances
+
+352
+00:14:49,790 --> 00:14:50,290
+live.
+
+353
+00:14:50,290 --> 00:14:50,830
+Hint, hint.
+
+354
+00:14:50,830 --> 00:14:52,090
+If you have your
+EC2 instances live,
+
+355
+00:14:52,090 --> 00:14:53,460
+make sure to shut those down.
+
+356
+00:14:53,460 --> 00:14:54,940
+We're not needing those anymore.
+
+357
+00:14:54,940 --> 00:14:58,710
+But either way, you have
+your EC2 instances live.
+
+358
+00:14:58,710 --> 00:15:01,267
+And then every day,
+rather than having
+
+359
+00:15:01,267 --> 00:15:03,600
+to worry about going in there
+and manually shutting them
+
+360
+00:15:03,600 --> 00:15:06,060
+down and then also
+similarly starting them
+
+361
+00:15:06,060 --> 00:15:07,590
+back up again in
+the morning just
+
+362
+00:15:07,590 --> 00:15:09,132
+so your users can
+log in and not have
+
+363
+00:15:09,132 --> 00:15:13,560
+to worry about being managers
+or doing any sort of IT work
+
+364
+00:15:13,560 --> 00:15:15,610
+as far as starting and
+stopping their services,
+
+365
+00:15:15,610 --> 00:15:17,340
+well, we can set up some events.
+
+366
+00:15:17,340 --> 00:15:19,935
+So we could set up a CloudWatch
+scheduled event or sorry,
+
+367
+00:15:19,935 --> 00:15:21,310
+it's going to be
+EventBridge now.
+
+368
+00:15:21,310 --> 00:15:22,240
+It used to be CloudWatch.
+
+369
+00:15:22,240 --> 00:15:24,240
+So a lot of documentation
+still says CloudWatch,
+
+370
+00:15:24,240 --> 00:15:26,910
+but I think they migrated
+all that over to EventBridge.
+
+371
+00:15:26,910 --> 00:15:30,320
+But either way, I could set
+up an event to say, well,
+
+372
+00:15:30,320 --> 00:15:33,400
+at 10:00 PM every
+night in my local time,
+
+373
+00:15:33,400 --> 00:15:35,680
+I want to trigger
+this Lambda function.
+
+374
+00:15:35,680 --> 00:15:38,110
+In this lambda
+function, I've given it
+
+375
+00:15:38,110 --> 00:15:42,190
+the IAM role such that it
+is allowed to start and stop
+
+376
+00:15:42,190 --> 00:15:43,420
+EC2 instances.
+
+377
+00:15:43,420 --> 00:15:46,870
+And so it'll spin up
+some Python code maybe,
+
+378
+00:15:46,870 --> 00:15:51,460
+and that Python code will
+run basically the commands
+
+379
+00:15:51,460 --> 00:15:55,520
+from Python using
+the AWS packages,
+
+380
+00:15:55,520 --> 00:15:57,620
+but it'll run those
+commands to shut down,
+
+381
+00:15:57,620 --> 00:16:00,880
+to stop all instances
+that are running live.
+
+382
+00:16:00,880 --> 00:16:04,010
+And then every night
+that runs automatically.
+
+383
+00:16:04,010 --> 00:16:07,360
+And then I could say, well, at
+5:00 AM, I want to reverse this.
+
+384
+00:16:07,360 --> 00:16:08,930
+I'll use the same IAM role.
+
+385
+00:16:08,930 --> 00:16:10,930
+I'll just set up a different
+Lambda function now
+
+386
+00:16:10,930 --> 00:16:13,280
+that triggers to
+start the services.
+
+387
+00:16:13,280 --> 00:16:15,590
+And so in--
+
+388
+00:16:15,590 --> 00:16:18,110
+It'll take me a few
+minutes to set up.
+
+389
+00:16:18,110 --> 00:16:20,740
+I can automatically manage
+starting and stopping
+
+390
+00:16:20,740 --> 00:16:24,220
+my EC2 instances without
+having to go in there
+
+391
+00:16:24,220 --> 00:16:25,790
+and manually change each one.
+
+392
+00:16:25,790 --> 00:16:29,400
+Or you can recognize
+that because again, we
+
+393
+00:16:29,400 --> 00:16:32,260
+could by all means, have some
+sort of hibernation setting on
+
+394
+00:16:32,260 --> 00:16:36,520
+or set the hibernation
+function or option when we're
+
+395
+00:16:36,520 --> 00:16:38,120
+starting our EC2 instances.
+
+396
+00:16:38,120 --> 00:16:39,610
+But we might have
+a bunch of users
+
+397
+00:16:39,610 --> 00:16:41,440
+creating many
+different EC2 instances
+
+398
+00:16:41,440 --> 00:16:42,860
+for a variety of reasons.
+
+399
+00:16:42,860 --> 00:16:45,740
+And so this way, I don't even
+have to worry about, hey,
+
+400
+00:16:45,740 --> 00:16:48,160
+did I make sure that
+every person set up
+
+401
+00:16:48,160 --> 00:16:51,280
+their EC2 instance correctly
+to have hibernation on?
+
+402
+00:16:51,280 --> 00:16:54,730
+Instead, just every night, I
+list out all the EC2 instances
+
+403
+00:16:54,730 --> 00:16:57,520
+in my account to stop them.
+
+404
+00:16:57,520 --> 00:17:00,530
+And then in the morning, I
+start all them back up again.
+
+405
+00:17:00,530 --> 00:17:04,550
+And again, you can do any number
+of variations of this process,
+
+406
+00:17:04,550 --> 00:17:08,500
+but that's the basic idea.
+
+407
+00:17:08,500 --> 00:17:12,460
+Alternatively, let's say we
+had something where we were-
+
+408
+00:17:12,460 --> 00:17:15,609
+and this is, again, more
+often how I've used it.
+
+409
+00:17:15,609 --> 00:17:18,670
+But maybe we had something where
+we're collecting a bunch of data
+
+410
+00:17:18,670 --> 00:17:20,650
+or downloading a
+bunch of images,
+
+411
+00:17:20,650 --> 00:17:22,670
+or we host a bunch of
+images on our website.
+
+412
+00:17:22,670 --> 00:17:26,349
+Maybe we are kind of a
+Facebook style company
+
+413
+00:17:26,349 --> 00:17:29,920
+where we have a website that
+houses a bunch of images on it.
+
+414
+00:17:29,920 --> 00:17:33,790
+Well, I need to have a thumbnail
+version of all my images
+
+415
+00:17:33,790 --> 00:17:36,580
+because I don't want to have to
+load the full image every time
+
+416
+00:17:36,580 --> 00:17:39,070
+it shows up on a search
+page or something like that.
+
+417
+00:17:39,070 --> 00:17:44,200
+So a user goes and uploads
+maybe this is my web app here.
+
+418
+00:17:44,200 --> 00:17:46,550
+The step 1 here is
+them using my web app.
+
+419
+00:17:46,550 --> 00:17:48,460
+So step 1, they use
+my web app, they
+
+420
+00:17:48,460 --> 00:17:51,320
+upload their image, their
+full resolution image.
+
+421
+00:17:51,320 --> 00:17:53,770
+I dump that into the S3 bucket.
+
+422
+00:17:53,770 --> 00:17:57,430
+Well, the second I have
+something added to this S3
+
+423
+00:17:57,430 --> 00:18:00,010
+bucket, I've set up or I
+can set up a trigger such
+
+424
+00:18:00,010 --> 00:18:02,330
+that it kicks off
+this Lambda function.
+
+425
+00:18:02,330 --> 00:18:05,150
+And this Lambda function
+maybe says, OK, great, well,
+
+426
+00:18:05,150 --> 00:18:08,200
+what I need to do is I'm
+given this execution role that
+
+427
+00:18:08,200 --> 00:18:10,382
+allows me to access S3 buckets.
+
+428
+00:18:10,382 --> 00:18:12,590
+And what I'm going to do is
+I'm going to come in here
+
+429
+00:18:12,590 --> 00:18:14,530
+and I'm going to take
+my full size image
+
+430
+00:18:14,530 --> 00:18:16,600
+and I'm just going to
+downsample it and create
+
+431
+00:18:16,600 --> 00:18:17,720
+a small thumbnail version.
+
+432
+00:18:17,720 --> 00:18:19,220
+I can do that in
+Python really easy.
+
+433
+00:18:19,220 --> 00:18:22,420
+You just use the pillow
+library or other similar image
+
+434
+00:18:22,420 --> 00:18:23,770
+manipulation library.
+
+435
+00:18:23,770 --> 00:18:25,520
+But I'm going to take
+the full size image,
+
+436
+00:18:25,520 --> 00:18:30,670
+downsize it so it's just a
+little 64 by 64 pixel image.
+
+437
+00:18:30,670 --> 00:18:33,950
+And then I'll upload
+that to my other bucket.
+
+438
+00:18:33,950 --> 00:18:35,300
+That's my thumbnails bucket.
+
+439
+00:18:35,300 --> 00:18:37,975
+So that way, whenever they
+come back to the website,
+
+440
+00:18:37,975 --> 00:18:39,850
+I've set up these names,
+maybe the file names
+
+441
+00:18:39,850 --> 00:18:42,430
+such that I know that this is
+the file that should show up
+
+442
+00:18:42,430 --> 00:18:44,745
+there, but I pulled the
+thumbnail version of it,
+
+443
+00:18:44,745 --> 00:18:46,870
+so it just displays all
+the thumbnails on the page,
+
+444
+00:18:46,870 --> 00:18:48,320
+loads much faster.
+
+445
+00:18:48,320 --> 00:18:50,170
+Then when they click
+on it, my web app
+
+446
+00:18:50,170 --> 00:18:52,220
+says, OK, well if they
+clicked on this link,
+
+447
+00:18:52,220 --> 00:18:53,928
+I'm going to load up
+the full size image.
+
+448
+00:18:53,928 --> 00:18:55,392
+Now grab that one from S3.
+
+449
+00:18:55,392 --> 00:18:56,600
+But that's a different issue.
+
+450
+00:18:56,600 --> 00:18:57,760
+That's a separate project.
+
+451
+00:18:57,760 --> 00:19:00,920
+Here we're just saying
+they upload a photo,
+
+452
+00:19:00,920 --> 00:19:03,620
+we trigger a Lambda action
+or a Lambda function.
+
+453
+00:19:03,620 --> 00:19:05,860
+That Lambda function creates
+a thumbnail and dumps
+
+454
+00:19:05,860 --> 00:19:07,580
+that back into a new bucket.
+
+455
+00:19:07,580 --> 00:19:09,190
+And again, all of
+this is completely
+
+456
+00:19:09,190 --> 00:19:10,940
+orchestrated via Lambda.
+
+457
+00:19:10,940 --> 00:19:13,040
+I don't have to go in
+here manually do this.
+
+458
+00:19:13,040 --> 00:19:16,300
+I don't have to set up another
+function outside of Python
+
+459
+00:19:16,300 --> 00:19:18,880
+or outside using Python
+that tries to call into this
+
+460
+00:19:18,880 --> 00:19:20,120
+and do this automatically.
+
+461
+00:19:20,120 --> 00:19:21,890
+It's just built into AWS.
+
+462
+00:19:21,890 --> 00:19:24,970
+So really, really nice
+feature, very easy to set up.
+
+463
+00:19:27,970 --> 00:19:32,410
+And so a high level then,
+last point on this before we
+
+464
+00:19:32,410 --> 00:19:37,350
+look at a quick demo,
+Lambda has a couple limits.
+
+465
+00:19:37,350 --> 00:19:39,890
+They have both kind of soft
+limits and hard limits.
+
+466
+00:19:39,890 --> 00:19:43,750
+So the soft limits are
+that basically saying
+
+467
+00:19:43,750 --> 00:19:47,840
+that if you want something
+beyond this capacity,
+
+468
+00:19:47,840 --> 00:19:50,230
+you have to send in support
+ticket with justification
+
+469
+00:19:50,230 --> 00:19:52,220
+and you could potentially
+get these relaxed.
+
+470
+00:19:52,220 --> 00:19:54,730
+These hard limits are
+just built into lambda.
+
+471
+00:19:54,730 --> 00:19:56,300
+You can't ever exceed these.
+
+472
+00:19:56,300 --> 00:20:00,980
+So, for example, the
+soft limits here,
+
+473
+00:20:00,980 --> 00:20:02,720
+1,000 concurrent executions.
+
+474
+00:20:02,720 --> 00:20:07,270
+That means 1,000 lambda
+executions at the same exact
+
+475
+00:20:07,270 --> 00:20:07,965
+time.
+
+476
+00:20:07,965 --> 00:20:10,077
+If you want to exceed
+that, which is a lot.
+
+477
+00:20:10,077 --> 00:20:12,410
+You're going to be running
+up some charges pretty quick.
+
+478
+00:20:12,410 --> 00:20:15,353
+But if you want to, you can let
+them know and they will do that.
+
+479
+00:20:15,353 --> 00:20:17,020
+But this is one way
+they can potentially
+
+480
+00:20:17,020 --> 00:20:21,040
+avoid any sort of nefarious
+behavior with Lambda functions.
+
+481
+00:20:21,040 --> 00:20:24,183
+For example, you don't want
+to be able DDoS somebody out
+
+482
+00:20:24,183 --> 00:20:26,350
+of nowhere with this just
+because you're spinning up
+
+483
+00:20:26,350 --> 00:20:29,200
+a bunch of concurrent
+executions.
+
+484
+00:20:29,200 --> 00:20:32,520
+Similarly, 75 gigabytes of
+function in layer storage.
+
+485
+00:20:32,520 --> 00:20:36,260
+So this is saying
+like the physical disk
+
+486
+00:20:36,260 --> 00:20:39,710
+space it takes up for
+all of the function code
+
+487
+00:20:39,710 --> 00:20:42,020
+that you have written for
+your Lambda function, as well
+
+488
+00:20:42,020 --> 00:20:42,810
+as the layer.
+
+489
+00:20:42,810 --> 00:20:46,830
+The layer is how we actually
+upload all of the dependencies.
+
+490
+00:20:46,830 --> 00:20:50,360
+And so libraries, Pandas,
+NumPy, all the other Boto3,
+
+491
+00:20:50,360 --> 00:20:52,610
+any other package you need
+to use for your Python code
+
+492
+00:20:52,610 --> 00:20:55,530
+to execute, that would be
+wrapped into your layer.
+
+493
+00:20:55,530 --> 00:20:59,900
+So if you have more than
+75 gigbytes of storage
+
+494
+00:20:59,900 --> 00:21:03,620
+necessary for all
+of that, then you
+
+495
+00:21:03,620 --> 00:21:06,990
+need to reach out to them
+to have that pushed up.
+
+496
+00:21:06,990 --> 00:21:11,990
+I would argue that
+you really you're
+
+497
+00:21:11,990 --> 00:21:14,448
+not going to need more than
+this for most reasonable tasks.
+
+498
+00:21:14,448 --> 00:21:16,157
+You're going to be
+such an advanced level
+
+499
+00:21:16,157 --> 00:21:18,125
+before you realize that
+you might need actually
+
+500
+00:21:18,125 --> 00:21:18,750
+more than this.
+
+501
+00:21:18,750 --> 00:21:20,625
+And in that sense,
+there's probably also more
+
+502
+00:21:20,625 --> 00:21:24,990
+cost effective tool to use for
+that, versus the hard limits.
+
+503
+00:21:24,990 --> 00:21:26,520
+These are, again,
+fixed in place.
+
+504
+00:21:26,520 --> 00:21:28,562
+You're not going to even
+be able to extend these.
+
+505
+00:21:28,562 --> 00:21:30,530
+So, for example, the
+10 gigabytes of memory.
+
+506
+00:21:30,530 --> 00:21:34,250
+The memory being the RAM on
+that, that's necessary for that
+
+507
+00:21:34,250 --> 00:21:35,960
+function to run.
+
+508
+00:21:35,960 --> 00:21:37,940
+If you need more than
+10 gigs of RAM again,
+
+509
+00:21:37,940 --> 00:21:39,440
+I would argue you
+probably shouldn't
+
+510
+00:21:39,440 --> 00:21:41,550
+be using Lambda as a tool.
+
+511
+00:21:41,550 --> 00:21:43,962
+It's meant for really
+small, quick actions.
+
+512
+00:21:43,962 --> 00:21:45,920
+You don't want to have
+it spin up a whole thing
+
+513
+00:21:45,920 --> 00:21:48,660
+and run this really, really
+long process in Lambda.
+
+514
+00:21:48,660 --> 00:21:51,150
+There's some much more cost
+effective ways to do that.
+
+515
+00:21:51,150 --> 00:21:53,990
+So 10 gigabytes is
+usually sufficient.
+
+516
+00:21:53,990 --> 00:21:55,760
+The 15 minutes before
+a timeout, it again
+
+517
+00:21:55,760 --> 00:21:58,490
+is to avoid things that are
+way too large for Lambda
+
+518
+00:21:58,490 --> 00:22:00,980
+and also avoid the
+risk of infinite costs
+
+519
+00:22:00,980 --> 00:22:03,960
+just running up here because
+I don't want a function.
+
+520
+00:22:03,960 --> 00:22:06,350
+Maybe I kick off
+500 Lambda functions
+
+521
+00:22:06,350 --> 00:22:09,320
+to run it once or 500 concurrent
+executions of my Lambda function
+
+522
+00:22:09,320 --> 00:22:11,595
+to do the thumbnail processing.
+
+523
+00:22:11,595 --> 00:22:13,220
+Well, maybe there's
+some bug in my code
+
+524
+00:22:13,220 --> 00:22:16,610
+that causes an infinite loop
+and all 500 of those just start
+
+525
+00:22:16,610 --> 00:22:17,847
+running forever.
+
+526
+00:22:17,847 --> 00:22:19,680
+That could get really
+expensive really fast.
+
+527
+00:22:19,680 --> 00:22:22,010
+And so they set that 15
+minutes really for your safety
+
+528
+00:22:22,010 --> 00:22:23,677
+to say if it's beyond
+this, you probably
+
+529
+00:22:23,677 --> 00:22:26,660
+don't want to be doing
+this in Lambda anyways.
+
+530
+00:22:26,660 --> 00:22:30,140
+The 250 megabyte unzip
+deployment package,
+
+531
+00:22:30,140 --> 00:22:31,940
+that is saying--
+
+532
+00:22:31,940 --> 00:22:34,170
+and actually this--
+sorry, this is clarifier,
+
+533
+00:22:34,170 --> 00:22:36,890
+this 75 gigabytes of function
+layer storage I believe
+
+534
+00:22:36,890 --> 00:22:42,000
+is across all of your
+Lambda functions.
+
+535
+00:22:42,000 --> 00:22:44,752
+So like the permanent
+persistent layers of storage.
+
+536
+00:22:44,752 --> 00:22:45,960
+This is not for a single app.
+
+537
+00:22:45,960 --> 00:22:47,090
+So I misspoke there.
+
+538
+00:22:47,090 --> 00:22:50,380
+Because this is actually the how
+big your deployment package size
+
+539
+00:22:50,380 --> 00:22:50,880
+is.
+
+540
+00:22:50,880 --> 00:22:53,780
+You can see here, unzipped your
+deployment package can only be
+
+541
+00:22:53,780 --> 00:22:55,400
+250 megabytes, which
+is actually still
+
+542
+00:22:55,400 --> 00:22:56,817
+usually sufficient
+for most things
+
+543
+00:22:56,817 --> 00:22:58,710
+you need, but much
+smaller than 75 gigabytes.
+
+544
+00:22:58,710 --> 00:23:00,960
+So sorry for
+misquoting that there.
+
+545
+00:23:00,960 --> 00:23:02,638
+But either way, 250 megabytes.
+
+546
+00:23:02,638 --> 00:23:04,430
+And you'll actually
+see this because if you
+
+547
+00:23:04,430 --> 00:23:07,520
+try to upload a layer, we'll
+see when we do that step, what
+
+548
+00:23:07,520 --> 00:23:09,310
+uploading a layer--
+
+549
+00:23:09,310 --> 00:23:11,030
+the zip file for the
+layer looks like.
+
+550
+00:23:11,030 --> 00:23:13,350
+It'll tell you this exceeds 250.
+
+551
+00:23:13,350 --> 00:23:16,070
+Well, you can't create
+this layer this way.
+
+552
+00:23:16,070 --> 00:23:18,170
+Again, the reason being
+is that Lambda functions
+
+553
+00:23:18,170 --> 00:23:21,060
+are designed to spin up
+really, really quickly.
+
+554
+00:23:21,060 --> 00:23:22,970
+And so if I have
+to do this, if this
+
+555
+00:23:22,970 --> 00:23:24,805
+is larger than 250
+megabytes, it's
+
+556
+00:23:24,805 --> 00:23:26,180
+going to take a
+long time to just
+
+557
+00:23:26,180 --> 00:23:28,880
+spin it up, unzip it, install
+all the packages and everything
+
+558
+00:23:28,880 --> 00:23:29,417
+like that.
+
+559
+00:23:29,417 --> 00:23:30,750
+So they have to keep this small.
+
+560
+00:23:30,750 --> 00:23:33,620
+It's kind of the same as when
+we deploy to Heroku, when
+
+561
+00:23:33,620 --> 00:23:35,640
+we deployed our web app
+there, they I think,
+
+562
+00:23:35,640 --> 00:23:38,552
+max you out around
+three or 500 megabytes
+
+563
+00:23:38,552 --> 00:23:40,760
+for your deployment package
+size for the same reason.
+
+564
+00:23:40,760 --> 00:23:43,670
+You don't want to have
+it just sitting there.
+
+565
+00:23:43,670 --> 00:23:48,500
+And then finally, if you
+have a much larger workload,
+
+566
+00:23:48,500 --> 00:23:51,020
+you can actually
+deploy your container
+
+567
+00:23:51,020 --> 00:23:53,970
+or your Lambda function
+to a container image.
+
+568
+00:23:53,970 --> 00:23:59,390
+So that is kind of expanding
+what you can do on your--
+
+569
+00:23:59,390 --> 00:24:00,930
+or for your Lambda function.
+
+570
+00:24:00,930 --> 00:24:01,490
+Oops.
+
+571
+00:24:01,490 --> 00:24:05,190
+But that container image can't
+be larger than 10 gigabytes.
+
+572
+00:24:05,190 --> 00:24:07,880
+So again, a similar kind
+of constraint there.
+
+573
+00:24:07,880 --> 00:24:10,760
+So that's kind at a high
+level a quick, quick overview
+
+574
+00:24:10,760 --> 00:24:13,108
+of what AWS Lambda is.
+
+575
+00:24:13,108 --> 00:24:14,900
+What I want to do now
+is I'm going to pause
+
+576
+00:24:14,900 --> 00:24:16,525
+and I'm going to
+switch gears and we're
+
+577
+00:24:16,525 --> 00:24:20,940
+going to transition to
+looking at running through it,
+
+578
+00:24:20,940 --> 00:24:25,210
+just a really quick
+demo of this tool.
+
+579
+00:24:25,210 --> 00:24:25,710
+All right.
+
+580
+00:24:25,710 --> 00:24:30,790
+So picking up then, I've just
+opened up the AWS console,
+
+581
+00:24:30,790 --> 00:24:31,300
+obviously.
+
+582
+00:24:31,300 --> 00:24:34,920
+So if you want to follow along,
+you're more welcome to do this.
+
+583
+00:24:34,920 --> 00:24:37,090
+This should be running
+in the free tier.
+
+584
+00:24:37,090 --> 00:24:40,870
+So you are welcome to try to run
+it on your university account.
+
+585
+00:24:40,870 --> 00:24:42,630
+But again, for
+consistency, I'm just
+
+586
+00:24:42,630 --> 00:24:45,480
+recommending moving
+forward, doing everything
+
+587
+00:24:45,480 --> 00:24:47,072
+on your personal account.
+
+588
+00:24:47,072 --> 00:24:49,530
+Seems to be a bit too unstable
+with this many people trying
+
+589
+00:24:49,530 --> 00:24:51,780
+to do everything
+without us being
+
+590
+00:24:51,780 --> 00:24:55,030
+running kind of in a better
+managed corporate account.
+
+591
+00:24:55,030 --> 00:24:57,690
+So this is, again,
+a different topic
+
+592
+00:24:57,690 --> 00:25:00,720
+for another day of the ease of
+setting this up and running this
+
+593
+00:25:00,720 --> 00:25:03,540
+at scale, a lot of different
+people on the same account.
+
+594
+00:25:03,540 --> 00:25:07,050
+In reality, what we should have
+is an organizational account
+
+595
+00:25:07,050 --> 00:25:09,840
+that has much better defined
+roles and constrained
+
+596
+00:25:09,840 --> 00:25:10,540
+capacities.
+
+597
+00:25:10,540 --> 00:25:13,230
+But from a learning standpoint,
+it's much easier for me
+
+598
+00:25:13,230 --> 00:25:14,800
+to try to give you more access.
+
+599
+00:25:14,800 --> 00:25:16,550
+But that also then
+limits what you can do.
+
+600
+00:25:16,550 --> 00:25:19,770
+So trade-offs,
+learning, growing pains.
+
+601
+00:25:19,770 --> 00:25:20,730
+Either way.
+
+602
+00:25:20,730 --> 00:25:22,323
+For now, for
+consistency, you probably
+
+603
+00:25:22,323 --> 00:25:23,740
+want to run this
+on your personal.
+
+604
+00:25:23,740 --> 00:25:25,620
+But if for whatever
+reason, you don't have one
+
+605
+00:25:25,620 --> 00:25:27,578
+or couldn't get it working,
+feel free to try it
+
+606
+00:25:27,578 --> 00:25:28,850
+on the university account.
+
+607
+00:25:28,850 --> 00:25:30,850
+Just make sure again to
+always delete everything
+
+608
+00:25:30,850 --> 00:25:32,380
+after you're done.
+
+609
+00:25:32,380 --> 00:25:34,255
+So either way, once you
+come here, as always,
+
+610
+00:25:34,255 --> 00:25:37,390
+you can either search it up here
+or search up here for lambda
+
+611
+00:25:37,390 --> 00:25:39,470
+or click it if it's right
+there on the main page.
+
+612
+00:25:39,470 --> 00:25:40,840
+So you're going to do that.
+
+613
+00:25:40,840 --> 00:25:41,970
+Open up the Lambda page.
+
+614
+00:25:41,970 --> 00:25:43,720
+And so right now,
+there's actually a bunch
+
+615
+00:25:43,720 --> 00:25:45,910
+of functions already created.
+
+616
+00:25:45,910 --> 00:25:47,410
+One of these is
+the one we're going
+
+617
+00:25:47,410 --> 00:25:49,990
+to do in the next video,
+this code scraping one.
+
+618
+00:25:49,990 --> 00:25:52,263
+But if you don't have
+this or if you're
+
+619
+00:25:52,263 --> 00:25:54,680
+doing this on your personal
+account, it'll look different.
+
+620
+00:25:54,680 --> 00:25:55,805
+It'll just be nothing here.
+
+621
+00:25:55,805 --> 00:25:56,402
+And it's fine.
+
+622
+00:25:56,402 --> 00:25:57,860
+You can just click
+Create function.
+
+623
+00:25:57,860 --> 00:25:59,950
+That's what we're
+going to do anyways.
+
+624
+00:25:59,950 --> 00:26:02,150
+So you can see here now
+under the create function,
+
+625
+00:26:02,150 --> 00:26:04,640
+we can either create a
+new function from scratch,
+
+626
+00:26:04,640 --> 00:26:07,220
+use a blueprint, or
+select a container image,
+
+627
+00:26:07,220 --> 00:26:08,650
+as we talked about.
+
+628
+00:26:08,650 --> 00:26:10,330
+For again, this first
+quick demo, we're
+
+629
+00:26:10,330 --> 00:26:12,190
+just going to use a blueprint.
+
+630
+00:26:12,190 --> 00:26:15,190
+And so I think the one
+we wanted to use, yeah.
+
+631
+00:26:15,190 --> 00:26:16,930
+So let's look for
+the hello world one.
+
+632
+00:26:16,930 --> 00:26:18,850
+Everybody loves a
+good hello world.
+
+633
+00:26:18,850 --> 00:26:21,010
+It's called hello world Python.
+
+634
+00:26:21,010 --> 00:26:24,257
+And so we'll just click that,
+and then we'll click Configure.
+
+635
+00:26:24,257 --> 00:26:25,840
+So again, as you can
+see, this is just
+
+636
+00:26:25,840 --> 00:26:28,415
+building a lambda application
+from some sample code.
+
+637
+00:26:28,415 --> 00:26:30,790
+And actually, you can see
+there's a bunch of other things
+
+638
+00:26:30,790 --> 00:26:33,890
+you can do or select as
+far as pre-built ones.
+
+639
+00:26:33,890 --> 00:26:36,680
+Book a trip with Lex,
+handle Slack slash commands.
+
+640
+00:26:36,680 --> 00:26:38,860
+So without even writing
+all the code, all of these
+
+641
+00:26:38,860 --> 00:26:39,620
+already exist.
+
+642
+00:26:39,620 --> 00:26:41,895
+I mean, you see there's
+multiple pages of this 46
+
+643
+00:26:41,895 --> 00:26:42,770
+different blueprints.
+
+644
+00:26:42,770 --> 00:26:44,822
+So if you want to
+explore that as well too,
+
+645
+00:26:44,822 --> 00:26:47,030
+you'd be surprised what's
+already pre-built in there.
+
+646
+00:26:47,030 --> 00:26:49,780
+But we'll just do this
+hello world one for now
+
+647
+00:26:49,780 --> 00:26:52,320
+and click Configure.
+
+648
+00:26:52,320 --> 00:26:54,880
+And then in there, we can
+name it whatever we want.
+
+649
+00:26:54,880 --> 00:26:58,410
+So, I mean, I'll just call
+it hello world Python.
+
+650
+00:26:58,410 --> 00:26:58,910
+Why not?
+
+651
+00:27:02,460 --> 00:27:06,360
+And you see, it's going to
+create a execution role for us
+
+652
+00:27:06,360 --> 00:27:07,702
+by default.
+
+653
+00:27:07,702 --> 00:27:09,660
+It's going to give it
+permission to upload logs
+
+654
+00:27:09,660 --> 00:27:11,880
+to Amazon CloudWatch Logs.
+
+655
+00:27:11,880 --> 00:27:14,590
+If that's sufficient, what
+we're doing, which for this one,
+
+656
+00:27:14,590 --> 00:27:16,074
+it is, I believe.
+
+657
+00:27:16,074 --> 00:27:18,116
+I think we need to give
+it any other permissions.
+
+658
+00:27:20,802 --> 00:27:21,760
+All right, let's do it.
+
+659
+00:27:21,760 --> 00:27:24,913
+Actually, let's do create a new
+role from AWS policy templates.
+
+660
+00:27:24,913 --> 00:27:27,330
+But either way, if you did
+need more permission than that,
+
+661
+00:27:27,330 --> 00:27:28,455
+you could leave it at that.
+
+662
+00:27:28,455 --> 00:27:31,870
+If you've already made a
+role for your function,
+
+663
+00:27:31,870 --> 00:27:35,740
+you can select it here, or
+you can do create a new role.
+
+664
+00:27:35,740 --> 00:27:39,896
+And so I'll call this one
+just lambda_basic_execution.
+
+665
+00:27:43,440 --> 00:27:45,425
+And then I think--
+
+666
+00:27:45,425 --> 00:27:46,800
+I don't think we
+need to actually
+
+667
+00:27:46,800 --> 00:27:52,140
+give it any more,
+because what we're saying
+
+668
+00:27:52,140 --> 00:27:57,443
+is that we don't need it to
+have access to anything else.
+
+669
+00:27:57,443 --> 00:27:58,860
+So I'm just trying
+to double check
+
+670
+00:27:58,860 --> 00:28:00,310
+over my notes to make sure
+I didn't miss anything.
+
+671
+00:28:00,310 --> 00:28:02,602
+These are also-- these should
+be on Canvas as well too,
+
+672
+00:28:02,602 --> 00:28:03,850
+under Lecture 23 Lambda Demo.
+
+673
+00:28:03,850 --> 00:28:06,103
+But yeah, either way.
+
+674
+00:28:06,103 --> 00:28:07,770
+I think we're fine
+without anything else
+
+675
+00:28:07,770 --> 00:28:09,437
+because we're not
+going to actually call
+
+676
+00:28:09,437 --> 00:28:12,030
+to any external services.
+
+677
+00:28:12,030 --> 00:28:15,540
+But either way, this is
+what the sample code looks
+
+678
+00:28:15,540 --> 00:28:17,410
+like for this specific one.
+
+679
+00:28:17,410 --> 00:28:19,270
+We'll see in a second
+where we can edit it,
+
+680
+00:28:19,270 --> 00:28:21,550
+but for now, we're
+just looking at it.
+
+681
+00:28:21,550 --> 00:28:24,300
+This is what's kind of
+pre-baked into this.
+
+682
+00:28:24,300 --> 00:28:28,680
+So once we come down here and
+click Create Function, oops,
+
+683
+00:28:28,680 --> 00:28:30,293
+I already have that role.
+
+684
+00:28:30,293 --> 00:28:31,960
+So either way, I
+already have this role.
+
+685
+00:28:31,960 --> 00:28:33,585
+So I'm going to do
+use an existing role
+
+686
+00:28:33,585 --> 00:28:37,252
+and just do the
+lambda_basic_execution.
+
+687
+00:28:37,252 --> 00:28:39,460
+But if you don't have that,
+you can create a new one.
+
+688
+00:28:39,460 --> 00:28:41,293
+So it's just creating
+a role as we've always
+
+689
+00:28:41,293 --> 00:28:42,575
+done it before with IAM roles.
+
+690
+00:28:45,250 --> 00:28:45,830
+OK.
+
+691
+00:28:45,830 --> 00:28:52,030
+So now we find ourselves in the
+actual main in the main code
+
+692
+00:28:52,030 --> 00:28:57,730
+or the main words.
+
+693
+00:28:57,730 --> 00:28:59,960
+The main console window.
+
+694
+00:28:59,960 --> 00:29:02,650
+There we go, for the
+Lambda functions.
+
+695
+00:29:02,650 --> 00:29:05,380
+So OK, we can click OK on that.
+
+696
+00:29:05,380 --> 00:29:07,070
+And so you can see
+here, first off,
+
+697
+00:29:07,070 --> 00:29:08,680
+this is just kind
+of where we see
+
+698
+00:29:08,680 --> 00:29:11,530
+any triggers that are
+associated with our function
+
+699
+00:29:11,530 --> 00:29:12,860
+or any destinations.
+
+700
+00:29:12,860 --> 00:29:15,130
+This is our function itself.
+
+701
+00:29:15,130 --> 00:29:17,720
+If we had any layers, which
+we'll see the next time,
+
+702
+00:29:17,720 --> 00:29:21,370
+we could click here
+and it would drop us
+
+703
+00:29:21,370 --> 00:29:22,940
+down here to add on the layers.
+
+704
+00:29:22,940 --> 00:29:24,690
+And this would be again
+adding in any sort
+
+705
+00:29:24,690 --> 00:29:27,670
+of dependencies or packages
+associated with this.
+
+706
+00:29:27,670 --> 00:29:29,930
+You can see here as well
+the runtime settings.
+
+707
+00:29:29,930 --> 00:29:31,860
+So this is where it's
+actually running.
+
+708
+00:29:31,860 --> 00:29:34,690
+So it's going to be
+running in a Python 3.7.
+
+709
+00:29:34,690 --> 00:29:36,430
+The Handler, as
+you see here, this
+
+710
+00:29:36,430 --> 00:29:39,430
+is which Handler method
+is going to be invoked
+
+711
+00:29:39,430 --> 00:29:42,127
+by running this
+function for what we're
+
+712
+00:29:42,127 --> 00:29:44,210
+going to do in this one
+and actually the next one,
+
+713
+00:29:44,210 --> 00:29:46,370
+we can leave this as default.
+
+714
+00:29:46,370 --> 00:29:49,360
+But conceivably, you
+could change that.
+
+715
+00:29:49,360 --> 00:29:51,010
+Again, all this is
+saying is that we're
+
+716
+00:29:51,010 --> 00:29:54,070
+going to basically run the code
+that's in this window right
+
+717
+00:29:54,070 --> 00:29:55,750
+here, and that's OK.
+
+718
+00:29:55,750 --> 00:29:57,710
+And then you can also
+change the architecture.
+
+719
+00:29:57,710 --> 00:30:00,970
+So if you're running an ARM
+architecture versus x86,
+
+720
+00:30:00,970 --> 00:30:01,970
+you can do that as well.
+
+721
+00:30:01,970 --> 00:30:04,690
+But for now, we just want
+to look at this window
+
+722
+00:30:04,690 --> 00:30:06,920
+because this is really
+just a Python editor.
+
+723
+00:30:06,920 --> 00:30:09,400
+We could add any code
+we wanted to in here
+
+724
+00:30:09,400 --> 00:30:12,340
+and save it and all
+that good stuff.
+
+725
+00:30:12,340 --> 00:30:13,840
+Once you save your
+changes, you do
+
+726
+00:30:13,840 --> 00:30:15,757
+need to click Deploy so
+that those changes are
+
+727
+00:30:15,757 --> 00:30:19,860
+updated with the function here.
+
+728
+00:30:19,860 --> 00:30:22,800
+And so yeah, if you can see
+here, what this code basically
+
+729
+00:30:22,800 --> 00:30:29,170
+is doing is it is going to take
+as input some event and context.
+
+730
+00:30:29,170 --> 00:30:32,490
+And this is going to be
+based off of the trigger that
+
+731
+00:30:32,490 --> 00:30:33,530
+kicked it off.
+
+732
+00:30:33,530 --> 00:30:35,880
+So we're going to simulate
+a trigger here and just pass
+
+733
+00:30:35,880 --> 00:30:38,320
+a test function to it
+or a test trigger to it.
+
+734
+00:30:38,320 --> 00:30:41,600
+But if you had scheduled this
+in some way, then that is going
+
+735
+00:30:41,600 --> 00:30:43,350
+to contain the relevant
+information that's
+
+736
+00:30:43,350 --> 00:30:46,410
+passed to here, or if there's
+something else that calls to it
+
+737
+00:30:46,410 --> 00:30:49,980
+or that triggers the S3
+function or something like that,
+
+738
+00:30:49,980 --> 00:30:52,830
+that can also pass extra
+information in this context
+
+739
+00:30:52,830 --> 00:30:54,550
+as well or this
+event as well too.
+
+740
+00:30:54,550 --> 00:30:58,870
+So this is just, again, the
+way the structure of this code.
+
+741
+00:30:58,870 --> 00:31:02,350
+And so again, you see here
+lambda_function.lambda_handler,
+
+742
+00:31:02,350 --> 00:31:03,953
+lambda_function.lambda_handler.
+
+743
+00:31:03,953 --> 00:31:05,370
+So that's what's
+running or that's
+
+744
+00:31:05,370 --> 00:31:08,250
+what's going to run when
+we kick off this function.
+
+745
+00:31:08,250 --> 00:31:09,910
+If we change this
+to something else,
+
+746
+00:31:09,910 --> 00:31:11,410
+if we define a new
+function, we just
+
+747
+00:31:11,410 --> 00:31:15,150
+need to make sure we
+change that down there too.
+
+748
+00:31:15,150 --> 00:31:17,560
+So now to test it
+to see how it works,
+
+749
+00:31:17,560 --> 00:31:19,930
+we'll come over here, click
+this little dropdown arrow
+
+750
+00:31:19,930 --> 00:31:21,748
+and click Configure Test Event.
+
+751
+00:31:21,748 --> 00:31:23,540
+And we're just going
+to create a new event.
+
+752
+00:31:23,540 --> 00:31:25,040
+We're just going
+to call it, I don't
+
+753
+00:31:25,040 --> 00:31:27,710
+know TestEvent doesn't matter.
+
+754
+00:31:27,710 --> 00:31:28,835
+We'll leave it private.
+
+755
+00:31:28,835 --> 00:31:30,960
+Though if you're working
+in with a group or a team,
+
+756
+00:31:30,960 --> 00:31:32,810
+you can make it shareable
+such that anybody
+
+757
+00:31:32,810 --> 00:31:35,180
+in your account
+who has permissions
+
+758
+00:31:35,180 --> 00:31:36,543
+could see these test events.
+
+759
+00:31:36,543 --> 00:31:38,960
+So if you're working with a
+team that's testing functions,
+
+760
+00:31:38,960 --> 00:31:40,627
+this is a great thing
+to do, because you
+
+761
+00:31:40,627 --> 00:31:43,073
+can share these test events.
+
+762
+00:31:43,073 --> 00:31:45,490
+And we'll use this template
+because this is the one that's
+
+763
+00:31:45,490 --> 00:31:46,705
+kind of pre-baked with this.
+
+764
+00:31:46,705 --> 00:31:48,580
+But we'll see in the
+future that this is just
+
+765
+00:31:48,580 --> 00:31:52,460
+basically the format of
+the way it's triggered.
+
+766
+00:31:52,460 --> 00:31:55,600
+So all of these are
+different potential triggers
+
+767
+00:31:55,600 --> 00:31:57,350
+with different
+information in them.
+
+768
+00:31:57,350 --> 00:32:00,130
+And so, for example, if I--
+
+769
+00:32:00,130 --> 00:32:01,480
+let me just say I clicked--
+
+770
+00:32:01,480 --> 00:32:02,950
+I don't know, S3 put.
+
+771
+00:32:02,950 --> 00:32:05,500
+You can see here that this
+is the event JSON that gets
+
+772
+00:32:05,500 --> 00:32:07,400
+passed to it for a put action.
+
+773
+00:32:07,400 --> 00:32:10,450
+So if a put action
+in my S3 bucket
+
+774
+00:32:10,450 --> 00:32:12,320
+is the trigger
+for this function,
+
+775
+00:32:12,320 --> 00:32:14,530
+then this is what it would
+look like most likely.
+
+776
+00:32:14,530 --> 00:32:16,160
+It's something resembling this.
+
+777
+00:32:16,160 --> 00:32:17,620
+And so this is
+information that I
+
+778
+00:32:17,620 --> 00:32:20,320
+could use in my
+call, what was put
+
+779
+00:32:20,320 --> 00:32:24,170
+into here, the bucket, the size
+of the object, all that stuff.
+
+780
+00:32:24,170 --> 00:32:25,910
+And so by using this
+sample code here,
+
+781
+00:32:25,910 --> 00:32:30,190
+I can simulate what my function
+will do if that happens.
+
+782
+00:32:30,190 --> 00:32:31,690
+But for now, again,
+we're just going
+
+783
+00:32:31,690 --> 00:32:33,370
+to take the
+recommended hello world
+
+784
+00:32:33,370 --> 00:32:37,600
+because it's expected that we
+have three keys and values.
+
+785
+00:32:37,600 --> 00:32:39,400
+This kind of dictionary.
+
+786
+00:32:39,400 --> 00:32:43,160
+So let's say, for
+example, that I replaced
+
+787
+00:32:43,160 --> 00:32:48,560
+the first key with hello world.
+
+788
+00:32:48,560 --> 00:32:52,200
+Then we'll just click Save.
+
+789
+00:32:52,200 --> 00:32:59,710
+Well, now if I go down here
+and click Test, it should-- oh,
+
+790
+00:32:59,710 --> 00:33:00,260
+it got.
+
+791
+00:33:00,260 --> 00:33:00,860
+There we go.
+
+792
+00:33:00,860 --> 00:33:02,175
+No execution results yet.
+
+793
+00:33:02,175 --> 00:33:03,050
+Let's try this again.
+
+794
+00:33:03,050 --> 00:33:04,720
+Did I not save it?
+
+795
+00:33:04,720 --> 00:33:07,150
+Save, deploy.
+
+796
+00:33:07,150 --> 00:33:08,300
+Now let's try testing it.
+
+797
+00:33:08,300 --> 00:33:09,050
+There we go.
+
+798
+00:33:09,050 --> 00:33:11,380
+And now you can see the
+kind of logs of this.
+
+799
+00:33:11,380 --> 00:33:13,630
+This is what the execution
+results will look like.
+
+800
+00:33:13,630 --> 00:33:16,130
+And so this will tell you what's
+happening in your function.
+
+801
+00:33:16,130 --> 00:33:18,530
+So you can see we
+ran this test event.
+
+802
+00:33:18,530 --> 00:33:21,250
+The response was hello
+world, because that's
+
+803
+00:33:21,250 --> 00:33:22,970
+what the response
+of this function is.
+
+804
+00:33:22,970 --> 00:33:25,540
+But more importantly,
+we can see here
+
+805
+00:33:25,540 --> 00:33:28,600
+in these function
+logs that we took in,
+
+806
+00:33:28,600 --> 00:33:31,130
+we can see we have these
+print statements here.
+
+807
+00:33:31,130 --> 00:33:34,090
+These print statements
+are taking in the event
+
+808
+00:33:34,090 --> 00:33:36,140
+and they're looking
+for key 1 and event.
+
+809
+00:33:36,140 --> 00:33:40,300
+So event is that JSON file
+that we passed because key 1--
+
+810
+00:33:40,300 --> 00:33:41,260
+or sorry.
+
+811
+00:33:41,260 --> 00:33:44,015
+Yeah, key 1 in there
+was hello world.
+
+812
+00:33:44,015 --> 00:33:46,390
+And so now you can see this
+is how I can pass information
+
+813
+00:33:46,390 --> 00:33:52,970
+from my event trigger to
+Python to then execute on.
+
+814
+00:33:52,970 --> 00:33:56,770
+So again, had this
+been my S3 put call,
+
+815
+00:33:56,770 --> 00:33:58,760
+then I could have
+passed information
+
+816
+00:33:58,760 --> 00:34:01,790
+about the file and the
+size and all that to Python
+
+817
+00:34:01,790 --> 00:34:03,240
+to then do something with it.
+
+818
+00:34:03,240 --> 00:34:06,330
+Downsize it and we talked
+about the thumbnail.
+
+819
+00:34:06,330 --> 00:34:08,639
+Maybe I want to shrink it
+and then upload it again.
+
+820
+00:34:08,639 --> 00:34:11,019
+So all of that can
+be defined like this.
+
+821
+00:34:13,739 --> 00:34:17,380
+We could also look
+into the metrics here.
+
+822
+00:34:17,380 --> 00:34:20,820
+So if we come over
+here, click monitor.
+
+823
+00:34:20,820 --> 00:34:23,360
+I don't think we actually gave
+it permissions to see this.
+
+824
+00:34:23,360 --> 00:34:23,860
+Let's see.
+
+825
+00:34:23,860 --> 00:34:25,860
+Yeah, we didn't give it
+permissions to see this.
+
+826
+00:34:25,860 --> 00:34:29,219
+But had we done that and
+we'll see that in the next one
+
+827
+00:34:29,219 --> 00:34:31,120
+because we'll give it
+permissions to do this.
+
+828
+00:34:31,120 --> 00:34:33,570
+You'll see how many
+invocations, how many times
+
+829
+00:34:33,570 --> 00:34:37,060
+was this function invoked,
+the duration of each of them,
+
+830
+00:34:37,060 --> 00:34:40,449
+the error count, the
+success rate failures,
+
+831
+00:34:40,449 --> 00:34:42,550
+how many concurrent executions?
+
+832
+00:34:42,550 --> 00:34:44,770
+All this information
+will show up in here.
+
+833
+00:34:44,770 --> 00:34:46,900
+All these logs will
+show you, again,
+
+834
+00:34:46,900 --> 00:34:48,610
+the most expensive invocations.
+
+835
+00:34:48,610 --> 00:34:52,900
+So you can see here this one was
+the most expensive invocation.
+
+836
+00:34:52,900 --> 00:34:57,090
+It took two milliseconds.
+
+837
+00:34:57,090 --> 00:35:00,490
+It's built in duration
+of gigabits seconds.
+
+838
+00:35:00,490 --> 00:35:04,050
+So 0.00025.
+
+839
+00:35:04,050 --> 00:35:08,640
+We can actually really quick
+also look at Lambda pricing.
+
+840
+00:35:08,640 --> 00:35:12,150
+So we said we were
+going to do that.
+
+841
+00:35:12,150 --> 00:35:13,790
+So you can see that--
+
+842
+00:35:13,790 --> 00:35:15,790
+well, actually, first
+off, there is a free tier.
+
+843
+00:35:15,790 --> 00:35:17,832
+I forget what the free
+tier is. look in a second.
+
+844
+00:35:17,832 --> 00:35:25,800
+But for x86 calls, you're paying
+0.000016667 for every gigabit
+
+845
+00:35:25,800 --> 00:35:27,570
+second.
+
+846
+00:35:27,570 --> 00:35:31,120
+And so here we have
+gigabit seconds.
+
+847
+00:35:31,120 --> 00:35:34,320
+So 0.00025.
+
+848
+00:35:34,320 --> 00:35:44,950
+So it's 0.00025 five
+times 0.000016667.
+
+849
+00:35:44,950 --> 00:35:49,230
+And so technically, that
+would have cost us 4 times 10
+
+850
+00:35:49,230 --> 00:35:52,520
+to the negative 9 dollars.
+
+851
+00:35:52,520 --> 00:35:54,510
+So very cheap.
+
+852
+00:35:54,510 --> 00:35:57,290
+I mean, you can see here, that's
+for duration and the number
+
+853
+00:35:57,290 --> 00:35:59,680
+$0.20 per 1 million requests.
+
+854
+00:35:59,680 --> 00:36:02,160
+So these prices are super low.
+
+855
+00:36:02,160 --> 00:36:04,465
+And that's really the value
+of this, is that I mean,
+
+856
+00:36:04,465 --> 00:36:05,840
+even though this
+is not running--
+
+857
+00:36:05,840 --> 00:36:08,550
+even if it wasn't
+running at the free tier,
+
+858
+00:36:08,550 --> 00:36:11,050
+it still is wildly cheap.
+
+859
+00:36:11,050 --> 00:36:14,060
+I'm pretty sure, again, that
+they have a free tier for this,
+
+860
+00:36:14,060 --> 00:36:15,380
+though.
+
+861
+00:36:15,380 --> 00:36:16,650
+Let's see, lambda free tier.
+
+862
+00:36:16,650 --> 00:36:20,180
+So the lambda free tier includes
+400,000 gigabit seconds of time
+
+863
+00:36:20,180 --> 00:36:21,000
+every month.
+
+864
+00:36:21,000 --> 00:36:26,000
+So you can use this again
+in many different ways,
+
+865
+00:36:26,000 --> 00:36:29,540
+or for that matter, you can
+even host a website via Lambda
+
+866
+00:36:29,540 --> 00:36:32,532
+is that when somebody sends a
+request to your URL or whatever,
+
+867
+00:36:32,532 --> 00:36:34,490
+you can have it kick off
+a Lambda function that
+
+868
+00:36:34,490 --> 00:36:36,200
+returns a file and posts there.
+
+869
+00:36:36,200 --> 00:36:38,160
+And you could do that
+as long as it's static.
+
+870
+00:36:38,160 --> 00:36:42,440
+So this is again the
+flexibility of lambda
+
+871
+00:36:42,440 --> 00:36:45,830
+here, super cheap to run as long
+as you're not doing something
+
+872
+00:36:45,830 --> 00:36:48,600
+at a large or of
+absurdly large scale.
+
+873
+00:36:48,600 --> 00:36:53,430
+But even then, it's a while
+before you run into any issues.
+
+874
+00:36:53,430 --> 00:36:54,290
+So that's mostly it.
+
+875
+00:36:54,290 --> 00:36:56,290
+Last thing, I'll just
+show you how to delete it.
+
+876
+00:36:56,290 --> 00:36:59,470
+You just click Actions, click
+Delete Function, click Delete.
+
+877
+00:36:59,470 --> 00:37:00,630
+And it's that easy.
+
+878
+00:37:00,630 --> 00:37:03,640
+Again because there's not any
+sort of instances running live,
+
+879
+00:37:03,640 --> 00:37:05,820
+it spins it up and shuts
+it down serverless.
+
+880
+00:37:05,820 --> 00:37:08,520
+And so you don't have to worry
+that there's this long thing
+
+881
+00:37:08,520 --> 00:37:11,350
+to shut down or a bunch of
+things to sync together.
+
+882
+00:37:11,350 --> 00:37:13,770
+It's just that one function.
+
+883
+00:37:13,770 --> 00:37:15,700
+So we'll leave it at
+that for this video.
+
+884
+00:37:15,700 --> 00:37:17,940
+We'll pick up kind of
+from here next time
+
+885
+00:37:17,940 --> 00:37:20,460
+and actually look at a
+more like in-depth example
+
+886
+00:37:20,460 --> 00:37:21,780
+of doing something with it.
+
+887
+00:37:21,780 --> 00:37:23,020
+Again, got this hint here.
+
+888
+00:37:23,020 --> 00:37:24,562
+We're going to be
+scraping some COVID
+
+889
+00:37:24,562 --> 00:37:26,380
+data using a Lambda function.
+
+890
+00:37:26,380 --> 00:37:27,870
+So hopefully,
+that's a good teaser
+
+891
+00:37:27,870 --> 00:37:31,960
+for the next video, which will
+be, I believe, next week then.
+
+892
+00:37:31,960 --> 00:37:33,130
+So we'll see you next time.
+
+893
+00:37:33,130 --> 00:37:34,713
+Let me know if you
+have any questions,
+
+894
+00:37:34,713 --> 00:37:36,320
+and talk to you later.

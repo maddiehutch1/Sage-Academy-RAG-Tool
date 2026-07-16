@@ -1,0 +1,924 @@
+1
+00:00:00,830 --> 00:00:02,700
+INSTRUCTOR: Hi,
+Data 2100 students.
+
+2
+00:00:02,700 --> 00:00:05,180
+This lecture is one
+of those lectures
+
+3
+00:00:05,180 --> 00:00:09,390
+that is necessary in the
+world of information systems.
+
+4
+00:00:09,390 --> 00:00:13,370
+It's actually a topic
+that many of you
+
+5
+00:00:13,370 --> 00:00:16,079
+can get a full degree
+in project management.
+
+6
+00:00:16,079 --> 00:00:21,720
+Project management is a
+philosophy, a principle content.
+
+7
+00:00:21,720 --> 00:00:25,830
+It's a practice, if you will,
+that is heavily studied.
+
+8
+00:00:25,830 --> 00:00:29,310
+And as you get into your
+perspective industry,
+
+9
+00:00:29,310 --> 00:00:30,950
+your career, you're
+going to notice
+
+10
+00:00:30,950 --> 00:00:33,350
+that project management looks
+different across the board
+
+11
+00:00:33,350 --> 00:00:34,800
+and from team to team.
+
+12
+00:00:34,800 --> 00:00:37,640
+So I just want to give you
+some foundations of why
+
+13
+00:00:37,640 --> 00:00:40,250
+project management
+matters, some ideas
+
+14
+00:00:40,250 --> 00:00:43,610
+based upon our reading of
+why there's different project
+
+15
+00:00:43,610 --> 00:00:46,670
+management methodologies,
+what they're both used for,
+
+16
+00:00:46,670 --> 00:00:48,560
+and especially in
+the world of IT,
+
+17
+00:00:48,560 --> 00:00:51,020
+the systems
+development life cycle.
+
+18
+00:00:51,020 --> 00:00:54,830
+So this is a very
+high-level, brief video
+
+19
+00:00:54,830 --> 00:00:56,280
+about project management.
+
+20
+00:00:56,280 --> 00:00:58,490
+But there's seriously
+degrees of--
+
+21
+00:00:58,490 --> 00:01:02,160
+I mean, so many jobs are
+just project managers.
+
+22
+00:01:02,160 --> 00:01:05,160
+There's an element of project
+management in every capacity
+
+23
+00:01:05,160 --> 00:01:07,140
+of every job that you work in.
+
+24
+00:01:07,140 --> 00:01:09,960
+Right now I'm working on
+an analytic solution center
+
+25
+00:01:09,960 --> 00:01:14,880
+project, that I'm helping manage
+the project that I'm working
+
+26
+00:01:14,880 --> 00:01:16,690
+on requirements gathering.
+
+27
+00:01:16,690 --> 00:01:18,600
+Those who are working
+on the project
+
+28
+00:01:18,600 --> 00:01:22,650
+are working with me to
+understand what the end user
+
+29
+00:01:22,650 --> 00:01:24,310
+would like from the project.
+
+30
+00:01:24,310 --> 00:01:26,710
+We're doing this
+in an agile way.
+
+31
+00:01:26,710 --> 00:01:29,580
+So we're using all of
+these tools and techniques
+
+32
+00:01:29,580 --> 00:01:32,940
+that you learn in this
+class in a project
+
+33
+00:01:32,940 --> 00:01:35,050
+that students are
+working on here at USU
+
+34
+00:01:35,050 --> 00:01:39,760
+So this is used in all sorts
+of different capacities.
+
+35
+00:01:39,760 --> 00:01:41,680
+But why does project
+management matter?
+
+36
+00:01:41,680 --> 00:01:45,430
+So project management
+defines a plan and schedule.
+
+37
+00:01:45,430 --> 00:01:48,270
+So project management helps
+in defining a clear plan
+
+38
+00:01:48,270 --> 00:01:50,200
+and schedule for the project.
+
+39
+00:01:50,200 --> 00:01:51,700
+We ensure that goals are met.
+
+40
+00:01:51,700 --> 00:01:55,830
+We optimize resource
+allocation, so what resources
+
+41
+00:01:55,830 --> 00:02:00,480
+go where as far as budget,
+time, human capacity.
+
+42
+00:02:00,480 --> 00:02:02,920
+We also improve
+team collaboration.
+
+43
+00:02:02,920 --> 00:02:06,360
+So oftentimes, project
+management looks like--
+
+44
+00:02:06,360 --> 00:02:09,449
+that you have clearly defined
+roles and responsibility
+
+45
+00:02:09,449 --> 00:02:12,720
+of each person on the team,
+and that we're working
+
+46
+00:02:12,720 --> 00:02:14,230
+towards that common goal.
+
+47
+00:02:14,230 --> 00:02:16,810
+We also can manage
+risk and uncertainties.
+
+48
+00:02:16,810 --> 00:02:19,600
+There's always risk and
+uncertainties with a project--
+
+49
+00:02:19,600 --> 00:02:21,360
+something can go wrong.
+
+50
+00:02:21,360 --> 00:02:23,280
+This proactive
+approach helps minimize
+
+51
+00:02:23,280 --> 00:02:26,680
+the impacts of risks on
+the outcome timelines,
+
+52
+00:02:26,680 --> 00:02:27,850
+and what have you.
+
+53
+00:02:27,850 --> 00:02:30,820
+It also enhances
+customer satisfaction.
+
+54
+00:02:30,820 --> 00:02:33,090
+So us delivering
+a project on time
+
+55
+00:02:33,090 --> 00:02:36,550
+and within budget enhances
+customer satisfaction.
+
+56
+00:02:36,550 --> 00:02:39,520
+So we have the systems
+development life cycle.
+
+57
+00:02:39,520 --> 00:02:42,090
+There are seven steps within
+that systems development life
+
+58
+00:02:42,090 --> 00:02:42,820
+cycle.
+
+59
+00:02:42,820 --> 00:02:45,940
+First off, we start by
+planning the project.
+
+60
+00:02:45,940 --> 00:02:48,490
+So we lay out what does
+this project look like,
+
+61
+00:02:48,490 --> 00:02:50,590
+who's involved, what
+are the requirements.
+
+62
+00:02:50,590 --> 00:02:52,330
+We then analyze the project.
+
+63
+00:02:52,330 --> 00:02:54,125
+We design the project.
+
+64
+00:02:54,125 --> 00:02:57,300
+So maybe this looks like
+you're developing a website,
+
+65
+00:02:57,300 --> 00:03:01,110
+and you're going to be
+developing a wireframe.
+
+66
+00:03:01,110 --> 00:03:03,000
+A wireframe of a
+website is basically
+
+67
+00:03:03,000 --> 00:03:05,910
+the bare bones of a website
+that shows you, here's what
+
+68
+00:03:05,910 --> 00:03:07,990
+the first page will look like.
+
+69
+00:03:07,990 --> 00:03:10,810
+And there's a diagram
+that maybe is interactive.
+
+70
+00:03:10,810 --> 00:03:12,530
+Then we develop that website.
+
+71
+00:03:12,530 --> 00:03:15,410
+So based upon feedback
+that we've been receiving,
+
+72
+00:03:15,410 --> 00:03:16,910
+we can push to development.
+
+73
+00:03:16,910 --> 00:03:17,780
+Then we test it.
+
+74
+00:03:17,780 --> 00:03:19,610
+Does the website work
+like we want it to?
+
+75
+00:03:19,610 --> 00:03:22,640
+We can then implement the
+website and then maintain it.
+
+76
+00:03:22,640 --> 00:03:25,910
+So this is not necessarily
+just specific to IT,
+
+77
+00:03:25,910 --> 00:03:28,280
+but it does use technical terms.
+
+78
+00:03:28,280 --> 00:03:31,780
+But in general, this is what
+a life cycle of a project
+
+79
+00:03:31,780 --> 00:03:33,150
+looks like.
+
+80
+00:03:33,150 --> 00:03:35,860
+So there's three main
+developments within the systems
+
+81
+00:03:35,860 --> 00:03:37,160
+development life cycle.
+
+82
+00:03:37,160 --> 00:03:40,160
+The development phase is in
+the development environment.
+
+83
+00:03:40,160 --> 00:03:41,590
+So make sure you know that.
+
+84
+00:03:41,590 --> 00:03:44,440
+The quality assurance--
+so quality assurance
+
+85
+00:03:44,440 --> 00:03:46,100
+is what QA stands for.
+
+86
+00:03:46,100 --> 00:03:47,270
+That's where we test.
+
+87
+00:03:47,270 --> 00:03:49,900
+Does this work like we
+think it should be working?
+
+88
+00:03:49,900 --> 00:03:51,560
+Like it should be working right.
+
+89
+00:03:51,560 --> 00:03:53,150
+And then we finally
+implement this.
+
+90
+00:03:53,150 --> 00:03:55,210
+We put it into
+production, meaning people
+
+91
+00:03:55,210 --> 00:03:56,960
+can utilize this website.
+
+92
+00:03:56,960 --> 00:03:58,910
+They can purchase
+things on this website.
+
+93
+00:03:58,910 --> 00:04:03,170
+This is pushed out into the
+greater public, if you will,
+
+94
+00:04:03,170 --> 00:04:06,070
+to be able to be used, or
+if it's an internal project
+
+95
+00:04:06,070 --> 00:04:08,230
+that those end users
+then can finally
+
+96
+00:04:08,230 --> 00:04:10,520
+use whatever you just produced.
+
+97
+00:04:10,520 --> 00:04:13,700
+We also have two ideas
+of project management.
+
+98
+00:04:13,700 --> 00:04:16,970
+So we have the agile approach
+and the waterfall approach.
+
+99
+00:04:16,970 --> 00:04:20,740
+The agile methodology is
+really helpful for when
+
+100
+00:04:20,740 --> 00:04:23,360
+you're starting a project.
+
+101
+00:04:23,360 --> 00:04:24,910
+The client really
+isn't sure what
+
+102
+00:04:24,910 --> 00:04:26,870
+they want at the
+beginning of the project.
+
+103
+00:04:26,870 --> 00:04:28,090
+Sometimes this looks like--
+
+104
+00:04:28,090 --> 00:04:32,260
+I had my own website development
+company for some time,
+
+105
+00:04:32,260 --> 00:04:34,552
+and I would meet with
+a client and based
+
+106
+00:04:34,552 --> 00:04:36,260
+upon what the client
+was saying, like oh,
+
+107
+00:04:36,260 --> 00:04:38,180
+this is going to be
+the agile approach.
+
+108
+00:04:38,180 --> 00:04:41,050
+The requirements of
+the project weren't
+
+109
+00:04:41,050 --> 00:04:43,760
+really well-defined I'd
+ask follow-up questions,
+
+110
+00:04:43,760 --> 00:04:45,730
+and it seemed like
+there was some area
+
+111
+00:04:45,730 --> 00:04:46,970
+that they hadn't considered.
+
+112
+00:04:46,970 --> 00:04:51,280
+So with agile, basically, you
+work through this entire systems
+
+113
+00:04:51,280 --> 00:04:54,562
+development life cycle
+in a span of a sprint,
+
+114
+00:04:54,562 --> 00:04:55,520
+is what they're called.
+
+115
+00:04:55,520 --> 00:04:57,920
+So generally, sprints
+are two weeks.
+
+116
+00:04:57,920 --> 00:05:00,950
+So at the first of that
+two weeks you're planning,
+
+117
+00:05:00,950 --> 00:05:03,380
+what does this sprint need
+to accomplish by the end?
+
+118
+00:05:03,380 --> 00:05:07,880
+So if you're working on, say,
+a Contact Us page on a website,
+
+119
+00:05:07,880 --> 00:05:10,280
+you plan out that one page.
+
+120
+00:05:10,280 --> 00:05:13,300
+You analyze the needs,
+you design the needs,
+
+121
+00:05:13,300 --> 00:05:15,250
+you develop that one page.
+
+122
+00:05:15,250 --> 00:05:17,540
+You test that one page.
+
+123
+00:05:17,540 --> 00:05:20,275
+You implement that one page.
+
+124
+00:05:20,275 --> 00:05:22,560
+And at that very end
+of those two weeks,
+
+125
+00:05:22,560 --> 00:05:25,880
+you get feedback from your
+client who says, oh, I
+
+126
+00:05:25,880 --> 00:05:29,100
+like this part of the page,
+change that part of the page.
+
+127
+00:05:29,100 --> 00:05:32,750
+And you have a potentially--
+we call it shippable product
+
+128
+00:05:32,750 --> 00:05:36,770
+by the end of that two weeks.
+
+129
+00:05:36,770 --> 00:05:38,480
+And then the next
+two weeks, say you're
+
+130
+00:05:38,480 --> 00:05:41,850
+going to work on the home
+page of the website, right.
+
+131
+00:05:41,850 --> 00:05:44,270
+So you're breaking
+down the project
+
+132
+00:05:44,270 --> 00:05:47,030
+into its component parts.
+
+133
+00:05:47,030 --> 00:05:49,160
+And so you're getting
+a ton of feedback
+
+134
+00:05:49,160 --> 00:05:51,720
+with the client on what's
+working and what's not.
+
+135
+00:05:51,720 --> 00:05:54,650
+A waterfall is
+more, so you're just
+
+136
+00:05:54,650 --> 00:05:57,510
+going through each of
+these phases one time.
+
+137
+00:05:57,510 --> 00:06:02,330
+So maybe it's a security
+system at a bank.
+
+138
+00:06:02,330 --> 00:06:05,310
+Say, it's somebody at
+America First Bank,
+
+139
+00:06:05,310 --> 00:06:07,880
+and they're going around to
+all the brick-and-mortar banks
+
+140
+00:06:07,880 --> 00:06:09,900
+to implement this
+new security system.
+
+141
+00:06:09,900 --> 00:06:12,620
+If they've done it so
+many times and it's really
+
+142
+00:06:12,620 --> 00:06:13,890
+well thought out--
+
+143
+00:06:13,890 --> 00:06:17,730
+it's very much a
+lockstep approach--
+
+144
+00:06:17,730 --> 00:06:18,890
+then a waterfall may work.
+
+145
+00:06:18,890 --> 00:06:20,810
+And a waterfall looks
+like I'm in the planning
+
+146
+00:06:20,810 --> 00:06:23,760
+phase for some time and the
+analysis phase for some time,
+
+147
+00:06:23,760 --> 00:06:25,560
+in the design phase
+for some time,
+
+148
+00:06:25,560 --> 00:06:27,540
+the development
+phase for some time,
+
+149
+00:06:27,540 --> 00:06:30,390
+the testing phase for some
+time, and implementation
+
+150
+00:06:30,390 --> 00:06:31,720
+phase for some time.
+
+151
+00:06:31,720 --> 00:06:34,870
+We do not circle
+back up in waterfall.
+
+152
+00:06:34,870 --> 00:06:38,380
+Waterfall, you are in planning
+phase for a period of time,
+
+153
+00:06:38,380 --> 00:06:40,840
+then you go into
+analysis, then design.
+
+154
+00:06:40,840 --> 00:06:42,352
+So just keep that in mind.
+
+155
+00:06:42,352 --> 00:06:43,810
+There's those two
+different phases.
+
+156
+00:06:43,810 --> 00:06:45,820
+Both have their pros and cons.
+
+157
+00:06:45,820 --> 00:06:48,270
+Generally, you're
+going to see a mix.
+
+158
+00:06:48,270 --> 00:06:54,030
+But most teams are wanting to
+be agile in their methodology.
+
+159
+00:06:54,030 --> 00:06:58,732
+Finally, the element of
+scope creep with projects.
+
+160
+00:06:58,732 --> 00:07:00,930
+Part of this will look
+like-- a lot of my examples
+
+161
+00:07:00,930 --> 00:07:03,460
+are websites or data
+analysis projects.
+
+162
+00:07:03,460 --> 00:07:05,890
+But scope creep you
+meet with the client.
+
+163
+00:07:05,890 --> 00:07:09,430
+They say, I want a website
+that is four pages.
+
+164
+00:07:09,430 --> 00:07:12,940
+And so you work with them
+over a series of sprints.
+
+165
+00:07:12,940 --> 00:07:15,870
+You meet with them
+and then you can
+
+166
+00:07:15,870 --> 00:07:18,570
+start to see that they're
+like, oh, actually,
+
+167
+00:07:18,570 --> 00:07:20,470
+we might want to
+add another page,
+
+168
+00:07:20,470 --> 00:07:23,460
+or we might want to add another
+capability on an existing page
+
+169
+00:07:23,460 --> 00:07:25,180
+that we didn't know about.
+
+170
+00:07:25,180 --> 00:07:28,200
+So that just means that the
+project is growing and growing
+
+171
+00:07:28,200 --> 00:07:33,060
+and growing, which, if you can
+communicate with the client,
+
+172
+00:07:33,060 --> 00:07:34,360
+is going to cost more money.
+
+173
+00:07:34,360 --> 00:07:36,670
+It's going to take
+more resources.
+
+174
+00:07:36,670 --> 00:07:38,140
+It's going to take more time.
+
+175
+00:07:38,140 --> 00:07:40,360
+Then you can come to
+some sort of agreement.
+
+176
+00:07:40,360 --> 00:07:44,110
+But scope creep oftentimes
+is the fail of most projects
+
+177
+00:07:44,110 --> 00:07:47,550
+because you let it get so big
+that you don't condense it down
+
+178
+00:07:47,550 --> 00:07:49,900
+into, OK, what is the
+most important parts?
+
+179
+00:07:49,900 --> 00:07:53,490
+And be firm when you're
+working in a project
+
+180
+00:07:53,490 --> 00:07:56,820
+and considering what is
+originally part of this project
+
+181
+00:07:56,820 --> 00:08:00,750
+and what is being added to it
+that we need to either save
+
+182
+00:08:00,750 --> 00:08:04,150
+for another project or up
+the budget, up the timeline,
+
+183
+00:08:04,150 --> 00:08:05,680
+those types of things.
+
+184
+00:08:05,680 --> 00:08:07,720
+So that's a little bit
+about project management.
+
+185
+00:08:07,720 --> 00:08:10,150
+Again, there is degrees in this.
+
+186
+00:08:10,150 --> 00:08:11,860
+There's whole careers
+devoted to this,
+
+187
+00:08:11,860 --> 00:08:13,650
+but I just want you
+to think about how
+
+188
+00:08:13,650 --> 00:08:15,160
+we manage big projects.
+
+189
+00:08:15,160 --> 00:08:18,270
+And you have projects going
+on at either at your work
+
+190
+00:08:18,270 --> 00:08:21,310
+or in school that there is an
+element of project management
+
+191
+00:08:21,310 --> 00:08:23,940
+that communication and making
+sure those deliverables are
+
+192
+00:08:23,940 --> 00:08:25,180
+met on time.
+
+193
+00:08:25,180 --> 00:08:27,180
+But something to keep
+in mind here as we're
+
+194
+00:08:27,180 --> 00:08:29,020
+setting information in business.
+
+195
+00:08:29,020 --> 00:08:31,500
+Take care, everybody.

@@ -1,0 +1,1950 @@
+1
+00:00:01,500 --> 00:00:03,340
+All right, Data2100 students, let's
+
+2
+00:00:03,340 --> 00:00:06,020
+jump into our introduction to databases.
+
+3
+00:00:06,500 --> 00:00:10,860
+So our objectives for today, number
+one, we're going to focus on why
+
+4
+00:00:10,860 --> 00:00:15,080
+do databases exist? Why do we even
+need them? Why do we even care?
+
+5
+00:00:15,160 --> 00:00:17,420
+Then we're going to look at
+understanding the structure
+
+6
+00:00:17,420 --> 00:00:20,020
+of a single table and
+database and then identifying
+
+7
+00:00:20,020 --> 00:00:22,800
+different components of
+a relational database.
+
+8
+00:00:22,880 --> 00:00:28,980
+So how do we store data? Let's think
+about this. How do we store data?
+
+9
+00:00:29,400 --> 00:00:33,820
+and you're like well you know I
+store data like I'm storing images
+
+10
+00:00:33,820 --> 00:00:38,940
+on my phone right okay yeah images
+are absolutely data maybe you're
+
+11
+00:00:38,940 --> 00:00:42,280
+storing data maybe you're throwing
+all of your documents into a google
+
+12
+00:00:42,280 --> 00:00:46,740
+drive maybe you're storing data
+in excel spreadsheets right maybe
+
+13
+00:00:46,740 --> 00:00:50,880
+you're really getting into excel
+spreadsheets I love excel it can
+
+14
+00:00:50,880 --> 00:00:54,580
+be really really powerful so maybe
+those are some personal ways that
+
+15
+00:00:54,580 --> 00:00:57,660
+you're storing data you know all
+of your text messages and things
+
+16
+00:00:57,660 --> 00:01:01,080
+are stored on your phone. Your
+phone is probably storing a ton of
+
+17
+00:01:01,080 --> 00:01:05,150
+your data, and your phone is probably
+backing up to the cloud, which
+
+18
+00:01:05,560 --> 00:01:09,060
+is storing your data there. So we
+store data in a lot of different
+
+19
+00:01:09,060 --> 00:01:16,800
+ways, but how do we store data that
+sits in our rows and columns, like
+
+20
+00:01:16,800 --> 00:01:20,260
+an Excel spreadsheet? How do we
+store that type of data? How do we
+
+21
+00:01:20,260 --> 00:01:24,120
+store data that is tracking all of
+our transactions that are happening
+
+22
+00:01:24,120 --> 00:01:27,960
+at the local convenience store.
+How is that data being stored?
+
+23
+00:01:28,380 --> 00:01:33,200
+So one thing to consider is when
+we've been dealing with Excel
+
+24
+00:01:33,200 --> 00:01:37,220
+spreadsheets in this class, they are
+very powerful, right? But there are
+
+25
+00:01:37,220 --> 00:01:40,900
+a couple of problems with spreadsheets.
+They are not meant for long
+
+26
+00:01:40,900 --> 00:01:46,160
+-term data storage. If you have tons
+of data in an Excel spreadsheet,
+
+27
+00:01:46,160 --> 00:01:50,450
+you have millions of records of
+rows, you are going to expect
+
+28
+00:01:50,620 --> 00:01:55,220
+data loss and slow load time. So
+when you try and open up that Excel
+
+29
+00:01:55,220 --> 00:01:58,780
+spreadsheet with millions of records
+of data, you are going to have
+
+30
+00:01:59,000 --> 00:02:02,940
+more than likely slow load
+time. And at times when
+
+31
+00:02:02,940 --> 00:02:05,020
+you open up a really large
+Excel spreadsheet, it will
+
+32
+00:02:05,020 --> 00:02:08,120
+say potential data loss
+and throw an error code.
+
+33
+00:02:08,640 --> 00:02:13,580
+Just so you're aware of that. So
+we don't store data long-term in
+
+34
+00:02:13,580 --> 00:02:16,780
+Excel spreadsheets. Now, especially
+as companies are getting started
+
+35
+00:02:16,780 --> 00:02:19,040
+and they're working with their
+data and things like that, that's
+
+36
+00:02:19,040 --> 00:02:23,020
+probably where they're going to
+start. But we want to always maneuver
+
+37
+00:02:23,020 --> 00:02:27,060
+over into a database that is going
+to have our long-term storage of
+
+38
+00:02:27,060 --> 00:02:30,820
+our data. So again, we're talking
+about data that fits in rows and
+
+39
+00:02:30,820 --> 00:02:35,760
+columns. So when we look at, oh, I
+meant rows and columns. I don't know
+
+40
+00:02:35,760 --> 00:02:39,180
+if you saw my hand down here,
+but I did the opposite way. My
+
+41
+00:02:39,180 --> 00:02:43,440
+apologies. So security issues are
+another problem with spreadsheets. Data
+
+42
+00:02:43,440 --> 00:02:47,100
+sharing, unintentional delete and
+update errors. So there's a lot
+
+43
+00:02:47,100 --> 00:02:51,260
+of issues with spreadsheets, right?
+And we use Excel with spreadsheets,
+
+44
+00:02:51,260 --> 00:02:54,920
+but there's also different types
+of tools that use spreadsheets.
+
+45
+00:02:55,040 --> 00:02:59,380
+So this is when databases come
+into play. This is how we can
+
+46
+00:02:59,380 --> 00:03:03,240
+preserve data quality and store
+data long-term in databases.
+
+47
+00:03:03,720 --> 00:03:07,940
+All right, so there's data everywhere,
+right? We in this class are
+
+48
+00:03:07,940 --> 00:03:11,640
+going to be focusing on structured
+data. So structured data is again
+
+49
+00:03:11,640 --> 00:03:16,280
+that data that can fit in rows and
+columns. So these are data that
+
+50
+00:03:16,280 --> 00:03:20,180
+fit into rows and columns, can be
+stored in relational databases like
+
+51
+00:03:20,180 --> 00:03:23,500
+we're going to be working on in this
+class. These are numbers, dates,
+
+52
+00:03:23,500 --> 00:03:28,400
+and strings and it comprises a
+lot of data stored in this world.
+
+53
+00:03:28,580 --> 00:03:31,260
+However, so we're going to be
+focusing on structured data.
+
+54
+00:03:31,260 --> 00:03:35,180
+Unstructured data is things that
+cannot be displayed in rows,
+
+55
+00:03:35,180 --> 00:03:40,420
+columns, and relational databases.
+So images, audio file, emails,
+
+56
+00:03:40,420 --> 00:03:43,380
+things like that. Those are
+things that are not going to be
+
+57
+00:03:43,380 --> 00:03:48,360
+stored in rows and columns,
+especially looking at images, audio,
+
+58
+00:03:48,360 --> 00:03:51,780
+and video, right? That is still
+data, but it's not necessarily
+
+59
+00:03:51,780 --> 00:03:56,700
+going to fit neatly as is into
+a rows and columns type of
+
+60
+00:03:57,260 --> 00:04:00,900
+data. So we're going to focus
+on rows and columns, looking at,
+
+61
+00:04:00,900 --> 00:04:03,560
+think of transactions. That's
+going to a lot of our examples
+
+62
+00:04:03,560 --> 00:04:07,300
+in this class is transaction
+data, right? That you went to
+
+63
+00:04:07,300 --> 00:04:09,420
+the store this morning, went
+to a convenience store, you got
+
+64
+00:04:09,420 --> 00:04:15,300
+yourself, I don't know, a Diet
+Coke or you got yourself a candy
+
+65
+00:04:15,900 --> 00:04:19,540
+bar, whatever it may be. That
+transaction is being tracked
+
+66
+00:04:19,540 --> 00:04:23,520
+somewhere and it's going to be
+as in somewhere in a database.
+
+67
+00:04:24,300 --> 00:04:27,520
+So how many of you have used
+a database? I kind of gave
+
+68
+00:04:27,520 --> 00:04:31,500
+away my answer just, just barely.
+When I asked this class to
+
+69
+00:04:31,500 --> 00:04:35,520
+my 250 students in person,
+many of them, like maybe one or
+
+70
+00:04:35,520 --> 00:04:38,820
+two of them raised their
+hand, but really all of them
+
+71
+00:04:38,820 --> 00:04:42,280
+should raise their hand because
+we have all used a database.
+
+72
+00:04:42,560 --> 00:04:44,900
+Whether or not we knew it
+or not, that's the thing
+
+73
+00:04:44,900 --> 00:04:46,920
+is we might not raise our
+hand because we're like,
+
+74
+00:04:46,920 --> 00:04:49,960
+well, I've never interacted
+seemingly directly
+
+75
+00:04:50,860 --> 00:04:52,960
+with a database, but you have.
+
+76
+00:04:53,460 --> 00:04:56,120
+If you've ever made an
+Amazon purchase, if you've
+
+77
+00:04:56,120 --> 00:04:58,260
+ever made any sort of
+type of purchase, you are
+
+78
+00:04:58,260 --> 00:05:00,520
+going to be interacting
+with some sort of database.
+
+79
+00:05:00,680 --> 00:05:05,180
+It's just not directly, not
+what you're seeing. You're
+
+80
+00:05:05,180 --> 00:05:08,860
+just looking at, you know,
+I'm giving you $20 for this
+
+81
+00:05:08,860 --> 00:05:11,140
+transaction at the local
+convenience store. But that
+
+82
+00:05:11,140 --> 00:05:14,340
+transaction is being tracked
+somewhere into a database.
+
+83
+00:05:14,700 --> 00:05:19,790
+So at any time that you're doing
+any sort of Google query or you're
+
+84
+00:05:20,680 --> 00:05:24,620
+interacting on the web or you've
+liked something on Instagram, those
+
+85
+00:05:24,620 --> 00:05:29,820
+things are all being tracked on the
+back end by a database so just keep
+
+86
+00:05:29,820 --> 00:05:32,280
+that in mind that even though maybe
+you haven't worked with one directly
+
+87
+00:05:32,280 --> 00:05:38,670
+we use them all of the time and
+they fuel so much of what we do all
+
+88
+00:05:38,670 --> 00:05:43,580
+right so databases are homes for data
+this is a place where data can be
+
+89
+00:05:43,580 --> 00:05:47,960
+securely stored and retrieved in an
+organized matter this is how we maintain
+
+90
+00:05:47,960 --> 00:05:52,280
+data quality and organization
+there's lots of different types of
+
+91
+00:05:52,280 --> 00:05:56,420
+databases. There's relational databases.
+There's hierarchical databases.
+
+92
+00:05:56,740 --> 00:06:00,260
+There's so many different
+types of databases. In this
+
+93
+00:06:00,260 --> 00:06:03,640
+class, we're going to be focusing
+in on relational databases.
+
+94
+00:06:03,640 --> 00:06:06,900
+This is the type of database
+that we'll focus on.
+
+95
+00:06:07,280 --> 00:06:11,960
+So this is a great question. Why
+should I care about databases?
+
+96
+00:06:11,960 --> 00:06:14,820
+Number one, they are
+everywhere. They enable business
+
+97
+00:06:14,820 --> 00:06:18,360
+operations. They are the backbone
+of virtually every single
+
+98
+00:06:18,360 --> 00:06:22,880
+transactional software system.
+They enable business analytics.
+
+99
+00:06:22,880 --> 00:06:26,440
+They hold data that enables
+executives, managers, and other
+
+100
+00:06:26,440 --> 00:06:30,540
+stakeholders to make better
+decisions. So if you're going into
+
+101
+00:06:30,540 --> 00:06:33,800
+business, you are going to have
+interactions with databases.
+
+102
+00:06:33,800 --> 00:06:37,060
+In your daily life, you have
+interactions with databases as
+
+103
+00:06:37,060 --> 00:06:44,600
+a consumer. and some of you may
+be interacting with them more
+
+104
+00:06:44,600 --> 00:06:48,620
+directly rather than just on
+a transactional type of basis.
+
+105
+00:06:49,700 --> 00:06:53,500
+But as you continue into your
+education, as you're working,
+
+106
+00:06:53,760 --> 00:06:56,900
+you will have a ton of interaction
+with databases. You might
+
+107
+00:06:56,900 --> 00:07:01,350
+just not think of them as
+databases, right? As you're working
+
+108
+00:07:01,940 --> 00:07:04,580
+with software, as you're doing
+things like that, you are still
+
+109
+00:07:04,580 --> 00:07:07,270
+going to be working with that
+data is being stored somewhere.
+
+110
+00:07:07,960 --> 00:07:12,320
+So a database administrator
+versus a data analyst. I want to
+
+111
+00:07:12,320 --> 00:07:16,180
+kind of understand the distinction
+here. So there is a whole
+
+112
+00:07:16,180 --> 00:07:20,000
+field of study about database
+administration, and that's a
+
+113
+00:07:20,000 --> 00:07:23,100
+whole career. So this is the
+person who manages the database.
+
+114
+00:07:23,100 --> 00:07:26,980
+They understand the data needs of
+the organization and set up the
+
+115
+00:07:26,980 --> 00:07:31,520
+database to be able to fit into those
+needs. Again, multiple databases.
+
+116
+00:07:31,540 --> 00:07:36,900
+They architect, develop, maintain
+those databases. they assign who
+
+117
+00:07:36,900 --> 00:07:40,780
+has access to what so that's gonna
+be the person who manages the
+
+118
+00:07:40,780 --> 00:07:44,760
+database in our class we're gonna
+focus more on being a data analyst
+
+119
+00:07:44,760 --> 00:07:48,510
+so this is a person who uses debate
+the database to gain business
+
+120
+00:07:48,510 --> 00:07:52,060
+insight okay so these are the
+people that are going to identify
+
+121
+00:07:52,060 --> 00:07:55,020
+the business problem that needs
+to be addressed and then gather
+
+122
+00:07:55,020 --> 00:07:59,620
+data from the database to answer
+a business question all right so
+
+123
+00:07:59,620 --> 00:08:04,500
+we're gonna focus in in on more
+on being consumers of data rather
+
+124
+00:08:04,500 --> 00:08:08,080
+than administering a database,
+okay? So I just want you to keep
+
+125
+00:08:08,080 --> 00:08:12,220
+that in mind. But when we're
+consuming data, we need to pull data
+
+126
+00:08:12,220 --> 00:08:14,980
+from a database, which is what
+we're going to start out with here.
+
+127
+00:08:15,260 --> 00:08:16,120
+All right,
+
+128
+00:08:16,240 --> 00:08:19,400
+so whoa, let's slow down just
+for a minute. Let's go through
+
+129
+00:08:19,400 --> 00:08:24,240
+a few more definitions and
+examples. So databases are homes
+
+130
+00:08:24,240 --> 00:08:28,740
+for data, but what exactly does
+that mean. So when we're talking
+
+131
+00:08:28,740 --> 00:08:34,000
+specifically about relational
+databases, this is a set of
+
+132
+00:08:34,000 --> 00:08:39,660
+related tables which are organized
+by rows and columns, okay?
+
+133
+00:08:40,100 --> 00:08:46,180
+Relational databases were actually
+invented in 1970 by EF Codd of IBM.
+
+134
+00:08:46,400 --> 00:08:49,440
+Still, they are the standard
+for storing organizational
+
+135
+00:08:49,440 --> 00:08:53,420
+data today. So there's relational
+databases still reign in
+
+136
+00:08:53,420 --> 00:08:56,440
+enterprises. No SQL keeps
+rising, but relational databases
+
+137
+00:08:56,440 --> 00:09:00,440
+still dominate big data.
+Relational still matters. The
+
+138
+00:09:00,440 --> 00:09:04,860
+amount of databases that is
+relational versus other things.
+
+139
+00:09:05,360 --> 00:09:10,080
+There's so many relational
+databases are still used all the
+
+140
+00:09:10,080 --> 00:09:13,330
+time. So we're going to start out
+there with relational databases.
+
+141
+00:09:13,330 --> 00:09:17,460
+It's going to give you a good
+foundation as we are talking
+
+142
+00:09:17,460 --> 00:09:20,940
+about being consumers of data in
+this data and information class.
+
+143
+00:09:21,360 --> 00:09:25,420
+All right, so a database management
+system, this is a software
+
+144
+00:09:25,420 --> 00:09:29,980
+application that allows users to
+create, read, update, and delete data in
+
+145
+00:09:29,980 --> 00:09:35,180
+a relational database. So this
+basically is the system that we're
+
+146
+00:09:35,180 --> 00:09:39,780
+going to be, that we're going to be
+semi-interacting with that allow,
+
+147
+00:09:39,780 --> 00:09:45,760
+that basically is allowing us to
+create, update, and delete data in our
+
+148
+00:09:45,760 --> 00:09:51,340
+database. So we as the users are
+going to be here communicating with
+
+149
+00:09:51,340 --> 00:09:56,560
+our database management system and
+in turn it's going to be working
+
+150
+00:09:56,560 --> 00:10:00,420
+with our database. So the database
+management system, if you will,
+
+151
+00:10:00,440 --> 00:10:04,120
+is going to be helping us manage
+that database. So we're going
+
+152
+00:10:04,120 --> 00:10:08,040
+to be utilizing a database
+management system. Again, it's a
+
+153
+00:10:08,040 --> 00:10:13,220
+software application that allows
+us to create, read. This means
+
+154
+00:10:13,220 --> 00:10:17,100
+like gather the data. When we
+say read, we're going to be, when
+
+155
+00:10:17,100 --> 00:10:19,520
+we're reading data, we're going
+to be gathering that data from
+
+156
+00:10:19,520 --> 00:10:23,720
+the database, update and delete
+data in our relational database.
+
+157
+00:10:24,040 --> 00:10:29,120
+So there's two different types
+of database management systems,
+
+158
+00:10:29,120 --> 00:10:32,760
+kind of two different, not types,
+I should say, two different
+
+159
+00:10:32,760 --> 00:10:35,620
+umbrella terms. There's an
+enterprise database management
+
+160
+00:10:35,620 --> 00:10:38,880
+system, and there's a personal
+database management system.
+
+161
+00:10:39,360 --> 00:10:42,100
+So when we think about
+enterprise database management
+
+162
+00:10:42,100 --> 00:10:45,760
+systems, some of you may have
+heard of Oracle or Microsoft SQL
+
+163
+00:10:45,760 --> 00:10:49,780
+server, MySQL, there's lots
+of them. These are large
+
+164
+00:10:49,780 --> 00:10:53,460
+organizational and work group
+databases. These have thousands
+
+165
+00:10:53,460 --> 00:10:56,180
+of users. There's many
+different database applications.
+
+166
+00:10:56,340 --> 00:11:01,040
+Here's just some examples. A
+personal database example is
+
+167
+00:11:01,040 --> 00:11:05,200
+like Microsoft Access. This
+comes as part of Microsoft 365
+
+168
+00:11:05,200 --> 00:11:10,280
+or like with your Excel type
+of download, if you will.
+
+169
+00:11:10,280 --> 00:11:14,200
+It's a Microsoft product. It's
+a smaller, simpler application,
+
+170
+00:11:14,200 --> 00:11:18,700
+and it's mainly for smaller
+or personal applications.
+
+171
+00:11:18,700 --> 00:11:22,990
+All right, so in this class, we
+are going to be using Microsoft SQL
+
+172
+00:11:22,990 --> 00:11:28,560
+Server, and I'll talk more about that
+as we get into actually accessing
+
+173
+00:11:28,560 --> 00:11:32,740
+our relational database. So
+let's look at the anatomy of a
+
+174
+00:11:32,740 --> 00:11:37,050
+relational database. We know why they
+exist, right, to help us store data,
+
+175
+00:11:37,050 --> 00:11:42,320
+maintain data quality and be able
+to fuel business insights, right?
+
+176
+00:11:42,320 --> 00:11:46,100
+That's where we're going to consume
+our data. They also help fuel,
+
+177
+00:11:46,100 --> 00:11:48,480
+this is something we'll learn further
+in the class, they help us fuel
+
+178
+00:11:48,480 --> 00:11:54,720
+into our data warehouse, into our
+really long-term storage of data.
+
+179
+00:11:54,720 --> 00:11:58,280
+So let's start though with an
+anatomy of our relational database.
+
+180
+00:11:58,760 --> 00:12:03,700
+So here is the format of a single
+table in a database. So this is one
+
+181
+00:12:03,700 --> 00:12:08,200
+table in a database. You might be
+looking at this and being like, Reagan,
+
+182
+00:12:08,200 --> 00:12:12,420
+this kind of looks like an Excel
+spreadsheet. And you're right in
+
+183
+00:12:12,420 --> 00:12:16,360
+terms of there's rows and there's
+columns, okay? So let's take a look at
+
+184
+00:12:16,360 --> 00:12:21,620
+this. So here I have a row, right?
+This is all about Sam Jones, okay?
+
+185
+00:12:21,720 --> 00:12:27,960
+So Sam Jones, I know that Sam's
+first name is, well, yeah, the first
+
+186
+00:12:27,960 --> 00:12:31,560
+name here is Sam, the last name
+here is Jones, and then I have this
+
+187
+00:12:31,560 --> 00:12:38,660
+customer ID field. This is my primary
+key, okay? So my primary key is a
+
+188
+00:12:38,660 --> 00:12:44,220
+customer ID. This is how I uniquely
+identify Sam Jones as a customer
+
+189
+00:12:44,440 --> 00:12:48,700
+in my database here, in
+my database table. So
+
+190
+00:12:48,700 --> 00:12:51,500
+customer ID is uniquely
+identifying Sam Jones.
+
+191
+00:12:51,500 --> 00:12:56,200
+These primary keys are
+unique. They do not repeat.
+
+192
+00:12:57,580 --> 00:13:01,400
+Oftentimes they're all numeric.
+Sometimes they're alphanumeric, meaning
+
+193
+00:13:01,400 --> 00:13:05,979
+they have letters and numbers, but
+they are unique. That is the most
+
+194
+00:13:05,979 --> 00:13:06,140
+they have letters and numbers, but
+they are unique. That is the most
+
+195
+00:13:06,140 --> 00:13:09,200
+important thing to remember about
+a primary key is they are unique. I
+
+196
+00:13:09,200 --> 00:13:09,225
+want you to think about what is
+something that uniquely identifies you?
+
+197
+00:13:09,225 --> 00:13:12,256
+right so i want to think you to
+think of what are some things that
+
+198
+00:13:12,256 --> 00:13:17,876
+may be your unique identifier
+whether that's at school, whether
+
+199
+00:13:17,876 --> 00:13:22,156
+that's maybe you have a unique ID
+on one of your gaming platforms,
+
+200
+00:13:22,156 --> 00:13:28,316
+whether it's a unique ID at work,
+whatever it may be. So let's think
+
+201
+00:13:28,316 --> 00:13:32,676
+about unique IDs. So you as a
+student at Utah State University
+
+202
+00:13:32,676 --> 00:13:37,756
+through concurrent enrollment, you as
+that student, you have an A number.
+
+203
+00:13:37,756 --> 00:13:41,776
+An A number uniquely identifies
+you. I have an A number, you have
+
+204
+00:13:41,776 --> 00:13:46,796
+an A number, we have an A number.
+And that A number says that you
+
+205
+00:13:46,796 --> 00:13:51,136
+are, in this case, it'd be, you
+know, number one, Sam Jones. And we
+
+206
+00:13:51,136 --> 00:13:55,656
+can uniquely identify with your
+A number the classes that you've
+
+207
+00:13:55,656 --> 00:14:00,616
+taken, through which campuses you're
+taking the classes, are you taking
+
+208
+00:14:00,616 --> 00:14:03,296
+them via concurrent enrollment,
+what grades did you receive in
+
+209
+00:14:03,296 --> 00:14:06,516
+the class, what tuition do you owe,
+all those types of things. They
+
+210
+00:14:06,516 --> 00:14:10,196
+help us uniquely identify you as a
+student at Utah State University.
+
+211
+00:14:10,316 --> 00:14:16,776
+So primary keys are so important
+in a relational database. In this
+
+212
+00:14:16,776 --> 00:14:22,236
+table here, we have one primary
+key, right? This is uniquely
+
+213
+00:14:22,236 --> 00:14:26,516
+identifying this whole record
+here. So Sam Jones number one. If I
+
+214
+00:14:26,516 --> 00:14:31,816
+know customer ID number one, I can
+figure out that they are Sam Jones
+
+215
+00:14:31,816 --> 00:14:35,436
+and this is their phone number,
+okay? So these are all of the
+
+216
+00:14:35,436 --> 00:14:38,616
+columns, fields, attributes, and
+variables. So these are all my
+
+217
+00:14:38,616 --> 00:14:42,656
+columns here, right? Customer ID
+is a column, first name, last name,
+
+218
+00:14:42,656 --> 00:14:46,776
+and phone number is a column.
+Customer ID is also a primary key.
+
+219
+00:14:47,656 --> 00:14:50,036
+What we're going to,
+though, call these is
+
+220
+00:14:50,036 --> 00:14:53,176
+we're going to be calling
+these field names.
+
+221
+00:14:53,176 --> 00:14:56,536
+And we can also call them
+headers, if you will.
+
+222
+00:14:56,836 --> 00:15:01,716
+So these might be called here
+field names or column headers.
+
+223
+00:15:02,016 --> 00:15:05,576
+Then we have our records,
+which we can see here. We
+
+224
+00:15:05,576 --> 00:15:09,096
+have Nicole Sam down here
+has a customer ID of seven.
+
+225
+00:15:09,296 --> 00:15:11,916
+Nicole, Sam, and their phone number.
+
+226
+00:15:12,776 --> 00:15:13,376
+All right,
+
+227
+00:15:13,516 --> 00:15:15,496
+so relational database tables.
+
+228
+00:15:16,116 --> 00:15:19,376
+Let's go into even more detail with them.
+
+229
+00:15:19,416 --> 00:15:21,236
+So relational database consists of a
+
+230
+00:15:21,236 --> 00:15:23,376
+set of tables just like we looked at.
+
+231
+00:15:23,736 --> 00:15:29,236
+Each table stores information about
+one entity or thing of interest.
+
+232
+00:15:29,236 --> 00:15:32,896
+So in this back example, this
+one is all about our customers.
+
+233
+00:15:33,056 --> 00:15:36,696
+This example, this is all about
+friends, okay? So we have a
+
+234
+00:15:36,696 --> 00:15:40,796
+table named friend. This stores
+information about our friends.
+
+235
+00:15:40,796 --> 00:15:44,276
+These consist of again, rows and
+columns, and then primary and
+
+236
+00:15:44,276 --> 00:15:49,176
+foreign keys. So here, if I take
+a look at this friend table,
+
+237
+00:15:49,176 --> 00:15:52,656
+I have my column headings here,
+my field headings, if you will.
+
+238
+00:15:53,476 --> 00:15:57,556
+And I can see here that
+I have a friend ID,
+
+239
+00:15:57,556 --> 00:16:00,796
+first name, last name,
+phone, and city. So I
+
+240
+00:16:00,796 --> 00:16:03,776
+am tracking that
+information about my friends
+
+241
+00:16:03,856 --> 00:16:09,716
+in this database table. So
+which of these field headings
+
+242
+00:16:09,716 --> 00:16:14,116
+here, or column headings, are
+uniquely identifying my friends?
+
+243
+00:16:14,116 --> 00:16:17,156
+Which one is uniquely
+identifying it, meaning it cannot
+
+244
+00:16:17,156 --> 00:16:20,756
+repeat? I hope you say it's
+friend ID here. Yep, you're right.
+
+245
+00:16:20,756 --> 00:16:25,936
+Okay, friend ID 1, 2, 3, 4,
+5. That is friend ID 1, 2, 3.
+
+246
+00:16:25,956 --> 00:16:29,056
+These are all uniquely
+identifying my friends.
+
+247
+00:16:29,716 --> 00:16:31,036
+Okay, perfect.
+
+248
+00:16:31,916 --> 00:16:35,416
+Let's keep going here. So this
+primary key, again, is a column
+
+249
+00:16:35,416 --> 00:16:38,516
+or fill that uniquely identifies
+each record. The primary
+
+250
+00:16:38,516 --> 00:16:43,216
+key values must be unique. They
+cannot be duplicated for two
+
+251
+00:16:43,216 --> 00:16:48,656
+or more records. They can't.
+Okay. So let's take a look at a
+
+252
+00:16:48,656 --> 00:16:52,636
+simple example here. All right.
+So I spent a lot of time at
+
+253
+00:16:52,636 --> 00:16:58,396
+the dog park, and I made this
+little dog park database about
+
+254
+00:16:58,956 --> 00:17:03,376
+dogs and the dog owners I met at
+the dog park. I know. I know. I
+
+255
+00:17:03,376 --> 00:17:06,536
+love things like this. I love
+databases. I hope that you can see the
+
+256
+00:17:06,536 --> 00:17:09,756
+value of them as we continue to
+work with them. So here I have
+
+257
+00:17:09,756 --> 00:17:13,756
+my single table example of a dog
+park database. So here's my dog
+
+258
+00:17:13,756 --> 00:17:20,376
+table, okay? I have dog ID, dog
+name, dog type, and owner ID. So this
+
+259
+00:17:20,376 --> 00:17:25,916
+is one table in my relational
+database, my dog park relational
+
+260
+00:17:25,916 --> 00:17:30,396
+database. One table. Now I have
+dog ID, dog name, dog type, owner
+
+261
+00:17:30,396 --> 00:17:36,616
+ID. From this, what do you think
+is my primary key of my dog table?
+
+262
+00:17:36,856 --> 00:17:41,576
+I hope you say, Reagan, it's dog
+ID. This is uniquely identifying
+
+263
+00:17:41,576 --> 00:17:45,776
+number one, Molly, number two,
+Mitzi, number three, Toby, and
+
+264
+00:17:45,776 --> 00:17:49,656
+on down. Okay. And you're
+absolutely right. Dog ID here is my
+
+265
+00:17:49,656 --> 00:17:54,276
+primary key. Now you may be looking
+though, this owner ID is unique,
+
+266
+00:17:54,276 --> 00:17:57,906
+right? It has ID at the end. So
+that's a little bit confusing,
+
+267
+00:17:57,976 --> 00:18:02,456
+but it doesn't really go along
+with the theme of dog table. It's
+
+268
+00:18:02,456 --> 00:18:07,356
+like owner ID. It kind of seems
+like it's a little bit off as far
+
+269
+00:18:07,356 --> 00:18:10,496
+as why is it in this dog table.
+So let's keep looking at this.
+
+270
+00:18:10,966 --> 00:18:13,736
+So now I'm going to tell you I
+actually have another table in my
+
+271
+00:18:13,736 --> 00:18:17,436
+dog park database called the dog
+owner table. I have the owner
+
+272
+00:18:17,436 --> 00:18:21,996
+ID, the owner name, and the owner
+phone number. So I am tracking
+
+273
+00:18:21,996 --> 00:18:26,276
+here the owner ID, their name,
+and their phone number so I can
+
+274
+00:18:26,276 --> 00:18:29,876
+get a hold of different owners.
+All right. So which one, which one
+
+275
+00:18:29,876 --> 00:18:34,976
+of these columns here is the
+primary key in my dog owner table?
+
+276
+00:18:36,836 --> 00:18:41,736
+I hope you said owner ID, right?
+Owner ID is absolutely the primary
+
+277
+00:18:41,736 --> 00:18:45,336
+key in my dog owner table. All
+right. So we have primary key
+
+278
+00:18:45,336 --> 00:18:50,036
+here, dog owner table. Now, as we
+continue through, um, this owner
+
+279
+00:18:50,036 --> 00:18:52,176
+name and owner phone number,
+those are still data points I'm
+
+280
+00:18:52,176 --> 00:18:56,276
+tracking, but owner ID is going
+to be my primary key. All right.
+
+281
+00:18:56,396 --> 00:18:59,696
+So now I have my two tables here. They
+
+282
+00:18:59,696 --> 00:19:02,136
+are both a part of my
+relational database.
+
+283
+00:19:04,096 --> 00:19:10,836
+Now I told you that a relational
+database consists of related tables.
+
+284
+00:19:10,976 --> 00:19:14,236
+And you're probably looking at
+these two going, well, there's some
+
+285
+00:19:14,236 --> 00:19:16,796
+sort of relationship here because
+they're in a relational database
+
+286
+00:19:16,796 --> 00:19:22,056
+together. So let's look at this
+relationship here. Okay, so let's
+
+287
+00:19:22,056 --> 00:19:25,856
+take a look. So dog ID is the primary
+key of the dog table. We talked
+
+288
+00:19:25,856 --> 00:19:29,516
+about that. Owner ID is the
+primary key of the dog owner table.
+
+289
+00:19:29,516 --> 00:19:35,316
+But what I notice here is that owner
+ID is coming into my dog table.
+
+290
+00:19:35,856 --> 00:19:38,476
+Okay, it's coming into my dog table.
+
+291
+00:19:38,596 --> 00:19:43,776
+And when it does that, this
+becomes the foreign key in
+
+292
+00:19:43,776 --> 00:19:47,736
+the dog table. So that's how
+these two tables relate to
+
+293
+00:19:47,736 --> 00:19:51,776
+one another is this owner
+ID comes over into my dog
+
+294
+00:19:51,776 --> 00:19:57,696
+table as the foreign key.
+Okay, we abbreviate that as FK.
+
+295
+00:19:58,136 --> 00:20:02,336
+And the foreign key creates this
+relationship between these two
+
+296
+00:20:02,336 --> 00:20:08,036
+tables. So I can tell, hey, when
+I look at this, I can see here
+
+297
+00:20:08,036 --> 00:20:12,876
+that Mitzi and Toby are owned
+by the same owner ID. Now, let's
+
+298
+00:20:12,876 --> 00:20:15,896
+just say I don't have access to
+the dog owner table, but I do
+
+299
+00:20:15,896 --> 00:20:20,916
+know that they're both owned by
+the same owner number two, right?
+
+300
+00:20:20,916 --> 00:20:23,896
+But when I take a look at the
+dog owner table, I come over here
+
+301
+00:20:23,896 --> 00:20:27,196
+and I say, okay, let's take a
+look at owner ID number two. Oh,
+
+302
+00:20:27,556 --> 00:20:32,176
+Sam's owner, here's Sam's phone
+number. So the data between the two of
+
+303
+00:20:32,176 --> 00:20:37,036
+them relates, right? But remember
+one table, my dog table only has one
+
+304
+00:20:37,036 --> 00:20:40,356
+theme of data, right? I only care
+about one thing here. Those are my
+
+305
+00:20:40,356 --> 00:20:44,296
+dogs. The dog owner table, I'm only
+caring about one thing there and that's
+
+306
+00:20:44,296 --> 00:20:48,796
+my dog owners but these two tables
+do relate to one another so we use
+
+307
+00:20:48,796 --> 00:20:52,416
+these primary foreign key relationships
+to create that relationship
+
+308
+00:20:52,416 --> 00:20:57,836
+okay so foreign key is a column or
+field remember those columns and fields
+
+309
+00:20:57,836 --> 00:21:04,316
+these are what my vertical if you
+will um they are interchangeable in
+
+310
+00:21:04,316 --> 00:21:08,096
+terms of we could say column or or
+field whose values have matching
+
+311
+00:21:08,096 --> 00:21:13,116
+tables in the primary key of another
+table, okay? So a foreign key, again,
+
+312
+00:21:13,116 --> 00:21:17,176
+is a column or field whose values
+have matching values in the primary
+
+313
+00:21:17,176 --> 00:21:22,416
+key of another table, which is true,
+right? My owner ID, foreign key,
+
+314
+00:21:24,116 --> 00:21:28,216
+column right here, is coming
+from the dog owner table
+
+315
+00:21:28,216 --> 00:21:32,396
+as the primary key of the
+dog owner table, okay?
+
+316
+00:21:32,696 --> 00:21:37,096
+All right, so, but why do we relate
+the two tables? Why does it matter?
+
+317
+00:21:37,096 --> 00:21:42,056
+So number one, to avoid unintended
+consequences. So updating one
+
+318
+00:21:42,056 --> 00:21:46,076
+record of data, but not the other.
+Reduce the amount of needed storage.
+
+319
+00:21:46,296 --> 00:21:49,816
+Storing lots of data can
+be expensive. And security,
+
+320
+00:21:49,816 --> 00:21:52,896
+access to some data, not
+access to all. So if we didn't
+
+321
+00:21:52,896 --> 00:21:55,656
+relate tables, all information
+for the owners would be
+
+322
+00:21:55,656 --> 00:22:00,596
+repeated for each dog. So this
+is instead what my massive,
+
+323
+00:22:00,736 --> 00:22:03,896
+now I say massive here,
+it's five records of data.
+
+324
+00:22:04,396 --> 00:22:07,356
+But let's think about this on
+a way bigger scale. This is a
+
+325
+00:22:07,356 --> 00:22:11,436
+small example, but on a much
+bigger scale, this still applies,
+
+326
+00:22:11,436 --> 00:22:15,816
+right? So if I was to combine
+all of this data into one table,
+
+327
+00:22:16,286 --> 00:22:19,916
+then here when I'm looking at
+Molly, an Aussie doodle, owner ID
+
+328
+00:22:19,916 --> 00:22:23,956
+number one, Reagan, okay, that's
+one record of data here. If I was
+
+329
+00:22:23,956 --> 00:22:29,076
+to, again, not separate these two
+tables into two separate ones,
+
+330
+00:22:29,076 --> 00:22:32,296
+but just combine them into one
+table. However, though, when I look
+
+331
+00:22:32,296 --> 00:22:37,696
+at, say, Mitzi and Toby, since they
+both have the same owner of Sam,
+
+332
+00:22:37,696 --> 00:22:43,356
+I am repeating Sam's information
+twice, right? I'm repeating
+
+333
+00:22:43,356 --> 00:22:47,096
+Sam's information twice, their owner
+name and their owner phone number.
+
+334
+00:22:47,096 --> 00:22:52,716
+I'm repeating that two times
+because Sam owns two dogs in this
+
+335
+00:22:52,716 --> 00:22:56,896
+table, right? Same thing here with
+Beth. So I am starting to repeat
+
+336
+00:22:56,896 --> 00:23:00,336
+data that I don't necessarily
+need to repeat, right? Over here,
+
+337
+00:23:00,496 --> 00:23:05,396
+Sam and Beth are only, there's only
+one time I'm tracking Sam and Beth's
+
+338
+00:23:05,396 --> 00:23:10,176
+name and phone number when I separate
+the two tables out. However, if
+
+339
+00:23:10,176 --> 00:23:14,196
+I'm not to separate the two tables,
+but instead keep them all as one
+
+340
+00:23:14,196 --> 00:23:19,076
+table, then I'm starting to repeat the
+data and it's not necessary, right?
+
+341
+00:23:19,076 --> 00:23:23,016
+I don't need to repeat Sam twice.
+I can just separate owners from
+
+342
+00:23:23,016 --> 00:23:27,556
+dogs and have them relate to one
+another so that I'm not repeating data.
+
+343
+00:23:28,136 --> 00:23:32,336
+because when I go in and say I do
+need to update Sam's phone number,
+
+344
+00:23:32,336 --> 00:23:38,636
+what if I accidentally update this
+phone number but not this one, right?
+
+345
+00:23:38,636 --> 00:23:43,476
+Then I have a data quality issue.
+So instead, when I separate
+
+346
+00:23:43,476 --> 00:23:47,996
+the two tables out, I only need
+to change Sam's phone number one
+
+347
+00:23:47,996 --> 00:23:51,456
+place, okay? Now, again, looking
+at five records of data, you're
+
+348
+00:23:51,456 --> 00:23:54,576
+like, Reagan, it's not a big
+deal with five records of data.
+
+349
+00:23:54,596 --> 00:23:57,276
+But what about five
+million records of data?
+
+350
+00:23:57,356 --> 00:24:00,716
+So it starts to become,
+when we think about this as
+
+351
+00:24:00,776 --> 00:24:04,136
+data scales, and there's so
+much data being collected
+
+352
+00:24:04,136 --> 00:24:07,256
+every minute, data is
+scaling all of the time.
+
+353
+00:24:07,256 --> 00:24:10,136
+Therefore, when we're repeating data
+
+354
+00:24:10,136 --> 00:24:11,226
+that we don't need to be repeating,
+
+355
+00:24:11,816 --> 00:24:15,636
+then we can have unintended
+consequences, we're
+
+356
+00:24:15,636 --> 00:24:17,916
+storing data we don't
+need to, things like that.
+
+357
+00:24:18,397 --> 00:24:22,677
+Okay, when we're thinking about
+two tables in one database,
+
+358
+00:24:22,897 --> 00:24:26,217
+it doesn't seem too overwhelming,
+right? Okay, the two tables relate.
+
+359
+00:24:26,217 --> 00:24:29,237
+But what about, again, as we get more
+and more and more and more tables
+
+360
+00:24:29,237 --> 00:24:34,997
+in a database, how can we show what
+tables relate to what tables? So
+
+361
+00:24:34,997 --> 00:24:38,357
+the one way we can do that is by
+showing a database schema. This is a
+
+362
+00:24:38,357 --> 00:24:42,077
+diagram that shows a structure of
+the database. The most common type of
+
+363
+00:24:42,077 --> 00:24:46,017
+a database schema is an entity
+relationship diagram. Now, if you
+
+364
+00:24:46,017 --> 00:24:52,517
+remember, an entity is one thing of
+interest, right? So in this case we
+
+365
+00:24:52,517 --> 00:24:58,817
+care about the dog and the dog owner
+okay so in an entity relationship
+
+366
+00:24:58,817 --> 00:25:06,057
+diagram this dog over here is
+absolutely representing one table in my
+
+367
+00:25:06,057 --> 00:25:11,817
+relation in my database but it's
+also one entity we can also just call
+
+368
+00:25:11,817 --> 00:25:17,877
+it an entity so I want you to keep
+that in mind so table and entity. So
+
+369
+00:25:17,877 --> 00:25:23,437
+we call it an entity relationship
+diagram. How do my entities or my
+
+370
+00:25:23,437 --> 00:25:28,997
+tables relate to one another? So
+here with my dog table, my dog owner
+
+371
+00:25:28,997 --> 00:25:33,417
+table, I can see here that my dog
+owner table relates to my dog table,
+
+372
+00:25:33,417 --> 00:25:38,177
+right? There's a relationship there.
+So I can see that through that line,
+
+373
+00:25:38,177 --> 00:25:40,897
+right? And then I can see I have
+this tiny little thing down here
+
+374
+00:25:40,897 --> 00:25:45,397
+called a crow's foot notation. A crow's
+foot notation represents relationships
+
+375
+00:25:45,397 --> 00:25:51,917
+between tables. This side right
+here is the many, many, M-A-N-Y,
+
+376
+00:25:51,917 --> 00:25:56,717
+right, many side. The many side
+receives the foreign key to create the
+
+377
+00:25:56,717 --> 00:26:01,997
+relationship. The many side means
+that a dog owner in this database,
+
+378
+00:26:01,997 --> 00:26:08,257
+a dog owner can have many dogs, right?
+Which is true. Sam and Beth both
+
+379
+00:26:08,257 --> 00:26:13,757
+have many dogs in the database,
+right? So this is saying that a dog
+
+380
+00:26:13,757 --> 00:26:21,377
+owner can have many dogs, but a dog
+can only have one owner, okay? So
+
+381
+00:26:21,377 --> 00:26:25,657
+let's look at this one more time. So
+a dog owner, when I read this, I'm
+
+382
+00:26:25,657 --> 00:26:31,037
+reading it from the dog owner table
+to the dog table. A dog owner can
+
+383
+00:26:31,037 --> 00:26:35,257
+have many dogs, because the many
+side is attached to the dog table.
+
+384
+00:26:35,257 --> 00:26:41,777
+When I read the other way, a dog,
+and I read it as the attached here
+
+385
+00:26:41,777 --> 00:26:48,677
+symbol, can have one owner. Not many
+owners, right? Just this one, there's
+
+386
+00:26:48,677 --> 00:26:54,457
+just one line here, so one owner,
+okay? So a dog can have one owner.
+
+387
+00:26:55,177 --> 00:26:58,597
+All right now there's different
+so that's how I show the
+
+388
+00:26:58,597 --> 00:27:02,097
+relationships and you can see here
+I'm starting to interpret that
+
+389
+00:27:02,097 --> 00:27:06,217
+relationship right in this case
+is the one to many relationship. A
+
+390
+00:27:06,217 --> 00:27:10,677
+dog can have one dog owner and
+a dog owner can have many dogs.
+
+391
+00:27:10,917 --> 00:27:15,117
+All right so at this point
+I want to pause the video
+
+392
+00:27:15,117 --> 00:27:17,577
+and we'll go on to the
+next one and we're going
+
+393
+00:27:17,577 --> 00:27:19,827
+to talk about the types
+of database relationships.
+

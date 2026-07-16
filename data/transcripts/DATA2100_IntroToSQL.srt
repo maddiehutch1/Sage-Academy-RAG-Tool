@@ -1,0 +1,1877 @@
+383
+00:00:01,430 --> 00:00:03,990
+All right, Data2100
+students, I hope you're ready
+
+384
+00:00:03,990 --> 00:00:07,570
+to get an introduction to
+Structured Query Language.
+
+385
+00:00:07,570 --> 00:00:10,710
+Structured Query Language,
+people call it SQL,
+
+386
+00:00:10,870 --> 00:00:16,210
+SQL, either way is great.
+I refer to it as SQL.
+
+387
+00:00:16,550 --> 00:00:21,430
+So let's talk about what is SQL
+and why does it matter? Why are we
+
+388
+00:00:21,430 --> 00:00:25,110
+learning it? And then let's dive
+into writing some SQL queries. So
+
+389
+00:00:25,110 --> 00:00:27,830
+first off, we're going to write SQL
+queries. We're going to understand
+
+390
+00:00:27,830 --> 00:00:32,450
+the usage of each of the following
+clauses. So select from and
+
+391
+00:00:32,450 --> 00:00:36,430
+where. I'm also going to tell you
+why is this so important to learn.
+
+392
+00:00:36,430 --> 00:00:40,970
+So as a reminder, Overland is
+our database we are going to be
+
+393
+00:00:40,970 --> 00:00:45,230
+working with. In this class,
+oftentimes we'll be using Overland.
+
+394
+00:00:45,230 --> 00:00:47,510
+There's another one that I'll
+introduce you to as well, but
+
+395
+00:00:47,510 --> 00:00:51,230
+generally we're going to be using
+Overland Ski Resort. Now remember,
+
+396
+00:00:51,250 --> 00:00:54,310
+Overland Peak Resort is one of
+the oldest, largest, and most
+
+397
+00:00:54,310 --> 00:00:57,850
+successful ski resorts in
+Pennsylvania. It's also fictional,
+
+398
+00:00:58,010 --> 00:01:02,290
+But you know what? I love to ski,
+love to snowboard, so this is a fun
+
+399
+00:01:02,290 --> 00:01:07,470
+data set to work with. And you'll
+notice that this data set, there's
+
+400
+00:01:07,470 --> 00:01:12,310
+some things built into it that
+really mimic a lot of how a lot of
+
+401
+00:01:12,310 --> 00:01:15,590
+smaller relational databases look,
+that they're not always perfect,
+
+402
+00:01:15,590 --> 00:01:20,940
+right? That we are dealing with data
+that we have to understand exactly
+
+403
+00:01:20,940 --> 00:01:25,510
+what quality type of data are we
+dealing with here. So we'll talk
+
+404
+00:01:25,510 --> 00:01:30,210
+about data quality as we get into
+the database, but it's a great way to
+
+405
+00:01:30,210 --> 00:01:34,490
+learn SQL, to query the Overland
+database and get familiar with it.
+
+406
+00:01:34,490 --> 00:01:37,980
+All right, so this is what
+our Overland ERD looks
+
+407
+00:01:38,190 --> 00:01:41,370
+like. Now as a pop quiz,
+what does ERD stand for?
+
+408
+00:01:41,650 --> 00:01:44,730
+I hope you said Entity
+Relationship Diagram.
+
+409
+00:01:44,730 --> 00:01:46,790
+Each of these different tables in
+
+410
+00:01:46,790 --> 00:01:49,810
+this database are different entities.
+
+411
+00:01:50,050 --> 00:01:56,090
+Again, we can use entity and table
+interchangeably, so just keep that
+
+412
+00:01:56,090 --> 00:01:59,130
+in mind. And we care about the
+relationships between the tables,
+
+413
+00:01:59,130 --> 00:02:02,950
+right? So we're going to be referring
+back to this entity relationship
+
+414
+00:02:02,950 --> 00:02:07,390
+diagram quite often throughout the
+course, so just keep that in mind.
+
+415
+00:02:08,310 --> 00:02:12,770
+When we are retrieving data
+from databases, we use SQL.
+
+416
+00:02:12,770 --> 00:02:16,710
+It stands for Structured
+Query Language. It is the
+
+417
+00:02:16,710 --> 00:02:19,770
+standard for creating,
+querying, relational databases.
+
+418
+00:02:19,790 --> 00:02:24,770
+It kind of uses common language.
+It's actually pretty easy to
+
+419
+00:02:24,770 --> 00:02:28,670
+interpret, and so it's a great
+language to start out with learning.
+
+420
+00:02:30,020 --> 00:02:34,610
+When we use an SQL state, when we
+write SQL, we are going to start off
+
+421
+00:02:34,610 --> 00:02:39,970
+by using an SQL select statement.
+There's different types of statements,
+
+422
+00:02:39,970 --> 00:02:43,950
+but we're going to start out with
+a select statement. And an SQL
+
+423
+00:02:43,950 --> 00:02:49,010
+select statement does one of the
+following. We can choose a specific
+
+424
+00:02:49,010 --> 00:02:55,970
+number of rows to be returned. We
+can choose specific requirements that
+
+425
+00:02:55,970 --> 00:03:02,350
+rows or records must meet to be
+returned to us. We can also aggregate
+
+426
+00:03:02,350 --> 00:03:06,390
+data. We can join different tables
+together. We'll talk more about
+
+427
+00:03:06,390 --> 00:03:11,030
+that. And we can see as many columns
+as we want to see or as few columns
+
+428
+00:03:11,030 --> 00:03:14,690
+as we want to see. so we can really
+do this idea of projection which
+
+429
+00:03:14,690 --> 00:03:18,470
+is choosing the columns in a table
+that we want returned to us selection
+
+430
+00:03:18,910 --> 00:03:23,110
+so we can say you know i only want
+to choose certain rows in this
+
+431
+00:03:23,110 --> 00:03:27,370
+table that are meeting this criteria
+we can aggregate data so we can say
+
+432
+00:03:27,370 --> 00:03:32,380
+hey over the last year show me all
+the total sales for this specific
+
+433
+00:03:32,380 --> 00:03:37,010
+salesperson and then we can also
+bring together data from different
+
+434
+00:03:37,010 --> 00:03:41,770
+tables and join it together so sql
+select statements are very powerful
+
+435
+00:03:42,760 --> 00:03:46,950
+but why do you need to know SQL
+why does it matter so you should
+
+436
+00:03:46,950 --> 00:03:50,910
+learn SQL even if you're not a
+developer these days almost everyone has
+
+437
+00:03:50,910 --> 00:03:55,710
+to work in data in some form or
+another like we are all working with
+
+438
+00:03:55,710 --> 00:03:58,850
+data in some form or another
+usually it's through spreadsheets or
+
+439
+00:03:58,850 --> 00:04:02,550
+databases but if you can learn a
+little SQL you can become so much
+
+440
+00:04:02,550 --> 00:04:08,090
+more powerful in your job when
+we every year we send off tons of
+
+441
+00:04:08,090 --> 00:04:12,430
+interns to all different organizations
+and they come back and they say,
+
+442
+00:04:12,630 --> 00:04:17,990
+we are so grateful that we learned
+SQL. It is such the standard
+
+443
+00:04:17,990 --> 00:04:21,390
+still being used in industry
+today. It's going to continue to be
+
+444
+00:04:21,390 --> 00:04:25,610
+used. So it's awesome that you're
+learning this skill in this 2000
+
+445
+00:04:25,610 --> 00:04:28,430
+level course and we're so excited
+to have you learning this skill.
+
+446
+00:04:28,770 --> 00:04:32,450
+So what does an SQL select
+syntax look like? Now
+
+447
+00:04:32,450 --> 00:04:34,770
+we're going to talk a
+lot about syntax in this
+
+448
+00:04:34,770 --> 00:04:37,890
+class. Syntax is rules
+that govern a language.
+
+449
+00:04:37,970 --> 00:04:42,650
+So syntax of a basic
+SQL select statement, it
+
+450
+00:04:42,650 --> 00:04:45,950
+includes these four,
+we call these clauses.
+
+451
+00:04:46,090 --> 00:04:47,650
+Okay, whoa,
+
+452
+00:04:47,890 --> 00:04:48,650
+whoa,
+
+453
+00:04:48,930 --> 00:04:51,030
+all right, there we go. There's a clause.
+
+454
+00:04:51,250 --> 00:04:54,990
+So I have the select clause, the
+from clause, the where clause, and
+
+455
+00:04:54,990 --> 00:04:59,490
+the order by clause. Each of these
+clauses have their own purpose.
+
+456
+00:04:59,490 --> 00:05:04,590
+So select is our first clause that
+we write. and that select clause we
+
+457
+00:05:04,590 --> 00:05:08,290
+say hey which columns right do
+we want to retrieve do we want to
+
+458
+00:05:08,290 --> 00:05:12,290
+retrieve select first name last name
+and age all right we're going to say
+
+459
+00:05:12,290 --> 00:05:17,410
+then from what table right oh we're
+going to say from our guest table
+
+460
+00:05:17,410 --> 00:05:21,210
+we're going to look at our guests
+and then comes in our handy where
+
+461
+00:05:21,210 --> 00:05:25,450
+clause and our where clause says hey
+i'm going to limit the records that
+
+462
+00:05:25,450 --> 00:05:28,790
+are returned to you so i'm only so
+maybe we say you know what we only
+
+463
+00:05:28,790 --> 00:05:35,510
+want to see guests where their age
+is less than 16. So that is the
+
+464
+00:05:35,510 --> 00:05:41,530
+requirement that is placed on that
+query. So all records must meet that
+
+465
+00:05:41,530 --> 00:05:45,850
+requirement to be returned in my query.
+So where clause limits the records
+
+466
+00:05:45,850 --> 00:05:49,250
+returned to us. And then the order
+by clause orders, or if you want
+
+467
+00:05:49,250 --> 00:05:53,990
+to think about it, it sorts our
+output. Select from where and order
+
+468
+00:05:53,990 --> 00:05:57,530
+by. There are some other clauses that
+we'll learn, but we're just going
+
+469
+00:05:57,530 --> 00:06:03,530
+to start here. I get so excited
+teaching this content. I love SQL. It
+
+470
+00:06:03,530 --> 00:06:08,850
+is so powerful and I love that we
+start off basic and then you can get
+
+471
+00:06:08,850 --> 00:06:11,654
+as advanced as you would like, but
+we're starting from the ground up.
+
+472
+00:06:11,654 --> 00:06:15,183
+All right, so here is my entirety
+of the select statement. So I'm
+
+473
+00:06:15,183 --> 00:06:17,643
+going to ignore group by and
+having, those are those other two
+
+474
+00:06:17,643 --> 00:06:20,363
+clauses we're going to add in a
+bit. We're not going to worry about
+
+475
+00:06:20,363 --> 00:06:24,203
+them for now. We're going to focus
+again on select from where and
+
+476
+00:06:24,203 --> 00:06:29,843
+order by and then our handy semicolon
+that we end every query with.
+
+477
+00:06:30,203 --> 00:06:36,263
+So it's required for every select
+statement to have select and from.
+
+478
+00:06:36,403 --> 00:06:40,823
+Again, select says select what
+columns, from says from what
+
+479
+00:06:40,823 --> 00:06:45,003
+tables, okay? So select first
+name and last name from the
+
+480
+00:06:45,003 --> 00:06:49,043
+guest table. Where says, ooh,
+it's a conditional expression.
+
+481
+00:06:49,043 --> 00:06:52,383
+Now, that kind of sounds
+complicated. Basically, it's saying,
+
+482
+00:06:52,383 --> 00:06:56,623
+hey, these conditions must be
+met in order for this row to
+
+483
+00:06:56,623 --> 00:07:00,083
+be, in order for these rows
+to be included in your output.
+
+484
+00:07:00,483 --> 00:07:04,223
+So it's not too crazy. It's
+actually really helpful. So where
+
+485
+00:07:04,223 --> 00:07:06,522
+and then conditional expression.
+And then we have order by,
+
+486
+00:07:06,522 --> 00:07:09,265
+And then we have order by, and
+we say, all right, order by what
+
+487
+00:07:09,265 --> 00:07:13,465
+column name? So we say order by
+first name ascending. Now, we're
+
+488
+00:07:13,465 --> 00:07:16,865
+not going to focus yet on order
+by. We'll introduce where a
+
+489
+00:07:16,865 --> 00:07:19,425
+little bit in this video, but I
+just want you to become familiar
+
+490
+00:07:19,425 --> 00:07:22,325
+with the select statement. And
+for now we're just going to
+
+491
+00:07:22,325 --> 00:07:26,545
+focus on select, from, where,
+and order by. So if you're taking
+
+492
+00:07:26,545 --> 00:07:30,225
+notes, which I hope you are, go
+ahead and write those down. So
+
+493
+00:07:30,225 --> 00:07:34,525
+select, from, where, and order
+by. My order by sorts the output.
+
+494
+00:07:35,085 --> 00:07:40,105
+All right. So when I want to display
+specific fields, I use, right, my
+
+495
+00:07:40,105 --> 00:07:45,785
+select clause. So I say select last
+name, comma, first name from customer.
+
+496
+00:07:45,785 --> 00:07:50,645
+And you'll notice that I separate
+my columns with a comma, and then
+
+497
+00:07:50,645 --> 00:07:57,545
+I end every query with a semicolon.
+So this right here is one SQL query.
+
+498
+00:07:57,545 --> 00:08:01,785
+I have a select clause, and I have
+a from clause. This is going to
+
+499
+00:08:01,785 --> 00:08:06,005
+show me all the last names and all
+the first names of all the customers.
+
+500
+00:08:06,165 --> 00:08:11,005
+Okay, so where is the data
+coming from? That's why this from
+
+501
+00:08:11,005 --> 00:08:15,525
+is so important. It's saying from
+what tables. All right, perfect.
+
+502
+00:08:15,525 --> 00:08:19,325
+So let's go ahead and how
+about we write our first SQL
+
+503
+00:08:19,325 --> 00:08:23,445
+query. I know you're ready. I'm
+ready. Let's get this done. So
+
+504
+00:08:23,445 --> 00:08:26,885
+I'm going to come over here into
+Beekeeper. Now, when we do in
+
+505
+00:08:26,885 --> 00:08:31,165
+-class assignments and we are
+working on in-class assignments,
+
+506
+00:08:31,285 --> 00:08:36,965
+please, I will provide you with SQL
+queries and questions to complete.
+
+507
+00:08:36,965 --> 00:08:40,525
+When we're in these lecture videos,
+please just follow along with me.
+
+508
+00:08:40,525 --> 00:08:43,945
+I'll be talking through the prompts
+that we're working on, and I think
+
+509
+00:08:43,945 --> 00:08:47,025
+you'll find it to be very beneficial.
+So I'm going to go ahead and say,
+
+510
+00:08:47,145 --> 00:08:51,245
+I'm going to, oh, actually, we
+already connected to Beekeeper. Okay,
+
+511
+00:08:51,245 --> 00:08:55,385
+so make sure you launch Beekeeper
+Studio. We've already connected.
+
+512
+00:08:55,605 --> 00:08:58,365
+If not, go back and watch
+the Beekeeper video, but
+
+513
+00:08:58,365 --> 00:09:01,755
+we've already connected to
+our Data 2100 SQL Server
+
+514
+00:09:01,755 --> 00:09:03,355
+database. I'm going to
+go ahead and click this.
+
+515
+00:09:03,725 --> 00:09:05,065
+Okay, perfect.
+
+516
+00:09:05,725 --> 00:09:10,325
+Now I'm going to go ahead and
+press connect, and perfect, we are
+
+517
+00:09:10,325 --> 00:09:14,305
+connected. So I want you to look
+over here and say, all right,
+
+518
+00:09:14,305 --> 00:09:18,325
+what different databases do I
+have access to? You'll notice
+
+519
+00:09:18,325 --> 00:09:22,085
+there are some different databases
+that you have access to. DBVAC
+
+520
+00:09:22,085 --> 00:09:24,315
+is one that you're going to use
+for some homework assignments.
+
+521
+00:09:24,585 --> 00:09:29,285
+And DBVAC has these different
+entities or tables within it.
+
+522
+00:09:30,215 --> 00:09:33,045
+Overland is the database that
+we're going to be working
+
+523
+00:09:33,045 --> 00:09:36,265
+with a lot in our in-class
+videos, things like that.
+
+524
+00:09:37,565 --> 00:09:40,605
+So we're going to be working
+here in Overland. And
+
+525
+00:09:40,605 --> 00:09:44,285
+Overland has these seven
+different tables. Now, if
+
+526
+00:09:44,285 --> 00:09:48,365
+I come back here and I
+show you our Overland ERD,
+
+527
+00:09:49,045 --> 00:09:50,745
+right, you are familiar.
+
+528
+00:09:51,625 --> 00:09:52,485
+Oh,
+
+529
+00:09:53,225 --> 00:09:57,105
+I'm going to discard that. You are
+familiar with the Overland ERD,
+
+530
+00:09:57,165 --> 00:10:00,865
+okay, our Entity Relationship
+Diagram. So we can see here I have a
+
+531
+00:10:00,865 --> 00:10:04,245
+household table, a guest table,
+visit table, and on down. So when I
+
+532
+00:10:04,245 --> 00:10:08,865
+look at Beekeeper, I can see here,
+oh I'm in the Overland database in
+
+533
+00:10:08,865 --> 00:10:12,125
+the upper left hand corner. So if
+you ever need to switch databases,
+
+534
+00:10:12,125 --> 00:10:15,125
+you just click this drop down menu
+and switch to a different database.
+
+535
+00:10:15,125 --> 00:10:20,165
+So I'm in the Overland database
+and I'm going to be working with
+
+536
+00:10:20,165 --> 00:10:24,485
+say the guest table. So I can click
+down on that drop down by guest
+
+537
+00:10:24,485 --> 00:10:29,545
+and it will show me here are the
+different fields in my guest tables.
+
+538
+00:10:29,545 --> 00:10:32,885
+We can also call them columns.
+So I have all these different
+
+539
+00:10:32,885 --> 00:10:37,005
+columns in my guest table. So I'm
+going to go ahead and say select star
+
+540
+00:10:38,545 --> 00:10:43,425
+from guest. And you're probably
+wondering, what in the world, Reagan?
+
+541
+00:10:43,425 --> 00:10:47,365
+Why did you put, why did you say
+star? Because it's an asterisk.
+
+542
+00:10:48,745 --> 00:10:52,285
+Yes, it is an asterisk, but I
+prefer to say select star because I
+
+543
+00:10:52,285 --> 00:10:55,745
+think it's fun. Okay. So I'm going
+to say select star from guest.
+
+544
+00:10:55,745 --> 00:10:58,695
+I'm going to go ahead and press
+run, or you can say control enter.
+
+545
+00:10:59,165 --> 00:11:03,445
+And this is an entire query.
+Now I'm not going to tell
+
+546
+00:11:03,445 --> 00:11:05,125
+you what this is going to
+return, but I want you to
+
+547
+00:11:05,125 --> 00:11:07,405
+take a look at it. What do
+you think it's returning?
+
+548
+00:11:08,045 --> 00:11:11,985
+So let's take a look at this.
+So I'm looking at select
+
+549
+00:11:11,985 --> 00:11:15,345
+star from guest. I'm going
+to take a look at this
+
+550
+00:11:15,465 --> 00:11:17,125
+output down here below.
+
+551
+00:11:18,165 --> 00:11:23,025
+And what am I noticing about this output?
+
+552
+00:11:23,845 --> 00:11:27,805
+First off, what is it returning to
+me? So I can see here I have guest
+
+553
+00:11:27,805 --> 00:11:31,225
+ID, household ID, first name, last
+name, gender, age, season pass,
+
+554
+00:11:31,225 --> 00:11:36,225
+and edu when i take a look at my
+overland erd and day dictionary i
+
+555
+00:11:36,225 --> 00:11:42,505
+can see here that that is returning
+my in every single field in my
+
+556
+00:11:42,505 --> 00:11:47,085
+guest table okay every single field
+is being returned to me guest id
+
+557
+00:11:47,085 --> 00:11:52,485
+household id first name last name
+gender age season pass and edu these
+
+558
+00:11:52,485 --> 00:11:57,885
+are all being returned to me. So
+what select star does is select
+
+559
+00:11:57,885 --> 00:12:02,965
+star says, show me everything from
+the guest table. Okay, show me
+
+560
+00:12:02,965 --> 00:12:09,025
+everything. So when I see a question
+that looks like this, show me all
+
+561
+00:12:09,025 --> 00:12:14,765
+data from the guest table, this
+is how I would write the query to
+
+562
+00:12:14,765 --> 00:12:19,265
+answer that question. I am showing
+all data from the guest table. So
+
+563
+00:12:19,265 --> 00:12:23,805
+that was a moment. We just wrote
+our first SQL query and ran it and
+
+564
+00:12:23,805 --> 00:12:28,705
+now it's showing me all this awesome
+data from my guest table, right?
+
+565
+00:12:28,965 --> 00:12:33,645
+It's so fun because now I can start
+to manipulate and say, you know, I
+
+566
+00:12:33,645 --> 00:12:37,745
+only want to see certain columns.
+So say I want to say, you know what,
+
+567
+00:12:37,745 --> 00:12:44,985
+select first name, last name, and
+gender and age from my guest table. So
+
+568
+00:12:44,985 --> 00:12:48,225
+show me all this data from my guest
+table. I'm going to go ahead. I'm
+
+569
+00:12:48,225 --> 00:12:51,865
+going to say control and enter, or
+you can just do run, but I'm going
+
+570
+00:12:51,865 --> 00:12:57,105
+to say control, enter. And now it shows
+me all of my guests. So I'm showing
+
+571
+00:12:57,105 --> 00:13:01,885
+every record of data and it's showing
+me their first name, their last
+
+572
+00:13:01,885 --> 00:13:05,885
+name, their gender, and their age.
+Now, if I throw in here guest ID,
+
+573
+00:13:06,665 --> 00:13:11,345
+now, as you'll notice here, right,
+I'm separating all of these fields
+
+574
+00:13:11,345 --> 00:13:18,625
+here in my select clause with commas.
+I do not have a comma after age.
+
+575
+00:13:18,625 --> 00:13:22,185
+That will throw an error, okay? So
+just between the fields is where I
+
+576
+00:13:22,185 --> 00:13:25,845
+have the commas. So now when I run
+this, I say select guest ID, first
+
+577
+00:13:25,845 --> 00:13:29,625
+name, last name, gender, and age.
+Now, as a pop quiz, what is guest ID?
+
+578
+00:13:30,045 --> 00:13:35,165
+Guest ID is the primary key, right?
+It's our primary key. It uniquely
+
+579
+00:13:35,165 --> 00:13:39,585
+identifies every guest in my
+guest table. So guest ID number
+
+580
+00:13:39,585 --> 00:13:45,565
+one, their name is Christian
+Willis, gender male age 45. So now I
+
+581
+00:13:45,565 --> 00:13:49,725
+have my whole record of data about
+that guest, but I'm only showing
+
+582
+00:13:49,725 --> 00:13:55,665
+certain columns, right, or fields
+about that record of data, okay?
+
+583
+00:13:55,845 --> 00:14:00,845
+So, so powerful, that is
+how we write an SQL query.
+
+584
+00:14:01,305 --> 00:14:06,305
+So this prompt would read,
+show me the guest ID,
+
+585
+00:14:06,445 --> 00:14:08,605
+first name, last name,
+
+586
+00:14:08,785 --> 00:14:09,605
+gender,
+
+587
+00:14:09,785 --> 00:14:13,165
+and age of all guests.
+
+588
+00:14:13,165 --> 00:14:18,985
+Okay, so that prompt, this
+query would answer that prompt.
+
+589
+00:14:18,985 --> 00:14:20,745
+All right, so fun.
+
+590
+00:14:21,715 --> 00:14:24,105
+Another question here, I
+want you to kind of be aware
+
+591
+00:14:24,105 --> 00:14:27,365
+of our Beekeeper Studio
+and what it looks like, is
+
+592
+00:14:27,365 --> 00:14:32,865
+what is the total number of
+guests in my guest table?
+
+593
+00:14:33,615 --> 00:14:36,385
+You're probably like, well, Reagan,
+I don't want to scroll all the
+
+594
+00:14:36,385 --> 00:14:39,745
+way down here. You don't have to.
+Come down here, and you can see
+
+595
+00:14:39,745 --> 00:14:47,045
+there's 13,140 records. So I have
+13,140 guests in this guest table.
+
+596
+00:14:47,225 --> 00:14:54,105
+Okay, perfect. Let's come back
+here to our PowerPoint deck. So we
+
+597
+00:14:54,105 --> 00:14:59,945
+can continue to write really awesome
+queries with select and from.
+
+598
+00:14:59,965 --> 00:15:02,665
+They will show me, I can
+say the different column
+
+599
+00:15:02,665 --> 00:15:05,865
+names, from what tables.
+But now we're going to throw
+
+600
+00:15:05,865 --> 00:15:09,125
+in, I want to introduce you
+to my handy where clause.
+
+601
+00:15:09,125 --> 00:15:13,385
+Where is so important in
+writing SQL queries. This is
+
+602
+00:15:13,385 --> 00:15:18,945
+where I say only include
+records that meet this criteria.
+
+603
+00:15:19,685 --> 00:15:21,465
+So let's go ahead and do this.
+
+604
+00:15:21,665 --> 00:15:25,245
+I'm going to show you
+a couple more slides.
+
+605
+00:15:25,245 --> 00:15:27,345
+All right, so let's look
+at the where clause.
+
+606
+00:15:28,125 --> 00:15:32,905
+So a where clause comes after the
+from statement and is used to restrict
+
+607
+00:15:32,905 --> 00:15:37,285
+the output rows unless they match
+the criteria you are looking for.
+
+608
+00:15:37,285 --> 00:15:41,165
+So for example, I can say select
+last name, comma, first name from
+
+609
+00:15:41,165 --> 00:15:46,645
+customer where their state is equal
+to Utah. So that state field then
+
+610
+00:15:46,645 --> 00:15:54,625
+for the records must equal Utah to
+be included in this query's output.
+
+611
+00:15:54,655 --> 00:15:56,985
+Now, as you'll find in this class,
+
+612
+00:15:57,765 --> 00:16:00,295
+you'll read content.
+
+613
+00:16:01,005 --> 00:16:04,965
+I will walk you through content
+here in our lecture videos. But
+
+614
+00:16:04,965 --> 00:16:08,165
+getting the hands-on experience in
+writing the queries, that's really
+
+615
+00:16:08,165 --> 00:16:11,145
+where the learning happens. So
+we'll go ahead and write a query
+
+616
+00:16:11,145 --> 00:16:14,725
+in just one second. We can use
+all sorts of different criteria
+
+617
+00:16:14,725 --> 00:16:19,905
+in our WHERE clause, and we are
+using match criteria. So the where
+
+618
+00:16:19,905 --> 00:16:24,765
+clause match criteria may include
+equals, not equal to, greater
+
+619
+00:16:24,765 --> 00:16:28,705
+than, less than, greater than or
+equal to, less than or equal to,
+
+620
+00:16:28,985 --> 00:16:34,625
+and then we'll also talk about
+null values. So we can use any of
+
+621
+00:16:34,625 --> 00:16:38,905
+these operators to help us in our
+where clause. So let's go ahead
+
+622
+00:16:38,905 --> 00:16:43,065
+and take a look at our where clause
+and write a couple of examples.
+
+623
+00:16:45,185 --> 00:16:47,325
+So I'm going to come down here and I'm
+
+624
+00:16:47,325 --> 00:16:50,945
+going to say, you know,
+show me, let's see,
+
+625
+00:16:51,405 --> 00:16:57,845
+show all data from the employee
+table. Okay, so let's go ahead and
+
+626
+00:16:57,845 --> 00:17:02,065
+write the, so I want to show all
+data from the employee table. So
+
+627
+00:17:02,065 --> 00:17:04,665
+sometimes you may want to start out
+with the from clause. And so you
+
+628
+00:17:04,665 --> 00:17:08,225
+went from employee because I know
+that's where my data is coming
+
+629
+00:17:08,225 --> 00:17:13,465
+from. and when I show all data,
+I'm going to say select star, okay,
+
+630
+00:17:13,585 --> 00:17:17,945
+from employees. So let's go ahead
+and run this. Now when I run
+
+631
+00:17:17,945 --> 00:17:22,185
+this, it's going to run this
+whole query sheet right here.
+
+632
+00:17:22,205 --> 00:17:27,565
+So it's ran that, it's ran this
+query and it's ran this query.
+
+633
+00:17:27,685 --> 00:17:33,705
+We are going to see the results of
+the most bottom, the last query here
+
+634
+00:17:33,705 --> 00:17:38,105
+that it ran. So I'm showing here
+all of the data from my employee
+
+635
+00:17:38,105 --> 00:17:41,685
+table. I am showing that right here
+at the bottom. But if I only want to
+
+636
+00:17:41,685 --> 00:17:47,705
+run the select star from employee,
+then I just highlight this one query
+
+637
+00:17:47,705 --> 00:17:53,045
+and press run selection. So if I
+want to run this select guest ID
+
+638
+00:17:53,045 --> 00:17:56,645
+for same last name, gender, and age
+up here, I would highlight it and
+
+639
+00:17:56,645 --> 00:18:00,565
+press run selection. But if I'm just
+running the last query on the query
+
+640
+00:18:00,565 --> 00:18:04,645
+sheet that we're dealing with right
+here, then there's really no need
+
+641
+00:18:04,785 --> 00:18:09,365
+to highlight this last query. That's
+what's going to appear for you.
+
+642
+00:18:09,995 --> 00:18:13,385
+But you'll see, I kind of get in
+the habit and I do highlight the
+
+643
+00:18:13,385 --> 00:18:17,345
+query that I want to run. So
+again, these are query sheets that
+
+644
+00:18:17,345 --> 00:18:21,785
+we are working within right here.
+So think of this as like a Word
+
+645
+00:18:22,285 --> 00:18:28,985
+document or just basically a text
+file that is allowing us to write
+
+646
+00:18:28,985 --> 00:18:32,725
+the queries and then we press
+the run down here. Okay, perfect.
+
+647
+00:18:33,625 --> 00:18:38,205
+So select star from employee.
+When I do that, I see here that I
+
+648
+00:18:38,205 --> 00:18:43,585
+have all of the rows and all of
+the columns for employee appearing.
+
+649
+00:18:43,585 --> 00:18:51,635
+Now, what if though I want to
+say, show me the first name, last
+
+650
+00:18:51,635 --> 00:19:03,725
+name, and age for all employees
+over 45 okay so let's go ahead and
+
+651
+00:19:03,725 --> 00:19:07,565
+write this query so I know that I
+am going to be pulling data from
+
+652
+00:19:07,565 --> 00:19:12,425
+the employee table okay and if you
+have any questions on where what
+
+653
+00:19:12,425 --> 00:19:16,045
+the employee table is named you
+can come back I've linked the
+
+654
+00:19:16,045 --> 00:19:21,125
+overland ERD and a dictionary I've
+linked it right above this video I
+
+655
+00:19:21,785 --> 00:19:25,745
+have a file just with it so here
+the employee table is just named
+
+656
+00:19:25,745 --> 00:19:29,245
+employee But we'll notice here
+that the employee first name and
+
+657
+00:19:29,245 --> 00:19:36,685
+last name, these field names are
+EMP, F name, EMP, L name. So I
+
+658
+00:19:36,685 --> 00:19:44,025
+must type them exactly into my SQL
+query just like they are listed
+
+659
+00:19:44,025 --> 00:19:47,505
+there in my entity relationship
+diagram. So I can see them down
+
+660
+00:19:47,505 --> 00:19:49,925
+here, employee first name,
+employee last name. So I'm going to
+
+661
+00:19:49,925 --> 00:20:03,165
+say select employee EMP first
+name, EMP last name, and age. Okay.
+
+662
+00:20:03,165 --> 00:20:07,245
+And for all employees over
+45. And so when I run this,
+
+663
+00:20:07,245 --> 00:20:09,625
+though, initially, let's
+just run this to begin with.
+
+664
+00:20:09,845 --> 00:20:12,805
+My tip is to run your queries often.
+
+665
+00:20:12,805 --> 00:20:18,025
+I notice, though, that I am
+including employees who are younger
+
+666
+00:20:18,025 --> 00:20:21,835
+than 25. But I only want to include
+those for all employees over,
+
+667
+00:20:21,835 --> 00:20:25,425
+let's say, the age of 45. It
+will be a little bit more formal.
+
+668
+00:20:25,545 --> 00:20:30,905
+So I'm going to then, here
+I'm going to place my cursor
+
+669
+00:20:30,905 --> 00:20:33,345
+right in front of that
+semicolon. And I'm going to say
+
+670
+00:20:33,345 --> 00:20:40,465
+from employee, and I'll say
+where age is greater than 45.
+
+671
+00:20:40,465 --> 00:20:44,655
+Okay, so they must be over
+the age of 45 to be included
+
+672
+00:20:44,655 --> 00:20:47,105
+in my output. So I'm going
+to go ahead and run this.
+
+673
+00:20:48,345 --> 00:20:54,385
+And now when I do down here, what I
+see is that all of my employees who
+
+674
+00:20:54,385 --> 00:20:58,765
+are over the age of 45 are appearing
+in my output. So they must be over
+
+675
+00:20:58,765 --> 00:21:02,465
+the age of 45. So I can see here
+that Skylar Patrick is my employee
+
+676
+00:21:02,465 --> 00:21:07,285
+and they are over the age of 45. So
+I can double check that my query is
+
+677
+00:21:08,285 --> 00:21:11,925
+returning what it should. We'll
+notice here that result three,
+
+678
+00:21:11,925 --> 00:21:15,945
+again, because we have three different
+queries running here, results
+
+679
+00:21:15,945 --> 00:21:21,165
+in 172 rows. So I have 172 employees
+who are over the age of 45.
+
+680
+00:21:21,625 --> 00:21:28,885
+So that is just one example of what
+you can do with the where clause.
+
+681
+00:21:28,885 --> 00:21:32,775
+You can also do things like maybe
+I only want to return employees.
+
+682
+00:21:34,125 --> 00:21:41,585
+So I'll say, you know what, show
+me all employees who have the last
+
+683
+00:21:41,585 --> 00:21:46,945
+name of Johnson. I'm looking right
+here at Cohen Johnson. So I'm
+
+684
+00:21:46,945 --> 00:21:50,025
+going to come down here. I'm going
+to do the same thing here. When
+
+685
+00:21:50,025 --> 00:21:55,005
+I say show me all employees, maybe
+I mean first name, last name.
+
+686
+00:21:56,285 --> 00:22:02,365
+And so I'll say select employee
+first name, employee last last name,
+
+687
+00:22:02,545 --> 00:22:05,305
+uh, from employee.
+
+688
+00:22:05,505 --> 00:22:10,325
+And then I'll say from employee.
+
+689
+00:22:10,465 --> 00:22:12,545
+And then I'll say, sometimes it wants
+
+690
+00:22:12,545 --> 00:22:14,685
+to do that. It will run just fine.
+
+691
+00:22:14,905 --> 00:22:15,485
+Um,
+
+692
+00:22:15,825 --> 00:22:16,685
+where,
+
+693
+00:22:16,865 --> 00:22:18,165
+uh,
+
+694
+00:22:18,385 --> 00:22:21,285
+let's say last employee, last name
+
+695
+00:22:22,045 --> 00:22:29,605
+is equal to, and then I'm going to
+say Johnson. Now, why did I, why did
+
+696
+00:22:29,605 --> 00:22:34,005
+I do single quotation marks around
+Johnson. Okay, why did I do this?
+
+697
+00:22:34,005 --> 00:22:39,225
+Well, this is because if I'm dealing
+with qualitative data, so things
+
+698
+00:22:39,225 --> 00:22:44,605
+like text, for example, like Johnson,
+it's not a number. I must put
+
+699
+00:22:44,605 --> 00:22:51,265
+single quotations around it in order
+for it to run correctly. So just keep
+
+700
+00:22:51,265 --> 00:22:56,525
+that in mind that if I it equal to
+employee last name equal to johnson
+
+701
+00:22:56,525 --> 00:23:02,205
+and i run this query there was a
+problem that's what my that's my
+
+702
+00:23:02,205 --> 00:23:06,505
+query outputs to me so if i zoom out
+a little bit let's see invalid column
+
+703
+00:23:06,505 --> 00:23:11,145
+name johnson okay so it wants to
+treat it like a column name so pay
+
+704
+00:23:11,145 --> 00:23:16,985
+attention to your errors and we are
+going to include text data qualitative
+
+705
+00:23:16,985 --> 00:23:21,285
+type of data we'll talk more about
+what that means but just for now
+
+706
+00:23:21,285 --> 00:23:25,265
+think of it as a lot of text data.
+We are going to include text data
+
+707
+00:23:25,525 --> 00:23:27,945
+inside of single quotation marks.
+
+708
+00:23:28,305 --> 00:23:30,805
+All right so now when
+I go ahead and run this
+
+709
+00:23:31,685 --> 00:23:34,385
+you can see here that I have all of the
+
+710
+00:23:34,385 --> 00:23:36,505
+employees last names that are Johnson.
+
+711
+00:23:36,545 --> 00:23:39,445
+All those employees are
+returning to me. So I have eight
+
+712
+00:23:39,445 --> 00:23:43,425
+employees who have the last name
+Johnson. So the where clause
+
+713
+00:23:43,425 --> 00:23:48,885
+is setting the requirement that
+the last name must be equal
+
+714
+00:23:48,885 --> 00:23:52,445
+to Johnson in order to be
+included in this query's output.
+
+715
+00:23:53,045 --> 00:23:55,005
+So powerful, right?
+
+716
+00:23:56,185 --> 00:23:58,185
+SQL is extremely powerful.
+
+717
+00:23:58,505 --> 00:24:02,085
+So now let's come over here.
+And the last thing that I want,
+
+718
+00:24:02,085 --> 00:24:04,345
+or just two more things I want
+to talk to you about. Number
+
+719
+00:24:04,345 --> 00:24:08,545
+one is sometimes we want to
+do multiple matching criteria,
+
+720
+00:24:08,565 --> 00:24:12,345
+saying this must be true
+and this must be true.
+
+721
+00:24:12,365 --> 00:24:18,185
+Or we might say this must be true
+or this must be true. Okay, so
+
+722
+00:24:18,185 --> 00:24:21,705
+we'll do an example. of that. Let's
+go ahead and do that over here.
+
+723
+00:24:22,425 --> 00:24:25,985
+So let's say that I want to
+say where employee's last name
+
+724
+00:24:25,985 --> 00:24:32,605
+equal to Johnson or employee
+last name equal to Smith. Okay.
+
+725
+00:24:32,765 --> 00:24:35,885
+Maybe I want to say your last name
+either has to be Johnson or Smith
+
+726
+00:24:35,885 --> 00:24:40,445
+to be included in this query's
+output. When I run this then I see
+
+727
+00:24:40,445 --> 00:24:45,445
+that I have employees with the
+last name of Johnson or Smith being
+
+728
+00:24:45,445 --> 00:24:53,065
+included in my output. Now, why
+couldn't I do and here? Okay. Why
+
+729
+00:24:53,065 --> 00:24:57,565
+couldn't I do and? The reason I
+couldn't do and is because somebody's
+
+730
+00:24:57,565 --> 00:25:03,285
+last name is not Johnson and
+Smith, according to my data, right?
+
+731
+00:25:03,285 --> 00:25:09,185
+Because they have one piece of,
+they have one last name here listed.
+
+732
+00:25:09,885 --> 00:25:12,945
+So that would be employee
+last name equal to
+
+733
+00:25:12,945 --> 00:25:16,845
+Johnson or employee last
+name equal to Smith. Okay,
+
+734
+00:25:16,985 --> 00:25:19,385
+so I just want you to keep
+that in mind. You will
+
+735
+00:25:19,385 --> 00:25:22,705
+notice that we capitalize
+all of our clauses.
+
+736
+00:25:23,085 --> 00:25:27,865
+Okay, that SQL is not case
+sensitive, but for best practice,
+
+737
+00:25:27,865 --> 00:25:31,065
+we are going to capitalize
+all clauses. We are also going
+
+738
+00:25:31,065 --> 00:25:34,945
+to capitalize our match
+operators here like and and or.
+
+739
+00:25:36,225 --> 00:25:41,565
+And then we do capitalize
+based upon how the columns are
+
+740
+00:25:41,565 --> 00:25:48,285
+capitalized, if you will,
+here in our database. So just
+
+741
+00:25:48,285 --> 00:25:51,245
+keep that in mind. The big
+ones to keep in mind are select
+
+742
+00:25:51,245 --> 00:25:56,045
+from where group I having,
+and then our ands and our ors.
+
+743
+00:25:57,025 --> 00:26:00,925
+You will notice that
+here I had to rename,
+
+744
+00:26:00,925 --> 00:26:03,205
+I said or employee last
+name equal to Smith.
+
+745
+00:26:03,205 --> 00:26:06,205
+You might have wondered why I
+couldn't just say employee last name
+
+746
+00:26:06,205 --> 00:26:11,625
+equal to Johnson or Smith. And the
+reason is this or basically says,
+
+747
+00:26:11,625 --> 00:26:15,265
+all right, something to do with
+Smith. It's not looking at employee
+
+748
+00:26:15,265 --> 00:26:20,345
+last name anymore. So we must restate
+the column that we are looking for
+
+749
+00:26:20,345 --> 00:26:25,105
+Smith within, okay? So that's just
+something to keep in mind here.
+
+750
+00:26:25,105 --> 00:26:28,185
+One other thing we could do
+here is we could say employee
+
+751
+00:26:28,185 --> 00:26:33,645
+last name equal to Johnson
+and their age greater than 20.
+
+752
+00:26:33,805 --> 00:26:38,285
+So that could be two requirements
+that I set for employees.
+
+753
+00:26:39,295 --> 00:26:41,465
+So let's go ahead and run this last one.
+
+754
+00:26:42,435 --> 00:26:45,465
+And when I do this, you can
+see that these employees'
+
+755
+00:26:45,465 --> 00:26:48,965
+last names are Johnson,
+and they are older than 20.
+
+756
+00:26:49,085 --> 00:26:51,945
+So this query would then
+answer the prompt, we have
+
+757
+00:26:51,945 --> 00:26:59,485
+the last name of Johnson
+and are older than 20.
+
+758
+00:26:59,745 --> 00:27:05,305
+Keep in mind here, these dashes,
+right? These dashes are comments, so
+
+759
+00:27:05,305 --> 00:27:13,505
+these comments are basically the
+processor is going to ignore these,
+
+760
+00:27:13,505 --> 00:27:16,765
+and these can just be comments that
+we write to ourselves or that we copy
+
+761
+00:27:16,765 --> 00:27:21,085
+in prompts. So here's a good
+introduction to SQL. We will do a lot
+
+762
+00:27:21,085 --> 00:27:26,965
+more SQL, but I just wanted to give
+you an introduction and have you
+
+763
+00:27:26,965 --> 00:27:30,705
+start writing queries. But I encourage
+you, take three minutes, write a
+
+764
+00:27:30,705 --> 00:27:33,574
+couple more queries, and see what
+questions you can answer. Take care.
+

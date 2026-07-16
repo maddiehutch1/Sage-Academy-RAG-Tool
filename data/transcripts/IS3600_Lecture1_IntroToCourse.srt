@@ -1,0 +1,4389 @@
+1
+00:00:00,000 --> 00:00:01,540
+SHARAD JONES: Hey, everyone.
+
+2
+00:00:01,540 --> 00:00:05,908
+Welcome to IS3600, our intro
+to Cloud computing course.
+
+3
+00:00:05,908 --> 00:00:07,950
+My name is Dr. Sharad
+Jones, I'm a professor here
+
+4
+00:00:07,950 --> 00:00:09,138
+in the department.
+
+5
+00:00:09,138 --> 00:00:10,680
+And I'm really
+excited to be teaching
+
+6
+00:00:10,680 --> 00:00:12,150
+this course with you guys.
+
+7
+00:00:12,150 --> 00:00:14,100
+This is one of
+those topics that--
+
+8
+00:00:14,100 --> 00:00:16,320
+I think every class,
+every professor
+
+9
+00:00:16,320 --> 00:00:17,820
+will say that the
+content is always
+
+10
+00:00:17,820 --> 00:00:20,940
+changing, but this one
+even more so than others.
+
+11
+00:00:20,940 --> 00:00:23,820
+Even to say broadly
+that we're teaching
+
+12
+00:00:23,820 --> 00:00:28,947
+a course in Cloud computing
+is a bold and broad statement.
+
+13
+00:00:28,947 --> 00:00:30,780
+As you'll see this
+semester, Cloud computing
+
+14
+00:00:30,780 --> 00:00:32,940
+is such a big topic.
+
+15
+00:00:32,940 --> 00:00:37,110
+It's so wide ranging that
+we're going to only scratch
+
+16
+00:00:37,110 --> 00:00:39,930
+the surface of this, but I
+hope it at least introduces you
+
+17
+00:00:39,930 --> 00:00:42,870
+to enough tools and techniques
+that you kind of fundamentally
+
+18
+00:00:42,870 --> 00:00:47,310
+understand how most modern
+websites and online companies
+
+19
+00:00:47,310 --> 00:00:49,920
+work, and also the
+kind of opportunities
+
+20
+00:00:49,920 --> 00:00:53,070
+here to innovate in this space.
+
+21
+00:00:53,070 --> 00:00:57,270
+So again, it is truly ubiquitous
+across basically every area
+
+22
+00:00:57,270 --> 00:00:57,880
+of tech.
+
+23
+00:00:57,880 --> 00:01:00,470
+I don't think there's any
+company you'll come across,
+
+24
+00:01:00,470 --> 00:01:03,400
+honestly, whether tech or
+not, that isn't leveraging
+
+25
+00:01:03,400 --> 00:01:06,130
+some bit of Cloud resources.
+
+26
+00:01:06,130 --> 00:01:07,840
+As we'll see again,
+pretty much anything
+
+27
+00:01:07,840 --> 00:01:09,215
+that is connected
+to the internet
+
+28
+00:01:09,215 --> 00:01:11,330
+now has to use Cloud resources.
+
+29
+00:01:11,330 --> 00:01:13,220
+It's the only way
+we can really scale.
+
+30
+00:01:13,220 --> 00:01:18,480
+And so having an understanding
+of these tools and resources
+
+31
+00:01:18,480 --> 00:01:20,230
+across these platforms
+I think will really
+
+32
+00:01:20,230 --> 00:01:23,280
+help you get the bigger
+picture of this all.
+
+33
+00:01:26,810 --> 00:01:29,287
+Now, for those that
+I haven't met before,
+
+34
+00:01:29,287 --> 00:01:30,870
+you might recognize
+this picture here.
+
+35
+00:01:30,870 --> 00:01:31,820
+This is my wife.
+
+36
+00:01:31,820 --> 00:01:34,410
+She's also a professor in the
+department, Dr. Carly Fox.
+
+37
+00:01:34,410 --> 00:01:37,140
+So definitely reach
+out to me or her
+
+38
+00:01:37,140 --> 00:01:39,600
+if you ever have any issues
+that we can help out with.
+
+39
+00:01:39,600 --> 00:01:41,210
+But to give a bit
+more background
+
+40
+00:01:41,210 --> 00:01:44,438
+on me, and maybe kind of my
+journey in Cloud computing
+
+41
+00:01:44,438 --> 00:01:45,980
+and how I kind of
+got to this point--
+
+42
+00:01:45,980 --> 00:01:48,710
+here, I'll slide myself out of
+the way, so I'm not blocking it.
+
+43
+00:01:48,710 --> 00:01:50,210
+I don't want to
+block my dog either.
+
+44
+00:01:50,210 --> 00:01:51,095
+That's my dog, Mico.
+
+45
+00:01:51,095 --> 00:01:52,970
+You'll probably see
+plenty of pictures of him
+
+46
+00:01:52,970 --> 00:01:54,830
+throughout this semester.
+
+47
+00:01:54,830 --> 00:01:58,820
+But yeah, so again, I did
+my undergraduate degree
+
+48
+00:01:58,820 --> 00:02:01,700
+at Rice University
+down in Houston, Texas
+
+49
+00:02:01,700 --> 00:02:04,860
+in astronomy before
+moving on to Carvana.
+
+50
+00:02:04,860 --> 00:02:09,945
+So timeline here you kind of see
+2014, I was at Rice and then--
+
+51
+00:02:09,945 --> 00:02:11,570
+or I finished up at
+Rice there and then
+
+52
+00:02:11,570 --> 00:02:15,240
+I started at Carvana as a
+smaller tech startup there.
+
+53
+00:02:15,240 --> 00:02:18,740
+And that was about where I
+started to dabble in the Cloud.
+
+54
+00:02:18,740 --> 00:02:21,890
+We were a growing tech company.
+
+55
+00:02:21,890 --> 00:02:25,460
+We were leveraging a lot
+of compute resources,
+
+56
+00:02:25,460 --> 00:02:27,570
+and the scale of data
+we were working with
+
+57
+00:02:27,570 --> 00:02:29,970
+was becoming just
+so hard to deal
+
+58
+00:02:29,970 --> 00:02:32,560
+with in our local environment.
+
+59
+00:02:32,560 --> 00:02:34,068
+And we'll talk
+about why that is,
+
+60
+00:02:34,068 --> 00:02:36,360
+and I'll give some concrete
+examples from my experience
+
+61
+00:02:36,360 --> 00:02:39,480
+there of why we needed to
+transition at least aspects
+
+62
+00:02:39,480 --> 00:02:42,030
+of the business to the Cloud.
+
+63
+00:02:42,030 --> 00:02:44,700
+But again, I'll say,
+recognize that my background
+
+64
+00:02:44,700 --> 00:02:46,510
+is very heavily in the
+data science space.
+
+65
+00:02:46,510 --> 00:02:48,780
+So after that I went on to
+Maxar as a data scientist
+
+66
+00:02:48,780 --> 00:02:51,240
+and did my PhD in statistics.
+
+67
+00:02:51,240 --> 00:02:54,150
+And I worked for another startup
+after that in the data science
+
+68
+00:02:54,150 --> 00:02:54,850
+space.
+
+69
+00:02:54,850 --> 00:02:57,270
+So my experiences
+in the Cloud are
+
+70
+00:02:57,270 --> 00:02:58,740
+going to be heavily focused--
+
+71
+00:02:58,740 --> 00:03:01,800
+or I'll say at least the most
+robust in this area of data
+
+72
+00:03:01,800 --> 00:03:02,895
+science.
+
+73
+00:03:02,895 --> 00:03:05,520
+But I definitely don't want that
+to skew you and make you think
+
+74
+00:03:05,520 --> 00:03:06,610
+that it's only useful there.
+
+75
+00:03:06,610 --> 00:03:07,950
+And actually, as
+we'll see, we'll
+
+76
+00:03:07,950 --> 00:03:10,117
+talk about data science and
+machine learning and how
+
+77
+00:03:10,117 --> 00:03:11,880
+we can leverage the
+Cloud there, but we'll
+
+78
+00:03:11,880 --> 00:03:14,490
+cover so many other
+things that are related
+
+79
+00:03:14,490 --> 00:03:15,632
+to a bunch of other jobs.
+
+80
+00:03:15,632 --> 00:03:17,340
+I don't have the
+expertise in those areas
+
+81
+00:03:17,340 --> 00:03:21,000
+as much, so I'll do my best to
+make sure to explain how it's
+
+82
+00:03:21,000 --> 00:03:22,900
+used in these different areas.
+
+83
+00:03:22,900 --> 00:03:26,760
+But I'll say broadly that we
+have a lot of really cool things
+
+84
+00:03:26,760 --> 00:03:29,130
+that we can do with the
+Cloud, and in data science
+
+85
+00:03:29,130 --> 00:03:32,160
+specifically, where we're
+working with large data sets
+
+86
+00:03:32,160 --> 00:03:34,900
+kind of processing
+data at scale,
+
+87
+00:03:34,900 --> 00:03:39,150
+you really need the flexibility
+of these sorts of platforms.
+
+88
+00:03:39,150 --> 00:03:44,490
+So I'll jump really quick, some
+housekeeping on the syllabus.
+
+89
+00:03:44,490 --> 00:03:50,880
+Broadly, this course will be,
+again, for these kind of online
+
+90
+00:03:50,880 --> 00:03:55,020
+lectures here, you'll
+have alternating--
+
+91
+00:03:55,020 --> 00:03:57,880
+or you'll have-- it should
+be in the modules here.
+
+92
+00:03:57,880 --> 00:04:02,113
+So you'll see this breakdown
+of lectures, associated
+
+93
+00:04:02,113 --> 00:04:02,613
+assignments.
+
+94
+00:04:02,613 --> 00:04:05,022
+We won't discussions,
+necessarily.
+
+95
+00:04:05,022 --> 00:04:05,980
+I've switched that out.
+
+96
+00:04:05,980 --> 00:04:07,527
+So these are grayed out for you.
+
+97
+00:04:07,527 --> 00:04:09,610
+You'll see that-- that's
+just showing me for here.
+
+98
+00:04:09,610 --> 00:04:11,948
+So I view this as a
+student really quick
+
+99
+00:04:11,948 --> 00:04:13,990
+and you can see what this
+will look like for you.
+
+100
+00:04:13,990 --> 00:04:16,510
+So you should see again,
+lecture one, lecture two,
+
+101
+00:04:16,510 --> 00:04:19,237
+and within there there'll
+be the content of the videos
+
+102
+00:04:19,237 --> 00:04:21,029
+and then the associated
+assignment for each
+
+103
+00:04:21,029 --> 00:04:22,720
+of those modules or
+each of those units.
+
+104
+00:04:22,720 --> 00:04:25,077
+So should be pretty
+straightforward in how
+
+105
+00:04:25,077 --> 00:04:25,660
+it's laid out.
+
+106
+00:04:25,660 --> 00:04:27,452
+But again, if you have
+issues or questions,
+
+107
+00:04:27,452 --> 00:04:28,630
+please just reach out.
+
+108
+00:04:28,630 --> 00:04:31,552
+Happy to answer those.
+
+109
+00:04:31,552 --> 00:04:33,010
+But moving more
+towards that, we'll
+
+110
+00:04:33,010 --> 00:04:37,030
+have homeworks and unit
+projects as the main components
+
+111
+00:04:37,030 --> 00:04:38,100
+of this course.
+
+112
+00:04:38,100 --> 00:04:39,820
+These homework
+assignments will typically
+
+113
+00:04:39,820 --> 00:04:42,237
+be shorter tasks
+associated directly
+
+114
+00:04:42,237 --> 00:04:44,070
+with what we're talking
+about in the videos.
+
+115
+00:04:44,070 --> 00:04:47,140
+Whereas the unit projects will
+require you to take something
+
+116
+00:04:47,140 --> 00:04:50,420
+we've talked about and
+apply it to a larger scale.
+
+117
+00:04:50,420 --> 00:04:55,040
+It'll be somewhere between
+five and six unit projects that
+
+118
+00:04:55,040 --> 00:04:58,670
+are related basically to the
+different units in this course,
+
+119
+00:04:58,670 --> 00:05:00,580
+but you'll see that
+laid out there as well.
+
+120
+00:05:00,580 --> 00:05:02,747
+There's a little flexibility
+towards the end, that's
+
+121
+00:05:02,747 --> 00:05:06,290
+why I say again of five or six,
+we'll see where it ends up at.
+
+122
+00:05:06,290 --> 00:05:08,620
+And then as far as the
+final project goes,
+
+123
+00:05:08,620 --> 00:05:10,370
+this is something that
+I'll talk much more
+
+124
+00:05:10,370 --> 00:05:13,520
+about as the semester
+goes on, but I do want
+
+125
+00:05:13,520 --> 00:05:15,000
+you to start thinking about it.
+
+126
+00:05:15,000 --> 00:05:19,360
+My goal for this final project
+is actually not to have you--
+
+127
+00:05:19,360 --> 00:05:20,360
+or I'll say it this way.
+
+128
+00:05:20,360 --> 00:05:21,735
+I don't have a
+lot of constraints
+
+129
+00:05:21,735 --> 00:05:23,050
+on this final project.
+
+130
+00:05:23,050 --> 00:05:27,930
+I want you to do something
+that is of interest to you that
+
+131
+00:05:27,930 --> 00:05:30,180
+leverages the Cloud.
+
+132
+00:05:30,180 --> 00:05:32,793
+That's the extent of it.
+
+133
+00:05:32,793 --> 00:05:34,960
+Now, certainly, I want you
+to highlight your skills.
+
+134
+00:05:34,960 --> 00:05:37,418
+I want this to basically be
+your bullet point on the resume
+
+135
+00:05:37,418 --> 00:05:39,780
+to say like, hey, here's my
+understanding of the Cloud
+
+136
+00:05:39,780 --> 00:05:42,360
+and what I got out of
+this course in the intro
+
+137
+00:05:42,360 --> 00:05:43,540
+to Cloud computing.
+
+138
+00:05:43,540 --> 00:05:45,390
+So I'll have a
+check in point kind
+
+139
+00:05:45,390 --> 00:05:48,460
+of halfway through the semester
+where you all submit proposals.
+
+140
+00:05:48,460 --> 00:05:51,622
+So I can read through them, see
+if you are on the right track,
+
+141
+00:05:51,622 --> 00:05:53,080
+or maybe if the
+scope is too large.
+
+142
+00:05:53,080 --> 00:05:55,050
+That's typically
+what happens is--
+
+143
+00:05:55,050 --> 00:05:57,000
+and that's not a bad
+thing, but you guys
+
+144
+00:05:57,000 --> 00:05:58,920
+will have big, broad goals.
+
+145
+00:05:58,920 --> 00:06:00,480
+I'll try to help
+you figure out what
+
+146
+00:06:00,480 --> 00:06:01,870
+pieces that we can bite off.
+
+147
+00:06:01,870 --> 00:06:05,250
+And so I don't want you to
+take that to mean you shouldn't
+
+148
+00:06:05,250 --> 00:06:08,580
+have some big goal in mind.
+
+149
+00:06:08,580 --> 00:06:10,180
+And actually, I love if you do.
+
+150
+00:06:10,180 --> 00:06:12,460
+There's no expectation
+that if you say,
+
+151
+00:06:12,460 --> 00:06:15,480
+hey, I want to build
+the next Netflix
+
+152
+00:06:15,480 --> 00:06:18,090
+and by the end of the
+semester, all that happens
+
+153
+00:06:18,090 --> 00:06:20,830
+is you have a website live
+with a few links on it.
+
+154
+00:06:20,830 --> 00:06:22,068
+I think that'd be awesome.
+
+155
+00:06:22,068 --> 00:06:23,610
+I think that's
+success because you've
+
+156
+00:06:23,610 --> 00:06:26,840
+taken meaningful steps
+towards that larger end goal.
+
+157
+00:06:26,840 --> 00:06:29,500
+So very, very flexible.
+
+158
+00:06:29,500 --> 00:06:31,570
+But I'll just say
+keep an eye out
+
+159
+00:06:31,570 --> 00:06:33,190
+for this, start
+thinking about this.
+
+160
+00:06:33,190 --> 00:06:35,710
+Start thinking about topics
+that are of interest to you
+
+161
+00:06:35,710 --> 00:06:37,780
+as we're going through
+our individual examples
+
+162
+00:06:37,780 --> 00:06:40,470
+in this class.
+
+163
+00:06:40,470 --> 00:06:42,810
+Moving further on through here.
+
+164
+00:06:42,810 --> 00:06:44,700
+Important details.
+
+165
+00:06:44,700 --> 00:06:45,840
+Office hours.
+
+166
+00:06:45,840 --> 00:06:46,720
+Keep an eye on this.
+
+167
+00:06:46,720 --> 00:06:48,340
+This is subject to change.
+
+168
+00:06:48,340 --> 00:06:51,810
+So I wouldn't quote these
+numbers here, but just
+
+169
+00:06:51,810 --> 00:06:54,030
+pull up Canvas, pull
+up the syllabus when
+
+170
+00:06:54,030 --> 00:06:56,670
+you're looking at this, and
+you'll be able to see the office
+
+171
+00:06:56,670 --> 00:06:57,430
+hours here.
+
+172
+00:06:57,430 --> 00:06:59,850
+These are designated
+times that I
+
+173
+00:06:59,850 --> 00:07:02,370
+will be online, kind
+of available to hop
+
+174
+00:07:02,370 --> 00:07:05,170
+on Zoom for office hours--
+or you can come by my office.
+
+175
+00:07:05,170 --> 00:07:08,160
+I'm in the Eccles Business
+Building office 712.
+
+176
+00:07:08,160 --> 00:07:10,740
+But if you are unavailable
+those times or those
+
+177
+00:07:10,740 --> 00:07:12,995
+don't work for you, you
+kind of work at those times,
+
+178
+00:07:12,995 --> 00:07:15,370
+you need to meet in the evenings
+or whatever it might be,
+
+179
+00:07:15,370 --> 00:07:16,360
+that's perfectly fine.
+
+180
+00:07:16,360 --> 00:07:20,070
+Just shoot me an email at
+least 24, 48 hours in advance,
+
+181
+00:07:20,070 --> 00:07:22,410
+and we'll be able to
+find some time to meet.
+
+182
+00:07:22,410 --> 00:07:24,510
+I'm generally
+flexible, so just let
+
+183
+00:07:24,510 --> 00:07:27,230
+me know when one works for you.
+
+184
+00:07:27,230 --> 00:07:29,760
+And then finally, as far as
+breakdown goes to the grade,
+
+185
+00:07:29,760 --> 00:07:31,160
+you'll see that
+the final product
+
+186
+00:07:31,160 --> 00:07:33,980
+is a large chunk of the grade.
+
+187
+00:07:33,980 --> 00:07:36,560
+So again, I want that
+to be a real focus
+
+188
+00:07:36,560 --> 00:07:37,860
+throughout the semester.
+
+189
+00:07:37,860 --> 00:07:40,580
+But certainly, the unit projects
+and homework assignments
+
+190
+00:07:40,580 --> 00:07:41,820
+will impact that as well.
+
+191
+00:07:41,820 --> 00:07:43,380
+So keep an eye on this.
+
+192
+00:07:43,380 --> 00:07:45,480
+Again, syllabus always
+subject to change,
+
+193
+00:07:45,480 --> 00:07:49,850
+but that's broadly what
+I'd say regarding that.
+
+194
+00:07:49,850 --> 00:07:54,120
+So let's switch back
+really quick then.
+
+195
+00:07:54,120 --> 00:07:57,270
+And also say, I'd love for you
+to reach out in general just
+
+196
+00:07:57,270 --> 00:07:58,693
+to introduce yourself.
+
+197
+00:07:58,693 --> 00:08:01,110
+That's always the hard part
+about teaching online courses,
+
+198
+00:08:01,110 --> 00:08:04,050
+is I don't get to see you guys
+in person, get to know you
+
+199
+00:08:04,050 --> 00:08:05,930
+and understand what
+your interests are.
+
+200
+00:08:05,930 --> 00:08:09,090
+So if you ever have some time,
+either pop by office hours,
+
+201
+00:08:09,090 --> 00:08:11,290
+shoot me a message on email.
+
+202
+00:08:11,290 --> 00:08:14,640
+I tend to respond to emails more
+than I respond to-- or faster
+
+203
+00:08:14,640 --> 00:08:18,630
+than I respond to Canvas
+messages, so I prefer that.
+
+204
+00:08:18,630 --> 00:08:21,390
+But yeah, I just love to get
+to know you and understand
+
+205
+00:08:21,390 --> 00:08:22,835
+your goals in this course.
+
+206
+00:08:25,350 --> 00:08:29,960
+So jumping right into it then.
+
+207
+00:08:29,960 --> 00:08:32,210
+I put this slide
+here specifically
+
+208
+00:08:32,210 --> 00:08:36,470
+because whether you
+realize it or not,
+
+209
+00:08:36,470 --> 00:08:39,409
+the important detail about
+a Cloud computing course
+
+210
+00:08:39,409 --> 00:08:42,289
+is understanding what it
+means to use a computer,
+
+211
+00:08:42,289 --> 00:08:45,680
+and really what a computer is,
+because it will highlight why
+
+212
+00:08:45,680 --> 00:08:49,130
+we have limitations or
+where the opportunities are,
+
+213
+00:08:49,130 --> 00:08:52,400
+working both on premise
+and in the Cloud.
+
+214
+00:08:52,400 --> 00:08:55,100
+So to just step back broadly,
+the three main things
+
+215
+00:08:55,100 --> 00:08:57,830
+we're going to worry about
+as far as a computer goes
+
+216
+00:08:57,830 --> 00:09:00,980
+in this course is
+the CPU, memory,
+
+217
+00:09:00,980 --> 00:09:03,180
+and any sort of accelerators.
+
+218
+00:09:03,180 --> 00:09:06,228
+The CPU, that is the
+central processing unit.
+
+219
+00:09:06,228 --> 00:09:07,770
+That is the general
+purpose computer.
+
+220
+00:09:07,770 --> 00:09:11,430
+That's what this image here
+of this AMD Ryzen chip shows.
+
+221
+00:09:11,430 --> 00:09:13,350
+That is what a CPU looks like.
+
+222
+00:09:13,350 --> 00:09:17,090
+This is a chip that
+can process a lot
+
+223
+00:09:17,090 --> 00:09:19,850
+of different types of tasks.
+
+224
+00:09:19,850 --> 00:09:21,840
+They might be multi-core.
+
+225
+00:09:21,840 --> 00:09:24,770
+You'll hear that, multi-threaded
+as well on top of that.
+
+226
+00:09:24,770 --> 00:09:28,730
+But you can think about that as
+how many independent operations
+
+227
+00:09:28,730 --> 00:09:29,790
+can they do.
+
+228
+00:09:29,790 --> 00:09:31,280
+It's not exact.
+
+229
+00:09:31,280 --> 00:09:32,750
+There's a bunch of
+details in there
+
+230
+00:09:32,750 --> 00:09:34,230
+we're kind of glossing over.
+
+231
+00:09:34,230 --> 00:09:37,830
+But in the context of how
+that relates to accelerators,
+
+232
+00:09:37,830 --> 00:09:40,490
+it's important to understand
+that the number of cores
+
+233
+00:09:40,490 --> 00:09:46,020
+is related to how many tasks
+can be done in parallel.
+
+234
+00:09:46,020 --> 00:09:47,440
+To skip over memory
+for a second,
+
+235
+00:09:47,440 --> 00:09:48,940
+just explain accelerators.
+
+236
+00:09:48,940 --> 00:09:50,590
+Accelerators are
+things like GPUs,
+
+237
+00:09:50,590 --> 00:09:52,440
+so graphics processing units.
+
+238
+00:09:52,440 --> 00:09:54,360
+If you're a computer
+gamer, you're
+
+239
+00:09:54,360 --> 00:09:57,340
+very well or very familiar
+with graphics processing units,
+
+240
+00:09:57,340 --> 00:09:59,580
+but they've actually become
+a very important tool
+
+241
+00:09:59,580 --> 00:10:02,220
+across computing and the
+tech industry in general
+
+242
+00:10:02,220 --> 00:10:03,400
+in recent years.
+
+243
+00:10:03,400 --> 00:10:06,600
+The reason being is, as
+I said before, a CPU can
+
+244
+00:10:06,600 --> 00:10:10,750
+do as many operations roughly
+in parallel as there are cores.
+
+245
+00:10:10,750 --> 00:10:13,230
+So a standard laptop, like
+my laptop right now I work on
+
+246
+00:10:13,230 --> 00:10:15,100
+has eight cores, let's say.
+
+247
+00:10:15,100 --> 00:10:18,000
+That means that if I have eight
+mathematical operations that
+
+248
+00:10:18,000 --> 00:10:21,300
+need to happen, maybe eight
+multiplication steps or I'm
+
+249
+00:10:21,300 --> 00:10:24,100
+multiplying eight different
+sets of numbers together,
+
+250
+00:10:24,100 --> 00:10:26,100
+I can run each of
+those in parallel
+
+251
+00:10:26,100 --> 00:10:28,860
+and then summarize the
+results at the end.
+
+252
+00:10:28,860 --> 00:10:30,010
+That's good.
+
+253
+00:10:30,010 --> 00:10:31,830
+And a multiplication
+operation is
+
+254
+00:10:31,830 --> 00:10:34,510
+so fast that would feel
+like light speed anyways.
+
+255
+00:10:34,510 --> 00:10:36,780
+But if it's a complex
+task, it might actually
+
+256
+00:10:36,780 --> 00:10:40,150
+be something where I'm a
+little bit bottlenecked.
+
+257
+00:10:40,150 --> 00:10:43,600
+These processes take a while,
+and I can only do eight of them,
+
+258
+00:10:43,600 --> 00:10:45,490
+eight operations in parallel.
+
+259
+00:10:45,490 --> 00:10:47,830
+Well, something
+like a GPU or TPU,
+
+260
+00:10:47,830 --> 00:10:50,420
+which is a very specific
+chip designed by Google,
+
+261
+00:10:50,420 --> 00:10:52,010
+it's called a tensor
+processing unit,
+
+262
+00:10:52,010 --> 00:10:54,230
+but it roughly runs
+on the same idea,
+
+263
+00:10:54,230 --> 00:10:57,310
+these are designed to have
+thousands, tens of thousands
+
+264
+00:10:57,310 --> 00:10:58,570
+of cores.
+
+265
+00:10:58,570 --> 00:11:01,100
+They're not as general
+purpose, of course,
+
+266
+00:11:01,100 --> 00:11:03,230
+where a CPU can open
+up a Word document,
+
+267
+00:11:03,230 --> 00:11:04,970
+edit it and do all
+these sorts of things,
+
+268
+00:11:04,970 --> 00:11:07,090
+a GPU certainly
+can't do that, but it
+
+269
+00:11:07,090 --> 00:11:10,540
+can do very quick mathematical
+operations, a multiplication
+
+270
+00:11:10,540 --> 00:11:11,620
+step.
+
+271
+00:11:11,620 --> 00:11:13,210
+And this actually
+comes from the fact
+
+272
+00:11:13,210 --> 00:11:17,410
+that graphics, in video
+games, are inherently
+
+273
+00:11:17,410 --> 00:11:19,610
+a bunch of little
+multiplication operations.
+
+274
+00:11:19,610 --> 00:11:21,490
+So when we started to
+move towards things
+
+275
+00:11:21,490 --> 00:11:25,120
+like neural networks and machine
+learning, which themselves are
+
+276
+00:11:25,120 --> 00:11:28,120
+also a bunch of little
+multiplication operations,
+
+277
+00:11:28,120 --> 00:11:30,850
+researchers realized that we
+could leverage these GPUs down
+
+278
+00:11:30,850 --> 00:11:32,240
+to dramatically accelerate it.
+
+279
+00:11:32,240 --> 00:11:34,090
+If I need to do--
+
+280
+00:11:34,090 --> 00:11:36,560
+take something like a ChatGPT.
+
+281
+00:11:36,560 --> 00:11:39,500
+Those have trillions
+of parameters.
+
+282
+00:11:39,500 --> 00:11:41,200
+Each of those
+parameters needing to be
+
+283
+00:11:41,200 --> 00:11:43,810
+multiplied by other
+numbers as we're
+
+284
+00:11:43,810 --> 00:11:45,380
+trying to make predictions.
+
+285
+00:11:45,380 --> 00:11:48,040
+Well, if I have
+eight cores, then
+
+286
+00:11:48,040 --> 00:11:51,550
+I can only do eight operations
+in parallel or eight
+
+287
+00:11:51,550 --> 00:11:54,100
+of those trillions of
+operations in parallel,
+
+288
+00:11:54,100 --> 00:11:56,650
+versus if I have something
+like a GPU or TPU,
+
+289
+00:11:56,650 --> 00:12:00,370
+I can really dramatically
+speed up the compute here.
+
+290
+00:12:00,370 --> 00:12:02,890
+Now, the important detail
+in the context of the Cloud
+
+291
+00:12:02,890 --> 00:12:09,698
+is that if I were to do
+this on, let's say, a GPU
+
+292
+00:12:09,698 --> 00:12:10,990
+that I had here at home, right.
+
+293
+00:12:10,990 --> 00:12:14,180
+I have a GPU in my computer.
+
+294
+00:12:14,180 --> 00:12:16,220
+I'd be a little limited.
+
+295
+00:12:16,220 --> 00:12:19,940
+A big 4090 GPU is probably
+the largest consumer GPU
+
+296
+00:12:19,940 --> 00:12:21,650
+as of this recording.
+
+297
+00:12:21,650 --> 00:12:24,780
+That is going to cost you
+somewhere around $2,000,
+
+298
+00:12:24,780 --> 00:12:27,540
+maybe $1,500 to $2,000.
+
+299
+00:12:27,540 --> 00:12:30,390
+And I might have a process,
+again, something like a ChatGPT,
+
+300
+00:12:30,390 --> 00:12:32,340
+trying to train a
+model like ChatGPT
+
+301
+00:12:32,340 --> 00:12:35,970
+that might take hundreds,
+thousands of GPUs
+
+302
+00:12:35,970 --> 00:12:39,670
+to really meaningfully get
+done in a short amount of time.
+
+303
+00:12:39,670 --> 00:12:41,380
+And so now all of
+a sudden, I mean,
+
+304
+00:12:41,380 --> 00:12:43,080
+it's just
+incomprehensibly expensive
+
+305
+00:12:43,080 --> 00:12:46,020
+to purchase all those
+resources, but I
+
+306
+00:12:46,020 --> 00:12:49,180
+can leverage Cloud
+resources to rent those,
+
+307
+00:12:49,180 --> 00:12:50,790
+and we'll talk about
+why that-- or how
+
+308
+00:12:50,790 --> 00:12:52,530
+that works in a little bit.
+
+309
+00:12:52,530 --> 00:12:55,590
+But to not drag on
+this point too long,
+
+310
+00:12:55,590 --> 00:12:57,090
+to briefly talk
+about memory, which
+
+311
+00:12:57,090 --> 00:12:59,250
+we'll spend a whole week on.
+
+312
+00:12:59,250 --> 00:13:02,460
+There's two types of memory
+we'll discuss in this class.
+
+313
+00:13:02,460 --> 00:13:04,210
+One of those is kind
+of volatile memory,
+
+314
+00:13:04,210 --> 00:13:07,360
+so RAM, you'll hear me refer
+to as RAM almost always.
+
+315
+00:13:07,360 --> 00:13:09,490
+And the other is
+non-volatile memory,
+
+316
+00:13:09,490 --> 00:13:12,330
+and that'll be your hard drive
+or your solid state drive.
+
+317
+00:13:12,330 --> 00:13:14,940
+RAM, think about that as
+the working memory, that
+
+318
+00:13:14,940 --> 00:13:20,430
+is how much kind of
+information I can hold,
+
+319
+00:13:20,430 --> 00:13:24,820
+kind of readily available to
+use or operate on right now.
+
+320
+00:13:24,820 --> 00:13:27,580
+And when I shut my computer
+off, that's going to disappear.
+
+321
+00:13:27,580 --> 00:13:29,220
+It's not going to
+be existing anymore.
+
+322
+00:13:29,220 --> 00:13:31,410
+Versus my hard drive or
+my solid state drive,
+
+323
+00:13:31,410 --> 00:13:33,250
+that is my long term storage.
+
+324
+00:13:33,250 --> 00:13:35,627
+So if I want to save
+pictures on my hard drive,
+
+325
+00:13:35,627 --> 00:13:37,210
+that's what we're
+talking about there.
+
+326
+00:13:37,210 --> 00:13:40,200
+So that's just designed to
+hold it there and be really
+
+327
+00:13:40,200 --> 00:13:44,200
+cheap and efficient to store a
+lot of information, versus RAM.
+
+328
+00:13:44,200 --> 00:13:47,580
+It's going to be more
+expensive for equivalent
+
+329
+00:13:47,580 --> 00:13:51,430
+volumes of memory, but it'll be
+much, much faster as far as read
+
+330
+00:13:51,430 --> 00:13:55,000
+and write speeds, and so I can
+operate on it more quickly.
+
+331
+00:13:55,000 --> 00:13:58,420
+So anyway, that's all to say,
+that is the core components
+
+332
+00:13:58,420 --> 00:14:00,820
+of the computer we're
+worried about in the context
+
+333
+00:14:00,820 --> 00:14:02,820
+of this course.
+
+334
+00:14:02,820 --> 00:14:06,030
+And then if you put all those
+pieces together, put all those
+
+335
+00:14:06,030 --> 00:14:08,490
+together into one
+box, and then you
+
+336
+00:14:08,490 --> 00:14:10,490
+can see here as
+this rack shows, I
+
+337
+00:14:10,490 --> 00:14:12,270
+can stack a bunch of
+those boxes together
+
+338
+00:14:12,270 --> 00:14:15,150
+and basically just connect a
+bunch of computers together.
+
+339
+00:14:15,150 --> 00:14:19,840
+And really, that is
+fundamentally what a server is.
+
+340
+00:14:19,840 --> 00:14:22,200
+So you might have heard
+this term a server before.
+
+341
+00:14:22,200 --> 00:14:25,120
+But even-- again, we
+mentioned Netflix before.
+
+342
+00:14:25,120 --> 00:14:27,528
+Netflix has to be
+hosted somewhere.
+
+343
+00:14:27,528 --> 00:14:29,820
+I have to have those videos
+saved, some of those movies
+
+344
+00:14:29,820 --> 00:14:30,880
+saved somewhere.
+
+345
+00:14:30,880 --> 00:14:33,600
+I have to have the website,
+the code of the website saved
+
+346
+00:14:33,600 --> 00:14:34,390
+somewhere.
+
+347
+00:14:34,390 --> 00:14:36,000
+And that's what a
+server does for me,
+
+348
+00:14:36,000 --> 00:14:38,790
+is it allows me to basically
+say, OK, well, this computer has
+
+349
+00:14:38,790 --> 00:14:39,970
+the code for it.
+
+350
+00:14:39,970 --> 00:14:44,020
+All of these servers, all
+these racks within the server,
+
+351
+00:14:44,020 --> 00:14:45,760
+they have all the videos.
+
+352
+00:14:45,760 --> 00:14:49,810
+And so therefore, when somebody
+comes to visit netflix.com,
+
+353
+00:14:49,810 --> 00:14:52,470
+what they're actually doing is
+sending a request to the server,
+
+354
+00:14:52,470 --> 00:14:55,740
+and that server is sending
+the relevant information back.
+
+355
+00:14:55,740 --> 00:14:57,720
+So very, very useful.
+
+356
+00:14:57,720 --> 00:14:59,460
+These are the types
+of things that we'll
+
+357
+00:14:59,460 --> 00:15:03,620
+use for gaming, for hosting
+websites, hosting applications,
+
+358
+00:15:03,620 --> 00:15:06,100
+storing data, whatever
+that might be.
+
+359
+00:15:06,100 --> 00:15:09,980
+A server is really just
+a computer that is--
+
+360
+00:15:09,980 --> 00:15:12,130
+or a bunch of computers
+stacked together.
+
+361
+00:15:12,130 --> 00:15:15,920
+So nothing crazier than that.
+
+362
+00:15:15,920 --> 00:15:19,070
+And really what we can
+have is, we can have--
+
+363
+00:15:19,070 --> 00:15:22,160
+I mean, again, when I was at
+Carvana, we had our own servers.
+
+364
+00:15:22,160 --> 00:15:23,970
+Before we were even
+leveraging the Cloud,
+
+365
+00:15:23,970 --> 00:15:25,860
+we had a room
+filled with servers,
+
+366
+00:15:25,860 --> 00:15:27,170
+looked something like this.
+
+367
+00:15:27,170 --> 00:15:31,280
+A bunch of blinking
+boxes in a room.
+
+368
+00:15:31,280 --> 00:15:35,300
+And we could reasonably serve
+all the content on our website
+
+369
+00:15:35,300 --> 00:15:39,320
+from those servers, but
+there are some limitations.
+
+370
+00:15:39,320 --> 00:15:41,030
+So let's look at
+what that means.
+
+371
+00:15:41,030 --> 00:15:45,920
+So again, as we said, take
+our Netflix example here.
+
+372
+00:15:45,920 --> 00:15:48,650
+Maybe we have another
+season of Stranger Things.
+
+373
+00:15:48,650 --> 00:15:51,550
+Let's say it's Stranger
+Things season 6, 10, whatever
+
+374
+00:15:51,550 --> 00:15:54,680
+we're at, at this point.
+
+375
+00:15:54,680 --> 00:15:57,430
+That has to be-- that is
+a video, that is a file.
+
+376
+00:15:57,430 --> 00:15:59,040
+That has to be
+uploaded somewhere.
+
+377
+00:15:59,040 --> 00:16:01,340
+So let's say that gets
+uploaded from the studio
+
+378
+00:16:01,340 --> 00:16:02,610
+up to our server.
+
+379
+00:16:02,610 --> 00:16:04,550
+So now it's sitting
+on our server here.
+
+380
+00:16:04,550 --> 00:16:06,680
+And then we're sitting
+there on our couch
+
+381
+00:16:06,680 --> 00:16:08,370
+and we want to watch that video.
+
+382
+00:16:08,370 --> 00:16:11,570
+We send a request and that
+request returns a response.
+
+383
+00:16:11,570 --> 00:16:14,660
+That response is the video
+itself for us to watch.
+
+384
+00:16:14,660 --> 00:16:16,430
+Again, that is
+fundamentally what it looks
+
+385
+00:16:16,430 --> 00:16:18,500
+like to deploy an application.
+
+386
+00:16:18,500 --> 00:16:20,030
+And in this context,
+we're talking
+
+387
+00:16:20,030 --> 00:16:22,560
+about doing this on premise.
+
+388
+00:16:22,560 --> 00:16:25,050
+That word on premise
+means the premise
+
+389
+00:16:25,050 --> 00:16:28,070
+is being this location
+that we're at here,
+
+390
+00:16:28,070 --> 00:16:30,990
+and we're managing those
+physical resources.
+
+391
+00:16:30,990 --> 00:16:32,610
+So we've purchased
+the computers,
+
+392
+00:16:32,610 --> 00:16:34,440
+we've plugged them
+into our outlets,
+
+393
+00:16:34,440 --> 00:16:37,560
+we're paying for the power,
+the cooling, all that stuff.
+
+394
+00:16:37,560 --> 00:16:40,350
+That's what an on
+premise deployment is.
+
+395
+00:16:40,350 --> 00:16:44,060
+And you'll hear me
+use that term a lot.
+
+396
+00:16:44,060 --> 00:16:45,680
+Pros and cons to that.
+
+397
+00:16:45,680 --> 00:16:47,430
+There are some really
+good pros, actually,
+
+398
+00:16:47,430 --> 00:16:49,820
+and there's a lot of discussion
+around this right now
+
+399
+00:16:49,820 --> 00:16:52,070
+in general, which we'll get
+into later in the semester
+
+400
+00:16:52,070 --> 00:16:55,500
+about the value of Cloud
+computing or Cloud resources
+
+401
+00:16:55,500 --> 00:16:57,660
+versus on premise resources.
+
+402
+00:16:57,660 --> 00:17:01,950
+But one big value of them
+is they're fixed costs.
+
+403
+00:17:01,950 --> 00:17:03,930
+Once I've purchased
+a server, I know--
+
+404
+00:17:03,930 --> 00:17:06,569
+that cost me an amount of
+money, and I'll put it there
+
+405
+00:17:06,569 --> 00:17:09,310
+in my room and
+outside of, again,
+
+406
+00:17:09,310 --> 00:17:14,842
+ongoing energy costs or cooling
+costs, the costs are fixed.
+
+407
+00:17:14,842 --> 00:17:17,300
+I've spent the amount of money
+and that's what it costs me.
+
+408
+00:17:17,300 --> 00:17:18,842
+Things aren't going
+to necessarily go
+
+409
+00:17:18,842 --> 00:17:23,210
+up or down in a large swing,
+so that could be valuable.
+
+410
+00:17:23,210 --> 00:17:25,109
+They also can have
+very low latency.
+
+411
+00:17:25,109 --> 00:17:27,170
+So if my users,
+let's say, again, I
+
+412
+00:17:27,170 --> 00:17:30,890
+have a server at my company
+that is there for my employees
+
+413
+00:17:30,890 --> 00:17:33,733
+to leverage for whatever
+their tasks are, well,
+
+414
+00:17:33,733 --> 00:17:35,400
+if it's right around
+the corner from us,
+
+415
+00:17:35,400 --> 00:17:37,500
+we can run a hard
+wire directly to it.
+
+416
+00:17:37,500 --> 00:17:40,310
+That's going to be infinitely
+faster than anything
+
+417
+00:17:40,310 --> 00:17:42,410
+else we can do over the web.
+
+418
+00:17:42,410 --> 00:17:45,120
+And that can really help out
+from a security standpoint,
+
+419
+00:17:45,120 --> 00:17:49,530
+if we, for example, have to
+have very sensitive information.
+
+420
+00:17:49,530 --> 00:17:53,690
+If I'm a bank account or anybody
+that might be storing very, very
+
+421
+00:17:53,690 --> 00:17:56,510
+sensitive information,
+I can physically,
+
+422
+00:17:56,510 --> 00:17:58,850
+or especially in the context
+of national security,
+
+423
+00:17:58,850 --> 00:18:01,040
+you'll see this a
+lot, where servers
+
+424
+00:18:01,040 --> 00:18:04,460
+will be housed in a room with
+no physical connections anywhere
+
+425
+00:18:04,460 --> 00:18:05,720
+outside of power, maybe.
+
+426
+00:18:05,720 --> 00:18:08,750
+They're not going to be
+connected via ethernet
+
+427
+00:18:08,750 --> 00:18:10,200
+to any outside room.
+
+428
+00:18:10,200 --> 00:18:13,770
+That means that even if your
+entire company or organization
+
+429
+00:18:13,770 --> 00:18:16,470
+is compromised, if there's
+nothing physically connected
+
+430
+00:18:16,470 --> 00:18:18,450
+there, there's an air gap.
+
+431
+00:18:18,450 --> 00:18:21,890
+And so that can be a very
+secure way to deploy resources.
+
+432
+00:18:21,890 --> 00:18:24,060
+You don't have to move
+sensitive information around.
+
+433
+00:18:24,060 --> 00:18:26,190
+And again, even if there's
+an internet outage,
+
+434
+00:18:26,190 --> 00:18:27,370
+if it's over there
+in the room, you
+
+435
+00:18:27,370 --> 00:18:29,040
+can just go run over
+and connect to it.
+
+436
+00:18:29,040 --> 00:18:31,430
+So there's some values there.
+
+437
+00:18:31,430 --> 00:18:35,930
+But again, that comes with
+a bunch of associated cons.
+
+438
+00:18:35,930 --> 00:18:39,170
+You do have to pay for energy
+consumption, cooling resources.
+
+439
+00:18:39,170 --> 00:18:42,080
+You do have to have
+a physical space.
+
+440
+00:18:42,080 --> 00:18:44,120
+And this is the really
+big one, is that you
+
+441
+00:18:44,120 --> 00:18:46,050
+need to size it appropriately.
+
+442
+00:18:46,050 --> 00:18:50,340
+If you have constant variations
+in your demand of resources,
+
+443
+00:18:50,340 --> 00:18:53,220
+your website gets visited
+a lot one week of the year,
+
+444
+00:18:53,220 --> 00:18:56,360
+but then the rest of the
+year, it's never used,
+
+445
+00:18:56,360 --> 00:18:59,300
+you have to size it
+for the largest amount
+
+446
+00:18:59,300 --> 00:19:03,830
+of users that you'll expect, and
+the rest of the time you're just
+
+447
+00:19:03,830 --> 00:19:08,540
+paying for unused resources.
+
+448
+00:19:08,540 --> 00:19:12,170
+You're at risk for power outages
+or any sort of physical damage
+
+449
+00:19:12,170 --> 00:19:13,380
+to the building.
+
+450
+00:19:13,380 --> 00:19:15,890
+And again, you now
+need to staff people
+
+451
+00:19:15,890 --> 00:19:18,650
+to maintain, upgrade,
+backup all the resources
+
+452
+00:19:18,650 --> 00:19:20,060
+that you have on site.
+
+453
+00:19:20,060 --> 00:19:22,800
+So pros and cons.
+
+454
+00:19:22,800 --> 00:19:25,260
+And that's what really
+brings us to Cloud computing,
+
+455
+00:19:25,260 --> 00:19:27,960
+is Cloud computing
+says, well, what
+
+456
+00:19:27,960 --> 00:19:30,710
+if instead of doing
+on premise deployment,
+
+457
+00:19:30,710 --> 00:19:34,280
+we took all those servers and
+put them in a big data center
+
+458
+00:19:34,280 --> 00:19:37,160
+somewhere else, and we
+just connect to that.
+
+459
+00:19:37,160 --> 00:19:39,777
+And we share that with a bunch
+of other people too, right.
+
+460
+00:19:39,777 --> 00:19:41,360
+We share that with
+every other company
+
+461
+00:19:41,360 --> 00:19:43,460
+that needs resources,
+needs Cloud resources
+
+462
+00:19:43,460 --> 00:19:45,270
+or needs servers.
+
+463
+00:19:45,270 --> 00:19:47,630
+And this is why I wanted
+to explain it this way,
+
+464
+00:19:47,630 --> 00:19:52,280
+is just to clarify that
+the Cloud as we discuss it
+
+465
+00:19:52,280 --> 00:19:54,950
+can seem kind of like
+this ephemeral thing.
+
+466
+00:19:54,950 --> 00:19:57,680
+But really all we're saying
+when we talk about the Cloud
+
+467
+00:19:57,680 --> 00:20:00,780
+is a bunch of servers
+connected to the internet.
+
+468
+00:20:00,780 --> 00:20:02,720
+We can connect to those
+servers because we
+
+469
+00:20:02,720 --> 00:20:05,330
+have an internet connection,
+and so therefore, we
+
+470
+00:20:05,330 --> 00:20:07,040
+have access to the Cloud.
+
+471
+00:20:07,040 --> 00:20:11,010
+That's all it is at its core--
+a server in a room somewhere.
+
+472
+00:20:11,010 --> 00:20:13,650
+And it's just that
+it's not on premise.
+
+473
+00:20:13,650 --> 00:20:17,360
+If that same server
+that's stored by Amazon
+
+474
+00:20:17,360 --> 00:20:20,000
+is instead on our local
+site, we wouldn't call it
+
+475
+00:20:20,000 --> 00:20:21,000
+the Cloud necessarily.
+
+476
+00:20:21,000 --> 00:20:23,417
+You might call it a personal
+Cloud or something like that,
+
+477
+00:20:23,417 --> 00:20:24,810
+if you connect to the internet.
+
+478
+00:20:24,810 --> 00:20:29,380
+But really, that's the only
+thing we're talking about here.
+
+479
+00:20:29,380 --> 00:20:33,280
+And you also see that
+it's not an either/or.
+
+480
+00:20:33,280 --> 00:20:35,920
+We talked about on
+premise deployment,
+
+481
+00:20:35,920 --> 00:20:38,330
+that's getting this
+private Cloud idea.
+
+482
+00:20:38,330 --> 00:20:42,340
+You could have an entirely
+Cloud-based platform,
+
+483
+00:20:42,340 --> 00:20:44,630
+and then yeah, you're
+just a Cloud company.
+
+484
+00:20:44,630 --> 00:20:47,080
+But in reality,
+most organizations
+
+485
+00:20:47,080 --> 00:20:48,730
+are in this kind
+of hybrid approach
+
+486
+00:20:48,730 --> 00:20:50,660
+where some things
+are in the Cloud,
+
+487
+00:20:50,660 --> 00:20:52,040
+some things are on premise.
+
+488
+00:20:52,040 --> 00:20:54,290
+You that's how we
+work Carvana as well.
+
+489
+00:20:54,290 --> 00:20:56,920
+We still maintain
+on premise servers
+
+490
+00:20:56,920 --> 00:20:59,470
+for a variety of
+reasons and use cases,
+
+491
+00:20:59,470 --> 00:21:03,226
+and we also had our
+remote resources.
+
+492
+00:21:07,072 --> 00:21:08,530
+I won't spend too
+much time on this
+
+493
+00:21:08,530 --> 00:21:11,113
+because we're going to have a
+whole lecture around this topic,
+
+494
+00:21:11,113 --> 00:21:12,910
+but I also just
+wanted to highlight
+
+495
+00:21:12,910 --> 00:21:15,580
+that the way I've been
+describing it kind of
+
+496
+00:21:15,580 --> 00:21:18,430
+falls into this bucket of what
+is often called infrastructure
+
+497
+00:21:18,430 --> 00:21:19,930
+as a service.
+
+498
+00:21:19,930 --> 00:21:21,610
+This is where we just
+treat it as like,
+
+499
+00:21:21,610 --> 00:21:23,530
+there's a computer in the Cloud.
+
+500
+00:21:23,530 --> 00:21:25,400
+But in reality,
+there's a gradient.
+
+501
+00:21:25,400 --> 00:21:27,950
+We could be leveraging
+Cloud resources just to say,
+
+502
+00:21:27,950 --> 00:21:31,490
+I need access to computer
+or storage in the Cloud.
+
+503
+00:21:31,490 --> 00:21:33,490
+But we could also say,
+hey, actually what
+
+504
+00:21:33,490 --> 00:21:36,640
+I want is a platform
+that allows me to build
+
+505
+00:21:36,640 --> 00:21:40,690
+my resources on Cloud,
+on a Cloud platform,
+
+506
+00:21:40,690 --> 00:21:43,630
+but I'm not actually managing
+the underlying computers.
+
+507
+00:21:43,630 --> 00:21:45,890
+Or take that to
+the other extreme,
+
+508
+00:21:45,890 --> 00:21:48,400
+and then we could look at
+software as a service, where
+
+509
+00:21:48,400 --> 00:21:50,650
+that's just saying, hey, we
+have basically no control
+
+510
+00:21:50,650 --> 00:21:51,910
+over the resources.
+
+511
+00:21:51,910 --> 00:21:53,540
+Think about something
+like Google Docs.
+
+512
+00:21:53,540 --> 00:21:55,340
+That is a software as a service.
+
+513
+00:21:55,340 --> 00:21:57,500
+It is a Cloud resource, right.
+
+514
+00:21:57,500 --> 00:22:00,740
+I can connect to it, I can
+edit my document remotely,
+
+515
+00:22:00,740 --> 00:22:03,640
+but it is entirely in the Cloud.
+
+516
+00:22:03,640 --> 00:22:08,050
+And also, I'm not interacting
+with the underlying compute
+
+517
+00:22:08,050 --> 00:22:08,796
+resources.
+
+518
+00:22:11,880 --> 00:22:14,530
+So again, there are some real
+benefits to Cloud computing.
+
+519
+00:22:14,530 --> 00:22:19,530
+Basically, take all those cons
+of on premise resources and you
+
+520
+00:22:19,530 --> 00:22:22,980
+have all the pros
+of Cloud resources.
+
+521
+00:22:22,980 --> 00:22:24,310
+I pulled out this example here.
+
+522
+00:22:24,310 --> 00:22:25,490
+It's an interesting one.
+
+523
+00:22:25,490 --> 00:22:28,650
+Basically, this was a case
+where the New York Times wanted
+
+524
+00:22:28,650 --> 00:22:33,630
+to basically scan
+in all the high--
+
+525
+00:22:33,630 --> 00:22:36,840
+or do high resolution scans
+of all their newspapers from
+
+526
+00:22:36,840 --> 00:22:38,530
+the 1800s on.
+
+527
+00:22:38,530 --> 00:22:42,600
+So massive amount of
+information, a ton of--
+
+528
+00:22:42,600 --> 00:22:44,800
+I mean, again, these are
+very high resolution scans.
+
+529
+00:22:44,800 --> 00:22:47,500
+So they're very large
+files, and it's every page.
+
+530
+00:22:47,500 --> 00:22:52,830
+So it was a very compute
+intensive process.
+
+531
+00:22:52,830 --> 00:22:56,520
+The on premise solution would
+say, OK, well, have a scanner
+
+532
+00:22:56,520 --> 00:23:00,000
+here at your desk, run each
+of the images through there
+
+533
+00:23:00,000 --> 00:23:05,020
+and then store them, basically,
+onto your local computers
+
+534
+00:23:05,020 --> 00:23:07,900
+in the office, and you
+need to have enough storage
+
+535
+00:23:07,900 --> 00:23:10,340
+on in your office to do that.
+
+536
+00:23:10,340 --> 00:23:13,857
+And you also only have
+one computer to do this.
+
+537
+00:23:13,857 --> 00:23:15,440
+So you've done all
+your scans already,
+
+538
+00:23:15,440 --> 00:23:16,483
+so that process is done.
+
+539
+00:23:16,483 --> 00:23:17,900
+That has to happen
+no matter what.
+
+540
+00:23:17,900 --> 00:23:20,840
+But now when you want to process
+them, maybe edit the colors,
+
+541
+00:23:20,840 --> 00:23:23,470
+adjust this and put them
+into certain storage system,
+
+542
+00:23:23,470 --> 00:23:27,130
+that all has to be done
+through your computer.
+
+543
+00:23:27,130 --> 00:23:29,830
+What they did instead was
+they leveraged the Cloud.
+
+544
+00:23:29,830 --> 00:23:31,780
+They said, hey,
+well, what we can do
+
+545
+00:23:31,780 --> 00:23:35,210
+is we can spin up 100 computers,
+a hundred virtual computers,
+
+546
+00:23:35,210 --> 00:23:37,960
+we call them virtual machines,
+and they spun up a hundred
+
+547
+00:23:37,960 --> 00:23:41,690
+of those and did all the
+processing in parallel.
+
+548
+00:23:41,690 --> 00:23:45,130
+So they ran all their-- or
+they split up all their files
+
+549
+00:23:45,130 --> 00:23:47,650
+and said, hey, each of
+these 100 virtual machines
+
+550
+00:23:47,650 --> 00:23:51,250
+will take some chunk
+of our repository
+
+551
+00:23:51,250 --> 00:23:54,130
+here and then push that live
+and store it in the Cloud
+
+552
+00:23:54,130 --> 00:23:55,280
+as well, too.
+
+553
+00:23:55,280 --> 00:23:56,800
+And that caused them--
+
+554
+00:23:56,800 --> 00:23:59,680
+I think the estimate was
+something like 900 bucks to do.
+
+555
+00:23:59,680 --> 00:24:03,330
+Took about 24 hours, 900
+bucks in Cloud resources,
+
+556
+00:24:03,330 --> 00:24:04,500
+which is not cheap.
+
+557
+00:24:04,500 --> 00:24:08,820
+But if you factor in that they
+used 100 different computers.
+
+558
+00:24:08,820 --> 00:24:12,680
+I mean, even if these were 100
+pretty cheap computers at $500
+
+559
+00:24:12,680 --> 00:24:15,820
+a piece, you'd already still
+be spending-- what is that?
+
+560
+00:24:15,820 --> 00:24:19,650
+$50,000 on just computers alone.
+
+561
+00:24:19,650 --> 00:24:22,920
+So, I mean, it's just
+so wildly valuable
+
+562
+00:24:22,920 --> 00:24:27,750
+to be able to scale up
+almost limitless resources.
+
+563
+00:24:27,750 --> 00:24:30,870
+You're basically trading
+off this capital expense,
+
+564
+00:24:30,870 --> 00:24:34,680
+this upfront cost for
+variable expenses.
+
+565
+00:24:34,680 --> 00:24:36,460
+This might not seem
+that powerful yet,
+
+566
+00:24:36,460 --> 00:24:41,520
+but imagine tomorrow you wanted
+to start a company that might--
+
+567
+00:24:41,520 --> 00:24:45,490
+start a website, let's say, that
+might have to scale globally.
+
+568
+00:24:45,490 --> 00:24:48,380
+If you just bought your own
+servers to host that website,
+
+569
+00:24:48,380 --> 00:24:51,820
+you would have to upfront
+buy as big of a computer
+
+570
+00:24:51,820 --> 00:24:54,850
+as you could afford or as much
+as you needed for your user
+
+571
+00:24:54,850 --> 00:24:57,970
+base, versus with the
+Cloud, you would just
+
+572
+00:24:57,970 --> 00:25:01,810
+purchase the bare minimum for
+what you need right now, and as
+
+573
+00:25:01,810 --> 00:25:04,120
+that user base
+increases, it's very easy
+
+574
+00:25:04,120 --> 00:25:08,530
+to just scale that
+up automatically.
+
+575
+00:25:08,530 --> 00:25:10,780
+That resource pooling
+like we talked about
+
+576
+00:25:10,780 --> 00:25:13,480
+before, where we say,
+hey, rather than us having
+
+577
+00:25:13,480 --> 00:25:15,730
+a bunch of single on premise
+servers, every company
+
+578
+00:25:15,730 --> 00:25:17,870
+having their own
+on premise servers,
+
+579
+00:25:17,870 --> 00:25:21,430
+we pool all these resources
+into a few big Cloud providers,
+
+580
+00:25:21,430 --> 00:25:24,280
+and now their goal
+is to optimize
+
+581
+00:25:24,280 --> 00:25:25,632
+the utilization of this.
+
+582
+00:25:25,632 --> 00:25:28,090
+They don't want to have a bunch
+of unused resources sitting
+
+583
+00:25:28,090 --> 00:25:28,700
+around.
+
+584
+00:25:28,700 --> 00:25:31,557
+So if I've rented 100
+computers to use for 24 hours,
+
+585
+00:25:31,557 --> 00:25:33,890
+they're going to make sure
+that when I'm not using that,
+
+586
+00:25:33,890 --> 00:25:35,990
+somebody else is using
+those compute resources.
+
+587
+00:25:35,990 --> 00:25:38,540
+So they're going to
+maximize availability to me,
+
+588
+00:25:38,540 --> 00:25:40,990
+but minimize the
+unused resources, which
+
+589
+00:25:40,990 --> 00:25:44,230
+really allows them to
+dramatically cut costs on that.
+
+590
+00:25:44,230 --> 00:25:46,750
+So from my side of
+it, it's really nice.
+
+591
+00:25:46,750 --> 00:25:50,300
+No matter what task I have to
+do from a compute perspective,
+
+592
+00:25:50,300 --> 00:25:52,172
+I just assume I have
+infinite resource.
+
+593
+00:25:52,172 --> 00:25:54,130
+I assume I have infinite
+computers, or at least
+
+594
+00:25:54,130 --> 00:25:59,060
+as much as I can afford, because
+I can just, one button click,
+
+595
+00:25:59,060 --> 00:26:02,680
+spin up a massive computer or
+dozens of massive computers
+
+596
+00:26:02,680 --> 00:26:03,560
+using the Cloud.
+
+597
+00:26:03,560 --> 00:26:06,200
+So it's a lot of power.
+
+598
+00:26:06,200 --> 00:26:07,920
+Great power, great
+responsibility, right?
+
+599
+00:26:07,920 --> 00:26:10,920
+So we will be intentional on
+how we utilize and manage that,
+
+600
+00:26:10,920 --> 00:26:12,630
+though.
+
+601
+00:26:12,630 --> 00:26:15,600
+It's on demand and
+self-service, so we
+
+602
+00:26:15,600 --> 00:26:17,020
+are the ones in charge of that.
+
+603
+00:26:17,020 --> 00:26:20,880
+We say, hey, I want to spin
+up these computers now,
+
+604
+00:26:20,880 --> 00:26:22,030
+I get to click the buttons.
+
+605
+00:26:22,030 --> 00:26:24,630
+I don't have to call somebody
+and wait for this to happen.
+
+606
+00:26:24,630 --> 00:26:28,480
+I can just manage, spin up, spin
+down, keep track of the usage,
+
+607
+00:26:28,480 --> 00:26:30,860
+all that sort of stuff myself.
+
+608
+00:26:30,860 --> 00:26:34,340
+I don't have to worry
+about maintenance at all.
+
+609
+00:26:34,340 --> 00:26:36,900
+If there are some machines
+that are going bad,
+
+610
+00:26:36,900 --> 00:26:37,970
+they swap them out.
+
+611
+00:26:37,970 --> 00:26:40,700
+I don't notice that if
+I'm leveraging these Cloud
+
+612
+00:26:40,700 --> 00:26:41,790
+resources.
+
+613
+00:26:41,790 --> 00:26:44,465
+We'll also talk about
+the security value
+
+614
+00:26:44,465 --> 00:26:46,340
+that comes with that,
+and that they duplicate
+
+615
+00:26:46,340 --> 00:26:48,000
+across multiple locations.
+
+616
+00:26:48,000 --> 00:26:50,570
+So even if there's an
+earthquake in one area,
+
+617
+00:26:50,570 --> 00:26:53,090
+my information can be
+duplicated across so many areas
+
+618
+00:26:53,090 --> 00:26:55,990
+that I'm never going
+to notice that issue.
+
+619
+00:26:55,990 --> 00:26:57,880
+It's completely automatic.
+
+620
+00:26:57,880 --> 00:27:01,990
+So again, I can have a business
+that maybe all of a sudden
+
+621
+00:27:01,990 --> 00:27:04,670
+sees some massive spike
+in growth overnight.
+
+622
+00:27:04,670 --> 00:27:08,020
+I can set up my services
+or my servers in the Cloud,
+
+623
+00:27:08,020 --> 00:27:10,100
+such that they automatically
+adjust to that.
+
+624
+00:27:10,100 --> 00:27:13,130
+So as long as it stays
+below what I can afford,
+
+625
+00:27:13,130 --> 00:27:16,850
+I can scale up to any number of
+users basically instantaneously,
+
+626
+00:27:16,850 --> 00:27:18,910
+and I can do this
+globally, because there
+
+627
+00:27:18,910 --> 00:27:23,780
+are data centers on every corner
+of this globe pretty much now.
+
+628
+00:27:23,780 --> 00:27:27,720
+And all that leads to it being
+just a very economical solution.
+
+629
+00:27:27,720 --> 00:27:30,920
+You're only paying
+for what you need.
+
+630
+00:27:30,920 --> 00:27:33,680
+That's not a complete
+solution, there are still
+
+631
+00:27:33,680 --> 00:27:37,110
+issues with that, and we'll talk
+about some of these challenges,
+
+632
+00:27:37,110 --> 00:27:40,810
+but broadly speaking, a
+ton of benefits associated.
+
+633
+00:27:40,810 --> 00:27:44,260
+But in the same breath, while
+I say they are very secure,
+
+634
+00:27:44,260 --> 00:27:46,630
+that security also means that--
+
+635
+00:27:46,630 --> 00:27:49,478
+or from a consolidation
+standpoint,
+
+636
+00:27:49,478 --> 00:27:51,520
+that also means there is
+a security vulnerability
+
+637
+00:27:51,520 --> 00:27:55,330
+in that all of our
+resources are isolated
+
+638
+00:27:55,330 --> 00:27:59,950
+to one place in the Cloud, or
+all to one set of resources.
+
+639
+00:27:59,950 --> 00:28:02,410
+If my company is
+leveraging AWS, which
+
+640
+00:28:02,410 --> 00:28:05,110
+we're going to use in this
+class, Amazon Web Services,
+
+641
+00:28:05,110 --> 00:28:08,800
+if I have admin privileges to my
+users-- or my company's account
+
+642
+00:28:08,800 --> 00:28:12,290
+and I lose my password or
+somebody gets my password,
+
+643
+00:28:12,290 --> 00:28:14,830
+they could technically take
+down our whole business.
+
+644
+00:28:14,830 --> 00:28:18,100
+So there are some really
+intentional security steps
+
+645
+00:28:18,100 --> 00:28:21,530
+we need to take to make sure
+that our platform stays secure,
+
+646
+00:28:21,530 --> 00:28:23,870
+because now we've kind of
+consolidated all to one thing,
+
+647
+00:28:23,870 --> 00:28:24,370
+right.
+
+648
+00:28:24,370 --> 00:28:26,690
+It's not just a bunch of
+servers sitting in our office,
+
+649
+00:28:26,690 --> 00:28:31,030
+it's a single website
+you have to log into.
+
+650
+00:28:31,030 --> 00:28:33,310
+Similarly, and again,
+I'll preface this
+
+651
+00:28:33,310 --> 00:28:37,620
+and say that these
+platforms are very secure.
+
+652
+00:28:37,620 --> 00:28:41,730
+They heavily focus on ensuring
+privacy and reliability
+
+653
+00:28:41,730 --> 00:28:42,880
+of the platform.
+
+654
+00:28:42,880 --> 00:28:47,550
+There is still a risk in that
+we are transferring information
+
+655
+00:28:47,550 --> 00:28:53,040
+over the internet and it's being
+stored in a Cloud repository,
+
+656
+00:28:53,040 --> 00:28:54,850
+as compared to as
+we talked about,
+
+657
+00:28:54,850 --> 00:28:57,630
+an air gapped thing where we
+have a server in an isolated
+
+658
+00:28:57,630 --> 00:29:01,260
+room, locked room, no windows,
+no connection to the internet.
+
+659
+00:29:01,260 --> 00:29:03,950
+It will never match
+that level of security.
+
+660
+00:29:03,950 --> 00:29:09,210
+So again, there is some
+trade off a bit with that.
+
+661
+00:29:09,210 --> 00:29:11,460
+And we've seen
+this as well, too,
+
+662
+00:29:11,460 --> 00:29:14,850
+that there have been
+massive outages and breaches
+
+663
+00:29:14,850 --> 00:29:16,175
+of these Cloud platforms.
+
+664
+00:29:16,175 --> 00:29:17,550
+But you've probably
+noticed this,
+
+665
+00:29:17,550 --> 00:29:20,610
+days when you get on the
+internet or open up your phone
+
+666
+00:29:20,610 --> 00:29:23,923
+and like, 35% of your apps
+don't work for whatever reason,
+
+667
+00:29:23,923 --> 00:29:26,340
+that's probably because there
+was some major outage on one
+
+668
+00:29:26,340 --> 00:29:28,440
+of these large Cloud
+providers that took out
+
+669
+00:29:28,440 --> 00:29:29,790
+a good chunk of the internet.
+
+670
+00:29:29,790 --> 00:29:33,436
+So that can happen, but
+again, rare occurrences.
+
+671
+00:29:36,080 --> 00:29:40,000
+And also while I said that
+these platforms are economical,
+
+672
+00:29:40,000 --> 00:29:45,023
+this cost, again,
+if you have very--
+
+673
+00:29:45,023 --> 00:29:47,190
+and this is some of these
+articles are talking about
+
+674
+00:29:47,190 --> 00:29:50,440
+is an example of one company
+that chose to leave the Cloud,
+
+675
+00:29:50,440 --> 00:29:52,690
+and we'll talk about this
+more later on this semester.
+
+676
+00:29:52,690 --> 00:29:56,010
+But for them, their
+argument was basically
+
+677
+00:29:56,010 --> 00:30:02,910
+we understand how many users we
+have, we don't expect growth,
+
+678
+00:30:02,910 --> 00:30:05,410
+we have very predictable
+growth in our business.
+
+679
+00:30:05,410 --> 00:30:09,840
+And so we'd rather actually
+trade off those fixed costs,
+
+680
+00:30:09,840 --> 00:30:10,800
+the variable costs.
+
+681
+00:30:10,800 --> 00:30:16,350
+There is variation in pricing
+on platforms like AWS.
+
+682
+00:30:16,350 --> 00:30:19,710
+And so instead, if
+they just purchase
+
+683
+00:30:19,710 --> 00:30:22,050
+some cheap resources, some
+cheap servers themselves,
+
+684
+00:30:22,050 --> 00:30:25,950
+manage and maintain them,
+it can reduce costs overall.
+
+685
+00:30:25,950 --> 00:30:30,030
+So it really is a question of
+not necessarily is it cheaper
+
+686
+00:30:30,030 --> 00:30:31,900
+to be on premise
+or in the Cloud,
+
+687
+00:30:31,900 --> 00:30:34,170
+it's more a question of
+where your business is at
+
+688
+00:30:34,170 --> 00:30:36,950
+and how you all
+operate, which platform
+
+689
+00:30:36,950 --> 00:30:41,100
+or which approach is
+the most valuable.
+
+690
+00:30:41,100 --> 00:30:44,770
+And this is related to
+that, it is to say like,
+
+691
+00:30:44,770 --> 00:30:48,350
+once you've put all your
+resources in the Cloud,
+
+692
+00:30:48,350 --> 00:30:50,170
+especially consolidated to--
+
+693
+00:30:50,170 --> 00:30:52,780
+and you usually benefit from
+consolidating to a single vendor
+
+694
+00:30:52,780 --> 00:30:54,980
+like AWS or Google.
+
+695
+00:30:54,980 --> 00:30:57,880
+Once you've centralized all
+to AWS or all to Google,
+
+696
+00:30:57,880 --> 00:30:59,840
+it's really hard to
+switch out of that.
+
+697
+00:30:59,840 --> 00:31:00,850
+It's really hard to
+say, well, now I'm
+
+698
+00:31:00,850 --> 00:31:02,808
+going to actually migrate
+to a cheaper solution
+
+699
+00:31:02,808 --> 00:31:05,050
+or I'm going to migrate on
+premise, because there's
+
+700
+00:31:05,050 --> 00:31:08,980
+just so much effort in standing
+those up and spending those down
+
+701
+00:31:08,980 --> 00:31:11,270
+that typically once
+you get bought in,
+
+702
+00:31:11,270 --> 00:31:14,270
+it's rare that people want
+to leave these platforms.
+
+703
+00:31:14,270 --> 00:31:17,650
+So it's something to
+consider as you're
+
+704
+00:31:17,650 --> 00:31:20,570
+leveraging any of these tools.
+
+705
+00:31:20,570 --> 00:31:22,200
+And finally-- I think
+this last point.
+
+706
+00:31:22,200 --> 00:31:27,930
+Yeah, this is one where it's
+kind of a pro and con as well.
+
+707
+00:31:27,930 --> 00:31:31,470
+All these are gray areas.
+
+708
+00:31:31,470 --> 00:31:34,920
+I mean, by its nature, one of
+the values of taking this course
+
+709
+00:31:34,920 --> 00:31:38,580
+and pursuing an understanding
+in Cloud computing
+
+710
+00:31:38,580 --> 00:31:41,940
+is to gain certifications and
+new employment opportunities
+
+711
+00:31:41,940 --> 00:31:43,010
+in the Cloud.
+
+712
+00:31:43,010 --> 00:31:45,300
+So from an individual
+standpoint,
+
+713
+00:31:45,300 --> 00:31:47,460
+learning about the Cloud
+and leveraging the Cloud
+
+714
+00:31:47,460 --> 00:31:49,840
+can be really valuable, from
+a job security standpoint.
+
+715
+00:31:49,840 --> 00:31:53,640
+All of these badges here, these
+are different certifications
+
+716
+00:31:53,640 --> 00:31:55,560
+you can get through AWS.
+
+717
+00:31:55,560 --> 00:31:58,580
+There's probably even more today
+than when I pulled this image.
+
+718
+00:31:58,580 --> 00:32:00,240
+They're constantly
+adding new things.
+
+719
+00:32:00,240 --> 00:32:03,760
+And these are really
+awesome things to pursue.
+
+720
+00:32:03,760 --> 00:32:05,970
+They're not easy-- in
+this class, for context,
+
+721
+00:32:05,970 --> 00:32:08,280
+it's kind of sitting at this
+Cloud practitioner level.
+
+722
+00:32:08,280 --> 00:32:10,225
+You won't have all
+of the knowledge
+
+723
+00:32:10,225 --> 00:32:11,850
+necessary to take
+this exam, but you'll
+
+724
+00:32:11,850 --> 00:32:14,977
+have quite a bit of the
+base knowledge for it.
+
+725
+00:32:14,977 --> 00:32:16,810
+A little bit of effort
+and studying outside,
+
+726
+00:32:16,810 --> 00:32:18,780
+which you can reach out
+to me if you want to,
+
+727
+00:32:18,780 --> 00:32:21,097
+have some more research on
+that, resources on that.
+
+728
+00:32:21,097 --> 00:32:23,680
+But a little bit of study and
+you should be able to take that.
+
+729
+00:32:23,680 --> 00:32:26,602
+And once you've taken the
+Cloud practitioner exam,
+
+730
+00:32:26,602 --> 00:32:28,560
+then you can move on to
+some of these associate
+
+731
+00:32:28,560 --> 00:32:30,750
+and then professional exams.
+
+732
+00:32:30,750 --> 00:32:32,430
+But either way, it's
+all to say that one
+
+733
+00:32:32,430 --> 00:32:35,760
+of the promises of the
+Cloud was that it was going
+
+734
+00:32:35,760 --> 00:32:38,572
+to reduce the need,
+the labor needs,
+
+735
+00:32:38,572 --> 00:32:40,780
+because now all of a sudden,
+we've consolidated this.
+
+736
+00:32:40,780 --> 00:32:41,850
+So we don't need--
+
+737
+00:32:41,850 --> 00:32:44,460
+every company doesn't need
+to have their own Cloud
+
+738
+00:32:44,460 --> 00:32:47,672
+engineer because we all share
+the same Cloud resources.
+
+739
+00:32:47,672 --> 00:32:50,130
+But the reality is, and as
+we'll learn through this course,
+
+740
+00:32:50,130 --> 00:32:53,010
+and why we even have a course
+on this is it's a lot of work
+
+741
+00:32:53,010 --> 00:32:53,940
+still.
+
+742
+00:32:53,940 --> 00:32:55,708
+There's a lot of
+knowledge to be gained
+
+743
+00:32:55,708 --> 00:32:57,750
+of how to do this effectively
+and how to leverage
+
+744
+00:32:57,750 --> 00:32:59,050
+the Cloud effectively.
+
+745
+00:32:59,050 --> 00:33:04,180
+So a lot of job opportunities
+for individuals,
+
+746
+00:33:04,180 --> 00:33:05,848
+but from a company
+side of things,
+
+747
+00:33:05,848 --> 00:33:07,640
+it's not always
+necessarily the best thing,
+
+748
+00:33:07,640 --> 00:33:09,760
+because while you think
+you're cutting back
+
+749
+00:33:09,760 --> 00:33:10,680
+on the number of
+employees, you're
+
+750
+00:33:10,680 --> 00:33:12,580
+probably going to have to hire
+on a bunch of Cloud engineers
+
+751
+00:33:12,580 --> 00:33:13,850
+or system architects still.
+
+752
+00:33:13,850 --> 00:33:16,190
+So again, pros and cons.
+
+753
+00:33:16,190 --> 00:33:21,790
+But I just wanted to highlight
+some of those initial big hits.
+
+754
+00:33:21,790 --> 00:33:26,210
+And again, we're focusing
+on AWS in this course.
+
+755
+00:33:26,210 --> 00:33:29,370
+There's not anything
+that special about them.
+
+756
+00:33:29,370 --> 00:33:32,000
+They're one of the first,
+if not the first big player
+
+757
+00:33:32,000 --> 00:33:34,610
+to the space of Cloud computing.
+
+758
+00:33:34,610 --> 00:33:38,720
+They certainly still have
+the largest market share.
+
+759
+00:33:38,720 --> 00:33:41,850
+It's waning as far as their
+lead on everybody else,
+
+760
+00:33:41,850 --> 00:33:44,040
+but still probably
+comfortably a third,
+
+761
+00:33:44,040 --> 00:33:46,700
+depending on how you
+define it, of the internet
+
+762
+00:33:46,700 --> 00:33:48,650
+is running through AWS.
+
+763
+00:33:48,650 --> 00:33:50,480
+So it's a great
+platform to learn.
+
+764
+00:33:50,480 --> 00:33:53,220
+It's, again, widely used.
+
+765
+00:33:53,220 --> 00:33:55,470
+That's the only platform
+I used in my past company.
+
+766
+00:33:55,470 --> 00:33:59,618
+So Carvana, Maxar,
+Striveworks, we only used AWS,
+
+767
+00:33:59,618 --> 00:34:01,910
+but you could go work at a
+bunch of different companies
+
+768
+00:34:01,910 --> 00:34:03,900
+and they would use
+any other platforms.
+
+769
+00:34:03,900 --> 00:34:07,500
+So I'm not by any means a shill.
+
+770
+00:34:07,500 --> 00:34:11,020
+I'm not getting paid by
+AWS to teach this course,
+
+771
+00:34:11,020 --> 00:34:13,730
+but it's just a platform that
+I'm the most comfortable with.
+
+772
+00:34:13,730 --> 00:34:15,130
+The good thing is--
+
+773
+00:34:15,130 --> 00:34:17,373
+I mean, honestly, all the
+platforms are the same.
+
+774
+00:34:17,373 --> 00:34:19,790
+I've used the other ones as
+well too for different things,
+
+775
+00:34:19,790 --> 00:34:23,110
+for smaller tasks, and
+a little bit of Googling
+
+776
+00:34:23,110 --> 00:34:25,000
+and you find the
+exact same thing.
+
+777
+00:34:25,000 --> 00:34:27,949
+And honestly, it's a good idea
+for a final project as well.
+
+778
+00:34:27,949 --> 00:34:29,949
+If you're interested
+in the trade
+
+779
+00:34:29,949 --> 00:34:31,690
+offs between these
+platforms, I'm
+
+780
+00:34:31,690 --> 00:34:35,300
+very open to you exploring doing
+something we did in this course,
+
+781
+00:34:35,300 --> 00:34:37,070
+but on one of the
+other platforms.
+
+782
+00:34:37,070 --> 00:34:39,040
+So Microsoft Azure and
+Google Cloud Project
+
+783
+00:34:39,040 --> 00:34:41,613
+are probably the two other
+biggest ones in this space,
+
+784
+00:34:41,613 --> 00:34:43,280
+but there are more
+than that, certainly.
+
+785
+00:34:46,120 --> 00:34:48,639
+As you can see here, they have
+a very similar certification
+
+786
+00:34:48,639 --> 00:34:49,300
+process, too.
+
+787
+00:34:49,300 --> 00:34:51,062
+They have the foundational
+certification,
+
+788
+00:34:51,062 --> 00:34:53,770
+the associate certification, and
+then professional certifications
+
+789
+00:34:53,770 --> 00:34:56,210
+at Google Cloud Project.
+
+790
+00:34:56,210 --> 00:35:00,040
+So this is just to show they're
+fundamentally the same thing.
+
+791
+00:35:00,040 --> 00:35:05,120
+And finally here, a
+bunch of different
+
+792
+00:35:05,120 --> 00:35:06,120
+Cloud computing careers.
+
+793
+00:35:06,120 --> 00:35:11,910
+And these, again, are only those
+that I would argue are directly
+
+794
+00:35:11,910 --> 00:35:15,750
+leveraging the Cloud, but
+there are countless others
+
+795
+00:35:15,750 --> 00:35:17,460
+that are going to be
+interacting with it
+
+796
+00:35:17,460 --> 00:35:20,280
+or pulling resources or touching
+small pieces of the Cloud
+
+797
+00:35:20,280 --> 00:35:21,690
+as well, too.
+
+798
+00:35:21,690 --> 00:35:24,330
+So again, we're going
+to cover probably
+
+799
+00:35:24,330 --> 00:35:27,040
+something related
+to all of these
+
+800
+00:35:27,040 --> 00:35:28,300
+at some point in this course.
+
+801
+00:35:28,300 --> 00:35:30,460
+They will not be
+holistically covered.
+
+802
+00:35:30,460 --> 00:35:33,150
+But for example, if you're
+taking a programming course
+
+803
+00:35:33,150 --> 00:35:35,340
+right now, one of our
+Python programming courses,
+
+804
+00:35:35,340 --> 00:35:37,153
+you're probably
+leveraging AWS already,
+
+805
+00:35:37,153 --> 00:35:38,820
+and you're going to
+certainly learn ways
+
+806
+00:35:38,820 --> 00:35:40,842
+that you can leverage
+AWS even further.
+
+807
+00:35:40,842 --> 00:35:42,300
+If you're taking
+some of my machine
+
+808
+00:35:42,300 --> 00:35:45,010
+learning courses as well,
+too, same kind of thing.
+
+809
+00:35:45,010 --> 00:35:47,260
+You can do a lot of machine
+learning on your computer,
+
+810
+00:35:47,260 --> 00:35:49,540
+but eventually you're going
+to want more resources.
+
+811
+00:35:49,540 --> 00:35:51,420
+And so if you have
+some AWS experience,
+
+812
+00:35:51,420 --> 00:35:53,920
+it's going to be really nice
+and allow you to build on that.
+
+813
+00:35:53,920 --> 00:35:57,360
+So this really is a
+foundational course
+
+814
+00:35:57,360 --> 00:35:59,410
+across a lot of
+different aspects,
+
+815
+00:35:59,410 --> 00:36:02,770
+not only of our department, but
+of just broadly the tech world.
+
+816
+00:36:02,770 --> 00:36:05,940
+So be open,
+understand that we're
+
+817
+00:36:05,940 --> 00:36:07,997
+seeing small pieces
+of this, but try
+
+818
+00:36:07,997 --> 00:36:10,330
+to find those pockets of
+things that are interest to you
+
+819
+00:36:10,330 --> 00:36:11,903
+or careers that are
+interest to you.
+
+820
+00:36:11,903 --> 00:36:14,320
+Feel free to let me know if
+you feel like it's not being--
+
+821
+00:36:14,320 --> 00:36:16,005
+or something you're
+interested in
+
+822
+00:36:16,005 --> 00:36:17,630
+is not being addressed
+directly enough.
+
+823
+00:36:17,630 --> 00:36:19,505
+I'm happy to point you
+towards more resources
+
+824
+00:36:19,505 --> 00:36:21,580
+or kind of adjust
+things, but we'll
+
+825
+00:36:21,580 --> 00:36:24,730
+try to get a kind of quick,
+broad overview of everything
+
+826
+00:36:24,730 --> 00:36:27,600
+throughout the semester.
+
+827
+00:36:27,600 --> 00:36:29,730
+So again, we're going to
+be hitting virtual servers
+
+828
+00:36:29,730 --> 00:36:33,120
+and storage first-ish
+in this course.
+
+829
+00:36:33,120 --> 00:36:35,430
+That'll really get us
+the foundations for most
+
+830
+00:36:35,430 --> 00:36:36,850
+of the rest of the semester.
+
+831
+00:36:36,850 --> 00:36:39,070
+I think we actually go into
+security next after that,
+
+832
+00:36:39,070 --> 00:36:42,510
+followed by website
+hosting, and that'll
+
+833
+00:36:42,510 --> 00:36:45,310
+get us into development and
+deployment of applications,
+
+834
+00:36:45,310 --> 00:36:47,702
+databases, we'll talk
+plenty about that.
+
+835
+00:36:47,702 --> 00:36:49,410
+And that will really
+build towards things
+
+836
+00:36:49,410 --> 00:36:52,897
+like the data warehousing
+course in our department.
+
+837
+00:36:52,897 --> 00:36:55,230
+And then we'll finish off
+with machine learning and data
+
+838
+00:36:55,230 --> 00:36:56,800
+science tasks in the Cloud.
+
+839
+00:36:56,800 --> 00:36:59,070
+So we're hitting
+a wide range and I
+
+840
+00:36:59,070 --> 00:37:02,170
+expect no background knowledge
+on any of these topics, either.
+
+841
+00:37:02,170 --> 00:37:04,840
+We'll certainly do a lot
+of Python in this class,
+
+842
+00:37:04,840 --> 00:37:07,720
+but if you don't have Python
+experience, don't worry at all.
+
+843
+00:37:07,720 --> 00:37:09,930
+I won't expect you to
+write any new Python code,
+
+844
+00:37:09,930 --> 00:37:11,080
+if that makes sense.
+
+845
+00:37:11,080 --> 00:37:13,260
+All this will be
+just hey, I want
+
+846
+00:37:13,260 --> 00:37:16,660
+to allow you guys to
+see how to use this,
+
+847
+00:37:16,660 --> 00:37:17,748
+so I'll provide you code.
+
+848
+00:37:17,748 --> 00:37:20,040
+If you have programming
+experience, you can build on it
+
+849
+00:37:20,040 --> 00:37:21,070
+or rewrite it.
+
+850
+00:37:21,070 --> 00:37:22,920
+If you don't, you can
+take it at face value
+
+851
+00:37:22,920 --> 00:37:24,990
+and just focus on
+the parts that we're
+
+852
+00:37:24,990 --> 00:37:29,330
+going to be teaching in this
+course, the Cloud aspects.
+
+853
+00:37:29,330 --> 00:37:32,810
+So finally, this is
+absolute last slide here,
+
+854
+00:37:32,810 --> 00:37:35,120
+but I just want you to
+take this chance now
+
+855
+00:37:35,120 --> 00:37:39,560
+to, if you haven't already,
+spin up a personal AWS account.
+
+856
+00:37:39,560 --> 00:37:41,027
+If you already have one, great.
+
+857
+00:37:41,027 --> 00:37:42,360
+No need to worry about anything.
+
+858
+00:37:42,360 --> 00:37:43,985
+I think the first
+assignment that we'll
+
+859
+00:37:43,985 --> 00:37:48,680
+have you submit, kind of
+confirmation that you have done
+
+860
+00:37:48,680 --> 00:37:51,867
+or have set up an AWS account
+in some capacity for yourself.
+
+861
+00:37:51,867 --> 00:37:53,450
+That way we can hit
+the ground running
+
+862
+00:37:53,450 --> 00:37:58,360
+with these first examples
+as we dig into it.
+
+863
+00:37:58,360 --> 00:38:00,310
+Recognize that there are--
+
+864
+00:38:00,310 --> 00:38:02,140
+you'll have to put a
+credit card on file
+
+865
+00:38:02,140 --> 00:38:04,930
+when you create this
+account, because there are
+
+866
+00:38:04,930 --> 00:38:07,450
+paid resources in the Cloud.
+
+867
+00:38:07,450 --> 00:38:10,570
+I'll be very intentional
+in discussing
+
+868
+00:38:10,570 --> 00:38:12,710
+how to avoid any charges.
+
+869
+00:38:12,710 --> 00:38:15,280
+There are a bunch of
+things that the free tier.
+
+870
+00:38:15,280 --> 00:38:17,530
+If you Google free
+tier AWS, you'll
+
+871
+00:38:17,530 --> 00:38:20,500
+see a whole page dedicated
+to all the free things
+
+872
+00:38:20,500 --> 00:38:21,465
+you have access to.
+
+873
+00:38:21,465 --> 00:38:22,840
+There's nothing
+we're going to do
+
+874
+00:38:22,840 --> 00:38:24,507
+in this course that
+requires you to move
+
+875
+00:38:24,507 --> 00:38:25,610
+outside of the free tier.
+
+876
+00:38:25,610 --> 00:38:28,250
+If it does require you to
+move outside of the free tier,
+
+877
+00:38:28,250 --> 00:38:30,292
+I'll make that clear and
+I'll give you an option.
+
+878
+00:38:30,292 --> 00:38:32,042
+There's not going to
+be an expectation you
+
+879
+00:38:32,042 --> 00:38:33,520
+have to pay anything for this.
+
+880
+00:38:33,520 --> 00:38:38,650
+That being said, if you
+don't shut down resources,
+
+881
+00:38:38,650 --> 00:38:41,350
+for example, we'll use what's
+called an EC2 instance here
+
+882
+00:38:41,350 --> 00:38:44,080
+in a few weeks, that's a
+virtual machine, a computer
+
+883
+00:38:44,080 --> 00:38:45,500
+in the Cloud, basically.
+
+884
+00:38:45,500 --> 00:38:50,590
+If you set up a virtual machine
+that is really large, kind of
+
+885
+00:38:50,590 --> 00:38:53,600
+beyond the free tier
+and let it run all day,
+
+886
+00:38:53,600 --> 00:38:55,940
+the costs can run
+up very quickly.
+
+887
+00:38:55,940 --> 00:38:58,410
+So that's not to
+scare you in any way.
+
+888
+00:38:58,410 --> 00:39:00,725
+As long as you're following
+along with this course
+
+889
+00:39:00,725 --> 00:39:02,600
+and being intentional
+and trying to make sure
+
+890
+00:39:02,600 --> 00:39:05,940
+you understand these things,
+you won't have any costs here.
+
+891
+00:39:05,940 --> 00:39:09,880
+But I just want to preface
+this that if you go in blindly
+
+892
+00:39:09,880 --> 00:39:11,630
+and just start clicking
+a bunch of buttons
+
+893
+00:39:11,630 --> 00:39:14,600
+and not knowing what you're
+doing and not talking to me,
+
+894
+00:39:14,600 --> 00:39:17,010
+there are potential
+costs that could come in.
+
+895
+00:39:17,010 --> 00:39:19,400
+So please be mindful of that.
+
+896
+00:39:19,400 --> 00:39:21,240
+If you have any
+concerns or questions,
+
+897
+00:39:21,240 --> 00:39:22,940
+talk to me about that.
+
+898
+00:39:22,940 --> 00:39:26,870
+Any hesitations or also issues
+with creating your account.
+
+899
+00:39:26,870 --> 00:39:30,800
+If you can't get an account
+created, let me know how--
+
+900
+00:39:30,800 --> 00:39:33,060
+or what you tried, what
+didn't work, what didn't work,
+
+901
+00:39:33,060 --> 00:39:34,977
+and we'll try to find a
+solution here quickly.
+
+902
+00:39:34,977 --> 00:39:36,620
+So let's try to get
+this done this week
+
+903
+00:39:36,620 --> 00:39:38,450
+so that way it
+doesn't slow down any
+
+904
+00:39:38,450 --> 00:39:41,580
+of the future weeks
+in the semester.
+
+905
+00:39:41,580 --> 00:39:43,590
+So we'll leave it at that.
+
+906
+00:39:43,590 --> 00:39:45,400
+I'm excited about this.
+
+907
+00:39:45,400 --> 00:39:47,190
+If you can't tell
+already, this is
+
+908
+00:39:47,190 --> 00:39:52,650
+one of those topics where it
+unlocks so much capability
+
+909
+00:39:52,650 --> 00:39:55,380
+in what we can do
+with the computer,
+
+910
+00:39:55,380 --> 00:40:00,125
+with even building businesses,
+that it's absolutely--
+
+911
+00:40:00,125 --> 00:40:01,500
+I mean, it's helped
+me, honestly.
+
+912
+00:40:01,500 --> 00:40:03,708
+Even teaching this course,
+I've learned so much, too.
+
+913
+00:40:03,708 --> 00:40:08,000
+So I'm excited for you guys to
+get exposed to this content.
+
+914
+00:40:08,000 --> 00:40:10,110
+Keep me posted on
+how things are going.
+
+915
+00:40:10,110 --> 00:40:12,890
+Love to meet all of you,
+otherwise talk to you soon.
+
+916
+00:40:12,890 --> 00:40:14,440
+Bye-bye.

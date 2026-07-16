@@ -1,0 +1,1922 @@
+1
+00:00:01,820 --> 00:00:06,900
+Hi Data 2100 students, as a friendly
+reminder with in-class assignments,
+
+2
+00:00:06,940 --> 00:00:12,340
+I ask you to try and complete
+them on your own. So download
+
+3
+00:00:12,680 --> 00:00:16,080
+the file up above, the assignment
+file, try and complete it on your
+
+4
+00:00:16,080 --> 00:00:20,080
+own, and if you can't get it to
+work, then come and watch the
+
+5
+00:00:20,080 --> 00:00:22,940
+video. I encourage you to always
+watch the video after you've completed
+
+6
+00:00:22,940 --> 00:00:25,900
+it, whether you got stuck or
+whether you felt like, hey, I
+
+7
+00:00:25,900 --> 00:00:30,780
+understood each component of that.
+It's helpful to review things that
+
+8
+00:00:30,780 --> 00:00:33,580
+you may have missed and also just
+to double check your work. So
+
+9
+00:00:33,580 --> 00:00:36,980
+please go and try it first and
+then come back and join me in this
+
+10
+00:00:36,980 --> 00:00:40,440
+video. Again, try and make this
+really informal in terms of I want
+
+11
+00:00:40,440 --> 00:00:43,350
+you to feel like you're in class
+with me. So I'll try and ask
+
+12
+00:00:43,580 --> 00:00:48,640
+questions of which I'll answer
+myself, but also show you if an error
+
+13
+00:00:49,200 --> 00:00:52,820
+occurs, walk through why that error
+occurred and how we would fix it.
+
+14
+00:00:53,000 --> 00:00:55,080
+All right, so let's go ahead and do this.
+
+15
+00:00:55,290 --> 00:00:57,690
+I'm going to make sure that
+I have Beekeeper launched,
+
+16
+00:00:57,690 --> 00:01:00,680
+so please also make sure
+you have Beekeeper launched.
+
+17
+00:01:01,820 --> 00:01:04,120
+In this in-class assignment, we have six
+
+18
+00:01:04,120 --> 00:01:05,860
+problems that we're
+going to be working on.
+
+19
+00:01:06,520 --> 00:01:11,690
+And in those six problems, I have
+asked you to do the following. So
+
+20
+00:01:11,690 --> 00:01:15,330
+I want you to submit the text of
+the query or screenshot for the ICA.
+
+21
+00:01:15,640 --> 00:01:22,740
+So you can just be really simple here
+about what you submit for the ICA.
+
+22
+00:01:22,740 --> 00:01:25,520
+For your homework assignments,
+though, you're going to submit the
+
+23
+00:01:25,520 --> 00:01:30,760
+problem number, the text of your SQL
+query, and the output of the query.
+
+24
+00:01:31,820 --> 00:01:34,620
+So just keep that in mind that
+for the homework assignment,
+
+25
+00:01:34,620 --> 00:01:36,900
+I need to have the text of
+the query so you'll actually
+
+26
+00:01:36,900 --> 00:01:42,020
+copy it and then a screenshot
+of the output of the query.
+
+27
+00:01:42,500 --> 00:01:45,100
+So just keep that in mind. I'm
+going to show you here on question
+
+28
+00:01:45,100 --> 00:01:47,620
+one how I would turn this in if
+this was a homework assignment.
+
+29
+00:01:48,020 --> 00:01:51,020
+But for in-class assignments,
+I am a little bit
+
+30
+00:01:51,020 --> 00:01:54,440
+less rigid on those
+submission instructions.
+
+31
+00:01:54,440 --> 00:01:58,120
+Given that we grade it
+based off of completion.
+
+32
+00:01:58,500 --> 00:02:01,540
+So let's go ahead and do this.
+I'm going to go ahead and grab
+
+33
+00:02:01,540 --> 00:02:05,720
+our questions. I'm going to
+grab just the first for today.
+
+34
+00:02:05,720 --> 00:02:08,940
+I'm going to copy those, and
+I'm going to come over to our
+
+35
+00:02:08,940 --> 00:02:12,340
+beekeeper. I'm going to double
+-click on this saved connection,
+
+36
+00:02:12,600 --> 00:02:16,450
+and I'm going to delete
+off these most recent query
+
+37
+00:02:16,450 --> 00:02:18,700
+sheets. I don't want, I don't
+need to save any of that.
+
+38
+00:02:18,720 --> 00:02:22,180
+Alright, so let's go ahead and
+I'm going to do a new query sheet.
+
+39
+00:02:25,360 --> 00:02:27,540
+And paste it in. Okay.
+
+40
+00:02:27,780 --> 00:02:31,540
+So I've pasted in prompts
+number one, two, three,
+
+41
+00:02:31,540 --> 00:02:35,360
+and four. I like to have
+my prompts listed here.
+
+42
+00:02:35,860 --> 00:02:38,660
+I'm going to, if they run
+a little long, I'm just
+
+43
+00:02:38,660 --> 00:02:41,250
+going to hit enter and
+do a couple of dashes.
+
+44
+00:02:41,700 --> 00:02:44,540
+And I could teach you how to do
+multiple line comments a little
+
+45
+00:02:44,540 --> 00:02:47,980
+bit later on. So let's go ahead
+and work on question number one.
+
+46
+00:02:48,500 --> 00:02:52,500
+We're going to output the first
+name, the last name, the age, and the
+
+47
+00:02:52,500 --> 00:02:56,660
+ski level of all employees, only
+include employees whose last names
+
+48
+00:02:56,660 --> 00:03:00,620
+have the letters double O. All right,
+so let's take a look at this. So
+
+49
+00:03:00,620 --> 00:03:03,344
+I'm going to make sure I have my
+Overland ERD and Data Dictionary. So
+
+50
+00:03:03,675 --> 00:03:05,995
+I have linked the Overland
+ERD and Data Dictionary
+
+51
+00:03:05,995 --> 00:03:08,935
+with this in class
+assignment. So here it is.
+
+52
+00:03:08,935 --> 00:03:12,895
+As a reminder, ERD stands for
+Entity Relationship Diagram.
+
+53
+00:03:13,355 --> 00:03:17,655
+and then our data dictionary,
+right, describes every field and
+
+54
+00:03:17,655 --> 00:03:22,675
+every table. Okay, so let's go ahead
+and take a look at this ERD and
+
+55
+00:03:22,675 --> 00:03:25,475
+my questions. So first one, app
+of the first name, last name, and
+
+56
+00:03:25,475 --> 00:03:29,195
+ski levels of all employees only
+include employees whose last names
+
+57
+00:03:29,195 --> 00:03:32,235
+have the letter double O. So we
+know that we're going to be using
+
+58
+00:03:32,235 --> 00:03:37,055
+the employee table and we're going
+to be looking at specifically
+
+59
+00:03:37,055 --> 00:03:42,475
+that employee first name, last
+name specifically, and ski level
+
+60
+00:03:42,475 --> 00:03:48,655
+and their age. So I'm going to come
+over here to my first question.
+
+61
+00:03:48,655 --> 00:03:54,735
+And I'm going to do, I know it's
+coming from the employee table.
+
+62
+00:03:57,135 --> 00:03:58,255
+Okay.
+
+63
+00:03:58,535 --> 00:04:04,375
+So once I know it's coming from
+the employee table, I hit run. and
+
+64
+00:04:04,375 --> 00:04:07,815
+I'm just going to show me all the
+data in that employee table so as
+
+65
+00:04:07,815 --> 00:04:12,095
+you're beginning to query is a
+good place to start when you become
+
+66
+00:04:12,095 --> 00:04:15,395
+more and more advanced and you're
+dealing with a ton of data we are
+
+67
+00:04:15,395 --> 00:04:19,555
+not going to do as many select stars
+because it could take a long time
+
+68
+00:04:19,555 --> 00:04:22,075
+to run but as we're learning we're
+just going to start out here so
+
+69
+00:04:22,075 --> 00:04:27,875
+we're gonna say select employee
+first name employee last name age
+
+70
+00:04:27,875 --> 00:04:33,315
+and ski level I know those are the
+fields of data I want in my select
+
+71
+00:04:33,315 --> 00:04:38,795
+statement, that is what I want to
+see returned to me. So go ahead
+
+72
+00:04:38,795 --> 00:04:43,375
+and run that. Okay, so now I'm getting
+every single record in my employee
+
+73
+00:04:43,375 --> 00:04:46,435
+is returning to me, right? All of
+my employee tables are returning
+
+74
+00:04:46,435 --> 00:04:50,135
+to me. Their employee first name,
+last name, age, and ski level.
+
+75
+00:04:51,015 --> 00:04:55,395
+But I want to only include
+employees whose last names have the
+
+76
+00:04:55,395 --> 00:05:00,015
+letters of double O, okay? So if
+I know that I want to restrict
+
+77
+00:05:00,015 --> 00:05:03,395
+the records that are being
+returned to me in my output, I
+
+78
+00:05:03,395 --> 00:05:06,295
+want to limit what's actually
+being returned to me, then I
+
+79
+00:05:06,295 --> 00:05:12,255
+need to use a where clause, okay?
+So I'll say where, let's see,
+
+80
+00:05:12,865 --> 00:05:18,515
+EMP last name, employee last name,
+and then we don't want it to be
+
+81
+00:05:18,515 --> 00:05:25,295
+equal to double O, right? Because
+if I do that, if I say equal to
+
+82
+00:05:25,295 --> 00:05:29,135
+double O, not zeros, it's double
+O, then it's like, well, nobody's
+
+83
+00:05:29,135 --> 00:05:32,755
+last name is equal to double O in
+this data set, right? I wanted to
+
+84
+00:05:32,755 --> 00:05:36,155
+only include employees whose last
+names have the letters double O
+
+85
+00:05:36,155 --> 00:05:40,535
+somewhere in their last name. So
+I'm going to say, instead I'm going
+
+86
+00:05:40,535 --> 00:05:44,835
+to use like, and then I'm going
+to put any, I'm going to put a
+
+87
+00:05:44,835 --> 00:05:48,635
+percentage sign in front of the
+double O and a percentage sign after.
+
+88
+00:05:48,675 --> 00:05:53,415
+Therefore, I'm saying wherever
+the double O falls, whether it's
+
+89
+00:05:53,415 --> 00:05:56,415
+at the very beginning of the last
+name at the very end or in the
+
+90
+00:05:56,415 --> 00:05:59,455
+middle, if there is a double O
+in their last name, I want it to
+
+91
+00:05:59,455 --> 00:06:03,175
+return to me. So I hope, hopefully
+you heard what I said there,
+
+92
+00:06:03,175 --> 00:06:07,915
+that even if their last name started
+with double O, it would still
+
+93
+00:06:07,915 --> 00:06:11,775
+return. Percentage sign means any
+number of characters, including
+
+94
+00:06:11,775 --> 00:06:16,255
+none, or any number of characters
+after, including none. Okay.
+
+95
+00:06:16,395 --> 00:06:18,355
+So let's go ahead and run this.
+
+96
+00:06:18,355 --> 00:06:22,315
+And now what I see here is that all
+of these last name Woods, Moore,
+
+97
+00:06:22,315 --> 00:06:26,495
+Woods, Cooper, Poole, Woodward
+all these are returning to me and
+
+98
+00:06:26,495 --> 00:06:30,935
+they all have a double o somewhere
+in their last name okay so nice
+
+99
+00:06:30,935 --> 00:06:34,435
+work good work on that so this is
+what I would do if I was turning
+
+100
+00:06:34,435 --> 00:06:38,475
+this in for a homework assignment
+I would copy the entire query
+
+101
+00:06:38,495 --> 00:06:42,655
+okay I would come over here to my
+homework assignment I would paste
+
+102
+00:06:42,655 --> 00:06:50,715
+in that query so command c and
+command v or control c and control v
+
+103
+00:06:51,475 --> 00:06:55,655
+and then I would also take a
+screenshot mine's quite zoomed in
+
+104
+00:06:55,655 --> 00:06:58,295
+so it's a little bit larger for
+you to see but I would also take
+
+105
+00:06:58,295 --> 00:07:03,335
+a screenshot of the first about
+10 ish rows of data so I'm going
+
+106
+00:07:03,335 --> 00:07:07,095
+to go ahead and grab a snip I use
+you can use a snipping tool on
+
+107
+00:07:07,095 --> 00:07:10,795
+windows there's other mechanisms
+of taking a screenshot whatever
+
+108
+00:07:10,795 --> 00:07:15,085
+works best for you but I would
+take a screenshot of the output
+
+109
+00:07:16,155 --> 00:07:20,015
+and again if you can get it to
+about 10 rows that's great and
+
+110
+00:07:20,675 --> 00:07:25,015
+I'm going to place that here
+okay so just so you keep that in
+
+111
+00:07:25,015 --> 00:07:28,535
+mind that I want the the problem
+number right number one here
+
+112
+00:07:28,535 --> 00:07:31,475
+the text of your query and
+the output of your query for
+
+113
+00:07:31,475 --> 00:07:35,215
+homework assignments for in class
+assignments I recognize it doesn't
+
+114
+00:07:35,215 --> 00:07:39,255
+need to be as particular so
+you can just copy in the text
+
+115
+00:07:39,255 --> 00:07:42,575
+of the query or just the output,
+whatever works best for you.
+
+116
+00:07:42,735 --> 00:07:45,365
+I would recommend having
+at least the query
+
+117
+00:07:45,365 --> 00:07:47,455
+here so that you have it for your notes.
+
+118
+00:07:47,935 --> 00:07:49,335
+Okay, awesome.
+
+119
+00:07:49,895 --> 00:07:53,815
+Now, same as previous, but only
+include employees who are beginner or
+
+120
+00:07:53,815 --> 00:07:58,695
+intermediate skiers. Do not use ORs.
+So if you ever had a question of,
+
+121
+00:07:58,695 --> 00:08:02,615
+hey, what does the employee
+table really look like, make
+
+122
+00:08:02,615 --> 00:08:06,075
+sure you come over to your
+Overland ERD and data dictionary,
+
+123
+00:08:06,075 --> 00:08:09,415
+and you can say, hey, here's
+the ski level filled, and this
+
+124
+00:08:09,415 --> 00:08:12,255
+ski level field, if I scroll
+down to the data dictionary,
+
+125
+00:08:12,735 --> 00:08:16,355
+this ski level field is the
+employee skiing or boarding
+
+126
+00:08:16,355 --> 00:08:19,535
+proficiency. So if you ever have
+a question as to what something
+
+127
+00:08:19,535 --> 00:08:22,655
+means, make sure you come into
+the data dictionary. All right.
+
+128
+00:08:23,335 --> 00:08:26,275
+So on to the same as previous,
+but only include employees who
+
+129
+00:08:26,275 --> 00:08:31,535
+are beginner or intermediate
+skiers and do not use OR. Okay. So
+
+130
+00:08:31,535 --> 00:08:35,095
+we're not going to use OR. I can
+also, if I click on my database
+
+131
+00:08:35,095 --> 00:08:38,595
+base icon over here, I can click
+on this down arrow by employee,
+
+132
+00:08:38,595 --> 00:08:43,655
+and I can also see all the fields
+in that employee table. But
+
+133
+00:08:43,655 --> 00:08:46,955
+for the sake of the video, I like
+to make sure that it's zoomed
+
+134
+00:08:46,955 --> 00:08:52,215
+in as far as I can so that you
+can see it quite well. All right.
+
+135
+00:08:53,255 --> 00:08:56,015
+So same as previous,
+therefore, I'm going to copy
+
+136
+00:08:56,015 --> 00:08:59,775
+this up above and paste
+this down below because I'm
+
+137
+00:08:59,775 --> 00:09:02,115
+doing the same as previous.
+I'm just adding to it.
+
+138
+00:09:02,275 --> 00:09:05,295
+Only included employees who
+are beginner or intermediate
+
+139
+00:09:05,295 --> 00:09:10,075
+skiers do not use ORs, okay?
+So I want to make sure that
+
+140
+00:09:10,075 --> 00:09:13,595
+they have a double O somewhere
+in their last name, right?
+
+141
+00:09:14,935 --> 00:09:19,645
+And then I also want to specify that
+they are beginner or intermediate
+
+142
+00:09:19,645 --> 00:09:24,155
+skiers, okay? So this must be true,
+that their last name has a double
+
+143
+00:09:24,155 --> 00:09:32,295
+O, and this must also be true, that
+their ski level, it says do not use
+
+144
+00:09:32,295 --> 00:09:38,415
+or. So I can't say and ski level equal
+to beginner or ski level equal to
+
+145
+00:09:38,415 --> 00:09:42,135
+intermediate. I can't do that. So
+instead I want to say and ski level
+
+146
+00:09:42,135 --> 00:09:50,515
+in, right, use that list of values,
+in beginner and then intermediate.
+
+147
+00:09:51,135 --> 00:09:52,095
+Okay.
+
+148
+00:09:52,215 --> 00:09:55,395
+So again, I'm not using or, so
+I'm just going to use this list of
+
+149
+00:09:55,395 --> 00:09:59,515
+values and say this beginner or
+ski level must be equal to beginner
+
+150
+00:09:59,515 --> 00:10:04,455
+or intermediate and right there
+must have a double o in their
+
+151
+00:10:04,455 --> 00:10:07,655
+last name so let's go ahead and
+run this now and this is going to
+
+152
+00:10:07,895 --> 00:10:10,075
+restrict my output a little bit more so
+
+153
+00:10:10,075 --> 00:10:12,335
+now i'm only including ski levels here
+
+154
+00:10:12,735 --> 00:10:17,395
+place here who have double o
+right and beginner or intermediate
+
+155
+00:10:17,395 --> 00:10:22,115
+as their ski level okay so go
+ahead and copy this query over,
+
+156
+00:10:22,825 --> 00:10:26,875
+paste it into that in-class
+assignment for me. All right, perfect.
+
+157
+00:10:27,435 --> 00:10:30,675
+Now, next it says, same
+as previous again, but
+
+158
+00:10:30,675 --> 00:10:34,075
+sort alphabetically by
+employee last name. So, same
+
+159
+00:10:34,075 --> 00:10:37,075
+as previous. So, we're
+going to copy this again,
+
+160
+00:10:37,255 --> 00:10:39,335
+paste it down below problem three,
+
+161
+00:10:39,775 --> 00:10:42,315
+sort alphabetically
+by employee last name.
+
+162
+00:10:42,315 --> 00:10:44,395
+So, we're going to go
+ahead and say, order by
+
+163
+00:10:46,655 --> 00:10:51,645
+employee last name alphabetically
+so I want to be a to z so employee
+
+164
+00:10:52,025 --> 00:11:00,655
+last name okay I'm gonna go ahead and
+run this query and perfect so a to
+
+165
+00:11:00,655 --> 00:11:07,135
+z as a reminder um order by is
+ascending a to z by default so I could
+
+166
+00:11:07,135 --> 00:11:11,735
+either write it like that or I can
+type out ascending okay perfect so
+
+167
+00:11:11,735 --> 00:11:18,795
+now go ahead and copy this one over
+to your in-class assignment as well.
+
+168
+00:11:20,195 --> 00:11:23,515
+Then down here on question number four
+we're going to say same as previous
+
+169
+00:11:23,515 --> 00:11:26,915
+again, I like these problems that
+build on one another, but use a
+
+170
+00:11:26,915 --> 00:11:30,835
+pointer in the order by instead. So
+I'm going to go ahead and grab query
+
+171
+00:11:30,835 --> 00:11:34,975
+number three, paste it down below,
+and I want to use a pointer in that
+
+172
+00:11:34,975 --> 00:11:38,875
+order by instead. So instead of
+saying employee last name, I want to
+
+173
+00:11:38,875 --> 00:11:46,355
+point to the column, the column number
+in the select clause that relates
+
+174
+00:11:46,355 --> 00:11:50,695
+to employee last name. So employee
+first name is in column position one,
+
+175
+00:11:50,695 --> 00:11:53,955
+employee last name is in number
+two, age is in three, ski levels in
+
+176
+00:11:53,955 --> 00:11:58,775
+four. So as such, I'm going to say order
+by employee last name, or I'm going
+
+177
+00:11:58,775 --> 00:12:04,775
+to say order by two ascending. then
+we go ahead and run problem four
+
+178
+00:12:04,775 --> 00:12:09,535
+and there we get I get the same
+answer as problem three just written a
+
+179
+00:12:09,535 --> 00:12:13,775
+little bit differently so I'm going
+to go ahead copy this one and run
+
+180
+00:12:13,775 --> 00:12:19,035
+it or copy this one and paste it into
+your in-class assignment all right
+
+181
+00:12:19,035 --> 00:12:22,075
+so we're moving quick here through
+this in-class assignment again if
+
+182
+00:12:22,075 --> 00:12:26,985
+you have any questions please let us
+know then we're going to do um I'm
+
+183
+00:12:27,015 --> 00:12:31,355
+going to keep going on this query sheet
+again since you're copying it over
+
+184
+00:12:31,355 --> 00:12:34,455
+into that Word doc. We're not going
+to be saving these query sheets.
+
+185
+00:12:35,615 --> 00:12:38,955
+But let's come down here
+on question number five and
+
+186
+00:12:38,955 --> 00:12:42,135
+six. Those look a little
+bit longer than the ones
+
+187
+00:12:42,135 --> 00:12:45,515
+we've been using before, but
+that's okay. We can do it.
+
+188
+00:12:45,755 --> 00:12:49,095
+So we're going to be here on
+five and on six. I'm going to
+
+189
+00:12:49,095 --> 00:12:53,995
+take a second here and I could
+do multiple line comment,
+
+190
+00:12:53,995 --> 00:12:57,635
+but I'm just going do a couple
+of dashes, lines of dashes.
+
+191
+00:12:59,215 --> 00:13:03,135
+Again, dash and dash.
+
+192
+00:13:03,535 --> 00:13:04,375
+Reminder,
+
+193
+00:13:04,555 --> 00:13:08,495
+these dashes, right, this
+is just saying ignore this.
+
+194
+00:13:08,855 --> 00:13:10,815
+Don't, this is not a
+query. This is not anything
+
+195
+00:13:10,815 --> 00:13:13,195
+our code, our processor
+needs to worry about.
+
+196
+00:13:13,435 --> 00:13:14,835
+Rather, it's just a comment.
+
+197
+00:13:15,155 --> 00:13:19,835
+Okay, so I want to write a query
+that it outputs each product its
+
+198
+00:13:19,835 --> 00:13:24,695
+peak price it's oh it's price
+it's peak price and what its super
+
+199
+00:13:24,695 --> 00:13:31,275
+peak price would be is what would
+be if super peak prices were 20
+
+200
+00:13:31,275 --> 00:13:35,435
+more than normal peak price for
+each product oh my word uh that's a
+
+201
+00:13:35,435 --> 00:13:39,135
+tongue twister order results from
+the most expensive to the least
+
+202
+00:13:39,135 --> 00:13:42,255
+all right so what are we talking
+about here we want a product price
+
+203
+00:13:42,275 --> 00:13:47,015
+peak price super peak price. So
+what am I going to be looking at?
+
+204
+00:13:47,535 --> 00:13:51,075
+What tables am I meaning? What
+tables am I going to be looking at?
+
+205
+00:13:51,075 --> 00:13:54,855
+So let's come up here to our entity
+relationship diagram and let's
+
+206
+00:13:54,855 --> 00:13:57,675
+look at our table. So I know I'm
+dealing something with product.
+
+207
+00:13:58,955 --> 00:14:01,455
+We've dealt a lot with
+employee and customer.
+
+208
+00:14:01,715 --> 00:14:07,495
+The visit product or the visit
+table, this just tracks what visitors
+
+209
+00:14:07,495 --> 00:14:11,375
+came on what day, right so the
+date id is the primary key of the
+
+210
+00:14:11,375 --> 00:14:17,675
+day table comes into the visit
+table as a foreign key and it also
+
+211
+00:14:17,675 --> 00:14:22,275
+the guest id comes into the visit
+table as the cust id so and then
+
+212
+00:14:22,275 --> 00:14:26,895
+it assigns it a random unique
+identifier for this customer came on
+
+213
+00:14:26,895 --> 00:14:31,175
+this day right so that's what my
+visit table is doing so it's basically
+
+214
+00:14:31,175 --> 00:14:35,055
+just think of like when you go
+to costco and they scan your
+
+215
+00:14:35,055 --> 00:14:39,455
+membership they are probably tracking
+assigning you a random visitor id
+
+216
+00:14:39,455 --> 00:14:45,795
+that this customer came on this
+day okay um and so that's similar
+
+217
+00:14:45,795 --> 00:14:49,715
+to to what a lot of different
+businesses do then my visit product
+
+218
+00:14:49,715 --> 00:14:55,455
+is tracking the quantity and price
+of what i have purchased that day
+
+219
+00:14:55,455 --> 00:14:58,695
+and then my winter product this is
+these are actually the product's
+
+220
+00:14:58,695 --> 00:15:03,635
+details of what are being purchased
+here in this viz prod table.
+
+221
+00:15:04,135 --> 00:15:08,175
+So this winter prod, this is where a
+lot of my data that I need for this
+
+222
+00:15:08,175 --> 00:15:12,555
+problem is residing, right? The
+price, the peak price, and the quant,
+
+223
+00:15:12,555 --> 00:15:15,995
+or the peak, really the price and
+the peak price. So let's go ahead.
+
+224
+00:15:15,995 --> 00:15:18,855
+I'm going to do a select star from
+winter prod so I can really see what
+
+225
+00:15:18,855 --> 00:15:24,735
+this is looking like. So I'm going
+to say select star from winter prod.
+
+226
+00:15:26,335 --> 00:15:29,855
+Okay. So my winter Prod.
+
+227
+00:15:31,055 --> 00:15:35,735
+So write query for each product
+that outputs each product, its
+
+228
+00:15:35,735 --> 00:15:39,415
+price, its super peak price.
+So let's run this select star.
+
+229
+00:15:39,895 --> 00:15:43,975
+Okay, so I'm going to output, when
+I say the outputs each product,
+
+230
+00:15:43,975 --> 00:15:47,335
+I'm going to output the product
+name, I'm going to output its
+
+231
+00:15:47,335 --> 00:15:57,185
+price and then it's peak price
+for now okay um all right over
+
+232
+00:15:57,795 --> 00:16:01,695
+twenty dollars more okay the last
+the other thing i can see here so
+
+233
+00:16:01,695 --> 00:16:05,595
+i i'm working through this so i
+select star i know this is coming
+
+234
+00:16:05,595 --> 00:16:08,985
+from my winter prod table now
+i went through and identified
+
+235
+00:16:08,985 --> 00:16:13,285
+exactly what fields do i need to
+select in my select statement then
+
+236
+00:16:13,295 --> 00:16:17,475
+it says that and what its super
+peak price would be if super
+
+237
+00:16:17,475 --> 00:16:21,055
+peak prices were $20 more than
+normal peak price for each product.
+
+238
+00:16:21,115 --> 00:16:23,555
+Then it also says order
+results from the most expensive
+
+239
+00:16:23,555 --> 00:16:26,835
+to the least. Okay, well
+I am going to, I'm going
+
+240
+00:16:26,835 --> 00:16:29,415
+to say order by, we're
+going to use the peak price.
+
+241
+00:16:31,715 --> 00:16:34,115
+I should be more clear, but order results
+
+242
+00:16:34,115 --> 00:16:36,375
+from the most expensive to the least.
+
+243
+00:16:36,635 --> 00:16:39,895
+Use peak price, okay.
+
+244
+00:16:41,055 --> 00:16:44,175
+So we're going to say order by
+peak price, most expensive to the
+
+245
+00:16:44,175 --> 00:16:48,635
+least. so descending. So the most
+expensive will appear on top.
+
+246
+00:16:48,635 --> 00:16:52,115
+Okay. So we have the adult season
+pass. That makes sense is the
+
+247
+00:16:52,115 --> 00:16:56,395
+peak price senior season pass and
+on down. So then we have lodging.
+
+248
+00:16:56,395 --> 00:17:01,055
+We have adult weekday tickets,
+some tuning, some rentals. Okay.
+
+249
+00:17:01,415 --> 00:17:05,495
+So I'm not quite done though,
+because I need to also output
+
+250
+00:17:05,495 --> 00:17:09,775
+it's super peak price. Uh,
+if super peak prices were $20
+
+251
+00:17:09,775 --> 00:17:12,965
+more than normal peak price. Well,
+what in the world? So because
+
+252
+00:17:12,965 --> 00:17:15,715
+it's listed as something
+else I want to output, right?
+
+253
+00:17:15,715 --> 00:17:18,555
+It's listed as another field.
+I know it's going to go in my
+
+254
+00:17:18,555 --> 00:17:22,155
+select clause. So I'm going to
+do a comma after peak price.
+
+255
+00:17:22,645 --> 00:17:24,915
+And I'm going to say, you
+know what? I'm going to
+
+256
+00:17:24,915 --> 00:17:27,495
+take peak price. And guess
+what? I'm just going to
+
+257
+00:17:27,495 --> 00:17:31,175
+add 20 to it. Let's just
+see what happens. Okay.
+
+258
+00:17:31,475 --> 00:17:34,315
+So I'm going to run
+problem number five here.
+
+259
+00:17:35,415 --> 00:17:39,495
+And again, because it's my
+last query on this sheet
+
+260
+00:17:39,495 --> 00:17:42,575
+and I ended all other
+queries with semicolons, I
+
+261
+00:17:42,575 --> 00:17:45,155
+can just press run. I
+don't have to highlight it.
+
+262
+00:17:45,895 --> 00:17:50,435
+So peak price plus 20. Okay. So
+now something output to me. I have
+
+263
+00:17:50,435 --> 00:17:55,295
+prod name, price, peak price, and
+then I have null, but it's doing
+
+264
+00:17:55,295 --> 00:18:01,215
+what I want, right? It's adding $20
+to the normal peak price, right?
+
+265
+00:18:01,835 --> 00:18:05,515
+It's adding $20 here. Okay.
+So that's what I wanted
+
+266
+00:18:05,515 --> 00:18:09,335
+to do, but it just doesn't
+have a field name at this
+
+267
+00:18:09,335 --> 00:18:13,575
+point. It doesn't have an
+alias, is what we call it,
+
+268
+00:18:14,155 --> 00:18:18,205
+that we can use to reference this
+
+269
+00:18:18,735 --> 00:18:21,275
+field that we are creating. Now, again,
+
+270
+00:18:21,515 --> 00:18:27,375
+this field that we're adding here
+is only for as long as when we run
+
+271
+00:18:27,375 --> 00:18:32,475
+this query, okay? This is not adding
+it to the database. This is just
+
+272
+00:18:32,475 --> 00:18:35,705
+a part of the output. We're just
+saying, hey, output another field
+
+273
+00:18:36,095 --> 00:18:42,475
+that is different than peak
+price. Just add $20 to it, okay?
+
+274
+00:18:42,895 --> 00:18:47,775
+So this is only, this peak price plus
+20 is only going to exist for the
+
+275
+00:18:47,775 --> 00:18:53,595
+output of this query. It is not
+going to be added to my winter prod
+
+276
+00:18:53,595 --> 00:18:57,235
+table, okay? It's only just for the
+output of this query. All right, so
+
+277
+00:18:57,235 --> 00:19:00,325
+I'm going to say peak price plus 20
+and then I'm going to give it an alias
+
+278
+00:19:00,325 --> 00:19:06,935
+and I'm going to say as and as um
+signifies that I'm going to basically
+
+279
+00:19:06,935 --> 00:19:13,535
+name this peak price plus 20 as
+super peak price and we're going to
+
+280
+00:19:13,535 --> 00:19:19,255
+do that within square brackets um
+the square bracket brackets are best
+
+281
+00:19:19,255 --> 00:19:26,355
+practice it would run without them.
+However, if you had a space between
+
+282
+00:19:26,355 --> 00:19:29,595
+peak and price, it would then
+cause an issue. So I just recommend
+
+283
+00:19:29,595 --> 00:19:34,995
+putting all aliases within square
+brackets. So now I'm going to run again.
+
+284
+00:19:35,265 --> 00:19:38,855
+And we see here we have prod
+name, price, peak price, and super
+
+285
+00:19:38,855 --> 00:19:43,595
+peak price outputting to me from
+my winter product table. Okay,
+
+286
+00:19:43,735 --> 00:19:49,855
+so super cool. We just created this
+column, right, that exists for the
+
+287
+00:19:50,495 --> 00:19:55,375
+time of this output. And we are
+manipulating an existing field
+
+288
+00:19:55,375 --> 00:19:59,675
+of peak price that exists in
+my database, adding $20 to it
+
+289
+00:19:59,675 --> 00:20:03,315
+and saying, hey, this is the
+super peak price. And we gave
+
+290
+00:20:03,315 --> 00:20:07,295
+it that name. So if we wanted to
+share this output with somebody,
+
+291
+00:20:07,295 --> 00:20:11,181
+we could, and we've created
+a super peak price for them.
+
+292
+00:20:11,181 --> 00:20:14,010
+okay, down here on question number
+six, we're going to output the first
+
+293
+00:20:14,010 --> 00:20:17,130
+name, last name, and age for all
+customers with the word son anywhere
+
+294
+00:20:17,130 --> 00:20:20,430
+in their last name. We're going
+to combine the first and last name
+
+295
+00:20:20,430 --> 00:20:24,890
+into one column and give it the
+alias of full name. Also, we're only
+
+296
+00:20:24,890 --> 00:20:31,590
+going to include guests who have a
+season pass or are older than 25.
+
+297
+00:20:31,650 --> 00:20:35,010
+Okay, so we have a couple of
+requirements here, but let's just
+
+298
+00:20:35,010 --> 00:20:37,850
+start with what we know. And
+we're dealing with our guests
+
+299
+00:20:37,850 --> 00:20:40,570
+here. We call them customers in
+this instance, but we're dealing
+
+300
+00:20:40,570 --> 00:20:44,330
+with our guests. So we're going
+to say select star from guest.
+
+301
+00:20:46,710 --> 00:20:50,070
+And when I do that, we're just
+going to press run. And again,
+
+302
+00:20:50,070 --> 00:20:54,390
+because we have ended all of the
+up above queries with semicolons
+
+303
+00:20:54,390 --> 00:20:58,050
+and say hey these are the end of
+the queries then we can just run
+
+304
+00:20:58,050 --> 00:21:02,170
+this whole sheet and this last
+query is the output that we see.
+
+305
+00:21:03,070 --> 00:21:08,110
+Okay so I want to see the
+first name last name and age of
+
+306
+00:21:08,110 --> 00:21:12,570
+all guests with the word son
+anywhere in their last name.
+
+307
+00:21:12,570 --> 00:21:18,390
+Okay so let's do select first
+name, last name, and age.
+
+308
+00:21:18,730 --> 00:21:19,550
+Okay.
+
+309
+00:21:19,900 --> 00:21:22,900
+And I'm going to run that. All
+right. So now I'm only receiving
+
+310
+00:21:23,210 --> 00:21:27,850
+this, these three fields of output,
+but this time I only want to have
+
+311
+00:21:27,850 --> 00:21:32,490
+son anywhere in their last name.
+So I'm going to add a where clause
+
+312
+00:21:32,490 --> 00:21:35,730
+here because I want to limit the
+records that are being returned to
+
+313
+00:21:35,730 --> 00:21:40,050
+me. And I want to say where last
+name, I don't want to say equal to
+
+314
+00:21:40,050 --> 00:21:44,150
+son, right it's not equal to it
+just that there's sun somewhere in
+
+315
+00:21:44,150 --> 00:21:48,810
+that last name so i'm going to say
+where last name like then i use a
+
+316
+00:21:48,810 --> 00:21:52,670
+single quotation mark percentage
+sign sun percentage sign this says
+
+317
+00:21:52,670 --> 00:21:56,790
+any number of characters before
+sun any number of characters after
+
+318
+00:21:56,790 --> 00:22:03,460
+sun we just want sun somewhere in
+that last name okay and again the
+
+319
+00:22:03,460 --> 00:22:07,590
+percentage sign the last name could
+start with sun this is any number
+
+320
+00:22:07,590 --> 00:22:11,950
+of characters, including none, okay?
+So let's go ahead and run this.
+
+321
+00:22:12,770 --> 00:22:16,930
+It could also end with sun, right,
+as these are ending with sun.
+
+322
+00:22:16,930 --> 00:22:21,510
+So this sonic-smith, that one has
+sun and it's beginning with it.
+
+323
+00:22:21,530 --> 00:22:26,870
+Simpson, though, is ending
+with the last, with S-O-N in
+
+324
+00:22:26,870 --> 00:22:29,410
+the last part of that name,
+right? It's ending with sun.
+
+325
+00:22:29,730 --> 00:22:33,130
+Okay, so then it also says,
+combine the first and last
+
+326
+00:22:33,130 --> 00:22:36,110
+name into one column and give
+it the alias of full name.
+
+327
+00:22:36,150 --> 00:22:38,530
+Okay, so this is going to help
+you on your homework assignment.
+
+328
+00:22:39,320 --> 00:22:43,490
+And what I want to do here is I'm
+going to concatenate. Basically,
+
+329
+00:22:43,490 --> 00:22:48,410
+I'm going to add together the
+first name and the last name.
+
+330
+00:22:48,590 --> 00:22:53,870
+Okay, first name and the last
+name of my guest. And similar
+
+331
+00:22:53,870 --> 00:22:58,970
+as up above, I'm going to
+give it an alias as full name.
+
+332
+00:23:01,410 --> 00:23:05,530
+Okay, so now when I run this, I
+basically add these two together.
+
+333
+00:23:05,530 --> 00:23:11,490
+It's going to squish them together
+into the full name field. So I get
+
+334
+00:23:11,490 --> 00:23:14,830
+Henry Simpson, Nova Simpson, Tyra
+Simpson. I'm going to make this
+
+335
+00:23:14,830 --> 00:23:19,010
+just a little bit better and actually
+give it a space between first
+
+336
+00:23:19,010 --> 00:23:23,490
+name and last name. And the way that
+I do that is after the plus sign,
+
+337
+00:23:23,490 --> 00:23:28,970
+so I do first name plus, then I
+do a single quotation mark, okay?
+
+338
+00:23:29,070 --> 00:23:33,780
+And I add a space between that
+beginning and ending quotation mark.
+
+339
+00:23:33,780 --> 00:23:39,790
+and then I do a plus sign after
+the space okay and before the last
+
+340
+00:23:39,790 --> 00:23:43,750
+name so what this does is this
+effectively gives me a space between
+
+341
+00:23:43,750 --> 00:23:48,310
+Henry and Simpson Nova and Simpson
+so I am adding together these
+
+342
+00:23:48,310 --> 00:23:54,150
+are fields right that I'm saying
+take this data point of Henry add it
+
+343
+00:23:54,150 --> 00:23:59,290
+to a space so give me a space here
+so Henry space and then add it
+
+344
+00:23:59,290 --> 00:24:04,270
+to the last name data point which
+is Simpson okay so I am bringing
+
+345
+00:24:04,270 --> 00:24:09,270
+together different fields of data
+into one column this is really
+
+346
+00:24:09,270 --> 00:24:13,110
+helpful and we do this a lot in SQL
+queries so I wanted to teach you how
+
+347
+00:24:13,110 --> 00:24:17,670
+to do that and then we're also
+going to include their age in just
+
+348
+00:24:17,670 --> 00:24:22,810
+a separate column okay now again
+this is only for the the full name
+
+349
+00:24:22,810 --> 00:24:26,510
+only exists when I run this output
+right it's not being added to
+
+350
+00:24:26,510 --> 00:24:30,290
+the database it's only existing for
+this output. All right, perfect.
+
+351
+00:24:30,490 --> 00:24:33,330
+Now it says also only include guests who
+
+352
+00:24:33,330 --> 00:24:36,270
+have a season pass or are older than 25.
+
+353
+00:24:36,550 --> 00:24:41,350
+Huh? So I'm going to add here season
+pass just for a second to my select
+
+354
+00:24:41,350 --> 00:24:45,270
+clause so I can make sure that I
+write this where clause correctly.
+
+355
+00:24:45,790 --> 00:24:49,790
+So I'm saying also only include
+guests who have a season pass or are
+
+356
+00:24:49,790 --> 00:24:56,010
+older than 25. So all guests must
+have son somewhere in their last name.
+
+357
+00:24:56,410 --> 00:25:04,470
+And they also must either have a
+season pass or be older than 25. So I
+
+358
+00:25:04,470 --> 00:25:09,410
+hope you remember the idea of PEMDAS,
+right? Or please excuse my dear
+
+359
+00:25:09,410 --> 00:25:14,930
+aunt Sally, or whatever other acronym
+they've come up with. But PEMDAS
+
+360
+00:25:14,930 --> 00:25:20,710
+means that parentheses run first. so
+basically we want to say that this
+
+361
+00:25:20,710 --> 00:25:26,490
+they have a season pass or are
+older than 25 we want these to be
+
+362
+00:25:26,490 --> 00:25:32,850
+included in the same um in the same
+condition if you will one or the other
+
+363
+00:25:32,850 --> 00:25:35,990
+has to be the same and they're
+going to run first so we're going to
+
+364
+00:25:35,990 --> 00:25:46,590
+say and season pass equal to yes okay
+so have a season pass or are older
+
+365
+00:25:46,590 --> 00:25:53,930
+than 25 or age greater than 25 okay
+so now we see here that son has to
+
+366
+00:25:53,930 --> 00:25:59,110
+be anywhere in their last name so
+this must be true and one of these
+
+367
+00:25:59,110 --> 00:26:04,350
+two things included in this parenthesis
+must be true if you have ands
+
+368
+00:26:04,350 --> 00:26:10,350
+and ors in a where clause you must
+use a parenthesis okay and make sure
+
+369
+00:26:10,350 --> 00:26:14,150
+that you group whatever needs to be
+grouped together like this is one
+
+370
+00:26:14,150 --> 00:26:20,030
+or the other so we group these two
+conditions together and then we say
+
+371
+00:26:20,030 --> 00:26:25,750
+and this must be true so now when we
+run this query here at the end good
+
+372
+00:26:25,750 --> 00:26:30,550
+job for making it through it we see
+here that henry simpson okay has
+
+373
+00:26:30,550 --> 00:26:36,910
+son somewhere in their last name
+they are older than 25 but they do
+
+374
+00:26:36,910 --> 00:26:40,850
+not have a season pass that's okay
+because remember they either have to
+
+375
+00:26:40,850 --> 00:26:45,430
+have a season pass or be older than
+25. So let's scroll down here. Let's
+
+376
+00:26:45,430 --> 00:26:48,830
+find somebody that does have a
+season pass. Okay, let's look at Jack
+
+377
+00:26:48,830 --> 00:26:55,870
+Anderson here. So Jack Anderson has
+last name son in their last name.
+
+378
+00:26:56,290 --> 00:27:02,310
+Their age is less than 24, but
+they have a season pass. So again,
+
+379
+00:27:02,310 --> 00:27:07,290
+they fulfill this season pass
+requirement, but they don't fulfill
+
+380
+00:27:07,290 --> 00:27:11,530
+the age requirement. Now other ones
+are going to fulfill both, right?
+
+381
+00:27:11,530 --> 00:27:16,230
+Like Colby Henderson has, is older
+than 25 and does have a season
+
+382
+00:27:16,230 --> 00:27:20,890
+pass. That's great. He fulfills
+both of those two things and has
+
+383
+00:27:20,890 --> 00:27:26,270
+a son somewhere in his last name.
+Okay. So they can fulfill, they
+
+384
+00:27:26,270 --> 00:27:34,170
+must fulfill at least one of these
+two and for sure this to this last
+
+385
+00:27:34,170 --> 00:27:38,230
+name like son to be included in
+the output all right grab this
+
+386
+00:27:38,230 --> 00:27:42,790
+query paste it into your in-class
+assignment then just make sure that
+
+387
+00:27:42,790 --> 00:27:45,790
+you turn that in-class assignment
+in save it for your notes as
+
+388
+00:27:45,790 --> 00:27:49,388
+well thanks so much for being here
+and for working so hard take care
+
+389
+00:27:49,388 --> 00:27:49,970
+well thanks so much for being here
+and for working so hard take care
+

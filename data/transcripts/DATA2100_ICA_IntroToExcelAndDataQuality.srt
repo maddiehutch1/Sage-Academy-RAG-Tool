@@ -1,0 +1,1678 @@
+1
+00:00:01,500 --> 00:00:06,300
+Hi Data 2100 students, welcome to
+your first in-class assignment.
+
+2
+00:00:06,300 --> 00:00:09,280
+With in-class assignments,
+I want you to try the in
+
+3
+00:00:09,280 --> 00:00:11,760
+-class assignment on your
+own, and then I want you to
+
+4
+00:00:11,760 --> 00:00:14,060
+come back and watch the
+video if you have questions.
+
+5
+00:00:14,330 --> 00:00:17,800
+So please, go ahead, try the in
+-class assignment on your own.
+
+6
+00:00:17,800 --> 00:00:20,700
+Come back to the video if you
+have questions and want to
+
+7
+00:00:20,700 --> 00:00:24,900
+verify your answers. But trying
+it first and then coming back
+
+8
+00:00:24,900 --> 00:00:28,220
+with questions of what you did
+and did not understand will help
+
+9
+00:00:28,220 --> 00:00:31,000
+improve your learning experience.
+As a reminder, in-class
+
+10
+00:00:31,000 --> 00:00:33,520
+assignments, I want you to feel
+like you're in class with me.
+
+11
+00:00:34,060 --> 00:00:38,420
+I will make mistakes, sometimes
+on purpose, a lot of times not
+
+12
+00:00:38,420 --> 00:00:41,600
+on purpose. I will fix them and
+we'll work through them and we
+
+13
+00:00:41,600 --> 00:00:44,980
+will talk about errors and
+encoding and it will feel like a
+
+14
+00:00:44,980 --> 00:00:49,060
+live class. So I really want you
+to watch this video, but after
+
+15
+00:00:49,060 --> 00:00:52,140
+you've tried to complete it on
+your own, it's really important.
+
+16
+00:00:52,200 --> 00:00:56,440
+So let's go ahead and jump into
+our first in-class assignment
+
+17
+00:00:56,440 --> 00:00:59,740
+that you've already tried on your
+own, right? Alright, so let's jump
+
+18
+00:00:59,740 --> 00:01:02,160
+into those learning objectives.
+By completing this assignment
+
+19
+00:01:02,160 --> 00:01:07,320
+you will demonstrate understanding
+of Excel worksheet structure,
+
+20
+00:01:07,780 --> 00:01:11,460
+rows and columns, cell
+referencing, essential
+
+21
+00:01:11,460 --> 00:01:13,860
+Excel functions like average max and min,
+
+22
+00:01:14,100 --> 00:01:16,120
+data quality assessment
+and identification,
+
+23
+00:01:17,100 --> 00:01:17,840
+basic
+
+24
+00:01:18,830 --> 00:01:21,700
+formatting in Excel. So we
+are going to work with a data
+
+25
+00:01:21,700 --> 00:01:24,750
+set containing information
+about online course enrollments.
+
+26
+00:01:25,400 --> 00:01:29,480
+This data includes student demographics,
+course progress, and completion
+
+27
+00:01:29,480 --> 00:01:33,940
+status. You'll practice your Excel
+skills. You're going to turn in
+
+28
+00:01:33,940 --> 00:01:40,660
+this Word document file and the Excel
+file. So download this Word file,
+
+29
+00:01:40,660 --> 00:01:44,100
+download the Excel file, and
+then we're going to rename
+
+30
+00:01:44,100 --> 00:01:47,040
+them to last name underscore.
+So you're going to
+
+31
+00:01:47,040 --> 00:01:51,240
+put your last name there in
+the title of the document.
+
+32
+00:01:51,380 --> 00:01:56,700
+Then submit both files in Canvas
+for me okay all right so we're
+
+33
+00:01:56,700 --> 00:02:00,720
+going to understand the data set
+first so we're going to take a look
+
+34
+00:02:00,720 --> 00:02:07,000
+at this provided Excel file ICA
+Excel and data quality so here's what
+
+35
+00:02:07,000 --> 00:02:10,340
+our Excel file looks like we
+have the user ID the course name
+
+36
+00:02:10,340 --> 00:02:14,420
+enrollment date completion status
+and on down so as a reminder these
+
+37
+00:02:14,420 --> 00:02:17,900
+are all rows right I'm gonna zoom
+in here these are all rows and
+
+38
+00:02:17,900 --> 00:02:22,760
+these are columns so I have my
+different column headers here, like user
+
+39
+00:02:22,760 --> 00:02:25,680
+ID, course name, enrollment date,
+completion status, those are
+
+40
+00:02:25,680 --> 00:02:30,360
+all describing here the data points
+for each of these different records.
+
+41
+00:02:30,360 --> 00:02:33,440
+These are all, each of these
+rows represents a student, and
+
+42
+00:02:33,440 --> 00:02:38,660
+they're in specifically here in this
+data science basics class, okay?
+
+43
+00:02:39,340 --> 00:02:43,080
+So we are going to go ahead
+and look at the metadata.
+
+44
+00:02:43,720 --> 00:02:47,240
+The metadata means data about the data.
+
+45
+00:02:47,240 --> 00:02:50,420
+So what do the data points represent?
+
+46
+00:02:51,000 --> 00:02:55,340
+So rows, each row except row one
+represents one student's course
+
+47
+00:02:55,340 --> 00:02:58,270
+enrollment. The columns, each
+column represents different
+
+48
+00:02:58,270 --> 00:03:01,110
+information. So we have our unique
+identifier, the name of the course,
+
+49
+00:03:01,380 --> 00:03:02,640
+when the student enrolled,
+
+50
+00:03:03,500 --> 00:03:05,720
+whether or not it was in
+progress, it completed,
+
+51
+00:03:05,720 --> 00:03:08,220
+they dropped it, the
+percentage of course completed,
+
+52
+00:03:08,440 --> 00:03:12,820
+things like that. So we have
+all of these different columns.
+
+53
+00:03:13,260 --> 00:03:15,000
+We then also have
+
+54
+00:03:16,280 --> 00:03:19,380
+after we've looked at our
+data set which we have we
+
+55
+00:03:19,380 --> 00:03:22,700
+now have these tasks to
+complete in this assignment.
+
+56
+00:03:22,920 --> 00:03:27,340
+So task number one is we are going to
+create a sheet in the Excel workbook.
+
+57
+00:03:27,340 --> 00:03:30,260
+So I'm going to create a new
+sheet in the Excel workbook. We're
+
+58
+00:03:30,260 --> 00:03:33,680
+going to rename the new sheet to
+practice sheet. Now again if you've had
+
+59
+00:03:33,680 --> 00:03:37,140
+experience in Excel you're like Reagan
+this is a little simple and you're
+
+60
+00:03:37,140 --> 00:03:40,880
+right it is simple but we are going
+to continue to weave Excel in and
+
+61
+00:03:40,880 --> 00:03:46,200
+out through this class as we focus
+on our core concepts of databases,
+
+62
+00:03:46,640 --> 00:03:48,780
+programming, and data analysis.
+
+63
+00:03:48,780 --> 00:03:53,180
+But it's important we start off
+with a way of looking at data
+
+64
+00:03:53,180 --> 00:04:01,280
+that we can interact with. So
+I'm going to go ahead here and
+
+65
+00:04:01,280 --> 00:04:05,740
+create this Excel spreadsheet. So
+I'm going to click on this plus
+
+66
+00:04:05,740 --> 00:04:10,040
+sign, this new sheet down here
+in the bottom left-hand corner.
+
+67
+00:04:10,440 --> 00:04:15,260
+So I see here I have sheet 2.
+Yours may see sheet 1 because
+
+68
+00:04:15,260 --> 00:04:18,160
+I accidentally created another
+one. I'm going to right
+
+69
+00:04:18,160 --> 00:04:22,880
+-click, and I want to rename
+this to practice sheet. Okay?
+
+70
+00:04:22,880 --> 00:04:27,220
+So now I have two sheets in my
+Excel workbook. I have sheet
+
+71
+00:04:27,700 --> 00:04:31,840
+ICA Excel and data quality,
+and then I have practice sheet.
+
+72
+00:04:31,840 --> 00:04:32,280
+Okay?
+
+73
+00:04:32,640 --> 00:04:36,800
+In cell A1 of the practice
+sheet, type the number 5.
+
+74
+00:04:36,800 --> 00:04:40,500
+Okay? So in cell A1,
+we know what A1 is. We
+
+75
+00:04:40,500 --> 00:04:43,580
+know how to identify
+that. I'm going to type 5.
+
+76
+00:04:44,620 --> 00:04:49,300
+In cell A2, it tells me
+to type the number 10.
+
+77
+00:04:50,100 --> 00:04:51,520
+Okay, perfect.
+
+78
+00:04:51,520 --> 00:04:56,260
+And then what it tells me to do is
+I am going to select both cells, A1
+
+79
+00:04:56,260 --> 00:05:00,300
+and A2. And I'm going to use the
+fill handle, the small square in the
+
+80
+00:05:00,300 --> 00:05:04,060
+bottom right-hand corner of the
+cell, to drag down and automatically
+
+81
+00:05:04,060 --> 00:05:10,120
+fill the series up to 200. So my
+list is going to show 5, 10, 15, 20.
+
+82
+00:05:10,300 --> 00:05:14,400
+This is teaching you that Excel's
+autofill feature recognizes
+
+83
+00:05:14,400 --> 00:05:18,460
+patterns and can extend a
+series of data automatically.
+
+84
+00:05:18,460 --> 00:05:22,000
+So I'm going to highlight these
+two data points, okay, and then you
+
+85
+00:05:22,000 --> 00:05:25,000
+see this tiny square down here.
+I'm going to grab that and drag it
+
+86
+00:05:25,000 --> 00:05:30,290
+all the way down to where it says
+100, so that would be at 20, okay.
+
+87
+00:05:31,200 --> 00:05:36,000
+And so now I have 5, 10, 15,
+20, and on down to 100. So
+
+88
+00:05:36,000 --> 00:05:39,360
+Excel automatically recognizes
+that pattern and will allow
+
+89
+00:05:39,360 --> 00:05:42,580
+you to continue that pattern
+using that autofill tool.
+
+90
+00:05:42,840 --> 00:05:46,980
+I could do the same thing over
+here if I wanted to, 1, 2, 3, 4, 5.
+
+91
+00:05:47,260 --> 00:05:53,440
+If I just put 1 and 2 here,
+gave it the context of two
+
+92
+00:05:53,440 --> 00:05:56,920
+cells and copied it down,
+it would do the same thing.
+
+93
+00:05:57,280 --> 00:05:59,600
+So really, really helpful.
+
+94
+00:06:00,220 --> 00:06:03,640
+Okay, perfect. So we have done that.
+
+95
+00:06:03,740 --> 00:06:04,360
+Check.
+
+96
+00:06:04,360 --> 00:06:07,460
+Task number one is good to go. We
+have six of them. Let's keep going.
+
+97
+00:06:07,660 --> 00:06:11,020
+Task number two, we're going
+to calculate the average age.
+
+98
+00:06:11,020 --> 00:06:14,200
+Okay. So what is the average
+age of students in the data
+
+99
+00:06:14,200 --> 00:06:14,535
+set? So it's here in cell
+H21. We are going to, so I'm
+
+100
+00:06:14,535 --> 00:06:16,965
+going to come back here to the
+ICA Excel and data quality.
+
+101
+00:06:16,965 --> 00:06:20,045
+I'm going to take a look at my age here.
+
+102
+00:06:20,045 --> 00:06:24,625
+Now I'm going to give you a tip.
+here if I if I don't want my first
+
+103
+00:06:24,625 --> 00:06:28,585
+row to disappear because it kind
+of drives me crazy if it does I'm
+
+104
+00:06:28,585 --> 00:06:32,855
+going to click on that one line
+I'm going to come up here to review
+
+105
+00:06:33,545 --> 00:06:38,725
+oh sorry nope to view my apologies
+I'm going to say freeze panes
+
+106
+00:06:38,725 --> 00:06:42,185
+I'm going to freeze that top
+row okay so I clicked on the row
+
+107
+00:06:42,185 --> 00:06:46,625
+that I'm wanting to freeze I
+went to view and then freeze pane
+
+108
+00:06:46,625 --> 00:06:52,945
+click the drop down, freeze top
+row. So now, as I scroll down,
+
+109
+00:06:52,945 --> 00:06:56,405
+you can see that top row will
+stay right there. Okay, perfect.
+
+110
+00:06:56,445 --> 00:06:59,065
+So as I scroll down here,
+
+111
+00:06:59,585 --> 00:07:02,774
+in cell it told me, now I'm gonna forget.
+
+112
+00:07:02,774 --> 00:07:07,318
+so I'm gonna type average
+age into cell G203, so we can
+
+113
+00:07:07,318 --> 00:07:12,698
+come here into cell G203 and
+type in average age, okay?
+
+114
+00:07:12,738 --> 00:07:17,178
+Then over here in cell H203, I
+wanna calculate the average age.
+
+115
+00:07:17,178 --> 00:07:19,798
+So we already learned about
+this, right, in our lecture
+
+116
+00:07:19,798 --> 00:07:23,318
+video, so I'm gonna say, I'm gonna
+start off by saying equal to,
+
+117
+00:07:23,458 --> 00:07:26,538
+then that tells Excel
+I'm gonna do a formula or
+
+118
+00:07:26,538 --> 00:07:30,438
+a function, and I'm
+gonna start typing in AV,
+
+119
+00:07:30,438 --> 00:07:34,538
+and I'm gonna grab this average
+function. I'm going to double click
+
+120
+00:07:34,538 --> 00:07:39,418
+that or you can just hit enter
+once it highlights it and now I'm
+
+121
+00:07:39,418 --> 00:07:45,028
+going to grab all the data the whole
+range of which I want to have of
+
+122
+00:07:47,138 --> 00:07:51,498
+which I want to calculate the average
+for which would be all the data
+
+123
+00:07:51,498 --> 00:07:58,638
+from cells h2 to h2o1 right I want
+to calculate the average of all
+
+124
+00:07:58,638 --> 00:08:03,878
+of the students' ages, okay? So I
+am doing that, and it's going to
+
+125
+00:08:03,878 --> 00:08:07,158
+perform this function on that data,
+and then I'm going to hit enter,
+
+126
+00:08:07,478 --> 00:08:10,458
+okay? So I have an opening.
+You'll notice an opening and a
+
+127
+00:08:10,458 --> 00:08:15,178
+closing parentheses. I hit enter,
+and the average age is 40.54.
+
+128
+00:08:15,718 --> 00:08:18,718
+Perfect. So now when I come
+back here, what is the average
+
+129
+00:08:18,718 --> 00:08:27,218
+age of students in the data
+set? The average age is 40.54.
+
+130
+00:08:28,278 --> 00:08:29,378
+Perfect.
+
+131
+00:08:30,198 --> 00:08:37,923
+Awesome. Now we used a
+function. Perfect. Task 3,
+
+132
+00:08:38,814 --> 00:08:42,314
+right, we're on to task number three.
+We're going to add percent signs
+
+133
+00:08:42,314 --> 00:08:46,774
+to progress data. So in column E,
+we're going to select the progress
+
+134
+00:08:46,774 --> 00:08:51,194
+percent column data and then we're
+going to change it into a percentage.
+
+135
+00:08:51,194 --> 00:08:54,774
+So we can do this by right
+clicking after selecting column E
+
+136
+00:08:54,774 --> 00:08:58,774
+and choosing format cells and
+then in the format cells dialog
+
+137
+00:08:58,774 --> 00:09:02,654
+box changing it to a percentage.
+So I'm going to click here
+
+138
+00:09:02,654 --> 00:09:06,834
+on column E, I'm going to right
+click and say format cells
+
+139
+00:09:06,854 --> 00:09:08,814
+and then I'm going to
+click on, because right
+
+140
+00:09:08,814 --> 00:09:11,214
+now here I'm looking
+at a bunch of different
+
+141
+00:09:11,714 --> 00:09:16,454
+decimal points regarding the
+percentage of progress the students has
+
+142
+00:09:16,454 --> 00:09:19,614
+made in the class. I'm going to come
+here and click percentage and the
+
+143
+00:09:19,614 --> 00:09:24,254
+decimal points I want it to be one.
+So I'm going to press okay and now I
+
+144
+00:09:24,254 --> 00:09:27,334
+can see that the progress percent
+has all been changed to percentage
+
+145
+00:09:27,334 --> 00:09:30,854
+signs so it's a little bit easier
+to interpret rather than just those
+
+146
+00:09:30,854 --> 00:09:35,154
+decimal points. Again, I can do this
+by again clicking on E, right click,
+
+147
+00:09:35,854 --> 00:09:37,474
+format cells,
+
+148
+00:09:37,754 --> 00:09:41,974
+select percentage and the
+decimal places being number one,
+
+149
+00:09:41,974 --> 00:09:46,934
+okay? So now I have properly
+formatted that E column according
+
+150
+00:09:46,934 --> 00:09:49,684
+to the specifications here
+on my in-class assignment.
+
+151
+00:09:49,814 --> 00:09:53,834
+So Excel will display the
+numbers with percentage signs.
+
+152
+00:09:53,834 --> 00:09:56,244
+The underlying values don't
+change, only how they're
+
+153
+00:09:56,244 --> 00:09:59,514
+displayed, okay? So just keep
+that in mind. Now on task
+
+154
+00:09:59,514 --> 00:10:03,234
+number four, I want you to
+identify the data quality error.
+
+155
+00:10:03,234 --> 00:10:07,274
+So I'm going to examine the state
+column, column K, carefully.
+
+156
+00:10:07,274 --> 00:10:11,194
+We're going to look for inconsistencies
+in how states are formatted.
+
+157
+00:10:11,614 --> 00:10:14,174
+Some states are written
+as full names while others
+
+158
+00:10:14,174 --> 00:10:17,934
+use abbreviations. Also
+check for extra spaces or
+
+159
+00:10:17,934 --> 00:10:21,674
+unusual formatting. So let's
+take a look in column K.
+
+160
+00:10:22,524 --> 00:10:25,914
+So I'm going to come over here to
+column K and I could scroll through
+
+161
+00:10:25,914 --> 00:10:29,814
+all of this if I wanted to, but
+I'm going to use my handy filter
+
+162
+00:10:29,814 --> 00:10:34,734
+tool here which is going to allow
+me to just look at all of the
+
+163
+00:10:34,734 --> 00:10:37,734
+unique values that I'm given here.
+So I can see here that I have
+
+164
+00:10:37,734 --> 00:10:44,794
+Arizona, CA, then California, then
+FL, Florida. Well, CA and California
+
+165
+00:10:44,794 --> 00:10:48,254
+are the same state, but they're
+just written in two different
+
+166
+00:10:48,254 --> 00:10:52,874
+ways. So that's interesting to note.
+Same thing with Florida and FL.
+
+167
+00:10:53,774 --> 00:10:58,014
+Huh, that's really interesting. So
+what type of data quality issues
+
+168
+00:10:58,014 --> 00:11:02,734
+do I have going on here? Well, I
+have a consistency issue, right?
+
+169
+00:11:02,734 --> 00:11:07,194
+And let me go ahead and select
+these cells so I can look at CA in
+
+170
+00:11:07,194 --> 00:11:10,914
+California and then FL in Florida
+and then Georgia in Georgia. I
+
+171
+00:11:10,914 --> 00:11:13,414
+can actually look at those too.
+Let's look if there's any others.
+
+172
+00:11:15,234 --> 00:11:19,914
+And we have New York and New
+York. I only need to identify one,
+
+173
+00:11:19,914 --> 00:11:24,174
+but we got a lot. New Jersey
+and New Jersey, Texas and Texas.
+
+174
+00:11:24,214 --> 00:11:27,154
+All right. So if I take a
+look at this here, now I'm
+
+175
+00:11:27,154 --> 00:11:31,354
+showing these different rows
+that some of them say, again,
+
+176
+00:11:31,354 --> 00:11:34,834
+New York, some of them say
+NY, and some say New York.
+
+177
+00:11:34,894 --> 00:11:39,654
+So we need to make sure that that
+is all consistent. So I'm going to
+
+178
+00:11:39,654 --> 00:11:44,454
+point to, since the majority of the
+other states are all spelled out,
+
+179
+00:11:44,754 --> 00:11:50,214
+I'm going to say that the data
+quality, one example is in K8.
+
+180
+00:11:51,354 --> 00:11:56,554
+All right, so which cell
+includes the error? So I
+
+181
+00:11:56,554 --> 00:12:03,654
+can say cell K8 includes
+an example of the error.
+
+182
+00:12:06,074 --> 00:12:14,014
+K8 refers to, or K8 reads NY,
+
+183
+00:12:14,334 --> 00:12:18,644
+or I'm going to say K8 contains NY
+
+184
+00:12:19,474 --> 00:12:23,294
+while most other state, well, let's see,
+
+185
+00:12:23,294 --> 00:12:31,274
+while contains NY instead of New York.
+
+186
+00:12:32,234 --> 00:12:33,794
+For consistency,
+
+187
+00:12:38,294 --> 00:12:40,574
+all, and follow along here with me,
+
+188
+00:12:40,574 --> 00:12:42,214
+make sure you're doing this with me.
+
+189
+00:12:44,514 --> 00:12:46,634
+So for consistency,
+
+190
+00:12:46,934 --> 00:12:54,114
+all two-letter abbreviations should be
+
+191
+00:12:54,114 --> 00:13:00,034
+transformed into the
+full name of the state.
+
+192
+00:13:00,134 --> 00:13:05,954
+We could say all two letters should
+be New York, or all two letters
+
+193
+00:13:05,954 --> 00:13:09,714
+should be transformed into their
+state. Or we could say, you know what,
+
+194
+00:13:09,714 --> 00:13:12,174
+instead of spelling out the whole
+state name, we're just going to use
+
+195
+00:13:12,174 --> 00:13:15,734
+a two-letter abbreviation. Either
+way, it just needs to be consistent.
+
+196
+00:13:15,734 --> 00:13:19,094
+In this case, because the
+other states, most of them are,
+
+197
+00:13:19,704 --> 00:13:23,814
+it's their full name, right,
+Massachusetts, Michigan,
+
+198
+00:13:23,954 --> 00:13:27,594
+Maryland, those things, I
+said to spell out the entire
+
+199
+00:13:27,594 --> 00:13:31,854
+state. So with that, now I can
+select all of my data again,
+
+200
+00:13:31,854 --> 00:13:34,934
+but do you see how helpful that
+filtering is and recognizing
+
+201
+00:13:34,934 --> 00:13:38,434
+that's a data quality issue
+because it appears as such NY
+
+202
+00:13:38,434 --> 00:13:42,254
+is different than New York,
+okay, according to the data.
+
+203
+00:13:43,014 --> 00:13:44,194
+Okay, perfect.
+
+204
+00:13:44,334 --> 00:13:48,414
+The description of error, we
+included that up above. And I
+
+205
+00:13:48,414 --> 00:13:56,254
+can also say, there are many
+examples of the two-letter
+
+206
+00:13:56,374 --> 00:14:03,774
+abbreviations in the data. They
+need to be changed to the full
+
+207
+00:14:03,774 --> 00:14:08,094
+state. So I gave you one example
+of K8, but there's other ones.
+
+208
+00:14:08,974 --> 00:14:13,574
+all right instructions uh we're going
+to look for logical inconsistencies
+
+209
+00:14:13,914 --> 00:14:17,294
+in the data pay attention to the
+relationship between completion
+
+210
+00:14:17,294 --> 00:14:21,234
+status and progress percent columns
+think about what it means for a
+
+211
+00:14:21,234 --> 00:14:25,374
+course to be completed what would
+you expect the progress percent to
+
+212
+00:14:25,374 --> 00:14:28,674
+be so let's go ahead and take a look
+at this so i'm going to come over
+
+213
+00:14:28,674 --> 00:14:33,434
+here i'm looking at completion status
+and then i'm looking at progress
+
+214
+00:14:33,434 --> 00:14:39,054
+percent okay so let's take a look
+at this so if i Uh-oh. This is
+
+215
+00:14:39,054 --> 00:14:44,294
+weird. So I have completed here in
+cell D3 for this one student. Okay.
+
+216
+00:14:44,474 --> 00:14:50,654
+But then the progress percent is
+a 52.5%. What? Well, but it says
+
+217
+00:14:50,654 --> 00:14:54,714
+the course is completed. So why is
+the progress percent? Well, that's
+
+218
+00:14:54,714 --> 00:14:58,314
+an issue. That's an issue going
+on for sure. Same thing down here.
+
+219
+00:14:58,314 --> 00:15:03,374
+Okay. So we have some really
+interesting, I also have some data
+
+220
+00:15:03,374 --> 00:15:08,494
+quality issues going on here. This
+one says it's 2,000% completed.
+
+221
+00:15:08,574 --> 00:15:11,274
+That seems, something seems wrong there.
+
+222
+00:15:11,354 --> 00:15:15,374
+Also, completed looks
+like it's, well, it says
+
+223
+00:15:15,374 --> 00:15:18,044
+completed, but yet the
+progress percent is at 0.1%.
+
+224
+00:15:18,514 --> 00:15:22,514
+So we need to point this out.
+This is a data quality issue.
+
+225
+00:15:22,894 --> 00:15:26,984
+So here I'm going to say,
+I'm going to say rows.
+
+226
+00:15:27,804 --> 00:15:29,894
+Instead of this is cells,
+I'm going to say rows. I'm
+
+227
+00:15:29,894 --> 00:15:34,194
+going to say rows. I'm
+going to say row, let's say,
+
+228
+00:15:34,994 --> 00:15:39,394
+for user ID 14491, okay?
+
+229
+00:15:39,414 --> 00:15:41,554
+So which cell includes the error?
+
+230
+00:15:41,554 --> 00:15:43,174
+Specifically, what is its cell reference?
+
+231
+00:15:43,354 --> 00:15:48,824
+So the cell reference of
+that is specifically E3,
+
+232
+00:15:48,824 --> 00:15:57,454
+okay? So I'm going to say
+in E3 for user ID 14491.
+
+233
+00:16:00,494 --> 00:16:07,514
+The progress percent is,
+what was that percentage,
+
+234
+00:16:08,214 --> 00:16:13,074
+52.5%, yet the completion,
+
+235
+00:16:13,334 --> 00:16:18,774
+yet the status is complete.
+
+236
+00:16:21,734 --> 00:16:32,134
+um this is a data quality issue
+as the progress percent should be
+
+237
+00:16:32,134 --> 00:16:39,094
+a hundred percent if the class is
+complete it is recommended that
+
+238
+00:16:39,094 --> 00:16:47,914
+we look into how the progress
+percent is being calculated okay
+
+239
+00:16:48,054 --> 00:16:51,294
+So we should take a look into
+that. Maybe it's that it's being
+
+240
+00:16:51,294 --> 00:16:55,074
+calculated in a different way.
+Maybe it's not syncing properly to
+
+241
+00:16:55,184 --> 00:17:00,154
+however we're receiving this data.
+So this is a data quality error.
+
+242
+00:17:00,214 --> 00:17:04,834
+Those two columns are saying
+two different things, right?
+
+243
+00:17:05,114 --> 00:17:06,034
+Okay,
+
+244
+00:17:06,214 --> 00:17:10,394
+awesome. So I have the description
+of the error happening there. I could
+
+245
+00:17:10,394 --> 00:17:18,994
+also say here, this is happening
+for many other records of data too.
+
+246
+00:17:18,994 --> 00:17:19,554
+Okay,
+
+247
+00:17:19,954 --> 00:17:22,034
+perfect.
+
+248
+00:17:22,634 --> 00:17:26,554
+Now in task 6, here in column
+L, we're going to create
+
+249
+00:17:26,554 --> 00:17:29,644
+a new column. So we can
+come over here to column
+
+250
+00:17:29,644 --> 00:17:32,474
+L. It exists, but we're
+going to name it something.
+
+251
+00:17:32,474 --> 00:17:36,514
+We are going to see how each
+student's quiz score compares to the
+
+252
+00:17:36,514 --> 00:17:39,374
+best quiz score in the class.
+So we're going to think about it
+
+253
+00:17:39,374 --> 00:17:42,634
+like this. If the highest quiz
+score in the class is a 95 and a
+
+254
+00:17:42,634 --> 00:17:46,914
+student scored 76, they got about
+80% of the top score. Okay, so
+
+255
+00:17:46,914 --> 00:17:54,094
+76 divided by 95 equals 80%. So
+we want to look at how does each
+
+256
+00:17:54,094 --> 00:17:57,834
+student's quiz score compare to
+the highest quiz score. Okay,
+
+257
+00:17:58,574 --> 00:18:00,394
+so we're going to create
+the header. We're going
+
+258
+00:18:00,394 --> 00:18:04,604
+to click on cell L1 and
+type performance score.
+
+259
+00:18:07,994 --> 00:18:11,424
+Okay, so that's going to be my
+column heading for this new column.
+
+260
+00:18:11,994 --> 00:18:12,874
+Perfect.
+
+261
+00:18:13,894 --> 00:18:17,214
+We're going to start with the
+first student. Okay, we're
+
+262
+00:18:17,214 --> 00:18:20,614
+going to click on cell L2.
+Okay, so we're going to click
+
+263
+00:18:20,614 --> 00:18:24,574
+on cell L2. So I'm looking
+at this first student here.
+
+264
+00:18:25,454 --> 00:18:28,834
+And we're going to build the
+formula together in parts.
+
+265
+00:18:28,834 --> 00:18:31,734
+So we need the student's
+quiz score, which is going to
+
+266
+00:18:31,734 --> 00:18:36,834
+be G2. So I'm going to say
+equal to G2. Okay, that's
+
+267
+00:18:36,834 --> 00:18:40,714
+this student's score. so I'm
+referencing that cell, okay?
+
+268
+00:18:41,314 --> 00:18:43,874
+Then what I need to do is we need to find
+
+269
+00:18:43,874 --> 00:18:47,274
+the highest quiz score in all the data.
+
+270
+00:18:47,274 --> 00:18:51,974
+Hmm, you're right. So
+let's, we're gonna say equal
+
+271
+00:18:51,974 --> 00:18:54,904
+to, instead of just G2,
+we're gonna say equal to max,
+
+272
+00:18:55,294 --> 00:18:59,934
+and then somewhere, and then
+we want to find the max of all
+
+273
+00:18:59,934 --> 00:19:08,914
+of this quiz score. So from
+G2 to G201, we want to perform
+
+274
+00:19:08,914 --> 00:19:13,814
+this max calculation on this
+range of data, okay? So we
+
+275
+00:19:13,814 --> 00:19:16,285
+can say equal to G2, G201. So
+what is the max quiz score?
+
+276
+00:19:16,519 --> 00:19:19,139
+when I hit enter, we're
+going to see that the highest
+
+277
+00:19:19,139 --> 00:19:24,919
+score is a 99.5. So that is
+my highest maximum score.
+
+278
+00:19:25,939 --> 00:19:30,019
+Now, we found the highest quiz
+score in all the data. Now we need
+
+279
+00:19:30,019 --> 00:19:34,539
+to divide the student's score by
+the highest score. So let's go ahead
+
+280
+00:19:34,539 --> 00:19:37,999
+and do this. So here when I say
+equal to max, I found that maximum
+
+281
+00:19:37,999 --> 00:19:42,479
+value. And this is where Excel
+and its formulas can get really
+
+282
+00:19:42,479 --> 00:19:46,379
+complex but really, really helpful.
+We just piece them together one
+
+283
+00:19:46,379 --> 00:19:49,799
+step at a time. So I found the
+maximum, but now what I want to do
+
+284
+00:19:49,799 --> 00:19:55,459
+is I want to say equal to G2
+divided by the maximum. So I want to
+
+285
+00:19:55,459 --> 00:19:59,779
+take their quiz score divided by
+that maximum score to figure out
+
+286
+00:19:59,779 --> 00:20:04,359
+how did their quiz score compare
+to that top score. So now I hit
+
+287
+00:20:04,359 --> 00:20:10,059
+enter, and I see that their performance
+score was about a .30. zero.
+
+288
+00:20:10,239 --> 00:20:14,499
+Well, as we can see here, I
+want to actually make this
+
+289
+00:20:14,499 --> 00:20:19,219
+into a percentage. Okay. So
+I actually want to make this
+
+290
+00:20:19,219 --> 00:20:24,399
+into a percentage. So I can
+multiply this by a hundred.
+
+291
+00:20:25,619 --> 00:20:29,119
+So I'm going to go ahead and
+do that. So I can say times by
+
+292
+00:20:29,239 --> 00:20:33,779
+100 and I hit enter. And now I
+can see here that I have 30.05
+
+293
+00:20:34,699 --> 00:20:39,479
+is the performance score
+for specifically this
+
+294
+00:20:39,479 --> 00:20:43,559
+student. And as I double
+-click, so let's do that again.
+
+295
+00:20:44,499 --> 00:20:47,259
+So I double-clicked this,
+
+296
+00:20:47,859 --> 00:20:50,539
+and it is going to calculate the
+
+297
+00:20:50,539 --> 00:20:53,079
+performance score for
+all of the students.
+
+298
+00:20:53,279 --> 00:20:55,299
+And as it does that,
+
+299
+00:20:58,164 --> 00:21:01,259
+so if yours took a minute to
+calculate, that's kind of normal
+
+300
+00:21:01,259 --> 00:21:05,039
+because it's calculating that max
+inside of that calculation. right
+
+301
+00:21:10,429 --> 00:21:14,269
+it's calculating that max inside of
+that calculation but you'll notice
+
+302
+00:21:14,269 --> 00:21:19,989
+here though we have an issue going
+on don't we because now since i had
+
+303
+00:21:19,989 --> 00:21:26,749
+to do the same thing for this student
+we'll notice here that that max
+
+304
+00:21:26,749 --> 00:21:32,709
+calculation now starts at g3 instead
+of g2 right i still want to find
+
+305
+00:21:32,709 --> 00:21:41,569
+the maximum quiz score for all of
+the quiz participants. So what I need
+
+306
+00:21:41,569 --> 00:21:45,949
+to do here, this is why we always
+double check everything, is I need to
+
+307
+00:21:45,949 --> 00:21:53,249
+make this G2 through G201 an absolute
+self-reference. You can also use
+
+308
+00:21:53,249 --> 00:21:57,209
+a keystroke to do that quickly. I'm
+going you go ahead and hit enter.
+
+309
+00:21:57,469 --> 00:22:00,499
+And so now when I double
+click this down, it's
+
+310
+00:22:02,829 --> 00:22:05,329
+going to take a minute
+to recalculate that.
+
+311
+00:22:05,909 --> 00:22:11,549
+But now it will only use that
+range of all of the quiz scores,
+
+312
+00:22:11,549 --> 00:22:14,569
+right? Because we have it set up
+as an absolute cell reference.
+
+313
+00:22:15,069 --> 00:22:20,149
+Prior, it was just moving down
+that calculation so that quiz
+
+314
+00:22:20,149 --> 00:22:26,169
+score, the maximum calculation
+started at cell G3 and went down
+
+315
+00:22:26,169 --> 00:22:31,549
+to cell 20 something that doesn't
+have any data in it, right?
+
+316
+00:22:32,149 --> 00:22:36,069
+So we always need to verify that
+we're using absolute relative
+
+317
+00:22:36,069 --> 00:22:41,189
+cell references as we need to, okay?
+So now as we do this, if I double
+
+318
+00:22:41,189 --> 00:22:44,629
+click here, I can see, oh
+yeah, it says G2 divided by the
+
+319
+00:22:44,629 --> 00:22:49,329
+maximum of this value. Perfect. I
+can come here. Now it's doing the
+
+320
+00:22:49,329 --> 00:22:56,089
+same thing. So it's using the same
+range to calculate the max for
+
+321
+00:22:56,089 --> 00:23:00,129
+all of the different records here
+instead of just that first one.
+
+322
+00:23:00,289 --> 00:23:03,909
+We could have also calculated
+the maximum value of the
+
+323
+00:23:03,909 --> 00:23:07,569
+quiz scores out here and then
+reference that value. You
+
+324
+00:23:07,569 --> 00:23:11,749
+can do things like that to
+improve the processing time.
+
+325
+00:23:11,909 --> 00:23:15,309
+But I hope you found that
+to be a helpful exercise.
+
+326
+00:23:18,029 --> 00:23:21,229
+Then you'll notice here, right,
+the dollar signs lock this
+
+327
+00:23:21,229 --> 00:23:24,769
+part so it won't change when we
+copy the formula. So we needed
+
+328
+00:23:24,769 --> 00:23:28,889
+to verify that we did that,
+right, and we did that just fine.
+
+329
+00:23:31,349 --> 00:23:34,969
+So we'll notice that what
+happens when we copy, G2 becomes
+
+330
+00:23:34,969 --> 00:23:38,929
+G3, G4, right, this is relative,
+It moves with each row.
+
+331
+00:23:39,109 --> 00:23:43,449
+G2 through G201 stays exactly
+the same. This is absolute.
+
+332
+00:23:43,449 --> 00:23:47,229
+The dollar signs lock it in
+place, okay? So now when we
+
+333
+00:23:47,229 --> 00:23:49,849
+look at this, we can see
+here that the person with the
+
+334
+00:23:49,849 --> 00:23:55,709
+highest performance score, if
+we take a look, is going to be
+
+335
+00:23:55,709 --> 00:24:00,069
+the person that scored that
+99.5. So where are they at?
+
+336
+00:24:01,029 --> 00:24:07,189
+There they are. Perfect. So there's
+our person that scored the 100%,
+
+337
+00:24:07,189 --> 00:24:12,379
+meaning they were the highest
+score. So everybody else is based
+
+338
+00:24:13,109 --> 00:24:17,089
+upon a calculation of how they're
+scored compared to that highest
+
+339
+00:24:17,089 --> 00:24:20,909
+score. All right, everyone. So
+we're going to go ahead. I want you
+
+340
+00:24:20,909 --> 00:24:26,939
+to file and save as, and then make
+sure you do file, save as, and
+
+341
+00:24:26,939 --> 00:24:33,669
+say Sigurd underscore, but it's
+going to be your first name this
+
+342
+00:24:33,669 --> 00:24:38,089
+time. I'm sorry, your last name,
+not my last name. So do your last
+
+343
+00:24:38,089 --> 00:24:42,489
+name, save the Excel file, save
+the Word document file, and submit
+
+344
+00:24:42,489 --> 00:24:46,688
+both of them into Canvas, and this
+in-class assignment is complete.
+

@@ -1,0 +1,4249 @@
+1
+00:00:00,530 --> 00:00:02,360
+SHARAD JONES: Hey,
+everyone, welcome back.
+
+2
+00:00:02,360 --> 00:00:06,840
+So in this last topic to
+talk about this semester,
+
+3
+00:00:06,840 --> 00:00:10,017
+I wanted to take a little
+bit of a different direction.
+
+4
+00:00:10,017 --> 00:00:11,600
+So this will be a
+little bit different
+
+5
+00:00:11,600 --> 00:00:14,423
+of a lecture than the previous
+ones, and for that matter,
+
+6
+00:00:14,423 --> 00:00:16,340
+may end up being a bit
+shorter because there's
+
+7
+00:00:16,340 --> 00:00:18,270
+a lot of open-ended questions.
+
+8
+00:00:18,270 --> 00:00:21,320
+But I wanted to start it
+with this open ended question
+
+9
+00:00:21,320 --> 00:00:25,170
+of, why shouldn't
+I use the cloud?
+
+10
+00:00:25,170 --> 00:00:27,150
+And here when I'm
+saying the cloud,
+
+11
+00:00:27,150 --> 00:00:29,810
+I'm talking about the way
+we've been treating the cloud.
+
+12
+00:00:29,810 --> 00:00:32,060
+We've been treating
+the cloud as a suite
+
+13
+00:00:32,060 --> 00:00:36,230
+of tools available through
+some large cloud provider.
+
+14
+00:00:36,230 --> 00:00:42,210
+We focused on specifically AWS.
+
+15
+00:00:42,210 --> 00:00:45,530
+But in reality, we could
+have been talking about any
+
+16
+00:00:45,530 --> 00:00:47,220
+of the other cloud providers.
+
+17
+00:00:47,220 --> 00:00:49,220
+So we could have been
+talking about Google Cloud
+
+18
+00:00:49,220 --> 00:00:51,660
+Project, Microsoft Azure.
+
+19
+00:00:51,660 --> 00:00:55,820
+But either way, are there
+situations where I, maybe,
+
+20
+00:00:55,820 --> 00:00:58,708
+don't want to be looking at
+one of those cloud providers?
+
+21
+00:00:58,708 --> 00:01:00,750
+And it's not to say again
+that their tools aren't
+
+22
+00:01:00,750 --> 00:01:02,980
+good, or reasonable, or we
+shouldn't consider them.
+
+23
+00:01:02,980 --> 00:01:06,510
+But I want us to recognize
+that the internet we
+
+24
+00:01:06,510 --> 00:01:09,630
+see today, this cloud-based
+internet, and again, cloud
+
+25
+00:01:09,630 --> 00:01:12,570
+being large cloud
+provider-based internet,
+
+26
+00:01:12,570 --> 00:01:15,720
+this is merely a byproduct of
+history, but it's not by any
+
+27
+00:01:15,720 --> 00:01:19,600
+means the way it has
+to be, in the future.
+
+28
+00:01:19,600 --> 00:01:21,440
+It very much could be this.
+
+29
+00:01:21,440 --> 00:01:23,470
+This is a lecture
+that I hesitated
+
+30
+00:01:23,470 --> 00:01:25,797
+to do even because
+I'm here trying
+
+31
+00:01:25,797 --> 00:01:27,380
+to not necessarily
+predict the future,
+
+32
+00:01:27,380 --> 00:01:30,100
+but better statement, just
+say the future is a bit open.
+
+33
+00:01:30,100 --> 00:01:34,210
+And you all are going to be the
+next generation of developers,
+
+34
+00:01:34,210 --> 00:01:37,990
+and cloud engineers and, data
+scientists, and data analysts,
+
+35
+00:01:37,990 --> 00:01:40,280
+and for that matter,
+any job you go into.
+
+36
+00:01:40,280 --> 00:01:42,740
+You're just the future
+of internet users.
+
+37
+00:01:42,740 --> 00:01:45,340
+And so I want you to think
+about this as far as,
+
+38
+00:01:45,340 --> 00:01:47,173
+what do you want your
+internet to look like,
+
+39
+00:01:47,173 --> 00:01:49,423
+and what do you think the
+internet should or shouldn't
+
+40
+00:01:49,423 --> 00:01:49,940
+look like?
+
+41
+00:01:49,940 --> 00:01:51,315
+And so I just
+wanted to introduce
+
+42
+00:01:51,315 --> 00:01:53,320
+some of these ideas
+and maybe a case study
+
+43
+00:01:53,320 --> 00:02:00,100
+to motivate why I kind of
+came to do this lecture.
+
+44
+00:02:00,100 --> 00:02:03,540
+So first off, I want to talk
+about, what is the cloud?
+
+45
+00:02:03,540 --> 00:02:07,070
+So the cloud, in
+its simplest form,
+
+46
+00:02:07,070 --> 00:02:09,520
+can be viewed as-- or
+better, this quote here
+
+47
+00:02:09,520 --> 00:02:12,115
+from this article that we'll
+talk about in a second.
+
+48
+00:02:12,115 --> 00:02:14,240
+And you can see it there
+on the bottom of the page.
+
+49
+00:02:14,240 --> 00:02:16,810
+But this article gave
+this quote that I
+
+50
+00:02:16,810 --> 00:02:20,150
+think is a good summary of
+why we should use the cloud.
+
+51
+00:02:20,150 --> 00:02:23,230
+So "The cloud excels at
+two ends of the spectrum.
+
+52
+00:02:23,230 --> 00:02:25,900
+The first end is when your
+application is so simple and low
+
+53
+00:02:25,900 --> 00:02:28,390
+traffic that you really do
+save on complexity by starting
+
+54
+00:02:28,390 --> 00:02:29,960
+with fully managed services.
+
+55
+00:02:29,960 --> 00:02:32,240
+The second is when your
+load is highly irregular,
+
+56
+00:02:32,240 --> 00:02:35,060
+when you have wild swings or
+towering peaks and usages,
+
+57
+00:02:35,060 --> 00:02:37,630
+when the baseline is a
+sliver of your largest needs,
+
+58
+00:02:37,630 --> 00:02:42,250
+or when you have no idea whether
+you need 10 servers or 100."
+
+59
+00:02:42,250 --> 00:02:44,200
+So that, I think,
+really summarizes
+
+60
+00:02:44,200 --> 00:02:46,720
+what we've talked
+about this semester.
+
+61
+00:02:46,720 --> 00:02:49,060
+How do we build tools
+and applications
+
+62
+00:02:49,060 --> 00:02:53,075
+that scale with wildly
+different needs and usages?
+
+63
+00:02:53,075 --> 00:02:55,450
+And so I want you to think,
+what are some businesses that
+
+64
+00:02:55,450 --> 00:02:57,130
+fall into that
+first category, that
+
+65
+00:02:57,130 --> 00:03:00,370
+fall into the side of things
+where maybe your application is
+
+66
+00:03:00,370 --> 00:03:01,353
+so simple?
+
+67
+00:03:01,353 --> 00:03:03,770
+Really, you're not worried
+about the big swings and usages
+
+68
+00:03:03,770 --> 00:03:04,270
+right now.
+
+69
+00:03:04,270 --> 00:03:06,438
+You're just saying, I
+have a simple product.
+
+70
+00:03:06,438 --> 00:03:07,730
+What are some examples of that?
+
+71
+00:03:07,730 --> 00:03:10,600
+Maybe pause and
+think about that.
+
+72
+00:03:10,600 --> 00:03:14,420
+I know what I'll say is that I
+think about a tool like Heroku.
+
+73
+00:03:14,420 --> 00:03:17,690
+Heroku allowed us to build
+our flask application.
+
+74
+00:03:17,690 --> 00:03:20,300
+And with one or two
+lines on the terminal,
+
+75
+00:03:20,300 --> 00:03:22,840
+we could push our
+app to run live.
+
+76
+00:03:22,840 --> 00:03:24,265
+And now it's hosted.
+
+77
+00:03:24,265 --> 00:03:27,160
+We don't have to deal with any
+of the management of servers
+
+78
+00:03:27,160 --> 00:03:28,150
+or anything like that.
+
+79
+00:03:28,150 --> 00:03:30,130
+We just have a live
+web application
+
+80
+00:03:30,130 --> 00:03:33,370
+with a URL attached to it
+publicly accessible URL.
+
+81
+00:03:33,370 --> 00:03:34,490
+That's outstanding.
+
+82
+00:03:34,490 --> 00:03:36,280
+I think that's a
+huge number of tools
+
+83
+00:03:36,280 --> 00:03:38,800
+that we can build that
+fall into that bucket.
+
+84
+00:03:38,800 --> 00:03:40,300
+For that matter, I
+hope you all have
+
+85
+00:03:40,300 --> 00:03:43,963
+thought about this semester, all
+the cool things you could build.
+
+86
+00:03:43,963 --> 00:03:46,130
+And we've only built very,
+very simple applications.
+
+87
+00:03:46,130 --> 00:03:48,040
+But you're now
+effectively empowered
+
+88
+00:03:48,040 --> 00:03:50,770
+to build any web app
+you want to and push
+
+89
+00:03:50,770 --> 00:03:53,530
+it live via one of
+these tools, with most
+
+90
+00:03:53,530 --> 00:03:54,890
+of them even having free tiers.
+
+91
+00:03:54,890 --> 00:03:58,060
+But even beyond that, if you're
+building an application, maybe
+
+92
+00:03:58,060 --> 00:04:01,450
+for, I don't know,
+your class you're
+
+93
+00:04:01,450 --> 00:04:03,650
+in, or maybe even
+for a company--
+
+94
+00:04:03,650 --> 00:04:05,900
+you're working for a small
+business, a local business,
+
+95
+00:04:05,900 --> 00:04:08,620
+and they don't have an
+inventory system or an inventory
+
+96
+00:04:08,620 --> 00:04:09,840
+management system.
+
+97
+00:04:09,840 --> 00:04:11,840
+And you want to build
+a simple version of one
+
+98
+00:04:11,840 --> 00:04:14,750
+for them that has a
+nice web interface.
+
+99
+00:04:14,750 --> 00:04:15,270
+Well, great.
+
+100
+00:04:15,270 --> 00:04:17,100
+You can do that,
+host it on Heroku.
+
+101
+00:04:17,100 --> 00:04:19,683
+You know you're only going
+to have one, maybe two users,
+
+102
+00:04:19,683 --> 00:04:20,850
+the people working in there.
+
+103
+00:04:20,850 --> 00:04:23,017
+So you're not really worried
+about costs or anything
+
+104
+00:04:23,017 --> 00:04:23,610
+like that.
+
+105
+00:04:23,610 --> 00:04:25,340
+But you don't really
+want to spend time
+
+106
+00:04:25,340 --> 00:04:27,290
+on the management side.
+
+107
+00:04:27,290 --> 00:04:31,950
+That's an outstanding use case
+for cloud-based tools, again,
+
+108
+00:04:31,950 --> 00:04:34,430
+these large cloud providers.
+
+109
+00:04:34,430 --> 00:04:36,270
+So what about the
+second category, then?
+
+110
+00:04:36,270 --> 00:04:38,210
+So that's the category
+where your load
+
+111
+00:04:38,210 --> 00:04:40,760
+is highly irregular-- wild
+swings, towering peaks
+
+112
+00:04:40,760 --> 00:04:43,650
+and usages, don't know if
+you need 10 servers or 100.
+
+113
+00:04:43,650 --> 00:04:46,170
+What are some examples of that?
+
+114
+00:04:46,170 --> 00:04:49,500
+And the reason I want
+you to think about this
+
+115
+00:04:49,500 --> 00:04:53,190
+is going to potentially
+impact or be
+
+116
+00:04:53,190 --> 00:04:54,870
+something you have
+to consider when
+
+117
+00:04:54,870 --> 00:04:56,530
+you arrive at a new company.
+
+118
+00:04:56,530 --> 00:05:00,120
+Again, you may be put into
+a developer role or a data
+
+119
+00:05:00,120 --> 00:05:01,180
+science-type role.
+
+120
+00:05:01,180 --> 00:05:03,180
+And all of a sudden you're
+building applications
+
+121
+00:05:03,180 --> 00:05:07,150
+that maybe they're going out
+to the users of your website.
+
+122
+00:05:07,150 --> 00:05:10,385
+Are the users of your website
+going to hit this sporadically?
+
+123
+00:05:10,385 --> 00:05:11,760
+Is it going to be
+all of a sudden
+
+124
+00:05:11,760 --> 00:05:13,717
+when you launch the
+product live, everybody's
+
+125
+00:05:13,717 --> 00:05:15,300
+going to spike on
+it for the first day
+
+126
+00:05:15,300 --> 00:05:17,008
+and then after that,
+it's going to taper?
+
+127
+00:05:17,008 --> 00:05:18,340
+What are the needs going to be?
+
+128
+00:05:18,340 --> 00:05:20,557
+Is it going to be
+cyclical, where maybe you--
+
+129
+00:05:20,557 --> 00:05:22,890
+maybe you're putting out some
+sort of really interesting
+
+130
+00:05:22,890 --> 00:05:23,773
+newsletter?
+
+131
+00:05:23,773 --> 00:05:25,440
+If you think about
+that, or your company
+
+132
+00:05:25,440 --> 00:05:27,600
+has some sort of monthly
+brief that they do,
+
+133
+00:05:27,600 --> 00:05:29,338
+and you know that
+every month, you
+
+134
+00:05:29,338 --> 00:05:31,380
+could have a swing where
+you all of a sudden need
+
+135
+00:05:31,380 --> 00:05:34,840
+a bunch of servers for that
+immediate burst of readership,
+
+136
+00:05:34,840 --> 00:05:37,810
+and then it just trickles
+for the rest of the month.
+
+137
+00:05:37,810 --> 00:05:39,550
+In that place, you
+can really leverage
+
+138
+00:05:39,550 --> 00:05:40,925
+against some of
+these tools where
+
+139
+00:05:40,925 --> 00:05:43,180
+I don't have to worry about
+auto-scaling-- or scaling
+
+140
+00:05:43,180 --> 00:05:44,090
+my servers.
+
+141
+00:05:44,090 --> 00:05:46,340
+I don't have to build
+up more capacity.
+
+142
+00:05:46,340 --> 00:05:50,360
+I don't have to have capacity
+for the theoretical peak usage.
+
+143
+00:05:50,360 --> 00:05:53,050
+I can just get it
+for when I need,
+
+144
+00:05:53,050 --> 00:05:57,070
+or when I basically fall
+in, or when I actually
+
+145
+00:05:57,070 --> 00:05:59,543
+have that monthly demand.
+
+146
+00:05:59,543 --> 00:06:01,960
+And so that's very much the
+thing you want to think about,
+
+147
+00:06:01,960 --> 00:06:04,180
+or where you may want
+to leverage cloud tools
+
+148
+00:06:04,180 --> 00:06:06,823
+is when you fall into
+that second bucket.
+
+149
+00:06:06,823 --> 00:06:08,740
+Now, the third question
+I have there, I think,
+
+150
+00:06:08,740 --> 00:06:09,615
+is a bit more subtle.
+
+151
+00:06:09,615 --> 00:06:11,865
+And you might have to take
+some time to think on this.
+
+152
+00:06:11,865 --> 00:06:14,530
+But this is the meaningful
+one, I think, for this lecture
+
+153
+00:06:14,530 --> 00:06:18,010
+at least, and potentially for,
+again, the way the internet
+
+154
+00:06:18,010 --> 00:06:19,005
+may go.
+
+155
+00:06:19,005 --> 00:06:21,610
+Are there situations, are
+there businesses, maybe,
+
+156
+00:06:21,610 --> 00:06:24,470
+entirely that don't fall
+into either these categories?
+
+157
+00:06:24,470 --> 00:06:26,720
+Don't need a simple application.
+
+158
+00:06:26,720 --> 00:06:28,870
+They have the resources
+and the talent
+
+159
+00:06:28,870 --> 00:06:32,180
+necessary to build and
+maintain applications,
+
+160
+00:06:32,180 --> 00:06:34,580
+so they don't really need
+the fully managed services.
+
+161
+00:06:34,580 --> 00:06:37,840
+And on the other
+end of the spectrum,
+
+162
+00:06:37,840 --> 00:06:41,300
+they don't really have really
+irregular peaks and usages.
+
+163
+00:06:41,300 --> 00:06:43,420
+It's pretty
+consistent user base.
+
+164
+00:06:43,420 --> 00:06:46,680
+So think about
+those for a second.
+
+165
+00:06:46,680 --> 00:06:50,460
+Now, I'll give you an example of
+that here with this one company.
+
+166
+00:06:50,460 --> 00:06:51,960
+And so there's a
+parent company here
+
+167
+00:06:51,960 --> 00:06:55,710
+that holds both the
+product HEY and Bandcamp--
+
+168
+00:06:55,710 --> 00:06:57,930
+or sorry, not
+Bandcamp, Basecamp.
+
+169
+00:06:57,930 --> 00:06:59,320
+I've got a little typo there.
+
+170
+00:06:59,320 --> 00:07:02,890
+But Basecamp is a project
+management platform.
+
+171
+00:07:02,890 --> 00:07:06,540
+So if you've used any
+project management platforms,
+
+172
+00:07:06,540 --> 00:07:10,320
+like Jira-type ones, Trello
+even, some of the features
+
+173
+00:07:10,320 --> 00:07:14,080
+are really Trello-esque in
+there, that's what Basecamp is.
+
+174
+00:07:14,080 --> 00:07:16,800
+It's a project
+management platform.
+
+175
+00:07:16,800 --> 00:07:18,690
+HEY is a different
+product entirely
+
+176
+00:07:18,690 --> 00:07:21,975
+that this company built.
+And it's an email service.
+
+177
+00:07:21,975 --> 00:07:23,350
+It's a pretty cool
+email service.
+
+178
+00:07:23,350 --> 00:07:24,558
+I haven't personally used it.
+
+179
+00:07:24,558 --> 00:07:26,700
+But they've got some
+new interesting features
+
+180
+00:07:26,700 --> 00:07:30,210
+that I think make an argument
+to potentially switch to it
+
+181
+00:07:30,210 --> 00:07:31,830
+or at least try it out.
+
+182
+00:07:31,830 --> 00:07:33,420
+They have a screening
+feature where
+
+183
+00:07:33,420 --> 00:07:36,220
+you get to choose which emails
+you will or won't receive.
+
+184
+00:07:36,220 --> 00:07:38,760
+So rather than having
+just an inbox where
+
+185
+00:07:38,760 --> 00:07:41,790
+you decide what you're going
+to delete, or maybe block,
+
+186
+00:07:41,790 --> 00:07:43,710
+or report, you
+instead get a kind
+
+187
+00:07:43,710 --> 00:07:46,340
+of pre-screening feature
+where you just say yes/no,
+
+188
+00:07:46,340 --> 00:07:52,780
+yes/no on all the, or on the new
+emails or new senders coming in.
+
+189
+00:07:52,780 --> 00:07:55,400
+Then they also have
+three separate inboxes.
+
+190
+00:07:55,400 --> 00:07:57,970
+So I use Gmail for
+my personal email.
+
+191
+00:07:57,970 --> 00:08:01,430
+And so I'm used to Inbox and
+maybe Primary and Social--
+
+192
+00:08:01,430 --> 00:08:05,960
+or sorry, Promotions and
+Social, which is maybe OK dump.
+
+193
+00:08:05,960 --> 00:08:09,160
+But for the most part, I only
+care about things in the inbox.
+
+194
+00:08:09,160 --> 00:08:11,338
+Promotions, I rarely look at.
+
+195
+00:08:11,338 --> 00:08:12,130
+Those are just ads.
+
+196
+00:08:12,130 --> 00:08:15,070
+And social, I don't also
+care about notifications
+
+197
+00:08:15,070 --> 00:08:16,280
+from social media websites.
+
+198
+00:08:16,280 --> 00:08:19,580
+So it's not really
+a meaningful Inbox.
+
+199
+00:08:19,580 --> 00:08:21,680
+But here they break it
+into three different ones.
+
+200
+00:08:21,680 --> 00:08:24,340
+So one is the Imbox,
+I-M, and that's
+
+201
+00:08:24,340 --> 00:08:27,880
+for immediate reads, things that
+they think are high-priority,
+
+202
+00:08:27,880 --> 00:08:29,690
+need to read these ASAP.
+
+203
+00:08:29,690 --> 00:08:32,450
+Then there's The Feed, which
+is your non-urgent emails.
+
+204
+00:08:32,450 --> 00:08:36,159
+And I think about this as,
+that would be these promotions
+
+205
+00:08:36,159 --> 00:08:38,020
+and social potentially
+lumped together,
+
+206
+00:08:38,020 --> 00:08:40,120
+newsletters, other things
+that aren't urgent,
+
+207
+00:08:40,120 --> 00:08:42,363
+but maybe you want
+to see or look at.
+
+208
+00:08:42,363 --> 00:08:43,780
+And then finally,
+The Paper Trail,
+
+209
+00:08:43,780 --> 00:08:45,430
+where it's infrequent access.
+
+210
+00:08:45,430 --> 00:08:48,267
+So receipts, confirmation,
+all that kind of stuff
+
+211
+00:08:48,267 --> 00:08:50,350
+would fall into the paper
+trail where I don't even
+
+212
+00:08:50,350 --> 00:08:52,057
+need to see that it
+came into the Inbox.
+
+213
+00:08:52,057 --> 00:08:53,890
+But I need to search
+it, or have the ability
+
+214
+00:08:53,890 --> 00:08:55,517
+to search it later on.
+
+215
+00:08:55,517 --> 00:08:57,100
+Either way, a bunch
+of other features,
+
+216
+00:08:57,100 --> 00:08:59,150
+Reply later, all kinds
+of other cool stuff.
+
+217
+00:08:59,150 --> 00:09:01,002
+But that's not the
+point of this lecture.
+
+218
+00:09:01,002 --> 00:09:03,460
+It's just to say that they have
+these two products Basecamp
+
+219
+00:09:03,460 --> 00:09:04,960
+and HEY.
+
+220
+00:09:04,960 --> 00:09:08,900
+And Basecamp especially, it
+is a product for businesses.
+
+221
+00:09:08,900 --> 00:09:11,270
+It's a product for
+project management.
+
+222
+00:09:11,270 --> 00:09:14,080
+So they have a very
+stable user base.
+
+223
+00:09:14,080 --> 00:09:15,470
+They're not getting wild swings.
+
+224
+00:09:15,470 --> 00:09:17,803
+These companies, when they
+get onto a project management
+
+225
+00:09:17,803 --> 00:09:20,650
+platform, they're not
+trying a bunch of them,
+
+226
+00:09:20,650 --> 00:09:22,672
+and dropping them, and
+adding them back on.
+
+227
+00:09:22,672 --> 00:09:24,130
+They usually lock
+onto one and keep
+
+228
+00:09:24,130 --> 00:09:27,340
+that for a pretty long stretch
+of time, at least a year-plus,
+
+229
+00:09:27,340 --> 00:09:29,050
+usually.
+
+230
+00:09:29,050 --> 00:09:31,880
+And also, they're not getting
+a bunch of new users on either.
+
+231
+00:09:31,880 --> 00:09:33,730
+There are so many
+competitors in this space
+
+232
+00:09:33,730 --> 00:09:35,720
+that they can have their niche.
+
+233
+00:09:35,720 --> 00:09:36,650
+They can grow.
+
+234
+00:09:36,650 --> 00:09:38,060
+But it's a very stable growth.
+
+235
+00:09:38,060 --> 00:09:40,390
+It's not going to be
+these huge spikes.
+
+236
+00:09:40,390 --> 00:09:42,160
+HEY, on the other
+hand, did actually
+
+237
+00:09:42,160 --> 00:09:47,860
+have a pretty strong growth
+in the first few months of it.
+
+238
+00:09:47,860 --> 00:09:49,630
+They got some good
+press that drove them.
+
+239
+00:09:49,630 --> 00:09:51,180
+I think I even remember
+seeing some of the early press
+
+240
+00:09:51,180 --> 00:09:51,880
+from them.
+
+241
+00:09:51,880 --> 00:09:54,422
+But that drove a lot more users
+than they expected initially.
+
+242
+00:09:54,422 --> 00:09:57,180
+And so they really were
+able to leverage AWS
+
+243
+00:09:57,180 --> 00:10:02,280
+specifically to grow fast, to
+adapt really fast to the growing
+
+244
+00:10:02,280 --> 00:10:03,592
+demands of their users.
+
+245
+00:10:03,592 --> 00:10:06,300
+But eventually, they stabilized,
+and they're kind of in that boat
+
+246
+00:10:06,300 --> 00:10:06,910
+now.
+
+247
+00:10:06,910 --> 00:10:09,280
+And this is what motivated
+them to write this article.
+
+248
+00:10:09,280 --> 00:10:11,280
+So the article that was
+linked on the last page
+
+249
+00:10:11,280 --> 00:10:13,500
+is from hey.com there.
+
+250
+00:10:13,500 --> 00:10:14,523
+And it was their CEO.
+
+251
+00:10:14,523 --> 00:10:16,440
+And he mentioned there
+that they were spending
+
+252
+00:10:16,440 --> 00:10:19,470
+over half a million dollars per
+year for database and search
+
+253
+00:10:19,470 --> 00:10:21,600
+through AWS.
+
+254
+00:10:21,600 --> 00:10:24,630
+And so that is really
+the question is,
+
+255
+00:10:24,630 --> 00:10:30,410
+if I'm spending already half a
+million dollars, is that worth
+
+256
+00:10:30,410 --> 00:10:31,302
+it?
+
+257
+00:10:31,302 --> 00:10:33,510
+Is half a million
+dollars per year--
+
+258
+00:10:33,510 --> 00:10:35,287
+and these are
+businesses that have
+
+259
+00:10:35,287 --> 00:10:36,870
+been around for a
+couple of years now.
+
+260
+00:10:36,870 --> 00:10:39,120
+So their spending on the
+order of millions of dollars,
+
+261
+00:10:39,120 --> 00:10:40,260
+is that worth it?
+
+262
+00:10:40,260 --> 00:10:42,500
+And so I pulled out these
+two quotes from the article
+
+263
+00:10:42,500 --> 00:10:44,570
+that I thought were
+pretty interesting.
+
+264
+00:10:44,570 --> 00:10:47,450
+So first he said, "We've seen
+all the cloud has to offer,
+
+265
+00:10:47,450 --> 00:10:48,510
+and tried most of it.
+
+266
+00:10:48,510 --> 00:10:51,740
+It's finally time to conclude
+renting computers is mostly
+
+267
+00:10:51,740 --> 00:10:54,230
+a bad deal for
+medium-sized companies,
+
+268
+00:10:54,230 --> 00:10:55,820
+like ours with stable growth.
+
+269
+00:10:55,820 --> 00:10:59,660
+The savings promised in reduced
+complexity never materialized."
+
+270
+00:10:59,660 --> 00:11:02,030
+Man, that is a word I
+struggle with, "materialized."
+
+271
+00:11:02,030 --> 00:11:04,190
+"So we're making
+our plans to leave."
+
+272
+00:11:04,190 --> 00:11:06,890
+And then the second quote
+is, "Now the argument always
+
+273
+00:11:06,890 --> 00:11:08,960
+goes, sure, but you have
+to manage these costs--
+
+274
+00:11:08,960 --> 00:11:09,920
+or these machines.
+
+275
+00:11:09,920 --> 00:11:11,415
+The cloud is so much simpler.
+
+276
+00:11:11,415 --> 00:11:13,290
+The savings will all be
+there in labor costs!
+
+277
+00:11:13,290 --> 00:11:14,137
+Except no.
+
+278
+00:11:14,137 --> 00:11:16,220
+Anyone who thinks running
+a major service like HEY
+
+279
+00:11:16,220 --> 00:11:19,870
+or Basecamp in the cloud is
+simple has clearly never tried.
+
+280
+00:11:19,870 --> 00:11:21,930
+Some things are simpler,
+others more complex.
+
+281
+00:11:21,930 --> 00:11:24,138
+But on the whole, I've yet
+to hear what organizations
+
+282
+00:11:24,138 --> 00:11:28,050
+at our scale being able
+to materially shrink
+
+283
+00:11:28,050 --> 00:11:30,270
+their operations team
+just because they moved
+
+284
+00:11:30,270 --> 00:11:31,620
+to the cloud."
+
+285
+00:11:31,620 --> 00:11:34,050
+And that's kind of-- again,
+this article was actually
+
+286
+00:11:34,050 --> 00:11:39,053
+the motivation for this lecture,
+is that this is a reality.
+
+287
+00:11:39,053 --> 00:11:42,810
+The new cycle is
+probably dominated
+
+288
+00:11:42,810 --> 00:11:46,410
+mostly by very large companies
+or companies, better statement,
+
+289
+00:11:46,410 --> 00:11:48,360
+that had meteoric growth.
+
+290
+00:11:48,360 --> 00:11:51,520
+For example, my time at Carvana,
+in the time span I was there--
+
+291
+00:11:51,520 --> 00:11:55,830
+I think I started in 2014, late
+2014, there was about 30 or 40
+
+292
+00:11:55,830 --> 00:11:56,560
+of us.
+
+293
+00:11:56,560 --> 00:12:01,170
+By the time I left in
+2017, there was over 1,500.
+
+294
+00:12:01,170 --> 00:12:04,070
+And at their peak,
+there was over 25,000.
+
+295
+00:12:04,070 --> 00:12:07,870
+So the growth there was
+exponential, to say the least.
+
+296
+00:12:07,870 --> 00:12:11,250
+And that was a situation
+where only have the choice
+
+297
+00:12:11,250 --> 00:12:13,230
+to leverage cloud resources.
+
+298
+00:12:13,230 --> 00:12:14,980
+And that was just
+talking employee growth.
+
+299
+00:12:14,980 --> 00:12:18,160
+But basically, employee growth
+was tracking with sales.
+
+300
+00:12:18,160 --> 00:12:20,950
+And so it was just
+managing all the users.
+
+301
+00:12:20,950 --> 00:12:23,640
+And traffic would
+have been completely
+
+302
+00:12:23,640 --> 00:12:26,520
+incomprehensible with
+buying new servers
+
+303
+00:12:26,520 --> 00:12:28,483
+because every month
+changed things.
+
+304
+00:12:28,483 --> 00:12:30,150
+And for that matter,
+the pandemic really
+
+305
+00:12:30,150 --> 00:12:33,060
+changed things for a company
+like that where all of a sudden
+
+306
+00:12:33,060 --> 00:12:34,860
+there was a huge rush
+of users that didn't
+
+307
+00:12:34,860 --> 00:12:36,280
+want to go into dealerships.
+
+308
+00:12:36,280 --> 00:12:38,940
+And so now, we need to scale--
+
+309
+00:12:38,940 --> 00:12:40,390
+or they need to
+scale accordingly
+
+310
+00:12:40,390 --> 00:12:43,057
+to handle all the new users that
+could potentially be coming on.
+
+311
+00:12:43,057 --> 00:12:46,570
+And so something like AWS is
+just invaluable in that case.
+
+312
+00:12:46,570 --> 00:12:49,310
+And so again, this is not to
+say those aren't good tools.
+
+313
+00:12:49,310 --> 00:12:53,893
+But there are a lot, if not
+arguably more companies,
+
+314
+00:12:53,893 --> 00:12:55,810
+that are falling more
+into this bucket of what
+
+315
+00:12:55,810 --> 00:12:59,230
+HEY and Basecamp are dealing
+with where they're having
+
+316
+00:12:59,230 --> 00:13:01,900
+success, they are generating
+revenue, they are paying
+
+317
+00:13:01,900 --> 00:13:05,060
+their employees, and
+enjoying some growth,
+
+318
+00:13:05,060 --> 00:13:06,110
+but for the most part.
+
+319
+00:13:06,110 --> 00:13:08,030
+They're not seeing
+this meteoric growth.
+
+320
+00:13:08,030 --> 00:13:10,970
+They're not seeing these
+constant swings in user bases.
+
+321
+00:13:10,970 --> 00:13:14,845
+And so for them, it's kind
+of expensive, half a million
+
+322
+00:13:14,845 --> 00:13:15,680
+dollars per year.
+
+323
+00:13:15,680 --> 00:13:17,720
+And that was the argument.
+
+324
+00:13:17,720 --> 00:13:20,167
+We've done a lot of different
+things in the cloud so far.
+
+325
+00:13:20,167 --> 00:13:22,250
+But we haven't even scraped
+the surface, honestly,
+
+326
+00:13:22,250 --> 00:13:23,720
+of all the things you can do.
+
+327
+00:13:23,720 --> 00:13:26,890
+And you already have seen how
+many technical difficulties
+
+328
+00:13:26,890 --> 00:13:29,670
+and unique things you have to
+learn and all the menus you
+
+329
+00:13:29,670 --> 00:13:30,860
+have to go through.
+
+330
+00:13:30,860 --> 00:13:32,270
+For that matter,
+by construction,
+
+331
+00:13:32,270 --> 00:13:34,060
+one of the motivations
+for this course
+
+332
+00:13:34,060 --> 00:13:37,450
+again, was the AWS
+cloud certification.
+
+333
+00:13:37,450 --> 00:13:40,060
+Well, by construction,
+having a certification
+
+334
+00:13:40,060 --> 00:13:42,010
+to say that you
+understand the cloud that
+
+335
+00:13:42,010 --> 00:13:45,460
+requires multiple classes and
+years of effort to learn to
+
+336
+00:13:45,460 --> 00:13:47,560
+implies that this is
+not a simple thing.
+
+337
+00:13:47,560 --> 00:13:49,150
+This doesn't mean
+that you necessarily
+
+338
+00:13:49,150 --> 00:13:52,238
+don't have to have
+employees to use the cloud.
+
+339
+00:13:52,238 --> 00:13:54,280
+For that matter-- again,
+I remember when we first
+
+340
+00:13:54,280 --> 00:13:58,000
+started bringing on AWS or using
+AWS, we hired on more people
+
+341
+00:13:58,000 --> 00:13:58,700
+to manage that.
+
+342
+00:13:58,700 --> 00:14:00,700
+It wasn't that all of a
+sudden we let people go.
+
+343
+00:14:00,700 --> 00:14:02,408
+We needed more people
+that knew what they
+
+344
+00:14:02,408 --> 00:14:04,640
+were doing with regard to AWS.
+
+345
+00:14:04,640 --> 00:14:06,430
+And so that's the reality of it.
+
+346
+00:14:06,430 --> 00:14:07,930
+It's not necessarily
+that it's going
+
+347
+00:14:07,930 --> 00:14:10,730
+to overall reduce
+the labor costs,
+
+348
+00:14:10,730 --> 00:14:12,200
+at least not in every case.
+
+349
+00:14:12,200 --> 00:14:14,815
+And that was their argument,
+is that for half a million
+
+350
+00:14:14,815 --> 00:14:18,220
+dollars per year, we can invest
+up front in servers and server
+
+351
+00:14:18,220 --> 00:14:20,270
+capacity that we need.
+
+352
+00:14:20,270 --> 00:14:22,450
+And then we can
+also pay employees.
+
+353
+00:14:22,450 --> 00:14:25,780
+We can hire on a person or
+two to manage these resources,
+
+354
+00:14:25,780 --> 00:14:29,710
+to allocate and provision
+resources to users.
+
+355
+00:14:29,710 --> 00:14:31,150
+We'll talk plenty
+about the tools
+
+356
+00:14:31,150 --> 00:14:33,080
+that are available to do this.
+
+357
+00:14:33,080 --> 00:14:35,470
+But there's tons of
+software out there
+
+358
+00:14:35,470 --> 00:14:37,880
+to handle all these
+tasks that we need to do.
+
+359
+00:14:37,880 --> 00:14:39,910
+And so maybe we
+don't necessarily
+
+360
+00:14:39,910 --> 00:14:45,083
+need one of these big cloud
+providers to support us.
+
+361
+00:14:45,083 --> 00:14:47,500
+And so on that note, let's
+talk about some of these tools,
+
+362
+00:14:47,500 --> 00:14:51,670
+some of the alternatives
+to using the cloud.
+
+363
+00:14:51,670 --> 00:14:53,680
+And I think the first
+and most important
+
+364
+00:14:53,680 --> 00:14:58,120
+thing to consider is that
+the vast majority of work
+
+365
+00:14:58,120 --> 00:15:01,030
+we did, and also in general
+that most people use AWS for,
+
+366
+00:15:01,030 --> 00:15:05,170
+is EC2 and S3, spinning
+up EC2 instances
+
+367
+00:15:05,170 --> 00:15:07,450
+and storing things in the cloud.
+
+368
+00:15:07,450 --> 00:15:09,760
+And so EC2 really
+gives us the benefit
+
+369
+00:15:09,760 --> 00:15:13,240
+of being able to quickly scale
+up the number of instances,
+
+370
+00:15:13,240 --> 00:15:15,370
+or the size of
+instances quickly.
+
+371
+00:15:15,370 --> 00:15:18,050
+And so the questions we need to
+think to ourselves are, well,
+
+372
+00:15:18,050 --> 00:15:20,560
+how quickly do we need
+to our capacity increase?
+
+373
+00:15:20,560 --> 00:15:24,370
+And how large is the largest
+instance you'll need?
+
+374
+00:15:24,370 --> 00:15:28,120
+If you can answer
+those two questions
+
+375
+00:15:28,120 --> 00:15:30,430
+and the answer to
+the first one maybe
+
+376
+00:15:30,430 --> 00:15:33,980
+isn't that, I need to always
+have-- or better statement,
+
+377
+00:15:33,980 --> 00:15:36,640
+the answer to both questions
+isn't that I don't really know,
+
+378
+00:15:36,640 --> 00:15:40,210
+and that I have a
+wide range of needs.
+
+379
+00:15:40,210 --> 00:15:42,140
+If that's not your
+answer to that question,
+
+380
+00:15:42,140 --> 00:15:45,215
+then by all means,
+EC2 instances are just
+
+381
+00:15:45,215 --> 00:15:46,840
+a matter of having
+a bunch of computers
+
+382
+00:15:46,840 --> 00:15:49,570
+sitting there that
+your users can access.
+
+383
+00:15:49,570 --> 00:15:55,300
+So imagine you're a company, and
+you have a bunch of employees,
+
+384
+00:15:55,300 --> 00:15:58,510
+and maybe you work on some
+sensitive access tools.
+
+385
+00:15:58,510 --> 00:16:02,140
+And so you don't want
+to have your employees
+
+386
+00:16:02,140 --> 00:16:04,330
+have this software
+on their laptops.
+
+387
+00:16:04,330 --> 00:16:07,033
+Well, they still need to
+be able to have laptops.
+
+388
+00:16:07,033 --> 00:16:08,950
+They need to be able to
+move around the office
+
+389
+00:16:08,950 --> 00:16:11,440
+and maybe even work
+remotely sometimes.
+
+390
+00:16:11,440 --> 00:16:16,040
+And so one option is to
+have physical computers,
+
+391
+00:16:16,040 --> 00:16:18,400
+large physical computers,
+that are our servers really,
+
+392
+00:16:18,400 --> 00:16:20,830
+that are located in some
+server room at your office,
+
+393
+00:16:20,830 --> 00:16:24,880
+or at a remote location, or even
+have in different locations.
+
+394
+00:16:24,880 --> 00:16:27,470
+You could have provide
+each of your employees
+
+395
+00:16:27,470 --> 00:16:29,240
+with laptops that
+have a VPN that allow
+
+396
+00:16:29,240 --> 00:16:31,650
+them to VPN into your network.
+
+397
+00:16:31,650 --> 00:16:34,478
+And then they can use a
+tool like Remote Desktop,
+
+398
+00:16:34,478 --> 00:16:36,020
+a Windows-based
+tool-- and we'll talk
+
+399
+00:16:36,020 --> 00:16:37,230
+about what remote desktop is.
+
+400
+00:16:37,230 --> 00:16:39,800
+But it basically just allows
+them to remotely connect
+
+401
+00:16:39,800 --> 00:16:41,780
+to this computer.
+
+402
+00:16:41,780 --> 00:16:44,330
+Or alternatively, maybe
+they have varying needs
+
+403
+00:16:44,330 --> 00:16:45,290
+and resources.
+
+404
+00:16:45,290 --> 00:16:47,798
+And you want to be able to
+allow them to share resources
+
+405
+00:16:47,798 --> 00:16:48,590
+amongst each other.
+
+406
+00:16:48,590 --> 00:16:51,540
+You don't want to just allocate
+a whole computer to one person,
+
+407
+00:16:51,540 --> 00:16:54,020
+but you want to say like,
+hey, sometimes person
+
+408
+00:16:54,020 --> 00:16:56,090
+A needs this much, and
+person B needs this much.
+
+409
+00:16:56,090 --> 00:17:00,740
+And then they switch or swap.
+
+410
+00:17:00,740 --> 00:17:03,800
+And so in that
+case, then, well, I
+
+411
+00:17:03,800 --> 00:17:07,069
+can look at, using
+virtual machines.
+
+412
+00:17:07,069 --> 00:17:09,617
+And that's effectively
+what EC2 instances are.
+
+413
+00:17:09,617 --> 00:17:11,450
+There is a computer
+that's sitting out there
+
+414
+00:17:11,450 --> 00:17:13,079
+or a server that's
+sitting out there.
+
+415
+00:17:13,079 --> 00:17:15,200
+Any hypervisor, it's
+a software layer
+
+416
+00:17:15,200 --> 00:17:18,329
+that sits on top of the
+computer, on top of the server.
+
+417
+00:17:18,329 --> 00:17:20,599
+And that hypervisor allows
+you to allocate and manage
+
+418
+00:17:20,599 --> 00:17:23,730
+the resources for each user.
+
+419
+00:17:23,730 --> 00:17:26,550
+And we'll talk a little
+bit about that as well.
+
+420
+00:17:26,550 --> 00:17:29,580
+But first on the remote
+desktop protocol side,
+
+421
+00:17:29,580 --> 00:17:32,730
+if you haven't used this
+before, this is a Microsoft--
+
+422
+00:17:32,730 --> 00:17:34,480
+It's, a proprietary
+Microsoft tool.
+
+423
+00:17:34,480 --> 00:17:37,150
+But there's plenty of
+equivalence out there.
+
+424
+00:17:37,150 --> 00:17:39,810
+But the simplest-- the nice
+thing about it is a really
+
+425
+00:17:39,810 --> 00:17:43,441
+simple framework where all I
+have to do is pass in the--
+
+426
+00:17:46,596 --> 00:17:49,160
+oh, gosh, word slip
+in my head-- the URL
+
+427
+00:17:49,160 --> 00:17:52,980
+or the IP address of the
+computer of interest here
+
+428
+00:17:52,980 --> 00:17:58,350
+and then also any sort of
+relevant login information.
+
+429
+00:17:58,350 --> 00:18:00,720
+So if I have specific
+login information here,
+
+430
+00:18:00,720 --> 00:18:03,710
+I can pass that into the
+username or password.
+
+431
+00:18:03,710 --> 00:18:06,608
+But either way, once I do
+that and click Connect,
+
+432
+00:18:06,608 --> 00:18:08,150
+what I'm actually
+doing is physically
+
+433
+00:18:08,150 --> 00:18:10,310
+connecting to this
+remote server.
+
+434
+00:18:10,310 --> 00:18:11,935
+And this is a bit
+different than what
+
+435
+00:18:11,935 --> 00:18:13,310
+we've been doing
+where we've just
+
+436
+00:18:13,310 --> 00:18:15,630
+been SSHing into remote server.
+
+437
+00:18:15,630 --> 00:18:18,835
+Here, you're physically given
+mouse and keyboard access.
+
+438
+00:18:18,835 --> 00:18:20,210
+So you will open
+up a window that
+
+439
+00:18:20,210 --> 00:18:22,260
+just looks like you're
+on a Windows desktop,
+
+440
+00:18:22,260 --> 00:18:24,450
+but you're on this
+computers windows desktop,
+
+441
+00:18:24,450 --> 00:18:26,870
+even though you're accessing
+it from this computer.
+
+442
+00:18:26,870 --> 00:18:32,180
+And so this allows you, again,
+to easily connect two machines
+
+443
+00:18:32,180 --> 00:18:35,180
+and allow your users to
+work from wherever they need
+
+444
+00:18:35,180 --> 00:18:37,370
+to assuming they have
+a secure connection
+
+445
+00:18:37,370 --> 00:18:40,370
+and connect to remote computers.
+
+446
+00:18:40,370 --> 00:18:41,940
+Constrains all
+business processes.
+
+447
+00:18:41,940 --> 00:18:43,290
+You can run them on-premise.
+
+448
+00:18:43,290 --> 00:18:44,720
+These servers can be on-premise.
+
+449
+00:18:44,720 --> 00:18:46,860
+You don't have to
+worry about that.
+
+450
+00:18:46,860 --> 00:18:49,525
+You can give your users access
+to really large computers.
+
+451
+00:18:49,525 --> 00:18:50,900
+And this is how
+I've used them is
+
+452
+00:18:50,900 --> 00:18:53,870
+that I've had-- maybe
+our team would have
+
+453
+00:18:53,870 --> 00:18:57,200
+a specific remote computer that
+ran everything and also has
+
+454
+00:18:57,200 --> 00:18:59,040
+the benefit of staying
+online all the time.
+
+455
+00:18:59,040 --> 00:19:01,665
+So if there's any sort of stored
+procedures or stuff like that,
+
+456
+00:19:01,665 --> 00:19:06,170
+I can run them on here because
+it's going to stay live.
+
+457
+00:19:06,170 --> 00:19:08,210
+This is also another way,
+and this is something
+
+458
+00:19:08,210 --> 00:19:10,427
+that I've done to some extent.
+
+459
+00:19:10,427 --> 00:19:12,260
+And if we had more time
+this semester, maybe
+
+460
+00:19:12,260 --> 00:19:13,218
+we would get into this.
+
+461
+00:19:13,218 --> 00:19:16,190
+But if you're saying,
+hey, I'm going
+
+462
+00:19:16,190 --> 00:19:19,430
+into this world of data
+science or software development
+
+463
+00:19:19,430 --> 00:19:21,440
+and I really need a
+large computer because I
+
+464
+00:19:21,440 --> 00:19:24,560
+have varying needs as far as
+RAM goes, or better statement,
+
+465
+00:19:24,560 --> 00:19:27,720
+I need a lot of RAM, I need
+a lot of compute power,
+
+466
+00:19:27,720 --> 00:19:30,860
+maybe I need a GPU to do
+my deep learning research--
+
+467
+00:19:30,860 --> 00:19:34,220
+Well, rather than having
+to buy a laptop that
+
+468
+00:19:34,220 --> 00:19:37,760
+has all of the hardware
+necessary in it to handle
+
+469
+00:19:37,760 --> 00:19:39,530
+your workload, which
+is almost never
+
+470
+00:19:39,530 --> 00:19:41,100
+going to be a good laptop--
+
+471
+00:19:41,100 --> 00:19:42,600
+There are definitely
+benefits to it,
+
+472
+00:19:42,600 --> 00:19:43,892
+but there's always a trade-off.
+
+473
+00:19:43,892 --> 00:19:47,910
+So if I buy a big, beefy
+programming computer,
+
+474
+00:19:47,910 --> 00:19:49,380
+it'll be great at that.
+
+475
+00:19:49,380 --> 00:19:52,340
+But it's going to be heavy, and
+it's going to get really hot,
+
+476
+00:19:52,340 --> 00:19:53,850
+and it's going to be expensive.
+
+477
+00:19:53,850 --> 00:19:56,000
+And it also arguably
+is just not going
+
+478
+00:19:56,000 --> 00:19:59,100
+to be as good or as efficient
+as a large computer.
+
+479
+00:19:59,100 --> 00:20:02,070
+The cost is going to be so much
+higher for the performance.
+
+480
+00:20:02,070 --> 00:20:06,390
+So instead, I can buy a
+cheaper, big desktop tower.
+
+481
+00:20:06,390 --> 00:20:08,400
+That's why this shows
+as a tower here.
+
+482
+00:20:08,400 --> 00:20:11,030
+I can buy a big one of these,
+have this sitting at my house.
+
+483
+00:20:11,030 --> 00:20:13,910
+And then I could just remotely
+connect to my own computer
+
+484
+00:20:13,910 --> 00:20:14,580
+at my house.
+
+485
+00:20:14,580 --> 00:20:17,210
+I could open up a Remote
+Desktop connection such
+
+486
+00:20:17,210 --> 00:20:21,050
+that I can access my
+own computer at home.
+
+487
+00:20:21,050 --> 00:20:22,880
+And so this is a really
+cool thing now is,
+
+488
+00:20:22,880 --> 00:20:25,020
+you could keep this the same.
+
+489
+00:20:25,020 --> 00:20:27,440
+You could upgrade it every
+year as you need new parts,
+
+490
+00:20:27,440 --> 00:20:29,430
+and whatnot, or
+need more capacity.
+
+491
+00:20:29,430 --> 00:20:31,530
+But your laptop itself
+doesn't really matter.
+
+492
+00:20:31,530 --> 00:20:34,160
+This is just going
+to be whatever you
+
+493
+00:20:34,160 --> 00:20:35,860
+need to use on a daily basis.
+
+494
+00:20:35,860 --> 00:20:38,270
+Sorry, my dog just walked in.
+
+495
+00:20:38,270 --> 00:20:41,030
+And so that's kind of the
+idea behind the Remote Desktop
+
+496
+00:20:41,030 --> 00:20:43,610
+protocol.
+
+497
+00:20:43,610 --> 00:20:46,280
+And so then going on
+to the hypervisor,
+
+498
+00:20:46,280 --> 00:20:48,390
+so the hypervisor is--
+
+499
+00:20:48,390 --> 00:20:52,170
+again, like I said, this is a
+much more how Amazon does it
+
+500
+00:20:52,170 --> 00:20:53,980
+with their EC2 instances.
+
+501
+00:20:53,980 --> 00:20:57,670
+So these EC2 instances
+sit on some hardware.
+
+502
+00:20:57,670 --> 00:20:59,520
+The hardware is
+the server itself.
+
+503
+00:20:59,520 --> 00:21:02,310
+And then the hypervisor
+allocates the resources
+
+504
+00:21:02,310 --> 00:21:04,030
+to the individual users.
+
+505
+00:21:04,030 --> 00:21:07,000
+And really, the hypervisor is
+providing an operating system,
+
+506
+00:21:07,000 --> 00:21:09,752
+a full-on operating
+system, to that user,
+
+507
+00:21:09,752 --> 00:21:11,460
+such that, again, they
+could SSH into it,
+
+508
+00:21:11,460 --> 00:21:14,770
+or you could even have them do a
+Remote Desktop connection to it.
+
+509
+00:21:14,770 --> 00:21:16,600
+But it's being managed by this.
+
+510
+00:21:16,600 --> 00:21:19,800
+So you're basically giving
+them virtual hardware access.
+
+511
+00:21:19,800 --> 00:21:22,500
+And so there's two types of
+these, not really important
+
+512
+00:21:22,500 --> 00:21:23,675
+for this class.
+
+513
+00:21:23,675 --> 00:21:25,050
+But just so you
+know that you can
+
+514
+00:21:25,050 --> 00:21:29,220
+have type 1 hypervisors
+that operate directly
+
+515
+00:21:29,220 --> 00:21:30,670
+on the hardware level.
+
+516
+00:21:30,670 --> 00:21:33,090
+So they sit just
+above the hardware
+
+517
+00:21:33,090 --> 00:21:35,800
+before the operating
+system is even in place.
+
+518
+00:21:35,800 --> 00:21:38,880
+They are allocating the
+operating system to the users.
+
+519
+00:21:38,880 --> 00:21:41,370
+And that usually has
+speed, latency benefits,
+
+520
+00:21:41,370 --> 00:21:45,420
+and all that good
+stuff, and also
+
+521
+00:21:45,420 --> 00:21:46,780
+just is a lighter weight, too.
+
+522
+00:21:46,780 --> 00:21:48,550
+I don't have to have
+as much software.
+
+523
+00:21:48,550 --> 00:21:51,613
+I'm not limited on what
+hypervisor can use,
+
+524
+00:21:51,613 --> 00:21:54,030
+or better statement, I'm not
+limited on what the operating
+
+525
+00:21:54,030 --> 00:21:56,363
+system has available to it,
+since I'm operating directly
+
+526
+00:21:56,363 --> 00:21:57,150
+on the hardware.
+
+527
+00:21:57,150 --> 00:21:59,800
+Type 2 is sitting on
+an operating system.
+
+528
+00:21:59,800 --> 00:22:01,300
+So there exists an
+operating system.
+
+529
+00:22:01,300 --> 00:22:03,160
+So this is like me running
+Windows on my computer,
+
+530
+00:22:03,160 --> 00:22:05,370
+then having a hypervisor
+that's running on my Windows
+
+531
+00:22:05,370 --> 00:22:09,135
+machine, that then is allocating
+operating systems to the user.
+
+532
+00:22:09,135 --> 00:22:11,010
+And these operating
+systems don't necessarily
+
+533
+00:22:11,010 --> 00:22:13,740
+have to be the same as
+this base operating system.
+
+534
+00:22:13,740 --> 00:22:16,740
+It just depends on whatever your
+architecture and the hypervisor
+
+535
+00:22:16,740 --> 00:22:17,650
+supports.
+
+536
+00:22:17,650 --> 00:22:20,503
+But this now is an,
+or better statement,
+
+537
+00:22:20,503 --> 00:22:21,670
+this is just an alternative.
+
+538
+00:22:21,670 --> 00:22:24,520
+And there are just more
+type 2 than type 1.
+
+539
+00:22:24,520 --> 00:22:29,280
+But there is even a type I
+open source hypervisor called
+
+540
+00:22:29,280 --> 00:22:30,010
+Xen Project.
+
+541
+00:22:30,010 --> 00:22:31,750
+It's part of the
+Linux Foundation.
+
+542
+00:22:31,750 --> 00:22:34,300
+And so again, you
+could download--
+
+543
+00:22:34,300 --> 00:22:36,540
+you could have your
+own server at home.
+
+544
+00:22:36,540 --> 00:22:38,230
+You could download
+this hypervisor,
+
+545
+00:22:38,230 --> 00:22:40,170
+run this hypervisor
+on that server
+
+546
+00:22:40,170 --> 00:22:42,790
+and allocate your resources
+to all the users in your home.
+
+547
+00:22:42,790 --> 00:22:46,420
+So maybe your family has
+varying compute needs.
+
+548
+00:22:46,420 --> 00:22:48,640
+And so you could
+build a home server
+
+549
+00:22:48,640 --> 00:22:50,680
+that allocates
+resources as necessary
+
+550
+00:22:50,680 --> 00:22:54,460
+or as requested by your
+family to use on the--
+
+551
+00:22:54,460 --> 00:22:56,330
+or to use those
+different computers.
+
+552
+00:22:59,180 --> 00:23:01,080
+And that brings me
+to the next one.
+
+553
+00:23:01,080 --> 00:23:02,165
+So these are more--
+
+554
+00:23:02,165 --> 00:23:04,040
+this is just a little
+bit more of a fun idea.
+
+555
+00:23:04,040 --> 00:23:06,990
+It's a little bit different from
+what we've been talking about.
+
+556
+00:23:06,990 --> 00:23:10,890
+But this idea of home-labbing
+is growing pretty significantly.
+
+557
+00:23:10,890 --> 00:23:13,560
+And the exact idea
+behind this is just, hey,
+
+558
+00:23:13,560 --> 00:23:19,390
+what if I built my own cloud
+computing platform at home?
+
+559
+00:23:19,390 --> 00:23:21,890
+What if I had my
+own cloud at home?
+
+560
+00:23:21,890 --> 00:23:25,890
+And all these images are pulled
+from the r/HomeLab subreddit.
+
+561
+00:23:25,890 --> 00:23:29,120
+So you can check that out if
+you're interested in this topic
+
+562
+00:23:29,120 --> 00:23:29,880
+at all.
+
+563
+00:23:29,880 --> 00:23:33,890
+And it does require, again,
+a lot of hardware experience,
+
+564
+00:23:33,890 --> 00:23:35,940
+and costs can get
+really expensive.
+
+565
+00:23:35,940 --> 00:23:37,530
+But they can also stay low, too.
+
+566
+00:23:37,530 --> 00:23:39,470
+Right here, this on the
+bottom right hand side
+
+567
+00:23:39,470 --> 00:23:44,160
+is a set of four Raspberry Pis
+running as a Kubernetes cluster.
+
+568
+00:23:44,160 --> 00:23:45,680
+So serving-- you can basically--
+
+569
+00:23:45,680 --> 00:23:49,380
+Kubernetes is a container
+orchestration service.
+
+570
+00:23:49,380 --> 00:23:52,730
+And so I could have
+my Docker containers,
+
+571
+00:23:52,730 --> 00:23:54,800
+a bunch of Docker
+applications that
+
+572
+00:23:54,800 --> 00:23:58,590
+could run directly off
+of this cluster here.
+
+573
+00:23:58,590 --> 00:24:00,522
+It just has cooling
+pipes coming into it.
+
+574
+00:24:00,522 --> 00:24:01,980
+So it's a pretty
+cool little setup.
+
+575
+00:24:01,980 --> 00:24:04,272
+It wouldn't cost you too
+much, assuming you could get--
+
+576
+00:24:04,272 --> 00:24:06,600
+Raspberry Pis are a little
+hard to find these days.
+
+577
+00:24:06,600 --> 00:24:09,183
+But assuming you get those, you
+could do this for really cheap
+
+578
+00:24:09,183 --> 00:24:11,740
+and have technically your
+own little server at home.
+
+579
+00:24:11,740 --> 00:24:15,750
+This is a cloud computing
+cluster connected
+
+580
+00:24:15,750 --> 00:24:16,900
+to your internet network.
+
+581
+00:24:16,900 --> 00:24:19,540
+It has high-speed connections
+running between any of these.
+
+582
+00:24:19,540 --> 00:24:21,707
+So they're all going to be
+able to share information
+
+583
+00:24:21,707 --> 00:24:22,530
+very quickly.
+
+584
+00:24:22,530 --> 00:24:24,810
+And so you can have
+a full-on server
+
+585
+00:24:24,810 --> 00:24:27,390
+just from this little thing,
+or you could get really intense
+
+586
+00:24:27,390 --> 00:24:29,500
+and have a big server rack here.
+
+587
+00:24:29,500 --> 00:24:32,220
+And this is a diagram of
+some of these smart home
+
+588
+00:24:32,220 --> 00:24:33,730
+setup that's all based on this.
+
+589
+00:24:33,730 --> 00:24:35,460
+And that's one of
+the common use cases
+
+590
+00:24:35,460 --> 00:24:38,850
+for home lab setups is
+just smart home management.
+
+591
+00:24:38,850 --> 00:24:40,690
+But you can use it as
+a home media server.
+
+592
+00:24:40,690 --> 00:24:43,270
+So if you have a bunch of
+movies, and photos, and stuff,
+
+593
+00:24:43,270 --> 00:24:48,040
+well, rather than me paying
+for S3 cloud storage,
+
+594
+00:24:48,040 --> 00:24:50,917
+I could just buy the
+physical storage space here,
+
+595
+00:24:50,917 --> 00:24:53,500
+manage it myself, and I could
+have all my Google Photos there.
+
+596
+00:24:53,500 --> 00:24:54,880
+I can have an
+internet connected.
+
+597
+00:24:54,880 --> 00:24:56,547
+And so rather than
+having Google Photos,
+
+598
+00:24:56,547 --> 00:24:59,770
+I just have my photos folders
+which are internet connected.
+
+599
+00:24:59,770 --> 00:25:02,680
+I can access them from my phone,
+my laptop, whatever I want.
+
+600
+00:25:02,680 --> 00:25:05,280
+And yeah, it'll require
+a lot of effort on my end
+
+601
+00:25:05,280 --> 00:25:07,060
+and probably cost on my end.
+
+602
+00:25:07,060 --> 00:25:09,010
+But it's also non-trivial.
+
+603
+00:25:09,010 --> 00:25:12,130
+It's not cheap to have
+cloud resources either.
+
+604
+00:25:12,130 --> 00:25:14,970
+And so it's, just again, depends
+on what your interests are.
+
+605
+00:25:14,970 --> 00:25:17,220
+It's not to say that everybody
+or anybody really needs
+
+606
+00:25:17,220 --> 00:25:19,252
+to build a full home lab setup.
+
+607
+00:25:19,252 --> 00:25:21,460
+But if you are interested
+in the hardware side of it,
+
+608
+00:25:21,460 --> 00:25:22,930
+it's kind of a fun way to do it.
+
+609
+00:25:22,930 --> 00:25:24,787
+It's a really great
+resume booster.
+
+610
+00:25:24,787 --> 00:25:27,120
+You can talk about what you've
+actually done, how you've
+
+611
+00:25:27,120 --> 00:25:28,500
+actually built server racks.
+
+612
+00:25:28,500 --> 00:25:30,640
+I think that'll impress
+some companies, for sure.
+
+613
+00:25:30,640 --> 00:25:34,920
+So that's out there as far as--
+and I also provided a few links
+
+614
+00:25:34,920 --> 00:25:37,650
+as far as other things you
+can do with them and some more
+
+615
+00:25:37,650 --> 00:25:38,350
+resources.
+
+616
+00:25:38,350 --> 00:25:40,570
+But the moral of
+the story is, again,
+
+617
+00:25:40,570 --> 00:25:46,560
+that the tools to do what we
+do in the cloud, the aspects
+
+618
+00:25:46,560 --> 00:25:49,180
+of those tools, we can
+do those ourselves.
+
+619
+00:25:49,180 --> 00:25:50,890
+There exist open
+source alternatives.
+
+620
+00:25:50,890 --> 00:25:52,682
+And for that matter,
+as you continue
+
+621
+00:25:52,682 --> 00:25:55,140
+to build your education, you
+can start to build these tools
+
+622
+00:25:55,140 --> 00:25:57,390
+and really, again,
+build a different type
+
+623
+00:25:57,390 --> 00:25:59,047
+of internet for yourself.
+
+624
+00:25:59,047 --> 00:26:01,380
+It's not to say there's
+anything wrong with the internet
+
+625
+00:26:01,380 --> 00:26:05,490
+today, right or wrong, but it's
+just that I want you always
+
+626
+00:26:05,490 --> 00:26:07,680
+to remain open to the
+different opportunities that
+
+627
+00:26:07,680 --> 00:26:09,360
+may exist out there.
+
+628
+00:26:09,360 --> 00:26:12,720
+It's always hard to
+say on the outset what
+
+629
+00:26:12,720 --> 00:26:15,430
+the next iteration of the
+internet is going to look like.
+
+630
+00:26:15,430 --> 00:26:19,860
+But it's important to stay open
+to new ideas and new potentials
+
+631
+00:26:19,860 --> 00:26:21,270
+for the future.
+
+632
+00:26:21,270 --> 00:26:24,250
+And so that kind of brings
+us then to this big picture.
+
+633
+00:26:24,250 --> 00:26:28,180
+So one more quote from that
+article that I mentioned before.
+
+634
+00:26:28,180 --> 00:26:30,438
+But they said, "But this
+isn't just about cost.
+
+635
+00:26:30,438 --> 00:26:31,980
+It's also about what
+kind of internet
+
+636
+00:26:31,980 --> 00:26:33,370
+we want to operate
+in the future.
+
+637
+00:26:33,370 --> 00:26:34,620
+It strikes me as
+downright tragic
+
+638
+00:26:34,620 --> 00:26:36,210
+that this decentralized
+wonder of the world
+
+639
+00:26:36,210 --> 00:26:38,002
+is now largely operating
+on computers owned
+
+640
+00:26:38,002 --> 00:26:39,820
+by a handful of corporations.
+
+641
+00:26:39,820 --> 00:26:42,160
+If one of the primary
+AWS regions goes down,
+
+642
+00:26:42,160 --> 00:26:44,370
+seemingly half the internet
+is offline with it.
+
+643
+00:26:44,370 --> 00:26:46,230
+This is not what
+DARPA designed."
+
+644
+00:26:46,230 --> 00:26:48,360
+And they're not
+wrong, to some extent.
+
+645
+00:26:48,360 --> 00:26:51,780
+We've all experienced
+this whenever
+
+646
+00:26:51,780 --> 00:26:55,650
+all of a sudden, Netflix doesn't
+work. amazon.com doesn't work.
+
+647
+00:26:55,650 --> 00:26:57,870
+Twitter, Facebook,
+all these sites
+
+648
+00:26:57,870 --> 00:27:00,160
+go down that we access daily.
+
+649
+00:27:00,160 --> 00:27:03,060
+And it feels like, what happened
+that half of the internet
+
+650
+00:27:03,060 --> 00:27:04,080
+just shut off then?
+
+651
+00:27:04,080 --> 00:27:06,048
+To some extent, it's
+because we have heavily
+
+652
+00:27:06,048 --> 00:27:07,090
+centralized our internet.
+
+653
+00:27:07,090 --> 00:27:09,660
+I think the last time I looked
+something like 30-something
+
+654
+00:27:09,660 --> 00:27:12,960
+percent of internet traffic
+is running through AWS.
+
+655
+00:27:12,960 --> 00:27:14,760
+And the rest of
+it being allocated
+
+656
+00:27:14,760 --> 00:27:17,490
+to the other major cloud
+providers for the most part.
+
+657
+00:27:17,490 --> 00:27:20,430
+And so this is the
+big consideration
+
+658
+00:27:20,430 --> 00:27:23,580
+is, what does that mean for
+us, both from a standpoint
+
+659
+00:27:23,580 --> 00:27:28,620
+of a usability, but
+also then opportunity?
+
+660
+00:27:28,620 --> 00:27:31,680
+What does the
+centralized internet
+
+661
+00:27:31,680 --> 00:27:34,650
+allow that a potential
+decentralized internet doesn't
+
+662
+00:27:34,650 --> 00:27:35,790
+allow?
+
+663
+00:27:35,790 --> 00:27:37,870
+So yeah, I want you
+to think about this.
+
+664
+00:27:37,870 --> 00:27:40,135
+And these three
+questions, I really
+
+665
+00:27:40,135 --> 00:27:41,260
+don't have answers to them.
+
+666
+00:27:41,260 --> 00:27:42,885
+So I'm not going to
+be able to give you
+
+667
+00:27:42,885 --> 00:27:45,550
+the nice, clean-cut
+lecture answer to these.
+
+668
+00:27:45,550 --> 00:27:48,180
+But what are the downsides
+of centralizing internet
+
+669
+00:27:48,180 --> 00:27:49,600
+to a few large players?
+
+670
+00:27:49,600 --> 00:27:52,320
+What are some of the blockers to
+actually decentralizing, then,
+
+671
+00:27:52,320 --> 00:27:54,130
+if we prefer to go
+the other direction,
+
+672
+00:27:54,130 --> 00:27:55,870
+and they are easier to overcome?
+
+673
+00:27:55,870 --> 00:27:59,830
+And I think those two questions
+are the fundamental question
+
+674
+00:27:59,830 --> 00:28:02,020
+to at least how the
+infrastructure of the internet
+
+675
+00:28:02,020 --> 00:28:03,482
+will look in the near future.
+
+676
+00:28:03,482 --> 00:28:05,440
+Because these are the
+two major decisions that,
+
+677
+00:28:05,440 --> 00:28:08,770
+or the two major things we've
+been playing with in industry
+
+678
+00:28:08,770 --> 00:28:12,170
+is centralizing heavily
+to a few major players,
+
+679
+00:28:12,170 --> 00:28:17,110
+streamlines things, make sure
+or ensures interoperability,
+
+680
+00:28:17,110 --> 00:28:22,420
+but comes at the cost of are at
+the will of the large players.
+
+681
+00:28:22,420 --> 00:28:26,000
+And also, does it
+reduce the opportunity?
+
+682
+00:28:26,000 --> 00:28:29,140
+Does it reduce the
+ingenuity, the inventiveness
+
+683
+00:28:29,140 --> 00:28:31,420
+of all the technologies
+we have out there?
+
+684
+00:28:31,420 --> 00:28:34,790
+Does it constrain us to
+only build what Amazon has,
+
+685
+00:28:34,790 --> 00:28:36,580
+allowing us to build.
+
+686
+00:28:36,580 --> 00:28:39,250
+All these kind of things, I
+think, just really open up
+
+687
+00:28:39,250 --> 00:28:40,670
+more opportunities.
+
+688
+00:28:40,670 --> 00:28:43,270
+And that's where I
+think the major benefit
+
+689
+00:28:43,270 --> 00:28:45,775
+of the decentralizing
+of the internet is,
+
+690
+00:28:45,775 --> 00:28:49,930
+is that it opens up the
+door to every small player
+
+691
+00:28:49,930 --> 00:28:54,460
+in the space to build a new,
+interesting, innovative tool
+
+692
+00:28:54,460 --> 00:28:56,410
+that didn't really
+exist or couldn't really
+
+693
+00:28:56,410 --> 00:28:59,300
+exist with a heavily
+centralized internet.
+
+694
+00:28:59,300 --> 00:29:01,090
+But I think the major
+downsides, then,
+
+695
+00:29:01,090 --> 00:29:03,250
+are the difficulties
+are, well, how
+
+696
+00:29:03,250 --> 00:29:05,090
+do we ensure interoperability?
+
+697
+00:29:05,090 --> 00:29:07,000
+How do I ensure that
+I can easily discover
+
+698
+00:29:07,000 --> 00:29:08,810
+and manage and support.
+
+699
+00:29:08,810 --> 00:29:10,435
+How do I ensure
+that it's equitable?
+
+700
+00:29:10,435 --> 00:29:12,310
+How do I ensure that we
+have equitable access
+
+701
+00:29:12,310 --> 00:29:14,298
+to cloud computing resources?
+
+702
+00:29:14,298 --> 00:29:16,090
+We talked a bit about
+this at the beginning
+
+703
+00:29:16,090 --> 00:29:18,740
+that Amazon's not
+perfect either at this,
+
+704
+00:29:18,740 --> 00:29:21,430
+but at least, they
+have the resources
+
+705
+00:29:21,430 --> 00:29:24,680
+to leverage the economies of
+scale, and all that good stuff.
+
+706
+00:29:24,680 --> 00:29:27,520
+So I don't know if there's
+a clear-cut answer to which
+
+707
+00:29:27,520 --> 00:29:29,330
+direction things will go.
+
+708
+00:29:29,330 --> 00:29:32,380
+But I want you to be open
+and explore opportunities
+
+709
+00:29:32,380 --> 00:29:34,638
+in either direction.
+
+710
+00:29:34,638 --> 00:29:36,430
+One interesting one
+that's been in the news
+
+711
+00:29:36,430 --> 00:29:39,460
+a lot recently, as far as
+towards decentralization goes,
+
+712
+00:29:39,460 --> 00:29:40,610
+is Mastodon.
+
+713
+00:29:40,610 --> 00:29:43,660
+So obviously,
+we're sitting here,
+
+714
+00:29:43,660 --> 00:29:46,960
+this video at least
+recorded in late 2022.
+
+715
+00:29:46,960 --> 00:29:50,870
+And so Twitter is going
+through a transformative time,
+
+716
+00:29:50,870 --> 00:29:51,830
+to say the least.
+
+717
+00:29:51,830 --> 00:29:53,650
+And that's obviously
+putting a lot of--
+
+718
+00:29:53,650 --> 00:29:55,880
+or shining a lot
+of light on, well,
+
+719
+00:29:55,880 --> 00:29:59,670
+what are the downsides or risks
+of us having centralized, again,
+
+720
+00:29:59,670 --> 00:30:04,310
+our internet or our
+microblogging communications
+
+721
+00:30:04,310 --> 00:30:07,490
+to a few major apps,
+a few major players?
+
+722
+00:30:07,490 --> 00:30:10,170
+And so Mastodon
+encourages an alternative.
+
+723
+00:30:10,170 --> 00:30:12,750
+It is a decentralized
+social media platform.
+
+724
+00:30:12,750 --> 00:30:15,720
+And also, full disclosure, I
+do not have a Mastodon account.
+
+725
+00:30:15,720 --> 00:30:17,880
+I am not pushing for Mastodon.
+
+726
+00:30:17,880 --> 00:30:20,700
+I have no interest or stake
+in their future success.
+
+727
+00:30:20,700 --> 00:30:23,007
+But I think it proposes
+an interesting alternative
+
+728
+00:30:23,007 --> 00:30:24,840
+to these, and that's
+why I'm introducing it.
+
+729
+00:30:24,840 --> 00:30:28,820
+But either way, what they mean
+by decentralized social media
+
+730
+00:30:28,820 --> 00:30:31,620
+platform is that the
+software for Mastodon,
+
+731
+00:30:31,620 --> 00:30:34,970
+the actual underlying code,
+is completely open source.
+
+732
+00:30:34,970 --> 00:30:38,750
+And what that means then is that
+you can host your own Mastodon
+
+733
+00:30:38,750 --> 00:30:40,920
+server on whatever
+resources you want to.
+
+734
+00:30:40,920 --> 00:30:42,750
+You could do it
+on AWS resources,
+
+735
+00:30:42,750 --> 00:30:45,260
+or you could do it on a
+set of Raspberry Pis you
+
+736
+00:30:45,260 --> 00:30:47,240
+have sitting at your house.
+
+737
+00:30:47,240 --> 00:30:50,280
+And that server, as long as
+it's connected to the internet,
+
+738
+00:30:50,280 --> 00:30:52,370
+can still connect to and
+follow other accounts
+
+739
+00:30:52,370 --> 00:30:54,050
+that are on different servers.
+
+740
+00:30:54,050 --> 00:30:57,180
+For that matter, you could have
+your friends all share a server,
+
+741
+00:30:57,180 --> 00:31:00,552
+but then remotely connect
+to-- or follow other accounts
+
+742
+00:31:00,552 --> 00:31:01,260
+on other servers.
+
+743
+00:31:01,260 --> 00:31:03,300
+So it still looks like
+a single feed to you.
+
+744
+00:31:03,300 --> 00:31:07,370
+But the actual location or
+the source of the information
+
+745
+00:31:07,370 --> 00:31:09,510
+is coming from
+different locations.
+
+746
+00:31:09,510 --> 00:31:12,860
+This ensures, then,
+that, well, whatever
+
+747
+00:31:12,860 --> 00:31:17,810
+happens with the overarching
+platform isn't technically going
+
+748
+00:31:17,810 --> 00:31:20,460
+to directly impact your server.
+
+749
+00:31:20,460 --> 00:31:23,270
+If the entirety of Mastodon
+shut down tomorrow,
+
+750
+00:31:23,270 --> 00:31:24,770
+everybody who has
+a Mastodon account
+
+751
+00:31:24,770 --> 00:31:26,562
+could still maintain
+their Mastodon account
+
+752
+00:31:26,562 --> 00:31:29,990
+because all of the software
+to run a Mastodon server
+
+753
+00:31:29,990 --> 00:31:31,160
+is open source.
+
+754
+00:31:31,160 --> 00:31:33,410
+So there is no location where
+it's just sitting there,
+
+755
+00:31:33,410 --> 00:31:35,280
+is the main source of the code.
+
+756
+00:31:35,280 --> 00:31:37,370
+The entirety of
+Mastodon can't go down
+
+757
+00:31:37,370 --> 00:31:39,660
+without the entirety of
+the internet going down.
+
+758
+00:31:39,660 --> 00:31:42,540
+And that adds, again,
+some redundancy,
+
+759
+00:31:42,540 --> 00:31:44,850
+some reliability,
+but also again,
+
+760
+00:31:44,850 --> 00:31:50,660
+allows for a lot of new
+ideas and new way of sharing
+
+761
+00:31:50,660 --> 00:31:52,970
+information to exist.
+
+762
+00:31:52,970 --> 00:31:54,470
+Think about, again,
+maybe there's
+
+763
+00:31:54,470 --> 00:31:57,590
+a news agency that
+is posting news
+
+764
+00:31:57,590 --> 00:31:59,310
+that, whether you
+agree with it or not,
+
+765
+00:31:59,310 --> 00:32:03,270
+is potentially
+subject to censoring.
+
+766
+00:32:03,270 --> 00:32:05,700
+Maybe I'm in a location
+where the news--
+
+767
+00:32:05,700 --> 00:32:08,570
+if I'm in an
+authoritarian regime
+
+768
+00:32:08,570 --> 00:32:10,710
+that limits what I can share.
+
+769
+00:32:10,710 --> 00:32:13,460
+Well, my Mastodon server,
+outside of them blocking access
+
+770
+00:32:13,460 --> 00:32:15,808
+to the internet
+for me, could share
+
+771
+00:32:15,808 --> 00:32:17,600
+whatever it wanted to
+still because there's
+
+772
+00:32:17,600 --> 00:32:19,710
+no centralized platform
+it's going through.
+
+773
+00:32:19,710 --> 00:32:22,860
+They can't go to Twitter and
+say, hey, don't share this.
+
+774
+00:32:22,860 --> 00:32:26,270
+They can't go to Facebook and
+say, hey, don't share this.
+
+775
+00:32:26,270 --> 00:32:28,220
+Now, this does mean
+that content moderation
+
+776
+00:32:28,220 --> 00:32:30,240
+is left to independent servers.
+
+777
+00:32:30,240 --> 00:32:33,080
+But the benefit of that is--
+and you'll see if you visit
+
+778
+00:32:33,080 --> 00:32:33,810
+their website--
+
+779
+00:32:33,810 --> 00:32:37,050
+that most servers have an
+application requirement.
+
+780
+00:32:37,050 --> 00:32:39,470
+So you can't just
+immediately set up an account
+
+781
+00:32:39,470 --> 00:32:42,210
+and reach everybody
+that's on that server.
+
+782
+00:32:42,210 --> 00:32:44,450
+They have to specifically
+choose to include you
+
+783
+00:32:44,450 --> 00:32:46,800
+in their communications.
+
+784
+00:32:46,800 --> 00:32:50,310
+And so that's really,
+again, the major benefit
+
+785
+00:32:50,310 --> 00:32:51,730
+that I see from it.
+
+786
+00:32:51,730 --> 00:32:53,250
+But I'd love you
+to think about some
+
+787
+00:32:53,250 --> 00:32:55,710
+of the pros and cons of, again,
+decentralizing social media
+
+788
+00:32:55,710 --> 00:32:58,260
+platform because not
+everything is rosy,
+
+789
+00:32:58,260 --> 00:33:00,300
+and it doesn't always
+work out perfect.
+
+790
+00:33:00,300 --> 00:33:01,720
+Everything has pros and cons.
+
+791
+00:33:01,720 --> 00:33:05,920
+And so keep that in
+mind and think on that.
+
+792
+00:33:05,920 --> 00:33:08,530
+And then, I'll just
+end on this last slide
+
+793
+00:33:08,530 --> 00:33:12,650
+of just talking more generically
+of the decentralized internet.
+
+794
+00:33:12,650 --> 00:33:14,690
+We've given an example
+of Mastodon here.
+
+795
+00:33:14,690 --> 00:33:16,870
+But what if every
+website and every service
+
+796
+00:33:16,870 --> 00:33:19,100
+was like Mastodon,
+completely decentralized,
+
+797
+00:33:19,100 --> 00:33:22,060
+running on all kinds
+of disparate servers?
+
+798
+00:33:22,060 --> 00:33:27,250
+And that's really the idea
+behind this idea of Web3,
+
+799
+00:33:27,250 --> 00:33:29,800
+this idea of Web3 has
+heavily been taken over
+
+800
+00:33:29,800 --> 00:33:32,750
+by discussion of
+cryptocurrency and NFTs.
+
+801
+00:33:32,750 --> 00:33:35,190
+And that's very much not
+what I am interested in,
+
+802
+00:33:35,190 --> 00:33:36,460
+nor talking about here.
+
+803
+00:33:36,460 --> 00:33:40,480
+That is built on a technology,
+this blockchain technology,
+
+804
+00:33:40,480 --> 00:33:42,610
+that conceivably
+could and likely will
+
+805
+00:33:42,610 --> 00:33:45,940
+be a big part of a
+decentralized internet.
+
+806
+00:33:45,940 --> 00:33:48,183
+But I view those as
+separate entities.
+
+807
+00:33:48,183 --> 00:33:49,600
+And unfortunately,
+they've kind of
+
+808
+00:33:49,600 --> 00:33:52,030
+been relegated to that,
+since they've become
+
+809
+00:33:52,030 --> 00:33:53,450
+these speculative investments.
+
+810
+00:33:53,450 --> 00:33:54,997
+So it's a very
+different concept,
+
+811
+00:33:54,997 --> 00:33:56,330
+not what I'm talking about here.
+
+812
+00:33:56,330 --> 00:33:58,240
+Here, I'm purely
+talking about the way
+
+813
+00:33:58,240 --> 00:34:00,640
+we interact with the web.
+
+814
+00:34:00,640 --> 00:34:05,530
+Fediverse is another concept,
+this Federated universe
+
+815
+00:34:05,530 --> 00:34:08,610
+of websites-- that's where
+the name comes from--
+
+816
+00:34:08,610 --> 00:34:10,429
+of, again, decentralized
+these ideas.
+
+817
+00:34:10,429 --> 00:34:13,900
+So Mastodon is a part
+of this Fediverse idea.
+
+818
+00:34:13,900 --> 00:34:17,260
+And there is suite of
+tools that are trying
+
+819
+00:34:17,260 --> 00:34:21,560
+to form the protocols to allow
+for and ensure interoperability
+
+820
+00:34:21,560 --> 00:34:23,989
+between these
+websites and concepts.
+
+821
+00:34:23,989 --> 00:34:26,550
+But it's not going to be
+a seamless transition.
+
+822
+00:34:26,550 --> 00:34:29,030
+But that lack of
+seamless transition
+
+823
+00:34:29,030 --> 00:34:31,170
+should perk your
+ears up and say, hey,
+
+824
+00:34:31,170 --> 00:34:33,800
+what that means is there's
+a lot of opportunity.
+
+825
+00:34:33,800 --> 00:34:36,920
+Every time there's some sort
+of ambiguity, uncertainty
+
+826
+00:34:36,920 --> 00:34:39,620
+of how or what things
+will become, especially
+
+827
+00:34:39,620 --> 00:34:42,659
+in the internet, it has led
+to a lot of opportunity.
+
+828
+00:34:42,659 --> 00:34:46,909
+If we look at Dot Com, then that
+was burst-- the Dot Com bubble
+
+829
+00:34:46,909 --> 00:34:47,610
+burst.
+
+830
+00:34:47,610 --> 00:34:51,050
+But to some extent, a lot
+of jobs and a lot of wealth
+
+831
+00:34:51,050 --> 00:34:52,820
+was created because
+all of a sudden there
+
+832
+00:34:52,820 --> 00:34:54,320
+was this new tool, the
+internet, and nobody
+
+833
+00:34:54,320 --> 00:34:55,237
+knew what it could be.
+
+834
+00:34:55,237 --> 00:34:59,300
+All of a sudden, you could sell
+books online, or sell products,
+
+835
+00:34:59,300 --> 00:35:02,010
+or share information.
+
+836
+00:35:02,010 --> 00:35:04,830
+Well, then we had this
+Web2, That's the Web1.
+
+837
+00:35:04,830 --> 00:35:07,850
+The Web2 is viewed as the
+social media movement, where
+
+838
+00:35:07,850 --> 00:35:10,880
+all of a sudden, well, hey,
+what if we could continuously
+
+839
+00:35:10,880 --> 00:35:13,700
+communicate with everyone
+we know, or want to know,
+
+840
+00:35:13,700 --> 00:35:15,080
+or want to follow?
+
+841
+00:35:15,080 --> 00:35:17,420
+That opened up so many
+doors to the extent
+
+842
+00:35:17,420 --> 00:35:19,850
+that the vast majority of
+the most desirable jobs
+
+843
+00:35:19,850 --> 00:35:22,130
+still fall, as far
+as tech jobs, still
+
+844
+00:35:22,130 --> 00:35:24,590
+fall within a few
+major social media
+
+845
+00:35:24,590 --> 00:35:26,540
+companies or tech companies.
+
+846
+00:35:26,540 --> 00:35:29,030
+And so then what does that
+mean for this next round
+
+847
+00:35:29,030 --> 00:35:30,980
+of the internet because
+those companies are
+
+848
+00:35:30,980 --> 00:35:31,890
+struggling right now?
+
+849
+00:35:31,890 --> 00:35:34,490
+Except for a few
+platforms, most of them
+
+850
+00:35:34,490 --> 00:35:37,250
+are taking a downturn
+in user growth.
+
+851
+00:35:37,250 --> 00:35:40,370
+And so there's this question
+of, will they persist,
+
+852
+00:35:40,370 --> 00:35:42,200
+and will those be the
+jobs of the future,
+
+853
+00:35:42,200 --> 00:35:43,860
+or will there be something else?
+
+854
+00:35:43,860 --> 00:35:45,560
+And that's where, again,
+I want you to think about,
+
+855
+00:35:45,560 --> 00:35:48,185
+what are the opportunities that
+are going to present themselves
+
+856
+00:35:48,185 --> 00:35:51,620
+there, and where do you want
+to be in those opportunities?
+
+857
+00:35:51,620 --> 00:35:54,990
+Again, open idea, does
+not have an answer.
+
+858
+00:35:54,990 --> 00:35:57,270
+Think about these pros and cons.
+
+859
+00:35:57,270 --> 00:35:59,490
+Are the pros and cons the
+same as with Mastodon,
+
+860
+00:35:59,490 --> 00:36:01,910
+or there are new
+issues that arise
+
+861
+00:36:01,910 --> 00:36:03,770
+or opportunities
+that arise when I
+
+862
+00:36:03,770 --> 00:36:05,940
+expand to every website
+and every service?
+
+863
+00:36:05,940 --> 00:36:07,470
+Think about a Netflix.
+
+864
+00:36:07,470 --> 00:36:09,270
+What is a decentralized
+Netflix look like?
+
+865
+00:36:09,270 --> 00:36:11,303
+How do you build that?
+
+866
+00:36:11,303 --> 00:36:13,470
+Are there any things that
+should remain centralized?
+
+867
+00:36:13,470 --> 00:36:15,950
+Are there some things
+that, man, if we
+
+868
+00:36:15,950 --> 00:36:17,910
+start to decentralize
+everything,
+
+869
+00:36:17,910 --> 00:36:20,840
+we are going to really start
+to ruin the experiences
+
+870
+00:36:20,840 --> 00:36:23,760
+and the opportunities, maybe
+the equity of the internet?
+
+871
+00:36:23,760 --> 00:36:25,470
+And that is really
+my last question--
+
+872
+00:36:25,470 --> 00:36:28,820
+is a decentralized web
+more equitable or not?
+
+873
+00:36:28,820 --> 00:36:32,330
+I think the easy
+answer's maybe yes,
+
+874
+00:36:32,330 --> 00:36:36,410
+the more honest and
+difficult answers may be.
+
+875
+00:36:36,410 --> 00:36:39,230
+So I'll leave that
+one as open question.
+
+876
+00:36:39,230 --> 00:36:42,440
+But these are the ideas I want
+you to end this course with
+
+877
+00:36:42,440 --> 00:36:47,510
+and end thinking about is, what
+tools, what skills should I
+
+878
+00:36:47,510 --> 00:36:51,410
+acquire to not only become
+employed today, but also
+
+879
+00:36:51,410 --> 00:36:53,330
+in perpetuity, or
+maybe even create
+
+880
+00:36:53,330 --> 00:36:54,860
+the next company of the future?
+
+881
+00:36:54,860 --> 00:36:57,350
+So I'll leave it at that.
+
+882
+00:36:57,350 --> 00:37:00,660
+We will, for sure,
+be in communication.
+
+883
+00:37:00,660 --> 00:37:04,220
+But let me know if you have any
+questions or any issues come up.
+
+884
+00:37:04,220 --> 00:37:05,820
+And I'll, hopefully,
+see you soon.
+
+885
+00:37:05,820 --> 00:37:07,070
+Bye

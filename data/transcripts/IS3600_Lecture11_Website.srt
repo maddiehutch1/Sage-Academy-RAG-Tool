@@ -1,0 +1,2734 @@
+1
+00:00:00,492 --> 00:00:02,200
+INSTRUCTOR: Hey,
+everybody, welcome back.
+
+2
+00:00:02,200 --> 00:00:04,470
+So in today's video, we're
+going to actually move
+
+3
+00:00:04,470 --> 00:00:07,405
+towards deploying
+applications to the web.
+
+4
+00:00:07,405 --> 00:00:09,280
+We're going to do this
+in a stepwise fashion.
+
+5
+00:00:09,280 --> 00:00:10,990
+So there's not going to
+be everything all at once.
+
+6
+00:00:10,990 --> 00:00:12,407
+But I want us to
+start to build up
+
+7
+00:00:12,407 --> 00:00:14,940
+the pieces that go into
+developing and building
+
+8
+00:00:14,940 --> 00:00:16,690
+a modern web application.
+
+9
+00:00:16,690 --> 00:00:19,050
+So step one is really
+just, what does it
+
+10
+00:00:19,050 --> 00:00:22,710
+look like to host
+something on the internet?
+
+11
+00:00:22,710 --> 00:00:25,200
+We've talked about this,
+how our EC2 instance
+
+12
+00:00:25,200 --> 00:00:30,940
+and in general, any server can
+be a website, or host a website.
+
+13
+00:00:30,940 --> 00:00:33,580
+So like my laptop right
+now, technically speaking,
+
+14
+00:00:33,580 --> 00:00:35,940
+if I open it up to
+the outside world
+
+15
+00:00:35,940 --> 00:00:39,250
+and I had an HTML file
+sitting here on my computer,
+
+16
+00:00:39,250 --> 00:00:41,110
+I could make that a website.
+
+17
+00:00:41,110 --> 00:00:43,030
+That could be a
+public facing website.
+
+18
+00:00:43,030 --> 00:00:45,570
+Now granted, that would mean
+that any traffic coming in
+
+19
+00:00:45,570 --> 00:00:47,950
+would have to go through
+my home Wi-Fi network.
+
+20
+00:00:47,950 --> 00:00:50,170
+I'd have to leave my
+computer on at all times.
+
+21
+00:00:50,170 --> 00:00:53,580
+So it's probably not the most
+secure or reliable thing to do,
+
+22
+00:00:53,580 --> 00:00:55,120
+but it does work.
+
+23
+00:00:55,120 --> 00:00:57,438
+A single computer can
+serve as a web server.
+
+24
+00:00:57,438 --> 00:00:59,230
+And so that's what
+we're going to do today.
+
+25
+00:00:59,230 --> 00:01:01,720
+We're going to use EC2
+instances as the single web
+
+26
+00:01:01,720 --> 00:01:03,930
+server, with the
+ultimate goal to say,
+
+27
+00:01:03,930 --> 00:01:07,840
+let's push up a version of our
+resume that is always online,
+
+28
+00:01:07,840 --> 00:01:09,500
+that we can send
+somebody a link to.
+
+29
+00:01:09,500 --> 00:01:12,350
+You can link somebody
+to it if you wanted to.
+
+30
+00:01:12,350 --> 00:01:14,540
+And so it'll be an
+actual practical thing.
+
+31
+00:01:14,540 --> 00:01:16,995
+I mean, it's up to you again
+how deep you go into this,
+
+32
+00:01:16,995 --> 00:01:18,620
+how professional you
+want to make that.
+
+33
+00:01:18,620 --> 00:01:20,890
+And it's also up to
+your skill level.
+
+34
+00:01:20,890 --> 00:01:23,710
+We're not going to expect
+that you have any programming
+
+35
+00:01:23,710 --> 00:01:24,830
+background to do this.
+
+36
+00:01:24,830 --> 00:01:27,490
+But if you do, if you've already
+gotten some web design or web
+
+37
+00:01:27,490 --> 00:01:29,620
+development skills,
+you're welcome to leverage
+
+38
+00:01:29,620 --> 00:01:32,547
+them here and honestly,
+throughout this module
+
+39
+00:01:32,547 --> 00:01:34,880
+that we're talking about web
+development and deployment.
+
+40
+00:01:34,880 --> 00:01:38,590
+So no expectations, but I would
+say make of it what you can
+
+41
+00:01:38,590 --> 00:01:41,920
+and what makes sense to you and
+where you're at in your career.
+
+42
+00:01:41,920 --> 00:01:44,500
+So with that, I'll slide
+myself out of the way here
+
+43
+00:01:44,500 --> 00:01:46,310
+and I'll go to
+the bottom corner.
+
+44
+00:01:46,310 --> 00:01:47,630
+Let's anchor it here.
+
+45
+00:01:47,630 --> 00:01:49,120
+OK, that's small, perfect.
+
+46
+00:01:49,120 --> 00:01:51,700
+So yeah, let's
+jump right into it.
+
+47
+00:01:51,700 --> 00:01:54,970
+Right here, you can see I'm
+on the EC2 console or the AWS
+
+48
+00:01:54,970 --> 00:01:57,370
+console, and I'm
+going to open up EC2
+
+49
+00:01:57,370 --> 00:01:59,840
+because I want to
+launch an EC2 instance.
+
+50
+00:01:59,840 --> 00:02:02,420
+So it's the same process
+as we've seen many times.
+
+51
+00:02:02,420 --> 00:02:04,450
+Click Launch Instance.
+
+52
+00:02:04,450 --> 00:02:07,336
+I'm just going to call
+mine testserver_webdev.
+
+53
+00:02:11,100 --> 00:02:12,360
+Call it whatever you want.
+
+54
+00:02:12,360 --> 00:02:13,510
+If you're going
+to leave it live,
+
+55
+00:02:13,510 --> 00:02:15,240
+I'd name it something
+intentional so that it's
+
+56
+00:02:15,240 --> 00:02:16,240
+like, hey, this is live.
+
+57
+00:02:16,240 --> 00:02:17,718
+Maybe call it the resume server.
+
+58
+00:02:17,718 --> 00:02:19,260
+Maybe we'll do that
+since we're going
+
+59
+00:02:19,260 --> 00:02:20,830
+to say this is for our resume.
+
+60
+00:02:20,830 --> 00:02:22,290
+So that way, if I'm ever
+going through and trying
+
+61
+00:02:22,290 --> 00:02:24,550
+to clear out resources, I
+know to leave this one live,
+
+62
+00:02:24,550 --> 00:02:26,350
+for example.
+
+63
+00:02:26,350 --> 00:02:28,500
+So I'm going to pick Ubuntu.
+
+64
+00:02:28,500 --> 00:02:32,220
+Something that is free tier
+eligible, doesn't really matter.
+
+65
+00:02:32,220 --> 00:02:36,305
+22.04 24.04 are
+free tier right now.
+
+66
+00:02:36,305 --> 00:02:38,430
+It depends on when you're
+watching this video, what
+
+67
+00:02:38,430 --> 00:02:39,340
+is at the free tier.
+
+68
+00:02:39,340 --> 00:02:41,940
+So I'm just going to the
+free tier eligible one.
+
+69
+00:02:41,940 --> 00:02:45,285
+Same thing with the
+instance type T2 micro.
+
+70
+00:02:45,285 --> 00:02:46,660
+This is something
+to note though,
+
+71
+00:02:46,660 --> 00:02:49,500
+that the smaller
+the instance is,
+
+72
+00:02:49,500 --> 00:02:51,810
+the less traffic it can support.
+
+73
+00:02:51,810 --> 00:02:54,870
+For what we're doing as far as
+hosting a resume for somebody
+
+74
+00:02:54,870 --> 00:02:58,140
+to occasionally look at, this is
+going to be plenty sufficient.
+
+75
+00:02:58,140 --> 00:03:00,497
+But this is why we want
+to be able to learn
+
+76
+00:03:00,497 --> 00:03:02,080
+how to develop and
+deploy in the cloud
+
+77
+00:03:02,080 --> 00:03:04,372
+because then we can actually
+leverage the benefits here
+
+78
+00:03:04,372 --> 00:03:06,430
+and say, hey, if we
+have a lot of traffic,
+
+79
+00:03:06,430 --> 00:03:08,850
+let's scale up either the
+number of instances hosting
+
+80
+00:03:08,850 --> 00:03:11,700
+our website, or the
+size of the instances,
+
+81
+00:03:11,700 --> 00:03:13,300
+or whatever that might be.
+
+82
+00:03:13,300 --> 00:03:16,210
+So it is the flexibility
+of it that we like.
+
+83
+00:03:16,210 --> 00:03:19,230
+But for now, I'm going to
+stick at the free tier level.
+
+84
+00:03:19,230 --> 00:03:21,970
+If you don't have an
+existing key pair,
+
+85
+00:03:21,970 --> 00:03:26,040
+you can create a
+new one, or I'm just
+
+86
+00:03:26,040 --> 00:03:27,803
+going to use the existing one.
+
+87
+00:03:27,803 --> 00:03:29,220
+Remember, to create
+a new one, all
+
+88
+00:03:29,220 --> 00:03:31,150
+you do is click
+Create New Key Pair.
+
+89
+00:03:31,150 --> 00:03:33,630
+I do RSA and then dot PEM.
+
+90
+00:03:33,630 --> 00:03:35,170
+And if you click
+Create Key Pair,
+
+91
+00:03:35,170 --> 00:03:39,540
+it'll download that to your
+computer, the private key.
+
+92
+00:03:39,540 --> 00:03:43,590
+And then that will be necessary
+to connect to the instance
+
+93
+00:03:43,590 --> 00:03:46,190
+securely.
+
+94
+00:03:46,190 --> 00:03:47,660
+Now, this is where
+we're actually
+
+95
+00:03:47,660 --> 00:03:50,270
+to make the first changes
+under network settings.
+
+96
+00:03:50,270 --> 00:03:53,605
+You can also create this as
+a permanent security group
+
+97
+00:03:53,605 --> 00:03:55,980
+so you don't have to keep
+recreating a new one each time,
+
+98
+00:03:55,980 --> 00:03:57,990
+but there's no cost
+associated with it.
+
+99
+00:03:57,990 --> 00:04:00,350
+So either way, what
+I'm going to do
+
+100
+00:04:00,350 --> 00:04:03,900
+is I'm going to select allow
+SSH traffic from anywhere.
+
+101
+00:04:03,900 --> 00:04:04,850
+That's the default.
+
+102
+00:04:04,850 --> 00:04:06,930
+We want to be able to
+SSH into our instance.
+
+103
+00:04:06,930 --> 00:04:08,690
+That's how we've been
+connecting to them.
+
+104
+00:04:08,690 --> 00:04:11,940
+And then I'm also
+going to check allow
+
+105
+00:04:11,940 --> 00:04:14,750
+HTTP traffic from the internet.
+
+106
+00:04:14,750 --> 00:04:18,255
+We could also select HTTPS,
+though we're not going
+
+107
+00:04:18,255 --> 00:04:19,380
+to set up a secure website.
+
+108
+00:04:19,380 --> 00:04:21,920
+There's another couple of
+steps we have to do to do that.
+
+109
+00:04:21,920 --> 00:04:23,350
+And for what we're
+doing here, it
+
+110
+00:04:23,350 --> 00:04:26,250
+doesn't really make sense to put
+that extra effort in right now.
+
+111
+00:04:26,250 --> 00:04:29,090
+But long-term, we want to
+know how to do that or want
+
+112
+00:04:29,090 --> 00:04:30,950
+to explore that.
+
+113
+00:04:30,950 --> 00:04:33,500
+Again, from this side,
+all we have to do
+
+114
+00:04:33,500 --> 00:04:35,623
+is select this button from
+the EC2 instance side.
+
+115
+00:04:35,623 --> 00:04:37,290
+All we have to do is
+select this button.
+
+116
+00:04:37,290 --> 00:04:39,920
+It's more about the security
+certificates we have to enable
+
+117
+00:04:39,920 --> 00:04:40,920
+and all that good stuff.
+
+118
+00:04:40,920 --> 00:04:42,810
+So we'll get to that
+when we get to that.
+
+119
+00:04:42,810 --> 00:04:46,540
+For now, HTTP
+traffic is just fine.
+
+120
+00:04:46,540 --> 00:04:49,990
+Storage, the default 8
+gigs is perfectly fine.
+
+121
+00:04:49,990 --> 00:04:52,190
+And we can leave
+everything else the same.
+
+122
+00:04:52,190 --> 00:04:53,820
+So we'll just click
+launch instance.
+
+123
+00:04:56,953 --> 00:04:58,620
+Now I'm going to click
+over here to this
+
+124
+00:04:58,620 --> 00:05:00,320
+while we wait for it to launch.
+
+125
+00:05:00,320 --> 00:05:02,370
+A couple things to note.
+
+126
+00:05:02,370 --> 00:05:04,050
+We're going to be
+connecting to it
+
+127
+00:05:04,050 --> 00:05:08,737
+via our public IPv4
+address or the DNS,
+
+128
+00:05:08,737 --> 00:05:09,820
+so the domain name server.
+
+129
+00:05:09,820 --> 00:05:12,450
+So you can see this
+one is aside from being
+
+130
+00:05:12,450 --> 00:05:15,300
+a big alphanumeric
+string, EC2, notice
+
+131
+00:05:15,300 --> 00:05:17,620
+that this is actually
+just the IP address here,
+
+132
+00:05:17,620 --> 00:05:19,120
+the public IP address.
+
+133
+00:05:19,120 --> 00:05:23,260
+It'll be the region and then
+.compute.amazon.aws.com.
+
+134
+00:05:23,260 --> 00:05:26,710
+So if you want to give a "dot
+com" or URL to get to this,
+
+135
+00:05:26,710 --> 00:05:27,910
+that's how you could do it.
+
+136
+00:05:27,910 --> 00:05:29,920
+Or you can connect to
+it from the IP address,
+
+137
+00:05:29,920 --> 00:05:31,950
+doesn't really matter.
+
+138
+00:05:31,950 --> 00:05:34,990
+Practically, if you wanted
+to keep this live long-term,
+
+139
+00:05:34,990 --> 00:05:38,758
+we'd want to assign a
+domain name to that.
+
+140
+00:05:38,758 --> 00:05:41,050
+That's not something we're
+going to do in this lecture.
+
+141
+00:05:41,050 --> 00:05:45,420
+But to give you a short, brief
+10 second intro to what you
+
+142
+00:05:45,420 --> 00:05:49,038
+need to do, and there's plenty
+of resources online to do this.
+
+143
+00:05:49,038 --> 00:05:50,580
+Basically, what you
+would do-- if you
+
+144
+00:05:50,580 --> 00:05:56,010
+think about what a website is,
+again, I put in google.com.
+
+145
+00:05:56,010 --> 00:05:58,420
+Now, if I go to
+google.com, what I'm
+
+146
+00:05:58,420 --> 00:06:02,980
+actually saying is that
+domain name, Google.com, it
+
+147
+00:06:02,980 --> 00:06:05,740
+is registered in a
+domain name registry,
+
+148
+00:06:05,740 --> 00:06:08,760
+and that maps to an IP address
+or really a range of IP
+
+149
+00:06:08,760 --> 00:06:09,260
+addresses.
+
+150
+00:06:09,260 --> 00:06:10,990
+But simplify it for a second.
+
+151
+00:06:10,990 --> 00:06:13,090
+Google.com is assigned
+to a single IP
+
+152
+00:06:13,090 --> 00:06:16,030
+address, the same way
+this domain name is
+
+153
+00:06:16,030 --> 00:06:17,690
+assigned to this IP address.
+
+154
+00:06:17,690 --> 00:06:20,020
+So what will happen
+is if you want
+
+155
+00:06:20,020 --> 00:06:24,170
+to have your own
+domain name that says,
+
+156
+00:06:24,170 --> 00:06:27,928
+sharad.joke, or sharad.com,
+sharad.org, whatever it is, then
+
+157
+00:06:27,928 --> 00:06:29,470
+you would basically
+purchase a domain
+
+158
+00:06:29,470 --> 00:06:31,840
+name from some sort of
+domain name registry.
+
+159
+00:06:31,840 --> 00:06:33,460
+And they'll usually
+have a platform.
+
+160
+00:06:33,460 --> 00:06:36,250
+For example, I use-- and again,
+I don't care which platform you
+
+161
+00:06:36,250 --> 00:06:39,520
+use to do this, I use Namecheap
+just because it was one
+
+162
+00:06:39,520 --> 00:06:40,430
+that I happened upon.
+
+163
+00:06:40,430 --> 00:06:44,480
+And so if I wanted to
+do sharadresume.ai--
+
+164
+00:06:47,080 --> 00:06:50,770
+dot AI is an option nowadays
+as a domain name as opposed
+
+165
+00:06:50,770 --> 00:06:52,160
+to dot com or dot org.
+
+166
+00:06:52,160 --> 00:06:54,243
+But you can see there's a
+bunch of different ones.
+
+167
+00:06:54,243 --> 00:06:57,280
+That would cost me 80 bucks
+a year to own that name.
+
+168
+00:06:57,280 --> 00:06:58,820
+But there are also cheaper ones.
+
+169
+00:06:58,820 --> 00:07:00,070
+Dot org is 7 bucks.
+
+170
+00:07:00,070 --> 00:07:03,190
+Dot net is 5 bucks a year.
+
+171
+00:07:03,190 --> 00:07:05,030
+And there's also
+more expensive ones.
+
+172
+00:07:05,030 --> 00:07:06,680
+310 bucks a year for dot game.
+
+173
+00:07:06,680 --> 00:07:09,650
+So it's an interesting
+marketplace idea.
+
+174
+00:07:09,650 --> 00:07:13,218
+But the whole point is once
+you've purchased a domain name,
+
+175
+00:07:13,218 --> 00:07:15,760
+then basically, what you'll do
+is you'll go into your account
+
+176
+00:07:15,760 --> 00:07:20,670
+and you'll say, OK, this IP
+address of my instance here--
+
+177
+00:07:20,670 --> 00:07:22,420
+and let's make sure
+this is launched, yep.
+
+178
+00:07:22,420 --> 00:07:24,740
+So this IP address
+of my instance,
+
+179
+00:07:24,740 --> 00:07:27,370
+I want to register
+it to this name such
+
+180
+00:07:27,370 --> 00:07:30,040
+that if somebody goes
+to sharadresume.com,
+
+181
+00:07:30,040 --> 00:07:34,450
+or dot AI, whatever it is, then
+that maps to this IP address
+
+182
+00:07:34,450 --> 00:07:36,192
+and so it'll send
+them to our website.
+
+183
+00:07:36,192 --> 00:07:38,900
+So that's really all you have to
+do to put a domain name on this.
+
+184
+00:07:38,900 --> 00:07:42,160
+And I think there's even a tool
+within AWS to do this as well.
+
+185
+00:07:42,160 --> 00:07:43,692
+So keep that in mind.
+
+186
+00:07:43,692 --> 00:07:45,900
+But for right now, we don't
+need to worry about that.
+
+187
+00:07:45,900 --> 00:07:48,800
+We're just going to connect
+to that via the IP address.
+
+188
+00:07:48,800 --> 00:07:50,840
+So let's click connect.
+
+189
+00:07:50,840 --> 00:07:53,130
+And this is the same again
+as we've seen before.
+
+190
+00:07:53,130 --> 00:07:55,850
+So I'll copy this here.
+
+191
+00:07:55,850 --> 00:07:57,800
+And then I'll
+launch my terminal.
+
+192
+00:07:57,800 --> 00:07:59,370
+Let me move this
+one out of the way.
+
+193
+00:07:59,370 --> 00:08:01,230
+And I guess I shouldn't
+have the secret key.
+
+194
+00:08:01,230 --> 00:08:03,373
+You can ignore that.
+
+195
+00:08:03,373 --> 00:08:05,040
+If you saw that secret
+key, that's fine.
+
+196
+00:08:05,040 --> 00:08:06,600
+That's an old
+deleted one anyways.
+
+197
+00:08:06,600 --> 00:08:10,820
+It was from a previous lesson
+I was doing in class here.
+
+198
+00:08:10,820 --> 00:08:12,710
+So let's go this way.
+
+199
+00:08:12,710 --> 00:08:14,180
+And then what we're
+going to do is
+
+200
+00:08:14,180 --> 00:08:20,970
+we're going to say, OK, great,
+paste our SSH key in there.
+
+201
+00:08:20,970 --> 00:08:23,370
+And now, remember, if you
+hadn't done this before,
+
+202
+00:08:23,370 --> 00:08:25,190
+if you haven't connected
+to this instance
+
+203
+00:08:25,190 --> 00:08:28,280
+before, you'll need to go
+to wherever it's downloaded.
+
+204
+00:08:28,280 --> 00:08:29,780
+So if it's in your
+downloads folder,
+
+205
+00:08:29,780 --> 00:08:32,820
+if you've moved it to your dot
+SSH folder, whatever it is,
+
+206
+00:08:32,820 --> 00:08:34,940
+you'll need to go to
+wherever this secret key is
+
+207
+00:08:34,940 --> 00:08:37,549
+on your terminal
+or in powershell,
+
+208
+00:08:37,549 --> 00:08:40,470
+and then you'll need
+to run that command.
+
+209
+00:08:40,470 --> 00:08:45,820
+Also, if you're on a Mac or
+any sort of Linux based device,
+
+210
+00:08:45,820 --> 00:08:49,410
+you'll also need to run this
+CH mod command before you can
+
+211
+00:08:49,410 --> 00:08:51,280
+run the other command first.
+
+212
+00:08:51,280 --> 00:08:52,570
+So just keep that in mind.
+
+213
+00:08:52,570 --> 00:08:53,620
+It's the same process.
+
+214
+00:08:53,620 --> 00:08:57,720
+Feel free to go back through
+the EC2 connection video
+
+215
+00:08:57,720 --> 00:09:01,140
+from before if you want
+to look more into that.
+
+216
+00:09:01,140 --> 00:09:03,660
+So let's increase the
+size of this here.
+
+217
+00:09:03,660 --> 00:09:04,380
+OK, great.
+
+218
+00:09:04,380 --> 00:09:06,730
+So now, we're in our
+Ubuntu environment.
+
+219
+00:09:06,730 --> 00:09:14,640
+The first thing we want to
+do is run sudo apt update -y.
+
+220
+00:09:14,640 --> 00:09:16,080
+So all this is
+going to do is it's
+
+221
+00:09:16,080 --> 00:09:19,590
+going to basically update
+the registry of libraries
+
+222
+00:09:19,590 --> 00:09:23,310
+in the background to make sure
+that we are able to grab--
+
+223
+00:09:23,310 --> 00:09:25,920
+because we're going to
+need install some software
+
+224
+00:09:25,920 --> 00:09:27,177
+to do this connection.
+
+225
+00:09:27,177 --> 00:09:29,010
+This is just going to
+make sure we have that
+
+226
+00:09:29,010 --> 00:09:33,000
+available in the background.
+
+227
+00:09:33,000 --> 00:09:36,332
+Sorry, we'll wait a couple
+seconds for that to finish here.
+
+228
+00:09:36,332 --> 00:09:38,040
+And then the next
+thing we're going to do
+
+229
+00:09:38,040 --> 00:09:46,050
+is we're going to run
+sudo apt install apache2.
+
+230
+00:09:46,050 --> 00:09:49,980
+So sudo apt install apache2.
+
+231
+00:09:49,980 --> 00:09:52,680
+And we'll say yes on that.
+
+232
+00:09:52,680 --> 00:09:55,830
+Now, what Apache is, is it's
+a free-- it's open source
+
+233
+00:09:55,830 --> 00:09:56,830
+software.
+
+234
+00:09:56,830 --> 00:09:59,880
+And what it does is
+it says or it handles
+
+235
+00:09:59,880 --> 00:10:02,460
+the communication that
+says, hey, this person
+
+236
+00:10:02,460 --> 00:10:06,090
+has put in our URL
+or our IP address.
+
+237
+00:10:06,090 --> 00:10:08,230
+They've come to
+connect to our website.
+
+238
+00:10:08,230 --> 00:10:15,580
+And we want them to receive the
+page, the file, the HTML file.
+
+239
+00:10:15,580 --> 00:10:18,160
+Let's say we're going to
+build an HTML website,
+
+240
+00:10:18,160 --> 00:10:20,520
+we want them to
+receive this HTML file
+
+241
+00:10:20,520 --> 00:10:22,920
+because they sent this request.
+
+242
+00:10:22,920 --> 00:10:25,230
+So we're going to respond
+with the HTML file
+
+243
+00:10:25,230 --> 00:10:27,870
+when we receive a request.
+
+244
+00:10:27,870 --> 00:10:29,610
+Apache is the web server.
+
+245
+00:10:29,610 --> 00:10:31,630
+Apache is the thing that's
+going to handle that.
+
+246
+00:10:31,630 --> 00:10:33,450
+It's going to say,
+OK, well, there
+
+247
+00:10:33,450 --> 00:10:39,690
+is a HTTP request that was
+sent to this IP address.
+
+248
+00:10:39,690 --> 00:10:42,360
+Apache is going to do the
+bookkeeping and say, OK, great,
+
+249
+00:10:42,360 --> 00:10:44,580
+that means they get
+this file and we're
+
+250
+00:10:44,580 --> 00:10:45,990
+going to send it back to them.
+
+251
+00:10:45,990 --> 00:10:47,490
+And so that's why
+we need to install
+
+252
+00:10:47,490 --> 00:10:50,500
+apache or some other type
+of web server to do that.
+
+253
+00:10:50,500 --> 00:10:52,930
+Apache is just an open
+source one to do that.
+
+254
+00:10:52,930 --> 00:10:56,620
+So if you ever just
+search apache web server,
+
+255
+00:10:56,620 --> 00:10:59,530
+you can see here, free open
+source, Apache license,
+
+256
+00:10:59,530 --> 00:11:02,970
+all that good stuff, tons
+of details and documentation
+
+257
+00:11:02,970 --> 00:11:03,640
+about that.
+
+258
+00:11:03,640 --> 00:11:06,100
+So that's just there for you
+if you want to reference.
+
+259
+00:11:06,100 --> 00:11:11,040
+But there's nothing uniquely
+special about that for us here.
+
+260
+00:11:11,040 --> 00:11:14,622
+OK, so we have that now.
+
+261
+00:11:14,622 --> 00:11:16,080
+Now, the first
+order of business is
+
+262
+00:11:16,080 --> 00:11:18,613
+we are going to
+enable a firewall.
+
+263
+00:11:18,613 --> 00:11:21,280
+That's just going to provide the
+extra layer of security to say,
+
+264
+00:11:21,280 --> 00:11:27,450
+hey, only people allowed or only
+traffic from specific directions
+
+265
+00:11:27,450 --> 00:11:29,140
+can be allowed into our website.
+
+266
+00:11:29,140 --> 00:11:31,440
+We've actually already
+set that up by default.
+
+267
+00:11:31,440 --> 00:11:34,170
+If you come back over to your
+instance, you can see it here.
+
+268
+00:11:34,170 --> 00:11:38,160
+Come down to security, you'll
+notice that inbound rules,
+
+269
+00:11:38,160 --> 00:11:41,910
+we're allowing traffic
+through port 22 and traffic
+
+270
+00:11:41,910 --> 00:11:43,410
+through port 80.
+
+271
+00:11:43,410 --> 00:11:46,920
+These ports are exactly
+what they sound like.
+
+272
+00:11:46,920 --> 00:11:48,720
+Again, it's like
+a shipping port.
+
+273
+00:11:48,720 --> 00:11:53,190
+They say that, hey, OK, if
+somebody comes to our IP address
+
+274
+00:11:53,190 --> 00:11:55,690
+from anywhere, that's
+what this source defines.
+
+275
+00:11:55,690 --> 00:11:57,280
+It says, from
+anywhere on the web,
+
+276
+00:11:57,280 --> 00:12:01,400
+if they come to our IP
+address at this specific port,
+
+277
+00:12:01,400 --> 00:12:04,870
+trying to come in through
+port 22, that's OK.
+
+278
+00:12:04,870 --> 00:12:07,090
+Now, there might be an
+extra layer of security
+
+279
+00:12:07,090 --> 00:12:09,620
+because port 22 is
+our SSH connection.
+
+280
+00:12:09,620 --> 00:12:13,490
+So you notice when you try to
+SSH in to your EC2 instance,
+
+281
+00:12:13,490 --> 00:12:14,480
+it works just fine.
+
+282
+00:12:14,480 --> 00:12:16,940
+It says, hey, you're welcome
+to come in through this way,
+
+283
+00:12:16,940 --> 00:12:19,030
+but you do have to
+put in, or you do
+
+284
+00:12:19,030 --> 00:12:20,930
+have to have the private key.
+
+285
+00:12:20,930 --> 00:12:22,960
+That's where we
+create the key pair.
+
+286
+00:12:22,960 --> 00:12:26,500
+Similarly, for port 80,
+that is the default port
+
+287
+00:12:26,500 --> 00:12:28,460
+for HTTP traffic.
+
+288
+00:12:28,460 --> 00:12:31,720
+So same idea, somebody
+sends an HTTP request,
+
+289
+00:12:31,720 --> 00:12:33,670
+by default, that
+goes into port 80.
+
+290
+00:12:33,670 --> 00:12:38,430
+And we say, great, port 80 is
+OK under certain circumstances.
+
+291
+00:12:38,430 --> 00:12:40,430
+Now, right now, we don't
+have anything in place.
+
+292
+00:12:40,430 --> 00:12:43,310
+It just says, any traffic
+can come in from anywhere.
+
+293
+00:12:43,310 --> 00:12:45,130
+But conceivably, we
+could add in anything
+
+294
+00:12:45,130 --> 00:12:46,300
+if there was like
+password protection
+
+295
+00:12:46,300 --> 00:12:47,260
+or whatever that might be.
+
+296
+00:12:47,260 --> 00:12:48,927
+We're not doing that
+for this right now.
+
+297
+00:12:48,927 --> 00:12:51,220
+But it's just to say that
+we're only allowing traffic
+
+298
+00:12:51,220 --> 00:12:51,980
+through these.
+
+299
+00:12:51,980 --> 00:12:53,440
+That means that
+if somebody tries
+
+300
+00:12:53,440 --> 00:12:55,930
+to come in with any
+sort of other traffic,
+
+301
+00:12:55,930 --> 00:12:57,667
+it's not going to be allowed.
+
+302
+00:12:57,667 --> 00:12:59,500
+This is the same reason
+I said if you wanted
+
+303
+00:12:59,500 --> 00:13:02,860
+to open up or build a
+website on your laptop
+
+304
+00:13:02,860 --> 00:13:04,570
+and it's hosted
+from your house, you
+
+305
+00:13:04,570 --> 00:13:06,280
+would have to go into
+your home network
+
+306
+00:13:06,280 --> 00:13:09,100
+and open up a port
+to allow traffic in
+
+307
+00:13:09,100 --> 00:13:11,170
+and also to allow traffic out.
+
+308
+00:13:11,170 --> 00:13:13,330
+By default, we typically
+allow all traffic out
+
+309
+00:13:13,330 --> 00:13:15,010
+because that says,
+hey, from my computer
+
+310
+00:13:15,010 --> 00:13:17,890
+or from my EC2 instance,
+I can connect to anything
+
+311
+00:13:17,890 --> 00:13:20,120
+on the internet.
+
+312
+00:13:20,120 --> 00:13:21,020
+So great.
+
+313
+00:13:21,020 --> 00:13:23,780
+Now, let's pull
+that back up then.
+
+314
+00:13:23,780 --> 00:13:26,370
+I'd say that, that was
+from the machine side.
+
+315
+00:13:26,370 --> 00:13:29,120
+And so what I was getting
+at is Apache as well
+
+316
+00:13:29,120 --> 00:13:30,810
+has its own firewall in place.
+
+317
+00:13:30,810 --> 00:13:33,710
+So by default, nothing
+is allowed through.
+
+318
+00:13:33,710 --> 00:13:39,200
+So once we enable
+our firewall, we
+
+319
+00:13:39,200 --> 00:13:42,200
+will not allow any traffic
+in through anywhere.
+
+320
+00:13:42,200 --> 00:13:47,630
+So you can check that by
+saying sudo ufw status.
+
+321
+00:13:47,630 --> 00:13:49,763
+Notice, right now, our
+firewall is inactive,
+
+322
+00:13:49,763 --> 00:13:51,680
+but we're going to enable
+it before we launch,
+
+323
+00:13:51,680 --> 00:13:53,070
+or before we connect to this.
+
+324
+00:13:53,070 --> 00:13:54,860
+One of the first
+things I do though is I
+
+325
+00:13:54,860 --> 00:14:00,590
+do sudo ufw allow SSH.
+
+326
+00:14:00,590 --> 00:14:02,030
+This is important.
+
+327
+00:14:02,030 --> 00:14:06,060
+And this can-- this has
+caused me a lot of headaches.
+
+328
+00:14:06,060 --> 00:14:10,940
+If you forget to enable SSH
+in the firewall, the SSH port,
+
+329
+00:14:10,940 --> 00:14:13,402
+that port 22 on the
+firewall, then what'll happen
+
+330
+00:14:13,402 --> 00:14:15,110
+is if you ever close
+out of this terminal
+
+331
+00:14:15,110 --> 00:14:16,920
+and try to reconnect
+to your instance,
+
+332
+00:14:16,920 --> 00:14:19,110
+it's going to be restricted.
+
+333
+00:14:19,110 --> 00:14:22,080
+I do not allow traffic in
+through SSH connections.
+
+334
+00:14:22,080 --> 00:14:25,090
+And since that's the way we
+actually open up our instance,
+
+335
+00:14:25,090 --> 00:14:26,970
+we can't even edit
+it or change it
+
+336
+00:14:26,970 --> 00:14:29,200
+because we've just
+disallowed it entirely.
+
+337
+00:14:29,200 --> 00:14:30,715
+So be very careful with this.
+
+338
+00:14:30,715 --> 00:14:32,590
+We don't have access to
+the physical machine,
+
+339
+00:14:32,590 --> 00:14:36,010
+so the only way we are
+connecting to it is through SSH.
+
+340
+00:14:36,010 --> 00:14:38,950
+And so we want to make sure
+we keep that port open.
+
+341
+00:14:38,950 --> 00:14:41,970
+So I always allow SSH.
+
+342
+00:14:41,970 --> 00:14:47,460
+And then I say sudo ufw enable.
+
+343
+00:14:47,460 --> 00:14:49,890
+And notice, that's going
+to note, it's going to say,
+
+344
+00:14:49,890 --> 00:14:52,330
+hey, you could disrupt
+your SSH connection.
+
+345
+00:14:52,330 --> 00:14:54,370
+It's OK because
+we've allowed that.
+
+346
+00:14:54,370 --> 00:14:57,540
+It's active and
+enabled in our system.
+
+347
+00:14:57,540 --> 00:15:02,680
+And now, if I do sudo ufw
+status, it should show that.
+
+348
+00:15:02,680 --> 00:15:06,530
+OK, great, port 22 is
+allowed from anywhere.
+
+349
+00:15:06,530 --> 00:15:10,940
+Now, we also need to
+allow access for Apache.
+
+350
+00:15:10,940 --> 00:15:17,210
+So we'll do sudo
+ufw allow 'Apache'.
+
+351
+00:15:17,210 --> 00:15:21,380
+Will do quotation marks there.
+
+352
+00:15:21,380 --> 00:15:25,295
+And then finally, we want to
+allow traffic through port
+
+353
+00:15:25,295 --> 00:15:25,795
+80/tcp.
+
+354
+00:15:30,240 --> 00:15:36,090
+So now if I do my
+sudo ufw status,
+
+355
+00:15:36,090 --> 00:15:39,580
+notice that we now allow traffic
+in through port 80 as well.
+
+356
+00:15:39,580 --> 00:15:40,840
+That's our HTTP traffic.
+
+357
+00:15:40,840 --> 00:15:43,960
+So our firewall has to
+be enabled in this case.
+
+358
+00:15:43,960 --> 00:15:46,650
+And then also on our machine,
+the security incident
+
+359
+00:15:46,650 --> 00:15:50,220
+or the security group has
+to have port access enabled.
+
+360
+00:15:50,220 --> 00:15:52,950
+In the future, you'll
+use tools that handle
+
+361
+00:15:52,950 --> 00:15:54,400
+a lot of this on the back end.
+
+362
+00:15:54,400 --> 00:15:57,180
+So we'll primarily focus
+on our security groups.
+
+363
+00:15:57,180 --> 00:15:59,940
+But in the case of Apache, we
+need to enable this ourselves
+
+364
+00:15:59,940 --> 00:16:00,667
+as well.
+
+365
+00:16:00,667 --> 00:16:02,250
+But again, if you
+ever run into issues
+
+366
+00:16:02,250 --> 00:16:04,380
+where you try to
+connect to your website
+
+367
+00:16:04,380 --> 00:16:06,960
+and it's not loading up
+at all, just spinning
+
+368
+00:16:06,960 --> 00:16:09,210
+and it just doesn't seem
+to be loading anything,
+
+369
+00:16:09,210 --> 00:16:11,950
+or it says, 403
+access forbidden,
+
+370
+00:16:11,950 --> 00:16:14,070
+I would check right
+here on your console
+
+371
+00:16:14,070 --> 00:16:16,120
+and make sure this is enabled.
+
+372
+00:16:16,120 --> 00:16:19,240
+Or similarly, if you go to
+connect to your EC2 instance,
+
+373
+00:16:19,240 --> 00:16:21,360
+try to SSH into
+your EC2 instance,
+
+374
+00:16:21,360 --> 00:16:26,550
+and it says permission denied
+or not, access denied, whatever
+
+375
+00:16:26,550 --> 00:16:29,670
+it says there, I would come
+over here to the security rules
+
+376
+00:16:29,670 --> 00:16:31,120
+and check that this is enabled.
+
+377
+00:16:31,120 --> 00:16:32,790
+If you need to
+enable it again, you
+
+378
+00:16:32,790 --> 00:16:36,750
+can always come over here,
+click the security group,
+
+379
+00:16:36,750 --> 00:16:40,060
+go down to inbound rules,
+edit inbound rules,
+
+380
+00:16:40,060 --> 00:16:41,350
+and you can add a rule.
+
+381
+00:16:41,350 --> 00:16:43,180
+So for example, if
+SSH wasn't there,
+
+382
+00:16:43,180 --> 00:16:47,760
+you would just come in here,
+click SSH and select everywhere.
+
+383
+00:16:47,760 --> 00:16:51,900
+But it's already enabled,
+so we'll just ignore that.
+
+384
+00:16:51,900 --> 00:16:56,220
+So coming all the way back
+now, pull up my terminal again.
+
+385
+00:16:56,220 --> 00:16:59,760
+So we've now enabled
+our firewall.
+
+386
+00:16:59,760 --> 00:17:02,980
+And Apache actually, by
+default, puts a website live.
+
+387
+00:17:02,980 --> 00:17:06,490
+So pretty sure if we just
+click open address right now,
+
+388
+00:17:06,490 --> 00:17:10,290
+we should see a default page.
+
+389
+00:17:10,290 --> 00:17:12,900
+Don't quote me on this.
+
+390
+00:17:12,900 --> 00:17:14,609
+Let's see here.
+
+391
+00:17:14,609 --> 00:17:17,329
+Bet, this is why.
+
+392
+00:17:17,329 --> 00:17:18,089
+There you go.
+
+393
+00:17:18,089 --> 00:17:20,900
+So all I did was I clicked open
+address where you can literally
+
+394
+00:17:20,900 --> 00:17:24,770
+copy and paste that
+into your URL bar here.
+
+395
+00:17:24,770 --> 00:17:27,109
+And notice that it
+was just hanging here
+
+396
+00:17:27,109 --> 00:17:28,860
+and it wasn't loading up.
+
+397
+00:17:28,860 --> 00:17:30,420
+And my hunch was correct.
+
+398
+00:17:30,420 --> 00:17:34,320
+If you click into
+your URL bar twice,
+
+399
+00:17:34,320 --> 00:17:37,190
+you'll notice that it's
+trying to use HTTPS.
+
+400
+00:17:37,190 --> 00:17:41,070
+And as we just said, we did not
+enable traffic through HTTPS.
+
+401
+00:17:41,070 --> 00:17:44,027
+The default port, I
+think, is 443 for that.
+
+402
+00:17:44,027 --> 00:17:45,860
+And we also have it
+enabled the certificate,
+
+403
+00:17:45,860 --> 00:17:47,190
+so this wouldn't work.
+
+404
+00:17:47,190 --> 00:17:52,235
+So if I backspace out that
+HTTPS and just do HTTP--
+
+405
+00:17:52,235 --> 00:17:54,110
+it's terrible to say it
+over and over again--
+
+406
+00:17:54,110 --> 00:17:57,110
+and hit enter, then it
+pulls up to the default page
+
+407
+00:17:57,110 --> 00:17:59,450
+and lets you know,
+hey, it works.
+
+408
+00:17:59,450 --> 00:18:02,090
+You are connected to your
+instance, your EC2 instance
+
+409
+00:18:02,090 --> 00:18:04,680
+via website now.
+
+410
+00:18:04,680 --> 00:18:07,420
+But we want to have some
+actual content on there.
+
+411
+00:18:07,420 --> 00:18:21,510
+So if you do
+cd/var/www/HTML and type ls,
+
+412
+00:18:21,510 --> 00:18:25,230
+this will bring up
+your index.html.
+
+413
+00:18:25,230 --> 00:18:26,680
+And that is the page.
+
+414
+00:18:26,680 --> 00:18:32,760
+If I do nano index.html
+or vi, whichever--
+
+415
+00:18:32,760 --> 00:18:35,310
+let's do vi, since I can't
+remember which you guys have
+
+416
+00:18:35,310 --> 00:18:37,410
+been using more often than not.
+
+417
+00:18:37,410 --> 00:18:38,680
+Either one works.
+
+418
+00:18:38,680 --> 00:18:41,100
+You'll see that this
+is the actual HTML
+
+419
+00:18:41,100 --> 00:18:43,230
+page we just saw there.
+
+420
+00:18:43,230 --> 00:18:45,912
+So at the top--
+
+421
+00:18:45,912 --> 00:18:47,120
+let's see, where's the title?
+
+422
+00:18:47,120 --> 00:18:52,980
+Apache2 Ubuntu
+default page up here.
+
+423
+00:18:52,980 --> 00:18:55,870
+All the text that's in
+that page is shown here.
+
+424
+00:18:55,870 --> 00:18:59,580
+And so I'm just going to
+click escape, colon, and q
+
+425
+00:18:59,580 --> 00:19:02,280
+to back out of that.
+
+426
+00:19:02,280 --> 00:19:04,640
+But now, let's say I
+want to change that.
+
+427
+00:19:04,640 --> 00:19:08,450
+I want to put my
+own text in there.
+
+428
+00:19:08,450 --> 00:19:10,570
+I want to put my own
+website in there.
+
+429
+00:19:10,570 --> 00:19:11,917
+Very easy to do.
+
+430
+00:19:11,917 --> 00:19:13,250
+I'm going to use nano this time.
+
+431
+00:19:13,250 --> 00:19:15,410
+Nano again is just
+another text editor.
+
+432
+00:19:15,410 --> 00:19:18,993
+So nano index.html.
+
+433
+00:19:18,993 --> 00:19:21,410
+Actually, before I do that,
+I'm going to delete this file.
+
+434
+00:19:21,410 --> 00:19:23,368
+I don't want to have to
+backspace all that out.
+
+435
+00:19:23,368 --> 00:19:28,220
+So I'm just going to
+do sudo rm index.html.
+
+436
+00:19:28,220 --> 00:19:33,430
+We have to do sudo because the
+var folder is not, by default,
+
+437
+00:19:33,430 --> 00:19:35,418
+accessible by a user account.
+
+438
+00:19:35,418 --> 00:19:37,210
+And so we basically
+have to have root level
+
+439
+00:19:37,210 --> 00:19:38,240
+permissions to do that.
+
+440
+00:19:38,240 --> 00:19:42,160
+So that's why I'm doing sudo rm.
+
+441
+00:19:42,160 --> 00:19:49,045
+Now, I'm going to do
+sudo nano index.html.
+
+442
+00:19:49,045 --> 00:19:50,170
+The reason I'm doing sudo--
+
+443
+00:19:50,170 --> 00:19:51,920
+I should have probably
+done it before this one
+
+444
+00:19:51,920 --> 00:19:52,880
+before the vi command.
+
+445
+00:19:52,880 --> 00:19:54,770
+It didn't matter because
+I didn't edit the file.
+
+446
+00:19:54,770 --> 00:19:56,320
+But if I tried to edit
+and save the file,
+
+447
+00:19:56,320 --> 00:19:57,490
+it would have thrown
+an error because I
+
+448
+00:19:57,490 --> 00:19:59,800
+don't have permissions to
+edit the file as just my user
+
+449
+00:19:59,800 --> 00:20:00,300
+account.
+
+450
+00:20:00,300 --> 00:20:02,840
+So again, need root
+level permissions.
+
+451
+00:20:02,840 --> 00:20:04,750
+I'm going to edit the file.
+
+452
+00:20:04,750 --> 00:20:05,863
+And now, it's blank.
+
+453
+00:20:05,863 --> 00:20:08,030
+It doesn't say anything
+because we deleted the file,
+
+454
+00:20:08,030 --> 00:20:11,080
+so we're recreating
+it as a blank file.
+
+455
+00:20:11,080 --> 00:20:13,695
+So now, we can just
+type in some HTML code.
+
+456
+00:20:13,695 --> 00:20:15,070
+And we'll say--
+OK, this is going
+
+457
+00:20:15,070 --> 00:20:16,820
+to be a really bad website.
+
+458
+00:20:16,820 --> 00:20:18,590
+You guys know I'm not
+a graphic designer.
+
+459
+00:20:18,590 --> 00:20:33,090
+But it'll say, my first
+website, body, and HTML, great.
+
+460
+00:20:33,090 --> 00:20:39,780
+And then we'll do Control
+x, and yes, and Enter.
+
+461
+00:20:39,780 --> 00:20:45,530
+And now, if I refresh this
+page, you can see here,
+
+462
+00:20:45,530 --> 00:20:47,560
+it says my first website.
+
+463
+00:20:47,560 --> 00:20:49,940
+And you can pull it up on
+your phone as well, too.
+
+464
+00:20:49,940 --> 00:20:52,310
+So if you have your phone
+live or next to you,
+
+465
+00:20:52,310 --> 00:20:54,400
+you should be able to
+open up this website
+
+466
+00:20:54,400 --> 00:20:57,160
+on your mobile device
+because it as well is just
+
+467
+00:20:57,160 --> 00:21:00,140
+a website, a publicly
+available website now.
+
+468
+00:21:00,140 --> 00:21:03,610
+So typing it in, let's see
+if this lets me show it here
+
+469
+00:21:03,610 --> 00:21:05,462
+on the screen.
+
+470
+00:21:05,462 --> 00:21:08,400
+It's very small.
+
+471
+00:21:08,400 --> 00:21:10,800
+But you can see it's
+going to be blinking
+
+472
+00:21:10,800 --> 00:21:12,160
+in and out of existence.
+
+473
+00:21:12,160 --> 00:21:15,550
+But right here, it shows my
+first website on that page.
+
+474
+00:21:15,550 --> 00:21:16,870
+So it's now live.
+
+475
+00:21:16,870 --> 00:21:20,220
+It's a publicly available
+website, so great.
+
+476
+00:21:20,220 --> 00:21:23,062
+We've got that now, but we
+want it to be interesting.
+
+477
+00:21:23,062 --> 00:21:25,020
+Again, I'm not a web
+designer, so I'll actually
+
+478
+00:21:25,020 --> 00:21:27,270
+show you what I did here.
+
+479
+00:21:27,270 --> 00:21:30,730
+So if we open up--
+
+480
+00:21:30,730 --> 00:21:31,885
+I have it somewhere.
+
+481
+00:21:31,885 --> 00:21:33,010
+Let's just open it up here.
+
+482
+00:21:33,010 --> 00:21:37,050
+If we just open up
+chat.openai.com and then--
+
+483
+00:21:37,050 --> 00:21:39,900
+I actually did this right here.
+
+484
+00:21:39,900 --> 00:21:42,250
+I just uploaded my
+resume and I said,
+
+485
+00:21:42,250 --> 00:21:44,280
+can you create a
+professional but minimal HTML
+
+486
+00:21:44,280 --> 00:21:49,020
+only, resume-based website or
+resume based off of the attached
+
+487
+00:21:49,020 --> 00:21:51,370
+PDF for me to host on a server?
+
+488
+00:21:51,370 --> 00:21:55,050
+And so I just uploaded an
+old version of my resume,
+
+489
+00:21:55,050 --> 00:21:56,680
+hit the Run button.
+
+490
+00:21:56,680 --> 00:21:58,380
+I copied this code here.
+
+491
+00:21:58,380 --> 00:21:59,650
+And we can do this right now.
+
+492
+00:21:59,650 --> 00:22:01,290
+So let's copy this code.
+
+493
+00:22:01,290 --> 00:22:03,690
+And then I'll come
+over-- and obviously, you
+
+494
+00:22:03,690 --> 00:22:05,170
+would need to do
+this on your own.
+
+495
+00:22:05,170 --> 00:22:08,670
+So use ChatGPT,
+or Google Gemini,
+
+496
+00:22:08,670 --> 00:22:09,940
+or whatever tool you want to.
+
+497
+00:22:09,940 --> 00:22:15,330
+Or just go find a resume
+template online at HTML only one
+
+498
+00:22:15,330 --> 00:22:17,820
+and you can copy and paste that.
+
+499
+00:22:17,820 --> 00:22:21,060
+But either way, I'll copy
+this one here that I created.
+
+500
+00:22:21,060 --> 00:22:23,760
+Come back over to
+my terminal and I'll
+
+501
+00:22:23,760 --> 00:22:29,390
+say sudo nano index.html again.
+
+502
+00:22:29,390 --> 00:22:33,440
+And so now, I'm going to
+replace all of this text
+
+503
+00:22:33,440 --> 00:22:35,897
+with this long HTML.
+
+504
+00:22:35,897 --> 00:22:37,730
+So there's going to be
+a lot of text in here
+
+505
+00:22:37,730 --> 00:22:40,105
+and it's going to look a little
+scary, but it's all good.
+
+506
+00:22:40,105 --> 00:22:42,460
+So we're just going to paste.
+
+507
+00:22:42,460 --> 00:22:44,620
+And notice, this
+is all that HTML
+
+508
+00:22:44,620 --> 00:22:47,660
+that ChatGPT just
+created for me.
+
+509
+00:22:47,660 --> 00:22:51,520
+And then again, to save on
+nano, you click control x,
+
+510
+00:22:51,520 --> 00:22:55,020
+and say yes, and hit Enter.
+
+511
+00:22:55,020 --> 00:23:01,320
+And now, if we come back over
+to this website, hit Refresh,
+
+512
+00:23:01,320 --> 00:23:04,410
+and you got yourself a pretty
+slick looking resume now.
+
+513
+00:23:04,410 --> 00:23:06,900
+Not the fanciest.
+
+514
+00:23:06,900 --> 00:23:09,078
+But there will be
+an exercise for you
+
+515
+00:23:09,078 --> 00:23:10,620
+to play around with
+and see, or there
+
+516
+00:23:10,620 --> 00:23:12,870
+should be an exercise
+for you to play around
+
+517
+00:23:12,870 --> 00:23:14,890
+with and try to expand on this.
+
+518
+00:23:14,890 --> 00:23:18,370
+But to give you a short version,
+this is just a HTML now.
+
+519
+00:23:18,370 --> 00:23:20,370
+So you could go in and
+you could say, all right,
+
+520
+00:23:20,370 --> 00:23:22,787
+I want to create all sorts of
+different variations on this
+
+521
+00:23:22,787 --> 00:23:23,860
+or edit things.
+
+522
+00:23:23,860 --> 00:23:28,320
+I could edit the text in there
+by just editing that HTML file.
+
+523
+00:23:28,320 --> 00:23:31,780
+I could start to add style
+elements by integrating CSS.
+
+524
+00:23:31,780 --> 00:23:33,030
+And I'll leave it to you guys.
+
+525
+00:23:33,030 --> 00:23:34,660
+Again, this is not a
+web development class.
+
+526
+00:23:34,660 --> 00:23:36,730
+There's a whole separate series
+for that in our department,
+
+527
+00:23:36,730 --> 00:23:38,380
+so you're welcome
+to look at that.
+
+528
+00:23:38,380 --> 00:23:39,880
+But if you want to
+on your own time,
+
+529
+00:23:39,880 --> 00:23:41,587
+you're welcome to pull on out.
+
+530
+00:23:41,587 --> 00:23:43,170
+And that's also my
+phone number if you
+
+531
+00:23:43,170 --> 00:23:45,750
+need to call, text, email.
+
+532
+00:23:45,750 --> 00:23:48,120
+But I'll leave it
+to you guys if you
+
+533
+00:23:48,120 --> 00:23:52,020
+want to look at CSS for styling,
+JavaScript for interactivity
+
+534
+00:23:52,020 --> 00:23:54,460
+and expanded functionality
+of your website.
+
+535
+00:23:54,460 --> 00:23:59,050
+So this is a real way you can
+go and build and launch, host,
+
+536
+00:23:59,050 --> 00:24:01,750
+deploy a live website.
+
+537
+00:24:01,750 --> 00:24:03,620
+Again, like I said,
+this is no different.
+
+538
+00:24:03,620 --> 00:24:05,350
+I can pull this up on
+my phone right now,
+
+539
+00:24:05,350 --> 00:24:06,640
+hit the Refresh button.
+
+540
+00:24:06,640 --> 00:24:08,320
+And if it shows up
+here, you can see
+
+541
+00:24:08,320 --> 00:24:10,490
+that I got the same file there.
+
+542
+00:24:10,490 --> 00:24:12,260
+Sorry, it keeps blinking
+out of existence.
+
+543
+00:24:12,260 --> 00:24:15,670
+But it's all to say, this is
+a relatively straightforward
+
+544
+00:24:15,670 --> 00:24:16,770
+process.
+
+545
+00:24:16,770 --> 00:24:18,520
+Few button clicks, and
+we've got ourselves
+
+546
+00:24:18,520 --> 00:24:21,550
+a live website accessible
+anywhere in the world.
+
+547
+00:24:21,550 --> 00:24:25,970
+You can certainly go steal and
+mask it with a real domain name.
+
+548
+00:24:25,970 --> 00:24:29,765
+But I'd say that even just
+from this little bit alone,
+
+549
+00:24:29,765 --> 00:24:31,390
+it's starting to make
+a lot of progress
+
+550
+00:24:31,390 --> 00:24:34,810
+and show a lot of capability
+if you can already do this.
+
+551
+00:24:34,810 --> 00:24:37,772
+So play around with
+it, experiment.
+
+552
+00:24:37,772 --> 00:24:39,230
+You're not going
+to break anything.
+
+553
+00:24:39,230 --> 00:24:40,647
+You're not going
+to ruin anything.
+
+554
+00:24:40,647 --> 00:24:42,990
+Worst case, if it doesn't
+work, you delete the instance,
+
+555
+00:24:42,990 --> 00:24:49,062
+you start it over from
+these steps again, so yeah.
+
+556
+00:24:49,062 --> 00:24:51,520
+Last thing I want to show you
+how we can obviously clean up
+
+557
+00:24:51,520 --> 00:24:53,000
+any resources we've used.
+
+558
+00:24:53,000 --> 00:24:56,090
+The only thing we've done so
+far is launch an EC2 instance,
+
+559
+00:24:56,090 --> 00:24:57,860
+so this is relatively easy.
+
+560
+00:24:57,860 --> 00:25:00,410
+We're going to come over here
+once we're done with this.
+
+561
+00:25:00,410 --> 00:25:02,240
+Note that again,
+once you delete this,
+
+562
+00:25:02,240 --> 00:25:04,580
+your website will
+not be live anymore.
+
+563
+00:25:04,580 --> 00:25:07,480
+Also, if you stop this
+instance and then restart it
+
+564
+00:25:07,480 --> 00:25:10,490
+next time, you will get
+a different IP address.
+
+565
+00:25:10,490 --> 00:25:12,290
+So it'll keep changing that.
+
+566
+00:25:12,290 --> 00:25:16,000
+So there is a whole thing
+on elastic IP addresses
+
+567
+00:25:16,000 --> 00:25:18,070
+that allow you to
+assign a permanent IP
+
+568
+00:25:18,070 --> 00:25:19,600
+address to an instance.
+
+569
+00:25:19,600 --> 00:25:21,100
+Again, not
+necessarily right now,
+
+570
+00:25:21,100 --> 00:25:23,517
+or if you're just going to
+leave this live the whole time,
+
+571
+00:25:23,517 --> 00:25:25,450
+but keep that in mind.
+
+572
+00:25:25,450 --> 00:25:30,830
+So you terminate.
+
+573
+00:25:30,830 --> 00:25:32,330
+And it's in the
+shutting down state.
+
+574
+00:25:32,330 --> 00:25:33,980
+But otherwise, we're good to go.
+
+575
+00:25:33,980 --> 00:25:35,320
+So we'll leave it at that.
+
+576
+00:25:35,320 --> 00:25:38,770
+And next time, we'll pick up and
+enhance the website capabilities
+
+577
+00:25:38,770 --> 00:25:40,870
+and functionalities even more.
+
+578
+00:25:40,870 --> 00:25:42,500
+So thank you, guys.

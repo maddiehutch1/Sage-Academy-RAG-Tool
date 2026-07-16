@@ -1,0 +1,3294 @@
+1
+00:00:00,427 --> 00:00:01,510
+INSTRUCTOR: Hey, everyone.
+
+2
+00:00:01,510 --> 00:00:02,490
+Welcome back.
+
+3
+00:00:02,490 --> 00:00:05,790
+So in last week's video or
+the last video, so probably
+
+4
+00:00:05,790 --> 00:00:08,020
+the same week, but
+in the last video,
+
+5
+00:00:08,020 --> 00:00:11,110
+we talked about using
+databases in the cloud.
+
+6
+00:00:11,110 --> 00:00:14,095
+So we're pivoting now to this
+new domain of not working
+
+7
+00:00:14,095 --> 00:00:15,220
+on websites for the second.
+
+8
+00:00:15,220 --> 00:00:18,000
+We're just focusing on
+developing and deploying
+
+9
+00:00:18,000 --> 00:00:22,770
+databases to be leveraged either
+by our company, or our software
+
+10
+00:00:22,770 --> 00:00:25,390
+developers, or our web
+developers, data scientists,
+
+11
+00:00:25,390 --> 00:00:29,155
+or maybe we just need again
+a place to host our data.
+
+12
+00:00:29,155 --> 00:00:30,780
+Specifically, we're
+going to be talking
+
+13
+00:00:30,780 --> 00:00:32,250
+about structured
+data, so data that
+
+14
+00:00:32,250 --> 00:00:36,180
+has rows and columns, though
+arguably similar steps can
+
+15
+00:00:36,180 --> 00:00:38,830
+be taken if we have
+unstructured data as well too.
+
+16
+00:00:38,830 --> 00:00:42,190
+But for now, we're going to
+focus on relational databases.
+
+17
+00:00:42,190 --> 00:00:47,640
+And to that end, I want to talk
+today about Amazon's RDS, so
+
+18
+00:00:47,640 --> 00:00:49,240
+Relational Database Service.
+
+19
+00:00:49,240 --> 00:00:53,755
+So this is a tool, and that's
+what you can see behind me.
+
+20
+00:00:53,755 --> 00:00:55,380
+So I guess I could
+just drop myself out
+
+21
+00:00:55,380 --> 00:00:56,712
+of the way for a second.
+
+22
+00:00:56,712 --> 00:00:58,420
+Here we'll go down
+the bottom right side.
+
+23
+00:00:58,420 --> 00:00:59,430
+How about that?
+
+24
+00:00:59,430 --> 00:01:04,010
+So this is a tool, zoom in a
+bit, that is a managed service.
+
+25
+00:01:04,010 --> 00:01:08,860
+So it is managed in the sense
+that if we deploy an RDS
+
+26
+00:01:08,860 --> 00:01:11,140
+instance, a database
+instance, we
+
+27
+00:01:11,140 --> 00:01:13,750
+won't be expected to manage the
+hardware or the infrastructure
+
+28
+00:01:13,750 --> 00:01:14,417
+in the back end.
+
+29
+00:01:14,417 --> 00:01:16,670
+Auto scaling should
+happen automatically.
+
+30
+00:01:16,670 --> 00:01:19,340
+Security and all that stuff
+should happen automatically.
+
+31
+00:01:19,340 --> 00:01:24,050
+We're purely defining what we
+want our database to look like.
+
+32
+00:01:24,050 --> 00:01:25,640
+So today, in this
+video, we're going
+
+33
+00:01:25,640 --> 00:01:29,420
+to all create a database
+together basically, but be very
+
+34
+00:01:29,420 --> 00:01:31,020
+mindful that these do cost us.
+
+35
+00:01:31,020 --> 00:01:34,010
+This is actually kind of, by
+construction, can't be smaller
+
+36
+00:01:34,010 --> 00:01:36,120
+than 20 gigabyte
+database instances.
+
+37
+00:01:36,120 --> 00:01:38,010
+So we will be paying
+for that storage.
+
+38
+00:01:38,010 --> 00:01:39,890
+So once you complete
+this video, make
+
+39
+00:01:39,890 --> 00:01:42,710
+sure you delete your
+database instance.
+
+40
+00:01:42,710 --> 00:01:44,430
+We'll get to an
+assignment later on.
+
+41
+00:01:44,430 --> 00:01:46,597
+We'll have you create
+one, leverage it,
+
+42
+00:01:46,597 --> 00:01:48,930
+and we'll talk about those
+details when that time comes.
+
+43
+00:01:48,930 --> 00:01:50,870
+But for this assignment,
+or better statement,
+
+44
+00:01:50,870 --> 00:01:53,610
+for this video, feel free
+to work alongside me.
+
+45
+00:01:53,610 --> 00:01:55,322
+Deploy one, set it up.
+
+46
+00:01:55,322 --> 00:01:56,780
+But once you're
+done, make sure you
+
+47
+00:01:56,780 --> 00:01:59,000
+follow the steps at the very
+end to delete everything
+
+48
+00:01:59,000 --> 00:01:59,767
+as well too.
+
+49
+00:01:59,767 --> 00:02:02,100
+If not, I'm just going to go
+through it and wipe things,
+
+50
+00:02:02,100 --> 00:02:04,620
+but I can't be on top of
+this every day, all day.
+
+51
+00:02:04,620 --> 00:02:09,400
+So just please keep that in mind
+and be considerate with that.
+
+52
+00:02:09,400 --> 00:02:09,900
+All right.
+
+53
+00:02:09,900 --> 00:02:13,590
+So with that out the way,
+let's start by first,
+
+54
+00:02:13,590 --> 00:02:15,510
+if you haven't gotten
+to this page yet,
+
+55
+00:02:15,510 --> 00:02:16,525
+you can just search RDS.
+
+56
+00:02:16,525 --> 00:02:18,650
+Click here, and it'll bring
+you back to right where
+
+57
+00:02:18,650 --> 00:02:20,600
+we're at right now.
+
+58
+00:02:20,600 --> 00:02:23,520
+So now my internet's going to
+be laggy and kind of hang here
+
+59
+00:02:23,520 --> 00:02:25,020
+for a second.
+
+60
+00:02:25,020 --> 00:02:26,412
+So there we go.
+
+61
+00:02:26,412 --> 00:02:27,370
+We're back to this now.
+
+62
+00:02:27,370 --> 00:02:32,310
+So what I want you to do is just
+click Create Database first.
+
+63
+00:02:32,310 --> 00:02:33,960
+And so you can either
+click it there,
+
+64
+00:02:33,960 --> 00:02:35,620
+or if that prompt
+isn't showing up,
+
+65
+00:02:35,620 --> 00:02:37,680
+I don't know why my
+internet is so slow today.
+
+66
+00:02:37,680 --> 00:02:39,277
+If that prompt is
+not showing up,
+
+67
+00:02:39,277 --> 00:02:40,860
+you can click into
+Database Instances.
+
+68
+00:02:40,860 --> 00:02:45,690
+And from here, you can
+do Create Database.
+
+69
+00:02:45,690 --> 00:02:47,910
+Now under here,
+we're going to do
+
+70
+00:02:47,910 --> 00:02:50,850
+Standard Create to start with.
+
+71
+00:02:50,850 --> 00:02:53,770
+And then you're
+going to click MySQL.
+
+72
+00:02:53,770 --> 00:02:56,053
+So you see we have
+Amazon Aurora, which is,
+
+73
+00:02:56,053 --> 00:02:57,720
+and they have details
+on the right here.
+
+74
+00:02:57,720 --> 00:03:00,060
+Amazon Aurora MySQL
+and PostgreSQL
+
+75
+00:03:00,060 --> 00:03:05,340
+compatible, starting at
+about less than $1 a day.
+
+76
+00:03:05,340 --> 00:03:09,840
+But much faster than MySQL
+and PostgreSQL, a little bit
+
+77
+00:03:09,840 --> 00:03:12,208
+more capacity, a bunch of
+stuff, a bunch of features
+
+78
+00:03:12,208 --> 00:03:13,000
+associated with it.
+
+79
+00:03:13,000 --> 00:03:14,770
+Again, it's an
+Amazon-specific product,
+
+80
+00:03:14,770 --> 00:03:16,228
+so you can imagine
+it's going to be
+
+81
+00:03:16,228 --> 00:03:18,960
+integrated very well with
+the rest of their services.
+
+82
+00:03:18,960 --> 00:03:20,560
+We're going to focus on MySQL.
+
+83
+00:03:20,560 --> 00:03:24,600
+It's a free, small,
+lightweight database engine.
+
+84
+00:03:24,600 --> 00:03:27,160
+And so we'll start here.
+
+85
+00:03:27,160 --> 00:03:28,570
+It's pretty scalable actually.
+
+86
+00:03:28,570 --> 00:03:32,380
+We can leverage this
+up to database sizes,
+
+87
+00:03:32,380 --> 00:03:34,210
+up to 64 terrabytes.
+
+88
+00:03:34,210 --> 00:03:38,820
+So it's going to be enough
+for what we need to do.
+
+89
+00:03:38,820 --> 00:03:42,757
+There's also Oracle, Microsoft
+SQL, Maria, PostgresSQL.
+
+90
+00:03:42,757 --> 00:03:44,340
+For example, things
+like Microsoft SQL
+
+91
+00:03:44,340 --> 00:03:46,890
+will usually require
+an extra upfront cost
+
+92
+00:03:46,890 --> 00:03:48,700
+for the licensing
+of the software.
+
+93
+00:03:48,700 --> 00:03:53,460
+So for now, because we want
+to keep things free and also
+
+94
+00:03:53,460 --> 00:03:55,387
+the most compatible on
+different platforms,
+
+95
+00:03:55,387 --> 00:03:56,345
+we'll stick with MySQL.
+
+96
+00:03:58,878 --> 00:04:01,170
+And you can leave all that
+the same, but versions here.
+
+97
+00:04:01,170 --> 00:04:03,087
+Technically, I'm not
+going to change anything.
+
+98
+00:04:03,087 --> 00:04:06,040
+But if you do change
+this, note that, again, I
+
+99
+00:04:06,040 --> 00:04:09,912
+can't guarantee always that
+things work between versions.
+
+100
+00:04:09,912 --> 00:04:11,870
+Obviously, we're going
+to try to run everything
+
+101
+00:04:11,870 --> 00:04:12,930
+we can on the free tier.
+
+102
+00:04:12,930 --> 00:04:14,630
+But note, that isn't
+for everything,
+
+103
+00:04:14,630 --> 00:04:18,495
+or that doesn't guarantee
+that it will be free.
+
+104
+00:04:18,495 --> 00:04:20,870
+It just says that this is
+running at the free tier level,
+
+105
+00:04:20,870 --> 00:04:21,370
+right?
+
+106
+00:04:21,370 --> 00:04:24,120
+So it'll limit the
+instances we're using.
+
+107
+00:04:24,120 --> 00:04:26,720
+But I think you only
+have up to 750 hours
+
+108
+00:04:26,720 --> 00:04:28,520
+total on the free
+tier, and that's again
+
+109
+00:04:28,520 --> 00:04:29,970
+when you're still in
+that free tier window,
+
+110
+00:04:29,970 --> 00:04:31,020
+so after the first
+year of the account.
+
+111
+00:04:31,020 --> 00:04:32,780
+So I'd be surprised
+if any of these
+
+112
+00:04:32,780 --> 00:04:35,598
+will be free for our
+account, but it's OK.
+
+113
+00:04:35,598 --> 00:04:37,640
+We'll still run it at the
+free tier level in case
+
+114
+00:04:37,640 --> 00:04:42,490
+you're doing this on your
+personal AWS account too.
+
+115
+00:04:42,490 --> 00:04:46,000
+So now we actually get
+to go ahead and define
+
+116
+00:04:46,000 --> 00:04:49,310
+what our database instance
+is going to look like.
+
+117
+00:04:49,310 --> 00:04:52,030
+So first off, the Database
+Instance Identifier
+
+118
+00:04:52,030 --> 00:04:53,450
+is exactly what it sounds like.
+
+119
+00:04:53,450 --> 00:04:55,280
+The identifier for
+your database instance.
+
+120
+00:04:55,280 --> 00:05:02,350
+So let's just call
+this RDS MySQL demo.
+
+121
+00:05:02,350 --> 00:05:03,425
+Call it something unique.
+
+122
+00:05:03,425 --> 00:05:06,190
+It needs to be unique across
+all database instances owned
+
+123
+00:05:06,190 --> 00:05:08,810
+by your AWS account
+in the current region.
+
+124
+00:05:08,810 --> 00:05:12,460
+So if you do RDS MySQL
+demo and mine's still live
+
+125
+00:05:12,460 --> 00:05:14,473
+or somebody else creates
+that same exact name,
+
+126
+00:05:14,473 --> 00:05:15,890
+then it's going
+to throw an error.
+
+127
+00:05:15,890 --> 00:05:17,420
+So just be mindful of that.
+
+128
+00:05:17,420 --> 00:05:22,290
+If you get an error here, the
+name doesn't exist, that's why.
+
+129
+00:05:22,290 --> 00:05:25,140
+Under username, we can
+just leave it as admin.
+
+130
+00:05:25,140 --> 00:05:29,160
+And then under password you can
+either auto-generate a password.
+
+131
+00:05:29,160 --> 00:05:31,840
+Or since we're just playing
+around with this for now,
+
+132
+00:05:31,840 --> 00:05:36,460
+I'm just going to start by
+creating a password for this.
+
+133
+00:05:36,460 --> 00:05:39,300
+So you can call it
+again whatever you want.
+
+134
+00:05:39,300 --> 00:05:41,160
+Just make sure you remember it.
+
+135
+00:05:41,160 --> 00:05:42,530
+So let me make this one.
+
+136
+00:05:48,920 --> 00:05:51,350
+Already messed up.
+
+137
+00:05:51,350 --> 00:05:53,590
+It's very hard to type
+and talk at the same time.
+
+138
+00:05:56,630 --> 00:05:59,600
+There we go.
+
+139
+00:05:59,600 --> 00:06:02,240
+Under Instance
+Configuration now, this
+
+140
+00:06:02,240 --> 00:06:05,340
+is again going to tell you
+what kind of instances,
+
+141
+00:06:05,340 --> 00:06:09,660
+EC2 instances effectively do you
+want running on the back end.
+
+142
+00:06:09,660 --> 00:06:11,660
+So you see, we have a
+bunch of different options
+
+143
+00:06:11,660 --> 00:06:13,280
+here, though a lot
+of them are going
+
+144
+00:06:13,280 --> 00:06:15,570
+to be grayed out because
+we clicked the free tier.
+
+145
+00:06:15,570 --> 00:06:17,120
+So we're just going
+to go to T2 micro
+
+146
+00:06:17,120 --> 00:06:18,750
+because we don't
+need anything fancy.
+
+147
+00:06:18,750 --> 00:06:21,150
+We're going to stick with the
+smallest one possible here.
+
+148
+00:06:21,150 --> 00:06:25,025
+So T2 micro should be
+sufficient for our quick demo.
+
+149
+00:06:25,025 --> 00:06:27,650
+But again, if you decide to do
+something for your final project
+
+150
+00:06:27,650 --> 00:06:30,420
+or anything that you
+want more capacity for,
+
+151
+00:06:30,420 --> 00:06:32,420
+then scale appropriately, right?
+
+152
+00:06:32,420 --> 00:06:35,370
+You can see it provides
+details on the number of vCPUs,
+
+153
+00:06:35,370 --> 00:06:39,470
+the amount of RAM, and even
+also potentially network
+
+154
+00:06:39,470 --> 00:06:40,290
+throughput, right?
+
+155
+00:06:40,290 --> 00:06:41,450
+So the speed.
+
+156
+00:06:41,450 --> 00:06:44,040
+So you see you're getting
+2-gig network speeds here.
+
+157
+00:06:44,040 --> 00:06:46,340
+So this is an actual issue.
+
+158
+00:06:46,340 --> 00:06:50,360
+If you know you need to
+maximize these read/write speeds
+
+159
+00:06:50,360 --> 00:06:56,090
+across the network, then
+make sure you do that.
+
+160
+00:06:56,090 --> 00:06:56,850
+So yeah.
+
+161
+00:06:56,850 --> 00:06:58,600
+And you can see you
+can get all the way up
+
+162
+00:06:58,600 --> 00:07:02,090
+to an 8 vCPUs, 32 gigs of RAM.
+
+163
+00:07:02,090 --> 00:07:04,190
+So we'll take those.
+
+164
+00:07:04,190 --> 00:07:06,740
+And so now, we're
+on to storage type.
+
+165
+00:07:06,740 --> 00:07:09,920
+We're going to just stick
+with General Purpose, gp2.
+
+166
+00:07:09,920 --> 00:07:11,420
+But the important
+thing to note here
+
+167
+00:07:11,420 --> 00:07:13,620
+is it's going to default to 200.
+
+168
+00:07:13,620 --> 00:07:14,415
+Do not do 200.
+
+169
+00:07:14,415 --> 00:07:16,040
+That's way too much
+capacity, and we're
+
+170
+00:07:16,040 --> 00:07:18,860
+going to get charged
+extra for it.
+
+171
+00:07:18,860 --> 00:07:22,903
+And we can again look at
+the cost of gp2 pricing.
+
+172
+00:07:26,630 --> 00:07:28,830
+High performance block storage.
+
+173
+00:07:28,830 --> 00:07:33,840
+So gp2 is currently going for
+$0.10 per gigabyte a month.
+
+174
+00:07:33,840 --> 00:07:37,078
+So again, let's just do
+this math now really quick.
+
+175
+00:07:37,078 --> 00:07:38,870
+I got my phone out,
+just do some quick back
+
+176
+00:07:38,870 --> 00:07:40,078
+of the envelope calculations.
+
+177
+00:07:40,078 --> 00:07:40,970
+You know I love that.
+
+178
+00:07:40,970 --> 00:07:48,350
+If we leave it at 200,
+that would be obviously $20
+
+179
+00:07:48,350 --> 00:07:50,750
+per month per user.
+
+180
+00:07:50,750 --> 00:07:54,308
+And so now let's divide
+that across the 30 days.
+
+181
+00:07:54,308 --> 00:07:56,850
+Let's say you accidentally leave
+this live for the whole day.
+
+182
+00:07:56,850 --> 00:08:02,728
+So it costs about $0.67 per
+user per day keeping this live.
+
+183
+00:08:02,728 --> 00:08:05,270
+But then multiply that by the
+50 students taking this course,
+
+184
+00:08:05,270 --> 00:08:07,800
+and we're already
+doing over $30 a day.
+
+185
+00:08:07,800 --> 00:08:11,247
+So do not leave
+it at 200 in case
+
+186
+00:08:11,247 --> 00:08:13,830
+it's accidentally left live, and
+I don't shut it down in time.
+
+187
+00:08:13,830 --> 00:08:15,240
+Step that down to 20.
+
+188
+00:08:15,240 --> 00:08:17,550
+That's the minimum
+size you'll see here.
+
+189
+00:08:17,550 --> 00:08:19,190
+So just step it down to 20.
+
+190
+00:08:19,190 --> 00:08:21,480
+And then we'll still
+delete it at the end,
+
+191
+00:08:21,480 --> 00:08:26,340
+but that's what
+we'll do for now.
+
+192
+00:08:26,340 --> 00:08:28,590
+Notice too that they have
+a really cool feature that
+
+193
+00:08:28,590 --> 00:08:30,423
+can be very useful, and
+you can always click
+
+194
+00:08:30,423 --> 00:08:31,870
+these infos for the side here.
+
+195
+00:08:31,870 --> 00:08:33,760
+But it does exactly
+what it says.
+
+196
+00:08:33,760 --> 00:08:38,130
+If I'm starting to reach
+that gigabytes capacity,
+
+197
+00:08:38,130 --> 00:08:40,830
+I might not want it to have
+just like not log my data.
+
+198
+00:08:40,830 --> 00:08:44,640
+Let's say I'm doing this
+for storing the transactions
+
+199
+00:08:44,640 --> 00:08:45,580
+of my company, right?
+
+200
+00:08:45,580 --> 00:08:48,180
+The sales of our online
+on our online platform.
+
+201
+00:08:48,180 --> 00:08:49,650
+Well, if all of a
+sudden, our sales
+
+202
+00:08:49,650 --> 00:08:52,990
+are passing or surpassing
+gigabytes in storage,
+
+203
+00:08:52,990 --> 00:08:54,580
+that's a good problem to have.
+
+204
+00:08:54,580 --> 00:08:58,520
+And let's not just miss out on
+this data by hitting capacity.
+
+205
+00:08:58,520 --> 00:09:01,188
+Let's auto scale this up and
+allow ourselves to still collect
+
+206
+00:09:01,188 --> 00:09:02,730
+that data because
+that might arguably
+
+207
+00:09:02,730 --> 00:09:05,470
+be more valuable than the
+cost associated with it.
+
+208
+00:09:05,470 --> 00:09:08,380
+But I don't want to pay
+for stuff I don't need now.
+
+209
+00:09:08,380 --> 00:09:12,420
+So you see here how it defaults
+to having a terabyte basically
+
+210
+00:09:12,420 --> 00:09:19,750
+of auto scaling max capacity.
+
+211
+00:09:19,750 --> 00:09:20,670
+Sorry.
+
+212
+00:09:20,670 --> 00:09:22,920
+Brain freeze there for a second.
+
+213
+00:09:22,920 --> 00:09:23,590
+So yeah.
+
+214
+00:09:23,590 --> 00:09:25,598
+Terabyte maximum is what
+it's setting to you.
+
+215
+00:09:25,598 --> 00:09:27,640
+So that would basically
+say like, OK, maybe we've
+
+216
+00:09:27,640 --> 00:09:29,150
+exceeded this 20 gigabytes.
+
+217
+00:09:29,150 --> 00:09:33,310
+Well, I'm going to let it scale
+up or auto scale up to 1,000
+
+218
+00:09:33,310 --> 00:09:35,950
+gigabytes or a terabyte.
+
+219
+00:09:35,950 --> 00:09:38,420
+I'm going to do this off for
+now because I don't need it.
+
+220
+00:09:38,420 --> 00:09:40,120
+But conceivably,
+if you had it on,
+
+221
+00:09:40,120 --> 00:09:41,950
+you see you could set
+up to basically up
+
+222
+00:09:41,950 --> 00:09:44,180
+to six terabytes for this.
+
+223
+00:09:44,180 --> 00:09:48,650
+So turn that off though for now.
+
+224
+00:09:48,650 --> 00:09:53,690
+Then over here, we are
+going on to the choice now
+
+225
+00:09:53,690 --> 00:09:57,080
+of connectivity.
+
+226
+00:09:57,080 --> 00:10:00,890
+So if you have an existing EC2
+compute resource that you want
+
+227
+00:10:00,890 --> 00:10:02,840
+to attach this to, you could.
+
+228
+00:10:02,840 --> 00:10:04,370
+We don't have
+that, so we're just
+
+229
+00:10:04,370 --> 00:10:09,290
+going to leave that to Don't
+connect to an EC2 compute
+
+230
+00:10:09,290 --> 00:10:10,760
+resource.
+
+231
+00:10:10,760 --> 00:10:12,965
+The VPC, we can just
+leave this as the default.
+
+232
+00:10:12,965 --> 00:10:14,340
+No need to create
+a new one here.
+
+233
+00:10:14,340 --> 00:10:17,120
+It's perfectly fine as it is.
+
+234
+00:10:17,120 --> 00:10:18,680
+And similarly, for
+the subnet, you
+
+235
+00:10:18,680 --> 00:10:20,305
+don't need to change
+the subnet either,
+
+236
+00:10:20,305 --> 00:10:22,820
+and it probably won't
+have any other options.
+
+237
+00:10:22,820 --> 00:10:24,830
+What we do want to do
+is enable public access
+
+238
+00:10:24,830 --> 00:10:27,870
+because I want to be able to
+query this from my computer,
+
+239
+00:10:27,870 --> 00:10:30,410
+like my physical device, this
+laptop that I'm working on
+
+240
+00:10:30,410 --> 00:10:31,120
+right now.
+
+241
+00:10:31,120 --> 00:10:33,180
+I want to be able to
+query this database,
+
+242
+00:10:33,180 --> 00:10:34,890
+obviously with a
+password and all that,
+
+243
+00:10:34,890 --> 00:10:37,188
+but I want to be able to
+reach from the public.
+
+244
+00:10:37,188 --> 00:10:39,480
+Now that's not necessarily
+going to always be the case.
+
+245
+00:10:39,480 --> 00:10:40,890
+And arguably, if
+you're at a company,
+
+246
+00:10:40,890 --> 00:10:43,300
+it's probably going to be less
+often that you would do this.
+
+247
+00:10:43,300 --> 00:10:44,430
+You might leave this as no.
+
+248
+00:10:44,430 --> 00:10:48,090
+And then there won't be a
+public IP address assigned.
+
+249
+00:10:48,090 --> 00:10:51,570
+You'll have to be inside
+the VPC to connect to this.
+
+250
+00:10:51,570 --> 00:10:56,720
+So an EC2 instance that's within
+this VPC could query this,
+
+251
+00:10:56,720 --> 00:10:58,220
+but you wouldn't
+be able to query it
+
+252
+00:10:58,220 --> 00:10:59,310
+from your local machine.
+
+253
+00:10:59,310 --> 00:11:01,100
+So if that extra
+layer of security
+
+254
+00:11:01,100 --> 00:11:04,020
+is needed for your data, which
+you'll know if that's the case,
+
+255
+00:11:04,020 --> 00:11:05,130
+then set that to no.
+
+256
+00:11:05,130 --> 00:11:08,040
+But for now, I do want to
+have this just for simplicity,
+
+257
+00:11:08,040 --> 00:11:10,940
+so we'll leave that as yes.
+
+258
+00:11:10,940 --> 00:11:14,570
+Then for VPC security group,
+I'm going to go ahead,
+
+259
+00:11:14,570 --> 00:11:16,260
+and I think I created one.
+
+260
+00:11:16,260 --> 00:11:19,630
+Yeah, this IS3600RDS
+security group.
+
+261
+00:11:19,630 --> 00:11:22,860
+If that's available for you,
+go ahead and click that.
+
+262
+00:11:22,860 --> 00:11:29,590
+You will likely need to be in
+this Oregon region for that.
+
+263
+00:11:29,590 --> 00:11:32,440
+If it's not available, feel
+free to create a new one.
+
+264
+00:11:32,440 --> 00:11:34,233
+But if you're going
+to create a new one,
+
+265
+00:11:34,233 --> 00:11:36,400
+if you're in a different
+region for whatever reason,
+
+266
+00:11:36,400 --> 00:11:37,570
+that's perfectly fine.
+
+267
+00:11:37,570 --> 00:11:39,780
+Just go ahead and name it.
+
+268
+00:11:39,780 --> 00:11:43,110
+What I just call
+it, so is3600RDSsg.
+
+269
+00:11:43,110 --> 00:11:45,070
+And that way, for the
+next user that comes on,
+
+270
+00:11:45,070 --> 00:11:46,153
+they'll have it available.
+
+271
+00:11:46,153 --> 00:11:49,570
+So feel free to help your fellow
+teammate out if that's the case.
+
+272
+00:11:49,570 --> 00:11:50,487
+But you would do that.
+
+273
+00:11:50,487 --> 00:11:53,195
+And then you wouldn't need to do
+a preference on the availability
+
+274
+00:11:53,195 --> 00:11:53,860
+zone.
+
+275
+00:11:53,860 --> 00:11:57,022
+And you can also just leave this
+database port exactly the same.
+
+276
+00:11:57,022 --> 00:11:58,480
+So again, if you
+need to create it,
+
+277
+00:11:58,480 --> 00:12:00,897
+if this one doesn't already
+exist, go ahead and create it.
+
+278
+00:12:00,897 --> 00:12:01,570
+Leave all this.
+
+279
+00:12:01,570 --> 00:12:05,580
+Everything else is default.
+If you are in this same one
+
+280
+00:12:05,580 --> 00:12:08,170
+and you can see
+this security group,
+
+281
+00:12:08,170 --> 00:12:10,850
+then go ahead and select
+it, if it lets me.
+
+282
+00:12:13,590 --> 00:12:15,820
+I don't know why all of
+a sudden can't select it.
+
+283
+00:12:15,820 --> 00:12:16,610
+There we go.
+
+284
+00:12:16,610 --> 00:12:17,590
+So there we go.
+
+285
+00:12:17,590 --> 00:12:20,470
+Is3600 security group.
+
+286
+00:12:20,470 --> 00:12:23,940
+Now coming down here, this
+database authentication
+
+287
+00:12:23,940 --> 00:12:25,390
+is again exactly what it says.
+
+288
+00:12:25,390 --> 00:12:28,540
+So if I want to
+access this database,
+
+289
+00:12:28,540 --> 00:12:35,010
+is it sufficient to just do it
+with a password authentication?
+
+290
+00:12:35,010 --> 00:12:37,055
+And that's what we're
+going to do right now.
+
+291
+00:12:37,055 --> 00:12:37,930
+We assign a password.
+
+292
+00:12:37,930 --> 00:12:39,400
+We're going to log
+in via that password.
+
+293
+00:12:39,400 --> 00:12:40,442
+So everything's OK there.
+
+294
+00:12:42,960 --> 00:12:45,540
+Do you want maybe more
+security and insist
+
+295
+00:12:45,540 --> 00:12:47,970
+that they have to have IAM
+database authentication, right?
+
+296
+00:12:47,970 --> 00:12:50,470
+Especially if they're doing
+something from the command line,
+
+297
+00:12:50,470 --> 00:12:52,830
+this might be the
+way you rather do it.
+
+298
+00:12:52,830 --> 00:12:55,620
+And then there's
+also this extra step
+
+299
+00:12:55,620 --> 00:12:57,983
+here if you're using Kerberos
+authentication, which
+
+300
+00:12:57,983 --> 00:13:00,400
+is I'm actually not familiar
+with Kerberos authentication.
+
+301
+00:13:00,400 --> 00:13:01,692
+So let's look it up real quick.
+
+302
+00:13:01,692 --> 00:13:06,330
+My guess is some sort of
+active directory symmetric key
+
+303
+00:13:06,330 --> 00:13:07,276
+cryptography.
+
+304
+00:13:09,920 --> 00:13:10,460
+OK.
+
+305
+00:13:10,460 --> 00:13:12,630
+So just another symmetric
+key cryptography option.
+
+306
+00:13:12,630 --> 00:13:14,000
+And so you'll likely
+have a directory
+
+307
+00:13:14,000 --> 00:13:15,780
+with the relevant information
+there if you're using it.
+
+308
+00:13:15,780 --> 00:13:17,930
+But again, obviously
+we're not going to use it
+
+309
+00:13:17,930 --> 00:13:19,553
+since I don't know what it is.
+
+310
+00:13:19,553 --> 00:13:21,470
+So we can just go and
+leave it with that, The.
+
+311
+00:13:21,470 --> 00:13:24,230
+Password authentication for now.
+
+312
+00:13:24,230 --> 00:13:27,552
+We don't need to enable
+enhanced monitoring.
+
+313
+00:13:27,552 --> 00:13:29,510
+We're not trying to watch
+any metrics right now
+
+314
+00:13:29,510 --> 00:13:33,740
+or watch the process threads,
+CPU usage, all that good stuff.
+
+315
+00:13:33,740 --> 00:13:35,995
+You again will know if
+that's the right thing,
+
+316
+00:13:35,995 --> 00:13:36,870
+you need to be doing.
+
+317
+00:13:36,870 --> 00:13:41,240
+But for now, we're
+perfectly fine without it.
+
+318
+00:13:41,240 --> 00:13:43,610
+Under Additional
+Configuration, this
+
+319
+00:13:43,610 --> 00:13:46,348
+is going to be for, let
+me make sure I scroll down
+
+320
+00:13:46,348 --> 00:13:47,640
+and follow along with my notes.
+
+321
+00:13:47,640 --> 00:13:49,223
+I'm not just going
+off the rails here.
+
+322
+00:13:49,223 --> 00:13:50,910
+So under Additional
+Configuration,
+
+323
+00:13:50,910 --> 00:13:54,110
+this is going to be just again,
+what your initial database
+
+324
+00:13:54,110 --> 00:13:55,200
+name is going to be.
+
+325
+00:13:55,200 --> 00:13:57,950
+And so maybe I want
+to call this demodb.
+
+326
+00:13:57,950 --> 00:14:00,060
+You can call it
+whatever you want.
+
+327
+00:14:00,060 --> 00:14:02,780
+If you don't specify a database
+name, RDS doesn't create one,
+
+328
+00:14:02,780 --> 00:14:04,280
+and then you just
+have to create one
+
+329
+00:14:04,280 --> 00:14:05,820
+once you log in
+to your database.
+
+330
+00:14:05,820 --> 00:14:07,980
+But we'll just set a
+default one for now.
+
+331
+00:14:07,980 --> 00:14:12,440
+Leave the parameter group the
+same, the option group the same.
+
+332
+00:14:12,440 --> 00:14:14,690
+We have the choice
+now also of enabling
+
+333
+00:14:14,690 --> 00:14:16,210
+automated backups or not.
+
+334
+00:14:16,210 --> 00:14:17,960
+I'm going to leave
+this on, and then we'll
+
+335
+00:14:17,960 --> 00:14:21,080
+see how we remove this
+once we go to delete this,
+
+336
+00:14:21,080 --> 00:14:22,860
+just for the educational sake.
+
+337
+00:14:22,860 --> 00:14:25,910
+But this does again
+exactly what it says.
+
+338
+00:14:25,910 --> 00:14:28,700
+This stuff is very clear
+in what it's doing.
+
+339
+00:14:28,700 --> 00:14:30,590
+If we don't have this
+enabled, then there
+
+340
+00:14:30,590 --> 00:14:32,730
+won't be any sort of
+automated backups happening,
+
+341
+00:14:32,730 --> 00:14:34,310
+and you will be
+kind of in charge
+
+342
+00:14:34,310 --> 00:14:37,340
+of making sure that everything
+gets backed up as necessary.
+
+343
+00:14:37,340 --> 00:14:41,730
+If we do set it on, then we
+click Enable Automated Backups.
+
+344
+00:14:41,730 --> 00:14:45,140
+We can specify the retention,
+so basically how many days
+
+345
+00:14:45,140 --> 00:14:47,720
+do we keep backups for?
+
+346
+00:14:47,720 --> 00:14:49,890
+And so let's say we just
+keep it for one day, right?
+
+347
+00:14:49,890 --> 00:14:52,020
+Maybe we know that if
+our database goes down,
+
+348
+00:14:52,020 --> 00:14:54,600
+we'll be aware of
+it within a day.
+
+349
+00:14:54,600 --> 00:14:55,843
+And so we can then roll back.
+
+350
+00:14:55,843 --> 00:14:58,260
+Or if we have an issue, we'll
+be aware of it within a day,
+
+351
+00:14:58,260 --> 00:14:59,940
+so we'll only keep
+up to one day.
+
+352
+00:14:59,940 --> 00:15:02,640
+That way, we don't have
+too much stuff stored.
+
+353
+00:15:02,640 --> 00:15:06,350
+And then similarly, you
+could have a backup window.
+
+354
+00:15:06,350 --> 00:15:07,775
+You can set that
+yourself of when
+
+355
+00:15:07,775 --> 00:15:09,150
+you would like
+that backup window
+
+356
+00:15:09,150 --> 00:15:12,340
+to be start time, the
+duration, all that good stuff.
+
+357
+00:15:12,340 --> 00:15:14,780
+We'll just leave no
+preference for now.
+
+358
+00:15:14,780 --> 00:15:17,440
+Then I'm also going to unclick
+Copy Tags to Snapshots just
+
+359
+00:15:17,440 --> 00:15:19,690
+to reduce the things
+we're accidentally saving.
+
+360
+00:15:19,690 --> 00:15:20,780
+Log Exports.
+
+361
+00:15:20,780 --> 00:15:23,440
+If you need to export
+the CloudWatch logs,
+
+362
+00:15:23,440 --> 00:15:24,975
+very much go ahead and do that.
+
+363
+00:15:28,460 --> 00:15:30,870
+So our enabling auto
+minor version upgrade.
+
+364
+00:15:30,870 --> 00:15:32,780
+So as long as it's
+not a major like
+
+365
+00:15:32,780 --> 00:15:35,910
+if we're going from
+MySQL 8.0 to 9.0,
+
+366
+00:15:35,910 --> 00:15:37,460
+that would be a major upgrade.
+
+367
+00:15:37,460 --> 00:15:42,060
+But maybe if there's
+just an 8.0.39 to 8.0.41,
+
+368
+00:15:42,060 --> 00:15:43,820
+that's a minor upgrade.
+
+369
+00:15:43,820 --> 00:15:46,700
+That shouldn't break any sort
+of backwards compatibility.
+
+370
+00:15:46,700 --> 00:15:48,080
+So maybe you want it to do that.
+
+371
+00:15:48,080 --> 00:15:52,730
+Maybe it's just adding
+some extra security
+
+372
+00:15:52,730 --> 00:15:55,550
+or covering up some security
+vulnerabilities or something
+
+373
+00:15:55,550 --> 00:15:56,220
+like that.
+
+374
+00:15:56,220 --> 00:15:57,480
+That isn't a major change.
+
+375
+00:15:57,480 --> 00:16:01,260
+And so you're not worried that
+it's going to break something,
+
+376
+00:16:01,260 --> 00:16:03,830
+but you also want to
+ensure that you have it.
+
+377
+00:16:03,830 --> 00:16:07,980
+If that's the case, then
+go ahead and select this.
+
+378
+00:16:07,980 --> 00:16:10,310
+We'll just turn it off for now.
+
+379
+00:16:10,310 --> 00:16:12,017
+Maintenance Window
+period, you want
+
+380
+00:16:12,017 --> 00:16:14,100
+pending modification or
+maintenance apply to this.
+
+381
+00:16:14,100 --> 00:16:18,980
+So again, if you're like, hey, I
+want these minor upgrades and/or
+
+382
+00:16:18,980 --> 00:16:22,130
+any sort of other maintenance
+tasks done at a specific time,
+
+383
+00:16:22,130 --> 00:16:24,668
+maybe 3:00 AM every morning
+because you know that
+
+384
+00:16:24,668 --> 00:16:27,210
+nobody's going to be logged on
+or connecting to your database
+
+385
+00:16:27,210 --> 00:16:30,323
+then, that's how you set it up.
+
+386
+00:16:30,323 --> 00:16:31,990
+Deletion Protection
+is actually the same
+
+387
+00:16:31,990 --> 00:16:35,510
+as we had with EC2 instances.
+
+388
+00:16:35,510 --> 00:16:38,540
+So if this option is enabled,
+you can't delete the database.
+
+389
+00:16:38,540 --> 00:16:41,210
+Basically, you'll need to, if
+you want to delete the database,
+
+390
+00:16:41,210 --> 00:16:45,130
+come back into this,
+unselect it, and then delete
+
+391
+00:16:45,130 --> 00:16:46,130
+the database.
+
+392
+00:16:46,130 --> 00:16:48,160
+I'm going to leave this
+unselected now, right?
+
+393
+00:16:48,160 --> 00:16:49,180
+Otherwise, you're
+going to get an error
+
+394
+00:16:49,180 --> 00:16:50,263
+when you try to delete it.
+
+395
+00:16:50,263 --> 00:16:52,220
+So let's leave it unselected.
+
+396
+00:16:52,220 --> 00:16:55,190
+Don't click it.
+
+397
+00:16:55,190 --> 00:16:57,770
+And then finally, if we
+had an associated estimate
+
+398
+00:16:57,770 --> 00:16:59,358
+for the cost, it
+would show up here.
+
+399
+00:16:59,358 --> 00:17:01,650
+But we don't since we're
+running this on the free tier.
+
+400
+00:17:01,650 --> 00:17:03,930
+So we can just
+leave this for now.
+
+401
+00:17:03,930 --> 00:17:07,550
+So once that's done, you can go
+ahead and click Create Database.
+
+402
+00:17:07,550 --> 00:17:09,690
+And then it should start
+spinning it up now.
+
+403
+00:17:09,690 --> 00:17:11,190
+And so you'll see it right here.
+
+404
+00:17:11,190 --> 00:17:13,170
+This is my instance.
+
+405
+00:17:13,170 --> 00:17:14,819
+It's in this creating state.
+
+406
+00:17:14,819 --> 00:17:17,800
+If I click on it, it still
+shows up as creating.
+
+407
+00:17:17,800 --> 00:17:19,730
+So I'll pause for
+now, and then I'll
+
+408
+00:17:19,730 --> 00:17:21,720
+come back once mine is live.
+
+409
+00:17:21,720 --> 00:17:25,460
+And then you can also
+hit play once it's live.
+
+410
+00:17:25,460 --> 00:17:29,433
+I realized before it
+finishes getting created,
+
+411
+00:17:29,433 --> 00:17:31,350
+because mine's still in
+the backing up status,
+
+412
+00:17:31,350 --> 00:17:34,880
+but I figured I might as well
+show you this step as well too.
+
+413
+00:17:34,880 --> 00:17:37,710
+We also need to download
+a SQL client, right?
+
+414
+00:17:37,710 --> 00:17:41,570
+So as it stands right now, we're
+creating a database instance.
+
+415
+00:17:41,570 --> 00:17:47,315
+And this instance will exist on
+some computers somewhere, right?
+
+416
+00:17:47,315 --> 00:17:49,200
+But I need to have
+some way to query it.
+
+417
+00:17:49,200 --> 00:17:52,070
+So if you're very well
+versed in Python already
+
+418
+00:17:52,070 --> 00:17:54,110
+and you know R or
+something like that,
+
+419
+00:17:54,110 --> 00:17:55,610
+and you're planning
+to just query it
+
+420
+00:17:55,610 --> 00:17:59,270
+from an application like your
+Flask app, then by all means,
+
+421
+00:17:59,270 --> 00:18:01,760
+you could very much just
+set up a database connection
+
+422
+00:18:01,760 --> 00:18:04,490
+and make that query happen.
+
+423
+00:18:04,490 --> 00:18:06,360
+What I'm going to
+show you now actually
+
+424
+00:18:06,360 --> 00:18:08,223
+though is maybe a
+different way to do this,
+
+425
+00:18:08,223 --> 00:18:10,890
+or better statement, probably an
+easier way to do this, is let's
+
+426
+00:18:10,890 --> 00:18:12,780
+just say we want to
+query it on our computer
+
+427
+00:18:12,780 --> 00:18:15,610
+and just be able to
+manipulate it, whatever.
+
+428
+00:18:15,610 --> 00:18:17,320
+And so if you've
+done SQL before,
+
+429
+00:18:17,320 --> 00:18:20,250
+you might have Microsoft SQL
+Server already on your computer.
+
+430
+00:18:20,250 --> 00:18:23,770
+Or if you already have
+the MySQL Workbench,
+
+431
+00:18:23,770 --> 00:18:26,410
+then you have the SQL
+client we're going to use.
+
+432
+00:18:26,410 --> 00:18:31,360
+So if you don't, there's a link
+in the notes for this lecture,
+
+433
+00:18:31,360 --> 00:18:35,590
+or you can open up or
+visit this link here,
+
+434
+00:18:35,590 --> 00:18:41,340
+dev.mysql.com/download/workbench
+and then choose your relevant
+
+435
+00:18:41,340 --> 00:18:42,510
+operating system.
+
+436
+00:18:42,510 --> 00:18:44,880
+So like for example,
+I'd be on a Mac.
+
+437
+00:18:44,880 --> 00:18:48,300
+Or if you're on
+Windows, select Windows.
+
+438
+00:18:48,300 --> 00:18:51,090
+So it'll be up to you, and
+this is a step where, again, I
+
+439
+00:18:51,090 --> 00:18:53,830
+trust that you guys have the
+skills to do this necessary.
+
+440
+00:18:53,830 --> 00:18:55,830
+But it'll be up to you
+to make sure you download
+
+441
+00:18:55,830 --> 00:18:57,190
+the right version of this.
+
+442
+00:18:57,190 --> 00:18:59,190
+So choose the
+correct architecture
+
+443
+00:18:59,190 --> 00:19:02,737
+or choose the correct version
+for your operating system.
+
+444
+00:19:02,737 --> 00:19:05,320
+I already have it downloaded,
+so it's not going to run for me.
+
+445
+00:19:05,320 --> 00:19:09,090
+But if you click Download
+then on your relevant system,
+
+446
+00:19:09,090 --> 00:19:11,550
+it'll prompt you to
+probably log in, sign up,
+
+447
+00:19:11,550 --> 00:19:15,030
+or begin your download
+or log in or sign up
+
+448
+00:19:15,030 --> 00:19:16,270
+to begin the download.
+
+449
+00:19:16,270 --> 00:19:17,880
+You can also just
+click No Thanks
+
+450
+00:19:17,880 --> 00:19:20,050
+and just start the download
+for a quick download.
+
+451
+00:19:20,050 --> 00:19:22,750
+So it'll be a little bit of
+a blue bar underneath it,
+
+452
+00:19:22,750 --> 00:19:23,688
+but that's OK.
+
+453
+00:19:23,688 --> 00:19:25,480
+Actually, let me see
+if I can show it here.
+
+454
+00:19:25,480 --> 00:19:25,680
+Yeah.
+
+455
+00:19:25,680 --> 00:19:26,730
+So if you just click
+Download, you'll
+
+456
+00:19:26,730 --> 00:19:27,700
+see it shows up, No thanks.
+
+457
+00:19:27,700 --> 00:19:28,718
+Just start my download.
+
+458
+00:19:28,718 --> 00:19:31,260
+That's what you'll click unless
+you want to log in or sign up
+
+459
+00:19:31,260 --> 00:19:34,590
+for an Oracle account.
+
+460
+00:19:34,590 --> 00:19:37,510
+But now let me just make sure,
+let's see if mine's there yet.
+
+461
+00:19:37,510 --> 00:19:39,510
+Otherwise, I can keep
+continuing down the steps,
+
+462
+00:19:39,510 --> 00:19:42,490
+but I want to check.
+
+463
+00:19:42,490 --> 00:19:44,200
+But either way, our
+next step is going
+
+464
+00:19:44,200 --> 00:19:46,620
+to be to connect
+to the SQL client.
+
+465
+00:19:46,620 --> 00:19:48,017
+So, OK, mines available.
+
+466
+00:19:48,017 --> 00:19:49,600
+So you should be
+showing available now
+
+467
+00:19:49,600 --> 00:19:51,970
+to if you are up
+to speed with me.
+
+468
+00:19:51,970 --> 00:19:55,090
+If not, just pause it and wait
+till that showing is available.
+
+469
+00:19:55,090 --> 00:19:56,980
+But once you have
+that, then go ahead
+
+470
+00:19:56,980 --> 00:19:58,730
+and launch your MySQL client.
+
+471
+00:19:58,730 --> 00:20:01,960
+So I'm going to open
+mine up here and then
+
+472
+00:20:01,960 --> 00:20:05,150
+drag it to the top monitor
+once it actually goes live.
+
+473
+00:20:05,150 --> 00:20:06,880
+Here we go.
+
+474
+00:20:06,880 --> 00:20:14,475
+So now what you want to do is go
+into your file or your toolbar
+
+475
+00:20:14,475 --> 00:20:15,350
+if you're on Windows.
+
+476
+00:20:15,350 --> 00:20:18,860
+It'll show up in the box down
+here, wherever it shows up.
+
+477
+00:20:18,860 --> 00:20:19,885
+Go into here.
+
+478
+00:20:19,885 --> 00:20:22,010
+And then you're going to
+click Connect to Database.
+
+479
+00:20:22,010 --> 00:20:24,640
+You can also hit Command U if
+you're on a Mac or Control U
+
+480
+00:20:24,640 --> 00:20:27,200
+if you're on a Windows machine.
+
+481
+00:20:27,200 --> 00:20:30,550
+So we're going to do
+Connect to Database.
+
+482
+00:20:30,550 --> 00:20:34,850
+And then we need to find the
+host name for our instance.
+
+483
+00:20:34,850 --> 00:20:36,790
+And that is actually
+just this endpoint
+
+484
+00:20:36,790 --> 00:20:40,190
+that's showing up on our screen
+here on our database instance.
+
+485
+00:20:40,190 --> 00:20:42,600
+So you're going to
+copy this endpoint.
+
+486
+00:20:42,600 --> 00:20:45,470
+So I did Control
+C. And then where
+
+487
+00:20:45,470 --> 00:20:49,260
+it says host name,
+Control V or Command V,
+
+488
+00:20:49,260 --> 00:20:51,170
+whatever machine you're on.
+
+489
+00:20:51,170 --> 00:20:54,420
+Under username, you're going
+to set the username you set.
+
+490
+00:20:54,420 --> 00:20:57,470
+So if you followed along with
+me, it should just be admin.
+
+491
+00:20:57,470 --> 00:21:00,530
+And then for password, click
+store and keychain, or it
+
+492
+00:21:00,530 --> 00:21:03,858
+might say store and vault
+if you're on a Windows.
+
+493
+00:21:03,858 --> 00:21:05,900
+It just depends on what
+your instance, shows here
+
+494
+00:21:05,900 --> 00:21:09,067
+or your operating system
+for what it shows here.
+
+495
+00:21:09,067 --> 00:21:11,150
+And then here you're going
+to type in the password
+
+496
+00:21:11,150 --> 00:21:13,790
+that you came up with before
+or that auto-generated password
+
+497
+00:21:13,790 --> 00:21:14,335
+that you had.
+
+498
+00:21:18,020 --> 00:21:20,330
+Click OK.
+
+499
+00:21:20,330 --> 00:21:21,180
+Everything's OK.
+
+500
+00:21:21,180 --> 00:21:24,732
+Then we should be good
+here once we click OK.
+
+501
+00:21:24,732 --> 00:21:26,940
+So it's opening this up, so
+that might take a second.
+
+502
+00:21:26,940 --> 00:21:32,278
+So just hang tight
+while that launches.
+
+503
+00:21:32,278 --> 00:21:33,820
+And I guess I can
+just pause for now,
+
+504
+00:21:33,820 --> 00:21:36,730
+and then we'll come
+back in a second.
+
+505
+00:21:36,730 --> 00:21:37,230
+All right.
+
+506
+00:21:37,230 --> 00:21:38,670
+So once you've
+finished that step,
+
+507
+00:21:38,670 --> 00:21:43,040
+you should see a window here
+with your SQL Workbench.
+
+508
+00:21:43,040 --> 00:21:46,760
+Might be a different
+color depending on what
+
+509
+00:21:46,760 --> 00:21:48,150
+your theme is on your computer.
+
+510
+00:21:48,150 --> 00:21:51,560
+But let me see if I can increase
+the size of this at all.
+
+511
+00:21:51,560 --> 00:21:53,800
+Didn't realize how small
+it was going to appear.
+
+512
+00:21:53,800 --> 00:21:54,570
+Let's see.
+
+513
+00:21:54,570 --> 00:22:00,030
+Tools, Configuration, Utilities.
+
+514
+00:22:00,030 --> 00:22:02,205
+You just have to
+deal with it for now.
+
+515
+00:22:04,760 --> 00:22:06,140
+Yeah.
+
+516
+00:22:06,140 --> 00:22:07,140
+Let's do it preferences.
+
+517
+00:22:07,140 --> 00:22:08,473
+Let's see if we can get it here.
+
+518
+00:22:12,260 --> 00:22:14,783
+Fonts, 13.
+
+519
+00:22:17,520 --> 00:22:21,393
+Let's see if I can crease this
+all to a little bit larger.
+
+520
+00:22:25,030 --> 00:22:29,370
+Anything else that I
+can do to increase it.
+
+521
+00:22:29,370 --> 00:22:29,870
+OK.
+
+522
+00:22:29,870 --> 00:22:31,700
+Let's just see if this--
+
+523
+00:22:31,700 --> 00:22:32,200
+OK.
+
+524
+00:22:32,200 --> 00:22:35,000
+Gave me a little bit more
+but not that big a deal.
+
+525
+00:22:35,000 --> 00:22:37,060
+So either way, you should
+have this query window
+
+526
+00:22:37,060 --> 00:22:40,200
+now once you're connected.
+
+527
+00:22:40,200 --> 00:22:42,720
+And if not, walk back
+those steps, make sure
+
+528
+00:22:42,720 --> 00:22:45,450
+everything looks like it
+makes sense, like it worked.
+
+529
+00:22:45,450 --> 00:22:47,340
+The one thing you
+might have, if it
+
+530
+00:22:47,340 --> 00:22:48,990
+is throwing you
+issues and you're not
+
+531
+00:22:48,990 --> 00:22:51,480
+able to connect
+this way, one way
+
+532
+00:22:51,480 --> 00:22:53,640
+I've been able to get
+a workaround to this
+
+533
+00:22:53,640 --> 00:22:57,520
+is if you go to recreate the
+database, which if you do,
+
+534
+00:22:57,520 --> 00:22:59,218
+make sure you delete
+the previous one.
+
+535
+00:22:59,218 --> 00:23:01,260
+But if you go to recreate
+the database, and let's
+
+536
+00:23:01,260 --> 00:23:04,230
+say you were going through
+all these steps the same again
+
+537
+00:23:04,230 --> 00:23:06,660
+for each year still.
+
+538
+00:23:06,660 --> 00:23:08,320
+Let's leave that all the same.
+
+539
+00:23:08,320 --> 00:23:13,750
+The only difference is you could
+try under Virtual Private Cloud,
+
+540
+00:23:13,750 --> 00:23:15,480
+create a new VPC.
+
+541
+00:23:15,480 --> 00:23:18,610
+If you do that, you can
+leave that all there.
+
+542
+00:23:18,610 --> 00:23:21,210
+Still set public access to yes.
+
+543
+00:23:21,210 --> 00:23:22,920
+But you'll need to
+create a new security
+
+544
+00:23:22,920 --> 00:23:24,120
+group because there
+won't be any existing
+
+545
+00:23:24,120 --> 00:23:25,370
+in that virtual private cloud.
+
+546
+00:23:25,370 --> 00:23:28,930
+So if the way I showed
+you before didn't work,
+
+547
+00:23:28,930 --> 00:23:31,153
+it should work if you
+do it with creating
+
+548
+00:23:31,153 --> 00:23:32,320
+a new virtual private cloud.
+
+549
+00:23:32,320 --> 00:23:34,960
+But whatever works for you.
+
+550
+00:23:34,960 --> 00:23:35,860
+So yeah.
+
+551
+00:23:35,860 --> 00:23:38,400
+Just make it work
+however you can.
+
+552
+00:23:38,400 --> 00:23:39,670
+So yeah.
+
+553
+00:23:39,670 --> 00:23:41,490
+Let me get back my notes now.
+
+554
+00:23:41,490 --> 00:23:41,990
+OK.
+
+555
+00:23:41,990 --> 00:23:44,060
+So we've got connected now.
+
+556
+00:23:44,060 --> 00:23:49,490
+And so now we should be able to
+try and query from our database.
+
+557
+00:23:49,490 --> 00:23:50,660
+So let's see.
+
+558
+00:23:50,660 --> 00:23:52,910
+First off, we start with,
+yes, we have demodb.
+
+559
+00:23:52,910 --> 00:23:54,743
+So you see, that was
+what we created before,
+
+560
+00:23:54,743 --> 00:23:56,720
+the demodb that's
+showing up there.
+
+561
+00:23:56,720 --> 00:23:58,700
+So let's upload some
+new data to this,
+
+562
+00:23:58,700 --> 00:24:00,380
+so we actually have
+a table to look at.
+
+563
+00:24:00,380 --> 00:24:02,890
+So I'm going to download
+a file actually.
+
+564
+00:24:02,890 --> 00:24:06,500
+If you go to Canvas
+and under Files,
+
+565
+00:24:06,500 --> 00:24:09,910
+there should be a
+file called top10s.
+
+566
+00:24:09,910 --> 00:24:13,060
+It's just a Spotify or a
+sample of a Spotify data
+
+567
+00:24:13,060 --> 00:24:16,310
+set of top 10 songs.
+
+568
+00:24:16,310 --> 00:24:22,160
+And so if you come and click
+on demo here or on the--
+
+569
+00:24:22,160 --> 00:24:23,110
+there we go.
+
+570
+00:24:23,110 --> 00:24:27,200
+Under the demo database here,
+if you right click on Tables,
+
+571
+00:24:27,200 --> 00:24:29,260
+you can do Table
+Data Import Wizard,
+
+572
+00:24:29,260 --> 00:24:31,510
+and that's one way
+you can upload data.
+
+573
+00:24:31,510 --> 00:24:33,710
+And so then you just
+provide it the file path.
+
+574
+00:24:33,710 --> 00:24:39,510
+So I have this downloaded, or
+I have it in my courses, 3,600.
+
+575
+00:24:39,510 --> 00:24:43,600
+And top10s next.
+
+576
+00:24:43,600 --> 00:24:48,210
+And then we'll do
+Create New Table.
+
+577
+00:24:48,210 --> 00:24:50,770
+We'll just put it
+under this, top10s.
+
+578
+00:24:50,770 --> 00:24:53,170
+If it already exists, you
+can have that drop table
+
+579
+00:24:53,170 --> 00:24:56,870
+if exists and then do next.
+
+580
+00:24:56,870 --> 00:24:58,670
+And then under
+here, you can just
+
+581
+00:24:58,670 --> 00:25:01,220
+leave these field
+types as they are
+
+582
+00:25:01,220 --> 00:25:02,820
+or change them as
+you feel necessary.
+
+583
+00:25:02,820 --> 00:25:05,750
+But again, this is
+just a sample data set.
+
+584
+00:25:05,750 --> 00:25:09,247
+So we'll do next,
+and we'll do next.
+
+585
+00:25:09,247 --> 00:25:10,580
+And it takes a little bit to do.
+
+586
+00:25:10,580 --> 00:25:13,627
+So this is a relatively
+slow process.
+
+587
+00:25:13,627 --> 00:25:14,210
+Trying to see.
+
+588
+00:25:14,210 --> 00:25:16,100
+I don't want you guys
+to have too many steps
+
+589
+00:25:16,100 --> 00:25:19,040
+because I think this might
+be a little bit involved
+
+590
+00:25:19,040 --> 00:25:21,260
+for the next part.
+
+591
+00:25:21,260 --> 00:25:24,550
+But yeah, we'll do this.
+
+592
+00:25:24,550 --> 00:25:26,300
+And it takes a little
+while because if you
+
+593
+00:25:26,300 --> 00:25:27,810
+think about what's
+happening here,
+
+594
+00:25:27,810 --> 00:25:30,470
+I have a file that's
+sitting on my computer.
+
+595
+00:25:30,470 --> 00:25:32,520
+I'm uploading it
+through this wizard.
+
+596
+00:25:32,520 --> 00:25:35,660
+This wizard is having
+to basically upload it
+
+597
+00:25:35,660 --> 00:25:39,560
+to the EC2 server and then
+push it or that EC2 instance
+
+598
+00:25:39,560 --> 00:25:42,350
+wherever it is, and then push
+it from that EC2 instance
+
+599
+00:25:42,350 --> 00:25:45,270
+into my RDS database instance.
+
+600
+00:25:45,270 --> 00:25:47,108
+So it's a little slow here.
+
+601
+00:25:47,108 --> 00:25:48,650
+You can always click
+Show Logs if you
+
+602
+00:25:48,650 --> 00:25:51,590
+want to watch what steps
+it's doing at that time.
+
+603
+00:25:51,590 --> 00:25:52,925
+But it's taking steps.
+
+604
+00:25:52,925 --> 00:25:54,300
+It's just, again,
+it's very slow.
+
+605
+00:25:54,300 --> 00:25:57,210
+It's doing one data point
+at a time effectively.
+
+606
+00:25:57,210 --> 00:26:00,410
+And this is a very,
+very small data set.
+
+607
+00:26:00,410 --> 00:26:05,800
+If I pull it up here, we
+can see it's wildly small.
+
+608
+00:26:05,800 --> 00:26:10,170
+So if we go top10s, and
+let's look at Get Info.
+
+609
+00:26:10,170 --> 00:26:11,080
+So yeah.
+
+610
+00:26:11,080 --> 00:26:16,150
+It's just over 2
+kilobytes of data.
+
+611
+00:26:16,150 --> 00:26:18,850
+So very, very small data set,
+and it took that long to load.
+
+612
+00:26:18,850 --> 00:26:20,730
+So yeah, 28 rows.
+
+613
+00:26:20,730 --> 00:26:23,160
+It's not the biggest
+one, but either way, this
+
+614
+00:26:23,160 --> 00:26:26,640
+is not the fastest way to do
+it, but it is a way to do it.
+
+615
+00:26:26,640 --> 00:26:30,180
+And so once you
+have that though,
+
+616
+00:26:30,180 --> 00:26:33,030
+you then should be able to
+click the little refresh here,
+
+617
+00:26:33,030 --> 00:26:35,310
+and it should show
+up under our tables.
+
+618
+00:26:35,310 --> 00:26:38,040
+So we have a little
+drop down now, top10s.
+
+619
+00:26:38,040 --> 00:26:39,400
+And see all the details there.
+
+620
+00:26:39,400 --> 00:26:42,690
+Or like usually, you can just
+select top down or select
+
+621
+00:26:42,690 --> 00:26:45,090
+everything from demodb.
+
+622
+00:26:45,090 --> 00:26:49,350
+And now again, you have
+everything at your fingertips
+
+623
+00:26:49,350 --> 00:26:52,500
+from SQL as before, right?
+
+624
+00:26:52,500 --> 00:26:53,605
+For specifically MySQL.
+
+625
+00:26:53,605 --> 00:26:55,480
+So if you want to look
+up any commands again,
+
+626
+00:26:55,480 --> 00:26:58,990
+they'll need to be
+specifically MySQL commands.
+
+627
+00:26:58,990 --> 00:27:03,080
+But that is really the
+process to get connected.
+
+628
+00:27:03,080 --> 00:27:05,470
+So select, I don't
+know if I just
+
+629
+00:27:05,470 --> 00:27:14,500
+want to select maybe title from
+this, where, I don't know, year.
+
+630
+00:27:14,500 --> 00:27:17,110
+I think you do it this way.
+
+631
+00:27:17,110 --> 00:27:20,720
+I have learned most of MySQL
+in Microsoft SQL Server,
+
+632
+00:27:20,720 --> 00:27:23,290
+so I apologize if
+things don't work
+
+633
+00:27:23,290 --> 00:27:24,710
+as well when I run them here.
+
+634
+00:27:24,710 --> 00:27:25,310
+That worked.
+
+635
+00:27:25,310 --> 00:27:25,990
+Perfect.
+
+636
+00:27:25,990 --> 00:27:29,380
+So select the top 10 songs,
+the titles of the top 10 songs
+
+637
+00:27:29,380 --> 00:27:32,200
+from the year 2010.
+
+638
+00:27:32,200 --> 00:27:34,200
+So I think I'll leave it
+at that because there's
+
+639
+00:27:34,200 --> 00:27:35,460
+going to be some
+legwork, and you guys are
+
+640
+00:27:35,460 --> 00:27:36,543
+going to go through menus.
+
+641
+00:27:36,543 --> 00:27:38,650
+And I fear that there's
+going to be some issues.
+
+642
+00:27:38,650 --> 00:27:41,182
+So why don't you try this first?
+
+643
+00:27:41,182 --> 00:27:42,640
+I'll put up an
+assignment actually,
+
+644
+00:27:42,640 --> 00:27:44,770
+just to have you
+upload this data set,
+
+645
+00:27:44,770 --> 00:27:47,310
+make sure you can get this
+step done because the next step
+
+646
+00:27:47,310 --> 00:27:48,820
+after this is a
+bit more involved.
+
+647
+00:27:48,820 --> 00:27:51,640
+But it'll give us a bit
+faster of a way to do this.
+
+648
+00:27:51,640 --> 00:27:53,820
+So I'll leave it at that.
+
+649
+00:27:53,820 --> 00:27:56,110
+Come to me at the office
+hours with questions.
+
+650
+00:27:56,110 --> 00:27:57,010
+Work through it.
+
+651
+00:27:57,010 --> 00:27:58,240
+Start playing around with it.
+
+652
+00:27:58,240 --> 00:28:00,060
+Look at the
+assignment, run that,
+
+653
+00:28:00,060 --> 00:28:01,780
+and then we'll continue on.
+
+654
+00:28:01,780 --> 00:28:03,430
+So catch you next time.
+
+655
+00:28:03,430 --> 00:28:04,410
+Bye.
+
+656
+00:28:04,410 --> 00:28:06,600
+Actually, before you
+go, I forgot to show you
+
+657
+00:28:06,600 --> 00:28:08,230
+how to delete your database.
+
+658
+00:28:08,230 --> 00:28:10,170
+It's a little obvious
+of a step, but I want
+
+659
+00:28:10,170 --> 00:28:11,440
+to make sure it's very clear.
+
+660
+00:28:11,440 --> 00:28:14,400
+So first, I'm just going
+to close out of this, out
+
+661
+00:28:14,400 --> 00:28:16,140
+of my MySQL Workbench.
+
+662
+00:28:16,140 --> 00:28:18,150
+Make sure to close
+that out completely.
+
+663
+00:28:18,150 --> 00:28:21,070
+That way, there's no active
+connection going to it.
+
+664
+00:28:21,070 --> 00:28:23,670
+And then from this
+RDS page, there
+
+665
+00:28:23,670 --> 00:28:26,530
+should be DB instances
+or database instances.
+
+666
+00:28:26,530 --> 00:28:31,330
+You can click this little radio
+button there and click Delete.
+
+667
+00:28:31,330 --> 00:28:34,788
+Now again, I don't want to
+create a final snapshot.
+
+668
+00:28:34,788 --> 00:28:36,580
+And this could actually
+be a useful feature
+
+669
+00:28:36,580 --> 00:28:38,590
+if you were deleting this
+to maybe do something
+
+670
+00:28:38,590 --> 00:28:40,570
+later on with it,
+you might actually
+
+671
+00:28:40,570 --> 00:28:42,070
+want to delete
+the final snapshot
+
+672
+00:28:42,070 --> 00:28:43,610
+or create a final snapshot.
+
+673
+00:28:43,610 --> 00:28:44,803
+But right now, we don't.
+
+674
+00:28:44,803 --> 00:28:46,220
+We're not going
+to use this again.
+
+675
+00:28:46,220 --> 00:28:48,620
+So we're going to delete
+that or not do that.
+
+676
+00:28:48,620 --> 00:28:51,370
+And then also, we're
+going to uncheck retain
+
+677
+00:28:51,370 --> 00:28:52,820
+automated backups, right?
+
+678
+00:28:52,820 --> 00:28:54,793
+If there are any automated
+backups that happen,
+
+679
+00:28:54,793 --> 00:28:56,210
+I don't need to
+keep them anymore.
+
+680
+00:28:56,210 --> 00:28:59,510
+I can wipe those as
+well unless I want to.
+
+681
+00:28:59,510 --> 00:29:02,650
+And then I'm going to
+do, I acknowledge that
+
+682
+00:29:02,650 --> 00:29:05,890
+upon instant deletion, all
+this stuff is getting dropped.
+
+683
+00:29:05,890 --> 00:29:10,030
+Then I'm going to type, delete
+me, and we're good to go.
+
+684
+00:29:10,030 --> 00:29:12,068
+So again, just
+please do that step.
+
+685
+00:29:12,068 --> 00:29:13,610
+It'll take a little
+bit to shut down,
+
+686
+00:29:13,610 --> 00:29:15,433
+but I would like if
+you guys make sure,
+
+687
+00:29:15,433 --> 00:29:17,600
+and also make sure you shut
+down only your instance.
+
+688
+00:29:17,600 --> 00:29:19,840
+Don't touch anybody
+else's instances.
+
+689
+00:29:19,840 --> 00:29:22,250
+I know right now, the way
+this is set up, you could.
+
+690
+00:29:22,250 --> 00:29:23,950
+Please don't.
+
+691
+00:29:23,950 --> 00:29:24,710
+But yeah.
+
+692
+00:29:24,710 --> 00:29:28,420
+So just make sure you do
+that before you disconnect,
+
+693
+00:29:28,420 --> 00:29:29,870
+and then we'll be good to go.
+
+694
+00:29:29,870 --> 00:29:32,432
+So once again, I'll see
+you again from here.
+
+695
+00:29:32,432 --> 00:29:34,890
+And next time, we'll talk about
+how to go a little bit more
+
+696
+00:29:34,890 --> 00:29:37,320
+deeper into this and
+maybe leverage Python
+
+697
+00:29:37,320 --> 00:29:40,480
+to deploy or push our
+data sets a bit faster.
+
+698
+00:29:40,480 --> 00:29:42,760
+OK, bye.

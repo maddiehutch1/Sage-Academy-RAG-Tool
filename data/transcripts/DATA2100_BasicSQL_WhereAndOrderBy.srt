@@ -1,0 +1,1203 @@
+1
+00:00:00,280 --> 00:00:02,580
+Let's jump into learning more SQL.
+
+2
+00:00:02,580 --> 00:00:04,200
+We're going to focus on the WHERE clause
+
+3
+00:00:04,200 --> 00:00:06,472
+and the ORDER BY clause in this video.
+
+4
+00:00:06,472 --> 00:00:08,313
+there we go. All right, our
+objectives for today, we're
+
+5
+00:00:08,313 --> 00:00:11,093
+gonna continue to write SQL
+queries and we're gonna understand
+
+6
+00:00:11,093 --> 00:00:14,793
+the usage of the following
+clauses, WHERE and ORDER BY.
+
+7
+00:00:15,373 --> 00:00:19,113
+So we can do a variety of different
+things in that WHERE clause. Now
+
+8
+00:00:19,113 --> 00:00:23,093
+remember, WHERE clause is a
+conditional statement. It says that
+
+9
+00:00:23,093 --> 00:00:29,313
+every record must meet these
+conditions or condition in order to be
+
+10
+00:00:29,313 --> 00:00:33,123
+turned in the output. So one thing
+that we can do is called a wildcard
+
+11
+00:00:33,123 --> 00:00:39,133
+search, which uses the SQL-like
+keyword that basically searches for
+
+12
+00:00:39,133 --> 00:00:45,283
+partial data values. So for
+example, if by chance I did not
+
+13
+00:00:45,283 --> 00:00:48,633
+understand, you know, I wanted just
+to show all of the employees with the
+
+14
+00:00:48,633 --> 00:00:51,773
+last name that started with the
+letter L. I could do something that
+
+15
+00:00:51,773 --> 00:00:55,293
+you can see down here, right? Like
+L and then the percentage sign.
+
+16
+00:00:55,953 --> 00:00:59,993
+So we could do something like
+that, where this is going to return
+
+17
+00:00:59,993 --> 00:01:04,433
+every last name that begins with
+the letter L and has any number
+
+18
+00:01:04,433 --> 00:01:09,533
+of characters after the letter
+L. So any last name that starts
+
+19
+00:01:09,533 --> 00:01:12,193
+with the letter L, it's going
+to be returned to me, my output.
+
+20
+00:01:13,133 --> 00:01:17,023
+Similarly, but a little bit different,
+we can do something like a single
+
+21
+00:01:17,023 --> 00:01:20,533
+character, so an underscore. When
+we want to look at, when we want to
+
+22
+00:01:20,533 --> 00:01:25,153
+use underscores, what underscores do
+is they say, okay, if we know their
+
+23
+00:01:25,153 --> 00:01:28,633
+last name starts with the letter L,
+and we know that it is four total
+
+24
+00:01:28,633 --> 00:01:33,193
+characters, then I would put three
+keywords after the letter L. So if
+
+25
+00:01:33,193 --> 00:01:38,543
+their last name was Lane, L-A-N-E,
+then I would put three characters
+
+26
+00:01:38,543 --> 00:01:42,753
+after the letter L, and Lane would
+appear, okay? So sometimes you're like,
+
+27
+00:01:42,753 --> 00:01:46,313
+you know what? I know that they
+have this many number of characters,
+
+28
+00:01:46,313 --> 00:01:50,353
+and that it starts with the letter
+L, I can specify that search a little
+
+29
+00:01:50,353 --> 00:01:53,473
+bit differently than with the
+percentage sign that just looks for any
+
+30
+00:01:53,473 --> 00:01:57,073
+number of characters. So let's do
+a couple of examples. I'm going to
+
+31
+00:01:57,073 --> 00:02:00,513
+go over to Beekeeper, so I encourage
+you to have that launched as well.
+
+32
+00:02:00,513 --> 00:02:08,893
+Let's just do a quick select star
+from our guest. We're going to end
+
+33
+00:02:08,893 --> 00:02:12,153
+that. We're going to make sure that we
+are capitalizing our select and from
+
+34
+00:02:12,153 --> 00:02:17,133
+and that we end it with a semicolon.
+We go ahead and press run here.
+
+35
+00:02:18,013 --> 00:02:21,683
+All right, so now I get all
+of my guests, all of their
+
+36
+00:02:21,683 --> 00:02:24,393
+information is appearing. So
+let's just go ahead and say, all
+
+37
+00:02:24,393 --> 00:02:27,293
+right, in my where clause, so
+we know that semicolons signify
+
+38
+00:02:28,073 --> 00:02:32,433
+the end of a query. We always
+end it with a semicolon.
+
+39
+00:02:33,633 --> 00:02:36,353
+But I'm going to add a where
+clause onto this. I'm going to say,
+
+40
+00:02:36,353 --> 00:02:42,913
+you know what, wear a last name
+like, and I want to say last name
+
+41
+00:02:42,913 --> 00:02:46,413
+like that starts with that letter
+L and has a percentage sign
+
+42
+00:02:46,413 --> 00:02:50,373
+after it. So any number of
+characters return, I'm going to put a
+
+43
+00:02:50,373 --> 00:02:56,293
+comment up here, so two dashes,
+return all guest information if their
+
+44
+00:02:56,413 --> 00:03:01,953
+last name starts with L. Okay,
+so let's go ahead and run this.
+
+45
+00:03:02,513 --> 00:03:04,553
+All right, so when I do this, I can
+
+46
+00:03:04,553 --> 00:03:06,013
+see that I have all these last names.
+
+47
+00:03:06,153 --> 00:03:11,053
+Lambert, Logan, Lee, Lopez,
+Lark, Lyons, Lewis, Lara, Lopez,
+
+48
+00:03:11,053 --> 00:03:13,653
+all these different last names
+and they all start with the
+
+49
+00:03:13,653 --> 00:03:16,593
+letter L and they have a variety
+of different number of characters
+
+50
+00:03:16,593 --> 00:03:19,873
+after them. So that's how I
+would do a wild card search if
+
+51
+00:03:19,873 --> 00:03:23,153
+I didn't know the entirety of
+what I was looking for but I
+
+52
+00:03:23,153 --> 00:03:25,973
+knew a portion of it. I could
+say you know what I know that I
+
+53
+00:03:25,973 --> 00:03:28,633
+just want to return all last
+names to start with the letter L.
+
+54
+00:03:29,283 --> 00:03:31,713
+So we could do something like
+that. The next thing we could do
+
+55
+00:03:32,313 --> 00:03:35,513
+So I just, I copied all
+of it, did control C or
+
+56
+00:03:35,513 --> 00:03:38,293
+command C based on what
+you're using. And I'm going
+
+57
+00:03:38,293 --> 00:03:40,773
+to say control V. I'm going
+to paste it down below.
+
+58
+00:03:40,793 --> 00:03:43,433
+But I'm going to say return
+all guest information if their
+
+59
+00:03:43,433 --> 00:03:48,593
+last name starts with L and
+is four total characters.
+
+60
+00:03:48,773 --> 00:03:49,653
+Okay.
+
+61
+00:03:49,693 --> 00:03:53,733
+So I want to only have last names
+returned to me to start with
+
+62
+00:03:53,733 --> 00:03:57,013
+the letter L and have exactly four
+characters after it. So I'm going
+
+63
+00:03:57,013 --> 00:04:03,113
+to do an underscore, so L
+underscore, underscore, underscore.
+
+64
+00:04:03,113 --> 00:04:06,533
+This is going to say return their
+last name if it starts with the letter
+
+65
+00:04:06,533 --> 00:04:11,033
+L and has three characters after
+that L, so four total characters.
+
+66
+00:04:11,033 --> 00:04:15,333
+So when I run this, we now see
+that the last names that start with
+
+67
+00:04:15,333 --> 00:04:20,093
+the letter L have three characters
+after the L are returning to me. So
+
+68
+00:04:20,093 --> 00:04:25,653
+really cool tool you can use when
+you write SQL queries is this like.
+
+69
+00:04:25,653 --> 00:04:29,193
+Now, I encourage you, if you know
+the exact value of what you're
+
+70
+00:04:29,193 --> 00:04:32,673
+looking for, so say you're like, I
+don't need to do a search here. I
+
+71
+00:04:32,673 --> 00:04:37,693
+know that I want to return everybody
+with the last name equal to Lark.
+
+72
+00:04:38,233 --> 00:04:43,093
+Then make sure that you say last name
+equal to and you say Lark because
+
+73
+00:04:43,093 --> 00:04:47,653
+the equal to is much more efficient
+than the like, and it's best
+
+74
+00:04:47,653 --> 00:04:49,833
+practice. So if you know exactly
+what you're looking for, then just
+
+75
+00:04:49,833 --> 00:04:54,033
+say equal to Lark. But if you don't
+and the prompt reads something
+
+76
+00:04:54,033 --> 00:04:57,153
+like, return everybody with the last
+name starts with the letter r or
+
+77
+00:04:57,153 --> 00:05:01,173
+whatever it may be then then use
+the like command but if you know
+
+78
+00:05:01,173 --> 00:05:05,253
+the exact value you're looking for
+use the equal to sign um so just
+
+79
+00:05:05,253 --> 00:05:09,973
+keep that in mind but there we have
+the wild card search that we use
+
+80
+00:05:09,973 --> 00:05:15,153
+in our where clause um the where
+clause can also do things like we
+
+81
+00:05:15,153 --> 00:05:19,513
+can use an in which can simplify our
+query so So let's go ahead and run
+
+82
+00:05:19,513 --> 00:05:23,993
+this query, and I'm going to say
+that I want to return all ski
+
+83
+00:05:23,993 --> 00:05:30,533
+levels, or I want to return all
+employees whose ski level is intermediate
+
+84
+00:05:30,763 --> 00:05:33,853
+or advanced. So let's go ahead
+and do this. I'm going to create a
+
+85
+00:05:33,853 --> 00:05:40,413
+new query sheet, and I want to
+return all guests, or all employees,
+
+86
+00:05:41,433 --> 00:05:46,033
+who are intermediate or advanced skiers.
+
+87
+00:05:46,633 --> 00:05:53,593
+So I'm going to say select
+star from employee, okay?
+
+88
+00:05:53,693 --> 00:05:55,693
+And I don't like how it
+does those quotation marks
+
+89
+00:05:55,693 --> 00:05:57,363
+throughout, so I'm just
+going to delete those.
+
+90
+00:05:57,373 --> 00:05:59,233
+So select star from employee,
+
+91
+00:05:59,993 --> 00:06:01,913
+and now I can see I have their ski
+
+92
+00:06:01,913 --> 00:06:04,713
+level. But I only want to see employees
+
+93
+00:06:05,093 --> 00:06:10,123
+where their ski level is
+equal to intermediate,
+
+94
+00:06:10,853 --> 00:06:11,793
+okay?
+
+95
+00:06:11,803 --> 00:06:15,153
+So if I just run this, then
+it's only going to return skiers
+
+96
+00:06:15,153 --> 00:06:19,933
+who are intermediate okay so
+we want intermediate though or
+
+97
+00:06:19,933 --> 00:06:23,173
+and now this is where it becomes
+a little bit more complicated
+
+98
+00:06:23,173 --> 00:06:29,553
+we can't just say or advanced
+because this or basically says
+
+99
+00:06:29,553 --> 00:06:33,533
+um the this is the end of this
+ski level equal to intermediate
+
+100
+00:06:33,533 --> 00:06:37,933
+we're saying or something else
+so it basically gets rid of
+
+101
+00:06:37,933 --> 00:06:43,333
+any connection to that ski level
+okay that is one this is one
+
+102
+00:06:43,913 --> 00:06:46,513
+condition that it must meet and the or
+
+103
+00:06:46,513 --> 00:06:49,233
+starts another condition
+that it must meet.
+
+104
+00:06:49,413 --> 00:06:54,693
+So therefore I must say or
+ski level equal to advanced.
+
+105
+00:06:54,693 --> 00:06:57,433
+Okay so now I'm going
+to go ahead and run this
+
+106
+00:06:57,793 --> 00:07:01,753
+and now I can see that ski level is
+equal to intermediate or advanced.
+
+107
+00:07:01,753 --> 00:07:05,853
+If I try to run it without the
+ski level repeated if I just try
+
+108
+00:07:05,853 --> 00:07:08,893
+and run this it's going to say an
+expression of a non-boolean type
+
+109
+00:07:08,893 --> 00:07:12,673
+was specified in the context. So
+it's going to throw us an error.
+
+110
+00:07:13,253 --> 00:07:16,313
+So just make sure that you remember
+that. And that seems like a
+
+111
+00:07:16,313 --> 00:07:19,153
+really good test question, if
+you know what I mean. All right.
+
+112
+00:07:19,913 --> 00:07:24,653
+Another thing to keep in mind
+here is we can do that in
+
+113
+00:07:24,653 --> 00:07:28,053
+a keyword that I just
+referenced. So I could answer
+
+114
+00:07:28,053 --> 00:07:30,833
+this in two different ways.
+I could write it like this,
+
+115
+00:07:31,013 --> 00:07:34,653
+or I could write, I'm going to
+copy this, or I could write it
+
+116
+00:07:34,653 --> 00:07:38,313
+like this. And instead of having
+to type out ski level equal to
+
+117
+00:07:38,313 --> 00:07:44,293
+that again. I can say ski level
+in and then just provide a list
+
+118
+00:07:44,293 --> 00:07:49,773
+of values that ski level could
+be equal to to be included in the
+
+119
+00:07:49,773 --> 00:07:54,613
+output. So I'm going to say ski
+level in, a left parenthesis,
+
+120
+00:07:54,993 --> 00:07:59,093
+intermediate with single quotation
+marks around it, and advanced.
+
+121
+00:07:59,253 --> 00:08:03,533
+So basically what this comma
+does is this is like a mini or
+
+122
+00:08:03,533 --> 00:08:06,393
+if you want to think about
+that right, right? Ski level in
+
+123
+00:08:06,393 --> 00:08:10,513
+intermediate or advanced. So now
+when I run this second query,
+
+124
+00:08:10,513 --> 00:08:14,913
+I receive the first output as the
+query up above, right? So these
+
+125
+00:08:14,913 --> 00:08:19,073
+are the two different ways to write
+the same query and receive the
+
+126
+00:08:19,073 --> 00:08:23,293
+same output, but the in is a little
+bit more, a little bit easier
+
+127
+00:08:23,293 --> 00:08:27,233
+to do. So we're, when we say ski
+level in, we're just saying ski
+
+128
+00:08:27,233 --> 00:08:31,313
+level must be equal to intermediate
+or advanced. I could add one on
+
+129
+00:08:31,313 --> 00:08:35,553
+here too and I would just if I
+wanted to add another value it needed
+
+130
+00:08:35,553 --> 00:08:40,013
+to be equal to to be returned in
+my output. I could say equal to
+
+131
+00:08:40,013 --> 00:08:44,673
+beginner or I could add beginner
+to the end and when I do that then
+
+132
+00:08:44,673 --> 00:08:49,253
+beginner is all beginner skiers
+are also included in my output.
+
+133
+00:08:49,693 --> 00:08:53,773
+But to stay consistent I just want
+intermediate or advanced but I just
+
+134
+00:08:53,773 --> 00:08:58,533
+wanted to show you it's really easy
+to add additional values to this
+
+135
+00:08:58,533 --> 00:09:04,173
+list of values included here with
+this in keyword okay all right awesome
+
+136
+00:09:04,173 --> 00:09:08,373
+so that's a really helpful tool as
+we're learning different SQL techniques
+
+137
+00:09:09,353 --> 00:09:15,073
+we also can do something like
+the between operator in my where
+
+138
+00:09:15,073 --> 00:09:17,413
+clause so we're just learning a bunch
+of different things that we can use
+
+139
+00:09:17,413 --> 00:09:21,613
+in my where clause and in my where
+clause if I I wanted to say, show
+
+140
+00:09:21,613 --> 00:09:30,513
+me everybody whose age is equal to
+19, or who's equal to 19, 20, or 21.
+
+141
+00:09:30,513 --> 00:09:32,853
+So if I wanted to write that query,
+
+142
+00:09:33,133 --> 00:09:42,813
+so let's see, show me all guests
+who are 19, 20, or 21, I could do
+
+143
+00:09:42,813 --> 00:09:53,883
+something like this, and I could
+say select star from guest, let's
+
+144
+00:09:53,883 --> 00:10:01,893
+see here, where age is greater
+than or equal to 19. So if I wrote
+
+145
+00:10:01,893 --> 00:10:06,833
+that, this is saying that everybody
+returned in my output must have
+
+146
+00:10:06,833 --> 00:10:11,493
+an age equal to or greater than
+19. I press run, and now you can
+
+147
+00:10:11,493 --> 00:10:17,153
+see here everybody's age is going
+to be greater than or equal to 19.
+
+148
+00:10:17,833 --> 00:10:21,533
+Now, if we wanted, I'm going
+to add something in here quick.
+
+149
+00:10:21,693 --> 00:10:24,493
+I'm going to add in my order
+by. Now, I haven't learned about
+
+150
+00:10:24,493 --> 00:10:27,133
+our order by quite yet, but
+I'll teach you really quick.
+
+151
+00:10:27,133 --> 00:10:33,613
+Order by age ascending means that
+I am going to order the output
+
+152
+00:10:33,613 --> 00:10:38,933
+by the age field ascending. okay
+so from a to z if you want to think
+
+153
+00:10:38,933 --> 00:10:41,893
+of it that way or from smallest
+to largest so this is a way that
+
+154
+00:10:41,893 --> 00:10:46,593
+i can check that there's no 18
+year olds 15 year olds included in
+
+155
+00:10:46,593 --> 00:10:52,293
+my output right the youngest age
+or the smallest age here included
+
+156
+00:10:52,293 --> 00:10:56,493
+in my output is 19 and i can
+check that by adding the order by
+
+157
+00:10:56,493 --> 00:11:00,333
+which comes after the where clause
+and allows me to double check that
+
+158
+00:11:00,333 --> 00:11:04,773
+what my query is outputting to me
+is correct. So now let's add on
+
+159
+00:11:04,773 --> 00:11:09,793
+to this. This is only restricting
+it that they are 19 and older.
+
+160
+00:11:09,793 --> 00:11:12,813
+But instead I want it
+to be 19, 20, or 21.
+
+161
+00:11:12,813 --> 00:11:16,093
+So what I could do next, I could say
+where age is greater than or equal
+
+162
+00:11:16,093 --> 00:11:23,433
+to 19 and age is less than or equal
+to 21. Okay, so now what this is
+
+163
+00:11:23,433 --> 00:11:26,973
+saying is it's saying, okay, age
+must be greater than or equal to 19.
+
+164
+00:11:27,233 --> 00:11:31,973
+So that requirement has to be
+fulfilled. and the age must be less
+
+165
+00:11:31,973 --> 00:11:36,933
+than or equal to 21 so effectively
+it's saying the age must be 19 20
+
+166
+00:11:36,933 --> 00:11:43,373
+or 21 so now i run this and i can
+see here that every record here
+
+167
+00:11:43,373 --> 00:11:50,513
+is returning all guests who are 19
+20 and 21 okay there's my 21 year
+
+168
+00:11:50,513 --> 00:11:54,273
+olds right so just keep that in
+mind that's one way i can write
+
+169
+00:11:54,273 --> 00:11:59,133
+the the query. This is the beauty
+of SQL queries. You can generally
+
+170
+00:11:59,133 --> 00:12:02,893
+write them in multiple different
+ways. But another way that I can
+
+171
+00:12:02,893 --> 00:12:06,153
+do this is instead of having to say
+age greater than equal to 19 and
+
+172
+00:12:06,153 --> 00:12:14,273
+age less than equal to 21, I can
+say we're age between 19 and 21.
+
+173
+00:12:15,193 --> 00:12:20,713
+So now when I run this, this
+between is inclusive, meaning
+
+174
+00:12:20,713 --> 00:12:24,293
+it's going to include my 19
+year old. It's going to include
+
+175
+00:12:24,293 --> 00:12:27,633
+the 20 year old in my output.
+So now when I run that query,
+
+176
+00:12:27,633 --> 00:12:31,453
+I see that I'm getting exactly
+the output from this query up
+
+177
+00:12:31,453 --> 00:12:34,733
+above, right? I'm getting the
+exact same output. It's just
+
+178
+00:12:34,733 --> 00:12:37,953
+another way of writing a query.
+And that's really powerful.
+
+179
+00:12:38,273 --> 00:12:42,553
+Oftentimes when you're asked SQL
+queries and interviews, whether it be
+
+180
+00:12:42,553 --> 00:12:46,513
+internship interviews, job interviews,
+you are going to be asked, can
+
+181
+00:12:46,513 --> 00:12:51,473
+you write this query in one way? And
+then they may say, can you write it
+
+182
+00:12:51,473 --> 00:12:54,113
+in another way? They want to see
+your ability to problem solve your
+
+183
+00:12:54,113 --> 00:12:58,233
+knowledge of SQL queries. So that's
+just to keep that in mind. All right.
+
+184
+00:12:58,493 --> 00:13:03,073
+So there you go. There we
+have it. That is my between,
+
+185
+00:13:03,213 --> 00:13:07,513
+which is so, the between
+operator is so helpful.
+
+186
+00:13:07,673 --> 00:13:08,313
+All right.
+
+187
+00:13:08,873 --> 00:13:12,713
+Okay. Then finally on here, we
+talked a lot about where. We're going
+
+188
+00:13:12,713 --> 00:13:15,453
+to continue talking about where.
+We're going to practice a lot with
+
+189
+00:13:15,453 --> 00:13:20,373
+the where clause. but then finally
+my order by my order by is sorts
+
+190
+00:13:20,373 --> 00:13:26,113
+the query results it sorts the output
+okay so we say order by the column
+
+191
+00:13:26,113 --> 00:13:30,313
+name and then we can say ascending
+or descending so let's go ahead
+
+192
+00:13:30,313 --> 00:13:34,673
+we can do it two different ways
+we can um up here we say order by
+
+193
+00:13:34,673 --> 00:13:39,443
+last name descending okay so that's
+going to be uh last names basically
+
+194
+00:13:39,443 --> 00:13:44,183
+we'll start with z and uh go to a
+and the z will be at the top and
+
+195
+00:13:44,183 --> 00:13:48,543
+A will be at the bottom and then
+similarly we can do the same thing
+
+196
+00:13:48,543 --> 00:13:53,383
+here and instead of referring
+directly to employee last name we can
+
+197
+00:13:53,383 --> 00:13:58,863
+refer using the pointer as a textbook
+talks about and the pointer basically
+
+198
+00:13:58,863 --> 00:14:02,783
+says that the first name here
+is the first column in my select
+
+199
+00:14:02,783 --> 00:14:09,703
+statement and the employee last name
+is my second column in the select
+
+200
+00:14:09,703 --> 00:14:14,043
+statement. So we would say order
+by two and this pointer basically
+
+201
+00:14:14,043 --> 00:14:18,923
+points to that select clause and
+says order by the second column in
+
+202
+00:14:18,923 --> 00:14:23,963
+the select clause. I generally do
+this manner, this first one, because
+
+203
+00:14:23,963 --> 00:14:30,143
+if for any reason the order of my
+select clause did change, I don't
+
+204
+00:14:30,143 --> 00:14:34,763
+want it to mess up my order by. So
+I normally say exactly what column
+
+205
+00:14:34,763 --> 00:14:39,703
+I am sorting by using that column's
+name in my order by. All right,
+
+206
+00:14:39,703 --> 00:14:45,783
+so let's create another query sheet
+up here and let's just say show
+
+207
+00:14:46,163 --> 00:14:57,843
+all guest info and sort by youngest
+to oldest, okay? So I'm going to
+
+208
+00:14:57,843 --> 00:15:02,463
+do select star, you guessed it,
+pop quiz, when I'm showing all the
+
+209
+00:15:02,463 --> 00:15:06,383
+guest information, select star from
+guest, and I'm going to say sort by
+
+210
+00:15:06,383 --> 00:15:13,803
+youngest to oldest. I'm going to
+say order by age descending, okay?
+
+211
+00:15:13,883 --> 00:15:16,803
+So I'm going to say
+order by age descending.
+
+212
+00:15:17,163 --> 00:15:21,523
+And now when I run this,
+I can see here that my,
+
+213
+00:15:21,703 --> 00:15:24,883
+oh, from youngest to
+oldest. Uh-oh, rut row.
+
+214
+00:15:25,603 --> 00:15:29,343
+Order by age descending is
+oldest to youngest. If I want it
+
+215
+00:15:29,343 --> 00:15:32,823
+from youngest to oldest, I need
+to say ascending. There we go.
+
+216
+00:15:33,103 --> 00:15:38,143
+And now we have it. age is my
+youngest is elijah strickland and
+
+217
+00:15:38,143 --> 00:15:42,103
+griffin walker and luke ruse and
+ariel duncan all of these two
+
+218
+00:15:42,103 --> 00:15:46,863
+-year-olds they are my youngest in
+my database okay but if i wanted
+
+219
+00:15:46,863 --> 00:15:50,843
+to say you know what show me
+their first name last name and age
+
+220
+00:15:50,843 --> 00:15:54,303
+okay i'm going to make this a
+little bit cleaner here my select
+
+221
+00:15:54,303 --> 00:15:57,443
+clause so now i'm just showing the
+first name last name and age of
+
+222
+00:15:57,443 --> 00:16:02,163
+all of them sorted from a
+youngest to oldest the other thing
+
+223
+00:16:02,163 --> 00:16:07,283
+with the order by clause is us
+send ascending is actually default.
+
+224
+00:16:07,283 --> 00:16:10,923
+So if I run this, it's
+still going to sort it by
+
+225
+00:16:10,923 --> 00:16:16,923
+ascending. So this query and
+this query are the same, okay?
+
+226
+00:16:16,923 --> 00:16:21,963
+So order by age ascending,
+that is just default. So if you
+
+227
+00:16:21,963 --> 00:16:24,683
+just say order by age, it will
+do ascending. You can also
+
+228
+00:16:24,683 --> 00:16:27,603
+still type out ascending. I
+tend to still type it out,
+
+229
+00:16:28,163 --> 00:16:31,223
+but you could absolutely still
+just leave it by default.
+
+230
+00:16:31,283 --> 00:16:38,423
+But instead, if I want to say
+sort by oldest to youngest,
+
+231
+00:16:38,423 --> 00:16:44,983
+I would just change the order
+by age into descending, okay?
+
+232
+00:16:45,633 --> 00:16:49,693
+And now what we see here is
+we see Marie Craig, Samara,
+
+233
+00:16:49,723 --> 00:16:53,263
+Jordan, Quinn, Sterling, Brian,
+Annalie. They are starting from
+
+234
+00:16:53,263 --> 00:16:56,403
+the oldest and going to the
+youngest based upon their age.
+
+235
+00:16:56,883 --> 00:17:00,603
+Similarly here, if I wanted to use
+that pointer that I talked about
+
+236
+00:17:00,603 --> 00:17:04,903
+and point to the column instead, I
+would say order by three descending.
+
+237
+00:17:06,043 --> 00:17:08,943
+And that is going to do the
+same thing. It's just order
+
+238
+00:17:08,943 --> 00:17:12,443
+by age descending. Okay. So
+I hope that that's helpful
+
+239
+00:17:12,443 --> 00:17:14,683
+to you in getting used to
+the order by. Again, order
+
+240
+00:17:14,683 --> 00:17:17,703
+by, we just say what column
+do we want to sort by?
+
+241
+00:17:17,703 --> 00:17:20,083
+And then do we sort ascending,
+
+242
+00:17:20,283 --> 00:17:21,343
+descending?
+
+243
+00:17:21,523 --> 00:17:23,363
+Order by is really helpful.
+
+244
+00:17:23,603 --> 00:17:26,989
+So thanks, everybody, for tuning
+into this video. Take care.
+

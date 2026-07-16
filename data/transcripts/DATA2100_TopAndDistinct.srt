@@ -1,0 +1,663 @@
+1
+00:00:01,470 --> 00:00:04,390
+Hi data2100 students. In this
+video, I want to introduce
+
+2
+00:00:04,390 --> 00:00:08,410
+you to top and distinct. We term
+these as analytical functions
+
+3
+00:00:08,410 --> 00:00:13,530
+that we can use in SQL. So
+first off, let's talk about
+
+4
+00:00:14,170 --> 00:00:20,890
+the top function and top percent.
+So if I ever wanted to say, show
+
+5
+00:00:20,890 --> 00:00:27,710
+me the number of guests that were
+the top five oldest guests or
+
+6
+00:00:27,710 --> 00:00:33,250
+top five youngest guests, I could
+do that by using the top function
+
+7
+00:00:33,250 --> 00:00:38,090
+so the top function heavily
+relies on the order by to say am I
+
+8
+00:00:38,090 --> 00:00:41,510
+going to show the top five oldest
+guests or the top five youngest
+
+9
+00:00:41,510 --> 00:00:46,230
+guests so all it does is it basically
+cuts off the top five records
+
+10
+00:00:46,230 --> 00:00:50,710
+of output and that is all that is
+included in what is outputted to
+
+11
+00:00:50,710 --> 00:00:55,310
+you as the user therefore because
+it just looks at the top five
+
+12
+00:00:55,310 --> 00:01:01,490
+records it is so important as what
+order those records are in, okay?
+
+13
+00:01:02,070 --> 00:01:07,620
+So let's go ahead and do an
+example. So I have given you some
+
+14
+00:01:07,620 --> 00:01:12,370
+examples and but before we do
+that let's just start off with
+
+15
+00:01:12,370 --> 00:01:16,090
+this example right here. So
+we're going to show the top five
+
+16
+00:01:16,090 --> 00:01:21,390
+guest ID, last name, first name,
+and age from the guest table.
+
+17
+00:01:21,390 --> 00:01:27,810
+So I'm going to go ahead and say
+select star from guest. Okay,
+
+18
+00:01:28,090 --> 00:01:29,630
+and I'll return that.
+
+19
+00:01:29,990 --> 00:01:33,650
+All right, perfect. So now I
+want to see their guest ID,
+
+20
+00:01:34,850 --> 00:01:40,490
+first name, last name, and age.
+So once I run this, I can see
+
+21
+00:01:40,490 --> 00:01:43,550
+here now I'm limiting the number
+of fields that are returned
+
+22
+00:01:43,550 --> 00:01:49,050
+to me. But this time I want to
+output just the top five. So
+
+23
+00:01:49,050 --> 00:01:53,850
+if I was to add in top five
+right here, and I run this,
+
+24
+00:01:54,380 --> 00:01:58,430
+you're going to notice that just
+five records are output to me.
+
+25
+00:01:59,310 --> 00:02:03,010
+Okay, so I only have five records
+now at this point, which isn't
+
+26
+00:02:03,010 --> 00:02:06,710
+very helpful because I don't even
+know how these at this point are
+
+27
+00:02:06,710 --> 00:02:10,950
+sorted by. It looks like just by the
+guest ID that Christian Willis is
+
+28
+00:02:10,950 --> 00:02:13,530
+guest ID number one. Well, that's
+not answering my question, right?
+
+29
+00:02:13,530 --> 00:02:21,990
+Let's say that my question is,
+show me the top five oldest guess.
+
+30
+00:02:22,650 --> 00:02:24,950
+Well, this isn't answering my question.
+
+31
+00:02:24,950 --> 00:02:28,250
+So what I need to do is,
+instead of just saying select
+
+32
+00:02:28,250 --> 00:02:31,380
+top five and just leaving it
+at that, I need to order by
+
+33
+00:02:31,620 --> 00:02:36,350
+age, and I want the highest
+age at the top down to the
+
+34
+00:02:36,350 --> 00:02:40,010
+lowest age. So I'm going to
+say order by age descending.
+
+35
+00:02:40,030 --> 00:02:43,290
+So greatest, if you
+will, age at the top to
+
+36
+00:02:43,290 --> 00:02:45,590
+the least. And I'll go
+ahead and hit enter.
+
+37
+00:02:47,360 --> 00:02:50,640
+And now I can see here that
+I have all of these ages
+
+38
+00:02:50,700 --> 00:02:53,670
+of these different guests
+that are outputting to me. So
+
+39
+00:02:53,670 --> 00:02:56,790
+I can see here that these
+are all 76-year-old guests.
+
+40
+00:02:56,950 --> 00:03:00,610
+And according to my data,
+those are the oldest guests
+
+41
+00:03:00,610 --> 00:03:02,890
+that we have. Now, if
+I wanted to switch this
+
+42
+00:03:02,890 --> 00:03:08,650
+around and say, actually,
+I want to show the top five
+
+43
+00:03:10,490 --> 00:03:15,910
+youngest guests, all I would need
+to do is just change what I'm
+
+44
+00:03:15,910 --> 00:03:19,630
+ordering by. Instead of descending,
+I say ascending, and I run this.
+
+45
+00:03:20,090 --> 00:03:23,170
+Okay, so now I see that I have
+all these two-year-old guests
+
+46
+00:03:23,170 --> 00:03:28,710
+that are returning to me. So I
+can do top five, I can do top ten.
+
+47
+00:03:28,710 --> 00:03:33,120
+you can do any number that you
+want here. I can say top 25.
+
+48
+00:03:35,010 --> 00:03:38,490
+It's not just five. Okay. But generally
+
+49
+00:03:38,490 --> 00:03:41,570
+you're going to see
+questions like top five.
+
+50
+00:03:42,320 --> 00:03:44,740
+In this case, we're going to do top 25.
+
+51
+00:03:45,521 --> 00:03:48,796
+Perfect. So here is the top 25 guests
+
+52
+00:03:48,796 --> 00:03:51,586
+returned to me based upon their age.
+
+53
+00:03:51,686 --> 00:03:54,186
+All right, awesome. The next
+thing that we're going to learn
+
+54
+00:03:54,186 --> 00:04:00,446
+is about showing unique values
+using the distinct keyword.
+
+55
+00:04:00,446 --> 00:04:03,886
+So if I ever wanted to figure
+out what are the unique first
+
+56
+00:04:03,886 --> 00:04:08,546
+names, meaning non-repeating,
+so if I have three employees
+
+57
+00:04:08,546 --> 00:04:12,926
+named Reagan, all spelt the
+same, which is really important,
+
+58
+00:04:13,166 --> 00:04:17,686
+and I said select distinct employee
+first name, then instead of
+
+59
+00:04:17,686 --> 00:04:21,106
+three Reagans all showing up, again,
+they have to be spelt the same,
+
+60
+00:04:21,946 --> 00:04:24,146
+I'm only going to have
+one Reagan show up. So
+
+61
+00:04:24,146 --> 00:04:27,266
+I'm just looking for
+unique or distinct values.
+
+62
+00:04:27,266 --> 00:04:30,286
+So let's go ahead and answer one
+of our review questions that I give
+
+63
+00:04:30,286 --> 00:04:34,046
+you in the example, or one of our
+example questions that I give you.
+
+64
+00:04:34,946 --> 00:04:37,866
+So we're going to output
+the unique last names of
+
+65
+00:04:37,866 --> 00:04:41,726
+customers who have a season
+pass. So I'm going to go ahead
+
+66
+00:04:41,726 --> 00:04:47,886
+and say select star, and
+we're going to do from guest.
+
+67
+00:04:47,886 --> 00:04:50,886
+Okay, we're just going to always
+start off with that. So the unique
+
+68
+00:04:50,886 --> 00:04:55,746
+last names of customers who have
+a season pass. So first off,
+
+69
+00:04:56,296 --> 00:05:02,216
+I'm going to get rid of any
+records that I do not want in my
+
+70
+00:05:03,066 --> 00:05:07,366
+output. So they have to have a season
+pass. So over here in my season
+
+71
+00:05:07,366 --> 00:05:11,486
+pass there needs to be a Y in
+that season pass column for yes.
+
+72
+00:05:11,486 --> 00:05:17,746
+So you have to say where season pass
+equal to Y. okay now i'll run this
+
+73
+00:05:17,746 --> 00:05:21,126
+and now i can see here that all
+of these guests have a season pass
+
+74
+00:05:21,126 --> 00:05:26,646
+now i only want to look at unique
+last names okay so right now if i
+
+75
+00:05:26,646 --> 00:05:32,886
+was just to say uh select a last name
+and i run this now i can see here
+
+76
+00:05:32,886 --> 00:05:37,906
+that i have like owens is only here
+at least one time to begin with
+
+77
+00:05:37,906 --> 00:05:42,986
+then i have underwood underwood uh
+carter carter stephen smith oliver
+
+78
+00:05:42,986 --> 00:05:48,186
+oliver Morales Morales but this time
+if I only want to output the unique
+
+79
+00:05:48,186 --> 00:05:53,346
+last names I say select distinct
+last name I go ahead and run this
+
+80
+00:05:53,346 --> 00:05:57,086
+and now I can see here that all of
+these last names that are outputting
+
+81
+00:05:57,086 --> 00:06:02,286
+to me are all unique there's none
+that are repeating okay and again
+
+82
+00:06:02,386 --> 00:06:06,006
+unique is termed as though they are
+spelt the same they are the exact
+
+83
+00:06:06,006 --> 00:06:13,506
+same characters right as what um
+any others are. So if I have, this
+
+84
+00:06:13,506 --> 00:06:17,326
+is where data quality comes in and
+it's very important that all atoms
+
+85
+00:06:17,326 --> 00:06:21,346
+that are spelt this way, right,
+are input that way. So all of my
+
+86
+00:06:21,346 --> 00:06:27,406
+atoms, there's, when I look at
+unique last names, any atoms are all
+
+87
+00:06:27,406 --> 00:06:32,646
+condensed into one last name to output
+that unique last name of atoms. All
+
+88
+00:06:32,646 --> 00:06:36,266
+right, the last two here output the
+five warmest days in the season.
+
+89
+00:06:36,426 --> 00:06:40,626
+So this is going to, I'm going
+to be looking at my day table.
+
+90
+00:06:41,166 --> 00:06:44,326
+So I'll say select star from day.
+
+91
+00:06:44,466 --> 00:06:49,266
+As a reminder, day is what
+looks at the attributes of that
+
+92
+00:06:49,266 --> 00:06:52,746
+day. So here I have the date,
+the day of the week, the price,
+
+93
+00:06:52,746 --> 00:06:56,126
+the holiday. So I'll put the
+five warmest days. So I'm going
+
+94
+00:06:56,126 --> 00:06:59,006
+to be looking at this high
+temperature. So I'm going to say
+
+95
+00:06:59,006 --> 00:07:03,386
+select a D date and let's look
+at high temp to begin with.
+
+96
+00:07:04,456 --> 00:07:07,646
+I'm going to go ahead and run
+this and I can see that I have D
+
+97
+00:07:07,646 --> 00:07:12,926
+-date and high temp. So five warmest
+days. So I need to now order
+
+98
+00:07:12,926 --> 00:07:21,606
+by a high temp and we will do
+five warmest days. So I want it
+
+99
+00:07:21,606 --> 00:07:25,846
+to be descending. I want the highest
+values at the top, right, for
+
+100
+00:07:25,846 --> 00:07:29,106
+my top function. So you can see
+that I have high temperature.
+
+101
+00:07:29,406 --> 00:07:31,826
+The highest values are at
+the top. So I'm going to
+
+102
+00:07:31,826 --> 00:07:34,846
+output the five warmest days.
+I'm going to say top five.
+
+103
+00:07:35,206 --> 00:07:37,366
+You go ahead and run this now.
+
+104
+00:07:38,036 --> 00:07:40,206
+And we can see here that I get April 8th,
+
+105
+00:07:40,206 --> 00:07:44,806
+2023, March 21st, 2023. And those are my
+
+106
+00:07:46,386 --> 00:07:50,426
+five warmest days of the season.
+Now I only want to look for
+
+107
+00:07:50,426 --> 00:07:52,966
+days. I don't want the high
+temp included in the output
+
+108
+00:07:52,966 --> 00:07:55,746
+because I'm just looking for
+five warmest days in the season.
+
+109
+00:07:55,746 --> 00:07:58,886
+As we learn more SQL, it's
+going to become really important
+
+110
+00:07:58,886 --> 00:08:02,106
+that we don't put anything in
+the select clause that we don't
+
+111
+00:08:02,106 --> 00:08:06,406
+want to be included, that we
+don't want as an output field.
+
+112
+00:08:07,126 --> 00:08:12,106
+So just make sure that we're not
+adding extra fields here to be included
+
+113
+00:08:12,106 --> 00:08:15,926
+in my select because that can
+become an issue as we learn more
+
+114
+00:08:15,926 --> 00:08:19,926
+advanced techniques. So these are
+the five warmest days in the season.
+
+115
+00:08:20,336 --> 00:08:23,066
+Now down here finally I
+want to look at output the
+
+116
+00:08:23,066 --> 00:08:27,026
+bottom 10% coldest days
+in the season. So looking
+
+117
+00:08:27,026 --> 00:08:31,246
+at my select, let's see,
+let's just do select top.
+
+118
+00:08:31,506 --> 00:08:35,806
+Well, let's just do another
+select star from day.
+
+119
+00:08:37,996 --> 00:08:39,806
+Go ahead and run this.
+
+120
+00:08:40,306 --> 00:08:46,166
+So I'll put the bottom 10% coldest
+days in the season. So again,
+
+121
+00:08:46,166 --> 00:08:50,606
+I'm looking at high temperature
+and I want to say here from day and
+
+122
+00:08:50,606 --> 00:08:58,866
+I want to order by high temp
+descending. okay because I want, oh
+
+123
+00:08:58,866 --> 00:09:03,226
+ascending, I want the coldest
+temperatures at the top. Okay so here
+
+124
+00:09:03,226 --> 00:09:06,166
+I have high temperature is negative
+four. So that would be one of
+
+125
+00:09:06,166 --> 00:09:10,766
+my coldest days. And this time
+instead I want top 10%. Well if we
+
+126
+00:09:10,766 --> 00:09:15,606
+look here I have 120 records output
+to me. So I want to say select
+
+127
+00:09:15,606 --> 00:09:23,506
+top 10% D date and I'll say high
+temp for now. What this is going to
+
+128
+00:09:23,506 --> 00:09:27,966
+do is it's going to return to
+me, what's 10% of 120? I hope you
+
+129
+00:09:27,966 --> 00:09:32,786
+said 12 rows. So you're right, it's
+going to output to me 12 rows of
+
+130
+00:09:32,786 --> 00:09:38,706
+data, and now I get the bottom 10
+% coldest days. So December 27th,
+
+131
+00:09:38,706 --> 00:09:42,946
+January 1st, then I'm going to
+again delete out high temperature.
+
+132
+00:09:44,046 --> 00:09:46,766
+Therefore, I am just returning those
+
+133
+00:09:46,906 --> 00:09:51,726
+top 10% D-dates of the coldest days
+in the season. All right, I hope
+
+134
+00:09:51,726 --> 00:09:56,386
+this was helpful to you in learning
+remember top and order by go hand
+
+135
+00:09:56,386 --> 00:10:00,926
+in hand and distinct helps us find
+unique values thank you take care
+

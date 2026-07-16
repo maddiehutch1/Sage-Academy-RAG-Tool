@@ -1,0 +1,1155 @@
+467
+00:00:01,150 --> 00:00:02,810
+Hi, Data2100 students.
+
+468
+00:00:03,040 --> 00:00:06,650
+Data quality matters. When we talk
+about all this data in the world
+
+469
+00:00:06,650 --> 00:00:12,170
+being produced, we must think about,
+but what quality, what qualities does
+
+470
+00:00:12,170 --> 00:00:16,910
+that data have, and does it have,
+as we call it, data quality? Is it
+
+471
+00:00:16,910 --> 00:00:21,410
+data that we can rely on to drive
+business decisions? So let's take a
+
+472
+00:00:21,410 --> 00:00:24,750
+look at the objectives for today.
+In this video, we want to understand
+
+473
+00:00:24,750 --> 00:00:28,690
+the importance of data and its
+ability to mitigate bias. we want to
+
+474
+00:00:28,690 --> 00:00:32,710
+define and identify data quality
+issues. So you'll read about in your
+
+475
+00:00:32,710 --> 00:00:37,850
+textbook and we'll have a lot of
+access to resources regarding accuracy,
+
+476
+00:00:37,850 --> 00:00:42,150
+completeness, consistency, time
+appropriateness, and uniqueness.
+
+477
+00:00:42,170 --> 00:00:44,910
+So when we talk about things
+that are, when we talk
+
+478
+00:00:44,910 --> 00:00:48,190
+about these five data quality
+characteristics, which again
+
+479
+00:00:48,190 --> 00:00:51,870
+you've read about a lot in your
+textbook, we are looking at how
+
+480
+00:00:51,870 --> 00:00:55,850
+much can we rely on this data
+to drive business decisions.
+
+481
+00:00:56,920 --> 00:01:00,470
+So when we look at how much data is
+collected per minute, it is absolutely
+
+482
+00:01:00,470 --> 00:01:06,650
+overwhelming. And as soon as Domo
+is the one that produces this
+
+483
+00:01:06,650 --> 00:01:12,510
+figure, as soon as this is produced,
+it is automatically out of date, right?
+
+484
+00:01:12,510 --> 00:01:17,470
+Because there's just so much more
+data being produced all the time.
+
+485
+00:01:17,910 --> 00:01:22,610
+So when we look at all this data
+being produced all of the time, like
+
+486
+00:01:22,610 --> 00:01:28,390
+12 million people send an iMessage
+every minute of every day. Netflix,
+
+487
+00:01:28,390 --> 00:01:34,470
+you know, let's think about Slack
+users send 148,000 messages.
+
+488
+00:01:34,470 --> 00:01:40,230
+There is just so much data that we are
+producing and that we are consuming
+
+489
+00:01:40,230 --> 00:01:43,610
+in our daily lives. And we don't
+really think about it as data.
+
+490
+00:01:43,900 --> 00:01:47,430
+And that's what I love about this
+world of data analytics is any
+
+491
+00:01:47,430 --> 00:01:51,650
+industry that you're interested in,
+we just started a sports analytics
+
+492
+00:01:51,650 --> 00:01:56,490
+organization, a student organization
+here in our data analytics
+
+493
+00:01:56,490 --> 00:02:00,210
+and information systems department.
+And they are focused in on
+
+494
+00:02:00,300 --> 00:02:03,890
+sports data. And there is so much
+data with sports. If you're at
+
+495
+00:02:03,890 --> 00:02:07,830
+all interested in sports, the world
+of sports analytics is booming.
+
+496
+00:02:08,150 --> 00:02:12,030
+And it's fascinating. It's cool
+to be a part of. So any industry
+
+497
+00:02:12,030 --> 00:02:14,810
+that you're interested in,
+there is data surrounding that.
+
+498
+00:02:15,670 --> 00:02:19,190
+But before we dive more into
+data, I want to talk a little bit
+
+499
+00:02:19,190 --> 00:02:23,010
+about confirmation bias, and
+how we can use data to overcome
+
+500
+00:02:23,010 --> 00:02:28,610
+confirmation bias. So let's talk
+about a story about a car, okay?
+
+501
+00:02:28,810 --> 00:02:33,550
+So I have driven the
+same Honda Civic forever.
+
+502
+00:02:34,010 --> 00:02:39,350
+I love that car. She is the best.
+But I have always dreamed of
+
+503
+00:02:39,350 --> 00:02:43,590
+buying, and I'm going to call it
+just, let's call it a, you know,
+
+504
+00:02:43,590 --> 00:02:48,010
+fancy, it's not fancy it's really
+not that fancy uh let's call
+
+505
+00:02:48,010 --> 00:02:51,270
+it um well my dog's name is charlie
+so let's call it the charlie
+
+506
+00:02:51,270 --> 00:02:57,250
+mobile all right so charlie
+mobile um i really really really
+
+507
+00:02:57,250 --> 00:03:01,450
+really want this car i've wanted it
+forever uh it's nothing necessarily
+
+508
+00:03:01,450 --> 00:03:07,250
+too fancy but it's also like
+a really fun car um but i just
+
+509
+00:03:07,250 --> 00:03:11,790
+can't get myself to buy this
+car so the three things that are
+
+510
+00:03:11,790 --> 00:03:16,070
+really important to me are safety,
+gas mileage, and reliability.
+
+511
+00:03:16,250 --> 00:03:22,310
+But generally, when I go about and
+do some search on this car, when I
+
+512
+00:03:22,310 --> 00:03:25,810
+look at different reports and things,
+this is kind of what the search
+
+513
+00:03:25,810 --> 00:03:31,070
+results end in. I might be at two
+stars on a couple of these, but
+
+514
+00:03:31,070 --> 00:03:35,550
+really it doesn't rate super highly
+on the three things that I care the
+
+515
+00:03:35,550 --> 00:03:39,950
+most about. Okay, so when I go and
+look and I'm I really want this
+
+516
+00:03:39,950 --> 00:03:43,850
+Charlie mobile, but I care about
+these three things. It's like, yeah,
+
+517
+00:03:43,970 --> 00:03:48,070
+doesn't rank super high on those
+things. Really, really fun though.
+
+518
+00:03:49,190 --> 00:03:53,150
+And so every year I talk myself
+out of buying it, but practically
+
+519
+00:03:53,150 --> 00:03:55,650
+every summer I'm like, I
+really want to go buy this car.
+
+520
+00:03:55,790 --> 00:03:58,370
+But you know what I, I, when I have
+
+521
+00:03:58,370 --> 00:04:00,930
+done this cycle, it's literally a cycle.
+
+522
+00:04:01,350 --> 00:04:04,790
+I generally always find
+myself then Googling something
+
+523
+00:04:04,790 --> 00:04:08,730
+like this reasons to buy and
+then I insert the car name.
+
+524
+00:04:09,270 --> 00:04:15,530
+So I then look for reasons
+to buy that type of car.
+
+525
+00:04:15,630 --> 00:04:23,170
+So this is an example of confirmation
+bias. I am looking for things to
+
+526
+00:04:23,170 --> 00:04:28,050
+basically tell me that what I think
+is right, that I should go and buy
+
+527
+00:04:28,050 --> 00:04:31,350
+this car. Even though the three
+things that I care the most about,
+
+528
+00:04:31,350 --> 00:04:34,990
+the data that I'm really looking at
+is telling me, yeah, probably not a
+
+529
+00:04:34,990 --> 00:04:39,330
+good idea. I then go and I say,
+okay, but what about, you know, look,
+
+530
+00:04:39,330 --> 00:04:44,230
+look for reasons to buy this. I want
+to confirm these ideas that I have
+
+531
+00:04:44,230 --> 00:04:47,860
+that this is the right idea. So
+that's an example of confirmation
+
+532
+00:04:47,860 --> 00:04:52,790
+bias, right? I am looking for things
+that are going to point me back to
+
+533
+00:04:52,790 --> 00:04:56,670
+what I already believe to be true,
+which is that I should buy this car.
+
+534
+00:04:56,670 --> 00:05:01,010
+Even though the data, right, those
+safety ratings, miles per gallon
+
+535
+00:05:01,010 --> 00:05:04,070
+ratings, those things are telling
+me, yeah, probably not a great idea.
+
+536
+00:05:04,690 --> 00:05:08,690
+Okay. So then what does, that's
+confirmation bias, right? When we're
+
+537
+00:05:08,690 --> 00:05:13,610
+just looking for things to fuel our
+already preconceived ideas or notions.
+
+538
+00:05:13,630 --> 00:05:18,590
+So how does data, specifically
+quality data, how does it help us
+
+539
+00:05:18,590 --> 00:05:22,490
+overcome this? Well, one way is
+things like this, right? That when you
+
+540
+00:05:22,490 --> 00:05:27,050
+go and buy a car, there are tons of
+different, whether it's, you know,
+
+541
+00:05:27,230 --> 00:05:29,290
+whether it's different reports, different
+
+542
+00:05:29,290 --> 00:05:32,090
+tests that they've ran
+on. There's, you know,
+
+543
+00:05:32,390 --> 00:05:37,490
+more consumer type of reviews.
+There's all sorts of different
+
+544
+00:05:38,300 --> 00:05:45,510
+websites and organizations like
+Car and Driver that help us
+
+545
+00:05:45,510 --> 00:05:48,910
+rate these cars that give us
+some data points. So we can
+
+546
+00:05:48,910 --> 00:05:52,630
+look at, of course, at the data
+and that is what we should do.
+
+547
+00:05:52,790 --> 00:05:55,650
+So, but we must rely on that data and
+
+548
+00:05:55,650 --> 00:05:57,970
+that data must have quality, right?
+
+549
+00:05:58,130 --> 00:06:01,650
+So data quality is the degree to
+which a data set can be efficiently
+
+550
+00:06:01,650 --> 00:06:05,770
+and effectively processed and used.
+It is required for data integrity.
+
+551
+00:06:05,770 --> 00:06:09,730
+It's pretty much the reason the
+databases exist and we're going to
+
+552
+00:06:09,730 --> 00:06:14,550
+talk about that, okay? So I told you
+that data drives decision-making,
+
+553
+00:06:14,550 --> 00:06:17,770
+right? We talked about that in our
+initial video, that data drives
+
+554
+00:06:17,770 --> 00:06:23,610
+decision-making. That because my
+the dream car is really scoring
+
+555
+00:06:23,610 --> 00:06:27,130
+poorly on the three things I care
+about I'm going to still hold off
+
+556
+00:06:27,130 --> 00:06:31,030
+even though my confirmation bias is
+like yeah no let's do it let's buy
+
+557
+00:06:31,030 --> 00:06:35,450
+it right um so data drives decision
+making but I'm going to clarify
+
+558
+00:06:35,450 --> 00:06:41,690
+quality data drives good or informed
+decision making so if I'm not
+
+559
+00:06:41,690 --> 00:06:46,890
+relying on great sources of that data
+if that data was collected in ways
+
+560
+00:06:46,890 --> 00:06:52,690
+that does not maintain quality,
+then it's not going to lead me to
+
+561
+00:06:52,690 --> 00:06:56,950
+good or informed decision making.
+So quality data drives good or
+
+562
+00:06:56,950 --> 00:07:02,590
+informed decision making. We've been
+collecting data for centuries, right?
+
+563
+00:07:02,590 --> 00:07:07,090
+So this is an example. It looks
+like of an old ledger, absolutely
+
+564
+00:07:07,090 --> 00:07:12,290
+gorgeous handwriting. And we can
+see here that we are looking at
+
+565
+00:07:12,290 --> 00:07:16,850
+seemingly an old ledger. So we've
+been collecting data for a long time.
+
+566
+00:07:16,850 --> 00:07:23,650
+But as we have become more and more
+of a progressive society in terms
+
+567
+00:07:23,650 --> 00:07:30,390
+of all of our different IT
+infrastructure and data capacities that
+
+568
+00:07:30,390 --> 00:07:35,870
+we have, we really are focusing in
+on the type of quality data that
+
+569
+00:07:35,870 --> 00:07:40,190
+we have. So do we have data that has
+these five data quality characteristics.
+
+570
+00:07:40,190 --> 00:07:45,510
+So is it accurate data, right?
+Was it collected in a way that
+
+571
+00:07:45,510 --> 00:07:49,990
+it's accurate, okay? Is it complete?
+Is there missing data points?
+
+572
+00:07:50,910 --> 00:07:55,110
+If so, what are those missing
+data points? And plot twist,
+
+573
+00:07:55,110 --> 00:07:59,010
+there's generally always some
+sort of missing data. We just have
+
+574
+00:07:59,010 --> 00:08:02,690
+to learn how to deal with that.
+But we do our best to have
+
+575
+00:08:02,690 --> 00:08:07,410
+complete data sets. Is the data
+consistent? If I am measuring
+
+576
+00:08:08,550 --> 00:08:12,150
+something always in kilometers,
+but then I switch it to miles
+
+577
+00:08:12,150 --> 00:08:16,150
+for a couple of measurements,
+that is inconsistent data, right?
+
+578
+00:08:16,150 --> 00:08:20,230
+So that consistency is true. Am
+I using it in a time appropriate
+
+579
+00:08:20,230 --> 00:08:25,090
+way? Meaning if the data
+was, if I'm trying to predict
+
+580
+00:08:25,090 --> 00:08:30,870
+next year's sales for an
+organization, if I use data from 2005,
+
+581
+00:08:31,130 --> 00:08:34,810
+that's not going to help me
+predict next year's sales, right?
+
+582
+00:08:34,990 --> 00:08:39,770
+But if I use the last 10 years
+of data, then it's being used for
+
+583
+00:08:39,770 --> 00:08:43,150
+the correct purpose and it's time
+appropriate in terms of it's not
+
+584
+00:08:43,150 --> 00:08:47,630
+super latent data collection, or
+we're not relying on data that was
+
+585
+00:08:47,630 --> 00:08:50,870
+collected a long time ago. And
+then finally, is it unique, right?
+
+586
+00:08:50,870 --> 00:08:55,830
+Getting this idea of, we'll talk
+about uniqueness with primary and
+
+587
+00:08:55,830 --> 00:08:58,910
+foreign keys and databases. But
+when we think about uniqueness,
+
+588
+00:08:58,910 --> 00:09:02,830
+we also think, you know, if a
+customer walks into my door and they
+
+589
+00:09:02,830 --> 00:09:07,870
+only make one transaction one day,
+then I'm not accidentally tracking
+
+590
+00:09:07,870 --> 00:09:12,590
+two transactions, right? So is
+it unique is really important.
+
+591
+00:09:12,870 --> 00:09:17,610
+So let's take a look at an example
+of dirty data. So here's a quick
+
+592
+00:09:17,610 --> 00:09:21,830
+example of dirty data. Here I have,
+and we're going to talk a lot about
+
+593
+00:09:21,830 --> 00:09:27,990
+this, but I have a row of data and
+then I have columns of data, okay?
+
+594
+00:09:27,990 --> 00:09:36,560
+So my rows go horizontally
+and my columns go
+
+595
+00:09:36,560 --> 00:09:40,350
+vertically. So just keep that
+in mind, rows and columns.
+
+596
+00:09:41,150 --> 00:09:45,880
+And my rows and columns here,
+I'm looking at here in Excel
+
+597
+00:09:45,880 --> 00:09:48,630
+spreadsheet and we're going to
+be working a lot with Excel.
+
+598
+00:09:50,190 --> 00:09:54,710
+Excel is going to, you know, is
+going to hold my data. So this is
+
+599
+00:09:54,710 --> 00:09:59,670
+holding my data. So this is a
+little snapshot of data that we're
+
+600
+00:09:59,670 --> 00:10:02,970
+looking at. So as we're getting
+familiar with what is data, I'm
+
+601
+00:10:02,970 --> 00:10:05,790
+telling you it's collected all
+the time. Here's an example of
+
+602
+00:10:05,790 --> 00:10:09,790
+data, right? So here, let's say
+that this, these are my customers.
+
+603
+00:10:10,990 --> 00:10:16,310
+Okay. And so here I have ID
+number 113. This is my unique
+
+604
+00:10:16,310 --> 00:10:19,310
+identifier, also called a
+primary key, but we'll just call
+
+605
+00:10:19,310 --> 00:10:22,550
+it a unique identifier. That's
+what ID stands for. And I
+
+606
+00:10:22,550 --> 00:10:25,870
+have a unique identifier, last
+name of Smith, first name.
+
+607
+00:10:27,410 --> 00:10:31,210
+What's their first name? So this
+is a completeness issue, right?
+
+608
+00:10:31,210 --> 00:10:34,830
+I'm missing some data right
+here. Pretty important data,
+
+609
+00:10:34,830 --> 00:10:39,030
+but everything else is maybe
+looking okay. Okay. So there's a
+
+610
+00:10:39,030 --> 00:10:43,610
+completeness issue. Then down
+here, as I'm looking at these two
+
+611
+00:10:43,610 --> 00:10:47,090
+rows again, so let's, again,
+we're just looking at rows here.
+
+612
+00:10:48,010 --> 00:10:52,960
+So I'm looking at these
+two rows, rows 115 and 116.
+
+613
+00:10:53,190 --> 00:10:59,050
+Jenny Roberts, here is
+115, and Jenny Robert.
+
+614
+00:10:59,110 --> 00:11:04,110
+Rut, oh, yikes. So Jenny
+Roberts, Jenny Robert.
+
+615
+00:11:04,350 --> 00:11:08,610
+Well, what's, what's going on
+here? These are all the same.
+
+616
+00:11:08,610 --> 00:11:11,750
+Every other data point,
+their city in Denver, their
+
+617
+00:11:11,750 --> 00:11:15,010
+state in Colorado, their zip
+code, their phone number, their
+
+618
+00:11:15,010 --> 00:11:18,030
+fax number, their email,
+their street, everything's the
+
+619
+00:11:18,030 --> 00:11:23,010
+same except for this one has
+an S and this one does not.
+
+620
+00:11:23,190 --> 00:11:27,750
+So this is a uniqueness issue
+more than likely is that we
+
+621
+00:11:27,750 --> 00:11:32,310
+have this customer tracked
+two times but we think it's
+
+622
+00:11:32,310 --> 00:11:36,190
+the same person. So what do we
+do? So then we would have to
+
+623
+00:11:36,190 --> 00:11:38,330
+do some data cleansing techniques.
+We would have to figure
+
+624
+00:11:38,330 --> 00:11:41,330
+out, is it Jenny Robert or
+is it Jenny Roberts? Okay.
+
+625
+00:11:42,130 --> 00:11:45,950
+Then we have our phone and our
+fax. I always question, is fax
+
+626
+00:11:45,950 --> 00:11:49,150
+used very much? We'll see. And
+then I have my email address.
+
+627
+00:11:49,150 --> 00:11:51,770
+You'll notice right here,
+this is a phone number, right?
+
+628
+00:11:51,770 --> 00:11:54,990
+That's not an email address.
+So that's a data quality issue.
+
+629
+00:11:55,290 --> 00:11:59,510
+I also noticed that this phone
+and this fax number are the same
+
+630
+00:11:59,510 --> 00:12:04,050
+number. So that's a data quality
+issue. Okay, that's not true. I'm also
+
+631
+00:12:04,050 --> 00:12:09,430
+missing my area codes, right, that
+435 or whatever it may be. I'm
+
+632
+00:12:09,430 --> 00:12:13,790
+missing that on my phone and my
+fax or 208 or whatever it may be.
+
+633
+00:12:15,050 --> 00:12:19,030
+And then there's a couple other
+things. I'm also missing the rest
+
+634
+00:12:19,030 --> 00:12:23,470
+of the street address. So this mini
+data set that you are having the
+
+635
+00:12:23,470 --> 00:12:27,050
+opportunity to look at right here,
+it is showing some data quality
+
+636
+00:12:27,050 --> 00:12:33,310
+issues. This is dirty data. So if
+we were to put this into a quick
+
+637
+00:12:33,310 --> 00:12:38,010
+analysis, we would say, oh, I
+have four customers. I have four
+
+638
+00:12:38,010 --> 00:12:41,950
+customers. So I'm claiming that.
+I've got four customers. Actually, I
+
+639
+00:12:41,950 --> 00:12:46,470
+might only have three, according
+to the snapshot of this tiny data
+
+640
+00:12:46,470 --> 00:12:52,630
+set I can look at. So the quality
+of the data is so important. Okay,
+
+641
+00:12:53,050 --> 00:12:56,950
+here's another example.
+Here's some different
+
+642
+00:12:58,330 --> 00:13:01,470
+information regarding, I believe,
+some students. So yeah, let's
+
+643
+00:13:01,470 --> 00:13:04,990
+take a look here. So I'm
+looking at a state of residence,
+
+644
+00:13:04,990 --> 00:13:10,190
+salary, GPA, years to graduate,
+major, birth date, and record ID.
+
+645
+00:13:10,210 --> 00:13:13,690
+So I can see here I have all these
+different birth dates. I have all
+
+646
+00:13:13,690 --> 00:13:20,970
+these different majors. and again my
+rows run horizontal and my columns
+
+647
+00:13:21,350 --> 00:13:27,370
+run vertical okay so my record id
+is uniquely identifying each we
+
+648
+00:13:27,370 --> 00:13:32,190
+can call these records or rows okay
+and the birth date is one of my
+
+649
+00:13:32,190 --> 00:13:35,810
+columns along with the rest of these
+are all columns as well so i can
+
+650
+00:13:35,810 --> 00:13:38,270
+see i have all these different birth
+dates i have all these different
+
+651
+00:13:38,270 --> 00:13:44,370
+majors their years to graduation
+their gpa uh salary things like this
+
+652
+00:13:44,950 --> 00:13:50,230
+so perhaps these are past students
+I looked at okay this is how long
+
+653
+00:13:50,230 --> 00:13:54,390
+it took them to graduate four years
+six years things like that and then
+
+654
+00:13:54,390 --> 00:13:57,770
+maybe this is now their current
+salary they've gone off they now live
+
+655
+00:13:57,770 --> 00:14:02,150
+in a different state and these are
+their salaries so this is a sample
+
+656
+00:14:02,150 --> 00:14:07,710
+this can be an extremely informative
+data set to help me understand
+
+657
+00:14:07,710 --> 00:14:12,130
+what's happening to my students
+once they graduate, right? I had a
+
+658
+00:14:12,130 --> 00:14:15,950
+student and their major was accounting,
+so what did they go off and do?
+
+659
+00:14:16,170 --> 00:14:19,030
+They, you know, moved to Idaho and this
+
+660
+00:14:19,030 --> 00:14:21,070
+is their salary, okay? Things like that.
+
+661
+00:14:21,170 --> 00:14:23,890
+Okay, so this is really
+important data I'm looking at,
+
+662
+00:14:23,890 --> 00:14:26,830
+but what type of data quality
+issues can we see here?
+
+663
+00:14:28,650 --> 00:14:28,934
+This is catching my eye, right?
+Negative five years to graduation.
+
+664
+00:14:28,934 --> 00:14:33,690
+This is catching my eye, right?
+Negative five years to graduation.
+
+665
+00:14:33,830 --> 00:14:38,190
+Seems like this is a data quality
+issue. Birth dates, these seem
+
+666
+00:14:38,190 --> 00:14:41,610
+like we have some data quality
+issues going on here in terms of
+
+667
+00:14:41,610 --> 00:14:46,330
+we want these to all be in the
+same format. So if we are going to
+
+668
+00:14:46,330 --> 00:14:51,210
+move forward with using this type
+of format of July 30th, 1996,
+
+669
+00:14:51,270 --> 00:14:54,910
+then let's keep using that format,
+okay? We're not going to switch
+
+670
+00:14:54,910 --> 00:14:59,990
+to Saturday, July 3rd, 1999 in
+that cell, okay? So this, again,
+
+671
+00:14:59,990 --> 00:15:02,330
+we're going going to talk a lot
+about Excel, but this is like an
+
+672
+00:15:02,330 --> 00:15:07,350
+Excel spreadsheet worth of data
+with rows and columns tracking.
+
+673
+00:15:07,470 --> 00:15:11,550
+Every row here represents a
+student that has graduated.
+
+674
+00:15:12,450 --> 00:15:14,950
+A couple other, let's see here.
+
+675
+00:15:15,730 --> 00:15:19,610
+I have my different majors. I'm
+trying to see if I notice anything off
+
+676
+00:15:19,610 --> 00:15:23,830
+the bat. I'm sure there's some
+data quality issues here, but so we
+
+677
+00:15:23,830 --> 00:15:26,930
+have our different majors, our years
+to graduation, the negative five.
+
+678
+00:15:27,470 --> 00:15:33,730
+Looking here at the GPA, if it's
+out of a 4.0 scale, this 5.81,
+
+679
+00:15:33,950 --> 00:15:38,910
+something's going on there.
+I have some incomplete salary
+
+680
+00:15:38,910 --> 00:15:41,970
+data here. And so there's
+some things here that I need
+
+681
+00:15:41,970 --> 00:15:46,370
+to pay attention to regarding
+the quality of this data.
+
+682
+00:15:46,970 --> 00:15:50,530
+So we can continue to point
+things out here, but we're
+
+683
+00:15:50,530 --> 00:15:53,480
+going to move on. But
+again, this could be really
+
+684
+00:15:53,480 --> 00:15:55,890
+insightful data. We just need
+to make sure that anytime we're
+
+685
+00:15:55,890 --> 00:15:57,841
+looking at data, we are
+assessing its quality. Okay.
+
+686
+00:15:57,841 --> 00:16:01,046
+So that's a good introduction to data
+quality. And why does data quality
+
+687
+00:16:01,046 --> 00:16:06,886
+matters? Because as we seek to
+overcome our, in this case, our
+
+688
+00:16:06,886 --> 00:16:11,606
+confirmation bias, right, of doing
+things as we've always done it, as you've
+
+689
+00:16:11,606 --> 00:16:14,846
+read about in your textbook, this
+happens a lot in organizations,
+
+690
+00:16:14,846 --> 00:16:18,226
+is they'll say, oh, well, last year
+we spent this amount on marketing.
+
+691
+00:16:18,226 --> 00:16:21,046
+We're going to do the same amount
+this year. But maybe they should not
+
+692
+00:16:21,046 --> 00:16:24,766
+do that. Maybe the data points to
+investing in more of an expensive
+
+693
+00:16:24,766 --> 00:16:30,866
+marketing campaign. So pointing back
+to the data can help us overcome
+
+694
+00:16:31,456 --> 00:16:37,386
+things like confirmation bias. But
+we must have quality data to do so.
+
+695
+00:16:37,606 --> 00:16:41,266
+And quality data, we
+store, to preserve data
+
+696
+00:16:41,266 --> 00:16:45,046
+quality, we can store them in databases.
+
+697
+00:16:45,226 --> 00:16:48,806
+Before we do that though, before
+we jump into databases, we are
+
+698
+00:16:48,806 --> 00:16:53,806
+going to orient you to Excel and
+small data sets and get you acquainted
+
+699
+00:16:53,806 --> 00:16:57,826
+with using Excel as we continue
+on in the course. Take care.
+

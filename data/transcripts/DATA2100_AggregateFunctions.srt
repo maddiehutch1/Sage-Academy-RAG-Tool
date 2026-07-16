@@ -1,0 +1,1090 @@
+1
+00:00:01,110 --> 00:00:03,150
+Today in this video we
+are going to learn how
+
+2
+00:00:03,150 --> 00:00:07,090
+to make SQL even more
+helpful and powerful.
+
+3
+00:00:07,090 --> 00:00:11,390
+So before the videos make sure
+to launch and log in to Beekeeper
+
+4
+00:00:11,390 --> 00:00:14,170
+and then I've also provided
+with you some examples that
+
+5
+00:00:14,170 --> 00:00:17,110
+you can download to follow
+along with me if you would like.
+
+6
+00:00:17,330 --> 00:00:20,590
+So let's go, I encourage
+you to do so, let's go ahead
+
+7
+00:00:20,590 --> 00:00:23,430
+and do this. So if I asked
+you a question of write
+
+8
+00:00:23,430 --> 00:00:27,330
+a query to return the
+average age of all guests,
+
+9
+00:00:27,570 --> 00:00:30,730
+how would you go about doing
+that? So right now, if we
+
+10
+00:00:30,730 --> 00:00:33,531
+take a look at our, I'm gonna
+open up Beekeeper here quick.
+
+11
+00:00:33,562 --> 00:00:37,082
+Here if I'm on Beekeeper, I'm gonna
+come over to a new query. And if
+
+12
+00:00:37,082 --> 00:00:44,262
+I wanna find the average age of all
+guests, and I go about doing that,
+
+13
+00:00:44,522 --> 00:00:48,342
+I would first off say, I know that
+I'm gonna be coming from the guest
+
+14
+00:00:48,342 --> 00:00:53,042
+table, so I might say select star,
+from, and then I'm gonna say guest.
+
+15
+00:00:53,582 --> 00:00:55,792
+So I'm gonna go ahead and run this.
+
+16
+00:00:56,752 --> 00:01:00,522
+And when I do this, I see that
+I get all of the records and
+
+17
+00:01:00,522 --> 00:01:04,762
+all of the rows from my guest
+table. Now this is helpful
+
+18
+00:01:04,762 --> 00:01:08,942
+so I can see what does my age
+field exactly look like. So I
+
+19
+00:01:08,942 --> 00:01:13,382
+can see I have just the integer
+values of individuals ages.
+
+20
+00:01:13,382 --> 00:01:17,202
+So if I wanted to find the age,
+let's see, if I said select
+
+21
+00:01:17,202 --> 00:01:20,742
+age from guest, now what's that
+going to do? Okay, so now it's
+
+22
+00:01:20,742 --> 00:01:24,442
+going to just show me the age
+of all of my guests. Now I
+
+23
+00:01:24,442 --> 00:01:26,542
+can't say their first and last
+names, right, because that's not
+
+24
+00:01:26,542 --> 00:01:29,702
+contained in my select statement.
+I'm just looking at ages.
+
+25
+00:01:29,702 --> 00:01:33,922
+So now what if I want to see the
+average age of all guests? So
+
+26
+00:01:33,922 --> 00:01:37,462
+what I'm going to do now is I'm
+going to use an aggregate function.
+
+27
+00:01:38,062 --> 00:01:42,882
+There are five aggregate
+functions that are built into SQL.
+
+28
+00:01:43,442 --> 00:01:45,342
+Average, max, min,
+
+29
+00:01:45,892 --> 00:01:48,122
+sum, and count.
+
+30
+00:01:48,122 --> 00:01:52,012
+We are going to use average. So
+we're going to say select average
+
+31
+00:01:53,992 --> 00:02:00,812
+age, A-B-G age, and then we are
+going to give it an alias, as average
+
+32
+00:02:02,632 --> 00:02:07,842
+age. Okay, so now when I run this,
+I am performing this function
+
+33
+00:02:07,842 --> 00:02:12,922
+on age. So it is going to find
+the average of all of these ages
+
+34
+00:02:12,922 --> 00:02:19,242
+of my guess, and then name that
+field average age for the output.
+
+35
+00:02:20,182 --> 00:02:21,422
+So I'm going to go ahead and run this.
+
+36
+00:02:23,835 --> 00:02:23,932
+Oh, there we go. All right.
+
+37
+00:02:24,092 --> 00:02:28,472
+So we can see here that the
+average age is 28, okay? So that is
+
+38
+00:02:28,472 --> 00:02:32,552
+the average age of all of my
+guests. So I am aggregating all that
+
+39
+00:02:32,552 --> 00:02:36,832
+data together and figuring out
+what is that average age. So that
+
+40
+00:02:36,832 --> 00:02:40,232
+is how I would write a query to
+return the average age of all
+
+41
+00:02:40,232 --> 00:02:44,712
+guests. So like I said, here we
+have five built-in SQL aggregate
+
+42
+00:02:44,712 --> 00:02:49,172
+functions. So count counts the
+number of rows for a given field.
+
+43
+00:02:49,272 --> 00:02:52,632
+Min returns a minimum
+field, maximum field.
+
+44
+00:02:52,792 --> 00:02:57,672
+of course sum. Sum returns the
+calculated sum for an entire field. So
+
+45
+00:02:57,672 --> 00:03:04,112
+if I wanted to add everybody's ages
+together, I would sum age. Okay.
+
+46
+00:03:04,112 --> 00:03:08,212
+And then average returns again the
+calculated average for a field.
+
+47
+00:03:08,472 --> 00:03:11,312
+Now, if we take a look at this, we come
+
+48
+00:03:11,312 --> 00:03:14,652
+back over here to our query number one.
+
+49
+00:03:15,392 --> 00:03:20,072
+And it says here, oh, on question
+number one, before we go much further,
+
+50
+00:03:20,072 --> 00:03:24,332
+we want to have a little review
+question here. I'll put the first
+
+51
+00:03:24,332 --> 00:03:27,312
+name, last name, and age for all
+customers with the last name.
+
+52
+00:03:27,312 --> 00:03:31,552
+Gitson, Mason, Watson, or Wilson. Do
+not use or. All right, let's go ahead
+
+53
+00:03:31,552 --> 00:03:34,182
+and do this quick, and then we'll
+jump back into aggregate functions.
+
+54
+00:03:34,312 --> 00:03:37,472
+A little review session here to
+get us our minds thinking about
+
+55
+00:03:37,472 --> 00:03:41,372
+SQL. So we're going to go ahead and
+run that select star from guest.
+
+56
+00:03:41,552 --> 00:03:44,552
+I want to see, can you do
+this on your own? Okay,
+
+57
+00:03:44,552 --> 00:03:47,772
+we are running this. Can
+we do it on your own?
+
+58
+00:03:48,692 --> 00:03:51,312
+So I'll put the first
+name, last name, and
+
+59
+00:03:51,312 --> 00:03:53,332
+age, so I'm going to
+go ahead here and grab
+
+60
+00:03:53,492 --> 00:03:54,772
+first name,
+
+61
+00:03:54,912 --> 00:04:00,852
+last name, and age, okay, and now
+this is going to return all of my
+
+62
+00:04:00,852 --> 00:04:07,022
+guests first name, last name, and
+age. I am not limiting my records
+
+63
+00:04:07,022 --> 00:04:10,952
+being returned to me in the where
+clause yet. So right now I have here
+
+64
+00:04:10,952 --> 00:04:14,012
+all of the first names, their
+last names, and their age. So now
+
+65
+00:04:14,012 --> 00:04:17,532
+what I'm going to do is I want to
+only return it though for students or
+
+66
+00:04:17,532 --> 00:04:21,452
+for customers with the last name
+Gibson, Mason, Watson, or Wilson.
+
+67
+00:04:21,452 --> 00:04:25,552
+So I'm going to come over here
+and say, use my where clause,
+
+68
+00:04:25,552 --> 00:04:29,652
+where helps limit records. And
+I'm going to say where last
+
+69
+00:04:29,652 --> 00:04:34,832
+name, um, and I don't use or.
+Okay. So I'm not going to say
+
+70
+00:04:34,832 --> 00:04:39,032
+equal to Gibson or last name
+equal to Mason. Instead, I'm going
+
+71
+00:04:39,032 --> 00:04:43,052
+to use my in keyword, which
+is going to allow me to put a
+
+72
+00:04:43,052 --> 00:04:47,692
+list of values here. So last
+name has to be in Gibson, Mason,
+
+73
+00:04:52,112 --> 00:04:53,852
+Watson,
+
+74
+00:04:56,002 --> 00:05:01,592
+or Wilson, and to not use or. All
+right, I'm going to go ahead and
+
+75
+00:05:01,982 --> 00:05:06,392
+grab that query, run it. And now
+we can see that when it returns to
+
+76
+00:05:06,392 --> 00:05:11,132
+me, all of the records returned
+to me must have the last name of
+
+77
+00:05:11,132 --> 00:05:16,672
+Gibson, Mason, Watson, or Wilson
+to be included in my output. Okay,
+
+78
+00:05:16,672 --> 00:05:20,452
+perfect. All right. So now that we
+got that out of the way, now we can
+
+79
+00:05:20,452 --> 00:05:24,812
+kind of jump back into our aggregate
+functions, right? Because right
+
+80
+00:05:24,812 --> 00:05:28,252
+here, I'm not using any aggregate
+functions, right, in this query.
+
+81
+00:05:28,252 --> 00:05:32,352
+I'm just selecting the
+fields as they are, no
+
+82
+00:05:32,352 --> 00:05:34,512
+aggregation. Now what
+I want to do, though,
+
+83
+00:05:35,072 --> 00:05:40,172
+is if I was to ask you how many
+guests are in our data set, okay,
+
+84
+00:05:40,172 --> 00:05:44,472
+how would I go about to do this?
+Would I say select count guest
+
+85
+00:05:44,472 --> 00:05:49,832
+ID as total number of guests
+from guest, or would I say select
+
+86
+00:05:49,832 --> 00:05:54,352
+some guest ID as total number of
+guests? So when I ask you a question
+
+87
+00:05:54,352 --> 00:05:57,452
+like that, let's go ahead and
+do it. Let's try it out. So I'm
+
+88
+00:05:57,452 --> 00:06:04,792
+trying to figure out the total
+number of guests I have, okay? So
+
+89
+00:06:04,792 --> 00:06:12,518
+if I said select a star from
+guest, I'm just going to run this.
+
+90
+00:06:12,518 --> 00:06:15,217
+So the total number of guests I
+have. So if I was to come here
+
+91
+00:06:15,217 --> 00:06:19,417
+and I'm looking here at this guest
+ID field. So something to keep
+
+92
+00:06:19,417 --> 00:06:25,437
+in mind is when I use a count
+function, I am counting the non
+
+93
+00:06:25,437 --> 00:06:32,077
+-null values of a field, okay? So
+if I am to select count guest ID,
+
+94
+00:06:32,317 --> 00:06:33,017
+all right,
+
+95
+00:06:33,557 --> 00:06:39,257
+with this guest ID, I know that
+it's my primary key, right, of my
+
+96
+00:06:39,257 --> 00:06:44,877
+guest table. It can never be
+null. So this is totally fine to
+
+97
+00:06:44,877 --> 00:06:49,457
+count the guest ID as it will
+never be null. another but if I did
+
+98
+00:06:49,457 --> 00:06:54,617
+say count age and there was a
+null value meaning it's just empty
+
+99
+00:06:54,617 --> 00:06:59,137
+there's no value for it then what
+I would have to do is I'd have
+
+100
+00:06:59,137 --> 00:07:03,037
+to recognize that hey there could
+be a time when if there's a null
+
+101
+00:07:03,037 --> 00:07:07,497
+value that my guess is not going
+to be counted okay so just keep
+
+102
+00:07:07,497 --> 00:07:08,409
+that in mine. When it's null,
+it will have a big kind of null.
+
+103
+00:07:08,409 --> 00:07:13,136
+I will talk more about nulls.
+But again, if say my age was
+
+104
+00:07:13,136 --> 00:07:18,076
+null for a guest, then that
+record would not be counted
+
+105
+00:07:18,076 --> 00:07:23,636
+if I did say select count age
+rather than count guest ID.
+
+106
+00:07:24,176 --> 00:07:28,656
+So I can say select guest ID. I
+know guest ID is never going to
+
+107
+00:07:28,656 --> 00:07:36,176
+be null, and I can say as number,
+let's see, total num of guests.
+
+108
+00:07:36,176 --> 00:07:42,376
+Okay, so if I was to go ahead
+and run this, I can see that
+
+109
+00:07:42,376 --> 00:07:49,676
+I have 13,140 guests according
+to counting my guest ID in my
+
+110
+00:07:49,676 --> 00:07:53,016
+database table of guests. So
+that's how many guests I have.
+
+111
+00:07:53,016 --> 00:07:55,536
+The other way that I could
+write this is instead of saying
+
+112
+00:07:55,536 --> 00:07:58,996
+select count guest ID is I
+could actually say count star.
+
+113
+00:07:59,116 --> 00:08:03,236
+And what count star does is it just
+counts the number of records. So
+
+114
+00:08:03,236 --> 00:08:08,776
+it's not necessarily counting any
+specific value within a field like guest
+
+115
+00:08:08,776 --> 00:08:12,376
+ID is. It's just saying, hey, this
+record exists. I'm going to count
+
+116
+00:08:12,376 --> 00:08:16,716
+it. So if I was to run this one
+instead, I'm still going to get 13,140.
+
+117
+00:08:17,076 --> 00:08:21,536
+So this is counting each record,
+right, each individual guest.
+
+118
+00:08:22,096 --> 00:08:27,976
+Now, back to my question of what
+if we did select some guest ID.
+
+119
+00:08:28,016 --> 00:08:30,136
+What if we did that? So I'm going
+to go ahead and do that. So I'm
+
+120
+00:08:30,136 --> 00:08:35,676
+going to say select, well, let's
+just do it again, a select star.
+
+121
+00:08:35,942 --> 00:08:38,175
+Okay, so now I have my
+select star from guest.
+
+122
+00:08:38,175 --> 00:08:41,355
+Now, if I, though, this
+time, instead of counting
+
+123
+00:08:41,355 --> 00:08:45,675
+the guest ID, I would
+say select some guest ID.
+
+124
+00:08:45,995 --> 00:08:50,895
+Now what this is going
+to do as total num,
+
+125
+00:08:51,495 --> 00:08:58,255
+now what is this going to do? So
+let's take a look at this. If I
+
+126
+00:08:58,255 --> 00:09:01,195
+sum the guest ID, what this is
+going to do is it's going to say
+
+127
+00:09:01,195 --> 00:09:10,995
+guest ID 1 plus 2 plus 3 plus
+4 plus 5 plus 6 plus 7. So it's
+
+128
+00:09:10,995 --> 00:09:17,255
+going to add the guest IDs together,
+right? So if I was to run this,
+
+129
+00:09:17,255 --> 00:09:20,595
+do you think this is going to
+be a higher or lower number than
+
+130
+00:09:20,595 --> 00:09:24,295
+what we receive by counting a
+guest ID? I hope you said higher.
+
+131
+00:09:24,415 --> 00:09:29,635
+It's going to add all of those
+guest IDs together, and when it
+
+132
+00:09:29,635 --> 00:09:33,475
+adds and it runs all those guest
+IDs together, it's going to come
+
+133
+00:09:33,475 --> 00:09:38,875
+up with a much larger number than
+13,140, okay? it's going to be
+
+134
+00:09:38,875 --> 00:09:46,525
+a much larger number. So much so
+that it's going to be 86,336,370
+
+135
+00:09:47,435 --> 00:09:52,335
+would be my total number of guests
+if I sum guest ID. So what do you
+
+136
+00:09:52,335 --> 00:09:57,355
+think about this? Is this the right
+way to answer the question of how many
+
+137
+00:09:57,355 --> 00:10:01,615
+guests are in our data set? I hope
+you said no, it's not. Because
+
+138
+00:10:01,615 --> 00:10:05,875
+what we need to do is we just need
+to count the number of records. So we
+
+139
+00:10:05,875 --> 00:10:12,145
+only have 13,140 guests, not 86
+million guests, right? So this may seem
+
+140
+00:10:12,145 --> 00:10:15,455
+easy at the beginning when we think
+about the difference between count
+
+141
+00:10:15,455 --> 00:10:19,515
+and sum, but sometimes as we begin
+to query a lot and we're looking
+
+142
+00:10:19,515 --> 00:10:23,175
+at, okay, am I counting this or am
+I summing this? Think about it. Am I
+
+143
+00:10:23,175 --> 00:10:29,855
+counting the individual records or
+am I summing values together? Okay.
+
+144
+00:10:30,375 --> 00:10:33,075
+All right. So the right way
+to do this would be one of
+
+145
+00:10:33,075 --> 00:10:37,155
+these two ways of count guest
+ID or count guests. Okay,
+
+146
+00:10:37,655 --> 00:10:38,375
+perfect.
+
+147
+00:10:39,755 --> 00:10:43,475
+So other questions that we can
+answer with max, min, and average,
+
+148
+00:10:43,475 --> 00:10:47,095
+the other three aggregate
+functions, right? Which guest has
+
+149
+00:10:47,095 --> 00:10:50,055
+the highest household income? Which
+guest has the lowest household
+
+150
+00:10:50,055 --> 00:10:53,215
+income? What is the average
+household income of all guests?
+
+151
+00:10:53,415 --> 00:10:56,835
+Just so that you're aware, SQL
+will automatically round the
+
+152
+00:10:56,835 --> 00:11:00,175
+average value to match the data
+type in the column that is being
+
+153
+00:11:00,175 --> 00:11:03,555
+averaged. Okay, so it's just
+going to round that based upon
+
+154
+00:11:03,555 --> 00:11:06,515
+the data type of that column
+that you're trying to average.
+
+155
+00:11:06,595 --> 00:11:09,215
+So let's come back here.
+Those examples that I gave
+
+156
+00:11:09,215 --> 00:11:12,075
+you before, let's go ahead
+and finish writing the
+
+157
+00:11:12,075 --> 00:11:15,535
+queries for those. So I'm
+going to go ahead and do that.
+
+158
+00:11:16,395 --> 00:11:19,655
+All right, so let's take a look.
+What was the highest average wind
+
+159
+00:11:19,655 --> 00:11:22,995
+speed recorder for a day in the
+database, the lowest, and the average?
+
+160
+00:11:23,175 --> 00:11:28,475
+Let's see. Let's grab my Overland
+ERD and Data Dictionary. So I'm
+
+161
+00:11:28,475 --> 00:11:33,075
+looking specifically for wind okay
+so let's look at wind so if i take a
+
+162
+00:11:33,075 --> 00:11:38,435
+look here at the day table and i'm
+looking for wind i want to figure out
+
+163
+00:11:38,435 --> 00:11:43,675
+what is the highest wind speed the
+lowest and the average so i'm going
+
+164
+00:11:43,675 --> 00:11:47,235
+to come over here and i know that
+i'm looking at my day table that's
+
+165
+00:11:47,235 --> 00:11:54,155
+tracking all of that information
+about my wind selects are from day
+
+166
+00:11:57,185 --> 00:12:02,755
+all right so let's go ahead and do
+this so if i take a look here i have
+
+167
+00:12:02,755 --> 00:12:07,395
+wind over here so let's look so i
+have december 10th 2022 saturday
+
+168
+00:12:07,615 --> 00:12:11,495
+it's a weekday that's not a holiday
+the skies were snowing the high
+
+169
+00:12:11,495 --> 00:12:16,415
+temperature was 33 and the wind was 12
+and it keeps coming down here okay so
+
+170
+00:12:16,415 --> 00:12:20,435
+we see that so we have that's the
+height so that's all of our wind
+
+171
+00:12:20,435 --> 00:12:23,955
+right for the different days in the
+database. So what I want to do is
+
+172
+00:12:23,955 --> 00:12:28,355
+figure out what is the lowest and the
+average and the highest wind speed.
+
+173
+00:12:29,055 --> 00:12:31,975
+So let's first stop by saying what
+is the highest. So I'm going to
+
+174
+00:12:31,975 --> 00:12:38,675
+say select max wind and I'm going
+to, if I just did select max wind,
+
+175
+00:12:38,675 --> 00:12:42,435
+let's run that, that's going to come
+up with null. Okay and what that
+
+176
+00:12:42,435 --> 00:12:46,965
+means is I don't have, I didn't
+declare it alias. So I didn't say as
+
+177
+00:12:48,875 --> 00:12:53,635
+highest wind okay so now when I run
+this I can see the highest wind was
+
+178
+00:12:53,635 --> 00:12:57,135
+19 but now what I want to do is
+figure out the minimum so what I do is
+
+179
+00:12:57,135 --> 00:13:02,595
+I just put a comma after that alias
+and I work with my next aggregate
+
+180
+00:13:02,595 --> 00:13:07,975
+function and it's filled and it's
+going to perform the aggregation upon
+
+181
+00:13:08,255 --> 00:13:12,735
+So I'm going to say
+minimum wind as min wind,
+
+182
+00:13:12,735 --> 00:13:19,755
+okay? And then finally,
+average wind, okay,
+
+183
+00:13:20,035 --> 00:13:22,935
+as average wind.
+
+184
+00:13:23,535 --> 00:13:25,015
+All right, perfect.
+
+185
+00:13:25,015 --> 00:13:29,335
+So now I highlight this. I go ahead
+and press run, and now I have the
+
+186
+00:13:29,335 --> 00:13:34,035
+highest wind of 19, the minimum
+wind of 2, and the average wind of
+
+187
+00:13:34,035 --> 00:13:39,575
+9, okay? so I can aggregate here
+the same field in different ways
+
+188
+00:13:39,575 --> 00:13:44,475
+right so this is an aggregate function
+right that I'm aggregating the
+
+189
+00:13:44,475 --> 00:13:50,575
+wind field for the maximum wind
+value so the highest wind the lowest
+
+190
+00:13:50,575 --> 00:13:56,615
+wind and the average wind okay perfect
+now the next question I want to
+
+191
+00:13:56,615 --> 00:14:00,595
+answer is how many employees work
+for the ski resort so I know I'm
+
+192
+00:14:00,595 --> 00:14:03,755
+going to take a look at my employee
+table here, so I'm going to look
+
+193
+00:14:03,755 --> 00:14:08,495
+at employee, and I tend to default
+to counting the primary key. So
+
+194
+00:14:08,495 --> 00:14:12,795
+because I'm looking for how many
+employees, I'm not going to sum the
+
+195
+00:14:12,795 --> 00:14:15,515
+primary key, right, because that's
+just going to add those values
+
+196
+00:14:15,515 --> 00:14:25,775
+together. I just want to look at that
+employee table to begin with, and
+
+197
+00:14:25,775 --> 00:14:29,575
+then I'm just going to sum, or then
+I'm just going to count the record
+
+198
+00:14:29,575 --> 00:14:33,255
+ID. Okay, I'm going to count that
+primary key. So let's go ahead and
+
+199
+00:14:33,255 --> 00:14:37,635
+do that. I'm going to just do
+select star from employee initially.
+
+200
+00:14:38,881 --> 00:14:39,896
+And if it comes back with a connection
+
+201
+00:14:39,896 --> 00:14:42,176
+error, just run it again.
+All right, perfect.
+
+202
+00:14:42,316 --> 00:14:45,526
+So I'm going to go ahead and how
+many employees work for the ski
+
+203
+00:14:45,526 --> 00:14:49,676
+resort. So if I can see here, I
+can kind of make sure I'm going
+
+204
+00:14:49,676 --> 00:14:53,676
+to get the right answer. If I
+do select star from employee, I
+
+205
+00:14:53,676 --> 00:14:57,736
+come down here and I can see there
+is 1,605 records, meaning there
+
+206
+00:14:57,736 --> 00:15:02,056
+are 1,605 employees. But the
+way I can prove that in my query
+
+207
+00:15:02,056 --> 00:15:11,896
+output is I can say select count
+a rec ID as num of employees.
+
+208
+00:15:12,476 --> 00:15:13,516
+Okay,
+
+209
+00:15:13,676 --> 00:15:17,076
+so now I'm going to go ahead, highlight
+this, and press run selection,
+
+210
+00:15:17,076 --> 00:15:22,196
+and now I get 1,605 employees is
+the number of employees I have
+
+211
+00:15:22,196 --> 00:15:28,076
+in my Overland Ski Resort. So
+again, we have max, min, average,
+
+212
+00:15:28,336 --> 00:15:32,196
+sum, and count are my five
+aggregate functions that are
+
+213
+00:15:32,196 --> 00:15:35,796
+really helpful in aggregating
+or smushing, if you will,
+
+214
+00:15:35,816 --> 00:15:39,556
+all my data together into, in
+this case, I'm looking at one
+
+215
+00:15:39,556 --> 00:15:45,556
+value here of 1,605 employees
+that work for the ski resort. So
+
+216
+00:15:45,556 --> 00:15:50,796
+I can start to answer different
+questions and do more operations,
+
+217
+00:15:50,796 --> 00:15:54,072
+if you will, with my data with
+these aggregate functions.
+
+218
+00:15:54,072 --> 00:15:55,938
+right, so that's a good
+introduction to aggregate
+
+219
+00:15:55,938 --> 00:15:59,438
+functions. keep moving on
+throughout the videos to learn more
+
+220
+00:15:59,438 --> 00:16:03,538
+different SQL techniques
+that can help us understand
+
+221
+00:16:03,538 --> 00:16:07,038
+and consume our data data
+more efficiently. Take care.
+

@@ -1,0 +1,2261 @@
+1
+00:00:00,000 --> 00:00:01,260
+INSTRUCTOR: Hey, everyone.
+
+2
+00:00:01,260 --> 00:00:02,009
+Welcome back.
+
+3
+00:00:02,009 --> 00:00:06,140
+So today, we are going to walk
+through how to actually use
+
+4
+00:00:06,140 --> 00:00:08,090
+Elastic Bock Store, so EBS.
+
+5
+00:00:08,090 --> 00:00:10,160
+We've kind of done it with the--
+
+6
+00:00:10,160 --> 00:00:11,870
+just launching EC2
+instances and having
+
+7
+00:00:11,870 --> 00:00:13,658
+that sitting on the back end.
+
+8
+00:00:13,658 --> 00:00:15,200
+But we actually
+haven't done it where
+
+9
+00:00:15,200 --> 00:00:18,830
+we've explicitly, separately
+created an EBS volume
+
+10
+00:00:18,830 --> 00:00:22,670
+and then mounted it
+to our EC2 instance.
+
+11
+00:00:22,670 --> 00:00:25,220
+Reason we'd want to do that
+really is because there might
+
+12
+00:00:25,220 --> 00:00:30,380
+be situations where, first
+off, we want to pass off a EBS
+
+13
+00:00:30,380 --> 00:00:32,870
+volume to another user
+or another instance
+
+14
+00:00:32,870 --> 00:00:33,890
+that we've created.
+
+15
+00:00:33,890 --> 00:00:36,387
+Or if you have a
+snapshot that you
+
+16
+00:00:36,387 --> 00:00:37,970
+want to create of
+your volume, and you
+
+17
+00:00:37,970 --> 00:00:43,490
+want to back up, and then
+overwrite your existings
+
+18
+00:00:43,490 --> 00:00:45,290
+volume with that snapshot.
+
+19
+00:00:45,290 --> 00:00:47,540
+All these kind of
+things are done really
+
+20
+00:00:47,540 --> 00:00:49,440
+by explicitly creating
+those volumes.
+
+21
+00:00:49,440 --> 00:00:51,320
+And so I just want to
+walk you through once
+
+22
+00:00:51,320 --> 00:00:53,130
+kind of how we do that.
+
+23
+00:00:53,130 --> 00:00:56,823
+I'm going to start by actually
+just creating a instance,
+
+24
+00:00:56,823 --> 00:00:59,240
+and I'm just launching an EC2
+instance here, just the same
+
+25
+00:00:59,240 --> 00:01:02,010
+as we did in the first demo.
+
+26
+00:01:02,010 --> 00:01:04,252
+EBSLabDemo.
+
+27
+00:01:04,252 --> 00:01:05,710
+That's what we're
+going to name it.
+
+28
+00:01:05,710 --> 00:01:07,440
+We'll just do Ubuntu.
+
+29
+00:01:07,440 --> 00:01:10,950
+And then let's do 20.04.
+
+30
+00:01:10,950 --> 00:01:12,030
+Leave all that the same.
+
+31
+00:01:12,030 --> 00:01:13,530
+And you'll notice
+here that I'm just
+
+32
+00:01:13,530 --> 00:01:15,130
+going to use my demo key pair.
+
+33
+00:01:15,130 --> 00:01:19,110
+It's the same key pair
+that I used when I had--
+
+34
+00:01:19,110 --> 00:01:22,050
+or when I did the first demo.
+
+35
+00:01:22,050 --> 00:01:23,260
+You can reuse them.
+
+36
+00:01:23,260 --> 00:01:26,250
+It's perfectly OK to
+reuse your key pairs.
+
+37
+00:01:26,250 --> 00:01:28,140
+Just know that there
+is an extra security
+
+38
+00:01:28,140 --> 00:01:31,650
+risk if you-- technically
+because you have
+
+39
+00:01:31,650 --> 00:01:34,063
+or if somebody has access
+to your secret key,
+
+40
+00:01:34,063 --> 00:01:35,730
+then they can access
+every instance that
+
+41
+00:01:35,730 --> 00:01:37,660
+utilizes that same secret key.
+
+42
+00:01:37,660 --> 00:01:39,870
+But none of these
+instances that I'm creating
+
+43
+00:01:39,870 --> 00:01:41,620
+have any access to
+do anything really,
+
+44
+00:01:41,620 --> 00:01:45,160
+so it's not super critical.
+
+45
+00:01:45,160 --> 00:01:46,990
+So here you'll see
+that I'm leaving, first
+
+46
+00:01:46,990 --> 00:01:48,920
+off, the security group,
+everything default.
+
+47
+00:01:48,920 --> 00:01:52,090
+We're just going to kind of do
+a basic security group here.
+
+48
+00:01:52,090 --> 00:01:56,620
+And then under the storage,
+this is an EBS volume,
+
+49
+00:01:56,620 --> 00:01:58,600
+but this is kind of
+the default boot volume
+
+50
+00:01:58,600 --> 00:01:59,833
+that we've always been using.
+
+51
+00:01:59,833 --> 00:02:01,750
+So we're going to leave
+that the same for now,
+
+52
+00:02:01,750 --> 00:02:03,465
+and just launch the instance.
+
+53
+00:02:06,130 --> 00:02:10,910
+And then we will come over here
+and open that in a new tab.
+
+54
+00:02:10,910 --> 00:02:12,910
+And then I'm going to
+click this little dropdown
+
+55
+00:02:12,910 --> 00:02:16,450
+menu on the left side over here,
+go down to Elastic Block Store
+
+56
+00:02:16,450 --> 00:02:18,160
+and click volumes.
+
+57
+00:02:18,160 --> 00:02:20,560
+And then now I'm actually
+going to explicitly create
+
+58
+00:02:20,560 --> 00:02:22,180
+a volume over here.
+
+59
+00:02:22,180 --> 00:02:27,420
+So just click create
+volume to do that.
+
+60
+00:02:27,420 --> 00:02:29,490
+We're going to leave it
+as gp2, but we're just
+
+61
+00:02:29,490 --> 00:02:30,790
+going to set it to 1 gigabyte.
+
+62
+00:02:30,790 --> 00:02:32,662
+We don't need anything
+large for this.
+
+63
+00:02:32,662 --> 00:02:34,120
+An important thing
+to note, though,
+
+64
+00:02:34,120 --> 00:02:37,320
+is we need to make sure the
+availability zone of our volume
+
+65
+00:02:37,320 --> 00:02:39,930
+matches the availability
+zone of our instance, right?
+
+66
+00:02:39,930 --> 00:02:42,810
+It's the same thing as
+putting-- making sure that the--
+
+67
+00:02:42,810 --> 00:02:44,820
+when we go to try to
+plug-in our hard drive,
+
+68
+00:02:44,820 --> 00:02:47,460
+we're actually at the location
+where our computer is located.
+
+69
+00:02:47,460 --> 00:02:50,002
+So I'm going to come here, and
+I'll see that this is actually
+
+70
+00:02:50,002 --> 00:02:51,570
+in US West 2C.
+
+71
+00:02:51,570 --> 00:02:54,845
+So I'm going to set that
+to US West 2C here as well.
+
+72
+00:02:57,490 --> 00:02:59,030
+I'm also going to add a tag.
+
+73
+00:02:59,030 --> 00:03:01,690
+You don't have to
+add a tag here,
+
+74
+00:03:01,690 --> 00:03:04,300
+but this is basically just
+a way to make it searchable,
+
+75
+00:03:04,300 --> 00:03:07,510
+a little bit more
+well documented.
+
+76
+00:03:07,510 --> 00:03:10,260
+I'm giving it a tag to basically
+say its name is my volume.
+
+77
+00:03:10,260 --> 00:03:12,010
+That way I can always
+see that-- and we'll
+
+78
+00:03:12,010 --> 00:03:13,468
+see it here in a
+second that that's
+
+79
+00:03:13,468 --> 00:03:16,180
+how we identify it among
+the list of other volumes
+
+80
+00:03:16,180 --> 00:03:20,800
+that are on the list
+of volumes because you
+
+81
+00:03:20,800 --> 00:03:22,540
+might have a lot of them.
+
+82
+00:03:22,540 --> 00:03:23,915
+Again, everything
+here is kind of
+
+83
+00:03:23,915 --> 00:03:26,165
+made to look a little bit
+easier just because it's not
+
+84
+00:03:26,165 --> 00:03:28,520
+what a real organization
+is, but a real organization,
+
+85
+00:03:28,520 --> 00:03:30,220
+if you actually
+had access to it,
+
+86
+00:03:30,220 --> 00:03:33,600
+you might see hundreds
+of different EBS volumes
+
+87
+00:03:33,600 --> 00:03:34,100
+here, right?
+
+88
+00:03:34,100 --> 00:03:36,610
+If every employee has one
+or something like that,
+
+89
+00:03:36,610 --> 00:03:38,540
+it could just be
+a super long list.
+
+90
+00:03:38,540 --> 00:03:41,410
+So by giving it the
+tag name, first off,
+
+91
+00:03:41,410 --> 00:03:43,720
+it's going to populate
+in that name column,
+
+92
+00:03:43,720 --> 00:03:45,393
+and then my volume
+will show up there.
+
+93
+00:03:45,393 --> 00:03:46,810
+And so I ever
+needed to find it, I
+
+94
+00:03:46,810 --> 00:03:49,960
+could just start typing my
+volume and filter it to that one
+
+95
+00:03:49,960 --> 00:03:51,530
+directly.
+
+96
+00:03:51,530 --> 00:03:53,330
+OK.
+
+97
+00:03:53,330 --> 00:03:55,220
+So now what we're
+going to do is we're
+
+98
+00:03:55,220 --> 00:03:59,930
+going to connect to our EC2
+instance once it's live.
+
+99
+00:03:59,930 --> 00:04:01,520
+Let's make sure.
+
+100
+00:04:01,520 --> 00:04:02,310
+There we go.
+
+101
+00:04:02,310 --> 00:04:04,100
+So we'll go connect.
+
+102
+00:04:04,100 --> 00:04:06,140
+Come over to SSH client.
+
+103
+00:04:06,140 --> 00:04:07,730
+I'll copy that.
+
+104
+00:04:07,730 --> 00:04:09,540
+And then let me pull
+up my terminal here.
+
+105
+00:04:09,540 --> 00:04:11,390
+I'll clear out the window.
+
+106
+00:04:11,390 --> 00:04:13,680
+And first, let's go home.
+
+107
+00:04:13,680 --> 00:04:15,540
+And remember, this is
+on my local computer.
+
+108
+00:04:15,540 --> 00:04:19,342
+This is my MacBook Pro
+here on premise, right?
+
+109
+00:04:19,342 --> 00:04:20,810
+And then first
+thing I need to do
+
+110
+00:04:20,810 --> 00:04:24,350
+is cd to the location
+where my SSH key--
+
+111
+00:04:24,350 --> 00:04:28,310
+or where secret key is, which is
+stored in the downloads folder
+
+112
+00:04:28,310 --> 00:04:30,020
+still because I've not moved it.
+
+113
+00:04:30,020 --> 00:04:31,080
+Been lazy about that.
+
+114
+00:04:31,080 --> 00:04:33,330
+Make sure you move it to
+somewhere that's more secure.
+
+115
+00:04:33,330 --> 00:04:35,788
+It doesn't accidentally get
+deleted or something like that.
+
+116
+00:04:35,788 --> 00:04:38,180
+But for now, it's in
+the downloads folder.
+
+117
+00:04:38,180 --> 00:04:41,060
+Probably will stay that way
+for the rest of the semester.
+
+118
+00:04:41,060 --> 00:04:41,750
+Perfect.
+
+119
+00:04:41,750 --> 00:04:43,640
+So just connecting now.
+
+120
+00:04:43,640 --> 00:04:51,150
+So now you see I am on
+the EC2 instance now.
+
+121
+00:04:51,150 --> 00:04:54,080
+And so first thing
+we can do here--
+
+122
+00:04:54,080 --> 00:04:55,310
+let me actually-- oops.
+
+123
+00:04:55,310 --> 00:04:57,930
+I dropped my terminal
+window out the way.
+
+124
+00:04:57,930 --> 00:05:00,350
+Bring that back up for a second.
+
+125
+00:05:00,350 --> 00:05:01,310
+All right.
+
+126
+00:05:01,310 --> 00:05:05,130
+So the first thing you can
+do here is just do df-h.
+
+127
+00:05:05,130 --> 00:05:09,680
+Remember, that's just to look at
+the disk space, how much space
+
+128
+00:05:09,680 --> 00:05:10,760
+is available on disk.
+
+129
+00:05:10,760 --> 00:05:14,800
+And you'll see that this is our
+8 gigabyte boot storage, right?
+
+130
+00:05:14,800 --> 00:05:19,470
+That's that GP2 volume we had
+kind of created in the process
+
+131
+00:05:19,470 --> 00:05:22,110
+of creating the EC2 instance.
+
+132
+00:05:22,110 --> 00:05:24,630
+But you'll notice we don't
+have the 1 gigabyte one that we
+
+133
+00:05:24,630 --> 00:05:27,060
+actually just created
+separately, that 1 gigabyte,
+
+134
+00:05:27,060 --> 00:05:29,590
+my volume that we created.
+
+135
+00:05:29,590 --> 00:05:31,600
+And so we still
+need to find that.
+
+136
+00:05:31,600 --> 00:05:33,628
+And so first thing we can do--
+
+137
+00:05:33,628 --> 00:05:34,920
+or we still need to mount that.
+
+138
+00:05:34,920 --> 00:05:37,350
+That's the word we're looking--
+we need to mount that.
+
+139
+00:05:37,350 --> 00:05:39,610
+So I could run this command.
+
+140
+00:05:39,610 --> 00:05:45,550
+And this shows me what volumes
+are available to mount.
+
+141
+00:05:45,550 --> 00:05:47,640
+And so what I'm
+looking for here--
+
+142
+00:05:50,480 --> 00:05:50,980
+OK.
+
+143
+00:05:50,980 --> 00:05:52,365
+No, that's not it there.
+
+144
+00:05:54,990 --> 00:05:56,680
+Not actually immediately seeing.
+
+145
+00:05:56,680 --> 00:05:57,930
+Oh, I know why.
+
+146
+00:05:57,930 --> 00:06:00,040
+I didn't actually
+attach it to my volume.
+
+147
+00:06:00,040 --> 00:06:03,690
+So let's go back to this
+menu here for a second.
+
+148
+00:06:03,690 --> 00:06:06,120
+And under actions--
+oh, actually, no.
+
+149
+00:06:06,120 --> 00:06:07,358
+We'll go back here.
+
+150
+00:06:07,358 --> 00:06:08,650
+I think we can do it from here.
+
+151
+00:06:08,650 --> 00:06:11,590
+We can just click that, actions.
+
+152
+00:06:11,590 --> 00:06:14,100
+So yeah, I just selected this
+here in the little checkbox,
+
+153
+00:06:14,100 --> 00:06:17,040
+actions there, attach
+volume, and now
+
+154
+00:06:17,040 --> 00:06:19,510
+I need to actually attach
+it to my instance first.
+
+155
+00:06:19,510 --> 00:06:23,280
+So this is me plugging
+it into the instance now.
+
+156
+00:06:23,280 --> 00:06:26,310
+And so the device name is sdf.
+
+157
+00:06:26,310 --> 00:06:32,423
+Note that it may be renamed
+to xvdf or even xvdp.
+
+158
+00:06:35,800 --> 00:06:39,020
+So-- or xvdf probably
+because I think it's sdf.
+
+159
+00:06:39,020 --> 00:06:41,330
+So either way, we'll go
+to create volume now.
+
+160
+00:06:41,330 --> 00:06:43,480
+And we'll just keep
+an eye out for that.
+
+161
+00:06:43,480 --> 00:06:46,660
+And we give it a second here
+to do that because it's not
+
+162
+00:06:46,660 --> 00:06:49,420
+an instantaneous process.
+
+163
+00:06:49,420 --> 00:06:52,270
+We want to see basically--
+
+164
+00:06:52,270 --> 00:06:54,590
+OK, so it's saying it's in
+use and attached to that.
+
+165
+00:06:54,590 --> 00:06:56,290
+So we should be OK.
+
+166
+00:06:56,290 --> 00:06:59,505
+Let's check here now
+on our terminal window.
+
+167
+00:07:02,590 --> 00:07:05,530
+And there it is right
+there, xvdf, right?
+
+168
+00:07:05,530 --> 00:07:13,120
+So that's the device we want
+to mount now to our system.
+
+169
+00:07:13,120 --> 00:07:19,270
+So the first thing we
+can do is to check its--
+
+170
+00:07:19,270 --> 00:07:21,110
+that it has a file system.
+
+171
+00:07:21,110 --> 00:07:26,350
+So this is-- it's kind of hard
+to explain without getting
+
+172
+00:07:26,350 --> 00:07:27,200
+too deep into it.
+
+173
+00:07:27,200 --> 00:07:30,250
+But basically what
+we're saying is
+
+174
+00:07:30,250 --> 00:07:33,610
+when we attach an EBS
+volume to an instance,
+
+175
+00:07:33,610 --> 00:07:36,752
+it's just kind of raw storage.
+
+176
+00:07:36,752 --> 00:07:38,710
+It doesn't actually have
+any sort of structure,
+
+177
+00:07:38,710 --> 00:07:43,360
+any sort of software to handle
+the file systems or managing
+
+178
+00:07:43,360 --> 00:07:44,270
+files on there.
+
+179
+00:07:44,270 --> 00:07:47,500
+And so we kind of need
+to add that to it.
+
+180
+00:07:47,500 --> 00:07:49,660
+And so in our case, it
+just says data, which
+
+181
+00:07:49,660 --> 00:07:51,340
+means it doesn't have any file.
+
+182
+00:07:51,340 --> 00:07:54,710
+It's just kind of raw
+storage still at this point.
+
+183
+00:07:54,710 --> 00:07:57,290
+So we need to make a
+file system for it.
+
+184
+00:07:57,290 --> 00:08:00,790
+And so here, we're just going
+to do the ext3 file system.
+
+185
+00:08:00,790 --> 00:08:03,100
+So first off, we need
+to do the sudo, which
+
+186
+00:08:03,100 --> 00:08:04,940
+is, again, super user do.
+
+187
+00:08:04,940 --> 00:08:09,340
+So it allows me to do things
+that typically wouldn't
+
+188
+00:08:09,340 --> 00:08:11,120
+be allowed of a base user.
+
+189
+00:08:11,120 --> 00:08:13,690
+We're going to do
+make file system.
+
+190
+00:08:13,690 --> 00:08:15,580
+And the reason I'm not
+explaining this super
+
+191
+00:08:15,580 --> 00:08:17,753
+thoroughly is because
+it's not super critical.
+
+192
+00:08:17,753 --> 00:08:19,420
+You're not going to
+do this-- you're not
+
+193
+00:08:19,420 --> 00:08:20,680
+going to do a lot
+of things with this
+
+194
+00:08:20,680 --> 00:08:22,910
+to start with, outside of
+maybe mounting a volume.
+
+195
+00:08:22,910 --> 00:08:26,530
+So we're fine just doing that.
+
+196
+00:08:26,530 --> 00:08:31,220
+So now you see that it should
+be creating this system here.
+
+197
+00:08:31,220 --> 00:08:34,610
+And now let's check-- let's
+run this command from before
+
+198
+00:08:34,610 --> 00:08:35,720
+and see what we get.
+
+199
+00:08:35,720 --> 00:08:37,910
+And so now you see how
+we run that sudo file.
+
+200
+00:08:37,910 --> 00:08:39,993
+Oh, and also, I don't know
+if I've ever taught you
+
+201
+00:08:39,993 --> 00:08:43,549
+that you can tap up to go
+through your history things
+
+202
+00:08:43,549 --> 00:08:45,223
+you've ran before
+on this computer--
+
+203
+00:08:45,223 --> 00:08:46,640
+--or on this
+terminal so you don't
+
+204
+00:08:46,640 --> 00:08:49,490
+have to actually retype things
+if you're rerunning them.
+
+205
+00:08:49,490 --> 00:08:52,070
+But now you see, it does
+have a file system on it,
+
+206
+00:08:52,070 --> 00:08:55,850
+so it can be used
+as a file store.
+
+207
+00:08:55,850 --> 00:08:59,442
+So now it's actually--
+it's going to be located--
+
+208
+00:08:59,442 --> 00:09:01,400
+or first, I actually need
+to create a directory
+
+209
+00:09:01,400 --> 00:09:03,260
+for mounting the storage.
+
+210
+00:09:03,260 --> 00:09:06,720
+So I'm going to
+do make directory.
+
+211
+00:09:06,720 --> 00:09:10,430
+And I'm going to do it
+under the mount directory.
+
+212
+00:09:10,430 --> 00:09:12,980
+It's a common place to do it.
+
+213
+00:09:12,980 --> 00:09:16,820
+And so now there exists a
+directory called data store,
+
+214
+00:09:16,820 --> 00:09:19,707
+and that is exactly where I
+want to mount the volume to.
+
+215
+00:09:19,707 --> 00:09:22,040
+So again, if we think about
+the steps we've done so far,
+
+216
+00:09:22,040 --> 00:09:25,160
+we've attached the
+volume to our instance.
+
+217
+00:09:25,160 --> 00:09:29,450
+We've created a file
+system on the new volume.
+
+218
+00:09:29,450 --> 00:09:33,220
+Now we've created a directory
+to mount the new storage volume,
+
+219
+00:09:33,220 --> 00:09:37,600
+and now we're actually going to
+mount-- oops-- mount the storage
+
+220
+00:09:37,600 --> 00:09:38,360
+volume.
+
+221
+00:09:38,360 --> 00:09:39,700
+So we're going to do dev--
+
+222
+00:09:39,700 --> 00:09:46,745
+oops-- xvdf, and then
+we're going to go space,
+
+223
+00:09:46,745 --> 00:09:49,120
+and we're saying we're going
+to mount it to the location,
+
+224
+00:09:49,120 --> 00:09:52,960
+mount data/store.
+
+225
+00:09:52,960 --> 00:09:55,900
+And so that now
+means that we have
+
+226
+00:09:55,900 --> 00:09:59,860
+our data storage or
+our new volume attached
+
+227
+00:09:59,860 --> 00:10:01,453
+mounted to that location.
+
+228
+00:10:04,120 --> 00:10:06,880
+And also, now we don't
+want to, every time
+
+229
+00:10:06,880 --> 00:10:09,230
+we reboot or start
+up this instance,
+
+230
+00:10:09,230 --> 00:10:16,450
+to have to kind
+of relaunch the--
+
+231
+00:10:16,450 --> 00:10:18,038
+or redo this whole
+process, right?
+
+232
+00:10:18,038 --> 00:10:20,330
+We don't have to remount it
+every single time we do it.
+
+233
+00:10:20,330 --> 00:10:22,300
+And so we can do something
+to actually force
+
+234
+00:10:22,300 --> 00:10:25,070
+it to remount every time.
+
+235
+00:10:25,070 --> 00:10:28,180
+And so we'll do
+this by typing echo.
+
+236
+00:10:28,180 --> 00:10:29,847
+And now we're
+giving it a command.
+
+237
+00:10:29,847 --> 00:10:31,430
+So we're basically
+adding this command
+
+238
+00:10:31,430 --> 00:10:34,700
+to what happens at launch.
+
+239
+00:10:34,700 --> 00:10:42,110
+We're going to say we're
+going to mount data store ext3
+
+240
+00:10:42,110 --> 00:10:43,280
+defaults.noatime--
+
+241
+00:10:46,550 --> 00:10:55,520
+oops-- 1, 2 sudo tee -a.
+
+242
+00:10:58,448 --> 00:11:01,358
+And I did not come up with this
+code off the top of my brain.
+
+243
+00:11:01,358 --> 00:11:02,900
+It's definitely
+going to be something
+
+244
+00:11:02,900 --> 00:11:05,370
+that you're going to look
+up when you do at the time.
+
+245
+00:11:05,370 --> 00:11:07,760
+The good thing is,
+is this is directly
+
+246
+00:11:07,760 --> 00:11:11,820
+in the documentation of Amazon.
+
+247
+00:11:11,820 --> 00:11:15,260
+You can just search
+attach an EBS volume,
+
+248
+00:11:15,260 --> 00:11:16,638
+and you'll get these codes.
+
+249
+00:11:16,638 --> 00:11:17,180
+I mean, here.
+
+250
+00:11:17,180 --> 00:11:18,503
+I'll just show you.
+
+251
+00:11:18,503 --> 00:11:20,920
+Let's say we wanted to do--
+we didn't know how to do this.
+
+252
+00:11:20,920 --> 00:11:26,210
+Let's say we wanted to do attach
+boom, ebs volume to EC2 instance
+
+253
+00:11:26,210 --> 00:11:28,250
+linux.
+
+254
+00:11:28,250 --> 00:11:33,240
+First, click, and you'll see
+all these commands. ls block.
+
+255
+00:11:33,240 --> 00:11:35,270
+We're doing the
+file check there.
+
+256
+00:11:35,270 --> 00:11:37,610
+Making the file system.
+
+257
+00:11:37,610 --> 00:11:40,700
+Automatically mount and
+attach volume after reboot.
+
+258
+00:11:40,700 --> 00:11:42,980
+So all these steps are
+going to exist for you.
+
+259
+00:11:42,980 --> 00:11:45,147
+You don't have to do this
+off the top of your brain,
+
+260
+00:11:45,147 --> 00:11:50,110
+but here I'm just
+showing it as an example.
+
+261
+00:11:50,110 --> 00:11:52,550
+So now that should
+be good to go.
+
+262
+00:11:52,550 --> 00:11:57,300
+We can check to make sure that
+got added by checking that file.
+
+263
+00:11:59,840 --> 00:12:03,200
+And we see there that our
+line is added to this file
+
+264
+00:12:03,200 --> 00:12:06,140
+so that should be run
+at launch, basically.
+
+265
+00:12:06,140 --> 00:12:09,290
+And so now let's check our
+available storage again.
+
+266
+00:12:09,290 --> 00:12:11,960
+And we see that we have
+our root volume there.
+
+267
+00:12:11,960 --> 00:12:16,340
+But also now we have our
+976 megabyte or just about 1
+
+268
+00:12:16,340 --> 00:12:20,080
+gigabyte storage volume.
+
+269
+00:12:20,080 --> 00:12:24,410
+And so we can go to our
+mounted volume here,
+
+270
+00:12:24,410 --> 00:12:29,070
+and we can-- so let's go
+to just cd directly to it.
+
+271
+00:12:29,070 --> 00:12:31,960
+Let's go cd mount data/store.
+
+272
+00:12:31,960 --> 00:12:36,260
+And so that's-- we're in that
+1 gigabyte my volume that we
+
+273
+00:12:36,260 --> 00:12:38,000
+created.
+
+274
+00:12:38,000 --> 00:12:41,900
+And then I'm going to create
+a new file called file.txt.
+
+275
+00:12:41,900 --> 00:12:44,060
+My favorite file type name.
+
+276
+00:12:44,060 --> 00:12:48,720
+And we can just
+add anything to it.
+
+277
+00:12:48,720 --> 00:12:50,530
+I don't know.
+
+278
+00:12:50,530 --> 00:12:54,560
+Sharad does storage.
+
+279
+00:12:54,560 --> 00:12:55,740
+There we go.
+
+280
+00:12:55,740 --> 00:12:56,885
+And then we'll do escape.
+
+281
+00:12:56,885 --> 00:12:57,385
+WQ.
+
+282
+00:13:00,040 --> 00:13:00,745
+Oops.
+
+283
+00:13:00,745 --> 00:13:04,960
+Ooh, this is something fun
+I just forgot to do here.
+
+284
+00:13:04,960 --> 00:13:06,810
+So let's actually
+back out for a second.
+
+285
+00:13:09,460 --> 00:13:10,150
+There we go.
+
+286
+00:13:10,150 --> 00:13:13,488
+So what I did, and I'm
+going to probably pay
+
+287
+00:13:13,488 --> 00:13:15,280
+for this because it's
+going to mess up now,
+
+288
+00:13:15,280 --> 00:13:22,540
+but because I'm on a file system
+or I'm on a device, this EBS
+
+289
+00:13:22,540 --> 00:13:26,620
+volume, it's not--
+technically, my base user
+
+290
+00:13:26,620 --> 00:13:29,770
+account Ubuntu at IP
+whatever doesn't have
+
+291
+00:13:29,770 --> 00:13:32,210
+permissions to write to that.
+
+292
+00:13:32,210 --> 00:13:35,202
+So I have to do sudo
+because this is kind
+
+293
+00:13:35,202 --> 00:13:36,410
+of outside my home directory.
+
+294
+00:13:36,410 --> 00:13:38,560
+Anything within my home
+directory, anything
+
+295
+00:13:38,560 --> 00:13:41,540
+from like that, from that
+tilde, from my home directory,
+
+296
+00:13:41,540 --> 00:13:42,800
+perfectly fine.
+
+297
+00:13:42,800 --> 00:13:47,260
+But if I'm on one of these kind
+of deeper level file storage
+
+298
+00:13:47,260 --> 00:13:52,930
+systems, I will oftentimes be
+required to do it this way.
+
+299
+00:13:52,930 --> 00:13:57,030
+And now I can go
+in and say, Sharad
+
+300
+00:13:57,030 --> 00:13:58,735
+does storage better this time.
+
+301
+00:14:04,530 --> 00:14:06,670
+Now I should be able to save.
+
+302
+00:14:06,670 --> 00:14:07,410
+Yep.
+
+303
+00:14:07,410 --> 00:14:12,635
+And we can do cat
+file.txt, and there it is.
+
+304
+00:14:15,240 --> 00:14:15,940
+Cool.
+
+305
+00:14:15,940 --> 00:14:22,240
+So now let's try one more thing.
+
+306
+00:14:22,240 --> 00:14:24,880
+Let's see if I regret
+going this route.
+
+307
+00:14:24,880 --> 00:14:29,600
+I'll pause here for a second,
+and then I'll come back to it.
+
+308
+00:14:29,600 --> 00:14:30,100
+OK.
+
+309
+00:14:30,100 --> 00:14:30,830
+Sorry about that.
+
+310
+00:14:30,830 --> 00:14:32,350
+I just wanted to make
+sure I had my steps right
+
+311
+00:14:32,350 --> 00:14:33,640
+before I jumped
+into something that
+
+312
+00:14:33,640 --> 00:14:35,230
+was going to be a
+bit more involved,
+
+313
+00:14:35,230 --> 00:14:36,500
+and before I broke something.
+
+314
+00:14:36,500 --> 00:14:37,917
+So hopefully
+everything goes well.
+
+315
+00:14:37,917 --> 00:14:39,610
+But either way, what
+I want to try now
+
+316
+00:14:39,610 --> 00:14:44,000
+is creating a snapshot
+of our EBS volume.
+
+317
+00:14:44,000 --> 00:14:45,470
+So this one we just created.
+
+318
+00:14:45,470 --> 00:14:47,137
+So what we're going
+to do is we're going
+
+319
+00:14:47,137 --> 00:14:49,570
+to go back to the console here.
+
+320
+00:14:49,570 --> 00:14:52,010
+We're going to
+click on our volume.
+
+321
+00:14:52,010 --> 00:14:54,310
+And then in the
+actions menu, we are
+
+322
+00:14:54,310 --> 00:14:57,070
+going to click create snapshot.
+
+323
+00:14:57,070 --> 00:14:58,600
+Not surprising.
+
+324
+00:14:58,600 --> 00:15:02,650
+We can leave description
+the same, but we'll do--
+
+325
+00:15:02,650 --> 00:15:04,780
+come down here, and
+we'll say for the tag
+
+326
+00:15:04,780 --> 00:15:07,470
+name and my snapshot.
+
+327
+00:15:10,060 --> 00:15:11,663
+And we'll click create snapshot.
+
+328
+00:15:14,710 --> 00:15:16,520
+So we successfully
+created snapshot.
+
+329
+00:15:16,520 --> 00:15:18,040
+If you need snapshot to
+be immediately available,
+
+330
+00:15:18,040 --> 00:15:19,605
+consider using fast
+snapshot restore.
+
+331
+00:15:19,605 --> 00:15:21,730
+We don't need it immediately
+available, but we've--
+
+332
+00:15:21,730 --> 00:15:22,897
+will be good there.
+
+333
+00:15:22,897 --> 00:15:25,480
+And so now you can actually come
+on this left hand menu again,
+
+334
+00:15:25,480 --> 00:15:27,970
+which if it's not showing
+up, it's just under there.
+
+335
+00:15:27,970 --> 00:15:29,860
+And we click
+snapshots this time,
+
+336
+00:15:29,860 --> 00:15:33,470
+and we see our
+snapshot is created.
+
+337
+00:15:33,470 --> 00:15:37,400
+And so it's still in
+the pending state,
+
+338
+00:15:37,400 --> 00:15:39,160
+which means it hasn't
+been created yet.
+
+339
+00:15:39,160 --> 00:15:40,410
+It's actually doing it, right?
+
+340
+00:15:40,410 --> 00:15:42,210
+It's physically
+copying the snapshot.
+
+341
+00:15:42,210 --> 00:15:43,850
+This is the-- again,
+we're physically
+
+342
+00:15:43,850 --> 00:15:48,363
+taking a picture of what
+our EBS volume on our device
+
+343
+00:15:48,363 --> 00:15:49,530
+looks like right now, right?
+
+344
+00:15:49,530 --> 00:15:51,330
+So it should have our
+file that we saved.
+
+345
+00:15:51,330 --> 00:15:54,650
+That's what we're checking, is
+to see if that file stays there.
+
+346
+00:15:54,650 --> 00:15:59,690
+And once it's done, it'll
+change to a status of completed.
+
+347
+00:15:59,690 --> 00:16:05,280
+And let's see.
+
+348
+00:16:05,280 --> 00:16:05,980
+There you go.
+
+349
+00:16:05,980 --> 00:16:07,860
+But a cool thing
+about this is only
+
+350
+00:16:07,860 --> 00:16:11,740
+used storage blocks
+are copied to snapshot.
+
+351
+00:16:11,740 --> 00:16:14,040
+So any empty blocks of
+storage that we have
+
+352
+00:16:14,040 --> 00:16:15,940
+don't occupy actual
+storage space.
+
+353
+00:16:15,940 --> 00:16:18,780
+So it's actually really
+efficient storage system here.
+
+354
+00:16:18,780 --> 00:16:21,870
+But now let's go
+back to our terminal,
+
+355
+00:16:21,870 --> 00:16:26,170
+and we'll see that we
+have our file in there.
+
+356
+00:16:26,170 --> 00:16:28,650
+What we're going to do is we're
+going to remove that file.
+
+357
+00:16:28,650 --> 00:16:30,100
+We're going to delete it.
+
+358
+00:16:30,100 --> 00:16:32,430
+And again, because I'm
+in a deeper file system
+
+359
+00:16:32,430 --> 00:16:35,280
+than I typically have
+access to, I'm using sudo.
+
+360
+00:16:35,280 --> 00:16:37,030
+And so I'm removing that file.
+
+361
+00:16:37,030 --> 00:16:40,950
+And so now it does not
+exist on my device--
+
+362
+00:16:40,950 --> 00:16:43,770
+on this actual EBS volume.
+
+363
+00:16:43,770 --> 00:16:47,130
+And we can see now
+that we don't have it.
+
+364
+00:16:47,130 --> 00:16:48,690
+And so if we want
+to recreate it,
+
+365
+00:16:48,690 --> 00:16:51,330
+right, let's say we accidentally
+deleted a bunch of files.
+
+366
+00:16:51,330 --> 00:16:53,070
+We deleted the
+folder, and we wanted
+
+367
+00:16:53,070 --> 00:16:56,800
+to back it up or restore
+it from our snapshot.
+
+368
+00:16:56,800 --> 00:17:00,100
+We can now go and do
+it this way, right?
+
+369
+00:17:00,100 --> 00:17:02,910
+So we go into the console.
+
+370
+00:17:02,910 --> 00:17:05,060
+We're going to
+click my snapshot.
+
+371
+00:17:05,060 --> 00:17:06,849
+And so again, now it's
+already completed.
+
+372
+00:17:06,849 --> 00:17:07,474
+It's available.
+
+373
+00:17:07,474 --> 00:17:08,510
+All that good stuff.
+
+374
+00:17:08,510 --> 00:17:11,170
+And then what we're going to
+do is actually create a volume
+
+375
+00:17:11,170 --> 00:17:12,859
+from that snapshot.
+
+376
+00:17:12,859 --> 00:17:16,125
+So we go to actions, create
+volume from snapshot.
+
+377
+00:17:16,125 --> 00:17:17,500
+So this is exactly
+what it sounds
+
+378
+00:17:17,500 --> 00:17:20,740
+like is we're taking the
+snapshot we created, making it
+
+379
+00:17:20,740 --> 00:17:22,980
+into a new volume and
+unsurprisingly, we're
+
+380
+00:17:22,980 --> 00:17:28,245
+going to now try to mount that
+new volume to our EC2 instance.
+
+381
+00:17:28,245 --> 00:17:29,620
+But the cool thing
+is here again,
+
+382
+00:17:29,620 --> 00:17:31,400
+you see you can
+increase the size of it.
+
+383
+00:17:31,400 --> 00:17:34,750
+So I could bump it up and
+have more storage space
+
+384
+00:17:34,750 --> 00:17:36,850
+if I wanted to while
+still having my files
+
+385
+00:17:36,850 --> 00:17:37,850
+that I created on there.
+
+386
+00:17:37,850 --> 00:17:39,600
+So it's another cool
+feature of it, right?
+
+387
+00:17:39,600 --> 00:17:41,780
+A way to beef up your
+storage capacity.
+
+388
+00:17:41,780 --> 00:17:43,720
+So we'll put our
+availability zone back
+
+389
+00:17:43,720 --> 00:17:45,790
+to the correct
+availability zone.
+
+390
+00:17:45,790 --> 00:17:51,460
+We'll come down here to
+name, and we'll name it--
+
+391
+00:17:51,460 --> 00:17:52,815
+let's just do restored volume.
+
+392
+00:17:55,210 --> 00:17:56,710
+You could name it
+anything you want,
+
+393
+00:17:56,710 --> 00:17:58,085
+but we'll call it
+restored volume
+
+394
+00:17:58,085 --> 00:17:59,350
+because that's what it is.
+
+395
+00:17:59,350 --> 00:18:03,040
+We'll do create volume.
+
+396
+00:18:03,040 --> 00:18:08,776
+And now we should be able
+to see it under our volumes.
+
+397
+00:18:08,776 --> 00:18:09,943
+So we'll go back to volumes.
+
+398
+00:18:14,153 --> 00:18:14,903
+Let's hit refresh.
+
+399
+00:18:18,868 --> 00:18:20,230
+Hmm.
+
+400
+00:18:20,230 --> 00:18:21,030
+I do not see it.
+
+401
+00:18:21,030 --> 00:18:22,530
+Oh, it's because I
+have it filtered.
+
+402
+00:18:22,530 --> 00:18:23,740
+Duh.
+
+403
+00:18:23,740 --> 00:18:24,390
+There you go.
+
+404
+00:18:24,390 --> 00:18:25,850
+There is restored volume.
+
+405
+00:18:25,850 --> 00:18:27,560
+So restored volume.
+
+406
+00:18:27,560 --> 00:18:28,700
+It's all good in here.
+
+407
+00:18:28,700 --> 00:18:31,330
+And so now what we'll do
+is we'll attach that volume
+
+408
+00:18:31,330 --> 00:18:34,090
+to our instance.
+
+409
+00:18:34,090 --> 00:18:36,380
+So let's go attach
+volume instance.
+
+410
+00:18:36,380 --> 00:18:38,620
+We're going to go
+to EBS lab demo.
+
+411
+00:18:38,620 --> 00:18:41,800
+And now you see it's
+going to be under dev sdg.
+
+412
+00:18:41,800 --> 00:18:45,310
+We may see it under xvdg
+just like we saw before,
+
+413
+00:18:45,310 --> 00:18:49,670
+but we'll attach volume now.
+
+414
+00:18:49,670 --> 00:18:53,270
+And then we can go back
+once it's attached.
+
+415
+00:18:53,270 --> 00:18:55,270
+Let's make sure it's
+looking like it's attached.
+
+416
+00:18:55,270 --> 00:18:57,820
+Yeah, it looks like it
+should be roughly there.
+
+417
+00:18:57,820 --> 00:19:00,760
+Let's go to our terminal and--
+
+418
+00:19:00,760 --> 00:19:01,690
+oops.
+
+419
+00:19:01,690 --> 00:19:03,350
+Let's go to our terminal.
+
+420
+00:19:03,350 --> 00:19:04,300
+There we go.
+
+421
+00:19:04,300 --> 00:19:07,430
+And we are going to do
+our same step, right?
+
+422
+00:19:07,430 --> 00:19:09,970
+We'll go back to
+our home directory
+
+423
+00:19:09,970 --> 00:19:14,380
+just to be here and let's
+do that ls block real quick.
+
+424
+00:19:14,380 --> 00:19:15,440
+And there you go.
+
+425
+00:19:15,440 --> 00:19:17,500
+So you see that xvdg.
+
+426
+00:19:17,500 --> 00:19:21,590
+So now we're going to do kind
+of the same thing we did before
+
+427
+00:19:21,590 --> 00:19:26,280
+and mount the volume to this.
+
+428
+00:19:26,280 --> 00:19:28,190
+And actually, we can check--
+
+429
+00:19:28,190 --> 00:19:32,510
+we can use this command
+from before to see
+
+430
+00:19:32,510 --> 00:19:35,210
+if it has a file system.
+
+431
+00:19:35,210 --> 00:19:37,038
+And so you see that
+actually this time it
+
+432
+00:19:37,038 --> 00:19:38,330
+does have a file system, right?
+
+433
+00:19:38,330 --> 00:19:40,400
+It's got the ext3
+because remember,
+
+434
+00:19:40,400 --> 00:19:46,580
+we created the original volume,
+added a file system to it,
+
+435
+00:19:46,580 --> 00:19:48,330
+and then we created a snapshot.
+
+436
+00:19:48,330 --> 00:19:53,130
+So that file system was
+stored with our volume.
+
+437
+00:19:53,130 --> 00:19:54,890
+So we can just skip
+to-- ahead to the step
+
+438
+00:19:54,890 --> 00:19:56,370
+of making the directory.
+
+439
+00:19:56,370 --> 00:20:00,080
+So we'll make a directory
+in the mount directory
+
+440
+00:20:00,080 --> 00:20:01,500
+that's called data-store2.
+
+441
+00:20:04,490 --> 00:20:07,050
+And then we can mount
+our volume to that.
+
+442
+00:20:07,050 --> 00:20:13,490
+So we'll do sudo mount,
+and we'll go dev xvdg
+
+443
+00:20:13,490 --> 00:20:18,500
+in mount data store--
+
+444
+00:20:18,500 --> 00:20:20,015
+oop, not stro, store2.
+
+445
+00:20:23,300 --> 00:20:25,640
+So let's ls over to that.
+
+446
+00:20:29,480 --> 00:20:32,610
+And we can see that
+our file exists, right?
+
+447
+00:20:32,610 --> 00:20:34,490
+And we'll just cd2
+too it as well--
+
+448
+00:20:34,490 --> 00:20:37,730
+2-- so you can mess with some
+without having to type the file
+
+449
+00:20:37,730 --> 00:20:39,950
+path each time.
+
+450
+00:20:39,950 --> 00:20:44,750
+And so now, yeah, we can see
+that file.txt exists there,
+
+451
+00:20:44,750 --> 00:20:46,710
+has our original content in it.
+
+452
+00:20:46,710 --> 00:20:48,650
+And by comparison,
+if we went back
+
+453
+00:20:48,650 --> 00:20:51,080
+and went into just
+the base data store,
+
+454
+00:20:51,080 --> 00:20:52,940
+it doesn't have it, right?
+
+455
+00:20:52,940 --> 00:20:56,060
+So that's the whole thing
+is we've now created--
+
+456
+00:20:56,060 --> 00:21:02,180
+--or we created a volume,
+mounted it or attached it,
+
+457
+00:21:02,180 --> 00:21:04,880
+mounted it, created
+a file system on it,
+
+458
+00:21:04,880 --> 00:21:07,250
+created a directory,
+added a file to it,
+
+459
+00:21:07,250 --> 00:21:13,340
+created a snapshot of that, then
+went back in, deleted that file,
+
+460
+00:21:13,340 --> 00:21:14,090
+created a--
+
+461
+00:21:14,090 --> 00:21:17,000
+--from that created a
+snapshot, created a new volume,
+
+462
+00:21:17,000 --> 00:21:20,190
+mounted that volume-- attached,
+then mounted that volume.
+
+463
+00:21:20,190 --> 00:21:23,610
+And we can see now
+that in there, we
+
+464
+00:21:23,610 --> 00:21:25,270
+have our original file.
+
+465
+00:21:25,270 --> 00:21:27,570
+And so if you then were
+to do the same thing
+
+466
+00:21:27,570 --> 00:21:30,570
+and maybe pass off a
+snapshot of your volume
+
+467
+00:21:30,570 --> 00:21:33,040
+to a user, which is another
+way you could do this, right?
+
+468
+00:21:33,040 --> 00:21:35,280
+Let's say you have been
+working on something and all
+
+469
+00:21:35,280 --> 00:21:37,447
+of a sudden, there's a new
+employee at your company,
+
+470
+00:21:37,447 --> 00:21:40,080
+and they need access to the
+same kind of files or data
+
+471
+00:21:40,080 --> 00:21:41,830
+that you have stored
+on your computer.
+
+472
+00:21:41,830 --> 00:21:45,580
+Well, you could just create a
+snapshot of your EBS volume.
+
+473
+00:21:45,580 --> 00:21:48,090
+They could create a new
+volume from your snapshot
+
+474
+00:21:48,090 --> 00:21:49,510
+and mount it this way.
+
+475
+00:21:49,510 --> 00:21:53,370
+And now you've eased the burden
+of transferring files and making
+
+476
+00:21:53,370 --> 00:21:55,180
+sure everything's set
+in the right place.
+
+477
+00:21:55,180 --> 00:21:56,790
+You just have one
+quick snapshot,
+
+478
+00:21:56,790 --> 00:21:58,320
+and you're ready to go.
+
+479
+00:21:58,320 --> 00:22:00,720
+So that's again, the
+real power of using
+
+480
+00:22:00,720 --> 00:22:03,150
+these EBS volumes this way.
+
+481
+00:22:03,150 --> 00:22:05,780
+I hope this made some sense
+and seemed somewhat practical
+
+482
+00:22:05,780 --> 00:22:06,280
+to you.
+
+483
+00:22:06,280 --> 00:22:08,405
+We'll again play around
+with all these things more,
+
+484
+00:22:08,405 --> 00:22:09,520
+but leave it at that.
+
+485
+00:22:09,520 --> 00:22:10,870
+So we'll see you next time.
+
+486
+00:22:10,870 --> 00:22:12,420
+Bye.

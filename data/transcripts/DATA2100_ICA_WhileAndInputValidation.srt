@@ -1,0 +1,2428 @@
+1
+00:00:01,682 --> 00:00:03,140
+INSTRUCTOR: Hi,
+DATA 2100 students.
+
+2
+00:00:03,140 --> 00:00:05,740
+We're going to jump into this
+in-class assignment using
+
+3
+00:00:05,740 --> 00:00:08,447
+while loops and
+input validation.
+
+4
+00:00:08,447 --> 00:00:10,030
+As a reminder, if
+you have not already
+
+5
+00:00:10,030 --> 00:00:12,440
+watched all the
+videos in this module,
+
+6
+00:00:12,440 --> 00:00:15,190
+please do so so that this
+in-class assignment will
+
+7
+00:00:15,190 --> 00:00:19,330
+make a lot more sense to you,
+as the textbook and the lecture
+
+8
+00:00:19,330 --> 00:00:21,650
+videos really provide
+that foundation.
+
+9
+00:00:21,650 --> 00:00:24,020
+And then we apply it here
+in this in-class assignment.
+
+10
+00:00:24,020 --> 00:00:26,840
+Also, if you have not tried this
+in-class assignment on your own,
+
+11
+00:00:26,840 --> 00:00:27,910
+please try it.
+
+12
+00:00:27,910 --> 00:00:28,930
+And then come back.
+
+13
+00:00:28,930 --> 00:00:30,610
+And see, ooh, do
+I understand this?
+
+14
+00:00:30,610 --> 00:00:32,240
+Or do I have
+questions about that?
+
+15
+00:00:32,240 --> 00:00:34,942
+And we can work
+through it together.
+
+16
+00:00:34,942 --> 00:00:36,650
+Let's jump into this
+in-class assignment.
+
+17
+00:00:36,650 --> 00:00:38,410
+So you'll notice that
+when you click on
+
+18
+00:00:38,410 --> 00:00:41,060
+the link up above with
+this in-class assignment,
+
+19
+00:00:41,060 --> 00:00:43,750
+you are prompted--
+this is basically,
+
+20
+00:00:43,750 --> 00:00:45,790
+if you want to think
+about this as the template
+
+21
+00:00:45,790 --> 00:00:47,480
+for the whole class.
+
+22
+00:00:47,480 --> 00:00:49,660
+But if you want to
+actually have your changes
+
+23
+00:00:49,660 --> 00:00:53,540
+be saved, be able to turn this
+in, click on Copy to Drive.
+
+24
+00:00:53,540 --> 00:00:56,290
+And then I'll need to sign
+in to my Google account
+
+25
+00:00:56,290 --> 00:00:57,020
+really quickly.
+
+26
+00:00:57,020 --> 00:00:58,840
+You might need to as well.
+
+27
+00:00:58,840 --> 00:01:02,300
+I've heard some
+issues with Safari not
+
+28
+00:01:02,300 --> 00:01:04,530
+allowing you to print as a PDF.
+
+29
+00:01:04,530 --> 00:01:08,040
+So if you need to use
+Google Chrome, please do so.
+
+30
+00:01:08,040 --> 00:01:10,460
+I tend to use Google Chrome.
+
+31
+00:01:10,460 --> 00:01:13,520
+And it works just fine when
+we need to print this to a PDF
+
+32
+00:01:13,520 --> 00:01:14,840
+at the end.
+
+33
+00:01:14,840 --> 00:01:18,220
+So we are going to apply
+fundamental skills in Python
+
+34
+00:01:18,220 --> 00:01:18,720
+here today.
+
+35
+00:01:18,720 --> 00:01:20,803
+You're going to be turning
+in two different files.
+
+36
+00:01:20,803 --> 00:01:23,990
+You'll turn in the PDF
+version of this document
+
+37
+00:01:23,990 --> 00:01:26,870
+once you have created
+and ran every program
+
+38
+00:01:26,870 --> 00:01:28,380
+so that you can see the output.
+
+39
+00:01:28,380 --> 00:01:31,870
+And then you'll also save the
+Jupyter Notebook file as well.
+
+40
+00:01:31,870 --> 00:01:33,830
+So each program
+listed should perform
+
+41
+00:01:33,830 --> 00:01:36,690
+all of the subitems
+listed under that program.
+
+42
+00:01:36,690 --> 00:01:39,290
+So program number
+one here asks us
+
+43
+00:01:39,290 --> 00:01:42,980
+to write a program that
+fulfills the below requirements.
+
+44
+00:01:42,980 --> 00:01:45,690
+Ask the user to
+input an integer.
+
+45
+00:01:45,690 --> 00:01:48,390
+If they enter an integer,
+multiply their integer by 2.
+
+46
+00:01:48,390 --> 00:01:50,550
+Then output the
+value of their entry,
+
+47
+00:01:50,550 --> 00:01:52,500
+multiply by 2 to the user.
+
+48
+00:01:52,500 --> 00:01:54,418
+If their entry is
+not an integer,
+
+49
+00:01:54,418 --> 00:01:55,460
+tell them of their error.
+
+50
+00:01:55,460 --> 00:01:57,810
+And the program
+should not crash.
+
+51
+00:01:57,810 --> 00:02:01,010
+So as a reminder, there's
+really two ways in this class
+
+52
+00:02:01,010 --> 00:02:03,950
+that we're going to focus on
+input validation, one using
+
+53
+00:02:03,950 --> 00:02:07,700
+while loops, where we oftentimes
+also use an if statement
+
+54
+00:02:07,700 --> 00:02:14,810
+to continue asking people to
+continue repeating the program.
+
+55
+00:02:14,810 --> 00:02:18,620
+And until they enter
+something valid,
+
+56
+00:02:18,620 --> 00:02:21,060
+continue trying to
+enter something.
+
+57
+00:02:21,060 --> 00:02:25,190
+But when we're looking at
+validating the type of data,
+
+58
+00:02:25,190 --> 00:02:27,240
+we're generally going to
+look at, try and accept.
+
+59
+00:02:27,240 --> 00:02:29,000
+So the content of
+their entry, we're
+
+60
+00:02:29,000 --> 00:02:32,270
+going to be using more
+while loops, try and accept
+
+61
+00:02:32,270 --> 00:02:34,770
+focuses on the type
+of their entry.
+
+62
+00:02:34,770 --> 00:02:35,540
+So let's go ahead.
+
+63
+00:02:35,540 --> 00:02:38,360
+And we're going to ask the
+user to input an integer.
+
+64
+00:02:38,360 --> 00:02:41,040
+And then we'll go ahead and
+move forward from there.
+
+65
+00:02:41,040 --> 00:02:45,240
+So let's ask the user
+to enter an integer.
+
+66
+00:02:45,240 --> 00:02:49,770
+We'll say x is equal to input.
+
+67
+00:02:49,770 --> 00:02:54,180
+Please enter an integer.
+
+68
+00:02:54,180 --> 00:02:56,520
+So we're going to ask our
+user to enter an integer.
+
+69
+00:02:56,520 --> 00:02:58,600
+And then if they
+enter an integer,
+
+70
+00:02:58,600 --> 00:03:00,340
+multiply their integer by 2.
+
+71
+00:03:00,340 --> 00:03:02,310
+Then output the value of
+their entry multiplied
+
+72
+00:03:02,310 --> 00:03:03,570
+by 2 to the user.
+
+73
+00:03:03,570 --> 00:03:07,620
+So let's go ahead-- and
+we're not going to look at--
+
+74
+00:03:07,620 --> 00:03:10,920
+let's not look so far yet
+at the try and except.
+
+75
+00:03:10,920 --> 00:03:15,150
+Let's just write this as
+though we were not looking
+
+76
+00:03:15,150 --> 00:03:16,360
+at if they entered integer.
+
+77
+00:03:16,360 --> 00:03:19,980
+So let's multiply their
+integer by 2 and output to them
+
+78
+00:03:19,980 --> 00:03:21,430
+the value of their entry.
+
+79
+00:03:21,430 --> 00:03:29,070
+So I'll say print
+thanks for your entry.
+
+80
+00:03:29,070 --> 00:03:36,070
+your entry multiplied by 2 is--
+
+81
+00:03:36,070 --> 00:03:43,660
+and then, again, we're going to
+use our f strings here and say,
+
+82
+00:03:43,660 --> 00:03:45,830
+your entry multiplied by 2 is.
+
+83
+00:03:45,830 --> 00:03:48,610
+And then place the
+value of the variable
+
+84
+00:03:48,610 --> 00:03:54,260
+x multiplied by 2 right here,
+then our curly brackets.
+
+85
+00:03:54,260 --> 00:03:56,210
+So let's go ahead and
+run this and try it out.
+
+86
+00:03:56,210 --> 00:03:57,210
+I'm going to press Play.
+
+87
+00:04:01,400 --> 00:04:04,970
+Sometimes, the first time we
+run a code cell in our Jupyter
+
+88
+00:04:04,970 --> 00:04:06,290
+Notebook, it takes a minute.
+
+89
+00:04:06,290 --> 00:04:07,280
+So let's say 7.
+
+90
+00:04:07,280 --> 00:04:08,278
+And I hit Enter.
+
+91
+00:04:08,278 --> 00:04:09,570
+It says, thanks for your entry.
+
+92
+00:04:09,570 --> 00:04:12,980
+Your entry multiplied
+by 2 is 77.
+
+93
+00:04:12,980 --> 00:04:15,060
+Ooh, that's not quite right.
+
+94
+00:04:15,060 --> 00:04:16,880
+So let's think about--
+
+95
+00:04:16,880 --> 00:04:18,420
+OK, why is that not quite right?
+
+96
+00:04:18,420 --> 00:04:22,520
+So if we do x multiplied by 2--
+
+97
+00:04:22,520 --> 00:04:24,930
+hmm-- is 77.
+
+98
+00:04:24,930 --> 00:04:29,540
+So it's actually treating this--
+
+99
+00:04:29,540 --> 00:04:32,960
+interestingly enough, it's
+treating x as a string.
+
+100
+00:04:32,960 --> 00:04:35,990
+Because every time we input
+something, it's a string.
+
+101
+00:04:35,990 --> 00:04:41,580
+And it's basically just doubling
+that string and getting 77.
+
+102
+00:04:41,580 --> 00:04:43,650
+So instead, we
+actually say, hey,
+
+103
+00:04:43,650 --> 00:04:50,790
+let's first off convert
+their entry to be an integer.
+
+104
+00:04:50,790 --> 00:04:54,480
+As a reminder, input is always
+interpreted as a string.
+
+105
+00:04:54,480 --> 00:04:58,620
+So let's say x is equal
+to integer form of x.
+
+106
+00:04:58,620 --> 00:05:02,490
+So we're going to convert
+their entry to be an integer.
+
+107
+00:05:02,490 --> 00:05:04,680
+Now, let's run it again.
+
+108
+00:05:04,680 --> 00:05:05,830
+Please enter an integer.
+
+109
+00:05:05,830 --> 00:05:06,610
+I say 7.
+
+110
+00:05:06,610 --> 00:05:07,780
+I hit Enter.
+
+111
+00:05:07,780 --> 00:05:08,920
+Thanks for your entry.
+
+112
+00:05:08,920 --> 00:05:11,550
+Your entry multiply by 2 is 14.
+
+113
+00:05:11,550 --> 00:05:12,600
+There we go.
+
+114
+00:05:12,600 --> 00:05:15,540
+So I was expecting you to
+throw more of an error,
+
+115
+00:05:15,540 --> 00:05:17,350
+be a little bit more
+frustrated with this.
+
+116
+00:05:17,350 --> 00:05:19,230
+But it actually just doubled it.
+
+117
+00:05:19,230 --> 00:05:21,490
+But now, let's run this again.
+
+118
+00:05:21,490 --> 00:05:23,950
+And now that I've converted
+their entry to be an integer,
+
+119
+00:05:23,950 --> 00:05:25,690
+let's say that I type in 7.
+
+120
+00:05:25,690 --> 00:05:27,370
+And I hit Enter.
+
+121
+00:05:27,370 --> 00:05:30,092
+Well, it automatically
+throws me an error.
+
+122
+00:05:30,092 --> 00:05:31,300
+So this is actually an error.
+
+123
+00:05:31,300 --> 00:05:34,240
+And my program is crashing.
+
+124
+00:05:34,240 --> 00:05:36,850
+And it says, ooh,
+invalid literal for int
+
+125
+00:05:36,850 --> 00:05:38,090
+with base 10-- seven.
+
+126
+00:05:38,090 --> 00:05:41,890
+So basically, what this means is
+that it's saying I can't convert
+
+127
+00:05:41,890 --> 00:05:47,230
+that word "seven" to be an
+integer because it's not
+
+128
+00:05:47,230 --> 00:05:47,960
+an integer.
+
+129
+00:05:47,960 --> 00:05:49,580
+So we get this.
+
+130
+00:05:49,580 --> 00:05:51,250
+Our program crashes.
+
+131
+00:05:51,250 --> 00:05:55,420
+So what we need to do now is
+we want to try and convert
+
+132
+00:05:55,420 --> 00:05:57,170
+their entry to be an integer.
+
+133
+00:05:57,170 --> 00:05:58,520
+And if it works, great.
+
+134
+00:05:58,520 --> 00:06:00,200
+We can use our print function.
+
+135
+00:06:00,200 --> 00:06:02,290
+If it doesn't, then
+maybe we're going
+
+136
+00:06:02,290 --> 00:06:07,520
+to notify our user instead of
+just having the program crash.
+
+137
+00:06:07,520 --> 00:06:08,470
+So let's go ahead.
+
+138
+00:06:08,470 --> 00:06:13,010
+And up here, we're going to ask
+our user to input an integer.
+
+139
+00:06:13,010 --> 00:06:17,350
+And then I want
+to try and convert
+
+140
+00:06:17,350 --> 00:06:19,190
+their entry to be an integer.
+
+141
+00:06:19,190 --> 00:06:22,010
+So let's try and do that.
+
+142
+00:06:22,010 --> 00:06:25,555
+And if that works, then I
+want to print, nice job,
+
+143
+00:06:25,555 --> 00:06:28,040
+you entered a print.
+
+144
+00:06:28,040 --> 00:06:29,720
+Thanks for your entry.
+
+145
+00:06:29,720 --> 00:06:32,620
+Your entry multiplied
+by 2 is blank.
+
+146
+00:06:32,620 --> 00:06:38,120
+So as long as this works,
+the print statement will run.
+
+147
+00:06:38,120 --> 00:06:41,210
+If anything in this try
+block throws an error,
+
+148
+00:06:41,210 --> 00:06:44,360
+then my except block
+will run instead.
+
+149
+00:06:44,360 --> 00:06:48,550
+So if the entry is
+not able to be--
+
+150
+00:06:48,550 --> 00:06:52,250
+if the user's input is not able
+to be converted to an integer,
+
+151
+00:06:52,250 --> 00:06:54,700
+then this print will not run.
+
+152
+00:06:54,700 --> 00:06:56,770
+Automatically, it
+skips everything
+
+153
+00:06:56,770 --> 00:07:00,040
+beneath it in the try block
+and runs the except block.
+
+154
+00:07:00,040 --> 00:07:08,850
+And we'll say, if there is
+an error, then this will run.
+
+155
+00:07:08,850 --> 00:07:17,280
+So let's go ahead and say print,
+ugh, that was not an integer.
+
+156
+00:07:17,280 --> 00:07:20,368
+So let's go ahead
+and run this now.
+
+157
+00:07:20,368 --> 00:07:22,160
+So I'm going to type
+the word "seven again.
+
+158
+00:07:22,160 --> 00:07:23,270
+I'll hit Enter.
+
+159
+00:07:23,270 --> 00:07:25,110
+It says, ugh, that
+was not an integer.
+
+160
+00:07:25,110 --> 00:07:26,720
+So it returns something to me.
+
+161
+00:07:26,720 --> 00:07:28,080
+It didn't just crash.
+
+162
+00:07:28,080 --> 00:07:31,850
+It returned that print statement
+to me, which is so powerful.
+
+163
+00:07:31,850 --> 00:07:33,620
+So that's the beauty
+of a try and accept,
+
+164
+00:07:33,620 --> 00:07:36,360
+is it's going to try
+and convert this.
+
+165
+00:07:36,360 --> 00:07:39,150
+If it won't convert, then
+my except block runs.
+
+166
+00:07:39,150 --> 00:07:42,650
+However, if it does convert,
+if I actually type the number 7
+
+167
+00:07:42,650 --> 00:07:45,470
+and hit Enter, then it
+says, thanks for your entry.
+
+168
+00:07:45,470 --> 00:07:47,760
+Your entry multiplied
+by 2 is 14.
+
+169
+00:07:47,760 --> 00:07:53,420
+So since it was successful,
+this conversion was successful.
+
+170
+00:07:53,420 --> 00:07:55,630
+Then my print
+statement ran below it.
+
+171
+00:07:55,630 --> 00:07:58,990
+And my except block never
+ran because there was never
+
+172
+00:07:58,990 --> 00:08:00,470
+an error that happened.
+
+173
+00:08:00,470 --> 00:08:01,910
+OK, awesome.
+
+174
+00:08:05,050 --> 00:08:11,500
+Let's see here if I can get
+rid of that little text box.
+
+175
+00:08:11,500 --> 00:08:13,610
+I'm going to copy
+this code in case.
+
+176
+00:08:13,610 --> 00:08:15,080
+It says, Cannot save changes.
+
+177
+00:08:15,080 --> 00:08:16,425
+It's being a little funky here.
+
+178
+00:08:19,130 --> 00:08:21,350
+Oh, I don't know that mine
+actually copied to drive.
+
+179
+00:08:21,350 --> 00:08:23,240
+So I'm going to
+copy this code here.
+
+180
+00:08:23,240 --> 00:08:26,170
+I'm going to click
+Copy to Drive.
+
+181
+00:08:26,170 --> 00:08:28,780
+It's not allowing
+me to save changes.
+
+182
+00:08:28,780 --> 00:08:30,230
+All right, there we go.
+
+183
+00:08:30,230 --> 00:08:31,880
+Now, it finally
+created the copy.
+
+184
+00:08:31,880 --> 00:08:33,049
+So it just had me log in.
+
+185
+00:08:33,049 --> 00:08:37,630
+So I'm going to, as always,
+name your file Reagan--
+
+186
+00:08:37,630 --> 00:08:39,740
+name it first name, last name.
+
+187
+00:08:39,740 --> 00:08:44,000
+Then I'm going to paste
+my code here down below.
+
+188
+00:08:44,000 --> 00:08:46,780
+So you'll see here that
+that code did save.
+
+189
+00:08:46,780 --> 00:08:50,620
+But originally-- so it was
+saying, Cannot save changes.
+
+190
+00:08:50,620 --> 00:08:53,990
+And it had not formally
+copied to my personal drive.
+
+191
+00:08:53,990 --> 00:08:56,450
+So make sure that that
+copy to drive goes away.
+
+192
+00:08:56,450 --> 00:09:00,020
+And then now, you're able to
+see that my code has saved.
+
+193
+00:09:00,020 --> 00:09:03,890
+And now, I'm able to submit
+it under my actual name.
+
+194
+00:09:03,890 --> 00:09:05,590
+All right, awesome.
+
+195
+00:09:05,590 --> 00:09:08,880
+Now, I want you to write
+a program that fulfills
+
+196
+00:09:08,880 --> 00:09:10,660
+the below requirements.
+
+197
+00:09:10,660 --> 00:09:12,520
+Ask the user to input
+their birth year.
+
+198
+00:09:12,520 --> 00:09:14,620
+If the birth year is
+before your birth year,
+
+199
+00:09:14,620 --> 00:09:17,350
+then return to the user how
+many years older they are.
+
+200
+00:09:17,350 --> 00:09:19,510
+If the birth year is
+after your birth year,
+
+201
+00:09:19,510 --> 00:09:21,970
+then return to the user how
+many years younger they are.
+
+202
+00:09:21,970 --> 00:09:23,830
+If the user was born
+in the same year,
+
+203
+00:09:23,830 --> 00:09:26,680
+tell them how exciting it is
+to be born in the same year.
+
+204
+00:09:26,680 --> 00:09:28,950
+This program does not need
+to keep asking the user
+
+205
+00:09:28,950 --> 00:09:30,240
+if they input--
+
+206
+00:09:30,240 --> 00:09:32,680
+the incorrect input.
+
+207
+00:09:32,680 --> 00:09:34,320
+The program can just end.
+
+208
+00:09:34,320 --> 00:09:36,090
+So we're not going
+to continue asking
+
+209
+00:09:36,090 --> 00:09:39,700
+them did they enter an
+integer, for example.
+
+210
+00:09:39,700 --> 00:09:43,836
+So we're just going to
+write this code here.
+
+211
+00:09:43,836 --> 00:09:46,980
+You're going to first need to
+be able to compare my birth
+
+212
+00:09:46,980 --> 00:09:48,960
+year with their birth year.
+
+213
+00:09:48,960 --> 00:09:54,000
+So I'll say, declare
+your birth year.
+
+214
+00:09:54,000 --> 00:09:55,580
+So you can do your
+own birth year.
+
+215
+00:09:55,580 --> 00:09:57,780
+I'm just going to say--
+this is not my birth year.
+
+216
+00:09:57,780 --> 00:09:59,600
+But we'll just
+throw it out there.
+
+217
+00:09:59,600 --> 00:10:02,070
+My birth year is 1992.
+
+218
+00:10:02,070 --> 00:10:06,110
+And then I want to ask my user
+to enter their birth year.
+
+219
+00:10:06,110 --> 00:10:09,203
+So I'll say user birth
+year is equal to input.
+
+220
+00:10:11,810 --> 00:10:14,910
+Please enter your birth year.
+
+221
+00:10:14,910 --> 00:10:19,480
+Now, as a reminder, input is
+always interpreted as a string.
+
+222
+00:10:19,480 --> 00:10:21,340
+Are you sick of me
+saying that yet?
+
+223
+00:10:21,340 --> 00:10:23,140
+Because you should be.
+
+224
+00:10:23,140 --> 00:10:26,020
+Remember, we need to
+convert their entry
+
+225
+00:10:26,020 --> 00:10:28,060
+to be an integer
+because that's what we
+
+226
+00:10:28,060 --> 00:10:29,980
+are anticipating them to enter.
+
+227
+00:10:29,980 --> 00:10:32,200
+And we're going
+to need to compare
+
+228
+00:10:32,200 --> 00:10:38,770
+their entry of user birth year
+to the integer 1992, which
+
+229
+00:10:38,770 --> 00:10:40,570
+is my birth year.
+
+230
+00:10:40,570 --> 00:10:42,340
+So then I'm going
+to come down here.
+
+231
+00:10:42,340 --> 00:10:53,420
+And I'll say, if
+my birth year is
+
+232
+00:10:53,420 --> 00:10:58,020
+greater than user birth year--
+
+233
+00:10:58,020 --> 00:11:02,710
+so if my birth year is greater
+than the user's birth year--
+
+234
+00:11:02,710 --> 00:11:08,820
+so if they are older
+than me, do this.
+
+235
+00:11:08,820 --> 00:11:11,180
+Then I want to print to them--
+
+236
+00:11:11,180 --> 00:11:17,350
+So if that condition is true,
+you are some odd years older
+
+237
+00:11:17,350 --> 00:11:17,850
+than me.
+
+238
+00:11:17,850 --> 00:11:20,940
+So I can place here-- again,
+let's use my f strings.
+
+239
+00:11:20,940 --> 00:11:25,340
+And I'm actually going
+to do an arithmetic
+
+240
+00:11:25,340 --> 00:11:26,340
+here with inside this.
+
+241
+00:11:26,340 --> 00:11:30,630
+And I'll say, you are
+blank years older than me.
+
+242
+00:11:30,630 --> 00:11:38,550
+So I'll say, you are my birth
+year minus your birth year years
+
+243
+00:11:38,550 --> 00:11:40,090
+older than me.
+
+244
+00:11:40,090 --> 00:11:46,200
+So I'm going to subtract my
+birth year minus the user's
+
+245
+00:11:46,200 --> 00:11:49,060
+birth year to see how many
+years older they are than me.
+
+246
+00:11:49,060 --> 00:11:50,470
+So let's try this out here.
+
+247
+00:11:50,470 --> 00:11:52,380
+So if my birth year
+is 1992, I need
+
+248
+00:11:52,380 --> 00:11:56,221
+to enter somebody
+who's older than me.
+
+249
+00:11:56,221 --> 00:11:58,160
+o let's say 1990.
+
+250
+00:11:58,160 --> 00:12:02,200
+So it should output to me that
+you are two years older than me
+
+251
+00:12:02,200 --> 00:12:05,660
+because this condition
+will be true.
+
+252
+00:12:05,660 --> 00:12:07,670
+My birth year is greater
+than their birth year.
+
+253
+00:12:07,670 --> 00:12:09,205
+So now I hit Enter.
+
+254
+00:12:09,205 --> 00:12:09,890
+Oh, no.
+
+255
+00:12:09,890 --> 00:12:11,230
+Now, I hit Enter.
+
+256
+00:12:11,230 --> 00:12:11,740
+Oh, no.
+
+257
+00:12:11,740 --> 00:12:12,740
+I got to click off that.
+
+258
+00:12:12,740 --> 00:12:13,250
+There we go.
+
+259
+00:12:13,250 --> 00:12:15,590
+And you are two
+years older than me.
+
+260
+00:12:15,590 --> 00:12:17,020
+Perfect.
+
+261
+00:12:17,020 --> 00:12:19,220
+So again, this
+condition is true.
+
+262
+00:12:19,220 --> 00:12:21,560
+My birth year is greater
+than their birth year.
+
+263
+00:12:21,560 --> 00:12:23,450
+They are older than me.
+
+264
+00:12:23,450 --> 00:12:28,000
+And then I say you are my birth
+year minus user birth years
+
+265
+00:12:28,000 --> 00:12:28,880
+older than me.
+
+266
+00:12:28,880 --> 00:12:29,590
+Perfect.
+
+267
+00:12:29,590 --> 00:12:32,810
+Now, if that is not true,
+then I want to evaluate,
+
+268
+00:12:32,810 --> 00:12:36,490
+as my code says up above here.
+
+269
+00:12:36,490 --> 00:12:38,450
+If the birth year is
+after your birth year,
+
+270
+00:12:38,450 --> 00:12:41,480
+then return to the user how
+many years younger they are.
+
+271
+00:12:41,480 --> 00:12:51,160
+So I'll say elif my birth year
+is less than user birth year.
+
+272
+00:12:51,160 --> 00:12:56,550
+So if they are younger
+than me, do this.
+
+273
+00:12:56,550 --> 00:12:57,500
+OK, perfect.
+
+274
+00:12:57,500 --> 00:13:00,910
+Then I'll print
+using my f string.
+
+275
+00:13:00,910 --> 00:13:05,560
+You are blank years
+younger than me.
+
+276
+00:13:05,560 --> 00:13:08,830
+I'm going to do the similar
+thing here, just the opposite.
+
+277
+00:13:08,830 --> 00:13:13,175
+I'm going to say user birth
+year minus my birth year
+
+278
+00:13:13,175 --> 00:13:14,550
+because their
+birth year is going
+
+279
+00:13:14,550 --> 00:13:18,910
+to be greater than mine if
+they're younger than me.
+
+280
+00:13:18,910 --> 00:13:20,790
+And I'll say my birth year.
+
+281
+00:13:20,790 --> 00:13:23,260
+Perfect.
+
+282
+00:13:23,260 --> 00:13:29,350
+You are years younger than me.
+
+283
+00:13:29,350 --> 00:13:30,430
+Awesome.
+
+284
+00:13:30,430 --> 00:13:33,993
+Then now, let's try this
+out and put somebody here
+
+285
+00:13:33,993 --> 00:13:34,910
+who's younger than me.
+
+286
+00:13:34,910 --> 00:13:37,360
+So I'll say 1997 and hit Enter.
+
+287
+00:13:37,360 --> 00:13:39,680
+And it says you are five
+years younger than me,
+
+288
+00:13:39,680 --> 00:13:41,390
+which is absolutely correct.
+
+289
+00:13:41,390 --> 00:13:45,560
+Now, finally, if none
+of these are true,
+
+290
+00:13:45,560 --> 00:13:47,810
+if my birth year is not
+greater than their birth year,
+
+291
+00:13:47,810 --> 00:13:50,480
+if my birth year is not
+less than their birth year,
+
+292
+00:13:50,480 --> 00:13:53,980
+then my else block
+will run, which
+
+293
+00:13:53,980 --> 00:13:59,600
+means if we are the
+same age, do this.
+
+294
+00:13:59,600 --> 00:14:02,960
+As a reminder, else does not
+have any conditional expression
+
+295
+00:14:02,960 --> 00:14:03,500
+after that.
+
+296
+00:14:03,500 --> 00:14:04,750
+It's just else.
+
+297
+00:14:04,750 --> 00:14:07,630
+Now, I'll print.
+
+298
+00:14:07,630 --> 00:14:13,360
+We have the same birth year.
+
+299
+00:14:13,360 --> 00:14:16,390
+How exciting.
+
+300
+00:14:16,390 --> 00:14:18,810
+Let's go ahead and run this now.
+
+301
+00:14:18,810 --> 00:14:20,245
+So please enter your birth year.
+
+302
+00:14:20,245 --> 00:14:21,370
+Let's try out a few things.
+
+303
+00:14:21,370 --> 00:14:24,310
+1997, they're going
+to be younger than me.
+
+304
+00:14:24,310 --> 00:14:24,810
+Perfect.
+
+305
+00:14:24,810 --> 00:14:26,650
+You are five years
+younger than me.
+
+306
+00:14:26,650 --> 00:14:29,880
+Let's put in here 1985.
+
+307
+00:14:29,880 --> 00:14:31,660
+You are seven years
+older than me.
+
+308
+00:14:31,660 --> 00:14:32,760
+Also good.
+
+309
+00:14:32,760 --> 00:14:34,690
+Then let's check out
+something else here.
+
+310
+00:14:34,690 --> 00:14:38,080
+And let's say that
+they input 1992.
+
+311
+00:14:38,080 --> 00:14:40,100
+Then it says we have
+the same birth year.
+
+312
+00:14:40,100 --> 00:14:42,800
+How exciting.
+
+313
+00:14:42,800 --> 00:14:43,300
+Awesome.
+
+314
+00:14:43,300 --> 00:14:46,790
+So again, here, I'm
+looking at users input.
+
+315
+00:14:46,790 --> 00:14:47,690
+Now, same as above.
+
+316
+00:14:47,690 --> 00:14:52,330
+But this time, we're going
+to do some input validation.
+
+317
+00:14:52,330 --> 00:14:55,600
+This time, verify that the
+user inputs an integer.
+
+318
+00:14:55,600 --> 00:14:57,220
+If they do not enter
+an integer, then
+
+319
+00:14:57,220 --> 00:14:59,290
+do not let the program crash.
+
+320
+00:14:59,290 --> 00:15:01,430
+Instead, tell them
+of their error.
+
+321
+00:15:01,430 --> 00:15:04,240
+This program does not need
+to keep asking the user
+
+322
+00:15:04,240 --> 00:15:05,930
+if they input incorrect input.
+
+323
+00:15:05,930 --> 00:15:08,240
+The program can just end.
+
+324
+00:15:08,240 --> 00:15:11,940
+So let's grab this
+program up above here.
+
+325
+00:15:11,940 --> 00:15:16,780
+And I can delete out, write
+your code for program here, too.
+
+326
+00:15:16,780 --> 00:15:20,240
+And I'll bleep that out.
+
+327
+00:15:20,240 --> 00:15:26,540
+So let's copy this
+code down to program 3.
+
+328
+00:15:26,540 --> 00:15:31,450
+So we're going to just continue
+iterating upon this code.
+
+329
+00:15:31,450 --> 00:15:33,680
+And same as above.
+
+330
+00:15:33,680 --> 00:15:36,640
+But we're just going to
+verify that what they enter
+
+331
+00:15:36,640 --> 00:15:42,450
+is indeed an integer.
+
+332
+00:15:42,450 --> 00:15:46,230
+So as of right now, if I
+was to run this program,
+
+333
+00:15:46,230 --> 00:15:48,420
+just like the one that I
+wrote up above, program 2,
+
+334
+00:15:48,420 --> 00:15:59,130
+and I enter 1997 and I hit
+Enter, then my program fails.
+
+335
+00:15:59,130 --> 00:16:05,160
+It absolutely fails because
+we cannot convert that string
+
+336
+00:16:05,160 --> 00:16:05,710
+value.
+
+337
+00:16:05,710 --> 00:16:07,510
+Inputs always
+interpreted as a string.
+
+338
+00:16:07,510 --> 00:16:10,150
+We cannot convert that string
+value to be an integer.
+
+339
+00:16:10,150 --> 00:16:11,950
+So my program just crashes.
+
+340
+00:16:11,950 --> 00:16:14,970
+So this one asks me to
+verify that what they enter
+
+341
+00:16:14,970 --> 00:16:17,650
+is an integer and to not
+let my program crash.
+
+342
+00:16:17,650 --> 00:16:21,750
+So I'm going to-- now, I'm going
+to separate instead of directly
+
+343
+00:16:21,750 --> 00:16:26,720
+trying to convert their
+entry to be an integer,
+
+344
+00:16:26,720 --> 00:16:28,720
+I'm going to break this
+apart a little bit more.
+
+345
+00:16:28,720 --> 00:16:34,090
+So I'm going to say, after I ask
+them to enter their birth year,
+
+346
+00:16:34,090 --> 00:16:44,690
+then I'm going to try to convert
+their entry to be an integer.
+
+347
+00:16:44,690 --> 00:16:51,310
+And I'll say user birth
+year is equal to the integer
+
+348
+00:16:51,310 --> 00:16:54,040
+form of user birth year.
+
+349
+00:16:54,040 --> 00:16:55,450
+All right, awesome.
+
+350
+00:16:55,450 --> 00:16:59,080
+Then I'm going to
+indent everything
+
+351
+00:16:59,080 --> 00:17:01,580
+beneath this try block.
+
+352
+00:17:01,580 --> 00:17:02,670
+OK, perfect.
+
+353
+00:17:02,670 --> 00:17:08,420
+So if this is successful,
+then this will all run.
+
+354
+00:17:08,420 --> 00:17:11,810
+And keep in mind here, if we
+did have an error within this
+
+355
+00:17:11,810 --> 00:17:14,310
+if, elif, and else, if
+there is an error occurred,
+
+356
+00:17:14,310 --> 00:17:16,260
+then the except
+block will still run.
+
+357
+00:17:16,260 --> 00:17:19,650
+However, we know that this
+if, elif, and else will run.
+
+358
+00:17:19,650 --> 00:17:21,930
+So we're really
+looking at here is,
+
+359
+00:17:21,930 --> 00:17:24,810
+does their entry
+convert to an integer?
+
+360
+00:17:24,810 --> 00:17:28,310
+If this fails, then
+none of this will run.
+
+361
+00:17:28,310 --> 00:17:32,870
+And instead, my
+except block will run.
+
+362
+00:17:32,870 --> 00:17:41,460
+And it will say print,
+you must enter an integer.
+
+363
+00:17:41,460 --> 00:17:45,900
+So again, if this fails, if my
+conversion to an integer fails,
+
+364
+00:17:45,900 --> 00:17:49,340
+then all of a sudden this
+if block will not run.
+
+365
+00:17:49,340 --> 00:17:52,470
+And instead, my
+except block will run.
+
+366
+00:17:52,470 --> 00:17:54,200
+So now, let's run this.
+
+367
+00:17:54,200 --> 00:17:55,800
+Please enter your birth year.
+
+368
+00:17:55,800 --> 00:17:58,250
+And I say 1992.
+
+369
+00:17:58,250 --> 00:17:59,410
+And I hit Enter.
+
+370
+00:17:59,410 --> 00:18:00,660
+We have the same birth year.
+
+371
+00:18:00,660 --> 00:18:01,282
+How exciting.
+
+372
+00:18:01,282 --> 00:18:01,990
+All right, great.
+
+373
+00:18:01,990 --> 00:18:05,910
+Now, let's type out
+something non-integer.
+
+374
+00:18:05,910 --> 00:18:10,310
+I'll say 1992 and hit Enter.
+
+375
+00:18:10,310 --> 00:18:13,380
+And it says you must
+enter an integer.
+
+376
+00:18:13,380 --> 00:18:20,180
+So this try to run, this failed,
+skipped all of this if block,
+
+377
+00:18:20,180 --> 00:18:23,600
+and just ran my accept
+whatever was indented
+
+378
+00:18:23,600 --> 00:18:24,758
+and beneath my accept.
+
+379
+00:18:24,758 --> 00:18:26,300
+Remember, I told
+you in the beginning
+
+380
+00:18:26,300 --> 00:18:29,270
+as we started to learn how
+to program that Python makes
+
+381
+00:18:29,270 --> 00:18:31,998
+extensive use of indentations.
+
+382
+00:18:31,998 --> 00:18:34,040
+So you'll notice it says
+that everything indented
+
+383
+00:18:34,040 --> 00:18:35,820
+and beneath this try block.
+
+384
+00:18:35,820 --> 00:18:38,650
+Everything indented and
+beneath this except block.
+
+385
+00:18:38,650 --> 00:18:39,510
+OK, awesome.
+
+386
+00:18:39,510 --> 00:18:41,350
+Now, same as above.
+
+387
+00:18:41,350 --> 00:18:44,100
+But this time, keep asking
+them to input an integer
+
+388
+00:18:44,100 --> 00:18:47,470
+until they actually
+input an integer.
+
+389
+00:18:47,470 --> 00:18:51,310
+So there's a few ways
+we could do this.
+
+390
+00:18:51,310 --> 00:18:53,010
+Truly, there's a lot of ways.
+
+391
+00:18:53,010 --> 00:18:54,260
+I'm going to do it in one way.
+
+392
+00:18:54,260 --> 00:18:56,885
+Doesn't mean that this is the--
+it definitely doesn't mean this
+
+393
+00:18:56,885 --> 00:18:57,630
+is the only way.
+
+394
+00:18:57,630 --> 00:18:59,040
+This is more just--
+
+395
+00:18:59,040 --> 00:19:01,010
+this is one way to do it.
+
+396
+00:19:01,010 --> 00:19:02,860
+So I want to--
+again, same as above.
+
+397
+00:19:02,860 --> 00:19:07,080
+But this time, keep asking
+them to enter an integer
+
+398
+00:19:07,080 --> 00:19:08,620
+until they enter one.
+
+399
+00:19:08,620 --> 00:19:14,010
+So let's go ahead and copy
+this down from program 3.
+
+400
+00:19:14,010 --> 00:19:18,700
+Now, with program 4 here,
+we want to keep asking them.
+
+401
+00:19:18,700 --> 00:19:20,620
+So what I'm going to do--
+
+402
+00:19:20,620 --> 00:19:22,750
+I know I'm going to
+keep asking them.
+
+403
+00:19:22,750 --> 00:19:26,710
+So I know that I want to keep
+asking them to enter their birth
+
+404
+00:19:26,710 --> 00:19:29,880
+year over and over and over
+again until they actually
+
+405
+00:19:29,880 --> 00:19:31,660
+enter an integer.
+
+406
+00:19:31,660 --> 00:19:35,130
+So I will say,
+while true, meaning
+
+407
+00:19:35,130 --> 00:19:40,200
+until we hit that break command,
+continue asking them for input.
+
+408
+00:19:40,200 --> 00:19:45,060
+Now, this time, I'm
+actually going to remove my
+
+409
+00:19:45,060 --> 00:19:47,840
+if, elif, and else block.
+
+410
+00:19:47,840 --> 00:19:49,420
+I'm going to cut that.
+
+411
+00:19:49,420 --> 00:19:53,010
+So Control-X on my Windows.
+
+412
+00:19:53,010 --> 00:19:56,920
+And I'm going to paste
+that code down below here.
+
+413
+00:19:56,920 --> 00:19:59,890
+Now, this can be
+a little finicky.
+
+414
+00:19:59,890 --> 00:20:06,420
+So you might have to do
+some re-formatting, if you
+
+415
+00:20:06,420 --> 00:20:11,870
+will, of if, elif, and else.
+
+416
+00:20:11,870 --> 00:20:13,500
+But it shouldn't be too bad.
+
+417
+00:20:13,500 --> 00:20:17,720
+So the reason that I brought
+this out of my while loop is I
+
+418
+00:20:17,720 --> 00:20:23,280
+want to say that
+while true, meaning
+
+419
+00:20:23,280 --> 00:20:30,530
+keep asking them until
+you hit the break command.
+
+420
+00:20:30,530 --> 00:20:33,590
+This means keep asking
+them to enter their birth
+
+421
+00:20:33,590 --> 00:20:37,716
+year until they have
+entered an integer.
+
+422
+00:20:37,716 --> 00:20:41,570
+Then we can break out
+of this while loop
+
+423
+00:20:41,570 --> 00:20:43,490
+once they've entered an integer.
+
+424
+00:20:43,490 --> 00:20:46,825
+And then just my
+if block can run.
+
+425
+00:20:46,825 --> 00:20:49,580
+I don't need to have my
+if, elif, and else inside
+
+426
+00:20:49,580 --> 00:20:54,275
+of my while loop because
+it's only going to run when--
+
+427
+00:20:54,275 --> 00:20:58,020
+or I only want it to run when
+they do enter an integer.
+
+428
+00:20:58,020 --> 00:21:05,090
+So keep asking them until you
+hit the break commands slash
+
+429
+00:21:05,090 --> 00:21:08,310
+they entered an integer.
+
+430
+00:21:08,310 --> 00:21:11,410
+So what I'm going to
+do here is after this--
+
+431
+00:21:11,410 --> 00:21:14,750
+I'm going to try and convert
+their entry to be an integer.
+
+432
+00:21:14,750 --> 00:21:18,200
+If this succeeds, then
+everything else in my try block
+
+433
+00:21:18,200 --> 00:21:18,840
+will run.
+
+434
+00:21:18,840 --> 00:21:24,350
+So that means I'm going to
+break then out of my while loop.
+
+435
+00:21:24,350 --> 00:21:27,810
+And then my if block will run.
+
+436
+00:21:27,810 --> 00:21:30,320
+So remember, everything indented
+in beneath the while loop
+
+437
+00:21:30,320 --> 00:21:32,840
+happens over and over and over
+again until we hit that break
+
+438
+00:21:32,840 --> 00:21:33,630
+command.
+
+439
+00:21:33,630 --> 00:21:36,440
+Once we leave that while
+loop, then everything
+
+440
+00:21:36,440 --> 00:21:39,260
+left aligned with
+that while loop--
+
+441
+00:21:39,260 --> 00:21:41,130
+you see how that's
+left aligned here.
+
+442
+00:21:41,130 --> 00:21:42,560
+Then that can run.
+
+443
+00:21:42,560 --> 00:21:44,060
+Once I leave that
+while loop, then I
+
+444
+00:21:44,060 --> 00:21:46,050
+can go back here to
+everything left aligned.
+
+445
+00:21:46,050 --> 00:21:48,120
+So let's go ahead and run this.
+
+446
+00:21:48,120 --> 00:21:49,980
+It says please enter
+your birth year.
+
+447
+00:21:49,980 --> 00:21:52,040
+And I say 1991.
+
+448
+00:21:52,040 --> 00:21:53,160
+I hit Enter.
+
+449
+00:21:53,160 --> 00:21:55,680
+It says you are one
+years older than me.
+
+450
+00:21:55,680 --> 00:22:01,070
+So what this means is that it
+tried to convert my 1991 entry.
+
+451
+00:22:01,070 --> 00:22:02,880
+And it succeeded.
+
+452
+00:22:02,880 --> 00:22:05,380
+So it broke out
+of my while loop.
+
+453
+00:22:05,380 --> 00:22:08,220
+Then everything left
+aligned here ran.
+
+454
+00:22:08,220 --> 00:22:11,760
+So my if block ran.
+
+455
+00:22:11,760 --> 00:22:14,650
+And it says that you are
+one year older than me.
+
+456
+00:22:14,650 --> 00:22:16,510
+So this was true.
+
+457
+00:22:16,510 --> 00:22:20,580
+So then everything indented
+and beneath my if ran.
+
+458
+00:22:20,580 --> 00:22:23,100
+And since my if was
+correct, then it
+
+459
+00:22:23,100 --> 00:22:25,160
+skipped my elif and my else.
+
+460
+00:22:25,160 --> 00:22:27,600
+So now, let's run this again.
+
+461
+00:22:27,600 --> 00:22:34,760
+And this time, let's say 1997.
+
+462
+00:22:34,760 --> 00:22:37,340
+I'm writing out string
+type of data here.
+
+463
+00:22:37,340 --> 00:22:38,810
+And I hit Enter.
+
+464
+00:22:38,810 --> 00:22:42,060
+Now, this time, it says
+you must enter an integer.
+
+465
+00:22:42,060 --> 00:22:45,410
+So what it did is it said, can
+I convert whatever they just
+
+466
+00:22:45,410 --> 00:22:46,830
+enter to be an integer?
+
+467
+00:22:46,830 --> 00:22:48,510
+No, I cannot.
+
+468
+00:22:48,510 --> 00:22:50,310
+That try fails.
+
+469
+00:22:50,310 --> 00:22:52,160
+So I skip the break command.
+
+470
+00:22:52,160 --> 00:22:54,650
+And immediately, my
+except block runs.
+
+471
+00:22:54,650 --> 00:22:56,850
+And it says, you must
+enter an integer.
+
+472
+00:22:56,850 --> 00:22:59,820
+Then since I never
+hit the break command,
+
+473
+00:22:59,820 --> 00:23:04,050
+I skipped over it because this
+line of code threw an error.
+
+474
+00:23:04,050 --> 00:23:05,840
+So I skipped over
+the break command
+
+475
+00:23:05,840 --> 00:23:08,990
+and ran that except block.
+
+476
+00:23:08,990 --> 00:23:11,910
+Then it says you must
+enter an integer.
+
+477
+00:23:11,910 --> 00:23:15,080
+Then it loops back up here to
+beginning of the while loop.
+
+478
+00:23:15,080 --> 00:23:18,260
+And it says, please
+enter your birth year.
+
+479
+00:23:18,260 --> 00:23:19,850
+So that's where
+we are right now,
+
+480
+00:23:19,850 --> 00:23:21,920
+is it's asking me to
+enter my birth year again.
+
+481
+00:23:21,920 --> 00:23:26,580
+Let's say 2,000.
+
+482
+00:23:26,580 --> 00:23:28,560
+2,000.
+
+483
+00:23:28,560 --> 00:23:29,763
+Now, I run this.
+
+484
+00:23:29,763 --> 00:23:31,180
+It says you must
+enter an integer.
+
+485
+00:23:31,180 --> 00:23:33,510
+So again, that conversion
+failed, skipped
+
+486
+00:23:33,510 --> 00:23:34,290
+the break command.
+
+487
+00:23:34,290 --> 00:23:38,040
+Print, you must enter an
+integer, was returned to me.
+
+488
+00:23:38,040 --> 00:23:39,990
+And it's still waiting for me.
+
+489
+00:23:39,990 --> 00:23:42,060
+My program is still
+running because that's
+
+490
+00:23:42,060 --> 00:23:43,510
+waiting for more input.
+
+491
+00:23:43,510 --> 00:23:46,900
+Now, if I enter in
+1991 and I hit Enter,
+
+492
+00:23:46,900 --> 00:23:48,760
+it says you are one
+years older than me.
+
+493
+00:23:48,760 --> 00:23:51,520
+So this is working just
+fine at this point.
+
+494
+00:23:51,520 --> 00:23:54,690
+But you can see here, we built
+out this program kind of step
+
+495
+00:23:54,690 --> 00:23:57,100
+by step throughout these
+different programs.
+
+496
+00:23:57,100 --> 00:24:00,750
+We just built on
+different capabilities.
+
+497
+00:24:00,750 --> 00:24:03,240
+So you'll see this periodically
+throughout as we go,
+
+498
+00:24:03,240 --> 00:24:06,170
+that we just-- again, always
+start with what you know.
+
+499
+00:24:06,170 --> 00:24:08,086
+Am I asking for input?
+
+500
+00:24:08,086 --> 00:24:09,790
+Input's always
+interpreted as a string.
+
+501
+00:24:09,790 --> 00:24:12,000
+Can I convert it
+to be an integer?
+
+502
+00:24:12,000 --> 00:24:13,830
+And again, with
+the try and except,
+
+503
+00:24:13,830 --> 00:24:17,610
+it's really focusing on
+don't let that program crash.
+
+504
+00:24:17,610 --> 00:24:19,120
+If they enter the
+wrong data type,
+
+505
+00:24:19,120 --> 00:24:20,940
+don't let that program crash.
+
+506
+00:24:20,940 --> 00:24:24,130
+All right, everybody, thanks
+so much for your hard work.
+
+507
+00:24:24,130 --> 00:24:32,500
+As a reminder, go
+File, Download.
+
+508
+00:24:32,500 --> 00:24:35,440
+And then download this
+Jupyter Notebook file
+
+509
+00:24:35,440 --> 00:24:38,530
+with the file extension IPYNB.
+
+510
+00:24:38,530 --> 00:24:40,090
+And then submit that.
+
+511
+00:24:40,090 --> 00:24:47,500
+As well as you'll also need
+to submit the PDF version.
+
+512
+00:24:47,500 --> 00:24:50,110
+So you go File, Print
+down at the very bottom.
+
+513
+00:24:50,110 --> 00:24:51,480
+You can't see on my screen.
+
+514
+00:24:51,480 --> 00:24:54,400
+And then say Microsoft
+print to PDF.
+
+515
+00:24:54,400 --> 00:24:56,160
+Now, again, keep
+in mind, if this
+
+516
+00:24:56,160 --> 00:24:59,410
+is throwing any errors
+for you on that printing,
+
+517
+00:24:59,410 --> 00:25:03,338
+you may need to switch over into
+Google Chrome instead of Safari.
+
+518
+00:25:03,338 --> 00:25:05,130
+But you're going to
+submit those two files.
+
+519
+00:25:05,130 --> 00:25:08,910
+And make sure that you've
+ran all of these programs
+
+520
+00:25:08,910 --> 00:25:11,580
+because that PDF
+is going to show
+
+521
+00:25:11,580 --> 00:25:13,440
+all of your output,
+which is what
+
+522
+00:25:13,440 --> 00:25:15,520
+we'll use also in our grading.
+
+523
+00:25:15,520 --> 00:25:17,860
+So thanks, everybody, for
+being an awesome class.
+
+524
+00:25:17,860 --> 00:25:19,490
+Take care.

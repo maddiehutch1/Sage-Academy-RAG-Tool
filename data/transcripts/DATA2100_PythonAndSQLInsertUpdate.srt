@@ -1,0 +1,1660 @@
+1
+00:00:01,060 --> 00:00:02,750
+INSTRUCTOR: Hi,
+data 2100 students.
+
+2
+00:00:02,750 --> 00:00:04,300
+In this week's
+video, we are going
+
+3
+00:00:04,300 --> 00:00:07,770
+to work through
+Python and SQL, using
+
+4
+00:00:07,770 --> 00:00:11,140
+a Python to run SQL
+queries and look
+
+5
+00:00:11,140 --> 00:00:13,720
+at those through the lens
+of inserting and updating
+
+6
+00:00:13,720 --> 00:00:14,960
+records of data.
+
+7
+00:00:14,960 --> 00:00:16,950
+So we can insert a
+new record of data,
+
+8
+00:00:16,950 --> 00:00:19,280
+and we can update an
+existing record of data.
+
+9
+00:00:19,280 --> 00:00:22,120
+So, as a reminder, our
+Python and SQL connection
+
+10
+00:00:22,120 --> 00:00:24,710
+makes Python significantly
+more powerful.
+
+11
+00:00:24,710 --> 00:00:28,370
+We can now access a large amount
+of data stored in a database.
+
+12
+00:00:28,370 --> 00:00:31,520
+Further, we will use
+our SQLLite3 module.
+
+13
+00:00:31,520 --> 00:00:33,880
+It's a set of classes,
+functions, and variables
+
+14
+00:00:33,880 --> 00:00:37,390
+defined and implemented that
+we can import into our Python
+
+15
+00:00:37,390 --> 00:00:41,500
+program and allow us to utilize
+those functions, like the len
+
+16
+00:00:41,500 --> 00:00:42,650
+function for example.
+
+17
+00:00:42,650 --> 00:00:44,690
+That len function is
+not a part of SQLite3,
+
+18
+00:00:44,690 --> 00:00:48,040
+but len is a function, but
+other functions that we can use
+
+19
+00:00:48,040 --> 00:00:52,990
+that are part of SQLite3
+to be able to run our SQL
+
+20
+00:00:52,990 --> 00:00:54,880
+queries in Python.
+
+21
+00:00:54,880 --> 00:00:57,440
+So we have our
+SELECT statement--
+
+22
+00:00:57,440 --> 00:01:00,220
+SELECT, FROM, WHERE, GROUP
+BY, HAVING, ORDER BY.
+
+23
+00:01:00,220 --> 00:01:02,190
+We've already reviewed
+this a little bit,
+
+24
+00:01:02,190 --> 00:01:04,430
+but we also have our
+inserting records of data
+
+25
+00:01:04,430 --> 00:01:06,270
+and updating records of data.
+
+26
+00:01:06,270 --> 00:01:08,250
+So when we're inserting
+a record of data,
+
+27
+00:01:08,250 --> 00:01:11,070
+we say insert into
+the table name,
+
+28
+00:01:11,070 --> 00:01:15,140
+then we list out the fields
+that we want to add data to,
+
+29
+00:01:15,140 --> 00:01:18,080
+and then the values of
+those coordinating data
+
+30
+00:01:18,080 --> 00:01:20,100
+values that we want
+to add into field 1.
+
+31
+00:01:20,100 --> 00:01:23,570
+So for example, if field
+1 is first is the ID,
+
+32
+00:01:23,570 --> 00:01:28,100
+we place the ID here
+within my values entry,
+
+33
+00:01:28,100 --> 00:01:29,820
+this set of values.
+
+34
+00:01:29,820 --> 00:01:31,650
+And I say, I want to replace--
+
+35
+00:01:31,650 --> 00:01:36,200
+I want to add, not replace,
+I want to add the ID of 3
+
+36
+00:01:36,200 --> 00:01:39,300
+into the ID field
+and same thing.
+
+37
+00:01:39,300 --> 00:01:42,020
+So we have to make sure
+that we list the fields
+
+38
+00:01:42,020 --> 00:01:43,910
+in the same order as
+the values that we
+
+39
+00:01:43,910 --> 00:01:47,482
+want to add into those fields.
+
+40
+00:01:47,482 --> 00:01:49,500
+If the primary key
+is auto incrementing,
+
+41
+00:01:49,500 --> 00:01:51,830
+we do not need to mention
+the field nor the value,
+
+42
+00:01:51,830 --> 00:01:54,710
+and the insert statement as the
+relational database management
+
+43
+00:01:54,710 --> 00:01:57,950
+system will automatically assign
+a unique incremented field
+
+44
+00:01:57,950 --> 00:01:59,960
+as the primary key.
+
+45
+00:01:59,960 --> 00:02:03,320
+Another way we can manipulate
+data stored in a database table
+
+46
+00:02:03,320 --> 00:02:06,810
+is by updating an already
+existing record of data.
+
+47
+00:02:06,810 --> 00:02:08,990
+So for example, we say
+update, and then we
+
+48
+00:02:08,990 --> 00:02:10,470
+place the table name.
+
+49
+00:02:10,470 --> 00:02:13,730
+We set, and this is
+generally we say, set
+
+50
+00:02:13,730 --> 00:02:16,520
+and we place the
+column name here,
+
+51
+00:02:16,520 --> 00:02:22,650
+column name equal to the
+value that we want to change.
+
+52
+00:02:22,650 --> 00:02:25,640
+And then we say,
+WHERE primary or WHERE
+
+53
+00:02:25,640 --> 00:02:29,940
+the ID equals 3 or WHERE
+last name is equal, whatever.
+
+54
+00:02:29,940 --> 00:02:32,000
+So just make sure
+that WHERE clause
+
+55
+00:02:32,000 --> 00:02:33,560
+we utilize that
+WHERE clause heavily
+
+56
+00:02:33,560 --> 00:02:37,100
+in an update statement because
+this specifies where we actually
+
+57
+00:02:37,100 --> 00:02:39,260
+want that update
+to occur or if we
+
+58
+00:02:39,260 --> 00:02:44,172
+want to think about it as
+which record we want to update.
+
+59
+00:02:44,172 --> 00:02:48,080
+And then finally, the
+Delete is when we can change
+
+60
+00:02:48,080 --> 00:02:52,950
+or when we can delete a
+record in a database table.
+
+61
+00:02:52,950 --> 00:02:56,090
+So I say delete the table
+name and then maybe I'll say,
+
+62
+00:02:56,090 --> 00:03:00,420
+WHERE first name equals Reagan
+and last name equals Sigurd.
+
+63
+00:03:00,420 --> 00:03:03,258
+So, for example, WHERE clause
+is the most important part
+
+64
+00:03:03,258 --> 00:03:05,550
+of the Delete and the most
+important part of the update
+
+65
+00:03:05,550 --> 00:03:07,760
+because if I just say
+delete table name, then
+
+66
+00:03:07,760 --> 00:03:10,250
+it deletes my whole table.
+
+67
+00:03:10,250 --> 00:03:13,640
+So that's just a brief reminder.
+
+68
+00:03:13,640 --> 00:03:15,950
+As a part of this,
+we are now going
+
+69
+00:03:15,950 --> 00:03:19,410
+to step into our
+update examples.
+
+70
+00:03:19,410 --> 00:03:21,360
+So, please go ahead
+and go there with me.
+
+71
+00:03:21,360 --> 00:03:23,210
+I'm going to click
+Copy to Drive,
+
+72
+00:03:23,210 --> 00:03:25,400
+and then it will make
+a copy within my drive.
+
+73
+00:03:25,400 --> 00:03:29,300
+And then I'll say,
+Reagan, Sigurd--
+
+74
+00:03:29,300 --> 00:03:32,380
+perfect-- Python SQL
+insert and update.
+
+75
+00:03:32,380 --> 00:03:32,880
+All right.
+
+76
+00:03:32,880 --> 00:03:35,990
+So down here below, we will
+notice here as a reminder
+
+77
+00:03:35,990 --> 00:03:39,950
+that we are utilizing a
+file version of our Overland
+
+78
+00:03:39,950 --> 00:03:40,710
+database.
+
+79
+00:03:40,710 --> 00:03:43,580
+We basically downloaded
+the Overland database
+
+80
+00:03:43,580 --> 00:03:47,840
+that's on our Stairway
+SQL Server, downloaded it
+
+81
+00:03:47,840 --> 00:03:50,990
+into a file that has a
+file extension of DB.
+
+82
+00:03:50,990 --> 00:03:53,930
+This is literally
+a whole database,
+
+83
+00:03:53,930 --> 00:03:56,930
+all of those database
+tables in Overland in one
+
+84
+00:03:56,930 --> 00:04:00,320
+file that then we can
+access and write programs
+
+85
+00:04:00,320 --> 00:04:02,700
+within our Google Colab.
+
+86
+00:04:02,700 --> 00:04:05,210
+So it makes it a lot easier
+than having to troubleshoot
+
+87
+00:04:05,210 --> 00:04:06,810
+the connection to the server.
+
+88
+00:04:06,810 --> 00:04:09,290
+But it's the same thing.
+
+89
+00:04:09,290 --> 00:04:11,120
+The only thing that
+would change is
+
+90
+00:04:11,120 --> 00:04:13,440
+you would just change
+the way that you connect.
+
+91
+00:04:13,440 --> 00:04:16,410
+Instead of using
+this connection,
+
+92
+00:04:16,410 --> 00:04:18,800
+you'd say, I'm actually
+connecting to the Stairway
+
+93
+00:04:18,800 --> 00:04:20,790
+server and place your
+credentials here.
+
+94
+00:04:20,790 --> 00:04:22,560
+So it's the same thing.
+
+95
+00:04:22,560 --> 00:04:25,610
+We're still running the same
+types of queries, all of that.
+
+96
+00:04:25,610 --> 00:04:27,750
+We're just doing it
+through a database file.
+
+97
+00:04:27,750 --> 00:04:30,890
+So I'm going to come over here
+to this folder on these files,
+
+98
+00:04:30,890 --> 00:04:35,630
+and I'm going to
+upload as well as you
+
+99
+00:04:35,630 --> 00:04:39,560
+upload the Overland
+SQLite file so that I
+
+100
+00:04:39,560 --> 00:04:41,340
+can access this database.
+
+101
+00:04:41,340 --> 00:04:43,440
+It's going to sit
+over here in my files.
+
+102
+00:04:43,440 --> 00:04:46,080
+So you'll notice that will
+get uploaded, and here it is.
+
+103
+00:04:46,080 --> 00:04:48,020
+Sometimes it does time
+out, so you may need
+
+104
+00:04:48,020 --> 00:04:51,900
+to re upload the database file.
+
+105
+00:04:51,900 --> 00:04:52,720
+All right.
+
+106
+00:04:52,720 --> 00:04:54,260
+So we are going to--
+
+107
+00:04:57,020 --> 00:04:59,050
+here in the Overland
+database, we're
+
+108
+00:04:59,050 --> 00:05:02,580
+going to return Troy Jacobs
+as record ID, first name,
+
+109
+00:05:02,580 --> 00:05:04,320
+last name, age, and ski level.
+
+110
+00:05:04,320 --> 00:05:08,310
+Troy's employee ID is 12324.
+
+111
+00:05:08,310 --> 00:05:09,570
+So let's go ahead and do this.
+
+112
+00:05:09,570 --> 00:05:12,770
+I'm going to first capture
+this data, run this query
+
+113
+00:05:12,770 --> 00:05:14,490
+to return Troy's information.
+
+114
+00:05:14,490 --> 00:05:17,240
+So I'm going to
+import this library.
+
+115
+00:05:17,240 --> 00:05:20,600
+And then I'm going to
+just run that, make sure
+
+116
+00:05:20,600 --> 00:05:21,750
+it runs just fine.
+
+117
+00:05:21,750 --> 00:05:22,500
+That's great.
+
+118
+00:05:22,500 --> 00:05:24,410
+Then what I need to do next--
+we've already talked about
+
+119
+00:05:24,410 --> 00:05:24,910
+this--
+
+120
+00:05:24,910 --> 00:05:26,540
+I need to create a cursor.
+
+121
+00:05:26,540 --> 00:05:28,980
+And a cursor utilizes--
+
+122
+00:05:28,980 --> 00:05:32,420
+this is similar to what we're
+talking about as far as this
+
+123
+00:05:32,420 --> 00:05:34,670
+is a part of the SQLite3.
+
+124
+00:05:34,670 --> 00:05:37,520
+The cursor is going
+to be named cursor,
+
+125
+00:05:37,520 --> 00:05:41,300
+and basically this is what goes
+and runs MySQL queries for me
+
+126
+00:05:41,300 --> 00:05:42,720
+against the database.
+
+127
+00:05:42,720 --> 00:05:45,200
+Once I have that cursor
+created, then I'm
+
+128
+00:05:45,200 --> 00:05:47,390
+going to say, cursor
+to execute and I
+
+129
+00:05:47,390 --> 00:05:50,300
+want to execute a
+SELECT statement that
+
+130
+00:05:50,300 --> 00:05:52,880
+shows me the record ID.
+
+131
+00:05:52,880 --> 00:06:02,910
+So SELECT req ID, employee first
+name employee last name, age,
+
+132
+00:06:02,910 --> 00:06:14,080
+and ski level from employee,
+where, and I want to say,
+
+133
+00:06:14,080 --> 00:06:16,090
+where Troy's--
+
+134
+00:06:16,090 --> 00:06:18,470
+so the employee ID is 12324.
+
+135
+00:06:18,470 --> 00:06:18,970
+4.
+
+136
+00:06:18,970 --> 00:06:20,730
+So I'm going to copy that down.
+
+137
+00:06:20,730 --> 00:06:27,850
+I'll say where req
+ID is equal to 12324.
+
+138
+00:06:27,850 --> 00:06:31,140
+Now, if I come over here to
+our Overland ERD and data
+
+139
+00:06:31,140 --> 00:06:34,058
+dictionary, as a reminder,
+if you're still like,
+
+140
+00:06:34,058 --> 00:06:36,600
+oh, I can't remember what the
+field names are in the employee
+
+141
+00:06:36,600 --> 00:06:39,870
+table, look here, the record
+ID is the primary key,
+
+142
+00:06:39,870 --> 00:06:43,913
+employee first name, last
+name, age, and ski level.
+
+143
+00:06:43,913 --> 00:06:45,455
+So that's what I'm
+going to run here.
+
+144
+00:06:49,230 --> 00:06:54,450
+Once I run this
+SQL query, then I
+
+145
+00:06:54,450 --> 00:06:58,930
+want to grab all of those
+records returned by that cursor.
+
+146
+00:06:58,930 --> 00:07:01,440
+I'm going to fetch
+all those records that
+
+147
+00:07:01,440 --> 00:07:05,860
+are returned by that cursor
+into a list called results.
+
+148
+00:07:05,860 --> 00:07:09,630
+I'll say results
+equals cursor.fetchall.
+
+149
+00:07:09,630 --> 00:07:19,070
+So I'm going to capture
+all the records returned
+
+150
+00:07:19,070 --> 00:07:22,682
+by the SQL query.
+
+151
+00:07:22,682 --> 00:07:29,580
+And now I need to say for
+Y in results, print Y.
+
+152
+00:07:29,580 --> 00:07:33,980
+So I loop through every
+one of those records being
+
+153
+00:07:33,980 --> 00:07:37,350
+returned to me and output each
+of them onto their own line.
+
+154
+00:07:37,350 --> 00:07:39,500
+So I'll see here that I'm
+only having one record
+
+155
+00:07:39,500 --> 00:07:43,320
+output because I said req
+ID must be equal to 12324.
+
+156
+00:07:43,320 --> 00:07:47,040
+And now I have Troy's
+information returning to me.
+
+157
+00:07:47,040 --> 00:07:47,730
+So perfect.
+
+158
+00:07:47,730 --> 00:07:49,560
+So I returned all
+that information.
+
+159
+00:07:49,560 --> 00:07:53,270
+I can see here that, based
+upon my select query,
+
+160
+00:07:53,270 --> 00:07:57,210
+req ID is 12324, employee
+first name is Troy,
+
+161
+00:07:57,210 --> 00:07:59,960
+employee last name
+is Jacob, age is 24,
+
+162
+00:07:59,960 --> 00:08:01,980
+and its ski level is advanced.
+
+163
+00:08:01,980 --> 00:08:04,100
+So now, unfortunately,
+it looks like Troy's age
+
+164
+00:08:04,100 --> 00:08:05,390
+was recorded incorrectly.
+
+165
+00:08:05,390 --> 00:08:06,960
+Troy is actually 33.
+
+166
+00:08:06,960 --> 00:08:08,880
+Update Troy's age accordingly.
+
+167
+00:08:08,880 --> 00:08:12,290
+So now I'm going to say,
+all right, let's, again,
+
+168
+00:08:12,290 --> 00:08:13,080
+use my cursor.
+
+169
+00:08:13,080 --> 00:08:14,821
+I'm going to say cursor.execute.
+
+170
+00:08:22,270 --> 00:08:33,610
+And I'll say, cursor.execute
+update employee set.
+
+171
+00:08:33,610 --> 00:08:37,370
+Right now, I need to
+set the age equal to 33.
+
+172
+00:08:37,370 --> 00:08:39,760
+Don't run this
+because I need to say
+
+173
+00:08:39,760 --> 00:08:48,920
+where the req ID is equal to
+Troy's req ID, which is 12324.
+
+174
+00:08:48,920 --> 00:08:51,100
+So I'm going to go ahead
+and run that query.
+
+175
+00:08:51,100 --> 00:08:54,650
+Then after I run that query,
+I need to do something
+
+176
+00:08:54,650 --> 00:08:56,340
+that we call a commit.
+
+177
+00:08:56,340 --> 00:08:57,950
+And I need to say--
+
+178
+00:08:57,950 --> 00:09:03,380
+I need to say,
+con.commit, which commits
+
+179
+00:09:03,380 --> 00:09:07,370
+the changes to the database.
+
+180
+00:09:07,370 --> 00:09:10,520
+If you don't run that
+con.commit, then--
+
+181
+00:09:10,520 --> 00:09:12,330
+it's also curser.commit
+will work.
+
+182
+00:09:12,330 --> 00:09:15,630
+But I want to commit all
+the changes to the database.
+
+183
+00:09:15,630 --> 00:09:18,720
+So if you don't run that, then
+the changes are only temporary.
+
+184
+00:09:18,720 --> 00:09:21,170
+So I must commit the changes
+to the database, which
+
+185
+00:09:21,170 --> 00:09:23,420
+is kind of a nice
+failsafe that if you
+
+186
+00:09:23,420 --> 00:09:29,060
+forget to run that commit, that
+it's not actually persisted
+
+187
+00:09:29,060 --> 00:09:30,240
+to the database.
+
+188
+00:09:30,240 --> 00:09:32,450
+So it will show up as
+though it did change
+
+189
+00:09:32,450 --> 00:09:36,230
+for the duration of the program,
+but it doesn't actually--
+
+190
+00:09:36,230 --> 00:09:39,320
+it doesn't actually do a
+final change to the database
+
+191
+00:09:39,320 --> 00:09:41,430
+until you say con.commit.
+
+192
+00:09:41,430 --> 00:09:43,320
+So I want to change that.
+
+193
+00:09:43,320 --> 00:09:46,130
+And then I'm going to do
+the same thing I did up here
+
+194
+00:09:46,130 --> 00:09:51,230
+and write this same
+query down here below.
+
+195
+00:09:51,230 --> 00:09:54,270
+The only thing I'm going to
+change is that instead of--
+
+196
+00:09:54,270 --> 00:10:01,090
+so this is basically checking
+that the change went through.
+
+197
+00:10:01,090 --> 00:10:05,300
+I am going to instead of saying
+results SQL cursor.fetchall,
+
+198
+00:10:05,300 --> 00:10:11,000
+maybe I'll say, output
+results or update results just
+
+199
+00:10:11,000 --> 00:10:14,010
+to make sure that I'm
+not confusing myself.
+
+200
+00:10:14,010 --> 00:10:16,430
+It would have
+worked just to have
+
+201
+00:10:16,430 --> 00:10:19,550
+results replaced by the update.
+
+202
+00:10:19,550 --> 00:10:21,150
+But I don't want to do that.
+
+203
+00:10:21,150 --> 00:10:23,990
+I like to have different
+variable names.
+
+204
+00:10:23,990 --> 00:10:26,960
+So now let's go
+ahead and run this.
+
+205
+00:10:26,960 --> 00:10:31,700
+I'm updating that record,
+then I'm rerunning the query
+
+206
+00:10:31,700 --> 00:10:35,090
+that I did up above just to make
+sure that the changes actually
+
+207
+00:10:35,090 --> 00:10:35,820
+went through.
+
+208
+00:10:35,820 --> 00:10:37,410
+So I'll go ahead and run this.
+
+209
+00:10:37,410 --> 00:10:40,700
+And you'll notice that in my
+second print statement, which
+
+210
+00:10:40,700 --> 00:10:44,820
+is my update results, that
+Troy Jacobs age is now 33.
+
+211
+00:10:44,820 --> 00:10:47,690
+So I have written an
+SQL query to check
+
+212
+00:10:47,690 --> 00:10:51,230
+what is their current
+age, updated their age,
+
+213
+00:10:51,230 --> 00:10:53,970
+and then checked that
+the update went through.
+
+214
+00:10:53,970 --> 00:10:55,260
+So pretty cool.
+
+215
+00:10:55,260 --> 00:10:57,900
+That is program number 1 here.
+
+216
+00:10:57,900 --> 00:10:59,858
+Now on down here
+to program 2, we're
+
+217
+00:10:59,858 --> 00:11:02,150
+going to add a new winter
+product to the winter product
+
+218
+00:11:02,150 --> 00:11:02,667
+table.
+
+219
+00:11:02,667 --> 00:11:04,500
+See the below information
+about the product.
+
+220
+00:11:04,500 --> 00:11:08,310
+After you add the product, prove
+that you added the product.
+
+221
+00:11:08,310 --> 00:11:10,090
+So let's go ahead and do this.
+
+222
+00:11:10,090 --> 00:11:15,070
+So again, I'm going to
+copy down this code.
+
+223
+00:11:15,070 --> 00:11:18,250
+You're in program 2.
+
+224
+00:11:18,250 --> 00:11:22,510
+And I will say, all right,
+let's run my cursor.execute
+
+225
+00:11:22,510 --> 00:11:25,310
+and I want to add
+this new product.
+
+226
+00:11:25,310 --> 00:11:28,430
+So I'm adding this into
+the winter product table.
+
+227
+00:11:28,430 --> 00:11:31,900
+So if I wanted to, I can pull
+up my Overland ERD and data
+
+228
+00:11:31,900 --> 00:11:36,020
+dictionary and see here that the
+prod ID, prod name, category,
+
+229
+00:11:36,020 --> 00:11:38,470
+price, peak price, quantity,
+and description are all part
+
+230
+00:11:38,470 --> 00:11:40,188
+of my winter product table.
+
+231
+00:11:40,188 --> 00:11:41,980
+The other thing that
+I'm going to check for
+
+232
+00:11:41,980 --> 00:11:45,820
+is down here in
+my data dictionary
+
+233
+00:11:45,820 --> 00:11:48,460
+that I can see here that
+this primary key is not
+
+234
+00:11:48,460 --> 00:11:52,820
+auto incrementing where
+this product ID is.
+
+235
+00:11:52,820 --> 00:11:56,260
+So because it's not
+auto incrementing,
+
+236
+00:11:56,260 --> 00:12:00,040
+I need to tell it exactly
+what primary key to assign
+
+237
+00:12:00,040 --> 00:12:03,050
+to this new product.
+
+238
+00:12:03,050 --> 00:12:05,800
+Where in other fields
+or when other tables,
+
+239
+00:12:05,800 --> 00:12:08,920
+you can just ignore that
+primary key in your INSERT INTO
+
+240
+00:12:08,920 --> 00:12:12,960
+statement and it will auto
+generate the primary key.
+
+241
+00:12:12,960 --> 00:12:14,350
+So let's go ahead and do this.
+
+242
+00:12:14,350 --> 00:12:16,380
+I'm going to say
+cursor.execute, and I'll
+
+243
+00:12:16,380 --> 00:12:23,360
+say insert into winter prod.
+
+244
+00:12:23,360 --> 00:12:26,760
+And I want to insert
+the fields, again,
+
+245
+00:12:26,760 --> 00:12:32,130
+if we take a look back
+at our PowerPoint slide,
+
+246
+00:12:32,130 --> 00:12:35,090
+I say insert into
+the winter prod,
+
+247
+00:12:35,090 --> 00:12:37,160
+and then I list out
+the different field
+
+248
+00:12:37,160 --> 00:12:40,550
+names which I can capture from
+that Overland data dictionary.
+
+249
+00:12:40,550 --> 00:12:46,700
+I'm going to say prod ID,
+prod name, category, price,
+
+250
+00:12:46,700 --> 00:12:52,664
+peak price, quantity,
+description.
+
+251
+00:12:55,530 --> 00:12:58,360
+And then after that, after
+I place all those fields,
+
+252
+00:12:58,360 --> 00:13:11,680
+I'll say values I want to add in
+R are lodge 5 as the product ID.
+
+253
+00:13:11,680 --> 00:13:14,580
+So that's prod ID
+is the first field
+
+254
+00:13:14,580 --> 00:13:17,490
+I listed, so it'll be the
+first value that I listed.
+
+255
+00:13:17,490 --> 00:13:25,120
+Then the prod name,
+which is lodging 5.
+
+256
+00:13:25,120 --> 00:13:27,880
+You notice that I put it within
+the single quotation marks
+
+257
+00:13:27,880 --> 00:13:32,830
+because it's qualitative data
+or string data, if you will.
+
+258
+00:13:32,830 --> 00:13:35,230
+Then, the next
+thing that I'm going
+
+259
+00:13:35,230 --> 00:13:39,250
+to add in is a category,
+which is my third value over
+
+260
+00:13:39,250 --> 00:13:40,842
+is lodging.
+
+261
+00:13:44,590 --> 00:13:46,970
+Then the next thing
+that I'm going to add in
+
+262
+00:13:46,970 --> 00:13:54,420
+is going to be my price, which
+is 300 peak price, which is 520;
+
+263
+00:13:54,420 --> 00:13:59,760
+the quantity, which is 30;
+and then the exclusive--
+
+264
+00:13:59,760 --> 00:14:04,060
+and again, within quotation
+marks, exclusive yurt lodging.
+
+265
+00:14:04,060 --> 00:14:06,510
+Now we have to use these
+quotation marks because
+
+266
+00:14:06,510 --> 00:14:12,270
+as a reminder in SQL, you must
+include qualitative or string
+
+267
+00:14:12,270 --> 00:14:14,060
+data within those
+single quotation marks.
+
+268
+00:14:14,060 --> 00:14:18,180
+So now I'm going to go
+ahead and have my closing
+
+269
+00:14:18,180 --> 00:14:21,000
+parentheses of this values.
+
+270
+00:14:21,000 --> 00:14:24,460
+So I have to have that closing
+parentheses of my values.
+
+271
+00:14:24,460 --> 00:14:32,080
+Then I have the semicolon, which
+denotes the end of the query.
+
+272
+00:14:32,080 --> 00:14:37,770
+And then I have that my query
+ends with that double quotation
+
+273
+00:14:37,770 --> 00:14:38,270
+mark.
+
+274
+00:14:38,270 --> 00:14:41,830
+So I started with a
+opening parentheses,
+
+275
+00:14:41,830 --> 00:14:46,070
+include the whole query
+within double quotation marks,
+
+276
+00:14:46,070 --> 00:14:49,220
+and then I make sure that
+any parentheses I begin,
+
+277
+00:14:49,220 --> 00:14:52,180
+I end/ and then I have
+that beginning and ending
+
+278
+00:14:52,180 --> 00:14:53,480
+parentheses.
+
+279
+00:14:53,480 --> 00:14:54,320
+Perfect.
+
+280
+00:14:54,320 --> 00:14:56,980
+Now what I want to do
+is I want to just verify
+
+281
+00:14:56,980 --> 00:15:01,980
+that the new product was added.
+
+282
+00:15:01,980 --> 00:15:06,620
+So I'll say cursor.execute,
+let's just say,
+
+283
+00:15:06,620 --> 00:15:09,943
+select star from winter prod.
+
+284
+00:15:13,050 --> 00:15:16,220
+Then what's going to
+bring back to me is--
+
+285
+00:15:16,220 --> 00:15:23,930
+I'll say query results
+equal to cursor.fetchall.
+
+286
+00:15:23,930 --> 00:15:27,350
+And then I will say for--
+
+287
+00:15:27,350 --> 00:15:34,080
+it doesn't matter-- for a
+in query results, print a.
+
+288
+00:15:34,080 --> 00:15:39,190
+So now once I run
+this, I can see here
+
+289
+00:15:39,190 --> 00:15:42,500
+that what is output to
+me is my query results
+
+290
+00:15:42,500 --> 00:15:46,500
+and that Lodge 5 is now a winter
+product that did not previously
+
+291
+00:15:46,500 --> 00:15:47,000
+exist.
+
+292
+00:15:47,000 --> 00:15:49,360
+But once I run my SELECT
+star from winter product,
+
+293
+00:15:49,360 --> 00:15:53,020
+after my Insert
+into has ran, then I
+
+294
+00:15:53,020 --> 00:15:56,360
+can, again, add that lodge five.
+
+295
+00:15:56,360 --> 00:15:58,450
+Now I'm going to do
+best practice here.
+
+296
+00:15:58,450 --> 00:16:00,200
+We're never generally
+going to do updates,
+
+297
+00:16:00,200 --> 00:16:02,492
+but I want to commit all
+these changes to the database.
+
+298
+00:16:02,492 --> 00:16:04,180
+So I'm going to say, con.commit.
+
+299
+00:16:07,070 --> 00:16:09,900
+And I am actually--
+hold up here.
+
+300
+00:16:09,900 --> 00:16:15,290
+Don't run that because if I run
+this whole program again, then
+
+301
+00:16:15,290 --> 00:16:19,740
+it's going to insert that
+new record [LAUGHS] again.
+
+302
+00:16:19,740 --> 00:16:22,910
+So I'm going to do a hashtag
+and comment out that insert
+
+303
+00:16:22,910 --> 00:16:24,992
+into cursor.execute.
+
+304
+00:16:24,992 --> 00:16:26,450
+And the reason I'm
+going to do that
+
+305
+00:16:26,450 --> 00:16:29,990
+is because it will add in
+another record of insert
+
+306
+00:16:29,990 --> 00:16:31,410
+into winter prod.
+
+307
+00:16:31,410 --> 00:16:33,900
+So I'm going to go
+ahead and run this.
+
+308
+00:16:33,900 --> 00:16:36,043
+And we can see here that--
+
+309
+00:16:38,626 --> 00:16:40,440
+Oh, that's not--
+it did not commit.
+
+310
+00:16:40,440 --> 00:16:41,070
+Hold on.
+
+311
+00:16:41,070 --> 00:16:41,930
+We're good.
+
+312
+00:16:41,930 --> 00:16:46,130
+Just rerun the whole program,
+and there we have it.
+
+313
+00:16:46,130 --> 00:16:48,940
+So once I have said
+con.commit now,
+
+314
+00:16:48,940 --> 00:16:51,290
+it's going to be
+persisted to the database.
+
+315
+00:16:51,290 --> 00:16:53,510
+So we actually need
+to comment it out
+
+316
+00:16:53,510 --> 00:16:55,780
+the timed out so
+it didn't actually
+
+317
+00:16:55,780 --> 00:16:57,200
+commit it to the database.
+
+318
+00:16:57,200 --> 00:17:00,490
+So when I reran it,
+the con.commit you'll
+
+319
+00:17:00,490 --> 00:17:05,349
+see here that now it's added
+that new record into my winter
+
+320
+00:17:05,349 --> 00:17:06,319
+product table.
+
+321
+00:17:06,319 --> 00:17:13,450
+So make sure that we commit
+changes to the database.
+
+322
+00:17:13,450 --> 00:17:20,089
+And then we're going to check
+that the changes happened.
+
+323
+00:17:20,089 --> 00:17:20,940
+Awesome.
+
+324
+00:17:24,569 --> 00:17:28,270
+So, as a reminder, because
+I ran this cursor.execute,
+
+325
+00:17:28,270 --> 00:17:34,150
+I was like, oh, maybe it's
+going to try and re-enter
+
+326
+00:17:34,150 --> 00:17:37,920
+the Lodge 5 field or Lodge
+5 record into my winter prod
+
+327
+00:17:37,920 --> 00:17:38,650
+again.
+
+328
+00:17:38,650 --> 00:17:41,430
+Actually what it
+did is it did not
+
+329
+00:17:41,430 --> 00:17:44,560
+do that because I did not commit
+the changes to the database.
+
+330
+00:17:44,560 --> 00:17:47,380
+So make sure you commit those
+changes to the database,
+
+331
+00:17:47,380 --> 00:17:50,100
+and then we're going to
+make the changes happened.
+
+332
+00:17:50,100 --> 00:17:53,710
+You'll notice that when we first
+ran this without the con.commit,
+
+333
+00:17:53,710 --> 00:17:55,920
+it looked like the
+changes had happened.
+
+334
+00:17:55,920 --> 00:17:59,670
+But when we reran it,
+it actually hadn't fully
+
+335
+00:17:59,670 --> 00:18:00,880
+committed to the database.
+
+336
+00:18:00,880 --> 00:18:04,680
+So that's the confusing
+part, is that if you just
+
+337
+00:18:04,680 --> 00:18:08,910
+run the insert into, it's
+going and immediately check
+
+338
+00:18:08,910 --> 00:18:12,190
+that was added to the database.
+
+339
+00:18:12,190 --> 00:18:15,150
+It's going to look like for
+the duration of that program,
+
+340
+00:18:15,150 --> 00:18:17,100
+that it was added into--
+
+341
+00:18:17,100 --> 00:18:20,290
+that runtime, if you will, that
+it was added into the database.
+
+342
+00:18:20,290 --> 00:18:22,410
+But when we reran
+it, it actually
+
+343
+00:18:22,410 --> 00:18:24,710
+had not been fully
+added to the database.
+
+344
+00:18:24,710 --> 00:18:28,870
+So just make sure, listen,
+here is at that con.commit
+
+345
+00:18:28,870 --> 00:18:32,620
+so that it is that
+change is persisted fully
+
+346
+00:18:32,620 --> 00:18:33,920
+into the database.
+
+347
+00:18:33,920 --> 00:18:36,710
+So thank you so much for
+working through this with me.
+
+348
+00:18:36,710 --> 00:18:38,773
+I hope that this
+was helpful to you.
+
+349
+00:18:38,773 --> 00:18:40,190
+Thanks for being
+an awesome class.
+
+350
+00:18:40,190 --> 00:18:41,820
+Take care.

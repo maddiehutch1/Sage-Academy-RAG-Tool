@@ -1,0 +1,699 @@
+142
+00:00:00,280 --> 00:00:04,040
+Hi Data2100 students, now
+that you've learned more about
+
+143
+00:00:04,040 --> 00:00:08,580
+aggregate functions and you're
+familiar with max, min, average,
+
+144
+00:00:08,580 --> 00:00:13,200
+sum, and count, I want to introduce
+you to the group by clause.
+
+145
+00:00:13,200 --> 00:00:16,400
+So again, we're using structured
+query language and we're introducing
+
+146
+00:00:16,400 --> 00:00:20,620
+another clause, like select
+and from, but it's called the
+
+147
+00:00:20,620 --> 00:00:24,340
+group by clause. So let's go ahead
+and take a look at this clause.
+
+148
+00:00:24,900 --> 00:00:28,300
+So my question with
+group by clause is how
+
+149
+00:00:28,300 --> 00:00:31,000
+do we make aggregate
+functions more useful?
+
+150
+00:00:31,000 --> 00:00:35,320
+So if I was to say, return
+the number of overland guests,
+
+151
+00:00:35,320 --> 00:00:38,600
+you could say, all right,
+I can count the guest IDs.
+
+152
+00:00:38,600 --> 00:00:43,540
+So I would say, select count
+guest ID from guest table. But now
+
+153
+00:00:43,540 --> 00:00:47,620
+I want you to show me the number
+of guests per education level.
+
+154
+00:00:47,620 --> 00:00:51,340
+Hmm, okay, so let's think about
+this. So I'm gonna come over here.
+
+155
+00:00:51,820 --> 00:00:54,620
+I'm going to grab this information.
+
+156
+00:00:55,960 --> 00:00:59,160
+so i'm going to actually those
+are my examples i have downloaded
+
+157
+00:00:59,160 --> 00:01:01,700
+for you so i'm going to create a
+new query sheet so let's answer
+
+158
+00:01:01,700 --> 00:01:05,040
+the question that we were just
+given so the number of guests okay
+
+159
+00:01:11,650 --> 00:01:15,370
+number of guests per education
+level well according to my overland
+
+160
+00:01:15,370 --> 00:01:19,210
+erd and data dictionary i know
+that we are going to be using
+
+161
+00:01:19,210 --> 00:01:23,150
+that guest table right so here's
+my guest table and i'm going to
+
+162
+00:01:23,150 --> 00:01:27,450
+count the number of guests in
+my guest table so let's go ahead
+
+163
+00:01:27,450 --> 00:01:31,730
+and just do a quick select count
+I'm going to count the guest ID
+
+164
+00:01:32,780 --> 00:01:37,590
+and I'll say from guest. Okay,
+now hopefully you're recognizing
+
+165
+00:01:37,590 --> 00:01:41,930
+what is going to run here. This
+is going to count the number of
+
+166
+00:01:41,930 --> 00:01:46,980
+records, right? But it's going to
+give me a null as the column name
+
+167
+00:01:46,980 --> 00:01:50,130
+as I haven't given it an alias.
+So instead of, so I'm going to
+
+168
+00:01:50,130 --> 00:01:56,390
+say select count guest ID as,
+and I'll say num of guests. Okay,
+
+169
+00:01:56,590 --> 00:02:01,530
+so select count guest ID as num of
+guests. Now when I run this, I can
+
+170
+00:02:01,530 --> 00:02:06,970
+see here that I have 13,140 guests
+as my total number of guests. But
+
+171
+00:02:06,970 --> 00:02:11,790
+now it wants to say per education
+level. Hmm. Okay, so I have, right
+
+172
+00:02:11,790 --> 00:02:15,410
+now I'm counting all of my records.
+But now what I want to see is number
+
+173
+00:02:15,410 --> 00:02:19,950
+of guests per education level. So
+if I look back at my Overland ERD
+
+174
+00:02:19,950 --> 00:02:23,870
+and Data Dictionary, I can see
+here that I have this edu field. So
+
+175
+00:02:23,870 --> 00:02:26,870
+that's what I'm going to use here
+in my select clause. So we can say
+
+176
+00:02:26,870 --> 00:02:33,450
+select edu, count guest id is number
+of guests. Now if I am to run this,
+
+177
+00:02:33,970 --> 00:02:39,630
+what we'll notice is column guest
+id is invalid in the select list
+
+178
+00:02:39,630 --> 00:02:43,850
+because it is not contained in
+either an aggregate function or the
+
+179
+00:02:43,850 --> 00:02:48,010
+group by clause. So this error is
+really helpful in understanding
+
+180
+00:02:48,010 --> 00:02:52,230
+what's going on here. So again,
+guest, so it's just saying guest.edu,
+
+181
+00:02:52,230 --> 00:02:57,330
+this means the edu field in the
+guest table is invalid in the select
+
+182
+00:02:57,330 --> 00:02:59,990
+list because it's not contained
+in either an aggregate function or
+
+183
+00:02:59,990 --> 00:03:04,730
+the group by clause. Okay, so when
+I have an aggregated field here,
+
+184
+00:03:04,730 --> 00:03:09,510
+so I'm counting the guest ID,
+and a non-aggregated field, which
+
+185
+00:03:09,510 --> 00:03:13,410
+would be EDU, okay, so when I
+have an aggregated field and a non
+
+186
+00:03:13,410 --> 00:03:19,930
+-aggregated field, then I need, I must
+group by the non-aggregated field,
+
+187
+00:03:19,930 --> 00:03:24,470
+okay? So now when I go ahead and
+run this, I can see here that I
+
+188
+00:03:24,470 --> 00:03:28,750
+have the different education levels
+and their number of guests. So now
+
+189
+00:03:28,750 --> 00:03:32,690
+I can say, hey, I have 209 guests
+who have a high school education
+
+190
+00:03:32,690 --> 00:03:38,150
+level, 3,424 guests that have a
+bachelor's degree education level.
+
+191
+00:03:38,770 --> 00:03:44,670
+So now I am breaking apart, if you
+will, that total number of guests,
+
+192
+00:03:44,670 --> 00:03:50,890
+right, that count, and now I'm breaking
+it apart into groups by education
+
+193
+00:03:50,890 --> 00:03:55,530
+level. So historically, when I
+have just aggregated all the fields
+
+194
+00:03:55,530 --> 00:03:59,950
+together, right, counting to guest
+IDs. I'm just basically taking all the
+
+195
+00:03:59,950 --> 00:04:05,050
+rows and coming up with one value to
+represent, in this case, the number
+
+196
+00:04:05,050 --> 00:04:10,230
+of guests. But now what I'm doing
+is I am grouping that big value into
+
+197
+00:04:10,230 --> 00:04:14,310
+smaller groups, right? I'm saying
+group by now education level. So
+
+198
+00:04:14,310 --> 00:04:17,350
+now all that's being returned to me
+here are groups, right? So I have a
+
+199
+00:04:17,350 --> 00:04:23,170
+group of high school education level
+that has 209 guests in that group.
+
+200
+00:04:23,290 --> 00:04:29,230
+Bachelor's degree, 3,424 guests
+in that group. So now what's
+
+201
+00:04:29,230 --> 00:04:32,670
+being returned to me is
+groups, right? And looking at
+
+202
+00:04:32,670 --> 00:04:36,270
+the education level and the
+number of guests. So this helps
+
+203
+00:04:36,270 --> 00:04:40,210
+me make aggregate functions
+significantly more powerful.
+
+204
+00:04:44,070 --> 00:04:47,410
+All right, so let's see where this
+falls into play here, right? So we
+
+205
+00:04:47,410 --> 00:04:51,870
+have select column names from table
+names where conditional expression
+
+206
+00:04:51,870 --> 00:04:56,170
+group by that's my aggregate function
+helper having is conditional for
+
+207
+00:04:56,170 --> 00:05:01,510
+groups and then order by and i sort
+the output okay so this is probably
+
+208
+00:05:01,510 --> 00:05:05,510
+the most difficult portion of our
+sql module again we're just talking
+
+209
+00:05:05,510 --> 00:05:08,330
+about group by here we're going to
+introduce having in just a minute but
+
+210
+00:05:08,330 --> 00:05:12,230
+if there is an aggregated field and
+a non-aggregated field in the select
+
+211
+00:05:12,230 --> 00:05:17,450
+clause always group by the non
+-aggregated field okay i would write
+
+212
+00:05:17,450 --> 00:05:22,430
+that down So if there's an aggregated
+field like count guest ID and a non
+
+213
+00:05:22,430 --> 00:05:28,630
+-aggregated field, meaning there's no
+count, sum, max, min that is being
+
+214
+00:05:28,630 --> 00:05:33,110
+performed on like this education
+level, right? This is not being
+
+215
+00:05:33,110 --> 00:05:35,750
+aggregated. It doesn't have a count.
+It doesn't have a max. It doesn't have
+
+216
+00:05:35,750 --> 00:05:41,290
+a min. We're just selecting that field
+on its own. So it's non-aggregated
+
+217
+00:05:41,290 --> 00:05:45,830
+in the select clause. We always
+group by the non-aggregated field.
+
+218
+00:05:45,830 --> 00:05:47,050
+Okay, perfect.
+
+219
+00:05:47,790 --> 00:05:51,796
+All right. So I like to think
+of this in terms of Starbursts.
+
+220
+00:05:51,796 --> 00:05:53,677
+Why do I like to think
+about this in terms of
+
+221
+00:05:53,677 --> 00:05:57,117
+Starbursts? Well, I love
+Starbursts. Starbursts over like
+
+222
+00:05:57,117 --> 00:06:00,597
+melting a Starburst over
+a campfire. Oh, so good.
+
+223
+00:06:00,817 --> 00:06:04,217
+So I really love Starbursts.
+And I created a mini
+
+224
+00:06:04,217 --> 00:06:07,077
+database table. You
+probably guessed it at
+
+225
+00:06:07,077 --> 00:06:09,177
+this point. You're like,
+yeah, Reagan, you would.
+
+226
+00:06:09,617 --> 00:06:13,677
+So here I have a mini database
+table. So I just select Star from
+
+227
+00:06:13,677 --> 00:06:17,317
+Starbursts. You don't have access to
+this. I know it's a very, you know,
+
+228
+00:06:17,317 --> 00:06:21,977
+confidential table here. I'm just
+kidding. But what I did is I created a
+
+229
+00:06:21,977 --> 00:06:26,037
+Starburst table based upon bags of
+Starbursts that I received. So I had,
+
+230
+00:06:26,037 --> 00:06:30,057
+so I went in, I had a bag of
+Starbursts. I pulled one Starburst out,
+
+231
+00:06:30,057 --> 00:06:34,247
+gave it Starburst ID number one and
+labeled it. It was a pink Starburst.
+
+232
+00:06:34,537 --> 00:06:37,477
+Starburst ID number two, it's a
+yellow Starburst, red Starburst,
+
+233
+00:06:37,477 --> 00:06:41,557
+orange Starburst. You get the vibe,
+right? Well, everybody generally,
+
+234
+00:06:41,737 --> 00:06:47,577
+but most people have a favorite
+Starburst that they enjoy. I personally
+
+235
+00:06:47,577 --> 00:06:52,717
+love a pink starburst. Oh, so
+good. So I want to know how many
+
+236
+00:06:54,677 --> 00:06:59,637
+starbursts do I have of
+each color? Okay, that's my
+
+237
+00:06:59,637 --> 00:07:03,177
+foundational question. How many
+starbursts do I have of each
+
+238
+00:07:03,177 --> 00:07:06,557
+color? So let's take a look here.
+So if I just did select star
+
+239
+00:07:06,557 --> 00:07:09,857
+from starburst, I am just
+right showing all my rows, all
+
+240
+00:07:09,857 --> 00:07:14,417
+my columns. So now let's do
+a select count starburst ID.
+
+241
+00:07:17,217 --> 00:07:19,277
+All right. And then
+what I want to do, and
+
+242
+00:07:19,277 --> 00:07:23,117
+I'm going to say as a num of Starburst.
+
+243
+00:07:24,557 --> 00:07:28,137
+Okay. So let's see here.
+So I have a hundred,
+
+244
+00:07:28,137 --> 00:07:30,077
+how convenient. I have
+a hundred Starburst.
+
+245
+00:07:30,637 --> 00:07:34,917
+All right. So what's your favorite
+Starburst color? Is it orange,
+
+246
+00:07:34,917 --> 00:07:37,577
+yellow, red, pink? I know there's
+other varieties, but let's
+
+247
+00:07:37,577 --> 00:07:41,737
+just stay with that. So let's
+see which of which bag, right,
+
+248
+00:07:41,737 --> 00:07:44,297
+so I have a big bag here, I
+pulled out all these Starbursts.
+
+249
+00:07:45,517 --> 00:07:49,357
+Which, what one of you that likes
+pink Starburst, orange Starburst,
+
+250
+00:07:49,357 --> 00:07:52,857
+red Starburst, really wants that
+bag based upon it having more
+
+251
+00:07:52,857 --> 00:07:56,517
+of one color of Starburst. So
+let's take a look here. So I'm now
+
+252
+00:07:56,517 --> 00:08:00,317
+going to select color. Now a little
+pop quiz here, will this run?
+
+253
+00:08:01,397 --> 00:08:04,897
+I hope you said no, Reagan, it
+will not run because you have an
+
+254
+00:08:04,897 --> 00:08:09,437
+aggregated function, or an aggregated
+field and a non-aggregated field.
+
+255
+00:08:09,457 --> 00:08:16,437
+Therefore, we must, we know that
+we must group by the non-aggregated
+
+256
+00:08:16,437 --> 00:08:20,677
+field. Okay. So now I'm going to
+go ahead and run this and I can
+
+257
+00:08:20,677 --> 00:08:24,677
+see here, oh, I have some missing
+data. So I have some null values.
+
+258
+00:08:24,817 --> 00:08:29,817
+So, um, this is just saying that
+this is empty. Null means empty.
+
+259
+00:08:29,817 --> 00:08:32,897
+Okay. That I, like if you come to
+Utah State University and you're like,
+
+260
+00:08:32,897 --> 00:08:36,597
+I don't have a major, um, they may
+put you as undeclared, but they
+
+261
+00:08:36,597 --> 00:08:40,197
+may just leave it null in terms of
+it's just empty. It doesn't mean
+
+262
+00:08:40,197 --> 00:08:43,897
+it's zero. It doesn't mean it's
+not applicable. It's just empty. So
+
+263
+00:08:43,897 --> 00:08:47,897
+I'm missing a few different, a few
+of them, a few of their labels.
+
+264
+00:08:48,857 --> 00:08:52,977
+But if I look here and I could
+see here that I have, um,
+
+265
+00:08:53,517 --> 00:08:57,737
+two nulls. I also have a 26 orange,
+
+266
+00:08:58,157 --> 00:09:04,077
+uh, 22 pink, 33 red and 17 yellow.
+So if you like red Starburst,
+
+267
+00:09:04,077 --> 00:09:07,877
+this is probably a good bag of
+Starburst for you, right? My yellow
+
+268
+00:09:07,877 --> 00:09:11,317
+is not going to be too happy
+about that. So just keep that. I
+
+269
+00:09:11,317 --> 00:09:16,237
+don't know why Starburst helped
+me remember to group by, but if
+
+270
+00:09:16,237 --> 00:09:19,457
+you have an aggregated field and
+a non-aggregated field, make sure
+
+271
+00:09:19,457 --> 00:09:24,597
+you group by the non-aggregated
+field, okay? So I think about
+
+272
+00:09:24,597 --> 00:09:28,857
+that in terms of Starburst. So here
+we have our Starburst laid out.
+
+273
+00:09:28,957 --> 00:09:32,817
+Again, if you have an aggregated
+field and a non-aggregated field
+
+274
+00:09:32,817 --> 00:09:36,697
+in the select clause, group by
+the non-aggregated field. Okay.
+
+275
+00:09:36,997 --> 00:09:39,877
+So another pop quiz, will this run?
+
+276
+00:09:40,417 --> 00:09:46,197
+Looking for average age and college
+level in the employee table.
+
+277
+00:09:46,537 --> 00:09:47,997
+Will this run?
+
+278
+00:09:48,837 --> 00:09:54,397
+No, it will not run. I need to
+group by age here. So after my from
+
+279
+00:09:54,397 --> 00:09:58,897
+clause, I may have a where clause,
+I may not but after my from clause
+
+280
+00:09:58,897 --> 00:10:04,317
+I would say group by college to
+make this run okay so that's all I
+
+281
+00:10:04,317 --> 00:10:08,037
+have for you on the group by we're
+going to jump into having which is
+
+282
+00:10:08,037 --> 00:10:11,817
+really helpful as well in dealing
+with our groups take care everybody
+

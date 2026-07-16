@@ -1,0 +1,2567 @@
+1
+00:00:00,000 --> 00:00:01,500
+INSTRUCTOR: Hey, everyone.
+
+2
+00:00:01,500 --> 00:00:02,400
+Welcome back.
+
+3
+00:00:02,400 --> 00:00:05,270
+So in today's video, we're
+going to be talking about a bit
+
+4
+00:00:05,270 --> 00:00:08,180
+of continuing on our
+discussion about building out
+
+5
+00:00:08,180 --> 00:00:09,630
+a web application.
+
+6
+00:00:09,630 --> 00:00:13,020
+Now to clarify again this
+video and even to some extent,
+
+7
+00:00:13,020 --> 00:00:17,450
+pieces of the last video are not
+necessarily one of those topics
+
+8
+00:00:17,450 --> 00:00:21,140
+where this is broadly applicable
+across all aspects of cloud
+
+9
+00:00:21,140 --> 00:00:23,600
+computing, so much
+as they're giving us
+
+10
+00:00:23,600 --> 00:00:26,180
+some tools to
+enable us to explore
+
+11
+00:00:26,180 --> 00:00:27,660
+an aspect of cloud computing.
+
+12
+00:00:27,660 --> 00:00:29,780
+So, again, the big
+picture here is
+
+13
+00:00:29,780 --> 00:00:33,260
+we want to understand how does
+web development and specifically
+
+14
+00:00:33,260 --> 00:00:35,452
+web deployment
+work in the cloud.
+
+15
+00:00:35,452 --> 00:00:37,160
+How do we really
+leverage these resources
+
+16
+00:00:37,160 --> 00:00:40,530
+to the cloud to do this
+task of web deployment?
+
+17
+00:00:40,530 --> 00:00:43,860
+We're doing that via building
+out our own web application.
+
+18
+00:00:43,860 --> 00:00:46,850
+And specifically, we've chosen
+to use the Flask framework
+
+19
+00:00:46,850 --> 00:00:49,200
+because it's a simple
+enough one to use.
+
+20
+00:00:49,200 --> 00:00:51,800
+It's all Python-based and so
+it allows us to stand languages
+
+21
+00:00:51,800 --> 00:00:52,967
+that we're comfortable with.
+
+22
+00:00:52,967 --> 00:00:54,830
+But I do want to be
+clear here that this
+
+23
+00:00:54,830 --> 00:00:56,850
+is a piece of a much,
+much bigger puzzle.
+
+24
+00:00:56,850 --> 00:01:00,320
+So you could use a better
+statement that piece
+
+25
+00:01:00,320 --> 00:01:02,490
+that we're doing as far
+as the actual deployment,
+
+26
+00:01:02,490 --> 00:01:05,250
+you could use any language
+you wanted to for that.
+
+27
+00:01:05,250 --> 00:01:07,718
+We're again sticking to
+Flask to keep it simple,
+
+28
+00:01:07,718 --> 00:01:10,010
+but I just wanted to provide
+that clarification in case
+
+29
+00:01:10,010 --> 00:01:11,540
+there's any bit of confusion.
+
+30
+00:01:11,540 --> 00:01:13,880
+But either way, we're
+basically picking up
+
+31
+00:01:13,880 --> 00:01:16,490
+from exactly where we left off.
+
+32
+00:01:16,490 --> 00:01:21,110
+Up to this point, we have
+built a very, very simple Flask
+
+33
+00:01:21,110 --> 00:01:22,250
+application.
+
+34
+00:01:22,250 --> 00:01:26,180
+All it does is say Hello,
+World on our page right here.
+
+35
+00:01:26,180 --> 00:01:28,300
+It is hosted via
+an EC2 instance.
+
+36
+00:01:28,300 --> 00:01:31,430
+So you can see my EC2
+instance here running.
+
+37
+00:01:31,430 --> 00:01:35,550
+Remember, I also added in
+my security groups here.
+
+38
+00:01:35,550 --> 00:01:39,890
+I have an inbound
+rule for port 5000
+
+39
+00:01:39,890 --> 00:01:41,820
+to allow traffic from anywhere.
+
+40
+00:01:41,820 --> 00:01:44,380
+So both of these.
+
+41
+00:01:44,380 --> 00:01:46,760
+So double-check that you
+have those two things done.
+
+42
+00:01:46,760 --> 00:01:47,690
+Let me refresh it.
+
+43
+00:01:47,690 --> 00:01:51,880
+You should see it here
+on this page as well.
+
+44
+00:01:51,880 --> 00:01:53,620
+Let me go back to security.
+
+45
+00:01:53,620 --> 00:01:58,240
+So yeah, you should see at
+least this one right here.
+
+46
+00:01:58,240 --> 00:02:00,800
+We won't get into the
+details of IPv4 versus 6,
+
+47
+00:02:00,800 --> 00:02:04,840
+but either way, you
+should see that rule here
+
+48
+00:02:04,840 --> 00:02:08,830
+on your security group page
+for your EC2 instance that's
+
+49
+00:02:08,830 --> 00:02:09,650
+running.
+
+50
+00:02:09,650 --> 00:02:11,770
+And then up to this
+point, all I've
+
+51
+00:02:11,770 --> 00:02:14,450
+done, if I close out of
+this here for a second,
+
+52
+00:02:14,450 --> 00:02:16,522
+clear this out so it's
+a little easier to see.
+
+53
+00:02:16,522 --> 00:02:18,230
+Oh, I guess you don't
+need this one here,
+
+54
+00:02:18,230 --> 00:02:20,080
+so we'll minimize that one.
+
+55
+00:02:20,080 --> 00:02:22,420
+And zoom in a bit.
+
+56
+00:02:22,420 --> 00:02:28,340
+I am in this folder here or
+this directory that has--
+
+57
+00:02:28,340 --> 00:02:32,570
+so if we do ls, all it
+has is an app in there
+
+58
+00:02:32,570 --> 00:02:35,260
+as well as my virtual
+environment that I created.
+
+59
+00:02:35,260 --> 00:02:37,450
+So if you want to go
+back through those steps,
+
+60
+00:02:37,450 --> 00:02:39,658
+again, in the previous video,
+we have all the details
+
+61
+00:02:39,658 --> 00:02:41,060
+on exactly how to do that piece.
+
+62
+00:02:41,060 --> 00:02:42,935
+This is just saying
+let's pick up from there.
+
+63
+00:02:42,935 --> 00:02:44,870
+We have a Flask
+application live,
+
+64
+00:02:44,870 --> 00:02:46,830
+app.py is what it's called.
+
+65
+00:02:46,830 --> 00:02:48,570
+I'm in my virtual environment.
+
+66
+00:02:48,570 --> 00:02:51,848
+This again is not super
+critical in how we're currently
+
+67
+00:02:51,848 --> 00:02:54,390
+working on this since we just
+have one thing on this machine.
+
+68
+00:02:54,390 --> 00:02:55,970
+But down the line,
+we'll want to be
+
+69
+00:02:55,970 --> 00:02:58,220
+able to either run
+multiple projects
+
+70
+00:02:58,220 --> 00:03:00,573
+or at least be able
+to extract what
+
+71
+00:03:00,573 --> 00:03:01,740
+libraries we're doing there.
+
+72
+00:03:01,740 --> 00:03:03,450
+So irrelevant right now.
+
+73
+00:03:03,450 --> 00:03:08,040
+Just recognize right now that
+I have an app.py file in here.
+
+74
+00:03:08,040 --> 00:03:11,540
+If we look into
+this app.py file,
+
+75
+00:03:11,540 --> 00:03:15,890
+all it says is from
+flask import Flask app
+
+76
+00:03:15,890 --> 00:03:19,800
+= Flask name @app.route.
+
+77
+00:03:19,800 --> 00:03:22,670
+This right here,
+the forward slash.
+
+78
+00:03:22,670 --> 00:03:25,460
+And then we're defining this
+function called hello_world.
+
+79
+00:03:25,460 --> 00:03:29,810
+All it does is return this
+HTML string of Hello, World!
+
+80
+00:03:29,810 --> 00:03:32,960
+wrapped in this tag of a header.
+
+81
+00:03:32,960 --> 00:03:35,810
+So that's the really
+short explanation
+
+82
+00:03:35,810 --> 00:03:38,400
+of what we've done so far.
+
+83
+00:03:38,400 --> 00:03:39,400
+This is great.
+
+84
+00:03:39,400 --> 00:03:41,550
+This gives us a lot of
+capacity right here.
+
+85
+00:03:41,550 --> 00:03:43,230
+But I will say it
+also leaves something
+
+86
+00:03:43,230 --> 00:03:47,010
+to be desired in the sense
+that our website doesn't really
+
+87
+00:03:47,010 --> 00:03:47,680
+do much.
+
+88
+00:03:47,680 --> 00:03:49,540
+It's very bare bones.
+
+89
+00:03:49,540 --> 00:03:51,450
+And also nothing at this
+point is highlighted
+
+90
+00:03:51,450 --> 00:03:53,950
+why we need to be using Python
+to do this as opposed to just
+
+91
+00:03:53,950 --> 00:03:57,990
+writing a single HTML file that
+we host in many other ways.
+
+92
+00:03:57,990 --> 00:04:00,760
+So to that end, we're going to
+actually in this video-- again,
+
+93
+00:04:00,760 --> 00:04:03,190
+it'll be hopefully a little bit
+shorter than the previous ones,
+
+94
+00:04:03,190 --> 00:04:04,982
+but we're just going
+to focus on how can we
+
+95
+00:04:04,982 --> 00:04:07,410
+expand this and actually
+use the thing that
+
+96
+00:04:07,410 --> 00:04:10,080
+makes this valuable
+of being in Python.
+
+97
+00:04:10,080 --> 00:04:12,340
+So first, I'm going
+back out of this app.
+
+98
+00:04:12,340 --> 00:04:14,338
+So just Control-X,
+back out of this app,
+
+99
+00:04:14,338 --> 00:04:16,380
+and then we're going to
+leverage something that's
+
+100
+00:04:16,380 --> 00:04:17,540
+called templates.
+
+101
+00:04:17,540 --> 00:04:19,320
+So templates do a
+really nice thing
+
+102
+00:04:19,320 --> 00:04:24,210
+of abstracting away all of our
+front-end design, the HTML side
+
+103
+00:04:24,210 --> 00:04:24,820
+of this.
+
+104
+00:04:24,820 --> 00:04:26,640
+It abstracts that
+away into its own file
+
+105
+00:04:26,640 --> 00:04:29,040
+so that we can write
+really long complex files
+
+106
+00:04:29,040 --> 00:04:31,890
+and not have to worry about
+something like this, where
+
+107
+00:04:31,890 --> 00:04:35,010
+we say, OK, well cram
+all of the HTML website
+
+108
+00:04:35,010 --> 00:04:39,550
+into this little page right
+here into this little string.
+
+109
+00:04:39,550 --> 00:04:41,550
+So we want to move this
+out into its own file
+
+110
+00:04:41,550 --> 00:04:45,360
+and then also start to pull in
+some actual Python functions.
+
+111
+00:04:45,360 --> 00:04:48,000
+So first order of
+business is we are going
+
+112
+00:04:48,000 --> 00:04:53,190
+to make directory templates.
+
+113
+00:04:53,190 --> 00:04:54,900
+So you'll see that
+within our folder
+
+114
+00:04:54,900 --> 00:04:58,530
+it just creates a
+directory called templates.
+
+115
+00:04:58,530 --> 00:05:00,870
+And then we'll cd to templates.
+
+116
+00:05:00,870 --> 00:05:02,370
+Hit Enter.
+
+117
+00:05:02,370 --> 00:05:06,280
+And then from here, we're
+going to create a index page.
+
+118
+00:05:06,280 --> 00:05:08,510
+So index being our home
+page in this sense.
+
+119
+00:05:08,510 --> 00:05:10,360
+The same way we had
+an index.html page
+
+120
+00:05:10,360 --> 00:05:13,780
+when we hosted via Apache.
+
+121
+00:05:13,780 --> 00:05:18,400
+So I'll do touch index.html.
+
+122
+00:05:18,400 --> 00:05:23,592
+And again, that'll just create
+a blank HTML file in here.
+
+123
+00:05:23,592 --> 00:05:25,300
+Now, importantly, we
+want to actually put
+
+124
+00:05:25,300 --> 00:05:26,500
+something in this file.
+
+125
+00:05:26,500 --> 00:05:29,405
+So let's open it up.
+
+126
+00:05:29,405 --> 00:05:31,280
+And in here, we're just
+going to for now, put
+
+127
+00:05:31,280 --> 00:05:39,740
+a placeholder of what we had
+before of h1 Hello, World!
+
+128
+00:05:39,740 --> 00:05:40,770
+We'll clarify.
+
+129
+00:05:40,770 --> 00:05:47,390
+This is coming from
+the index.html file.
+
+130
+00:05:47,390 --> 00:05:49,970
+So a really long header.
+
+131
+00:05:49,970 --> 00:05:54,500
+But either way, this is going
+to create our file here.
+
+132
+00:05:54,500 --> 00:05:56,370
+And so Control-X to save it.
+
+133
+00:05:56,370 --> 00:05:57,450
+Yes, Enter.
+
+134
+00:05:57,450 --> 00:05:58,520
+We're saving it.
+
+135
+00:05:58,520 --> 00:06:01,530
+And so now we've got
+that file in there.
+
+136
+00:06:01,530 --> 00:06:04,950
+So we've got our templates
+folder and this templates folder
+
+137
+00:06:04,950 --> 00:06:09,030
+would hold all of our front-end
+code, all of our front-end HTML.
+
+138
+00:06:09,030 --> 00:06:12,540
+And then one
+directory up, so cd..
+
+139
+00:06:12,540 --> 00:06:14,400
+Remember that takes
+us one directory up
+
+140
+00:06:14,400 --> 00:06:16,600
+in our personal
+website directory.
+
+141
+00:06:16,600 --> 00:06:20,010
+We have our app.py
+file and our templates.
+
+142
+00:06:20,010 --> 00:06:21,790
+And again, if yours
+doesn't show this,
+
+143
+00:06:21,790 --> 00:06:24,165
+that's because you haven't
+created a virtual environment.
+
+144
+00:06:24,165 --> 00:06:24,880
+You can do that.
+
+145
+00:06:24,880 --> 00:06:28,030
+We show that again in the
+past video, somewhere up here.
+
+146
+00:06:28,030 --> 00:06:30,730
+I have the code to
+do that, right here.
+
+147
+00:06:30,730 --> 00:06:34,540
+So I said python3 -m venv myenv.
+
+148
+00:06:34,540 --> 00:06:37,870
+Again, not critical for this,
+but just in case you're curious.
+
+149
+00:06:37,870 --> 00:06:40,480
+And then obviously
+activate it, too.
+
+150
+00:06:40,480 --> 00:06:42,700
+In the pycache, this
+gets auto-created
+
+151
+00:06:42,700 --> 00:06:45,970
+as we're executing Python files
+to cache some information.
+
+152
+00:06:45,970 --> 00:06:49,030
+Again, irrelevant for right now.
+
+153
+00:06:49,030 --> 00:06:52,120
+So either way, that's
+our templates file or one
+
+154
+00:06:52,120 --> 00:06:55,330
+of our HTML files in
+our templates folder.
+
+155
+00:06:55,330 --> 00:07:02,530
+Now if we pop over
+into our app.py file,
+
+156
+00:07:02,530 --> 00:07:04,470
+we can make some adjustments.
+
+157
+00:07:04,470 --> 00:07:06,460
+So what we're going
+to do is we're
+
+158
+00:07:06,460 --> 00:07:11,050
+going to say not only
+from flask import Flask,
+
+159
+00:07:11,050 --> 00:07:18,310
+we're also going to say from
+flask import render_template.
+
+160
+00:07:18,310 --> 00:07:20,137
+And render_template,
+what it does
+
+161
+00:07:20,137 --> 00:07:22,220
+is it's a function that
+does exactly what it says,
+
+162
+00:07:22,220 --> 00:07:24,610
+it is going to render
+anything that is coming out
+
+163
+00:07:24,610 --> 00:07:25,840
+of our templates folder.
+
+164
+00:07:25,840 --> 00:07:28,870
+It'll auto-identify that, hey,
+there is a special templates
+
+165
+00:07:28,870 --> 00:07:34,150
+folder, I'm going to use that
+for any of my HTML files.
+
+166
+00:07:34,150 --> 00:07:37,690
+And I'm going to pull that
+in when it's requested
+
+167
+00:07:37,690 --> 00:07:40,600
+to render that template.
+
+168
+00:07:40,600 --> 00:07:44,860
+And then if we come down
+here now, we can change this.
+
+169
+00:07:44,860 --> 00:07:48,670
+And so instead of
+returning the string,
+
+170
+00:07:48,670 --> 00:07:51,790
+we're going to return
+render_template("index.html").
+
+171
+00:07:57,850 --> 00:08:01,510
+And so what that should do is
+when we come to our web page
+
+172
+00:08:01,510 --> 00:08:04,130
+at the home page or we
+have the main page here
+
+173
+00:08:04,130 --> 00:08:08,890
+at the root level, it is going
+to run this function, which
+
+174
+00:08:08,890 --> 00:08:10,810
+right now all this
+function does is return
+
+175
+00:08:10,810 --> 00:08:13,690
+the render_template index.html.
+
+176
+00:08:13,690 --> 00:08:16,120
+So when we launch
+this page, fingers
+
+177
+00:08:16,120 --> 00:08:19,960
+crossed, what it should do
+is show up our index page
+
+178
+00:08:19,960 --> 00:08:21,520
+that says Hello, World!
+
+179
+00:08:21,520 --> 00:08:24,610
+This is coming from
+the index.html file.
+
+180
+00:08:24,610 --> 00:08:27,830
+So let's save this
+and check that.
+
+181
+00:08:27,830 --> 00:08:31,205
+So remember to launch a
+site or launch our app.
+
+182
+00:08:31,205 --> 00:08:32,130
+I'll get it up here.
+
+183
+00:08:32,130 --> 00:08:34,010
+I'm too lazy to type.
+
+184
+00:08:34,010 --> 00:08:36,980
+To launch our app, we're
+going to first run export
+
+185
+00:08:36,980 --> 00:08:40,940
+FLASK_APP=app.py, basically
+creating an environment variable
+
+186
+00:08:40,940 --> 00:08:43,799
+that says, whenever we're
+launching a flask app,
+
+187
+00:08:43,799 --> 00:08:46,640
+we specifically mean
+to run our app.py.
+
+188
+00:08:46,640 --> 00:08:48,890
+It just saves us having to
+type a bunch of extra stuff
+
+189
+00:08:48,890 --> 00:08:51,150
+every time.
+
+190
+00:08:51,150 --> 00:09:07,290
+And then we'll do flask run and
+--host=0.0.0.0 So if the app
+
+191
+00:09:07,290 --> 00:09:10,480
+didn't throw it or if the code
+didn't throw an immediate error,
+
+192
+00:09:10,480 --> 00:09:14,722
+then we should be able to visit
+this now at our IP address.
+
+193
+00:09:14,722 --> 00:09:16,930
+So I've already got one up,
+so I'll create a new one.
+
+194
+00:09:16,930 --> 00:09:20,280
+So I copied the IP
+address, paste this here,
+
+195
+00:09:20,280 --> 00:09:25,490
+and then :5000, and boom.
+
+196
+00:09:25,490 --> 00:09:26,250
+Hello, World!
+
+197
+00:09:26,250 --> 00:09:28,500
+This is coming from
+the index.html file.
+
+198
+00:09:28,500 --> 00:09:29,430
+So that's good.
+
+199
+00:09:29,430 --> 00:09:32,070
+So now we have two
+separate files.
+
+200
+00:09:32,070 --> 00:09:33,595
+This is starting
+to get too complex.
+
+201
+00:09:33,595 --> 00:09:34,970
+Software development
+here, right?
+
+202
+00:09:34,970 --> 00:09:37,470
+We have one file that
+is our application code.
+
+203
+00:09:37,470 --> 00:09:38,610
+It's all Python.
+
+204
+00:09:38,610 --> 00:09:41,460
+And then we have one file
+that is our HTML code
+
+205
+00:09:41,460 --> 00:09:44,070
+and that's all just again HTML.
+
+206
+00:09:44,070 --> 00:09:46,520
+Meaning that we could pass
+this off to our designer
+
+207
+00:09:46,520 --> 00:09:49,380
+and say, hey, you
+run wild on the HTML,
+
+208
+00:09:49,380 --> 00:09:51,630
+setting up the looks and
+everything like that,
+
+209
+00:09:51,630 --> 00:09:56,480
+I'm going to focus solely
+on the Python file.
+
+210
+00:09:56,480 --> 00:09:58,590
+This also makes web
+development a lot cleaner too,
+
+211
+00:09:58,590 --> 00:10:02,120
+because now the web development
+is going to be handled by--
+
+212
+00:10:02,120 --> 00:10:03,950
+or a better statement,
+the web design
+
+213
+00:10:03,950 --> 00:10:06,540
+is going to be handled
+by single files.
+
+214
+00:10:06,540 --> 00:10:08,450
+And so we can share
+templates such
+
+215
+00:10:08,450 --> 00:10:11,030
+that if there is a
+specific look that we're
+
+216
+00:10:11,030 --> 00:10:13,170
+going for a specific
+theme of our website,
+
+217
+00:10:13,170 --> 00:10:17,990
+it's not me creating 10 HTML
+files all with different logic
+
+218
+00:10:17,990 --> 00:10:18,645
+in them.
+
+219
+00:10:18,645 --> 00:10:20,270
+They can share
+information across them.
+
+220
+00:10:20,270 --> 00:10:23,345
+And I can use the same
+template, for example,
+
+221
+00:10:23,345 --> 00:10:24,720
+for different
+functions depending
+
+222
+00:10:24,720 --> 00:10:27,990
+on what operations I'm doing.
+
+223
+00:10:27,990 --> 00:10:30,872
+So that's one piece of this.
+
+224
+00:10:30,872 --> 00:10:32,580
+The other thing I want
+to show is that we
+
+225
+00:10:32,580 --> 00:10:34,340
+can make multiple websites.
+
+226
+00:10:34,340 --> 00:10:37,533
+So I'll try to find my
+terminal again here.
+
+227
+00:10:37,533 --> 00:10:39,700
+So I'm just going to do
+Control-C. And notice again,
+
+228
+00:10:39,700 --> 00:10:41,460
+Control-C to quit.
+
+229
+00:10:41,460 --> 00:10:44,310
+So Control-C, and that
+pulls it back out of here.
+
+230
+00:10:44,310 --> 00:10:46,450
+And I'll run clear
+just to clear out.
+
+231
+00:10:46,450 --> 00:10:48,265
+All that does is, again,
+clear out the page
+
+232
+00:10:48,265 --> 00:10:50,140
+here so that you don't
+see this long history.
+
+233
+00:10:50,140 --> 00:10:51,810
+It's a little easier to see.
+
+234
+00:10:51,810 --> 00:10:54,220
+I run that a lot.
+
+235
+00:10:54,220 --> 00:10:54,720
+Bam!
+
+236
+00:10:54,720 --> 00:10:57,920
+So now we have one page
+for our-- let's say
+
+237
+00:10:57,920 --> 00:10:59,420
+that's our home
+page, but maybe I
+
+238
+00:10:59,420 --> 00:11:01,790
+want to create an About Me page.
+
+239
+00:11:01,790 --> 00:11:05,030
+So what I'll do is I'll
+actually cd back over
+
+240
+00:11:05,030 --> 00:11:08,030
+to our templates folder.
+
+241
+00:11:08,030 --> 00:11:10,850
+And I'll run nano, but
+now I'm going to do it
+
+242
+00:11:10,850 --> 00:11:14,190
+on an about_me.html.
+
+243
+00:11:14,190 --> 00:11:17,000
+So an entirely new HTML page.
+
+244
+00:11:17,000 --> 00:11:22,430
+And this is where I'll
+say, OK, header again
+
+245
+00:11:22,430 --> 00:11:24,470
+at the top of the page.
+
+246
+00:11:24,470 --> 00:11:27,530
+Here's my story!
+
+247
+00:11:27,530 --> 00:11:31,160
+And you could go on to put all
+sorts of other information.
+
+248
+00:11:31,160 --> 00:11:35,600
+You could put paragraphs
+in there now that say,
+
+249
+00:11:35,600 --> 00:11:42,470
+Born in 1992, Sharad,
+and use ChatGPT
+
+250
+00:11:42,470 --> 00:11:45,830
+to autocomplete that story.
+
+251
+00:11:45,830 --> 00:11:49,910
+So anyway, that's how we
+can create an About Me page,
+
+252
+00:11:49,910 --> 00:11:51,760
+so let's save and exit on that.
+
+253
+00:11:54,680 --> 00:12:01,590
+And then we'll pop back over to
+our app page or our app itself.
+
+254
+00:12:01,590 --> 00:12:08,380
+So back up a level and
+then open up our app.
+
+255
+00:12:08,380 --> 00:12:11,380
+And in here now,
+spoiler alert, we're
+
+256
+00:12:11,380 --> 00:12:15,940
+going to use the @app.route.
+
+257
+00:12:15,940 --> 00:12:17,660
+But this time, we
+can change what--
+
+258
+00:12:21,444 --> 00:12:24,240
+sorry, what page name we
+want to put on for this.
+
+259
+00:12:24,240 --> 00:12:28,220
+So I'll say, for example,
+that I want to do /about.
+
+260
+00:12:28,220 --> 00:12:31,690
+This is going to mean that
+our website will look whatever
+
+261
+00:12:31,690 --> 00:12:34,810
+the IP address is,
+but then /about.
+
+262
+00:12:34,810 --> 00:12:36,580
+And it'll take me
+to the page that
+
+263
+00:12:36,580 --> 00:12:39,170
+contains my About Me page,
+or a better statement,
+
+264
+00:12:39,170 --> 00:12:42,170
+it'll run whatever
+function I type in here.
+
+265
+00:12:42,170 --> 00:12:45,120
+So I'm going to call
+this function about_me.
+
+266
+00:12:45,120 --> 00:12:49,920
+And just like our last one, it's
+going to return just a render
+
+267
+00:12:49,920 --> 00:12:53,340
+template right there like that.
+
+268
+00:12:53,340 --> 00:13:01,800
+So return about_me.html,
+and typing.
+
+269
+00:13:01,800 --> 00:13:03,230
+It's not my strong suit.
+
+270
+00:13:03,230 --> 00:13:06,440
+About_me.html.
+
+271
+00:13:06,440 --> 00:13:08,100
+Now I'll save that.
+
+272
+00:13:08,100 --> 00:13:10,050
+Yes, Yes.
+
+273
+00:13:10,050 --> 00:13:14,000
+So we edited our app file,
+we created our About Me page,
+
+274
+00:13:14,000 --> 00:13:16,430
+and now I'm just
+tapping up to go back
+
+275
+00:13:16,430 --> 00:13:19,980
+to previous runs or previous
+commands I've entered.
+
+276
+00:13:19,980 --> 00:13:25,560
+And I'm just going to go back
+up to flask run and hit Enter.
+
+277
+00:13:25,560 --> 00:13:28,590
+And then I'll pop back
+over to my app here.
+
+278
+00:13:28,590 --> 00:13:30,750
+Let's confirm again if I
+rerun that I'm still back
+
+279
+00:13:30,750 --> 00:13:32,050
+to my home page.
+
+280
+00:13:32,050 --> 00:13:35,630
+But now I should just
+be able to do /about.
+
+281
+00:13:35,630 --> 00:13:37,290
+And I hit an internal
+server error.
+
+282
+00:13:37,290 --> 00:13:38,832
+Let's see what we
+actually got as far
+
+283
+00:13:38,832 --> 00:13:41,630
+as internal server error goes.
+
+284
+00:13:41,630 --> 00:13:42,330
+There we go.
+
+285
+00:13:42,330 --> 00:13:46,520
+So you can see I pop
+back over to my terminal
+
+286
+00:13:46,520 --> 00:13:49,080
+and I got this
+long, scary error.
+
+287
+00:13:49,080 --> 00:13:51,620
+Rather than being scared,
+notice that all I did
+
+288
+00:13:51,620 --> 00:13:54,530
+was make a typo
+that said return.
+
+289
+00:13:54,530 --> 00:13:56,880
+Or you can see that down at
+the bottom a little easier.
+
+290
+00:13:56,880 --> 00:13:59,350
+TemplateNotFound about_men.html.
+
+291
+00:13:59,350 --> 00:13:59,850
+OK.
+
+292
+00:13:59,850 --> 00:14:02,870
+Well, what is
+about_men.html mean?
+
+293
+00:14:02,870 --> 00:14:05,550
+Well, if I can scroll back
+again through the error code,
+
+294
+00:14:05,550 --> 00:14:08,550
+then eventually I'll see
+that somewhere in here, yeah,
+
+295
+00:14:08,550 --> 00:14:12,450
+right up here, I said return
+render_template about_men.html.
+
+296
+00:14:12,450 --> 00:14:14,340
+You probably didn't
+make that silly typo,
+
+297
+00:14:14,340 --> 00:14:16,520
+so yours didn't show that.
+
+298
+00:14:16,520 --> 00:14:17,740
+But I'll go back in here.
+
+299
+00:14:20,805 --> 00:14:23,430
+And this is the part where it's
+much easier to teach in person.
+
+300
+00:14:23,430 --> 00:14:25,820
+So somebody can laugh at me
+first and then correct me
+
+301
+00:14:25,820 --> 00:14:28,970
+on that very obvious typo.
+
+302
+00:14:28,970 --> 00:14:31,490
+So save, exit.
+
+303
+00:14:31,490 --> 00:14:33,560
+Now we'll rerun the app.
+
+304
+00:14:33,560 --> 00:14:35,520
+Then I'll come back over here.
+
+305
+00:14:35,520 --> 00:14:37,045
+And heroically, yes.
+
+306
+00:14:37,045 --> 00:14:39,170
+[LAUGHS] Perfect.
+
+307
+00:14:39,170 --> 00:14:40,320
+So just zooming in here.
+
+308
+00:14:40,320 --> 00:14:41,220
+So you can see now.
+
+309
+00:14:41,220 --> 00:14:42,090
+Here's my story!
+
+310
+00:14:42,090 --> 00:14:45,140
+Born in 1992, Sharad.....
+
+311
+00:14:45,140 --> 00:14:50,100
+And I can just as simply
+go back to the home page
+
+312
+00:14:50,100 --> 00:14:53,040
+and show what was there.
+
+313
+00:14:53,040 --> 00:14:55,560
+So you can see here
+from a single IP
+
+314
+00:14:55,560 --> 00:15:00,270
+address and effectively a single
+URL, we've now created two pages
+
+315
+00:15:00,270 --> 00:15:02,457
+and we can easily
+bounce between those.
+
+316
+00:15:02,457 --> 00:15:05,040
+So there's nothing that says I
+can't make a link between those
+
+317
+00:15:05,040 --> 00:15:07,620
+as well, too, so
+might as well do that.
+
+318
+00:15:07,620 --> 00:15:10,750
+So let me go back
+to my file here.
+
+319
+00:15:10,750 --> 00:15:13,910
+Control-C. We'll clear this out.
+
+320
+00:15:13,910 --> 00:15:15,840
+And I'll cd over to
+my templates folder.
+
+321
+00:15:15,840 --> 00:15:17,720
+I'm going to start speeding
+up now since I'm assuming
+
+322
+00:15:17,720 --> 00:15:18,970
+you're starting to pick it up.
+
+323
+00:15:18,970 --> 00:15:22,520
+You can always also
+always pause, too.
+
+324
+00:15:22,520 --> 00:15:24,290
+Then I'll run nano.
+
+325
+00:15:24,290 --> 00:15:27,935
+And I'm going to do this
+on our index.html page.
+
+326
+00:15:27,935 --> 00:15:29,810
+And what I'm going to
+do is I'm going to say,
+
+327
+00:15:29,810 --> 00:15:32,112
+hey, well, let's
+just add a link here.
+
+328
+00:15:32,112 --> 00:15:34,570
+Add a link here so that you
+can go to My About page without
+
+329
+00:15:34,570 --> 00:15:40,150
+having to actually type in
+the URL bar up there /about.
+
+330
+00:15:40,150 --> 00:15:42,880
+So we've already got that here.
+
+331
+00:15:42,880 --> 00:15:49,780
+So we'll add a link which is
+done via a href= and this is
+
+332
+00:15:49,780 --> 00:15:53,950
+again just HTML code.
+
+333
+00:15:53,950 --> 00:15:56,290
+I don't expect you to know HTML.
+
+334
+00:15:56,290 --> 00:15:57,960
+I don't expect you to do HTML.
+
+335
+00:15:57,960 --> 00:16:00,040
+I don't personally
+love doing HTML,
+
+336
+00:16:00,040 --> 00:16:04,590
+so this is just to show
+us a form of doing this.
+
+337
+00:16:04,590 --> 00:16:06,000
+And so all we're
+doing here again
+
+338
+00:16:06,000 --> 00:16:09,160
+is creating a link
+to our About Me page.
+
+339
+00:16:09,160 --> 00:16:12,010
+So this is the way you write
+that in HTML if you're curious.
+
+340
+00:16:12,010 --> 00:16:14,170
+But again, not part of
+this lesson by any means.
+
+341
+00:16:14,170 --> 00:16:16,320
+But in case you
+need to see or later
+
+342
+00:16:16,320 --> 00:16:18,930
+on, if I ask you to put
+a link in your page here,
+
+343
+00:16:18,930 --> 00:16:21,180
+this is the one line
+of code to do that.
+
+344
+00:16:21,180 --> 00:16:24,740
+You would just specify whatever
+the route is to your page.
+
+345
+00:16:24,740 --> 00:16:25,990
+So in this case, I said about.
+
+346
+00:16:25,990 --> 00:16:30,200
+But let's say you had a Contact
+Me page and you did /contact
+
+347
+00:16:30,200 --> 00:16:30,700
+for that.
+
+348
+00:16:30,700 --> 00:16:34,680
+Well, you would just
+do /contact there.
+
+349
+00:16:34,680 --> 00:16:39,330
+Oops, not Control-C,
+Control-X. Yes, Enter.
+
+350
+00:16:39,330 --> 00:16:43,510
+And same thing, We'll
+now rerun our app again.
+
+351
+00:16:43,510 --> 00:16:47,380
+And back to our app page and
+we'll refresh our home page
+
+352
+00:16:47,380 --> 00:16:50,240
+and boom, right away our
+About Me link is up here.
+
+353
+00:16:50,240 --> 00:16:52,580
+Click that and it'll
+take you back to there.
+
+354
+00:16:52,580 --> 00:16:55,430
+And you could similarly put
+a link back to the home page
+
+355
+00:16:55,430 --> 00:16:57,563
+from here that links
+you back and forth.
+
+356
+00:16:57,563 --> 00:16:59,980
+And so you can start to see
+now this is how you can really
+
+357
+00:16:59,980 --> 00:17:02,290
+quickly and easily build out--
+
+358
+00:17:02,290 --> 00:17:04,470
+honestly, a pretty
+decent website.
+
+359
+00:17:04,470 --> 00:17:07,060
+Again, nothing stopping
+us from bringing somebody
+
+360
+00:17:07,060 --> 00:17:09,940
+on who knows a bunch of HTML and
+can make a really cool design
+
+361
+00:17:09,940 --> 00:17:13,430
+or using ChatGPT to help us
+generate a bunch of HTML code,
+
+362
+00:17:13,430 --> 00:17:14,657
+at least as a starting point.
+
+363
+00:17:14,657 --> 00:17:16,990
+The important thing is right
+now we're viewing ourselves
+
+364
+00:17:16,990 --> 00:17:19,810
+as the infrastructure team.
+
+365
+00:17:19,810 --> 00:17:22,119
+We're the ones setting up
+all the backend so that way
+
+366
+00:17:22,119 --> 00:17:24,790
+we can easily plug
+and play code.
+
+367
+00:17:24,790 --> 00:17:27,890
+But even more importantly,
+we've deployed it as well, too.
+
+368
+00:17:27,890 --> 00:17:30,230
+We've deployed this to
+a public-facing website.
+
+369
+00:17:30,230 --> 00:17:33,490
+I mean, if you open up an
+incognito window so you're not
+
+370
+00:17:33,490 --> 00:17:35,260
+logged into anything--
+
+371
+00:17:35,260 --> 00:17:36,730
+I'll just do that really quick.
+
+372
+00:17:36,730 --> 00:17:40,790
+New incognito
+window, paste, Enter.
+
+373
+00:17:40,790 --> 00:17:42,820
+And I can still hit this page.
+
+374
+00:17:42,820 --> 00:17:46,540
+So it's nothing special
+about being logged in.
+
+375
+00:17:46,540 --> 00:17:50,810
+This is truly a publicly
+available website.
+
+376
+00:17:50,810 --> 00:17:52,685
+If I don't terminate
+this at the end of this,
+
+377
+00:17:52,685 --> 00:17:55,040
+this website will
+stay live as long
+
+378
+00:17:55,040 --> 00:17:56,900
+as I'm paying the bill to AWS.
+
+379
+00:17:56,900 --> 00:17:59,430
+So that's an important
+thing to remember is like,
+
+380
+00:17:59,430 --> 00:18:01,320
+again, I don't care
+about the code.
+
+381
+00:18:01,320 --> 00:18:03,147
+It's why I'm not picky on.
+
+382
+00:18:03,147 --> 00:18:05,480
+You're writing your code, you
+can copy and paste for me.
+
+383
+00:18:05,480 --> 00:18:06,830
+Or if you ever run
+into issue, you're
+
+384
+00:18:06,830 --> 00:18:08,872
+like, I just need this
+code to work so I can show
+
+385
+00:18:08,872 --> 00:18:10,590
+the rest of it, let me know.
+
+386
+00:18:10,590 --> 00:18:14,020
+I'm not going to
+be grading on that.
+
+387
+00:18:14,020 --> 00:18:15,160
+So cool.
+
+388
+00:18:15,160 --> 00:18:17,950
+One last thing I
+want to show then
+
+389
+00:18:17,950 --> 00:18:20,210
+is how do we actually
+leverage Python
+
+390
+00:18:20,210 --> 00:18:23,030
+because we've done
+some cool things.
+
+391
+00:18:23,030 --> 00:18:25,150
+Now we've linked between pages.
+
+392
+00:18:25,150 --> 00:18:28,953
+But if we look at our app again,
+outside of the wrapper code,
+
+393
+00:18:28,953 --> 00:18:31,370
+the really only thing we're
+doing is rendering a template.
+
+394
+00:18:31,370 --> 00:18:33,490
+We're just rendering some HTML.
+
+395
+00:18:33,490 --> 00:18:37,540
+So now how do we
+unlock this capability
+
+396
+00:18:37,540 --> 00:18:42,180
+to use any and all the
+Python logic we know so far?
+
+397
+00:18:42,180 --> 00:18:44,010
+Well, importantly,
+first off, as long
+
+398
+00:18:44,010 --> 00:18:45,780
+as I'm not doing
+up that route, I
+
+399
+00:18:45,780 --> 00:18:49,350
+can write any number of
+functions into my code here.
+
+400
+00:18:49,350 --> 00:18:52,080
+So, for example, it'll
+be common practice
+
+401
+00:18:52,080 --> 00:18:53,650
+to put this code
+up here at the top,
+
+402
+00:18:53,650 --> 00:18:57,010
+so it's not interfering
+with the flow of this.
+
+403
+00:18:57,010 --> 00:19:01,800
+But I'll do a new function
+that I'll call todays_date.
+
+404
+00:19:01,800 --> 00:19:08,520
+And what this function should do
+is return the date as a string.
+
+405
+00:19:08,520 --> 00:19:10,570
+So this is all just Python code.
+
+406
+00:19:10,570 --> 00:19:14,130
+Again, there's no
+@app.route beginning this
+
+407
+00:19:14,130 --> 00:19:17,480
+because this is going
+to be used later on.
+
+408
+00:19:17,480 --> 00:19:20,660
+So today = date.today.
+
+409
+00:19:24,840 --> 00:19:27,540
+Also, this is the annoying
+part of writing code here
+
+410
+00:19:27,540 --> 00:19:31,350
+in nano is that I don't have all
+the nice autocomplete features
+
+411
+00:19:31,350 --> 00:19:34,300
+and tabbing in, so I'm using
+spaces as opposed to tabs.
+
+412
+00:19:34,300 --> 00:19:37,350
+That's a whole debate
+for another day.
+
+413
+00:19:37,350 --> 00:19:39,960
+I prefer to use tabs, but
+just make sure that you
+
+414
+00:19:39,960 --> 00:19:41,080
+keep everything in line.
+
+415
+00:19:41,080 --> 00:19:43,800
+So right here where
+the t is in line
+
+416
+00:19:43,800 --> 00:19:45,330
+with this t line with this s.
+
+417
+00:19:45,330 --> 00:19:48,790
+That's important in
+the context of Python.
+
+418
+00:19:48,790 --> 00:19:52,238
+And again, not really important
+what this code is doing.
+
+419
+00:19:52,238 --> 00:19:54,280
+Just know that basically
+what this is going to do
+
+420
+00:19:54,280 --> 00:19:58,720
+is it's going to return the
+date in a very specific form.
+
+421
+00:19:58,720 --> 00:20:02,810
+I believe it is in the
+form of month, day, year.
+
+422
+00:20:02,810 --> 00:20:06,700
+That's what that percent
+sign b, percent sign d,
+
+423
+00:20:06,700 --> 00:20:08,530
+percent sign y represent.
+
+424
+00:20:08,530 --> 00:20:09,730
+They're special codes.
+
+425
+00:20:09,730 --> 00:20:13,240
+I think capital B is the
+month written out in words.
+
+426
+00:20:13,240 --> 00:20:17,020
+Capital Y is the
+year in four digits.
+
+427
+00:20:17,020 --> 00:20:18,880
+And then the lowercase
+d should just
+
+428
+00:20:18,880 --> 00:20:21,605
+be the date or the
+day of the month.
+
+429
+00:20:21,605 --> 00:20:22,730
+But don't quote me on that.
+
+430
+00:20:22,730 --> 00:20:25,660
+It was a while back when I
+wrote these notes to myself.
+
+431
+00:20:25,660 --> 00:20:38,230
+And then we'll do return
+"Today's date is" oop,
+
+432
+00:20:38,230 --> 00:20:45,060
+I'm doing the lazy form of
+strings here, plus string date.
+
+433
+00:20:45,060 --> 00:20:48,790
+So what we're saying is, OK,
+today's date = date.today.
+
+434
+00:20:48,790 --> 00:20:51,383
+And I actually need to
+import the date function.
+
+435
+00:20:51,383 --> 00:20:53,550
+So let's do that first
+before we get an error there.
+
+436
+00:20:53,550 --> 00:20:58,170
+From datetime import date.
+
+437
+00:20:58,170 --> 00:21:01,480
+And then that will return
+a special date object.
+
+438
+00:21:01,480 --> 00:21:04,653
+And from that date object,
+we'll extract the time.
+
+439
+00:21:04,653 --> 00:21:06,570
+You guys were probably
+screaming at the screen
+
+440
+00:21:06,570 --> 00:21:08,880
+to put a parentheses there.
+
+441
+00:21:08,880 --> 00:21:12,180
+And then I created this string
+date object from today's date,
+
+442
+00:21:12,180 --> 00:21:13,290
+just today.
+
+443
+00:21:13,290 --> 00:21:15,060
+And then I'm returning
+a string that
+
+444
+00:21:15,060 --> 00:21:19,460
+just says today's date is,
+and then whatever the date is.
+
+445
+00:21:19,460 --> 00:21:22,130
+Then I want to put
+the date on my home
+
+446
+00:21:22,130 --> 00:21:24,830
+page, my index.html page.
+
+447
+00:21:24,830 --> 00:21:29,330
+So what I'll do is in
+this hello_world function,
+
+448
+00:21:29,330 --> 00:21:32,020
+I'll call this my
+today's date function.
+
+449
+00:21:32,020 --> 00:21:35,030
+So I'll say today
+= today's_date().
+
+450
+00:21:37,590 --> 00:21:38,633
+And so that will run.
+
+451
+00:21:38,633 --> 00:21:40,300
+It'll create an
+instance of my function.
+
+452
+00:21:40,300 --> 00:21:42,720
+So it'll return the
+string of today's date
+
+453
+00:21:42,720 --> 00:21:44,610
+into this today object.
+
+454
+00:21:44,610 --> 00:21:51,610
+And then if I go down here,
+I can pass special objects
+
+455
+00:21:51,610 --> 00:21:54,470
+to my template.
+
+456
+00:21:54,470 --> 00:21:58,460
+So I'll say the date=today,
+which again is this object we
+
+457
+00:21:58,460 --> 00:22:00,710
+created right here in this line.
+
+458
+00:22:00,710 --> 00:22:05,600
+And now I'll go
+Control-X. Yes, Enter.
+
+459
+00:22:05,600 --> 00:22:12,260
+Now I'll go over to my
+templates, cd templates.
+
+460
+00:22:12,260 --> 00:22:16,110
+And I'll edit my
+index.html page to say, OK,
+
+461
+00:22:16,110 --> 00:22:18,650
+well just below
+my header, I want
+
+462
+00:22:18,650 --> 00:22:22,070
+to say h3, so a
+third level header.
+
+463
+00:22:22,070 --> 00:22:28,160
+And then I do curly braces,
+curly braces, the date,
+
+464
+00:22:28,160 --> 00:22:33,930
+curly braces, curly
+braces, and h3.
+
+465
+00:22:33,930 --> 00:22:36,635
+And now we'll save that.
+
+466
+00:22:39,780 --> 00:22:43,310
+And we'll go run our app.
+
+467
+00:22:43,310 --> 00:22:45,600
+Oops, Could not import app.
+
+468
+00:22:45,600 --> 00:22:47,350
+That's because I'm in
+the wrong directory.
+
+469
+00:22:47,350 --> 00:22:48,640
+I'm in the templates folder.
+
+470
+00:22:48,640 --> 00:22:51,800
+So back up one level.
+
+471
+00:22:51,800 --> 00:22:54,160
+Now we should be able to run it.
+
+472
+00:22:54,160 --> 00:22:57,200
+Then I'll pop over
+here, hit Enter.
+
+473
+00:22:57,200 --> 00:23:00,950
+And you can see there, Today's
+date is September 23, 2024.
+
+474
+00:23:00,950 --> 00:23:03,650
+So you can see what I'm
+recording this video right here,
+
+475
+00:23:03,650 --> 00:23:05,673
+September 23, 2024.
+
+476
+00:23:05,673 --> 00:23:07,090
+So yours should
+show whatever date
+
+477
+00:23:07,090 --> 00:23:09,040
+you're watching this video at.
+
+478
+00:23:09,040 --> 00:23:12,340
+We can still click our About
+Me to come to our About page.
+
+479
+00:23:12,340 --> 00:23:14,170
+But again, the
+real power of what
+
+480
+00:23:14,170 --> 00:23:17,890
+this is and I hope this isn't
+lost on you because this was
+
+481
+00:23:17,890 --> 00:23:20,710
+an eye-opening moment
+for me is again,
+
+482
+00:23:20,710 --> 00:23:24,650
+we go in here to
+just nano app.py.
+
+483
+00:23:24,650 --> 00:23:27,500
+This is just Python code.
+
+484
+00:23:27,500 --> 00:23:29,930
+So truly anything and
+everything you can ever
+
+485
+00:23:29,930 --> 00:23:32,660
+think of writing
+Python code around,
+
+486
+00:23:32,660 --> 00:23:36,080
+you can do, and more
+importantly, push to a website.
+
+487
+00:23:36,080 --> 00:23:39,770
+If you want to show off all the
+cool analysis you did in a data
+
+488
+00:23:39,770 --> 00:23:42,830
+class and you want
+a Data 3300 and you
+
+489
+00:23:42,830 --> 00:23:46,230
+want to push that to a website,
+you can build the whole website
+
+490
+00:23:46,230 --> 00:23:47,250
+here.
+
+491
+00:23:47,250 --> 00:23:50,260
+And not only build the website,
+you can make it interactive.
+
+492
+00:23:50,260 --> 00:23:53,640
+You can start to build
+interactive features into this.
+
+493
+00:23:53,640 --> 00:23:56,110
+You can have sliders,
+visualizations.
+
+494
+00:23:56,110 --> 00:23:58,960
+You can make all sorts
+of complex frontends.
+
+495
+00:23:58,960 --> 00:24:03,720
+So all sorts of fancy HTML
+pages, and many other frameworks
+
+496
+00:24:03,720 --> 00:24:04,690
+as well, too.
+
+497
+00:24:04,690 --> 00:24:06,070
+The sky's the limit with Flask.
+
+498
+00:24:06,070 --> 00:24:08,380
+If you just Google Flask and
+anything else you can think of,
+
+499
+00:24:08,380 --> 00:24:10,047
+you're probably going
+to find something.
+
+500
+00:24:10,047 --> 00:24:12,510
+If not Flask, Django or one
+of the other Python frameworks
+
+501
+00:24:12,510 --> 00:24:13,660
+will have it as well.
+
+502
+00:24:13,660 --> 00:24:17,430
+And the cool thing again is
+they all use the same approach
+
+503
+00:24:17,430 --> 00:24:19,530
+to deployment because
+the deployment is
+
+504
+00:24:19,530 --> 00:24:21,370
+agnostic to the framework.
+
+505
+00:24:21,370 --> 00:24:25,020
+All we did was say we're
+pushing this live in a local IP
+
+506
+00:24:25,020 --> 00:24:28,920
+address on our machine
+here that our EC2 instance
+
+507
+00:24:28,920 --> 00:24:32,130
+and our EC2 instance is
+just publicly available.
+
+508
+00:24:32,130 --> 00:24:34,800
+So a lot, a lot
+of power in that.
+
+509
+00:24:34,800 --> 00:24:36,870
+Once you have that live,
+you can share that link
+
+510
+00:24:36,870 --> 00:24:38,430
+with anybody and everybody.
+
+511
+00:24:38,430 --> 00:24:40,670
+You can show off to
+future employers and say,
+
+512
+00:24:40,670 --> 00:24:42,420
+not only can I do the
+analysis, but here's
+
+513
+00:24:42,420 --> 00:24:45,740
+the whole website where I
+hosted it and managed this.
+
+514
+00:24:45,740 --> 00:24:48,470
+So, again, really,
+really powerful.
+
+515
+00:24:48,470 --> 00:24:54,580
+And nothing today again
+is unique or is even
+
+516
+00:24:54,580 --> 00:24:57,380
+about the Flask aspect of this.
+
+517
+00:24:57,380 --> 00:25:00,243
+It's just to show us that all
+the tools and technologies
+
+518
+00:25:00,243 --> 00:25:01,910
+we're learning, they're
+linked together.
+
+519
+00:25:01,910 --> 00:25:04,120
+That's what makes a
+modern technology business
+
+520
+00:25:04,120 --> 00:25:06,640
+and that's what we're starting
+to get the tool kit of.
+
+521
+00:25:06,640 --> 00:25:08,950
+That's what we're starting
+to get the pieces of.
+
+522
+00:25:08,950 --> 00:25:11,992
+So take this, play around with
+this, break this, restart it.
+
+523
+00:25:11,992 --> 00:25:14,450
+Worst case, if all this failed
+and you keep getting errors,
+
+524
+00:25:14,450 --> 00:25:15,770
+delete your EC2 instance.
+
+525
+00:25:15,770 --> 00:25:16,370
+Restart it.
+
+526
+00:25:16,370 --> 00:25:19,060
+You'll probably find that there
+is some little thing you made
+
+527
+00:25:19,060 --> 00:25:21,350
+a mistake on in the process.
+
+528
+00:25:21,350 --> 00:25:22,520
+That's OK.
+
+529
+00:25:22,520 --> 00:25:25,520
+So next time, we're
+going to start
+
+530
+00:25:25,520 --> 00:25:29,478
+to move forward on developing
+more complex websites.
+
+531
+00:25:29,478 --> 00:25:31,020
+Maybe not even
+necessarily next time,
+
+532
+00:25:31,020 --> 00:25:32,908
+But throughout the
+rest of this module.
+
+533
+00:25:32,908 --> 00:25:34,700
+We're going to start
+to talk about creating
+
+534
+00:25:34,700 --> 00:25:36,440
+more complex websites.
+
+535
+00:25:36,440 --> 00:25:38,220
+We're going to talk
+about version control.
+
+536
+00:25:38,220 --> 00:25:41,360
+So how can we manage this
+because right now there's
+
+537
+00:25:41,360 --> 00:25:42,540
+a lot of code we're writing?
+
+538
+00:25:42,540 --> 00:25:45,860
+So we'll talk about Git, and all
+sorts of other really important
+
+539
+00:25:45,860 --> 00:25:46,560
+details of this.
+
+540
+00:25:46,560 --> 00:25:48,260
+So either way, I
+hope this was fun,
+
+541
+00:25:48,260 --> 00:25:50,060
+and I hope you had a
+good time with this.
+
+542
+00:25:50,060 --> 00:25:51,530
+Let me know if you
+run into issues
+
+543
+00:25:51,530 --> 00:25:53,930
+or you have any questions,
+but otherwise, I'll
+
+544
+00:25:53,930 --> 00:25:55,280
+talk with you next time.
+
+545
+00:25:55,280 --> 00:25:56,830
+Bye.

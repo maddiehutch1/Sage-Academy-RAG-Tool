@@ -1,0 +1,5172 @@
+1
+00:00:00,000 --> 00:00:01,333
+DR. SHARAD JONES: Hey, everyone.
+
+2
+00:00:01,333 --> 00:00:02,098
+Welcome back.
+
+3
+00:00:02,098 --> 00:00:04,640
+Today's video, we're going to
+be covering identity and access
+
+4
+00:00:04,640 --> 00:00:05,660
+management.
+
+5
+00:00:05,660 --> 00:00:09,195
+So the idea here is, really
+throughout this process,
+
+6
+00:00:09,195 --> 00:00:10,320
+we're going to have users--
+
+7
+00:00:10,320 --> 00:00:12,810
+you guys are users
+on our AWS account.
+
+8
+00:00:12,810 --> 00:00:15,440
+And so we have this
+standing open question of,
+
+9
+00:00:15,440 --> 00:00:17,780
+how do we manage access?
+
+10
+00:00:17,780 --> 00:00:19,033
+Should we manage access?
+
+11
+00:00:19,033 --> 00:00:19,950
+What are the benefits?
+
+12
+00:00:19,950 --> 00:00:22,340
+Why would we, why
+wouldn't we manage access
+
+13
+00:00:22,340 --> 00:00:23,820
+to certain resources?
+
+14
+00:00:23,820 --> 00:00:26,450
+And you can imagine, obviously,
+this scales up pretty
+
+15
+00:00:26,450 --> 00:00:28,530
+aggressively as you get
+to larger companies.
+
+16
+00:00:28,530 --> 00:00:31,400
+There's always a security
+risk with any sort of access
+
+17
+00:00:31,400 --> 00:00:33,390
+to a resource, to a tool.
+
+18
+00:00:33,390 --> 00:00:36,170
+And so we want to now
+address the tools that
+
+19
+00:00:36,170 --> 00:00:40,620
+are available to us as in this
+since we're the cloud admins,
+
+20
+00:00:40,620 --> 00:00:43,490
+we're the administrators of how
+do we decide who accesses what
+
+21
+00:00:43,490 --> 00:00:44,183
+and when.
+
+22
+00:00:44,183 --> 00:00:45,600
+So we're going to
+go through that,
+
+23
+00:00:45,600 --> 00:00:47,767
+the tools available for
+this, we'll walk through it,
+
+24
+00:00:47,767 --> 00:00:50,498
+we'll see how those tools
+look in action as well too.
+
+25
+00:00:50,498 --> 00:00:52,040
+The good thing is
+though, again, this
+
+26
+00:00:52,040 --> 00:00:53,480
+is something you can play with.
+
+27
+00:00:53,480 --> 00:00:56,820
+This is available
+for free on AWS.
+
+28
+00:00:56,820 --> 00:00:59,730
+So if you set up your own
+AWS account or organization,
+
+29
+00:00:59,730 --> 00:01:03,210
+you have access or controls over
+identity and access management
+
+30
+00:01:03,210 --> 00:01:06,615
+for free, you can create users,
+delete users, change passwords,
+
+31
+00:01:06,615 --> 00:01:07,240
+all that stuff.
+
+32
+00:01:07,240 --> 00:01:08,720
+So it's your choice.
+
+33
+00:01:08,720 --> 00:01:11,040
+You can explore and we will
+explore in this course.
+
+34
+00:01:11,040 --> 00:01:13,260
+So let me throw this
+up full screen now,
+
+35
+00:01:13,260 --> 00:01:16,920
+and then I'll shrink myself
+out of the way as usual.
+
+36
+00:01:16,920 --> 00:01:19,080
+And we'll go to the
+bottom left hand corner
+
+37
+00:01:19,080 --> 00:01:21,130
+to be a little better.
+
+38
+00:01:21,130 --> 00:01:21,888
+Perfect.
+
+39
+00:01:21,888 --> 00:01:24,180
+Large enough that you can
+see me, not too large to them
+
+40
+00:01:24,180 --> 00:01:24,730
+in the way.
+
+41
+00:01:24,730 --> 00:01:25,960
+That's the rule.
+
+42
+00:01:25,960 --> 00:01:26,460
+Perfect.
+
+43
+00:01:26,460 --> 00:01:28,810
+So let's start with some
+motivating questions.
+
+44
+00:01:28,810 --> 00:01:32,140
+So let's imagine now you're,
+again, this cloud admin.
+
+45
+00:01:32,140 --> 00:01:34,690
+You're handling the IT
+services for a small company.
+
+46
+00:01:34,690 --> 00:01:36,240
+Maybe you only
+have 50 employees,
+
+47
+00:01:36,240 --> 00:01:41,368
+and there's roughly 10 different
+job titles or job categories.
+
+48
+00:01:41,368 --> 00:01:43,660
+And those are going to have
+different seniority levels.
+
+49
+00:01:43,660 --> 00:01:44,740
+So some are going
+to be more senior,
+
+50
+00:01:44,740 --> 00:01:47,032
+some director level, some
+might be entry level juniors,
+
+51
+00:01:47,032 --> 00:01:48,400
+interns, all that stuff.
+
+52
+00:01:48,400 --> 00:01:50,580
+So the question is
+then, how would you
+
+53
+00:01:50,580 --> 00:01:53,410
+handle controlling access
+to cloud resources?
+
+54
+00:01:53,410 --> 00:01:55,840
+And maybe we'll do this one
+as a discussion board too,
+
+55
+00:01:55,840 --> 00:01:56,745
+but we'll see.
+
+56
+00:01:56,745 --> 00:01:58,870
+It might be-- the answer
+might be clear afterwards,
+
+57
+00:01:58,870 --> 00:02:00,510
+so I'll about it some.
+
+58
+00:02:00,510 --> 00:02:02,530
+But either way, how
+would you handle that?
+
+59
+00:02:02,530 --> 00:02:05,370
+Maybe pause and think
+about it for a second.
+
+60
+00:02:05,370 --> 00:02:07,740
+Could you maybe say, if
+we just give everybody
+
+61
+00:02:07,740 --> 00:02:09,910
+appropriate training
+on cloud security,
+
+62
+00:02:09,910 --> 00:02:12,300
+could we just limit
+the complexity of this
+
+63
+00:02:12,300 --> 00:02:14,720
+and just give
+everyone full access?
+
+64
+00:02:14,720 --> 00:02:16,802
+And I think that's probably
+a leading question.
+
+65
+00:02:16,802 --> 00:02:19,010
+We typically don't want to
+give everybody full access
+
+66
+00:02:19,010 --> 00:02:21,320
+to everything, otherwise
+you guys would probably
+
+67
+00:02:21,320 --> 00:02:23,450
+have full access right now.
+
+68
+00:02:23,450 --> 00:02:26,010
+And so what can we
+do to mitigate that,
+
+69
+00:02:26,010 --> 00:02:28,850
+limit the need to give
+everybody full access?
+
+70
+00:02:28,850 --> 00:02:31,920
+And so AWS's identity and
+access management-- and again,
+
+71
+00:02:31,920 --> 00:02:32,750
+this is--
+
+72
+00:02:32,750 --> 00:02:36,330
+you'll actually see IAM tools
+in Google Cloud, Azure as well.
+
+73
+00:02:36,330 --> 00:02:37,857
+This is not unique to AWS.
+
+74
+00:02:37,857 --> 00:02:39,690
+This is just the platform
+we're using today.
+
+75
+00:02:39,690 --> 00:02:43,250
+But this is a critical
+component of any cloud platform,
+
+76
+00:02:43,250 --> 00:02:45,390
+and it's used to
+manage and acce--
+
+77
+00:02:45,390 --> 00:02:49,400
+manage access to the resources
+on that cloud platform.
+
+78
+00:02:49,400 --> 00:02:52,130
+And there's three questions
+that are answered at all times.
+
+79
+00:02:52,130 --> 00:02:55,340
+Who can access the resource,
+which resource can be accessed,
+
+80
+00:02:55,340 --> 00:02:57,780
+and what can the user
+do to the resource,
+
+81
+00:02:57,780 --> 00:03:00,440
+and then how can those
+resources be accessed?
+
+82
+00:03:00,440 --> 00:03:02,190
+Which may be some of
+those seem redundant,
+
+83
+00:03:02,190 --> 00:03:05,400
+but we'll clarify why those
+are three distinct questions.
+
+84
+00:03:05,400 --> 00:03:07,920
+And when I say resource,
+again, there's a note there,
+
+85
+00:03:07,920 --> 00:03:10,370
+I mean, these kind
+of tools and entities
+
+86
+00:03:10,370 --> 00:03:13,110
+that you can use
+within an AWS account.
+
+87
+00:03:13,110 --> 00:03:15,840
+EC2 instances, S3 buckets,
+but also then some
+
+88
+00:03:15,840 --> 00:03:17,050
+of the more advanced tools.
+
+89
+00:03:17,050 --> 00:03:20,430
+There's going to be Amazon
+Transcribe, and AWS deep lens,
+
+90
+00:03:20,430 --> 00:03:23,610
+and all these other things that
+you could do in there that cost
+
+91
+00:03:23,610 --> 00:03:24,700
+money usually.
+
+92
+00:03:24,700 --> 00:03:27,240
+And how can we limit
+the access to those?
+
+93
+00:03:27,240 --> 00:03:29,800
+Or those things are going to
+be referred to as resources,
+
+94
+00:03:29,800 --> 00:03:31,508
+and that's what we're
+trying to determine
+
+95
+00:03:31,508 --> 00:03:34,690
+how to limit the access to.
+
+96
+00:03:34,690 --> 00:03:37,390
+So there's four
+central components
+
+97
+00:03:37,390 --> 00:03:42,537
+of an AWS resource
+or of IAM components.
+
+98
+00:03:42,537 --> 00:03:44,620
+So I'm going to shrink
+myself really, really small
+
+99
+00:03:44,620 --> 00:03:45,995
+now so I'm not
+covering anything.
+
+100
+00:03:45,995 --> 00:03:49,870
+But there's the user,
+group, policy, and the role.
+
+101
+00:03:49,870 --> 00:03:52,040
+So at the user level is
+probably the easiest.
+
+102
+00:03:52,040 --> 00:03:54,470
+That's just a person
+or interestingly,
+
+103
+00:03:54,470 --> 00:03:57,160
+it can also be an application
+that can authenticate
+
+104
+00:03:57,160 --> 00:03:58,610
+with an AWS account.
+
+105
+00:03:58,610 --> 00:04:01,820
+So what I mean by could
+be an application,
+
+106
+00:04:01,820 --> 00:04:06,590
+it could be that you
+give your EC2 instance.
+
+107
+00:04:06,590 --> 00:04:10,640
+Your EC2 instance could
+conceivably be itself a user.
+
+108
+00:04:10,640 --> 00:04:11,650
+It's going to have--
+
+109
+00:04:11,650 --> 00:04:14,410
+you can grant your EC2
+instance specific access
+
+110
+00:04:14,410 --> 00:04:16,360
+to certain resources.
+
+111
+00:04:16,360 --> 00:04:20,260
+You might want to do this right
+in that some EC2 instances might
+
+112
+00:04:20,260 --> 00:04:24,460
+need access to maybe
+a private S3 bucket.
+
+113
+00:04:24,460 --> 00:04:25,960
+And so in that
+sense, you don't want
+
+114
+00:04:25,960 --> 00:04:29,980
+to give-- just say,
+well, because Sally's
+
+115
+00:04:29,980 --> 00:04:32,290
+the user of that
+EC2 instance, I'm
+
+116
+00:04:32,290 --> 00:04:36,800
+just going to give Sally access
+to all S3 accounts or S3 buckets
+
+117
+00:04:36,800 --> 00:04:39,930
+because she's a great data
+scientist and we can trust her.
+
+118
+00:04:39,930 --> 00:04:41,900
+Well, you might want
+to be that, well, Sally
+
+119
+00:04:41,900 --> 00:04:46,160
+needs to determine what exactly
+she needs for the exact EC2
+
+120
+00:04:46,160 --> 00:04:47,190
+instance she's using.
+
+121
+00:04:47,190 --> 00:04:48,773
+Because again, there's
+always the risk
+
+122
+00:04:48,773 --> 00:04:50,580
+that somebody gets
+access to the account,
+
+123
+00:04:50,580 --> 00:04:53,660
+somebody gets access
+to her secret key,
+
+124
+00:04:53,660 --> 00:04:57,530
+and now can log in and
+potentially acquire
+
+125
+00:04:57,530 --> 00:04:59,362
+sensitive information.
+
+126
+00:04:59,362 --> 00:05:02,690
+And so that's the idea
+behind giving an application
+
+127
+00:05:02,690 --> 00:05:07,260
+separate or separate access.
+
+128
+00:05:07,260 --> 00:05:08,720
+And so that's why
+we say a user can
+
+129
+00:05:08,720 --> 00:05:11,840
+be a person or an application.
+
+130
+00:05:11,840 --> 00:05:16,830
+The IAM group is then just going
+to be a collection of IAM users.
+
+131
+00:05:16,830 --> 00:05:18,330
+The reason we do
+this is-- sorry,
+
+132
+00:05:18,330 --> 00:05:20,450
+my hair is like
+flicking in my face.
+
+133
+00:05:20,450 --> 00:05:21,120
+Silly.
+
+134
+00:05:21,120 --> 00:05:24,110
+The reason we do
+this is, it allows
+
+135
+00:05:24,110 --> 00:05:29,310
+us to simplify the process of
+granting access to IAM users.
+
+136
+00:05:29,310 --> 00:05:32,270
+So if we say, OK, well, maybe
+all the interns at our company
+
+137
+00:05:32,270 --> 00:05:34,100
+are kind of working
+on the same task.
+
+138
+00:05:34,100 --> 00:05:35,977
+Rather than having
+to manage individual,
+
+139
+00:05:35,977 --> 00:05:37,560
+OK, you're getting
+the access to this,
+
+140
+00:05:37,560 --> 00:05:39,930
+you're getting access to this,
+you're getting access to this,
+
+141
+00:05:39,930 --> 00:05:41,430
+I'm just going to
+put them in a group.
+
+142
+00:05:41,430 --> 00:05:43,847
+So that whenever I need to
+give them access to more stuff,
+
+143
+00:05:43,847 --> 00:05:45,652
+I can make a blanket change.
+
+144
+00:05:45,652 --> 00:05:48,110
+And it might seem familiar
+because this is exactly what I'm
+
+145
+00:05:48,110 --> 00:05:49,027
+doing for this course.
+
+146
+00:05:49,027 --> 00:05:50,965
+Is that you guys
+are all IAM users.
+
+147
+00:05:50,965 --> 00:05:52,340
+That's how you
+got access, that's
+
+148
+00:05:52,340 --> 00:05:53,970
+how you got logged into AWS.
+
+149
+00:05:53,970 --> 00:05:56,630
+You're all part of an IAM group
+that is going to be this data
+
+150
+00:05:56,630 --> 00:05:58,620
+or IS 3600 course.
+
+151
+00:05:58,620 --> 00:06:01,170
+That's the course that
+we're in right now.
+
+152
+00:06:01,170 --> 00:06:04,710
+And as you progress through the
+course, as the weeks progress,
+
+153
+00:06:04,710 --> 00:06:07,340
+I'm going to give you
+guys the access necessary
+
+154
+00:06:07,340 --> 00:06:09,300
+to different tools
+and resources.
+
+155
+00:06:09,300 --> 00:06:11,970
+And so that way, I can
+quickly and efficiently
+
+156
+00:06:11,970 --> 00:06:14,410
+make sure that everybody
+has the same access level.
+
+157
+00:06:14,410 --> 00:06:17,820
+And I also don't have to
+worry that, well, if I just
+
+158
+00:06:17,820 --> 00:06:21,450
+grant you guys blanket access to
+everything, that maybe as you're
+
+159
+00:06:21,450 --> 00:06:24,390
+learning, you make a mistake,
+you leave a big instance EC2
+
+160
+00:06:24,390 --> 00:06:26,730
+instance up and running and
+cost us a bunch of money.
+
+161
+00:06:26,730 --> 00:06:29,110
+And then all of a sudden,
+people come complaining to me.
+
+162
+00:06:29,110 --> 00:06:32,610
+So that's the idea, and that's
+why bucket you guys into an IAM
+
+163
+00:06:32,610 --> 00:06:34,710
+group as well too.
+
+164
+00:06:34,710 --> 00:06:38,370
+So then the IAM policy
+is the actual document
+
+165
+00:06:38,370 --> 00:06:40,080
+that defines what
+those resources are
+
+166
+00:06:40,080 --> 00:06:42,750
+that you can access
+and the level at which
+
+167
+00:06:42,750 --> 00:06:44,343
+you can access those resources.
+
+168
+00:06:44,343 --> 00:06:46,260
+Because there's going
+to be certain things of,
+
+169
+00:06:46,260 --> 00:06:48,460
+like, again S3 is
+a perfect example.
+
+170
+00:06:48,460 --> 00:06:52,270
+I might want to allow you
+to read from an S3 bucket,
+
+171
+00:06:52,270 --> 00:06:54,610
+I'm fine with you downloading
+data from that S3 bucket,
+
+172
+00:06:54,610 --> 00:06:56,880
+but I don't want you to have
+access to write to that.
+
+173
+00:06:56,880 --> 00:06:58,380
+Because writing to
+that is what it's
+
+174
+00:06:58,380 --> 00:06:59,700
+going to cost us,
+because now you're
+
+175
+00:06:59,700 --> 00:07:01,690
+all of a sudden adding
+more resources there.
+
+176
+00:07:01,690 --> 00:07:03,492
+So it's more per
+gigabyte storage costs.
+
+177
+00:07:03,492 --> 00:07:04,950
+And so that's what
+I want to limit,
+
+178
+00:07:04,950 --> 00:07:06,550
+is actually your write access.
+
+179
+00:07:06,550 --> 00:07:08,200
+And so I'll give
+you a read access,
+
+180
+00:07:08,200 --> 00:07:10,330
+but I won't give
+you write access.
+
+181
+00:07:10,330 --> 00:07:12,900
+And so that's what we mean by
+determining the level of access
+
+182
+00:07:12,900 --> 00:07:15,550
+to each of those resources.
+
+183
+00:07:15,550 --> 00:07:17,850
+And then finally, the IAM role.
+
+184
+00:07:17,850 --> 00:07:19,990
+This is just a
+mechanism, a tool to use
+
+185
+00:07:19,990 --> 00:07:23,740
+to grant permissions for
+making specific requests to AWS
+
+186
+00:07:23,740 --> 00:07:24,670
+services.
+
+187
+00:07:24,670 --> 00:07:27,940
+So again, for
+example, this could
+
+188
+00:07:27,940 --> 00:07:32,210
+be something where I say, I
+assign to my EC2 instance,
+
+189
+00:07:32,210 --> 00:07:38,990
+an IAM role, that is the
+role of maybe EC2 admin.
+
+190
+00:07:38,990 --> 00:07:41,650
+Maybe I'm fine with
+this EC2 instance having
+
+191
+00:07:41,650 --> 00:07:45,130
+the role of being able to
+spin up a new EC2 instances
+
+192
+00:07:45,130 --> 00:07:48,070
+or shut down EC2 instances
+because maybe I have written
+
+193
+00:07:48,070 --> 00:07:51,190
+some application in
+this instance that
+
+194
+00:07:51,190 --> 00:07:53,890
+is designed to automatically
+monitor the company's
+
+195
+00:07:53,890 --> 00:07:54,770
+EC2 instances.
+
+196
+00:07:54,770 --> 00:07:59,180
+And so I need it to be able to
+spin up and shut down other EC2
+
+197
+00:07:59,180 --> 00:07:59,870
+instances.
+
+198
+00:07:59,870 --> 00:08:04,330
+And so therefore, I will assign
+to it the IAM role of EC2 admin.
+
+199
+00:08:04,330 --> 00:08:06,170
+That's what we mean by this.
+
+200
+00:08:06,170 --> 00:08:07,190
+It's a lot of words.
+
+201
+00:08:07,190 --> 00:08:08,660
+I'm using a lot
+of similar words,
+
+202
+00:08:08,660 --> 00:08:10,130
+so I'm sure it's
+probably overlapping.
+
+203
+00:08:10,130 --> 00:08:11,170
+We're going to see
+this in practice
+
+204
+00:08:11,170 --> 00:08:13,513
+again too, so don't worry if
+it's not all clicking yet.
+
+205
+00:08:13,513 --> 00:08:15,680
+The whole thing about here
+is experiential learning.
+
+206
+00:08:15,680 --> 00:08:18,020
+We want to make sure we
+actually work with these tools
+
+207
+00:08:18,020 --> 00:08:19,953
+and see how they
+work in practice.
+
+208
+00:08:22,990 --> 00:08:25,930
+So then there's
+two different ways
+
+209
+00:08:25,930 --> 00:08:27,820
+that we are going
+to grant access
+
+210
+00:08:27,820 --> 00:08:31,750
+to IAM users, programmatic
+and management console.
+
+211
+00:08:31,750 --> 00:08:34,419
+So what you guys have been
+using today or up to today
+
+212
+00:08:34,419 --> 00:08:37,497
+is almost exclusively been
+the AWS management console.
+
+213
+00:08:37,497 --> 00:08:39,039
+I don't think we've
+done anything yet
+
+214
+00:08:39,039 --> 00:08:42,320
+where we've actually touched
+or used programmatic access.
+
+215
+00:08:42,320 --> 00:08:44,169
+But that's kind of the more--
+
+216
+00:08:44,169 --> 00:08:45,860
+I don't want to say
+the more common way,
+
+217
+00:08:45,860 --> 00:08:49,690
+but the more practical way to
+use it in most day to day tasks.
+
+218
+00:08:49,690 --> 00:08:52,310
+What the programmatic access
+is it's basically saying,
+
+219
+00:08:52,310 --> 00:08:54,160
+well, I'm going to
+assign you an access
+
+220
+00:08:54,160 --> 00:08:57,770
+key ID and a secret access key
+or some sort of application,
+
+221
+00:08:57,770 --> 00:09:00,500
+an access key ID and
+a secret access key,
+
+222
+00:09:00,500 --> 00:09:05,440
+and it's going to use that to
+make calls via the AWS Command
+
+223
+00:09:05,440 --> 00:09:07,720
+Line Interface, that's
+what CLI stands for,
+
+224
+00:09:07,720 --> 00:09:10,960
+or the software development kit.
+
+225
+00:09:10,960 --> 00:09:13,220
+And so it can go
+through those platforms
+
+226
+00:09:13,220 --> 00:09:16,180
+from a programmatic standpoint,
+either like in your Python code
+
+227
+00:09:16,180 --> 00:09:18,550
+or directly on the
+command line to do things
+
+228
+00:09:18,550 --> 00:09:21,410
+like create buckets,
+spin up EC2 instances,
+
+229
+00:09:21,410 --> 00:09:24,390
+launch resources, kick
+off lambda events.
+
+230
+00:09:24,390 --> 00:09:26,310
+All that stuff can be
+done programmatically.
+
+231
+00:09:26,310 --> 00:09:27,710
+So basically,
+anything you can do
+
+232
+00:09:27,710 --> 00:09:31,310
+when you're clicking through
+the menus in AWS, basically,
+
+233
+00:09:31,310 --> 00:09:34,520
+all of that can be done from
+the command line as well too.
+
+234
+00:09:34,520 --> 00:09:36,650
+And I hope you can see
+why that's important
+
+235
+00:09:36,650 --> 00:09:39,600
+because again, I can automate
+things on the command line.
+
+236
+00:09:39,600 --> 00:09:42,180
+It's not really easy to
+automate clicking through menus.
+
+237
+00:09:42,180 --> 00:09:44,763
+That is really hard to do,
+and it's not very robust.
+
+238
+00:09:44,763 --> 00:09:46,430
+Because if they change
+where something's
+
+239
+00:09:46,430 --> 00:09:50,570
+positioned on the console
+menu, then I might actually--
+
+240
+00:09:50,570 --> 00:09:52,080
+my program will break.
+
+241
+00:09:52,080 --> 00:09:55,460
+So more often than not, we want
+to use programmatic access such
+
+242
+00:09:55,460 --> 00:09:58,520
+that the process
+to change something
+
+243
+00:09:58,520 --> 00:10:01,040
+or to do some tasks to
+spin up some resource
+
+244
+00:10:01,040 --> 00:10:04,820
+can be or can be automated and
+can stay the same no matter
+
+245
+00:10:04,820 --> 00:10:06,160
+what happens on the back end.
+
+246
+00:10:09,050 --> 00:10:12,350
+And so by default, IAM
+users don't have access
+
+247
+00:10:12,350 --> 00:10:14,900
+to really anything.
+
+248
+00:10:14,900 --> 00:10:18,530
+The best practice here, and I've
+even said it a few times now,
+
+249
+00:10:18,530 --> 00:10:21,180
+is to follow this principle
+of least privilege.
+
+250
+00:10:21,180 --> 00:10:23,540
+So basically, to
+access something,
+
+251
+00:10:23,540 --> 00:10:26,360
+you need to be granted
+the access to it.
+
+252
+00:10:26,360 --> 00:10:28,920
+By default, you have
+access to nothing.
+
+253
+00:10:28,920 --> 00:10:30,590
+The reason we do this,
+it's a little bit
+
+254
+00:10:30,590 --> 00:10:32,780
+annoying from
+management standpoint
+
+255
+00:10:32,780 --> 00:10:37,050
+because then you're obligated
+to constantly grant access,
+
+256
+00:10:37,050 --> 00:10:38,640
+grant access, grant access.
+
+257
+00:10:38,640 --> 00:10:40,502
+But from a security
+perspective, it's
+
+258
+00:10:40,502 --> 00:10:41,960
+way, way better
+because there's not
+
+259
+00:10:41,960 --> 00:10:45,140
+some sort of account that's
+just looming out there
+
+260
+00:10:45,140 --> 00:10:47,840
+that shouldn't be
+accessing something.
+
+261
+00:10:47,840 --> 00:10:52,730
+It could even be something where
+maybe you work for a company,
+
+262
+00:10:52,730 --> 00:10:54,960
+and after somebody
+gets fired or let go,
+
+263
+00:10:54,960 --> 00:10:58,650
+they should lose access
+to their account.
+
+264
+00:10:58,650 --> 00:11:01,700
+But for whatever reason, it
+doesn't instantly knock it down.
+
+265
+00:11:01,700 --> 00:11:03,920
+Well, we want to make
+sure that they only
+
+266
+00:11:03,920 --> 00:11:06,350
+have the least
+privilege, the least
+
+267
+00:11:06,350 --> 00:11:08,392
+access necessary
+for their tasks such
+
+268
+00:11:08,392 --> 00:11:10,600
+that they can't all of a
+sudden do some other damage.
+
+269
+00:11:10,600 --> 00:11:12,840
+We can at least
+monitor or we know
+
+270
+00:11:12,840 --> 00:11:16,090
+that they'd be constrained to
+some region of AWS resources.
+
+271
+00:11:16,090 --> 00:11:19,720
+And so that's this idea of
+principles of least privilege.
+
+272
+00:11:19,720 --> 00:11:23,850
+So you can see here the
+IAM user group or role will
+
+273
+00:11:23,850 --> 00:11:26,470
+be granted full access
+to EC2 instances,
+
+274
+00:11:26,470 --> 00:11:30,310
+but then could be granted read
+only access to the S3 bucket.
+
+275
+00:11:30,310 --> 00:11:32,050
+If it needed write
+access, we would then
+
+276
+00:11:32,050 --> 00:11:34,718
+have to explicitly
+grant it, write access.
+
+277
+00:11:34,718 --> 00:11:36,510
+And so the idea again
+being that everything
+
+278
+00:11:36,510 --> 00:11:38,220
+is very, very explicit.
+
+279
+00:11:38,220 --> 00:11:41,670
+If it's not explicitly
+stated, it doesn't happen.
+
+280
+00:11:41,670 --> 00:11:44,760
+We do this via the IAM
+policies we talked about,
+
+281
+00:11:44,760 --> 00:11:47,410
+and the IAM policy, as we
+said, is just a document.
+
+282
+00:11:47,410 --> 00:11:50,940
+It's a JSON, JavaScript Object
+Notation, we'll see this a lot,
+
+283
+00:11:50,940 --> 00:11:53,400
+whether in this course or just
+kind of throughout your time
+
+284
+00:11:53,400 --> 00:11:56,820
+in working in the tech
+world, JSON documents
+
+285
+00:11:56,820 --> 00:11:57,720
+are fairly common.
+
+286
+00:11:57,720 --> 00:11:59,220
+And it's just
+something that's going
+
+287
+00:11:59,220 --> 00:12:03,030
+to list the permissions in a
+nice almost dictionary format
+
+288
+00:12:03,030 --> 00:12:05,370
+of the permissions that
+allow or deny access
+
+289
+00:12:05,370 --> 00:12:07,006
+to the very specific resources.
+
+290
+00:12:09,890 --> 00:12:12,090
+There's two types of policies.
+
+291
+00:12:12,090 --> 00:12:15,450
+And again, I apologize that
+it's a lot of just things.
+
+292
+00:12:15,450 --> 00:12:17,458
+The idea is not for
+you to memorize this.
+
+293
+00:12:17,458 --> 00:12:20,000
+So if you don't feel like you
+are picking it all up right now
+
+294
+00:12:20,000 --> 00:12:22,710
+or you don't remember these
+things, that's perfectly OK.
+
+295
+00:12:22,710 --> 00:12:25,090
+My goal is to introduce
+them, and so that you
+
+296
+00:12:25,090 --> 00:12:26,340
+know have these as a resource.
+
+297
+00:12:26,340 --> 00:12:27,610
+You can come back
+to this video, you
+
+298
+00:12:27,610 --> 00:12:29,443
+can come back to these
+slides and figure out
+
+299
+00:12:29,443 --> 00:12:32,640
+the exact specific thing you
+need for your task at hand.
+
+300
+00:12:32,640 --> 00:12:34,470
+But it's not to
+memorize everything.
+
+301
+00:12:34,470 --> 00:12:35,887
+So don't stress on that.
+
+302
+00:12:35,887 --> 00:12:37,470
+We're never going
+to test you and say,
+
+303
+00:12:37,470 --> 00:12:39,110
+what are the
+characteristics of identity
+
+304
+00:12:39,110 --> 00:12:41,030
+based policy What's the
+characteristic of resource based
+
+305
+00:12:41,030 --> 00:12:41,840
+policy?
+
+306
+00:12:41,840 --> 00:12:45,478
+But if you do take the AWS
+Cloud Practitioner exam,
+
+307
+00:12:45,478 --> 00:12:48,020
+you will be expected to know
+these things and the differences
+
+308
+00:12:48,020 --> 00:12:51,000
+between resource based policy
+and identity based policy.
+
+309
+00:12:51,000 --> 00:12:53,270
+And so that's why we want
+to give you these resources
+
+310
+00:12:53,270 --> 00:12:57,330
+so you can study them if that's
+something you'd like to do.
+
+311
+00:12:57,330 --> 00:13:00,790
+But getting back to it, we
+have two types of policies.
+
+312
+00:13:00,790 --> 00:13:03,990
+And remember, these are those
+JSON documents that explicitly
+
+313
+00:13:03,990 --> 00:13:06,280
+allow or deny access.
+
+314
+00:13:06,280 --> 00:13:11,140
+The identity based policy is
+attached to an IAM entity.
+
+315
+00:13:11,140 --> 00:13:14,910
+It will be attached to a user,
+a group or a role, right.
+
+316
+00:13:14,910 --> 00:13:18,420
+These policies will specify
+what can be performed
+
+317
+00:13:18,420 --> 00:13:20,880
+and what can't be performed.
+
+318
+00:13:20,880 --> 00:13:23,045
+Remember that the least
+privileged process
+
+319
+00:13:23,045 --> 00:13:24,670
+or the principle
+of least privilege
+
+320
+00:13:24,670 --> 00:13:27,000
+states that you won't
+have access to anything
+
+321
+00:13:27,000 --> 00:13:28,950
+unless explicitly granted.
+
+322
+00:13:28,950 --> 00:13:33,870
+But you can also explicitly
+deny as well too so that there's
+
+323
+00:13:33,870 --> 00:13:36,930
+no worry or there's no chance
+that they could maybe get access
+
+324
+00:13:36,930 --> 00:13:38,180
+through some other means.
+
+325
+00:13:38,180 --> 00:13:39,610
+It's going to
+explicitly deny it.
+
+326
+00:13:39,610 --> 00:13:41,650
+So that is an option
+as well, though again,
+
+327
+00:13:41,650 --> 00:13:46,350
+it's almost a redundant
+step in most cases.
+
+328
+00:13:46,350 --> 00:13:49,020
+You can attach a single
+policy to multiple entities
+
+329
+00:13:49,020 --> 00:13:51,410
+as well too, and that's
+often very common.
+
+330
+00:13:51,410 --> 00:13:57,360
+So it might be that I assign
+or I create an IAM policy that
+
+331
+00:13:57,360 --> 00:14:03,430
+is for data 3600 level access,
+and I assign that to a role.
+
+332
+00:14:03,430 --> 00:14:05,760
+Well, that role may get
+assigned to some individuals
+
+333
+00:14:05,760 --> 00:14:07,530
+or maybe I'll have
+a TA that needs
+
+334
+00:14:07,530 --> 00:14:09,360
+to play around with
+some things and see
+
+335
+00:14:09,360 --> 00:14:10,930
+how it works from
+their perspective,
+
+336
+00:14:10,930 --> 00:14:13,860
+and so I assign them that role
+temporarily so they can play
+
+337
+00:14:13,860 --> 00:14:16,475
+around with it, see what it's
+like, from your environment,
+
+338
+00:14:16,475 --> 00:14:18,600
+and then they can be assigned
+a different role that
+
+339
+00:14:18,600 --> 00:14:21,190
+would change their access
+to level access or something
+
+340
+00:14:21,190 --> 00:14:22,010
+like that.
+
+341
+00:14:22,010 --> 00:14:25,540
+And then I can also take that
+IAM policy, that identity based
+
+342
+00:14:25,540 --> 00:14:28,610
+policy, and assign it to
+the user group as well too.
+
+343
+00:14:28,610 --> 00:14:30,850
+That is going to be you
+guys here at the data 3600
+
+344
+00:14:30,850 --> 00:14:32,570
+class or the IS 3600 class.
+
+345
+00:14:32,570 --> 00:14:36,070
+Sorry, I get the
+prefixes mixed up.
+
+346
+00:14:36,070 --> 00:14:39,650
+And also, a single entity
+can have multiple policies.
+
+347
+00:14:39,650 --> 00:14:46,490
+So you could be assigned the
+data 30 or the IS 3600 policy,
+
+348
+00:14:46,490 --> 00:14:49,270
+but you could also
+be assigned-- maybe
+
+349
+00:14:49,270 --> 00:14:52,330
+you're working on an ASC
+project for the Department.
+
+350
+00:14:52,330 --> 00:14:54,460
+And so you could also
+be assigned-- well,
+
+351
+00:14:54,460 --> 00:14:56,650
+I'm going to give you a
+little bit of extra access
+
+352
+00:14:56,650 --> 00:15:01,960
+that is for a project we're
+working on that needs access
+
+353
+00:15:01,960 --> 00:15:03,560
+to specific S3 buckets.
+
+354
+00:15:03,560 --> 00:15:08,660
+So you'll get the policy
+for project 10 ASC project.
+
+355
+00:15:08,660 --> 00:15:11,140
+And the idea here
+is that, again,
+
+356
+00:15:11,140 --> 00:15:13,060
+the reason we want
+to allow that--
+
+357
+00:15:13,060 --> 00:15:17,110
+and also this is why we have
+explicit deny statements too
+
+358
+00:15:17,110 --> 00:15:21,590
+in policies, is that maybe
+in the IS 3600 class,
+
+359
+00:15:21,590 --> 00:15:25,490
+I give you a blanket, you don't
+have access to S3 right now.
+
+360
+00:15:25,490 --> 00:15:28,630
+Maybe it's early on, so I
+don't want you accessing S3.
+
+361
+00:15:28,630 --> 00:15:30,590
+Well, then it might be
+that for this project,
+
+362
+00:15:30,590 --> 00:15:33,970
+you need access to a
+specific S3 bucket.
+
+363
+00:15:33,970 --> 00:15:37,990
+If I have an explicit blanket
+deny on all S3 buckets,
+
+364
+00:15:37,990 --> 00:15:41,580
+that will supersede access to
+anything-- any other specific S3
+
+365
+00:15:41,580 --> 00:15:42,080
+buckets.
+
+366
+00:15:42,080 --> 00:15:45,460
+So if I said, IS 3600
+students can access S3
+
+367
+00:15:45,460 --> 00:15:48,790
+and then I also give you a new
+policy that has specific S3
+
+368
+00:15:48,790 --> 00:15:53,380
+access, this one of an
+explicit deny of S3 buckets
+
+369
+00:15:53,380 --> 00:15:55,320
+will supersede that.
+
+370
+00:15:55,320 --> 00:15:59,260
+But if I don't explicitly
+deny S3 access,
+
+371
+00:15:59,260 --> 00:16:02,260
+then it's just assumed
+that you are denied access.
+
+372
+00:16:02,260 --> 00:16:04,140
+But if then in another
+policy, I grant
+
+373
+00:16:04,140 --> 00:16:06,370
+you access to a
+specific S3 bucket,
+
+374
+00:16:06,370 --> 00:16:08,850
+you'll get access to that
+one but not have access
+
+375
+00:16:08,850 --> 00:16:10,920
+to any of the other ones.
+
+376
+00:16:10,920 --> 00:16:12,220
+So that's subtle.
+
+377
+00:16:12,220 --> 00:16:16,470
+But the idea is, again, I'm
+going to explicitly deny what
+
+378
+00:16:16,470 --> 00:16:20,370
+cannot be superseded at
+all, but if it's implicit.
+
+379
+00:16:20,370 --> 00:16:23,850
+I don't want you to get there,
+but if there's a specific use
+
+380
+00:16:23,850 --> 00:16:28,210
+case, then I can give it to you,
+then I don't explicitly deny.
+
+381
+00:16:28,210 --> 00:16:30,160
+There's also a
+resource-based policies
+
+382
+00:16:30,160 --> 00:16:32,180
+that are attached
+obviously to a resource.
+
+383
+00:16:32,180 --> 00:16:34,700
+So an S3 bucket,
+an EC2 instance,
+
+384
+00:16:34,700 --> 00:16:37,570
+whatever you want to call,
+pick your favorite resource,
+
+385
+00:16:37,570 --> 00:16:40,270
+and that's going to specify
+who has access to the resource
+
+386
+00:16:40,270 --> 00:16:42,160
+and what can be performed on it.
+
+387
+00:16:42,160 --> 00:16:44,570
+So again, it's applied
+to the whole resource.
+
+388
+00:16:44,570 --> 00:16:49,030
+So you could say, I'm only
+going to allow S3 Glacier Deep
+
+389
+00:16:49,030 --> 00:16:51,550
+Archive to be read
+from, because maybe that
+
+390
+00:16:51,550 --> 00:16:54,520
+is where I'm putting my
+company's secure and long term
+
+391
+00:16:54,520 --> 00:16:58,270
+backup storage or backup
+copies, and I don't
+
+392
+00:16:58,270 --> 00:17:00,017
+need that be deleted ever.
+
+393
+00:17:00,017 --> 00:17:01,600
+Worst case, we'll
+just write new stuff
+
+394
+00:17:01,600 --> 00:17:03,392
+and we'll just keep
+the old stuff in there,
+
+395
+00:17:03,392 --> 00:17:07,760
+but I never want to let
+you delete from that.
+
+396
+00:17:07,760 --> 00:17:10,510
+And so I can make it a very
+explicit blanket resource-based
+
+397
+00:17:10,510 --> 00:17:12,440
+policy that says, nobody
+can delete from this.
+
+398
+00:17:12,440 --> 00:17:14,690
+The only way you could ever
+delete something from that
+
+399
+00:17:14,690 --> 00:17:17,440
+is for an admin user
+that has admin privileges
+
+400
+00:17:17,440 --> 00:17:20,680
+to go in, remove that
+policy, and then go in
+
+401
+00:17:20,680 --> 00:17:22,310
+and explicitly delete that.
+
+402
+00:17:22,310 --> 00:17:24,940
+And so the idea here again
+being that it's very intentional
+
+403
+00:17:24,940 --> 00:17:25,839
+steps.
+
+404
+00:17:25,839 --> 00:17:28,700
+Those very intentional
+steps and explicit steps
+
+405
+00:17:28,700 --> 00:17:30,835
+are what separates
+the security here.
+
+406
+00:17:34,990 --> 00:17:37,540
+So an example of an IAM policy.
+
+407
+00:17:37,540 --> 00:17:39,880
+So this is what one
+would look-- this is what
+
+408
+00:17:39,880 --> 00:17:41,410
+a JSON document looks like.
+
+409
+00:17:41,410 --> 00:17:43,160
+So you can read it like this.
+
+410
+00:17:43,160 --> 00:17:46,130
+So you see these curly
+brackets, this one is open,
+
+411
+00:17:46,130 --> 00:17:48,050
+this one down here is closed.
+
+412
+00:17:48,050 --> 00:17:51,370
+So that's going to contain
+the whole JSON note--
+
+413
+00:17:51,370 --> 00:17:53,390
+JSON document
+information in there.
+
+414
+00:17:53,390 --> 00:17:55,660
+So it's a dictionary-- very
+similar to a dictionary
+
+415
+00:17:55,660 --> 00:17:57,910
+in Python.
+
+416
+00:17:57,910 --> 00:18:00,430
+And then you'll see here
+that we have-- oops.
+
+417
+00:18:00,430 --> 00:18:02,650
+We have version,
+and so that's going
+
+418
+00:18:02,650 --> 00:18:05,360
+to specify again the version
+that we're working on.
+
+419
+00:18:05,360 --> 00:18:08,020
+The statement though is
+what actually contains
+
+420
+00:18:08,020 --> 00:18:11,210
+the explicit allow or deny.
+
+421
+00:18:11,210 --> 00:18:13,730
+So you see in here,
+this statement says,
+
+422
+00:18:13,730 --> 00:18:20,380
+I want to have the effect
+of allowing DynamoDB S3
+
+423
+00:18:20,380 --> 00:18:23,770
+access and these
+specific S3 buckets
+
+424
+00:18:23,770 --> 00:18:27,590
+and this explicit
+DynamoDB table name.
+
+425
+00:18:27,590 --> 00:18:28,640
+It's not blanket.
+
+426
+00:18:28,640 --> 00:18:33,390
+It's only an allow for these
+actions on these resources.
+
+427
+00:18:33,390 --> 00:18:38,240
+So you see that effect
+action resource trio there.
+
+428
+00:18:38,240 --> 00:18:42,440
+And then within that statement,
+that's the square bracket here.
+
+429
+00:18:42,440 --> 00:18:44,840
+You see that's the
+square brackets, a list.
+
+430
+00:18:44,840 --> 00:18:46,550
+It is a list.
+
+431
+00:18:46,550 --> 00:18:49,190
+Within that, there's
+another statement
+
+432
+00:18:49,190 --> 00:18:51,270
+or, yeah, another
+statement, another effect,
+
+433
+00:18:51,270 --> 00:18:53,100
+and that's a deny effect.
+
+434
+00:18:53,100 --> 00:18:58,430
+And that effect denies
+access to DynamoDB and S3,
+
+435
+00:18:58,430 --> 00:19:04,400
+and then it's going to have
+but excluding these resources.
+
+436
+00:19:04,400 --> 00:19:06,490
+So you see there, it's
+not resources excluding.
+
+437
+00:19:06,490 --> 00:19:08,240
+I don't really care
+about you guys knowing
+
+438
+00:19:08,240 --> 00:19:09,420
+exactly the syntax of this.
+
+439
+00:19:09,420 --> 00:19:11,690
+I just want to show you
+roughly how it works.
+
+440
+00:19:11,690 --> 00:19:13,790
+But see here that
+in explicit deny
+
+441
+00:19:13,790 --> 00:19:17,100
+statement will take precedence
+over an allow statement.
+
+442
+00:19:17,100 --> 00:19:18,660
+So if I deny it--
+
+443
+00:19:18,660 --> 00:19:23,220
+if I allowed it and then
+I explicitly deny it,
+
+444
+00:19:23,220 --> 00:19:24,750
+that will take precedence.
+
+445
+00:19:24,750 --> 00:19:28,040
+So like I was saying is if
+you're working on the IS 3600
+
+446
+00:19:28,040 --> 00:19:32,452
+or working under that policy and
+it has an explicit deny of S3,
+
+447
+00:19:32,452 --> 00:19:34,160
+I don't care if I have
+anything else that
+
+448
+00:19:34,160 --> 00:19:36,600
+comes in there that says, you
+should be granted S3 access,
+
+449
+00:19:36,600 --> 00:19:39,510
+even if it's, you should
+be granted S3 admin access.
+
+450
+00:19:39,510 --> 00:19:41,300
+There's still an
+explicit deny in there
+
+451
+00:19:41,300 --> 00:19:45,270
+that will always
+take precedence.
+
+452
+00:19:45,270 --> 00:19:47,250
+So again, just to
+show this explicitly
+
+453
+00:19:47,250 --> 00:19:51,100
+in a flow chart, the way AWS
+is reading this on the backend
+
+454
+00:19:51,100 --> 00:19:54,010
+is it says, if you try to do
+something, it's going to say,
+
+455
+00:19:54,010 --> 00:19:57,400
+first off, is this
+permission explicitly denied?
+
+456
+00:19:57,400 --> 00:20:00,460
+If it's a yes, it doesn't matter
+what else happens after that,
+
+457
+00:20:00,460 --> 00:20:03,190
+you are denied
+access to blanket.
+
+458
+00:20:03,190 --> 00:20:05,830
+If it's not explicitly
+denied, it then it
+
+459
+00:20:05,830 --> 00:20:08,840
+will be asking, OK, well,
+is it explicitly allowed?
+
+460
+00:20:08,840 --> 00:20:11,510
+If it is, then great,
+you can access it.
+
+461
+00:20:11,510 --> 00:20:14,288
+If it's not, you
+are still denied.
+
+462
+00:20:14,288 --> 00:20:15,830
+So you see, it's
+more often than not,
+
+463
+00:20:15,830 --> 00:20:17,705
+you're going to end up
+in the deny statement.
+
+464
+00:20:17,705 --> 00:20:19,960
+It has to be both not
+explicitly denied and then
+
+465
+00:20:19,960 --> 00:20:22,935
+explicitly allowed to allow
+you access to the resource.
+
+466
+00:20:26,490 --> 00:20:28,570
+And so as we talked
+about IAM groups,
+
+467
+00:20:28,570 --> 00:20:31,240
+it's just a nice way
+to aggregate people
+
+468
+00:20:31,240 --> 00:20:32,120
+under one bucket.
+
+469
+00:20:32,120 --> 00:20:34,120
+And so I can just assign
+a policy to the group,
+
+470
+00:20:34,120 --> 00:20:36,190
+and that policy
+trickles down then
+
+471
+00:20:36,190 --> 00:20:40,840
+to all the users
+within that group.
+
+472
+00:20:40,840 --> 00:20:43,600
+So here's an example of maybe
+I have admins, developers,
+
+473
+00:20:43,600 --> 00:20:44,470
+and testers.
+
+474
+00:20:44,470 --> 00:20:46,120
+And so these people,
+all I have to do
+
+475
+00:20:46,120 --> 00:20:50,080
+is change the policy
+the resource access
+
+476
+00:20:50,080 --> 00:20:51,440
+from the whole group level.
+
+477
+00:20:51,440 --> 00:20:56,390
+And each of these individuals
+will be given access as well to.
+
+478
+00:20:56,390 --> 00:20:58,580
+A user can belong to
+multiple groups though.
+
+479
+00:20:58,580 --> 00:21:00,740
+Though remember, that
+explicit allow, deny
+
+480
+00:21:00,740 --> 00:21:01,920
+can come into play here.
+
+481
+00:21:01,920 --> 00:21:04,280
+So if you ever have somebody
+assigned to multiple groups
+
+482
+00:21:04,280 --> 00:21:06,330
+and something's not
+working the way you expect,
+
+483
+00:21:06,330 --> 00:21:08,090
+look at those explicit
+denies and see
+
+484
+00:21:08,090 --> 00:21:09,350
+if maybe they're
+superseding something
+
+485
+00:21:09,350 --> 00:21:11,570
+that you don't want them
+to and then rethink how you
+
+486
+00:21:11,570 --> 00:21:14,360
+need to structure that policy.
+
+487
+00:21:14,360 --> 00:21:15,840
+There's no default group though.
+
+488
+00:21:15,840 --> 00:21:19,010
+So there's not like you can
+say, everybody in this--
+
+489
+00:21:19,010 --> 00:21:20,660
+that's in this
+organization can do this
+
+490
+00:21:20,660 --> 00:21:23,270
+without explicitly adding
+everybody to that organization
+
+491
+00:21:23,270 --> 00:21:26,580
+or adding a policy to a resource
+within that whole organization,
+
+492
+00:21:26,580 --> 00:21:29,300
+there's no default group
+that you can assign things to
+
+493
+00:21:29,300 --> 00:21:31,020
+and you can't nest
+the groups either.
+
+494
+00:21:31,020 --> 00:21:33,980
+So I can't be--
+
+495
+00:21:33,980 --> 00:21:36,532
+all developers or admins and
+all testers or developers
+
+496
+00:21:36,532 --> 00:21:37,490
+or something like that.
+
+497
+00:21:37,490 --> 00:21:39,450
+It has to be separate entities.
+
+498
+00:21:39,450 --> 00:21:41,333
+We really want to avoid
+any sort of ambiguity
+
+499
+00:21:41,333 --> 00:21:43,250
+of what sort of permission
+should or shouldn't
+
+500
+00:21:43,250 --> 00:21:44,430
+be allowed anywhere.
+
+501
+00:21:46,970 --> 00:21:49,760
+And then the IAM roles,
+that's an identity
+
+502
+00:21:49,760 --> 00:21:51,660
+with specific
+permissions added to it.
+
+503
+00:21:51,660 --> 00:21:54,110
+So again, the way you want
+to think about this is,
+
+504
+00:21:54,110 --> 00:21:59,750
+maybe there are certain
+things where I don't--
+
+505
+00:21:59,750 --> 00:22:03,000
+again, so it's similar to a user
+that you attach policies to it.
+
+506
+00:22:03,000 --> 00:22:06,470
+But you don't want to uniquely
+associate that policy with just
+
+507
+00:22:06,470 --> 00:22:08,420
+one user, and you
+don't necessarily
+
+508
+00:22:08,420 --> 00:22:10,710
+want to create a group
+for all these users.
+
+509
+00:22:10,710 --> 00:22:12,770
+You're just saying
+that, hey, there's
+
+510
+00:22:12,770 --> 00:22:16,730
+this task that could
+happen, and the access that
+
+511
+00:22:16,730 --> 00:22:18,770
+would be needed to do
+this task, I can just
+
+512
+00:22:18,770 --> 00:22:20,130
+define it by that role.
+
+513
+00:22:20,130 --> 00:22:22,920
+And then whether it's a
+person, application or service,
+
+514
+00:22:22,920 --> 00:22:24,980
+I can assign that role
+to them and they'll
+
+515
+00:22:24,980 --> 00:22:26,370
+have that relevant access.
+
+516
+00:22:26,370 --> 00:22:27,870
+So it allows you
+to streamline this.
+
+517
+00:22:27,870 --> 00:22:30,270
+So if there's common tasks
+that need to be done,
+
+518
+00:22:30,270 --> 00:22:32,960
+maybe it's that
+there's a user that
+
+519
+00:22:32,960 --> 00:22:36,890
+is working through a
+automatic setup or some code
+
+520
+00:22:36,890 --> 00:22:39,060
+on the back end that
+needs to be run repeatedly
+
+521
+00:22:39,060 --> 00:22:41,030
+and they're testing it
+out on their platform
+
+522
+00:22:41,030 --> 00:22:45,720
+or their local environment or
+in the cloud on an EC2 instance,
+
+523
+00:22:45,720 --> 00:22:48,240
+I can assign the role
+to that EC2 instance.
+
+524
+00:22:48,240 --> 00:22:50,070
+And then I can say,
+OK, if this role is
+
+525
+00:22:50,070 --> 00:22:51,790
+all they need to
+complete that task,
+
+526
+00:22:51,790 --> 00:22:55,570
+I can now assign that
+IAM role to a service.
+
+527
+00:22:55,570 --> 00:22:58,230
+I can attach it to
+some container service
+
+528
+00:22:58,230 --> 00:23:04,290
+so that all the containers spun
+up have this IAM role attached
+
+529
+00:23:04,290 --> 00:23:06,660
+and they all have the
+same access that developer
+
+530
+00:23:06,660 --> 00:23:08,350
+had for that task.
+
+531
+00:23:08,350 --> 00:23:11,080
+So it's just to try to
+simplify some of these things.
+
+532
+00:23:11,080 --> 00:23:13,170
+So I give some examples here.
+
+533
+00:23:13,170 --> 00:23:17,100
+Granting an IAM user access
+to larger EC2 instances
+
+534
+00:23:17,100 --> 00:23:18,340
+for a specific project.
+
+535
+00:23:18,340 --> 00:23:21,090
+So again, maybe you're working
+on an ASC project for us,
+
+536
+00:23:21,090 --> 00:23:24,000
+and we all of a sudden
+need to use a really
+
+537
+00:23:24,000 --> 00:23:25,770
+beefy computer or a GPU.
+
+538
+00:23:25,770 --> 00:23:29,475
+Well, rather than
+having to go in there
+
+539
+00:23:29,475 --> 00:23:31,350
+and manually change what
+your user can access
+
+540
+00:23:31,350 --> 00:23:33,780
+and then go back and remove
+what you can access and change
+
+541
+00:23:33,780 --> 00:23:35,680
+some things, I can
+just quickly say, well,
+
+542
+00:23:35,680 --> 00:23:38,940
+here's the IAM
+role for GPU access
+
+543
+00:23:38,940 --> 00:23:41,470
+for data science research.
+
+544
+00:23:41,470 --> 00:23:45,090
+And once you're done with that
+task, I can repeal that role,
+
+545
+00:23:45,090 --> 00:23:46,930
+and then you don't
+have access anymore.
+
+546
+00:23:46,930 --> 00:23:48,030
+So it simplifies again.
+
+547
+00:23:48,030 --> 00:23:50,238
+And I can do that for a
+bunch of people really quick,
+
+548
+00:23:50,238 --> 00:23:52,880
+and then remove those
+and all that good stuff.
+
+549
+00:23:52,880 --> 00:23:54,630
+You can use it for
+granting an application
+
+550
+00:23:54,630 --> 00:23:58,322
+access to specific resources,
+and this is really useful.
+
+551
+00:23:58,322 --> 00:24:00,780
+And you'll see this later on
+to avoid embedding credentials
+
+552
+00:24:00,780 --> 00:24:01,630
+in the app.
+
+553
+00:24:01,630 --> 00:24:04,320
+So let's say that you need to--
+
+554
+00:24:04,320 --> 00:24:06,420
+in this specific
+application, you
+
+555
+00:24:06,420 --> 00:24:09,840
+need to query some sort of
+table, some sort of big database
+
+556
+00:24:09,840 --> 00:24:11,010
+that you have.
+
+557
+00:24:11,010 --> 00:24:13,660
+And rather than having
+to explicitly put,
+
+558
+00:24:13,660 --> 00:24:17,910
+well, this is the user
+ID and a passkey that
+
+559
+00:24:17,910 --> 00:24:21,090
+will let you access
+that database,
+
+560
+00:24:21,090 --> 00:24:22,840
+rather than putting
+that into the app,
+
+561
+00:24:22,840 --> 00:24:24,770
+I can just assign
+the role or yeah,
+
+562
+00:24:24,770 --> 00:24:27,173
+the role to that application.
+
+563
+00:24:27,173 --> 00:24:28,590
+And so then I don't
+have this risk
+
+564
+00:24:28,590 --> 00:24:30,048
+that, well, if
+somebody gets access
+
+565
+00:24:30,048 --> 00:24:31,830
+to the source code
+of my app, I don't
+
+566
+00:24:31,830 --> 00:24:35,170
+have my password and username
+embedded in there somewhere.
+
+567
+00:24:35,170 --> 00:24:38,910
+That's the idea and help
+that security out some.
+
+568
+00:24:38,910 --> 00:24:41,580
+And then yeah, granting access
+to resources in your account
+
+569
+00:24:41,580 --> 00:24:42,760
+or to a user in a
+different account.
+
+570
+00:24:42,760 --> 00:24:43,950
+So it's just that granting.
+
+571
+00:24:43,950 --> 00:24:47,600
+That's kind of a
+blanket statement.
+
+572
+00:24:47,600 --> 00:24:49,847
+So here's an example
+use of an IAM role.
+
+573
+00:24:49,847 --> 00:24:51,680
+So let's say, again,
+you have an application
+
+574
+00:24:51,680 --> 00:24:54,620
+that runs on an EC2
+instance, but needs access
+
+575
+00:24:54,620 --> 00:24:56,052
+to an S3 bucket.
+
+576
+00:24:56,052 --> 00:24:57,510
+So the application
+is running here.
+
+577
+00:24:57,510 --> 00:25:00,800
+This rectangle is
+representing the EC2 instance.
+
+578
+00:25:00,800 --> 00:25:04,310
+Well, I can define
+an IAM policy that
+
+579
+00:25:04,310 --> 00:25:06,860
+grants access to a
+specific bucket, the photos
+
+580
+00:25:06,860 --> 00:25:09,080
+bucket within S3.
+
+581
+00:25:09,080 --> 00:25:15,170
+I can attach that policy to a
+role, and I can assume that role
+
+582
+00:25:15,170 --> 00:25:17,960
+or have that EC2 instance
+assume that role such
+
+583
+00:25:17,960 --> 00:25:22,070
+that it has permission
+to access that S3 bucket.
+
+584
+00:25:22,070 --> 00:25:23,250
+So see, that's the flow.
+
+585
+00:25:23,250 --> 00:25:27,990
+Attach a policy to a role, have
+an instance assume that role,
+
+586
+00:25:27,990 --> 00:25:29,543
+and then it has that access.
+
+587
+00:25:29,543 --> 00:25:30,960
+And in the event
+that I don't need
+
+588
+00:25:30,960 --> 00:25:32,710
+it-- don't want it to
+have access anymore,
+
+589
+00:25:32,710 --> 00:25:34,140
+I can repeal that role.
+
+590
+00:25:34,140 --> 00:25:35,750
+I can pull that role
+from them, but I
+
+591
+00:25:35,750 --> 00:25:38,332
+don't have to necessarily pull
+policies and change policies
+
+592
+00:25:38,332 --> 00:25:39,540
+around or anything like that.
+
+593
+00:25:39,540 --> 00:25:41,240
+It really simplifies
+the amount of coding
+
+594
+00:25:41,240 --> 00:25:42,823
+I have to do because
+then I don't have
+
+595
+00:25:42,823 --> 00:25:44,660
+to write a bunch of
+JSON over and over
+
+596
+00:25:44,660 --> 00:25:46,473
+that denies and allows
+all over the place.
+
+597
+00:25:46,473 --> 00:25:48,390
+And that's going to get
+messy and you're going
+
+598
+00:25:48,390 --> 00:25:49,685
+to probably mess something up.
+
+599
+00:25:52,380 --> 00:25:55,470
+And then there's also
+the account root user.
+
+600
+00:25:55,470 --> 00:25:58,890
+You won't see in this course
+unless you create your own AWS
+
+601
+00:25:58,890 --> 00:26:00,210
+account entirely.
+
+602
+00:26:00,210 --> 00:26:02,230
+None of you will have
+root user access.
+
+603
+00:26:02,230 --> 00:26:07,200
+There's only going to be one
+root user that exists usually,
+
+604
+00:26:07,200 --> 00:26:10,290
+and it's also not
+recommended to use that.
+
+605
+00:26:10,290 --> 00:26:12,990
+The root user has
+access to everything.
+
+606
+00:26:12,990 --> 00:26:15,790
+That user can do anything they
+want to do on the account.
+
+607
+00:26:15,790 --> 00:26:17,370
+They can set up any resources.
+
+608
+00:26:17,370 --> 00:26:20,140
+The thing is, they can also
+assign any policies, roles,
+
+609
+00:26:20,140 --> 00:26:21,100
+repeal anything.
+
+610
+00:26:21,100 --> 00:26:22,890
+So access to that
+root user account
+
+611
+00:26:22,890 --> 00:26:26,440
+is absolutely critical
+to keep secure.
+
+612
+00:26:26,440 --> 00:26:29,550
+And so the real
+way you do this is
+
+613
+00:26:29,550 --> 00:26:32,010
+even if you are the main
+admin at your company,
+
+614
+00:26:32,010 --> 00:26:34,420
+you're the only person who
+knows anything about AWS,
+
+615
+00:26:34,420 --> 00:26:37,120
+you'll set up the user--
+you'll set up the AWS account,
+
+616
+00:26:37,120 --> 00:26:39,160
+you'll be granted root access.
+
+617
+00:26:39,160 --> 00:26:40,702
+But then the second
+you get in there,
+
+618
+00:26:40,702 --> 00:26:42,243
+the first thing you
+should do is just
+
+619
+00:26:42,243 --> 00:26:43,770
+go create an IAM
+role for yourself
+
+620
+00:26:43,770 --> 00:26:47,070
+or an IAM user for yourself,
+and you can grant them
+
+621
+00:26:47,070 --> 00:26:48,217
+a lot of permissions.
+
+622
+00:26:48,217 --> 00:26:49,800
+You could grant them
+admin permissions
+
+623
+00:26:49,800 --> 00:26:52,600
+to mostly everything,
+but it's still
+
+624
+00:26:52,600 --> 00:26:54,910
+going to be all controlled
+through that user account
+
+625
+00:26:54,910 --> 00:26:58,820
+and only that user account
+will be the one you use.
+
+626
+00:26:58,820 --> 00:27:01,960
+Keep that root
+account to the side.
+
+627
+00:27:01,960 --> 00:27:03,940
+You really want to--
+
+628
+00:27:03,940 --> 00:27:06,610
+like I suggested here, disable
+remove your account root user
+
+629
+00:27:06,610 --> 00:27:07,360
+access keys.
+
+630
+00:27:07,360 --> 00:27:09,970
+You really don't want to
+be accessing from that
+
+631
+00:27:09,970 --> 00:27:13,570
+unless absolutely necessary.
+
+632
+00:27:13,570 --> 00:27:15,830
+It is the biggest
+security hole in this.
+
+633
+00:27:15,830 --> 00:27:18,130
+And that's the
+nature of security.
+
+634
+00:27:18,130 --> 00:27:20,860
+Is, it's hard to have--
+
+635
+00:27:20,860 --> 00:27:24,670
+actually, it's impossible to
+have a perfect security system.
+
+636
+00:27:24,670 --> 00:27:27,260
+What we try to do
+is mitigate risks.
+
+637
+00:27:27,260 --> 00:27:29,710
+And the root user is
+the way we do this.
+
+638
+00:27:29,710 --> 00:27:33,160
+Is, we put everything into IAM
+users and roles and policies
+
+639
+00:27:33,160 --> 00:27:35,860
+and groups, and
+know that there is
+
+640
+00:27:35,860 --> 00:27:40,420
+one super user above all that
+can technically allow access
+
+641
+00:27:40,420 --> 00:27:41,117
+to everything.
+
+642
+00:27:41,117 --> 00:27:42,700
+But that means we
+just need to protect
+
+643
+00:27:42,700 --> 00:27:44,800
+that one user account
+and everything else
+
+644
+00:27:44,800 --> 00:27:46,150
+is controlled separately.
+
+645
+00:27:46,150 --> 00:27:47,330
+That's the hope with this.
+
+646
+00:27:47,330 --> 00:27:48,812
+So keep that in mind.
+
+647
+00:27:48,812 --> 00:27:50,770
+Again, we won't do it
+explicitly in this course
+
+648
+00:27:50,770 --> 00:27:56,550
+because you won't be asked to
+do that, but that is the risk.
+
+649
+00:27:56,550 --> 00:27:57,180
+And so great.
+
+650
+00:27:57,180 --> 00:27:58,805
+I'll pause it there
+now, and then we're
+
+651
+00:27:58,805 --> 00:28:00,960
+going to switch over
+to a short demo on how
+
+652
+00:28:00,960 --> 00:28:05,590
+to add users and change
+policies, that kind of stuff.
+
+653
+00:28:05,590 --> 00:28:08,820
+So we'll do that here in a
+second once I switch my screens.
+
+654
+00:28:08,820 --> 00:28:09,320
+All right.
+
+655
+00:28:09,320 --> 00:28:12,940
+So picking up now from the
+AWS management console,
+
+656
+00:28:12,940 --> 00:28:16,840
+let's zoom in again so you can
+see something on the screen.
+
+657
+00:28:16,840 --> 00:28:22,090
+And now we just want to
+explore some of the tools,
+
+658
+00:28:22,090 --> 00:28:25,280
+again, available in the
+identity and access management,
+
+659
+00:28:25,280 --> 00:28:28,420
+as well as how do we
+add people to groups
+
+660
+00:28:28,420 --> 00:28:30,080
+and all that good stuff?
+
+661
+00:28:30,080 --> 00:28:31,870
+And so I'll start by
+just selecting IAM
+
+662
+00:28:31,870 --> 00:28:35,870
+or, again, you could search IAM.
+
+663
+00:28:35,870 --> 00:28:37,100
+And come over here.
+
+664
+00:28:37,100 --> 00:28:40,290
+And then under
+Users, I've created--
+
+665
+00:28:40,290 --> 00:28:42,710
+all of you will be in
+there, but I've also
+
+666
+00:28:42,710 --> 00:28:47,880
+created three test users,
+user-1, user-2 and user-3.
+
+667
+00:28:47,880 --> 00:28:49,910
+So you can imagine these
+are like new employees
+
+668
+00:28:49,910 --> 00:28:51,710
+that we have basically.
+
+669
+00:28:51,710 --> 00:28:53,870
+So let's click
+User-1 for a second.
+
+670
+00:28:53,870 --> 00:28:57,380
+And I'll Zoom in even
+more a little bit bigger.
+
+671
+00:28:57,380 --> 00:29:01,280
+So under User-1 now,
+this is the summary page
+
+672
+00:29:01,280 --> 00:29:02,550
+for that individual.
+
+673
+00:29:02,550 --> 00:29:04,560
+So this is the Permissions page.
+
+674
+00:29:04,560 --> 00:29:08,450
+And as you see right now,
+there are no permissions.
+
+675
+00:29:08,450 --> 00:29:12,212
+That's exactly by default.
+When I created this account,
+
+676
+00:29:12,212 --> 00:29:14,670
+I didn't explicitly give them
+any permissions at the start.
+
+677
+00:29:14,670 --> 00:29:17,045
+And so therefore, they have
+no permission to do anything.
+
+678
+00:29:17,045 --> 00:29:19,800
+If you logged into this account,
+you'd see the resources there,
+
+679
+00:29:19,800 --> 00:29:20,880
+but you couldn't
+click on anything.
+
+680
+00:29:20,880 --> 00:29:21,700
+When you clicked
+on everything, it
+
+681
+00:29:21,700 --> 00:29:23,850
+would be like no access
+allowed or something like that.
+
+682
+00:29:23,850 --> 00:29:24,840
+You might have even
+seen this already.
+
+683
+00:29:24,840 --> 00:29:27,423
+It's a banner-- that red banner
+that comes across the top that
+
+684
+00:29:27,423 --> 00:29:29,660
+doesn't allow you access to it.
+
+685
+00:29:29,660 --> 00:29:32,400
+You can choose the
+Groups tab here.
+
+686
+00:29:32,400 --> 00:29:34,980
+And if they were a part of a
+group, they would see that here.
+
+687
+00:29:34,980 --> 00:29:37,450
+But this person, again,
+is not part of a group.
+
+688
+00:29:37,450 --> 00:29:40,110
+We can look at the
+security credentials.
+
+689
+00:29:40,110 --> 00:29:43,750
+And so they've been
+assigned a console password,
+
+690
+00:29:43,750 --> 00:29:45,700
+but they haven't signed
+in at all before.
+
+691
+00:29:45,700 --> 00:29:48,510
+And so because of that,
+they won't be able to access
+
+692
+00:29:48,510 --> 00:29:50,440
+or they won't have changed
+their password yet.
+
+693
+00:29:50,440 --> 00:29:52,840
+So they would need
+to, again, log in,
+
+694
+00:29:52,840 --> 00:29:55,080
+create their new password
+like you guys have
+
+695
+00:29:55,080 --> 00:29:57,570
+to do for the first time, and
+then they could actually go
+
+696
+00:29:57,570 --> 00:30:00,990
+ahead and proceed through this.
+
+697
+00:30:00,990 --> 00:30:03,210
+We can also actually
+manage this and require
+
+698
+00:30:03,210 --> 00:30:07,270
+that they have some sort of
+multi-factor authentication,
+
+699
+00:30:07,270 --> 00:30:09,990
+whether it be through virtual
+like an app on your phone
+
+700
+00:30:09,990 --> 00:30:13,680
+or a security key or
+some other hardware
+
+701
+00:30:13,680 --> 00:30:17,770
+token that they use for
+factor authentication.
+
+702
+00:30:17,770 --> 00:30:20,790
+So you can control
+all of that here.
+
+703
+00:30:20,790 --> 00:30:23,933
+In the left hand side, we can
+select User Groups though,
+
+704
+00:30:23,933 --> 00:30:25,350
+and this will pull
+up all the user
+
+705
+00:30:25,350 --> 00:30:27,220
+groups we have in this account.
+
+706
+00:30:27,220 --> 00:30:29,790
+So you can see here,
+we've got a couple there.
+
+707
+00:30:29,790 --> 00:30:31,692
+But for the most part,
+I'm going to play
+
+708
+00:30:31,692 --> 00:30:34,150
+with these three or these are
+three new ones I've created--
+
+709
+00:30:34,150 --> 00:30:39,780
+EC2 support, EC2 admin,
+and then S3 support.
+
+710
+00:30:39,780 --> 00:30:42,760
+So let's click into the
+EC2 support for a second.
+
+711
+00:30:42,760 --> 00:30:46,570
+And then this is the summary
+page for that EC2 support group.
+
+712
+00:30:46,570 --> 00:30:48,400
+So you can see here,
+again, what we have.
+
+713
+00:30:48,400 --> 00:30:51,360
+There's no users in this
+group yet, so it's blank here.
+
+714
+00:30:51,360 --> 00:30:52,980
+But we can click
+the Permissions tab
+
+715
+00:30:52,980 --> 00:30:55,210
+and see what permissions
+they have access to.
+
+716
+00:30:55,210 --> 00:30:58,710
+And you see right now, I've
+assigned a single policy
+
+717
+00:30:58,710 --> 00:31:01,050
+to that user group.
+
+718
+00:31:01,050 --> 00:31:05,430
+So this right here is a policy,
+hence the policy name there,
+
+719
+00:31:05,430 --> 00:31:09,670
+and that's an Amazon
+EC2 read only access.
+
+720
+00:31:09,670 --> 00:31:13,140
+This is actually a prebuilt
+policy that's available on AWS.
+
+721
+00:31:13,140 --> 00:31:14,617
+It's built by AWS,
+and so you don't
+
+722
+00:31:14,617 --> 00:31:16,450
+have to go through and
+manually write these.
+
+723
+00:31:16,450 --> 00:31:18,400
+There's tons of these
+default policies.
+
+724
+00:31:18,400 --> 00:31:22,422
+You can probably actually
+see if we start typing--
+
+725
+00:31:22,422 --> 00:31:24,130
+I would have to do
+under Add Permissions.
+
+726
+00:31:24,130 --> 00:31:26,588
+But either way, there's a ton
+of these that you can choose,
+
+727
+00:31:26,588 --> 00:31:28,460
+and EC2 read only
+access is one of them.
+
+728
+00:31:28,460 --> 00:31:30,210
+Because unsurprisingly,
+sometimes you only
+
+729
+00:31:30,210 --> 00:31:34,008
+need to be able to
+read from EC2 access.
+
+730
+00:31:34,008 --> 00:31:35,550
+And so I'll click
+on that-- actually,
+
+731
+00:31:35,550 --> 00:31:36,370
+I'll go back for a second.
+
+732
+00:31:36,370 --> 00:31:38,250
+I just want to click
+the little plus sign.
+
+733
+00:31:38,250 --> 00:31:39,808
+I don't want to read
+the whole thing.
+
+734
+00:31:39,808 --> 00:31:41,350
+So if you click the
+little plus sign,
+
+735
+00:31:41,350 --> 00:31:42,892
+you can actually
+see a quick overview
+
+736
+00:31:42,892 --> 00:31:46,830
+of what the policy looks like,
+the actual JSON underneath this.
+
+737
+00:31:46,830 --> 00:31:49,530
+And so the policy is
+granting permissions
+
+738
+00:31:49,530 --> 00:31:54,510
+to basically list and describe
+EC2 load balance, elastic load
+
+739
+00:31:54,510 --> 00:31:57,370
+balancing, CloudWatch,
+and autoscaling.
+
+740
+00:31:57,370 --> 00:32:00,420
+But it's not going
+to be able to modify
+
+741
+00:32:00,420 --> 00:32:01,690
+them or anything like that.
+
+742
+00:32:01,690 --> 00:32:02,440
+So think about it.
+
+743
+00:32:02,440 --> 00:32:05,910
+If you had like a support team
+and their job was to figure out,
+
+744
+00:32:05,910 --> 00:32:07,950
+hey, is there any
+EC2 instances that
+
+745
+00:32:07,950 --> 00:32:12,063
+are down or running
+into issues, this policy
+
+746
+00:32:12,063 --> 00:32:13,230
+would allow them to do that.
+
+747
+00:32:13,230 --> 00:32:15,750
+It allows them to list
+out all the EC2 instances
+
+748
+00:32:15,750 --> 00:32:18,660
+that are running or that
+exist and then describe them
+
+749
+00:32:18,660 --> 00:32:20,410
+as well to provide
+information about them.
+
+750
+00:32:20,410 --> 00:32:22,922
+But they can't launch
+them, create new ones,
+
+751
+00:32:22,922 --> 00:32:24,630
+delete them or terminate
+them, stop them,
+
+752
+00:32:24,630 --> 00:32:25,570
+or anything like that.
+
+753
+00:32:25,570 --> 00:32:29,910
+It's just read only access.
+
+754
+00:32:29,910 --> 00:32:32,073
+And so the basic structure
+of this policy-- again,
+
+755
+00:32:32,073 --> 00:32:33,490
+we talked about
+this a little bit,
+
+756
+00:32:33,490 --> 00:32:35,560
+but it's three
+components-- an effect,
+
+757
+00:32:35,560 --> 00:32:36,832
+an action, and a resource.
+
+758
+00:32:36,832 --> 00:32:38,290
+You'll see everything
+is in effect,
+
+759
+00:32:38,290 --> 00:32:39,610
+an action, and a resource.
+
+760
+00:32:39,610 --> 00:32:42,065
+The effect is either
+allow or deny.
+
+761
+00:32:42,065 --> 00:32:43,190
+Do I allow this permission?
+
+762
+00:32:43,190 --> 00:32:44,380
+Do I explicitly deny it?
+
+763
+00:32:44,380 --> 00:32:47,160
+Explicit allow, explicit deny.
+
+764
+00:32:47,160 --> 00:32:50,910
+The action specifies
+the API calls that can
+
+765
+00:32:50,910 --> 00:32:52,810
+be made against an AWS service.
+
+766
+00:32:52,810 --> 00:32:55,000
+If you guys aren't familiar
+with APIs, it's OK.
+
+767
+00:32:55,000 --> 00:32:56,860
+It's application
+programming interface.
+
+768
+00:32:56,860 --> 00:32:59,460
+This is what we're talking
+about, that programmatic access.
+
+769
+00:32:59,460 --> 00:33:01,860
+I could go on the command
+line and make a request
+
+770
+00:33:01,860 --> 00:33:04,840
+and say, hey, I want
+to call EC2 describe,
+
+771
+00:33:04,840 --> 00:33:06,720
+describe all of
+the EC2 instances
+
+772
+00:33:06,720 --> 00:33:09,040
+or list all the EC2 instances.
+
+773
+00:33:09,040 --> 00:33:15,120
+That's a call I'm making, a
+request I'm making to AWS,
+
+774
+00:33:15,120 --> 00:33:17,940
+and then it's returning me
+some sort of information.
+
+775
+00:33:17,940 --> 00:33:20,708
+And so the action specifies the
+API calls that are allowed here.
+
+776
+00:33:20,708 --> 00:33:22,500
+So you see all of these
+different ones that
+
+777
+00:33:22,500 --> 00:33:26,820
+are explicitly allowed are
+API calls that they can do.
+
+778
+00:33:26,820 --> 00:33:29,310
+And the resource then
+defines the scope
+
+779
+00:33:29,310 --> 00:33:31,870
+of entities covered
+by that policy.
+
+780
+00:33:31,870 --> 00:33:34,180
+So for example--
+
+781
+00:33:34,180 --> 00:33:34,930
+[DOG BARKING]
+
+782
+00:33:34,930 --> 00:33:36,120
+Sorry.
+
+783
+00:33:36,120 --> 00:33:36,620
+OK.
+
+784
+00:33:36,620 --> 00:33:37,610
+Sorry about that.
+
+785
+00:33:37,610 --> 00:33:40,780
+My dog, that you guys have
+now seen in pictures enough,
+
+786
+00:33:40,780 --> 00:33:43,000
+the doorbell rang, and
+you can imagine that he
+
+787
+00:33:43,000 --> 00:33:44,540
+lost his mind almost instantly.
+
+788
+00:33:44,540 --> 00:33:46,570
+So brief hiccup.
+
+789
+00:33:46,570 --> 00:33:48,735
+But joys of online
+lecturing, right?
+
+790
+00:33:48,735 --> 00:33:49,400
+But yeah.
+
+791
+00:33:49,400 --> 00:33:51,910
+So either way, as I was
+saying, the resource aspect
+
+792
+00:33:51,910 --> 00:33:54,610
+of this, that's going to define
+the scope of the entities
+
+793
+00:33:54,610 --> 00:33:55,730
+covered by the policy.
+
+794
+00:33:55,730 --> 00:34:00,250
+So you could put here a specific
+S3 bucket or a specific EC2
+
+795
+00:34:00,250 --> 00:34:04,870
+instance, or you can just put
+this asterisk, which just means
+
+796
+00:34:04,870 --> 00:34:07,340
+any resource within this scope.
+
+797
+00:34:07,340 --> 00:34:10,280
+So here we said,
+allow EC2 describe,
+
+798
+00:34:10,280 --> 00:34:12,860
+so that means we can
+discard any EC2 instance.
+
+799
+00:34:12,860 --> 00:34:15,530
+And again, we said the resource
+could be any EC2 instance.
+
+800
+00:34:15,530 --> 00:34:17,710
+We didn't say only
+EC2 instances within
+
+801
+00:34:17,710 --> 00:34:19,947
+or the sets of EC2 instance.
+
+802
+00:34:19,947 --> 00:34:21,739
+We want to be able to
+describe all of them.
+
+803
+00:34:21,739 --> 00:34:25,040
+But you could specify here.
+
+804
+00:34:25,040 --> 00:34:25,540
+All right.
+
+805
+00:34:25,540 --> 00:34:30,040
+And then we can minimize
+that again for a second.
+
+806
+00:34:30,040 --> 00:34:31,960
+Then let's jump over to--
+
+807
+00:34:31,960 --> 00:34:34,360
+or sorry, let's
+see, user groups.
+
+808
+00:34:34,360 --> 00:34:38,420
+Yeah, I wanted to look
+at the S3 support group.
+
+809
+00:34:38,420 --> 00:34:42,010
+So let's go back to the
+user groups for a second.
+
+810
+00:34:42,010 --> 00:34:44,020
+Let's open up the
+S3 support group,
+
+811
+00:34:44,020 --> 00:34:45,530
+and then we'll pull up this one.
+
+812
+00:34:45,530 --> 00:34:48,469
+So you see this one now--
+oops, just under Permissions,
+
+813
+00:34:48,469 --> 00:34:50,929
+it doesn't have any users,
+but it does have a policy.
+
+814
+00:34:50,929 --> 00:34:55,260
+And this one has S3
+read only access.
+
+815
+00:34:55,260 --> 00:34:59,845
+And you'll notice though
+that this is actually--
+
+816
+00:34:59,845 --> 00:35:02,280
+so where am I at here?
+
+817
+00:35:02,280 --> 00:35:02,780
+I'm sorry.
+
+818
+00:35:02,780 --> 00:35:04,155
+I'm getting mixed
+up on my notes.
+
+819
+00:35:04,155 --> 00:35:04,700
+Oh, yeah.
+
+820
+00:35:04,700 --> 00:35:06,040
+So this is just telling
+you-- showing you guys
+
+821
+00:35:06,040 --> 00:35:07,700
+that again, this is S3 access.
+
+822
+00:35:07,700 --> 00:35:09,640
+So again, we're allowing S3--
+
+823
+00:35:09,640 --> 00:35:15,860
+we're allowing this
+access to Git S3 buckets,
+
+824
+00:35:15,860 --> 00:35:20,570
+list them, get lambda
+object, list lambda objects.
+
+825
+00:35:20,570 --> 00:35:23,520
+And again, that applies
+to all the resources.
+
+826
+00:35:23,520 --> 00:35:26,020
+But then if we go back now to--
+this is what I was thinking.
+
+827
+00:35:26,020 --> 00:35:27,270
+I was jumping ahead of myself.
+
+828
+00:35:27,270 --> 00:35:29,720
+If we jump to EC2 admin group,
+this one's a bit different.
+
+829
+00:35:29,720 --> 00:35:31,220
+So no users yet.
+
+830
+00:35:31,220 --> 00:35:34,270
+But under Permissions, you'll
+see that this is actually
+
+831
+00:35:34,270 --> 00:35:35,830
+a customer inline policy.
+
+832
+00:35:35,830 --> 00:35:37,790
+And I'll go back so you
+can see what I mean.
+
+833
+00:35:37,790 --> 00:35:40,810
+If I look at EC2 support
+or S3 is the same one,
+
+834
+00:35:40,810 --> 00:35:46,580
+this EC2 read only access,
+that's an AWS managed policy.
+
+835
+00:35:46,580 --> 00:35:49,810
+Again, that was one that
+was designed already by AWS.
+
+836
+00:35:49,810 --> 00:35:53,655
+But under EC2 admin, I
+created a new one inline,
+
+837
+00:35:53,655 --> 00:35:54,530
+so just for this one.
+
+838
+00:35:54,530 --> 00:35:57,680
+It's basically like clicking
+Add Policy here to do that.
+
+839
+00:35:57,680 --> 00:35:59,470
+And so it says customer
+inline, and it's
+
+840
+00:35:59,470 --> 00:36:03,400
+called EC2 describe
+start stop instances.
+
+841
+00:36:03,400 --> 00:36:06,460
+So if we click that
+one, maximize that,
+
+842
+00:36:06,460 --> 00:36:12,710
+we can see now that this policy
+grants permission to view
+
+843
+00:36:12,710 --> 00:36:16,370
+or so it's got the describe
+instances that the EC2
+
+844
+00:36:16,370 --> 00:36:20,090
+support had as well too,
+but it also is allowed now
+
+845
+00:36:20,090 --> 00:36:22,290
+to start and stop instances.
+
+846
+00:36:22,290 --> 00:36:24,500
+So you see the effect
+is allow, the action
+
+847
+00:36:24,500 --> 00:36:26,960
+is start and stop instances.
+
+848
+00:36:26,960 --> 00:36:29,665
+And we can, again, specify
+the resources for it here.
+
+849
+00:36:32,750 --> 00:36:33,320
+Perfect.
+
+850
+00:36:33,320 --> 00:36:35,850
+So that is, again, a
+bunch of user groups.
+
+851
+00:36:35,850 --> 00:36:38,100
+So we have three user
+groups and three users.
+
+852
+00:36:38,100 --> 00:36:41,450
+So now let's imagine that
+we're basically at a company,
+
+853
+00:36:41,450 --> 00:36:43,550
+and we recently hired user-1.
+
+854
+00:36:43,550 --> 00:36:45,620
+So let's pull up
+our users again.
+
+855
+00:36:45,620 --> 00:36:49,010
+Go to users, and
+we'll pull up user-1.
+
+856
+00:36:49,010 --> 00:36:51,440
+So we just recently
+hired on user-1,
+
+857
+00:36:51,440 --> 00:36:53,930
+and they're going to be
+providing support for S3--
+
+858
+00:36:53,930 --> 00:36:55,710
+for our S3 services.
+
+859
+00:36:55,710 --> 00:36:58,100
+So we're going to add them
+to the S3 support group.
+
+860
+00:36:58,100 --> 00:37:00,590
+So the way to do this is to
+jump over to the User Groups
+
+861
+00:37:00,590 --> 00:37:04,370
+category, select our
+S3 support group,
+
+862
+00:37:04,370 --> 00:37:09,450
+and then under the Users
+tab here, which we are,
+
+863
+00:37:09,450 --> 00:37:11,130
+we're going to click Add Users.
+
+864
+00:37:11,130 --> 00:37:13,730
+And then we're just going
+to search for user-1,
+
+865
+00:37:13,730 --> 00:37:15,890
+we're going to
+select them, and then
+
+866
+00:37:15,890 --> 00:37:18,590
+we're just going to add them.
+
+867
+00:37:18,590 --> 00:37:21,660
+So now, you see,
+user-1's in that group.
+
+868
+00:37:21,660 --> 00:37:22,860
+Nothing too crazy here.
+
+869
+00:37:22,860 --> 00:37:25,320
+A lot of management is
+clicking through menus,
+
+870
+00:37:25,320 --> 00:37:28,190
+so it's nice and easy to do.
+
+871
+00:37:28,190 --> 00:37:30,200
+Sorry, I think my
+dog is barking again
+
+872
+00:37:30,200 --> 00:37:32,353
+at somebody else out front now.
+
+873
+00:37:32,353 --> 00:37:33,270
+It's just the mailman.
+
+874
+00:37:33,270 --> 00:37:34,490
+We're good.
+
+875
+00:37:34,490 --> 00:37:39,020
+Then the next step here is to
+add user-2 we also hired on
+
+876
+00:37:39,020 --> 00:37:40,830
+to the EC2 support group.
+
+877
+00:37:40,830 --> 00:37:44,630
+So go user-2, EC2 support.
+
+878
+00:37:44,630 --> 00:37:51,230
+We'll go Add User, we'll
+click them, add them there.
+
+879
+00:37:51,230 --> 00:37:52,770
+So now that has a user.
+
+880
+00:37:52,770 --> 00:37:54,950
+And then finally,
+unsurprisingly, user-3
+
+881
+00:37:54,950 --> 00:37:57,350
+is going to be our EC2 admin.
+
+882
+00:37:57,350 --> 00:38:02,210
+Let's go here, Add Users,
+and we'll go to user-3
+
+883
+00:38:02,210 --> 00:38:04,250
+and add it on.
+
+884
+00:38:04,250 --> 00:38:05,670
+Perfect.
+
+885
+00:38:05,670 --> 00:38:09,620
+And so now we have the admin,
+our support, and our EC2 support
+
+886
+00:38:09,620 --> 00:38:13,490
+and our S3 support
+staff loaded into there.
+
+887
+00:38:13,490 --> 00:38:17,210
+And so we can now
+jump over and sign
+
+888
+00:38:17,210 --> 00:38:18,990
+in to our actual test users.
+
+889
+00:38:18,990 --> 00:38:23,780
+So I'm going to log in as if
+I am, let's say, user-1 Oops.
+
+890
+00:38:23,780 --> 00:38:25,063
+User-1.
+
+891
+00:38:25,063 --> 00:38:26,730
+So again, they haven't
+logged in before,
+
+892
+00:38:26,730 --> 00:38:29,280
+so I'll have to recreate or
+create a new password for them.
+
+893
+00:38:29,280 --> 00:38:31,197
+Don't worry, I'll help
+delete this by the time
+
+894
+00:38:31,197 --> 00:38:32,640
+you guys get to it.
+
+895
+00:38:32,640 --> 00:38:35,950
+So let's go-- so first,
+I'm going to log out.
+
+896
+00:38:35,950 --> 00:38:38,640
+So we're to sign out here.
+
+897
+00:38:38,640 --> 00:38:41,520
+Or actually, I can
+leave myself logged in.
+
+898
+00:38:41,520 --> 00:38:42,960
+I found this trick
+actually before
+
+899
+00:38:42,960 --> 00:38:47,020
+that I could use where I
+just use incognito window.
+
+900
+00:38:47,020 --> 00:38:49,630
+So I'm going to log
+back into my account
+
+901
+00:38:49,630 --> 00:38:52,820
+so we can see what
+they're doing 54826.
+
+902
+00:38:52,820 --> 00:38:53,320
+Perfect.
+
+903
+00:38:55,750 --> 00:38:57,750
+So then we're going to
+jump over here, and let's
+
+904
+00:38:57,750 --> 00:38:59,870
+now launch an incognito window.
+
+905
+00:39:02,568 --> 00:39:04,360
+I'll just do it a
+smaller window size here.
+
+906
+00:39:04,360 --> 00:39:08,270
+We can actually
+split our screen.
+
+907
+00:39:08,270 --> 00:39:10,570
+Let's do that.
+
+908
+00:39:10,570 --> 00:39:13,600
+And I'll leave this split like
+that so we see on both sides.
+
+909
+00:39:13,600 --> 00:39:16,610
+And so let's log
+into those accounts.
+
+910
+00:39:16,610 --> 00:39:21,520
+So let's first go to
+aws.amazon.com like usual.
+
+911
+00:39:21,520 --> 00:39:22,490
+Not create account.
+
+912
+00:39:22,490 --> 00:39:24,940
+We're going to just
+sign into an account.
+
+913
+00:39:24,940 --> 00:39:27,470
+And now you'll see here
+that we're an IAM user.
+
+914
+00:39:27,470 --> 00:39:29,770
+So the account alias
+is the USU-ASC.
+
+915
+00:39:29,770 --> 00:39:31,330
+It's the one you guys are using.
+
+916
+00:39:31,330 --> 00:39:35,570
+And I made a note here of
+the user's name and password,
+
+917
+00:39:35,570 --> 00:39:38,250
+the default password
+I gave them.
+
+918
+00:39:38,250 --> 00:39:40,973
+So let's hope this works.
+
+919
+00:39:40,973 --> 00:39:43,390
+It's been a couple of weeks
+since I set these accounts up.
+
+920
+00:39:46,670 --> 00:39:47,950
+Perfect.
+
+921
+00:39:47,950 --> 00:39:48,450
+All right.
+
+922
+00:39:48,450 --> 00:39:50,850
+Awesome so we can
+close out that.
+
+923
+00:39:50,850 --> 00:39:51,350
+Cool.
+
+924
+00:39:51,350 --> 00:39:51,970
+Done.
+
+925
+00:39:51,970 --> 00:39:52,840
+We're good to go.
+
+926
+00:39:52,840 --> 00:39:53,370
+So awesome.
+
+927
+00:39:53,370 --> 00:39:55,710
+So now they're able to
+log in and good to go.
+
+928
+00:39:55,710 --> 00:39:56,210
+All right.
+
+929
+00:39:56,210 --> 00:39:57,085
+That's what I forgot.
+
+930
+00:39:57,085 --> 00:39:59,960
+I gave them specific
+passwords so
+
+931
+00:39:59,960 --> 00:40:02,130
+that I didn't have to do
+the change in the password.
+
+932
+00:40:02,130 --> 00:40:03,630
+So that's why I
+didn't do that step.
+
+933
+00:40:03,630 --> 00:40:07,040
+I forgot I had thought about
+that annoyance in there.
+
+934
+00:40:07,040 --> 00:40:07,650
+So perfect.
+
+935
+00:40:07,650 --> 00:40:11,210
+So now we are logged
+into user-1's account.
+
+936
+00:40:11,210 --> 00:40:13,200
+And we can see--
+
+937
+00:40:13,200 --> 00:40:16,470
+so let's go over here
+in the Services menu,
+
+938
+00:40:16,470 --> 00:40:22,050
+and we'll do S3, open that up.
+
+939
+00:40:22,050 --> 00:40:24,000
+And so our user here,
+I think we put him
+
+940
+00:40:24,000 --> 00:40:25,660
+into the S3 support group.
+
+941
+00:40:25,660 --> 00:40:31,000
+And so they have permission
+to view these S3 buckets.
+
+942
+00:40:31,000 --> 00:40:33,730
+So we'll choose the name of--
+
+943
+00:40:36,410 --> 00:40:37,627
+so let's just take this.
+
+944
+00:40:37,627 --> 00:40:39,210
+Yeah, because we
+already did this one.
+
+945
+00:40:39,210 --> 00:40:39,240
+Yeah.
+
+946
+00:40:39,240 --> 00:40:41,480
+So you can see here that they
+can see all this information
+
+947
+00:40:41,480 --> 00:40:43,147
+in here because they
+have access, again,
+
+948
+00:40:43,147 --> 00:40:46,430
+to list all the content.
+
+949
+00:40:46,430 --> 00:40:50,720
+Now let's actually see though
+if they have access to EC2.
+
+950
+00:40:50,720 --> 00:40:55,180
+They shouldn't have access to
+this if we did everything right.
+
+951
+00:40:55,180 --> 00:40:57,670
+So yeah, you see this API
+error that is getting thrown
+
+952
+00:40:57,670 --> 00:40:59,470
+everywhere, you might have
+already seen some of this if you
+
+953
+00:40:59,470 --> 00:41:02,095
+haven't-- if you don't have or
+if you're not to the point where
+
+954
+00:41:02,095 --> 00:41:03,620
+you have access to this yet.
+
+955
+00:41:03,620 --> 00:41:05,110
+But you see you're
+not authorized
+
+956
+00:41:05,110 --> 00:41:06,320
+to form this operation.
+
+957
+00:41:06,320 --> 00:41:07,850
+So they don't have EC2 access.
+
+958
+00:41:07,850 --> 00:41:10,090
+They can't list
+these instances out.
+
+959
+00:41:10,090 --> 00:41:12,310
+So let's actually
+sign out now and then
+
+960
+00:41:12,310 --> 00:41:16,150
+go into user-2's account.
+
+961
+00:41:16,150 --> 00:41:17,070
+So sign out.
+
+962
+00:41:19,760 --> 00:41:21,160
+Log back in.
+
+963
+00:41:21,160 --> 00:41:25,846
+USU-ASC, user-2.
+
+964
+00:41:25,846 --> 00:41:26,763
+Put in their password.
+
+965
+00:41:32,260 --> 00:41:34,967
+And so now if we go
+into EC2, we should
+
+966
+00:41:34,967 --> 00:41:36,050
+be able to see everything.
+
+967
+00:41:36,050 --> 00:41:36,550
+Yep.
+
+968
+00:41:36,550 --> 00:41:40,360
+So we can see we don't have any
+instances running right now.
+
+969
+00:41:40,360 --> 00:41:44,218
+There are a bunch of terminated
+instances or stopped instances.
+
+970
+00:41:44,218 --> 00:41:45,760
+But you can see that
+they have access
+
+971
+00:41:45,760 --> 00:41:48,670
+to read and click in
+and describe and see all
+
+972
+00:41:48,670 --> 00:41:50,742
+this information about them.
+
+973
+00:41:50,742 --> 00:41:54,040
+But if we go now to
+S3, they shouldn't
+
+974
+00:41:54,040 --> 00:41:57,780
+be able to see anything.
+
+975
+00:42:02,650 --> 00:42:03,150
+Yep.
+
+976
+00:42:03,150 --> 00:42:05,358
+So you see don't have
+permission to list the buckets.
+
+977
+00:42:05,358 --> 00:42:13,332
+And also, under EC2 actually, if
+we go here to Launch Instance,
+
+978
+00:42:13,332 --> 00:42:15,270
+I don't think it
+should allow them too.
+
+979
+00:42:15,270 --> 00:42:19,330
+So let's just say, test user-2.
+
+980
+00:42:19,330 --> 00:42:22,140
+I'll leave everything
+default. It's all good.
+
+981
+00:42:22,140 --> 00:42:23,135
+Key pair name.
+
+982
+00:42:26,010 --> 00:42:27,910
+And you'll see
+instance launch failed.
+
+983
+00:42:27,910 --> 00:42:29,490
+So you're not
+authorized to form this
+
+984
+00:42:29,490 --> 00:42:31,910
+because we haven't given
+them permission to do that.
+
+985
+00:42:31,910 --> 00:42:34,990
+So all that stuff
+is checking out.
+
+986
+00:42:34,990 --> 00:42:36,850
+Sorry, I realize I
+left this screen small.
+
+987
+00:42:36,850 --> 00:42:39,445
+Hopefully, you guys
+could see that.
+
+988
+00:42:39,445 --> 00:42:39,945
+OK.
+
+989
+00:42:39,945 --> 00:42:44,310
+Then finally, we will
+jump over to user-3,
+
+990
+00:42:44,310 --> 00:42:47,280
+who they should have more
+access because we gave them
+
+991
+00:42:47,280 --> 00:42:48,670
+admin access.
+
+992
+00:42:48,670 --> 00:42:50,550
+Let's sign out.
+
+993
+00:42:50,550 --> 00:42:53,460
+Let me sign into the console.
+
+994
+00:42:53,460 --> 00:42:56,220
+Same thing.
+
+995
+00:42:56,220 --> 00:42:59,190
+This is user-3.
+
+996
+00:42:59,190 --> 00:43:00,733
+And type in their password.
+
+997
+00:43:06,840 --> 00:43:11,732
+And now if we go to EC2,
+they were given the option
+
+998
+00:43:11,732 --> 00:43:14,190
+to be able-- so you can see
+they can see the instances here
+
+999
+00:43:14,190 --> 00:43:19,260
+still, and they should be
+able to start the instance.
+
+1000
+00:43:19,260 --> 00:43:22,820
+So we didn't give them the
+authority to actually see
+
+1001
+00:43:22,820 --> 00:43:24,195
+the status in the information.
+
+1002
+00:43:24,195 --> 00:43:26,070
+So you see all these
+reds that we're getting,
+
+1003
+00:43:26,070 --> 00:43:27,468
+they're not allowed to describe.
+
+1004
+00:43:27,468 --> 00:43:29,760
+Remember, we didn't give them
+explicit describe access.
+
+1005
+00:43:29,760 --> 00:43:31,802
+So even though they can
+start and stop instances,
+
+1006
+00:43:31,802 --> 00:43:33,470
+they can't describe.
+
+1007
+00:43:33,470 --> 00:43:37,310
+But they should be
+able to do this.
+
+1008
+00:43:37,310 --> 00:43:40,085
+Let's go Ubuntu--
+doesn't matter.
+
+1009
+00:43:49,300 --> 00:43:49,965
+Try this again.
+
+1010
+00:43:54,235 --> 00:43:56,860
+We might have actually forgot to
+give them one extra permission
+
+1011
+00:43:56,860 --> 00:43:58,760
+to select instance type.
+
+1012
+00:43:58,760 --> 00:44:01,700
+So you can see here, they
+technically have access.
+
+1013
+00:44:01,700 --> 00:44:04,460
+They wouldn't get blocked
+the same way of doing this.
+
+1014
+00:44:04,460 --> 00:44:06,482
+And if we had started
+another instance--
+
+1015
+00:44:06,482 --> 00:44:08,440
+we actually might be able
+to start one of these
+
+1016
+00:44:08,440 --> 00:44:11,520
+that were already terminated.
+
+1017
+00:44:11,520 --> 00:44:13,260
+Let me see.
+
+1018
+00:44:13,260 --> 00:44:16,240
+Let's just click a random one.
+
+1019
+00:44:16,240 --> 00:44:22,180
+And let's do instance state.
+
+1020
+00:44:22,180 --> 00:44:24,650
+So yeah, you can see they were
+able to start this instance.
+
+1021
+00:44:24,650 --> 00:44:27,460
+And now it's throwing
+into pending status.
+
+1022
+00:44:27,460 --> 00:44:31,620
+And if we watch it now, we'll
+see that in a little bit,
+
+1023
+00:44:31,620 --> 00:44:33,970
+it will go green, probably.
+
+1024
+00:44:38,680 --> 00:44:41,700
+We're still in pending.
+
+1025
+00:44:41,700 --> 00:44:43,230
+Moral of the story
+is, it does work.
+
+1026
+00:44:43,230 --> 00:44:45,480
+So I'm not going to waste
+too much time with you guys
+
+1027
+00:44:45,480 --> 00:44:48,108
+on this one, but they should be
+able to get that one launched
+
+1028
+00:44:48,108 --> 00:44:50,650
+here in a little bit once it's
+done out of the pending state.
+
+1029
+00:44:50,650 --> 00:44:53,567
+So either way, moral of
+the story is, it works.
+
+1030
+00:44:53,567 --> 00:44:55,650
+That's really all I wanted
+to go through, show you
+
+1031
+00:44:55,650 --> 00:44:57,510
+how that process
+works of creating--
+
+1032
+00:44:57,510 --> 00:45:01,182
+of accessing users and all that.
+
+1033
+00:45:01,182 --> 00:45:02,640
+And actually, I
+can show you really
+
+1034
+00:45:02,640 --> 00:45:05,880
+quick on my account, which
+has access to create users,
+
+1035
+00:45:05,880 --> 00:45:07,588
+what adding a user looks like.
+
+1036
+00:45:07,588 --> 00:45:09,880
+So adding a user is pretty
+straightforward as well too.
+
+1037
+00:45:09,880 --> 00:45:11,505
+It's the same clicking
+through windows.
+
+1038
+00:45:11,505 --> 00:45:13,200
+Oh, you can actually
+see there that it's
+
+1039
+00:45:13,200 --> 00:45:14,500
+switched to the running state.
+
+1040
+00:45:14,500 --> 00:45:16,167
+So let's stop that
+one though because we
+
+1041
+00:45:16,167 --> 00:45:19,810
+don't need it to run anymore.
+
+1042
+00:45:19,810 --> 00:45:22,280
+So that one does have
+the start stop instance.
+
+1043
+00:45:22,280 --> 00:45:24,010
+So all good.
+
+1044
+00:45:24,010 --> 00:45:26,590
+So we'll sign out of that
+one now and close this out
+
+1045
+00:45:26,590 --> 00:45:30,340
+and then go back full screen.
+
+1046
+00:45:30,340 --> 00:45:32,260
+And so now if I go into
+users and if I wanted
+
+1047
+00:45:32,260 --> 00:45:35,450
+to add a new user in here,
+I would just pop in here,
+
+1048
+00:45:35,450 --> 00:45:36,260
+give a user name.
+
+1049
+00:45:36,260 --> 00:45:38,050
+Let's call them user-4.
+
+1050
+00:45:38,050 --> 00:45:41,030
+I would tell-- I would say
+whether they have access keys,
+
+1051
+00:45:41,030 --> 00:45:42,500
+so can they do
+programmatic access?
+
+1052
+00:45:42,500 --> 00:45:44,708
+Remember, we talked about
+there's programmatic access
+
+1053
+00:45:44,708 --> 00:45:46,100
+and management console access.
+
+1054
+00:45:46,100 --> 00:45:48,410
+I have to explicitly
+offer both of those.
+
+1055
+00:45:48,410 --> 00:45:51,110
+If I don't, then they don't
+have access to either of them.
+
+1056
+00:45:51,110 --> 00:45:52,940
+But something's
+required obviously.
+
+1057
+00:45:52,940 --> 00:45:54,948
+So let's say we just
+gave them that one.
+
+1058
+00:45:54,948 --> 00:45:56,740
+Then I'd give them
+either an auto generated
+
+1059
+00:45:56,740 --> 00:45:58,700
+password, which is
+what I gave you guys,
+
+1060
+00:45:58,700 --> 00:46:03,100
+and then you have to change--
+or I might've even done a custom
+
+1061
+00:46:03,100 --> 00:46:04,160
+password, can't remember.
+
+1062
+00:46:04,160 --> 00:46:07,760
+But either way, either auto
+generate or custom password,
+
+1063
+00:46:07,760 --> 00:46:09,350
+you provide it to the user.
+
+1064
+00:46:09,350 --> 00:46:12,350
+And then here, you can tell them
+to require a password at reset.
+
+1065
+00:46:12,350 --> 00:46:14,540
+So with those accounts
+that I showed you before,
+
+1066
+00:46:14,540 --> 00:46:17,270
+I just said, no on that,
+so I didn't have to do it.
+
+1067
+00:46:17,270 --> 00:46:20,340
+But either way, then you
+come into permissions,
+
+1068
+00:46:20,340 --> 00:46:22,890
+then you can assign them
+immediately to a user group.
+
+1069
+00:46:22,890 --> 00:46:25,310
+You can copy permissions
+from existing user
+
+1070
+00:46:25,310 --> 00:46:27,602
+or attach existing
+policies directly.
+
+1071
+00:46:27,602 --> 00:46:29,060
+So remember I said,
+there's a bunch
+
+1072
+00:46:29,060 --> 00:46:31,080
+of premade policies from Amazon?
+
+1073
+00:46:31,080 --> 00:46:32,810
+This is the list.
+
+1074
+00:46:32,810 --> 00:46:36,170
+So you can see that is a long
+list of all kinds of policies
+
+1075
+00:46:36,170 --> 00:46:37,990
+you can add to them, OK?
+
+1076
+00:46:37,990 --> 00:46:39,950
+And these are all just managed.
+
+1077
+00:46:39,950 --> 00:46:42,390
+And then you can add tags
+and all that good stuff too.
+
+1078
+00:46:42,390 --> 00:46:45,440
+So that's really
+the process there.
+
+1079
+00:46:45,440 --> 00:46:46,920
+Again, nothing super fancy.
+
+1080
+00:46:46,920 --> 00:46:49,793
+But hope that made some sense
+and you got some experience now
+
+1081
+00:46:49,793 --> 00:46:51,210
+and you know what
+this looks like.
+
+1082
+00:46:51,210 --> 00:46:53,180
+You may end up making a
+user once or twice here
+
+1083
+00:46:53,180 --> 00:46:53,820
+in this class.
+
+1084
+00:46:53,820 --> 00:46:56,362
+But for the most part, you'll
+just be using your own account.
+
+1085
+00:46:56,362 --> 00:46:58,550
+So really, this is just
+for your knowledge in case
+
+1086
+00:46:58,550 --> 00:47:00,350
+you take the test or
+you go on to a place
+
+1087
+00:47:00,350 --> 00:47:02,420
+where you have-- you are
+in charge of managing
+
+1088
+00:47:02,420 --> 00:47:04,320
+these sort of resources, OK?
+
+1089
+00:47:04,320 --> 00:47:06,930
+So leave the video there, and
+I'll catch you guys next time.
+
+1090
+00:47:06,930 --> 00:47:08,180
+Bye

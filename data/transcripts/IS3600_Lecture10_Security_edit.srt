@@ -1,0 +1,4613 @@
+1
+00:00:00,000 --> 00:00:01,208
+SHARAD JONES: Hey, everybody.
+
+2
+00:00:01,208 --> 00:00:02,007
+Welcome back.
+
+3
+00:00:02,007 --> 00:00:04,590
+Today's topic, we're going to
+be talking about cloud security.
+
+4
+00:00:04,590 --> 00:00:06,410
+And then going to have
+a brief discussion
+
+5
+00:00:06,410 --> 00:00:08,385
+at the end on data ethics.
+
+6
+00:00:08,385 --> 00:00:10,010
+But I think it should
+be a fun lecture.
+
+7
+00:00:10,010 --> 00:00:12,890
+At least, this topic
+excited me to do research on
+
+8
+00:00:12,890 --> 00:00:13,770
+and to talk about.
+
+9
+00:00:13,770 --> 00:00:17,100
+I mean, it's something
+that impacts everyday life,
+
+10
+00:00:17,100 --> 00:00:19,520
+whether you realize it or not.
+
+11
+00:00:19,520 --> 00:00:21,570
+And honestly, it's
+a great career path.
+
+12
+00:00:21,570 --> 00:00:24,300
+If you are ever interested
+in just security in general,
+
+13
+00:00:24,300 --> 00:00:28,700
+we actually have some great
+programs in just general purpose
+
+14
+00:00:28,700 --> 00:00:30,180
+IT security, computer security.
+
+15
+00:00:30,180 --> 00:00:34,163
+But I also think in the
+context of the cloud,
+
+16
+00:00:34,163 --> 00:00:36,080
+there's some interesting
+applications and also
+
+17
+00:00:36,080 --> 00:00:38,307
+some interesting tools
+to mitigate these risks.
+
+18
+00:00:38,307 --> 00:00:39,390
+But we'll talk about that.
+
+19
+00:00:39,390 --> 00:00:41,600
+We'll talk about those
+vulnerabilities and some
+
+20
+00:00:41,600 --> 00:00:43,080
+of the solutions to them.
+
+21
+00:00:43,080 --> 00:00:45,350
+So let's just jump
+right into it.
+
+22
+00:00:45,350 --> 00:00:50,090
+And I'll slide out of the
+way then to the bottom right.
+
+23
+00:00:50,090 --> 00:00:52,730
+Perfect.
+
+24
+00:00:52,730 --> 00:00:56,690
+So I want to start off
+by doing something here
+
+25
+00:00:56,690 --> 00:00:59,600
+that actually will
+be your unit project
+
+26
+00:00:59,600 --> 00:01:00,730
+as well for this section.
+
+27
+00:01:00,730 --> 00:01:02,320
+I hope it's a fun unit project.
+
+28
+00:01:02,320 --> 00:01:04,840
+But right now, I have
+a code on the screen,
+
+29
+00:01:04,840 --> 00:01:08,280
+so feel free to pause it,
+rewind, wait here and come back
+
+30
+00:01:08,280 --> 00:01:08,860
+to it.
+
+31
+00:01:08,860 --> 00:01:13,230
+But I want to know if
+you can crack this code.
+
+32
+00:01:13,230 --> 00:01:16,710
+I'm not going to tell you
+anything else regarding it.
+
+33
+00:01:16,710 --> 00:01:19,980
+You'll get information
+if you crack it better--
+
+34
+00:01:19,980 --> 00:01:21,070
+or is the best I can say.
+
+35
+00:01:21,070 --> 00:01:25,000
+But either way, this is an idea.
+
+36
+00:01:25,000 --> 00:01:27,070
+This is what we
+are talking about,
+
+37
+00:01:27,070 --> 00:01:29,590
+at least when we start with
+this concept of encryption.
+
+38
+00:01:29,590 --> 00:01:31,440
+We've already dabbled
+in it a bit, right?
+
+39
+00:01:31,440 --> 00:01:33,600
+We'll talk about these
+key pair situations
+
+40
+00:01:33,600 --> 00:01:36,100
+we've done, where every time
+we've launched an EC2 instance,
+
+41
+00:01:36,100 --> 00:01:39,070
+we've had to add a key pair
+and what that even means.
+
+42
+00:01:39,070 --> 00:01:43,410
+But a big part of that is
+this idea of encryption.
+
+43
+00:01:43,410 --> 00:01:44,710
+So I'll leave it there--
+
+44
+00:01:44,710 --> 00:01:46,350
+and then talk about
+why do we even
+
+45
+00:01:46,350 --> 00:01:48,100
+need to encrypt information.
+
+46
+00:01:48,100 --> 00:01:52,290
+So think about all the data that
+we have stored in the cloud, all
+
+47
+00:01:52,290 --> 00:01:54,730
+that information, very,
+very sensitive information.
+
+48
+00:01:54,730 --> 00:01:57,630
+We've even talked about that
+there exists the government
+
+49
+00:01:57,630 --> 00:02:00,640
+cloud for confidential and
+unclassified information.
+
+50
+00:02:00,640 --> 00:02:03,810
+There's also a top
+secret cloud in AWS
+
+51
+00:02:03,810 --> 00:02:05,590
+for top secret information.
+
+52
+00:02:05,590 --> 00:02:08,620
+And you can imagine
+that is very critical.
+
+53
+00:02:08,620 --> 00:02:10,470
+I mean, I think the
+definition of top secret
+
+54
+00:02:10,470 --> 00:02:13,710
+is something that could
+cause grave danger
+
+55
+00:02:13,710 --> 00:02:14,710
+to national security.
+
+56
+00:02:14,710 --> 00:02:17,580
+So you could imagine
+it's pretty critical
+
+57
+00:02:17,580 --> 00:02:19,830
+to ensure that that
+information can't be read
+
+58
+00:02:19,830 --> 00:02:23,100
+except by the relevant parties.
+
+59
+00:02:23,100 --> 00:02:26,670
+And so what would happen if
+someone gained access to it?
+
+60
+00:02:26,670 --> 00:02:28,090
+I mean, the world's your oyster.
+
+61
+00:02:28,090 --> 00:02:30,300
+You can think about all
+the bad scenarios that
+
+62
+00:02:30,300 --> 00:02:34,620
+can happen if somebody were
+able to gain access to not just
+
+63
+00:02:34,620 --> 00:02:37,270
+your data, but maybe even
+the AWS servers entirely,
+
+64
+00:02:37,270 --> 00:02:39,810
+and if that information
+wasn't encrypted, what they
+
+65
+00:02:39,810 --> 00:02:42,030
+could do with that information.
+
+66
+00:02:42,030 --> 00:02:44,340
+So encryption really gives
+us this tool, this mechanism
+
+67
+00:02:44,340 --> 00:02:48,603
+for ensuring that only
+those with the secret key,
+
+68
+00:02:48,603 --> 00:02:50,520
+ignoring that they need
+to access the accounts
+
+69
+00:02:50,520 --> 00:02:52,752
+and be on the right IP
+address and all that,
+
+70
+00:02:52,752 --> 00:02:54,960
+but assuming they've gotten
+through all those layers,
+
+71
+00:02:54,960 --> 00:02:56,580
+our last layer of
+defense here is
+
+72
+00:02:56,580 --> 00:02:58,830
+that we want to ensure
+that only those people that
+
+73
+00:02:58,830 --> 00:03:01,450
+have that secret key
+can decrypt our data.
+
+74
+00:03:01,450 --> 00:03:04,512
+They're the only ones that can
+decrypt the information, which
+
+75
+00:03:04,512 --> 00:03:05,470
+is great for us, right?
+
+76
+00:03:05,470 --> 00:03:08,370
+Because, again, if we download
+the secret key onto our machine
+
+77
+00:03:08,370 --> 00:03:10,220
+and we have that
+available, then great.
+
+78
+00:03:10,220 --> 00:03:11,470
+Everything looks normal to us.
+
+79
+00:03:11,470 --> 00:03:13,012
+We don't even see
+any sort of issues.
+
+80
+00:03:13,012 --> 00:03:15,310
+There's no hiccup in decrypting.
+
+81
+00:03:15,310 --> 00:03:17,460
+But if you don't have
+that, you should just
+
+82
+00:03:17,460 --> 00:03:19,740
+see a bunch of nonsense, right?
+
+83
+00:03:19,740 --> 00:03:23,250
+Probably even more nonsense
+than what this looks like.
+
+84
+00:03:23,250 --> 00:03:27,400
+If it gives you a hint to this,
+you're missing information here.
+
+85
+00:03:27,400 --> 00:03:30,540
+This is not a good encryption
+scheme for a couple of reasons.
+
+86
+00:03:30,540 --> 00:03:33,610
+But for one is it's
+annoying to decrypt.
+
+87
+00:03:33,610 --> 00:03:36,660
+If you don't have some
+sort of information
+
+88
+00:03:36,660 --> 00:03:42,252
+as the party of interest that
+I want to give the message to,
+
+89
+00:03:42,252 --> 00:03:43,960
+well, then you can't
+do anything with it.
+
+90
+00:03:43,960 --> 00:03:47,880
+You just see a matrix
+of numbers here.
+
+91
+00:03:47,880 --> 00:03:50,880
+And so I need to have some way
+for you to easily decrypt it.
+
+92
+00:03:50,880 --> 00:03:53,607
+But then also notice
+here, too, that there's
+
+93
+00:03:53,607 --> 00:03:55,440
+a lot of repeating
+patterns and whatnot that
+
+94
+00:03:55,440 --> 00:03:58,450
+might be a hint of how you
+can go about solving this.
+
+95
+00:03:58,450 --> 00:04:00,180
+But either way,
+that's definitely
+
+96
+00:04:00,180 --> 00:04:01,560
+not something you want
+to do because there's
+
+97
+00:04:01,560 --> 00:04:03,310
+a lot of classic
+techniques to break this.
+
+98
+00:04:03,310 --> 00:04:05,620
+So somebody wants to take
+the time and explore this,
+
+99
+00:04:05,620 --> 00:04:06,540
+I welcome you to.
+
+100
+00:04:06,540 --> 00:04:08,165
+And then I can't wait
+till you get down
+
+101
+00:04:08,165 --> 00:04:10,800
+the rabbit hole of
+cryptography and code breaking
+
+102
+00:04:10,800 --> 00:04:12,777
+and all that good stuff
+because it'll eat up
+
+103
+00:04:12,777 --> 00:04:14,610
+a couple of months of
+your life because it's
+
+104
+00:04:14,610 --> 00:04:16,829
+such an interesting topic.
+
+105
+00:04:16,829 --> 00:04:19,380
+But yeah, so moving
+on from there,
+
+106
+00:04:19,380 --> 00:04:22,720
+this is what we've been
+dealing with up to this point.
+
+107
+00:04:22,720 --> 00:04:25,270
+We have this idea of a
+public key and a private key.
+
+108
+00:04:25,270 --> 00:04:28,650
+Whenever we set up our EC2
+instance, we have to have those.
+
+109
+00:04:28,650 --> 00:04:30,660
+And so the way
+that roughly works
+
+110
+00:04:30,660 --> 00:04:34,210
+is there exists some
+pseudorandom number generator.
+
+111
+00:04:34,210 --> 00:04:35,770
+So that's what RNG stands for.
+
+112
+00:04:35,770 --> 00:04:37,980
+And the reason I
+say pseudo RNG is
+
+113
+00:04:37,980 --> 00:04:42,420
+because, whether you are
+aware of this or not,
+
+114
+00:04:42,420 --> 00:04:45,420
+there doesn't really
+exist a true random number
+
+115
+00:04:45,420 --> 00:04:46,840
+generator on our computers.
+
+116
+00:04:46,840 --> 00:04:50,820
+If I go to Google right now and
+type in, give me a random number
+
+117
+00:04:50,820 --> 00:04:55,200
+1 through 10, it'll give me
+something that seems random,
+
+118
+00:04:55,200 --> 00:04:56,700
+but that's the exact point--
+
+119
+00:04:56,700 --> 00:05:00,960
+is we're basically creating--
+we use formulas on the back-end
+
+120
+00:05:00,960 --> 00:05:04,680
+equations that seem to replicate
+randomness to some extent
+
+121
+00:05:04,680 --> 00:05:06,920
+in that--
+
+122
+00:05:06,920 --> 00:05:08,990
+for example, let's say,
+we did the 1 through 10,
+
+123
+00:05:08,990 --> 00:05:11,032
+we would expect that
+there's an equal probability
+
+124
+00:05:11,032 --> 00:05:12,620
+that it could be any number--
+
+125
+00:05:12,620 --> 00:05:15,920
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+126
+00:05:15,920 --> 00:05:18,470
+Well, a pseudorandom
+number generator
+
+127
+00:05:18,470 --> 00:05:24,780
+would be a function of
+program that when I hit Run,
+
+128
+00:05:24,780 --> 00:05:26,790
+it would output one
+of those numbers.
+
+129
+00:05:26,790 --> 00:05:28,830
+And if I did that
+100 times over,
+
+130
+00:05:28,830 --> 00:05:31,460
+we'd expect on average that
+about each number would show up
+
+131
+00:05:31,460 --> 00:05:32,540
+10 times.
+
+132
+00:05:32,540 --> 00:05:36,892
+That's what we're saying
+with pseudorandom numbers.
+
+133
+00:05:36,892 --> 00:05:38,600
+But also on top of
+that, obviously, there
+
+134
+00:05:38,600 --> 00:05:42,100
+shouldn't be any clear
+identifiable pattern.
+
+135
+00:05:42,100 --> 00:05:44,100
+It shouldn't be that the
+first 10 numbers are 1,
+
+136
+00:05:44,100 --> 00:05:47,570
+the second 10 numbers are 2,
+the third 10 numbers are 3.
+
+137
+00:05:47,570 --> 00:05:50,390
+And actually, by
+definition, if it's true
+
+138
+00:05:50,390 --> 00:05:54,050
+or if it's a good
+random number generator,
+
+139
+00:05:54,050 --> 00:05:56,820
+it could also generate all ones.
+
+140
+00:05:56,820 --> 00:06:00,750
+That is possible in randomness.
+
+141
+00:06:00,750 --> 00:06:02,460
+We obviously don't
+want that usually.
+
+142
+00:06:02,460 --> 00:06:04,470
+But either way, that's the idea.
+
+143
+00:06:04,470 --> 00:06:06,780
+That's why we only see
+pseudorandom number generator
+
+144
+00:06:06,780 --> 00:06:10,100
+because they're not
+truly random numbers.
+
+145
+00:06:10,100 --> 00:06:12,860
+But either way, we take
+those pseudorandom numbers,
+
+146
+00:06:12,860 --> 00:06:15,840
+and then we have some
+key generation program.
+
+147
+00:06:15,840 --> 00:06:18,260
+Most of these public key
+cryptography techniques
+
+148
+00:06:18,260 --> 00:06:20,160
+use this basic workflow.
+
+149
+00:06:20,160 --> 00:06:22,610
+It generate some
+random numbers, use
+
+150
+00:06:22,610 --> 00:06:26,420
+those random numbers to generate
+a public key and a private key.
+
+151
+00:06:26,420 --> 00:06:29,700
+And then the idea is that
+the public key, it's not,
+
+152
+00:06:29,700 --> 00:06:31,740
+again, explicitly
+visible to everybody.
+
+153
+00:06:31,740 --> 00:06:34,380
+We don't want it to be
+blasted out on the internet.
+
+154
+00:06:34,380 --> 00:06:39,500
+But the idea is that relevant
+access individuals or programs
+
+155
+00:06:39,500 --> 00:06:40,970
+can use the public key.
+
+156
+00:06:40,970 --> 00:06:44,090
+If I go on to AWS right
+now and into each of you
+
+157
+00:06:44,090 --> 00:06:49,190
+guys's user accounts, I can see
+your individual public keys.
+
+158
+00:06:49,190 --> 00:06:51,510
+And so if I needed to
+encrypt a message to you,
+
+159
+00:06:51,510 --> 00:06:54,570
+I could use your public key to
+encrypt that secret message.
+
+160
+00:06:54,570 --> 00:06:57,660
+And then in transit, if anybody
+were to intercept that message,
+
+161
+00:06:57,660 --> 00:07:00,625
+they would just see nonsense,
+just some random number
+
+162
+00:07:00,625 --> 00:07:01,960
+or letter combinations.
+
+163
+00:07:01,960 --> 00:07:04,530
+It could be anything-- symbols.
+
+164
+00:07:04,530 --> 00:07:06,750
+But then the important
+thing is that when
+
+165
+00:07:06,750 --> 00:07:08,310
+it goes into the
+decryption program
+
+166
+00:07:08,310 --> 00:07:11,523
+on your side of the computer,
+you have that secret key.
+
+167
+00:07:11,523 --> 00:07:13,690
+So the decryption program
+is going to basically say,
+
+168
+00:07:13,690 --> 00:07:16,560
+OK, here's the message,
+here's that secret key coming
+
+169
+00:07:16,560 --> 00:07:17,980
+from the side as well, too.
+
+170
+00:07:17,980 --> 00:07:21,510
+And that together
+can then output
+
+171
+00:07:21,510 --> 00:07:23,550
+the original secret message.
+
+172
+00:07:23,550 --> 00:07:26,160
+And the important
+thing, too, is I,
+
+173
+00:07:26,160 --> 00:07:29,070
+even as the one who
+generated the secret message
+
+174
+00:07:29,070 --> 00:07:30,910
+and encrypted it
+using your public key,
+
+175
+00:07:30,910 --> 00:07:33,290
+I can't decrypt this now.
+
+176
+00:07:33,290 --> 00:07:35,513
+Obviously, I might know what
+the original message is,
+
+177
+00:07:35,513 --> 00:07:36,930
+but I still couldn't
+decrypt this.
+
+178
+00:07:36,930 --> 00:07:38,558
+Only you can do this.
+
+179
+00:07:38,558 --> 00:07:40,600
+And so that's where we
+refer to this server side,
+
+180
+00:07:40,600 --> 00:07:43,380
+client side is that it should
+be encrypted on the server
+
+181
+00:07:43,380 --> 00:07:45,547
+side, so the server should
+handle the encryption,
+
+182
+00:07:45,547 --> 00:07:47,130
+and that decryption
+should really only
+
+183
+00:07:47,130 --> 00:07:50,200
+happen on your client side
+or whatever the client is.
+
+184
+00:07:50,200 --> 00:07:52,240
+It could be that it's
+your EC2 instance.
+
+185
+00:07:52,240 --> 00:07:54,190
+It could be that it's
+your local machine.
+
+186
+00:07:54,190 --> 00:07:56,800
+But that's the idea is
+there's this separation.
+
+187
+00:07:56,800 --> 00:07:59,340
+And so in transit, when
+it's not on the server
+
+188
+00:07:59,340 --> 00:08:02,290
+and it's not on the
+client, it's just nonsense.
+
+189
+00:08:02,290 --> 00:08:03,130
+You cannot see it.
+
+190
+00:08:03,130 --> 00:08:06,600
+You cannot decrypt it.
+
+191
+00:08:06,600 --> 00:08:09,300
+RSA encryption, you've probably
+noticed is the one we've used.
+
+192
+00:08:09,300 --> 00:08:12,240
+So every time you go through
+that EC2 process or spin-up
+
+193
+00:08:12,240 --> 00:08:16,710
+process and you create your
+new secret key or key pair,
+
+194
+00:08:16,710 --> 00:08:21,570
+it lets you choose
+between RSA or Ed255519.
+
+195
+00:08:21,570 --> 00:08:24,250
+Both are, again,
+doing similar things.
+
+196
+00:08:24,250 --> 00:08:27,520
+RSA is somewhat agnostic
+to the platform,
+
+197
+00:08:27,520 --> 00:08:29,940
+to the operating system, which
+is why I've been using it.
+
+198
+00:08:29,940 --> 00:08:32,760
+But this is roughly
+how RSA works.
+
+199
+00:08:32,760 --> 00:08:36,480
+And you can imagine a similar
+process for the others as well.
+
+200
+00:08:36,480 --> 00:08:39,260
+So what it does is
+it starts by creating
+
+201
+00:08:39,260 --> 00:08:44,640
+a public key that's just based
+on two very large prime numbers.
+
+202
+00:08:44,640 --> 00:08:47,425
+We can just pick any two
+random prime numbers.
+
+203
+00:08:47,425 --> 00:08:49,050
+I mean, you know what
+the prime numbers
+
+204
+00:08:49,050 --> 00:08:52,180
+are-- something that is only
+divisible by 1 and itself.
+
+205
+00:08:52,180 --> 00:08:55,690
+And so we can just find
+two really large numbers.
+
+206
+00:08:55,690 --> 00:08:59,700
+We're pretty good at iteratively
+going through and finding
+
+207
+00:08:59,700 --> 00:09:01,710
+if something is prime or not.
+
+208
+00:09:01,710 --> 00:09:04,720
+And so eventually, we'll find
+two very large prime numbers,
+
+209
+00:09:04,720 --> 00:09:05,470
+let's say.
+
+210
+00:09:05,470 --> 00:09:09,070
+And once we have those
+two prime numbers,
+
+211
+00:09:09,070 --> 00:09:13,350
+we can use those along
+with some auxiliary value
+
+212
+00:09:13,350 --> 00:09:17,340
+and use those in the
+RSA encryption program,
+
+213
+00:09:17,340 --> 00:09:19,710
+in this key generation program.
+
+214
+00:09:19,710 --> 00:09:22,770
+So input is two
+large prime numbers.
+
+215
+00:09:22,770 --> 00:09:25,680
+In this step, we do
+something along the lines
+
+216
+00:09:25,680 --> 00:09:27,210
+of multiplying them.
+
+217
+00:09:27,210 --> 00:09:30,480
+And then that outputs
+a really large number.
+
+218
+00:09:30,480 --> 00:09:31,165
+That's the idea.
+
+219
+00:09:31,165 --> 00:09:32,790
+So imagine if you
+take something that's
+
+220
+00:09:32,790 --> 00:09:37,530
+10 million times 150 million
+or something like that,
+
+221
+00:09:37,530 --> 00:09:40,180
+you're going to get some really
+big order of magnitude number.
+
+222
+00:09:40,180 --> 00:09:43,050
+And so the idea is
+then your public key
+
+223
+00:09:43,050 --> 00:09:45,060
+is that really,
+really big number--
+
+224
+00:09:45,060 --> 00:09:47,500
+the product of those
+two large prime numbers.
+
+225
+00:09:47,500 --> 00:09:51,240
+And so that public key can be
+used to encrypt the information.
+
+226
+00:09:51,240 --> 00:09:56,160
+But the decryption
+can only happen
+
+227
+00:09:56,160 --> 00:09:58,770
+or it depends on basically
+being able to factor
+
+228
+00:09:58,770 --> 00:10:03,440
+those prime numbers or the
+large number into the two
+
+229
+00:10:03,440 --> 00:10:04,920
+original large prime numbers.
+
+230
+00:10:04,920 --> 00:10:06,860
+So it takes that
+really big number,
+
+231
+00:10:06,860 --> 00:10:09,620
+let's say, the extra large
+public key number and needs
+
+232
+00:10:09,620 --> 00:10:13,790
+to factorize that into the two
+large prime numbers that make up
+
+233
+00:10:13,790 --> 00:10:14,850
+that multiplication.
+
+234
+00:10:14,850 --> 00:10:16,730
+And there's no guarantee that--
+
+235
+00:10:16,730 --> 00:10:20,750
+or actually by construction,
+that larger number is not prime.
+
+236
+00:10:20,750 --> 00:10:22,830
+So it could have a lot
+of different factors.
+
+237
+00:10:22,830 --> 00:10:25,050
+And so this is the
+idea, if you remember
+
+238
+00:10:25,050 --> 00:10:28,108
+factorization is this process
+of iteratively breaking down
+
+239
+00:10:28,108 --> 00:10:29,900
+what two numbers can
+be multiplied together
+
+240
+00:10:29,900 --> 00:10:31,470
+to produce the output number.
+
+241
+00:10:31,470 --> 00:10:34,700
+And so now if we have
+to find just only
+
+242
+00:10:34,700 --> 00:10:36,560
+these two very large
+prime numbers that
+
+243
+00:10:36,560 --> 00:10:40,490
+happen to be factors of this
+even larger public key number
+
+244
+00:10:40,490 --> 00:10:43,760
+is very, very difficult.
+You could technically
+
+245
+00:10:43,760 --> 00:10:45,178
+iteratively try to solve it.
+
+246
+00:10:45,178 --> 00:10:47,220
+You could just iteratively
+try a bunch of numbers
+
+247
+00:10:47,220 --> 00:10:48,840
+and say, OK, well,
+what's 1 times 1?
+
+248
+00:10:48,840 --> 00:10:49,710
+What's 1 times 2?
+
+249
+00:10:49,710 --> 00:10:50,677
+What's 2 times 1?
+
+250
+00:10:50,677 --> 00:10:52,760
+And just keep going through
+that iterative process
+
+251
+00:10:52,760 --> 00:10:55,190
+until you hopefully
+find-- you just check
+
+252
+00:10:55,190 --> 00:10:57,050
+every single pair
+of prime numbers
+
+253
+00:10:57,050 --> 00:10:59,970
+until you get to the solution.
+
+254
+00:10:59,970 --> 00:11:02,870
+But you'll see if you look
+through some documentation
+
+255
+00:11:02,870 --> 00:11:05,863
+on that or you can look at
+the RSA Wikipedia page there--
+
+256
+00:11:05,863 --> 00:11:07,530
+I'm sure they have
+information on that--
+
+257
+00:11:07,530 --> 00:11:11,510
+but you'll see that process
+would take prohibitively long
+
+258
+00:11:11,510 --> 00:11:12,690
+on modern computers.
+
+259
+00:11:12,690 --> 00:11:15,080
+Modern architecture
+just doesn't have it,
+
+260
+00:11:15,080 --> 00:11:18,000
+and we don't seem to have any
+efficient search algorithms.
+
+261
+00:11:18,000 --> 00:11:20,210
+But that is technically
+the vulnerability
+
+262
+00:11:20,210 --> 00:11:22,800
+is if you can somehow
+crack that process,
+
+263
+00:11:22,800 --> 00:11:26,280
+if you can factorize into two
+large prime numbers efficiently,
+
+264
+00:11:26,280 --> 00:11:28,170
+you actually can
+crack a lot of things.
+
+265
+00:11:28,170 --> 00:11:32,390
+You can crack most of modern
+security systems, web security
+
+266
+00:11:32,390 --> 00:11:33,350
+systems.
+
+267
+00:11:33,350 --> 00:11:36,637
+You'd be able to potentially
+decrypt sensitive information.
+
+268
+00:11:36,637 --> 00:11:38,220
+And so that is
+something that's known.
+
+269
+00:11:38,220 --> 00:11:42,170
+And again, as of right now,
+our algorithms and our hardware
+
+270
+00:11:42,170 --> 00:11:45,770
+don't seem to be capable of
+doing it in any human lifetime
+
+271
+00:11:45,770 --> 00:11:47,525
+or time scale.
+
+272
+00:11:47,525 --> 00:11:49,400
+Quantum computers,
+though, which is something
+
+273
+00:11:49,400 --> 00:11:51,630
+I'm hoping we get to by
+the end of the semester,
+
+274
+00:11:51,630 --> 00:11:54,510
+are a new approach to computing.
+
+275
+00:11:54,510 --> 00:11:59,450
+They drop the 1-0 computing
+idea and utilize some effects
+
+276
+00:11:59,450 --> 00:12:03,800
+of quantum mechanics, the
+superposition of states to allow
+
+277
+00:12:03,800 --> 00:12:05,490
+for more state representations.
+
+278
+00:12:05,490 --> 00:12:07,370
+But the big thing here
+is it's not really
+
+279
+00:12:07,370 --> 00:12:10,088
+that we'd be able to
+have different computers
+
+280
+00:12:10,088 --> 00:12:11,630
+that we-- different
+MacBooks that are
+
+281
+00:12:11,630 --> 00:12:15,090
+based on quantum technologies or
+quantum computing technologies.
+
+282
+00:12:15,090 --> 00:12:17,270
+It's more that
+these very special
+
+283
+00:12:17,270 --> 00:12:19,220
+built-- purpose-built
+machines would
+
+284
+00:12:19,220 --> 00:12:21,643
+be very efficient at
+that search problem.
+
+285
+00:12:21,643 --> 00:12:23,810
+Theoretically speaking,
+they should be able to do it
+
+286
+00:12:23,810 --> 00:12:26,690
+once they get to somewhat
+of a reasonable size
+
+287
+00:12:26,690 --> 00:12:29,040
+in a realistic time
+scale as well, too.
+
+288
+00:12:29,040 --> 00:12:30,590
+And so there is
+actually very active
+
+289
+00:12:30,590 --> 00:12:32,690
+research and discussion
+going on what
+
+290
+00:12:32,690 --> 00:12:35,460
+do we do when that time
+comes, if that time comes.
+
+291
+00:12:35,460 --> 00:12:37,620
+Do we have something
+that we're prepared for?
+
+292
+00:12:37,620 --> 00:12:41,150
+And so this is this idea of
+recognizing that there exists
+
+293
+00:12:41,150 --> 00:12:44,300
+vulnerabilities, and
+we're going to have
+
+294
+00:12:44,300 --> 00:12:45,570
+to address them at some point.
+
+295
+00:12:45,570 --> 00:12:47,700
+Every security system
+has vulnerabilities.
+
+296
+00:12:47,700 --> 00:12:50,780
+It's just knowing what
+those are and knowing
+
+297
+00:12:50,780 --> 00:12:54,240
+if that is sufficient for
+the data that you have there.
+
+298
+00:12:54,240 --> 00:12:57,180
+As of right now, RSA
+encryption is sufficient,
+
+299
+00:12:57,180 --> 00:12:59,930
+but we have to be aware
+that it could at some point
+
+300
+00:12:59,930 --> 00:13:02,100
+not be sufficient
+and what can we do
+
+301
+00:13:02,100 --> 00:13:06,150
+and what strategies are
+there to mitigate this.
+
+302
+00:13:06,150 --> 00:13:11,250
+So ignoring that big existential
+doom and gloom statement,
+
+303
+00:13:11,250 --> 00:13:12,900
+let's take RSA as
+working for now.
+
+304
+00:13:12,900 --> 00:13:16,680
+For our purposes, it's going
+to be fine for probably
+
+305
+00:13:16,680 --> 00:13:18,450
+the next decades.
+
+306
+00:13:18,450 --> 00:13:20,500
+But either way, don't
+quote me on that.
+
+307
+00:13:20,500 --> 00:13:22,620
+I don't want to go down
+in history as saying that.
+
+308
+00:13:22,620 --> 00:13:25,240
+But either way, AWS has
+a key management service
+
+309
+00:13:25,240 --> 00:13:27,240
+and that's what we've
+been using in the back end
+
+310
+00:13:27,240 --> 00:13:31,530
+and that manages the secret keys
+for your users in the account
+
+311
+00:13:31,530 --> 00:13:32,130
+that you have.
+
+312
+00:13:32,130 --> 00:13:35,722
+So we can manage all that really
+efficiently and automatically.
+
+313
+00:13:35,722 --> 00:13:38,430
+You don't have to handle the key
+generation process and all that.
+
+314
+00:13:38,430 --> 00:13:41,070
+As you saw, it does it for us.
+
+315
+00:13:41,070 --> 00:13:43,320
+The important thing,
+though, is the private key
+
+316
+00:13:43,320 --> 00:13:45,010
+can only be accessed once.
+
+317
+00:13:45,010 --> 00:13:47,650
+So when you create
+your key pair,
+
+318
+00:13:47,650 --> 00:13:50,670
+it's always important that
+you download that private key
+
+319
+00:13:50,670 --> 00:13:54,240
+on the spot and make
+sure you keep it.
+
+320
+00:13:54,240 --> 00:13:56,650
+Once you lose it,
+you've lost it.
+
+321
+00:13:56,650 --> 00:13:58,770
+So if you spin up
+an EC2 instance
+
+322
+00:13:58,770 --> 00:14:01,410
+with a specific key
+pair, you do a bunch
+
+323
+00:14:01,410 --> 00:14:03,300
+of really important
+stuff on it, and then
+
+324
+00:14:03,300 --> 00:14:07,350
+all of a sudden, you
+lose that private key,
+
+325
+00:14:07,350 --> 00:14:10,980
+I'll say it's
+possible, potentially,
+
+326
+00:14:10,980 --> 00:14:13,750
+to get that information back
+and recover that instance.
+
+327
+00:14:13,750 --> 00:14:15,630
+But for the most
+part, you're probably
+
+328
+00:14:15,630 --> 00:14:17,580
+lost that access
+to that instance
+
+329
+00:14:17,580 --> 00:14:18,880
+and potentially that data.
+
+330
+00:14:18,880 --> 00:14:24,240
+So being very smart about how
+you handle that is important.
+
+331
+00:14:24,240 --> 00:14:25,980
+So yeah, make sure
+you store that--
+
+332
+00:14:25,980 --> 00:14:27,938
+download that, but then
+also store it securely.
+
+333
+00:14:27,938 --> 00:14:29,897
+And we'll talk about that
+here in a little bit.
+
+334
+00:14:29,897 --> 00:14:32,400
+But it's important to make sure
+that your computer is never
+
+335
+00:14:32,400 --> 00:14:34,920
+left unattended because that
+private key will give people
+
+336
+00:14:34,920 --> 00:14:38,820
+access to your AWS account.
+
+337
+00:14:38,820 --> 00:14:42,450
+You can also encrypt data stored
+in really any service that's
+
+338
+00:14:42,450 --> 00:14:44,250
+supported by KMS,
+which is basically
+
+339
+00:14:44,250 --> 00:14:47,260
+all the standard ones
+as I mentioned there,
+
+340
+00:14:47,260 --> 00:14:49,360
+S3, EBS, EFS RDS.
+
+341
+00:14:49,360 --> 00:14:50,860
+I think there's
+even some more, too.
+
+342
+00:14:50,860 --> 00:14:53,823
+But those four really
+cover most of the things.
+
+343
+00:14:53,823 --> 00:14:54,990
+We haven't talked about RDS.
+
+344
+00:14:54,990 --> 00:14:58,720
+That's the relational database
+storage system on AWS.
+
+345
+00:14:58,720 --> 00:15:02,590
+But it's basically everything
+is covered by that.
+
+346
+00:15:02,590 --> 00:15:04,660
+So you can encrypt
+data that's stored.
+
+347
+00:15:04,660 --> 00:15:06,930
+And you can also
+encrypt data in transit.
+
+348
+00:15:06,930 --> 00:15:11,280
+So there's this encrypt
+data that's stationary
+
+349
+00:15:11,280 --> 00:15:13,420
+and then encrypting
+data as it's moving.
+
+350
+00:15:13,420 --> 00:15:17,678
+And so the data in transit
+is a bit different.
+
+351
+00:15:17,678 --> 00:15:18,970
+We won't dive too much into it.
+
+352
+00:15:18,970 --> 00:15:20,970
+You should take a
+network security class
+
+353
+00:15:20,970 --> 00:15:23,100
+if you really want to
+understand this thoroughly.
+
+354
+00:15:23,100 --> 00:15:26,857
+But this is actually this
+idea of security certificates.
+
+355
+00:15:26,857 --> 00:15:28,440
+You might even have
+seen notifications
+
+356
+00:15:28,440 --> 00:15:30,927
+that certain certificate
+is out of date
+
+357
+00:15:30,927 --> 00:15:32,760
+when you try to access
+a website and doesn't
+
+358
+00:15:32,760 --> 00:15:33,810
+allow you to go there.
+
+359
+00:15:33,810 --> 00:15:35,518
+This is what's happening
+on the back end.
+
+360
+00:15:35,518 --> 00:15:40,260
+This is HTTPS, the
+secure HTTP that
+
+361
+00:15:40,260 --> 00:15:43,980
+is using or trying to
+create the secure tunnel
+
+362
+00:15:43,980 --> 00:15:45,910
+for the bidirectional
+exchange of data.
+
+363
+00:15:45,910 --> 00:15:47,700
+So the idea, again,
+that being that nobody
+
+364
+00:15:47,700 --> 00:15:51,150
+can inject themselves in the
+middle and potentially intercept
+
+365
+00:15:51,150 --> 00:15:54,750
+information unknowingly.
+
+366
+00:15:54,750 --> 00:15:58,170
+And so now I want to talk
+about how some of these things
+
+367
+00:15:58,170 --> 00:16:02,050
+appear in real life, some of the
+common cloud vulnerabilities.
+
+368
+00:16:02,050 --> 00:16:03,670
+And hopefully,
+again, get you really
+
+369
+00:16:03,670 --> 00:16:07,750
+excited about just
+security, that network
+
+370
+00:16:07,750 --> 00:16:11,450
+security and computer security
+because it's such a fun topic.
+
+371
+00:16:11,450 --> 00:16:13,450
+So probably the most
+common, you might have even
+
+372
+00:16:13,450 --> 00:16:14,620
+heard of it now--
+
+373
+00:16:14,620 --> 00:16:17,900
+by now, is the most
+common vulnerability
+
+374
+00:16:17,900 --> 00:16:20,550
+or if you want to phrase
+it another way, attack--
+
+375
+00:16:20,550 --> 00:16:23,440
+this is really an attack on
+a network or on a system--
+
+376
+00:16:23,440 --> 00:16:24,770
+and it's referred to as DDoS.
+
+377
+00:16:24,770 --> 00:16:28,000
+It stands for distributed
+denial of service attack.
+
+378
+00:16:28,000 --> 00:16:29,980
+So that's what the DDoS is.
+
+379
+00:16:29,980 --> 00:16:34,360
+And this is basically where
+perpetrators just flood a server
+
+380
+00:16:34,360 --> 00:16:35,480
+with internet traffic.
+
+381
+00:16:35,480 --> 00:16:38,710
+So imagine you want to--
+
+382
+00:16:38,710 --> 00:16:40,810
+you're scared your
+grades are really bad
+
+383
+00:16:40,810 --> 00:16:44,740
+and you want professors to
+not be able to submit grades
+
+384
+00:16:44,740 --> 00:16:46,450
+at the end of the
+semester, well, then
+
+385
+00:16:46,450 --> 00:16:49,150
+you could write up
+a script to spin up
+
+386
+00:16:49,150 --> 00:16:53,890
+a bunch of virtual machines
+to all of a sudden fire just
+
+387
+00:16:53,890 --> 00:16:56,650
+requests, just literally
+just trying to connect or log
+
+388
+00:16:56,650 --> 00:16:59,980
+in to USU's website.
+
+389
+00:16:59,980 --> 00:17:02,110
+And that'll just
+take down the system
+
+390
+00:17:02,110 --> 00:17:04,099
+or log into Banner or
+something like that.
+
+391
+00:17:04,099 --> 00:17:06,520
+And it's just a bunch of
+requests to the USU Banner
+
+392
+00:17:06,520 --> 00:17:08,950
+website, so much so
+that eventually, it
+
+393
+00:17:08,950 --> 00:17:10,970
+just clogs the system.
+
+394
+00:17:10,970 --> 00:17:14,170
+Because if you think about it,
+what a website actually is--
+
+395
+00:17:14,170 --> 00:17:16,300
+and we'll talk
+about this probably
+
+396
+00:17:16,300 --> 00:17:17,780
+in the next lecture or two--
+
+397
+00:17:17,780 --> 00:17:21,290
+is a computer that's sitting
+somewhere, a server--
+
+398
+00:17:21,290 --> 00:17:23,530
+but really, let's
+just say a computer
+
+399
+00:17:23,530 --> 00:17:26,060
+that has the website
+file sitting there,
+
+400
+00:17:26,060 --> 00:17:30,200
+the file that holds all the code
+and the logic for that website.
+
+401
+00:17:30,200 --> 00:17:32,120
+That's all a website is.
+
+402
+00:17:32,120 --> 00:17:34,640
+And then it has
+some connections,
+
+403
+00:17:34,640 --> 00:17:37,400
+some open connections so
+users can make requests.
+
+404
+00:17:37,400 --> 00:17:41,660
+So I can say, hey, I want
+to open aws.amazon.com.
+
+405
+00:17:41,660 --> 00:17:44,180
+And that request goes
+out to Amazon's computer.
+
+406
+00:17:44,180 --> 00:17:47,240
+And Amazon's computer says, here
+you go, here's the website back.
+
+407
+00:17:47,240 --> 00:17:50,170
+So it's this exchange of
+information-- a request
+
+408
+00:17:50,170 --> 00:17:52,360
+and then response from them.
+
+409
+00:17:52,360 --> 00:17:55,540
+Well, computers have
+finite capacity.
+
+410
+00:17:55,540 --> 00:17:57,710
+There's not an infinite
+computer anywhere.
+
+411
+00:17:57,710 --> 00:17:59,300
+AWS seems like it sometimes.
+
+412
+00:17:59,300 --> 00:18:01,720
+But given a large
+enough attack, it
+
+413
+00:18:01,720 --> 00:18:03,670
+can be under threat,
+too, or even just
+
+414
+00:18:03,670 --> 00:18:07,130
+in a single availability zone,
+for example, or a data center.
+
+415
+00:18:07,130 --> 00:18:10,060
+But you imagine now that
+if all of a sudden I
+
+416
+00:18:10,060 --> 00:18:13,690
+send so many requests that
+it just can't take any more
+
+417
+00:18:13,690 --> 00:18:16,120
+requests, it's physically
+just bogged down
+
+418
+00:18:16,120 --> 00:18:17,930
+by constant requests,
+requests, requests.
+
+419
+00:18:17,930 --> 00:18:19,550
+So it's getting requests,
+it's responding.
+
+420
+00:18:19,550 --> 00:18:21,175
+It's getting requests,
+it's responding.
+
+421
+00:18:21,175 --> 00:18:23,980
+Eventually a real user is
+like, hey, I actually want
+
+422
+00:18:23,980 --> 00:18:26,440
+to access aws.amazon.com.
+
+423
+00:18:26,440 --> 00:18:29,453
+They go to make a request,
+but there are so many requests
+
+424
+00:18:29,453 --> 00:18:32,120
+clogging up their inbox, if you
+want to think about it that way,
+
+425
+00:18:32,120 --> 00:18:33,787
+that their request
+doesn't really get in
+
+426
+00:18:33,787 --> 00:18:36,290
+or it's super delayed, and
+so the website slows down.
+
+427
+00:18:36,290 --> 00:18:37,370
+And that can happen.
+
+428
+00:18:37,370 --> 00:18:39,630
+And that's really
+what a DDoS attack is.
+
+429
+00:18:39,630 --> 00:18:41,380
+And so it's a really
+simple, effective one
+
+430
+00:18:41,380 --> 00:18:46,180
+because outside of stopping
+traffic from coming in,
+
+431
+00:18:46,180 --> 00:18:49,190
+it just looks like your
+website is getting popular.
+
+432
+00:18:49,190 --> 00:18:51,800
+And funny enough,
+that can happen.
+
+433
+00:18:51,800 --> 00:18:52,820
+It can be unintentional.
+
+434
+00:18:52,820 --> 00:18:55,910
+If any of you guys are
+scroll Reddit often,
+
+435
+00:18:55,910 --> 00:18:58,420
+it's sometimes referred to
+as the Reddit hug of death.
+
+436
+00:18:58,420 --> 00:19:03,030
+Let's say a popular page
+website gets accessed or gets
+
+437
+00:19:03,030 --> 00:19:04,988
+posted on Reddit and it
+goes to the front page.
+
+438
+00:19:04,988 --> 00:19:07,655
+And all of a sudden, everybody's
+like, hey, this is really cool.
+
+439
+00:19:07,655 --> 00:19:09,360
+But it was just your
+personal website
+
+440
+00:19:09,360 --> 00:19:12,590
+where you did some cool
+analytics project or something.
+
+441
+00:19:12,590 --> 00:19:14,590
+And now all of a sudden,
+everybody's hitting it,
+
+442
+00:19:14,590 --> 00:19:16,650
+but it was just hosted
+on a single EC2 instance
+
+443
+00:19:16,650 --> 00:19:19,780
+with 4 gigabytes of
+RAM and two cores,
+
+444
+00:19:19,780 --> 00:19:21,970
+and it just instantly
+bogs down your website.
+
+445
+00:19:21,970 --> 00:19:23,380
+So it's a good thing.
+
+446
+00:19:23,380 --> 00:19:26,500
+It's actually real people trying
+to honestly see your content,
+
+447
+00:19:26,500 --> 00:19:28,620
+but it's too much for
+your server to handle,
+
+448
+00:19:28,620 --> 00:19:30,810
+and therefore it shuts you down.
+
+449
+00:19:30,810 --> 00:19:32,940
+Here was an actual post from--
+
+450
+00:19:32,940 --> 00:19:35,500
+I forget exactly what--
+oh, yeah, down here,
+
+451
+00:19:35,500 --> 00:19:38,530
+if you follow this link,
+you can read about it.
+
+452
+00:19:38,530 --> 00:19:41,820
+But this was a
+website where somebody
+
+453
+00:19:41,820 --> 00:19:44,595
+had made that got, again, on
+Reddit, got really popular.
+
+454
+00:19:44,595 --> 00:19:46,470
+And you can see basically
+the hour of the day
+
+455
+00:19:46,470 --> 00:19:48,340
+here on this horizontal axis.
+
+456
+00:19:48,340 --> 00:19:52,290
+Their link was posted around
+8:00 AM on this first day.
+
+457
+00:19:52,290 --> 00:19:56,550
+By 12 or yeah, just a
+little bit after noon,
+
+458
+00:19:56,550 --> 00:19:58,710
+the bandwidth per
+hour, so the gigabytes
+
+459
+00:19:58,710 --> 00:20:01,390
+per hour that were being
+transferred basically
+
+460
+00:20:01,390 --> 00:20:03,640
+was over 40 gigabytes.
+
+461
+00:20:03,640 --> 00:20:06,910
+And that just stayed really
+high like this-- server requests
+
+462
+00:20:06,910 --> 00:20:07,430
+per hour.
+
+463
+00:20:07,430 --> 00:20:09,700
+They went from having
+effectively no service requests
+
+464
+00:20:09,700 --> 00:20:13,060
+on their website that was likely
+live here before to having
+
+465
+00:20:13,060 --> 00:20:17,413
+almost 600,000 requests in about
+four or five hours or actually
+
+466
+00:20:17,413 --> 00:20:18,830
+it was closer to
+eight hours here.
+
+467
+00:20:18,830 --> 00:20:21,410
+But either way, in the
+span of eight hours,
+
+468
+00:20:21,410 --> 00:20:24,282
+they went up to 600,000
+requests from basically nothing.
+
+469
+00:20:24,282 --> 00:20:26,240
+And so they likely didn't
+have their computers,
+
+470
+00:20:26,240 --> 00:20:28,240
+their servers ready for this.
+
+471
+00:20:28,240 --> 00:20:30,025
+And so that will shut
+down your website
+
+472
+00:20:30,025 --> 00:20:31,400
+or at least make
+it inaccessible.
+
+473
+00:20:31,400 --> 00:20:33,820
+And you can actually see
+here this fun spike again
+
+474
+00:20:33,820 --> 00:20:37,190
+when the link was posted on
+Hacker News, another website.
+
+475
+00:20:37,190 --> 00:20:40,640
+So it can happen, but it can
+also be intentional, too.
+
+476
+00:20:40,640 --> 00:20:44,450
+I mean, this was me just
+searching DDoS attack on August
+
+477
+00:20:44,450 --> 00:20:45,920
+3rd, 2022.
+
+478
+00:20:45,920 --> 00:20:48,580
+And I mean, there were just
+countless news stories that
+
+479
+00:20:48,580 --> 00:20:51,680
+showed up for it of attacks
+that were happening that day,
+
+480
+00:20:51,680 --> 00:20:54,580
+that happened to be roughly
+when House Speaker Nancy
+
+481
+00:20:54,580 --> 00:20:56,510
+Pelosi was visiting Taiwan.
+
+482
+00:20:56,510 --> 00:20:58,900
+And unsurprisingly,
+that was something
+
+483
+00:20:58,900 --> 00:21:01,230
+that was of great
+threat to China
+
+484
+00:21:01,230 --> 00:21:03,090
+or they viewed it as a
+great threat to them.
+
+485
+00:21:03,090 --> 00:21:05,510
+And so then there was
+a lot of DDoS attacks
+
+486
+00:21:05,510 --> 00:21:08,820
+to shut down Taiwanese
+websites and all that stuff.
+
+487
+00:21:08,820 --> 00:21:12,360
+So these are very common
+attacks that take place.
+
+488
+00:21:12,360 --> 00:21:14,690
+Video game servers,
+all that stuff.
+
+489
+00:21:14,690 --> 00:21:18,000
+There exist tools in
+AWS to handle this,
+
+490
+00:21:18,000 --> 00:21:21,320
+to try to address this
+and avoid this issue.
+
+491
+00:21:21,320 --> 00:21:23,310
+One of them is
+called AWS Shield.
+
+492
+00:21:23,310 --> 00:21:28,460
+The idea really being here that
+the task is to predict what
+
+493
+00:21:28,460 --> 00:21:30,920
+internet traffic
+is real traffic,
+
+494
+00:21:30,920 --> 00:21:33,960
+what is a real request
+and what isn't.
+
+495
+00:21:33,960 --> 00:21:36,500
+If something's not a real
+request, then just ignore it.
+
+496
+00:21:36,500 --> 00:21:39,600
+That's all you have to do is
+just pretend it doesn't exist.
+
+497
+00:21:39,600 --> 00:21:40,890
+Don't respond to it.
+
+498
+00:21:40,890 --> 00:21:43,850
+And the request will come in,
+but you can filter those out
+
+499
+00:21:43,850 --> 00:21:45,000
+and you'll be good to go.
+
+500
+00:21:45,000 --> 00:21:48,150
+Your website doesn't
+go down at all.
+
+501
+00:21:48,150 --> 00:21:49,970
+It's a non-trivial task--
+
+502
+00:21:49,970 --> 00:21:53,220
+correctly identifying if
+a request is true or not,
+
+503
+00:21:53,220 --> 00:21:56,840
+given that this request really
+is just some information like IP
+
+504
+00:21:56,840 --> 00:21:58,988
+address, time of day.
+
+505
+00:21:58,988 --> 00:22:00,780
+Maybe you have something
+where you see well
+
+506
+00:22:00,780 --> 00:22:02,910
+from one specific IP address.
+
+507
+00:22:02,910 --> 00:22:06,740
+There are 10,000 requests
+coming each second.
+
+508
+00:22:06,740 --> 00:22:09,110
+Well, that likely tells you
+that it's one server that's
+
+509
+00:22:09,110 --> 00:22:09,900
+just blasting you.
+
+510
+00:22:09,900 --> 00:22:12,470
+So, OK, maybe you just
+block that IP address,
+
+511
+00:22:12,470 --> 00:22:14,810
+and you just ignore
+anything from there.
+
+512
+00:22:14,810 --> 00:22:18,080
+But if anybody is smart, they'll
+use a VPN or some other way
+
+513
+00:22:18,080 --> 00:22:22,050
+to just change up
+their IP address.
+
+514
+00:22:22,050 --> 00:22:25,900
+And so now they can come from
+a bunch of different locations.
+
+515
+00:22:25,900 --> 00:22:27,630
+Well, OK, maybe I
+just don't expect
+
+516
+00:22:27,630 --> 00:22:31,440
+that this is-- given that this
+website hasn't been very heavily
+
+517
+00:22:31,440 --> 00:22:34,650
+trafficked recently, it probably
+shouldn't have this spike
+
+518
+00:22:34,650 --> 00:22:35,920
+from this far across.
+
+519
+00:22:35,920 --> 00:22:37,440
+Maybe IP addresses
+probably should
+
+520
+00:22:37,440 --> 00:22:40,107
+be localized because everything
+else that this website has had--
+
+521
+00:22:40,107 --> 00:22:42,360
+or every other IP address
+that's accessed this website
+
+522
+00:22:42,360 --> 00:22:44,770
+has come from within
+the United States.
+
+523
+00:22:44,770 --> 00:22:46,560
+And so maybe if all
+of a sudden, I'm
+
+524
+00:22:46,560 --> 00:22:49,057
+getting hits equally
+from around the world,
+
+525
+00:22:49,057 --> 00:22:50,640
+maybe that's uncommon--
+or it's coming
+
+526
+00:22:50,640 --> 00:22:55,210
+from an area that doesn't
+have very many web visits.
+
+527
+00:22:55,210 --> 00:22:57,930
+So all these things are what's
+happening in the back end
+
+528
+00:22:57,930 --> 00:23:02,580
+to try to automatically detect
+anything that looks nefarious.
+
+529
+00:23:02,580 --> 00:23:07,950
+And obviously, as it
+detects these things,
+
+530
+00:23:07,950 --> 00:23:13,350
+negative or malicious actors
+will adapt their techniques.
+
+531
+00:23:13,350 --> 00:23:15,100
+And so it's a constantly
+changing process.
+
+532
+00:23:15,100 --> 00:23:17,925
+And so having a pre-built tool
+like this that you can just
+
+533
+00:23:17,925 --> 00:23:22,380
+have on your website that's
+automatically available,
+
+534
+00:23:22,380 --> 00:23:24,570
+it's very valuable.
+
+535
+00:23:24,570 --> 00:23:26,700
+And here you can see
+in 2020, they actually
+
+536
+00:23:26,700 --> 00:23:29,550
+mitigated a record attack
+that was requesting
+
+537
+00:23:29,550 --> 00:23:33,155
+2.3 terabits per second.
+
+538
+00:23:35,720 --> 00:23:38,505
+Another attack that
+you might come across--
+
+539
+00:23:38,505 --> 00:23:40,130
+we talked about this
+one a little bit--
+
+540
+00:23:40,130 --> 00:23:42,430
+is man-in-the-middle attacks.
+
+541
+00:23:42,430 --> 00:23:44,000
+The most common way
+this is presented
+
+542
+00:23:44,000 --> 00:23:48,170
+is basically when if you access
+over an unencrypted Wi-Fi point.
+
+543
+00:23:48,170 --> 00:23:50,180
+So imagine if you
+were at an airport
+
+544
+00:23:50,180 --> 00:23:54,360
+and you're trying to connect to
+Salt Lake City airport Wi-Fi,
+
+545
+00:23:54,360 --> 00:24:00,140
+well, somebody creates a fake
+Wi-Fi access point that's
+
+546
+00:24:00,140 --> 00:24:04,020
+just their little local
+hotspot that's not encrypted,
+
+547
+00:24:04,020 --> 00:24:06,480
+it's not locked, you
+can access it for free,
+
+548
+00:24:06,480 --> 00:24:09,720
+and it's called
+SLC airport Wi-Fi.
+
+549
+00:24:09,720 --> 00:24:11,210
+And so it looks real.
+
+550
+00:24:11,210 --> 00:24:12,600
+You connect to it.
+
+551
+00:24:12,600 --> 00:24:15,050
+But now at this point, all
+of your internet traffic
+
+552
+00:24:15,050 --> 00:24:17,062
+is going through
+their Wi-Fi point
+
+553
+00:24:17,062 --> 00:24:18,270
+and then out to the internet.
+
+554
+00:24:18,270 --> 00:24:20,270
+So they've injected
+themselves in the middle
+
+555
+00:24:20,270 --> 00:24:24,270
+of your internet access and
+you, technically speaking,
+
+556
+00:24:24,270 --> 00:24:26,920
+might not know if they
+are really in there.
+
+557
+00:24:26,920 --> 00:24:28,920
+You don't know that there's
+a man in the middle.
+
+558
+00:24:28,920 --> 00:24:31,890
+And so they might just
+relay your messages.
+
+559
+00:24:31,890 --> 00:24:33,840
+They might just send
+them on and give you--
+
+560
+00:24:33,840 --> 00:24:37,160
+so you request facebook.com.
+
+561
+00:24:37,160 --> 00:24:39,750
+They might send that request
+right onto facebook.com,
+
+562
+00:24:39,750 --> 00:24:41,670
+return the response,
+pass it off to you,
+
+563
+00:24:41,670 --> 00:24:43,390
+and you don't see anything.
+
+564
+00:24:43,390 --> 00:24:45,890
+But the whole time, they've
+just been collecting information
+
+565
+00:24:45,890 --> 00:24:48,050
+about you-- maybe
+your passwords,
+
+566
+00:24:48,050 --> 00:24:50,910
+your internet activity,
+the websites you visit.
+
+567
+00:24:50,910 --> 00:24:53,250
+And they're collecting all
+this data without you knowing
+
+568
+00:24:53,250 --> 00:24:54,870
+or they could even
+be altering it.
+
+569
+00:24:54,870 --> 00:24:59,240
+You make a request and they make
+some change to it along the way.
+
+570
+00:24:59,240 --> 00:25:01,250
+A good example of
+this was Comcast
+
+571
+00:25:01,250 --> 00:25:05,205
+has been in trouble with this
+a few times where they have--
+
+572
+00:25:05,205 --> 00:25:07,080
+again, they're the
+internet service provider.
+
+573
+00:25:07,080 --> 00:25:08,940
+So your requests are
+going through them.
+
+574
+00:25:08,940 --> 00:25:11,090
+And they were basically
+injecting code
+
+575
+00:25:11,090 --> 00:25:12,930
+into third-party web pages.
+
+576
+00:25:12,930 --> 00:25:15,660
+The web page is not affiliated
+with them or you at all.
+
+577
+00:25:15,660 --> 00:25:18,500
+And they were showing
+their own ads and messages.
+
+578
+00:25:18,500 --> 00:25:21,060
+They did this when people
+were pirating movies.
+
+579
+00:25:21,060 --> 00:25:25,350
+So if you went to a website that
+was known to host pirated films,
+
+580
+00:25:25,350 --> 00:25:29,990
+they would inject an ad or a pop
+up into your browser window that
+
+581
+00:25:29,990 --> 00:25:32,970
+would say, hey, you shouldn't be
+pirating content, it's illegal.
+
+582
+00:25:32,970 --> 00:25:37,080
+We're going to fine you, X, Y
+and Z, which maybe they could
+
+583
+00:25:37,080 --> 00:25:39,580
+make an argument is OK usage.
+
+584
+00:25:39,580 --> 00:25:42,210
+But it seems like a little
+bit of an abuse of power
+
+585
+00:25:42,210 --> 00:25:43,950
+of being your internet
+service provider
+
+586
+00:25:43,950 --> 00:25:48,240
+and guaranteeing you free and
+unlimited access to the internet
+
+587
+00:25:48,240 --> 00:25:50,910
+to some extent for them
+to inject themselves
+
+588
+00:25:50,910 --> 00:25:52,150
+in the middle like that.
+
+589
+00:25:52,150 --> 00:25:55,620
+So that is really what an
+example of a man-in-the-middle
+
+590
+00:25:55,620 --> 00:25:59,460
+attack that maybe wasn't
+malicious as it's usually
+
+591
+00:25:59,460 --> 00:26:02,970
+defined, but it is still
+an attack nonetheless
+
+592
+00:26:02,970 --> 00:26:05,340
+on your network security
+because your information is now
+
+593
+00:26:05,340 --> 00:26:06,828
+vulnerable.
+
+594
+00:26:06,828 --> 00:26:09,370
+The government of Kazakhstan,
+and they're not unique in this,
+
+595
+00:26:09,370 --> 00:26:13,267
+but they basically tried
+to circumvent this or be
+
+596
+00:26:13,267 --> 00:26:14,350
+really creative with this.
+
+597
+00:26:14,350 --> 00:26:17,280
+So one of the common ways
+that we counteract these
+
+598
+00:26:17,280 --> 00:26:20,280
+man-in-the-middle attacks
+is by having these secure
+
+599
+00:26:20,280 --> 00:26:21,792
+certificates.
+
+600
+00:26:21,792 --> 00:26:25,800
+There's a mutually trusted
+certificate authority usually.
+
+601
+00:26:25,800 --> 00:26:28,890
+And that's, again, what allows
+those or has those security
+
+602
+00:26:28,890 --> 00:26:31,720
+certificates that have dates on
+them and all this kind of stuff.
+
+603
+00:26:31,720 --> 00:26:34,740
+And that's really what allows
+this HTTPS, this secure internet
+
+604
+00:26:34,740 --> 00:26:36,400
+connection to go through.
+
+605
+00:26:36,400 --> 00:26:38,130
+Well, the government
+of Kazakhstan
+
+606
+00:26:38,130 --> 00:26:40,530
+created a root certificate,
+which the idea was then
+
+607
+00:26:40,530 --> 00:26:43,470
+that basically it would--
+any internet traffic
+
+608
+00:26:43,470 --> 00:26:46,620
+from internet
+users in Kazakhstan
+
+609
+00:26:46,620 --> 00:26:49,950
+would use this root certificate
+such that they would then--
+
+610
+00:26:49,950 --> 00:26:52,390
+the government would
+be in the middle.
+
+611
+00:26:52,390 --> 00:26:55,440
+They would basically be able to
+access any information that's
+
+612
+00:26:55,440 --> 00:26:57,400
+transported out of Kazakhstan.
+
+613
+00:26:57,400 --> 00:26:59,340
+And I think it would
+end up being mitigated
+
+614
+00:26:59,340 --> 00:27:02,003
+by having basically most
+external companies and websites
+
+615
+00:27:02,003 --> 00:27:03,420
+just blocked that
+root certificate
+
+616
+00:27:03,420 --> 00:27:05,970
+and just didn't treat it as a
+trusted certificate because it
+
+617
+00:27:05,970 --> 00:27:07,845
+needs to be mutually
+trusted, both the sender
+
+618
+00:27:07,845 --> 00:27:08,770
+and the receiver.
+
+619
+00:27:08,770 --> 00:27:13,000
+And so therefore, never the
+information never went through.
+
+620
+00:27:13,000 --> 00:27:16,860
+But this is one of the
+ways it can be done.
+
+621
+00:27:16,860 --> 00:27:19,470
+There exists a certificate
+manager in AWS, though, again,
+
+622
+00:27:19,470 --> 00:27:21,140
+to allow you to
+provision, manage,
+
+623
+00:27:21,140 --> 00:27:23,280
+and deploy these
+certificates for use
+
+624
+00:27:23,280 --> 00:27:25,620
+with your personal
+websites and all that.
+
+625
+00:27:25,620 --> 00:27:28,500
+So you don't have to handle
+the actual back-end logic
+
+626
+00:27:28,500 --> 00:27:31,690
+of making sure this
+trusted exchange happens.
+
+627
+00:27:31,690 --> 00:27:35,380
+You just set this up on your end
+and AWS will manage the rest.
+
+628
+00:27:35,380 --> 00:27:38,905
+So again, that's the idea behind
+these man-in-the-middle attacks.
+
+629
+00:27:41,480 --> 00:27:44,660
+Now, unfortunately, there exists
+the most common technique.
+
+630
+00:27:44,660 --> 00:27:48,710
+And this one cannot be mitigated
+by AWS or any other cloud
+
+631
+00:27:48,710 --> 00:27:50,078
+service provider.
+
+632
+00:27:50,078 --> 00:27:52,370
+They obviously won't talk to
+you about a ton about this
+
+633
+00:27:52,370 --> 00:27:54,590
+because there is no solution
+to it-- but social engineering
+
+634
+00:27:54,590 --> 00:27:55,320
+attacks.
+
+635
+00:27:55,320 --> 00:27:59,660
+These are attacks where
+somebody comes in and basically
+
+636
+00:27:59,660 --> 00:28:03,350
+tries to convince you
+or some other person
+
+637
+00:28:03,350 --> 00:28:06,560
+to intentionally or
+unintentionally share
+
+638
+00:28:06,560 --> 00:28:08,780
+sensitive information
+that can be used
+
+639
+00:28:08,780 --> 00:28:15,260
+to access a protected system.
+
+640
+00:28:15,260 --> 00:28:18,330
+So the idea here
+is that OK, well--
+
+641
+00:28:18,330 --> 00:28:19,650
+or you have an example there.
+
+642
+00:28:19,650 --> 00:28:21,770
+I received a call a couple
+of weeks ago, actually.
+
+643
+00:28:21,770 --> 00:28:24,200
+This bottom bullet point here.
+
+644
+00:28:24,200 --> 00:28:25,880
+I received a call
+a few weeks ago
+
+645
+00:28:25,880 --> 00:28:30,500
+that was claiming to be an agent
+from the Department of Justice
+
+646
+00:28:30,500 --> 00:28:34,190
+that the first thing they
+said to me was basically,
+
+647
+00:28:34,190 --> 00:28:35,820
+Adrian from the
+Department of Justice,
+
+648
+00:28:35,820 --> 00:28:39,650
+I need you to verify
+your name and birth date.
+
+649
+00:28:39,650 --> 00:28:43,020
+And there, immediately
+red flags should go off.
+
+650
+00:28:43,020 --> 00:28:45,270
+Nobody should be calling you
+to ask for any personally
+
+651
+00:28:45,270 --> 00:28:46,440
+identifiable information.
+
+652
+00:28:46,440 --> 00:28:50,077
+PII is the abbreviation
+that we use for that.
+
+653
+00:28:50,077 --> 00:28:51,660
+You can see if I
+duck out of the way--
+
+654
+00:28:51,660 --> 00:28:54,820
+PII, Personally
+Identifiable Information.
+
+655
+00:28:54,820 --> 00:28:57,417
+And so the second they asked
+for that, your statement should
+
+656
+00:28:57,417 --> 00:28:59,250
+be absolutely not, I'm
+not going to give you
+
+657
+00:28:59,250 --> 00:29:03,151
+any information when you
+were the one that called me.
+
+658
+00:29:03,151 --> 00:29:05,860
+AWS, for example, it's
+never going to contact you.
+
+659
+00:29:05,860 --> 00:29:08,200
+No cloud provider will ever
+contact you and say, hey,
+
+660
+00:29:08,200 --> 00:29:13,110
+give me your age, name, birth
+date, mother's maiden name,
+
+661
+00:29:13,110 --> 00:29:15,670
+Social Security or the last
+four of your Social Security,
+
+662
+00:29:15,670 --> 00:29:16,840
+anything like that.
+
+663
+00:29:16,840 --> 00:29:18,730
+Never give it to
+somebody that called you.
+
+664
+00:29:18,730 --> 00:29:21,100
+You can always say thank you.
+
+665
+00:29:21,100 --> 00:29:22,960
+I will pull that information up.
+
+666
+00:29:22,960 --> 00:29:26,050
+Hang up the phone, and call back
+the numbers that are trusted.
+
+667
+00:29:26,050 --> 00:29:29,580
+So call back the help or
+support number for AWS,
+
+668
+00:29:29,580 --> 00:29:31,603
+for your bank, whatever it is.
+
+669
+00:29:31,603 --> 00:29:33,270
+I ended up staying
+on the line with them
+
+670
+00:29:33,270 --> 00:29:34,930
+because I can't
+resist a scammer.
+
+671
+00:29:34,930 --> 00:29:37,020
+It's too fun to talk to them.
+
+672
+00:29:37,020 --> 00:29:39,540
+But basically, I was then
+threatened with legal action
+
+673
+00:29:39,540 --> 00:29:43,150
+to that if I don't provide my
+birth date to identify myself,
+
+674
+00:29:43,150 --> 00:29:45,960
+then they were going to sue me.
+
+675
+00:29:45,960 --> 00:29:47,380
+At which point, that's fine.
+
+676
+00:29:47,380 --> 00:29:49,230
+You let them sue
+you because there's
+
+677
+00:29:49,230 --> 00:29:51,852
+nobody that's allowed
+to solicit information,
+
+678
+00:29:51,852 --> 00:29:53,560
+sensitive information
+from you like that,
+
+679
+00:29:53,560 --> 00:29:54,960
+even though birth date is
+something that probably
+
+680
+00:29:54,960 --> 00:29:56,320
+easily find for me online.
+
+681
+00:29:56,320 --> 00:29:57,430
+That's not the point.
+
+682
+00:29:57,430 --> 00:29:59,740
+No matter what the content
+is, no matter what it is,
+
+683
+00:29:59,740 --> 00:30:02,220
+they're going to use that
+or can be used because.
+
+684
+00:30:02,220 --> 00:30:04,020
+Now, let's say, I
+provide my birth date.
+
+685
+00:30:04,020 --> 00:30:08,400
+Well, that's not an uncommon
+technique or pattern
+
+686
+00:30:08,400 --> 00:30:10,210
+to use in passwords.
+
+687
+00:30:10,210 --> 00:30:12,810
+So now, if they're trying
+to crack my passwords
+
+688
+00:30:12,810 --> 00:30:14,640
+or identify one of
+my passwords, they
+
+689
+00:30:14,640 --> 00:30:17,100
+can try all kinds of
+combinations of my age and birth
+
+690
+00:30:17,100 --> 00:30:17,740
+date.
+
+691
+00:30:17,740 --> 00:30:19,930
+So that's why they
+want that information.
+
+692
+00:30:19,930 --> 00:30:23,350
+Or that may be something that
+they then use to say, OK, great,
+
+693
+00:30:23,350 --> 00:30:24,580
+now I know his birth date.
+
+694
+00:30:24,580 --> 00:30:26,205
+Maybe I'll use some
+different technique
+
+695
+00:30:26,205 --> 00:30:29,190
+to acquire, again, some extra
+little bit of information.
+
+696
+00:30:29,190 --> 00:30:31,590
+And slowly, they can
+form some profile of me.
+
+697
+00:30:31,590 --> 00:30:33,970
+And then eventually, they can
+call my bank and say, hey,
+
+698
+00:30:33,970 --> 00:30:36,490
+I forgot my password
+to my bank account.
+
+699
+00:30:36,490 --> 00:30:38,280
+I can't believe this.
+
+700
+00:30:38,280 --> 00:30:41,493
+I've seen one where they used a
+YouTube video of a baby crying
+
+701
+00:30:41,493 --> 00:30:43,410
+in the background to
+pretend like they're just
+
+702
+00:30:43,410 --> 00:30:46,910
+trying to quickly get access
+to a husband or a wife's bank
+
+703
+00:30:46,910 --> 00:30:47,410
+account.
+
+704
+00:30:47,410 --> 00:30:48,502
+And the baby's crying.
+
+705
+00:30:48,502 --> 00:30:49,960
+I just need this
+number real quick.
+
+706
+00:30:49,960 --> 00:30:52,543
+Here's my age and birth date or
+here's my husband's birth date
+
+707
+00:30:52,543 --> 00:30:58,390
+and name and place of birth and
+first model of car or whatever.
+
+708
+00:30:58,390 --> 00:30:59,940
+And then once they
+have that, they
+
+709
+00:30:59,940 --> 00:31:01,950
+can get that actual
+sensory information.
+
+710
+00:31:01,950 --> 00:31:03,408
+And they can say,
+actually, can you
+
+711
+00:31:03,408 --> 00:31:04,830
+change the email
+address that gets
+
+712
+00:31:04,830 --> 00:31:07,680
+sent to you to this email
+address, the password reset
+
+713
+00:31:07,680 --> 00:31:10,170
+link, because I don't have
+access to his other email
+
+714
+00:31:10,170 --> 00:31:10,840
+address?
+
+715
+00:31:10,840 --> 00:31:13,440
+And now all of a sudden they've
+gained access to your account,
+
+716
+00:31:13,440 --> 00:31:14,350
+and they can do this.
+
+717
+00:31:14,350 --> 00:31:16,350
+And this is a much more
+effective technique
+
+718
+00:31:16,350 --> 00:31:18,960
+than any coding or
+hacking or anything
+
+719
+00:31:18,960 --> 00:31:20,290
+like that you've seen before.
+
+720
+00:31:20,290 --> 00:31:23,130
+So that's the one
+to worry about.
+
+721
+00:31:23,130 --> 00:31:26,310
+You can see here this is
+a really famous one where
+
+722
+00:31:26,310 --> 00:31:28,660
+some people actually
+ended up getting
+
+723
+00:31:28,660 --> 00:31:32,160
+an admin password for
+a Twitter support staff
+
+724
+00:31:32,160 --> 00:31:33,220
+or something like that.
+
+725
+00:31:33,220 --> 00:31:35,130
+And with that admin
+password, they
+
+726
+00:31:35,130 --> 00:31:37,200
+were basically able
+to go in and access
+
+727
+00:31:37,200 --> 00:31:41,080
+every single famous
+celebrity's Twitter account.
+
+728
+00:31:41,080 --> 00:31:43,880
+And they posted this
+link to drop money
+
+729
+00:31:43,880 --> 00:31:45,200
+at their Bitcoin address.
+
+730
+00:31:45,200 --> 00:31:47,210
+And they would multiply
+the money for them
+
+731
+00:31:47,210 --> 00:31:48,330
+and send them back money.
+
+732
+00:31:48,330 --> 00:31:49,560
+And obviously, it's a scam.
+
+733
+00:31:49,560 --> 00:31:51,320
+But unfortunately,
+people fell for it
+
+734
+00:31:51,320 --> 00:31:54,140
+and did send money out to
+these Bitcoin addresses
+
+735
+00:31:54,140 --> 00:31:55,940
+and lost that money.
+
+736
+00:31:55,940 --> 00:31:57,840
+So be mindful.
+
+737
+00:31:57,840 --> 00:31:59,930
+People are always trying
+to steal your information
+
+738
+00:31:59,930 --> 00:32:02,190
+and try to protect
+as much as you can.
+
+739
+00:32:02,190 --> 00:32:04,970
+If you want a good book
+about it, Ghost In The Wires
+
+740
+00:32:04,970 --> 00:32:06,810
+is by this guy, Kevin Mitnick.
+
+741
+00:32:06,810 --> 00:32:07,920
+It's a bit old now.
+
+742
+00:32:07,920 --> 00:32:10,640
+I mean, it was back in
+the days of landlines.
+
+743
+00:32:10,640 --> 00:32:12,950
+But the techniques
+aren't too far
+
+744
+00:32:12,950 --> 00:32:14,610
+off of what's still used today.
+
+745
+00:32:14,610 --> 00:32:15,800
+So he was a famous--
+
+746
+00:32:15,800 --> 00:32:17,730
+I forget what they
+exactly called them,
+
+747
+00:32:17,730 --> 00:32:23,070
+but they would get all these
+secret like phone numbers
+
+748
+00:32:23,070 --> 00:32:25,610
+and passcodes to
+access phone records
+
+749
+00:32:25,610 --> 00:32:27,560
+and have unlimited
+international calls when
+
+750
+00:32:27,560 --> 00:32:29,820
+that used to cost money
+and all that stuff.
+
+751
+00:32:29,820 --> 00:32:32,430
+So it was all social
+engineering techniques.
+
+752
+00:32:32,430 --> 00:32:34,950
+And inevitably, you get
+caught and you go to jail.
+
+753
+00:32:34,950 --> 00:32:38,610
+But there's still people that
+are going to keep doing it.
+
+754
+00:32:38,610 --> 00:32:42,950
+So either way, this is
+probably the biggest risk.
+
+755
+00:32:42,950 --> 00:32:46,650
+And this is one that cannot be
+mitigated by any built-in tools.
+
+756
+00:32:46,650 --> 00:32:49,790
+So all of that being
+said, it's very important
+
+757
+00:32:49,790 --> 00:32:51,470
+even with you guys
+having access now
+
+758
+00:32:51,470 --> 00:32:56,390
+to AWS accounts that come
+through our departmental AWS
+
+759
+00:32:56,390 --> 00:32:57,620
+organization.
+
+760
+00:32:57,620 --> 00:32:59,347
+You could potentially
+leak information.
+
+761
+00:32:59,347 --> 00:33:01,430
+And if, for example, that's
+one of the reasons why
+
+762
+00:33:01,430 --> 00:33:04,010
+we have to be very intentional
+with our IAM privileges.
+
+763
+00:33:04,010 --> 00:33:06,710
+Because if we just give you
+blanket access to everything,
+
+764
+00:33:06,710 --> 00:33:08,270
+and for whatever
+reason, somebody
+
+765
+00:33:08,270 --> 00:33:09,980
+steals your laptop
+from the library
+
+766
+00:33:09,980 --> 00:33:12,980
+and now they have access
+to your private key
+
+767
+00:33:12,980 --> 00:33:16,430
+and you have your password
+saved into your password manager
+
+768
+00:33:16,430 --> 00:33:20,320
+on Google Chrome, so the second
+you log in or you open up AWS,
+
+769
+00:33:20,320 --> 00:33:22,740
+you can just hit Enter
+to connect to AWS,
+
+770
+00:33:22,740 --> 00:33:25,238
+and now they have
+your private key.
+
+771
+00:33:25,238 --> 00:33:27,530
+Hopefully, you have multi-factor
+authentication set up,
+
+772
+00:33:27,530 --> 00:33:29,877
+and maybe that's one
+more blocker of not
+
+773
+00:33:29,877 --> 00:33:30,960
+being able to access that.
+
+774
+00:33:30,960 --> 00:33:32,930
+But if they can get
+in, then at that point,
+
+775
+00:33:32,930 --> 00:33:36,230
+they could do anything
+they want with the account.
+
+776
+00:33:36,230 --> 00:33:39,180
+So, again, a lot
+of doom and gloom.
+
+777
+00:33:39,180 --> 00:33:41,610
+So yeah, like I said,
+mitigation strategies for that,
+
+778
+00:33:41,610 --> 00:33:45,350
+for the social engineering tax.
+
+779
+00:33:45,350 --> 00:33:47,660
+Get that multi-factor
+authentication on your AWS
+
+780
+00:33:47,660 --> 00:33:49,070
+account and all your accounts.
+
+781
+00:33:49,070 --> 00:33:51,180
+Anywhere you can have
+multi-factor authentication,
+
+782
+00:33:51,180 --> 00:33:51,760
+use it.
+
+783
+00:33:51,760 --> 00:33:52,920
+It's a slight annoyance.
+
+784
+00:33:52,920 --> 00:33:55,130
+I know I hate it,
+too, but it's just
+
+785
+00:33:55,130 --> 00:33:57,650
+an app on your phone or
+a little key, USB key
+
+786
+00:33:57,650 --> 00:33:58,640
+that you might have.
+
+787
+00:33:58,640 --> 00:34:01,670
+And it really does add that
+extra really specific layer
+
+788
+00:34:01,670 --> 00:34:02,270
+of security.
+
+789
+00:34:02,270 --> 00:34:05,120
+Because now I have to lose
+multiple devices and all that
+
+790
+00:34:05,120 --> 00:34:07,250
+to give anybody access to it.
+
+791
+00:34:07,250 --> 00:34:09,179
+Store that private key securely.
+
+792
+00:34:09,179 --> 00:34:10,980
+Don't leave your
+computer unattended.
+
+793
+00:34:10,980 --> 00:34:13,639
+Don't provide any personally
+identifiable information
+
+794
+00:34:13,639 --> 00:34:16,050
+via phone, email,
+anything like that.
+
+795
+00:34:16,050 --> 00:34:17,600
+Never do that.
+
+796
+00:34:17,600 --> 00:34:20,090
+And consider what information
+you share publicly.
+
+797
+00:34:20,090 --> 00:34:22,940
+Again, security clearances
+are a really important one
+
+798
+00:34:22,940 --> 00:34:25,130
+to think about.
+
+799
+00:34:25,130 --> 00:34:29,239
+I have had a security
+clearance, a top-secret security
+
+800
+00:34:29,239 --> 00:34:30,659
+clearance for my last job.
+
+801
+00:34:30,659 --> 00:34:33,290
+And you probably won't
+see that anywhere
+
+802
+00:34:33,290 --> 00:34:35,670
+online that I listed that
+because as tempting as it is,
+
+803
+00:34:35,670 --> 00:34:37,045
+it's actually a
+really good point
+
+804
+00:34:37,045 --> 00:34:40,610
+to post to recruiters
+because then you're
+
+805
+00:34:40,610 --> 00:34:43,558
+eligible for all kinds of jobs
+that have that same security
+
+806
+00:34:43,558 --> 00:34:44,100
+requirements.
+
+807
+00:34:44,100 --> 00:34:46,225
+So you don't have to go
+through that process again.
+
+808
+00:34:46,225 --> 00:34:47,909
+So it could be a
+selling point to you
+
+809
+00:34:47,909 --> 00:34:49,920
+to have that on your
+LinkedIn profile.
+
+810
+00:34:49,920 --> 00:34:52,030
+At the same point, though,
+or at the same time,
+
+811
+00:34:52,030 --> 00:34:54,330
+you could be putting
+a target on your back
+
+812
+00:34:54,330 --> 00:34:56,010
+because now they
+know that, hey, this
+
+813
+00:34:56,010 --> 00:34:58,572
+is somebody who might have
+access to sensitive information.
+
+814
+00:34:58,572 --> 00:35:00,030
+And so now, all of
+a sudden, you're
+
+815
+00:35:00,030 --> 00:35:02,380
+going to get hit with
+a lot of information,
+
+816
+00:35:02,380 --> 00:35:04,182
+a lot of phishing attempts.
+
+817
+00:35:04,182 --> 00:35:05,830
+Even the second I
+joined the company
+
+818
+00:35:05,830 --> 00:35:08,720
+and posted that information
+on LinkedIn, I immediately--
+
+819
+00:35:08,720 --> 00:35:10,470
+I mean, it couldn't
+have been the next day
+
+820
+00:35:10,470 --> 00:35:13,500
+I started getting phishing
+attempts from sources
+
+821
+00:35:13,500 --> 00:35:14,710
+that I had never seen before.
+
+822
+00:35:14,710 --> 00:35:17,370
+So everything you
+put out online is
+
+823
+00:35:17,370 --> 00:35:19,570
+going to be information
+for you to use.
+
+824
+00:35:19,570 --> 00:35:21,720
+And so it's not to say
+you hide that information.
+
+825
+00:35:21,720 --> 00:35:22,887
+Those platforms are great.
+
+826
+00:35:22,887 --> 00:35:24,220
+I use LinkedIn on a daily basis.
+
+827
+00:35:24,220 --> 00:35:26,160
+You probably see me on there.
+
+828
+00:35:26,160 --> 00:35:28,230
+But it's always important
+to consider that and be
+
+829
+00:35:28,230 --> 00:35:30,355
+mindful of what information
+is out there about you.
+
+830
+00:35:30,355 --> 00:35:34,570
+And also try to avoid sharing
+what shouldn't be shared.
+
+831
+00:35:34,570 --> 00:35:36,842
+So keep that in mind.
+
+832
+00:35:36,842 --> 00:35:39,050
+And also along that line of
+security clearances, too.
+
+833
+00:35:39,050 --> 00:35:41,140
+It might even be something
+along the lines of your job.
+
+834
+00:35:41,140 --> 00:35:42,580
+If you end up in
+a director level
+
+835
+00:35:42,580 --> 00:35:47,120
+position of security at X,
+Y, and Z big tech company,
+
+836
+00:35:47,120 --> 00:35:47,940
+that could be it.
+
+837
+00:35:47,940 --> 00:35:49,830
+Whether you're a director or
+an intern, for that matter,
+
+838
+00:35:49,830 --> 00:35:51,913
+they know that you might
+have access to something.
+
+839
+00:35:51,913 --> 00:35:53,380
+So all that stuff
+is always going
+
+840
+00:35:53,380 --> 00:35:55,180
+to put a target on your back.
+
+841
+00:35:55,180 --> 00:35:57,370
+Sorry.
+
+842
+00:35:57,370 --> 00:36:01,960
+And so that brings you to
+this data ethics discussion.
+
+843
+00:36:01,960 --> 00:36:04,360
+It goes hand in hand with
+this idea of security
+
+844
+00:36:04,360 --> 00:36:06,800
+because we now need
+to think about, well,
+
+845
+00:36:06,800 --> 00:36:09,790
+as users of cloud
+platforms, let's say,
+
+846
+00:36:09,790 --> 00:36:12,340
+you're making a website
+and you have logins now.
+
+847
+00:36:12,340 --> 00:36:16,150
+You now hold somebody's
+sensitive information.
+
+848
+00:36:16,150 --> 00:36:19,480
+If you are a website,
+again, that has a login page
+
+849
+00:36:19,480 --> 00:36:21,890
+and you're managing
+the logins yourself,
+
+850
+00:36:21,890 --> 00:36:23,800
+remember that the vast
+majority of people
+
+851
+00:36:23,800 --> 00:36:26,090
+use the same password
+across most platforms.
+
+852
+00:36:26,090 --> 00:36:28,910
+So if you leak that
+information in some way,
+
+853
+00:36:28,910 --> 00:36:30,710
+whether intentionally
+or unintentionally,
+
+854
+00:36:30,710 --> 00:36:33,500
+you've now put that person at
+risk across every platform.
+
+855
+00:36:33,500 --> 00:36:36,570
+And while that they probably
+shouldn't do that, they did.
+
+856
+00:36:36,570 --> 00:36:38,320
+And so that's still
+something to consider.
+
+857
+00:36:38,320 --> 00:36:40,820
+You have to be mindful of that.
+
+858
+00:36:40,820 --> 00:36:42,290
+And it goes across the board.
+
+859
+00:36:42,290 --> 00:36:45,260
+And so there's some good points
+here that I found online.
+
+860
+00:36:45,260 --> 00:36:47,138
+This is a great
+article on data ethics.
+
+861
+00:36:47,138 --> 00:36:49,430
+And so I just wanted to
+highlight some of these points.
+
+862
+00:36:49,430 --> 00:36:52,090
+And so you think about
+that as you build tools
+
+863
+00:36:52,090 --> 00:36:54,910
+and as you start to
+utilize the cloud,
+
+864
+00:36:54,910 --> 00:36:57,130
+you should always remember
+that an individual
+
+865
+00:36:57,130 --> 00:36:59,740
+has ownership over their
+own personal information.
+
+866
+00:36:59,740 --> 00:37:03,370
+It's the same principle
+of least privilege.
+
+867
+00:37:03,370 --> 00:37:05,560
+You need to get
+consent or you should
+
+868
+00:37:05,560 --> 00:37:08,840
+be getting consent for every bit
+of data you collect from a user.
+
+869
+00:37:08,840 --> 00:37:11,450
+So you see how sometimes you
+get that prompt of like, hey,
+
+870
+00:37:11,450 --> 00:37:13,180
+should I allow access
+to my microphone
+
+871
+00:37:13,180 --> 00:37:16,310
+or allow access to my location.
+
+872
+00:37:16,310 --> 00:37:19,850
+These things should be done, and
+it should always be an opt in,
+
+873
+00:37:19,850 --> 00:37:22,330
+not an opt out.
+
+874
+00:37:22,330 --> 00:37:24,490
+Their data needs to be
+transparent in the sense
+
+875
+00:37:24,490 --> 00:37:26,570
+that not that everybody
+can see their data,
+
+876
+00:37:26,570 --> 00:37:29,620
+but more that they know
+what data you have on them
+
+877
+00:37:29,620 --> 00:37:32,600
+and how you plan to use that
+data, how you collect it,
+
+878
+00:37:32,600 --> 00:37:34,370
+how you store it,
+and how you use it.
+
+879
+00:37:34,370 --> 00:37:37,018
+That should be available
+in some capacity to users.
+
+880
+00:37:37,018 --> 00:37:38,810
+And maybe that's
+something where, again, it
+
+881
+00:37:38,810 --> 00:37:41,703
+needs to be individual
+requests to avoid
+
+882
+00:37:41,703 --> 00:37:44,120
+posting a bunch of information
+about your security systems
+
+883
+00:37:44,120 --> 00:37:44,940
+online.
+
+884
+00:37:44,940 --> 00:37:48,230
+But these are things you have to
+think about when you're building
+
+885
+00:37:48,230 --> 00:37:51,380
+a fair and equitable website.
+
+886
+00:37:51,380 --> 00:37:53,190
+And obviously, data
+needs to be private.
+
+887
+00:37:53,190 --> 00:37:55,440
+We've talked about this
+ad nauseam at this point.
+
+888
+00:37:55,440 --> 00:37:57,740
+But keeping data
+private and secure,
+
+889
+00:37:57,740 --> 00:38:01,430
+you need to be intentional
+with the data collection.
+
+890
+00:38:01,430 --> 00:38:04,040
+You need to ask why you
+need the data before you
+
+891
+00:38:04,040 --> 00:38:04,890
+start collecting it.
+
+892
+00:38:04,890 --> 00:38:06,420
+Ask why you need
+that data point,
+
+893
+00:38:06,420 --> 00:38:07,890
+what you're going
+to gain from it,
+
+894
+00:38:07,890 --> 00:38:10,740
+and what changes you plan to
+make after you analyze the data.
+
+895
+00:38:10,740 --> 00:38:13,760
+All that needs to be
+considered in advance
+
+896
+00:38:13,760 --> 00:38:14,817
+of collecting that data.
+
+897
+00:38:14,817 --> 00:38:16,400
+You should never
+just start collecting
+
+898
+00:38:16,400 --> 00:38:18,740
+data blindly and then
+assume that at some point
+
+899
+00:38:18,740 --> 00:38:20,900
+you might use it, you might
+not, because you never
+
+900
+00:38:20,900 --> 00:38:23,600
+know what could be
+critical information.
+
+901
+00:38:23,600 --> 00:38:25,990
+And then finally, consider
+the outcomes of that.
+
+902
+00:38:28,670 --> 00:38:31,693
+What is a potential byproduct
+of what you're building
+
+903
+00:38:31,693 --> 00:38:32,610
+and what you're using?
+
+904
+00:38:32,610 --> 00:38:35,235
+You won't think of everything,
+but try to think of some things.
+
+905
+00:38:35,235 --> 00:38:37,460
+Try to think of, is
+this going to have
+
+906
+00:38:37,460 --> 00:38:40,400
+some disparate impact on
+groups, on specific groups
+
+907
+00:38:40,400 --> 00:38:41,308
+or individuals?
+
+908
+00:38:41,308 --> 00:38:43,100
+If it does, you are
+starting to potentially
+
+909
+00:38:43,100 --> 00:38:45,020
+broach into civil
+rights act areas,
+
+910
+00:38:45,020 --> 00:38:50,130
+and those are, again, going to
+be unlawful choices to make.
+
+911
+00:38:50,130 --> 00:38:52,950
+And so, again, taking
+all that into account,
+
+912
+00:38:52,950 --> 00:38:56,120
+considering the outcomes
+and how that data might
+
+913
+00:38:56,120 --> 00:38:59,850
+impact someone or some group
+is absolutely critical.
+
+914
+00:38:59,850 --> 00:39:01,320
+And so I have some
+questions there.
+
+915
+00:39:01,320 --> 00:39:03,153
+This is going to be on
+the discussion board.
+
+916
+00:39:03,153 --> 00:39:06,110
+I want you to think about how
+do these five principles really
+
+917
+00:39:06,110 --> 00:39:08,180
+impact the
+considerations that need
+
+918
+00:39:08,180 --> 00:39:10,940
+to be made in implementing
+cloud resources at a company
+
+919
+00:39:10,940 --> 00:39:11,910
+or an organization.
+
+920
+00:39:11,910 --> 00:39:13,230
+So think on that.
+
+921
+00:39:13,230 --> 00:39:16,430
+Read this article that's linked
+here right behind my back.
+
+922
+00:39:16,430 --> 00:39:19,430
+And hopefully, that'll
+give you some just food
+
+923
+00:39:19,430 --> 00:39:23,040
+for thought on not just how
+you should be using this,
+
+924
+00:39:23,040 --> 00:39:26,400
+but also how the platforms and
+services you use think about it.
+
+925
+00:39:26,400 --> 00:39:27,840
+Do they think about your data?
+
+926
+00:39:27,840 --> 00:39:29,460
+Are they considering
+the outcomes?
+
+927
+00:39:29,460 --> 00:39:31,140
+Are they considering
+the intention?
+
+928
+00:39:31,140 --> 00:39:32,130
+Is it transparent?
+
+929
+00:39:32,130 --> 00:39:33,330
+Can I go and download it?
+
+930
+00:39:33,330 --> 00:39:35,250
+If I go on to google.com--
+
+931
+00:39:35,250 --> 00:39:37,190
+I think it's Takeout
+is their platform.
+
+932
+00:39:37,190 --> 00:39:40,310
+I can go and download every bit
+of data that they've claimed
+
+933
+00:39:40,310 --> 00:39:41,310
+to have collected on me.
+
+934
+00:39:41,310 --> 00:39:44,010
+And at some point, you have
+to take them at their word.
+
+935
+00:39:44,010 --> 00:39:47,150
+But to some extent,
+you're at least
+
+936
+00:39:47,150 --> 00:39:50,640
+able to see most of what they
+could be collecting on you.
+
+937
+00:39:50,640 --> 00:39:53,670
+And then consider then how do
+I adjust my platform's usage.
+
+938
+00:39:53,670 --> 00:39:54,600
+Is this appropriate?
+
+939
+00:39:54,600 --> 00:39:56,317
+Do I want this
+information out there?
+
+940
+00:39:56,317 --> 00:39:58,400
+There's a lot of great
+services that are benefited
+
+941
+00:39:58,400 --> 00:39:59,820
+by having access to this data.
+
+942
+00:39:59,820 --> 00:40:01,472
+Being a data scientist
+myself, I love
+
+943
+00:40:01,472 --> 00:40:02,930
+when I have access
+to a lot of data
+
+944
+00:40:02,930 --> 00:40:04,880
+because it makes my
+job a lot easier,
+
+945
+00:40:04,880 --> 00:40:07,010
+but that doesn't
+absolve us of not
+
+946
+00:40:07,010 --> 00:40:10,040
+being able to be considerate
+of how it's being used.
+
+947
+00:40:10,040 --> 00:40:12,320
+So I think that's
+all I have for today.
+
+948
+00:40:12,320 --> 00:40:13,440
+I'll leave it at that.
+
+949
+00:40:13,440 --> 00:40:15,890
+There was some good doom
+and gloom in this lecture.
+
+950
+00:40:15,890 --> 00:40:18,098
+I love good doom
+and gloom lecture.
+
+951
+00:40:18,098 --> 00:40:19,640
+But hopefully, it's
+at least starting
+
+952
+00:40:19,640 --> 00:40:20,670
+to get guys thinking about this.
+
+953
+00:40:20,670 --> 00:40:22,430
+These are really
+interesting topics.
+
+954
+00:40:22,430 --> 00:40:25,710
+And if something's interesting
+like this and this impactful,
+
+955
+00:40:25,710 --> 00:40:27,712
+you can imagine it can
+be a great career choice.
+
+956
+00:40:27,712 --> 00:40:29,670
+So I hope this is something
+you pursue further.
+
+957
+00:40:29,670 --> 00:40:31,710
+If it is, if it's something
+you want to look at,
+
+958
+00:40:31,710 --> 00:40:32,400
+reach out to me.
+
+959
+00:40:32,400 --> 00:40:34,275
+We've got a couple
+courses in our department,
+
+960
+00:40:34,275 --> 00:40:36,770
+even on network and
+internet security.
+
+961
+00:40:36,770 --> 00:40:38,310
+And we can go from there.
+
+962
+00:40:38,310 --> 00:40:40,100
+So hope you enjoyed
+this lecture.
+
+963
+00:40:40,100 --> 00:40:41,590
+And I will catch you next time.
+
+964
+00:40:41,590 --> 00:40:43,140
+Bye.
