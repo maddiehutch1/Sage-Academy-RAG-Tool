@@ -14,6 +14,9 @@ load_dotenv()
 
 EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 TOP_K = 5
+# Chunks with cosine distance above this are too far off-topic to be useful.
+# Based on eval data: legitimate answers score 0.36–0.54; 0.65 gives clear headroom.
+MAX_DISTANCE = float(os.getenv("MAX_RETRIEVAL_DISTANCE", "0.65"))
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -72,4 +75,5 @@ def retrieve_chunks(question: str, top_k: int = TOP_K) -> list[dict]:
             "distance":    row[6],
         }
         for row in rows
+        if row[6] <= MAX_DISTANCE
     ]

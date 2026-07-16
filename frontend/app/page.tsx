@@ -119,42 +119,50 @@ export default function HomePage() {
       {result && (
         <div className="w-full max-w-2xl mt-8 space-y-6">
           {/* Answer */}
-          <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div className={`rounded-xl border p-6 shadow-sm ${
+            result.sources.length === 0
+              ? "border-gray-200 bg-gray-50"
+              : "border-gray-200 bg-white"
+          }`}>
             <h2 className="text-xs font-semibold uppercase tracking-widest text-indigo-500 mb-3">
               Answer
             </h2>
-            <p className="text-sm leading-relaxed text-gray-800 whitespace-pre-wrap">
+            <p className={`text-sm leading-relaxed whitespace-pre-wrap ${
+              result.sources.length === 0 ? "text-gray-400 italic" : "text-gray-800"
+            }`}>
               {result.answer}
             </p>
           </div>
 
-          {/* Sources */}
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 px-1">
-              Sources
-            </h2>
-            <div className="space-y-3">
-              {result.sources.map((src, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
-                >
-                  <div className="flex items-start justify-between gap-3 flex-wrap">
-                    <div>
-                      <p className="text-sm font-medium text-gray-800">{src.video}</p>
-                      <p className="text-xs text-gray-500 mt-0.5">{src.course}</p>
+          {/* Sources — only shown when relevant content was found */}
+          {result.sources.length > 0 && (
+            <div>
+              <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 px-1">
+                Sources
+              </h2>
+              <div className="space-y-3">
+                {result.sources.map((src, i) => (
+                  <div
+                    key={i}
+                    className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
+                  >
+                    <div className="flex items-start justify-between gap-3 flex-wrap">
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">{src.video}</p>
+                        <p className="text-xs text-gray-500 mt-0.5">{src.course}</p>
+                      </div>
+                      <span className="shrink-0 rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-mono text-indigo-600 border border-indigo-100">
+                        {formatTime(src.start_time)} – {formatTime(src.end_time)}
+                      </span>
                     </div>
-                    <span className="shrink-0 rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-mono text-indigo-600 border border-indigo-100">
-                      {formatTime(src.start_time)} – {formatTime(src.end_time)}
-                    </span>
+                    <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3">
+                      "{src.excerpt}…"
+                    </p>
                   </div>
-                  <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3">
-                    "{src.excerpt}…"
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </main>

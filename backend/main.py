@@ -52,7 +52,11 @@ def ask(body: AskRequest):
 
     chunks = retrieve_chunks(question)
     if not chunks:
-        raise HTTPException(status_code=404, detail="No relevant content found for this question.")
+        return AskResponse(
+            answer="I wasn't able to find relevant course content for that question. "
+                   "Try rephrasing, or ask something related to the course topics.",
+            sources=[],
+        )
 
     result = generate_answer(question, chunks)
 

@@ -2,6 +2,14 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-16 (Phase 6 — post-phase fixes)
+
+- Added distance threshold to `backend/retrieval.py` (`MAX_RETRIEVAL_DISTANCE=0.65`, tunable via env). Questions with no relevant match no longer trigger an LLM call — saves tokens on off-topic questions.
+- Changed `backend/main.py` to return a soft no-content response (`sources=[]`) instead of HTTP 404 when nothing passes the threshold.
+- Updated `frontend/app/page.tsx` to hide the sources section entirely when `sources` is empty; answer card renders in muted italic style for clarity.
+- Cleaned up stale duplicate roadmap files left in `ai/roadmaps/` root by Windows path handling.
+- Renamed `ai/roadmaps/2026-07-10-high-level-plan.md` → `2026-07-10-high-level-plan-mvp.md`; marked all 7 milestones complete.
+
 ## 2026-07-16 (Phase 6)
 
 - Completed Phase 6 (Demo Readiness and Extensibility). Source: [ai/roadmaps/complete/2026-07-10-phase-06-demo-readiness-roadmap.md](../ai/roadmaps/complete/2026-07-10-phase-06-demo-readiness-roadmap.md)
