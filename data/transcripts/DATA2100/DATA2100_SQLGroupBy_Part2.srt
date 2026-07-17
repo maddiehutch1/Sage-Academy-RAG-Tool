@@ -1,0 +1,526 @@
+1
+00:00:00,250 --> 00:00:03,150
+I forgot to finish our
+examples for group by, so
+
+2
+00:00:03,150 --> 00:00:06,630
+let's go ahead and jump
+into those examples. My bad.
+
+3
+00:00:06,670 --> 00:00:09,670
+All right, so looking at the
+examples for the group by,
+
+4
+00:00:09,670 --> 00:00:13,330
+we are going to, again, I've provided
+this file for you to download.
+
+5
+00:00:13,330 --> 00:00:16,350
+Go ahead and download and follow along
+with me. I have just copied these
+
+6
+00:00:16,350 --> 00:00:20,330
+in here and put dashes in front of
+each of the questions so that we
+
+7
+00:00:20,330 --> 00:00:23,590
+can type the queries beneath them.
+So I'm going to find the average age
+
+8
+00:00:23,590 --> 00:00:27,590
+of guests who have a season pass
+and for guests who do not have a
+
+9
+00:00:27,590 --> 00:00:30,950
+season pass. Okay, I want to know the
+average age of guests. So I'm just
+
+10
+00:00:30,950 --> 00:00:38,730
+going to, again, start out with a
+handy select star from guest, okay?
+
+11
+00:00:39,690 --> 00:00:43,330
+So I go ahead and run this, and now
+I have all of my guests returning
+
+12
+00:00:43,330 --> 00:00:47,730
+to me and all of the fields as well.
+So the average age of guests who
+
+13
+00:00:47,730 --> 00:00:50,710
+have a season pass and for guests
+who do not. So let's just start off
+
+14
+00:00:50,710 --> 00:00:53,660
+with what we know. So we know that
+we're going to perform average on
+
+15
+00:00:53,750 --> 00:00:58,870
+the age field, and I need to give this
+an alias. so average age as average
+
+16
+00:00:59,590 --> 00:01:06,110
+age, okay? So now when I run this,
+I know that my average age is
+
+17
+00:01:06,110 --> 00:01:10,430
+26. But I want to know for guests
+who have a season pass and for guests
+
+18
+00:01:10,430 --> 00:01:13,810
+who do not. So I want to see the
+average age for those who have a season
+
+19
+00:01:13,810 --> 00:01:17,110
+pass, the average age for those
+that do not. So I know that I want
+
+20
+00:01:17,110 --> 00:01:20,790
+to see that, right? So therefore
+what I want to see, I want to put in
+
+21
+00:01:20,790 --> 00:01:23,880
+my select clause clause because I
+want to see the season pass status.
+
+22
+00:01:24,390 --> 00:01:27,710
+Now, think to yourself, will this run?
+
+23
+00:01:28,370 --> 00:01:32,570
+No, it will not run because
+I have an aggregate function,
+
+24
+00:01:32,570 --> 00:01:36,990
+right, average being performed on
+the age field and a non-aggregated
+
+25
+00:01:36,990 --> 00:01:40,490
+field of season pass in my
+select clause. Therefore, I
+
+26
+00:01:40,490 --> 00:01:48,850
+must group by the season pass
+status. Okay. So now when I go
+
+27
+00:01:48,850 --> 00:01:51,850
+ahead and run this, again, And
+I'm just doing Control-Enter.
+
+28
+00:01:52,730 --> 00:02:00,670
+I can see here that I have the
+average age for those that do not have
+
+29
+00:02:00,670 --> 00:02:04,590
+a season pass is 27. And the
+average age for those that do is 32.
+
+30
+00:02:04,590 --> 00:02:08,150
+But then I can see here that I have
+a season pass status that just kind
+
+31
+00:02:08,150 --> 00:02:13,650
+of looks, it doesn't say null, but
+it may just have a space in there.
+
+32
+00:02:13,650 --> 00:02:17,410
+It's a data quality issue. And that
+average age, more than likely of
+
+33
+00:02:17,410 --> 00:02:20,330
+that one individual. there may be a
+few individuals with just the space
+
+34
+00:02:20,330 --> 00:02:26,870
+is 60. So that is a data quality
+issue that we found, right? Really
+
+35
+00:02:26,870 --> 00:02:35,370
+interesting. But if I wanted to get
+rid of that basically space here just
+
+36
+00:02:35,370 --> 00:02:39,250
+for the purposes of this query, I
+could add an aware clause here and say
+
+37
+00:02:39,250 --> 00:02:49,890
+where season pass in, and I I could
+say just list Y and comma N, right?
+
+38
+00:02:49,890 --> 00:02:52,730
+It's qualitative data. It's going
+to be contained within SQL quotes.
+
+39
+00:02:52,770 --> 00:02:58,210
+Now when I run this, now I'm
+only receiving my yes or my no in
+
+40
+00:02:58,210 --> 00:03:00,890
+terms of they do or do not have
+a season pass. But we found a
+
+41
+00:03:00,890 --> 00:03:03,915
+data quality issue, something
+we should look into and address.
+
+42
+00:03:03,915 --> 00:03:07,419
+I'm down to question two. For each
+season in the database, how many
+
+43
+00:03:07,419 --> 00:03:11,419
+new employees joined the company?
+Okay, let's take a look at this. So if
+
+44
+00:03:11,419 --> 00:03:18,339
+I come over here to my guest table,
+I can see here I have a guest,
+
+45
+00:03:19,919 --> 00:03:22,779
+first name, last name, gender, age.
+Oh, but I'm talking about employees.
+
+46
+00:03:22,779 --> 00:03:25,879
+That's right. So let's look at
+employees. So employee, I can see here
+
+47
+00:03:25,879 --> 00:03:29,659
+I have a season filled. So let's
+scroll down and look at the employee
+
+48
+00:03:29,659 --> 00:03:34,959
+season filled. So the season filled
+is a small int. It's the first
+
+49
+00:03:35,159 --> 00:03:39,819
+year of season in which employed,
+meaning it's like I started here in
+
+50
+00:03:39,819 --> 00:03:44,799
+2016. I started here in 2020, whatever
+that may be. I started here in
+
+51
+00:03:44,799 --> 00:03:49,439
+2025, 2026, whatever. Okay. So let's
+go ahead and take a look at this.
+
+52
+00:03:50,349 --> 00:03:53,519
+So for each season in the
+database, so let's go ahead and
+
+53
+00:03:53,519 --> 00:03:57,379
+write this query. So I'm going
+to select, and I want to,
+
+54
+00:03:57,379 --> 00:04:01,799
+I'm just going to do select
+star from employee here quick.
+
+55
+00:04:03,519 --> 00:04:09,039
+And I can see here that I have
+these seasons, right, and the
+
+56
+00:04:09,039 --> 00:04:12,039
+employee's information. So now
+when I take a look at this,
+
+57
+00:04:12,039 --> 00:04:15,639
+how many employees join the
+company? So I'm going to say select
+
+58
+00:04:15,639 --> 00:04:19,079
+count, and I want to count the
+rec ID, which is going to be
+
+59
+00:04:19,079 --> 00:04:25,919
+the primary key for the employee
+table as num of employees,
+
+60
+00:04:26,199 --> 00:04:26,739
+okay?
+
+61
+00:04:27,519 --> 00:04:30,759
+And then I'm going to
+select season, okay?
+
+62
+00:04:31,359 --> 00:04:35,299
+Now, will this run? I hope you said
+no. It will not run because I'm
+
+63
+00:04:35,299 --> 00:04:39,239
+aggregating rec ID, and then I have
+a non-aggregated field of season.
+
+64
+00:04:40,039 --> 00:04:44,599
+So now I'm going to say group by
+season, okay, my non-aggregated
+
+65
+00:04:44,599 --> 00:04:48,559
+field. And now I can see here that
+I have this many employees that
+
+66
+00:04:48,559 --> 00:04:53,959
+joined the company during these
+seasons. So 219 joined in 2016,
+
+67
+00:04:54,179 --> 00:04:58,959
+212 joined in 2022, and so on
+and so on. So now I can see the
+
+68
+00:04:58,959 --> 00:05:02,439
+total number of employees who
+joined per season, which could be
+
+69
+00:05:02,439 --> 00:05:06,919
+insightful data. Which season have
+we recruited the most employees?
+
+70
+00:05:07,099 --> 00:05:10,979
+And think through that that
+way. Now for each season in the
+
+71
+00:05:10,979 --> 00:05:14,679
+database, how many new employees
+were assigned operation roles.
+
+72
+00:05:14,679 --> 00:05:19,259
+Okay, so now we only want to count
+employees who have an operation
+
+73
+00:05:19,259 --> 00:05:23,459
+role. Now, when we're thinking
+about this, we want to look at
+
+74
+00:05:23,459 --> 00:05:26,879
+new employees, right? So we're
+answering the same question here,
+
+75
+00:05:26,879 --> 00:05:30,739
+but we want to limit it to
+only employees who were in the
+
+76
+00:05:30,739 --> 00:05:34,929
+operation role. So let's take a
+look. Let's do a quick select star
+
+77
+00:05:37,099 --> 00:05:44,699
+from employee and what we see here
+is in this operation role or in
+
+78
+00:05:44,699 --> 00:05:49,889
+these roles let me zoom out so you
+can see it's a little bit better um we
+
+79
+00:05:50,359 --> 00:05:53,739
+can see here they're assigned okay
+so they were maybe requested to be
+
+80
+00:05:53,739 --> 00:05:57,199
+in operations but they were assigned
+to sales retail so we want to
+
+81
+00:05:57,199 --> 00:06:01,499
+say we're assigned equal to operations
+right and we could double check
+
+82
+00:06:01,499 --> 00:06:05,839
+that in our data dictionary if we
+look here at a requested, this is the
+
+83
+00:06:05,839 --> 00:06:09,879
+employee's requested position, and
+then assigned is the position to
+
+84
+00:06:09,879 --> 00:06:13,459
+which employee was assigned. So now
+what I want to do is I only want
+
+85
+00:06:13,459 --> 00:06:20,199
+to count the records of which they're
+assigned is equal to operations.
+
+86
+00:06:20,749 --> 00:06:24,219
+So if I was to write this down
+here, I'd say, you know, where
+
+87
+00:06:24,219 --> 00:06:29,919
+assigned equals to operations. Now
+I'm only going to return employees
+
+88
+00:06:29,919 --> 00:06:34,519
+at this point where they're
+assigned is equal to operations,
+
+89
+00:06:34,679 --> 00:06:38,289
+okay? So if we take a look
+at this, I scroll over here,
+
+90
+00:06:38,749 --> 00:06:42,579
+assigned is all operations. So that's
+what I want to do up here in my
+
+91
+00:06:42,579 --> 00:06:47,479
+select clause where I'm doing my
+little bit more advanced querying
+
+92
+00:06:47,479 --> 00:06:52,539
+technique up here. And I'm saying that
+I only want to see new employees who
+
+93
+00:06:52,539 --> 00:06:55,579
+are assigned to operations roles.
+So what I need to do is I'm going
+
+94
+00:06:55,579 --> 00:07:02,639
+to copy this where clause and paste
+it or just write it again up here.
+
+95
+00:07:02,739 --> 00:07:07,339
+And again, where comes after from
+and before group by and the order,
+
+96
+00:07:07,339 --> 00:07:11,679
+right? That's very important. And
+so now it's only going to account
+
+97
+00:07:11,679 --> 00:07:15,539
+employees where assigned is equal to
+operations, right? Remember the where
+
+98
+00:07:15,539 --> 00:07:19,799
+clause limits what records are
+returned to me. And in this case, it's
+
+99
+00:07:19,799 --> 00:07:24,639
+limiting what records are counted.
+Therefore, I'm only counting the
+
+100
+00:07:24,639 --> 00:07:31,079
+number of operations employees, okay?
+So now when I run this, I can see
+
+101
+00:07:31,079 --> 00:07:35,979
+here that I have 52 operations
+employees that were hired in 2016, 51 in
+
+102
+00:07:35,979 --> 00:07:41,739
+2017, and on down. So my where
+clause is absolutely still applicable
+
+103
+00:07:41,739 --> 00:07:45,039
+when I'm dealing with group by,
+right? It's very, very important that
+
+104
+00:07:45,039 --> 00:07:49,619
+that is limiting the records that we
+are, in this case, counting. Okay.
+
+105
+00:07:49,779 --> 00:07:51,639
+All right. Thanks everybody. There's our
+
+106
+00:07:51,639 --> 00:07:53,872
+examples for today. Let's keep moving on.
+

@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>591362333 - 1_tg5x1793 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:02.920" tts:direction="ltr">Hi, D 2,100 students.</p>
+        <p begin="00:00:02.920" end="00:00:05.840" tts:direction="ltr">In this video, we are going to talk about
+<br />data visualization.</p>
+        <p begin="00:00:05.840" end="00:00:08.680" tts:direction="ltr">Now, this is something that I absolutely
+<br />love.</p>
+        <p begin="00:00:08.680" end="00:00:11.880" tts:direction="ltr">As we're wrapping up our data analysis
+<br />module,</p>
+        <p begin="00:00:11.880" end="00:00:15.200" tts:direction="ltr">I wanted to take some time and talk
+<br />briefly about data visualization.</p>
+        <p begin="00:00:15.200" end="00:00:18.440" tts:direction="ltr">I've created courses in data
+<br />visualization,</p>
+        <p begin="00:00:18.440" end="00:00:21.680" tts:direction="ltr">and so it's hard to condense it all down
+<br />into a short video.</p>
+        <p begin="00:00:21.680" end="00:00:24.720" tts:direction="ltr">But I wanted to give you just a short
+<br />video recap</p>
+        <p begin="00:00:24.720" end="00:00:27.440" tts:direction="ltr">of what is data viz and why does it
+<br />matter?</p>
+        <p begin="00:00:27.440" end="00:00:30.400" tts:direction="ltr">I'm going to give you a couple of examples
+<br />here.</p>
+        <p begin="00:00:30.400" end="00:00:33.320" tts:direction="ltr">What do you think when you see this?</p>
+        <p begin="00:00:33.320" end="00:00:40.180" tts:direction="ltr">What do you think? You may say it's an
+<br />alert, it's a call to action.</p>
+        <p begin="00:00:40.180" end="00:00:42.900" tts:direction="ltr">You're immediately thinking, where's my
+<br />charger?</p>
+        <p begin="00:00:42.900" end="00:00:46.860" tts:direction="ltr">Or why didn't I turn on my low power mode
+<br />earlier,</p>
+        <p begin="00:00:46.860" end="00:00:50.500" tts:direction="ltr">or did I forget to charge my phone last
+<br />night or have I've been</p>
+        <p begin="00:00:50.500" end="00:00:51.900" tts:direction="ltr">spending too much time on my phone</p>
+        <p begin="00:00:51.900" end="00:00:54.860" tts:direction="ltr">today because I actually did charge it
+<br />last night.</p>
+        <p begin="00:00:54.860" end="00:00:57.020" tts:direction="ltr">It's maybe a reflection point,</p>
+        <p begin="00:00:57.020" end="00:00:59.980" tts:direction="ltr">it's a call to action of where's my
+<br />charger and it's</p>
+        <p begin="00:00:59.980" end="00:01:03.150" tts:direction="ltr">all through a very simple data
+<br />visualization.</p>
+        <p begin="00:01:03.150" end="00:01:06.520" tts:direction="ltr">So in this example, we are visualizing
+<br />this data,</p>
+        <p begin="00:01:06.520" end="00:01:09.480" tts:direction="ltr">this small amount of battery that is left.</p>
+        <p begin="00:01:09.480" end="00:01:12.520" tts:direction="ltr">We are symbolizing here with this red
+<br />line.</p>
+        <p begin="00:01:12.520" end="00:01:17.360" tts:direction="ltr">We're using the battery icon as a
+<br />reference point.</p>
+        <p begin="00:01:17.360" end="00:01:20.720" tts:direction="ltr">We are very familiar with what a battery
+<br />icon looks like.</p>
+        <p begin="00:01:20.720" end="00:01:25.400" tts:direction="ltr">We're saying, Hey, there is just a little
+<br />bit of battery left.</p>
+        <p begin="00:01:25.400" end="00:01:27.680" tts:direction="ltr">Go and seek your charger.</p>
+        <p begin="00:01:27.680" end="00:01:30.640" tts:direction="ltr">The color red can oftentimes mean stop,</p>
+        <p begin="00:01:30.640" end="00:01:35.160" tts:direction="ltr">like a stop sign or a yield or something
+<br />like that.</p>
+        <p begin="00:01:35.160" end="00:01:38.840" tts:direction="ltr">It's calling our attention and making us
+<br />aware.</p>
+        <p begin="00:01:38.840" end="00:01:40.965" tts:direction="ltr">Now, what do you think of when you see
+<br />this?</p>
+        <p begin="00:01:40.965" end="00:01:45.050" tts:direction="ltr">Kind of same thing is here's a Google Map
+<br />visualization,</p>
+        <p begin="00:01:45.050" end="00:01:49.410" tts:direction="ltr">and if you're driving along here and you
+<br />see,</p>
+        <p begin="00:01:49.410" end="00:01:52.090" tts:direction="ltr">this is going to be bad here quick,</p>
+        <p begin="00:01:52.090" end="00:01:56.490" tts:direction="ltr">you might hop off and grab some dinner and
+<br />then continue on down.</p>
+        <p begin="00:01:56.490" end="00:02:01.650" tts:direction="ltr">It can be data visualizations communicate
+<br />data really clearly,</p>
+        <p begin="00:02:01.650" end="00:02:05.130" tts:direction="ltr">hopefully, and are a call to action and
+<br />help</p>
+        <p begin="00:02:05.130" end="00:02:08.850" tts:direction="ltr">you synthesize the data and do something
+<br />about it.</p>
+        <p begin="00:02:08.850" end="00:02:12.440" tts:direction="ltr">All right. So why data visualization?</p>
+        <p begin="00:02:12.440" end="00:02:17.280" tts:direction="ltr">First off, data visualization</p>
+        <p begin="00:02:17.280" end="00:02:22.720" tts:direction="ltr">encompasses all visual representations
+<br />that support the exploration,</p>
+        <p begin="00:02:22.720" end="00:02:25.920" tts:direction="ltr">examination, communication of data.</p>
+        <p begin="00:02:25.920" end="00:02:29.600" tts:direction="ltr">Data visualization helps to order
+<br />information and to</p>
+        <p begin="00:02:29.600" end="00:02:33.280" tts:direction="ltr">improve comprehension, interpretation, and
+<br />memory.</p>
+        <p begin="00:02:33.280" end="00:02:37.160" tts:direction="ltr">Basically, this is what it does is it
+<br />amplifies cognition.</p>
+        <p begin="00:02:37.160" end="00:02:38.995" tts:direction="ltr">They help us think.</p>
+        <p begin="00:02:38.995" end="00:02:45.190" tts:direction="ltr">Okay. So just like this visualization back
+<br />here, this amplifies cognition.</p>
+        <p begin="00:02:45.190" end="00:02:48.510" tts:direction="ltr">It immediately triggers our brain as a
+<br />call to action,</p>
+        <p begin="00:02:48.510" end="00:02:51.190" tts:direction="ltr">maybe a reflection, something like that.</p>
+        <p begin="00:02:51.190" end="00:02:54.590" tts:direction="ltr">So it is any sort of visualization,</p>
+        <p begin="00:02:54.590" end="00:02:56.270" tts:direction="ltr">that supports the exploration,</p>
+        <p begin="00:02:56.270" end="00:02:59.015" tts:direction="ltr">examination, and communication of data.</p>
+        <p begin="00:02:59.015" end="00:03:02.040" tts:direction="ltr">So data visualization is definitely in
+<br />demand.</p>
+        <p begin="00:03:02.040" end="00:03:05.720" tts:direction="ltr">Here is the North America data
+<br />visualization market size</p>
+        <p begin="00:03:05.720" end="00:03:07.600" tts:direction="ltr">over the next few years,</p>
+        <p begin="00:03:07.600" end="00:03:10.200" tts:direction="ltr">and we can see here we have that increase</p>
+        <p begin="00:03:10.200" end="00:03:16.000" tts:direction="ltr">of that increase over time in billions of
+<br />dollars.</p>
+        <p begin="00:03:16.000" end="00:03:17.600" tts:direction="ltr">So we have seen this increase,</p>
+        <p begin="00:03:17.600" end="00:03:20.920" tts:direction="ltr">and we are looking to continue to see this
+<br />increase.</p>
+        <p begin="00:03:20.920" end="00:03:25.120" tts:direction="ltr">So here when I think about my five senses,
+<br />basically,</p>
+        <p begin="00:03:25.120" end="00:03:26.960" tts:direction="ltr">this means there's jobs,</p>
+        <p begin="00:03:26.960" end="00:03:30.120" tts:direction="ltr">there is demand for data visualization.</p>
+        <p begin="00:03:30.120" end="00:03:32.720" tts:direction="ltr">I love job titles that are like</p>
+        <p begin="00:03:32.720" end="00:03:35.480" tts:direction="ltr">data visualization analyst or things like
+<br />that,</p>
+        <p begin="00:03:35.480" end="00:03:38.600" tts:direction="ltr">and there's oftentimes a lot of job
+<br />positions that just list</p>
+        <p begin="00:03:38.600" end="00:03:47.025" tts:direction="ltr">data visualization as a preferred skill
+<br />that somebody has.</p>
+        <p begin="00:03:47.025" end="00:03:52.490" tts:direction="ltr">So when we think about our memories and we
+<br />think about our five senses,</p>
+        <p begin="00:03:52.490" end="00:03:56.650" tts:direction="ltr">there is one sense that dominates all
+<br />others,</p>
+        <p begin="00:03:56.650" end="00:03:59.210" tts:direction="ltr">and that is that is our sight.</p>
+        <p begin="00:03:59.210" end="00:04:01.250" tts:direction="ltr">It dominates all of our senses.</p>
+        <p begin="00:04:01.250" end="00:04:05.890" tts:direction="ltr">And so when we are communicating through
+<br />these visualizations, it can,</p>
+        <p begin="00:04:05.890" end="00:04:08.690" tts:direction="ltr">again, amplify cognition, allow us to</p>
+        <p begin="00:04:08.690" end="00:04:12.275" tts:direction="ltr">think and help with our retention of the
+<br />information as well.</p>
+        <p begin="00:04:12.275" end="00:04:15.620" tts:direction="ltr">So when we are talking about data
+<br />visualization,</p>
+        <p begin="00:04:15.620" end="00:04:18.780" tts:direction="ltr">we use something called pre attentive
+<br />attributes.</p>
+        <p begin="00:04:18.780" end="00:04:21.420" tts:direction="ltr">Now, I know I'm throwing a lot at you in
+<br />this one video,</p>
+        <p begin="00:04:21.420" end="00:04:26.180" tts:direction="ltr">but I hope it to be really condensed and
+<br />also just a lot of good information.</p>
+        <p begin="00:04:26.180" end="00:04:29.220" tts:direction="ltr">So when we're looking at data
+<br />visualizations,</p>
+        <p begin="00:04:29.220" end="00:04:32.940" tts:direction="ltr">we use pre attentive attributes as we
+<br />design them.</p>
+        <p begin="00:04:32.940" end="00:04:35.860" tts:direction="ltr">Preattentive attributes are visual
+<br />properties</p>
+        <p begin="00:04:35.860" end="00:04:39.100" tts:direction="ltr">that we notice without using conscious
+<br />effort to do so.</p>
+        <p begin="00:04:39.100" end="00:04:41.020" tts:direction="ltr">When you are looking at the slide,</p>
+        <p begin="00:04:41.020" end="00:04:45.070" tts:direction="ltr">which a which words stood out the most.</p>
+        <p begin="00:04:45.070" end="00:04:49.270" tts:direction="ltr">You're thinking, Oh, these bright orange
+<br />words did.</p>
+        <p begin="00:04:49.270" end="00:04:52.310" tts:direction="ltr">You're right because I'm calling your
+<br />attention there.</p>
+        <p begin="00:04:52.310" end="00:04:57.030" tts:direction="ltr">I am using pre attentive attributes that
+<br />call your attention to those words.</p>
+        <p begin="00:04:57.030" end="00:05:02.240" tts:direction="ltr">I've bolded them. I've made them into a
+<br />color that calls your attention.</p>
+        <p begin="00:05:02.240" end="00:05:06.050" tts:direction="ltr">Same thing over here, if I'm looking at
+<br />all of these purple dots,</p>
+        <p begin="00:05:06.050" end="00:05:07.410" tts:direction="ltr">where does your eye go?</p>
+        <p begin="00:05:07.410" end="00:05:09.610" tts:direction="ltr">It goes to the one that's different.</p>
+        <p begin="00:05:09.610" end="00:05:12.170" tts:direction="ltr">The one that is a different color.</p>
+        <p begin="00:05:12.170" end="00:05:14.690" tts:direction="ltr">We are pulling your eye there.</p>
+        <p begin="00:05:14.930" end="00:05:18.050" tts:direction="ltr">This is not conscious effort,</p>
+        <p begin="00:05:18.050" end="00:05:19.490" tts:direction="ltr">we are just saying, Hey,</p>
+        <p begin="00:05:19.490" end="00:05:22.410" tts:direction="ltr">I want you to focus in on this one data
+<br />point.</p>
+        <p begin="00:05:22.410" end="00:05:26.170" tts:direction="ltr">This is a really good way to create data
+<br />visualizations.</p>
+        <p begin="00:05:26.170" end="00:05:28.850" tts:direction="ltr">Another thing to think about here is that</p>
+        <p begin="00:05:28.850" end="00:05:31.810" tts:direction="ltr">we are using orange and we are using
+<br />purple.</p>
+        <p begin="00:05:31.810" end="00:05:33.970" tts:direction="ltr">These are complimentary colors.</p>
+        <p begin="00:05:33.970" end="00:05:37.785" tts:direction="ltr">The provide a lot of contrast in the
+<br />visualization.</p>
+        <p begin="00:05:37.785" end="00:05:40.440" tts:direction="ltr">So I want to give you a quick challenge
+<br />here.</p>
+        <p begin="00:05:40.440" end="00:05:42.000" tts:direction="ltr">I'm going to throw up some data,</p>
+        <p begin="00:05:42.000" end="00:05:45.560" tts:direction="ltr">data similar to what we have worked with
+<br />in this class.</p>
+        <p begin="00:05:45.560" end="00:05:50.560" tts:direction="ltr">I want you to answer this question as how
+<br />many times did our salespeople hit</p>
+        <p begin="00:05:50.560" end="00:05:52.400" tts:direction="ltr">the yearly quota that we're just looking</p>
+        <p begin="00:05:52.400" end="00:05:58.200" tts:direction="ltr">at quite historical data at this point
+<br />2017-2020.</p>
+        <p begin="00:05:58.200" end="00:06:00.040" tts:direction="ltr">We just want to look at those years.</p>
+        <p begin="00:06:00.040" end="00:06:02.640" tts:direction="ltr">The quota is 42,400.</p>
+        <p begin="00:06:02.640" end="00:06:05.480" tts:direction="ltr">So here is some data.</p>
+        <p begin="00:06:05.480" end="00:06:09.880" tts:direction="ltr">Figure out how many times did they hit it
+<br />42,400?</p>
+        <p begin="00:06:09.880" end="00:06:13.900" tts:direction="ltr">How many times did salespeople hit that
+<br />quota? All right.</p>
+        <p begin="00:06:13.900" end="00:06:15.980" tts:direction="ltr">Hopefully, you have a number. Do you have
+<br />a number?</p>
+        <p begin="00:06:15.980" end="00:06:18.300" tts:direction="ltr">Now, what about now? How hard was that?</p>
+        <p begin="00:06:18.300" end="00:06:22.100" tts:direction="ltr">It's super hard because you're trying to
+<br />sift through,</p>
+        <p begin="00:06:22.100" end="00:06:27.820" tts:direction="ltr">this one's over 42,000 is this one? Nope,
+<br />not quite.</p>
+        <p begin="00:06:27.820" end="00:06:29.820" tts:direction="ltr">It starts to become really hard.</p>
+        <p begin="00:06:29.820" end="00:06:31.940" tts:direction="ltr">It actually takes a lot of</p>
+        <p begin="00:06:31.940" end="00:06:36.840" tts:direction="ltr">brainpower to look at and see how many
+<br />times that our salespeople hit quota.</p>
+        <p begin="00:06:36.840" end="00:06:39.700" tts:direction="ltr">What about now? Now I'm calling your
+<br />attention.</p>
+        <p begin="00:06:39.700" end="00:06:41.980" tts:direction="ltr">I'm using those pre attentive attributes.</p>
+        <p begin="00:06:41.980" end="00:06:44.980" tts:direction="ltr">I'm saying, Hey, here are these bolded
+<br />parts.</p>
+        <p begin="00:06:44.980" end="00:06:47.780" tts:direction="ltr">Now what about now? Now I'm sorting the
+<br />data.</p>
+        <p begin="00:06:47.780" end="00:06:49.420" tts:direction="ltr">Now I can quickly go one, two,</p>
+        <p begin="00:06:49.420" end="00:06:51.860" tts:direction="ltr">three, four, five, six, seven, eight,
+<br />nine.</p>
+        <p begin="00:06:51.860" end="00:06:53.580" tts:direction="ltr">Now it's still taking some time,</p>
+        <p begin="00:06:53.580" end="00:06:56.300" tts:direction="ltr">but it's helping us answer this question.</p>
+        <p begin="00:06:56.300" end="00:06:58.700" tts:direction="ltr">I can also start to visualize this data
+<br />more.</p>
+        <p begin="00:06:58.700" end="00:07:01.340" tts:direction="ltr">I've already started to use some pre
+<br />attentive attributes.</p>
+        <p begin="00:07:01.340" end="00:07:04.430" tts:direction="ltr">View that some bolding and use sorting.</p>
+        <p begin="00:07:04.430" end="00:07:08.240" tts:direction="ltr">Now I can do bad visualizations like this
+<br />one.</p>
+        <p begin="00:07:08.240" end="00:07:09.920" tts:direction="ltr">I can say, Oh, look, this is going</p>
+        <p begin="00:07:09.920" end="00:07:11.560" tts:direction="ltr">to answer your question for you and you're
+<br />like,</p>
+        <p begin="00:07:11.560" end="00:07:14.160" tts:direction="ltr">Oh, boy, this doesn't really answer my
+<br />question.</p>
+        <p begin="00:07:14.160" end="00:07:18.360" tts:direction="ltr">I'm just looking maybe here, 42,000 ish.</p>
+        <p begin="00:07:18.360" end="00:07:21.280" tts:direction="ltr">I'm seeing all of these different lines.</p>
+        <p begin="00:07:21.280" end="00:07:24.400" tts:direction="ltr">Actually, all these different lines
+<br />represent salespeople.</p>
+        <p begin="00:07:24.400" end="00:07:28.360" tts:direction="ltr">I'm not using the right type of
+<br />visualization.</p>
+        <p begin="00:07:28.360" end="00:07:30.680" tts:direction="ltr">This would be a line chart,</p>
+        <p begin="00:07:30.680" end="00:07:33.055" tts:direction="ltr">that's confusing me even more.</p>
+        <p begin="00:07:33.055" end="00:07:34.790" tts:direction="ltr">Maybe I could do something like this.</p>
+        <p begin="00:07:34.790" end="00:07:37.150" tts:direction="ltr">I could say, Hey, let's create a
+<br />visualization.</p>
+        <p begin="00:07:37.150" end="00:07:40.150" tts:direction="ltr">Let's put the title up in the upper left
+<br />hand corner because</p>
+        <p begin="00:07:40.150" end="00:07:43.750" tts:direction="ltr">that's where we read from as we start in
+<br />the upper left hand corner.</p>
+        <p begin="00:07:43.750" end="00:07:46.470" tts:direction="ltr">I have the quota marked out here and I can
+<br />maybe do</p>
+        <p begin="00:07:46.470" end="00:07:51.270" tts:direction="ltr">some green dots for when my salespeople
+<br />hit quota that year.</p>
+        <p begin="00:07:51.270" end="00:07:53.310" tts:direction="ltr">I have salespeople hitting quota,</p>
+        <p begin="00:07:53.310" end="00:07:55.070" tts:direction="ltr">I can count up those dots.</p>
+        <p begin="00:07:55.070" end="00:07:57.950" tts:direction="ltr">I'm also showing the times of which they
+<br />did not.</p>
+        <p begin="00:07:57.950" end="00:08:00.230" tts:direction="ltr">Or I can just actually answer</p>
+        <p begin="00:08:00.230" end="00:08:03.430" tts:direction="ltr">the question by creating a visualization
+<br />like this.</p>
+        <p begin="00:08:03.430" end="00:08:06.710" tts:direction="ltr">I can say our salespeople hit quota nine
+<br />times.</p>
+        <p begin="00:08:06.710" end="00:08:09.670" tts:direction="ltr">Here was the quota, 42,400.</p>
+        <p begin="00:08:09.670" end="00:08:12.370" tts:direction="ltr">I have this historical data listed out
+<br />here.</p>
+        <p begin="00:08:12.370" end="00:08:14.910" tts:direction="ltr">And I have my sales right here.</p>
+        <p begin="00:08:14.910" end="00:08:18.310" tts:direction="ltr">Now, we're looking at this quota line.</p>
+        <p begin="00:08:18.310" end="00:08:20.830" tts:direction="ltr">My quota is orange.</p>
+        <p begin="00:08:21.070" end="00:08:23.990" tts:direction="ltr">It is providing connection to</p>
+        <p begin="00:08:23.990" end="00:08:26.390" tts:direction="ltr">these other orange dots which are</p>
+        <p begin="00:08:26.390" end="00:08:29.070" tts:direction="ltr">representing my salespeople hitting the
+<br />quota.</p>
+        <p begin="00:08:29.070" end="00:08:31.590" tts:direction="ltr">I also have quota in orange.</p>
+        <p begin="00:08:31.590" end="00:08:36.790" tts:direction="ltr">This is all relating to my salespeople hit
+<br />quota nine times.</p>
+        <p begin="00:08:36.790" end="00:08:38.350" tts:direction="ltr">I have a takeaway title.</p>
+        <p begin="00:08:38.350" end="00:08:42.030" tts:direction="ltr">I'm saying this is what happened and I'm
+<br />leaving I'm</p>
+        <p begin="00:08:42.030" end="00:08:48.550" tts:direction="ltr">having my person viewing the visualization
+<br />able to walk away with a takeaway.</p>
+        <p begin="00:08:48.550" end="00:08:51.855" tts:direction="ltr">Just a little example that we went from</p>
+        <p begin="00:08:51.855" end="00:08:57.040" tts:direction="ltr">That raw data we were trying to sift
+<br />through and figure out how many times</p>
+        <p begin="00:08:57.040" end="00:09:01.920" tts:direction="ltr">the quota or that number was above 42,400
+<br />to actually</p>
+        <p begin="00:09:01.920" end="00:09:04.520" tts:direction="ltr">creating a visualization that answers the
+<br />question and</p>
+        <p begin="00:09:04.520" end="00:09:07.655" tts:direction="ltr">allows me to dive into maybe patterns more
+<br />so.</p>
+        <p begin="00:09:07.655" end="00:09:10.910" tts:direction="ltr">So let's talk more about data
+<br />visualization benefits.</p>
+        <p begin="00:09:10.910" end="00:09:13.670" tts:direction="ltr">We can spot trends and patterns easily.</p>
+        <p begin="00:09:13.670" end="00:09:16.510" tts:direction="ltr">We can see over time.</p>
+        <p begin="00:09:16.510" end="00:09:19.030" tts:direction="ltr">Theoretically, I'm having more salespeople</p>
+        <p begin="00:09:19.030" end="00:09:20.950" tts:direction="ltr">hit quota over time, which is great.</p>
+        <p begin="00:09:20.950" end="00:09:22.790" tts:direction="ltr">I can draw insights quicker,</p>
+        <p begin="00:09:22.790" end="00:09:24.710" tts:direction="ltr">I can reduce cognitive low.</p>
+        <p begin="00:09:24.710" end="00:09:29.190" tts:direction="ltr">That's the idea that it allows us to think
+<br />faster,</p>
+        <p begin="00:09:29.190" end="00:09:31.950" tts:direction="ltr">and it tells effective stories.</p>
+        <p begin="00:09:31.950" end="00:09:35.830" tts:direction="ltr">There are a few things that make a five
+<br />star data visualization.</p>
+        <p begin="00:09:35.830" end="00:09:39.870" tts:direction="ltr">This is something that we cover in a data
+<br />visualization course here at USU.</p>
+        <p begin="00:09:39.870" end="00:09:43.390" tts:direction="ltr">But this is just a little bit of
+<br />information here is</p>
+        <p begin="00:09:43.390" end="00:09:47.020" tts:direction="ltr">we have credible and well represented
+<br />data, so we have quality data.</p>
+        <p begin="00:09:47.020" end="00:09:50.770" tts:direction="ltr">We have a strong purpose and a really
+<br />targeted audience.</p>
+        <p begin="00:09:50.770" end="00:09:54.930" tts:direction="ltr">We know the chart type that we're working
+<br />with and we have a takeaway title,</p>
+        <p begin="00:09:54.930" end="00:09:56.730" tts:direction="ltr">and we have a clear story.</p>
+        <p begin="00:09:56.730" end="00:09:59.130" tts:direction="ltr">Let's go through these really quickly.</p>
+        <p begin="00:09:59.130" end="00:10:03.570" tts:direction="ltr">I just want you my main takeaway here from
+<br />this video is I</p>
+        <p begin="00:10:03.570" end="00:10:08.370" tts:direction="ltr">want you to just see visualizations in
+<br />your everyday life and recognize,</p>
+        <p begin="00:10:08.370" end="00:10:10.330" tts:direction="ltr">Oh, hey, that's a data visualization.</p>
+        <p begin="00:10:10.330" end="00:10:13.150" tts:direction="ltr">Do I know where the data is coming from?</p>
+        <p begin="00:10:13.150" end="00:10:16.850" tts:direction="ltr">Um, is there a purpose behind this
+<br />visualization?</p>
+        <p begin="00:10:16.850" end="00:10:18.410" tts:direction="ltr">What's it trying to communicate?</p>
+        <p begin="00:10:18.410" end="00:10:20.530" tts:direction="ltr">Who's it trying to communicate that to?</p>
+        <p begin="00:10:20.530" end="00:10:22.410" tts:direction="ltr">What type of chart type do they use?</p>
+        <p begin="00:10:22.410" end="00:10:24.210" tts:direction="ltr">Did they use a line chart?</p>
+        <p begin="00:10:24.210" end="00:10:26.770" tts:direction="ltr">Is there a title that actually helps</p>
+        <p begin="00:10:26.770" end="00:10:29.450" tts:direction="ltr">me answer a question and walk away with a
+<br />takeaway?</p>
+        <p begin="00:10:29.450" end="00:10:32.050" tts:direction="ltr">And is there a clear story?</p>
+        <p begin="00:10:32.050" end="00:10:38.050" tts:direction="ltr">Okay? Perfect. Credible and well
+<br />represented data.</p>
+        <p begin="00:10:38.050" end="00:10:40.770" tts:direction="ltr">This goes back to our five data quality
+<br />characteristics</p>
+        <p begin="00:10:40.770" end="00:10:42.250" tts:direction="ltr">that we talked about in this class.</p>
+        <p begin="00:10:42.250" end="00:10:43.970" tts:direction="ltr">Where does the data come from?</p>
+        <p begin="00:10:43.970" end="00:10:45.610" tts:direction="ltr">How is the data represented?</p>
+        <p begin="00:10:45.610" end="00:10:47.130" tts:direction="ltr">What is the time frame of the data?</p>
+        <p begin="00:10:47.130" end="00:10:50.650" tts:direction="ltr">We also have the five data quality
+<br />characteristics of consistency,</p>
+        <p begin="00:10:50.650" end="00:10:55.770" tts:direction="ltr">completeness, accuracy, time
+<br />appropriateness, and uniqueness.</p>
+        <p begin="00:10:55.770" end="00:10:59.080" tts:direction="ltr">Okay? Awesome. Where does the data come
+<br />from?</p>
+        <p begin="00:10:59.080" end="00:11:02.880" tts:direction="ltr">Is it just pulled from some random website
+<br />that is</p>
+        <p begin="00:11:02.880" end="00:11:07.000" tts:direction="ltr">not verifiable and who produced that data,</p>
+        <p begin="00:11:07.000" end="00:11:08.400" tts:direction="ltr">who collected that data?</p>
+        <p begin="00:11:08.400" end="00:11:10.840" tts:direction="ltr">What is the time frame of that data?</p>
+        <p begin="00:11:10.840" end="00:11:13.960" tts:direction="ltr">Strong purpose and specific audience.</p>
+        <p begin="00:11:13.960" end="00:11:16.000" tts:direction="ltr">What is the purpose of the visualization?</p>
+        <p begin="00:11:16.000" end="00:11:19.680" tts:direction="ltr">The visualization that we just looked at
+<br />with the salespeople.</p>
+        <p begin="00:11:19.680" end="00:11:21.560" tts:direction="ltr">The purpose of that was to look at,</p>
+        <p begin="00:11:21.560" end="00:11:23.440" tts:direction="ltr">in this historical data,</p>
+        <p begin="00:11:23.440" end="00:11:26.600" tts:direction="ltr">how many times that we hit quota?</p>
+        <p begin="00:11:26.600" end="00:11:29.200" tts:direction="ltr">Who is the intended audience?</p>
+        <p begin="00:11:29.200" end="00:11:31.005" tts:direction="ltr">Maybe it's our sales manager.</p>
+        <p begin="00:11:31.005" end="00:11:35.410" tts:direction="ltr">What should the audience think feel say or
+<br />do after viewing the visualization?</p>
+        <p begin="00:11:35.410" end="00:11:38.210" tts:direction="ltr">Maybe they should look at that data and
+<br />then look</p>
+        <p begin="00:11:38.210" end="00:11:41.490" tts:direction="ltr">at the last X amount of years of data.</p>
+        <p begin="00:11:41.490" end="00:11:44.170" tts:direction="ltr">Compare the two datasets and say, Hey,</p>
+        <p begin="00:11:44.170" end="00:11:48.170" tts:direction="ltr">are we hitting quota more often or less
+<br />often.</p>
+        <p begin="00:11:48.810" end="00:11:52.170" tts:direction="ltr">Then finally, what chart type is
+<br />appropriate for the data?</p>
+        <p begin="00:11:52.170" end="00:11:53.370" tts:direction="ltr">Should it be a line chart?</p>
+        <p begin="00:11:53.370" end="00:11:54.490" tts:direction="ltr">Should it be a bar chart,</p>
+        <p begin="00:11:54.490" end="00:11:55.690" tts:direction="ltr">should it be a pie chart?</p>
+        <p begin="00:11:55.690" end="00:11:58.170" tts:direction="ltr">Should it be a geographic more map?</p>
+        <p begin="00:11:58.170" end="00:12:01.250" tts:direction="ltr">What chart type is appropriate?</p>
+        <p begin="00:12:01.250" end="00:12:07.010" tts:direction="ltr">Here are a lot of different types of
+<br />charts I just wanted to orient you too.</p>
+        <p begin="00:12:07.010" end="00:12:08.410" tts:direction="ltr">This is a bar chart.</p>
+        <p begin="00:12:08.410" end="00:12:11.290" tts:direction="ltr">We use zero as our baseline in bar charts.</p>
+        <p begin="00:12:11.290" end="00:12:14.770" tts:direction="ltr">And we have all of these different
+<br />companies and we have,</p>
+        <p begin="00:12:14.770" end="00:12:18.770" tts:direction="ltr">say, different, number of employees.</p>
+        <p begin="00:12:18.770" end="00:12:23.050" tts:direction="ltr">Then we can also do things like we have a
+<br />bar chart like this one that we</p>
+        <p begin="00:12:23.050" end="00:12:27.570" tts:direction="ltr">have a main category and then we've
+<br />divided into subcategories.</p>
+        <p begin="00:12:27.570" end="00:12:31.220" tts:direction="ltr">So we are showing the um,</p>
+        <p begin="00:12:31.220" end="00:12:34.510" tts:direction="ltr">We are showing data over different
+<br />categories.</p>
+        <p begin="00:12:34.510" end="00:12:37.150" tts:direction="ltr">I can do something like a diverging bar
+<br />chart</p>
+        <p begin="00:12:37.150" end="00:12:39.870" tts:direction="ltr">where zero is still my baseline and I can
+<br />say,</p>
+        <p begin="00:12:39.870" end="00:12:44.030" tts:direction="ltr">Hey, this actually says profit down here,
+<br />but that might be cut off.</p>
+        <p begin="00:12:44.030" end="00:12:47.910" tts:direction="ltr">This is profit. Virginia is doing really
+<br />well in</p>
+        <p begin="00:12:47.910" end="00:12:52.350" tts:direction="ltr">our list of states in North Carolina, not
+<br />so much.</p>
+        <p begin="00:12:52.350" end="00:12:57.950" tts:direction="ltr">We can do a diverging bar chart and have
+<br />again zero as our baseline.</p>
+        <p begin="00:12:57.950" end="00:12:59.630" tts:direction="ltr">We can do things with pie charts.</p>
+        <p begin="00:12:59.630" end="00:13:03.310" tts:direction="ltr">Now I have lots of strong opinions on pie
+<br />charts.</p>
+        <p begin="00:13:03.330" end="00:13:06.650" tts:direction="ltr">First off, this is a bad pie chart.</p>
+        <p begin="00:13:06.650" end="00:13:08.250" tts:direction="ltr">No, no, no.</p>
+        <p begin="00:13:08.250" end="00:13:11.410" tts:direction="ltr">Keep the number of categories 2-5.</p>
+        <p begin="00:13:11.410" end="00:13:15.930" tts:direction="ltr">A pie chart, we have parts of our pie,</p>
+        <p begin="00:13:15.930" end="00:13:18.090" tts:direction="ltr">and that represents the whole.</p>
+        <p begin="00:13:18.090" end="00:13:21.100" tts:direction="ltr">This is parts of the whole so we,</p>
+        <p begin="00:13:21.100" end="00:13:23.780" tts:direction="ltr">in this case, have a one, two, three,</p>
+        <p begin="00:13:23.780" end="00:13:26.700" tts:direction="ltr">four pie charts, one,</p>
+        <p begin="00:13:26.700" end="00:13:28.420" tts:direction="ltr">two, three, four parts of the whole,</p>
+        <p begin="00:13:28.420" end="00:13:29.940" tts:direction="ltr">and then in this case, we have,</p>
+        <p begin="00:13:29.940" end="00:13:34.140" tts:direction="ltr">I don't even know how many different
+<br />pieces of the pie.</p>
+        <p begin="00:13:34.140" end="00:13:37.180" tts:direction="ltr">We don't want to do this because it
+<br />becomes really</p>
+        <p begin="00:13:37.180" end="00:13:40.340" tts:direction="ltr">cumbersome to understand which part of the
+<br />pie</p>
+        <p begin="00:13:40.340" end="00:13:42.860" tts:direction="ltr">goes with which category and it becomes
+<br />way</p>
+        <p begin="00:13:42.860" end="00:13:46.975" tts:direction="ltr">less helpful in telling any sort of story,
+<br />right?</p>
+        <p begin="00:13:46.975" end="00:13:50.010" tts:direction="ltr">We also have line charts and we can do</p>
+        <p begin="00:13:50.010" end="00:13:53.450" tts:direction="ltr">things that maybe we've plotted too many
+<br />lines here,</p>
+        <p begin="00:13:53.450" end="00:13:55.490" tts:direction="ltr">so we want to be careful of that.</p>
+        <p begin="00:13:55.490" end="00:13:59.290" tts:direction="ltr">We also want to be careful of if we are
+<br />showing,</p>
+        <p begin="00:13:59.290" end="00:14:01.370" tts:direction="ltr">in this case, this was exchange rates,</p>
+        <p begin="00:14:01.370" end="00:14:02.730" tts:direction="ltr">we see very little change.</p>
+        <p begin="00:14:02.730" end="00:14:06.610" tts:direction="ltr">But exchange rates, small changes can make
+<br />a big difference.</p>
+        <p begin="00:14:06.610" end="00:14:09.650" tts:direction="ltr">Maybe we want to zoom in. This is the same
+<br />data.</p>
+        <p begin="00:14:09.650" end="00:14:14.590" tts:direction="ltr">Maybe we want to zoom in on this data to
+<br />show these major changes over time.</p>
+        <p begin="00:14:14.590" end="00:14:20.810" tts:direction="ltr">Okay. Then we may look at a scatter plot
+<br />that has a rank.</p>
+        <p begin="00:14:20.810" end="00:14:22.650" tts:direction="ltr">Number one over here,</p>
+        <p begin="00:14:22.650" end="00:14:25.330" tts:direction="ltr">and then the head coach salary
+<br />significantly</p>
+        <p begin="00:14:25.330" end="00:14:29.850" tts:direction="ltr">increases with the better the team or the
+<br />more highly ranked the team,</p>
+        <p begin="00:14:29.850" end="00:14:31.690" tts:direction="ltr">the higher the head coach salary.</p>
+        <p begin="00:14:31.690" end="00:14:34.810" tts:direction="ltr">That makes sense. There is correlation
+<br />here.</p>
+        <p begin="00:14:34.810" end="00:14:39.990" tts:direction="ltr">There is a relationship between the rank
+<br />and the head coach salary.</p>
+        <p begin="00:14:39.990" end="00:14:43.890" tts:direction="ltr">Okay. Awesome. We can also do a
+<br />visualization like a map.</p>
+        <p begin="00:14:43.890" end="00:14:48.290" tts:direction="ltr">Here if I'm, this is a list of states, if
+<br />you can see that.</p>
+        <p begin="00:14:48.290" end="00:14:51.530" tts:direction="ltr">It's maybe not as helpful to just show a
+<br />list,</p>
+        <p begin="00:14:51.530" end="00:14:53.010" tts:direction="ltr">have this bar chart.</p>
+        <p begin="00:14:53.010" end="00:14:55.810" tts:direction="ltr">Maybe I can do something more so like
+<br />this,</p>
+        <p begin="00:14:55.810" end="00:14:57.770" tts:direction="ltr">for example, that I'm saying, hey,</p>
+        <p begin="00:14:57.770" end="00:14:59.650" tts:direction="ltr">there are some maybe clusters of</p>
+        <p begin="00:14:59.650" end="00:15:03.090" tts:direction="ltr">states of which we are performing a little
+<br />bit better</p>
+        <p begin="00:15:03.090" end="00:15:09.725" tts:direction="ltr">in and they're in a spot of the United
+<br />States, for example.</p>
+        <p begin="00:15:09.725" end="00:15:13.600" tts:direction="ltr">We also have something like this where we
+<br />can do a density map.</p>
+        <p begin="00:15:13.600" end="00:15:15.920" tts:direction="ltr">This is electricity sources,</p>
+        <p begin="00:15:15.920" end="00:15:19.840" tts:direction="ltr">and we can start to do a density map and
+<br />pinpoint where,</p>
+        <p begin="00:15:19.840" end="00:15:22.800" tts:direction="ltr">um, uh, pinpoint where there's</p>
+        <p begin="00:15:22.800" end="00:15:26.240" tts:direction="ltr">a high amount of something we're trying to
+<br />visualize.</p>
+        <p begin="00:15:26.240" end="00:15:29.150" tts:direction="ltr">Um, We can also do something</p>
+        <p begin="00:15:29.150" end="00:15:32.710" tts:direction="ltr">with states with new service contracts,
+<br />for example, here.</p>
+        <p begin="00:15:32.710" end="00:15:34.750" tts:direction="ltr">We can see here the darker the color,</p>
+        <p begin="00:15:34.750" end="00:15:37.270" tts:direction="ltr">the more service contracts there's been.</p>
+        <p begin="00:15:37.270" end="00:15:40.670" tts:direction="ltr">We can also do things like histograms and
+<br />we can look</p>
+        <p begin="00:15:40.670" end="00:15:46.510" tts:direction="ltr">at an example of suit the performance of
+<br />an exam.</p>
+        <p begin="00:15:46.510" end="00:15:48.750" tts:direction="ltr">We call this the bell curve.</p>
+        <p begin="00:15:48.750" end="00:15:52.190" tts:direction="ltr">This is when we break up data into a
+<br />range,</p>
+        <p begin="00:15:52.190" end="00:15:56.070" tts:direction="ltr">these are all students that scored 60-70,</p>
+        <p begin="00:15:56.070" end="00:15:58.830" tts:direction="ltr">and this is the number of students that
+<br />did so.</p>
+        <p begin="00:15:58.830" end="00:16:02.150" tts:direction="ltr">This plots how frequently the data falls</p>
+        <p begin="00:16:02.150" end="00:16:06.085" tts:direction="ltr">into each bin shows me the distribution of
+<br />my data.</p>
+        <p begin="00:16:06.085" end="00:16:09.260" tts:direction="ltr">So what makes a five star data
+<br />visualization?</p>
+        <p begin="00:16:09.260" end="00:16:12.100" tts:direction="ltr">Again, credible and well represented data,</p>
+        <p begin="00:16:12.100" end="00:16:14.580" tts:direction="ltr">strong purpose and specific audience.</p>
+        <p begin="00:16:14.580" end="00:16:17.060" tts:direction="ltr">Who am I creating this visualization for?</p>
+        <p begin="00:16:17.060" end="00:16:18.780" tts:direction="ltr">What should they think, feel, say,</p>
+        <p begin="00:16:18.780" end="00:16:21.020" tts:direction="ltr">or do after viewing my visualization?</p>
+        <p begin="00:16:21.020" end="00:16:23.820" tts:direction="ltr">What type of chart type am I using? Is it
+<br />a bar chart?</p>
+        <p begin="00:16:23.820" end="00:16:27.180" tts:direction="ltr">Is it a pie chart? Is it a line chart?
+<br />Title and design.</p>
+        <p begin="00:16:27.180" end="00:16:33.260" tts:direction="ltr">This goes back to that idea of our
+<br />salespeople hit quota nine times.</p>
+        <p begin="00:16:34.460" end="00:16:40.420" tts:direction="ltr">Takeaway the title actually have some sort
+<br />of takeaway,</p>
+        <p begin="00:16:40.420" end="00:16:44.820" tts:direction="ltr">some sort of learning within the title,
+<br />rather than just,</p>
+        <p begin="00:16:44.820" end="00:16:50.150" tts:direction="ltr">you know, salespeople hitting quota over
+<br />historical data.</p>
+        <p begin="00:16:50.150" end="00:16:57.630" tts:direction="ltr">No, have some takeaway title that your
+<br />viewers of your visualization can see,</p>
+        <p begin="00:16:57.630" end="00:16:59.430" tts:direction="ltr">and then they can also dive into</p>
+        <p begin="00:16:59.430" end="00:17:02.670" tts:direction="ltr">other takeaways that they may gain from
+<br />the data.</p>
+        <p begin="00:17:02.670" end="00:17:07.110" tts:direction="ltr">Some other data design quick tips and my
+<br />title always goes,</p>
+        <p begin="00:17:07.110" end="00:17:09.430" tts:direction="ltr">by the way, in the upper left hand corner.</p>
+        <p begin="00:17:09.430" end="00:17:12.350" tts:direction="ltr">A couple of things here. We have prime
+<br />real estate,</p>
+        <p begin="00:17:12.350" end="00:17:13.830" tts:direction="ltr">which is where my title goes.</p>
+        <p begin="00:17:13.830" end="00:17:17.990" tts:direction="ltr">We have the idea of space, and then we
+<br />have the idea of the power of color.</p>
+        <p begin="00:17:17.990" end="00:17:22.550" tts:direction="ltr">Top left hand corner, is extremely
+<br />valuable.</p>
+        <p begin="00:17:22.550" end="00:17:24.270" tts:direction="ltr">That is where we start reading.</p>
+        <p begin="00:17:24.270" end="00:17:27.670" tts:direction="ltr">Think of how when you read a book up in
+<br />the upper left hand corner,</p>
+        <p begin="00:17:27.670" end="00:17:30.790" tts:direction="ltr">think of websites you visit.</p>
+        <p begin="00:17:30.790" end="00:17:33.590" tts:direction="ltr">Again, generally, they're going to have
+<br />their most important information,</p>
+        <p begin="00:17:33.590" end="00:17:36.630" tts:direction="ltr">their navigation in that upper left hand
+<br />corner</p>
+        <p begin="00:17:36.630" end="00:17:38.750" tts:direction="ltr">because we read from left to right.</p>
+        <p begin="00:17:38.750" end="00:17:41.110" tts:direction="ltr">We also have the power of space.</p>
+        <p begin="00:17:41.110" end="00:17:45.870" tts:direction="ltr">When we have visualizations and maybe have
+<br />multiple visualizations,</p>
+        <p begin="00:17:45.870" end="00:17:47.830" tts:direction="ltr">we won't get too much into that in this
+<br />class,</p>
+        <p begin="00:17:47.830" end="00:17:50.230" tts:direction="ltr">we're just going to create a couple of
+<br />sample ones,</p>
+        <p begin="00:17:50.230" end="00:17:52.790" tts:direction="ltr">is to separate them out and not have</p>
+        <p begin="00:17:52.790" end="00:17:58.270" tts:direction="ltr">five pie charts on one word document that
+<br />you want to give to somebody.</p>
+        <p begin="00:17:58.270" end="00:18:03.920" tts:direction="ltr">Um, This can also improve comprehension
+<br />when we have time to think.</p>
+        <p begin="00:18:03.920" end="00:18:07.520" tts:direction="ltr">If you ever have a PowerPoint that looks
+<br />something like this</p>
+        <p begin="00:18:07.520" end="00:18:11.560" tts:direction="ltr">that just has all these words and it's
+<br />really hard to understand,</p>
+        <p begin="00:18:11.560" end="00:18:13.520" tts:direction="ltr">it's because the comprehension,</p>
+        <p begin="00:18:13.520" end="00:18:16.760" tts:direction="ltr">your ability to really read and process it</p>
+        <p begin="00:18:17.320" end="00:18:20.720" tts:direction="ltr">is significantly reduced if you have</p>
+        <p begin="00:18:20.720" end="00:18:23.680" tts:direction="ltr">too much information coming at somebody at
+<br />one time.</p>
+        <p begin="00:18:23.680" end="00:18:25.720" tts:direction="ltr">It allows us to enhance focus.</p>
+        <p begin="00:18:25.720" end="00:18:27.520" tts:direction="ltr">If there's just space um,</p>
+        <p begin="00:18:27.520" end="00:18:30.160" tts:direction="ltr">literally space between visualization.</p>
+        <p begin="00:18:30.160" end="00:18:31.640" tts:direction="ltr">There's a visualization here,</p>
+        <p begin="00:18:31.640" end="00:18:33.920" tts:direction="ltr">a visualization here, things like that,</p>
+        <p begin="00:18:33.920" end="00:18:36.440" tts:direction="ltr">same reason why I have bullet points right
+<br />here.</p>
+        <p begin="00:18:36.440" end="00:18:39.120" tts:direction="ltr">This naturally gives you space to read</p>
+        <p begin="00:18:39.120" end="00:18:42.440" tts:direction="ltr">each one of these and comprehend them on
+<br />your own.</p>
+        <p begin="00:18:42.440" end="00:18:49.280" tts:direction="ltr">We also have there's amazing research on
+<br />complimentary colors,</p>
+        <p begin="00:18:49.280" end="00:18:51.320" tts:direction="ltr">analogous colors, things like that.</p>
+        <p begin="00:18:51.320" end="00:18:54.520" tts:direction="ltr">Complimentary colors are things that are
+<br />across from one</p>
+        <p begin="00:18:54.520" end="00:18:58.720" tts:direction="ltr">another on the color wheel, orange and
+<br />blue.</p>
+        <p begin="00:18:58.720" end="00:19:01.960" tts:direction="ltr">Things like, you know,</p>
+        <p begin="00:19:01.960" end="00:19:05.280" tts:direction="ltr">um, Orange and blue is a big one.</p>
+        <p begin="00:19:05.280" end="00:19:08.160" tts:direction="ltr">We can look at yellows and violets, that's
+<br />a big one.</p>
+        <p begin="00:19:08.160" end="00:19:10.400" tts:direction="ltr">That one's going to show contrast.</p>
+        <p begin="00:19:10.400" end="00:19:12.640" tts:direction="ltr">Anything that's across from each other</p>
+        <p begin="00:19:12.640" end="00:19:15.200" tts:direction="ltr">on the color wheel is going to show
+<br />contrast.</p>
+        <p begin="00:19:15.200" end="00:19:18.760" tts:direction="ltr">Analogous colors are things that are next
+<br />to each other.</p>
+        <p begin="00:19:18.760" end="00:19:24.640" tts:direction="ltr">This is going to show connection between
+<br />data points rather than contrast.</p>
+        <p begin="00:19:24.640" end="00:19:27.800" tts:direction="ltr">Then finally, a very clear story.</p>
+        <p begin="00:19:27.800" end="00:19:29.320" tts:direction="ltr">When I'm thinking about a story,</p>
+        <p begin="00:19:29.320" end="00:19:33.600" tts:direction="ltr">there is a very famous visualization that
+<br />is</p>
+        <p begin="00:19:33.600" end="00:19:43.360" tts:direction="ltr">just a fantastic representation of a major
+<br />story in history.</p>
+        <p begin="00:19:43.440" end="00:19:48.960" tts:direction="ltr">It does a really good job of telling the
+<br />story. Let's take a look at this.</p>
+        <p begin="00:19:48.960" end="00:19:53.280" tts:direction="ltr">This visualization, if you want to just
+<br />take a look at it,</p>
+        <p begin="00:19:55.120" end="00:20:01.120" tts:direction="ltr">is a representation of something that
+<br />happened in 18 12.</p>
+        <p begin="00:20:01.120" end="00:20:05.320" tts:direction="ltr">That's a hint. I want you to take a look
+<br />at it.</p>
+        <p begin="00:20:05.320" end="00:20:08.520" tts:direction="ltr">In this left hand corner,</p>
+        <p begin="00:20:08.520" end="00:20:14.200" tts:direction="ltr">this is a story of Napoleon marching to
+<br />Moscow in order to conquer the city.</p>
+        <p begin="00:20:14.200" end="00:20:19.680" tts:direction="ltr">This is where Napoleon started and this
+<br />was his march to Moscow.</p>
+        <p begin="00:20:19.680" end="00:20:24.240" tts:direction="ltr">Now, what we are visualizing here is this
+<br />is the number of soldiers.</p>
+        <p begin="00:20:24.240" end="00:20:30.040" tts:direction="ltr">This tan box right here is the number of
+<br />soldiers that Napoleon started with.</p>
+        <p begin="00:20:30.040" end="00:20:33.520" tts:direction="ltr">What you'll notice as as he goes along
+<br />this march,</p>
+        <p begin="00:20:33.520" end="00:20:39.850" tts:direction="ltr">this is covering geographic space and
+<br />there's time associated here.</p>
+        <p begin="00:20:39.850" end="00:20:42.340" tts:direction="ltr">Covering a lot of geography here.</p>
+        <p begin="00:20:42.340" end="00:20:47.500" tts:direction="ltr">This is showing the decrease in the number
+<br />of soldiers over time.</p>
+        <p begin="00:20:47.500" end="00:20:49.820" tts:direction="ltr">By the time he made it to Moscow,</p>
+        <p begin="00:20:49.820" end="00:20:53.340" tts:direction="ltr">there was significant loss in his army.</p>
+        <p begin="00:20:53.340" end="00:20:59.020" tts:direction="ltr">Um. This is the out and back journey of
+<br />Napoleon's troops.</p>
+        <p begin="00:20:59.020" end="00:21:03.890" tts:direction="ltr">So, um, The other thing that we notice</p>
+        <p begin="00:21:03.890" end="00:21:10.330" tts:direction="ltr">here is that this black line that comes
+<br />back this way,</p>
+        <p begin="00:21:10.810" end="00:21:14.690" tts:direction="ltr">this is the troops march back.</p>
+        <p begin="00:21:14.690" end="00:21:16.690" tts:direction="ltr">Now, when we think about this,</p>
+        <p begin="00:21:16.690" end="00:21:21.010" tts:direction="ltr">this is their march back, visualizing</p>
+        <p begin="00:21:21.010" end="00:21:24.930" tts:direction="ltr">this with Charles Menard is the one that
+<br />created this.</p>
+        <p begin="00:21:24.930" end="00:21:28.490" tts:direction="ltr">He's visualizing this with this black
+<br />line.</p>
+        <p begin="00:21:28.490" end="00:21:30.570" tts:direction="ltr">This is showing the number of soldiers on</p>
+        <p begin="00:21:30.570" end="00:21:35.530" tts:direction="ltr">the return trip and how that was
+<br />significantly reduced as well.</p>
+        <p begin="00:21:36.410" end="00:21:41.850" tts:direction="ltr">There's also, if you notice here, a
+<br />temperature Um,</p>
+        <p begin="00:21:41.850" end="00:21:44.850" tts:direction="ltr">this is actually a temperature gauge down
+<br />here and this</p>
+        <p begin="00:21:44.850" end="00:21:48.610" tts:direction="ltr">illustrates the rapidly dropping winter
+<br />cold.</p>
+        <p begin="00:21:48.610" end="00:21:55.410" tts:direction="ltr">It is a very effective way of visualizing
+<br />this story,</p>
+        <p begin="00:21:55.410" end="00:21:59.170" tts:direction="ltr">of which tells a major event in history,</p>
+        <p begin="00:21:59.170" end="00:22:02.090" tts:direction="ltr">and it's all through data visualization.</p>
+        <p begin="00:22:02.090" end="00:22:06.770" tts:direction="ltr">Charles Menard created this one. All
+<br />right.</p>
+        <p begin="00:22:06.770" end="00:22:12.050" tts:direction="ltr">We're going to use our inventory of
+<br />knowledge to look at some visualizations.</p>
+        <p begin="00:22:12.050" end="00:22:15.050" tts:direction="ltr">Some are awesome and some are awful.</p>
+        <p begin="00:22:15.050" end="00:22:18.250" tts:direction="ltr">I made my fair share of awful
+<br />visualization.</p>
+        <p begin="00:22:18.250" end="00:22:20.770" tts:direction="ltr">We're going to look at the data that was
+<br />used,</p>
+        <p begin="00:22:20.770" end="00:22:23.530" tts:direction="ltr">whether there was a strong purpose in
+<br />specific audience,</p>
+        <p begin="00:22:23.530" end="00:22:25.010" tts:direction="ltr">if there was effective chart type,</p>
+        <p begin="00:22:25.010" end="00:22:26.370" tts:direction="ltr">takeaway tile and design,</p>
+        <p begin="00:22:26.370" end="00:22:28.090" tts:direction="ltr">or a clear story.</p>
+        <p begin="00:22:28.090" end="00:22:30.425" tts:direction="ltr">Let's take a look at a few of these.</p>
+        <p begin="00:22:30.425" end="00:22:32.400" tts:direction="ltr">So here's this one.</p>
+        <p begin="00:22:32.400" end="00:22:34.280" tts:direction="ltr">Is this awful or awesome?</p>
+        <p begin="00:22:34.280" end="00:22:36.840" tts:direction="ltr">I hope you're saying this is not good.</p>
+        <p begin="00:22:36.840" end="00:22:40.840" tts:direction="ltr">This pie chart has way too many pieces of
+<br />the pie that I</p>
+        <p begin="00:22:40.840" end="00:22:45.200" tts:direction="ltr">can't even come to understand what any of
+<br />these represent.</p>
+        <p begin="00:22:45.200" end="00:22:48.480" tts:direction="ltr">Which color matches with which piece of
+<br />the pie.</p>
+        <p begin="00:22:48.480" end="00:22:51.920" tts:direction="ltr">This would not be good. We also know where
+<br />the data is coming from.</p>
+        <p begin="00:22:51.920" end="00:22:54.120" tts:direction="ltr">There's also not a takeaway title,</p>
+        <p begin="00:22:54.120" end="00:22:57.600" tts:direction="ltr">although the title is in the left hand
+<br />corner, which is nice.</p>
+        <p begin="00:22:57.600" end="00:23:01.080" tts:direction="ltr">This one, what percent of content are ads?</p>
+        <p begin="00:23:01.080" end="00:23:02.520" tts:direction="ltr">This is an interesting one.</p>
+        <p begin="00:23:02.520" end="00:23:06.360" tts:direction="ltr">I would say back this visualization up,</p>
+        <p begin="00:23:06.440" end="00:23:10.360" tts:direction="ltr">this title up to be in the left hand
+<br />corner.</p>
+        <p begin="00:23:10.360" end="00:23:13.880" tts:direction="ltr">And this is looking at the percent of
+<br />content that are a.</p>
+        <p begin="00:23:13.880" end="00:23:17.120" tts:direction="ltr">Here's Facebook, Instagram, YouTube,</p>
+        <p begin="00:23:17.120" end="00:23:21.080" tts:direction="ltr">LinkedIn, Twitter, which is now X, and
+<br />read it.</p>
+        <p begin="00:23:21.080" end="00:23:24.200" tts:direction="ltr">This is based on 100 home page posts from</p>
+        <p begin="00:23:24.200" end="00:23:27.480" tts:direction="ltr">each platform's Android app on my account.</p>
+        <p begin="00:23:27.480" end="00:23:30.045" tts:direction="ltr">This is created by somebody else.</p>
+        <p begin="00:23:30.045" end="00:23:35.010" tts:direction="ltr">And this is a visualization that they are
+<br />saying, Hey,</p>
+        <p begin="00:23:35.010" end="00:23:40.410" tts:direction="ltr">I'm calling out that this data only comes
+<br />from my individual experience,</p>
+        <p begin="00:23:40.410" end="00:23:46.370" tts:direction="ltr">and it is only based on my 100 home page
+<br />posts that I took a look at.</p>
+        <p begin="00:23:46.370" end="00:23:49.730" tts:direction="ltr">Are they claiming that this is going to be
+<br />this is</p>
+        <p begin="00:23:49.730" end="00:23:53.330" tts:direction="ltr">just the percentage of content of that ads
+<br />across the board?</p>
+        <p begin="00:23:53.330" end="00:23:55.730" tts:direction="ltr">No. I do appreciate that they</p>
+        <p begin="00:23:55.730" end="00:23:58.530" tts:direction="ltr">have this call out of where the data is
+<br />coming from.</p>
+        <p begin="00:23:58.530" end="00:24:03.425" tts:direction="ltr">I like that this title is in a form of a
+<br />question.</p>
+        <p begin="00:24:03.425" end="00:24:06.480" tts:direction="ltr">And it's interesting to me though that
+<br />you'll notice</p>
+        <p begin="00:24:06.480" end="00:24:09.760" tts:direction="ltr">here that the bar chart is actually taken
+<br />up</p>
+        <p begin="00:24:09.760" end="00:24:16.480" tts:direction="ltr">by the part that were as is actually
+<br />symbolized with trash or with garbage,</p>
+        <p begin="00:24:16.480" end="00:24:19.320" tts:direction="ltr">which is really interesting because maybe</p>
+        <p begin="00:24:19.320" end="00:24:22.600" tts:direction="ltr">some people perceive ads that way, maybe
+<br />some people don't.</p>
+        <p begin="00:24:22.600" end="00:24:24.400" tts:direction="ltr">Just some things to think about.</p>
+        <p begin="00:24:24.400" end="00:24:27.240" tts:direction="ltr">Visualization, this is an interesting one.</p>
+        <p begin="00:24:27.240" end="00:24:31.720" tts:direction="ltr">Here I have your credit score is 634 out
+<br />of 700.</p>
+        <p begin="00:24:31.720" end="00:24:34.070" tts:direction="ltr">Let's take a look at this visualization.</p>
+        <p begin="00:24:34.070" end="00:24:37.100" tts:direction="ltr">First off, what are credit scores based
+<br />out of?</p>
+        <p begin="00:24:37.100" end="00:24:38.820" tts:direction="ltr">You might not know that off the top of
+<br />your head.</p>
+        <p begin="00:24:38.820" end="00:24:41.660" tts:direction="ltr">That's just fine. They're out of about
+<br />850.</p>
+        <p begin="00:24:41.660" end="00:24:45.860" tts:direction="ltr">It's interesting that this 700 is the
+<br />benchmark that's been set here.</p>
+        <p begin="00:24:45.860" end="00:24:48.100" tts:direction="ltr">But you can also see that there is a line</p>
+        <p begin="00:24:48.100" end="00:24:51.275" tts:direction="ltr">that is filling up. Can you see that?</p>
+        <p begin="00:24:51.275" end="00:24:53.650" tts:direction="ltr">O. That is, in theory,</p>
+        <p begin="00:24:53.650" end="00:24:56.530" tts:direction="ltr">we're thinking that once it gets back to
+<br />here,</p>
+        <p begin="00:24:56.530" end="00:25:00.330" tts:direction="ltr">it's at 700, but yet the data point is
+<br />right down here.</p>
+        <p begin="00:25:00.330" end="00:25:03.810" tts:direction="ltr">This visualization is just really
+<br />interesting to me.</p>
+        <p begin="00:25:03.810" end="00:25:09.730" tts:direction="ltr">Not sure how this is accurate nor why this
+<br />baseline number,</p>
+        <p begin="00:25:09.730" end="00:25:13.730" tts:direction="ltr">this filling of this circle is so off.</p>
+        <p begin="00:25:13.730" end="00:25:17.450" tts:direction="ltr">But I just encourage you to take a look at
+<br />visualizations.</p>
+        <p begin="00:25:17.450" end="00:25:19.010" tts:direction="ltr">This one is a data viz.</p>
+        <p begin="00:25:19.010" end="00:25:21.490" tts:direction="ltr">It may not look like it, but when you
+<br />start to piece it together,</p>
+        <p begin="00:25:21.490" end="00:25:24.050" tts:direction="ltr">this is visualizing data</p>
+        <p begin="00:25:24.050" end="00:25:28.770" tts:direction="ltr">in a visual representation that then we
+<br />can interpret.</p>
+        <p begin="00:25:28.770" end="00:25:35.210" tts:direction="ltr">All right. Perfect. Thanks everybody for
+<br />joining me today in this video.</p>
+        <p begin="00:25:35.210" end="00:25:37.730" tts:direction="ltr">Again, I just want to point back to here</p>
+        <p begin="00:25:37.730" end="00:25:43.970" tts:direction="ltr">the data quality or the five star data
+<br />visualization qualities,</p>
+        <p begin="00:25:43.970" end="00:25:45.730" tts:direction="ltr">credible and well represented data,</p>
+        <p begin="00:25:45.730" end="00:25:48.210" tts:direction="ltr">strong purpose and specific audience.</p>
+        <p begin="00:25:48.210" end="00:25:51.690" tts:direction="ltr">When we talk about strong purpose and
+<br />specific audience,</p>
+        <p begin="00:25:51.690" end="00:25:55.370" tts:direction="ltr">the audience of that credit score one
+<br />would hopefully be that user</p>
+        <p begin="00:25:55.370" end="00:25:57.090" tts:direction="ltr">that is seeing that maybe on</p>
+        <p begin="00:25:57.090" end="00:25:59.490" tts:direction="ltr">an app that they're using to track their
+<br />credit score.</p>
+        <p begin="00:25:59.490" end="00:26:01.610" tts:direction="ltr">But hopefully there's a reason or</p>
+        <p begin="00:26:01.610" end="00:26:04.730" tts:direction="ltr">hopefully that gets amended so that it's
+<br />out of</p>
+        <p begin="00:26:04.730" end="00:26:08.330" tts:direction="ltr">850 slash you something to</p>
+        <p begin="00:26:08.330" end="00:26:12.210" tts:direction="ltr">do with that baseline and that line being
+<br />filled changed.</p>
+        <p begin="00:26:12.210" end="00:26:14.730" tts:direction="ltr">But we can think about who is this?</p>
+        <p begin="00:26:14.730" end="00:26:16.570" tts:direction="ltr">Who is my audience when I'm creating</p>
+        <p begin="00:26:16.570" end="00:26:18.090" tts:direction="ltr">a visualization and what should they
+<br />think,</p>
+        <p begin="00:26:18.090" end="00:26:21.170" tts:direction="ltr">fill, say, or do after viewing the
+<br />visualization.</p>
+        <p begin="00:26:21.170" end="00:26:23.650" tts:direction="ltr">Thanks everybody. Take care.</p>
+    </div>
+  </body>
+</tt>

@@ -1,4 +1,5 @@
 import os
+from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -28,6 +29,7 @@ class AskRequest(BaseModel):
 class Source(BaseModel):
     course: str
     video: str
+    source_url: Optional[str] = None
     chunk_index: int
     start_time: int
     end_time: int

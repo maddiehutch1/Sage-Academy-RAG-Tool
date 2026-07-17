@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>566397683 - 1_dr1e9fds - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00" end="00:00:02.3" tts:direction="ltr">All right. Let's try out this flowchart.</p>
+        <p begin="00:00:02.3" end="00:00:04.10" tts:direction="ltr">You should already have logged in to
+<br/>Lucidchart.</p>
+        <p begin="00:00:04.10" end="00:00:07.9" tts:direction="ltr">We're going to create this flowchart as a
+<br/>reminder that it's going to</p>
+        <p begin="00:00:07.9" end="00:00:10.10" tts:direction="ltr">determine the income you owe on a
+<br/>paycheck.</p>
+        <p begin="00:00:10.10" end="00:00:13.1" tts:direction="ltr">That's the process we are trying to model.</p>
+        <p begin="00:00:13.1" end="00:00:19.8" tts:direction="ltr">It assumes a flat 25% tax rate and the
+<br/>process is accepting a paycheck amount,</p>
+        <p begin="00:00:19.8" end="00:00:21.6" tts:direction="ltr">performing the calculation, and</p>
+        <p begin="00:00:21.6" end="00:00:24.5" tts:direction="ltr">printing out the tax amount and the net
+<br/>pay amount.</p>
+        <p begin="00:00:24.5" end="00:00:28.2" tts:direction="ltr">I'm going to navigate over to our
+<br/>ucidchart here.</p>
+        <p begin="00:00:28.2" end="00:00:32" tts:direction="ltr">And as a disclaimer here,</p>
+        <p begin="00:00:32" end="00:00:37.1" tts:direction="ltr">Lucid is constantly updating their
+<br/>interface, which is awesome.</p>
+        <p begin="00:00:37.1" end="00:00:41.1" tts:direction="ltr">It can change from day to day, hour to
+<br/>hour.</p>
+        <p begin="00:00:41.1" end="00:00:46.8" tts:direction="ltr">If it looks just a little bit different
+<br/>than what you are seeing,</p>
+        <p begin="00:00:46.8" end="00:00:51.8" tts:direction="ltr">that's okay because the diagram generally
+<br/>always stays the same,</p>
+        <p begin="00:00:51.8" end="00:00:53.3" tts:direction="ltr">it's going to stay the same.</p>
+        <p begin="00:00:53.3" end="00:00:55" tts:direction="ltr">If just initially you're like,</p>
+        <p begin="00:00:55" end="00:00:56.4" tts:direction="ltr">that looks a little bit different, that's
+<br/>okay.</p>
+        <p begin="00:00:56.4" end="00:00:58.6" tts:direction="ltr">We're going to come over here and I'm
+<br/>going to click new,</p>
+        <p begin="00:00:58.6" end="00:01:00.8" tts:direction="ltr">and then I'm going to come down to lucid
+<br/>chart</p>
+        <p begin="00:01:00.8" end="00:01:03.9" tts:direction="ltr">and I'm going to say blank document, okay.</p>
+        <p begin="00:01:05.3" end="00:01:09.2" tts:direction="ltr">I have so many different diagrams I've
+<br/>created in here.</p>
+        <p begin="00:01:09.2" end="00:01:11.9" tts:direction="ltr">We're going to let Lucidchart get going.</p>
+        <p begin="00:01:11.9" end="00:01:15" tts:direction="ltr">You're going to notice down here that I
+<br/>have</p>
+        <p begin="00:01:15" end="00:01:20.1" tts:direction="ltr">a flowchart symbols that are easy access
+<br/>to me.</p>
+        <p begin="00:01:20.1" end="00:01:22.7" tts:direction="ltr">If I wanted to find more shapes</p>
+        <p begin="00:01:22.7" end="00:01:25.8" tts:direction="ltr">of different things that I would maybe
+<br/>want to diagram, I can do that,</p>
+        <p begin="00:01:25.8" end="00:01:31.6" tts:direction="ltr">click on more shapes and here I make sure
+<br/>that if you don't have flowchart,</p>
+        <p begin="00:01:31.6" end="00:01:35.7" tts:direction="ltr">make sure you click that's showing up that
+<br/>you have the flowcharting symbols.</p>
+        <p begin="00:01:35.7" end="00:01:40" tts:direction="ltr">Down here, if you look at the entity
+<br/>relationship,</p>
+        <p begin="00:01:40" end="00:01:45.5" tts:direction="ltr">Look at those entity relationship shapes
+<br/>right there.</p>
+        <p begin="00:01:45.5" end="00:01:48.5" tts:direction="ltr">That is our entity relationship diagram.</p>
+        <p begin="00:01:48.5" end="00:01:51.3" tts:direction="ltr">We created those entity relationship
+<br/>diagrams</p>
+        <p begin="00:01:51.3" end="00:01:54.3" tts:direction="ltr">that you've been looking at with databases
+<br/>the whole time.</p>
+        <p begin="00:01:54.3" end="00:01:56.4" tts:direction="ltr">We created those in lucid chart.</p>
+        <p begin="00:01:56.4" end="00:02:02.10" tts:direction="ltr">You can do all sorts of different types of
+<br/>diagrams here.</p>
+        <p begin="00:02:02.10" end="00:02:05.7" tts:direction="ltr">It's extremely helpful, it's extremely
+<br/>powerful.</p>
+        <p begin="00:02:05.7" end="00:02:09.5" tts:direction="ltr">Please use this as you would like if
+<br/>there's other things here that you</p>
+        <p begin="00:02:09.5" end="00:02:13.7" tts:direction="ltr">think would be really helpful for your
+<br/>other classes, please do so.</p>
+        <p begin="00:02:13.7" end="00:02:16.10" tts:direction="ltr">Over here on my flowchart,</p>
+        <p begin="00:02:16.10" end="00:02:21" tts:direction="ltr">I have all of the symbols that I'm going
+<br/>to need.</p>
+        <p begin="00:02:21" end="00:02:25" tts:direction="ltr">Now, we always begin a flowchart, follow
+<br/>along here with me.</p>
+        <p begin="00:02:25" end="00:02:27.4" tts:direction="ltr">We begin a flowchart,</p>
+        <p begin="00:02:27.4" end="00:02:29.8" tts:direction="ltr">we call it the terminator.</p>
+        <p begin="00:02:29.9" end="00:02:33.8" tts:direction="ltr">That is the symbol that Lucid,</p>
+        <p begin="00:02:33.8" end="00:02:36.9" tts:direction="ltr">this is named the terminator, just so
+<br/>you're aware.</p>
+        <p begin="00:02:36.9" end="00:02:44" tts:direction="ltr">We start each process here and it's like a
+<br/>pill shape,</p>
+        <p begin="00:02:44" end="00:02:46.6" tts:direction="ltr">but in lucid, they're calling it that
+<br/>terminator.</p>
+        <p begin="00:02:46.6" end="00:02:50.8" tts:direction="ltr">But we're going to double click there and
+<br/>give it the start name.</p>
+        <p begin="00:02:50.8" end="00:02:54.9" tts:direction="ltr">The next thing that we're going to do in
+<br/>our process is</p>
+        <p begin="00:02:54.9" end="00:02:59.4" tts:direction="ltr">we need to accept some data into this
+<br/>process.</p>
+        <p begin="00:02:59.4" end="00:03:02.9" tts:direction="ltr">We are going to have an input then of
+<br/>data.</p>
+        <p begin="00:03:02.9" end="00:03:04.8" tts:direction="ltr">I'm going to come over here and I'm going
+<br/>to grab</p>
+        <p begin="00:03:04.8" end="00:03:07.8" tts:direction="ltr">this parallelogram that has data labeled
+<br/>on it.</p>
+        <p begin="00:03:07.8" end="00:03:11.10" tts:direction="ltr">We call this our input output symbol. I'm
+<br/>going to label this.</p>
+        <p begin="00:03:11.10" end="00:03:14.3" tts:direction="ltr">I always label my input versus</p>
+        <p begin="00:03:14.3" end="00:03:16.9" tts:direction="ltr">my output so we know if it's an input or
+<br/>an output.</p>
+        <p begin="00:03:16.9" end="00:03:19.10" tts:direction="ltr">I say input and I'm going to input gross
+<br/>pay.</p>
+        <p begin="00:03:19.10" end="00:03:23" tts:direction="ltr">Okay. Now, you're going to notice that I
+<br/>am</p>
+        <p begin="00:03:23" end="00:03:25.9" tts:direction="ltr">going to be very cautious of what I'm
+<br/>naming,</p>
+        <p begin="00:03:25.9" end="00:03:27.8" tts:direction="ltr">we call these variables here.</p>
+        <p begin="00:03:27.8" end="00:03:30.2" tts:direction="ltr">I'm going to input my gross pay amount.</p>
+        <p begin="00:03:30.2" end="00:03:32.6" tts:direction="ltr">That might be $300,</p>
+        <p begin="00:03:32.6" end="00:03:34.6" tts:direction="ltr">that may be $3,000,</p>
+        <p begin="00:03:34.6" end="00:03:36.6" tts:direction="ltr">it may be $20,000.</p>
+        <p begin="00:03:36.6" end="00:03:41.2" tts:direction="ltr">Gross pay is a variable that represents
+<br/>data.</p>
+        <p begin="00:03:41.2" end="00:03:45.5" tts:direction="ltr">It could be various different amounts of
+<br/>data,</p>
+        <p begin="00:03:45.5" end="00:03:48.6" tts:direction="ltr">but we are just representing here one data
+<br/>point.</p>
+        <p begin="00:03:48.6" end="00:03:50.2" tts:direction="ltr">We don't know the number yet,</p>
+        <p begin="00:03:50.2" end="00:03:51.7" tts:direction="ltr">but it's going to represent data.</p>
+        <p begin="00:03:51.7" end="00:03:54.2" tts:direction="ltr">This is the same thing like an algebra.</p>
+        <p begin="00:03:54.2" end="00:03:57.9" tts:direction="ltr">When I say three X equals 12,</p>
+        <p begin="00:03:57.9" end="00:03:59.7" tts:direction="ltr">what does X equal?</p>
+        <p begin="00:03:59.7" end="00:04:03.5" tts:direction="ltr">Help you say four, three X equals 12,</p>
+        <p begin="00:04:03.5" end="00:04:06.4" tts:direction="ltr">so then three times four equals 12.</p>
+        <p begin="00:04:06.4" end="00:04:09.8" tts:direction="ltr">That's really important when you</p>
+        <p begin="00:04:09.8" end="00:04:13.6" tts:direction="ltr">are thinking about these different
+<br/>variables that we have here.</p>
+        <p begin="00:04:13.6" end="00:04:16.9" tts:direction="ltr">We're just saving a place for data to be
+<br/>added in.</p>
+        <p begin="00:04:16.9" end="00:04:20.7" tts:direction="ltr">Again, I might start, I have my input,
+<br/>that gross pay.</p>
+        <p begin="00:04:20.7" end="00:04:23.7" tts:direction="ltr">The next thing I need to do per my process
+<br/>that I'm</p>
+        <p begin="00:04:23.7" end="00:04:27.4" tts:direction="ltr">given here process should accept a
+<br/>paycheck amount.</p>
+        <p begin="00:04:27.4" end="00:04:29.6" tts:direction="ltr">We had that gross pay amount,</p>
+        <p begin="00:04:29.6" end="00:04:31.9" tts:direction="ltr">which is just the pay that you</p>
+        <p begin="00:04:31.9" end="00:04:34.6" tts:direction="ltr">receive before taxes, before all that
+<br/>comes out.</p>
+        <p begin="00:04:34.6" end="00:04:37.4" tts:direction="ltr">Then I'm going to perform the calculation
+<br/>and</p>
+        <p begin="00:04:37.4" end="00:04:40.9" tts:direction="ltr">print out the tax amount and the net pay
+<br/>amount.</p>
+        <p begin="00:04:40.9" end="00:04:44.7" tts:direction="ltr">I need to perform a calculation that is
+<br/>going to be a process.</p>
+        <p begin="00:04:44.7" end="00:04:47.10" tts:direction="ltr">I'm going to go ahead and grab my process
+<br/>symbol.</p>
+        <p begin="00:04:47.10" end="00:04:49.10" tts:direction="ltr">In this process symbol,</p>
+        <p begin="00:04:49.10" end="00:04:52.4" tts:direction="ltr">I am going to do two calculations.</p>
+        <p begin="00:04:52.4" end="00:04:58.4" tts:direction="ltr">Now, if we're doing the same thing if
+<br/>we're doing the same thing here,</p>
+        <p begin="00:04:58.4" end="00:05:00.6" tts:direction="ltr">just doing some simple calculations,</p>
+        <p begin="00:05:00.6" end="00:05:03.6" tts:direction="ltr">I'm going to put them within the same
+<br/>process symbol.</p>
+        <p begin="00:05:03.6" end="00:05:06.2" tts:direction="ltr">I'm going to say here, I'm going to make
+<br/>this a little bit bigger,</p>
+        <p begin="00:05:06.2" end="00:05:07.10" tts:direction="ltr">a little bit wider, if you will,</p>
+        <p begin="00:05:07.10" end="00:05:10.9" tts:direction="ltr">and I want to calculate the value of tax.</p>
+        <p begin="00:05:10.9" end="00:05:15.1" tts:direction="ltr">Well, how do I calculate the value of tax?
+<br/>Given what I have.</p>
+        <p begin="00:05:15.1" end="00:05:17.2" tts:direction="ltr">Well, based on my process here,</p>
+        <p begin="00:05:17.2" end="00:05:21.1" tts:direction="ltr">I can assume a flat 25% tax rate.</p>
+        <p begin="00:05:21.1" end="00:05:24.5" tts:direction="ltr">I can assume that. What I'm going to do
+<br/>then here for my tax,</p>
+        <p begin="00:05:24.5" end="00:05:30.1" tts:direction="ltr">I'm going to say tax is equal to gross pay
+<br/>multiplied by 0.25.</p>
+        <p begin="00:05:30.1" end="00:05:33.3" tts:direction="ltr">That is going to calculate my tax amount
+<br/>for me.</p>
+        <p begin="00:05:33.3" end="00:05:36.4" tts:direction="ltr">Now the next thing that I'm going to do is
+<br/>I need to figure out,</p>
+        <p begin="00:05:36.4" end="00:05:40.5" tts:direction="ltr">I need to output to my user the tax and
+<br/>the net pay amount.</p>
+        <p begin="00:05:40.5" end="00:05:42.6" tts:direction="ltr">I also need to calculate net pay.</p>
+        <p begin="00:05:42.6" end="00:05:45.1" tts:direction="ltr">How am I going to calculate net pay?</p>
+        <p begin="00:05:45.1" end="00:05:50.8" tts:direction="ltr">I hope you say, Well, Reagan just use
+<br/>gross pay and tax to help you do that.</p>
+        <p begin="00:05:50.8" end="00:05:55.10" tts:direction="ltr">I'm going to say net is equal to Gross,</p>
+        <p begin="00:05:55.10" end="00:06:02.5" tts:direction="ltr">I'm going to give her that gross pay minus
+<br/>tax.</p>
+        <p begin="00:06:02.5" end="00:06:04.6" tts:direction="ltr">That's what my net income.</p>
+        <p begin="00:06:04.6" end="00:06:07.5" tts:direction="ltr">My net paycheck, if you will, is going to
+<br/>be worth.</p>
+        <p begin="00:06:07.5" end="00:06:10.8" tts:direction="ltr">All right. Perfect. I've done my
+<br/>calculations.</p>
+        <p begin="00:06:10.8" end="00:06:13.6" tts:direction="ltr">Now the next thing I need to do is also it</p>
+        <p begin="00:06:13.6" end="00:06:18" tts:direction="ltr">says to output tax and net to the user.</p>
+        <p begin="00:06:18" end="00:06:20.4" tts:direction="ltr">I'm going to go ahead and I'm outputting
+<br/>data.</p>
+        <p begin="00:06:20.4" end="00:06:24.1" tts:direction="ltr">There is an output of information going to
+<br/>my user.</p>
+        <p begin="00:06:24.1" end="00:06:27.3" tts:direction="ltr">I had an input that came into my process,</p>
+        <p begin="00:06:27.3" end="00:06:29.3" tts:direction="ltr">and I'm going to have an output.</p>
+        <p begin="00:06:29.3" end="00:06:32.9" tts:direction="ltr">My output, think about this is just
+<br/>printing it to the screen.</p>
+        <p begin="00:06:32.9" end="00:06:35.3" tts:direction="ltr">You're doing the calculations and you say,</p>
+        <p begin="00:06:35.3" end="00:06:40.2" tts:direction="ltr">Enter and the calculator flips it up and
+<br/>the calculator gives you the amount,</p>
+        <p begin="00:06:40.2" end="00:06:42.3" tts:direction="ltr">then that would be an output, if you will.</p>
+        <p begin="00:06:42.3" end="00:06:44.8" tts:direction="ltr">I'm going to say output then.</p>
+        <p begin="00:06:44.8" end="00:06:48.2" tts:direction="ltr">Is going to be tax and net.</p>
+        <p begin="00:06:48.2" end="00:06:50.8" tts:direction="ltr">I'm going to bold output again just so</p>
+        <p begin="00:06:50.8" end="00:06:54.4" tts:direction="ltr">I have that as a distinction from input.</p>
+        <p begin="00:06:54.8" end="00:06:59.3" tts:direction="ltr">There we go. We have my mini flowchart
+<br/>here.</p>
+        <p begin="00:06:59.3" end="00:07:06.1" tts:direction="ltr">Then I'm going to we know that every
+<br/>flowchart has a beginning and an ending.</p>
+        <p begin="00:07:06.1" end="00:07:08.5" tts:direction="ltr">I know that I have a beginning, a start,</p>
+        <p begin="00:07:08.5" end="00:07:12.3" tts:direction="ltr">and an end, and then I have flow lines
+<br/>that go between them.</p>
+        <p begin="00:07:12.3" end="00:07:14.5" tts:direction="ltr">Right now I haven't added my flow lines.</p>
+        <p begin="00:07:14.5" end="00:07:16.9" tts:direction="ltr">I tend to do that more towards the end.</p>
+        <p begin="00:07:16.9" end="00:07:22.5" tts:direction="ltr">I'm going to grab a flow line and connect
+<br/>start and input.</p>
+        <p begin="00:07:22.5" end="00:07:24.8" tts:direction="ltr">Then if you just grab</p>
+        <p begin="00:07:24.9" end="00:07:29.5" tts:direction="ltr">this little dot here on input and drag it
+<br/>down to the process,</p>
+        <p begin="00:07:29.5" end="00:07:31.1" tts:direction="ltr">it will create a flow line.</p>
+        <p begin="00:07:31.1" end="00:07:34.2" tts:direction="ltr">Same thing here from Tax Sant.</p>
+        <p begin="00:07:34.2" end="00:07:35.9" tts:direction="ltr">I'm just lining up.</p>
+        <p begin="00:07:35.9" end="00:07:38.3" tts:direction="ltr">This is my flow of information.</p>
+        <p begin="00:07:38.3" end="00:07:42.1" tts:direction="ltr">These are the next steps in my process and
+<br/>there we have it.</p>
+        <p begin="00:07:42.1" end="00:07:47" tts:direction="ltr">There is our flowchart that we've asked
+<br/>you to build. Nice work.</p>
+        <p begin="00:07:47" end="00:07:48.9" tts:direction="ltr">Maybe this is your first flowchart,</p>
+        <p begin="00:07:48.9" end="00:07:52.7" tts:direction="ltr">there's a really good chance that it is
+<br/>and you just created one.</p>
+        <p begin="00:07:52.7" end="00:07:55.7" tts:direction="ltr">Now, but wait there's more.</p>
+        <p begin="00:07:55.7" end="00:07:57.10" tts:direction="ltr">You know what I mean? That's always fun.</p>
+        <p begin="00:07:57.10" end="00:08:00.4" tts:direction="ltr">Let's take a look here.</p>
+        <p begin="00:08:00.4" end="00:08:03.4" tts:direction="ltr">We are going to then after this,</p>
+        <p begin="00:08:03.4" end="00:08:05.7" tts:direction="ltr">we're going to change this up a bit.</p>
+        <p begin="00:08:05.7" end="00:08:09.3" tts:direction="ltr">We're now going to make this a little bit
+<br/>more complex.</p>
+        <p begin="00:08:09.3" end="00:08:12.2" tts:direction="ltr">This is generally how processes go as you
+<br/>think,</p>
+        <p begin="00:08:12.2" end="00:08:15.6" tts:direction="ltr">to get from point A to point B, it's quite
+<br/>simple.</p>
+        <p begin="00:08:15.6" end="00:08:17.2" tts:direction="ltr">But as we add in,</p>
+        <p begin="00:08:17.2" end="00:08:19.6" tts:direction="ltr">there's this piece, there's this
+<br/>constraint,</p>
+        <p begin="00:08:19.6" end="00:08:21.3" tts:direction="ltr">there's this decision to be made,</p>
+        <p begin="00:08:21.3" end="00:08:24.8" tts:direction="ltr">our flowcharts generally become a little
+<br/>bit more complex.</p>
+        <p begin="00:08:24.8" end="00:08:29.1" tts:direction="ltr">Instead of assuming a flat 25% tax rate,</p>
+        <p begin="00:08:29.1" end="00:08:32.5" tts:direction="ltr">we're going to assume that the tax rate is
+<br/>25% if</p>
+        <p begin="00:08:32.5" end="00:08:37.6" tts:direction="ltr">the paycheck is greater than 10,015%
+<br/>otherwise.</p>
+        <p begin="00:08:37.6" end="00:08:43.1" tts:direction="ltr">If the paycheck is greater than thousand
+<br/>greater than 10,000,</p>
+        <p begin="00:08:43.1" end="00:08:46.2" tts:direction="ltr">my apologies, the tax rate is 25%.</p>
+        <p begin="00:08:46.2" end="00:08:50" tts:direction="ltr">If it's less than that, then it's 15%.</p>
+        <p begin="00:08:50" end="00:08:52.7" tts:direction="ltr">The process should accept a paycheck
+<br/>amount,</p>
+        <p begin="00:08:52.7" end="00:08:57" tts:direction="ltr">perform the calculation, and print out the
+<br/>tax amount and the net pay amount.</p>
+        <p begin="00:08:57" end="00:08:58.10" tts:direction="ltr">Then down here, it says,</p>
+        <p begin="00:08:58.10" end="00:09:02.10" tts:direction="ltr">assume multiple paycheck amounts will be
+<br/>entered into the process.</p>
+        <p begin="00:09:02.10" end="00:09:06.3" tts:direction="ltr">Process should repeat until all paychecks
+<br/>are processed.</p>
+        <p begin="00:09:06.3" end="00:09:08.5" tts:direction="ltr">All right. We need to take a couple of</p>
+        <p begin="00:09:08.5" end="00:09:10.10" tts:direction="ltr">those things into account, so we're going
+<br/>to do that.</p>
+        <p begin="00:09:10.10" end="00:09:13.6" tts:direction="ltr">So what I'm going to do here is on</p>
+        <p begin="00:09:13.6" end="00:09:16.9" tts:direction="ltr">my flowchart and I recommend again
+<br/>following along here with me,</p>
+        <p begin="00:09:16.9" end="00:09:21.9" tts:direction="ltr">is I'm going to just get rid of these flow
+<br/>lines initially because</p>
+        <p begin="00:09:21.9" end="00:09:24.7" tts:direction="ltr">sometimes they can cause a little bit of</p>
+        <p begin="00:09:24.7" end="00:09:28.1" tts:direction="ltr">pain as we are trying to navigate between
+<br/>these symbols.</p>
+        <p begin="00:09:28.1" end="00:09:32.4" tts:direction="ltr">We always add them in, but sometimes we
+<br/>got to get our symbols in place first.</p>
+        <p begin="00:09:32.4" end="00:09:35.2" tts:direction="ltr">So first off, I am going to,</p>
+        <p begin="00:09:35.2" end="00:09:38.9" tts:direction="ltr">I know that I'm going to have semi input
+<br/>of gross pay amount, but this time,</p>
+        <p begin="00:09:38.9" end="00:09:43.8" tts:direction="ltr">I need to make a decision before I
+<br/>calculate anything, right?</p>
+        <p begin="00:09:43.8" end="00:09:46.7" tts:direction="ltr">I need to have my program say, Hey,</p>
+        <p begin="00:09:46.7" end="00:09:50.5" tts:direction="ltr">is the gross pay amount greater than
+<br/>10,000?</p>
+        <p begin="00:09:50.5" end="00:09:54.9" tts:direction="ltr">A decision symbol looks like this, right?</p>
+        <p begin="00:09:54.9" end="00:09:56.8" tts:direction="ltr">So we have our decision symbol,</p>
+        <p begin="00:09:56.8" end="00:10:02.9" tts:direction="ltr">and this decision symbol is going to say
+<br/>gross pay Greater than 10,000.</p>
+        <p begin="00:10:02.9" end="00:10:04.10" tts:direction="ltr">Now, is it greater than or equal to?</p>
+        <p begin="00:10:04.10" end="00:10:07" tts:direction="ltr">I can't remember. Greater than 10,000.</p>
+        <p begin="00:10:07" end="00:10:10.4" tts:direction="ltr">We're going to say gross pay greater than
+<br/>10,000.</p>
+        <p begin="00:10:10.7" end="00:10:13.7" tts:direction="ltr">Yes, if this is true,</p>
+        <p begin="00:10:13.7" end="00:10:18.8" tts:direction="ltr">then I'm going to come over here and I
+<br/>want to calculate,</p>
+        <p begin="00:10:18.8" end="00:10:23.6" tts:direction="ltr">I'm going to drag over and then I'm going
+<br/>to grab a process symbol.</p>
+        <p begin="00:10:23.6" end="00:10:26.9" tts:direction="ltr">Then I want to calculate my tax amount as
+<br/>again,</p>
+        <p begin="00:10:26.9" end="00:10:31.1" tts:direction="ltr">gross pay multiplied by 0.25.</p>
+        <p begin="00:10:31.1" end="00:10:35.6" tts:direction="ltr">I know that if the gross pay is greater
+<br/>than 10,000,</p>
+        <p begin="00:10:35.6" end="00:10:38.5" tts:direction="ltr">my tax is going to be calculated in this
+<br/>way.</p>
+        <p begin="00:10:38.5" end="00:10:41.2" tts:direction="ltr">Now, if this is not true,</p>
+        <p begin="00:10:41.2" end="00:10:44.7" tts:direction="ltr">if it's not greater than 10,000, so this
+<br/>is a no,</p>
+        <p begin="00:10:44.7" end="00:10:50.9" tts:direction="ltr">I'm going to bring down my flow line here
+<br/>and grab the process symbol,</p>
+        <p begin="00:10:50.9" end="00:10:54.9" tts:direction="ltr">and I'm going to calculate taxes equal to
+<br/>gross pay,</p>
+        <p begin="00:10:54.9" end="00:10:57.3" tts:direction="ltr">and if that's not true,</p>
+        <p begin="00:10:57.3" end="00:11:04.8" tts:direction="ltr">then it's 15% otherwise, multiplied by
+<br/>0.15.</p>
+        <p begin="00:11:04.8" end="00:11:08.6" tts:direction="ltr">Perfect. Now once I have this,</p>
+        <p begin="00:11:08.9" end="00:11:12.2" tts:direction="ltr">I have calculated my taxes,</p>
+        <p begin="00:11:12.2" end="00:11:16.4" tts:direction="ltr">the two different ways based upon the
+<br/>decision symbol and its output.</p>
+        <p begin="00:11:16.4" end="00:11:20.2" tts:direction="ltr">Then what I need to do is I'm still
+<br/>calculating net the same way.</p>
+        <p begin="00:11:20.2" end="00:11:22.5" tts:direction="ltr">I'm going to keep net as</p>
+        <p begin="00:11:22.5" end="00:11:25.9" tts:direction="ltr">the same calculation here within this
+<br/>other process symbol.</p>
+        <p begin="00:11:25.9" end="00:11:29.1" tts:direction="ltr">But I'm always calculating net the same</p>
+        <p begin="00:11:29.1" end="00:11:33.2" tts:direction="ltr">way regardless of the way that tax is
+<br/>calculated.</p>
+        <p begin="00:11:33.2" end="00:11:35.6" tts:direction="ltr">Therefore, if I'm going to do the same
+<br/>process,</p>
+        <p begin="00:11:35.6" end="00:11:37.7" tts:direction="ltr">I'm going to bring in a connector here,</p>
+        <p begin="00:11:37.7" end="00:11:40.1" tts:direction="ltr">my little circle that I just grabbed over
+<br/>here</p>
+        <p begin="00:11:40.1" end="00:11:43.7" tts:direction="ltr">that it has an A inside of that. We're
+<br/>going to delete that.</p>
+        <p begin="00:11:43.7" end="00:11:47.3" tts:direction="ltr">I'm going to drag a flow line</p>
+        <p begin="00:11:47.3" end="00:11:51.6" tts:direction="ltr">from It takes a minute to get used to the
+<br/>software.</p>
+        <p begin="00:11:51.6" end="00:11:53.4" tts:direction="ltr">I'm going to drag a flow line</p>
+        <p begin="00:11:53.4" end="00:11:58.6" tts:direction="ltr">from both of these tax calculations to
+<br/>this connector.</p>
+        <p begin="00:11:58.6" end="00:12:00.4" tts:direction="ltr">Then from that connector,</p>
+        <p begin="00:12:00.4" end="00:12:02.5" tts:direction="ltr">I'm going to then bring</p>
+        <p begin="00:12:02.5" end="00:12:09.8" tts:direction="ltr">the um tax that's been calculated into
+<br/>this calculation of net.</p>
+        <p begin="00:12:09.8" end="00:12:13.4" tts:direction="ltr">I don't want to calculate net two
+<br/>different times.</p>
+        <p begin="00:12:13.4" end="00:12:15.9" tts:direction="ltr">I'm not going to have net calculation here
+<br/>and</p>
+        <p begin="00:12:15.9" end="00:12:19.10" tts:direction="ltr">net calculation here because I just I am
+<br/>going to simplify this process,</p>
+        <p begin="00:12:19.10" end="00:12:22.10" tts:direction="ltr">make it as clear as possible that I'm
+<br/>calculating</p>
+        <p begin="00:12:22.10" end="00:12:26.9" tts:direction="ltr">net the same way regardless of how tax was
+<br/>calculated.</p>
+        <p begin="00:12:26.9" end="00:12:29.5" tts:direction="ltr">We're going to bring in connector in and
+<br/>make sure that</p>
+        <p begin="00:12:29.5" end="00:12:33.1" tts:direction="ltr">the process comes back together before
+<br/>that net calculation.</p>
+        <p begin="00:12:33.1" end="00:12:38.2" tts:direction="ltr">Perfect. Then after I calculate the net,
+<br/>as we know here,</p>
+        <p begin="00:12:38.2" end="00:12:47.4" tts:direction="ltr">we move from a from the from the top left
+<br/>down into the right.</p>
+        <p begin="00:12:47.4" end="00:12:50.8" tts:direction="ltr">We're looking good there. The other thing
+<br/>though,</p>
+        <p begin="00:12:50.8" end="00:12:53.1" tts:direction="ltr">and I know I'm going to output</p>
+        <p begin="00:12:53.1" end="00:12:57.5" tts:direction="ltr">I'm going to output tax and net after I do
+<br/>those calculations.</p>
+        <p begin="00:12:57.5" end="00:13:01.10" tts:direction="ltr">But the thing, we've taken into account
+<br/>this red part up here,</p>
+        <p begin="00:13:01.10" end="00:13:05.1" tts:direction="ltr">but then it says, assume multiple
+<br/>paychecks will be entered,</p>
+        <p begin="00:13:05.1" end="00:13:08.2" tts:direction="ltr">process repeat until all paychecks are
+<br/>processed.</p>
+        <p begin="00:13:08.2" end="00:13:13.6" tts:direction="ltr">What I want to do then is after I output
+<br/>tax and net for that one paycheck,</p>
+        <p begin="00:13:13.6" end="00:13:17.3" tts:direction="ltr">I then want to think, is there another
+<br/>paycheck?</p>
+        <p begin="00:13:17.3" end="00:13:19.8" tts:direction="ltr">So what am I going to do?</p>
+        <p begin="00:13:19.8" end="00:13:23.1" tts:direction="ltr">If I have, yes, there's another paycheck
+<br/>or no,</p>
+        <p begin="00:13:23.1" end="00:13:26.7" tts:direction="ltr">there's not another paycheck that the
+<br/>processing repeat for,</p>
+        <p begin="00:13:26.7" end="00:13:28.3" tts:direction="ltr">I have a yes and a no.</p>
+        <p begin="00:13:28.3" end="00:13:33" tts:direction="ltr">I'm going to grab my decision symbol and
+<br/>bring it down here.</p>
+        <p begin="00:13:34" end="00:13:37.4" tts:direction="ltr">This decision symbol is going to say,</p>
+        <p begin="00:13:37.4" end="00:13:43.3" tts:direction="ltr">more Paychecks, more paychecks.</p>
+        <p begin="00:13:43.3" end="00:13:49.9" tts:direction="ltr">If that is true, then if that is true,</p>
+        <p begin="00:13:49.9" end="00:13:51.4" tts:direction="ltr">if there are more paychecks,</p>
+        <p begin="00:13:51.4" end="00:13:54.10" tts:direction="ltr">then I basically need to start my process
+<br/>over again.</p>
+        <p begin="00:13:54.10" end="00:13:57.4" tts:direction="ltr">When I say start my process over again,</p>
+        <p begin="00:13:57.4" end="00:14:01.4" tts:direction="ltr">I don't want to hit start again because
+<br/>I'm already here processing paychecks.</p>
+        <p begin="00:14:01.4" end="00:14:05.4" tts:direction="ltr">I want to have a connector here before my
+<br/>input of</p>
+        <p begin="00:14:05.4" end="00:14:09.4" tts:direction="ltr">gross pay so that if there is more
+<br/>paychecks,</p>
+        <p begin="00:14:09.4" end="00:14:11.4" tts:direction="ltr">if this is yes, if this is true,</p>
+        <p begin="00:14:11.4" end="00:14:14.8" tts:direction="ltr">then we come up here and my process will
+<br/>begin again.</p>
+        <p begin="00:14:14.8" end="00:14:17.7" tts:direction="ltr">Before I input the gross pay amount.</p>
+        <p begin="00:14:17.7" end="00:14:19.9" tts:direction="ltr">Then at the more paychecks,</p>
+        <p begin="00:14:19.9" end="00:14:21.6" tts:direction="ltr">that's true, that's a yes.</p>
+        <p begin="00:14:21.6" end="00:14:23.4" tts:direction="ltr">I bring it up here, I say,</p>
+        <p begin="00:14:23.4" end="00:14:25.10" tts:direction="ltr">then we're going to start the process
+<br/>again at</p>
+        <p begin="00:14:25.10" end="00:14:29.8" tts:direction="ltr">inputting the gross pay amount of this
+<br/>next paycheck.</p>
+        <p begin="00:14:29.8" end="00:14:33.2" tts:direction="ltr">We're going to connect here by flow lines.</p>
+        <p begin="00:14:33.2" end="00:14:35.10" tts:direction="ltr">And we're going to connect all of our flow
+<br/>lines.</p>
+        <p begin="00:14:35.10" end="00:14:38.4" tts:direction="ltr">But if more paychecks is false,</p>
+        <p begin="00:14:38.4" end="00:14:42.4" tts:direction="ltr">then I'm going to drag the no option from</p>
+        <p begin="00:14:42.4" end="00:14:47.6" tts:direction="ltr">this decision symbol down to the end and
+<br/>my process is over.</p>
+        <p begin="00:14:47.6" end="00:14:50.4" tts:direction="ltr">There we have our new.</p>
+        <p begin="00:14:50.4" end="00:14:53.8" tts:direction="ltr">I'm going to zoom in here in case there's
+<br/>any questions.</p>
+        <p begin="00:14:53.8" end="00:14:56.10" tts:direction="ltr">There we have our new process that we have
+<br/>modeled.</p>
+        <p begin="00:14:56.10" end="00:14:58.6" tts:direction="ltr">We start the process.</p>
+        <p begin="00:14:58.6" end="00:15:02.1" tts:direction="ltr">The process here is going to be
+<br/>calculating</p>
+        <p begin="00:15:02.1" end="00:15:07.3" tts:direction="ltr">the tax and net income from gross pay
+<br/>amounts for multiple paychecks.</p>
+        <p begin="00:15:07.3" end="00:15:09.8" tts:direction="ltr">I input the gross pay amount,</p>
+        <p begin="00:15:09.8" end="00:15:14.2" tts:direction="ltr">that's a variable, and I make a decision
+<br/>based on that gross pays value.</p>
+        <p begin="00:15:14.2" end="00:15:16.10" tts:direction="ltr">If the gross pay is greater than 10,000,</p>
+        <p begin="00:15:16.10" end="00:15:21.2" tts:direction="ltr">I calculate tax as gross pay multiplied by
+<br/>0.25,</p>
+        <p begin="00:15:21.2" end="00:15:23.9" tts:direction="ltr">so there's going to be more taxes paid.</p>
+        <p begin="00:15:23.9" end="00:15:26.9" tts:direction="ltr">It's less than 2000, if this is not true,</p>
+        <p begin="00:15:26.9" end="00:15:28.3" tts:direction="ltr">if it's less than 2000,</p>
+        <p begin="00:15:28.3" end="00:15:31.4" tts:direction="ltr">then gross pay, we're going to multiply by
+<br/>0.15.</p>
+        <p begin="00:15:31.4" end="00:15:35.8" tts:direction="ltr">Then once I have tax calculated, down
+<br/>here,</p>
+        <p begin="00:15:35.8" end="00:15:38.10" tts:direction="ltr">I'm going to have a net calculation which
+<br/>says,</p>
+        <p begin="00:15:38.10" end="00:15:42.8" tts:direction="ltr">those two processes come together using my
+<br/>connector,</p>
+        <p begin="00:15:42.8" end="00:15:46.3" tts:direction="ltr">my net is going to say net equals gross
+<br/>pay minus tax.</p>
+        <p begin="00:15:46.3" end="00:15:49.1" tts:direction="ltr">Then I'm going to output the tax and the
+<br/>net amount.</p>
+        <p begin="00:15:49.1" end="00:15:51.1" tts:direction="ltr">Then I'm going to check and say, hey,</p>
+        <p begin="00:15:51.1" end="00:15:53.6" tts:direction="ltr">isn't there another paycheck that I'm
+<br/>going to</p>
+        <p begin="00:15:53.6" end="00:15:57.2" tts:direction="ltr">calculate the net and tax them out for.</p>
+        <p begin="00:15:57.2" end="00:15:59.4" tts:direction="ltr">If that is true, then we swing back up</p>
+        <p begin="00:15:59.4" end="00:16:03.4" tts:direction="ltr">here above the input symbol so that again,</p>
+        <p begin="00:16:03.4" end="00:16:05.9" tts:direction="ltr">we start the process before we need the
+<br/>data.</p>
+        <p begin="00:16:05.9" end="00:16:09.3" tts:direction="ltr">We are beginning the process again and we</p>
+        <p begin="00:16:09.3" end="00:16:12.8" tts:direction="ltr">input gross pay amount and then go down
+<br/>through.</p>
+        <p begin="00:16:12.8" end="00:16:14.6" tts:direction="ltr">If there's no more paychecks,</p>
+        <p begin="00:16:14.6" end="00:16:16.9" tts:direction="ltr">then we just say no and we end the
+<br/>process.</p>
+        <p begin="00:16:16.9" end="00:16:18.8" tts:direction="ltr">So you don't need to turn this in,</p>
+        <p begin="00:16:18.8" end="00:16:22.10" tts:direction="ltr">but I hope this is helpful in getting you
+<br/>some exposure to flowcharts,</p>
+        <p begin="00:16:22.10" end="00:16:26.2" tts:direction="ltr">how powerful they are and LucidChart,</p>
+        <p begin="00:16:26.2" end="00:16:27.8" tts:direction="ltr">which again is used in industry.</p>
+        <p begin="00:16:27.8" end="00:16:30.6" tts:direction="ltr">You're getting a lot and when I say
+<br/>industry is used</p>
+        <p begin="00:16:30.6" end="00:16:33.9" tts:direction="ltr">by companies and organizations that are
+<br/>doing this type of work.</p>
+        <p begin="00:16:33.9" end="00:16:35.2" tts:direction="ltr">If I wanted to say this,</p>
+        <p begin="00:16:35.2" end="00:16:41.1" tts:direction="ltr">you could save this flowcharting examples
+<br/>and this would save this document</p>
+        <p begin="00:16:41.1" end="00:16:44.4" tts:direction="ltr">here for you in your Lucidchart documents
+<br/>that you</p>
+        <p begin="00:16:44.4" end="00:16:48.4" tts:direction="ltr">could use to help you on homework
+<br/>assignments and things.</p>
+        <p begin="00:16:48.4" end="00:16:53.8" tts:direction="ltr">This will help us as we become programmers
+<br/>in this next phase of our class.</p>
+        <p begin="00:16:53.8" end="00:16:57.2" tts:direction="ltr">We will actually program this flowchart</p>
+        <p begin="00:16:57.2" end="00:17:00.3" tts:direction="ltr">and the other more simple flowchart in a
+<br/>Python program,</p>
+        <p begin="00:17:00.3" end="00:17:05.1" tts:direction="ltr">so you can see how this goes hand in hand.
+<br/>Take care, everybody.</p>
+    </div>
+  </body>
+</tt>

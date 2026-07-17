@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>591257423 - 1_hnmw6915 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:02.760" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:02.760" end="00:00:06.000" tts:direction="ltr">Now that you know what makes a five star
+<br />data visualization,</p>
+        <p begin="00:00:06.000" end="00:00:09.590" tts:direction="ltr">let's do a quick visualization in Excel.</p>
+        <p begin="00:00:09.590" end="00:00:11.820" tts:direction="ltr">Um, there's a lot of</p>
+        <p begin="00:00:11.820" end="00:00:14.460" tts:direction="ltr">wonderful data visualization tools out
+<br />there</p>
+        <p begin="00:00:14.460" end="00:00:17.340" tts:direction="ltr">that specialize in things like this like
+<br />Power BI,</p>
+        <p begin="00:00:17.340" end="00:00:22.100" tts:direction="ltr">Tableau, Looker, Domo, and list goes on
+<br />and on and on.</p>
+        <p begin="00:00:22.100" end="00:00:26.500" tts:direction="ltr">These are all things that organizations
+<br />will buy and purchase</p>
+        <p begin="00:00:26.500" end="00:00:31.100" tts:direction="ltr">so that they can use these tools to
+<br />visualize their data.</p>
+        <p begin="00:00:31.100" end="00:00:34.580" tts:direction="ltr">But you can also do data visualizations in
+<br />Excel and it works great.</p>
+        <p begin="00:00:34.580" end="00:00:36.860" tts:direction="ltr">Because we've covered that in our class,</p>
+        <p begin="00:00:36.860" end="00:00:38.660" tts:direction="ltr">we're going to jump into</p>
+        <p begin="00:00:38.660" end="00:00:42.660" tts:direction="ltr">our in class assignment day data
+<br />visualization in Excel.</p>
+        <p begin="00:00:42.660" end="00:00:45.380" tts:direction="ltr">We're going to work here with Global
+<br />Superstore.</p>
+        <p begin="00:00:45.380" end="00:00:51.240" tts:direction="ltr">Now Global Superstore has provided us with
+<br />some data that we can see here,</p>
+        <p begin="00:00:51.240" end="00:00:55.200" tts:direction="ltr">we have the order date,</p>
+        <p begin="00:00:55.200" end="00:00:56.760" tts:direction="ltr">ship date, segment, state,</p>
+        <p begin="00:00:56.760" end="00:00:58.640" tts:direction="ltr">country, region, all these things.</p>
+        <p begin="00:00:58.640" end="00:01:01.960" tts:direction="ltr">This is a historical dataset</p>
+        <p begin="00:01:02.600" end="00:01:08.360" tts:direction="ltr">that is oftentimes provided by Tableau to
+<br />work on data visualization with.</p>
+        <p begin="00:01:08.360" end="00:01:10.705" tts:direction="ltr">When we take a look at this,</p>
+        <p begin="00:01:10.705" end="00:01:12.930" tts:direction="ltr">We can notice here that each of</p>
+        <p begin="00:01:12.930" end="00:01:17.330" tts:direction="ltr">these row IDs actually represents here is
+<br />some paper being</p>
+        <p begin="00:01:17.330" end="00:01:24.490" tts:direction="ltr">bought and here is the number of the
+<br />number of items that was purchased.</p>
+        <p begin="00:01:24.490" end="00:01:27.930" tts:direction="ltr">These are all different line items on a
+<br />receipt.</p>
+        <p begin="00:01:27.930" end="00:01:31.210" tts:direction="ltr">If you go to Costco or Sam's Club and
+<br />they're checking</p>
+        <p begin="00:01:31.210" end="00:01:35.930" tts:direction="ltr">your receipt at the door that they will
+<br />check,</p>
+        <p begin="00:01:35.930" end="00:01:38.970" tts:direction="ltr">did you buy five rotisserie chickens?</p>
+        <p begin="00:01:38.970" end="00:01:42.530" tts:direction="ltr">Did you buy two gallons of milk, whatever
+<br />that may be?</p>
+        <p begin="00:01:42.530" end="00:01:44.450" tts:direction="ltr">This is saying, Hey,</p>
+        <p begin="00:01:44.450" end="00:01:46.650" tts:direction="ltr">they bought seven of this item.</p>
+        <p begin="00:01:46.650" end="00:01:49.170" tts:direction="ltr">Just keep that in mind. All right.</p>
+        <p begin="00:01:49.170" end="00:01:53.610" tts:direction="ltr">So let's come back over to here.</p>
+        <p begin="00:01:53.610" end="00:01:57.170" tts:direction="ltr">Oh, yeah, sorry, back over to our
+<br />instructions.</p>
+        <p begin="00:01:57.170" end="00:02:00.090" tts:direction="ltr">In our instructions, we are going to look
+<br />at</p>
+        <p begin="00:02:00.090" end="00:02:04.090" tts:direction="ltr">which category in global superstore
+<br />generates the highest total sales,</p>
+        <p begin="00:02:04.090" end="00:02:07.930" tts:direction="ltr">and then which category has the highest
+<br />number of products sold.</p>
+        <p begin="00:02:07.930" end="00:02:09.810" tts:direction="ltr">I'm going to come over here to data,</p>
+        <p begin="00:02:09.810" end="00:02:12.570" tts:direction="ltr">and let's answer this first question.</p>
+        <p begin="00:02:12.760" end="00:02:15.920" tts:direction="ltr">We're going to come up here and I'm going
+<br />to click on</p>
+        <p begin="00:02:15.920" end="00:02:18.600" tts:direction="ltr">this handy dandy thing that makes me
+<br />highlight all the data.</p>
+        <p begin="00:02:18.600" end="00:02:21.520" tts:direction="ltr">I'm not sure what it's called, but I'm
+<br />just going to click on that triangle.</p>
+        <p begin="00:02:21.520" end="00:02:24.640" tts:direction="ltr">I'm going to go insert and we're going to
+<br />use a pivot table again.</p>
+        <p begin="00:02:24.640" end="00:02:26.880" tts:direction="ltr">I'm going to say from table and range,</p>
+        <p begin="00:02:26.880" end="00:02:30.320" tts:direction="ltr">and we're just going to say on a new
+<br />worksheet is great.</p>
+        <p begin="00:02:30.320" end="00:02:32.840" tts:direction="ltr">Then when I'm developing my new pivot
+<br />table,</p>
+        <p begin="00:02:32.840" end="00:02:38.120" tts:direction="ltr">I want to look at the category We're going
+<br />to drag category to rows,</p>
+        <p begin="00:02:38.120" end="00:02:43.000" tts:direction="ltr">and then sales to values.</p>
+        <p begin="00:02:43.000" end="00:02:49.280" tts:direction="ltr">I have the different categories and then I
+<br />have the sum of those sales.</p>
+        <p begin="00:02:49.280" end="00:02:51.440" tts:direction="ltr">Now, I want to sum sales.</p>
+        <p begin="00:02:51.440" end="00:02:53.360" tts:direction="ltr">I want to sum all those sales together,</p>
+        <p begin="00:02:53.360" end="00:02:56.560" tts:direction="ltr">and then I'm going to uncheck blank.</p>
+        <p begin="00:02:56.560" end="00:02:59.920" tts:direction="ltr">Now I have a little pivot table here
+<br />that's showing me furniture,</p>
+        <p begin="00:02:59.920" end="00:03:01.840" tts:direction="ltr">office supplies, and technology.</p>
+        <p begin="00:03:01.840" end="00:03:04.360" tts:direction="ltr">Now we can look here that technology does
+<br />lead,</p>
+        <p begin="00:03:04.360" end="00:03:07.320" tts:direction="ltr">but let's actually turn this into a
+<br />visualization.</p>
+        <p begin="00:03:07.320" end="00:03:13.275" tts:direction="ltr">I'm going to come over here to pivot table
+<br />analyze and go pivot chart.</p>
+        <p begin="00:03:13.275" end="00:03:16.710" tts:direction="ltr">Okay, so make sure you clicked in here, go
+<br />pivot chart,</p>
+        <p begin="00:03:16.710" end="00:03:20.270" tts:direction="ltr">and then I'm going to click on a clustered
+<br />column is what I want to use.</p>
+        <p begin="00:03:20.270" end="00:03:22.270" tts:direction="ltr">You can go column cluster to column.</p>
+        <p begin="00:03:22.270" end="00:03:24.955" tts:direction="ltr">It should just actually generate it for
+<br />you.</p>
+        <p begin="00:03:24.955" end="00:03:29.480" tts:direction="ltr">Now I have a chart that I can go ahead and
+<br />use.</p>
+        <p begin="00:03:29.480" end="00:03:32.120" tts:direction="ltr">Now I can right click on some of Sales</p>
+        <p begin="00:03:32.120" end="00:03:37.760" tts:direction="ltr">and I can see that this is the sum of the
+<br />sales and this is the category.</p>
+        <p begin="00:03:37.760" end="00:03:39.880" tts:direction="ltr">Instead of having total I don't like,</p>
+        <p begin="00:03:39.880" end="00:03:41.720" tts:direction="ltr">remember we talk about takeaway title.</p>
+        <p begin="00:03:41.720" end="00:03:44.640" tts:direction="ltr">First off, where should this title go?</p>
+        <p begin="00:03:44.640" end="00:03:47.840" tts:direction="ltr">I hope you say, Oh, over here in the left
+<br />hand corner, you're right.</p>
+        <p begin="00:03:47.840" end="00:03:50.800" tts:direction="ltr">Let's drag this over here to the left hand
+<br />corner.</p>
+        <p begin="00:03:50.800" end="00:03:58.525" tts:direction="ltr">I maybe want to put here technology leads
+<br />in total sales. All right.</p>
+        <p begin="00:03:58.525" end="00:04:03.090" tts:direction="ltr">So technology leads in total sales. That's
+<br />great.</p>
+        <p begin="00:04:03.090" end="00:04:06.810" tts:direction="ltr">Now I want to just maybe I want to use</p>
+        <p begin="00:04:06.810" end="00:04:10.610" tts:direction="ltr">those pre attentive attributes and write
+<br />this is my takeaway title.</p>
+        <p begin="00:04:10.610" end="00:04:13.050" tts:direction="ltr">I know that technology is leading in total
+<br />sales.</p>
+        <p begin="00:04:13.050" end="00:04:15.450" tts:direction="ltr">I'm going to click on the technology bar.</p>
+        <p begin="00:04:15.450" end="00:04:18.890" tts:direction="ltr">Do you see how I just keep clicking on it
+<br />until this 1 bar pops up.</p>
+        <p begin="00:04:18.890" end="00:04:23.290" tts:direction="ltr">Then I'm going to right click and I'm
+<br />going to say fill,</p>
+        <p begin="00:04:23.290" end="00:04:26.745" tts:direction="ltr">and I want to fill, say just technology
+<br />with orange.</p>
+        <p begin="00:04:26.745" end="00:04:30.480" tts:direction="ltr">And then maybe now that I know this
+<br />technology bar is orange,</p>
+        <p begin="00:04:30.480" end="00:04:33.480" tts:direction="ltr">so make sure you click on it and it's only
+<br />that one that's highlighted.</p>
+        <p begin="00:04:33.480" end="00:04:35.040" tts:direction="ltr">See if I just click on.</p>
+        <p begin="00:04:35.040" end="00:04:38.240" tts:direction="ltr">So if I just click onto a bar, it
+<br />highlights all of them,</p>
+        <p begin="00:04:38.240" end="00:04:40.160" tts:direction="ltr">just keep clicking until just one of them,</p>
+        <p begin="00:04:40.160" end="00:04:43.320" tts:direction="ltr">then right click and fill and then orange.</p>
+        <p begin="00:04:43.320" end="00:04:47.160" tts:direction="ltr">Maybe I want to provide some connection
+<br />here.</p>
+        <p begin="00:04:47.160" end="00:04:50.280" tts:direction="ltr">Then I'm going to highlight technology
+<br />here in</p>
+        <p begin="00:04:50.280" end="00:04:55.600" tts:direction="ltr">my title and come up here to my font and
+<br />go down to this,</p>
+        <p begin="00:04:55.600" end="00:05:01.010" tts:direction="ltr">sorry, go to I'll right click here.</p>
+        <p begin="00:05:01.010" end="00:05:03.810" tts:direction="ltr">No, pull on technology, there you go.</p>
+        <p begin="00:05:03.810" end="00:05:06.570" tts:direction="ltr">And then go font up here and orange.</p>
+        <p begin="00:05:06.570" end="00:05:09.170" tts:direction="ltr">I just want to change technology to be</p>
+        <p begin="00:05:09.170" end="00:05:12.650" tts:direction="ltr">orange so that it provides connection
+<br />between these two.</p>
+        <p begin="00:05:12.650" end="00:05:16.730" tts:direction="ltr">Okay. The last thing here maybe is I can
+<br />come up here and right</p>
+        <p begin="00:05:16.730" end="00:05:18.250" tts:direction="ltr">click on some of the sales</p>
+        <p begin="00:05:18.250" end="00:05:21.450" tts:direction="ltr">and we're going to right click on this
+<br />button and say,</p>
+        <p begin="00:05:21.450" end="00:05:24.930" tts:direction="ltr">hide all field buttons on chart.</p>
+        <p begin="00:05:24.930" end="00:05:29.850" tts:direction="ltr">Then I can move my title again and we can
+<br />continue to improve this.</p>
+        <p begin="00:05:29.850" end="00:05:33.130" tts:direction="ltr">Maybe I want to just hide this legend
+<br />here,</p>
+        <p begin="00:05:33.130" end="00:05:38.170" tts:direction="ltr">so I'm just going to delete that legend
+<br />and I can continue to improve this.</p>
+        <p begin="00:05:38.170" end="00:05:40.730" tts:direction="ltr">I could change this into currency if I
+<br />would like.</p>
+        <p begin="00:05:40.730" end="00:05:43.250" tts:direction="ltr">I could make these office supplies and</p>
+        <p begin="00:05:43.250" end="00:05:47.895" tts:direction="ltr">furniture more grayed out so that they're
+<br />not calling as much attention.</p>
+        <p begin="00:05:47.895" end="00:05:51.140" tts:direction="ltr">But do you see how we can turn a question,</p>
+        <p begin="00:05:51.140" end="00:05:53.540" tts:direction="ltr">which is which category in</p>
+        <p begin="00:05:53.540" end="00:05:56.500" tts:direction="ltr">global superstore generates the highest
+<br />total sales,</p>
+        <p begin="00:05:56.500" end="00:05:59.740" tts:direction="ltr">I can do this in this bar chart here.</p>
+        <p begin="00:05:59.740" end="00:06:02.940" tts:direction="ltr">Maybe I want to right click down here and
+<br />rename this to be number one.</p>
+        <p begin="00:06:02.940" end="00:06:05.380" tts:direction="ltr">That's my first question that I'm
+<br />answering.</p>
+        <p begin="00:06:05.380" end="00:06:07.260" tts:direction="ltr">I might take away title.</p>
+        <p begin="00:06:07.260" end="00:06:09.500" tts:direction="ltr">Again, we could continue to improve this,</p>
+        <p begin="00:06:09.500" end="00:06:12.140" tts:direction="ltr">but I don't want to make this video super
+<br />long,</p>
+        <p begin="00:06:12.140" end="00:06:13.620" tts:direction="ltr">but we can continue to improve it.</p>
+        <p begin="00:06:13.620" end="00:06:17.180" tts:direction="ltr">If you would like to go ahead and feel
+<br />free to.</p>
+        <p begin="00:06:17.180" end="00:06:19.740" tts:direction="ltr">Now over here on data,</p>
+        <p begin="00:06:19.740" end="00:06:22.300" tts:direction="ltr">I want to do my last question,</p>
+        <p begin="00:06:22.300" end="00:06:28.690" tts:direction="ltr">which is, oh Which category has the
+<br />highest number of products sold.</p>
+        <p begin="00:06:28.690" end="00:06:30.530" tts:direction="ltr">I'm going to come over here and I'm going
+<br />to</p>
+        <p begin="00:06:30.530" end="00:06:32.690" tts:direction="ltr">click on my handy triangle again and go</p>
+        <p begin="00:06:32.690" end="00:06:37.250" tts:direction="ltr">insert and we're going to go pivot table,</p>
+        <p begin="00:06:37.250" end="00:06:39.850" tts:direction="ltr">and I want to do a new worksheet.</p>
+        <p begin="00:06:39.850" end="00:06:46.290" tts:direction="ltr">This time, I want to do number of products
+<br />sold per category.</p>
+        <p begin="00:06:46.290" end="00:06:50.330" tts:direction="ltr">We're going to come over here and drag
+<br />category to rows.</p>
+        <p begin="00:06:53.700" end="00:06:57.220" tts:direction="ltr">Category to rows, good.</p>
+        <p begin="00:06:57.220" end="00:07:04.820" tts:direction="ltr">Then we're going to drag that quantity two
+<br />values.</p>
+        <p begin="00:07:07.300" end="00:07:12.140" tts:direction="ltr">Perfect. I do want to sum quantity as
+<br />well.</p>
+        <p begin="00:07:12.140" end="00:07:15.260" tts:direction="ltr">I just want to sum all those quantities
+<br />together.</p>
+        <p begin="00:07:15.260" end="00:07:17.140" tts:direction="ltr">Then in this case,</p>
+        <p begin="00:07:17.140" end="00:07:19.140" tts:direction="ltr">now that I've clicked on this pivot table,</p>
+        <p begin="00:07:19.140" end="00:07:22.405" tts:direction="ltr">I'm going to click uncheck the blank.</p>
+        <p begin="00:07:22.405" end="00:07:26.150" tts:direction="ltr">Then I want to come up here and pivot
+<br />table analyze,</p>
+        <p begin="00:07:26.150" end="00:07:27.790" tts:direction="ltr">click on pivot chart.</p>
+        <p begin="00:07:27.790" end="00:07:29.670" tts:direction="ltr">Let's do a clustered column again.</p>
+        <p begin="00:07:29.670" end="00:07:31.950" tts:direction="ltr">You could do a different type if you would
+<br />like.</p>
+        <p begin="00:07:31.950" end="00:07:37.230" tts:direction="ltr">Now I want to move this title over here
+<br />again to the left hand side.</p>
+        <p begin="00:07:37.230" end="00:07:40.390" tts:direction="ltr">This time, I can say</p>
+        <p begin="00:07:40.470" end="00:07:51.230" tts:direction="ltr">office supplies leads in quantity of
+<br />products sold.</p>
+        <p begin="00:07:51.230" end="00:07:55.110" tts:direction="ltr">A takeaway. I love a verb as well,</p>
+        <p begin="00:07:55.110" end="00:07:57.870" tts:direction="ltr">office supplies is leading.</p>
+        <p begin="00:07:57.870" end="00:07:59.830" tts:direction="ltr">We could do the same thing here.</p>
+        <p begin="00:07:59.830" end="00:08:03.750" tts:direction="ltr">I can double click on the sum of quantity</p>
+        <p begin="00:08:11.870" end="00:08:16.830" tts:direction="ltr">and right click hide value fill buttons on
+<br />charts.</p>
+        <p begin="00:08:16.830" end="00:08:20.430" tts:direction="ltr">Then I can move this title again up,</p>
+        <p begin="00:08:20.430" end="00:08:22.390" tts:direction="ltr">and then I can do the same thing here.</p>
+        <p begin="00:08:22.390" end="00:08:25.390" tts:direction="ltr">If I just wanted office supplies to
+<br />change,</p>
+        <p begin="00:08:26.510" end="00:08:30.270" tts:direction="ltr">I just need to click on office supplies.</p>
+        <p begin="00:08:30.270" end="00:08:34.630" tts:direction="ltr">Maybe I want office supplies now you can
+<br />change it to be green.</p>
+        <p begin="00:08:34.630" end="00:08:39.790" tts:direction="ltr">I'm going to let you figure out the rest
+<br />of this visualization,</p>
+        <p begin="00:08:39.790" end="00:08:42.390" tts:direction="ltr">and then I just need you to turn in this
+<br />Excel doc.</p>
+        <p begin="00:08:42.390" end="00:08:44.310" tts:direction="ltr">You'll name sheet number two down here,</p>
+        <p begin="00:08:44.310" end="00:08:46.470" tts:direction="ltr">go ahead and name it number two.</p>
+        <p begin="00:08:46.470" end="00:08:50.550" tts:direction="ltr">Design this last visualization on your
+<br />own.</p>
+        <p begin="00:08:50.550" end="00:08:52.350" tts:direction="ltr">And see what you can come up with.</p>
+        <p begin="00:08:52.350" end="00:08:54.670" tts:direction="ltr">Use maybe some complimentary colors.</p>
+        <p begin="00:08:54.670" end="00:08:59.270" tts:direction="ltr">If you want to figure out how to change
+<br />this left hand side to be currency,</p>
+        <p begin="00:08:59.270" end="00:09:01.630" tts:direction="ltr">you can just absolutely click on that and
+<br />you'll</p>
+        <p begin="00:09:01.630" end="00:09:04.190" tts:direction="ltr">see these text options start to pop up.</p>
+        <p begin="00:09:04.190" end="00:09:06.510" tts:direction="ltr">I just want you to play around with that.</p>
+        <p begin="00:09:06.510" end="00:09:08.470" tts:direction="ltr">Again, if you'd only change</p>
+        <p begin="00:09:08.470" end="00:09:12.350" tts:direction="ltr">the office supplies bar to be a different
+<br />color, that's great.</p>
+        <p begin="00:09:12.350" end="00:09:16.630" tts:direction="ltr">I'm not asking for, um you spend a ton of
+<br />time of this,</p>
+        <p begin="00:09:16.630" end="00:09:19.630" tts:direction="ltr">but I just want you to play around with
+<br />some different design techniques,</p>
+        <p begin="00:09:19.630" end="00:09:23.630" tts:direction="ltr">and then go ahead and save this and submit
+<br />this as your in class assignment.</p>
+        <p begin="00:09:23.630" end="00:09:26.670" tts:direction="ltr">We are trying to make these five star data
+<br />visualizations.</p>
+        <p begin="00:09:26.670" end="00:09:28.150" tts:direction="ltr">We know where the data is coming from.</p>
+        <p begin="00:09:28.150" end="00:09:29.630" tts:direction="ltr">It was provided to us,</p>
+        <p begin="00:09:29.630" end="00:09:33.910" tts:direction="ltr">the superstore, the sample dataset
+<br />provided by Tableau.</p>
+        <p begin="00:09:33.910" end="00:09:36.150" tts:direction="ltr">We also have a takeaway title.</p>
+        <p begin="00:09:36.150" end="00:09:38.550" tts:direction="ltr">We're also using an effective chart type.</p>
+        <p begin="00:09:38.550" end="00:09:40.270" tts:direction="ltr">We can talk about our purpose here.</p>
+        <p begin="00:09:40.270" end="00:09:44.270" tts:direction="ltr">Let's say this purpose, these instructions
+<br />were given to us,</p>
+        <p begin="00:09:44.430" end="00:09:48.710" tts:direction="ltr">by one of our marketing directors.</p>
+        <p begin="00:09:48.710" end="00:09:50.710" tts:direction="ltr">We are going to say, Hey,</p>
+        <p begin="00:09:50.710" end="00:09:55.470" tts:direction="ltr">here's the category that's leading both of
+<br />these different questions.</p>
+        <p begin="00:09:55.470" end="00:09:58.190" tts:direction="ltr">Thanks everybody. Hope you have a great
+<br />day.</p>
+        <p begin="00:09:58.190" end="00:10:01.470" tts:direction="ltr">Go ahead and get this turned and take
+<br />care.</p>
+    </div>
+  </body>
+</tt>

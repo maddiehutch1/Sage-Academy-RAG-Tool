@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>564875903 - 1_6ecnhaiz - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00" end="00:00:02.4" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:02.4" end="00:00:05.9" tts:direction="ltr">In this video, we're going to talk about
+<br/>data ecosystems.</p>
+        <p begin="00:00:05.9" end="00:00:08.2" tts:direction="ltr">What does this mean? Let's talk about it.</p>
+        <p begin="00:00:08.2" end="00:00:11.6" tts:direction="ltr">So when we're thinking about data
+<br/>ecosystems,</p>
+        <p begin="00:00:11.6" end="00:00:15.8" tts:direction="ltr">we are looking at a flow of information or
+<br/>of data.</p>
+        <p begin="00:00:15.8" end="00:00:19.8" tts:direction="ltr">This is a high level view, if you will,</p>
+        <p begin="00:00:19.8" end="00:00:21.1" tts:direction="ltr">of a data ecosystem,</p>
+        <p begin="00:00:21.1" end="00:00:24.3" tts:direction="ltr">and this isn't necessarily how every
+<br/>organization looks.</p>
+        <p begin="00:00:24.3" end="00:00:26.10" tts:direction="ltr">Rather, this is a nice blueprint or</p>
+        <p begin="00:00:26.10" end="00:00:30.5" tts:direction="ltr">a template for a data ecosystem. Let's
+<br/>step through this.</p>
+        <p begin="00:00:30.5" end="00:00:33.9" tts:direction="ltr">We're going to start up here in the upper
+<br/>left hand corner and think about</p>
+        <p begin="00:00:33.9" end="00:00:37.7" tts:direction="ltr">this as this maybe being you as a user,</p>
+        <p begin="00:00:37.7" end="00:00:41.2" tts:direction="ltr">potentially making some transactions.</p>
+        <p begin="00:00:41.2" end="00:00:45.4" tts:direction="ltr">So this was a pop quiz and I told you that</p>
+        <p begin="00:00:45.4" end="00:00:47.9" tts:direction="ltr">a company's blink are used to support</p>
+        <p begin="00:00:47.9" end="00:00:50.7" tts:direction="ltr">day to day transactions and are updated
+<br/>blank,</p>
+        <p begin="00:00:50.7" end="00:00:54.1" tts:direction="ltr">what would you think about in the context
+<br/>of a data ecosystem?</p>
+        <p begin="00:00:54.1" end="00:00:56.5" tts:direction="ltr">If this is you as the end user making</p>
+        <p begin="00:00:56.5" end="00:01:00.2" tts:direction="ltr">some purchase and this purchase is then
+<br/>going</p>
+        <p begin="00:01:00.2" end="00:01:07.8" tts:direction="ltr">into a company's blank that are used to
+<br/>support day to day transactions,</p>
+        <p begin="00:01:07.8" end="00:01:09.6" tts:direction="ltr">what would this blank be?</p>
+        <p begin="00:01:09.6" end="00:01:11.8" tts:direction="ltr">That would be operational databases.</p>
+        <p begin="00:01:11.8" end="00:01:15.6" tts:direction="ltr">A company's operational database is used
+<br/>to support day to</p>
+        <p begin="00:01:15.6" end="00:01:20.1" tts:direction="ltr">day transactions and are updated in real
+<br/>time.</p>
+        <p begin="00:01:20.1" end="00:01:25.3" tts:direction="ltr">If I'm going onto Amazon, making a
+<br/>purchase,</p>
+        <p begin="00:01:25.3" end="00:01:28.7" tts:direction="ltr">that is a transaction that's going to be
+<br/>tracked in real time</p>
+        <p begin="00:01:28.7" end="00:01:33.5" tts:direction="ltr">as update the inventory and get that order
+<br/>shipped out.</p>
+        <p begin="00:01:33.5" end="00:01:38.9" tts:direction="ltr">That is the second piece of our data
+<br/>ecosystem is those operational databases.</p>
+        <p begin="00:01:38.9" end="00:01:40.4" tts:direction="ltr">Me as an end user,</p>
+        <p begin="00:01:40.4" end="00:01:41.7" tts:direction="ltr">I make a purchase.</p>
+        <p begin="00:01:41.7" end="00:01:43.1" tts:direction="ltr">When I make that purchase,</p>
+        <p begin="00:01:43.1" end="00:01:45.4" tts:direction="ltr">it goes down into that operational
+<br/>database.</p>
+        <p begin="00:01:45.4" end="00:01:47.1" tts:direction="ltr">Let's give an example here.</p>
+        <p begin="00:01:47.1" end="00:01:51.1" tts:direction="ltr">Naturally, Say that I was really
+<br/>interested</p>
+        <p begin="00:01:51.1" end="00:01:55.10" tts:direction="ltr">in doing something like buying a tortilla
+<br/>blanket.</p>
+        <p begin="00:01:56.4" end="00:02:02.2" tts:direction="ltr">I have this tortilla blanket here and I
+<br/>say that with this tortilla blanket,</p>
+        <p begin="00:02:02.2" end="00:02:04.7" tts:direction="ltr">I'm going to purchase this tortilla
+<br/>blanket.</p>
+        <p begin="00:02:04.7" end="00:02:09.5" tts:direction="ltr">I have a screenshot over here of
+<br/>purchasing this tortilla blanket.</p>
+        <p begin="00:02:09.5" end="00:02:12.6" tts:direction="ltr">Now, once I purchase this blanket,</p>
+        <p begin="00:02:12.6" end="00:02:18.6" tts:direction="ltr">that purchase is going to be tracked here
+<br/>in my operational database.</p>
+        <p begin="00:02:18.6" end="00:02:23.6" tts:direction="ltr">This is me making that purchase tracked in
+<br/>that operational database.</p>
+        <p begin="00:02:23.6" end="00:02:30.9" tts:direction="ltr">Okay. Perfect. Then now that transaction
+<br/>is in my operational database,</p>
+        <p begin="00:02:30.9" end="00:02:32.4" tts:direction="ltr">we're going on to question number two,</p>
+        <p begin="00:02:32.4" end="00:02:35.3" tts:direction="ltr">which says a blink is a central repository
+<br/>for</p>
+        <p begin="00:02:35.3" end="00:02:37.6" tts:direction="ltr">all company data and may be</p>
+        <p begin="00:02:37.6" end="00:02:40.2" tts:direction="ltr">considered as the official source of data
+<br/>for the company.</p>
+        <p begin="00:02:40.2" end="00:02:43.2" tts:direction="ltr">Its primary purpose is to support blink.</p>
+        <p begin="00:02:43.2" end="00:02:49.1" tts:direction="ltr">What do we think about that? Central
+<br/>repository for all company data. Hmm.</p>
+        <p begin="00:02:49.1" end="00:02:51.7" tts:direction="ltr">So this is something that near and dear to
+<br/>my heart.</p>
+        <p begin="00:02:51.7" end="00:02:54.4" tts:direction="ltr">Yes, a data warehouse is near and dear to
+<br/>my heart.</p>
+        <p begin="00:02:54.4" end="00:02:56.6" tts:direction="ltr">But I teach a data warehousing class.</p>
+        <p begin="00:02:56.6" end="00:02:58.5" tts:direction="ltr">That's the other class that I teach.</p>
+        <p begin="00:02:58.5" end="00:03:01.1" tts:direction="ltr">It is the central repository for all data.</p>
+        <p begin="00:03:01.1" end="00:03:02.6" tts:direction="ltr">We're talking about how do</p>
+        <p begin="00:03:02.6" end="00:03:09.6" tts:direction="ltr">we design a data warehouse that supports
+<br/>the company's mission.</p>
+        <p begin="00:03:09.6" end="00:03:13.6" tts:direction="ltr">That's a really unique class to teach and
+<br/>it's really fun.</p>
+        <p begin="00:03:13.6" end="00:03:16.6" tts:direction="ltr">But it is all about how do we store</p>
+        <p begin="00:03:16.6" end="00:03:20.4" tts:direction="ltr">the organization's central repository of
+<br/>all of their data.</p>
+        <p begin="00:03:20.4" end="00:03:24.4" tts:direction="ltr">Its primary purpose is to support data
+<br/>analytics.</p>
+        <p begin="00:03:24.4" end="00:03:31.9" tts:direction="ltr">Once once we have that transaction tracked
+<br/>here in my operational database.</p>
+        <p begin="00:03:31.9" end="00:03:34.10" tts:direction="ltr">I bought the tortilla blanket.</p>
+        <p begin="00:03:34.10" end="00:03:39.9" tts:direction="ltr">That data then gets stored at some point
+<br/>into the data warehouse.</p>
+        <p begin="00:03:39.9" end="00:03:42.2" tts:direction="ltr">That may be that that data is being pulled
+<br/>from</p>
+        <p begin="00:03:42.2" end="00:03:46.3" tts:direction="ltr">that operational database to that data
+<br/>warehouse every hour.</p>
+        <p begin="00:03:46.3" end="00:03:48.9" tts:direction="ltr">It may be way more frequent than that.</p>
+        <p begin="00:03:48.9" end="00:03:50.6" tts:direction="ltr">It may be everyday at five,</p>
+        <p begin="00:03:50.6" end="00:03:54.5" tts:direction="ltr">it may be whatever the company's needs
+<br/>are.</p>
+        <p begin="00:03:54.5" end="00:03:57.2" tts:direction="ltr">It may be once a week on</p>
+        <p begin="00:03:57.2" end="00:04:00.2" tts:direction="ltr">a Saturday when the servers aren't busy
+<br/>doing other things.</p>
+        <p begin="00:04:00.2" end="00:04:02.1" tts:direction="ltr">It just depends.</p>
+        <p begin="00:04:02.1" end="00:04:03.8" tts:direction="ltr">But we're going to eventually pull</p>
+        <p begin="00:04:03.8" end="00:04:05.9" tts:direction="ltr">that data from the operational database
+<br/>into</p>
+        <p begin="00:04:05.9" end="00:04:10.3" tts:direction="ltr">the data warehouse as a central repository
+<br/>for our data, okay.</p>
+        <p begin="00:04:10.3" end="00:04:14.1" tts:direction="ltr">So an operational database versus a data
+<br/>warehouse.</p>
+        <p begin="00:04:14.1" end="00:04:16.5" tts:direction="ltr">Let's talk about those different just
+<br/>generally.</p>
+        <p begin="00:04:16.5" end="00:04:18.7" tts:direction="ltr">When we think about a data warehouse,</p>
+        <p begin="00:04:18.7" end="00:04:23.1" tts:direction="ltr">we are looking at data collected from a
+<br/>lot of different sources.</p>
+        <p begin="00:04:23.1" end="00:04:26.4" tts:direction="ltr">So a ton of different sources are going to
+<br/>be pulling in</p>
+        <p begin="00:04:26.4" end="00:04:29.7" tts:direction="ltr">data or we're going to be pulling data
+<br/>into that data warehouse.</p>
+        <p begin="00:04:29.7" end="00:04:32.6" tts:direction="ltr">Maybe it's a variety of different
+<br/>operational databases,</p>
+        <p begin="00:04:32.6" end="00:04:35.5" tts:direction="ltr">maybe it's a bunch of different reports
+<br/>that are coming in.</p>
+        <p begin="00:04:35.5" end="00:04:40" tts:direction="ltr">Maybe it's data coming from our customer
+<br/>service management tool.</p>
+        <p begin="00:04:40" end="00:04:42.1" tts:direction="ltr">It's a variety of different places.</p>
+        <p begin="00:04:42.1" end="00:04:45.9" tts:direction="ltr">Streaming data, we're going to capture
+<br/>data from in my data warehouse.</p>
+        <p begin="00:04:45.9" end="00:04:49" tts:direction="ltr">Again, that's my central repository for
+<br/>all data.</p>
+        <p begin="00:04:49" end="00:04:53.7" tts:direction="ltr">You're talking a ton of data stored in
+<br/>that data warehouse.</p>
+        <p begin="00:04:53.7" end="00:04:56.3" tts:direction="ltr">Operational databases though, you're</p>
+        <p begin="00:04:56.3" end="00:04:58.7" tts:direction="ltr">focusing more on just transaction
+<br/>processing,</p>
+        <p begin="00:04:58.7" end="00:05:00.7" tts:direction="ltr">there's transactions being made.</p>
+        <p begin="00:05:00.7" end="00:05:03.2" tts:direction="ltr">This is data captured as is</p>
+        <p begin="00:05:03.2" end="00:05:07" tts:direction="ltr">generally from a single source such as a
+<br/>transactional system.</p>
+        <p begin="00:05:08.5" end="00:05:12.5" tts:direction="ltr">This is really just looking at capturing
+<br/>that data</p>
+        <p begin="00:05:12.5" end="00:05:16.5" tts:direction="ltr">in those transactions where the data
+<br/>warehouse is focusing more on,</p>
+        <p begin="00:05:16.5" end="00:05:19.7" tts:direction="ltr">now that we're pulling all this data in
+<br/>from all these different sources,</p>
+        <p begin="00:05:19.7" end="00:05:22.1" tts:direction="ltr">we are going to now use it to run
+<br/>analytics,</p>
+        <p begin="00:05:22.1" end="00:05:23.3" tts:direction="ltr">to do reporting, to use big data.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p begin="00:05:23.3" end="00:05:28.7" tts:direction="ltr">Okay. Not only does an operational
+<br/>database and a data warehouse definitions,</p>
+        <p begin="00:05:28.7" end="00:05:30.9" tts:direction="ltr">they're different, their purposes are
+<br/>different.</p>
+        <p begin="00:05:30.9" end="00:05:32.5" tts:direction="ltr">They also look a little bit different.</p>
+        <p begin="00:05:32.5" end="00:05:34.7" tts:direction="ltr">Here's an entity relationship diagram.</p>
+        <p begin="00:05:34.7" end="00:05:38.1" tts:direction="ltr">You're familiar with these with an
+<br/>operational database.</p>
+        <p begin="00:05:38.1" end="00:05:40.8" tts:direction="ltr">This is a highly normalized schema.</p>
+        <p begin="00:05:40.8" end="00:05:44.2" tts:direction="ltr">That normalization is an entire process
+<br/>that you</p>
+        <p begin="00:05:44.2" end="00:05:47.5" tts:direction="ltr">go through in building a transactional
+<br/>database.</p>
+        <p begin="00:05:47.5" end="00:05:50.1" tts:direction="ltr">That's something that I expect you to know
+<br/>in this class.</p>
+        <p begin="00:05:50.1" end="00:05:53.4" tts:direction="ltr">I just want you to recognize that with
+<br/>this operational database,</p>
+        <p begin="00:05:53.4" end="00:05:56.10" tts:direction="ltr">we have here suppliers as related to
+<br/>products,</p>
+        <p begin="00:05:56.10" end="00:05:59.5" tts:direction="ltr">products as related to order details,</p>
+        <p begin="00:05:59.5" end="00:06:01.4" tts:direction="ltr">products as related to categories,</p>
+        <p begin="00:06:01.4" end="00:06:02.10" tts:direction="ltr">we have customers and orders related,</p>
+        <p begin="00:06:02.10" end="00:06:06.1" tts:direction="ltr">employees um, orders related and shippers
+<br/>are related.</p>
+        <p begin="00:06:06.1" end="00:06:11.4" tts:direction="ltr">If I wanted to query from suppliers on
+<br/>down to shippers,</p>
+        <p begin="00:06:11.4" end="00:06:14.3" tts:direction="ltr">I would have to query a five table join.</p>
+        <p begin="00:06:14.3" end="00:06:14.6" tts:direction="ltr">But conversely, if, for example,</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p begin="00:06:14.6" end="00:06:16.3" tts:direction="ltr">What does a data warehouse look like?</p>
+        <p begin="00:06:16.3" end="00:06:18.4" tts:direction="ltr">A data warehouse looks a little bit
+<br/>different.</p>
+        <p begin="00:06:18.4" end="00:06:21" tts:direction="ltr">There is a central fact table,</p>
+        <p begin="00:06:21" end="00:06:26.8" tts:direction="ltr">and then there's dimension tables to
+<br/>describe that fact.</p>
+        <p begin="00:06:26.8" end="00:06:32.1" tts:direction="ltr">A fact sales table holds my key
+<br/>performance indicators like,</p>
+        <p begin="00:06:32.1" end="00:06:34.8" tts:direction="ltr">Oh, hey, what was the quantity sold of a
+<br/>product,</p>
+        <p begin="00:06:34.8" end="00:06:37.2" tts:direction="ltr">the unit price, the sales amount, those
+<br/>things.</p>
+        <p begin="00:06:37.2" end="00:06:39.4" tts:direction="ltr">That's all held in my sales table.</p>
+        <p begin="00:06:39.4" end="00:06:43.9" tts:direction="ltr">Then that fact table is then related to
+<br/>DIM product,</p>
+        <p begin="00:06:43.9" end="00:06:47.7" tts:direction="ltr">to DIM salesperson, to DMD, things like
+<br/>that.</p>
+        <p begin="00:06:47.7" end="00:06:51.6" tts:direction="ltr">If I wanted to query a table and say,</p>
+        <p begin="00:06:51.6" end="00:06:54.8" tts:direction="ltr">Hey, I wanted to query from DIM product to
+<br/>fact sales.</p>
+        <p begin="00:06:54.8" end="00:06:57" tts:direction="ltr">We can see here that I'm only going to do,</p>
+        <p begin="00:06:57" end="00:06:58.7" tts:direction="ltr">maybe at max here,</p>
+        <p begin="00:06:58.7" end="00:07:00.10" tts:direction="ltr">write a three table join that way.</p>
+        <p begin="00:07:00.10" end="00:07:05.6" tts:direction="ltr">So you'll notice that oftentimes a star
+<br/>schema is going to</p>
+        <p begin="00:07:05.6" end="00:07:10.8" tts:direction="ltr">reduce the number of joins that you're
+<br/>going to be doing in your queries.</p>
+        <p begin="00:07:10.8" end="00:07:15.1" tts:direction="ltr">This is going to help your queries run
+<br/>significantly faster, right.</p>
+        <p begin="00:07:15.1" end="00:07:17.7" tts:direction="ltr">There's other benefits to data warehouses.</p>
+        <p begin="00:07:17.7" end="00:07:19.4" tts:direction="ltr">I could talk about this for a long time,</p>
+        <p begin="00:07:19.4" end="00:07:22.3" tts:direction="ltr">so I'm trying to not spend too much time
+<br/>here.</p>
+        <p begin="00:07:22.3" end="00:07:24.1" tts:direction="ltr">I just want you to know that there is a
+<br/>difference in</p>
+        <p begin="00:07:24.1" end="00:07:26.2" tts:direction="ltr">the way that they are designed and</p>
+        <p begin="00:07:26.2" end="00:07:30.2" tts:direction="ltr">there's a difference in their purpose and
+<br/>transactional databases,</p>
+        <p begin="00:07:30.2" end="00:07:32.4" tts:direction="ltr">data warehouses both have their place.</p>
+        <p begin="00:07:32.4" end="00:07:35.9" tts:direction="ltr">They just have different purposes, okay?
+<br/>All right.</p>
+        <p begin="00:07:35.9" end="00:07:37.7" tts:direction="ltr">Back to my tortilla blanket.</p>
+        <p begin="00:07:37.7" end="00:07:41.10" tts:direction="ltr">I know I had you on the edge of your seat
+<br/>about this tortilla blanket.</p>
+        <p begin="00:07:41.10" end="00:07:45.1" tts:direction="ltr">When I'm checking out this tortilla
+<br/>blanket,</p>
+        <p begin="00:07:45.1" end="00:07:47.9" tts:direction="ltr">I'm buying this tortilla blanket?</p>
+        <p begin="00:07:47.9" end="00:07:49.9" tts:direction="ltr">I already bought it, and then it says,</p>
+        <p begin="00:07:49.9" end="00:07:51.7" tts:direction="ltr">Hey, make sure to buy it with,</p>
+        <p begin="00:07:51.7" end="00:07:54.1" tts:direction="ltr">and it gives me other options of things
+<br/>like</p>
+        <p begin="00:07:54.1" end="00:07:58.3" tts:direction="ltr">this giant breadstick looking pillow,</p>
+        <p begin="00:07:58.3" end="00:08:01.1" tts:direction="ltr">and then maybe some other blanket.</p>
+        <p begin="00:08:01.1" end="00:08:03" tts:direction="ltr">This buy it with,</p>
+        <p begin="00:08:03" end="00:08:05.8" tts:direction="ltr">why does Amazon do that or</p>
+        <p begin="00:08:05.8" end="00:08:09.9" tts:direction="ltr">products related to this or whatever? Why
+<br/>does it do it?</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:08:09.9" end="00:08:14.7" tts:direction="ltr">The reason that it does it is because
+<br/>these are products that have been</p>
+        <p begin="00:08:14.7" end="00:08:22.2" tts:direction="ltr">purchased by customers who also purchased
+<br/>looked at this tortilla blanket.</p>
+        <p begin="00:08:22.2" end="00:08:25.5" tts:direction="ltr">We call this a market basket analysis.</p>
+        <p begin="00:08:25.5" end="00:08:28.6" tts:direction="ltr">What a market basket analysis does is it
+<br/>says, Hey,</p>
+        <p begin="00:08:28.6" end="00:08:31.4" tts:direction="ltr">if I know a customers purchased this
+<br/>product,</p>
+        <p begin="00:08:31.4" end="00:08:34.4" tts:direction="ltr">how much more likely are they to purchase
+<br/>this other product?</p>
+        <p begin="00:08:34.4" end="00:08:37.2" tts:direction="ltr">This is how a lot of grocery stores are
+<br/>designed.</p>
+        <p begin="00:08:37.2" end="00:08:39.7" tts:direction="ltr">You walk into a grocery store,</p>
+        <p begin="00:08:39.7" end="00:08:44.2" tts:direction="ltr">and peanut butter and jelly are going to
+<br/>be right next to each other.</p>
+        <p begin="00:08:44.2" end="00:08:45.6" tts:direction="ltr">If I buy peanut butter,</p>
+        <p begin="00:08:45.6" end="00:08:47.8" tts:direction="ltr">I'm X amount more likely to buy jelly.</p>
+        <p begin="00:08:47.8" end="00:08:49.5" tts:direction="ltr">We can do that analysis.</p>
+        <p begin="00:08:49.5" end="00:08:52.8" tts:direction="ltr">That's why the grocery stores</p>
+        <p begin="00:08:52.8" end="00:08:55.7" tts:direction="ltr">are designed the way they are has to do a
+<br/>lot with what do</p>
+        <p begin="00:08:55.7" end="00:09:02.6" tts:direction="ltr">people purchase together in their basket
+<br/>of purchases, if you will.</p>
+        <p begin="00:09:02.6" end="00:09:04.5" tts:direction="ltr">What are they purchasing together?</p>
+        <p begin="00:09:04.5" end="00:09:09.3" tts:direction="ltr">So this helps Amazon potentially increase
+<br/>sales by saying, Hey,</p>
+        <p begin="00:09:09.3" end="00:09:11.7" tts:direction="ltr">you might also be interested in this
+<br/>because</p>
+        <p begin="00:09:11.7" end="00:09:15.6" tts:direction="ltr">other customers who have bought or
+<br/>potentially looked at,</p>
+        <p begin="00:09:15.6" end="00:09:17.8" tts:direction="ltr">but let's say bought the product you're
+<br/>looking</p>
+        <p begin="00:09:17.8" end="00:09:20.5" tts:direction="ltr">at or have bought also bought these
+<br/>things, okay?</p>
+        <p begin="00:09:20.5" end="00:09:23.8" tts:direction="ltr">So it's also called association rules.</p>
+        <p begin="00:09:23.8" end="00:09:25.1" tts:direction="ltr">So we try and say, Hey,</p>
+        <p begin="00:09:25.1" end="00:09:26.3" tts:direction="ltr">if you are going to buy this,</p>
+        <p begin="00:09:26.3" end="00:09:27.10" tts:direction="ltr">how much more likely are you to buy this,</p>
+        <p begin="00:09:27.10" end="00:09:30.5" tts:direction="ltr">and we're going to market to that
+<br/>strength,</p>
+        <p begin="00:09:30.5" end="00:09:33.3" tts:direction="ltr">okay? Perfect. All right.</p>
+        <p begin="00:09:33.3" end="00:09:36.1" tts:direction="ltr">Um, the process of copying data from</p>
+        <p begin="00:09:36.1" end="00:09:39.3" tts:direction="ltr">an operational database to the data
+<br/>warehouse is called,</p>
+        <p begin="00:09:39.3" end="00:09:42.8" tts:direction="ltr">um, extract, transform and load.</p>
+        <p begin="00:09:42.8" end="00:09:46" tts:direction="ltr">ETL, sometimes people will call ELT,</p>
+        <p begin="00:09:46" end="00:09:47.5" tts:direction="ltr">extract load and transform,</p>
+        <p begin="00:09:47.5" end="00:09:50.5" tts:direction="ltr">but generally, we're going to call that
+<br/>extract, transform and load.</p>
+        <p begin="00:09:50.5" end="00:09:52.3" tts:direction="ltr">That means that we are going to</p>
+        <p begin="00:09:52.3" end="00:09:56.1" tts:direction="ltr">extract the data from that transactional
+<br/>database,</p>
+        <p begin="00:09:56.1" end="00:10:01.5" tts:direction="ltr">transform it in a way that matches the
+<br/>structure of the data warehouse.</p>
+        <p begin="00:10:01.5" end="00:10:03.3" tts:direction="ltr">They're designed differently.</p>
+        <p begin="00:10:03.3" end="00:10:06.9" tts:direction="ltr">What do we need to do to that data to
+<br/>transform it</p>
+        <p begin="00:10:06.9" end="00:10:10.5" tts:direction="ltr">in a then we can place it inside of the
+<br/>data warehouse.</p>
+        <p begin="00:10:10.5" end="00:10:13.4" tts:direction="ltr">It may be things simple as we need to</p>
+        <p begin="00:10:13.4" end="00:10:16.8" tts:direction="ltr">if there's a date I'm pulling from the
+<br/>transaction database,</p>
+        <p begin="00:10:16.8" end="00:10:19.4" tts:direction="ltr">I may need to do a command and SQL,</p>
+        <p begin="00:10:19.4" end="00:10:20.9" tts:direction="ltr">which we could teach you.</p>
+        <p begin="00:10:20.9" end="00:10:22.9" tts:direction="ltr">That is, hey, let's pull out what was</p>
+        <p begin="00:10:22.9" end="00:10:25.7" tts:direction="ltr">the day of the week that that was
+<br/>purchased on.</p>
+        <p begin="00:10:25.7" end="00:10:28.3" tts:direction="ltr">We're transforming the data to then load
+<br/>it</p>
+        <p begin="00:10:28.3" end="00:10:31.3" tts:direction="ltr">into the data warehouse for further
+<br/>analysis.</p>
+        <p begin="00:10:31.3" end="00:10:35.2" tts:direction="ltr">This usually happens periodically at
+<br/>specified intervals.</p>
+        <p begin="00:10:35.2" end="00:10:37.8" tts:direction="ltr">That's what we were talking about earlier
+<br/>is that data comes from</p>
+        <p begin="00:10:37.8" end="00:10:41.5" tts:direction="ltr">that transactional database to that data
+<br/>warehouse through ETL.</p>
+        <p begin="00:10:41.5" end="00:10:44.8" tts:direction="ltr">Sometimes that comes super frequently,</p>
+        <p begin="00:10:45.2" end="00:10:47.3" tts:direction="ltr">it's in high demand.</p>
+        <p begin="00:10:47.3" end="00:10:49.6" tts:direction="ltr">Other times, maybe that data is only being
+<br/>pulled,</p>
+        <p begin="00:10:49.6" end="00:10:54.4" tts:direction="ltr">say once a week or whatever the company
+<br/>needs, okay.</p>
+        <p begin="00:10:54.4" end="00:10:57.5" tts:direction="ltr">So we use ETL to</p>
+        <p begin="00:10:57.5" end="00:11:00.5" tts:direction="ltr">pull data from the operational database
+<br/>into the data warehouse.</p>
+        <p begin="00:11:00.5" end="00:11:03" tts:direction="ltr">And then, again, this is that process.</p>
+        <p begin="00:11:03" end="00:11:06" tts:direction="ltr">So we extract the data, we transform it.</p>
+        <p begin="00:11:06" end="00:11:08.7" tts:direction="ltr">Maybe again, that's pulling certain things
+<br/>out of the dataset.</p>
+        <p begin="00:11:08.7" end="00:11:10.6" tts:direction="ltr">If I have a given date, let's look at</p>
+        <p begin="00:11:10.6" end="00:11:13.7" tts:direction="ltr">what was the actual day of the week of
+<br/>that purchase.</p>
+        <p begin="00:11:14.8" end="00:11:17.8" tts:direction="ltr">Next to that date in the data warehouse,</p>
+        <p begin="00:11:17.8" end="00:11:19.5" tts:direction="ltr">we're going to make sure we have another
+<br/>field</p>
+        <p begin="00:11:19.5" end="00:11:21.1" tts:direction="ltr">that tells them the day of the week.</p>
+        <p begin="00:11:21.1" end="00:11:23.5" tts:direction="ltr">And then we're going to load it into that
+<br/>data warehouse,</p>
+        <p begin="00:11:23.5" end="00:11:26.7" tts:direction="ltr">and then finally, we're going to do
+<br/>analytics.</p>
+        <p begin="00:11:26.7" end="00:11:30.1" tts:direction="ltr">From when we are doing analytics,
+<br/>generally,</p>
+        <p begin="00:11:30.1" end="00:11:34.3" tts:direction="ltr">we use a data mat and the Damt contains
+<br/>subsets of the data</p>
+        <p begin="00:11:34.3" end="00:11:36.7" tts:direction="ltr">in the data warehouse and are typically
+<br/>used</p>
+        <p begin="00:11:36.7" end="00:11:39.5" tts:direction="ltr">for analytics by certain functional areas
+<br/>within the company.</p>
+        <p begin="00:11:39.5" end="00:11:42.2" tts:direction="ltr">Some people call them data mats, others
+<br/>don't,</p>
+        <p begin="00:11:42.2" end="00:11:45.4" tts:direction="ltr">but it's this general idea of just
+<br/>grabbing</p>
+        <p begin="00:11:45.4" end="00:11:46.5" tts:direction="ltr">a subset of the data of</p>
+        <p begin="00:11:46.5" end="00:11:49.1" tts:direction="ltr">the data warehouse so you don't have
+<br/>access to all of it,</p>
+        <p begin="00:11:49.1" end="00:11:51.6" tts:direction="ltr">because if you're saying looking
+<br/>specifically,</p>
+        <p begin="00:11:51.6" end="00:11:54.9" tts:direction="ltr">you're working for the marketing
+<br/>department and you</p>
+        <p begin="00:11:54.9" end="00:11:58.7" tts:direction="ltr">need a fraction of that data in the data
+<br/>warehouse,</p>
+        <p begin="00:11:58.7" end="00:12:01.6" tts:direction="ltr">then potentially that would just become a
+<br/>data mat.</p>
+        <p begin="00:12:01.6" end="00:12:05.10" tts:direction="ltr">Um, so we then push that data to the data
+<br/>mat.</p>
+        <p begin="00:12:05.10" end="00:12:08.1" tts:direction="ltr">A data warehouse is a centralized,</p>
+        <p begin="00:12:08.1" end="00:12:10.2" tts:direction="ltr">multiple subjects integrated together.</p>
+        <p begin="00:12:10.2" end="00:12:13" tts:direction="ltr">Again, that's our central repository for
+<br/>all of our data.</p>
+        <p begin="00:12:13" end="00:12:14.5" tts:direction="ltr">It's organization wide.</p>
+        <p begin="00:12:14.5" end="00:12:16.2" tts:direction="ltr">There's tons of data sources.</p>
+        <p begin="00:12:16.2" end="00:12:19.6" tts:direction="ltr">A Dat is generally decentralized.</p>
+        <p begin="00:12:19.6" end="00:12:22.5" tts:direction="ltr">It's a specific subject area specifically</p>
+        <p begin="00:12:22.5" end="00:12:25.7" tts:direction="ltr">for certain marketing things you're doing.</p>
+        <p begin="00:12:25.7" end="00:12:29.9" tts:direction="ltr">It's a single maybe department that is
+<br/>caring about that data,</p>
+        <p begin="00:12:29.9" end="00:12:33.7" tts:direction="ltr">and it's a lot smaller set of data.</p>
+        <p begin="00:12:33.7" end="00:12:38.1" tts:direction="ltr">Perfect. Finally, we have our analytics
+<br/>and BI tools.</p>
+        <p begin="00:12:38.1" end="00:12:40.7" tts:direction="ltr">This allows for data manipulations,
+<br/>calculations,</p>
+        <p begin="00:12:40.7" end="00:12:44.2" tts:direction="ltr">statistical analysis, and visualization of
+<br/>data.</p>
+        <p begin="00:12:44.2" end="00:12:46.2" tts:direction="ltr">What I want you to think about this when
+<br/>we're thinking</p>
+        <p begin="00:12:46.2" end="00:12:50.4" tts:direction="ltr">about using a BI tool to perform
+<br/>calculations,</p>
+        <p begin="00:12:50.4" end="00:12:51.10" tts:direction="ltr">I hope you're like, Well, Reagan,</p>
+        <p begin="00:12:51.10" end="00:12:56.5" tts:direction="ltr">we performed calculations in Excel and you
+<br/>absolutely did.</p>
+        <p begin="00:12:56.5" end="00:13:00.5" tts:direction="ltr">An example of analytics and BI tools that
+<br/>could potentially</p>
+        <p begin="00:13:00.5" end="00:13:03.10" tts:direction="ltr">be used there from that data mat are
+<br/>things like Excel,</p>
+        <p begin="00:13:03.10" end="00:13:07.1" tts:direction="ltr">Power BI, Tableau, Python, Domo.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p begin="00:13:07.1" end="00:13:09.4" tts:direction="ltr">We will loop back around to Excel here in</p>
+        <p begin="00:13:09.4" end="00:13:13.7" tts:direction="ltr">the next few weeks in this semester after
+<br/>Python.</p>
+        <p begin="00:13:13.7" end="00:13:15.9" tts:direction="ltr">Then we'll also make sure that we talk a</p>
+        <p begin="00:13:15.9" end="00:13:17.8" tts:direction="ltr">lot about data visualization in Excel.</p>
+        <p begin="00:13:17.8" end="00:13:20.5" tts:direction="ltr">We're going to use Excel as a BI tool.</p>
+        <p begin="00:13:20.5" end="00:13:24.6" tts:direction="ltr">Power BI is a data visualization tool
+<br/>provided by Microsoft.</p>
+        <p begin="00:13:24.6" end="00:13:26.3" tts:direction="ltr">It's a fantastic tool.</p>
+        <p begin="00:13:26.3" end="00:13:27.6" tts:direction="ltr">Same thing with Tableau,</p>
+        <p begin="00:13:27.6" end="00:13:29.6" tts:direction="ltr">we're going to talk about data
+<br/>visualization in this class.</p>
+        <p begin="00:13:29.6" end="00:13:31.9" tts:direction="ltr">These two are fantastic for that.</p>
+        <p begin="00:13:31.9" end="00:13:34.4" tts:direction="ltr">Python, we're going to learn as well,</p>
+        <p begin="00:13:34.4" end="00:13:37.10" tts:direction="ltr">and then Domo is another data
+<br/>visualization tool as well.</p>
+        <p begin="00:13:37.10" end="00:13:40.2" tts:direction="ltr">All three of these have other
+<br/>capabilities,</p>
+        <p begin="00:13:40.2" end="00:13:44.4" tts:direction="ltr">but that's one of their primary uses. All
+<br/>right.</p>
+        <p begin="00:13:44.4" end="00:13:48.1" tts:direction="ltr">Finally, here we have enterprise resource
+<br/>planning systems,</p>
+        <p begin="00:13:48.1" end="00:13:49.6" tts:direction="ltr">which you read about in your textbook.</p>
+        <p begin="00:13:49.6" end="00:13:53.9" tts:direction="ltr">These are large software applications
+<br/>intended to centralize data collection,</p>
+        <p begin="00:13:53.9" end="00:13:56.5" tts:direction="ltr">storage, and reporting for an
+<br/>organization.</p>
+        <p begin="00:13:56.5" end="00:13:59.9" tts:direction="ltr">They are typically built as a set of
+<br/>functional modules.</p>
+        <p begin="00:13:59.9" end="00:14:02.5" tts:direction="ltr">This is something that an organization
+<br/>would go out and</p>
+        <p begin="00:14:02.5" end="00:14:06.2" tts:direction="ltr">purchase these large software applications
+<br/>to use.</p>
+        <p begin="00:14:06.2" end="00:14:13.6" tts:direction="ltr">Here's major enterprise resource planning
+<br/>systems include things like Oracle,</p>
+        <p begin="00:14:13.6" end="00:14:17.3" tts:direction="ltr">Microsoft Dynamics, SAP, things like that.</p>
+        <p begin="00:14:17.3" end="00:14:20.9" tts:direction="ltr">Okay? There's lots of different modules.</p>
+        <p begin="00:14:20.9" end="00:14:23.5" tts:direction="ltr">But for example, an organization could go
+<br/>in and say,</p>
+        <p begin="00:14:23.5" end="00:14:25.5" tts:direction="ltr">Hey, we need help with inventory
+<br/>management.</p>
+        <p begin="00:14:25.5" end="00:14:29.8" tts:direction="ltr">We're just going to purchase this module
+<br/>within this ERP system.</p>
+        <p begin="00:14:29.8" end="00:14:32.10" tts:direction="ltr">But then, now we need order management, we
+<br/>need warehouse management.</p>
+        <p begin="00:14:32.10" end="00:14:36.10" tts:direction="ltr">You can pick and choose what capabilities
+<br/>you need.</p>
+        <p begin="00:14:36.10" end="00:14:40.6" tts:direction="ltr">Now, there's a lot of good things and
+<br/>there's a lot of good things and</p>
+        <p begin="00:14:40.6" end="00:14:46.4" tts:direction="ltr">some negatives about I always want to say
+<br/>entity resource planning.</p>
+        <p begin="00:14:46.4" end="00:14:49" tts:direction="ltr">Because I think entity relationship
+<br/>diagram.</p>
+        <p begin="00:14:49" end="00:14:51.7" tts:direction="ltr">Enterprise resource planning systems</p>
+        <p begin="00:14:51.7" end="00:14:55.1" tts:direction="ltr">they are handy to be able to just buy
+<br/>certain modules,</p>
+        <p begin="00:14:55.1" end="00:14:58.5" tts:direction="ltr">but they're not necessarily customized to
+<br/>your organization.</p>
+        <p begin="00:14:58.5" end="00:15:00.6" tts:direction="ltr">They're going to be more out of</p>
+        <p begin="00:15:00.6" end="00:15:03.6" tts:direction="ltr">the box software that you're going to need
+<br/>to be able to</p>
+        <p begin="00:15:03.6" end="00:15:08" tts:direction="ltr">adapt to for your organization. There you
+<br/>have it.</p>
+        <p begin="00:15:08" end="00:15:12.5" tts:direction="ltr">Those enterprise resource planning are a
+<br/>lot of</p>
+        <p begin="00:15:12.5" end="00:15:17.3" tts:direction="ltr">ways that a lot of organizations can
+<br/>handle that data ecosystem.</p>
+        <p begin="00:15:17.3" end="00:15:20.5" tts:direction="ltr">Um, and they allow us again</p>
+        <p begin="00:15:20.5" end="00:15:24.1" tts:direction="ltr">to centralize all data collection,
+<br/>storage, and reporting.</p>
+        <p begin="00:15:24.1" end="00:15:27.5" tts:direction="ltr">I hope you've enjoyed this discussion
+<br/>today as we've looked</p>
+        <p begin="00:15:27.5" end="00:15:31.1" tts:direction="ltr">at the data ecosystem. It's been a fun
+<br/>one.</p>
+        <p begin="00:15:31.1" end="00:15:35.3" tts:direction="ltr">Again, just keep in mind here that this is
+<br/>a nice blueprint for organizations.</p>
+        <p begin="00:15:35.3" end="00:15:38.5" tts:direction="ltr">This isn't necessarily how every
+<br/>organization exactly looks,</p>
+        <p begin="00:15:38.5" end="00:15:40" tts:direction="ltr">but in some way,</p>
+        <p begin="00:15:40" end="00:15:43.8" tts:direction="ltr">they are applying these principles that we
+<br/>are talking here today.</p>
+        <p begin="00:15:43.8" end="00:15:46.9" tts:direction="ltr">I hope you've enjoyed it. Take care,
+<br/>everybody.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>560857612 - 1_qgd2cws2 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.280" end="00:00:03.159" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:03.159" end="00:00:05.080" tts:direction="ltr">In this video, we are going to work
+<br />through</p>
+        <p begin="00:00:05.080" end="00:00:09.720" tts:direction="ltr">the in class assignment multitable queries
+<br />and manipulating database data.</p>
+        <p begin="00:00:09.720" end="00:00:13.840" tts:direction="ltr">Now, if you have not tried to complete
+<br />this in class assignment on your own,</p>
+        <p begin="00:00:13.840" end="00:00:17.359" tts:direction="ltr">please pause the video and go and try and
+<br />complete it on your own.</p>
+        <p begin="00:00:17.359" end="00:00:20.559" tts:direction="ltr">Then come back and see what you did and
+<br />did</p>
+        <p begin="00:00:20.559" end="00:00:24.519" tts:direction="ltr">not understand and compare your knowledge
+<br />with the video.</p>
+        <p begin="00:00:24.519" end="00:00:28.279" tts:direction="ltr">Of course, feel free to reach out and ask
+<br />any questions.</p>
+        <p begin="00:00:28.279" end="00:00:31.399" tts:direction="ltr">But it's really helpful for you to try
+<br />this on your</p>
+        <p begin="00:00:31.399" end="00:00:35.149" tts:direction="ltr">own and then reach out to us. And watch
+<br />the video.</p>
+        <p begin="00:00:35.149" end="00:00:37.349" tts:direction="ltr">Go ahead and try that out.</p>
+        <p begin="00:00:37.349" end="00:00:39.949" tts:direction="ltr">I've assumed at this point that you've
+<br />already</p>
+        <p begin="00:00:39.949" end="00:00:42.310" tts:direction="ltr">tried to complete this in class
+<br />assignment.</p>
+        <p begin="00:00:42.310" end="00:00:47.549" tts:direction="ltr">I'm going to go ahead and go to the
+<br />beekeeper studio.</p>
+        <p begin="00:00:47.549" end="00:00:50.070" tts:direction="ltr">Now, in this in class assignment,</p>
+        <p begin="00:00:50.070" end="00:00:52.429" tts:direction="ltr">I have asked you to use</p>
+        <p begin="00:00:52.429" end="00:00:56.069" tts:direction="ltr">the personal database file that we already
+<br />talked about.</p>
+        <p begin="00:00:56.069" end="00:01:00.029" tts:direction="ltr">Now, if you need any refresher on that,</p>
+        <p begin="00:01:00.029" end="00:01:03.229" tts:direction="ltr">what I mean by that is a personal database
+<br />file is</p>
+        <p begin="00:01:03.229" end="00:01:04.869" tts:direction="ltr">a downloaded version of</p>
+        <p begin="00:01:04.869" end="00:01:09.349" tts:direction="ltr">our Overland ski resort database that is
+<br />hosted on AWS.</p>
+        <p begin="00:01:09.349" end="00:01:15.250" tts:direction="ltr">The reason that you have the personal
+<br />database file is that you cannot update,</p>
+        <p begin="00:01:15.250" end="00:01:20.330" tts:direction="ltr">insert, delete records of the version that
+<br />everybody is using on AWS.</p>
+        <p begin="00:01:20.330" end="00:01:22.529" tts:direction="ltr">We don't want 500 students having</p>
+        <p begin="00:01:22.529" end="00:01:25.569" tts:direction="ltr">the option to update and delete records of
+<br />data.</p>
+        <p begin="00:01:25.569" end="00:01:28.329" tts:direction="ltr">As such, we've asked you to download this
+<br />file.</p>
+        <p begin="00:01:28.329" end="00:01:30.930" tts:direction="ltr">Again, it's the exact same copy.</p>
+        <p begin="00:01:30.930" end="00:01:34.170" tts:direction="ltr">You just need to go file new window,</p>
+        <p begin="00:01:34.170" end="00:01:36.169" tts:direction="ltr">and then you'll click on</p>
+        <p begin="00:01:36.169" end="00:01:42.600" tts:direction="ltr">a Connection type will be SQL light and
+<br />you would browse out to the file,</p>
+        <p begin="00:01:42.600" end="00:01:49.079" tts:direction="ltr">the overland SQL database file just like
+<br />this and click on that and then</p>
+        <p begin="00:01:49.079" end="00:01:57.440" tts:direction="ltr">say name it and I named mine the personal
+<br />database and say connect and save.</p>
+        <p begin="00:01:57.440" end="00:02:01.319" tts:direction="ltr">That's what I have done and that's what we
+<br />did in a prior video.</p>
+        <p begin="00:02:01.319" end="00:02:04.360" tts:direction="ltr">But if you need any help, there's a quick
+<br />refresher.</p>
+        <p begin="00:02:04.360" end="00:02:07.079" tts:direction="ltr">This database file again is an exact copy.</p>
+        <p begin="00:02:07.079" end="00:02:11.145" tts:direction="ltr">I'm going to use it to do the entire in
+<br />class assignment.</p>
+        <p begin="00:02:11.145" end="00:02:13.890" tts:direction="ltr">I would recommend that you do so as well.</p>
+        <p begin="00:02:13.890" end="00:02:18.050" tts:direction="ltr">If you use the other version that we've
+<br />been using,</p>
+        <p begin="00:02:18.050" end="00:02:20.529" tts:direction="ltr">just the one that's hosted on AWS,</p>
+        <p begin="00:02:20.529" end="00:02:23.450" tts:direction="ltr">the one you've been querying the whole
+<br />time, that's just fine.</p>
+        <p begin="00:02:23.450" end="00:02:27.130" tts:direction="ltr">You need to make sure that you have number
+<br />seven,</p>
+        <p begin="00:02:27.130" end="00:02:29.330" tts:direction="ltr">you have that downloaded version of</p>
+        <p begin="00:02:29.330" end="00:02:32.690" tts:direction="ltr">the database to be able to complete it
+<br />because you cannot</p>
+        <p begin="00:02:32.690" end="00:02:38.969" tts:direction="ltr">make changes in the other version of the
+<br />database that's hosted on AWS,</p>
+        <p begin="00:02:38.969" end="00:02:41.889" tts:direction="ltr">you must be in the SQL light version.</p>
+        <p begin="00:02:41.889" end="00:02:44.825" tts:direction="ltr">Just keep that in mind here.</p>
+        <p begin="00:02:44.825" end="00:02:49.159" tts:direction="ltr">That you can do questions one through six
+<br />on the prior connection,</p>
+        <p begin="00:02:49.159" end="00:02:50.800" tts:direction="ltr">but you're going to need that downloaded</p>
+        <p begin="00:02:50.800" end="00:02:52.640" tts:direction="ltr">version of the database to do number
+<br />seven.</p>
+        <p begin="00:02:52.640" end="00:02:56.239" tts:direction="ltr">I'm just going to do all of these with the
+<br />downloaded version</p>
+        <p begin="00:02:56.239" end="00:02:58.120" tts:direction="ltr">because it's the exact same data and I</p>
+        <p begin="00:02:58.120" end="00:03:00.760" tts:direction="ltr">don't want to have to change my connection
+<br />midway through.</p>
+        <p begin="00:03:00.760" end="00:03:04.200" tts:direction="ltr">So let's go ahead and take a look at
+<br />number one.</p>
+        <p begin="00:03:04.200" end="00:03:07.919" tts:direction="ltr">So for each guest with a first name
+<br />containing letters fill,</p>
+        <p begin="00:03:07.919" end="00:03:10.560" tts:direction="ltr">show the guests full name and household
+<br />income.</p>
+        <p begin="00:03:10.560" end="00:03:14.360" tts:direction="ltr">Or results from the highest household
+<br />income to the lowest.</p>
+        <p begin="00:03:14.360" end="00:03:16.080" tts:direction="ltr">So let's go ahead and do this.</p>
+        <p begin="00:03:16.080" end="00:03:19.000" tts:direction="ltr">When I am thinking about the first name
+<br />containing</p>
+        <p begin="00:03:19.000" end="00:03:22.680" tts:direction="ltr">letters fill and the household income,
+<br />let's take a look.</p>
+        <p begin="00:03:22.680" end="00:03:27.640" tts:direction="ltr">I know that I'm going to be queering my
+<br />guest table for the first name</p>
+        <p begin="00:03:27.640" end="00:03:30.560" tts:direction="ltr">containing letters fill and</p>
+        <p begin="00:03:30.560" end="00:03:33.920" tts:direction="ltr">the household table for that household
+<br />income data.</p>
+        <p begin="00:03:33.920" end="00:03:38.400" tts:direction="ltr">So I'm going to go ahead and here and do a
+<br />quick select star.</p>
+        <p begin="00:03:38.400" end="00:03:40.880" tts:direction="ltr">And then I'm going to do from,</p>
+        <p begin="00:03:40.880" end="00:03:46.240" tts:direction="ltr">and I'm going to start with guest as G,
+<br />then hit Enter,</p>
+        <p begin="00:03:46.240" end="00:03:55.679" tts:direction="ltr">guest as G. Then I'm going to hit Enter
+<br />and tab and do Join household.</p>
+        <p begin="00:03:55.679" end="00:04:02.679" tts:direction="ltr">As H, and then I'm joining those two
+<br />tables.</p>
+        <p begin="00:04:02.679" end="00:04:04.320" tts:direction="ltr">Now what I need to do is</p>
+        <p begin="00:04:04.320" end="00:04:07.120" tts:direction="ltr">figure out what is that primary foreign
+<br />key relationship.</p>
+        <p begin="00:04:07.120" end="00:04:10.640" tts:direction="ltr">If I go over here, I know that the
+<br />household ID is coming from</p>
+        <p begin="00:04:10.640" end="00:04:14.960" tts:direction="ltr">the household table into the guest table
+<br />as the foreign key.</p>
+        <p begin="00:04:14.960" end="00:04:17.319" tts:direction="ltr">That's the column I'm going to match on.</p>
+        <p begin="00:04:17.319" end="00:04:21.480" tts:direction="ltr">The household ID must be equal to the
+<br />household ID in the guest table,</p>
+        <p begin="00:04:21.480" end="00:04:25.400" tts:direction="ltr">must be equal to the household ID in the
+<br />household table.</p>
+        <p begin="00:04:25.400" end="00:04:27.839" tts:direction="ltr">The householdD in the guest table and the
+<br />household in</p>
+        <p begin="00:04:27.839" end="00:04:31.439" tts:direction="ltr">the household table must be equal to each
+<br />other to return in my output.</p>
+        <p begin="00:04:31.439" end="00:04:38.760" tts:direction="ltr">This is how we basically line up everybody
+<br />with their proper household.</p>
+        <p begin="00:04:38.760" end="00:04:40.639" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:04:40.639" end="00:04:46.159" tts:direction="ltr">there was a problem, no law here. Let's
+<br />zoom out.</p>
+        <p begin="00:04:46.320" end="00:04:50.559" tts:direction="ltr">Near G from guest.</p>
+        <p begin="00:04:53.680" end="00:04:56.719" tts:direction="ltr">Oh, I missed my on.</p>
+        <p begin="00:04:56.719" end="00:05:02.240" tts:direction="ltr">I'm going to say on dot household ID equal
+<br />to dot household ID.</p>
+        <p begin="00:05:02.240" end="00:05:04.759" tts:direction="ltr">Some of you probably already figured that
+<br />one</p>
+        <p begin="00:05:04.759" end="00:05:07.789" tts:direction="ltr">out as I ran that nice work. Okay.</p>
+        <p begin="00:05:07.789" end="00:05:10.219" tts:direction="ltr">So here we have it. Now we have all of</p>
+        <p begin="00:05:10.219" end="00:05:13.780" tts:direction="ltr">my guest information coming from guest is
+<br />included.</p>
+        <p begin="00:05:13.780" end="00:05:18.380" tts:direction="ltr">All my guest info is from my guest ID over
+<br />to EDU.</p>
+        <p begin="00:05:18.380" end="00:05:20.739" tts:direction="ltr">That's all guest information and from</p>
+        <p begin="00:05:20.739" end="00:05:24.020" tts:direction="ltr">household ID and on is from my household
+<br />table.</p>
+        <p begin="00:05:24.020" end="00:05:28.860" tts:direction="ltr">Now I only want to see guests with the
+<br />first name containing letters fill.</p>
+        <p begin="00:05:28.860" end="00:05:30.499" tts:direction="ltr">Now I'm going to add in here my where</p>
+        <p begin="00:05:30.499" end="00:05:32.939" tts:direction="ltr">clause is going to line up directly with
+<br />the from,</p>
+        <p begin="00:05:32.939" end="00:05:35.579" tts:direction="ltr">and I'm going to say where first name,</p>
+        <p begin="00:05:35.579" end="00:05:37.939" tts:direction="ltr">and again, it contains the letters fill.</p>
+        <p begin="00:05:37.939" end="00:05:39.500" tts:direction="ltr">It's not equal to fill.</p>
+        <p begin="00:05:39.500" end="00:05:44.679" tts:direction="ltr">We say where first name like Single
+<br />quotation mark,</p>
+        <p begin="00:05:44.679" end="00:05:48.399" tts:direction="ltr">percentage sign fill percentage sign.</p>
+        <p begin="00:05:48.399" end="00:05:52.199" tts:direction="ltr">Awesome. Now I'm going to go ahead and run
+<br />this.</p>
+        <p begin="00:05:52.199" end="00:05:56.879" tts:direction="ltr">Awesome. I have the first name all contain
+<br />the letter Phil.</p>
+        <p begin="00:05:56.879" end="00:05:58.599" tts:direction="ltr">Any number of characters before,</p>
+        <p begin="00:05:58.599" end="00:06:00.399" tts:direction="ltr">any number of characters after,</p>
+        <p begin="00:06:00.399" end="00:06:04.400" tts:direction="ltr">those percentage signs allow for that,
+<br />including none.</p>
+        <p begin="00:06:04.400" end="00:06:07.799" tts:direction="ltr">As you see here, this first name Phil,</p>
+        <p begin="00:06:07.799" end="00:06:12.079" tts:direction="ltr">there is no characters before that and
+<br />it's still pulling up.</p>
+        <p begin="00:06:12.079" end="00:06:15.759" tts:direction="ltr">If Phil is anywhere in that first name,</p>
+        <p begin="00:06:15.759" end="00:06:19.054" tts:direction="ltr">at the beginning, at the end in the
+<br />center, it will appear.</p>
+        <p begin="00:06:19.054" end="00:06:23.469" tts:direction="ltr">Okay. Perfect. Now I'm going to select
+<br />first name,</p>
+        <p begin="00:06:23.469" end="00:06:26.589" tts:direction="ltr">last name, and household income.</p>
+        <p begin="00:06:26.589" end="00:06:29.109" tts:direction="ltr">Awesome. Now I'm going to order results
+<br />from</p>
+        <p begin="00:06:29.109" end="00:06:31.310" tts:direction="ltr">the highest household income to the
+<br />lowest.</p>
+        <p begin="00:06:31.310" end="00:06:35.869" tts:direction="ltr">I'm going to put my cursor there right
+<br />before the semicolon hit Enter.</p>
+        <p begin="00:06:35.869" end="00:06:40.739" tts:direction="ltr">I'm going to say order by household
+<br />income,</p>
+        <p begin="00:06:40.739" end="00:06:43.580" tts:direction="ltr">highest to lowest I do descending.</p>
+        <p begin="00:06:43.580" end="00:06:47.739" tts:direction="ltr">We'll hit Enter and there we see here who
+<br />has the highest to</p>
+        <p begin="00:06:47.739" end="00:06:49.499" tts:direction="ltr">the lowest household income with</p>
+        <p begin="00:06:49.499" end="00:06:53.339" tts:direction="ltr">the first name that contains a letter fill
+<br />somewhere in it.</p>
+        <p begin="00:06:53.339" end="00:06:55.579" tts:direction="ltr">In this, we have a where clause,</p>
+        <p begin="00:06:55.579" end="00:06:57.619" tts:direction="ltr">we have a two table join.</p>
+        <p begin="00:06:57.619" end="00:06:59.699" tts:direction="ltr">We have an order by and of course,</p>
+        <p begin="00:06:59.699" end="00:07:01.969" tts:direction="ltr">we have our select. All right.</p>
+        <p begin="00:07:01.969" end="00:07:04.129" tts:direction="ltr">Perfect. Now, for each household with</p>
+        <p begin="00:07:04.129" end="00:07:07.890" tts:direction="ltr">four or more members that are in the
+<br />database,</p>
+        <p begin="00:07:07.890" end="00:07:10.690" tts:direction="ltr">show the number of skiers in the
+<br />household,</p>
+        <p begin="00:07:10.690" end="00:07:13.289" tts:direction="ltr">the household income and the households
+<br />last name.</p>
+        <p begin="00:07:13.289" end="00:07:16.010" tts:direction="ltr">We are going to assume all members of the
+<br />household,</p>
+        <p begin="00:07:16.010" end="00:07:18.849" tts:direction="ltr">same household are shown as having the
+<br />same last name for some reason.</p>
+        <p begin="00:07:18.849" end="00:07:21.449" tts:direction="ltr">That's a disclaimer there.</p>
+        <p begin="00:07:21.449" end="00:07:25.370" tts:direction="ltr">We know that we are looking at number of
+<br />skiers and the household.</p>
+        <p begin="00:07:25.370" end="00:07:28.770" tts:direction="ltr">We're looking at guests and the household.
+<br />I'm going to come up here.</p>
+        <p begin="00:07:28.770" end="00:07:33.090" tts:direction="ltr">I'm going to sneak up here and I'm going
+<br />to grab that from clause</p>
+        <p begin="00:07:33.090" end="00:07:36.369" tts:direction="ltr">there because I already know that</p>
+        <p begin="00:07:36.369" end="00:07:40.489" tts:direction="ltr">I've written it correctly and I'm going to
+<br />say select star.</p>
+        <p begin="00:07:40.489" end="00:07:46.129" tts:direction="ltr">From guest is G. We're just going to use
+<br />that prior from clause.</p>
+        <p begin="00:07:46.129" end="00:07:48.929" tts:direction="ltr">Awesome. Now I'm just gathering all</p>
+        <p begin="00:07:48.929" end="00:07:51.890" tts:direction="ltr">of my data from my guest and my household
+<br />table.</p>
+        <p begin="00:07:51.890" end="00:07:56.409" tts:direction="ltr">Now, I'm querying the right tables at this
+<br />point.</p>
+        <p begin="00:07:56.409" end="00:08:00.690" tts:direction="ltr">Now I just need to think through this
+<br />query.</p>
+        <p begin="00:08:00.690" end="00:08:05.609" tts:direction="ltr">For each household with four or more
+<br />members that are in the database,</p>
+        <p begin="00:08:05.609" end="00:08:08.890" tts:direction="ltr">show the number of skiers in the
+<br />household,</p>
+        <p begin="00:08:08.890" end="00:08:13.049" tts:direction="ltr">the household income in the households
+<br />last name.</p>
+        <p begin="00:08:13.049" end="00:08:15.329" tts:direction="ltr">Let's just go with what we know.</p>
+        <p begin="00:08:15.329" end="00:08:18.369" tts:direction="ltr">I know I need to show the last name.</p>
+        <p begin="00:08:19.870" end="00:08:30.990" tts:direction="ltr">Let's see, the household income and the
+<br />number of skiers in the household.</p>
+        <p begin="00:08:30.990" end="00:08:34.710" tts:direction="ltr">Number of skiers, I'm talking the number
+<br />of guests.</p>
+        <p begin="00:08:34.710" end="00:08:36.989" tts:direction="ltr">If your guests here at Overland,</p>
+        <p begin="00:08:36.989" end="00:08:39.590" tts:direction="ltr">we're going to say that you are a skier.</p>
+        <p begin="00:08:39.590" end="00:08:50.150" tts:direction="ltr">We're going to say count guest ID as
+<br />number of skiers.</p>
+        <p begin="00:08:50.150" end="00:08:53.710" tts:direction="ltr">Perfect. Now, when I pop quiz,</p>
+        <p begin="00:08:53.710" end="00:08:56.020" tts:direction="ltr">we'll just run. I hope you say no.</p>
+        <p begin="00:08:56.020" end="00:09:00.780" tts:direction="ltr">It will not run because I have an
+<br />aggregated field of guest ID,</p>
+        <p begin="00:09:00.780" end="00:09:03.179" tts:direction="ltr">so I have that count before guest ID,</p>
+        <p begin="00:09:03.179" end="00:09:07.059" tts:direction="ltr">and then I have two non aggregated fields
+<br />of last name and household income.</p>
+        <p begin="00:09:07.059" end="00:09:12.340" tts:direction="ltr">Therefore, I need to group by the non
+<br />aggregated fields,</p>
+        <p begin="00:09:12.340" end="00:09:15.339" tts:direction="ltr">group by last name, group by household
+<br />income.</p>
+        <p begin="00:09:15.339" end="00:09:20.220" tts:direction="ltr">Perfect. Now I'm going to run this and I
+<br />see here</p>
+        <p begin="00:09:20.220" end="00:09:22.660" tts:direction="ltr">that the last name Abbott has a household
+<br />income of</p>
+        <p begin="00:09:22.660" end="00:09:25.299" tts:direction="ltr">84,000 and number of skiers is number one.</p>
+        <p begin="00:09:25.299" end="00:09:28.699" tts:direction="ltr">Then I have a different household with
+<br />last name of Abbott,</p>
+        <p begin="00:09:28.699" end="00:09:29.980" tts:direction="ltr">a different household income.</p>
+        <p begin="00:09:29.980" end="00:09:33.340" tts:direction="ltr">I am also going to select here</p>
+        <p begin="00:09:33.340" end="00:09:35.260" tts:direction="ltr">a</p>
+        <p begin="00:09:51.050" end="00:09:52.249" tts:direction="ltr">I</p>
+        <p begin="00:09:52.249" end="00:09:53.730" tts:direction="ltr">will add this to the prompt,</p>
+        <p begin="00:09:53.730" end="00:09:57.850" tts:direction="ltr">but I'm also going to select here the
+<br />household ID.</p>
+        <p begin="00:09:57.850" end="00:10:00.450" tts:direction="ltr">I'm going to say dot ID.</p>
+        <p begin="00:10:00.450" end="00:10:03.690" tts:direction="ltr">I'm going to add that to our prompt here.</p>
+        <p begin="00:10:05.450" end="00:10:08.929" tts:direction="ltr">We make sure that we're getting unique
+<br />households.</p>
+        <p begin="00:10:08.929" end="00:10:11.250" tts:direction="ltr">I'm going to go ahead and grab that and
+<br />run it.</p>
+        <p begin="00:10:11.250" end="00:10:15.050" tts:direction="ltr">Perfect. Now I get the household ID, the
+<br />last name,</p>
+        <p begin="00:10:15.050" end="00:10:19.330" tts:direction="ltr">the household income, the number of
+<br />skiers, perfect.</p>
+        <p begin="00:10:19.330" end="00:10:22.810" tts:direction="ltr">The reason that I did that is I didn't
+<br />want that in case,</p>
+        <p begin="00:10:25.850" end="00:10:29.690" tts:direction="ltr">The reason I added household ID is I want
+<br />to be able to see</p>
+        <p begin="00:10:29.690" end="00:10:35.050" tts:direction="ltr">that unique identifier of that household
+<br />and I also wanted it.</p>
+        <p begin="00:10:51.550" end="00:10:55.390" tts:direction="ltr">Let's jump down here to question number
+<br />two.</p>
+        <p begin="00:11:02.830" end="00:11:05.870" tts:direction="ltr">Let's jump down here to.</p>
+        <p begin="00:11:09.710" end="00:11:13.550" tts:direction="ltr">Let's jump down here to question number
+<br />two.</p>
+        <p begin="00:11:13.550" end="00:11:18.069" tts:direction="ltr">For each household with four or more
+<br />members that are in the database,</p>
+        <p begin="00:11:18.069" end="00:11:20.950" tts:direction="ltr">show the number of skiers in the
+<br />household, the household income,</p>
+        <p begin="00:11:20.950" end="00:11:25.429" tts:direction="ltr">the household ID, and the household's last
+<br />name, all right?</p>
+        <p begin="00:11:25.429" end="00:11:27.429" tts:direction="ltr">We are, as a disclaimer,</p>
+        <p begin="00:11:27.429" end="00:11:28.790" tts:direction="ltr">going to assume all members of</p>
+        <p begin="00:11:28.790" end="00:11:32.030" tts:direction="ltr">the same household are shown as having the
+<br />same last name.</p>
+        <p begin="00:11:32.030" end="00:11:34.710" tts:direction="ltr">I know that up above,</p>
+        <p begin="00:11:34.710" end="00:11:36.950" tts:direction="ltr">I am looking at well,</p>
+        <p begin="00:11:36.950" end="00:11:38.670" tts:direction="ltr">in that question number two,</p>
+        <p begin="00:11:38.670" end="00:11:42.309" tts:direction="ltr">I am looking at each household and the
+<br />number of</p>
+        <p begin="00:11:42.309" end="00:11:43.830" tts:direction="ltr">skiers in that household or we</p>
+        <p begin="00:11:43.830" end="00:11:45.990" tts:direction="ltr">can also think about that as a number of
+<br />guests.</p>
+        <p begin="00:11:45.990" end="00:11:50.470" tts:direction="ltr">As such, I know from number one I did a
+<br />good job of writing that from clause.</p>
+        <p begin="00:11:50.470" end="00:11:55.470" tts:direction="ltr">I'm going to bring that down here and do a
+<br />quick select star.</p>
+        <p begin="00:11:55.620" end="00:11:59.060" tts:direction="ltr">Get us reacquainted with this query.</p>
+        <p begin="00:11:59.060" end="00:12:01.460" tts:direction="ltr">I'm just querying again the guests and</p>
+        <p begin="00:12:01.460" end="00:12:03.860" tts:direction="ltr">household table joining those two
+<br />together.</p>
+        <p begin="00:12:03.860" end="00:12:06.420" tts:direction="ltr">Now, to break this down,</p>
+        <p begin="00:12:06.420" end="00:12:09.260" tts:direction="ltr">we're just going to start with what we
+<br />know we want to see.</p>
+        <p begin="00:12:09.260" end="00:12:11.300" tts:direction="ltr">Normally, I start with a where clause,</p>
+        <p begin="00:12:11.300" end="00:12:14.579" tts:direction="ltr">but I'm not going to eliminate anything in
+<br />my where clause here.</p>
+        <p begin="00:12:14.579" end="00:12:17.099" tts:direction="ltr">I'm not eliminating any records.</p>
+        <p begin="00:12:17.099" end="00:12:19.940" tts:direction="ltr">I am going to eliminate some groups though
+<br />because I</p>
+        <p begin="00:12:19.940" end="00:12:22.859" tts:direction="ltr">have for each household with four or more
+<br />members.</p>
+        <p begin="00:12:22.859" end="00:12:25.900" tts:direction="ltr">But to figure out how many members a
+<br />household has,</p>
+        <p begin="00:12:25.900" end="00:12:27.860" tts:direction="ltr">I need to do some counting.</p>
+        <p begin="00:12:27.860" end="00:12:29.500" tts:direction="ltr">Here in my select clause,</p>
+        <p begin="00:12:29.500" end="00:12:34.220" tts:direction="ltr">I'm going to say select the number. Let's
+<br />see.</p>
+        <p begin="00:12:34.220" end="00:12:43.629" tts:direction="ltr">Let's grab this. I'm going to say Select
+<br />the last name, the household income.</p>
+        <p begin="00:12:45.310" end="00:12:50.470" tts:direction="ltr">Actually, I'm going to do this be
+<br />household for members show number of
+<br />skiers.</p>
+        <p begin="00:12:50.470" end="00:12:51.990" tts:direction="ltr">Let's start with that one first.</p>
+        <p begin="00:12:51.990" end="00:13:01.660" tts:direction="ltr">I'm going to count the guest ID as number
+<br />of skiers.</p>
+        <p begin="00:13:01.660" end="00:13:04.019" tts:direction="ltr">That's my total number of skiers.</p>
+        <p begin="00:13:04.019" end="00:13:05.900" tts:direction="ltr">Now, if I ran this,</p>
+        <p begin="00:13:05.900" end="00:13:08.139" tts:direction="ltr">we're just going to see here my total
+<br />number of</p>
+        <p begin="00:13:08.139" end="00:13:10.380" tts:direction="ltr">skiers or my total number of guests.</p>
+        <p begin="00:13:10.380" end="00:13:15.059" tts:direction="ltr">But instead though, I want to see the
+<br />number of skiers in the household,</p>
+        <p begin="00:13:15.059" end="00:13:18.940" tts:direction="ltr">the household income, the household last
+<br />name.</p>
+        <p begin="00:13:18.940" end="00:13:21.499" tts:direction="ltr">I'm going to show the number of skiers.</p>
+        <p begin="00:13:21.499" end="00:13:24.220" tts:direction="ltr">I'm then going to grab the household
+<br />income.</p>
+        <p begin="00:13:24.220" end="00:13:30.260" tts:direction="ltr">I'm going to grab the household ID and the
+<br />household's last name.</p>
+        <p begin="00:13:30.260" end="00:13:34.859" tts:direction="ltr">Now that I've added all three of those to
+<br />my select clause,</p>
+        <p begin="00:13:34.859" end="00:13:37.060" tts:direction="ltr">pop quiz, will this run?</p>
+        <p begin="00:13:37.060" end="00:13:39.620" tts:direction="ltr">We're going to try and run this.</p>
+        <p begin="00:13:59.430" end="00:14:02.510" tts:direction="ltr">All right. Once I have this,</p>
+        <p begin="00:14:02.510" end="00:14:04.470" tts:direction="ltr">now because I have</p>
+        <p begin="00:14:04.470" end="00:14:08.669" tts:direction="ltr">an aggregated field and a non aggregated
+<br />field and I select.</p>
+        <p begin="00:14:08.669" end="00:14:10.549" tts:direction="ltr">I'm aggregating guest ID,</p>
+        <p begin="00:14:10.549" end="00:14:12.909" tts:direction="ltr">but I'm not aggregating meaning I don't
+<br />have</p>
+        <p begin="00:14:12.909" end="00:14:16.270" tts:direction="ltr">a count a maximum or anything in front of
+<br />household income,</p>
+        <p begin="00:14:16.270" end="00:14:17.750" tts:direction="ltr">housed ID and last name.</p>
+        <p begin="00:14:17.750" end="00:14:20.390" tts:direction="ltr">I then I'm going to add a group by here
+<br />and</p>
+        <p begin="00:14:20.390" end="00:14:23.589" tts:direction="ltr">I'm going to group by household income,</p>
+        <p begin="00:14:23.589" end="00:14:27.230" tts:direction="ltr">H dot household ID and last name.</p>
+        <p begin="00:14:27.230" end="00:14:29.190" tts:direction="ltr">Now when I run this here,</p>
+        <p begin="00:14:29.190" end="00:14:33.109" tts:direction="ltr">I see the number of skiers and the
+<br />different households.</p>
+        <p begin="00:14:33.109" end="00:14:37.910" tts:direction="ltr">I'm going to, um Just so I can see on my
+<br />end,</p>
+        <p begin="00:14:37.910" end="00:14:44.109" tts:direction="ltr">I'm going to order by number of skiers
+<br />descending.</p>
+        <p begin="00:14:44.109" end="00:14:47.469" tts:direction="ltr">I want to see what is the household with
+<br />the most number of skiers?</p>
+        <p begin="00:14:47.469" end="00:14:50.710" tts:direction="ltr">I have a household with seven skiers,</p>
+        <p begin="00:14:50.710" end="00:14:52.270" tts:direction="ltr">just out of curiosity.</p>
+        <p begin="00:14:52.270" end="00:14:55.505" tts:direction="ltr">But I don't need that. We can go ahead and
+<br />delete that.</p>
+        <p begin="00:14:55.505" end="00:14:59.460" tts:direction="ltr">Um, and then the other thing I need to do
+<br />though is for</p>
+        <p begin="00:14:59.460" end="00:15:02.660" tts:direction="ltr">each household with four or more members
+<br />that are in the database.</p>
+        <p begin="00:15:02.660" end="00:15:04.619" tts:direction="ltr">Well, now I can see here I have some with
+<br />seven,</p>
+        <p begin="00:15:04.619" end="00:15:08.099" tts:direction="ltr">I have some with one and anywhere in
+<br />between.</p>
+        <p begin="00:15:08.099" end="00:15:11.379" tts:direction="ltr">Now these are all groups at this point.</p>
+        <p begin="00:15:11.379" end="00:15:17.500" tts:direction="ltr">I am grouping all of these household
+<br />members together and by using my group I.</p>
+        <p begin="00:15:17.500" end="00:15:22.339" tts:direction="ltr">Now I'm going to say having and I can't
+<br />refer to number of</p>
+        <p begin="00:15:22.339" end="00:15:28.620" tts:direction="ltr">skiers because my having clause is
+<br />processed before my select clause.</p>
+        <p begin="00:15:28.620" end="00:15:33.580" tts:direction="ltr">I must redo, I must say having count guest
+<br />ID,</p>
+        <p begin="00:15:33.580" end="00:15:36.705" tts:direction="ltr">greater than or equal to four.</p>
+        <p begin="00:15:36.705" end="00:15:39.149" tts:direction="ltr">Four or more members.</p>
+        <p begin="00:15:39.149" end="00:15:43.990" tts:direction="ltr">Now when I run this, I can see here that
+<br />all of</p>
+        <p begin="00:15:43.990" end="00:15:50.510" tts:direction="ltr">my households that are returned to me have
+<br />at least four members inside of it,</p>
+        <p begin="00:15:50.510" end="00:15:52.270" tts:direction="ltr">inside of that household.</p>
+        <p begin="00:15:52.270" end="00:15:55.790" tts:direction="ltr">Perfect. That's question number two.</p>
+        <p begin="00:15:55.790" end="00:16:01.910" tts:direction="ltr">Now, same as previous, but only count
+<br />household members that are 18 and under.</p>
+        <p begin="00:16:02.470" end="00:16:04.830" tts:direction="ltr">I'm doing the same as previous.</p>
+        <p begin="00:16:04.830" end="00:16:09.440" tts:direction="ltr">I'm going to copy from question of two
+<br />down to question three.</p>
+        <p begin="00:16:09.440" end="00:16:12.290" tts:direction="ltr">I'm going to add on here,</p>
+        <p begin="00:16:12.290" end="00:16:15.729" tts:direction="ltr">I only want to count household members
+<br />that are 18 and under.</p>
+        <p begin="00:16:15.729" end="00:16:19.170" tts:direction="ltr">Now, keep in mind when I'm looking at
+<br />individual guests,</p>
+        <p begin="00:16:19.170" end="00:16:22.609" tts:direction="ltr">individual records, I'm going to be using
+<br />a where clause.</p>
+        <p begin="00:16:22.609" end="00:16:24.410" tts:direction="ltr">Here above my group I,</p>
+        <p begin="00:16:24.410" end="00:16:26.970" tts:direction="ltr">I'm going to add a where clause and I'm
+<br />going to say,</p>
+        <p begin="00:16:26.970" end="00:16:30.570" tts:direction="ltr">where the age that are 18 and under.</p>
+        <p begin="00:16:30.570" end="00:16:34.969" tts:direction="ltr">I'm going to say where age is less than or
+<br />equal to 18.</p>
+        <p begin="00:16:35.370" end="00:16:38.490" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:16:38.490" end="00:16:45.650" tts:direction="ltr">These are all the number of skiers 18 and
+<br />under.</p>
+        <p begin="00:16:45.650" end="00:16:48.050" tts:direction="ltr">I'm going to change my alias a little bit.</p>
+        <p begin="00:16:48.050" end="00:16:50.770" tts:direction="ltr">Now I have the number of skiers 18 and
+<br />under</p>
+        <p begin="00:16:50.770" end="00:16:54.169" tts:direction="ltr">per household and each household must have</p>
+        <p begin="00:16:54.169" end="00:17:01.290" tts:direction="ltr">at least four skiers that are 18 and under
+<br />to be included in my output.</p>
+        <p begin="00:17:01.290" end="00:17:06.249" tts:direction="ltr">Now I am limiting the records that are
+<br />returning to me so</p>
+        <p begin="00:17:06.249" end="00:17:11.690" tts:direction="ltr">that only those who are 18 and under are
+<br />included in my output.</p>
+        <p begin="00:17:11.690" end="00:17:16.119" tts:direction="ltr">Perfect. Okay. Finally, on question four,</p>
+        <p begin="00:17:16.119" end="00:17:17.319" tts:direction="ltr">for each day of the season,</p>
+        <p begin="00:17:17.319" end="00:17:19.359" tts:direction="ltr">output the number of visits that were
+<br />made,</p>
+        <p begin="00:17:19.359" end="00:17:23.879" tts:direction="ltr">whether the pricing was peak or weekday
+<br />and what the s's condition was.</p>
+        <p begin="00:17:23.879" end="00:17:28.880" tts:direction="ltr">We are going to order the results from the
+<br />most to the fewest.</p>
+        <p begin="00:17:28.880" end="00:17:33.069" tts:direction="ltr">We want to take a look at the number of
+<br />visits that were made.</p>
+        <p begin="00:17:33.069" end="00:17:38.339" tts:direction="ltr">Whether the pricing was peak or weekday
+<br />and what the's condition was.</p>
+        <p begin="00:17:38.339" end="00:17:42.380" tts:direction="ltr">For each day of the season and the number
+<br />of visits,</p>
+        <p begin="00:17:42.380" end="00:17:44.300" tts:direction="ltr">for each day of the season,</p>
+        <p begin="00:17:44.300" end="00:17:45.940" tts:direction="ltr">I'm looking at the day table.</p>
+        <p begin="00:17:45.940" end="00:17:48.379" tts:direction="ltr">I want to look at whether</p>
+        <p begin="00:17:48.379" end="00:17:52.099" tts:direction="ltr">the price was peak or weekday, that's
+<br />going to tell me that.</p>
+        <p begin="00:17:52.099" end="00:17:55.620" tts:direction="ltr">But the number of visitors is going to
+<br />come from my visit table.</p>
+        <p begin="00:17:55.620" end="00:17:57.340" tts:direction="ltr">Let's go ahead and take a look here.</p>
+        <p begin="00:17:57.340" end="00:18:01.980" tts:direction="ltr">I'm going to say select star,</p>
+        <p begin="00:18:01.980" end="00:18:09.340" tts:direction="ltr">and I'm going to go from the day asD
+<br />table.</p>
+        <p begin="00:18:09.720" end="00:18:14.799" tts:direction="ltr">And I'm going to join the visit table as</p>
+        <p begin="00:18:14.799" end="00:18:25.240" tts:direction="ltr">V. On dot D ID is equal to V dot day ID.</p>
+        <p begin="00:18:25.240" end="00:18:28.039" tts:direction="ltr">Perfect. Because we know here,</p>
+        <p begin="00:18:28.039" end="00:18:32.560" tts:direction="ltr">the date ID is coming from the day table
+<br />into the visit table.</p>
+        <p begin="00:18:32.560" end="00:18:35.319" tts:direction="ltr">Now, if once we run this,</p>
+        <p begin="00:18:35.319" end="00:18:39.414" tts:direction="ltr">I want to really think about what does
+<br />every record here represent?</p>
+        <p begin="00:18:39.414" end="00:18:47.950" tts:direction="ltr">Every record here represents an individual
+<br />visit to Overland ski resort.</p>
+        <p begin="00:18:47.950" end="00:18:50.429" tts:direction="ltr">When I look over on my right hand side,</p>
+        <p begin="00:18:50.429" end="00:18:52.469" tts:direction="ltr">these are all unique visitors,</p>
+        <p begin="00:18:52.469" end="00:18:54.149" tts:direction="ltr">and this is on this date.</p>
+        <p begin="00:18:54.149" end="00:18:56.509" tts:direction="ltr">You will notice that, in this case,</p>
+        <p begin="00:18:56.509" end="00:19:00.989" tts:direction="ltr">December 10th of 2022 is repeating for
+<br />quite some time.</p>
+        <p begin="00:19:00.989" end="00:19:04.469" tts:direction="ltr">This is tracking all of the visits that
+<br />happened.</p>
+        <p begin="00:19:04.469" end="00:19:07.149" tts:direction="ltr">These are all visits.</p>
+        <p begin="00:19:07.149" end="00:19:11.789" tts:direction="ltr">I am repeating the date information for
+<br />every visit that happened on</p>
+        <p begin="00:19:11.789" end="00:19:13.909" tts:direction="ltr">that date because as we</p>
+        <p begin="00:19:13.909" end="00:19:16.510" tts:direction="ltr">learned about when we talked about
+<br />relational databases,</p>
+        <p begin="00:19:16.510" end="00:19:18.270" tts:direction="ltr">and I told you, it's going to be important</p>
+        <p begin="00:19:18.270" end="00:19:20.629" tts:direction="ltr">to understand one to many relationships.</p>
+        <p begin="00:19:20.629" end="00:19:23.430" tts:direction="ltr">A day can have many visits.</p>
+        <p begin="00:19:23.430" end="00:19:27.630" tts:direction="ltr">Therefore, the day information is going to
+<br />repeat</p>
+        <p begin="00:19:27.630" end="00:19:32.984" tts:direction="ltr">many times when I'm selecting all of the
+<br />different visits, okay?</p>
+        <p begin="00:19:32.984" end="00:19:37.019" tts:direction="ltr">So now I want to because again,</p>
+        <p begin="00:19:37.019" end="00:19:40.140" tts:direction="ltr">the state ID over here on the left side is
+<br />equal to</p>
+        <p begin="00:19:40.140" end="00:19:44.979" tts:direction="ltr">the day ID over here on the far right
+<br />side. That's my join.</p>
+        <p begin="00:19:44.979" end="00:19:46.980" tts:direction="ltr">Now for each day of the season,</p>
+        <p begin="00:19:46.980" end="00:19:48.699" tts:direction="ltr">I'll put a number of visits that were
+<br />made,</p>
+        <p begin="00:19:48.699" end="00:19:52.499" tts:direction="ltr">whether the pricing was peak or weekday
+<br />and what the sys condition was.</p>
+        <p begin="00:19:52.499" end="00:19:55.739" tts:direction="ltr">If I just do a quick select count,</p>
+        <p begin="00:19:55.739" end="00:19:58.380" tts:direction="ltr">I'm going to count the number of visit
+<br />IDs.</p>
+        <p begin="00:19:58.380" end="00:20:03.660" tts:direction="ltr">This is going to give me as number of
+<br />visits.</p>
+        <p begin="00:20:03.660" end="00:20:06.339" tts:direction="ltr">Now, when I run this,</p>
+        <p begin="00:20:07.100" end="00:20:10.820" tts:direction="ltr">I get 62,810 visits.</p>
+        <p begin="00:20:10.820" end="00:20:13.619" tts:direction="ltr">But now I want to do this per each day.</p>
+        <p begin="00:20:13.619" end="00:20:16.299" tts:direction="ltr">I'm going to add in DD here.</p>
+        <p begin="00:20:16.299" end="00:20:19.779" tts:direction="ltr">Then I'm going to before that semicolon
+<br />because</p>
+        <p begin="00:20:19.779" end="00:20:22.859" tts:direction="ltr">I have an aggregated field and a non
+<br />aggregated field.</p>
+        <p begin="00:20:22.859" end="00:20:27.379" tts:direction="ltr">In the select, I'm going to group by DD
+<br />Okay.</p>
+        <p begin="00:20:27.379" end="00:20:30.139" tts:direction="ltr">I must group by the non aggregated field.</p>
+        <p begin="00:20:30.139" end="00:20:33.819" tts:direction="ltr">Now when I run this, I have a number of
+<br />visits per the day.</p>
+        <p begin="00:20:33.819" end="00:20:35.939" tts:direction="ltr">Now I want to know whether the pricing was</p>
+        <p begin="00:20:35.939" end="00:20:38.899" tts:direction="ltr">peak or weekday and what the sky's
+<br />condition was.</p>
+        <p begin="00:20:38.899" end="00:20:42.460" tts:direction="ltr">Therefore, I'm going to come over here and
+<br />I'm going to select</p>
+        <p begin="00:20:42.460" end="00:20:47.019" tts:direction="ltr">the price field and what the sky's
+<br />condition was.</p>
+        <p begin="00:20:47.019" end="00:20:52.179" tts:direction="ltr">Now I'm going to drag or let's see,</p>
+        <p begin="00:20:52.179" end="00:20:53.700" tts:direction="ltr">for each day of the season,</p>
+        <p begin="00:20:53.700" end="00:20:56.139" tts:direction="ltr">output the number of visits that were
+<br />made.</p>
+        <p begin="00:20:56.139" end="00:21:01.139" tts:direction="ltr">I'm going to add in D date over here just
+<br />so I have the date.</p>
+        <p begin="00:21:01.150" end="00:21:04.349" tts:direction="ltr">Then I have the number of visits that were
+<br />made,</p>
+        <p begin="00:21:04.349" end="00:21:06.590" tts:direction="ltr">whether the pricing was peak or weekdays,</p>
+        <p begin="00:21:06.590" end="00:21:10.069" tts:direction="ltr">I'm going to grab the price field and what
+<br />the yes condition was.</p>
+        <p begin="00:21:10.069" end="00:21:12.310" tts:direction="ltr">Now I'm going to add in here to my group,</p>
+        <p begin="00:21:12.310" end="00:21:16.790" tts:direction="ltr">I'm going to add in price and I'm going to
+<br />add in skies and I hit Enter.</p>
+        <p begin="00:21:16.790" end="00:21:19.669" tts:direction="ltr">Now I can see here that I have the D date,</p>
+        <p begin="00:21:19.669" end="00:21:21.190" tts:direction="ltr">I have the number of visits,</p>
+        <p begin="00:21:21.190" end="00:21:23.710" tts:direction="ltr">I have the price, and I have the skies.</p>
+        <p begin="00:21:23.710" end="00:21:27.749" tts:direction="ltr">Now I can look at what were the number of
+<br />when were they the highest?</p>
+        <p begin="00:21:27.749" end="00:21:31.310" tts:direction="ltr">We're going to order the results from the
+<br />most visits to the fewest.</p>
+        <p begin="00:21:31.310" end="00:21:36.330" tts:direction="ltr">I'm going to say order by number of
+<br />visits.</p>
+        <p begin="00:21:36.330" end="00:21:38.969" tts:direction="ltr">The order by is the last to run.</p>
+        <p begin="00:21:38.969" end="00:21:43.769" tts:direction="ltr">Therefore, I can reference the alias
+<br />created in the select clause.</p>
+        <p begin="00:21:43.769" end="00:21:46.770" tts:direction="ltr">We're going to order by number of visits
+<br />descending.</p>
+        <p begin="00:21:46.770" end="00:21:49.410" tts:direction="ltr">As I'm getting more and more queries on
+<br />this query sheet,</p>
+        <p begin="00:21:49.410" end="00:21:51.409" tts:direction="ltr">I am going to make sure I'm just
+<br />highlighting</p>
+        <p begin="00:21:51.409" end="00:21:55.450" tts:direction="ltr">the one query that I want to run and not
+<br />just running the whole query sheet.</p>
+        <p begin="00:21:55.450" end="00:21:59.729" tts:direction="ltr">Now once I do that, I can see here that
+<br />January 14th of 2023,</p>
+        <p begin="00:21:59.729" end="00:22:03.129" tts:direction="ltr">the number of visits was 15 85.</p>
+        <p begin="00:22:03.129" end="00:22:09.169" tts:direction="ltr">Now, if you look up I'm loading this on my
+<br />other computer.</p>
+        <p begin="00:22:09.169" end="00:22:14.250" tts:direction="ltr">What was January 14th of 2023?</p>
+        <p begin="00:22:14.570" end="00:22:16.649" tts:direction="ltr">And</p>
+        <p begin="00:22:45.540" end="00:22:47.100" tts:direction="ltr">All right.</p>
+        <p begin="00:22:47.100" end="00:22:50.620" tts:direction="ltr">We can see here that these dates had the
+<br />most number of visits</p>
+        <p begin="00:22:50.620" end="00:22:54.939" tts:direction="ltr">and the pricing was peak and this was the
+<br />sky's condition.</p>
+        <p begin="00:22:54.939" end="00:22:58.619" tts:direction="ltr">So interesting analysis could come from
+<br />that.</p>
+        <p begin="00:22:58.619" end="00:23:02.699" tts:direction="ltr">Awesome. All right. The next question.</p>
+        <p begin="00:23:02.699" end="00:23:06.340" tts:direction="ltr">For every visit made on March 8th of 2023,</p>
+        <p begin="00:23:06.340" end="00:23:09.299" tts:direction="ltr">we're going to show the total amount spent
+<br />during the visit and</p>
+        <p begin="00:23:09.299" end="00:23:13.699" tts:direction="ltr">the first and last name of the customer
+<br />that made the visit.</p>
+        <p begin="00:23:13.780" end="00:23:23.459" tts:direction="ltr">We want to um Take a look at my Overland
+<br />ERD and data dictionary.</p>
+        <p begin="00:23:23.459" end="00:23:29.260" tts:direction="ltr">I can see here that I'm going to be
+<br />dealing with the Viz product table.</p>
+        <p begin="00:23:29.260" end="00:23:32.620" tts:direction="ltr">My Viz product table is the quantity</p>
+        <p begin="00:23:32.620" end="00:23:36.539" tts:direction="ltr">of product purchase on visit and the price
+<br />of the product purchase on visit.</p>
+        <p begin="00:23:36.539" end="00:23:39.339" tts:direction="ltr">I know I'm going to need to have that
+<br />information.</p>
+        <p begin="00:23:39.339" end="00:23:42.420" tts:direction="ltr">I'm also going to need to know the
+<br />customers</p>
+        <p begin="00:23:42.420" end="00:23:45.619" tts:direction="ltr">first and last name who made that
+<br />purchase.</p>
+        <p begin="00:23:45.619" end="00:23:49.420" tts:direction="ltr">I know for sure I'm going to need to join
+<br />all the way up to the guest table.</p>
+        <p begin="00:23:49.420" end="00:23:52.825" tts:direction="ltr">I'm going to need to go from VS prod to
+<br />visit to guest.</p>
+        <p begin="00:23:52.825" end="00:23:56.309" tts:direction="ltr">Then I know that I need to eliminate it or</p>
+        <p begin="00:23:56.309" end="00:24:01.189" tts:direction="ltr">to reduce it to only those guests on March
+<br />8th of 2023.</p>
+        <p begin="00:24:01.189" end="00:24:06.789" tts:direction="ltr">As such, I need to join to that to the day
+<br />table to grab the D date,</p>
+        <p begin="00:24:06.789" end="00:24:08.309" tts:direction="ltr">which has the actual date,</p>
+        <p begin="00:24:08.309" end="00:24:13.515" tts:direction="ltr">not just the auto in commanded date like
+<br />the day ID in the visit table.</p>
+        <p begin="00:24:13.515" end="00:24:16.399" tts:direction="ltr">So we're going to be doing quite a bit of
+<br />joining here.</p>
+        <p begin="00:24:16.399" end="00:24:17.959" tts:direction="ltr">I'm going to walk us through this.</p>
+        <p begin="00:24:17.959" end="00:24:20.399" tts:direction="ltr">We're going to start with select star,</p>
+        <p begin="00:24:20.399" end="00:24:23.639" tts:direction="ltr">and I'm going to come from I'm going to</p>
+        <p begin="00:24:23.639" end="00:24:27.959" tts:direction="ltr">start probably with my Vis product table,
+<br />that one on the most left.</p>
+        <p begin="00:24:27.959" end="00:24:30.560" tts:direction="ltr">Let say from VisPd as VP.</p>
+        <p begin="00:24:30.560" end="00:24:32.680" tts:direction="ltr">When I talk about most left, I'm just
+<br />talking about</p>
+        <p begin="00:24:32.680" end="00:24:35.039" tts:direction="ltr">what's on the entity relationship diagram.</p>
+        <p begin="00:24:35.039" end="00:24:39.040" tts:direction="ltr">VisPd is related to visit able through
+<br />VisID.</p>
+        <p begin="00:24:39.040" end="00:24:44.895" tts:direction="ltr">VisID comes from the VisPd table into the
+<br />visit table as the foreign key.</p>
+        <p begin="00:24:44.895" end="00:24:48.190" tts:direction="ltr">So from Vis prod as VP,</p>
+        <p begin="00:24:48.190" end="00:24:54.150" tts:direction="ltr">join Visit as V O and we're going to say</p>
+        <p begin="00:24:54.150" end="00:25:01.430" tts:direction="ltr">Vp dot VsD is equal to V dot VsD.</p>
+        <p begin="00:25:01.430" end="00:25:03.670" tts:direction="ltr">Perfect. Now, best practice here,</p>
+        <p begin="00:25:03.670" end="00:25:07.109" tts:direction="ltr">write a little bit of code around the
+<br />code, make sure it's working.</p>
+        <p begin="00:25:07.810" end="00:25:11.809" tts:direction="ltr">Now, what we can see here is that I have,</p>
+        <p begin="00:25:11.809" end="00:25:14.569" tts:direction="ltr">say this biz ID number two here.</p>
+        <p begin="00:25:14.569" end="00:25:17.290" tts:direction="ltr">I have ID listed twice.</p>
+        <p begin="00:25:17.290" end="00:25:23.649" tts:direction="ltr">This individual purchased two different
+<br />types of products.</p>
+        <p begin="00:25:23.649" end="00:25:29.450" tts:direction="ltr">They purchase a LIF a ticket and a P equip
+<br />something.</p>
+        <p begin="00:25:29.450" end="00:25:31.245" tts:direction="ltr">I believe that's a rental.</p>
+        <p begin="00:25:31.245" end="00:25:33.999" tts:direction="ltr">What you will notice is that they</p>
+        <p begin="00:25:33.999" end="00:25:37.039" tts:direction="ltr">just purchased one of each and that was
+<br />the price.</p>
+        <p begin="00:25:37.039" end="00:25:40.479" tts:direction="ltr">But if you scroll down here to Vis ID
+<br />number three,</p>
+        <p begin="00:25:40.479" end="00:25:44.039" tts:direction="ltr">this was again a different visitor than
+<br />number two,</p>
+        <p begin="00:25:44.039" end="00:25:45.600" tts:direction="ltr">V ID number three,</p>
+        <p begin="00:25:45.600" end="00:25:49.359" tts:direction="ltr">some different visitor here purchased also
+<br />two different products,</p>
+        <p begin="00:25:49.359" end="00:25:51.440" tts:direction="ltr">a LIF day ticket and a pro equipment,</p>
+        <p begin="00:25:51.440" end="00:25:54.585" tts:direction="ltr">but they purchased two of those pro
+<br />equipments, all right?</p>
+        <p begin="00:25:54.585" end="00:25:57.209" tts:direction="ltr">So basically here what we're looking at</p>
+        <p begin="00:25:57.209" end="00:26:00.770" tts:direction="ltr">is think of this as line items on a
+<br />receipt.</p>
+        <p begin="00:26:00.770" end="00:26:04.170" tts:direction="ltr">If I go to Costco and I buy five
+<br />rotisserie chickens,</p>
+        <p begin="00:26:04.170" end="00:26:05.449" tts:direction="ltr">I mean, more power to you.</p>
+        <p begin="00:26:05.449" end="00:26:08.849" tts:direction="ltr">But if you do, and this said rotisserie
+<br />chicken here,</p>
+        <p begin="00:26:08.849" end="00:26:10.370" tts:direction="ltr">there would be a five next to it.</p>
+        <p begin="00:26:10.370" end="00:26:12.809" tts:direction="ltr">It doesn't list rotisserie chicken five
+<br />times.</p>
+        <p begin="00:26:12.809" end="00:26:14.449" tts:direction="ltr">In this case, it would just say</p>
+        <p begin="00:26:14.449" end="00:26:17.169" tts:direction="ltr">rotisserie chicken and the quantity would
+<br />be five?</p>
+        <p begin="00:26:17.169" end="00:26:20.489" tts:direction="ltr">I just want to orient you to that.</p>
+        <p begin="00:26:20.489" end="00:26:26.610" tts:direction="ltr">The next thing that I'm going to do is
+<br />since I've joined to the visit table,</p>
+        <p begin="00:26:26.610" end="00:26:31.330" tts:direction="ltr">I'm going to join the guest table and then
+<br />I'm going to join the day table.</p>
+        <p begin="00:26:31.330" end="00:26:35.329" tts:direction="ltr">I'm going to hit Enter and say join guest
+<br />as</p>
+        <p begin="00:26:35.329" end="00:26:39.809" tts:direction="ltr">G and that relationship is based on</p>
+        <p begin="00:26:39.809" end="00:26:45.689" tts:direction="ltr">the V dot cust ID that customer ID that is</p>
+        <p begin="00:26:45.689" end="00:26:47.929" tts:direction="ltr">in my visit table is</p>
+        <p begin="00:26:47.929" end="00:26:51.810" tts:direction="ltr">the guest ID coming from the guest table
+<br />into the visit table.</p>
+        <p begin="00:26:51.810" end="00:27:02.329" tts:direction="ltr">Let say join guest as G on V dot cust ID
+<br />is equal to g dot guest ID. Okay.</p>
+        <p begin="00:27:02.329" end="00:27:05.809" tts:direction="ltr">Perfect. Now what we're going to see here
+<br />is we're going to get</p>
+        <p begin="00:27:05.809" end="00:27:10.410" tts:direction="ltr">the information of the guests that made
+<br />those purchases.</p>
+        <p begin="00:27:10.410" end="00:27:16.369" tts:direction="ltr">Perfect. I can see here that Corey Hall
+<br />was ID number two that day, right?</p>
+        <p begin="00:27:16.369" end="00:27:19.489" tts:direction="ltr">So Corey Hall purchased the Lyft day
+<br />ticket and</p>
+        <p begin="00:27:19.489" end="00:27:23.609" tts:direction="ltr">the equipment ticket Lyft day ticket and
+<br />the pro equipment,</p>
+        <p begin="00:27:23.609" end="00:27:25.610" tts:direction="ltr">I believe that rental.</p>
+        <p begin="00:27:25.610" end="00:27:30.419" tts:direction="ltr">Okay, perfect. Now, I only want to see
+<br />though,</p>
+        <p begin="00:27:30.419" end="00:27:33.260" tts:direction="ltr">the visits made on March 8th of 2023.</p>
+        <p begin="00:27:33.260" end="00:27:35.419" tts:direction="ltr">When I look at this, I still don't have
+<br />that information.</p>
+        <p begin="00:27:35.419" end="00:27:39.619" tts:direction="ltr">I need to do my last join here and I need
+<br />to join day</p>
+        <p begin="00:27:39.619" end="00:27:44.659" tts:direction="ltr">as D on and how is it going to join to
+<br />these other tables?</p>
+        <p begin="00:27:44.659" end="00:27:47.379" tts:direction="ltr">It's going to join with that visit table.</p>
+        <p begin="00:27:47.379" end="00:27:52.300" tts:direction="ltr">The date ID comes from the day table into
+<br />the visit table as day ID.</p>
+        <p begin="00:27:52.300" end="00:28:00.140" tts:direction="ltr">I'll say from join day as D on ID.</p>
+        <p begin="00:28:00.140" end="00:28:06.299" tts:direction="ltr">So, date ID equal to V dot day ID.</p>
+        <p begin="00:28:06.299" end="00:28:08.739" tts:direction="ltr">Then I'm going to run this</p>
+        <p begin="00:28:09.300" end="00:28:14.699" tts:direction="ltr">It's going to take a second because I'm
+<br />querying a lot of different data here.</p>
+        <p begin="00:28:14.699" end="00:28:20.579" tts:direction="ltr">I have 118,000 rows and there's quite a
+<br />few fields involved, if you will.</p>
+        <p begin="00:28:20.740" end="00:28:25.499" tts:direction="ltr">Again, if you continue to go into this
+<br />field,</p>
+        <p begin="00:28:25.499" end="00:28:27.939" tts:direction="ltr">you're going to be querying billions of
+<br />records of data,</p>
+        <p begin="00:28:27.939" end="00:28:32.060" tts:direction="ltr">but it's interesting to see here just as
+<br />you add additional joins,</p>
+        <p begin="00:28:32.060" end="00:28:33.739" tts:direction="ltr">how that does take longer.</p>
+        <p begin="00:28:33.739" end="00:28:37.099" tts:direction="ltr">Perfect. Now I can actually see the D
+<br />date.</p>
+        <p begin="00:28:37.099" end="00:28:39.980" tts:direction="ltr">Now I want to get rid of all of these
+<br />records.</p>
+        <p begin="00:28:39.980" end="00:28:42.579" tts:direction="ltr">Again, what does every one of these
+<br />records represent?</p>
+        <p begin="00:28:42.579" end="00:28:47.100" tts:direction="ltr">Well, every one of these records
+<br />represents a product being purchased.</p>
+        <p begin="00:28:47.100" end="00:28:51.899" tts:direction="ltr">It then shows me who made the purchase?
+<br />Jackson White did.</p>
+        <p begin="00:28:51.899" end="00:28:55.379" tts:direction="ltr">On what day? What was the information
+<br />about that day?</p>
+        <p begin="00:28:55.379" end="00:28:58.519" tts:direction="ltr">We have a lot of different data going on
+<br />here.</p>
+        <p begin="00:28:58.519" end="00:29:00.900" tts:direction="ltr">Now here before my semicolon,</p>
+        <p begin="00:29:00.900" end="00:29:10.899" tts:direction="ltr">I'm going to say you DD is equal to,</p>
+        <p begin="00:29:10.899" end="00:29:17.779" tts:direction="ltr">and I'll say 202-03-0308,</p>
+        <p begin="00:29:17.779" end="00:29:19.499" tts:direction="ltr">that's the format I like to use.</p>
+        <p begin="00:29:19.499" end="00:29:21.899" tts:direction="ltr">You'll find that there's a lot of
+<br />different formats you can</p>
+        <p begin="00:29:21.899" end="00:29:25.220" tts:direction="ltr">use with dates in SQL.</p>
+        <p begin="00:29:25.220" end="00:29:26.699" tts:direction="ltr">That's the one I prefer to use.</p>
+        <p begin="00:29:26.699" end="00:29:28.059" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:29:28.059" end="00:29:29.979" tts:direction="ltr">it's going to</p>
+        <p begin="00:31:59.900" end="00:32:03.259" tts:direction="ltr">I see.</p>
+        <p begin="00:32:44.880" end="00:32:49.859" tts:direction="ltr">That's trans. I feel like that's better.</p>
+        <p begin="00:37:48.520" end="00:37:52.019" tts:direction="ltr">Okay. Okay.</p>
+        <p begin="00:37:52.019" end="00:37:53.740" tts:direction="ltr">Shit.</p>
+        <p begin="00:39:51.100" end="00:39:52.939" tts:direction="ltr">When we run this,</p>
+        <p begin="00:39:52.939" end="00:39:55.859" tts:direction="ltr">we can see here that it is not outputting
+<br />something to us.</p>
+        <p begin="00:39:55.859" end="00:39:58.340" tts:direction="ltr">I'm going to come back to and do Select
+<br />Star.</p>
+        <p begin="00:39:58.340" end="00:40:02.659" tts:direction="ltr">Now, SQL L, the version of the database
+<br />you're using,</p>
+        <p begin="00:40:02.659" end="00:40:07.620" tts:direction="ltr">can be a little particular at times.</p>
+        <p begin="00:40:07.620" end="00:40:12.140" tts:direction="ltr">One thing I want to just check out is what
+<br />is the format of this DD?</p>
+        <p begin="00:40:12.140" end="00:40:18.180" tts:direction="ltr">The format of this DD is 2022 dash 12-10.</p>
+        <p begin="00:40:18.180" end="00:40:20.900" tts:direction="ltr">Now, something that will work without
+<br />fails,</p>
+        <p begin="00:40:20.900" end="00:40:22.819" tts:direction="ltr">I'm going to teach you a trick here</p>
+        <p begin="00:40:22.819" end="00:40:24.299" tts:direction="ltr">is</p>
+        <p begin="00:40:31.820" end="00:40:33.659" tts:direction="ltr">When we run this,</p>
+        <p begin="00:40:33.659" end="00:40:35.860" tts:direction="ltr">we can see that we're not getting any
+<br />output.</p>
+        <p begin="00:40:35.860" end="00:40:37.780" tts:direction="ltr">But when I do a select star,</p>
+        <p begin="00:40:37.780" end="00:40:41.579" tts:direction="ltr">and if you want to order it, you
+<br />absolutely can.</p>
+        <p begin="00:40:41.579" end="00:40:45.819" tts:direction="ltr">I know that there are products that were
+<br />purchased on this date.</p>
+        <p begin="00:40:45.819" end="00:40:47.779" tts:direction="ltr">That's not the issue here.</p>
+        <p begin="00:40:47.779" end="00:40:51.494" tts:direction="ltr">The issue is that our due date,</p>
+        <p begin="00:40:51.494" end="00:40:54.729" tts:direction="ltr">The format that it's in SQL,</p>
+        <p begin="00:40:54.729" end="00:40:56.730" tts:direction="ltr">that's the version I have downloaded,</p>
+        <p begin="00:40:56.730" end="00:40:58.489" tts:direction="ltr">can be a little finicky.</p>
+        <p begin="00:40:58.489" end="00:41:03.689" tts:direction="ltr">What I want to teach you here is one way
+<br />that we can extract the date.</p>
+        <p begin="00:41:03.689" end="00:41:09.169" tts:direction="ltr">This works pretty much without fail from
+<br />the D date column is</p>
+        <p begin="00:41:09.169" end="00:41:11.969" tts:direction="ltr">we can say we're going to extract the date
+<br />from</p>
+        <p begin="00:41:11.969" end="00:41:15.209" tts:direction="ltr">the DD and set it equal to that 2023.</p>
+        <p begin="00:41:15.209" end="00:41:18.689" tts:direction="ltr">Now when I run this, it is still not
+<br />working.</p>
+        <p begin="00:41:48.150" end="00:41:51.870" tts:direction="ltr">When I run this, we can see here we're not
+<br />getting an output.</p>
+        <p begin="00:41:51.870" end="00:41:53.829" tts:direction="ltr">Now, this can be frustrating at times.</p>
+        <p begin="00:41:53.829" end="00:41:55.990" tts:direction="ltr">It's like, let's be a little bit creative</p>
+        <p begin="00:41:55.990" end="00:41:59.349" tts:direction="ltr">here and utilize what we know about SQL.</p>
+        <p begin="00:41:59.349" end="00:42:02.950" tts:direction="ltr">Let's run everything but that where
+<br />clause.</p>
+        <p begin="00:42:02.950" end="00:42:08.389" tts:direction="ltr">And this comes down to a little bit of the
+<br />version of the database</p>
+        <p begin="00:42:08.389" end="00:42:13.270" tts:direction="ltr">that we are using and that it is storing
+<br />this DD like this format,</p>
+        <p begin="00:42:13.270" end="00:42:21.829" tts:direction="ltr">2020 2-1210, and it's storing it actually
+<br />as a text data type.</p>
+        <p begin="00:42:21.829" end="00:42:24.350" tts:direction="ltr">It's not necessarily a date datatype.</p>
+        <p begin="00:42:24.350" end="00:42:26.949" tts:direction="ltr">As such, it's being a little bit</p>
+        <p begin="00:42:26.949" end="00:42:31.909" tts:direction="ltr">finicky on the way that we need to query
+<br />this.</p>
+        <p begin="00:42:31.909" end="00:42:36.029" tts:direction="ltr">Let's refer back to our there's a lot of
+<br />ways we can remedy this,</p>
+        <p begin="00:42:36.029" end="00:42:39.064" tts:direction="ltr">but let's think back to the tools in our
+<br />toolkit.</p>
+        <p begin="00:42:39.064" end="00:42:43.220" tts:direction="ltr">And we can see here that it is showing in
+<br />this format.</p>
+        <p begin="00:42:43.220" end="00:42:46.899" tts:direction="ltr">2020 3-10 dash oh eight.</p>
+        <p begin="00:42:46.899" end="00:42:49.410" tts:direction="ltr">Let's try and match this exact format.</p>
+        <p begin="00:42:49.410" end="00:42:52.879" tts:direction="ltr">Now, I want to say DD equal to exactly
+<br />that.</p>
+        <p begin="00:42:52.879" end="00:42:54.079" tts:direction="ltr">Now, if I run this,</p>
+        <p begin="00:42:54.079" end="00:42:56.599" tts:direction="ltr">it's still not going to return anything to
+<br />me.</p>
+        <p begin="00:42:56.599" end="00:42:59.639" tts:direction="ltr">But how about if I say, you know what?</p>
+        <p begin="00:42:59.639" end="00:43:04.599" tts:direction="ltr">I don't really care what comes after 2023
+<br />of oh three oh eight.</p>
+        <p begin="00:43:04.599" end="00:43:08.800" tts:direction="ltr">I don't really care because it's all going
+<br />to be zeros.</p>
+        <p begin="00:43:08.800" end="00:43:10.280" tts:direction="ltr">It's just the way that it's stored.</p>
+        <p begin="00:43:10.280" end="00:43:12.399" tts:direction="ltr">Let's use the tool in our toolkit and
+<br />think</p>
+        <p begin="00:43:12.399" end="00:43:14.479" tts:direction="ltr">about how can I just say, you know what?</p>
+        <p begin="00:43:14.479" end="00:43:20.880" tts:direction="ltr">I know that I need this to start with 20
+<br />2020, 202-03-0308.</p>
+        <p begin="00:43:20.880" end="00:43:24.759" tts:direction="ltr">I don't really care the timestamp after
+<br />it.</p>
+        <p begin="00:43:24.759" end="00:43:29.934" tts:direction="ltr">What can I do? I'm looking for a partial
+<br />value here.</p>
+        <p begin="00:43:29.934" end="00:43:36.390" tts:direction="ltr">Okay. The partial value that I'm looking
+<br />for is that 202-03-0308.</p>
+        <p begin="00:43:36.390" end="00:43:42.709" tts:direction="ltr">I'm going to use my like wildcard search
+<br />and add a percentage sign after that.</p>
+        <p begin="00:43:43.110" end="00:43:45.349" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:43:45.349" end="00:43:47.909" tts:direction="ltr">it's going to search for anything that has</p>
+        <p begin="00:43:47.909" end="00:43:52.389" tts:direction="ltr">202-03-0308 with any number of characters
+<br />after that.</p>
+        <p begin="00:43:52.389" end="00:43:54.269" tts:direction="ltr">Now once I run this,</p>
+        <p begin="00:43:54.269" end="00:43:58.789" tts:direction="ltr">we can see here that all of this being
+<br />returned to me is all of</p>
+        <p begin="00:43:58.789" end="00:44:00.069" tts:direction="ltr">the purchases that happened on</p>
+        <p begin="00:44:00.069" end="00:44:04.769" tts:direction="ltr">March 8th of 2023 and we're just allowing
+<br />that timestamp to hang out.</p>
+        <p begin="00:44:04.769" end="00:44:09.949" tts:direction="ltr">Now, this is stored as a text type of
+<br />data, not a true date.</p>
+        <p begin="00:44:09.949" end="00:44:12.869" tts:direction="ltr">We could then start to use things like
+<br />date functions and things.</p>
+        <p begin="00:44:12.869" end="00:44:15.629" tts:direction="ltr">We're going to remedy with this situation,</p>
+        <p begin="00:44:15.629" end="00:44:17.909" tts:direction="ltr">a lot of different ways to do so,</p>
+        <p begin="00:44:17.909" end="00:44:21.589" tts:direction="ltr">but a fun fix that again,</p>
+        <p begin="00:44:21.589" end="00:44:24.949" tts:direction="ltr">we're utilizing what we know based on what
+<br />we know so far in this class.</p>
+        <p begin="00:44:24.949" end="00:44:27.709" tts:direction="ltr">As you get more into SQL, if you choose to
+<br />do so,</p>
+        <p begin="00:44:27.709" end="00:44:32.029" tts:direction="ltr">there's additional ways to solve that.
+<br />Perfect.</p>
+        <p begin="00:44:32.029" end="00:44:34.349" tts:direction="ltr">Now I want to show the total amount spent
+<br />during</p>
+        <p begin="00:44:34.349" end="00:44:37.429" tts:direction="ltr">the visit and the first and last names of
+<br />the customer that made the visit.</p>
+        <p begin="00:44:37.429" end="00:44:41.719" tts:direction="ltr">I'm going to quickly here select the first
+<br />name.</p>
+        <p begin="00:44:41.719" end="00:44:47.609" tts:direction="ltr">Last name. Then I want to know the total
+<br />amount spent during the visit.</p>
+        <p begin="00:44:47.609" end="00:44:50.289" tts:direction="ltr">The total amount spent during the visit.</p>
+        <p begin="00:44:50.289" end="00:44:52.570" tts:direction="ltr">When I take a look here at this field,</p>
+        <p begin="00:44:52.570" end="00:44:57.729" tts:direction="ltr">what I need to do is I need to multiply
+<br />the quantity times the price.</p>
+        <p begin="00:44:57.729" end="00:45:00.449" tts:direction="ltr">I'm going to multiply quantity times</p>
+        <p begin="00:45:00.449" end="00:45:07.229" tts:direction="ltr">the price and then what if this was the
+<br />same visitor?</p>
+        <p begin="00:45:07.229" end="00:45:10.110" tts:direction="ltr">I'm saying quantity times price 75,</p>
+        <p begin="00:45:10.110" end="00:45:11.749" tts:direction="ltr">so 75 times one.</p>
+        <p begin="00:45:11.749" end="00:45:13.629" tts:direction="ltr">But then I want to know per visit.</p>
+        <p begin="00:45:13.629" end="00:45:16.029" tts:direction="ltr">I can see here that this visit ID is the
+<br />same.</p>
+        <p begin="00:45:16.029" end="00:45:23.749" tts:direction="ltr">I want to multiply 75 by one and then add
+<br />the product of 50 multiplied by one.</p>
+        <p begin="00:45:23.749" end="00:45:26.189" tts:direction="ltr">In case this quantity is ever two,</p>
+        <p begin="00:45:26.189" end="00:45:28.470" tts:direction="ltr">which it can be, then therefore,</p>
+        <p begin="00:45:28.470" end="00:45:31.029" tts:direction="ltr">I have counted that they bought two
+<br />products.</p>
+        <p begin="00:45:31.029" end="00:45:33.789" tts:direction="ltr">I need to multiply quantity times price,</p>
+        <p begin="00:45:33.789" end="00:45:37.489" tts:direction="ltr">and then I'm going to sum that together.</p>
+        <p begin="00:45:37.489" end="00:45:42.429" tts:direction="ltr">Okay. I'm going to sum that quantity and
+<br />price together.</p>
+        <p begin="00:45:42.429" end="00:45:46.909" tts:direction="ltr">I'm also going to select the Vs ID here.</p>
+        <p begin="00:45:47.150" end="00:45:50.389" tts:direction="ltr">We can see here the visit ID,</p>
+        <p begin="00:45:50.389" end="00:45:53.389" tts:direction="ltr">the first name, the last name, and the
+<br />quantity times the price.</p>
+        <p begin="00:45:53.389" end="00:45:58.390" tts:direction="ltr">I'm going to call this as total amount
+<br />spent.</p>
+        <p begin="00:45:58.390" end="00:46:02.109" tts:direction="ltr">Now, what I want to do here is I need to
+<br />add in my group by,</p>
+        <p begin="00:46:02.109" end="00:46:07.189" tts:direction="ltr">so I'm going to say group by V dot Vs ID,</p>
+        <p begin="00:46:07.189" end="00:46:11.389" tts:direction="ltr">first name, last name.</p>
+        <p begin="00:46:12.989" end="00:46:18.779" tts:direction="ltr">Now when I run this, Okay.</p>
+        <p begin="00:46:18.779" end="00:46:21.019" tts:direction="ltr">Ambiguous column name price.</p>
+        <p begin="00:46:21.019" end="00:46:26.099" tts:direction="ltr">That's right, remember because we queried
+<br />into that day table as well.</p>
+        <p begin="00:46:26.099" end="00:46:30.539" tts:direction="ltr">Therefore, because we queried into that
+<br />day table</p>
+        <p begin="00:46:40.110" end="00:46:44.749" tts:direction="ltr">It says, ambiguous column name price.</p>
+        <p begin="00:46:44.750" end="00:46:47.510" tts:direction="ltr">Ambiguous column name price,</p>
+        <p begin="00:46:47.510" end="00:46:49.949" tts:direction="ltr">this is acting a little bit weird here.</p>
+        <p begin="00:46:49.949" end="00:46:52.389" tts:direction="ltr">I know that I have actually though,</p>
+        <p begin="00:46:52.389" end="00:46:54.629" tts:direction="ltr">I did query from tables.</p>
+        <p begin="00:46:54.629" end="00:46:58.389" tts:direction="ltr">Viz product has a price table and day has
+<br />a price table.</p>
+        <p begin="00:46:58.389" end="00:47:01.029" tts:direction="ltr">Therefore, I need to specify what?</p>
+        <p begin="00:47:01.029" end="00:47:04.150" tts:direction="ltr">I want to multiply the quantity times the
+<br />price</p>
+        <p begin="00:47:04.150" end="00:47:07.629" tts:direction="ltr">of the price coming from my Viz product
+<br />table.</p>
+        <p begin="00:47:07.629" end="00:47:12.350" tts:direction="ltr">It's really important here that I come in
+<br />here and I say p dot price.</p>
+        <p begin="00:47:12.350" end="00:47:15.069" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:47:15.070" end="00:47:18.509" tts:direction="ltr">I can see here that I get V ID,</p>
+        <p begin="00:47:18.509" end="00:47:20.749" tts:direction="ltr">the first name, the last name of the
+<br />person that made it,</p>
+        <p begin="00:47:20.749" end="00:47:22.749" tts:direction="ltr">and the total amount spent.</p>
+        <p begin="00:47:22.749" end="00:47:26.869" tts:direction="ltr">Awesome. Then finally here in question
+<br />number six,</p>
+        <p begin="00:47:26.869" end="00:47:29.549" tts:direction="ltr">for every order placed on that day again,
+<br />show the customer's name,</p>
+        <p begin="00:47:29.549" end="00:47:31.389" tts:direction="ltr">the visit ID, the total amount spent,</p>
+        <p begin="00:47:31.389" end="00:47:33.949" tts:direction="ltr">and the number of items included in the
+<br />order.</p>
+        <p begin="00:47:33.949" end="00:47:37.350" tts:direction="ltr">Here I'm showing up above just the total
+<br />amount spent.</p>
+        <p begin="00:47:37.350" end="00:47:40.669" tts:direction="ltr">I know that Corey Hall on this visit that
+<br />occurred on</p>
+        <p begin="00:47:40.669" end="00:47:44.229" tts:direction="ltr">this date spent $125. I'm going to come
+<br />here.</p>
+        <p begin="00:47:44.229" end="00:47:49.509" tts:direction="ltr">I'm going to copy this I'm going to paste
+<br />this down below.</p>
+        <p begin="00:47:49.509" end="00:47:54.149" tts:direction="ltr">But now I want to show the number of items
+<br />included in the order.</p>
+        <p begin="00:47:54.149" end="00:47:57.189" tts:direction="ltr">The only thing that I'm going to change
+<br />here is I'm</p>
+        <p begin="00:47:57.189" end="00:48:00.509" tts:direction="ltr">just going to sum that quantity filled.</p>
+        <p begin="00:48:00.509" end="00:48:02.869" tts:direction="ltr">Because when I sum that quantity fill,</p>
+        <p begin="00:48:02.869" end="00:48:08.109" tts:direction="ltr">it's going to add together the number of
+<br />products that person purchased.</p>
+        <p begin="00:48:08.109" end="00:48:11.069" tts:direction="ltr">It's going to sum that quantity filled
+<br />together,</p>
+        <p begin="00:48:11.069" end="00:48:13.549" tts:direction="ltr">and then of course, we are grouping by
+<br />this ID,</p>
+        <p begin="00:48:13.549" end="00:48:14.909" tts:direction="ltr">first name and last name.</p>
+        <p begin="00:48:14.909" end="00:48:22.110" tts:direction="ltr">Then it will say, this purchase this
+<br />number of different products,</p>
+        <p begin="00:48:22.110" end="00:48:24.529" tts:direction="ltr">just total number of products purchased.</p>
+        <p begin="00:48:24.529" end="00:48:26.829" tts:direction="ltr">For this visit by this person.</p>
+        <p begin="00:48:26.829" end="00:48:32.990" tts:direction="ltr">We're going to say some quantity as total
+<br />items.</p>
+        <p begin="00:48:34.670" end="00:48:36.909" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:48:36.909" end="00:48:39.670" tts:direction="ltr">we can see the total items that were
+<br />purchased.</p>
+        <p begin="00:48:39.670" end="00:48:42.190" tts:direction="ltr">Here I have the total items that were
+<br />purchased,</p>
+        <p begin="00:48:42.190" end="00:48:44.149" tts:direction="ltr">the total amount spent.</p>
+        <p begin="00:48:44.149" end="00:48:46.869" tts:direction="ltr">Then I want to</p>
+        <p begin="00:48:46.869" end="00:48:50.429" tts:direction="ltr">order the results from the highest
+<br />spending visit to the lowest.</p>
+        <p begin="00:48:50.429" end="00:48:57.749" tts:direction="ltr">You can say order by and I'll say total
+<br />amount spent descending.</p>
+        <p begin="00:48:57.749" end="00:49:00.334" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:49:00.334" end="00:49:04.199" tts:direction="ltr">I have the total amount spent and it's
+<br />descending.</p>
+        <p begin="00:49:04.199" end="00:49:10.079" tts:direction="ltr">Perfect. Now finally, we are in our SQLI
+<br />version of the database.</p>
+        <p begin="00:49:10.079" end="00:49:12.999" tts:direction="ltr">I'm going to add a new product to</p>
+        <p begin="00:49:12.999" end="00:49:18.800" tts:direction="ltr">the winter product table with the
+<br />following field values.</p>
+        <p begin="00:49:20.250" end="00:49:24.249" tts:direction="ltr">Using a new product from the winter
+<br />product table,</p>
+        <p begin="00:49:24.249" end="00:49:26.169" tts:direction="ltr">I'm going to add that new product.</p>
+        <p begin="00:49:26.169" end="00:49:29.209" tts:direction="ltr">I'm going to add this new product by first
+<br />off,</p>
+        <p begin="00:49:29.209" end="00:49:31.609" tts:direction="ltr">just querying my winter product table.</p>
+        <p begin="00:49:31.609" end="00:49:36.650" tts:direction="ltr">I'm going to say Slick star from winter
+<br />prod.</p>
+        <p begin="00:49:37.050" end="00:49:42.449" tts:direction="ltr">I'll run that. Awesome. Now, I need to add</p>
+        <p begin="00:49:42.449" end="00:49:47.890" tts:direction="ltr">a new product to the winter product using
+<br />the following field values.</p>
+        <p begin="00:49:47.890" end="00:49:52.369" tts:direction="ltr">I am at this point now manipulating the
+<br />database data.</p>
+        <p begin="00:49:52.369" end="00:50:01.369" tts:direction="ltr">I'm going to say insert into adding a new
+<br />table, Winter prod, okay.</p>
+        <p begin="00:50:02.650" end="00:50:08.849" tts:direction="ltr">I'm going to insert values for the prod
+<br />ID, the prod name,</p>
+        <p begin="00:50:08.849" end="00:50:12.129" tts:direction="ltr">the category, the price,</p>
+        <p begin="00:50:12.129" end="00:50:17.489" tts:direction="ltr">the peak price, the quantity, and the
+<br />description.</p>
+        <p begin="00:50:17.489" end="00:50:20.529" tts:direction="ltr">Those are all the fields of data that I
+<br />want to add data into.</p>
+        <p begin="00:50:20.529" end="00:50:24.209" tts:direction="ltr">Then I'm going to type in values and this
+<br />will allow</p>
+        <p begin="00:50:24.209" end="00:50:28.609" tts:direction="ltr">me to say what data points I want to add
+<br />into these fields.</p>
+        <p begin="00:50:28.609" end="00:50:37.689" tts:direction="ltr">I'm going to add in the prod ID I'm going
+<br />to just look of test prod 12.</p>
+        <p begin="00:50:39.030" end="00:50:44.389" tts:direction="ltr">Okay. The prod name as test product.</p>
+        <p begin="00:50:45.750" end="00:50:49.749" tts:direction="ltr">The category as rental.</p>
+        <p begin="00:50:50.659" end="00:50:55.059" tts:direction="ltr">The price as 800.</p>
+        <p begin="00:50:56.099" end="00:51:01.819" tts:direction="ltr">The peak price as 3,300, sorry,</p>
+        <p begin="00:51:01.819" end="00:51:03.299" tts:direction="ltr">peak price is already there,</p>
+        <p begin="00:51:03.299" end="00:51:06.419" tts:direction="ltr">3,300, the quantity is 20,</p>
+        <p begin="00:51:06.419" end="00:51:09.379" tts:direction="ltr">and the description as test product.</p>
+        <p begin="00:51:09.379" end="00:51:13.419" tts:direction="ltr">Perfect. Now as I'm running this,</p>
+        <p begin="00:51:13.419" end="00:51:16.979" tts:direction="ltr">the product ID needs to be contained
+<br />within those single quotation marks.</p>
+        <p begin="00:51:16.979" end="00:51:18.459" tts:direction="ltr">We're looking at string type of data,</p>
+        <p begin="00:51:18.459" end="00:51:19.979" tts:direction="ltr">test product, same thing,</p>
+        <p begin="00:51:19.979" end="00:51:21.820" tts:direction="ltr">rental, but then I have integer,</p>
+        <p begin="00:51:21.820" end="00:51:24.569" tts:direction="ltr">integer, integer, and then test product.</p>
+        <p begin="00:51:24.569" end="00:51:28.039" tts:direction="ltr">Okay. I'm going to go ahead and insert
+<br />this.</p>
+        <p begin="00:51:28.039" end="00:51:31.759" tts:direction="ltr">We can see this product does not exist to
+<br />begin with.</p>
+        <p begin="00:51:31.759" end="00:51:33.519" tts:direction="ltr">I'm going to say run selection.</p>
+        <p begin="00:51:33.519" end="00:51:36.159" tts:direction="ltr">It says one row affected.</p>
+        <p begin="00:51:36.159" end="00:51:38.879" tts:direction="ltr">I'll say select star from Winter Prod.</p>
+        <p begin="00:51:38.879" end="00:51:42.919" tts:direction="ltr">Now we can see here that the test product
+<br />does exist.</p>
+        <p begin="00:51:42.919" end="00:51:47.879" tts:direction="ltr">Now, that is my query to prove this record
+<br />was added to the Winter Prod table.</p>
+        <p begin="00:51:47.879" end="00:51:50.759" tts:direction="ltr">Then I'm going to write a query to delete
+<br />this product.</p>
+        <p begin="00:51:50.759" end="00:51:54.519" tts:direction="ltr">I'm going to say delete Winter Prod.</p>
+        <p begin="00:51:54.519" end="00:51:57.079" tts:direction="ltr">Now, I'm not going to run that</p>
+        <p begin="00:51:57.079" end="00:52:01.319" tts:direction="ltr">because that's going to delete all the
+<br />records in my Winter Prod table.</p>
+        <p begin="00:52:01.319" end="00:52:05.909" tts:direction="ltr">Instead, I'm going to say where I want to</p>
+        <p begin="00:52:05.909" end="00:52:12.389" tts:direction="ltr">delete where the prod ID is equal to T
+<br />prod 12.</p>
+        <p begin="00:52:12.469" end="00:52:15.149" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:52:15.149" end="00:52:17.669" tts:direction="ltr">I'm going to press Run selection.</p>
+        <p begin="00:52:17.669" end="00:52:20.389" tts:direction="ltr">Oh oh, oh, no, hold on.</p>
+        <p begin="00:52:20.389" end="00:52:23.070" tts:direction="ltr">We're going to select SAR from Winter
+<br />Prod.</p>
+        <p begin="00:52:23.070" end="00:52:28.149" tts:direction="ltr">Where Prod ID equals to test ID prod 12.</p>
+        <p begin="00:52:28.149" end="00:52:31.109" tts:direction="ltr">Delete Winter Prod.</p>
+        <p begin="00:52:31.109" end="00:52:34.549" tts:direction="ltr">Gas go ahead and run this again.</p>
+        <p begin="00:53:32.409" end="00:53:37.090" tts:direction="ltr">After I have round that up above query,</p>
+        <p begin="00:53:37.090" end="00:53:38.530" tts:direction="ltr">I'm going to use my delete.</p>
+        <p begin="00:53:38.530" end="00:53:45.410" tts:direction="ltr">I'm going to say delete from Winter Prod.</p>
+        <p begin="00:53:45.410" end="00:53:52.559" tts:direction="ltr">I Now, you could just do delete Winter
+<br />prod and then where,</p>
+        <p begin="00:53:52.559" end="00:53:55.879" tts:direction="ltr">but I'm going to say delete from Winter
+<br />Prod where</p>
+        <p begin="00:53:55.879" end="00:54:01.839" tts:direction="ltr">prod ID is equal to test prod 12.</p>
+        <p begin="00:54:01.839" end="00:54:05.599" tts:direction="ltr">I'm going to delete that record once we've
+<br />inserted.</p>
+        <p begin="00:54:05.599" end="00:54:07.759" tts:direction="ltr">I'm writing query to delete this record.</p>
+        <p begin="00:54:07.759" end="00:54:12.039" tts:direction="ltr">Now I'm going to go ahead and say run
+<br />selection.</p>
+        <p begin="00:54:12.119" end="00:54:14.559" tts:direction="ltr">Again, this is for part C,</p>
+        <p begin="00:54:14.559" end="00:54:17.279" tts:direction="ltr">writing a query to delete this record.</p>
+        <p begin="00:54:17.279" end="00:54:19.639" tts:direction="ltr">One row is affected,</p>
+        <p begin="00:54:19.639" end="00:54:21.599" tts:direction="ltr">then I'm going to come up here and say
+<br />select star from</p>
+        <p begin="00:54:21.599" end="00:54:23.799" tts:direction="ltr">Winter Prod and hit Enter.</p>
+        <p begin="00:54:23.799" end="00:54:26.479" tts:direction="ltr">Now I can see that that product is now
+<br />gone.</p>
+        <p begin="00:54:26.479" end="00:54:28.799" tts:direction="ltr">All right. Awesome.</p>
+        <p begin="00:54:28.799" end="00:54:32.079" tts:direction="ltr">Turn in your in class assignment as
+<br />instructed.</p>
+        <p begin="00:54:32.079" end="00:54:36.039" tts:direction="ltr">Make sure you give us the text of the
+<br />query and a screenshot of the output.</p>
+        <p begin="00:54:36.039" end="00:54:39.319" tts:direction="ltr">Again, most dates you come upon,</p>
+        <p begin="00:54:39.319" end="00:54:43.039" tts:direction="ltr">you're going to be just fine to say DD
+<br />equal to,</p>
+        <p begin="00:54:43.039" end="00:54:46.039" tts:direction="ltr">and then the year,</p>
+        <p begin="00:54:46.039" end="00:54:47.879" tts:direction="ltr">the month, and the day.</p>
+        <p begin="00:54:47.879" end="00:54:50.559" tts:direction="ltr">But if something does occur like that,</p>
+        <p begin="00:54:50.559" end="00:54:55.879" tts:direction="ltr">think about how can I remedy this issue
+<br />that we were dealing with?</p>
+        <p begin="00:54:55.879" end="00:54:59.479" tts:direction="ltr">That was hopefully a good extension of
+<br />your knowledge.</p>
+        <p begin="00:54:59.479" end="00:55:02.359" tts:direction="ltr">Thanks everybody. Take care.</p>
+    </div>
+  </body>
+</tt>

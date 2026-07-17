@@ -75,6 +75,7 @@ def generate_answer(question: str, chunks: list[dict]) -> dict:
         {
             "course":      chunk["course"],
             "video":       chunk["video"],
+            "source_url":  chunk.get("source_url"),
             "chunk_index": chunk["chunk_index"],
             "start_time":  chunk["start_time"],
             "end_time":    chunk["end_time"],

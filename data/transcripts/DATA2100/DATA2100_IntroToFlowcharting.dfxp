@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>566378153 - 1_dsnd1zdz - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.7" end="00:00:03.7" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:03.7" end="00:00:05.9" tts:direction="ltr">We are going to jump into flowcharting
+<br/>today.</p>
+        <p begin="00:00:05.9" end="00:00:09.3" tts:direction="ltr">Now this next slide may be a little
+<br/>confusing to you because all of a sudden,</p>
+        <p begin="00:00:09.3" end="00:00:11.7" tts:direction="ltr">I'm going to say, Well, why programming.</p>
+        <p begin="00:00:11.7" end="00:00:14.2" tts:direction="ltr">Let's talk about this. We are</p>
+        <p begin="00:00:14.2" end="00:00:16.6" tts:direction="ltr">yes talking about flowcharting today in
+<br/>this video.</p>
+        <p begin="00:00:16.6" end="00:00:18.9" tts:direction="ltr">We're in our flowcharting piece of the
+<br/>class.</p>
+        <p begin="00:00:18.9" end="00:00:22.8" tts:direction="ltr">But flowcharting helps us in our
+<br/>programming.</p>
+        <p begin="00:00:22.8" end="00:00:28" tts:direction="ltr">Flowcharts break down a process into its
+<br/>component parts.</p>
+        <p begin="00:00:28" end="00:00:31.3" tts:direction="ltr">A program is a process that you are</p>
+        <p begin="00:00:31.3" end="00:00:33.3" tts:direction="ltr">creating that you must breakdown into</p>
+        <p begin="00:00:33.3" end="00:00:35.6" tts:direction="ltr">its component parts to write the program,</p>
+        <p begin="00:00:35.6" end="00:00:37.7" tts:direction="ltr">to perform what you would like it to
+<br/>perform.</p>
+        <p begin="00:00:37.7" end="00:00:44.4" tts:direction="ltr">Flowcharting is the way we diagram what
+<br/>then a program will do.</p>
+        <p begin="00:00:44.4" end="00:00:49.4" tts:direction="ltr">As you go throughout this part of this
+<br/>flow charting,</p>
+        <p begin="00:00:49.4" end="00:00:52.2" tts:direction="ltr">I want you to think about how am I
+<br/>breaking down</p>
+        <p begin="00:00:52.2" end="00:00:55.6" tts:direction="ltr">a process into its component parts?</p>
+        <p begin="00:00:55.6" end="00:00:57.5" tts:direction="ltr">Meaning, how am I making it as</p>
+        <p begin="00:00:57.5" end="00:00:59.7" tts:direction="ltr">simple as possible to walk through this
+<br/>process?</p>
+        <p begin="00:00:59.7" end="00:01:01.6" tts:direction="ltr">What are the exact steps?</p>
+        <p begin="00:01:01.6" end="00:01:03.10" tts:direction="ltr">Flowcharting allows you to do that.</p>
+        <p begin="00:01:03.10" end="00:01:07.7" tts:direction="ltr">And then that's going to help us a ton
+<br/>when we get into programming.</p>
+        <p begin="00:01:07.7" end="00:01:10.2" tts:direction="ltr">But before we jump into flowcharting,</p>
+        <p begin="00:01:10.2" end="00:01:14" tts:direction="ltr">it's important that I talk about why
+<br/>programming? Why does this matter?</p>
+        <p begin="00:01:14" end="00:01:15.8" tts:direction="ltr">Then we're going to say, Well, yes,</p>
+        <p begin="00:01:15.8" end="00:01:20.2" tts:direction="ltr">it matters and flowcharts are a good way
+<br/>to begin learning programming.</p>
+        <p begin="00:01:20.2" end="00:01:22.3" tts:direction="ltr">We're going to discuss why programming</p>
+        <p begin="00:01:22.3" end="00:01:24.3" tts:direction="ltr">matters and then why flowcharts help us,</p>
+        <p begin="00:01:24.3" end="00:01:26.1" tts:direction="ltr">and then we'll move on with flow charting.</p>
+        <p begin="00:01:26.1" end="00:01:30" tts:direction="ltr">So programming, I love this quote from
+<br/>Steve Jobs.</p>
+        <p begin="00:01:30" end="00:01:31.4" tts:direction="ltr">Everyone should know how to program</p>
+        <p begin="00:01:31.4" end="00:01:35.6" tts:direction="ltr">a computer because it teaches you how to
+<br/>think.</p>
+        <p begin="00:01:35.6" end="00:01:38.4" tts:direction="ltr">I, I grew up</p>
+        <p begin="00:01:38.4" end="00:01:41.2" tts:direction="ltr">not ever thinking that this would be
+<br/>something I'd be interested in,</p>
+        <p begin="00:01:41.2" end="00:01:45.2" tts:direction="ltr">but as I've learned how to program and how
+<br/>to break a process down,</p>
+        <p begin="00:01:45.2" end="00:01:49.6" tts:direction="ltr">I have found myself thinking a bit
+<br/>differently and in ways that</p>
+        <p begin="00:01:49.6" end="00:01:54.1" tts:direction="ltr">are breaking processes down and allow me
+<br/>to really think through things.</p>
+        <p begin="00:01:54.1" end="00:01:58.6" tts:direction="ltr">I think that you'll enjoy this programming
+<br/>part of our class.</p>
+        <p begin="00:01:58.6" end="00:02:00.5" tts:direction="ltr">It can be frustrating at times,</p>
+        <p begin="00:02:00.5" end="00:02:02.8" tts:direction="ltr">so I do want to put that caveat in there.</p>
+        <p begin="00:02:02.8" end="00:02:04.10" tts:direction="ltr">However, it's extremely rewarding.</p>
+        <p begin="00:02:04.10" end="00:02:06.6" tts:direction="ltr">Once that program runs,</p>
+        <p begin="00:02:06.6" end="00:02:10.4" tts:direction="ltr">once you realize the error that was
+<br/>occurring and how you fixed it,</p>
+        <p begin="00:02:10.4" end="00:02:12.5" tts:direction="ltr">it's really cool. All right.</p>
+        <p begin="00:02:12.5" end="00:02:14.9" tts:direction="ltr">Why programming? Number one,</p>
+        <p begin="00:02:14.9" end="00:02:17.4" tts:direction="ltr">we need computers to do stuff for us</p>
+        <p begin="00:02:17.4" end="00:02:21.4" tts:direction="ltr">and programming is how we are going to
+<br/>handle our data.</p>
+        <p begin="00:02:21.4" end="00:02:24.6" tts:direction="ltr">Why everyone in your company needs to
+<br/>learn how to code and how to help them,</p>
+        <p begin="00:02:24.6" end="00:02:26.7" tts:direction="ltr">why you should learn how to code as a
+<br/>business major,</p>
+        <p begin="00:02:26.7" end="00:02:29.3" tts:direction="ltr">why entrepreneurs need to learn coding.</p>
+        <p begin="00:02:29.3" end="00:02:32.7" tts:direction="ltr">Seven reasons why entrepreneurs need to
+<br/>learn how to code,</p>
+        <p begin="00:02:32.7" end="00:02:36.1" tts:direction="ltr">why learn to code, 17 bets of learning to
+<br/>code.</p>
+        <p begin="00:02:36.1" end="00:02:40.2" tts:direction="ltr">But all in all, coding allows us to have</p>
+        <p begin="00:02:40.2" end="00:02:43.9" tts:direction="ltr">structured thinking and problem solving
+<br/>skills.</p>
+        <p begin="00:02:43.9" end="00:02:49.3" tts:direction="ltr">Um, It also allows us to work with data to
+<br/>answer business questions.</p>
+        <p begin="00:02:49.3" end="00:02:51.5" tts:direction="ltr">It allows us to distinguish yourself from</p>
+        <p begin="00:02:51.5" end="00:02:55.6" tts:direction="ltr">other candidates and command a higher
+<br/>salary and it's fun.</p>
+        <p begin="00:02:55.6" end="00:02:57.6" tts:direction="ltr">But I really want to focus on that
+<br/>structure,</p>
+        <p begin="00:02:57.6" end="00:02:59.9" tts:direction="ltr">thinking and problem solving skills.</p>
+        <p begin="00:02:59.9" end="00:03:03.9" tts:direction="ltr">Then ability to work with data, of course,
+<br/>it's fun.</p>
+        <p begin="00:03:03.9" end="00:03:05.8" tts:direction="ltr">There's so many different languages.</p>
+        <p begin="00:03:05.8" end="00:03:08.6" tts:direction="ltr">Now, something that all of my students in
+<br/>my classes</p>
+        <p begin="00:03:08.6" end="00:03:12.5" tts:direction="ltr">cannot believe is I have watched very few
+<br/>movies.</p>
+        <p begin="00:03:12.5" end="00:03:14.6" tts:direction="ltr">I have. It's not really my thing.</p>
+        <p begin="00:03:14.6" end="00:03:17.3" tts:direction="ltr">I think it's cool that people do, but it's
+<br/>not really my thing.</p>
+        <p begin="00:03:17.3" end="00:03:21.1" tts:direction="ltr">I'm trying to give you a Lord of the Rings
+<br/>analogy to programming languages,</p>
+        <p begin="00:03:21.1" end="00:03:23.10" tts:direction="ltr">but I have never seen the Lord of the
+<br/>Rings analogy.</p>
+        <p begin="00:03:23.10" end="00:03:26.4" tts:direction="ltr">If this is helpful for you, that's great.</p>
+        <p begin="00:03:26.4" end="00:03:30.1" tts:direction="ltr">If it's not, I'm sorry, we can just move
+<br/>on.</p>
+        <p begin="00:03:30.1" end="00:03:33.3" tts:direction="ltr">There's lots of different programming
+<br/>languages.</p>
+        <p begin="00:03:33.3" end="00:03:36.2" tts:direction="ltr">Okay. You can see all these different
+<br/>programming languages</p>
+        <p begin="00:03:36.2" end="00:03:37.7" tts:direction="ltr">and they all have their benefits.</p>
+        <p begin="00:03:37.7" end="00:03:43.3" tts:direction="ltr">They all have their time when they either
+<br/>shine or currently they're shining,</p>
+        <p begin="00:03:43.3" end="00:03:45.10" tts:direction="ltr">whether or not they have</p>
+        <p begin="00:03:45.10" end="00:03:49.7" tts:direction="ltr">increased popularity or if they're going
+<br/>to the wayside.</p>
+        <p begin="00:03:49.7" end="00:03:52.3" tts:direction="ltr">But you'll notice here that there's lots</p>
+        <p begin="00:03:52.3" end="00:03:54.9" tts:direction="ltr">of different types of programming
+<br/>languages.</p>
+        <p begin="00:03:54.9" end="00:03:57.2" tts:direction="ltr">Why Python?</p>
+        <p begin="00:03:57.2" end="00:04:02" tts:direction="ltr">Major companies that use Python include
+<br/>Google Netflix, Facebook,</p>
+        <p begin="00:04:02" end="00:04:04.8" tts:direction="ltr">Instagram, Amazon, Cora, Slack Intel NASA,</p>
+        <p begin="00:04:04.8" end="00:04:06.5" tts:direction="ltr">Dropbox, you name it.</p>
+        <p begin="00:04:06.5" end="00:04:08.6" tts:direction="ltr">Companies are using Python.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p begin="00:04:08.6" end="00:04:09.3" tts:direction="ltr">I. Why Python?</p>
+        <p begin="00:04:09.3" end="00:04:12.2" tts:direction="ltr">It's the fastest growing programming
+<br/>language, number one.</p>
+        <p begin="00:04:12.2" end="00:04:15.2" tts:direction="ltr">There's multiple uses for it, data mining,</p>
+        <p begin="00:04:15.2" end="00:04:16.9" tts:direction="ltr">machine learning, web development,</p>
+        <p begin="00:04:16.9" end="00:04:18.4" tts:direction="ltr">gaming, all of that.</p>
+        <p begin="00:04:18.4" end="00:04:20.6" tts:direction="ltr">Highest demand for high paying job,</p>
+        <p begin="00:04:20.6" end="00:04:22.2" tts:direction="ltr">easy to read, write,</p>
+        <p begin="00:04:22.2" end="00:04:25" tts:direction="ltr">and learn, and a very active developer
+<br/>community.</p>
+        <p begin="00:04:25" end="00:04:27.5" tts:direction="ltr">It's always improving.</p>
+        <p begin="00:04:27.5" end="00:04:31.6" tts:direction="ltr">Even though this is an industry level
+<br/>tool,</p>
+        <p begin="00:04:31.6" end="00:04:33.6" tts:direction="ltr">Python is an industry level tool,</p>
+        <p begin="00:04:33.6" end="00:04:35.10" tts:direction="ltr">it's actually really easy to learn.</p>
+        <p begin="00:04:35.10" end="00:04:40" tts:direction="ltr">This is a programming language that is
+<br/>being used in</p>
+        <p begin="00:04:40" end="00:04:42.1" tts:direction="ltr">industry by those companies that we just</p>
+        <p begin="00:04:42.1" end="00:04:44.9" tts:direction="ltr">talked about and by all sorts of different
+<br/>companies.</p>
+        <p begin="00:04:44.9" end="00:04:47.5" tts:direction="ltr">But it's also extremely easy to learn,</p>
+        <p begin="00:04:47.5" end="00:04:51.1" tts:direction="ltr">which is a great benefit for you if this
+<br/>is your first programming language,</p>
+        <p begin="00:04:51.1" end="00:04:52.9" tts:direction="ltr">which I'm assuming that it is.</p>
+        <p begin="00:04:52.9" end="00:04:55.7" tts:direction="ltr">So what is a program then?</p>
+        <p begin="00:04:55.7" end="00:04:57.4" tts:direction="ltr">A program is a sequence of</p>
+        <p begin="00:04:57.4" end="00:05:00.6" tts:direction="ltr">instructions that specifies how to perform
+<br/>a process.</p>
+        <p begin="00:05:00.6" end="00:05:05.5" tts:direction="ltr">Sequence of instructions that specifies
+<br/>how to perform a process.</p>
+        <p begin="00:05:05.5" end="00:05:09.9" tts:direction="ltr">It consists of inputs from a keyboard,</p>
+        <p begin="00:05:09.9" end="00:05:12.10" tts:direction="ltr">a file, the network, somewhere else,
+<br/>outputs.</p>
+        <p begin="00:05:12.10" end="00:05:14.8" tts:direction="ltr">So it's outputting something to the
+<br/>screen,</p>
+        <p begin="00:05:14.8" end="00:05:17.8" tts:direction="ltr">a file, a network, somewhere else,</p>
+        <p begin="00:05:17.8" end="00:05:20.2" tts:direction="ltr">has actions that you can do math,</p>
+        <p begin="00:05:20.2" end="00:05:21.8" tts:direction="ltr">you can perform functions,</p>
+        <p begin="00:05:21.8" end="00:05:23.8" tts:direction="ltr">and then also makes decisions.</p>
+        <p begin="00:05:23.8" end="00:05:29.3" tts:direction="ltr">There's also parts of the program that
+<br/>there's a beginning and there's a end.</p>
+        <p begin="00:05:29.3" end="00:05:31.1" tts:direction="ltr">Again, it's a sequence of</p>
+        <p begin="00:05:31.1" end="00:05:34.2" tts:direction="ltr">instructions that specifies how to perform
+<br/>a process.</p>
+        <p begin="00:05:34.2" end="00:05:36.8" tts:direction="ltr">But before we start coding,</p>
+        <p begin="00:05:36.8" end="00:05:39.9" tts:direction="ltr">we need to learn to think like a
+<br/>programmer.</p>
+        <p begin="00:05:39.9" end="00:05:44.5" tts:direction="ltr">This is really important. Computers only
+<br/>do what they're told,</p>
+        <p begin="00:05:44.5" end="00:05:47.2" tts:direction="ltr">but they have to be told precisely what to
+<br/>do.</p>
+        <p begin="00:05:47.2" end="00:05:50.3" tts:direction="ltr">A its core programming is about problem
+<br/>solving,</p>
+        <p begin="00:05:50.3" end="00:05:54.9" tts:direction="ltr">thinking logically and breaking down a
+<br/>problem into steps to find a solution.</p>
+        <p begin="00:05:54.9" end="00:05:57.3" tts:direction="ltr">Intro then to flowchart.</p>
+        <p begin="00:05:57.3" end="00:05:59.9" tts:direction="ltr">We know it's programming is important.</p>
+        <p begin="00:05:59.9" end="00:06:04.4" tts:direction="ltr">It's how we break down a process into its
+<br/>component parts.</p>
+        <p begin="00:06:04.4" end="00:06:09.6" tts:direction="ltr">Whatever we program is exactly what the
+<br/>program is going to execute,</p>
+        <p begin="00:06:09.6" end="00:06:13" tts:direction="ltr">whether it's going to fail or whether it's
+<br/>going to succeed.</p>
+        <p begin="00:06:13" end="00:06:16.7" tts:direction="ltr">It's a fantastic way of building
+<br/>structured problem solving.</p>
+        <p begin="00:06:16.7" end="00:06:18.8" tts:direction="ltr">It's also the way that we are dealing with</p>
+        <p begin="00:06:18.8" end="00:06:22.10" tts:direction="ltr">data in this data and information systems
+<br/>class.</p>
+        <p begin="00:06:22.10" end="00:06:27.9" tts:direction="ltr">Now, as we jump then into flowcharts, why
+<br/>flowcharts?</p>
+        <p begin="00:06:27.9" end="00:06:31.1" tts:direction="ltr">Technology can automate processes,</p>
+        <p begin="00:06:31.1" end="00:06:32.8" tts:direction="ltr">all sorts of processes.</p>
+        <p begin="00:06:32.8" end="00:06:37.3" tts:direction="ltr">As you are inserting and updating records
+<br/>of data in your database,</p>
+        <p begin="00:06:37.3" end="00:06:39.9" tts:direction="ltr">we can automate all of those things.</p>
+        <p begin="00:06:39.9" end="00:06:42.3" tts:direction="ltr">Instead of having to go in and manually
+<br/>change</p>
+        <p begin="00:06:42.3" end="00:06:45.5" tts:direction="ltr">people's ages as they have a birthday,</p>
+        <p begin="00:06:45.5" end="00:06:48.5" tts:direction="ltr">we can have a process that automates that.</p>
+        <p begin="00:06:48.5" end="00:06:53.1" tts:direction="ltr">We can have all sorts of processes that
+<br/>automate all of our data um,</p>
+        <p begin="00:06:53.1" end="00:06:55.6" tts:direction="ltr">that is being pulled into our data
+<br/>warehouse</p>
+        <p begin="00:06:55.6" end="00:06:57.3" tts:direction="ltr">through our enterprise data systems,</p>
+        <p begin="00:06:57.3" end="00:07:00.5" tts:direction="ltr">as it's being pushed into our BI and
+<br/>analytics tools,</p>
+        <p begin="00:07:00.5" end="00:07:03" tts:direction="ltr">technology automates those processes.</p>
+        <p begin="00:07:03" end="00:07:05.5" tts:direction="ltr">But before we automate a process,</p>
+        <p begin="00:07:05.5" end="00:07:08.7" tts:direction="ltr">we have to understand the process.</p>
+        <p begin="00:07:08.7" end="00:07:10.8" tts:direction="ltr">Then what about flowcharts?</p>
+        <p begin="00:07:10.8" end="00:07:12.9" tts:direction="ltr">Flowcharts are easily understandable by</p>
+        <p begin="00:07:12.9" end="00:07:15.3" tts:direction="ltr">both technical and non technical people,</p>
+        <p begin="00:07:15.3" end="00:07:16.9" tts:direction="ltr">so that's a major benefit.</p>
+        <p begin="00:07:16.9" end="00:07:19" tts:direction="ltr">If you're working on a new process,</p>
+        <p begin="00:07:19" end="00:07:21.3" tts:direction="ltr">whether that's programming or whether</p>
+        <p begin="00:07:21.3" end="00:07:23.7" tts:direction="ltr">that's in accounting or whether that's in</p>
+        <p begin="00:07:23.7" end="00:07:25.7" tts:direction="ltr">something with agriculture or whether</p>
+        <p begin="00:07:25.7" end="00:07:28.9" tts:direction="ltr">that's something in the sports and
+<br/>entertainment industry.</p>
+        <p begin="00:07:28.9" end="00:07:30.5" tts:direction="ltr">If you're working on any sort of process,</p>
+        <p begin="00:07:30.5" end="00:07:32.1" tts:direction="ltr">which we all do all the time,</p>
+        <p begin="00:07:32.1" end="00:07:36.9" tts:direction="ltr">a flowchart can help us communicate that
+<br/>process.</p>
+        <p begin="00:07:36.9" end="00:07:39.1" tts:direction="ltr">It's not only using technology,</p>
+        <p begin="00:07:39.1" end="00:07:41.8" tts:direction="ltr">but of course in all industries and
+<br/>another fun fact,</p>
+        <p begin="00:07:41.8" end="00:07:45.3" tts:direction="ltr">there are shapes involved in the
+<br/>flowchart.</p>
+        <p begin="00:07:45.9" end="00:07:48.5" tts:direction="ltr">When to use flowcharts,</p>
+        <p begin="00:07:48.5" end="00:07:51.8" tts:direction="ltr">when you want, need really ought to
+<br/>understand a process.</p>
+        <p begin="00:07:51.8" end="00:07:53.8" tts:direction="ltr">Things like software development,</p>
+        <p begin="00:07:53.8" end="00:07:57.3" tts:direction="ltr">business process modeling to make any
+<br/>decisions,</p>
+        <p begin="00:07:57.3" end="00:08:02.2" tts:direction="ltr">all those different types of things can be
+<br/>helpful with a flowchart.</p>
+        <p begin="00:08:02.2" end="00:08:07.3" tts:direction="ltr">This works for highly complex and very
+<br/>simple processes.</p>
+        <p begin="00:08:07.3" end="00:08:08.9" tts:direction="ltr">You can use it for both.</p>
+        <p begin="00:08:08.9" end="00:08:11.3" tts:direction="ltr">Now there's different flow charting
+<br/>symbols</p>
+        <p begin="00:08:11.3" end="00:08:13.3" tts:direction="ltr">as you'll read about in your textbook.</p>
+        <p begin="00:08:13.3" end="00:08:15.5" tts:direction="ltr">These flow charting symbols,</p>
+        <p begin="00:08:15.5" end="00:08:20.3" tts:direction="ltr">we've simplified them down to these six
+<br/>flowcharting symbols.</p>
+        <p begin="00:08:20.3" end="00:08:25.2" tts:direction="ltr">This first one is the start and end
+<br/>symbol.</p>
+        <p begin="00:08:25.2" end="00:08:26.7" tts:direction="ltr">We then have our input.</p>
+        <p begin="00:08:26.7" end="00:08:30.1" tts:direction="ltr">This is basically saying the beginning and
+<br/>the end of the process.</p>
+        <p begin="00:08:30.1" end="00:08:34.3" tts:direction="ltr">We then have our input outputs that
+<br/>parallelogram.</p>
+        <p begin="00:08:34.3" end="00:08:37.3" tts:direction="ltr">The action symbol, which is just a
+<br/>rectangle,</p>
+        <p begin="00:08:37.3" end="00:08:42.2" tts:direction="ltr">this is saying that we are representing a
+<br/>function or an action.</p>
+        <p begin="00:08:42.2" end="00:08:47.5" tts:direction="ltr">The flow line is the movement to the next
+<br/>piece of the process.</p>
+        <p begin="00:08:47.5" end="00:08:51.7" tts:direction="ltr">The decision symbol is where decision
+<br/>needs to be made.</p>
+        <p begin="00:08:51.7" end="00:08:53.10" tts:direction="ltr">Then the connector is used</p>
+        <p begin="00:08:53.10" end="00:09:02.2" tts:direction="ltr">when more than two or more arrows, need to
+<br/>come together.</p>
+        <p begin="00:09:02.2" end="00:09:05.3" tts:direction="ltr">We have these different flowcharting
+<br/>symbols.</p>
+        <p begin="00:09:05.3" end="00:09:08" tts:direction="ltr">Now, there's some basic flowchart
+<br/>guidelines here.</p>
+        <p begin="00:09:08" end="00:09:10.9" tts:direction="ltr">Of course, I share the PowerPoint slide
+<br/>with you.</p>
+        <p begin="00:09:10.9" end="00:09:13.9" tts:direction="ltr">And one of them is completeness.</p>
+        <p begin="00:09:13.9" end="00:09:20.6" tts:direction="ltr">Flowcharts should be complete so all the
+<br/>steps and decisions are included.</p>
+        <p begin="00:09:20.6" end="00:09:22.7" tts:direction="ltr">It should be really clear how to read it.</p>
+        <p begin="00:09:22.7" end="00:09:23.9" tts:direction="ltr">The flow directions,</p>
+        <p begin="00:09:23.9" end="00:09:30.4" tts:direction="ltr">flowcharts should flow from top to bottom
+<br/>and or left to right.</p>
+        <p begin="00:09:30.4" end="00:09:34.10" tts:direction="ltr">There's a they'll start normally up here
+<br/>and they'll flow</p>
+        <p begin="00:09:34.10" end="00:09:39.9" tts:direction="ltr">either straight down or they'll start up
+<br/>here and go like this, if you will.</p>
+        <p begin="00:09:39.9" end="00:09:45.8" tts:direction="ltr">I when we have a decision symbol,</p>
+        <p begin="00:09:45.8" end="00:09:48.7" tts:direction="ltr">only one flow line will enter a decision
+<br/>symbol and</p>
+        <p begin="00:09:48.7" end="00:09:52.7" tts:direction="ltr">two flow lines will exit that decision
+<br/>symbol.</p>
+        <p begin="00:09:52.7" end="00:09:56.5" tts:direction="ltr">There is one single flow,</p>
+        <p begin="00:09:56.6" end="00:10:01.1" tts:direction="ltr">there's one single of these to start a
+<br/>process,</p>
+        <p begin="00:10:01.1" end="00:10:05.10" tts:direction="ltr">and then only a single flow line should
+<br/>enter an end symbol.</p>
+        <p begin="00:10:05.10" end="00:10:09.9" tts:direction="ltr">There can be multiple end symbols which
+<br/>will look like this,</p>
+        <p begin="00:10:09.9" end="00:10:14.3" tts:direction="ltr">but there is only one flow line going to
+<br/>each end symbol.</p>
+        <p begin="00:10:14.3" end="00:10:16.5" tts:direction="ltr">Then finally, when we need to bring in</p>
+        <p begin="00:10:16.5" end="00:10:22.1" tts:direction="ltr">multiple connectors multiple flows into
+<br/>one connector,</p>
+        <p begin="00:10:22.1" end="00:10:26.1" tts:direction="ltr">we can do that, but only one arrow will
+<br/>leave the connector.</p>
+        <p begin="00:10:26.1" end="00:10:28.9" tts:direction="ltr">Why don't we design a flowchart,</p>
+        <p begin="00:10:28.9" end="00:10:32.5" tts:direction="ltr">and then you can also refer back to these
+<br/>as those guidelines.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p begin="00:10:32.5" end="00:10:33.2" tts:direction="ltr">All right. Let's try it out.</p>
+        <p begin="00:10:33.2" end="00:10:36.8" tts:direction="ltr">We're going to create a flowchart and
+<br/>lucid chart that models the process</p>
+        <p begin="00:10:36.8" end="00:10:41.1" tts:direction="ltr">to determine the income tax you owe on a
+<br/>paycheck, okay?</p>
+        <p begin="00:10:41.1" end="00:10:42.9" tts:direction="ltr">We are going to assume</p>
+        <p begin="00:10:42.9" end="00:10:49.5" tts:direction="ltr">a flat 25% tax rate and the process should
+<br/>accept a paycheck amount,</p>
+        <p begin="00:10:49.5" end="00:10:55.1" tts:direction="ltr">perform the calculation, and print out the
+<br/>tax amount and the net pay amount.</p>
+        <p begin="00:10:55.1" end="00:10:57.4" tts:direction="ltr">We're going to try this out. Now I'm going
+<br/>to</p>
+        <p begin="00:10:57.4" end="00:10:59.10" tts:direction="ltr">stop this video here and restart another
+<br/>one.</p>
+        <p begin="00:10:59.10" end="00:11:02.2" tts:direction="ltr">In the interim between these two videos,</p>
+        <p begin="00:11:02.2" end="00:11:05.3" tts:direction="ltr">make sure you log in to Lucidchart.</p>
+        <p begin="00:11:05.3" end="00:11:10.10" tts:direction="ltr">You are being asked to create a free
+<br/>student account with Lucidchart,</p>
+        <p begin="00:11:10.10" end="00:11:13.5" tts:direction="ltr">please go ahead and do that and then come
+<br/>back with</p>
+        <p begin="00:11:13.5" end="00:11:17.5" tts:direction="ltr">me and we will try out this flowchart.</p>
+    </div>
+  </body>
+</tt>

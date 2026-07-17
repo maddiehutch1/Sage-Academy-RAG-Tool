@@ -2,15 +2,15 @@
 
 A prototype that lets students ask questions about course content and receive answers grounded in real lecture transcripts — with source citations back to the exact video and timestamp.
 
-**Courses indexed:** IS 3600: Introduction to Cloud Computing (27 lectures) · DATA 2100: Data and Information in Business (26 lectures)
+**Courses indexed:** IS 3600: Introduction to Cloud Computing · DATA 2100: Data and Information in Business
 
 ---
 
 ## How it works
 
-1. **Ingest** — SRT transcript files are chunked, embedded with `text-embedding-3-small`, and stored in PostgreSQL with pgvector.
+1. **Ingest** — SRT and DFXP transcript files are chunked, embedded with `text-embedding-3-small`, and stored in PostgreSQL with pgvector.
 2. **Retrieve** — A student's question is embedded the same way and matched against stored chunks by cosine similarity.
-3. **Answer** — The top 5 chunks are passed to `gpt-4o-mini` with a grounded prompt. The response includes the answer and a source list with video name, course, and timestamp range.
+3. **Answer** — The top 5 chunks are passed to `gpt-4o-mini` with a grounded prompt. The response includes the answer and a source list with video name, course, timestamp range, and a direct link to watch the video at that exact moment.
 
 ```
 Student question
@@ -114,23 +114,46 @@ Frontend runs at http://localhost:3000.
 
 > Run this once after setup, or again any time you add new transcript files.
 
-Each `.srt` transcript in `data/transcripts/` needs a companion `.json` sidecar with course and video metadata:
+Transcripts live in `data/transcripts/` organized by course:
+
+```
+data/transcripts/
+  DATA2100/    ← all DATA 2100 .srt, .dfxp, and .json sidecar files
+  IS3600/      ← all IS 3600 .srt and .json sidecar files
+```
+
+Two transcript formats are supported:
+
+| Format | Extension | Notes |
+|--------|-----------|-------|
+| SubRip | `.srt` | Plain-text subtitles with `HH:MM:SS,mmm` timestamps |
+| DFXP/TTML | `.dfxp` | XML caption format with `HH:MM:SS.frac` timestamps |
+
+Each transcript file needs a companion `.json` sidecar **in the same folder** with course and video metadata:
 
 ```json
 {
   "course": "IS 3600: Introduction to Cloud Computing",
   "video": "Lecture 4: EC2",
-  "source_url": null
+  "source_url": "https://www.kaltura.com/..."
 }
 ```
 
-All 53 transcripts currently in `data/transcripts/` already have their sidecars. To run ingestion:
+All transcripts currently in `data/transcripts/` already have their sidecars. To run ingestion:
 
 ```
 python scripts/ingest.py
 ```
 
 This is idempotent — re-running it clears and re-indexes chunks for each file without duplicating data.
+
+## Syncing video URLs (without re-ingesting)
+
+If you add or update a `source_url` in a sidecar `.json` after the initial ingest, run this instead of the full ingest — it only updates the URL column in the DB and skips all the expensive embedding calls:
+
+```
+python scripts/sync_source_urls.py
+```
 
 ---
 
@@ -166,10 +189,16 @@ Latest result (2026-07-16): 8/8 questions, 0 weak retrieval flags.
 
 ```
 backend/          FastAPI app (main.py, retrieval.py, answer.py, db.py)
-data/transcripts/ SRT transcripts + JSON sidecar metadata files
+data/transcripts/
+  DATA2100/       DATA 2100 transcripts (.srt, .dfxp) + JSON sidecar metadata
+  IS3600/         IS 3600 transcripts (.srt) + JSON sidecar metadata
 db/               schema.sql (applied automatically by Docker on first run)
 frontend/         Next.js app (app/page.tsx is the main UI)
-scripts/          ingest.py, validate_index.py, run_eval.py
+scripts/
+  ingest.py           chunk + embed transcripts into pgvector (SRT and DFXP)
+  sync_source_urls.py update video URLs in DB from sidecar files (no re-embed)
+  validate_index.py   smoke-test retrieval with a sample question
+  run_eval.py         full eval harness; writes report to tests/eval_results/
 tests/
   eval_questions.json     8 representative student questions with expected keywords
   eval_results/           timestamped Markdown eval reports
@@ -181,19 +210,18 @@ aiDocs/           architecture, context, PRD, changelog
 
 ## Adding transcripts in the future
 
-1. Drop the `.srt` file into `data/transcripts/`.
-2. Create a matching `.json` sidecar with `course`, `video`, and `source_url` fields.
+1. Drop the `.srt` or `.dfxp` file into the appropriate subfolder (`data/transcripts/DATA2100/` or `data/transcripts/IS3600/`).
+2. Create a matching `.json` sidecar in the same folder with `course`, `video`, and `source_url` fields.
 3. Run `python scripts/ingest.py`.
 
 ---
 
 ## Future improvements
 
-These were identified during Phase 5 validation and deferred intentionally:
+These were identified during development and deferred intentionally:
 
 - **Eval coverage for DATA 2100** — `tests/eval_questions.json` only covers IS 3600 topics. Adding SQL, Python, and Excel questions would validate DATA 2100 retrieval quality.
-- **Prompt tuning for edge cases** — questions about topics covered lightly in a single lecture (e.g. on-demand vs. reserved pricing) sometimes produce conservative answers. A revised system prompt or a reranking step could help.
+- **Prompt tuning for edge cases** — questions about topics covered lightly in a single lecture sometimes produce conservative answers. A revised system prompt or a reranking step could help.
 - **Course filter in the UI** — students can't currently restrict questions to one course. A dropdown would improve relevance for cross-course deployments.
-- **Missing lectures** — IS 3600 skips lectures 15, 16, 25, and 28. Adding those transcripts would close gaps.
-- **Source URL support** — the schema has a `source_url` field; wiring it to the UI would let students jump directly to the video moment being cited.
+- **Missing IS 3600 lectures** — lectures 15, 16, 25, and 28 are not yet indexed. Adding those transcripts would close gaps.
 - **Authentication** — the API has no auth. Fine for a prototype; needs a gate before any wider rollout.

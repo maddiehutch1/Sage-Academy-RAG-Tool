@@ -94,8 +94,9 @@ The system has five main layers:
 5. Presentation layer
    - Displays the question form
    - Shows the answer
-   - Shows the recommended video and timestamp
-   - Includes a short explanation of why the content is relevant
+   - Shows source cards with recommended video, course, and timestamp range
+   - Embeds a Kaltura video player directly in each source card using the `embedPlaykitJs` iframe format; seeks to the cited timestamp via the `kalturaSeekFrom` URL parameter
+   - Includes a short excerpt confirming why that section is relevant
 
 ## End-to-End Flow
 1. A transcript file is ingested and parsed.
@@ -147,7 +148,8 @@ sage-academy-rag-tool/
 ### Frontend
 - Provide a simple interface for student questions
 - Display the answer and source reference
-- Optionally show the relevant excerpt or video link
+- Show source cards with transcript excerpt and timestamp badge
+- Embed the Kaltura video player inside each source card; convert the stored `extwidget/preview` URL to a `cdnapisec.kaltura.com/embedPlaykitJs` iframe src with `kalturaSeekFrom=<seconds>` and `autoplay=true` so playback begins at the exact cited moment
 
 ### Backend API
 - Accept question requests
@@ -254,13 +256,13 @@ A simple MVP can use the following concepts:
 - Use simple metadata and a basic retrieval flow first.
 - Avoid adding a full knowledge graph or advanced personalization yet.
 
-## Decisions Still to Finalize
-- Which transcript formats to support first
-- Exact embedding model and LLM model choice
-- Chunk size and overlap strategy
-- How video links and timestamps will be stored and displayed
-- Local vs hosted deployment approach
-- Whether to support multi-course indexing in the first pass
+## Decisions Finalized in v0.1
+- Transcript formats: SRT and DFXP/TTML, organized in per-course subfolders (`DATA2100/`, `IS3600/`)
+- Embedding model: `text-embedding-3-small`; LLM: `gpt-4o-mini`
+- Chunk size: 400 tokens with 5-entry overlap
+- Video links stored in the `videos.source_url` column (Kaltura `extwidget/preview` URLs); the frontend converts them to `embedPlaykitJs` iframe URLs with `kalturaSeekFrom` for in-chat playback at the cited timestamp
+- Local deployment via Docker Compose (pgvector) + uvicorn + Next.js dev server
+- Multi-course indexing supported (IS 3600 and DATA 2100 both indexed)
 
 ## Recommended Next Step
 The next step should be to turn this architecture into a concrete implementation plan with:

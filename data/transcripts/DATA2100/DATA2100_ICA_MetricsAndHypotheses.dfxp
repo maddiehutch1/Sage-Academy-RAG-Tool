@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>583012973 - 1_2sstv7f6 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.4" end="00:00:03.4" tts:direction="ltr">Hi, Data 2100 students.</p>
+        <p begin="00:00:03.4" end="00:00:05.5" tts:direction="ltr">Remember at the beginning of the semester
+<br/>when we</p>
+        <p begin="00:00:05.5" end="00:00:07.8" tts:direction="ltr">went through some basic Excel content.</p>
+        <p begin="00:00:07.8" end="00:00:09.10" tts:direction="ltr">And then I told you, we're going to take a
+<br/>break.</p>
+        <p begin="00:00:09.10" end="00:00:11.10" tts:direction="ltr">We're going to dive into databases,</p>
+        <p begin="00:00:11.10" end="00:00:14.5" tts:direction="ltr">learn about structured query language,</p>
+        <p begin="00:00:14.5" end="00:00:16.4" tts:direction="ltr">and then we did Python programming.</p>
+        <p begin="00:00:16.4" end="00:00:21.3" tts:direction="ltr">Well, now we're back to Excel ready to
+<br/>work on this in class assignment.</p>
+        <p begin="00:00:21.3" end="00:00:23.8" tts:direction="ltr">So let's go ahead and do just that.</p>
+        <p begin="00:00:23.8" end="00:00:25.10" tts:direction="ltr">So I am opening up my in class assignment.</p>
+        <p begin="00:00:25.10" end="00:00:28.6" tts:direction="ltr">If you have not already tried this on your
+<br/>own, please do so.</p>
+        <p begin="00:00:28.6" end="00:00:33.2" tts:direction="ltr">So really key part of learning is trying
+<br/>something and then seeing where you</p>
+        <p begin="00:00:33.2" end="00:00:35.1" tts:direction="ltr">did or did not understand it and</p>
+        <p begin="00:00:35.1" end="00:00:38.3" tts:direction="ltr">then reflecting on that and learning from
+<br/>that experience.</p>
+        <p begin="00:00:38.3" end="00:00:40.4" tts:direction="ltr">So in this in class assignment,</p>
+        <p begin="00:00:40.4" end="00:00:43.4" tts:direction="ltr">we are going to be using a dataset to
+<br/>create</p>
+        <p begin="00:00:43.4" end="00:00:48.7" tts:direction="ltr">a multiple variables table using an Excel
+<br/>based dataset, okay?</p>
+        <p begin="00:00:48.7" end="00:00:52.5" tts:direction="ltr">We are going to use this table to develop
+<br/>hypotheses based on</p>
+        <p begin="00:00:52.5" end="00:00:56.7" tts:direction="ltr">observed relationships between classes of
+<br/>observations.</p>
+        <p begin="00:00:56.7" end="00:00:59" tts:direction="ltr">This is actually a real world data set.</p>
+        <p begin="00:00:59" end="00:01:00.4" tts:direction="ltr">We always knew this day would come.</p>
+        <p begin="00:01:00.4" end="00:01:04.4" tts:direction="ltr">The Masonry Building 2,100 Excel document
+<br/>contains data</p>
+        <p begin="00:01:04.4" end="00:01:09.1" tts:direction="ltr">regarding masonry buildings found within
+<br/>the city of Seattle, Washington.</p>
+        <p begin="00:01:09.1" end="00:01:13.5" tts:direction="ltr">For each building, the following variables
+<br/>are shown the observation ID.</p>
+        <p begin="00:01:13.5" end="00:01:15.7" tts:direction="ltr">This is the primary key value or</p>
+        <p begin="00:01:15.7" end="00:01:19.9" tts:direction="ltr">the unique identifier for each record in
+<br/>the dataset.</p>
+        <p begin="00:01:19.9" end="00:01:24.5" tts:direction="ltr">Then we have our preliminary risk value.</p>
+        <p begin="00:01:24.5" end="00:01:28.7" tts:direction="ltr">This is the level of major damage and
+<br/>injury in the event of</p>
+        <p begin="00:01:28.7" end="00:01:31.5" tts:direction="ltr">the level of risk of major damage and
+<br/>injury</p>
+        <p begin="00:01:31.5" end="00:01:34.3" tts:direction="ltr">in the event of a seismic event or an
+<br/>earthquake.</p>
+        <p begin="00:01:34.3" end="00:01:37.2" tts:direction="ltr">The year built, this is the year the
+<br/>building was built,</p>
+        <p begin="00:01:37.2" end="00:01:38.9" tts:direction="ltr">the number of stories, the building use,</p>
+        <p begin="00:01:38.9" end="00:01:41.3" tts:direction="ltr">the risk value, the era, all these things.</p>
+        <p begin="00:01:41.3" end="00:01:43.2" tts:direction="ltr">So we have all these different data
+<br/>points.</p>
+        <p begin="00:01:43.2" end="00:01:46.4" tts:direction="ltr">This is our metadata or our data about our
+<br/>data about all of</p>
+        <p begin="00:01:46.4" end="00:01:50.1" tts:direction="ltr">these different buildings here located
+<br/>within the city of Seattle.</p>
+        <p begin="00:01:50.1" end="00:01:57.8" tts:direction="ltr">So we are going to use this data to help
+<br/>us understand what is going on</p>
+        <p begin="00:01:57.8" end="00:02:01.3" tts:direction="ltr">with the need for</p>
+        <p begin="00:02:01.3" end="00:02:04" tts:direction="ltr">retrofitting these buildings in</p>
+        <p begin="00:02:04" end="00:02:07.1" tts:direction="ltr">case of a seismic event or an earthquake,
+<br/>right?</p>
+        <p begin="00:02:07.1" end="00:02:11.4" tts:direction="ltr">So we're going to start to develop some
+<br/>hypotheses about these buildings,</p>
+        <p begin="00:02:11.4" end="00:02:14.8" tts:direction="ltr">and um and look at,</p>
+        <p begin="00:02:14.8" end="00:02:18.2" tts:direction="ltr">why are certain eras more prone to this</p>
+        <p begin="00:02:18.2" end="00:02:22.1" tts:direction="ltr">or certain eras have these types of
+<br/>buildings, things like that.</p>
+        <p begin="00:02:22.1" end="00:02:25.6" tts:direction="ltr">We're going to submit a single Word
+<br/>document that includes the following.</p>
+        <p begin="00:02:25.6" end="00:02:29.6" tts:direction="ltr">We're going to submit an Excel document to
+<br/>create a multiple variables table.</p>
+        <p begin="00:02:29.6" end="00:02:31.8" tts:direction="ltr">And in this multiple variables table,</p>
+        <p begin="00:02:31.8" end="00:02:35.2" tts:direction="ltr">we are going to be using this data if you
+<br/>can see this right here.</p>
+        <p begin="00:02:35.2" end="00:02:38.3" tts:direction="ltr">So we're going to be using this data.</p>
+        <p begin="00:02:38.3" end="00:02:41.9" tts:direction="ltr">And this data, there is an observation ID,
+<br/>the preliminary risk.</p>
+        <p begin="00:02:41.9" end="00:02:45.1" tts:direction="ltr">So we see here that every record in this
+<br/>data</p>
+        <p begin="00:02:45.1" end="00:02:50.1" tts:direction="ltr">represents the represents a building
+<br/>within our dataset, right?</p>
+        <p begin="00:02:50.1" end="00:02:52" tts:direction="ltr">Every record represents a building.</p>
+        <p begin="00:02:52" end="00:02:56.6" tts:direction="ltr">So this record of number three is a medium
+<br/>risk is</p>
+        <p begin="00:02:56.6" end="00:03:02.3" tts:direction="ltr">that medium risk in the event of a seismic
+<br/>event. It's at this address.</p>
+        <p begin="00:03:02.3" end="00:03:05.3" tts:direction="ltr">It was built in this year. It has these
+<br/>number of stories.</p>
+        <p begin="00:03:05.3" end="00:03:09.2" tts:direction="ltr">The era of which it was built is after
+<br/>1930.</p>
+        <p begin="00:03:09.2" end="00:03:11.8" tts:direction="ltr">It is you can see over here,</p>
+        <p begin="00:03:11.8" end="00:03:20" tts:direction="ltr">that there is a one in them or the com
+<br/>column for record number three,</p>
+        <p begin="00:03:20" end="00:03:22.8" tts:direction="ltr">and that means that this does have
+<br/>commercial purposes.</p>
+        <p begin="00:03:22.8" end="00:03:25.6" tts:direction="ltr">So a one is basically saying true,</p>
+        <p begin="00:03:25.6" end="00:03:29.8" tts:direction="ltr">meaning that that building is used for
+<br/>commercial purposes.</p>
+        <p begin="00:03:29.8" end="00:03:33.3" tts:direction="ltr">All these other zeros are that, um,</p>
+        <p begin="00:03:33.3" end="00:03:38.5" tts:direction="ltr">referencing, we can see the building line
+<br/>number three,</p>
+        <p begin="00:03:38.5" end="00:03:41.6" tts:direction="ltr">I should say, the commercial has a one in</p>
+        <p begin="00:03:41.6" end="00:03:45.4" tts:direction="ltr">that line has a one in commercial for that
+<br/>building,</p>
+        <p begin="00:03:45.4" end="00:03:47.8" tts:direction="ltr">while office also has a one.</p>
+        <p begin="00:03:47.8" end="00:03:52.2" tts:direction="ltr">So this building is used for commercial
+<br/>and for office use as well.</p>
+        <p begin="00:03:52.2" end="00:03:54.8" tts:direction="ltr">We can also see the occupants</p>
+        <p begin="00:03:54.8" end="00:03:57.8" tts:direction="ltr">And that's the average number of
+<br/>occupants, okay?</p>
+        <p begin="00:03:57.8" end="00:04:00.2" tts:direction="ltr">So what we are supposed to be doing</p>
+        <p begin="00:04:00.2" end="00:04:04" tts:direction="ltr">here is we are supposed to be creating a
+<br/>multiple variables table,</p>
+        <p begin="00:04:04" end="00:04:07.1" tts:direction="ltr">and we're going to use a pivot to do this.</p>
+        <p begin="00:04:07.1" end="00:04:11.5" tts:direction="ltr">But be aware that we're going to need to
+<br/>rearrange some rows and</p>
+        <p begin="00:04:11.5" end="00:04:13.7" tts:direction="ltr">rename columns outside the pivot table</p>
+        <p begin="00:04:13.7" end="00:04:15.6" tts:direction="ltr">by copying and pasting it out elsewhere.</p>
+        <p begin="00:04:15.6" end="00:04:18.1" tts:direction="ltr">So we're going to talk about pivot tables</p>
+        <p begin="00:04:18.1" end="00:04:21.2" tts:direction="ltr">today in the same format as shown in the
+<br/>textbook,</p>
+        <p begin="00:04:21.2" end="00:04:24.4" tts:direction="ltr">um So classes are going to be shown as
+<br/>rows.</p>
+        <p begin="00:04:24.4" end="00:04:25.8" tts:direction="ltr">We talked about classes.</p>
+        <p begin="00:04:25.8" end="00:04:29.3" tts:direction="ltr">We are going to have the measured
+<br/>variables shown as the columns,</p>
+        <p begin="00:04:29.3" end="00:04:32.3" tts:direction="ltr">and then we're going to include this table
+<br/>in the Word document.</p>
+        <p begin="00:04:32.3" end="00:04:38.1" tts:direction="ltr">Now, this multiple variables table is the
+<br/>classes are going to be the eras,</p>
+        <p begin="00:04:38.1" end="00:04:40.9" tts:direction="ltr">and the number of buildings</p>
+        <p begin="00:04:40.9" end="00:04:43.5" tts:direction="ltr">that are in that class is going to be our
+<br/>first metric.</p>
+        <p begin="00:04:43.5" end="00:04:45.2" tts:direction="ltr">The mean number of buildings,</p>
+        <p begin="00:04:45.2" end="00:04:47.4" tts:direction="ltr">given the number of sorry,</p>
+        <p begin="00:04:47.4" end="00:04:48.9" tts:direction="ltr">the mean number of stories,</p>
+        <p begin="00:04:48.9" end="00:04:51.7" tts:direction="ltr">the average number of stories.</p>
+        <p begin="00:04:51.7" end="00:04:55.8" tts:direction="ltr">The mean risk value for the buildings in
+<br/>that era,</p>
+        <p begin="00:04:55.8" end="00:04:59.3" tts:direction="ltr">the total number of buildings that are
+<br/>either high risk or critical risk.</p>
+        <p begin="00:04:59.3" end="00:05:03" tts:direction="ltr">Now, this is something we got to do here
+<br/>is we're going to create</p>
+        <p begin="00:05:03" end="00:05:07.3" tts:direction="ltr">a new column in the dataset then use an if
+<br/>statement to enter one,</p>
+        <p begin="00:05:07.3" end="00:05:10.9" tts:direction="ltr">if the building is critical or high risk,
+<br/>but otherwise zero.</p>
+        <p begin="00:05:10.9" end="00:05:13.7" tts:direction="ltr">If the value in the risk column is greater
+<br/>than a two,</p>
+        <p begin="00:05:13.7" end="00:05:16" tts:direction="ltr">then the building is considered critical
+<br/>or high risk.</p>
+        <p begin="00:05:16" end="00:05:17.5" tts:direction="ltr">So we're going to do that first.</p>
+        <p begin="00:05:17.5" end="00:05:20.6" tts:direction="ltr">Then we're also going to find the average
+<br/>retrofit level for the buildings,</p>
+        <p begin="00:05:20.6" end="00:05:23.3" tts:direction="ltr">the percentage of buildings in that class
+<br/>that are churches in public.</p>
+        <p begin="00:05:23.3" end="00:05:25.5" tts:direction="ltr">The percentage of buildings that are
+<br/>residences,</p>
+        <p begin="00:05:25.5" end="00:05:28.3" tts:direction="ltr">the percentage of buildings that are a
+<br/>commercial,</p>
+        <p begin="00:05:28.3" end="00:05:30.4" tts:direction="ltr">and then the average number of occupants.</p>
+        <p begin="00:05:30.4" end="00:05:32.9" tts:direction="ltr">So let's navigate over here to our Excel
+<br/>spreadsheet.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p begin="00:05:33.5" end="00:05:38.2" tts:direction="ltr">Okay, before we jump into creating our
+<br/>pivot table,</p>
+        <p begin="00:05:38.2" end="00:05:40.1" tts:direction="ltr">we need to start here,</p>
+        <p begin="00:05:40.1" end="00:05:44.2" tts:direction="ltr">and we need to create a new column in the
+<br/>dataset and use</p>
+        <p begin="00:05:44.2" end="00:05:47.1" tts:direction="ltr">an if statement to enter a one if the
+<br/>building</p>
+        <p begin="00:05:47.1" end="00:05:50.2" tts:direction="ltr">is critical or high risk, but otherwise
+<br/>zero.</p>
+        <p begin="00:05:50.2" end="00:05:53.5" tts:direction="ltr">If the value in the high risk column is
+<br/>greater than a two,</p>
+        <p begin="00:05:53.5" end="00:05:58.1" tts:direction="ltr">then the building is considered critical
+<br/>or high risk.</p>
+        <p begin="00:05:58.1" end="00:06:03.9" tts:direction="ltr">Okay? So then here in my Excel document,</p>
+        <p begin="00:06:03.9" end="00:06:08.7" tts:direction="ltr">I'm going to come over to the we're going
+<br/>to come</p>
+        <p begin="00:06:08.7" end="00:06:14.1" tts:direction="ltr">over to the risk column, okay?</p>
+        <p begin="00:06:14.1" end="00:06:17.1" tts:direction="ltr">And in the risk column,</p>
+        <p begin="00:06:17.1" end="00:06:19.8" tts:direction="ltr">we are going to utilize</p>
+        <p begin="00:06:19.8" end="00:06:24.2" tts:direction="ltr">the risk column to create a new column
+<br/>called high crit.</p>
+        <p begin="00:06:24.2" end="00:06:27.1" tts:direction="ltr">I'm going to right click on risk and say
+<br/>insert.</p>
+        <p begin="00:06:27.1" end="00:06:30.5" tts:direction="ltr">And I'm going to create this column and
+<br/>say high crit.</p>
+        <p begin="00:06:30.5" end="00:06:34.8" tts:direction="ltr">And this is just saying that is the value
+<br/>in this risk column,</p>
+        <p begin="00:06:34.8" end="00:06:39.8" tts:direction="ltr">meaning that the building is in high or
+<br/>critical risk, okay?</p>
+        <p begin="00:06:39.8" end="00:06:42.4" tts:direction="ltr">So that's where we're going to start here.</p>
+        <p begin="00:06:42.4" end="00:06:45.1" tts:direction="ltr">So let's go ahead and do that.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:06:46.3" end="00:06:52.1" tts:direction="ltr">We're going to say that if say equal to,</p>
+        <p begin="00:06:52.1" end="00:06:55.9" tts:direction="ltr">if the value in the risk columns,</p>
+        <p begin="00:06:55.9" end="00:06:59.9" tts:direction="ltr">so I two is greater than two,</p>
+        <p begin="00:06:59.9" end="00:07:02.10" tts:direction="ltr">then we are going to place a one.</p>
+        <p begin="00:07:02.10" end="00:07:05.7" tts:direction="ltr">So this if statement works similarly.</p>
+        <p begin="00:07:05.7" end="00:07:08.4" tts:direction="ltr">Think about the if statements we were
+<br/>using in Python.</p>
+        <p begin="00:07:08.4" end="00:07:12.6" tts:direction="ltr">So we're saying if I two is greater than
+<br/>one, so this is the test.</p>
+        <p begin="00:07:12.6" end="00:07:14.6" tts:direction="ltr">This is a conditional expression.</p>
+        <p begin="00:07:14.6" end="00:07:18.4" tts:direction="ltr">If that is true, then we're going to place
+<br/>a one in the cell,</p>
+        <p begin="00:07:18.4" end="00:07:19.8" tts:direction="ltr">right? That's a value of true.</p>
+        <p begin="00:07:19.8" end="00:07:22.2" tts:direction="ltr">That's the parameter that goes here in the
+<br/>cell.</p>
+        <p begin="00:07:22.2" end="00:07:23.8" tts:direction="ltr">If that is not true,</p>
+        <p begin="00:07:23.8" end="00:07:26.4" tts:direction="ltr">then we're going to place a zero here.</p>
+        <p begin="00:07:26.4" end="00:07:29.2" tts:direction="ltr">In this high crit column.</p>
+        <p begin="00:07:29.2" end="00:07:34.1" tts:direction="ltr">So this is a simple if statement in Excel
+<br/>that we utilize to say, okay,</p>
+        <p begin="00:07:34.1" end="00:07:35.8" tts:direction="ltr">if I two is greater than two,</p>
+        <p begin="00:07:35.8" end="00:07:41.2" tts:direction="ltr">place a one here in the high CRT column
+<br/>and a zero if it's not true.</p>
+        <p begin="00:07:41.2" end="00:07:44.5" tts:direction="ltr">So we only want to place a one here if the
+<br/>risk</p>
+        <p begin="00:07:44.5" end="00:07:48.8" tts:direction="ltr">identified in column I is greater than
+<br/>two.</p>
+        <p begin="00:07:48.8" end="00:07:50.10" tts:direction="ltr">Okay? So in this case, we notice that</p>
+        <p begin="00:07:50.10" end="00:07:55.6" tts:direction="ltr">this building does not have a high or
+<br/>critical risk value.</p>
+        <p begin="00:07:55.6" end="00:07:57.9" tts:direction="ltr">But what it does mean is that down here,</p>
+        <p begin="00:07:57.9" end="00:08:00.8" tts:direction="ltr">this building Observation ID</p>
+        <p begin="00:08:00.8" end="00:08:04.7" tts:direction="ltr">number seven does have it is in high or
+<br/>critical risk.</p>
+        <p begin="00:08:04.7" end="00:08:11.5" tts:direction="ltr">So now once we do this is now I could do a
+<br/>sum of the high CRT column, right?</p>
+        <p begin="00:08:11.5" end="00:08:15.6" tts:direction="ltr">I could say, Hey, sum all the values in
+<br/>high crit,</p>
+        <p begin="00:08:15.6" end="00:08:17.3" tts:direction="ltr">and it's going to find the number of</p>
+        <p begin="00:08:17.3" end="00:08:19.8" tts:direction="ltr">buildings that are in high or critical
+<br/>risk, right?</p>
+        <p begin="00:08:19.8" end="00:08:20.9" tts:direction="ltr">So I have one building,</p>
+        <p begin="00:08:20.9" end="00:08:23" tts:direction="ltr">two buildings, three buildings, right?</p>
+        <p begin="00:08:23" end="00:08:24.7" tts:direction="ltr">So there's a one there that indicates that</p>
+        <p begin="00:08:24.7" end="00:08:27.4" tts:direction="ltr">you're in high or critical risk. All
+<br/>right.</p>
+        <p begin="00:08:27.4" end="00:08:32.1" tts:direction="ltr">So now the thing we're going to do next is
+<br/>we're going to highlight all of</p>
+        <p begin="00:08:32.1" end="00:08:33.8" tts:direction="ltr">my column or highlight</p>
+        <p begin="00:08:33.8" end="00:08:37.6" tts:direction="ltr">my entire Excel document by clicking on
+<br/>this handy dandy.</p>
+        <p begin="00:08:37.6" end="00:08:39" tts:direction="ltr">I have no idea what it's called,</p>
+        <p begin="00:08:39" end="00:08:40.9" tts:direction="ltr">but I'm sure it has a name.</p>
+        <p begin="00:08:40.9" end="00:08:43.4" tts:direction="ltr">The triangle over here in the upper left
+<br/>hand corner,</p>
+        <p begin="00:08:43.4" end="00:08:45.6" tts:direction="ltr">I'm going to say insert pivot table.</p>
+        <p begin="00:08:45.6" end="00:08:50.4" tts:direction="ltr">Okay. And we're going to say into a new
+<br/>worksheet, okay?</p>
+        <p begin="00:08:50.4" end="00:08:53.6" tts:direction="ltr">And now I'm here within my new worksheet.</p>
+        <p begin="00:08:53.6" end="00:08:56.7" tts:direction="ltr">If I'm ever trying to edit my pivot table,</p>
+        <p begin="00:08:56.7" end="00:09:00.8" tts:direction="ltr">now a pivot table is how we're going to
+<br/>create my multiple variable tables.</p>
+        <p begin="00:09:00.8" end="00:09:07.6" tts:direction="ltr">Pivot Tables function a lot like group by
+<br/>in Excel, sorry, in SQL.</p>
+        <p begin="00:09:07.6" end="00:09:12.1" tts:direction="ltr">When you have, you know, select era,</p>
+        <p begin="00:09:12.1" end="00:09:14.9" tts:direction="ltr">average number of occupants,</p>
+        <p begin="00:09:14.9" end="00:09:16.8" tts:direction="ltr">and then you would group by</p>
+        <p begin="00:09:16.8" end="00:09:20.6" tts:direction="ltr">the non aggregated field in the select
+<br/>clause, right?</p>
+        <p begin="00:09:20.6" end="00:09:24.1" tts:direction="ltr">So you would group by era, for example.</p>
+        <p begin="00:09:24.1" end="00:09:26.8" tts:direction="ltr">So that's really what we're building out
+<br/>here is this</p>
+        <p begin="00:09:26.8" end="00:09:32.3" tts:direction="ltr">has pivot tables are an amazing tool to
+<br/>condense a lot of data.</p>
+        <p begin="00:09:32.3" end="00:09:35.5" tts:direction="ltr">So we're going to use my pivot table here,</p>
+        <p begin="00:09:35.5" end="00:09:39.10" tts:direction="ltr">and I know that I want my classes and my
+<br/>multiple variable table.</p>
+        <p begin="00:09:39.10" end="00:09:42.2" tts:direction="ltr">To be ras.</p>
+        <p begin="00:09:42.2" end="00:09:45.8" tts:direction="ltr">So I'm going to bring or down to rows.</p>
+        <p begin="00:09:45.8" end="00:09:47.2" tts:direction="ltr">And what you'll notice,</p>
+        <p begin="00:09:47.2" end="00:09:49.2" tts:direction="ltr">so I just dragged erra down to rows,</p>
+        <p begin="00:09:49.2" end="00:09:51.6" tts:direction="ltr">and if your pivot table is not editing,</p>
+        <p begin="00:09:51.6" end="00:09:52.10" tts:direction="ltr">make sure that it is,</p>
+        <p begin="00:09:52.10" end="00:09:55.5" tts:direction="ltr">um that you've clicked into</p>
+        <p begin="00:09:55.5" end="00:09:58.5" tts:direction="ltr">this pivot table kind of editor box over
+<br/>here, okay?</p>
+        <p begin="00:09:58.5" end="00:10:00.7" tts:direction="ltr">So if you click out of it,</p>
+        <p begin="00:10:00.7" end="00:10:02.8" tts:direction="ltr">it goes away, but if you click in, then
+<br/>you can use it.</p>
+        <p begin="00:10:02.8" end="00:10:05.7" tts:direction="ltr">So now I'm going to drag error again into
+<br/>rows.</p>
+        <p begin="00:10:05.7" end="00:10:09.7" tts:direction="ltr">And now I have all my errors are listed
+<br/>out here, right?</p>
+        <p begin="00:10:09.7" end="00:10:14.10" tts:direction="ltr">These are all of the errors that are used
+<br/>over here in my Excel based dataset.</p>
+        <p begin="00:10:14.10" end="00:10:17.9" tts:direction="ltr">So as we're into the data analysis part of
+<br/>the class,</p>
+        <p begin="00:10:17.9" end="00:10:19.5" tts:direction="ltr">we are looking at, all right,</p>
+        <p begin="00:10:19.5" end="00:10:21.3" tts:direction="ltr">here I have all these different arrows,</p>
+        <p begin="00:10:21.3" end="00:10:23.9" tts:direction="ltr">and now I have them all laid out here as</p>
+        <p begin="00:10:23.9" end="00:10:27.7" tts:direction="ltr">classes of my multiple table variable that
+<br/>we are creating.</p>
+        <p begin="00:10:27.7" end="00:10:29.7" tts:direction="ltr">The next thing we want to do</p>
+        <p begin="00:10:29.7" end="00:10:33.6" tts:direction="ltr">So this is the name of the class or the
+<br/>era, right?</p>
+        <p begin="00:10:33.6" end="00:10:36.2" tts:direction="ltr">And then we want the number of buildings
+<br/>that are in</p>
+        <p begin="00:10:36.2" end="00:10:40.4" tts:direction="ltr">that class as a metric within my multiple
+<br/>variable table.</p>
+        <p begin="00:10:40.4" end="00:10:43.6" tts:direction="ltr">So what I'm going to do is I'm going to
+<br/>grab observation ID,</p>
+        <p begin="00:10:43.6" end="00:10:45.7" tts:direction="ltr">and I'm going to drag that down to values,
+<br/>right?</p>
+        <p begin="00:10:45.7" end="00:10:47.9" tts:direction="ltr">Observation ID is never null.</p>
+        <p begin="00:10:47.9" end="00:10:53" tts:direction="ltr">It's my primary key that's uniquely
+<br/>identifying each building in this dataset.</p>
+        <p begin="00:10:53" end="00:10:56.6" tts:direction="ltr">So I'm going to come down here to values
+<br/>on the sum of observation ID,</p>
+        <p begin="00:10:56.6" end="00:10:59.10" tts:direction="ltr">I'm going to do instead of a sum of
+<br/>observation ID,</p>
+        <p begin="00:10:59.10" end="00:11:03.2" tts:direction="ltr">I'm going to change it from sum to count
+<br/>and press Okay.</p>
+        <p begin="00:11:03.2" end="00:11:06.9" tts:direction="ltr">And now I have the count of observation
+<br/>ID.</p>
+        <p begin="00:11:06.9" end="00:11:10.10" tts:direction="ltr">This is meaning the number of buildings in
+<br/>that class.</p>
+        <p begin="00:11:10.10" end="00:11:16.1" tts:direction="ltr">So which of these classes then has the
+<br/>most number of buildings in it?</p>
+        <p begin="00:11:16.1" end="00:11:17.9" tts:direction="ltr">And I hope you said, Oh,</p>
+        <p begin="00:11:17.9" end="00:11:22.5" tts:direction="ltr">it looks like the 1921 to 1930 era has the
+<br/>most number of classes.</p>
+        <p begin="00:11:22.5" end="00:11:27.2" tts:direction="ltr">Okay, perfect. I'm going to click back in
+<br/>here to my pivot table to edit it.</p>
+        <p begin="00:11:27.2" end="00:11:29.4" tts:direction="ltr">And now what I need to figure out is</p>
+        <p begin="00:11:29.4" end="00:11:33.6" tts:direction="ltr">the average number of stories and the
+<br/>average risk value.</p>
+        <p begin="00:11:33.6" end="00:11:39.1" tts:direction="ltr">So I'm going to grab stories here,</p>
+        <p begin="00:11:39.1" end="00:11:43.6" tts:direction="ltr">let's go grab where stories at. Come on. I
+<br/>just saw.</p>
+        <p begin="00:11:43.6" end="00:11:45.5" tts:direction="ltr">Oh, number of stories.</p>
+        <p begin="00:11:45.5" end="00:11:47.2" tts:direction="ltr">I'm going to drag it to values.</p>
+        <p begin="00:11:47.2" end="00:11:48.9" tts:direction="ltr">And instead of saying sum,</p>
+        <p begin="00:11:48.9" end="00:11:54.4" tts:direction="ltr">I'm going to click drop down value filled
+<br/>Settings and average.</p>
+        <p begin="00:11:54.4" end="00:11:57.10" tts:direction="ltr">Let say average number of stories.</p>
+        <p begin="00:11:57.10" end="00:12:02.4" tts:direction="ltr">Then I'm going to grab the risk column.</p>
+        <p begin="00:12:02.4" end="00:12:03.9" tts:direction="ltr">And in my risk column,</p>
+        <p begin="00:12:03.9" end="00:12:06" tts:direction="ltr">I want to make sure it's my actual risk
+<br/>column,</p>
+        <p begin="00:12:06" end="00:12:08.1" tts:direction="ltr">which it is, that just the one en labeled
+<br/>risk.</p>
+        <p begin="00:12:08.1" end="00:12:11.3" tts:direction="ltr">So I'm going to still click to it here
+<br/>with my pivot table.</p>
+        <p begin="00:12:11.3" end="00:12:15.5" tts:direction="ltr">I'm going to go risk, and I'm going to
+<br/>drag risk down to values.</p>
+        <p begin="00:12:15.5" end="00:12:18.3" tts:direction="ltr">And instead of, again, I don't want to sum
+<br/>the risk,</p>
+        <p begin="00:12:18.3" end="00:12:19.10" tts:direction="ltr">I want to find the average risk.</p>
+        <p begin="00:12:19.10" end="00:12:22.7" tts:direction="ltr">So what's the average overall risk?</p>
+        <p begin="00:12:22.7" end="00:12:26.9" tts:direction="ltr">Perfect. Then I want to figure out what is</p>
+        <p begin="00:12:26.9" end="00:12:31.8" tts:direction="ltr">the number of buildings that are either
+<br/>high risk or critical risk?</p>
+        <p begin="00:12:31.8" end="00:12:33.1" tts:direction="ltr">So this is we're going to use</p>
+        <p begin="00:12:33.1" end="00:12:36.3" tts:direction="ltr">that table or that column that we created,
+<br/>right?</p>
+        <p begin="00:12:36.3" end="00:12:40.4" tts:direction="ltr">So I'm going to now drag high crit down to
+<br/>values,</p>
+        <p begin="00:12:40.4" end="00:12:43.5" tts:direction="ltr">and high crit is once again summing</p>
+        <p begin="00:12:43.5" end="00:12:47.4" tts:direction="ltr">that high crit we want to keep this at
+<br/>sum.</p>
+        <p begin="00:12:47.4" end="00:12:52.6" tts:direction="ltr">It's summing all of those buildings
+<br/>together that are higher critical risk.</p>
+        <p begin="00:12:52.6" end="00:12:57.2" tts:direction="ltr">The next thing now I'm going to do is find
+<br/>the average retrofit level.</p>
+        <p begin="00:12:57.2" end="00:12:59.9" tts:direction="ltr">So I want to find the mean retrofit level.</p>
+        <p begin="00:12:59.9" end="00:13:05.2" tts:direction="ltr">So I'm going to come over here and I'm
+<br/>going to grab retrofit level.</p>
+        <p begin="00:13:05.2" end="00:13:09.6" tts:direction="ltr">And we don't want the retrofit level
+<br/>that's actually the words.</p>
+        <p begin="00:13:09.6" end="00:13:16.8" tts:direction="ltr">We want the retrofit level that is just
+<br/>the numeric values.</p>
+        <p begin="00:13:16.8" end="00:13:20.5" tts:direction="ltr">So if we can see here in our metadata,</p>
+        <p begin="00:13:20.5" end="00:13:23.2" tts:direction="ltr">the retrofit level is</p>
+        <p begin="00:13:23.2" end="00:13:26.6" tts:direction="ltr">a numerical value corresponding with the
+<br/>retrofit level variable.</p>
+        <p begin="00:13:26.6" end="00:13:29.8" tts:direction="ltr">Higher value means a stronger retrofit has
+<br/>been applied.</p>
+        <p begin="00:13:29.8" end="00:13:31.3" tts:direction="ltr">So we've done some work on</p>
+        <p begin="00:13:31.3" end="00:13:34.2" tts:direction="ltr">the city or whoever has done some work on
+<br/>that building.</p>
+        <p begin="00:13:34.2" end="00:13:36.5" tts:direction="ltr">So we're going to then drag here.</p>
+        <p begin="00:13:36.5" end="00:13:41" tts:direction="ltr">We're going to drag retrofit down to
+<br/>values,</p>
+        <p begin="00:13:41" end="00:13:46.5" tts:direction="ltr">and we want to find the average retrofit
+<br/>Perfect.</p>
+        <p begin="00:13:46.5" end="00:13:50" tts:direction="ltr">All right. Awesome. The next thing</p>
+        <p begin="00:13:50" end="00:13:52.1" tts:direction="ltr">that we're going to do is we need to
+<br/>figure out what</p>
+        <p begin="00:13:52.1" end="00:13:58.2" tts:direction="ltr">is the percentage of buildings that are in
+<br/>that class that are church use,</p>
+        <p begin="00:13:58.2" end="00:14:00.9" tts:direction="ltr">residential use, commercial use,</p>
+        <p begin="00:14:00.9" end="00:14:02.9" tts:direction="ltr">and average occupant use.</p>
+        <p begin="00:14:02.9" end="00:14:07.6" tts:direction="ltr">So we can see here that we have our
+<br/>average retrofit level.</p>
+        <p begin="00:14:07.6" end="00:14:09.7" tts:direction="ltr">Now, the percentage of the buildings that
+<br/>are churches and</p>
+        <p begin="00:14:09.7" end="00:14:12.4" tts:direction="ltr">public that are residences and that are
+<br/>commercial.</p>
+        <p begin="00:14:12.4" end="00:14:16.1" tts:direction="ltr">So what I want to do here and just in the
+<br/>interim,</p>
+        <p begin="00:14:16.1" end="00:14:19.3" tts:direction="ltr">is we just want to figure out what is the
+<br/>total number of</p>
+        <p begin="00:14:19.3" end="00:14:23.5" tts:direction="ltr">billings in that class that are used for,</p>
+        <p begin="00:14:23.5" end="00:14:25.6" tts:direction="ltr">in this case, church.</p>
+        <p begin="00:14:25.6" end="00:14:28" tts:direction="ltr">So I'm going to grab the church slash</p>
+        <p begin="00:14:28" end="00:14:32.2" tts:direction="ltr">public data or column and drag that down.</p>
+        <p begin="00:14:32.2" end="00:14:35.5" tts:direction="ltr">And what we'll notice here is we're going
+<br/>to sum church in public.</p>
+        <p begin="00:14:35.5" end="00:14:37.9" tts:direction="ltr">Now, if we come back over here to our
+<br/>dataset,</p>
+        <p begin="00:14:37.9" end="00:14:42.2" tts:direction="ltr">remember that this church slash public
+<br/>field has a zero</p>
+        <p begin="00:14:42.5" end="00:14:49.3" tts:direction="ltr">If the building is not used for church or
+<br/>public use,</p>
+        <p begin="00:14:49.3" end="00:14:51.1" tts:direction="ltr">and it has a one if it is.</p>
+        <p begin="00:14:51.1" end="00:14:55.8" tts:direction="ltr">So we want to sum this column together to
+<br/>get all the ones</p>
+        <p begin="00:14:55.8" end="00:14:58.5" tts:direction="ltr">added together to figure out the number of
+<br/>buildings</p>
+        <p begin="00:14:58.5" end="00:15:01.5" tts:direction="ltr">in that class that are used for church or
+<br/>public use.</p>
+        <p begin="00:15:01.5" end="00:15:06.8" tts:direction="ltr">The next thing that we're going to do is
+<br/>find these sum of the we're going</p>
+        <p begin="00:15:06.8" end="00:15:11.10" tts:direction="ltr">to look at the total number of buildings
+<br/>that are residences.</p>
+        <p begin="00:15:11.10" end="00:15:14.9" tts:direction="ltr">So I'm just finding the sum for now,</p>
+        <p begin="00:15:14.9" end="00:15:17.2" tts:direction="ltr">and then I'm going to do some calculations
+<br/>outside</p>
+        <p begin="00:15:17.2" end="00:15:20.8" tts:direction="ltr">the pivot table to turn these into
+<br/>percentages, okay?</p>
+        <p begin="00:15:20.8" end="00:15:22.6" tts:direction="ltr">So we're just summing them for now,</p>
+        <p begin="00:15:22.6" end="00:15:26.8" tts:direction="ltr">and then we'll divide it by the total
+<br/>number of buildings in that class.</p>
+        <p begin="00:15:26.8" end="00:15:28.9" tts:direction="ltr">I promise it'll work. All right.</p>
+        <p begin="00:15:28.9" end="00:15:30.6" tts:direction="ltr">And then finally, at the end here,</p>
+        <p begin="00:15:30.6" end="00:15:33.10" tts:direction="ltr">we're going to add we're going to bring
+<br/>commercial down to values.</p>
+        <p begin="00:15:33.10" end="00:15:37.3" tts:direction="ltr">Okay. And the sum of commercial,</p>
+        <p begin="00:15:37.3" end="00:15:39.7" tts:direction="ltr">we are going to just leave at that.</p>
+        <p begin="00:15:39.7" end="00:15:44.9" tts:direction="ltr">And then finally, we're going to drag the
+<br/>average number of occupants, okay?</p>
+        <p begin="00:15:44.9" end="00:15:47.2" tts:direction="ltr">So now we're going to come up here and
+<br/>drag</p>
+        <p begin="00:15:47.2" end="00:15:51.2" tts:direction="ltr">occupants down to average or down to the
+<br/>bottom.</p>
+        <p begin="00:15:51.2" end="00:15:54.6" tts:direction="ltr">And instead of saying sum of occupants,
+<br/>again, we want to change this,</p>
+        <p begin="00:15:54.6" end="00:15:58.8" tts:direction="ltr">go value filled settings and average. All
+<br/>right.</p>
+        <p begin="00:15:58.8" end="00:16:03.6" tts:direction="ltr">Perfect. So now I have kind of the rough
+<br/>draft of my pivot table.</p>
+        <p begin="00:16:03.6" end="00:16:07.7" tts:direction="ltr">Now, a limitation of pivot tables is they
+<br/>don't allow you to do a lot of</p>
+        <p begin="00:16:07.7" end="00:16:12.1" tts:direction="ltr">editing of the pivot table when you're
+<br/>still editing the pivot table itself.</p>
+        <p begin="00:16:12.1" end="00:16:14.3" tts:direction="ltr">All right, so we can't do</p>
+        <p begin="00:16:14.3" end="00:16:18.1" tts:direction="ltr">these calculations that I want to do to
+<br/>find the church percentages,</p>
+        <p begin="00:16:18.1" end="00:16:21.9" tts:direction="ltr">the percentage of the pre 1910 buildings
+<br/>that are in that church.</p>
+        <p begin="00:16:21.9" end="00:16:24.2" tts:direction="ltr">So we're doing a little data analysis
+<br/>here.</p>
+        <p begin="00:16:24.2" end="00:16:26.8" tts:direction="ltr">So we're going to capture this whole pivot
+<br/>table.</p>
+        <p begin="00:16:26.8" end="00:16:28.9" tts:direction="ltr">So let's grab well, hold on.</p>
+        <p begin="00:16:28.9" end="00:16:30.7" tts:direction="ltr">Before we do that, let's come back over
+<br/>here.</p>
+        <p begin="00:16:30.7" end="00:16:33.5" tts:direction="ltr">On row labels, uncheck blank.</p>
+        <p begin="00:16:33.5" end="00:16:36" tts:direction="ltr">Let's just get rid of that. Okay, perfect.</p>
+        <p begin="00:16:36" end="00:16:40.8" tts:direction="ltr">So within this before we get much further,</p>
+        <p begin="00:16:40.8" end="00:16:43.6" tts:direction="ltr">we have this pivot table that we're going
+<br/>to edit a little bit more.</p>
+        <p begin="00:16:43.6" end="00:16:46.4" tts:direction="ltr">And then I want to develop some hypotheses</p>
+        <p begin="00:16:46.4" end="00:16:49.7" tts:direction="ltr">from this in class assignment, right?</p>
+        <p begin="00:16:49.7" end="00:16:55.3" tts:direction="ltr">So we are going to develop some hypotheses
+<br/>here in just a second.</p>
+        <p begin="00:16:55.3" end="00:16:57.7" tts:direction="ltr">So we're going to use that data to do so.</p>
+        <p begin="00:16:57.7" end="00:17:00.5" tts:direction="ltr">So I'm going to grab all this pivot table
+<br/>data.</p>
+        <p begin="00:17:00.5" end="00:17:02.3" tts:direction="ltr">I'm going to copy it,</p>
+        <p begin="00:17:02.3" end="00:17:07.4" tts:direction="ltr">and then I'm going to create a new sheet
+<br/>down here at the bottom.</p>
+        <p begin="00:17:07.4" end="00:17:10.5" tts:direction="ltr">And I'm going to click,</p>
+        <p begin="00:17:10.5" end="00:17:13.2" tts:direction="ltr">do paste and then just values.</p>
+        <p begin="00:17:13.2" end="00:17:19.8" tts:direction="ltr">You can also do paste special and then
+<br/>just paste values.</p>
+        <p begin="00:17:19.8" end="00:17:22.3" tts:direction="ltr">You can also up here in home,</p>
+        <p begin="00:17:22.3" end="00:17:24.10" tts:direction="ltr">go paste, paste special,</p>
+        <p begin="00:17:24.10" end="00:17:26.5" tts:direction="ltr">and then just values.</p>
+        <p begin="00:17:26.5" end="00:17:31.7" tts:direction="ltr">I only want to paste the values that I
+<br/>have copied.</p>
+        <p begin="00:17:31.7" end="00:17:36.7" tts:direction="ltr">So now what we'll see here is all we have
+<br/>now my pivot table,</p>
+        <p begin="00:17:36.7" end="00:17:39.8" tts:direction="ltr">and it's kind of in a less formatted
+<br/>format this part, right?</p>
+        <p begin="00:17:39.8" end="00:17:41.8" tts:direction="ltr">So I'm just going to highlight all of
+<br/>this,</p>
+        <p begin="00:17:41.8" end="00:17:43.5" tts:direction="ltr">and I'm going to do format,</p>
+        <p begin="00:17:43.5" end="00:17:47.3" tts:direction="ltr">and let's say auto fit column width, okay?</p>
+        <p begin="00:17:47.3" end="00:17:51.1" tts:direction="ltr">And so now I'm kind of seeing all of my
+<br/>pivot table,</p>
+        <p begin="00:17:51.1" end="00:17:52.9" tts:direction="ltr">but it's a little bit more formatted.</p>
+        <p begin="00:17:52.9" end="00:17:55.9" tts:direction="ltr">So now at this point, let's do some
+<br/>editing here to get</p>
+        <p begin="00:17:55.9" end="00:18:00.2" tts:direction="ltr">this formatted just like my prompt has
+<br/>asked me to ask me for.</p>
+        <p begin="00:18:00.2" end="00:18:03.8" tts:direction="ltr">So I am reading a prompt over here on my
+<br/>other computer,</p>
+        <p begin="00:18:03.8" end="00:18:05.9" tts:direction="ltr">so I don't have to keep switching back and
+<br/>forth.</p>
+        <p begin="00:18:05.9" end="00:18:07.8" tts:direction="ltr">But instead of saying row labels,</p>
+        <p begin="00:18:07.8" end="00:18:09.7" tts:direction="ltr">I'm going to delete this,</p>
+        <p begin="00:18:09.7" end="00:18:12.3" tts:direction="ltr">and I'm going to say errs, okay.</p>
+        <p begin="00:18:12.3" end="00:18:15" tts:direction="ltr">And that makes it so that now I'm just</p>
+        <p begin="00:18:15" end="00:18:17.3" tts:direction="ltr">building with I'm using arrows here,
+<br/>right?</p>
+        <p begin="00:18:17.3" end="00:18:20.3" tts:direction="ltr">And so now I'm going to click on this
+<br/>column,</p>
+        <p begin="00:18:20.3" end="00:18:22.7" tts:direction="ltr">this six column. I'm just going to delete
+<br/>this.</p>
+        <p begin="00:18:22.7" end="00:18:24.2" tts:direction="ltr">I'm going to right click and say delete.</p>
+        <p begin="00:18:24.2" end="00:18:25.5" tts:direction="ltr">I don't need gram totals.</p>
+        <p begin="00:18:25.5" end="00:18:27.3" tts:direction="ltr">Okay? So these are the only classes that
+<br/>I'm</p>
+        <p begin="00:18:27.3" end="00:18:30.1" tts:direction="ltr">looking at within this multiple variable
+<br/>table.</p>
+        <p begin="00:18:30.1" end="00:18:34.5" tts:direction="ltr">Count of observation ID really is actually
+<br/>just my sample size,</p>
+        <p begin="00:18:34.5" end="00:18:40.7" tts:direction="ltr">and we did not a sample size with N. So
+<br/>I'm going to say N is my sample size.</p>
+        <p begin="00:18:40.7" end="00:18:43" tts:direction="ltr">Then the average of number of stories,</p>
+        <p begin="00:18:43" end="00:18:44.9" tts:direction="ltr">I'm just going to say average stories.</p>
+        <p begin="00:18:44.9" end="00:18:46.5" tts:direction="ltr">So we're just going to make this look a
+<br/>little bit</p>
+        <p begin="00:18:46.5" end="00:18:48.6" tts:direction="ltr">better here with my multle variable table.</p>
+        <p begin="00:18:48.6" end="00:18:54" tts:direction="ltr">My average of risk, I'm just going to say
+<br/>average risk. Okay?</p>
+        <p begin="00:18:54.7" end="00:18:59.9" tts:direction="ltr">Instead of sum of high crit,</p>
+        <p begin="00:18:59.9" end="00:19:03.9" tts:direction="ltr">we could say number of high CRT?</p>
+        <p begin="00:19:03.9" end="00:19:07.6" tts:direction="ltr">These are the number of buildings that are
+<br/>higher critical risk.</p>
+        <p begin="00:19:07.6" end="00:19:11.1" tts:direction="ltr">Then I'm going to say average retrofit.</p>
+        <p begin="00:19:11.1" end="00:19:14.5" tts:direction="ltr">Okay. Then we have sum of church and
+<br/>public,</p>
+        <p begin="00:19:14.5" end="00:19:16.8" tts:direction="ltr">and we're going to keep that the same for
+<br/>now.</p>
+        <p begin="00:19:16.8" end="00:19:21.5" tts:direction="ltr">And then here at the end, we're going to
+<br/>say average occupants. Okay.</p>
+        <p begin="00:19:21.5" end="00:19:23.5" tts:direction="ltr">The other thing that I want to do here</p>
+        <p begin="00:19:23.5" end="00:19:25.10" tts:direction="ltr">quickly is remember that when we talked
+<br/>about</p>
+        <p begin="00:19:25.10" end="00:19:28.4" tts:direction="ltr">descriptive statistics and how we always</p>
+        <p begin="00:19:28.4" end="00:19:31.6" tts:direction="ltr">express averages one more than the data
+<br/>point that we're given.</p>
+        <p begin="00:19:31.6" end="00:19:34" tts:direction="ltr">Well, we were given all whole numbers
+<br/>here.</p>
+        <p begin="00:19:34" end="00:19:36.6" tts:direction="ltr">We're not given any decimal points in any
+<br/>of the data</p>
+        <p begin="00:19:36.6" end="00:19:40" tts:direction="ltr">that we base our multiple variable table
+<br/>upon.</p>
+        <p begin="00:19:40" end="00:19:43.1" tts:direction="ltr">So I'm going to click here on average
+<br/>stories,</p>
+        <p begin="00:19:43.1" end="00:19:44.4" tts:direction="ltr">and I'm going to bump this.</p>
+        <p begin="00:19:44.4" end="00:19:47.2" tts:direction="ltr">I'm going to use, I'm going to highlight
+<br/>my data here,</p>
+        <p begin="00:19:47.2" end="00:19:49.10" tts:direction="ltr">and I'm going to decrease the decimal
+<br/>points</p>
+        <p begin="00:19:49.10" end="00:19:53.5" tts:direction="ltr">down to just one decimal point for average
+<br/>stories.</p>
+        <p begin="00:19:53.5" end="00:19:56.1" tts:direction="ltr">Average risk, I'm going to do the same
+<br/>thing.</p>
+        <p begin="00:19:56.1" end="00:19:59.9" tts:direction="ltr">Okay? A number of high crick doesn't
+<br/>matter that way.</p>
+        <p begin="00:19:59.9" end="00:20:01.2" tts:direction="ltr">This is another average,</p>
+        <p begin="00:20:01.2" end="00:20:04.1" tts:direction="ltr">so I'm going to decrease this again.</p>
+        <p begin="00:20:05.2" end="00:20:07.7" tts:direction="ltr">To one decimal point.</p>
+        <p begin="00:20:07.7" end="00:20:10.5" tts:direction="ltr">Some of church and public we don't care
+<br/>about for right now,</p>
+        <p begin="00:20:10.5" end="00:20:12.1" tts:direction="ltr">nor some of residents,</p>
+        <p begin="00:20:12.1" end="00:20:13.2" tts:direction="ltr">nor some of commercial.</p>
+        <p begin="00:20:13.2" end="00:20:15.3" tts:direction="ltr">We'll come back to that. And then average
+<br/>occupants,</p>
+        <p begin="00:20:15.3" end="00:20:18.4" tts:direction="ltr">I'm going to decrease that quite a bit.
+<br/>Okay, perfect.</p>
+        <p begin="00:20:18.4" end="00:20:20.8" tts:direction="ltr">Now, once I have this,</p>
+        <p begin="00:20:20.8" end="00:20:22.3" tts:direction="ltr">I'm going to highlight this again.</p>
+        <p begin="00:20:22.3" end="00:20:23.10" tts:direction="ltr">I'm going to come up here to format,</p>
+        <p begin="00:20:23.10" end="00:20:26.5" tts:direction="ltr">and I'm going to say auto fit column
+<br/>width,</p>
+        <p begin="00:20:26.5" end="00:20:28.5" tts:direction="ltr">and it's going to shrink that down just a
+<br/>little bit more</p>
+        <p begin="00:20:28.5" end="00:20:31.2" tts:direction="ltr">so it's a little easier to see. Okay,
+<br/>perfect.</p>
+        <p begin="00:20:31.2" end="00:20:32.5" tts:direction="ltr">Now, as of right now,</p>
+        <p begin="00:20:32.5" end="00:20:34.8" tts:direction="ltr">I need to show the percentage of buildings
+<br/>in</p>
+        <p begin="00:20:34.8" end="00:20:38.2" tts:direction="ltr">all these eras that are church and public,
+<br/>right?</p>
+        <p begin="00:20:38.2" end="00:20:39.6" tts:direction="ltr">So what I'm going to do,</p>
+        <p begin="00:20:39.6" end="00:20:42.1" tts:direction="ltr">and there's multiple ways you can do this.</p>
+        <p begin="00:20:42.1" end="00:20:45.5" tts:direction="ltr">But I'm going to right click and say
+<br/>insert here.</p>
+        <p begin="00:20:45.5" end="00:20:51.3" tts:direction="ltr">And I'm going to do a calculation here now
+<br/>in cell column G two.</p>
+        <p begin="00:20:51.3" end="00:20:55.3" tts:direction="ltr">And in G two, I'm going to initiate an
+<br/>equation here.</p>
+        <p begin="00:20:55.3" end="00:20:57.1" tts:direction="ltr">So I'm going to say equal to,</p>
+        <p begin="00:20:57.1" end="00:21:03.4" tts:direction="ltr">and I'm going to say equal to 20/221.</p>
+        <p begin="00:21:03.4" end="00:21:08.7" tts:direction="ltr">Okay. What this does is this finds the
+<br/>percentage of buildings in this class.</p>
+        <p begin="00:21:08.7" end="00:21:11.8" tts:direction="ltr">So it takes a number that are church and
+<br/>public and divides</p>
+        <p begin="00:21:11.8" end="00:21:15" tts:direction="ltr">it by the sample size of all the buildings
+<br/>in that class.</p>
+        <p begin="00:21:15" end="00:21:22.10" tts:direction="ltr">So 20/221 gives me that, um, 0.1% well,</p>
+        <p begin="00:21:22.10" end="00:21:26.3" tts:direction="ltr">in this case, it's going to be 1% here in
+<br/>just a second</p>
+        <p begin="00:21:26.3" end="00:21:31.4" tts:direction="ltr">is our church buildings, right?</p>
+        <p begin="00:21:31.4" end="00:21:33.8" tts:direction="ltr">And then let's come down here.</p>
+        <p begin="00:21:35.5" end="00:21:40.5" tts:direction="ltr">And let's do this. And we're going to drag
+<br/>through this handy dandy tool.</p>
+        <p begin="00:21:40.5" end="00:21:42.4" tts:direction="ltr">We'll just drag all of these down.</p>
+        <p begin="00:21:42.4" end="00:21:44.8" tts:direction="ltr">Now let's expand this out just a little
+<br/>bit.</p>
+        <p begin="00:21:44.8" end="00:21:46.8" tts:direction="ltr">We're going to increase the decimal
+<br/>points.</p>
+        <p begin="00:21:46.8" end="00:21:53.1" tts:direction="ltr">So you can actually see here that this is
+<br/>actually 0.09 0.13 0.1 0.17.</p>
+        <p begin="00:21:53.1" end="00:21:57.7" tts:direction="ltr">So this is 9%, 13%, 10%, 17%.</p>
+        <p begin="00:21:57.7" end="00:21:59.5" tts:direction="ltr">Now, at this point, though,</p>
+        <p begin="00:21:59.5" end="00:22:02.2" tts:direction="ltr">if I was to delete this column,</p>
+        <p begin="00:22:02.2" end="00:22:05.1" tts:direction="ltr">so I'm just going to show you if I delete
+<br/>this column,</p>
+        <p begin="00:22:05.1" end="00:22:08.3" tts:direction="ltr">This now gives me reference errors.</p>
+        <p begin="00:22:08.3" end="00:22:10.6" tts:direction="ltr">So what that means, I'm going to undo that
+<br/>change.</p>
+        <p begin="00:22:10.6" end="00:22:12.7" tts:direction="ltr">What that does is that says, Hey,</p>
+        <p begin="00:22:12.7" end="00:22:17.10" tts:direction="ltr">this cell is dependent on this H two
+<br/>existing,</p>
+        <p begin="00:22:17.10" end="00:22:19.5" tts:direction="ltr">right, this calculation here.</p>
+        <p begin="00:22:19.5" end="00:22:21.4" tts:direction="ltr">H two is using this calculation.</p>
+        <p begin="00:22:21.4" end="00:22:25" tts:direction="ltr">So if you delete H two as I previously
+<br/>knew it,</p>
+        <p begin="00:22:25" end="00:22:27.7" tts:direction="ltr">then it's going to throw an error, right?</p>
+        <p begin="00:22:27.7" end="00:22:30.5" tts:direction="ltr">So therefore, it's going to throw in
+<br/>reference error and say,</p>
+        <p begin="00:22:30.5" end="00:22:32.3" tts:direction="ltr">Hey, I don't have that reference that I
+<br/>need.</p>
+        <p begin="00:22:32.3" end="00:22:35.5" tts:direction="ltr">Instead, I'm going to right click and
+<br/>insert again and this time,</p>
+        <p begin="00:22:35.5" end="00:22:39.2" tts:direction="ltr">I'm just going to copy the data points
+<br/>that we created in H,</p>
+        <p begin="00:22:39.2" end="00:22:42.9" tts:direction="ltr">and I just want to get rid of those
+<br/>formulas</p>
+        <p begin="00:22:42.9" end="00:22:46.10" tts:direction="ltr">because this formula is what's causing
+<br/>this reference area error, right?</p>
+        <p begin="00:22:46.10" end="00:22:49.7" tts:direction="ltr">So it's saying, Hey, you can't delete this
+<br/>column because</p>
+        <p begin="00:22:49.7" end="00:22:53.4" tts:direction="ltr">I'm dependent on it to make this
+<br/>calculation.</p>
+        <p begin="00:22:53.4" end="00:22:57.5" tts:direction="ltr">So I'm going to copy this data,</p>
+        <p begin="00:22:57.5" end="00:23:00.1" tts:direction="ltr">and I'm going to I'm going to say</p>
+        <p begin="00:23:00.1" end="00:23:03.3" tts:direction="ltr">Control C or Command C based on what
+<br/>you're using,</p>
+        <p begin="00:23:03.3" end="00:23:05.7" tts:direction="ltr">or you can just right click and say copy.</p>
+        <p begin="00:23:05.7" end="00:23:07.10" tts:direction="ltr">And then I'm going to right click and say
+<br/>paste.</p>
+        <p begin="00:23:07.10" end="00:23:10.5" tts:direction="ltr">And again, I just want to paste special,</p>
+        <p begin="00:23:10.5" end="00:23:12.7" tts:direction="ltr">and I'll say paste special again,</p>
+        <p begin="00:23:12.7" end="00:23:14.6" tts:direction="ltr">and I'm just going to paste values.</p>
+        <p begin="00:23:14.6" end="00:23:17.8" tts:direction="ltr">Now, you can just right click and say
+<br/>paste values,</p>
+        <p begin="00:23:17.8" end="00:23:19.1" tts:direction="ltr">but this is a little easier to see.</p>
+        <p begin="00:23:19.1" end="00:23:21.1" tts:direction="ltr">So I'm going to say paste values.</p>
+        <p begin="00:23:21.1" end="00:23:23.9" tts:direction="ltr">And so now I just get the values here.</p>
+        <p begin="00:23:23.9" end="00:23:27.2" tts:direction="ltr">So now once I click on this formula, it's
+<br/>now just the value,</p>
+        <p begin="00:23:27.2" end="00:23:28.10" tts:direction="ltr">where over here in H,</p>
+        <p begin="00:23:28.10" end="00:23:31.7" tts:direction="ltr">it's actually still showing the formula,
+<br/>right?</p>
+        <p begin="00:23:31.7" end="00:23:34.4" tts:direction="ltr">So now what I can do is I can highlight H</p>
+        <p begin="00:23:34.4" end="00:23:37.2" tts:direction="ltr">and I. I can right click and say Delete.</p>
+        <p begin="00:23:37.2" end="00:23:40.9" tts:direction="ltr">And so now I have the I just</p>
+        <p begin="00:23:40.9" end="00:23:45.1" tts:direction="ltr">have my values here in G. So now I'm going
+<br/>to highlight these values,</p>
+        <p begin="00:23:45.1" end="00:23:49.6" tts:direction="ltr">and I'm going to trim them into a
+<br/>percentage by using my number ribbon
+<br/>group,</p>
+        <p begin="00:23:49.6" end="00:23:51.5" tts:direction="ltr">and I'm going to change them into a
+<br/>percentage,</p>
+        <p begin="00:23:51.5" end="00:23:53.7" tts:direction="ltr">and then I'm going to call this church
+<br/>percentage.</p>
+        <p begin="00:23:53.7" end="00:23:59" tts:direction="ltr">So what I can see here now is that in the
+<br/>pre 1910 era,</p>
+        <p begin="00:23:59" end="00:24:01.2" tts:direction="ltr">9% of those buildings in</p>
+        <p begin="00:24:01.2" end="00:24:06.5" tts:direction="ltr">my dataset are churches or are used for
+<br/>church purposes, okay?</p>
+        <p begin="00:24:06.5" end="00:24:10.6" tts:direction="ltr">After 1930, I have 17%, okay?</p>
+        <p begin="00:24:10.6" end="00:24:14.6" tts:direction="ltr">Now we're going to do the same thing over
+<br/>here for residences and commercial.</p>
+        <p begin="00:24:14.6" end="00:24:16.4" tts:direction="ltr">So I'm going to right click Insert.</p>
+        <p begin="00:24:16.4" end="00:24:17.9" tts:direction="ltr">I'm going to go a little faster here.</p>
+        <p begin="00:24:17.9" end="00:24:19.7" tts:direction="ltr">I'm going to say equal to.</p>
+        <p begin="00:24:19.7" end="00:24:24.4" tts:direction="ltr">I'm going to take I 2/221.</p>
+        <p begin="00:24:24.4" end="00:24:28.6" tts:direction="ltr">So what is the percentage that are used
+<br/>for residence purposes?</p>
+        <p begin="00:24:28.6" end="00:24:30.8" tts:direction="ltr">We see that we get 34%.</p>
+        <p begin="00:24:30.8" end="00:24:35.1" tts:direction="ltr">I'm then going to say equal to oh,
+<br/>actually,</p>
+        <p begin="00:24:35.1" end="00:24:38.4" tts:direction="ltr">let's just use our handy dandy autofill
+<br/>tools,</p>
+        <p begin="00:24:38.4" end="00:24:41.3" tts:direction="ltr">so I'm just going to click on that square
+<br/>and drag it down.</p>
+        <p begin="00:24:41.3" end="00:24:46.4" tts:direction="ltr">Okay, now I see here that we are getting
+<br/>that there's 13% that are used for,</p>
+        <p begin="00:24:46.4" end="00:24:52.1" tts:direction="ltr">um residences after 1930.</p>
+        <p begin="00:24:52.2" end="00:24:54.7" tts:direction="ltr">Now what I'm going to do, though,</p>
+        <p begin="00:24:54.7" end="00:24:57.1" tts:direction="ltr">is I'm going to right click again and say</p>
+        <p begin="00:24:57.1" end="00:25:00.7" tts:direction="ltr">insert because I need to get rid of this
+<br/>reference issue we have here.</p>
+        <p begin="00:25:00.7" end="00:25:04.8" tts:direction="ltr">So I'm going to now copy everything in I</p>
+        <p begin="00:25:04.8" end="00:25:10.3" tts:direction="ltr">and right click in H two and say paste
+<br/>special and paste values.</p>
+        <p begin="00:25:10.3" end="00:25:12.10" tts:direction="ltr">And I'm just going to paste those values.</p>
+        <p begin="00:25:12.10" end="00:25:16.1" tts:direction="ltr">Then I can come up here and say resident
+<br/>percentage,</p>
+        <p begin="00:25:16.1" end="00:25:19.1" tts:direction="ltr">and I know now that 32% of all buildings
+<br/>in</p>
+        <p begin="00:25:19.1" end="00:25:22.9" tts:direction="ltr">the 1921 to 1930 era are residence.</p>
+        <p begin="00:25:22.9" end="00:25:26.10" tts:direction="ltr">Now I'm going to delete I and J, Perfect.</p>
+        <p begin="00:25:26.10" end="00:25:29.7" tts:direction="ltr">Now, you can do the same thing here for
+<br/>sum of commercial.</p>
+        <p begin="00:25:29.7" end="00:25:32.2" tts:direction="ltr">So we're using the data points from the
+<br/>pivot table,</p>
+        <p begin="00:25:32.2" end="00:25:33.7" tts:direction="ltr">but now it's turning into a percentage.</p>
+        <p begin="00:25:33.7" end="00:25:36" tts:direction="ltr">So I'm going to insert a column here.</p>
+        <p begin="00:25:36" end="00:25:39.4" tts:direction="ltr">And I'm going to again do equal to.</p>
+        <p begin="00:25:39.4" end="00:25:45.7" tts:direction="ltr">Again, we're creating a calculation here,
+<br/>I 47/221, okay?</p>
+        <p begin="00:25:45.7" end="00:25:49.2" tts:direction="ltr">And now we're going to drop this pulleys
+<br/>all the way down.</p>
+        <p begin="00:25:49.2" end="00:25:52.1" tts:direction="ltr">And now you can see here that 67% of</p>
+        <p begin="00:25:52.1" end="00:25:55.4" tts:direction="ltr">pre 1910 buildings are used for commercial
+<br/>purposes.</p>
+        <p begin="00:25:55.4" end="00:25:59.3" tts:direction="ltr">Okay? So let's say commercial, well,</p>
+        <p begin="00:25:59.3" end="00:26:03.9" tts:direction="ltr">now we still have this issue of these are
+<br/>still dependent on J.</p>
+        <p begin="00:26:03.9" end="00:26:07.5" tts:direction="ltr">So now I'm going to right click again, say
+<br/>insert again.</p>
+        <p begin="00:26:07.5" end="00:26:12.2" tts:direction="ltr">And I'm going to highlight all of J's data
+<br/>points and right</p>
+        <p begin="00:26:12.2" end="00:26:17.6" tts:direction="ltr">click and paste special and paste values
+<br/>into I,</p>
+        <p begin="00:26:17.6" end="00:26:21.3" tts:direction="ltr">and we'll say commercial percentage.</p>
+        <p begin="00:26:21.3" end="00:26:24" tts:direction="ltr">All right, perfect. Then finally, here,</p>
+        <p begin="00:26:24" end="00:26:27.4" tts:direction="ltr">I'm going to delete J and K. I can delete
+<br/>those altogether,</p>
+        <p begin="00:26:27.4" end="00:26:29.3" tts:direction="ltr">and I have my average occupants.</p>
+        <p begin="00:26:29.3" end="00:26:33.5" tts:direction="ltr">Perfect. Okay. Now, I'm just going to
+<br/>format this a little bit better.</p>
+        <p begin="00:26:33.5" end="00:26:35.6" tts:direction="ltr">So I'm going to highlight all this data
+<br/>again.</p>
+        <p begin="00:26:35.6" end="00:26:36.9" tts:direction="ltr">I'm going to say format,</p>
+        <p begin="00:26:36.9" end="00:26:40.3" tts:direction="ltr">autofit column width, so kind of adjust
+<br/>that column width.</p>
+        <p begin="00:26:40.3" end="00:26:42" tts:direction="ltr">I'm going to highlight all of it again.</p>
+        <p begin="00:26:42" end="00:26:46.6" tts:direction="ltr">I'm going to come up here to my font and
+<br/>do all borders.</p>
+        <p begin="00:26:46.6" end="00:26:50.5" tts:direction="ltr">And then I'm going to highlight this top
+<br/>row</p>
+        <p begin="00:26:50.5" end="00:26:55.2" tts:direction="ltr">and center align everything and then bold
+<br/>it. All right.</p>
+        <p begin="00:26:55.2" end="00:26:57.3" tts:direction="ltr">Perfect. So now I have</p>
+        <p begin="00:26:57.3" end="00:27:00" tts:direction="ltr">a properly formatted multiple variable
+<br/>table</p>
+        <p begin="00:27:00" end="00:27:03.2" tts:direction="ltr">that now we can derive some hypotheses
+<br/>from. How cool.</p>
+        <p begin="00:27:03.2" end="00:27:10.9" tts:direction="ltr">So I want you to take a screenshot here of
+<br/>this multiple variable table, okay?</p>
+        <p begin="00:27:10.9" end="00:27:14.5" tts:direction="ltr">And you're going to paste it within your
+<br/>in class assignment.</p>
+        <p begin="00:27:14.5" end="00:27:18.5" tts:direction="ltr">All right. So I'm going to paste it here.</p>
+        <p begin="00:27:19.2" end="00:27:25.6" tts:direction="ltr">Perfect. Awesome. So now let's answer some
+<br/>questions.</p>
+        <p begin="00:27:25.6" end="00:27:28.6" tts:direction="ltr">So my questions begin with this first one,</p>
+        <p begin="00:27:28.6" end="00:27:30.10" tts:direction="ltr">and it talks about</p>
+        <p begin="00:27:35.4" end="00:27:37.7" tts:direction="ltr">The value for the number of</p>
+        <p begin="00:27:37.7" end="00:27:39.4" tts:direction="ltr">critical and high risk buildings is</p>
+        <p begin="00:27:39.4" end="00:27:41.6" tts:direction="ltr">shown as a total value, right, which it
+<br/>is.</p>
+        <p begin="00:27:41.6" end="00:27:44.1" tts:direction="ltr">We have a number of high crit.</p>
+        <p begin="00:27:44.1" end="00:27:46.4" tts:direction="ltr">If we wanted to have a sense for whether
+<br/>buildings</p>
+        <p begin="00:27:46.4" end="00:27:50.1" tts:direction="ltr">from earlier eras are more or less</p>
+        <p begin="00:27:50.1" end="00:27:54.6" tts:direction="ltr">likely to fall into the higher critical
+<br/>risk category</p>
+        <p begin="00:27:54.6" end="00:27:56.7" tts:direction="ltr">than those from later eras,</p>
+        <p begin="00:27:56.7" end="00:27:59" tts:direction="ltr">what kind of value should have been used
+<br/>instead?</p>
+        <p begin="00:27:59" end="00:28:04.7" tts:direction="ltr">And the kind of value that should have
+<br/>been used instead is to we should</p>
+        <p begin="00:28:04.7" end="00:28:13.8" tts:direction="ltr">have to understand the let's see here.</p>
+        <p begin="00:28:13.8" end="00:28:19.7" tts:direction="ltr">To understand the proportion</p>
+        <p begin="00:28:19.8" end="00:28:29.3" tts:direction="ltr">of buildings that are high CRT risk per
+<br/>category,</p>
+        <p begin="00:28:29.3" end="00:28:34.4" tts:direction="ltr">we should develop a rate, right?</p>
+        <p begin="00:28:34.4" end="00:28:40.6" tts:direction="ltr">A rate could be the high crit field,
+<br/>right?</p>
+        <p begin="00:28:40.6" end="00:28:44.6" tts:direction="ltr">Divided by sample size of that era, right?</p>
+        <p begin="00:28:44.6" end="00:28:46.10" tts:direction="ltr">So we could have done the same thing up
+<br/>here that we did with</p>
+        <p begin="00:28:46.10" end="00:28:52.3" tts:direction="ltr">the church percentages and just taking
+<br/>53/221 to say, Hey,</p>
+        <p begin="00:28:52.3" end="00:28:54.8" tts:direction="ltr">based upon the proportion,</p>
+        <p begin="00:28:54.8" end="00:28:57.4" tts:direction="ltr">there's different number of buildings per
+<br/>era,</p>
+        <p begin="00:28:57.4" end="00:29:00.10" tts:direction="ltr">and we have different number of buildings
+<br/>that are in higher critical risk.</p>
+        <p begin="00:29:00.10" end="00:29:02.10" tts:direction="ltr">What is the proportion of those buildings?</p>
+        <p begin="00:29:02.10" end="00:29:06.7" tts:direction="ltr">Are buildings that are older tend to have
+<br/>are they</p>
+        <p begin="00:29:06.7" end="00:29:10.7" tts:direction="ltr">more likely to be higher critical risk or
+<br/>what does that look like?</p>
+        <p begin="00:29:10.7" end="00:29:14" tts:direction="ltr">So we could create that kind of rate here
+<br/>like we did up above.</p>
+        <p begin="00:29:14" end="00:29:16.1" tts:direction="ltr">And really, it turns into a percentage.</p>
+        <p begin="00:29:16.1" end="00:29:18.1" tts:direction="ltr">All right. Now, from that,</p>
+        <p begin="00:29:18.1" end="00:29:20.7" tts:direction="ltr">we're going to develop some hypotheses.</p>
+        <p begin="00:29:20.7" end="00:29:26.3" tts:direction="ltr">And again, hypotheses allow us to explain
+<br/>the data,</p>
+        <p begin="00:29:26.3" end="00:29:27.10" tts:direction="ltr">right, without restating the data.</p>
+        <p begin="00:29:27.10" end="00:29:29.10" tts:direction="ltr">So we are coming up with ideas that</p>
+        <p begin="00:29:29.10" end="00:29:32.4" tts:direction="ltr">could potentially explain what is going on
+<br/>with the data,</p>
+        <p begin="00:29:32.4" end="00:29:35.2" tts:direction="ltr">and then we would need to test those
+<br/>hypotheses,</p>
+        <p begin="00:29:35.2" end="00:29:37.6" tts:direction="ltr">which is something you will learn about in
+<br/>another class.</p>
+        <p begin="00:29:37.6" end="00:29:40.1" tts:direction="ltr">So we are not necessarily testing them.</p>
+        <p begin="00:29:40.1" end="00:29:43.4" tts:direction="ltr">We're simply thinking about what could
+<br/>potential hypotheses</p>
+        <p begin="00:29:43.4" end="00:29:47" tts:direction="ltr">be here given the data that we have.</p>
+        <p begin="00:29:47" end="00:29:49.9" tts:direction="ltr">So one of the potential hypotheses,</p>
+        <p begin="00:29:49.9" end="00:29:53.7" tts:direction="ltr">looking at the question A here is we're
+<br/>going to compare the value for</p>
+        <p begin="00:29:53.7" end="00:30:00" tts:direction="ltr">average retrofit between the pre 1910 era
+<br/>and the 1921, 1930 era.</p>
+        <p begin="00:30:00" end="00:30:03.5" tts:direction="ltr">Which one is higher or lower and
+<br/>hypothesize why this might be true?</p>
+        <p begin="00:30:03.5" end="00:30:04.7" tts:direction="ltr">So I'm going to copy this down.</p>
+        <p begin="00:30:04.7" end="00:30:05.10" tts:direction="ltr">You don't need to, but I'm going to</p>
+        <p begin="00:30:05.10" end="00:30:08.6" tts:direction="ltr">copy it down so it's a little easier to
+<br/>see.</p>
+        <p begin="00:30:09.1" end="00:30:13.1" tts:direction="ltr">Which one is higher or lower for average
+<br/>retrofit</p>
+        <p begin="00:30:13.1" end="00:30:16.6" tts:direction="ltr">between pre 1910 and 1921 and 1930?</p>
+        <p begin="00:30:16.6" end="00:30:20.1" tts:direction="ltr">So why isn't so hypothesize why, right?</p>
+        <p begin="00:30:20.1" end="00:30:25.2" tts:direction="ltr">Hypothesize, try to explain why something
+<br/>is happening in the data.</p>
+        <p begin="00:30:25.2" end="00:30:29.1" tts:direction="ltr">So if we look here that, um,</p>
+        <p begin="00:30:29.3" end="00:30:33.9" tts:direction="ltr">The average retrofit is much higher from a
+<br/>pre 1910,</p>
+        <p begin="00:30:33.9" end="00:30:37.1" tts:direction="ltr">right, much higher, 1.2 compared to 0.6.</p>
+        <p begin="00:30:37.1" end="00:30:39.2" tts:direction="ltr">And we know that the greater that value
+<br/>is,</p>
+        <p begin="00:30:39.2" end="00:30:42.9" tts:direction="ltr">the more retrofitting has been done on
+<br/>buildings in that era.</p>
+        <p begin="00:30:42.9" end="00:30:47.2" tts:direction="ltr">So we can see here that the pre 1910 era
+<br/>has</p>
+        <p begin="00:30:47.2" end="00:30:51.9" tts:direction="ltr">had more retrofitting done than the 1921
+<br/>to 1930 era buildings.</p>
+        <p begin="00:30:51.9" end="00:30:55.4" tts:direction="ltr">And we don't want to just say that because
+<br/>that's just restating the fact,</p>
+        <p begin="00:30:55.4" end="00:30:57.8" tts:direction="ltr">but we want to come up with,</p>
+        <p begin="00:30:57.8" end="00:30:59.10" tts:direction="ltr">well, what might explain that?</p>
+        <p begin="00:30:59.10" end="00:31:04.8" tts:direction="ltr">So there's a lot of we could pull from a
+<br/>lot of different data points here,</p>
+        <p begin="00:31:04.8" end="00:31:09.2" tts:direction="ltr">but something that could potentially
+<br/>explain</p>
+        <p begin="00:31:09.2" end="00:31:13.10" tts:direction="ltr">this is that the average retrofit gives</p>
+        <p begin="00:31:13.10" end="00:31:23.6" tts:direction="ltr">us an idea of how thorough a retrofit
+<br/>retrofit,</p>
+        <p begin="00:31:23.6" end="00:31:28.7" tts:direction="ltr">there we go, has been done on that
+<br/>building.</p>
+        <p begin="00:31:28.7" end="00:31:37.4" tts:direction="ltr">So the average retrofit for homes built in
+<br/>or for buildings,</p>
+        <p begin="00:31:37.4" end="00:31:46.6" tts:direction="ltr">I should say, for buildings built in 1921
+<br/>to 1930 is 0.6.</p>
+        <p begin="00:31:46.6" end="00:31:52.7" tts:direction="ltr">The average retrofit for buildings built
+<br/>in</p>
+        <p begin="00:31:52.7" end="00:32:00.1" tts:direction="ltr">pre 19 is 1.2.</p>
+        <p begin="00:32:00.1" end="00:32:02" tts:direction="ltr">So here we kind of saying,</p>
+        <p begin="00:32:02" end="00:32:04.4" tts:direction="ltr">Hey, here's what's going on.</p>
+        <p begin="00:32:04.4" end="00:32:07.6" tts:direction="ltr">But now it's like, why?</p>
+        <p begin="00:32:07.6" end="00:32:10.6" tts:direction="ltr">Well, maybe there's a couple of reasons
+<br/>for this.</p>
+        <p begin="00:32:10.6" end="00:32:16.2" tts:direction="ltr">So one hypothesis could be that there's
+<br/>been</p>
+        <p begin="00:32:16.2" end="00:32:25.5" tts:direction="ltr">a focus on retrofitting the pre 1910
+<br/>buildings.</p>
+        <p begin="00:32:27.3" end="00:32:31.1" tts:direction="ltr">Because they may be</p>
+        <p begin="00:32:31.1" end="00:32:40.8" tts:direction="ltr">cultural or historic sites that should be
+<br/>preserved, right?</p>
+        <p begin="00:32:40.8" end="00:32:43.9" tts:direction="ltr">So that's one potential option is,</p>
+        <p begin="00:32:43.9" end="00:32:46.3" tts:direction="ltr">you know, just thinking about, hey,
+<br/>they're a lot older.</p>
+        <p begin="00:32:46.3" end="00:32:49.9" tts:direction="ltr">They may have cultural or historic
+<br/>significance.</p>
+        <p begin="00:32:49.9" end="00:32:53.4" tts:direction="ltr">And another though, if we think of another
+<br/>idea,</p>
+        <p begin="00:32:53.4" end="00:32:55.10" tts:direction="ltr">so you only need to put one hypothesis.</p>
+        <p begin="00:32:55.10" end="00:32:59.3" tts:direction="ltr">But another one is look at the average
+<br/>number of stories.</p>
+        <p begin="00:32:59.3" end="00:33:05.3" tts:direction="ltr">So the average number of stories decreases
+<br/>from 3.3 to 2.1.</p>
+        <p begin="00:33:05.3" end="00:33:07.7" tts:direction="ltr">And in that case, right,</p>
+        <p begin="00:33:07.7" end="00:33:10.6" tts:direction="ltr">so 3.3 average number of stories for</p>
+        <p begin="00:33:10.6" end="00:33:15.9" tts:direction="ltr">pre 1910 buildings and 2.1 1921-193030
+<br/>era,</p>
+        <p begin="00:33:15.9" end="00:33:17.4" tts:direction="ltr">that's really important too,</p>
+        <p begin="00:33:17.4" end="00:33:22.2" tts:direction="ltr">because maybe Um, given that, you know,</p>
+        <p begin="00:33:22.2" end="00:33:24.1" tts:direction="ltr">if an earthquake did occur,</p>
+        <p begin="00:33:24.1" end="00:33:27.3" tts:direction="ltr">you do not want to have a multiple story
+<br/>building,</p>
+        <p begin="00:33:27.3" end="00:33:30.9" tts:direction="ltr">right, in terms of they just don't they
+<br/>just don't survive as well.</p>
+        <p begin="00:33:30.9" end="00:33:32.6" tts:direction="ltr">So as such, you would need to perform</p>
+        <p begin="00:33:32.6" end="00:33:35.2" tts:direction="ltr">additional retrofitting on those buildings
+<br/>that have</p>
+        <p begin="00:33:35.2" end="00:33:40.1" tts:direction="ltr">multiple stories to help them overcome an
+<br/>earthquake, if you will.</p>
+        <p begin="00:33:40.1" end="00:33:43.6" tts:direction="ltr">So that's another hypothesis that you
+<br/>could write down too is, you know,</p>
+        <p begin="00:33:43.6" end="00:33:49.4" tts:direction="ltr">there's been prioritization because
+<br/>there's pre 1910 buildings are Um,</p>
+        <p begin="00:33:49.4" end="00:33:51.7" tts:direction="ltr">there's a higher average number of
+<br/>stories.</p>
+        <p begin="00:33:51.7" end="00:33:54.1" tts:direction="ltr">Therefore, they needed to focus on that
+<br/>for</p>
+        <p begin="00:33:54.1" end="00:33:57.9" tts:direction="ltr">the safety of the occupants in those
+<br/>buildings,</p>
+        <p begin="00:33:57.9" end="00:33:59.1" tts:direction="ltr">okay? So you can look at that.</p>
+        <p begin="00:33:59.1" end="00:34:01.3" tts:direction="ltr">You could also look at, hey, what's their
+<br/>usage?</p>
+        <p begin="00:34:01.3" end="00:34:03.2" tts:direction="ltr">You could look at all sorts of things.</p>
+        <p begin="00:34:03.2" end="00:34:05" tts:direction="ltr">Now, same thing here.</p>
+        <p begin="00:34:05" end="00:34:09.5" tts:direction="ltr">Compare the values for stories between the
+<br/>pre 1910 and then after 1930 era.</p>
+        <p begin="00:34:09.5" end="00:34:10.9" tts:direction="ltr">Which one is higher or lower?</p>
+        <p begin="00:34:10.9" end="00:34:14.1" tts:direction="ltr">So pre 1910, the average number of stories
+<br/>is 3.3.</p>
+        <p begin="00:34:14.1" end="00:34:17.4" tts:direction="ltr">After 1930, the average number of stories
+<br/>is 1.7.</p>
+        <p begin="00:34:17.4" end="00:34:19.5" tts:direction="ltr">Why might this be true?</p>
+        <p begin="00:34:19.5" end="00:34:23.6" tts:direction="ltr">So if you remember, we are dealing with
+<br/>masonry buildings, right?</p>
+        <p begin="00:34:23.6" end="00:34:26.7" tts:direction="ltr">And masonry refers to brick.</p>
+        <p begin="00:34:26.7" end="00:34:30.2" tts:direction="ltr">So we are talking about brick buildings
+<br/>here, right?</p>
+        <p begin="00:34:30.2" end="00:34:32.2" tts:direction="ltr">It's important to understand the context.</p>
+        <p begin="00:34:32.2" end="00:34:34.7" tts:direction="ltr">So knowing this, right,</p>
+        <p begin="00:34:34.7" end="00:34:39.6" tts:direction="ltr">maybe the building, and we can look at
+<br/>this techniques,</p>
+        <p begin="00:34:39.6" end="00:34:49.5" tts:direction="ltr">significantly advanced 1910-1930, and
+<br/>contractors found it</p>
+        <p begin="00:34:49.5" end="00:34:59.7" tts:direction="ltr">easier to build the taller buildings out
+<br/>of concrete instead of brick.</p>
+        <p begin="00:34:59.7" end="00:35:03.1" tts:direction="ltr">Okay? So that's a hypothesis as to why the
+<br/>decrease in</p>
+        <p begin="00:35:03.1" end="00:35:06.6" tts:direction="ltr">the average number of stories of these
+<br/>buildings over these eras, right?</p>
+        <p begin="00:35:06.6" end="00:35:07.9" tts:direction="ltr">That's just a hypothesis.</p>
+        <p begin="00:35:07.9" end="00:35:09.3" tts:direction="ltr">We would then need to test it.</p>
+        <p begin="00:35:09.3" end="00:35:11.3" tts:direction="ltr">All right, you don't need to do the bonus,</p>
+        <p begin="00:35:11.3" end="00:35:13.5" tts:direction="ltr">but if you want to, you absolutely can.</p>
+        <p begin="00:35:13.5" end="00:35:18.3" tts:direction="ltr">But I hope this is fun for you to condense
+<br/>a dataset into</p>
+        <p begin="00:35:18.3" end="00:35:20.3" tts:direction="ltr">a multiple variable table using</p>
+        <p begin="00:35:20.3" end="00:35:25.5" tts:direction="ltr">Excel skills and then develop some
+<br/>hypotheses based upon those data.</p>
+        <p begin="00:35:25.5" end="00:35:27.3" tts:direction="ltr">So go ahead and get this turned in.</p>
+        <p begin="00:35:27.3" end="00:35:29.8" tts:direction="ltr">Thanks for being such an awesome group.
+<br/>Take care, everybody.</p>
+    </div>
+  </body>
+</tt>

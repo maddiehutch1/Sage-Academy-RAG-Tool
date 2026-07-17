@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>560755952 - 1_09u8xkww - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:03.600" tts:direction="ltr">All right. As we jump into querying
+<br />multiple tables,</p>
+        <p begin="00:00:03.600" end="00:00:10.160" tts:direction="ltr">here is a good slide to reflect on the
+<br />format of how to query multiple tables.</p>
+        <p begin="00:00:10.160" end="00:00:14.960" tts:direction="ltr">We select the different columns that we
+<br />would like to see.</p>
+        <p begin="00:00:14.960" end="00:00:19.480" tts:direction="ltr">We do not necessarily have to use the
+<br />table aliases,</p>
+        <p begin="00:00:19.480" end="00:00:22.600" tts:direction="ltr">but we can, especially with ambiguous
+<br />column names,</p>
+        <p begin="00:00:22.600" end="00:00:25.720" tts:direction="ltr">we must use them with ambiguous column
+<br />names.</p>
+        <p begin="00:00:25.720" end="00:00:28.760" tts:direction="ltr">When we query, we will have</p>
+        <p begin="00:00:28.760" end="00:00:32.120" tts:direction="ltr">from table one listed here, and then on
+<br />the next line,</p>
+        <p begin="00:00:32.120" end="00:00:36.240" tts:direction="ltr">we will add our join keyword and then list
+<br />table two</p>
+        <p begin="00:00:36.240" end="00:00:41.440" tts:direction="ltr">and the on matching columns will be set
+<br />equal to each other.</p>
+        <p begin="00:00:41.440" end="00:00:43.760" tts:direction="ltr">As we are querying multiple tables,</p>
+        <p begin="00:00:43.760" end="00:00:46.240" tts:direction="ltr">we must continually be questioning what</p>
+        <p begin="00:00:46.240" end="00:00:50.000" tts:direction="ltr">does each record represent in our output.</p>
+        <p begin="00:00:50.000" end="00:00:52.640" tts:direction="ltr">Let's take one more look at this.</p>
+        <p begin="00:00:52.640" end="00:00:57.360" tts:direction="ltr">Let's see here that the overall general
+<br />idea of multable queries is that I</p>
+        <p begin="00:00:57.360" end="00:01:01.960" tts:direction="ltr">want to see data from two different
+<br />tables.</p>
+        <p begin="00:01:01.960" end="00:01:05.770" tts:direction="ltr">My question would be, return the first
+<br />name and last name.</p>
+        <p begin="00:01:05.770" end="00:01:09.060" tts:direction="ltr">Of each guest and their household income.</p>
+        <p begin="00:01:09.060" end="00:01:11.180" tts:direction="ltr">I know that first and last name comes from</p>
+        <p begin="00:01:11.180" end="00:01:15.580" tts:direction="ltr">my guest table and household comes from my
+<br />household table.</p>
+        <p begin="00:01:15.580" end="00:01:17.700" tts:direction="ltr">When I'm looking at this, return</p>
+        <p begin="00:01:17.700" end="00:01:21.300" tts:direction="ltr">the first and last name of each guest in
+<br />their household table.</p>
+        <p begin="00:01:21.300" end="00:01:24.140" tts:direction="ltr">I know I'm going to be pulling from that
+<br />household income in</p>
+        <p begin="00:01:24.140" end="00:01:28.860" tts:direction="ltr">my household table and the first name and
+<br />last name from my guest table.</p>
+        <p begin="00:01:28.860" end="00:01:33.380" tts:direction="ltr">Now, I can see here that the household is
+<br />the mini side is attached to guest,</p>
+        <p begin="00:01:33.380" end="00:01:36.220" tts:direction="ltr">meaning that a household can have many
+<br />guests,</p>
+        <p begin="00:01:36.220" end="00:01:40.220" tts:direction="ltr">but a guest is only going to have one
+<br />household.</p>
+        <p begin="00:01:40.220" end="00:01:44.825" tts:direction="ltr">Let's go ahead and write this query out.</p>
+        <p begin="00:01:44.825" end="00:01:48.630" tts:direction="ltr">So in your example sheet that I gave you,</p>
+        <p begin="00:01:48.630" end="00:01:51.710" tts:direction="ltr">this is actually our first example, which
+<br />worked out really well.</p>
+        <p begin="00:01:51.710" end="00:01:53.830" tts:direction="ltr">So we're going to return the first and
+<br />last name of</p>
+        <p begin="00:01:53.830" end="00:01:56.110" tts:direction="ltr">each guest and their household income.</p>
+        <p begin="00:01:56.110" end="00:01:57.910" tts:direction="ltr">So let's practice what we have learned.</p>
+        <p begin="00:01:57.910" end="00:02:01.390" tts:direction="ltr">We are going to start out here doing a
+<br />select star,</p>
+        <p begin="00:02:01.390" end="00:02:04.565" tts:direction="ltr">and we're going to say from guest, okay.</p>
+        <p begin="00:02:04.565" end="00:02:09.300" tts:direction="ltr">Let's star from guest and I run this and I
+<br />get all of my guest information.</p>
+        <p begin="00:02:09.300" end="00:02:13.420" tts:direction="ltr">Now, I need to here before that semicol,</p>
+        <p begin="00:02:13.420" end="00:02:15.820" tts:direction="ltr">I'm going to hit Enter and I'm going to
+<br />type out join</p>
+        <p begin="00:02:15.820" end="00:02:21.100" tts:direction="ltr">the household table and whoops,</p>
+        <p begin="00:02:21.100" end="00:02:27.820" tts:direction="ltr">I got to say from guest and we'll go back
+<br />to our code here.</p>
+        <p begin="00:02:27.820" end="00:02:34.340" tts:direction="ltr">Let's look at our code. From guests and
+<br />then we join to our other tables.</p>
+        <p begin="00:02:34.340" end="00:02:35.980" tts:direction="ltr">Now as a reminder,</p>
+        <p begin="00:02:35.980" end="00:02:39.500" tts:direction="ltr">we are going to rename our tables as
+<br />aliases.</p>
+        <p begin="00:02:39.500" end="00:02:43.700" tts:direction="ltr">We're going to say join guest as G. Um,</p>
+        <p begin="00:02:43.700" end="00:02:45.100" tts:direction="ltr">so from guess as G,</p>
+        <p begin="00:02:45.100" end="00:02:50.060" tts:direction="ltr">join household as H. Now for the duration
+<br />of this query,</p>
+        <p begin="00:02:50.060" end="00:02:53.380" tts:direction="ltr">because my from clause is processed first,</p>
+        <p begin="00:02:53.380" end="00:02:57.820" tts:direction="ltr">we can see here that the guest is now
+<br />going to</p>
+        <p begin="00:02:57.820" end="00:03:02.140" tts:direction="ltr">be referred to as G for the rest of our
+<br />query and household as H,</p>
+        <p begin="00:03:02.140" end="00:03:08.180" tts:direction="ltr">and we'll say on g dot household ID is
+<br />equal to dot household ID.</p>
+        <p begin="00:03:08.180" end="00:03:10.940" tts:direction="ltr">That's my primary foreign key
+<br />relationship,</p>
+        <p begin="00:03:10.940" end="00:03:15.940" tts:direction="ltr">so that I am saying that for a record to
+<br />be turned here,</p>
+        <p begin="00:03:15.940" end="00:03:19.500" tts:direction="ltr">the household ID must be equal to the
+<br />house ID in</p>
+        <p begin="00:03:19.500" end="00:03:23.340" tts:direction="ltr">the guest table must be equal to the
+<br />household ID in the household table.</p>
+        <p begin="00:03:23.340" end="00:03:25.980" tts:direction="ltr">So now let's go ahead and run this.</p>
+        <p begin="00:03:25.980" end="00:03:28.780" tts:direction="ltr">What we're going to see here is that every
+<br />record</p>
+        <p begin="00:03:28.780" end="00:03:32.220" tts:direction="ltr">represents a guest at Overland.</p>
+        <p begin="00:03:32.220" end="00:03:34.140" tts:direction="ltr">Here I have guest ID,</p>
+        <p begin="00:03:34.140" end="00:03:35.860" tts:direction="ltr">one house ID one,</p>
+        <p begin="00:03:35.860" end="00:03:37.620" tts:direction="ltr">Christian Willis and on down.</p>
+        <p begin="00:03:37.620" end="00:03:42.940" tts:direction="ltr">All this information from this field all
+<br />the way over to EDU.</p>
+        <p begin="00:03:42.940" end="00:03:45.580" tts:direction="ltr">This is all coming from my guest table.</p>
+        <p begin="00:03:45.580" end="00:03:49.260" tts:direction="ltr">I can double check that by looking at the
+<br />entity relationship diagram,</p>
+        <p begin="00:03:49.260" end="00:03:51.580" tts:direction="ltr">but that's all at my guest table.</p>
+        <p begin="00:03:51.580" end="00:03:54.690" tts:direction="ltr">Now, everything though coming, let me do
+<br />that quick.</p>
+        <p begin="00:03:54.690" end="00:03:57.920" tts:direction="ltr">Is going to be from household ID to
+<br />household income.</p>
+        <p begin="00:03:57.920" end="00:04:00.040" tts:direction="ltr">That's all from my household table.</p>
+        <p begin="00:04:00.040" end="00:04:02.880" tts:direction="ltr">Just keep that in mind. All this on the
+<br />left side is from</p>
+        <p begin="00:04:02.880" end="00:04:06.320" tts:direction="ltr">a guest table and all this on my right
+<br />side from the household table.</p>
+        <p begin="00:04:06.320" end="00:04:08.680" tts:direction="ltr">Now I want to return the first name and</p>
+        <p begin="00:04:08.680" end="00:04:11.400" tts:direction="ltr">last name of each guest and their
+<br />household income.</p>
+        <p begin="00:04:11.400" end="00:04:17.880" tts:direction="ltr">I'm going to say select first name because
+<br />these are not ambiguous columns,</p>
+        <p begin="00:04:17.880" end="00:04:21.200" tts:direction="ltr">meaning that first name and last name only
+<br />exists in the guest table</p>
+        <p begin="00:04:21.200" end="00:04:25.040" tts:direction="ltr">and their household income only exists in
+<br />the household table,</p>
+        <p begin="00:04:25.040" end="00:04:29.080" tts:direction="ltr">I do not need to put g dot first name.</p>
+        <p begin="00:04:29.080" end="00:04:32.000" tts:direction="ltr">Although I can, I do not have to.</p>
+        <p begin="00:04:32.000" end="00:04:34.440" tts:direction="ltr">That would just be referencing that</p>
+        <p begin="00:04:34.440" end="00:04:37.280" tts:direction="ltr">I want to pull the first name from the
+<br />guest table.</p>
+        <p begin="00:04:37.280" end="00:04:39.240" tts:direction="ltr">But again, because first name only</p>
+        <p begin="00:04:39.240" end="00:04:41.760" tts:direction="ltr">exists in one of the two tables I'm
+<br />querying,</p>
+        <p begin="00:04:41.760" end="00:04:43.520" tts:direction="ltr">I don't have to put which column I want to</p>
+        <p begin="00:04:43.520" end="00:04:45.440" tts:direction="ltr">pull from or which table I want to pull
+<br />from.</p>
+        <p begin="00:04:45.440" end="00:04:47.240" tts:direction="ltr">We can go ahead and run this now.</p>
+        <p begin="00:04:47.240" end="00:04:51.280" tts:direction="ltr">Now we can see that I have Christian,
+<br />Willis, and 153,000.</p>
+        <p begin="00:04:51.280" end="00:04:53.160" tts:direction="ltr">I'm showing the first name, last name of</p>
+        <p begin="00:04:53.160" end="00:04:55.440" tts:direction="ltr">each guest and their household income.</p>
+        <p begin="00:04:55.440" end="00:05:01.200" tts:direction="ltr">Now we are being able to utilize the power
+<br />of a relational database,</p>
+        <p begin="00:05:01.200" end="00:05:03.880" tts:direction="ltr">meaning that those tables relate to one
+<br />another.</p>
+        <p begin="00:05:03.880" end="00:05:08.720" tts:direction="ltr">Let's use those relationships to be able
+<br />to query multiple tables at once.</p>
+        <p begin="00:05:08.720" end="00:05:10.085" tts:direction="ltr">So, cool.</p>
+        <p begin="00:05:10.085" end="00:05:11.610" tts:direction="ltr">Okay, now, same as above,</p>
+        <p begin="00:05:11.610" end="00:05:13.690" tts:direction="ltr">but now show the household ID and the
+<br />output.</p>
+        <p begin="00:05:13.690" end="00:05:16.290" tts:direction="ltr">I like a good same as above question.</p>
+        <p begin="00:05:16.290" end="00:05:21.615" tts:direction="ltr">I'm going to copy the part from my query
+<br />from part one down to part two.</p>
+        <p begin="00:05:21.615" end="00:05:24.580" tts:direction="ltr">Now I want to show the household ID in the
+<br />output.</p>
+        <p begin="00:05:24.580" end="00:05:27.020" tts:direction="ltr">Now, let's type in household ID</p>
+        <p begin="00:05:27.020" end="00:05:30.780" tts:direction="ltr">here in my select because that's what I
+<br />want to see.</p>
+        <p begin="00:05:30.780" end="00:05:33.140" tts:direction="ltr">When I run this query,</p>
+        <p begin="00:05:33.140" end="00:05:37.700" tts:direction="ltr">we're going to get an error called
+<br />ambiguous column name HHID.</p>
+        <p begin="00:05:37.700" end="00:05:42.060" tts:direction="ltr">Now, the reason that we are receiving this
+<br />error is because household ID</p>
+        <p begin="00:05:42.060" end="00:05:47.860" tts:direction="ltr">exists in my guest table and in my
+<br />household table.</p>
+        <p begin="00:05:47.860" end="00:05:51.100" tts:direction="ltr">That's my column that I am joining on.</p>
+        <p begin="00:05:51.100" end="00:05:53.460" tts:direction="ltr">Therefore, I must say pull</p>
+        <p begin="00:05:53.460" end="00:05:57.820" tts:direction="ltr">the household ID from a specific table
+<br />because if not,</p>
+        <p begin="00:05:57.820" end="00:06:00.530" tts:direction="ltr">the processing on the back end is like,
+<br />well,</p>
+        <p begin="00:06:00.530" end="00:06:04.600" tts:direction="ltr">What what household ID am I pulling from?</p>
+        <p begin="00:06:04.600" end="00:06:08.320" tts:direction="ltr">Am I pulling the guest household ID or the
+<br />household household ID?</p>
+        <p begin="00:06:08.320" end="00:06:10.960" tts:direction="ltr">It's ambiguous. It exists in both tables.</p>
+        <p begin="00:06:10.960" end="00:06:14.320" tts:direction="ltr">As such, I'm going to say g dot household
+<br />ID,</p>
+        <p begin="00:06:14.320" end="00:06:17.080" tts:direction="ltr">first name, comma, last name and household
+<br />income.</p>
+        <p begin="00:06:17.080" end="00:06:21.140" tts:direction="ltr">Now I'm going to go ahead and highlight
+<br />query three to run this.</p>
+        <p begin="00:06:21.140" end="00:06:24.320" tts:direction="ltr">Now I can see here that since I said G
+<br />dot,</p>
+        <p begin="00:06:24.320" end="00:06:26.600" tts:direction="ltr">this is saying pull from the guest table.</p>
+        <p begin="00:06:26.600" end="00:06:30.160" tts:direction="ltr">G dot, meaning pull from the guest table,</p>
+        <p begin="00:06:30.160" end="00:06:34.080" tts:direction="ltr">period signifies the separation</p>
+        <p begin="00:06:34.080" end="00:06:38.040" tts:direction="ltr">between this is the table name and this is
+<br />the field name that I want to pull.</p>
+        <p begin="00:06:38.040" end="00:06:40.000" tts:direction="ltr">Now I can see I have the household ID,</p>
+        <p begin="00:06:40.000" end="00:06:42.440" tts:direction="ltr">first name, last name, and household
+<br />income.</p>
+        <p begin="00:06:42.440" end="00:06:46.880" tts:direction="ltr">Awesome. Now finally, I want to show the
+<br />average household income</p>
+        <p begin="00:06:46.880" end="00:06:51.560" tts:direction="ltr">for people who attended the Overland ski
+<br />resort on March 8th of 2023.</p>
+        <p begin="00:06:51.560" end="00:06:55.280" tts:direction="ltr">Well, I'm going to use some of this code
+<br />from up above.</p>
+        <p begin="00:06:55.280" end="00:06:56.600" tts:direction="ltr">Well, maybe. Hold on.</p>
+        <p begin="00:06:56.600" end="00:06:59.440" tts:direction="ltr">Let's take a look at our overland ERD and
+<br />data dictionary.</p>
+        <p begin="00:06:59.440" end="00:07:02.060" tts:direction="ltr">Let me get that pulled up for us here.</p>
+        <p begin="00:07:02.060" end="00:07:06.240" tts:direction="ltr">So as we're looking at the overlap ERD and
+<br />data dictionary,</p>
+        <p begin="00:07:06.240" end="00:07:07.960" tts:direction="ltr">we are going to be able to see here</p>
+        <p begin="00:07:07.960" end="00:07:10.600" tts:direction="ltr">that my household income is what I want to
+<br />show</p>
+        <p begin="00:07:10.600" end="00:07:12.960" tts:direction="ltr">the average household income for people</p>
+        <p begin="00:07:12.960" end="00:07:17.040" tts:direction="ltr">that came to the ski resort on March 8th
+<br />of 2023.</p>
+        <p begin="00:07:17.040" end="00:07:20.600" tts:direction="ltr">I know I need to pull data from the
+<br />household income table.</p>
+        <p begin="00:07:20.600" end="00:07:25.600" tts:direction="ltr">And then I also know that I'm going to
+<br />need the actual date.</p>
+        <p begin="00:07:25.600" end="00:07:31.200" tts:direction="ltr">So if I check out my table here that has V
+<br />ID.</p>
+        <p begin="00:07:31.200" end="00:07:40.830" tts:direction="ltr">So if I do a select star from visit, and I
+<br />run this.</p>
+        <p begin="00:07:40.830" end="00:07:45.590" tts:direction="ltr">What we're going to find out here is that
+<br />this visit table that</p>
+        <p begin="00:07:45.590" end="00:07:53.230" tts:direction="ltr">connects that connects my guests to my day
+<br />table.</p>
+        <p begin="00:07:53.230" end="00:07:59.190" tts:direction="ltr">This visit table is tracking the guests of
+<br />which attended on certain days.</p>
+        <p begin="00:07:59.190" end="00:08:02.230" tts:direction="ltr">Think of this as if you're at Costco and
+<br />you walk</p>
+        <p begin="00:08:02.230" end="00:08:05.565" tts:direction="ltr">in or Sam's Club or wherever and they scan
+<br />your card.</p>
+        <p begin="00:08:05.565" end="00:08:09.340" tts:direction="ltr">They are tracking your customer ID through
+<br />the card.</p>
+        <p begin="00:08:09.340" end="00:08:11.300" tts:direction="ltr">They are tracking the day,</p>
+        <p begin="00:08:11.300" end="00:08:16.700" tts:direction="ltr">and then they are assigning you a random
+<br />visitor ID for that visit.</p>
+        <p begin="00:08:16.700" end="00:08:18.860" tts:direction="ltr">Just keep that in mind.</p>
+        <p begin="00:08:18.860" end="00:08:20.500" tts:direction="ltr">With the visit table,</p>
+        <p begin="00:08:20.500" end="00:08:21.740" tts:direction="ltr">as I was just showing you here,</p>
+        <p begin="00:08:21.740" end="00:08:24.740" tts:direction="ltr">visit ID is assigning them just a random
+<br />number,</p>
+        <p begin="00:08:24.740" end="00:08:29.260" tts:direction="ltr">and then cust ID is the customer of which
+<br />this is our guest ID.</p>
+        <p begin="00:08:29.260" end="00:08:30.820" tts:direction="ltr">It's just called something different.</p>
+        <p begin="00:08:30.820" end="00:08:34.980" tts:direction="ltr">Guest ID one oh one came on day 5532.</p>
+        <p begin="00:08:34.980" end="00:08:36.620" tts:direction="ltr">Well, that's not super helpful.</p>
+        <p begin="00:08:36.620" end="00:08:39.340" tts:direction="ltr">Well, day ID is actually just a random,</p>
+        <p begin="00:08:39.340" end="00:08:40.820" tts:direction="ltr">we call it a surrogate key.</p>
+        <p begin="00:08:40.820" end="00:08:44.025" tts:direction="ltr">It's just auto incrementing ID.</p>
+        <p begin="00:08:44.025" end="00:08:48.630" tts:direction="ltr">Therefore, we can't actually tell what day
+<br />is March 8th, 2023,</p>
+        <p begin="00:08:48.630" end="00:08:57.950" tts:direction="ltr">unless we join from the day table.</p>
+        <p begin="00:08:57.950" end="00:09:00.390" tts:direction="ltr">Unless we join to the day table,</p>
+        <p begin="00:09:00.390" end="00:09:03.470" tts:direction="ltr">we cannot see the actual due date.</p>
+        <p begin="00:09:03.470" end="00:09:06.390" tts:direction="ltr">Knowing we got to come from</p>
+        <p begin="00:09:06.390" end="00:09:11.920" tts:direction="ltr">household all the way down to to actually
+<br />get that day date,</p>
+        <p begin="00:09:11.920" end="00:09:14.920" tts:direction="ltr">we need to join household to guest,</p>
+        <p begin="00:09:14.920" end="00:09:18.480" tts:direction="ltr">guest to visit, visit to.</p>
+        <p begin="00:09:18.480" end="00:09:21.760" tts:direction="ltr">We are going to have a four table join
+<br />here.</p>
+        <p begin="00:09:21.760" end="00:09:25.400" tts:direction="ltr">I cannot just come from household down to.</p>
+        <p begin="00:09:25.400" end="00:09:28.040" tts:direction="ltr">I do not have that common key here,</p>
+        <p begin="00:09:28.040" end="00:09:30.080" tts:direction="ltr">that primary foreign key relationship.</p>
+        <p begin="00:09:30.080" end="00:09:32.840" tts:direction="ltr">I must join from household to guest,</p>
+        <p begin="00:09:32.840" end="00:09:34.880" tts:direction="ltr">guest to visit visit today.</p>
+        <p begin="00:09:34.880" end="00:09:36.280" tts:direction="ltr">Think of it like a chain.</p>
+        <p begin="00:09:36.280" end="00:09:39.280" tts:direction="ltr">You're creating a chain between those four
+<br />tables.</p>
+        <p begin="00:09:39.280" end="00:09:40.680" tts:direction="ltr">We can do it. We got this,</p>
+        <p begin="00:09:40.680" end="00:09:42.880" tts:direction="ltr">so let's go ahead and do this.</p>
+        <p begin="00:09:43.470" end="00:09:47.950" tts:direction="ltr">I'm going to come up here and because
+<br />we're already,</p>
+        <p begin="00:09:47.950" end="00:09:51.350" tts:direction="ltr">I know I'm going to be joining guests and
+<br />household,</p>
+        <p begin="00:09:51.350" end="00:09:53.390" tts:direction="ltr">I'm just going to copy that down.</p>
+        <p begin="00:09:53.390" end="00:09:55.390" tts:direction="ltr">We're just going to make that easy.</p>
+        <p begin="00:09:55.390" end="00:09:57.150" tts:direction="ltr">I can say here at this point,</p>
+        <p begin="00:09:57.150" end="00:09:59.590" tts:direction="ltr">well, actually, let's rewrite it.</p>
+        <p begin="00:09:59.590" end="00:10:02.150" tts:direction="ltr">This will be good for us. All right, let's
+<br />rewrite it.</p>
+        <p begin="00:10:02.150" end="00:10:07.520" tts:direction="ltr">I'm going to say select star So go ahead
+<br />and do this along with me.</p>
+        <p begin="00:10:07.520" end="00:10:11.000" tts:direction="ltr">I'm going to say select star and let's
+<br />start on</p>
+        <p begin="00:10:11.000" end="00:10:15.880" tts:direction="ltr">the most left part from household to
+<br />guest.</p>
+        <p begin="00:10:15.880" end="00:10:20.280" tts:direction="ltr">We're going to say from household as H,</p>
+        <p begin="00:10:20.280" end="00:10:23.160" tts:direction="ltr">then I'm going to hit Enter in a tab.</p>
+        <p begin="00:10:23.160" end="00:10:29.770" tts:direction="ltr">Join guest as G. O and</p>
+        <p begin="00:10:29.770" end="00:10:32.730" tts:direction="ltr">then we know this dot D equal to</p>
+        <p begin="00:10:32.730" end="00:10:36.490" tts:direction="ltr">g dot D. That's my primary foreign key
+<br />relationship.</p>
+        <p begin="00:10:36.490" end="00:10:38.210" tts:direction="ltr">Now, here's my tip.</p>
+        <p begin="00:10:38.210" end="00:10:40.410" tts:direction="ltr">Run this query often.</p>
+        <p begin="00:10:40.410" end="00:10:44.890" tts:direction="ltr">As we're building more and more complex
+<br />queries, run it often.</p>
+        <p begin="00:10:44.890" end="00:10:48.090" tts:direction="ltr">Select R from household, we get all that
+<br />information.</p>
+        <p begin="00:10:48.090" end="00:10:50.770" tts:direction="ltr">Now what I need to do, everything ran okay
+<br />there.</p>
+        <p begin="00:10:50.770" end="00:10:52.290" tts:direction="ltr">Now I have household to guest,</p>
+        <p begin="00:10:52.290" end="00:10:54.610" tts:direction="ltr">now I need to go from guest to visit.</p>
+        <p begin="00:10:54.610" end="00:10:58.530" tts:direction="ltr">Now I'm going to say before my semicolon,</p>
+        <p begin="00:10:58.530" end="00:11:05.730" tts:direction="ltr">I'm going to hit Enter and I'm going to
+<br />say join visit as V on.</p>
+        <p begin="00:11:05.730" end="00:11:09.770" tts:direction="ltr">Now, what's my primary foreign key
+<br />relationship between guest and visit?</p>
+        <p begin="00:11:09.770" end="00:11:14.570" tts:direction="ltr">My primary foreign key relationship is I
+<br />have the guest ID from</p>
+        <p begin="00:11:14.570" end="00:11:20.610" tts:direction="ltr">the guest table coming into the visit
+<br />table as cust ID.</p>
+        <p begin="00:11:20.610" end="00:11:23.010" tts:direction="ltr">Now I can double check myself by going
+<br />down here to</p>
+        <p begin="00:11:23.010" end="00:11:26.010" tts:direction="ltr">the visit table and I can see here that
+<br />CustID is</p>
+        <p begin="00:11:26.010" end="00:11:27.970" tts:direction="ltr">a foreign key that references</p>
+        <p begin="00:11:27.970" end="00:11:32.770" tts:direction="ltr">guest if I zoom in all the way there for
+<br />you so we can see that.</p>
+        <p begin="00:11:32.770" end="00:11:43.600" tts:direction="ltr">Perfect. So now I'm going to say on g dot
+<br />guest ID is equal to V dot cust ID.</p>
+        <p begin="00:11:43.600" end="00:11:46.400" tts:direction="ltr">So P to running this,</p>
+        <p begin="00:11:46.400" end="00:11:50.120" tts:direction="ltr">every one of these records here indicated
+<br />an individual guest,</p>
+        <p begin="00:11:50.120" end="00:11:53.200" tts:direction="ltr">and household can have many guests.</p>
+        <p begin="00:11:53.200" end="00:11:55.400" tts:direction="ltr">The most granular we were getting at</p>
+        <p begin="00:11:55.400" end="00:11:59.400" tts:direction="ltr">that point is the guest is every record in
+<br />my output.</p>
+        <p begin="00:11:59.400" end="00:12:02.840" tts:direction="ltr">Now, let's go ahead and run question
+<br />three.</p>
+        <p begin="00:12:04.770" end="00:12:07.850" tts:direction="ltr">Okay. Now what I see here when I look</p>
+        <p begin="00:12:07.850" end="00:12:10.410" tts:direction="ltr">at question three and I'm going to zoom
+<br />out just for a second,</p>
+        <p begin="00:12:10.410" end="00:12:12.450" tts:direction="ltr">is that you will notice that I have</p>
+        <p begin="00:12:12.450" end="00:12:14.690" tts:direction="ltr">all of my household information appearing
+<br />first,</p>
+        <p begin="00:12:14.690" end="00:12:17.730" tts:direction="ltr">so I have household ID to household
+<br />income.</p>
+        <p begin="00:12:17.730" end="00:12:20.970" tts:direction="ltr">That is all data coming from my household
+<br />table.</p>
+        <p begin="00:12:20.970" end="00:12:25.130" tts:direction="ltr">Then from guest ID over to season pass,</p>
+        <p begin="00:12:25.130" end="00:12:28.330" tts:direction="ltr">that's all data coming from my guest
+<br />table.</p>
+        <p begin="00:12:28.330" end="00:12:33.010" tts:direction="ltr">Then finally, from V ID all the way over
+<br />to day ID,</p>
+        <p begin="00:12:33.010" end="00:12:35.715" tts:direction="ltr">that's all data coming from my visit
+<br />table.</p>
+        <p begin="00:12:35.715" end="00:12:38.340" tts:direction="ltr">So I have all these different columns.</p>
+        <p begin="00:12:38.340" end="00:12:41.220" tts:direction="ltr">Now, what does every record represent?</p>
+        <p begin="00:12:41.220" end="00:12:43.700" tts:direction="ltr">What does every record represent?</p>
+        <p begin="00:12:43.700" end="00:12:45.660" tts:direction="ltr">Now, when I take a look at this,</p>
+        <p begin="00:12:45.660" end="00:12:47.620" tts:direction="ltr">what I can notice here is,</p>
+        <p begin="00:12:47.620" end="00:12:49.020" tts:direction="ltr">let me just throw in quick.</p>
+        <p begin="00:12:49.020" end="00:12:50.300" tts:direction="ltr">Now, this is not required,</p>
+        <p begin="00:12:50.300" end="00:12:52.620" tts:direction="ltr">but it's going to help us understand this
+<br />conceptually.</p>
+        <p begin="00:12:52.620" end="00:12:54.620" tts:direction="ltr">I'm going to throw in an order but I'm
+<br />going to say</p>
+        <p begin="00:12:54.620" end="00:12:57.620" tts:direction="ltr">order by guest ID descending.</p>
+        <p begin="00:12:57.860" end="00:13:03.840" tts:direction="ltr">What this is going to appear to me is you
+<br />will notice that</p>
+        <p begin="00:13:03.840" end="00:13:12.480" tts:direction="ltr">all of a sudden my guest ID for Easton
+<br />Carr is repeating three times.</p>
+        <p begin="00:13:12.800" end="00:13:16.680" tts:direction="ltr">What does this mean? What does every
+<br />record then represent?</p>
+        <p begin="00:13:16.680" end="00:13:21.160" tts:direction="ltr">I'm no longer just looking at unique
+<br />guests in my output.</p>
+        <p begin="00:13:21.160" end="00:13:22.800" tts:direction="ltr">My guests are repeating.</p>
+        <p begin="00:13:22.800" end="00:13:25.920" tts:direction="ltr">When you scroll over, I hope you see that,</p>
+        <p begin="00:13:25.920" end="00:13:29.880" tts:direction="ltr">I'm looking at Eastern Cars visits.</p>
+        <p begin="00:13:29.880" end="00:13:33.440" tts:direction="ltr">Every one of these records now represents</p>
+        <p begin="00:13:33.440" end="00:13:37.160" tts:direction="ltr">an individual guest visiting my ski
+<br />resort.</p>
+        <p begin="00:13:37.160" end="00:13:42.595" tts:direction="ltr">Eastern Carr visited my ski resort three
+<br />times in this dataset.</p>
+        <p begin="00:13:42.595" end="00:13:46.070" tts:direction="ltr">Cash Schroeder did three times as well.</p>
+        <p begin="00:13:46.070" end="00:13:49.030" tts:direction="ltr">Bennett Bennett Green went one, two,
+<br />three,</p>
+        <p begin="00:13:49.030" end="00:13:52.630" tts:direction="ltr">four, five, Bennett came to the ski resort
+<br />five times.</p>
+        <p begin="00:13:52.630" end="00:13:57.590" tts:direction="ltr">Every one of these records now represents
+<br />an individual visit.</p>
+        <p begin="00:13:57.590" end="00:14:03.990" tts:direction="ltr">We can see that looking at our Overland
+<br />Peak ERD and data dictionary.</p>
+        <p begin="00:14:03.990" end="00:14:06.045" tts:direction="ltr">Because remember here I told you,</p>
+        <p begin="00:14:06.045" end="00:14:09.540" tts:direction="ltr">Back when we were learning about the
+<br />structure of a relational database,</p>
+        <p begin="00:14:09.540" end="00:14:13.740" tts:direction="ltr">that this is important to understand that
+<br />a household can have many guests.</p>
+        <p begin="00:14:13.740" end="00:14:16.380" tts:direction="ltr">When I join household and guests together,</p>
+        <p begin="00:14:16.380" end="00:14:20.140" tts:direction="ltr">every one of those records is going to
+<br />represent a guest.</p>
+        <p begin="00:14:20.140" end="00:14:23.060" tts:direction="ltr">But a guest now can have many visits.</p>
+        <p begin="00:14:23.060" end="00:14:25.660" tts:direction="ltr">Now we can have more records than</p>
+        <p begin="00:14:25.660" end="00:14:29.220" tts:direction="ltr">just the number of guests because a guest
+<br />has many visits.</p>
+        <p begin="00:14:29.220" end="00:14:33.660" tts:direction="ltr">Those many visits, now I'm going to have
+<br />many records of</p>
+        <p begin="00:14:33.660" end="00:14:38.645" tts:direction="ltr">my guests indicating individual visits to
+<br />my overland ski resort.</p>
+        <p begin="00:14:38.645" end="00:14:40.030" tts:direction="ltr">Now, on the other hand,</p>
+        <p begin="00:14:40.030" end="00:14:45.470" tts:direction="ltr">my day table isn't going to make my data
+<br />any more granular, meaning specific.</p>
+        <p begin="00:14:45.470" end="00:14:48.310" tts:direction="ltr">Visit as specific as we're going to get
+<br />because</p>
+        <p begin="00:14:48.310" end="00:14:51.870" tts:direction="ltr">day also has the mini relationship with
+<br />visit.</p>
+        <p begin="00:14:51.870" end="00:14:54.790" tts:direction="ltr">Now once I join, so here after CustID,</p>
+        <p begin="00:14:54.790" end="00:14:59.310" tts:direction="ltr">I'm going to hit Enter and I'm going to
+<br />say join day as D and</p>
+        <p begin="00:14:59.310" end="00:15:03.030" tts:direction="ltr">that primary foreign key relationship is
+<br />date ID</p>
+        <p begin="00:15:03.030" end="00:15:07.270" tts:direction="ltr">coming from the day table into the visit
+<br />table as the day ID.</p>
+        <p begin="00:15:07.270" end="00:15:10.280" tts:direction="ltr">We say from join day as D,</p>
+        <p begin="00:15:10.280" end="00:15:18.090" tts:direction="ltr">on hold on.</p>
+        <p begin="00:15:18.090" end="00:15:20.610" tts:direction="ltr">Date ID. I always forget this one,</p>
+        <p begin="00:15:20.610" end="00:15:26.010" tts:direction="ltr">D D equal to V dot ID.</p>
+        <p begin="00:15:26.010" end="00:15:30.730" tts:direction="ltr">Now I have my four table join going on
+<br />here.</p>
+        <p begin="00:15:30.730" end="00:15:35.770" tts:direction="ltr">I'm just going to run just this one query
+<br />because if not, it'll take a minute.</p>
+        <p begin="00:15:38.010" end="00:15:43.890" tts:direction="ltr">Now what I can see here Is every one of
+<br />these records again,</p>
+        <p begin="00:15:43.890" end="00:15:46.450" tts:direction="ltr">still represents an individual visit.</p>
+        <p begin="00:15:46.450" end="00:15:52.210" tts:direction="ltr">Now I'm just adding on all of the date
+<br />information for all of these visits.</p>
+        <p begin="00:15:52.210" end="00:15:59.850" tts:direction="ltr">Now I'm just adding on the Eastern car
+<br />came on February 14th of 2023,</p>
+        <p begin="00:15:59.850" end="00:16:03.130" tts:direction="ltr">and we're looking here at historical data,</p>
+        <p begin="00:16:03.130" end="00:16:06.370" tts:direction="ltr">and we can see that on that day was a
+<br />Tuesday,</p>
+        <p begin="00:16:06.370" end="00:16:09.570" tts:direction="ltr">the price weekday pricing was not a
+<br />holiday</p>
+        <p begin="00:16:09.570" end="00:16:13.490" tts:direction="ltr">and the skies there was snowing that day.</p>
+        <p begin="00:16:13.490" end="00:16:15.810" tts:direction="ltr">That's what I am looking at in terms</p>
+        <p begin="00:16:15.810" end="00:16:19.355" tts:direction="ltr">of needing to capture my household income.</p>
+        <p begin="00:16:19.355" end="00:16:22.500" tts:direction="ltr">And be able to only look at people who
+<br />attended</p>
+        <p begin="00:16:22.500" end="00:16:25.460" tts:direction="ltr">the Overland ski resort on March 8th of
+<br />2023.</p>
+        <p begin="00:16:25.460" end="00:16:28.340" tts:direction="ltr">That's what I'm going to do here in my
+<br />where clause</p>
+        <p begin="00:16:28.340" end="00:16:31.420" tts:direction="ltr">is I'm going to go ahead and I'm going to
+<br />say, you know,</p>
+        <p begin="00:16:31.420" end="00:16:36.660" tts:direction="ltr">where and I need to limit the records to
+<br />only be those</p>
+        <p begin="00:16:36.660" end="00:16:46.700" tts:direction="ltr">that have a D date equal to Um,</p>
+        <p begin="00:16:46.700" end="00:16:51.620" tts:direction="ltr">we're going to put this within single
+<br />quotes because day is technically,</p>
+        <p begin="00:16:51.620" end="00:16:58.020" tts:direction="ltr">although it's integers, it's more of a
+<br />qualitative type of data.</p>
+        <p begin="00:16:58.020" end="00:17:00.740" tts:direction="ltr">It's not necessarily just integers.</p>
+        <p begin="00:17:00.740" end="00:17:03.740" tts:direction="ltr">We are never going to aggregate dates.</p>
+        <p begin="00:17:03.740" end="00:17:08.860" tts:direction="ltr">We're never going to say sum all these
+<br />dates together like we would say sales.</p>
+        <p begin="00:17:08.860" end="00:17:12.580" tts:direction="ltr">As such, we are going to put things like
+<br />zip codes,</p>
+        <p begin="00:17:12.580" end="00:17:14.140" tts:direction="ltr">phone numbers, and dates,</p>
+        <p begin="00:17:14.140" end="00:17:17.260" tts:direction="ltr">things that we're not going to aggregate
+<br />or add together,</p>
+        <p begin="00:17:17.260" end="00:17:19.620" tts:direction="ltr">we're going to put those within single
+<br />quotes.</p>
+        <p begin="00:17:19.620" end="00:17:24.190" tts:direction="ltr">We say 202-03-0308, okay?</p>
+        <p begin="00:17:24.190" end="00:17:26.440" tts:direction="ltr">So now when I run this,</p>
+        <p begin="00:17:26.440" end="00:17:35.000" tts:direction="ltr">I should only be looking at the visits
+<br />that occurred on March 8th of 2023.</p>
+        <p begin="00:17:35.000" end="00:17:36.760" tts:direction="ltr">Now I'm going to get rid of that order by</p>
+        <p begin="00:17:36.760" end="00:17:39.430" tts:direction="ltr">guest ID because that's not really
+<br />helpful.</p>
+        <p begin="00:17:39.430" end="00:17:42.260" tts:direction="ltr">In this context, I'm going to run it
+<br />again.</p>
+        <p begin="00:17:42.260" end="00:17:45.220" tts:direction="ltr">Now what I do, my question I'm trying to
+<br />answer is</p>
+        <p begin="00:17:45.220" end="00:17:48.900" tts:direction="ltr">the average household income for people
+<br />who attended on this date.</p>
+        <p begin="00:17:48.900" end="00:17:53.340" tts:direction="ltr">Now what I'm going to do is I'm going to
+<br />look at my average or I'm going</p>
+        <p begin="00:17:53.340" end="00:17:55.300" tts:direction="ltr">to look at my household income field</p>
+        <p begin="00:17:55.300" end="00:17:57.620" tts:direction="ltr">and I'm going to use an aggregate
+<br />function.</p>
+        <p begin="00:17:57.620" end="00:18:06.020" tts:direction="ltr">I'm going to select the average household
+<br />income as average household income.</p>
+        <p begin="00:18:06.020" end="00:18:08.620" tts:direction="ltr">I run this and that's my answer,</p>
+        <p begin="00:18:08.620" end="00:18:13.500" tts:direction="ltr">133,143 is my average household income</p>
+        <p begin="00:18:13.500" end="00:18:16.680" tts:direction="ltr">for guests who visited on March 8th of
+<br />2023.</p>
+        <p begin="00:18:16.680" end="00:18:18.380" tts:direction="ltr">Such a fun problem.</p>
+        <p begin="00:18:18.380" end="00:18:22.100" tts:direction="ltr">You just said a four table join, just like
+<br />that.</p>
+        <p begin="00:18:22.100" end="00:18:26.340" tts:direction="ltr">Remember, create a chain between all the
+<br />different tables that you</p>
+        <p begin="00:18:26.340" end="00:18:31.180" tts:direction="ltr">must join and always think about what does
+<br />the output represent.</p>
+        <p begin="00:18:31.180" end="00:18:34.300" tts:direction="ltr">Thanks everybody. Take care.</p>
+    </div>
+  </body>
+</tt>

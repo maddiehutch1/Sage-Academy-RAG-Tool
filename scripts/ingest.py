@@ -1,12 +1,13 @@
 """
 Phase 2 ingestion pipeline.
 
-Reads SRT transcript files from data/transcripts/, groups subtitle entries
-into overlapping token-bounded chunks with real timestamps, generates OpenAI
-embeddings, and stores everything in PostgreSQL with pgvector.
+Reads SRT and DFXP transcript files from data/transcripts/ (recursively),
+groups subtitle entries into overlapping token-bounded chunks with real
+timestamps, generates OpenAI embeddings, and stores everything in PostgreSQL
+with pgvector.
 
-Each .srt file must have a companion .json sidecar in the same folder with
-the following fields:
+Each transcript file (.srt or .dfxp) must have a companion .json sidecar in
+the same folder with the following fields:
     {
         "course": "Course Name",
         "video": "Video Title",
@@ -22,6 +23,7 @@ import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import psycopg2
@@ -33,7 +35,7 @@ load_dotenv()
 
 TRANSCRIPTS_DIR = Path(__file__).parent.parent / "data" / "transcripts"
 CHUNK_MAX_TOKENS = 400
-CHUNK_OVERLAP_ENTRIES = 5   # SRT entries to carry over between chunks for context
+CHUNK_OVERLAP_ENTRIES = 5   # subtitle entries to carry over between chunks for context
 EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -42,6 +44,9 @@ enc = tiktoken.get_encoding("cl100k_base")
 
 # Matches speaker labels like "INSTRUCTOR: " or "STUDENT A: " at line start
 SPEAKER_RE = re.compile(r"^[A-Z][A-Z\s]+:\s*")
+
+# TTML/DFXP namespace URI
+_TTML_NS = "http://www.w3.org/ns/ttml"
 
 
 # ---------------------------------------------------------------------------
@@ -90,9 +95,83 @@ def parse_srt(path: Path) -> list[dict]:
     return entries
 
 
-def load_sidecar(srt_path: Path) -> dict:
-    """Load companion .json metadata file for a given .srt path."""
-    sidecar = srt_path.with_suffix(".json")
+# ---------------------------------------------------------------------------
+# DFXP / TTML parsing
+# ---------------------------------------------------------------------------
+
+def dfxp_time_to_seconds(ts: str) -> int:
+    """
+    Convert a DFXP/TTML time expression to integer seconds.
+    Handles HH:MM:SS and HH:MM:SS.frac (fractional seconds are discarded).
+    """
+    # Strip fractional seconds (e.g. "26.10" -> "26", "02.4" -> "02")
+    ts_clean = ts.split(".")[0]
+    parts = ts_clean.split(":")
+    if len(parts) == 3:
+        h, m, s = parts
+        return int(h) * 3600 + int(m) * 60 + int(s)
+    if len(parts) == 2:
+        m, s = parts
+        return int(m) * 60 + int(s)
+    return int(parts[0])
+
+
+def _ttml_text(p_elem) -> str:
+    """Extract plain text from a TTML <p> element, collapsing <br/> to spaces."""
+    parts = []
+    if p_elem.text:
+        parts.append(p_elem.text)
+    for child in p_elem:
+        local = child.tag.split("}")[-1] if "}" in child.tag else child.tag
+        if local == "br":
+            parts.append(" ")
+        if child.tail:
+            parts.append(child.tail)
+    text = " ".join(parts)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def parse_dfxp(path: Path) -> list[dict]:
+    """
+    Parse a DFXP/TTML caption file into a list of entries:
+        {"start_sec": int, "end_sec": int, "text": str}
+    Skips empty entries and strips speaker labels.
+    """
+    tree = ET.parse(path)
+    root = tree.getroot()
+
+    # Try both namespaced and un-namespaced <p> elements
+    ns = {"tt": _TTML_NS}
+    p_elements = root.findall(f".//{{{_TTML_NS}}}p")
+    if not p_elements:
+        p_elements = root.findall(".//p")
+
+    entries = []
+    for p in p_elements:
+        begin = p.get("begin", "").strip()
+        end = p.get("end", "").strip()
+        if not begin or not end:
+            continue
+
+        start_sec = dfxp_time_to_seconds(begin)
+        end_sec = dfxp_time_to_seconds(end)
+
+        text = _ttml_text(p)
+        text = SPEAKER_RE.sub("", text).strip()
+
+        if text:
+            entries.append({"start_sec": start_sec, "end_sec": end_sec, "text": text})
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# Sidecar loader (works for both .srt and .dfxp paths)
+# ---------------------------------------------------------------------------
+
+def load_sidecar(transcript_path: Path) -> dict:
+    """Load companion .json metadata file for a given transcript path."""
+    sidecar = transcript_path.with_suffix(".json")
     if not sidecar.exists():
         raise FileNotFoundError(
             f"Missing metadata sidecar: {sidecar}\n"
@@ -108,7 +187,7 @@ def load_sidecar(srt_path: Path) -> dict:
 
 def chunk_entries(entries: list[dict], max_tokens: int, overlap_entries: int) -> list[dict]:
     """
-    Group SRT entries into overlapping token-bounded chunks.
+    Group subtitle entries into overlapping token-bounded chunks.
     Returns list of:
         {"text": str, "start_sec": int, "end_sec": int}
     """
@@ -182,6 +261,11 @@ def get_or_create_video(
     )
     row = cur.fetchone()
     if row:
+        # Update source_url and transcript_path in case they changed
+        cur.execute(
+            "UPDATE videos SET source_url = %s, transcript_path = %s WHERE id = %s",
+            (source_url, transcript_path, row[0]),
+        )
         return row[0]
     video_id = title.lower().replace(" ", "-")
     cur.execute(
@@ -199,28 +283,33 @@ def get_or_create_video(
 # Per-file ingestion
 # ---------------------------------------------------------------------------
 
-def ingest_file(cur, srt_path: Path) -> None:
-    print(f"\nIngesting: {srt_path.name}")
+def ingest_file(cur, transcript_path: Path) -> None:
+    print(f"\nIngesting: {transcript_path.name}")
 
-    meta = load_sidecar(srt_path)
+    meta = load_sidecar(transcript_path)
     course_name = meta.get("course")
     video_title = meta.get("video")
-    source_url = meta.get("source_url")
+    source_url = meta.get("source_url") or None
 
     if not course_name or not video_title:
-        print("  Skipping — sidecar JSON missing 'course' or 'video' key.")
+        print("  Skipping -- sidecar JSON missing 'course' or 'video' key.")
         return
 
-    entries = parse_srt(srt_path)
+    suffix = transcript_path.suffix.lower()
+    if suffix == ".dfxp":
+        entries = parse_dfxp(transcript_path)
+    else:
+        entries = parse_srt(transcript_path)
+
     if not entries:
-        print("  Skipping — no valid subtitle entries found.")
+        print("  Skipping -- no valid subtitle entries found.")
         return
 
     print(f"  Parsed {len(entries)} subtitle entries")
 
     course_db_id = get_or_create_course(cur, course_name)
     video_db_id = get_or_create_video(
-        cur, course_db_id, video_title, source_url, str(srt_path)
+        cur, course_db_id, video_title, source_url, str(transcript_path)
     )
 
     # Idempotent: clear existing chunks before re-inserting
@@ -246,7 +335,7 @@ def ingest_file(cur, srt_path: Path) -> None:
                 vector_to_pg(vec),
             ),
         )
-        print(f"  Stored chunk {i}  [{chunk['start_sec']}s – {chunk['end_sec']}s]  "
+        print(f"  Stored chunk {i}  [{chunk['start_sec']}s - {chunk['end_sec']}s]  "
               f"({len(enc.encode(chunk['text']))} tokens)")
 
 
@@ -259,22 +348,28 @@ def main() -> None:
         print("ERROR: DATABASE_URL not set in .env")
         sys.exit(1)
     if not os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY") == "your-openai-api-key":
-        print("ERROR: OPENAI_API_KEY not set in .env — add your real key before running.")
+        print("ERROR: OPENAI_API_KEY not set in .env -- add your real key before running.")
         sys.exit(1)
 
-    files = sorted(TRANSCRIPTS_DIR.glob("*.srt"))
+    srt_files = sorted(TRANSCRIPTS_DIR.rglob("*.srt"))
+    dfxp_files = sorted(TRANSCRIPTS_DIR.rglob("*.dfxp"))
+    files = srt_files + dfxp_files
+
     if not files:
-        print(f"No .srt files found in {TRANSCRIPTS_DIR}")
+        print(f"No .srt or .dfxp files found under {TRANSCRIPTS_DIR}")
         sys.exit(1)
 
-    print(f"Found {len(files)} SRT file(s) in {TRANSCRIPTS_DIR}")
+    print(f"Found {len(srt_files)} SRT and {len(dfxp_files)} DFXP file(s) under {TRANSCRIPTS_DIR}")
 
     conn = psycopg2.connect(DATABASE_URL)
     try:
         with conn:
             with conn.cursor() as cur:
                 for path in files:
-                    ingest_file(cur, path)
+                    try:
+                        ingest_file(cur, path)
+                    except FileNotFoundError as exc:
+                        print(f"  Skipping -- {exc}")
         print("\nIngestion complete.")
     finally:
         conn.close()

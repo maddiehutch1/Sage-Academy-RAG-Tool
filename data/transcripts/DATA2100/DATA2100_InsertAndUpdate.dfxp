@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>560798282 - 1_a98q8e5e - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.3" end="00:00:03.2" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:03.2" end="00:00:07" tts:direction="ltr">Today we are going to learn how do we edit
+<br/>or change</p>
+        <p begin="00:00:07" end="00:00:12.3" tts:direction="ltr">or update data inside of our relational
+<br/>database.</p>
+        <p begin="00:00:12.3" end="00:00:21.7" tts:direction="ltr">You have been using a database that is
+<br/>managed or is stored on an AWS server.</p>
+        <p begin="00:00:21.7" end="00:00:26.9" tts:direction="ltr">Okay. That database is accessible to all
+<br/>students in Data 2,100.</p>
+        <p begin="00:00:26.9" end="00:00:31.1" tts:direction="ltr">As such, you only have what we call read
+<br/>privileges,</p>
+        <p begin="00:00:31.1" end="00:00:33.1" tts:direction="ltr">read like you're reading something.</p>
+        <p begin="00:00:33.1" end="00:00:37.2" tts:direction="ltr">We allow you to read the data in terms of
+<br/>you can query the database,</p>
+        <p begin="00:00:37.2" end="00:00:38.8" tts:direction="ltr">it outputs data to you,</p>
+        <p begin="00:00:38.8" end="00:00:42.9" tts:direction="ltr">but you cannot update the data given the
+<br/>login that you have.</p>
+        <p begin="00:00:42.9" end="00:00:44.4" tts:direction="ltr">Can you imagine that?</p>
+        <p begin="00:00:44.4" end="00:00:46.9" tts:direction="ltr">All of a sudden, all of the students at
+<br/>Data</p>
+        <p begin="00:00:46.9" end="00:00:49.9" tts:direction="ltr">2,100 of which there's about 500 a
+<br/>semester</p>
+        <p begin="00:00:49.9" end="00:00:56.3" tts:direction="ltr">are being able to change all of this data
+<br/>in our shared database.</p>
+        <p begin="00:00:56.3" end="00:00:59.8" tts:direction="ltr">As such, as we learn to manipulate
+<br/>database data,</p>
+        <p begin="00:00:59.8" end="00:01:05.3" tts:direction="ltr">we are going to actually download a
+<br/>database file to your computer.</p>
+        <p begin="00:01:05.3" end="00:01:10" tts:direction="ltr">You will notice it's called overland
+<br/>underscore light dot db.</p>
+        <p begin="00:01:10" end="00:01:12.4" tts:direction="ltr">It is above this video to download.</p>
+        <p begin="00:01:12.4" end="00:01:15.9" tts:direction="ltr">And that is a database file that we're
+<br/>going</p>
+        <p begin="00:01:15.9" end="00:01:19.3" tts:direction="ltr">to download and work with through
+<br/>BeeKeper.</p>
+        <p begin="00:01:19.3" end="00:01:20.10" tts:direction="ltr">This is just locally hosted.</p>
+        <p begin="00:01:20.10" end="00:01:24.8" tts:direction="ltr">It's it's just in your downloads folder,</p>
+        <p begin="00:01:24.8" end="00:01:27.8" tts:direction="ltr">and we're going to be able to edit that
+<br/>database</p>
+        <p begin="00:01:27.8" end="00:01:30.7" tts:direction="ltr">because it's your own personal copy of the
+<br/>database,</p>
+        <p begin="00:01:30.7" end="00:01:34.2" tts:direction="ltr">and it's just a quick way so that you can
+<br/>have</p>
+        <p begin="00:01:34.2" end="00:01:37.8" tts:direction="ltr">the access to change and update the
+<br/>database.</p>
+        <p begin="00:01:37.8" end="00:01:40" tts:direction="ltr">But again, if you were doing this on</p>
+        <p begin="00:01:40" end="00:01:45.2" tts:direction="ltr">an AWS If you were doing this on a
+<br/>database hosted by AWS,</p>
+        <p begin="00:01:45.2" end="00:01:47.8" tts:direction="ltr">you would just need to have different
+<br/>credentials to do so.</p>
+        <p begin="00:01:47.8" end="00:01:51.1" tts:direction="ltr">We're still learning the exact same
+<br/>principles as what you</p>
+        <p begin="00:01:51.1" end="00:01:55.1" tts:direction="ltr">would do in terms of a large scale,</p>
+        <p begin="00:01:55.1" end="00:01:58.4" tts:direction="ltr">but we're doing it in a simpler way so
+<br/>that it's again</p>
+        <p begin="00:01:58.4" end="00:02:00.10" tts:direction="ltr">a little bit less cognitive load</p>
+        <p begin="00:02:00.10" end="00:02:03.7" tts:direction="ltr">for you in terms of processing all this
+<br/>information.</p>
+        <p begin="00:02:03.7" end="00:02:06.9" tts:direction="ltr">We're going to do it really simply, but
+<br/>again,</p>
+        <p begin="00:02:06.9" end="00:02:11.8" tts:direction="ltr">all you do is change your connection
+<br/>credentials and you</p>
+        <p begin="00:02:11.8" end="00:02:16.9" tts:direction="ltr">could change a database that is industry
+<br/>standard.</p>
+        <p begin="00:02:16.9" end="00:02:19.3" tts:direction="ltr">Just keep that in mind. All right.</p>
+        <p begin="00:02:19.3" end="00:02:23.7" tts:direction="ltr">Look here at our PowerPoint today,</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p begin="00:02:23.7" end="00:02:24.2" tts:direction="ltr">Look here at our PowerPoint today,</p>
+        <p begin="00:02:24.2" end="00:02:27.3" tts:direction="ltr">we will be updating and deleting rows</p>
+        <p begin="00:02:27.3" end="00:02:29.10" tts:direction="ltr">of data in the downloaded version of
+<br/>Overland.</p>
+        <p begin="00:02:29.10" end="00:02:30.2" tts:direction="ltr">Any changes you make to the database needs
+<br/>to be reversed,</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:02:30.2" end="00:02:30.5" tts:direction="ltr">Because something that I want you to keep
+<br/>in mind here All right.</p>
+        <p begin="00:02:30.5" end="00:02:32.3" tts:direction="ltr">When we want to make changes to</p>
+        <p begin="00:02:32.3" end="00:02:34.7" tts:direction="ltr">the Overland database, we're going to be
+<br/>updating,</p>
+        <p begin="00:02:34.7" end="00:02:39.4" tts:direction="ltr">deleting records of data in the downloaded
+<br/>version of Overland.</p>
+        <p begin="00:02:39.4" end="00:02:41.7" tts:direction="ltr">We are going to ask that any changes you</p>
+        <p begin="00:02:41.7" end="00:02:44" tts:direction="ltr">make to the database needs to be reversed.</p>
+        <p begin="00:02:44" end="00:02:46.9" tts:direction="ltr">We're going to practice best practice with
+<br/>that.</p>
+        <p begin="00:02:46.9" end="00:02:53" tts:direction="ltr">But we're going to learn that an update
+<br/>statement really needs a where clause,</p>
+        <p begin="00:02:53" end="00:02:55.4" tts:direction="ltr">and we're going to talk about why that is.</p>
+        <p begin="00:02:55.4" end="00:02:59.7" tts:direction="ltr">We're going to expect that you make any
+<br/>errors you make or</p>
+        <p begin="00:02:59.7" end="00:03:01.6" tts:direction="ltr">things that you do or</p>
+        <p begin="00:03:01.6" end="00:03:04.2" tts:direction="ltr">changes you make to the downloaded version
+<br/>of the database,</p>
+        <p begin="00:03:04.2" end="00:03:06.9" tts:direction="ltr">that you need to reverse those changes.</p>
+        <p begin="00:03:06.9" end="00:03:09.8" tts:direction="ltr">If something does go really wrong,</p>
+        <p begin="00:03:09.8" end="00:03:12.7" tts:direction="ltr">you run an update without a where clause,</p>
+        <p begin="00:03:12.7" end="00:03:15.6" tts:direction="ltr">you can delete the database file and
+<br/>download a new one.</p>
+        <p begin="00:03:15.6" end="00:03:17.3" tts:direction="ltr">There is some flexibility in that,</p>
+        <p begin="00:03:17.3" end="00:03:21.2" tts:direction="ltr">but we do want you to just be really aware
+<br/>of any changes that you are</p>
+        <p begin="00:03:21.2" end="00:03:25.5" tts:direction="ltr">making so we can practice best practices
+<br/>here. All right.</p>
+        <p begin="00:03:25.5" end="00:03:28.1" tts:direction="ltr">SQL crud.</p>
+        <p begin="00:03:28.1" end="00:03:33.8" tts:direction="ltr">CRD stands for the main types of
+<br/>statements we can write in SQL.</p>
+        <p begin="00:03:33.8" end="00:03:36.4" tts:direction="ltr">We are things that we can do.</p>
+        <p begin="00:03:36.4" end="00:03:42.9" tts:direction="ltr">We have historically been using the R here
+<br/>in crud and just selecting data,</p>
+        <p begin="00:03:42.9" end="00:03:46.2" tts:direction="ltr">just reading the data that exists in the
+<br/>database.</p>
+        <p begin="00:03:46.2" end="00:03:49.10" tts:direction="ltr">But we can create tables,</p>
+        <p begin="00:03:49.10" end="00:03:52.2" tts:direction="ltr">we can create a database,</p>
+        <p begin="00:03:52.2" end="00:03:54.2" tts:direction="ltr">and in the way that we're going to use
+<br/>that in</p>
+        <p begin="00:03:54.2" end="00:03:57.2" tts:direction="ltr">this class is we're going to insert
+<br/>records of data.</p>
+        <p begin="00:03:57.2" end="00:04:02.1" tts:direction="ltr">We can also update records of data and we
+<br/>can also delete records of data.</p>
+        <p begin="00:04:02.1" end="00:04:07.6" tts:direction="ltr">We can also delete entire databases and
+<br/>things like that and entire tables.</p>
+        <p begin="00:04:07.6" end="00:04:10.7" tts:direction="ltr">We're going to focus on individual tables</p>
+        <p begin="00:04:10.7" end="00:04:13.10" tts:direction="ltr">and creating or inserting new records.</p>
+        <p begin="00:04:13.10" end="00:04:16.8" tts:direction="ltr">We've already looked at selecting records.</p>
+        <p begin="00:04:16.8" end="00:04:19.6" tts:direction="ltr">We're going to talk about updating records
+<br/>and deleting records.</p>
+        <p begin="00:04:19.6" end="00:04:28.5" tts:direction="ltr">You're going to find That the data or this
+<br/>lecture is actually quite easy.</p>
+        <p begin="00:04:28.5" end="00:04:35.8" tts:direction="ltr">The select really is where we learn a lot
+<br/>of our different SQL commands.</p>
+        <p begin="00:04:35.8" end="00:04:39.6" tts:direction="ltr">But we can do a variety of things in the
+<br/>insert update and delete,</p>
+        <p begin="00:04:39.6" end="00:04:44.3" tts:direction="ltr">but a lot of the foundational knowledge
+<br/>comes from knowing what select does.</p>
+        <p begin="00:04:44.3" end="00:04:48.6" tts:direction="ltr">You're going to find that today it's quite
+<br/>easy to understand.</p>
+        <p begin="00:04:48.10" end="00:04:52.2" tts:direction="ltr">My dog park database as a reminder,</p>
+        <p begin="00:04:52.2" end="00:04:55.3" tts:direction="ltr">keeps track of my friends and their dogs
+<br/>at the dog park.</p>
+        <p begin="00:04:55.3" end="00:04:57.5" tts:direction="ltr">I'm going to give you a quick example
+<br/>here.</p>
+        <p begin="00:04:57.5" end="00:05:03.4" tts:direction="ltr">So I'm going to show you my dog park
+<br/>database, which is over here.</p>
+        <p begin="00:05:03.4" end="00:05:06.7" tts:direction="ltr">So my dog park database just has two
+<br/>tables,</p>
+        <p begin="00:05:06.7" end="00:05:09.8" tts:direction="ltr">my dog owner table and my dog table.</p>
+        <p begin="00:05:09.8" end="00:05:11.9" tts:direction="ltr">I've showed this already.</p>
+        <p begin="00:05:11.9" end="00:05:14.4" tts:direction="ltr">I really love the dog park,</p>
+        <p begin="00:05:14.4" end="00:05:18.2" tts:direction="ltr">spent a lot of time there during COVID, a
+<br/>lot of time there.</p>
+        <p begin="00:05:18.2" end="00:05:20.9" tts:direction="ltr">And now I just still love the dog park.</p>
+        <p begin="00:05:20.9" end="00:05:24.1" tts:direction="ltr">So when I run these two queries here,</p>
+        <p begin="00:05:24.1" end="00:05:25.7" tts:direction="ltr">we can see here where we have all the
+<br/>information</p>
+        <p begin="00:05:25.7" end="00:05:27.7" tts:direction="ltr">about my dog owners, so owner ID,</p>
+        <p begin="00:05:27.7" end="00:05:29.3" tts:direction="ltr">owner name, owner phone number,</p>
+        <p begin="00:05:29.3" end="00:05:31.9" tts:direction="ltr">and then we have all the information about
+<br/>my dogs.</p>
+        <p begin="00:05:31.9" end="00:05:35.3" tts:direction="ltr">Now, given this mini database that I have
+<br/>here,</p>
+        <p begin="00:05:35.3" end="00:05:38.1" tts:direction="ltr">this entity relationship diagram looks
+<br/>like this.</p>
+        <p begin="00:05:38.1" end="00:05:40.6" tts:direction="ltr">A dog can have many owners,</p>
+        <p begin="00:05:40.6" end="00:05:43.1" tts:direction="ltr">but a dog owner can only have one dog.</p>
+        <p begin="00:05:43.1" end="00:05:47.7" tts:direction="ltr">I recently got a new dog named Oliver, a
+<br/>border doodle.</p>
+        <p begin="00:05:47.7" end="00:05:50.5" tts:direction="ltr">How do I add this to my database table?</p>
+        <p begin="00:05:50.5" end="00:05:53.1" tts:direction="ltr">I'm going to insert a new record,</p>
+        <p begin="00:05:53.1" end="00:05:55.1" tts:direction="ltr">and there's cute little Oliver.</p>
+        <p begin="00:05:55.1" end="00:05:57.10" tts:direction="ltr">I mean, come on, isn't he cute?</p>
+        <p begin="00:05:58.9" end="00:06:02.9" tts:direction="ltr">You're going to only watch this portion
+<br/>and take good notes.</p>
+        <p begin="00:06:02.9" end="00:06:05.2" tts:direction="ltr">Let's look at my dog table here.</p>
+        <p begin="00:06:05.2" end="00:06:07.7" tts:direction="ltr">I'm going to zoom out just a little bit.</p>
+        <p begin="00:06:07.7" end="00:06:11.4" tts:direction="ltr">You can see all the records here.</p>
+        <p begin="00:06:11.4" end="00:06:14.8" tts:direction="ltr">I'm looking here at my dog table.</p>
+        <p begin="00:06:14.8" end="00:06:17.6" tts:direction="ltr">When I'm looking at my dog table,</p>
+        <p begin="00:06:17.6" end="00:06:21.9" tts:direction="ltr">I can see here that I have six records
+<br/>here inside of my dog table.</p>
+        <p begin="00:06:21.9" end="00:06:24.2" tts:direction="ltr">But remember, I just got a new dog.</p>
+        <p begin="00:06:24.2" end="00:06:29.1" tts:direction="ltr">Let's talk about how would I insert a new
+<br/>record into my dog table.</p>
+        <p begin="00:06:29.1" end="00:06:30.9" tts:direction="ltr">One way we can manipulate</p>
+        <p begin="00:06:30.9" end="00:06:34.1" tts:direction="ltr">data sorted database is by inserting a new
+<br/>record of data.</p>
+        <p begin="00:06:34.1" end="00:06:36.1" tts:direction="ltr">This is an entirely new record.</p>
+        <p begin="00:06:36.1" end="00:06:39.5" tts:direction="ltr">Um, we use the following insert
+<br/>statements.</p>
+        <p begin="00:06:39.5" end="00:06:41.9" tts:direction="ltr">So we say insert into the table name,</p>
+        <p begin="00:06:41.9" end="00:06:46.10" tts:direction="ltr">and then we list out the fields of data
+<br/>that we are entering data into.</p>
+        <p begin="00:06:46.10" end="00:06:49.4" tts:direction="ltr">We are saying, you know, insert into,</p>
+        <p begin="00:06:49.4" end="00:06:52.2" tts:direction="ltr">say dog ID, dog name, that stuff.</p>
+        <p begin="00:06:52.2" end="00:06:54" tts:direction="ltr">Then the values are,</p>
+        <p begin="00:06:54" end="00:06:58.10" tts:direction="ltr">what data points do we actually want
+<br/>inserted into these fields, okay?</p>
+        <p begin="00:06:58.10" end="00:07:01.7" tts:direction="ltr">If the primary key of the table that you
+<br/>are</p>
+        <p begin="00:07:01.7" end="00:07:04.7" tts:direction="ltr">inserting records into is auto
+<br/>incrementing,</p>
+        <p begin="00:07:04.7" end="00:07:08.3" tts:direction="ltr">we do not need to mention the field nor</p>
+        <p begin="00:07:08.3" end="00:07:10.5" tts:direction="ltr">the value in the insert statement as</p>
+        <p begin="00:07:10.5" end="00:07:13.1" tts:direction="ltr">the relational database management system,</p>
+        <p begin="00:07:13.1" end="00:07:16.5" tts:direction="ltr">SQL server, will automatically assign</p>
+        <p begin="00:07:16.5" end="00:07:20.1" tts:direction="ltr">a unique incrementing value as the primary
+<br/>key.</p>
+        <p begin="00:07:20.1" end="00:07:22.2" tts:direction="ltr">Just keep that in mind.</p>
+        <p begin="00:07:22.2" end="00:07:25.9" tts:direction="ltr">All right. Let's go ahead and take a look
+<br/>here.</p>
+        <p begin="00:07:25.9" end="00:07:29.7" tts:direction="ltr">I'm using this database is stored.</p>
+        <p begin="00:07:29.7" end="00:07:32.7" tts:direction="ltr">It's actually stored in a locally hosted
+<br/>server.</p>
+        <p begin="00:07:32.7" end="00:07:35.8" tts:direction="ltr">It's like a box, if you will, here at USU.</p>
+        <p begin="00:07:35.8" end="00:07:41.6" tts:direction="ltr">I'm going to take a look at my dog table
+<br/>and I want to insert a new record.</p>
+        <p begin="00:07:41.6" end="00:07:44.6" tts:direction="ltr">Remember Oliver. I'm going to say I into,</p>
+        <p begin="00:07:44.6" end="00:07:46.2" tts:direction="ltr">and then I put the name of the table,</p>
+        <p begin="00:07:46.2" end="00:07:47.8" tts:direction="ltr">so I say the dog table.</p>
+        <p begin="00:07:47.8" end="00:07:52.3" tts:direction="ltr">Then I list out the fields of which I need
+<br/>to place data inside of.</p>
+        <p begin="00:07:52.3" end="00:07:55.4" tts:direction="ltr">I need to place data in the dog ID field,</p>
+        <p begin="00:07:55.4" end="00:07:57.3" tts:direction="ltr">the dog name field,</p>
+        <p begin="00:07:57.3" end="00:07:59.6" tts:direction="ltr">the dog type field,</p>
+        <p begin="00:07:59.6" end="00:08:02.5" tts:direction="ltr">and the owner ID field.</p>
+        <p begin="00:08:02.5" end="00:08:05.9" tts:direction="ltr">I need to insert data in those places.</p>
+        <p begin="00:08:05.9" end="00:08:08.3" tts:direction="ltr">The next thing that I need to do</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:08:08.3" end="00:08:09.6" tts:direction="ltr">I I I then need to say values,</p>
+        <p begin="00:08:09.6" end="00:08:14.6" tts:direction="ltr">and I want to enter the following values
+<br/>into those specific fields.</p>
+        <p begin="00:08:14.6" end="00:08:20.8" tts:direction="ltr">The value for Oliver dog ID is going to be
+<br/>seven.</p>
+        <p begin="00:08:20.8" end="00:08:24.4" tts:direction="ltr">Dog ID comes first in my fields that I've
+<br/>listed out,</p>
+        <p begin="00:08:24.4" end="00:08:28.8" tts:direction="ltr">so I need to make sure that I enter in
+<br/>their dog ID seven.</p>
+        <p begin="00:08:28.8" end="00:08:30.9" tts:direction="ltr">The dog name is going to be Oliver,</p>
+        <p begin="00:08:30.9" end="00:08:33.2" tts:direction="ltr">that's going to be included in</p>
+        <p begin="00:08:33.2" end="00:08:37.7" tts:direction="ltr">my single quotation marks because I'm
+<br/>entering that literal piece of data.</p>
+        <p begin="00:08:37.7" end="00:08:41.8" tts:direction="ltr">Dog type is going to be a border doodle,
+<br/>okay.</p>
+        <p begin="00:08:41.8" end="00:08:45.1" tts:direction="ltr">Again, you don't have access to this
+<br/>database, this is just a demo.</p>
+        <p begin="00:08:45.1" end="00:08:47" tts:direction="ltr">Then the owner ID.</p>
+        <p begin="00:08:47" end="00:08:51.3" tts:direction="ltr">Yikes. Let me do a slick star from dog
+<br/>owner up here.</p>
+        <p begin="00:08:51.3" end="00:08:53.6" tts:direction="ltr">I'm only going to run that part. Let's see
+<br/>here.</p>
+        <p begin="00:08:53.6" end="00:08:56.8" tts:direction="ltr">I see that Reagan is owner ID number four.</p>
+        <p begin="00:08:56.8" end="00:08:59.4" tts:direction="ltr">Owner ID number four,</p>
+        <p begin="00:08:59.4" end="00:09:02.6" tts:direction="ltr">that's not going to be contained within
+<br/>single quotation marks</p>
+        <p begin="00:09:02.6" end="00:09:06" tts:direction="ltr">because it is an integer value type of
+<br/>data. We don't need to.</p>
+        <p begin="00:09:06" end="00:09:07.6" tts:direction="ltr">You could, but you don't need to.</p>
+        <p begin="00:09:07.6" end="00:09:14.3" tts:direction="ltr">Now I'm going to go ahead and run this It
+<br/>says,</p>
+        <p begin="00:09:14.3" end="00:09:16.4" tts:direction="ltr">no results, one row effective.</p>
+        <p begin="00:09:16.4" end="00:09:20.5" tts:direction="ltr">Now let's do a quick select star from dog.</p>
+        <p begin="00:09:20.6" end="00:09:23.3" tts:direction="ltr">I'm going to press Run.</p>
+        <p begin="00:09:23.3" end="00:09:25.3" tts:direction="ltr">Now when I scroll down here,</p>
+        <p begin="00:09:25.3" end="00:09:30.6" tts:direction="ltr">we are going to see that we now have seven
+<br/>records inside of my dog table.</p>
+        <p begin="00:09:30.6" end="00:09:36.4" tts:direction="ltr">Now Oliver has been added to my dog table
+<br/>just like that. Isn't that fun?</p>
+        <p begin="00:09:36.4" end="00:09:41.5" tts:direction="ltr">Again, the code is insert into and then
+<br/>the table name, this case dog,</p>
+        <p begin="00:09:41.5" end="00:09:48.4" tts:direction="ltr">we list out the fields of data that we
+<br/>need to I populate data within.</p>
+        <p begin="00:09:48.4" end="00:09:49.8" tts:direction="ltr">This is just those fields,</p>
+        <p begin="00:09:49.8" end="00:09:51.6" tts:direction="ltr">and then we say values and we list</p>
+        <p begin="00:09:51.6" end="00:09:54.5" tts:direction="ltr">the values of data we want to enter into
+<br/>those fields.</p>
+        <p begin="00:09:54.5" end="00:09:57.7" tts:direction="ltr">Now, if dog ID was auto incrementing,</p>
+        <p begin="00:09:57.7" end="00:09:59.7" tts:direction="ltr">much like your A number here at USU,</p>
+        <p begin="00:09:59.7" end="00:10:03.6" tts:direction="ltr">you apply and the system automatically
+<br/>assigns you an A number.</p>
+        <p begin="00:10:03.6" end="00:10:06.2" tts:direction="ltr">If it was auto incrementing,</p>
+        <p begin="00:10:06.2" end="00:10:10" tts:direction="ltr">Then I would just delete out dog ID and
+<br/>seven.</p>
+        <p begin="00:10:10" end="00:10:14" tts:direction="ltr">If we look at the Overland ERD and data
+<br/>dictionary and we scroll down,</p>
+        <p begin="00:10:14" end="00:10:15.5" tts:direction="ltr">we can see here that, for example,</p>
+        <p begin="00:10:15.5" end="00:10:18.3" tts:direction="ltr">the guest ID, let me zoom in here.</p>
+        <p begin="00:10:18.3" end="00:10:23.5" tts:direction="ltr">The guest ID has an auto right by it.</p>
+        <p begin="00:10:23.5" end="00:10:27.1" tts:direction="ltr">This is saying this guest ID is auto
+<br/>incomding.</p>
+        <p begin="00:10:27.1" end="00:10:29.9" tts:direction="ltr">If I was entering a new guest into my
+<br/>table,</p>
+        <p begin="00:10:29.9" end="00:10:34.2" tts:direction="ltr">I would not need to list out guest ID
+<br/>here.</p>
+        <p begin="00:10:34.2" end="00:10:37.1" tts:direction="ltr">It would automatically do that for me. All
+<br/>right.</p>
+        <p begin="00:10:37.1" end="00:10:43.8" tts:direction="ltr">Okay. Perfect. Now I've entered Oliver
+<br/>into my database.</p>
+        <p begin="00:10:43.8" end="00:10:47.9" tts:direction="ltr">The next thing that I want to do is we can
+<br/>manipulate data stored in</p>
+        <p begin="00:10:47.9" end="00:10:51.10" tts:direction="ltr">a database table by updating an already
+<br/>existing record of data.</p>
+        <p begin="00:10:51.10" end="00:10:54.9" tts:direction="ltr">This is done using the following update
+<br/>statements.</p>
+        <p begin="00:10:54.9" end="00:10:57.4" tts:direction="ltr">I do update table name, set.</p>
+        <p begin="00:10:57.4" end="00:11:00.5" tts:direction="ltr">This is where I change something to equal
+<br/>something else,</p>
+        <p begin="00:11:00.5" end="00:11:03.1" tts:direction="ltr">and then I have my where clause.</p>
+        <p begin="00:11:03.1" end="00:11:05.3" tts:direction="ltr">Let's go ahead and look at this.</p>
+        <p begin="00:11:05.3" end="00:11:11" tts:direction="ltr">Let's say that I made an error here and
+<br/>let's say that I Again,</p>
+        <p begin="00:11:11" end="00:11:13" tts:direction="ltr">I say update table name,</p>
+        <p begin="00:11:13" end="00:11:15.3" tts:direction="ltr">and then I set what I want to.</p>
+        <p begin="00:11:15.3" end="00:11:17.6" tts:direction="ltr">Let's say, for example,</p>
+        <p begin="00:11:17.6" end="00:11:25.1" tts:direction="ltr">that Oliver is um Maybe I want to change
+<br/>Oliver's dog type.</p>
+        <p begin="00:11:25.1" end="00:11:29.4" tts:direction="ltr">Maybe he's actually just a poodle, just
+<br/>for example.</p>
+        <p begin="00:11:29.4" end="00:11:33.10" tts:direction="ltr">Let's go ahead and I'm going to say update
+<br/>dog.</p>
+        <p begin="00:11:33.10" end="00:11:42.8" tts:direction="ltr">That's my table name. I'm going to say set
+<br/>dog type equal to a poodle.</p>
+        <p begin="00:11:42.8" end="00:11:45.9" tts:direction="ltr">Now, if I was to this,</p>
+        <p begin="00:11:45.9" end="00:11:48.9" tts:direction="ltr">if I was to run this, what do you think
+<br/>would happen?</p>
+        <p begin="00:11:48.9" end="00:11:50.5" tts:direction="ltr">I hope you say Reagan,</p>
+        <p begin="00:11:50.5" end="00:11:52.7" tts:direction="ltr">please don't, please don't.</p>
+        <p begin="00:11:52.7" end="00:11:56.4" tts:direction="ltr">I hope you're saying please don't because
+<br/>what this would do is this would</p>
+        <p begin="00:11:56.4" end="00:12:01.9" tts:direction="ltr">change every one of my dogs to have a dog
+<br/>type of poodle.</p>
+        <p begin="00:12:01.9" end="00:12:04.7" tts:direction="ltr">It is so important that when you run</p>
+        <p begin="00:12:04.7" end="00:12:07.1" tts:direction="ltr">an update that you must have a wear
+<br/>clause.</p>
+        <p begin="00:12:07.1" end="00:12:11.3" tts:direction="ltr">I'm going to say where, and then I'm going
+<br/>to uniquely identify Oliver.</p>
+        <p begin="00:12:11.3" end="00:12:16.5" tts:direction="ltr">I'm going to say where and let's grab
+<br/>Oliver's information here.</p>
+        <p begin="00:12:16.5" end="00:12:20.7" tts:direction="ltr">Where dog ID equal to seven.</p>
+        <p begin="00:12:20.7" end="00:12:23.3" tts:direction="ltr">I only want to change that information.</p>
+        <p begin="00:12:23.3" end="00:12:29.1" tts:direction="ltr">Now I'm going to go ahead and run this and
+<br/>now I say select star.</p>
+        <p begin="00:12:29.3" end="00:12:34.1" tts:direction="ltr">That's not what I wanted. Hit the wrong
+<br/>thing from dog.</p>
+        <p begin="00:12:34.1" end="00:12:36.7" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:12:36.7" end="00:12:40.9" tts:direction="ltr">I can see here now that Oliver is a
+<br/>Poodle.</p>
+        <p begin="00:12:40.9" end="00:12:44.7" tts:direction="ltr">Again, it's really quite simple in</p>
+        <p begin="00:12:44.7" end="00:12:48.7" tts:direction="ltr">terms of the code that you're using in
+<br/>these preliminary update,</p>
+        <p begin="00:12:48.7" end="00:12:50.3" tts:direction="ltr">delete and insert statements.</p>
+        <p begin="00:12:50.3" end="00:12:52.1" tts:direction="ltr">The most important thing with an update,</p>
+        <p begin="00:12:52.1" end="00:12:55.1" tts:direction="ltr">make sure you understand this that the set</p>
+        <p begin="00:12:55.1" end="00:12:58.7" tts:direction="ltr">is where we change what value we want to
+<br/>change.</p>
+        <p begin="00:12:58.7" end="00:13:00.7" tts:direction="ltr">This is where we indicate we want to
+<br/>change</p>
+        <p begin="00:13:00.7" end="00:13:03.1" tts:direction="ltr">dog type to actually be equal to poodle.</p>
+        <p begin="00:13:03.1" end="00:13:04.5" tts:direction="ltr">The whereClause says, well,</p>
+        <p begin="00:13:04.5" end="00:13:07.4" tts:direction="ltr">for what record or records,</p>
+        <p begin="00:13:07.4" end="00:13:09.8" tts:direction="ltr">but we always want to make sure we have
+<br/>that where clause</p>
+        <p begin="00:13:09.8" end="00:13:13.3" tts:direction="ltr">Unless there's something we want to change
+<br/>within the entire database,</p>
+        <p begin="00:13:13.3" end="00:13:16.5" tts:direction="ltr">we always want to make sure we have that
+<br/>where clause.</p>
+        <p begin="00:13:16.5" end="00:13:19.5" tts:direction="ltr">All right. Then finally here,</p>
+        <p begin="00:13:19.5" end="00:13:23.3" tts:direction="ltr">we can delete records of data.</p>
+        <p begin="00:13:23.3" end="00:13:27.6" tts:direction="ltr">This is, again, using the following
+<br/>sample, delete statement.</p>
+        <p begin="00:13:27.6" end="00:13:29.3" tts:direction="ltr">I say delete table names.</p>
+        <p begin="00:13:29.3" end="00:13:32.9" tts:direction="ltr">I'm going to say delete dog.</p>
+        <p begin="00:13:32.9" end="00:13:36.9" tts:direction="ltr">Now, if I was to run this and I'm not
+<br/>going to run it, you're right.</p>
+        <p begin="00:13:36.9" end="00:13:39.3" tts:direction="ltr">It deletes all the data in my dog table.</p>
+        <p begin="00:13:39.3" end="00:13:41.9" tts:direction="ltr">Just keep that in mind and I want to say.</p>
+        <p begin="00:13:41.9" end="00:13:46.3" tts:direction="ltr">Now I'm just going to remove Oliver from
+<br/>my database,</p>
+        <p begin="00:13:46.7" end="00:13:53.5" tts:direction="ltr">and I'm going to say where dog ID is equal
+<br/>to seven.</p>
+        <p begin="00:13:53.5" end="00:13:56" tts:direction="ltr">Now when I run this part,</p>
+        <p begin="00:13:56" end="00:13:57.7" tts:direction="ltr">it says one row effective.</p>
+        <p begin="00:13:57.7" end="00:14:01.5" tts:direction="ltr">I come down here and do another select
+<br/>star from dog.</p>
+        <p begin="00:14:01.5" end="00:14:03.10" tts:direction="ltr">I should have just left that up, but there
+<br/>we go.</p>
+        <p begin="00:14:03.10" end="00:14:05.8" tts:direction="ltr">Select star from dog,</p>
+        <p begin="00:14:05.8" end="00:14:08.5" tts:direction="ltr">I run this and now I can see here that
+<br/>Oliver is no</p>
+        <p begin="00:14:08.5" end="00:14:11.9" tts:direction="ltr">longer a part of my database table.</p>
+        <p begin="00:14:11.9" end="00:14:16.2" tts:direction="ltr">That is the simple examples dealing with
+<br/>update delete and inserts.</p>
+        <p begin="00:14:16.2" end="00:14:17.10" tts:direction="ltr">It's really powerful.</p>
+        <p begin="00:14:17.10" end="00:14:20.1" tts:direction="ltr">It's extremely powerful,</p>
+        <p begin="00:14:20.1" end="00:14:22.1" tts:direction="ltr">but it is relatively simple code.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p begin="00:14:22.1" end="00:14:22.8" tts:direction="ltr">I want to</p>
+        <p begin="00:14:22.8" end="00:14:25.8" tts:direction="ltr">do one sample query together.</p>
+        <p begin="00:14:25.8" end="00:14:29.3" tts:direction="ltr">We're going to go ahead and I want you to</p>
+        <p begin="00:14:29.3" end="00:14:32.9" tts:direction="ltr">download that Overland SQL light database
+<br/>file,</p>
+        <p begin="00:14:32.9" end="00:14:37.3" tts:direction="ltr">and then I want you to come up here and
+<br/>say File and new window.</p>
+        <p begin="00:14:37.6" end="00:14:40.1" tts:direction="ltr">In this new window,</p>
+        <p begin="00:14:40.1" end="00:14:42.7" tts:direction="ltr">we are going to select a connection type.</p>
+        <p begin="00:14:42.7" end="00:14:46.8" tts:direction="ltr">I'm going to click the drop down and I'm
+<br/>going to click on SQL</p>
+        <p begin="00:14:46.8" end="00:14:50.7" tts:direction="ltr">L. Now I'm going to choose the file and
+<br/>mine is the um.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:14:50.7" end="00:14:52.7" tts:direction="ltr">Now I'm going to click Choose File.</p>
+        <p begin="00:14:52.7" end="00:14:54.4" tts:direction="ltr">I'm going to go into Downloads,</p>
+        <p begin="00:14:54.4" end="00:14:58.8" tts:direction="ltr">and then I'm going to grab that Overland
+<br/>SQL light file and say open.</p>
+        <p begin="00:14:58.8" end="00:15:02.5" tts:direction="ltr">You notice the file type is DB file.</p>
+        <p begin="00:15:02.5" end="00:15:04.1" tts:direction="ltr">Then the connection name,</p>
+        <p begin="00:15:04.1" end="00:15:07.5" tts:direction="ltr">I'm just going to say personal database,</p>
+        <p begin="00:15:07.5" end="00:15:12.10" tts:direction="ltr">and I'll maybe put the colors that mustard
+<br/>color and I'll press Test,</p>
+        <p begin="00:15:12.10" end="00:15:15.5" tts:direction="ltr">and it says Connection looks good,
+<br/>perfect,</p>
+        <p begin="00:15:15.5" end="00:15:19.4" tts:direction="ltr">and I press Save and I'll press Connect.</p>
+        <p begin="00:15:19.4" end="00:15:23.8" tts:direction="ltr">Perfect. Now I am inside my personal
+<br/>database file.</p>
+        <p begin="00:15:23.8" end="00:15:27.3" tts:direction="ltr">Within this personal database file,</p>
+        <p begin="00:15:27.3" end="00:15:31.3" tts:direction="ltr">if I click on my database,</p>
+        <p begin="00:15:31.3" end="00:15:35.3" tts:direction="ltr">we can see here that I do have all of
+<br/>these different entities.</p>
+        <p begin="00:15:35.3" end="00:15:39" tts:direction="ltr">Now I can just access this database that
+<br/>is</p>
+        <p begin="00:15:39" end="00:15:42.9" tts:direction="ltr">just in my downloads folder and we can
+<br/>make changes to it.</p>
+        <p begin="00:15:42.9" end="00:15:44.5" tts:direction="ltr">Let's say, for example,</p>
+        <p begin="00:15:44.5" end="00:15:51.10" tts:direction="ltr">that I let's take a look at my Winter
+<br/>product table.</p>
+        <p begin="00:15:52.2" end="00:15:56.1" tts:direction="ltr">Go ahead and follow along here with me.</p>
+        <p begin="00:15:56.3" end="00:15:58.8" tts:direction="ltr">Okay. If you have a hard time,</p>
+        <p begin="00:15:58.8" end="00:16:01.6" tts:direction="ltr">just make sure that you find that wherever
+<br/>you</p>
+        <p begin="00:16:01.6" end="00:16:05.9" tts:direction="ltr">downloaded that database file to and go
+<br/>file new window,</p>
+        <p begin="00:16:05.9" end="00:16:08.2" tts:direction="ltr">say new Connection SQL light,</p>
+        <p begin="00:16:08.2" end="00:16:10.9" tts:direction="ltr">you might need to rewind the video,</p>
+        <p begin="00:16:10.9" end="00:16:12.4" tts:direction="ltr">but let us know if you have any problems.</p>
+        <p begin="00:16:12.4" end="00:16:14.2" tts:direction="ltr">We can go ahead and run selection.</p>
+        <p begin="00:16:14.2" end="00:16:15.6" tts:direction="ltr">Let's say, for example,</p>
+        <p begin="00:16:15.6" end="00:16:20.5" tts:direction="ltr">in this winter product table that I wanted</p>
+        <p begin="00:16:20.5" end="00:16:26.2" tts:direction="ltr">to change the peak price of the adult
+<br/>season pass.</p>
+        <p begin="00:16:26.2" end="00:16:27.8" tts:direction="ltr">Let's go ahead and do that.</p>
+        <p begin="00:16:27.8" end="00:16:30.8" tts:direction="ltr">I'm going to say if I wanted to change the
+<br/>peak price,</p>
+        <p begin="00:16:30.8" end="00:16:32.8" tts:direction="ltr">what type of command would I use?</p>
+        <p begin="00:16:32.8" end="00:16:34.2" tts:direction="ltr">Would I use an insert?</p>
+        <p begin="00:16:34.2" end="00:16:35.6" tts:direction="ltr">Would I use an update,</p>
+        <p begin="00:16:35.6" end="00:16:37.3" tts:direction="ltr">or would I use a delete?</p>
+        <p begin="00:16:37.3" end="00:16:40" tts:direction="ltr">I hope you said, I would use an update.</p>
+        <p begin="00:16:40" end="00:16:41.5" tts:direction="ltr">I'm going to go ahead and use an update.</p>
+        <p begin="00:16:41.5" end="00:16:44.4" tts:direction="ltr">I'm going to say update winter prod.</p>
+        <p begin="00:16:44.8" end="00:16:48.3" tts:direction="ltr">Winter prod, I'm going to save</p>
+        <p begin="00:16:48.3" end="00:16:54.9" tts:direction="ltr">update winter prod and I'm going to set
+<br/>peak price equal to,</p>
+        <p begin="00:16:54.9" end="00:17:00.9" tts:direction="ltr">I'm going to put a note up here, Og peak
+<br/>price.</p>
+        <p begin="00:17:00.9" end="00:17:04.6" tts:direction="ltr">Was 625 so we can change it back.</p>
+        <p begin="00:17:04.6" end="00:17:10.9" tts:direction="ltr">But let's say update went to Prod set peak
+<br/>price equal to, let's go 725.</p>
+        <p begin="00:17:10.9" end="00:17:15" tts:direction="ltr">Then I'll say. Now, again,</p>
+        <p begin="00:17:15" end="00:17:18.3" tts:direction="ltr">I must have my we clause because if I just
+<br/>ran this,</p>
+        <p begin="00:17:18.3" end="00:17:20.4" tts:direction="ltr">don't run it, don't run it.</p>
+        <p begin="00:17:20.4" end="00:17:22.6" tts:direction="ltr">But if I did, then all of</p>
+        <p begin="00:17:22.6" end="00:17:26.7" tts:direction="ltr">the peak prices would now be equal to 725.
+<br/>We don't want that.</p>
+        <p begin="00:17:26.7" end="00:17:32.1" tts:direction="ltr">I'm going to say where prod ID is equal
+<br/>to,</p>
+        <p begin="00:17:32.1" end="00:17:37.4" tts:direction="ltr">I'm going to put it within single
+<br/>quotation marks, A season 16.</p>
+        <p begin="00:17:37.4" end="00:17:39.6" tts:direction="ltr">It's a string type of data.</p>
+        <p begin="00:17:39.6" end="00:17:42.5" tts:direction="ltr">Okay. I want to make this change.</p>
+        <p begin="00:17:42.5" end="00:17:44.7" tts:direction="ltr">Now when I run this,</p>
+        <p begin="00:17:44.7" end="00:17:49.4" tts:direction="ltr">one result affected, I go select SR from
+<br/>Winter Prod again.</p>
+        <p begin="00:17:49.4" end="00:17:50.7" tts:direction="ltr">I don't run the update,</p>
+        <p begin="00:17:50.7" end="00:17:52.9" tts:direction="ltr">I just say I don't run the update again.</p>
+        <p begin="00:17:52.9" end="00:17:55.9" tts:direction="ltr">I already ran it. I'll say select SR from
+<br/>Winter Prod.</p>
+        <p begin="00:17:55.9" end="00:17:59.5" tts:direction="ltr">And now we see here that my peak price is
+<br/>725. Did yours change?</p>
+        <p begin="00:17:59.5" end="00:18:01.8" tts:direction="ltr">I hope so. Now let's be</p>
+        <p begin="00:18:01.8" end="00:18:06.5" tts:direction="ltr">good stewards over our database and I'm
+<br/>going to change it back to 625.</p>
+        <p begin="00:18:07.1" end="00:18:12.2" tts:direction="ltr">Okay. Now I'm going to run this again.</p>
+        <p begin="00:18:13.1" end="00:18:15.7" tts:direction="ltr">It says, no results,</p>
+        <p begin="00:18:15.7" end="00:18:18.9" tts:direction="ltr">one row affected, see the select box in
+<br/>the bottom left.</p>
+        <p begin="00:18:18.9" end="00:18:21.8" tts:direction="ltr">Now I say select star from Winter Prod and
+<br/>I hit</p>
+        <p begin="00:18:21.8" end="00:18:25.9" tts:direction="ltr">Enter and you can see here it went back to
+<br/>625.</p>
+        <p begin="00:18:25.9" end="00:18:28.9" tts:direction="ltr">Super powerful, really important</p>
+        <p begin="00:18:28.9" end="00:18:31.10" tts:direction="ltr">to understand that we can manipulate
+<br/>database data.</p>
+        <p begin="00:18:31.10" end="00:18:33.5" tts:direction="ltr">It can insert, update,</p>
+        <p begin="00:18:33.5" end="00:18:35.4" tts:direction="ltr">delete records of data.</p>
+        <p begin="00:18:35.4" end="00:18:38.3" tts:direction="ltr">Thanks everybody. Take care.</p>
+    </div>
+  </body>
+</tt>

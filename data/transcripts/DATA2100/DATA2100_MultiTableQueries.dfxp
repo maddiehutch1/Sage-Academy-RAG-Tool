@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>559190152 - 1_inz2ynrv - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00" end="00:00:02.10" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:02.10" end="00:00:07.2" tts:direction="ltr">In this video, we are going to learn how
+<br/>to do multitable queries.</p>
+        <p begin="00:00:07.2" end="00:00:10.4" tts:direction="ltr">We also often term these joins.</p>
+        <p begin="00:00:10.4" end="00:00:12.7" tts:direction="ltr">Now, before the video right here at the
+<br/>beginning,</p>
+        <p begin="00:00:12.7" end="00:00:14.5" tts:direction="ltr">make sure that you launch beekeeper,</p>
+        <p begin="00:00:14.5" end="00:00:18.10" tts:direction="ltr">and then you download the examples file
+<br/>that I have provided for you.</p>
+        <p begin="00:00:18.10" end="00:00:22.2" tts:direction="ltr">We've talked a lot in this class about</p>
+        <p begin="00:00:22.2" end="00:00:26.8" tts:direction="ltr">relational databases and how database
+<br/>tables relate to one another.</p>
+        <p begin="00:00:26.8" end="00:00:28.7" tts:direction="ltr">But previous to this video,</p>
+        <p begin="00:00:28.7" end="00:00:31.8" tts:direction="ltr">we've only queried one database table at a
+<br/>time.</p>
+        <p begin="00:00:31.8" end="00:00:33.8" tts:direction="ltr">We're not really taking into account</p>
+        <p begin="00:00:33.8" end="00:00:37.1" tts:direction="ltr">how different tables relate to each other.</p>
+        <p begin="00:00:37.1" end="00:00:39.2" tts:direction="ltr">In this video, we're going to learn about,</p>
+        <p begin="00:00:39.2" end="00:00:43.4" tts:direction="ltr">how can we actually harness the power of a
+<br/>relational database?</p>
+        <p begin="00:00:43.4" end="00:00:44.10" tts:direction="ltr">Let's go ahead and do that.</p>
+        <p begin="00:00:44.10" end="00:00:47.9" tts:direction="ltr">So our video objectives here are to learn
+<br/>how</p>
+        <p begin="00:00:47.9" end="00:00:50.7" tts:direction="ltr">to query multiple tables at once.</p>
+        <p begin="00:00:50.7" end="00:00:53.5" tts:direction="ltr">Let's talk about a multiple table query.</p>
+        <p begin="00:00:53.5" end="00:00:56.6" tts:direction="ltr">Again, this is in our query,</p>
+        <p begin="00:00:56.6" end="00:00:59.3" tts:direction="ltr">we are going to be querying from more than
+<br/>one table.</p>
+        <p begin="00:00:59.3" end="00:01:03.1" tts:direction="ltr">We're going to be using the power of a
+<br/>relational database.</p>
+        <p begin="00:01:03.1" end="00:01:06.6" tts:direction="ltr">Often the query columns we would like to
+<br/>return</p>
+        <p begin="00:01:06.6" end="00:01:10.6" tts:direction="ltr">exist in different yet related tables.</p>
+        <p begin="00:01:10.6" end="00:01:14.8" tts:direction="ltr">We want to know guest information and we
+<br/>want to know household information.</p>
+        <p begin="00:01:14.8" end="00:01:16.7" tts:direction="ltr">That's in two different tables.</p>
+        <p begin="00:01:16.7" end="00:01:21" tts:direction="ltr">Oftentimes, we want to return columns from
+<br/>both of the tables,</p>
+        <p begin="00:01:21" end="00:01:24.6" tts:direction="ltr">we need to be able to harness the power of
+<br/>relational database to do that.</p>
+        <p begin="00:01:24.6" end="00:01:27.9" tts:direction="ltr">So to return columns from multiple tables,</p>
+        <p begin="00:01:27.9" end="00:01:30.4" tts:direction="ltr">we join the tables in the query,</p>
+        <p begin="00:01:30.4" end="00:01:33.6" tts:direction="ltr">effectively creating a new virtual table</p>
+        <p begin="00:01:33.6" end="00:01:36.8" tts:direction="ltr">that combines the data from both tables.</p>
+        <p begin="00:01:36.8" end="00:01:39.4" tts:direction="ltr">Joins may be performed implicitly</p>
+        <p begin="00:01:39.4" end="00:01:42.2" tts:direction="ltr">or explicitly in a query. We'll talk about
+<br/>that.</p>
+        <p begin="00:01:42.2" end="00:01:45.7" tts:direction="ltr">Let's take a look here. I'm going to look
+<br/>at Facebook, LinkedIn.</p>
+        <p begin="00:01:45.7" end="00:01:48.6" tts:direction="ltr">I have a Facebook table and I have a
+<br/>LinkedIn table.</p>
+        <p begin="00:01:48.6" end="00:01:53.9" tts:direction="ltr">This is one table or entity and another
+<br/>table LinkedIn.</p>
+        <p begin="00:01:53.9" end="00:01:56.10" tts:direction="ltr">I have these two different tables.</p>
+        <p begin="00:01:56.10" end="00:02:02.3" tts:direction="ltr">In this, I am tracking my different, we'll
+<br/>take a look here.</p>
+        <p begin="00:02:02.3" end="00:02:07.2" tts:direction="ltr">Um, I'm tracking my different connections
+<br/>on Facebook and on LinkedIn.</p>
+        <p begin="00:02:07.2" end="00:02:09.1" tts:direction="ltr">I have an ID here of John,</p>
+        <p begin="00:02:09.1" end="00:02:12.5" tts:direction="ltr">birthday 55 of 2000 married,</p>
+        <p begin="00:02:12.5" end="00:02:15.3" tts:direction="ltr">and then over here, I have, let's see
+<br/>here,</p>
+        <p begin="00:02:15.3" end="00:02:19.9" tts:direction="ltr">ID number four is Amy, Facebook,</p>
+        <p begin="00:02:19.9" end="00:02:24.1" tts:direction="ltr">birthday is 1999, and married and same
+<br/>thing over here,</p>
+        <p begin="00:02:24.1" end="00:02:28.8" tts:direction="ltr">I have Amy, their employers eBay and their
+<br/>department is marketing.</p>
+        <p begin="00:02:28.8" end="00:02:32.4" tts:direction="ltr">What I'm looking at these two tables here,</p>
+        <p begin="00:02:32.4" end="00:02:37.5" tts:direction="ltr">these IDs are uniquely identifying these
+<br/>people.</p>
+        <p begin="00:02:37.5" end="00:02:39.8" tts:direction="ltr">I want to show the name,</p>
+        <p begin="00:02:39.8" end="00:02:42.6" tts:direction="ltr">the birthday, the marital status,</p>
+        <p begin="00:02:42.6" end="00:02:48.10" tts:direction="ltr">employer and Department of Common
+<br/>Connections on Facebook and LinkedIn.</p>
+        <p begin="00:02:48.10" end="00:02:52.5" tts:direction="ltr">That's my question that I want to answer
+<br/>here is I want to look at,</p>
+        <p begin="00:02:52.5" end="00:02:54.2" tts:direction="ltr">if I have a common connection that has</p>
+        <p begin="00:02:54.2" end="00:02:57.8" tts:direction="ltr">a Facebook account and a common connection
+<br/>that has a LinkedIn account,</p>
+        <p begin="00:02:57.8" end="00:02:59.10" tts:direction="ltr">if I want to return all of their
+<br/>information,</p>
+        <p begin="00:02:59.10" end="00:03:02.2" tts:direction="ltr">how do I go about doing them?</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p begin="00:03:02.3" end="00:03:07.1" tts:direction="ltr">The first thing that I'm going to do is I
+<br/>want to identify the tables that</p>
+        <p begin="00:03:07.1" end="00:03:11.9" tts:direction="ltr">contain the desired data for the from
+<br/>clause.</p>
+        <p begin="00:03:11.9" end="00:03:15.9" tts:direction="ltr">Now we're going to use table aliases for
+<br/>convenience,</p>
+        <p begin="00:03:15.9" end="00:03:17.7" tts:direction="ltr">so I'll talk about this in just a second.</p>
+        <p begin="00:03:17.7" end="00:03:20.2" tts:direction="ltr">Again, these two tables are related.</p>
+        <p begin="00:03:20.2" end="00:03:23.10" tts:direction="ltr">We can see here that Amy ID number four,
+<br/>this Amy,</p>
+        <p begin="00:03:23.10" end="00:03:25.3" tts:direction="ltr">and this Amy are the same,</p>
+        <p begin="00:03:25.3" end="00:03:28.6" tts:direction="ltr">and I want to return their information to
+<br/>me.</p>
+        <p begin="00:03:28.6" end="00:03:32.6" tts:direction="ltr">I want to know all of my Facebook and
+<br/>LinkedIn connections.</p>
+        <p begin="00:03:32.6" end="00:03:35.6" tts:direction="ltr">If they have a Facebook and they have a
+<br/>LinkedIn,</p>
+        <p begin="00:03:35.6" end="00:03:37.7" tts:direction="ltr">I want them to return to me and my output.</p>
+        <p begin="00:03:37.7" end="00:03:41.1" tts:direction="ltr">I want to show the name, birthday, marital
+<br/>status,</p>
+        <p begin="00:03:41.1" end="00:03:45.9" tts:direction="ltr">employer and Department of Common
+<br/>Connections on Facebook and LinkedIn.</p>
+        <p begin="00:03:45.9" end="00:03:49.5" tts:direction="ltr">First off, I'm going to identify the
+<br/>tables that contain the desired data.</p>
+        <p begin="00:03:49.5" end="00:03:54.9" tts:direction="ltr">Let's take a look at this. I'm going to in
+<br/>my from clause,</p>
+        <p begin="00:03:54.9" end="00:04:00.1" tts:direction="ltr">I'm going to say from Facebook as F. I get
+<br/>a mini alias here.</p>
+        <p begin="00:04:00.1" end="00:04:02.2" tts:direction="ltr">This is just for convenience.</p>
+        <p begin="00:04:02.2" end="00:04:05.8" tts:direction="ltr">When we continue to query our tables,</p>
+        <p begin="00:04:05.8" end="00:04:09.4" tts:direction="ltr">we're going to refer to this new alias of</p>
+        <p begin="00:04:09.4" end="00:04:14.6" tts:direction="ltr">F. Instead of having to type out the
+<br/>entire table name of Facebook.</p>
+        <p begin="00:04:14.6" end="00:04:20.1" tts:direction="ltr">Same thing with LinkedIn as L. I'm joining
+<br/>these two tables.</p>
+        <p begin="00:04:20.1" end="00:04:25.10" tts:direction="ltr">Facebook is F, join LinkedIn as L. That's
+<br/>what I do first off.</p>
+        <p begin="00:04:25.10" end="00:04:29.1" tts:direction="ltr">Now, step two, I'm going to identify the
+<br/>common column,</p>
+        <p begin="00:04:29.1" end="00:04:34.3" tts:direction="ltr">the primary foreign key shared between
+<br/>tables for the on clause.</p>
+        <p begin="00:04:34.3" end="00:04:37" tts:direction="ltr">Now, remember the column name does not
+<br/>matter,</p>
+        <p begin="00:04:37" end="00:04:39.8" tts:direction="ltr">just that the columns contain the same
+<br/>data.</p>
+        <p begin="00:04:39.8" end="00:04:43.4" tts:direction="ltr">This is the column on which the tables are
+<br/>joined.</p>
+        <p begin="00:04:43.4" end="00:04:48.5" tts:direction="ltr">Now when I run this or when I want to use
+<br/>my on clause,</p>
+        <p begin="00:04:48.5" end="00:04:55.1" tts:direction="ltr">I see here that I have My ID field and my
+<br/>ID field a Facebook and LinkedIn.</p>
+        <p begin="00:04:55.1" end="00:04:57.10" tts:direction="ltr">I can see here that Janet, Amy,</p>
+        <p begin="00:04:57.10" end="00:05:01.6" tts:direction="ltr">and Kevin are common connections between
+<br/>both.</p>
+        <p begin="00:05:01.6" end="00:05:04.6" tts:direction="ltr">John and Kim don't have a LinkedIn</p>
+        <p begin="00:05:04.6" end="00:05:07.8" tts:direction="ltr">or not a common connection and Steve and
+<br/>Lisa,</p>
+        <p begin="00:05:07.8" end="00:05:09.4" tts:direction="ltr">I'm LinkedIn connected to them,</p>
+        <p begin="00:05:09.4" end="00:05:11.6" tts:direction="ltr">but I'm not Facebook connected to them.</p>
+        <p begin="00:05:11.6" end="00:05:16.6" tts:direction="ltr">Only these three are my common connections
+<br/>that I have on Facebook.</p>
+        <p begin="00:05:16.6" end="00:05:18.8" tts:direction="ltr">And on LinkedIn and that are in</p>
+        <p begin="00:05:18.8" end="00:05:21.5" tts:direction="ltr">my Facebook table and are in my LinkedIn
+<br/>table.</p>
+        <p begin="00:05:21.5" end="00:05:24.8" tts:direction="ltr">What I do here is I add on the on clause,</p>
+        <p begin="00:05:24.8" end="00:05:29.8" tts:direction="ltr">again, which says this is F dot ID.</p>
+        <p begin="00:05:29.8" end="00:05:33.8" tts:direction="ltr">This is the ID that needs to be equal to
+<br/>the L dot ID,</p>
+        <p begin="00:05:33.8" end="00:05:39.4" tts:direction="ltr">meaning This is the column on which tables
+<br/>are joined.</p>
+        <p begin="00:05:39.4" end="00:05:44.3" tts:direction="ltr">The column name does not matter just that
+<br/>the columns contain the same data.</p>
+        <p begin="00:05:44.3" end="00:05:50.6" tts:direction="ltr">We are saying that only return to me
+<br/>records of which the f dot,</p>
+        <p begin="00:05:50.6" end="00:05:54.6" tts:direction="ltr">the Facebook dot ID is equal to the
+<br/>LinkedIn dot ID.</p>
+        <p begin="00:05:54.6" end="00:05:58.1" tts:direction="ltr">Perfect. Now the next thing I need to do
+<br/>is step three,</p>
+        <p begin="00:05:58.1" end="00:06:01.5" tts:direction="ltr">we're going to add desired columns to
+<br/>select clause.</p>
+        <p begin="00:06:01.5" end="00:06:06.2" tts:direction="ltr">Use table names and aliases as prefix for
+<br/>ambiguous columns.</p>
+        <p begin="00:06:06.2" end="00:06:10.3" tts:direction="ltr">Ambiguous columns are columns that exist
+<br/>in both tables,</p>
+        <p begin="00:06:10.3" end="00:06:12.5" tts:direction="ltr">and we'll talk more about that in a bit.</p>
+        <p begin="00:06:12.5" end="00:06:16.10" tts:direction="ltr">So here, hint, start with select star to
+<br/>see all columns from both tables.</p>
+        <p begin="00:06:16.10" end="00:06:18.2" tts:direction="ltr">That's what we'll start with.</p>
+        <p begin="00:06:18.2" end="00:06:20.5" tts:direction="ltr">But here, as I want to show the name,</p>
+        <p begin="00:06:20.5" end="00:06:22.3" tts:direction="ltr">the birthday, the marital status,</p>
+        <p begin="00:06:22.3" end="00:06:24" tts:direction="ltr">and the employer and department,</p>
+        <p begin="00:06:24" end="00:06:25.9" tts:direction="ltr">I see here that I return the name,</p>
+        <p begin="00:06:25.9" end="00:06:27.6" tts:direction="ltr">the birthday, the marital status,</p>
+        <p begin="00:06:27.6" end="00:06:29" tts:direction="ltr">the employer, and the department.</p>
+        <p begin="00:06:29" end="00:06:34.6" tts:direction="ltr">I select all of the columns that I want to
+<br/>see from this mult able query.</p>
+        <p begin="00:06:34.6" end="00:06:37.3" tts:direction="ltr">Now, you'll notice here that name,</p>
+        <p begin="00:06:37.3" end="00:06:41.8" tts:direction="ltr">birthday, and marital status is all coming
+<br/>from birthday.</p>
+        <p begin="00:06:41.8" end="00:06:44.4" tts:direction="ltr">Now, name exists in both tables,</p>
+        <p begin="00:06:44.4" end="00:06:46.8" tts:direction="ltr">which is an ambiguous column,</p>
+        <p begin="00:06:46.8" end="00:06:49.2" tts:direction="ltr">meaning it exists in both tables.</p>
+        <p begin="00:06:49.2" end="00:06:55.4" tts:direction="ltr">I need to specify using my handy alias I
+<br/>just created to say F dot name.</p>
+        <p begin="00:06:55.4" end="00:06:59.5" tts:direction="ltr">This means pull the name from the Facebook
+<br/>table,</p>
+        <p begin="00:06:59.5" end="00:07:03.5" tts:direction="ltr">then birthday and marital status and then
+<br/>employer and department.</p>
+        <p begin="00:07:03.5" end="00:07:08.5" tts:direction="ltr">Here I'm selecting this information from
+<br/>this multi able query.</p>
+        <p begin="00:07:08.5" end="00:07:13.4" tts:direction="ltr">And the records that are going to return
+<br/>to me are Janet,</p>
+        <p begin="00:07:13.4" end="00:07:16.2" tts:direction="ltr">Amy, and Kevin's records.</p>
+        <p begin="00:07:16.2" end="00:07:18.9" tts:direction="ltr">Specifically, their name, their birthday,</p>
+        <p begin="00:07:18.9" end="00:07:23.2" tts:direction="ltr">their marital status, their employer and
+<br/>the department will return to me.</p>
+        <p begin="00:07:23.2" end="00:07:29.5" tts:direction="ltr">Perfect. Awesome. We'll notice here this
+<br/>will be my result.</p>
+        <p begin="00:07:29.5" end="00:07:31.3" tts:direction="ltr">The proposed query again, name,</p>
+        <p begin="00:07:31.3" end="00:07:34.2" tts:direction="ltr">birthday, marital status, employer, and
+<br/>department.</p>
+        <p begin="00:07:34.2" end="00:07:37.1" tts:direction="ltr">This is what's going to return to me once
+<br/>I run this query.</p>
+        <p begin="00:07:37.1" end="00:07:41.1" tts:direction="ltr">The result will be the name from Facebook
+<br/>table,</p>
+        <p begin="00:07:41.1" end="00:07:42.9" tts:direction="ltr">the birthday, the marital status,</p>
+        <p begin="00:07:42.9" end="00:07:44.5" tts:direction="ltr">the employer, and the department.</p>
+        <p begin="00:07:44.5" end="00:07:49.2" tts:direction="ltr">Now I am capturing data from my Facebook
+<br/>table and my LinkedIn table.</p>
+        <p begin="00:07:49.2" end="00:07:52.4" tts:direction="ltr">We can see this right here from my
+<br/>Facebook table and</p>
+        <p begin="00:07:52.4" end="00:07:58.2" tts:direction="ltr">my LinkedIn table together is bringing me
+<br/>this result right down here.</p>
+        <p begin="00:07:58.2" end="00:08:06" tts:direction="ltr">Perfect. So the only rows that were
+<br/>included are Janet, Amy, and Kevin.</p>
+        <p begin="00:08:06" end="00:08:10.3" tts:direction="ltr">The only rows with matching values in the
+<br/>joined column,</p>
+        <p begin="00:08:10.3" end="00:08:12.9" tts:direction="ltr">the joined column was three, four and
+<br/>five.</p>
+        <p begin="00:08:12.9" end="00:08:15.6" tts:direction="ltr">In both tables will be returned,</p>
+        <p begin="00:08:15.6" end="00:08:18.1" tts:direction="ltr">three, four and five were the only ones
+<br/>that were matching.</p>
+        <p begin="00:08:18.1" end="00:08:22.7" tts:direction="ltr">One and two and six and seven were not
+<br/>matching.</p>
+        <p begin="00:08:22.7" end="00:08:25.3" tts:direction="ltr">They didn't exist in both tables.</p>
+        <p begin="00:08:25.3" end="00:08:32.7" tts:direction="ltr">Perfect. Rows without matching values are
+<br/>excluded from the result output.</p>
+        <p begin="00:08:32.7" end="00:08:38.1" tts:direction="ltr">If I come back here, you'll notice we're
+<br/>only returning Janet, Amy, and Kevin.</p>
+        <p begin="00:08:38.1" end="00:08:41.3" tts:direction="ltr">Perfect. This is called an inner join,</p>
+        <p begin="00:08:41.3" end="00:08:47.2" tts:direction="ltr">which means that only data that's columns
+<br/>match,</p>
+        <p begin="00:08:47.2" end="00:08:48.8" tts:direction="ltr">the three, four and five,</p>
+        <p begin="00:08:48.8" end="00:08:54.1" tts:direction="ltr">the matching values in the joined column
+<br/>are returned to me in an inner join.</p>
+        <p begin="00:08:54.1" end="00:08:55.10" tts:direction="ltr">This is called an inner join.</p>
+        <p begin="00:08:55.10" end="00:08:58" tts:direction="ltr">It is the most common.</p>
+        <p begin="00:08:58" end="00:09:02.3" tts:direction="ltr">Type of join or mult table query that we
+<br/>will do.</p>
+        <p begin="00:09:02.3" end="00:09:06.10" tts:direction="ltr">Other types of joins can be used to modify
+<br/>this behavior.</p>
+        <p begin="00:09:06.10" end="00:09:12.3" tts:direction="ltr">I also want to let you know that there's
+<br/>two different types of joins.</p>
+        <p begin="00:09:12.3" end="00:09:15.7" tts:direction="ltr">There's an implicit join and there's an
+<br/>explicit join.</p>
+        <p begin="00:09:15.7" end="00:09:23.5" tts:direction="ltr">The implicit join is a syntax that was
+<br/>used more historically, if you will.</p>
+        <p begin="00:09:23.5" end="00:09:29.10" tts:direction="ltr">It is not the standard today given its
+<br/>limitations with other types of joins.</p>
+        <p begin="00:09:29.10" end="00:09:33.4" tts:direction="ltr">The explicit join is what we will use in
+<br/>this class,</p>
+        <p begin="00:09:33.4" end="00:09:36.5" tts:direction="ltr">and this tends to be the standard.</p>
+        <p begin="00:09:36.5" end="00:09:39.4" tts:direction="ltr">We will use the explicit join syntax.</p>
+        <p begin="00:09:39.4" end="00:09:42.4" tts:direction="ltr">Now you'll notice the implicit join syntax</p>
+        <p begin="00:09:42.4" end="00:09:45.7" tts:direction="ltr">does the same thing as far as queries from
+<br/>both tables,</p>
+        <p begin="00:09:45.7" end="00:09:48.3" tts:direction="ltr">yet there's a comma between them, okay.</p>
+        <p begin="00:09:48.3" end="00:09:54.1" tts:direction="ltr">And then in the where clause is where we
+<br/>do FID equals LD.</p>
+        <p begin="00:09:54.1" end="00:09:57.1" tts:direction="ltr">We establish that foreign primary key
+<br/>relationship.</p>
+        <p begin="00:09:57.1" end="00:10:01.1" tts:direction="ltr">However, in the explicit join syntax that
+<br/>we just did,</p>
+        <p begin="00:10:01.1" end="00:10:03.9" tts:direction="ltr">we use the join clause instead of the
+<br/>comma,</p>
+        <p begin="00:10:03.9" end="00:10:07" tts:direction="ltr">and we use the on instead of a aware.</p>
+        <p begin="00:10:07" end="00:10:09.5" tts:direction="ltr">That's really the two main differences.</p>
+        <p begin="00:10:09.5" end="00:10:12.5" tts:direction="ltr">But once we get into joins more so,</p>
+        <p begin="00:10:12.5" end="00:10:15.3" tts:direction="ltr">I can explain as to why we do that.</p>
+        <p begin="00:10:15.3" end="00:10:18.9" tts:direction="ltr">So here's quite exactly why we do that.</p>
+        <p begin="00:10:18.9" end="00:10:23.2" tts:direction="ltr">The explicit join advantages, let's talk
+<br/>about this.</p>
+        <p begin="00:10:23.2" end="00:10:25.4" tts:direction="ltr">Explicit joins one we're going to use.</p>
+        <p begin="00:10:25.4" end="00:10:29.7" tts:direction="ltr">The code shows exactly what tables or
+<br/>columns are being joined.</p>
+        <p begin="00:10:29.7" end="00:10:33.1" tts:direction="ltr">It highly simplifies the wear clause,</p>
+        <p begin="00:10:33.1" end="00:10:37.2" tts:direction="ltr">and it allows us to do other types of
+<br/>joins.</p>
+        <p begin="00:10:37.2" end="00:10:40" tts:direction="ltr">A outer, a left and a right join.</p>
+        <p begin="00:10:40" end="00:10:43.5" tts:direction="ltr">So We are going to be using explicit joins</p>
+        <p begin="00:10:43.5" end="00:10:47.7" tts:direction="ltr">and I'll show you really quickly what an
+<br/>outer inner,</p>
+        <p begin="00:10:47.7" end="00:10:49.9" tts:direction="ltr">left and right join does.</p>
+        <p begin="00:10:49.9" end="00:10:55.7" tts:direction="ltr">With an inner join, which is what we just
+<br/>did this syntax right here,</p>
+        <p begin="00:10:55.7" end="00:10:59.9" tts:direction="ltr">this just writing join is going to be an
+<br/>inner join.</p>
+        <p begin="00:10:59.9" end="00:11:05.6" tts:direction="ltr">Inner join says that I'm only going to
+<br/>return records of which exist,</p>
+        <p begin="00:11:05.6" end="00:11:08.9" tts:direction="ltr">those column values that we join on.</p>
+        <p begin="00:11:08.9" end="00:11:13.3" tts:direction="ltr">In this case, it was ID and ID are equal
+<br/>to each other.</p>
+        <p begin="00:11:13.3" end="00:11:16.1" tts:direction="ltr">Only common right?</p>
+        <p begin="00:11:16.1" end="00:11:20.6" tts:direction="ltr">Records are going to be returned in an
+<br/>inner join.</p>
+        <p begin="00:11:20.6" end="00:11:23.8" tts:direction="ltr">On Janet, Amy, and Kevin are going to</p>
+        <p begin="00:11:23.8" end="00:11:27.2" tts:direction="ltr">be returned because they exist in both
+<br/>tables.</p>
+        <p begin="00:11:27.2" end="00:11:29.3" tts:direction="ltr">That's the function of an inner join.</p>
+        <p begin="00:11:29.3" end="00:11:32.5" tts:direction="ltr">The left join is saying, Hey, for example,</p>
+        <p begin="00:11:32.5" end="00:11:39.5" tts:direction="ltr">if I wanted to show all of my Facebook
+<br/>friends,</p>
+        <p begin="00:11:39.5" end="00:11:42.9" tts:direction="ltr">and, all of my Facebook friends</p>
+        <p begin="00:11:42.9" end="00:11:46.8" tts:direction="ltr">regardless if there is a match in the
+<br/>LinkedIn table,</p>
+        <p begin="00:11:46.8" end="00:11:49.6" tts:direction="ltr">then I would do a left join here.</p>
+        <p begin="00:11:49.6" end="00:11:54.2" tts:direction="ltr">This means that show all of my Facebook
+<br/>friends regardless if there's a match.</p>
+        <p begin="00:11:54.2" end="00:11:57.4" tts:direction="ltr">John and Kim would also appear in the
+<br/>results.</p>
+        <p begin="00:11:57.4" end="00:11:59.8" tts:direction="ltr">The employer and department values</p>
+        <p begin="00:11:59.8" end="00:12:03.1" tts:direction="ltr">return in the results would just be null,
+<br/>they don't exist.</p>
+        <p begin="00:12:03.1" end="00:12:07.4" tts:direction="ltr">Left join shows all tables on that left
+<br/>side.</p>
+        <p begin="00:12:07.4" end="00:12:11.6" tts:direction="ltr">Again, because Facebook is on the left
+<br/>side of the word join,</p>
+        <p begin="00:12:11.6" end="00:12:14.7" tts:direction="ltr">we would do a left join here to show all
+<br/>of</p>
+        <p begin="00:12:14.7" end="00:12:18" tts:direction="ltr">the Facebook data regardless if there was
+<br/>a match.</p>
+        <p begin="00:12:18" end="00:12:20.5" tts:direction="ltr">Now, On the other hand,</p>
+        <p begin="00:12:20.5" end="00:12:21.10" tts:direction="ltr">if we did a write outer join,</p>
+        <p begin="00:12:21.10" end="00:12:23.8" tts:direction="ltr">it would do the same thing here.</p>
+        <p begin="00:12:23.8" end="00:12:26.3" tts:direction="ltr">If we come back and I say,</p>
+        <p begin="00:12:26.3" end="00:12:29.7" tts:direction="ltr">I want to show all of my LinkedIn
+<br/>connections</p>
+        <p begin="00:12:29.7" end="00:12:32.8" tts:direction="ltr">regardless if there's a mash in the
+<br/>Facebook table,</p>
+        <p begin="00:12:32.8" end="00:12:34.6" tts:direction="ltr">and then in front of the join,</p>
+        <p begin="00:12:34.6" end="00:12:37.4" tts:direction="ltr">I would say from Facebook as F,</p>
+        <p begin="00:12:37.4" end="00:12:39.8" tts:direction="ltr">right join LinkedIn as L because</p>
+        <p begin="00:12:39.8" end="00:12:43.8" tts:direction="ltr">LinkedIn is on the right side of that join
+<br/>word.</p>
+        <p begin="00:12:43.8" end="00:12:47.4" tts:direction="ltr">Then that would show me all of the
+<br/>LinkedIn table.</p>
+        <p begin="00:12:47.4" end="00:12:52.3" tts:direction="ltr">Then one that's not used as often and this
+<br/>is saying show me</p>
+        <p begin="00:12:52.3" end="00:12:54.6" tts:direction="ltr">all the data from both tables</p>
+        <p begin="00:12:54.6" end="00:12:57.6" tts:direction="ltr">regardless if there's a match, just show
+<br/>me all of the data.</p>
+        <p begin="00:12:57.6" end="00:13:02.2" tts:direction="ltr">That's a full outer join. Let's do a quick
+<br/>left join example here.</p>
+        <p begin="00:13:02.2" end="00:13:06.4" tts:direction="ltr">So show the name birthday, marital status,</p>
+        <p begin="00:13:06.4" end="00:13:08.9" tts:direction="ltr">employer and Department of all connections
+<br/>on</p>
+        <p begin="00:13:08.9" end="00:13:12.6" tts:direction="ltr">Facebook and any related connections on
+<br/>LinkedIn.</p>
+        <p begin="00:13:12.6" end="00:13:14.9" tts:direction="ltr">The left join syntax would look like this.</p>
+        <p begin="00:13:14.9" end="00:13:16.9" tts:direction="ltr">We would select the first name to
+<br/>birthday,</p>
+        <p begin="00:13:16.9" end="00:13:21.5" tts:direction="ltr">marital status employer department from
+<br/>Facebook as left join,</p>
+        <p begin="00:13:21.5" end="00:13:24.10" tts:direction="ltr">again because Facebook is on that left
+<br/>side and I want to return all of</p>
+        <p begin="00:13:24.10" end="00:13:30.7" tts:direction="ltr">my Facebook data regardless if there is
+<br/>any related connections on LinkedIn.</p>
+        <p begin="00:13:30.7" end="00:13:36.3" tts:direction="ltr">Based upon again, saying if the values
+<br/>exist,</p>
+        <p begin="00:13:40.5" end="00:13:43.6" tts:direction="ltr">Once we've written this left join,</p>
+        <p begin="00:13:43.6" end="00:13:46.3" tts:direction="ltr">you can see here that yes,</p>
+        <p begin="00:13:46.3" end="00:13:49.2" tts:direction="ltr">we have the match of three, four, and
+<br/>five.</p>
+        <p begin="00:13:49.2" end="00:13:53.5" tts:direction="ltr">But because I want to show all of my
+<br/>Facebook data,</p>
+        <p begin="00:13:53.5" end="00:13:56.9" tts:direction="ltr">regardless if there's a match in the
+<br/>LinkedIn table,</p>
+        <p begin="00:13:56.9" end="00:14:00.6" tts:direction="ltr">then I'm going to also show all of this
+<br/>Facebook data.</p>
+        <p begin="00:14:00.6" end="00:14:03.10" tts:direction="ltr">I'm going to go ahead here and we'll
+<br/>notice that</p>
+        <p begin="00:14:03.10" end="00:14:07.1" tts:direction="ltr">we're going to return John and Kim and
+<br/>Janet,</p>
+        <p begin="00:14:07.1" end="00:14:09.7" tts:direction="ltr">Amy, and Kevin's data.</p>
+        <p begin="00:14:09.7" end="00:14:13.5" tts:direction="ltr">Now, when we look at our results view over
+<br/>here,</p>
+        <p begin="00:14:13.5" end="00:14:16.2" tts:direction="ltr">you're going to notice that in the
+<br/>results,</p>
+        <p begin="00:14:16.2" end="00:14:20.7" tts:direction="ltr">The employer for John and Kim is null,</p>
+        <p begin="00:14:20.7" end="00:14:22.8" tts:direction="ltr">the department is null,</p>
+        <p begin="00:14:22.8" end="00:14:28" tts:direction="ltr">because they do not have any LinkedIn data
+<br/>to pull from.</p>
+        <p begin="00:14:28" end="00:14:32.5" tts:direction="ltr">The IDs do not exist in the LinkedIn
+<br/>table.</p>
+        <p begin="00:14:32.5" end="00:14:34.9" tts:direction="ltr">That's what a left join looks like.</p>
+        <p begin="00:14:34.9" end="00:14:37.5" tts:direction="ltr">Now, we're going to primarily look at
+<br/>inner joins,</p>
+        <p begin="00:14:37.5" end="00:14:39.9" tts:direction="ltr">but I just wanted you to know what a left,</p>
+        <p begin="00:14:39.9" end="00:14:42.1" tts:direction="ltr">right, and full outer join are.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
+  </body>
+</tt>

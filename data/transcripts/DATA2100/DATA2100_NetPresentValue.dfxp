@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>585131303 - 1_3gnnuqc1 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:02.360" tts:direction="ltr">Hi, Data 2,100 students.</p>
+        <p begin="00:00:02.360" end="00:00:05.000" tts:direction="ltr">We are jumping into net present value
+<br />today.</p>
+        <p begin="00:00:05.000" end="00:00:07.360" tts:direction="ltr">This is a type of analysis we are going to</p>
+        <p begin="00:00:07.360" end="00:00:09.920" tts:direction="ltr">do in this data analysis part of our
+<br />class.</p>
+        <p begin="00:00:09.920" end="00:00:14.000" tts:direction="ltr">For my finance, people who are folks that
+<br />are really interested in</p>
+        <p begin="00:00:14.000" end="00:00:15.280" tts:direction="ltr">finance is something that is</p>
+        <p begin="00:00:15.280" end="00:00:18.240" tts:direction="ltr">a very common calculation in the world of
+<br />finance,</p>
+        <p begin="00:00:18.240" end="00:00:20.800" tts:direction="ltr">but it's also just something that is</p>
+        <p begin="00:00:20.800" end="00:00:25.160" tts:direction="ltr">extremely helpful and allows us to analyze
+<br />data in a meaningful way.</p>
+        <p begin="00:00:25.160" end="00:00:28.160" tts:direction="ltr">Let's talk about what does net present
+<br />value mean?</p>
+        <p begin="00:00:28.160" end="00:00:32.000" tts:direction="ltr">We're first off going to understand net
+<br />present value and its calculations,</p>
+        <p begin="00:00:32.000" end="00:00:35.760" tts:direction="ltr">and then we're going to apply net present
+<br />value to an example.</p>
+        <p begin="00:00:35.760" end="00:00:38.800" tts:direction="ltr">So let's go through some basics really
+<br />quick.</p>
+        <p begin="00:00:38.800" end="00:00:41.880" tts:direction="ltr">So if we think about net present value,</p>
+        <p begin="00:00:41.880" end="00:00:46.305" tts:direction="ltr">we are aiming to understand what is, um,</p>
+        <p begin="00:00:46.305" end="00:00:51.970" tts:direction="ltr">What are the cash inflows and outflows of
+<br />a project and over time,</p>
+        <p begin="00:00:51.970" end="00:00:54.650" tts:direction="ltr">what does that make that project worth,</p>
+        <p begin="00:00:54.650" end="00:00:57.650" tts:direction="ltr">if you will, in today's dollars?</p>
+        <p begin="00:00:57.650" end="00:01:02.810" tts:direction="ltr">Let's talk about this. Here we have
+<br />revenue is cash inflows.</p>
+        <p begin="00:01:02.810" end="00:01:05.010" tts:direction="ltr">This is the money that we make.</p>
+        <p begin="00:01:05.010" end="00:01:07.490" tts:direction="ltr">Cost is cash outflows.</p>
+        <p begin="00:01:07.490" end="00:01:09.090" tts:direction="ltr">This is the money that we spend.</p>
+        <p begin="00:01:09.090" end="00:01:12.410" tts:direction="ltr">We have this idea of cash inflows can cash
+<br />outflows.</p>
+        <p begin="00:01:12.410" end="00:01:14.890" tts:direction="ltr">Then we also have this idea of profit or
+<br />loss,</p>
+        <p begin="00:01:14.890" end="00:01:17.330" tts:direction="ltr">which is revenue minus cost.</p>
+        <p begin="00:01:17.330" end="00:01:19.890" tts:direction="ltr">Money comes in, that's an inflow,</p>
+        <p begin="00:01:19.890" end="00:01:22.515" tts:direction="ltr">money goes out, that's an outflow. All
+<br />right.</p>
+        <p begin="00:01:22.515" end="00:01:27.980" tts:direction="ltr">And profits if positive on the profit and
+<br />loss and loss if negative.</p>
+        <p begin="00:01:27.980" end="00:01:33.020" tts:direction="ltr">Perfect. When we are thinking about how to
+<br />evaluate an investment,</p>
+        <p begin="00:01:33.020" end="00:01:36.100" tts:direction="ltr">you've read about this in your textbook.</p>
+        <p begin="00:01:36.100" end="00:01:40.140" tts:direction="ltr">When we're looking at the value of an
+<br />investment in today's dollars,</p>
+        <p begin="00:01:40.140" end="00:01:43.340" tts:direction="ltr">whether that's a project you're investing
+<br />in or whatever it may be,</p>
+        <p begin="00:01:43.340" end="00:01:46.700" tts:direction="ltr">when we're trying to evaluate an
+<br />investment,</p>
+        <p begin="00:01:46.700" end="00:01:51.180" tts:direction="ltr">we are really looking for are good
+<br />investments profitable?</p>
+        <p begin="00:01:51.180" end="00:01:53.940" tts:direction="ltr">Good investments are profitable,</p>
+        <p begin="00:01:53.940" end="00:01:55.700" tts:direction="ltr">revenue is greater than cost,</p>
+        <p begin="00:01:55.700" end="00:01:57.420" tts:direction="ltr">but we also have to account for</p>
+        <p begin="00:01:57.420" end="00:02:00.230" tts:direction="ltr">other things when we're thinking about
+<br />investments.</p>
+        <p begin="00:02:00.230" end="00:02:03.600" tts:direction="ltr">Um, but most investments take time to</p>
+        <p begin="00:02:03.600" end="00:02:07.200" tts:direction="ltr">accrue revenue while costs often occur
+<br />immediately.</p>
+        <p begin="00:02:07.200" end="00:02:09.600" tts:direction="ltr">As an example, if we are wanting to spin</p>
+        <p begin="00:02:09.600" end="00:02:12.560" tts:direction="ltr">up a brand new website for our company,</p>
+        <p begin="00:02:12.560" end="00:02:14.960" tts:direction="ltr">and it's going to have state of the art,</p>
+        <p begin="00:02:14.960" end="00:02:20.680" tts:direction="ltr">all these things and it's going to help
+<br />push a lot of transactions,</p>
+        <p begin="00:02:20.680" end="00:02:23.120" tts:direction="ltr">if you will, then more than likely,</p>
+        <p begin="00:02:23.120" end="00:02:26.220" tts:direction="ltr">um, a lot of those costs are going to
+<br />occur</p>
+        <p begin="00:02:26.220" end="00:02:30.420" tts:direction="ltr">immediately in terms of developing that
+<br />website,</p>
+        <p begin="00:02:30.420" end="00:02:32.620" tts:direction="ltr">where the revenues may be going to come
+<br />later.</p>
+        <p begin="00:02:32.620" end="00:02:34.780" tts:direction="ltr">During the time period of the investment,</p>
+        <p begin="00:02:34.780" end="00:02:36.500" tts:direction="ltr">whether it's a new website,</p>
+        <p begin="00:02:36.500" end="00:02:38.900" tts:direction="ltr">whatever that may be, we also incur</p>
+        <p begin="00:02:38.900" end="00:02:42.900" tts:direction="ltr">opportunity costs of not being able to
+<br />invest our money elsewhere.</p>
+        <p begin="00:02:42.900" end="00:02:48.420" tts:direction="ltr">If we are putting money and resources into
+<br />this investment,</p>
+        <p begin="00:02:48.420" end="00:02:50.020" tts:direction="ltr">say into this new website,</p>
+        <p begin="00:02:50.020" end="00:02:53.020" tts:direction="ltr">for example, then we are incurring those
+<br />opportunity costs.</p>
+        <p begin="00:02:53.020" end="00:02:56.900" tts:direction="ltr">You'll learn this in an econ class, if you
+<br />have not already,</p>
+        <p begin="00:02:56.900" end="00:02:58.700" tts:direction="ltr">which is basically, this is</p>
+        <p begin="00:02:58.700" end="00:03:01.500" tts:direction="ltr">the cost of not being able to invest our
+<br />money elsewhere.</p>
+        <p begin="00:03:01.500" end="00:03:03.805" tts:direction="ltr">There's some opportunity costs involved
+<br />there.</p>
+        <p begin="00:03:03.805" end="00:03:06.030" tts:direction="ltr">How can we tell if an investment is better</p>
+        <p begin="00:03:06.030" end="00:03:08.910" tts:direction="ltr">than another investment over a period of
+<br />time?</p>
+        <p begin="00:03:08.910" end="00:03:14.230" tts:direction="ltr">If I have two different potential projects
+<br />or whatever it may be,</p>
+        <p begin="00:03:14.230" end="00:03:16.990" tts:direction="ltr">if I just want to see is an investment
+<br />worth it?</p>
+        <p begin="00:03:16.990" end="00:03:20.230" tts:direction="ltr">Net present value can be really helpful in
+<br />that.</p>
+        <p begin="00:03:20.230" end="00:03:23.350" tts:direction="ltr">Net present value NPV is</p>
+        <p begin="00:03:23.350" end="00:03:28.390" tts:direction="ltr">a financial analyst that tells you the
+<br />present value of</p>
+        <p begin="00:03:28.390" end="00:03:32.310" tts:direction="ltr">an investment versus an alternative
+<br />investment of</p>
+        <p begin="00:03:32.310" end="00:03:37.790" tts:direction="ltr">comparable risk when considering future
+<br />net cash flows.</p>
+        <p begin="00:03:37.790" end="00:03:40.270" tts:direction="ltr">This is a financial analysis.</p>
+        <p begin="00:03:40.270" end="00:03:43.515" tts:direction="ltr">It's also considering this a data
+<br />analysis.</p>
+        <p begin="00:03:43.515" end="00:03:49.400" tts:direction="ltr">We are wanting you to look at what is the
+<br />present value of an investment.</p>
+        <p begin="00:03:49.400" end="00:03:52.960" tts:direction="ltr">In today's dollars, even though a lot of</p>
+        <p begin="00:03:52.960" end="00:03:55.080" tts:direction="ltr">cash inflows and outflows are going to</p>
+        <p begin="00:03:55.080" end="00:03:57.760" tts:direction="ltr">occur over this time period of the
+<br />investment,</p>
+        <p begin="00:03:57.760" end="00:03:59.320" tts:direction="ltr">we want to narrow that down.</p>
+        <p begin="00:03:59.320" end="00:04:01.160" tts:direction="ltr">We want to condense all that data down</p>
+        <p begin="00:04:01.160" end="00:04:04.040" tts:direction="ltr">into what is the present value of the
+<br />investment?</p>
+        <p begin="00:04:04.040" end="00:04:06.800" tts:direction="ltr">We're going to measure that, if you will,</p>
+        <p begin="00:04:06.800" end="00:04:09.080" tts:direction="ltr">against an alternative investment of</p>
+        <p begin="00:04:09.080" end="00:04:13.040" tts:direction="ltr">comparable risk when we consider future
+<br />net cash flows.</p>
+        <p begin="00:04:13.040" end="00:04:16.440" tts:direction="ltr">When we talk about net cash flows, that is
+<br />looking at,</p>
+        <p begin="00:04:16.440" end="00:04:19.040" tts:direction="ltr">cash inflows minus outflows,</p>
+        <p begin="00:04:19.040" end="00:04:21.700" tts:direction="ltr">is that a positive net cash flow, okay?</p>
+        <p begin="00:04:21.700" end="00:04:23.200" tts:direction="ltr">So net cash flow,</p>
+        <p begin="00:04:23.200" end="00:04:28.760" tts:direction="ltr">I was just saying is revenue minus cost
+<br />for a given time period.</p>
+        <p begin="00:04:28.760" end="00:04:32.360" tts:direction="ltr">Perfect. This is all fueled by data.</p>
+        <p begin="00:04:32.360" end="00:04:36.780" tts:direction="ltr">Okay. So no, you're not going to have to
+<br />memorize this.</p>
+        <p begin="00:04:36.780" end="00:04:38.820" tts:direction="ltr">We have Excel to help us with this.</p>
+        <p begin="00:04:38.820" end="00:04:40.780" tts:direction="ltr">Do not need to memorize this.</p>
+        <p begin="00:04:40.780" end="00:04:44.860" tts:direction="ltr">This is the equation to calculate net
+<br />present value.</p>
+        <p begin="00:04:44.860" end="00:04:47.300" tts:direction="ltr">You can see here that</p>
+        <p begin="00:04:47.300" end="00:04:51.340" tts:direction="ltr">this calculation deals with having the net
+<br />cash flows for one period.</p>
+        <p begin="00:04:51.340" end="00:04:53.660" tts:direction="ltr">It looks at the discount rate.</p>
+        <p begin="00:04:53.660" end="00:04:59.780" tts:direction="ltr">It looks at the number of periods and the
+<br />specific time period as well.</p>
+        <p begin="00:04:59.780" end="00:05:04.140" tts:direction="ltr">Just I wanted you to know this net present
+<br />value calculation exists.</p>
+        <p begin="00:05:04.140" end="00:05:09.220" tts:direction="ltr">We are going to harness Excel to have us
+<br />do the calculation for this.</p>
+        <p begin="00:05:09.220" end="00:05:13.660" tts:direction="ltr">We can use Excel to calculate the net
+<br />present value really easily.</p>
+        <p begin="00:05:13.660" end="00:05:19.500" tts:direction="ltr">And we do this by using the net present
+<br />value formula,</p>
+        <p begin="00:05:19.500" end="00:05:23.180" tts:direction="ltr">if you will, which is the discount rate,
+<br />the values.</p>
+        <p begin="00:05:23.180" end="00:05:27.220" tts:direction="ltr">This is our net cash flows.</p>
+        <p begin="00:05:29.140" end="00:05:32.340" tts:direction="ltr">Minus initial investment.</p>
+        <p begin="00:05:32.340" end="00:05:36.540" tts:direction="ltr">You must have accounted for all cash flows
+<br />first,</p>
+        <p begin="00:05:36.540" end="00:05:39.660" tts:direction="ltr">and this is a really simple calculation</p>
+        <p begin="00:05:39.660" end="00:05:42.220" tts:direction="ltr">for net present value, just so that you
+<br />are aware.</p>
+        <p begin="00:05:42.220" end="00:05:46.540" tts:direction="ltr">This is just a very basic discussion of
+<br />net present value.</p>
+        <p begin="00:05:46.540" end="00:05:48.900" tts:direction="ltr">Let's look at how do we interpret then</p>
+        <p begin="00:05:48.900" end="00:05:51.060" tts:direction="ltr">this net present value outflow for output?</p>
+        <p begin="00:05:51.060" end="00:05:52.420" tts:direction="ltr">If we're going to use Excel,</p>
+        <p begin="00:05:52.420" end="00:05:54.260" tts:direction="ltr">how do we interpret the output?</p>
+        <p begin="00:05:54.260" end="00:05:57.740" tts:direction="ltr">Net present value is going to give you a
+<br />single number,</p>
+        <p begin="00:05:57.740" end="00:06:00.780" tts:direction="ltr">the net present value that represents</p>
+        <p begin="00:06:00.780" end="00:06:04.325" tts:direction="ltr">the value of the investment in today's
+<br />dollars.</p>
+        <p begin="00:06:04.325" end="00:06:07.990" tts:direction="ltr">If net present value is positive,</p>
+        <p begin="00:06:07.990" end="00:06:10.830" tts:direction="ltr">the investment is more profitable than</p>
+        <p begin="00:06:10.830" end="00:06:15.510" tts:direction="ltr">an alternative investment that earns the
+<br />discount rate.</p>
+        <p begin="00:06:15.510" end="00:06:17.670" tts:direction="ltr">The bigger the positive number,</p>
+        <p begin="00:06:17.670" end="00:06:19.630" tts:direction="ltr">the more profitable the investment.</p>
+        <p begin="00:06:19.630" end="00:06:21.750" tts:direction="ltr">If net present value is zero,</p>
+        <p begin="00:06:21.750" end="00:06:23.550" tts:direction="ltr">the investment is equivalent to</p>
+        <p begin="00:06:23.550" end="00:06:26.310" tts:direction="ltr">an alternative investment that earns a
+<br />discount rate.</p>
+        <p begin="00:06:26.310" end="00:06:28.670" tts:direction="ltr">If net present value is negative,</p>
+        <p begin="00:06:28.670" end="00:06:32.190" tts:direction="ltr">we are better off pursuing the alternative
+<br />investment.</p>
+        <p begin="00:06:32.190" end="00:06:39.840" tts:direction="ltr">Let's take a look at the net present value
+<br />example that I have for you.</p>
+        <p begin="00:06:39.840" end="00:06:43.850" tts:direction="ltr">Okay. Here is our net present value
+<br />example.</p>
+        <p begin="00:06:43.850" end="00:06:49.610" tts:direction="ltr">The discount rate of which we are going to
+<br />be referring to today,</p>
+        <p begin="00:06:49.690" end="00:06:53.730" tts:direction="ltr">the discount rate accounts for</p>
+        <p begin="00:06:53.730" end="00:07:00.130" tts:direction="ltr">not only it accounts for the time value of
+<br />money,</p>
+        <p begin="00:07:00.130" end="00:07:04.730" tts:direction="ltr">and it also accounts for this idea of
+<br />opportunity cost.</p>
+        <p begin="00:07:04.730" end="00:07:06.970" tts:direction="ltr">Just keep that in mind,</p>
+        <p begin="00:07:06.970" end="00:07:10.210" tts:direction="ltr">and it helps us in understanding if</p>
+        <p begin="00:07:10.210" end="00:07:12.010" tts:direction="ltr">the investment is more profitable than</p>
+        <p begin="00:07:12.010" end="00:07:14.850" tts:direction="ltr">alternative investment that earns the
+<br />discount rate.</p>
+        <p begin="00:07:14.850" end="00:07:19.850" tts:direction="ltr">Let's take a look here. At this net
+<br />present value example.</p>
+        <p begin="00:07:19.850" end="00:07:23.730" tts:direction="ltr">Over here, this is our quick example of
+<br />net present value.</p>
+        <p begin="00:07:23.730" end="00:07:26.010" tts:direction="ltr">You can download this file if you would
+<br />like.</p>
+        <p begin="00:07:26.010" end="00:07:27.850" tts:direction="ltr">I won't be asking you to turn this in,</p>
+        <p begin="00:07:27.850" end="00:07:31.170" tts:direction="ltr">but I will be asking you some questions
+<br />about this.</p>
+        <p begin="00:07:31.170" end="00:07:37.150" tts:direction="ltr">Here with a This net present value
+<br />example, we are looking at,</p>
+        <p begin="00:07:37.150" end="00:07:39.910" tts:direction="ltr">here is a project that's had</p>
+        <p begin="00:07:39.910" end="00:07:45.750" tts:direction="ltr">a five year time period and this project
+<br />has an initial cost of $100.</p>
+        <p begin="00:07:45.750" end="00:07:48.590" tts:direction="ltr">You're probably like, well, that's not a
+<br />lot of money. It's not.</p>
+        <p begin="00:07:48.590" end="00:07:51.110" tts:direction="ltr">The maintenance cost of year one though
+<br />for</p>
+        <p begin="00:07:51.110" end="00:07:54.910" tts:direction="ltr">this project is $75 and the revenue is
+<br />$20.</p>
+        <p begin="00:07:54.910" end="00:07:58.270" tts:direction="ltr">We could do a mini website as this
+<br />example.</p>
+        <p begin="00:07:58.270" end="00:08:00.910" tts:direction="ltr">Year two, the maintenance is $50,</p>
+        <p begin="00:08:00.910" end="00:08:02.230" tts:direction="ltr">the revenue is $50.</p>
+        <p begin="00:08:02.230" end="00:08:06.230" tts:direction="ltr">Year three, the maintenance is $50 and the
+<br />revenue is $100.</p>
+        <p begin="00:08:06.230" end="00:08:09.480" tts:direction="ltr">Over time, we can see that my revenue is
+<br />increasing.</p>
+        <p begin="00:08:09.480" end="00:08:11.650" tts:direction="ltr">So it's really important to understand
+<br />that.</p>
+        <p begin="00:08:11.650" end="00:08:16.610" tts:direction="ltr">Now, what we first need to do with a net
+<br />present value calculation is we</p>
+        <p begin="00:08:16.610" end="00:08:22.850" tts:direction="ltr">first need to calculate what is the total
+<br />or the net cash flows.</p>
+        <p begin="00:08:22.850" end="00:08:25.410" tts:direction="ltr">The way that we do that is we can sum up,</p>
+        <p begin="00:08:25.410" end="00:08:29.890" tts:direction="ltr">so I'm going to say equal to sum the cash
+<br />flows for year one.</p>
+        <p begin="00:08:29.890" end="00:08:33.330" tts:direction="ltr">So here's my cash flows for year one.</p>
+        <p begin="00:08:33.330" end="00:08:37.410" tts:direction="ltr">Okay. Perfect. Now, as I'm looking at year
+<br />one,</p>
+        <p begin="00:08:37.410" end="00:08:39.370" tts:direction="ltr">I'm going to go through and I'm going to
+<br />delete</p>
+        <p begin="00:08:39.370" end="00:08:42.930" tts:direction="ltr">these cash flows underneath just the
+<br />words.</p>
+        <p begin="00:08:42.930" end="00:08:46.050" tts:direction="ltr">We don't need those. I can see here in
+<br />year one that</p>
+        <p begin="00:08:46.050" end="00:08:51.530" tts:direction="ltr">my net cash flow for year one is negative
+<br />$55.</p>
+        <p begin="00:08:51.530" end="00:08:54.730" tts:direction="ltr">What I'm thinking about and you've heard
+<br />this,</p>
+        <p begin="00:08:54.730" end="00:08:59.770" tts:direction="ltr">maybe you've heard this old adage that you
+<br />have to spend money to make money.</p>
+        <p begin="00:08:59.770" end="00:09:02.210" tts:direction="ltr">This is along those lines of, look,</p>
+        <p begin="00:09:02.210" end="00:09:05.210" tts:direction="ltr">there's going to be quite a few costs of
+<br />this mini website,</p>
+        <p begin="00:09:05.210" end="00:09:08.890" tts:direction="ltr">especially in the beginning the initial
+<br />cost of getting it rolling,</p>
+        <p begin="00:09:08.890" end="00:09:11.150" tts:direction="ltr">and then have the maintenance costs over
+<br />time.</p>
+        <p begin="00:09:11.150" end="00:09:13.810" tts:direction="ltr">Um, and you also know that time value of
+<br />money that</p>
+        <p begin="00:09:13.810" end="00:09:16.650" tts:direction="ltr">$1 today is worth more than $1 tomorrow.</p>
+        <p begin="00:09:16.650" end="00:09:18.690" tts:direction="ltr">So as we seek to understand, okay,</p>
+        <p begin="00:09:18.690" end="00:09:21.570" tts:direction="ltr">then what is maintenance and revenue worth
+<br />over time,</p>
+        <p begin="00:09:21.570" end="00:09:24.730" tts:direction="ltr">that's really when we're starting to look
+<br />at that discount rate.</p>
+        <p begin="00:09:24.730" end="00:09:27.810" tts:direction="ltr">So, um, what are these values worth?</p>
+        <p begin="00:09:27.810" end="00:09:31.570" tts:direction="ltr">So if I was just to calculate what is my
+<br />total net cash flow?</p>
+        <p begin="00:09:31.570" end="00:09:34.835" tts:direction="ltr">I'm just going to look at total net cash
+<br />flow,</p>
+        <p begin="00:09:34.835" end="00:09:37.780" tts:direction="ltr">of one through five.</p>
+        <p begin="00:09:37.780" end="00:09:41.220" tts:direction="ltr">My total net cash flow is $395.</p>
+        <p begin="00:09:41.220" end="00:09:45.900" tts:direction="ltr">Now, that is not doing net present value.</p>
+        <p begin="00:09:45.900" end="00:09:51.300" tts:direction="ltr">That is just looking at net cash flows
+<br />over time. Let's come back here.</p>
+        <p begin="00:09:53.300" end="00:09:56.700" tts:direction="ltr">I did the cash flows up here. My bad.</p>
+        <p begin="00:09:56.700" end="00:09:58.780" tts:direction="ltr">These are our cash flows up here.</p>
+        <p begin="00:09:58.780" end="00:10:00.820" tts:direction="ltr">I can just copy this down.</p>
+        <p begin="00:10:00.820" end="00:10:06.460" tts:direction="ltr">I'm going to X out of that cut that and
+<br />paste it.</p>
+        <p begin="00:10:06.460" end="00:10:09.740" tts:direction="ltr">Oh. All right.</p>
+        <p begin="00:10:09.740" end="00:10:12.980" tts:direction="ltr">Maybe I'm going to cut that and paste it
+<br />down</p>
+        <p begin="00:10:12.980" end="00:10:17.780" tts:direction="ltr">here on this line that says cash flows.
+<br />Good. We're back.</p>
+        <p begin="00:10:17.780" end="00:10:21.900" tts:direction="ltr">I'm looking here in my cash flows and I
+<br />see that over the span of this,</p>
+        <p begin="00:10:21.900" end="00:10:24.340" tts:direction="ltr">I lost my net cash flow calculation.</p>
+        <p begin="00:10:24.340" end="00:10:28.540" tts:direction="ltr">I can see though that my net cash flows,</p>
+        <p begin="00:10:28.540" end="00:10:32.060" tts:direction="ltr">I also need to sum up this value over
+<br />here,</p>
+        <p begin="00:10:32.060" end="00:10:36.820" tts:direction="ltr">which is equal to sum of year zero.</p>
+        <p begin="00:10:36.820" end="00:10:38.660" tts:direction="ltr">Let's make sure we do that.</p>
+        <p begin="00:10:38.660" end="00:10:47.710" tts:direction="ltr">I'm going to figure out what is my sum of
+<br />B 19 to M 19.</p>
+        <p begin="00:10:47.710" end="00:10:51.510" tts:direction="ltr">There we go. Now I have my total cash
+<br />flows.</p>
+        <p begin="00:10:51.510" end="00:10:53.270" tts:direction="ltr">I was not accounting for year zero.</p>
+        <p begin="00:10:53.270" end="00:11:01.800" tts:direction="ltr">That was not good. My net cash flows is
+<br />$295.</p>
+        <p begin="00:11:01.800" end="00:11:06.600" tts:direction="ltr">Now, again, this is not the net present
+<br />value.</p>
+        <p begin="00:11:06.600" end="00:11:08.880" tts:direction="ltr">This is just net cash flows over time.</p>
+        <p begin="00:11:08.880" end="00:11:12.920" tts:direction="ltr">This is not accounting for opportunity
+<br />cost nor time value of money.</p>
+        <p begin="00:11:12.920" end="00:11:16.360" tts:direction="ltr">My discount rate and my net present value
+<br />calculation does that.</p>
+        <p begin="00:11:16.360" end="00:11:19.400" tts:direction="ltr">Let's calculate the net present value of
+<br />this project.</p>
+        <p begin="00:11:19.400" end="00:11:23.400" tts:direction="ltr">Based upon this $295,</p>
+        <p begin="00:11:23.400" end="00:11:25.800" tts:direction="ltr">this net cash flow metric,</p>
+        <p begin="00:11:25.800" end="00:11:28.680" tts:direction="ltr">If you just looked at the net cash flows
+<br />of,</p>
+        <p begin="00:11:28.680" end="00:11:30.800" tts:direction="ltr">I have some costs upfront.</p>
+        <p begin="00:11:30.800" end="00:11:33.000" tts:direction="ltr">I'm getting more revenue towards the end,</p>
+        <p begin="00:11:33.000" end="00:11:34.280" tts:direction="ltr">but you might be like, Oh, yeah,</p>
+        <p begin="00:11:34.280" end="00:11:36.520" tts:direction="ltr">we should definitely move forward with</p>
+        <p begin="00:11:36.520" end="00:11:39.520" tts:direction="ltr">this project because you know what? It's
+<br />worth it.</p>
+        <p begin="00:11:39.520" end="00:11:41.200" tts:direction="ltr">The net cash flow is positive.</p>
+        <p begin="00:11:41.200" end="00:11:42.880" tts:direction="ltr">That's not necessarily true.</p>
+        <p begin="00:11:42.880" end="00:11:47.640" tts:direction="ltr">We need to discount those future cash
+<br />flows to account</p>
+        <p begin="00:11:47.640" end="00:11:50.280" tts:direction="ltr">for the opportunity cost of not</p>
+        <p begin="00:11:50.280" end="00:11:53.350" tts:direction="ltr">going with that alternative investment and
+<br />time value of money.</p>
+        <p begin="00:11:53.350" end="00:11:55.660" tts:direction="ltr">Here in the net present value calculation,</p>
+        <p begin="00:11:55.660" end="00:12:00.260" tts:direction="ltr">I'm going to click on the first value that
+<br />I have here is the rate.</p>
+        <p begin="00:12:00.260" end="00:12:01.980" tts:direction="ltr">We generally start with</p>
+        <p begin="00:12:01.980" end="00:12:05.580" tts:direction="ltr">normally it ranges based upon your
+<br />organization's need,</p>
+        <p begin="00:12:05.580" end="00:12:08.580" tts:direction="ltr">but we'll stay here with an 8% discount
+<br />rate.</p>
+        <p begin="00:12:08.580" end="00:12:13.460" tts:direction="ltr">Then I am going to capture these cash</p>
+        <p begin="00:12:13.460" end="00:12:19.140" tts:direction="ltr">flows nine through L nine.</p>
+        <p begin="00:12:19.140" end="00:12:21.980" tts:direction="ltr">Now, make sure though that you don't have
+<br />dashes here</p>
+        <p begin="00:12:21.980" end="00:12:24.260" tts:direction="ltr">under year one here in</p>
+        <p begin="00:12:24.260" end="00:12:27.260" tts:direction="ltr">maintenance and revenue because that can
+<br />just count as zero.</p>
+        <p begin="00:12:27.260" end="00:12:30.430" tts:direction="ltr">Just make sure that you don't have that
+<br />here.</p>
+        <p begin="00:12:30.430" end="00:12:33.440" tts:direction="ltr">That you've deleted that calculation for</p>
+        <p begin="00:12:33.440" end="00:12:37.240" tts:direction="ltr">this field that was just based on these
+<br />character datas.</p>
+        <p begin="00:12:37.240" end="00:12:39.520" tts:direction="ltr">I have D nine through L nine.</p>
+        <p begin="00:12:39.520" end="00:12:42.280" tts:direction="ltr">Those are all my cash flows, and then I'm
+<br />going to,</p>
+        <p begin="00:12:42.280" end="00:12:47.710" tts:direction="ltr">um going to subtract the initial
+<br />investment.</p>
+        <p begin="00:12:47.710" end="00:12:49.030" tts:direction="ltr">That is my formula.</p>
+        <p begin="00:12:49.030" end="00:12:51.070" tts:direction="ltr">I'm subtracting that initial investment.</p>
+        <p begin="00:12:51.070" end="00:12:53.350" tts:direction="ltr">I am not going to be discounting</p>
+        <p begin="00:12:53.350" end="00:12:56.590" tts:direction="ltr">that cash flow given</p>
+        <p begin="00:12:56.590" end="00:12:59.030" tts:direction="ltr">that we are saying that it's occurring
+<br />today, if you will.</p>
+        <p begin="00:12:59.030" end="00:13:05.550" tts:direction="ltr">I'm going to subtract off the initial
+<br />investment, which is $100.</p>
+        <p begin="00:13:05.550" end="00:13:08.350" tts:direction="ltr">Now, I want you to think about this really
+<br />carefully though.</p>
+        <p begin="00:13:08.350" end="00:13:10.470" tts:direction="ltr">If I subtract B nine,</p>
+        <p begin="00:13:10.470" end="00:13:12.390" tts:direction="ltr">B nine is a negative number,</p>
+        <p begin="00:13:12.390" end="00:13:14.950" tts:direction="ltr">two negatives equals a positive.</p>
+        <p begin="00:13:14.950" end="00:13:19.350" tts:direction="ltr">I'm actually going to add B nine because B
+<br />nine is negative.</p>
+        <p begin="00:13:19.350" end="00:13:22.510" tts:direction="ltr">What this effectively does is this does
+<br />end up</p>
+        <p begin="00:13:22.510" end="00:13:26.590" tts:direction="ltr">subtracting B nine for my net net present
+<br />value calculation,</p>
+        <p begin="00:13:26.590" end="00:13:28.550" tts:direction="ltr">which is what I need to do per</p>
+        <p begin="00:13:28.550" end="00:13:33.070" tts:direction="ltr">our guidance over here on how to calculate
+<br />this simply in Excel.</p>
+        <p begin="00:13:33.070" end="00:13:35.230" tts:direction="ltr">We have equal to net present value,</p>
+        <p begin="00:13:35.230" end="00:13:37.630" tts:direction="ltr">discount rate, the cash flows,</p>
+        <p begin="00:13:37.630" end="00:13:40.470" tts:direction="ltr">and then the minus the initial investment,</p>
+        <p begin="00:13:40.470" end="00:13:44.555" tts:direction="ltr">which is this initial cost here in year
+<br />zero.</p>
+        <p begin="00:13:44.555" end="00:13:47.080" tts:direction="ltr">All right. Now when I run this,</p>
+        <p begin="00:13:47.080" end="00:13:51.480" tts:direction="ltr">we can see here that my net present value
+<br />becomes $169.</p>
+        <p begin="00:13:51.480" end="00:13:55.320" tts:direction="ltr">So I have discounted these future cash
+<br />flows,</p>
+        <p begin="00:13:55.320" end="00:13:59.080" tts:direction="ltr">accounting for time value of money and the
+<br />opportunity cost.</p>
+        <p begin="00:13:59.080" end="00:14:04.080" tts:direction="ltr">So what I notice here is that my net
+<br />present value is $169.</p>
+        <p begin="00:14:04.080" end="00:14:05.640" tts:direction="ltr">So this is positive.</p>
+        <p begin="00:14:05.640" end="00:14:08.120" tts:direction="ltr">I'm going to color this green as in it's,</p>
+        <p begin="00:14:08.120" end="00:14:10.680" tts:direction="ltr">um, you know, think of dollar bills here.</p>
+        <p begin="00:14:10.680" end="00:14:13.040" tts:direction="ltr">This is positive. This means move forward</p>
+        <p begin="00:14:13.040" end="00:14:15.920" tts:direction="ltr">with the project as we understand it right
+<br />now.</p>
+        <p begin="00:14:15.920" end="00:14:17.480" tts:direction="ltr">Where over here, remember,</p>
+        <p begin="00:14:17.480" end="00:14:20.240" tts:direction="ltr">this was just our sum of all of our cash
+<br />flows,</p>
+        <p begin="00:14:20.240" end="00:14:22.840" tts:direction="ltr">including that initial investment, we were
+<br />just looking at,</p>
+        <p begin="00:14:22.840" end="00:14:26.555" tts:direction="ltr">Hey, we just want to sum all these values
+<br />together.</p>
+        <p begin="00:14:26.555" end="00:14:32.230" tts:direction="ltr">And see what we come up with, which was
+<br />$295.</p>
+        <p begin="00:14:32.230" end="00:14:36.470" tts:direction="ltr">My net present value is significantly less
+<br />than</p>
+        <p begin="00:14:36.470" end="00:14:41.430" tts:direction="ltr">my total net cash flow compared 295 to 169</p>
+        <p begin="00:14:41.430" end="00:14:45.590" tts:direction="ltr">because I have discounted those future
+<br />cash flows to</p>
+        <p begin="00:14:45.590" end="00:14:51.070" tts:direction="ltr">account for time value money and
+<br />opportunity cost with that discount rate.</p>
+        <p begin="00:14:51.070" end="00:14:54.905" tts:direction="ltr">As such, this net present value is a
+<br />little smaller.</p>
+        <p begin="00:14:54.905" end="00:14:57.340" tts:direction="ltr">Um, but it is still positive,</p>
+        <p begin="00:14:57.340" end="00:14:59.940" tts:direction="ltr">so I would more than likely move forward
+<br />with this project.</p>
+        <p begin="00:14:59.940" end="00:15:01.900" tts:direction="ltr">Now, if I wanted to say, Hey,</p>
+        <p begin="00:15:01.900" end="00:15:06.460" tts:direction="ltr">I actually need to change my discount rate
+<br />for certain reasons to a 10%,</p>
+        <p begin="00:15:06.460" end="00:15:09.020" tts:direction="ltr">then I would come up here and change,</p>
+        <p begin="00:15:09.020" end="00:15:13.460" tts:direction="ltr">eight to 10% and</p>
+        <p begin="00:15:13.460" end="00:15:15.100" tts:direction="ltr">hit Enter and you notice that</p>
+        <p begin="00:15:15.100" end="00:15:17.380" tts:direction="ltr">my net present value goes down a little
+<br />bit more.</p>
+        <p begin="00:15:17.380" end="00:15:20.500" tts:direction="ltr">I am discounting or reducing</p>
+        <p begin="00:15:20.500" end="00:15:26.980" tts:direction="ltr">those future cash flows more to account to
+<br />account for,</p>
+        <p begin="00:15:26.980" end="00:15:29.500" tts:direction="ltr">again, time value money and that
+<br />opportunity cost.</p>
+        <p begin="00:15:29.500" end="00:15:31.500" tts:direction="ltr">So you may need to increase that discount
+<br />rate.</p>
+        <p begin="00:15:31.500" end="00:15:33.060" tts:direction="ltr">We'll always give you the discount rate,</p>
+        <p begin="00:15:33.060" end="00:15:36.940" tts:direction="ltr">but just know that if you increase the
+<br />discount rate,</p>
+        <p begin="00:15:36.940" end="00:15:39.100" tts:direction="ltr">the net present value goes</p>
+        <p begin="00:15:39.100" end="00:15:44.180" tts:direction="ltr">down because we're discounting these cash
+<br />flows more.</p>
+        <p begin="00:15:44.180" end="00:15:46.980" tts:direction="ltr">There is a brief introduction, net present
+<br />value.</p>
+        <p begin="00:15:46.980" end="00:15:49.980" tts:direction="ltr">We're going to do in</p>
+        <p begin="00:15:49.980" end="00:15:51.740" tts:direction="ltr">class assignment regarding and I think
+<br />that</p>
+        <p begin="00:15:51.740" end="00:15:53.740" tts:direction="ltr">you'll find this to be really helpful for
+<br />you,</p>
+        <p begin="00:15:53.740" end="00:15:57.300" tts:direction="ltr">but really appreciate your hard work. Take
+<br />care, everybody.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,840 @@
+1
+00:00:01,050 --> 00:00:02,830
+Hi, Data2100 students.
+
+2
+00:00:02,830 --> 00:00:07,230
+In this video, we are going to
+also talk about a new clause called
+
+3
+00:00:07,230 --> 00:00:12,550
+the HAVING clause, right? The
+HAVING clause is another clause in
+
+4
+00:00:12,550 --> 00:00:15,570
+structured query language, right?
+We just talked about GROUP BY,
+
+5
+00:00:15,570 --> 00:00:20,130
+now let's talk about HAVING.
+Okay, so what is HAVING and why
+
+6
+00:00:20,130 --> 00:00:23,850
+do we use it? So the HAVING
+clause is used to restrict which
+
+7
+00:00:23,850 --> 00:00:28,190
+groups are included in your
+output. Okay, I would write that
+
+8
+00:00:28,190 --> 00:00:31,950
+down. The HAVING clause is used
+to restrict which groups are
+
+9
+00:00:31,950 --> 00:00:36,930
+included in your output. I would
+also add to your notes that it
+
+10
+00:00:38,330 --> 00:00:44,590
+normally 95% of the time includes an
+aggregate function. For our purposes
+
+11
+00:00:44,590 --> 00:00:48,930
+of this class it is always going
+to include an aggregate function.
+
+12
+00:00:48,930 --> 00:00:52,410
+Okay so it having clause will have
+some sort of aggregate function inside
+
+13
+00:00:52,410 --> 00:00:58,170
+of it for this class like count,
+sum, max, min and that is very much
+
+14
+00:00:58,710 --> 00:01:03,070
+that is more universal in terms of
+their generally it always has an
+
+15
+00:01:03,070 --> 00:01:07,590
+aggregate function but maybe for some
+more advanced use cases it does not
+
+16
+00:01:07,590 --> 00:01:11,750
+but for our purposes in this course
+it will all right so let's take
+
+17
+00:01:11,750 --> 00:01:14,570
+a look at it so we know that
+selecting from are required for every
+
+18
+00:01:14,570 --> 00:01:18,930
+select statement we know that where
+is conditional expression in terms of
+
+19
+00:01:18,930 --> 00:01:23,230
+the records right group by is our
+aggregate function helper the having
+
+20
+00:01:23,230 --> 00:01:27,850
+clause is conditional for groups
+and then finally we order by and so
+
+21
+00:01:27,850 --> 00:01:32,410
+we sort for output. So this is the
+last of the six clauses for you to
+
+22
+00:01:33,280 --> 00:01:36,390
+become accustomed to. It
+is a little bit more of a
+
+23
+00:01:36,390 --> 00:01:39,990
+difficult part of our module.
+It is a little bit more
+
+24
+00:01:39,990 --> 00:01:42,870
+challenging, but it's
+totally doable. All right.
+
+25
+00:01:43,590 --> 00:01:47,950
+So in my opinion, it's the most
+difficult portion of our SQL module.
+
+26
+00:01:47,950 --> 00:01:51,670
+So again, if there is an aggregated
+field and a non-aggregated field
+
+27
+00:01:51,670 --> 00:01:55,610
+in the select clause always grouped
+by the non-aggregated field.
+
+28
+00:01:55,810 --> 00:02:01,430
+Now let's tack on this idea of
+having. So having modifies the
+
+29
+00:02:01,430 --> 00:02:07,350
+group by or groups as where
+modifies from or records. Okay.
+
+30
+00:02:07,350 --> 00:02:10,950
+So having and where are similar
+in that they have some sort
+
+31
+00:02:10,950 --> 00:02:14,450
+of conditional expression,
+but having looks at groups and
+
+32
+00:02:14,450 --> 00:02:18,350
+the where clause looks at
+records or the from clause. Okay.
+
+33
+00:02:18,780 --> 00:02:21,090
+So let's take a look
+here. Let's jump into
+
+34
+00:02:21,090 --> 00:02:23,630
+a couple of examples that I've given you.
+
+35
+00:02:24,650 --> 00:02:28,430
+So the examples I've given
+you, so let's just go ahead and
+
+36
+00:02:28,430 --> 00:02:31,970
+jump into these. So how many
+total visit products have been
+
+37
+00:02:31,970 --> 00:02:35,170
+sold at Overland? That's our
+first question. So let's come
+
+38
+00:02:35,170 --> 00:02:39,010
+over here and take a look. So
+how many total visit products?
+
+39
+00:02:39,010 --> 00:02:42,270
+Oh, I meant to grab my
+Overland ERD and DA dictionary.
+
+40
+00:02:43,050 --> 00:02:47,010
+All right. Okay. So we're going to
+be looking at our Viz product table.
+
+41
+00:02:47,010 --> 00:02:50,670
+So how many total products? So
+let's look at our Viz product table.
+
+42
+00:02:51,950 --> 00:02:55,910
+So this is the quantity of
+product purchased on visit. This
+
+43
+00:02:55,910 --> 00:02:59,630
+is the price of product purchased
+on visit. So how many total
+
+44
+00:02:59,630 --> 00:03:02,980
+products have been purchased?
+All right, so let's come over
+
+45
+00:03:02,980 --> 00:03:06,730
+here and take a look. So I know
+I'm going to be querying from
+
+46
+00:03:06,730 --> 00:03:14,030
+that Viz prod table. So select
+star from Viz prod. Again,
+
+47
+00:03:14,030 --> 00:03:17,170
+this is tracking that these are
+products that were purchased
+
+48
+00:03:17,990 --> 00:03:22,370
+and it's tracking how many were
+purchased in the quantity field,
+
+49
+00:03:22,370 --> 00:03:25,730
+right? Think of these as like
+line items. You know, you can go
+
+50
+00:03:25,730 --> 00:03:29,830
+to Costco and buy six rotisserie
+chickens. And if you did that,
+
+51
+00:03:29,830 --> 00:03:33,290
+then the quantity of this
+would be six. Okay. But instead
+
+52
+00:03:33,290 --> 00:03:36,770
+you just, in this case, they
+just bought one pro equipment
+
+53
+00:03:36,770 --> 00:03:40,870
+product ID. So the product ID
+is found in the product table.
+
+54
+00:03:40,870 --> 00:03:44,230
+We will soon learn how to query
+multiple tables at once, but
+
+55
+00:03:44,230 --> 00:03:47,090
+for now we're limited to
+knowing that there was a product
+
+56
+00:03:48,190 --> 00:03:52,030
+purchased. Um, and then there was
+the number that were purchased and
+
+57
+00:03:52,030 --> 00:03:56,890
+the price of that. All right. So
+let's go ahead and see how many total
+
+58
+00:03:56,890 --> 00:04:00,630
+visit products have been sold at
+Overland. So what I need to do here
+
+59
+00:04:00,630 --> 00:04:04,630
+is I need to not necessarily count
+something, right? How many total
+
+60
+00:04:04,630 --> 00:04:09,350
+visit products I want to some
+quantity, right? Because if I was just
+
+61
+00:04:09,350 --> 00:04:12,510
+counting, then I'm just counting,
+right? The number of different products
+
+62
+00:04:12,510 --> 00:04:16,390
+sold. But in this case here, down
+here on line number five, there is
+
+63
+00:04:16,390 --> 00:04:20,210
+two products that were sold.
+Therefore, if I only counted the number
+
+64
+00:04:20,210 --> 00:04:24,110
+of records here, I know I'm going
+to miss out on at least one product
+
+65
+00:04:24,210 --> 00:04:27,330
+because I must sum quantity together
+
+66
+00:04:27,350 --> 00:04:31,270
+in case quantity is ever
+greater than one. So what I'm
+
+67
+00:04:31,270 --> 00:04:34,490
+gonna do here is I'm gonna
+select sum and then quantity,
+
+68
+00:04:34,990 --> 00:04:38,950
+okay, as total products.
+
+69
+00:04:40,530 --> 00:04:41,990
+All right, perfect.
+
+70
+00:04:42,080 --> 00:04:43,900
+So let's go ahead and run this.
+
+71
+00:04:44,730 --> 00:04:53,330
+so I see I have 118,297 total products
+sold at Overland. So that's how
+
+72
+00:04:53,330 --> 00:04:57,150
+many total products I have sold
+from Overland. Now though I want to
+
+73
+00:04:57,150 --> 00:05:01,120
+list the total visit products that
+have been sold of each of the product
+
+74
+00:05:01,120 --> 00:05:04,860
+IDs. Okay so I want to know for
+each of the different product IDs
+
+75
+00:05:06,050 --> 00:05:09,890
+how many of those total products
+have been sold. So let's go ahead
+
+76
+00:05:09,890 --> 00:05:14,190
+and take a look here. So now I
+want to add in prod ID, right?
+
+77
+00:05:14,190 --> 00:05:19,910
+That's the product ID in my visit
+product table, right? Prod ID,
+
+78
+00:05:20,170 --> 00:05:20,730
+okay?
+
+79
+00:05:20,730 --> 00:05:23,130
+So I'm going to say select prod ID,
+
+80
+00:05:23,130 --> 00:05:27,230
+sum quantity as total products.
+Now, pop quiz, will this run?
+
+81
+00:05:28,520 --> 00:05:33,310
+No, it will not run. I have an
+aggregated field, right? And a non
+
+82
+00:05:33,310 --> 00:05:37,910
+-aggregated field in my select clause.
+therefore I'm going to group by
+
+83
+00:05:39,740 --> 00:05:43,730
+prod ID. Okay, so I'm going to
+group by that non-aggregated field.
+
+84
+00:05:43,790 --> 00:05:47,130
+Now when I run this, I can see
+here I have the product ID and the
+
+85
+00:05:47,130 --> 00:05:51,590
+total number of products. So in
+this case, this is a basic tune
+
+86
+00:05:51,590 --> 00:05:58,050
+-up, if you will. And so, you know,
+say that is you go in and they
+
+87
+00:05:58,770 --> 00:06:02,350
+will wax the snowboard for
+you. Maybe they're going
+
+88
+00:06:02,350 --> 00:06:04,670
+to check your bindings,
+whatever that may maybe,
+
+89
+00:06:04,670 --> 00:06:07,310
+for those of you that
+are snowboards or skiers.
+
+90
+00:06:07,990 --> 00:06:14,290
+So there's 3,130 of those sold.
+A lift day ticket, 38,495 of
+
+91
+00:06:14,290 --> 00:06:17,970
+those sold. So we can see here
+what is the most popular selling
+
+92
+00:06:17,970 --> 00:06:20,810
+products and what is the least
+popular selling products.
+
+93
+00:06:20,824 --> 00:06:22,860
+so now that we've done a problem,
+
+94
+00:06:23,110 --> 00:06:26,910
+like part A, let's look at,
+don't include, now part B,
+
+95
+00:06:26,910 --> 00:06:30,110
+don't include groups or product
+IDs that have sold less than
+
+96
+00:06:30,110 --> 00:06:34,190
+4,000 products. Okay, if I
+take a look at this, I can
+
+97
+00:06:34,190 --> 00:06:39,130
+see here that the basic tune,
+right, has sold less than 4
+
+98
+00:06:39,130 --> 00:06:42,430
+,000 products. So I don't want
+that included in my output.
+
+99
+00:06:42,550 --> 00:06:46,310
+So let's, how do I write that query?
+So I'm going to grab this, I'm
+
+100
+00:06:46,310 --> 00:06:52,790
+going to select all of that. But in case
+though I add on additional products,
+
+101
+00:06:53,230 --> 00:06:56,939
+if you will, I want to make sure
+that, so how would I write this
+
+102
+00:06:56,939 --> 00:06:57,400
+if you will, I want to make sure
+that, so how would I write this
+
+103
+00:06:57,400 --> 00:07:02,360
+query to not include groups or product
+IDs that have sold less than 4,000
+
+104
+00:07:02,360 --> 00:07:07,640
+products? So what I would do here
+is I would add on my having clause.
+
+105
+00:07:07,640 --> 00:07:12,380
+So here I'm going to say having,
+and they, now remember I told
+
+106
+00:07:12,380 --> 00:07:15,880
+you that having is, for our
+purposes in this class, always going
+
+107
+00:07:15,880 --> 00:07:18,960
+to have an aggregate function,
+and generally that's the case.
+
+108
+00:07:19,280 --> 00:07:23,080
+that's always generally the case.
+So therefore I have sold less
+
+109
+00:07:23,080 --> 00:07:27,790
+than 4,000 products. So what I
+would like to do here is I want to
+
+110
+00:07:27,790 --> 00:07:31,640
+sell less than 4,000 products.
+Well I want to do the same thing
+
+111
+00:07:31,640 --> 00:07:36,300
+as I did up above and take the
+having some quantity right because
+
+112
+00:07:36,300 --> 00:07:40,480
+this is how I determine the total
+products is by summing quantity
+
+113
+00:07:40,560 --> 00:07:46,460
+and I say that the total
+products must be greater than or
+
+114
+00:07:46,460 --> 00:07:51,360
+equal to 4,000, right, because
+it's sold less than 4,000 products.
+
+115
+00:07:51,420 --> 00:07:54,080
+So now when I run this, instead of having
+
+116
+00:07:54,080 --> 00:07:57,600
+four different product
+IDs appearing to me,
+
+117
+00:07:57,600 --> 00:07:57,782
+okay, so instead of having
+four different ones,
+
+118
+00:07:57,782 --> 00:07:59,709
+all right, so I put this requirement
+on there. Now I'm going to make
+
+119
+00:07:59,709 --> 00:08:02,049
+sure that I zoom all the way out. I
+have to zoom in and out so that you
+
+120
+00:08:02,049 --> 00:08:05,349
+can make sure you can see it good
+on your screen. But I can see here
+
+121
+00:08:05,349 --> 00:08:09,309
+that I have seven total rows. So when
+I zoom all the way out here, I can
+
+122
+00:08:09,309 --> 00:08:12,989
+see here I had initially seven total
+rows. So we can see what the best
+
+123
+00:08:12,989 --> 00:08:16,329
+-selling product was, which was this
+lift day ticket, and I could order
+
+124
+00:08:16,329 --> 00:08:20,109
+by to figure that out. But I can
+also see here that I have the prime
+
+125
+00:08:20,109 --> 00:08:25,749
+tune and basic tune, right, that
+have less than 4,000 products sold.
+
+126
+00:08:25,749 --> 00:08:28,329
+Therefore, when I run
+this query, so instead
+
+127
+00:08:28,329 --> 00:08:31,069
+of having seven, when I run this query,
+
+128
+00:08:31,249 --> 00:08:36,829
+we will see here that I now only
+have five total products that are,
+
+129
+00:08:36,829 --> 00:08:41,329
+total, in this case, now they're
+groups returned to me, right? So
+
+130
+00:08:41,329 --> 00:08:44,609
+there's five rows, but they're
+really groups, right? They're groups
+
+131
+00:08:44,609 --> 00:08:48,489
+of a product ID and they're total
+products. I only have five now
+
+132
+00:08:48,489 --> 00:08:53,849
+being returned to me as I set this
+requirement so that groups must
+
+133
+00:08:53,989 --> 00:08:58,169
+meet the requirement of having at
+least 4,000 products sold in order
+
+134
+00:08:58,169 --> 00:09:01,569
+to be included in my output. So
+we eliminated two of those groups
+
+135
+00:09:01,569 --> 00:09:06,049
+that did not meet this conditional
+requirement set for groups in
+
+136
+00:09:06,049 --> 00:09:09,409
+my having clause. Now, some of you
+may be wondering, well, Reagan,
+
+137
+00:09:09,809 --> 00:09:12,729
+why can't we just use, why
+can't we just refer to total
+
+138
+00:09:12,729 --> 00:09:16,649
+products up here, right? I already
+renamed it as total products.
+
+139
+00:09:16,649 --> 00:09:18,969
+Well, so you're probably wondering, let
+
+140
+00:09:18,969 --> 00:09:21,749
+me copy this query down, paste it again.
+
+141
+00:09:21,749 --> 00:09:23,829
+Why can't I just do this?
+
+142
+00:09:25,789 --> 00:09:28,829
+Okay. So if I was to run this,
+
+143
+00:09:29,149 --> 00:09:32,849
+if I was to run this and
+instead of having to do the
+
+144
+00:09:32,849 --> 00:09:35,669
+aggregate function again,
+instead I just ran this.
+
+145
+00:09:36,349 --> 00:09:40,849
+it says invalid column name total
+products but i created in the
+
+146
+00:09:40,849 --> 00:09:44,569
+select clause so why can i not
+refer to it in the having clause
+
+147
+00:09:44,569 --> 00:09:50,269
+and the reason for that is the
+order of processing okay so the
+
+148
+00:09:50,269 --> 00:09:54,689
+order of writing an sql query is
+select from where group by having
+
+149
+00:09:54,689 --> 00:09:58,809
+an order by okay but the order
+of processing, the way that it's
+
+150
+00:09:58,809 --> 00:10:04,709
+processed, if you will, is that
+the from clause is ran first.
+
+151
+00:10:04,969 --> 00:10:09,469
+So when the server receives
+this query, it's saying, oh,
+
+152
+00:10:09,589 --> 00:10:13,249
+where is the data coming from,
+right? So from clause, where is
+
+153
+00:10:13,249 --> 00:10:15,489
+the data coming from? Oh, it's
+coming from the guest table.
+
+154
+00:10:18,259 --> 00:10:21,139
+What records do I need to eliminate?
+That's going to be in the where
+
+155
+00:10:21,139 --> 00:10:24,149
+clause. What groups do I need to
+create? And then what groups do I
+
+156
+00:10:24,149 --> 00:10:28,869
+need to eliminate? Then we select
+the actual fields that are going to
+
+157
+00:10:28,869 --> 00:10:35,929
+be returned to us. So that in mind,
+if I create an alias, which I did
+
+158
+00:10:35,929 --> 00:10:43,369
+in the select clause, my having
+clause runs before the select clause,
+
+159
+00:10:43,369 --> 00:10:49,009
+right? It's number four to run and
+the select clause is number five.
+
+160
+00:10:49,709 --> 00:10:55,429
+Therefore, I cannot refer to something
+in the having clause that was
+
+161
+00:10:55,429 --> 00:11:00,149
+created in the select clause, okay?
+So I cannot refer to the alias of
+
+162
+00:11:00,149 --> 00:11:04,269
+total products because in the order
+of processing, it doesn't know that
+
+163
+00:11:04,269 --> 00:11:09,799
+total products exist yet, right? So
+just keep that in mind that I must
+
+164
+00:11:09,799 --> 00:11:13,789
+recreate, if you will, this aggregate
+function here in the sum quantity
+
+165
+00:11:14,269 --> 00:11:18,769
+in my having clause. I cannot
+refer to an alias created in the
+
+166
+00:11:18,769 --> 00:11:22,309
+select clause in the having clause.
+So we'll talk more and more about
+
+167
+00:11:22,309 --> 00:11:26,449
+the order of processing, but
+that's a question that I often get
+
+168
+00:11:26,449 --> 00:11:29,929
+from students, so I wanted to
+address that right out of the gate in
+
+169
+00:11:29,929 --> 00:11:33,689
+that we need to basically redo
+that aggregate function down here.
+
+170
+00:11:33,889 --> 00:11:37,229
+All right, everybody, that's
+our examples for today.
+
+171
+00:11:37,229 --> 00:11:39,609
+Thanks so much for being an
+awesome class. Take care.
+

@@ -2,6 +2,24 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-17 (post-session fix)
+
+- **Embedded Kaltura video player:** replaced the "open in new tab" approach with an in-chat embedded iframe. Each source card now has a "Watch at MM:SS" toggle button; clicking it expands a 16:9 Kaltura player directly below the card with playback starting at the cited timestamp. Collapsing one card and opening another is supported; submitting a new question collapses all.
+- **Fixed timestamp seek:** URL-parameter seeking (`?playFrom`, `?kalturaSeekFrom`, `config[playback]`) all fail on the `extwidget/preview` URL format because that route does not forward seek params to the player. The fix is to parse the `partner_id`, `uiconf_id`, and `entry_id` out of the stored `extwidget/preview` URL and reconstruct an `https://cdnapisec.kaltura.com/p/{pid}/embedPlaykitJs/uiconf_id/{uid}?iframeembed=true&entry_id={eid}&kalturaSeekFrom={sec}&autoplay=true` iframe src — the `embedPlaykitJs` format explicitly supports `kalturaSeekFrom`.
+- Updated `aiDocs/mvp.md` to add embedded video player with timestamp seek as an explicit MVP scope item and success criterion.
+- Updated `aiDocs/architecture.md` presentation layer and frontend component sections to describe the iframe embedding approach; replaced "Decisions Still to Finalize" with "Decisions Finalized in v0.1".
+
+## 2026-07-17
+
+- **Transcripts folder reorganized:** All transcript and sidecar files moved into `data/transcripts/DATA2100/` and `data/transcripts/IS3600/` subdirectories; `ingest.py` now uses `rglob` to discover files recursively.
+- **DFXP/TTML ingestion support added:** `scripts/ingest.py` now parses DFXP (Timed Text Markup Language) caption files in addition to SRT. Added `parse_dfxp()`, `dfxp_time_to_seconds()`, and `_ttml_text()` helpers. The pipeline auto-detects file format by extension.
+- **17 new JSON sidecar files created** for lectures that were missing metadata: 15 for the newly added DFXP transcripts (`DATA2100_DataEcosystems`, `DataVizIntro`, `Flowcharting`, `ICA_BalancedScorecard`, `ICA_DataVisualization`, `ICA_MetricsAndHypotheses`, `ICA_MultiTableQueries*` ×2, `InsertAndUpdate`, `IntroToCourse`, `IntroToFlowcharting`, `ITInfrastructure`, `MultiTableQueries` ×2, `NetPresentValue`) and 2 for SRT files that were previously skipped (`DATA2100_SQLGroupBy_Part2`, `DATA2100_SQLHaving`). Video `source_url` fields are left `null` for manual entry.
+- **`get_or_create_video` in `ingest.py` is now idempotent on `source_url`:** On re-ingest, if a video row already exists its `source_url` and `transcript_path` are updated to reflect the latest sidecar, so adding a URL later and re-running ingest propagates it to the DB.
+- **Video deep-link wired end-to-end:** `source_url` is now selected in `backend/retrieval.py`, passed through `backend/answer.py` sources, and exposed as an optional field in the `Source` Pydantic model in `backend/main.py`.
+- **Frontend source cards show a "Watch at MM:SS" button** when `source_url` is present. Clicking it opens the Kaltura player in a new tab at the exact timestamp of the cited chunk via the `?playFrom=<seconds>` query parameter.
+- **New `scripts/sync_source_urls.py`:** lightweight utility that reads `source_url` from all JSON sidecar files and pushes the values into the `videos` table — no re-embedding required. Use this any time you add or update a video link in a sidecar without wanting to run a full ingest.
+- Updated `README.md` to reflect DFXP support, the `DATA2100/` / `IS3600/` subfolder layout, the new `sync_source_urls.py` script, and removed stale "Source URL support" future-improvement item.
+
 ## 2026-07-16 (Phase 6 — post-phase fixes)
 
 - Added distance threshold to `backend/retrieval.py` (`MAX_RETRIEVAL_DISTANCE=0.65`, tunable via env). Questions with no relevant match no longer trigger an LLM call — saves tokens on off-topic questions.
