@@ -1,0 +1,1005 @@
+1
+00:00:01,600 --> 00:00:02,780
+INSTRUCTOR: Hello, vizzers.
+
+2
+00:00:02,780 --> 00:00:09,260
+This is a design challenge
+starter for the birthdays chart.
+
+3
+00:00:09,260 --> 00:00:13,900
+So let's go ahead and take
+a look at the assignment.
+
+4
+00:00:20,720 --> 00:00:27,860
+OK, so you have the opportunity
+to select one of these choices.
+
+5
+00:00:27,860 --> 00:00:29,440
+They may be updated
+and different,
+
+6
+00:00:29,440 --> 00:00:32,880
+as I'm always including
+some new challenges here.
+
+7
+00:00:32,880 --> 00:00:35,240
+But we're going to take
+a look at the birthday 1,
+
+8
+00:00:35,240 --> 00:00:37,903
+where it asks, how
+common is your birthday?
+
+9
+00:00:37,903 --> 00:00:39,320
+There's a little
+bit of background
+
+10
+00:00:39,320 --> 00:00:43,480
+reading to get context,
+and there is the CSV file.
+
+11
+00:00:43,480 --> 00:00:47,980
+It is only looking at
+births from 1994 to 2014.
+
+12
+00:00:47,980 --> 00:00:50,960
+I'm hoping you are
+all in that age range
+
+13
+00:00:50,960 --> 00:00:53,460
+and are that birth range.
+
+14
+00:00:53,460 --> 00:00:57,040
+And then here are
+two visualizations
+
+15
+00:00:57,040 --> 00:00:58,780
+that have been created.
+
+16
+00:00:58,780 --> 00:01:00,380
+So we're going to
+recreate this one,
+
+17
+00:01:00,380 --> 00:01:04,930
+and then we're going to do
+some other explorations.
+
+18
+00:01:04,930 --> 00:01:07,350
+So let's go ahead
+and minimize this.
+
+19
+00:01:11,490 --> 00:01:15,130
+And I've already brought
+in the data into Tableau.
+
+20
+00:01:15,130 --> 00:01:17,970
+And one of the things, I
+just want to look at the data
+
+21
+00:01:17,970 --> 00:01:19,150
+to see what we've got.
+
+22
+00:01:19,150 --> 00:01:20,930
+We've got the year here.
+
+23
+00:01:20,930 --> 00:01:27,290
+I've got 7,670 rows, 5 fields.
+
+24
+00:01:27,290 --> 00:01:31,650
+I can see I've got my birth
+month, my date of birth,
+
+25
+00:01:31,650 --> 00:01:34,030
+my day of week, and my birth.
+
+26
+00:01:34,030 --> 00:01:40,450
+So I think I'm going to rename
+this one to just say date.
+
+27
+00:01:40,450 --> 00:01:42,690
+That makes a little more sense.
+
+28
+00:01:42,690 --> 00:01:49,790
+Day of week, what this means
+is that, if it's a number 1,
+
+29
+00:01:49,790 --> 00:01:51,930
+that is a Sunday.
+
+30
+00:01:51,930 --> 00:01:54,650
+Number 2 is a Monday.
+
+31
+00:01:54,650 --> 00:01:57,250
+Number 3 is a Tuesday.
+
+32
+00:01:57,250 --> 00:02:00,310
+So number 7 would
+be that Saturday.
+
+33
+00:02:00,310 --> 00:02:03,130
+And then the number
+of births, OK great.
+
+34
+00:02:03,130 --> 00:02:05,270
+I'd like to create
+one more field,
+
+35
+00:02:05,270 --> 00:02:07,510
+and I'm going to do that
+here in the data source.
+
+36
+00:02:07,510 --> 00:02:10,009
+What I'm going to do is
+just do a drop down anywhere
+
+37
+00:02:10,009 --> 00:02:12,290
+and do a calculated field.
+
+38
+00:02:12,290 --> 00:02:16,650
+And I'm going to call this one
+DATE, and what I want to do
+
+39
+00:02:16,650 --> 00:02:20,650
+is use a function
+called MAKEDATE.
+
+40
+00:02:20,650 --> 00:02:25,170
+And I'm going to
+just add in the year.
+
+41
+00:02:25,170 --> 00:02:29,390
+And then I'll do comma,
+and then I'll do the month.
+
+42
+00:02:31,930 --> 00:02:34,290
+And oops.
+
+43
+00:02:34,290 --> 00:02:40,650
+And then I'll do day-- oh,
+I think I called that Date.
+
+44
+00:02:40,650 --> 00:02:42,270
+OK, I think I want
+to call that date.
+
+45
+00:02:42,270 --> 00:02:43,910
+OK, so this is valid.
+
+46
+00:02:43,910 --> 00:02:46,330
+But I'm going to redo
+this because that's
+
+47
+00:02:46,330 --> 00:02:47,790
+going to get confusing.
+
+48
+00:02:47,790 --> 00:02:49,450
+So I'm going to call that Day.
+
+49
+00:02:49,450 --> 00:02:53,190
+Now, my calculation
+might be off.
+
+50
+00:02:53,190 --> 00:02:54,670
+So let me go up and change it.
+
+51
+00:02:54,670 --> 00:02:55,170
+Great.
+
+52
+00:02:55,170 --> 00:02:56,110
+OK, fantastic
+
+53
+00:02:56,110 --> 00:02:57,432
+So now, I've got that.
+
+54
+00:02:57,432 --> 00:02:59,390
+And you can see that it's
+called a calculation.
+
+55
+00:02:59,390 --> 00:03:01,410
+So you can create it right
+here in the Data pane
+
+56
+00:03:01,410 --> 00:03:02,913
+or on the sheet.
+
+57
+00:03:02,913 --> 00:03:04,330
+So what we're going
+to do is we're
+
+58
+00:03:04,330 --> 00:03:06,890
+going to go to the
+very first worksheet
+
+59
+00:03:06,890 --> 00:03:11,120
+here and recreate that original.
+
+60
+00:03:11,120 --> 00:03:16,280
+So let's go ahead, and I'm
+going to put down the OG here.
+
+61
+00:03:16,280 --> 00:03:21,420
+So what we'll do is we're
+going to go ahead and bring Day
+
+62
+00:03:21,420 --> 00:03:26,780
+onto column, and we're
+going to bring our month.
+
+63
+00:03:26,780 --> 00:03:33,860
+And we're going to
+change that to a--
+
+64
+00:03:33,860 --> 00:03:34,740
+let's go.
+
+65
+00:03:34,740 --> 00:03:36,780
+Actually, you know
+what I want to do
+
+66
+00:03:36,780 --> 00:03:41,340
+is I'm going to first
+select all of these.
+
+67
+00:03:41,340 --> 00:03:46,260
+And I'm going to change
+them all to discrete.
+
+68
+00:03:46,260 --> 00:03:50,060
+So now, they've gone from
+that green to that blue.
+
+69
+00:03:50,060 --> 00:03:52,900
+Now, I'm going to
+bring in that day,
+
+70
+00:03:52,900 --> 00:03:58,300
+and then I'm going
+to bring in the date,
+
+71
+00:03:58,300 --> 00:04:01,240
+and you can already see how
+it's behaving differently,
+
+72
+00:04:01,240 --> 00:04:04,540
+and I'm going to
+go to month here.
+
+73
+00:04:04,540 --> 00:04:07,720
+So now, I've got
+the 1 through 31.
+
+74
+00:04:07,720 --> 00:04:10,470
+Let's actually fit this
+into the tire review
+
+75
+00:04:10,470 --> 00:04:12,130
+here so you can see that.
+
+76
+00:04:12,130 --> 00:04:21,790
+31 and then what I want to do
+is bring in my average births
+
+77
+00:04:21,790 --> 00:04:23,570
+onto color.
+
+78
+00:04:23,570 --> 00:04:28,030
+So now, I've got this
+big field of blue.
+
+79
+00:04:28,030 --> 00:04:31,190
+But I don't want
+to deal with sum.
+
+80
+00:04:31,190 --> 00:04:32,767
+I want to do an average.
+
+81
+00:04:32,767 --> 00:04:34,350
+So I'm going to
+change the aggregation
+
+82
+00:04:34,350 --> 00:04:36,270
+from the default to average.
+
+83
+00:04:36,270 --> 00:04:38,790
+So you can already see
+some things lighting up.
+
+84
+00:04:38,790 --> 00:04:41,290
+This color palette is
+not working for me.
+
+85
+00:04:41,290 --> 00:04:43,270
+I'm going to go ahead
+and drag this over here.
+
+86
+00:04:43,270 --> 00:04:46,030
+So I'm going to go ahead and
+change that color palette
+
+87
+00:04:46,030 --> 00:04:47,892
+to something different.
+
+88
+00:04:47,892 --> 00:04:49,350
+Now, I could create
+a color palette
+
+89
+00:04:49,350 --> 00:04:53,150
+similar to what the example
+was with the different shades
+
+90
+00:04:53,150 --> 00:04:54,670
+of pink and purple.
+
+91
+00:04:54,670 --> 00:04:59,870
+But I think what I
+want to do is to do--
+
+92
+00:04:59,870 --> 00:05:05,550
+we'll do maybe a
+diverging palette here,
+
+93
+00:05:05,550 --> 00:05:08,850
+and let's just go ahead and
+apply that so I can see,
+
+94
+00:05:08,850 --> 00:05:10,250
+not a lot of differences.
+
+95
+00:05:10,250 --> 00:05:14,270
+So I think what I want
+to do is do a stepped.
+
+96
+00:05:14,270 --> 00:05:17,390
+Let's do like 9.
+
+97
+00:05:17,390 --> 00:05:19,590
+OK, I'm actually
+going to reverse this
+
+98
+00:05:19,590 --> 00:05:22,830
+so I can have the
+red on this side.
+
+99
+00:05:22,830 --> 00:05:32,870
+And so we've got 6,000 to--
+
+100
+00:05:32,870 --> 00:05:39,950
+I think what I want to do
+is change this and maybe
+
+101
+00:05:39,950 --> 00:05:42,150
+make this a little.
+
+102
+00:05:42,150 --> 00:05:48,950
+Change this from 9,000,
+and we'll do the end at 13.
+
+103
+00:05:48,950 --> 00:05:54,190
+OK, let's apply that.
+
+104
+00:05:54,190 --> 00:05:55,470
+OK, good, good, good.
+
+105
+00:05:55,470 --> 00:05:55,970
+All right.
+
+106
+00:05:55,970 --> 00:05:57,890
+So that's getting better.
+
+107
+00:05:57,890 --> 00:05:59,590
+So I can see some
+hot zones, which
+
+108
+00:05:59,590 --> 00:06:02,150
+will be those dark red
+and the lighter zones,
+
+109
+00:06:02,150 --> 00:06:04,750
+which will be that black.
+
+110
+00:06:04,750 --> 00:06:08,070
+So then I actually want to
+go back into this color.
+
+111
+00:06:08,070 --> 00:06:10,270
+I'm going to add
+a border in here.
+
+112
+00:06:10,270 --> 00:06:11,370
+So now it's automatic.
+
+113
+00:06:11,370 --> 00:06:13,470
+And now I'm going to do
+just that white border.
+
+114
+00:06:13,470 --> 00:06:14,970
+OK.
+
+115
+00:06:14,970 --> 00:06:17,520
+So That's looking
+a lot more similar
+
+116
+00:06:17,520 --> 00:06:21,773
+to what the OG look like, except
+just a different color palette.
+
+117
+00:06:21,773 --> 00:06:23,440
+Now, you can go ahead
+and play with this
+
+118
+00:06:23,440 --> 00:06:24,960
+when you get into
+your design realm
+
+119
+00:06:24,960 --> 00:06:28,680
+to maybe add in a different
+kind of color palette.
+
+120
+00:06:28,680 --> 00:06:30,560
+But what you can
+see right here is
+
+121
+00:06:30,560 --> 00:06:35,340
+I've got a lot of this red
+here in September and in here,
+
+122
+00:06:35,340 --> 00:06:39,040
+and then fewer births
+in these darker months.
+
+123
+00:06:39,040 --> 00:06:43,320
+OK, so that, we've
+got the OG made.
+
+124
+00:06:43,320 --> 00:06:45,440
+So step number 1.
+
+125
+00:06:45,440 --> 00:06:47,220
+Now, we're going to
+do some wild cards.
+
+126
+00:06:47,220 --> 00:06:49,960
+And I want to do a
+couple of wild cards
+
+127
+00:06:49,960 --> 00:06:52,600
+because making charts is fun.
+
+128
+00:06:52,600 --> 00:06:55,140
+So here's wild card number one.
+
+129
+00:06:55,140 --> 00:06:58,680
+This is the exploration for
+some different chart types.
+
+130
+00:06:58,680 --> 00:07:02,400
+I'm going to go ahead and
+bring in day of the week here.
+
+131
+00:07:02,400 --> 00:07:05,000
+And I'm interested
+to see if there's
+
+132
+00:07:05,000 --> 00:07:08,080
+some sort of days of the week
+that more babies are born
+
+133
+00:07:08,080 --> 00:07:09,260
+during this period of time.
+
+134
+00:07:09,260 --> 00:07:13,120
+So I'll bring in those
+births right here.
+
+135
+00:07:13,120 --> 00:07:18,440
+So now what I see remember
+that this is the Sunday,
+
+136
+00:07:18,440 --> 00:07:20,560
+and this is Saturday.
+
+137
+00:07:20,560 --> 00:07:23,380
+So not as many
+birthdays on Friday.
+
+138
+00:07:23,380 --> 00:07:26,000
+That's kind of interesting.
+
+139
+00:07:26,000 --> 00:07:27,620
+More in the middle of the week.
+
+140
+00:07:27,620 --> 00:07:32,520
+I suspect this might have to
+do with OB/GYNs and their work
+
+141
+00:07:32,520 --> 00:07:33,140
+schedule.
+
+142
+00:07:33,140 --> 00:07:34,060
+But I don't know.
+
+143
+00:07:34,060 --> 00:07:36,220
+Anyway, that's an
+interesting wild card,
+
+144
+00:07:36,220 --> 00:07:39,960
+and you could run with that a
+little bit more if you want to.
+
+145
+00:07:39,960 --> 00:07:43,120
+I'm going to continue to make
+another wild card with you just
+
+146
+00:07:43,120 --> 00:07:45,880
+because this is so much fun.
+
+147
+00:07:45,880 --> 00:07:50,280
+Of course, you can
+go to something--
+
+148
+00:07:50,280 --> 00:07:51,780
+you can do something
+else right now,
+
+149
+00:07:51,780 --> 00:07:54,160
+or you can continue to
+watch my exploration.
+
+150
+00:07:54,160 --> 00:07:58,480
+I'm going to bring
+my date in here,
+
+151
+00:07:58,480 --> 00:08:00,700
+and I think I'm going
+to look at the month.
+
+152
+00:08:00,700 --> 00:08:03,640
+We'll look at months, and we'll
+look at months and births.
+
+153
+00:08:03,640 --> 00:08:05,580
+And let's see if
+there's a certain birth.
+
+154
+00:08:05,580 --> 00:08:08,640
+Let's go ahead and we're going
+to jump to a bar chart for this
+
+155
+00:08:08,640 --> 00:08:09,140
+too.
+
+156
+00:08:09,140 --> 00:08:10,340
+But you could do a line.
+
+157
+00:08:13,480 --> 00:08:18,400
+In terms of total births
+over the whole data set,
+
+158
+00:08:18,400 --> 00:08:19,830
+it's pretty similar.
+
+159
+00:08:19,830 --> 00:08:23,970
+You do have a drop in February,
+but that has fewer days anyway.
+
+160
+00:08:23,970 --> 00:08:29,010
+And July and August seem to
+be tipping the scales here
+
+161
+00:08:29,010 --> 00:08:32,230
+with a dip in
+November and in April.
+
+162
+00:08:32,230 --> 00:08:33,929
+So that's kind of interesting.
+
+163
+00:08:33,929 --> 00:08:36,929
+Could be worth exploring.
+
+164
+00:08:36,929 --> 00:08:39,830
+All right, maybe I'm
+having too much fun,
+
+165
+00:08:39,830 --> 00:08:42,049
+so I'm going to keep going.
+
+166
+00:08:42,049 --> 00:08:46,450
+We'll do another Wildcard 3.
+
+167
+00:08:46,450 --> 00:08:48,970
+And for this one, I'm
+interested in looking at some
+
+168
+00:08:48,970 --> 00:08:50,970
+of that continuous data.
+
+169
+00:08:50,970 --> 00:08:54,170
+So let's go ahead and bring in--
+
+170
+00:08:54,170 --> 00:08:55,970
+let's do date.
+
+171
+00:08:55,970 --> 00:08:59,570
+Let's Stick with the month.
+
+172
+00:08:59,570 --> 00:09:07,150
+But let's make that
+continuous, I think.
+
+173
+00:09:07,150 --> 00:09:10,310
+And then let me change that.
+
+174
+00:09:10,310 --> 00:09:13,950
+Let's look at births here.
+
+175
+00:09:13,950 --> 00:09:15,310
+No, that's not going to work.
+
+176
+00:09:15,310 --> 00:09:22,260
+Let's go for-- there we
+go, let's just change that.
+
+177
+00:09:22,260 --> 00:09:26,240
+So this is interesting because
+you've got these peaks.
+
+178
+00:09:26,240 --> 00:09:30,740
+August, August I could
+put a mark on that.
+
+179
+00:09:30,740 --> 00:09:31,860
+See.
+
+180
+00:09:31,860 --> 00:09:35,560
+Mark that, although that's
+not the peak right there.
+
+181
+00:09:35,560 --> 00:09:37,580
+Over here is more of the peak.
+
+182
+00:09:37,580 --> 00:09:42,980
+So let me show that
+one, so interesting.
+
+183
+00:09:42,980 --> 00:09:48,420
+So August, July,
+OK, interesting.
+
+184
+00:09:48,420 --> 00:09:54,160
+Potential insight, let me do
+a Wildcard 4 just for giggles.
+
+185
+00:09:54,160 --> 00:09:57,220
+I want to do one more with you.
+
+186
+00:09:57,220 --> 00:09:59,698
+And this one's
+called a Cycle Chart.
+
+187
+00:09:59,698 --> 00:10:01,240
+So very similar to
+what I did before.
+
+188
+00:10:01,240 --> 00:10:03,580
+But we're going to do
+it a little differently.
+
+189
+00:10:03,580 --> 00:10:06,420
+We're going to go
+and take those date.
+
+190
+00:10:06,420 --> 00:10:07,720
+We're going to keep the.
+
+191
+00:10:10,460 --> 00:10:13,420
+Discreet, and we'll do month.
+
+192
+00:10:13,420 --> 00:10:16,540
+And then I'll bring
+date on again.
+
+193
+00:10:16,540 --> 00:10:19,960
+And let's keep the year.
+
+194
+00:10:19,960 --> 00:10:21,260
+That's good.
+
+195
+00:10:21,260 --> 00:10:26,260
+And then, on rows,
+let's go do that rows.
+
+196
+00:10:26,260 --> 00:10:27,640
+See if we've got that.
+
+197
+00:10:27,640 --> 00:10:30,580
+Let's fit that in
+the entire view.
+
+198
+00:10:30,580 --> 00:10:32,760
+So now, we've got those bumps.
+
+199
+00:10:32,760 --> 00:10:36,300
+But now, it's looking
+at January and then
+
+200
+00:10:36,300 --> 00:10:38,740
+all the years are in there.
+
+201
+00:10:38,740 --> 00:10:40,037
+So that could be interesting.
+
+202
+00:10:40,037 --> 00:10:41,620
+One of the things
+that I think is good
+
+203
+00:10:41,620 --> 00:10:44,820
+for a cycle chart is to
+go into the Analytics pane
+
+204
+00:10:44,820 --> 00:10:50,060
+and bring in the average line,
+and let's put it by pane.
+
+205
+00:10:50,060 --> 00:10:52,260
+So now, I can really--
+
+206
+00:10:52,260 --> 00:10:55,780
+I can see there's a
+huge dip in February
+
+207
+00:10:55,780 --> 00:10:57,600
+in terms of those averages.
+
+208
+00:10:57,600 --> 00:11:01,260
+It's just a different way
+of looking at the data maybe
+
+209
+00:11:01,260 --> 00:11:05,460
+getting some insights into
+some of those averages.
+
+210
+00:11:05,460 --> 00:11:09,140
+OK, so now, your
+final chart will
+
+211
+00:11:09,140 --> 00:11:12,860
+be to select one of these
+ones that I've created
+
+212
+00:11:12,860 --> 00:11:15,140
+or that you've
+created from the OG
+
+213
+00:11:15,140 --> 00:11:18,660
+to your wild cards all the
+way to your designed one.
+
+214
+00:11:18,660 --> 00:11:20,580
+And you'll just lift
+one of these up,
+
+215
+00:11:20,580 --> 00:11:23,180
+and you'll apply
+design principles
+
+216
+00:11:23,180 --> 00:11:25,480
+to create an awesome chart.
+
+217
+00:11:25,480 --> 00:11:27,750
+So happy vizzing.

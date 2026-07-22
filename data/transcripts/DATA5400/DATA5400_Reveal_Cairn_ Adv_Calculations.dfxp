@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>410379142 - 1_rkj3e9t7 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.040" end="00:00:06.320" tts:direction="ltr">Hello visitors. This is a reveal video for
+<br />the calculations.</p>
+        <p begin="00:00:06.320" end="00:00:09.540" tts:direction="ltr">Karen, you should be seeing three tabs</p>
+        <p begin="00:00:09.540" end="00:00:13.640" tts:direction="ltr">along the bottom with some charts that are
+<br />already created.</p>
+        <p begin="00:00:13.640" end="00:00:16.180" tts:direction="ltr">These are mid level to</p>
+        <p begin="00:00:16.180" end="00:00:21.180" tts:direction="ltr">advanced charts are using a couple of
+<br />different datasets.</p>
+        <p begin="00:00:21.180" end="00:00:24.740" tts:direction="ltr">Here we'll start with this first one where
+<br />it says cities with</p>
+        <p begin="00:00:24.740" end="00:00:29.940" tts:direction="ltr">1,000 to 2000 metals and you should be on
+<br />the all metalist dataset.</p>
+        <p begin="00:00:29.940" end="00:00:32.300" tts:direction="ltr">That's the one that should be selected.</p>
+        <p begin="00:00:32.300" end="00:00:34.760" tts:direction="ltr">Now just to review,</p>
+        <p begin="00:00:34.760" end="00:00:40.980" tts:direction="ltr">we've got metals on columns and we've used
+<br />the count aggregation here.</p>
+        <p begin="00:00:40.980" end="00:00:43.200" tts:direction="ltr">Okay, Note that.</p>
+        <p begin="00:00:43.200" end="00:00:46.640" tts:direction="ltr">And then we also have city on rows, okay.</p>
+        <p begin="00:00:46.640" end="00:00:50.080" tts:direction="ltr">Then we also have that count on metal on
+<br />color,</p>
+        <p begin="00:00:50.080" end="00:00:52.740" tts:direction="ltr">and that's where we see this diverging
+<br />pellet that the</p>
+        <p begin="00:00:52.740" end="00:00:55.760" tts:direction="ltr">fewer metals than the lighter the color.</p>
+        <p begin="00:00:55.760" end="00:01:00.100" tts:direction="ltr">Okay. The question is we want to determine</p>
+        <p begin="00:01:00.100" end="00:01:05.360" tts:direction="ltr">which cities have 11000 or more metals,</p>
+        <p begin="00:01:05.360" end="00:01:07.220" tts:direction="ltr">but no more than 2000 metals.</p>
+        <p begin="00:01:07.220" end="00:01:09.580" tts:direction="ltr">Now we could probably do,</p>
+        <p begin="00:01:10.940" end="00:01:14.400" tts:direction="ltr">there's a lot of different ways to go
+<br />about this,</p>
+        <p begin="00:01:14.400" end="00:01:16.880" tts:direction="ltr">but what we're going to do is create a
+<br />calculation.</p>
+        <p begin="00:01:16.880" end="00:01:20.340" tts:direction="ltr">To do this, the very first and easier way</p>
+        <p begin="00:01:20.340" end="00:01:24.020" tts:direction="ltr">is we're going to create a calculation
+<br />with a filter.</p>
+        <p begin="00:01:24.020" end="00:01:29.180" tts:direction="ltr">We'll do that by dragging city onto
+<br />filters.</p>
+        <p begin="00:01:30.580" end="00:01:34.640" tts:direction="ltr">We will then give Teplo</p>
+        <p begin="00:01:34.640" end="00:01:41.000" tts:direction="ltr">a minute and you can see here's all those
+<br />cities which again not gigantic.</p>
+        <p begin="00:01:41.000" end="00:01:45.200" tts:direction="ltr">This is an exercise and with a smaller
+<br />dataset.</p>
+        <p begin="00:01:45.200" end="00:01:51.340" tts:direction="ltr">But we want to go into a condition we're
+<br />going to do by non do by field,</p>
+        <p begin="00:01:51.340" end="00:01:54.660" tts:direction="ltr">which you could do by top ten and whatever
+<br />field that is,</p>
+        <p begin="00:01:54.660" end="00:01:59.460" tts:direction="ltr">but by formula we're going to do a
+<br />calculation here in the filter.</p>
+        <p begin="00:01:59.460" end="00:02:01.780" tts:direction="ltr">What we're going to do is we're going to
+<br />do at,</p>
+        <p begin="00:02:01.780" end="00:02:04.020" tts:direction="ltr">you can start typing count.</p>
+        <p begin="00:02:04.020" end="00:02:08.300" tts:direction="ltr">Then the field we're going to use as metal
+<br />the,</p>
+        <p begin="00:02:08.300" end="00:02:12.440" tts:direction="ltr">we need to find those that are greater</p>
+        <p begin="00:02:12.440" end="00:02:20.340" tts:direction="ltr">1,000 we'll just greater than 1,000 We're
+<br />going to do count.</p>
+        <p begin="00:02:20.740" end="00:02:23.820" tts:direction="ltr">We're going to do a metal again.</p>
+        <p begin="00:02:23.820" end="00:02:30.020" tts:direction="ltr">I bet you guessed it, less than or equal
+<br />to 2000.</p>
+        <p begin="00:02:30.860" end="00:02:34.900" tts:direction="ltr">Okay. We have that simple calculation.</p>
+        <p begin="00:02:34.900" end="00:02:36.540" tts:direction="ltr">When we click okay,</p>
+        <p begin="00:02:36.540" end="00:02:41.160" tts:direction="ltr">then we're going to see that my view is
+<br />changed.</p>
+        <p begin="00:02:41.160" end="00:02:43.880" tts:direction="ltr">Now I've got Tokyo, Mexico,</p>
+        <p begin="00:02:43.880" end="00:02:47.060" tts:direction="ltr">Munich, Antwerp, all of these cities fit
+<br />within this.</p>
+        <p begin="00:02:47.060" end="00:02:51.280" tts:direction="ltr">Now I do have this on details so that you
+<br />can see that.</p>
+        <p begin="00:02:51.280" end="00:02:57.160" tts:direction="ltr">But if I had a hundreds of different
+<br />cities,</p>
+        <p begin="00:02:57.160" end="00:03:00.720" tts:direction="ltr">then this would make them a bit smaller.</p>
+        <p begin="00:03:00.720" end="00:03:02.760" tts:direction="ltr">Now, the question that you can answer is,</p>
+        <p begin="00:03:02.760" end="00:03:04.460" tts:direction="ltr">how many does Tokyo have?</p>
+        <p begin="00:03:04.460" end="00:03:08.100" tts:direction="ltr">Okay, let's go on to number two,</p>
+        <p begin="00:03:08.100" end="00:03:14.600" tts:direction="ltr">which is another practice to see how we
+<br />can use the filters again,</p>
+        <p begin="00:03:14.600" end="00:03:20.260" tts:direction="ltr">this one is to determine which athletes
+<br />have at least one silver metal.</p>
+        <p begin="00:03:20.260" end="00:03:26.420" tts:direction="ltr">Now this list is much longer than our
+<br />cities one.</p>
+        <p begin="00:03:26.420" end="00:03:30.260" tts:direction="ltr">You can see again metal is on columns,</p>
+        <p begin="00:03:30.260" end="00:03:34.200" tts:direction="ltr">athlete is on row, we're still on this all
+<br />metal ist dataset here.</p>
+        <p begin="00:03:34.200" end="00:03:36.440" tts:direction="ltr">I've got metal on color,</p>
+        <p begin="00:03:36.440" end="00:03:39.920" tts:direction="ltr">then the count of metals on my label.</p>
+        <p begin="00:03:39.920" end="00:03:42.080" tts:direction="ltr">That's where these come from.</p>
+        <p begin="00:03:42.080" end="00:03:48.300" tts:direction="ltr">Again, I always think it's great to take
+<br />the engine apart, if you will,</p>
+        <p begin="00:03:48.300" end="00:03:51.520" tts:direction="ltr">to see how this was created so that you
+<br />could recreate it if you needed</p>
+        <p begin="00:03:51.520" end="00:03:55.240" tts:direction="ltr">to and just play with these examples that
+<br />I'm giving you.</p>
+        <p begin="00:03:55.240" end="00:03:58.020" tts:direction="ltr">But for this one to answer this question,</p>
+        <p begin="00:03:58.020" end="00:03:59.760" tts:direction="ltr">we're going to go ahead and drag</p>
+        <p begin="00:03:59.760" end="00:04:03.780" tts:direction="ltr">athlete to our filters because that's who
+<br />we're trying to figure out.</p>
+        <p begin="00:04:03.780" end="00:04:09.080" tts:direction="ltr">I bet you know where we're going,
+<br />condition by formula.</p>
+        <p begin="00:04:09.080" end="00:04:12.820" tts:direction="ltr">And I'm going to let you think about this
+<br />for just a second</p>
+        <p begin="00:04:12.820" end="00:04:17.300" tts:direction="ltr">before I tell you what that calculation
+<br />is.</p>
+        <p begin="00:04:17.980" end="00:04:20.860" tts:direction="ltr">You may not be as familiar with this one.</p>
+        <p begin="00:04:20.860" end="00:04:24.600" tts:direction="ltr">Let me put that in the max.</p>
+        <p begin="00:04:24.600" end="00:04:30.480" tts:direction="ltr">I'm looking for the max and I've got an if
+<br />then statement here.</p>
+        <p begin="00:04:30.480" end="00:04:34.340" tts:direction="ltr">I am saying if a medal is silver,</p>
+        <p begin="00:04:34.340" end="00:04:37.300" tts:direction="ltr">then that's going to be true, right?</p>
+        <p begin="00:04:37.300" end="00:04:39.060" tts:direction="ltr">Else it will be false.</p>
+        <p begin="00:04:39.060" end="00:04:43.920" tts:direction="ltr">Okay. That is what I'm trying to get to,</p>
+        <p begin="00:04:43.920" end="00:04:48.200" tts:direction="ltr">to see which athletes have at least one
+<br />silver medal.</p>
+        <p begin="00:04:48.200" end="00:04:50.020" tts:direction="ltr">That's my number one.</p>
+        <p begin="00:04:50.020" end="00:04:53.640" tts:direction="ltr">Okay. If I put okay on that,</p>
+        <p begin="00:04:53.640" end="00:04:59.360" tts:direction="ltr">then I can see that this particular field
+<br />will be full all the way down.</p>
+        <p begin="00:04:59.360" end="00:05:01.440" tts:direction="ltr">Okay, That's still a lot.</p>
+        <p begin="00:05:01.440" end="00:05:08.440" tts:direction="ltr">The question is, how many silver medals
+<br />does Shirley Favor Babahoff have?</p>
+        <p begin="00:05:08.440" end="00:05:10.220" tts:direction="ltr">Rather than trying to scroll down,</p>
+        <p begin="00:05:10.220" end="00:05:13.140" tts:direction="ltr">what I can do is I can go back into this
+<br />filter.</p>
+        <p begin="00:05:13.140" end="00:05:18.420" tts:direction="ltr">Now I can select from the list and I can
+<br />say none here.</p>
+        <p begin="00:05:18.420" end="00:05:22.785" tts:direction="ltr">And I can enter in Babshofs</p>
+        <p begin="00:05:22.785" end="00:05:27.950" tts:direction="ltr">Name and select her and say, okay,</p>
+        <p begin="00:05:27.950" end="00:05:34.130" tts:direction="ltr">now I can see specifically that she's got
+<br />two gold medals and six silver ones.</p>
+        <p begin="00:05:34.130" end="00:05:40.790" tts:direction="ltr">Okay. Just a great way to use filters and
+<br />also calculations.</p>
+        <p begin="00:05:40.790" end="00:05:46.290" tts:direction="ltr">Now my last one is a little bit</p>
+        <p begin="00:05:46.290" end="00:05:51.570" tts:direction="ltr">different because here we're going to be
+<br />using an actual calculated field.</p>
+        <p begin="00:05:51.570" end="00:05:59.370" tts:direction="ltr">Remember that calculated fields add new
+<br />data to our data source.</p>
+        <p begin="00:05:59.370" end="00:06:01.650" tts:direction="ltr">It's actually creating a calculation and</p>
+        <p begin="00:06:01.650" end="00:06:04.730" tts:direction="ltr">adding that so I can use it across sheets.</p>
+        <p begin="00:06:04.730" end="00:06:08.450" tts:direction="ltr">If it were to export or extract my data,
+<br />it would go with it.</p>
+        <p begin="00:06:08.450" end="00:06:13.390" tts:direction="ltr">In this case, we're going to compare year
+<br />to date sales,</p>
+        <p begin="00:06:13.390" end="00:06:15.410" tts:direction="ltr">again, the time frame.</p>
+        <p begin="00:06:15.410" end="00:06:17.670" tts:direction="ltr">And we're going to go to the sample
+<br />superstore.</p>
+        <p begin="00:06:17.670" end="00:06:19.550" tts:direction="ltr">You should be on the sample superstore,</p>
+        <p begin="00:06:19.550" end="00:06:22.490" tts:direction="ltr">you've already got this bar chart</p>
+        <p begin="00:06:22.490" end="00:06:25.770" tts:direction="ltr">where I've got year showing the order
+<br />dates here.</p>
+        <p begin="00:06:25.770" end="00:06:28.630" tts:direction="ltr">Then I have some of sales and some of
+<br />sales,</p>
+        <p begin="00:06:28.630" end="00:06:31.430" tts:direction="ltr">I have two charts.</p>
+        <p begin="00:06:31.430" end="00:06:37.330" tts:direction="ltr">But this particular bar chart has a quick
+<br />table calculation.</p>
+        <p begin="00:06:37.330" end="00:06:38.990" tts:direction="ltr">Oh, let's see.</p>
+        <p begin="00:06:38.990" end="00:06:40.730" tts:direction="ltr">Sorry about that. There we go.</p>
+        <p begin="00:06:40.730" end="00:06:42.980" tts:direction="ltr">I meant to do that drop down there.</p>
+        <p begin="00:06:42.980" end="00:06:47.970" tts:direction="ltr">It has a quick table calculation of year
+<br />over year growth.</p>
+        <p begin="00:06:47.970" end="00:06:51.270" tts:direction="ltr">And it's computing using order date.</p>
+        <p begin="00:06:51.270" end="00:06:56.930" tts:direction="ltr">That's how you get these particular
+<br />inferences.</p>
+        <p begin="00:06:56.930" end="00:07:01.070" tts:direction="ltr">This is great because often it's important
+<br />to see this in percentage.</p>
+        <p begin="00:07:01.070" end="00:07:05.730" tts:direction="ltr">Now I have my actual and then I can see my
+<br />percentage that this was at loss.</p>
+        <p begin="00:07:05.730" end="00:07:07.270" tts:direction="ltr">What I'm going to do is create</p>
+        <p begin="00:07:07.270" end="00:07:12.650" tts:direction="ltr">a calculated field that's going to help me
+<br />see a little more detail into this.</p>
+        <p begin="00:07:12.650" end="00:07:16.630" tts:direction="ltr">And I'm going to do that by doing the drop
+<br />down carrot right here.</p>
+        <p begin="00:07:16.630" end="00:07:19.430" tts:direction="ltr">A box should come up.</p>
+        <p begin="00:07:19.430" end="00:07:27.050" tts:direction="ltr">I want you to go ahead and name that year
+<br />to date or Okay.</p>
+        <p begin="00:07:27.050" end="00:07:32.350" tts:direction="ltr">And then the table calculation is actually
+<br />a little more complicated.</p>
+        <p begin="00:07:32.350" end="00:07:34.890" tts:direction="ltr">I will show you where that is,</p>
+        <p begin="00:07:34.890" end="00:07:36.730" tts:direction="ltr">but let me go through it.</p>
+        <p begin="00:07:36.730" end="00:07:43.490" tts:direction="ltr">It says if the month for the order date is
+<br />less than the month for today,</p>
+        <p begin="00:07:43.490" end="00:07:48.150" tts:direction="ltr">then that will be in the year to year to
+<br />date bucket.</p>
+        <p begin="00:07:48.150" end="00:07:52.530" tts:direction="ltr">Okay, the month and order date is equal to
+<br />the month and today.</p>
+        <p begin="00:07:52.530" end="00:07:58.870" tts:direction="ltr">Then if day and order date is equal to
+<br />today's day for today,</p>
+        <p begin="00:07:58.870" end="00:08:00.510" tts:direction="ltr">then it's still in the year to date.</p>
+        <p begin="00:08:00.510" end="00:08:03.430" tts:direction="ltr">It's grabbing all of that.</p>
+        <p begin="00:08:03.430" end="00:08:07.290" tts:direction="ltr">If it's none of those, then it'll be in
+<br />the future.</p>
+        <p begin="00:08:07.330" end="00:08:10.150" tts:direction="ltr">Let me go ahead and click Okay.</p>
+        <p begin="00:08:10.150" end="00:08:13.170" tts:direction="ltr">You'll see that it's been added to my data
+<br />pain.</p>
+        <p begin="00:08:13.170" end="00:08:18.770" tts:direction="ltr">Now to help you get accuracy on that
+<br />particular calculation,</p>
+        <p begin="00:08:18.770" end="00:08:21.530" tts:direction="ltr">if you go into worksheet and you show the
+<br />caption,</p>
+        <p begin="00:08:21.530" end="00:08:23.650" tts:direction="ltr">I've got that right there for you.</p>
+        <p begin="00:08:23.650" end="00:08:26.990" tts:direction="ltr">You can grab that by editing the caption,</p>
+        <p begin="00:08:26.990" end="00:08:31.090" tts:direction="ltr">and then you should be able to copy and
+<br />paste that.</p>
+        <p begin="00:08:31.090" end="00:08:35.070" tts:direction="ltr">Okay, now here's my secret.</p>
+        <p begin="00:08:35.070" end="00:08:38.230" tts:direction="ltr">I don't have calculations memorized.</p>
+        <p begin="00:08:38.230" end="00:08:41.190" tts:direction="ltr">I know whereabouts where I can look for
+<br />them.</p>
+        <p begin="00:08:41.190" end="00:08:43.510" tts:direction="ltr">I can create of course, short ones.</p>
+        <p begin="00:08:43.510" end="00:08:50.710" tts:direction="ltr">But I will often leverage tableaus
+<br />exhaustive list of different calculations.</p>
+        <p begin="00:08:50.710" end="00:08:53.730" tts:direction="ltr">And I will keep trying them or I'll bring
+<br />in fields.</p>
+        <p begin="00:08:53.730" end="00:08:56.070" tts:direction="ltr">It's a little trial and error but also
+<br />just</p>
+        <p begin="00:08:56.070" end="00:09:00.310" tts:direction="ltr">practice no true memorization I don't
+<br />think,</p>
+        <p begin="00:09:00.310" end="00:09:05.590" tts:direction="ltr">but knowing how to read these lines are
+<br />important.</p>
+        <p begin="00:09:05.590" end="00:09:10.170" tts:direction="ltr">I think that from your previous data
+<br />classes that these are familiar to you,</p>
+        <p begin="00:09:10.170" end="00:09:14.730" tts:direction="ltr">but maybe slightly different in terms of
+<br />what Tableau shows.</p>
+        <p begin="00:09:14.730" end="00:09:17.890" tts:direction="ltr">I'm going to go and close that caption out
+<br />here.</p>
+        <p begin="00:09:17.890" end="00:09:22.470" tts:direction="ltr">Now I'm going to drag this new field onto
+<br />filters.</p>
+        <p begin="00:09:22.470" end="00:09:25.830" tts:direction="ltr">I'm going to select year to date,</p>
+        <p begin="00:09:25.830" end="00:09:27.930" tts:direction="ltr">And I'm going to select, okay.</p>
+        <p begin="00:09:27.930" end="00:09:30.350" tts:direction="ltr">Now what it's done is it's gone ahead and</p>
+        <p begin="00:09:30.350" end="00:09:35.690" tts:direction="ltr">calculated percent difference in sales
+<br />from the previous year.</p>
+        <p begin="00:09:35.690" end="00:09:39.210" tts:direction="ltr">Okay? It's giving me</p>
+        <p begin="00:09:39.210" end="00:09:43.910" tts:direction="ltr">that new number and I'm asking you to look
+<br />at what 2023 says.</p>
+        <p begin="00:09:43.910" end="00:09:48.130" tts:direction="ltr">Okay? Hopefully you understand the power
+<br />of calculations.</p>
+        <p begin="00:09:48.130" end="00:09:51.570" tts:direction="ltr">We don't go into too many advanced
+<br />calculations in this course,</p>
+        <p begin="00:09:51.570" end="00:09:54.330" tts:direction="ltr">but your project might require you to do</p>
+        <p begin="00:09:54.330" end="00:09:58.090" tts:direction="ltr">a few calculations to better understand
+<br />the data.</p>
+        <p begin="00:09:58.090" end="00:10:01.570" tts:direction="ltr">And if so, you know that you can put
+<br />things within</p>
+        <p begin="00:10:01.570" end="00:10:04.950" tts:direction="ltr">the filter formula or you can create</p>
+        <p begin="00:10:04.950" end="00:10:09.530" tts:direction="ltr">a calculated field and apply that to your
+<br />project.</p>
+    </div>
+  </body>
+</tt>

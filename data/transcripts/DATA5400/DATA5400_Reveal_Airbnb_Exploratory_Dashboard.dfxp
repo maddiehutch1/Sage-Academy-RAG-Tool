@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>402727002 - 1_c9rec7b9 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.880" end="00:00:05.820" tts:direction="ltr">Hello data, 5,400 I thought I would share
+<br />with you</p>
+        <p begin="00:00:05.820" end="00:00:11.260" tts:direction="ltr">my approach to our Air B and B case study.</p>
+        <p begin="00:00:11.260" end="00:00:13.940" tts:direction="ltr">Just so that you have a place to check.</p>
+        <p begin="00:00:13.940" end="00:00:17.000" tts:direction="ltr">I know that I encourage you to talk to
+<br />your peers,</p>
+        <p begin="00:00:17.000" end="00:00:19.740" tts:direction="ltr">but this is where I ended up.</p>
+        <p begin="00:00:19.740" end="00:00:21.340" tts:direction="ltr">The first question was,</p>
+        <p begin="00:00:21.340" end="00:00:24.120" tts:direction="ltr">what is the number of new hosts per year?</p>
+        <p begin="00:00:24.120" end="00:00:30.040" tts:direction="ltr">If you remember, I did provide you with
+<br />some caption information.</p>
+        <p begin="00:00:30.040" end="00:00:32.380" tts:direction="ltr">Now that I'm looking at this, I need to
+<br />change,</p>
+        <p begin="00:00:32.380" end="00:00:34.620" tts:direction="ltr">make sure that's neighborhood and the
+<br />neighborhood</p>
+        <p begin="00:00:34.620" end="00:00:38.760" tts:direction="ltr">group just to make sure everything is nice
+<br />and tidy here.</p>
+        <p begin="00:00:38.760" end="00:00:42.260" tts:direction="ltr">But basically, I'm looking at that
+<br />neighborhood and that group that was</p>
+        <p begin="00:00:42.260" end="00:00:47.060" tts:direction="ltr">created to really identify the number of
+<br />new hosts.</p>
+        <p begin="00:00:47.060" end="00:00:49.560" tts:direction="ltr">Okay, I have that here.</p>
+        <p begin="00:00:49.560" end="00:00:52.220" tts:direction="ltr">I've got room on color,</p>
+        <p begin="00:00:52.220" end="00:00:55.660" tts:direction="ltr">I have my count on my tool tip,</p>
+        <p begin="00:00:55.660" end="00:00:58.320" tts:direction="ltr">and then I've done the two context
+<br />filters.</p>
+        <p begin="00:00:58.320" end="00:01:04.660" tts:direction="ltr">That was something else to keep in mind
+<br />that we've done to ensure that</p>
+        <p begin="00:01:04.660" end="00:01:07.100" tts:direction="ltr">these filters are first before</p>
+        <p begin="00:01:07.100" end="00:01:11.360" tts:direction="ltr">any dimension or measure filters on this
+<br />second one,</p>
+        <p begin="00:01:11.360" end="00:01:14.020" tts:direction="ltr">I'm going to go ahead and just hide that
+<br />caption.</p>
+        <p begin="00:01:14.020" end="00:01:17.705" tts:direction="ltr">What is the breakdown of rentals by room?</p>
+        <p begin="00:01:17.705" end="00:01:22.530" tts:direction="ltr">Here again, we have our filters and those
+<br />are still on context.</p>
+        <p begin="00:01:22.530" end="00:01:24.150" tts:direction="ltr">And then I can see here,</p>
+        <p begin="00:01:24.150" end="00:01:26.730" tts:direction="ltr">the room type entire home,</p>
+        <p begin="00:01:26.730" end="00:01:30.310" tts:direction="ltr">that was 53.846% I could</p>
+        <p begin="00:01:30.310" end="00:01:34.050" tts:direction="ltr">probably change that to not have three
+<br />decimal places,</p>
+        <p begin="00:01:34.050" end="00:01:36.010" tts:direction="ltr">that's probably a little excessive,</p>
+        <p begin="00:01:36.010" end="00:01:39.910" tts:direction="ltr">maybe just having one or rounding up to a
+<br />whole number.</p>
+        <p begin="00:01:39.910" end="00:01:44.470" tts:direction="ltr">Okay. Then the next question was</p>
+        <p begin="00:01:44.470" end="00:01:49.210" tts:direction="ltr">showing Bronx because I have this in my
+<br />dashboard, sorry about that.</p>
+        <p begin="00:01:49.210" end="00:01:53.990" tts:direction="ltr">So, let me go ahead and go back to refresh
+<br />that.</p>
+        <p begin="00:01:53.990" end="00:02:00.110" tts:direction="ltr">Actually, what's going on here, let me
+<br />escape.</p>
+        <p begin="00:02:00.110" end="00:02:05.410" tts:direction="ltr">I need to change my dashboard to ensure
+<br />that it refreshes.</p>
+        <p begin="00:02:05.410" end="00:02:07.870" tts:direction="ltr">I won't take a moment to do that right
+<br />now,</p>
+        <p begin="00:02:07.870" end="00:02:12.030" tts:direction="ltr">but now I'm just showing Bronx because I
+<br />have this built as</p>
+        <p begin="00:02:12.030" end="00:02:13.710" tts:direction="ltr">a dashboard and this is the filter that</p>
+        <p begin="00:02:13.710" end="00:02:16.670" tts:direction="ltr">the dashboard is showing and pulling from
+<br />the sheet.</p>
+        <p begin="00:02:16.670" end="00:02:22.910" tts:direction="ltr">But I've got neighborhood group and name
+<br />and then I have the location here,</p>
+        <p begin="00:02:22.910" end="00:02:25.570" tts:direction="ltr">the neighborhood again, I've</p>
+        <p begin="00:02:25.570" end="00:02:28.610" tts:direction="ltr">got these on context filters and then also
+<br />the year.</p>
+        <p begin="00:02:28.610" end="00:02:31.510" tts:direction="ltr">Now I have name here that</p>
+        <p begin="00:02:31.510" end="00:02:37.010" tts:direction="ltr">also is going to be secondary to those
+<br />context filters.</p>
+        <p begin="00:02:37.010" end="00:02:40.070" tts:direction="ltr">Then where the RB and B is located.</p>
+        <p begin="00:02:40.070" end="00:02:42.230" tts:direction="ltr">Again, this is zooming in on the Bronx.</p>
+        <p begin="00:02:42.230" end="00:02:45.450" tts:direction="ltr">But I've got my context filters,</p>
+        <p begin="00:02:45.450" end="00:02:51.990" tts:direction="ltr">I've got some additional information on my
+<br />tool tips so that when I go over,</p>
+        <p begin="00:02:51.990" end="00:02:54.630" tts:direction="ltr">let's see if I can just sum out Hiller a
+<br />little bit.</p>
+        <p begin="00:02:54.630" end="00:02:56.750" tts:direction="ltr">I should be able to see those.</p>
+        <p begin="00:02:56.750" end="00:02:59.030" tts:direction="ltr">Let me go back into here.</p>
+        <p begin="00:02:59.030" end="00:03:05.130" tts:direction="ltr">Let me go into my dashboard and show my
+<br />actions.</p>
+        <p begin="00:03:05.210" end="00:03:14.030" tts:direction="ltr">Let me just make sure that I am run action
+<br />on the Select. That's great.</p>
+        <p begin="00:03:14.030" end="00:03:17.210" tts:direction="ltr">Then let me just double check.</p>
+        <p begin="00:03:19.330" end="00:03:23.330" tts:direction="ltr">Okay, that's okay too.</p>
+        <p begin="00:03:24.300" end="00:03:29.500" tts:direction="ltr">Okay, so let me could be having a little
+<br />bit of</p>
+        <p begin="00:03:29.500" end="00:03:36.500" tts:direction="ltr">a hiccup in my own computer here.</p>
+        <p begin="00:03:39.780" end="00:03:42.980" tts:direction="ltr">It looks like it wants to.</p>
+        <p begin="00:03:46.660" end="00:03:50.260" tts:direction="ltr">It's a little frozen.</p>
+        <p begin="00:03:50.260" end="00:03:52.960" tts:direction="ltr">Okay. Now I'm back here,</p>
+        <p begin="00:03:52.960" end="00:03:57.800" tts:direction="ltr">so be able to see all that with the
+<br />escape,</p>
+        <p begin="00:03:57.800" end="00:04:00.820" tts:direction="ltr">and I'm not quite sure why I'm having some
+<br />issues.</p>
+        <p begin="00:04:00.820" end="00:04:04.180" tts:direction="ltr">So here I have those sheets,</p>
+        <p begin="00:04:04.180" end="00:04:10.420" tts:direction="ltr">those charts over here where I've used the
+<br />spatial as that dominant element.</p>
+        <p begin="00:04:10.420" end="00:04:14.140" tts:direction="ltr">I'm using this as more of an exploratory
+<br />dashboard,</p>
+        <p begin="00:04:14.140" end="00:04:16.840" tts:direction="ltr">explores host properties and profits.</p>
+        <p begin="00:04:16.840" end="00:04:19.700" tts:direction="ltr">Use the filters below, explore different
+<br />Burroughs.</p>
+        <p begin="00:04:19.700" end="00:04:23.080" tts:direction="ltr">Take a look at how prices might differ
+<br />based on points and interest.</p>
+        <p begin="00:04:23.080" end="00:04:25.340" tts:direction="ltr">Again, a little bit of direction for</p>
+        <p begin="00:04:25.340" end="00:04:28.220" tts:direction="ltr">this exploration and that these dropdown
+<br />menus do work.</p>
+        <p begin="00:04:28.220" end="00:04:31.880" tts:direction="ltr">I now have the neighborhood group and I
+<br />have the neighborhood here.</p>
+        <p begin="00:04:31.880" end="00:04:33.580" tts:direction="ltr">I have the whole picture.</p>
+        <p begin="00:04:33.580" end="00:04:35.900" tts:direction="ltr">By the way, I didn't show you this,</p>
+        <p begin="00:04:37.660" end="00:04:39.760" tts:direction="ltr">let me escape here,</p>
+        <p begin="00:04:39.760" end="00:04:41.560" tts:direction="ltr">I wanted to show you on the map,</p>
+        <p begin="00:04:41.560" end="00:04:45.740" tts:direction="ltr">my background layers did select the street
+<br />style.</p>
+        <p begin="00:04:45.740" end="00:04:51.620" tts:direction="ltr">Then I also included all of these other
+<br />really great details that I had,</p>
+        <p begin="00:04:51.620" end="00:04:55.680" tts:direction="ltr">as much detail as possible for NYC.</p>
+        <p begin="00:04:55.680" end="00:04:59.120" tts:direction="ltr">Okay. All right, let me go back here.</p>
+        <p begin="00:04:59.120" end="00:05:02.820" tts:direction="ltr">Let's go in presentation mode now.</p>
+        <p begin="00:05:02.820" end="00:05:06.700" tts:direction="ltr">I can go ahead and I can select something
+<br />like Manhattan.</p>
+        <p begin="00:05:06.700" end="00:05:12.300" tts:direction="ltr">Now I've seen that this has been
+<br />dynamically changed.</p>
+        <p begin="00:05:12.300" end="00:05:20.380" tts:direction="ltr">I can also see that I've got the top five
+<br />rentals I put in that filter.</p>
+        <p begin="00:05:20.380" end="00:05:23.100" tts:direction="ltr">And then rentals by room type.</p>
+        <p begin="00:05:23.100" end="00:05:25.540" tts:direction="ltr">There's more entire homes,</p>
+        <p begin="00:05:25.540" end="00:05:28.120" tts:direction="ltr">very few hotel rooms or share rooms,</p>
+        <p begin="00:05:28.120" end="00:05:30.820" tts:direction="ltr">and there's about a third of private
+<br />rooms.</p>
+        <p begin="00:05:30.820" end="00:05:36.240" tts:direction="ltr">I can also drill down deeper into the
+<br />types of neighborhoods, right?</p>
+        <p begin="00:05:36.240" end="00:05:39.900" tts:direction="ltr">I might do the upper east side here.</p>
+        <p begin="00:05:39.900" end="00:05:46.780" tts:direction="ltr">Then it will zoom into more of entire
+<br />homes, not as many.</p>
+        <p begin="00:05:46.780" end="00:05:49.940" tts:direction="ltr">And I can see what that prices again.</p>
+        <p begin="00:05:49.940" end="00:05:52.440" tts:direction="ltr">This hopefully was a good review of your
+<br />project</p>
+        <p begin="00:05:52.440" end="00:05:55.040" tts:direction="ltr">that you did in data 3,400 But</p>
+        <p begin="00:05:55.040" end="00:06:00.860" tts:direction="ltr">dashboards that interact can really help
+<br />your audience explore information.</p>
+        <p begin="00:06:00.860" end="00:06:02.940" tts:direction="ltr">Hopefully, that was helpful. I look</p>
+        <p begin="00:06:02.940" end="00:06:06.440" tts:direction="ltr">forward to helping you create some more in
+<br />the future.</p>
+    </div>
+  </body>
+</tt>

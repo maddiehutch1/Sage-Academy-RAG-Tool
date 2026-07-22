@@ -1,0 +1,1429 @@
+1
+00:00:01,200 --> 00:00:03,080
+INSTRUCTOR: Hello
+visitors, it is
+
+2
+00:00:03,080 --> 00:00:09,640
+time to set up shop with our
+Tableau Desktop application,
+
+3
+00:00:09,640 --> 00:00:13,840
+and that's what this adventure
+guide will take you through.
+
+4
+00:00:13,840 --> 00:00:18,160
+At this point, you should have
+requested a student license
+
+5
+00:00:18,160 --> 00:00:21,360
+for the Tableau
+Desktop, and should
+
+6
+00:00:21,360 --> 00:00:24,360
+have that key and the
+ability to download it
+
+7
+00:00:24,360 --> 00:00:26,800
+onto your own computer.
+
+8
+00:00:26,800 --> 00:00:29,240
+So I want to take you through
+a little bit about Tableau
+
+9
+00:00:29,240 --> 00:00:32,659
+and why we choose to
+use it in this course.
+
+10
+00:00:32,659 --> 00:00:37,480
+There are lots of great
+ways to visualize your data.
+
+11
+00:00:37,480 --> 00:00:39,760
+Excel is one of the basics.
+
+12
+00:00:39,760 --> 00:00:42,920
+Power BI is also
+created by Microsoft.
+
+13
+00:00:42,920 --> 00:00:46,400
+There's Domo, which is
+located in Silicon slopes,
+
+14
+00:00:46,400 --> 00:00:47,960
+in the Lehigh area.
+
+15
+00:00:47,960 --> 00:00:50,080
+And then there's Tableau.
+
+16
+00:00:50,080 --> 00:00:52,600
+And Tableau is an
+industry leader
+
+17
+00:00:52,600 --> 00:00:56,680
+that's being used by quite a few
+companies because of the maps
+
+18
+00:00:56,680 --> 00:00:58,760
+and dashboard capabilities.
+
+19
+00:00:58,760 --> 00:01:02,830
+And so we've selected this
+platform for this course,
+
+20
+00:01:02,830 --> 00:01:04,830
+although many of the
+concepts you'll be learning
+
+21
+00:01:04,830 --> 00:01:09,510
+can be transferred to any
+visualization that you make.
+
+22
+00:01:09,510 --> 00:01:12,370
+So Tableau was designed
+to solve a problem.
+
+23
+00:01:12,370 --> 00:01:14,350
+And what was that problem?
+
+24
+00:01:14,350 --> 00:01:18,510
+It was the barriers in getting
+all of that information
+
+25
+00:01:18,510 --> 00:01:20,630
+into some sort of
+a visualization
+
+26
+00:01:20,630 --> 00:01:23,590
+where we could begin
+to see insights.
+
+27
+00:01:23,590 --> 00:01:26,670
+And so we know that
+data is powerful.
+
+28
+00:01:26,670 --> 00:01:30,670
+We have data, but
+there was definitely
+
+29
+00:01:30,670 --> 00:01:34,070
+a bottleneck in harvesting the
+data and getting those insights.
+
+30
+00:01:34,070 --> 00:01:36,770
+And so not only did Tableau
+take advantage of this,
+
+31
+00:01:36,770 --> 00:01:39,230
+but as I mentioned those
+other companies too.
+
+32
+00:01:39,230 --> 00:01:41,950
+And so there are quite a
+few software developers who
+
+33
+00:01:41,950 --> 00:01:45,710
+are trying to make it
+easier for the user
+
+34
+00:01:45,710 --> 00:01:49,150
+to visualize the massive
+amounts of data we have.
+
+35
+00:01:49,150 --> 00:01:51,590
+So as I mentioned,
+right now, they
+
+36
+00:01:51,590 --> 00:01:54,670
+are the leader in data
+flow visualization.
+
+37
+00:01:54,670 --> 00:01:57,510
+And many companies
+do use Power BI just
+
+38
+00:01:57,510 --> 00:02:00,310
+simply because of the
+packaging that you can buy
+
+39
+00:02:00,310 --> 00:02:03,090
+and bundle, Excel and
+Word and so forth.
+
+40
+00:02:03,090 --> 00:02:09,330
+But Tableau's strength lies
+in the map's capability
+
+41
+00:02:09,330 --> 00:02:11,210
+and in their dashboards.
+
+42
+00:02:11,210 --> 00:02:12,950
+We'll see what
+happens in five years.
+
+43
+00:02:12,950 --> 00:02:16,990
+It's a market economy, so we'll
+see if things change or not.
+
+44
+00:02:16,990 --> 00:02:20,750
+But it really is
+very user friendly,
+
+45
+00:02:20,750 --> 00:02:23,410
+which is another reason why we
+like to use it in this course,
+
+46
+00:02:23,410 --> 00:02:25,670
+because students with
+no prior experience,
+
+47
+00:02:25,670 --> 00:02:29,570
+even in visualization, can
+quickly drag and drop and begin
+
+48
+00:02:29,570 --> 00:02:33,490
+to feel confident in their
+visualization skills.
+
+49
+00:02:33,490 --> 00:02:37,110
+So Tableau does invest lots
+of research and development.
+
+50
+00:02:37,110 --> 00:02:40,470
+They have an extensive
+Tableau help videos,
+
+51
+00:02:40,470 --> 00:02:43,050
+and I'll show you where
+you can find those.
+
+52
+00:02:43,050 --> 00:02:47,050
+And there's a huge
+community of Tableau users.
+
+53
+00:02:47,050 --> 00:02:52,250
+And so this is a great platform
+for us to use in this class.
+
+54
+00:02:52,250 --> 00:02:58,210
+So there's also a
+lot more that Tableau
+
+55
+00:02:58,210 --> 00:03:02,450
+can be used for
+machine learning,
+
+56
+00:03:02,450 --> 00:03:05,600
+there's statistics natural
+language processing,
+
+57
+00:03:05,600 --> 00:03:09,800
+and basically, its
+purpose is to augment
+
+58
+00:03:09,800 --> 00:03:12,280
+the human creative and
+analytical abilities
+
+59
+00:03:12,280 --> 00:03:16,120
+and to share ideas that promote
+the educated use of data.
+
+60
+00:03:16,120 --> 00:03:17,620
+So that sounds very corporate.
+
+61
+00:03:17,620 --> 00:03:20,880
+But in reality, if we can
+synthesize and understand
+
+62
+00:03:20,880 --> 00:03:23,240
+our data, even our own
+self data, then maybe
+
+63
+00:03:23,240 --> 00:03:25,680
+we can begin to change
+habits that could
+
+64
+00:03:25,680 --> 00:03:28,380
+lead to healthier happy lives.
+
+65
+00:03:28,380 --> 00:03:31,605
+Our companies can be more
+efficient with their resources,
+
+66
+00:03:31,605 --> 00:03:32,480
+et cetera, et cetera.
+
+67
+00:03:32,480 --> 00:03:34,600
+So there's a lot to be learned.
+
+68
+00:03:34,600 --> 00:03:38,320
+So when we dive
+into Tableau, you'll
+
+69
+00:03:38,320 --> 00:03:43,162
+notice that there are a
+couple of different panes.
+
+70
+00:03:43,162 --> 00:03:44,620
+This is not actually
+the home page,
+
+71
+00:03:44,620 --> 00:03:46,078
+and I'll show you
+that in a moment.
+
+72
+00:03:46,078 --> 00:03:47,620
+But this is the
+data source pane.
+
+73
+00:03:47,620 --> 00:03:50,640
+And you can see that on the
+lower left hand corner here,
+
+74
+00:03:50,640 --> 00:03:52,180
+it says data source.
+
+75
+00:03:52,180 --> 00:03:54,740
+And this is where you'll
+be bringing in your data.
+
+76
+00:03:54,740 --> 00:03:57,860
+This is one of the places and
+probably the primary place.
+
+77
+00:03:57,860 --> 00:03:59,480
+But this is the data pane.
+
+78
+00:03:59,480 --> 00:04:02,400
+This left area where it's going
+to show the sheets that you
+
+79
+00:04:02,400 --> 00:04:06,910
+have, and then you can drag them
+and drop them into this Canvas.
+
+80
+00:04:06,910 --> 00:04:10,070
+So that Canvas area does
+show that connection
+
+81
+00:04:10,070 --> 00:04:15,150
+between your sheets and other
+sheets that you might bring in.
+
+82
+00:04:15,150 --> 00:04:18,390
+The Canvas is the logical
+layer where you can create
+
+83
+00:04:18,390 --> 00:04:20,670
+relationships between these.
+
+84
+00:04:20,670 --> 00:04:23,190
+And then to get to
+the physical layer,
+
+85
+00:04:23,190 --> 00:04:25,290
+you can even double
+click this Orders.
+
+86
+00:04:25,290 --> 00:04:26,670
+It's not live right now.
+
+87
+00:04:26,670 --> 00:04:31,110
+And then it can open up a
+table where you can join
+
+88
+00:04:31,110 --> 00:04:35,930
+or you can do other types
+of relationships there.
+
+89
+00:04:35,930 --> 00:04:39,710
+This is called the data grid.
+
+90
+00:04:39,710 --> 00:04:42,650
+And this is where
+all of those columns
+
+91
+00:04:42,650 --> 00:04:47,870
+and rows from your CSV file
+or Excel file or JSON file
+
+92
+00:04:47,870 --> 00:04:49,150
+will be placed.
+
+93
+00:04:49,150 --> 00:04:51,410
+And we'll get into that
+in a little bit more,
+
+94
+00:04:51,410 --> 00:04:53,990
+but that's called
+the data grid area.
+
+95
+00:04:53,990 --> 00:04:58,390
+And this is the--
+
+96
+00:04:58,390 --> 00:05:03,190
+oh, I should say for the data
+grid that Tableau displays
+
+97
+00:05:03,190 --> 00:05:08,310
+the first 1,000 rows of data
+contained in the data source.
+
+98
+00:05:08,310 --> 00:05:10,150
+So it only shows
+the first 1,000.
+
+99
+00:05:10,150 --> 00:05:13,350
+So if you have 10,000 rows, it's
+not going to show all of those.
+
+100
+00:05:13,350 --> 00:05:17,170
+But it does reside
+within the file.
+
+101
+00:05:17,170 --> 00:05:19,490
+The next one is the
+meta grid table.
+
+102
+00:05:19,490 --> 00:05:24,970
+And this is showing the fields
+that are in your data sources
+
+103
+00:05:24,970 --> 00:05:25,870
+as rows.
+
+104
+00:05:25,870 --> 00:05:29,070
+So we have order ID and
+you can see order IDs here,
+
+105
+00:05:29,070 --> 00:05:31,290
+order dates here,
+order dates here.
+
+106
+00:05:31,290 --> 00:05:33,970
+And it begins to tell you
+again that physical table,
+
+107
+00:05:33,970 --> 00:05:38,270
+the remote field and the type,
+and so those are also up here.
+
+108
+00:05:38,270 --> 00:05:42,390
+This is the Tableau workspace.
+
+109
+00:05:42,390 --> 00:05:46,290
+So this is where you're going
+to be spending more of your time
+
+110
+00:05:46,290 --> 00:05:50,930
+as you drag these
+fields onto this Canvas
+
+111
+00:05:50,930 --> 00:05:53,690
+into the columns or the
+rows, and as you begin
+
+112
+00:05:53,690 --> 00:05:55,470
+to work within this space.
+
+113
+00:05:55,470 --> 00:05:57,930
+But that's called the
+Tableau workspace.
+
+114
+00:05:57,930 --> 00:06:01,290
+And this is called
+the view area.
+
+115
+00:06:01,290 --> 00:06:03,850
+I did reference
+it to the Canvas.
+
+116
+00:06:03,850 --> 00:06:06,810
+So view or Canvas would be fine.
+
+117
+00:06:06,810 --> 00:06:09,240
+But that is the
+space where you can
+
+118
+00:06:09,240 --> 00:06:13,660
+begin to make your tables, your
+bar charts, your histograms,
+
+119
+00:06:13,660 --> 00:06:16,280
+your scatter plots, et cetera.
+
+120
+00:06:16,280 --> 00:06:18,320
+Up here in the
+upper left corner,
+
+121
+00:06:18,320 --> 00:06:21,600
+this is the workbook name
+so that you know which
+
+122
+00:06:21,600 --> 00:06:23,360
+workbook you're working within.
+
+123
+00:06:23,360 --> 00:06:25,920
+This whole file is the workbook.
+
+124
+00:06:25,920 --> 00:06:29,200
+And these are the
+three shelf cards.
+
+125
+00:06:29,200 --> 00:06:32,800
+If you will, you've got
+pages, filters, and marks.
+
+126
+00:06:32,800 --> 00:06:36,120
+And those have a lot of
+drag and drop capabilities
+
+127
+00:06:36,120 --> 00:06:42,920
+as you want to filter things or
+create pages or the marks card.
+
+128
+00:06:42,920 --> 00:06:44,820
+These are called the shelves.
+
+129
+00:06:44,820 --> 00:06:47,700
+And that's where you find
+your columns and rows.
+
+130
+00:06:47,700 --> 00:06:51,900
+So typical when you're
+thinking about your xy axis.
+
+131
+00:06:51,900 --> 00:06:53,780
+So those are the
+columns and rows.
+
+132
+00:06:53,780 --> 00:06:56,040
+And that's called the shelves.
+
+133
+00:06:56,040 --> 00:06:58,400
+The toolbar is here at the top.
+
+134
+00:06:58,400 --> 00:07:02,440
+So there's icons that you'll
+become more familiar with
+
+135
+00:07:02,440 --> 00:07:05,880
+to refresh your data to
+bring in new data sources
+
+136
+00:07:05,880 --> 00:07:09,093
+to do ascending versus
+descending sorts.
+
+137
+00:07:09,093 --> 00:07:10,510
+And then there's
+also this area up
+
+138
+00:07:10,510 --> 00:07:16,110
+here where you'll have dropdown
+menus to then continue to refine
+
+139
+00:07:16,110 --> 00:07:18,990
+what your visualizations are.
+
+140
+00:07:18,990 --> 00:07:22,350
+This little Tableau icon
+is the Start Here button.
+
+141
+00:07:22,350 --> 00:07:26,790
+And so that will return you back
+to that main Start Here page
+
+142
+00:07:26,790 --> 00:07:30,550
+that you'll see when you
+first launch Tableau.
+
+143
+00:07:30,550 --> 00:07:32,830
+Down here at the bottom
+is the status bar.
+
+144
+00:07:32,830 --> 00:07:37,230
+It can tell you where you're
+at, and you can't even tell you
+
+145
+00:07:37,230 --> 00:07:39,630
+how many data points there are.
+
+146
+00:07:39,630 --> 00:07:42,570
+And you can see that there
+are different sheet tabs here.
+
+147
+00:07:42,570 --> 00:07:44,590
+So the whole thing
+is called a workbook.
+
+148
+00:07:44,590 --> 00:07:46,310
+And these are called sheets.
+
+149
+00:07:46,310 --> 00:07:48,690
+And there are icons, where
+you can add more sheets.
+
+150
+00:07:48,690 --> 00:07:51,810
+That's this icon this
+one with the four grids.
+
+151
+00:07:51,810 --> 00:07:54,230
+That's actually
+for the dashboard.
+
+152
+00:07:54,230 --> 00:07:59,550
+All right, file
+types really quickly.
+
+153
+00:07:59,550 --> 00:08:06,350
+There's a .twb and this stores a
+visualization without the source
+
+154
+00:08:06,350 --> 00:08:07,150
+data.
+
+155
+00:08:07,150 --> 00:08:12,170
+Sometimes in this class,
+students save .twb because maybe
+
+156
+00:08:12,170 --> 00:08:15,370
+that was the default setup and
+it does not have the source
+
+157
+00:08:15,370 --> 00:08:15,870
+data.
+
+158
+00:08:15,870 --> 00:08:18,100
+So when they go to launch
+it, it doesn't work.
+
+159
+00:08:18,100 --> 00:08:19,350
+I'll show you what that means.
+
+160
+00:08:19,350 --> 00:08:22,190
+But basically there's a file
+type with an x at the end.
+
+161
+00:08:22,190 --> 00:08:23,390
+That's what you need.
+
+162
+00:08:23,390 --> 00:08:25,610
+But this one has no source data.
+
+163
+00:08:25,610 --> 00:08:28,770
+The tds, it stores the
+server address, password,
+
+164
+00:08:28,770 --> 00:08:32,190
+and other information
+to access a data source.
+
+165
+00:08:32,190 --> 00:08:35,289
+So if I've got a SQL server
+or something else and I need
+
+166
+00:08:35,289 --> 00:08:39,230
+to create that connection,
+I'm going to use .tds.
+
+167
+00:08:39,230 --> 00:08:42,929
+We won't be using this
+extension in our class.
+
+168
+00:08:42,929 --> 00:08:47,210
+There's the .tbm which stores
+a connection to a worksheet
+
+169
+00:08:47,210 --> 00:08:49,370
+in another Tableau workbook.
+
+170
+00:08:49,370 --> 00:08:52,530
+So again, when you start
+building lots of workbooks
+
+171
+00:08:52,530 --> 00:08:55,010
+and dashboards, you will
+be working with coworkers
+
+172
+00:08:55,010 --> 00:08:58,050
+potentially where you'll need to
+make sure that you're speaking
+
+173
+00:08:58,050 --> 00:09:00,490
+to one another and
+that said .tbm.
+
+174
+00:09:00,490 --> 00:09:02,690
+We won't be using in that class.
+
+175
+00:09:02,690 --> 00:09:09,920
+And then you have the .tde where
+the Tableau data is filtered,
+
+176
+00:09:09,920 --> 00:09:13,080
+and there's an
+aggregated extract there.
+
+177
+00:09:13,080 --> 00:09:14,860
+So we will not be
+using this either.
+
+178
+00:09:14,860 --> 00:09:17,880
+This is to speed
+connections along,
+
+179
+00:09:17,880 --> 00:09:21,800
+but it is a way to get the
+extracted data that you use.
+
+180
+00:09:21,800 --> 00:09:23,560
+This is the file
+type that you will
+
+181
+00:09:23,560 --> 00:09:27,200
+be saving 99.9% of the time.
+
+182
+00:09:27,200 --> 00:09:31,260
+Nothing is really 100%, but
+it's called a twbx file.
+
+183
+00:09:31,260 --> 00:09:34,680
+So the way I pronounce it,
+it's a packaged workbook.
+
+184
+00:09:34,680 --> 00:09:38,380
+It stores the extracted data
+and all of your visualizations,
+
+185
+00:09:38,380 --> 00:09:41,560
+and you can also use it in
+the Tableau reader, which
+
+186
+00:09:41,560 --> 00:09:46,060
+for clients that may not want
+to purchase Tableau Desktop,
+
+187
+00:09:46,060 --> 00:09:48,280
+they can get a free Tableau
+reader so they can still
+
+188
+00:09:48,280 --> 00:09:53,840
+see your visualizations, so
+when you save it as a twbx file.
+
+189
+00:09:53,840 --> 00:09:55,400
+So those are the file types.
+
+190
+00:09:55,400 --> 00:09:57,680
+This last one, double
+check when you're saving
+
+191
+00:09:57,680 --> 00:10:00,240
+that it has that x on the end.
+
+192
+00:10:00,240 --> 00:10:03,240
+So there are additional
+resources here.
+
+193
+00:10:03,240 --> 00:10:07,340
+I'll provide this slide
+deck in the notes.
+
+194
+00:10:07,340 --> 00:10:09,840
+But there's different
+source 1 and source 2
+
+195
+00:10:09,840 --> 00:10:13,690
+where you can go check out
+stuff in the Tableau help area,
+
+196
+00:10:13,690 --> 00:10:17,390
+where it points to all this same
+information I just outlined.
+
+197
+00:10:17,390 --> 00:10:20,230
+All right, so now
+it's your turn.
+
+198
+00:10:20,230 --> 00:10:24,550
+So to complete this final
+part of the adventure guide,
+
+199
+00:10:24,550 --> 00:10:26,370
+you first need to have Tableau.
+
+200
+00:10:26,370 --> 00:10:30,090
+So if you don't have it,
+pause, go back find the link,
+
+201
+00:10:30,090 --> 00:10:35,710
+request the student version
+student license for Tableau.
+
+202
+00:10:35,710 --> 00:10:37,850
+They provide a key to
+your email address.
+
+203
+00:10:37,850 --> 00:10:41,510
+Be sure you use your
+student email address,
+
+204
+00:10:41,510 --> 00:10:44,410
+and they're very quick
+about getting you that key.
+
+205
+00:10:44,410 --> 00:10:48,270
+And then you just enter that
+key into that 14 day trial.
+
+206
+00:10:48,270 --> 00:10:51,190
+You get it for free for 14
+days, but in that window,
+
+207
+00:10:51,190 --> 00:10:54,590
+you need to update that
+with the actual key.
+
+208
+00:10:54,590 --> 00:10:57,770
+So we're going to go ahead and
+just do the six step process.
+
+209
+00:10:57,770 --> 00:11:01,175
+We're going to a data
+source from kaggle.com.
+
+210
+00:11:01,175 --> 00:11:02,550
+If you don't have
+an account, you
+
+211
+00:11:02,550 --> 00:11:03,890
+need to create a free account.
+
+212
+00:11:03,890 --> 00:11:07,590
+This could be a great source for
+some project data in the future.
+
+213
+00:11:07,590 --> 00:11:12,870
+We're going to find a data
+source called All Shark Tank
+
+214
+00:11:12,870 --> 00:11:14,110
+(US) pitches & deals.
+
+215
+00:11:14,110 --> 00:11:15,390
+We're going to download it.
+
+216
+00:11:15,390 --> 00:11:18,090
+We're going to launch
+Tableau Desktop.
+
+217
+00:11:18,090 --> 00:11:20,870
+We're going to go under
+connect and under File
+
+218
+00:11:20,870 --> 00:11:23,372
+and we're going to add
+that CSV file in there.
+
+219
+00:11:23,372 --> 00:11:24,830
+We're going to go
+to the worksheet.
+
+220
+00:11:24,830 --> 00:11:27,640
+We're going to create a
+really simple bar chart.
+
+221
+00:11:27,640 --> 00:11:29,390
+And then we're going
+to take a screenshot.
+
+222
+00:11:29,390 --> 00:11:31,210
+And then you're
+going to turn it in.
+
+223
+00:11:31,210 --> 00:11:37,850
+So let's go ahead
+and head to Kaggle.
+
+224
+00:11:37,850 --> 00:11:41,210
+So you should go ahead and just
+make yourself a free version
+
+225
+00:11:41,210 --> 00:11:42,670
+at kaggle.com.
+
+226
+00:11:42,670 --> 00:11:44,830
+You see here and
+in this search bar,
+
+227
+00:11:44,830 --> 00:11:48,730
+I'm going to go ahead
+and put All Shark Tank
+
+228
+00:11:48,730 --> 00:11:51,010
+(US) pitches & deals.
+
+229
+00:11:51,010 --> 00:11:53,110
+And there's one data set.
+
+230
+00:11:53,110 --> 00:11:54,270
+This is five years ago.
+
+231
+00:11:54,270 --> 00:11:56,250
+This is what you want.
+
+232
+00:11:56,250 --> 00:11:59,690
+So I'm going to go ahead
+and download that and put
+
+233
+00:11:59,690 --> 00:12:01,690
+that in my download folder.
+
+234
+00:12:01,690 --> 00:12:05,810
+You can read more about the
+data set et cetera, et cetera.
+
+235
+00:12:05,810 --> 00:12:09,810
+And again, great place to
+explore potential places
+
+236
+00:12:09,810 --> 00:12:11,030
+that you might find data.
+
+237
+00:12:11,030 --> 00:12:13,840
+So I'm going to go ahead
+and close that down
+
+238
+00:12:13,840 --> 00:12:16,620
+and pull up Tableau.
+
+239
+00:12:16,620 --> 00:12:22,120
+So this is the initial
+page for Tableau.
+
+240
+00:12:22,120 --> 00:12:24,920
+And you can see I've already
+got some previous work that I've
+
+241
+00:12:24,920 --> 00:12:28,000
+got just showing here.
+
+242
+00:12:28,000 --> 00:12:32,820
+There is the connection
+to a server to a file.
+
+243
+00:12:32,820 --> 00:12:34,320
+This is where you
+will most likely
+
+244
+00:12:34,320 --> 00:12:37,040
+be using only for this class.
+
+245
+00:12:37,040 --> 00:12:42,120
+And then other servers
+and these sample data
+
+246
+00:12:42,120 --> 00:12:43,260
+sets, which are awesome.
+
+247
+00:12:43,260 --> 00:12:45,820
+And we use them a
+lot in our demos.
+
+248
+00:12:45,820 --> 00:12:47,260
+So I'm going to go ahead here.
+
+249
+00:12:47,260 --> 00:12:49,400
+And since I have a CSV file--
+
+250
+00:12:49,400 --> 00:12:53,880
+see I can do a text file, a
+JSON, PDF, Excel, et cetera--
+
+251
+00:12:53,880 --> 00:12:57,080
+I'm going to go to
+more, and then I'm
+
+252
+00:12:57,080 --> 00:13:02,440
+just going to navigate to my
+Shark tank pitches and deal CSV
+
+253
+00:13:02,440 --> 00:13:03,480
+file.
+
+254
+00:13:03,480 --> 00:13:05,340
+And then I can just open that.
+
+255
+00:13:05,340 --> 00:13:08,320
+Once I open that, it'll go
+straight to this data source
+
+256
+00:13:08,320 --> 00:13:12,183
+area where I showed you
+earlier that this is the space.
+
+257
+00:13:12,183 --> 00:13:13,600
+And you can see
+what it's doing is
+
+258
+00:13:13,600 --> 00:13:17,590
+it's going to pull in
+that particular data set
+
+259
+00:13:17,590 --> 00:13:19,130
+onto my Canvas.
+
+260
+00:13:19,130 --> 00:13:21,390
+And you can see Shark
+Tank pitches deals.
+
+261
+00:13:21,390 --> 00:13:23,250
+All of this, you
+probably don't have this.
+
+262
+00:13:23,250 --> 00:13:26,730
+This is just adding in a whole
+bunch of other CSV files.
+
+263
+00:13:26,730 --> 00:13:30,150
+I've used to make some other
+visualizations for other stuff.
+
+264
+00:13:30,150 --> 00:13:31,210
+So ignore that.
+
+265
+00:13:31,210 --> 00:13:35,790
+That's not going to
+be on your Tableau.
+
+266
+00:13:35,790 --> 00:13:39,750
+So you've seen all these kinds
+of things we just talked about.
+
+267
+00:13:39,750 --> 00:13:42,430
+We'll get into detail in
+future adventure guides
+
+268
+00:13:42,430 --> 00:13:45,450
+about what these mean,
+what this means, et cetera.
+
+269
+00:13:45,450 --> 00:13:48,910
+What I want you to do right now
+is just go to the worksheet.
+
+270
+00:13:48,910 --> 00:13:50,090
+So see how it's pointing.
+
+271
+00:13:50,090 --> 00:13:51,490
+Hey go to this worksheet.
+
+272
+00:13:51,490 --> 00:13:52,450
+Just click on that.
+
+273
+00:13:52,450 --> 00:13:55,370
+Now I've moved from
+the data source.
+
+274
+00:13:55,370 --> 00:13:59,630
+So I can go back to the
+data source to that sheet.
+
+275
+00:13:59,630 --> 00:14:01,950
+And again, this is
+that view area that
+
+276
+00:14:01,950 --> 00:14:04,110
+Canvas rows and
+columns et cetera,
+
+277
+00:14:04,110 --> 00:14:06,690
+I've got my various
+things in here.
+
+278
+00:14:06,690 --> 00:14:10,830
+All I want you to do here
+is to take the Deal Shark
+
+279
+00:14:10,830 --> 00:14:13,145
+and drop that on Columns.
+
+280
+00:14:13,145 --> 00:14:13,770
+So pretty easy.
+
+281
+00:14:13,770 --> 00:14:17,630
+Just click that and drag that to
+columns and then drop that in.
+
+282
+00:14:17,630 --> 00:14:21,330
+And then I want you to take this
+Sharktankpitches deals, which
+
+283
+00:14:21,330 --> 00:14:25,190
+is basically counting all of
+the rows in that data source,
+
+284
+00:14:25,190 --> 00:14:27,090
+and I want to just
+put that on Rows.
+
+285
+00:14:27,090 --> 00:14:32,490
+So this is a little funky
+because this is a null category
+
+286
+00:14:32,490 --> 00:14:33,870
+that is the highest.
+
+287
+00:14:33,870 --> 00:14:34,950
+We won't go into that.
+
+288
+00:14:34,950 --> 00:14:38,170
+But basically, you need to
+take a screenshot of this,
+
+289
+00:14:38,170 --> 00:14:40,790
+and you need to make
+sure it's time stamped.
+
+290
+00:14:40,790 --> 00:14:43,190
+So in a Mac that's in the
+upper right hand corner,
+
+291
+00:14:43,190 --> 00:14:47,190
+I believe, on a PC that's in
+the lower left or right corner,
+
+292
+00:14:47,190 --> 00:14:49,410
+make sure you've
+got a date stamp
+
+293
+00:14:49,410 --> 00:14:53,650
+and timestamp so that you can
+get all the points for this.
+
+294
+00:14:53,650 --> 00:14:59,210
+So let me go back to
+my presentation here.
+
+295
+00:14:59,210 --> 00:15:01,010
+Your submission,
+I just mentioned
+
+296
+00:15:01,010 --> 00:15:03,970
+needs to be time
+stamped screen capture.
+
+297
+00:15:03,970 --> 00:15:09,030
+Upload that to the AG
+Set Up Shop Submission,
+
+298
+00:15:09,030 --> 00:15:10,610
+and then you'll get
+your full points
+
+299
+00:15:10,610 --> 00:15:15,530
+and you'll be ready to do some
+more visualizations in class.
+
+300
+00:15:15,530 --> 00:15:17,400
+Happy visiting.

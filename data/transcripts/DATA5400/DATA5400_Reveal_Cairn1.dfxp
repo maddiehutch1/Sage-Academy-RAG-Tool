@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>600374383 - 1_zq1hh6g9 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:01.240" end="00:00:03.560" tts:direction="ltr">Hello, visitors.</p>
+        <p begin="00:00:03.560" end="00:00:07.040" tts:direction="ltr">This is a reveal for Karen number one.</p>
+        <p begin="00:00:07.040" end="00:00:09.880" tts:direction="ltr">Now you've taken the Karen and I</p>
+        <p begin="00:00:09.880" end="00:00:13.480" tts:direction="ltr">recommend watching these videos as they
+<br />pop up so that you can review</p>
+        <p begin="00:00:13.480" end="00:00:17.040" tts:direction="ltr">what you have been assessed on and perhaps
+<br />correct</p>
+        <p begin="00:00:17.040" end="00:00:21.240" tts:direction="ltr">any mistakes that you had on the Karen.</p>
+        <p begin="00:00:21.240" end="00:00:24.520" tts:direction="ltr">Let's dive in and do question one.</p>
+        <p begin="00:00:24.520" end="00:00:27.000" tts:direction="ltr">The first was to connect to the data
+<br />source.</p>
+        <p begin="00:00:27.000" end="00:00:30.200" tts:direction="ltr">This is an opportunity for you just to
+<br />bring in a data source,</p>
+        <p begin="00:00:30.200" end="00:00:33.060" tts:direction="ltr">make sure you could do that in the Tableau
+<br />environment.</p>
+        <p begin="00:00:33.060" end="00:00:36.040" tts:direction="ltr">And connect to those global sales orders.</p>
+        <p begin="00:00:36.040" end="00:00:39.640" tts:direction="ltr">Then you're going to create a bar chart
+<br />showing</p>
+        <p begin="00:00:39.640" end="00:00:44.440" tts:direction="ltr">category by profit and the default
+<br />aggregation will be sum,</p>
+        <p begin="00:00:44.440" end="00:00:46.480" tts:direction="ltr">you'll add market to filters,</p>
+        <p begin="00:00:46.480" end="00:00:48.600" tts:direction="ltr">and you'll only show Canada,</p>
+        <p begin="00:00:48.600" end="00:00:50.960" tts:direction="ltr">EU, and the US.</p>
+        <p begin="00:00:50.960" end="00:00:57.360" tts:direction="ltr">Let's go ahead and escape so I can jump on
+<br />there.</p>
+        <p begin="00:00:57.360" end="00:00:59.400" tts:direction="ltr">I've already created that,</p>
+        <p begin="00:00:59.400" end="00:01:01.240" tts:direction="ltr">but let's go ahead and redo that again.</p>
+        <p begin="00:01:01.240" end="00:01:06.480" tts:direction="ltr">We'll do category and then we'll do
+<br />profit.</p>
+        <p begin="00:01:08.280" end="00:01:12.240" tts:direction="ltr">Here I've got those three categories.</p>
+        <p begin="00:01:12.240" end="00:01:16.840" tts:direction="ltr">But now what I want to do is I'm going to
+<br />add market onto those filters.</p>
+        <p begin="00:01:16.840" end="00:01:22.320" tts:direction="ltr">When that pops up, I'm going to have a
+<br />chance to select the EU, US and Canada.</p>
+        <p begin="00:01:22.320" end="00:01:27.840" tts:direction="ltr">I say, and then I can reorient and see
+<br />that technology is still in the lead.</p>
+        <p begin="00:01:27.840" end="00:01:30.460" tts:direction="ltr">If I show the filter,</p>
+        <p begin="00:01:30.460" end="00:01:33.440" tts:direction="ltr">Then I could select all.</p>
+        <p begin="00:01:33.440" end="00:01:37.480" tts:direction="ltr">I can also just select the ones that I've
+<br />been asked to.</p>
+        <p begin="00:01:37.480" end="00:01:41.680" tts:direction="ltr">I can also change the way that these
+<br />filters look so I can do a drop</p>
+        <p begin="00:01:41.680" end="00:01:43.800" tts:direction="ltr">down and I could have them here and that
+<br />would be</p>
+        <p begin="00:01:43.800" end="00:01:47.000" tts:direction="ltr">just an individual that I could go
+<br />through.</p>
+        <p begin="00:01:47.000" end="00:01:49.240" tts:direction="ltr">There's other ways that I could do.</p>
+        <p begin="00:01:49.240" end="00:01:50.560" tts:direction="ltr">I could do a custom list,</p>
+        <p begin="00:01:50.560" end="00:01:53.000" tts:direction="ltr">a slider, things like that.</p>
+        <p begin="00:01:53.000" end="00:01:56.040" tts:direction="ltr">All sorts of ways to use our filters,</p>
+        <p begin="00:01:56.040" end="00:02:01.090" tts:direction="ltr">but that's how you were to do it for
+<br />question number one.</p>
+        <p begin="00:02:01.090" end="00:02:05.980" tts:direction="ltr">Okay. Let's jump back and technology was
+<br />that answer.</p>
+        <p begin="00:02:05.980" end="00:02:10.020" tts:direction="ltr">Question number two was just a chance for
+<br />you to do a simple sort.</p>
+        <p begin="00:02:10.020" end="00:02:12.740" tts:direction="ltr">You're going to create a bar chart showing
+<br />sum of</p>
+        <p begin="00:02:12.740" end="00:02:16.020" tts:direction="ltr">sales by customer name and then do a
+<br />descending sort.</p>
+        <p begin="00:02:16.020" end="00:02:17.660" tts:direction="ltr">So there we've got that.</p>
+        <p begin="00:02:17.660" end="00:02:19.860" tts:direction="ltr">Let's go ahead and recreate that.</p>
+        <p begin="00:02:19.860" end="00:02:22.660" tts:direction="ltr">We'll do sales.</p>
+        <p begin="00:02:22.900" end="00:02:26.420" tts:direction="ltr">And then we're going to do customer name,</p>
+        <p begin="00:02:26.420" end="00:02:29.060" tts:direction="ltr">and then we're going to do the descending
+<br />sort.</p>
+        <p begin="00:02:29.060" end="00:02:32.860" tts:direction="ltr">You see that Fred Hopkins is there on the
+<br />top.</p>
+        <p begin="00:02:32.860" end="00:02:37.580" tts:direction="ltr">Let me jump back. Fred Hopkins is indeed
+<br />there.</p>
+        <p begin="00:02:37.580" end="00:02:41.100" tts:direction="ltr">Then we're going to apply a continuous
+<br />filter,</p>
+        <p begin="00:02:41.100" end="00:02:46.740" tts:direction="ltr">and it's going to be a barg chart showing
+<br />sum of sales by ship mode,</p>
+        <p begin="00:02:46.740" end="00:02:49.220" tts:direction="ltr">and we're going to add quantity to filter.</p>
+        <p begin="00:02:49.220" end="00:02:51.220" tts:direction="ltr">This is different than the other filters
+<br />that we</p>
+        <p begin="00:02:51.220" end="00:02:53.540" tts:direction="ltr">did just for the various markets.</p>
+        <p begin="00:02:53.540" end="00:02:55.580" tts:direction="ltr">This will be a continuous filter,</p>
+        <p begin="00:02:55.580" end="00:02:59.340" tts:direction="ltr">and then you've got these two variables
+<br />that you'll enter in.</p>
+        <p begin="00:02:59.340" end="00:03:05.020" tts:direction="ltr">Let's go ahead and jump back to here's the
+<br />answer.</p>
+        <p begin="00:03:05.020" end="00:03:07.780" tts:direction="ltr">We'll put sales and ship mode and
+<br />quantity.</p>
+        <p begin="00:03:07.780" end="00:03:11.540" tts:direction="ltr">Let's go ahead and put sales,</p>
+        <p begin="00:03:12.740" end="00:03:15.980" tts:direction="ltr">and then we'll do ship mode,</p>
+        <p begin="00:03:15.980" end="00:03:19.380" tts:direction="ltr">and then we'll bring in our measure of
+<br />quantity under</p>
+        <p begin="00:03:19.380" end="00:03:22.660" tts:direction="ltr">filters that will show this type of
+<br />sorting.</p>
+        <p begin="00:03:22.660" end="00:03:26.820" tts:direction="ltr">For this one, we're going to do sum and
+<br />we'll do next.</p>
+        <p begin="00:03:26.820" end="00:03:31.940" tts:direction="ltr">I'm going to just go ahead and say okay so
+<br />that I can show the filter,</p>
+        <p begin="00:03:31.940" end="00:03:36.300" tts:direction="ltr">and then I can actually enter in those
+<br />variables.</p>
+        <p begin="00:03:36.300" end="00:03:38.180" tts:direction="ltr">Let me just go back here.</p>
+        <p begin="00:03:38.180" end="00:03:42.500" tts:direction="ltr">I don't think I grabbed those. If I just
+<br />grab.</p>
+        <p begin="00:03:45.680" end="00:03:56.960" tts:direction="ltr">Put those in here. Then I can see that
+<br />it's first class and same day.</p>
+        <p begin="00:03:58.560" end="00:04:01.120" tts:direction="ltr">Dimensions and measures.</p>
+        <p begin="00:04:01.120" end="00:04:04.920" tts:direction="ltr">This is an opportunity just to think
+<br />about.</p>
+        <p begin="00:04:04.920" end="00:04:07.360" tts:direction="ltr">The difference, we're going to create a
+<br />line chart showing</p>
+        <p begin="00:04:07.360" end="00:04:10.880" tts:direction="ltr">order date by month and sum of sales,</p>
+        <p begin="00:04:10.880" end="00:04:12.400" tts:direction="ltr">and then we're going to change it from</p>
+        <p begin="00:04:12.400" end="00:04:15.720" tts:direction="ltr">a discrete date to a continuous measure.</p>
+        <p begin="00:04:15.720" end="00:04:17.920" tts:direction="ltr">We'll go ahead and jump back here.</p>
+        <p begin="00:04:17.920" end="00:04:22.800" tts:direction="ltr">You can see here we've got that line chart
+<br />already,</p>
+        <p begin="00:04:22.800" end="00:04:26.880" tts:direction="ltr">but let's go ahead and make that order
+<br />date by sales.</p>
+        <p begin="00:04:27.550" end="00:04:33.070" tts:direction="ltr">Grab that and we'll do our sales up here.</p>
+        <p begin="00:04:33.070" end="00:04:36.590" tts:direction="ltr">We're going to change that to month.</p>
+        <p begin="00:04:37.310" end="00:04:45.190" tts:direction="ltr">Here we see that. Now notice down here on
+<br />the X axis that it says January,</p>
+        <p begin="00:04:45.190" end="00:04:47.630" tts:direction="ltr">February written out like this.</p>
+        <p begin="00:04:47.630" end="00:04:55.030" tts:direction="ltr">When I change this from this discrete to
+<br />the continuous,</p>
+        <p begin="00:04:55.030" end="00:04:57.350" tts:direction="ltr">it still has the dates written out,</p>
+        <p begin="00:04:57.350" end="00:04:59.350" tts:direction="ltr">but it's spacing a little bit differently.</p>
+        <p begin="00:04:59.350" end="00:05:02.150" tts:direction="ltr">Now maybe what I'll do is I'll show you,</p>
+        <p begin="00:05:02.150" end="00:05:03.830" tts:direction="ltr">let's just do the bar chart.</p>
+        <p begin="00:05:03.830" end="00:05:06.230" tts:direction="ltr">Do you see how these are all touching?</p>
+        <p begin="00:05:06.230" end="00:05:08.710" tts:direction="ltr">If I were to go back up here,</p>
+        <p begin="00:05:08.710" end="00:05:10.910" tts:direction="ltr">how these are spaced out.</p>
+        <p begin="00:05:10.910" end="00:05:16.830" tts:direction="ltr">This is a little bit of an indicator on
+<br />that discrete versus continuous.</p>
+        <p begin="00:05:16.830" end="00:05:21.710" tts:direction="ltr">Now, I had you do the month and by the
+<br />way,</p>
+        <p begin="00:05:21.710" end="00:05:30.370" tts:direction="ltr">that answer is that the chart itself on a
+<br />month did not change.</p>
+        <p begin="00:05:30.370" end="00:05:31.970" tts:direction="ltr">So yes and yes,</p>
+        <p begin="00:05:31.970" end="00:05:34.890" tts:direction="ltr">those would be eliminated since it did not
+<br />change.</p>
+        <p begin="00:05:34.890" end="00:05:39.090" tts:direction="ltr">And so the answer would be no.</p>
+        <p begin="00:05:39.090" end="00:05:40.450" tts:direction="ltr">Let's look at the two answers.</p>
+        <p begin="00:05:40.450" end="00:05:44.410" tts:direction="ltr">No, the data only has one year of data and
+<br />therefore it is the same.</p>
+        <p begin="00:05:44.410" end="00:05:46.170" tts:direction="ltr">No, there is no difference between</p>
+        <p begin="00:05:46.170" end="00:05:48.770" tts:direction="ltr">a date dimension and a continuous date
+<br />measure.</p>
+        <p begin="00:05:48.770" end="00:05:50.970" tts:direction="ltr">There is a difference between them,</p>
+        <p begin="00:05:50.970" end="00:05:56.890" tts:direction="ltr">and therefore this other one where says
+<br />there's only one year of data.</p>
+        <p begin="00:05:56.890" end="00:05:58.810" tts:direction="ltr">Now, I also selected only a month.</p>
+        <p begin="00:05:58.810" end="00:06:02.450" tts:direction="ltr">Let's say if we went to a day.</p>
+        <p begin="00:06:02.630" end="00:06:05.950" tts:direction="ltr">Notice on the day, we've got one, two,
+<br />three,</p>
+        <p begin="00:06:05.950" end="00:06:09.070" tts:direction="ltr">four, five, we've got all the days of the
+<br />months up to 31.</p>
+        <p begin="00:06:09.070" end="00:06:11.270" tts:direction="ltr">Now, if I were to change this to a</p>
+        <p begin="00:06:11.270" end="00:06:16.690" tts:direction="ltr">continuous Do you see how different that
+<br />looks?</p>
+        <p begin="00:06:16.690" end="00:06:19.410" tts:direction="ltr">Now I'm actually having, you know what?</p>
+        <p begin="00:06:19.410" end="00:06:22.290" tts:direction="ltr">I'm going to go back to the line dark for
+<br />that.</p>
+        <p begin="00:06:22.290" end="00:06:25.410" tts:direction="ltr">Now I can see between those two.</p>
+        <p begin="00:06:25.410" end="00:06:28.570" tts:direction="ltr">Let me just toggle back to the date.</p>
+        <p begin="00:06:28.730" end="00:06:35.050" tts:direction="ltr">A different answer if I were to have said
+<br />day because for a month,</p>
+        <p begin="00:06:35.050" end="00:06:36.730" tts:direction="ltr">there's only those 12 months,</p>
+        <p begin="00:06:36.730" end="00:06:40.770" tts:direction="ltr">there's not multiple January, multiple
+<br />Februaries.</p>
+        <p begin="00:06:40.770" end="00:06:42.490" tts:direction="ltr">Just remember, and again,</p>
+        <p begin="00:06:42.490" end="00:06:44.370" tts:direction="ltr">we've got one, two, three here,</p>
+        <p begin="00:06:44.370" end="00:06:48.970" tts:direction="ltr">and then we'll move back to the day here
+<br />and now I've got it actually</p>
+        <p begin="00:06:48.970" end="00:06:54.850" tts:direction="ltr">ordered by the 1st of January and the 1st
+<br />of February, et cetera, okay?</p>
+        <p begin="00:06:54.850" end="00:07:00.450" tts:direction="ltr">All right. Now we're heading into the
+<br />multiple choice.</p>
+        <p begin="00:07:00.450" end="00:07:03.250" tts:direction="ltr">The first question is, what does it imply
+<br />if a field has</p>
+        <p begin="00:07:03.250" end="00:07:08.890" tts:direction="ltr">a blue background and it means that it is
+<br />a discrete field.</p>
+        <p begin="00:07:08.890" end="00:07:10.970" tts:direction="ltr">Here from the Tableau website,</p>
+        <p begin="00:07:10.970" end="00:07:14.970" tts:direction="ltr">it says blue measures and dimensions are
+<br />discrete.</p>
+        <p begin="00:07:14.970" end="00:07:18.100" tts:direction="ltr">Whether it's a measure or dimension, Um,</p>
+        <p begin="00:07:18.100" end="00:07:20.420" tts:direction="ltr">it can go either way, but when they're
+<br />blue,</p>
+        <p begin="00:07:20.420" end="00:07:23.980" tts:direction="ltr">they're discrete and discrete values are
+<br />treated as finite.</p>
+        <p begin="00:07:23.980" end="00:07:27.860" tts:direction="ltr">Generally, those act as headers in the
+<br />view.</p>
+        <p begin="00:07:27.860" end="00:07:32.300" tts:direction="ltr">So that would be maybe on that Y axis or
+<br />up on the top.</p>
+        <p begin="00:07:32.300" end="00:07:36.900" tts:direction="ltr">Just remember that as you try to sort out
+<br />that terminology of</p>
+        <p begin="00:07:36.900" end="00:07:41.600" tts:direction="ltr">dimensions and measures and discrete and
+<br />continuous.</p>
+        <p begin="00:07:41.600" end="00:07:44.740" tts:direction="ltr">That's just an important visualization
+<br />term</p>
+        <p begin="00:07:44.740" end="00:07:46.940" tts:direction="ltr">no matter what platform you're using.</p>
+        <p begin="00:07:46.940" end="00:07:49.620" tts:direction="ltr">What does this view referred to in
+<br />Tableau,</p>
+        <p begin="00:07:49.620" end="00:07:51.180" tts:direction="ltr">specific to the application,</p>
+        <p begin="00:07:51.180" end="00:07:54.180" tts:direction="ltr">it's important to know your vocabulary
+<br />because it</p>
+        <p begin="00:07:54.180" end="00:07:57.940" tts:direction="ltr">helps you understand the language that
+<br />I'll be using.</p>
+        <p begin="00:07:57.940" end="00:08:00.165" tts:direction="ltr">This is the data pane.</p>
+        <p begin="00:08:00.165" end="00:08:04.350" tts:direction="ltr">This one is an opportunity to think about</p>
+        <p begin="00:08:04.350" end="00:08:08.230" tts:direction="ltr">what types of files that you can save in
+<br />Tableau.</p>
+        <p begin="00:08:08.230" end="00:08:11.670" tts:direction="ltr">We will be saving the dot wx,</p>
+        <p begin="00:08:11.670" end="00:08:15.630" tts:direction="ltr">the Twix files the most and that one has
+<br />the data source in it.</p>
+        <p begin="00:08:15.630" end="00:08:19.230" tts:direction="ltr">These other ones are really great to use
+<br />when you are</p>
+        <p begin="00:08:19.230" end="00:08:22.990" tts:direction="ltr">sharing your Tableau files with others on
+<br />your team.</p>
+        <p begin="00:08:22.990" end="00:08:25.510" tts:direction="ltr">You may not need to have all the data,</p>
+        <p begin="00:08:25.510" end="00:08:27.750" tts:direction="ltr">the data might reside in a database,</p>
+        <p begin="00:08:27.750" end="00:08:35.435" tts:direction="ltr">and so you're connecting it and you would
+<br />use probably maybe the TwB for that.</p>
+        <p begin="00:08:35.435" end="00:08:37.560" tts:direction="ltr">All right. Question number eight,</p>
+        <p begin="00:08:37.560" end="00:08:39.520" tts:direction="ltr">in which of the following scenarios would
+<br />having</p>
+        <p begin="00:08:39.520" end="00:08:43.360" tts:direction="ltr">a live connection be more beneficial than
+<br />using an extract?</p>
+        <p begin="00:08:43.360" end="00:08:48.160" tts:direction="ltr">Clearly, the word real time is probably
+<br />the biggest indicator.</p>
+        <p begin="00:08:48.160" end="00:08:49.800" tts:direction="ltr">I think most of you got this correct.</p>
+        <p begin="00:08:49.800" end="00:08:52.080" tts:direction="ltr">The historical housing prices,</p>
+        <p begin="00:08:52.080" end="00:08:53.760" tts:direction="ltr">you would want that extract.</p>
+        <p begin="00:08:53.760" end="00:09:00.390" tts:direction="ltr">Now, another reason you would have an
+<br />extract is if you had a very,</p>
+        <p begin="00:09:00.390" end="00:09:05.910" tts:direction="ltr">very large dataset and you didn't want to
+<br />have that low time to refresh.</p>
+        <p begin="00:09:05.910" end="00:09:08.230" tts:direction="ltr">While it does cache the data,</p>
+        <p begin="00:09:08.230" end="00:09:10.830" tts:direction="ltr">it still is going to try to refresh it.</p>
+        <p begin="00:09:10.830" end="00:09:14.310" tts:direction="ltr">Recommendation when you're using large
+<br />datasets that you move it into</p>
+        <p begin="00:09:14.310" end="00:09:16.270" tts:direction="ltr">the extract and then work with it</p>
+        <p begin="00:09:16.270" end="00:09:18.790" tts:direction="ltr">then and then if you need to reconnect it
+<br />to update it,</p>
+        <p begin="00:09:18.790" end="00:09:21.350" tts:direction="ltr">you can So by default,</p>
+        <p begin="00:09:21.350" end="00:09:24.510" tts:direction="ltr">what does Tableau do when you connect to a
+<br />data source?</p>
+        <p begin="00:09:24.510" end="00:09:26.670" tts:direction="ltr">We will always go to that live connection.</p>
+        <p begin="00:09:26.670" end="00:09:28.270" tts:direction="ltr">That's the first thing it will do.</p>
+        <p begin="00:09:28.270" end="00:09:32.030" tts:direction="ltr">You have to select extract in order for
+<br />that to happen.</p>
+        <p begin="00:09:32.030" end="00:09:33.630" tts:direction="ltr">This was a matching one,</p>
+        <p begin="00:09:33.630" end="00:09:35.150" tts:direction="ltr">just the appropriate name.</p>
+        <p begin="00:09:35.150" end="00:09:38.950" tts:direction="ltr">So here we have names of customers, sales,
+<br />and dates.</p>
+        <p begin="00:09:38.950" end="00:09:41.910" tts:direction="ltr">And so when we think of those discrete
+<br />dimensions,</p>
+        <p begin="00:09:41.910" end="00:09:47.360" tts:direction="ltr">right, there is the names of customers are
+<br />very discrete.</p>
+        <p begin="00:09:47.360" end="00:09:50.880" tts:direction="ltr">There's only one Lean Wappett.</p>
+        <p begin="00:09:50.880" end="00:09:54.920" tts:direction="ltr">Then the continuous measures are things
+<br />like sales.</p>
+        <p begin="00:09:54.920" end="00:09:58.120" tts:direction="ltr">We've got that numerical range</p>
+        <p begin="00:09:58.120" end="00:10:01.800" tts:direction="ltr">and dates can act both as discrete and
+<br />continuous.</p>
+        <p begin="00:10:01.800" end="00:10:04.560" tts:direction="ltr">We can put everything in the bucket of
+<br />January,</p>
+        <p begin="00:10:04.560" end="00:10:08.760" tts:direction="ltr">but we can also have January over time and
+<br />be continuous.</p>
+        <p begin="00:10:08.760" end="00:10:11.200" tts:direction="ltr">There are other things that could, again,</p>
+        <p begin="00:10:11.200" end="00:10:14.920" tts:direction="ltr">move between that discrete and continuous.</p>
+        <p begin="00:10:14.920" end="00:10:17.600" tts:direction="ltr">The final question was potentially a
+<br />little</p>
+        <p begin="00:10:17.600" end="00:10:20.200" tts:direction="ltr">confusing for some just because of the
+<br />terminology used.</p>
+        <p begin="00:10:20.200" end="00:10:23.300" tts:direction="ltr">But when you drop a continuous field on
+<br />color,</p>
+        <p begin="00:10:23.300" end="00:10:27.040" tts:direction="ltr">Tableau displays a quantitative legend.</p>
+        <p begin="00:10:27.040" end="00:10:30.440" tts:direction="ltr">That's what the term is, the quantitative
+<br />legend,</p>
+        <p begin="00:10:30.440" end="00:10:35.360" tts:direction="ltr">and then with a blank range of colors and
+<br />it is a continuous.</p>
+        <p begin="00:10:35.360" end="00:10:38.800" tts:direction="ltr">It may have been confusing to have the
+<br />word fading,</p>
+        <p begin="00:10:38.800" end="00:10:41.880" tts:direction="ltr">but you don't have to have a light color
+<br />and then a dark color.</p>
+        <p begin="00:10:41.880" end="00:10:43.440" tts:direction="ltr">You can have two dark colors.</p>
+        <p begin="00:10:43.440" end="00:10:49.530" tts:direction="ltr">You could have blue and green and fading
+<br />is not the correct term there.</p>
+        <p begin="00:10:49.530" end="00:10:52.690" tts:direction="ltr">Mixed is not the correct terminology,</p>
+        <p begin="00:10:52.690" end="00:10:54.530" tts:direction="ltr">and then individual is going to be more
+<br />for</p>
+        <p begin="00:10:54.530" end="00:10:58.690" tts:direction="ltr">those discrete color palettes and legends.</p>
+        <p begin="00:10:58.690" end="00:11:00.890" tts:direction="ltr">There we go. There's the reveal.</p>
+        <p begin="00:11:00.890" end="00:11:05.970" tts:direction="ltr">I hope that was helpful to you and happy
+<br />visiting.</p>
+    </div>
+  </body>
+</tt>

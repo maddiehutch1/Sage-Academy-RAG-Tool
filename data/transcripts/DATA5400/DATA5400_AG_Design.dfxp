@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>438541782 - 1_0wp5njnl - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.400" end="00:00:03.340" tts:direction="ltr">Hello, visitors. For this AG,</p>
+        <p begin="00:00:03.340" end="00:00:07.640" tts:direction="ltr">I'm going to talk a little bit about how
+<br />to design your data and tableau.</p>
+        <p begin="00:00:07.640" end="00:00:11.660" tts:direction="ltr">We will have a base camp that will cover
+<br />design principles,</p>
+        <p begin="00:00:11.660" end="00:00:14.480" tts:direction="ltr">and I'm sure that along your adventure,</p>
+        <p begin="00:00:14.480" end="00:00:18.540" tts:direction="ltr">you've already been working with some of
+<br />the design features in Tableau.</p>
+        <p begin="00:00:18.540" end="00:00:20.180" tts:direction="ltr">I will just review some of</p>
+        <p begin="00:00:20.180" end="00:00:23.440" tts:direction="ltr">the formatting on a worksheet level, the
+<br />field level.</p>
+        <p begin="00:00:23.440" end="00:00:25.800" tts:direction="ltr">I'll talk about how you can add shapes and</p>
+        <p begin="00:00:25.800" end="00:00:29.520" tts:direction="ltr">custom color and then round it off with
+<br />some accessibility.</p>
+        <p begin="00:00:29.520" end="00:00:35.320" tts:direction="ltr">Again, we'll be talking more in detail
+<br />about design in the next base camp.</p>
+        <p begin="00:00:35.320" end="00:00:39.420" tts:direction="ltr">I would like for you to hop into the
+<br />adventure guide,</p>
+        <p begin="00:00:39.420" end="00:00:42.780" tts:direction="ltr">which is the Tau AG design start.</p>
+        <p begin="00:00:42.780" end="00:00:47.305" tts:direction="ltr">The very first screen, I've got an
+<br />overview of a before and after dashboard.</p>
+        <p begin="00:00:47.305" end="00:00:50.810" tts:direction="ltr">Now, both of these dashboards have been
+<br />designed.</p>
+        <p begin="00:00:50.810" end="00:00:53.190" tts:direction="ltr">But the one on the right side has had</p>
+        <p begin="00:00:53.190" end="00:00:58.510" tts:direction="ltr">a little more intentionality for that user
+<br />to try to simplify that story.</p>
+        <p begin="00:00:58.510" end="00:01:01.330" tts:direction="ltr">There's a lot of complexity and
+<br />dashboards,</p>
+        <p begin="00:01:01.330" end="00:01:05.130" tts:direction="ltr">and I just want you to keep this in mind
+<br />as you're thinking about</p>
+        <p begin="00:01:05.130" end="00:01:07.710" tts:direction="ltr">these formatting features because they
+<br />lead to</p>
+        <p begin="00:01:07.710" end="00:01:11.280" tts:direction="ltr">something where you're thinking about what
+<br />your purpose is,</p>
+        <p begin="00:01:11.280" end="00:01:13.100" tts:direction="ltr">who your audience is.</p>
+        <p begin="00:01:13.100" end="00:01:17.320" tts:direction="ltr">Do you have a message that needs to be
+<br />pulled</p>
+        <p begin="00:01:17.320" end="00:01:23.040" tts:direction="ltr">out that there might be a mood that you're
+<br />trying to convey.</p>
+        <p begin="00:01:23.040" end="00:01:26.480" tts:direction="ltr">Of course, there needs to be that idea of
+<br />consistency.</p>
+        <p begin="00:01:26.480" end="00:01:28.360" tts:direction="ltr">Let me just point out a few things that
+<br />I'm</p>
+        <p begin="00:01:28.360" end="00:01:30.960" tts:direction="ltr">noticing right away and you may have
+<br />noticed this too.</p>
+        <p begin="00:01:30.960" end="00:01:38.300" tts:direction="ltr">This one on the right has these bookends
+<br />of some darker colors to help make</p>
+        <p begin="00:01:38.300" end="00:01:42.300" tts:direction="ltr">this right corner this left corner stand</p>
+        <p begin="00:01:42.300" end="00:01:46.700" tts:direction="ltr">out with the title of the Sperurs
+<br />analysis.</p>
+        <p begin="00:01:46.700" end="00:01:50.880" tts:direction="ltr">You also have this lower book end that
+<br />allows you to place where</p>
+        <p begin="00:01:50.880" end="00:01:55.340" tts:direction="ltr">your data is sourced at to create a
+<br />finished and polished look.</p>
+        <p begin="00:01:55.340" end="00:01:58.100" tts:direction="ltr">You don't always need to have book ends,
+<br />but in this case,</p>
+        <p begin="00:01:58.100" end="00:02:01.080" tts:direction="ltr">it does help between this and that to</p>
+        <p begin="00:02:01.080" end="00:02:05.080" tts:direction="ltr">just show a little bit of intentionality.</p>
+        <p begin="00:02:05.080" end="00:02:09.980" tts:direction="ltr">Right here, this is called a spark line
+<br />and every data point is highlighted.</p>
+        <p begin="00:02:09.980" end="00:02:14.425" tts:direction="ltr">Whereas in this one, only the one that's
+<br />been selected is highlighted.</p>
+        <p begin="00:02:14.425" end="00:02:17.910" tts:direction="ltr">Here are some band numbers across the top.</p>
+        <p begin="00:02:17.910" end="00:02:20.370" tts:direction="ltr">These are very large numbers to help</p>
+        <p begin="00:02:20.370" end="00:02:23.150" tts:direction="ltr">with key performance indicators</p>
+        <p begin="00:02:23.150" end="00:02:25.590" tts:direction="ltr">or other numbers that are important to
+<br />your organization.</p>
+        <p begin="00:02:25.590" end="00:02:29.950" tts:direction="ltr">In this case, some serf typeface was used,</p>
+        <p begin="00:02:29.950" end="00:02:31.950" tts:direction="ltr">and in this redesign,</p>
+        <p begin="00:02:31.950" end="00:02:35.250" tts:direction="ltr">some sand serf typeface was used to be
+<br />more consistent with</p>
+        <p begin="00:02:35.250" end="00:02:39.230" tts:direction="ltr">what the body of the charts looked like.</p>
+        <p begin="00:02:39.230" end="00:02:43.450" tts:direction="ltr">You can also see that the coloring is
+<br />matching and associated</p>
+        <p begin="00:02:43.450" end="00:02:48.525" tts:direction="ltr">with these various data points versus just
+<br />having a single gray.</p>
+        <p begin="00:02:48.525" end="00:02:51.500" tts:direction="ltr">Now, both of these bar charts here have</p>
+        <p begin="00:02:51.500" end="00:02:54.580" tts:direction="ltr">been simplified to include some more white
+<br />space,</p>
+        <p begin="00:02:54.580" end="00:02:57.780" tts:direction="ltr">and you'll learn more about why white
+<br />space is an important feature,</p>
+        <p begin="00:02:57.780" end="00:03:05.500" tts:direction="ltr">but just opens up the availability to look
+<br />at the data more specifically.</p>
+        <p begin="00:03:05.500" end="00:03:09.160" tts:direction="ltr">You also see that the scatter plot right
+<br />here on the right hand side,</p>
+        <p begin="00:03:09.160" end="00:03:11.120" tts:direction="ltr">there's been another dimension applied,</p>
+        <p begin="00:03:11.120" end="00:03:13.160" tts:direction="ltr">somewhere larger than the others.</p>
+        <p begin="00:03:13.160" end="00:03:15.640" tts:direction="ltr">Of course, if I've got this peach color,</p>
+        <p begin="00:03:15.640" end="00:03:20.920" tts:direction="ltr">everything that I see as peach is somehow
+<br />associated on the same variable.</p>
+        <p begin="00:03:20.920" end="00:03:23.020" tts:direction="ltr">If I'm able to select this,</p>
+        <p begin="00:03:23.020" end="00:03:25.980" tts:direction="ltr">the relationship will change accordingly.</p>
+        <p begin="00:03:25.980" end="00:03:29.860" tts:direction="ltr">Don't ever make the mistake of having
+<br />peach here and</p>
+        <p begin="00:03:29.860" end="00:03:33.920" tts:direction="ltr">then peach here and peach here with
+<br />different variables.</p>
+        <p begin="00:03:33.920" end="00:03:37.220" tts:direction="ltr">That will very much confuse your audience.</p>
+        <p begin="00:03:37.220" end="00:03:41.380" tts:direction="ltr">You also see here that the tiled map</p>
+        <p begin="00:03:41.380" end="00:03:46.380" tts:direction="ltr">has been converted to a gray scale to
+<br />reduce this cognitive load</p>
+        <p begin="00:03:46.380" end="00:03:49.220" tts:direction="ltr">of all of these colors and</p>
+        <p begin="00:03:49.220" end="00:03:51.960" tts:direction="ltr">the redesign has tightied up</p>
+        <p begin="00:03:51.960" end="00:03:55.875" tts:direction="ltr">all those symbols or shapes to fit
+<br />together nicely.</p>
+        <p begin="00:03:55.875" end="00:03:59.110" tts:direction="ltr">Again, we've got that before and after,</p>
+        <p begin="00:03:59.110" end="00:04:01.690" tts:direction="ltr">we've also eliminated these filters on</p>
+        <p begin="00:04:01.690" end="00:04:05.550" tts:direction="ltr">the right hand side because everything can
+<br />be clicked and activated.</p>
+        <p begin="00:04:05.550" end="00:04:08.870" tts:direction="ltr">Just a good before and after to keep in
+<br />mind, specifically,</p>
+        <p begin="00:04:08.870" end="00:04:13.190" tts:direction="ltr">as you're thinking about your project and
+<br />that work that you'll do.</p>
+        <p begin="00:04:13.190" end="00:04:15.390" tts:direction="ltr">Of course, you'll start with analysis
+<br />first,</p>
+        <p begin="00:04:15.390" end="00:04:17.970" tts:direction="ltr">and you'll just be messy and you'll be
+<br />exploring.</p>
+        <p begin="00:04:17.970" end="00:04:20.570" tts:direction="ltr">But at some point you will move to the
+<br />design aspect.</p>
+        <p begin="00:04:20.570" end="00:04:24.230" tts:direction="ltr">I just challenge you to think about how
+<br />you can improve</p>
+        <p begin="00:04:24.230" end="00:04:29.940" tts:direction="ltr">your design from maybe here to there. All
+<br />right.</p>
+        <p begin="00:04:29.940" end="00:04:33.940" tts:direction="ltr">Let's go on this other overview tab that
+<br />gives you</p>
+        <p begin="00:04:33.940" end="00:04:39.000" tts:direction="ltr">a pretty good view of what most charts
+<br />look like in Tableau.</p>
+        <p begin="00:04:39.000" end="00:04:41.840" tts:direction="ltr">I think Tableau does a great job of</p>
+        <p begin="00:04:41.840" end="00:04:47.160" tts:direction="ltr">creating pretty good charts that are
+<br />designed from the get go.</p>
+        <p begin="00:04:47.160" end="00:04:49.980" tts:direction="ltr">Of course, when you start adding colors
+<br />into</p>
+        <p begin="00:04:49.980" end="00:04:52.400" tts:direction="ltr">it and you've got the 20 color palette,</p>
+        <p begin="00:04:52.400" end="00:04:53.940" tts:direction="ltr">can be very distracting.</p>
+        <p begin="00:04:53.940" end="00:04:55.760" tts:direction="ltr">But in your initial analysis,</p>
+        <p begin="00:04:55.760" end="00:04:57.420" tts:direction="ltr">you're not worrying about design,</p>
+        <p begin="00:04:57.420" end="00:04:59.440" tts:direction="ltr">don't spend a lot of time in that space.</p>
+        <p begin="00:04:59.440" end="00:05:01.980" tts:direction="ltr">I think Tableau does a really great job.</p>
+        <p begin="00:05:01.980" end="00:05:04.480" tts:direction="ltr">But it is important to know that there are
+<br />features</p>
+        <p begin="00:05:04.480" end="00:05:06.980" tts:direction="ltr">that you can control when you get to that
+<br />phase and</p>
+        <p begin="00:05:06.980" end="00:05:10.280" tts:direction="ltr">think about who you're going to be
+<br />presenting to</p>
+        <p begin="00:05:10.280" end="00:05:14.530" tts:direction="ltr">and how you can focus their attention on
+<br />your story.</p>
+        <p begin="00:05:14.530" end="00:05:18.240" tts:direction="ltr">Let's go to this tab where it's formatting
+<br />the parts of the view.</p>
+        <p begin="00:05:18.240" end="00:05:22.660" tts:direction="ltr">I have just a very simple table here
+<br />because I think it's an important way to</p>
+        <p begin="00:05:22.660" end="00:05:27.800" tts:direction="ltr">begin to see where and how things are
+<br />applied in Tableau.</p>
+        <p begin="00:05:27.800" end="00:05:31.020" tts:direction="ltr">Now, I know that you can't see this top
+<br />navigation,</p>
+        <p begin="00:05:31.020" end="00:05:35.100" tts:direction="ltr">but there is a format tab that you can
+<br />select,</p>
+        <p begin="00:05:35.100" end="00:05:37.740" tts:direction="ltr">you can see that you can apply things to</p>
+        <p begin="00:05:37.740" end="00:05:40.860" tts:direction="ltr">the entire workbook or specifically to
+<br />sheets.</p>
+        <p begin="00:05:40.860" end="00:05:42.940" tts:direction="ltr">Let's go ahead and select that workbook</p>
+        <p begin="00:05:42.940" end="00:05:45.695" tts:direction="ltr">tab just so that you can see what happens.</p>
+        <p begin="00:05:45.695" end="00:05:48.730" tts:direction="ltr">So when I change something at this level,</p>
+        <p begin="00:05:48.730" end="00:05:52.270" tts:direction="ltr">everything in the entire all of these tabs
+<br />will change.</p>
+        <p begin="00:05:52.270" end="00:05:54.570" tts:direction="ltr">Let's go and try that here for this all.</p>
+        <p begin="00:05:54.570" end="00:05:56.850" tts:direction="ltr">We'll change this from T book</p>
+        <p begin="00:05:56.850" end="00:05:59.670" tts:direction="ltr">to maybe just something crazy, so I can
+<br />really see.</p>
+        <p begin="00:05:59.670" end="00:06:02.070" tts:direction="ltr">Do you see how everything's been applied.</p>
+        <p begin="00:06:02.070" end="00:06:04.550" tts:direction="ltr">If I go to any one of these other,</p>
+        <p begin="00:06:04.550" end="00:06:06.835" tts:direction="ltr">they've all been applied to.</p>
+        <p begin="00:06:06.835" end="00:06:11.340" tts:direction="ltr">Let's go back here and then go back so
+<br />that can revert back.</p>
+        <p begin="00:06:11.340" end="00:06:14.940" tts:direction="ltr">You can see also that you can do something
+<br />on</p>
+        <p begin="00:06:14.940" end="00:06:20.720" tts:direction="ltr">the universal workbook for tool tips for
+<br />titles.</p>
+        <p begin="00:06:20.720" end="00:06:23.800" tts:direction="ltr">That could be very helpful if you just
+<br />want all of these titles to be</p>
+        <p begin="00:06:23.800" end="00:06:29.340" tts:direction="ltr">consistent with the same maybe size,</p>
+        <p begin="00:06:29.340" end="00:06:30.720" tts:direction="ltr">the same type face,</p>
+        <p begin="00:06:30.720" end="00:06:33.360" tts:direction="ltr">maybe the same bolding, maybe the same
+<br />color.</p>
+        <p begin="00:06:33.360" end="00:06:35.965" tts:direction="ltr">Then also story titles.</p>
+        <p begin="00:06:35.965" end="00:06:39.850" tts:direction="ltr">Now, you can just simply close this out by
+<br />putting the x to</p>
+        <p begin="00:06:39.850" end="00:06:43.850" tts:direction="ltr">get back to your data and analytics toggle
+<br />tabs here.</p>
+        <p begin="00:06:43.850" end="00:06:47.390" tts:direction="ltr">Now, if I want to go to the specific
+<br />sheet,</p>
+        <p begin="00:06:47.390" end="00:06:49.210" tts:direction="ltr">I can select on any one of these.</p>
+        <p begin="00:06:49.210" end="00:06:51.930" tts:direction="ltr">If I want to go to font for the sheet,</p>
+        <p begin="00:06:51.930" end="00:06:54.450" tts:direction="ltr">I can just select that and you'll see that
+<br />now I have</p>
+        <p begin="00:06:54.450" end="00:06:57.630" tts:direction="ltr">that font and I have the alignment,</p>
+        <p begin="00:06:57.630" end="00:07:00.170" tts:direction="ltr">and I have the the shading.</p>
+        <p begin="00:07:00.170" end="00:07:03.050" tts:direction="ltr">I have the borders,</p>
+        <p begin="00:07:03.050" end="00:07:05.210" tts:direction="ltr">and then I also have the lines.</p>
+        <p begin="00:07:05.210" end="00:07:09.585" tts:direction="ltr">I can just move through those rather than
+<br />do this drop down menu.</p>
+        <p begin="00:07:09.585" end="00:07:13.140" tts:direction="ltr">Can also see that there's the ability to
+<br />select the sheet,</p>
+        <p begin="00:07:13.140" end="00:07:18.420" tts:direction="ltr">rows, and columns, and how you can remove
+<br />some of those red lines.</p>
+        <p begin="00:07:18.420" end="00:07:20.425" tts:direction="ltr">If I was on the sheet here,</p>
+        <p begin="00:07:20.425" end="00:07:26.690" tts:direction="ltr">I might want to begin to play there's no
+<br />trend lines,</p>
+        <p begin="00:07:26.690" end="00:07:27.930" tts:direction="ltr">there's no reference lines,</p>
+        <p begin="00:07:27.930" end="00:07:29.630" tts:direction="ltr">there's no drop lines here,</p>
+        <p begin="00:07:29.630" end="00:07:34.670" tts:direction="ltr">and there's no axes rulers because I'm
+<br />just dealing with this table here.</p>
+        <p begin="00:07:34.670" end="00:07:38.150" tts:direction="ltr">I'd have to move into my rows and my
+<br />columns.</p>
+        <p begin="00:07:38.150" end="00:07:40.250" tts:direction="ltr">But rather than trying to pinpoint that,</p>
+        <p begin="00:07:40.250" end="00:07:43.770" tts:direction="ltr">another suggestion I have is to actually
+<br />go into</p>
+        <p begin="00:07:43.770" end="00:07:45.470" tts:direction="ltr">the place that you would like to change
+<br />and</p>
+        <p begin="00:07:45.470" end="00:07:47.810" tts:direction="ltr">then right click it to select formatting.</p>
+        <p begin="00:07:47.810" end="00:07:49.590" tts:direction="ltr">Let's pretend that I'm right here.</p>
+        <p begin="00:07:49.590" end="00:07:51.330" tts:direction="ltr">I'm going to click this,</p>
+        <p begin="00:07:51.330" end="00:07:55.880" tts:direction="ltr">and then I should be able to select
+<br />format.</p>
+        <p begin="00:07:55.880" end="00:07:59.540" tts:direction="ltr">Once I am there, then I can see that I'm
+<br />on the rows.</p>
+        <p begin="00:07:59.540" end="00:08:02.600" tts:direction="ltr">It wants to change on the rows level,</p>
+        <p begin="00:08:02.600" end="00:08:06.660" tts:direction="ltr">and then there's the pain and then the
+<br />grand total.</p>
+        <p begin="00:08:06.700" end="00:08:09.580" tts:direction="ltr">If I'm here and I'm going to select</p>
+        <p begin="00:08:09.580" end="00:08:12.200" tts:direction="ltr">maybe up in this corner and I'll right
+<br />click that,</p>
+        <p begin="00:08:12.200" end="00:08:15.080" tts:direction="ltr">then I should be able to format that.</p>
+        <p begin="00:08:15.080" end="00:08:17.840" tts:direction="ltr">Now what I'm going to see is that I'm
+<br />going to see</p>
+        <p begin="00:08:17.840" end="00:08:20.780" tts:direction="ltr">this is a field label with some shading,</p>
+        <p begin="00:08:20.780" end="00:08:23.220" tts:direction="ltr">so I could change that to see what
+<br />happens.</p>
+        <p begin="00:08:23.220" end="00:08:26.720" tts:direction="ltr">In this case, no, should see there we go.</p>
+        <p begin="00:08:26.720" end="00:08:28.780" tts:direction="ltr">I've got some shading that's been applied.</p>
+        <p begin="00:08:28.780" end="00:08:31.460" tts:direction="ltr">I'll go back to none. I can also</p>
+        <p begin="00:08:31.460" end="00:08:35.720" tts:direction="ltr">see what happens in this corner rows, and
+<br />columns area.</p>
+        <p begin="00:08:35.720" end="00:08:39.140" tts:direction="ltr">If I'm really looking to change some of
+<br />those,</p>
+        <p begin="00:08:39.140" end="00:08:41.880" tts:direction="ltr">I recommend going straight into the view.</p>
+        <p begin="00:08:41.880" end="00:08:45.360" tts:direction="ltr">Now, if I want to change what my values
+<br />look like,</p>
+        <p begin="00:08:45.360" end="00:08:49.800" tts:direction="ltr">I'll need to go to that measure and do
+<br />that drop down and select format.</p>
+        <p begin="00:08:49.800" end="00:08:52.220" tts:direction="ltr">Then I can go in here and say, well,</p>
+        <p begin="00:08:52.220" end="00:08:55.280" tts:direction="ltr">I want all my numbers to be percentages,</p>
+        <p begin="00:08:55.280" end="00:08:58.340" tts:direction="ltr">or I want all my numbers to be</p>
+        <p begin="00:08:58.340" end="00:09:03.080" tts:direction="ltr">custom and I only want to show one decimal
+<br />place.</p>
+        <p begin="00:09:03.080" end="00:09:08.405" tts:direction="ltr">I can do all of that within this
+<br />formatting.</p>
+        <p begin="00:09:08.405" end="00:09:11.350" tts:direction="ltr">Just be aware of where you're at.</p>
+        <p begin="00:09:11.350" end="00:09:13.650" tts:direction="ltr">I always recommend right clicking in</p>
+        <p begin="00:09:13.650" end="00:09:18.430" tts:direction="ltr">that space so that you can find where
+<br />you're situated and located.</p>
+        <p begin="00:09:18.430" end="00:09:23.590" tts:direction="ltr">I know I have been frustrated with Tableau
+<br />as I'm trying to remove</p>
+        <p begin="00:09:23.590" end="00:09:29.670" tts:direction="ltr">this one little line and this box around a
+<br />map,</p>
+        <p begin="00:09:29.670" end="00:09:33.390" tts:direction="ltr">and it does take a little bit of practice.</p>
+        <p begin="00:09:33.390" end="00:09:38.870" tts:direction="ltr">But most of those things can be found
+<br />right here or by clicking on them.</p>
+        <p begin="00:09:38.870" end="00:09:43.730" tts:direction="ltr">Let's take a look at how to create custom
+<br />number formatting.</p>
+        <p begin="00:09:43.730" end="00:09:45.670" tts:direction="ltr">I showed you how to access those,</p>
+        <p begin="00:09:45.670" end="00:09:48.930" tts:direction="ltr">but you can also apply some custom number
+<br />formats</p>
+        <p begin="00:09:48.930" end="00:09:54.170" tts:direction="ltr">where you can add some of these features
+<br />here.</p>
+        <p begin="00:09:54.210" end="00:09:57.950" tts:direction="ltr">Here I've got this up arrow and down
+<br />arrow.</p>
+        <p begin="00:09:57.950" end="00:10:03.090" tts:direction="ltr">I've applied that here to this formatting
+<br />pane where I've selected format.</p>
+        <p begin="00:10:03.090" end="00:10:04.770" tts:direction="ltr">Then when I go to numbers,</p>
+        <p begin="00:10:04.770" end="00:10:06.910" tts:direction="ltr">you see how I have custom selected</p>
+        <p begin="00:10:06.910" end="00:10:09.270" tts:direction="ltr">and then I've just copied and pasted that
+<br />in.</p>
+        <p begin="00:10:09.270" end="00:10:11.390" tts:direction="ltr">That's how I'm able to have</p>
+        <p begin="00:10:11.390" end="00:10:15.250" tts:direction="ltr">that number in there with that arrow that
+<br />goes up or down.</p>
+        <p begin="00:10:15.250" end="00:10:17.670" tts:direction="ltr">That could be a feature that you might
+<br />want to have,</p>
+        <p begin="00:10:17.670" end="00:10:19.370" tts:direction="ltr">especially if you're thinking about</p>
+        <p begin="00:10:19.370" end="00:10:24.410" tts:direction="ltr">Home values or stock prices or things like
+<br />that. You can do that.</p>
+        <p begin="00:10:24.410" end="00:10:29.010" tts:direction="ltr">Whenever I am curious if Tableau will do
+<br />something,</p>
+        <p begin="00:10:29.010" end="00:10:31.570" tts:direction="ltr">I definitely am a good search engine.</p>
+        <p begin="00:10:31.570" end="00:10:35.520" tts:direction="ltr">Um you know question person</p>
+        <p begin="00:10:35.520" end="00:10:39.880" tts:direction="ltr">and I go into my search engine and I'll
+<br />say Tableau help,</p>
+        <p begin="00:10:39.880" end="00:10:42.960" tts:direction="ltr">string formatting or number formatting.</p>
+        <p begin="00:10:42.960" end="00:10:47.760" tts:direction="ltr">I will usually provide me with some more
+<br />specific direction.</p>
+        <p begin="00:10:47.760" end="00:10:50.260" tts:direction="ltr">I do not have any of these memorized.</p>
+        <p begin="00:10:50.260" end="00:10:52.920" tts:direction="ltr">I just am getting more familiar with</p>
+        <p begin="00:10:52.920" end="00:10:57.380" tts:direction="ltr">the application so I can ask a search
+<br />engine more specifically.</p>
+        <p begin="00:10:57.380" end="00:10:59.920" tts:direction="ltr">So let's see.</p>
+        <p begin="00:10:59.920" end="00:11:04.320" tts:direction="ltr">Let me go back here. In addition to number
+<br />formatting,</p>
+        <p begin="00:11:04.320" end="00:11:10.960" tts:direction="ltr">you can actually customize what you see in
+<br />your dates.</p>
+        <p begin="00:11:10.960" end="00:11:16.100" tts:direction="ltr">Let's actually go down here to the month
+<br />and go to format,</p>
+        <p begin="00:11:16.100" end="00:11:20.720" tts:direction="ltr">and I'm going to go to dates and I'm going
+<br />to go to custom.</p>
+        <p begin="00:11:20.720" end="00:11:30.060" tts:direction="ltr">Actually, I think this is not where it's
+<br />at.</p>
+        <p begin="00:11:30.420" end="00:11:38.880" tts:direction="ltr">Let's see. That should be where I'm at.</p>
+        <p begin="00:11:38.880" end="00:11:44.780" tts:direction="ltr">Okay. I was on the wrong.</p>
+        <p begin="00:11:44.780" end="00:11:46.240" tts:direction="ltr">You can see there's a default,</p>
+        <p begin="00:11:46.240" end="00:11:48.300" tts:direction="ltr">there's the totals and the grand totals.</p>
+        <p begin="00:11:48.300" end="00:11:50.660" tts:direction="ltr">It's really on the grand totals area.</p>
+        <p begin="00:11:50.660" end="00:11:56.020" tts:direction="ltr">I did right click this so I could make
+<br />sure I was on the right, pain here.</p>
+        <p begin="00:11:56.020" end="00:11:58.120" tts:direction="ltr">What I'm down here on dates,</p>
+        <p begin="00:11:58.120" end="00:12:02.980" tts:direction="ltr">I can go to this custom and you see I've
+<br />got all of these Ms right here.</p>
+        <p begin="00:12:02.980" end="00:12:05.960" tts:direction="ltr">Those will result in a single letter of
+<br />the month.</p>
+        <p begin="00:12:05.960" end="00:12:12.660" tts:direction="ltr">But if I just did one M, I should be able
+<br />to see it should change on the fly.</p>
+        <p begin="00:12:12.660" end="00:12:14.680" tts:direction="ltr">I'm not quite sure what's going on.</p>
+        <p begin="00:12:14.680" end="00:12:16.650" tts:direction="ltr">Let me see if I do that.</p>
+        <p begin="00:12:16.650" end="00:12:18.040" tts:direction="ltr">Okay.</p>
+        <p begin="00:12:20.640" end="00:12:28.600" tts:direction="ltr">Okay. I delete that.</p>
+        <p begin="00:12:31.480" end="00:12:35.600" tts:direction="ltr">All right. I found my mistake.</p>
+        <p begin="00:12:35.600" end="00:12:39.300" tts:direction="ltr">I was on the pain and I needed to be on
+<br />the axes.</p>
+        <p begin="00:12:39.300" end="00:12:41.840" tts:direction="ltr">The pain are these areas,</p>
+        <p begin="00:12:41.840" end="00:12:45.660" tts:direction="ltr">the axes is where I was looking to
+<br />customize the format.</p>
+        <p begin="00:12:45.660" end="00:12:47.900" tts:direction="ltr">If I'm on the axes,</p>
+        <p begin="00:12:47.900" end="00:12:50.000" tts:direction="ltr">then I can see I have dates,</p>
+        <p begin="00:12:50.000" end="00:12:51.380" tts:direction="ltr">and then I can do custom,</p>
+        <p begin="00:12:51.380" end="00:12:53.200" tts:direction="ltr">and then I can type in one.</p>
+        <p begin="00:12:53.200" end="00:12:55.620" tts:direction="ltr">I'll just give you the number, two,</p>
+        <p begin="00:12:55.620" end="00:12:57.680" tts:direction="ltr">will give me two places,</p>
+        <p begin="00:12:57.680" end="00:13:00.720" tts:direction="ltr">three will be an abbreviation of the
+<br />months.</p>
+        <p begin="00:13:00.720" end="00:13:02.940" tts:direction="ltr">Four will be the full month name and</p>
+        <p begin="00:13:02.940" end="00:13:05.340" tts:direction="ltr">five will be just the first letter of the
+<br />month.</p>
+        <p begin="00:13:05.340" end="00:13:09.600" tts:direction="ltr">If I happen to have a really a very small
+<br />space</p>
+        <p begin="00:13:09.600" end="00:13:11.460" tts:direction="ltr">in my dashboard for this line chart,</p>
+        <p begin="00:13:11.460" end="00:13:15.860" tts:direction="ltr">but I still want to show at least the
+<br />first letter of my month,</p>
+        <p begin="00:13:15.860" end="00:13:19.240" tts:direction="ltr">this would be a really great way to
+<br />customize that.</p>
+        <p begin="00:13:19.400" end="00:13:23.180" tts:direction="ltr">All right. The next one that I want to
+<br />show you that's</p>
+        <p begin="00:13:23.180" end="00:13:26.480" tts:direction="ltr">in this pane is this idea of these null
+<br />values.</p>
+        <p begin="00:13:26.480" end="00:13:29.200" tts:direction="ltr">Sometimes you will have some values that
+<br />will be</p>
+        <p begin="00:13:29.200" end="00:13:33.320" tts:direction="ltr">missing and you can customize those as
+<br />well.</p>
+        <p begin="00:13:33.320" end="00:13:36.580" tts:direction="ltr">I do go on the pan tab for this one,</p>
+        <p begin="00:13:36.580" end="00:13:38.840" tts:direction="ltr">so that will be here in the pane,</p>
+        <p begin="00:13:38.840" end="00:13:45.480" tts:direction="ltr">where I can go and I can actually insert a
+<br />special value if I chose.</p>
+        <p begin="00:13:45.480" end="00:13:48.000" tts:direction="ltr">Let me make sure I've selected that.</p>
+        <p begin="00:13:49.720" end="00:13:57.600" tts:direction="ltr">Go here. We'll format that that's the
+<br />reference ban.</p>
+        <p begin="00:13:58.060" end="00:14:04.420" tts:direction="ltr">I'm just right clicking to make sure I'm
+<br />in the right space,</p>
+        <p begin="00:14:04.420" end="00:14:07.880" tts:direction="ltr">and I should be on the pane, and there we
+<br />go.</p>
+        <p begin="00:14:07.880" end="00:14:12.220" tts:direction="ltr">Now I'm in the right area where I've got
+<br />my two nulls.</p>
+        <p begin="00:14:12.220" end="00:14:14.580" tts:direction="ltr">Now I could type something in if I wanted
+<br />to,</p>
+        <p begin="00:14:14.580" end="00:14:17.440" tts:direction="ltr">and I can also show it the indicator.</p>
+        <p begin="00:14:17.440" end="00:14:19.740" tts:direction="ltr">I could show the default,</p>
+        <p begin="00:14:19.740" end="00:14:23.780" tts:direction="ltr">hide the connection line or break those.</p>
+        <p begin="00:14:23.780" end="00:14:27.300" tts:direction="ltr">A lot of different ways to look at</p>
+        <p begin="00:14:27.300" end="00:14:32.020" tts:direction="ltr">null values as well that's here in that
+<br />formatting pan.</p>
+        <p begin="00:14:32.020" end="00:14:36.920" tts:direction="ltr">Let's go and close that and move into
+<br />shapes.</p>
+        <p begin="00:14:36.920" end="00:14:38.960" tts:direction="ltr">Shapes is another great feature.</p>
+        <p begin="00:14:38.960" end="00:14:41.140" tts:direction="ltr">Here, I've just got a very simple scatter
+<br />plot</p>
+        <p begin="00:14:41.140" end="00:14:43.160" tts:direction="ltr">where I've got profit and sales,</p>
+        <p begin="00:14:43.160" end="00:14:44.920" tts:direction="ltr">some of sales, some of profit,</p>
+        <p begin="00:14:44.920" end="00:14:47.820" tts:direction="ltr">and then I have regions on color,</p>
+        <p begin="00:14:48.220" end="00:14:50.600" tts:direction="ltr">you may want to customize</p>
+        <p begin="00:14:50.600" end="00:14:54.000" tts:direction="ltr">those shapes and you have the dialog box
+<br />that comes up.</p>
+        <p begin="00:14:54.000" end="00:14:57.520" tts:direction="ltr">It says more shapes here and I can select
+<br />those.</p>
+        <p begin="00:14:57.520" end="00:15:02.880" tts:direction="ltr">But I can also a sign or bring in some
+<br />shape.</p>
+        <p begin="00:15:02.880" end="00:15:04.460" tts:direction="ltr">The other thing I want to show,</p>
+        <p begin="00:15:04.460" end="00:15:07.720" tts:direction="ltr">let me just go back here and do a circle.</p>
+        <p begin="00:15:07.720" end="00:15:10.160" tts:direction="ltr">If I want to have that filled in,</p>
+        <p begin="00:15:10.160" end="00:15:15.820" tts:direction="ltr">I'm going to have to change that from
+<br />automatic to a circle.</p>
+        <p begin="00:15:15.820" end="00:15:20.900" tts:direction="ltr">That will fill that in. Then I can change
+<br />maybe I want to have a border.</p>
+        <p begin="00:15:20.900" end="00:15:23.370" tts:direction="ltr">Let's do a really dark border here.</p>
+        <p begin="00:15:23.370" end="00:15:27.840" tts:direction="ltr">And then I might look like it won't let me
+<br />do a halo,</p>
+        <p begin="00:15:27.840" end="00:15:30.700" tts:direction="ltr">but I might want to decrease the opacity
+<br />of this.</p>
+        <p begin="00:15:30.700" end="00:15:33.180" tts:direction="ltr">Maybe I want to see more of those.</p>
+        <p begin="00:15:33.180" end="00:15:39.500" tts:direction="ltr">Just be aware that that is where you can
+<br />have those features.</p>
+        <p begin="00:15:39.500" end="00:15:42.740" tts:direction="ltr">If I want to bring in some custom shapes,</p>
+        <p begin="00:15:42.740" end="00:15:46.700" tts:direction="ltr">then I'll have to do that in my
+<br />repository.</p>
+        <p begin="00:15:46.700" end="00:15:50.520" tts:direction="ltr">The place that I have mine is in
+<br />documents.</p>
+        <p begin="00:15:50.520" end="00:15:54.260" tts:direction="ltr">And you'll see that I have my Tableau
+<br />repository,</p>
+        <p begin="00:15:54.260" end="00:15:57.440" tts:direction="ltr">and there will be a place for shapes.</p>
+        <p begin="00:15:57.440" end="00:16:02.980" tts:direction="ltr">This is where you can create a new folder
+<br />and then upload some shapes.</p>
+        <p begin="00:16:02.980" end="00:16:04.780" tts:direction="ltr">I've provided some boat icons,</p>
+        <p begin="00:16:04.780" end="00:16:07.660" tts:direction="ltr">if you wanted to use those.</p>
+        <p begin="00:16:07.660" end="00:16:10.200" tts:direction="ltr">I've got a cargo boat, a cruise boat,</p>
+        <p begin="00:16:10.200" end="00:16:11.880" tts:direction="ltr">a mayflower and a sailboat,</p>
+        <p begin="00:16:11.880" end="00:16:15.100" tts:direction="ltr">and I got these from flat icons,</p>
+        <p begin="00:16:15.100" end="00:16:16.880" tts:direction="ltr">favorite website of mine,</p>
+        <p begin="00:16:16.880" end="00:16:18.600" tts:direction="ltr">and you can bring those in,</p>
+        <p begin="00:16:18.600" end="00:16:20.520" tts:direction="ltr">create a new folder,</p>
+        <p begin="00:16:20.520" end="00:16:24.800" tts:direction="ltr">and then leverage those in your design.</p>
+        <p begin="00:16:24.800" end="00:16:28.380" tts:direction="ltr">In this case, I'm only able to let me go
+<br />back</p>
+        <p begin="00:16:28.380" end="00:16:33.900" tts:direction="ltr">to The way that</p>
+        <p begin="00:16:33.900" end="00:16:38.660" tts:direction="ltr">I want to add those shapes is I'm going to
+<br />bring region onto shape as well.</p>
+        <p begin="00:16:38.660" end="00:16:42.240" tts:direction="ltr">Just so that you know, I went back from my
+<br />circle,</p>
+        <p begin="00:16:42.240" end="00:16:45.200" tts:direction="ltr">filled in circle to this automatic so I</p>
+        <p begin="00:16:45.200" end="00:16:48.180" tts:direction="ltr">could have this selection in the marks
+<br />card,</p>
+        <p begin="00:16:48.180" end="00:16:52.240" tts:direction="ltr">and then I'm going to bring region onto
+<br />shape where now if</p>
+        <p begin="00:16:52.240" end="00:16:56.980" tts:direction="ltr">I click on that shape and I go down and
+<br />select those boat icons,</p>
+        <p begin="00:16:56.980" end="00:17:03.300" tts:direction="ltr">I can apply one of those boats to each of
+<br />the regions.</p>
+        <p begin="00:17:03.300" end="00:17:06.800" tts:direction="ltr">There we go and say, Okay.</p>
+        <p begin="00:17:06.800" end="00:17:10.860" tts:direction="ltr">Then I can also increase that size.</p>
+        <p begin="00:17:11.860" end="00:17:16.080" tts:direction="ltr">That could be helpful if you're doing a
+<br />scatter plot or you want to have</p>
+        <p begin="00:17:16.080" end="00:17:20.720" tts:direction="ltr">a custom shape because it fits with your
+<br />audience and with your message.</p>
+        <p begin="00:17:20.720" end="00:17:23.560" tts:direction="ltr">You can easily bring in some shapes to do
+<br />that.</p>
+        <p begin="00:17:23.560" end="00:17:26.120" tts:direction="ltr">Then those will be colored according to</p>
+        <p begin="00:17:26.120" end="00:17:30.140" tts:direction="ltr">whatever colors that you assign it in the
+<br />color palette.</p>
+        <p begin="00:17:30.140" end="00:17:36.100" tts:direction="ltr">We're going to now talk about how to
+<br />create and bring in some custom colors.</p>
+        <p begin="00:17:36.290" end="00:17:38.490" tts:direction="ltr">The way that you'll do that,</p>
+        <p begin="00:17:38.490" end="00:17:42.190" tts:direction="ltr">let me jump into the presentation here
+<br />where</p>
+        <p begin="00:17:42.190" end="00:17:46.690" tts:direction="ltr">we've looked at some custom shapes and for
+<br />custom colors,</p>
+        <p begin="00:17:46.690" end="00:17:53.530" tts:direction="ltr">you'll go back into that table repository
+<br />where there is a preferences to TPS,</p>
+        <p begin="00:17:53.530" end="00:17:57.610" tts:direction="ltr">where you can go into a text editor and
+<br />add in</p>
+        <p begin="00:17:57.610" end="00:18:02.420" tts:direction="ltr">some code that will bring in a custom
+<br />color.</p>
+        <p begin="00:18:02.420" end="00:18:07.180" tts:direction="ltr">There's the ability to put in a
+<br />categorical color palette and that's up to
+<br />20.</p>
+        <p begin="00:18:07.180" end="00:18:09.320" tts:direction="ltr">You'll see there we've got the color,</p>
+        <p begin="00:18:09.320" end="00:18:12.260" tts:direction="ltr">we'll have the hex deecimal color number
+<br />there,</p>
+        <p begin="00:18:12.260" end="00:18:13.980" tts:direction="ltr">closed by the color,</p>
+        <p begin="00:18:13.980" end="00:18:16.440" tts:direction="ltr">and you can add those in there.</p>
+        <p begin="00:18:16.440" end="00:18:22.320" tts:direction="ltr">We're going to be adding in some custom
+<br />colors from the Huntsman.</p>
+        <p begin="00:18:22.320" end="00:18:26.680" tts:direction="ltr">You can follow along with me and add that
+<br />if you wish.</p>
+        <p begin="00:18:26.680" end="00:18:29.700" tts:direction="ltr">You also have the sequential colors.</p>
+        <p begin="00:18:29.700" end="00:18:31.900" tts:direction="ltr">Those are from light to dark.</p>
+        <p begin="00:18:31.900" end="00:18:36.150" tts:direction="ltr">I've got some examples of that also from
+<br />the Huntsman School.</p>
+        <p begin="00:18:36.150" end="00:18:38.100" tts:direction="ltr">And then the diverging palette.</p>
+        <p begin="00:18:38.100" end="00:18:40.720" tts:direction="ltr">This would be helpful, especially if you
+<br />are</p>
+        <p begin="00:18:40.720" end="00:18:43.820" tts:direction="ltr">in a company that has a specific brand
+<br />guidelines,</p>
+        <p begin="00:18:43.820" end="00:18:47.040" tts:direction="ltr">and you'll need to upload those into
+<br />Tableau.</p>
+        <p begin="00:18:47.040" end="00:18:52.860" tts:direction="ltr">If I'm back here at my documents area and
+<br />I'm in my Tableau repository.</p>
+        <p begin="00:18:52.860" end="00:18:55.300" tts:direction="ltr">Again, I'm using a MAC, in a PC,</p>
+        <p begin="00:18:55.300" end="00:18:59.800" tts:direction="ltr">you might just want to do a search for my
+<br />Tableau repository.</p>
+        <p begin="00:18:59.800" end="00:19:03.820" tts:direction="ltr">You'll see here I've got this preferences,
+<br />TPS.</p>
+        <p begin="00:19:03.820" end="00:19:07.480" tts:direction="ltr">I'm going to go and right click it and
+<br />select open with,</p>
+        <p begin="00:19:07.480" end="00:19:09.825" tts:direction="ltr">and I'm going to just do other</p>
+        <p begin="00:19:09.825" end="00:19:13.610" tts:direction="ltr">and I'm going to just type in my text
+<br />editor here,</p>
+        <p begin="00:19:13.610" end="00:19:17.145" tts:direction="ltr">so I can see that and then I'll open that
+<br />up.</p>
+        <p begin="00:19:17.145" end="00:19:24.140" tts:direction="ltr">Now, all you'll need to do is copy and
+<br />paste this code that I've given</p>
+        <p begin="00:19:24.140" end="00:19:26.840" tts:direction="ltr">to you and you'll add it in</p>
+        <p begin="00:19:26.840" end="00:19:30.980" tts:direction="ltr">between that preference line and that
+<br />preference line.</p>
+        <p begin="00:19:30.980" end="00:19:33.580" tts:direction="ltr">Here again, you can add multiple.</p>
+        <p begin="00:19:33.580" end="00:19:35.620" tts:direction="ltr">You have lots of different options</p>
+        <p begin="00:19:35.620" end="00:19:39.480" tts:direction="ltr">for your color choices, your color
+<br />palettes.</p>
+        <p begin="00:19:39.480" end="00:19:42.420" tts:direction="ltr">But here, I'll just give these all to you
+<br />so that</p>
+        <p begin="00:19:42.420" end="00:19:45.560" tts:direction="ltr">you can copy and paste those into that
+<br />space.</p>
+        <p begin="00:19:45.560" end="00:19:48.940" tts:direction="ltr">Now one thing just to double check is that
+<br />you're using</p>
+        <p begin="00:19:48.940" end="00:19:55.980" tts:direction="ltr">straight lines for these quotes, not
+<br />Curly.</p>
+        <p begin="00:19:55.980" end="00:19:58.200" tts:direction="ltr">Curly will not make them work.</p>
+        <p begin="00:19:58.200" end="00:20:01.865" tts:direction="ltr">Make sure you're using straight in the
+<br />copy and paste.</p>
+        <p begin="00:20:01.865" end="00:20:05.810" tts:direction="ltr">Once you've uploaded those into the TPS
+<br />file,</p>
+        <p begin="00:20:05.810" end="00:20:09.930" tts:direction="ltr">you will need to restart Tableau in order
+<br />for it to apply.</p>
+        <p begin="00:20:09.930" end="00:20:13.470" tts:direction="ltr">Just be aware of that process.</p>
+        <p begin="00:20:13.550" end="00:20:18.830" tts:direction="ltr">Once you have that, then you should be
+<br />able to go into that color.</p>
+        <p begin="00:20:18.830" end="00:20:20.510" tts:direction="ltr">We're going to edit those colors,</p>
+        <p begin="00:20:20.510" end="00:20:24.270" tts:direction="ltr">and now I can go down and I can see I'm
+<br />going to maybe</p>
+        <p begin="00:20:24.270" end="00:20:28.410" tts:direction="ltr">use the Huntsman categorical colors and I
+<br />can say,</p>
+        <p begin="00:20:28.410" end="00:20:30.230" tts:direction="ltr">I'll use that darker color.</p>
+        <p begin="00:20:30.230" end="00:20:31.810" tts:direction="ltr">There's not a lot of pop here,</p>
+        <p begin="00:20:31.810" end="00:20:35.350" tts:direction="ltr">so I might have to grab something else.</p>
+        <p begin="00:20:37.510" end="00:20:43.290" tts:direction="ltr">I edit colors. The sequential won't have a
+<br />lot either.</p>
+        <p begin="00:20:43.290" end="00:20:45.870" tts:direction="ltr">Interesting. Because I haven't restarted</p>
+        <p begin="00:20:45.870" end="00:20:49.770" tts:direction="ltr">this where it shows the diverging palette.</p>
+        <p begin="00:20:49.770" end="00:20:55.635" tts:direction="ltr">That's how you can apply custom colors
+<br />very easily to tableau.</p>
+        <p begin="00:20:55.635" end="00:20:59.700" tts:direction="ltr">Now, this is the chart that I showed you
+<br />at the beginning,</p>
+        <p begin="00:20:59.700" end="00:21:04.520" tts:direction="ltr">where it is a line chart and we've added
+<br />in the analytics here.</p>
+        <p begin="00:21:04.520" end="00:21:09.800" tts:direction="ltr">I just wanted to show a few things where
+<br />you can do some callouts here.</p>
+        <p begin="00:21:10.280" end="00:21:18.920" tts:direction="ltr">One of the things I think is a great
+<br />option is that you can annotate a mark.</p>
+        <p begin="00:21:18.920" end="00:21:21.200" tts:direction="ltr">This one I have already annotated,</p>
+        <p begin="00:21:21.200" end="00:21:25.820" tts:direction="ltr">so I'm going to annotate that mark and by
+<br />right clicking on it,</p>
+        <p begin="00:21:25.820" end="00:21:29.560" tts:direction="ltr">and then this dialogue box will come up
+<br />and I can have that department,</p>
+        <p begin="00:21:29.560" end="00:21:31.300" tts:direction="ltr">quarter order date, sales,</p>
+        <p begin="00:21:31.300" end="00:21:34.630" tts:direction="ltr">and then it will show in the view.</p>
+        <p begin="00:21:34.630" end="00:21:36.770" tts:direction="ltr">It'll be something that will be static.</p>
+        <p begin="00:21:36.770" end="00:21:40.390" tts:direction="ltr">Now I can have a background color like I
+<br />have right here.</p>
+        <p begin="00:21:40.390" end="00:21:44.270" tts:direction="ltr">If I'm looking for some fields to
+<br />dynamically change,</p>
+        <p begin="00:21:44.270" end="00:21:46.790" tts:direction="ltr">I would go into this insert and that's
+<br />where you can</p>
+        <p begin="00:21:46.790" end="00:21:49.710" tts:direction="ltr">see I've got department quarter and sum of
+<br />sales.</p>
+        <p begin="00:21:49.710" end="00:21:51.890" tts:direction="ltr">Now, where those are coming from in</p>
+        <p begin="00:21:51.890" end="00:21:56.770" tts:direction="ltr">my tool tip is all of the dimensions and
+<br />measures that I have on the view.</p>
+        <p begin="00:21:56.770" end="00:21:59.190" tts:direction="ltr">If I want to add something,</p>
+        <p begin="00:21:59.190" end="00:22:00.770" tts:direction="ltr">but don't see it.</p>
+        <p begin="00:22:00.770" end="00:22:03.630" tts:direction="ltr">Let me close out move to the data pane.</p>
+        <p begin="00:22:03.630" end="00:22:05.730" tts:direction="ltr">Maybe I want to have postal code.</p>
+        <p begin="00:22:05.730" end="00:22:08.380" tts:direction="ltr">I might add that to my label.</p>
+        <p begin="00:22:08.380" end="00:22:13.050" tts:direction="ltr">Actually, I won't add that to my label
+<br />because that was crazy.</p>
+        <p begin="00:22:13.050" end="00:22:24.210" tts:direction="ltr">Let me go ahead and going to let's see.</p>
+        <p begin="00:22:24.290" end="00:22:28.270" tts:direction="ltr">I cannot show all the mark labels.</p>
+        <p begin="00:22:28.270" end="00:22:31.950" tts:direction="ltr">Let's just add it to the tool tip. Let's
+<br />get a row.</p>
+        <p begin="00:22:31.950" end="00:22:34.630" tts:direction="ltr">Let's see what was looking at before,</p>
+        <p begin="00:22:34.630" end="00:22:37.810" tts:direction="ltr">postal code and I can add it to the tool
+<br />tip.</p>
+        <p begin="00:22:37.810" end="00:22:42.270" tts:direction="ltr">Now I have these are my options that I can
+<br />have in my tool tip,</p>
+        <p begin="00:22:42.270" end="00:22:46.570" tts:direction="ltr">and I can remove these and I can format
+<br />these just like I've done others.</p>
+        <p begin="00:22:46.570" end="00:22:49.330" tts:direction="ltr">Now, in our base camp for story,</p>
+        <p begin="00:22:49.330" end="00:22:54.970" tts:direction="ltr">you'll learn that crossing your Ts is
+<br />something that Coach Woppa requires.</p>
+        <p begin="00:22:54.970" end="00:22:57.690" tts:direction="ltr">You're going to need to write</p>
+        <p begin="00:22:57.690" end="00:23:03.010" tts:direction="ltr">tool tips that are sentences and that have
+<br />emphases in them.</p>
+        <p begin="00:23:03.010" end="00:23:04.470" tts:direction="ltr">That's where you would do that here.</p>
+        <p begin="00:23:04.470" end="00:23:06.850" tts:direction="ltr">If you need to add some of those fields,
+<br />for instance,</p>
+        <p begin="00:23:06.850" end="00:23:12.470" tts:direction="ltr">I've got this insert, Now I have the
+<br />postal code available for me.</p>
+        <p begin="00:23:12.470" end="00:23:15.690" tts:direction="ltr">I can just add that onto the tool tip.
+<br />Okay?</p>
+        <p begin="00:23:15.820" end="00:23:18.140" tts:direction="ltr">I've got those marks,</p>
+        <p begin="00:23:18.140" end="00:23:20.220" tts:direction="ltr">those annotations that I can pull out,</p>
+        <p begin="00:23:20.220" end="00:23:24.200" tts:direction="ltr">and I can make those dynamically change if
+<br />I want.</p>
+        <p begin="00:23:24.200" end="00:23:26.080" tts:direction="ltr">You can also, of course,</p>
+        <p begin="00:23:26.080" end="00:23:29.700" tts:direction="ltr">do some formatting to clean up the view or
+<br />to create</p>
+        <p begin="00:23:29.700" end="00:23:33.820" tts:direction="ltr">some emphasis in the title area.</p>
+        <p begin="00:23:33.820" end="00:23:36.820" tts:direction="ltr">You can see here, I've got the sheet name.</p>
+        <p begin="00:23:36.820" end="00:23:41.280" tts:direction="ltr">I can actually eliminate that here so that
+<br />it's not showing,</p>
+        <p begin="00:23:41.280" end="00:23:46.100" tts:direction="ltr">and I can change this where maybe I want
+<br />to add some blue.</p>
+        <p begin="00:23:46.100" end="00:23:49.040" tts:direction="ltr">Maybe I want to have this to be 18.</p>
+        <p begin="00:23:49.040" end="00:23:54.740" tts:direction="ltr">Maybe I will do A subtitle</p>
+        <p begin="00:23:54.740" end="00:24:00.900" tts:direction="ltr">goes here and I'll just go ahead and make
+<br />this a lot smaller.</p>
+        <p begin="00:24:00.900" end="00:24:05.640" tts:direction="ltr">Maybe I'll use nice gray for some subtle
+<br />contrast,</p>
+        <p begin="00:24:05.640" end="00:24:09.400" tts:direction="ltr">and maybe I'll change that type base.</p>
+        <p begin="00:24:09.400" end="00:24:13.140" tts:direction="ltr">Although I really do recommend staying
+<br />within the same family.</p>
+        <p begin="00:24:13.140" end="00:24:17.090" tts:direction="ltr">Let me see. I'll just go to regular here.</p>
+        <p begin="00:24:17.090" end="00:24:23.600" tts:direction="ltr">Okay. So that's where you can apply some
+<br />of that format right there.</p>
+        <p begin="00:24:23.600" end="00:24:26.640" tts:direction="ltr">As you work with your challenge,</p>
+        <p begin="00:24:26.640" end="00:24:32.580" tts:direction="ltr">you'll definitely begin to use these
+<br />formating features.</p>
+        <p begin="00:24:32.580" end="00:24:34.740" tts:direction="ltr">Now, one thing I want to show with you is</p>
+        <p begin="00:24:34.740" end="00:24:39.100" tts:direction="ltr">these tool tips making sure that those can
+<br />be more useful.</p>
+        <p begin="00:24:39.100" end="00:24:40.700" tts:direction="ltr">Let me just show you within,</p>
+        <p begin="00:24:40.700" end="00:24:43.440" tts:direction="ltr">I've got this bar chart here with
+<br />categories.</p>
+        <p begin="00:24:43.440" end="00:24:46.600" tts:direction="ltr">If I go back to the tool tips and I click
+<br />on it,</p>
+        <p begin="00:24:46.600" end="00:24:52.420" tts:direction="ltr">You'll see that I can actually insert
+<br />another sheet.</p>
+        <p begin="00:24:52.420" end="00:24:54.860" tts:direction="ltr">If I'm here in insert and I go to sheet,</p>
+        <p begin="00:24:54.860" end="00:24:59.060" tts:direction="ltr">I can go to that categories, place that in
+<br />there.</p>
+        <p begin="00:24:59.060" end="00:25:03.340" tts:direction="ltr">You'll see that right now the max width is
+<br />300 by 300,</p>
+        <p begin="00:25:03.340" end="00:25:05.820" tts:direction="ltr">actually can go in there and change that.</p>
+        <p begin="00:25:05.820" end="00:25:11.380" tts:direction="ltr">Maybe I'll say 250.</p>
+        <p begin="00:25:12.130" end="00:25:17.190" tts:direction="ltr">By 250, we don't want that much and click.</p>
+        <p begin="00:25:17.190" end="00:25:18.990" tts:direction="ltr">Then once I roll over,</p>
+        <p begin="00:25:18.990" end="00:25:22.150" tts:direction="ltr">do you see how there's now that chart
+<br />within</p>
+        <p begin="00:25:22.150" end="00:25:25.430" tts:direction="ltr">that chart to provide an additional layer
+<br />of details.</p>
+        <p begin="00:25:25.430" end="00:25:30.450" tts:direction="ltr">Of course, that can dynamically change
+<br />according to what I've selected.</p>
+        <p begin="00:25:30.450" end="00:25:34.950" tts:direction="ltr">If I had some relationship between those
+<br />looks like I don't,</p>
+        <p begin="00:25:34.950" end="00:25:37.810" tts:direction="ltr">then I could reorder those.</p>
+        <p begin="00:25:38.320" end="00:25:42.440" tts:direction="ltr">Based looks like on maybe sales.</p>
+        <p begin="00:25:42.520" end="00:25:44.960" tts:direction="ltr">That's how you can grab it.</p>
+        <p begin="00:25:44.960" end="00:25:48.560" tts:direction="ltr">Now I want to show you one other thing
+<br />when it comes to formatting.</p>
+        <p begin="00:25:48.560" end="00:25:53.440" tts:direction="ltr">I didn't include this on your view.</p>
+        <p begin="00:25:53.440" end="00:25:56.565" tts:direction="ltr">But if I wanted some dramatic formatting,</p>
+        <p begin="00:25:56.565" end="00:26:00.690" tts:direction="ltr">This is my exploration chart.</p>
+        <p begin="00:26:00.690" end="00:26:05.110" tts:direction="ltr">I could go in to my formatting and I could
+<br />reverse</p>
+        <p begin="00:26:05.110" end="00:26:10.250" tts:direction="ltr">things out and I could make this
+<br />particular number pop.</p>
+        <p begin="00:26:10.250" end="00:26:15.870" tts:direction="ltr">I'm using that ability to place that
+<br />caption in there.</p>
+        <p begin="00:26:15.870" end="00:26:18.890" tts:direction="ltr">The best way that I know how to apply</p>
+        <p begin="00:26:18.890" end="00:26:22.290" tts:direction="ltr">formatting is just be somewhat aware
+<br />globally of</p>
+        <p begin="00:26:22.290" end="00:26:25.050" tts:direction="ltr">how to do it and then just dive in and</p>
+        <p begin="00:26:25.050" end="00:26:28.350" tts:direction="ltr">that's what you'll be doing in your next
+<br />challenge.</p>
+        <p begin="00:26:28.350" end="00:26:31.250" tts:direction="ltr">I can't wait to see what design features
+<br />that you</p>
+        <p begin="00:26:31.250" end="00:26:36.690" tts:direction="ltr">find that work with your chart and Happy
+<br />vizing</p>
+    </div>
+  </body>
+</tt>

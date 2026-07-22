@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>480142232 - 1_9g8re2u2 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.080" end="00:00:04.520" tts:direction="ltr">Hello, visitors. This is a demo on how</p>
+        <p begin="00:00:04.520" end="00:00:08.840" tts:direction="ltr">to use tableau templates when creating a
+<br />dashboard.</p>
+        <p begin="00:00:08.840" end="00:00:11.940" tts:direction="ltr">This is a dashboard that some of you may
+<br />be</p>
+        <p begin="00:00:11.940" end="00:00:15.640" tts:direction="ltr">familiar with if you took data 3,400.</p>
+        <p begin="00:00:15.640" end="00:00:20.140" tts:direction="ltr">This is the final challenge or one of the
+<br />results of the final challenge,</p>
+        <p begin="00:00:20.140" end="00:00:26.240" tts:direction="ltr">which is a dashboard that has a map and
+<br />looks like my filters are not working,</p>
+        <p begin="00:00:26.240" end="00:00:27.780" tts:direction="ltr">but when I click on a State,</p>
+        <p begin="00:00:27.780" end="00:00:31.980" tts:direction="ltr">then these particular bar charts will be
+<br />filtered.</p>
+        <p begin="00:00:31.980" end="00:00:35.120" tts:direction="ltr">And I took a lot of time to design this.</p>
+        <p begin="00:00:35.120" end="00:00:37.480" tts:direction="ltr">I created these tiled effects.</p>
+        <p begin="00:00:37.480" end="00:00:39.200" tts:direction="ltr">I floated things in here,</p>
+        <p begin="00:00:39.200" end="00:00:42.300" tts:direction="ltr">and I feel really good about this design.</p>
+        <p begin="00:00:42.300" end="00:00:46.400" tts:direction="ltr">I think based on the purpose of that
+<br />challenge,</p>
+        <p begin="00:00:46.400" end="00:00:48.200" tts:direction="ltr">this is a good result.</p>
+        <p begin="00:00:48.200" end="00:00:52.840" tts:direction="ltr">However, I want to upscale you with the
+<br />power of templates</p>
+        <p begin="00:00:52.840" end="00:00:58.600" tts:direction="ltr">because it can truncate your design time
+<br />that you can focus on the analytics,</p>
+        <p begin="00:00:58.600" end="00:01:00.700" tts:direction="ltr">which is the focus of this course.</p>
+        <p begin="00:01:00.700" end="00:01:05.230" tts:direction="ltr">I'm going to share with you my design hack
+<br />that I use</p>
+        <p begin="00:01:05.230" end="00:01:10.310" tts:direction="ltr">a lot in my own personal consulting and
+<br />work.</p>
+        <p begin="00:01:10.310" end="00:01:15.750" tts:direction="ltr">I do design work and I use templates a lot
+<br />as a place to start.</p>
+        <p begin="00:01:15.750" end="00:01:19.110" tts:direction="ltr">The reason why is that it is often easier
+<br />to</p>
+        <p begin="00:01:19.110" end="00:01:23.130" tts:direction="ltr">remove things than to create and add
+<br />things.</p>
+        <p begin="00:01:23.130" end="00:01:27.440" tts:direction="ltr">So I want to share with you the ability</p>
+        <p begin="00:01:27.440" end="00:01:29.260" tts:direction="ltr">for you to work with a template</p>
+        <p begin="00:01:29.260" end="00:01:31.940" tts:direction="ltr">and then remove the things that you don't
+<br />need.</p>
+        <p begin="00:01:31.940" end="00:01:36.020" tts:direction="ltr">This is a Twix file.</p>
+        <p begin="00:01:36.020" end="00:01:39.100" tts:direction="ltr">It has the tableau dashboard template.</p>
+        <p begin="00:01:39.100" end="00:01:43.520" tts:direction="ltr">It's for your use here while you're at
+<br />USU,</p>
+        <p begin="00:01:43.520" end="00:01:46.540" tts:direction="ltr">and there is some basic templates,</p>
+        <p begin="00:01:46.540" end="00:01:49.400" tts:direction="ltr">and you can see that as an image.</p>
+        <p begin="00:01:49.400" end="00:01:54.440" tts:direction="ltr">There's sidebar navigation, there's
+<br />vertical navigation,</p>
+        <p begin="00:01:54.440" end="00:02:00.520" tts:direction="ltr">and there's other icons and sidebar
+<br />filters and top navigation.</p>
+        <p begin="00:02:00.520" end="00:02:02.800" tts:direction="ltr">There are some examples as well.</p>
+        <p begin="00:02:02.800" end="00:02:05.540" tts:direction="ltr">If we scroll to the very far right,</p>
+        <p begin="00:02:05.540" end="00:02:08.445" tts:direction="ltr">you'll see those examples right here.</p>
+        <p begin="00:02:08.445" end="00:02:11.030" tts:direction="ltr">And you can see how these are.</p>
+        <p begin="00:02:11.030" end="00:02:13.370" tts:direction="ltr">This is the company right here, Nudge BI,</p>
+        <p begin="00:02:13.370" end="00:02:18.090" tts:direction="ltr">that is the creator of these awesome
+<br />dashboards,</p>
+        <p begin="00:02:18.090" end="00:02:21.210" tts:direction="ltr">and I have an education license.</p>
+        <p begin="00:02:21.330" end="00:02:26.030" tts:direction="ltr">You can check out a couple of these
+<br />awesome examples to really get</p>
+        <p begin="00:02:26.030" end="00:02:31.410" tts:direction="ltr">a feel for how this might play out in your
+<br />own work or projects.</p>
+        <p begin="00:02:31.410" end="00:02:35.610" tts:direction="ltr">Here for Data 5,400 or for the ASC.</p>
+        <p begin="00:02:35.610" end="00:02:39.650" tts:direction="ltr">All those things would be under this fair
+<br />use.</p>
+        <p begin="00:02:39.730" end="00:02:43.210" tts:direction="ltr">Let's go back to the templates here.</p>
+        <p begin="00:02:43.210" end="00:02:46.265" tts:direction="ltr">I want to use this basic template.</p>
+        <p begin="00:02:46.265" end="00:02:50.640" tts:direction="ltr">I just has the filter and some information
+<br />here.</p>
+        <p begin="00:02:50.640" end="00:02:53.520" tts:direction="ltr">I'm going to apply this to</p>
+        <p begin="00:02:53.520" end="00:02:58.580" tts:direction="ltr">my project here that I've got I've got a
+<br />start of a dashboard,</p>
+        <p begin="00:02:58.580" end="00:02:59.840" tts:direction="ltr">but I think I can do it better.</p>
+        <p begin="00:02:59.840" end="00:03:02.200" tts:direction="ltr">The way I'm going to do that, when I'm on
+<br />the dashboard,</p>
+        <p begin="00:03:02.200" end="00:03:03.720" tts:direction="ltr">I'm just going to right click it,</p>
+        <p begin="00:03:03.720" end="00:03:06.220" tts:direction="ltr">and then I'm going to hit copy.</p>
+        <p begin="00:03:06.220" end="00:03:08.800" tts:direction="ltr">Going to go ahead and close this out,</p>
+        <p begin="00:03:08.800" end="00:03:12.220" tts:direction="ltr">and then I'm going to on my file here,</p>
+        <p begin="00:03:12.220" end="00:03:14.060" tts:direction="ltr">just create a new dashboard,</p>
+        <p begin="00:03:14.060" end="00:03:22.260" tts:direction="ltr">and when I'm on there, control V on that
+<br />tab right there and then hit paste.</p>
+        <p begin="00:03:22.260" end="00:03:29.440" tts:direction="ltr">We'll just take a minute for tableau to
+<br />load up those various sheets,</p>
+        <p begin="00:03:29.440" end="00:03:31.080" tts:direction="ltr">but now you can see them all.</p>
+        <p begin="00:03:31.080" end="00:03:32.840" tts:direction="ltr">Now, we're not going to use all of them.</p>
+        <p begin="00:03:32.840" end="00:03:34.500" tts:direction="ltr">We'll remove several of them,</p>
+        <p begin="00:03:34.500" end="00:03:36.020" tts:direction="ltr">but you can already see that they've got</p>
+        <p begin="00:03:36.020" end="00:03:38.780" tts:direction="ltr">some really great stuff in here like KPIs.</p>
+        <p begin="00:03:38.780" end="00:03:40.360" tts:direction="ltr">There's some placeholders.</p>
+        <p begin="00:03:40.360" end="00:03:42.240" tts:direction="ltr">There's even some of the features that we
+<br />talked</p>
+        <p begin="00:03:42.240" end="00:03:45.160" tts:direction="ltr">about for those buttons and hide filters.</p>
+        <p begin="00:03:45.160" end="00:03:48.720" tts:direction="ltr">There's some of those advanced features we
+<br />learned in dashboards.</p>
+        <p begin="00:03:48.720" end="00:03:53.660" tts:direction="ltr">But let's go ahead and work on the
+<br />principle of removing.</p>
+        <p begin="00:03:53.660" end="00:03:57.840" tts:direction="ltr">I've already have an idea of what I want
+<br />to create.</p>
+        <p begin="00:03:57.840" end="00:04:01.040" tts:direction="ltr">One of the methods that I like to use is</p>
+        <p begin="00:04:01.040" end="00:04:04.160" tts:direction="ltr">to draw out what I think a good dashboard
+<br />what.</p>
+        <p begin="00:04:04.160" end="00:04:08.160" tts:direction="ltr">After I've done my analysis and I've
+<br />created some amazing charts.</p>
+        <p begin="00:04:08.160" end="00:04:14.520" tts:direction="ltr">I then work with my stakeholders and
+<br />identify what they're interested in.</p>
+        <p begin="00:04:14.520" end="00:04:20.720" tts:direction="ltr">Maybe their KPIs, Maybe they're showing a
+<br />variety of charts,</p>
+        <p begin="00:04:20.720" end="00:04:22.640" tts:direction="ltr">maybe it's just one big chart.</p>
+        <p begin="00:04:22.640" end="00:04:25.240" tts:direction="ltr">Really keeping that in mind as I'm working
+<br />through this.</p>
+        <p begin="00:04:25.240" end="00:04:28.740" tts:direction="ltr">I can already see what I am needing and
+<br />then I can work from</p>
+        <p begin="00:04:28.740" end="00:04:33.480" tts:direction="ltr">this premise that I really believe in and
+<br />that's reduction.</p>
+        <p begin="00:04:33.480" end="00:04:36.520" tts:direction="ltr">I'm working on my smaller screen here,</p>
+        <p begin="00:04:36.520" end="00:04:40.380" tts:direction="ltr">so I'm struggling to see everything that's
+<br />available to me.</p>
+        <p begin="00:04:40.380" end="00:04:44.820" tts:direction="ltr">But I'm going to go ahead and just work
+<br />off of this principle of removal.</p>
+        <p begin="00:04:44.820" end="00:04:46.720" tts:direction="ltr">I'm going to get rid of several of these
+<br />things.</p>
+        <p begin="00:04:46.720" end="00:04:48.380" tts:direction="ltr">Now as you start clicking to remove,</p>
+        <p begin="00:04:48.380" end="00:04:49.720" tts:direction="ltr">you'll notice that they are in</p>
+        <p begin="00:04:49.720" end="00:04:53.255" tts:direction="ltr">these larger containers and you can just
+<br />delete those containers.</p>
+        <p begin="00:04:53.255" end="00:04:55.130" tts:direction="ltr">I'm going to keep my title,</p>
+        <p begin="00:04:55.130" end="00:04:56.590" tts:direction="ltr">but I'm not going to have some of</p>
+        <p begin="00:04:56.590" end="00:05:00.890" tts:direction="ltr">these awesome elements that I may use for
+<br />another dashboard.</p>
+        <p begin="00:05:00.890" end="00:05:02.410" tts:direction="ltr">I'm going to keep this one simple.</p>
+        <p begin="00:05:02.410" end="00:05:04.610" tts:direction="ltr">I'm going to keep the title and subtitle,</p>
+        <p begin="00:05:04.610" end="00:05:10.690" tts:direction="ltr">but I don't want this other text that I
+<br />have here looks awesome,</p>
+        <p begin="00:05:10.690" end="00:05:12.430" tts:direction="ltr">but I don't have any use for this.</p>
+        <p begin="00:05:12.430" end="00:05:16.190" tts:direction="ltr">I'm going to delete that container. Want
+<br />to keep that line.</p>
+        <p begin="00:05:16.190" end="00:05:19.810" tts:direction="ltr">Then I'm going to remove this container,</p>
+        <p begin="00:05:19.810" end="00:05:23.250" tts:direction="ltr">right now, I don't have any filters that
+<br />I'm showing on my dashboard.</p>
+        <p begin="00:05:23.250" end="00:05:24.490" tts:direction="ltr">I'm going to go ahead and remove that.</p>
+        <p begin="00:05:24.490" end="00:05:26.910" tts:direction="ltr">I'm using my map as the filter.</p>
+        <p begin="00:05:26.910" end="00:05:32.050" tts:direction="ltr">Then these are mainly for your band
+<br />numbers up here, your KPIs.</p>
+        <p begin="00:05:32.050" end="00:05:36.070" tts:direction="ltr">I'm just going to go ahead and delete,
+<br />delete those containers.</p>
+        <p begin="00:05:36.070" end="00:05:38.330" tts:direction="ltr">I may have to click this a few times.</p>
+        <p begin="00:05:38.330" end="00:05:40.910" tts:direction="ltr">Again, if you click something that you
+<br />want to keep,</p>
+        <p begin="00:05:40.910" end="00:05:43.790" tts:direction="ltr">just hit that back button to go</p>
+        <p begin="00:05:43.790" end="00:05:47.230" tts:direction="ltr">back in time and then you can have that
+<br />back on your screen.</p>
+        <p begin="00:05:47.230" end="00:05:50.940" tts:direction="ltr">So Just cleaning up to</p>
+        <p begin="00:05:50.940" end="00:05:55.240" tts:direction="ltr">get that visual that I'm looking for. I'm
+<br />not going to use these.</p>
+        <p begin="00:05:55.240" end="00:05:58.960" tts:direction="ltr">These are amazing, great area to bring in
+<br />those filters.</p>
+        <p begin="00:05:58.960" end="00:06:00.920" tts:direction="ltr">It will automatically populate.</p>
+        <p begin="00:06:00.920" end="00:06:04.800" tts:direction="ltr">You can see some good tools in tableau,</p>
+        <p begin="00:06:04.800" end="00:06:07.120" tts:direction="ltr">but I'm just going to remove those.</p>
+        <p begin="00:06:07.260" end="00:06:10.680" tts:direction="ltr">Then what I want to do,</p>
+        <p begin="00:06:10.680" end="00:06:12.340" tts:direction="ltr">let me just look and see what I have.</p>
+        <p begin="00:06:12.340" end="00:06:16.500" tts:direction="ltr">I've got the large one and then I've got
+<br />those two smaller ones.</p>
+        <p begin="00:06:16.500" end="00:06:21.920" tts:direction="ltr">What I think I want to do is I'm going to
+<br />get rid of one of these columns.</p>
+        <p begin="00:06:21.920" end="00:06:26.460" tts:direction="ltr">I don't need all of them. And let</p>
+        <p begin="00:06:26.460" end="00:06:30.720" tts:direction="ltr">me just make sure so it looks like I've
+<br />got these two.</p>
+        <p begin="00:06:30.720" end="00:06:37.900" tts:direction="ltr">That's great. Now what I want to do is I'm
+<br />going to just remove this one.</p>
+        <p begin="00:06:37.920" end="00:06:41.720" tts:direction="ltr">And just clicking on those containers in
+<br />that one.</p>
+        <p begin="00:06:41.720" end="00:06:44.320" tts:direction="ltr">I've got one big container here and then I</p>
+        <p begin="00:06:44.320" end="00:06:46.800" tts:direction="ltr">want two on the sides. Let me just get rid
+<br />of one.</p>
+        <p begin="00:06:46.800" end="00:06:49.400" tts:direction="ltr">Now you'll notice that this template is
+<br />awesome because</p>
+        <p begin="00:06:49.400" end="00:06:52.280" tts:direction="ltr">it's dynamically filling in this space.</p>
+        <p begin="00:06:52.280" end="00:06:54.060" tts:direction="ltr">I removed one and now they've got that.</p>
+        <p begin="00:06:54.060" end="00:06:56.940" tts:direction="ltr">If I just look on a presentation views,
+<br />you can see that.</p>
+        <p begin="00:06:56.940" end="00:06:59.980" tts:direction="ltr">Now I've got this big area and this area
+<br />in this area,</p>
+        <p begin="00:06:59.980" end="00:07:01.280" tts:direction="ltr">I've already got padding.</p>
+        <p begin="00:07:01.280" end="00:07:04.540" tts:direction="ltr">I've already got some really good design
+<br />things that are working for me.</p>
+        <p begin="00:07:04.540" end="00:07:07.140" tts:direction="ltr">I'm going to escape out of this and now
+<br />I'm going to</p>
+        <p begin="00:07:07.140" end="00:07:09.820" tts:direction="ltr">go to work to place my information.</p>
+        <p begin="00:07:09.820" end="00:07:15.690" tts:direction="ltr">On this one, I'm going to select this
+<br />shaded area.</p>
+        <p begin="00:07:15.690" end="00:07:19.230" tts:direction="ltr">I'm going to make sure I've got that swap
+<br />on there.</p>
+        <p begin="00:07:19.230" end="00:07:23.230" tts:direction="ltr">What I want to do is when I roll over this
+<br />2015 map,</p>
+        <p begin="00:07:23.230" end="00:07:28.150" tts:direction="ltr">you'll see that I have this icon and that
+<br />will swap that right in there.</p>
+        <p begin="00:07:28.150" end="00:07:30.790" tts:direction="ltr">I've got this, I've got that highlighted.</p>
+        <p begin="00:07:30.790" end="00:07:34.830" tts:direction="ltr">Now I want to put in actually this bar
+<br />chart,</p>
+        <p begin="00:07:34.830" end="00:07:38.010" tts:direction="ltr">and then I'm going to put in this other
+<br />bar chart.</p>
+        <p begin="00:07:38.010" end="00:07:42.010" tts:direction="ltr">I didn't actually hit the swap button
+<br />there, so that did not work.</p>
+        <p begin="00:07:42.010" end="00:07:44.405" tts:direction="ltr">Let me just slide this over.</p>
+        <p begin="00:07:44.405" end="00:07:47.800" tts:direction="ltr">And now I want to clean this up a little
+<br />bit.</p>
+        <p begin="00:07:47.800" end="00:07:55.860" tts:direction="ltr">And I'm going to actually what I want to
+<br />do is I'm going to hide that.</p>
+        <p begin="00:07:55.860" end="00:07:59.300" tts:direction="ltr">I'm going to use this one here and I'm
+<br />going to say</p>
+        <p begin="00:07:59.300" end="00:08:08.500" tts:direction="ltr">explore 2015 baby names across the US.</p>
+        <p begin="00:08:09.660" end="00:08:12.680" tts:direction="ltr">For this subtitle, I'm actually going</p>
+        <p begin="00:08:12.680" end="00:08:16.740" tts:direction="ltr">to indicate my source. It's a good space.</p>
+        <p begin="00:08:16.740" end="00:08:22.100" tts:direction="ltr">It's from the Social Security database.</p>
+        <p begin="00:08:22.220" end="00:08:25.360" tts:direction="ltr">I've already got that designed. That's
+<br />awesome.</p>
+        <p begin="00:08:25.360" end="00:08:29.320" tts:direction="ltr">I'm actually going to delete this title.</p>
+        <p begin="00:08:29.320" end="00:08:33.940" tts:direction="ltr">Instead, I'm going to just double click
+<br />this one and put click.</p>
+        <p begin="00:08:33.940" end="00:08:35.660" tts:direction="ltr">Let me capitalize that.</p>
+        <p begin="00:08:35.660" end="00:08:41.460" tts:direction="ltr">Click on a US state to filter names.</p>
+        <p begin="00:08:41.460" end="00:08:43.380" tts:direction="ltr">I'm not going to put a period.</p>
+        <p begin="00:08:43.380" end="00:08:45.400" tts:direction="ltr">I'm going to keep my know period,</p>
+        <p begin="00:08:45.400" end="00:08:47.040" tts:direction="ltr">so I'll be consistent there.</p>
+        <p begin="00:08:47.040" end="00:08:49.040" tts:direction="ltr">I might even want to italicize that,</p>
+        <p begin="00:08:49.040" end="00:08:51.980" tts:direction="ltr">I'm going to just move over to these and</p>
+        <p begin="00:08:51.980" end="00:08:55.790" tts:direction="ltr">I don't need this title and I don't need
+<br />that subtitle.</p>
+        <p begin="00:08:55.790" end="00:08:58.500" tts:direction="ltr">I'm going to remove that container so I
+<br />can go all the way.</p>
+        <p begin="00:08:58.500" end="00:09:00.040" tts:direction="ltr">Then when I select the sheet,</p>
+        <p begin="00:09:00.040" end="00:09:03.360" tts:direction="ltr">just want to do this drop down to do fit
+<br />entire.</p>
+        <p begin="00:09:03.360" end="00:09:05.960" tts:direction="ltr">Great. Same thing here.</p>
+        <p begin="00:09:05.960" end="00:09:10.920" tts:direction="ltr">Again, I'm deleting, which is so much
+<br />easier than to create.</p>
+        <p begin="00:09:11.320" end="00:09:17.440" tts:direction="ltr">And then I'll go ahead and I'll fit the
+<br />entire width there. Fantastic.</p>
+        <p begin="00:09:17.440" end="00:09:21.580" tts:direction="ltr">Now, I do want to bring in Alaska and
+<br />Hawaii into my map here.</p>
+        <p begin="00:09:21.580" end="00:09:24.420" tts:direction="ltr">I'm going to make sure I'm on floating for
+<br />that and I'm going</p>
+        <p begin="00:09:24.420" end="00:09:27.650" tts:direction="ltr">to go ahead and drag in the Alaska in
+<br />here.</p>
+        <p begin="00:09:27.650" end="00:09:30.620" tts:direction="ltr">I'm going to remove the title right away.</p>
+        <p begin="00:09:30.620" end="00:09:38.460" tts:direction="ltr">Then just click on those arrows to reduce
+<br />that. Put that down here.</p>
+        <p begin="00:09:38.460" end="00:09:42.200" tts:direction="ltr">Then I'm going to go ahead and bring a
+<br />White.</p>
+        <p begin="00:09:42.200" end="00:09:46.740" tts:direction="ltr">Again, I'm floating on this one so that I
+<br />can drop it anywhere I need to,</p>
+        <p begin="00:09:46.740" end="00:09:49.080" tts:direction="ltr">and I'm going to just reduce that.</p>
+        <p begin="00:09:49.080" end="00:09:51.540" tts:direction="ltr">We'll just have those down here.</p>
+        <p begin="00:09:51.540" end="00:09:55.100" tts:direction="ltr">I'm not in love with all of this white
+<br />space up here.</p>
+        <p begin="00:09:55.100" end="00:09:58.080" tts:direction="ltr">I might rethink how I might want to do
+<br />that.</p>
+        <p begin="00:09:58.080" end="00:10:00.780" tts:direction="ltr">But let me go ahead and just leave that
+<br />for now.</p>
+        <p begin="00:10:00.780" end="00:10:03.100" tts:direction="ltr">I just want to make sure my filters are
+<br />working,</p>
+        <p begin="00:10:03.100" end="00:10:05.460" tts:direction="ltr">so I'm just going to double check my
+<br />actions.</p>
+        <p begin="00:10:05.460" end="00:10:08.740" tts:direction="ltr">Looks like I need to add a filter,</p>
+        <p begin="00:10:08.740" end="00:10:12.760" tts:direction="ltr">and I want to make sure my maps are my
+<br />source sheet,</p>
+        <p begin="00:10:12.760" end="00:10:17.960" tts:direction="ltr">and then Bars are my targets.</p>
+        <p begin="00:10:17.960" end="00:10:21.420" tts:direction="ltr">I'm going to do it on a select and I want
+<br />to make sure I</p>
+        <p begin="00:10:21.420" end="00:10:25.880" tts:direction="ltr">can go back to all once I selected again,
+<br />so I'll hit.</p>
+        <p begin="00:10:26.320" end="00:10:29.780" tts:direction="ltr">Now, let's look at this dashboard.</p>
+        <p begin="00:10:29.780" end="00:10:33.260" tts:direction="ltr">Now, again, I'm not exactly happy about
+<br />this white space.</p>
+        <p begin="00:10:33.260" end="00:10:35.740" tts:direction="ltr">What I may have done is maybe left</p>
+        <p begin="00:10:35.740" end="00:10:39.840" tts:direction="ltr">another one underneath here and I could
+<br />have filled that up or something,</p>
+        <p begin="00:10:39.840" end="00:10:41.620" tts:direction="ltr">but now if I click on Texas,</p>
+        <p begin="00:10:41.620" end="00:10:43.340" tts:direction="ltr">I can see that I've got that.</p>
+        <p begin="00:10:43.340" end="00:10:45.720" tts:direction="ltr">Alaska is working.</p>
+        <p begin="00:10:45.720" end="00:10:49.480" tts:direction="ltr">Montana is working. Great.</p>
+        <p begin="00:10:49.480" end="00:10:53.480" tts:direction="ltr">Look at all this nice padding that's
+<br />already in there.</p>
+        <p begin="00:10:53.480" end="00:10:55.940" tts:direction="ltr">I haven't had to go in and work on that.</p>
+        <p begin="00:10:55.940" end="00:10:59.060" tts:direction="ltr">If you go into layout, you can add in.</p>
+        <p begin="00:10:59.060" end="00:11:01.820" tts:direction="ltr">Some of the outer and inner padding,</p>
+        <p begin="00:11:01.820" end="00:11:04.140" tts:direction="ltr">takes a lot more effort.</p>
+        <p begin="00:11:04.140" end="00:11:06.400" tts:direction="ltr">I just want to do a little bit before and
+<br />after.</p>
+        <p begin="00:11:06.400" end="00:11:08.180" tts:direction="ltr">Let me just go back over here.</p>
+        <p begin="00:11:08.180" end="00:11:12.400" tts:direction="ltr">This is my before, not too bad, not too
+<br />bad,</p>
+        <p begin="00:11:12.400" end="00:11:18.000" tts:direction="ltr">but just a little bit better and faster.</p>
+        <p begin="00:11:18.000" end="00:11:20.080" tts:direction="ltr">If I had some more time, I'd probably</p>
+        <p begin="00:11:20.080" end="00:11:22.960" tts:direction="ltr">address this white space issue fairly
+<br />quickly.</p>
+        <p begin="00:11:22.960" end="00:11:24.700" tts:direction="ltr">Now, what I want to do is I want to</p>
+        <p begin="00:11:24.700" end="00:11:26.700" tts:direction="ltr">clean up all this extra stuff I don't
+<br />need.</p>
+        <p begin="00:11:26.700" end="00:11:28.700" tts:direction="ltr">I'm going to right click on this map,</p>
+        <p begin="00:11:28.700" end="00:11:32.480" tts:direction="ltr">and I'm going to hide all those sheets.</p>
+        <p begin="00:11:32.480" end="00:11:35.550" tts:direction="ltr">I'll just do that over here, make sure all
+<br />of those are hidden.</p>
+        <p begin="00:11:35.550" end="00:11:38.160" tts:direction="ltr">Then by doing that, what I've done is all</p>
+        <p begin="00:11:38.160" end="00:11:40.640" tts:direction="ltr">of these ones that you can see are the
+<br />ones that I deleted.</p>
+        <p begin="00:11:40.640" end="00:11:43.340" tts:direction="ltr">If I just click on that and then shift</p>
+        <p begin="00:11:43.340" end="00:11:47.060" tts:direction="ltr">down as far as I want and then right click
+<br />it, I can just delete those.</p>
+        <p begin="00:11:47.060" end="00:11:49.900" tts:direction="ltr">No harm, no foul.</p>
+        <p begin="00:11:49.900" end="00:11:52.420" tts:direction="ltr">Delete those. I'm just cleaning up,</p>
+        <p begin="00:11:52.420" end="00:11:54.920" tts:direction="ltr">so I don't have all of those. I don't
+<br />know.</p>
+        <p begin="00:11:54.920" end="00:11:57.920" tts:direction="ltr">That was just that dashboard that I had
+<br />open,</p>
+        <p begin="00:11:57.920" end="00:11:59.880" tts:direction="ltr">just to bring in those new files.</p>
+        <p begin="00:11:59.880" end="00:12:02.680" tts:direction="ltr">I'm going to just go ahead and just let
+<br />all of that.</p>
+        <p begin="00:12:02.680" end="00:12:04.420" tts:direction="ltr">Now I just have these two,</p>
+        <p begin="00:12:04.420" end="00:12:07.220" tts:direction="ltr">and you can see those even more.</p>
+        <p begin="00:12:07.340" end="00:12:12.000" tts:direction="ltr">Cannot say enough about templates and
+<br />potentially you're wringing</p>
+        <p begin="00:12:12.000" end="00:12:16.920" tts:direction="ltr">your hands right now to make you have gone
+<br />through the dashboard challenge.</p>
+        <p begin="00:12:16.920" end="00:12:21.280" tts:direction="ltr">However, you have a better understanding
+<br />of maybe how to fix some of</p>
+        <p begin="00:12:21.280" end="00:12:23.400" tts:direction="ltr">these things and to think about them and
+<br />what's</p>
+        <p begin="00:12:23.400" end="00:12:26.220" tts:direction="ltr">possible within the tableau dashboard,</p>
+        <p begin="00:12:26.220" end="00:12:28.980" tts:direction="ltr">and now you just have a faster way to get
+<br />there.</p>
+        <p begin="00:12:28.980" end="00:12:31.520" tts:direction="ltr">I hope these templates are useful for you,</p>
+        <p begin="00:12:31.520" end="00:12:33.160" tts:direction="ltr">not only for your project,</p>
+        <p begin="00:12:33.160" end="00:12:38.340" tts:direction="ltr">but for anything future that you're using
+<br />within Tableau. Happy visit.</p>
+    </div>
+  </body>
+</tt>

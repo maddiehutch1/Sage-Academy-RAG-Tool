@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>600395223 - 1_e4h8u8o2 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:01.800" tts:direction="ltr">Hello, visitors.</p>
+        <p begin="00:00:01.800" end="00:00:03.759" tts:direction="ltr">For this adventure guide,</p>
+        <p begin="00:00:03.759" end="00:00:06.239" tts:direction="ltr">we're going to tackle table calculations,</p>
+        <p begin="00:00:06.239" end="00:00:08.840" tts:direction="ltr">one of my favorite features in Tableau.</p>
+        <p begin="00:00:08.840" end="00:00:14.840" tts:direction="ltr">We're going to cover a few ways to add
+<br />these calculations on the fly,</p>
+        <p begin="00:00:14.840" end="00:00:19.720" tts:direction="ltr">but we'll first do an overview of the
+<br />calculations available in Tableau,</p>
+        <p begin="00:00:19.720" end="00:00:23.959" tts:direction="ltr">and then we'll practice doing these six.</p>
+        <p begin="00:00:23.959" end="00:00:27.039" tts:direction="ltr">I wanted to give you a heads up regarding</p>
+        <p begin="00:00:27.039" end="00:00:32.600" tts:direction="ltr">the next Karen and while I'm going to
+<br />present these six different options,</p>
+        <p begin="00:00:32.600" end="00:00:35.800" tts:direction="ltr">I'm going to assess your knowledge on how
+<br />to apply</p>
+        <p begin="00:00:35.800" end="00:00:39.510" tts:direction="ltr">a running total a percent different and a
+<br />percent total.</p>
+        <p begin="00:00:39.510" end="00:00:42.139" tts:direction="ltr">Which I believe you should successfully be</p>
+        <p begin="00:00:42.139" end="00:00:44.700" tts:direction="ltr">able to do after completing this adventure
+<br />guide.</p>
+        <p begin="00:00:44.700" end="00:00:48.259" tts:direction="ltr">The goal here is to just improve your
+<br />ability to</p>
+        <p begin="00:00:48.259" end="00:00:52.540" tts:direction="ltr">gather insights from the data using the
+<br />tools and Tableau.</p>
+        <p begin="00:00:52.540" end="00:00:56.019" tts:direction="ltr">There are three different types of
+<br />calculations.</p>
+        <p begin="00:00:56.019" end="00:00:58.179" tts:direction="ltr">The first is the table calc and</p>
+        <p begin="00:00:58.179" end="00:01:00.420" tts:direction="ltr">that's what we're doing in this adventure
+<br />guide.</p>
+        <p begin="00:01:00.420" end="00:01:02.819" tts:direction="ltr">Those are only at</p>
+        <p begin="00:01:02.819" end="00:01:06.499" tts:direction="ltr">the level of detail on the worksheet and
+<br />we'll see this in practice,</p>
+        <p begin="00:01:06.499" end="00:01:09.739" tts:direction="ltr">but we're only changing what we see,</p>
+        <p begin="00:01:09.739" end="00:01:11.659" tts:direction="ltr">not the underlying data,</p>
+        <p begin="00:01:11.659" end="00:01:14.460" tts:direction="ltr">which is what happens for a basic
+<br />calculation.</p>
+        <p begin="00:01:14.460" end="00:01:16.460" tts:direction="ltr">When you create a basic calculation,</p>
+        <p begin="00:01:16.460" end="00:01:18.995" tts:direction="ltr">you're actually creating a new field.</p>
+        <p begin="00:01:18.995" end="00:01:22.209" tts:direction="ltr">The LOD or level of detail expressions,</p>
+        <p begin="00:01:22.209" end="00:01:23.489" tts:direction="ltr">those are very similar to</p>
+        <p begin="00:01:23.489" end="00:01:26.290" tts:direction="ltr">basic calculations where you're creating a
+<br />new field,</p>
+        <p begin="00:01:26.290" end="00:01:28.969" tts:direction="ltr">but they allow more granularity and
+<br />control</p>
+        <p begin="00:01:28.969" end="00:01:33.730" tts:direction="ltr">and use the expressions of include,
+<br />exclude, and fixed.</p>
+        <p begin="00:01:33.730" end="00:01:36.810" tts:direction="ltr">We won't be doing this third calculation
+<br />in 3,400,</p>
+        <p begin="00:01:36.810" end="00:01:40.289" tts:direction="ltr">but we do tackle this in 5,400.</p>
+        <p begin="00:01:40.420" end="00:01:44.820" tts:direction="ltr">To let you know how to create a table
+<br />calculation,</p>
+        <p begin="00:01:44.820" end="00:01:47.979" tts:direction="ltr">you first have to bring a measure onto the
+<br />view.</p>
+        <p begin="00:01:47.979" end="00:01:50.899" tts:direction="ltr">You'll have to drag and drop that either
+<br />in</p>
+        <p begin="00:01:50.899" end="00:01:53.979" tts:direction="ltr">columns or rows or on the marks shelf.</p>
+        <p begin="00:01:53.979" end="00:01:57.659" tts:direction="ltr">Once you do that, you can see here there's
+<br />a drop down menu,</p>
+        <p begin="00:01:57.659" end="00:01:59.339" tts:direction="ltr">and there's the ability to add</p>
+        <p begin="00:01:59.339" end="00:02:02.760" tts:direction="ltr">a table calculation or a quick table
+<br />calculation.</p>
+        <p begin="00:02:02.760" end="00:02:04.379" tts:direction="ltr">These are the same thing.</p>
+        <p begin="00:02:04.379" end="00:02:07.179" tts:direction="ltr">One just gives you more control than the
+<br />other.</p>
+        <p begin="00:02:07.179" end="00:02:10.659" tts:direction="ltr">This is a flyout where you can just select
+<br />very quickly,</p>
+        <p begin="00:02:10.659" end="00:02:12.860" tts:direction="ltr">percent difference or rank.</p>
+        <p begin="00:02:12.860" end="00:02:14.339" tts:direction="ltr">Whereas the add table,</p>
+        <p begin="00:02:14.339" end="00:02:16.700" tts:direction="ltr">you just have to do a drop down menu and
+<br />select that,</p>
+        <p begin="00:02:16.700" end="00:02:18.220" tts:direction="ltr">but it does give you more control,</p>
+        <p begin="00:02:18.220" end="00:02:22.259" tts:direction="ltr">and so often that could be a useful route.</p>
+        <p begin="00:02:22.259" end="00:02:24.980" tts:direction="ltr">Once you've applied the table calculation,</p>
+        <p begin="00:02:24.980" end="00:02:30.364" tts:direction="ltr">you know you have applied it by the Delta
+<br />symbol that's in the pill.</p>
+        <p begin="00:02:30.364" end="00:02:33.389" tts:direction="ltr">What are some examples of table calcs?</p>
+        <p begin="00:02:33.389" end="00:02:35.750" tts:direction="ltr">Some of my favorite are running total,</p>
+        <p begin="00:02:35.750" end="00:02:39.870" tts:direction="ltr">where I can see sales over time and how
+<br />they build.</p>
+        <p begin="00:02:39.870" end="00:02:42.070" tts:direction="ltr">I can also see differences,</p>
+        <p begin="00:02:42.070" end="00:02:45.950" tts:direction="ltr">particularly maybe in sales across
+<br />quarters where</p>
+        <p begin="00:02:45.950" end="00:02:49.909" tts:direction="ltr">I can see some deficits and then some
+<br />profits.</p>
+        <p begin="00:02:49.909" end="00:02:52.350" tts:direction="ltr">Then I can also have percent of total.</p>
+        <p begin="00:02:52.350" end="00:02:55.909" tts:direction="ltr">This is important if you're looking at
+<br />subcategories.</p>
+        <p begin="00:02:55.909" end="00:02:59.624" tts:direction="ltr">Let's dive into a short preview.</p>
+        <p begin="00:02:59.624" end="00:03:01.940" tts:direction="ltr">Of all of the charts you're going to be
+<br />making,</p>
+        <p begin="00:03:01.940" end="00:03:03.340" tts:direction="ltr">so there will be six of them.</p>
+        <p begin="00:03:03.340" end="00:03:06.260" tts:direction="ltr">We will do a running total chart like
+<br />this,</p>
+        <p begin="00:03:06.260" end="00:03:09.180" tts:direction="ltr">a difference from chart like this,</p>
+        <p begin="00:03:09.180" end="00:03:11.739" tts:direction="ltr">a percent difference heat map,</p>
+        <p begin="00:03:11.739" end="00:03:16.990" tts:direction="ltr">a percent total, a moving average and a
+<br />rank.</p>
+        <p begin="00:03:16.990" end="00:03:19.830" tts:direction="ltr">Now you'll notice with all of these
+<br />examples,</p>
+        <p begin="00:03:19.830" end="00:03:22.829" tts:direction="ltr">there is no design principles applied.</p>
+        <p begin="00:03:22.829" end="00:03:26.590" tts:direction="ltr">We are simply focusing on this tool and
+<br />this feature,</p>
+        <p begin="00:03:26.590" end="00:03:29.750" tts:direction="ltr">and therefore, give the caveat</p>
+        <p begin="00:03:29.750" end="00:03:33.430" tts:direction="ltr">that this is definitely in the exploration
+<br />phase.</p>
+        <p begin="00:03:33.430" end="00:03:35.989" tts:direction="ltr">I would not present this to an audience
+<br />unless it</p>
+        <p begin="00:03:35.989" end="00:03:38.950" tts:direction="ltr">was my team where we're just trying to
+<br />understand the data.</p>
+        <p begin="00:03:38.950" end="00:03:43.460" tts:direction="ltr">Let's dive into the Twibix file,</p>
+        <p begin="00:03:43.460" end="00:03:48.420" tts:direction="ltr">you should have downloaded and launched
+<br />the AG Tableau calc S,</p>
+        <p begin="00:03:48.420" end="00:03:52.940" tts:direction="ltr">and you should be on this very first tab
+<br />running total example.</p>
+        <p begin="00:03:52.940" end="00:03:56.620" tts:direction="ltr">Something I've done a bit different for
+<br />this AG is</p>
+        <p begin="00:03:56.620" end="00:04:00.539" tts:direction="ltr">provided some commentary and some
+<br />directions.</p>
+        <p begin="00:04:00.539" end="00:04:02.660" tts:direction="ltr">Here in the captions area,</p>
+        <p begin="00:04:02.660" end="00:04:05.579" tts:direction="ltr">I've provided a little more of an overview</p>
+        <p begin="00:04:05.579" end="00:04:09.319" tts:direction="ltr">and then I've provided some direction.</p>
+        <p begin="00:04:09.319" end="00:04:14.079" tts:direction="ltr">Here's one of those examples on how you
+<br />can create the Viz.</p>
+        <p begin="00:04:14.079" end="00:04:17.040" tts:direction="ltr">Just in case, if you can't see the
+<br />caption,</p>
+        <p begin="00:04:17.040" end="00:04:19.559" tts:direction="ltr">then you're able to view that by doing</p>
+        <p begin="00:04:19.559" end="00:04:24.040" tts:direction="ltr">the worksheet and then make sure that show
+<br />caption is selected.</p>
+        <p begin="00:04:24.040" end="00:04:29.720" tts:direction="ltr">Captions are also really nice places to
+<br />put your data sources.</p>
+        <p begin="00:04:29.720" end="00:04:33.399" tts:direction="ltr">One of the things that we need to make
+<br />sure we're doing is having</p>
+        <p begin="00:04:33.399" end="00:04:35.719" tts:direction="ltr">incredible data and part of that</p>
+        <p begin="00:04:35.719" end="00:04:39.039" tts:direction="ltr">is being transparent on where we got the
+<br />data from.</p>
+        <p begin="00:04:39.039" end="00:04:40.679" tts:direction="ltr">That needs to be part of</p>
+        <p begin="00:04:40.679" end="00:04:45.439" tts:direction="ltr">your challenges and one place that you can
+<br />do that is in a caption.</p>
+        <p begin="00:04:45.439" end="00:04:49.760" tts:direction="ltr">But in this case, I'm using it to provide
+<br />some additional context.</p>
+        <p begin="00:04:49.760" end="00:04:53.179" tts:direction="ltr">A running total example You can see</p>
+        <p begin="00:04:53.179" end="00:04:57.179" tts:direction="ltr">I've got order date on columns and
+<br />category on rows.</p>
+        <p begin="00:04:57.179" end="00:05:00.819" tts:direction="ltr">Here, it all plays out with some of sales
+<br />on text.</p>
+        <p begin="00:05:00.819" end="00:05:03.739" tts:direction="ltr">Here's my measure. It's brought into the
+<br />view.</p>
+        <p begin="00:05:03.739" end="00:05:05.619" tts:direction="ltr">Now if I do the drop down,</p>
+        <p begin="00:05:05.619" end="00:05:08.300" tts:direction="ltr">you can see I have the add table
+<br />calculation,</p>
+        <p begin="00:05:08.300" end="00:05:11.099" tts:direction="ltr">which is the ability again to do</p>
+        <p begin="00:05:11.099" end="00:05:14.460" tts:direction="ltr">all the same calculations that are on the
+<br />table calculation.</p>
+        <p begin="00:05:14.460" end="00:05:18.660" tts:direction="ltr">But then I can do the compute using right
+<br />here in the window,</p>
+        <p begin="00:05:18.660" end="00:05:21.169" tts:direction="ltr">and I can also do relative to.</p>
+        <p begin="00:05:21.169" end="00:05:24.840" tts:direction="ltr">So let me go back and just do a quick
+<br />table.</p>
+        <p begin="00:05:24.840" end="00:05:26.400" tts:direction="ltr">Let me clear that calculation,</p>
+        <p begin="00:05:26.400" end="00:05:28.800" tts:direction="ltr">and let's do a quick table calculation,</p>
+        <p begin="00:05:28.800" end="00:05:31.559" tts:direction="ltr">which is just all of the options on the
+<br />fly,</p>
+        <p begin="00:05:31.559" end="00:05:34.159" tts:direction="ltr">and we'll do that running total.</p>
+        <p begin="00:05:34.159" end="00:05:37.999" tts:direction="ltr">So now what I've done is I've taken</p>
+        <p begin="00:05:37.999" end="00:05:42.559" tts:direction="ltr">the year that started and I've added the
+<br />second year and then the third year,</p>
+        <p begin="00:05:42.559" end="00:05:44.919" tts:direction="ltr">and then the fourth year, and then the
+<br />grand total.</p>
+        <p begin="00:05:44.919" end="00:05:49.319" tts:direction="ltr">So a table calculation that is</p>
+        <p begin="00:05:49.319" end="00:05:51.640" tts:direction="ltr">a running total is great for tracking</p>
+        <p begin="00:05:51.640" end="00:05:55.039" tts:direction="ltr">the cumulative value of data points over a
+<br />period.</p>
+        <p begin="00:05:55.039" end="00:05:59.440" tts:direction="ltr">It's good for understanding trends, making
+<br />financial forecasts,</p>
+        <p begin="00:05:59.440" end="00:06:01.480" tts:direction="ltr">managing inventory and budgeting,</p>
+        <p begin="00:06:01.480" end="00:06:04.120" tts:direction="ltr">and it's used for a variety of purposes.</p>
+        <p begin="00:06:04.120" end="00:06:06.814" tts:direction="ltr">So let's go ahead and dive into the
+<br />example.</p>
+        <p begin="00:06:06.814" end="00:06:10.470" tts:direction="ltr">Now, one of the things I want to point out
+<br />is</p>
+        <p begin="00:06:10.470" end="00:06:14.669" tts:direction="ltr">I have multiple data sources here in the
+<br />left data pane.</p>
+        <p begin="00:06:14.669" end="00:06:18.149" tts:direction="ltr">That is because I am using them to create</p>
+        <p begin="00:06:18.149" end="00:06:21.629" tts:direction="ltr">all these various different examples and</p>
+        <p begin="00:06:21.629" end="00:06:26.109" tts:direction="ltr">they are not being shown in the data
+<br />source connected together.</p>
+        <p begin="00:06:26.109" end="00:06:28.309" tts:direction="ltr">There's no relationship between them.</p>
+        <p begin="00:06:28.309" end="00:06:30.869" tts:direction="ltr">There's no union, there's no join.</p>
+        <p begin="00:06:30.869" end="00:06:33.269" tts:direction="ltr">It's simply the data source.</p>
+        <p begin="00:06:33.269" end="00:06:39.250" tts:direction="ltr">You can do that by bringing in a blend
+<br />I'll show you how to do that.</p>
+        <p begin="00:06:39.250" end="00:06:41.329" tts:direction="ltr">Normally, we just connect, we bring in</p>
+        <p begin="00:06:41.329" end="00:06:44.769" tts:direction="ltr">our files and maybe we have some
+<br />relationship between them.</p>
+        <p begin="00:06:44.769" end="00:06:48.129" tts:direction="ltr">Another way to bring in files into Tableau
+<br />is to go to</p>
+        <p begin="00:06:48.129" end="00:06:52.289" tts:direction="ltr">the Data tab and select new data source.</p>
+        <p begin="00:06:52.289" end="00:06:56.330" tts:direction="ltr">I will go through the process as if I'm
+<br />uploading</p>
+        <p begin="00:06:56.330" end="00:06:59.249" tts:direction="ltr">a brand new data source and you'll</p>
+        <p begin="00:06:59.249" end="00:07:03.089" tts:direction="ltr">have the option of dragging that file onto
+<br />the view.</p>
+        <p begin="00:07:03.089" end="00:07:06.689" tts:direction="ltr">Once you do that and go to a sheet,</p>
+        <p begin="00:07:06.689" end="00:07:10.009" tts:direction="ltr">you'll see that it will just be added in
+<br />all of</p>
+        <p begin="00:07:10.009" end="00:07:14.839" tts:direction="ltr">these rows of various different data types
+<br />or data sources, excuse me.</p>
+        <p begin="00:07:14.839" end="00:07:18.789" tts:direction="ltr">Now, while these don't have any direct
+<br />relationship to each other,</p>
+        <p begin="00:07:18.789" end="00:07:24.949" tts:direction="ltr">I could have some data sources that would
+<br />use other fields in a calculation.</p>
+        <p begin="00:07:24.949" end="00:07:28.229" tts:direction="ltr">So while I may not have a direct
+<br />relationship,</p>
+        <p begin="00:07:28.229" end="00:07:34.230" tts:direction="ltr">I might need a field from one data source
+<br />to create a calculation,</p>
+        <p begin="00:07:34.230" end="00:07:37.549" tts:direction="ltr">a basic calculation, not a quick table
+<br />calculation,</p>
+        <p begin="00:07:37.549" end="00:07:38.710" tts:direction="ltr">but a basic calculation,</p>
+        <p begin="00:07:38.710" end="00:07:41.614" tts:direction="ltr">which we'll do in the next another AG.</p>
+        <p begin="00:07:41.614" end="00:07:44.959" tts:direction="ltr">To talk to one another. Just a little
+<br />heads up.</p>
+        <p begin="00:07:44.959" end="00:07:47.439" tts:direction="ltr">I do have all of these sources listed out.</p>
+        <p begin="00:07:47.439" end="00:07:49.799" tts:direction="ltr">So if you scroll to the very far right,</p>
+        <p begin="00:07:49.799" end="00:07:53.199" tts:direction="ltr">you'll see I have data sources and where
+<br />these are located,</p>
+        <p begin="00:07:53.199" end="00:07:55.440" tts:direction="ltr">several of them come from San Diego,</p>
+        <p begin="00:07:55.440" end="00:07:57.879" tts:direction="ltr">which is a very data focused community.</p>
+        <p begin="00:07:57.879" end="00:08:02.600" tts:direction="ltr">So we've got graffiti data and we have
+<br />water temperature and parking meters.</p>
+        <p begin="00:08:02.600" end="00:08:05.520" tts:direction="ltr">I also have some ocean condition data from
+<br />NOA,</p>
+        <p begin="00:08:05.520" end="00:08:08.559" tts:direction="ltr">and some Airbnb data from Cagle.</p>
+        <p begin="00:08:08.559" end="00:08:11.359" tts:direction="ltr">So if you want to, you can go check those
+<br />out.</p>
+        <p begin="00:08:11.359" end="00:08:13.479" tts:direction="ltr">You might be inspired for your own
+<br />project.</p>
+        <p begin="00:08:13.479" end="00:08:17.399" tts:direction="ltr">Now let's jump back into this running
+<br />total start,</p>
+        <p begin="00:08:17.399" end="00:08:21.279" tts:direction="ltr">where I've given the prompt of what's the
+<br />running total</p>
+        <p begin="00:08:21.279" end="00:08:25.079" tts:direction="ltr">of graffiti removal request by zip code
+<br />over time?</p>
+        <p begin="00:08:25.079" end="00:08:27.279" tts:direction="ltr">We need to build the chart first and then</p>
+        <p begin="00:08:27.279" end="00:08:29.760" tts:direction="ltr">we're going to apply that table
+<br />calculation.</p>
+        <p begin="00:08:29.760" end="00:08:36.160" tts:direction="ltr">Let's go ahead and here are the
+<br />instructions and grab index to the rows.</p>
+        <p begin="00:08:36.160" end="00:08:41.170" tts:direction="ltr">Now sometimes again, Fields are not
+<br />intuitive in terms of their naming.</p>
+        <p begin="00:08:41.170" end="00:08:44.129" tts:direction="ltr">I could rename index to be more specific.</p>
+        <p begin="00:08:44.129" end="00:08:49.610" tts:direction="ltr">I can also use my data dictionary to
+<br />understand what that field is.</p>
+        <p begin="00:08:49.610" end="00:08:53.330" tts:direction="ltr">In this case, we're just creating a table
+<br />calculation,</p>
+        <p begin="00:08:53.330" end="00:08:54.930" tts:direction="ltr">but I wanted to point that out.</p>
+        <p begin="00:08:54.930" end="00:08:56.970" tts:direction="ltr">We're going to change this.</p>
+        <p begin="00:08:56.970" end="00:08:59.770" tts:direction="ltr">There's no aggregation applied to it.</p>
+        <p begin="00:08:59.770" end="00:09:03.330" tts:direction="ltr">We're going to change this measure to a
+<br />count.</p>
+        <p begin="00:09:03.330" end="00:09:05.970" tts:direction="ltr">It just moved from a blue pill to</p>
+        <p begin="00:09:05.970" end="00:09:09.490" tts:direction="ltr">a green pill because now I have that
+<br />continuous measure.</p>
+        <p begin="00:09:09.490" end="00:09:13.505" tts:direction="ltr">Now we'll bring in date requested onto the
+<br />columns.</p>
+        <p begin="00:09:13.505" end="00:09:18.400" tts:direction="ltr">And we will modify this by selecting exact
+<br />date.</p>
+        <p begin="00:09:18.400" end="00:09:21.920" tts:direction="ltr">Now, I have a very long bar chart, you can
+<br />see,</p>
+        <p begin="00:09:21.920" end="00:09:29.319" tts:direction="ltr">and I want to continue to modify this by
+<br />bringing zip code onto color.</p>
+        <p begin="00:09:29.319" end="00:09:34.159" tts:direction="ltr">When I do that, you'll see a plethora of
+<br />colors</p>
+        <p begin="00:09:34.159" end="00:09:40.399" tts:direction="ltr">here and you'll see some removal requests
+<br />that hit it too.</p>
+        <p begin="00:09:40.399" end="00:09:43.640" tts:direction="ltr">We've got some that are breaking out at
+<br />the number five,</p>
+        <p begin="00:09:43.640" end="00:09:45.920" tts:direction="ltr">but we want to add a quick table
+<br />calculation.</p>
+        <p begin="00:09:45.920" end="00:09:47.720" tts:direction="ltr">I'm going to go ahead and scoot this.</p>
+        <p begin="00:09:47.720" end="00:09:50.585" tts:direction="ltr">Let's go ahead and hide this card.</p>
+        <p begin="00:09:50.585" end="00:09:54.809" tts:direction="ltr">And we'll do that by focusing on this
+<br />index.</p>
+        <p begin="00:09:54.809" end="00:09:57.009" tts:direction="ltr">Sometimes there are table calculations,</p>
+        <p begin="00:09:57.009" end="00:10:00.649" tts:direction="ltr">we really need to consider which measure
+<br />we need to apply it to.</p>
+        <p begin="00:10:00.649" end="00:10:04.810" tts:direction="ltr">In this case, we're looking at the running
+<br />total of graffiti removal request,</p>
+        <p begin="00:10:04.810" end="00:10:06.849" tts:direction="ltr">which is right here in that index,</p>
+        <p begin="00:10:06.849" end="00:10:08.809" tts:direction="ltr">not the date or the ZIP code.</p>
+        <p begin="00:10:08.809" end="00:10:10.689" tts:direction="ltr">Well, the ZIP code is a dimension.</p>
+        <p begin="00:10:10.689" end="00:10:12.450" tts:direction="ltr">Let's go ahead and go here and do</p>
+        <p begin="00:10:12.450" end="00:10:15.210" tts:direction="ltr">a quick table calculation and do a running
+<br />total,</p>
+        <p begin="00:10:15.210" end="00:10:17.169" tts:direction="ltr">which will convert those bar charts into</p>
+        <p begin="00:10:17.169" end="00:10:19.329" tts:direction="ltr">these line charts where then I can easily</p>
+        <p begin="00:10:19.329" end="00:10:25.970" tts:direction="ltr">see that ZIP code 92101 has a total of
+<br />2,260</p>
+        <p begin="00:10:25.970" end="00:10:30.489" tts:direction="ltr">Graffiti removal requests from December
+<br />2020,</p>
+        <p begin="00:10:30.489" end="00:10:33.049" tts:direction="ltr">all the way to December 2023.</p>
+        <p begin="00:10:33.049" end="00:10:38.050" tts:direction="ltr">Now, this is where you what your chart
+<br />should look like,</p>
+        <p begin="00:10:38.050" end="00:10:46.010" tts:direction="ltr">and I have provided another view just to
+<br />show you the power of Tableau.</p>
+        <p begin="00:10:46.010" end="00:10:48.409" tts:direction="ltr">If this is already pre selected,</p>
+        <p begin="00:10:48.409" end="00:10:50.770" tts:direction="ltr">you can just click that again and it</p>
+        <p begin="00:10:50.770" end="00:10:53.810" tts:direction="ltr">should deselect that or you can hit the
+<br />escape key.</p>
+        <p begin="00:10:53.810" end="00:10:56.410" tts:direction="ltr">But here I have a dashboard that I've
+<br />created.</p>
+        <p begin="00:10:56.410" end="00:10:59.089" tts:direction="ltr">We haven't gotten to the AG dashboard yet.</p>
+        <p begin="00:10:59.089" end="00:11:02.890" tts:direction="ltr">But you can see here what I've done is
+<br />I've created a map,</p>
+        <p begin="00:11:02.890" end="00:11:04.620" tts:direction="ltr">a very colorful map,</p>
+        <p begin="00:11:04.620" end="00:11:09.270" tts:direction="ltr">and I've created a relationship between
+<br />the zip codes and the map.</p>
+        <p begin="00:11:09.270" end="00:11:12.750" tts:direction="ltr">If I were to click on that 92101,</p>
+        <p begin="00:11:12.750" end="00:11:14.430" tts:direction="ltr">you'll see that it's</p>
+        <p begin="00:11:14.430" end="00:11:19.310" tts:direction="ltr">Angove Condos is that location and it's
+<br />represented in that space.</p>
+        <p begin="00:11:19.310" end="00:11:22.590" tts:direction="ltr">So we'll go ahead and deselect that,</p>
+        <p begin="00:11:22.590" end="00:11:26.230" tts:direction="ltr">and you can check that out on your own if
+<br />you want.</p>
+        <p begin="00:11:26.230" end="00:11:28.990" tts:direction="ltr">Let's go to D from.</p>
+        <p begin="00:11:28.990" end="00:11:33.869" tts:direction="ltr">Again, we're looking at our superstore
+<br />dataset for this first introduction,</p>
+        <p begin="00:11:33.869" end="00:11:38.330" tts:direction="ltr">just so that you can see exactly what
+<br />these table calculations do.</p>
+        <p begin="00:11:38.330" end="00:11:41.310" tts:direction="ltr">A difference from is typically used in
+<br />business to</p>
+        <p begin="00:11:41.310" end="00:11:45.029" tts:direction="ltr">measure changes or variances between two
+<br />data points.</p>
+        <p begin="00:11:45.029" end="00:11:47.870" tts:direction="ltr">Again, we're looking to analyze
+<br />performance over time</p>
+        <p begin="00:11:47.870" end="00:11:51.229" tts:direction="ltr">or comparing budgets, tracking any
+<br />deviations.</p>
+        <p begin="00:11:51.229" end="00:11:55.390" tts:direction="ltr">If I go down here, do the quick table
+<br />calculation and do difference,</p>
+        <p begin="00:11:55.390" end="00:11:58.349" tts:direction="ltr">then you'll see that 2021 does not</p>
+        <p begin="00:11:58.349" end="00:12:01.310" tts:direction="ltr">have any data in it because it's the
+<br />starting point.</p>
+        <p begin="00:12:01.310" end="00:12:05.270" tts:direction="ltr">It's 2021-2022 that the calculation is
+<br />coming.</p>
+        <p begin="00:12:05.270" end="00:12:09.450" tts:direction="ltr">In furniture, We see that difference being
+<br />a little over ten grand,</p>
+        <p begin="00:12:09.450" end="00:12:11.849" tts:direction="ltr">whereas in office supplies and technology,</p>
+        <p begin="00:12:11.849" end="00:12:13.610" tts:direction="ltr">we see a loss.</p>
+        <p begin="00:12:13.610" end="00:12:17.930" tts:direction="ltr">But we do see some large growth within
+<br />technology in 2023.</p>
+        <p begin="00:12:17.930" end="00:12:21.170" tts:direction="ltr">So awesome happened then and that could
+<br />help give us</p>
+        <p begin="00:12:21.170" end="00:12:26.130" tts:direction="ltr">some insights into that particular product
+<br />line.</p>
+        <p begin="00:12:26.130" end="00:12:28.255" tts:direction="ltr">Let's take a look at some data.</p>
+        <p begin="00:12:28.255" end="00:12:31.859" tts:direction="ltr">This one, we're going to use Airbnb and
+<br />the question is,</p>
+        <p begin="00:12:31.859" end="00:12:34.620" tts:direction="ltr">what is the price difference of Airbnb for</p>
+        <p begin="00:12:34.620" end="00:12:37.819" tts:direction="ltr">each zip code from the overall average?</p>
+        <p begin="00:12:37.819" end="00:12:41.860" tts:direction="ltr">We're going to build a comparison with
+<br />average price and</p>
+        <p begin="00:12:41.860" end="00:12:47.460" tts:direction="ltr">then also average price of two with a
+<br />different table calculation by zip code.</p>
+        <p begin="00:12:47.460" end="00:12:51.860" tts:direction="ltr">We'll grab that zip code and we'll bring
+<br />it to rows,</p>
+        <p begin="00:12:51.860" end="00:12:53.899" tts:direction="ltr">and then we'll grab price,</p>
+        <p begin="00:12:53.899" end="00:12:57.739" tts:direction="ltr">which should be down here in columns.</p>
+        <p begin="00:12:58.100" end="00:13:03.860" tts:direction="ltr">Then we're going to change the
+<br />aggregation, excuse me,</p>
+        <p begin="00:13:03.860" end="00:13:10.260" tts:direction="ltr">that was a slip to the default remember is
+<br />some,</p>
+        <p begin="00:13:10.260" end="00:13:13.779" tts:direction="ltr">but in this case, we want to work on an
+<br />average.</p>
+        <p begin="00:13:14.100" end="00:13:20.260" tts:direction="ltr">Let's go ahead and do a descending sort
+<br />and we're going to duplicate this.</p>
+        <p begin="00:13:20.260" end="00:13:23.860" tts:direction="ltr">But the way we do this, and it's a quick
+<br />command is we just hold down</p>
+        <p begin="00:13:23.860" end="00:13:28.779" tts:direction="ltr">Command and drag on a Mac or control and
+<br />grab on a PC.</p>
+        <p begin="00:13:28.779" end="00:13:31.900" tts:direction="ltr">Let's go ahead and duplicate average
+<br />price.</p>
+        <p begin="00:13:31.900" end="00:13:36.660" tts:direction="ltr">I'm going to hold down my command or
+<br />control key, drag that over.</p>
+        <p begin="00:13:36.660" end="00:13:39.420" tts:direction="ltr">Now I've got two bar charts,</p>
+        <p begin="00:13:39.420" end="00:13:42.290" tts:direction="ltr">and we're going to modify one of them,
+<br />okay?</p>
+        <p begin="00:13:42.290" end="00:13:47.560" tts:direction="ltr">So we're going to first add a reference
+<br />line.</p>
+        <p begin="00:13:47.560" end="00:13:50.600" tts:direction="ltr">We have not used the analytics pane very
+<br />much,</p>
+        <p begin="00:13:50.600" end="00:13:52.240" tts:direction="ltr">and there will be an AG on that.</p>
+        <p begin="00:13:52.240" end="00:13:54.600" tts:direction="ltr">But let's go ahead and select the
+<br />analytics pane.</p>
+        <p begin="00:13:54.600" end="00:13:56.120" tts:direction="ltr">You'll see there's a reference line.</p>
+        <p begin="00:13:56.120" end="00:13:59.919" tts:direction="ltr">I'll just click and drag that to the view
+<br />and select pane.</p>
+        <p begin="00:13:59.919" end="00:14:05.360" tts:direction="ltr">Once I do that, it will ask me what value
+<br />and I want to use the average price.</p>
+        <p begin="00:14:05.360" end="00:14:06.719" tts:direction="ltr">Here's that notation.</p>
+        <p begin="00:14:06.719" end="00:14:08.200" tts:direction="ltr">We want it to be the average,</p>
+        <p begin="00:14:08.200" end="00:14:09.919" tts:direction="ltr">and we want it to be a computation.</p>
+        <p begin="00:14:09.919" end="00:14:14.400" tts:direction="ltr">It's going to be an orange line and you
+<br />can actually fill above or below it,</p>
+        <p begin="00:14:14.400" end="00:14:15.799" tts:direction="ltr">so you can do some customization.</p>
+        <p begin="00:14:15.799" end="00:14:17.960" tts:direction="ltr">So you're welcome to try that out.</p>
+        <p begin="00:14:17.960" end="00:14:22.479" tts:direction="ltr">I'll just click Okay, and now you can see
+<br />where that average line is.</p>
+        <p begin="00:14:22.550" end="00:14:27.670" tts:direction="ltr">And we can go to the next section,</p>
+        <p begin="00:14:27.670" end="00:14:30.550" tts:direction="ltr">which we want to right click</p>
+        <p begin="00:14:30.550" end="00:14:35.710" tts:direction="ltr">on or do the drop down of the average
+<br />price on the column shelf.</p>
+        <p begin="00:14:35.710" end="00:14:38.350" tts:direction="ltr">We'll do a quick table calculation right
+<br />here,</p>
+        <p begin="00:14:38.350" end="00:14:40.630" tts:direction="ltr">and this will affect the second one,</p>
+        <p begin="00:14:40.630" end="00:14:42.590" tts:direction="ltr">and we will do</p>
+        <p begin="00:14:42.590" end="00:14:52.340" tts:direction="ltr">the um the difference right there.</p>
+        <p begin="00:14:52.340" end="00:14:54.940" tts:direction="ltr">Now we've created the difference.</p>
+        <p begin="00:14:54.940" end="00:14:58.220" tts:direction="ltr">You can see everything's gone to the right
+<br />side</p>
+        <p begin="00:14:58.220" end="00:15:02.220" tts:direction="ltr">of the because we've got now these
+<br />negatives here.</p>
+        <p begin="00:15:02.220" end="00:15:06.940" tts:direction="ltr">What we'll do next is we're going to
+<br />actually do something</p>
+        <p begin="00:15:06.940" end="00:15:13.009" tts:direction="ltr">called an in I pill calculation.</p>
+        <p begin="00:15:13.009" end="00:15:16.450" tts:direction="ltr">This is something that's a pretty great
+<br />feature.</p>
+        <p begin="00:15:16.450" end="00:15:18.730" tts:direction="ltr">If I double click the second pill right
+<br />here,</p>
+        <p begin="00:15:18.730" end="00:15:21.529" tts:direction="ltr">this is why it's going negative. I can see
+<br />that.</p>
+        <p begin="00:15:21.529" end="00:15:25.169" tts:direction="ltr">We want to delete what's currently in
+<br />there and we want to type</p>
+        <p begin="00:15:25.169" end="00:15:31.610" tts:direction="ltr">in this ZN average price, and then
+<br />-232.17.</p>
+        <p begin="00:15:31.610" end="00:15:35.250" tts:direction="ltr">Let's go ahead and ZN and then we'll</p>
+        <p begin="00:15:35.250" end="00:15:42.529" tts:direction="ltr">do average price.</p>
+        <p begin="00:15:46.580" end="00:15:51.379" tts:direction="ltr">-232.7.</p>
+        <p begin="00:15:55.060" end="00:15:58.579" tts:direction="ltr">Let's see, bring that over here.</p>
+        <p begin="00:16:01.220" end="00:16:05.940" tts:direction="ltr">Oops. What happened?</p>
+        <p begin="00:16:09.060" end="00:16:16.099" tts:direction="ltr">Huh. Two, 31.</p>
+        <p begin="00:16:16.099" end="00:16:20.380" tts:direction="ltr">Let me just double check what I have.</p>
+        <p begin="00:16:20.620" end="00:16:24.860" tts:direction="ltr">It looks like my notation is a little bit
+<br />off.</p>
+        <p begin="00:16:24.860" end="00:16:29.459" tts:direction="ltr">Let's go ahead and make sure note that
+<br />it's a minus 231</p>
+        <p begin="00:16:29.459" end="00:16:35.020" tts:direction="ltr">and this is the formula.</p>
+        <p begin="00:16:35.020" end="00:16:38.539" tts:direction="ltr">I'll update that when I post that to
+<br />Canvas.</p>
+        <p begin="00:16:38.539" end="00:16:42.580" tts:direction="ltr">Now I have these two charts and this one
+<br />showing</p>
+        <p begin="00:16:42.580" end="00:16:51.660" tts:direction="ltr">that average price difference and we're
+<br />going to let's see.</p>
+        <p begin="00:16:51.660" end="00:16:54.860" tts:direction="ltr">Oh, keep going down.</p>
+        <p begin="00:16:54.860" end="00:16:58.980" tts:direction="ltr">We're going to expand the marks card for
+<br />the table calc and add</p>
+        <p begin="00:16:58.980" end="00:17:03.139" tts:direction="ltr">the table calc to the colored card.</p>
+        <p begin="00:17:03.139" end="00:17:06.580" tts:direction="ltr">We're going to take this and hold down the
+<br />Control or command key,</p>
+        <p begin="00:17:06.580" end="00:17:09.179" tts:direction="ltr">drag and drop that and place it on color.</p>
+        <p begin="00:17:09.179" end="00:17:11.339" tts:direction="ltr">Then once we do that,</p>
+        <p begin="00:17:11.339" end="00:17:17.270" tts:direction="ltr">we're going to change the color legend.</p>
+        <p begin="00:17:17.270" end="00:17:20.430" tts:direction="ltr">If you click on color and edit colors,</p>
+        <p begin="00:17:20.430" end="00:17:27.389" tts:direction="ltr">what we want to do is change this to be a
+<br />stepped color,</p>
+        <p begin="00:17:27.389" end="00:17:30.110" tts:direction="ltr">and I don't want this to be this red.</p>
+        <p begin="00:17:30.110" end="00:17:34.469" tts:direction="ltr">I would rather let's go orange let's go
+<br />way over here.</p>
+        <p begin="00:17:34.469" end="00:17:38.149" tts:direction="ltr">I'm going to say orange and I would rather
+<br />just have two,</p>
+        <p begin="00:17:38.149" end="00:17:43.944" tts:direction="ltr">a positive and negative. I'll say, okay.</p>
+        <p begin="00:17:43.944" end="00:17:47.139" tts:direction="ltr">Now you can see very clearly</p>
+        <p begin="00:17:47.139" end="00:17:50.459" tts:direction="ltr">which particular zip codes were in</p>
+        <p begin="00:17:50.459" end="00:17:54.620" tts:direction="ltr">the positive and then which ones were in
+<br />the negative.</p>
+        <p begin="00:17:54.620" end="00:17:57.459" tts:direction="ltr">Now I have them and where</p>
+        <p begin="00:17:57.459" end="00:18:02.220" tts:direction="ltr">the average line is showing and providing
+<br />that difference.</p>
+        <p begin="00:18:02.700" end="00:18:07.939" tts:direction="ltr">I also have a dashboard reveal for this
+<br />particular example.</p>
+        <p begin="00:18:07.939" end="00:18:10.339" tts:direction="ltr">Again, if this is selected,</p>
+        <p begin="00:18:10.339" end="00:18:15.260" tts:direction="ltr">just select what's currently selected to
+<br />deselect it or hit Escape key.</p>
+        <p begin="00:18:15.260" end="00:18:18.699" tts:direction="ltr">And here you'll see that I've got the map
+<br />now on</p>
+        <p begin="00:18:18.699" end="00:18:22.520" tts:direction="ltr">the left side that's acting as the filter.</p>
+        <p begin="00:18:22.520" end="00:18:24.519" tts:direction="ltr">If I click on one of these,</p>
+        <p begin="00:18:24.519" end="00:18:29.240" tts:direction="ltr">then that will highlight in the bar
+<br />charts.</p>
+        <p begin="00:18:29.240" end="00:18:32.119" tts:direction="ltr">That's that zip code or this one or that
+<br />one.</p>
+        <p begin="00:18:32.119" end="00:18:37.549" tts:direction="ltr">You can see also that the average line
+<br />changes according to the selection.</p>
+        <p begin="00:18:37.549" end="00:18:40.179" tts:direction="ltr">So just another option to consider,</p>
+        <p begin="00:18:40.179" end="00:18:42.619" tts:direction="ltr">especially when you're thinking about your
+<br />own project,</p>
+        <p begin="00:18:42.619" end="00:18:44.340" tts:direction="ltr">you will need to create some sort of</p>
+        <p begin="00:18:44.340" end="00:18:47.539" tts:direction="ltr">spatial map so that they're showing some
+<br />sort of relationship.</p>
+        <p begin="00:18:47.539" end="00:18:49.699" tts:direction="ltr">So let me escape out of that.</p>
+        <p begin="00:18:49.699" end="00:18:53.379" tts:direction="ltr">Now let's go to the next one, which is
+<br />percent different.</p>
+        <p begin="00:18:53.379" end="00:18:56.380" tts:direction="ltr">And percent different is used to measure</p>
+        <p begin="00:18:56.380" end="00:18:57.940" tts:direction="ltr">the percent change between</p>
+        <p begin="00:18:57.940" end="00:19:01.325" tts:direction="ltr">a reference data point and other data
+<br />points in your dataset.</p>
+        <p begin="00:19:01.325" end="00:19:03.469" tts:direction="ltr">It's different than different from</p>
+        <p begin="00:19:03.469" end="00:19:06.069" tts:direction="ltr">because now we're doing it in percentage,
+<br />basically.</p>
+        <p begin="00:19:06.069" end="00:19:09.670" tts:direction="ltr">Let's go ahead and look at this example
+<br />from the superstore.</p>
+        <p begin="00:19:09.670" end="00:19:12.230" tts:direction="ltr">Let me just go back to my data pane so you
+<br />can see that's</p>
+        <p begin="00:19:12.230" end="00:19:15.069" tts:direction="ltr">the superstore and I'm going to select my
+<br />measure,</p>
+        <p begin="00:19:15.069" end="00:19:18.629" tts:direction="ltr">go to my table calculation and say percent
+<br />difference.</p>
+        <p begin="00:19:18.629" end="00:19:21.669" tts:direction="ltr">Now, similar to the difference from,</p>
+        <p begin="00:19:21.669" end="00:19:23.349" tts:direction="ltr">I don't have anything right here,</p>
+        <p begin="00:19:23.349" end="00:19:25.190" tts:direction="ltr">but now I've got the percentage.</p>
+        <p begin="00:19:25.190" end="00:19:27.989" tts:direction="ltr">I could layer those together so that I
+<br />could see</p>
+        <p begin="00:19:27.989" end="00:19:31.870" tts:direction="ltr">both the raw data and I could see also the
+<br />percentage.</p>
+        <p begin="00:19:31.870" end="00:19:33.849" tts:direction="ltr">Let's dive into an example.</p>
+        <p begin="00:19:33.849" end="00:19:36.949" tts:direction="ltr">This time, we're going to use some water
+<br />temperature data.</p>
+        <p begin="00:19:36.949" end="00:19:40.709" tts:direction="ltr">The question is, which month has the most
+<br />drastic change in</p>
+        <p begin="00:19:40.709" end="00:19:44.950" tts:direction="ltr">water temperature compared to the previous
+<br />day in 2022?</p>
+        <p begin="00:19:44.950" end="00:19:47.829" tts:direction="ltr">Let me bring out my caption notes a little
+<br />bit more</p>
+        <p begin="00:19:47.829" end="00:19:51.230" tts:direction="ltr">so we can use these to help create the
+<br />viz.</p>
+        <p begin="00:19:51.230" end="00:19:54.894" tts:direction="ltr">Let's go ahead and drag date time.</p>
+        <p begin="00:19:54.894" end="00:20:01.640" tts:direction="ltr">To the columns, and we're going to break
+<br />this down into months.</p>
+        <p begin="00:20:01.640" end="00:20:03.880" tts:direction="ltr">You can either click on the dates,</p>
+        <p begin="00:20:03.880" end="00:20:07.320" tts:direction="ltr">and then I can drag and take these off of
+<br />the shelf,</p>
+        <p begin="00:20:07.320" end="00:20:10.439" tts:direction="ltr">or I could just do the drop down and
+<br />select month.</p>
+        <p begin="00:20:10.439" end="00:20:12.160" tts:direction="ltr">Either way works.</p>
+        <p begin="00:20:12.160" end="00:20:17.120" tts:direction="ltr">Then we're going to drag that same field
+<br />onto rows.</p>
+        <p begin="00:20:17.120" end="00:20:20.839" tts:direction="ltr">But this time we're going to do the day.</p>
+        <p begin="00:20:23.670" end="00:20:27.869" tts:direction="ltr">All right. Next, what we'll do is we'll
+<br />drag</p>
+        <p begin="00:20:27.869" end="00:20:32.389" tts:direction="ltr">value to the text card so we can fill in
+<br />all of these.</p>
+        <p begin="00:20:32.389" end="00:20:34.990" tts:direction="ltr">Now, if you have a whole bunch of
+<br />hashtags,</p>
+        <p begin="00:20:34.990" end="00:20:36.870" tts:direction="ltr">most likely you need to expand</p>
+        <p begin="00:20:36.870" end="00:20:40.229" tts:direction="ltr">your screen so that you can view all of
+<br />the data.</p>
+        <p begin="00:20:40.229" end="00:20:42.269" tts:direction="ltr">Another idea is right here.</p>
+        <p begin="00:20:42.269" end="00:20:44.149" tts:direction="ltr">We have standard fit width,</p>
+        <p begin="00:20:44.149" end="00:20:45.989" tts:direction="ltr">fit height or entire view.</p>
+        <p begin="00:20:45.989" end="00:20:48.389" tts:direction="ltr">You might try playing around with some</p>
+        <p begin="00:20:48.389" end="00:20:51.149" tts:direction="ltr">of those settings too if you're not able
+<br />to see.</p>
+        <p begin="00:20:51.149" end="00:20:54.189" tts:direction="ltr">I'm going to just go right there.</p>
+        <p begin="00:20:54.189" end="00:20:56.870" tts:direction="ltr">Now we're going to add a quick table
+<br />calculation</p>
+        <p begin="00:20:56.870" end="00:21:00.069" tts:direction="ltr">and we're going to right click on the
+<br />average value.</p>
+        <p begin="00:21:00.500" end="00:21:03.339" tts:direction="ltr">Right here. Oh, let's change this.</p>
+        <p begin="00:21:03.339" end="00:21:05.339" tts:direction="ltr">We didn't change this to average.</p>
+        <p begin="00:21:05.339" end="00:21:07.099" tts:direction="ltr">Right now it's showing some,</p>
+        <p begin="00:21:07.099" end="00:21:09.180" tts:direction="ltr">so we want to change that to average.</p>
+        <p begin="00:21:09.180" end="00:21:10.859" tts:direction="ltr">Then we're going to create</p>
+        <p begin="00:21:10.859" end="00:21:17.219" tts:direction="ltr">a quick table calculation using percent
+<br />difference. Now you can see that.</p>
+        <p begin="00:21:17.219" end="00:21:19.939" tts:direction="ltr">And then we're going to right click</p>
+        <p begin="00:21:19.939" end="00:21:24.739" tts:direction="ltr">that calculated field to make sure that
+<br />we're using the correct compute using.</p>
+        <p begin="00:21:24.739" end="00:21:29.260" tts:direction="ltr">So often it will default to the table
+<br />across or table down.</p>
+        <p begin="00:21:29.260" end="00:21:32.819" tts:direction="ltr">You just have to double check where you
+<br />want the computation to happen.</p>
+        <p begin="00:21:32.819" end="00:21:37.699" tts:direction="ltr">In this case, since we have this table
+<br />where we have both across and down,</p>
+        <p begin="00:21:37.699" end="00:21:42.789" tts:direction="ltr">we want to do down and then cross right
+<br />here.</p>
+        <p begin="00:21:42.789" end="00:21:46.469" tts:direction="ltr">Now I've got all of those in there,</p>
+        <p begin="00:21:46.469" end="00:21:50.310" tts:direction="ltr">and we'll drag that field to the color
+<br />card.</p>
+        <p begin="00:21:50.310" end="00:21:52.909" tts:direction="ltr">I'm going to just drag that and move that
+<br />to color.</p>
+        <p begin="00:21:52.909" end="00:21:54.549" tts:direction="ltr">We're going to just take out all of</p>
+        <p begin="00:21:54.549" end="00:21:58.384" tts:direction="ltr">the numbers and now we're going to have
+<br />colors.</p>
+        <p begin="00:21:58.384" end="00:22:00.939" tts:direction="ltr">Now, the really great thing here about</p>
+        <p begin="00:22:00.939" end="00:22:04.419" tts:direction="ltr">this particular visualization is that as
+<br />soon as you do that,</p>
+        <p begin="00:22:04.419" end="00:22:08.259" tts:direction="ltr">you can see exactly which month and which
+<br />day</p>
+        <p begin="00:22:08.259" end="00:22:12.779" tts:direction="ltr">of the month where there's the most
+<br />drastic change in water.</p>
+        <p begin="00:22:12.779" end="00:22:17.659" tts:direction="ltr">If you have pinpointed to this dark red,
+<br />you would be correct.</p>
+        <p begin="00:22:17.659" end="00:22:23.899" tts:direction="ltr">November 3rd is the culprit and a really
+<br />quick way to answer that question.</p>
+        <p begin="00:22:23.900" end="00:22:27.140" tts:direction="ltr">Aren't visualizations so cool.</p>
+        <p begin="00:22:27.140" end="00:22:30.294" tts:direction="ltr">Anyway, let's look at percent of total.</p>
+        <p begin="00:22:30.294" end="00:22:33.330" tts:direction="ltr">And again, we're back here in our
+<br />superstore data set,</p>
+        <p begin="00:22:33.330" end="00:22:36.609" tts:direction="ltr">and percent of total is using</p>
+        <p begin="00:22:36.609" end="00:22:40.930" tts:direction="ltr">the proportion that a particular segment
+<br />contributes to the overall total.</p>
+        <p begin="00:22:40.930" end="00:22:44.009" tts:direction="ltr">And you can see that this helps how much</p>
+        <p begin="00:22:44.009" end="00:22:48.690" tts:direction="ltr">this particular value impacts the whole.</p>
+        <p begin="00:22:48.690" end="00:22:51.210" tts:direction="ltr">So let's go ahead and add that here using</p>
+        <p begin="00:22:51.210" end="00:22:54.489" tts:direction="ltr">the table calculation and percentage of
+<br />total.</p>
+        <p begin="00:22:54.489" end="00:22:56.890" tts:direction="ltr">You'll see now we've got the 100 percents,</p>
+        <p begin="00:22:56.890" end="00:23:00.609" tts:direction="ltr">and we can easily and quickly see that
+<br />tables in</p>
+        <p begin="00:23:00.609" end="00:23:05.149" tts:direction="ltr">the West region contributed almost 41% of
+<br />the total.</p>
+        <p begin="00:23:05.149" end="00:23:07.749" tts:direction="ltr">So right is happening there.</p>
+        <p begin="00:23:07.749" end="00:23:09.989" tts:direction="ltr">Let's dive into an example.</p>
+        <p begin="00:23:09.989" end="00:23:11.549" tts:direction="ltr">Let me just scroll over.</p>
+        <p begin="00:23:11.549" end="00:23:14.309" tts:direction="ltr">We're going to use some more Airbnb data.</p>
+        <p begin="00:23:14.309" end="00:23:20.789" tts:direction="ltr">The question is, that's not good grammar.</p>
+        <p begin="00:23:20.789" end="00:23:28.110" tts:direction="ltr">What is the percentage of total Airbnb
+<br />listings for each zip code?</p>
+        <p begin="00:23:28.110" end="00:23:32.029" tts:direction="ltr">We want to find that percent of</p>
+        <p begin="00:23:32.029" end="00:23:37.589" tts:direction="ltr">total and we're going to build that view
+<br />by dragging in zip code to the rows,</p>
+        <p begin="00:23:37.589" end="00:23:41.590" tts:direction="ltr">and then ID to the column.</p>
+        <p begin="00:23:41.590" end="00:23:46.310" tts:direction="ltr">Let me get to ID to the column.</p>
+        <p begin="00:23:46.310" end="00:23:50.229" tts:direction="ltr">Then we're going to change this
+<br />aggregation to count.</p>
+        <p begin="00:23:50.990" end="00:23:55.229" tts:direction="ltr">You'll find that even in the next
+<br />challenge,</p>
+        <p begin="00:23:55.229" end="00:24:01.229" tts:direction="ltr">you'll be moving some of the measures to
+<br />count just because</p>
+        <p begin="00:24:01.229" end="00:24:08.230" tts:direction="ltr">it's a great way to understand the
+<br />perspective of each listing.</p>
+        <p begin="00:24:08.230" end="00:24:11.550" tts:direction="ltr">When we have each, that's definitely
+<br />having each one counted.</p>
+        <p begin="00:24:11.550" end="00:24:14.029" tts:direction="ltr">Let's go ahead and do a descending sort,</p>
+        <p begin="00:24:14.029" end="00:24:17.190" tts:direction="ltr">and then let's add those lovely table
+<br />calcs.</p>
+        <p begin="00:24:17.190" end="00:24:21.630" tts:direction="ltr">We're going to first duplicate and drag
+<br />the calc ID to the label card.</p>
+        <p begin="00:24:21.630" end="00:24:25.330" tts:direction="ltr">I'm going to have Command or Control and
+<br />we'll go to label.</p>
+        <p begin="00:24:25.330" end="00:24:29.629" tts:direction="ltr">Now I have that number and we're going to
+<br />click that</p>
+        <p begin="00:24:29.629" end="00:24:34.750" tts:direction="ltr">and go to table calculation and show
+<br />percent of total.</p>
+        <p begin="00:24:34.750" end="00:24:36.949" tts:direction="ltr">Even though I have this bar chart,</p>
+        <p begin="00:24:36.949" end="00:24:42.110" tts:direction="ltr">I can see that 92109 has 22%,</p>
+        <p begin="00:24:42.110" end="00:24:45.229" tts:direction="ltr">and then I can go even down further to
+<br />really see</p>
+        <p begin="00:24:45.229" end="00:24:49.769" tts:direction="ltr">which zip code provides what percent of
+<br />total.</p>
+        <p begin="00:24:49.769" end="00:24:56.109" tts:direction="ltr">Okay. I've got an example here again using
+<br />that map, the Airbnb map.</p>
+        <p begin="00:24:56.109" end="00:25:00.589" tts:direction="ltr">If I select that, you can see now that's a
+<br />highlighted area.</p>
+        <p begin="00:25:00.589" end="00:25:07.215" tts:direction="ltr">A little previews to come when it comes to
+<br />the dashboard features of Tableau.</p>
+        <p begin="00:25:07.215" end="00:25:09.559" tts:direction="ltr">Now let's talk about moving average.</p>
+        <p begin="00:25:09.559" end="00:25:14.279" tts:direction="ltr">A moving average is an analysis where you
+<br />are</p>
+        <p begin="00:25:14.279" end="00:25:16.879" tts:direction="ltr">smoothing out short term fluctuations</p>
+        <p begin="00:25:16.879" end="00:25:19.999" tts:direction="ltr">and highlight long term trends or cycles
+<br />in the data.</p>
+        <p begin="00:25:19.999" end="00:25:23.080" tts:direction="ltr">We're trying to get rid of some of the
+<br />noise that we see</p>
+        <p begin="00:25:23.080" end="00:25:27.720" tts:direction="ltr">here to see if there's any insights that
+<br />we can gather.</p>
+        <p begin="00:25:27.720" end="00:25:29.879" tts:direction="ltr">We'll apply the quick table calculation to</p>
+        <p begin="00:25:29.879" end="00:25:34.390" tts:direction="ltr">the superstore and we will do moving
+<br />average.</p>
+        <p begin="00:25:34.390" end="00:25:38.779" tts:direction="ltr">And so now what I can see is in the
+<br />central region,</p>
+        <p begin="00:25:38.779" end="00:25:43.419" tts:direction="ltr">really October and November and December
+<br />are stand out.</p>
+        <p begin="00:25:43.419" end="00:25:46.299" tts:direction="ltr">So there's some kind of insight or</p>
+        <p begin="00:25:46.299" end="00:25:50.014" tts:direction="ltr">potential extra date detective work I
+<br />might do there.</p>
+        <p begin="00:25:50.014" end="00:25:54.609" tts:direction="ltr">Here, I've got a pretty consistent rise.</p>
+        <p begin="00:25:54.609" end="00:25:57.409" tts:direction="ltr">This is just a big dip between here and
+<br />here.</p>
+        <p begin="00:25:57.409" end="00:26:00.129" tts:direction="ltr">This one's pretty consistent as well.</p>
+        <p begin="00:26:00.129" end="00:26:04.329" tts:direction="ltr">Let's go ahead and take a look at the
+<br />moving average with this dataset.</p>
+        <p begin="00:26:04.329" end="00:26:08.809" tts:direction="ltr">This is actually the ocean conditions data
+<br />and I've already created</p>
+        <p begin="00:26:08.809" end="00:26:11.809" tts:direction="ltr">these multiple line charts just so</p>
+        <p begin="00:26:11.809" end="00:26:15.479" tts:direction="ltr">that we can apply that quick table
+<br />calculation quickly.</p>
+        <p begin="00:26:15.479" end="00:26:18.669" tts:direction="ltr">But you can see here I've got hour and
+<br />date on columns,</p>
+        <p begin="00:26:18.669" end="00:26:22.469" tts:direction="ltr">I have location, and then the average of
+<br />the peak wave period,</p>
+        <p begin="00:26:22.469" end="00:26:25.869" tts:direction="ltr">and wave period is the time it takes for</p>
+        <p begin="00:26:25.869" end="00:26:30.670" tts:direction="ltr">two consecutive wave crests or troughs to
+<br />pass the same fixed point.</p>
+        <p begin="00:26:30.670" end="00:26:35.550" tts:direction="ltr">They do this observation and collect this
+<br />data through NOA,</p>
+        <p begin="00:26:35.550" end="00:26:39.109" tts:direction="ltr">and shorter wave periods tend to be
+<br />smaller and less powerful,</p>
+        <p begin="00:26:39.109" end="00:26:43.150" tts:direction="ltr">while longer period waves can be great for
+<br />expert surfers.</p>
+        <p begin="00:26:43.150" end="00:26:46.110" tts:direction="ltr">Let's add that table calculation by right
+<br />clicking</p>
+        <p begin="00:26:46.110" end="00:26:52.410" tts:direction="ltr">the average peak period and make a moving
+<br />average.</p>
+        <p begin="00:26:52.410" end="00:26:56.589" tts:direction="ltr">Okay. We're going to edit that table
+<br />calculation.</p>
+        <p begin="00:26:56.589" end="00:26:58.629" tts:direction="ltr">If I go ahead and click on that,</p>
+        <p begin="00:26:58.629" end="00:27:01.189" tts:direction="ltr">we're going to edit the table calculate
+<br />and now</p>
+        <p begin="00:27:01.189" end="00:27:04.149" tts:direction="ltr">you can see I've got a little more control
+<br />here.</p>
+        <p begin="00:27:04.149" end="00:27:08.749" tts:direction="ltr">What I want to do is change this by doing
+<br />the drop down and</p>
+        <p begin="00:27:08.749" end="00:27:13.910" tts:direction="ltr">I'll say that the previous will be 90
+<br />instead of two and then zero.</p>
+        <p begin="00:27:13.910" end="00:27:15.389" tts:direction="ltr">Again, a little front work,</p>
+        <p begin="00:27:15.389" end="00:27:17.389" tts:direction="ltr">maybe some knowledge about and</p>
+        <p begin="00:27:17.389" end="00:27:20.095" tts:direction="ltr">ocean wave and conditions to be able to do
+<br />that.</p>
+        <p begin="00:27:20.095" end="00:27:21.639" tts:direction="ltr">Let me close that down.</p>
+        <p begin="00:27:21.639" end="00:27:25.319" tts:direction="ltr">Now I'm smoothing out those troughs so I
+<br />can really see</p>
+        <p begin="00:27:25.319" end="00:27:30.599" tts:direction="ltr">maybe some potential insights for that.
+<br />Let's see.</p>
+        <p begin="00:27:30.599" end="00:27:33.799" tts:direction="ltr">Here we're seeing that moving average of</p>
+        <p begin="00:27:33.799" end="00:27:37.240" tts:direction="ltr">peak wave period in a longer window for
+<br />each location.</p>
+        <p begin="00:27:37.240" end="00:27:43.239" tts:direction="ltr">Then we can begin to maybe dig a little
+<br />deeper in certain areas. All right.</p>
+        <p begin="00:27:43.239" end="00:27:49.279" tts:direction="ltr">The final example for table calcs is the
+<br />rank example.</p>
+        <p begin="00:27:49.279" end="00:27:52.200" tts:direction="ltr">Rank is something I use frequently.</p>
+        <p begin="00:27:52.200" end="00:27:56.359" tts:direction="ltr">It allows me to do that slope chart that
+<br />you've learned about.</p>
+        <p begin="00:27:56.359" end="00:27:59.239" tts:direction="ltr">It can help compare and order</p>
+        <p begin="00:27:59.239" end="00:28:02.799" tts:direction="ltr">data points based on their value across a
+<br />range of categories.</p>
+        <p begin="00:28:02.799" end="00:28:04.360" tts:direction="ltr">It's great for performers,</p>
+        <p begin="00:28:04.360" end="00:28:07.679" tts:direction="ltr">underperformers, where things are really
+<br />moving.</p>
+        <p begin="00:28:07.679" end="00:28:11.599" tts:direction="ltr">Here I have just a simple table and</p>
+        <p begin="00:28:11.599" end="00:28:16.000" tts:direction="ltr">I've got my sum of sales and if I add that
+<br />quick table calc of ranking,</p>
+        <p begin="00:28:16.000" end="00:28:19.994" tts:direction="ltr">What it's done now is it's ranked as Diana
+<br />Arnett</p>
+        <p begin="00:28:19.994" end="00:28:24.954" tts:direction="ltr">as my top salesperson based upon that
+<br />calculation.</p>
+        <p begin="00:28:24.954" end="00:28:30.554" tts:direction="ltr">Then now we've ordered those customers in
+<br />such a way.</p>
+        <p begin="00:28:30.554" end="00:28:35.800" tts:direction="ltr">Even though I see Mary has 912 rank of
+<br />sales,</p>
+        <p begin="00:28:35.800" end="00:28:40.905" tts:direction="ltr">but it's computing where she stands in
+<br />relation to the sales.</p>
+        <p begin="00:28:40.905" end="00:28:43.409" tts:direction="ltr">Let's go ahead and apply this to</p>
+        <p begin="00:28:43.409" end="00:28:47.650" tts:direction="ltr">another dataset and let's look at the San
+<br />Diego parking meters.</p>
+        <p begin="00:28:47.650" end="00:28:50.889" tts:direction="ltr">How does the rank of all parking meters
+<br />based on</p>
+        <p begin="00:28:50.889" end="00:28:55.210" tts:direction="ltr">transaction amount change 2022-2023?</p>
+        <p begin="00:28:55.210" end="00:28:58.729" tts:direction="ltr">This might be good intelligence to
+<br />determine</p>
+        <p begin="00:28:58.729" end="00:29:02.809" tts:direction="ltr">where some additional parking meters or
+<br />additional parking should be</p>
+        <p begin="00:29:02.809" end="00:29:07.650" tts:direction="ltr">installed in the city or where are the hot
+<br />zones where people are</p>
+        <p begin="00:29:07.650" end="00:29:09.889" tts:direction="ltr">using them and maybe we increase the price
+<br />of</p>
+        <p begin="00:29:09.889" end="00:29:12.660" tts:direction="ltr">parking there to bring in more revenue for
+<br />the city.</p>
+        <p begin="00:29:12.660" end="00:29:15.189" tts:direction="ltr">All sorts of good insights that can come
+<br />from this.</p>
+        <p begin="00:29:15.189" end="00:29:17.469" tts:direction="ltr">We're going to build a bump chart.</p>
+        <p begin="00:29:17.469" end="00:29:23.069" tts:direction="ltr">A bump chart has those two ends where
+<br />you've got the beginning and end.</p>
+        <p begin="00:29:23.069" end="00:29:25.309" tts:direction="ltr">It can also be called a slope chart,</p>
+        <p begin="00:29:25.309" end="00:29:29.444" tts:direction="ltr">where we're going to show that ranking
+<br />from 22-23.</p>
+        <p begin="00:29:29.444" end="00:29:37.980" tts:direction="ltr">So what we'll do, let's build the V by
+<br />bringing transaction amount to filters.</p>
+        <p begin="00:29:38.460" end="00:29:41.019" tts:direction="ltr">So what I'll do,</p>
+        <p begin="00:29:41.019" end="00:29:43.060" tts:direction="ltr">especially for larger datasets,</p>
+        <p begin="00:29:43.060" end="00:29:46.220" tts:direction="ltr">is that I will bring in the filters</p>
+        <p begin="00:29:46.220" end="00:29:50.059" tts:direction="ltr">first so that I don't bring all of my data
+<br />into the view.</p>
+        <p begin="00:29:50.059" end="00:29:54.580" tts:direction="ltr">And so often, and you might find this in
+<br />the case for the next challenge,</p>
+        <p begin="00:29:54.580" end="00:29:56.499" tts:direction="ltr">that you want to filter the data</p>
+        <p begin="00:29:56.499" end="00:29:59.444" tts:direction="ltr">first and then bring in the fields to the
+<br />view.</p>
+        <p begin="00:29:59.444" end="00:30:00.909" tts:direction="ltr">So in this case,</p>
+        <p begin="00:30:00.909" end="00:30:03.829" tts:direction="ltr">we're going to focus on sum as our
+<br />aggregation,</p>
+        <p begin="00:30:03.829" end="00:30:05.670" tts:direction="ltr">and then we'll click Next.</p>
+        <p begin="00:30:05.670" end="00:30:09.069" tts:direction="ltr">At this point, we're going to be good to
+<br />go. So we'll just say, okay.</p>
+        <p begin="00:30:09.069" end="00:30:14.429" tts:direction="ltr">And then we're going to add pull ID to the
+<br />color card,</p>
+        <p begin="00:30:15.070" end="00:30:19.909" tts:direction="ltr">and then we will add</p>
+        <p begin="00:30:19.909" end="00:30:25.270" tts:direction="ltr">or change compute adjust the compute using
+<br />for the sum of transaction.</p>
+        <p begin="00:30:25.270" end="00:30:31.819" tts:direction="ltr">So let's go ahead and we're going to Let's
+<br />see.</p>
+        <p begin="00:30:31.819" end="00:30:35.460" tts:direction="ltr">Let's actually make sure I've got that,
+<br />select sum,</p>
+        <p begin="00:30:35.460" end="00:30:38.419" tts:direction="ltr">right click add a table calculation,</p>
+        <p begin="00:30:38.419" end="00:30:39.939" tts:direction="ltr">which I failed to do,</p>
+        <p begin="00:30:39.939" end="00:30:45.379" tts:direction="ltr">and we're going to go ahead and add rank,
+<br />and then I'm going to say,</p>
+        <p begin="00:30:45.379" end="00:30:48.979" tts:direction="ltr">and then I'm going to go in and make sure
+<br />that I'm going</p>
+        <p begin="00:30:48.979" end="00:30:53.539" tts:direction="ltr">to compute using pull ID.</p>
+        <p begin="00:30:53.620" end="00:30:55.700" tts:direction="ltr">I don't have too many options.</p>
+        <p begin="00:30:55.700" end="00:30:57.539" tts:direction="ltr">I have table across, I have each cell,</p>
+        <p begin="00:30:57.539" end="00:31:01.300" tts:direction="ltr">or I have this particular field.</p>
+        <p begin="00:31:01.300" end="00:31:03.459" tts:direction="ltr">In this case, we want to change this.</p>
+        <p begin="00:31:03.459" end="00:31:06.180" tts:direction="ltr">Let me go ahead and scroll.</p>
+        <p begin="00:31:07.300" end="00:31:13.219" tts:direction="ltr">I think I need to change this to, I forget
+<br />the value.</p>
+        <p begin="00:31:13.219" end="00:31:17.300" tts:direction="ltr">Let me say okay. Let me hide this card.</p>
+        <p begin="00:31:17.300" end="00:31:20.179" tts:direction="ltr">We don't need all of these.</p>
+        <p begin="00:31:21.140" end="00:31:26.619" tts:direction="ltr">It looks like my computer is processing 25
+<br />was the number.</p>
+        <p begin="00:31:26.619" end="00:31:34.500" tts:direction="ltr">This is a lot of data. I'm going to go
+<br />ahead and compute using P ID.</p>
+        <p begin="00:31:34.820" end="00:31:38.100" tts:direction="ltr">Actually, let me go back.</p>
+        <p begin="00:31:46.150" end="00:31:50.389" tts:direction="ltr">Let's see. Now I have them all.</p>
+        <p begin="00:31:50.389" end="00:31:53.270" tts:direction="ltr">Now I'll do compute using pull ID,</p>
+        <p begin="00:31:53.270" end="00:31:56.389" tts:direction="ltr">and then I'll just put 25 up here.</p>
+        <p begin="00:31:57.270" end="00:32:00.709" tts:direction="ltr">Now I have filtered</p>
+        <p begin="00:32:00.709" end="00:32:04.509" tts:direction="ltr">my data a little bit and we're going to
+<br />add some more fields.</p>
+        <p begin="00:32:04.509" end="00:32:10.029" tts:direction="ltr">We're going to add date to the columns,</p>
+        <p begin="00:32:10.029" end="00:32:15.619" tts:direction="ltr">and then we're going to Duplicate some of</p>
+        <p begin="00:32:15.619" end="00:32:19.019" tts:direction="ltr">transactions from the filter shelf</p>
+        <p begin="00:32:19.019" end="00:32:21.339" tts:direction="ltr">to the rows and we're going to do that
+<br />twice.</p>
+        <p begin="00:32:21.339" end="00:32:23.420" tts:direction="ltr">I'm going to hold down Command or Control,</p>
+        <p begin="00:32:23.420" end="00:32:25.699" tts:direction="ltr">drag that over here, drop that in,</p>
+        <p begin="00:32:25.699" end="00:32:27.900" tts:direction="ltr">and I'm going to drag and drop.</p>
+        <p begin="00:32:27.900" end="00:32:33.060" tts:direction="ltr">Now this is where your view should look
+<br />like with two of these bump charts.</p>
+        <p begin="00:32:33.060" end="00:32:36.300" tts:direction="ltr">Then what we'll do is we're going to
+<br />reverse the axis.</p>
+        <p begin="00:32:36.300" end="00:32:42.059" tts:direction="ltr">Now the reason why is because in ranking
+<br />what usually comes on top first,</p>
+        <p begin="00:32:42.059" end="00:32:45.015" tts:direction="ltr">whereas right now 25 is on top.</p>
+        <p begin="00:32:45.015" end="00:32:47.530" tts:direction="ltr">So when you're doing these types of
+<br />charts,</p>
+        <p begin="00:32:47.530" end="00:32:51.569" tts:direction="ltr">you'll just need to right click in the
+<br />axes area to edit it,</p>
+        <p begin="00:32:51.569" end="00:32:53.770" tts:direction="ltr">and then just select this reverse.</p>
+        <p begin="00:32:53.770" end="00:32:55.689" tts:direction="ltr">And I'll do that for both of them.</p>
+        <p begin="00:32:55.689" end="00:32:57.609" tts:direction="ltr">So let me do that here.</p>
+        <p begin="00:32:57.609" end="00:33:00.329" tts:direction="ltr">I'll right click Edit axes,</p>
+        <p begin="00:33:00.329" end="00:33:01.809" tts:direction="ltr">and then I'll say reverse.</p>
+        <p begin="00:33:01.809" end="00:33:03.129" tts:direction="ltr">So now, what do I have?</p>
+        <p begin="00:33:03.129" end="00:33:05.849" tts:direction="ltr">I have one on top. All right.</p>
+        <p begin="00:33:05.849" end="00:33:11.730" tts:direction="ltr">So we're going to go to the rows and click
+<br />on the second sum of transaction,</p>
+        <p begin="00:33:11.730" end="00:33:14.050" tts:direction="ltr">and we're going to select dual axis.</p>
+        <p begin="00:33:14.050" end="00:33:15.939" tts:direction="ltr">So we're going to combine these together.</p>
+        <p begin="00:33:15.939" end="00:33:19.389" tts:direction="ltr">And then what we're going to do is we'll
+<br />look</p>
+        <p begin="00:33:19.389" end="00:33:23.829" tts:direction="ltr">at this second line on the marks card.</p>
+        <p begin="00:33:23.829" end="00:33:27.749" tts:direction="ltr">And so make sure you've got all you have
+<br />the very first row,</p>
+        <p begin="00:33:27.749" end="00:33:30.549" tts:direction="ltr">which is this one, and you have the second
+<br />one, which is this one.</p>
+        <p begin="00:33:30.549" end="00:33:35.230" tts:direction="ltr">And we're going to change this from
+<br />automatic to a circle.</p>
+        <p begin="00:33:35.230" end="00:33:39.109" tts:direction="ltr">And then I can go and I can change the
+<br />sides if I want to.</p>
+        <p begin="00:33:39.109" end="00:33:41.209" tts:direction="ltr">This actually looks fine to me right now.</p>
+        <p begin="00:33:41.209" end="00:33:44.309" tts:direction="ltr">Now I've created that bump chart and I can
+<br />really see,</p>
+        <p begin="00:33:44.309" end="00:33:49.229" tts:direction="ltr">for instance, this particular one went
+<br />from here all the way up here.</p>
+        <p begin="00:33:49.229" end="00:33:52.429" tts:direction="ltr">Now, there's a lot of color confetti here,</p>
+        <p begin="00:33:52.429" end="00:33:54.949" tts:direction="ltr">so I don't have a real clear story or</p>
+        <p begin="00:33:54.949" end="00:33:58.910" tts:direction="ltr">message that would be adding in the design
+<br />elements.</p>
+        <p begin="00:33:58.910" end="00:34:03.869" tts:direction="ltr">But now you have just learned how to
+<br />create a bump chart or a slope chart.</p>
+        <p begin="00:34:03.869" end="00:34:05.864" tts:direction="ltr">I want to show you one other feature.</p>
+        <p begin="00:34:05.864" end="00:34:10.939" tts:direction="ltr">Then I added here where you can select one
+<br />of those,</p>
+        <p begin="00:34:10.939" end="00:34:14.499" tts:direction="ltr">and then you can see that here in this
+<br />map. Let me escape that.</p>
+        <p begin="00:34:14.499" end="00:34:18.499" tts:direction="ltr">Let's zoom on in so we can really see the
+<br />location is,</p>
+        <p begin="00:34:18.499" end="00:34:21.579" tts:direction="ltr">where those parking meters are.</p>
+        <p begin="00:34:21.579" end="00:34:22.980" tts:direction="ltr">So even closer.</p>
+        <p begin="00:34:22.980" end="00:34:24.499" tts:direction="ltr">So to select on that.</p>
+        <p begin="00:34:24.499" end="00:34:27.899" tts:direction="ltr">Now you can see where that is. All right.</p>
+        <p begin="00:34:27.899" end="00:34:29.754" tts:direction="ltr">Let me escape out of that.</p>
+        <p begin="00:34:29.754" end="00:34:32.769" tts:direction="ltr">I have one other resource for you.</p>
+        <p begin="00:34:32.769" end="00:34:36.809" tts:direction="ltr">If you are loving table calcs and you want
+<br />to learn more,</p>
+        <p begin="00:34:36.809" end="00:34:39.649" tts:direction="ltr">here are some links to</p>
+        <p begin="00:34:39.649" end="00:34:44.489" tts:direction="ltr">some other resources that I have found to
+<br />be helpful and I can</p>
+        <p begin="00:34:44.489" end="00:34:48.409" tts:direction="ltr">include these links in the AG so that you</p>
+        <p begin="00:34:48.409" end="00:34:52.730" tts:direction="ltr">can access them without watching this
+<br />video in the future,</p>
+        <p begin="00:34:52.730" end="00:34:56.369" tts:direction="ltr">maybe saving them in your own folders.</p>
+        <p begin="00:34:56.369" end="00:35:01.089" tts:direction="ltr">That is it. I hope that you enjoyed
+<br />learning more about table calculations.</p>
+        <p begin="00:35:01.089" end="00:35:03.289" tts:direction="ltr">Happy fizzing.</p>
+    </div>
+  </body>
+</tt>

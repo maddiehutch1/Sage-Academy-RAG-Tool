@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>440535912 - 1_hmwq3bqh - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.280" end="00:00:05.640" tts:direction="ltr">Hello, visors. This is a starting video
+<br />for</p>
+        <p begin="00:00:05.640" end="00:00:13.080" tts:direction="ltr">the design challenge for the birthday make
+<br />over Monday.</p>
+        <p begin="00:00:13.080" end="00:00:15.560" tts:direction="ltr">You can see here there's a little
+<br />background reading.</p>
+        <p begin="00:00:15.560" end="00:00:17.300" tts:direction="ltr">Here's your dataset.</p>
+        <p begin="00:00:17.300" end="00:00:20.200" tts:direction="ltr">Birthday is 1994-2014.</p>
+        <p begin="00:00:20.200" end="00:00:22.700" tts:direction="ltr">Your birthday might reside in that.</p>
+        <p begin="00:00:22.700" end="00:00:25.700" tts:direction="ltr">There are two existing visas that were
+<br />created.</p>
+        <p begin="00:00:25.700" end="00:00:27.680" tts:direction="ltr">One of them in 2016,</p>
+        <p begin="00:00:27.680" end="00:00:28.900" tts:direction="ltr">and I think this is a newer one.</p>
+        <p begin="00:00:28.900" end="00:00:32.300" tts:direction="ltr">This is the one we're going to start off
+<br />to begin to remake.</p>
+        <p begin="00:00:32.300" end="00:00:34.860" tts:direction="ltr">You should download the CSV file and</p>
+        <p begin="00:00:34.860" end="00:00:38.720" tts:direction="ltr">then bring it into Tableau, which I have
+<br />right here.</p>
+        <p begin="00:00:39.130" end="00:00:42.070" tts:direction="ltr">Just to review what you've got.</p>
+        <p begin="00:00:42.070" end="00:00:44.270" tts:direction="ltr">You've got five fields,</p>
+        <p begin="00:00:44.270" end="00:00:48.150" tts:direction="ltr">a little over 7,600 rows,</p>
+        <p begin="00:00:48.150" end="00:00:52.390" tts:direction="ltr">and I've got year and month,</p>
+        <p begin="00:00:52.390" end="00:00:56.250" tts:direction="ltr">date of month, day of week, and birth.</p>
+        <p begin="00:00:56.250" end="00:00:59.110" tts:direction="ltr">I'm going to go ahead and rename this
+<br />first of all,</p>
+        <p begin="00:00:59.110" end="00:01:01.745" tts:direction="ltr">because I'm going to call that day.</p>
+        <p begin="00:01:01.745" end="00:01:05.340" tts:direction="ltr">That's basically the day.</p>
+        <p begin="00:01:05.340" end="00:01:09.260" tts:direction="ltr">They were born. Then day of the week</p>
+        <p begin="00:01:09.260" end="00:01:14.960" tts:direction="ltr">is the way if they were born on Sunday,
+<br />Monday, Tuesday, Wednesday.</p>
+        <p begin="00:01:14.960" end="00:01:17.100" tts:direction="ltr">Sunday is a number one.</p>
+        <p begin="00:01:17.100" end="00:01:22.260" tts:direction="ltr">Sunday, Monday is number two, three is
+<br />Tuesday.</p>
+        <p begin="00:01:22.260" end="00:01:25.040" tts:direction="ltr">Now, I think what I'd like to do is</p>
+        <p begin="00:01:25.040" end="00:01:28.600" tts:direction="ltr">actually create an actual field that does
+<br />the date.</p>
+        <p begin="00:01:28.600" end="00:01:30.500" tts:direction="ltr">I'm going to go ahead and do that right
+<br />away</p>
+        <p begin="00:01:30.500" end="00:01:32.540" tts:direction="ltr">and just create a calculated field.</p>
+        <p begin="00:01:32.540" end="00:01:34.960" tts:direction="ltr">I'm going to call that date.</p>
+        <p begin="00:01:37.050" end="00:01:40.950" tts:direction="ltr">What I want to do is I'm going to use</p>
+        <p begin="00:01:40.950" end="00:01:45.070" tts:direction="ltr">the make date function, that should come
+<br />right up.</p>
+        <p begin="00:01:45.070" end="00:01:49.770" tts:direction="ltr">Then I'm going to go and do years.</p>
+        <p begin="00:01:51.210" end="00:01:56.070" tts:direction="ltr">I can see I've got I'm going to do my
+<br />year,</p>
+        <p begin="00:01:56.070" end="00:02:00.450" tts:direction="ltr">and then I'll do my month.</p>
+        <p begin="00:02:00.450" end="00:02:09.610" tts:direction="ltr">And then I'll do my day. There we go.</p>
+        <p begin="00:02:09.610" end="00:02:12.330" tts:direction="ltr">Great. I I apply that,</p>
+        <p begin="00:02:12.330" end="00:02:14.570" tts:direction="ltr">now I have that calculated field,</p>
+        <p begin="00:02:14.570" end="00:02:18.050" tts:direction="ltr">so I have all of that in one because</p>
+        <p begin="00:02:18.050" end="00:02:22.830" tts:direction="ltr">I might want to use that in some of my
+<br />visualizations.</p>
+        <p begin="00:02:22.830" end="00:02:28.530" tts:direction="ltr">Now I'm going to jump into my first sheet
+<br />and remake one of those charts.</p>
+        <p begin="00:02:28.530" end="00:02:32.810" tts:direction="ltr">The first thing I'm going to do is you see
+<br />how these are continuous.</p>
+        <p begin="00:02:32.810" end="00:02:35.650" tts:direction="ltr">I'm going to just hold down my shift key
+<br />for day,</p>
+        <p begin="00:02:35.650" end="00:02:37.510" tts:direction="ltr">day of week, month, and year.</p>
+        <p begin="00:02:37.510" end="00:02:40.490" tts:direction="ltr">Then I'm going to right click those,</p>
+        <p begin="00:02:40.490" end="00:02:44.330" tts:direction="ltr">and I'm going to convert to discrete.</p>
+        <p begin="00:02:44.330" end="00:02:50.130" tts:direction="ltr">That way, I'll be able to use them in this
+<br />table that I'm going to make.</p>
+        <p begin="00:02:50.130" end="00:02:52.530" tts:direction="ltr">To recreate that.</p>
+        <p begin="00:02:52.530" end="00:02:56.570" tts:direction="ltr">We'll go ahead and we'll take the date.</p>
+        <p begin="00:02:56.700" end="00:03:01.100" tts:direction="ltr">And we'll put that one on rows,</p>
+        <p begin="00:03:01.100" end="00:03:05.420" tts:direction="ltr">we'll change that to month.</p>
+        <p begin="00:03:05.420" end="00:03:08.660" tts:direction="ltr">I didn't change that one, so we'll change
+<br />that to month.</p>
+        <p begin="00:03:08.660" end="00:03:13.960" tts:direction="ltr">Then we'll go ahead and take the day and
+<br />put that onto columns.</p>
+        <p begin="00:03:13.960" end="00:03:17.260" tts:direction="ltr">Let's go ahead and do the entire view
+<br />here.</p>
+        <p begin="00:03:17.260" end="00:03:19.880" tts:direction="ltr">Now I've got those dates.</p>
+        <p begin="00:03:19.880" end="00:03:23.720" tts:direction="ltr">Then what I want to do is I want to take
+<br />those berths.</p>
+        <p begin="00:03:23.720" end="00:03:26.100" tts:direction="ltr">I'm going to put that onto colors.</p>
+        <p begin="00:03:26.100" end="00:03:28.700" tts:direction="ltr">We're getting closer to that heat map,</p>
+        <p begin="00:03:28.700" end="00:03:33.740" tts:direction="ltr">but we're going to do some more design
+<br />work towards this. Okay.</p>
+        <p begin="00:03:33.740" end="00:03:38.160" tts:direction="ltr">So let's take a look at how we can change</p>
+        <p begin="00:03:38.160" end="00:03:44.200" tts:direction="ltr">those colors and maybe getting closer to
+<br />what the initial viz was.</p>
+        <p begin="00:03:44.200" end="00:03:48.280" tts:direction="ltr">I think there was purple and pink.</p>
+        <p begin="00:03:48.280" end="00:03:54.800" tts:direction="ltr">I don't think I have diverging color of
+<br />that.</p>
+        <p begin="00:03:54.800" end="00:03:57.840" tts:direction="ltr">Let's see if we can do some steps,</p>
+        <p begin="00:03:57.840" end="00:04:01.500" tts:direction="ltr">create some bigger differences here.</p>
+        <p begin="00:04:01.500" end="00:04:06.960" tts:direction="ltr">A little bit. But I think what I need to
+<br />do is not sum these,</p>
+        <p begin="00:04:06.960" end="00:04:08.940" tts:direction="ltr">I need to average those.</p>
+        <p begin="00:04:08.940" end="00:04:14.060" tts:direction="ltr">Let me change that. That's given me a
+<br />little more.</p>
+        <p begin="00:04:14.060" end="00:04:20.200" tts:direction="ltr">Let me also go into color and change this
+<br />border from automatic to white.</p>
+        <p begin="00:04:20.200" end="00:04:23.920" tts:direction="ltr">I can have those separations there.</p>
+        <p begin="00:04:24.160" end="00:04:28.320" tts:direction="ltr">I'm going to already see I'm not loving
+<br />this at all.</p>
+        <p begin="00:04:28.320" end="00:04:31.440" tts:direction="ltr">Let me see if I can get.</p>
+        <p begin="00:04:33.440" end="00:04:44.560" tts:direction="ltr">Let's to I might need to try and put in
+<br />another color palette in here.</p>
+        <p begin="00:04:44.560" end="00:04:47.240" tts:direction="ltr">I want to try to mimic that.</p>
+        <p begin="00:04:47.240" end="00:04:55.800" tts:direction="ltr">Let me try to do this but then to change a
+<br />little bit.</p>
+        <p begin="00:05:01.130" end="00:05:08.570" tts:direction="ltr">No. I'm going to go back to seven, go to
+<br />advanced.</p>
+        <p begin="00:05:08.570" end="00:05:15.990" tts:direction="ltr">I'm going to actually change this to do a
+<br />forced start, 7,000.</p>
+        <p begin="00:05:15.990" end="00:05:24.930" tts:direction="ltr">And then let's do. 12,000. Let's see if
+<br />that does anything.</p>
+        <p begin="00:05:25.570" end="00:05:28.410" tts:direction="ltr">Not quite</p>
+        <p begin="00:05:31.070" end="00:05:36.050" tts:direction="ltr">Definitely want the deeper see if anything
+<br />is.</p>
+        <p begin="00:05:36.050" end="00:05:39.350" tts:direction="ltr">So we'll try and go fewer.</p>
+        <p begin="00:05:41.310" end="00:05:43.710" tts:direction="ltr">Getting a little closer,</p>
+        <p begin="00:05:43.710" end="00:05:46.310" tts:direction="ltr">but not really happy.</p>
+        <p begin="00:05:46.630" end="00:05:50.850" tts:direction="ltr">There are some nuances that are being
+<br />missed here.</p>
+        <p begin="00:05:50.850" end="00:05:54.850" tts:direction="ltr">I really want to see some of those deeper
+<br />colors for</p>
+        <p begin="00:05:54.850" end="00:06:01.830" tts:direction="ltr">those larger average births. All right.</p>
+        <p begin="00:06:02.040" end="00:06:05.240" tts:direction="ltr">Instead of using that color palette,</p>
+        <p begin="00:06:05.240" end="00:06:10.440" tts:direction="ltr">I ended up taking off the step and I
+<br />selected</p>
+        <p begin="00:06:10.440" end="00:06:13.720" tts:direction="ltr">the red black diverging and reversed it so
+<br />that</p>
+        <p begin="00:06:13.720" end="00:06:18.340" tts:direction="ltr">the red was the higher number of births,</p>
+        <p begin="00:06:18.340" end="00:06:21.860" tts:direction="ltr">and I put a 900013000 on there.</p>
+        <p begin="00:06:21.860" end="00:06:24.960" tts:direction="ltr">You can do some more exploration on your
+<br />own,</p>
+        <p begin="00:06:24.960" end="00:06:26.580" tts:direction="ltr">but it does help that,</p>
+        <p begin="00:06:26.580" end="00:06:28.740" tts:direction="ltr">I can see that July 4,</p>
+        <p begin="00:06:28.740" end="00:06:31.100" tts:direction="ltr">actually, there were fewer births.</p>
+        <p begin="00:06:31.100" end="00:06:33.740" tts:direction="ltr">I'm looking for those deeper reds,</p>
+        <p begin="00:06:33.740" end="00:06:38.220" tts:direction="ltr">that would have the higher birth,</p>
+        <p begin="00:06:38.220" end="00:06:41.200" tts:direction="ltr">which happened a lot in September.</p>
+        <p begin="00:06:43.270" end="00:06:47.430" tts:direction="ltr">I think I can make this a little bit more
+<br />rich.</p>
+        <p begin="00:06:47.430" end="00:06:51.730" tts:direction="ltr">I'm going to go ahead and put nine colors
+<br />in that palette.</p>
+        <p begin="00:06:51.730" end="00:06:58.990" tts:direction="ltr">Click. Now I can really begin to see
+<br />what's being muted back and what's being</p>
+        <p begin="00:06:58.990" end="00:07:02.210" tts:direction="ltr">brought forward because this is an
+<br />interesting story that</p>
+        <p begin="00:07:02.210" end="00:07:06.750" tts:direction="ltr">those births are happening between July
+<br />and September.</p>
+        <p begin="00:07:07.670" end="00:07:10.370" tts:direction="ltr">This is an attempt to recreate that.</p>
+        <p begin="00:07:10.370" end="00:07:13.670" tts:direction="ltr">Again, this is slide our sheet number one,</p>
+        <p begin="00:07:13.670" end="00:07:19.610" tts:direction="ltr">and we're going to go ah and develop a few
+<br />more chart types here. All right.</p>
+        <p begin="00:07:19.610" end="00:07:22.990" tts:direction="ltr">We will add this I've got the original.</p>
+        <p begin="00:07:22.990" end="00:07:26.650" tts:direction="ltr">Now we're going to have an exploration
+<br />here.</p>
+        <p begin="00:07:26.650" end="00:07:35.430" tts:direction="ltr">L et's go ahead and explore and I could
+<br />look at the day of the week,</p>
+        <p begin="00:07:35.430" end="00:07:39.290" tts:direction="ltr">and I could look at some of births.</p>
+        <p begin="00:07:39.730" end="00:07:42.430" tts:direction="ltr">I see again, this is the Sunday,</p>
+        <p begin="00:07:42.430" end="00:07:45.850" tts:direction="ltr">Monday, Tuesday, Wednesday, Thursday,
+<br />Friday, Saturday.</p>
+        <p begin="00:07:45.850" end="00:07:47.550" tts:direction="ltr">This is a little bit higher,</p>
+        <p begin="00:07:47.550" end="00:07:49.010" tts:direction="ltr">and then it drops off.</p>
+        <p begin="00:07:49.010" end="00:07:50.650" tts:direction="ltr">No surprise.</p>
+        <p begin="00:07:50.650" end="00:07:55.890" tts:direction="ltr">OBGYNs don't like to deliver birthday
+<br />births on the weekend.</p>
+        <p begin="00:07:55.890" end="00:08:00.350" tts:direction="ltr">There's that and I could design that and
+<br />think about that if I wanted to.</p>
+        <p begin="00:08:00.350" end="00:08:06.000" tts:direction="ltr">The next one, we could look at let's look
+<br />at the date.</p>
+        <p begin="00:08:06.000" end="00:08:10.120" tts:direction="ltr">But then let's move to the month,</p>
+        <p begin="00:08:10.120" end="00:08:12.960" tts:direction="ltr">but let's do a measure,</p>
+        <p begin="00:08:12.960" end="00:08:15.740" tts:direction="ltr">and then let's do births here.</p>
+        <p begin="00:08:15.740" end="00:08:18.580" tts:direction="ltr">We can change that one also to bar.</p>
+        <p begin="00:08:18.580" end="00:08:22.160" tts:direction="ltr">So pretty steady, but like I said,</p>
+        <p begin="00:08:22.160" end="00:08:26.920" tts:direction="ltr">a little more births total in the summer,
+<br />but not outrageous.</p>
+        <p begin="00:08:26.920" end="00:08:28.500" tts:direction="ltr">Little bit of dip in February,</p>
+        <p begin="00:08:28.500" end="00:08:30.400" tts:direction="ltr">it is the shortest month,</p>
+        <p begin="00:08:30.400" end="00:08:32.560" tts:direction="ltr">and also in April.</p>
+        <p begin="00:08:32.560" end="00:08:38.020" tts:direction="ltr">So I'm going to call this one explore,</p>
+        <p begin="00:08:38.020" end="00:08:41.160" tts:direction="ltr">and this will just be month.</p>
+        <p begin="00:08:41.160" end="00:08:43.480" tts:direction="ltr">Now let's make another one.</p>
+        <p begin="00:08:43.480" end="00:08:45.480" tts:direction="ltr">I'm making several.</p>
+        <p begin="00:08:45.480" end="00:08:48.420" tts:direction="ltr">I'm just exploring quite a few,</p>
+        <p begin="00:08:48.420" end="00:08:52.360" tts:direction="ltr">and let's do a continuous.</p>
+        <p begin="00:08:54.210" end="00:08:57.850" tts:direction="ltr">For that, let's go ahead and take out,</p>
+        <p begin="00:08:57.850" end="00:09:02.070" tts:direction="ltr">take the date, and we'll do the month,</p>
+        <p begin="00:09:02.070" end="00:09:05.610" tts:direction="ltr">and then we'll do births right here.</p>
+        <p begin="00:09:05.610" end="00:09:10.030" tts:direction="ltr">Now I can see that I've got August,</p>
+        <p begin="00:09:10.030" end="00:09:16.010" tts:direction="ltr">August, interesting July, August, August.</p>
+        <p begin="00:09:16.010" end="00:09:17.890" tts:direction="ltr">I can see year by year,</p>
+        <p begin="00:09:17.890" end="00:09:20.530" tts:direction="ltr">this up and down,</p>
+        <p begin="00:09:20.530" end="00:09:26.150" tts:direction="ltr">and really seeing how August is a very
+<br />popular month.</p>
+        <p begin="00:09:26.150" end="00:09:29.440" tts:direction="ltr">If you're born in August, that might be
+<br />something.</p>
+        <p begin="00:09:29.440" end="00:09:32.820" tts:direction="ltr">Now I'm going to do a cycle plot here</p>
+        <p begin="00:09:32.820" end="00:09:37.760" tts:direction="ltr">where I'm going to go ahead and take date
+<br />on columns,</p>
+        <p begin="00:09:37.760" end="00:09:40.140" tts:direction="ltr">going to change this.</p>
+        <p begin="00:09:40.140" end="00:09:44.380" tts:direction="ltr">That one was a continuous as is going to
+<br />be discrete,</p>
+        <p begin="00:09:44.380" end="00:09:49.580" tts:direction="ltr">and let's do discrete day.</p>
+        <p begin="00:09:49.580" end="00:09:53.640" tts:direction="ltr">Then we're going to do a discrete month.</p>
+        <p begin="00:09:53.640" end="00:09:59.920" tts:direction="ltr">Then we're going to move the month in
+<br />front and bring births onto rows.</p>
+        <p begin="00:09:59.920" end="00:10:02.920" tts:direction="ltr">Let's go ahead and fit the width here.</p>
+        <p begin="00:10:02.920" end="00:10:07.980" tts:direction="ltr">Now what I've got is I've got all the
+<br />years and I've got the months.</p>
+        <p begin="00:10:07.980" end="00:10:10.100" tts:direction="ltr">I'm going to add in the analytics of</p>
+        <p begin="00:10:10.100" end="00:10:13.240" tts:direction="ltr">the average line here on the pane so that
+<br />I</p>
+        <p begin="00:10:13.240" end="00:10:18.720" tts:direction="ltr">can begin to see where those averages are
+<br />falling and rising.</p>
+        <p begin="00:10:18.720" end="00:10:21.120" tts:direction="ltr">It's interesting again.</p>
+        <p begin="00:10:21.120" end="00:10:25.540" tts:direction="ltr">I've got March, April,</p>
+        <p begin="00:10:25.540" end="00:10:30.600" tts:direction="ltr">June, July</p>
+        <p begin="00:10:34.590" end="00:10:40.110" tts:direction="ltr">That's another a wildcard explore.</p>
+        <p begin="00:10:40.950" end="00:10:43.710" tts:direction="ltr">These are all those wild cards.</p>
+        <p begin="00:10:43.710" end="00:10:46.850" tts:direction="ltr">Let me go back to that assignment.</p>
+        <p begin="00:10:46.850" end="00:10:51.090" tts:direction="ltr">What I'm asking you to do is to create at
+<br />least three visas.</p>
+        <p begin="00:10:51.090" end="00:10:53.810" tts:direction="ltr">One to recreate, which is that first one,</p>
+        <p begin="00:10:53.810" end="00:10:56.250" tts:direction="ltr">explore an alternative chart type.</p>
+        <p begin="00:10:56.250" end="00:10:59.930" tts:direction="ltr">Created that bar chart and then a wild
+<br />card.</p>
+        <p begin="00:10:59.930" end="00:11:03.630" tts:direction="ltr">That one is lifting one of</p>
+        <p begin="00:11:03.630" end="00:11:07.560" tts:direction="ltr">those ones that we've created and really
+<br />applying design principles to it.</p>
+        <p begin="00:11:07.560" end="00:11:10.830" tts:direction="ltr">So I did a couple of additional explorers.</p>
+        <p begin="00:11:10.830" end="00:11:12.650" tts:direction="ltr">You might do some other ones.</p>
+        <p begin="00:11:12.650" end="00:11:15.710" tts:direction="ltr">But you could design this one,</p>
+        <p begin="00:11:15.710" end="00:11:18.690" tts:direction="ltr">adding in some of those design features,</p>
+        <p begin="00:11:18.690" end="00:11:22.910" tts:direction="ltr">making sure that you're getting to</p>
+        <p begin="00:11:22.910" end="00:11:30.870" tts:direction="ltr">a really beautiful chart that has some of
+<br />those design principles applied.</p>
+        <p begin="00:11:30.870" end="00:11:34.050" tts:direction="ltr">You could grab one of these or you could
+<br />do that that,</p>
+        <p begin="00:11:34.050" end="00:11:37.090" tts:direction="ltr">this is called the cycle chart.</p>
+        <p begin="00:11:39.180" end="00:11:42.480" tts:direction="ltr">To one of those and then showing the rest
+<br />of those explorers.</p>
+        <p begin="00:11:42.480" end="00:11:45.920" tts:direction="ltr">Hopefully, this gets you started on this
+<br />awesome adventure.</p>
+        <p begin="00:11:45.920" end="00:11:48.460" tts:direction="ltr">I love remaking charts.</p>
+        <p begin="00:11:48.460" end="00:11:53.940" tts:direction="ltr">It's a good way to sharpen those design
+<br />skills. Happy visit.</p>
+    </div>
+  </body>
+</tt>

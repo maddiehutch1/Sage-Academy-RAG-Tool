@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>405389692 - 1_zomg2ftt - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.630" end="00:00:04.590" tts:direction="ltr">This is the second demo video</p>
+        <p begin="00:00:04.590" end="00:00:08.410" tts:direction="ltr">when it comes to doing some interaction
+<br />analysis.</p>
+        <p begin="00:00:08.410" end="00:00:13.190" tts:direction="ltr">This one will be doing some proportional
+<br />brushing.</p>
+        <p begin="00:00:13.190" end="00:00:18.430" tts:direction="ltr">The first thing is we've already gone
+<br />through all of that.</p>
+        <p begin="00:00:18.430" end="00:00:22.930" tts:direction="ltr">We will be starting off where we left off
+<br />from</p>
+        <p begin="00:00:22.930" end="00:00:29.370" tts:direction="ltr">our previous percent of total demo.</p>
+        <p begin="00:00:29.370" end="00:00:33.370" tts:direction="ltr">We're going to be moving to this
+<br />proportional brushing Again,</p>
+        <p begin="00:00:33.370" end="00:00:37.230" tts:direction="ltr">our data source is the market value of
+<br />players and teams.</p>
+        <p begin="00:00:37.230" end="00:00:39.550" tts:direction="ltr">Now we're asking the questions of</p>
+        <p begin="00:00:39.550" end="00:00:43.390" tts:direction="ltr">which player positions have the highest
+<br />market value?</p>
+        <p begin="00:00:43.390" end="00:00:45.930" tts:direction="ltr">And then for a selection of teams,</p>
+        <p begin="00:00:45.930" end="00:00:51.730" tts:direction="ltr">what proportion do they contribute to the
+<br />overall market value per position?</p>
+        <p begin="00:00:51.730" end="00:00:56.550" tts:direction="ltr">One of the things that we may gather from
+<br />an insight is when</p>
+        <p begin="00:00:56.550" end="00:01:02.210" tts:direction="ltr">the proportion per position is higher than
+<br />the percent of teams selected,</p>
+        <p begin="00:01:02.210" end="00:01:04.530" tts:direction="ltr">this means that the selected teams have</p>
+        <p begin="00:01:04.530" end="00:01:07.770" tts:direction="ltr">more valuable players than in the world.</p>
+        <p begin="00:01:07.770" end="00:01:12.670" tts:direction="ltr">Proportional brushing is this interactive
+<br />analysis technique</p>
+        <p begin="00:01:12.670" end="00:01:18.210" tts:direction="ltr">that displays the magnitude of a selection
+<br />relative to the total magnitude.</p>
+        <p begin="00:01:18.210" end="00:01:23.375" tts:direction="ltr">One of those key analysis that is called
+<br />proportional brushing.</p>
+        <p begin="00:01:23.375" end="00:01:27.400" tts:direction="ltr">We're going to be making this and we're
+<br />going to be adding this bar chart.</p>
+        <p begin="00:01:27.400" end="00:01:36.760" tts:direction="ltr">And you should be able to launch the tip
+<br />file where I have resorted. Go ahead.</p>
+        <p begin="00:01:36.760" end="00:01:43.180" tts:direction="ltr">And my screen isn't showing everything
+<br />care,</p>
+        <p begin="00:01:43.180" end="00:01:47.820" tts:direction="ltr">but I've got two Pis down below.</p>
+        <p begin="00:01:47.820" end="00:01:51.280" tts:direction="ltr">Again, if I select those or select an
+<br />area,</p>
+        <p begin="00:01:51.280" end="00:01:54.320" tts:direction="ltr">it will dynamically change according to
+<br />that set.</p>
+        <p begin="00:01:54.320" end="00:02:00.880" tts:direction="ltr">And we're going to continue to use that
+<br />set to build out this next chart.</p>
+        <p begin="00:02:00.880" end="00:02:04.260" tts:direction="ltr">If you go to the proportion of market
+<br />value by player,</p>
+        <p begin="00:02:04.260" end="00:02:09.040" tts:direction="ltr">this is where we're going to leverage that
+<br />set.</p>
+        <p begin="00:02:09.040" end="00:02:14.400" tts:direction="ltr">Again, that set can enable a lot of
+<br />coordinated behaviors.</p>
+        <p begin="00:02:14.400" end="00:02:18.660" tts:direction="ltr">It can compute doing a percent of total.</p>
+        <p begin="00:02:18.660" end="00:02:24.980" tts:direction="ltr">Then I can also do other things with our
+<br />dynamically created.</p>
+        <p begin="00:02:24.980" end="00:02:28.420" tts:direction="ltr">We're going to do here, we're going to
+<br />evolve</p>
+        <p begin="00:02:28.420" end="00:02:35.940" tts:direction="ltr">this learning and we're going to go ahead
+<br />and drag market value to columns.</p>
+        <p begin="00:02:35.940" end="00:02:42.160" tts:direction="ltr">We'll go ahead and make our bar and then
+<br />we'll drag position to,</p>
+        <p begin="00:02:42.960" end="00:02:50.180" tts:direction="ltr">then we'll go ahead and do a descending
+<br />and we will fill the entire view.</p>
+        <p begin="00:02:50.180" end="00:02:55.120" tts:direction="ltr">Okay, when I add,</p>
+        <p begin="00:02:55.120" end="00:03:00.380" tts:direction="ltr">the team are set to color again,</p>
+        <p begin="00:03:00.380" end="00:03:02.160" tts:direction="ltr">if you're not showing any of these,</p>
+        <p begin="00:03:02.160" end="00:03:04.760" tts:direction="ltr">it's probably because you have everything
+<br />selected.</p>
+        <p begin="00:03:04.760" end="00:03:09.200" tts:direction="ltr">It's showing 100% If you just have a few
+<br />countries selected,</p>
+        <p begin="00:03:09.200" end="00:03:10.680" tts:direction="ltr">then in this chart,</p>
+        <p begin="00:03:10.680" end="00:03:13.920" tts:direction="ltr">you'll see that you've got in and you're
+<br />out.</p>
+        <p begin="00:03:13.920" end="00:03:18.520" tts:direction="ltr">I'm going to go ahead and drag out, sort
+<br />that on top.</p>
+        <p begin="00:03:18.520" end="00:03:20.760" tts:direction="ltr">Just drag that right there.</p>
+        <p begin="00:03:20.760" end="00:03:24.800" tts:direction="ltr">I've got my blue to the left there.</p>
+        <p begin="00:03:29.520" end="00:03:36.060" tts:direction="ltr">Can add this to our dashboard here.</p>
+        <p begin="00:03:36.060" end="00:03:38.260" tts:direction="ltr">Let's just do that first.</p>
+        <p begin="00:03:38.260" end="00:03:41.300" tts:direction="ltr">I'm going to grab that.</p>
+        <p begin="00:03:41.300" end="00:03:47.780" tts:direction="ltr">I'm going to drag that over to that long
+<br />part right there.</p>
+        <p begin="00:03:47.780" end="00:03:51.760" tts:direction="ltr">Yes. Okay. Now I've got that.</p>
+        <p begin="00:03:51.760" end="00:03:54.800" tts:direction="ltr">Let me go ahead and close that one out.</p>
+        <p begin="00:03:56.880" end="00:03:59.700" tts:direction="ltr">When I'm making the selection,</p>
+        <p begin="00:03:59.700" end="00:04:02.740" tts:direction="ltr">you can see that it's</p>
+        <p begin="00:04:02.740" end="00:04:07.900" tts:direction="ltr">now dynamically changing that to get in my
+<br />screen is a little small here.</p>
+        <p begin="00:04:07.900" end="00:04:17.510" tts:direction="ltr">For my second screen, it's</p>
+        <p begin="00:04:17.510" end="00:04:21.790" tts:direction="ltr">automatically inheriting that previous set
+<br />that we created for teams.</p>
+        <p begin="00:04:21.790" end="00:04:24.310" tts:direction="ltr">But now we want to be able to sort this,</p>
+        <p begin="00:04:24.310" end="00:04:27.270" tts:direction="ltr">we want to be able to sort based on</p>
+        <p begin="00:04:27.270" end="00:04:30.790" tts:direction="ltr">some of these different concepts that we
+<br />have.</p>
+        <p begin="00:04:30.790" end="00:04:32.910" tts:direction="ltr">We want to do the overall,</p>
+        <p begin="00:04:32.910" end="00:04:35.070" tts:direction="ltr">which is what is showing right now,</p>
+        <p begin="00:04:35.070" end="00:04:37.630" tts:direction="ltr">but we also want to do by selection,</p>
+        <p begin="00:04:37.630" end="00:04:40.350" tts:direction="ltr">which are the blue bars we want by</p>
+        <p begin="00:04:40.350" end="00:04:44.210" tts:direction="ltr">that then we want to sort by percent of
+<br />total.</p>
+        <p begin="00:04:44.210" end="00:04:48.270" tts:direction="ltr">We're going to make some additions to our
+<br />bar chart.</p>
+        <p begin="00:04:48.270" end="00:04:50.970" tts:direction="ltr">Let's go back to that sheet.</p>
+        <p begin="00:04:50.970" end="00:04:52.630" tts:direction="ltr">The first thing that we're going to</p>
+        <p begin="00:04:52.630" end="00:04:57.550" tts:direction="ltr">do is we're going to do this through a
+<br />parameter.</p>
+        <p begin="00:04:57.550" end="00:05:04.090" tts:direction="ltr">A parameter allows you to pick which level
+<br />of by and calculation which</p>
+        <p begin="00:05:04.090" end="00:05:07.110" tts:direction="ltr">will return the correct measure to</p>
+        <p begin="00:05:07.110" end="00:05:10.890" tts:direction="ltr">depending on which selection is made by
+<br />that parameter.</p>
+        <p begin="00:05:10.890" end="00:05:13.110" tts:direction="ltr">It gives you that flexibility.</p>
+        <p begin="00:05:13.110" end="00:05:15.790" tts:direction="ltr">We're going to go ahead and</p>
+        <p begin="00:05:16.030" end="00:05:20.590" tts:direction="ltr">we're going to go to Teams and then we're
+<br />going to go to</p>
+        <p begin="00:05:20.590" end="00:05:22.870" tts:direction="ltr">Create and we're going to go to</p>
+        <p begin="00:05:22.870" end="00:05:30.310" tts:direction="ltr">parameter for this one what we'll do is we
+<br />will,</p>
+        <p begin="00:05:31.550" end="00:05:37.310" tts:direction="ltr">we'll just call this sort by.</p>
+        <p begin="00:05:40.420" end="00:05:44.680" tts:direction="ltr">Then a string Current Values Argentina.</p>
+        <p begin="00:05:44.680" end="00:05:49.160" tts:direction="ltr">But that's okay. We're actually going to
+<br />selected right now.</p>
+        <p begin="00:05:49.160" end="00:05:51.300" tts:direction="ltr">We're going to remove all of these</p>
+        <p begin="00:05:51.300" end="00:05:55.820" tts:direction="ltr">because these are the teams that I've got
+<br />currently selected.</p>
+        <p begin="00:05:55.820" end="00:06:01.100" tts:direction="ltr">Instead I'm going to type in Overall,</p>
+        <p begin="00:06:01.100" end="00:06:04.180" tts:direction="ltr">and then I'm going to just click on the
+<br />Below part.</p>
+        <p begin="00:06:04.180" end="00:06:08.700" tts:direction="ltr">And I'm going to click that to Write
+<br />Selection.</p>
+        <p begin="00:06:08.700" end="00:06:16.680" tts:direction="ltr">Then I'm going to click that to write
+<br />percent of total, those are fixed.</p>
+        <p begin="00:06:16.680" end="00:06:19.740" tts:direction="ltr">And overall that changed.</p>
+        <p begin="00:06:19.740" end="00:06:21.920" tts:direction="ltr">That looks good, so I'm going to click
+<br />that.</p>
+        <p begin="00:06:21.920" end="00:06:30.420" tts:direction="ltr">Okay, that's been moved down to the
+<br />parameters section of the data pain.</p>
+        <p begin="00:06:30.420" end="00:06:36.320" tts:direction="ltr">We'll need to compute these three separate
+<br />measures so we can sort by them.</p>
+        <p begin="00:06:36.320" end="00:06:39.040" tts:direction="ltr">We already have the overall, that's what
+<br />we have.</p>
+        <p begin="00:06:39.040" end="00:06:42.580" tts:direction="ltr">We've got that the selection requires</p>
+        <p begin="00:06:42.580" end="00:06:47.200" tts:direction="ltr">a conditional return for the market value
+<br />for the teams that are in our set.</p>
+        <p begin="00:06:47.200" end="00:06:50.740" tts:direction="ltr">In order to do that, we're going to need
+<br />to create a calculation.</p>
+        <p begin="00:06:50.740" end="00:06:53.140" tts:direction="ltr">We're going to go ahead and go here.</p>
+        <p begin="00:06:53.140" end="00:06:56.700" tts:direction="ltr">We're going to create a calculation, a
+<br />calculated field.</p>
+        <p begin="00:06:58.220" end="00:07:07.050" tts:direction="ltr">We're going to call this market Value for
+<br />selection.</p>
+        <p begin="00:07:07.050" end="00:07:10.890" tts:direction="ltr">What we'll do here is we'll create a logic
+<br />statement.</p>
+        <p begin="00:07:10.890" end="00:07:16.110" tts:direction="ltr">And we'll say, then I can bring in Teams
+<br />right here.</p>
+        <p begin="00:07:16.110" end="00:07:18.550" tts:direction="ltr">So I can either get it through</p>
+        <p begin="00:07:18.550" end="00:07:23.390" tts:direction="ltr">the dropdown menu or I can just drag it
+<br />from my data pane.</p>
+        <p begin="00:07:23.390" end="00:07:30.370" tts:direction="ltr">If Teams, then we're going to do market
+<br />value.</p>
+        <p begin="00:07:30.370" end="00:07:35.270" tts:direction="ltr">Market value, okay.</p>
+        <p begin="00:07:35.910" end="00:07:40.970" tts:direction="ltr">This may not be 100% intuitive because we
+<br />know</p>
+        <p begin="00:07:40.970" end="00:07:47.950" tts:direction="ltr">that logic statement needs a condition in
+<br />front of the if.</p>
+        <p begin="00:07:47.990" end="00:07:56.590" tts:direction="ltr">The interesting thing about sets is that n
+<br />equals true and out equals false,</p>
+        <p begin="00:07:56.590" end="00:07:58.970" tts:direction="ltr">because I have that condition,</p>
+        <p begin="00:07:58.970" end="00:08:02.370" tts:direction="ltr">then I can use that set after the if.</p>
+        <p begin="00:08:02.370" end="00:08:06.290" tts:direction="ltr">Again, another powerful thing about sets
+<br />is that I can</p>
+        <p begin="00:08:06.290" end="00:08:11.070" tts:direction="ltr">use them in these logic statements.</p>
+        <p begin="00:08:11.070" end="00:08:13.290" tts:direction="ltr">I'm going to go in and click okay.</p>
+        <p begin="00:08:13.290" end="00:08:19.170" tts:direction="ltr">And then I'm going to bring that measure
+<br />next to the market value.</p>
+        <p begin="00:08:19.170" end="00:08:24.730" tts:direction="ltr">Now I've got these two bar charts that are
+<br />side by side.</p>
+        <p begin="00:08:24.730" end="00:08:30.520" tts:direction="ltr">Okay, we'll go ahead</p>
+        <p begin="00:08:30.520" end="00:08:37.940" tts:direction="ltr">and here I'm selecting the descending sort
+<br />for market value.</p>
+        <p begin="00:08:37.940" end="00:08:45.780" tts:direction="ltr">For selection, you'll see I'm going to
+<br />need to put some on labels.</p>
+        <p begin="00:08:45.780" end="00:08:53.580" tts:direction="ltr">But this blue bar right here is the 347.3
+<br />million.</p>
+        <p begin="00:08:53.580" end="00:08:55.860" tts:direction="ltr">And also it's over here.</p>
+        <p begin="00:08:55.860" end="00:08:59.840" tts:direction="ltr">You can see how those are equaling.</p>
+        <p begin="00:08:59.840" end="00:09:04.560" tts:direction="ltr">We will add labels here in just a moment.</p>
+        <p begin="00:09:04.560" end="00:09:06.920" tts:direction="ltr">Now that we have the second one,</p>
+        <p begin="00:09:06.920" end="00:09:08.760" tts:direction="ltr">we have the first one, we have the second
+<br />one.</p>
+        <p begin="00:09:08.760" end="00:09:11.420" tts:direction="ltr">Now we need to create the third one.</p>
+        <p begin="00:09:11.420" end="00:09:16.740" tts:direction="ltr">We're going to do that by clicking in this
+<br />blue air.</p>
+        <p begin="00:09:16.740" end="00:09:19.960" tts:direction="ltr">Double clicking in that column section.</p>
+        <p begin="00:09:19.960" end="00:09:24.340" tts:direction="ltr">We're going to take market value and drop
+<br />that in.</p>
+        <p begin="00:09:24.340" end="00:09:31.100" tts:direction="ltr">We're going to divide that by the market
+<br />value for selection.</p>
+        <p begin="00:09:31.100" end="00:09:33.540" tts:direction="ltr">I want to just make sure that my carrot is
+<br />right there.</p>
+        <p begin="00:09:33.540" end="00:09:37.380" tts:direction="ltr">At the end of that, then I'm going to drop
+<br />that in.</p>
+        <p begin="00:09:37.380" end="00:09:41.400" tts:direction="ltr">Then I can hand a return to apply that.</p>
+        <p begin="00:09:41.400" end="00:09:44.540" tts:direction="ltr">I've got those three, but right now I</p>
+        <p begin="00:09:44.540" end="00:09:48.060" tts:direction="ltr">have the in and out going to remove that.</p>
+        <p begin="00:09:48.060" end="00:09:57.690" tts:direction="ltr">Now that I see I have that market value
+<br />selection.</p>
+        <p begin="00:09:57.690" end="00:09:59.330" tts:direction="ltr">And then I also have the sum,</p>
+        <p begin="00:09:59.330" end="00:10:03.490" tts:direction="ltr">which I'm going to say change to percent
+<br />of total.</p>
+        <p begin="00:10:04.490" end="00:10:11.610" tts:direction="ltr">Let's go ahead and add that label to the
+<br />view on the.</p>
+        <p begin="00:10:11.610" end="00:10:16.570" tts:direction="ltr">All this will apply to all three of my bar
+<br />charts here.</p>
+        <p begin="00:10:16.570" end="00:10:20.050" tts:direction="ltr">I'm going to place market value onto
+<br />label,</p>
+        <p begin="00:10:20.050" end="00:10:27.690" tts:direction="ltr">then I'm going to select final last one,
+<br />my last bar chart.</p>
+        <p begin="00:10:27.690" end="00:10:30.670" tts:direction="ltr">In that I'm going to change that,</p>
+        <p begin="00:10:30.670" end="00:10:34.650" tts:direction="ltr">I'm going to make that into a percent of
+<br />total.</p>
+        <p begin="00:10:34.870" end="00:10:41.510" tts:direction="ltr">Okay. This is what you should be seeing.</p>
+        <p begin="00:10:41.510" end="00:10:44.110" tts:direction="ltr">You've got all three of</p>
+        <p begin="00:10:44.110" end="00:10:48.150" tts:direction="ltr">those different overall market value</p>
+        <p begin="00:10:48.150" end="00:10:50.710" tts:direction="ltr">for the selection and then percent of
+<br />total.</p>
+        <p begin="00:10:50.710" end="00:10:58.710" tts:direction="ltr">Now what I want to do is drag this,</p>
+        <p begin="00:10:58.710" end="00:11:01.390" tts:direction="ltr">we're going to go ahead and copy that.</p>
+        <p begin="00:11:01.390" end="00:11:08.110" tts:direction="ltr">You'll do that, we'll drag by holding down</p>
+        <p begin="00:11:08.110" end="00:11:17.390" tts:direction="ltr">the command on Mac or control on PC I.</p>
+        <p begin="00:11:17.390" end="00:11:22.110" tts:direction="ltr">But not doing a good job with that.</p>
+        <p begin="00:11:22.110" end="00:11:26.770" tts:direction="ltr">I'm going to drag at and put that into my
+<br />measures here and then</p>
+        <p begin="00:11:26.770" end="00:11:32.350" tts:direction="ltr">I'm going to rename that percent of total.</p>
+        <p begin="00:11:32.790" end="00:11:38.430" tts:direction="ltr">Then you'll see that that's now been
+<br />updated everywhere else, okay?</p>
+        <p begin="00:11:39.910" end="00:11:45.110" tts:direction="ltr">All right, now that we have all three of
+<br />those,</p>
+        <p begin="00:11:45.990" end="00:11:51.550" tts:direction="ltr">we now need to update our parameter, okay?</p>
+        <p begin="00:11:51.550" end="00:11:56.030" tts:direction="ltr">We want the parameter to drive what we
+<br />want to see.</p>
+        <p begin="00:11:56.030" end="00:11:59.690" tts:direction="ltr">We can reference the parameter in a
+<br />calculated field.</p>
+        <p begin="00:11:59.690" end="00:12:01.790" tts:direction="ltr">I'm going to go ahead and hit the drop
+<br />down</p>
+        <p begin="00:12:01.790" end="00:12:04.530" tts:direction="ltr">arrow and create another calculated field.</p>
+        <p begin="00:12:04.530" end="00:12:07.230" tts:direction="ltr">This time I'm going to call it,</p>
+        <p begin="00:12:07.750" end="00:12:11.410" tts:direction="ltr">I'm going to be making a statement,</p>
+        <p begin="00:12:11.410" end="00:12:19.870" tts:direction="ltr">I'm going to write down case and then I'm
+<br />going to in brackets, say by okay.</p>
+        <p begin="00:12:19.870" end="00:12:26.790" tts:direction="ltr">Then return, then when, overall.</p>
+        <p begin="00:12:26.950" end="00:12:32.030" tts:direction="ltr">Then let's do,</p>
+        <p begin="00:12:37.590" end="00:12:47.840" tts:direction="ltr">we're going to do of market value.</p>
+        <p begin="00:12:50.760" end="00:12:53.380" tts:direction="ltr">Let's see. I've got an error.</p>
+        <p begin="00:12:53.380" end="00:12:59.800" tts:direction="ltr">So let me, you probably already saw that I
+<br />needed to put that bracket in.</p>
+        <p begin="00:13:01.160" end="00:13:06.440" tts:direction="ltr">Okay. Oops, let me close that up.</p>
+        <p begin="00:13:09.000" end="00:13:14.440" tts:direction="ltr">Okay. Then when?</p>
+        <p begin="00:13:19.580" end="00:13:24.040" tts:direction="ltr">When selection,</p>
+        <p begin="00:13:24.040" end="00:13:30.460" tts:direction="ltr">then some of M,</p>
+        <p begin="00:13:30.460" end="00:13:39.840" tts:direction="ltr">B, Let me just make sure I've got my
+<br />parentheses.</p>
+        <p begin="00:13:39.840" end="00:13:41.800" tts:direction="ltr">Oh, that's what I needed.</p>
+        <p begin="00:13:41.800" end="00:13:47.220" tts:direction="ltr">Sorry. I'm cleaning up my case right now.</p>
+        <p begin="00:13:55.260" end="00:14:03.500" tts:direction="ltr">Okay. And then I need my parenthese,</p>
+        <p begin="00:14:03.500" end="00:14:07.420" tts:direction="ltr">then I need my parenthese. Okay.</p>
+        <p begin="00:14:07.420" end="00:14:10.360" tts:direction="ltr">All right. So when overall,</p>
+        <p begin="00:14:10.360" end="00:14:12.760" tts:direction="ltr">then some parenthese bracket at</p>
+        <p begin="00:14:12.760" end="00:14:17.120" tts:direction="ltr">the market value and then when selection.
+<br />Okay.</p>
+        <p begin="00:14:17.120" end="00:14:25.340" tts:direction="ltr">Then I've got my else and then I can do my
+<br />percent of total.</p>
+        <p begin="00:14:26.100" end="00:14:30.780" tts:direction="ltr">Okay. And then my end.</p>
+        <p begin="00:14:30.820" end="00:14:40.460" tts:direction="ltr">Okay. All right, so that should be what
+<br />you've created.</p>
+        <p begin="00:14:40.460" end="00:14:45.580" tts:direction="ltr">Apply all three of those different sorts
+<br />that we have.</p>
+        <p begin="00:14:45.580" end="00:14:49.120" tts:direction="ltr">Okay, so click okay,</p>
+        <p begin="00:14:49.120" end="00:14:53.080" tts:direction="ltr">and you can see it's a new measure here as
+<br />sort.</p>
+        <p begin="00:14:53.080" end="00:14:58.620" tts:direction="ltr">Now we're going to go to our dimension,</p>
+        <p begin="00:14:58.620" end="00:15:00.780" tts:direction="ltr">our position right here.</p>
+        <p begin="00:15:00.780" end="00:15:02.880" tts:direction="ltr">We'll do the drop down menu,</p>
+        <p begin="00:15:02.880" end="00:15:05.100" tts:direction="ltr">and we'll click Sort.</p>
+        <p begin="00:15:05.100" end="00:15:10.780" tts:direction="ltr">We'll sort by not data source or
+<br />alphabetic, but by field.</p>
+        <p begin="00:15:10.780" end="00:15:14.180" tts:direction="ltr">Okay, We'll keep with descending.</p>
+        <p begin="00:15:14.180" end="00:15:19.220" tts:direction="ltr">Then the field name will actually be
+<br />called sort.</p>
+        <p begin="00:15:19.220" end="00:15:22.900" tts:direction="ltr">That's the one we just call the
+<br />calculation.</p>
+        <p begin="00:15:22.900" end="00:15:26.140" tts:direction="ltr">All right, so it looks like that's already</p>
+        <p begin="00:15:26.140" end="00:15:31.020" tts:direction="ltr">there and I want to show that filter.</p>
+        <p begin="00:15:31.020" end="00:15:40.260" tts:direction="ltr">Okay, let's see.</p>
+        <p begin="00:15:41.180" end="00:15:48.540" tts:direction="ltr">Actually we're going to,</p>
+        <p begin="00:15:56.300" end="00:15:59.100" tts:direction="ltr">I am showing the wrong items,</p>
+        <p begin="00:15:59.100" end="00:16:00.320" tts:direction="ltr">so let me remove that.</p>
+        <p begin="00:16:00.320" end="00:16:02.420" tts:direction="ltr">I want to show the parameter,</p>
+        <p begin="00:16:02.420" end="00:16:07.200" tts:direction="ltr">not the calculations, to my parameter by,</p>
+        <p begin="00:16:07.200" end="00:16:09.620" tts:direction="ltr">and I want to show that parameter.</p>
+        <p begin="00:16:09.620" end="00:16:13.480" tts:direction="ltr">Now what I can do is by selecting,</p>
+        <p begin="00:16:13.480" end="00:16:15.120" tts:direction="ltr">if I've got everything correct,</p>
+        <p begin="00:16:15.120" end="00:16:17.600" tts:direction="ltr">now I'm by selection,</p>
+        <p begin="00:16:17.600" end="00:16:21.320" tts:direction="ltr">which is this one right here in that
+<br />descending sort.</p>
+        <p begin="00:16:21.320" end="00:16:24.020" tts:direction="ltr">Now I can say percent of total,</p>
+        <p begin="00:16:24.020" end="00:16:27.000" tts:direction="ltr">which is this final one to see.</p>
+        <p begin="00:16:27.000" end="00:16:30.020" tts:direction="ltr">Then I can select overall.</p>
+        <p begin="00:16:30.020" end="00:16:34.700" tts:direction="ltr">Now I see that my parameter is working.</p>
+        <p begin="00:16:36.100" end="00:16:42.420" tts:direction="ltr">Now I don't need to see all of these
+<br />charts.</p>
+        <p begin="00:16:42.420" end="00:16:47.050" tts:direction="ltr">We will be able to dynamically see them.
+<br />Dashboard.</p>
+        <p begin="00:16:47.050" end="00:16:50.430" tts:direction="ltr">I'm going to go and just remove both of
+<br />these.</p>
+        <p begin="00:16:51.470" end="00:16:58.770" tts:direction="ltr">We come back here, I'm going to duplicate
+<br />market value from columns.</p>
+        <p begin="00:16:58.770" end="00:17:03.710" tts:direction="ltr">And I'm going to do that by hitting
+<br />command key on a Mac.</p>
+        <p begin="00:17:03.710" end="00:17:05.910" tts:direction="ltr">Control on a PC,</p>
+        <p begin="00:17:05.910" end="00:17:11.350" tts:direction="ltr">I should be able to place that onto
+<br />labels.</p>
+        <p begin="00:17:12.710" end="00:17:17.570" tts:direction="ltr">Then I will be able to do a dropdown and
+<br />do</p>
+        <p begin="00:17:17.570" end="00:17:22.790" tts:direction="ltr">a quick table calculation of percent of
+<br />total.</p>
+        <p begin="00:17:23.150" end="00:17:27.490" tts:direction="ltr">The goal here is that I should</p>
+        <p begin="00:17:27.490" end="00:17:33.550" tts:direction="ltr">have every row should add up to 100% which
+<br />I'm not seeing right now.</p>
+        <p begin="00:17:33.550" end="00:17:38.790" tts:direction="ltr">Let me work on what I'm missing.</p>
+        <p begin="00:17:38.790" end="00:17:42.450" tts:direction="ltr">Okay? I figured out what I needed to do.</p>
+        <p begin="00:17:42.450" end="00:17:45.350" tts:direction="ltr">What I've done right now, I'm using
+<br />compute.</p>
+        <p begin="00:17:45.350" end="00:17:51.270" tts:direction="ltr">Using, you'll see that I've got table down
+<br />selected.</p>
+        <p begin="00:17:51.270" end="00:17:55.350" tts:direction="ltr">And what I need is the in out selected.</p>
+        <p begin="00:17:55.350" end="00:17:58.810" tts:direction="ltr">I need to have that set selected.</p>
+        <p begin="00:17:58.810" end="00:18:02.690" tts:direction="ltr">Now when that happens, now I can see that
+<br />each one of</p>
+        <p begin="00:18:02.690" end="00:18:09.990" tts:direction="ltr">these rows equals 100% Okay,</p>
+        <p begin="00:18:09.990" end="00:18:17.490" tts:direction="ltr">Now I can go back to my dashboard which
+<br />has been updated.</p>
+        <p begin="00:18:17.490" end="00:18:22.930" tts:direction="ltr">I should be able to do the drop down and
+<br />show that parameter.</p>
+        <p begin="00:18:22.930" end="00:18:25.730" tts:direction="ltr">If I can get there sort by,</p>
+        <p begin="00:18:25.730" end="00:18:29.070" tts:direction="ltr">I'm going to go ahead and just see if I
+<br />can bring this up</p>
+        <p begin="00:18:29.070" end="00:18:36.190" tts:direction="ltr">to maybe to the top here.</p>
+        <p begin="00:18:36.230" end="00:18:41.710" tts:direction="ltr">Okay, now I've still got part of the South
+<br />America here.</p>
+        <p begin="00:18:41.710" end="00:18:45.460" tts:direction="ltr">Let me actually show this screen here.</p>
+        <p begin="00:18:45.460" end="00:18:49.660" tts:direction="ltr">Now I can select overall selection.</p>
+        <p begin="00:18:49.660" end="00:18:56.140" tts:direction="ltr">Right now I'm sorting by that selection
+<br />and then percent of total.</p>
+        <p begin="00:18:56.140" end="00:19:00.280" tts:direction="ltr">Okay, I've got all of those now.</p>
+        <p begin="00:19:00.280" end="00:19:07.040" tts:direction="ltr">I can deploy that and change that
+<br />parameter.</p>
+        <p begin="00:19:07.120" end="00:19:14.700" tts:direction="ltr">I can select more here and move that.</p>
+        <p begin="00:19:14.700" end="00:19:19.220" tts:direction="ltr">I'm seeing that my selection and</p>
+        <p begin="00:19:19.220" end="00:19:25.220" tts:direction="ltr">my set right can impact both of these pie
+<br />charts which we've created.</p>
+        <p begin="00:19:25.220" end="00:19:30.420" tts:direction="ltr">And also the, hopefully that gives you
+<br />some more knowledge</p>
+        <p begin="00:19:30.420" end="00:19:36.080" tts:direction="ltr">on the power of sets and how it can help
+<br />us interact with our data.</p>
+        <p begin="00:19:36.080" end="00:19:40.400" tts:direction="ltr">And that you're seeing this idea of
+<br />proportional brushing.</p>
+    </div>
+  </body>
+</tt>

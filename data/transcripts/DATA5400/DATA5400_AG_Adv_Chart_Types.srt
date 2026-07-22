@@ -1,0 +1,1214 @@
+1
+00:00:00,890 --> 00:00:01,910
+Hello, visitors.
+
+2
+00:00:01,970 --> 00:00:08,290
+This is going to cover the advanced
+chart types, sort of. They're
+
+3
+00:00:08,290 --> 00:00:11,810
+not the advanced charts that
+you would create in Data 5400,
+
+4
+00:00:12,230 --> 00:00:17,270
+but it is using some familiar
+chart types and creating them in a
+
+5
+00:00:17,270 --> 00:00:23,070
+more advanced way. So I will cover
+how to create combined axis chart,
+
+6
+00:00:23,130 --> 00:00:29,450
+a dual axis chart, a bar and bar
+chart, a cross tab, and also just
+
+7
+00:00:29,450 --> 00:00:33,390
+remind you how to create that
+scatter plot and apply trend lines.
+
+8
+00:00:33,770 --> 00:00:42,150
+So let's go ahead and jump into our
+AG advanced chart type start file
+
+9
+00:00:42,150 --> 00:00:48,110
+here and you should be on the
+combined axis tab. So I want to just
+
+10
+00:00:48,110 --> 00:00:52,850
+create a simple bar chart here and
+before I do I just want to remind you
+
+11
+00:00:52,850 --> 00:00:56,910
+that here we have the data pane
+where you can drag and drop fields
+
+12
+00:00:56,910 --> 00:01:01,290
+in here to create your charts or you
+can drag and drop them onto specific
+
+13
+00:01:01,290 --> 00:01:06,470
+columns and rows. So I'm interested
+in sales and profit according
+
+14
+00:01:06,470 --> 00:01:10,730
+to market, and I'm going to go
+ahead and grab sales and drop that
+
+15
+00:01:10,730 --> 00:01:14,520
+right here at the top. And you can
+see it's been placed on the columns.
+
+16
+00:01:14,770 --> 00:01:18,530
+And then I'm going to
+take the subcategory,
+
+17
+00:01:18,690 --> 00:01:21,700
+place that on rows. So now
+I've got the subcategory
+
+18
+00:01:21,700 --> 00:01:24,530
+with accessories, appliances,
+art, and so forth.
+
+19
+00:01:24,770 --> 00:01:29,310
+And now I'm going to add in market.
+
+20
+00:01:29,310 --> 00:01:32,280
+So I'm going to drag that and
+put that right before sales
+
+21
+00:01:33,890 --> 00:01:38,150
+just so that it's right there
+on the top. So now what I have
+
+22
+00:01:38,150 --> 00:01:45,850
+is the market of Africa with
+the subcategories of the company
+
+23
+00:01:45,850 --> 00:01:49,130
+and then the sales. So I
+can begin to see, okay, this
+
+24
+00:01:49,130 --> 00:01:56,910
+one is $96,674.12 for Africa
+and the subcategory of storage.
+
+25
+00:01:57,690 --> 00:02:05,030
+Now, how to layer on another
+measure, and that is profit. So I
+
+26
+00:02:05,030 --> 00:02:09,410
+might drag this and then drop
+that in there. But when I do that,
+
+27
+00:02:09,410 --> 00:02:14,470
+you'll see that there are now two
+columns, one for sales and one
+
+28
+00:02:14,470 --> 00:02:18,230
+for profit. And that's because
+this is the default for Tableau.
+
+29
+00:02:18,330 --> 00:02:21,210
+This is what Tableau
+wants to do whenever you
+
+30
+00:02:21,210 --> 00:02:23,850
+have measures. It will
+create separate axes.
+
+31
+00:02:23,850 --> 00:02:28,130
+And so there is a workaround, and
+that's this ability to do the combined
+
+32
+00:02:28,130 --> 00:02:34,270
+axes. So what we'll do is we'll
+take profit off of that, and we'll
+
+33
+00:02:34,270 --> 00:02:40,690
+click it and drag and drop it and
+place it in the axes down here. And
+
+34
+00:02:40,690 --> 00:02:44,290
+as soon as you do that, you'll see
+that it turns into this equal sign.
+
+35
+00:02:44,290 --> 00:02:48,990
+it's a green equal sign. And when
+I release the mouse, you'll see
+
+36
+00:02:48,990 --> 00:02:57,410
+that Tableau has added the profit
+with the sales in a combined axis.
+
+37
+00:02:57,410 --> 00:03:02,910
+So now I no longer have it separate
+in the columns, but now I have it
+
+38
+00:03:03,420 --> 00:03:07,950
+outlined here as a profit and sales
+here as a combined axis. And in the
+
+39
+00:03:07,950 --> 00:03:11,810
+meantime, what Tableau has done is
+it's actually done a workaround.
+
+40
+00:03:12,070 --> 00:03:15,430
+It's changed that to a measure value
+
+41
+00:03:15,510 --> 00:03:17,870
+and then a measure name, which allows
+
+42
+00:03:17,870 --> 00:03:23,190
+Tableau to only have still one measure,
+
+43
+00:03:23,470 --> 00:03:28,570
+but then it's now using profit on
+this axis. And you can see I've got
+
+44
+00:03:28,570 --> 00:03:32,110
+a filter I've added here, and then
+the measure values are right here.
+
+45
+00:03:32,170 --> 00:03:35,750
+So let me just go back so
+you guys can see how that
+
+46
+00:03:35,750 --> 00:03:40,370
+happens. And so from there,
+drag and drop, and you
+
+47
+00:03:40,370 --> 00:03:44,350
+can see now, those are much
+more easier to recognize,
+
+48
+00:03:44,470 --> 00:03:49,750
+maybe high sales, low profit
+areas, okay? Now, what if I wanted
+
+49
+00:03:49,750 --> 00:03:56,730
+to create a bar chart where I
+can combine those two together?
+
+50
+00:03:58,090 --> 00:04:02,470
+I can do that by taking measure
+names and dropping that onto color.
+
+51
+00:04:02,470 --> 00:04:06,690
+Now, for this particular demo,
+this doesn't make a lot of sense
+
+52
+00:04:06,690 --> 00:04:11,510
+because now I've got orange as
+sales and blue as profit and they're
+
+53
+00:04:11,510 --> 00:04:14,970
+stacked on top of each other. This
+doesn't make any sense. It's better
+
+54
+00:04:14,970 --> 00:04:18,990
+to compare them side by side. But
+I wanted to show you how you can
+
+55
+00:04:19,290 --> 00:04:22,590
+take that same measure name
+and change the orientation
+
+56
+00:04:22,590 --> 00:04:26,770
+so that you can best
+create the visualization
+
+57
+00:04:26,770 --> 00:04:30,070
+that will give you the most
+insights for your user.
+
+58
+00:04:30,410 --> 00:04:35,010
+So this is a combined axes bar chart.
+
+59
+00:04:41,080 --> 00:04:46,340
+The next chart type is a
+dual axis chart. So let's hop
+
+60
+00:04:46,340 --> 00:04:51,640
+back to our Tableau workbook
+and create a dual axes.
+
+61
+00:04:51,840 --> 00:04:57,020
+So what I want to remind
+you is that every time there
+
+62
+00:04:57,020 --> 00:05:00,850
+is a green field, there
+needs to be an axis. So
+
+63
+00:05:00,850 --> 00:05:07,080
+that works if you want to
+show the dual axes, right?
+
+64
+00:05:07,790 --> 00:05:11,140
+And the previous, when I showed
+you I do the combined axes where
+
+65
+00:05:11,140 --> 00:05:15,600
+there's just one singular one,
+that is necessary if you have
+
+66
+00:05:15,600 --> 00:05:19,780
+data that's very similar but if
+what if you have data that has
+
+67
+00:05:19,780 --> 00:05:27,500
+very different numbers or different
+scales then you'll want to do
+
+68
+00:05:27,500 --> 00:05:33,980
+a dual axis and that's when you
+can have multiple access on the
+
+69
+00:05:33,980 --> 00:05:40,280
+Tableau data pane. So I'm
+interested in doing sales over time.
+
+70
+00:05:40,400 --> 00:05:43,960
+So I'm going to go ahead and grab the
+
+71
+00:05:43,960 --> 00:05:48,640
+sales and I'm going to put that in my
+
+72
+00:05:53,430 --> 00:05:56,490
+row. Sorry about that. There we go.
+
+73
+00:05:57,130 --> 00:06:02,370
+And then I'm going to take order
+date and bring that into my column.
+
+74
+00:06:02,970 --> 00:06:07,250
+And then I'm going to go ahead
+and change that I should say
+
+75
+00:06:07,250 --> 00:06:10,730
+yours is probably going to show
+that it has a line and then I'm
+
+76
+00:06:10,730 --> 00:06:18,450
+going to change that to be a
+month okay so now that I have my
+
+77
+00:06:19,430 --> 00:06:25,930
+year here my month of order date
+outlined and then also my sales but
+
+78
+00:06:25,930 --> 00:06:31,950
+again I wanted to also see how profits
+track against sales so in order
+
+79
+00:06:31,950 --> 00:06:36,290
+to do that I just take profit right
+here and I'm going to do another
+
+80
+00:06:36,290 --> 00:06:40,310
+feature similar to what we did
+in the combined axis is to drag
+
+81
+00:06:40,310 --> 00:06:44,830
+that and you'll notice here I can
+I can create that combined axis but
+
+82
+00:06:44,830 --> 00:06:50,050
+if I go to the far right it will
+create another just single green column
+
+83
+00:06:50,050 --> 00:06:56,070
+and if I drop that then I've
+created a dual axis so notice I have
+
+84
+00:06:56,070 --> 00:07:01,390
+on the right hand side I have one
+axis and then one that's different
+
+85
+00:07:01,390 --> 00:07:07,730
+on the left hand. So now I can
+begin to track the sales and the
+
+86
+00:07:07,730 --> 00:07:11,550
+profit to see if there's any insights
+here. So here we saw a big huge
+
+87
+00:07:11,550 --> 00:07:16,670
+dip in profit in July, but sales
+were rather high. So there's some
+
+88
+00:07:16,670 --> 00:07:22,570
+discounts that were placed. Now if
+you want to, you can actually change
+
+89
+00:07:22,730 --> 00:07:27,770
+the axis here on the right. You
+can synchronize the axes. If I do
+
+90
+00:07:27,770 --> 00:07:32,890
+that, you'll notice then this second
+one becomes very flat. I don't see
+
+91
+00:07:32,890 --> 00:07:37,210
+a lot of that difference. So be
+careful about whether that's going
+
+92
+00:07:37,210 --> 00:07:41,690
+to help or hinder your analysis.
+Another thing that you should notice
+
+93
+00:07:41,690 --> 00:07:46,610
+is that because they're on different
+axes, they have different abilities
+
+94
+00:07:46,610 --> 00:07:52,550
+to change their type. So here I
+could go to my sales and I can
+
+95
+00:07:52,550 --> 00:08:00,290
+change that from a line to a bar
+and now I can see, right, and I can
+
+96
+00:08:00,290 --> 00:08:04,370
+kind of see that difference as it's
+tracking. I can also independently
+
+97
+00:08:04,370 --> 00:08:09,650
+change the color. So that is the
+power of a dual axis and you just
+
+98
+00:08:09,650 --> 00:08:16,370
+drag out that measure to that far
+right pane to apply that feature.
+
+99
+00:08:17,290 --> 00:08:22,890
+The next chart we'll take a
+look at is a bar in bar chart.
+
+100
+00:08:23,190 --> 00:08:26,290
+So let's go back to our
+
+101
+00:08:27,130 --> 00:08:34,870
+worksheet here. And a great way to
+compare measures is a bar chart.
+
+102
+00:08:34,870 --> 00:08:39,990
+And especially if you are thinking
+about something like sales to
+
+103
+00:08:39,990 --> 00:08:44,590
+a sales target, because you can very
+easily see whether you're reached
+
+104
+00:08:44,590 --> 00:08:48,250
+or exceeded the target and how
+far away you are from doing so.
+
+105
+00:08:48,530 --> 00:08:52,170
+So in order to do that we need to
+bring in some more information to this
+
+106
+00:08:52,170 --> 00:08:56,990
+particular data source and we've
+already got this connection and you
+
+107
+00:08:56,990 --> 00:09:01,330
+can see we've got this clean data
+that I've got and I want to add in
+
+108
+00:09:01,330 --> 00:09:08,460
+some sales targets. So I'm going to
+use the ability to right-click our
+
+109
+00:09:08,620 --> 00:09:13,550
+data source. I'm going to say edit
+data source and it will bring me back
+
+110
+00:09:13,550 --> 00:09:19,370
+here and i want to add a text file
+here so i'll go ahead and select
+
+111
+00:09:19,370 --> 00:09:24,430
+that and then by doing that i can
+navigate and you can navigate as well
+
+112
+00:09:24,790 --> 00:09:30,090
+to the location of where that csv file is
+
+113
+00:09:31,550 --> 00:09:37,130
+so i've got that sales target csv
+file and i'll go ahead and open that
+
+114
+00:09:37,130 --> 00:09:45,470
+and then i'll go ahead and I will
+drag that to this and drop it and
+
+115
+00:09:45,470 --> 00:09:51,850
+just like every time that you are
+bringing in some new files you need
+
+116
+00:09:51,850 --> 00:09:56,850
+to make sure and share and show
+that relationship and so down below
+
+117
+00:09:56,850 --> 00:10:06,910
+we'll go down to subcategory and
+have the relationship with the
+
+118
+00:10:06,910 --> 00:10:17,250
+category okay all right so I'm gonna
+go back to my sheet here and what I
+
+119
+00:10:17,250 --> 00:10:21,730
+want to do is to build my bar chart
+showing sales per sub category
+
+120
+00:10:21,730 --> 00:10:28,570
+so what I'm going to do is put sales
+on my column and then I'm going
+
+121
+00:10:28,570 --> 00:10:38,120
+to go ahead and take my subcategory
+see subcategory and place that into
+
+122
+00:10:38,120 --> 00:10:44,990
+rows okay okay so now that we've
+got all the subcategories what we
+
+123
+00:10:44,990 --> 00:10:49,170
+wanted to do is put that against
+the sales target which is down below
+
+124
+00:10:49,170 --> 00:10:54,050
+here so if I go ahead and drag
+the sales target next to the sales
+
+125
+00:10:54,050 --> 00:10:59,290
+you'll see that we have to access
+because we've got two green measures
+
+126
+00:10:59,290 --> 00:11:03,710
+and if you remember what you learned
+about when it came to combined
+
+127
+00:11:04,110 --> 00:11:07,540
+axis we're going to go
+ahead and drag that off and
+
+128
+00:11:08,150 --> 00:11:11,430
+hopefully you remember
+what to do before i do it
+
+129
+00:11:11,430 --> 00:11:14,890
+i hope that you remember
+to take that sales target
+
+130
+00:11:15,070 --> 00:11:17,070
+and to drag that and place that right
+
+131
+00:11:17,070 --> 00:11:19,610
+here where the equal numbers is okay
+
+132
+00:11:22,510 --> 00:11:27,270
+so now we have the sales and sales
+target stacked on top of each
+
+133
+00:11:27,270 --> 00:11:32,810
+other and just like we did for that
+combined access I showed that you
+
+134
+00:11:32,810 --> 00:11:37,790
+could for clarity take that measure
+name and then drop that on color
+
+135
+00:11:37,790 --> 00:11:45,890
+so now I have these two bars and
+this is not a bar and bar chart
+
+136
+00:11:45,890 --> 00:11:49,950
+this is actually is stacked at
+this point because I have both the
+
+137
+00:11:49,950 --> 00:11:55,370
+accessories and then I have the
+subcategory and then I have the target.
+
+138
+00:11:55,370 --> 00:11:58,770
+So I have the sales target here
+and they have the accessories here.
+
+139
+00:12:00,490 --> 00:12:05,930
+So this stacked bar, these two
+stacked bars do show them separately
+
+140
+00:12:05,930 --> 00:12:09,730
+but in this case because we have
+a target, oh and by the way I
+
+141
+00:12:09,730 --> 00:12:12,630
+changed this to orange so you could
+better see that versus the purple.
+
+142
+00:12:13,170 --> 00:12:18,230
+You want to have both of them start
+at zero. In order to do that you
+
+143
+00:12:18,230 --> 00:12:23,150
+need to go to the analysis tab at
+the top and then select stacked
+
+144
+00:12:23,150 --> 00:12:28,030
+marks and turn that off. By default
+it will be on but when I turn it off
+
+145
+00:12:28,030 --> 00:12:32,930
+you'll see that now these are
+stacked with the starting point of
+
+146
+00:12:32,930 --> 00:12:38,110
+zero and I can see where my sales
+target has sort of creeped above the
+
+147
+00:12:38,110 --> 00:12:43,370
+sales. Now, what happens for this
+one, like an art where sales covers
+
+148
+00:12:43,370 --> 00:12:46,970
+has exceeded the sales target? I
+still want to be able to see that.
+
+149
+00:12:46,970 --> 00:12:50,190
+And yes, you can do that
+here within Tableau.
+
+150
+00:12:50,190 --> 00:12:54,530
+What you would do is you
+would take measure names
+
+151
+00:12:54,530 --> 00:12:57,830
+and you will drag that
+and place that onto size.
+
+152
+00:12:57,830 --> 00:13:00,770
+Now, by doing so, now you've got a line
+
+153
+00:13:00,770 --> 00:13:04,090
+here and then a thicker bar up on top.
+
+154
+00:13:04,420 --> 00:13:08,350
+Now you can change the size
+relative to each other by just
+
+155
+00:13:08,350 --> 00:13:12,890
+doing this right here, but if
+I want to change one versus the
+
+156
+00:13:12,890 --> 00:13:16,610
+other, the way I do that is I
+go here to the right hand side,
+
+157
+00:13:16,710 --> 00:13:18,790
+click the down arrow,
+
+158
+00:13:18,910 --> 00:13:23,610
+say edit sizes, and now let me
+just move this off to the side.
+
+159
+00:13:23,610 --> 00:13:28,730
+I can select sales and I can
+create sort of that smaller area
+
+160
+00:13:28,730 --> 00:13:34,150
+and then apply, which will
+create a larger blue bar or if I
+
+161
+00:13:34,150 --> 00:13:38,850
+want to go back down that's great
+to move this down here and I
+
+162
+00:13:38,850 --> 00:13:43,030
+can apply and I could begin to
+work with those different sizes.
+
+163
+00:13:45,250 --> 00:13:50,230
+So now you can easily see this
+bar and bar chart where you
+
+164
+00:13:50,230 --> 00:13:55,090
+could identify certain ones
+like phones where the sales
+
+165
+00:13:55,090 --> 00:14:00,170
+have exceeded the target and
+fasteners where they have greatly
+
+166
+00:14:00,560 --> 00:14:05,050
+not exceeded the target. So
+this is a bar in bar chart.
+
+167
+00:14:06,170 --> 00:14:12,130
+Now let's jump into the crosstab
+and highlight table and back into
+
+168
+00:14:12,130 --> 00:14:17,530
+our Twibix file here and we'll
+just create a simple crosstab
+
+169
+00:14:17,530 --> 00:14:24,010
+first of all. We'll take a look
+at let's go for market. We'll put
+
+170
+00:14:24,010 --> 00:14:28,810
+that on columns and then we'll
+take a look at subcategory in rows.
+
+171
+00:14:29,490 --> 00:14:32,090
+And I'm going to go ahead and
+change this back to automatic.
+
+172
+00:14:32,250 --> 00:14:37,570
+And then we will go ahead and take
+a look at sales. So when I'm using
+
+173
+00:14:37,570 --> 00:14:42,350
+a crosstab, just like you would in
+Excel, it's really easy if you know
+
+174
+00:14:42,350 --> 00:14:49,590
+what you're looking for. So if I'm
+looking for the sales in Canada for
+
+175
+00:14:49,590 --> 00:14:54,930
+labels, you can see I can quickly go
+and find that it's 421 dollars and
+
+176
+00:14:54,930 --> 00:15:00,090
+74 cents so crosstabs are helpful
+if you know what you're looking for
+
+177
+00:15:00,090 --> 00:15:02,850
+but what if you don't know what
+you're looking for and you need some
+
+178
+00:15:02,850 --> 00:15:09,090
+additional insights this is where a
+highlight table can come in handy so
+
+179
+00:15:09,090 --> 00:15:16,650
+let's go ahead and take sales and
+drop that on color so what we've done
+
+180
+00:15:16,650 --> 00:15:23,990
+here is now added another way to look
+at our sales based on this color.
+
+181
+00:15:23,990 --> 00:15:27,910
+The darker the color, the higher the
+sales. But it's still very difficult
+
+182
+00:15:27,910 --> 00:15:33,530
+to read and not yet a highlight
+table. So in order to do that in
+
+183
+00:15:33,530 --> 00:15:37,930
+Tableau, it's really simple. What
+we'll do is we'll go to the marks card
+
+184
+00:15:37,930 --> 00:15:43,410
+and right now it's on text and we'll
+change that from automatic to a
+
+185
+00:15:43,410 --> 00:15:49,550
+square and then by doing so I've
+now created the color background to
+
+186
+00:15:49,550 --> 00:15:57,770
+articulate that that diverging palette
+of color to show that so here it's
+
+187
+00:15:57,770 --> 00:16:01,850
+much more easier to see those darker
+colors that have those higher sales
+
+188
+00:16:01,850 --> 00:16:06,770
+and then lower sales and of course
+I can also edit that color and it's
+
+189
+00:16:06,770 --> 00:16:11,170
+automatic right now but I could change
+that if there were some negative
+
+190
+00:16:11,170 --> 00:16:14,670
+colors typically that's when you
+have the diverging palette but i
+
+191
+00:16:14,670 --> 00:16:19,590
+could create that middle mark and
+change that maybe i'll make my middle
+
+192
+00:16:19,590 --> 00:16:27,830
+mark to sort of say um see it's in
+advanced you could say i'll start it
+
+193
+00:16:28,070 --> 00:16:30,030
+at let's just say
+
+194
+00:16:31,970 --> 00:16:39,510
+say 200 okay and then that would
+change that range you can also
+
+195
+00:16:39,510 --> 00:16:43,310
+do it as a step let me go and
+change that. I'm going to go ahead
+
+196
+00:16:43,310 --> 00:16:47,490
+and change this back to blue
+since they are all blue and then I
+
+197
+00:16:47,490 --> 00:16:51,710
+can do stepped and then maybe I
+want to have just three steps here
+
+198
+00:16:52,000 --> 00:16:55,910
+and apply that and then I can
+really begin to see some of those
+
+199
+00:16:55,910 --> 00:17:00,670
+outliers that I want to pinpoint
+in my analysis. So this is how
+
+200
+00:17:00,670 --> 00:17:05,030
+you create a crosstab and then
+convert it into a highlight table.
+
+201
+00:17:06,010 --> 00:17:11,110
+Our final chart is the scatter plot
+which we're familiar with from our
+
+202
+00:17:11,110 --> 00:17:16,270
+basic chart types but I just want
+to remind you about the features
+
+203
+00:17:16,270 --> 00:17:22,010
+of a scatter plot and how we can
+ensure that we're using them to the
+
+204
+00:17:22,010 --> 00:17:27,110
+best of our ability here and so
+what I want to do is just create a
+
+205
+00:17:27,110 --> 00:17:30,970
+scatter plot and remember we need to
+have two measures one on columns one
+
+206
+00:17:30,970 --> 00:17:36,470
+on rows and in this case we'll go
+ahead and drag profit up to columns
+
+207
+00:17:36,470 --> 00:17:45,090
+and then sales on to rows here
+and I have my single mark but I'm
+
+208
+00:17:45,090 --> 00:17:50,190
+going to add some more details here
+by putting category on color here
+
+209
+00:17:50,210 --> 00:17:54,970
+looks like I've already got my trend
+line so let me remove that so that's
+
+210
+00:17:54,970 --> 00:17:59,570
+not there to distract you we've
+got category on color and then we
+
+211
+00:17:59,570 --> 00:18:07,170
+will put quantity on size so we'll
+add that then we'll add some more
+
+212
+00:18:07,170 --> 00:18:13,790
+detail by adding subcategory to the
+detail and then product name on to
+
+213
+00:18:13,790 --> 00:18:18,150
+the detail okay so now we've got
+plenty now you might be wondering
+
+214
+00:18:18,150 --> 00:18:22,810
+yours might look a little different
+than mine and if that's the case
+
+215
+00:18:22,810 --> 00:18:27,750
+just be sure and select circle that
+will fill that in and then once
+
+216
+00:18:27,750 --> 00:18:32,670
+that's filled in you can select color
+and then you can add a border on
+
+217
+00:18:32,670 --> 00:18:37,590
+onto your scatterplot, especially
+when you have lots and lots of them,
+
+218
+00:18:37,590 --> 00:18:41,510
+then it's helpful to have a little
+bit of a border around that. And
+
+219
+00:18:41,510 --> 00:18:46,410
+so that's what I've done here. So
+just as Dr. Hagman taught us, we can
+
+220
+00:18:46,410 --> 00:18:51,890
+add a trend line by right-clicking
+here, and then we can select show
+
+221
+00:18:51,890 --> 00:18:56,050
+trend lines. And in this case, it's
+going to show one for each of those
+
+222
+00:18:56,050 --> 00:18:59,930
+product categories for furniture,
+office supplies and also the
+
+223
+00:18:59,930 --> 00:19:06,090
+technology and then I can also drag
+right and drop to show the trend line
+
+224
+00:19:06,090 --> 00:19:10,670
+just for that highlighted area so
+again on the fly tableau is able
+
+225
+00:19:10,670 --> 00:19:15,310
+to calculate that and provide those
+trend lines all right so to remove
+
+226
+00:19:15,310 --> 00:19:19,370
+the trend lines just right click
+and then click that again and that
+
+227
+00:19:19,370 --> 00:19:26,170
+will hide those trend lines so the
+last reminder is adding that animation
+
+228
+00:19:26,170 --> 00:19:33,110
+element to that scatterplot to
+show the progression if you have
+
+229
+00:19:33,110 --> 00:19:38,840
+that over time. So I'm gonna just
+go ahead and remove this subcategory
+
+230
+00:19:39,170 --> 00:19:41,350
+to remove any confusion here, and we'll
+
+231
+00:19:41,350 --> 00:19:44,030
+just have these three single dots here.
+
+232
+00:19:44,030 --> 00:19:49,670
+And if you remember correctly
+from that in-class demo
+
+233
+00:19:49,850 --> 00:19:56,290
+what we need to do to show
+that over time, and that is to
+
+234
+00:19:56,290 --> 00:20:00,290
+grab the order date and to
+put that on the pages shelf.
+
+235
+00:20:00,290 --> 00:20:04,950
+Once you do that, you have this
+dialog box here on the right-hand side
+
+236
+00:20:04,950 --> 00:20:12,250
+where you can show that history, and
+you can show those trails, right?
+
+237
+00:20:12,350 --> 00:20:14,910
+And then you can play that.
+
+238
+00:20:16,380 --> 00:20:19,310
+And we've got that going
+at a certain rate here.
+
+239
+00:20:19,310 --> 00:20:24,430
+But you can play with those
+different features. maybe I just want
+
+240
+00:20:24,430 --> 00:20:30,710
+to do the marks here and I will
+maybe I'll keep them I'll do a
+
+241
+00:20:30,710 --> 00:20:34,590
+green here we'll do a little bit
+of a fading and I can make them
+
+242
+00:20:34,590 --> 00:20:38,080
+fade higher or lower there so I
+would definitely encourage you to
+
+243
+00:20:38,080 --> 00:20:42,170
+to play with it you can kind of
+see here now I've got that green
+
+244
+00:20:42,350 --> 00:20:47,370
+I could make it into a gray with that
+final zone so again scatter plots
+
+245
+00:20:47,370 --> 00:20:53,390
+require those two measures one on
+columns, one on rows, and you can
+
+246
+00:20:53,390 --> 00:20:58,410
+add those trend lines and add that
+animation to really help create
+
+247
+00:20:58,410 --> 00:21:03,130
+those insights and to show over time
+what is happening with your data.

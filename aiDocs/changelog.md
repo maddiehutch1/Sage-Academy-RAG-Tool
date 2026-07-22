@@ -2,6 +2,14 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-21 — DATA5400 course added (SRT/DFXP with real timestamps)
+
+- **DATA5400 transcripts ingested:** 63 new transcript files (12 SRT + 51 DFXP) for *DATA 5400: Advanced Data Visualization* added to `data/transcripts/DATA5400/`. 63 companion JSON sidecar files created with clean human-readable video titles.
+- **Full re-ingest completed:** The entire corpus — DATA2100, IS3600, and now DATA5400 — is re-indexed in pgvector with real timestamps on every chunk.
+- **Txt-era cleanup:** An earlier temporary attempt used plain `.txt` transcripts (no timestamps) as a placeholder. Those 56 txt-era records (464 chunks) were removed from the DB before re-ingesting the proper SRT/DFXP files. All temporary code (`scripts/prepare_data5400.py`, `parse_txt()` in `ingest.py`, `Optional` timestamp fields in `main.py`/`answer.py`) was reverted.
+- **`ingest.py` restored to SRT/DFXP-only:** Docstring, file discovery, format dispatch, and chunk logging all revert to the pre-txt state. No functional change to existing DATA2100/IS3600 behaviour.
+- **BOM-safe sidecar loading:** `load_sidecar()` now opens JSON files with `utf-8-sig` encoding, which silently strips the UTF-8 BOM that Windows tools (PowerShell `Set-Content`) write by default. Backwards-compatible with all existing BOM-free sidecars.
+
 ## 2026-07-17 (post-session fix)
 
 - **Embedded Kaltura video player:** replaced the "open in new tab" approach with an in-chat embedded iframe. Each source card now has a "Watch at MM:SS" toggle button; clicking it expands a 16:9 Kaltura player directly below the card with playback starting at the cited timestamp. Collapsing one card and opening another is supported; submitting a new question collapses all.

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>410998572 - 1_cacfp406 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.360" end="00:00:06.580" tts:direction="ltr">Hello, visitors. This is a reveal for the
+<br />US</p>
+        <p begin="00:00:06.580" end="00:00:09.640" tts:direction="ltr">billionaires data that was scraped</p>
+        <p begin="00:00:09.640" end="00:00:14.080" tts:direction="ltr">and I want to show you how to answer some
+<br />of those questions.</p>
+        <p begin="00:00:14.080" end="00:00:16.220" tts:direction="ltr">To dive into our data,</p>
+        <p begin="00:00:16.220" end="00:00:21.520" tts:direction="ltr">I'm going to grab the data that I cleaned.</p>
+        <p begin="00:00:21.520" end="00:00:26.480" tts:direction="ltr">This one's available in the class. Karen,
+<br />this file.</p>
+        <p begin="00:00:26.480" end="00:00:29.620" tts:direction="ltr">You can also spend time cleaning the data
+<br />that</p>
+        <p begin="00:00:29.620" end="00:00:34.920" tts:direction="ltr">you scraped but this is already I've gone
+<br />through and cleaned that up.</p>
+        <p begin="00:00:35.280" end="00:00:41.280" tts:direction="ltr">If you use this file then you'll have more
+<br />exactly what I have seen</p>
+        <p begin="00:00:41.280" end="00:00:47.260" tts:direction="ltr">to I went ahead and just moved some things
+<br />around,</p>
+        <p begin="00:00:47.260" end="00:00:50.220" tts:direction="ltr">added in some fields, things like that.</p>
+        <p begin="00:00:50.220" end="00:00:52.400" tts:direction="ltr">I've just brought that data in,</p>
+        <p begin="00:00:52.400" end="00:00:55.160" tts:direction="ltr">just added that can always check</p>
+        <p begin="00:00:55.160" end="00:00:58.160" tts:direction="ltr">to make sure my fields are being properly
+<br />identified.</p>
+        <p begin="00:00:58.160" end="00:01:00.340" tts:direction="ltr">So that's a geographic location,</p>
+        <p begin="00:01:00.340" end="00:01:04.670" tts:direction="ltr">that's a string, That's a number. That's
+<br />great.</p>
+        <p begin="00:01:04.670" end="00:01:09.020" tts:direction="ltr">So let's go ahead and go to sheet one and
+<br />begin exploring our data.</p>
+        <p begin="00:01:09.020" end="00:01:13.580" tts:direction="ltr">The first question that we're asking is
+<br />about billionaires.</p>
+        <p begin="00:01:13.580" end="00:01:15.360" tts:direction="ltr">We're just trying to,</p>
+        <p begin="00:01:15.360" end="00:01:19.600" tts:direction="ltr">again, use visualization to answer some
+<br />questions.</p>
+        <p begin="00:01:19.600" end="00:01:23.300" tts:direction="ltr">We're going to create a map showing where
+<br />the top billionaires live.</p>
+        <p begin="00:01:23.300" end="00:01:26.260" tts:direction="ltr">And we'll do that by double clicking on
+<br />State,</p>
+        <p begin="00:01:26.260" end="00:01:32.480" tts:direction="ltr">which will populate a map that is showing
+<br />a.in every state, right?</p>
+        <p begin="00:01:32.480" end="00:01:36.940" tts:direction="ltr">And looks like we have the US Virgin
+<br />Islands and we also have Hawaii here.</p>
+        <p begin="00:01:36.940" end="00:01:40.800" tts:direction="ltr">This data said it's only for the US.</p>
+        <p begin="00:01:40.800" end="00:01:43.760" tts:direction="ltr">There's no other billionaires that we're
+<br />showing across the map,</p>
+        <p begin="00:01:43.760" end="00:01:46.980" tts:direction="ltr">although you could gather that same data
+<br />in Forbes as well.</p>
+        <p begin="00:01:46.980" end="00:01:49.960" tts:direction="ltr">Now we're looking to find out their net
+<br />worth.</p>
+        <p begin="00:01:49.960" end="00:01:52.580" tts:direction="ltr">And if I drag and drop that onto color,</p>
+        <p begin="00:01:52.580" end="00:01:56.560" tts:direction="ltr">you'll then see that I can</p>
+        <p begin="00:01:56.600" end="00:02:02.600" tts:direction="ltr">see which states have the highest net
+<br />worth in billions.</p>
+        <p begin="00:02:02.600" end="00:02:05.820" tts:direction="ltr">So this is summing our data right here,</p>
+        <p begin="00:02:05.820" end="00:02:09.120" tts:direction="ltr">because that's the default aggregation in
+<br />Tableau.</p>
+        <p begin="00:02:09.120" end="00:02:12.285" tts:direction="ltr">Now I could change that to be an average.</p>
+        <p begin="00:02:12.285" end="00:02:15.990" tts:direction="ltr">When I do that, then you can see that I
+<br />probably</p>
+        <p begin="00:02:15.990" end="00:02:20.250" tts:direction="ltr">have some billionaires with just a couple
+<br />of billion in California,</p>
+        <p begin="00:02:21.010" end="00:02:23.990" tts:direction="ltr">and then some ones that have a lot of
+<br />billions,</p>
+        <p begin="00:02:23.990" end="00:02:25.810" tts:direction="ltr">or we have a lot of billionaires.</p>
+        <p begin="00:02:25.810" end="00:02:28.550" tts:direction="ltr">Nebraska is the darkest color for</p>
+        <p begin="00:02:28.550" end="00:02:33.290" tts:direction="ltr">this particular one because of a certain
+<br />individual named Warren Buffett</p>
+        <p begin="00:02:33.290" end="00:02:42.630" tts:direction="ltr">who of one and shows his net worth there.</p>
+        <p begin="00:02:42.630" end="00:02:44.830" tts:direction="ltr">Elon Musk is located in Texas,</p>
+        <p begin="00:02:44.830" end="00:02:47.310" tts:direction="ltr">but again, this is that average.</p>
+        <p begin="00:02:47.310" end="00:02:51.985" tts:direction="ltr">It's taking that outlier and averaging not
+<br />always a good indication.</p>
+        <p begin="00:02:51.985" end="00:02:54.180" tts:direction="ltr">I could do a count here.</p>
+        <p begin="00:02:54.180" end="00:02:56.880" tts:direction="ltr">So we're going to go back and we're going
+<br />to see 88 here</p>
+        <p begin="00:02:56.880" end="00:02:59.840" tts:direction="ltr">in California, 46 in Texas.</p>
+        <p begin="00:02:59.840" end="00:03:02.020" tts:direction="ltr">We've only got four in Colorado,</p>
+        <p begin="00:03:02.020" end="00:03:04.360" tts:direction="ltr">three in Wyoming. Okay.</p>
+        <p begin="00:03:04.360" end="00:03:08.400" tts:direction="ltr">Let's do a count distinct to see if any of
+<br />those change.</p>
+        <p begin="00:03:08.400" end="00:03:12.280" tts:direction="ltr">So now we've got 50 in California. And why
+<br />is that?</p>
+        <p begin="00:03:12.280" end="00:03:18.180" tts:direction="ltr">Because some of those records were
+<br />probably duplicates in terms of that name.</p>
+        <p begin="00:03:18.180" end="00:03:21.400" tts:direction="ltr">There could have been several family
+<br />names.</p>
+        <p begin="00:03:21.840" end="00:03:26.420" tts:direction="ltr">They're looking at just the distinct
+<br />record,</p>
+        <p begin="00:03:26.420" end="00:03:28.555" tts:direction="ltr">the distinct data line there.</p>
+        <p begin="00:03:28.555" end="00:03:34.110" tts:direction="ltr">For this one, you can select any one of
+<br />these different aggregation tools.</p>
+        <p begin="00:03:34.110" end="00:03:35.790" tts:direction="ltr">But you're going to go and take a picture
+<br />of</p>
+        <p begin="00:03:35.790" end="00:03:38.930" tts:direction="ltr">this and submit that for this, Karen.</p>
+        <p begin="00:03:38.930" end="00:03:42.290" tts:direction="ltr">Now the next one is just answering that,</p>
+        <p begin="00:03:42.290" end="00:03:45.250" tts:direction="ltr">which state has the most billionaires?
+<br />Yes.</p>
+        <p begin="00:03:45.250" end="00:03:47.750" tts:direction="ltr">Having that count or count distinct is
+<br />going to help</p>
+        <p begin="00:03:47.750" end="00:03:50.850" tts:direction="ltr">us indicate that California has 50,</p>
+        <p begin="00:03:50.850" end="00:03:56.270" tts:direction="ltr">New York has 42, Texas 34, and Florida 29.</p>
+        <p begin="00:03:56.270" end="00:03:59.680" tts:direction="ltr">Also, because it's on a range,</p>
+        <p begin="00:03:59.680" end="00:04:01.780" tts:direction="ltr">I can see that those darker colors are</p>
+        <p begin="00:04:01.780" end="00:04:03.980" tts:direction="ltr">helping me find those dates rather
+<br />quickly.</p>
+        <p begin="00:04:03.980" end="00:04:07.800" tts:direction="ltr">Okay, California is that Then it says,</p>
+        <p begin="00:04:07.800" end="00:04:11.140" tts:direction="ltr">which philanthropy score do most
+<br />billionaires have?</p>
+        <p begin="00:04:11.140" end="00:04:12.800" tts:direction="ltr">Now we want to, again,</p>
+        <p begin="00:04:12.800" end="00:04:20.320" tts:direction="ltr">explore some of our data and think about
+<br />what we can uncover with that data.</p>
+        <p begin="00:04:20.320" end="00:04:23.960" tts:direction="ltr">We're going to create another sheet for
+<br />this.</p>
+        <p begin="00:04:23.960" end="00:04:27.560" tts:direction="ltr">I'll go ahead and put another sheet.</p>
+        <p begin="00:04:27.560" end="00:04:32.220" tts:direction="ltr">I want to take that philanthropy score and
+<br />put that on columns.</p>
+        <p begin="00:04:32.220" end="00:04:37.925" tts:direction="ltr">I'm going to take net worth and put that
+<br />on keeping that out, a sum.</p>
+        <p begin="00:04:37.925" end="00:04:40.530" tts:direction="ltr">Right now, it looks like I can do a
+<br />scatter plot,</p>
+        <p begin="00:04:40.530" end="00:04:43.610" tts:direction="ltr">but because I'm interested in those
+<br />philanthropy scores,</p>
+        <p begin="00:04:43.610" end="00:04:49.130" tts:direction="ltr">which have a score of 012345,</p>
+        <p begin="00:04:49.130" end="00:04:55.545" tts:direction="ltr">then I'm going to change my field from a
+<br />measure to a dimension.</p>
+        <p begin="00:04:55.545" end="00:05:00.060" tts:direction="ltr">Then I'm going to change that from a
+<br />dimension to a discrete.</p>
+        <p begin="00:05:00.060" end="00:05:02.420" tts:direction="ltr">Okay? By doing that,</p>
+        <p begin="00:05:02.420" end="00:05:05.900" tts:direction="ltr">I'm changing the way that I'm looking at
+<br />this data and I'm</p>
+        <p begin="00:05:05.900" end="00:05:09.800" tts:direction="ltr">bucketing it as a moment in time.</p>
+        <p begin="00:05:09.800" end="00:05:14.340" tts:direction="ltr">Okay? Right now I have that sum right
+<br />there.</p>
+        <p begin="00:05:14.340" end="00:05:17.280" tts:direction="ltr">If I take on that philanthropy score,</p>
+        <p begin="00:05:17.280" end="00:05:18.930" tts:direction="ltr">and I put that on color.</p>
+        <p begin="00:05:18.930" end="00:05:23.000" tts:direction="ltr">Then I'm going to be able to easily answer
+<br />my question there.</p>
+        <p begin="00:05:23.000" end="00:05:26.720" tts:direction="ltr">I can also begin,</p>
+        <p begin="00:05:26.720" end="00:05:31.900" tts:direction="ltr">I can add in detail to name Right,</p>
+        <p begin="00:05:31.900" end="00:05:37.080" tts:direction="ltr">what that does, because there's many names
+<br />in these buckets.</p>
+        <p begin="00:05:37.080" end="00:05:39.220" tts:direction="ltr">It's breaking these out.</p>
+        <p begin="00:05:39.220" end="00:05:43.720" tts:direction="ltr">This is interesting, it's breaking all
+<br />these ones up and showing,</p>
+        <p begin="00:05:43.720" end="00:05:45.900" tts:direction="ltr">for instance right here Larry Page.</p>
+        <p begin="00:05:45.900" end="00:05:47.940" tts:direction="ltr">He has a philanthropy a score of one,</p>
+        <p begin="00:05:47.940" end="00:05:50.180" tts:direction="ltr">but he has a bigger slice of this</p>
+        <p begin="00:05:50.180" end="00:05:54.080" tts:direction="ltr">because I'm summing my network. And he has
+<br />114.</p>
+        <p begin="00:05:54.080" end="00:05:56.955" tts:direction="ltr">This is nice to drill down.</p>
+        <p begin="00:05:56.955" end="00:06:02.310" tts:direction="ltr">If I wanted to look at who is in this
+<br />particular category,</p>
+        <p begin="00:06:02.310" end="00:06:04.810" tts:direction="ltr">and you can see what I've got,</p>
+        <p begin="00:06:04.810" end="00:06:07.510" tts:direction="ltr">because I have it on this philanthropy,</p>
+        <p begin="00:06:07.510" end="00:06:12.010" tts:direction="ltr">I've got this higher amount of individuals
+<br />for this net worth.</p>
+        <p begin="00:06:12.010" end="00:06:14.190" tts:direction="ltr">I only have Warren Buffett,</p>
+        <p begin="00:06:14.190" end="00:06:17.390" tts:direction="ltr">Melinda Gates, Mckenzie Scott,</p>
+        <p begin="00:06:17.390" end="00:06:20.610" tts:direction="ltr">George Soros, et cetera, et cetera in this
+<br />space.</p>
+        <p begin="00:06:20.610" end="00:06:23.770" tts:direction="ltr">While this is the tallest one,</p>
+        <p begin="00:06:23.770" end="00:06:26.945" tts:direction="ltr">category number two, in terms of a score,</p>
+        <p begin="00:06:26.945" end="00:06:30.500" tts:direction="ltr">the one that has the largest</p>
+        <p begin="00:06:30.500" end="00:06:35.960" tts:direction="ltr">because of some of these large outliers is
+<br />here on number five.</p>
+        <p begin="00:06:36.880" end="00:06:39.780" tts:direction="ltr">That number five is being weighted.</p>
+        <p begin="00:06:39.780" end="00:06:42.620" tts:direction="ltr">This is just going to gradually if I did
+<br />something else.</p>
+        <p begin="00:06:42.620" end="00:06:47.120" tts:direction="ltr">So for instance, if I take that put, maybe
+<br />age,</p>
+        <p begin="00:06:47.120" end="00:06:49.080" tts:direction="ltr">okay, That's going to slice and dice</p>
+        <p begin="00:06:49.080" end="00:06:53.040" tts:direction="ltr">individually because they're all these
+<br />different ages.</p>
+        <p begin="00:06:53.040" end="00:06:55.800" tts:direction="ltr">That's why I have different colors of blue
+<br />right now.</p>
+        <p begin="00:06:55.800" end="00:06:58.620" tts:direction="ltr">Because this blue is probably trying to</p>
+        <p begin="00:06:58.620" end="00:07:02.975" tts:direction="ltr">be something like the age of 52 for Elon
+<br />musk.</p>
+        <p begin="00:07:02.975" end="00:07:05.390" tts:direction="ltr">But this is an interesting again,</p>
+        <p begin="00:07:05.390" end="00:07:11.530" tts:direction="ltr">like Elon must takes a slice of this pie
+<br />and he's only at the number one.</p>
+        <p begin="00:07:11.530" end="00:07:16.690" tts:direction="ltr">Warren Buffett and Bill Gates take the big
+<br />slice of that number five ranking.</p>
+        <p begin="00:07:16.690" end="00:07:19.590" tts:direction="ltr">Again, this is not a visualization I would
+<br />present</p>
+        <p begin="00:07:19.590" end="00:07:22.810" tts:direction="ltr">with because it's not really telling me,
+<br />it's helping me explore.</p>
+        <p begin="00:07:22.810" end="00:07:26.450" tts:direction="ltr">I might even want to create a histogram
+<br />and pull out</p>
+        <p begin="00:07:26.450" end="00:07:30.490" tts:direction="ltr">some of these particular age ranges to</p>
+        <p begin="00:07:30.490" end="00:07:33.830" tts:direction="ltr">begin to think about how are these</p>
+        <p begin="00:07:33.830" end="00:07:38.990" tts:direction="ltr">segment billionaires donate more money as
+<br />they age?</p>
+        <p begin="00:07:38.990" end="00:07:42.620" tts:direction="ltr">Do they donate money when they're young?</p>
+        <p begin="00:07:42.620" end="00:07:45.300" tts:direction="ltr">I can create some more visualizations that
+<br />way.</p>
+        <p begin="00:07:45.300" end="00:07:50.600" tts:direction="ltr">I'm going to go back and just put that net
+<br />worth back on there.</p>
+        <p begin="00:07:54.580" end="00:07:58.960" tts:direction="ltr">Actually, let's put the philanthropy score
+<br />back on there,</p>
+        <p begin="00:07:58.960" end="00:08:01.080" tts:direction="ltr">so that these are all mirrored up.</p>
+        <p begin="00:08:01.080" end="00:08:07.620" tts:direction="ltr">Okay? I can do a calculated field to
+<br />actually manipulate this,</p>
+        <p begin="00:08:07.620" end="00:08:10.440" tts:direction="ltr">so I can only have to color one of these,
+<br />right?</p>
+        <p begin="00:08:10.440" end="00:08:12.880" tts:direction="ltr">If I go to color and I added those colors,</p>
+        <p begin="00:08:12.880" end="00:08:15.660" tts:direction="ltr">it's on this range here.</p>
+        <p begin="00:08:16.460" end="00:08:20.340" tts:direction="ltr">I could intersect with that and make</p>
+        <p begin="00:08:20.340" end="00:08:24.400" tts:direction="ltr">all of the same color except for maybe
+<br />this one that I wanted to highlight.</p>
+        <p begin="00:08:24.400" end="00:08:26.920" tts:direction="ltr">All sorts of ways that I can visualize
+<br />things.</p>
+        <p begin="00:08:26.920" end="00:08:30.260" tts:direction="ltr">We'll learn about that in future adventure
+<br />guides.</p>
+        <p begin="00:08:30.260" end="00:08:37.580" tts:direction="ltr">All right, my next question, Let's see.</p>
+        <p begin="00:08:37.580" end="00:08:41.640" tts:direction="ltr">Submit a scatter plot showing age and net
+<br />worth.</p>
+        <p begin="00:08:41.640" end="00:08:45.380" tts:direction="ltr">This could also just be good for that
+<br />exploratory area</p>
+        <p begin="00:08:45.380" end="00:08:49.560" tts:direction="ltr">where I'm looking at my age, right?</p>
+        <p begin="00:08:49.560" end="00:08:51.600" tts:direction="ltr">Which I'm going to put that in.</p>
+        <p begin="00:08:51.600" end="00:08:54.260" tts:direction="ltr">Going to put net worth on columns.</p>
+        <p begin="00:08:54.260" end="00:08:56.580" tts:direction="ltr">Now here's that scatter plot right there.</p>
+        <p begin="00:08:56.580" end="00:08:59.340" tts:direction="ltr">And I'm going to go ahead and deaggregate
+<br />that by hitting</p>
+        <p begin="00:08:59.340" end="00:09:03.780" tts:direction="ltr">the analysis tab and selecting aggregate
+<br />measures.</p>
+        <p begin="00:09:03.980" end="00:09:09.230" tts:direction="ltr">Now the ability to see there's</p>
+        <p begin="00:09:09.230" end="00:09:14.190" tts:direction="ltr">a whole group of people who are probably
+<br />below 10 million.</p>
+        <p begin="00:09:14.190" end="00:09:17.870" tts:direction="ltr">Okay, let me actually change this to a
+<br />full circle.</p>
+        <p begin="00:09:17.870" end="00:09:21.150" tts:direction="ltr">Here, a filter in circle,</p>
+        <p begin="00:09:21.150" end="00:09:22.990" tts:direction="ltr">I think I want to put on</p>
+        <p begin="00:09:22.990" end="00:09:27.270" tts:direction="ltr">another variable so I can see these a
+<br />little bit better.</p>
+        <p begin="00:09:27.270" end="00:09:32.230" tts:direction="ltr">I'm going, let's see if I've got age.</p>
+        <p begin="00:09:32.230" end="00:09:37.410" tts:direction="ltr">Let's go ahead. We could put state onto
+<br />color if we wanted to.</p>
+        <p begin="00:09:38.450" end="00:09:41.990" tts:direction="ltr">It's saying if I want to filter,</p>
+        <p begin="00:09:41.990" end="00:09:43.730" tts:direction="ltr">that's usually telling me that there's</p>
+        <p begin="00:09:43.730" end="00:09:46.270" tts:direction="ltr">a large amount of processing it needs to
+<br />do.</p>
+        <p begin="00:09:46.270" end="00:09:48.310" tts:direction="ltr">I'll just do that philanthropy score
+<br />because</p>
+        <p begin="00:09:48.310" end="00:09:52.060" tts:direction="ltr">that's one through five there. That's a
+<br />lot easier.</p>
+        <p begin="00:09:52.060" end="00:09:55.990" tts:direction="ltr">Now, I'm going to go ahead and outline my
+<br />border</p>
+        <p begin="00:09:55.990" end="00:09:59.970" tts:direction="ltr">here just so that I can see these a little
+<br />bit better, not that much.</p>
+        <p begin="00:09:59.970" end="00:10:02.770" tts:direction="ltr">Maybe have some transparency.</p>
+        <p begin="00:10:02.770" end="00:10:06.250" tts:direction="ltr">I'm going to move my philanthropy score
+<br />over here.</p>
+        <p begin="00:10:06.250" end="00:10:11.990" tts:direction="ltr">Just go ahead and fit the entire width. I
+<br />can see this.</p>
+        <p begin="00:10:11.990" end="00:10:15.230" tts:direction="ltr">This is what you're just taking a screen
+<br />capture of.</p>
+        <p begin="00:10:15.230" end="00:10:17.150" tts:direction="ltr">Clearly, I don't have anybody.</p>
+        <p begin="00:10:17.150" end="00:10:20.750" tts:direction="ltr">The youngest billionaire in that dataset
+<br />is 37 years old.</p>
+        <p begin="00:10:20.750" end="00:10:24.230" tts:direction="ltr">Okay, with 24.2 let me see who that is.</p>
+        <p begin="00:10:24.230" end="00:10:25.610" tts:direction="ltr">I'm going to go ahead and put name.</p>
+        <p begin="00:10:25.610" end="00:10:27.350" tts:direction="ltr">I'm going to put that on the tool tip.</p>
+        <p begin="00:10:27.350" end="00:10:33.210" tts:direction="ltr">Okay. So now I can see it's Lucas Walton,
+<br />that makes sense.</p>
+        <p begin="00:10:33.210" end="00:10:37.550" tts:direction="ltr">That is from the family of Walmart that's
+<br />inherited money.</p>
+        <p begin="00:10:37.550" end="00:10:42.225" tts:direction="ltr">24.2 billion dollar philanthropy score of
+<br />one.</p>
+        <p begin="00:10:42.225" end="00:10:46.120" tts:direction="ltr">And I'm just looking at this and seeing
+<br />it's really</p>
+        <p begin="00:10:46.120" end="00:10:49.800" tts:direction="ltr">hard to tell in this big cluster where
+<br />people fall.</p>
+        <p begin="00:10:49.800" end="00:10:51.440" tts:direction="ltr">But I do see some outliers,</p>
+        <p begin="00:10:51.440" end="00:10:56.720" tts:direction="ltr">like Warren Buffett has a high net worth
+<br />and has a philanthropy score of five.</p>
+        <p begin="00:10:56.720" end="00:10:59.140" tts:direction="ltr">That's pretty impressive.</p>
+        <p begin="00:10:59.140" end="00:11:01.520" tts:direction="ltr">I've got this individual, David Murdoch.</p>
+        <p begin="00:11:01.520" end="00:11:08.220" tts:direction="ltr">He's the individual who owned Fox Media
+<br />and a couple of UK Multimedia.</p>
+        <p begin="00:11:08.220" end="00:11:14.120" tts:direction="ltr">He's 100 and we're 3.4 billion and has a
+<br />philanthropy score of zero.</p>
+        <p begin="00:11:14.120" end="00:11:17.320" tts:direction="ltr">This is our outlier, Elon Musk</p>
+        <p begin="00:11:17.320" end="00:11:21.590" tts:direction="ltr">52.251 What I'm hoping</p>
+        <p begin="00:11:21.590" end="00:11:25.290" tts:direction="ltr">this exercise helps you is to see how you
+<br />can scrape data,</p>
+        <p begin="00:11:25.290" end="00:11:26.810" tts:direction="ltr">bring it into Tableau.</p>
+        <p begin="00:11:26.810" end="00:11:28.950" tts:direction="ltr">Begin to create some charts and ask</p>
+        <p begin="00:11:28.950" end="00:11:32.590" tts:direction="ltr">some questions that can lead to some more
+<br />questions.</p>
+        <p begin="00:11:32.590" end="00:11:34.550" tts:direction="ltr">That's what you'll be doing for your
+<br />project,</p>
+        <p begin="00:11:34.550" end="00:11:38.270" tts:direction="ltr">and I hope this has been helpful to
+<br />understand</p>
+        <p begin="00:11:38.270" end="00:11:43.890" tts:direction="ltr">the power from data collection to data
+<br />visualization.</p>
+    </div>
+  </body>
+</tt>

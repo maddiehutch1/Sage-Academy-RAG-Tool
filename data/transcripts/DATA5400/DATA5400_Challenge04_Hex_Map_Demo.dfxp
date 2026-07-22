@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>386202102 - 1_nnh6vvxc - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.600" end="00:00:03.680" tts:direction="ltr">Hello visitors. We're going to hop right</p>
+        <p begin="00:00:03.680" end="00:00:06.780" tts:direction="ltr">into this challenge, the story challenge.</p>
+        <p begin="00:00:06.780" end="00:00:11.860" tts:direction="ltr">And you've got a Twp file that you've
+<br />downloaded and you should have opened.</p>
+        <p begin="00:00:11.860" end="00:00:14.380" tts:direction="ltr">There's also some additional files that
+<br />we're going to be</p>
+        <p begin="00:00:14.380" end="00:00:18.060" tts:direction="ltr">using to help with these client and client
+<br />B.</p>
+        <p begin="00:00:18.060" end="00:00:22.080" tts:direction="ltr">Be sure and take a look at what they're
+<br />asking for.</p>
+        <p begin="00:00:22.080" end="00:00:26.820" tts:direction="ltr">This demo is just to help you understand</p>
+        <p begin="00:00:26.820" end="00:00:28.620" tts:direction="ltr">how to create some of</p>
+        <p begin="00:00:28.620" end="00:00:32.760" tts:direction="ltr">these visualizations that you could apply
+<br />to your challenge.</p>
+        <p begin="00:00:32.760" end="00:00:34.720" tts:direction="ltr">I have a demo.</p>
+        <p begin="00:00:34.720" end="00:00:36.920" tts:direction="ltr">I have two demos and I want to show you
+<br />this.</p>
+        <p begin="00:00:36.920" end="00:00:38.660" tts:direction="ltr">One is for demo one.</p>
+        <p begin="00:00:38.660" end="00:00:45.160" tts:direction="ltr">I have a map here and I have some college
+<br />tuition.</p>
+        <p begin="00:00:45.160" end="00:00:50.800" tts:direction="ltr">I want to show you that I've got two
+<br />different sources here.</p>
+        <p begin="00:00:50.800" end="00:00:53.120" tts:direction="ltr">One is the 2021 baby names.</p>
+        <p begin="00:00:53.120" end="00:00:57.440" tts:direction="ltr">You'll use that for this start of the
+<br />challenge here.</p>
+        <p begin="00:00:57.440" end="00:01:03.300" tts:direction="ltr">Then you also have the average tuition in
+<br />the US which is this.</p>
+        <p begin="00:01:03.300" end="00:01:05.920" tts:direction="ltr">You'll only be using the average tuition
+<br />for</p>
+        <p begin="00:01:05.920" end="00:01:10.360" tts:direction="ltr">this demo and then it won't be of any use
+<br />for you in the future.</p>
+        <p begin="00:01:10.920" end="00:01:14.020" tts:direction="ltr">You have an audience who is interested in</p>
+        <p begin="00:01:14.020" end="00:01:18.340" tts:direction="ltr">the average tuition per state for the year
+<br />2015.</p>
+        <p begin="00:01:18.340" end="00:01:23.400" tts:direction="ltr">They also want to know how each state's
+<br />average tuition differs from the US.</p>
+        <p begin="00:01:23.400" end="00:01:27.140" tts:direction="ltr">They're wanting to see in some like a map
+<br />formation to see if there's</p>
+        <p begin="00:01:27.140" end="00:01:30.360" tts:direction="ltr">any geographical patterns this</p>
+        <p begin="00:01:30.360" end="00:01:33.600" tts:direction="ltr">has been created but it's not doing the
+<br />best job.</p>
+        <p begin="00:01:33.600" end="00:01:35.720" tts:direction="ltr">Often will create a chart,</p>
+        <p begin="00:01:35.720" end="00:01:37.920" tts:direction="ltr">but it's still not helping our audience</p>
+        <p begin="00:01:37.920" end="00:01:42.260" tts:direction="ltr">understand some insights or some trends.</p>
+        <p begin="00:01:42.260" end="00:01:44.500" tts:direction="ltr">I want to just point out a few things
+<br />here.</p>
+        <p begin="00:01:44.500" end="00:01:46.980" tts:direction="ltr">We've got shape, that's denoting</p>
+        <p begin="00:01:46.980" end="00:01:49.580" tts:direction="ltr">regions which actually we don't really
+<br />care about.</p>
+        <p begin="00:01:49.580" end="00:01:51.500" tts:direction="ltr">That's not what our audience cares about.</p>
+        <p begin="00:01:51.500" end="00:01:55.360" tts:direction="ltr">I also have some additional population
+<br />information.</p>
+        <p begin="00:01:55.360" end="00:01:58.520" tts:direction="ltr">The way that that's there is in the
+<br />background layers.</p>
+        <p begin="00:01:58.520" end="00:02:00.180" tts:direction="ltr">If you scroll to the bottom,</p>
+        <p begin="00:02:00.180" end="00:02:02.520" tts:direction="ltr">you'll see that there is detail.</p>
+        <p begin="00:02:02.520" end="00:02:07.840" tts:direction="ltr">There's a layer data layer with population
+<br />selected.</p>
+        <p begin="00:02:07.840" end="00:02:09.920" tts:direction="ltr">If I say no data layer,</p>
+        <p begin="00:02:09.920" end="00:02:11.500" tts:direction="ltr">then that's being removed,</p>
+        <p begin="00:02:11.500" end="00:02:15.080" tts:direction="ltr">then I can put that population back on.</p>
+        <p begin="00:02:15.880" end="00:02:18.400" tts:direction="ltr">This is 2018 data.</p>
+        <p begin="00:02:18.400" end="00:02:21.100" tts:direction="ltr">It's within the Tableau application
+<br />itself.</p>
+        <p begin="00:02:21.100" end="00:02:23.460" tts:direction="ltr">You might find it to be interesting and</p>
+        <p begin="00:02:23.460" end="00:02:26.680" tts:direction="ltr">useful for your own projects or
+<br />exploration,</p>
+        <p begin="00:02:26.680" end="00:02:28.560" tts:direction="ltr">but for this one, that's not really
+<br />needed.</p>
+        <p begin="00:02:28.560" end="00:02:30.720" tts:direction="ltr">I'm going to go ahead and close that
+<br />background layer.</p>
+        <p begin="00:02:30.720" end="00:02:34.960" tts:direction="ltr">We're going to remake this to address</p>
+        <p begin="00:02:34.960" end="00:02:39.620" tts:direction="ltr">the question that we have in a more
+<br />powerful and focused way.</p>
+        <p begin="00:02:39.620" end="00:02:42.260" tts:direction="ltr">All the way that we'll do that is</p>
+        <p begin="00:02:42.260" end="00:02:46.700" tts:direction="ltr">we'll start off with our latitude and
+<br />longitude.</p>
+        <p begin="00:02:46.700" end="00:02:51.730" tts:direction="ltr">So we're going to make our map my whole
+<br />globe here.</p>
+        <p begin="00:02:51.730" end="00:02:55.210" tts:direction="ltr">And I'm going to go ahead and take state
+<br />and put that on detail.</p>
+        <p begin="00:02:55.210" end="00:02:58.210" tts:direction="ltr">That's going to really focus me into this
+<br />space.</p>
+        <p begin="00:02:58.210" end="00:03:04.350" tts:direction="ltr">Now you may be more like this with the
+<br />dots that are located on every state.</p>
+        <p begin="00:03:04.350" end="00:03:07.230" tts:direction="ltr">You can change that to then select Map,</p>
+        <p begin="00:03:07.230" end="00:03:09.150" tts:direction="ltr">and that's going to fill those in.</p>
+        <p begin="00:03:09.150" end="00:03:12.490" tts:direction="ltr">Now we just need to show the percent of
+<br />difference</p>
+        <p begin="00:03:12.490" end="00:03:15.930" tts:direction="ltr">which I've already created that
+<br />calculation on color.</p>
+        <p begin="00:03:15.930" end="00:03:18.390" tts:direction="ltr">And I've got a diverging palette,</p>
+        <p begin="00:03:18.390" end="00:03:24.690" tts:direction="ltr">which is showing me which states are the
+<br />percent difference from the US.</p>
+        <p begin="00:03:24.690" end="00:03:32.150" tts:direction="ltr">Average. Right now I've got the orange
+<br />that are in the positive, right?</p>
+        <p begin="00:03:32.150" end="00:03:35.410" tts:direction="ltr">They're away from the difference.</p>
+        <p begin="00:03:35.410" end="00:03:36.810" tts:direction="ltr">And the blue on the other side,</p>
+        <p begin="00:03:36.810" end="00:03:38.330" tts:direction="ltr">I actually want to change that.</p>
+        <p begin="00:03:38.330" end="00:03:39.870" tts:direction="ltr">I'm going to go to color,</p>
+        <p begin="00:03:39.870" end="00:03:44.490" tts:direction="ltr">I'm going to edit that, those colors and
+<br />I'm going to reverse that.</p>
+        <p begin="00:03:44.490" end="00:03:48.210" tts:direction="ltr">It's already reversed. It's already
+<br />showing that that's exactly what I wanted.</p>
+        <p begin="00:03:48.210" end="00:03:54.050" tts:direction="ltr">Blue. Yeah, blue is showing these are the
+<br />states that are less expensive,</p>
+        <p begin="00:03:54.050" end="00:03:57.810" tts:direction="ltr">and orange and red are more expensive.</p>
+        <p begin="00:03:57.810" end="00:04:01.250" tts:direction="ltr">This is getting a little closer,</p>
+        <p begin="00:04:01.250" end="00:04:05.355" tts:direction="ltr">but one of the questions I would have for
+<br />you is the size matter.</p>
+        <p begin="00:04:05.355" end="00:04:09.120" tts:direction="ltr">Does the size of Texas or the size of
+<br />Alaska</p>
+        <p begin="00:04:09.120" end="00:04:13.040" tts:direction="ltr">or the size of Hawaii really matter in
+<br />this question?</p>
+        <p begin="00:04:13.040" end="00:04:15.640" tts:direction="ltr">And the answer is no, it doesn't.</p>
+        <p begin="00:04:15.640" end="00:04:19.360" tts:direction="ltr">I want to just show you how to make a hex
+<br />map</p>
+        <p begin="00:04:19.360" end="00:04:25.580" tts:direction="ltr">that gives you this geographical sense
+<br />that mains up here in Florida,</p>
+        <p begin="00:04:25.580" end="00:04:27.540" tts:direction="ltr">is down here in Washington, is up here,</p>
+        <p begin="00:04:27.540" end="00:04:33.600" tts:direction="ltr">but removing the task of creating another
+<br />sheet for Alaska,</p>
+        <p begin="00:04:33.600" end="00:04:34.840" tts:direction="ltr">another sheet for Hawaii,</p>
+        <p begin="00:04:34.840" end="00:04:36.720" tts:direction="ltr">and then placing that in a dashboard.</p>
+        <p begin="00:04:36.720" end="00:04:38.820" tts:direction="ltr">There's a little bit of complication that
+<br />you can</p>
+        <p begin="00:04:38.820" end="00:04:42.800" tts:direction="ltr">do to include both of these states from a
+<br />design perspective.</p>
+        <p begin="00:04:42.800" end="00:04:45.340" tts:direction="ltr">But I want to show you how to make a hex
+<br />map.</p>
+        <p begin="00:04:45.340" end="00:04:50.780" tts:direction="ltr">What I've done here, I've brought in the
+<br />hex map sheet.</p>
+        <p begin="00:04:50.780" end="00:04:55.380" tts:direction="ltr">To do that, you go into the data new data
+<br />source.</p>
+        <p begin="00:04:55.380" end="00:04:59.060" tts:direction="ltr">You're going to select Microsoft Excel.</p>
+        <p begin="00:04:59.060" end="00:05:03.540" tts:direction="ltr">Then you'll see that you've downloaded
+<br />this Hex Map Excel.</p>
+        <p begin="00:05:03.540" end="00:05:07.560" tts:direction="ltr">And that's on that challenge prompt there.</p>
+        <p begin="00:05:07.560" end="00:05:09.840" tts:direction="ltr">Go ahead and bring that in.</p>
+        <p begin="00:05:09.840" end="00:05:12.900" tts:direction="ltr">I'm going to go ahead and I've already
+<br />done that.</p>
+        <p begin="00:05:12.900" end="00:05:14.720" tts:direction="ltr">You can drag that sheet,</p>
+        <p begin="00:05:14.720" end="00:05:19.980" tts:direction="ltr">should be now into your list of available
+<br />sources.</p>
+        <p begin="00:05:19.980" end="00:05:23.580" tts:direction="ltr">What I'm going to do is select the hex map
+<br />and I'm going to put</p>
+        <p begin="00:05:23.580" end="00:05:27.040" tts:direction="ltr">column on column and row on row.</p>
+        <p begin="00:05:27.040" end="00:05:29.080" tts:direction="ltr">And what a hex map really is.</p>
+        <p begin="00:05:29.080" end="00:05:31.140" tts:direction="ltr">Is a scatter plot,</p>
+        <p begin="00:05:31.140" end="00:05:35.000" tts:direction="ltr">but we're going to place our states</p>
+        <p begin="00:05:35.000" end="00:05:40.580" tts:direction="ltr">in those scatter plot dimensions that have
+<br />been done on this Excel sheet.</p>
+        <p begin="00:05:40.580" end="00:05:43.320" tts:direction="ltr">We're going to go in and do what we did
+<br />before.</p>
+        <p begin="00:05:43.320" end="00:05:48.640" tts:direction="ltr">We're going to go to the average tuition
+<br />in the US.</p>
+        <p begin="00:05:48.640" end="00:05:52.240" tts:direction="ltr">We're going to put percent of difference
+<br />on color.</p>
+        <p begin="00:05:52.240" end="00:05:55.620" tts:direction="ltr">Okay, we've done that.</p>
+        <p begin="00:05:55.620" end="00:05:58.600" tts:direction="ltr">By the way, just make sure on your data,</p>
+        <p begin="00:05:58.600" end="00:06:01.640" tts:direction="ltr">if you need to edit the blend
+<br />relationships,</p>
+        <p begin="00:06:01.640" end="00:06:07.280" tts:direction="ltr">you should have like you've got my average
+<br />tuition and I've got</p>
+        <p begin="00:06:07.280" end="00:06:13.660" tts:direction="ltr">my hex map and they're in a relationship
+<br />together, I've got that.</p>
+        <p begin="00:06:13.660" end="00:06:16.160" tts:direction="ltr">But now I'm going to bring state on
+<br />detail,</p>
+        <p begin="00:06:16.160" end="00:06:19.080" tts:direction="ltr">just like the two tasks that we did
+<br />before.</p>
+        <p begin="00:06:19.080" end="00:06:24.360" tts:direction="ltr">Now I've got the states being plotted in
+<br />the locations.</p>
+        <p begin="00:06:24.360" end="00:06:27.680" tts:direction="ltr">This is actually Florida and this is
+<br />actually Maine,</p>
+        <p begin="00:06:27.680" end="00:06:30.480" tts:direction="ltr">it's backwards. They've been plotted.</p>
+        <p begin="00:06:30.480" end="00:06:32.560" tts:direction="ltr">We're going to go ahead and right click</p>
+        <p begin="00:06:32.560" end="00:06:36.780" tts:direction="ltr">the row column here and we're going to
+<br />edit that axis.</p>
+        <p begin="00:06:36.780" end="00:06:38.480" tts:direction="ltr">And we're going to reverse it.</p>
+        <p begin="00:06:38.480" end="00:06:43.245" tts:direction="ltr">Okay, We're just going to click that
+<br />reverse right there. Close that out.</p>
+        <p begin="00:06:43.245" end="00:06:46.510" tts:direction="ltr">Now you'll see that we've got main over
+<br />here in Alaska,</p>
+        <p begin="00:06:46.510" end="00:06:49.170" tts:direction="ltr">over here in Hawaii, over here. That's
+<br />great.</p>
+        <p begin="00:06:49.170" end="00:06:52.510" tts:direction="ltr">We're getting closer to creating this hex
+<br />map,</p>
+        <p begin="00:06:52.510" end="00:06:57.230" tts:direction="ltr">but we're going to use a hexagon instead
+<br />of a circle to do that.</p>
+        <p begin="00:06:57.230" end="00:06:59.270" tts:direction="ltr">You're going to do what you've done
+<br />before,</p>
+        <p begin="00:06:59.270" end="00:07:01.670" tts:direction="ltr">where you're going to upload a new shape.</p>
+        <p begin="00:07:01.670" end="00:07:06.350" tts:direction="ltr">To get to shape, you can click on the
+<br />shape icon here.</p>
+        <p begin="00:07:06.350" end="00:07:11.910" tts:direction="ltr">Once you do that, this tile in the mark
+<br />card should show.</p>
+        <p begin="00:07:11.910" end="00:07:14.390" tts:direction="ltr">When you click on that, you'll say</p>
+        <p begin="00:07:14.390" end="00:07:18.410" tts:direction="ltr">more shapes and we'll move from default to
+<br />the hex.</p>
+        <p begin="00:07:18.410" end="00:07:25.050" tts:direction="ltr">Now remember you have to go into the
+<br />folder in your Tableau repository.</p>
+        <p begin="00:07:25.290" end="00:07:30.690" tts:direction="ltr">Place your hex shape into that repository
+<br />for it to show up here.</p>
+        <p begin="00:07:30.690" end="00:07:33.770" tts:direction="ltr">Be sure you've done that before.</p>
+        <p begin="00:07:33.770" end="00:07:35.850" tts:direction="ltr">This, I'm select hex,</p>
+        <p begin="00:07:35.850" end="00:07:38.710" tts:direction="ltr">select my circle, and then just put that
+<br />on there.</p>
+        <p begin="00:07:38.710" end="00:07:42.490" tts:direction="ltr">Okay, Now I have those hex shapes.</p>
+        <p begin="00:07:42.490" end="00:07:44.450" tts:direction="ltr">I'm going to make them a little bit larger
+<br />so you can</p>
+        <p begin="00:07:44.450" end="00:07:47.430" tts:direction="ltr">see I'm beginning to see again,</p>
+        <p begin="00:07:47.430" end="00:07:48.910" tts:direction="ltr">my map is forming.</p>
+        <p begin="00:07:48.910" end="00:07:50.930" tts:direction="ltr">Okay, I'm going to go ahead and put</p>
+        <p begin="00:07:50.930" end="00:07:55.330" tts:direction="ltr">some more information on this that I want
+<br />to have in my tool tip.</p>
+        <p begin="00:07:55.330" end="00:07:59.030" tts:direction="ltr">I'm going to go ahead and</p>
+        <p begin="00:07:59.030" end="00:08:01.410" tts:direction="ltr">put some of difference onto</p>
+        <p begin="00:08:01.410" end="00:08:04.330" tts:direction="ltr">my tool tip because I want to be sure and
+<br />have that.</p>
+        <p begin="00:08:04.330" end="00:08:09.670" tts:direction="ltr">I'm going to my sum of tuition,</p>
+        <p begin="00:08:09.670" end="00:08:15.590" tts:direction="ltr">I'm going to put that on my tool tip now.</p>
+        <p begin="00:08:16.910" end="00:08:22.150" tts:direction="ltr">I want to have the states abbreviation on
+<br />here.</p>
+        <p begin="00:08:22.150" end="00:08:29.290" tts:direction="ltr">In order to do that, I'm going to go back
+<br />to this hex map right here.</p>
+        <p begin="00:08:29.290" end="00:08:32.890" tts:direction="ltr">You'll see that there is the abbreviation
+<br />right here.</p>
+        <p begin="00:08:32.890" end="00:08:34.990" tts:direction="ltr">I'm going to drag and place that on</p>
+        <p begin="00:08:34.990" end="00:08:39.910" tts:direction="ltr">label and you'll see that they're outside
+<br />the label right there.</p>
+        <p begin="00:08:39.910" end="00:08:42.770" tts:direction="ltr">I want them to be on the label.</p>
+        <p begin="00:08:42.770" end="00:08:47.970" tts:direction="ltr">In order to do that, I have to use this
+<br />very simple calculation here,</p>
+        <p begin="00:08:47.970" end="00:08:49.610" tts:direction="ltr">let me just show you what it looks like.</p>
+        <p begin="00:08:49.610" end="00:08:52.650" tts:direction="ltr">It's called one and it's actually the
+<br />number one.</p>
+        <p begin="00:08:52.650" end="00:08:57.330" tts:direction="ltr">By having this, then I can place</p>
+        <p begin="00:08:57.330" end="00:09:02.510" tts:direction="ltr">this on size that will make that a lot
+<br />bigger.</p>
+        <p begin="00:09:02.510" end="00:09:06.130" tts:direction="ltr">I'm making it bigger. If you need to make
+<br />some of your shapes bigger,</p>
+        <p begin="00:09:06.130" end="00:09:10.650" tts:direction="ltr">you can just do that feature with that
+<br />one.</p>
+        <p begin="00:09:10.650" end="00:09:12.910" tts:direction="ltr">Let me go in and close a few of these
+<br />things.</p>
+        <p begin="00:09:12.910" end="00:09:17.350" tts:direction="ltr">I can have my full view here,</p>
+        <p begin="00:09:17.350" end="00:09:20.570" tts:direction="ltr">maybe drag this out.</p>
+        <p begin="00:09:20.570" end="00:09:26.090" tts:direction="ltr">I can see this, now I've got my states
+<br />here that are just floating.</p>
+        <p begin="00:09:26.090" end="00:09:30.090" tts:direction="ltr">What I want to do is change that On the
+<br />label.</p>
+        <p begin="00:09:30.090" end="00:09:35.450" tts:direction="ltr">On the label, and you see that there is
+<br />text font and alignment.</p>
+        <p begin="00:09:35.450" end="00:09:38.490" tts:direction="ltr">I'm going to change my alignment to be
+<br />centered here for</p>
+        <p begin="00:09:38.490" end="00:09:41.970" tts:direction="ltr">horizontal and centered here for vertical.</p>
+        <p begin="00:09:41.970" end="00:09:47.850" tts:direction="ltr">And you can see as you do it that now
+<br />they're centering right on there.</p>
+        <p begin="00:09:47.850" end="00:09:52.250" tts:direction="ltr">I want to change a few things on those
+<br />abbreviations.</p>
+        <p begin="00:09:52.250" end="00:09:54.590" tts:direction="ltr">If I hit format,</p>
+        <p begin="00:09:54.590" end="00:10:01.770" tts:direction="ltr">then I can select my text here.</p>
+        <p begin="00:10:01.770" end="00:10:08.030" tts:direction="ltr">Let's see, I actually want to be on the
+<br />pane.</p>
+        <p begin="00:10:08.710" end="00:10:11.230" tts:direction="ltr">Let me go back here,</p>
+        <p begin="00:10:11.230" end="00:10:19.350" tts:direction="ltr">step forward, see, let me go back to my
+<br />format.</p>
+        <p begin="00:10:19.350" end="00:10:21.830" tts:direction="ltr">I want to be on pain.</p>
+        <p begin="00:10:21.830" end="00:10:23.930" tts:direction="ltr">I'm going to select font,</p>
+        <p begin="00:10:23.930" end="00:10:25.810" tts:direction="ltr">and I'm going to say white.</p>
+        <p begin="00:10:25.810" end="00:10:27.330" tts:direction="ltr">And I'm going to bold it.</p>
+        <p begin="00:10:27.330" end="00:10:31.890" tts:direction="ltr">Okay, Now I've got a reverse text and it's
+<br />Lighten that up.</p>
+        <p begin="00:10:31.890" end="00:10:35.410" tts:direction="ltr">I also want to lighten what I'm seeing
+<br />here.</p>
+        <p begin="00:10:35.410" end="00:10:39.770" tts:direction="ltr">If I click on all the lines here,</p>
+        <p begin="00:10:39.770" end="00:10:43.450" tts:direction="ltr">I can remove those for the sheet,</p>
+        <p begin="00:10:43.450" end="00:10:47.050" tts:direction="ltr">those grid lines, I'm going to just say
+<br />none for</p>
+        <p begin="00:10:47.050" end="00:10:55.030" tts:direction="ltr">the zero lines, None. None.</p>
+        <p begin="00:10:55.730" end="00:11:00.290" tts:direction="ltr">Any ticks on there. Okay. Now I'm</p>
+        <p begin="00:11:00.290" end="00:11:04.350" tts:direction="ltr">going to remove actually these headers by
+<br />right clicking.</p>
+        <p begin="00:11:04.350" end="00:11:08.030" tts:direction="ltr">And then I can remove those headers right
+<br />clicking.</p>
+        <p begin="00:11:08.030" end="00:11:09.630" tts:direction="ltr">Remove those headers.</p>
+        <p begin="00:11:09.630" end="00:11:13.090" tts:direction="ltr">If you're ever wondering where those are
+<br />at,</p>
+        <p begin="00:11:13.210" end="00:11:16.970" tts:direction="ltr">you can go into, I believe,</p>
+        <p begin="00:11:16.970" end="00:11:19.170" tts:direction="ltr">it's Analysis, and you can add those
+<br />headers on,</p>
+        <p begin="00:11:19.170" end="00:11:22.050" tts:direction="ltr">or you can click again.</p>
+        <p begin="00:11:22.050" end="00:11:24.610" tts:direction="ltr">Now I've got my hex map.</p>
+        <p begin="00:11:24.610" end="00:11:29.090" tts:direction="ltr">I can include make the size a little bit
+<br />bigger.</p>
+        <p begin="00:11:29.090" end="00:11:30.470" tts:direction="ltr">I don't want to make it too big,</p>
+        <p begin="00:11:30.470" end="00:11:33.090" tts:direction="ltr">This is where it gets a little crazy.</p>
+        <p begin="00:11:33.090" end="00:11:36.790" tts:direction="ltr">I also want to make sure I have my states
+<br />on there.</p>
+        <p begin="00:11:36.790" end="00:11:39.830" tts:direction="ltr">Okay, that's looking pretty good. This
+<br />isn't done yet.</p>
+        <p begin="00:11:39.830" end="00:11:43.690" tts:direction="ltr">I need to do my takeaway title and my tool
+<br />tips.</p>
+        <p begin="00:11:43.690" end="00:11:46.130" tts:direction="ltr">Okay, for the takeaway title.</p>
+        <p begin="00:11:46.130" end="00:11:50.150" tts:direction="ltr">What I want to do is I want to leverage
+<br />some information.</p>
+        <p begin="00:11:50.150" end="00:11:53.510" tts:direction="ltr">I want to have that there's the
+<br />opportunity to</p>
+        <p begin="00:11:53.510" end="00:11:57.210" tts:direction="ltr">have the western states offer greater
+<br />value than the US.</p>
+        <p begin="00:11:57.210" end="00:12:01.290" tts:direction="ltr">I'm going to use a key in my takeaway
+<br />title,</p>
+        <p begin="00:12:01.290" end="00:12:03.530" tts:direction="ltr">that orange is above average and</p>
+        <p begin="00:12:03.530" end="00:12:07.070" tts:direction="ltr">blue is below the US average of college
+<br />tuition</p>
+        <p begin="00:12:07.070" end="00:12:13.860" tts:direction="ltr">2004-2016 This is showing the full range
+<br />of the data.</p>
+        <p begin="00:12:13.860" end="00:12:15.400" tts:direction="ltr">I don't think I showed you that.</p>
+        <p begin="00:12:15.400" end="00:12:17.120" tts:direction="ltr">Where I'm on tuition,</p>
+        <p begin="00:12:17.120" end="00:12:23.620" tts:direction="ltr">I can bring in an academic year and you
+<br />can see I've got 24-2016 Now,</p>
+        <p begin="00:12:23.620" end="00:12:26.500" tts:direction="ltr">I could just select a year if I wanted to,
+<br />to be specific.</p>
+        <p begin="00:12:26.500" end="00:12:28.860" tts:direction="ltr">But we're going to use the whole range
+<br />here.</p>
+        <p begin="00:12:28.860" end="00:12:31.440" tts:direction="ltr">I have that because I had none on there.</p>
+        <p begin="00:12:31.440" end="00:12:33.260" tts:direction="ltr">I'll take that filter off.</p>
+        <p begin="00:12:33.260" end="00:12:38.840" tts:direction="ltr">I'm going to go ahead and I'm going to
+<br />place that takeaway title there.</p>
+        <p begin="00:12:38.840" end="00:12:41.780" tts:direction="ltr">I'm also giving my audience an option to</p>
+        <p begin="00:12:41.780" end="00:12:45.080" tts:direction="ltr">hover over state to see the average
+<br />tuition.</p>
+        <p begin="00:12:45.080" end="00:12:49.860" tts:direction="ltr">I'm not going to place that within the
+<br />sheet, although I could.</p>
+        <p begin="00:12:49.860" end="00:12:52.640" tts:direction="ltr">I'm going to leverage my tool tip to do
+<br />that.</p>
+        <p begin="00:12:52.640" end="00:12:55.680" tts:direction="ltr">You can see right now my tool tip is not
+<br />looking good.</p>
+        <p begin="00:12:55.680" end="00:12:57.960" tts:direction="ltr">There's no sentence, there's no structure,</p>
+        <p begin="00:12:57.960" end="00:12:59.840" tts:direction="ltr">No one's going to pay attention to this.</p>
+        <p begin="00:12:59.840" end="00:13:01.700" tts:direction="ltr">There's a lot going on.</p>
+        <p begin="00:13:01.700" end="00:13:05.300" tts:direction="ltr">I'm going to go ahead, you can see this in
+<br />this tool tip.</p>
+        <p begin="00:13:05.300" end="00:13:08.640" tts:direction="ltr">I've got everything listed based on what I
+<br />have</p>
+        <p begin="00:13:08.640" end="00:13:12.660" tts:direction="ltr">seen in my view and I can insert these as
+<br />well.</p>
+        <p begin="00:13:12.660" end="00:13:15.700" tts:direction="ltr">If I lose them, I can also bring those in
+<br />here.</p>
+        <p begin="00:13:15.700" end="00:13:21.660" tts:direction="ltr">I'm going to go ahead and I'm going to
+<br />grab this sentence that I've</p>
+        <p begin="00:13:21.660" end="00:13:27.640" tts:direction="ltr">created that has a lot more information
+<br />that is digestible.</p>
+        <p begin="00:13:27.640" end="00:13:29.960" tts:direction="ltr">Remember, I've got my good tool tip.</p>
+        <p begin="00:13:29.960" end="00:13:32.830" tts:direction="ltr">I'm saying the average tuition in state,</p>
+        <p begin="00:13:32.830" end="00:13:35.530" tts:direction="ltr">it's going to select that state</p>
+        <p begin="00:13:35.530" end="00:13:38.370" tts:direction="ltr">and tell me that state was the average
+<br />tuition.</p>
+        <p begin="00:13:38.370" end="00:13:43.890" tts:direction="ltr">Right? Which is the average sum of
+<br />difference compared to the US average.</p>
+        <p begin="00:13:43.890" end="00:13:46.830" tts:direction="ltr">Okay, I can preview that to make sure that
+<br />that's working.</p>
+        <p begin="00:13:46.830" end="00:13:48.950" tts:direction="ltr">Looks like my state is not working.</p>
+        <p begin="00:13:48.950" end="00:13:54.770" tts:direction="ltr">I'm going to just go back in here and I'm
+<br />going to highlight that insert.</p>
+        <p begin="00:13:54.770" end="00:13:57.290" tts:direction="ltr">Looks like I don't have state.</p>
+        <p begin="00:13:57.290" end="00:14:01.730" tts:direction="ltr">Let me go ahead and grab State and put
+<br />that on my tool tip.</p>
+        <p begin="00:14:01.730" end="00:14:05.030" tts:direction="ltr">Now I've got that there. Can go back.</p>
+        <p begin="00:14:05.030" end="00:14:07.790" tts:direction="ltr">Let's see if I've got my preview.</p>
+        <p begin="00:14:07.790" end="00:14:09.970" tts:direction="ltr">Now let's go back.</p>
+        <p begin="00:14:14.760" end="00:14:17.720" tts:direction="ltr">Let's see. There we go.</p>
+        <p begin="00:14:17.720" end="00:14:21.620" tts:direction="ltr">So just a little bit longer of a name.
+<br />There we go.</p>
+        <p begin="00:14:21.620" end="00:14:28.520" tts:direction="ltr">Oh, that says null. Okay. Something isn't
+<br />right. Let me go back.</p>
+        <p begin="00:14:33.840" end="00:14:37.100" tts:direction="ltr">All right. I found my problem.</p>
+        <p begin="00:14:37.100" end="00:14:41.620" tts:direction="ltr">I have state from the average tuition
+<br />where I actually</p>
+        <p begin="00:14:41.620" end="00:14:46.060" tts:direction="ltr">need to have state from the hex map
+<br />because that is where the coordinates is.</p>
+        <p begin="00:14:46.060" end="00:14:47.880" tts:direction="ltr">So I'm going to take that off and then I'm</p>
+        <p begin="00:14:47.880" end="00:14:50.240" tts:direction="ltr">going to put state onto detail here.</p>
+        <p begin="00:14:50.240" end="00:14:59.000" tts:direction="ltr">Okay, If I go to my tool tip and I have it
+<br />will tell me the state I</p>
+        <p begin="00:14:59.000" end="00:15:03.080" tts:direction="ltr">needed to have it here because it was
+<br />talking and sharing what</p>
+        <p begin="00:15:03.080" end="00:15:07.600" tts:direction="ltr">that state was based on my coordinates
+<br />there. Apologies for that.</p>
+        <p begin="00:15:07.600" end="00:15:09.800" tts:direction="ltr">But that's Tableau for you.</p>
+        <p begin="00:15:09.800" end="00:15:11.760" tts:direction="ltr">You're always working through some issues.</p>
+        <p begin="00:15:11.760" end="00:15:15.420" tts:direction="ltr">But that is how when I roll over,</p>
+        <p begin="00:15:15.420" end="00:15:18.320" tts:direction="ltr">in fact, I'm going to bold that state now.</p>
+        <p begin="00:15:18.320" end="00:15:21.340" tts:direction="ltr">I just have that state in quotes here.</p>
+        <p begin="00:15:21.340" end="00:15:24.200" tts:direction="ltr">Let me just show you where it is on
+<br />insert.</p>
+        <p begin="00:15:24.200" end="00:15:29.540" tts:direction="ltr">Just like that, not using the average
+<br />tuition, but the sheet here.</p>
+        <p begin="00:15:29.540" end="00:15:32.800" tts:direction="ltr">Now I roll over my audience.</p>
+        <p begin="00:15:32.800" end="00:15:35.080" tts:direction="ltr">Let me go into my presentation.</p>
+        <p begin="00:15:35.080" end="00:15:37.320" tts:direction="ltr">I can make this full screen here.</p>
+        <p begin="00:15:37.320" end="00:15:41.980" tts:direction="ltr">Let me go ahead and make that entire view.</p>
+        <p begin="00:15:41.980" end="00:15:44.820" tts:direction="ltr">Now we'll do the full screen.</p>
+        <p begin="00:15:44.820" end="00:15:47.480" tts:direction="ltr">I need to work on some sizing here,</p>
+        <p begin="00:15:47.480" end="00:15:50.460" tts:direction="ltr">but you can see the average tuition in
+<br />South Dakota was</p>
+        <p begin="00:15:50.460" end="00:15:58.940" tts:direction="ltr">81,269 which is below 1.51% compared to
+<br />the US average.</p>
+        <p begin="00:15:58.940" end="00:16:02.800" tts:direction="ltr">Again, the takeaway title is really
+<br />showing that</p>
+        <p begin="00:16:02.800" end="00:16:07.260" tts:direction="ltr">there's this greater value in these
+<br />western states when it comes to tuition.</p>
+        <p begin="00:16:07.260" end="00:16:11.480" tts:direction="ltr">Much more expensive up here except for New
+<br />York,</p>
+        <p begin="00:16:11.480" end="00:16:13.420" tts:direction="ltr">which is quite expensive,</p>
+        <p begin="00:16:13.420" end="00:16:17.860" tts:direction="ltr">but still less than those averages. All
+<br />right.</p>
+        <p begin="00:16:18.260" end="00:16:24.420" tts:direction="ltr">Now no longer matters the size of the
+<br />state actually where they're at.</p>
+        <p begin="00:16:24.420" end="00:16:27.080" tts:direction="ltr">And to help your audience understand that,</p>
+        <p begin="00:16:27.080" end="00:16:32.600" tts:direction="ltr">hopefully you have followed along and you
+<br />have created this hex map.</p>
+        <p begin="00:16:32.600" end="00:16:34.560" tts:direction="ltr">And I look forward to seeing how you</p>
+        <p begin="00:16:34.560" end="00:16:37.820" tts:direction="ltr">might apply it in your upcoming challenge.</p>
+    </div>
+  </body>
+</tt>

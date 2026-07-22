@@ -1,0 +1,2832 @@
+1
+00:00:01,135 --> 00:00:02,260
+INSTRUCTOR: Hello visitors.
+
+2
+00:00:02,260 --> 00:00:04,120
+For this adventure
+guide, you're going
+
+3
+00:00:04,120 --> 00:00:06,560
+to learn how to map your data.
+
+4
+00:00:06,560 --> 00:00:10,720
+I'm going to cover area
+maps, symbol maps, heat maps,
+
+5
+00:00:10,720 --> 00:00:13,520
+map features, and one
+of my favorite features
+
+6
+00:00:13,520 --> 00:00:18,480
+is to use images as
+a non-geographic map
+
+7
+00:00:18,480 --> 00:00:20,680
+to plot your data points.
+
+8
+00:00:20,680 --> 00:00:25,880
+So let's first dive into the AG
+maps overview start TWBX file.
+
+9
+00:00:25,880 --> 00:00:27,960
+You can see I've got
+several sheets that we're
+
+10
+00:00:27,960 --> 00:00:31,220
+going to cover, and I want to
+talk about maps in general.
+
+11
+00:00:31,220 --> 00:00:35,120
+It's one of the most
+powerful features in Tableau.
+
+12
+00:00:35,120 --> 00:00:40,920
+And maps can show a lot of
+data and they're very visual.
+
+13
+00:00:40,920 --> 00:00:42,880
+It's incredibly
+tempting that whenever
+
+14
+00:00:42,880 --> 00:00:45,980
+you have geographic data
+that you want to map it.
+
+15
+00:00:45,980 --> 00:00:48,840
+But I first want you
+to pause and think,
+
+16
+00:00:48,840 --> 00:00:53,440
+is this helping or
+hindering my purpose,
+
+17
+00:00:53,440 --> 00:00:57,560
+and helping or hindering
+my audience, OK.
+
+18
+00:00:57,560 --> 00:01:00,880
+So maps aren't always
+the best choice depending
+
+19
+00:01:00,880 --> 00:01:03,020
+on what your purpose,
+what your audience is.
+
+20
+00:01:03,020 --> 00:01:04,340
+And let's take a couple look.
+
+21
+00:01:04,340 --> 00:01:07,320
+Let's take a look at these
+examples that I have here.
+
+22
+00:01:07,320 --> 00:01:10,740
+This first one is a typical
+field map in Tableau.
+
+23
+00:01:10,740 --> 00:01:15,240
+I'm showing the lower 48,
+missing Alaska and Hawaii,
+
+24
+00:01:15,240 --> 00:01:17,680
+just to fill the whole view up.
+
+25
+00:01:17,680 --> 00:01:22,000
+And you can see that some
+of sales is on color,
+
+26
+00:01:22,000 --> 00:01:25,240
+and it's showing the
+various states here.
+
+27
+00:01:25,240 --> 00:01:28,480
+We can see that the darker
+states are showing that there
+
+28
+00:01:28,480 --> 00:01:33,360
+are larger amounts of sales,
+and the lighter color states
+
+29
+00:01:33,360 --> 00:01:34,280
+are lower.
+
+30
+00:01:34,280 --> 00:01:37,900
+And clearly you can see that
+California is the darkest color.
+
+31
+00:01:37,900 --> 00:01:42,680
+And then maybe there's New
+York, maybe Texas, maybe Oregon.
+
+32
+00:01:42,680 --> 00:01:47,200
+Now, while you do have tooltips,
+if your question is, which
+
+33
+00:01:47,200 --> 00:01:50,960
+are the top states
+in sales, then
+
+34
+00:01:50,960 --> 00:01:55,220
+this would be very difficult to
+maybe uncover those top five.
+
+35
+00:01:55,220 --> 00:01:57,360
+I might be pretty good
+at guessing those.
+
+36
+00:01:57,360 --> 00:01:59,690
+But when it comes to
+this middle region,
+
+37
+00:01:59,690 --> 00:02:02,077
+these all seem like
+the same color,
+
+38
+00:02:02,077 --> 00:02:03,410
+so this would be very difficult.
+
+39
+00:02:03,410 --> 00:02:06,250
+Now you can modify
+these color ranges.
+
+40
+00:02:06,250 --> 00:02:08,009
+You can create more
+steps and so forth.
+
+41
+00:02:08,009 --> 00:02:09,717
+But what I would like
+for you to consider
+
+42
+00:02:09,717 --> 00:02:12,870
+is maybe there's a different
+chart type that would be better.
+
+43
+00:02:12,870 --> 00:02:15,670
+And that is the workhorse
+of the bar chart.
+
+44
+00:02:15,670 --> 00:02:18,610
+So here I've got the
+bar chart alphabetized.
+
+45
+00:02:18,610 --> 00:02:21,830
+I'm actually going to click
+on the third sheet here
+
+46
+00:02:21,830 --> 00:02:25,250
+to show that they're ordered
+and they're in descending order.
+
+47
+00:02:25,250 --> 00:02:28,210
+So I can quickly see that
+California, New York, Texas,
+
+48
+00:02:28,210 --> 00:02:30,990
+Washington, and Pennsylvania
+are those top five
+
+49
+00:02:30,990 --> 00:02:32,615
+states that really lead out.
+
+50
+00:02:32,615 --> 00:02:33,990
+Now, I might be
+able to come down
+
+51
+00:02:33,990 --> 00:02:38,950
+and say, oh, look at Oregon
+and Nevada are very close.
+
+52
+00:02:38,950 --> 00:02:42,210
+And I wouldn't be able to see
+that necessarily on the state.
+
+53
+00:02:42,210 --> 00:02:44,890
+I can also flip this
+to see the descending,
+
+54
+00:02:44,890 --> 00:02:48,210
+to see that North Dakota, West
+Virginia, Maine, South Dakota,
+
+55
+00:02:48,210 --> 00:02:52,190
+and Wyoming are my lowest five.
+
+56
+00:02:52,190 --> 00:02:57,290
+And so different charts can
+help answer different questions.
+
+57
+00:02:57,290 --> 00:02:59,150
+And so just be aware of that.
+
+58
+00:02:59,150 --> 00:03:01,670
+For this next cheat,
+I have a filled map,
+
+59
+00:03:01,670 --> 00:03:04,950
+and the fill is
+based on profit now.
+
+60
+00:03:04,950 --> 00:03:09,190
+So I've got the range where blue
+shows profit and then orange
+
+61
+00:03:09,190 --> 00:03:10,630
+is showing loss.
+
+62
+00:03:10,630 --> 00:03:14,630
+And again, you can quickly see
+that Texas is at that loss.
+
+63
+00:03:14,630 --> 00:03:16,830
+And then there's some
+other few states that
+
+64
+00:03:16,830 --> 00:03:19,510
+are in that same kind of area.
+
+65
+00:03:19,510 --> 00:03:23,350
+If I was going to put
+that on a bar chart,
+
+66
+00:03:23,350 --> 00:03:25,510
+you can see this is
+also a diverging bar
+
+67
+00:03:25,510 --> 00:03:27,470
+chart where I've
+got my loss here
+
+68
+00:03:27,470 --> 00:03:29,770
+to my left, my
+profit to the right.
+
+69
+00:03:29,770 --> 00:03:34,730
+I could also order that, and
+have that in descending order.
+
+70
+00:03:34,730 --> 00:03:37,790
+But I want you to think
+about where and how I might
+
+71
+00:03:37,790 --> 00:03:43,150
+use these geographic data in
+this map chart versus the bar
+
+72
+00:03:43,150 --> 00:03:43,910
+chart.
+
+73
+00:03:43,910 --> 00:03:46,670
+So if I'm looking at
+this data and trying
+
+74
+00:03:46,670 --> 00:03:49,230
+to uncover maybe
+regional opportunities
+
+75
+00:03:49,230 --> 00:03:51,870
+or regional insights,
+like the questions--
+
+76
+00:03:51,870 --> 00:03:56,650
+why is Illinois, Ohio, and
+Pennsylvania doing so poorly,
+
+77
+00:03:56,650 --> 00:04:02,565
+whereas New York and Michigan
+seem to be a bit stronger?
+
+78
+00:04:02,565 --> 00:04:03,940
+Is there something
+in this region
+
+79
+00:04:03,940 --> 00:04:08,780
+that I can do to
+improve profit overall?
+
+80
+00:04:08,780 --> 00:04:11,660
+Whereas in the bar
+chart I might be looking
+
+81
+00:04:11,660 --> 00:04:14,220
+at more state
+oriented, like, these
+
+82
+00:04:14,220 --> 00:04:16,640
+are the states that are
+performing very well,
+
+83
+00:04:16,640 --> 00:04:18,459
+maybe we need to
+give bonuses on them,
+
+84
+00:04:18,459 --> 00:04:21,700
+or pair them with states
+that aren't doing as well.
+
+85
+00:04:21,700 --> 00:04:24,420
+So again, one of the things
+that I might consider doing
+
+86
+00:04:24,420 --> 00:04:26,780
+is, depending on what
+my conversation, who
+
+87
+00:04:26,780 --> 00:04:28,780
+my audience is,
+and my purpose, I
+
+88
+00:04:28,780 --> 00:04:31,020
+might create a
+dashboard that includes
+
+89
+00:04:31,020 --> 00:04:34,180
+both the geographic data
+and the bar chart to answer
+
+90
+00:04:34,180 --> 00:04:35,560
+some of those questions.
+
+91
+00:04:35,560 --> 00:04:37,200
+But again, think
+about your purpose.
+
+92
+00:04:37,200 --> 00:04:38,640
+Think about your audience.
+
+93
+00:04:38,640 --> 00:04:45,900
+Think about whether a map will
+help or hinder your story.
+
+94
+00:04:45,900 --> 00:04:48,460
+So let's take a
+look at area maps,
+
+95
+00:04:48,460 --> 00:04:53,000
+and you should have the AG
+maps start topic's file open.
+
+96
+00:04:53,000 --> 00:04:57,140
+You'll see that there are these
+five tabs underneath that we'll
+
+97
+00:04:57,140 --> 00:04:58,140
+be covering.
+
+98
+00:04:58,140 --> 00:05:02,380
+And maps are pretty
+straightforward and easy
+
+99
+00:05:02,380 --> 00:05:03,420
+to make.
+
+100
+00:05:03,420 --> 00:05:07,140
+And I do want you to notice
+here in the Data pane, some
+
+101
+00:05:07,140 --> 00:05:12,460
+of the icons that denote fields
+that have map data in it.
+
+102
+00:05:12,460 --> 00:05:15,260
+So when we brought
+in our data source,
+
+103
+00:05:15,260 --> 00:05:19,580
+Tableau automatically
+assigns different types
+
+104
+00:05:19,580 --> 00:05:21,460
+to the data that's coming in.
+
+105
+00:05:21,460 --> 00:05:24,880
+So if it is some words,
+they'll put string data,
+
+106
+00:05:24,880 --> 00:05:27,020
+and that's what
+that a BC denotes.
+
+107
+00:05:27,020 --> 00:05:31,100
+If it looks like it's a date
+they'll put a calendar icon.
+
+108
+00:05:31,100 --> 00:05:34,340
+And if it has a city,
+state, or country,
+
+109
+00:05:34,340 --> 00:05:37,140
+then it will have
+that Globe icon.
+
+110
+00:05:37,140 --> 00:05:40,400
+Now if you need to change
+that say for instance,
+
+111
+00:05:40,400 --> 00:05:44,000
+you want you're trying to
+visualize your city data,
+
+112
+00:05:44,000 --> 00:05:45,760
+but it's not coming
+out correctly,
+
+113
+00:05:45,760 --> 00:05:48,060
+you can always click
+on that dropdown menu
+
+114
+00:05:48,060 --> 00:05:50,580
+and go to the geographic
+role, and then
+
+115
+00:05:50,580 --> 00:05:54,280
+ensure that City is selected
+versus maybe an area code,
+
+116
+00:05:54,280 --> 00:05:56,900
+a country, a state, et cetera.
+
+117
+00:05:56,900 --> 00:05:59,780
+You might also have
+a column in your data
+
+118
+00:05:59,780 --> 00:06:03,740
+that is a titled city,
+state, or country,
+
+119
+00:06:03,740 --> 00:06:05,640
+but is not geographic data.
+
+120
+00:06:05,640 --> 00:06:07,740
+It could be a true or false.
+
+121
+00:06:07,740 --> 00:06:11,300
+It could be other kinds of
+filters that you're using.
+
+122
+00:06:11,300 --> 00:06:14,260
+And in that case, you need to
+go back in and change that data
+
+123
+00:06:14,260 --> 00:06:16,000
+type, so it's not geographic.
+
+124
+00:06:16,000 --> 00:06:17,740
+So just double check
+and know that you
+
+125
+00:06:17,740 --> 00:06:22,500
+have that power to change that
+roll type, that data type.
+
+126
+00:06:22,500 --> 00:06:24,580
+So, for this area map,
+what we're going to do
+
+127
+00:06:24,580 --> 00:06:28,120
+is do the largest geographic
+roll, which is country.
+
+128
+00:06:28,120 --> 00:06:29,920
+And you can do this by 2 ways.
+
+129
+00:06:29,920 --> 00:06:33,932
+You can drag that
+Country into the view.
+
+130
+00:06:33,932 --> 00:06:36,140
+And I'm going to just delete
+that, or take those off,
+
+131
+00:06:36,140 --> 00:06:38,100
+so that I can show you
+the second way, which
+
+132
+00:06:38,100 --> 00:06:40,580
+is simply by double clicking.
+
+133
+00:06:40,580 --> 00:06:43,340
+Now what we have
+here is actually--
+
+134
+00:06:43,340 --> 00:06:45,780
+let me go change this
+to automatic first,
+
+135
+00:06:45,780 --> 00:06:49,420
+because what Tableau
+will do initially
+
+136
+00:06:49,420 --> 00:06:54,260
+is to plot your
+various countries.
+
+137
+00:06:54,260 --> 00:06:57,910
+And if you look at this, you'll
+see that there are two measures.
+
+138
+00:06:57,910 --> 00:07:00,410
+One on columns-- you've got
+the longitude on columns
+
+139
+00:07:00,410 --> 00:07:02,330
+and the latitude on rows.
+
+140
+00:07:02,330 --> 00:07:06,370
+Now if you have two
+continuous measures, and ones
+
+141
+00:07:06,370 --> 00:07:07,970
+on columns and ones
+on rows, it should
+
+142
+00:07:07,970 --> 00:07:10,450
+be similar to another
+chart type that you
+
+143
+00:07:10,450 --> 00:07:12,330
+should be familiar with.
+
+144
+00:07:12,330 --> 00:07:16,810
+And what chart type do
+you think that could be?
+
+145
+00:07:16,810 --> 00:07:20,130
+If you said scatter plot
+you would be correct.
+
+146
+00:07:20,130 --> 00:07:23,090
+So this right here is
+more of a simple map,
+
+147
+00:07:23,090 --> 00:07:25,290
+and we'll talk about
+those in a moment.
+
+148
+00:07:25,290 --> 00:07:28,450
+We want to cover an area
+map, and for an area map
+
+149
+00:07:28,450 --> 00:07:31,990
+we need to change
+the way the view is.
+
+150
+00:07:31,990 --> 00:07:34,690
+And so we're going to move
+from automatic to a map.
+
+151
+00:07:34,690 --> 00:07:37,550
+And now we're filling
+in these areas,
+
+152
+00:07:37,550 --> 00:07:40,070
+and that's where the
+area map comes in.
+
+153
+00:07:40,070 --> 00:07:42,370
+Now right now they're
+all the same color,
+
+154
+00:07:42,370 --> 00:07:45,030
+except for a few countries
+where we don't have any data.
+
+155
+00:07:45,030 --> 00:07:46,770
+And then those are grayed out.
+
+156
+00:07:46,770 --> 00:07:51,010
+Now we need to add in some
+information and some measures
+
+157
+00:07:51,010 --> 00:07:55,230
+to begin to use this area map.
+
+158
+00:07:55,230 --> 00:07:58,410
+So let's go ahead and
+put Profit onto color.
+
+159
+00:07:58,410 --> 00:08:00,890
+And now you can see
+for this area map,
+
+160
+00:08:00,890 --> 00:08:05,690
+we've got Profit being blue and
+then loss being that orange,
+
+161
+00:08:05,690 --> 00:08:09,590
+and I can see the different
+countries that are doing well.
+
+162
+00:08:09,590 --> 00:08:13,410
+Now, if I've got gray it means
+that I don't have data regarding
+
+163
+00:08:13,410 --> 00:08:15,170
+some of those countries.
+
+164
+00:08:15,170 --> 00:08:20,770
+It looks like I've got data
+on, like Chad and other Sudan
+
+165
+00:08:20,770 --> 00:08:23,830
+and so forth, but I don't have
+data on this particular country.
+
+166
+00:08:23,830 --> 00:08:27,450
+So just know that
+area maps are really
+
+167
+00:08:27,450 --> 00:08:34,090
+great for showing broad data
+strokes within the map feature.
+
+168
+00:08:34,090 --> 00:08:40,130
+And one of the
+disadvantages is that you
+
+169
+00:08:40,130 --> 00:08:42,409
+can't get into the
+level of detail
+
+170
+00:08:42,409 --> 00:08:44,750
+without really
+cluttering up this map.
+
+171
+00:08:44,750 --> 00:08:48,530
+So very broad pictures are
+really great for these field
+
+172
+00:08:48,530 --> 00:08:49,390
+or area maps.
+
+173
+00:08:49,390 --> 00:08:51,810
+And we're going to dive
+into the other map types
+
+174
+00:08:51,810 --> 00:08:53,970
+here in a moment.
+
+175
+00:08:53,970 --> 00:08:57,810
+Let's go ahead and look at
+the power of a symbol map
+
+176
+00:08:57,810 --> 00:09:01,470
+by going to this
+particular sheet.
+
+177
+00:09:01,470 --> 00:09:04,410
+One way that we can
+map geographic data
+
+178
+00:09:04,410 --> 00:09:05,990
+is using a symbol map.
+
+179
+00:09:05,990 --> 00:09:09,290
+So unlike a field or
+area map, a symbol map
+
+180
+00:09:09,290 --> 00:09:13,010
+doesn't rely on a map in
+the actual geographic area.
+
+181
+00:09:13,010 --> 00:09:14,770
+We don't have an
+outline that we fill
+
+182
+00:09:14,770 --> 00:09:18,290
+in, instead, we use individual
+symbols as the marks.
+
+183
+00:09:18,290 --> 00:09:20,130
+So this can be
+useful because we can
+
+184
+00:09:20,130 --> 00:09:22,810
+overlay additional
+information on top
+
+185
+00:09:22,810 --> 00:09:24,630
+of the geographic boundaries.
+
+186
+00:09:24,630 --> 00:09:27,130
+And so let's take a look
+at how we can do that.
+
+187
+00:09:27,130 --> 00:09:30,010
+We can just double
+click country again.
+
+188
+00:09:30,010 --> 00:09:32,830
+It looks like I've
+got these large sizes,
+
+189
+00:09:32,830 --> 00:09:35,730
+so I'm going to just make these
+smaller for you and for me
+
+190
+00:09:35,730 --> 00:09:37,070
+so we can see that.
+
+191
+00:09:37,070 --> 00:09:39,210
+Again, this is just
+like a scatter plot
+
+192
+00:09:39,210 --> 00:09:43,310
+where we have the two measures--
+the longitude and latitude.
+
+193
+00:09:43,310 --> 00:09:46,330
+And I've got all of my
+marks placed appropriately
+
+194
+00:09:46,330 --> 00:09:50,370
+based on that, those
+latitude and longitudes.
+
+195
+00:09:50,370 --> 00:09:55,080
+So we can modify
+this by changing
+
+196
+00:09:55,080 --> 00:09:57,640
+the size as I did before.
+
+197
+00:09:57,640 --> 00:10:00,560
+And you can do that
+by just increasing
+
+198
+00:10:00,560 --> 00:10:03,560
+that size, just like that.
+
+199
+00:10:03,560 --> 00:10:07,320
+I can also-- let me just
+show the filter here--
+
+200
+00:10:07,320 --> 00:10:08,120
+I can change.
+
+201
+00:10:11,880 --> 00:10:16,240
+Actually, that's not the
+filter I wanted to show.
+
+202
+00:10:16,240 --> 00:10:19,720
+So let me put a field.
+
+203
+00:10:19,720 --> 00:10:24,240
+Let me remove that filter,
+and instead let me--
+
+204
+00:10:24,240 --> 00:10:28,940
+so let me instead put
+on category on to color.
+
+205
+00:10:28,940 --> 00:10:31,880
+So we're going to add
+in some information.
+
+206
+00:10:31,880 --> 00:10:35,240
+And by doing that, let
+me just-- so right now
+
+207
+00:10:35,240 --> 00:10:37,880
+I could be on a circle
+or what have you,
+
+208
+00:10:37,880 --> 00:10:39,600
+and have different colors.
+
+209
+00:10:39,600 --> 00:10:43,220
+But I can change that
+marks to be a pie chart.
+
+210
+00:10:43,220 --> 00:10:46,100
+Now I'm not recommending this
+as a good design practice.
+
+211
+00:10:46,100 --> 00:10:48,280
+What I'm trying to
+show is how symbols
+
+212
+00:10:48,280 --> 00:10:50,060
+can be overlaid and be used.
+
+213
+00:10:50,060 --> 00:10:53,000
+So you'll notice, first
+of all, that these circles
+
+214
+00:10:53,000 --> 00:10:55,740
+are in the center of
+each of the countries.
+
+215
+00:10:55,740 --> 00:10:59,680
+Again, it's an overlay, so I can
+actually change some of those
+
+216
+00:10:59,680 --> 00:11:05,680
+to be different types, different
+sizes, different shapes here.
+
+217
+00:11:05,680 --> 00:11:08,100
+I can make them filled
+in or not filled in.
+
+218
+00:11:08,100 --> 00:11:12,300
+But one of the mark types I want
+to do is just do the pie chart.
+
+219
+00:11:12,300 --> 00:11:14,280
+So let's go ahead
+and Zoom in on this,
+
+220
+00:11:14,280 --> 00:11:16,640
+so that we can see
+what's going on.
+
+221
+00:11:16,640 --> 00:11:19,680
+I'm going to Zoom in
+here in Central America,
+
+222
+00:11:19,680 --> 00:11:24,480
+and I'm going to increase
+the size so we can see.
+
+223
+00:11:24,480 --> 00:11:27,520
+So here we see that all the
+pie charts are exactly the same
+
+224
+00:11:27,520 --> 00:11:30,180
+because it's just showing these
+three categories of furniture,
+
+225
+00:11:30,180 --> 00:11:32,440
+office supplies, and technology.
+
+226
+00:11:32,440 --> 00:11:34,780
+So we need to add a
+measure onto that.
+
+227
+00:11:34,780 --> 00:11:39,580
+And what I want to do is
+add Sales onto the angle.
+
+228
+00:11:39,580 --> 00:11:41,640
+Since I've got this
+pie chart, let me
+
+229
+00:11:41,640 --> 00:11:46,200
+actually just increase this size
+a bit more so we can see these.
+
+230
+00:11:46,200 --> 00:11:48,620
+And maybe I'll Zoom
+in a little bit.
+
+231
+00:11:48,620 --> 00:11:55,160
+Let me come back just
+Zoom in on this area here.
+
+232
+00:11:55,160 --> 00:12:00,260
+And so now we can begin to
+see that different regions,
+
+233
+00:12:00,260 --> 00:12:03,760
+different countries have
+different slices of the pie
+
+234
+00:12:03,760 --> 00:12:04,600
+chart.
+
+235
+00:12:04,600 --> 00:12:08,260
+So while this is not the best
+design principle nor outcome,
+
+236
+00:12:08,260 --> 00:12:10,760
+I do want to share
+with you and remind you
+
+237
+00:12:10,760 --> 00:12:15,200
+that symbol maps are a
+bit different, because you
+
+238
+00:12:15,200 --> 00:12:20,040
+can overlay information
+on top of that
+
+239
+00:12:20,040 --> 00:12:22,380
+and begin to show
+additional insights.
+
+240
+00:12:22,380 --> 00:12:26,720
+So symbol maps, they
+can be an excellent way
+
+241
+00:12:26,720 --> 00:12:31,600
+to visualize geographic data
+in a different kind of way.
+
+242
+00:12:31,600 --> 00:12:33,880
+Now let's take a
+look at heat maps,
+
+243
+00:12:33,880 --> 00:12:39,520
+and we will jump into
+the Heat Map tab here.
+
+244
+00:12:39,520 --> 00:12:44,200
+And heat maps are awesome
+because they can reveal patterns
+
+245
+00:12:44,200 --> 00:12:46,560
+or relative concentrations
+that might otherwise
+
+246
+00:12:46,560 --> 00:12:50,470
+be hidden due to the
+overlapping marks on a map.
+
+247
+00:12:50,470 --> 00:12:53,530
+And heat maps can also
+be called density maps,
+
+248
+00:12:53,530 --> 00:12:55,087
+so those are interchangeably.
+
+249
+00:12:55,087 --> 00:12:56,670
+And they're most
+effective when you're
+
+250
+00:12:56,670 --> 00:13:00,230
+working with a data set
+containing many data points
+
+251
+00:13:00,230 --> 00:13:01,787
+in a small geographic area.
+
+252
+00:13:01,787 --> 00:13:03,370
+So that's what we're
+going to do here.
+
+253
+00:13:03,370 --> 00:13:07,550
+We're going to actually use
+this hailstorm-damage data that
+
+254
+00:13:07,550 --> 00:13:08,490
+was brought in.
+
+255
+00:13:08,490 --> 00:13:12,070
+And what I want you to do is you
+can go ahead and double click
+
+256
+00:13:12,070 --> 00:13:16,070
+on Latitude and
+Longitude, and you
+
+257
+00:13:16,070 --> 00:13:20,510
+should have a map that comes up
+with Minnesota, Wisconsin, North
+
+258
+00:13:20,510 --> 00:13:23,610
+Dakota, South Dakota,
+all on this space.
+
+259
+00:13:23,610 --> 00:13:26,790
+And what we're going to do is
+just look at some Hail damage,
+
+260
+00:13:26,790 --> 00:13:30,150
+and determine if there
+are some areas that have
+
+261
+00:13:30,150 --> 00:13:33,287
+higher density of Hail damage.
+
+262
+00:13:33,287 --> 00:13:34,870
+So the way that we'll
+do that is we're
+
+263
+00:13:34,870 --> 00:13:43,870
+going to drag Street
+Address on to the Detail.
+
+264
+00:13:43,870 --> 00:13:47,030
+Oops.
+
+265
+00:13:47,030 --> 00:13:50,970
+If it comes up with a warning
+card, then just click Add All.
+
+266
+00:13:53,670 --> 00:13:55,390
+All members there.
+
+267
+00:13:55,390 --> 00:13:59,030
+So now you can see we've zoomed
+in on the specific data where
+
+268
+00:13:59,030 --> 00:14:01,610
+the street address was given
+for each one of these streets,
+
+269
+00:14:01,610 --> 00:14:04,470
+and you can see each one
+of those street addresses.
+
+270
+00:14:04,470 --> 00:14:08,250
+And you can also see that we've
+got some color added on to this.
+
+271
+00:14:08,250 --> 00:14:09,290
+So this was on density.
+
+272
+00:14:09,290 --> 00:14:11,390
+So if you're on
+automatic, right now
+
+273
+00:14:11,390 --> 00:14:13,470
+it might be showing all blue.
+
+274
+00:14:13,470 --> 00:14:15,750
+What I want you to do
+is drop down the menu
+
+275
+00:14:15,750 --> 00:14:19,270
+and then just go to the
+very bottom and hit Density.
+
+276
+00:14:19,270 --> 00:14:23,670
+In this you can begin to
+see that there is density.
+
+277
+00:14:23,670 --> 00:14:25,242
+Your color may
+not be this color.
+
+278
+00:14:25,242 --> 00:14:26,450
+I may have already done this.
+
+279
+00:14:26,450 --> 00:14:28,590
+You might see some
+orange to light.
+
+280
+00:14:28,590 --> 00:14:31,190
+This is where you would do
+it in the color marks card.
+
+281
+00:14:31,190 --> 00:14:34,710
+But you can select density
+multicolor light here,
+
+282
+00:14:34,710 --> 00:14:37,870
+and you can have it more
+intense or less intense
+
+283
+00:14:37,870 --> 00:14:40,170
+depending on what
+your purposes are.
+
+284
+00:14:40,170 --> 00:14:43,630
+So let's just do the
+intensity around 50%.
+
+285
+00:14:43,630 --> 00:14:46,343
+You can change the opacity
+of it, so make it clearer.
+
+286
+00:14:46,343 --> 00:14:48,260
+So if you're going to
+overlay something on top
+
+287
+00:14:48,260 --> 00:14:51,880
+or underneath it, let's go
+ahead and keep that to 100.
+
+288
+00:14:51,880 --> 00:14:56,540
+But you can begin to see that
+this particular zone was heavily
+
+289
+00:14:56,540 --> 00:15:00,660
+damaged by Hail, more
+so than other areas that
+
+290
+00:15:00,660 --> 00:15:02,380
+reported hail damage.
+
+291
+00:15:02,380 --> 00:15:07,040
+So we can add in more
+information for the tooltip.
+
+292
+00:15:07,040 --> 00:15:10,820
+I can put in the neighborhood
+on the tooltip here.
+
+293
+00:15:10,820 --> 00:15:14,820
+We can put the damage type on
+the tooltip and the reported
+
+294
+00:15:14,820 --> 00:15:16,420
+date on the tooltip.
+
+295
+00:15:16,420 --> 00:15:18,420
+So now can begin to--
+
+296
+00:15:18,420 --> 00:15:23,280
+let's go ahead and
+roll over to see that.
+
+297
+00:15:23,280 --> 00:15:26,980
+Looks like the Downtown
+West neighborhood
+
+298
+00:15:26,980 --> 00:15:29,700
+was hit the hardest, OK.
+
+299
+00:15:29,700 --> 00:15:31,420
+So there are some
+other neighborhoods
+
+300
+00:15:31,420 --> 00:15:35,360
+that had some, Lowry
+Hill and Loring park,
+
+301
+00:15:35,360 --> 00:15:39,080
+but definitely Downtown
+West was hit the hardest.
+
+302
+00:15:39,080 --> 00:15:43,680
+So this is how you're able to
+create the density or heat map.
+
+303
+00:15:43,680 --> 00:15:47,280
+Remember, you still have
+your longitude and latitude,
+
+304
+00:15:47,280 --> 00:15:49,140
+and what you need
+is a data set that
+
+305
+00:15:49,140 --> 00:15:52,940
+has lots of marks that
+overlay one another so
+
+306
+00:15:52,940 --> 00:15:57,940
+that you can create this chart
+type to be more of a density.
+
+307
+00:15:57,940 --> 00:15:58,520
+All right.
+
+308
+00:15:58,520 --> 00:16:03,075
+We've looked at a few
+different map and map types.
+
+309
+00:16:03,075 --> 00:16:04,700
+Let's look at some
+of the features that
+
+310
+00:16:04,700 --> 00:16:07,540
+are available in Tableau.
+
+311
+00:16:07,540 --> 00:16:10,140
+Here on the map-features
+sheet you'll
+
+312
+00:16:10,140 --> 00:16:13,900
+see a view of the lower 48.
+
+313
+00:16:13,900 --> 00:16:17,060
+And whenever you
+have the map, you'll
+
+314
+00:16:17,060 --> 00:16:18,660
+see that there's
+this tool bar that
+
+315
+00:16:18,660 --> 00:16:22,300
+comes up in the lower or
+the upper left corner.
+
+316
+00:16:22,300 --> 00:16:24,860
+And it has a couple of
+things you can Zoom in.
+
+317
+00:16:24,860 --> 00:16:27,400
+So if I click that,
+I can Zoom in,
+
+318
+00:16:27,400 --> 00:16:31,580
+and I can release that by
+clicking that Pin icon.
+
+319
+00:16:31,580 --> 00:16:36,800
+I can double click by zooming
+in and zooming out, OK.
+
+320
+00:16:36,800 --> 00:16:39,460
+And Recentering that,
+or I have the feature
+
+321
+00:16:39,460 --> 00:16:44,060
+where I have the ability
+to drag and drop to Zoom.
+
+322
+00:16:44,060 --> 00:16:45,940
+You can return back.
+
+323
+00:16:45,940 --> 00:16:50,860
+I can also position things
+and move things around.
+
+324
+00:16:50,860 --> 00:16:53,380
+I can also select items too.
+
+325
+00:16:53,380 --> 00:16:57,300
+OK, so if I wanted to select
+maybe this Southern California
+
+326
+00:16:57,300 --> 00:17:00,820
+region, I can actually--
+let me go back
+
+327
+00:17:00,820 --> 00:17:08,220
+and select that with the
+Selection tool again.
+
+328
+00:17:08,220 --> 00:17:13,420
+And if I had say keep only, see
+that there are 107 marks out
+
+329
+00:17:13,420 --> 00:17:18,940
+of 604, so if I had decide just
+to keep those only or in that
+
+330
+00:17:18,940 --> 00:17:21,099
+case, it looks like I selected--
+
+331
+00:17:21,099 --> 00:17:25,540
+let me go back here, actually.
+
+332
+00:17:25,540 --> 00:17:27,180
+So let me go back.
+
+333
+00:17:27,180 --> 00:17:32,260
+Let me reselect this to
+be this whole Baja region,
+
+334
+00:17:32,260 --> 00:17:34,420
+and I'm going to say 70.
+
+335
+00:17:34,420 --> 00:17:37,920
+And now that I've
+excluded everything else,
+
+336
+00:17:37,920 --> 00:17:39,320
+now I have 70 marks.
+
+337
+00:17:39,320 --> 00:17:45,640
+What this does, it reduces
+the load time for my data,
+
+338
+00:17:45,640 --> 00:17:49,490
+and so I can quickly
+get to this data
+
+339
+00:17:49,490 --> 00:17:51,990
+or have this data in the
+view, if I so choose.
+
+340
+00:17:51,990 --> 00:17:54,730
+Now notice what's happened
+on the Filters shelf
+
+341
+00:17:54,730 --> 00:17:58,730
+here is that it's added a
+filter called Inclusions.
+
+342
+00:17:58,730 --> 00:18:02,527
+And so if I want to return
+back to my main full map,
+
+343
+00:18:02,527 --> 00:18:04,110
+I can't just push
+this button anymore.
+
+344
+00:18:04,110 --> 00:18:06,150
+That's No longer an option.
+
+345
+00:18:06,150 --> 00:18:10,110
+I have to remove this
+filter from the map.
+
+346
+00:18:10,110 --> 00:18:12,570
+And then I can select that,
+and I can come back here.
+
+347
+00:18:12,570 --> 00:18:15,530
+So I could say, OK, I'm just
+going to focus on the Southern
+
+348
+00:18:15,530 --> 00:18:16,650
+region here.
+
+349
+00:18:16,650 --> 00:18:18,610
+I'm going to keep only those.
+
+350
+00:18:18,610 --> 00:18:22,690
+And now I've got
+that as a filter.
+
+351
+00:18:22,690 --> 00:18:25,250
+I can remove that to get back.
+
+352
+00:18:25,250 --> 00:18:27,890
+So a couple other features
+that you should just
+
+353
+00:18:27,890 --> 00:18:29,850
+be aware of within
+maps is that you
+
+354
+00:18:29,850 --> 00:18:34,530
+can select the Dropdown menu
+of maps and click Map options.
+
+355
+00:18:34,530 --> 00:18:39,530
+When you do that, you can also
+right click this on the map box
+
+356
+00:18:39,530 --> 00:18:40,570
+that comes up.
+
+357
+00:18:40,570 --> 00:18:45,470
+You can show map search,
+show layer options,
+
+358
+00:18:45,470 --> 00:18:50,230
+show the view toolbar, allow pan
+and zoom, and show map scale.
+
+359
+00:18:50,230 --> 00:18:57,650
+So let's just pretend that I
+am interested in let's go back
+
+360
+00:18:57,650 --> 00:19:01,370
+to this Baja region here.
+
+361
+00:19:01,370 --> 00:19:05,310
+Actually, let's Zoom in on that.
+
+362
+00:19:08,490 --> 00:19:12,090
+And versus excluding those
+67 marks or what have you,
+
+363
+00:19:12,090 --> 00:19:13,750
+I want to pin those, OK.
+
+364
+00:19:13,750 --> 00:19:18,930
+So in order to pin those,
+I go to my app Map options.
+
+365
+00:19:18,930 --> 00:19:22,390
+And I don't want to
+show the view Toolbar.
+
+366
+00:19:22,390 --> 00:19:25,830
+I want to remove that, so that
+I can't let my user change that.
+
+367
+00:19:25,830 --> 00:19:29,150
+So now that I've
+done that, oops.
+
+368
+00:19:29,150 --> 00:19:29,910
+Let's see.
+
+369
+00:19:34,250 --> 00:19:43,810
+Got the Toolbar selected
+still, so I'll deselect the Pan
+
+370
+00:19:43,810 --> 00:19:45,560
+and Zoom as well.
+
+371
+00:19:45,560 --> 00:19:46,860
+So then I'll close that out.
+
+372
+00:19:46,860 --> 00:19:48,640
+And now, I can't do anything--
+
+373
+00:19:48,640 --> 00:19:51,160
+I can't change, I
+can't go and look
+
+374
+00:19:51,160 --> 00:19:53,820
+at Utah's or
+Maine's information,
+
+375
+00:19:53,820 --> 00:19:55,500
+but I still have it available.
+
+376
+00:19:55,500 --> 00:19:57,173
+It's all of the marks.
+
+377
+00:19:57,173 --> 00:19:58,340
+But now I've just pinned it.
+
+378
+00:19:58,340 --> 00:20:00,000
+I don't have it as a filter.
+
+379
+00:20:00,000 --> 00:20:04,240
+Now to get back, I just
+need to select those
+
+380
+00:20:04,240 --> 00:20:07,840
+and then I can reselect that.
+
+381
+00:20:07,840 --> 00:20:14,120
+The other feature under
+the Map Options is Layers.
+
+382
+00:20:14,120 --> 00:20:16,980
+And that will pull up a dialog
+box here in the left-hand side.
+
+383
+00:20:16,980 --> 00:20:19,720
+And you can see that there are
+lots of layers to play with.
+
+384
+00:20:19,720 --> 00:20:25,000
+You can add in the Base,
+Terrain, Coastline, et cetera.
+
+385
+00:20:25,000 --> 00:20:30,160
+You can also choose different
+map varieties here with normal,
+
+386
+00:20:30,160 --> 00:20:32,300
+dark, you can add streets.
+
+387
+00:20:32,300 --> 00:20:35,680
+So I would definitely
+explore this and especially
+
+388
+00:20:35,680 --> 00:20:37,520
+as you're creating maps--
+
+389
+00:20:37,520 --> 00:20:40,320
+ways that you feel like
+would enhance your story.
+
+390
+00:20:40,320 --> 00:20:43,880
+And you can see here that there
+are all different kinds of map
+
+391
+00:20:43,880 --> 00:20:45,040
+layers here.
+
+392
+00:20:45,040 --> 00:20:47,960
+You also have some
+data that Tableau
+
+393
+00:20:47,960 --> 00:20:50,100
+has that you might be
+interested in using,
+
+394
+00:20:50,100 --> 00:20:55,760
+perhaps in your project where
+you could add in US households.
+
+395
+00:20:55,760 --> 00:21:00,020
+And so now it's giving that
+information based on State.
+
+396
+00:21:00,020 --> 00:21:01,960
+And you can do County zip code.
+
+397
+00:21:01,960 --> 00:21:03,900
+I believe this is the 2018.
+
+398
+00:21:03,900 --> 00:21:06,820
+So this is not the
+newest census data.
+
+399
+00:21:06,820 --> 00:21:08,600
+So if you want to
+have more recent data,
+
+400
+00:21:08,600 --> 00:21:10,460
+you'd have to bring
+that in yourself.
+
+401
+00:21:10,460 --> 00:21:16,900
+But you could leverage this
+and use that particular.
+
+402
+00:21:16,900 --> 00:21:19,500
+I'm going to do the four corner
+states kind of area here.
+
+403
+00:21:19,500 --> 00:21:23,200
+And you can begin to
+see how households
+
+404
+00:21:23,200 --> 00:21:27,280
+with this amount of individuals
+reflect in the color choices
+
+405
+00:21:27,280 --> 00:21:27,780
+here.
+
+406
+00:21:27,780 --> 00:21:28,800
+So there's lots of
+different things
+
+407
+00:21:28,800 --> 00:21:30,180
+that you can do within States.
+
+408
+00:21:30,180 --> 00:21:33,920
+Just remember that
+within the map toolbar,
+
+409
+00:21:33,920 --> 00:21:37,360
+you have the ability to
+pin it and to unpin it,
+
+410
+00:21:37,360 --> 00:21:41,240
+that you have filtering that you
+also have the map layers and map
+
+411
+00:21:41,240 --> 00:21:43,640
+options, and you
+have your map legend,
+
+412
+00:21:43,640 --> 00:21:45,260
+which is here to the right.
+
+413
+00:21:45,260 --> 00:21:47,543
+So lots to explore when
+it comes to customizing
+
+414
+00:21:47,543 --> 00:21:48,960
+map and their
+features, and I hope
+
+415
+00:21:48,960 --> 00:21:53,080
+that you'll have a chance to
+do that in future projects.
+
+416
+00:21:53,080 --> 00:21:56,360
+The last area I want to
+cover in this adventure guide
+
+417
+00:21:56,360 --> 00:21:59,160
+are images and
+plots, and something
+
+418
+00:21:59,160 --> 00:22:02,360
+that I feel that many of you
+might be interested in using
+
+419
+00:22:02,360 --> 00:22:04,100
+in your own projects.
+
+420
+00:22:04,100 --> 00:22:08,840
+So let's go to this
+final sheet in Tableau,
+
+421
+00:22:08,840 --> 00:22:13,000
+and you can map your data
+onto a custom image, or map,
+
+422
+00:22:13,000 --> 00:22:14,300
+or other background.
+
+423
+00:22:14,300 --> 00:22:18,100
+And you might consider
+doing a football field,
+
+424
+00:22:18,100 --> 00:22:22,880
+whether that be American or
+what the other part of the world
+
+425
+00:22:22,880 --> 00:22:25,340
+calls in terms of
+football or basketball,
+
+426
+00:22:25,340 --> 00:22:28,160
+or you could do grocery
+aisles or all sorts
+
+427
+00:22:28,160 --> 00:22:32,000
+of different kinds of images
+and maps to plot your data.
+
+428
+00:22:32,000 --> 00:22:34,260
+But remember, you can
+do this with any image.
+
+429
+00:22:34,260 --> 00:22:39,360
+And so let's click on the
+conference room data here.
+
+430
+00:22:39,360 --> 00:22:42,410
+So you can see room name,
+room number, phone number,
+
+431
+00:22:42,410 --> 00:22:44,870
+virtual capacity, et cetera.
+
+432
+00:22:44,870 --> 00:22:48,550
+And we want to click on--
+
+433
+00:22:48,550 --> 00:22:50,050
+let's see the right data.
+
+434
+00:22:50,050 --> 00:22:52,830
+So make sure that you're on
+this particular data field.
+
+435
+00:22:52,830 --> 00:22:57,630
+Let's move x onto
+columns and y onto rows.
+
+436
+00:22:57,630 --> 00:23:01,590
+So x onto columns
+and y onto rows.
+
+437
+00:23:01,590 --> 00:23:03,410
+OK, so this data
+that I've created
+
+438
+00:23:03,410 --> 00:23:05,285
+it's actually in
+an Excel worksheet,
+
+439
+00:23:05,285 --> 00:23:06,910
+and I've provided
+that worksheet if you
+
+440
+00:23:06,910 --> 00:23:08,330
+want to take a look at it.
+
+441
+00:23:08,330 --> 00:23:12,050
+But now I've got one mark
+on this scatter plot.
+
+442
+00:23:12,050 --> 00:23:17,670
+Remember that at the core you
+have symbol maps that are really
+
+443
+00:23:17,670 --> 00:23:18,450
+scatter plots.
+
+444
+00:23:18,450 --> 00:23:22,830
+And so I'm plotting this
+singular data right here.
+
+445
+00:23:22,830 --> 00:23:24,670
+And you should
+see a single mark.
+
+446
+00:23:24,670 --> 00:23:27,130
+And let's do a few
+formatting things.
+
+447
+00:23:27,130 --> 00:23:30,450
+I'm going to change this
+to be entire view here.
+
+448
+00:23:41,470 --> 00:23:45,350
+So then let's click
+on the map, and we are
+
+449
+00:23:45,350 --> 00:23:48,470
+going to do background images.
+
+450
+00:23:48,470 --> 00:23:51,390
+OK, so we're going
+to go ahead and just
+
+451
+00:23:51,390 --> 00:23:52,970
+click on this my Clean Data.
+
+452
+00:23:52,970 --> 00:23:55,110
+That was the original
+source that I had,
+
+453
+00:23:55,110 --> 00:23:57,410
+but you should have this
+dialog box that comes up.
+
+454
+00:23:57,410 --> 00:23:59,035
+And this is where
+I'm going to show you
+
+455
+00:23:59,035 --> 00:24:04,870
+how to place an image
+into your Tableau file.
+
+456
+00:24:04,870 --> 00:24:05,450
+All right.
+
+457
+00:24:05,450 --> 00:24:07,470
+So what we want
+to do is-- this is
+
+458
+00:24:07,470 --> 00:24:09,710
+where you can control all
+the images that you'll
+
+459
+00:24:09,710 --> 00:24:11,210
+have in your view.
+
+460
+00:24:11,210 --> 00:24:13,570
+If you so choose you,
+can edit remove them.
+
+461
+00:24:13,570 --> 00:24:15,430
+We're going to add an image.
+
+462
+00:24:15,430 --> 00:24:18,333
+And for this, what we'll
+do is we'll browse.
+
+463
+00:24:18,333 --> 00:24:19,750
+And you should
+have this somewhere
+
+464
+00:24:19,750 --> 00:24:21,990
+on your desktop downloaded.
+
+465
+00:24:21,990 --> 00:24:25,710
+And the file that you're going
+to use is the office layout,
+
+466
+00:24:25,710 --> 00:24:28,830
+and I've given the
+dimensions there.
+
+467
+00:24:28,830 --> 00:24:31,370
+And also notice it's a PNG file.
+
+468
+00:24:31,370 --> 00:24:34,110
+I found those to be the
+very best file types when
+
+469
+00:24:34,110 --> 00:24:35,790
+bringing them into Tableau.
+
+470
+00:24:35,790 --> 00:24:39,110
+But you'll see here I have
+the dimensions of 627 pixels
+
+471
+00:24:39,110 --> 00:24:41,210
+by 673 pixels.
+
+472
+00:24:41,210 --> 00:24:42,990
+Now, this is
+important because when
+
+473
+00:24:42,990 --> 00:24:44,630
+you're bringing in
+your images, it's
+
+474
+00:24:44,630 --> 00:24:47,630
+important to know
+either their dimensions
+
+475
+00:24:47,630 --> 00:24:51,790
+or you're going to set their
+dimensions by-- you could do 100
+
+476
+00:24:51,790 --> 00:24:56,050
+by 100, and then you could
+plot 50 by 25 or what have you.
+
+477
+00:24:56,050 --> 00:25:00,010
+So you are plotting your
+points specifically,
+
+478
+00:25:00,010 --> 00:25:03,990
+but I'm going to use what
+my actual dimensions are.
+
+479
+00:25:03,990 --> 00:25:08,150
+So the conference coordinates
+I'm actually going to put down
+
+480
+00:25:08,150 --> 00:25:09,190
+is--
+
+481
+00:25:09,190 --> 00:25:16,070
+I'm going to put in
+right here on the right.
+
+482
+00:25:16,070 --> 00:25:18,590
+I'll do the 627.
+
+483
+00:25:18,590 --> 00:25:27,150
+And then with the
+top, we'll do 673.
+
+484
+00:25:27,150 --> 00:25:27,650
+All right.
+
+485
+00:25:27,650 --> 00:25:29,710
+So after doing that
+so the 0, 0 just
+
+486
+00:25:29,710 --> 00:25:32,270
+so you know, that is
+going to be right here,
+
+487
+00:25:32,270 --> 00:25:34,370
+that I want this to be my 0, 0.
+
+488
+00:25:34,370 --> 00:25:37,870
+And then these are my dimensions
+out based upon my pixels
+
+489
+00:25:37,870 --> 00:25:41,760
+that I've created, and I created
+this image in Illustrator.
+
+490
+00:25:41,760 --> 00:25:43,620
+So I'm going to go
+ahead and click OK.
+
+491
+00:25:43,620 --> 00:25:45,760
+And then I'm going
+to click OK here.
+
+492
+00:25:48,864 --> 00:25:51,827
+OK, so I'll just click OK here.
+
+493
+00:25:51,827 --> 00:25:54,160
+Now one of the things you see
+is there's a lot going on.
+
+494
+00:25:54,160 --> 00:25:56,118
+We're going to clean some
+of this up right now.
+
+495
+00:25:56,118 --> 00:25:59,420
+So I'm going to just
+right-click on my axis
+
+496
+00:25:59,420 --> 00:26:01,460
+and remove the show header.
+
+497
+00:26:01,460 --> 00:26:04,460
+Click on that axis,
+remove the show header.
+
+498
+00:26:04,460 --> 00:26:07,860
+And now you see this image
+is really small compared
+
+499
+00:26:07,860 --> 00:26:09,480
+to this dot right here.
+
+500
+00:26:09,480 --> 00:26:13,340
+As soon as I take room name
+and place that on detail,
+
+501
+00:26:13,340 --> 00:26:18,820
+you'll see that has now
+resolved itself, OK.
+
+502
+00:26:18,820 --> 00:26:24,700
+So Here we can see that now in
+my file, if you look at my data
+
+503
+00:26:24,700 --> 00:26:29,100
+source, you'll be able to
+see that these numbers, these
+
+504
+00:26:29,100 --> 00:26:33,420
+coordinates, these xy
+coordinates match along
+
+505
+00:26:33,420 --> 00:26:34,280
+this axis.
+
+506
+00:26:34,280 --> 00:26:37,320
+So you can see here I've got the
+room name is called Buttercup.
+
+507
+00:26:37,320 --> 00:26:40,740
+These are all based
+on sweet treats.
+
+508
+00:26:40,740 --> 00:26:44,320
+And the x is 35
+and the y is 633.
+
+509
+00:26:44,320 --> 00:26:48,580
+And so they've been plotted
+against this background image
+
+510
+00:26:48,580 --> 00:26:51,940
+that I have just inserted, OK.
+
+511
+00:26:51,940 --> 00:26:54,040
+Now I could do a
+few things on here,
+
+512
+00:26:54,040 --> 00:26:58,780
+just like I've done before,
+is I can change the mark type
+
+513
+00:26:58,780 --> 00:27:01,820
+and I could change
+it to be circle.
+
+514
+00:27:01,820 --> 00:27:04,540
+So I can change that
+to be a solid circle.
+
+515
+00:27:04,540 --> 00:27:09,500
+I can also change the
+room capacity or the view
+
+516
+00:27:09,500 --> 00:27:15,140
+by doing the room capacity
+and put that on Color.
+
+517
+00:27:15,140 --> 00:27:18,500
+OK, so now I've got
+different colors
+
+518
+00:27:18,500 --> 00:27:21,860
+showing different
+room capacities here.
+
+519
+00:27:21,860 --> 00:27:25,120
+I can change all sorts of
+things within this view.
+
+520
+00:27:25,120 --> 00:27:29,740
+Again, remember this is overlaid
+on top of the map background,
+
+521
+00:27:29,740 --> 00:27:32,512
+or this image background here.
+
+522
+00:27:32,512 --> 00:27:34,220
+So one of the things
+I wanted to show you
+
+523
+00:27:34,220 --> 00:27:37,140
+is that there is
+one null value here.
+
+524
+00:27:37,140 --> 00:27:40,880
+There's one piece of my data
+that doesn't have a coordinate.
+
+525
+00:27:40,880 --> 00:27:43,260
+So if I go into my
+data source here
+
+526
+00:27:43,260 --> 00:27:53,220
+and I click on the conference
+room data, you'll notice that--
+
+527
+00:27:53,220 --> 00:27:58,500
+oops, I can't click on
+that conference room data.
+
+528
+00:27:58,500 --> 00:28:01,980
+You'll notice that
+here in the Almond Joy,
+
+529
+00:28:01,980 --> 00:28:05,240
+there are two nulls because I
+don't have the xy coordinate.
+
+530
+00:28:05,240 --> 00:28:08,560
+So I want to show you how
+you can get that in Tableau,
+
+531
+00:28:08,560 --> 00:28:10,620
+which is a pretty cool feature.
+
+532
+00:28:10,620 --> 00:28:13,580
+So say we want to add
+in the coordinates
+
+533
+00:28:13,580 --> 00:28:16,163
+for this particular
+conference room.
+
+534
+00:28:16,163 --> 00:28:17,580
+What I'll need to
+do is just right
+
+535
+00:28:17,580 --> 00:28:22,460
+click here in the view area,
+and then select Annotate.
+
+536
+00:28:22,460 --> 00:28:27,220
+So we're going to annotate
+a mark-- excuse me, point,
+
+537
+00:28:27,220 --> 00:28:28,620
+I meant to say that.
+
+538
+00:28:28,620 --> 00:28:32,040
+And then here you can see
+we've got the x and y,
+
+539
+00:28:32,040 --> 00:28:34,140
+so I'm going to just
+go ahead and click OK.
+
+540
+00:28:34,140 --> 00:28:37,250
+And you can see here I've
+got the xy coordinates
+
+541
+00:28:37,250 --> 00:28:40,670
+for this particular mark,
+but I can select that.
+
+542
+00:28:40,670 --> 00:28:43,690
+And then I can change
+that by putting it
+
+543
+00:28:43,690 --> 00:28:48,930
+right here, which now I can
+see that particular xy is
+
+544
+00:28:48,930 --> 00:28:51,850
+365 by 210.
+
+545
+00:28:51,850 --> 00:28:57,850
+So what you need to do is to
+go into the Excel worksheet,
+
+546
+00:28:57,850 --> 00:29:00,730
+to your actual
+data, and you need
+
+547
+00:29:00,730 --> 00:29:02,990
+to put in those
+new xy coordinates.
+
+548
+00:29:02,990 --> 00:29:08,690
+So x is 365, so I
+would type in 365.
+
+549
+00:29:08,690 --> 00:29:10,810
+And then y is 210.
+
+550
+00:29:10,810 --> 00:29:16,130
+So now I have found that data
+for the Almond Joy conference
+
+551
+00:29:16,130 --> 00:29:19,070
+room, and now I can save that.
+
+552
+00:29:19,070 --> 00:29:25,030
+So Control-S, or
+Command-S on a Mac.
+
+553
+00:29:25,030 --> 00:29:30,010
+And then I can go
+into my data, and I
+
+554
+00:29:30,010 --> 00:29:32,970
+can update my data just by
+hitting this little Update
+
+555
+00:29:32,970 --> 00:29:34,530
+icon here.
+
+556
+00:29:34,530 --> 00:29:39,350
+And then it will
+take a few moments,
+
+557
+00:29:39,350 --> 00:29:43,730
+my computer is slower
+when I'm also recording.
+
+558
+00:29:43,730 --> 00:29:49,850
+So you might also have this
+processing request dialog box
+
+559
+00:29:49,850 --> 00:29:51,470
+as it goes and finds the data.
+
+560
+00:29:51,470 --> 00:29:53,050
+And now it's updated.
+
+561
+00:29:53,050 --> 00:29:55,210
+So we can look at
+that here in the data.
+
+562
+00:29:55,210 --> 00:29:58,950
+I should-- oh, why
+am I not seeing that?
+
+563
+00:29:58,950 --> 00:29:59,790
+Let's see.
+
+564
+00:30:09,410 --> 00:30:11,290
+Let's see.
+
+565
+00:30:11,290 --> 00:30:13,590
+Hopefully it's
+connected to the right--
+
+566
+00:30:16,930 --> 00:30:21,770
+Excel sheet and not
+something else on my--
+
+567
+00:30:21,770 --> 00:30:23,870
+just double check
+I've saved that.
+
+568
+00:30:27,690 --> 00:30:29,990
+So I was having some
+data connection problems,
+
+569
+00:30:29,990 --> 00:30:33,430
+so I actually had to re-add
+this in instead of refreshing.
+
+570
+00:30:33,430 --> 00:30:34,685
+So I'm not quite sure.
+
+571
+00:30:34,685 --> 00:30:37,060
+And hopefully you're not having
+that problem on your end.
+
+572
+00:30:37,060 --> 00:30:40,000
+But if you are, you may
+need to delete and then add
+
+573
+00:30:40,000 --> 00:30:41,780
+that conference
+room data back in.
+
+574
+00:30:41,780 --> 00:30:44,040
+You should be able to
+just hit the Refresh.
+
+575
+00:30:44,040 --> 00:30:45,500
+My connections were off.
+
+576
+00:30:45,500 --> 00:30:48,640
+But in any event, if I go
+back to the images now,
+
+577
+00:30:48,640 --> 00:30:51,500
+actually I can look in
+the data source itself.
+
+578
+00:30:51,500 --> 00:30:56,600
+And you can see now that that
+X, Y coordinate has been added,
+
+579
+00:30:56,600 --> 00:30:59,840
+and then also in the
+images that has refreshed,
+
+580
+00:30:59,840 --> 00:31:02,560
+and you can see that
+Almond Joy has been added,
+
+581
+00:31:02,560 --> 00:31:04,920
+and there's no
+longer a null value.
+
+582
+00:31:04,920 --> 00:31:09,600
+So to remove that I can just
+right click that and Remove
+
+583
+00:31:09,600 --> 00:31:10,880
+that annotation.
+
+584
+00:31:10,880 --> 00:31:12,140
+It's no longer there.
+
+585
+00:31:12,140 --> 00:31:15,480
+But I could find any kind
+of coordinates anywhere
+
+586
+00:31:15,480 --> 00:31:16,140
+on this map.
+
+587
+00:31:16,140 --> 00:31:19,400
+So a way to work back is
+you might bring in an image
+
+588
+00:31:19,400 --> 00:31:21,800
+and then begin to
+place those coordinates
+
+589
+00:31:21,800 --> 00:31:23,320
+wherever you see fit.
+
+590
+00:31:23,320 --> 00:31:25,200
+So hopefully this
+adventure guide
+
+591
+00:31:25,200 --> 00:31:29,280
+has given you a window into the
+many capabilities of the map
+
+592
+00:31:29,280 --> 00:31:31,440
+features within Tableau,
+and I look forward
+
+593
+00:31:31,440 --> 00:31:34,390
+to seeing you apply
+them in your project.

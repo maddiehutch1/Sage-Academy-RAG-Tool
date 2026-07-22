@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>474720372 - 1_cuecb8vq - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.640" end="00:00:02.920" tts:direction="ltr">For this power up,</p>
+        <p begin="00:00:02.920" end="00:00:07.740" tts:direction="ltr">we're going to focus on just maps, basic
+<br />maps.</p>
+        <p begin="00:00:07.740" end="00:00:10.940" tts:direction="ltr">I'm going to go ahead and connect to some
+<br />data,</p>
+        <p begin="00:00:10.940" end="00:00:13.600" tts:direction="ltr">and I'm going to just use the superstore.</p>
+        <p begin="00:00:13.600" end="00:00:15.580" tts:direction="ltr">But in order to be consistent,</p>
+        <p begin="00:00:15.580" end="00:00:17.500" tts:direction="ltr">I've got this Excel file.</p>
+        <p begin="00:00:17.500" end="00:00:23.180" tts:direction="ltr">But there is the ability to use the
+<br />superstore dataset that's within Tableau.</p>
+        <p begin="00:00:23.180" end="00:00:26.280" tts:direction="ltr">I'm going to go ahead and drag orders onto
+<br />the view,</p>
+        <p begin="00:00:26.280" end="00:00:29.950" tts:direction="ltr">and that is the data that we'll be using.</p>
+        <p begin="00:00:29.950" end="00:00:38.560" tts:direction="ltr">I'm going to jump to sheet number one and
+<br />begin my exploration of maps.</p>
+        <p begin="00:00:38.560" end="00:00:42.800" tts:direction="ltr">There is an AG around maps that you can
+<br />learn more about.</p>
+        <p begin="00:00:42.800" end="00:00:45.640" tts:direction="ltr">But I want to show you a few ways to
+<br />customize</p>
+        <p begin="00:00:45.640" end="00:00:48.960" tts:direction="ltr">it and just to review some of those
+<br />concepts.</p>
+        <p begin="00:00:48.960" end="00:00:55.500" tts:direction="ltr">You have to make sure that you have items
+<br />that have geographic notations here.</p>
+        <p begin="00:00:55.500" end="00:00:58.020" tts:direction="ltr">In the data source, if you scroll over,</p>
+        <p begin="00:00:58.020" end="00:00:59.500" tts:direction="ltr">you should be able to see those.</p>
+        <p begin="00:00:59.500" end="00:01:03.300" tts:direction="ltr">Let me just scroll I can grab that bar,</p>
+        <p begin="00:01:03.300" end="00:01:06.480" tts:direction="ltr">you can see that orders is by country and
+<br />region,</p>
+        <p begin="00:01:06.480" end="00:01:09.000" tts:direction="ltr">and it has that icon of the globe.</p>
+        <p begin="00:01:09.000" end="00:01:11.760" tts:direction="ltr">Now I can change that if I need to right
+<br />here</p>
+        <p begin="00:01:11.760" end="00:01:15.160" tts:direction="ltr">within the data pane or me the data
+<br />source,</p>
+        <p begin="00:01:15.160" end="00:01:17.180" tts:direction="ltr">or I can jump to my sheet,</p>
+        <p begin="00:01:17.180" end="00:01:23.115" tts:direction="ltr">and I can actually go in and I can change
+<br />that here as well.</p>
+        <p begin="00:01:23.115" end="00:01:26.330" tts:direction="ltr">You'll notice that there are different
+<br />geographic roles.</p>
+        <p begin="00:01:26.330" end="00:01:29.950" tts:direction="ltr">We've got the Zip code, state, or
+<br />province.</p>
+        <p begin="00:01:29.950" end="00:01:34.770" tts:direction="ltr">We have something for Europe, county and
+<br />country.</p>
+        <p begin="00:01:34.770" end="00:01:37.790" tts:direction="ltr">Make sure you pay attention to both of
+<br />those.</p>
+        <p begin="00:01:37.790" end="00:01:40.270" tts:direction="ltr">Congressional districts, I've never used
+<br />before,</p>
+        <p begin="00:01:40.270" end="00:01:43.030" tts:direction="ltr">but potentially might be used for the
+<br />upcoming election,</p>
+        <p begin="00:01:43.030" end="00:01:46.110" tts:direction="ltr">City, area code, airport, and none.</p>
+        <p begin="00:01:46.110" end="00:01:51.590" tts:direction="ltr">I think Maps is one of the most powerful
+<br />tools in Tableau,</p>
+        <p begin="00:01:51.590" end="00:01:53.730" tts:direction="ltr">but let's start making a map.</p>
+        <p begin="00:01:53.730" end="00:02:00.350" tts:direction="ltr">We're going to create your first map by
+<br />going to.</p>
+        <p begin="00:02:00.350" end="00:02:02.350" tts:direction="ltr">Let me just double check.</p>
+        <p begin="00:02:02.350" end="00:02:05.430" tts:direction="ltr">I think I'm going to do country first.</p>
+        <p begin="00:02:05.430" end="00:02:09.110" tts:direction="ltr">Let's go ahead and double click on
+<br />Country.</p>
+        <p begin="00:02:09.250" end="00:02:12.010" tts:direction="ltr">By doing that, you'll see that I've got</p>
+        <p begin="00:02:12.010" end="00:02:14.830" tts:direction="ltr">two countries represented in my dataset,</p>
+        <p begin="00:02:14.830" end="00:02:16.750" tts:direction="ltr">and I'm going to just zoom out,</p>
+        <p begin="00:02:16.750" end="00:02:19.770" tts:direction="ltr">so we can see those, and there are two
+<br />dots.</p>
+        <p begin="00:02:19.770" end="00:02:23.190" tts:direction="ltr">Now, you'll say, Coach wop a what's going
+<br />on here,</p>
+        <p begin="00:02:23.190" end="00:02:26.370" tts:direction="ltr">basically right now, it's an automatic map</p>
+        <p begin="00:02:26.370" end="00:02:29.730" tts:direction="ltr">and it's showing the center of that
+<br />location.</p>
+        <p begin="00:02:29.730" end="00:02:33.970" tts:direction="ltr">If I were to change that to a D two and
+<br />actual map,</p>
+        <p begin="00:02:33.970" end="00:02:36.410" tts:direction="ltr">you'll see now that I've got those filled
+<br />in.</p>
+        <p begin="00:02:36.410" end="00:02:41.290" tts:direction="ltr">Now they're the same color because I
+<br />haven't given any of dimension.</p>
+        <p begin="00:02:41.290" end="00:02:45.905" tts:direction="ltr">Once I add a dimension like profit onto
+<br />color,</p>
+        <p begin="00:02:45.905" end="00:02:51.640" tts:direction="ltr">then you'll see that the United States is
+<br />more profitable than Canada.</p>
+        <p begin="00:02:51.680" end="00:02:59.560" tts:direction="ltr">Let's go ahead and call this very first
+<br />one a profit by country.</p>
+        <p begin="00:02:59.840" end="00:03:02.520" tts:direction="ltr">Let's go to make another one,</p>
+        <p begin="00:03:02.520" end="00:03:04.420" tts:direction="ltr">and we're going to do the same thing,</p>
+        <p begin="00:03:04.420" end="00:03:06.280" tts:direction="ltr">but we're going to do it by state.</p>
+        <p begin="00:03:06.280" end="00:03:08.820" tts:direction="ltr">I'm going to find that icon for state,</p>
+        <p begin="00:03:08.820" end="00:03:10.470" tts:direction="ltr">and I'm going to double click it.</p>
+        <p begin="00:03:10.470" end="00:03:14.580" tts:direction="ltr">Now again, we've just done the automatic
+<br />type.</p>
+        <p begin="00:03:14.580" end="00:03:19.200" tts:direction="ltr">If I change that from automatic to the
+<br />field,</p>
+        <p begin="00:03:19.200" end="00:03:22.140" tts:direction="ltr">then you'll see that I've got all of those
+<br />colors.</p>
+        <p begin="00:03:22.140" end="00:03:26.780" tts:direction="ltr">But there are no differences because I'm
+<br />just denoting that there's states.</p>
+        <p begin="00:03:26.780" end="00:03:32.200" tts:direction="ltr">What do I have to do? I have to again add
+<br />in me, that's a measure.</p>
+        <p begin="00:03:32.200" end="00:03:34.000" tts:direction="ltr">I spoke wrong before.</p>
+        <p begin="00:03:34.000" end="00:03:37.800" tts:direction="ltr">You need to bring in a measure to create
+<br />some granularity.</p>
+        <p begin="00:03:37.800" end="00:03:46.890" tts:direction="ltr">Now you can see that Texas is not as
+<br />profitable as New York or California.</p>
+        <p begin="00:03:46.890" end="00:03:51.260" tts:direction="ltr">You'll notice here, I don't have Canada in
+<br />here. I have unknown.</p>
+        <p begin="00:03:51.260" end="00:03:53.680" tts:direction="ltr">If I click on Unknowns, if you ever have
+<br />that,</p>
+        <p begin="00:03:53.680" end="00:03:58.160" tts:direction="ltr">you can go to edit locations and it will
+<br />show what you're missing.</p>
+        <p begin="00:03:58.160" end="00:04:01.660" tts:direction="ltr">Now, if I change that also to Canada,</p>
+        <p begin="00:04:01.660" end="00:04:05.500" tts:direction="ltr">I can go through there and do that, that
+<br />can update.</p>
+        <p begin="00:04:05.500" end="00:04:08.880" tts:direction="ltr">The other thing I can do is I can put
+<br />country onto filters,</p>
+        <p begin="00:04:08.880" end="00:04:11.420" tts:direction="ltr">and I can just select the United States.</p>
+        <p begin="00:04:11.420" end="00:04:14.240" tts:direction="ltr">Once that happens, then those are gone.</p>
+        <p begin="00:04:14.240" end="00:04:20.320" tts:direction="ltr">Okay? If I want to show Canada in there,
+<br />let me take that off.</p>
+        <p begin="00:04:20.320" end="00:04:22.940" tts:direction="ltr">What I can do is I can take country onto</p>
+        <p begin="00:04:22.940" end="00:04:26.940" tts:direction="ltr">detail and now I'm showing and that has
+<br />removed.</p>
+        <p begin="00:04:26.940" end="00:04:29.060" tts:direction="ltr">A couple of different ways I can filter
+<br />out,</p>
+        <p begin="00:04:29.060" end="00:04:32.100" tts:direction="ltr">or I can ensure that I've got that detail
+<br />on there</p>
+        <p begin="00:04:32.100" end="00:04:35.900" tts:direction="ltr">that will show those measures.</p>
+        <p begin="00:04:35.900" end="00:04:42.560" tts:direction="ltr">We're going to call this one profit by
+<br />state or province.</p>
+        <p begin="00:04:42.940" end="00:04:47.900" tts:direction="ltr">Since I have Canada in there.</p>
+        <p begin="00:04:47.900" end="00:04:56.620" tts:direction="ltr">Now the next one that we're going to do is
+<br />we're going to do it by City.</p>
+        <p begin="00:04:56.620" end="00:05:02.080" tts:direction="ltr">Let's go ahead and go to our icon for
+<br />City. Right up here.</p>
+        <p begin="00:05:02.080" end="00:05:04.660" tts:direction="ltr">I'm going to double click that you</p>
+        <p begin="00:05:04.660" end="00:05:08.220" tts:direction="ltr">see something like this where I've got all
+<br />those dots located.</p>
+        <p begin="00:05:08.220" end="00:05:17.760" tts:direction="ltr">What I can do now is I can add sales on to
+<br />size.</p>
+        <p begin="00:05:17.760" end="00:05:22.720" tts:direction="ltr">When I do that, you can see that I've got
+<br />some cities that have higher sales.</p>
+        <p begin="00:05:22.720" end="00:05:26.380" tts:direction="ltr">If I change that by maybe clicking one
+<br />more up,</p>
+        <p begin="00:05:26.380" end="00:05:28.120" tts:direction="ltr">you can see those are larger.</p>
+        <p begin="00:05:28.120" end="00:05:31.860" tts:direction="ltr">I can go into the color and I can reduce
+<br />the opacity,</p>
+        <p begin="00:05:31.860" end="00:05:35.100" tts:direction="ltr">which allows me to see through some of
+<br />that.</p>
+        <p begin="00:05:35.100" end="00:05:37.460" tts:direction="ltr">That might be one way to think about that.</p>
+        <p begin="00:05:37.460" end="00:05:41.890" tts:direction="ltr">Another thing I might want to do is add
+<br />profit onto color.</p>
+        <p begin="00:05:41.890" end="00:05:45.120" tts:direction="ltr">Because now I have a little bit of that
+<br />diverging chart.</p>
+        <p begin="00:05:45.120" end="00:05:48.000" tts:direction="ltr">I think I need to tick that up a little
+<br />bit more.</p>
+        <p begin="00:05:48.000" end="00:05:50.920" tts:direction="ltr">This is where it gets a little tricky.</p>
+        <p begin="00:05:50.920" end="00:05:54.040" tts:direction="ltr">How to show these properly.</p>
+        <p begin="00:05:54.200" end="00:06:01.505" tts:direction="ltr">Another thing that you might want to do is
+<br />we can add state in here.</p>
+        <p begin="00:06:01.505" end="00:06:04.570" tts:direction="ltr">We can put that on detail.</p>
+        <p begin="00:06:04.570" end="00:06:10.050" tts:direction="ltr">We're going to add that layer in and we
+<br />can do that country on detail,</p>
+        <p begin="00:06:10.050" end="00:06:13.130" tts:direction="ltr">and I'll add in those additional marks.</p>
+        <p begin="00:06:13.130" end="00:06:16.930" tts:direction="ltr">Now, if I want to have an area that I want
+<br />to exclude,</p>
+        <p begin="00:06:16.930" end="00:06:18.530" tts:direction="ltr">I can just select that.</p>
+        <p begin="00:06:18.530" end="00:06:20.030" tts:direction="ltr">Actually, I can exclude that,</p>
+        <p begin="00:06:20.030" end="00:06:22.210" tts:direction="ltr">and those will be placed into the filter,</p>
+        <p begin="00:06:22.210" end="00:06:26.310" tts:direction="ltr">and I can just focus on that particular
+<br />area. I want everything.</p>
+        <p begin="00:06:26.310" end="00:06:28.670" tts:direction="ltr">Now, just as a little bit of a refresh,</p>
+        <p begin="00:06:28.670" end="00:06:31.190" tts:direction="ltr">if I go if I have</p>
+        <p begin="00:06:31.190" end="00:06:37.260" tts:direction="ltr">a user who wants to look at something and
+<br />close up and they zoom in.</p>
+        <p begin="00:06:37.260" end="00:06:42.470" tts:direction="ltr">And then they want to go back and see the
+<br />entire United States.</p>
+        <p begin="00:06:42.470" end="00:06:48.910" tts:direction="ltr">Just go ahead and hit that pushpin icon
+<br />and that will zoom back out.</p>
+        <p begin="00:06:48.910" end="00:06:50.950" tts:direction="ltr">Another thing you can do is up here,</p>
+        <p begin="00:06:50.950" end="00:06:52.790" tts:direction="ltr">you can push that push pin.</p>
+        <p begin="00:06:52.790" end="00:06:59.450" tts:direction="ltr">Let's say I'm going to I'm holding down
+<br />the shift key so I can pan over.</p>
+        <p begin="00:06:59.450" end="00:07:02.970" tts:direction="ltr">I'm looking here at the State of
+<br />Washington.</p>
+        <p begin="00:07:02.970" end="00:07:05.490" tts:direction="ltr">Let me just go back here, looking at that.</p>
+        <p begin="00:07:05.490" end="00:07:08.450" tts:direction="ltr">Once I push that push pin, that will
+<br />reset.</p>
+        <p begin="00:07:08.450" end="00:07:12.930" tts:direction="ltr">If I don't want my users to have that
+<br />capability,</p>
+        <p begin="00:07:12.930" end="00:07:16.590" tts:direction="ltr">I can go into Map and do MAP options,</p>
+        <p begin="00:07:16.590" end="00:07:21.430" tts:direction="ltr">and you can see here that I can disable
+<br />allow pan in Zoom,</p>
+        <p begin="00:07:21.430" end="00:07:24.870" tts:direction="ltr">that will remove that ability to plus and
+<br />minus.</p>
+        <p begin="00:07:24.870" end="00:07:28.130" tts:direction="ltr">I can also remove that toolbar,</p>
+        <p begin="00:07:28.130" end="00:07:30.250" tts:direction="ltr">but let's keep the toolbar in for now</p>
+        <p begin="00:07:30.250" end="00:07:33.510" tts:direction="ltr">because another really great feature is
+<br />the search key.</p>
+        <p begin="00:07:33.510" end="00:07:36.790" tts:direction="ltr">I might put in, let's put Salt Lake City.</p>
+        <p begin="00:07:36.790" end="00:07:41.870" tts:direction="ltr">It will find even though there's no mark
+<br />on Salt Lake City,</p>
+        <p begin="00:07:41.870" end="00:07:44.270" tts:direction="ltr">Tea knows where that is located.</p>
+        <p begin="00:07:44.270" end="00:07:46.290" tts:direction="ltr">I can say, there's no sales,</p>
+        <p begin="00:07:46.290" end="00:07:48.010" tts:direction="ltr">nothing happening in Salt Lake City.</p>
+        <p begin="00:07:48.010" end="00:07:51.270" tts:direction="ltr">I can hit that push pin back and it will
+<br />return.</p>
+        <p begin="00:07:51.270" end="00:07:55.890" tts:direction="ltr">That's a really cool feature that is great
+<br />to use.</p>
+        <p begin="00:07:55.890" end="00:08:04.410" tts:direction="ltr">I'm going to go ahead and name this one
+<br />sales and profit by City.</p>
+        <p begin="00:08:05.370" end="00:08:11.170" tts:direction="ltr">Now we're going to look at the map layers.
+<br />We'll write another one.</p>
+        <p begin="00:08:11.170" end="00:08:14.050" tts:direction="ltr">We're going to go ahead and call this map
+<br />layers,</p>
+        <p begin="00:08:14.050" end="00:08:20.930" tts:direction="ltr">and we will bring those state back on
+<br />there. I'll double click that.</p>
+        <p begin="00:08:21.850" end="00:08:32.410" tts:direction="ltr">Let's go ahead and We're going to actually
+<br />create a little bit of a hierarchy.</p>
+        <p begin="00:08:32.410" end="00:08:34.910" tts:direction="ltr">In the region here,</p>
+        <p begin="00:08:34.910" end="00:08:38.090" tts:direction="ltr">if I select region,</p>
+        <p begin="00:08:38.090" end="00:08:46.790" tts:direction="ltr">then I can actually I I select region and
+<br />I do a drop down,</p>
+        <p begin="00:08:46.790" end="00:08:50.590" tts:direction="ltr">I can go to geographic role.</p>
+        <p begin="00:08:50.590" end="00:08:56.850" tts:direction="ltr">Let me just does that not want to I'm
+<br />having some problems.</p>
+        <p begin="00:08:56.850" end="00:09:03.930" tts:direction="ltr">If I go to geographic role and I do create
+<br />from and I do country in region.</p>
+        <p begin="00:09:03.930" end="00:09:08.870" tts:direction="ltr">Then you can see I'm starting to create my
+<br />hierarchy,</p>
+        <p begin="00:09:08.870" end="00:09:13.290" tts:direction="ltr">and I can bring in a city below here,</p>
+        <p begin="00:09:13.290" end="00:09:17.990" tts:direction="ltr">I can duplicate state above there.</p>
+        <p begin="00:09:17.990" end="00:09:20.870" tts:direction="ltr">Now, one of the great things is I can just
+<br />keep</p>
+        <p begin="00:09:20.870" end="00:09:23.490" tts:direction="ltr">pushing and drilling down within the marks
+<br />card.</p>
+        <p begin="00:09:23.490" end="00:09:25.010" tts:direction="ltr">Do you see how I've got that?</p>
+        <p begin="00:09:25.010" end="00:09:28.250" tts:direction="ltr">If I want to remove that, I can take that
+<br />off.</p>
+        <p begin="00:09:28.250" end="00:09:31.790" tts:direction="ltr">Now I've got that ability to drill down.</p>
+        <p begin="00:09:32.240" end="00:09:35.360" tts:direction="ltr">Now I wanted to talk about map layers,</p>
+        <p begin="00:09:35.360" end="00:09:39.160" tts:direction="ltr">which can be found either by right
+<br />clicking,</p>
+        <p begin="00:09:39.160" end="00:09:44.080" tts:direction="ltr">and you should be able to do background
+<br />layers or here up at the top,</p>
+        <p begin="00:09:44.080" end="00:09:46.440" tts:direction="ltr">you can click down background layers.</p>
+        <p begin="00:09:46.440" end="00:09:50.460" tts:direction="ltr">You'll notice here that you can wash out
+<br />completely,</p>
+        <p begin="00:09:50.460" end="00:09:53.320" tts:direction="ltr">so I can remove everything except for
+<br />those marks.</p>
+        <p begin="00:09:53.320" end="00:09:56.420" tts:direction="ltr">I can also change some of the background
+<br />layers</p>
+        <p begin="00:09:56.420" end="00:09:59.800" tts:direction="ltr">by removing them, adding them on.</p>
+        <p begin="00:09:59.800" end="00:10:03.155" tts:direction="ltr">Depends on what you're after.</p>
+        <p begin="00:10:03.155" end="00:10:06.530" tts:direction="ltr">One of the things that I like to do is</p>
+        <p begin="00:10:06.530" end="00:10:10.750" tts:direction="ltr">to maybe I'm just want to focus in on the
+<br />US.</p>
+        <p begin="00:10:10.750" end="00:10:13.170" tts:direction="ltr">What I want to do here is I'm going to
+<br />take</p>
+        <p begin="00:10:13.170" end="00:10:21.790" tts:direction="ltr">my country and put that on here and I'm
+<br />going to just do the US.</p>
+        <p begin="00:10:22.910" end="00:10:26.870" tts:direction="ltr">Then I want to</p>
+        <p begin="00:10:28.470" end="00:10:35.890" tts:direction="ltr">actually go into my map layers for this
+<br />map,</p>
+        <p begin="00:10:35.890" end="00:10:38.950" tts:direction="ltr">and I'm going to do my background layers.</p>
+        <p begin="00:10:38.950" end="00:10:41.350" tts:direction="ltr">I'm going to wash all of this out.</p>
+        <p begin="00:10:41.590" end="00:10:47.290" tts:direction="ltr">Now what I want to do is I'm going to go
+<br />ahead and bring state and province.</p>
+        <p begin="00:10:47.290" end="00:10:51.750" tts:direction="ltr">I'm going to drag that into the view and
+<br />you see it says add a mark layer.</p>
+        <p begin="00:10:51.750" end="00:10:56.010" tts:direction="ltr">I'm going to drop that on and you'll see
+<br />that now I've got the city,</p>
+        <p begin="00:10:56.010" end="00:10:58.630" tts:direction="ltr">which I had before and the state.</p>
+        <p begin="00:10:58.630" end="00:11:03.590" tts:direction="ltr">What I want to do is I want to actually
+<br />change the way that looks.</p>
+        <p begin="00:11:03.590" end="00:11:07.030" tts:direction="ltr">I'm going to go into my state,</p>
+        <p begin="00:11:07.030" end="00:11:09.510" tts:direction="ltr">and I'm going to go into color,</p>
+        <p begin="00:11:09.510" end="00:11:13.510" tts:direction="ltr">and I want to create a background an
+<br />outline.</p>
+        <p begin="00:11:13.510" end="00:11:15.090" tts:direction="ltr">That's my marks.</p>
+        <p begin="00:11:15.090" end="00:11:18.430" tts:direction="ltr">Let me actually go back hops.</p>
+        <p begin="00:11:20.070" end="00:11:22.790" tts:direction="ltr">L et me see what I'm doing here.</p>
+        <p begin="00:11:22.790" end="00:11:24.870" tts:direction="ltr">I want to go into from automatic,</p>
+        <p begin="00:11:24.870" end="00:11:28.030" tts:direction="ltr">I want to go into maps.</p>
+        <p begin="00:11:28.510" end="00:11:34.430" tts:direction="ltr">Now do you see if I go into color and I
+<br />wash those all out.</p>
+        <p begin="00:11:34.430" end="00:11:38.850" tts:direction="ltr">There's nothing there, and then I can have
+<br />a border of whatever color I want.</p>
+        <p begin="00:11:38.850" end="00:11:43.630" tts:direction="ltr">Maybe I want a green border or an orange
+<br />border, you can see that.</p>
+        <p begin="00:11:43.630" end="00:11:49.210" tts:direction="ltr">Now, what if I want to have these circles
+<br />in front of my borders,</p>
+        <p begin="00:11:49.210" end="00:11:53.450" tts:direction="ltr">I can just drag City in the marks card
+<br />above state,</p>
+        <p begin="00:11:53.450" end="00:11:55.490" tts:direction="ltr">and now those are up there.</p>
+        <p begin="00:11:55.490" end="00:11:57.830" tts:direction="ltr">Again, I can add on maybe features,</p>
+        <p begin="00:11:57.830" end="00:12:00.450" tts:direction="ltr">maybe I want to do profit color,</p>
+        <p begin="00:12:00.450" end="00:12:05.050" tts:direction="ltr">I want to do sales on size or something to
+<br />that effect,</p>
+        <p begin="00:12:05.050" end="00:12:06.550" tts:direction="ltr">that didn't do actually anything.</p>
+        <p begin="00:12:06.550" end="00:12:10.170" tts:direction="ltr">But what that does is it gives you an
+<br />opportunity to see all the states,</p>
+        <p begin="00:12:10.170" end="00:12:13.690" tts:direction="ltr">even though it looks like every state is
+<br />represented here,</p>
+        <p begin="00:12:13.690" end="00:12:16.490" tts:direction="ltr">but now I have this cleaner view.</p>
+        <p begin="00:12:16.490" end="00:12:19.390" tts:direction="ltr">We using those map layers.</p>
+        <p begin="00:12:20.070" end="00:12:26.300" tts:direction="ltr">One last thing that might be helpful.</p>
+        <p begin="00:12:26.300" end="00:12:34.440" tts:direction="ltr">I can add in or I can change that view for
+<br />that city there,</p>
+        <p begin="00:12:34.440" end="00:12:44.500" tts:direction="ltr">and I can I can probably even add profit
+<br />on to color.</p>
+        <p begin="00:12:44.540" end="00:12:47.440" tts:direction="ltr">I'm not quite sure that's working.</p>
+        <p begin="00:12:47.440" end="00:12:51.040" tts:direction="ltr">Sales on size.</p>
+        <p begin="00:12:51.040" end="00:12:58.180" tts:direction="ltr">I don't want to do that. I'm just going to
+<br />put on my state and province.</p>
+        <p begin="00:12:58.180" end="00:13:01.380" tts:direction="ltr">Let me go back here so I can make sure
+<br />that's good.</p>
+        <p begin="00:13:01.380" end="00:13:07.940" tts:direction="ltr">State and province, and I'm going to put
+<br />profit on to color here.</p>
+        <p begin="00:13:08.060" end="00:13:18.920" tts:direction="ltr">That should have shown that shop through
+<br />and show me my colors.</p>
+        <p begin="00:13:18.920" end="00:13:21.020" tts:direction="ltr">Let me just see if I can see that on top.</p>
+        <p begin="00:13:21.020" end="00:13:27.060" tts:direction="ltr">Oh, I know because there's no background
+<br />there. Let me just go back.</p>
+        <p begin="00:13:27.660" end="00:13:33.780" tts:direction="ltr">The reason why is now I need to change
+<br />that wash out.</p>
+        <p begin="00:13:36.780" end="00:13:39.820" tts:direction="ltr">If I go all the way here,</p>
+        <p begin="00:13:39.820" end="00:13:42.440" tts:direction="ltr">you'll begin to see some of those color.</p>
+        <p begin="00:13:42.440" end="00:13:44.680" tts:direction="ltr">I can bring that back in if I want.</p>
+        <p begin="00:13:44.680" end="00:13:48.620" tts:direction="ltr">There's a lot of different options here
+<br />when it comes to those map layers.</p>
+        <p begin="00:13:48.620" end="00:13:52.420" tts:direction="ltr">Just remember that you can place maps on
+<br />top of each other,</p>
+        <p begin="00:13:52.420" end="00:13:54.600" tts:direction="ltr">just drag those fields on top,</p>
+        <p begin="00:13:54.600" end="00:13:59.420" tts:direction="ltr">and you can also wash them out.</p>
+        <p begin="00:13:59.420" end="00:14:04.580" tts:direction="ltr">Hopefully this has been a good way to see
+<br />about the power of</p>
+        <p begin="00:14:04.580" end="00:14:11.260" tts:direction="ltr">maps and give you some ideas on how to
+<br />apply them. Happy visit.</p>
+    </div>
+  </body>
+</tt>

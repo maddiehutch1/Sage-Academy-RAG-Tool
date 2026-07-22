@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>437091832 - 1_0z5curai - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:05.480" tts:direction="ltr">Hello, visitors. We are on to the second
+<br />principle of design,</p>
+        <p begin="00:00:05.480" end="00:00:08.500" tts:direction="ltr">and that is the idea of contrast.</p>
+        <p begin="00:00:08.500" end="00:00:10.760" tts:direction="ltr">We're going to address size,</p>
+        <p begin="00:00:10.760" end="00:00:15.480" tts:direction="ltr">shape, color, and typography. Let's dive
+<br />in.</p>
+        <p begin="00:00:15.570" end="00:00:18.050" tts:direction="ltr">When it comes to size,</p>
+        <p begin="00:00:18.050" end="00:00:20.050" tts:direction="ltr">it's important to recognize there are</p>
+        <p begin="00:00:20.050" end="00:00:22.370" tts:direction="ltr">certain chart types that do this better
+<br />than other.</p>
+        <p begin="00:00:22.370" end="00:00:25.190" tts:direction="ltr">I'm giving you an example of a tree map.</p>
+        <p begin="00:00:25.190" end="00:00:29.050" tts:direction="ltr">Tree maps really do show between size and
+<br />also</p>
+        <p begin="00:00:29.050" end="00:00:33.710" tts:direction="ltr">color the amount of the data that they
+<br />have.</p>
+        <p begin="00:00:33.710" end="00:00:37.470" tts:direction="ltr">But tree maps aren't the only way we can
+<br />show size.</p>
+        <p begin="00:00:37.470" end="00:00:38.870" tts:direction="ltr">Clearly, if it's larger,</p>
+        <p begin="00:00:38.870" end="00:00:42.340" tts:direction="ltr">there's more data, if it's smaller,
+<br />there's less data.</p>
+        <p begin="00:00:42.340" end="00:00:46.310" tts:direction="ltr">There's also bubble charts where the
+<br />larger the circle,</p>
+        <p begin="00:00:46.310" end="00:00:48.170" tts:direction="ltr">then the more data, the smaller.</p>
+        <p begin="00:00:48.170" end="00:00:52.910" tts:direction="ltr">We can again to use our natural instincts
+<br />that we've learned in terms of size.</p>
+        <p begin="00:00:52.910" end="00:00:56.150" tts:direction="ltr">But what we have the United States,</p>
+        <p begin="00:00:56.150" end="00:00:59.490" tts:direction="ltr">where we have all of these different
+<br />shapes,</p>
+        <p begin="00:00:59.490" end="00:01:02.430" tts:direction="ltr">but they don't truly represent maybe size.</p>
+        <p begin="00:01:02.430" end="00:01:05.410" tts:direction="ltr">Depends on the size. If I'm doing course
+<br />land,</p>
+        <p begin="00:01:05.410" end="00:01:09.590" tts:direction="ltr">then of course, Alaska should be gigantic.</p>
+        <p begin="00:01:09.590" end="00:01:12.065" tts:direction="ltr">But if I'm doing population,</p>
+        <p begin="00:01:12.065" end="00:01:15.000" tts:direction="ltr">Alaska would be the very smallest because
+<br />I believe</p>
+        <p begin="00:01:15.000" end="00:01:18.180" tts:direction="ltr">there's only about one half million people
+<br />who live in Alaska.</p>
+        <p begin="00:01:18.180" end="00:01:22.600" tts:direction="ltr">Size can and should align with your goal.</p>
+        <p begin="00:01:22.600" end="00:01:26.900" tts:direction="ltr">If you have something that is larger and
+<br />something that's smaller,</p>
+        <p begin="00:01:26.900" end="00:01:29.700" tts:direction="ltr">there should be that pre attentive
+<br />attribute</p>
+        <p begin="00:01:29.700" end="00:01:32.860" tts:direction="ltr">that larger means more and smaller means
+<br />less.</p>
+        <p begin="00:01:32.860" end="00:01:35.680" tts:direction="ltr">Make sure that you're matching those.</p>
+        <p begin="00:01:35.680" end="00:01:39.780" tts:direction="ltr">That will happen as a default in the tree
+<br />map and in the bubble chart.</p>
+        <p begin="00:01:39.780" end="00:01:45.100" tts:direction="ltr">But sometimes we can layer multiple
+<br />dimensions on a chart and we</p>
+        <p begin="00:01:45.100" end="00:01:51.090" tts:direction="ltr">can confuse our user if we're not aligning
+<br />size with what the insight is.</p>
+        <p begin="00:01:51.090" end="00:01:54.330" tts:direction="ltr">Instead of using the traditional map,</p>
+        <p begin="00:01:54.330" end="00:01:56.450" tts:direction="ltr">and if I was wanting to show maybe</p>
+        <p begin="00:01:56.450" end="00:01:59.450" tts:direction="ltr">another attribute that had nothing to do
+<br />with landmass,</p>
+        <p begin="00:01:59.450" end="00:02:02.310" tts:direction="ltr">I might use something called a tile map.</p>
+        <p begin="00:02:02.310" end="00:02:04.710" tts:direction="ltr">This is an opportunity where you'll use</p>
+        <p begin="00:02:04.710" end="00:02:08.330" tts:direction="ltr">a shape to create a shape of the United
+<br />States.</p>
+        <p begin="00:02:08.330" end="00:02:11.270" tts:direction="ltr">Now Alaska is much smaller.</p>
+        <p begin="00:02:11.270" end="00:02:13.130" tts:direction="ltr">They're all the same size.</p>
+        <p begin="00:02:13.130" end="00:02:15.590" tts:direction="ltr">That's in Hawaii is much smaller too.</p>
+        <p begin="00:02:15.590" end="00:02:17.650" tts:direction="ltr">What that can do though is that can really</p>
+        <p begin="00:02:17.650" end="00:02:20.410" tts:direction="ltr">help orient what's important and what's
+<br />not.</p>
+        <p begin="00:02:20.410" end="00:02:26.970" tts:direction="ltr">I could have maybe this idea of
+<br />profitability put onto the Marks card,</p>
+        <p begin="00:02:26.970" end="00:02:29.090" tts:direction="ltr">and I've got these states that are</p>
+        <p begin="00:02:29.090" end="00:02:32.490" tts:direction="ltr">showing maybe that they're highly
+<br />profitable,</p>
+        <p begin="00:02:32.490" end="00:02:35.265" tts:direction="ltr">but doesn't really matter.</p>
+        <p begin="00:02:35.265" end="00:02:37.620" tts:direction="ltr">Where or how large they are,</p>
+        <p begin="00:02:37.620" end="00:02:43.540" tts:direction="ltr">but they're showing through the map that
+<br />these are the areas of focus.</p>
+        <p begin="00:02:43.540" end="00:02:49.760" tts:direction="ltr">Shape can really heighten your audience's
+<br />awareness to importance.</p>
+        <p begin="00:02:49.760" end="00:02:51.880" tts:direction="ltr">If you want to take a moment and fill</p>
+        <p begin="00:02:51.880" end="00:02:56.040" tts:direction="ltr">in the great state of Utah on your x map,</p>
+        <p begin="00:02:56.040" end="00:02:58.160" tts:direction="ltr">that's that star that I have right there.</p>
+        <p begin="00:02:58.160" end="00:02:59.985" tts:direction="ltr">That's where Utah would be placed.</p>
+        <p begin="00:02:59.985" end="00:03:04.190" tts:direction="ltr">Okay. Let's talk about shape.</p>
+        <p begin="00:03:04.190" end="00:03:07.230" tts:direction="ltr">Here I've got my lovely circles,</p>
+        <p begin="00:03:07.230" end="00:03:09.650" tts:direction="ltr">and I have one x.</p>
+        <p begin="00:03:09.650" end="00:03:14.310" tts:direction="ltr">Now, of course, you cannot help but see
+<br />the difference,</p>
+        <p begin="00:03:14.310" end="00:03:17.170" tts:direction="ltr">and that will go to our idea of contrast.</p>
+        <p begin="00:03:17.170" end="00:03:21.090" tts:direction="ltr">Whenever I have something that's different
+<br />that I'm breaking the pattern,</p>
+        <p begin="00:03:21.090" end="00:03:25.310" tts:direction="ltr">humans will go first to the broken pattern
+<br />to the difference.</p>
+        <p begin="00:03:25.310" end="00:03:28.090" tts:direction="ltr">That's just part of our super scales as
+<br />humans.</p>
+        <p begin="00:03:28.090" end="00:03:31.990" tts:direction="ltr">I'm going to see the x in a of circles.</p>
+        <p begin="00:03:31.990" end="00:03:38.110" tts:direction="ltr">If I have all of these plots here on the
+<br />scatter plot for fruit types,</p>
+        <p begin="00:03:38.110" end="00:03:40.690" tts:direction="ltr">sales versus profit, You can see</p>
+        <p begin="00:03:40.690" end="00:03:43.910" tts:direction="ltr">here that I am looking at these different
+<br />shapes.</p>
+        <p begin="00:03:43.910" end="00:03:46.110" tts:direction="ltr">They're all different and</p>
+        <p begin="00:03:46.110" end="00:03:49.370" tts:direction="ltr">they're all about the same size, but
+<br />they're contrasting.</p>
+        <p begin="00:03:49.370" end="00:03:53.090" tts:direction="ltr">Now if I wanted to have one of those
+<br />shapes really shout out,</p>
+        <p begin="00:03:53.090" end="00:03:55.670" tts:direction="ltr">maybe I wanted to focus on the apples,</p>
+        <p begin="00:03:55.670" end="00:04:00.330" tts:direction="ltr">I could leave that as a circle and then
+<br />change all the rest to squares.</p>
+        <p begin="00:04:00.330" end="00:04:03.030" tts:direction="ltr">I'm using that same principle I had here,</p>
+        <p begin="00:04:03.030" end="00:04:09.220" tts:direction="ltr">but now I'm going to pull out the apples
+<br />and have everything else be a square.</p>
+        <p begin="00:04:09.220" end="00:04:13.170" tts:direction="ltr">Or I could try and just add a fruit salad
+<br />by</p>
+        <p begin="00:04:13.170" end="00:04:16.970" tts:direction="ltr">bringing in icons into Tableau and placing
+<br />those,</p>
+        <p begin="00:04:16.970" end="00:04:19.050" tts:direction="ltr">and then I can get rid of the legend.</p>
+        <p begin="00:04:19.050" end="00:04:21.110" tts:direction="ltr">Do you see how I have no legend here?</p>
+        <p begin="00:04:21.110" end="00:04:26.450" tts:direction="ltr">I'm able to remove that because now you
+<br />can clearly see that this is an apple,</p>
+        <p begin="00:04:26.450" end="00:04:29.530" tts:direction="ltr">right in this area.</p>
+        <p begin="00:04:30.130" end="00:04:38.010" tts:direction="ltr">There is a work a dashboard here on
+<br />Tableau Public,</p>
+        <p begin="00:04:38.010" end="00:04:40.710" tts:direction="ltr">it is the dog breeder selector,</p>
+        <p begin="00:04:40.710" end="00:04:43.530" tts:direction="ltr">and if you haven't had a chance to look at
+<br />Tableau Public,</p>
+        <p begin="00:04:43.530" end="00:04:44.890" tts:direction="ltr">I highly recommend there's</p>
+        <p begin="00:04:44.890" end="00:04:48.230" tts:direction="ltr">so many inspiring dashboards and</p>
+        <p begin="00:04:48.230" end="00:04:51.890" tts:direction="ltr">you might even be able to find something
+<br />to inspire you for your own project.</p>
+        <p begin="00:04:51.890" end="00:04:55.470" tts:direction="ltr">But this one is a dog breeder selection
+<br />tool</p>
+        <p begin="00:04:55.470" end="00:04:58.310" tts:direction="ltr">where you're looking at exercise needs,</p>
+        <p begin="00:04:58.310" end="00:05:03.310" tts:direction="ltr">grooming, and then you've also got noise
+<br />level and longevity here.</p>
+        <p begin="00:05:03.310" end="00:05:06.050" tts:direction="ltr">If I wanted to find something,</p>
+        <p begin="00:05:06.050" end="00:05:12.335" tts:direction="ltr">dog friendly, child friendly, let's say,
+<br />medium</p>
+        <p begin="00:05:12.335" end="00:05:16.740" tts:direction="ltr">Let's say good for vice owners.</p>
+        <p begin="00:05:16.740" end="00:05:19.720" tts:direction="ltr">Yes, tolerates heat.</p>
+        <p begin="00:05:19.720" end="00:05:23.880" tts:direction="ltr">Yes, I'm getting down to tolerates being
+<br />alone.</p>
+        <p begin="00:05:23.880" end="00:05:25.760" tts:direction="ltr">Let's do all. What do we have here?</p>
+        <p begin="00:05:25.760" end="00:05:28.860" tts:direction="ltr">We have the bull terrier,</p>
+        <p begin="00:05:28.860" end="00:05:31.840" tts:direction="ltr">the paro hound, the poodle.</p>
+        <p begin="00:05:31.840" end="00:05:37.480" tts:direction="ltr">It's a bright one, so they're smart and
+<br />the Norfolk terrier and the papon.</p>
+        <p begin="00:05:37.480" end="00:05:41.500" tts:direction="ltr">This is an opportunity to use shape the
+<br />shape of the dogs to</p>
+        <p begin="00:05:41.500" end="00:05:46.110" tts:direction="ltr">give an indication of the medium or are
+<br />they small.</p>
+        <p begin="00:05:46.110" end="00:05:50.300" tts:direction="ltr">Again, thinking about the use case that
+<br />you might have when it</p>
+        <p begin="00:05:50.300" end="00:05:55.240" tts:direction="ltr">comes to your sizes in your charts.</p>
+        <p begin="00:05:55.800" end="00:06:00.440" tts:direction="ltr">The next item I want to cover in contrast
+<br />is color,</p>
+        <p begin="00:06:00.440" end="00:06:05.600" tts:direction="ltr">one of our favorite ways to really hone in
+<br />on an idea.</p>
+        <p begin="00:06:05.600" end="00:06:07.640" tts:direction="ltr">Here is the color wheel.</p>
+        <p begin="00:06:07.640" end="00:06:11.840" tts:direction="ltr">You're probably very familiar with it from
+<br />your K through 12 learning.</p>
+        <p begin="00:06:11.840" end="00:06:13.260" tts:direction="ltr">We're going to just go through</p>
+        <p begin="00:06:13.260" end="00:06:17.620" tts:direction="ltr">a very quick refresh here where we have
+<br />our primary colors.</p>
+        <p begin="00:06:17.620" end="00:06:19.280" tts:direction="ltr">We have red, yellow,</p>
+        <p begin="00:06:19.280" end="00:06:22.705" tts:direction="ltr">and blue and see how they triangulate
+<br />across from each other.</p>
+        <p begin="00:06:22.705" end="00:06:24.790" tts:direction="ltr">And then we have secondary colors,</p>
+        <p begin="00:06:24.790" end="00:06:27.310" tts:direction="ltr">which are the orange, green, and blue.</p>
+        <p begin="00:06:27.310" end="00:06:30.330" tts:direction="ltr">Notice how both primary and secondary
+<br />colors are used</p>
+        <p begin="00:06:30.330" end="00:06:33.530" tts:direction="ltr">a lot for football teams and for holidays.</p>
+        <p begin="00:06:33.530" end="00:06:37.530" tts:direction="ltr">It's because there is a lot of energy
+<br />across this circle.</p>
+        <p begin="00:06:37.530" end="00:06:40.250" tts:direction="ltr">When I have colors that are cross,</p>
+        <p begin="00:06:40.250" end="00:06:44.835" tts:direction="ltr">I'm creating energy in the visualization,</p>
+        <p begin="00:06:44.835" end="00:06:49.460" tts:direction="ltr">Complimentary colors are those types of
+<br />colors.</p>
+        <p begin="00:06:49.460" end="00:06:56.060" tts:direction="ltr">They are across the color wheel and they
+<br />offer the most energy in between.</p>
+        <p begin="00:06:56.060" end="00:06:58.840" tts:direction="ltr">Because I have this, just remember,</p>
+        <p begin="00:06:58.840" end="00:07:02.680" tts:direction="ltr">I have that opportunity to create that
+<br />higher contrast,</p>
+        <p begin="00:07:02.680" end="00:07:04.415" tts:direction="ltr">which is that energy.</p>
+        <p begin="00:07:04.415" end="00:07:07.750" tts:direction="ltr">The analogous colors are colors that are
+<br />next to</p>
+        <p begin="00:07:07.750" end="00:07:11.410" tts:direction="ltr">each other in the color wheel and they are
+<br />more subtle.</p>
+        <p begin="00:07:11.410" end="00:07:14.010" tts:direction="ltr">There's not as much energy in between
+<br />them,</p>
+        <p begin="00:07:14.010" end="00:07:16.950" tts:direction="ltr">even though I might have different colors.</p>
+        <p begin="00:07:16.950" end="00:07:19.010" tts:direction="ltr">I have that yellow and I have that green,</p>
+        <p begin="00:07:19.010" end="00:07:22.090" tts:direction="ltr">but they don't have that energy across</p>
+        <p begin="00:07:22.090" end="00:07:26.110" tts:direction="ltr">from the color wheel as you would have
+<br />with complimentary.</p>
+        <p begin="00:07:26.110" end="00:07:28.970" tts:direction="ltr">Monochromatic colors even have less so.</p>
+        <p begin="00:07:28.970" end="00:07:30.870" tts:direction="ltr">That is based on intensity.</p>
+        <p begin="00:07:30.870" end="00:07:32.310" tts:direction="ltr">Here we have more white,</p>
+        <p begin="00:07:32.310" end="00:07:33.750" tts:direction="ltr">here we have more black.</p>
+        <p begin="00:07:33.750" end="00:07:39.610" tts:direction="ltr">I'm just using all of the range here to be
+<br />able to show that one color.</p>
+        <p begin="00:07:39.610" end="00:07:44.430" tts:direction="ltr">This could be helpful if you work for a
+<br />company whose color is only green,</p>
+        <p begin="00:07:44.430" end="00:07:48.370" tts:direction="ltr">but you can show that it can be darker or
+<br />lighter.</p>
+        <p begin="00:07:49.090" end="00:07:54.410" tts:direction="ltr">On your card, I want you to think about
+<br />when you see this color,</p>
+        <p begin="00:07:54.410" end="00:07:56.370" tts:direction="ltr">what comes to mind?</p>
+        <p begin="00:07:56.370" end="00:07:58.550" tts:direction="ltr">When you see red, what do you think of,</p>
+        <p begin="00:07:58.550" end="00:08:00.290" tts:direction="ltr">when you see orange, yellow,</p>
+        <p begin="00:08:00.290" end="00:08:02.590" tts:direction="ltr">green, blue and purple.</p>
+        <p begin="00:08:02.590" end="00:08:05.830" tts:direction="ltr">I suspect that there's some already
+<br />association</p>
+        <p begin="00:08:05.830" end="00:08:09.770" tts:direction="ltr">based upon your lived experience for these
+<br />different colors.</p>
+        <p begin="00:08:09.770" end="00:08:12.890" tts:direction="ltr">Now, there's been a lot of research on
+<br />color theory and</p>
+        <p begin="00:08:12.890" end="00:08:16.470" tts:direction="ltr">how color in different countries can
+<br />definitely mean different things.</p>
+        <p begin="00:08:16.470" end="00:08:18.610" tts:direction="ltr">But here are some of the words that you</p>
+        <p begin="00:08:18.610" end="00:08:21.330" tts:direction="ltr">may have thought of when you thought of
+<br />your colors.</p>
+        <p begin="00:08:21.330" end="00:08:27.945" tts:direction="ltr">Red we often associate with luck and love
+<br />and romance and even aggression.</p>
+        <p begin="00:08:27.945" end="00:08:30.260" tts:direction="ltr">Orange is health and happiness,</p>
+        <p begin="00:08:30.260" end="00:08:31.940" tts:direction="ltr">but it can also be danger.</p>
+        <p begin="00:08:31.940" end="00:08:35.160" tts:direction="ltr">We have yellow as creativity, friendly,
+<br />energetic,</p>
+        <p begin="00:08:35.160" end="00:08:38.780" tts:direction="ltr">but it also can be danger and madness as
+<br />well.</p>
+        <p begin="00:08:38.780" end="00:08:42.260" tts:direction="ltr">Green stems from, of course, our natural
+<br />world,</p>
+        <p begin="00:08:42.260" end="00:08:44.760" tts:direction="ltr">where we have growth and health and hope,</p>
+        <p begin="00:08:44.760" end="00:08:47.980" tts:direction="ltr">but it also can be poison and corruption
+<br />as well.</p>
+        <p begin="00:08:47.980" end="00:08:50.520" tts:direction="ltr">Blue is that tranquility,</p>
+        <p begin="00:08:50.520" end="00:08:54.600" tts:direction="ltr">stability, wisdom, but it can also be cold
+<br />and sad.</p>
+        <p begin="00:08:54.600" end="00:08:58.020" tts:direction="ltr">You have purple, which can be luxurious,</p>
+        <p begin="00:08:58.020" end="00:09:01.940" tts:direction="ltr">mysterious, but it can also have deception
+<br />and detachment.</p>
+        <p begin="00:09:01.940" end="00:09:05.320" tts:direction="ltr">These are some of the words that I've
+<br />lifted from some research</p>
+        <p begin="00:09:05.320" end="00:09:09.970" tts:direction="ltr">to Be aware of that when I'm using a
+<br />yellow,</p>
+        <p begin="00:09:09.970" end="00:09:15.110" tts:direction="ltr">I'm really trying to evoke maybe that high
+<br />cheerfulness, that energetic.</p>
+        <p begin="00:09:15.110" end="00:09:19.610" tts:direction="ltr">But if I'm using maybe this green, a dark
+<br />green,</p>
+        <p begin="00:09:19.610" end="00:09:25.390" tts:direction="ltr">I might try and show something that's more
+<br />subdued. All right.</p>
+        <p begin="00:09:25.390" end="00:09:28.310" tts:direction="ltr">Let's look at this in an applied sense for
+<br />the chart type.</p>
+        <p begin="00:09:28.310" end="00:09:31.670" tts:direction="ltr">Here I have a chart, the new marriage rate
+<br />by education,</p>
+        <p begin="00:09:31.670" end="00:09:36.010" tts:direction="ltr">number of newly married adults per 1,000
+<br />marriage eligible adults.</p>
+        <p begin="00:09:36.010" end="00:09:39.270" tts:direction="ltr">The chart has got one, two, three,</p>
+        <p begin="00:09:39.270" end="00:09:42.650" tts:direction="ltr">four, five different colors, and I've got
+<br />them all.</p>
+        <p begin="00:09:42.650" end="00:09:44.450" tts:direction="ltr">What kind of colors are these?</p>
+        <p begin="00:09:44.450" end="00:09:49.690" tts:direction="ltr">If you said analogous, you're correct and
+<br />here I've got them all stacked.</p>
+        <p begin="00:09:49.690" end="00:09:54.130" tts:direction="ltr">Now I can see at least these are in the
+<br />same order, right?</p>
+        <p begin="00:09:54.210" end="00:09:57.090" tts:direction="ltr">This is the first, this is the last.</p>
+        <p begin="00:09:57.090" end="00:09:59.470" tts:direction="ltr">But am I really gaining insight?</p>
+        <p begin="00:09:59.470" end="00:10:01.750" tts:direction="ltr">How long is it going to take me to get to
+<br />that?</p>
+        <p begin="00:10:01.750" end="00:10:04.370" tts:direction="ltr">Now, one of the problems you're already
+<br />spotting is that</p>
+        <p begin="00:10:04.370" end="00:10:07.850" tts:direction="ltr">I've got a heading that's telling.</p>
+        <p begin="00:10:07.850" end="00:10:10.030" tts:direction="ltr">That's not what we want to do.</p>
+        <p begin="00:10:10.030" end="00:10:12.930" tts:direction="ltr">We want to show. Let's see what we can do.</p>
+        <p begin="00:10:12.930" end="00:10:14.530" tts:direction="ltr">We're not going to work on the heading,</p>
+        <p begin="00:10:14.530" end="00:10:16.610" tts:direction="ltr">we're just going to work on the color
+<br />right now.</p>
+        <p begin="00:10:16.610" end="00:10:21.130" tts:direction="ltr">Now I have grade out everything in</p>
+        <p begin="00:10:21.130" end="00:10:25.630" tts:direction="ltr">this area and only highlighted with color
+<br />this particular area,</p>
+        <p begin="00:10:25.630" end="00:10:27.350" tts:direction="ltr">and all of the years.</p>
+        <p begin="00:10:27.350" end="00:10:32.870" tts:direction="ltr">Over the years, which here I had my legend
+<br />of zero eight to 12.</p>
+        <p begin="00:10:32.870" end="00:10:37.230" tts:direction="ltr">But I can see that I've got lower hair,</p>
+        <p begin="00:10:37.230" end="00:10:39.860" tts:direction="ltr">but much higher than any other group.</p>
+        <p begin="00:10:39.860" end="00:10:44.250" tts:direction="ltr">So now what I can do because I've now
+<br />focused my audience's attention on</p>
+        <p begin="00:10:44.250" end="00:10:48.930" tts:direction="ltr">this last bar chart of the Bachelor's
+<br />degree or More who get married more,</p>
+        <p begin="00:10:48.930" end="00:10:54.710" tts:direction="ltr">I could change my heading to reflect that
+<br />and really be able to show.</p>
+        <p begin="00:10:54.710" end="00:10:58.640" tts:direction="ltr">All right. One of</p>
+        <p begin="00:10:58.640" end="00:11:01.740" tts:direction="ltr">the difficulties with color is</p>
+        <p begin="00:11:01.740" end="00:11:04.840" tts:direction="ltr">to pay attention to the gradients and the
+<br />backgrounds.</p>
+        <p begin="00:11:04.840" end="00:11:08.580" tts:direction="ltr">Here I have four different squares,</p>
+        <p begin="00:11:08.580" end="00:11:10.760" tts:direction="ltr">and I've got a gradient background.</p>
+        <p begin="00:11:10.760" end="00:11:13.840" tts:direction="ltr">But if I were to make that background all
+<br />black,</p>
+        <p begin="00:11:13.840" end="00:11:18.840" tts:direction="ltr">you'll see that those squares are all the
+<br />same color.</p>
+        <p begin="00:11:18.840" end="00:11:22.840" tts:direction="ltr">But they're treated very differently when
+<br />I have that gradient background.</p>
+        <p begin="00:11:22.840" end="00:11:28.660" tts:direction="ltr">Be aware again about space and think about
+<br />that negative and positive space,</p>
+        <p begin="00:11:28.660" end="00:11:33.105" tts:direction="ltr">and if I want some of that fuzzy zone to
+<br />be there or not.</p>
+        <p begin="00:11:33.105" end="00:11:38.390" tts:direction="ltr">So let's look at color when it comes to
+<br />color deficiency.</p>
+        <p begin="00:11:38.390" end="00:11:41.290" tts:direction="ltr">This is something to be aware of that many</p>
+        <p begin="00:11:41.290" end="00:11:44.910" tts:direction="ltr">of our audiences may experience color
+<br />deficiency,</p>
+        <p begin="00:11:44.910" end="00:11:48.430" tts:direction="ltr">and so we avoid some of those ranges.</p>
+        <p begin="00:11:48.430" end="00:11:52.890" tts:direction="ltr">For color deficiency, we're really talking
+<br />about those reds and those greens.</p>
+        <p begin="00:11:52.890" end="00:11:59.610" tts:direction="ltr">Think about where those lide here we go.
+<br />I'll just remove that.</p>
+        <p begin="00:11:59.610" end="00:12:04.600" tts:direction="ltr">In our color wheel,</p>
+        <p begin="00:12:04.600" end="00:12:06.640" tts:direction="ltr">red and green are complimentary,</p>
+        <p begin="00:12:06.640" end="00:12:10.380" tts:direction="ltr">but they are the ones on the nodes in our
+<br />eyes</p>
+        <p begin="00:12:10.380" end="00:12:12.840" tts:direction="ltr">that provide some of</p>
+        <p begin="00:12:12.840" end="00:12:16.120" tts:direction="ltr">that color deficiency and it's hard to see
+<br />those contrasts.</p>
+        <p begin="00:12:16.120" end="00:12:20.460" tts:direction="ltr">We normally associate red with negative.</p>
+        <p begin="00:12:20.460" end="00:12:23.840" tts:direction="ltr">I'm in the red and green as being
+<br />positive.</p>
+        <p begin="00:12:23.840" end="00:12:26.640" tts:direction="ltr">But that default is not something</p>
+        <p begin="00:12:26.640" end="00:12:29.740" tts:direction="ltr">that will work for someone who's color
+<br />deficient.</p>
+        <p begin="00:12:29.740" end="00:12:31.360" tts:direction="ltr">I've got this chart here.</p>
+        <p begin="00:12:31.360" end="00:12:34.740" tts:direction="ltr">But if I were to have a color deficiency,</p>
+        <p begin="00:12:34.740" end="00:12:36.460" tts:direction="ltr">this is what I might see.</p>
+        <p begin="00:12:36.460" end="00:12:39.820" tts:direction="ltr">You can see I don't really see a lot of
+<br />difference between here.</p>
+        <p begin="00:12:39.820" end="00:12:41.240" tts:direction="ltr">Yes, I see darker,</p>
+        <p begin="00:12:41.240" end="00:12:43.640" tts:direction="ltr">but is that the right darker.</p>
+        <p begin="00:12:43.640" end="00:12:46.360" tts:direction="ltr">Those are some things to be aware of,</p>
+        <p begin="00:12:46.360" end="00:12:48.620" tts:direction="ltr">especially when you're designing with
+<br />color,</p>
+        <p begin="00:12:48.620" end="00:12:51.100" tts:direction="ltr">that there are audiences that need</p>
+        <p begin="00:12:51.100" end="00:12:54.900" tts:direction="ltr">a little more attention and different
+<br />complimentary colors.</p>
+        <p begin="00:12:54.900" end="00:12:59.140" tts:direction="ltr">Instead, consider using an orange and a
+<br />blue.</p>
+        <p begin="00:12:59.140" end="00:13:03.900" tts:direction="ltr">Okay. Now, I'm still showing the same
+<br />contrasting colors.</p>
+        <p begin="00:13:03.900" end="00:13:05.940" tts:direction="ltr">But if I have color deficiency,</p>
+        <p begin="00:13:05.940" end="00:13:07.560" tts:direction="ltr">this is what I'm going to see.</p>
+        <p begin="00:13:07.560" end="00:13:13.020" tts:direction="ltr">More of this warm tone with this more
+<br />purple.</p>
+        <p begin="00:13:13.020" end="00:13:17.350" tts:direction="ltr">Now I can still see exactly what I'm
+<br />hoping to convey.</p>
+        <p begin="00:13:17.350" end="00:13:24.020" tts:direction="ltr">All right. Just a shape was something that
+<br />really stood out, so does color.</p>
+        <p begin="00:13:24.020" end="00:13:26.000" tts:direction="ltr">Here I've got my dots.</p>
+        <p begin="00:13:26.000" end="00:13:27.840" tts:direction="ltr">They're all dots, but this time,</p>
+        <p begin="00:13:27.840" end="00:13:30.840" tts:direction="ltr">I have changed one dot to be orange,</p>
+        <p begin="00:13:30.840" end="00:13:33.540" tts:direction="ltr">of course, that's where you see first.</p>
+        <p begin="00:13:33.540" end="00:13:36.080" tts:direction="ltr">In the sea of blue, I see that orange.</p>
+        <p begin="00:13:36.080" end="00:13:42.080" tts:direction="ltr">If I were to create a scatter plot and use
+<br />all 20 colors from Tableau,</p>
+        <p begin="00:13:42.080" end="00:13:44.560" tts:direction="ltr">this is the mess that you might create.</p>
+        <p begin="00:13:44.560" end="00:13:48.450" tts:direction="ltr">Again, love my rainbow of colors.</p>
+        <p begin="00:13:48.450" end="00:13:51.170" tts:direction="ltr">But I'm not really showing anything.</p>
+        <p begin="00:13:51.170" end="00:13:53.050" tts:direction="ltr">I'm not lifting any of this.</p>
+        <p begin="00:13:53.050" end="00:13:59.450" tts:direction="ltr">I'm not really pinpointing how I can help
+<br />my audience interpret this data.</p>
+        <p begin="00:13:59.450" end="00:14:01.670" tts:direction="ltr">Instead, I can simplify.</p>
+        <p begin="00:14:01.670" end="00:14:03.910" tts:direction="ltr">Maybe I move them into category.</p>
+        <p begin="00:14:03.910" end="00:14:06.990" tts:direction="ltr">Instead of having 20, I can have just
+<br />three.</p>
+        <p begin="00:14:06.990" end="00:14:09.590" tts:direction="ltr">I might have a muted tone for furniture,</p>
+        <p begin="00:14:09.590" end="00:14:14.590" tts:direction="ltr">and then I have a contrast tone and color
+<br />for office furniture and technology.</p>
+        <p begin="00:14:14.590" end="00:14:17.970" tts:direction="ltr">Now, it's a little bit easier to focus on</p>
+        <p begin="00:14:17.970" end="00:14:22.330" tts:direction="ltr">where my orange or my office supplies are
+<br />clustering,</p>
+        <p begin="00:14:22.330" end="00:14:24.950" tts:direction="ltr">where my brown is a bit lower,</p>
+        <p begin="00:14:24.950" end="00:14:30.070" tts:direction="ltr">and where my strength is the technology up
+<br />in the upper right corner.</p>
+        <p begin="00:14:30.140" end="00:14:34.300" tts:direction="ltr">Here we have also a C of circles.</p>
+        <p begin="00:14:34.300" end="00:14:38.520" tts:direction="ltr">They're all purple, but I've got one
+<br />that's just a little bit darker.</p>
+        <p begin="00:14:38.520" end="00:14:42.300" tts:direction="ltr">This is not as head</p>
+        <p begin="00:14:42.460" end="00:14:46.700" tts:direction="ltr">obvious as this orange and</p>
+        <p begin="00:14:46.700" end="00:14:50.820" tts:direction="ltr">purple orange and blue contrast because
+<br />that's across the color wheel.</p>
+        <p begin="00:14:50.820" end="00:14:52.160" tts:direction="ltr">This is more analogous,</p>
+        <p begin="00:14:52.160" end="00:14:54.665" tts:direction="ltr">but this is that idea of intensity.</p>
+        <p begin="00:14:54.665" end="00:15:00.710" tts:direction="ltr">We use that in our chart to be able to
+<br />layer on some more information.</p>
+        <p begin="00:15:00.710" end="00:15:03.650" tts:direction="ltr">This is a bar chart, you can see,</p>
+        <p begin="00:15:03.650" end="00:15:06.890" tts:direction="ltr">I've got some of the fields that have</p>
+        <p begin="00:15:06.890" end="00:15:11.270" tts:direction="ltr">darker colors even though they're lower on
+<br />the bar chart.</p>
+        <p begin="00:15:11.270" end="00:15:17.430" tts:direction="ltr">Sequential palette is a range with a
+<br />single color. That's what this is.</p>
+        <p begin="00:15:17.430" end="00:15:20.730" tts:direction="ltr">A diverging palette has two or three
+<br />colors.</p>
+        <p begin="00:15:20.730" end="00:15:22.230" tts:direction="ltr">It's good to show loss.</p>
+        <p begin="00:15:22.230" end="00:15:23.930" tts:direction="ltr">Those are those orange and</p>
+        <p begin="00:15:23.930" end="00:15:27.970" tts:direction="ltr">blues when you're wanting to show that
+<br />there's a contrast there.</p>
+        <p begin="00:15:27.970" end="00:15:31.375" tts:direction="ltr">Just remember sequential palette,</p>
+        <p begin="00:15:31.375" end="00:15:34.880" tts:direction="ltr">with a single color, and I'm showing all
+<br />of that.</p>
+        <p begin="00:15:34.880" end="00:15:39.200" tts:direction="ltr">Then a diverging palette ranges between
+<br />those two.</p>
+        <p begin="00:15:39.280" end="00:15:42.880" tts:direction="ltr">Here, I'm using a sequential color
+<br />palette.</p>
+        <p begin="00:15:42.880" end="00:15:44.820" tts:direction="ltr">I've only got one, two,</p>
+        <p begin="00:15:44.820" end="00:15:46.560" tts:direction="ltr">three colors in Tableau,</p>
+        <p begin="00:15:46.560" end="00:15:50.880" tts:direction="ltr">we know that you can identify how many you
+<br />want to show.</p>
+        <p begin="00:15:50.880" end="00:15:53.800" tts:direction="ltr">Then I can begin to see some clustering</p>
+        <p begin="00:15:53.800" end="00:15:57.540" tts:direction="ltr">here for this higher range and the lower
+<br />left quadrant,</p>
+        <p begin="00:15:57.540" end="00:16:00.020" tts:direction="ltr">and in the upper right quadrant,</p>
+        <p begin="00:16:00.020" end="00:16:05.505" tts:direction="ltr">I see that ease of business is, is lower.</p>
+        <p begin="00:16:05.505" end="00:16:08.110" tts:direction="ltr">Actually, it's Internet use.</p>
+        <p begin="00:16:08.110" end="00:16:11.190" tts:direction="ltr">Sorry about that and Mobile phonam should
+<br />have looked at my X and Y axis,</p>
+        <p begin="00:16:11.190" end="00:16:13.390" tts:direction="ltr">but you can see that a little bit clearer.</p>
+        <p begin="00:16:13.390" end="00:16:17.150" tts:direction="ltr">Of course, I would have a nice show title
+<br />here.</p>
+        <p begin="00:16:17.150" end="00:16:19.730" tts:direction="ltr">That would help me understand that.</p>
+        <p begin="00:16:20.810" end="00:16:23.650" tts:direction="ltr">Here are the Tableau defaults,</p>
+        <p begin="00:16:23.650" end="00:16:28.110" tts:direction="ltr">discrete fields default to the color hue
+<br />palette.</p>
+        <p begin="00:16:28.110" end="00:16:31.810" tts:direction="ltr">Just remember, that's where they're going
+<br />to be doing it.</p>
+        <p begin="00:16:31.810" end="00:16:33.960" tts:direction="ltr">There's a max of 20 colors.</p>
+        <p begin="00:16:33.960" end="00:16:39.170" tts:direction="ltr">And my recommendation in tables is seven
+<br />is best practice.</p>
+        <p begin="00:16:39.170" end="00:16:41.870" tts:direction="ltr">No more than seven different colors.</p>
+        <p begin="00:16:41.870" end="00:16:44.210" tts:direction="ltr">Although even that is definitely the max.</p>
+        <p begin="00:16:44.210" end="00:16:47.450" tts:direction="ltr">Discrete uses those individual colors,</p>
+        <p begin="00:16:47.450" end="00:16:52.430" tts:direction="ltr">continuous fields, default to that color
+<br />intensity palette.</p>
+        <p begin="00:16:52.430" end="00:16:57.250" tts:direction="ltr">I think we asked a question in previous
+<br />Karen about that idea of intensity,</p>
+        <p begin="00:16:57.250" end="00:17:00.170" tts:direction="ltr">and that is good for quantitative data.</p>
+        <p begin="00:17:00.170" end="00:17:03.375" tts:direction="ltr">Quantitative versus that categorical data.</p>
+        <p begin="00:17:03.375" end="00:17:06.240" tts:direction="ltr">Now we're going to talk about topography</p>
+        <p begin="00:17:06.240" end="00:17:10.300" tts:direction="ltr">and there is some attention that needs to
+<br />be given to typography.</p>
+        <p begin="00:17:10.300" end="00:17:13.060" tts:direction="ltr">One of the concepts I want to convey to
+<br />you is this idea</p>
+        <p begin="00:17:13.060" end="00:17:15.740" tts:direction="ltr">of San serf and serif typefaces.</p>
+        <p begin="00:17:15.740" end="00:17:17.120" tts:direction="ltr">If you speak French,</p>
+        <p begin="00:17:17.120" end="00:17:20.720" tts:direction="ltr">you'll know that Sans or Sans is without.</p>
+        <p begin="00:17:20.720" end="00:17:26.940" tts:direction="ltr">It's without the seraps you can see here
+<br />that in this type that I've got,</p>
+        <p begin="00:17:26.940" end="00:17:30.650" tts:direction="ltr">for example, I have these little feet</p>
+        <p begin="00:17:30.650" end="00:17:33.950" tts:direction="ltr">and these little serfs that are in the
+<br />typeface.</p>
+        <p begin="00:17:33.950" end="00:17:35.730" tts:direction="ltr">Now when I'm reading a book,</p>
+        <p begin="00:17:35.730" end="00:17:39.050" tts:direction="ltr">I want to move along as quickly as
+<br />possible.</p>
+        <p begin="00:17:39.050" end="00:17:41.030" tts:direction="ltr">That's what those seraps do.</p>
+        <p begin="00:17:41.030" end="00:17:46.350" tts:direction="ltr">They provide almost a line underneath the
+<br />text to follow along quickly.</p>
+        <p begin="00:17:46.350" end="00:17:49.750" tts:direction="ltr">Now, in our modern era with our backlit
+<br />screens,</p>
+        <p begin="00:17:49.750" end="00:17:53.070" tts:direction="ltr">we like more white space, believe it or
+<br />not,</p>
+        <p begin="00:17:53.070" end="00:17:59.170" tts:direction="ltr">in this very small way by having a so serf
+<br />type face creates more white space,</p>
+        <p begin="00:17:59.170" end="00:18:03.410" tts:direction="ltr">and it feels more modern because that's
+<br />what we're using more and more of.</p>
+        <p begin="00:18:03.410" end="00:18:05.170" tts:direction="ltr">Those are called sound seraph.</p>
+        <p begin="00:18:05.170" end="00:18:10.230" tts:direction="ltr">I have an example here with Avene and I
+<br />have an example here of Bodoni.</p>
+        <p begin="00:18:10.230" end="00:18:14.950" tts:direction="ltr">Now, just to geek out with you just a
+<br />little bit in terms of terminology,</p>
+        <p begin="00:18:14.950" end="00:18:17.570" tts:direction="ltr">type face is the family.</p>
+        <p begin="00:18:17.570" end="00:18:21.510" tts:direction="ltr">A font is a specific person in the family.</p>
+        <p begin="00:18:21.510" end="00:18:23.390" tts:direction="ltr">I belong to the Wappett family.</p>
+        <p begin="00:18:23.390" end="00:18:27.890" tts:direction="ltr">There are many of us, but I am as a font,</p>
+        <p begin="00:18:27.890" end="00:18:30.810" tts:direction="ltr">Lan Wappett six feet tall.</p>
+        <p begin="00:18:30.810" end="00:18:35.490" tts:direction="ltr">For fonts, it would be Avener bold eight
+<br />points,</p>
+        <p begin="00:18:35.490" end="00:18:38.930" tts:direction="ltr">but it's part of the Avener typeface.</p>
+        <p begin="00:18:38.930" end="00:18:41.690" tts:direction="ltr">Just a little bit of semantic so that you</p>
+        <p begin="00:18:41.690" end="00:18:45.325" tts:direction="ltr">can speak about what is a font and what's
+<br />a type face.</p>
+        <p begin="00:18:45.325" end="00:18:49.600" tts:direction="ltr">Now, when we talk about charts for
+<br />topography,</p>
+        <p begin="00:18:49.600" end="00:18:54.460" tts:direction="ltr">we're looking at ways that we can use this
+<br />in a contrasting way.</p>
+        <p begin="00:18:54.460" end="00:18:57.320" tts:direction="ltr">Now I've got my blue bars here</p>
+        <p begin="00:18:57.320" end="00:19:01.180" tts:direction="ltr">and they are the data points that I want
+<br />to pull out.</p>
+        <p begin="00:19:01.180" end="00:19:05.020" tts:direction="ltr">Now I'm going to use blue in my typeface
+<br />and</p>
+        <p begin="00:19:05.020" end="00:19:10.400" tts:direction="ltr">also in that total to really elevate those
+<br />and these are all muted.</p>
+        <p begin="00:19:10.760" end="00:19:17.535" tts:direction="ltr">I might even be able to use this blue into
+<br />the title.</p>
+        <p begin="00:19:17.535" end="00:19:22.870" tts:direction="ltr">I could even upscale that more so I can
+<br />tie those two things together.</p>
+        <p begin="00:19:22.870" end="00:19:27.950" tts:direction="ltr">We can also use it to highlight one area
+<br />of a focus.</p>
+        <p begin="00:19:27.950" end="00:19:29.770" tts:direction="ltr">You have maybe our business,</p>
+        <p begin="00:19:29.770" end="00:19:33.270" tts:direction="ltr">which is here in blue versus the other
+<br />businesses.</p>
+        <p begin="00:19:33.270" end="00:19:35.150" tts:direction="ltr">I might say, Oh, here's an outlier.</p>
+        <p begin="00:19:35.150" end="00:19:37.910" tts:direction="ltr">They're very successful in selection,</p>
+        <p begin="00:19:37.910" end="00:19:40.030" tts:direction="ltr">or they're very successful in service,</p>
+        <p begin="00:19:40.030" end="00:19:43.045" tts:direction="ltr">but we're clearly the leader in price.</p>
+        <p begin="00:19:43.045" end="00:19:46.940" tts:direction="ltr">So again, I'm decreasing one to increase
+<br />another.</p>
+        <p begin="00:19:46.940" end="00:19:48.680" tts:direction="ltr">Now you might have a manager who says,
+<br />Well,</p>
+        <p begin="00:19:48.680" end="00:19:50.900" tts:direction="ltr">I want to see that more specifically,
+<br />fine.</p>
+        <p begin="00:19:50.900" end="00:19:56.280" tts:direction="ltr">We'll have a backup, but to tell your
+<br />story and to really convey your insight,</p>
+        <p begin="00:19:56.280" end="00:20:01.660" tts:direction="ltr">let's make sure we're using topography in
+<br />contrast to be able to do that.</p>
+        <p begin="00:20:02.020" end="00:20:05.440" tts:direction="ltr">That is the end of our contrast segment.</p>
+        <p begin="00:20:05.440" end="00:20:08.340" tts:direction="ltr">We'll be on to Gestalt next.</p>
+    </div>
+  </body>
+</tt>

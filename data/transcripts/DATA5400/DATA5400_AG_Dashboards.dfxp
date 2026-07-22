@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>600357893 - 1_fltj56rz - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:02.079" tts:direction="ltr">Hello, visitors.</p>
+        <p begin="00:00:02.079" end="00:00:03.719" tts:direction="ltr">For this adventure guide,</p>
+        <p begin="00:00:03.719" end="00:00:06.599" tts:direction="ltr">we're going to create some dashboards.</p>
+        <p begin="00:00:06.599" end="00:00:09.880" tts:direction="ltr">You'll learn about tiled and floating
+<br />dashboards,</p>
+        <p begin="00:00:09.880" end="00:00:14.320" tts:direction="ltr">how to make dashboards into device
+<br />specific sizes.</p>
+        <p begin="00:00:14.320" end="00:00:17.880" tts:direction="ltr">We'll also address the awesome actions</p>
+        <p begin="00:00:17.880" end="00:00:20.799" tts:direction="ltr">that you can do in a dashboard with a
+<br />filter action,</p>
+        <p begin="00:00:20.799" end="00:00:23.600" tts:direction="ltr">highlight action, URL action,</p>
+        <p begin="00:00:23.600" end="00:00:25.650" tts:direction="ltr">and a parameter action.</p>
+        <p begin="00:00:25.650" end="00:00:32.940" tts:direction="ltr">So let's go ahead and dive into our AG
+<br />dashboard start Tix file.</p>
+        <p begin="00:00:32.940" end="00:00:38.459" tts:direction="ltr">You can see here that I've got a bar line
+<br />and a highlight table.</p>
+        <p begin="00:00:38.459" end="00:00:40.539" tts:direction="ltr">Let me just take a look at those.</p>
+        <p begin="00:00:40.539" end="00:00:42.699" tts:direction="ltr">Those are the three we're going to be
+<br />working with</p>
+        <p begin="00:00:42.699" end="00:00:45.619" tts:direction="ltr">as we create and work with our dashboard.</p>
+        <p begin="00:00:45.619" end="00:00:47.719" tts:direction="ltr">Let me move this over a little bit.</p>
+        <p begin="00:00:47.719" end="00:00:56.299" tts:direction="ltr">So let's click on the overview dashboard
+<br />tab and take a look at what we have.</p>
+        <p begin="00:00:56.299" end="00:00:59.179" tts:direction="ltr">Here is just a blank view area.</p>
+        <p begin="00:00:59.179" end="00:01:03.619" tts:direction="ltr">You can see right here on the left that
+<br />your sheets are being</p>
+        <p begin="00:01:03.619" end="00:01:08.099" tts:direction="ltr">shown and say I want to create a
+<br />dashboard, it's fairly easy.</p>
+        <p begin="00:01:08.099" end="00:01:09.659" tts:direction="ltr">I just begin to drag and drop.</p>
+        <p begin="00:01:09.659" end="00:01:11.900" tts:direction="ltr">I'm dropping in my bar chart,</p>
+        <p begin="00:01:11.900" end="00:01:13.139" tts:direction="ltr">and then I'm going to do my line.</p>
+        <p begin="00:01:13.139" end="00:01:14.939" tts:direction="ltr">It's highlighted to below.</p>
+        <p begin="00:01:14.939" end="00:01:18.739" tts:direction="ltr">Highlight table off to the right here.</p>
+        <p begin="00:01:18.860" end="00:01:25.899" tts:direction="ltr">Maybe I'll just drag and move this to the
+<br />top so I can get it up there.</p>
+        <p begin="00:01:25.980" end="00:01:28.379" tts:direction="ltr">You're already seeing some of</p>
+        <p begin="00:01:28.379" end="00:01:32.219" tts:direction="ltr">the problems with the way that this is
+<br />constructed.</p>
+        <p begin="00:01:32.219" end="00:01:34.060" tts:direction="ltr">This is a mess.</p>
+        <p begin="00:01:34.060" end="00:01:36.699" tts:direction="ltr">While you can drag and drop,</p>
+        <p begin="00:01:36.699" end="00:01:42.020" tts:direction="ltr">what's happening here is Tableau is
+<br />putting these into a singular container.</p>
+        <p begin="00:01:42.020" end="00:01:44.819" tts:direction="ltr">Now how do I know that? If you click on</p>
+        <p begin="00:01:44.819" end="00:01:48.260" tts:direction="ltr">this layout tab up here in the left hand
+<br />corner,</p>
+        <p begin="00:01:48.260" end="00:01:51.230" tts:direction="ltr">you can see that there's this item
+<br />hierarchy.</p>
+        <p begin="00:01:51.230" end="00:01:55.199" tts:direction="ltr">And you can see that there are horizontal</p>
+        <p begin="00:01:55.199" end="00:02:01.439" tts:direction="ltr">and there are the horizontal tiles that
+<br />you have the bar and the line,</p>
+        <p begin="00:02:01.439" end="00:02:04.199" tts:direction="ltr">and then you have the highlight table on a
+<br />separate one,</p>
+        <p begin="00:02:04.199" end="00:02:06.959" tts:direction="ltr">and then you have your prophet on another.</p>
+        <p begin="00:02:06.959" end="00:02:12.400" tts:direction="ltr">This is messy and difficult to deal with.</p>
+        <p begin="00:02:12.400" end="00:02:14.439" tts:direction="ltr">A lot of students find it frustrating</p>
+        <p begin="00:02:14.439" end="00:02:16.520" tts:direction="ltr">just to drag and drop when they're
+<br />wondering</p>
+        <p begin="00:02:16.520" end="00:02:20.825" tts:direction="ltr">why and how their dashboards are not
+<br />working as well as they want.</p>
+        <p begin="00:02:20.825" end="00:02:23.929" tts:direction="ltr">So whenever you create a dashboard,</p>
+        <p begin="00:02:23.929" end="00:02:26.810" tts:direction="ltr">it's a good idea to use either containers
+<br />or</p>
+        <p begin="00:02:26.810" end="00:02:29.170" tts:direction="ltr">floating objects rather than just</p>
+        <p begin="00:02:29.170" end="00:02:32.569" tts:direction="ltr">dragging and dropping a sheet straight
+<br />into the empty dashboard.</p>
+        <p begin="00:02:32.569" end="00:02:34.569" tts:direction="ltr">That way you can control your layout,</p>
+        <p begin="00:02:34.569" end="00:02:36.089" tts:direction="ltr">you can control your sizing,</p>
+        <p begin="00:02:36.089" end="00:02:39.250" tts:direction="ltr">you can make sure that your dashboard
+<br />looks the way you want it to.</p>
+        <p begin="00:02:39.250" end="00:02:42.010" tts:direction="ltr">I'd always advise choosing either one</p>
+        <p begin="00:02:42.010" end="00:02:45.210" tts:direction="ltr">or the other and not mixing containers and
+<br />layout and</p>
+        <p begin="00:02:45.210" end="00:02:47.410" tts:direction="ltr">floating layout because it can cause</p>
+        <p begin="00:02:47.410" end="00:02:51.720" tts:direction="ltr">trouble when you go to publish the
+<br />dashboard or you decide to</p>
+        <p begin="00:02:51.720" end="00:02:55.199" tts:direction="ltr">resize it and you might find some of the
+<br />floating elements</p>
+        <p begin="00:02:55.199" end="00:02:59.560" tts:direction="ltr">move around and this can be incredibly
+<br />annoying from personal experience.</p>
+        <p begin="00:02:59.560" end="00:03:03.879" tts:direction="ltr">You might ask which is best floating or
+<br />tiled, fixed or moving.</p>
+        <p begin="00:03:03.879" end="00:03:06.920" tts:direction="ltr">It really depends on how you want it to
+<br />look.</p>
+        <p begin="00:03:06.920" end="00:03:11.160" tts:direction="ltr">Some people love the very structure tile
+<br />layout</p>
+        <p begin="00:03:11.160" end="00:03:13.440" tts:direction="ltr">where everything goes inside of a grid,</p>
+        <p begin="00:03:13.440" end="00:03:16.600" tts:direction="ltr">and then some others really like the
+<br />floating elements because</p>
+        <p begin="00:03:16.600" end="00:03:19.890" tts:direction="ltr">it allows a lot of flexibility.</p>
+        <p begin="00:03:19.890" end="00:03:22.540" tts:direction="ltr">You can create beautiful dashboards using</p>
+        <p begin="00:03:22.540" end="00:03:24.820" tts:direction="ltr">both methods and I'm going</p>
+        <p begin="00:03:24.820" end="00:03:27.620" tts:direction="ltr">to show you how to use both and then for
+<br />your own project,</p>
+        <p begin="00:03:27.620" end="00:03:33.220" tts:direction="ltr">you can determine which best fits for you.</p>
+        <p begin="00:03:34.010" end="00:03:38.769" tts:direction="ltr">Let's take a look at a tile dashboard.</p>
+        <p begin="00:03:38.769" end="00:03:46.090" tts:direction="ltr">We're on our worksheet here and under the
+<br />tiled dashboard tab here.</p>
+        <p begin="00:03:46.890" end="00:03:49.849" tts:direction="ltr">When you're thinking about your dashboard,</p>
+        <p begin="00:03:49.849" end="00:03:52.250" tts:direction="ltr">I want you to think about how it will
+<br />look.</p>
+        <p begin="00:03:52.250" end="00:03:55.250" tts:direction="ltr">What's your priority and how can you best</p>
+        <p begin="00:03:55.250" end="00:03:59.170" tts:direction="ltr">use this upper left hand area in your
+<br />dashboard?</p>
+        <p begin="00:03:59.170" end="00:04:02.370" tts:direction="ltr">We're not going to add on any takeaway
+<br />titles.</p>
+        <p begin="00:04:02.370" end="00:04:05.649" tts:direction="ltr">That's for another design adventure guide,</p>
+        <p begin="00:04:05.649" end="00:04:08.689" tts:direction="ltr">but I want you to keep those in mind as
+<br />you begin</p>
+        <p begin="00:04:08.689" end="00:04:12.320" tts:direction="ltr">to sort and place your various sheets.</p>
+        <p begin="00:04:12.320" end="00:04:16.150" tts:direction="ltr">Now, I'm going to use the tiles,</p>
+        <p begin="00:04:16.150" end="00:04:19.749" tts:direction="ltr">and I want to use horizontal and vertical
+<br />containers</p>
+        <p begin="00:04:19.749" end="00:04:22.949" tts:direction="ltr">and to set up a grid and drop in the
+<br />elements as I go.</p>
+        <p begin="00:04:22.949" end="00:04:25.269" tts:direction="ltr">It's good to just take a look at what you
+<br />have.</p>
+        <p begin="00:04:25.269" end="00:04:28.829" tts:direction="ltr">In this case, I have a line chart that's
+<br />very long.</p>
+        <p begin="00:04:28.829" end="00:04:32.710" tts:direction="ltr">That's going to need a horizontal
+<br />container.</p>
+        <p begin="00:04:32.710" end="00:04:40.270" tts:direction="ltr">Then I'm going to put my bar and my
+<br />highlight table in a horizontal container.</p>
+        <p begin="00:04:40.270" end="00:04:42.549" tts:direction="ltr">What I'm going to do is first bring</p>
+        <p begin="00:04:42.549" end="00:04:47.979" tts:direction="ltr">in my vertical container and just drop
+<br />that in.</p>
+        <p begin="00:04:47.979" end="00:04:51.019" tts:direction="ltr">I'm going to start here in the objects and
+<br />just drag and drop.</p>
+        <p begin="00:04:51.019" end="00:04:54.299" tts:direction="ltr">Now, one of the things I like to do when
+<br />I'm first working in</p>
+        <p begin="00:04:54.299" end="00:04:57.700" tts:direction="ltr">a dashboard is to change the background
+<br />color.</p>
+        <p begin="00:04:57.700" end="00:04:59.499" tts:direction="ltr">If I go into layout here,</p>
+        <p begin="00:04:59.499" end="00:05:02.940" tts:direction="ltr">then you can see that right now the
+<br />background color is set to none.</p>
+        <p begin="00:05:02.940" end="00:05:07.379" tts:direction="ltr">This is just helps me to look at what I'm
+<br />doing so I can see it better.</p>
+        <p begin="00:05:07.379" end="00:05:09.979" tts:direction="ltr">I can always remove this color or change
+<br />it.</p>
+        <p begin="00:05:09.979" end="00:05:13.419" tts:direction="ltr">I'm going to just click on this light gray
+<br />here so that I can see that.</p>
+        <p begin="00:05:13.419" end="00:05:15.664" tts:direction="ltr">Now I'm back to my dashboard.</p>
+        <p begin="00:05:15.664" end="00:05:19.470" tts:direction="ltr">And I've got my container</p>
+        <p begin="00:05:19.470" end="00:05:23.149" tts:direction="ltr">and I'm going to just take this line and
+<br />I'm going to drop it right in.</p>
+        <p begin="00:05:23.149" end="00:05:26.789" tts:direction="ltr">We've got this legend here off to the
+<br />right hand side,</p>
+        <p begin="00:05:26.789" end="00:05:28.110" tts:direction="ltr">we'll deal with that in a moment,</p>
+        <p begin="00:05:28.110" end="00:05:29.974" tts:direction="ltr">but this is where I want it to be.</p>
+        <p begin="00:05:29.974" end="00:05:31.999" tts:direction="ltr">Now the next thing I need to do,</p>
+        <p begin="00:05:31.999" end="00:05:35.039" tts:direction="ltr">based on my sketch after I've thought
+<br />about it,</p>
+        <p begin="00:05:35.039" end="00:05:37.719" tts:direction="ltr">I want to go ahead and have my bar chart</p>
+        <p begin="00:05:37.719" end="00:05:40.640" tts:direction="ltr">here up on the upper left hand corner.</p>
+        <p begin="00:05:40.640" end="00:05:42.079" tts:direction="ltr">I feel like that has some good data,</p>
+        <p begin="00:05:42.079" end="00:05:44.519" tts:direction="ltr">and then I'll do my highlight table next
+<br />to it.</p>
+        <p begin="00:05:44.519" end="00:05:47.520" tts:direction="ltr">What I'm going to do because I'm doing a
+<br />tiled dashboard,</p>
+        <p begin="00:05:47.520" end="00:05:50.040" tts:direction="ltr">I'm going to go ahead and grab this
+<br />horizontal object,</p>
+        <p begin="00:05:50.040" end="00:05:51.880" tts:direction="ltr">and I'm going to drag it and drop it.</p>
+        <p begin="00:05:51.880" end="00:05:54.759" tts:direction="ltr">Now you'll notice that the little thing I
+<br />haven't let</p>
+        <p begin="00:05:54.759" end="00:05:58.015" tts:direction="ltr">go of the mouse and you might have to try
+<br />this a couple of times.</p>
+        <p begin="00:05:58.015" end="00:06:00.470" tts:direction="ltr">But you'll see there's different areas
+<br />that are highlighted</p>
+        <p begin="00:06:00.470" end="00:06:03.029" tts:direction="ltr">right here onto the left,</p>
+        <p begin="00:06:03.029" end="00:06:05.149" tts:direction="ltr">up here on top, across the whole way.</p>
+        <p begin="00:06:05.149" end="00:06:08.709" tts:direction="ltr">What I want to do is actually highlight
+<br />just this little section</p>
+        <p begin="00:06:08.709" end="00:06:12.749" tts:direction="ltr">right above where I have my line charts.</p>
+        <p begin="00:06:12.749" end="00:06:14.229" tts:direction="ltr">I'm going to just drop that in.</p>
+        <p begin="00:06:14.229" end="00:06:18.639" tts:direction="ltr">It's not in this area, but it's in this
+<br />area and we're tiling things, okay?</p>
+        <p begin="00:06:18.639" end="00:06:21.489" tts:direction="ltr">So it automatically puts</p>
+        <p begin="00:06:21.489" end="00:06:23.890" tts:direction="ltr">that background color and I can change
+<br />that again too.</p>
+        <p begin="00:06:23.890" end="00:06:26.370" tts:direction="ltr">Actually, that's because it's still in the
+<br />same container,</p>
+        <p begin="00:06:26.370" end="00:06:30.209" tts:direction="ltr">and I can see that it's all in the same
+<br />container by looking at the hierarchy.</p>
+        <p begin="00:06:30.209" end="00:06:32.770" tts:direction="ltr">Here I've got that horizontal and then
+<br />I've</p>
+        <p begin="00:06:32.770" end="00:06:35.409" tts:direction="ltr">got the vertical here and you can see
+<br />here,</p>
+        <p begin="00:06:35.409" end="00:06:40.769" tts:direction="ltr">I've got my horizontal line of my profit
+<br />here in this vertical area.</p>
+        <p begin="00:06:40.769" end="00:06:44.010" tts:direction="ltr">It's saying it's all contained within just
+<br />this right here,</p>
+        <p begin="00:06:44.010" end="00:06:45.329" tts:direction="ltr">so it's a lot more tidy.</p>
+        <p begin="00:06:45.329" end="00:06:47.849" tts:direction="ltr">Let's go back to my dashboard tab here,</p>
+        <p begin="00:06:47.849" end="00:06:50.649" tts:direction="ltr">and then what we'll do is we'll go ahead
+<br />and drag and</p>
+        <p begin="00:06:50.649" end="00:06:54.229" tts:direction="ltr">drop We'll just put it right here and
+<br />we'll</p>
+        <p begin="00:06:54.229" end="00:06:57.750" tts:direction="ltr">put the bar in and then we'll take the
+<br />highlight table and we'll</p>
+        <p begin="00:06:57.750" end="00:07:02.109" tts:direction="ltr">drag and drop it now again to be a little
+<br />more familiar with how to use this,</p>
+        <p begin="00:07:02.109" end="00:07:05.589" tts:direction="ltr">but I've got this right hand side and I'm
+<br />going to just drop that in.</p>
+        <p begin="00:07:05.589" end="00:07:08.670" tts:direction="ltr">See they're both inside of that container.</p>
+        <p begin="00:07:08.670" end="00:07:11.549" tts:direction="ltr">You can go back and you can see how that's
+<br />set up</p>
+        <p begin="00:07:11.549" end="00:07:14.909" tts:direction="ltr">here and everything's within this
+<br />horizontal container.</p>
+        <p begin="00:07:14.909" end="00:07:17.699" tts:direction="ltr">We have the bar and then we have the
+<br />highlight. Okay.</p>
+        <p begin="00:07:17.699" end="00:07:23.339" tts:direction="ltr">This just makes it so that it's better to
+<br />organize things as you</p>
+        <p begin="00:07:23.339" end="00:07:26.540" tts:direction="ltr">begin to change your fonts</p>
+        <p begin="00:07:26.540" end="00:07:29.579" tts:direction="ltr">and change your colors and so forth when
+<br />we can get this right.</p>
+        <p begin="00:07:29.579" end="00:07:32.460" tts:direction="ltr">This is not there yet.</p>
+        <p begin="00:07:33.340" end="00:07:36.299" tts:direction="ltr">Whenever you're creating a dashboard,</p>
+        <p begin="00:07:36.299" end="00:07:37.740" tts:direction="ltr">you really want to make sure that you're</p>
+        <p begin="00:07:37.740" end="00:07:40.539" tts:direction="ltr">maximizing the best use of all your space,</p>
+        <p begin="00:07:40.539" end="00:07:44.500" tts:direction="ltr">and for that reason, space is a premium
+<br />and every single pixel,</p>
+        <p begin="00:07:44.500" end="00:07:48.299" tts:direction="ltr">every single part needs to contribute to
+<br />the overall dashboard.</p>
+        <p begin="00:07:48.299" end="00:07:51.500" tts:direction="ltr">In this case, this legend right here is
+<br />not doing a whole lot.</p>
+        <p begin="00:07:51.500" end="00:07:54.724" tts:direction="ltr">I know that orange is negative, blue is
+<br />positive.</p>
+        <p begin="00:07:54.724" end="00:07:57.510" tts:direction="ltr">And the color gradient is hard to
+<br />determine anyway.</p>
+        <p begin="00:07:57.510" end="00:07:59.629" tts:direction="ltr">It's not really adding anything at this
+<br />point.</p>
+        <p begin="00:07:59.629" end="00:08:03.229" tts:direction="ltr">In fact, if I was going to design this,</p>
+        <p begin="00:08:03.229" end="00:08:06.269" tts:direction="ltr">I would probably think about those
+<br />takeaway titles and use</p>
+        <p begin="00:08:06.269" end="00:08:09.829" tts:direction="ltr">color within my titles to really create
+<br />something that's working hard.</p>
+        <p begin="00:08:09.829" end="00:08:12.190" tts:direction="ltr">Again, a plug for that design adventure
+<br />guide,</p>
+        <p begin="00:08:12.190" end="00:08:14.429" tts:direction="ltr">but I'm going to go ahead and just remove
+<br />that.</p>
+        <p begin="00:08:14.429" end="00:08:16.230" tts:direction="ltr">Remove it from the dashboard.</p>
+        <p begin="00:08:16.230" end="00:08:19.029" tts:direction="ltr">I'm going to delete that container. Now
+<br />I've got this.</p>
+        <p begin="00:08:19.029" end="00:08:21.109" tts:direction="ltr">I have a lot more space in here.</p>
+        <p begin="00:08:21.109" end="00:08:23.509" tts:direction="ltr">What I'm going to do is just select this
+<br />one,</p>
+        <p begin="00:08:23.509" end="00:08:26.379" tts:direction="ltr">move it from standard to entire view.</p>
+        <p begin="00:08:26.379" end="00:08:30.049" tts:direction="ltr">And this one, standard to entire View.</p>
+        <p begin="00:08:30.049" end="00:08:33.410" tts:direction="ltr">Now I can go ahead and click and drag and
+<br />I can move things around.</p>
+        <p begin="00:08:33.410" end="00:08:36.569" tts:direction="ltr">I can go into the charts</p>
+        <p begin="00:08:36.569" end="00:08:41.330" tts:direction="ltr">themselves on their sheets and I can
+<br />change some of this.</p>
+        <p begin="00:08:41.330" end="00:08:45.890" tts:direction="ltr">I can change the typeface, I can change
+<br />the color.</p>
+        <p begin="00:08:45.890" end="00:08:47.730" tts:direction="ltr">That's where you change those types of
+<br />things.</p>
+        <p begin="00:08:47.730" end="00:08:51.770" tts:direction="ltr">But right now, I have the basic design</p>
+        <p begin="00:08:51.770" end="00:08:56.725" tts:direction="ltr">of my dashboard that begins to help tell
+<br />my story a lot better.</p>
+        <p begin="00:08:56.725" end="00:09:01.480" tts:direction="ltr">So by using containers and embedding one
+<br />inside of the other,</p>
+        <p begin="00:09:01.480" end="00:09:03.840" tts:direction="ltr">you can make sure that your layout is
+<br />correct,</p>
+        <p begin="00:09:03.840" end="00:09:08.399" tts:direction="ltr">and you can go back and tweak things
+<br />within these sheets like I mentioned,</p>
+        <p begin="00:09:08.399" end="00:09:11.840" tts:direction="ltr">but once that layout is done, you're good
+<br />to go.</p>
+        <p begin="00:09:12.130" end="00:09:17.649" tts:direction="ltr">All right. Let's take a look at a floating
+<br />dashboard.</p>
+        <p begin="00:09:17.649" end="00:09:24.129" tts:direction="ltr">Again, we're on our AG dashboard start
+<br />under the floating dashboard.</p>
+        <p begin="00:09:24.129" end="00:09:27.850" tts:direction="ltr">Here you'll just have to note that instead
+<br />of having tiled,</p>
+        <p begin="00:09:27.850" end="00:09:31.009" tts:direction="ltr">which we just covered, you're going to
+<br />select floating.</p>
+        <p begin="00:09:31.009" end="00:09:35.250" tts:direction="ltr">Just by doing that, I can drag and just
+<br />drop</p>
+        <p begin="00:09:35.250" end="00:09:40.600" tts:direction="ltr">my various elements into the view.</p>
+        <p begin="00:09:40.600" end="00:09:45.960" tts:direction="ltr">In this case, I can just pull these and
+<br />move them around.</p>
+        <p begin="00:09:45.960" end="00:09:49.360" tts:direction="ltr">For instance, maybe I want my line down
+<br />here at the bottom.</p>
+        <p begin="00:09:49.360" end="00:09:53.280" tts:direction="ltr">You could just click and drag that across.
+<br />There we go.</p>
+        <p begin="00:09:53.280" end="00:09:58.015" tts:direction="ltr">Maybe I'll shrink that a little bit.</p>
+        <p begin="00:09:58.015" end="00:10:01.470" tts:direction="ltr">Just moving that around just follow along
+<br />with me.</p>
+        <p begin="00:10:01.470" end="00:10:08.390" tts:direction="ltr">I'm going to go ahead and just move my
+<br />highlight table here and resize that.</p>
+        <p begin="00:10:08.470" end="00:10:12.749" tts:direction="ltr">Then also, first of all, I've got this
+<br />profit,</p>
+        <p begin="00:10:12.749" end="00:10:14.190" tts:direction="ltr">again, because it's floating,</p>
+        <p begin="00:10:14.190" end="00:10:17.309" tts:direction="ltr">I can just lay it on top of another
+<br />element.</p>
+        <p begin="00:10:17.309" end="00:10:24.390" tts:direction="ltr">Very different than the tiled where you
+<br />have to have a space for each.</p>
+        <p begin="00:10:24.390" end="00:10:26.629" tts:direction="ltr">One of the difficult things with floating
+<br />is</p>
+        <p begin="00:10:26.629" end="00:10:29.070" tts:direction="ltr">you see I'm trying to line these up.</p>
+        <p begin="00:10:29.070" end="00:10:32.830" tts:direction="ltr">The way that I can improve that is if I go
+<br />into the layout and</p>
+        <p begin="00:10:32.830" end="00:10:37.470" tts:direction="ltr">I see that maybe we'll move this up just a
+<br />little bit here.</p>
+        <p begin="00:10:37.470" end="00:10:40.430" tts:direction="ltr">Now it's at 40 here,</p>
+        <p begin="00:10:40.430" end="00:10:42.230" tts:direction="ltr">and then I've clicked on this one.</p>
+        <p begin="00:10:42.230" end="00:10:44.390" tts:direction="ltr">I can move this to be 40.</p>
+        <p begin="00:10:44.390" end="00:10:47.470" tts:direction="ltr">Now those are on the same line.</p>
+        <p begin="00:10:47.470" end="00:10:54.990" tts:direction="ltr">You have to go into this XY positioning to
+<br />really straighten things up,</p>
+        <p begin="00:10:54.990" end="00:10:56.429" tts:direction="ltr">which can be frustrating.</p>
+        <p begin="00:10:56.429" end="00:11:01.709" tts:direction="ltr">Unlike other applications that you might
+<br />be familiar with like PowerPoint,</p>
+        <p begin="00:11:01.709" end="00:11:07.670" tts:direction="ltr">Tableau has no idea about the other
+<br />elements on this floating dashboard.</p>
+        <p begin="00:11:07.670" end="00:11:10.509" tts:direction="ltr">That's why you have to use these XY
+<br />coordinates</p>
+        <p begin="00:11:10.509" end="00:11:14.150" tts:direction="ltr">and determine how you can get them on the
+<br />same level.</p>
+        <p begin="00:11:14.150" end="00:11:17.870" tts:direction="ltr">Um, So let's see.</p>
+        <p begin="00:11:17.870" end="00:11:20.670" tts:direction="ltr">One of the great things,</p>
+        <p begin="00:11:20.670" end="00:11:23.990" tts:direction="ltr">you probably noticed that that bar chart
+<br />or I'm going</p>
+        <p begin="00:11:23.990" end="00:11:27.110" tts:direction="ltr">to go to the floating and I'm going to
+<br />send that to back to see where that is.</p>
+        <p begin="00:11:27.110" end="00:11:29.149" tts:direction="ltr">There it is. There's that profit.</p>
+        <p begin="00:11:29.149" end="00:11:32.470" tts:direction="ltr">Say for instance, in this particular view,</p>
+        <p begin="00:11:32.470" end="00:11:34.510" tts:direction="ltr">I want to do a descending order.</p>
+        <p begin="00:11:34.510" end="00:11:36.810" tts:direction="ltr">Well, now I've got this whitespace right
+<br />here.</p>
+        <p begin="00:11:36.810" end="00:11:41.950" tts:direction="ltr">Could be a great place to put a graphical
+<br />element like this legend here.</p>
+        <p begin="00:11:41.950" end="00:11:43.389" tts:direction="ltr">I've already brought that to top.</p>
+        <p begin="00:11:43.389" end="00:11:44.909" tts:direction="ltr">Let me just show you how I did that again.</p>
+        <p begin="00:11:44.909" end="00:11:47.229" tts:direction="ltr">If I select this, do this drop down,</p>
+        <p begin="00:11:47.229" end="00:11:49.870" tts:direction="ltr">you can see floating order and you can
+<br />bring to front,</p>
+        <p begin="00:11:49.870" end="00:11:51.589" tts:direction="ltr">bring back, et cetera,</p>
+        <p begin="00:11:51.589" end="00:11:52.870" tts:direction="ltr">things that you're familiar with.</p>
+        <p begin="00:11:52.870" end="00:11:58.030" tts:direction="ltr">In this case, just brought that particular
+<br />profit legend forward.</p>
+        <p begin="00:11:58.030" end="00:12:03.449" tts:direction="ltr">Here, I How to create a floating
+<br />dashboard, fairly straightforward.</p>
+        <p begin="00:12:03.449" end="00:12:07.369" tts:direction="ltr">You have incredibly more flexibility.</p>
+        <p begin="00:12:07.369" end="00:12:12.250" tts:direction="ltr">Generally, a tile dashboards are better
+<br />for gridded layers.</p>
+        <p begin="00:12:12.250" end="00:12:14.209" tts:direction="ltr">For a standard type of dashboard,</p>
+        <p begin="00:12:14.209" end="00:12:16.010" tts:direction="ltr">if you want more creativity,</p>
+        <p begin="00:12:16.010" end="00:12:22.090" tts:direction="ltr">more flexibility, then a floating
+<br />dashboard like this might be your best
+<br />bet.</p>
+        <p begin="00:12:22.090" end="00:12:26.489" tts:direction="ltr">Neither is better. It's just depending
+<br />again on your purpose.</p>
+        <p begin="00:12:28.010" end="00:12:32.590" tts:direction="ltr">Okay. Let's take a look at</p>
+        <p begin="00:12:32.590" end="00:12:39.909" tts:direction="ltr">device specific dashboards and will be on
+<br />that tab device specific dashboards.</p>
+        <p begin="00:12:39.909" end="00:12:42.150" tts:direction="ltr">You may have noticed you have some</p>
+        <p begin="00:12:42.150" end="00:12:46.069" tts:direction="ltr">additional are viewing some additional
+<br />charts here.</p>
+        <p begin="00:12:46.069" end="00:12:50.109" tts:direction="ltr">I've added device scatter plot, device
+<br />highlight,</p>
+        <p begin="00:12:50.109" end="00:12:52.389" tts:direction="ltr">device line device bar so that I</p>
+        <p begin="00:12:52.389" end="00:12:55.070" tts:direction="ltr">can show you this with four different
+<br />chart types,</p>
+        <p begin="00:12:55.070" end="00:12:56.590" tts:direction="ltr">a pretty simple layout.</p>
+        <p begin="00:12:56.590" end="00:13:00.669" tts:direction="ltr">I'm just going to do a tiled dashboard.</p>
+        <p begin="00:13:00.669" end="00:13:04.150" tts:direction="ltr">I'm going to drop in the horizontal
+<br />container here,</p>
+        <p begin="00:13:04.150" end="00:13:09.630" tts:direction="ltr">and then I'm going to go ahead and just
+<br />use these device bar.</p>
+        <p begin="00:13:09.630" end="00:13:12.070" tts:direction="ltr">I'm going to just drag and drop that.</p>
+        <p begin="00:13:12.070" end="00:13:17.550" tts:direction="ltr">I'm going to just quickly create this for
+<br />this little demo,</p>
+        <p begin="00:13:17.550" end="00:13:20.990" tts:direction="ltr">so you can see doing here,</p>
+        <p begin="00:13:20.990" end="00:13:22.990" tts:direction="ltr">and then I've got my scatter plot.</p>
+        <p begin="00:13:22.990" end="00:13:25.069" tts:direction="ltr">You can see I've got all my legends here.</p>
+        <p begin="00:13:25.069" end="00:13:28.670" tts:direction="ltr">I don't need all of them. I'm going to
+<br />just remove the profit one.</p>
+        <p begin="00:13:28.670" end="00:13:31.790" tts:direction="ltr">I'm going to keep the segment in market
+<br />and I'm going to remove</p>
+        <p begin="00:13:31.790" end="00:13:36.390" tts:direction="ltr">the subcategory as well and the quantity.
+<br />We just have those.</p>
+        <p begin="00:13:36.390" end="00:13:39.989" tts:direction="ltr">Here I've got my dashboard.</p>
+        <p begin="00:13:39.989" end="00:13:42.749" tts:direction="ltr">It's not thoroughly designed,</p>
+        <p begin="00:13:42.749" end="00:13:45.470" tts:direction="ltr">but it will help show this feature</p>
+        <p begin="00:13:45.470" end="00:13:49.070" tts:direction="ltr">in Tableau to create device specific
+<br />dashboards.</p>
+        <p begin="00:13:49.070" end="00:13:54.230" tts:direction="ltr">One really important is to make sure that
+<br />your layout always looks great and</p>
+        <p begin="00:13:54.230" end="00:14:00.750" tts:direction="ltr">Tableaus really created this ability to do
+<br />that on the fly and I Gosh,</p>
+        <p begin="00:14:00.750" end="00:14:04.789" tts:direction="ltr">it just makes designing so much easier for
+<br />your specific screen size.</p>
+        <p begin="00:14:04.789" end="00:14:10.550" tts:direction="ltr">Whether that means a large monitor or a
+<br />tablet or a smartphone,</p>
+        <p begin="00:14:10.550" end="00:14:15.230" tts:direction="ltr">you can make sure that you have control
+<br />over what your audience is seeing.</p>
+        <p begin="00:14:15.230" end="00:14:17.910" tts:direction="ltr">One of the problems is that sometimes</p>
+        <p begin="00:14:17.910" end="00:14:22.269" tts:direction="ltr">the physical screen size can change
+<br />between those devices,</p>
+        <p begin="00:14:22.269" end="00:14:24.270" tts:direction="ltr">and so that's why we're going to create</p>
+        <p begin="00:14:24.270" end="00:14:29.269" tts:direction="ltr">specific dashboards for each of those
+<br />devices.</p>
+        <p begin="00:14:29.269" end="00:14:33.030" tts:direction="ltr">Here we have our dashboard that I just
+<br />created.</p>
+        <p begin="00:14:33.030" end="00:14:34.989" tts:direction="ltr">You'll notice here on the left hand panel,</p>
+        <p begin="00:14:34.989" end="00:14:37.470" tts:direction="ltr">it says default here.</p>
+        <p begin="00:14:37.750" end="00:14:40.510" tts:direction="ltr">I select that, you'll see that there's
+<br />always</p>
+        <p begin="00:14:40.510" end="00:14:44.190" tts:direction="ltr">a phone and you can click on that to see
+<br />what's going to happen.</p>
+        <p begin="00:14:44.190" end="00:14:45.990" tts:direction="ltr">Right now, there's not anything.</p>
+        <p begin="00:14:45.990" end="00:14:50.870" tts:direction="ltr">If we click to default and we say device
+<br />preview here,</p>
+        <p begin="00:14:50.870" end="00:14:53.670" tts:direction="ltr">we can now see that we have some control
+<br />over</p>
+        <p begin="00:14:53.670" end="00:14:57.230" tts:direction="ltr">the size and you can change your browser
+<br />size if you so choose.</p>
+        <p begin="00:14:57.230" end="00:15:02.349" tts:direction="ltr">We're going to do the desktop first.</p>
+        <p begin="00:15:02.349" end="00:15:04.710" tts:direction="ltr">So we'll just click this little right hand
+<br />arrow,</p>
+        <p begin="00:15:04.710" end="00:15:08.389" tts:direction="ltr">generic desktop monitor of 1920 by 1080,</p>
+        <p begin="00:15:08.389" end="00:15:14.439" tts:direction="ltr">and then you can see by this um outline
+<br />here how large that is.</p>
+        <p begin="00:15:14.439" end="00:15:17.120" tts:direction="ltr">Clearly, I've got a lot of room here.</p>
+        <p begin="00:15:17.120" end="00:15:18.920" tts:direction="ltr">I'm going to go ahead and add</p>
+        <p begin="00:15:18.920" end="00:15:23.240" tts:direction="ltr">that desktop layout and now you can see
+<br />that that is underneath this default.</p>
+        <p begin="00:15:23.240" end="00:15:26.320" tts:direction="ltr">Now I've got the default here and then
+<br />I've got my desktop.</p>
+        <p begin="00:15:26.320" end="00:15:29.600" tts:direction="ltr">Now I can do some modifications here with
+<br />the desktop,</p>
+        <p begin="00:15:29.600" end="00:15:33.879" tts:direction="ltr">but I'm going to just keep moving on and
+<br />adding in a tablet.</p>
+        <p begin="00:15:33.879" end="00:15:35.360" tts:direction="ltr">Here I've got the tablet,</p>
+        <p begin="00:15:35.360" end="00:15:37.199" tts:direction="ltr">here's the generic tablet size.</p>
+        <p begin="00:15:37.199" end="00:15:39.320" tts:direction="ltr">It includes the Tableau mobile app,</p>
+        <p begin="00:15:39.320" end="00:15:41.400" tts:direction="ltr">which is a cool new feature that they've
+<br />had.</p>
+        <p begin="00:15:41.400" end="00:15:43.440" tts:direction="ltr">I'm going to go ahead and add the tablet
+<br />app.</p>
+        <p begin="00:15:43.440" end="00:15:47.269" tts:direction="ltr">In this case, what I'm going to do is
+<br />change my design a little bit.</p>
+        <p begin="00:15:47.269" end="00:15:51.219" tts:direction="ltr">So I'm actually going to click on this to
+<br />the drop down arrow,</p>
+        <p begin="00:15:51.219" end="00:15:53.620" tts:direction="ltr">and I'm going to do multiple values drop</p>
+        <p begin="00:15:53.620" end="00:15:57.259" tts:direction="ltr">down just to make these a little bit
+<br />smaller.</p>
+        <p begin="00:15:57.259" end="00:16:03.100" tts:direction="ltr">And then I'm going to drag and drop these
+<br />to the top of the screen.</p>
+        <p begin="00:16:03.100" end="00:16:10.180" tts:direction="ltr">Often, we like to look at our tablets in
+<br />that horizontal view.</p>
+        <p begin="00:16:10.180" end="00:16:13.460" tts:direction="ltr">Now I've got both of those on top and now
+<br />I have this.</p>
+        <p begin="00:16:13.460" end="00:16:16.059" tts:direction="ltr">Now notice if I go back to my desktop,</p>
+        <p begin="00:16:16.059" end="00:16:19.220" tts:direction="ltr">that's the design, my tablet looks
+<br />different.</p>
+        <p begin="00:16:19.220" end="00:16:21.460" tts:direction="ltr">Now, as I mentioned before,</p>
+        <p begin="00:16:21.460" end="00:16:23.060" tts:direction="ltr">the phone is always there.</p>
+        <p begin="00:16:23.060" end="00:16:25.800" tts:direction="ltr">But if I click on that now,</p>
+        <p begin="00:16:25.800" end="00:16:28.580" tts:direction="ltr">Then I can go to my phone.</p>
+        <p begin="00:16:28.580" end="00:16:31.579" tts:direction="ltr">Let me actually go here to my tablet.</p>
+        <p begin="00:16:31.579" end="00:16:35.500" tts:direction="ltr">I'm going to be on my tablet and then I'm
+<br />going to scroll to my phone.</p>
+        <p begin="00:16:40.220" end="00:16:44.180" tts:direction="ltr">I may have deleted these earlier.</p>
+        <p begin="00:16:44.180" end="00:16:47.500" tts:direction="ltr">Let me see device preview.</p>
+        <p begin="00:16:48.990" end="00:16:53.230" tts:direction="ltr">So it does look like I had clicked the
+<br />Clear All button.</p>
+        <p begin="00:16:53.230" end="00:16:56.230" tts:direction="ltr">Just make sure if you do click that Clear
+<br />All like I did,</p>
+        <p begin="00:16:56.230" end="00:17:00.670" tts:direction="ltr">that all of your available charts are
+<br />here,</p>
+        <p begin="00:17:00.670" end="00:17:03.029" tts:direction="ltr">and then you can just drag and drop them
+<br />on here.</p>
+        <p begin="00:17:03.029" end="00:17:04.669" tts:direction="ltr">That's where I'm at right now,</p>
+        <p begin="00:17:04.669" end="00:17:07.989" tts:direction="ltr">but you can see my preview for my phone.</p>
+        <p begin="00:17:07.989" end="00:17:11.469" tts:direction="ltr">I may not like what I'm seeing and I might
+<br />determine</p>
+        <p begin="00:17:11.469" end="00:17:15.670" tts:direction="ltr">that a scatter plot isn't the best for
+<br />that phone size,</p>
+        <p begin="00:17:15.670" end="00:17:17.789" tts:direction="ltr">so I'm going to just eliminate that.</p>
+        <p begin="00:17:17.789" end="00:17:22.270" tts:direction="ltr">Maybe I'm going to also just eliminate the
+<br />highlight table,</p>
+        <p begin="00:17:22.270" end="00:17:24.149" tts:direction="ltr">and then I'm going to make sure that</p>
+        <p begin="00:17:24.149" end="00:17:28.429" tts:direction="ltr">my line and I can rearrange them, I can
+<br />organize them.</p>
+        <p begin="00:17:28.429" end="00:17:33.709" tts:direction="ltr">Now I can really control that look.</p>
+        <p begin="00:17:33.709" end="00:17:35.589" tts:direction="ltr">I've got my desktop here,</p>
+        <p begin="00:17:35.589" end="00:17:37.509" tts:direction="ltr">I've got my default, first of all,</p>
+        <p begin="00:17:37.509" end="00:17:40.509" tts:direction="ltr">which is what Tableau has created on the
+<br />fly,</p>
+        <p begin="00:17:40.509" end="00:17:42.869" tts:direction="ltr">then I have my desktop for my large
+<br />screen,</p>
+        <p begin="00:17:42.869" end="00:17:47.864" tts:direction="ltr">I have my tablet, and then I have my phone
+<br />here with just the two.</p>
+        <p begin="00:17:47.864" end="00:17:50.899" tts:direction="ltr">That's what's really great about</p>
+        <p begin="00:17:50.899" end="00:17:55.020" tts:direction="ltr">Tableau that I've got four copies of my
+<br />dashboard,</p>
+        <p begin="00:17:55.020" end="00:17:57.940" tts:direction="ltr">but I've still got one single dashboard</p>
+        <p begin="00:17:57.940" end="00:18:03.019" tts:direction="ltr">that is across all of my devices so I can
+<br />optimize their view.</p>
+        <p begin="00:18:03.019" end="00:18:04.819" tts:direction="ltr">It's great for two reasons.</p>
+        <p begin="00:18:04.819" end="00:18:09.460" tts:direction="ltr">One, your end user gets a tailor made
+<br />dashboard for their specific device,</p>
+        <p begin="00:18:09.460" end="00:18:11.259" tts:direction="ltr">and two, you've only got</p>
+        <p begin="00:18:11.259" end="00:18:15.939" tts:direction="ltr">one dashboard that you need to maintain,
+<br />which is really great.</p>
+        <p begin="00:18:17.010" end="00:18:21.089" tts:direction="ltr">All right. Let's tackle filter actions.</p>
+        <p begin="00:18:21.089" end="00:18:26.570" tts:direction="ltr">It's a great way to add a lot of
+<br />interactivity to your dashboard.</p>
+        <p begin="00:18:26.570" end="00:18:30.889" tts:direction="ltr">Here I'm on my AG dashboard start and I'm
+<br />on the final tab,</p>
+        <p begin="00:18:30.889" end="00:18:33.329" tts:direction="ltr">which is the filter highlight URL tab.</p>
+        <p begin="00:18:33.329" end="00:18:37.729" tts:direction="ltr">We're actually going to create our
+<br />dashboard together and then use</p>
+        <p begin="00:18:37.729" end="00:18:41.369" tts:direction="ltr">these various actions to</p>
+        <p begin="00:18:41.369" end="00:18:44.490" tts:direction="ltr">improve the way that we can interact with
+<br />our dashboard.</p>
+        <p begin="00:18:44.490" end="00:18:49.329" tts:direction="ltr">The way I'm going to do this is I'm going
+<br />to just grab the bar chart here.</p>
+        <p begin="00:18:49.329" end="00:18:52.059" tts:direction="ltr">Actually, I'm on the tiled here.</p>
+        <p begin="00:18:52.059" end="00:18:53.860" tts:direction="ltr">I'm going to grab horizontal.</p>
+        <p begin="00:18:53.860" end="00:18:55.299" tts:direction="ltr">This is best practices.</p>
+        <p begin="00:18:55.299" end="00:18:56.899" tts:direction="ltr">Don't just drag and drop,</p>
+        <p begin="00:18:56.899" end="00:18:58.219" tts:direction="ltr">create a container first.</p>
+        <p begin="00:18:58.219" end="00:19:00.660" tts:direction="ltr">I'm going to grab my bar.</p>
+        <p begin="00:19:00.660" end="00:19:07.899" tts:direction="ltr">Then I'll just put my line here.</p>
+        <p begin="00:19:07.899" end="00:19:12.019" tts:direction="ltr">Actually, I'm going to put my map on the
+<br />top here,</p>
+        <p begin="00:19:12.340" end="00:19:16.259" tts:direction="ltr">and then I will</p>
+        <p begin="00:19:21.700" end="00:19:31.100" tts:direction="ltr">Go ahead and put linear highlight table.</p>
+        <p begin="00:19:31.100" end="00:19:35.939" tts:direction="ltr">Let's add one more maybe we'll add the
+<br />highlight table here.</p>
+        <p begin="00:19:36.580" end="00:19:43.320" tts:direction="ltr">I've got four different I've got a map,</p>
+        <p begin="00:19:43.320" end="00:19:44.880" tts:direction="ltr">a highlight table, a bar,</p>
+        <p begin="00:19:44.880" end="00:19:47.839" tts:direction="ltr">and a line, and I just dragged those into
+<br />the view.</p>
+        <p begin="00:19:47.839" end="00:19:51.359" tts:direction="ltr">Now, one of the actions that we're going
+<br />to do is</p>
+        <p begin="00:19:51.359" end="00:19:54.519" tts:direction="ltr">just the filter actions and they're very
+<br />common in dashboards,</p>
+        <p begin="00:19:54.519" end="00:19:57.440" tts:direction="ltr">but they have one distinct disadvantage,</p>
+        <p begin="00:19:57.440" end="00:20:02.440" tts:direction="ltr">and that is they can be a big performance
+<br />drain.</p>
+        <p begin="00:20:02.760" end="00:20:07.440" tts:direction="ltr">If you have lots of filters on a
+<br />dashboard,</p>
+        <p begin="00:20:07.440" end="00:20:10.160" tts:direction="ltr">it can take a long time for the data to
+<br />query,</p>
+        <p begin="00:20:10.160" end="00:20:12.429" tts:direction="ltr">to pull. What have you.</p>
+        <p begin="00:20:12.429" end="00:20:15.230" tts:direction="ltr">If you have a dashboard that has many
+<br />sheets</p>
+        <p begin="00:20:15.230" end="00:20:17.749" tts:direction="ltr">and each one of those sheets has filters
+<br />attached to them,</p>
+        <p begin="00:20:17.749" end="00:20:19.550" tts:direction="ltr">then every time you set the filter,</p>
+        <p begin="00:20:19.550" end="00:20:23.109" tts:direction="ltr">Tableau has to do a bit of work to
+<br />calculate what the rest of</p>
+        <p begin="00:20:23.109" end="00:20:27.069" tts:direction="ltr">the filter should show and then figure out
+<br />what each sheet should show.</p>
+        <p begin="00:20:27.069" end="00:20:29.509" tts:direction="ltr">You can imagine that takes a lot of low
+<br />time.</p>
+        <p begin="00:20:29.509" end="00:20:32.109" tts:direction="ltr">Now filter actions don't have to do that.</p>
+        <p begin="00:20:32.109" end="00:20:34.950" tts:direction="ltr">If you put the filter action on the
+<br />dashboard,</p>
+        <p begin="00:20:34.950" end="00:20:38.790" tts:direction="ltr">it's only applied when you select
+<br />something within the view itself.</p>
+        <p begin="00:20:38.790" end="00:20:41.774" tts:direction="ltr">There's two ways to create a filter
+<br />action.</p>
+        <p begin="00:20:41.774" end="00:20:44.920" tts:direction="ltr">And a dashboard, we can use the quick
+<br />filter,</p>
+        <p begin="00:20:44.920" end="00:20:47.519" tts:direction="ltr">and then you can also customize the
+<br />filter.</p>
+        <p begin="00:20:47.519" end="00:20:51.919" tts:direction="ltr">Let's do the quick filter first and select
+<br />the map here.</p>
+        <p begin="00:20:51.919" end="00:20:54.160" tts:direction="ltr">If I just click this little funnel,</p>
+        <p begin="00:20:54.160" end="00:20:55.840" tts:direction="ltr">it says use as a filter,</p>
+        <p begin="00:20:55.840" end="00:20:58.319" tts:direction="ltr">I'll just have that selected.</p>
+        <p begin="00:20:58.319" end="00:21:00.479" tts:direction="ltr">By doing so, I've already created</p>
+        <p begin="00:21:00.479" end="00:21:03.040" tts:direction="ltr">an action where if I click on the state of
+<br />Texas,</p>
+        <p begin="00:21:03.040" end="00:21:06.170" tts:direction="ltr">you can see that now I only have um,</p>
+        <p begin="00:21:06.170" end="00:21:09.129" tts:direction="ltr">subcategories on the highlight table that
+<br />are</p>
+        <p begin="00:21:09.129" end="00:21:12.089" tts:direction="ltr">applicable to Texas that you can see on
+<br />the bar chart,</p>
+        <p begin="00:21:12.089" end="00:21:14.729" tts:direction="ltr">that's just Texas and profit is Texas
+<br />only.</p>
+        <p begin="00:21:14.729" end="00:21:19.289" tts:direction="ltr">Again, I can drag and drop and so if I
+<br />want a certain region, again,</p>
+        <p begin="00:21:19.289" end="00:21:20.769" tts:direction="ltr">I'm just using that as</p>
+        <p begin="00:21:20.769" end="00:21:25.565" tts:direction="ltr">a really quick filter action and a great
+<br />way to do so on the fly.</p>
+        <p begin="00:21:25.565" end="00:21:28.119" tts:direction="ltr">Now, instead of that,</p>
+        <p begin="00:21:28.119" end="00:21:30.159" tts:direction="ltr">let's do the alternative way,</p>
+        <p begin="00:21:30.159" end="00:21:34.600" tts:direction="ltr">which is to go under dashboard and select
+<br />actions.</p>
+        <p begin="00:21:34.600" end="00:21:38.359" tts:direction="ltr">I'm going to go ahead and just select this
+<br />one and remove that.</p>
+        <p begin="00:21:38.359" end="00:21:41.159" tts:direction="ltr">Instead, what we'll do is, by the way,</p>
+        <p begin="00:21:41.159" end="00:21:44.880" tts:direction="ltr">you could also deselect it by clicking on
+<br />the little funnel.</p>
+        <p begin="00:21:44.880" end="00:21:47.160" tts:direction="ltr">You can click on this drop down box</p>
+        <p begin="00:21:47.160" end="00:21:49.844" tts:direction="ltr">with Add action and we will do a filter
+<br />here.</p>
+        <p begin="00:21:49.844" end="00:21:54.120" tts:direction="ltr">This will bring up a dialog box and you
+<br />can name your filter.</p>
+        <p begin="00:21:54.120" end="00:21:57.759" tts:direction="ltr">And now I can get specific.</p>
+        <p begin="00:21:57.759" end="00:22:00.519" tts:direction="ltr">Say, for instance, I don't want to have</p>
+        <p begin="00:22:00.519" end="00:22:03.640" tts:direction="ltr">my bar chart to be affected by the filter,</p>
+        <p begin="00:22:03.640" end="00:22:05.479" tts:direction="ltr">so I can just remove the bar chart,</p>
+        <p begin="00:22:05.479" end="00:22:06.799" tts:direction="ltr">remove the bar chart,</p>
+        <p begin="00:22:06.799" end="00:22:10.560" tts:direction="ltr">and you'll see that you can select Run
+<br />action on a hover,</p>
+        <p begin="00:22:10.560" end="00:22:12.520" tts:direction="ltr">a select, a menu,</p>
+        <p begin="00:22:12.520" end="00:22:14.679" tts:direction="ltr">or a single select only.</p>
+        <p begin="00:22:14.679" end="00:22:16.839" tts:direction="ltr">I'm going to just do select for now,</p>
+        <p begin="00:22:16.839" end="00:22:19.720" tts:direction="ltr">and then I'm going to keep the filtered
+<br />values.</p>
+        <p begin="00:22:19.720" end="00:22:24.454" tts:direction="ltr">You could also show all values or exclude
+<br />all values. I'm going to click Okay.</p>
+        <p begin="00:22:24.454" end="00:22:28.749" tts:direction="ltr">And then I'm going to click. Now I'm going
+<br />to maybe</p>
+        <p begin="00:22:28.749" end="00:22:31.469" tts:direction="ltr">click Utah and you can</p>
+        <p begin="00:22:31.469" end="00:22:34.589" tts:direction="ltr">see now I've got the highlight table
+<br />moving in the line,</p>
+        <p begin="00:22:34.589" end="00:22:36.870" tts:direction="ltr">but I don't have the bar chart.</p>
+        <p begin="00:22:36.870" end="00:22:40.310" tts:direction="ltr">I can go in and customize my filter.</p>
+        <p begin="00:22:40.310" end="00:22:43.910" tts:direction="ltr">Now, I should say that if you're adding in
+<br />a filter,</p>
+        <p begin="00:22:43.910" end="00:22:48.749" tts:direction="ltr">it would be a good idea in your dashboard
+<br />title to mention in some way</p>
+        <p begin="00:22:48.749" end="00:22:54.029" tts:direction="ltr">that there is a field or the ability for
+<br />people to click and to act on it.</p>
+        <p begin="00:22:54.029" end="00:22:58.829" tts:direction="ltr">Click on a state to find more information
+<br />or whatever the case may be.</p>
+        <p begin="00:22:59.020" end="00:23:01.379" tts:direction="ltr">Let's go ahead and clear that.</p>
+        <p begin="00:23:01.379" end="00:23:06.780" tts:direction="ltr">Let's go back to the dashboard as menu and
+<br />go to actions,</p>
+        <p begin="00:23:06.780" end="00:23:09.014" tts:direction="ltr">and we're going to go ahead and clear</p>
+        <p begin="00:23:09.014" end="00:23:11.414" tts:direction="ltr">that and we're going to move to our next
+<br />one.</p>
+        <p begin="00:23:11.414" end="00:23:14.254" tts:direction="ltr">We want to add a highlight.</p>
+        <p begin="00:23:14.254" end="00:23:17.734" tts:direction="ltr">We have another dialog box and</p>
+        <p begin="00:23:17.734" end="00:23:21.930" tts:direction="ltr">highlight actions work in a similar way to
+<br />filter actions.</p>
+        <p begin="00:23:21.930" end="00:23:25.489" tts:direction="ltr">Um, but whereas filter actions remove the
+<br />data,</p>
+        <p begin="00:23:25.489" end="00:23:28.330" tts:direction="ltr">a highlight action does what it says.</p>
+        <p begin="00:23:28.330" end="00:23:32.249" tts:direction="ltr">It highlights that particular subset of
+<br />data within the rest of it.</p>
+        <p begin="00:23:32.249" end="00:23:36.690" tts:direction="ltr">That's really useful for seeing how things
+<br />relate to other items.</p>
+        <p begin="00:23:36.690" end="00:23:39.170" tts:direction="ltr">It also puts the values into context.</p>
+        <p begin="00:23:39.170" end="00:23:41.329" tts:direction="ltr">We've got the same dashboard here.</p>
+        <p begin="00:23:41.329" end="00:23:45.489" tts:direction="ltr">I've pulled up the action dialogue box,</p>
+        <p begin="00:23:45.489" end="00:23:49.770" tts:direction="ltr">and we're just going to create a source.</p>
+        <p begin="00:23:49.770" end="00:23:53.770" tts:direction="ltr">And we're going to go ahead and have our
+<br />map be our source,</p>
+        <p begin="00:23:53.770" end="00:23:56.370" tts:direction="ltr">we'll deselect the bar,</p>
+        <p begin="00:23:56.370" end="00:23:59.329" tts:direction="ltr">the highlight and the line, and then</p>
+        <p begin="00:23:59.329" end="00:24:04.529" tts:direction="ltr">I'm going to just keep these as the same
+<br />here.</p>
+        <p begin="00:24:06.130" end="00:24:10.049" tts:direction="ltr">When you select something, click on it,</p>
+        <p begin="00:24:10.049" end="00:24:14.769" tts:direction="ltr">then it will apply and we'll just keep
+<br />everything,</p>
+        <p begin="00:24:14.769" end="00:24:19.450" tts:direction="ltr">maybe we'll remove and just have it be the
+<br />bar just so that you can see that.</p>
+        <p begin="00:24:19.450" end="00:24:21.609" tts:direction="ltr">I'm going to go ahead and click Okay,</p>
+        <p begin="00:24:21.609" end="00:24:24.329" tts:direction="ltr">and then click Okay.</p>
+        <p begin="00:24:24.329" end="00:24:28.409" tts:direction="ltr">Here's the bar chart and what I'm going to
+<br />do is now,</p>
+        <p begin="00:24:28.409" end="00:24:34.009" tts:direction="ltr">unfortunately, It looks like</p>
+        <p begin="00:24:34.009" end="00:24:38.329" tts:direction="ltr">there's not a lot of data or anything
+<br />happening on the bar chart.</p>
+        <p begin="00:24:38.329" end="00:24:41.489" tts:direction="ltr">You're probably thinking, okay, what's
+<br />going on here?</p>
+        <p begin="00:24:41.489" end="00:24:46.249" tts:direction="ltr">Well, what's going on is that the bar
+<br />chart is not based on state.</p>
+        <p begin="00:24:46.249" end="00:24:49.650" tts:direction="ltr">I have to go into the sheet.</p>
+        <p begin="00:24:49.650" end="00:24:51.729" tts:direction="ltr">I'm going to go to sheet here,</p>
+        <p begin="00:24:51.729" end="00:24:54.880" tts:direction="ltr">and then what I'm going to do is in the
+<br />filter,</p>
+        <p begin="00:24:54.880" end="00:24:58.309" tts:direction="ltr">I'm going to drag and drop state there.</p>
+        <p begin="00:24:58.309" end="00:25:01.949" tts:direction="ltr">I'm going to select all and I'm going to
+<br />say, okay.</p>
+        <p begin="00:25:01.949" end="00:25:04.470" tts:direction="ltr">My bar hasn't changed,</p>
+        <p begin="00:25:04.470" end="00:25:08.269" tts:direction="ltr">the look of it is the same, but now it's
+<br />filtered on state.</p>
+        <p begin="00:25:08.269" end="00:25:10.549" tts:direction="ltr">How is that going to change?</p>
+        <p begin="00:25:10.549" end="00:25:13.229" tts:direction="ltr">Now, if I click on,</p>
+        <p begin="00:25:13.229" end="00:25:16.030" tts:direction="ltr">let's do a refresh.</p>
+        <p begin="00:25:16.580" end="00:25:20.659" tts:direction="ltr">Okay, so I think I need to go back.</p>
+        <p begin="00:25:20.659" end="00:25:22.459" tts:direction="ltr">The data has been refreshed,</p>
+        <p begin="00:25:22.459" end="00:25:25.340" tts:direction="ltr">but I think I've done something
+<br />incorrectly with my bar.</p>
+        <p begin="00:25:25.340" end="00:25:27.419" tts:direction="ltr">I maybe you caught this.</p>
+        <p begin="00:25:27.419" end="00:25:29.260" tts:direction="ltr">I shouldn't put it on filter,</p>
+        <p begin="00:25:29.260" end="00:25:31.539" tts:direction="ltr">but actually on detail.</p>
+        <p begin="00:25:31.539" end="00:25:34.579" tts:direction="ltr">Whoa, that's a crazy bar chart,</p>
+        <p begin="00:25:34.579" end="00:25:37.660" tts:direction="ltr">but that's going to show me all the
+<br />different states.</p>
+        <p begin="00:25:37.660" end="00:25:39.699" tts:direction="ltr">Now, that's what I want to see.</p>
+        <p begin="00:25:39.699" end="00:25:44.420" tts:direction="ltr">Now if I go to my filter for my highlight,</p>
+        <p begin="00:25:44.420" end="00:25:46.060" tts:direction="ltr">if I click on Texas,</p>
+        <p begin="00:25:46.060" end="00:25:49.780" tts:direction="ltr">I can see within the bar chart how Texas
+<br />is performing</p>
+        <p begin="00:25:49.780" end="00:25:53.900" tts:direction="ltr">and all these looks like binders is really
+<br />struggling for Texas.</p>
+        <p begin="00:25:53.900" end="00:25:56.259" tts:direction="ltr">I can go to Utah, right,</p>
+        <p begin="00:25:56.259" end="00:26:01.779" tts:direction="ltr">I Looks like I don't have any data on
+<br />YouTub per se or maybe not very much.</p>
+        <p begin="00:26:01.779" end="00:26:05.099" tts:direction="ltr">Let's click on one of these. It's just
+<br />very light.</p>
+        <p begin="00:26:05.099" end="00:26:07.739" tts:direction="ltr">This is probably not the best use of
+<br />design,</p>
+        <p begin="00:26:07.739" end="00:26:12.259" tts:direction="ltr">but you can see how a highlight table
+<br />begins to</p>
+        <p begin="00:26:12.259" end="00:26:17.174" tts:direction="ltr">show those connections between chart
+<br />types.</p>
+        <p begin="00:26:17.174" end="00:26:21.489" tts:direction="ltr">The last action that I want to show you is
+<br />the URL action,</p>
+        <p begin="00:26:21.489" end="00:26:25.050" tts:direction="ltr">which can be a great addition to any
+<br />dashboard.</p>
+        <p begin="00:26:25.050" end="00:26:28.809" tts:direction="ltr">Here we have our dashboard that we're
+<br />working with,</p>
+        <p begin="00:26:28.809" end="00:26:31.929" tts:direction="ltr">and I'm going to go ahead and go to the
+<br />actions</p>
+        <p begin="00:26:31.929" end="00:26:36.009" tts:direction="ltr">and I'm going to clear off the highlight,
+<br />just remove that.</p>
+        <p begin="00:26:36.009" end="00:26:39.289" tts:direction="ltr">What I'm going to do is I want to add in</p>
+        <p begin="00:26:39.289" end="00:26:44.610" tts:direction="ltr">a website or a page as I click on one of
+<br />these states.</p>
+        <p begin="00:26:44.610" end="00:26:51.669" tts:direction="ltr">Now, I it can be any information that you
+<br />might want to use,</p>
+        <p begin="00:26:51.669" end="00:26:55.389" tts:direction="ltr">and it could be great because then your
+<br />data doesn't have to store this,</p>
+        <p begin="00:26:55.389" end="00:26:59.309" tts:direction="ltr">but you can link it to a web page</p>
+        <p begin="00:26:59.309" end="00:27:02.189" tts:direction="ltr">that would have the data that you would
+<br />need.</p>
+        <p begin="00:27:02.189" end="00:27:03.749" tts:direction="ltr">In this case, I'm going to use</p>
+        <p begin="00:27:03.749" end="00:27:07.269" tts:direction="ltr">a Wikipedia entry because it's just really
+<br />simple to show,</p>
+        <p begin="00:27:07.269" end="00:27:09.069" tts:direction="ltr">and I'm going to make that action work.</p>
+        <p begin="00:27:09.069" end="00:27:10.909" tts:direction="ltr">In order to do that, I'm going to actually</p>
+        <p begin="00:27:10.909" end="00:27:13.429" tts:direction="ltr">remove a few items from my dashboard.</p>
+        <p begin="00:27:13.429" end="00:27:16.669" tts:direction="ltr">I'm just remove the highlight table and</p>
+        <p begin="00:27:16.669" end="00:27:20.400" tts:direction="ltr">then my We'll also remove, that's fine.</p>
+        <p begin="00:27:20.400" end="00:27:24.159" tts:direction="ltr">We're going to delete that and delete
+<br />that.</p>
+        <p begin="00:27:24.159" end="00:27:26.399" tts:direction="ltr">Now I've got a little extra space.</p>
+        <p begin="00:27:26.399" end="00:27:28.720" tts:direction="ltr">What I want to do and since this is a
+<br />tiled,</p>
+        <p begin="00:27:28.720" end="00:27:30.080" tts:direction="ltr">I'm going to go ahead and grab</p>
+        <p begin="00:27:30.080" end="00:27:33.879" tts:direction="ltr">the web page object and drag and drop that
+<br />here.</p>
+        <p begin="00:27:33.879" end="00:27:36.079" tts:direction="ltr">I'm going to highlight the whole side of</p>
+        <p begin="00:27:36.079" end="00:27:39.639" tts:direction="ltr">the dashboard if I can get my cursor
+<br />there. There we go.</p>
+        <p begin="00:27:39.639" end="00:27:41.719" tts:direction="ltr">Now, if I had a specific URL,</p>
+        <p begin="00:27:41.719" end="00:27:44.159" tts:direction="ltr">I could just type it in directly here, but
+<br />in this case,</p>
+        <p begin="00:27:44.159" end="00:27:47.319" tts:direction="ltr">I'm going to say okay and leave</p>
+        <p begin="00:27:47.319" end="00:27:51.009" tts:direction="ltr">that empty because I want to use it as a
+<br />URL action.</p>
+        <p begin="00:27:51.009" end="00:27:55.540" tts:direction="ltr">So what I'm going to do is go up to
+<br />dashboard and go to action.</p>
+        <p begin="00:27:55.540" end="00:27:57.380" tts:direction="ltr">And then you'll see A action.</p>
+        <p begin="00:27:57.380" end="00:27:59.300" tts:direction="ltr">We've done filter, we've done highlight.</p>
+        <p begin="00:27:59.300" end="00:28:01.979" tts:direction="ltr">Now we're going to go to the URL.</p>
+        <p begin="00:28:01.979" end="00:28:04.019" tts:direction="ltr">So for this one,</p>
+        <p begin="00:28:04.019" end="00:28:08.869" tts:direction="ltr">I can write in I'll just write a URL, so I
+<br />have a name.</p>
+        <p begin="00:28:08.869" end="00:28:12.069" tts:direction="ltr">What I want to do is I want to filter on
+<br />the map.</p>
+        <p begin="00:28:12.069" end="00:28:18.509" tts:direction="ltr">When I click the state, then the
+<br />appropriate web page will come out.</p>
+        <p begin="00:28:18.509" end="00:28:21.789" tts:direction="ltr">What I have here, let me just bring this
+<br />is I have</p>
+        <p begin="00:28:21.789" end="00:28:25.030" tts:direction="ltr">just the Wikipedia page for the great
+<br />state of Utah.</p>
+        <p begin="00:28:25.030" end="00:28:27.590" tts:direction="ltr">I'm going to go ahead and just copy that
+<br />URL.</p>
+        <p begin="00:28:27.590" end="00:28:29.390" tts:direction="ltr">What I like about Wikipedia,</p>
+        <p begin="00:28:29.390" end="00:28:32.069" tts:direction="ltr">organization is really straightforward and</p>
+        <p begin="00:28:32.069" end="00:28:35.189" tts:direction="ltr">you can see I just have the state at the
+<br />very end of that URL.</p>
+        <p begin="00:28:35.189" end="00:28:39.189" tts:direction="ltr">What I'm going to do is URL target will be
+<br />that web page.</p>
+        <p begin="00:28:39.189" end="00:28:42.509" tts:direction="ltr">I'm going to enter in my URL by pasting
+<br />it.</p>
+        <p begin="00:28:42.509" end="00:28:47.509" tts:direction="ltr">I'm going to delete Utah and then I'm
+<br />going to insert a state.</p>
+        <p begin="00:28:47.509" end="00:28:49.109" tts:direction="ltr">Do you see how that is?</p>
+        <p begin="00:28:49.109" end="00:28:51.269" tts:direction="ltr">Once I click on Okay,</p>
+        <p begin="00:28:51.269" end="00:28:53.589" tts:direction="ltr">then I'll say okay.</p>
+        <p begin="00:28:53.589" end="00:28:55.349" tts:direction="ltr">Then if I click on,</p>
+        <p begin="00:28:55.349" end="00:28:59.589" tts:direction="ltr">let's say Texas, Oh,</p>
+        <p begin="00:28:59.589" end="00:29:02.909" tts:direction="ltr">I have a URL right there as the name.</p>
+        <p begin="00:29:02.909" end="00:29:05.589" tts:direction="ltr">Let me go back to show you what I've done
+<br />here,</p>
+        <p begin="00:29:05.589" end="00:29:07.429" tts:direction="ltr">why it might be different than yours.</p>
+        <p begin="00:29:07.429" end="00:29:09.949" tts:direction="ltr">If I go back here and I edit this,</p>
+        <p begin="00:29:09.949" end="00:29:11.789" tts:direction="ltr">you'll see I have this on menu.</p>
+        <p begin="00:29:11.789" end="00:29:15.510" tts:direction="ltr">I'm going to just change this for now to
+<br />have select.</p>
+        <p begin="00:29:15.510" end="00:29:18.389" tts:direction="ltr">I'll talk about menu in just a moment,
+<br />say, okay.</p>
+        <p begin="00:29:18.389" end="00:29:20.269" tts:direction="ltr">As soon as I select this,</p>
+        <p begin="00:29:20.269" end="00:29:23.749" tts:direction="ltr">then it will populate with the Missouri
+<br />information.</p>
+        <p begin="00:29:23.749" end="00:29:25.469" tts:direction="ltr">It's right here in that web page.</p>
+        <p begin="00:29:25.469" end="00:29:26.990" tts:direction="ltr">I could create a couple of</p>
+        <p begin="00:29:26.990" end="00:29:30.869" tts:direction="ltr">different web page containers so I could
+<br />have a couple of</p>
+        <p begin="00:29:30.869" end="00:29:32.830" tts:direction="ltr">different websites to go to depending on</p>
+        <p begin="00:29:32.830" end="00:29:37.190" tts:direction="ltr">what what my objective is and how it can
+<br />help my audience.</p>
+        <p begin="00:29:37.190" end="00:29:42.029" tts:direction="ltr">I wanted just to go back to the actions
+<br />there to show you,</p>
+        <p begin="00:29:42.029" end="00:29:45.069" tts:direction="ltr">I'll select that, I'll edit that.</p>
+        <p begin="00:29:45.069" end="00:29:51.069" tts:direction="ltr">Now what I'm going to do is actually write
+<br />go to,</p>
+        <p begin="00:29:51.069" end="00:29:56.029" tts:direction="ltr">and then I'm going to insert the state
+<br />name and still on map,</p>
+        <p begin="00:29:56.029" end="00:29:58.909" tts:direction="ltr">still the web page object, still that.</p>
+        <p begin="00:29:58.909" end="00:30:03.270" tts:direction="ltr">Now I'm going to change this from select
+<br />to menu.</p>
+        <p begin="00:30:03.270" end="00:30:05.629" tts:direction="ltr">This will give your user more control.</p>
+        <p begin="00:30:05.629" end="00:30:08.710" tts:direction="ltr">Right now, it's on the State of Missouri.</p>
+        <p begin="00:30:08.710" end="00:30:11.129" tts:direction="ltr">If I hover, it doesn't change.</p>
+        <p begin="00:30:11.129" end="00:30:13.690" tts:direction="ltr">But now if I click on California,</p>
+        <p begin="00:30:13.690" end="00:30:16.170" tts:direction="ltr">you'll see it says go to California.</p>
+        <p begin="00:30:16.170" end="00:30:19.249" tts:direction="ltr">If I click on that, then I can feed</p>
+        <p begin="00:30:19.249" end="00:30:25.570" tts:direction="ltr">my dashboard with that information from
+<br />Wikipedia.</p>
+        <p begin="00:30:25.570" end="00:30:28.769" tts:direction="ltr">Just remember that there are</p>
+        <p begin="00:30:28.769" end="00:30:32.210" tts:direction="ltr">lots of different actions that you can do
+<br />on a dashboard.</p>
+        <p begin="00:30:32.210" end="00:30:34.409" tts:direction="ltr">The whole goal, remember your purpose,</p>
+        <p begin="00:30:34.409" end="00:30:37.170" tts:direction="ltr">your audience, how can you add to your
+<br />story?</p>
+        <p begin="00:30:37.170" end="00:30:41.529" tts:direction="ltr">Hopefully, you'll be able to apply a few
+<br />of these in your project.</p>
+    </div>
+  </body>
+</tt>

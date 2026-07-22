@@ -1,0 +1,1095 @@
+1
+00:00:00,920 --> 00:00:02,300
+INSTRUCTOR: Hello, visitors.
+
+2
+00:00:02,300 --> 00:00:06,000
+We are going to do a Cairn
+reveal for Cairn number
+
+3
+00:00:06,000 --> 00:00:07,520
+2, the chart types.
+
+4
+00:00:07,520 --> 00:00:08,920
+And this will be
+a chance for you
+
+5
+00:00:08,920 --> 00:00:12,600
+to review some of the
+answers and hopefully refresh
+
+6
+00:00:12,600 --> 00:00:14,280
+your skills.
+
+7
+00:00:14,280 --> 00:00:16,880
+You were first asked to connect
+to the data source, which
+
+8
+00:00:16,880 --> 00:00:21,120
+I provided the Hollywood's
+most profitable story CSV file.
+
+9
+00:00:21,120 --> 00:00:24,040
+And you were asked to
+create a bar chart showing
+
+10
+00:00:24,040 --> 00:00:26,800
+some of profitability
+by lead studio
+
+11
+00:00:26,800 --> 00:00:32,000
+to answer which studio had
+the third highest profit.
+
+12
+00:00:32,000 --> 00:00:34,440
+So if we jump to
+my toolbox file,
+
+13
+00:00:34,440 --> 00:00:38,720
+you'll see here that I've
+put profitability on columns
+
+14
+00:00:38,720 --> 00:00:41,480
+and default aggregate is sum.
+
+15
+00:00:41,480 --> 00:00:44,800
+And then I've added
+lead studio two rows.
+
+16
+00:00:44,800 --> 00:00:47,520
+And then I just did
+a descending sort
+
+17
+00:00:47,520 --> 00:00:52,280
+so I could quickly see that
+Warner Brothers was my third.
+
+18
+00:00:52,280 --> 00:00:57,280
+So let's head back to
+that presentation file.
+
+19
+00:00:57,280 --> 00:01:01,890
+And you can see that indeed,
+Warner Brothers was that third.
+
+20
+00:01:01,890 --> 00:01:03,650
+OK.
+
+21
+00:01:03,650 --> 00:01:06,170
+Moving on to the
+second question,
+
+22
+00:01:06,170 --> 00:01:08,530
+now we're going to create
+a scatter plot showing
+
+23
+00:01:08,530 --> 00:01:11,730
+that relationship between
+average audience score
+
+24
+00:01:11,730 --> 00:01:14,650
+and average worldwide gross.
+
+25
+00:01:14,650 --> 00:01:17,390
+Now, hopefully you caught
+on to the word average,
+
+26
+00:01:17,390 --> 00:01:20,450
+because remember the
+default aggregation is sum.
+
+27
+00:01:20,450 --> 00:01:22,110
+So you'd have to change that.
+
+28
+00:01:22,110 --> 00:01:26,090
+And then you are looking for
+the genre with the highest
+
+29
+00:01:26,090 --> 00:01:30,370
+and popularity but second.
+
+30
+00:01:30,370 --> 00:01:34,830
+And I think I have the
+word popularity twice,
+
+31
+00:01:34,830 --> 00:01:37,850
+so I need to check that
+into audience score.
+
+32
+00:01:37,850 --> 00:01:40,250
+So here I've put
+in audience score.
+
+33
+00:01:40,250 --> 00:01:44,970
+To change that aggregation, you
+just drop down to this measure
+
+34
+00:01:44,970 --> 00:01:48,010
+and you go from
+sum until average
+
+35
+00:01:48,010 --> 00:01:51,570
+and then you have
+worldwide gross
+
+36
+00:01:51,570 --> 00:01:54,490
+and you change that
+one also to average.
+
+37
+00:01:54,490 --> 00:01:57,390
+And then you can add
+genre onto detail.
+
+38
+00:01:57,390 --> 00:01:58,330
+So I take genre.
+
+39
+00:01:58,330 --> 00:02:00,020
+I've only got one.
+
+40
+00:02:00,020 --> 00:02:03,100
+I bring genre onto
+detail, and now I
+
+41
+00:02:03,100 --> 00:02:06,980
+can see that I have
+a top performer here
+
+42
+00:02:06,980 --> 00:02:10,660
+in terms of genre, but
+it's second to fantasy
+
+43
+00:02:10,660 --> 00:02:12,620
+in terms of audience score.
+
+44
+00:02:12,620 --> 00:02:17,700
+So animation is
+that correct answer.
+
+45
+00:02:17,700 --> 00:02:18,940
+All right.
+
+46
+00:02:18,940 --> 00:02:22,360
+The next one is a question
+about scatterplots,
+
+47
+00:02:22,360 --> 00:02:27,460
+and they require at least one
+measure on the columns shelf
+
+48
+00:02:27,460 --> 00:02:32,860
+and at least one measure
+on the rows shelf.
+
+49
+00:02:32,860 --> 00:02:39,700
+So you can see that
+right here, 1 and 1.
+
+50
+00:02:39,700 --> 00:02:40,580
+OK.
+
+51
+00:02:40,580 --> 00:02:45,340
+Question number 4, looking
+at creating a dual axis
+
+52
+00:02:45,340 --> 00:02:52,380
+axes to show the lead
+studio as a header and some
+
+53
+00:02:52,380 --> 00:02:56,660
+of profitability and some total
+audience score on the dual axis.
+
+54
+00:02:56,660 --> 00:02:57,160
+OK.
+
+55
+00:02:57,160 --> 00:03:00,790
+So let's go ahead and jump to
+question 3 so you can see that.
+
+56
+00:03:00,790 --> 00:03:03,910
+So what I did is I put lead
+studio along the headers
+
+57
+00:03:03,910 --> 00:03:09,390
+down here, and then I
+brought in profitability.
+
+58
+00:03:09,390 --> 00:03:11,050
+You can see that right here.
+
+59
+00:03:11,050 --> 00:03:14,790
+Let me just go
+ahead and redo this.
+
+60
+00:03:14,790 --> 00:03:16,990
+I'll just put that down here.
+
+61
+00:03:16,990 --> 00:03:21,550
+So I've got lead studio, and
+I've got profitability here.
+
+62
+00:03:21,550 --> 00:03:27,590
+And then I needed
+total audience score.
+
+63
+00:03:27,590 --> 00:03:30,390
+And I'll just go ahead
+and place that down here.
+
+64
+00:03:30,390 --> 00:03:33,070
+And then what I need
+to do is I can make
+
+65
+00:03:33,070 --> 00:03:35,310
+that a dual axis right here.
+
+66
+00:03:35,310 --> 00:03:37,750
+Now I went ahead and
+changed the chart type
+
+67
+00:03:37,750 --> 00:03:40,130
+so that they could just
+look a little bit different.
+
+68
+00:03:40,130 --> 00:03:43,790
+And I'm going to just
+go from a line to a bar.
+
+69
+00:03:43,790 --> 00:03:45,590
+You can see that's covered here.
+
+70
+00:03:45,590 --> 00:03:50,970
+So I can actually move
+profitability up over here.
+
+71
+00:03:50,970 --> 00:03:53,750
+Oh, that changed to a line 2.
+
+72
+00:03:53,750 --> 00:03:55,590
+So let me do--
+
+73
+00:03:55,590 --> 00:03:58,920
+one of them is a line.
+
+74
+00:03:58,920 --> 00:04:01,940
+Oh, the way that I can make
+that come forward, actually,
+
+75
+00:04:01,940 --> 00:04:05,080
+is to move--
+
+76
+00:04:05,080 --> 00:04:08,600
+it's interesting
+if I move it here
+
+77
+00:04:08,600 --> 00:04:10,840
+that I can bring that on top.
+
+78
+00:04:10,840 --> 00:04:13,540
+So you do that
+within the row shelf.
+
+79
+00:04:13,540 --> 00:04:17,240
+So now here I can
+see that I've got
+
+80
+00:04:17,240 --> 00:04:19,959
+independent-- is that top one.
+
+81
+00:04:19,959 --> 00:04:24,340
+Now I could change this
+line to maybe a circle.
+
+82
+00:04:24,340 --> 00:04:27,640
+You can see that
+right there on top.
+
+83
+00:04:27,640 --> 00:04:29,540
+So basically, you're
+taking those two.
+
+84
+00:04:29,540 --> 00:04:32,620
+Now, I did not sync the axis.
+
+85
+00:04:32,620 --> 00:04:33,900
+I didn't synchronize them.
+
+86
+00:04:33,900 --> 00:04:36,240
+But if I did that, if
+I synchronize that,
+
+87
+00:04:36,240 --> 00:04:42,000
+you could still see that
+both of those measures
+
+88
+00:04:42,000 --> 00:04:43,660
+played out for the independent.
+
+89
+00:04:43,660 --> 00:04:46,620
+But that wasn't necessary
+for this particular question.
+
+90
+00:04:46,620 --> 00:04:48,480
+OK.
+
+91
+00:04:48,480 --> 00:04:49,840
+All right.
+
+92
+00:04:49,840 --> 00:04:51,720
+Jump into there.
+
+93
+00:04:51,720 --> 00:04:54,680
+Which one stands above the rest?
+
+94
+00:04:54,680 --> 00:04:56,880
+It was the independent.
+
+95
+00:04:56,880 --> 00:04:58,490
+Now for the next one.
+
+96
+00:04:58,490 --> 00:05:01,530
+So after discovering
+which studio stands out,
+
+97
+00:05:01,530 --> 00:05:06,250
+you have your own inquiry where
+you're thinking about Paramount,
+
+98
+00:05:06,250 --> 00:05:10,010
+Sony, and Universal and which
+one had the highest audience
+
+99
+00:05:10,010 --> 00:05:10,510
+score.
+
+100
+00:05:10,510 --> 00:05:15,350
+So you're going to create a pie
+chart with the studio on color,
+
+101
+00:05:15,350 --> 00:05:20,390
+and then look at audience score
+percent on angle with a filter.
+
+102
+00:05:20,390 --> 00:05:24,010
+We're also going to do a
+quick table calculation.
+
+103
+00:05:24,010 --> 00:05:25,890
+So let's go ahead and
+jump to the question
+
+104
+00:05:25,890 --> 00:05:28,690
+for see what I've done here.
+
+105
+00:05:28,690 --> 00:05:32,170
+Let's go ahead and
+rebuild this here.
+
+106
+00:05:32,170 --> 00:05:35,650
+So one of the ways that you
+can do that is you can do--
+
+107
+00:05:35,650 --> 00:05:37,070
+let me go back.
+
+108
+00:05:39,850 --> 00:05:40,390
+All right.
+
+109
+00:05:40,390 --> 00:05:42,530
+So if I do this
+studio and I just
+
+110
+00:05:42,530 --> 00:05:46,450
+hold down my Control or Command
+key and do audience score,
+
+111
+00:05:46,450 --> 00:05:49,250
+and I have those two
+selected, I can actually
+
+112
+00:05:49,250 --> 00:05:53,890
+go here and select the pie
+on Show Me as a quick way.
+
+113
+00:05:53,890 --> 00:05:57,670
+And then I can go and place--
+
+114
+00:05:57,670 --> 00:05:59,290
+what was I looking for?
+
+115
+00:05:59,290 --> 00:06:00,430
+Oh, yeah.
+
+116
+00:06:00,430 --> 00:06:04,150
+It's looking for
+studio on the filters.
+
+117
+00:06:04,150 --> 00:06:05,890
+And now I can just select.
+
+118
+00:06:05,890 --> 00:06:07,450
+So I'm going to say none.
+
+119
+00:06:07,450 --> 00:06:10,930
+And I'm only going to do
+Fox, Paramount, and Sony.
+
+120
+00:06:10,930 --> 00:06:13,430
+I think that's what I had.
+
+121
+00:06:13,430 --> 00:06:16,890
+So I'll say, OK.
+
+122
+00:06:16,890 --> 00:06:18,550
+Let me make sure--
+
+123
+00:06:18,550 --> 00:06:21,370
+oh, Universal,
+Paramount, and Sony.
+
+124
+00:06:21,370 --> 00:06:23,190
+So let me go back here.
+
+125
+00:06:23,190 --> 00:06:24,170
+I'm going to edit.
+
+126
+00:06:24,170 --> 00:06:26,510
+Let me actually just
+go to show filter
+
+127
+00:06:26,510 --> 00:06:30,710
+so I can do it right
+here on the Fly Fox.
+
+128
+00:06:37,590 --> 00:06:39,590
+I gotta double
+check which one's,
+
+129
+00:06:39,590 --> 00:06:41,910
+Paramount, Sony, and Universal.
+
+130
+00:06:41,910 --> 00:06:43,710
+All right.
+
+131
+00:06:43,710 --> 00:06:46,610
+Paramount not Fox, but Sony.
+
+132
+00:06:46,610 --> 00:06:47,550
+There we go.
+
+133
+00:06:47,550 --> 00:06:50,030
+Now I'm going to make
+this entire view.
+
+134
+00:06:50,030 --> 00:06:53,670
+So I can see that I could
+even make that larger.
+
+135
+00:06:53,670 --> 00:06:55,310
+Oops, not that large.
+
+136
+00:06:55,310 --> 00:06:58,880
+And here I see this
+audience score, which
+
+137
+00:06:58,880 --> 00:07:00,760
+is not what I'm looking for.
+
+138
+00:07:00,760 --> 00:07:03,910
+I'm going to go right
+onto the audience score,
+
+139
+00:07:03,910 --> 00:07:06,160
+and I'm actually going to
+do a quick table calculation
+
+140
+00:07:06,160 --> 00:07:08,203
+to see percent of total.
+
+141
+00:07:08,203 --> 00:07:10,120
+And then I'm going to
+go back to make sure I'm
+
+142
+00:07:10,120 --> 00:07:13,040
+compute using lead studio here.
+
+143
+00:07:13,040 --> 00:07:18,920
+So when I have that I can see
+that Universal is that 46.89.
+
+144
+00:07:18,920 --> 00:07:22,520
+So if I go here,
+you can see 46.89
+
+145
+00:07:22,520 --> 00:07:25,120
+is where we're looking for.
+
+146
+00:07:25,120 --> 00:07:28,800
+So that took a few things
+to do and hopefully you
+
+147
+00:07:28,800 --> 00:07:33,520
+picked up on that percent of
+total quick table calculation.
+
+148
+00:07:33,520 --> 00:07:36,900
+So how many different categories
+should a pie chart have at most?
+
+149
+00:07:36,900 --> 00:07:41,600
+And the recommended from
+Tableau is the number 5.
+
+150
+00:07:41,600 --> 00:07:46,940
+And now we're going
+to use a goal.
+
+151
+00:07:46,940 --> 00:07:48,840
+We're going to
+create a bullet chart
+
+152
+00:07:48,840 --> 00:07:55,890
+to determine which
+genre was able to meet
+
+153
+00:07:55,890 --> 00:07:58,190
+that some of worldwide gross.
+
+154
+00:07:58,190 --> 00:08:02,690
+So let's go over
+here to question 5.
+
+155
+00:08:02,690 --> 00:08:05,370
+Now, I already have
+year on filter.
+
+156
+00:08:05,370 --> 00:08:09,130
+But basically, what you'll need
+to do is go into the data source
+
+157
+00:08:09,130 --> 00:08:13,110
+first and drag in production
+goals to make that connection.
+
+158
+00:08:13,110 --> 00:08:14,810
+And that connection
+will be on genre
+
+159
+00:08:14,810 --> 00:08:17,450
+and it should do
+it automatically.
+
+160
+00:08:17,450 --> 00:08:19,310
+Then I'm going to
+create a simple table,
+
+161
+00:08:19,310 --> 00:08:26,210
+calculate a simple bar chart
+with worldwide gross sales
+
+162
+00:08:26,210 --> 00:08:27,890
+and then genre.
+
+163
+00:08:27,890 --> 00:08:30,210
+Then once I click
+on goal, then I
+
+164
+00:08:30,210 --> 00:08:33,870
+can go to show me and
+go to that bullet chart.
+
+165
+00:08:33,870 --> 00:08:39,210
+Now, if you remember
+in the AG, often when
+
+166
+00:08:39,210 --> 00:08:44,730
+we use show me this
+is not the right--
+
+167
+00:08:44,730 --> 00:08:46,590
+this is not right field line.
+
+168
+00:08:46,590 --> 00:08:48,790
+So I need to swap
+that field line.
+
+169
+00:08:48,790 --> 00:08:51,310
+So once I swap that, then
+the goal will be there.
+
+170
+00:08:51,310 --> 00:08:52,770
+That's what I want.
+
+171
+00:08:52,770 --> 00:08:56,540
+And now I can see and
+I can even do down.
+
+172
+00:08:56,540 --> 00:09:03,660
+So I can see that comedy has
+greatly exceeded its goal.
+
+173
+00:09:03,660 --> 00:09:05,360
+These all exceeded their goal.
+
+174
+00:09:05,360 --> 00:09:08,620
+In fact, everything
+but animation did.
+
+175
+00:09:08,620 --> 00:09:11,820
+But comedy outpaced
+everyone else.
+
+176
+00:09:11,820 --> 00:09:15,300
+So that was the answer on that.
+
+177
+00:09:15,300 --> 00:09:20,100
+And then using that bullet
+chart, we want to see in 2011.
+
+178
+00:09:20,100 --> 00:09:24,260
+And to get to that, you saw that
+I just placed year on filters
+
+179
+00:09:24,260 --> 00:09:27,940
+and I only selected
+2011 and I said, OK.
+
+180
+00:09:27,940 --> 00:09:31,460
+And then once I did that, I
+could see that romance greatly
+
+181
+00:09:31,460 --> 00:09:33,980
+exceeded.
+
+182
+00:09:33,980 --> 00:09:37,980
+Animation at this point still
+has not exceeded their goal.
+
+183
+00:09:37,980 --> 00:09:43,060
+Drama has and comedy has not,
+but romance has greatly exceeded
+
+184
+00:09:43,060 --> 00:09:45,260
+and that was that question.
+
+185
+00:09:45,260 --> 00:09:46,300
+All right.
+
+186
+00:09:46,300 --> 00:09:49,188
+The last ones are just
+questions about chart kinds.
+
+187
+00:09:49,188 --> 00:09:50,980
+And which of the
+following is a good reason
+
+188
+00:09:50,980 --> 00:09:52,740
+for using a bullet graph?
+
+189
+00:09:52,740 --> 00:09:54,690
+And it's that idea
+of comparison,
+
+190
+00:09:54,690 --> 00:09:57,070
+the actual to the target.
+
+191
+00:09:57,070 --> 00:09:59,630
+And the next question
+is, what do you
+
+192
+00:09:59,630 --> 00:10:02,270
+need to create a
+histogram in Tableau?
+
+193
+00:10:02,270 --> 00:10:03,930
+You could have just
+gone to Tableau.
+
+194
+00:10:03,930 --> 00:10:05,150
+Go to the Show Me.
+
+195
+00:10:05,150 --> 00:10:06,710
+Roll over the
+histogram, and you'll
+
+196
+00:10:06,710 --> 00:10:11,390
+see that one measure
+is the answer.
+
+197
+00:10:11,390 --> 00:10:13,870
+So a single measure is correct.
+
+198
+00:10:13,870 --> 00:10:15,750
+To create headers
+in a visualization
+
+199
+00:10:15,750 --> 00:10:17,910
+you most likely need?
+
+200
+00:10:17,910 --> 00:10:19,890
+A dimension is the correct one.
+
+201
+00:10:19,890 --> 00:10:24,510
+And you could have gone to one
+of these previous ones here,
+
+202
+00:10:24,510 --> 00:10:26,850
+and you would have
+seen, oh, lead studio.
+
+203
+00:10:26,850 --> 00:10:30,620
+That's a dimension.
+
+204
+00:10:30,620 --> 00:10:33,070
+Then the next one is,
+when using a bar chart
+
+205
+00:10:33,070 --> 00:10:35,590
+with a dimension
+on the column shelf
+
+206
+00:10:35,590 --> 00:10:37,630
+and a measure on the
+row shelf, how can you
+
+207
+00:10:37,630 --> 00:10:39,170
+make a stacked bar chart?
+
+208
+00:10:39,170 --> 00:10:42,290
+Now, just you know, doesn't
+matter if it's on the column,
+
+209
+00:10:42,290 --> 00:10:44,310
+it's on the rows or
+the column shelf,
+
+210
+00:10:44,310 --> 00:10:46,390
+but you need to add
+another dimension
+
+211
+00:10:46,390 --> 00:10:48,010
+to the color on the marks card.
+
+212
+00:10:48,010 --> 00:10:51,030
+So let's just go to
+the very first one.
+
+213
+00:10:51,030 --> 00:10:55,160
+And if I bring just
+another dimension like film
+
+214
+00:10:55,160 --> 00:10:59,580
+and I add it to color, then
+this is not a good example,
+
+215
+00:10:59,580 --> 00:11:02,480
+but you can see now I've got
+the stacked and I have multiple.
+
+216
+00:11:02,480 --> 00:11:07,320
+And I could actually put
+film onto filters here.
+
+217
+00:11:07,320 --> 00:11:08,860
+And I could just say none.
+
+218
+00:11:08,860 --> 00:11:10,337
+And I could just
+say a serious man.
+
+219
+00:11:10,337 --> 00:11:11,420
+That's pretty interesting.
+
+220
+00:11:11,420 --> 00:11:13,040
+That's probably
+going to show one.
+
+221
+00:11:13,040 --> 00:11:15,740
+So that's not the
+best example here.
+
+222
+00:11:15,740 --> 00:11:19,480
+So maybe I put genre
+on to color here.
+
+223
+00:11:19,480 --> 00:11:20,360
+OK.
+
+224
+00:11:20,360 --> 00:11:23,400
+And then maybe I bring
+genre onto filters.
+
+225
+00:11:23,400 --> 00:11:27,100
+I say none, but
+we'll do animation.
+
+226
+00:11:27,100 --> 00:11:28,880
+We'll say, OK.
+
+227
+00:11:28,880 --> 00:11:32,645
+Oh, it looks like Disney,
+really outpace the rest.
+
+228
+00:11:32,645 --> 00:11:34,520
+So anyway, so there's
+a lot of different ways
+
+229
+00:11:34,520 --> 00:11:36,520
+that you can play around
+with those chart types.
+
+230
+00:11:36,520 --> 00:11:39,840
+But to create that stacked one,
+you want to put that onto color.
+
+231
+00:11:39,840 --> 00:11:43,940
+So I think that was the
+last question in that Cairn.
+
+232
+00:11:43,940 --> 00:11:46,680
+Hopefully you are
+feeling more confident
+
+233
+00:11:46,680 --> 00:11:49,920
+regarding your chart
+types, and we'll
+
+234
+00:11:49,920 --> 00:11:53,000
+continue to build your
+skills and Tableau.
+
+235
+00:11:53,000 --> 00:11:54,910
+Happy vising.

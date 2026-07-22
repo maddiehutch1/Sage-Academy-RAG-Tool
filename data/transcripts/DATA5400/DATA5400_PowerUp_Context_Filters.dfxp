@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>388494032 - 1_cfin97m2 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.080" end="00:00:08.100" tts:direction="ltr">Hello visitors. This is a power up on the
+<br />top filter.</p>
+        <p begin="00:00:08.100" end="00:00:14.320" tts:direction="ltr">I've provided you already with a completed
+<br />file that you can check out.</p>
+        <p begin="00:00:14.320" end="00:00:19.320" tts:direction="ltr">But I'm going to take you from the
+<br />beginning that</p>
+        <p begin="00:00:19.320" end="00:00:24.945" tts:direction="ltr">perhaps you might want to use this in a
+<br />future visualization.</p>
+        <p begin="00:00:24.945" end="00:00:29.710" tts:direction="ltr">I've given you a file called Sales
+<br />Customers,</p>
+        <p begin="00:00:29.710" end="00:00:33.050" tts:direction="ltr">and you'll see that there are a list of
+<br />student names.</p>
+        <p begin="00:00:33.050" end="00:00:35.450" tts:direction="ltr">You might see some familiar names there.</p>
+        <p begin="00:00:35.450" end="00:00:38.470" tts:direction="ltr">It has the region just East,</p>
+        <p begin="00:00:38.470" end="00:00:41.770" tts:direction="ltr">West, and customer name and then the
+<br />sales.</p>
+        <p begin="00:00:41.770" end="00:00:44.450" tts:direction="ltr">Fairly simple, okay?</p>
+        <p begin="00:00:44.570" end="00:00:48.290" tts:direction="ltr">I'm going to bring in that data source.</p>
+        <p begin="00:00:48.290" end="00:00:50.970" tts:direction="ltr">I know it's an Excel file,</p>
+        <p begin="00:00:51.050" end="00:00:54.250" tts:direction="ltr">I think it's right there.</p>
+        <p begin="00:00:54.250" end="00:00:57.190" tts:direction="ltr">I'll go ahead and just bring that in.</p>
+        <p begin="00:00:57.190" end="00:01:02.850" tts:direction="ltr">All right. We're going to look at the
+<br />fields.</p>
+        <p begin="00:01:02.850" end="00:01:07.750" tts:direction="ltr">Those looks great. Y region.</p>
+        <p begin="00:01:07.750" end="00:01:13.530" tts:direction="ltr">I could actually change this to a
+<br />geographic role and move that to region.</p>
+        <p begin="00:01:13.530" end="00:01:16.070" tts:direction="ltr">That's a number that looks good.</p>
+        <p begin="00:01:16.070" end="00:01:18.810" tts:direction="ltr">I'm going to go to my first sheet here.</p>
+        <p begin="00:01:18.810" end="00:01:22.490" tts:direction="ltr">The first thing I want to do is I just
+<br />want to see what I've got.</p>
+        <p begin="00:01:22.490" end="00:01:26.070" tts:direction="ltr">Okay, let me make this a little bit
+<br />bigger.</p>
+        <p begin="00:01:26.070" end="00:01:28.010" tts:direction="ltr">Just like with any of our data,</p>
+        <p begin="00:01:28.010" end="00:01:31.190" tts:direction="ltr">we're here to check it out.</p>
+        <p begin="00:01:31.190" end="00:01:35.350" tts:direction="ltr">We'll bring sales onto column first and
+<br />then we'll do</p>
+        <p begin="00:01:35.350" end="00:01:42.010" tts:direction="ltr">customer name and get a feel of what those
+<br />look like.</p>
+        <p begin="00:01:42.330" end="00:01:47.720" tts:direction="ltr">All right, Let me do a here so I can see
+<br />all these names.</p>
+        <p begin="00:01:47.720" end="00:01:49.740" tts:direction="ltr">Now I have my sales,</p>
+        <p begin="00:01:49.740" end="00:01:51.820" tts:direction="ltr">I have my customer name.</p>
+        <p begin="00:01:51.820" end="00:01:54.760" tts:direction="ltr">I am going to do a top end filter,</p>
+        <p begin="00:01:54.760" end="00:01:56.900" tts:direction="ltr">but I want to make it better.</p>
+        <p begin="00:01:56.900" end="00:02:04.260" tts:direction="ltr">I want to create a view where I can have
+<br />max.</p>
+        <p begin="00:02:04.260" end="00:02:06.980" tts:direction="ltr">I want to see the max of sales here.</p>
+        <p begin="00:02:06.980" end="00:02:09.580" tts:direction="ltr">Do that. I'm actually going to create,</p>
+        <p begin="00:02:09.580" end="00:02:12.460" tts:direction="ltr">you guessed it, a calculated field.</p>
+        <p begin="00:02:13.180" end="00:02:16.400" tts:direction="ltr">The calculated field I'm going to make,</p>
+        <p begin="00:02:16.400" end="00:02:23.320" tts:direction="ltr">you can find this in the example file,
+<br />Create Calculated Field.</p>
+        <p begin="00:02:23.320" end="00:02:25.080" tts:direction="ltr">Let me drop this over here.</p>
+        <p begin="00:02:25.080" end="00:02:27.220" tts:direction="ltr">I'm going to call that max.</p>
+        <p begin="00:02:27.620" end="00:02:31.280" tts:direction="ltr">What I'm going to do, I've got the two
+<br />forward slashes,</p>
+        <p begin="00:02:31.280" end="00:02:32.920" tts:direction="ltr">this is just some notes right here,</p>
+        <p begin="00:02:32.920" end="00:02:35.460" tts:direction="ltr">it's a max of customer sales.</p>
+        <p begin="00:02:35.460" end="00:02:39.020" tts:direction="ltr">And I have a, that's going to be</p>
+        <p begin="00:02:39.020" end="00:02:43.740" tts:direction="ltr">my fixed number there based on customer
+<br />name and sales.</p>
+        <p begin="00:02:43.740" end="00:02:46.980" tts:direction="ltr">This is going to create a bar chart.</p>
+        <p begin="00:02:46.980" end="00:02:50.860" tts:direction="ltr">Basically, that's going to be just locked
+<br />in at that.</p>
+        <p begin="00:02:50.860" end="00:02:53.200" tts:direction="ltr">I've got the sales,</p>
+        <p begin="00:02:53.200" end="00:02:58.580" tts:direction="ltr">I'm also going to do a rank calculation,</p>
+        <p begin="00:02:58.580" end="00:03:02.320" tts:direction="ltr">rather than the traditional ranking.</p>
+        <p begin="00:03:02.320" end="00:03:09.300" tts:direction="ltr">I create a calculation</p>
+        <p begin="00:03:11.470" end="00:03:15.770" tts:direction="ltr">that way I can control it more within my
+<br />field.</p>
+        <p begin="00:03:15.770" end="00:03:18.290" tts:direction="ltr">I'm going to go ahead and call this rank.</p>
+        <p begin="00:03:18.290" end="00:03:22.870" tts:direction="ltr">This one is Rank of Sales and we're going
+<br />to use table across.</p>
+        <p begin="00:03:22.870" end="00:03:29.730" tts:direction="ltr">It's rank with our sum times sales are
+<br />divided by sales.</p>
+        <p begin="00:03:29.730" end="00:03:32.450" tts:direction="ltr">I've got those in there.</p>
+        <p begin="00:03:32.450" end="00:03:36.990" tts:direction="ltr">What I'm going to do is I'm going to bring
+<br />that max over here.</p>
+        <p begin="00:03:36.990" end="00:03:40.510" tts:direction="ltr">Drop that in front, these two charts,</p>
+        <p begin="00:03:40.510" end="00:03:45.610" tts:direction="ltr">we're going to make that into a dual axis
+<br />here in just a moment Then actually,</p>
+        <p begin="00:03:45.610" end="00:03:47.270" tts:direction="ltr">let's go ahead and do that right now.</p>
+        <p begin="00:03:47.270" end="00:03:49.870" tts:direction="ltr">I can just do that by doing a dropdown,</p>
+        <p begin="00:03:49.870" end="00:03:52.790" tts:direction="ltr">and we'll do the dual axis right here.</p>
+        <p begin="00:03:52.790" end="00:03:59.370" tts:direction="ltr">Now I've got the two different charts
+<br />working in tandem,</p>
+        <p begin="00:03:59.370" end="00:04:03.250" tts:direction="ltr">but I'm going to make them into bar
+<br />charts.</p>
+        <p begin="00:04:03.250" end="00:04:06.970" tts:direction="ltr">Okay? Of the Automatic.</p>
+        <p begin="00:04:06.970" end="00:04:12.315" tts:direction="ltr">I'm going to go bar some of Sales
+<br />Automatic bar.</p>
+        <p begin="00:04:12.315" end="00:04:15.840" tts:direction="ltr">Now you can see that the max,</p>
+        <p begin="00:04:15.840" end="00:04:19.800" tts:direction="ltr">which is the blue, is below the orange.</p>
+        <p begin="00:04:19.800" end="00:04:22.540" tts:direction="ltr">Okay, That's what I want.</p>
+        <p begin="00:04:22.540" end="00:04:24.420" tts:direction="ltr">I'm actually going to hide this.</p>
+        <p begin="00:04:24.420" end="00:04:26.880" tts:direction="ltr">That's not in the way.</p>
+        <p begin="00:04:26.880" end="00:04:29.740" tts:direction="ltr">I want to add actually a ranking right</p>
+        <p begin="00:04:29.740" end="00:04:31.720" tts:direction="ltr">here on the left hand side. So I can
+<br />really see that.</p>
+        <p begin="00:04:31.720" end="00:04:33.920" tts:direction="ltr">That's why I have this do that.</p>
+        <p begin="00:04:33.920" end="00:04:36.660" tts:direction="ltr">I'm going to go ahead and drag that up
+<br />here.</p>
+        <p begin="00:04:36.660" end="00:04:39.940" tts:direction="ltr">You'll see that it is a continuous
+<br />measure.</p>
+        <p begin="00:04:39.940" end="00:04:42.860" tts:direction="ltr">But I'm going to change this to discrete.</p>
+        <p begin="00:04:42.860" end="00:04:46.580" tts:direction="ltr">Then I'm going to drop it in front of the
+<br />customer names.</p>
+        <p begin="00:04:46.580" end="00:04:50.420" tts:direction="ltr">I've got the rank that quickly can show
+<br />that.</p>
+        <p begin="00:04:50.420" end="00:04:54.520" tts:direction="ltr">And then I have the customer name and the
+<br />information.</p>
+        <p begin="00:04:55.040" end="00:04:57.400" tts:direction="ltr">This is a good start.</p>
+        <p begin="00:04:57.400" end="00:04:58.980" tts:direction="ltr">We haven't done the top end filter yet,</p>
+        <p begin="00:04:58.980" end="00:05:01.660" tts:direction="ltr">but I'm going to design this a little
+<br />better too.</p>
+        <p begin="00:05:01.660" end="00:05:04.060" tts:direction="ltr">One of the things I'm just going to do,</p>
+        <p begin="00:05:04.060" end="00:05:06.100" tts:direction="ltr">if I was going to bring it on dash B.</p>
+        <p begin="00:05:06.100" end="00:05:10.560" tts:direction="ltr">Just going to go ahead and remove, hide
+<br />the title.</p>
+        <p begin="00:05:10.560" end="00:05:14.540" tts:direction="ltr">We get rid of that. Then I'm going to do</p>
+        <p begin="00:05:14.540" end="00:05:21.660" tts:direction="ltr">a few things like improve what I'm seeing
+<br />for the bars.</p>
+        <p begin="00:05:21.660" end="00:05:26.440" tts:direction="ltr">What I'm going to go ahead to do is on
+<br />measure name,</p>
+        <p begin="00:05:26.440" end="00:05:30.200" tts:direction="ltr">I'm going to put sales onto label.</p>
+        <p begin="00:05:30.200" end="00:05:35.960" tts:direction="ltr">You can see now I've got the sales on the
+<br />label, then I'm</p>
+        <p begin="00:05:37.200" end="00:05:42.340" tts:direction="ltr">Sales on the label here, okay?</p>
+        <p begin="00:05:42.340" end="00:05:45.940" tts:direction="ltr">And then I'm going to go back to my bar
+<br />chart size.</p>
+        <p begin="00:05:45.940" end="00:05:50.180" tts:direction="ltr">Take that really skinny, that what's
+<br />underneath.</p>
+        <p begin="00:05:50.180" end="00:05:55.360" tts:direction="ltr">Then what I'm going to do is instead of</p>
+        <p begin="00:05:55.360" end="00:06:02.540" tts:direction="ltr">having measure name see what I'm going to
+<br />do is here.</p>
+        <p begin="00:06:02.540" end="00:06:05.060" tts:direction="ltr">If I click on this little icon here,</p>
+        <p begin="00:06:05.060" end="00:06:11.320" tts:direction="ltr">then it allow me to select something else.</p>
+        <p begin="00:06:11.360" end="00:06:13.820" tts:direction="ltr">Just put something on the tool,</p>
+        <p begin="00:06:13.820" end="00:06:18.080" tts:direction="ltr">that's great for this one.</p>
+        <p begin="00:06:18.080" end="00:06:22.540" tts:direction="ltr">Also got the measure names,</p>
+        <p begin="00:06:22.540" end="00:06:25.300" tts:direction="ltr">but I just want to duplicate it on top.</p>
+        <p begin="00:06:25.300" end="00:06:28.080" tts:direction="ltr">I don't want the max. I'm actually</p>
+        <p begin="00:06:28.080" end="00:06:34.360" tts:direction="ltr">going to double click and let me just a
+<br />single click.</p>
+        <p begin="00:06:34.360" end="00:06:38.600" tts:direction="ltr">Let's see, actually let's pull that off.</p>
+        <p begin="00:06:38.600" end="00:06:43.360" tts:direction="ltr">Then we'll put sales on color.</p>
+        <p begin="00:06:43.360" end="00:06:47.220" tts:direction="ltr">And then I'm actually going to change that
+<br />to be a dummy field.</p>
+        <p begin="00:06:47.220" end="00:06:49.740" tts:direction="ltr">By double clicking on the pill,</p>
+        <p begin="00:06:49.740" end="00:06:54.280" tts:direction="ltr">I can put two quotations and that's going
+<br />to create a dummy area.</p>
+        <p begin="00:06:54.280" end="00:06:58.500" tts:direction="ltr">Let me go back to this max. I don't think
+<br />I want that.</p>
+        <p begin="00:06:58.500" end="00:07:05.140" tts:direction="ltr">Okay. This will give me a chance by doing
+<br />that dummy feel that</p>
+        <p begin="00:07:05.140" end="00:07:10.880" tts:direction="ltr">I can make these different colors for
+<br />purposes right now,</p>
+        <p begin="00:07:10.880" end="00:07:13.160" tts:direction="ltr">I'm going to go ahead and select,</p>
+        <p begin="00:07:13.760" end="00:07:21.880" tts:direction="ltr">oops, My computer is being a little slow
+<br />right now.</p>
+        <p begin="00:07:24.920" end="00:07:30.280" tts:direction="ltr">Okay, there we go.</p>
+        <p begin="00:07:32.280" end="00:07:37.940" tts:direction="ltr">Then I can do the max as a different
+<br />color.</p>
+        <p begin="00:07:37.940" end="00:07:40.800" tts:direction="ltr">Let's just make it really obvious.</p>
+        <p begin="00:07:40.800" end="00:07:48.030" tts:direction="ltr">Maybe a green, blue. Okay.</p>
+        <p begin="00:07:48.030" end="00:07:50.610" tts:direction="ltr">All right. Now you'll notice I,</p>
+        <p begin="00:07:50.610" end="00:07:53.170" tts:direction="ltr">let me go ahead and hide this.</p>
+        <p begin="00:07:53.170" end="00:07:59.130" tts:direction="ltr">I've got all of these numbers here that
+<br />are showing.</p>
+        <p begin="00:07:59.130" end="00:08:02.950" tts:direction="ltr">What I'm going to do actually is I'm going
+<br />to write,</p>
+        <p begin="00:08:02.950" end="00:08:07.490" tts:direction="ltr">click the bar and I'm going to select Mark
+<br />Label.</p>
+        <p begin="00:08:07.490" end="00:08:09.950" tts:direction="ltr">And I'm going to say never show.</p>
+        <p begin="00:08:09.950" end="00:08:12.530" tts:direction="ltr">I have been trying to figure out</p>
+        <p begin="00:08:12.530" end="00:08:15.930" tts:direction="ltr">a way within the Marks card to actually
+<br />eliminate this.</p>
+        <p begin="00:08:15.930" end="00:08:19.830" tts:direction="ltr">I don't have to do this by hand because I
+<br />know that there is</p>
+        <p begin="00:08:19.830" end="00:08:23.950" tts:direction="ltr">a way to do this in the Marks card.</p>
+        <p begin="00:08:23.950" end="00:08:25.150" tts:direction="ltr">I just can't figure it out.</p>
+        <p begin="00:08:25.150" end="00:08:27.170" tts:direction="ltr">If you figured it out, please send</p>
+        <p begin="00:08:27.170" end="00:08:29.350" tts:direction="ltr">me an e mail and let me know how you did
+<br />it.</p>
+        <p begin="00:08:29.350" end="00:08:39.010" tts:direction="ltr">I think it has to do with some of sales on
+<br />the label</p>
+        <p begin="00:08:39.010" end="00:08:44.990" tts:direction="ltr">and somehow removing it here</p>
+        <p begin="00:08:44.990" end="00:08:52.835" tts:direction="ltr">without it collapsing from the bar chart
+<br />T,</p>
+        <p begin="00:08:52.835" end="00:08:55.340" tts:direction="ltr">something I'm going to keep noodling on.</p>
+        <p begin="00:08:55.340" end="00:08:56.960" tts:direction="ltr">Let me just remove a few of these.</p>
+        <p begin="00:08:56.960" end="00:08:59.800" tts:direction="ltr">Just you can see again, mark label never
+<br />show.</p>
+        <p begin="00:08:59.800" end="00:09:06.300" tts:direction="ltr">I'm removing the bar label tediously.</p>
+        <p begin="00:09:06.300" end="00:09:08.860" tts:direction="ltr">This is probably not the best way.</p>
+        <p begin="00:09:08.860" end="00:09:14.860" tts:direction="ltr">Okay, you get the idea and you can look at
+<br />the file that I've provided here.</p>
+        <p begin="00:09:14.860" end="00:09:18.840" tts:direction="ltr">Now, I've got dual axis.</p>
+        <p begin="00:09:18.840" end="00:09:23.920" tts:direction="ltr">I've got my max showing here and then I've
+<br />got my customer here.</p>
+        <p begin="00:09:23.920" end="00:09:26.620" tts:direction="ltr">I'm going to keep doing some cleaning.</p>
+        <p begin="00:09:26.620" end="00:09:31.380" tts:direction="ltr">I'm going to go to format and just go to
+<br />the sheet.</p>
+        <p begin="00:09:31.380" end="00:09:39.130" tts:direction="ltr">I'm going to go ahead and make that 11 for
+<br />the sheet that gray.</p>
+        <p begin="00:09:39.130" end="00:09:41.210" tts:direction="ltr">That works for me right now.</p>
+        <p begin="00:09:41.210" end="00:09:48.650" tts:direction="ltr">Okay. Shrunk a little bit because I have
+<br />the spacing.</p>
+        <p begin="00:09:48.650" end="00:09:54.830" tts:direction="ltr">But we're going to go ahead and go to our
+<br />grid here.</p>
+        <p begin="00:09:54.830" end="00:10:00.690" tts:direction="ltr">And I'm going to go ahead and remove that.</p>
+        <p begin="00:10:01.250" end="00:10:07.070" tts:direction="ltr">Remove that, great. Let's go to the.</p>
+        <p begin="00:10:07.070" end="00:10:11.610" tts:direction="ltr">I don't need that.</p>
+        <p begin="00:10:12.890" end="00:10:19.010" tts:direction="ltr">None for those. Let me go back to my
+<br />column.</p>
+        <p begin="00:10:20.210" end="00:10:27.790" tts:direction="ltr">I was just trying to remove a few of these
+<br />to me.</p>
+        <p begin="00:10:27.790" end="00:10:32.210" tts:direction="ltr">Look at what I have set here.</p>
+        <p begin="00:10:37.210" end="00:10:41.050" tts:direction="ltr">So I want to go to my lines.</p>
+        <p begin="00:10:41.050" end="00:10:50.490" tts:direction="ltr">Remove those and I don't think the zero
+<br />line.</p>
+        <p begin="00:10:55.530" end="00:10:58.710" tts:direction="ltr">Okay. I have, he's changed that.</p>
+        <p begin="00:10:58.710" end="00:11:01.130" tts:direction="ltr">So I'm just working on a few little</p>
+        <p begin="00:11:01.130" end="00:11:03.830" tts:direction="ltr">I'm going to make that a little bit.</p>
+        <p begin="00:11:03.830" end="00:11:06.610" tts:direction="ltr">We're going to make that black,</p>
+        <p begin="00:11:08.810" end="00:11:12.250" tts:direction="ltr">that said zero line right there.</p>
+        <p begin="00:11:12.890" end="00:11:15.710" tts:direction="ltr">I want that to show a little more.</p>
+        <p begin="00:11:15.710" end="00:11:20.590" tts:direction="ltr">I'll need to work on that. Another thing I
+<br />want to do is just space these out.</p>
+        <p begin="00:11:20.590" end="00:11:24.150" tts:direction="ltr">I'm well, first of all, I'll close that.</p>
+        <p begin="00:11:24.150" end="00:11:26.050" tts:direction="ltr">I'll right click this area.</p>
+        <p begin="00:11:26.050" end="00:11:31.370" tts:direction="ltr">More moves Headers.</p>
+        <p begin="00:11:41.170" end="00:11:50.090" tts:direction="ltr">Okay. I also wanted to go into cell size.</p>
+        <p begin="00:11:50.090" end="00:11:51.490" tts:direction="ltr">I want to make it taller.</p>
+        <p begin="00:11:51.490" end="00:11:52.930" tts:direction="ltr">Now I've got more room.</p>
+        <p begin="00:11:52.930" end="00:11:56.790" tts:direction="ltr">Great. Okay, we're on our way to</p>
+        <p begin="00:11:56.790" end="00:12:01.750" tts:direction="ltr">improving things from a visual standpoint,
+<br />cleaning up stuff.</p>
+        <p begin="00:12:01.750" end="00:12:05.190" tts:direction="ltr">I do want to this format,</p>
+        <p begin="00:12:05.190" end="00:12:12.090" tts:direction="ltr">here it is, the zero line.</p>
+        <p begin="00:12:18.050" end="00:12:22.290" tts:direction="ltr">Just trying to figure out how I have that
+<br />in front.</p>
+        <p begin="00:12:28.450" end="00:12:36.590" tts:direction="ltr">Okay, I do want to fix that so that's
+<br />thicker to create that base right there.</p>
+        <p begin="00:12:36.590" end="00:12:43.830" tts:direction="ltr">But right now we have this and this is the
+<br />all customers.</p>
+        <p begin="00:12:43.830" end="00:12:47.690" tts:direction="ltr">Right now we're going to go ahead and copy
+<br />this sheet.</p>
+        <p begin="00:12:47.690" end="00:12:51.180" tts:direction="ltr">Right click, and then we'll duplicate
+<br />that.</p>
+        <p begin="00:12:51.180" end="00:12:53.890" tts:direction="ltr">This is where we're going to do the top
+<br />end filter.</p>
+        <p begin="00:12:53.890" end="00:12:56.010" tts:direction="ltr">Now that we've got the ranking,</p>
+        <p begin="00:12:56.010" end="00:12:57.790" tts:direction="ltr">we're going to do the top end filter.</p>
+        <p begin="00:12:57.790" end="00:13:00.170" tts:direction="ltr">And you'll see that I've got Grace Dawson
+<br />and</p>
+        <p begin="00:13:00.170" end="00:13:03.230" tts:direction="ltr">Chance all in the second position right
+<br />there.</p>
+        <p begin="00:13:03.230" end="00:13:04.590" tts:direction="ltr">But that's totally fine.</p>
+        <p begin="00:13:04.590" end="00:13:10.750" tts:direction="ltr">We're going to just go ahead and bring in
+<br />that customer name.</p>
+        <p begin="00:13:11.110" end="00:13:15.970" tts:direction="ltr">Remember we go into the top by field. Top
+<br />ten.</p>
+        <p begin="00:13:15.970" end="00:13:19.990" tts:direction="ltr">We're going to do it by sales, we'll say.</p>
+        <p begin="00:13:19.990" end="00:13:22.770" tts:direction="ltr">Okay, Now I've got my top ten.</p>
+        <p begin="00:13:22.770" end="00:13:26.950" tts:direction="ltr">Notice that my ten includes both Dawson
+<br />and Chance.</p>
+        <p begin="00:13:26.950" end="00:13:29.110" tts:direction="ltr">It's a total of ten,</p>
+        <p begin="00:13:29.110" end="00:13:34.230" tts:direction="ltr">even though there's three that are in the
+<br />second position,</p>
+        <p begin="00:13:34.390" end="00:13:43.890" tts:direction="ltr">we're going to call this one my top
+<br />filter.</p>
+        <p begin="00:13:43.890" end="00:13:47.910" tts:direction="ltr">Okay, now again, this is just a reminder,</p>
+        <p begin="00:13:47.910" end="00:13:49.610" tts:direction="ltr">we did some filter practice.</p>
+        <p begin="00:13:49.610" end="00:13:53.090" tts:direction="ltr">But now what I also want to do is I'm
+<br />going to add in region.</p>
+        <p begin="00:13:53.090" end="00:13:56.950" tts:direction="ltr">I'm going to duplicate this one more time.</p>
+        <p begin="00:13:57.350" end="00:14:02.430" tts:direction="ltr">What I might want to do is bring that
+<br />region into filters.</p>
+        <p begin="00:14:02.430" end="00:14:03.810" tts:direction="ltr">Right? If I do,</p>
+        <p begin="00:14:03.810" end="00:14:07.190" tts:direction="ltr">let's just say I select the east region
+<br />and I say,</p>
+        <p begin="00:14:07.190" end="00:14:10.230" tts:direction="ltr">okay, see what happens.</p>
+        <p begin="00:14:10.230" end="00:14:14.190" tts:direction="ltr">It only shows you the three names, Jonah,</p>
+        <p begin="00:14:14.190" end="00:14:19.090" tts:direction="ltr">Caleb, and Preston, that we're in, the top
+<br />ten.</p>
+        <p begin="00:14:19.090" end="00:14:24.650" tts:direction="ltr">Okay. That has to do with this idea of a
+<br />context filter because now what</p>
+        <p begin="00:14:24.650" end="00:14:27.650" tts:direction="ltr">the order of operations is saying is that
+<br />the customer name</p>
+        <p begin="00:14:27.650" end="00:14:30.930" tts:direction="ltr">goes first and then the region name goes
+<br />second.</p>
+        <p begin="00:14:30.930" end="00:14:33.870" tts:direction="ltr">But if I bring region in here,</p>
+        <p begin="00:14:34.110" end="00:14:37.750" tts:direction="ltr">let's just say I put at great.</p>
+        <p begin="00:14:37.750" end="00:14:43.350" tts:direction="ltr">Then I click down the arrow and I can say
+<br />add to context.</p>
+        <p begin="00:14:43.350" end="00:14:46.910" tts:direction="ltr">Once I've done that, notice what happens
+<br />in the filters.</p>
+        <p begin="00:14:46.910" end="00:14:49.430" tts:direction="ltr">This goes great, it goes in front of</p>
+        <p begin="00:14:49.430" end="00:14:54.370" tts:direction="ltr">the customer name and now it's showing all
+<br />of the names.</p>
+        <p begin="00:14:54.370" end="00:14:57.670" tts:direction="ltr">I'm going to get rid of some of these
+<br />because that's going to bug</p>
+        <p begin="00:14:57.670" end="00:15:00.980" tts:direction="ltr">me that are in the east region.</p>
+        <p begin="00:15:00.980" end="00:15:03.840" tts:direction="ltr">Okay. In the top ten there,</p>
+        <p begin="00:15:03.840" end="00:15:06.920" tts:direction="ltr">it's saying yes, you have the customer
+<br />name.</p>
+        <p begin="00:15:06.920" end="00:15:11.460" tts:direction="ltr">But now I'm going to first do</p>
+        <p begin="00:15:11.460" end="00:15:16.580" tts:direction="ltr">the top for the region because that's what
+<br />you've denoted.</p>
+        <p begin="00:15:16.580" end="00:15:19.600" tts:direction="ltr">Because that's the context I think</p>
+        <p begin="00:15:19.600" end="00:15:23.560" tts:direction="ltr">a pretty powerful tool when it comes to
+<br />the top end.</p>
+        <p begin="00:15:23.560" end="00:15:27.680" tts:direction="ltr">I will stop getting rid of these labels,
+<br />figure out how to do that.</p>
+        <p begin="00:15:27.680" end="00:15:35.310" tts:direction="ltr">I'm going to put down right here that this
+<br />is top en, filtered by region.</p>
+        <p begin="00:15:35.310" end="00:15:38.450" tts:direction="ltr">Now you could go a longer way.</p>
+        <p begin="00:15:38.450" end="00:15:43.390" tts:direction="ltr">You could filter by region by placing it
+<br />on top.</p>
+        <p begin="00:15:43.390" end="00:15:48.070" tts:direction="ltr">But then there's always going to be the
+<br />possibility of it getting dumped out.</p>
+        <p begin="00:15:48.070" end="00:15:49.930" tts:direction="ltr">This is a much better way to make</p>
+        <p begin="00:15:49.930" end="00:15:53.470" tts:direction="ltr">a context filter that your region, if I go
+<br />here,</p>
+        <p begin="00:15:53.470" end="00:16:00.450" tts:direction="ltr">I can change that region right to the
+<br />north region.</p>
+        <p begin="00:16:00.450" end="00:16:03.730" tts:direction="ltr">I can also apply,</p>
+        <p begin="00:16:03.730" end="00:16:06.690" tts:direction="ltr">I can show the filter Now I can do</p>
+        <p begin="00:16:06.690" end="00:16:10.930" tts:direction="ltr">a little more manipulation if I want, so
+<br />forth.</p>
+        <p begin="00:16:10.930" end="00:16:16.330" tts:direction="ltr">And so it's going to change those names
+<br />according to what I have selected.</p>
+        <p begin="00:16:16.330" end="00:16:20.190" tts:direction="ltr">The context it is. I'm hoping that has
+<br />helped a little bit.</p>
+        <p begin="00:16:20.190" end="00:16:21.710" tts:direction="ltr">We first ranked the customers,</p>
+        <p begin="00:16:21.710" end="00:16:23.110" tts:direction="ltr">designed it a little bit,</p>
+        <p begin="00:16:23.110" end="00:16:27.490" tts:direction="ltr">having that max value so that you could
+<br />see that nice clean line,</p>
+        <p begin="00:16:27.490" end="00:16:29.850" tts:direction="ltr">that potential there of sales.</p>
+        <p begin="00:16:29.850" end="00:16:34.310" tts:direction="ltr">Then did the top end filter just simply
+<br />added customer name to</p>
+        <p begin="00:16:34.310" end="00:16:38.850" tts:direction="ltr">filter and changed it by the field and
+<br />sales.</p>
+        <p begin="00:16:38.850" end="00:16:43.130" tts:direction="ltr">And then went ahead and added in another
+<br />filter for a region.</p>
+        <p begin="00:16:43.130" end="00:16:45.430" tts:direction="ltr">But made that a context filter that,</p>
+        <p begin="00:16:45.430" end="00:16:48.250" tts:direction="ltr">that was first in the order of operations.</p>
+        <p begin="00:16:48.250" end="00:16:49.870" tts:direction="ltr">That's your power up for today.</p>
+        <p begin="00:16:49.870" end="00:16:53.870" tts:direction="ltr">I hope that you've learned a couple of
+<br />things and happy.</p>
+    </div>
+  </body>
+</tt>

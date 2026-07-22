@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>401434802 - 1_pugxdjki - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:01.480" end="00:00:06.580" tts:direction="ltr">This is the reveal video for the blue and
+<br />green pills.</p>
+        <p begin="00:00:06.580" end="00:00:09.180" tts:direction="ltr">Karen, there are two questions that</p>
+        <p begin="00:00:09.180" end="00:00:12.360" tts:direction="ltr">you're asking or you're wondering about
+<br />actually three.</p>
+        <p begin="00:00:12.360" end="00:00:15.200" tts:direction="ltr">But what day had the most order sales?</p>
+        <p begin="00:00:15.200" end="00:00:19.260" tts:direction="ltr">What date order sales spike.</p>
+        <p begin="00:00:19.260" end="00:00:22.720" tts:direction="ltr">And then which region made at least 13,000
+<br />in profit?</p>
+        <p begin="00:00:22.720" end="00:00:24.760" tts:direction="ltr">In the home office segment,</p>
+        <p begin="00:00:24.760" end="00:00:28.180" tts:direction="ltr">you'll be having to file to use.</p>
+        <p begin="00:00:28.180" end="00:00:30.720" tts:direction="ltr">You should have that already uploaded.</p>
+        <p begin="00:00:30.720" end="00:00:34.340" tts:direction="ltr">We'll go ahead and build a line chart.</p>
+        <p begin="00:00:34.340" end="00:00:38.980" tts:direction="ltr">We'll do that by order date and Sales.</p>
+        <p begin="00:00:38.980" end="00:00:42.430" tts:direction="ltr">We'll grab sales and put that on columns.</p>
+        <p begin="00:00:42.430" end="00:00:47.700" tts:direction="ltr">Then we'll do Order Date on Rose.</p>
+        <p begin="00:00:47.700" end="00:00:53.480" tts:direction="ltr">You'll notice that date has a plus button
+<br />by it,</p>
+        <p begin="00:00:53.480" end="00:00:56.300" tts:direction="ltr">that means there's nested information
+<br />here.</p>
+        <p begin="00:00:56.300" end="00:01:00.240" tts:direction="ltr">Then if I click on that, I can then move
+<br />down to the quarter,</p>
+        <p begin="00:01:00.240" end="00:01:02.040" tts:direction="ltr">move down to the month,</p>
+        <p begin="00:01:02.040" end="00:01:04.460" tts:direction="ltr">and then move to the day.</p>
+        <p begin="00:01:04.460" end="00:01:09.420" tts:direction="ltr">We're looking for that granular level of
+<br />day information.</p>
+        <p begin="00:01:09.420" end="00:01:17.020" tts:direction="ltr">Let's go ahead and remove the year and the
+<br />quarter and the month.</p>
+        <p begin="00:01:17.020" end="00:01:19.440" tts:direction="ltr">I'm going to go ahead and flip these so
+<br />that</p>
+        <p begin="00:01:19.440" end="00:01:24.200" tts:direction="ltr">the access the dates are on the bottom
+<br />here.</p>
+        <p begin="00:01:24.200" end="00:01:29.820" tts:direction="ltr">So here what you're seeing because this is
+<br />a discrete to mention</p>
+        <p begin="00:01:29.820" end="00:01:37.220" tts:direction="ltr">right now that on day one you had 95,525
+<br />sales.</p>
+        <p begin="00:01:37.220" end="00:01:41.920" tts:direction="ltr">That's for all day on, across all years.</p>
+        <p begin="00:01:41.920" end="00:01:44.600" tts:direction="ltr">We're putting it into a bucket. It's
+<br />discrete.</p>
+        <p begin="00:01:44.600" end="00:01:47.340" tts:direction="ltr">Okay, It's not continuous.</p>
+        <p begin="00:01:47.340" end="00:01:51.120" tts:direction="ltr">The most that I could have at the far end
+<br />is 31.</p>
+        <p begin="00:01:51.120" end="00:01:55.480" tts:direction="ltr">Now I'm looking for which day had the most
+<br />sales I'm looking</p>
+        <p begin="00:01:55.480" end="00:01:59.900" tts:direction="ltr">for that spikes the 17th day of the month.</p>
+        <p begin="00:01:59.900" end="00:02:03.540" tts:direction="ltr">Okay. Doesn't matter if it's January or if
+<br />it's December,</p>
+        <p begin="00:02:03.540" end="00:02:06.380" tts:direction="ltr">the 17th day of the month had the most
+<br />sales.</p>
+        <p begin="00:02:06.380" end="00:02:10.280" tts:direction="ltr">But now I'm looking for what date did
+<br />order sales spike.</p>
+        <p begin="00:02:10.280" end="00:02:14.420" tts:direction="ltr">I want to get specific on a specific day.</p>
+        <p begin="00:02:14.420" end="00:02:20.100" tts:direction="ltr">In order to do that, I need to change this
+<br />from discrete to continuous.</p>
+        <p begin="00:02:20.100" end="00:02:25.100" tts:direction="ltr">I'll do that by the dropdown menu and I'll
+<br />go to the Day.</p>
+        <p begin="00:02:25.100" end="00:02:27.020" tts:direction="ltr">This is the discrete area.</p>
+        <p begin="00:02:27.020" end="00:02:31.920" tts:direction="ltr">They start the continuous and I'll go
+<br />ahead and select day here.</p>
+        <p begin="00:02:31.920" end="00:02:37.020" tts:direction="ltr">Now I can see that I've got the full
+<br />timeline, the continuous.</p>
+        <p begin="00:02:37.020" end="00:02:38.680" tts:direction="ltr">As I add more data,</p>
+        <p begin="00:02:38.680" end="00:02:40.920" tts:direction="ltr">it'll continue out here.</p>
+        <p begin="00:02:40.920" end="00:02:43.440" tts:direction="ltr">It'll start from the very beginning,</p>
+        <p begin="00:02:43.440" end="00:02:45.490" tts:direction="ltr">which was on January 4,</p>
+        <p begin="00:02:45.490" end="00:02:50.180" tts:direction="ltr">2017 all the way to the end of December
+<br />27, 2020.</p>
+        <p begin="00:02:50.180" end="00:02:54.180" tts:direction="ltr">Now you can see that on this particular
+<br />day, March 18,</p>
+        <p begin="00:02:54.180" end="00:02:56.760" tts:direction="ltr">I had a huge spike and sales of</p>
+        <p begin="00:02:56.760" end="00:03:00.240" tts:direction="ltr">$28,107 That just goes to</p>
+        <p begin="00:03:00.240" end="00:03:04.120" tts:direction="ltr">show you that you can look at dates in
+<br />these two different ways.</p>
+        <p begin="00:03:04.120" end="00:03:06.880" tts:direction="ltr">Now the second tab is a little bit of a
+<br />stretch.</p>
+        <p begin="00:03:06.880" end="00:03:09.780" tts:direction="ltr">We're going to try to use some filters and
+<br />we want to</p>
+        <p begin="00:03:09.780" end="00:03:12.820" tts:direction="ltr">know which region made at least 13,000 in
+<br />profit.</p>
+        <p begin="00:03:12.820" end="00:03:14.460" tts:direction="ltr">In the home office segment,</p>
+        <p begin="00:03:14.460" end="00:03:19.520" tts:direction="ltr">we're going to build a bar chart showing
+<br />sales by region and segment.</p>
+        <p begin="00:03:19.520" end="00:03:23.300" tts:direction="ltr">I'm going to go ahead and grab region up
+<br />here.</p>
+        <p begin="00:03:26.780" end="00:03:31.400" tts:direction="ltr">Actually, we'll put segment up in front.</p>
+        <p begin="00:03:31.400" end="00:03:33.980" tts:direction="ltr">I'm going to flip this here in just a
+<br />moment.</p>
+        <p begin="00:03:33.980" end="00:03:37.540" tts:direction="ltr">But let's do sales on Rose.</p>
+        <p begin="00:03:37.540" end="00:03:43.160" tts:direction="ltr">Actually, I prefer seeing the bar chart
+<br />here.</p>
+        <p begin="00:03:43.160" end="00:03:46.020" tts:direction="ltr">Now I have to create filters,</p>
+        <p begin="00:03:46.020" end="00:03:48.220" tts:direction="ltr">one for segment and one for profit,</p>
+        <p begin="00:03:48.220" end="00:03:51.720" tts:direction="ltr">so that I can figure out how to answer
+<br />this question.</p>
+        <p begin="00:03:51.720" end="00:03:54.620" tts:direction="ltr">I'll do that by grabbing</p>
+        <p begin="00:03:55.300" end="00:04:00.340" tts:direction="ltr">my segment and I'll put that onto the
+<br />filter shelf right here.</p>
+        <p begin="00:04:00.340" end="00:04:02.400" tts:direction="ltr">I'll say yes to all of these.</p>
+        <p begin="00:04:02.400" end="00:04:05.060" tts:direction="ltr">Although I could go ahead and I could say,</p>
+        <p begin="00:04:05.060" end="00:04:06.240" tts:direction="ltr">okay, just home office.</p>
+        <p begin="00:04:06.240" end="00:04:08.760" tts:direction="ltr">So I could select those two and say,</p>
+        <p begin="00:04:08.760" end="00:04:12.680" tts:direction="ltr">okay, now I need to know about sales.</p>
+        <p begin="00:04:12.680" end="00:04:16.820" tts:direction="ltr">Drag sales onto the filter shelf and I'm
+<br />looking for some,</p>
+        <p begin="00:04:16.820" end="00:04:22.060" tts:direction="ltr">there's other options I can have like
+<br />averages or accounts maxi men's.</p>
+        <p begin="00:04:22.060" end="00:04:26.000" tts:direction="ltr">But I'm looking for the sum and I'm going
+<br />to say yes.</p>
+        <p begin="00:04:26.000" end="00:04:32.800" tts:direction="ltr">Now here I could go ahead and type in
+<br />13,000 and say,</p>
+        <p begin="00:04:32.800" end="00:04:36.720" tts:direction="ltr">okay, that did not apply.</p>
+        <p begin="00:04:36.720" end="00:04:41.100" tts:direction="ltr">Let's see. Let me go ahead and show the
+<br />filter here.</p>
+        <p begin="00:04:48.260" end="00:04:51.900" tts:direction="ltr">All right, sorry for that rabbit hole.</p>
+        <p begin="00:04:51.900" end="00:04:54.820" tts:direction="ltr">But I realized I have sales.</p>
+        <p begin="00:04:54.820" end="00:04:57.300" tts:direction="ltr">I'm looking for actual profit.</p>
+        <p begin="00:04:57.300" end="00:05:03.460" tts:direction="ltr">I took off the sales there and I'm looking
+<br />for profit, not sales.</p>
+        <p begin="00:05:03.460" end="00:05:06.980" tts:direction="ltr">Let's do profit some next.</p>
+        <p begin="00:05:06.980" end="00:05:12.300" tts:direction="ltr">And then I can type in that 13,000 Say,
+<br />okay,</p>
+        <p begin="00:05:12.300" end="00:05:14.740" tts:direction="ltr">now I can see that I've actually got</p>
+        <p begin="00:05:14.740" end="00:05:19.600" tts:direction="ltr">two regions that are hitting that $13,000
+<br />profit.</p>
+        <p begin="00:05:19.600" end="00:05:21.520" tts:direction="ltr">Now just so that you know, you can do</p>
+        <p begin="00:05:21.520" end="00:05:24.960" tts:direction="ltr">this dropdown arrow and you can show
+<br />filter.</p>
+        <p begin="00:05:24.960" end="00:05:27.240" tts:direction="ltr">And then I can show filter.</p>
+        <p begin="00:05:27.240" end="00:05:29.740" tts:direction="ltr">Then by doing I can go back to all.</p>
+        <p begin="00:05:29.740" end="00:05:32.100" tts:direction="ltr">I can increase my slider here.</p>
+        <p begin="00:05:32.100" end="00:05:35.280" tts:direction="ltr">I can type in 13,000 directly.</p>
+        <p begin="00:05:35.280" end="00:05:41.000" tts:direction="ltr">You do have some ability to change things
+<br />up.</p>
+        <p begin="00:05:41.000" end="00:05:47.580" tts:direction="ltr">We're looking for the home office with
+<br />13,000 or more.</p>
+        <p begin="00:05:47.580" end="00:05:54.340" tts:direction="ltr">Those are our two answers for our class,
+<br />Karen.</p>
+    </div>
+  </body>
+</tt>

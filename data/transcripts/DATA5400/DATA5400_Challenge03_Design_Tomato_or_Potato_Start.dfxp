@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en-US">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>414551212 - 1_hoh41xk3 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center"/>
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.2" end="00:00:03.4" tts:direction="ltr">Hello visitors. For this challenge,</p>
+        <p begin="00:00:03.4" end="00:00:06" tts:direction="ltr">you are going to apply design principles.</p>
+        <p begin="00:00:06" end="00:00:08.3" tts:direction="ltr">In order for you to be able to do that,</p>
+        <p begin="00:00:08.3" end="00:00:10.6" tts:direction="ltr">you'll need to create some chart types.</p>
+        <p begin="00:00:10.6" end="00:00:13.1" tts:direction="ltr">Just as a reminder, in this class we're</p>
+        <p begin="00:00:13.1" end="00:00:16.3" tts:direction="ltr">really focusing on some core design
+<br/>principles.</p>
+        <p begin="00:00:16.3" end="00:00:19.7" tts:direction="ltr">There are many more yet to be learned.</p>
+        <p begin="00:00:19.7" end="00:00:23.1" tts:direction="ltr">But we're really trying to sharpen our
+<br/>skills by applying</p>
+        <p begin="00:00:23.1" end="00:00:28" tts:direction="ltr">the principles of layout, contrast, and
+<br/>gestalt.</p>
+        <p begin="00:00:28" end="00:00:29.9" tts:direction="ltr">Really paying attention to those.</p>
+        <p begin="00:00:29.9" end="00:00:32.10" tts:direction="ltr">For this particular adventure,</p>
+        <p begin="00:00:32.10" end="00:00:36.2" tts:direction="ltr">we're going to focus on remaking and</p>
+        <p begin="00:00:36.2" end="00:00:41.8" tts:direction="ltr">rethinking how we can improve upon this
+<br/>bar chart.</p>
+        <p begin="00:00:41.8" end="00:00:46.10" tts:direction="ltr">This bar chart is showing the biggest
+<br/>tomato producers in the world.</p>
+        <p begin="00:00:46.10" end="00:00:48.6" tts:direction="ltr">This data has come from</p>
+        <p begin="00:00:48.6" end="00:00:52.5" tts:direction="ltr">the Food and Agricultural Organization of
+<br/>the United Nations.</p>
+        <p begin="00:00:52.5" end="00:00:55.6" tts:direction="ltr">I would definitely check out that source
+<br/>because you can</p>
+        <p begin="00:00:55.6" end="00:00:59.6" tts:direction="ltr">actually gather multiple years, multiple
+<br/>crop types.</p>
+        <p begin="00:00:59.6" end="00:01:02.3" tts:direction="ltr">We're going to make this a little more
+<br/>interesting</p>
+        <p begin="00:01:02.3" end="00:01:05" tts:direction="ltr">by adding in potatoes as well,</p>
+        <p begin="00:01:05" end="00:01:09.8" tts:direction="ltr">because I love to have a little additional
+<br/>data to work with.</p>
+        <p begin="00:01:09.8" end="00:01:12.3" tts:direction="ltr">Let me go ahead and minimize this.</p>
+        <p begin="00:01:12.3" end="00:01:15.3" tts:direction="ltr">I've already got my data pulled up so we
+<br/>can look at it.</p>
+        <p begin="00:01:15.3" end="00:01:16.9" tts:direction="ltr">Remember, we're always as</p>
+        <p begin="00:01:16.9" end="00:01:21.2" tts:direction="ltr">analysts looking at our fields and trying
+<br/>to understand what they are.</p>
+        <p begin="00:01:21.2" end="00:01:27.4" tts:direction="ltr">This very first one is the domain and it's
+<br/>consistent across all of the data.</p>
+        <p begin="00:01:27.4" end="00:01:32.2" tts:direction="ltr">This is simply when you're gathering the
+<br/>download.</p>
+        <p begin="00:01:32.2" end="00:01:35.3" tts:direction="ltr">This is the field that I've selected now.</p>
+        <p begin="00:01:35.3" end="00:01:37.2" tts:direction="ltr">Area is the country.</p>
+        <p begin="00:01:37.2" end="00:01:40.3" tts:direction="ltr">Then we have area harvested.</p>
+        <p begin="00:01:40.3" end="00:01:45.2" tts:direction="ltr">There, there's yields and also production.</p>
+        <p begin="00:01:45.2" end="00:01:46.8" tts:direction="ltr">Just note that there are</p>
+        <p begin="00:01:46.8" end="00:01:50" tts:direction="ltr">three different ways that we are gathering
+<br/>that element.</p>
+        <p begin="00:01:50" end="00:01:53.1" tts:direction="ltr">Then the item will be either potatoes or
+<br/>tomatoes.</p>
+        <p begin="00:01:53.1" end="00:01:58.1" tts:direction="ltr">We've got the year. I think it's from 1961
+<br/>until 2021.</p>
+        <p begin="00:01:58.1" end="00:02:05.9" tts:direction="ltr">The unit, I think this is a hexometer.</p>
+        <p begin="00:02:05.9" end="00:02:07.4" tts:direction="ltr">Let me just double check.</p>
+        <p begin="00:02:07.4" end="00:02:10.9" tts:direction="ltr">Yeah, this is a hexometer, not an acre.</p>
+        <p begin="00:02:10.9" end="00:02:14.5" tts:direction="ltr">We're using more of the metric value here.</p>
+        <p begin="00:02:14.5" end="00:02:16.9" tts:direction="ltr">Okay, Just double checking that.</p>
+        <p begin="00:02:16.9" end="00:02:19.4" tts:direction="ltr">Then we have the value,</p>
+        <p begin="00:02:19.4" end="00:02:22.2" tts:direction="ltr">that's what's represented in terms of hex
+<br/>meter.</p>
+        <p begin="00:02:22.2" end="00:02:30.2" tts:direction="ltr">Okay, let's go ahead and open up Tableau.</p>
+        <p begin="00:02:30.2" end="00:02:33.7" tts:direction="ltr">Let me direct that onto my view here.</p>
+        <p begin="00:02:33.7" end="00:02:35.7" tts:direction="ltr">This is a CSV file,</p>
+        <p begin="00:02:35.7" end="00:02:38.1" tts:direction="ltr">so I'm going to go out and click more.</p>
+        <p begin="00:02:38.1" end="00:02:45.5" tts:direction="ltr">Navigate to the tomato potato download
+<br/>there and open that up.</p>
+        <p begin="00:02:47.3" end="00:02:49.7" tts:direction="ltr">You can see here I've got that.</p>
+        <p begin="00:02:49.7" end="00:02:52.6" tts:direction="ltr">Crops and livestock production.</p>
+        <p begin="00:02:52.6" end="00:02:56.1" tts:direction="ltr">Actually, I can hide that if I want to
+<br/>right from the beginning.</p>
+        <p begin="00:02:56.1" end="00:02:57.10" tts:direction="ltr">It's not into my view.</p>
+        <p begin="00:02:57.10" end="00:03:00.8" tts:direction="ltr">I've got my area, which is that country,</p>
+        <p begin="00:03:00.8" end="00:03:03.1" tts:direction="ltr">the element harvested, the potatoes,</p>
+        <p begin="00:03:03.1" end="00:03:05.3" tts:direction="ltr">the here, the unit, the value.</p>
+        <p begin="00:03:05.3" end="00:03:09.6" tts:direction="ltr">Just double checking again to make sure
+<br/>that it's appropriately identified.</p>
+        <p begin="00:03:09.6" end="00:03:11.9" tts:direction="ltr">I can do that in the data pain,</p>
+        <p begin="00:03:11.9" end="00:03:16.8" tts:direction="ltr">but I can also do it here in the data
+<br/>source area.</p>
+        <p begin="00:03:16.8" end="00:03:19.6" tts:direction="ltr">So let's go ahead and jump to sheet number
+<br/>one</p>
+        <p begin="00:03:19.6" end="00:03:23.2" tts:direction="ltr">because we're going to create that
+<br/>original bar chart.</p>
+        <p begin="00:03:23.2" end="00:03:26.6" tts:direction="ltr">I'll go ahead and call this the original,</p>
+        <p begin="00:03:26.6" end="00:03:30.8" tts:direction="ltr">the OG bar chart.</p>
+        <p begin="00:03:30.9" end="00:03:33.8" tts:direction="ltr">Let's see if we can make that.</p>
+        <p begin="00:03:33.8" end="00:03:37.1" tts:direction="ltr">The way we'll do that is we will bring on</p>
+        <p begin="00:03:37.1" end="00:03:41.7" tts:direction="ltr">area which you remember is all of our
+<br/>lovely countries.</p>
+        <p begin="00:03:41.7" end="00:03:44.5" tts:direction="ltr">I have 195 countries.</p>
+        <p begin="00:03:44.5" end="00:03:46.6" tts:direction="ltr">Again, that's helpful to see from</p>
+        <p begin="00:03:46.6" end="00:03:49.8" tts:direction="ltr">the mark standpoint so I can understand my
+<br/>level of detail.</p>
+        <p begin="00:03:49.8" end="00:03:54.7" tts:direction="ltr">And then I'm going to grab value and I'm
+<br/>going to place that on columns.</p>
+        <p begin="00:03:54.7" end="00:03:57.8" tts:direction="ltr">And I'm going to go ahead and let that be
+<br/>a sum value,</p>
+        <p begin="00:03:57.8" end="00:04:00.3" tts:direction="ltr">that's the default aggregation.</p>
+        <p begin="00:04:00.3" end="00:04:04.4" tts:direction="ltr">What I want to do, that initial bar chart,</p>
+        <p begin="00:04:04.4" end="00:04:07.8" tts:direction="ltr">it actually did a bit of an animation over
+<br/>time.</p>
+        <p begin="00:04:07.8" end="00:04:13.3" tts:direction="ltr">So I'm going to mimic that a little bit by
+<br/>bringing my ear onto pages.</p>
+        <p begin="00:04:13.3" end="00:04:17.9" tts:direction="ltr">Now I've got that animation pane where I
+<br/>can play my years here.</p>
+        <p begin="00:04:17.9" end="00:04:23.8" tts:direction="ltr">Let me stop that. Since I just did
+<br/>potatoes tomatoes,</p>
+        <p begin="00:04:23.8" end="00:04:26.5" tts:direction="ltr">I'm going to grab item, put that onto
+<br/>filter,</p>
+        <p begin="00:04:26.5" end="00:04:28.8" tts:direction="ltr">and I'm just going to select tomatoes,</p>
+        <p begin="00:04:28.8" end="00:04:31.3" tts:direction="ltr">filter everything else out.</p>
+        <p begin="00:04:31.7" end="00:04:35.7" tts:direction="ltr">Then I have a lot of countries here,</p>
+        <p begin="00:04:35.7" end="00:04:39.5" tts:direction="ltr">I'm going to filter out that area.</p>
+        <p begin="00:04:39.5" end="00:04:44.8" tts:direction="ltr">I'm going to just do top ten by value.</p>
+        <p begin="00:04:44.8" end="00:04:47.9" tts:direction="ltr">That looks great. Okay, now I can</p>
+        <p begin="00:04:47.9" end="00:04:51.5" tts:direction="ltr">do this as a descending sort and I've got
+<br/>China.</p>
+        <p begin="00:04:51.5" end="00:04:53.4" tts:direction="ltr">I have mainland China here.</p>
+        <p begin="00:04:53.4" end="00:04:57.3" tts:direction="ltr">I might want to actually put those
+<br/>together in a set.</p>
+        <p begin="00:04:57.3" end="00:05:00.2" tts:direction="ltr">Us India, Turkey.</p>
+        <p begin="00:05:00.2" end="00:05:02.6" tts:direction="ltr">Okay, that's interesting spelling.</p>
+        <p begin="00:05:02.6" end="00:05:05.10" tts:direction="ltr">I could change that again, according to my
+<br/>audience is.</p>
+        <p begin="00:05:05.10" end="00:05:09.7" tts:direction="ltr">Then I can play that through.</p>
+        <p begin="00:05:09.7" end="00:05:12.3" tts:direction="ltr">Let's just speed that up a little bit.</p>
+        <p begin="00:05:12.3" end="00:05:22.4" tts:direction="ltr">Let's do length of time.</p>
+        <p begin="00:05:22.4" end="00:05:26.1" tts:direction="ltr">Let's make that go a lot faster.</p>
+        <p begin="00:05:28" end="00:05:33.3" tts:direction="ltr">Okay, so we'll just go through.</p>
+        <p begin="00:05:33.4" end="00:05:37.9" tts:direction="ltr">You can see those bar charts getting
+<br/>larger.</p>
+        <p begin="00:05:37.9" end="00:05:40.6" tts:direction="ltr">I could probably do a few things here to
+<br/>improve</p>
+        <p begin="00:05:40.6" end="00:05:44.3" tts:direction="ltr">this visualization if that's the route
+<br/>that you want to go.</p>
+        <p begin="00:05:44.3" end="00:05:47.7" tts:direction="ltr">We have more to explore here with our
+<br/>data.</p>
+        <p begin="00:05:47.7" end="00:05:50.4" tts:direction="ltr">We'll go ahead and jump to the next chart.</p>
+        <p begin="00:05:50.4" end="00:05:53.3" tts:direction="ltr">For this one, what I want to do is</p>
+        <p begin="00:05:53.3" end="00:05:58.5" tts:direction="ltr">understand some of those values when it
+<br/>comes to yield and production,</p>
+        <p begin="00:05:58.5" end="00:06:06.4" tts:direction="ltr">and harvest, we will create a line chart
+<br/>and we're going to use on columns.</p>
+        <p begin="00:06:06.4" end="00:06:10.4" tts:direction="ltr">Then we'll bring value onto row.</p>
+        <p begin="00:06:10.4" end="00:06:13.5" tts:direction="ltr">Instead of doing the sum aggregation,</p>
+        <p begin="00:06:13.5" end="00:06:16.2" tts:direction="ltr">let's change that to an average.</p>
+        <p begin="00:06:16.2" end="00:06:19" tts:direction="ltr">I think that's more representative of what
+<br/>we're</p>
+        <p begin="00:06:19" end="00:06:22.8" tts:direction="ltr">looking for year by year instead of like
+<br/>adding to that.</p>
+        <p begin="00:06:22.8" end="00:06:26.7" tts:direction="ltr">Then we will go ahead and bring element
+<br/>onto filter.</p>
+        <p begin="00:06:26.7" end="00:06:31" tts:direction="ltr">I think the one that normalizes the data
+<br/>the most is the yield.</p>
+        <p begin="00:06:31" end="00:06:32.10" tts:direction="ltr">We'll look at that first.</p>
+        <p begin="00:06:32.10" end="00:06:36.10" tts:direction="ltr">We'll filter the yield.</p>
+        <p begin="00:06:36.10" end="00:06:42.4" tts:direction="ltr">Then I want to bring in both of my
+<br/>comparisons of tomatoes and potatoes.</p>
+        <p begin="00:06:42.4" end="00:06:46.4" tts:direction="ltr">I'll do that by bringing the item onto
+<br/>color.</p>
+        <p begin="00:06:46.4" end="00:06:48.8" tts:direction="ltr">Yeah. Okay. All right,</p>
+        <p begin="00:06:48.8" end="00:06:52.8" tts:direction="ltr">so this is my very first line chart.</p>
+        <p begin="00:06:52.8" end="00:06:58.3" tts:direction="ltr">In my exploring, I'm going to call this my
+<br/>Average Yield Chart.</p>
+        <p begin="00:06:58.3" end="00:07:02.2" tts:direction="ltr">Okay? Oh, maybe we'll call it a line chart
+<br/>just for fun. Okay?</p>
+        <p begin="00:07:02.2" end="00:07:05.8" tts:direction="ltr">All right, so let's go ahead and duplicate
+<br/>those because I think</p>
+        <p begin="00:07:05.8" end="00:07:10.3" tts:direction="ltr">we've got some more things to look at when
+<br/>it comes to the line chart.</p>
+        <p begin="00:07:10.7" end="00:07:14.9" tts:direction="ltr">We will change this up a little bit.</p>
+        <p begin="00:07:14.9" end="00:07:18.6" tts:direction="ltr">I want to look at all three of those
+<br/>filter areas that I had.</p>
+        <p begin="00:07:18.6" end="00:07:25.3" tts:direction="ltr">I'll grab that filter and I'll put it in
+<br/>front of my average value here.</p>
+        <p begin="00:07:25.3" end="00:07:30.5" tts:direction="ltr">Now I've got this broken out into the area
+<br/>harvest, production and yield.</p>
+        <p begin="00:07:30.8" end="00:07:34.9" tts:direction="ltr">You can see for my area,</p>
+        <p begin="00:07:34.9" end="00:07:36.7" tts:direction="ltr">these two are very,</p>
+        <p begin="00:07:36.7" end="00:07:39.2" tts:direction="ltr">very close and farther apart.</p>
+        <p begin="00:07:39.2" end="00:07:45.3" tts:direction="ltr">But I'm not actually happy with this
+<br/>aggregation of average for production.</p>
+        <p begin="00:07:45.3" end="00:07:49.2" tts:direction="ltr">I feel like production probably needs to
+<br/>be a sum.</p>
+        <p begin="00:07:49.2" end="00:07:51.8" tts:direction="ltr">In order to do that, in one view,</p>
+        <p begin="00:07:51.8" end="00:07:53.5" tts:direction="ltr">I'm going to have to create a calculation.</p>
+        <p begin="00:07:53.5" end="00:07:57.6" tts:direction="ltr">I can't just change this individually
+<br/>because it's applying to all of them.</p>
+        <p begin="00:07:57.6" end="00:08:00.4" tts:direction="ltr">All of the values. What I'm going to</p>
+        <p begin="00:08:00.4" end="00:08:03.7" tts:direction="ltr">do is I'm going to create a couple of
+<br/>calculated fields.</p>
+        <p begin="00:08:03.7" end="00:08:06.9" tts:direction="ltr">Okay, we're going to make</p>
+        <p begin="00:08:06.9" end="00:08:11.4" tts:direction="ltr">three calculated fields for those three
+<br/>different elements.</p>
+        <p begin="00:08:11.4" end="00:08:16" tts:direction="ltr">Let's make the calculated field for
+<br/>production first.</p>
+        <p begin="00:08:16" end="00:08:19.3" tts:direction="ltr">Remember we can do this carrot drop down.</p>
+        <p begin="00:08:19.3" end="00:08:20.8" tts:direction="ltr">Create calculated field.</p>
+        <p begin="00:08:20.8" end="00:08:23" tts:direction="ltr">And I'm going to be adding in</p>
+        <p begin="00:08:23" end="00:08:27.6" tts:direction="ltr">a new field when I do this that I can use
+<br/>across my sheets.</p>
+        <p begin="00:08:27.6" end="00:08:30.2" tts:direction="ltr">I'm going to call this one production.</p>
+        <p begin="00:08:30.5" end="00:08:34.9" tts:direction="ltr">What I want to do is I'm going to use the
+<br/>aggregation of some.</p>
+        <p begin="00:08:34.9" end="00:08:38.7" tts:direction="ltr">For this one, I'll do an if then
+<br/>statement.</p>
+        <p begin="00:08:38.7" end="00:08:45.6" tts:direction="ltr">If the element, the element is equal to.</p>
+        <p begin="00:08:45.6" end="00:08:51.2" tts:direction="ltr">This is where you really need to pay
+<br/>attention to how your fields are written.</p>
+        <p begin="00:08:51.2" end="00:08:53.3" tts:direction="ltr">And production starts with the capital P,</p>
+        <p begin="00:08:53.3" end="00:08:55.2" tts:direction="ltr">In this case, production.</p>
+        <p begin="00:08:55.2" end="00:08:58" tts:direction="ltr">And I've got my single quotes,</p>
+        <p begin="00:08:58" end="00:09:00.3" tts:direction="ltr">I'm going to do a hard return.</p>
+        <p begin="00:09:00.3" end="00:09:04.5" tts:direction="ltr">And then the it will be</p>
+        <p begin="00:09:04.5" end="00:09:09.7" tts:direction="ltr">the value I can either type in, let me get
+<br/>it, put it in.</p>
+        <p begin="00:09:09.7" end="00:09:14.1" tts:direction="ltr">I can either start typing value right and
+<br/>it will autopopulate.</p>
+        <p begin="00:09:14.1" end="00:09:20.1" tts:direction="ltr">Or I can actually bring in value from the
+<br/>data. Pain and drop that in.</p>
+        <p begin="00:09:20.1" end="00:09:27.3" tts:direction="ltr">Then we'll do and then we'll close the
+<br/>bracket or the parentheses.</p>
+        <p begin="00:09:27.3" end="00:09:30.4" tts:direction="ltr">Okay. Valid. Okay. That's great.</p>
+        <p begin="00:09:30.4" end="00:09:38" tts:direction="ltr">Let's go ahead and for the area harvest
+<br/>and yield as well.</p>
+        <p begin="00:09:39.7" end="00:09:46.7" tts:direction="ltr">We'll just make another calculated field
+<br/>quite sure what's going on.</p>
+        <p begin="00:09:46.7" end="00:09:49.1" tts:direction="ltr">I need to drag it into this view.</p>
+        <p begin="00:09:49.1" end="00:09:53.5" tts:direction="ltr">I'm going to call this average yield.</p>
+        <p begin="00:09:53.5" end="00:09:57.3" tts:direction="ltr">I know that I've got my average on here
+<br/>and I'll do</p>
+        <p begin="00:09:57.3" end="00:10:06.5" tts:direction="ltr">the average, another if statement.</p>
+        <p begin="00:10:06.5" end="00:10:09.8" tts:direction="ltr">And I'm going to just drag these in
+<br/>because I think it's faster.</p>
+        <p begin="00:10:09.8" end="00:10:16.6" tts:direction="ltr">If the element is equal to yield single,</p>
+        <p begin="00:10:16.10" end="00:10:22.6" tts:direction="ltr">then it's going to be the value.</p>
+        <p begin="00:10:22.6" end="00:10:25.4" tts:direction="ltr">I'm going to drag that in,</p>
+        <p begin="00:10:26.3" end="00:10:30.8" tts:direction="ltr">then we'll do parentheses.</p>
+        <p begin="00:10:30.8" end="00:10:35.3" tts:direction="ltr">It looks like I accidentally made this.
+<br/>Let me delete this.</p>
+        <p begin="00:10:35.3" end="00:10:37.4" tts:direction="ltr">Okay. To clean it up.</p>
+        <p begin="00:10:37.4" end="00:10:40.5" tts:direction="ltr">Now, for the average yield,</p>
+        <p begin="00:10:40.5" end="00:10:44.6" tts:direction="ltr">I'm going to be doing the same average for
+<br/>the harvested.</p>
+        <p begin="00:10:44.6" end="00:10:49.4" tts:direction="ltr">What I'll do is I'll just take that
+<br/>calculation, I'll duplicate that.</p>
+        <p begin="00:10:49.4" end="00:10:59.7" tts:direction="ltr">What I will do is I call that average
+<br/>area.</p>
+        <p begin="00:11:02" end="00:11:04.7" tts:direction="ltr">Posted.</p>
+        <p begin="00:11:04.8" end="00:11:07.2" tts:direction="ltr">And then I'll change this.</p>
+        <p begin="00:11:07.2" end="00:11:09.3" tts:direction="ltr">Now let me just double check.</p>
+        <p begin="00:11:09.3" end="00:11:12.3" tts:direction="ltr">Do you see how H is a lower case H?</p>
+        <p begin="00:11:12.3" end="00:11:16" tts:direction="ltr">I'll need to make sure and have that in
+<br/>here.</p>
+        <p begin="00:11:16.4" end="00:11:21.5" tts:direction="ltr">Did the value looks great. Awesome.</p>
+        <p begin="00:11:21.5" end="00:11:26" tts:direction="ltr">Okay, so now I've got my three new
+<br/>calculated fields.</p>
+        <p begin="00:11:26" end="00:11:30.5" tts:direction="ltr">Okay, now what we'll do is we'll actually
+<br/>replace</p>
+        <p begin="00:11:30.5" end="00:11:39.3" tts:direction="ltr">this information in our rows and we'll
+<br/>bring our average yield right here.</p>
+        <p begin="00:11:39.3" end="00:11:42.4" tts:direction="ltr">It looks like didn't stick for this.</p>
+        <p begin="00:11:42.4" end="00:11:44.5" tts:direction="ltr">Let me double check this.</p>
+        <p begin="00:11:44.5" end="00:11:49.5" tts:direction="ltr">Oh, did I not hit? Oh yeah.</p>
+        <p begin="00:11:49.5" end="00:11:56.3" tts:direction="ltr">For whatever harvested, I guess I didn't
+<br/>hit.</p>
+        <p begin="00:11:56.3" end="00:12:03.9" tts:direction="ltr">Return. Okay. Okay. We'll bring</p>
+        <p begin="00:12:03.9" end="00:12:09.3" tts:direction="ltr">the area harvested here and we will do the
+<br/>production.</p>
+        <p begin="00:12:09.3" end="00:12:12.1" tts:direction="ltr">We put that back in the middle too.</p>
+        <p begin="00:12:12.1" end="00:12:15.7" tts:direction="ltr">I actually think the yield was on the
+<br/>bottom, but it doesn't really matter.</p>
+        <p begin="00:12:15.7" end="00:12:19.4" tts:direction="ltr">Whatever order you want. Now, they all
+<br/>have different axes,</p>
+        <p begin="00:12:19.4" end="00:12:25.2" tts:direction="ltr">right, relative to their averages.</p>
+        <p begin="00:12:26.9" end="00:12:30.6" tts:direction="ltr">That's what's saying, the AGG right there.</p>
+        <p begin="00:12:30.6" end="00:12:33.6" tts:direction="ltr">Yeah, this is looking a lot better.</p>
+        <p begin="00:12:33.6" end="00:12:36.4" tts:direction="ltr">And I can also begin to see maybe some
+<br/>trends.</p>
+        <p begin="00:12:36.4" end="00:12:38" tts:direction="ltr">They are fairly close right here.</p>
+        <p begin="00:12:38" end="00:12:39.4" tts:direction="ltr">Tomatoes and potatoes.</p>
+        <p begin="00:12:39.4" end="00:12:43.6" tts:direction="ltr">Interesting. Then tomatoes have just shot
+<br/>up.</p>
+        <p begin="00:12:43.6" end="00:12:46.9" tts:direction="ltr">That could be due to countries, right?</p>
+        <p begin="00:12:46.9" end="00:12:51.4" tts:direction="ltr">Or some technology tomatoes here on the
+<br/>area harvested.</p>
+        <p begin="00:12:51.4" end="00:12:53.7" tts:direction="ltr">This totally makes sense. Pretty flat
+<br/>line.</p>
+        <p begin="00:12:53.7" end="00:13:01.10" tts:direction="ltr">You don't really need a lot of area for
+<br/>tomatoes that's fascinating.</p>
+        <p begin="00:13:01.10" end="00:13:03.6" tts:direction="ltr">A little bit of a dip here,</p>
+        <p begin="00:13:03.6" end="00:13:06.9" tts:direction="ltr">but the production has gone way up.</p>
+        <p begin="00:13:06.9" end="00:13:09.4" tts:direction="ltr">That is an interesting insight that could
+<br/>be</p>
+        <p begin="00:13:09.4" end="00:13:12.10" tts:direction="ltr">developed according to whatever your
+<br/>purpose or audience is.</p>
+        <p begin="00:13:13.6" end="00:13:17.9" tts:direction="ltr">Okay, so I'm going to rename this to be
+<br/>the average.</p>
+        <p begin="00:13:17.9" end="00:13:27.9" tts:direction="ltr">Or maybe we'll just compare compare
+<br/>element line chart.</p>
+        <p begin="00:13:27.9" end="00:13:32.1" tts:direction="ltr">Okay, we'll remove that too, just so I
+<br/>have that.</p>
+        <p begin="00:13:32.1" end="00:13:36.4" tts:direction="ltr">Another thing that we can do is we can
+<br/>actually do some table calculations</p>
+        <p begin="00:13:36.4" end="00:13:41.7" tts:direction="ltr">and try to understand a little more about
+<br/>the insights that we can gather.</p>
+        <p begin="00:13:41.7" end="00:13:45.4" tts:direction="ltr">Let's just pull the average yield.</p>
+        <p begin="00:13:45.4" end="00:13:47.2" tts:direction="ltr">I will go to that measure,</p>
+        <p begin="00:13:47.2" end="00:13:50.6" tts:direction="ltr">to the drop down and we're going to add a
+<br/>table calculation.</p>
+        <p begin="00:13:50.6" end="00:13:53.8" tts:direction="ltr">Again, it's just within this view.</p>
+        <p begin="00:13:53.8" end="00:13:55.9" tts:direction="ltr">It's not going to be an additional
+<br/>calculation</p>
+        <p begin="00:13:55.9" end="00:13:57.8" tts:direction="ltr">that's going to be added over here.</p>
+        <p begin="00:13:57.8" end="00:14:02.2" tts:direction="ltr">What I want to do is percent difference
+<br/>from,</p>
+        <p begin="00:14:02.2" end="00:14:07.4" tts:direction="ltr">so we'll have a percent, we'll go to a
+<br/>specific dimension.</p>
+        <p begin="00:14:07.4" end="00:14:12.2" tts:direction="ltr">We'll do the item here relative to,</p>
+        <p begin="00:14:12.2" end="00:14:16.1" tts:direction="ltr">we'll do potatoes here.</p>
+        <p begin="00:14:16.1" end="00:14:19.4" tts:direction="ltr">And then specific dimensions,</p>
+        <p begin="00:14:19.4" end="00:14:21.5" tts:direction="ltr">I can show calculation assistance.</p>
+        <p begin="00:14:21.5" end="00:14:23.8" tts:direction="ltr">If I want to see all of the different,</p>
+        <p begin="00:14:23.8" end="00:14:26.1" tts:direction="ltr">I can see that or I can just hide that.</p>
+        <p begin="00:14:26.1" end="00:14:30.3" tts:direction="ltr">Let me go ahead and close that out so you
+<br/>can see I've got that delta sign,</p>
+        <p begin="00:14:30.3" end="00:14:31.7" tts:direction="ltr">so I know I've got that applied.</p>
+        <p begin="00:14:31.7" end="00:14:33.2" tts:direction="ltr">If I go to the very end here,</p>
+        <p begin="00:14:33.2" end="00:14:37.6" tts:direction="ltr">I can see that for tomatoes in 2021,</p>
+        <p begin="00:14:37.6" end="00:14:43.6" tts:direction="ltr">it was 187.3% difference in</p>
+        <p begin="00:14:43.6" end="00:14:50.3" tts:direction="ltr">yield compared to, to my potatoes.</p>
+        <p begin="00:14:50.3" end="00:14:53.1" tts:direction="ltr">Interesting. We had huge growth, right?</p>
+        <p begin="00:14:53.1" end="00:14:57.6" tts:direction="ltr">I could actually hide this line here since
+<br/>it's a flat line,</p>
+        <p begin="00:14:57.6" end="00:14:59.6" tts:direction="ltr">because that's what I'm comparing the
+<br/>difference to.</p>
+        <p begin="00:14:59.6" end="00:15:05.5" tts:direction="ltr">I could apply that same table calculation
+<br/>to each of these if I wanted</p>
+        <p begin="00:15:05.5" end="00:15:12.5" tts:direction="ltr">to understand a little more insights
+<br/>between these two data points.</p>
+        <p begin="00:15:14.6" end="00:15:21.9" tts:direction="ltr">Okay, the next chart type I think we can
+<br/>make with this data is a heat map.</p>
+        <p begin="00:15:21.9" end="00:15:28.9" tts:direction="ltr">We'll do that by looking at the hear in
+<br/>columns.</p>
+        <p begin="00:15:28.9" end="00:15:35.4" tts:direction="ltr">Then we will do the item in row.</p>
+        <p begin="00:15:35.4" end="00:15:38.4" tts:direction="ltr">We've got the potato and the tomato.</p>
+        <p begin="00:15:38.4" end="00:15:45.1" tts:direction="ltr">But I want to break this out by top
+<br/>countries to really delve this out.</p>
+        <p begin="00:15:45.1" end="00:15:48.10" tts:direction="ltr">And then we can add some more design here
+<br/>or some more features.</p>
+        <p begin="00:15:48.10" end="00:15:53.4" tts:direction="ltr">What I want to do is I'm first going to go
+<br/>into my area and do</p>
+        <p begin="00:15:53.4" end="00:15:59.2" tts:direction="ltr">a drop down and I'm going to create a
+<br/>group.</p>
+        <p begin="00:16:00" end="00:16:06" tts:direction="ltr">The reason why is I know that Russia,</p>
+        <p begin="00:16:06" end="00:16:11.8" tts:direction="ltr">we'll do USSR, we'll scroll down and find
+<br/>USSR.</p>
+        <p begin="00:16:11.8" end="00:16:14" tts:direction="ltr">I've already made a little group of USA,</p>
+        <p begin="00:16:14" end="00:16:16" tts:direction="ltr">just renamed that, but USSR.</p>
+        <p begin="00:16:16" end="00:16:19.6" tts:direction="ltr">And I'm going to hold down my command key
+<br/>on a Mac,</p>
+        <p begin="00:16:19.6" end="00:16:21.9" tts:direction="ltr">I think it might be control on Windows.</p>
+        <p begin="00:16:21.9" end="00:16:26.8" tts:direction="ltr">And I'm going to go up to Russia and I'm
+<br/>going to group those together.</p>
+        <p begin="00:16:26.8" end="00:16:29.1" tts:direction="ltr">Because I know over the time,</p>
+        <p begin="00:16:29.1" end="00:16:33.9" tts:direction="ltr">like in the '90s together and they
+<br/>weren't,</p>
+        <p begin="00:16:33.9" end="00:16:37.4" tts:direction="ltr">so I'm going to call that actually Russia.</p>
+        <p begin="00:16:37.4" end="00:16:41.7" tts:direction="ltr">Okay, now I can go in and actually change
+<br/>this group.</p>
+        <p begin="00:16:41.7" end="00:16:46.5" tts:direction="ltr">I can edit that. Let me go back here and I
+<br/>can edit group.</p>
+        <p begin="00:16:46.5" end="00:16:51.9" tts:direction="ltr">I can go through and find some more
+<br/>countries that may be changed over time,</p>
+        <p begin="00:16:51.9" end="00:16:56.7" tts:direction="ltr">but I think this is the first one that I
+<br/>want to work on.</p>
+        <p begin="00:16:56.7" end="00:17:04.3" tts:direction="ltr">Then what I want to do is I'm going to
+<br/>create a top for the area.</p>
+        <p begin="00:17:04.3" end="00:17:06.2" tts:direction="ltr">I'm going to create a set.</p>
+        <p begin="00:17:06.2" end="00:17:09" tts:direction="ltr">I can do a top ten.</p>
+        <p begin="00:17:09" end="00:17:10.6" tts:direction="ltr">I'm going to do it by field.</p>
+        <p begin="00:17:10.6" end="00:17:14.10" tts:direction="ltr">Top ten, not by area, but by production.</p>
+        <p begin="00:17:14.10" end="00:17:22.1" tts:direction="ltr">So I'm going to say top ten by,</p>
+        <p begin="00:17:22.1" end="00:17:26.5" tts:direction="ltr">well, I'll do area by production.</p>
+        <p begin="00:17:26.6" end="00:17:30.5" tts:direction="ltr">Okay, I've got those two,</p>
+        <p begin="00:17:30.5" end="00:17:33.5" tts:direction="ltr">I've got a group, and then I have a set.</p>
+        <p begin="00:17:33.5" end="00:17:38.7" tts:direction="ltr">Now I'm going to, let's see,</p>
+        <p begin="00:17:38.7" end="00:17:45.9" tts:direction="ltr">let's do, let's do top production.</p>
+        <p begin="00:17:45.9" end="00:17:49" tts:direction="ltr">Okay, so we're going to make a calculated
+<br/>field,</p>
+        <p begin="00:17:49" end="00:17:51.9" tts:direction="ltr">and we're going to use those two things I
+<br/>just created.</p>
+        <p begin="00:17:51.9" end="00:17:59.6" tts:direction="ltr">So we're going to do top ten, we'll do
+<br/>production.</p>
+        <p begin="00:17:59.6" end="00:18:02.6" tts:direction="ltr">Go ahead and capitalize that.</p>
+        <p begin="00:18:02.6" end="00:18:10.2" tts:direction="ltr">I'm going to just do my, if I'm going to
+<br/>do set, okay,</p>
+        <p begin="00:18:10.2" end="00:18:13.5" tts:direction="ltr">I'm going to drag my top ten set in here,</p>
+        <p begin="00:18:13.5" end="00:18:18.10" tts:direction="ltr">then my area group.</p>
+        <p begin="00:18:18.10" end="00:18:22.1" tts:direction="ltr">Okay, So I can look at both of those.</p>
+        <p begin="00:18:22.1" end="00:18:28.3" tts:direction="ltr">And then I'm going to create an L. I'm
+<br/>going to say others.</p>
+        <p begin="00:18:28.3" end="00:18:32.9" tts:direction="ltr">Okay. Close that. Okay.</p>
+        <p begin="00:18:32.9" end="00:18:34.6" tts:direction="ltr">Okay, that looks good.</p>
+        <p begin="00:18:34.6" end="00:18:37.6" tts:direction="ltr">So I'm going to be using that here.</p>
+        <p begin="00:18:37.6" end="00:18:44.1" tts:direction="ltr">Where I'm going to put that is actually on
+<br/>my top production right here.</p>
+        <p begin="00:18:44.1" end="00:18:50.3" tts:direction="ltr">Okay. Now I've got my potatoes and all of
+<br/>the countries,</p>
+        <p begin="00:18:50.3" end="00:18:53.10" tts:direction="ltr">including my others, that's where all of
+<br/>the other countries are.</p>
+        <p begin="00:18:53.10" end="00:18:56.6" tts:direction="ltr">Looks like I've got Ukraine.</p>
+        <p begin="00:18:56.6" end="00:18:59.9" tts:direction="ltr">I could change that into the group and
+<br/>maybe fold that in.</p>
+        <p begin="00:18:59.9" end="00:19:04.8" tts:direction="ltr">Right now, I'm going to click on that
+<br/>Ukraine and I'm going to exclude it.</p>
+        <p begin="00:19:04.8" end="00:19:07.2" tts:direction="ltr">Just so that's not part of that.</p>
+        <p begin="00:19:07.7" end="00:19:13.7" tts:direction="ltr">Then what I want to do is I want to make
+<br/>these into different colors.</p>
+        <p begin="00:19:13.7" end="00:19:22.2" tts:direction="ltr">Right now they're all blue. Actually, let
+<br/>me add on the element.</p>
+        <p begin="00:19:22.2" end="00:19:24.2" tts:direction="ltr">I want to just do production.</p>
+        <p begin="00:19:24.2" end="00:19:26.7" tts:direction="ltr">So I'm going to remove the area harvest
+<br/>and the yield.</p>
+        <p begin="00:19:26.7" end="00:19:31.6" tts:direction="ltr">Okay. You can't see any differences
+<br/>because they're all the same color.</p>
+        <p begin="00:19:31.6" end="00:19:33.6" tts:direction="ltr">Now what I need to do,</p>
+        <p begin="00:19:33.6" end="00:19:36.2" tts:direction="ltr">I need to create a,</p>
+        <p begin="00:19:36.3" end="00:19:42.10" tts:direction="ltr">another calculation so that I can make
+<br/>these into two different colors.</p>
+        <p begin="00:19:42.10" end="00:19:46.3" tts:direction="ltr">Let's go ahead and create a calculated
+<br/>field.</p>
+        <p begin="00:19:46.3" end="00:19:54.2" tts:direction="ltr">We'll, we'll call this color potato or
+<br/>tomato value.</p>
+        <p begin="00:19:54.2" end="00:19:57.1" tts:direction="ltr">I'll do another if statement.</p>
+        <p begin="00:19:57.1" end="00:20:04.4" tts:direction="ltr">The item O is equal to potatoes.</p>
+        <p begin="00:20:04.4" end="00:20:07.10" tts:direction="ltr">Remember this is how it is, potatoes.</p>
+        <p begin="00:20:07.10" end="00:20:18.2" tts:direction="ltr">Then the value, then it's the value else.</p>
+        <p begin="00:20:18.2" end="00:20:24.6" tts:direction="ltr">And we'll make the tomatoes the negative
+<br/>value.</p>
+        <p begin="00:20:24.10" end="00:20:28.4" tts:direction="ltr">We'll put that in there, that'll be that
+<br/>minus.</p>
+        <p begin="00:20:28.4" end="00:20:30.8" tts:direction="ltr">Then we'll do, we'll have</p>
+        <p begin="00:20:30.8" end="00:20:34.10" tts:direction="ltr">a diverging palette so that we can have
+<br/>both of these being shown.</p>
+        <p begin="00:20:34.10" end="00:20:36.10" tts:direction="ltr">There's probably another way to do this,</p>
+        <p begin="00:20:36.10" end="00:20:42.3" tts:direction="ltr">but I use calculations a lot when I'm
+<br/>trying to distort or change the colors,</p>
+        <p begin="00:20:42.3" end="00:20:43.8" tts:direction="ltr">which is important in design.</p>
+        <p begin="00:20:43.8" end="00:20:45.7" tts:direction="ltr">So I'm going to put that, okay.</p>
+        <p begin="00:20:45.7" end="00:20:50.6" tts:direction="ltr">Then what I'm going to do is I'm actually
+<br/>going to bring in,</p>
+        <p begin="00:20:52.2" end="00:20:56.2" tts:direction="ltr">I'm going to bring that into color.</p>
+        <p begin="00:20:56.2" end="00:21:04.6" tts:direction="ltr">Yes. Okay. Yes. Now I've got my blue and
+<br/>I've got my diverging palette there.</p>
+        <p begin="00:21:04.6" end="00:21:06.9" tts:direction="ltr">So what I want to do,</p>
+        <p begin="00:21:06.9" end="00:21:08.10" tts:direction="ltr">I've got these bars,</p>
+        <p begin="00:21:08.10" end="00:21:10.4" tts:direction="ltr">I've got the bars, oh,</p>
+        <p begin="00:21:10.4" end="00:21:14.2" tts:direction="ltr">the reason why I've got the bars is
+<br/>because my year is continuous,</p>
+        <p begin="00:21:14.2" end="00:21:17.9" tts:direction="ltr">and I want to change that to be discrete.
+<br/>There we go.</p>
+        <p begin="00:21:17.9" end="00:21:21.2" tts:direction="ltr">Now I've got that diverging palette.</p>
+        <p begin="00:21:21.2" end="00:21:23.5" tts:direction="ltr">Now I want to maybe make it a little more
+<br/>pronounced.</p>
+        <p begin="00:21:23.5" end="00:21:26.8" tts:direction="ltr">I'm going to go into color, Edit those
+<br/>colors.</p>
+        <p begin="00:21:26.8" end="00:21:29.8" tts:direction="ltr">I'm going to use the full range.</p>
+        <p begin="00:21:29.8" end="00:21:31.6" tts:direction="ltr">I've got that negative.</p>
+        <p begin="00:21:31.6" end="00:21:34.4" tts:direction="ltr">Now, I could change this by clicking on
+<br/>that.</p>
+        <p begin="00:21:34.4" end="00:21:37.8" tts:direction="ltr">I could try to go for maybe a different</p>
+        <p begin="00:21:37.8" end="00:21:40.7" tts:direction="ltr">More of a brown color.</p>
+        <p begin="00:21:40.7" end="00:21:43.4" tts:direction="ltr">Suppose maybe try that.</p>
+        <p begin="00:21:43.4" end="00:21:45.5" tts:direction="ltr">Then let's go to advanced.</p>
+        <p begin="00:21:45.5" end="00:21:47.3" tts:direction="ltr">And force the center</p>
+        <p begin="00:21:47.3" end="00:21:52.4" tts:direction="ltr">that the center will say all those that
+<br/>are negative, right?</p>
+        <p begin="00:21:52.4" end="00:21:54.6" tts:direction="ltr">That's my value, will be in</p>
+        <p begin="00:21:54.6" end="00:21:59.2" tts:direction="ltr">this orange category and all the positive
+<br/>will be in that.</p>
+        <p begin="00:21:59.2" end="00:22:00.9" tts:direction="ltr">I could change that even too,</p>
+        <p begin="00:22:00.9" end="00:22:03.7" tts:direction="ltr">if I wanted to go green or something like
+<br/>that.</p>
+        <p begin="00:22:03.7" end="00:22:05.4" tts:direction="ltr">Though that's not the best,</p>
+        <p begin="00:22:05.4" end="00:22:07.9" tts:direction="ltr">actually for my color deficiencies.</p>
+        <p begin="00:22:07.9" end="00:22:10.4" tts:direction="ltr">I'm going to just keep that back to that
+<br/>brown.</p>
+        <p begin="00:22:10.4" end="00:22:13.6" tts:direction="ltr">I can upload some unique color palettes,</p>
+        <p begin="00:22:13.6" end="00:22:18.3" tts:direction="ltr">but let's go and apply that just for
+<br/>clarity.</p>
+        <p begin="00:22:18.3" end="00:22:22.1" tts:direction="ltr">I'm going to go back into that color and
+<br/>see how the border is automatic.</p>
+        <p begin="00:22:22.1" end="00:22:24.8" tts:direction="ltr">I'm going to change that to white.</p>
+        <p begin="00:22:24.8" end="00:22:29.9" tts:direction="ltr">Great. I'm going to change that from
+<br/>standard to fit the whole width.</p>
+        <p begin="00:22:29.9" end="00:22:32.2" tts:direction="ltr">Now I can see everything.</p>
+        <p begin="00:22:32.2" end="00:22:35.6" tts:direction="ltr">I can see that I probably need to work on
+<br/>my group</p>
+        <p begin="00:22:35.6" end="00:22:39.7" tts:direction="ltr">and probably group together China and
+<br/>China mainland.</p>
+        <p begin="00:22:39.7" end="00:22:41.6" tts:direction="ltr">If I go into here,</p>
+        <p begin="00:22:41.6" end="00:22:44.3" tts:direction="ltr">let's go into Edit Group,</p>
+        <p begin="00:22:44.3" end="00:22:47.5" tts:direction="ltr">let's go ahead and type in China.</p>
+        <p begin="00:22:49.1" end="00:22:52.2" tts:direction="ltr">Okay, so let's group,</p>
+        <p begin="00:22:52.2" end="00:22:54.10" tts:direction="ltr">I'm going to hold down the shift key</p>
+        <p begin="00:22:54.10" end="00:22:57.4" tts:direction="ltr">here and just put all of these three
+<br/>together.</p>
+        <p begin="00:22:57.4" end="00:23:00.1" tts:direction="ltr">We'll group that and we'll call that
+<br/>China.</p>
+        <p begin="00:23:00.1" end="00:23:07.8" tts:direction="ltr">Okay. And I did not apply there,</p>
+        <p begin="00:23:07.8" end="00:23:11.8" tts:direction="ltr">so that should have applied.</p>
+        <p begin="00:23:11.8" end="00:23:16.9" tts:direction="ltr">I look at my Yeah.</p>
+        <p begin="00:23:16.9" end="00:23:22.2" tts:direction="ltr">Top ten by field and oh, by color.</p>
+        <p begin="00:23:22.2" end="00:23:29.8" tts:direction="ltr">So I think what's happening is I need to
+<br/>apply</p>
+        <p begin="00:23:29.8" end="00:23:38.7" tts:direction="ltr">that, that's not going to work.</p>
+        <p begin="00:23:38.7" end="00:23:42.6" tts:direction="ltr">Okay. Got my set,</p>
+        <p begin="00:23:42.6" end="00:23:45.3" tts:direction="ltr">and that's what's working for the colors.</p>
+        <p begin="00:23:45.3" end="00:23:50.6" tts:direction="ltr">Now I'm just trying to save my top ten
+<br/>plus I have my others.</p>
+        <p begin="00:23:50.6" end="00:23:55.5" tts:direction="ltr">That's the top production.</p>
+        <p begin="00:23:55.5" end="00:24:01.4" tts:direction="ltr">Look at that by that area group that
+<br/>should be looking at that.</p>
+        <p begin="00:24:01.4" end="00:24:03.9" tts:direction="ltr">Something's wrong with my area group.</p>
+        <p begin="00:24:03.9" end="00:24:08.2" tts:direction="ltr">Just again with all things Tableau,</p>
+        <p begin="00:24:10.1" end="00:24:15.6" tts:direction="ltr">the China altogether, we got the Russia.</p>
+        <p begin="00:24:15.6" end="00:24:21" tts:direction="ltr">I might just need to scrub through that
+<br/>again and see what's happening.</p>
+        <p begin="00:24:21" end="00:24:27.3" tts:direction="ltr">But this is that heat map where I can look
+<br/>at some of those zones clearly,</p>
+        <p begin="00:24:27.3" end="00:24:28.9" tts:direction="ltr">those others have a lot.</p>
+        <p begin="00:24:28.9" end="00:24:33.8" tts:direction="ltr">And I've got my Russia Federation going on
+<br/>right there.</p>
+        <p begin="00:24:33.8" end="00:24:37.5" tts:direction="ltr">We've got our bar chart line chart,</p>
+        <p begin="00:24:37.5" end="00:24:40.5" tts:direction="ltr">now our heat map.</p>
+        <p begin="00:24:40.7" end="00:24:45.3" tts:direction="ltr">All right, for this final chart type,</p>
+        <p begin="00:24:45.3" end="00:24:51" tts:direction="ltr">we're going to be pushing your calculation
+<br/>skills again.</p>
+        <p begin="00:24:51" end="00:24:55.7" tts:direction="ltr">For the challenge, you'll just need to
+<br/>pick a couple of these to make,</p>
+        <p begin="00:24:55.7" end="00:25:01.10" tts:direction="ltr">but I want to give you a few options and
+<br/>maybe stretch what you can do.</p>
+        <p begin="00:25:01.10" end="00:25:04.2" tts:direction="ltr">What we'll do is we're going to be
+<br/>creating</p>
+        <p begin="00:25:04.2" end="00:25:10.9" tts:direction="ltr">this U massive line chart with the ability
+<br/>to highlight.</p>
+        <p begin="00:25:10.9" end="00:25:13.10" tts:direction="ltr">We'll do that by looking at the year.</p>
+        <p begin="00:25:13.10" end="00:25:16.6" tts:direction="ltr">We're going to put year on columns.</p>
+        <p begin="00:25:16.6" end="00:25:22.6" tts:direction="ltr">Then what we want to do is just look at
+<br/>one of the productions.</p>
+        <p begin="00:25:22.8" end="00:25:25.7" tts:direction="ltr">We're not going to look at area harvested,</p>
+        <p begin="00:25:25.7" end="00:25:27.3" tts:direction="ltr">or we're not going to look at yields.</p>
+        <p begin="00:25:27.3" end="00:25:28.8" tts:direction="ltr">We're going to just look at production,</p>
+        <p begin="00:25:28.8" end="00:25:31.8" tts:direction="ltr">and we're just going to look at potatoes
+<br/>in order to do that.</p>
+        <p begin="00:25:31.8" end="00:25:34.3" tts:direction="ltr">Again, the great thing about Tableau is I
+<br/>can create</p>
+        <p begin="00:25:34.3" end="00:25:37.5" tts:direction="ltr">another calculated field just with
+<br/>production.</p>
+        <p begin="00:25:37.5" end="00:25:41.3" tts:direction="ltr">I've already created this calculation.</p>
+        <p begin="00:25:41.3" end="00:25:45" tts:direction="ltr">I'm going to duplicate this so that I can
+<br/>modify it.</p>
+        <p begin="00:25:45" end="00:25:47.1" tts:direction="ltr">Okay, I've duplicated that.</p>
+        <p begin="00:25:47.1" end="00:25:49.6" tts:direction="ltr">Then I'm going to edit it.</p>
+        <p begin="00:25:49.6" end="00:25:54.9" tts:direction="ltr">What I want to do is I'm going to actually
+<br/>call this potato.</p>
+        <p begin="00:25:54.9" end="00:25:57.8" tts:direction="ltr">I could do this again for tomato as well,</p>
+        <p begin="00:25:57.8" end="00:25:59.4" tts:direction="ltr">but I'm going to just do potato.</p>
+        <p begin="00:25:59.4" end="00:26:01.10" tts:direction="ltr">And I'm going to build off of this
+<br/>calculation.</p>
+        <p begin="00:26:01.10" end="00:26:07.2" tts:direction="ltr">I've got production and I'll bring the
+<br/>item,</p>
+        <p begin="00:26:07.2" end="00:26:10.8" tts:direction="ltr">if it equals potatoes,</p>
+        <p begin="00:26:12.4" end="00:26:16.3" tts:direction="ltr">then I've got my value and I'll have my
+<br/>end.</p>
+        <p begin="00:26:16.3" end="00:26:17.4" tts:direction="ltr">Great.</p>
+        <p begin="00:26:17.4" end="00:26:23.8" tts:direction="ltr">Okay. What I want to do is bring in that
+<br/>production value onto Rose.</p>
+        <p begin="00:26:23.8" end="00:26:26.4" tts:direction="ltr">And then I'm going to.</p>
+        <p begin="00:26:26.4" end="00:26:30.4" tts:direction="ltr">All right, now what I want to do is I'm
+<br/>actually</p>
+        <p begin="00:26:30.4" end="00:26:34.9" tts:direction="ltr">going to put a table calculation on here.</p>
+        <p begin="00:26:34.9" end="00:26:38.8" tts:direction="ltr">I'm going to go ahead and do a rank so I
+<br/>can</p>
+        <p begin="00:26:38.8" end="00:26:42.9" tts:direction="ltr">see from greatest to least I'm going to do
+<br/>it on,</p>
+        <p begin="00:26:42.9" end="00:26:47.3" tts:direction="ltr">actually I'm going to do specific
+<br/>dimension and I'm going to do it on year.</p>
+        <p begin="00:26:47.3" end="00:26:50.9" tts:direction="ltr">Great. Okay, I've got that delta sign
+<br/>showing that.</p>
+        <p begin="00:26:50.9" end="00:26:55.7" tts:direction="ltr">Then I'm going to bring my area, which by
+<br/>the way.</p>
+        <p begin="00:26:55.7" end="00:26:58.1" tts:direction="ltr">Go ahead and click on that icon.</p>
+        <p begin="00:26:58.1" end="00:27:00.6" tts:direction="ltr">You might be showing that it's still,</p>
+        <p begin="00:27:00.6" end="00:27:04.8" tts:direction="ltr">you can change that role to be a
+<br/>geographic role.</p>
+        <p begin="00:27:04.8" end="00:27:07.7" tts:direction="ltr">And then to the country and region,</p>
+        <p begin="00:27:07.7" end="00:27:10.8" tts:direction="ltr">just updating that icon there and grab
+<br/>that.</p>
+        <p begin="00:27:10.8" end="00:27:13.8" tts:direction="ltr">And let's put that onto detail.</p>
+        <p begin="00:27:13.8" end="00:27:17.1" tts:direction="ltr">I've got a lot going on here.</p>
+        <p begin="00:27:17.6" end="00:27:24.3" tts:direction="ltr">What I want to do is bring in the potato
+<br/>production.</p>
+        <p begin="00:27:24.3" end="00:27:27.6" tts:direction="ltr">I'm going to also add that onto detail
+<br/>here.</p>
+        <p begin="00:27:27.6" end="00:27:32.2" tts:direction="ltr">Then I'm, let's change this.</p>
+        <p begin="00:27:32.2" end="00:27:40.2" tts:direction="ltr">Let's edit that. Table calculation,
+<br/>descending rank.</p>
+        <p begin="00:27:40.2" end="00:27:44.7" tts:direction="ltr">Yep, that's good. Let's see,</p>
+        <p begin="00:27:44.7" end="00:27:48.2" tts:direction="ltr">I need to actually,</p>
+        <p begin="00:27:48.2" end="00:27:50.5" tts:direction="ltr">we're going to reverse the axis.</p>
+        <p begin="00:27:50.5" end="00:27:52.2" tts:direction="ltr">I'm going to write, click the axis.</p>
+        <p begin="00:27:52.2" end="00:27:56.3" tts:direction="ltr">It the axis and do a reverse here.</p>
+        <p begin="00:27:58.1" end="00:28:05.1" tts:direction="ltr">I do one other thing.</p>
+        <p begin="00:28:05.2" end="00:28:08.4" tts:direction="ltr">Yeah, I need to change my calculation.</p>
+        <p begin="00:28:08.4" end="00:28:11.8" tts:direction="ltr">So I'm going to do a dropdown and I'm
+<br/>going to change it from</p>
+        <p begin="00:28:11.8" end="00:28:15.4" tts:direction="ltr">compute using year to area.</p>
+        <p begin="00:28:15.4" end="00:28:17.2" tts:direction="ltr">So that can be the countries.</p>
+        <p begin="00:28:17.2" end="00:28:24.4" tts:direction="ltr">Now I've got all of these amazing lines
+<br/>over time.</p>
+        <p begin="00:28:24.4" end="00:28:31.3" tts:direction="ltr">This area right here are those countries
+<br/>that have changed or separated.</p>
+        <p begin="00:28:31.3" end="00:28:33.8" tts:direction="ltr">And so that would be something I'd have to
+<br/>do to go</p>
+        <p begin="00:28:33.8" end="00:28:36.9" tts:direction="ltr">into my area group to relocate.</p>
+        <p begin="00:28:36.9" end="00:28:40.1" tts:direction="ltr">Some of those like the French Polynesia,</p>
+        <p begin="00:28:40.1" end="00:28:42.7" tts:direction="ltr">for whatever reason during this period of
+<br/>time,</p>
+        <p begin="00:28:42.7" end="00:28:45.2" tts:direction="ltr">they've popped up into the dataset.</p>
+        <p begin="00:28:45.2" end="00:28:50.7" tts:direction="ltr">Now what I want to do is really stretch
+<br/>you a little bit by</p>
+        <p begin="00:28:50.7" end="00:28:56.3" tts:direction="ltr">adding some parameters on here and to
+<br/>highlight just one of these lines.</p>
+        <p begin="00:28:56.3" end="00:29:00.6" tts:direction="ltr">Okay, I'm going to go ahead and I'm going
+<br/>to recognize these knolls,</p>
+        <p begin="00:29:00.6" end="00:29:05.2" tts:direction="ltr">I'm going to filter that data out because
+<br/>I think that that is some of</p>
+        <p begin="00:29:05.2" end="00:29:10.10" tts:direction="ltr">those areas of countries where they don't
+<br/>have the data on the second half.</p>
+        <p begin="00:29:12.4" end="00:29:15.2" tts:direction="ltr">The first parameter I'm going to</p>
+        <p begin="00:29:15.2" end="00:29:19.9" tts:direction="ltr">make is going to be on the three different
+<br/>elements.</p>
+        <p begin="00:29:19.9" end="00:29:21.8" tts:direction="ltr">Let's go ahead and do a dropdown.</p>
+        <p begin="00:29:21.8" end="00:29:28.6" tts:direction="ltr">This is a create a parameter and we're
+<br/>going to call this, choose a unit.</p>
+        <p begin="00:29:28.6" end="00:29:33.4" tts:direction="ltr">We'll go ahead and change this from float
+<br/>to a string.</p>
+        <p begin="00:29:33.4" end="00:29:36.9" tts:direction="ltr">We'll do the list,</p>
+        <p begin="00:29:36.9" end="00:29:42.9" tts:direction="ltr">we'll add values from the element.</p>
+        <p begin="00:29:42.9" end="00:29:44.10" tts:direction="ltr">Now you can see those three.</p>
+        <p begin="00:29:44.10" end="00:29:49.4" tts:direction="ltr">That looks great. Okay, now you'll see
+<br/>that parameters are added</p>
+        <p begin="00:29:49.4" end="00:29:55.4" tts:direction="ltr">here below my data fields.</p>
+        <p begin="00:29:55.4" end="00:29:58.10" tts:direction="ltr">And I can right click that to show that
+<br/>parameter.</p>
+        <p begin="00:29:58.10" end="00:30:01.9" tts:direction="ltr">Then if I do that drop down area,</p>
+        <p begin="00:30:01.9" end="00:30:03.4" tts:direction="ltr">I can see the single list,</p>
+        <p begin="00:30:03.4" end="00:30:06.1" tts:direction="ltr">so I can toggle between all of those.</p>
+        <p begin="00:30:06.1" end="00:30:10.2" tts:direction="ltr">Okay, that's our very first parameter that
+<br/>we're going to make.</p>
+        <p begin="00:30:10.5" end="00:30:15.1" tts:direction="ltr">Next, we're going to create a new
+<br/>calculated field,</p>
+        <p begin="00:30:15.1" end="00:30:19.3" tts:direction="ltr">and this will be our unit value.</p>
+        <p begin="00:30:19.3" end="00:30:23.3" tts:direction="ltr">We're going to do a case for this.</p>
+        <p begin="00:30:23.3" end="00:30:30.2" tts:direction="ltr">We're going to say choose a unit.</p>
+        <p begin="00:30:30.2" end="00:30:37.2" tts:direction="ltr">Okay. When the area harvested,</p>
+        <p begin="00:30:37.2" end="00:30:42" tts:direction="ltr">let's grab some of the average area
+<br/>harvested.</p>
+        <p begin="00:30:42" end="00:30:44.10" tts:direction="ltr">Actually, nope, I don't want to do that.</p>
+        <p begin="00:30:44.10" end="00:30:47.2" tts:direction="ltr">No, no, sorry about that.</p>
+        <p begin="00:30:47.2" end="00:30:51.6" tts:direction="ltr">So I want to do my case and then I will do</p>
+        <p begin="00:30:51.6" end="00:30:56.6" tts:direction="ltr">my choose unit and I'm going to say when</p>
+        <p begin="00:30:56.6" end="00:31:02.5" tts:direction="ltr">I'm going to have a single quotes area
+<br/>harvested with that lower case,</p>
+        <p begin="00:31:02.5" end="00:31:07.1" tts:direction="ltr">then it'll be the area harvested here.</p>
+        <p begin="00:31:07.1" end="00:31:15.4" tts:direction="ltr">Okay? And then we'll say when it is
+<br/>production,</p>
+        <p begin="00:31:15.6" end="00:31:26.1" tts:direction="ltr">then we'll do our production calculate to
+<br/>do why? Why, why? Okay.</p>
+        <p begin="00:31:26.1" end="00:31:31.4" tts:direction="ltr">Sorry about that. You saw that I messed
+<br/>that up.</p>
+        <p begin="00:31:31.4" end="00:31:37.4" tts:direction="ltr">So I need my area harvested back over
+<br/>here, Come on, carrot.</p>
+        <p begin="00:31:37.4" end="00:31:41.6" tts:direction="ltr">And then I need my production over on this
+<br/>line.</p>
+        <p begin="00:31:41.6" end="00:31:50.6" tts:direction="ltr">Okay. And then when, Oops, yield.</p>
+        <p begin="00:31:50.6" end="00:31:54.7" tts:direction="ltr">Let's do yield, close that quote.</p>
+        <p begin="00:31:54.7" end="00:32:00.7" tts:direction="ltr">Then we'll bring our yield, awesome.</p>
+        <p begin="00:32:00.7" end="00:32:03.9" tts:direction="ltr">Okay, And then we'll have end.</p>
+        <p begin="00:32:03.9" end="00:32:08.1" tts:direction="ltr">All right, so we've got our unit value
+<br/>there.</p>
+        <p begin="00:32:09.3" end="00:32:13.4" tts:direction="ltr">Now we'll need to create another
+<br/>calculated field.</p>
+        <p begin="00:32:13.4" end="00:32:15.1" tts:direction="ltr">And this will be the rank,</p>
+        <p begin="00:32:15.1" end="00:32:18.8" tts:direction="ltr">because I can't apply it on a calculation,</p>
+        <p begin="00:32:18.8" end="00:32:22.5" tts:direction="ltr">I'm going to do rank unit value.</p>
+        <p begin="00:32:22.6" end="00:32:26" tts:direction="ltr">Then I will do a rank,</p>
+        <p begin="00:32:26" end="00:32:31.2" tts:direction="ltr">I will bring in unit value in there.</p>
+        <p begin="00:32:31.2" end="00:32:36.2" tts:direction="ltr">Then I'm going to select this default
+<br/>table calculation,</p>
+        <p begin="00:32:36.2" end="00:32:39.1" tts:direction="ltr">so I can compute using the area.</p>
+        <p begin="00:32:39.1" end="00:32:41.1" tts:direction="ltr">Okay, which are the countries?</p>
+        <p begin="00:32:41.1" end="00:32:43.5" tts:direction="ltr">Okay, great.</p>
+        <p begin="00:32:43.5" end="00:32:46.1" tts:direction="ltr">Let me go ahead and say, okay.</p>
+        <p begin="00:32:46.5" end="00:32:48.10" tts:direction="ltr">Okay, so then we'll take</p>
+        <p begin="00:32:48.10" end="00:32:58.6" tts:direction="ltr">the rank value and we'll put it on here
+<br/>instead of the potato.</p>
+        <p begin="00:32:58.6" end="00:33:01.1" tts:direction="ltr">We'll remove the potato,</p>
+        <p begin="00:33:01.1" end="00:33:05.1" tts:direction="ltr">and then we'll right click the axes to
+<br/>edit that again.</p>
+        <p begin="00:33:05.1" end="00:33:11.4" tts:direction="ltr">And then we'll reverse that because again
+<br/>it starts with 012345, et cetera.</p>
+        <p begin="00:33:11.4" end="00:33:16.6" tts:direction="ltr">Okay. All right, now we've got this
+<br/>working.</p>
+        <p begin="00:33:16.6" end="00:33:18.1" tts:direction="ltr">So I did that parameter,</p>
+        <p begin="00:33:18.1" end="00:33:20.9" tts:direction="ltr">but I needed to add in that new feature.</p>
+        <p begin="00:33:20.9" end="00:33:23.3" tts:direction="ltr">Okay, now onto the highlight.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:33:23.3" end="00:33:25.3" tts:direction="ltr">Now I want to okay,</p>
+        <p begin="00:33:25.3" end="00:33:31.10" tts:direction="ltr">on the area here I can do a drop down and
+<br/>show my highlighter already.</p>
+        <p begin="00:33:31.10" end="00:33:33.7" tts:direction="ltr">Did that show highlighter.</p>
+        <p begin="00:33:33.7" end="00:33:38.1" tts:direction="ltr">Then here I can see that I can grab</p>
+        <p begin="00:33:38.1" end="00:33:42.7" tts:direction="ltr">different countries to show that's where
+<br/>this is a more interesting chart,</p>
+        <p begin="00:33:42.7" end="00:33:47.5" tts:direction="ltr">not all those lines, but to see where
+<br/>Austria in relation.</p>
+        <p begin="00:33:47.5" end="00:33:52.8" tts:direction="ltr">Now what I want to do is make that into a
+<br/>color. Again, hang with me.</p>
+        <p begin="00:33:52.8" end="00:33:58.5" tts:direction="ltr">We're going to create a couple more
+<br/>calculations, okay?</p>
+        <p begin="00:33:58.5" end="00:34:02.1" tts:direction="ltr">Instead of using this, let's go ahead and
+<br/>hide that again,</p>
+        <p begin="00:34:02.1" end="00:34:04.7" tts:direction="ltr">let me take that away.</p>
+        <p begin="00:34:04.7" end="00:34:07.5" tts:direction="ltr">We're going to create another parameter.</p>
+        <p begin="00:34:07.5" end="00:34:10.4" tts:direction="ltr">This will give me the ability to
+<br/>highlight,</p>
+        <p begin="00:34:10.4" end="00:34:14.3" tts:direction="ltr">and I'm going to call this highlight a
+<br/>country.</p>
+        <p begin="00:34:14.5" end="00:34:20.7" tts:direction="ltr">It will be a string and then it will be a
+<br/>list.</p>
+        <p begin="00:34:20.7" end="00:34:26.1" tts:direction="ltr">Now the very first one that I want to do
+<br/>is actually none.</p>
+        <p begin="00:34:26.1" end="00:34:27.8" tts:direction="ltr">Let me capitalize that.</p>
+        <p begin="00:34:27.8" end="00:34:35.4" tts:direction="ltr">I'm going to have none. Then I'm going to
+<br/>add my area into that list.</p>
+        <p begin="00:34:35.4" end="00:34:36.7" tts:direction="ltr">Okay.</p>
+        <p begin="00:34:36.7" end="00:34:40.6" tts:direction="ltr">I've got to highlight a country and that
+<br/>way I can have none,</p>
+        <p begin="00:34:40.6" end="00:34:43.2" tts:direction="ltr">And then I can select a country.</p>
+        <p begin="00:34:44" end="00:34:46.10" tts:direction="ltr">Put that, okay.</p>
+        <p begin="00:34:47.2" end="00:34:48.9" tts:direction="ltr">All right.</p>
+        <p begin="00:34:48.9" end="00:34:52.4" tts:direction="ltr">Again for my color, I'm going to create
+<br/>that calculated field</p>
+        <p begin="00:34:52.4" end="00:34:57.2" tts:direction="ltr">and I'm going to call it Highlighted
+<br/>Country.</p>
+        <p begin="00:34:57.2" end="00:35:05.1" tts:direction="ltr">I'm going to say that area is equal</p>
+        <p begin="00:35:05.1" end="00:35:13.4" tts:direction="ltr">to highlight a country, that's the
+<br/>parameter.</p>
+        <p begin="00:35:13.4" end="00:35:16.8" tts:direction="ltr">Highlight a country, or</p>
+        <p begin="00:35:18.6" end="00:35:25.7" tts:direction="ltr">highlight a country is equal to,</p>
+        <p begin="00:35:26.9" end="00:35:32.4" tts:direction="ltr">that's that none field that I created.</p>
+        <p begin="00:35:32.4" end="00:35:36.5" tts:direction="ltr">Okay. Hopefully that will work.</p>
+        <p begin="00:35:36.5" end="00:35:39.4" tts:direction="ltr">Oh, it looks okay. Can't.</p>
+        <p begin="00:35:39.4" end="00:35:42" tts:direction="ltr">All right, so we've got that on there.</p>
+        <p begin="00:35:42" end="00:35:46" tts:direction="ltr">Let's go ahead and show that parameter.</p>
+        <p begin="00:35:46" end="00:35:48.6" tts:direction="ltr">Show that parameter now I've got that.</p>
+        <p begin="00:35:48.6" end="00:35:52.3" tts:direction="ltr">Then highlight a country I'm in or out.</p>
+        <p begin="00:35:52.3" end="00:35:54.9" tts:direction="ltr">And if I bring that to color,</p>
+        <p begin="00:35:54.9" end="00:35:58" tts:direction="ltr">and I'm not seeing anything right now
+<br/>because I've got none,</p>
+        <p begin="00:35:58" end="00:36:01.5" tts:direction="ltr">And if I select Afghanistan,</p>
+        <p begin="00:36:02.2" end="00:36:05.5" tts:direction="ltr">let's see why is that not showing.</p>
+        <p begin="00:36:05.5" end="00:36:15.5" tts:direction="ltr">Let me go. Armenia. Yep. I think I see
+<br/>something right here with this color.</p>
+        <p begin="00:36:15.5" end="00:36:18.9" tts:direction="ltr">I'm not quite sure. Let me see.</p>
+        <p begin="00:36:18.9" end="00:36:24.3" tts:direction="ltr">For China. Okay, let me check my parameter
+<br/>again.</p>
+        <p begin="00:36:24.3" end="00:36:30.8" tts:direction="ltr">Okay, so what I needed to do was actually
+<br/>change my table calculation.</p>
+        <p begin="00:36:31.5" end="00:36:35.9" tts:direction="ltr">Let's do compute using,</p>
+        <p begin="00:36:37.5" end="00:36:43.3" tts:direction="ltr">actually let's do the drop down a table
+<br/>calculation.</p>
+        <p begin="00:36:43.3" end="00:36:48.6" tts:direction="ltr">Let's include highlighted country right
+<br/>there. It's both of those.</p>
+        <p begin="00:36:48.6" end="00:36:55.10" tts:direction="ltr">Now I can see if I've got, there we go.</p>
+        <p begin="00:36:55.10" end="00:37:01.3" tts:direction="ltr">Now it's showing the various country.</p>
+        <p begin="00:37:06.4" end="00:37:10.6" tts:direction="ltr">I can probably reorder this to bring this
+<br/>in</p>
+        <p begin="00:37:10.6" end="00:37:15.2" tts:direction="ltr">front because I'm seeing some of these are
+<br/>more difficult.</p>
+        <p begin="00:37:15.2" end="00:37:17.3" tts:direction="ltr">Yeah. It looks like that's behind.</p>
+        <p begin="00:37:17.3" end="00:37:19.7" tts:direction="ltr">Let me change this to the.</p>
+        <p begin="00:37:20.8" end="00:37:30.3" tts:direction="ltr">Okay. So let me is that going to do that
+<br/>for me?</p>
+        <p begin="00:37:34.3" end="00:37:37.10" tts:direction="ltr">Okay. I don't even know where that country
+<br/>is.</p>
+        <p begin="00:37:37.10" end="00:37:40" tts:direction="ltr">See where Kenya is.</p>
+        <p begin="00:37:40" end="00:37:41.3" tts:direction="ltr">Okay. It's still hidden.</p>
+        <p begin="00:37:41.3" end="00:37:43.5" tts:direction="ltr">Let me think about where that needs to be
+<br/>a there we go.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p begin="00:37:43.5" end="00:37:43.9" tts:direction="ltr">So China. Okay?</p>
+        <p begin="00:37:43.9" end="00:37:47.3" tts:direction="ltr">Okay. In order for me to get</p>
+        <p begin="00:37:47.3" end="00:37:50.9" tts:direction="ltr">that orange up on top and to even change
+<br/>that orange,</p>
+        <p begin="00:37:50.9" end="00:37:52.8" tts:direction="ltr">you can see how that's coming.</p>
+        <p begin="00:37:52.8" end="00:37:55.2" tts:direction="ltr">What I'm going to do is I'm going to go
+<br/>into</p>
+        <p begin="00:37:55.2" end="00:38:01.1" tts:direction="ltr">my analysis legends and do color legend
+<br/>for the highlighted country.</p>
+        <p begin="00:38:01.1" end="00:38:02.9" tts:direction="ltr">That's going to allow me to,</p>
+        <p begin="00:38:02.9" end="00:38:06.2" tts:direction="ltr">to see if I go to True and I just track
+<br/>that on</p>
+        <p begin="00:38:06.2" end="00:38:10.10" tts:direction="ltr">top then I can see that Luxembourg right
+<br/>here,</p>
+        <p begin="00:38:10.10" end="00:38:12.10" tts:direction="ltr">and again, probably had some,</p>
+        <p begin="00:38:12.10" end="00:38:15.5" tts:direction="ltr">a name change for the country right here.</p>
+        <p begin="00:38:15.5" end="00:38:18.2" tts:direction="ltr">I could go into my group and do that.</p>
+        <p begin="00:38:18.2" end="00:38:21.10" tts:direction="ltr">I can also go in and I can edit those
+<br/>colors.</p>
+        <p begin="00:38:21.10" end="00:38:27.9" tts:direction="ltr">I could make my false gray right to reduce
+<br/>that.</p>
+        <p begin="00:38:27.9" end="00:38:30.10" tts:direction="ltr">Now I've got my country of choice.</p>
+        <p begin="00:38:30.10" end="00:38:36.1" tts:direction="ltr">Okay, so all right, lots of parameters,</p>
+        <p begin="00:38:36.1" end="00:38:41.10" tts:direction="ltr">some application of some calculated
+<br/>fields,</p>
+        <p begin="00:38:41.10" end="00:38:44.10" tts:direction="ltr">all to achieve this new chart.</p>
+        <p begin="00:38:44.10" end="00:38:47.2" tts:direction="ltr">And we're going to just call this,</p>
+        <p begin="00:38:48.2" end="00:38:51.6" tts:direction="ltr">what would be the best name for this?</p>
+        <p begin="00:38:51.8" end="00:38:57.4" tts:direction="ltr">Probably. Let's call this a ranking line.</p>
+        <p begin="00:38:57.4" end="00:39:01.8" tts:direction="ltr">Since I've applied all of the ranking to
+<br/>this,</p>
+        <p begin="00:39:01.8" end="00:39:06.8" tts:direction="ltr">and I've got that ranking for all of those
+<br/>different countries there,</p>
+        <p begin="00:39:06.8" end="00:39:11.5" tts:direction="ltr">I'll call that a ranking line with the
+<br/>highlighted country.</p>
+        <p begin="00:39:11.5" end="00:39:17.1" tts:direction="ltr">We've created 12345 different chart types.</p>
+        <p begin="00:39:17.1" end="00:39:21.1" tts:direction="ltr">Hopefully you can select two of those,</p>
+        <p begin="00:39:21.1" end="00:39:27.4" tts:direction="ltr">one of those as your wild card to apply
+<br/>some design principles to it.</p>
+        <p begin="00:39:27.4" end="00:39:31.2" tts:direction="ltr">To again, think about your purpose and
+<br/>your audience</p>
+        <p begin="00:39:31.2" end="00:39:36.1" tts:direction="ltr">and really helping design with that
+<br/>storytelling.</p>
+        <p begin="00:39:36.1" end="00:39:40.8" tts:direction="ltr">Hope you enjoyed these new charts and I
+<br/>can't wait to see what you create.</p>
+    </div>
+  </body>
+</tt>

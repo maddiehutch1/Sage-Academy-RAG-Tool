@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>474741152 - 1_qk0gdyuo - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.520" end="00:00:05.480" tts:direction="ltr">For this power up, we're going to continue
+<br />to learn more about maps,</p>
+        <p begin="00:00:05.480" end="00:00:08.720" tts:direction="ltr">and let's go ahead and connect to some
+<br />data.</p>
+        <p begin="00:00:08.720" end="00:00:10.780" tts:direction="ltr">The data that we're going to look at is</p>
+        <p begin="00:00:10.780" end="00:00:13.760" tts:direction="ltr">actually some pigeon data in New York
+<br />City.</p>
+        <p begin="00:00:13.760" end="00:00:17.520" tts:direction="ltr">Go ahead and select the pigeon siting inst
+<br />CSV file,</p>
+        <p begin="00:00:17.520" end="00:00:23.620" tts:direction="ltr">bring that in, and then we can take a look
+<br />at This data.</p>
+        <p begin="00:00:23.620" end="00:00:26.080" tts:direction="ltr">There are 47 fields,</p>
+        <p begin="00:00:26.080" end="00:00:29.180" tts:direction="ltr">which is way more than we need.</p>
+        <p begin="00:00:29.180" end="00:00:31.000" tts:direction="ltr">We'll keep the unique key.</p>
+        <p begin="00:00:31.000" end="00:00:33.500" tts:direction="ltr">We'll keep the date created,</p>
+        <p begin="00:00:33.500" end="00:00:37.300" tts:direction="ltr">and you can see that that has been for
+<br />date and time.</p>
+        <p begin="00:00:37.300" end="00:00:41.760" tts:direction="ltr">That's great. We'll go a in and hide the
+<br />date closed.</p>
+        <p begin="00:00:41.760" end="00:00:46.480" tts:direction="ltr">We'll select agency just by clicking the
+<br />top there.</p>
+        <p begin="00:00:46.480" end="00:00:50.600" tts:direction="ltr">Let me scroll down and scroll over.</p>
+        <p begin="00:00:50.600" end="00:00:52.600" tts:direction="ltr">I'm just going to hold down</p>
+        <p begin="00:00:52.600" end="00:00:55.780" tts:direction="ltr">the shift key and we're just going to hide
+<br />all of these.</p>
+        <p begin="00:00:55.780" end="00:00:57.980" tts:direction="ltr">Otherwise, I'm going to have too many.</p>
+        <p begin="00:00:57.980" end="00:01:02.430" tts:direction="ltr">If I um If I jump to Sorry,</p>
+        <p begin="00:01:02.430" end="00:01:04.910" tts:direction="ltr">that's wanting to highlight my.</p>
+        <p begin="00:01:04.910" end="00:01:08.210" tts:direction="ltr">If I want to jump to sheet,</p>
+        <p begin="00:01:08.210" end="00:01:12.550" tts:direction="ltr">you'll see that I have so many different
+<br />dimensions</p>
+        <p begin="00:01:12.550" end="00:01:14.430" tts:direction="ltr">there and I don't want that many.</p>
+        <p begin="00:01:14.430" end="00:01:20.130" tts:direction="ltr">Let me go ahead and select incident
+<br />address.</p>
+        <p begin="00:01:20.130" end="00:01:22.750" tts:direction="ltr">Go all the way over.</p>
+        <p begin="00:01:24.810" end="00:01:35.950" tts:direction="ltr">Keep going. Let's go ahead and hold on the
+<br />shift key to BBL.</p>
+        <p begin="00:01:35.950" end="00:01:39.250" tts:direction="ltr">We're going to hide those. We have ZIP
+<br />codes,</p>
+        <p begin="00:01:39.250" end="00:01:41.410" tts:direction="ltr">those two community districts,</p>
+        <p begin="00:01:41.410" end="00:01:43.190" tts:direction="ltr">and keep going over.</p>
+        <p begin="00:01:43.190" end="00:01:51.410" tts:direction="ltr">We don't need the pull. Let's see if that
+<br />removes many of that.</p>
+        <p begin="00:01:51.410" end="00:01:54.350" tts:direction="ltr">That was enough. I just cleaned up a few
+<br />of those things.</p>
+        <p begin="00:01:54.350" end="00:01:58.370" tts:direction="ltr">We're going to create a density map.</p>
+        <p begin="00:01:59.650" end="00:02:04.050" tts:direction="ltr">Density map.</p>
+        <p begin="00:02:04.050" end="00:02:06.690" tts:direction="ltr">This can also be called a heat map,</p>
+        <p begin="00:02:06.690" end="00:02:12.050" tts:direction="ltr">but I think Tableau prefers using the term
+<br />heat map for the type</p>
+        <p begin="00:02:12.050" end="00:02:14.830" tts:direction="ltr">of map when you have a heat map being with</p>
+        <p begin="00:02:14.830" end="00:02:18.450" tts:direction="ltr">tables so that you have a cell that's
+<br />darker than another,</p>
+        <p begin="00:02:18.450" end="00:02:21.350" tts:direction="ltr">and instead we'll call this a density map.</p>
+        <p begin="00:02:21.350" end="00:02:26.710" tts:direction="ltr">We'll go ahead and we will double click on
+<br />latitude and longitude.</p>
+        <p begin="00:02:26.710" end="00:02:30.050" tts:direction="ltr">By doing so, it'll place that dot.</p>
+        <p begin="00:02:30.050" end="00:02:36.130" tts:direction="ltr">I've got one mark here and it's just
+<br />showing there in the Manhattan area.</p>
+        <p begin="00:02:36.130" end="00:02:41.030" tts:direction="ltr">I need to bring in some details onto my
+<br />marks card,</p>
+        <p begin="00:02:41.030" end="00:02:43.890" tts:direction="ltr">and I'm going to select Unique key for
+<br />that.</p>
+        <p begin="00:02:43.890" end="00:02:47.170" tts:direction="ltr">If I drag that and drop that onto detail,</p>
+        <p begin="00:02:47.170" end="00:02:50.870" tts:direction="ltr">you'll see now I have all of these
+<br />individual.</p>
+        <p begin="00:02:50.870" end="00:02:53.370" tts:direction="ltr">I have over 10,000 marks.</p>
+        <p begin="00:02:53.370" end="00:02:58.570" tts:direction="ltr">I can actually click on size and reduce
+<br />that so I can see them a bit more.</p>
+        <p begin="00:02:58.570" end="00:03:02.550" tts:direction="ltr">What I want to do is now change this to be
+<br />a density map.</p>
+        <p begin="00:03:02.550" end="00:03:06.770" tts:direction="ltr">I can do that by going from automatic to
+<br />density.</p>
+        <p begin="00:03:06.770" end="00:03:10.650" tts:direction="ltr">Then Teplo will automatically fuzz them
+<br />out,</p>
+        <p begin="00:03:10.650" end="00:03:14.470" tts:direction="ltr">I suppose and then create a darker area
+<br />when there's more of those.</p>
+        <p begin="00:03:14.470" end="00:03:16.950" tts:direction="ltr">I don't particularly like that blue.</p>
+        <p begin="00:03:16.950" end="00:03:19.990" tts:direction="ltr">If I click on color and I go to automatic,</p>
+        <p begin="00:03:19.990" end="00:03:25.310" tts:direction="ltr">I can change that to maybe something like
+<br />this multicolor light.</p>
+        <p begin="00:03:25.310" end="00:03:27.430" tts:direction="ltr">Now I can also play with the intensity,</p>
+        <p begin="00:03:27.430" end="00:03:32.190" tts:direction="ltr">so I can make that a bit darker or a bit
+<br />lighter according to what I need.</p>
+        <p begin="00:03:32.190" end="00:03:34.790" tts:direction="ltr">That is a density map.</p>
+        <p begin="00:03:34.790" end="00:03:38.670" tts:direction="ltr">Now we're going to add some more data.</p>
+        <p begin="00:03:38.670" end="00:03:41.070" tts:direction="ltr">Let's go ahead and go to data at</p>
+        <p begin="00:03:41.070" end="00:03:46.190" tts:direction="ltr">the top navigation and select new data
+<br />source.</p>
+        <p begin="00:03:46.190" end="00:03:50.410" tts:direction="ltr">For this one, we're going to go across the
+<br />pond to London.</p>
+        <p begin="00:03:50.410" end="00:03:52.750" tts:direction="ltr">Let's start off with these London bus
+<br />stops,</p>
+        <p begin="00:03:52.750" end="00:03:55.750" tts:direction="ltr">and we'll just bring that CSV in first.</p>
+        <p begin="00:03:55.750" end="00:03:58.590" tts:direction="ltr">Right now, that looks pretty great.</p>
+        <p begin="00:03:58.590" end="00:04:00.610" tts:direction="ltr">I don't need to hide any of those.</p>
+        <p begin="00:04:00.610" end="00:04:03.410" tts:direction="ltr">We'll go to this second.</p>
+        <p begin="00:04:03.570" end="00:04:06.570" tts:direction="ltr">Actually, let's go back to that data
+<br />source.</p>
+        <p begin="00:04:06.570" end="00:04:08.470" tts:direction="ltr">I can see there was a problem.</p>
+        <p begin="00:04:08.470" end="00:04:13.730" tts:direction="ltr">Here, Tableau is saying for these routes
+<br />that that is a measure.</p>
+        <p begin="00:04:13.730" end="00:04:17.050" tts:direction="ltr">When in fact, it is not, it's a string.</p>
+        <p begin="00:04:17.050" end="00:04:20.250" tts:direction="ltr">We're going to change that to be a string
+<br />and</p>
+        <p begin="00:04:20.250" end="00:04:24.150" tts:direction="ltr">we'll move it into the dimensions area of
+<br />tableau,</p>
+        <p begin="00:04:24.150" end="00:04:26.150" tts:direction="ltr">and it looks like also sequin.</p>
+        <p begin="00:04:26.150" end="00:04:27.530" tts:direction="ltr">We're not going to be adding these.</p>
+        <p begin="00:04:27.530" end="00:04:32.750" tts:direction="ltr">These are actually dimensions because they
+<br />denote something.</p>
+        <p begin="00:04:32.750" end="00:04:35.570" tts:direction="ltr">We're going to change that one also to a
+<br />string.</p>
+        <p begin="00:04:35.570" end="00:04:38.410" tts:direction="ltr">Let me jump now to sheet number two,</p>
+        <p begin="00:04:38.410" end="00:04:41.210" tts:direction="ltr">and what we want to do is we want to bring
+<br />in</p>
+        <p begin="00:04:41.210" end="00:04:46.290" tts:direction="ltr">that route up to dimension sequence up to
+<br />dimension,</p>
+        <p begin="00:04:46.290" end="00:04:49.290" tts:direction="ltr">and I should have the stop name.</p>
+        <p begin="00:04:49.290" end="00:04:50.350" tts:direction="ltr">Great.</p>
+        <p begin="00:04:50.350" end="00:04:57.550" tts:direction="ltr">What I want to do now is I'm going to
+<br />click on our latitude and longitude.</p>
+        <p begin="00:04:59.350" end="00:05:02.930" tts:direction="ltr">What I will do now, just like before,</p>
+        <p begin="00:05:02.930" end="00:05:05.470" tts:direction="ltr">I've got that one mark and I want to</p>
+        <p begin="00:05:05.470" end="00:05:08.470" tts:direction="ltr">break up that view by adding in some more
+<br />details.</p>
+        <p begin="00:05:08.470" end="00:05:11.890" tts:direction="ltr">We're going to go ahead and bring in our
+<br />route onto</p>
+        <p begin="00:05:11.890" end="00:05:18.670" tts:direction="ltr">detail and our sequence onto detail.</p>
+        <p begin="00:05:18.720" end="00:05:22.660" tts:direction="ltr">And our stop name onto detail,</p>
+        <p begin="00:05:22.660" end="00:05:24.180" tts:direction="ltr">which is not going to do a whole bunch,</p>
+        <p begin="00:05:24.180" end="00:05:27.320" tts:direction="ltr">but let's make that a little bit smaller
+<br />so we can see that.</p>
+        <p begin="00:05:27.320" end="00:05:30.480" tts:direction="ltr">Now, once we have those,</p>
+        <p begin="00:05:30.480" end="00:05:32.380" tts:direction="ltr">all on the detail,</p>
+        <p begin="00:05:32.380" end="00:05:35.680" tts:direction="ltr">we want to connect these dots together.</p>
+        <p begin="00:05:35.680" end="00:05:39.040" tts:direction="ltr">You can see that they're all the route 81,</p>
+        <p begin="00:05:39.040" end="00:05:41.800" tts:direction="ltr">but it's showing an individual dot for
+<br />each.</p>
+        <p begin="00:05:41.800" end="00:05:44.500" tts:direction="ltr">I think if I go from automatic to line,</p>
+        <p begin="00:05:44.500" end="00:05:50.510" tts:direction="ltr">it should be able to do that and it hasn't
+<br />shown that quite yet,</p>
+        <p begin="00:05:50.510" end="00:05:51.730" tts:direction="ltr">but it showed it from line.</p>
+        <p begin="00:05:51.730" end="00:05:53.070" tts:direction="ltr">Nothing has changed.</p>
+        <p begin="00:05:53.070" end="00:05:54.650" tts:direction="ltr">But what I want to do is bring</p>
+        <p begin="00:05:54.650" end="00:05:58.510" tts:direction="ltr">that sequence and I want to drop that onto
+<br />path.</p>
+        <p begin="00:05:58.510" end="00:06:04.510" tts:direction="ltr">Now, I should be able to let's see.</p>
+        <p begin="00:06:04.510" end="00:06:09.850" tts:direction="ltr">I've got my sequence both on the detail
+<br />and on the path,</p>
+        <p begin="00:06:09.850" end="00:06:12.470" tts:direction="ltr">and that should change it.</p>
+        <p begin="00:06:14.200" end="00:06:17.580" tts:direction="ltr">I think I've detected what the issue is,</p>
+        <p begin="00:06:17.580" end="00:06:21.440" tts:direction="ltr">and that's because I have the stop name on
+<br />detail.</p>
+        <p begin="00:06:21.440" end="00:06:28.360" tts:direction="ltr">The stop name is a granular detail that's
+<br />showing in this view,</p>
+        <p begin="00:06:28.360" end="00:06:30.220" tts:direction="ltr">I want to have the stop name,</p>
+        <p begin="00:06:30.220" end="00:06:33.340" tts:direction="ltr">but I'm going to actually move it to the
+<br />tooltip.</p>
+        <p begin="00:06:33.340" end="00:06:37.320" tts:direction="ltr">Once I do that, then tableau is now,</p>
+        <p begin="00:06:37.320" end="00:06:39.240" tts:direction="ltr">let me just zoom in here,</p>
+        <p begin="00:06:39.240" end="00:06:45.920" tts:direction="ltr">is now showing those routes as a
+<br />continuous line.</p>
+        <p begin="00:06:46.360" end="00:06:55.240" tts:direction="ltr">Now, one way I can verify that is this 81
+<br />right here.</p>
+        <p begin="00:06:55.240" end="00:06:58.760" tts:direction="ltr">I want to see how many passengers there
+<br />are on that.</p>
+        <p begin="00:06:58.760" end="00:07:02.080" tts:direction="ltr">I'm going to bring route just into the
+<br />view,</p>
+        <p begin="00:07:02.080" end="00:07:06.680" tts:direction="ltr">and then I'm going to bring in our
+<br />passengers,</p>
+        <p begin="00:07:06.680" end="00:07:08.160" tts:direction="ltr">but I don't have that field yet.</p>
+        <p begin="00:07:08.160" end="00:07:11.080" tts:direction="ltr">Actually, I need to bring in some more
+<br />data.</p>
+        <p begin="00:07:11.080" end="00:07:14.700" tts:direction="ltr">I'm going to select this data source,
+<br />London Bustop,</p>
+        <p begin="00:07:14.700" end="00:07:16.200" tts:direction="ltr">and I'm going to right click it,</p>
+        <p begin="00:07:16.200" end="00:07:19.540" tts:direction="ltr">and I'm going to select Edit Data Source.</p>
+        <p begin="00:07:19.540" end="00:07:23.500" tts:direction="ltr">What I want to do is I'm going to add
+<br />another data source.</p>
+        <p begin="00:07:23.500" end="00:07:28.000" tts:direction="ltr">I'm going to union these together with
+<br />some more data,</p>
+        <p begin="00:07:28.000" end="00:07:30.140" tts:direction="ltr">and I'm going to click on more.</p>
+        <p begin="00:07:30.140" end="00:07:34.800" tts:direction="ltr">And then I'm going to select those London
+<br />bus stats.</p>
+        <p begin="00:07:34.800" end="00:07:41.980" tts:direction="ltr">Going to open that up, and I see that
+<br />there's lots and lots of dates.</p>
+        <p begin="00:07:41.980" end="00:07:43.940" tts:direction="ltr">Do you see all of these dates here.</p>
+        <p begin="00:07:43.940" end="00:07:46.640" tts:direction="ltr">Several years worth.</p>
+        <p begin="00:07:46.640" end="00:07:48.560" tts:direction="ltr">What I want to do is I'm going to bring in</p>
+        <p begin="00:07:48.560" end="00:07:52.540" tts:direction="ltr">this new union because I want to union all
+<br />of these dates with this one.</p>
+        <p begin="00:07:52.540" end="00:07:56.980" tts:direction="ltr">Basically, I want to add that to this
+<br />current date.</p>
+        <p begin="00:07:56.980" end="00:07:59.940" tts:direction="ltr">I'm going to bring this to the right hand
+<br />side and drop that in.</p>
+        <p begin="00:07:59.940" end="00:08:06.510" tts:direction="ltr">Then by doing that, then I see that I have
+<br />a specific or a wild card.</p>
+        <p begin="00:08:06.510" end="00:08:08.640" tts:direction="ltr">Let's see if we can do specific first.</p>
+        <p begin="00:08:08.640" end="00:08:11.440" tts:direction="ltr">I'm going I'm going to select the first
+<br />one and then</p>
+        <p begin="00:08:11.440" end="00:08:15.220" tts:direction="ltr">scroll all the way down holding the shift
+<br />key to get the last one.</p>
+        <p begin="00:08:15.220" end="00:08:17.420" tts:direction="ltr">I'm going to drag those onto there.</p>
+        <p begin="00:08:17.420" end="00:08:20.640" tts:direction="ltr">I should see 13 tables.</p>
+        <p begin="00:08:20.640" end="00:08:23.680" tts:direction="ltr">If I click there,</p>
+        <p begin="00:08:24.430" end="00:08:28.570" tts:direction="ltr">I now, I do.</p>
+        <p begin="00:08:28.570" end="00:08:30.250" tts:direction="ltr">I see all of those dates.</p>
+        <p begin="00:08:30.250" end="00:08:37.270" tts:direction="ltr">Now I have made my data a lot longer
+<br />because now I've added on those years.</p>
+        <p begin="00:08:37.270" end="00:08:41.110" tts:direction="ltr">Now, I see it's going by route to route.
+<br />That's great.</p>
+        <p begin="00:08:41.110" end="00:08:45.830" tts:direction="ltr">I can actually look at some of these other
+<br />performance issues,</p>
+        <p begin="00:08:45.830" end="00:08:50.810" tts:direction="ltr">many to many, that's what I want to do</p>
+        <p begin="00:08:50.810" end="00:08:55.650" tts:direction="ltr">because I don't know if some of them don't
+<br />have duplicates,</p>
+        <p begin="00:08:55.650" end="00:08:57.430" tts:direction="ltr">and then the records here.</p>
+        <p begin="00:08:57.430" end="00:09:00.950" tts:direction="ltr">That looks good. When I go back to my
+<br />sheet three,</p>
+        <p begin="00:09:00.950" end="00:09:03.790" tts:direction="ltr">I should see passengers here.</p>
+        <p begin="00:09:03.790" end="00:09:06.070" tts:direction="ltr">Now I can from this union,</p>
+        <p begin="00:09:06.070" end="00:09:11.430" tts:direction="ltr">I can bring passengers onto text and I can
+<br />see how many passengers there are.</p>
+        <p begin="00:09:11.430" end="00:09:18.790" tts:direction="ltr">Let's go ahead. I see there's about 47
+<br />million passengers.</p>
+        <p begin="00:09:18.790" end="00:09:20.890" tts:direction="ltr">Let's go back to my sheet two.</p>
+        <p begin="00:09:20.890" end="00:09:24.970" tts:direction="ltr">Let's actually put passengers onto the
+<br />tooltip.</p>
+        <p begin="00:09:24.970" end="00:09:29.150" tts:direction="ltr">Let's find that and there we go. That's
+<br />the same number.</p>
+        <p begin="00:09:29.750" end="00:09:32.590" tts:direction="ltr">That is cool.</p>
+        <p begin="00:09:32.590" end="00:09:37.770" tts:direction="ltr">That's how I can see all of those
+<br />different individuals.</p>
+        <p begin="00:09:37.770" end="00:09:41.885" tts:direction="ltr">I want to bring in one last example.</p>
+        <p begin="00:09:41.885" end="00:09:44.260" tts:direction="ltr">And we'll bring in one more data set.</p>
+        <p begin="00:09:44.260" end="00:09:47.120" tts:direction="ltr">Let's go to data, new data source,</p>
+        <p begin="00:09:47.120" end="00:09:52.620" tts:direction="ltr">go for R More, and we're going to look at
+<br />these warehouse goods.</p>
+        <p begin="00:09:52.620" end="00:09:55.340" tts:direction="ltr">That's another CSV file.</p>
+        <p begin="00:09:55.340" end="00:09:58.580" tts:direction="ltr">In this case, we've got</p>
+        <p begin="00:09:58.580" end="00:10:05.420" tts:direction="ltr">the warehouse Let me just double check to
+<br />make sure that those are all good.</p>
+        <p begin="00:10:05.420" end="00:10:08.500" tts:direction="ltr">We have my latitude longitude, location,
+<br />ID.</p>
+        <p begin="00:10:08.500" end="00:10:12.080" tts:direction="ltr">Now, in this case, I've got a both
+<br />beginning and end.</p>
+        <p begin="00:10:12.080" end="00:10:18.060" tts:direction="ltr">I have a beginning latitude and end
+<br />longitude and profitability.</p>
+        <p begin="00:10:18.060" end="00:10:25.700" tts:direction="ltr">To look good. Let me jump to sheet number
+<br />four here. For this example.</p>
+        <p begin="00:10:25.700" end="00:10:29.580" tts:direction="ltr">What I want to do is just look at my</p>
+        <p begin="00:10:30.480" end="00:10:34.140" tts:direction="ltr">Warehouse latitude and longitude like I
+<br />did before.</p>
+        <p begin="00:10:34.140" end="00:10:37.180" tts:direction="ltr">I've got my single dot located in
+<br />Oklahoma.</p>
+        <p begin="00:10:37.180" end="00:10:41.080" tts:direction="ltr">But now let's go and bring our warehouse
+<br />ID to detail.</p>
+        <p begin="00:10:41.080" end="00:10:44.840" tts:direction="ltr">Now I see there's one, two, three, four,
+<br />five.</p>
+        <p begin="00:10:44.840" end="00:10:48.980" tts:direction="ltr">Let me actually zoom out a little bit
+<br />here.</p>
+        <p begin="00:10:48.980" end="00:10:51.180" tts:direction="ltr">Five within the US.</p>
+        <p begin="00:10:51.180" end="00:10:54.020" tts:direction="ltr">That looks great so I can see my
+<br />warehouses.</p>
+        <p begin="00:10:54.020" end="00:10:57.120" tts:direction="ltr">Let me create another sheet here.</p>
+        <p begin="00:10:57.120" end="00:11:07.100" tts:direction="ltr">Now I want to look at let's do latitude
+<br />and longitude,</p>
+        <p begin="00:11:07.100" end="00:11:12.320" tts:direction="ltr">and let's look at my location ID on
+<br />detail.</p>
+        <p begin="00:11:12.320" end="00:11:14.520" tts:direction="ltr">There should be more of those.</p>
+        <p begin="00:11:14.520" end="00:11:17.420" tts:direction="ltr">Actually, they're the shipping ones.</p>
+        <p begin="00:11:17.420" end="00:11:20.060" tts:direction="ltr">Let's actually look at</p>
+        <p begin="00:11:23.750" end="00:11:31.510" tts:direction="ltr">Interesting location ID should be let me
+<br />actually bring in detail to.</p>
+        <p begin="00:11:36.390" end="00:11:41.770" tts:direction="ltr">So I think it's</p>
+        <p begin="00:11:41.770" end="00:11:45.830" tts:direction="ltr">not going to show me because I need to
+<br />create a calculated field for this.</p>
+        <p begin="00:11:45.830" end="00:11:53.550" tts:direction="ltr">I am going to call this shipping location.</p>
+        <p begin="00:11:54.510" end="00:11:59.430" tts:direction="ltr">And I'm going to create these two points
+<br />so I can connect them together.</p>
+        <p begin="00:11:59.430" end="00:12:03.570" tts:direction="ltr">In Tableau, there is a field called
+<br />Mapoint.</p>
+        <p begin="00:12:03.570" end="00:12:09.010" tts:direction="ltr">Mapoint, you can see returns a spatial
+<br />object from latitude and longitude.</p>
+        <p begin="00:12:09.010" end="00:12:11.230" tts:direction="ltr">There's an example of what that looks
+<br />like.</p>
+        <p begin="00:12:11.230" end="00:12:18.930" tts:direction="ltr">Here I'm going to do location latitude, by
+<br />location longitude.</p>
+        <p begin="00:12:18.930" end="00:12:22.110" tts:direction="ltr">Okay. I've got that.</p>
+        <p begin="00:12:22.110" end="00:12:28.030" tts:direction="ltr">Then I want to also create a warehouse
+<br />location.</p>
+        <p begin="00:12:28.030" end="00:12:33.470" tts:direction="ltr">Let's go ahead and create another
+<br />calculated field,</p>
+        <p begin="00:12:33.470" end="00:12:40.630" tts:direction="ltr">and we will call this one R warehouse.</p>
+        <p begin="00:12:41.040" end="00:12:44.600" tts:direction="ltr">Location. We'll do the same thing.</p>
+        <p begin="00:12:44.600" end="00:12:52.180" tts:direction="ltr">We'll do a MPoint, and we'll call this one
+<br />the warehouse latitude,</p>
+        <p begin="00:12:52.180" end="00:12:56.800" tts:direction="ltr">by the warehouse, longitude.</p>
+        <p begin="00:12:56.920" end="00:13:03.180" tts:direction="ltr">That looks good. I've got two calculated
+<br />fields for that.</p>
+        <p begin="00:13:03.180" end="00:13:10.720" tts:direction="ltr">Then the next thing, I think I need to do
+<br />is I need to create that line.</p>
+        <p begin="00:13:10.720" end="00:13:21.360" tts:direction="ltr">I need to create one more calculation and
+<br />we'll call that one the route line.</p>
+        <p begin="00:13:21.360" end="00:13:26.280" tts:direction="ltr">In this case, we're going to use the make
+<br />line calculation,</p>
+        <p begin="00:13:26.280" end="00:13:35.160" tts:direction="ltr">and we'll call this the warehouse location
+<br />to the shipping location. Okay.</p>
+        <p begin="00:13:35.160" end="00:13:41.450" tts:direction="ltr">Now Let's go ahead and see if we</p>
+        <p begin="00:13:41.450" end="00:13:50.650" tts:direction="ltr">can't add some of this onto our onto our
+<br />visualization.</p>
+        <p begin="00:13:50.650" end="00:13:59.850" tts:direction="ltr">Let's go and put our shipping location
+<br />onto detail.</p>
+        <p begin="00:13:59.850" end="00:14:02.850" tts:direction="ltr">That won't change anything yet.</p>
+        <p begin="00:14:02.850" end="00:14:04.870" tts:direction="ltr">We've got the location ID.</p>
+        <p begin="00:14:04.870" end="00:14:06.890" tts:direction="ltr">Let me actually put that on here,</p>
+        <p begin="00:14:06.890" end="00:14:09.210" tts:direction="ltr">put that up there.</p>
+        <p begin="00:14:09.210" end="00:14:15.230" tts:direction="ltr">Let's change that to be a circle is,</p>
+        <p begin="00:14:15.230" end="00:14:25.610" tts:direction="ltr">but we'll force that and I want that to
+<br />break apart.</p>
+        <p begin="00:14:25.610" end="00:14:36.140" tts:direction="ltr">I think I have to I might have to create</p>
+        <p begin="00:14:36.140" end="00:14:41.180" tts:direction="ltr">another calculated field in order to
+<br />create</p>
+        <p begin="00:14:41.180" end="00:14:47.520" tts:direction="ltr">enough those separately because it's not
+<br />showing that granular detail.</p>
+        <p begin="00:14:47.520" end="00:14:50.580" tts:direction="ltr">Let's see if we can create another
+<br />calculated field.</p>
+        <p begin="00:14:50.580" end="00:14:59.300" tts:direction="ltr">We'll call this one and we'll call this
+<br />warehouse ID plus,</p>
+        <p begin="00:14:59.380" end="00:15:02.220" tts:direction="ltr">and then whatever that might be,</p>
+        <p begin="00:15:02.220" end="00:15:04.580" tts:direction="ltr">and then the location ID.</p>
+        <p begin="00:15:04.580" end="00:15:08.460" tts:direction="ltr">I'm just creating a string here for that.</p>
+        <p begin="00:15:15.540" end="00:15:20.980" tts:direction="ltr">What I'll do. Okay.</p>
+        <p begin="00:15:20.980" end="00:15:23.480" tts:direction="ltr">I think I figured out what my issue was.</p>
+        <p begin="00:15:23.480" end="00:15:26.680" tts:direction="ltr">I actually don't want the average
+<br />warehouse here.</p>
+        <p begin="00:15:26.680" end="00:15:28.580" tts:direction="ltr">I want my shipping location.</p>
+        <p begin="00:15:28.580" end="00:15:31.340" tts:direction="ltr">So I'm going to go and double click on
+<br />shipping location.</p>
+        <p begin="00:15:31.340" end="00:15:32.760" tts:direction="ltr">That's what my detail was.</p>
+        <p begin="00:15:32.760" end="00:15:35.120" tts:direction="ltr">Apologies. I think I just copy that over,</p>
+        <p begin="00:15:35.120" end="00:15:40.980" tts:direction="ltr">and then I should see each one of those
+<br />shipping locations.</p>
+        <p begin="00:15:44.350" end="00:15:50.370" tts:direction="ltr">Let's create one more of the map.</p>
+        <p begin="00:15:50.370" end="00:15:56.490" tts:direction="ltr">Remember this field that we created this
+<br />calculation that has the warehouse,</p>
+        <p begin="00:15:56.490" end="00:16:00.750" tts:direction="ltr">it's a make line for the warehouse
+<br />location and then the shipping location.</p>
+        <p begin="00:16:00.750" end="00:16:02.610" tts:direction="ltr">We're going to go ahead and double click
+<br />that,</p>
+        <p begin="00:16:02.610" end="00:16:04.990" tts:direction="ltr">and that's going to give us all of these
+<br />lines.</p>
+        <p begin="00:16:04.990" end="00:16:07.270" tts:direction="ltr">Let me go ahead and make those a little
+<br />bit skinnier there.</p>
+        <p begin="00:16:07.270" end="00:16:10.250" tts:direction="ltr">We can actually see them a little bit
+<br />better.</p>
+        <p begin="00:16:10.250" end="00:16:14.650" tts:direction="ltr">We've got all of these crazy lines and
+<br />it's just showing one mark.</p>
+        <p begin="00:16:14.650" end="00:16:20.710" tts:direction="ltr">But we want to split the view so we can
+<br />have multiple locations being shown.</p>
+        <p begin="00:16:21.970" end="00:16:26.810" tts:direction="ltr">The way to get multiple marks, instead of
+<br />just that one,</p>
+        <p begin="00:16:26.810" end="00:16:34.050" tts:direction="ltr">we want to add location ID to the detail
+<br />and warehouse ID to the detail.</p>
+        <p begin="00:16:34.050" end="00:16:37.770" tts:direction="ltr">Now we have 245 marks and look at what's
+<br />happening now.</p>
+        <p begin="00:16:37.770" end="00:16:42.130" tts:direction="ltr">I can individually see each one of those.</p>
+        <p begin="00:16:43.890" end="00:16:46.230" tts:direction="ltr">That's going to be great if I want to do</p>
+        <p begin="00:16:46.230" end="00:16:49.050" tts:direction="ltr">a highlight action or something to that
+<br />effect.</p>
+        <p begin="00:16:49.050" end="00:16:51.010" tts:direction="ltr">Better.</p>
+        <p begin="00:16:53.370" end="00:16:57.050" tts:direction="ltr">What I want to do is</p>
+        <p begin="00:17:02.530" end="00:17:06.850" tts:direction="ltr">Add my warehouse locations onto my view.</p>
+        <p begin="00:17:06.850" end="00:17:08.350" tts:direction="ltr">But not within the marks card,</p>
+        <p begin="00:17:08.350" end="00:17:09.730" tts:direction="ltr">I want a new marks card.</p>
+        <p begin="00:17:09.730" end="00:17:12.510" tts:direction="ltr">I'm going to drag it here, ships.</p>
+        <p begin="00:17:12.510" end="00:17:15.610" tts:direction="ltr">Let me my warehouse locations.</p>
+        <p begin="00:17:15.610" end="00:17:17.590" tts:direction="ltr">Make sure you've got the one with</p>
+        <p begin="00:17:17.590" end="00:17:21.850" tts:direction="ltr">the icon and you want to add it to the
+<br />Marks card.</p>
+        <p begin="00:17:21.850" end="00:17:25.090" tts:direction="ltr">Now I have that one and you can</p>
+        <p begin="00:17:25.090" end="00:17:28.890" tts:direction="ltr">see that I've got those locations on there
+<br />and I should</p>
+        <p begin="00:17:28.890" end="00:17:31.030" tts:direction="ltr">be able to change those to a circle</p>
+        <p begin="00:17:31.030" end="00:17:35.850" tts:direction="ltr">and now I need to do warehouse ID to my
+<br />detail.</p>
+        <p begin="00:17:35.850" end="00:17:38.570" tts:direction="ltr">So I can see all of them.</p>
+        <p begin="00:17:38.570" end="00:17:42.250" tts:direction="ltr">I could change that to maybe a different
+<br />color,</p>
+        <p begin="00:17:42.250" end="00:17:45.170" tts:direction="ltr">so I could make those more prominent.</p>
+        <p begin="00:17:45.170" end="00:17:50.750" tts:direction="ltr">I can change that. Again, I can add
+<br />multiple layers onto my map.</p>
+        <p begin="00:17:50.750" end="00:17:55.210" tts:direction="ltr">Let me go ahead and recall this map
+<br />layers.</p>
+        <p begin="00:17:55.790" end="00:17:59.650" tts:direction="ltr">I could do the same thing if I wanted to
+<br />do the shipping location,</p>
+        <p begin="00:17:59.650" end="00:18:02.110" tts:direction="ltr">I could add a new layer for that.</p>
+        <p begin="00:18:02.470" end="00:18:05.510" tts:direction="ltr">Now I can reorganize these.</p>
+        <p begin="00:18:05.510" end="00:18:07.710" tts:direction="ltr">If I want to keep that,</p>
+        <p begin="00:18:07.710" end="00:18:10.070" tts:direction="ltr">you can see some of those are duplicates.</p>
+        <p begin="00:18:10.070" end="00:18:12.330" tts:direction="ltr">If I want to keep my warehouse location on
+<br />top,</p>
+        <p begin="00:18:12.330" end="00:18:14.050" tts:direction="ltr">I can just drag and drop that,</p>
+        <p begin="00:18:14.050" end="00:18:16.010" tts:direction="ltr">and then I can see that.</p>
+        <p begin="00:18:16.010" end="00:18:18.770" tts:direction="ltr">One last thing I wanted to share with you
+<br />is that you</p>
+        <p begin="00:18:18.770" end="00:18:21.550" tts:direction="ltr">can actually create an action on just a
+<br />worksheet.</p>
+        <p begin="00:18:21.550" end="00:18:25.530" tts:direction="ltr">If I go into worksheet tab here and select
+<br />action,</p>
+        <p begin="00:18:25.530" end="00:18:30.250" tts:direction="ltr">then I can add an action and in this case,
+<br />it's a highlight action.</p>
+        <p begin="00:18:30.250" end="00:18:36.220" tts:direction="ltr">This is something that we do for our
+<br />dashboards as well.</p>
+        <p begin="00:18:36.220" end="00:18:40.780" tts:direction="ltr">We're going to call this highlight a
+<br />route,</p>
+        <p begin="00:18:40.780" end="00:18:43.975" tts:direction="ltr">and I'm going to do it on a hover.</p>
+        <p begin="00:18:43.975" end="00:18:47.230" tts:direction="ltr">I'm going to do the selected fields,</p>
+        <p begin="00:18:47.230" end="00:18:49.570" tts:direction="ltr">and I'm going to do the location ID.</p>
+        <p begin="00:18:49.570" end="00:18:53.510" tts:direction="ltr">I'm going to say, Then once I have that,</p>
+        <p begin="00:18:53.510" end="00:18:56.090" tts:direction="ltr">do you see how now, once I select that,</p>
+        <p begin="00:18:56.090" end="00:19:01.230" tts:direction="ltr">I can see my other locations that happen
+<br />through that.</p>
+        <p begin="00:19:01.710" end="00:19:04.870" tts:direction="ltr">These are just a few ways that you can use
+<br />maps</p>
+        <p begin="00:19:04.870" end="00:19:07.830" tts:direction="ltr">in tableau all the way from a density map,</p>
+        <p begin="00:19:07.830" end="00:19:11.290" tts:direction="ltr">then to a connected route map.</p>
+        <p begin="00:19:11.290" end="00:19:15.230" tts:direction="ltr">Then finally, our route map.</p>
+        <p begin="00:19:15.390" end="00:19:20.430" tts:direction="ltr">I hope that you create a compelling map
+<br />maybe for</p>
+        <p begin="00:19:20.430" end="00:19:25.680" tts:direction="ltr">your project or another tableau exercise,</p>
+        <p begin="00:19:25.680" end="00:19:30.580" tts:direction="ltr">but certainly a powerful tool. Happy
+<br />visit.</p>
+    </div>
+  </body>
+</tt>

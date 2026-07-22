@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>407566902 - 1_1pme79nr - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.160" end="00:00:04.720" tts:direction="ltr">Hello visitors. This is the reveal video.</p>
+        <p begin="00:00:04.720" end="00:00:10.160" tts:direction="ltr">For example, the demo on benchmarking.</p>
+        <p begin="00:00:10.160" end="00:00:13.360" tts:direction="ltr">Just wanted to review what benchmarking is</p>
+        <p begin="00:00:13.360" end="00:00:17.520" tts:direction="ltr">and how important it is when we're doing
+<br />comparative analytics.</p>
+        <p begin="00:00:17.520" end="00:00:22.060" tts:direction="ltr">It is this process where you are taking
+<br />your data,</p>
+        <p begin="00:00:22.060" end="00:00:24.000" tts:direction="ltr">typically your company's data,</p>
+        <p begin="00:00:24.000" end="00:00:26.875" tts:direction="ltr">and comparing it against the competition.</p>
+        <p begin="00:00:26.875" end="00:00:29.670" tts:direction="ltr">It could also just be maybe</p>
+        <p begin="00:00:29.670" end="00:00:36.510" tts:direction="ltr">different regions that you're comparing
+<br />within your own company.</p>
+        <p begin="00:00:36.510" end="00:00:39.990" tts:direction="ltr">But often, it is a way to improve your
+<br />performance.</p>
+        <p begin="00:00:39.990" end="00:00:41.910" tts:direction="ltr">And looking at your competition,</p>
+        <p begin="00:00:41.910" end="00:00:46.410" tts:direction="ltr">it identifies potential strengths that you
+<br />have in the market,</p>
+        <p begin="00:00:46.410" end="00:00:48.730" tts:direction="ltr">weaknesses in the market.</p>
+        <p begin="00:00:48.730" end="00:00:52.310" tts:direction="ltr">Then of course, optimizing your business
+<br />strategy,</p>
+        <p begin="00:00:52.310" end="00:00:56.610" tts:direction="ltr">it really depends on the variables that
+<br />you're choosing to look at.</p>
+        <p begin="00:00:56.610" end="00:00:59.070" tts:direction="ltr">An example of benchmarking might be
+<br />something</p>
+        <p begin="00:00:59.070" end="00:01:01.970" tts:direction="ltr">like a call center might benchmark</p>
+        <p begin="00:01:01.970" end="00:01:04.650" tts:direction="ltr">its customer satisfaction ratings by
+<br />asking</p>
+        <p begin="00:01:04.650" end="00:01:08.850" tts:direction="ltr">customers to rate their service based on
+<br />their experiences.</p>
+        <p begin="00:01:08.850" end="00:01:11.410" tts:direction="ltr">Other example is maybe in health care.</p>
+        <p begin="00:01:11.410" end="00:01:14.190" tts:direction="ltr">Benchmarking means comparing the
+<br />performance of</p>
+        <p begin="00:01:14.190" end="00:01:18.070" tts:direction="ltr">an organization or clinician to others.</p>
+        <p begin="00:01:18.070" end="00:01:23.510" tts:direction="ltr">We can do it on a very micro level or
+<br />macro level.</p>
+        <p begin="00:01:23.510" end="00:01:27.710" tts:direction="ltr">When we're thinking about this
+<br />benchmarking principle,</p>
+        <p begin="00:01:29.350" end="00:01:32.150" tts:direction="ltr">we're going to go ahead and use</p>
+        <p begin="00:01:32.150" end="00:01:37.210" tts:direction="ltr">the World Cup data because it's just great
+<br />we can just slice it and dice it,</p>
+        <p begin="00:01:37.210" end="00:01:39.410" tts:direction="ltr">it and compare it in a lot of different
+<br />ways.</p>
+        <p begin="00:01:39.410" end="00:01:43.790" tts:direction="ltr">We're looking at ways that we can look at
+<br />two teams across</p>
+        <p begin="00:01:43.790" end="00:01:49.890" tts:direction="ltr">positions and values and maybe even make
+<br />multiple selections.</p>
+        <p begin="00:01:49.890" end="00:01:57.450" tts:direction="ltr">And how we can into our right here.</p>
+        <p begin="00:01:57.450" end="00:02:01.430" tts:direction="ltr">We'll just delete that that. We're going
+<br />to check that out in this demo.</p>
+        <p begin="00:02:01.430" end="00:02:05.570" tts:direction="ltr">Okay, let's go ahead and get</p>
+        <p begin="00:02:05.570" end="00:02:14.370" tts:direction="ltr">started and determine how we can create
+<br />some of this awesome benchmarking.</p>
+        <p begin="00:02:14.370" end="00:02:18.290" tts:direction="ltr">We're on the start file here.</p>
+        <p begin="00:02:18.290" end="00:02:21.270" tts:direction="ltr">You should be on comparison of player.</p>
+        <p begin="00:02:21.270" end="00:02:28.310" tts:direction="ltr">What we want to do is we want to create
+<br />two measures and the market value.</p>
+        <p begin="00:02:28.310" end="00:02:30.230" tts:direction="ltr">But right now we just have one.</p>
+        <p begin="00:02:30.230" end="00:02:36.240" tts:direction="ltr">We'll do that creating some sets.</p>
+        <p begin="00:02:36.240" end="00:02:40.580" tts:direction="ltr">Okay. What we'll do is we're going to do
+<br />that by country.</p>
+        <p begin="00:02:40.580" end="00:02:43.340" tts:direction="ltr">I'm going to do this country drop down,</p>
+        <p begin="00:02:43.340" end="00:02:45.360" tts:direction="ltr">and we're going to create a set.</p>
+        <p begin="00:02:45.360" end="00:02:49.700" tts:direction="ltr">And we'll go ahead and call this country
+<br />one.</p>
+        <p begin="00:02:50.540" end="00:02:53.700" tts:direction="ltr">We'll just, the first country,</p>
+        <p begin="00:02:53.700" end="00:02:56.620" tts:direction="ltr">okay, This doesn't matter once we add it
+<br />dynamically.</p>
+        <p begin="00:02:56.620" end="00:02:59.360" tts:direction="ltr">But for now we'll just say that's
+<br />Argentina.</p>
+        <p begin="00:02:59.360" end="00:03:02.680" tts:direction="ltr">Then we're going to create a country
+<br />number two.</p>
+        <p begin="00:03:02.680" end="00:03:05.260" tts:direction="ltr">We're going to create another set.</p>
+        <p begin="00:03:05.260" end="00:03:12.320" tts:direction="ltr">We'll say this one, country two, we'll
+<br />select Australia.</p>
+        <p begin="00:03:12.320" end="00:03:17.040" tts:direction="ltr">Now I've got two countries, my two sets.</p>
+        <p begin="00:03:17.040" end="00:03:19.720" tts:direction="ltr">I'm going to go ahead and bring market
+<br />value,</p>
+        <p begin="00:03:19.720" end="00:03:23.860" tts:direction="ltr">this measure, up onto columns.</p>
+        <p begin="00:03:23.860" end="00:03:29.860" tts:direction="ltr">Then I'm going to bring just the regular
+<br />country onto rows.</p>
+        <p begin="00:03:29.860" end="00:03:33.200" tts:direction="ltr">Okay, I've got a simple bar chart here.</p>
+        <p begin="00:03:33.200" end="00:03:36.460" tts:direction="ltr">We're going to create these two measures</p>
+        <p begin="00:03:36.460" end="00:03:40.840" tts:direction="ltr">by creating some charts similar to what
+<br />we've done in another video.</p>
+        <p begin="00:03:40.840" end="00:03:44.540" tts:direction="ltr">We'll go ahead and we will,</p>
+        <p begin="00:03:44.540" end="00:03:49.900" tts:direction="ltr">I want to slice out that market value
+<br />measure.</p>
+        <p begin="00:03:49.900" end="00:03:52.540" tts:direction="ltr">Then we can do this through</p>
+        <p begin="00:03:52.540" end="00:03:55.760" tts:direction="ltr">a conditional calculation that will</p>
+        <p begin="00:03:55.760" end="00:04:00.360" tts:direction="ltr">return the market value if the country is
+<br />in the set.</p>
+        <p begin="00:04:00.360" end="00:04:04.460" tts:direction="ltr">Just hang with me. But we're going to
+<br />create a calculated field.</p>
+        <p begin="00:04:04.460" end="00:04:08.840" tts:direction="ltr">We'll do that by doing the drop down menu,
+<br />Create Calculated Field.</p>
+        <p begin="00:04:08.840" end="00:04:14.220" tts:direction="ltr">What we'll do that's on the screen is that
+<br />first of all,</p>
+        <p begin="00:04:14.220" end="00:04:18.860" tts:direction="ltr">we'll name this Market Value, Country one.</p>
+        <p begin="00:04:18.940" end="00:04:22.260" tts:direction="ltr">We'll do an F then clause,</p>
+        <p begin="00:04:22.260" end="00:04:29.920" tts:direction="ltr">country one, then market value.</p>
+        <p begin="00:04:29.920" end="00:04:33.700" tts:direction="ltr">Okay. And then we'll say,</p>
+        <p begin="00:04:34.820" end="00:04:37.800" tts:direction="ltr">okay, there we go.</p>
+        <p begin="00:04:37.800" end="00:04:39.160" tts:direction="ltr">We've got that.</p>
+        <p begin="00:04:39.160" end="00:04:47.000" tts:direction="ltr">What we're going to do is we're going to
+<br />drag this onto columns to,</p>
+        <p begin="00:04:47.000" end="00:04:50.820" tts:direction="ltr">if I can move my mouse up a little higher.</p>
+        <p begin="00:04:50.820" end="00:04:55.460" tts:direction="ltr">Okay, Now you can see here I've got
+<br />Argentina.</p>
+        <p begin="00:04:55.460" end="00:04:57.880" tts:direction="ltr">And I've got it just sliced out.</p>
+        <p begin="00:04:57.880" end="00:05:00.500" tts:direction="ltr">Right? That's what I want because</p>
+        <p begin="00:05:00.500" end="00:05:02.880" tts:direction="ltr">we're going to make those measures from
+<br />here.</p>
+        <p begin="00:05:02.880" end="00:05:05.920" tts:direction="ltr">All right. Now we're going to do this for
+<br />country two.</p>
+        <p begin="00:05:05.920" end="00:05:09.540" tts:direction="ltr">The way I'm going to do this is I'm going
+<br />to go right here.</p>
+        <p begin="00:05:09.540" end="00:05:11.900" tts:direction="ltr">Where I had Market Value Country One.</p>
+        <p begin="00:05:11.900" end="00:05:14.420" tts:direction="ltr">And I'm just going to Duplicate that.</p>
+        <p begin="00:05:14.540" end="00:05:19.880" tts:direction="ltr">Then I'm going to edit it just to make
+<br />things easy.</p>
+        <p begin="00:05:19.880" end="00:05:24.740" tts:direction="ltr">Then I'm going to call that Mac value two
+<br />and then change that to two.</p>
+        <p begin="00:05:24.740" end="00:05:26.940" tts:direction="ltr">Look at shortcuts are great.</p>
+        <p begin="00:05:26.940" end="00:05:28.680" tts:direction="ltr">Then I'm going to put okay,</p>
+        <p begin="00:05:28.680" end="00:05:30.220" tts:direction="ltr">and guess what I'm going to do.</p>
+        <p begin="00:05:30.220" end="00:05:33.080" tts:direction="ltr">Yep, you're right. I'm going to bring that
+<br />over here.</p>
+        <p begin="00:05:33.080" end="00:05:35.000" tts:direction="ltr">Now I have that third one.</p>
+        <p begin="00:05:35.000" end="00:05:38.440" tts:direction="ltr">Okay. Then I have Australia there.</p>
+        <p begin="00:05:38.440" end="00:05:40.780" tts:direction="ltr">Now we have our two measures,</p>
+        <p begin="00:05:40.780" end="00:05:43.920" tts:direction="ltr">but right now they're in different rows.</p>
+        <p begin="00:05:43.920" end="00:05:46.340" tts:direction="ltr">We're slicing by country.</p>
+        <p begin="00:05:46.340" end="00:05:51.880" tts:direction="ltr">But if you remove Country,</p>
+        <p begin="00:05:51.880" end="00:05:55.280" tts:direction="ltr">so we'll remove Country,</p>
+        <p begin="00:05:55.280" end="00:06:00.600" tts:direction="ltr">we will remove the market value here.</p>
+        <p begin="00:06:00.600" end="00:06:04.220" tts:direction="ltr">Instead, we're going to bring one of these
+<br />measures down to</p>
+        <p begin="00:06:04.220" end="00:06:08.700" tts:direction="ltr">the rows and we are going to be making a
+<br />scatter plot.</p>
+        <p begin="00:06:08.700" end="00:06:12.340" tts:direction="ltr">Okay, we're going to be slicing.</p>
+        <p begin="00:06:12.620" end="00:06:16.520" tts:direction="ltr">What we're going to be adding in this
+<br />information</p>
+        <p begin="00:06:16.520" end="00:06:22.300" tts:direction="ltr">here to increase this comparison of
+<br />players.</p>
+        <p begin="00:06:23.180" end="00:06:29.020" tts:direction="ltr">Let's see. What we'll do next is we will
+<br />put,</p>
+        <p begin="00:06:29.100" end="00:06:32.340" tts:direction="ltr">let's put position on detail.</p>
+        <p begin="00:06:32.340" end="00:06:36.480" tts:direction="ltr">Okay, now I've got my country.</p>
+        <p begin="00:06:36.480" end="00:06:41.260" tts:direction="ltr">Okay, let's go ahead and swap these axes
+<br />by just clicking this little button.</p>
+        <p begin="00:06:41.260" end="00:06:44.440" tts:direction="ltr">I've got my country one here on the y
+<br />axis,</p>
+        <p begin="00:06:44.440" end="00:06:48.200" tts:direction="ltr">my country MV, country two.</p>
+        <p begin="00:06:48.200" end="00:06:51.480" tts:direction="ltr">Market value. We're going to go ahead and
+<br />change</p>
+        <p begin="00:06:51.480" end="00:06:56.060" tts:direction="ltr">this from Automatic to a circle so that I
+<br />can be filled in.</p>
+        <p begin="00:06:56.870" end="00:07:01.970" tts:direction="ltr">That's looking good. If I just roll over
+<br />right here.</p>
+        <p begin="00:07:01.970" end="00:07:04.610" tts:direction="ltr">What I'm seeing here is that this is</p>
+        <p begin="00:07:04.610" end="00:07:07.750" tts:direction="ltr">actually for Argentina because it's on
+<br />that country one,</p>
+        <p begin="00:07:07.750" end="00:07:14.730" tts:direction="ltr">it's saying that right wing value is 235
+<br />million point.</p>
+        <p begin="00:07:14.730" end="00:07:17.830" tts:direction="ltr">$8,000,000 million pounds. 1 million
+<br />pounds,</p>
+        <p begin="00:07:17.830" end="00:07:21.750" tts:direction="ltr">I believe is what we're working in quite a
+<br />bit of money.</p>
+        <p begin="00:07:21.750" end="00:07:27.810" tts:direction="ltr">And then the country two is 4.05 million
+<br />pounds.</p>
+        <p begin="00:07:27.810" end="00:07:34.710" tts:direction="ltr">Okay, That's quite a bit and that's
+<br />because our aggregation is sum.</p>
+        <p begin="00:07:34.710" end="00:07:38.030" tts:direction="ltr">I'm going to go and change those to
+<br />averages.</p>
+        <p begin="00:07:38.030" end="00:07:42.470" tts:direction="ltr">Work in averages. I think that will be
+<br />more accurate here.</p>
+        <p begin="00:07:42.470" end="00:07:44.270" tts:direction="ltr">We've got both of those changes.</p>
+        <p begin="00:07:44.270" end="00:07:46.150" tts:direction="ltr">A averages, if I go back here,</p>
+        <p begin="00:07:46.150" end="00:07:48.370" tts:direction="ltr">yeah, that looks a lot better.</p>
+        <p begin="00:07:48.370" end="00:07:51.550" tts:direction="ltr">Okay, that's a better reflection.</p>
+        <p begin="00:07:51.550" end="00:07:54.670" tts:direction="ltr">Now what we'll need to do is we need to</p>
+        <p begin="00:07:54.670" end="00:08:00.930" tts:direction="ltr">calculate the difference between these
+<br />two.</p>
+        <p begin="00:08:00.930" end="00:08:05.550" tts:direction="ltr">What we'll do is we're going to create
+<br />another calculated field.</p>
+        <p begin="00:08:05.550" end="00:08:10.850" tts:direction="ltr">This time we'll call it difference right
+<br />here.</p>
+        <p begin="00:08:10.850" end="00:08:15.210" tts:direction="ltr">I'm just going to go ahead and just drag
+<br />country number one,</p>
+        <p begin="00:08:15.210" end="00:08:20.430" tts:direction="ltr">and then I'm going to do the minus sign
+<br />and drag country number two.</p>
+        <p begin="00:08:21.270" end="00:08:25.170" tts:direction="ltr">Now I've got that calculation, I'm going
+<br />to put that,</p>
+        <p begin="00:08:25.170" end="00:08:30.110" tts:direction="ltr">okay, I'm going to bring that difference
+<br />up onto color.</p>
+        <p begin="00:08:30.110" end="00:08:34.770" tts:direction="ltr">Okay. You can see just a little bit of
+<br />color down there,</p>
+        <p begin="00:08:34.770" end="00:08:37.510" tts:direction="ltr">but that's great. That's fine.</p>
+        <p begin="00:08:37.670" end="00:08:45.350" tts:direction="ltr">One of the things that I want to do is I
+<br />want to now add</p>
+        <p begin="00:08:45.350" end="00:08:53.210" tts:direction="ltr">player on to measure to create it to be a
+<br />variable within the scatter plot.</p>
+        <p begin="00:08:53.210" end="00:08:56.950" tts:direction="ltr">But the first thing I want to do is I'm
+<br />going to take</p>
+        <p begin="00:08:56.950" end="00:09:02.550" tts:direction="ltr">player and I'm going to convert it from a
+<br />dimension to measure.</p>
+        <p begin="00:09:02.550" end="00:09:05.930" tts:direction="ltr">If I convert it to a measure, comes down
+<br />here.</p>
+        <p begin="00:09:05.930" end="00:09:09.610" tts:direction="ltr">What that's done is that now is doing a
+<br />distinct count.</p>
+        <p begin="00:09:09.610" end="00:09:12.370" tts:direction="ltr">It's counting each individual player.</p>
+        <p begin="00:09:12.370" end="00:09:20.850" tts:direction="ltr">If I were to put that, let's put that on
+<br />size, let's put it on size.</p>
+        <p begin="00:09:20.850" end="00:09:28.490" tts:direction="ltr">What it's doing here now is that it's
+<br />counting every single player,</p>
+        <p begin="00:09:28.490" end="00:09:33.335" tts:direction="ltr">not just the players from Argentina and
+<br />Australia.</p>
+        <p begin="00:09:33.335" end="00:09:36.420" tts:direction="ltr">What does that mean? I need to create a
+<br />filter.</p>
+        <p begin="00:09:36.420" end="00:09:39.620" tts:direction="ltr">We're going to do that as a calculated
+<br />field.</p>
+        <p begin="00:09:39.620" end="00:09:41.980" tts:direction="ltr">We're going to create another calculated
+<br />field.</p>
+        <p begin="00:09:41.980" end="00:09:43.500" tts:direction="ltr">Love our calculated fields.</p>
+        <p begin="00:09:43.500" end="00:09:45.840" tts:direction="ltr">We're going to call this one filter.</p>
+        <p begin="00:09:47.680" end="00:09:51.660" tts:direction="ltr">This filter will remove all the other
+<br />countries except for</p>
+        <p begin="00:09:51.660" end="00:09:54.980" tts:direction="ltr">the ones that we are showing Australia.</p>
+        <p begin="00:09:54.980" end="00:09:59.120" tts:direction="ltr">And what's the other one?</p>
+        <p begin="00:09:59.120" end="00:10:03.920" tts:direction="ltr">Argentina. Thank you. Instead of using an
+<br />And logic,</p>
+        <p begin="00:10:03.920" end="00:10:07.040" tts:direction="ltr">we're going to go ahead and use or logic
+<br />in our equation.</p>
+        <p begin="00:10:07.040" end="00:10:08.880" tts:direction="ltr">Here we're going to,</p>
+        <p begin="00:10:08.880" end="00:10:14.600" tts:direction="ltr">we'll say country one or.</p>
+        <p begin="00:10:15.720" end="00:10:21.100" tts:direction="ltr">Country to. Okay?</p>
+        <p begin="00:10:21.100" end="00:10:26.360" tts:direction="ltr">We'll say okay. And we'll just put that
+<br />onto the filter.</p>
+        <p begin="00:10:26.360" end="00:10:29.640" tts:direction="ltr">Okay. And we'll say that is true.</p>
+        <p begin="00:10:29.720" end="00:10:34.760" tts:direction="ltr">Now I have only five players and six
+<br />players.</p>
+        <p begin="00:10:34.760" end="00:10:36.360" tts:direction="ltr">Now if I go into the data,</p>
+        <p begin="00:10:36.360" end="00:10:40.600" tts:direction="ltr">you can do that by clicking on this and
+<br />you can see the full data.</p>
+        <p begin="00:10:40.600" end="00:10:45.820" tts:direction="ltr">Then you can begin to see where those
+<br />players are from. Argentina.</p>
+        <p begin="00:10:45.820" end="00:10:52.400" tts:direction="ltr">And let's go and make sure we've got
+<br />country on here.</p>
+        <p begin="00:10:52.400" end="00:10:56.840" tts:direction="ltr">You can look at the country and see that
+<br />they're from Argentina and Australia.</p>
+        <p begin="00:10:56.840" end="00:11:02.540" tts:direction="ltr">Okay. All right, so we've applied a filter
+<br />calculation.</p>
+        <p begin="00:11:03.500" end="00:11:07.500" tts:direction="ltr">We are now ready.</p>
+        <p begin="00:11:08.260" end="00:11:16.020" tts:direction="ltr">Let's see. Let's go ahead and add,</p>
+        <p begin="00:11:17.700" end="00:11:22.120" tts:direction="ltr">we're going to create a set action, but we
+<br />want to do this.</p>
+        <p begin="00:11:22.120" end="00:11:26.240" tts:direction="ltr">We need some additional variables for our
+<br />dashboard.</p>
+        <p begin="00:11:26.240" end="00:11:29.420" tts:direction="ltr">So we're going to do this by doing the
+<br />country,</p>
+        <p begin="00:11:29.900" end="00:11:34.520" tts:direction="ltr">we're going to make a heat map like
+<br />Legend.</p>
+        <p begin="00:11:34.520" end="00:11:38.840" tts:direction="ltr">I saw this at</p>
+        <p begin="00:11:38.840" end="00:11:41.180" tts:direction="ltr">the Tableau conference and I</p>
+        <p begin="00:11:41.180" end="00:11:44.500" tts:direction="ltr">was like pretty excited because I think
+<br />it's a pretty cool trick.</p>
+        <p begin="00:11:44.500" end="00:11:49.500" tts:direction="ltr">We're going to do that here for this
+<br />interaction,</p>
+        <p begin="00:11:49.500" end="00:11:51.360" tts:direction="ltr">for this benchmarking here.</p>
+        <p begin="00:11:51.360" end="00:11:54.840" tts:direction="ltr">What we'll do is we'll bring market value.</p>
+        <p begin="00:11:54.840" end="00:11:57.540" tts:direction="ltr">We'll just bring that onto color for now.</p>
+        <p begin="00:11:57.540" end="00:12:05.960" tts:direction="ltr">On the Marks card, we'll change this from
+<br />to an average.</p>
+        <p begin="00:12:05.960" end="00:12:10.660" tts:direction="ltr">Okay. Then we'll bring Country.</p>
+        <p begin="00:12:10.940" end="00:12:15.580" tts:direction="ltr">No, no, no. Yeah. Country Country Onto
+<br />here.</p>
+        <p begin="00:12:15.620" end="00:12:20.680" tts:direction="ltr">Nope, That's not what I want to do then.</p>
+        <p begin="00:12:20.680" end="00:12:27.660" tts:direction="ltr">I want to do country onto row.</p>
+        <p begin="00:12:27.660" end="00:12:29.560" tts:direction="ltr">Let's just do Country onto row.</p>
+        <p begin="00:12:29.560" end="00:12:31.680" tts:direction="ltr">We're only going to have the names of the
+<br />country.</p>
+        <p begin="00:12:31.680" end="00:12:35.140" tts:direction="ltr">We don't want the latitude and longitude.</p>
+        <p begin="00:12:35.140" end="00:12:39.120" tts:direction="ltr">Okay, What we'll do is we'll change this
+<br />from a Pi,</p>
+        <p begin="00:12:39.120" end="00:12:41.020" tts:direction="ltr">not quite sure it's a.</p>
+        <p begin="00:12:41.020" end="00:12:44.700" tts:direction="ltr">And we'll change that to a square.</p>
+        <p begin="00:12:45.040" end="00:12:47.320" tts:direction="ltr">We'll move this from entire view,</p>
+        <p begin="00:12:47.320" end="00:12:48.740" tts:direction="ltr">I don't know where yours is at.</p>
+        <p begin="00:12:48.740" end="00:12:51.640" tts:direction="ltr">We'll just do standard for right now.</p>
+        <p begin="00:12:51.720" end="00:12:55.480" tts:direction="ltr">This is the cool part, At least I thought
+<br />it was.</p>
+        <p begin="00:12:55.480" end="00:12:58.700" tts:direction="ltr">We'll go ahead and duplicate by either
+<br />hitting command on</p>
+        <p begin="00:12:58.700" end="00:13:03.280" tts:direction="ltr">Mac or controller and PC the country onto
+<br />label.</p>
+        <p begin="00:13:03.400" end="00:13:08.600" tts:direction="ltr">Okay, then what we'll do is,</p>
+        <p begin="00:13:10.800" end="00:13:14.040" tts:direction="ltr">let's see, I'll select this,</p>
+        <p begin="00:13:15.360" end="00:13:19.320" tts:direction="ltr">we remove the header.</p>
+        <p begin="00:13:19.320" end="00:13:28.260" tts:direction="ltr">Okay, then if I go into the label and I
+<br />change my alignment to be centered,</p>
+        <p begin="00:13:28.260" end="00:13:30.360" tts:direction="ltr">okay, that's looking pretty good.</p>
+        <p begin="00:13:30.360" end="00:13:31.960" tts:direction="ltr">Maybe I'll make that a little bit larger.</p>
+        <p begin="00:13:31.960" end="00:13:36.380" tts:direction="ltr">Okay, That's a cool way to have these</p>
+        <p begin="00:13:36.380" end="00:13:42.180" tts:direction="ltr">individually selected within in that
+<br />field.</p>
+        <p begin="00:13:42.180" end="00:13:43.780" tts:direction="ltr">Okay. Now we're going to make</p>
+        <p begin="00:13:43.780" end="00:13:46.380" tts:direction="ltr">another one because we've got one for the
+<br />y axes,</p>
+        <p begin="00:13:46.380" end="00:13:48.000" tts:direction="ltr">now we need the left one.</p>
+        <p begin="00:13:48.000" end="00:13:53.660" tts:direction="ltr">I'm going to do maduplicate this one, this
+<br />sheet.</p>
+        <p begin="00:13:53.660" end="00:13:56.360" tts:direction="ltr">I've got this one I'm going to call.</p>
+        <p begin="00:13:56.360" end="00:14:01.640" tts:direction="ltr">This is going to be for country number two
+<br />here.</p>
+        <p begin="00:14:01.640" end="00:14:05.200" tts:direction="ltr">I'm going to flip it right here.</p>
+        <p begin="00:14:06.000" end="00:14:09.960" tts:direction="ltr">Then I'll make it just a little bit
+<br />larger.</p>
+        <p begin="00:14:11.880" end="00:14:17.640" tts:direction="ltr">I'm going to move the label to be centered
+<br />still.</p>
+        <p begin="00:14:17.640" end="00:14:22.120" tts:direction="ltr">But let's make it so you can read it
+<br />vertical,</p>
+        <p begin="00:14:23.040" end="00:14:26.580" tts:direction="ltr">then I'm going to actually fit width,</p>
+        <p begin="00:14:26.580" end="00:14:34.640" tts:direction="ltr">so I can squeeze all of those in because
+<br />this has this difference here.</p>
+        <p begin="00:14:34.640" end="00:14:38.880" tts:direction="ltr">And I can see I've got this orange, blue
+<br />range.</p>
+        <p begin="00:14:38.880" end="00:14:41.160" tts:direction="ltr">I'm going to make this orange.</p>
+        <p begin="00:14:41.160" end="00:14:48.100" tts:direction="ltr">I'm going to go to color it automatic
+<br />orange.</p>
+        <p begin="00:14:48.100" end="00:14:51.640" tts:direction="ltr">We'll apply that. Okay. Looking good.</p>
+        <p begin="00:14:51.640" end="00:14:55.000" tts:direction="ltr">We've got that one. That one, great.</p>
+        <p begin="00:14:55.000" end="00:15:01.920" tts:direction="ltr">Now let's do some magic and make the
+<br />dashboard okay.</p>
+        <p begin="00:15:02.280" end="00:15:06.680" tts:direction="ltr">What we'll do is we're going to drag that
+<br />scatter plot,</p>
+        <p begin="00:15:06.680" end="00:15:09.500" tts:direction="ltr">first of all, that comparison onto the
+<br />view.</p>
+        <p begin="00:15:09.500" end="00:15:12.480" tts:direction="ltr">I'm going to go ahead and gosh,</p>
+        <p begin="00:15:12.480" end="00:15:14.640" tts:direction="ltr">I wish that was a little bit bigger for
+<br />you guys.</p>
+        <p begin="00:15:14.640" end="00:15:21.400" tts:direction="ltr">Close those off. Then we'll bring in that
+<br />country one,</p>
+        <p begin="00:15:21.400" end="00:15:26.960" tts:direction="ltr">remember that's that y axes pay attention
+<br />to all of that.</p>
+        <p begin="00:15:26.960" end="00:15:31.040" tts:direction="ltr">I'll have that there. And then the country
+<br />two,</p>
+        <p begin="00:15:31.800" end="00:15:35.220" tts:direction="ltr">just let that float underneath.</p>
+        <p begin="00:15:35.220" end="00:15:38.840" tts:direction="ltr">Again, I'm just trying to remove some of
+<br />this.</p>
+        <p begin="00:15:38.840" end="00:15:40.880" tts:direction="ltr">Let's see why.</p>
+        <p begin="00:15:40.880" end="00:15:42.540" tts:direction="ltr">I guess that's in a container.</p>
+        <p begin="00:15:42.540" end="00:15:44.420" tts:direction="ltr">We'll delete that container.</p>
+        <p begin="00:15:44.420" end="00:15:48.120" tts:direction="ltr">Now what I'm going to do here is do a
+<br />little work.</p>
+        <p begin="00:15:48.120" end="00:15:49.940" tts:direction="ltr">I'm going to do this drop down arrow,</p>
+        <p begin="00:15:49.940" end="00:15:51.700" tts:direction="ltr">I'm going to remove the title.</p>
+        <p begin="00:15:51.700" end="00:15:53.900" tts:direction="ltr">Drop down arrow, go to fit.</p>
+        <p begin="00:15:53.900" end="00:15:56.760" tts:direction="ltr">And I'm going to say entire view.</p>
+        <p begin="00:15:56.880" end="00:16:00.860" tts:direction="ltr">I can also squish that over. Right.</p>
+        <p begin="00:16:00.860" end="00:16:03.280" tts:direction="ltr">Let's do the same thing over here.</p>
+        <p begin="00:16:03.280" end="00:16:06.500" tts:direction="ltr">Drop down arrow, remove the title.</p>
+        <p begin="00:16:06.500" end="00:16:11.300" tts:direction="ltr">Drop down arrow, fits entire view,</p>
+        <p begin="00:16:11.300" end="00:16:14.240" tts:direction="ltr">and we'll make that smaller.</p>
+        <p begin="00:16:14.240" end="00:16:24.340" tts:direction="ltr">Two, want these to be what to do if I can
+<br />get it to work the same.</p>
+        <p begin="00:16:24.340" end="00:16:27.920" tts:direction="ltr">Sometimes I just get frustrated with.</p>
+        <p begin="00:16:27.920" end="00:16:30.880" tts:direction="ltr">Okay, now what I need to do though,</p>
+        <p begin="00:16:30.880" end="00:16:33.320" tts:direction="ltr">this is not right, because I don't need
+<br />Senegal.</p>
+        <p begin="00:16:33.320" end="00:16:36.360" tts:direction="ltr">I need to speak up higher. So I need to
+<br />bring a blank in.</p>
+        <p begin="00:16:36.360" end="00:16:39.380" tts:direction="ltr">The blank needs to go just right there.</p>
+        <p begin="00:16:39.380" end="00:16:46.700" tts:direction="ltr">And then I'm going to make that blank even
+<br />with that one. See, that works.</p>
+        <p begin="00:16:46.700" end="00:16:52.420" tts:direction="ltr">Okay, I can actually go back in here.</p>
+        <p begin="00:16:52.420" end="00:16:55.680" tts:direction="ltr">Let's go ahead and remove that header.</p>
+        <p begin="00:16:56.440" end="00:16:59.320" tts:direction="ltr">I think I don't need that.</p>
+        <p begin="00:16:59.320" end="00:17:01.780" tts:direction="ltr">Okay. All right.</p>
+        <p begin="00:17:01.780" end="00:17:03.160" tts:direction="ltr">I've got some nulls too.</p>
+        <p begin="00:17:03.160" end="00:17:04.580" tts:direction="ltr">I could probably get rid of those.</p>
+        <p begin="00:17:04.580" end="00:17:08.600" tts:direction="ltr">I'm sure that that is just both on both of
+<br />those axes,</p>
+        <p begin="00:17:08.600" end="00:17:10.520" tts:direction="ltr">one of those variables being missed.</p>
+        <p begin="00:17:10.520" end="00:17:12.440" tts:direction="ltr">Okay. All right.</p>
+        <p begin="00:17:12.440" end="00:17:15.300" tts:direction="ltr">Actually let's for now,</p>
+        <p begin="00:17:15.300" end="00:17:19.120" tts:direction="ltr">we'll decide that title to just keep the
+<br />stuff in there now.</p>
+        <p begin="00:17:19.120" end="00:17:23.980" tts:direction="ltr">Everything is static and what is the next
+<br />thing that we need to do?</p>
+        <p begin="00:17:23.980" end="00:17:26.080" tts:direction="ltr">Oh wow, Look at happened.</p>
+        <p begin="00:17:26.080" end="00:17:33.980" tts:direction="ltr">Let me make that better, okay?</p>
+        <p begin="00:17:33.980" end="00:17:36.360" tts:direction="ltr">All right, so what are we going to do?</p>
+        <p begin="00:17:36.360" end="00:17:38.500" tts:direction="ltr">That's right, those dashboard actions.</p>
+        <p begin="00:17:38.500" end="00:17:42.040" tts:direction="ltr">Let's go ahead and go to Dashboard and
+<br />Actions.</p>
+        <p begin="00:17:42.040" end="00:17:46.180" tts:direction="ltr">We're going to add an action change set,
+<br />values.</p>
+        <p begin="00:17:46.180" end="00:17:49.600" tts:direction="ltr">The first one was, we're going to do it on
+<br />Country one.</p>
+        <p begin="00:17:49.600" end="00:17:54.760" tts:direction="ltr">Our target set is that data set with our
+<br />country one.</p>
+        <p begin="00:17:54.760" end="00:17:56.860" tts:direction="ltr">Okay, we've got that.</p>
+        <p begin="00:17:56.860" end="00:17:59.420" tts:direction="ltr">Now we're going to add another action,</p>
+        <p begin="00:17:59.420" end="00:18:03.120" tts:direction="ltr">same set, action, country two,</p>
+        <p begin="00:18:03.120" end="00:18:06.380" tts:direction="ltr">Target action, country two.</p>
+        <p begin="00:18:06.380" end="00:18:09.240" tts:direction="ltr">All right, and apply.</p>
+        <p begin="00:18:09.240" end="00:18:17.480" tts:direction="ltr">I'm going to just go into the screen here
+<br />so we can see if I select Argentina.</p>
+        <p begin="00:18:18.880" end="00:18:24.680" tts:direction="ltr">Let's go back what's happening.</p>
+        <p begin="00:18:26.360" end="00:18:29.540" tts:direction="ltr">Okay, so that's now working.</p>
+        <p begin="00:18:29.540" end="00:18:32.440" tts:direction="ltr">I wonder why it wasn't selected before.</p>
+        <p begin="00:18:32.440" end="00:18:36.060" tts:direction="ltr">Let me go back. All right. Okay.</p>
+        <p begin="00:18:36.060" end="00:18:39.040" tts:direction="ltr">Some reason wasn't activating quite yet.</p>
+        <p begin="00:18:39.040" end="00:18:40.940" tts:direction="ltr">So I've got England selected and</p>
+        <p begin="00:18:40.940" end="00:18:46.880" tts:direction="ltr">Costa Rica all I've got England selected
+<br />and Ireland.</p>
+        <p begin="00:18:47.240" end="00:18:50.500" tts:direction="ltr">I should be able to see both of those.</p>
+        <p begin="00:18:50.500" end="00:18:57.620" tts:direction="ltr">What's happening right now is our lower
+<br />numbers and these are higher numbers.</p>
+        <p begin="00:18:57.620" end="00:19:00.580" tts:direction="ltr">We're going to improve this view.</p>
+        <p begin="00:19:00.580" end="00:19:03.000" tts:direction="ltr">Let me just go back,</p>
+        <p begin="00:19:03.400" end="00:19:06.580" tts:direction="ltr">maybe I'll just have some selected so I
+<br />can</p>
+        <p begin="00:19:06.580" end="00:19:10.020" tts:direction="ltr">see when I'm working on them what's
+<br />happening here.</p>
+        <p begin="00:19:10.020" end="00:19:13.560" tts:direction="ltr">We're going to go back into this
+<br />comparison of</p>
+        <p begin="00:19:13.560" end="00:19:18.640" tts:direction="ltr">player and do another little fancy trick.</p>
+        <p begin="00:19:18.640" end="00:19:25.480" tts:direction="ltr">Basically, we need to divide the ax in
+<br />two.</p>
+        <p begin="00:19:27.320" end="00:19:30.740" tts:direction="ltr">We want to be able to say, okay,</p>
+        <p begin="00:19:30.740" end="00:19:32.880" tts:direction="ltr">over here is this blue zone,</p>
+        <p begin="00:19:32.880" end="00:19:34.140" tts:direction="ltr">and this is the orange zone.</p>
+        <p begin="00:19:34.140" end="00:19:39.500" tts:direction="ltr">The first thing I want to do is go into my
+<br />colors and edit those.</p>
+        <p begin="00:19:39.500" end="00:19:42.640" tts:direction="ltr">Go to advance, and I'm going to hard code</p>
+        <p begin="00:19:42.640" end="00:19:45.980" tts:direction="ltr">this zero as the center that doesn't
+<br />change.</p>
+        <p begin="00:19:45.980" end="00:19:53.020" tts:direction="ltr">Okay, let me go ahead and hide those then.</p>
+        <p begin="00:19:53.020" end="00:19:56.540" tts:direction="ltr">What we want to do, okay, let me just show
+<br />you.</p>
+        <p begin="00:19:56.540" end="00:19:59.240" tts:direction="ltr">If I were to bring a trend line in,</p>
+        <p begin="00:19:59.360" end="00:20:02.900" tts:direction="ltr">then you see that the trend line,</p>
+        <p begin="00:20:02.900" end="00:20:07.180" tts:direction="ltr">it's a statistical trend line that shows
+<br />you correlation.</p>
+        <p begin="00:20:07.180" end="00:20:11.740" tts:direction="ltr">But that's not what we want aren't
+<br />correlating, we're actually comparing.</p>
+        <p begin="00:20:11.740" end="00:20:15.020" tts:direction="ltr">But I want something to divide</p>
+        <p begin="00:20:15.020" end="00:20:20.080" tts:direction="ltr">this axes into two right quadrant so that
+<br />it's easier for my user to see.</p>
+        <p begin="00:20:20.080" end="00:20:22.400" tts:direction="ltr">Here's, here's our competitors,</p>
+        <p begin="00:20:22.400" end="00:20:25.500" tts:direction="ltr">here's where we're strong, all of that
+<br />good stuff.</p>
+        <p begin="00:20:25.500" end="00:20:30.280" tts:direction="ltr">What we're going to do is let's go A and
+<br />dig that. I'm going to take that off.</p>
+        <p begin="00:20:30.960" end="00:20:35.760" tts:direction="ltr">We want the equal to y.</p>
+        <p begin="00:20:36.240" end="00:20:39.800" tts:direction="ltr">The way that we're going to do that, we're
+<br />going to,</p>
+        <p begin="00:20:40.360" end="00:20:44.840" tts:direction="ltr">we're going to duplicate this row pill
+<br />command or</p>
+        <p begin="00:20:44.840" end="00:20:48.800" tts:direction="ltr">control and put it right here so we can
+<br />have this line.</p>
+        <p begin="00:20:48.800" end="00:20:51.500" tts:direction="ltr">Now by doing that, this is the same as,</p>
+        <p begin="00:20:51.500" end="00:20:53.760" tts:direction="ltr">this is country one.</p>
+        <p begin="00:20:53.760" end="00:20:55.760" tts:direction="ltr">This is that country one.</p>
+        <p begin="00:20:55.760" end="00:21:00.130" tts:direction="ltr">But we're going to do a little smoke and
+<br />mirrors.</p>
+        <p begin="00:21:00.130" end="00:21:03.180" tts:direction="ltr">We're going to go onto the Marks card.</p>
+        <p begin="00:21:03.180" end="00:21:06.680" tts:direction="ltr">We're going to select this chart, which is
+<br />this one right here.</p>
+        <p begin="00:21:06.680" end="00:21:09.000" tts:direction="ltr">We're going to take off both of these.</p>
+        <p begin="00:21:09.000" end="00:21:11.120" tts:direction="ltr">We're going to leave position here.</p>
+        <p begin="00:21:11.120" end="00:21:14.740" tts:direction="ltr">Then you can see I've got my gray circles.</p>
+        <p begin="00:21:14.740" end="00:21:23.780" tts:direction="ltr">If I go into color and reduce the opacity
+<br />to zero our border to none,</p>
+        <p begin="00:21:23.780" end="00:21:28.620" tts:direction="ltr">then voila, I've got nothing right there
+<br />now.</p>
+        <p begin="00:21:28.620" end="00:21:30.320" tts:direction="ltr">I see I have a tool tip.</p>
+        <p begin="00:21:30.320" end="00:21:33.100" tts:direction="ltr">I'm going to go into my tool tip.</p>
+        <p begin="00:21:33.100" end="00:21:39.760" tts:direction="ltr">I'm going to bring to just delete all of
+<br />that. Say okay.</p>
+        <p begin="00:21:39.760" end="00:21:42.500" tts:direction="ltr">All right. Now I've got nothing.</p>
+        <p begin="00:21:42.500" end="00:21:47.100" tts:direction="ltr">Then when I go into my analytics and drag
+<br />my trend line,</p>
+        <p begin="00:21:47.100" end="00:21:50.500" tts:direction="ltr">you see here, I can say I can do it on
+<br />this mark card or this.</p>
+        <p begin="00:21:50.500" end="00:21:52.360" tts:direction="ltr">I want the second mark card.</p>
+        <p begin="00:21:52.360" end="00:21:54.640" tts:direction="ltr">Then I've got my trend line.</p>
+        <p begin="00:21:54.640" end="00:21:57.500" tts:direction="ltr">This is exciting stuff, you guys,</p>
+        <p begin="00:21:57.500" end="00:22:03.500" tts:direction="ltr">Then I can take this pill and I can make a
+<br />dual axis.</p>
+        <p begin="00:22:03.540" end="00:22:07.220" tts:direction="ltr">Very cool. What I want to do now</p>
+        <p begin="00:22:07.220" end="00:22:14.460" tts:direction="ltr">is I'm going to right click that top one
+<br />and I want to synchronize my axis.</p>
+        <p begin="00:22:14.460" end="00:22:19.120" tts:direction="ltr">I've got everything working top to bottom.
+<br />All of that good stuff.</p>
+        <p begin="00:22:19.120" end="00:22:25.680" tts:direction="ltr">Then I'm going to go ahead and I'm going
+<br />to hide that. Okay?</p>
+        <p begin="00:22:25.680" end="00:22:30.000" tts:direction="ltr">All right. Okay. Now let's go back to our
+<br />dashboard.</p>
+        <p begin="00:22:30.000" end="00:22:31.880" tts:direction="ltr">Let me just escape a little bit.</p>
+        <p begin="00:22:31.880" end="00:22:33.680" tts:direction="ltr">So I've got everything along the line that</p>
+        <p begin="00:22:33.680" end="00:22:36.000" tts:direction="ltr">makes sense because I don't have anything
+<br />selected.</p>
+        <p begin="00:22:36.000" end="00:22:38.060" tts:direction="ltr">Now I have England selected,</p>
+        <p begin="00:22:38.060" end="00:22:40.580" tts:direction="ltr">and then I'll have Germany selected.</p>
+        <p begin="00:22:40.580" end="00:22:42.700" tts:direction="ltr">Now I can see those, and I can actually</p>
+        <p begin="00:22:42.700" end="00:22:46.280" tts:direction="ltr">have more countries here. I can add a few.</p>
+        <p begin="00:22:46.280" end="00:22:48.280" tts:direction="ltr">Maybe I add a few over here.</p>
+        <p begin="00:22:48.280" end="00:22:54.920" tts:direction="ltr">Right? Brazil are definitely,</p>
+        <p begin="00:22:54.920" end="00:22:59.105" tts:direction="ltr">those darker colors are certainly paying
+<br />the,</p>
+        <p begin="00:22:59.105" end="00:23:01.810" tts:direction="ltr">the players very well.</p>
+        <p begin="00:23:01.810" end="00:23:03.570" tts:direction="ltr">That is allowing me to,</p>
+        <p begin="00:23:03.570" end="00:23:06.150" tts:direction="ltr">again, make those comparisons.</p>
+        <p begin="00:23:06.430" end="00:23:12.950" tts:direction="ltr">I want to do one more thing to improve
+<br />this visualization.</p>
+        <p begin="00:23:12.950" end="00:23:15.270" tts:direction="ltr">We're going to add a legend.</p>
+        <p begin="00:23:15.270" end="00:23:18.510" tts:direction="ltr">And we're going to do it by country.</p>
+        <p begin="00:23:18.510" end="00:23:21.030" tts:direction="ltr">If you just go over to this other tab,</p>
+        <p begin="00:23:21.030" end="00:23:22.890" tts:direction="ltr">other sheet that I've made,</p>
+        <p begin="00:23:22.890" end="00:23:25.710" tts:direction="ltr">we're going to create our first legend.</p>
+        <p begin="00:23:25.710" end="00:23:27.730" tts:direction="ltr">Let's go back to our data.</p>
+        <p begin="00:23:27.730" end="00:23:33.330" tts:direction="ltr">We're going to add Country One to the
+<br />filter shelf.</p>
+        <p begin="00:23:33.330" end="00:23:36.270" tts:direction="ltr">We're going to filter by that country.</p>
+        <p begin="00:23:36.270" end="00:23:41.510" tts:direction="ltr">Then we're going to bring Country into
+<br />view.</p>
+        <p begin="00:23:41.630" end="00:23:49.670" tts:direction="ltr">All right, let's see what's going on here.</p>
+        <p begin="00:23:50.390" end="00:23:54.770" tts:direction="ltr">I know why. Let's go here. Everything.</p>
+        <p begin="00:23:54.770" end="00:23:59.430" tts:direction="ltr">I always want to make sure that I pay
+<br />attention when I'm making new things.</p>
+        <p begin="00:23:59.430" end="00:24:02.110" tts:direction="ltr">Because sometimes I'm thinking, why don't
+<br />I see that?</p>
+        <p begin="00:24:02.110" end="00:24:05.230" tts:direction="ltr">What I want to see, let's go back to the
+<br />legend now.</p>
+        <p begin="00:24:05.230" end="00:24:08.530" tts:direction="ltr">I've got Brazil selected for country one.</p>
+        <p begin="00:24:08.530" end="00:24:13.950" tts:direction="ltr">What I'll do here is I'll just go from
+<br />Automatic to fill.</p>
+        <p begin="00:24:14.070" end="00:24:17.370" tts:direction="ltr">I'll just do a little bit of background
+<br />cleaning</p>
+        <p begin="00:24:17.370" end="00:24:21.110" tts:direction="ltr">up where I'm just removing everything.</p>
+        <p begin="00:24:22.990" end="00:24:27.170" tts:direction="ltr">Just remove, let's clean this all up.</p>
+        <p begin="00:24:27.170" end="00:24:29.150" tts:direction="ltr">That's just the shape of Brazil.</p>
+        <p begin="00:24:29.150" end="00:24:33.510" tts:direction="ltr">We're right there. Okay, that looks great.</p>
+        <p begin="00:24:33.510" end="00:24:36.370" tts:direction="ltr">Then what I'm going to do is I'm going to
+<br />go ahead and duplicate</p>
+        <p begin="00:24:36.370" end="00:24:42.270" tts:direction="ltr">that legend to create a legend number two.</p>
+        <p begin="00:24:43.790" end="00:24:48.510" tts:direction="ltr">Okay, for that legend, you can probably
+<br />guess.</p>
+        <p begin="00:24:48.510" end="00:24:50.030" tts:direction="ltr">I'm going to remove Country One,</p>
+        <p begin="00:24:50.030" end="00:24:52.230" tts:direction="ltr">put Country two on.</p>
+        <p begin="00:24:52.790" end="00:24:55.230" tts:direction="ltr">I don't know which that country that was.</p>
+        <p begin="00:24:55.230" end="00:24:58.570" tts:direction="ltr">Let's see what that, that's Croatia.</p>
+        <p begin="00:24:58.570" end="00:25:03.560" tts:direction="ltr">Okay. And what I want to do now is change
+<br />that color so it matches.</p>
+        <p begin="00:25:03.560" end="00:25:05.520" tts:direction="ltr">Okay. All right.</p>
+        <p begin="00:25:05.520" end="00:25:08.140" tts:direction="ltr">Let's go back to our dashboard.</p>
+        <p begin="00:25:08.140" end="00:25:12.780" tts:direction="ltr">Let's see if I can scape that.</p>
+        <p begin="00:25:12.780" end="00:25:18.380" tts:direction="ltr">Now what I want to do is I want to bring
+<br />in legend one way over here.</p>
+        <p begin="00:25:18.380" end="00:25:24.280" tts:direction="ltr">Drop that in. Well I need a bigger screen
+<br />to do this.</p>
+        <p begin="00:25:24.280" end="00:25:26.720" tts:direction="ltr">Legend two down below.</p>
+        <p begin="00:25:26.720" end="00:25:30.480" tts:direction="ltr">I'm going to go ahead and hide that title.</p>
+        <p begin="00:25:31.000" end="00:25:33.480" tts:direction="ltr">I can zoom in there.</p>
+        <p begin="00:25:33.480" end="00:25:35.860" tts:direction="ltr">Zooming instead of scrolling up.</p>
+        <p begin="00:25:35.860" end="00:25:40.000" tts:direction="ltr">Love that. Then remove that title.</p>
+        <p begin="00:25:41.080" end="00:25:48.280" tts:direction="ltr">Make a smaller, don't want those maps
+<br />dominating.</p>
+        <p begin="00:25:48.280" end="00:25:51.160" tts:direction="ltr">It's really the scatter plots is just for
+<br />reference.</p>
+        <p begin="00:25:51.160" end="00:25:52.680" tts:direction="ltr">If I click on Belgium,</p>
+        <p begin="00:25:52.680" end="00:25:54.660" tts:direction="ltr">let's go to Brazil.</p>
+        <p begin="00:25:54.660" end="00:25:57.680" tts:direction="ltr">I can see I need to move.</p>
+        <p begin="00:25:58.600" end="00:26:04.160" tts:direction="ltr">Let's get that over. I'm going to go over
+<br />here to my legend.</p>
+        <p begin="00:26:05.880" end="00:26:12.000" tts:direction="ltr">Let's make that a little bit bigger, Not
+<br />that big.</p>
+        <p begin="00:26:12.000" end="00:26:16.560" tts:direction="ltr">Let's go over here. Let's see if I've got
+<br />a selection.</p>
+        <p begin="00:26:16.560" end="00:26:20.600" tts:direction="ltr">Let's do France.</p>
+        <p begin="00:26:20.600" end="00:26:23.440" tts:direction="ltr">Let's go to that one.</p>
+        <p begin="00:26:24.760" end="00:26:26.960" tts:direction="ltr">Move that to be the center.</p>
+        <p begin="00:26:26.960" end="00:26:30.280" tts:direction="ltr">I'm holding down the shift key for Mac
+<br />there.</p>
+        <p begin="00:26:32.000" end="00:26:34.400" tts:direction="ltr">Make it a little bit bigger,</p>
+        <p begin="00:26:34.400" end="00:26:37.080" tts:direction="ltr">maybe not that much.</p>
+        <p begin="00:26:37.080" end="00:26:42.860" tts:direction="ltr">Okay, it's probably good enough for now.</p>
+        <p begin="00:26:42.860" end="00:26:46.060" tts:direction="ltr">If I go to my view,</p>
+        <p begin="00:26:46.060" end="00:26:50.900" tts:direction="ltr">let me just escape, escape everything
+<br />here.</p>
+        <p begin="00:26:50.900" end="00:26:53.160" tts:direction="ltr">Go to better view.</p>
+        <p begin="00:26:53.160" end="00:26:55.680" tts:direction="ltr">Now if I click on Denmark,</p>
+        <p begin="00:26:55.680" end="00:26:58.940" tts:direction="ltr">Gosh, I think I've messed things up.</p>
+        <p begin="00:26:58.940" end="00:27:02.940" tts:direction="ltr">I need to pin that a little bit better.</p>
+        <p begin="00:27:02.940" end="00:27:06.100" tts:direction="ltr">Then I can go to Japan.</p>
+        <p begin="00:27:06.100" end="00:27:09.740" tts:direction="ltr">Yeah, I need to work on my map a little
+<br />bit more.</p>
+        <p begin="00:27:09.740" end="00:27:15.140" tts:direction="ltr">Can see already. It's not going to the
+<br />country.</p>
+        <p begin="00:27:15.140" end="00:27:18.060" tts:direction="ltr">It's there, it's just hidden.</p>
+        <p begin="00:27:18.060" end="00:27:20.360" tts:direction="ltr">And I need to make that larger.</p>
+        <p begin="00:27:20.360" end="00:27:24.400" tts:direction="ltr">That's some fine tuning that you can do
+<br />within your maps.</p>
+        <p begin="00:27:24.400" end="00:27:26.180" tts:direction="ltr">But anyway, what I'm seeing here,</p>
+        <p begin="00:27:26.180" end="00:27:32.400" tts:direction="ltr">I've got my slice down the middle showing
+<br />on this side.</p>
+        <p begin="00:27:32.400" end="00:27:36.260" tts:direction="ltr">The variables on this side are these
+<br />variables.</p>
+        <p begin="00:27:36.260" end="00:27:38.040" tts:direction="ltr">Might be nice to add some of</p>
+        <p begin="00:27:38.040" end="00:27:41.980" tts:direction="ltr">those numbers back in now that I'm looking
+<br />at it because I really don't know.</p>
+        <p begin="00:27:41.980" end="00:27:43.820" tts:direction="ltr">I've got the tool tip those,</p>
+        <p begin="00:27:43.820" end="00:27:47.960" tts:direction="ltr">so that can be helpful in terms of the</p>
+        <p begin="00:27:47.960" end="00:27:57.300" tts:direction="ltr">0.9 million pounds and 2.7 and seeing that
+<br />difference.</p>
+        <p begin="00:27:57.300" end="00:27:58.540" tts:direction="ltr">Okay.</p>
+        <p begin="00:27:58.540" end="00:28:01.420" tts:direction="ltr">But there we have it.</p>
+        <p begin="00:28:01.420" end="00:28:05.040" tts:direction="ltr">There is a benchmarking part to</p>
+        <p begin="00:28:05.040" end="00:28:11.620" tts:direction="ltr">dashboard and that similar data can be
+<br />used again for</p>
+        <p begin="00:28:11.620" end="00:28:17.440" tts:direction="ltr">surveys and also for customer satisfaction
+<br />and for</p>
+        <p begin="00:28:17.440" end="00:28:20.920" tts:direction="ltr">health care assessment or even you
+<br />comparing</p>
+        <p begin="00:28:20.920" end="00:28:25.560" tts:direction="ltr">yourself to your competition. Thank you
+<br />for watching.</p>
+    </div>
+  </body>
+</tt>

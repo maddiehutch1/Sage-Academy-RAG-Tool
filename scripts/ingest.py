@@ -177,7 +177,7 @@ def load_sidecar(transcript_path: Path) -> dict:
             f"Missing metadata sidecar: {sidecar}\n"
             f"Create a JSON file with keys: course, video, source_url (optional)."
         )
-    with sidecar.open(encoding="utf-8") as f:
+    with sidecar.open(encoding="utf-8-sig") as f:
         return json.load(f)
 
 

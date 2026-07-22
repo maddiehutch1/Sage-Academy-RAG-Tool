@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>411023962 - 1_70jf1bcc - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.560" end="00:00:08.260" tts:direction="ltr">Hello visitors. This is a bonus reveal to
+<br />make</p>
+        <p begin="00:00:08.260" end="00:00:16.320" tts:direction="ltr">all of the states be shown in this
+<br />billionaire dataset here.</p>
+        <p begin="00:00:16.320" end="00:00:21.200" tts:direction="ltr">I'm going to go ahead and show you what
+<br />I've done in the data source pain.</p>
+        <p begin="00:00:21.200" end="00:00:25.480" tts:direction="ltr">We have our billionaire Excel file.</p>
+        <p begin="00:00:25.480" end="00:00:28.360" tts:direction="ltr">Let me actually close this out so you can
+<br />see this.</p>
+        <p begin="00:00:28.360" end="00:00:31.880" tts:direction="ltr">But I've joined it with another file.</p>
+        <p begin="00:00:31.880" end="00:00:36.540" tts:direction="ltr">This file is actually the 50 states.</p>
+        <p begin="00:00:36.540" end="00:00:38.980" tts:direction="ltr">If I were to look at that file,</p>
+        <p begin="00:00:38.980" end="00:00:44.220" tts:direction="ltr">it would just have a table with all 50
+<br />states listed on it.</p>
+        <p begin="00:00:44.220" end="00:00:48.460" tts:direction="ltr">What I've done is I've gone into the
+<br />physical layer of</p>
+        <p begin="00:00:48.460" end="00:00:53.625" tts:direction="ltr">tableau and I've joined these two sheets
+<br />together.</p>
+        <p begin="00:00:53.625" end="00:00:56.050" tts:direction="ltr">Now I've done the join as</p>
+        <p begin="00:00:56.050" end="00:01:02.030" tts:direction="ltr">a right join because I want to include all
+<br />50 states,</p>
+        <p begin="00:01:02.030" end="00:01:05.210" tts:direction="ltr">whereas this sheet does not have all 50.</p>
+        <p begin="00:01:05.210" end="00:01:08.970" tts:direction="ltr">Remember how there were a few states that
+<br />did not have billionaires in it?</p>
+        <p begin="00:01:08.970" end="00:01:12.230" tts:direction="ltr">Those names are not in this sheet.</p>
+        <p begin="00:01:12.230" end="00:01:15.070" tts:direction="ltr">I am right joining this so that I can make
+<br />sure and</p>
+        <p begin="00:01:15.070" end="00:01:18.230" tts:direction="ltr">have a data point for every state.</p>
+        <p begin="00:01:18.230" end="00:01:21.830" tts:direction="ltr">Okay. That's a workaround or</p>
+        <p begin="00:01:21.830" end="00:01:26.070" tts:direction="ltr">way to ensure that you are showing all the
+<br />data there.</p>
+        <p begin="00:01:26.070" end="00:01:27.890" tts:direction="ltr">If I go to this sheet,</p>
+        <p begin="00:01:27.890" end="00:01:34.050" tts:direction="ltr">I'm going to go ahead and make that
+<br />visualization that we made</p>
+        <p begin="00:01:34.050" end="00:01:40.410" tts:direction="ltr">earlier here that was with map and it's on
+<br />detail.</p>
+        <p begin="00:01:40.410" end="00:01:46.590" tts:direction="ltr">Now let's bring in our net worth onto
+<br />color that should look familiar.</p>
+        <p begin="00:01:46.590" end="00:01:49.330" tts:direction="ltr">Let me go ahead and hide that card there.</p>
+        <p begin="00:01:49.530" end="00:01:53.330" tts:direction="ltr">These are the states that don't have a
+<br />billionaire, okay?</p>
+        <p begin="00:01:53.330" end="00:01:58.550" tts:direction="ltr">That New Mexico, think that must be
+<br />Alabama,</p>
+        <p begin="00:01:58.550" end="00:02:01.910" tts:direction="ltr">West Virginia, Wisconsin, things like
+<br />that.</p>
+        <p begin="00:02:01.910" end="00:02:06.050" tts:direction="ltr">Okay. This is where I'm trying to fill
+<br />that.</p>
+        <p begin="00:02:06.050" end="00:02:09.270" tts:direction="ltr">In fact, I'm going to go ahead and do
+<br />something.</p>
+        <p begin="00:02:09.270" end="00:02:13.550" tts:direction="ltr">I'm going to go to be me map.</p>
+        <p begin="00:02:13.550" end="00:02:15.930" tts:direction="ltr">Let's go to background layers.</p>
+        <p begin="00:02:15.930" end="00:02:19.510" tts:direction="ltr">I'm going to go ahead and just wipe that
+<br />out.</p>
+        <p begin="00:02:19.510" end="00:02:22.130" tts:direction="ltr">You can really see what that looks like.</p>
+        <p begin="00:02:22.130" end="00:02:25.570" tts:direction="ltr">Okay, just took that wash that out.</p>
+        <p begin="00:02:25.570" end="00:02:29.850" tts:direction="ltr">What I want to do is I want to take my
+<br />state and I'm going to filter</p>
+        <p begin="00:02:29.850" end="00:02:33.670" tts:direction="ltr">out Hawaii because I don't need to have
+<br />them right now.</p>
+        <p begin="00:02:33.670" end="00:02:36.290" tts:direction="ltr">They do have somebody, but I want to keep
+<br />that full.</p>
+        <p begin="00:02:36.290" end="00:02:39.430" tts:direction="ltr">These are the states that I'm trying to
+<br />fill in.</p>
+        <p begin="00:02:39.430" end="00:02:46.390" tts:direction="ltr">The way that I'll do that is I want to
+<br />duplicate this to have this dual axis.</p>
+        <p begin="00:02:46.390" end="00:02:50.530" tts:direction="ltr">But I'm going to hit Command on a Mac or
+<br />Control on a PC and just</p>
+        <p begin="00:02:50.530" end="00:02:55.070" tts:direction="ltr">drag and drop the longitude on the column
+<br />shelf just to duplicate that.</p>
+        <p begin="00:02:55.070" end="00:02:56.910" tts:direction="ltr">Now I've got these two,</p>
+        <p begin="00:02:56.910" end="00:02:58.790" tts:direction="ltr">you'll see here on the Marks card.</p>
+        <p begin="00:02:58.790" end="00:03:00.410" tts:direction="ltr">Now I have those two.</p>
+        <p begin="00:03:00.410" end="00:03:03.895" tts:direction="ltr">They're got the same color and state.</p>
+        <p begin="00:03:03.895" end="00:03:07.260" tts:direction="ltr">Now what I've done, what I've gone ahead
+<br />and done is I've actually</p>
+        <p begin="00:03:07.260" end="00:03:10.620" tts:direction="ltr">created two calculated fields.</p>
+        <p begin="00:03:10.620" end="00:03:12.740" tts:direction="ltr">And you'll see here that it has</p>
+        <p begin="00:03:12.740" end="00:03:19.540" tts:direction="ltr">the geographic mark and it has the
+<br />calculation mark on it.</p>
+        <p begin="00:03:19.540" end="00:03:24.040" tts:direction="ltr">If I go here and I look at the non null
+<br />state,</p>
+        <p begin="00:03:24.040" end="00:03:26.080" tts:direction="ltr">that's the way I've named it,</p>
+        <p begin="00:03:26.080" end="00:03:32.380" tts:direction="ltr">you'll see that my calculation, if I can
+<br />bring it over,</p>
+        <p begin="00:03:34.060" end="00:03:40.860" tts:direction="ltr">is if there is a null and net worth
+<br />billions,</p>
+        <p begin="00:03:40.860" end="00:03:44.400" tts:direction="ltr">meaning that there does not have a state
+<br />with that,</p>
+        <p begin="00:03:44.400" end="00:03:46.180" tts:direction="ltr">then it is null,</p>
+        <p begin="00:03:46.180" end="00:03:49.000" tts:direction="ltr">else it's using that state sheet.</p>
+        <p begin="00:03:49.000" end="00:03:54.460" tts:direction="ltr">It's going to go to that sheet that has
+<br />all of those states on there.</p>
+        <p begin="00:03:54.460" end="00:03:59.400" tts:direction="ltr">You only get the state if the measure is
+<br />null.</p>
+        <p begin="00:03:59.400" end="00:04:02.870" tts:direction="ltr">Okay? I have that first calculation</p>
+        <p begin="00:04:02.870" end="00:04:07.300" tts:direction="ltr">and then I have the second calculation
+<br />which is the opposite of that.</p>
+        <p begin="00:04:07.300" end="00:04:08.920" tts:direction="ltr">This is a null state.</p>
+        <p begin="00:04:08.920" end="00:04:11.900" tts:direction="ltr">I'm only going to get if the measure is
+<br />null.</p>
+        <p begin="00:04:11.900" end="00:04:13.240" tts:direction="ltr">And I'm going to use,</p>
+        <p begin="00:04:13.240" end="00:04:14.700" tts:direction="ltr">this is my determinant,</p>
+        <p begin="00:04:14.700" end="00:04:16.500" tts:direction="ltr">say net worth in billions.</p>
+        <p begin="00:04:16.500" end="00:04:20.320" tts:direction="ltr">And if there is a null in that,</p>
+        <p begin="00:04:20.320" end="00:04:25.000" tts:direction="ltr">then I'm going to use the state sheet to
+<br />fill that in.</p>
+        <p begin="00:04:25.000" end="00:04:28.780" tts:direction="ltr">Okay? So I've got both of those there.</p>
+        <p begin="00:04:28.780" end="00:04:34.040" tts:direction="ltr">Now what I want to do is to basically
+<br />replace</p>
+        <p begin="00:04:34.040" end="00:04:38.540" tts:direction="ltr">my state detail for each of these maps so
+<br />that I can</p>
+        <p begin="00:04:38.540" end="00:04:43.440" tts:direction="ltr">focus on one with the states and one with
+<br />the nulls.</p>
+        <p begin="00:04:43.440" end="00:04:46.640" tts:direction="ltr">For this one, I can go ahead and bring</p>
+        <p begin="00:04:46.640" end="00:04:52.515" tts:direction="ltr">that null state or non null state onto
+<br />detail.</p>
+        <p begin="00:04:52.515" end="00:04:56.830" tts:direction="ltr">If I remove state, I have the same thing.</p>
+        <p begin="00:04:56.830" end="00:05:01.850" tts:direction="ltr">Okay, that's basically saying the same
+<br />thing but it's the non null.</p>
+        <p begin="00:05:01.850" end="00:05:06.790" tts:direction="ltr">And that will work when I also select this
+<br />other map and I'm going to put in</p>
+        <p begin="00:05:06.790" end="00:05:13.670" tts:direction="ltr">the null state onto detail and I'm going
+<br />to remove the state.</p>
+        <p begin="00:05:13.670" end="00:05:19.290" tts:direction="ltr">Okay, now you see that there's quite a few
+<br />things going on here.</p>
+        <p begin="00:05:19.290" end="00:05:20.790" tts:direction="ltr">The first thing I want to do in</p>
+        <p begin="00:05:20.790" end="00:05:25.010" tts:direction="ltr">this second map is I'm going to remove my
+<br />color.</p>
+        <p begin="00:05:25.010" end="00:05:30.810" tts:direction="ltr">And then that will make these all just a
+<br />single color.</p>
+        <p begin="00:05:30.810" end="00:05:35.250" tts:direction="ltr">Then I don't need to have Alaska because I
+<br />took out Hawaii before.</p>
+        <p begin="00:05:35.250" end="00:05:37.610" tts:direction="ltr">I'm going to take my null state and put
+<br />that on</p>
+        <p begin="00:05:37.610" end="00:05:40.570" tts:direction="ltr">the filter and I'm going to say none.</p>
+        <p begin="00:05:40.570" end="00:05:44.090" tts:direction="ltr">I'm going to take Alaska and I'm going to
+<br />exclude that one.</p>
+        <p begin="00:05:44.090" end="00:05:48.290" tts:direction="ltr">We'll just take that out. Okay. Now you
+<br />can see where I'm</p>
+        <p begin="00:05:48.290" end="00:05:52.410" tts:direction="ltr">headed because I'm going to combine these
+<br />two into a dual axis.</p>
+        <p begin="00:05:52.410" end="00:05:55.430" tts:direction="ltr">And I've got my states that I'm going to
+<br />plug in right here.</p>
+        <p begin="00:05:55.430" end="00:05:59.010" tts:direction="ltr">Okay? I'll do that by just clicking</p>
+        <p begin="00:05:59.010" end="00:06:03.470" tts:direction="ltr">the drop down arrow here on longitude and
+<br />say dual axis.</p>
+        <p begin="00:06:03.470" end="00:06:06.350" tts:direction="ltr">When I do that, I've put those together
+<br />now.</p>
+        <p begin="00:06:06.350" end="00:06:08.030" tts:direction="ltr">I'm not in love with this color.</p>
+        <p begin="00:06:08.030" end="00:06:13.090" tts:direction="ltr">I can easily change that to maybe like a
+<br />lighter gray, right?</p>
+        <p begin="00:06:13.090" end="00:06:15.710" tts:direction="ltr">I can make the opacity, right?</p>
+        <p begin="00:06:15.710" end="00:06:19.250" tts:direction="ltr">Lighter or darker. Whatever I decide to
+<br />choose there,</p>
+        <p begin="00:06:19.250" end="00:06:21.650" tts:direction="ltr">I can make some modifications.</p>
+        <p begin="00:06:21.650" end="00:06:26.670" tts:direction="ltr">Now I have a continuous lower 48 map</p>
+        <p begin="00:06:26.670" end="00:06:32.290" tts:direction="ltr">that shows all of the states including the
+<br />ones that were in the null state.</p>
+        <p begin="00:06:32.290" end="00:06:35.690" tts:direction="ltr">I will have a chance to rewrite those tool
+<br />tips,</p>
+        <p begin="00:06:35.690" end="00:06:38.330" tts:direction="ltr">but now you can see that I've got all of
+<br />them represented.</p>
+        <p begin="00:06:38.330" end="00:06:42.870" tts:direction="ltr">Hopefully, that was a fun exercise for you
+<br />to at least watch to learn a little</p>
+        <p begin="00:06:42.870" end="00:06:48.530" tts:direction="ltr">bit more on how you can improve what you
+<br />are showing in your visualizations.</p>
+    </div>
+  </body>
+</tt>

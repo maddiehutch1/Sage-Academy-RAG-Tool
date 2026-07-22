@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>414578282 - 1_spcd1ufc - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.040" end="00:00:03.280" tts:direction="ltr">Hello visitors. For this challenge,</p>
+        <p begin="00:00:03.280" end="00:00:07.400" tts:direction="ltr">you're going to apply the design
+<br />principles that we've done,</p>
+        <p begin="00:00:07.400" end="00:00:10.680" tts:direction="ltr">we've discussed in this class that
+<br />includes</p>
+        <p begin="00:00:10.680" end="00:00:14.680" tts:direction="ltr">layout contrast and our gestalt
+<br />principles.</p>
+        <p begin="00:00:14.680" end="00:00:18.260" tts:direction="ltr">We're going to apply them to a makeover
+<br />chart.</p>
+        <p begin="00:00:18.260" end="00:00:20.100" tts:direction="ltr">This one is from</p>
+        <p begin="00:00:20.100" end="00:00:22.680" tts:direction="ltr">the Bureau of Labor Statistics</p>
+        <p begin="00:00:22.680" end="00:00:26.520" tts:direction="ltr">and indicates workers making minimum wage
+<br />or less.</p>
+        <p begin="00:00:26.520" end="00:00:29.220" tts:direction="ltr">Now, you can always go dive into the data
+<br />source.</p>
+        <p begin="00:00:29.220" end="00:00:30.540" tts:direction="ltr">I've provided that link,</p>
+        <p begin="00:00:30.540" end="00:00:32.980" tts:direction="ltr">you can find out more about what that
+<br />means.</p>
+        <p begin="00:00:32.980" end="00:00:35.740" tts:direction="ltr">But this is the chart we're going to
+<br />springboard</p>
+        <p begin="00:00:35.740" end="00:00:39.505" tts:direction="ltr">from and then further develop with some
+<br />design principles.</p>
+        <p begin="00:00:39.505" end="00:00:42.950" tts:direction="ltr">Let's go ahead and take a look at the
+<br />data.</p>
+        <p begin="00:00:42.950" end="00:00:46.270" tts:direction="ltr">Always important to review our fields.</p>
+        <p begin="00:00:46.270" end="00:00:49.590" tts:direction="ltr">You'll see here that we've got our state
+<br />here,</p>
+        <p begin="00:00:49.590" end="00:00:51.530" tts:direction="ltr">our total, which by the way,</p>
+        <p begin="00:00:51.530" end="00:00:56.830" tts:direction="ltr">that's in percentage also at minimum wage,</p>
+        <p begin="00:00:56.830" end="00:01:03.010" tts:direction="ltr">below the minimum wage I've gathered not
+<br />just for 2021,</p>
+        <p begin="00:01:03.010" end="00:01:04.980" tts:direction="ltr">but you can see for 2020,</p>
+        <p begin="00:01:04.980" end="00:01:08.150" tts:direction="ltr">2019, 2018, et cetera.</p>
+        <p begin="00:01:08.150" end="00:01:11.350" tts:direction="ltr">You can add more to this data and we're</p>
+        <p begin="00:01:11.350" end="00:01:15.510" tts:direction="ltr">going to union those together across all
+<br />of these sheets.</p>
+        <p begin="00:01:15.510" end="00:01:22.240" tts:direction="ltr">Let's go ahead and dive into Tableau.</p>
+        <p begin="00:01:22.240" end="00:01:24.340" tts:direction="ltr">This one, we are of course going to work
+<br />on</p>
+        <p begin="00:01:24.340" end="00:01:28.400" tts:direction="ltr">a little more spatial practice here for
+<br />design.</p>
+        <p begin="00:01:28.400" end="00:01:31.480" tts:direction="ltr">Let's connect to the data source,</p>
+        <p begin="00:01:31.480" end="00:01:35.180" tts:direction="ltr">it is an Excel sheet.</p>
+        <p begin="00:01:35.180" end="00:01:38.320" tts:direction="ltr">We'll go ahead and bring that open.</p>
+        <p begin="00:01:38.780" end="00:01:44.140" tts:direction="ltr">You can see here I've got all of my tabs
+<br />that are in my sheet here.</p>
+        <p begin="00:01:44.140" end="00:01:46.400" tts:direction="ltr">I want to union those together.</p>
+        <p begin="00:01:46.400" end="00:01:48.480" tts:direction="ltr">Rather than trying to copy and paste,</p>
+        <p begin="00:01:48.480" end="00:01:52.880" tts:direction="ltr">I'm going to drag new union onto my view
+<br />here.</p>
+        <p begin="00:01:52.880" end="00:01:55.580" tts:direction="ltr">Then it says, how do you want to have
+<br />that?</p>
+        <p begin="00:01:55.580" end="00:01:59.020" tts:direction="ltr">And I can select all of these sheets by
+<br />holding down the shift key on</p>
+        <p begin="00:01:59.020" end="00:02:02.840" tts:direction="ltr">a Mac and then dragging and dropping those
+<br />into that space.</p>
+        <p begin="00:02:02.840" end="00:02:05.190" tts:direction="ltr">Once I do that and click okay.</p>
+        <p begin="00:02:05.190" end="00:02:09.640" tts:direction="ltr">You can see here that I've now unioned
+<br />that data.</p>
+        <p begin="00:02:09.640" end="00:02:11.720" tts:direction="ltr">Let's take a look at it.</p>
+        <p begin="00:02:11.720" end="00:02:15.120" tts:direction="ltr">Got 306 rows and I've got six fields.</p>
+        <p begin="00:02:15.120" end="00:02:18.680" tts:direction="ltr">If I go all the way down to this table,</p>
+        <p begin="00:02:18.680" end="00:02:19.960" tts:direction="ltr">that's where I've unioned,</p>
+        <p begin="00:02:19.960" end="00:02:22.760" tts:direction="ltr">I can actually do this drop down arrow.</p>
+        <p begin="00:02:23.830" end="00:02:27.430" tts:direction="ltr">I don't want to select all of those.</p>
+        <p begin="00:02:27.430" end="00:02:31.210" tts:direction="ltr">I can select alias in there.</p>
+        <p begin="00:02:31.210" end="00:02:33.450" tts:direction="ltr">I should be able to see all of my years.</p>
+        <p begin="00:02:33.450" end="00:02:37.370" tts:direction="ltr">I've got 201-516-1718 19.20</p>
+        <p begin="00:02:37.370" end="00:02:41.050" tts:direction="ltr">That tells me that all of my data has been
+<br />union here.</p>
+        <p begin="00:02:41.050" end="00:02:43.990" tts:direction="ltr">In fact, I could probably hide this right
+<br />here.</p>
+        <p begin="00:02:43.990" end="00:02:46.910" tts:direction="ltr">I just copied those values,</p>
+        <p begin="00:02:46.910" end="00:02:51.790" tts:direction="ltr">which is not what I needed for all the
+<br />clicking here.</p>
+        <p begin="00:02:51.790" end="00:02:54.490" tts:direction="ltr">So let me go ahead and hide that.</p>
+        <p begin="00:02:54.490" end="00:02:57.770" tts:direction="ltr">Okay, now let me just tuple check.</p>
+        <p begin="00:02:57.770" end="00:03:03.030" tts:direction="ltr">Once I've brought data into Tableau that I
+<br />am reviewing it,</p>
+        <p begin="00:03:03.030" end="00:03:07.530" tts:direction="ltr">I can see here that I have,</p>
+        <p begin="00:03:07.530" end="00:03:09.690" tts:direction="ltr">this is being called a sheet.</p>
+        <p begin="00:03:09.690" end="00:03:12.430" tts:direction="ltr">Actually, let us rename this.</p>
+        <p begin="00:03:12.430" end="00:03:16.910" tts:direction="ltr">This should be called a year because
+<br />that's a year.</p>
+        <p begin="00:03:16.910" end="00:03:22.290" tts:direction="ltr">This is being labeled as a string and
+<br />actually I want to have that be a date.</p>
+        <p begin="00:03:22.290" end="00:03:24.470" tts:direction="ltr">Actually, let's go and change that to</p>
+        <p begin="00:03:24.470" end="00:03:29.310" tts:direction="ltr">a whole number that it doesn't break it
+<br />down by month and day.</p>
+        <p begin="00:03:29.310" end="00:03:31.850" tts:direction="ltr">Okay, Need to update that.</p>
+        <p begin="00:03:31.850" end="00:03:35.490" tts:direction="ltr">I'm going to go along here and just make
+<br />sure everything else looks good.</p>
+        <p begin="00:03:35.490" end="00:03:37.510" tts:direction="ltr">That's a number. That's a number.</p>
+        <p begin="00:03:37.510" end="00:03:40.430" tts:direction="ltr">That's a location, That's good.</p>
+        <p begin="00:03:40.430" end="00:03:44.430" tts:direction="ltr">Now don't forget these are in percentages
+<br />already.</p>
+        <p begin="00:03:44.430" end="00:03:49.150" tts:direction="ltr">We'll have to do some work in Tableau to
+<br />make that visible.</p>
+        <p begin="00:03:49.150" end="00:03:51.735" tts:direction="ltr">Let's go ahead and go to sheet one here.</p>
+        <p begin="00:03:51.735" end="00:03:55.160" tts:direction="ltr">Now I can go ahead and I can write,</p>
+        <p begin="00:03:55.160" end="00:04:02.080" tts:direction="ltr">click this data source and I can actually
+<br />rename it to remove the union of it,</p>
+        <p begin="00:04:02.080" end="00:04:06.200" tts:direction="ltr">so that I can match what my file name is.</p>
+        <p begin="00:04:06.200" end="00:04:08.380" tts:direction="ltr">Just a little bit of housekeeping there.</p>
+        <p begin="00:04:08.380" end="00:04:10.900" tts:direction="ltr">Can see I've got my state data.</p>
+        <p begin="00:04:10.900" end="00:04:15.960" tts:direction="ltr">I can just bring that in and look at those
+<br />states I can look at,</p>
+        <p begin="00:04:15.960" end="00:04:21.580" tts:direction="ltr">I can bring in those totals that Tableau
+<br />has tabulated.</p>
+        <p begin="00:04:21.580" end="00:04:24.860" tts:direction="ltr">I'm going to go ahead and bring those off.</p>
+        <p begin="00:04:24.860" end="00:04:33.670" tts:direction="ltr">What I want to do is try to recreate what
+<br />we saw earlier by bringing in,</p>
+        <p begin="00:04:33.670" end="00:04:41.710" tts:direction="ltr">let's go ahead and just double click state
+<br />that will populate the map.</p>
+        <p begin="00:04:41.710" end="00:04:48.570" tts:direction="ltr">And then we'll go ahead and below minimum
+<br />wage.</p>
+        <p begin="00:04:48.570" end="00:04:54.650" tts:direction="ltr">Actually let's bring onto details.</p>
+        <p begin="00:04:54.650" end="00:05:00.705" tts:direction="ltr">We already have it below minimum wage onto
+<br />color.</p>
+        <p begin="00:05:00.705" end="00:05:07.000" tts:direction="ltr">All right, right now it's summing that
+<br />it's probably not what we need.</p>
+        <p begin="00:05:07.000" end="00:05:13.040" tts:direction="ltr">We probably need to change the aggregation
+<br />to an average in the visualization.</p>
+        <p begin="00:05:13.040" end="00:05:20.380" tts:direction="ltr">We actually just had 2017 going to bring
+<br />the filter into 2017 and call that.</p>
+        <p begin="00:05:20.380" end="00:05:25.020" tts:direction="ltr">Okay. All right, in that example,</p>
+        <p begin="00:05:25.020" end="00:05:26.620" tts:direction="ltr">let me just head back here.</p>
+        <p begin="00:05:26.620" end="00:05:30.440" tts:direction="ltr">They just had Alaska and Hawaii tucked in
+<br />there,</p>
+        <p begin="00:05:30.440" end="00:05:32.280" tts:direction="ltr">that looks about the same.</p>
+        <p begin="00:05:32.280" end="00:05:35.420" tts:direction="ltr">We've got some Southern Kentucky,
+<br />Tennessee.</p>
+        <p begin="00:05:36.730" end="00:05:39.430" tts:direction="ltr">Yeah, those are darker right there.</p>
+        <p begin="00:05:39.430" end="00:05:42.370" tts:direction="ltr">Okay. That's looking pretty good.</p>
+        <p begin="00:05:42.370" end="00:05:47.430" tts:direction="ltr">So that's going to be our original chart.</p>
+        <p begin="00:05:47.430" end="00:05:51.630" tts:direction="ltr">Okay. Let's go ahead and make a new one.</p>
+        <p begin="00:05:51.630" end="00:05:53.870" tts:direction="ltr">Okay. In this case,</p>
+        <p begin="00:05:53.870" end="00:06:01.250" tts:direction="ltr">what I want to do is begin again on this
+<br />spatial map,</p>
+        <p begin="00:06:01.250" end="00:06:06.450" tts:direction="ltr">but changing it from a map into a hex map.</p>
+        <p begin="00:06:06.450" end="00:06:10.510" tts:direction="ltr">This is what we'll do.</p>
+        <p begin="00:06:10.510" end="00:06:12.550" tts:direction="ltr">We need to bring in another data source,</p>
+        <p begin="00:06:12.550" end="00:06:16.710" tts:direction="ltr">and I've got this linked on there to help
+<br />us</p>
+        <p begin="00:06:16.710" end="00:06:22.230" tts:direction="ltr">understand or help Tableau see the shapes
+<br />of the hexagon.</p>
+        <p begin="00:06:22.230" end="00:06:27.450" tts:direction="ltr">We're going to go and add in the spatial
+<br />file that I've got for you,</p>
+        <p begin="00:06:27.450" end="00:06:31.390" tts:direction="ltr">it's the p states,</p>
+        <p begin="00:06:31.390" end="00:06:34.090" tts:direction="ltr">this is from the Tableau community.</p>
+        <p begin="00:06:34.090" end="00:06:36.590" tts:direction="ltr">We share files all the time to</p>
+        <p begin="00:06:36.590" end="00:06:40.910" tts:direction="ltr">help help creating some of these
+<br />visualizations.</p>
+        <p begin="00:06:40.910" end="00:06:47.970" tts:direction="ltr">What I want to do is just drag that to my
+<br />view so that those can be joined.</p>
+        <p begin="00:06:47.970" end="00:06:51.030" tts:direction="ltr">Double check to make sure that it's state
+<br />on state.</p>
+        <p begin="00:06:51.030" end="00:06:52.630" tts:direction="ltr">That's exactly correct.</p>
+        <p begin="00:06:52.630" end="00:06:54.810" tts:direction="ltr">Now, I've got these listed,</p>
+        <p begin="00:06:54.810" end="00:06:56.530" tts:direction="ltr">but I don't really need those.</p>
+        <p begin="00:06:56.530" end="00:06:58.830" tts:direction="ltr">I'm going to go ahead and hide that.</p>
+        <p begin="00:06:58.830" end="00:07:04.290" tts:direction="ltr">I just have the abbreviation and then I've
+<br />got that geometry of that polygon.</p>
+        <p begin="00:07:04.290" end="00:07:07.450" tts:direction="ltr">Great. Okay, let's go back to this sheet
+<br />too,</p>
+        <p begin="00:07:07.450" end="00:07:10.830" tts:direction="ltr">and see if we can make a map.</p>
+        <p begin="00:07:10.830" end="00:07:13.830" tts:direction="ltr">Okay, What we're going to do,</p>
+        <p begin="00:07:13.830" end="00:07:17.470" tts:direction="ltr">first of all, we'll just double click on
+<br />geometry here.</p>
+        <p begin="00:07:17.470" end="00:07:23.170" tts:direction="ltr">The individual who made this just laid it
+<br />over wherever on a map.</p>
+        <p begin="00:07:23.170" end="00:07:26.130" tts:direction="ltr">The first thing I want you to do when
+<br />you're</p>
+        <p begin="00:07:26.130" end="00:07:30.270" tts:direction="ltr">using this type of spatial is to go into
+<br />map.</p>
+        <p begin="00:07:30.270" end="00:07:33.330" tts:direction="ltr">Let's go to map options and let's deselect</p>
+        <p begin="00:07:33.330" end="00:07:36.670" tts:direction="ltr">all of these features so that we're not
+<br />scaling up and down.</p>
+        <p begin="00:07:36.670" end="00:07:39.330" tts:direction="ltr">Okay, the next thing we want to do is go</p>
+        <p begin="00:07:39.330" end="00:07:43.110" tts:direction="ltr">under map and choose back round layers.</p>
+        <p begin="00:07:43.110" end="00:07:45.690" tts:direction="ltr">And we're going to take this wash out and
+<br />make</p>
+        <p begin="00:07:45.690" end="00:07:50.010" tts:direction="ltr">that 100% so that we no longer see that
+<br />location because it's not relevant.</p>
+        <p begin="00:07:50.010" end="00:07:55.040" tts:direction="ltr">Okay. Can I go ahead and close that right
+<br />now?</p>
+        <p begin="00:07:55.040" end="00:07:56.760" tts:direction="ltr">I actually can on my color,</p>
+        <p begin="00:07:56.760" end="00:07:59.820" tts:direction="ltr">I can have this border right now. It's
+<br />automatic.</p>
+        <p begin="00:07:59.820" end="00:08:03.060" tts:direction="ltr">And I could just change that to white to
+<br />make that pop out.</p>
+        <p begin="00:08:03.060" end="00:08:06.340" tts:direction="ltr">All right. I've not applied any of this
+<br />data yet.</p>
+        <p begin="00:08:06.340" end="00:08:12.200" tts:direction="ltr">I've just been working with this provided
+<br />file to create these hex shapes.</p>
+        <p begin="00:08:12.200" end="00:08:17.460" tts:direction="ltr">Okay. Now what I want to do is</p>
+        <p begin="00:08:17.460" end="00:08:23.560" tts:direction="ltr">I'm going to look at the data when it
+<br />comes to our totals.</p>
+        <p begin="00:08:23.560" end="00:08:25.500" tts:direction="ltr">We'll go ahead and grab that.</p>
+        <p begin="00:08:25.500" end="00:08:27.120" tts:direction="ltr">By the way, let's go ahead and do this.</p>
+        <p begin="00:08:27.120" end="00:08:29.340" tts:direction="ltr">As a little housekeeping, I'm going to
+<br />select</p>
+        <p begin="00:08:29.340" end="00:08:32.640" tts:direction="ltr">at minimum wage and hold down the shift
+<br />key to total.</p>
+        <p begin="00:08:32.640" end="00:08:35.160" tts:direction="ltr">I can do all three of these at the same
+<br />time.</p>
+        <p begin="00:08:35.160" end="00:08:37.860" tts:direction="ltr">I'm going to do the dropdown Carrot here.</p>
+        <p begin="00:08:37.860" end="00:08:43.960" tts:direction="ltr">I'm going to go to the default properties
+<br />and change the number format.</p>
+        <p begin="00:08:43.960" end="00:08:49.120" tts:direction="ltr">I remember how I said that it was already
+<br />fed into my data as a percentage.</p>
+        <p begin="00:08:49.120" end="00:08:51.520" tts:direction="ltr">These are important things to note.</p>
+        <p begin="00:08:51.520" end="00:08:58.440" tts:direction="ltr">I want to go into number custom and I'm
+<br />going to go to one decimal place here.</p>
+        <p begin="00:08:58.440" end="00:09:01.960" tts:direction="ltr">Then I'm going to add a suffix of a
+<br />percent.</p>
+        <p begin="00:09:01.960" end="00:09:03.500" tts:direction="ltr">This is my workaround.</p>
+        <p begin="00:09:03.500" end="00:09:06.520" tts:direction="ltr">Now if I want to go back into the original
+<br />data source,</p>
+        <p begin="00:09:06.520" end="00:09:13.060" tts:direction="ltr">I could change all that data to be 0.15 or
+<br />0.5 or whatever the case may be.</p>
+        <p begin="00:09:13.060" end="00:09:16.665" tts:direction="ltr">But in this case I'm just going to modify
+<br />it here in Tableau.</p>
+        <p begin="00:09:16.665" end="00:09:19.970" tts:direction="ltr">So I've changed both of those.</p>
+        <p begin="00:09:20.170" end="00:09:24.810" tts:direction="ltr">I also want to select these three again.</p>
+        <p begin="00:09:24.810" end="00:09:30.350" tts:direction="ltr">And I'm going to change all three of those
+<br />to be a new aggregation.</p>
+        <p begin="00:09:30.350" end="00:09:32.570" tts:direction="ltr">We are not going to want to summit.</p>
+        <p begin="00:09:32.570" end="00:09:35.190" tts:direction="ltr">Instead we will average it.</p>
+        <p begin="00:09:35.190" end="00:09:38.310" tts:direction="ltr">Okay. That is a more accurate
+<br />representation.</p>
+        <p begin="00:09:38.310" end="00:09:42.810" tts:direction="ltr">Now if I bring total to color,</p>
+        <p begin="00:09:42.810" end="00:09:44.670" tts:direction="ltr">you'll see things got darker.</p>
+        <p begin="00:09:44.670" end="00:09:49.990" tts:direction="ltr">And that's because I need to create a
+<br />specificity.</p>
+        <p begin="00:09:49.990" end="00:09:52.910" tts:direction="ltr">I'm going to do that by doing the state
+<br />abbreviation.</p>
+        <p begin="00:09:52.910" end="00:09:56.610" tts:direction="ltr">I'm going to bring that to label by doing
+<br />so,</p>
+        <p begin="00:09:56.610" end="00:10:01.415" tts:direction="ltr">I've now added a label abbreviation for
+<br />every state.</p>
+        <p begin="00:10:01.415" end="00:10:03.940" tts:direction="ltr">And then now I've hit</p>
+        <p begin="00:10:03.940" end="00:10:07.680" tts:direction="ltr">granular data that I want to show when it
+<br />comes to the color.</p>
+        <p begin="00:10:07.680" end="00:10:11.760" tts:direction="ltr">Okay, here is that hex shape.</p>
+        <p begin="00:10:11.760" end="00:10:16.600" tts:direction="ltr">What I could do also is I could put that
+<br />on the filter and I could choose 17.</p>
+        <p begin="00:10:16.600" end="00:10:18.600" tts:direction="ltr">And I can say okay for that.</p>
+        <p begin="00:10:18.600" end="00:10:23.020" tts:direction="ltr">Here's the original charge and I've got
+<br />large Alaska,</p>
+        <p begin="00:10:23.020" end="00:10:25.305" tts:direction="ltr">small Hawaii right here.</p>
+        <p begin="00:10:25.305" end="00:10:27.430" tts:direction="ltr">Now I've modified this to</p>
+        <p begin="00:10:27.430" end="00:10:32.450" tts:direction="ltr">have Alaska up here in the upper left, in
+<br />Hawaii down here.</p>
+        <p begin="00:10:32.450" end="00:10:35.610" tts:direction="ltr">But I've also just shrunk this in.</p>
+        <p begin="00:10:35.610" end="00:10:40.010" tts:direction="ltr">When you bring this into the dashboards
+<br />and future adventure guides,</p>
+        <p begin="00:10:40.010" end="00:10:44.530" tts:direction="ltr">you'll learn how to even add some padding
+<br />and things like that on here.</p>
+        <p begin="00:10:44.530" end="00:10:47.330" tts:direction="ltr">Okay, I just wanted to redo that,</p>
+        <p begin="00:10:47.330" end="00:10:49.970" tts:direction="ltr">but I would like to take a step further.</p>
+        <p begin="00:10:49.970" end="00:10:54.150" tts:direction="ltr">Let's go ahead and say this is the hex
+<br />map.</p>
+        <p begin="00:10:55.160" end="00:11:00.420" tts:direction="ltr">What I want to do now is I want to do some
+<br />comparisons.</p>
+        <p begin="00:11:00.420" end="00:11:11.240" tts:direction="ltr">What I'll do is I'll duplicate this sheet
+<br />and we'll do this compare years.</p>
+        <p begin="00:11:12.680" end="00:11:16.000" tts:direction="ltr">Let's keep it at a hex map.</p>
+        <p begin="00:11:16.890" end="00:11:20.970" tts:direction="ltr">All right, so what I want to do is I want
+<br />to</p>
+        <p begin="00:11:20.970" end="00:11:29.450" tts:direction="ltr">compare the first year my dataset to the
+<br />last year in my dataset.</p>
+        <p begin="00:11:29.450" end="00:11:34.610" tts:direction="ltr">Let's see. Basically, if I were to edit
+<br />this filter,</p>
+        <p begin="00:11:34.610" end="00:11:37.130" tts:direction="ltr">let's see, 2015 is the first,</p>
+        <p begin="00:11:37.130" end="00:11:39.890" tts:direction="ltr">12020 is the last one.</p>
+        <p begin="00:11:39.890" end="00:11:42.310" tts:direction="ltr">If I say okay on that,</p>
+        <p begin="00:11:42.310" end="00:11:47.010" tts:direction="ltr">then if I brought onto columns in front
+<br />here,</p>
+        <p begin="00:11:47.010" end="00:11:52.090" tts:direction="ltr">you'll see that I've got these two
+<br />different years.</p>
+        <p begin="00:11:52.610" end="00:11:55.370" tts:direction="ltr">What I want to do,</p>
+        <p begin="00:11:55.370" end="00:11:58.890" tts:direction="ltr">want to overlay these on each other so I
+<br />can get some perspective.</p>
+        <p begin="00:11:58.890" end="00:12:02.410" tts:direction="ltr">But before I do that, I want to change
+<br />this color palette.</p>
+        <p begin="00:12:02.410" end="00:12:05.170" tts:direction="ltr">It's not working for me,</p>
+        <p begin="00:12:05.290" end="00:12:10.090" tts:direction="ltr">This is part of your application for
+<br />design.</p>
+        <p begin="00:12:10.090" end="00:12:12.750" tts:direction="ltr">But because it's not intuitive,</p>
+        <p begin="00:12:12.750" end="00:12:14.510" tts:direction="ltr">I want to help you along on this part.</p>
+        <p begin="00:12:14.510" end="00:12:18.550" tts:direction="ltr">And then you can go and you can modify the
+<br />colors as you see fit.</p>
+        <p begin="00:12:18.550" end="00:12:24.510" tts:direction="ltr">But let's look at this right here where I
+<br />can go and I can edit the colors.</p>
+        <p begin="00:12:24.510" end="00:12:27.630" tts:direction="ltr">I can also go here on the Marks card,</p>
+        <p begin="00:12:27.630" end="00:12:30.230" tts:direction="ltr">but let's go ahead and edit these colors.</p>
+        <p begin="00:12:30.230" end="00:12:33.810" tts:direction="ltr">What I want to do is I'm going to go
+<br />Advanced,</p>
+        <p begin="00:12:33.810" end="00:12:37.795" tts:direction="ltr">and I'm going to have a start and end and
+<br />a center.</p>
+        <p begin="00:12:37.795" end="00:12:40.320" tts:direction="ltr">Now the start is going to be zero.</p>
+        <p begin="00:12:40.320" end="00:12:43.400" tts:direction="ltr">The end is actually going to be 6.4</p>
+        <p begin="00:12:43.400" end="00:12:46.140" tts:direction="ltr">And the reason why it's 6.4 is because I
+<br />took all of</p>
+        <p begin="00:12:46.140" end="00:12:53.660" tts:direction="ltr">my data and created a table and looked to
+<br />see what the largest percentage was.</p>
+        <p begin="00:12:53.660" end="00:12:56.620" tts:direction="ltr">6.4% is the largest gap,</p>
+        <p begin="00:12:56.620" end="00:12:59.280" tts:direction="ltr">and zero, of course, is the smallest.</p>
+        <p begin="00:12:59.280" end="00:13:01.140" tts:direction="ltr">That's where I got that end date.</p>
+        <p begin="00:13:01.140" end="00:13:02.700" tts:direction="ltr">Now for the center,</p>
+        <p begin="00:13:02.700" end="00:13:05.260" tts:direction="ltr">what I ended up doing,</p>
+        <p begin="00:13:05.340" end="00:13:10.160" tts:direction="ltr">I used Google and did a bit of a search.</p>
+        <p begin="00:13:10.160" end="00:13:11.640" tts:direction="ltr">Let me see if I can find this.</p>
+        <p begin="00:13:11.640" end="00:13:21.110" tts:direction="ltr">Bring this on the I found an article from
+<br />the USA Facts</p>
+        <p begin="00:13:21.110" end="00:13:27.270" tts:direction="ltr">where I'm really trying to find out what
+<br />is the average or what's</p>
+        <p begin="00:13:27.270" end="00:13:34.090" tts:direction="ltr">the minimum that earned at or below the
+<br />federal minimum wage.</p>
+        <p begin="00:13:34.090" end="00:13:37.070" tts:direction="ltr">So it's 1.3% Okay,</p>
+        <p begin="00:13:37.070" end="00:13:39.250" tts:direction="ltr">so I'm going to use that as my middle mark</p>
+        <p begin="00:13:39.250" end="00:13:41.750" tts:direction="ltr">because I want to show a diverging
+<br />palette.</p>
+        <p begin="00:13:41.750" end="00:13:46.230" tts:direction="ltr">To show those states that are above and
+<br />states that are below.</p>
+        <p begin="00:13:46.230" end="00:13:50.350" tts:direction="ltr">You can go through here and learn a little
+<br />bit more about the minimum wage.</p>
+        <p begin="00:13:50.350" end="00:13:53.890" tts:direction="ltr">725 an hour.</p>
+        <p begin="00:13:54.230" end="00:13:58.170" tts:direction="ltr">Yeah, that's wow.</p>
+        <p begin="00:13:58.170" end="00:14:02.930" tts:direction="ltr">Okay. And you can see some here's over
+<br />time.</p>
+        <p begin="00:14:02.930" end="00:14:05.110" tts:direction="ltr">But I'm going to go ahead and take this
+<br />off and I'm</p>
+        <p begin="00:14:05.110" end="00:14:08.190" tts:direction="ltr">going to use that fact that I</p>
+        <p begin="00:14:08.190" end="00:14:10.170" tts:direction="ltr">got from this in terms of</p>
+        <p begin="00:14:10.170" end="00:14:14.130" tts:direction="ltr">1.3 Now I want to make sure in references
+<br />in my source,</p>
+        <p begin="00:14:14.130" end="00:14:16.570" tts:direction="ltr">because again, when I'm presenting,</p>
+        <p begin="00:14:16.570" end="00:14:18.530" tts:direction="ltr">I need to make sure that I can point to</p>
+        <p begin="00:14:18.530" end="00:14:21.370" tts:direction="ltr">the credibility of my decisions that I'm
+<br />making.</p>
+        <p begin="00:14:21.370" end="00:14:25.480" tts:direction="ltr">So I'm going to go ahead and put 1.3 down
+<br />here.</p>
+        <p begin="00:14:25.480" end="00:14:29.470" tts:direction="ltr">And got that applied traditionally.</p>
+        <p begin="00:14:29.470" end="00:14:31.390" tts:direction="ltr">When I think of these warmer colors,</p>
+        <p begin="00:14:31.390" end="00:14:33.510" tts:direction="ltr">I'm thinking those are more negative,</p>
+        <p begin="00:14:33.510" end="00:14:36.190" tts:direction="ltr">our associations with reds and oranges</p>
+        <p begin="00:14:36.190" end="00:14:39.190" tts:direction="ltr">like we talked about. I'm going to reverse
+<br />that.</p>
+        <p begin="00:14:39.190" end="00:14:41.590" tts:direction="ltr">If that's in that zone,</p>
+        <p begin="00:14:41.590" end="00:14:43.310" tts:direction="ltr">then that's that red.</p>
+        <p begin="00:14:43.310" end="00:14:45.370" tts:direction="ltr">Okay, I'll go ahead and hit.</p>
+        <p begin="00:14:45.370" end="00:14:49.650" tts:direction="ltr">Okay. Now I can see from 2015</p>
+        <p begin="00:14:49.650" end="00:14:56.150" tts:direction="ltr">a lot of oranges and a little less so in
+<br />2020.</p>
+        <p begin="00:14:56.150" end="00:14:59.510" tts:direction="ltr">Let me actually edit that filter in.</p>
+        <p begin="00:14:59.510" end="00:15:01.690" tts:direction="ltr">So have 2021 on there.</p>
+        <p begin="00:15:01.690" end="00:15:03.510" tts:direction="ltr">I'm not quite sure what happened.</p>
+        <p begin="00:15:03.510" end="00:15:06.355" tts:direction="ltr">Let me jump into my data source.</p>
+        <p begin="00:15:06.355" end="00:15:11.020" tts:direction="ltr">Why am I not seeing 2021?</p>
+        <p begin="00:15:11.020" end="00:15:15.140" tts:direction="ltr">What happened here? Just looking at my
+<br />data,</p>
+        <p begin="00:15:15.140" end="00:15:17.580" tts:direction="ltr">you might see that same problem.</p>
+        <p begin="00:15:17.580" end="00:15:26.940" tts:direction="ltr">I'm going to go ahead and double click
+<br />that.</p>
+        <p begin="00:15:26.940" end="00:15:29.760" tts:direction="ltr">I'm going to edit the union.</p>
+        <p begin="00:15:29.760" end="00:15:32.860" tts:direction="ltr">I've got 2021 in there,</p>
+        <p begin="00:15:32.860" end="00:15:39.880" tts:direction="ltr">not quite sure what's not showing up in my
+<br />data source.</p>
+        <p begin="00:15:39.880" end="00:15:42.660" tts:direction="ltr">So let me come back here.</p>
+        <p begin="00:15:46.450" end="00:15:53.630" tts:direction="ltr">Interesting. Okay. All right,</p>
+        <p begin="00:15:53.630" end="00:15:55.810" tts:direction="ltr">so I'll have to dig a little deeper.</p>
+        <p begin="00:15:55.810" end="00:15:58.790" tts:direction="ltr">Why my filter is not showing 2021.</p>
+        <p begin="00:15:58.790" end="00:16:04.190" tts:direction="ltr">Yours might be, but mine right now is not
+<br />okay.</p>
+        <p begin="00:16:04.190" end="00:16:07.750" tts:direction="ltr">So I'll need to work on the data source to
+<br />figure that out.</p>
+        <p begin="00:16:07.750" end="00:16:12.730" tts:direction="ltr">But in the meantime, I have changed this
+<br />to reflect</p>
+        <p begin="00:16:12.730" end="00:16:16.390" tts:direction="ltr">those more diverging palettes so that I
+<br />can clearly</p>
+        <p begin="00:16:16.390" end="00:16:20.910" tts:direction="ltr">see what states are in and which states
+<br />are out.</p>
+        <p begin="00:16:20.910" end="00:16:24.430" tts:direction="ltr">Okay, let's see.</p>
+        <p begin="00:16:24.430" end="00:16:29.090" tts:direction="ltr">My next thing that I want to do is I'm
+<br />going to put these together.</p>
+        <p begin="00:16:29.090" end="00:16:31.070" tts:direction="ltr">And I'm not going to do a dual axis for
+<br />this.</p>
+        <p begin="00:16:31.070" end="00:16:32.390" tts:direction="ltr">I'm going to do something a little bit</p>
+        <p begin="00:16:32.390" end="00:16:36.220" tts:direction="ltr">different so that they can be overlaid on
+<br />top of each other.</p>
+        <p begin="00:16:36.220" end="00:16:41.570" tts:direction="ltr">The way that I'll do that is I'm actually
+<br />going to make a calculated field.</p>
+        <p begin="00:16:41.570" end="00:16:44.710" tts:direction="ltr">I use calculated fields a lot when it
+<br />comes</p>
+        <p begin="00:16:44.710" end="00:16:50.670" tts:direction="ltr">to creating color and adding and applying
+<br />color.</p>
+        <p begin="00:16:50.670" end="00:16:55.250" tts:direction="ltr">I'm going to go ahead and make this total
+<br />for 2015.</p>
+        <p begin="00:16:55.250" end="00:16:59.390" tts:direction="ltr">I'm going to do my dropdown create
+<br />calculated field.</p>
+        <p begin="00:16:59.390" end="00:17:03.730" tts:direction="ltr">I'll say total for 2015.</p>
+        <p begin="00:17:03.730" end="00:17:09.150" tts:direction="ltr">Okay, I have an if then statement.</p>
+        <p begin="00:17:09.150" end="00:17:13.310" tts:direction="ltr">If the year is equal to 2015, then that's
+<br />the total.</p>
+        <p begin="00:17:13.310" end="00:17:15.250" tts:direction="ltr">Fairly straightforward.</p>
+        <p begin="00:17:15.250" end="00:17:17.270" tts:direction="ltr">Now, since I have 2020 here,</p>
+        <p begin="00:17:17.270" end="00:17:19.530" tts:direction="ltr">I'm going to just duplicate this.</p>
+        <p begin="00:17:19.530" end="00:17:21.450" tts:direction="ltr">If yours is 2021,</p>
+        <p begin="00:17:21.450" end="00:17:25.010" tts:direction="ltr">then do that, then I'm going to edit that,</p>
+        <p begin="00:17:25.010" end="00:17:34.930" tts:direction="ltr">and I'm going to put down 2020 and change
+<br />this to 2020, okay?</p>
+        <p begin="00:17:34.930" end="00:17:38.150" tts:direction="ltr">All right, now with that,</p>
+        <p begin="00:17:38.150" end="00:17:41.970" tts:direction="ltr">I'm going to be able to do a little bit of</p>
+        <p begin="00:17:41.970" end="00:17:43.790" tts:direction="ltr">comparison and I'm going to go and</p>
+        <p begin="00:17:43.790" end="00:17:46.450" tts:direction="ltr">take off the year here. So I don't have
+<br />that.</p>
+        <p begin="00:17:46.450" end="00:17:48.990" tts:direction="ltr">I'm going to take the year off the filter.</p>
+        <p begin="00:17:48.990" end="00:17:56.620" tts:direction="ltr">Let's take that off. Okay, I've got that.</p>
+        <p begin="00:17:56.620" end="00:17:58.680" tts:direction="ltr">I'm just going to reorder that.</p>
+        <p begin="00:17:58.680" end="00:18:01.100" tts:direction="ltr">I've got my average total,</p>
+        <p begin="00:18:01.100" end="00:18:03.160" tts:direction="ltr">my collection, et cetera.</p>
+        <p begin="00:18:03.160" end="00:18:05.020" tts:direction="ltr">Okay. Now I know that I need to,</p>
+        <p begin="00:18:05.020" end="00:18:07.420" tts:direction="ltr">since I've just made some new fields,</p>
+        <p begin="00:18:07.420" end="00:18:10.860" tts:direction="ltr">I'm going to select both the total
+<br />2,015.20, 20.</p>
+        <p begin="00:18:10.860" end="00:18:14.660" tts:direction="ltr">And do what I did before because it did
+<br />not hold over.</p>
+        <p begin="00:18:14.660" end="00:18:16.840" tts:direction="ltr">Someone change the number format from</p>
+        <p begin="00:18:16.840" end="00:18:20.420" tts:direction="ltr">custom just to one decimal place with that
+<br />percentage,</p>
+        <p begin="00:18:20.420" end="00:18:22.865" tts:direction="ltr">just so that my data is clear.</p>
+        <p begin="00:18:22.865" end="00:18:26.450" tts:direction="ltr">I'm going to select those again and I'm
+<br />going to change</p>
+        <p begin="00:18:26.450" end="00:18:30.930" tts:direction="ltr">my aggregation to the average.</p>
+        <p begin="00:18:30.930" end="00:18:33.070" tts:direction="ltr">Okay, just cleaning that up.</p>
+        <p begin="00:18:33.070" end="00:18:37.510" tts:direction="ltr">Then what I want to do is I'm going to
+<br />remove this total average here.</p>
+        <p begin="00:18:37.510" end="00:18:42.190" tts:direction="ltr">And I'm going to bring total 2015 onto
+<br />color.</p>
+        <p begin="00:18:42.190" end="00:18:47.570" tts:direction="ltr">Now you'll notice I have to change my
+<br />colors again.</p>
+        <p begin="00:18:47.570" end="00:18:50.510" tts:direction="ltr">Remember, we're going to go and say
+<br />advanced.</p>
+        <p begin="00:18:50.510" end="00:18:53.730" tts:direction="ltr">I'm going to do start, middle, center, and
+<br />end.</p>
+        <p begin="00:18:53.730" end="00:18:56.630" tts:direction="ltr">This will be a zero, this will be a 6.4.</p>
+        <p begin="00:18:56.630" end="00:19:00.850" tts:direction="ltr">And my center is that 1.3 based on that
+<br />article.</p>
+        <p begin="00:19:00.850" end="00:19:05.980" tts:direction="ltr">Okay, Now what I want to do is I'm
+<br />actually going to put something on top.</p>
+        <p begin="00:19:05.980" end="00:19:07.560" tts:direction="ltr">So it's like a dual axis.</p>
+        <p begin="00:19:07.560" end="00:19:10.780" tts:direction="ltr">But I'm going to take this geometry field
+<br />here,</p>
+        <p begin="00:19:10.780" end="00:19:15.840" tts:direction="ltr">I'm going to drag and drop it right on
+<br />here to add a new mark layer.</p>
+        <p begin="00:19:15.840" end="00:19:19.120" tts:direction="ltr">Once that's highlighted, can just release
+<br />that.</p>
+        <p begin="00:19:19.120" end="00:19:21.900" tts:direction="ltr">It's all gray because it's looking like
+<br />it's on top,</p>
+        <p begin="00:19:21.900" end="00:19:24.940" tts:direction="ltr">but you can see some of that color seeping
+<br />through.</p>
+        <p begin="00:19:24.940" end="00:19:28.740" tts:direction="ltr">What I want to do here is I want to add</p>
+        <p begin="00:19:29.060" end="00:19:36.100" tts:direction="ltr">my total to my color and then my state
+<br />abbreviation to my label.</p>
+        <p begin="00:19:36.140" end="00:19:41.580" tts:direction="ltr">Now I need to update my colors to match
+<br />what I have here.</p>
+        <p begin="00:19:41.580" end="00:19:43.500" tts:direction="ltr">I'm going to go into Advanced,</p>
+        <p begin="00:19:43.500" end="00:19:46.480" tts:direction="ltr">click Start and Center,</p>
+        <p begin="00:19:46.480" end="00:19:48.700" tts:direction="ltr">and do that same process.</p>
+        <p begin="00:19:48.700" end="00:19:55.820" tts:direction="ltr">6.41 0.3 should be exactly the same.</p>
+        <p begin="00:19:55.820" end="00:19:58.820" tts:direction="ltr">I've got these on top of one another.</p>
+        <p begin="00:19:58.820" end="00:20:00.160" tts:direction="ltr">Here's the bottom one here.</p>
+        <p begin="00:20:00.160" end="00:20:03.100" tts:direction="ltr">I can just flip that open, or this one.</p>
+        <p begin="00:20:03.100" end="00:20:07.120" tts:direction="ltr">What I want to make sure is that I've got
+<br />my labels,</p>
+        <p begin="00:20:07.120" end="00:20:09.980" tts:direction="ltr">everything is looking pretty good.</p>
+        <p begin="00:20:09.980" end="00:20:16.345" tts:direction="ltr">What I'm going to do is change my
+<br />automatic to a shape now.</p>
+        <p begin="00:20:16.345" end="00:20:20.750" tts:direction="ltr">I've provided with you with a hex shape</p>
+        <p begin="00:20:20.750" end="00:20:26.070" tts:direction="ltr">that you will need to put into your
+<br />Tableau repository shape file.</p>
+        <p begin="00:20:26.070" end="00:20:29.430" tts:direction="ltr">You did that in a previous adventure
+<br />guide.</p>
+        <p begin="00:20:29.430" end="00:20:31.750" tts:direction="ltr">You should be able to repeat that.</p>
+        <p begin="00:20:31.750" end="00:20:34.590" tts:direction="ltr">In this case, I'm going to go into shape,</p>
+        <p begin="00:20:34.590" end="00:20:38.250" tts:direction="ltr">I'm going to select more shapes.</p>
+        <p begin="00:20:38.250" end="00:20:40.750" tts:direction="ltr">I already have those loaded up.</p>
+        <p begin="00:20:40.750" end="00:20:44.270" tts:direction="ltr">I'm going to grab that shape and say,</p>
+        <p begin="00:20:44.270" end="00:20:49.110" tts:direction="ltr">okay, for that, you can see that little
+<br />tiny hex shape there.</p>
+        <p begin="00:20:49.110" end="00:20:52.745" tts:direction="ltr">What I can do is I can make that larger.</p>
+        <p begin="00:20:52.745" end="00:21:02.400" tts:direction="ltr">Okay. A little too large so that it's just
+<br />peeking out right there. Okay.</p>
+        <p begin="00:21:02.400" end="00:21:05.180" tts:direction="ltr">So interesting. So Rhode Island's fairly
+<br />similar.</p>
+        <p begin="00:21:05.180" end="00:21:06.780" tts:direction="ltr">So what that's doing for me,</p>
+        <p begin="00:21:06.780" end="00:21:08.280" tts:direction="ltr">it's giving me the option,</p>
+        <p begin="00:21:08.280" end="00:21:09.980" tts:direction="ltr">in a very quick visual sense,</p>
+        <p begin="00:21:09.980" end="00:21:12.500" tts:direction="ltr">to say, you know, regain.</p>
+        <p begin="00:21:12.500" end="00:21:14.860" tts:direction="ltr">Actually, now that I look at this,</p>
+        <p begin="00:21:14.860" end="00:21:17.320" tts:direction="ltr">let me add these colors.</p>
+        <p begin="00:21:17.320" end="00:21:19.640" tts:direction="ltr">These need to be reversed.</p>
+        <p begin="00:21:19.640" end="00:21:21.680" tts:direction="ltr">Okay. Forgot to do that.</p>
+        <p begin="00:21:21.680" end="00:21:25.380" tts:direction="ltr">Okay. Yes, that is correct.</p>
+        <p begin="00:21:25.380" end="00:21:28.795" tts:direction="ltr">Let me make sure that is correct too.</p>
+        <p begin="00:21:28.795" end="00:21:33.350" tts:direction="ltr">I was like, it was interesting and I need
+<br />to make sure this is reversed.</p>
+        <p begin="00:21:33.350" end="00:21:34.990" tts:direction="ltr">Both of them need to be reversed.</p>
+        <p begin="00:21:34.990" end="00:21:42.330" tts:direction="ltr">That I've got my orange in the area that
+<br />is not positive.</p>
+        <p begin="00:21:42.330" end="00:21:45.830" tts:direction="ltr">Okay. Basically in the blue,</p>
+        <p begin="00:21:45.830" end="00:21:52.870" tts:direction="ltr">what we're saying is that there are fewer
+<br />people who are closer to wage,</p>
+        <p begin="00:21:52.870" end="00:21:54.610" tts:direction="ltr">are below minimum wage.</p>
+        <p begin="00:21:54.610" end="00:21:58.670" tts:direction="ltr">We've got Oregon, which is still blue.</p>
+        <p begin="00:21:58.670" end="00:22:01.850" tts:direction="ltr">It looks like a little bit darker in 2020.</p>
+        <p begin="00:22:01.850" end="00:22:03.710" tts:direction="ltr">Actually, that's now, that's good.</p>
+        <p begin="00:22:03.710" end="00:22:06.200" tts:direction="ltr">The one on top is the 2020.</p>
+        <p begin="00:22:06.200" end="00:22:10.870" tts:direction="ltr">You've got some progress moving from that
+<br />darker orange to</p>
+        <p begin="00:22:10.870" end="00:22:13.790" tts:direction="ltr">the lighter orange that New York has
+<br />really made</p>
+        <p begin="00:22:13.790" end="00:22:16.910" tts:direction="ltr">some progress over those five years.</p>
+        <p begin="00:22:16.910" end="00:22:19.490" tts:direction="ltr">Vermont, Maine, Minnesota.</p>
+        <p begin="00:22:19.490" end="00:22:25.230" tts:direction="ltr">This gives you a really quick comparison
+<br />between those two years.</p>
+        <p begin="00:22:25.230" end="00:22:29.510" tts:direction="ltr">Now you can actually apply a parameter to
+<br />this to make this dynamic.</p>
+        <p begin="00:22:29.510" end="00:22:31.230" tts:direction="ltr">And you can change the years.</p>
+        <p begin="00:22:31.230" end="00:22:34.530" tts:direction="ltr">But I'll just let you get to this point so</p>
+        <p begin="00:22:34.530" end="00:22:39.070" tts:direction="ltr">that you can create this hex map where
+<br />you're comparing them.</p>
+        <p begin="00:22:40.410" end="00:22:44.210" tts:direction="ltr">Now the final chart type that we'll make,</p>
+        <p begin="00:22:44.210" end="00:22:46.310" tts:direction="ltr">just as an exploration, again,</p>
+        <p begin="00:22:46.310" end="00:22:49.630" tts:direction="ltr">you're going to select one of these to
+<br />design.</p>
+        <p begin="00:22:49.630" end="00:22:53.510" tts:direction="ltr">You're going to design based on the
+<br />purpose and the audience.</p>
+        <p begin="00:22:53.510" end="00:22:59.410" tts:direction="ltr">But we're going to look at our lovely box
+<br />plot here.</p>
+        <p begin="00:22:59.410" end="00:23:02.290" tts:direction="ltr">Let's go ahead and look at,</p>
+        <p begin="00:23:05.610" end="00:23:09.510" tts:direction="ltr">we're going to have all three of these
+<br />measures here.</p>
+        <p begin="00:23:09.510" end="00:23:13.530" tts:direction="ltr">I'm going to select them then I'm,</p>
+        <p begin="00:23:15.530" end="00:23:19.250" tts:direction="ltr">let's select year to.</p>
+        <p begin="00:23:19.250" end="00:23:21.670" tts:direction="ltr">I'm going to hold down that one too.</p>
+        <p begin="00:23:21.670" end="00:23:25.010" tts:direction="ltr">What I've done is I've just hold down the
+<br />command key.</p>
+        <p begin="00:23:25.010" end="00:23:26.430" tts:direction="ltr">On a Mac, it's probably control.</p>
+        <p begin="00:23:26.430" end="00:23:32.870" tts:direction="ltr">On a PC, I'm selecting the fields that I'm
+<br />interested in showing.</p>
+        <p begin="00:23:32.870" end="00:23:35.290" tts:direction="ltr">This is a really great tool when</p>
+        <p begin="00:23:35.290" end="00:23:38.950" tts:direction="ltr">you're exploring your data and you want to
+<br />make different chart types.</p>
+        <p begin="00:23:38.950" end="00:23:43.050" tts:direction="ltr">And I've got a minimum below, minimum and
+<br />total.</p>
+        <p begin="00:23:43.050" end="00:23:46.050" tts:direction="ltr">And when I do that and I click open the
+<br />Show me panel,</p>
+        <p begin="00:23:46.050" end="00:23:48.350" tts:direction="ltr">you'll see that I can create stacked bars.</p>
+        <p begin="00:23:48.350" end="00:23:50.230" tts:direction="ltr">They can do side by side,</p>
+        <p begin="00:23:50.230" end="00:23:53.660" tts:direction="ltr">and I can also do my box and whisker.</p>
+        <p begin="00:23:53.660" end="00:24:00.230" tts:direction="ltr">Okay, let me go ahead and do the entire
+<br />view here. That might be too much.</p>
+        <p begin="00:24:01.430" end="00:24:05.670" tts:direction="ltr">Let's just do fit height back again here.</p>
+        <p begin="00:24:05.670" end="00:24:09.830" tts:direction="ltr">This might be helpful to see some of our
+<br />outliers, right?</p>
+        <p begin="00:24:09.830" end="00:24:13.070" tts:direction="ltr">When it comes with at minimum wage and
+<br />below minimum wage.</p>
+        <p begin="00:24:13.070" end="00:24:15.450" tts:direction="ltr">I might even want to add on states here.</p>
+        <p begin="00:24:15.450" end="00:24:21.190" tts:direction="ltr">But this also has some possibilities to
+<br />change some of our colors</p>
+        <p begin="00:24:21.190" end="00:24:24.270" tts:direction="ltr">and to add in some of</p>
+        <p begin="00:24:24.270" end="00:24:28.070" tts:direction="ltr">those design features if you want to go
+<br />with this particular chart type.</p>
+        <p begin="00:24:28.070" end="00:24:31.880" tts:direction="ltr">Let me just go ahead and change this to a
+<br />box plot.</p>
+        <p begin="00:24:31.880" end="00:24:34.570" tts:direction="ltr">Now you've got the original chart.</p>
+        <p begin="00:24:34.570" end="00:24:36.090" tts:direction="ltr">You've got the hex map.</p>
+        <p begin="00:24:36.090" end="00:24:38.670" tts:direction="ltr">You've got that hex map comparing years,</p>
+        <p begin="00:24:38.670" end="00:24:42.190" tts:direction="ltr">and then you have the box plot to work
+<br />with.</p>
+        <p begin="00:24:42.190" end="00:24:44.850" tts:direction="ltr">When it comes to applying design
+<br />principles,</p>
+        <p begin="00:24:44.850" end="00:24:48.170" tts:direction="ltr">I can't wait to see what you submit.</p>
+        <p begin="00:24:48.170" end="00:24:51.330" tts:direction="ltr">I hope this was helpful to learn a little
+<br />bit more</p>
+        <p begin="00:24:51.330" end="00:24:56.370" tts:direction="ltr">about how to create some of these
+<br />different chart types.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>495821812 - 1_jxpljfc2 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.040" end="00:00:03.500" tts:direction="ltr">Hello, visitors. This is the final in</p>
+        <p begin="00:00:03.500" end="00:00:07.320" tts:direction="ltr">the series of the 18 ways to visualize bar
+<br />charts.</p>
+        <p begin="00:00:07.320" end="00:00:11.080" tts:direction="ltr">We just completed the Progress Br two,</p>
+        <p begin="00:00:11.080" end="00:00:14.200" tts:direction="ltr">and I'm going to backtrack a little bit.</p>
+        <p begin="00:00:14.200" end="00:00:17.120" tts:direction="ltr">I realized I didn't do the progress thin
+<br />bar.</p>
+        <p begin="00:00:17.120" end="00:00:26.525" tts:direction="ltr">We're going to go ahead and duplicate our
+<br />original bar chart here.</p>
+        <p begin="00:00:26.525" end="00:00:29.450" tts:direction="ltr">And I'm going to just start right here</p>
+        <p begin="00:00:29.450" end="00:00:32.870" tts:direction="ltr">and just call this the progress thin bar.</p>
+        <p begin="00:00:32.870" end="00:00:34.850" tts:direction="ltr">This is number 13,</p>
+        <p begin="00:00:34.850" end="00:00:37.310" tts:direction="ltr">so I'm going to just start number these.</p>
+        <p begin="00:00:37.310" end="00:00:40.770" tts:direction="ltr">What I want to do is just provide a
+<br />different way of</p>
+        <p begin="00:00:40.770" end="00:00:44.650" tts:direction="ltr">looking at this data using Tablo.</p>
+        <p begin="00:00:44.650" end="00:00:51.270" tts:direction="ltr">And so what I want to do is right click on
+<br />sum of sales,</p>
+        <p begin="00:00:51.270" end="00:00:54.850" tts:direction="ltr">and I'm going to apply a quick table
+<br />calculation to this.</p>
+        <p begin="00:00:54.850" end="00:00:58.510" tts:direction="ltr">Just like we've done before, we'll do the
+<br />percent of total.</p>
+        <p begin="00:00:58.510" end="00:01:02.590" tts:direction="ltr">Then we want to format this a little bit.</p>
+        <p begin="00:01:02.590" end="00:01:09.090" tts:direction="ltr">Do you see how the labels has the
+<br />additional decimal places?</p>
+        <p begin="00:01:09.090" end="00:01:12.850" tts:direction="ltr">We're going to actually go here in the
+<br />dropdown menu and go to format,</p>
+        <p begin="00:01:12.850" end="00:01:15.190" tts:direction="ltr">and we're going to go to numbers,</p>
+        <p begin="00:01:15.190" end="00:01:16.870" tts:direction="ltr">we're going to go to percentage.</p>
+        <p begin="00:01:16.870" end="00:01:22.170" tts:direction="ltr">We're going to remove those. Let's see.</p>
+        <p begin="00:01:22.320" end="00:01:25.540" tts:direction="ltr">That should be on the pain. I'm sorry.</p>
+        <p begin="00:01:25.540" end="00:01:32.300" tts:direction="ltr">Let's go to the default percentage,</p>
+        <p begin="00:01:32.300" end="00:01:34.720" tts:direction="ltr">and then down two places.</p>
+        <p begin="00:01:34.720" end="00:01:39.300" tts:direction="ltr">I often sometimes will do that I'll do on
+<br />the axes and then also on the pain.</p>
+        <p begin="00:01:39.300" end="00:01:42.760" tts:direction="ltr">This is the pain, the axes would be down
+<br />here or above.</p>
+        <p begin="00:01:42.760" end="00:01:47.480" tts:direction="ltr">Okay. So now we're going to continue to
+<br />iterate on this.</p>
+        <p begin="00:01:47.480" end="00:01:50.400" tts:direction="ltr">Let's double click on the column shelf and
+<br />type in</p>
+        <p begin="00:01:50.400" end="00:01:56.920" tts:direction="ltr">our average of one so that we can create
+<br />that nice long bar chart.</p>
+        <p begin="00:01:56.920" end="00:02:01.580" tts:direction="ltr">Let me go ahead and close this one out so
+<br />we can see our various fields.</p>
+        <p begin="00:02:01.580" end="00:02:04.180" tts:direction="ltr">Let me just make this a little bit wider
+<br />here.</p>
+        <p begin="00:02:04.180" end="00:02:09.720" tts:direction="ltr">And what we want to do is we want to put
+<br />for the Marks card,</p>
+        <p begin="00:02:09.720" end="00:02:14.620" tts:direction="ltr">sum of sales, we're going to change that
+<br />from automatic to a circle.</p>
+        <p begin="00:02:14.620" end="00:02:20.220" tts:direction="ltr">And then on the second one on the average
+<br />one,</p>
+        <p begin="00:02:20.220" end="00:02:22.360" tts:direction="ltr">we're going to make sure that that's a bar</p>
+        <p begin="00:02:22.360" end="00:02:24.520" tts:direction="ltr">and we're going to reduce that size of</p>
+        <p begin="00:02:24.520" end="00:02:29.680" tts:direction="ltr">that so that it can just hover between
+<br />there, we're going to do.</p>
+        <p begin="00:02:29.680" end="00:02:32.460" tts:direction="ltr">We're going to combine axes here in just a
+<br />moment.</p>
+        <p begin="00:02:32.460" end="00:02:35.620" tts:direction="ltr">Then once that's been modified,</p>
+        <p begin="00:02:35.620" end="00:02:39.480" tts:direction="ltr">then we want to go back up here,</p>
+        <p begin="00:02:39.480" end="00:02:42.300" tts:direction="ltr">do a drop down to our dual axes.</p>
+        <p begin="00:02:42.300" end="00:02:44.000" tts:direction="ltr">Now I've got both of those,</p>
+        <p begin="00:02:44.000" end="00:02:49.800" tts:direction="ltr">which by the way, they're in a little bit
+<br />of a um,</p>
+        <p begin="00:02:50.060" end="00:02:53.540" tts:direction="ltr">not looking the best because we want those
+<br />circles above,</p>
+        <p begin="00:02:53.540" end="00:02:56.540" tts:direction="ltr">but let's go ahead and synchronize these
+<br />axes first</p>
+        <p begin="00:02:56.540" end="00:03:01.100" tts:direction="ltr">by right clicking them and click on
+<br />synchronize.</p>
+        <p begin="00:03:01.100" end="00:03:04.660" tts:direction="ltr">Now those are looking the way that they
+<br />should too.</p>
+        <p begin="00:03:04.660" end="00:03:08.715" tts:direction="ltr">They should. Now let's go ahead and right
+<br />click again and move marks to back.</p>
+        <p begin="00:03:08.715" end="00:03:11.570" tts:direction="ltr">Okay. And let's see.</p>
+        <p begin="00:03:11.570" end="00:03:17.530" tts:direction="ltr">We want to uncheck the show header so we
+<br />don't have to see that as well.</p>
+        <p begin="00:03:17.730" end="00:03:21.810" tts:direction="ltr">Now I can go into my Marks card.</p>
+        <p begin="00:03:21.810" end="00:03:25.610" tts:direction="ltr">Notice I've got these two different marks</p>
+        <p begin="00:03:25.610" end="00:03:29.110" tts:direction="ltr">for the two different charts they're
+<br />showing,</p>
+        <p begin="00:03:29.110" end="00:03:31.710" tts:direction="ltr">and I can go into the Summa sales, which
+<br />is the circle.</p>
+        <p begin="00:03:31.710" end="00:03:34.930" tts:direction="ltr">I like that blue, but I'm going to go into
+<br />the bar chart.</p>
+        <p begin="00:03:34.930" end="00:03:36.670" tts:direction="ltr">I'm going to edit those colors.</p>
+        <p begin="00:03:36.670" end="00:03:39.550" tts:direction="ltr">Going to select my color palette here.</p>
+        <p begin="00:03:39.550" end="00:03:43.155" tts:direction="ltr">That's custom. Going to go with just a
+<br />light color there.</p>
+        <p begin="00:03:43.155" end="00:03:46.900" tts:direction="ltr">I did not apply that, so my bad.</p>
+        <p begin="00:03:46.900" end="00:03:49.960" tts:direction="ltr">If I select that, select that average,</p>
+        <p begin="00:03:49.960" end="00:03:53.540" tts:direction="ltr">select that, then click Okay. Now we've
+<br />got that.</p>
+        <p begin="00:03:53.540" end="00:03:56.400" tts:direction="ltr">I'm going to actually take off that label,</p>
+        <p begin="00:03:56.400" end="00:03:58.500" tts:direction="ltr">just deselecting the label.</p>
+        <p begin="00:03:58.500" end="00:04:00.860" tts:direction="ltr">I can see also I've got this average.</p>
+        <p begin="00:04:00.860" end="00:04:03.020" tts:direction="ltr">Remember in a previous one,</p>
+        <p begin="00:04:03.020" end="00:04:06.700" tts:direction="ltr">not double clicking, but right clicking on
+<br />that.</p>
+        <p begin="00:04:06.700" end="00:04:10.320" tts:direction="ltr">Actually, I do need to edit the axes for
+<br />that and</p>
+        <p begin="00:04:10.320" end="00:04:14.395" tts:direction="ltr">then I can just delete that header.</p>
+        <p begin="00:04:14.395" end="00:04:17.730" tts:direction="ltr">That's not there. Should be able to delete
+<br />that.</p>
+        <p begin="00:04:17.730" end="00:04:19.730" tts:direction="ltr">Not quite sure why I'm not being able to,</p>
+        <p begin="00:04:19.730" end="00:04:21.350" tts:direction="ltr">but we're going to clean up and learn to</p>
+        <p begin="00:04:21.350" end="00:04:23.390" tts:direction="ltr">clean up more things in the design aspect.</p>
+        <p begin="00:04:23.390" end="00:04:27.410" tts:direction="ltr">But that is our progress thin bar.</p>
+        <p begin="00:04:27.410" end="00:04:29.310" tts:direction="ltr">We've already done the progress.</p>
+        <p begin="00:04:29.310" end="00:04:34.370" tts:direction="ltr">The next one we're going to do is the
+<br />progress area to do that one,</p>
+        <p begin="00:04:34.370" end="00:04:38.630" tts:direction="ltr">we actually want to take the progress bar</p>
+        <p begin="00:04:38.630" end="00:04:42.650" tts:direction="ltr">two that we worked on before and we're
+<br />going to duplicate that.</p>
+        <p begin="00:04:42.940" end="00:04:47.920" tts:direction="ltr">And we're going to click on one of those
+<br />white lines, again,</p>
+        <p begin="00:04:47.920" end="00:04:51.740" tts:direction="ltr">just showing you all the variations here
+<br />and we're going to choose Edit,</p>
+        <p begin="00:04:51.740" end="00:04:56.140" tts:direction="ltr">and then we'll select fill above and fill
+<br />below.</p>
+        <p begin="00:04:56.220" end="00:05:00.000" tts:direction="ltr">Then for the format,</p>
+        <p begin="00:05:00.000" end="00:05:04.775" tts:direction="ltr">we're going to fill with a light gray.</p>
+        <p begin="00:05:04.775" end="00:05:06.070" tts:direction="ltr">Okay.</p>
+        <p begin="00:05:06.070" end="00:05:08.570" tts:direction="ltr">And we'll click Okay.</p>
+        <p begin="00:05:08.570" end="00:05:11.730" tts:direction="ltr">Now I've got that filled area,</p>
+        <p begin="00:05:11.730" end="00:05:17.250" tts:direction="ltr">what I want to do is I want to change the
+<br />range.</p>
+        <p begin="00:05:17.250" end="00:05:22.230" tts:direction="ltr">So we'll go ahead and click on this top
+<br />axis, we'll right click it.</p>
+        <p begin="00:05:22.230" end="00:05:30.770" tts:direction="ltr">We'll edit axis, we'll select the let's
+<br />see.</p>
+        <p begin="00:05:30.770" end="00:05:33.210" tts:direction="ltr">Fix. That's great.</p>
+        <p begin="00:05:33.210" end="00:05:40.870" tts:direction="ltr">We'll do a custom range 0-1.</p>
+        <p begin="00:05:40.870" end="00:05:44.250" tts:direction="ltr">What that's going to do is bump all of
+<br />that out.</p>
+        <p begin="00:05:44.250" end="00:05:46.870" tts:direction="ltr">There we go all the way to the end.</p>
+        <p begin="00:05:46.870" end="00:05:50.450" tts:direction="ltr">I don't have any of those extra white
+<br />spaces.</p>
+        <p begin="00:05:50.450" end="00:05:56.450" tts:direction="ltr">Now I've got this area Excuse me.</p>
+        <p begin="00:05:56.450" end="00:05:58.370" tts:direction="ltr">Area progress bar.</p>
+        <p begin="00:05:58.370" end="00:06:00.410" tts:direction="ltr">I've got that filled in a little bit
+<br />different</p>
+        <p begin="00:06:00.410" end="00:06:03.250" tts:direction="ltr">than this one just has a different
+<br />background color.</p>
+        <p begin="00:06:03.250" end="00:06:05.870" tts:direction="ltr">Let me go ahead and put that in here.</p>
+        <p begin="00:06:06.290" end="00:06:10.750" tts:direction="ltr">And that is number 14 on our list.</p>
+        <p begin="00:06:10.750" end="00:06:12.830" tts:direction="ltr">The next one is bar and bar.</p>
+        <p begin="00:06:12.830" end="00:06:17.930" tts:direction="ltr">We're going to go back to our bar chart
+<br />here and we're going to duplicate it.</p>
+        <p begin="00:06:17.930" end="00:06:21.610" tts:direction="ltr">Hope that you're getting a lot of practice
+<br />in this.</p>
+        <p begin="00:06:21.610" end="00:06:25.310" tts:direction="ltr">We'll keep practicing so that you can get
+<br />more and more familiar,</p>
+        <p begin="00:06:25.310" end="00:06:27.110" tts:direction="ltr">but this is a good way.</p>
+        <p begin="00:06:27.110" end="00:06:31.010" tts:direction="ltr">We're going to replace some of sales with
+<br />our 2022 sales,</p>
+        <p begin="00:06:31.010" end="00:06:32.790" tts:direction="ltr">which is our calculated field that we</p>
+        <p begin="00:06:32.790" end="00:06:35.050" tts:direction="ltr">made so that we're not showing multiple
+<br />years,</p>
+        <p begin="00:06:35.050" end="00:06:36.775" tts:direction="ltr">but just one year in that.</p>
+        <p begin="00:06:36.775" end="00:06:42.820" tts:direction="ltr">And then we're going to take our 2021
+<br />sales because now I need another one.</p>
+        <p begin="00:06:42.820" end="00:06:45.780" tts:direction="ltr">I'm going to drag that and drop that on
+<br />top.</p>
+        <p begin="00:06:45.780" end="00:06:47.240" tts:direction="ltr">Just like I did it from here,</p>
+        <p begin="00:06:47.240" end="00:06:50.940" tts:direction="ltr">I can bring it in from my data paint and
+<br />then drop that on</p>
+        <p begin="00:06:50.940" end="00:06:55.660" tts:direction="ltr">top to create a combined axis.</p>
+        <p begin="00:06:55.660" end="00:07:04.460" tts:direction="ltr">Now we want to move measure names from our
+<br />rows to our color shelf.</p>
+        <p begin="00:07:06.380" end="00:07:15.140" tts:direction="ltr">Then we're going to want to go to the
+<br />analysis menu right now.</p>
+        <p begin="00:07:15.140" end="00:07:18.100" tts:direction="ltr">Right now, these are stacked on top of
+<br />each other,</p>
+        <p begin="00:07:18.100" end="00:07:20.100" tts:direction="ltr">but we actually want to unstack that.</p>
+        <p begin="00:07:20.100" end="00:07:24.900" tts:direction="ltr">Under analysis, it says stacked marks on
+<br />and we'll just say off.</p>
+        <p begin="00:07:24.900" end="00:07:27.520" tts:direction="ltr">I swapped those colors,</p>
+        <p begin="00:07:27.520" end="00:07:30.780" tts:direction="ltr">but basically has built that,</p>
+        <p begin="00:07:30.780" end="00:07:40.100" tts:direction="ltr">now it's longer and we're going to drag
+<br />measure names to the size shelf here,</p>
+        <p begin="00:07:40.100" end="00:07:46.480" tts:direction="ltr">and that helps us differentiate both of
+<br />these, but it is backwards.</p>
+        <p begin="00:07:46.480" end="00:07:50.500" tts:direction="ltr">What we want to do is on the legend,</p>
+        <p begin="00:07:50.500" end="00:07:53.320" tts:direction="ltr">just drag this and put that above.</p>
+        <p begin="00:07:53.320" end="00:07:57.985" tts:direction="ltr">Now I'm going to have to go in here and
+<br />work on that size a little bit.</p>
+        <p begin="00:07:57.985" end="00:08:00.450" tts:direction="ltr">So it's not so big.</p>
+        <p begin="00:08:00.450" end="00:08:03.510" tts:direction="ltr">But now you can begin to see that's what
+<br />I'm</p>
+        <p begin="00:08:03.510" end="00:08:06.090" tts:direction="ltr">looking for in terms of that bar and bar.</p>
+        <p begin="00:08:06.090" end="00:08:10.070" tts:direction="ltr">I've got a skinnier bar and a wider bar
+<br />here</p>
+        <p begin="00:08:10.070" end="00:08:15.830" tts:direction="ltr">and I'm able to see those sales comparison
+<br />there.</p>
+        <p begin="00:08:15.830" end="00:08:20.210" tts:direction="ltr">Another way to again use those same
+<br />dimensions and measures.</p>
+        <p begin="00:08:20.210" end="00:08:23.490" tts:direction="ltr">The next one we're going to do is a side
+<br />by side bar chart.</p>
+        <p begin="00:08:23.490" end="00:08:27.750" tts:direction="ltr">Let's start with our OG again and we're
+<br />going to duplicate that.</p>
+        <p begin="00:08:27.750" end="00:08:33.710" tts:direction="ltr">I forgot to name that one. That's barn
+<br />bar.</p>
+        <p begin="00:08:37.830" end="00:08:41.710" tts:direction="ltr">This just helps you so that if you are
+<br />working on your project,</p>
+        <p begin="00:08:41.710" end="00:08:44.030" tts:direction="ltr">you might want to create some of these
+<br />chart types and</p>
+        <p begin="00:08:44.030" end="00:08:47.750" tts:direction="ltr">this file might help you to go back and
+<br />say, how did I do that?</p>
+        <p begin="00:08:47.750" end="00:08:50.370" tts:direction="ltr">What variables did I need to do that in?</p>
+        <p begin="00:08:50.370" end="00:08:58.690" tts:direction="ltr">This one is a side by side bar. Extra
+<br />space.</p>
+        <p begin="00:08:58.690" end="00:09:00.330" tts:direction="ltr">We'll go clean that up.</p>
+        <p begin="00:09:00.330" end="00:09:08.550" tts:direction="ltr">Here what we'll do is we'll drag our order
+<br />date to our rows.</p>
+        <p begin="00:09:08.550" end="00:09:12.510" tts:direction="ltr">And what I want to do is I don't want all
+<br />four years.</p>
+        <p begin="00:09:12.510" end="00:09:15.790" tts:direction="ltr">I just want to select 2020 and 2021.</p>
+        <p begin="00:09:15.790" end="00:09:18.490" tts:direction="ltr">I'm going to hold down the Shift key 2020,</p>
+        <p begin="00:09:18.490" end="00:09:21.350" tts:direction="ltr">2021, and I'm going to keep only.</p>
+        <p begin="00:09:21.350" end="00:09:24.030" tts:direction="ltr">What that did is it dropped those into the
+<br />filter.</p>
+        <p begin="00:09:24.030" end="00:09:26.610" tts:direction="ltr">So if I wanted to add in those years back,
+<br />I could.</p>
+        <p begin="00:09:26.610" end="00:09:28.790" tts:direction="ltr">I can even show that filter,</p>
+        <p begin="00:09:28.790" end="00:09:31.690" tts:direction="ltr">see how those are only selected and I can
+<br />add those back in,</p>
+        <p begin="00:09:31.690" end="00:09:33.730" tts:direction="ltr">but I only really want to show those,</p>
+        <p begin="00:09:33.730" end="00:09:35.890" tts:direction="ltr">we'll go ahead and hide those.</p>
+        <p begin="00:09:35.890" end="00:09:41.330" tts:direction="ltr">Okay. And, um, I want</p>
+        <p begin="00:09:41.330" end="00:09:47.010" tts:direction="ltr">to let's see if we can make this a little
+<br />bit longer, so I'll just make that.</p>
+        <p begin="00:09:47.010" end="00:09:52.230" tts:direction="ltr">Then I'm going to right click in this area
+<br />and it says Rotate label.</p>
+        <p begin="00:09:52.230" end="00:09:55.310" tts:direction="ltr">Now I've got that going in one direction
+<br />and then</p>
+        <p begin="00:09:55.310" end="00:09:59.050" tts:direction="ltr">my year in the other, a formatting trick
+<br />there.</p>
+        <p begin="00:09:59.050" end="00:10:03.520" tts:direction="ltr">Then what I want to do is go to format
+<br />here on the top of the shelf.</p>
+        <p begin="00:10:03.520" end="00:10:05.610" tts:direction="ltr">And select shading.</p>
+        <p begin="00:10:05.610" end="00:10:13.390" tts:direction="ltr">And this is where I'm going to increase my
+<br />row band by one tick.</p>
+        <p begin="00:10:13.390" end="00:10:15.470" tts:direction="ltr">I'm going to go down to my row band,</p>
+        <p begin="00:10:15.470" end="00:10:19.590" tts:direction="ltr">and I'm going to just increase up by one
+<br />tick then</p>
+        <p begin="00:10:19.590" end="00:10:24.150" tts:direction="ltr">I'm going to reduce my level all the way
+<br />to one tick as well.</p>
+        <p begin="00:10:24.150" end="00:10:26.670" tts:direction="ltr">I can get that. Actually, that's fine.</p>
+        <p begin="00:10:26.670" end="00:10:29.130" tts:direction="ltr">What I was hoping to do is every other
+<br />one,</p>
+        <p begin="00:10:29.130" end="00:10:32.750" tts:direction="ltr">just to help with viewing it.</p>
+        <p begin="00:10:32.750" end="00:10:35.490" tts:direction="ltr">Now you have those shading area</p>
+        <p begin="00:10:35.490" end="00:10:38.470" tts:direction="ltr">separating the regions and I have those
+<br />side by side.</p>
+        <p begin="00:10:38.470" end="00:10:43.090" tts:direction="ltr">Okay. Now, I could create a calculation on
+<br />there, put that on color.</p>
+        <p begin="00:10:43.090" end="00:10:45.170" tts:direction="ltr">Fact I could probably put that.</p>
+        <p begin="00:10:45.170" end="00:10:52.460" tts:direction="ltr">Um If I put measure values on there,</p>
+        <p begin="00:10:52.460" end="00:10:54.100" tts:direction="ltr">what I'm showing is the range.</p>
+        <p begin="00:10:54.100" end="00:10:58.880" tts:direction="ltr">Let me remove that if I put measure names
+<br />on that,</p>
+        <p begin="00:10:58.880" end="00:11:00.760" tts:direction="ltr">it's not going to change anything.</p>
+        <p begin="00:11:00.760" end="00:11:02.660" tts:direction="ltr">I have to create that calculated field to</p>
+        <p begin="00:11:02.660" end="00:11:05.460" tts:direction="ltr">have that differentiator right here, which
+<br />I could.</p>
+        <p begin="00:11:05.460" end="00:11:07.620" tts:direction="ltr">I've got that true or false.</p>
+        <p begin="00:11:07.620" end="00:11:10.000" tts:direction="ltr">I can create something similar to that.</p>
+        <p begin="00:11:10.000" end="00:11:15.240" tts:direction="ltr">Now let's move on to our bar chart and
+<br />candlestick.</p>
+        <p begin="00:11:15.240" end="00:11:18.140" tts:direction="ltr">We're going to duplicate</p>
+        <p begin="00:11:18.140" end="00:11:27.700" tts:direction="ltr">this bar this side by side bar,</p>
+        <p begin="00:11:27.700" end="00:11:33.160" tts:direction="ltr">and we'll go ahead and duplicate that I'm
+<br />going to</p>
+        <p begin="00:11:33.160" end="00:11:35.260" tts:direction="ltr">rename this to be</p>
+        <p begin="00:11:35.420" end="00:11:39.460" tts:direction="ltr">we're going to add a little bit of a
+<br />candlestick on the end of this one.</p>
+        <p begin="00:11:39.460" end="00:11:41.940" tts:direction="ltr">There are other ways to do the
+<br />candlestick.</p>
+        <p begin="00:11:41.940" end="00:11:43.720" tts:direction="ltr">We don't have the right data source in
+<br />this,</p>
+        <p begin="00:11:43.720" end="00:11:47.540" tts:direction="ltr">but I want to show you how you can modify
+<br />this.</p>
+        <p begin="00:11:47.540" end="00:11:55.320" tts:direction="ltr">Let's go ahead and drag your off of the
+<br />rose shelf.</p>
+        <p begin="00:11:55.320" end="00:11:57.860" tts:direction="ltr">Drag that off and drop that.</p>
+        <p begin="00:11:57.970" end="00:12:03.830" tts:direction="ltr">We're going to then change our sum of
+<br />sales to 2022,</p>
+        <p begin="00:12:03.830" end="00:12:06.490" tts:direction="ltr">just dragging and dropping on top of that.</p>
+        <p begin="00:12:06.490" end="00:12:09.210" tts:direction="ltr">Then we're going to add</p>
+        <p begin="00:12:09.210" end="00:12:17.310" tts:direction="ltr">2021 sales on top of that X axis to have a
+<br />combined view,</p>
+        <p begin="00:12:17.310" end="00:12:19.790" tts:direction="ltr">just like we were doing before.</p>
+        <p begin="00:12:19.790" end="00:12:25.090" tts:direction="ltr">Then I'm going to go ahead and turn off
+<br />these labels just by unchecking that.</p>
+        <p begin="00:12:25.090" end="00:12:27.830" tts:direction="ltr">We're going to create a calculated field
+<br />for this.</p>
+        <p begin="00:12:27.830" end="00:12:30.490" tts:direction="ltr">Let's go ahead and create a new calculated
+<br />field.</p>
+        <p begin="00:12:30.490" end="00:12:34.170" tts:direction="ltr">This one's going to be called let me do
+<br />all caps.</p>
+        <p begin="00:12:34.170" end="00:12:36.740" tts:direction="ltr">Sales difference.</p>
+        <p begin="00:12:36.740" end="00:12:41.190" tts:direction="ltr">And in this case, we're going to just
+<br />subtract both of these sales,</p>
+        <p begin="00:12:41.190" end="00:12:51.190" tts:direction="ltr">it's sum of 2022 sales</p>
+        <p begin="00:12:51.470" end="00:13:00.550" tts:direction="ltr">minus sum of 2021 sales.</p>
+        <p begin="00:13:00.610" end="00:13:03.330" tts:direction="ltr">Okay. All right.</p>
+        <p begin="00:13:03.330" end="00:13:05.230" tts:direction="ltr">I've got that sales difference,</p>
+        <p begin="00:13:05.230" end="00:13:09.190" tts:direction="ltr">and what I want to do is create a copy of</p>
+        <p begin="00:13:09.190" end="00:13:14.230" tts:direction="ltr">2021 sales and direct that to the column
+<br />shelf.</p>
+        <p begin="00:13:14.230" end="00:13:17.930" tts:direction="ltr">What I'm going to do is just go underneath
+<br />here and I'm going to duplicate.</p>
+        <p begin="00:13:17.930" end="00:13:19.530" tts:direction="ltr">We're going to rename this in a minute,</p>
+        <p begin="00:13:19.530" end="00:13:21.850" tts:direction="ltr">but just duplicate that and bring that
+<br />copy</p>
+        <p begin="00:13:21.850" end="00:13:26.270" tts:direction="ltr">here and we're going to bring that to the
+<br />column shelves right here.</p>
+        <p begin="00:13:26.270" end="00:13:30.070" tts:direction="ltr">So a lot going on, but creating enough
+<br />data that we can have</p>
+        <p begin="00:13:30.070" end="00:13:35.025" tts:direction="ltr">these multiple views in the chart.</p>
+        <p begin="00:13:35.025" end="00:13:41.500" tts:direction="ltr">On the 2021, make sure that you've got
+<br />that one selected, which is the copy.</p>
+        <p begin="00:13:41.500" end="00:13:45.340" tts:direction="ltr">Let me just make sure I've got that one
+<br />selected.</p>
+        <p begin="00:13:45.340" end="00:13:48.440" tts:direction="ltr">Yeah, there we go. What I want to do is I
+<br />want to</p>
+        <p begin="00:13:48.440" end="00:13:52.080" tts:direction="ltr">change that from automatic to a Gant.</p>
+        <p begin="00:13:52.240" end="00:13:55.520" tts:direction="ltr">I'm just adding in that little bit of</p>
+        <p begin="00:13:55.520" end="00:14:00.580" tts:direction="ltr">extra information and changing the way it
+<br />looks from bar to gant chart.</p>
+        <p begin="00:14:00.580" end="00:14:06.800" tts:direction="ltr">Then we're going to right click onto the
+<br />sum of Sales copy,</p>
+        <p begin="00:14:06.800" end="00:14:16.980" tts:direction="ltr">and we want to do a dual axis and then we
+<br />want to synchronize,</p>
+        <p begin="00:14:16.980" end="00:14:19.140" tts:direction="ltr">something just happened though.</p>
+        <p begin="00:14:20.900" end="00:14:26.260" tts:direction="ltr">I think what I need to do is I need to
+<br />show I've got the show header here.</p>
+        <p begin="00:14:26.260" end="00:14:31.140" tts:direction="ltr">Let me just make sure I'm showing. I've
+<br />got.</p>
+        <p begin="00:14:32.780" end="00:14:41.380" tts:direction="ltr">Let's go for that dualxs again and make
+<br />sure that that is a bar.</p>
+        <p begin="00:14:41.500" end="00:14:44.920" tts:direction="ltr">That's looking a little better.</p>
+        <p begin="00:14:44.920" end="00:14:50.460" tts:direction="ltr">Although I've got this we'll remove that
+<br />copy here in just a moment.</p>
+        <p begin="00:14:50.810" end="00:14:58.650" tts:direction="ltr">So let's drag sales difference to the size
+<br />and wrong one,</p>
+        <p begin="00:14:58.650" end="00:15:01.250" tts:direction="ltr">I can see, did that to the wrong one.</p>
+        <p begin="00:15:01.250" end="00:15:05.730" tts:direction="ltr">What I want is that copy where the Gap bar
+<br />chart.</p>
+        <p begin="00:15:05.730" end="00:15:07.630" tts:direction="ltr">Make sure that one is selected.</p>
+        <p begin="00:15:07.630" end="00:15:10.490" tts:direction="ltr">Let's bring sales difference to size
+<br />there.</p>
+        <p begin="00:15:10.490" end="00:15:14.810" tts:direction="ltr">Now I've got a little more of that
+<br />difference between that.</p>
+        <p begin="00:15:15.180" end="00:15:18.620" tts:direction="ltr">Okay. Then we'll take that increase
+<br />calculation</p>
+        <p begin="00:15:18.620" end="00:15:20.380" tts:direction="ltr">that we created earlier and we'll place</p>
+        <p begin="00:15:20.380" end="00:15:25.540" tts:direction="ltr">that onto the color shelf and I can just
+<br />replace that right there.</p>
+        <p begin="00:15:25.540" end="00:15:30.040" tts:direction="ltr">Now I've got the similar palette.</p>
+        <p begin="00:15:30.040" end="00:15:34.360" tts:direction="ltr">Calculated field. Then let's</p>
+        <p begin="00:15:34.360" end="00:15:38.660" tts:direction="ltr">go ahead and just reduce that size of that
+<br />Gant chart line.</p>
+        <p begin="00:15:40.740" end="00:15:46.100" tts:direction="ltr">Should be applying right there, barely.</p>
+        <p begin="00:15:46.580" end="00:15:51.660" tts:direction="ltr">I'm going to go ahead and change that
+<br />color too, right now.</p>
+        <p begin="00:15:55.860" end="00:16:04.810" tts:direction="ltr">Huh. Let me go ahead and change that.</p>
+        <p begin="00:16:08.370" end="00:16:12.790" tts:direction="ltr">Then we need to make another calculated
+<br />field,</p>
+        <p begin="00:16:12.790" end="00:16:16.090" tts:direction="ltr">which is percent of difference.</p>
+        <p begin="00:16:16.090" end="00:16:18.610" tts:direction="ltr">Let's go ahead and do that.</p>
+        <p begin="00:16:18.610" end="00:16:20.710" tts:direction="ltr">We'll do all drop down here.</p>
+        <p begin="00:16:20.710" end="00:16:24.910" tts:direction="ltr">We'll call this percent DIF.</p>
+        <p begin="00:16:24.910" end="00:16:30.950" tts:direction="ltr">This calculation is the sales difference.</p>
+        <p begin="00:16:30.950" end="00:16:35.150" tts:direction="ltr">It's a calculated field that we're using
+<br />in a calculated field divided</p>
+        <p begin="00:16:35.150" end="00:16:39.930" tts:direction="ltr">by the sum of 2021 sales.</p>
+        <p begin="00:16:39.930" end="00:16:48.690" tts:direction="ltr">S I know why.</p>
+        <p begin="00:16:50.530" end="00:16:57.890" tts:direction="ltr">I want to make sure my brackets and my
+<br />parentheses are all getting closed.</p>
+        <p begin="00:16:57.890" end="00:17:00.530" tts:direction="ltr">If I go there, I've got that created.</p>
+        <p begin="00:17:00.530" end="00:17:05.870" tts:direction="ltr">Then we're going to drag that onto the
+<br />lapel shelf.</p>
+        <p begin="00:17:05.870" end="00:17:09.630" tts:direction="ltr">I can see those and you can see it's not
+<br />formatted.</p>
+        <p begin="00:17:09.630" end="00:17:18.690" tts:direction="ltr">What I want to do is I'm going to click
+<br />format.</p>
+        <p begin="00:17:18.930" end="00:17:22.370" tts:direction="ltr">Make sure I'm on that.</p>
+        <p begin="00:17:28.050" end="00:17:30.770" tts:direction="ltr">That's the wrong place.</p>
+        <p begin="00:17:30.770" end="00:17:33.210" tts:direction="ltr">I'm close that out. I actually want to</p>
+        <p begin="00:17:33.210" end="00:17:36.350" tts:direction="ltr">format within the pill itself in the
+<br />calculation.</p>
+        <p begin="00:17:36.350" end="00:17:41.870" tts:direction="ltr">Click on that and then select default
+<br />properties,</p>
+        <p begin="00:17:41.870" end="00:17:45.970" tts:direction="ltr">then number format, and we'll do
+<br />percentage.</p>
+        <p begin="00:17:45.970" end="00:17:48.230" tts:direction="ltr">Actually, we're going to do a custom one.</p>
+        <p begin="00:17:48.230" end="00:17:50.390" tts:direction="ltr">I've written this out on my notes.</p>
+        <p begin="00:17:50.390" end="00:17:55.550" tts:direction="ltr">We're going to do a plus</p>
+        <p begin="00:17:55.550" end="00:18:08.600" tts:direction="ltr">0.0% and then semicolon -0.0%.</p>
+        <p begin="00:18:08.600" end="00:18:10.280" tts:direction="ltr">Okay.</p>
+        <p begin="00:18:10.280" end="00:18:16.000" tts:direction="ltr">Now you can see how it's been updated and
+<br />applied there.</p>
+        <p begin="00:18:16.080" end="00:18:24.920" tts:direction="ltr">Now I want to remove those headers.</p>
+        <p begin="00:18:24.920" end="00:18:31.560" tts:direction="ltr">I'll do that by right clicking and I'll
+<br />just deselect the show headers.</p>
+        <p begin="00:18:31.560" end="00:18:33.940" tts:direction="ltr">I don't need to have these either,</p>
+        <p begin="00:18:33.940" end="00:18:36.780" tts:direction="ltr">so let's go ahead and hide those cards.</p>
+        <p begin="00:18:36.940" end="00:18:43.680" tts:direction="ltr">What I want to do is I've got 2021 above
+<br />2022, so that's good.</p>
+        <p begin="00:18:43.680" end="00:18:47.180" tts:direction="ltr">But I've got this copy that I need to take
+<br />care of.</p>
+        <p begin="00:18:47.310" end="00:18:51.310" tts:direction="ltr">What I want to do for that is now that
+<br />I've got this as copy,</p>
+        <p begin="00:18:51.310" end="00:18:59.310" tts:direction="ltr">I want to just edit that and I'm going to
+<br />now call that variance.</p>
+        <p begin="00:18:59.670" end="00:19:04.290" tts:direction="ltr">That should update in here and now it's
+<br />actually moved to the bottom.</p>
+        <p begin="00:19:04.290" end="00:19:05.650" tts:direction="ltr">Now I've got 2021,</p>
+        <p begin="00:19:05.650" end="00:19:08.090" tts:direction="ltr">2022, and I have the variance.</p>
+        <p begin="00:19:08.090" end="00:19:13.620" tts:direction="ltr">Let's go ahead and look at this. Let me
+<br />drag this out,</p>
+        <p begin="00:19:13.620" end="00:19:16.280" tts:direction="ltr">so I can have a little more space there.</p>
+        <p begin="00:19:16.280" end="00:19:21.220" tts:direction="ltr">Love that one it just goes crazy on the
+<br />space.</p>
+        <p begin="00:19:21.220" end="00:19:24.380" tts:direction="ltr">You be careful. But now I've got this
+<br />lovely side by</p>
+        <p begin="00:19:24.380" end="00:19:30.080" tts:direction="ltr">side bar chart with this candlestick like
+<br />attribute that we just created.</p>
+        <p begin="00:19:30.080" end="00:19:32.200" tts:direction="ltr">Again, candlesticks are mainly</p>
+        <p begin="00:19:32.200" end="00:19:35.380" tts:direction="ltr">used in stocks and often you'll find them
+<br />going up and down,</p>
+        <p begin="00:19:35.380" end="00:19:41.660" tts:direction="ltr">but basically it's this smaller bar that's
+<br />showing this increase or decrease.</p>
+        <p begin="00:19:41.660" end="00:19:44.020" tts:direction="ltr">One last chart to make.</p>
+        <p begin="00:19:45.120" end="00:19:50.780" tts:direction="ltr">This is our jittered bar chart.</p>
+        <p begin="00:19:50.780" end="00:19:52.740" tts:direction="ltr">We're going to do some jittering here.</p>
+        <p begin="00:19:52.740" end="00:19:55.800" tts:direction="ltr">Going to go ahead and duplicate my OG
+<br />again.</p>
+        <p begin="00:19:55.800" end="00:20:02.920" tts:direction="ltr">We're going to call this jittered bar
+<br />chart and this is number 18 here.</p>
+        <p begin="00:20:02.920" end="00:20:09.120" tts:direction="ltr">We want to go ahead and change the mark
+<br />tar type to a circle.</p>
+        <p begin="00:20:09.910" end="00:20:17.390" tts:direction="ltr">And then we're going to add row ID to the
+<br />details.</p>
+        <p begin="00:20:17.390" end="00:20:20.010" tts:direction="ltr">Let's grab this and we're going to add in</p>
+        <p begin="00:20:20.010" end="00:20:23.430" tts:direction="ltr">a lot more data here and we're going to
+<br />add all members.</p>
+        <p begin="00:20:24.550" end="00:20:33.130" tts:direction="ltr">We want to drag the sales from the column
+<br />to the size on the Marks card.</p>
+        <p begin="00:20:33.130" end="00:20:35.090" tts:direction="ltr">Let's go ahead and put that on there.</p>
+        <p begin="00:20:35.090" end="00:20:41.915" tts:direction="ltr">Now you can see I've got a lot of various
+<br />circles.</p>
+        <p begin="00:20:41.915" end="00:20:44.320" tts:direction="ltr">Now that we have that, we're going to
+<br />double</p>
+        <p begin="00:20:44.320" end="00:20:46.340" tts:direction="ltr">click on the columns and we're going to
+<br />type</p>
+        <p begin="00:20:46.340" end="00:20:50.960" tts:direction="ltr">in index with an open closed bracket.</p>
+        <p begin="00:20:51.680" end="00:20:55.920" tts:direction="ltr">I'll add that. Then we're going to change
+<br />that</p>
+        <p begin="00:20:55.920" end="00:21:03.380" tts:direction="ltr">to be compute using and we're going to
+<br />change that to row ID.</p>
+        <p begin="00:21:03.380" end="00:21:06.740" tts:direction="ltr">Now we've flattened this out.</p>
+        <p begin="00:21:06.740" end="00:21:13.260" tts:direction="ltr">Now I'm going to add in another adhoc
+<br />calculation.</p>
+        <p begin="00:21:13.260" end="00:21:16.820" tts:direction="ltr">I'm going to select on the rows and I'm
+<br />going</p>
+        <p begin="00:21:16.820" end="00:21:21.220" tts:direction="ltr">to type in random and open closed
+<br />brackets.</p>
+        <p begin="00:21:21.220" end="00:21:25.180" tts:direction="ltr">Oops. Our parentheses there,</p>
+        <p begin="00:21:25.180" end="00:21:28.800" tts:direction="ltr">hit Okay, and now you can begin to see
+<br />I've got some jittering.</p>
+        <p begin="00:21:28.800" end="00:21:33.980" tts:direction="ltr">Basically, instead of having those single
+<br />rows with all those dots,</p>
+        <p begin="00:21:33.980" end="00:21:38.240" tts:direction="ltr">now I'm making it so that I can see it up
+<br />and down and up and down.</p>
+        <p begin="00:21:38.240" end="00:21:42.220" tts:direction="ltr">Now we're going to view this a little bit
+<br />better.</p>
+        <p begin="00:21:42.220" end="00:21:46.700" tts:direction="ltr">We're going to move this from standard to
+<br />fit in width here.</p>
+        <p begin="00:21:46.700" end="00:21:52.120" tts:direction="ltr">We want to right click the X axis.</p>
+        <p begin="00:21:52.120" end="00:21:54.360" tts:direction="ltr">That's not the X axis.</p>
+        <p begin="00:21:54.360" end="00:22:02.550" tts:direction="ltr">Let's edit those axes and we're going to
+<br />select a let's</p>
+        <p begin="00:22:02.550" end="00:22:07.690" tts:direction="ltr">do fixed start is going to be</p>
+        <p begin="00:22:07.690" end="00:22:12.190" tts:direction="ltr">zero and then our fixed end is going to</p>
+        <p begin="00:22:12.190" end="00:22:16.870" tts:direction="ltr">be automatic so that we can have that in
+<br />there.</p>
+        <p begin="00:22:16.870" end="00:22:21.630" tts:direction="ltr">We'll go ahead and deselect the labels.</p>
+        <p begin="00:22:21.630" end="00:22:23.470" tts:direction="ltr">We don't need to have the labels on there.</p>
+        <p begin="00:22:23.470" end="00:22:28.830" tts:direction="ltr">And if I need to create a little more
+<br />space in between,</p>
+        <p begin="00:22:28.830" end="00:22:30.350" tts:direction="ltr">I'm going to hide these headers.</p>
+        <p begin="00:22:30.350" end="00:22:36.130" tts:direction="ltr">I'm going to right click this, Do you
+<br />select that, Do you select that.</p>
+        <p begin="00:22:36.130" end="00:22:41.050" tts:direction="ltr">Now I have a jittered bar chart to show
+<br />all of</p>
+        <p begin="00:22:41.050" end="00:22:46.130" tts:direction="ltr">the various details from the row ID
+<br />instead of having it in one line.</p>
+        <p begin="00:22:46.130" end="00:22:52.830" tts:direction="ltr">Now I get to see some areas that have a
+<br />lot more in relation to each other.</p>
+        <p begin="00:22:52.830" end="00:22:54.850" tts:direction="ltr">That's number 18.</p>
+        <p begin="00:22:54.850" end="00:22:58.330" tts:direction="ltr">You have now completed 18 different ways</p>
+        <p begin="00:22:58.330" end="00:23:00.230" tts:direction="ltr">to visualize a bar chart and it's been</p>
+        <p begin="00:23:00.230" end="00:23:07.030" tts:direction="ltr">a wonderful journey doing this bar chart
+<br />bonanza with you. Happy visit.</p>
+    </div>
+  </body>
+</tt>

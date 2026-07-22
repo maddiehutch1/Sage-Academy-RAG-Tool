@@ -126,3 +126,14 @@ The project should be built in short, verifiable milestones. Each milestone shou
 
 ## Expected Outcome
 By the end of the plan, the team should have a working prototype that demonstrates the core product idea and provides a strong base for future improvements.
+
+---
+
+## Post-MVP additions (2026-07-21)
+
+These were completed after all 7 milestones above were marked done and represent the first content expansion beyond the initial two-course prototype.
+
+### DATA5400 Course Expansion ✅
+- Added *DATA 5400: Advanced Data Visualization* as a third indexed course.
+- 63 transcript files (12 SRT + 51 DFXP) ingested with real timestamps and clean video titles.
+- All three courses (DATA2100, IS3600, DATA5400) are now live in the RAG tool and searchable end-to-end.

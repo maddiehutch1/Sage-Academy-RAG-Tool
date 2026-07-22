@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>600468543 - 1_0dmh0jnt - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.040" end="00:00:02.280" tts:direction="ltr">Hello, visitors.</p>
+        <p begin="00:00:02.280" end="00:00:03.800" tts:direction="ltr">For this adventure guide,</p>
+        <p begin="00:00:03.800" end="00:00:09.520" tts:direction="ltr">you're going to learn how to add analytics
+<br />to your views and</p>
+        <p begin="00:00:09.520" end="00:00:17.200" tts:direction="ltr">charts and uncover some additional
+<br />insights by using the tools and Tableau.</p>
+        <p begin="00:00:17.200" end="00:00:22.880" tts:direction="ltr">In order to do that, we're going to
+<br />specifically cover trend lines,</p>
+        <p begin="00:00:22.880" end="00:00:25.840" tts:direction="ltr">reference lines, reference bands,</p>
+        <p begin="00:00:25.840" end="00:00:29.600" tts:direction="ltr">and some animation to show those changes
+<br />over time.</p>
+        <p begin="00:00:29.600" end="00:00:33.000" tts:direction="ltr">Let's dive into our file.</p>
+        <p begin="00:00:33.000" end="00:00:38.155" tts:direction="ltr">You should be looking at the AG Analytics
+<br />S file.</p>
+        <p begin="00:00:38.155" end="00:00:43.470" tts:direction="ltr">The Tableau workbook and you should be on
+<br />the overview tab.</p>
+        <p begin="00:00:44.270" end="00:00:47.830" tts:direction="ltr">Let's pretend that you are in a meeting
+<br />with</p>
+        <p begin="00:00:47.830" end="00:00:52.270" tts:direction="ltr">your colleagues and you're the data
+<br />analyst,</p>
+        <p begin="00:00:52.270" end="00:00:56.830" tts:direction="ltr">and the team is trying to determine
+<br />whether or not they're meeting</p>
+        <p begin="00:00:56.830" end="00:01:02.870" tts:direction="ltr">the company quota or how many sales by
+<br />segment compared to an overall average.</p>
+        <p begin="00:01:02.870" end="00:01:07.510" tts:direction="ltr">Luckily, Tableau allows you to add
+<br />reference lines, bands,</p>
+        <p begin="00:01:07.510" end="00:01:11.120" tts:direction="ltr">and distributions to compare your data and
+<br />the view</p>
+        <p begin="00:01:11.120" end="00:01:15.960" tts:direction="ltr">very quickly and those tools are all found
+<br />in the analytics pane.</p>
+        <p begin="00:01:15.960" end="00:01:18.720" tts:direction="ltr">Here we have our data pane and we have all
+<br />of</p>
+        <p begin="00:01:18.720" end="00:01:22.360" tts:direction="ltr">our various dimensions and measures,</p>
+        <p begin="00:01:22.360" end="00:01:24.880" tts:direction="ltr">and then we have the analytics pane.</p>
+        <p begin="00:01:24.880" end="00:01:26.120" tts:direction="ltr">If you just select that,</p>
+        <p begin="00:01:26.120" end="00:01:30.440" tts:direction="ltr">then you can begin to see some of those
+<br />immediate tools like constant line,</p>
+        <p begin="00:01:30.440" end="00:01:34.360" tts:direction="ltr">average line, average with 95%.</p>
+        <p begin="00:01:34.360" end="00:01:37.320" tts:direction="ltr">This is we'll apply that in</p>
+        <p begin="00:01:37.320" end="00:01:41.440" tts:direction="ltr">an upcoming video and then reference line
+<br />and reference bands.</p>
+        <p begin="00:01:41.440" end="00:01:47.230" tts:direction="ltr">So I want you to remember that when you
+<br />need specific values or ranges,</p>
+        <p begin="00:01:47.230" end="00:01:50.830" tts:direction="ltr">you need a continuous access on Tableau.</p>
+        <p begin="00:01:50.830" end="00:01:53.870" tts:direction="ltr">While we won't use all of these features
+<br />in this class,</p>
+        <p begin="00:01:53.870" end="00:01:55.710" tts:direction="ltr">this is a great place to explore</p>
+        <p begin="00:01:55.710" end="00:02:00.670" tts:direction="ltr">potential insights using these powerful
+<br />analytic tools.</p>
+        <p begin="00:02:01.790" end="00:02:06.550" tts:direction="ltr">The first one we're going to check out is
+<br />the trend lines.</p>
+        <p begin="00:02:06.550" end="00:02:11.950" tts:direction="ltr">We'll jump into the trend line tab on the
+<br />worksheet</p>
+        <p begin="00:02:11.950" end="00:02:16.240" tts:direction="ltr">and My computer is</p>
+        <p begin="00:02:16.240" end="00:02:20.640" tts:direction="ltr">a little slow that I'm recording and
+<br />launching Tableau at the same time.</p>
+        <p begin="00:02:20.640" end="00:02:24.600" tts:direction="ltr">You might have this query processing
+<br />request</p>
+        <p begin="00:02:24.600" end="00:02:28.480" tts:direction="ltr">every once in a while and you should see</p>
+        <p begin="00:02:28.480" end="00:02:32.400" tts:direction="ltr">on this sheet a line graph</p>
+        <p begin="00:02:32.400" end="00:02:37.000" tts:direction="ltr">and it's showing the sales for gift
+<br />baskets over time.</p>
+        <p begin="00:02:37.000" end="00:02:41.800" tts:direction="ltr">What I'd like to do is look at the trend
+<br />so I can maybe</p>
+        <p begin="00:02:41.800" end="00:02:46.720" tts:direction="ltr">better understand and provide some
+<br />information to my team.</p>
+        <p begin="00:02:46.720" end="00:02:48.920" tts:direction="ltr">You can see this is very sporadic.</p>
+        <p begin="00:02:48.920" end="00:02:50.640" tts:direction="ltr">But by adding a trend line,</p>
+        <p begin="00:02:50.640" end="00:02:59.780" tts:direction="ltr">I might be able to begin to see some
+<br />trends and some confidence intervals.</p>
+        <p begin="00:02:59.780" end="00:03:03.860" tts:direction="ltr">What we'll do is we will go here to the
+<br />analytics pane.</p>
+        <p begin="00:03:03.860" end="00:03:08.180" tts:direction="ltr">It should be open, and we're going to go
+<br />ahead and do a trend line.</p>
+        <p begin="00:03:08.180" end="00:03:11.540" tts:direction="ltr">I'm going to just drag it and drop it.</p>
+        <p begin="00:03:11.540" end="00:03:17.850" tts:direction="ltr">Now, there are Several several options for
+<br />your trend line.</p>
+        <p begin="00:03:17.850" end="00:03:19.890" tts:direction="ltr">You have linear, logarithmic,</p>
+        <p begin="00:03:19.890" end="00:03:22.250" tts:direction="ltr">exponential, polynomial, and power.</p>
+        <p begin="00:03:22.250" end="00:03:24.770" tts:direction="ltr">You can see only three of those are
+<br />available.</p>
+        <p begin="00:03:24.770" end="00:03:28.810" tts:direction="ltr">You will almost always be using linear.</p>
+        <p begin="00:03:28.810" end="00:03:31.410" tts:direction="ltr">If you know enough about statistics to use</p>
+        <p begin="00:03:31.410" end="00:03:33.890" tts:direction="ltr">exponential or polynomial, then go ahead.</p>
+        <p begin="00:03:33.890" end="00:03:35.650" tts:direction="ltr">But for basic business data,</p>
+        <p begin="00:03:35.650" end="00:03:38.450" tts:direction="ltr">it will almost always be linear.</p>
+        <p begin="00:03:38.450" end="00:03:40.450" tts:direction="ltr">We'll go ahead and select that.</p>
+        <p begin="00:03:40.450" end="00:03:42.850" tts:direction="ltr">Now you can see that trend line.</p>
+        <p begin="00:03:42.850" end="00:03:44.650" tts:direction="ltr">If you hover over it,</p>
+        <p begin="00:03:44.650" end="00:03:48.905" tts:direction="ltr">it gives you the R squared and the P
+<br />value.</p>
+        <p begin="00:03:48.905" end="00:03:55.400" tts:direction="ltr">Now, this is important because if you
+<br />studied statistics,</p>
+        <p begin="00:03:55.400" end="00:03:57.360" tts:direction="ltr">which I'm sure many of you have already,</p>
+        <p begin="00:03:57.360" end="00:04:00.440" tts:direction="ltr">you understand that our value</p>
+        <p begin="00:04:00.440" end="00:04:06.880" tts:direction="ltr">provides and explains the amount of
+<br />variance within the data.</p>
+        <p begin="00:04:06.880" end="00:04:11.880" tts:direction="ltr">The model that was used to draw this line
+<br />or has this</p>
+        <p begin="00:04:11.880" end="00:04:16.960" tts:direction="ltr">0.5 2274, our squared value.</p>
+        <p begin="00:04:16.960" end="00:04:22.440" tts:direction="ltr">What that explains is that there's about a
+<br />5% of variance in the data.</p>
+        <p begin="00:04:22.440" end="00:04:27.345" tts:direction="ltr">Now the P value is less than 0.0 001.</p>
+        <p begin="00:04:27.345" end="00:04:29.130" tts:direction="ltr">And that's very low.</p>
+        <p begin="00:04:29.130" end="00:04:31.410" tts:direction="ltr">Normally for business applications,</p>
+        <p begin="00:04:31.410" end="00:04:35.210" tts:direction="ltr">you would like to see that at about 0.10
+<br />or below</p>
+        <p begin="00:04:35.210" end="00:04:41.090" tts:direction="ltr">and the P value is the chance that a
+<br />result happened randomly.</p>
+        <p begin="00:04:41.090" end="00:04:43.210" tts:direction="ltr">If you're working in the scientific field,</p>
+        <p begin="00:04:43.210" end="00:04:46.450" tts:direction="ltr">then a P value of 0.05 is</p>
+        <p begin="00:04:46.450" end="00:04:50.810" tts:direction="ltr">preferred just due to the nature of
+<br />scientific research.</p>
+        <p begin="00:04:50.810" end="00:04:55.410" tts:direction="ltr">We're going to add some confidence spans
+<br />to this trend line.</p>
+        <p begin="00:04:55.410" end="00:04:58.425" tts:direction="ltr">If I select that, I can just hit Edit.</p>
+        <p begin="00:04:58.425" end="00:05:00.520" tts:direction="ltr">The dialog box appears.</p>
+        <p begin="00:05:00.520" end="00:05:02.840" tts:direction="ltr">Again, you could switch the model type
+<br />here.</p>
+        <p begin="00:05:02.840" end="00:05:04.480" tts:direction="ltr">You could add some factors,</p>
+        <p begin="00:05:04.480" end="00:05:06.200" tts:direction="ltr">and then you have some options here.</p>
+        <p begin="00:05:06.200" end="00:05:10.000" tts:direction="ltr">You can have this be shown in the tooltip,
+<br />or you can remove that.</p>
+        <p begin="00:05:10.000" end="00:05:13.440" tts:direction="ltr">Let's go ahead and select the show
+<br />confidence bands,</p>
+        <p begin="00:05:13.440" end="00:05:15.480" tts:direction="ltr">and then you can also have</p>
+        <p begin="00:05:15.480" end="00:05:19.240" tts:direction="ltr">the trend line to be a different color if
+<br />you add another one,</p>
+        <p begin="00:05:19.240" end="00:05:21.680" tts:direction="ltr">and then show recalculated line when you</p>
+        <p begin="00:05:21.680" end="00:05:24.940" tts:direction="ltr">select different areas and I'll show that
+<br />in just a moment too.</p>
+        <p begin="00:05:24.940" end="00:05:27.840" tts:direction="ltr">Here we've got these confidence bands</p>
+        <p begin="00:05:27.840" end="00:05:32.160" tts:direction="ltr">and there are 95% confidence bands that
+<br />have been added.</p>
+        <p begin="00:05:32.160" end="00:05:35.120" tts:direction="ltr">These are telling you that 95% of the time</p>
+        <p begin="00:05:35.120" end="00:05:39.560" tts:direction="ltr">the true average of sales falls within
+<br />this range.</p>
+        <p begin="00:05:39.560" end="00:05:42.640" tts:direction="ltr">What I like to do when I use the
+<br />confidence band is to really</p>
+        <p begin="00:05:42.640" end="00:05:46.640" tts:direction="ltr">understand if it's in the same zone, in
+<br />the same direction.</p>
+        <p begin="00:05:46.640" end="00:05:52.410" tts:direction="ltr">In this case, it is. I can feel fairly
+<br />confident that Um,</p>
+        <p begin="00:05:52.410" end="00:05:55.170" tts:direction="ltr">that sales are trending upwards.</p>
+        <p begin="00:05:55.170" end="00:05:57.450" tts:direction="ltr">Although there begins because I don't have</p>
+        <p begin="00:05:57.450" end="00:06:00.170" tts:direction="ltr">as much data back here in the back end,</p>
+        <p begin="00:06:00.170" end="00:06:02.010" tts:direction="ltr">they begin to widen here.</p>
+        <p begin="00:06:02.010" end="00:06:08.570" tts:direction="ltr">But I feel pretty confident that it would
+<br />be still in an upward trajectory.</p>
+        <p begin="00:06:11.060" end="00:06:20.060" tts:direction="ltr">Let's tackle reference lines next and
+<br />we'll head to the reference line tab,</p>
+        <p begin="00:06:20.060" end="00:06:22.140" tts:direction="ltr">the sheets, we've got two of them.</p>
+        <p begin="00:06:22.140" end="00:06:27.860" tts:direction="ltr">The first one is several bar charts and</p>
+        <p begin="00:06:27.860" end="00:06:30.540" tts:direction="ltr">one way that we can help aid</p>
+        <p begin="00:06:30.540" end="00:06:34.260" tts:direction="ltr">our analysis is to add a reference line or
+<br />a reference band.</p>
+        <p begin="00:06:34.260" end="00:06:37.260" tts:direction="ltr">These are properties of an axis.</p>
+        <p begin="00:06:37.260" end="00:06:41.780" tts:direction="ltr">Just remember that reference lines are
+<br />part of</p>
+        <p begin="00:06:41.780" end="00:06:47.180" tts:direction="ltr">the axis because they show a value
+<br />accordingly across a continuous measure.</p>
+        <p begin="00:06:47.180" end="00:06:49.460" tts:direction="ltr">I'm going to create a reference lines to
+<br />look at</p>
+        <p begin="00:06:49.460" end="00:06:52.820" tts:direction="ltr">the average amount of sales for each of
+<br />our three categories.</p>
+        <p begin="00:06:52.820" end="00:06:55.940" tts:direction="ltr">Because I've got three categories and
+<br />three segments,</p>
+        <p begin="00:06:55.940" end="00:07:00.460" tts:direction="ltr">I'm going to get nine individual reference
+<br />lines</p>
+        <p begin="00:07:00.460" end="00:07:02.620" tts:direction="ltr">because there's going to be nine averages,</p>
+        <p begin="00:07:02.620" end="00:07:05.745" tts:direction="ltr">one for each category and one for each of
+<br />the segments.</p>
+        <p begin="00:07:05.745" end="00:07:08.470" tts:direction="ltr">There's two ways that we can add a
+<br />reference line.</p>
+        <p begin="00:07:08.470" end="00:07:14.070" tts:direction="ltr">One is from the analytics panel and the
+<br />other is directly from the axis.</p>
+        <p begin="00:07:14.070" end="00:07:17.750" tts:direction="ltr">I'm going to do directly from the axis by
+<br />right clicking and</p>
+        <p begin="00:07:17.750" end="00:07:22.030" tts:direction="ltr">that helps you tie that reference lines
+<br />are associated with axis.</p>
+        <p begin="00:07:22.030" end="00:07:25.270" tts:direction="ltr">Then I'm just going to add reference line.</p>
+        <p begin="00:07:25.270" end="00:07:28.590" tts:direction="ltr">Now you have this dialogue box that gives
+<br />you</p>
+        <p begin="00:07:28.590" end="00:07:32.350" tts:direction="ltr">a few options and we'll go through a few
+<br />of these during this demo,</p>
+        <p begin="00:07:32.350" end="00:07:34.415" tts:direction="ltr">but I want to focus on the line.</p>
+        <p begin="00:07:34.415" end="00:07:36.960" tts:direction="ltr">I'm just going to move this off to the
+<br />side so</p>
+        <p begin="00:07:36.960" end="00:07:39.560" tts:direction="ltr">we can see if we put the entire table,</p>
+        <p begin="00:07:39.560" end="00:07:45.240" tts:direction="ltr">I'm wondering if you can guess what
+<br />reference line we'll show.</p>
+        <p begin="00:07:45.240" end="00:07:50.520" tts:direction="ltr">If you said the same reference line across
+<br />each segment, you would be correct.</p>
+        <p begin="00:07:50.520" end="00:07:53.745" tts:direction="ltr">That's not very valuable necessarily.</p>
+        <p begin="00:07:53.745" end="00:07:56.690" tts:direction="ltr">It might be depending on what your
+<br />question is.</p>
+        <p begin="00:07:56.690" end="00:08:02.410" tts:direction="ltr">Per cell, this just takes you to the end
+<br />of the bar,</p>
+        <p begin="00:08:02.410" end="00:08:07.530" tts:direction="ltr">the bar and that's not very helpful for
+<br />this particular chart.</p>
+        <p begin="00:08:07.530" end="00:08:09.810" tts:direction="ltr">But per pane is what we're looking for.</p>
+        <p begin="00:08:09.810" end="00:08:13.050" tts:direction="ltr">All of these segments,</p>
+        <p begin="00:08:13.050" end="00:08:15.410" tts:direction="ltr">these categories, we're averaging them.</p>
+        <p begin="00:08:15.410" end="00:08:18.970" tts:direction="ltr">That is what we want. In the dialog box,</p>
+        <p begin="00:08:18.970" end="00:08:21.670" tts:direction="ltr">you can change the value.</p>
+        <p begin="00:08:21.670" end="00:08:24.090" tts:direction="ltr">And you can create a new parameter,</p>
+        <p begin="00:08:24.090" end="00:08:25.610" tts:direction="ltr">which we'll discuss in a little bit.</p>
+        <p begin="00:08:25.610" end="00:08:28.810" tts:direction="ltr">You can also have a different computation.</p>
+        <p begin="00:08:28.810" end="00:08:30.930" tts:direction="ltr">In this case, we'll have average</p>
+        <p begin="00:08:30.930" end="00:08:36.450" tts:direction="ltr">and you can see here you've got none value
+<br />computation or a custom.</p>
+        <p begin="00:08:36.450" end="00:08:39.770" tts:direction="ltr">Again, you have control over your
+<br />reference span,</p>
+        <p begin="00:08:39.770" end="00:08:43.370" tts:direction="ltr">line only line and confidence interval.</p>
+        <p begin="00:08:43.370" end="00:08:46.610" tts:direction="ltr">You can add that within the reference line
+<br />as well.</p>
+        <p begin="00:08:46.610" end="00:08:48.650" tts:direction="ltr">Then you can change your line type.</p>
+        <p begin="00:08:48.650" end="00:08:50.570" tts:direction="ltr">If you want to do some formatting here,</p>
+        <p begin="00:08:50.570" end="00:08:55.330" tts:direction="ltr">I can change that to orange to really
+<br />highlight that reference line.</p>
+        <p begin="00:08:55.330" end="00:08:58.970" tts:direction="ltr">I could even use some design techniques by</p>
+        <p begin="00:08:58.970" end="00:09:02.680" tts:direction="ltr">adding some emphasis to some of my areas.</p>
+        <p begin="00:09:02.680" end="00:09:07.440" tts:direction="ltr">Maybe I really want to focus that
+<br />opportunity that's forward.</p>
+        <p begin="00:09:07.440" end="00:09:11.120" tts:direction="ltr">But for now, I'm just going to say, okay.</p>
+        <p begin="00:09:11.120" end="00:09:16.520" tts:direction="ltr">Now, one of the great things that you can
+<br />do on the fly with your team is that</p>
+        <p begin="00:09:16.520" end="00:09:19.080" tts:direction="ltr">you might indicate this office supply area</p>
+        <p begin="00:09:19.080" end="00:09:21.640" tts:direction="ltr">and you see that there are these two
+<br />outliers right here.</p>
+        <p begin="00:09:21.640" end="00:09:24.680" tts:direction="ltr">But I want to find the average maybe of</p>
+        <p begin="00:09:24.680" end="00:09:30.360" tts:direction="ltr">just these ones in the middle here and so
+<br />I can just select that.</p>
+        <p begin="00:09:30.360" end="00:09:36.920" tts:direction="ltr">That's the highlight button that I
+<br />selected in the reference line dialog box,</p>
+        <p begin="00:09:36.920" end="00:09:42.280" tts:direction="ltr">and then I can see that just these
+<br />categories are selected,</p>
+        <p begin="00:09:42.280" end="00:09:45.000" tts:direction="ltr">and then I have my reference line,</p>
+        <p begin="00:09:45.000" end="00:09:49.400" tts:direction="ltr">my average of 67,002 oh four for those.</p>
+        <p begin="00:09:49.400" end="00:09:53.360" tts:direction="ltr">I'm going to click off of that and then
+<br />I'll just pop back there.</p>
+        <p begin="00:09:53.360" end="00:09:57.160" tts:direction="ltr">I'm going to create another reference
+<br />line.</p>
+        <p begin="00:09:57.160" end="00:10:00.920" tts:direction="ltr">This time, I'm just going to create a
+<br />scatter plot.</p>
+        <p begin="00:10:00.920" end="00:10:04.920" tts:direction="ltr">I'll just do a quick scatter plot by a</p>
+        <p begin="00:10:05.070" end="00:10:10.230" tts:direction="ltr">Putting sales, let me come back to here on
+<br />the data.</p>
+        <p begin="00:10:10.230" end="00:10:13.390" tts:direction="ltr">I'm going to take sales and put that on
+<br />columns,</p>
+        <p begin="00:10:13.390" end="00:10:17.790" tts:direction="ltr">and then I'm going to do profit on rows to
+<br />create my scatter plot.</p>
+        <p begin="00:10:17.790" end="00:10:19.910" tts:direction="ltr">I've got my one mark here,</p>
+        <p begin="00:10:19.910" end="00:10:22.630" tts:direction="ltr">but of course, I want to increase that.</p>
+        <p begin="00:10:22.630" end="00:10:26.510" tts:direction="ltr">I'm going to do that by putting customer
+<br />name on the detail.</p>
+        <p begin="00:10:26.510" end="00:10:29.310" tts:direction="ltr">Then I'll have my scatter plot.</p>
+        <p begin="00:10:29.310" end="00:10:33.230" tts:direction="ltr">Now I can add a reference line here by</p>
+        <p begin="00:10:33.230" end="00:10:37.655" tts:direction="ltr">going to the analytics pane, selecting
+<br />reference line.</p>
+        <p begin="00:10:37.655" end="00:10:39.680" tts:direction="ltr">Double clicking that.</p>
+        <p begin="00:10:39.680" end="00:10:43.040" tts:direction="ltr">That's the second way that you can add a
+<br />reference line.</p>
+        <p begin="00:10:43.040" end="00:10:46.400" tts:direction="ltr">This time, I'm going to move this over so
+<br />we can see that.</p>
+        <p begin="00:10:46.400" end="00:10:49.600" tts:direction="ltr">Again, entire table per pane and per cell,</p>
+        <p begin="00:10:49.600" end="00:10:53.000" tts:direction="ltr">all do the same thing because that's all
+<br />I've got available to me.</p>
+        <p begin="00:10:53.000" end="00:10:57.560" tts:direction="ltr">I can again, select what I'm going to be
+<br />referencing,</p>
+        <p begin="00:10:57.560" end="00:11:01.080" tts:direction="ltr">in this case, sum of sales and I'm
+<br />averaging those.</p>
+        <p begin="00:11:01.080" end="00:11:04.040" tts:direction="ltr">Same drop down menus.</p>
+        <p begin="00:11:04.040" end="00:11:09.120" tts:direction="ltr">Then I can also change my formatting here
+<br />too.</p>
+        <p begin="00:11:09.120" end="00:11:14.000" tts:direction="ltr">Maybe I might want to highlight this
+<br />specific average that I have right here.</p>
+        <p begin="00:11:14.000" end="00:11:17.350" tts:direction="ltr">Again, we're showing the recalculation.</p>
+        <p begin="00:11:17.350" end="00:11:19.700" tts:direction="ltr">I'm going to go ahead and say,</p>
+        <p begin="00:11:19.700" end="00:11:21.780" tts:direction="ltr">okay, and I can do the same thing.</p>
+        <p begin="00:11:21.780" end="00:11:25.420" tts:direction="ltr">I can select this area.</p>
+        <p begin="00:11:26.940" end="00:11:30.420" tts:direction="ltr">I was having a hard time with my drag and
+<br />drop here.</p>
+        <p begin="00:11:30.420" end="00:11:35.500" tts:direction="ltr">I'm just going to click and maybe select
+<br />this area.</p>
+        <p begin="00:11:35.500" end="00:11:39.540" tts:direction="ltr">Then this can give me that there's 82
+<br />items selected.</p>
+        <p begin="00:11:39.540" end="00:11:44.940" tts:direction="ltr">Here is the sum of sales right here and
+<br />now here's my new average.</p>
+        <p begin="00:11:44.940" end="00:11:47.740" tts:direction="ltr">On the fly, I might need to gather</p>
+        <p begin="00:11:47.740" end="00:11:51.260" tts:direction="ltr">that information or show my team that
+<br />information to help inform them.</p>
+        <p begin="00:11:51.260" end="00:11:56.655" tts:direction="ltr">There are two ways that you can add
+<br />reference lines to your charts.</p>
+        <p begin="00:11:56.655" end="00:11:59.930" tts:direction="ltr">Reference bands are very similar</p>
+        <p begin="00:11:59.930" end="00:12:02.770" tts:direction="ltr">to reference lines and we're going to look
+<br />at these</p>
+        <p begin="00:12:02.770" end="00:12:05.010" tts:direction="ltr">and how we can apply those in Tableau by</p>
+        <p begin="00:12:05.010" end="00:12:08.610" tts:direction="ltr">selecting the next sheet, which should be
+<br />blank.</p>
+        <p begin="00:12:08.610" end="00:12:12.330" tts:direction="ltr">Reference bands work very similarly.</p>
+        <p begin="00:12:12.330" end="00:12:14.250" tts:direction="ltr">They're both attached to an axis,</p>
+        <p begin="00:12:14.250" end="00:12:17.130" tts:direction="ltr">but a reference line only shows one value,</p>
+        <p begin="00:12:17.130" end="00:12:20.170" tts:direction="ltr">whereas a reference band shows a range</p>
+        <p begin="00:12:20.170" end="00:12:24.050" tts:direction="ltr">between a minimum and maximum and color
+<br />band.</p>
+        <p begin="00:12:24.050" end="00:12:27.490" tts:direction="ltr">They're really useful if you want to see
+<br />things that</p>
+        <p begin="00:12:27.490" end="00:12:31.250" tts:direction="ltr">are coming into and out of certain
+<br />boundaries.</p>
+        <p begin="00:12:31.250" end="00:12:34.055" tts:direction="ltr">Again, that minimum and then maximum.</p>
+        <p begin="00:12:34.055" end="00:12:38.460" tts:direction="ltr">And what we'll do is we're going to create
+<br />a couple of charts.</p>
+        <p begin="00:12:38.460" end="00:12:41.660" tts:direction="ltr">The first one that we're going to make is</p>
+        <p begin="00:12:41.660" end="00:12:49.420" tts:direction="ltr">we'll go back to our data here and we'll
+<br />put profit on rows,</p>
+        <p begin="00:12:49.420" end="00:12:51.060" tts:direction="ltr">and then I'm going to do</p>
+        <p begin="00:12:51.060" end="00:12:54.020" tts:direction="ltr">an order date on to</p>
+        <p begin="00:12:54.020" end="00:12:58.060" tts:direction="ltr">columns and I'm going to change the order
+<br />date so I don't want to.</p>
+        <p begin="00:12:58.060" end="00:13:06.790" tts:direction="ltr">I do want to line, but I want to have it
+<br />based on a On the months.</p>
+        <p begin="00:13:06.790" end="00:13:08.830" tts:direction="ltr">I'm going to go down here and I'm going to
+<br />click on</p>
+        <p begin="00:13:08.830" end="00:13:12.230" tts:direction="ltr">that and then that's changed into a
+<br />measure.</p>
+        <p begin="00:13:12.230" end="00:13:14.190" tts:direction="ltr">That is continuous.</p>
+        <p begin="00:13:14.190" end="00:13:18.350" tts:direction="ltr">Remember, we need those in order to create
+<br />these reference bands.</p>
+        <p begin="00:13:18.350" end="00:13:23.830" tts:direction="ltr">Now I have my simple line chart and I want</p>
+        <p begin="00:13:23.830" end="00:13:31.090" tts:direction="ltr">to think about the two values of profits.</p>
+        <p begin="00:13:31.090" end="00:13:35.090" tts:direction="ltr">I can see which months fall outside of
+<br />that boundary,</p>
+        <p begin="00:13:35.090" end="00:13:39.770" tts:direction="ltr">and then I'm going to look and see what's
+<br />above or below.</p>
+        <p begin="00:13:39.770" end="00:13:43.770" tts:direction="ltr">Remember, I can access the analytics in a
+<br />couple of</p>
+        <p begin="00:13:43.770" end="00:13:47.050" tts:direction="ltr">ways through the axis or through the
+<br />analytics pane.</p>
+        <p begin="00:13:47.050" end="00:13:48.570" tts:direction="ltr">In this case, I'm going to just take</p>
+        <p begin="00:13:48.570" end="00:13:52.410" tts:direction="ltr">the reference band and drop it into the
+<br />view.</p>
+        <p begin="00:13:52.410" end="00:13:57.330" tts:direction="ltr">Now, notice that I can add a reference
+<br />band to the table and pain or cell.</p>
+        <p begin="00:13:57.330" end="00:13:58.930" tts:direction="ltr">We know that's all the same.</p>
+        <p begin="00:13:58.930" end="00:14:02.730" tts:direction="ltr">Now I have an option of just doing month
+<br />only or profit.</p>
+        <p begin="00:14:02.730" end="00:14:06.130" tts:direction="ltr">For this case, what I'm going to do is I'm
+<br />just interested in the profit.</p>
+        <p begin="00:14:06.130" end="00:14:07.850" tts:direction="ltr">I'm going to drop that there.</p>
+        <p begin="00:14:07.850" end="00:14:12.410" tts:direction="ltr">And the dialog box comes up and it already
+<br />has the band,</p>
+        <p begin="00:14:12.410" end="00:14:14.130" tts:direction="ltr">it's the entire table,</p>
+        <p begin="00:14:14.130" end="00:14:17.610" tts:direction="ltr">and so now I have the sum of profit.</p>
+        <p begin="00:14:17.610" end="00:14:22.090" tts:direction="ltr">I want to control how much that my band is
+<br />showing.</p>
+        <p begin="00:14:22.090" end="00:14:25.650" tts:direction="ltr">Instead of minimum, I'm going to select
+<br />constant.</p>
+        <p begin="00:14:25.650" end="00:14:28.610" tts:direction="ltr">By doing so, I can now change that value.</p>
+        <p begin="00:14:28.610" end="00:14:33.835" tts:direction="ltr">Let's say I'm going to have this minimum
+<br />to be 200,000, okay?</p>
+        <p begin="00:14:33.835" end="00:14:37.060" tts:direction="ltr">Then that's where it's from,</p>
+        <p begin="00:14:37.060" end="00:14:39.100" tts:direction="ltr">and then I want it to go two.</p>
+        <p begin="00:14:39.100" end="00:14:41.260" tts:direction="ltr">Again, I'm going to do the constant</p>
+        <p begin="00:14:41.260" end="00:14:43.820" tts:direction="ltr">instead of the maximum so that I have more
+<br />control.</p>
+        <p begin="00:14:43.820" end="00:14:45.740" tts:direction="ltr">I still have my minimum and maximum,</p>
+        <p begin="00:14:45.740" end="00:14:51.460" tts:direction="ltr">but it's not for the whole entire range
+<br />there.</p>
+        <p begin="00:14:51.460" end="00:14:55.180" tts:direction="ltr">Then I can add in a line if I so choose.</p>
+        <p begin="00:14:55.180" end="00:14:56.500" tts:direction="ltr">Maybe I have a dark line.</p>
+        <p begin="00:14:56.500" end="00:15:00.940" tts:direction="ltr">Let's go for an orange because that's
+<br />where we're at, and then the fill.</p>
+        <p begin="00:15:00.940" end="00:15:05.020" tts:direction="ltr">Let's go ahead and click Okay and see what
+<br />we have.</p>
+        <p begin="00:15:05.020" end="00:15:11.065" tts:direction="ltr">Now we have the 20,000 as our minimum and
+<br />our 60,000 as our maximum.</p>
+        <p begin="00:15:11.065" end="00:15:14.150" tts:direction="ltr">And then we can begin to see who are the
+<br />outliers</p>
+        <p begin="00:15:14.150" end="00:15:17.990" tts:direction="ltr">that are below and that are above that.</p>
+        <p begin="00:15:18.710" end="00:15:23.590" tts:direction="ltr">Reference bands are really great ways of
+<br />enhancing the data,</p>
+        <p begin="00:15:23.590" end="00:15:26.430" tts:direction="ltr">and in this case, it's on a fixed value.</p>
+        <p begin="00:15:26.430" end="00:15:29.310" tts:direction="ltr">Now, maybe I want to have a band that</p>
+        <p begin="00:15:29.310" end="00:15:32.670" tts:direction="ltr">shows what the average is instead and we
+<br />can do that as well.</p>
+        <p begin="00:15:32.670" end="00:15:42.030" tts:direction="ltr">If I right click down here,</p>
+        <p begin="00:15:42.030" end="00:15:50.180" tts:direction="ltr">I can on that axis,</p>
+        <p begin="00:15:50.180" end="00:15:53.380" tts:direction="ltr">I can edit the reference line right here</p>
+        <p begin="00:15:53.380" end="00:15:58.020" tts:direction="ltr">or I can also remove the reference line.</p>
+        <p begin="00:15:58.020" end="00:15:59.980" tts:direction="ltr">That's how you would do that.</p>
+        <p begin="00:15:59.980" end="00:16:04.100" tts:direction="ltr">Let's go ahead and add another reference
+<br />line.</p>
+        <p begin="00:16:04.100" end="00:16:07.140" tts:direction="ltr">I'm going to drag that in and I'm</p>
+        <p begin="00:16:07.140" end="00:16:10.700" tts:direction="ltr">going to do this on profit again, just
+<br />like we did before.</p>
+        <p begin="00:16:10.700" end="00:16:18.660" tts:direction="ltr">This time, I'm we've got the minimum,
+<br />which I could change again,</p>
+        <p begin="00:16:18.660" end="00:16:20.940" tts:direction="ltr">but I'm going to leave that</p>
+        <p begin="00:16:20.940" end="00:16:27.820" tts:direction="ltr">and What I'll do for this one is instead
+<br />of having minimum,</p>
+        <p begin="00:16:27.820" end="00:16:30.300" tts:direction="ltr">maybe I'll select the average,</p>
+        <p begin="00:16:30.300" end="00:16:34.220" tts:direction="ltr">and then I will leave the maximum up.</p>
+        <p begin="00:16:34.220" end="00:16:36.860" tts:direction="ltr">Let's just take a look at what that looks
+<br />like.</p>
+        <p begin="00:16:36.860" end="00:16:40.300" tts:direction="ltr">The average is not that 20,000 that I had,</p>
+        <p begin="00:16:40.300" end="00:16:44.820" tts:direction="ltr">but it looks like it's a little bit higher
+<br />than 30,000.</p>
+        <p begin="00:16:44.820" end="00:16:51.300" tts:direction="ltr">This is interesting because Tableau is
+<br />doing that calculation for me to</p>
+        <p begin="00:16:51.300" end="00:16:53.835" tts:direction="ltr">figure out what the average is for all of</p>
+        <p begin="00:16:53.835" end="00:16:57.610" tts:direction="ltr">these sales and providing me this line.</p>
+        <p begin="00:16:57.610" end="00:17:01.370" tts:direction="ltr">Let me just go and close this box right
+<br />here to show that average,</p>
+        <p begin="00:17:01.370" end="00:17:03.770" tts:direction="ltr">and then I'm showing the maximum,</p>
+        <p begin="00:17:03.770" end="00:17:07.450" tts:direction="ltr">which is right here, that highest sale is
+<br />that tipping point.</p>
+        <p begin="00:17:07.450" end="00:17:13.450" tts:direction="ltr">This can also help create some interesting
+<br />dialogues or projections on how we</p>
+        <p begin="00:17:13.450" end="00:17:20.085" tts:direction="ltr">can continually use our data to improve
+<br />our sales outcomes and quotas.</p>
+        <p begin="00:17:20.085" end="00:17:24.840" tts:direction="ltr">Let's go ahead and go to the second
+<br />reference band sheet</p>
+        <p begin="00:17:24.840" end="00:17:31.120" tts:direction="ltr">and let's go back to the data and put
+<br />sales on columns.</p>
+        <p begin="00:17:31.120" end="00:17:32.960" tts:direction="ltr">We're going to create a bar chart here,</p>
+        <p begin="00:17:32.960" end="00:17:37.920" tts:direction="ltr">and then we're going to have our
+<br />subcategories on rows.</p>
+        <p begin="00:17:37.920" end="00:17:41.760" tts:direction="ltr">Now we have all of our subcategories here</p>
+        <p begin="00:17:41.760" end="00:17:46.080" tts:direction="ltr">and perhaps we want to do a reference band
+<br />here as well,</p>
+        <p begin="00:17:46.080" end="00:17:47.400" tts:direction="ltr">and we're going to go ahead and drag</p>
+        <p begin="00:17:47.400" end="00:17:49.880" tts:direction="ltr">that and we're going to have that on
+<br />table.</p>
+        <p begin="00:17:50.840" end="00:17:55.440" tts:direction="ltr">Here we have the minimum, but again,</p>
+        <p begin="00:17:55.440" end="00:18:05.280" tts:direction="ltr">we can change that and we could say Maybe
+<br />let's do a constant here.</p>
+        <p begin="00:18:05.280" end="00:18:11.160" tts:direction="ltr">Let's do 1 million,</p>
+        <p begin="00:18:11.640" end="00:18:16.600" tts:direction="ltr">and then we'll maintain the maximum.</p>
+        <p begin="00:18:16.600" end="00:18:21.600" tts:direction="ltr">Let's go ahead and we can change that as
+<br />well.</p>
+        <p begin="00:18:21.600" end="00:18:24.440" tts:direction="ltr">Maybe we'll just do a lighter color.</p>
+        <p begin="00:18:26.520" end="00:18:31.560" tts:direction="ltr">That's probably too light. I need a little
+<br />bit of contrast there.</p>
+        <p begin="00:18:31.560" end="00:18:35.320" tts:direction="ltr">And so now I've got the marker of 1
+<br />million</p>
+        <p begin="00:18:35.320" end="00:18:39.520" tts:direction="ltr">with the maximum all the way all the way
+<br />to 1.7 million.</p>
+        <p begin="00:18:39.520" end="00:18:41.560" tts:direction="ltr">Again, I'm using some enclosure,</p>
+        <p begin="00:18:41.560" end="00:18:44.920" tts:direction="ltr">which is a design technique to identify
+<br />that</p>
+        <p begin="00:18:44.920" end="00:18:49.640" tts:direction="ltr">these particular subcategories have
+<br />reached,</p>
+        <p begin="00:18:49.640" end="00:18:54.840" tts:direction="ltr">and this one barely, the appliances barely
+<br />have reached the million,</p>
+        <p begin="00:18:55.240" end="00:19:00.920" tts:direction="ltr">and then we have the rest of them that are
+<br />lagging behind.</p>
+        <p begin="00:19:00.920" end="00:19:03.600" tts:direction="ltr">So that gives you a really good analysis
+<br />of</p>
+        <p begin="00:19:03.600" end="00:19:09.960" tts:direction="ltr">maybe categories that could be eliminated
+<br />or need some additional help.</p>
+        <p begin="00:19:10.460" end="00:19:15.060" tts:direction="ltr">So we've come to the final part of this
+<br />adventure guide,</p>
+        <p begin="00:19:15.060" end="00:19:17.540" tts:direction="ltr">which is animation to help aid in</p>
+        <p begin="00:19:17.540" end="00:19:20.420" tts:direction="ltr">understanding how our data is changing
+<br />over time.</p>
+        <p begin="00:19:20.420" end="00:19:24.620" tts:direction="ltr">Let's go ahead and jump on to the final
+<br />tab of</p>
+        <p begin="00:19:24.620" end="00:19:29.885" tts:direction="ltr">our worksheet here where we've got the
+<br />beginnings of a scatter plot.</p>
+        <p begin="00:19:29.885" end="00:19:35.750" tts:direction="ltr">And so a common use for animation is
+<br />what's called a connected scatter plot.</p>
+        <p begin="00:19:35.750" end="00:19:39.790" tts:direction="ltr">This is a scatter plot where you look at
+<br />portions of time and connect the dots</p>
+        <p begin="00:19:39.790" end="00:19:44.990" tts:direction="ltr">together to see where the data was and
+<br />where it is based on the latest data.</p>
+        <p begin="00:19:44.990" end="00:19:46.830" tts:direction="ltr">In order to do that in Tableau,</p>
+        <p begin="00:19:46.830" end="00:19:51.390" tts:direction="ltr">we make use of the pages shelf right up
+<br />here.</p>
+        <p begin="00:19:51.390" end="00:19:55.030" tts:direction="ltr">This allows us to step through our data at
+<br />a particular interval.</p>
+        <p begin="00:19:55.030" end="00:19:56.990" tts:direction="ltr">I've got a simple scatter plot.</p>
+        <p begin="00:19:56.990" end="00:19:58.310" tts:direction="ltr">I've got my sum of sales,</p>
+        <p begin="00:19:58.310" end="00:19:59.590" tts:direction="ltr">my sum of profit,</p>
+        <p begin="00:19:59.590" end="00:20:04.030" tts:direction="ltr">and all my column and my rows and I've
+<br />broken it down into category.</p>
+        <p begin="00:20:04.030" end="00:20:06.830" tts:direction="ltr">That's how this is constructed at this
+<br />point.</p>
+        <p begin="00:20:06.830" end="00:20:11.375" tts:direction="ltr">I've also put the quantity onto the size
+<br />if you notice that right here.</p>
+        <p begin="00:20:11.375" end="00:20:13.680" tts:direction="ltr">So I'm keeping it pretty simple</p>
+        <p begin="00:20:13.680" end="00:20:16.040" tts:direction="ltr">and just using these three different data
+<br />points.</p>
+        <p begin="00:20:16.040" end="00:20:19.560" tts:direction="ltr">Now what we see here is the combination of
+<br />all of our data.</p>
+        <p begin="00:20:19.560" end="00:20:23.560" tts:direction="ltr">It's all been summed up together and then
+<br />split into these three points.</p>
+        <p begin="00:20:23.560" end="00:20:26.200" tts:direction="ltr">From this, it looks like the technology is</p>
+        <p begin="00:20:26.200" end="00:20:29.160" tts:direction="ltr">the highest sales and highest profit,</p>
+        <p begin="00:20:29.160" end="00:20:31.040" tts:direction="ltr">but was that always the case?</p>
+        <p begin="00:20:31.040" end="00:20:32.800" tts:direction="ltr">Were there any periods through</p>
+        <p begin="00:20:32.800" end="00:20:35.920" tts:direction="ltr">our data where the technology was the most
+<br />profitable?</p>
+        <p begin="00:20:35.920" end="00:20:39.200" tts:direction="ltr">In order to see that we need to subdivide
+<br />our data into</p>
+        <p begin="00:20:39.200" end="00:20:41.080" tts:direction="ltr">time periods and then step through them
+<br />and</p>
+        <p begin="00:20:41.080" end="00:20:43.960" tts:direction="ltr">that's why animation can be very powerful.</p>
+        <p begin="00:20:43.960" end="00:20:46.760" tts:direction="ltr">If we were to use a filter to do that,</p>
+        <p begin="00:20:46.760" end="00:20:49.760" tts:direction="ltr">we would only get a snapshot at one
+<br />particular moment.</p>
+        <p begin="00:20:49.760" end="00:20:52.160" tts:direction="ltr">We're going to use pages instead to</p>
+        <p begin="00:20:52.160" end="00:20:54.840" tts:direction="ltr">connect those times together to form a
+<br />narrative.</p>
+        <p begin="00:20:54.840" end="00:20:58.080" tts:direction="ltr">We do that by simply dragging the date
+<br />onto pages.</p>
+        <p begin="00:20:58.080" end="00:21:02.080" tts:direction="ltr">Let me go back into the data here and
+<br />we're going to go</p>
+        <p begin="00:21:02.080" end="00:21:10.910" tts:direction="ltr">into I'm looking for order date.</p>
+        <p begin="00:21:10.910" end="00:21:13.950" tts:direction="ltr">It's right there. So you probably found it
+<br />before I did,</p>
+        <p begin="00:21:13.950" end="00:21:16.630" tts:direction="ltr">and I'm going to put that onto pages,
+<br />okay?</p>
+        <p begin="00:21:16.630" end="00:21:21.290" tts:direction="ltr">So I'm going to go ahead and I'm going to</p>
+        <p begin="00:21:21.290" end="00:21:26.290" tts:direction="ltr">select month so that I can have more to
+<br />play with.</p>
+        <p begin="00:21:26.290" end="00:21:28.810" tts:direction="ltr">You can see here, I could keep with year,</p>
+        <p begin="00:21:28.810" end="00:21:31.850" tts:direction="ltr">but that's not going to give me as much.</p>
+        <p begin="00:21:31.850" end="00:21:34.570" tts:direction="ltr">I could do quarter, month, day, might be
+<br />too much,</p>
+        <p begin="00:21:34.570" end="00:21:37.930" tts:direction="ltr">I'm going to just keep it as month and it
+<br />is a dimension here.</p>
+        <p begin="00:21:37.930" end="00:21:40.090" tts:direction="ltr">As soon as I added that on the pages,</p>
+        <p begin="00:21:40.090" end="00:21:44.090" tts:direction="ltr">you'll notice that another command</p>
+        <p begin="00:21:44.090" end="00:21:47.650" tts:direction="ltr">or option opened up here in the lower
+<br />right hand corner.</p>
+        <p begin="00:21:47.650" end="00:21:49.130" tts:direction="ltr">You should have had that too,</p>
+        <p begin="00:21:49.130" end="00:21:51.170" tts:direction="ltr">where you have the month by order date,</p>
+        <p begin="00:21:51.170" end="00:21:52.610" tts:direction="ltr">and then you have that month,</p>
+        <p begin="00:21:52.610" end="00:21:58.770" tts:direction="ltr">which you can select, so I could jump to
+<br />April or August or what have you.</p>
+        <p begin="00:21:58.770" end="00:22:04.370" tts:direction="ltr">You can also see that I now have the
+<br />ability to also scroll that.</p>
+        <p begin="00:22:04.370" end="00:22:06.250" tts:direction="ltr">Then finally, I have</p>
+        <p begin="00:22:06.250" end="00:22:10.050" tts:direction="ltr">this really great feature where I can
+<br />animate that so I can actually</p>
+        <p begin="00:22:10.050" end="00:22:16.530" tts:direction="ltr">play through that and I can make this
+<br />slow, medium, or fast.</p>
+        <p begin="00:22:16.530" end="00:22:17.930" tts:direction="ltr">Let me just start that again.</p>
+        <p begin="00:22:17.930" end="00:22:21.330" tts:direction="ltr">I'm going to go on fast and you can see
+<br />how quickly that goes.</p>
+        <p begin="00:22:21.330" end="00:22:23.370" tts:direction="ltr">If I was giving a presentation,</p>
+        <p begin="00:22:23.370" end="00:22:27.730" tts:direction="ltr">having this data behind me might really
+<br />enhance my story that I'm telling.</p>
+        <p begin="00:22:27.730" end="00:22:29.570" tts:direction="ltr">However, that was a little too fast.</p>
+        <p begin="00:22:29.570" end="00:22:32.480" tts:direction="ltr">I'm going to Click.</p>
+        <p begin="00:22:32.480" end="00:22:35.000" tts:direction="ltr">First of all, I'm going to show history.</p>
+        <p begin="00:22:35.000" end="00:22:38.760" tts:direction="ltr">If I'm going to add that on there,</p>
+        <p begin="00:22:38.760" end="00:22:41.720" tts:direction="ltr">nothing has happened yet because I have to
+<br />do this</p>
+        <p begin="00:22:41.720" end="00:22:45.680" tts:direction="ltr">drop down box to create that history.</p>
+        <p begin="00:22:45.680" end="00:22:51.480" tts:direction="ltr">You can see marks to show history for
+<br />selected highlighted manual or all.</p>
+        <p begin="00:22:51.480" end="00:22:54.170" tts:direction="ltr">I'm going to go ahead and select all for
+<br />that.</p>
+        <p begin="00:22:54.170" end="00:23:00.980" tts:direction="ltr">Then the length, you can determine what
+<br />works best for that.</p>
+        <p begin="00:23:00.980" end="00:23:02.860" tts:direction="ltr">It's like showing just the last five,</p>
+        <p begin="00:23:02.860" end="00:23:04.300" tts:direction="ltr">maybe showing all of them,</p>
+        <p begin="00:23:04.300" end="00:23:06.660" tts:direction="ltr">maybe the last two, whatever you decide.</p>
+        <p begin="00:23:06.660" end="00:23:08.380" tts:direction="ltr">You can show the marks,</p>
+        <p begin="00:23:08.380" end="00:23:10.140" tts:direction="ltr">you can show the trails.</p>
+        <p begin="00:23:10.140" end="00:23:13.540" tts:direction="ltr">That could be very interesting, or you can
+<br />show both.</p>
+        <p begin="00:23:13.540" end="00:23:17.900" tts:direction="ltr">For this case, I'm going to do the trails
+<br />only.</p>
+        <p begin="00:23:18.620" end="00:23:22.220" tts:direction="ltr">Let me just close that dialogue box.</p>
+        <p begin="00:23:22.220" end="00:23:24.020" tts:direction="ltr">Start from the beginning.</p>
+        <p begin="00:23:24.020" end="00:23:26.260" tts:direction="ltr">We're going to go medium speed,</p>
+        <p begin="00:23:26.260" end="00:23:28.340" tts:direction="ltr">and then I can play that.</p>
+        <p begin="00:23:28.340" end="00:23:31.370" tts:direction="ltr">You can begin to see over time,</p>
+        <p begin="00:23:31.370" end="00:23:33.200" tts:direction="ltr">some of the trends that are happening.</p>
+        <p begin="00:23:33.200" end="00:23:36.240" tts:direction="ltr">Look at that technology specifically,</p>
+        <p begin="00:23:36.240" end="00:23:38.720" tts:direction="ltr">up and down and up and down.</p>
+        <p begin="00:23:38.720" end="00:23:42.040" tts:direction="ltr">Now when I give my presentation and think
+<br />about</p>
+        <p begin="00:23:42.040" end="00:23:45.040" tts:direction="ltr">those questions I had regarding this
+<br />particular category,</p>
+        <p begin="00:23:45.040" end="00:23:48.200" tts:direction="ltr">you can see that technology is very
+<br />volatile,</p>
+        <p begin="00:23:48.200" end="00:23:49.880" tts:direction="ltr">was going up and down,</p>
+        <p begin="00:23:49.880" end="00:23:51.240" tts:direction="ltr">and then up and then down,</p>
+        <p begin="00:23:51.240" end="00:23:55.100" tts:direction="ltr">and then and then to where it's finally
+<br />resided,</p>
+        <p begin="00:23:55.100" end="00:23:59.780" tts:direction="ltr">whereas maybe my other categories were not
+<br />as volatile.</p>
+        <p begin="00:23:59.780" end="00:24:03.780" tts:direction="ltr">That might be helpful to see when you're
+<br />presenting.</p>
+        <p begin="00:24:03.780" end="00:24:06.820" tts:direction="ltr">Certainly, I hope that each of you can
+<br />explore</p>
+        <p begin="00:24:06.820" end="00:24:13.420" tts:direction="ltr">the animation pain and consider using that
+<br />maybe in your next visualization.</p>
+    </div>
+  </body>
+</tt>

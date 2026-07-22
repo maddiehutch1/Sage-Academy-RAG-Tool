@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>558449712 - 1_uhxzl5e8 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:06.200" tts:direction="ltr">Hello, visitors and welcome to your first
+<br />Data 5,400 challenge.</p>
+        <p begin="00:00:06.200" end="00:00:07.960" tts:direction="ltr">This challenge will focus on</p>
+        <p begin="00:00:07.960" end="00:00:12.720" tts:direction="ltr">the base camp learnings of purpose,
+<br />audience, and credibility.</p>
+        <p begin="00:00:12.720" end="00:00:17.120" tts:direction="ltr">I'm excited for you to jump in this
+<br />applied assignment,</p>
+        <p begin="00:00:17.120" end="00:00:20.200" tts:direction="ltr">and let's take a look at the prompt.</p>
+        <p begin="00:00:20.200" end="00:00:22.560" tts:direction="ltr">The question I'm offering you is can you</p>
+        <p begin="00:00:22.560" end="00:00:26.960" tts:direction="ltr">communicate the right data to the right
+<br />audience in the right way?</p>
+        <p begin="00:00:26.960" end="00:00:30.800" tts:direction="ltr">When was the last time you Googled blank
+<br />near me,</p>
+        <p begin="00:00:30.800" end="00:00:33.080" tts:direction="ltr">whether that be restaurants near me,</p>
+        <p begin="00:00:33.080" end="00:00:34.760" tts:direction="ltr">mattress stores near me,</p>
+        <p begin="00:00:34.760" end="00:00:37.280" tts:direction="ltr">gas stations near me or dog parks.</p>
+        <p begin="00:00:37.280" end="00:00:42.520" tts:direction="ltr">Your task assigned to you by a state
+<br />planning commission is to figure out</p>
+        <p begin="00:00:42.520" end="00:00:44.760" tts:direction="ltr">what people over the last year in</p>
+        <p begin="00:00:44.760" end="00:00:49.760" tts:direction="ltr">your chosen state are looking for near me
+<br />rising searches.</p>
+        <p begin="00:00:49.760" end="00:00:54.420" tts:direction="ltr">We will use Google trends to gather this
+<br />live data.</p>
+        <p begin="00:00:54.420" end="00:00:59.080" tts:direction="ltr">Let's distill this down into one single
+<br />sentence purpose.</p>
+        <p begin="00:00:59.080" end="00:01:02.480" tts:direction="ltr">The purpose of this challenge is to
+<br />analyze</p>
+        <p begin="00:01:02.480" end="00:01:06.560" tts:direction="ltr">rising near me searches in a chosen state
+<br />over</p>
+        <p begin="00:01:06.560" end="00:01:09.880" tts:direction="ltr">the past year using Google trends to</p>
+        <p begin="00:01:09.880" end="00:01:14.440" tts:direction="ltr">uncover what people are increasingly
+<br />seeking in their local areas.</p>
+        <p begin="00:01:14.440" end="00:01:17.680" tts:direction="ltr">This is important because state planning
+<br />commissioners</p>
+        <p begin="00:01:17.680" end="00:01:19.200" tts:direction="ltr">are trying to figure out</p>
+        <p begin="00:01:19.200" end="00:01:25.015" tts:direction="ltr">what funds they can apply to help
+<br />accelerate growth within their state.</p>
+        <p begin="00:01:25.015" end="00:01:30.790" tts:direction="ltr">Now, the twist of this challenge is that
+<br />you are going to communicate to</p>
+        <p begin="00:01:30.790" end="00:01:34.190" tts:direction="ltr">the right audience and that includes</p>
+        <p begin="00:01:34.190" end="00:01:38.110" tts:direction="ltr">a persona that we've identified in the
+<br />base camp.</p>
+        <p begin="00:01:38.110" end="00:01:44.190" tts:direction="ltr">Your crew is assigned one of these five
+<br />different personas,</p>
+        <p begin="00:01:44.190" end="00:01:46.710" tts:direction="ltr">a thinker, a charismatic,</p>
+        <p begin="00:01:46.710" end="00:01:50.910" tts:direction="ltr">a skeptic, a controller, or a follower.</p>
+        <p begin="00:01:50.910" end="00:01:53.670" tts:direction="ltr">Make sure that when you are presenting</p>
+        <p begin="00:01:53.670" end="00:01:57.950" tts:direction="ltr">that you are looking through the lens of
+<br />that profile.</p>
+        <p begin="00:02:01.070" end="00:02:03.950" tts:direction="ltr">Now, when it comes to the details,</p>
+        <p begin="00:02:03.950" end="00:02:06.350" tts:direction="ltr">you will pick a US state,</p>
+        <p begin="00:02:06.350" end="00:02:11.165" tts:direction="ltr">but you won't pick Utah because I'm using
+<br />that in the demo.</p>
+        <p begin="00:02:11.165" end="00:02:14.620" tts:direction="ltr">Then you will find the appropriate
+<br />datasets.</p>
+        <p begin="00:02:14.620" end="00:02:17.460" tts:direction="ltr">There will be five sheets that you will
+<br />download.</p>
+        <p begin="00:02:17.460" end="00:02:19.940" tts:direction="ltr">You will create three charts,</p>
+        <p begin="00:02:19.940" end="00:02:22.460" tts:direction="ltr">record a three to five minute video with</p>
+        <p begin="00:02:22.460" end="00:02:26.100" tts:direction="ltr">the first half presenting directly to your
+<br />audience.</p>
+        <p begin="00:02:26.100" end="00:02:29.980" tts:direction="ltr">Now, I know that this might feel a bit
+<br />uncomfortable,</p>
+        <p begin="00:02:29.980" end="00:02:32.860" tts:direction="ltr">but lean into that uncomfortableness to</p>
+        <p begin="00:02:32.860" end="00:02:36.540" tts:direction="ltr">practice presenting to various audiences.</p>
+        <p begin="00:02:36.540" end="00:02:38.340" tts:direction="ltr">Make sure you have a clear purpose,</p>
+        <p begin="00:02:38.340" end="00:02:40.540" tts:direction="ltr">you're addressing data credibility,</p>
+        <p begin="00:02:40.540" end="00:02:42.220" tts:direction="ltr">and you're providing insights.</p>
+        <p begin="00:02:42.220" end="00:02:43.980" tts:direction="ltr">The second half of this video,</p>
+        <p begin="00:02:43.980" end="00:02:45.860" tts:direction="ltr">you'll describe your process,</p>
+        <p begin="00:02:45.860" end="00:02:49.060" tts:direction="ltr">what did you learn in any roadblocks.</p>
+        <p begin="00:02:49.060" end="00:02:54.660" tts:direction="ltr">You'll submit that to Canvas and receive
+<br />peer feedback.</p>
+        <p begin="00:02:54.660" end="00:03:00.110" tts:direction="ltr">You will have the opportunity then to
+<br />resubmit if you so choose.</p>
+        <p begin="00:03:00.110" end="00:03:06.160" tts:direction="ltr">Now, let's make sure that you understand
+<br />what Google Trends is all about.</p>
+        <p begin="00:03:06.160" end="00:03:11.120" tts:direction="ltr">Each data point that you see is divided by
+<br />the total searches of</p>
+        <p begin="00:03:11.120" end="00:03:13.320" tts:direction="ltr">the geography and time range it</p>
+        <p begin="00:03:13.320" end="00:03:16.560" tts:direction="ltr">represents compared to the relative
+<br />popularity.</p>
+        <p begin="00:03:16.560" end="00:03:21.240" tts:direction="ltr">Otherwise, places with the most search
+<br />volume would always be ranked highest.</p>
+        <p begin="00:03:21.240" end="00:03:24.400" tts:direction="ltr">When you are seeing a number like 75,</p>
+        <p begin="00:03:24.400" end="00:03:29.080" tts:direction="ltr">it's not 75 individuals with that search
+<br />term.</p>
+        <p begin="00:03:29.080" end="00:03:34.955" tts:direction="ltr">Instead, they're using this equation to
+<br />determine the popularity.</p>
+        <p begin="00:03:34.955" end="00:03:39.310" tts:direction="ltr">So the resulting numbers are then scaled
+<br />on a range of zero to</p>
+        <p begin="00:03:39.310" end="00:03:44.670" tts:direction="ltr">100 based on a topic's proportion to all
+<br />the searches on those topics.</p>
+        <p begin="00:03:44.670" end="00:03:48.150" tts:direction="ltr">Different regions that show the same
+<br />search interest for</p>
+        <p begin="00:03:48.150" end="00:03:52.790" tts:direction="ltr">a term don't always have the same total
+<br />search volumes.</p>
+        <p begin="00:03:54.160" end="00:03:58.720" tts:direction="ltr">For this challenge, think the higher the
+<br />proportion value,</p>
+        <p begin="00:03:58.720" end="00:04:02.800" tts:direction="ltr">the more popular the search term
+<br />relatively.</p>
+        <p begin="00:04:02.800" end="00:04:05.760" tts:direction="ltr">Let's dive into the Google demo</p>
+        <p begin="00:04:05.760" end="00:04:09.080" tts:direction="ltr">so that we can get a better sense of how
+<br />to download our data.</p>
+        <p begin="00:04:09.080" end="00:04:15.440" tts:direction="ltr">I'm in a new browser here and I'm just
+<br />going to do a search for Google Trends.</p>
+        <p begin="00:04:15.600" end="00:04:18.960" tts:direction="ltr">Once you are on this landing page,</p>
+        <p begin="00:04:18.960" end="00:04:26.240" tts:direction="ltr">I want you to go ahead and type in the
+<br />term near me and hit Explorer.</p>
+        <p begin="00:04:26.790" end="00:04:29.830" tts:direction="ltr">Once you're there, you'll see that it
+<br />says,</p>
+        <p begin="00:04:29.830" end="00:04:31.870" tts:direction="ltr">here's the search term near me.</p>
+        <p begin="00:04:31.870" end="00:04:33.790" tts:direction="ltr">You can compare it with others.</p>
+        <p begin="00:04:33.790" end="00:04:35.670" tts:direction="ltr">It says for the United States,</p>
+        <p begin="00:04:35.670" end="00:04:38.790" tts:direction="ltr">the past day, all categories and web
+<br />search.</p>
+        <p begin="00:04:38.790" end="00:04:41.310" tts:direction="ltr">We can begin to customize both</p>
+        <p begin="00:04:41.310" end="00:04:45.590" tts:direction="ltr">globally and also timeline and categories
+<br />based on this.</p>
+        <p begin="00:04:45.590" end="00:04:48.990" tts:direction="ltr">Now it's already providing me this line
+<br />chart and</p>
+        <p begin="00:04:48.990" end="00:04:52.630" tts:direction="ltr">you will also use this line chart and
+<br />bring it into Tableau.</p>
+        <p begin="00:04:52.630" end="00:04:55.440" tts:direction="ltr">It's a good view of where they're at.</p>
+        <p begin="00:04:55.440" end="00:05:01.370" tts:direction="ltr">And then it has the sub region and some
+<br />various details that we'll go into.</p>
+        <p begin="00:05:01.370" end="00:05:04.250" tts:direction="ltr">But right now, what I want you to do is
+<br />download</p>
+        <p begin="00:05:04.250" end="00:05:09.250" tts:direction="ltr">this very first CSV file by clicking this
+<br />download button.</p>
+        <p begin="00:05:09.250" end="00:05:13.425" tts:direction="ltr">You'll notice it says multiline dot csv.</p>
+        <p begin="00:05:13.425" end="00:05:17.480" tts:direction="ltr">Now, I actually just made a mistake</p>
+        <p begin="00:05:17.480" end="00:05:21.440" tts:direction="ltr">because I needed to change this because my
+<br />prompt isn't just for the day,</p>
+        <p begin="00:05:21.440" end="00:05:23.120" tts:direction="ltr">but actually for the year.</p>
+        <p begin="00:05:23.120" end="00:05:26.480" tts:direction="ltr">I need to scroll down and select for the
+<br />past 12 months.</p>
+        <p begin="00:05:26.480" end="00:05:28.160" tts:direction="ltr">You can see it does five years.</p>
+        <p begin="00:05:28.160" end="00:05:30.720" tts:direction="ltr">You can actually do a range from 2004,</p>
+        <p begin="00:05:30.720" end="00:05:33.200" tts:direction="ltr">which could be interesting if you want to
+<br />use</p>
+        <p begin="00:05:33.200" end="00:05:36.360" tts:direction="ltr">some of this data for potentially a
+<br />project you have.</p>
+        <p begin="00:05:36.360" end="00:05:39.320" tts:direction="ltr">Let's do past 12 months.</p>
+        <p begin="00:05:39.430" end="00:05:42.550" tts:direction="ltr">A little bit different and longer,</p>
+        <p begin="00:05:42.550" end="00:05:46.070" tts:direction="ltr">and I'm going to now download that CSV.</p>
+        <p begin="00:05:46.070" end="00:05:49.190" tts:direction="ltr">Apologies for the previous one,</p>
+        <p begin="00:05:49.190" end="00:05:52.190" tts:direction="ltr">but this is the one we're going to look at
+<br />right there.</p>
+        <p begin="00:05:52.190" end="00:05:57.990" tts:direction="ltr">Now, what I want to do is scroll down and
+<br />I'm going to select Utah.</p>
+        <p begin="00:05:57.990" end="00:06:01.230" tts:direction="ltr">You're going to select another state,</p>
+        <p begin="00:06:01.230" end="00:06:03.950" tts:direction="ltr">but I'm going to go ahead and select Utah.</p>
+        <p begin="00:06:03.950" end="00:06:07.990" tts:direction="ltr">What this is doing is now I should see my
+<br />state,</p>
+        <p begin="00:06:07.990" end="00:06:09.470" tts:direction="ltr">the past 12 months,</p>
+        <p begin="00:06:09.470" end="00:06:11.750" tts:direction="ltr">all categories and web search.</p>
+        <p begin="00:06:11.750" end="00:06:15.830" tts:direction="ltr">I want to download this CSV file as well.</p>
+        <p begin="00:06:15.890" end="00:06:20.170" tts:direction="ltr">Now, when I scroll down to Utah,</p>
+        <p begin="00:06:20.170" end="00:06:24.970" tts:direction="ltr">you'll see that I have these rising
+<br />searches.</p>
+        <p begin="00:06:24.970" end="00:06:26.810" tts:direction="ltr">I have rising and I have top.</p>
+        <p begin="00:06:26.810" end="00:06:29.730" tts:direction="ltr">If I go top, you can see that food near
+<br />me,</p>
+        <p begin="00:06:29.730" end="00:06:33.930" tts:direction="ltr">restaurants near me, jobs near me have
+<br />been top but really food near me.</p>
+        <p begin="00:06:33.930" end="00:06:38.450" tts:direction="ltr">But I'm interested in rising because I
+<br />want to know what some interests are.</p>
+        <p begin="00:06:38.450" end="00:06:43.770" tts:direction="ltr">Now, this is fascinating because we've
+<br />seen a huge spike in</p>
+        <p begin="00:06:43.770" end="00:06:47.890" tts:direction="ltr">a It looks like churches near me</p>
+        <p begin="00:06:47.890" end="00:06:52.330" tts:direction="ltr">and Mormon church and Church of Jesus
+<br />Christ of Latter day Saints.</p>
+        <p begin="00:06:52.330" end="00:06:56.210" tts:direction="ltr">Lots of rising searches on that end.</p>
+        <p begin="00:06:56.210" end="00:07:00.570" tts:direction="ltr">I've also got some related topics that are
+<br />top.</p>
+        <p begin="00:07:00.570" end="00:07:03.250" tts:direction="ltr">What I want to do, again,</p>
+        <p begin="00:07:03.250" end="00:07:05.890" tts:direction="ltr">you can explore this, but I want to look
+<br />at all of the queries.</p>
+        <p begin="00:07:05.890" end="00:07:11.850" tts:direction="ltr">There's 11 that they're showing me and I
+<br />am not going to do the churches,</p>
+        <p begin="00:07:11.850" end="00:07:16.050" tts:direction="ltr">I'm going to do something a bit different
+<br />like the antique stores near me.</p>
+        <p begin="00:07:16.050" end="00:07:18.050" tts:direction="ltr">If I click on this,</p>
+        <p begin="00:07:18.050" end="00:07:20.170" tts:direction="ltr">I'm going to go ahead and command or</p>
+        <p begin="00:07:20.170" end="00:07:23.565" tts:direction="ltr">Control click to open it up in a different
+<br />window.</p>
+        <p begin="00:07:23.565" end="00:07:29.040" tts:direction="ltr">I go to that, then I can see that I've got
+<br />this interest over time.</p>
+        <p begin="00:07:29.040" end="00:07:31.520" tts:direction="ltr">Again, I want to make sure I'm in Utah
+<br />past</p>
+        <p begin="00:07:31.520" end="00:07:35.000" tts:direction="ltr">12 months and I've got antique stores near
+<br />me.</p>
+        <p begin="00:07:35.000" end="00:07:37.040" tts:direction="ltr">That's based on a rising interest</p>
+        <p begin="00:07:37.040" end="00:07:40.090" tts:direction="ltr">and I'm going to go ahead and download
+<br />that one.</p>
+        <p begin="00:07:40.090" end="00:07:44.260" tts:direction="ltr">Now, when I look at this subcategories,</p>
+        <p begin="00:07:44.260" end="00:07:46.820" tts:direction="ltr">I can also begin to think about some of</p>
+        <p begin="00:07:46.820" end="00:07:51.020" tts:direction="ltr">the interesting things like thrift stores,
+<br />vintage, antique.</p>
+        <p begin="00:07:51.020" end="00:07:57.100" tts:direction="ltr">I might want to pull one of those or
+<br />jewelry store as one of my datasets,</p>
+        <p begin="00:07:57.100" end="00:08:04.540" tts:direction="ltr">or I can go back to my initial one and I
+<br />might want to look at, let's see.</p>
+        <p begin="00:08:04.540" end="00:08:06.420" tts:direction="ltr">Let's do Fires Near Me.</p>
+        <p begin="00:08:06.420" end="00:08:11.900" tts:direction="ltr">I'm going to open that up in a new link
+<br />here by hitting Command or Control,</p>
+        <p begin="00:08:11.900" end="00:08:14.095" tts:direction="ltr">and then it's in a new window.</p>
+        <p begin="00:08:14.095" end="00:08:17.010" tts:direction="ltr">And I can see that that interest has
+<br />really</p>
+        <p begin="00:08:17.010" end="00:08:20.570" tts:direction="ltr">spiked a lot in September, but not so much
+<br />in this year.</p>
+        <p begin="00:08:20.570" end="00:08:22.850" tts:direction="ltr">That's interesting. I'm going to download
+<br />that.</p>
+        <p begin="00:08:22.850" end="00:08:25.810" tts:direction="ltr">Your job is to find something of interest.</p>
+        <p begin="00:08:25.810" end="00:08:27.810" tts:direction="ltr">You might have to go back and forth,</p>
+        <p begin="00:08:27.810" end="00:08:32.210" tts:direction="ltr">but you'll want to have at least five
+<br />different downloads.</p>
+        <p begin="00:08:32.210" end="00:08:35.090" tts:direction="ltr">Now, you'll need to clean up your data.</p>
+        <p begin="00:08:35.090" end="00:08:38.050" tts:direction="ltr">I'm going to go ahead and clean up that
+<br />first data,</p>
+        <p begin="00:08:38.050" end="00:08:41.950" tts:direction="ltr">which was that, Oops,</p>
+        <p begin="00:08:41.950" end="00:08:44.870" tts:direction="ltr">let me bring it into Excel, not.</p>
+        <p begin="00:08:45.190" end="00:08:48.750" tts:direction="ltr">I want to just direct that into Excel.</p>
+        <p begin="00:08:48.750" end="00:08:53.150" tts:direction="ltr">Now, what I want to do is just do a little
+<br />bit of housekeeping here.</p>
+        <p begin="00:08:53.150" end="00:08:58.870" tts:direction="ltr">I want to remove these first two rows
+<br />here.</p>
+        <p begin="00:08:59.990" end="00:09:03.670" tts:direction="ltr">I don't need those. Notice it's by week.</p>
+        <p begin="00:09:03.670" end="00:09:07.070" tts:direction="ltr">My granular data is by week for the whole
+<br />year.</p>
+        <p begin="00:09:07.070" end="00:09:08.790" tts:direction="ltr">This is the near me search,</p>
+        <p begin="00:09:08.790" end="00:09:12.870" tts:direction="ltr">but instead I'm going to put down here the
+<br />interest.</p>
+        <p begin="00:09:12.870" end="00:09:15.230" tts:direction="ltr">I know what that interest is.</p>
+        <p begin="00:09:15.230" end="00:09:22.750" tts:direction="ltr">Then the search is now that this is near
+<br />me, US.</p>
+        <p begin="00:09:22.750" end="00:09:26.910" tts:direction="ltr">This is interest, and then this is the
+<br />search and it</p>
+        <p begin="00:09:26.910" end="00:09:34.310" tts:direction="ltr">is near me US.</p>
+        <p begin="00:09:34.390" end="00:09:38.470" tts:direction="ltr">I'm just going to take that. I'm going to
+<br />fill that column up.</p>
+        <p begin="00:09:38.470" end="00:09:41.590" tts:direction="ltr">Now, this is now providing Tableau and</p>
+        <p begin="00:09:41.590" end="00:09:45.630" tts:direction="ltr">my visualization a connection in this
+<br />column data.</p>
+        <p begin="00:09:45.630" end="00:09:48.590" tts:direction="ltr">One of the things that Tableau likes is</p>
+        <p begin="00:09:48.590" end="00:09:53.110" tts:direction="ltr">long data and so often we'll pivot our
+<br />data to make</p>
+        <p begin="00:09:53.110" end="00:10:00.230" tts:direction="ltr">sure that we've got the appropriate data
+<br />point with the other data points.</p>
+        <p begin="00:10:00.230" end="00:10:03.630" tts:direction="ltr">Here I now I know it's on October 6th,</p>
+        <p begin="00:10:03.630" end="00:10:08.830" tts:direction="ltr">there was an interest level of 77 for the
+<br />Near Me US search.</p>
+        <p begin="00:10:08.830" end="00:10:13.390" tts:direction="ltr">That is an important row for Tableau to
+<br />use.</p>
+        <p begin="00:10:13.390" end="00:10:17.710" tts:direction="ltr">You'll clean up all of your data to make
+<br />this look like that.</p>
+        <p begin="00:10:17.710" end="00:10:21.430" tts:direction="ltr">I won't do that right here in this demo,
+<br />but that's what you'll do.</p>
+        <p begin="00:10:21.430" end="00:10:24.430" tts:direction="ltr">Then after you've got your data,</p>
+        <p begin="00:10:24.430" end="00:10:28.910" tts:direction="ltr">I would make sure that you have a lovely
+<br />folder,</p>
+        <p begin="00:10:28.910" end="00:10:33.190" tts:direction="ltr">probably entitled it something like Data
+<br />3,400 Challenge one.</p>
+        <p begin="00:10:33.190" end="00:10:35.750" tts:direction="ltr">Now I've got my CSV files.</p>
+        <p begin="00:10:35.750" end="00:10:41.950" tts:direction="ltr">I've renamed them and I've formatted all
+<br />of them.</p>
+        <p begin="00:10:41.950" end="00:10:44.550" tts:direction="ltr">You can see I got some Dubai chocolate.</p>
+        <p begin="00:10:44.550" end="00:10:49.975" tts:direction="ltr">I did download a couple of the searches
+<br />for the LDS church there too.</p>
+        <p begin="00:10:49.975" end="00:10:53.320" tts:direction="ltr">So let's go ahead and launch Tableau.</p>
+        <p begin="00:10:53.320" end="00:10:57.280" tts:direction="ltr">I'm on the connection page and I'm going</p>
+        <p begin="00:10:57.280" end="00:11:01.760" tts:direction="ltr">to select more just so I can grab that CSV
+<br />file.</p>
+        <p begin="00:11:01.760" end="00:11:04.560" tts:direction="ltr">I'm going to go into my folder and I'm
+<br />just going to do</p>
+        <p begin="00:11:04.560" end="00:11:07.680" tts:direction="ltr">the US Near Me CV and I'm going to open
+<br />that.</p>
+        <p begin="00:11:07.680" end="00:11:10.760" tts:direction="ltr">The reason why is because Tableau,</p>
+        <p begin="00:11:14.760" end="00:11:19.160" tts:direction="ltr">I'm not sure what's happening there. Let
+<br />me try that again.</p>
+        <p begin="00:11:27.320" end="00:11:31.800" tts:direction="ltr">It looks like my folder was just having
+<br />some problems.</p>
+        <p begin="00:11:31.800" end="00:11:35.880" tts:direction="ltr">I'm going to go ahead and bring in that US
+<br />near me.</p>
+        <p begin="00:11:35.880" end="00:11:40.760" tts:direction="ltr">You'll see that Tableau will bring that
+<br />automatically onto the view.</p>
+        <p begin="00:11:40.760" end="00:11:42.960" tts:direction="ltr">Because I'm in that folder,</p>
+        <p begin="00:11:42.960" end="00:11:45.840" tts:direction="ltr">it will also populate whatever's in that
+<br />folder.</p>
+        <p begin="00:11:45.840" end="00:11:47.960" tts:direction="ltr">If you have it on your desktop,</p>
+        <p begin="00:11:47.960" end="00:11:53.970" tts:direction="ltr">excuse me, Then you will see all available
+<br />files.</p>
+        <p begin="00:11:53.970" end="00:11:56.010" tts:direction="ltr">In this case, I just have the ones that
+<br />I've</p>
+        <p begin="00:11:56.010" end="00:11:58.770" tts:direction="ltr">cleaned up and are ready to use for this
+<br />challenge.</p>
+        <p begin="00:11:58.770" end="00:12:00.650" tts:direction="ltr">They're here shown below.</p>
+        <p begin="00:12:00.650" end="00:12:02.650" tts:direction="ltr">You can also add them by clicking on</p>
+        <p begin="00:12:02.650" end="00:12:05.050" tts:direction="ltr">this button and you can add them
+<br />individually.</p>
+        <p begin="00:12:05.050" end="00:12:08.050" tts:direction="ltr">But Tableau will usually pick up what's
+<br />available.</p>
+        <p begin="00:12:08.050" end="00:12:11.890" tts:direction="ltr">I have my US Near Me CSV file,</p>
+        <p begin="00:12:11.890" end="00:12:16.770" tts:direction="ltr">and I want to connect it to the Utah near
+<br />me.</p>
+        <p begin="00:12:16.770" end="00:12:19.890" tts:direction="ltr">I'm going to just take this and drag this
+<br />and I'm going to use</p>
+        <p begin="00:12:19.890" end="00:12:25.050" tts:direction="ltr">a relationship noodle because I want to
+<br />keep it fairly fluid.</p>
+        <p begin="00:12:25.050" end="00:12:30.640" tts:direction="ltr">I'm not going to do a union or a join.</p>
+        <p begin="00:12:30.640" end="00:12:34.320" tts:direction="ltr">I'm going to just drop that right there on
+<br />the right hand side.</p>
+        <p begin="00:12:34.320" end="00:12:38.080" tts:direction="ltr">You'll see that Tableau is giving me an
+<br />indication and</p>
+        <p begin="00:12:38.080" end="00:12:42.800" tts:direction="ltr">alert to connect my two files together.</p>
+        <p begin="00:12:42.800" end="00:12:46.680" tts:direction="ltr">Now, I only have three columns that I have
+<br />in my data,</p>
+        <p begin="00:12:46.680" end="00:12:49.440" tts:direction="ltr">We interest and search.</p>
+        <p begin="00:12:49.440" end="00:12:51.280" tts:direction="ltr">The question that I have is,</p>
+        <p begin="00:12:51.280" end="00:12:54.000" tts:direction="ltr">which one of these do I need to connect?</p>
+        <p begin="00:12:54.000" end="00:12:56.000" tts:direction="ltr">Which is the similar one?</p>
+        <p begin="00:12:56.000" end="00:13:00.825" tts:direction="ltr">In this case, it is the week because we
+<br />all have the same year.</p>
+        <p begin="00:13:00.825" end="00:13:05.170" tts:direction="ltr">So I'll go down here and I'll select Week,</p>
+        <p begin="00:13:05.170" end="00:13:07.450" tts:direction="ltr">and then I'll select Week.</p>
+        <p begin="00:13:07.450" end="00:13:09.290" tts:direction="ltr">Now I can change my operator.</p>
+        <p begin="00:13:09.290" end="00:13:10.850" tts:direction="ltr">This is an advanced feature.</p>
+        <p begin="00:13:10.850" end="00:13:12.170" tts:direction="ltr">Just always for now,</p>
+        <p begin="00:13:12.170" end="00:13:13.570" tts:direction="ltr">just have an equal to,</p>
+        <p begin="00:13:13.570" end="00:13:17.010" tts:direction="ltr">but you can see that you can change that
+<br />if you want to.</p>
+        <p begin="00:13:17.010" end="00:13:21.490" tts:direction="ltr">Now I have no more alert and I have the
+<br />connection.</p>
+        <p begin="00:13:21.490" end="00:13:23.810" tts:direction="ltr">If I go to sheet one,</p>
+        <p begin="00:13:23.810" end="00:13:27.810" tts:direction="ltr">then I can see that I've got both of these
+<br />files.</p>
+        <p begin="00:13:27.810" end="00:13:31.175" tts:direction="ltr">I have the US near me and the Utah near
+<br />me.</p>
+        <p begin="00:13:31.175" end="00:13:33.500" tts:direction="ltr">So now I want to visualize this data,</p>
+        <p begin="00:13:33.500" end="00:13:35.900" tts:direction="ltr">something that we saw on Google trends,</p>
+        <p begin="00:13:35.900" end="00:13:38.460" tts:direction="ltr">but we're going to create this here in
+<br />Tableau and</p>
+        <p begin="00:13:38.460" end="00:13:42.780" tts:direction="ltr">supersize what the data can potentially
+<br />share with me.</p>
+        <p begin="00:13:42.780" end="00:13:45.460" tts:direction="ltr">I'm going to go ahead and drag week to
+<br />columns.</p>
+        <p begin="00:13:45.460" end="00:13:48.660" tts:direction="ltr">Now, it actually doesn't matter if I pick
+<br />week here or</p>
+        <p begin="00:13:48.660" end="00:13:53.170" tts:direction="ltr">a week down here because these are the
+<br />ones that are similar, right?</p>
+        <p begin="00:13:53.170" end="00:13:56.680" tts:direction="ltr">But I'll use that one for now and it
+<br />automatically</p>
+        <p begin="00:13:56.680" end="00:14:00.360" tts:direction="ltr">is providing a dimension here.</p>
+        <p begin="00:14:00.360" end="00:14:05.000" tts:direction="ltr">It's in a blue pill and it's trying to act
+<br />as a discrete dimension.</p>
+        <p begin="00:14:05.000" end="00:14:09.320" tts:direction="ltr">Now, I want to show you what that looks
+<br />like and how we'll change that,</p>
+        <p begin="00:14:09.320" end="00:14:11.400" tts:direction="ltr">but I first want to bring in the interest.</p>
+        <p begin="00:14:11.400" end="00:14:15.720" tts:direction="ltr">We'll bring in the US near me interest on</p>
+        <p begin="00:14:15.720" end="00:14:22.160" tts:direction="ltr">the rows there and you'll see that it's
+<br />showing 24-25.</p>
+        <p begin="00:14:22.160" end="00:14:25.440" tts:direction="ltr">Now, if I change this to,</p>
+        <p begin="00:14:25.440" end="00:14:28.240" tts:direction="ltr">let's say, a month,</p>
+        <p begin="00:14:28.240" end="00:14:31.495" tts:direction="ltr">then you'll see that January through
+<br />December.</p>
+        <p begin="00:14:31.495" end="00:14:36.510" tts:direction="ltr">And you'll see that. Now if I flip this to
+<br />a bar,</p>
+        <p begin="00:14:36.510" end="00:14:39.870" tts:direction="ltr">you'll see that there is space in between
+<br />each bar.</p>
+        <p begin="00:14:39.870" end="00:14:41.830" tts:direction="ltr">That's an indication again that this</p>
+        <p begin="00:14:41.830" end="00:14:49.830" tts:direction="ltr">is a discrete dimension because it has
+<br />these individual bars.</p>
+        <p begin="00:14:49.830" end="00:14:53.270" tts:direction="ltr">Now if I change this now to the day,</p>
+        <p begin="00:14:53.270" end="00:14:57.510" tts:direction="ltr">you'll see that it has one through 31.</p>
+        <p begin="00:14:57.510" end="00:15:01.470" tts:direction="ltr">Now, we know that there are not 31 days in
+<br />every month,</p>
+        <p begin="00:15:01.470" end="00:15:06.660" tts:direction="ltr">that should give you a red flag that there
+<br />are some days,</p>
+        <p begin="00:15:06.660" end="00:15:09.180" tts:direction="ltr">some months that don't have as many.</p>
+        <p begin="00:15:09.180" end="00:15:12.900" tts:direction="ltr">Of course, 29 will be higher because it's
+<br />bucketing</p>
+        <p begin="00:15:12.900" end="00:15:17.620" tts:direction="ltr">all of the months January through December
+<br />into that date.</p>
+        <p begin="00:15:17.620" end="00:15:28.460" tts:direction="ltr">If I change this from a discrete dimension
+<br />to a continuous measure on day,</p>
+        <p begin="00:15:28.460" end="00:15:34.180" tts:direction="ltr">you'll see now that I don't have it
+<br />bucketed 1-31.</p>
+        <p begin="00:15:34.180" end="00:15:37.060" tts:direction="ltr">Instead, now I have those individual
+<br />dates.</p>
+        <p begin="00:15:37.060" end="00:15:39.980" tts:direction="ltr">A bar chart is not what you want to show.</p>
+        <p begin="00:15:39.980" end="00:15:44.370" tts:direction="ltr">In fact, you want to flip that back to a
+<br />line chart, okay?</p>
+        <p begin="00:15:44.370" end="00:15:49.840" tts:direction="ltr">Maybe I want to look at more broader data
+<br />like month.</p>
+        <p begin="00:15:49.840" end="00:15:57.240" tts:direction="ltr">You'll see that it's now showing the year
+<br />with that month.</p>
+        <p begin="00:15:57.880" end="00:16:04.370" tts:direction="ltr">We have the month now as a continuous
+<br />measure. And we have the interest.</p>
+        <p begin="00:16:04.370" end="00:16:07.170" tts:direction="ltr">Now, right now it's showing the top at</p>
+        <p begin="00:16:07.170" end="00:16:12.170" tts:direction="ltr">four oh four and then 461 and that's not
+<br />accurate.</p>
+        <p begin="00:16:12.170" end="00:16:14.450" tts:direction="ltr">That is actually summing all of that data.</p>
+        <p begin="00:16:14.450" end="00:16:17.490" tts:direction="ltr">We want to change that by dropping this
+<br />down</p>
+        <p begin="00:16:17.490" end="00:16:21.170" tts:direction="ltr">and going from a sum to an average.</p>
+        <p begin="00:16:21.170" end="00:16:26.970" tts:direction="ltr">Now I can see that I've got the mirror of
+<br />what that interest level is.</p>
+        <p begin="00:16:26.970" end="00:16:32.370" tts:direction="ltr">Now here on my left hand axes, it's going
+<br />0-90.</p>
+        <p begin="00:16:32.370" end="00:16:36.610" tts:direction="ltr">I want to change that by right clicking on
+<br />this and editing</p>
+        <p begin="00:16:36.610" end="00:16:45.270" tts:direction="ltr">the axes and then selecting custom and
+<br />changing that fixed end 98-100.</p>
+        <p begin="00:16:46.550" end="00:16:51.990" tts:direction="ltr">Now I've been able to reflect what I saw
+<br />on the Google trends.</p>
+        <p begin="00:16:51.990" end="00:16:57.950" tts:direction="ltr">Now, I want to bring in the Utah or your
+<br />state onto this as well.</p>
+        <p begin="00:16:57.950" end="00:17:00.230" tts:direction="ltr">I'm going to grab this measure interest</p>
+        <p begin="00:17:00.230" end="00:17:03.590" tts:direction="ltr">and I'm going to drag it to the right hand
+<br />side.</p>
+        <p begin="00:17:03.590" end="00:17:07.910" tts:direction="ltr">Do you see how it has that icon there with
+<br />the dotted lines?</p>
+        <p begin="00:17:07.910" end="00:17:09.550" tts:direction="ltr">If I drop that in there,</p>
+        <p begin="00:17:09.550" end="00:17:12.990" tts:direction="ltr">it will automatically drop it into the
+<br />rows area.</p>
+        <p begin="00:17:12.990" end="00:17:18.360" tts:direction="ltr">Let me go back. I can also grab that
+<br />measure and put it right here.</p>
+        <p begin="00:17:18.360" end="00:17:20.600" tts:direction="ltr">It will create two charts.</p>
+        <p begin="00:17:20.600" end="00:17:26.000" tts:direction="ltr">But if I click on this and add a dual
+<br />axis,</p>
+        <p begin="00:17:26.000" end="00:17:28.240" tts:direction="ltr">it will get to the same place.</p>
+        <p begin="00:17:28.240" end="00:17:31.520" tts:direction="ltr">Now, again, I have a sum and an average,</p>
+        <p begin="00:17:31.520" end="00:17:36.840" tts:direction="ltr">so make sure that you've changed that to
+<br />an average that matches.</p>
+        <p begin="00:17:36.840" end="00:17:43.000" tts:direction="ltr">Then if I right click this far right axes
+<br />and I want to synchronize the axes,</p>
+        <p begin="00:17:43.000" end="00:17:46.840" tts:direction="ltr">and then I'm going to remove that header
+<br />so that it's no longer there.</p>
+        <p begin="00:17:46.840" end="00:17:49.280" tts:direction="ltr">Now these are talking in tandem.</p>
+        <p begin="00:17:49.280" end="00:17:52.775" tts:direction="ltr">You can see also that Tableau
+<br />automatically put</p>
+        <p begin="00:17:52.775" end="00:17:57.710" tts:direction="ltr">measure names onto color to create the
+<br />opportunity to color those.</p>
+        <p begin="00:17:57.710" end="00:17:59.790" tts:direction="ltr">If I want to change those colors,</p>
+        <p begin="00:17:59.790" end="00:18:02.190" tts:direction="ltr">I could edit those colors and I could
+<br />change</p>
+        <p begin="00:18:02.190" end="00:18:06.190" tts:direction="ltr">this to maybe be yellow if I so choose.</p>
+        <p begin="00:18:06.190" end="00:18:10.950" tts:direction="ltr">You can also drag this and place this
+<br />underneath if I want to have more space.</p>
+        <p begin="00:18:10.950" end="00:18:15.030" tts:direction="ltr">I can change the view from standard to
+<br />entire view,</p>
+        <p begin="00:18:15.030" end="00:18:16.990" tts:direction="ltr">which won't do very much because I've</p>
+        <p begin="00:18:16.990" end="00:18:19.305" tts:direction="ltr">already moved a few of those things, all
+<br />right?</p>
+        <p begin="00:18:19.305" end="00:18:22.100" tts:direction="ltr">So now I have my first sheet,</p>
+        <p begin="00:18:22.100" end="00:18:26.100" tts:direction="ltr">which I'm going to call US versus Utah.</p>
+        <p begin="00:18:26.100" end="00:18:30.020" tts:direction="ltr">Now I need to create two more sheets for
+<br />this challenge.</p>
+        <p begin="00:18:30.020" end="00:18:35.620" tts:direction="ltr">The next one are going to be Rising Utah
+<br />near me,</p>
+        <p begin="00:18:35.620" end="00:18:39.420" tts:direction="ltr">and then the third one is going to be a
+<br />wildcard.</p>
+        <p begin="00:18:39.420" end="00:18:41.900" tts:direction="ltr">Now, you need to make at least one
+<br />wildcard,</p>
+        <p begin="00:18:41.900" end="00:18:44.820" tts:direction="ltr">but of course, you can always do as many
+<br />as you want.</p>
+        <p begin="00:18:44.820" end="00:18:47.340" tts:direction="ltr">So let's go to this next one,</p>
+        <p begin="00:18:47.340" end="00:18:49.740" tts:direction="ltr">which is the rising Utah near me.</p>
+        <p begin="00:18:49.740" end="00:18:52.140" tts:direction="ltr">Now, I don't have these data sources in
+<br />there.</p>
+        <p begin="00:18:52.140" end="00:18:53.725" tts:direction="ltr">I need to bring them in.</p>
+        <p begin="00:18:53.725" end="00:18:59.310" tts:direction="ltr">I'm going to focus in on a few of these
+<br />search elements.</p>
+        <p begin="00:18:59.310" end="00:19:03.470" tts:direction="ltr">I'm going to bring in the Utah thrift
+<br />stores</p>
+        <p begin="00:19:03.470" end="00:19:05.950" tts:direction="ltr">here and I'm going to just drag this and</p>
+        <p begin="00:19:05.950" end="00:19:13.510" tts:direction="ltr">place that right next to this Utah near me
+<br />and below the Utah near me.</p>
+        <p begin="00:19:13.510" end="00:19:15.750" tts:direction="ltr">I'm going to make sure that this one is</p>
+        <p begin="00:19:15.750" end="00:19:19.710" tts:direction="ltr">also on week because that is my
+<br />relationship.</p>
+        <p begin="00:19:19.710" end="00:19:28.610" tts:direction="ltr">Then I can bring in my Let's bring in my
+<br />ballot box. Interested on that.</p>
+        <p begin="00:19:28.610" end="00:19:33.690" tts:direction="ltr">Again, I'll change that to week. That's my
+<br />relationship.</p>
+        <p begin="00:19:34.170" end="00:19:39.330" tts:direction="ltr">Then let's do Dubai chocolate.</p>
+        <p begin="00:19:39.330" end="00:19:42.730" tts:direction="ltr">Let's see how that plays out.</p>
+        <p begin="00:19:43.160" end="00:19:49.120" tts:direction="ltr">Interested if other states are looking for
+<br />that as a rising search too.</p>
+        <p begin="00:19:49.120" end="00:19:51.960" tts:direction="ltr">Now I have my one, two, three, four,</p>
+        <p begin="00:19:51.960" end="00:19:56.320" tts:direction="ltr">five different data points.</p>
+        <p begin="00:19:56.320" end="00:20:03.320" tts:direction="ltr">They're all connected on week and I'm
+<br />ready to jump into my rising near me.</p>
+        <p begin="00:20:03.320" end="00:20:05.000" tts:direction="ltr">Now for this one, again,</p>
+        <p begin="00:20:05.000" end="00:20:07.240" tts:direction="ltr">we want to bring in the week on columns.</p>
+        <p begin="00:20:07.240" end="00:20:08.800" tts:direction="ltr">It doesn't matter which one. In fact,</p>
+        <p begin="00:20:08.800" end="00:20:10.440" tts:direction="ltr">I'll bring it on a different one now.</p>
+        <p begin="00:20:10.440" end="00:20:12.090" tts:direction="ltr">Let's just go for this one.</p>
+        <p begin="00:20:12.090" end="00:20:14.180" tts:direction="ltr">Okay. It doesn't matter which week,</p>
+        <p begin="00:20:14.180" end="00:20:15.780" tts:direction="ltr">it's the same process.</p>
+        <p begin="00:20:15.780" end="00:20:19.180" tts:direction="ltr">I'm going to go ahead and change this now
+<br />back to.</p>
+        <p begin="00:20:19.180" end="00:20:20.980" tts:direction="ltr">Now, in your wildcard,</p>
+        <p begin="00:20:20.980" end="00:20:24.100" tts:direction="ltr">you might want to explore what it might
+<br />look like as</p>
+        <p begin="00:20:24.100" end="00:20:28.660" tts:direction="ltr">a dimension and maybe you want to expand
+<br />it out to</p>
+        <p begin="00:20:28.660" end="00:20:32.060" tts:direction="ltr">have multiple years in your wildcard so
+<br />you can add</p>
+        <p begin="00:20:32.060" end="00:20:36.860" tts:direction="ltr">more data into your wildcard exploration
+<br />if you choose.</p>
+        <p begin="00:20:36.860" end="00:20:39.185" tts:direction="ltr">I'm going to go to month here.</p>
+        <p begin="00:20:39.185" end="00:20:43.070" tts:direction="ltr">To a continuous measure.</p>
+        <p begin="00:20:43.070" end="00:20:48.150" tts:direction="ltr">Now I want to bring in all of these,</p>
+        <p begin="00:20:48.150" end="00:20:50.110" tts:direction="ltr">except for US near me.</p>
+        <p begin="00:20:50.110" end="00:20:51.510" tts:direction="ltr">But the way I'm going to do this,</p>
+        <p begin="00:20:51.510" end="00:20:55.430" tts:direction="ltr">you saw how I did the dual axis on this
+<br />one.</p>
+        <p begin="00:20:55.430" end="00:20:57.470" tts:direction="ltr">When I have more than two,</p>
+        <p begin="00:20:57.470" end="00:21:03.030" tts:direction="ltr">the easiest way is to leverage the fields
+<br />that Tableau has created.</p>
+        <p begin="00:21:03.030" end="00:21:06.630" tts:direction="ltr">Tableau has created anything with an
+<br />italicized.</p>
+        <p begin="00:21:06.630" end="00:21:08.830" tts:direction="ltr">If you see something italicized,</p>
+        <p begin="00:21:08.830" end="00:21:11.070" tts:direction="ltr">that means Tableau has made it</p>
+        <p begin="00:21:11.070" end="00:21:15.950" tts:direction="ltr">and it's very helpful when you want to
+<br />create multiple,</p>
+        <p begin="00:21:15.950" end="00:21:18.210" tts:direction="ltr">um, measures on a view.</p>
+        <p begin="00:21:18.210" end="00:21:22.050" tts:direction="ltr">I'm going to go and take these measure
+<br />values right down here at the bottom,</p>
+        <p begin="00:21:22.050" end="00:21:24.730" tts:direction="ltr">and I'm going to bring it onto rows.</p>
+        <p begin="00:21:24.730" end="00:21:28.490" tts:direction="ltr">Now you're going to see this crazy line,</p>
+        <p begin="00:21:28.490" end="00:21:30.530" tts:direction="ltr">but more importantly, you have</p>
+        <p begin="00:21:30.530" end="00:21:34.610" tts:direction="ltr">this measure values in one of these marks
+<br />cards.</p>
+        <p begin="00:21:34.610" end="00:21:37.410" tts:direction="ltr">What I want to do is actually remove all
+<br />the counts.</p>
+        <p begin="00:21:37.410" end="00:21:42.220" tts:direction="ltr">I'm just going to drag them and drop them
+<br />off. I'm just going to do that.</p>
+        <p begin="00:21:42.220" end="00:21:46.940" tts:direction="ltr">Then I am not interested in the US near
+<br />me,</p>
+        <p begin="00:21:46.940" end="00:21:49.140" tts:direction="ltr">so that's this top one. I'm going to take
+<br />that off.</p>
+        <p begin="00:21:49.140" end="00:21:50.620" tts:direction="ltr">Now I've got these four,</p>
+        <p begin="00:21:50.620" end="00:21:52.140" tts:direction="ltr">I've got the Utah,</p>
+        <p begin="00:21:52.140" end="00:21:53.780" tts:direction="ltr">and then I have those three ones.</p>
+        <p begin="00:21:53.780" end="00:21:57.100" tts:direction="ltr">Now remember, these are all summing.</p>
+        <p begin="00:21:57.100" end="00:22:01.460" tts:direction="ltr">I need to do the drop down and I need to
+<br />average those.</p>
+        <p begin="00:22:01.460" end="00:22:03.900" tts:direction="ltr">Don't forget to do that.</p>
+        <p begin="00:22:03.900" end="00:22:05.780" tts:direction="ltr">Now, in your wildcard,</p>
+        <p begin="00:22:05.780" end="00:22:11.820" tts:direction="ltr">you might want to explore some of these
+<br />other calculations that it does.</p>
+        <p begin="00:22:11.820" end="00:22:14.940" tts:direction="ltr">Now I have all of these.</p>
+        <p begin="00:22:14.940" end="00:22:18.180" tts:direction="ltr">Now I want to color these and the way that
+<br />I'm going to do that is</p>
+        <p begin="00:22:18.180" end="00:22:22.140" tts:direction="ltr">to make sure measure names is on color.</p>
+        <p begin="00:22:22.140" end="00:22:24.180" tts:direction="ltr">As soon as I have that,</p>
+        <p begin="00:22:24.180" end="00:22:26.340" tts:direction="ltr">now I have different colors and I could</p>
+        <p begin="00:22:26.340" end="00:22:28.980" tts:direction="ltr">actually color these to be a bit
+<br />different.</p>
+        <p begin="00:22:28.980" end="00:22:31.020" tts:direction="ltr">Maybe I'll do that really quickly.</p>
+        <p begin="00:22:31.020" end="00:22:36.380" tts:direction="ltr">I want to do US Near Me as maybe a darker
+<br />color.</p>
+        <p begin="00:22:36.380" end="00:22:39.060" tts:direction="ltr">I'll just use a darker gray,</p>
+        <p begin="00:22:39.060" end="00:22:44.700" tts:direction="ltr">and then maybe I'll do the thrift stores.</p>
+        <p begin="00:22:44.790" end="00:22:47.630" tts:direction="ltr">That's something a bit brighter.</p>
+        <p begin="00:22:47.630" end="00:22:50.110" tts:direction="ltr">We're going to talk about color in the
+<br />future,</p>
+        <p begin="00:22:50.110" end="00:22:52.510" tts:direction="ltr">but that's something that if you want to.</p>
+        <p begin="00:22:52.510" end="00:22:56.270" tts:direction="ltr">Now I have this new line chart.</p>
+        <p begin="00:22:56.270" end="00:22:59.070" tts:direction="ltr">I'm going to go ahead and just grab this
+<br />and put this over</p>
+        <p begin="00:22:59.070" end="00:23:04.070" tts:direction="ltr">here and they're the rising Utah near me.</p>
+        <p begin="00:23:04.070" end="00:23:07.910" tts:direction="ltr">I can see that here's my near me Utah</p>
+        <p begin="00:23:07.910" end="00:23:11.710" tts:direction="ltr">searches and I've got one that's really
+<br />moving up.</p>
+        <p begin="00:23:11.710" end="00:23:13.950" tts:direction="ltr">It's a little scattered over the year.</p>
+        <p begin="00:23:13.950" end="00:23:21.520" tts:direction="ltr">But I might want to think about a Dubai
+<br />chocolate and wondering if that's</p>
+        <p begin="00:23:21.520" end="00:23:25.040" tts:direction="ltr">just a trend that will go away or if
+<br />that's something I should</p>
+        <p begin="00:23:25.040" end="00:23:29.240" tts:direction="ltr">support or recommend to my state planning
+<br />commissioner.</p>
+        <p begin="00:23:29.240" end="00:23:32.000" tts:direction="ltr">The other one that I have is the thrift
+<br />stores,</p>
+        <p begin="00:23:32.000" end="00:23:33.920" tts:direction="ltr">which seems to be a stronger interest,</p>
+        <p begin="00:23:33.920" end="00:23:41.680" tts:direction="ltr">even though it's dipping below what might
+<br />Utah near me,</p>
+        <p begin="00:23:41.680" end="00:23:45.840" tts:direction="ltr">but it does dip above and it's following a
+<br />bit of that trend.</p>
+        <p begin="00:23:45.840" end="00:23:49.120" tts:direction="ltr">That might be something I want to dive
+<br />deeper on.</p>
+        <p begin="00:23:49.120" end="00:23:50.800" tts:direction="ltr">Maybe in my wildcard,</p>
+        <p begin="00:23:50.800" end="00:23:55.870" tts:direction="ltr">I might bring in some of those other
+<br />downloads that I had like</p>
+        <p begin="00:23:55.870" end="00:24:02.430" tts:direction="ltr">vintage clothing or jewelry store clothing
+<br />that I have available to me.</p>
+        <p begin="00:24:02.430" end="00:24:06.830" tts:direction="ltr">Now something else that you'll want to
+<br />explore is the show me panel.</p>
+        <p begin="00:24:06.830" end="00:24:08.950" tts:direction="ltr">This is where you can let</p>
+        <p begin="00:24:08.950" end="00:24:12.670" tts:direction="ltr">Tableau automatically create some chart
+<br />types for you.</p>
+        <p begin="00:24:12.670" end="00:24:16.070" tts:direction="ltr">The ones that are highlighted are right
+<br />there.</p>
+        <p begin="00:24:16.070" end="00:24:19.270" tts:direction="ltr">I'm just going to hit the back button for
+<br />that.</p>
+        <p begin="00:24:19.270" end="00:24:25.550" tts:direction="ltr">But you can begin to explore some of those
+<br />if you want and see if that again,</p>
+        <p begin="00:24:25.550" end="00:24:28.095" tts:direction="ltr">for the wild card exploration.</p>
+        <p begin="00:24:28.095" end="00:24:34.240" tts:direction="ltr">So we've now taken the data from Google
+<br />Trends,</p>
+        <p begin="00:24:34.240" end="00:24:35.680" tts:direction="ltr">downloaded it, cleaned it,</p>
+        <p begin="00:24:35.680" end="00:24:37.240" tts:direction="ltr">brought it into Tableau,</p>
+        <p begin="00:24:37.240" end="00:24:40.120" tts:direction="ltr">placed it into Tableau, customized it.</p>
+        <p begin="00:24:40.120" end="00:24:41.920" tts:direction="ltr">Now I want you to take it from here for</p>
+        <p begin="00:24:41.920" end="00:24:45.720" tts:direction="ltr">that wildcard and for the presentation to
+<br />your audience,</p>
+        <p begin="00:24:45.720" end="00:24:49.280" tts:direction="ltr">remembering your purpose, audience, and
+<br />credibility.</p>
+        <p begin="00:24:49.280" end="00:24:51.360" tts:direction="ltr">By the way, for that credibility,</p>
+        <p begin="00:24:51.360" end="00:24:58.760" tts:direction="ltr">I highly recommend you placing some a
+<br />source in either the caption here,</p>
+        <p begin="00:24:58.760" end="00:25:01.840" tts:direction="ltr">excuse me, in the title here or in a
+<br />caption.</p>
+        <p begin="00:25:01.840" end="00:25:07.680" tts:direction="ltr">Be sure to write it and to state it and
+<br />happy visiting.</p>
+    </div>
+  </body>
+</tt>

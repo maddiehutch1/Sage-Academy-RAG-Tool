@@ -1,0 +1,570 @@
+1
+00:00:00,890 --> 00:00:04,230
+Hello Vizzers, this is
+the design challenge
+
+2
+00:00:04,230 --> 00:00:08,110
+starter if you've selected
+the cost of protein
+
+3
+00:00:08,360 --> 00:00:15,590
+to make over. So let's go ahead
+and check out the current Vizz, and
+
+4
+00:00:15,590 --> 00:00:21,250
+you can find it here underneath
+this tab, cheapest protein in 2023.
+
+5
+00:00:21,800 --> 00:00:26,810
+You've got some background reading
+that you can look into, and then
+
+6
+00:00:26,810 --> 00:00:31,190
+you'll have an Excel file with
+the protein costs. Right now, the
+
+7
+00:00:31,190 --> 00:00:35,770
+existing viz is a simple bar chart
+with some visualizations or some
+
+8
+00:00:35,770 --> 00:00:40,070
+icons above that. We're going to
+recreate this and then do some
+
+9
+00:00:40,070 --> 00:00:44,850
+exploration, and then you'll have
+a chance to redesign and submit.
+
+10
+00:00:44,850 --> 00:00:51,570
+So let's go ahead and jump into
+the file. I've already pulled in
+
+11
+00:00:51,570 --> 00:00:57,250
+the Excel file into Tableau. And
+as always, whenever you're doing
+
+12
+00:00:57,250 --> 00:01:02,710
+that, taking a look at what has
+been provided and thinking through
+
+13
+00:01:02,710 --> 00:01:06,010
+the challenge to see if there's
+anything you need to change.
+
+14
+00:01:06,890 --> 00:01:10,250
+So we have here the protein source,
+
+15
+00:01:10,890 --> 00:01:13,930
+the cost per 20 grams of protein,
+
+16
+00:01:14,170 --> 00:01:17,730
+the cost per package, and
+that is in US dollars,
+
+17
+00:01:18,010 --> 00:01:20,170
+total protein per package,
+
+18
+00:01:20,510 --> 00:01:24,970
+and if it's vegetarian or
+vegan, which could help us
+
+19
+00:01:24,970 --> 00:01:29,490
+with some filters to make
+our chart more dynamic. So
+
+20
+00:01:29,490 --> 00:01:33,030
+let's go ahead and jump to our
+first sheet and just recreate
+
+21
+00:01:33,030 --> 00:01:37,190
+that chart, that bar chart.
+So we'll go ahead and
+
+22
+00:01:37,830 --> 00:01:45,630
+we'll do that cost per 20 grams
+right here and the aggregation is
+
+23
+00:01:45,630 --> 00:01:52,610
+sum and then we'll do that
+protein source on rows great do a
+
+24
+00:01:52,610 --> 00:02:05,850
+descending sort here and we'll add
+in the cost onto label okay so we
+
+25
+00:02:05,850 --> 00:02:13,970
+see that cost and what I want to
+do is let's go into the actual um
+
+26
+00:02:13,970 --> 00:02:20,550
+field on the data pane for the
+cost for 20 grams and let's do um
+
+27
+00:02:24,080 --> 00:02:26,550
+we're going to do the properties we're
+
+28
+00:02:26,550 --> 00:02:28,610
+going to change the number format here
+
+29
+00:02:29,170 --> 00:02:35,400
+and we'll do currency make sure
+that's a dollar two decimal
+
+30
+00:02:35,400 --> 00:02:39,410
+places that looks great
+okay so now we just kind of
+
+31
+00:02:39,410 --> 00:02:41,910
+clean that up. I'm also going
+to change this from standard
+
+32
+00:02:41,910 --> 00:02:44,790
+view to the entire view so
+I can just fill that width.
+
+33
+00:02:46,610 --> 00:02:49,910
+So what I want to do is
+just give you a little tip
+
+34
+00:02:50,090 --> 00:02:52,650
+to apply some of those design formatting
+
+35
+00:02:52,650 --> 00:02:55,110
+principles we talked
+about in a previous AG.
+
+36
+00:02:55,110 --> 00:03:00,330
+I'm going to right click here on the
+view and then I'm going to go into
+
+37
+00:03:00,330 --> 00:03:04,350
+format which will pull up that pane.
+Again you can get that from this
+
+38
+00:03:04,350 --> 00:03:08,250
+drop down menu and I'm going to go
+ahead and click on this line icon
+
+39
+00:03:08,250 --> 00:03:13,830
+right here and you'll see that it
+says grid lines none now there are
+
+40
+00:03:13,830 --> 00:03:18,810
+some vertical grid lines so that's
+a little confusing i get it what
+
+41
+00:03:18,810 --> 00:03:23,670
+what you'll have to do is select
+and then deselect do you see how now
+
+42
+00:03:23,670 --> 00:03:28,890
+they've gone away not quite sure why
+that is but um that's what i've what
+
+43
+00:03:28,890 --> 00:03:33,190
+i've done zero lines these are
+those lines right there i'm going to
+
+44
+00:03:33,190 --> 00:03:39,230
+say none for that okay and for the
+axis ruler I'm actually going to
+
+45
+00:03:39,230 --> 00:03:43,190
+say none for that so that was this
+axis right down here and just by doing
+
+46
+00:03:43,190 --> 00:03:48,150
+that too and I have these labels
+I'm going to right click this area
+
+47
+00:03:48,150 --> 00:03:54,290
+and just remove that header so just
+by doing three steps I'm able to
+
+48
+00:03:54,290 --> 00:03:58,370
+really create a clean canvas to
+begin working on and thinking about
+
+49
+00:03:58,370 --> 00:04:02,010
+design that's going to be part of
+this challenge that's the majority of
+
+50
+00:04:02,010 --> 00:04:05,310
+this challenge you're really thinking
+and being intentional about the
+
+51
+00:04:05,310 --> 00:04:11,810
+design choices that you're making
+for this chart so you might consider
+
+52
+00:04:11,810 --> 00:04:18,050
+other headers or ways to focus your
+audience's attention using design
+
+53
+00:04:18,050 --> 00:04:21,970
+so i'm going to go ahead and i'm
+going to call this first sheet the
+
+54
+00:04:21,970 --> 00:04:28,370
+og the original data and i know that
+the other one if i just flip this
+
+55
+00:04:28,370 --> 00:04:33,450
+i can you know, begin to replicate
+a little bit of what it has. I don't
+
+56
+00:04:33,450 --> 00:04:38,370
+have the icons above it. Let me
+just check out what we've got here.
+
+57
+00:04:38,570 --> 00:04:44,190
+So you can see here that we do
+have that disending sort and I can
+
+58
+00:04:44,190 --> 00:04:48,470
+probably put on that canned
+chicken, right? And then the salmon.
+
+59
+00:04:48,890 --> 00:04:53,490
+So, but for now, this is
+basically what we've got. Don't
+
+60
+00:04:53,490 --> 00:04:57,970
+forget that you can also work
+on some of the sizing issues to
+
+61
+00:04:57,970 --> 00:05:02,010
+make them skinnier or larger
+all sorts of ways that you can
+
+62
+00:05:02,010 --> 00:05:07,390
+think about that but let's just
+call that the OG for this first
+
+63
+00:05:07,390 --> 00:05:10,720
+remake and well I'll show you
+a couple of other explorers
+
+64
+00:05:11,810 --> 00:05:17,330
+all right for this next sheet this
+will be a wild card and this is
+
+65
+00:05:17,330 --> 00:05:20,010
+an opportunity for you to explore
+I'm just going to put down a
+
+66
+00:05:20,010 --> 00:05:24,990
+wild card one you need to do at
+least one exploration wild card but
+
+67
+00:05:24,990 --> 00:05:31,290
+you can do many I'm interested and
+learning more about the protein
+
+68
+00:05:31,290 --> 00:05:39,350
+source and if it's vegan which
+is has no dairy or vegetarian
+
+69
+00:05:39,350 --> 00:05:46,110
+and then I'm also kind of interested
+in this grams total grams now
+
+70
+00:05:46,110 --> 00:05:50,150
+it's just creating something here
+I you can actually even hold down
+
+71
+00:05:50,150 --> 00:05:53,210
+the measures and dimensions that
+you're interested in and I'm
+
+72
+00:05:53,210 --> 00:06:00,190
+gonna go to show me to see what I
+can see so based on this I've got
+
+73
+00:06:00,190 --> 00:06:12,670
+two falses here so this is not
+telling me too much you see maybe
+
+74
+00:06:22,070 --> 00:06:29,310
+instead what I'm interested
+in yes I'll put let me go back
+
+75
+00:06:29,950 --> 00:06:34,990
+so what I have is I got
+protein on columns and vegan or
+
+76
+00:06:34,990 --> 00:06:40,170
+vegetarian and then on the text
+i've got the total protein costs
+
+77
+00:06:40,370 --> 00:06:45,490
+and then what i selected was
+the packed bubbles just because
+
+78
+00:06:45,490 --> 00:06:49,910
+i'm curious to see if there's
+one that dominates and there is
+
+79
+00:06:49,910 --> 00:06:54,770
+that's that whey protein powder
+but maybe i'll look at a couple
+
+80
+00:06:54,770 --> 00:06:58,770
+of these other chart types that
+will also show part to whole
+
+81
+00:06:58,770 --> 00:07:02,070
+right so that's a little more
+interesting to see how much
+
+82
+00:07:02,070 --> 00:07:09,850
+that dominates that um just kind
+of curious what else i might
+
+83
+00:07:10,230 --> 00:07:15,270
+explore if it's helping me maybe
+ask another question i do prefer
+
+84
+00:07:15,270 --> 00:07:18,630
+this one so i'm going to go ahead
+and call this like i said the
+
+85
+00:07:18,630 --> 00:07:24,230
+wild card i think i deleted that
+accidentally wild card 01 so i may
+
+86
+00:07:24,230 --> 00:07:27,550
+want to design that more or think
+about that a little bit i might
+
+87
+00:07:27,550 --> 00:07:31,110
+put a filter in so i can only
+show maybe the top three of that
+
+88
+00:07:31,230 --> 00:07:35,050
+maybe i'm only going to look at
+vegan versus vegetarian so just
+
+89
+00:07:35,050 --> 00:07:40,870
+some potential areas of exploration
+let's just do another wild card
+
+90
+00:07:42,990 --> 00:07:49,330
+because it's so much fun to
+explore um data so then we have um
+
+91
+00:07:50,010 --> 00:07:54,330
+And then we have cost per package,
+
+92
+00:07:54,710 --> 00:08:02,190
+kind of interested in what that
+might, and then protein per package.
+
+93
+00:08:02,680 --> 00:08:11,550
+So I've got my bar and kind
+of looking at this heat map,
+
+94
+00:08:11,570 --> 00:08:18,970
+potentially I might even be able
+to make another or to branch that
+
+95
+00:08:18,970 --> 00:08:24,010
+out to have some more depth
+so cost per package and then
+
+96
+00:08:24,010 --> 00:08:31,130
+this is total protein which
+clearly you could probably do some
+
+97
+00:08:33,690 --> 00:08:38,210
+summing 42 and I'm ready
+we'll do a calculation to
+
+98
+00:08:38,210 --> 00:08:44,650
+figure out again this is per
+20 grams so let me just put
+
+99
+00:08:44,650 --> 00:08:48,350
+that next to it so i'm
+looking at grams versus total
+
+100
+00:08:48,730 --> 00:08:56,950
+so these are the same okay so
+again these are just ways to
+
+101
+00:08:56,950 --> 00:09:01,590
+explore and hopefully um get you
+more familiar about like what am
+
+102
+00:09:01,590 --> 00:09:04,430
+i trying to accomplish am i trying
+to compare things i'm trying
+
+103
+00:09:04,430 --> 00:09:07,590
+to see part to whole do i want
+to lift one of these ideas
+
+104
+00:09:07,590 --> 00:09:11,310
+out more than the others Do you
+want to place a filter on that?
+
+105
+00:09:11,730 --> 00:09:17,870
+So I hope that you can
+continue to explore.
+
+106
+00:09:17,870 --> 00:09:22,630
+Maybe you'll apply some
+analytics to your chart.
+
+107
+00:09:23,050 --> 00:09:26,110
+I started to go down a rabbit hole by
+
+108
+00:09:26,110 --> 00:09:29,990
+creating a filter, if it was a yes or no,
+
+109
+00:09:30,170 --> 00:09:36,250
+if it's vegan, thinking I might
+create a dashboard with just the
+
+110
+00:09:36,250 --> 00:09:42,930
+filter and parameter action but I sort
+of stopped there and I'm not going
+
+111
+00:09:42,930 --> 00:09:45,870
+to demo that but that is something
+if you want to take it further
+
+112
+00:09:45,870 --> 00:09:49,830
+and apply some of the other AGs
+that you've learned but really your
+
+113
+00:09:49,830 --> 00:09:55,550
+next step should be this design
+tab so you're going to take either
+
+114
+00:09:55,550 --> 00:10:00,910
+the OG that you've done or one of
+the wild cards and then you're going
+
+115
+00:10:00,910 --> 00:10:06,630
+to be intentional about what you
+want to convey and to use design
+
+116
+00:10:06,630 --> 00:10:11,750
+to create an awesome chart and I
+can't wait to see. Happy visiting!

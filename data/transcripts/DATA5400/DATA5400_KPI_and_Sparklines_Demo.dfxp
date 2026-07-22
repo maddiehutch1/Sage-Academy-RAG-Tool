@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>468687022 - 1_17p84kcx - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.320" end="00:00:05.000" tts:direction="ltr">Hello, visits. This is going to be a demo
+<br />on</p>
+        <p begin="00:00:05.000" end="00:00:09.620" tts:direction="ltr">how to create a KPI and a Spark line,</p>
+        <p begin="00:00:09.620" end="00:00:11.400" tts:direction="ltr">all in one sheet.</p>
+        <p begin="00:00:11.400" end="00:00:16.720" tts:direction="ltr">We're going to go ahead and connect to
+<br />data and the data that I've got</p>
+        <p begin="00:00:16.720" end="00:00:24.280" tts:direction="ltr">is the office essentials transactions CSV.</p>
+        <p begin="00:00:24.280" end="00:00:28.520" tts:direction="ltr">This is basically our superstore data set
+<br />that comes with tableau,</p>
+        <p begin="00:00:28.520" end="00:00:34.865" tts:direction="ltr">but saved that there's a moment in time
+<br />because it's always updating.</p>
+        <p begin="00:00:34.865" end="00:00:37.410" tts:direction="ltr">Then I just go ahead and it's already
+<br />brought</p>
+        <p begin="00:00:37.410" end="00:00:40.390" tts:direction="ltr">into the data source and the data pain.</p>
+        <p begin="00:00:40.390" end="00:00:43.690" tts:direction="ltr">I'm going to go to sheet one, and yours
+<br />should look like this,</p>
+        <p begin="00:00:43.690" end="00:00:45.010" tts:direction="ltr">where you've got the category,</p>
+        <p begin="00:00:45.010" end="00:00:46.270" tts:direction="ltr">you've got all your dimensions,</p>
+        <p begin="00:00:46.270" end="00:00:48.610" tts:direction="ltr">and then you have your measures.</p>
+        <p begin="00:00:49.640" end="00:00:53.880" tts:direction="ltr">All right. If I bring sales just onto the
+<br />text,</p>
+        <p begin="00:00:53.880" end="00:01:00.400" tts:direction="ltr">I'll see that sales has a total of two
+<br />almost 2.3 million.</p>
+        <p begin="00:01:00.400" end="00:01:05.700" tts:direction="ltr">But what I really want for this KPI is to
+<br />show current sales.</p>
+        <p begin="00:01:05.700" end="00:01:09.520" tts:direction="ltr">What I need to do is create a calculated
+<br />field,</p>
+        <p begin="00:01:09.520" end="00:01:15.740" tts:direction="ltr">and I've done a calculated sheet that
+<br />you're able just to use.</p>
+        <p begin="00:01:15.740" end="00:01:19.465" tts:direction="ltr">This is going to be called sales current
+<br />year.</p>
+        <p begin="00:01:19.465" end="00:01:22.050" tts:direction="ltr">So I'll go to replace that.</p>
+        <p begin="00:01:22.050" end="00:01:25.870" tts:direction="ltr">Then I've created this calculation
+<br />already.</p>
+        <p begin="00:01:25.870" end="00:01:29.010" tts:direction="ltr">If you drop it in, it should work.</p>
+        <p begin="00:01:29.010" end="00:01:34.150" tts:direction="ltr">We are now going to be using the fixed
+<br />level of detail,</p>
+        <p begin="00:01:34.150" end="00:01:39.750" tts:direction="ltr">it's going to be fixed at the order date
+<br />for the year.</p>
+        <p begin="00:01:39.750" end="00:01:47.530" tts:direction="ltr">Then the max will be the order date and
+<br />then sales.</p>
+        <p begin="00:01:48.090" end="00:01:54.130" tts:direction="ltr">This is now looking at each row in the
+<br />dataset to then see</p>
+        <p begin="00:01:54.130" end="00:02:00.170" tts:direction="ltr">if this will be the largest data set in
+<br />that year.</p>
+        <p begin="00:02:00.170" end="00:02:05.290" tts:direction="ltr">It's doing the current year through this
+<br />calculation.</p>
+        <p begin="00:02:05.290" end="00:02:07.650" tts:direction="ltr">Let's go ahead and put, Okay.</p>
+        <p begin="00:02:08.290" end="00:02:14.030" tts:direction="ltr">Now what I can do is I can see if this
+<br />works by going into order date,</p>
+        <p begin="00:02:14.030" end="00:02:16.030" tts:direction="ltr">and I'll drag that into columns.</p>
+        <p begin="00:02:16.030" end="00:02:18.130" tts:direction="ltr">Now I've got 2016,</p>
+        <p begin="00:02:18.130" end="00:02:19.970" tts:direction="ltr">17 18 and 19.</p>
+        <p begin="00:02:19.970" end="00:02:24.730" tts:direction="ltr">This is the number that I should get from
+<br />this calculation.</p>
+        <p begin="00:02:24.730" end="00:02:28.050" tts:direction="ltr">If I bring a calculation sales current
+<br />year,</p>
+        <p begin="00:02:28.050" end="00:02:31.770" tts:direction="ltr">I can drop it right here when it's
+<br />highlighted.</p>
+        <p begin="00:02:31.770" end="00:02:41.890" tts:direction="ltr">You'll see now it is it's showing this
+<br />seven and 33 and 215, and that's right.</p>
+        <p begin="00:02:42.720" end="00:02:47.340" tts:direction="ltr">Now we've got sales current year. So
+<br />that's good.</p>
+        <p begin="00:02:47.340" end="00:02:55.480" tts:direction="ltr">Now we're going to create another
+<br />calculation for Let's see.</p>
+        <p begin="00:02:55.480" end="00:03:00.480" tts:direction="ltr">The next one we're going to create is
+<br />sales prior year.</p>
+        <p begin="00:03:00.720" end="00:03:04.560" tts:direction="ltr">One way you could do it is copy and paste
+<br />what I have here,</p>
+        <p begin="00:03:04.560" end="00:03:06.620" tts:direction="ltr">or I'm going to just do it this way,</p>
+        <p begin="00:03:06.620" end="00:03:09.840" tts:direction="ltr">I'm going to duplicate my sales,</p>
+        <p begin="00:03:09.840" end="00:03:11.720" tts:direction="ltr">and then I'm going to edit it,</p>
+        <p begin="00:03:11.720" end="00:03:17.080" tts:direction="ltr">and then I'm going to just change this to
+<br />be prior year,</p>
+        <p begin="00:03:17.080" end="00:03:26.580" tts:direction="ltr">and then going to just actually just only
+<br />put this minus one in there.</p>
+        <p begin="00:03:26.580" end="00:03:34.350" tts:direction="ltr">You see where that goes. Now going to put
+<br />that minus one in there. Great.</p>
+        <p begin="00:03:34.350" end="00:03:39.770" tts:direction="ltr">I should have now that sales for the prior
+<br />year.</p>
+        <p begin="00:03:41.490" end="00:03:44.850" tts:direction="ltr">Let's see how that's going.</p>
+        <p begin="00:03:44.850" end="00:03:49.210" tts:direction="ltr">Let's let's add sales for the current
+<br />year.</p>
+        <p begin="00:03:49.250" end="00:03:55.350" tts:direction="ltr">Actually, let's make sure we I've already
+<br />got sales in the current year.</p>
+        <p begin="00:03:55.350" end="00:03:59.810" tts:direction="ltr">Let's make sure you've got sales in here.</p>
+        <p begin="00:03:59.930" end="00:04:04.850" tts:direction="ltr">That happens to you. It's just dropping in
+<br />the wrong place.</p>
+        <p begin="00:04:05.140" end="00:04:07.960" tts:direction="ltr">L et me remove this one.</p>
+        <p begin="00:04:07.960" end="00:04:10.180" tts:direction="ltr">I wants to preempt that.</p>
+        <p begin="00:04:10.180" end="00:04:12.060" tts:direction="ltr">I'm going to go take sales.</p>
+        <p begin="00:04:12.060" end="00:04:13.520" tts:direction="ltr">Drop that on the text.</p>
+        <p begin="00:04:13.520" end="00:04:17.740" tts:direction="ltr">Great. Then let's put the sales in the
+<br />current year.</p>
+        <p begin="00:04:17.740" end="00:04:21.420" tts:direction="ltr">Drop that. Other way I could have done it
+<br />as sales prior year,</p>
+        <p begin="00:04:21.420" end="00:04:23.840" tts:direction="ltr">I can just add it into this pane.</p>
+        <p begin="00:04:23.840" end="00:04:26.760" tts:direction="ltr">Now what I have, that's exactly right.</p>
+        <p begin="00:04:26.760" end="00:04:29.480" tts:direction="ltr">That's sales for the current year.</p>
+        <p begin="00:04:29.480" end="00:04:36.520" tts:direction="ltr">Then sales for the prior year right there
+<br />in the 2018 that 6092 oh six.</p>
+        <p begin="00:04:36.520" end="00:04:38.100" tts:direction="ltr">Great.</p>
+        <p begin="00:04:38.890" end="00:04:41.990" tts:direction="ltr">Okay, now I can get rid of sales.</p>
+        <p begin="00:04:41.990" end="00:04:43.170" tts:direction="ltr">So I'm going to just take that off,</p>
+        <p begin="00:04:43.170" end="00:04:47.050" tts:direction="ltr">and what I want to do is create the
+<br />difference between these two.</p>
+        <p begin="00:04:47.490" end="00:04:50.170" tts:direction="ltr">Another calculated field.</p>
+        <p begin="00:04:50.170" end="00:04:52.830" tts:direction="ltr">This one we called percent change,</p>
+        <p begin="00:04:52.830" end="00:04:55.930" tts:direction="ltr">and I've got that calculation as well.</p>
+        <p begin="00:04:55.930" end="00:05:00.230" tts:direction="ltr">Let's just goad and copy that to put that
+<br />there.</p>
+        <p begin="00:05:00.230" end="00:05:04.310" tts:direction="ltr">What I'm doing is I'm each of these have
+<br />an aggregation,</p>
+        <p begin="00:05:04.310" end="00:05:09.290" tts:direction="ltr">and I'm taking the sum of the sales of the
+<br />current year minus the sum of</p>
+        <p begin="00:05:09.290" end="00:05:12.030" tts:direction="ltr">the sales of the prior year and dividing</p>
+        <p begin="00:05:12.030" end="00:05:15.815" tts:direction="ltr">that by the sum of the sales of the prior
+<br />year. Okay.</p>
+        <p begin="00:05:15.815" end="00:05:18.780" tts:direction="ltr">And awesome.</p>
+        <p begin="00:05:18.780" end="00:05:21.060" tts:direction="ltr">Before I bring that onto the shelf,</p>
+        <p begin="00:05:21.060" end="00:05:22.800" tts:direction="ltr">I want to do some formatting for this,</p>
+        <p begin="00:05:22.800" end="00:05:26.740" tts:direction="ltr">and I'm going to go and do the drop down
+<br />here and I'm going to</p>
+        <p begin="00:05:26.740" end="00:05:31.790" tts:direction="ltr">change the default properties number
+<br />format,</p>
+        <p begin="00:05:31.790" end="00:05:34.290" tts:direction="ltr">and I'm going to go the percentage.</p>
+        <p begin="00:05:34.290" end="00:05:36.750" tts:direction="ltr">I only want to show one percentage.</p>
+        <p begin="00:05:36.750" end="00:05:39.070" tts:direction="ltr">Then I'm going to do a custom here.</p>
+        <p begin="00:05:39.070" end="00:05:42.470" tts:direction="ltr">This is a little insider trick for
+<br />tableau.</p>
+        <p begin="00:05:42.470" end="00:05:44.110" tts:direction="ltr">If it's going to be a positive,</p>
+        <p begin="00:05:44.110" end="00:05:46.210" tts:direction="ltr">I want to have a positive sign,</p>
+        <p begin="00:05:46.210" end="00:05:48.830" tts:direction="ltr">and then I'm going to put a semicoln,</p>
+        <p begin="00:05:48.830" end="00:05:53.970" tts:direction="ltr">and then put a negative 0.0 with my
+<br />percent.</p>
+        <p begin="00:05:53.970" end="00:05:57.450" tts:direction="ltr">That's just going to show that if the
+<br />number is a positive,</p>
+        <p begin="00:05:57.450" end="00:05:59.670" tts:direction="ltr">it will show that plus and if it's a
+<br />negative,</p>
+        <p begin="00:05:59.670" end="00:06:01.170" tts:direction="ltr">it will show that negative.</p>
+        <p begin="00:06:01.170" end="00:06:05.170" tts:direction="ltr">You just add that here in this custom
+<br />area.</p>
+        <p begin="00:06:05.170" end="00:06:10.260" tts:direction="ltr">I push. Now if I take the percent value,</p>
+        <p begin="00:06:10.260" end="00:06:12.300" tts:direction="ltr">I put it on the measure shelf.</p>
+        <p begin="00:06:12.300" end="00:06:15.300" tts:direction="ltr">You'll see here that I've got</p>
+        <p begin="00:06:17.780" end="00:06:26.280" tts:direction="ltr">the 20.4%. Looks good.</p>
+        <p begin="00:06:26.280" end="00:06:29.420" tts:direction="ltr">I realize this doesn't need to be here.</p>
+        <p begin="00:06:29.420" end="00:06:32.320" tts:direction="ltr">In fact, that doesn't have any relevancy.</p>
+        <p begin="00:06:32.320" end="00:06:33.940" tts:direction="ltr">Sorry about that. That's why I was like,</p>
+        <p begin="00:06:33.940" end="00:06:36.180" tts:direction="ltr">Why I got the years across?</p>
+        <p begin="00:06:36.180" end="00:06:37.540" tts:direction="ltr">Just take off those years.</p>
+        <p begin="00:06:37.540" end="00:06:40.660" tts:direction="ltr">Now you've got current year,</p>
+        <p begin="00:06:40.660" end="00:06:46.420" tts:direction="ltr">prior year and the percent of change and
+<br />you've got that plus button on there.</p>
+        <p begin="00:06:46.660" end="00:06:49.340" tts:direction="ltr">Now I'm going to just clean this up a
+<br />little</p>
+        <p begin="00:06:49.340" end="00:06:51.340" tts:direction="ltr">bit before we make our spark line.</p>
+        <p begin="00:06:51.340" end="00:06:55.160" tts:direction="ltr">I'm going to go ahead and take the sales
+<br />prayer year off.</p>
+        <p begin="00:06:55.160" end="00:06:59.840" tts:direction="ltr">I'm going to take measure values and just
+<br />put that to the detail.</p>
+        <p begin="00:06:59.840" end="00:07:03.180" tts:direction="ltr">Measure names, I'm just going to take that
+<br />off.</p>
+        <p begin="00:07:03.180" end="00:07:07.020" tts:direction="ltr">Great. Now we're going to create our spark
+<br />line.</p>
+        <p begin="00:07:07.020" end="00:07:16.420" tts:direction="ltr">I'm going to drag order date onto columns
+<br />and make that into that's order ID.</p>
+        <p begin="00:07:16.420" end="00:07:18.180" tts:direction="ltr">Sorry about that.</p>
+        <p begin="00:07:18.180" end="00:07:21.680" tts:direction="ltr">Order date. Always double check.</p>
+        <p begin="00:07:21.680" end="00:07:27.600" tts:direction="ltr">I'm like, wait. I'm going to make that
+<br />into a measure four months.</p>
+        <p begin="00:07:28.520" end="00:07:32.740" tts:direction="ltr">Now, I want this just to be the most
+<br />recent month.</p>
+        <p begin="00:07:32.740" end="00:07:35.140" tts:direction="ltr">One way you could do this is you could
+<br />drag</p>
+        <p begin="00:07:35.140" end="00:07:38.880" tts:direction="ltr">order date into the filters and then go
+<br />through the process.</p>
+        <p begin="00:07:38.880" end="00:07:44.200" tts:direction="ltr">But I want it to be last 12 months.</p>
+        <p begin="00:07:44.200" end="00:07:49.080" tts:direction="ltr">I want it to change according to whatever
+<br />data I might have in there.</p>
+        <p begin="00:07:49.080" end="00:07:50.640" tts:direction="ltr">Let's not do the filter.</p>
+        <p begin="00:07:50.640" end="00:07:54.480" tts:direction="ltr">Let's create a calculated field instead.</p>
+        <p begin="00:07:54.480" end="00:07:57.800" tts:direction="ltr">And this one, you guessed it.</p>
+        <p begin="00:07:57.800" end="00:08:02.420" tts:direction="ltr">I'm making the calculated field for the
+<br />last 12 months,</p>
+        <p begin="00:08:02.420" end="00:08:07.400" tts:direction="ltr">and I'm going to be adding in, let's see.</p>
+        <p begin="00:08:08.160" end="00:08:10.940" tts:direction="ltr">I'm doing a date trunk,</p>
+        <p begin="00:08:10.940" end="00:08:13.760" tts:direction="ltr">and again, most of the fly out here.</p>
+        <p begin="00:08:15.280" end="00:08:19.720" tts:direction="ltr">Tmpve this into the vio a little bit
+<br />better.</p>
+        <p begin="00:08:19.720" end="00:08:27.340" tts:direction="ltr">There we go. I can actually put in here
+<br />and I can look and see what this does.</p>
+        <p begin="00:08:27.340" end="00:08:30.080" tts:direction="ltr">It truncates this but specified date to</p>
+        <p begin="00:08:30.080" end="00:08:34.600" tts:direction="ltr">the accuracy specified by the date part
+<br />and return to the new date.</p>
+        <p begin="00:08:34.600" end="00:08:37.240" tts:direction="ltr">If start of week is emitted,</p>
+        <p begin="00:08:37.240" end="00:08:39.100" tts:direction="ltr">the week start date is determined by</p>
+        <p begin="00:08:39.100" end="00:08:41.080" tts:direction="ltr">the start date configured for the data
+<br />source.</p>
+        <p begin="00:08:41.080" end="00:08:44.240" tts:direction="ltr">Here's an example where it's being
+<br />specific.</p>
+        <p begin="00:08:44.240" end="00:08:47.820" tts:direction="ltr">You need that date part, the date, and the
+<br />start of the week.</p>
+        <p begin="00:08:47.820" end="00:08:56.080" tts:direction="ltr">What I have here is I have month and then
+<br />I'm using order date as my field,</p>
+        <p begin="00:08:56.160" end="00:08:59.480" tts:direction="ltr">greater than or equal to the date</p>
+        <p begin="00:08:59.480" end="00:09:04.740" tts:direction="ltr">add and then that's wrapped around all on
+<br />this month.</p>
+        <p begin="00:09:04.740" end="00:09:09.060" tts:direction="ltr">I did -11 because when I was working
+<br />through this calculation,</p>
+        <p begin="00:09:09.060" end="00:09:11.820" tts:direction="ltr">it was showing 13 months.</p>
+        <p begin="00:09:11.820" end="00:09:18.460" tts:direction="ltr">Because of the current month and then -11.</p>
+        <p begin="00:09:18.460" end="00:09:22.560" tts:direction="ltr">That's where I landed on that 11 instead
+<br />12.</p>
+        <p begin="00:09:22.560" end="00:09:28.720" tts:direction="ltr">Then you want the max of the date trunk of
+<br />that order date.</p>
+        <p begin="00:09:28.830" end="00:09:32.650" tts:direction="ltr">Again, you can go in here and you can
+<br />learn more about each of</p>
+        <p begin="00:09:32.650" end="00:09:37.290" tts:direction="ltr">these functions right here inside of
+<br />Tableau,</p>
+        <p begin="00:09:37.290" end="00:09:40.010" tts:direction="ltr">where it helps you understand that for the
+<br />date add,</p>
+        <p begin="00:09:40.010" end="00:09:43.010" tts:direction="ltr">I need the date part, the interval, and
+<br />then the date.</p>
+        <p begin="00:09:43.010" end="00:09:46.610" tts:direction="ltr">Here's a great example and definition of
+<br />what that does.</p>
+        <p begin="00:09:46.610" end="00:09:50.910" tts:direction="ltr">Let me just close that fly out. Go ahead
+<br />and put.</p>
+        <p begin="00:09:52.900" end="00:09:56.340" tts:direction="ltr">Then let's just take this new calculation</p>
+        <p begin="00:09:56.340" end="00:09:58.900" tts:direction="ltr">and put onto color. So I can check that.</p>
+        <p begin="00:09:58.900" end="00:10:01.400" tts:direction="ltr">Now I can see that if it's true,</p>
+        <p begin="00:10:01.400" end="00:10:03.340" tts:direction="ltr">then let's so this.</p>
+        <p begin="00:10:03.340" end="00:10:07.300" tts:direction="ltr">I should have 12. I have 24.</p>
+        <p begin="00:10:07.300" end="00:10:10.640" tts:direction="ltr">That's because I have two measures on the
+<br />shelf.</p>
+        <p begin="00:10:10.640" end="00:10:13.120" tts:direction="ltr">It's counting it twice, both the percent
+<br />change</p>
+        <p begin="00:10:13.120" end="00:10:14.860" tts:direction="ltr">and the sales of the current year.</p>
+        <p begin="00:10:14.860" end="00:10:16.140" tts:direction="ltr">But that's 12 though.</p>
+        <p begin="00:10:16.140" end="00:10:24.280" tts:direction="ltr">That's great. Now I can move my last 12
+<br />month from the color to the filter,</p>
+        <p begin="00:10:24.280" end="00:10:26.320" tts:direction="ltr">and then I'll say true,</p>
+        <p begin="00:10:26.320" end="00:10:30.265" tts:direction="ltr">and then it will only show those 12
+<br />months.</p>
+        <p begin="00:10:30.265" end="00:10:34.970" tts:direction="ltr">And now we're ready to put sales on the
+<br />rows.</p>
+        <p begin="00:10:34.970" end="00:10:37.490" tts:direction="ltr">Excellent. I'm going to go ahead and
+<br />change</p>
+        <p begin="00:10:37.490" end="00:10:41.530" tts:direction="ltr">my color just to a darker color there,</p>
+        <p begin="00:10:41.530" end="00:10:46.370" tts:direction="ltr">and we're going to on the label,</p>
+        <p begin="00:10:46.370" end="00:10:47.910" tts:direction="ltr">we're going to show the marks.</p>
+        <p begin="00:10:47.910" end="00:10:50.450" tts:direction="ltr">Let's do Min and Max only,</p>
+        <p begin="00:10:50.450" end="00:10:54.290" tts:direction="ltr">and let's do the month order date.</p>
+        <p begin="00:10:54.290" end="00:10:56.410" tts:direction="ltr">Let me just move that.</p>
+        <p begin="00:10:56.410" end="00:10:59.390" tts:direction="ltr">Let me go ahead and close that out so you
+<br />can see.</p>
+        <p begin="00:10:59.390" end="00:11:02.365" tts:direction="ltr">I've got January 2019.</p>
+        <p begin="00:11:02.365" end="00:11:05.860" tts:direction="ltr">And that's the plus 20.4,</p>
+        <p begin="00:11:05.860" end="00:11:11.640" tts:direction="ltr">and I've got that 20.4 December 2019.</p>
+        <p begin="00:11:11.640" end="00:11:13.780" tts:direction="ltr">Now I've got my sparkline.</p>
+        <p begin="00:11:13.780" end="00:11:15.400" tts:direction="ltr">Now, I might say to myself,</p>
+        <p begin="00:11:15.400" end="00:11:18.460" tts:direction="ltr">I don't know if I need the starting value
+<br />here.</p>
+        <p begin="00:11:18.460" end="00:11:22.600" tts:direction="ltr">Actually, let's go back just to clean this
+<br />up a little bit and</p>
+        <p begin="00:11:22.600" end="00:11:27.500" tts:direction="ltr">deselect the minimum value.</p>
+        <p begin="00:11:27.500" end="00:11:30.760" tts:direction="ltr">Now we just have only that and actually,</p>
+        <p begin="00:11:30.760" end="00:11:34.120" tts:direction="ltr">I think I don't want the month.</p>
+        <p begin="00:11:34.120" end="00:11:40.560" tts:direction="ltr">I actually want sales some of sales to the
+<br />label shelf instead.</p>
+        <p begin="00:11:40.560" end="00:11:45.790" tts:direction="ltr">Yeah, that looks right. Okay. Okay.</p>
+        <p begin="00:11:46.110" end="00:11:49.770" tts:direction="ltr">Just another thing I want to clean up a
+<br />little bit as I'm going to</p>
+        <p begin="00:11:49.770" end="00:11:52.830" tts:direction="ltr">move my sales to</p>
+        <p begin="00:11:52.830" end="00:12:03.670" tts:direction="ltr">the tool tip and my percent change also to
+<br />the tool tip.</p>
+        <p begin="00:12:04.830" end="00:12:07.170" tts:direction="ltr">That's moved that over there.</p>
+        <p begin="00:12:07.170" end="00:12:12.990" tts:direction="ltr">Did you see I don't know if you saw moved
+<br />it from inside to the outside.</p>
+        <p begin="00:12:13.510" end="00:12:16.410" tts:direction="ltr">Again, I could go back here.</p>
+        <p begin="00:12:16.410" end="00:12:19.690" tts:direction="ltr">I could put that label for the men back
+<br />on.</p>
+        <p begin="00:12:19.690" end="00:12:22.370" tts:direction="ltr">But I'm going to just take that off for
+<br />right now.</p>
+        <p begin="00:12:22.370" end="00:12:23.710" tts:direction="ltr">Okay.</p>
+        <p begin="00:12:25.670" end="00:12:30.550" tts:direction="ltr">Okay. So I see sales current year sales.</p>
+        <p begin="00:12:31.230" end="00:12:34.870" tts:direction="ltr">I'm actually going to change this to the
+<br />detail.</p>
+        <p begin="00:12:34.870" end="00:12:44.500" tts:direction="ltr">Sorry, thinking about Okay.</p>
+        <p begin="00:12:44.500" end="00:12:48.480" tts:direction="ltr">To make this all one sheet for this KPI,</p>
+        <p begin="00:12:48.480" end="00:12:51.540" tts:direction="ltr">what I want to do is I'm going to go into
+<br />the sheet name,</p>
+        <p begin="00:12:51.540" end="00:12:53.440" tts:direction="ltr">and I'm going to center it.</p>
+        <p begin="00:12:53.440" end="00:13:01.180" tts:direction="ltr">Then I'm going to replace this one with my
+<br />sum of sales.</p>
+        <p begin="00:13:01.180" end="00:13:10.465" tts:direction="ltr">Then I want to have my percent of sales
+<br />change versus prior year.</p>
+        <p begin="00:13:10.465" end="00:13:13.390" tts:direction="ltr">I'll just do a little bit of formatting
+<br />here.</p>
+        <p begin="00:13:13.390" end="00:13:15.450" tts:direction="ltr">Well maybe make that bolt,</p>
+        <p begin="00:13:15.450" end="00:13:18.310" tts:direction="ltr">we'll go up to 24.</p>
+        <p begin="00:13:18.310" end="00:13:20.350" tts:direction="ltr">We'll create some contrasts,</p>
+        <p begin="00:13:20.350" end="00:13:22.430" tts:direction="ltr">we'll go to 11.</p>
+        <p begin="00:13:22.430" end="00:13:25.510" tts:direction="ltr">Let me just apply that, see how that
+<br />looks.</p>
+        <p begin="00:13:25.510" end="00:13:32.390" tts:direction="ltr">Great. Good. There's that KPI showing that
+<br />current year sales,</p>
+        <p begin="00:13:34.230" end="00:13:37.990" tts:direction="ltr">and where that stands,</p>
+        <p begin="00:13:37.990" end="00:13:42.050" tts:direction="ltr">plus 20.4% versus the prior year.</p>
+        <p begin="00:13:42.050" end="00:13:46.610" tts:direction="ltr">Now, right now it's not showing sales
+<br />actually.</p>
+        <p begin="00:13:46.610" end="00:13:50.270" tts:direction="ltr">If I go into my columns,</p>
+        <p begin="00:13:50.270" end="00:13:52.590" tts:direction="ltr">these are an ad hoc calculation.</p>
+        <p begin="00:13:52.590" end="00:13:55.910" tts:direction="ltr">I think I can write sales and quotes,</p>
+        <p begin="00:13:55.910" end="00:13:58.070" tts:direction="ltr">and then once I do that,</p>
+        <p begin="00:13:58.070" end="00:14:00.890" tts:direction="ltr">to see how it just populates that.</p>
+        <p begin="00:14:00.890" end="00:14:06.790" tts:direction="ltr">But then I can go ahead and hide that
+<br />label.</p>
+        <p begin="00:14:09.110" end="00:14:13.830" tts:direction="ltr">That is not as centered as I would like it
+<br />to be.</p>
+        <p begin="00:14:17.940" end="00:14:24.160" tts:direction="ltr">I want to go back and remove that,
+<br />instead, go up here.</p>
+        <p begin="00:14:24.160" end="00:14:30.740" tts:direction="ltr">I think what I want to do is maybe put
+<br />down actually.</p>
+        <p begin="00:14:35.420" end="00:14:39.180" tts:direction="ltr">I'm going to just put down sales here.</p>
+        <p begin="00:14:39.780" end="00:14:48.690" tts:direction="ltr">Maybe I'll make that a little bit er.
+<br />Let's see how that looks.</p>
+        <p begin="00:14:48.970" end="00:14:51.830" tts:direction="ltr">The other thing I'm going to do too, just
+<br />to clean this</p>
+        <p begin="00:14:51.830" end="00:14:53.950" tts:direction="ltr">up before I bring it into the dashboard so
+<br />I</p>
+        <p begin="00:14:53.950" end="00:14:58.810" tts:direction="ltr">can show you how to manipulate this is I'm
+<br />going to go into the axes,</p>
+        <p begin="00:14:58.810" end="00:15:02.570" tts:direction="ltr">and I'm going to deselect zero.</p>
+        <p begin="00:15:02.570" end="00:15:06.450" tts:direction="ltr">Now the reason why is because I'm going to
+<br />remove all these lines.</p>
+        <p begin="00:15:06.450" end="00:15:08.530" tts:direction="ltr">I'm not going to have any of these axes,</p>
+        <p begin="00:15:08.530" end="00:15:12.610" tts:direction="ltr">but this is going to shrink it down so it
+<br />fits within this actual space.</p>
+        <p begin="00:15:12.610" end="00:15:14.190" tts:direction="ltr">Let's go ahead and clean this up.</p>
+        <p begin="00:15:14.190" end="00:15:18.980" tts:direction="ltr">I'm going to remove that header, remove
+<br />that header.</p>
+        <p begin="00:15:18.980" end="00:15:22.510" tts:direction="ltr">Then when I write click that and I want to
+<br />format,</p>
+        <p begin="00:15:22.510" end="00:15:26.230" tts:direction="ltr">I'm going to head into here and I want to
+<br />have</p>
+        <p begin="00:15:26.230" end="00:15:34.110" tts:direction="ltr">my zero lines be none and my axis rulers
+<br />be none.</p>
+        <p begin="00:15:34.390" end="00:15:37.190" tts:direction="ltr">What to do.</p>
+        <p begin="00:15:47.230" end="00:15:49.730" tts:direction="ltr">Let see.</p>
+        <p begin="00:15:49.730" end="00:15:58.990" tts:direction="ltr">Let's go into the rows. Maybe I'll bring
+<br />this in.</p>
+        <p begin="00:15:59.230" end="00:16:02.600" tts:direction="ltr">T Okay.</p>
+        <p begin="00:16:02.600" end="00:16:07.000" tts:direction="ltr">So it need to be on rows and grid lines.
+<br />There we go.</p>
+        <p begin="00:16:07.000" end="00:16:09.140" tts:direction="ltr">I think I've got everything else</p>
+        <p begin="00:16:09.140" end="00:16:15.240" tts:direction="ltr">removed and the access rulers removed.
+<br />Good. All right.</p>
+        <p begin="00:16:15.240" end="00:16:19.660" tts:direction="ltr">Now what I want to do is I'm going to go
+<br />ahead and go into the dashboard,</p>
+        <p begin="00:16:19.660" end="00:16:29.360" tts:direction="ltr">and I'm going to create a really small
+<br />size here maybe we'll do 400 by 400,</p>
+        <p begin="00:16:29.360" end="00:16:34.780" tts:direction="ltr">and then I can drag in that sheet and drop
+<br />that in.</p>
+        <p begin="00:16:35.380" end="00:16:41.340" tts:direction="ltr">Now I've got I can always go to that
+<br />sheet,</p>
+        <p begin="00:16:41.340" end="00:16:48.130" tts:direction="ltr">maybe I can change two.</p>
+        <p begin="00:16:48.130" end="00:16:55.790" tts:direction="ltr">That looks good. Don't have the gridlines
+<br />I've got the sails on there.</p>
+        <p begin="00:16:58.810" end="00:17:04.590" tts:direction="ltr">I've gone ahead and created another profit
+<br />KPI sheet.</p>
+        <p begin="00:17:04.590" end="00:17:09.150" tts:direction="ltr">What I can do here is I can keep</p>
+        <p begin="00:17:09.150" end="00:17:16.530" tts:direction="ltr">my width at 400 and now I'll just make
+<br />this smaller to 200.</p>
+        <p begin="00:17:16.530" end="00:17:20.310" tts:direction="ltr">Then I'll go ahead and bring this sheet
+<br />here.</p>
+        <p begin="00:17:20.310" end="00:17:23.010" tts:direction="ltr">Now I've got both of those.</p>
+        <p begin="00:17:24.050" end="00:17:27.770" tts:direction="ltr">As little c that I could use.</p>
+        <p begin="00:17:32.460" end="00:17:38.780" tts:direction="ltr">Looking at this and thinking I need to do
+<br />some probably some padding on that.</p>
+        <p begin="00:17:38.780" end="00:17:47.830" tts:direction="ltr">And If I just</p>
+        <p begin="00:17:47.830" end="00:17:50.290" tts:direction="ltr">scroll down a little bit here,</p>
+        <p begin="00:17:50.290" end="00:17:55.970" tts:direction="ltr">you'll see I've got some padding that I
+<br />can do for the outer and inner.</p>
+        <p begin="00:17:55.970" end="00:18:02.910" tts:direction="ltr">I might want to increase that right one a
+<br />bit to give a little more room.</p>
+        <p begin="00:18:05.030" end="00:18:09.530" tts:direction="ltr">A little bit of ways that you can just do
+<br />some finesses,</p>
+        <p begin="00:18:09.530" end="00:18:11.590" tts:direction="ltr">they're not so close together.</p>
+        <p begin="00:18:11.590" end="00:18:14.210" tts:direction="ltr">I can probably do some more formatting
+<br />here,</p>
+        <p begin="00:18:14.210" end="00:18:16.730" tts:direction="ltr">but I think the goal,</p>
+        <p begin="00:18:16.730" end="00:18:19.190" tts:direction="ltr">let me just like that.</p>
+        <p begin="00:18:19.750" end="00:18:26.770" tts:direction="ltr">I'm not quite sure why that one is because
+<br />it's selected, interesting.</p>
+        <p begin="00:18:26.770" end="00:18:30.625" tts:direction="ltr">I'm going to go here to my tooltip.</p>
+        <p begin="00:18:30.625" end="00:18:33.760" tts:direction="ltr">And clean that up just a little bit too.</p>
+        <p begin="00:18:33.760" end="00:18:37.780" tts:direction="ltr">We're going to go ahead and remove that
+<br />one.</p>
+        <p begin="00:18:37.780" end="00:18:42.160" tts:direction="ltr">I just have sales and we'll just have the
+<br />month.</p>
+        <p begin="00:18:42.160" end="00:18:46.820" tts:direction="ltr">G. That looks like, that's way cleaner.</p>
+        <p begin="00:18:46.820" end="00:18:50.440" tts:direction="ltr">I can also I can format that.</p>
+        <p begin="00:18:50.440" end="00:18:55.660" tts:direction="ltr">I would format the sum of sales with the
+<br />dollar sign over in here.</p>
+        <p begin="00:18:55.660" end="00:18:58.060" tts:direction="ltr">But let's go and put that.</p>
+        <p begin="00:18:58.220" end="00:19:05.420" tts:direction="ltr">And then probably simplify that tool tip
+<br />as well. Having that month.</p>
+        <p begin="00:19:05.420" end="00:19:12.660" tts:direction="ltr">I don't need don't need that.</p>
+        <p begin="00:19:19.140" end="00:19:21.180" tts:direction="ltr">Okay.</p>
+        <p begin="00:19:28.060" end="00:19:34.760" tts:direction="ltr">So Yeah.</p>
+        <p begin="00:19:34.760" end="00:19:38.240" tts:direction="ltr">Interesting. I need to do just profit on
+<br />that.</p>
+        <p begin="00:19:38.240" end="00:19:47.800" tts:direction="ltr">Sorry, I need to just the profit profit.
+<br />Sorry about that.</p>
+        <p begin="00:19:47.800" end="00:19:50.700" tts:direction="ltr">Just looking at what I've got.</p>
+        <p begin="00:19:53.980" end="00:19:59.500" tts:direction="ltr">Let me preview that. Good.</p>
+        <p begin="00:19:59.780" end="00:20:02.160" tts:direction="ltr">Yeah, that's good.</p>
+        <p begin="00:20:02.160" end="00:20:07.540" tts:direction="ltr">This is a chance to do those KPIs, key
+<br />performance indicators,</p>
+        <p begin="00:20:07.540" end="00:20:10.180" tts:direction="ltr">which often have to do with sales and
+<br />profit</p>
+        <p begin="00:20:10.180" end="00:20:13.900" tts:direction="ltr">and how to calculate those and create a
+<br />small sparkline.</p>
+        <p begin="00:20:13.900" end="00:20:15.780" tts:direction="ltr">If I wanted to add in more,</p>
+        <p begin="00:20:15.780" end="00:20:17.160" tts:direction="ltr">I could have that all across,</p>
+        <p begin="00:20:17.160" end="00:20:21.060" tts:direction="ltr">I could do it by month, I could do it by
+<br />year.</p>
+        <p begin="00:20:21.060" end="00:20:22.960" tts:direction="ltr">There's a lot of different ways that you
+<br />can do this,</p>
+        <p begin="00:20:22.960" end="00:20:29.340" tts:direction="ltr">but hopefully you have now learned a new
+<br />tool on how to show KPIs.</p>
+    </div>
+  </body>
+</tt>

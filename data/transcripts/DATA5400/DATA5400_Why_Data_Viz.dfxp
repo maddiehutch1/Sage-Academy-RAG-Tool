@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>445084472 - 1_ccmmi5xk - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.100" end="00:00:08.720" tts:direction="ltr">Hello, visitors. This is a short lecture
+<br />on why we visualize data.</p>
+        <p begin="00:00:08.720" end="00:00:11.440" tts:direction="ltr">Why data visualization, why take this
+<br />course,</p>
+        <p begin="00:00:11.440" end="00:00:14.320" tts:direction="ltr">besides the fact that it's part of</p>
+        <p begin="00:00:14.320" end="00:00:19.440" tts:direction="ltr">maybe your graduation requirements or
+<br />you've been interested in visualization.</p>
+        <p begin="00:00:19.440" end="00:00:22.620" tts:direction="ltr">Well, I'm here to tell you that this is</p>
+        <p begin="00:00:22.620" end="00:00:25.340" tts:direction="ltr">an important market ready skill to be able</p>
+        <p begin="00:00:25.340" end="00:00:29.460" tts:direction="ltr">to do great things in the 21st century.</p>
+        <p begin="00:00:29.460" end="00:00:34.500" tts:direction="ltr">Let's go ahead and talk first about all of
+<br />the data that we're collecting.</p>
+        <p begin="00:00:34.500" end="00:00:37.180" tts:direction="ltr">We know that data governs</p>
+        <p begin="00:00:37.180" end="00:00:40.970" tts:direction="ltr">our world and that we are constantly
+<br />collecting data.</p>
+        <p begin="00:00:40.970" end="00:00:43.580" tts:direction="ltr">Here's something that though I want you to
+<br />remember is that</p>
+        <p begin="00:00:43.580" end="00:00:47.160" tts:direction="ltr">all data starts with a human first.</p>
+        <p begin="00:00:47.160" end="00:00:50.540" tts:direction="ltr">A human writes an algorithm to collect
+<br />data.</p>
+        <p begin="00:00:50.540" end="00:00:54.760" tts:direction="ltr">A human creates a way to collect data from
+<br />touch</p>
+        <p begin="00:00:54.760" end="00:01:00.000" tts:direction="ltr">or from the weather or from the
+<br />perspiration that we have.</p>
+        <p begin="00:01:00.000" end="00:01:02.220" tts:direction="ltr">It all starts with a human,</p>
+        <p begin="00:01:02.220" end="00:01:05.040" tts:direction="ltr">and even though it feels very</p>
+        <p begin="00:01:05.290" end="00:01:11.410" tts:direction="ltr">distant maybe and maybe not warm and fuzzy
+<br />like maybe a human could be,</p>
+        <p begin="00:01:11.410" end="00:01:13.970" tts:direction="ltr">but it really does start with us.</p>
+        <p begin="00:01:13.970" end="00:01:17.350" tts:direction="ltr">It's human center data.</p>
+        <p begin="00:01:17.350" end="00:01:20.210" tts:direction="ltr">We are able to gather all of this now</p>
+        <p begin="00:01:20.210" end="00:01:23.410" tts:direction="ltr">through the vehicles that we drive and we
+<br />can</p>
+        <p begin="00:01:23.410" end="00:01:29.810" tts:direction="ltr">figure out if we should avoid certain
+<br />areas or to prepare for traffic on I 15.</p>
+        <p begin="00:01:29.810" end="00:01:33.790" tts:direction="ltr">Weather data has been collected for the
+<br />very longest.</p>
+        <p begin="00:01:33.790" end="00:01:35.770" tts:direction="ltr">We've always been interested in the
+<br />weather</p>
+        <p begin="00:01:35.770" end="00:01:38.570" tts:direction="ltr">because of the crops and the food that we
+<br />require.</p>
+        <p begin="00:01:38.570" end="00:01:41.790" tts:direction="ltr">When we're at the gym, we want to know how
+<br />many steps we have,</p>
+        <p begin="00:01:41.790" end="00:01:46.245" tts:direction="ltr">what are heartbeats, how many calories
+<br />we're exerting.</p>
+        <p begin="00:01:46.245" end="00:01:48.820" tts:direction="ltr">These are all just really small tips</p>
+        <p begin="00:01:48.820" end="00:01:51.280" tts:direction="ltr">of the iceberg because when it comes to
+<br />businesses,</p>
+        <p begin="00:01:51.280" end="00:01:54.040" tts:direction="ltr">we are also gathering so many different
+<br />data points</p>
+        <p begin="00:01:54.040" end="00:01:56.960" tts:direction="ltr">to better inform our decision making.</p>
+        <p begin="00:01:56.960" end="00:01:59.680" tts:direction="ltr">As humans, we're gathering this data,</p>
+        <p begin="00:01:59.680" end="00:02:03.320" tts:direction="ltr">and it is all around us, as you well know.</p>
+        <p begin="00:02:03.320" end="00:02:05.460" tts:direction="ltr">Now, I wanted to share with you</p>
+        <p begin="00:02:05.460" end="00:02:12.895" tts:direction="ltr">one tool that I came across when it came
+<br />to visualizing some data.</p>
+        <p begin="00:02:12.895" end="00:02:17.730" tts:direction="ltr">Here you can follow along by going to the
+<br />URL.</p>
+        <p begin="00:02:17.730" end="00:02:22.290" tts:direction="ltr">There is a baby name visualizer.</p>
+        <p begin="00:02:22.290" end="00:02:26.130" tts:direction="ltr">It goes from 18 80 all the way to 2020</p>
+        <p begin="00:02:26.130" end="00:02:31.630" tts:direction="ltr">and provides a visualization of your name.</p>
+        <p begin="00:02:31.630" end="00:02:34.210" tts:direction="ltr">I find this fascinating.</p>
+        <p begin="00:02:34.210" end="00:02:36.850" tts:direction="ltr">My name is spelled Lean with an I and</p>
+        <p begin="00:02:36.850" end="00:02:39.600" tts:direction="ltr">an E. I'm going to just select both there,</p>
+        <p begin="00:02:39.600" end="00:02:41.220" tts:direction="ltr">I'm going to keep it normalized.</p>
+        <p begin="00:02:41.220" end="00:02:44.440" tts:direction="ltr">It's really interesting to see that
+<br />Leanne,</p>
+        <p begin="00:02:44.440" end="00:02:48.260" tts:direction="ltr">first of all, does not have a lot of
+<br />entries.</p>
+        <p begin="00:02:48.260" end="00:02:51.880" tts:direction="ltr">On my Y axes, I'm starting off at two,
+<br />four, six, eight.</p>
+        <p begin="00:02:51.880" end="00:02:54.520" tts:direction="ltr">These are not large quantities here.</p>
+        <p begin="00:02:54.520" end="00:02:56.500" tts:direction="ltr">Then on my X axies,</p>
+        <p begin="00:02:56.500" end="00:03:01.480" tts:direction="ltr">you can see 1930 was when this name really
+<br />became a name,</p>
+        <p begin="00:03:01.480" end="00:03:02.980" tts:direction="ltr">at least here in the US.</p>
+        <p begin="00:03:02.980" end="00:03:06.900" tts:direction="ltr">If you have a baby name visualizer</p>
+        <p begin="00:03:06.900" end="00:03:09.980" tts:direction="ltr">from another country or have discovered
+<br />it, please let me know.</p>
+        <p begin="00:03:09.980" end="00:03:13.540" tts:direction="ltr">Unfortunately, these are all US names and</p>
+        <p begin="00:03:13.540" end="00:03:17.550" tts:direction="ltr">they are gathered from the Social Security
+<br />Department.</p>
+        <p begin="00:03:17.550" end="00:03:23.610" tts:direction="ltr">But here I can see I've got this peak
+<br />that's happening in the 1960s,</p>
+        <p begin="00:03:23.610" end="00:03:26.450" tts:direction="ltr">16 per million births.</p>
+        <p begin="00:03:26.450" end="00:03:29.450" tts:direction="ltr">Yeah. That's not very many Leans.</p>
+        <p begin="00:03:29.450" end="00:03:31.990" tts:direction="ltr">Then a little bit of a dip in the 70s,</p>
+        <p begin="00:03:31.990" end="00:03:35.590" tts:direction="ltr">back up in the 80s, a big dip.</p>
+        <p begin="00:03:35.590" end="00:03:40.510" tts:direction="ltr">Here. Only three were named Lean in the
+<br />2005.</p>
+        <p begin="00:03:40.510" end="00:03:42.550" tts:direction="ltr">It's seen a little bit of popularity.</p>
+        <p begin="00:03:42.550" end="00:03:47.130" tts:direction="ltr">Now, if I were to change this to the more
+<br />popular spelling of Lean,</p>
+        <p begin="00:03:47.130" end="00:03:49.550" tts:direction="ltr">you'll notice that this visualizer
+<br />includes</p>
+        <p begin="00:03:49.550" end="00:03:54.530" tts:direction="ltr">both the E ending and the A and the non
+<br />vowel ending here.</p>
+        <p begin="00:03:54.530" end="00:03:56.490" tts:direction="ltr">This is an area chart by the way,</p>
+        <p begin="00:03:56.490" end="00:03:59.100" tts:direction="ltr">where we're building it between all three
+<br />of those.</p>
+        <p begin="00:03:59.100" end="00:04:02.030" tts:direction="ltr">You can see again that uptick in 1930,</p>
+        <p begin="00:04:02.030" end="00:04:07.150" tts:direction="ltr">but there were some lianas that were
+<br />earlier.</p>
+        <p begin="00:04:07.150" end="00:04:09.710" tts:direction="ltr">That's an older version of this name.</p>
+        <p begin="00:04:09.710" end="00:04:12.030" tts:direction="ltr">Then you can still see the peak and a
+<br />little</p>
+        <p begin="00:04:12.030" end="00:04:14.630" tts:direction="ltr">bit less of a valley and then the drop off
+<br />still.</p>
+        <p begin="00:04:14.630" end="00:04:19.190" tts:direction="ltr">You might want to put your own name in and
+<br />just see if your name was</p>
+        <p begin="00:04:19.190" end="00:04:21.410" tts:direction="ltr">popular during the year that you were</p>
+        <p begin="00:04:21.410" end="00:04:24.050" tts:direction="ltr">born and that's the name that your parents
+<br />selected.</p>
+        <p begin="00:04:24.050" end="00:04:26.170" tts:direction="ltr">You might have a unique spelling like I
+<br />do,</p>
+        <p begin="00:04:26.170" end="00:04:28.820" tts:direction="ltr">and you just need to determine what</p>
+        <p begin="00:04:28.820" end="00:04:32.600" tts:direction="ltr">the more traditional spelling is and see
+<br />how that falls as well.</p>
+        <p begin="00:04:32.600" end="00:04:36.780" tts:direction="ltr">But it's fun to really play with data, to
+<br />gather an insight.</p>
+        <p begin="00:04:36.780" end="00:04:38.240" tts:direction="ltr">You might even use this if you're</p>
+        <p begin="00:04:38.240" end="00:04:42.080" tts:direction="ltr">an expected parent to find a name that
+<br />might be older,</p>
+        <p begin="00:04:42.080" end="00:04:45.740" tts:direction="ltr">maybe in the 1940s 1950s and not as
+<br />popular now.</p>
+        <p begin="00:04:45.740" end="00:04:48.900" tts:direction="ltr">This type of tool could inform your
+<br />decision.</p>
+        <p begin="00:04:48.900" end="00:04:53.700" tts:direction="ltr">Lots of great ways that we can use data in
+<br />our lives.</p>
+        <p begin="00:04:54.100" end="00:04:56.940" tts:direction="ltr">Because of all this data,</p>
+        <p begin="00:04:56.940" end="00:04:59.500" tts:direction="ltr">Jobs demand, data skills,</p>
+        <p begin="00:04:59.500" end="00:05:01.540" tts:direction="ltr">and they are in demand.</p>
+        <p begin="00:05:01.540" end="00:05:06.420" tts:direction="ltr">When we look at all of the requirements
+<br />that individuals need,</p>
+        <p begin="00:05:06.420" end="00:05:09.540" tts:direction="ltr">there's some data requirement,</p>
+        <p begin="00:05:09.540" end="00:05:11.760" tts:direction="ltr">even if it's just a knowledge of Excel.</p>
+        <p begin="00:05:11.760" end="00:05:17.540" tts:direction="ltr">We can see here that the linked in
+<br />screenshot that I have from</p>
+        <p begin="00:05:17.540" end="00:05:20.440" tts:direction="ltr">2023 is that data analysis</p>
+        <p begin="00:05:20.440" end="00:05:23.700" tts:direction="ltr">is a hard skill that many companies are
+<br />looking for.</p>
+        <p begin="00:05:23.700" end="00:05:26.840" tts:direction="ltr">There's also this second one of
+<br />communication.</p>
+        <p begin="00:05:26.840" end="00:05:29.645" tts:direction="ltr">That's part of what we're trying to do is
+<br />to get better</p>
+        <p begin="00:05:29.645" end="00:05:31.350" tts:direction="ltr">At thinking about data,</p>
+        <p begin="00:05:31.350" end="00:05:33.730" tts:direction="ltr">writing about data, presenting for data.</p>
+        <p begin="00:05:33.730" end="00:05:36.430" tts:direction="ltr">You'll do that in your challenges in the
+<br />base camps.</p>
+        <p begin="00:05:36.430" end="00:05:39.570" tts:direction="ltr">You can also see that this market is on
+<br />the rise</p>
+        <p begin="00:05:39.570" end="00:05:42.910" tts:direction="ltr">that we see more and more jobs requiring
+<br />this skill set,</p>
+        <p begin="00:05:42.910" end="00:05:47.350" tts:direction="ltr">and that we do have a fairly good starting
+<br />salary in terms</p>
+        <p begin="00:05:47.350" end="00:05:52.430" tts:direction="ltr">of the medium of a little shy of 75,000
+<br />according to monster.com.</p>
+        <p begin="00:05:52.430" end="00:05:57.370" tts:direction="ltr">I wanted to go ahead and check out what
+<br />today's outlook was in 2024.</p>
+        <p begin="00:05:57.370" end="00:06:00.330" tts:direction="ltr">I pulled up this from Light cast.</p>
+        <p begin="00:06:00.330" end="00:06:04.255" tts:direction="ltr">We'll go ahead and I'll navigate to that.</p>
+        <p begin="00:06:04.255" end="00:06:08.460" tts:direction="ltr">Light cast is a system that goes and
+<br />scrapes</p>
+        <p begin="00:06:08.460" end="00:06:12.840" tts:direction="ltr">our job postings and sees what's out there
+<br />and what kind of skills.</p>
+        <p begin="00:06:12.840" end="00:06:16.960" tts:direction="ltr">It's actually great for assessing your
+<br />resume to what the market needs,</p>
+        <p begin="00:06:16.960" end="00:06:19.900" tts:direction="ltr">and I can provide you with some of those
+<br />links to those tools.</p>
+        <p begin="00:06:19.900" end="00:06:21.360" tts:direction="ltr">It's really fascinating.</p>
+        <p begin="00:06:21.360" end="00:06:23.480" tts:direction="ltr">This is in the past five months.</p>
+        <p begin="00:06:23.480" end="00:06:28.440" tts:direction="ltr">We can see the top companies that are
+<br />posting jobs, Price Waterhouse Cooper.</p>
+        <p begin="00:06:28.440" end="00:06:30.680" tts:direction="ltr">They are a very, very large company,</p>
+        <p begin="00:06:30.680" end="00:06:34.820" tts:direction="ltr">so it makes sense that they would have a
+<br />large amount of jobs they're posting,</p>
+        <p begin="00:06:34.820" end="00:06:36.680" tts:direction="ltr">but they're also very data centric.</p>
+        <p begin="00:06:36.680" end="00:06:40.715" tts:direction="ltr">Of course, Amazon Dalit, which is
+<br />accounting.</p>
+        <p begin="00:06:40.715" end="00:06:45.350" tts:direction="ltr">Dealing with numbers, but still numbers
+<br />are data, Johnson and Johnson,</p>
+        <p begin="00:06:45.350" end="00:06:47.670" tts:direction="ltr">they work within the medical and
+<br />pharmaceutical,</p>
+        <p begin="00:06:47.670" end="00:06:50.870" tts:direction="ltr">but then they also deliver products to our
+<br />stores.</p>
+        <p begin="00:06:50.870" end="00:06:53.150" tts:direction="ltr">They have lots of data needs.</p>
+        <p begin="00:06:53.150" end="00:06:54.850" tts:direction="ltr">I'm not familiar with GD House,</p>
+        <p begin="00:06:54.850" end="00:06:59.410" tts:direction="ltr">but it looks like they are also looking
+<br />for quite a few data jobs.</p>
+        <p begin="00:06:59.410" end="00:07:01.510" tts:direction="ltr">You can see some of these titles.</p>
+        <p begin="00:07:01.510" end="00:07:04.150" tts:direction="ltr">There's data analysts, data scientists,</p>
+        <p begin="00:07:04.150" end="00:07:06.490" tts:direction="ltr">data engineers, business analysts.</p>
+        <p begin="00:07:06.490" end="00:07:08.710" tts:direction="ltr">Then if we go down to see the trends,</p>
+        <p begin="00:07:08.710" end="00:07:11.770" tts:direction="ltr">if you happen to be looking for a job in
+<br />December and</p>
+        <p begin="00:07:11.770" end="00:07:15.415" tts:direction="ltr">feel like you are not getting the
+<br />responses that you would hope,</p>
+        <p begin="00:07:15.415" end="00:07:18.860" tts:direction="ltr">Just know that there are not as many
+<br />postings in December,</p>
+        <p begin="00:07:18.860" end="00:07:21.600" tts:direction="ltr">probably because companies are closing
+<br />out.</p>
+        <p begin="00:07:21.600" end="00:07:26.440" tts:direction="ltr">Their year end, they are looking to hire
+<br />probably in the following year,</p>
+        <p begin="00:07:26.440" end="00:07:30.160" tts:direction="ltr">and that is a lower point for job postings
+<br />higher,</p>
+        <p begin="00:07:30.160" end="00:07:34.240" tts:direction="ltr">definitely in July and probably keeps
+<br />ramping up until then.</p>
+        <p begin="00:07:34.280" end="00:07:41.300" tts:direction="ltr">It's just great to see that data jobs are
+<br />in demand.</p>
+        <p begin="00:07:41.300" end="00:07:44.940" tts:direction="ltr">This is a skill, part of that portfolio of
+<br />how you</p>
+        <p begin="00:07:44.940" end="00:07:49.880" tts:direction="ltr">can visualize data to a variety of
+<br />audiences.</p>
+        <p begin="00:07:50.240" end="00:07:55.120" tts:direction="ltr">Let's go ahead. Let me go back to the
+<br />presentation here.</p>
+        <p begin="00:07:58.190" end="00:08:02.010" tts:direction="ltr">What do I mean when I say data
+<br />visualization.</p>
+        <p begin="00:08:02.010" end="00:08:03.850" tts:direction="ltr">It's a catch phrase.</p>
+        <p begin="00:08:03.850" end="00:08:09.810" tts:direction="ltr">Really what I'm saying is that anything
+<br />that represents the exploration,</p>
+        <p begin="00:08:09.810" end="00:08:12.690" tts:direction="ltr">examination, or communication of data.</p>
+        <p begin="00:08:12.690" end="00:08:16.270" tts:direction="ltr">That could be a data journalist who is
+<br />doing</p>
+        <p begin="00:08:16.270" end="00:08:20.350" tts:direction="ltr">an infographic and leveraging some data to
+<br />showcase</p>
+        <p begin="00:08:20.350" end="00:08:24.750" tts:direction="ltr">some big ideas all the way to a
+<br />statistician</p>
+        <p begin="00:08:24.750" end="00:08:30.030" tts:direction="ltr">who's using tables and just showing raw
+<br />data from their data collection.</p>
+        <p begin="00:08:30.030" end="00:08:32.710" tts:direction="ltr">All of that can be considered
+<br />visualization.</p>
+        <p begin="00:08:32.710" end="00:08:34.370" tts:direction="ltr">But the sweet spot in the middle is</p>
+        <p begin="00:08:34.370" end="00:08:37.870" tts:direction="ltr">where What we're going to work on is that
+<br />chart making,</p>
+        <p begin="00:08:37.870" end="00:08:43.710" tts:direction="ltr">dashboard making, looking at geographic
+<br />data to really gather those insights.</p>
+        <p begin="00:08:43.710" end="00:08:50.190" tts:direction="ltr">Data visualization helps us to order our
+<br />info and to improve comprehension,</p>
+        <p begin="00:08:50.190" end="00:08:53.810" tts:direction="ltr">interpretation, and memory. Who doesn't
+<br />want that?</p>
+        <p begin="00:08:53.810" end="00:08:56.790" tts:direction="ltr">In fact, I always say vis, which, by the
+<br />way,</p>
+        <p begin="00:08:56.790" end="00:08:59.910" tts:direction="ltr">that's my slang term for visualizations,</p>
+        <p begin="00:08:59.910" end="00:09:05.530" tts:direction="ltr">and that's why I call you visors is that
+<br />visits amplify cognition.</p>
+        <p begin="00:09:05.530" end="00:09:07.030" tts:direction="ltr">They really help us think.</p>
+        <p begin="00:09:07.030" end="00:09:08.850" tts:direction="ltr">With so much going on,</p>
+        <p begin="00:09:08.850" end="00:09:14.110" tts:direction="ltr">we need some way to cut through the
+<br />clutter and be able to see the insights.</p>
+        <p begin="00:09:14.110" end="00:09:16.040" tts:direction="ltr">That leads me to this next slide.</p>
+        <p begin="00:09:16.040" end="00:09:18.070" tts:direction="ltr">Where I've drawn these five senses.</p>
+        <p begin="00:09:18.070" end="00:09:19.450" tts:direction="ltr">You're familiar with them.</p>
+        <p begin="00:09:19.450" end="00:09:21.370" tts:direction="ltr">We've got smell, taste,</p>
+        <p begin="00:09:21.370" end="00:09:24.270" tts:direction="ltr">touch, hearing, and then we have sight.</p>
+        <p begin="00:09:24.270" end="00:09:28.190" tts:direction="ltr">While I love to eat and I love the music
+<br />that I listen to,</p>
+        <p begin="00:09:28.190" end="00:09:31.110" tts:direction="ltr">It is site that dominates all else.</p>
+        <p begin="00:09:31.110" end="00:09:33.190" tts:direction="ltr">It requires more brain power.</p>
+        <p begin="00:09:33.190" end="00:09:35.290" tts:direction="ltr">It drives a lot of our decision making.</p>
+        <p begin="00:09:35.290" end="00:09:38.570" tts:direction="ltr">It has those pre attentive attributes
+<br />associated with it.</p>
+        <p begin="00:09:38.570" end="00:09:43.050" tts:direction="ltr">When you begin to really understand that
+<br />and see that in the work that you do,</p>
+        <p begin="00:09:43.050" end="00:09:47.490" tts:direction="ltr">then you can begin to really craft that
+<br />story, that narrative,</p>
+        <p begin="00:09:47.490" end="00:09:50.590" tts:direction="ltr">really use that data visualization to be
+<br />able</p>
+        <p begin="00:09:50.590" end="00:09:55.190" tts:direction="ltr">to uncover maybe an action or a move,</p>
+        <p begin="00:09:55.190" end="00:09:58.470" tts:direction="ltr">a pivot from one area of the market to
+<br />another.</p>
+        <p begin="00:09:58.470" end="00:10:01.410" tts:direction="ltr">That is one of our goals.</p>
+        <p begin="00:10:01.410" end="00:10:05.570" tts:direction="ltr">Now, a term that you may have already
+<br />heard before</p>
+        <p begin="00:10:05.570" end="00:10:07.470" tts:direction="ltr">because it's often used in some other
+<br />courses</p>
+        <p begin="00:10:07.470" end="00:10:09.670" tts:direction="ltr">is this idea of pre attentive attributes.</p>
+        <p begin="00:10:09.670" end="00:10:13.110" tts:direction="ltr">As I mentioned, that has to go directly to
+<br />our site sense,</p>
+        <p begin="00:10:13.110" end="00:10:16.590" tts:direction="ltr">where pre attentive attributes are visual
+<br />properties</p>
+        <p begin="00:10:16.590" end="00:10:20.610" tts:direction="ltr">that we notice without using conscious
+<br />effort to do so.</p>
+        <p begin="00:10:20.610" end="00:10:23.330" tts:direction="ltr">Here I've got this really simple example
+<br />of</p>
+        <p begin="00:10:23.330" end="00:10:26.350" tts:direction="ltr">all these circles that make a cube,</p>
+        <p begin="00:10:26.350" end="00:10:31.130" tts:direction="ltr">and I've got purple primarily and then I
+<br />have one orange</p>
+        <p begin="00:10:31.130" end="00:10:35.070" tts:direction="ltr">And that one orange dot you cannot help
+<br />but seeing.</p>
+        <p begin="00:10:35.070" end="00:10:38.450" tts:direction="ltr">In fact, you saw that dot before you even
+<br />read</p>
+        <p begin="00:10:38.450" end="00:10:40.750" tts:direction="ltr">these words because that was something
+<br />that</p>
+        <p begin="00:10:40.750" end="00:10:43.770" tts:direction="ltr">drew you in because of the principle,</p>
+        <p begin="00:10:43.770" end="00:10:46.170" tts:direction="ltr">the design principle of contrast.</p>
+        <p begin="00:10:46.170" end="00:10:51.330" tts:direction="ltr">That is something to be aware of that you
+<br />as a data designer,</p>
+        <p begin="00:10:51.330" end="00:10:54.750" tts:direction="ltr">a data interpreter, have the power to
+<br />bring things</p>
+        <p begin="00:10:54.750" end="00:10:58.810" tts:direction="ltr">forward and push things back using this
+<br />power of pre attentive attributes.</p>
+        <p begin="00:10:58.810" end="00:11:02.570" tts:direction="ltr">That's why visualizations are so important
+<br />because we can do that.</p>
+        <p begin="00:11:02.570" end="00:11:08.370" tts:direction="ltr">Now, I'm going to share with you this
+<br />table.</p>
+        <p begin="00:11:08.370" end="00:11:11.070" tts:direction="ltr">If I give you all these numbers in a
+<br />table,</p>
+        <p begin="00:11:11.070" end="00:11:13.950" tts:direction="ltr">it is difficult for you to determine,</p>
+        <p begin="00:11:13.950" end="00:11:15.630" tts:direction="ltr">hey, what's the highest value?</p>
+        <p begin="00:11:15.630" end="00:11:16.850" tts:direction="ltr">What's the lowest value?</p>
+        <p begin="00:11:16.850" end="00:11:19.630" tts:direction="ltr">Can I quickly see this in a table format?</p>
+        <p begin="00:11:19.630" end="00:11:22.210" tts:direction="ltr">The answer, of course, is no.</p>
+        <p begin="00:11:22.210" end="00:11:27.390" tts:direction="ltr">While those tables can provide maybe
+<br />something to statisticians,</p>
+        <p begin="00:11:27.390" end="00:11:31.150" tts:direction="ltr">to our audiences, it doesn't give us the
+<br />insights that</p>
+        <p begin="00:11:31.150" end="00:11:35.350" tts:direction="ltr">we're looking for that are more
+<br />instantaneous and required in business.</p>
+        <p begin="00:11:35.350" end="00:11:37.450" tts:direction="ltr">Let's put our tables aside,</p>
+        <p begin="00:11:37.450" end="00:11:40.050" tts:direction="ltr">although we'll create a few tableau to
+<br />start off and</p>
+        <p begin="00:11:40.050" end="00:11:43.200" tts:direction="ltr">double check some of our our sources.</p>
+        <p begin="00:11:43.200" end="00:11:46.480" tts:direction="ltr">But let's instead focus on our chart
+<br />making.</p>
+        <p begin="00:11:46.480" end="00:11:53.360" tts:direction="ltr">Now, I want you to play with me a little
+<br />game about pre attentive attributes.</p>
+        <p begin="00:11:53.360" end="00:11:57.020" tts:direction="ltr">I'm going to get out my stopwatch</p>
+        <p begin="00:11:57.020" end="00:12:00.640" tts:direction="ltr">here because I'm going to give you 10
+<br />seconds for you to</p>
+        <p begin="00:12:00.640" end="00:12:09.020" tts:direction="ltr">count the number of sevens that you see on
+<br />this screen. Let's go.</p>
+        <p begin="00:12:18.030" end="00:12:24.630" tts:direction="ltr">Stop. Stop, no looking at this anymore. No
+<br />more counting.</p>
+        <p begin="00:12:24.630" end="00:12:28.750" tts:direction="ltr">My question would be, what's your answer?</p>
+        <p begin="00:12:28.750" end="00:12:34.510" tts:direction="ltr">Now, some of you, your super skill is just
+<br />scanning and be able to count.</p>
+        <p begin="00:12:34.510" end="00:12:38.970" tts:direction="ltr">That's awesome. Congratulations. For the
+<br />rest of us,</p>
+        <p begin="00:12:38.970" end="00:12:40.270" tts:direction="ltr">it takes a bit of time.</p>
+        <p begin="00:12:40.270" end="00:12:42.750" tts:direction="ltr">We're a little more methodical, right?</p>
+        <p begin="00:12:42.750" end="00:12:46.350" tts:direction="ltr">But what you may encounter if</p>
+        <p begin="00:12:46.350" end="00:12:49.710" tts:direction="ltr">we were in a classroom and I were to ask
+<br />what number did you get?</p>
+        <p begin="00:12:49.710" end="00:12:53.930" tts:direction="ltr">That we're going to see some inaccuracies.</p>
+        <p begin="00:12:53.930" end="00:12:57.470" tts:direction="ltr">There's going to be some who will indicate
+<br />that they were frustrated.</p>
+        <p begin="00:12:57.470" end="00:13:00.270" tts:direction="ltr">They couldn't find it all. They were cut
+<br />off too short.</p>
+        <p begin="00:13:00.270" end="00:13:02.550" tts:direction="ltr">Because of that discrepancy,</p>
+        <p begin="00:13:02.550" end="00:13:07.530" tts:direction="ltr">we need to use our pre attentive
+<br />attributes to make it easier for our
+<br />audience</p>
+        <p begin="00:13:07.530" end="00:13:13.210" tts:direction="ltr">to achieve the result that is consistent
+<br />and that is accurate.</p>
+        <p begin="00:13:13.210" end="00:13:17.290" tts:direction="ltr">I can easily do that by employing that
+<br />contrast of colors.</p>
+        <p begin="00:13:17.290" end="00:13:19.450" tts:direction="ltr">I can make all the sevens blue.</p>
+        <p begin="00:13:19.450" end="00:13:21.530" tts:direction="ltr">Now, if I gave you 10 seconds,</p>
+        <p begin="00:13:21.530" end="00:13:23.350" tts:direction="ltr">chances are, you will be faster.</p>
+        <p begin="00:13:23.350" end="00:13:27.010" tts:direction="ltr">I can make them bold, so I'm going to take
+<br />it down to the next level.</p>
+        <p begin="00:13:27.010" end="00:13:29.910" tts:direction="ltr">I can underline it. Now I've got the
+<br />scannability,</p>
+        <p begin="00:13:29.910" end="00:13:31.570" tts:direction="ltr">so I can quickly get at it.</p>
+        <p begin="00:13:31.570" end="00:13:37.890" tts:direction="ltr">And finally, the answer if you got it is
+<br />the number seven appears 17 times.</p>
+        <p begin="00:13:37.890" end="00:13:42.270" tts:direction="ltr">Here I've got a bar chart on my left where
+<br />I've got all of my numbers listed.</p>
+        <p begin="00:13:42.270" end="00:13:44.550" tts:direction="ltr">I can also make this really easy</p>
+        <p begin="00:13:44.550" end="00:13:47.490" tts:direction="ltr">and just have all the seventeens right in
+<br />a row.</p>
+        <p begin="00:13:47.490" end="00:13:50.070" tts:direction="ltr">Excuse me, the sevens all right in a row.</p>
+        <p begin="00:13:50.070" end="00:13:51.450" tts:direction="ltr">You could quickly count that.</p>
+        <p begin="00:13:51.450" end="00:13:54.340" tts:direction="ltr">Probably, you could do that in four or 5
+<br />seconds.</p>
+        <p begin="00:13:54.340" end="00:13:59.370" tts:direction="ltr">If I were to reorder my bar chart now
+<br />instead of doing it based on zero,</p>
+        <p begin="00:13:59.370" end="00:14:01.310" tts:direction="ltr">one, two, three in that order,</p>
+        <p begin="00:14:01.310" end="00:14:03.030" tts:direction="ltr">but from greatest to least,</p>
+        <p begin="00:14:03.030" end="00:14:04.730" tts:direction="ltr">it's a descending sort.</p>
+        <p begin="00:14:04.730" end="00:14:09.270" tts:direction="ltr">You can now see that number seven is the
+<br />third from the bottom.</p>
+        <p begin="00:14:09.270" end="00:14:12.850" tts:direction="ltr">I can say, Hey, if we want to improve
+<br />that,</p>
+        <p begin="00:14:13.250" end="00:14:15.830" tts:direction="ltr">maybe we'll have those numbers?</p>
+        <p begin="00:14:15.830" end="00:14:18.550" tts:direction="ltr">Maybe we'll have that more apparent or
+<br />we'll have them less.</p>
+        <p begin="00:14:18.550" end="00:14:25.490" tts:direction="ltr">Suddenly, I can use my visualization and
+<br />ways to quickly gather some insights.</p>
+        <p begin="00:14:26.330" end="00:14:34.160" tts:direction="ltr">Let's take a look at where we started to
+<br />organize or to visualize.</p>
+        <p begin="00:14:34.160" end="00:14:37.420" tts:direction="ltr">These are some cave paintings in France,</p>
+        <p begin="00:14:37.420" end="00:14:40.020" tts:direction="ltr">they're called the sco caves,</p>
+        <p begin="00:14:40.020" end="00:14:46.460" tts:direction="ltr">and this is some of the earliest art that
+<br />was depicted to show some data.</p>
+        <p begin="00:14:46.460" end="00:14:49.500" tts:direction="ltr">The data was in these herbs that were
+<br />roaming</p>
+        <p begin="00:14:49.500" end="00:14:53.440" tts:direction="ltr">around that were necessary for our food
+<br />sources.</p>
+        <p begin="00:14:53.440" end="00:14:57.120" tts:direction="ltr">We have been visualizing data ever since.</p>
+        <p begin="00:14:57.120" end="00:15:00.240" tts:direction="ltr">One of my favorite characters is William
+<br />Playfair.</p>
+        <p begin="00:15:00.240" end="00:15:02.260" tts:direction="ltr">This is in 17 86.</p>
+        <p begin="00:15:02.260" end="00:15:07.470" tts:direction="ltr">He was a commercial and a political secret
+<br />agent.</p>
+        <p begin="00:15:07.470" end="00:15:11.710" tts:direction="ltr">He has been the person that we attribute
+<br />the line chart,</p>
+        <p begin="00:15:11.710" end="00:15:15.170" tts:direction="ltr">the area chart, the bar chart, and the pie
+<br />chart to.</p>
+        <p begin="00:15:15.170" end="00:15:20.490" tts:direction="ltr">Clearly, he was prolific,</p>
+        <p begin="00:15:20.490" end="00:15:26.290" tts:direction="ltr">me, in creating all sorts of ways to
+<br />showcase the data that he was gathering.</p>
+        <p begin="00:15:26.290" end="00:15:29.470" tts:direction="ltr">He reported on the French Revolution and
+<br />he</p>
+        <p begin="00:15:29.470" end="00:15:36.710" tts:direction="ltr">organized a lot of different nefarious and
+<br />exciting events.</p>
+        <p begin="00:15:36.710" end="00:15:38.390" tts:direction="ltr">That's William Playfair.</p>
+        <p begin="00:15:38.390" end="00:15:41.410" tts:direction="ltr">Charles Minard in 18 61,</p>
+        <p begin="00:15:41.410" end="00:15:46.750" tts:direction="ltr">took this data from Napoleon's March and
+<br />visualized it. It is awesome.</p>
+        <p begin="00:15:46.750" end="00:15:49.390" tts:direction="ltr">This is a great early example of how you
+<br />can</p>
+        <p begin="00:15:49.390" end="00:15:52.190" tts:direction="ltr">take a lot of data and then put it
+<br />together in</p>
+        <p begin="00:15:52.190" end="00:15:55.110" tts:direction="ltr">a visual way to be able to transfer</p>
+        <p begin="00:15:55.110" end="00:15:58.990" tts:direction="ltr">that knowledge to someone else and do it
+<br />all on one page.</p>
+        <p begin="00:15:58.990" end="00:16:02.290" tts:direction="ltr">Here we have Napoleon's March,</p>
+        <p begin="00:16:02.290" end="00:16:06.190" tts:direction="ltr">and he took his army to Moscow.</p>
+        <p begin="00:16:06.190" end="00:16:08.300" tts:direction="ltr">That's Moscow, Russia.</p>
+        <p begin="00:16:08.300" end="00:16:10.710" tts:direction="ltr">This is the start right here,</p>
+        <p begin="00:16:10.710" end="00:16:16.110" tts:direction="ltr">where he started off with 470,000
+<br />soldiers.</p>
+        <p begin="00:16:16.110" end="00:16:20.850" tts:direction="ltr">Unfortunately, he only returned with
+<br />10,000.</p>
+        <p begin="00:16:20.850" end="00:16:23.510" tts:direction="ltr">That is not very good.</p>
+        <p begin="00:16:23.510" end="00:16:28.670" tts:direction="ltr">This chart begins to tell that story of
+<br />that campaign.</p>
+        <p begin="00:16:28.670" end="00:16:31.810" tts:direction="ltr">And you can see the width,</p>
+        <p begin="00:16:31.810" end="00:16:34.190" tts:direction="ltr">that's how that's the 470,000,</p>
+        <p begin="00:16:34.190" end="00:16:35.610" tts:direction="ltr">and then things were happening.</p>
+        <p begin="00:16:35.610" end="00:16:39.570" tts:direction="ltr">You had a little bit of troops were called
+<br />out to other locations.</p>
+        <p begin="00:16:39.570" end="00:16:41.810" tts:direction="ltr">They encountered some diseases.</p>
+        <p begin="00:16:41.810" end="00:16:43.850" tts:direction="ltr">They encountered some poor weather.</p>
+        <p begin="00:16:43.850" end="00:16:46.650" tts:direction="ltr">They encountered several roadblocks</p>
+        <p begin="00:16:46.650" end="00:16:49.430" tts:direction="ltr">until they got to here where they were
+<br />unsuccessful,</p>
+        <p begin="00:16:49.430" end="00:16:52.510" tts:direction="ltr">and then they made their way back and lost
+<br />more and more.</p>
+        <p begin="00:16:52.510" end="00:16:56.110" tts:direction="ltr">So This is really just again,</p>
+        <p begin="00:16:56.110" end="00:17:00.130" tts:direction="ltr">a really great example of how you can
+<br />visualize data to understand</p>
+        <p begin="00:17:00.130" end="00:17:06.170" tts:direction="ltr">these different points along this journey
+<br />where Napoleon was unsuccessful.</p>
+        <p begin="00:17:06.170" end="00:17:10.430" tts:direction="ltr">We also have Data Rock star Florence
+<br />Nightingale.</p>
+        <p begin="00:17:10.430" end="00:17:14.790" tts:direction="ltr">You may have heard her name when it comes
+<br />to this concept of nursing.</p>
+        <p begin="00:17:14.790" end="00:17:18.490" tts:direction="ltr">But she created this coxcomb diagram</p>
+        <p begin="00:17:18.490" end="00:17:21.710" tts:direction="ltr">based on British casualties in the Crimean
+<br />War.</p>
+        <p begin="00:17:21.710" end="00:17:25.665" tts:direction="ltr">This was published around the same time as
+<br />Minard's Chart.</p>
+        <p begin="00:17:25.665" end="00:17:30.760" tts:direction="ltr">But she was working furiously on trying to
+<br />improve the sanitation in</p>
+        <p begin="00:17:30.760" end="00:17:37.560" tts:direction="ltr">hospitals and how disease was the culprit
+<br />and not actually injury from combat.</p>
+        <p begin="00:17:37.560" end="00:17:42.180" tts:direction="ltr">She gathered these mortality rates and she
+<br />was able to show that</p>
+        <p begin="00:17:42.180" end="00:17:47.120" tts:direction="ltr">was this part right here is when they are
+<br />in hospital,</p>
+        <p begin="00:17:47.120" end="00:17:51.920" tts:direction="ltr">and they're receiving unsanitary
+<br />instruments,</p>
+        <p begin="00:17:51.920" end="00:17:56.260" tts:direction="ltr">that they are not being cleaned and
+<br />dressed appropriately,</p>
+        <p begin="00:17:56.260" end="00:17:59.560" tts:direction="ltr">and that In these months,</p>
+        <p begin="00:17:59.560" end="00:18:03.380" tts:direction="ltr">this is really more the cause than the
+<br />actual battle.</p>
+        <p begin="00:18:03.380" end="00:18:06.320" tts:direction="ltr">She was pretty fierce.</p>
+        <p begin="00:18:06.320" end="00:18:09.200" tts:direction="ltr">Her colleague, who was a man,</p>
+        <p begin="00:18:09.200" end="00:18:12.420" tts:direction="ltr">really did not want her to show this
+<br />coxcomb.</p>
+        <p begin="00:18:12.420" end="00:18:14.160" tts:direction="ltr">He didn't want her to show the data.</p>
+        <p begin="00:18:14.160" end="00:18:17.780" tts:direction="ltr">He just wanted to go in and tell them that
+<br />they needed to have</p>
+        <p begin="00:18:17.780" end="00:18:21.870" tts:direction="ltr">more clean environments for the soldiers.</p>
+        <p begin="00:18:21.870" end="00:18:26.190" tts:direction="ltr">But she brought in her data and she was
+<br />persuasive and could show</p>
+        <p begin="00:18:26.190" end="00:18:30.810" tts:direction="ltr">that they had captured all this data and
+<br />where that information lied,</p>
+        <p begin="00:18:30.810" end="00:18:34.070" tts:direction="ltr">and she was able to secure an army of</p>
+        <p begin="00:18:34.070" end="00:18:37.670" tts:direction="ltr">nurses to go and to help save these
+<br />soldiers lives.</p>
+        <p begin="00:18:37.670" end="00:18:43.440" tts:direction="ltr">She's awesome. Another Data rock star is
+<br />Mary Eleanor Spears,</p>
+        <p begin="00:18:43.440" end="00:18:45.260" tts:direction="ltr">and in the 1950s,</p>
+        <p begin="00:18:45.260" end="00:18:47.140" tts:direction="ltr">she wrote two books,</p>
+        <p begin="00:18:47.140" end="00:18:49.500" tts:direction="ltr">one of them is called Charting Statistics,</p>
+        <p begin="00:18:49.500" end="00:18:53.820" tts:direction="ltr">and she is credited with the Lovely box
+<br />plot.</p>
+        <p begin="00:18:53.820" end="00:18:56.560" tts:direction="ltr">If you're a statistician and you enjoy
+<br />that,</p>
+        <p begin="00:18:56.560" end="00:18:58.860" tts:direction="ltr">it was developed further by another
+<br />colleague,</p>
+        <p begin="00:18:58.860" end="00:19:05.220" tts:direction="ltr">but she helped develop that box plot a
+<br />little bit more in depth.</p>
+        <p begin="00:19:05.340" end="00:19:08.760" tts:direction="ltr">John Tukey in the 1970s,</p>
+        <p begin="00:19:08.760" end="00:19:12.020" tts:direction="ltr">really began to think about</p>
+        <p begin="00:19:12.020" end="00:19:15.540" tts:direction="ltr">how visualizations can be presented in two
+<br />different ways.</p>
+        <p begin="00:19:15.540" end="00:19:18.800" tts:direction="ltr">This idea of explanatory and exploratory.</p>
+        <p begin="00:19:18.800" end="00:19:21.000" tts:direction="ltr">I'm going to cover these in a base camp,</p>
+        <p begin="00:19:21.000" end="00:19:24.180" tts:direction="ltr">but he really helped expand</p>
+        <p begin="00:19:24.180" end="00:19:29.520" tts:direction="ltr">the way that we thought about presenting
+<br />information in a visual sense.</p>
+        <p begin="00:19:29.520" end="00:19:36.030" tts:direction="ltr">Edward Tufty, he is a contemporary and He
+<br />is a great statistician,</p>
+        <p begin="00:19:36.030" end="00:19:39.150" tts:direction="ltr">where he has a few quotes that I want to
+<br />share with you.</p>
+        <p begin="00:19:39.150" end="00:19:41.850" tts:direction="ltr">He talks about, above all else,</p>
+        <p begin="00:19:41.850" end="00:19:44.010" tts:direction="ltr">show the data, let the data shine.</p>
+        <p begin="00:19:44.010" end="00:19:47.230" tts:direction="ltr">Sometimes you might see some dressed up
+<br />data,</p>
+        <p begin="00:19:47.230" end="00:19:50.730" tts:direction="ltr">and then you find out that the sample size
+<br />was a five.</p>
+        <p begin="00:19:50.730" end="00:19:53.230" tts:direction="ltr">That goes to our credibility issue,</p>
+        <p begin="00:19:53.230" end="00:19:55.510" tts:direction="ltr">but the data needs to shine.</p>
+        <p begin="00:19:55.510" end="00:19:58.250" tts:direction="ltr">That's what we'll tell the story the best.</p>
+        <p begin="00:19:58.250" end="00:20:03.350" tts:direction="ltr">He also said that chart junk can turn
+<br />bores into disasters,</p>
+        <p begin="00:20:03.350" end="00:20:06.270" tts:direction="ltr">but it can never rescue a thin data set.</p>
+        <p begin="00:20:06.270" end="00:20:10.750" tts:direction="ltr">That's again, putting more emphasis on the
+<br />design on the data.</p>
+        <p begin="00:20:10.750" end="00:20:13.270" tts:direction="ltr">He was also very much a minimalist.</p>
+        <p begin="00:20:13.270" end="00:20:17.910" tts:direction="ltr">Now, there's a great interactive timeline
+<br />that I provided the link to.</p>
+        <p begin="00:20:17.910" end="00:20:20.650" tts:direction="ltr">If you want to go check out some of these
+<br />rock stars,</p>
+        <p begin="00:20:20.650" end="00:20:24.250" tts:direction="ltr">go see some of this other data that's been
+<br />visualized throughout time.</p>
+        <p begin="00:20:24.250" end="00:20:28.270" tts:direction="ltr">It's a great way just to see that you're
+<br />stepping into</p>
+        <p begin="00:20:28.270" end="00:20:33.240" tts:direction="ltr">a space that has been used by humans for a
+<br />long period of time.</p>
+        <p begin="00:20:33.240" end="00:20:36.450" tts:direction="ltr">But in today's era,</p>
+        <p begin="00:20:36.450" end="00:20:41.270" tts:direction="ltr">we are going to be moving from just only
+<br />the experts having the data,</p>
+        <p begin="00:20:41.270" end="00:20:43.310" tts:direction="ltr">meaning that here's the data,</p>
+        <p begin="00:20:43.310" end="00:20:47.510" tts:direction="ltr">I own it and I will only allow you to use
+<br />it every once in a while.</p>
+        <p begin="00:20:47.510" end="00:20:50.170" tts:direction="ltr">Instead, what we're having is that</p>
+        <p begin="00:20:50.170" end="00:20:53.930" tts:direction="ltr">everyone needs to become familiar with
+<br />using data.</p>
+        <p begin="00:20:53.930" end="00:20:56.730" tts:direction="ltr">No longer do we knock on the statisticians
+<br />door</p>
+        <p begin="00:20:56.730" end="00:21:00.190" tts:direction="ltr">or we go to the database to collect that
+<br />query.</p>
+        <p begin="00:21:00.190" end="00:21:02.370" tts:direction="ltr">But more and more of us are understanding</p>
+        <p begin="00:21:02.370" end="00:21:04.550" tts:direction="ltr">how to capture this data so that we can
+<br />then</p>
+        <p begin="00:21:04.550" end="00:21:10.610" tts:direction="ltr">democratize it and also use it to make
+<br />decisions across many different fronts.</p>
+        <p begin="00:21:10.610" end="00:21:14.890" tts:direction="ltr">When we talk about why data visualization
+<br />and</p>
+        <p begin="00:21:14.890" end="00:21:19.690" tts:direction="ltr">how it's being implemented in today's
+<br />economy and today's businesses,</p>
+        <p begin="00:21:19.690" end="00:21:22.390" tts:direction="ltr">we've got our data, we have our
+<br />information.</p>
+        <p begin="00:21:22.390" end="00:21:24.950" tts:direction="ltr">Our information can be turned to knowledge
+<br />because of</p>
+        <p begin="00:21:24.950" end="00:21:27.710" tts:direction="ltr">those individuals who know the data the
+<br />best,</p>
+        <p begin="00:21:27.710" end="00:21:29.590" tts:direction="ltr">and knowledge can lead to action.</p>
+        <p begin="00:21:29.590" end="00:21:30.950" tts:direction="ltr">This is a business course,</p>
+        <p begin="00:21:30.950" end="00:21:32.690" tts:direction="ltr">and one of the things that I love about</p>
+        <p begin="00:21:32.690" end="00:21:35.870" tts:direction="ltr">business is that we are action oriented.</p>
+        <p begin="00:21:35.870" end="00:21:39.270" tts:direction="ltr">What do you now do, to improve the
+<br />business,</p>
+        <p begin="00:21:39.270" end="00:21:41.090" tts:direction="ltr">to improve the experience.</p>
+        <p begin="00:21:41.090" end="00:21:44.270" tts:direction="ltr">One of the things that I also like is that
+<br />data</p>
+        <p begin="00:21:44.270" end="00:21:47.570" tts:direction="ltr">often leads to more wonders, to more
+<br />questions.</p>
+        <p begin="00:21:47.570" end="00:21:53.110" tts:direction="ltr">Really good datasets, provide me with a
+<br />new lens to check my biases,</p>
+        <p begin="00:21:53.110" end="00:21:55.730" tts:direction="ltr">maybe check my previous thinking,</p>
+        <p begin="00:21:55.730" end="00:21:57.330" tts:direction="ltr">and then open it up to</p>
+        <p begin="00:21:57.330" end="00:22:00.830" tts:direction="ltr">some more questions that often leads to
+<br />some more data collection,</p>
+        <p begin="00:22:00.830" end="00:22:05.130" tts:direction="ltr">but it really provides what I consider to
+<br />be the end goal in that action.</p>
+        <p begin="00:22:05.130" end="00:22:08.010" tts:direction="ltr">Let's do something with that data.</p>
+        <p begin="00:22:08.090" end="00:22:13.130" tts:direction="ltr">Your next step will be to listen to David
+<br />McCanless on</p>
+        <p begin="00:22:13.130" end="00:22:18.550" tts:direction="ltr">a Ted talk for his explanation on why
+<br />information can be beautiful.</p>
+        <p begin="00:22:18.550" end="00:22:20.870" tts:direction="ltr">I hope that you enjoy that and you'll have</p>
+        <p begin="00:22:20.870" end="00:22:23.530" tts:direction="ltr">a chance to reflect upon that in our
+<br />discussion.</p>
+        <p begin="00:22:23.530" end="00:22:27.330" tts:direction="ltr">Until then, happy visit.</p>
+    </div>
+  </body>
+</tt>
