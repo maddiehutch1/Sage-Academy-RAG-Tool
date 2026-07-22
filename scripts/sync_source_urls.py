@@ -52,7 +52,7 @@ def main() -> None:
             with conn.cursor() as cur:
                 for path in sidecar_files:
                     try:
-                        data = json.loads(path.read_text(encoding="utf-8"))
+                        data = json.loads(path.read_text(encoding="utf-8-sig"))
                     except Exception as exc:
                         print(f"  [SKIP] {path.name} -- could not parse JSON: {exc}")
                         continue
