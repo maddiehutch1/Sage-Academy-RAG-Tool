@@ -13,7 +13,8 @@ CREATE TABLE IF NOT EXISTS videos (
   course_id INTEGER REFERENCES courses(id),
   title VARCHAR(255) NOT NULL,
   source_url TEXT,
-  transcript_path TEXT
+  transcript_path TEXT,
+  video_order INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS transcript_chunks (

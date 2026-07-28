@@ -137,3 +137,8 @@ These were completed after all 7 milestones above were marked done and represent
 - Added *DATA 5400: Advanced Data Visualization* as a third indexed course.
 - 63 transcript files (12 SRT + 51 DFXP) ingested with real timestamps and clean video titles.
 - All three courses (DATA2100, IS3600, DATA5400) are now live in the RAG tool and searchable end-to-end.
+
+### Video Ordering ✅
+- All 133 videos across the three courses assigned a sequential `order` field in their JSON sidecars.
+- `video_order` column added to the `videos` DB table and wired through the full stack: `ingest.py` → `retrieval.py` → `answer.py` → `main.py` API response.
+- Every source citation returned by the API now includes `video_order`, enabling the frontend to display module position or support ordered browsing in a future update.

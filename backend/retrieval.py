@@ -49,6 +49,7 @@ def retrieve_chunks(question: str, top_k: int = TOP_K) -> list[dict]:
                     c.name        AS course,
                     v.title       AS video,
                     v.source_url  AS source_url,
+                    v.video_order AS video_order,
                     tc.chunk_index,
                     tc.start_time,
                     tc.end_time,
@@ -71,11 +72,12 @@ def retrieve_chunks(question: str, top_k: int = TOP_K) -> list[dict]:
             "course":      row[1],
             "video":       row[2],
             "source_url":  row[3],
-            "chunk_index": row[4],
-            "start_time":  row[5],
-            "end_time":    row[6],
-            "distance":    row[7],
+            "video_order": row[4],
+            "chunk_index": row[5],
+            "start_time":  row[6],
+            "end_time":    row[7],
+            "distance":    row[8],
         }
         for row in rows
-        if row[7] <= MAX_DISTANCE
+        if row[8] <= MAX_DISTANCE
     ]

@@ -253,7 +253,12 @@ def get_or_create_course(cur, name: str) -> int:
 
 
 def get_or_create_video(
-    cur, course_db_id: int, title: str, source_url: str | None, transcript_path: str
+    cur,
+    course_db_id: int,
+    title: str,
+    source_url: str | None,
+    transcript_path: str,
+    video_order: int | None,
 ) -> int:
     cur.execute(
         "SELECT id FROM videos WHERE title = %s AND course_id = %s",
@@ -261,20 +266,19 @@ def get_or_create_video(
     )
     row = cur.fetchone()
     if row:
-        # Update source_url and transcript_path in case they changed
         cur.execute(
-            "UPDATE videos SET source_url = %s, transcript_path = %s WHERE id = %s",
-            (source_url, transcript_path, row[0]),
+            "UPDATE videos SET source_url = %s, transcript_path = %s, video_order = %s WHERE id = %s",
+            (source_url, transcript_path, video_order, row[0]),
         )
         return row[0]
     video_id = title.lower().replace(" ", "-")
     cur.execute(
         """
-        INSERT INTO videos (video_id, course_id, title, source_url, transcript_path)
-        VALUES (%s, %s, %s, %s, %s)
+        INSERT INTO videos (video_id, course_id, title, source_url, transcript_path, video_order)
+        VALUES (%s, %s, %s, %s, %s, %s)
         RETURNING id
         """,
-        (video_id, course_db_id, title, source_url, transcript_path),
+        (video_id, course_db_id, title, source_url, transcript_path, video_order),
     )
     return cur.fetchone()[0]
 
@@ -290,6 +294,7 @@ def ingest_file(cur, transcript_path: Path) -> None:
     course_name = meta.get("course")
     video_title = meta.get("video")
     source_url = meta.get("source_url") or None
+    video_order = meta.get("order") or None
 
     if not course_name or not video_title:
         print("  Skipping -- sidecar JSON missing 'course' or 'video' key.")
@@ -309,7 +314,7 @@ def ingest_file(cur, transcript_path: Path) -> None:
 
     course_db_id = get_or_create_course(cur, course_name)
     video_db_id = get_or_create_video(
-        cur, course_db_id, video_title, source_url, str(transcript_path)
+        cur, course_db_id, video_title, source_url, str(transcript_path), video_order
     )
 
     # Idempotent: clear existing chunks before re-inserting

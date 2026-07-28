@@ -2,6 +2,16 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-27 — Video ordering added across all three courses
+
+- **`order` field added to all JSON sidecars:** Every transcript sidecar now includes an `"order"` integer reflecting the video's position in the course sequence. IS3600 uses the lecture number from the filename (1–29, matching actual lecture numbers with gaps where lectures are missing). DATA2100 is sequenced 1–43 following the course's topic progression (data quality → databases/SQL → enterprise systems → flowcharting → Python → project management → data analysis → visualization). DATA5400 is sequenced 1–63 following the course's Cairn/Base Camp structure (setup → Cairn 1 → Base Camp 01 → Cairn 2 → calculations → design → maps/dashboards → story → advanced interaction).
+- **`video_order` column added to `videos` table:** `db/schema.sql` updated; existing live DB updated via `ALTER TABLE videos ADD COLUMN IF NOT EXISTS video_order INTEGER`.
+- **`ingest.py` reads and stores `order`:** `load_sidecar` result is passed through `get_or_create_video`, which now writes `video_order` on both INSERT and UPDATE (idempotent on re-ingest).
+- **`retrieval.py` selects `video_order`:** Added to the chunk query and returned in every result dict.
+- **`answer.py` and `main.py` expose `video_order`:** Included in the `sources` list returned by `generate_answer` and in the `Source` Pydantic model (`Optional[int]`).
+- **Full re-ingest completed:** All 133 videos (43 DATA2100 + 63 DATA5400 + 27 IS3600) re-indexed with `video_order` populated.
+- **`sync_source_urls.py` BOM fix:** Updated to use `utf-8-sig` encoding (same fix previously applied to `ingest.py`) so DATA5400 JSON files with a Windows BOM parse correctly.
+
 ## 2026-07-21 — DATA5400 course added (SRT/DFXP with real timestamps)
 
 - **DATA5400 transcripts ingested:** 63 new transcript files (12 SRT + 51 DFXP) for *DATA 5400: Advanced Data Visualization* added to `data/transcripts/DATA5400/`. 63 companion JSON sidecar files created with clean human-readable video titles.

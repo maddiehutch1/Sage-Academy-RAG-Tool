@@ -30,6 +30,7 @@ class Source(BaseModel):
     course: str
     video: str
     source_url: Optional[str] = None
+    video_order: Optional[int] = None
     chunk_index: int
     start_time: int
     end_time: int
