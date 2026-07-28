@@ -18,6 +18,7 @@ This plan organizes the v0.1 build into a staged roadmap so the team can move fr
 5. Phase 4 - Demo User Experience
 6. Phase 5 - Validation and Refinement
 7. Phase 6 - Demo Readiness and Extensibility
+8. Phase 7 - Sequence Navigation (MVP + Feedback)
 
 ## Guiding Principles
 - Build the smallest thing that proves the value.
@@ -142,3 +143,27 @@ These were completed after all 7 milestones above were marked done and represent
 - All 133 videos across the three courses assigned a sequential `order` field in their JSON sidecars.
 - `video_order` column added to the `videos` DB table and wired through the full stack: `ingest.py` → `retrieval.py` → `answer.py` → `main.py` API response.
 - Every source citation returned by the API now includes `video_order`, enabling the frontend to display module position or support ordered browsing in a future update.
+
+---
+
+## MVP + Feedback Phase (2026-07-28)
+
+Shaped by feedback from the first internal demo. The core experience landed well; reviewers asked for more curriculum context around each retrieved video — specifically, what comes before and after it in the course sequence.
+
+### Milestone 8 — Sequence Navigation ⬜
+**Goal**: Surface the adjacent videos (previous and next by `video_order`) beneath each source card so students can orient themselves in the course sequence without leaving the tool.
+
+**Tasks**
+- [ ] Add `NeighborVideo` Pydantic model and update `Source` model in `backend/main.py`
+- [ ] Implement neighbor DB lookup in `backend/answer.py` and attach `prev_video` / `next_video` to each source
+- [ ] Update `Source` and add `NeighborVideo` TypeScript interfaces in `frontend/app/page.tsx`
+- [ ] Render "Also in this series" strip beneath each source card with prev/next chips and watch links
+- [ ] Test end-to-end: mid-sequence, first-in-course, and dedup (neighbor already shown as primary source) cases
+
+**Exit criteria**
+- Each source card shows up to two neighbor chips when adjacent videos exist
+- A chip is suppressed if that video is already displayed as a primary source
+- The neighbor embed opens at the start of the video (no seek offset)
+- The strip is visually subordinate to the main source card
+
+See `ai/roadmaps/2026-07-28-phase-07-sequence-navigation-plan.md` and `2026-07-28-phase-07-sequence-navigation-roadmap.md` for full detail.
