@@ -154,11 +154,11 @@ Shaped by feedback from the first internal demo. The core experience landed well
 **Goal**: Surface the adjacent videos (previous and next by `video_order`) beneath each source card so students can orient themselves in the course sequence without leaving the tool.
 
 **Tasks**
-- [ ] Add `NeighborVideo` Pydantic model and update `Source` model in `backend/main.py`
-- [ ] Implement neighbor DB lookup in `backend/answer.py` and attach `prev_video` / `next_video` to each source
-- [ ] Update `Source` and add `NeighborVideo` TypeScript interfaces in `frontend/app/page.tsx`
-- [ ] Render "Also in this series" strip beneath each source card with prev/next chips and watch links
-- [ ] Test end-to-end: mid-sequence, first-in-course, and dedup (neighbor already shown as primary source) cases
+- [x] Add `NeighborVideo` Pydantic model and update `Source` model in `backend/main.py`
+- [x] Implement neighbor DB lookup in `backend/answer.py` and attach `prev_video` / `next_video` to each source
+- [x] Update `Source` and add `NeighborVideo` TypeScript interfaces in `frontend/app/page.tsx`
+- [x] Render "Also in this series" strip beneath each source card with prev/next chips and watch links
+- [x] Test end-to-end: mid-sequence, first-in-course, and dedup (neighbor already shown as primary source) cases
 
 **Exit criteria**
 - Each source card shows up to two neighbor chips when adjacent videos exist

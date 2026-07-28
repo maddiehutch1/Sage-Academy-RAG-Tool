@@ -4,14 +4,23 @@ import { useState } from "react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
+interface NeighborVideo {
+  title: string;
+  source_url: string | null;
+  video_order: number;
+}
+
 interface Source {
   course: string;
   video: string;
   source_url?: string | null;
+  video_order?: number | null;
   chunk_index: number;
   start_time: number;
   end_time: number;
   excerpt: string;
+  prev_video?: NeighborVideo | null;
+  next_video?: NeighborVideo | null;
 }
 
 interface AskResponse {
@@ -62,8 +71,10 @@ export default function HomePage() {
   const [result, setResult] = useState<AskResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  // Index of the source card whose video is currently expanded (null = none)
+  // Index of the source card whose main video is currently expanded (null = none)
   const [expandedSource, setExpandedSource] = useState<number | null>(null);
+  // Key of the neighbor chip whose video is expanded, e.g. "0-prev" or "2-next"
+  const [expandedNeighbor, setExpandedNeighbor] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -74,6 +85,7 @@ export default function HomePage() {
     setError(null);
     setResult(null);
     setExpandedSource(null);
+    setExpandedNeighbor(null);
 
     try {
       const res = await fetch(`${API_URL}/ask`, {
@@ -97,7 +109,13 @@ export default function HomePage() {
   }
 
   function toggleVideo(index: number) {
+    setExpandedNeighbor(null);
     setExpandedSource((prev) => (prev === index ? null : index));
+  }
+
+  function toggleNeighbor(key: string) {
+    setExpandedSource(null);
+    setExpandedNeighbor((prev) => (prev === key ? null : key));
   }
 
   return (
@@ -181,78 +199,211 @@ export default function HomePage() {
                 Sources
               </h2>
               <div className="space-y-3">
-                {result.sources.map((src, i) => {
-                  const isExpanded = expandedSource === i;
-                  const iframeSrc =
-                    src.source_url
-                      ? buildKalturaIframeSrc(src.source_url, src.start_time)
+                {(() => {
+                  // Build a set of video_order values already shown as primary sources
+                  // so we can suppress duplicate neighbor chips.
+                  const primaryOrders = new Set(
+                    result.sources
+                      .map((s) => s.video_order)
+                      .filter((o): o is number => o != null)
+                  );
+
+                  return result.sources.map((src, i) => {
+                    const isExpanded = expandedSource === i;
+                    const iframeSrc =
+                      src.source_url
+                        ? buildKalturaIframeSrc(src.source_url, src.start_time)
+                        : null;
+
+                    // Neighbor chips — suppressed if their video is already a primary source
+                    const prevNeighbor =
+                      src.prev_video && !primaryOrders.has(src.prev_video.video_order)
+                        ? src.prev_video
+                        : null;
+                    const nextNeighbor =
+                      src.next_video && !primaryOrders.has(src.next_video.video_order)
+                        ? src.next_video
+                        : null;
+                    const hasNeighbors = !!(prevNeighbor || nextNeighbor);
+
+                    const prevKey = `${i}-prev`;
+                    const nextKey = `${i}-next`;
+                    const isPrevExpanded = expandedNeighbor === prevKey;
+                    const isNextExpanded = expandedNeighbor === nextKey;
+
+                    const prevIframeSrc =
+                      prevNeighbor?.source_url
+                        ? buildKalturaIframeSrc(prevNeighbor.source_url, 0)
+                        : null;
+                    const nextIframeSrc =
+                      nextNeighbor?.source_url
+                        ? buildKalturaIframeSrc(nextNeighbor.source_url, 0)
+                        : null;
+
+                    // Which neighbor embed (if any) is currently open in this card
+                    const openNeighborTitle = isPrevExpanded
+                      ? prevNeighbor?.title
+                      : isNextExpanded
+                      ? nextNeighbor?.title
+                      : null;
+                    const openNeighborIframeSrc = isPrevExpanded
+                      ? prevIframeSrc
+                      : isNextExpanded
+                      ? nextIframeSrc
                       : null;
 
-                  return (
-                    <div
-                      key={i}
-                      className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden"
-                    >
-                      {/* Card header */}
-                      <div className="p-4">
-                        <div className="flex items-start justify-between gap-3 flex-wrap">
-                          <div>
-                            <p className="text-sm font-medium text-gray-800">{src.video}</p>
-                            <p className="text-xs text-gray-500 mt-0.5">{src.course}</p>
+                    return (
+                      <div
+                        key={i}
+                        className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+                      >
+                        {/* Card header */}
+                        <div className="p-4">
+                          <div className="flex items-start justify-between gap-3 flex-wrap">
+                            <div>
+                              <p className="text-sm font-medium text-gray-800">{src.video}</p>
+                              <p className="text-xs text-gray-500 mt-0.5">{src.course}</p>
+                            </div>
+                            <div className="flex items-center gap-2 shrink-0 flex-wrap">
+                              <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-mono text-indigo-600 border border-indigo-100">
+                                {formatTime(src.start_time)} – {formatTime(src.end_time)}
+                              </span>
+                              {iframeSrc && (
+                                <button
+                                  onClick={() => toggleVideo(i)}
+                                  className="inline-flex items-center gap-1 rounded-md bg-indigo-600 px-2.5 py-1
+                                             text-xs font-medium text-white hover:bg-indigo-700 transition"
+                                >
+                                  {isExpanded ? (
+                                    <>
+                                      {/* X icon */}
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                        <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                                      </svg>
+                                      Close video
+                                    </>
+                                  ) : (
+                                    <>
+                                      {/* Play icon */}
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                        <path d="M3 2.5a.5.5 0 0 1 .765-.424l10 5.5a.5.5 0 0 1 0 .848l-10 5.5A.5.5 0 0 1 3 13.5v-11Z" />
+                                      </svg>
+                                      Watch at {formatTime(src.start_time)}
+                                    </>
+                                  )}
+                                </button>
+                              )}
+                            </div>
                           </div>
-                          <div className="flex items-center gap-2 shrink-0 flex-wrap">
-                            <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-mono text-indigo-600 border border-indigo-100">
-                              {formatTime(src.start_time)} – {formatTime(src.end_time)}
-                            </span>
-                            {iframeSrc && (
-                              <button
-                                onClick={() => toggleVideo(i)}
-                                className="inline-flex items-center gap-1 rounded-md bg-indigo-600 px-2.5 py-1
-                                           text-xs font-medium text-white hover:bg-indigo-700 transition"
-                              >
-                                {isExpanded ? (
-                                  <>
-                                    {/* X icon */}
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
-                                      <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
-                                    </svg>
-                                    Close video
-                                  </>
-                                ) : (
-                                  <>
-                                    {/* Play icon */}
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
-                                      <path d="M3 2.5a.5.5 0 0 1 .765-.424l10 5.5a.5.5 0 0 1 0 .848l-10 5.5A.5.5 0 0 1 3 13.5v-11Z" />
-                                    </svg>
-                                    Watch at {formatTime(src.start_time)}
-                                  </>
-                                )}
-                              </button>
-                            )}
-                          </div>
+                          <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3">
+                            "{src.excerpt}…"
+                          </p>
                         </div>
-                        <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3">
-                          "{src.excerpt}…"
-                        </p>
-                      </div>
 
-                      {/* Embedded video — shown when this card is expanded */}
-                      {isExpanded && iframeSrc && (
-                        <div className="border-t border-gray-200 bg-black">
-                          <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-                            <iframe
-                              src={iframeSrc}
-                              className="absolute inset-0 w-full h-full"
-                              allowFullScreen
-                              allow="autoplay *; fullscreen *; encrypted-media *"
-                              title={src.video}
-                            />
+                        {/* Embedded video — shown when this card's main video is expanded */}
+                        {isExpanded && iframeSrc && (
+                          <div className="border-t border-gray-200 bg-black">
+                            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                              <iframe
+                                src={iframeSrc}
+                                className="absolute inset-0 w-full h-full"
+                                allowFullScreen
+                                allow="autoplay *; fullscreen *; encrypted-media *"
+                                title={src.video}
+                              />
+                            </div>
                           </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                        )}
+
+                        {/* "Also in this series" neighbor strip */}
+                        {hasNeighbors && (
+                          <div className="border-t border-gray-100 bg-gray-50 px-4 py-3">
+                            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+                              Also in this series
+                            </p>
+                            <div className="flex gap-2 flex-wrap">
+                              {prevNeighbor && (
+                                <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2">
+                                  <p className="text-xs text-gray-600 font-medium truncate mb-1.5">
+                                    ← {prevNeighbor.title}
+                                  </p>
+                                  {prevIframeSrc && (
+                                    <button
+                                      onClick={() => toggleNeighbor(prevKey)}
+                                      className="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2 py-0.5
+                                                 text-xs font-medium text-gray-600 hover:bg-gray-200 transition border border-gray-200"
+                                    >
+                                      {isPrevExpanded ? (
+                                        <>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                            <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                                          </svg>
+                                          Close
+                                        </>
+                                      ) : (
+                                        <>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                            <path d="M3 2.5a.5.5 0 0 1 .765-.424l10 5.5a.5.5 0 0 1 0 .848l-10 5.5A.5.5 0 0 1 3 13.5v-11Z" />
+                                          </svg>
+                                          Watch
+                                        </>
+                                      )}
+                                    </button>
+                                  )}
+                                </div>
+                              )}
+                              {nextNeighbor && (
+                                <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2">
+                                  <p className="text-xs text-gray-600 font-medium truncate mb-1.5">
+                                    {nextNeighbor.title} →
+                                  </p>
+                                  {nextIframeSrc && (
+                                    <button
+                                      onClick={() => toggleNeighbor(nextKey)}
+                                      className="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2 py-0.5
+                                                 text-xs font-medium text-gray-600 hover:bg-gray-200 transition border border-gray-200"
+                                    >
+                                      {isNextExpanded ? (
+                                        <>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                            <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                                          </svg>
+                                          Close
+                                        </>
+                                      ) : (
+                                        <>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                                            <path d="M3 2.5a.5.5 0 0 1 .765-.424l10 5.5a.5.5 0 0 1 0 .848l-10 5.5A.5.5 0 0 1 3 13.5v-11Z" />
+                                          </svg>
+                                          Watch
+                                        </>
+                                      )}
+                                    </button>
+                                  )}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Neighbor video embed — shown when a neighbor chip is expanded */}
+                        {openNeighborIframeSrc && openNeighborTitle && (
+                          <div className="border-t border-gray-200 bg-black">
+                            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                              <iframe
+                                src={openNeighborIframeSrc}
+                                className="absolute inset-0 w-full h-full"
+                                allowFullScreen
+                                allow="autoplay *; fullscreen *; encrypted-media *"
+                                title={openNeighborTitle}
+                              />
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  });
+                })()}
               </div>
             </div>
           )}

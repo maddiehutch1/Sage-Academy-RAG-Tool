@@ -26,6 +26,12 @@ class AskRequest(BaseModel):
     question: str
 
 
+class NeighborVideo(BaseModel):
+    title: str
+    source_url: Optional[str] = None
+    video_order: int
+
+
 class Source(BaseModel):
     course: str
     video: str
@@ -35,6 +41,8 @@ class Source(BaseModel):
     start_time: int
     end_time: int
     excerpt: str
+    prev_video: Optional[NeighborVideo] = None
+    next_video: Optional[NeighborVideo] = None
 
 
 class AskResponse(BaseModel):

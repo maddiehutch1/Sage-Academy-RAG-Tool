@@ -109,6 +109,11 @@ Layout:
 - Keep the frontend change contained to `page.tsx` — no new component files unless the file becomes unmanageable.
 
 ## Deliverables
-- Updated `/ask` API response that includes `prev_video` and `next_video` on each source.
-- A working "Also in this series" strip in the frontend for all returned sources.
-- The full source-to-neighbor flow tested end-to-end with at least one sample question.
+- [x] Updated `/ask` API response that includes `prev_video` and `next_video` on each source.
+- [x] A working "Also in this series" strip in the frontend for all returned sources.
+- [x] The full source-to-neighbor flow tested end-to-end with at least one sample question.
+
+## Completion Notes (2026-07-28)
+- `backend/main.py`: Added `NeighborVideo` Pydantic model; added `prev_video` and `next_video` optional fields to `Source`.
+- `backend/answer.py`: Added `_fetch_neighbors()` helper (queries same-course videos at `order ± 1`); neighbor lookup runs after LLM call, one DB connection shared across all sources in a request. Failure is silent — sources still return with `null` neighbors rather than erroring.
+- `frontend/app/page.tsx`: Added `NeighborVideo` TS interface; updated `Source` interface; added `expandedNeighbor` state; added `toggleNeighbor()` function; primary-order dedup set computed once per render; "Also in this series" strip rendered with prev/next chips, each with its own Watch/Close toggle and inline Kaltura embed at the bottom of the card.

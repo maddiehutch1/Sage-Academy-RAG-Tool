@@ -9,6 +9,7 @@ together with source citation metadata.
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+from db import get_conn
 
 load_dotenv()
 
@@ -25,6 +26,40 @@ If the excerpts contain no relevant information at all, say so — but do not re
 when the answer can reasonably be inferred from what is present.
 Keep your answer concise, accurate, and easy for a student to understand.
 """
+
+
+def _fetch_neighbors(
+    course_name: str, video_order: int, conn
+) -> tuple[dict | None, dict | None]:
+    """
+    Return (prev_video, next_video) dicts for the video immediately before and
+    after `video_order` within the same course. Either may be None if the video
+    is at the start or end of the course sequence.
+    """
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT v.title, v.source_url, v.video_order
+            FROM videos v
+            JOIN courses c ON v.course_id = c.id
+            WHERE c.name = %s
+              AND v.video_order IN (%s, %s)
+            ORDER BY v.video_order
+            """,
+            (course_name, video_order - 1, video_order + 1),
+        )
+        rows = cur.fetchall()
+
+    prev_video: dict | None = None
+    next_video: dict | None = None
+    for title, source_url, order in rows:
+        neighbor = {"title": title, "source_url": source_url, "video_order": order}
+        if order == video_order - 1:
+            prev_video = neighbor
+        else:
+            next_video = neighbor
+
+    return prev_video, next_video
 
 
 def _format_context(chunks: list[dict]) -> str:
@@ -81,8 +116,22 @@ def generate_answer(question: str, chunks: list[dict]) -> dict:
             "start_time":  chunk["start_time"],
             "end_time":    chunk["end_time"],
             "excerpt":     chunk["chunk_text"][:200],
+            "prev_video":  None,
+            "next_video":  None,
         }
         for chunk in chunks
     ]
+
+    try:
+        conn = get_conn()
+        for source in sources:
+            order = source.get("video_order")
+            if order is not None:
+                prev_v, next_v = _fetch_neighbors(source["course"], order, conn)
+                source["prev_video"] = prev_v
+                source["next_video"] = next_v
+        conn.close()
+    except Exception:
+        pass
 
     return {"answer": answer_text, "sources": sources}
