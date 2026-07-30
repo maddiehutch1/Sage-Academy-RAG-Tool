@@ -1,4 +1,4 @@
-# Phase 09 — Video Library Sidebar
+# Phase 08 — Video Library Sidebar
 
 Date: 2026-07-30
 Status: Planning
@@ -104,7 +104,7 @@ Implementation: single SQL query joining `courses` → `videos`, `ORDER BY cours
 
 ### Task 3 — Frontend: `VideoLibrarySidebar` component
 - [ ] On mount, `fetch('/videos')` and store results in state
-- [ ] Render course accordion sections (default: all expanded, or first expanded only — TBD)
+- [ ] Render course accordion sections (default: first course expanded, all others collapsed)
 - [ ] Render each video as a clickable row with title + order number
 - [ ] Implement client-side search filtering against video titles (case-insensitive, instant)
 - [ ] Emit `onSelectVideo(video)` callback to parent to open the modal
@@ -160,4 +160,4 @@ No schema changes. No new dependencies anticipated (Tailwind + existing React/Ne
 
 ---
 
-See `ai/roadmaps/2026-07-30-phase-09-video-library-sidebar-roadmap.md` for the step-by-step implementation roadmap.
+See `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-roadmap.md` for the step-by-step implementation roadmap.

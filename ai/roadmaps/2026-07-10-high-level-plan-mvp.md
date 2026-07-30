@@ -182,10 +182,10 @@ Shaped by stakeholder feedback after the second demo. The sequence navigation la
 - [ ] Add `GET /videos` endpoint to `backend/main.py` — returns all videos grouped by course, ordered by `video_order`
 - [ ] Add `CourseWithVideos` and `VideoSummary` Pydantic models
 - [ ] Restructure `frontend/app/page.tsx` layout to flex-row: sidebar slot + main chat area
-- [ ] Build `VideoLibrarySidebar` component: toggle, search input, course accordions, video list
+- [ ] Build `VideoLibrarySidebar` component: toggle, search input, course accordions (first expanded, others collapsed), video list
 - [ ] Build `VideoModal` floating overlay: Kaltura embed starting at t=0, × / ESC / backdrop-click dismissal
 - [ ] Wire sidebar → modal in parent state; confirm chat source card behavior is unchanged
-- [ ] Integration QA: all three courses, search filtering, modal open/close, responsive collapse
+- [ ] Integration QA: all three courses, search filtering, modal open/close, sidebar always-visible-but-collapsed on narrow screens
 
 **Exit criteria**
 - Sidebar is visible (collapsed) on load and opens to show all courses and videos
@@ -194,4 +194,4 @@ Shaped by stakeholder feedback after the second demo. The sequence navigation la
 - Modal closes cleanly via × button, ESC, or backdrop click without disrupting chat state
 - Source card inline embeds continue working exactly as before
 
-See `ai/roadmaps/2026-07-30-phase-09-video-library-sidebar-plan.md` and `2026-07-30-phase-09-video-library-sidebar-roadmap.md` for full detail.
+See `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-plan.md` and `2026-07-30-phase-08-video-library-sidebar-roadmap.md` for full detail.

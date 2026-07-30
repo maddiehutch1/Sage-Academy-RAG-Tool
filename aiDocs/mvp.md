@@ -17,7 +17,7 @@ This MVP is the implementation boundary for v0.1. It should be read alongside [a
   - an embedded Kaltura video player inside each source card that starts playback at the exact cited timestamp, using the `embedPlaykitJs` iframe format with `kalturaSeekFrom`
   - a short excerpt from the transcript confirming why that section is relevant
 
-## Video Library Sidebar (Milestone 9 — in planning)
+## Video Library Sidebar (Phase 8 — in planning)
 Following stakeholder feedback, the following browsing capability is being added to the MVP scope:
 - A collapsible left-side sidebar listing every video in the database, grouped by course and sorted by sequence order
 - A search/filter input at the top of the sidebar to quickly locate videos by title

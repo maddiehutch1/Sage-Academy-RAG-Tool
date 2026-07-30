@@ -5,7 +5,7 @@ This file is a concise record of project changes as the Sage Academy RAG Tool ev
 ## 2026-07-30 — Video Library Sidebar planned (Milestone 9)
 
 - **Stakeholder feature request:** Following the second internal demo, stakeholders requested a way for students to browse and watch any video in the catalog without needing to ask a question.
-- **Planning documents created:** Detailed phase plan written at `ai/roadmaps/2026-07-30-phase-09-video-library-sidebar-plan.md`; Milestone 9 added to the high-level MVP plan.
+- **Planning documents created:** Detailed phase plan written at `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-plan.md`; Milestone 9 added to the high-level MVP plan.
 - **Scope added to `aiDocs/mvp.md`:** Collapsible left sidebar, search/filter input, floating Kaltura modal (starts at t=0), ESC/× dismiss. Source card inline embeds in chat are unchanged.
 - **No code changes in this entry** — this is a planning-only update. Implementation begins next.
 

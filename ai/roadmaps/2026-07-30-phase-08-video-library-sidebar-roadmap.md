@@ -1,4 +1,4 @@
-# Phase 9 Roadmap: Video Library Sidebar
+# Phase 8 Roadmap: Video Library Sidebar
 
 Date: 2026-07-30
 
