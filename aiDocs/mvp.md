@@ -17,11 +17,22 @@ This MVP is the implementation boundary for v0.1. It should be read alongside [a
   - an embedded Kaltura video player inside each source card that starts playback at the exact cited timestamp, using the `embedPlaykitJs` iframe format with `kalturaSeekFrom`
   - a short excerpt from the transcript confirming why that section is relevant
 
+## Video Library Sidebar (Milestone 9 — in planning)
+Following stakeholder feedback, the following browsing capability is being added to the MVP scope:
+- A collapsible left-side sidebar listing every video in the database, grouped by course and sorted by sequence order
+- A search/filter input at the top of the sidebar to quickly locate videos by title
+- Clicking any video opens a floating modal with the embedded Kaltura player starting from the beginning
+- The modal can be dismissed (× button, ESC key, or backdrop click) without disrupting the chat state
+- Source card inline embed behavior in the chat is unchanged
+
 ## Out of Scope for v0.1
 - full knowledge graph
 - advanced personalization
 - detailed analytics
 - multi-tenant or enterprise features
+- sidebar ↔ chat highlight sync (e.g. highlighting which video is currently open in a source card)
+- playback position memory / "continue watching"
+- video favorites or bookmarks
 
 ## Success Criteria
 - The system can answer common student questions using course content

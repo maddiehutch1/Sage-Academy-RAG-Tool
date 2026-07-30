@@ -19,6 +19,7 @@ This plan organizes the v0.1 build into a staged roadmap so the team can move fr
 6. Phase 5 - Validation and Refinement
 7. Phase 6 - Demo Readiness and Extensibility
 8. Phase 7 - Sequence Navigation (MVP + Feedback)
+9. Phase 8 - Video Library Sidebar
 
 ## Guiding Principles
 - Build the smallest thing that proves the value.
@@ -167,3 +168,30 @@ Shaped by feedback from the first internal demo. The core experience landed well
 - The strip is visually subordinate to the main source card
 
 See `ai/roadmaps/2026-07-28-phase-07-sequence-navigation-plan.md` and `2026-07-28-phase-07-sequence-navigation-roadmap.md` for full detail.
+
+---
+
+## Stakeholder Feature Request Phase (2026-07-30)
+
+Shaped by stakeholder feedback after the second demo. The sequence navigation landed well; stakeholders requested a way for students to browse the full video catalog without needing to ask a question first.
+
+### Milestone 9 — Video Library Sidebar ⬜
+**Goal**: Add a collapsible left-side panel that lets students browse and play any video in the database directly, independent of the Q&A flow.
+
+**Tasks**
+- [ ] Add `GET /videos` endpoint to `backend/main.py` — returns all videos grouped by course, ordered by `video_order`
+- [ ] Add `CourseWithVideos` and `VideoSummary` Pydantic models
+- [ ] Restructure `frontend/app/page.tsx` layout to flex-row: sidebar slot + main chat area
+- [ ] Build `VideoLibrarySidebar` component: toggle, search input, course accordions, video list
+- [ ] Build `VideoModal` floating overlay: Kaltura embed starting at t=0, × / ESC / backdrop-click dismissal
+- [ ] Wire sidebar → modal in parent state; confirm chat source card behavior is unchanged
+- [ ] Integration QA: all three courses, search filtering, modal open/close, responsive collapse
+
+**Exit criteria**
+- Sidebar is visible (collapsed) on load and opens to show all courses and videos
+- Search box filters the video list in real time
+- Clicking a video opens a floating Kaltura modal starting from the beginning
+- Modal closes cleanly via × button, ESC, or backdrop click without disrupting chat state
+- Source card inline embeds continue working exactly as before
+
+See `ai/roadmaps/2026-07-30-phase-09-video-library-sidebar-plan.md` and `2026-07-30-phase-09-video-library-sidebar-roadmap.md` for full detail.

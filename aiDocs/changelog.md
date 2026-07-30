@@ -2,6 +2,13 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-07-30 — Video Library Sidebar planned (Milestone 9)
+
+- **Stakeholder feature request:** Following the second internal demo, stakeholders requested a way for students to browse and watch any video in the catalog without needing to ask a question.
+- **Planning documents created:** Detailed phase plan written at `ai/roadmaps/2026-07-30-phase-09-video-library-sidebar-plan.md`; Milestone 9 added to the high-level MVP plan.
+- **Scope added to `aiDocs/mvp.md`:** Collapsible left sidebar, search/filter input, floating Kaltura modal (starts at t=0), ESC/× dismiss. Source card inline embeds in chat are unchanged.
+- **No code changes in this entry** — this is a planning-only update. Implementation begins next.
+
 ## 2026-07-27 — Video ordering added across all three courses
 
 - **`order` field added to all JSON sidecars:** Every transcript sidecar now includes an `"order"` integer reflecting the video's position in the course sequence. IS3600 uses the lecture number from the filename (1–29, matching actual lecture numbers with gaps where lectures are missing). DATA2100 is sequenced 1–43 following the course's topic progression (data quality → databases/SQL → enterprise systems → flowcharting → Python → project management → data analysis → visualization). DATA5400 is sequenced 1–63 following the course's Cairn/Base Camp structure (setup → Cairn 1 → Base Camp 01 → Cairn 2 → calculations → design → maps/dashboards → story → advanced interaction).
