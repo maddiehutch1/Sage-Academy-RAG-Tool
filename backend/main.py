@@ -50,6 +50,19 @@ class AskResponse(BaseModel):
     sources: list[Source]
 
 
+class VideoSummary(BaseModel):
+    video_id: str
+    title: str
+    source_url: Optional[str] = None
+    video_order: Optional[int] = None
+
+
+class CourseWithVideos(BaseModel):
+    course_id: str
+    course_name: str
+    videos: list[VideoSummary]
+
+
 @app.get("/health")
 def health_check():
     return {"status": "ok", "service": "sage-academy-rag-api"}
@@ -74,6 +87,43 @@ def ask(body: AskRequest):
     _log_question(question, result["answer"], chunks[0])
 
     return AskResponse(answer=result["answer"], sources=result["sources"])
+
+
+@app.get("/videos", response_model=list[CourseWithVideos])
+def list_videos():
+    conn = get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT c.course_id, c.name, v.video_id, v.title, v.source_url, v.video_order
+                FROM courses c
+                JOIN videos v ON v.course_id = c.id
+                ORDER BY c.course_id, v.video_order
+                """
+            )
+            rows = cur.fetchall()
+    finally:
+        conn.close()
+
+    courses: dict[str, CourseWithVideos] = {}
+    for course_id, course_name, video_id, title, source_url, video_order in rows:
+        if course_id not in courses:
+            courses[course_id] = CourseWithVideos(
+                course_id=course_id,
+                course_name=course_name,
+                videos=[],
+            )
+        courses[course_id].videos.append(
+            VideoSummary(
+                video_id=video_id,
+                title=title,
+                source_url=source_url,
+                video_order=video_order,
+            )
+        )
+
+    return list(courses.values())
 
 
 def _log_question(question: str, answer: str, top_chunk: dict) -> None:

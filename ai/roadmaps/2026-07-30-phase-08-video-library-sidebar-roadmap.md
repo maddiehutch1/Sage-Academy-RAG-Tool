@@ -4,28 +4,28 @@ Date: 2026-07-30
 
 ## Steps
 
-1. [ ] Add `VideoSummary` and `CourseWithVideos` Pydantic models to `backend/main.py`.
+1. [x] Add `VideoSummary` and `CourseWithVideos` Pydantic models to `backend/main.py`.
    - `VideoSummary`: `video_id: str`, `title: str`, `source_url: Optional[str]`, `video_order: int`.
    - `CourseWithVideos`: `course_id: str`, `course_name: str`, `videos: list[VideoSummary]`.
 
-2. [ ] Implement the `GET /videos` route in `backend/main.py`.
+2. [x] Implement the `GET /videos` route in `backend/main.py`.
    - Query: `SELECT c.course_id, c.name, v.video_id, v.title, v.source_url, v.video_order FROM courses c JOIN videos v ON v.course_id = c.id ORDER BY c.course_id, v.video_order`.
    - Group rows by `course_id` in Python, build a list of `CourseWithVideos`, and return it.
    - Smoke-test locally: `curl http://127.0.0.1:8000/videos` — confirm all three courses and all 133 videos appear with correct ordering.
 
-3. [ ] Add the `VideoLibrary` TypeScript types and fetch logic to `frontend/app/page.tsx`.
+3. [x] Add the `VideoLibrary` TypeScript types and fetch logic to `frontend/app/page.tsx`.
    - Add interfaces: `VideoSummary { videoId: string; title: string; sourceUrl: string | null; videoOrder: number }` and `CourseLibrary { courseId: string; courseName: string; videos: VideoSummary[] }`.
    - Add state: `library: CourseLibrary[]`, `libraryError: boolean`.
    - On component mount (`useEffect`), fetch `${NEXT_PUBLIC_API_URL}/videos` and populate `library`.
 
-4. [ ] Restructure the page layout to support the sidebar slot.
+4. [x] Restructure the page layout to support the sidebar slot.
    - Wrap the existing page body in a `flex flex-row` container that fills the viewport height.
    - Add a `sidebarOpen: boolean` state (default `false`) controlled by a toggle button.
    - Sidebar slot: fixed width `w-72` when open; collapses to `w-10` (icon strip) when closed. Always rendered — never hidden — so it is accessible at all viewport sizes.
    - Main content area: `flex-1 overflow-y-auto` — takes all remaining width.
    - Confirm the existing question input, answer card, and source cards render and scroll correctly at typical viewport sizes after the layout change.
 
-5. [ ] Build the `VideoLibrarySidebar` section within `page.tsx`.
+5. [x] Build the `VideoLibrarySidebar` section within `page.tsx`.
    - Toggle button (left edge of the sidebar): chevron icon that flips direction based on `sidebarOpen`. Clicking it toggles `sidebarOpen`.
    - When `sidebarOpen` is `false`: render only the toggle button column (icon strip). No video titles or search visible.
    - When `sidebarOpen` is `true`:
@@ -40,7 +40,7 @@ Date: 2026-07-30
      - When `searchQuery` is non-empty, expand all course sections automatically so results from any course are visible.
    - Show a brief loading state while `library` is empty and no error; show a short error message if `libraryError` is true.
 
-6. [ ] Build the `VideoModal` section within `page.tsx`.
+6. [x] Build the `VideoModal` section within `page.tsx`.
    - Add state: `selectedVideo: VideoSummary | null` (default `null`). Modal renders only when `selectedVideo` is non-null.
    - Overlay: `fixed inset-0 bg-black/60 z-50 flex items-center justify-center`. Clicking the backdrop sets `selectedVideo(null)`.
    - Modal card: `bg-white rounded-xl shadow-2xl max-w-3xl w-full mx-4`. Stop click propagation on the card so backdrop-clicks don't fire through.

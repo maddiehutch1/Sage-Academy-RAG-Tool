@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sage Academy RAG Tool",
-  description: "Prototype question-answering experience for course content",
+  title: "Sage Tool",
+  description: "Ask questions about your course content — grounded in lecture videos.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
