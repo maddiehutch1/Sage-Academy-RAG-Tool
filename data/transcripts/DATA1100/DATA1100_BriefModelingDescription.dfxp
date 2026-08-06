@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>569305913 - 1_u1qk24m9 - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:01.400" end="00:00:05.640" tts:direction="ltr">So let's go ahead and just talk really
+<br />briefly about</p>
+        <p begin="00:00:05.640" end="00:00:10.160" tts:direction="ltr">modeling and what models are specifically
+<br />in this context.</p>
+        <p begin="00:00:10.160" end="00:00:17.595" tts:direction="ltr">Models are a series of inputs that we can
+<br />then use to predict</p>
+        <p begin="00:00:17.595" end="00:00:22.270" tts:direction="ltr">our future product or a behavior</p>
+        <p begin="00:00:22.270" end="00:00:27.110" tts:direction="ltr">somebody is going to do or how much
+<br />revenue we can expect.</p>
+        <p begin="00:00:27.110" end="00:00:33.070" tts:direction="ltr">Modeling is really the outcome we get when
+<br />we're collecting all of this data.</p>
+        <p begin="00:00:33.070" end="00:00:35.630" tts:direction="ltr">And what we're ultimately trying to do
+<br />with that</p>
+        <p begin="00:00:35.630" end="00:00:38.430" tts:direction="ltr">is model the past so we can help</p>
+        <p begin="00:00:38.430" end="00:00:40.910" tts:direction="ltr">understand those trends and help us</p>
+        <p begin="00:00:40.910" end="00:00:44.440" tts:direction="ltr">make really sound business decisions
+<br />moving forward.</p>
+        <p begin="00:00:44.440" end="00:00:48.130" tts:direction="ltr">And so we're going to talk really briefly
+<br />about what modeling is</p>
+        <p begin="00:00:48.130" end="00:00:52.930" tts:direction="ltr">specifically to an example you'll see this
+<br />week in your practice problems.</p>
+        <p begin="00:00:52.930" end="00:00:55.410" tts:direction="ltr">And before we get any further,</p>
+        <p begin="00:00:55.410" end="00:00:57.930" tts:direction="ltr">before you start on your practice
+<br />problems,</p>
+        <p begin="00:00:57.930" end="00:01:01.170" tts:direction="ltr">this is a week you have to use the desktop
+<br />version of Excel.</p>
+        <p begin="00:01:01.170" end="00:01:03.170" tts:direction="ltr">If you're using the web browser,</p>
+        <p begin="00:01:03.170" end="00:01:06.450" tts:direction="ltr">chances are you are not going to see the
+<br />what if function,</p>
+        <p begin="00:01:06.450" end="00:01:10.530" tts:direction="ltr">which is really foundational to this
+<br />week's assignments.</p>
+        <p begin="00:01:10.530" end="00:01:12.010" tts:direction="ltr">So make sure you're doing that.</p>
+        <p begin="00:01:12.010" end="00:01:13.730" tts:direction="ltr">Let me know if you run into any issues.</p>
+        <p begin="00:01:13.730" end="00:01:18.610" tts:direction="ltr">It may require you to go to either your
+<br />nearest USU campus or</p>
+        <p begin="00:01:18.610" end="00:01:21.090" tts:direction="ltr">even a public library usually has Excel</p>
+        <p begin="00:01:21.090" end="00:01:25.090" tts:direction="ltr">downloaded onto their computers as well.</p>
+        <p begin="00:01:25.090" end="00:01:28.410" tts:direction="ltr">And we can also explore some other options
+<br />if need be.</p>
+        <p begin="00:01:28.410" end="00:01:29.690" tts:direction="ltr">But if you start watching</p>
+        <p begin="00:01:29.690" end="00:01:31.490" tts:direction="ltr">the practice problem videos</p>
+        <p begin="00:01:31.490" end="00:01:33.850" tts:direction="ltr">or working on the practice problems, and
+<br />you're like,</p>
+        <p begin="00:01:33.850" end="00:01:35.450" tts:direction="ltr">I don't see these buttons,</p>
+        <p begin="00:01:35.450" end="00:01:37.450" tts:direction="ltr">check to see what you're using,</p>
+        <p begin="00:01:37.450" end="00:01:39.945" tts:direction="ltr">and you may need to adjust accordingly.</p>
+        <p begin="00:01:39.945" end="00:01:42.200" tts:direction="ltr">So what is a model?</p>
+        <p begin="00:01:42.200" end="00:01:47.240" tts:direction="ltr">A model, again, is that series of inputs
+<br />to help us predict an output.</p>
+        <p begin="00:01:47.240" end="00:01:48.720" tts:direction="ltr">So in this case, we have</p>
+        <p begin="00:01:48.720" end="00:01:54.560" tts:direction="ltr">a supply and demand curve where the
+<br />quantity demanded is in the blue,</p>
+        <p begin="00:01:54.560" end="00:01:57.920" tts:direction="ltr">the quantity supplied is in the orange,</p>
+        <p begin="00:01:57.920" end="00:02:01.280" tts:direction="ltr">and we have price along the X axis.</p>
+        <p begin="00:02:01.280" end="00:02:04.400" tts:direction="ltr">So charts have a couple of different
+<br />components.</p>
+        <p begin="00:02:04.400" end="00:02:07.640" tts:direction="ltr">We have the X axis, which is a value.</p>
+        <p begin="00:02:07.640" end="00:02:09.200" tts:direction="ltr">In this particular case,</p>
+        <p begin="00:02:09.200" end="00:02:13.880" tts:direction="ltr">we're just looking at two specific
+<br />variables,</p>
+        <p begin="00:02:13.880" end="00:02:15.440" tts:direction="ltr">we're looking at that price,</p>
+        <p begin="00:02:15.440" end="00:02:18.040" tts:direction="ltr">which is that x axis and on the Y axis,</p>
+        <p begin="00:02:18.040" end="00:02:20.440" tts:direction="ltr">we're looking at, let's say units.</p>
+        <p begin="00:02:20.440" end="00:02:23.680" tts:direction="ltr">Maybe we are a physical product company
+<br />and we're</p>
+        <p begin="00:02:23.680" end="00:02:26.960" tts:direction="ltr">trying to ascertain how many units we can</p>
+        <p begin="00:02:26.960" end="00:02:29.920" tts:direction="ltr">expect to sell on a daily basis based</p>
+        <p begin="00:02:29.920" end="00:02:34.320" tts:direction="ltr">off of a specific price point that we're
+<br />offering our customers.</p>
+        <p begin="00:02:34.320" end="00:02:37.400" tts:direction="ltr">You'll know that the price,</p>
+        <p begin="00:02:37.400" end="00:02:39.305" tts:direction="ltr">the more expensive we get,</p>
+        <p begin="00:02:39.305" end="00:02:42.170" tts:direction="ltr">the less demand there is.</p>
+        <p begin="00:02:42.170" end="00:02:48.250" tts:direction="ltr">But we also know we have a steady increase
+<br />of supply we can do.</p>
+        <p begin="00:02:48.250" end="00:02:51.610" tts:direction="ltr">Ultimately, we want to try to find that
+<br />intercept because that's</p>
+        <p begin="00:02:51.610" end="00:02:54.930" tts:direction="ltr">going to be the optimal point where we're
+<br />supplying enough,</p>
+        <p begin="00:02:54.930" end="00:03:00.410" tts:direction="ltr">but we're also meeting demand at a cost
+<br />effective price point.</p>
+        <p begin="00:03:00.410" end="00:03:02.810" tts:direction="ltr">So on top of that,</p>
+        <p begin="00:03:02.810" end="00:03:06.130" tts:direction="ltr">we have the intercept and we have the
+<br />slope,</p>
+        <p begin="00:03:06.130" end="00:03:09.370" tts:direction="ltr">which are two important terms to</p>
+        <p begin="00:03:09.370" end="00:03:13.330" tts:direction="ltr">consider when building out these simple
+<br />linear regressions.</p>
+        <p begin="00:03:13.330" end="00:03:18.580" tts:direction="ltr">Again, it's just a function of price and
+<br />our prediction,</p>
+        <p begin="00:03:18.580" end="00:03:23.700" tts:direction="ltr">which is not as in this case is going to
+<br />be those units that we're selling.</p>
+        <p begin="00:03:23.700" end="00:03:32.020" tts:direction="ltr">The intercept is going to be essentially
+<br />just that natural starting value.</p>
+        <p begin="00:03:32.020" end="00:03:36.740" tts:direction="ltr">You can even see down here that's where we
+<br />don't have any values subscribed.</p>
+        <p begin="00:03:36.740" end="00:03:41.660" tts:direction="ltr">It's just a matter of this is where we're
+<br />starting from.</p>
+        <p begin="00:03:41.660" end="00:03:47.460" tts:direction="ltr">Then you'll see down here we have a zero
+<br />intercept on our quantity</p>
+        <p begin="00:03:47.460" end="00:03:54.765" tts:direction="ltr">supplied and about 600 on our intercept
+<br />for our quantity demanded.</p>
+        <p begin="00:03:54.765" end="00:04:02.390" tts:direction="ltr">Then as our price increases, our demand
+<br />decreases.</p>
+        <p begin="00:04:02.390" end="00:04:05.710" tts:direction="ltr">We know it's decreasing because the slope</p>
+        <p begin="00:04:05.710" end="00:04:09.670" tts:direction="ltr">is starting from a high point and goes to
+<br />a low point.</p>
+        <p begin="00:04:09.670" end="00:04:14.430" tts:direction="ltr">Similar to if you're taking 2,100
+<br />concurrently with this course,</p>
+        <p begin="00:04:14.430" end="00:04:20.230" tts:direction="ltr">we have that rise over run being negative,
+<br />that's descending order.</p>
+        <p begin="00:04:20.230" end="00:04:22.790" tts:direction="ltr">You can ski down that hill.</p>
+        <p begin="00:04:22.790" end="00:04:26.085" tts:direction="ltr">We know that's going to be a negative
+<br />relationship.</p>
+        <p begin="00:04:26.085" end="00:04:29.540" tts:direction="ltr">Then if we're looking at our quantity
+<br />supplied,</p>
+        <p begin="00:04:29.540" end="00:04:32.500" tts:direction="ltr">we're going to look at the rise and then
+<br />run,</p>
+        <p begin="00:04:32.500" end="00:04:35.740" tts:direction="ltr">and we see that that's a positive
+<br />relationship.</p>
+        <p begin="00:04:35.740" end="00:04:38.380" tts:direction="ltr">And so that's going to be a positive
+<br />slope.</p>
+        <p begin="00:04:38.380" end="00:04:40.900" tts:direction="ltr">And the slope, if you're skier</p>
+        <p begin="00:04:40.900" end="00:04:44.260" tts:direction="ltr">or like to hike or are familiar with
+<br />mountains at all,</p>
+        <p begin="00:04:44.260" end="00:04:48.820" tts:direction="ltr">the slope is kind of the degree of change
+<br />that we see,</p>
+        <p begin="00:04:48.820" end="00:04:52.170" tts:direction="ltr">and that is very true in modeling as well.</p>
+        <p begin="00:04:52.170" end="00:04:56.320" tts:direction="ltr">Now, when we're looking specifically at
+<br />this idea of supply and demand,</p>
+        <p begin="00:04:56.320" end="00:05:00.240" tts:direction="ltr">homework 5.1, those practice problems are
+<br />going</p>
+        <p begin="00:05:00.240" end="00:05:04.160" tts:direction="ltr">to ask you to use a minimum function
+<br />between supply and demand.</p>
+        <p begin="00:05:04.160" end="00:05:06.840" tts:direction="ltr">And the reason that you need to use</p>
+        <p begin="00:05:06.840" end="00:05:09.480" tts:direction="ltr">minimum is because if</p>
+        <p begin="00:05:09.480" end="00:05:12.680" tts:direction="ltr">you think about how much you have versus
+<br />how much you need,</p>
+        <p begin="00:05:12.680" end="00:05:16.280" tts:direction="ltr">you can't sell more than you have.</p>
+        <p begin="00:05:16.280" end="00:05:20.150" tts:direction="ltr">So even though demand is a lot higher than
+<br />our supply,</p>
+        <p begin="00:05:20.150" end="00:05:23.420" tts:direction="ltr">If we only have 300 units,</p>
+        <p begin="00:05:23.420" end="00:05:25.860" tts:direction="ltr">even though people want 600,</p>
+        <p begin="00:05:25.860" end="00:05:28.500" tts:direction="ltr">we can only give you 300 units.</p>
+        <p begin="00:05:28.500" end="00:05:31.940" tts:direction="ltr">Vice versa, even if I have 600,</p>
+        <p begin="00:05:31.940" end="00:05:35.500" tts:direction="ltr">but the demand is only 300,</p>
+        <p begin="00:05:35.500" end="00:05:40.660" tts:direction="ltr">then I'm only actually selling 300 and I'm
+<br />having to store 300 elsewhere.</p>
+        <p begin="00:05:40.660" end="00:05:42.660" tts:direction="ltr">That's one of the reasons why we need to
+<br />use</p>
+        <p begin="00:05:42.660" end="00:05:45.180" tts:direction="ltr">that minimum function in homework 5.1.</p>
+        <p begin="00:05:45.180" end="00:05:48.580" tts:direction="ltr">That's a really quick way to think</p>
+        <p begin="00:05:48.580" end="00:05:53.220" tts:direction="ltr">about modeling and these different ideas
+<br />of intercept and slope.</p>
+    </div>
+  </body>
+</tt>

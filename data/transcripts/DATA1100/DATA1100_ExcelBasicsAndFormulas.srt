@@ -1,0 +1,2497 @@
+1
+00:00:02,310 --> 00:00:04,550
+INSTRUCTOR: Hey everyone,
+welcome to our first week
+
+2
+00:00:04,550 --> 00:00:05,340
+in Excel.
+
+3
+00:00:05,340 --> 00:00:08,360
+We are going to
+dive straight in.
+
+4
+00:00:08,360 --> 00:00:13,010
+And whether you are
+already an Excel user
+
+5
+00:00:13,010 --> 00:00:16,850
+or if this is your first time
+opening up the application,
+
+6
+00:00:16,850 --> 00:00:17,820
+welcome.
+
+7
+00:00:17,820 --> 00:00:19,640
+This course is really
+designed to help
+
+8
+00:00:19,640 --> 00:00:24,050
+you either get that additional
+practice or get your feet wet.
+
+9
+00:00:24,050 --> 00:00:26,270
+Our goal is to give
+you the foundations
+
+10
+00:00:26,270 --> 00:00:29,510
+that you can continue to build
+through your other coursework
+
+11
+00:00:29,510 --> 00:00:33,800
+and in your professional
+careers the set of Excel skills
+
+12
+00:00:33,800 --> 00:00:37,010
+that are tailored
+to your career path.
+
+13
+00:00:37,010 --> 00:00:38,640
+These are just the foundations.
+
+14
+00:00:38,640 --> 00:00:40,677
+I've been using Excel
+for over 10 years,
+
+15
+00:00:40,677 --> 00:00:42,260
+and I'm still learning
+tips and tricks
+
+16
+00:00:42,260 --> 00:00:47,640
+every time I open it up and am
+confronted with a new problem.
+
+17
+00:00:47,640 --> 00:00:49,400
+So I want to give
+you the confidence
+
+18
+00:00:49,400 --> 00:00:54,210
+to be able to answer data
+questions in a tool like Excel,
+
+19
+00:00:54,210 --> 00:00:56,820
+when Excel makes sense to
+answer those questions.
+
+20
+00:00:56,820 --> 00:01:00,170
+So today, what we're
+going to really focus on
+
+21
+00:01:00,170 --> 00:01:02,030
+is understanding Excel--
+
+22
+00:01:02,030 --> 00:01:05,780
+really get to know our way
+around the application.
+
+23
+00:01:05,780 --> 00:01:08,560
+And then we're going to answer
+some of those data questions
+
+24
+00:01:08,560 --> 00:01:11,150
+that we can answer with
+summary statistics,
+
+25
+00:01:11,150 --> 00:01:14,980
+sorting and filtering,
+and understand really
+
+26
+00:01:14,980 --> 00:01:17,510
+how can we start
+to manipulate data.
+
+27
+00:01:17,510 --> 00:01:23,620
+And again, data is just
+information that we collect.
+
+28
+00:01:23,620 --> 00:01:24,890
+Data comes from everywhere.
+
+29
+00:01:24,890 --> 00:01:26,620
+It's all over the place.
+
+30
+00:01:26,620 --> 00:01:28,880
+Businesses want
+more and more data.
+
+31
+00:01:28,880 --> 00:01:32,350
+And what we're able to
+do then is take the data
+
+32
+00:01:32,350 --> 00:01:35,930
+and use it to inform
+future decisions.
+
+33
+00:01:35,930 --> 00:01:38,000
+And that's the beauty
+of data analysis.
+
+34
+00:01:38,000 --> 00:01:42,470
+Whether you have an analyst in
+your title in the future or not,
+
+35
+00:01:42,470 --> 00:01:44,380
+you're going to be
+taking this information
+
+36
+00:01:44,380 --> 00:01:45,470
+and making decisions.
+
+37
+00:01:45,470 --> 00:01:48,070
+You do this every day,
+whether you realize it or not.
+
+38
+00:01:48,070 --> 00:01:51,040
+You open your weather app, and
+you see that it's going to rain.
+
+39
+00:01:51,040 --> 00:01:52,328
+That's data we've collected.
+
+40
+00:01:52,328 --> 00:01:53,870
+We're pretty sure
+it's going to rain.
+
+41
+00:01:53,870 --> 00:01:56,600
+We don't actually know if
+it's going to rain or not.
+
+42
+00:01:56,600 --> 00:01:59,510
+Our models are pretty good, so
+we've got a really good idea.
+
+43
+00:01:59,510 --> 00:02:02,690
+You take that information
+into your own personal life
+
+44
+00:02:02,690 --> 00:02:04,280
+and you're like,
+oh, I need to bring
+
+45
+00:02:04,280 --> 00:02:06,170
+a rain jacket or an umbrella.
+
+46
+00:02:06,170 --> 00:02:09,389
+And then you're able to make
+those decisions to move forward.
+
+47
+00:02:09,389 --> 00:02:10,943
+Business is no different.
+
+48
+00:02:10,943 --> 00:02:12,860
+So we're going to be
+answering these questions
+
+49
+00:02:12,860 --> 00:02:18,420
+that you see in column G using
+our campaign data worksheet.
+
+50
+00:02:18,420 --> 00:02:22,160
+We're going to be using this
+data throughout most of our time
+
+51
+00:02:22,160 --> 00:02:24,440
+together this semester
+because I want
+
+52
+00:02:24,440 --> 00:02:27,930
+to give you all the sense of
+familiarity with the data.
+
+53
+00:02:27,930 --> 00:02:30,710
+But that way, you can
+also focus on the skills
+
+54
+00:02:30,710 --> 00:02:33,690
+that you're learning in
+a familiar environment.
+
+55
+00:02:33,690 --> 00:02:36,830
+Your practice problems are
+going to bring up new data sets
+
+56
+00:02:36,830 --> 00:02:40,740
+and different business angles,
+so you'll get a wide exposure.
+
+57
+00:02:40,740 --> 00:02:43,040
+But I want you, as
+you're following along
+
+58
+00:02:43,040 --> 00:02:47,610
+with these videos, to
+really focus on the why.
+
+59
+00:02:47,610 --> 00:02:52,370
+Why am I learning this
+particular Excel trick?
+
+60
+00:02:52,370 --> 00:02:56,760
+Why do I approach
+data in this way?
+
+61
+00:02:56,760 --> 00:02:58,790
+Because that critical
+thinking is really what's
+
+62
+00:02:58,790 --> 00:03:00,980
+going to serve you
+well in the future.
+
+63
+00:03:00,980 --> 00:03:03,470
+So let's dive in.
+
+64
+00:03:03,470 --> 00:03:06,670
+First and foremost, let's
+introduce you to the data
+
+65
+00:03:06,670 --> 00:03:07,670
+that we're working with.
+
+66
+00:03:07,670 --> 00:03:10,640
+This is simulated
+ad campaign data.
+
+67
+00:03:10,640 --> 00:03:14,800
+And I downloaded this from
+Kaggle, which is an open source
+
+68
+00:03:14,800 --> 00:03:17,270
+data set website.
+
+69
+00:03:17,270 --> 00:03:20,022
+And these users had
+simulated the data.
+
+70
+00:03:20,022 --> 00:03:22,480
+So it's going to look very
+similar to what you would expect
+
+71
+00:03:22,480 --> 00:03:27,730
+to see if you're at a company
+running marketing campaigns,
+
+72
+00:03:27,730 --> 00:03:29,660
+and this data comes about.
+
+73
+00:03:29,660 --> 00:03:34,250
+So when I copied the information
+from Kaggle about the data set,
+
+74
+00:03:34,250 --> 00:03:38,240
+you can see that it's
+loaded and, kind of, funny.
+
+75
+00:03:38,240 --> 00:03:41,491
+It's not what we would
+expect it to look.
+
+76
+00:03:41,491 --> 00:03:46,510
+If you click into our
+cell address and Utah--
+
+77
+00:03:46,510 --> 00:03:49,900
+it's a grid system that makes
+finding where other people live
+
+78
+00:03:49,900 --> 00:03:51,980
+or places of
+business really easy.
+
+79
+00:03:51,980 --> 00:03:53,180
+Excel's the same way.
+
+80
+00:03:53,180 --> 00:03:58,340
+So if we click on B17,
+that's this one cell,
+
+81
+00:03:58,340 --> 00:04:01,000
+we can see that there's
+actually a lot of text.
+
+82
+00:04:01,000 --> 00:04:05,530
+And this isn't the best
+way to be able to see it.
+
+83
+00:04:05,530 --> 00:04:08,940
+So this is why we may want
+to start formatting our Excel
+
+84
+00:04:08,940 --> 00:04:10,150
+sheets differently.
+
+85
+00:04:10,150 --> 00:04:11,760
+So first thing I'm
+going to do is,
+
+86
+00:04:11,760 --> 00:04:13,770
+I'm going to find
+the column that I
+
+87
+00:04:13,770 --> 00:04:15,430
+want to format differently.
+
+88
+00:04:15,430 --> 00:04:17,040
+And I'm going to just--
+
+89
+00:04:17,040 --> 00:04:18,660
+see how it's turned green now.
+
+90
+00:04:18,660 --> 00:04:22,620
+I'm going to bring my
+cursor over and see
+
+91
+00:04:22,620 --> 00:04:23,570
+how the icon changes.
+
+92
+00:04:23,570 --> 00:04:25,780
+Right now, we've got
+that double arrow.
+
+93
+00:04:25,780 --> 00:04:28,830
+This allows me to either
+shrink my column, which
+
+94
+00:04:28,830 --> 00:04:33,010
+is not helpful in this
+case, or expand my column.
+
+95
+00:04:33,010 --> 00:04:34,830
+You can do the same
+thing with rows.
+
+96
+00:04:34,830 --> 00:04:38,850
+I can drag, shorten, whatever.
+
+97
+00:04:38,850 --> 00:04:41,580
+There's other ways
+I can do this with.
+
+98
+00:04:41,580 --> 00:04:43,740
+Maybe I know for
+sure that I want
+
+99
+00:04:43,740 --> 00:04:48,690
+to change this column to be,
+for instance, like maybe--
+
+100
+00:04:48,690 --> 00:04:52,290
+right now, it's at 88.43.
+
+101
+00:04:52,290 --> 00:04:54,710
+Maybe I want that to
+actually be closer to 50.
+
+102
+00:04:57,438 --> 00:04:59,790
+Your practice
+problems will actually
+
+103
+00:04:59,790 --> 00:05:02,750
+tell you, change
+it to this weight.
+
+104
+00:05:02,750 --> 00:05:04,330
+It's arbitrary.
+
+105
+00:05:04,330 --> 00:05:07,780
+So what I did is I'm going
+to right click on my column,
+
+106
+00:05:07,780 --> 00:05:10,790
+and I'm going to come down
+to this column width option.
+
+107
+00:05:10,790 --> 00:05:12,910
+I'm going to click on
+that and say, yeah,
+
+108
+00:05:12,910 --> 00:05:17,170
+I actually want it
+to be an exact 50.
+
+109
+00:05:17,170 --> 00:05:22,820
+And then I want my row
+to be more fitting.
+
+110
+00:05:22,820 --> 00:05:25,060
+I don't want all
+this white space
+
+111
+00:05:25,060 --> 00:05:28,450
+because then I can't see all
+the rest of the information.
+
+112
+00:05:28,450 --> 00:05:30,520
+And so what I'm going
+to do is I'm actually
+
+113
+00:05:30,520 --> 00:05:34,450
+going to come down
+and see how my expand
+
+114
+00:05:34,450 --> 00:05:37,060
+or shrink icon pops back up.
+
+115
+00:05:37,060 --> 00:05:38,410
+Let me place my cursor.
+
+116
+00:05:38,410 --> 00:05:40,840
+If I double click on
+that, it's actually
+
+117
+00:05:40,840 --> 00:05:44,780
+going to auto adjust,
+which is really nice.
+
+118
+00:05:44,780 --> 00:05:46,340
+And I can do that.
+
+119
+00:05:46,340 --> 00:05:49,550
+I'm going to click on row 18.
+
+120
+00:05:49,550 --> 00:05:55,030
+And I'm going to come clear
+down to the very end, which
+
+121
+00:05:55,030 --> 00:05:57,070
+is row 35.
+
+122
+00:05:57,070 --> 00:06:02,170
+Now, I'm going to hit my Control
+button and double click again.
+
+123
+00:06:02,170 --> 00:06:08,530
+And now, all of a sudden, I have
+each row automatically sized,
+
+124
+00:06:08,530 --> 00:06:11,340
+which is so nice.
+
+125
+00:06:11,340 --> 00:06:17,490
+You'll also notice that
+there's this button up here.
+
+126
+00:06:17,490 --> 00:06:19,350
+This is called Wrap Text.
+
+127
+00:06:19,350 --> 00:06:23,860
+Most of the time, this is how
+your data is going to read it.
+
+128
+00:06:23,860 --> 00:06:27,690
+See how it spills
+over our B column.
+
+129
+00:06:27,690 --> 00:06:33,880
+If you had other data here,
+it's going to cut off the words.
+
+130
+00:06:33,880 --> 00:06:36,060
+And especially when we're
+working with text data,
+
+131
+00:06:36,060 --> 00:06:37,060
+we don't want that.
+
+132
+00:06:37,060 --> 00:06:39,810
+So I'm going to come
+back to B, and I'm
+
+133
+00:06:39,810 --> 00:06:42,460
+going to come up to my menu.
+
+134
+00:06:42,460 --> 00:06:47,470
+A lot of your formatting, your
+basic Word processing stuff,
+
+135
+00:06:47,470 --> 00:06:50,400
+it's going to be
+in this Home tab.
+
+136
+00:06:50,400 --> 00:06:52,570
+This is where we're
+going to be mostly today.
+
+137
+00:06:52,570 --> 00:06:56,760
+We'll explore these other
+tabs as we continue on
+
+138
+00:06:56,760 --> 00:06:58,140
+through the semester.
+
+139
+00:06:58,140 --> 00:07:01,108
+I'm going to come up to
+this ABC button, though,
+
+140
+00:07:01,108 --> 00:07:02,400
+and I'm going to click on that.
+
+141
+00:07:02,400 --> 00:07:04,350
+And that's going
+to wrap my text.
+
+142
+00:07:04,350 --> 00:07:07,230
+So it's going to respect
+the column boundary.
+
+143
+00:07:07,230 --> 00:07:12,110
+But make it so I can actually
+see all of the words.
+
+144
+00:07:12,110 --> 00:07:14,810
+Well, text data is very helpful.
+
+145
+00:07:14,810 --> 00:07:17,360
+And this is just
+information about the data
+
+146
+00:07:17,360 --> 00:07:18,925
+that we're going
+to be working on.
+
+147
+00:07:21,710 --> 00:07:23,870
+Some of the other nice
+things that we can do
+
+148
+00:07:23,870 --> 00:07:26,700
+is we can actually
+create new worksheets.
+
+149
+00:07:26,700 --> 00:07:29,550
+Each one of these tabs
+is called a Worksheet.
+
+150
+00:07:29,550 --> 00:07:35,420
+And so as I'm going to get into
+answering these questions, what
+
+151
+00:07:35,420 --> 00:07:39,570
+I want to do is, I want to
+leave this data the same way.
+
+152
+00:07:39,570 --> 00:07:41,588
+I don't want to mess
+with this at all.
+
+153
+00:07:41,588 --> 00:07:43,880
+So what I'm going to do is,
+I'm going to come down here
+
+154
+00:07:43,880 --> 00:07:45,450
+to this plus sign.
+
+155
+00:07:45,450 --> 00:07:47,820
+And I'm going to
+create a new worksheet.
+
+156
+00:07:47,820 --> 00:07:50,396
+And I'm going to call
+this campaigns_new.
+
+157
+00:07:53,420 --> 00:07:54,450
+And I did that--
+
+158
+00:07:54,450 --> 00:07:58,910
+I double clicked
+on the whole sheet,
+
+159
+00:07:58,910 --> 00:08:02,130
+and that gives me the
+ability to change the name.
+
+160
+00:08:02,130 --> 00:08:03,780
+And then what I'm
+going to do is,
+
+161
+00:08:03,780 --> 00:08:09,370
+I'm going to control all,
+which selects all of my data.
+
+162
+00:08:09,370 --> 00:08:13,170
+You can also start
+in A1 and manually
+
+163
+00:08:13,170 --> 00:08:15,487
+navigate to the very
+end of your table.
+
+164
+00:08:15,487 --> 00:08:17,320
+And then I'm just going
+to hit Control-Copy.
+
+165
+00:08:17,320 --> 00:08:22,650
+You can also right click
+and do copy that way.
+
+166
+00:08:22,650 --> 00:08:24,330
+And then I'm going
+to come over and I'm
+
+167
+00:08:24,330 --> 00:08:28,020
+going to just
+paste it over here.
+
+168
+00:08:28,020 --> 00:08:33,340
+So now, you'll see
+that brand new sheet.
+
+169
+00:08:33,340 --> 00:08:36,159
+And now, in case I
+goof something up,
+
+170
+00:08:36,159 --> 00:08:38,940
+now it's in a nice, safe,
+clean space, where I can always
+
+171
+00:08:38,940 --> 00:08:40,860
+go back to the original data.
+
+172
+00:08:40,860 --> 00:08:43,950
+And that helps me feel a
+little more confident as I'm
+
+173
+00:08:43,950 --> 00:08:48,100
+working through things, that I'm
+not going to goof something up.
+
+174
+00:08:48,100 --> 00:08:51,990
+You'll notice, as we're
+talking about formatting,
+
+175
+00:08:51,990 --> 00:08:53,580
+we just covered--
+
+176
+00:08:53,580 --> 00:08:55,450
+I can't see all of that.
+
+177
+00:08:55,450 --> 00:08:57,360
+It all just looks
+like the same value.
+
+178
+00:08:57,360 --> 00:08:59,812
+When in reality,
+it's very different.
+
+179
+00:08:59,812 --> 00:09:01,770
+These are the names of
+our different campaigns.
+
+180
+00:09:01,770 --> 00:09:04,220
+So I want you to pause
+the video for a second
+
+181
+00:09:04,220 --> 00:09:10,260
+and try to adjust column B
+to see how you would make it,
+
+182
+00:09:10,260 --> 00:09:15,170
+so you can see the full
+name of the campaign.
+
+183
+00:09:15,170 --> 00:09:17,480
+There's lots of different
+ways to do this.
+
+184
+00:09:17,480 --> 00:09:22,200
+You could right click
+and hit column width.
+
+185
+00:09:22,200 --> 00:09:24,000
+And you might say,
+OK, let's try 12.
+
+186
+00:09:24,000 --> 00:09:26,030
+That's still not great.
+
+187
+00:09:26,030 --> 00:09:28,470
+Let's come back and try 15.
+
+188
+00:09:28,470 --> 00:09:31,880
+You can also do the
+double-click option
+
+189
+00:09:31,880 --> 00:09:36,180
+to expand that out to see the
+full name of the campaign.
+
+190
+00:09:36,180 --> 00:09:39,410
+So we've got that.
+
+191
+00:09:39,410 --> 00:09:42,320
+And I'm going to then
+move these question
+
+192
+00:09:42,320 --> 00:09:48,290
+cells by hitting Control-X,
+or right click and hit Cut.
+
+193
+00:09:48,290 --> 00:09:51,480
+And what that does
+is it copies it.
+
+194
+00:09:51,480 --> 00:09:54,830
+But instead of leaving
+a version behind,
+
+195
+00:09:54,830 --> 00:09:56,910
+it actually will
+just move it over.
+
+196
+00:09:56,910 --> 00:10:03,730
+So I, again, highlighted
+what I wanted, Control-X,
+
+197
+00:10:03,730 --> 00:10:05,600
+and then Control-V paste.
+
+198
+00:10:05,600 --> 00:10:10,210
+Or you can right click and
+use your paste options there.
+
+199
+00:10:10,210 --> 00:10:16,190
+So we've now gone ahead
+and resized column B.
+
+200
+00:10:16,190 --> 00:10:19,490
+And we've got all these
+different rows of information.
+
+201
+00:10:19,490 --> 00:10:22,130
+Row 1 is what we call a header.
+
+202
+00:10:22,130 --> 00:10:25,160
+And that contains
+our column names.
+
+203
+00:10:25,160 --> 00:10:27,830
+If you're taking 2100
+alongside this class,
+
+204
+00:10:27,830 --> 00:10:32,780
+you'll be using column names
+a lot from data tables.
+
+205
+00:10:32,780 --> 00:10:34,190
+Same thing in Excel.
+
+206
+00:10:34,190 --> 00:10:36,340
+This is what gives
+us the description
+
+207
+00:10:36,340 --> 00:10:40,280
+of what each one of these
+columns actually means.
+
+208
+00:10:40,280 --> 00:10:47,780
+If we didn't have these column
+names, we could figure it out.
+
+209
+00:10:47,780 --> 00:10:50,080
+We can say, OK,
+column A, column D.
+
+210
+00:10:50,080 --> 00:10:53,770
+But it's not the most
+helpful situation.
+
+211
+00:10:53,770 --> 00:10:56,673
+So now, let's talk
+about data types.
+
+212
+00:10:56,673 --> 00:10:58,340
+There's lots of
+different kinds of data.
+
+213
+00:10:58,340 --> 00:11:00,900
+We've got text data, which
+we've just been working with.
+
+214
+00:11:00,900 --> 00:11:05,160
+We also have date
+data and numeric data.
+
+215
+00:11:05,160 --> 00:11:07,160
+And numeric data
+can be all kinds.
+
+216
+00:11:07,160 --> 00:11:09,030
+It can be monetary.
+
+217
+00:11:09,030 --> 00:11:11,690
+It can be sheer number.
+
+218
+00:11:11,690 --> 00:11:13,610
+Lots of different kinds.
+
+219
+00:11:13,610 --> 00:11:16,040
+So what we're going to do is
+we're going to look up here,
+
+220
+00:11:16,040 --> 00:11:18,498
+and we're going to see we have
+a start date and an end date
+
+221
+00:11:18,498 --> 00:11:19,580
+column.
+
+222
+00:11:19,580 --> 00:11:24,350
+And this doesn't look
+like a normal date to you.
+
+223
+00:11:24,350 --> 00:11:29,700
+And in the other version,
+the original version,
+
+224
+00:11:29,700 --> 00:11:32,000
+we had an actual date.
+
+225
+00:11:32,000 --> 00:11:34,520
+When we copied it over,
+it transcribed it to just
+
+226
+00:11:34,520 --> 00:11:37,830
+be the internal Excel number.
+
+227
+00:11:37,830 --> 00:11:41,900
+So let's change that
+back to date data.
+
+228
+00:11:41,900 --> 00:11:44,370
+So I'm going to
+click on column C.
+
+229
+00:11:44,370 --> 00:11:48,020
+And I'm going to come up
+here to this General button.
+
+230
+00:11:48,020 --> 00:11:51,653
+Again, we're in this
+Home tab, General.
+
+231
+00:11:51,653 --> 00:11:53,070
+I'm going to click
+that drop down.
+
+232
+00:11:53,070 --> 00:11:56,100
+And then I've got a bunch of
+different data type options.
+
+233
+00:11:56,100 --> 00:11:59,380
+So in this case, I'm
+going to hit Short Date.
+
+234
+00:11:59,380 --> 00:12:01,630
+And then for End Date,
+let's do Long Date just
+
+235
+00:12:01,630 --> 00:12:03,958
+so that way you can
+see the difference.
+
+236
+00:12:03,958 --> 00:12:06,250
+We're going to be working a
+lot more with the time data
+
+237
+00:12:06,250 --> 00:12:08,360
+and formatting it more later.
+
+238
+00:12:08,360 --> 00:12:10,880
+So we're not going to worry
+about that too much right now.
+
+239
+00:12:10,880 --> 00:12:16,280
+Just know that you can
+change the data type up here.
+
+240
+00:12:16,280 --> 00:12:19,120
+We also have duration in days.
+
+241
+00:12:19,120 --> 00:12:21,710
+Excel tries its best to
+recognize what it is.
+
+242
+00:12:21,710 --> 00:12:25,600
+So if it's general and you're
+starting to use formulas on it,
+
+243
+00:12:25,600 --> 00:12:27,190
+and it looks like
+a number, Excel
+
+244
+00:12:27,190 --> 00:12:29,380
+is going to treat
+it like a number.
+
+245
+00:12:29,380 --> 00:12:31,540
+But then we also
+have total budget,
+
+246
+00:12:31,540 --> 00:12:34,040
+which is a monetary value.
+
+247
+00:12:34,040 --> 00:12:37,990
+And so what we can do is, we can
+come up to here and we can say,
+
+248
+00:12:37,990 --> 00:12:40,580
+I actually need this
+to be in dollars.
+
+249
+00:12:40,580 --> 00:12:43,550
+And it automatically changes
+up here to accounting.
+
+250
+00:12:43,550 --> 00:12:47,410
+So if I ever wanted to use
+some conditional formatting,
+
+251
+00:12:47,410 --> 00:12:50,960
+then it'll let me understand.
+
+252
+00:12:50,960 --> 00:12:53,750
+If it's a positive number,
+maybe let's make it green.
+
+253
+00:12:53,750 --> 00:12:57,490
+If we're actually losing
+money, then let's turn it red.
+
+254
+00:12:57,490 --> 00:13:01,450
+And it'll really help capture
+what's going on with your data.
+
+255
+00:13:01,450 --> 00:13:05,370
+And then you're also making
+for sure certain that we're
+
+256
+00:13:05,370 --> 00:13:09,630
+treating these as dollars.
+
+257
+00:13:09,630 --> 00:13:15,570
+So let's go ahead and look
+at these different questions
+
+258
+00:13:15,570 --> 00:13:16,470
+that we have.
+
+259
+00:13:16,470 --> 00:13:21,425
+When you're working in data,
+it's not very prescriptive.
+
+260
+00:13:21,425 --> 00:13:22,800
+In your practice
+problems, you're
+
+261
+00:13:22,800 --> 00:13:26,820
+going to be walked through
+step by step by step.
+
+262
+00:13:26,820 --> 00:13:28,230
+In the real world,
+though, you're
+
+263
+00:13:28,230 --> 00:13:29,770
+going to be given this question.
+
+264
+00:13:29,770 --> 00:13:32,242
+And there's lots of
+different ways to solve it.
+
+265
+00:13:32,242 --> 00:13:34,620
+And so what we're
+going to do is,
+
+266
+00:13:34,620 --> 00:13:36,562
+we're going to
+talk through how we
+
+267
+00:13:36,562 --> 00:13:38,520
+want to approach each of
+these questions, which
+
+268
+00:13:38,520 --> 00:13:40,330
+are very reasonable questions.
+
+269
+00:13:40,330 --> 00:13:44,220
+So that first question is, what
+is the average daily budget
+
+270
+00:13:44,220 --> 00:13:46,500
+for each campaign?
+
+271
+00:13:46,500 --> 00:13:49,710
+So in order to
+figure this out, it
+
+272
+00:13:49,710 --> 00:13:53,550
+sounds like it wants
+me to add a column.
+
+273
+00:13:53,550 --> 00:13:56,160
+I want to know for
+campaign 1 launch
+
+274
+00:13:56,160 --> 00:14:01,960
+all the way down to
+campaign 50 summer.
+
+275
+00:14:01,960 --> 00:14:06,430
+I want to know for how
+many days on average,
+
+276
+00:14:06,430 --> 00:14:07,940
+am I spent-- how
+much am I spending?
+
+277
+00:14:07,940 --> 00:14:12,790
+So I'm going to give this a
+new column name in column G,
+
+278
+00:14:12,790 --> 00:14:18,940
+and I'm going to say
+average_daily_budget.
+
+279
+00:14:18,940 --> 00:14:21,320
+And when we're
+averaging something,
+
+280
+00:14:21,320 --> 00:14:24,350
+we add up every instance and
+then divide by how many we have.
+
+281
+00:14:24,350 --> 00:14:28,210
+So in this case, we already have
+both of those numbers calculated
+
+282
+00:14:28,210 --> 00:14:29,060
+for us.
+
+283
+00:14:29,060 --> 00:14:31,870
+We have our total
+budget, and then we
+
+284
+00:14:31,870 --> 00:14:35,050
+have how many days
+the campaign ran.
+
+285
+00:14:35,050 --> 00:14:39,950
+And so what I'm going to
+do is create a formula.
+
+286
+00:14:39,950 --> 00:14:43,480
+And in order to create a
+formula, what I'm going to do
+
+287
+00:14:43,480 --> 00:14:46,520
+is, I'm going to
+hit the equals sign.
+
+288
+00:14:46,520 --> 00:14:48,340
+And this tells Excel,
+hey, I want you
+
+289
+00:14:48,340 --> 00:14:51,070
+to start calculating something.
+
+290
+00:14:51,070 --> 00:14:56,140
+And I'm going to
+click or reference
+
+291
+00:14:56,140 --> 00:15:02,960
+the cell address that I want
+Excel to do my calculation for.
+
+292
+00:15:02,960 --> 00:15:06,060
+So hit my equals sign.
+
+293
+00:15:06,060 --> 00:15:08,740
+And I'm just going
+to click on F2.
+
+294
+00:15:08,740 --> 00:15:12,510
+And then I'm going to divide
+it by E2 because that's
+
+295
+00:15:12,510 --> 00:15:16,830
+going to say, for
+each of your 59 days,
+
+296
+00:15:16,830 --> 00:15:20,670
+you're spending
+about $407, Which
+
+297
+00:15:20,670 --> 00:15:23,290
+equates to our total budget.
+
+298
+00:15:23,290 --> 00:15:25,650
+There's another
+way we can do that.
+
+299
+00:15:25,650 --> 00:15:29,940
+We can just directly say, I
+want to-- now, I'm in row 3.
+
+300
+00:15:29,940 --> 00:15:36,160
+I'm going to say, type
+in F3 divided by E3.
+
+301
+00:15:36,160 --> 00:15:39,250
+And you'll notice as
+I'm typing these in,
+
+302
+00:15:39,250 --> 00:15:42,090
+this very nice thing happens,
+where you can actually
+
+303
+00:15:42,090 --> 00:15:44,800
+see which cells
+you're referencing,
+
+304
+00:15:44,800 --> 00:15:48,224
+which is super nice.
+
+305
+00:15:48,224 --> 00:15:55,740
+And I could, in theory, go
+through and manually calculate
+
+306
+00:15:55,740 --> 00:15:58,000
+each one of these based
+off of their cells.
+
+307
+00:15:58,000 --> 00:16:00,470
+But that's going to
+take a long time.
+
+308
+00:16:00,470 --> 00:16:01,910
+Not so much in this case.
+
+309
+00:16:01,910 --> 00:16:04,310
+We only have 40--
+
+310
+00:16:04,310 --> 00:16:06,670
+not 50 rows of data.
+
+311
+00:16:06,670 --> 00:16:09,715
+But if you have thousands
+and thousands of rows,
+
+312
+00:16:09,715 --> 00:16:11,840
+you're not going to want
+to calculate that by hand.
+
+313
+00:16:11,840 --> 00:16:14,920
+So what I like to do is I
+come to the corner of the cell
+
+314
+00:16:14,920 --> 00:16:16,420
+and see now how my
+cursor has turned
+
+315
+00:16:16,420 --> 00:16:19,370
+into that black crosshair.
+
+316
+00:16:19,370 --> 00:16:25,120
+If I double click on that,
+what it's going to do
+
+317
+00:16:25,120 --> 00:16:29,980
+is it's going to automatically
+pull my formula that I just
+
+318
+00:16:29,980 --> 00:16:32,120
+created all the way down.
+
+319
+00:16:32,120 --> 00:16:35,650
+And what I need to do is I want
+to click on the very last one
+
+320
+00:16:35,650 --> 00:16:39,385
+to make sure that my
+references still make sense,
+
+321
+00:16:39,385 --> 00:16:41,950
+that it's pulled it
+all the way down.
+
+322
+00:16:41,950 --> 00:16:45,430
+So now, I know what my
+average daily budget
+
+323
+00:16:45,430 --> 00:16:47,890
+is for each campaign.
+
+324
+00:16:47,890 --> 00:16:51,130
+And now, what I want to know is,
+what is the most expensive ad
+
+325
+00:16:51,130 --> 00:16:52,360
+campaign?
+
+326
+00:16:52,360 --> 00:16:55,120
+This is a little bit of
+an ambiguous question
+
+327
+00:16:55,120 --> 00:16:58,000
+because does it
+mean my total budget
+
+328
+00:16:58,000 --> 00:16:59,780
+or my average daily budget?
+
+329
+00:16:59,780 --> 00:17:02,140
+So I may want to
+go in and actually
+
+330
+00:17:02,140 --> 00:17:05,119
+clarify with whoever asked me
+this question, what they mean.
+
+331
+00:17:05,119 --> 00:17:07,900
+So let's do both.
+
+332
+00:17:07,900 --> 00:17:12,170
+So first, let's look at
+the total budget version.
+
+333
+00:17:12,170 --> 00:17:13,960
+So what I'm going
+to do is, I'm going
+
+334
+00:17:13,960 --> 00:17:16,390
+to highlight all of my data.
+
+335
+00:17:16,390 --> 00:17:18,079
+And I can do that.
+
+336
+00:17:18,079 --> 00:17:19,690
+I can start in A1.
+
+337
+00:17:19,690 --> 00:17:21,890
+And I have to hit
+my Shift button.
+
+338
+00:17:21,890 --> 00:17:23,560
+And that Shift button
+is going to allow
+
+339
+00:17:23,560 --> 00:17:27,800
+me to highlight everything
+between the final cell.
+
+340
+00:17:27,800 --> 00:17:30,520
+So it'll go as far over--
+
+341
+00:17:30,520 --> 00:17:36,010
+so in this case, column G--
+and as far down as I clicked.
+
+342
+00:17:36,010 --> 00:17:40,130
+And we're going to do
+something called a sort.
+
+343
+00:17:40,130 --> 00:17:43,600
+And if you come up-- again,
+we're in that Home tab still--
+
+344
+00:17:43,600 --> 00:17:46,600
+you have this editing
+button Filter and Sort.
+
+345
+00:17:46,600 --> 00:17:49,120
+And I'm going to click Filter.
+
+346
+00:17:49,120 --> 00:17:51,550
+And what that lets
+me do is it actually
+
+347
+00:17:51,550 --> 00:17:54,730
+lets me, say, if I
+actually only want
+
+348
+00:17:54,730 --> 00:18:02,330
+to see campaign
+IDs less than 10,
+
+349
+00:18:02,330 --> 00:18:04,350
+I can just only see those rows.
+
+350
+00:18:04,350 --> 00:18:07,020
+It automatically hides
+all the other data.
+
+351
+00:18:07,020 --> 00:18:09,240
+This is super helpful
+in a lot of cases,
+
+352
+00:18:09,240 --> 00:18:11,960
+which we'll talk keep talking
+about through the semester.
+
+353
+00:18:11,960 --> 00:18:15,530
+But what it also lets
+me do is it lets me.
+
+354
+00:18:15,530 --> 00:18:19,970
+So if I want to know what the
+most expensive ad campaign is
+
+355
+00:18:19,970 --> 00:18:23,030
+based off of total
+budget, I'm going
+
+356
+00:18:23,030 --> 00:18:25,200
+to come to column F,
+which is my total budget.
+
+357
+00:18:25,200 --> 00:18:27,050
+I'm going to click
+on that drop down.
+
+358
+00:18:27,050 --> 00:18:30,390
+And I'm going to
+largest to smallest.
+
+359
+00:18:30,390 --> 00:18:34,520
+You'll notice that before our
+campaign, IDs were in order.
+
+360
+00:18:34,520 --> 00:18:36,020
+It was one through 50.
+
+361
+00:18:36,020 --> 00:18:39,560
+But now, we're
+showing, hey, actually,
+
+362
+00:18:39,560 --> 00:18:44,090
+our campaign 20 in the winter
+time was the most expensive
+
+363
+00:18:44,090 --> 00:18:48,470
+that we had, followed
+by 46, and then 17.
+
+364
+00:18:48,470 --> 00:18:50,930
+So what I may want to do is,
+I may want to come up here.
+
+365
+00:18:50,930 --> 00:18:52,800
+And I might just give
+it a little highlight.
+
+366
+00:18:52,800 --> 00:18:55,700
+So I'm going to,
+again, hit Shift
+
+367
+00:18:55,700 --> 00:18:59,230
+and just click the first part
+and the last part of my row.
+
+368
+00:18:59,230 --> 00:19:02,820
+And I'm going to
+highlight that to be blue,
+
+369
+00:19:02,820 --> 00:19:07,320
+just so that way we can keep
+track of it as we move around.
+
+370
+00:19:07,320 --> 00:19:09,960
+Now, I want you
+to pause the video
+
+371
+00:19:09,960 --> 00:19:15,130
+and sort it based off of
+the average daily budget.
+
+372
+00:19:15,130 --> 00:19:18,650
+Which one's the most
+expensive based off of that?
+
+373
+00:19:21,270 --> 00:19:23,550
+So I'm going to
+do the same thing.
+
+374
+00:19:23,550 --> 00:19:25,500
+I'm going to come to
+this arrow, and I'm
+
+375
+00:19:25,500 --> 00:19:27,460
+going to largest to smallest.
+
+376
+00:19:27,460 --> 00:19:31,740
+You'll notice our
+most expensive budget
+
+377
+00:19:31,740 --> 00:19:36,390
+as far as total budget dollars
+actually move down to row 11.
+
+378
+00:19:36,390 --> 00:19:43,990
+Because even though campaign 38
+Q3 didn't spend as much money,
+
+379
+00:19:43,990 --> 00:19:47,220
+they spent a whole lot of money
+in a short amount of time.
+
+380
+00:19:47,220 --> 00:19:49,480
+And so I can give
+that a highlight, too.
+
+381
+00:19:49,480 --> 00:19:52,560
+So now, I can go
+back and say, I've
+
+382
+00:19:52,560 --> 00:19:54,640
+got two expensive campaigns.
+
+383
+00:19:54,640 --> 00:19:57,270
+I've got this one, which
+is the most expensive
+
+384
+00:19:57,270 --> 00:20:02,580
+average daily budget,
+followed by campaign 20,
+
+385
+00:20:02,580 --> 00:20:05,610
+which had the biggest
+overall total budget.
+
+386
+00:20:05,610 --> 00:20:08,870
+And that's really
+helpful to understand
+
+387
+00:20:08,870 --> 00:20:11,090
+where is our money
+going, and understand
+
+388
+00:20:11,090 --> 00:20:13,890
+how that changes over time.
+
+389
+00:20:13,890 --> 00:20:16,770
+Let's do another sort example.
+
+390
+00:20:16,770 --> 00:20:19,947
+So what is the
+shortest ad campaign?
+
+391
+00:20:19,947 --> 00:20:21,530
+I'm going to have
+you pause the video,
+
+392
+00:20:21,530 --> 00:20:23,155
+and go ahead and try
+that on your own.
+
+393
+00:20:25,650 --> 00:20:26,150
+Great.
+
+394
+00:20:26,150 --> 00:20:30,110
+So what I would do is, I would
+come over to this duration days.
+
+395
+00:20:30,110 --> 00:20:32,540
+And instead of
+largest to smallest,
+
+396
+00:20:32,540 --> 00:20:35,810
+I'm going to sort
+smallest to largest.
+
+397
+00:20:35,810 --> 00:20:39,830
+And now, I see that campaign
+50 in the summertime
+
+398
+00:20:39,830 --> 00:20:41,370
+was the shortest.
+
+399
+00:20:41,370 --> 00:20:43,150
+It's just over a
+month that it ran.
+
+400
+00:20:46,200 --> 00:20:50,870
+And then this last
+question is kind of tricky.
+
+401
+00:20:50,870 --> 00:20:53,930
+So I want to know what
+percentage of the total campaign
+
+402
+00:20:53,930 --> 00:20:55,730
+budge I've got?
+
+403
+00:20:55,730 --> 00:20:59,420
+2025 campaign budgets here.
+
+404
+00:20:59,420 --> 00:21:04,050
+How much does this
+campaign 15 make up?
+
+405
+00:21:04,050 --> 00:21:07,070
+How much does
+campaign 40 make up?
+
+406
+00:21:07,070 --> 00:21:10,290
+So what we're going to do
+is a few different things.
+
+407
+00:21:10,290 --> 00:21:13,740
+First of all, I'm going to
+resort it just to keep it easy.
+
+408
+00:21:13,740 --> 00:21:17,010
+And I'm going to
+add another cell.
+
+409
+00:21:17,010 --> 00:21:21,570
+I'm going to put this far
+away from the rest of my table
+
+410
+00:21:21,570 --> 00:21:24,980
+because this is a
+value that I'm going
+
+411
+00:21:24,980 --> 00:21:27,050
+to reference over and over.
+
+412
+00:21:27,050 --> 00:21:34,340
+And so I first want to know how
+much I spent in ad campaigns
+
+413
+00:21:34,340 --> 00:21:36,660
+across this whole year.
+
+414
+00:21:36,660 --> 00:21:42,720
+So in order to do that, I'm
+going to sum this information,
+
+415
+00:21:42,720 --> 00:21:46,790
+And I'm going to
+reference all of that.
+
+416
+00:21:46,790 --> 00:21:53,380
+And so now, I know this is
+the total ad spend up above.
+
+417
+00:21:57,020 --> 00:22:01,140
+And I want to know
+what the percentage is.
+
+418
+00:22:01,140 --> 00:22:04,980
+So if I were to do
+this for just row 1,
+
+419
+00:22:04,980 --> 00:22:09,010
+I'm going to take my total
+budget here and divide it.
+
+420
+00:22:11,644 --> 00:22:15,410
+And if you remember from high
+school or your current math
+
+421
+00:22:15,410 --> 00:22:18,900
+class, percentages, you got
+to move the decimal over.
+
+422
+00:22:18,900 --> 00:22:21,530
+But Excel has a
+really nice button,
+
+423
+00:22:21,530 --> 00:22:23,330
+where I can just hit
+percentage style,
+
+424
+00:22:23,330 --> 00:22:27,210
+and it'll round it
+up and do it for me.
+
+425
+00:22:27,210 --> 00:22:31,710
+When we did the average
+daily budget, what happened?
+
+426
+00:22:31,710 --> 00:22:33,300
+When we clicked
+all the way down,
+
+427
+00:22:33,300 --> 00:22:37,140
+it moved our references
+along with it.
+
+428
+00:22:37,140 --> 00:22:41,160
+And so in this particular case,
+what happens when I try that?
+
+429
+00:22:41,160 --> 00:22:44,660
+I'm just going to drag it
+down a few so we can see.
+
+430
+00:22:44,660 --> 00:22:49,260
+And let's see what our issue is.
+
+431
+00:22:49,260 --> 00:22:50,850
+We can do this a couple ways.
+
+432
+00:22:50,850 --> 00:22:55,280
+We can click in our
+formula box up here,
+
+433
+00:22:55,280 --> 00:22:59,360
+and we can see say, oh,
+it moved down with it.
+
+434
+00:22:59,360 --> 00:23:08,420
+We can also come up to Formulas,
+which is this button up here.
+
+435
+00:23:08,420 --> 00:23:11,660
+And we have this really nice
+thing called Formula Auditing.
+
+436
+00:23:11,660 --> 00:23:15,100
+And what it does is,
+you can have it show
+
+437
+00:23:15,100 --> 00:23:17,450
+the formula, which is nice.
+
+438
+00:23:17,450 --> 00:23:19,910
+We already did that
+when we clicked on it.
+
+439
+00:23:19,910 --> 00:23:23,080
+But we can trace precedents.
+
+440
+00:23:23,080 --> 00:23:25,180
+And what that does
+is, it actually
+
+441
+00:23:25,180 --> 00:23:32,088
+points to the cells themselves.
+
+442
+00:23:32,088 --> 00:23:33,880
+It's not so much a big
+deal when we're just
+
+443
+00:23:33,880 --> 00:23:36,290
+dealing with two cells
+like we are right now.
+
+444
+00:23:36,290 --> 00:23:40,330
+It becomes very, very useful if
+you are starting to really get
+
+445
+00:23:40,330 --> 00:23:46,640
+into embedding if statements,
+like if this is over $50,000,
+
+446
+00:23:46,640 --> 00:23:51,640
+then return a value of 2,
+or something like that.
+
+447
+00:23:51,640 --> 00:23:54,590
+And when our formulas start
+to get a lot more complicated,
+
+448
+00:23:54,590 --> 00:23:56,790
+it becomes really nice to
+be able to actively see
+
+449
+00:23:56,790 --> 00:23:59,280
+where this data is coming from.
+
+450
+00:23:59,280 --> 00:24:02,970
+So I'm going to
+remove our arrows.
+
+451
+00:24:02,970 --> 00:24:07,140
+Something happened here.
+
+452
+00:24:07,140 --> 00:24:13,260
+When we start pulling our
+formulas down like that,
+
+453
+00:24:13,260 --> 00:24:20,580
+it's going to automatically
+adjust the reference point.
+
+454
+00:24:20,580 --> 00:24:25,960
+I don't want this K1
+value to move at all.
+
+455
+00:24:25,960 --> 00:24:30,310
+I want each one of our rows
+to reference that value.
+
+456
+00:24:30,310 --> 00:24:35,010
+So what I can do is,
+I can put dollar signs
+
+457
+00:24:35,010 --> 00:24:40,950
+in front of my
+column information
+
+458
+00:24:40,950 --> 00:24:44,022
+and in front of my
+row information.
+
+459
+00:24:44,022 --> 00:24:50,580
+And so now what that does is
+the dollar signs say to Excel,
+
+460
+00:24:50,580 --> 00:24:51,930
+lock this in place.
+
+461
+00:24:51,930 --> 00:24:56,320
+I don't want you
+to move anymore.
+
+462
+00:24:56,320 --> 00:24:58,030
+And we can double
+click throughout
+
+463
+00:24:58,030 --> 00:25:01,180
+to make sure that's
+actually working.
+
+464
+00:25:01,180 --> 00:25:06,970
+I want you to try to just delete
+the dollar sign from the front
+
+465
+00:25:06,970 --> 00:25:11,170
+of the K and see what happens.
+
+466
+00:25:11,170 --> 00:25:12,530
+Does anything change?
+
+467
+00:25:12,530 --> 00:25:15,070
+What happens if I pull it over?
+
+468
+00:25:15,070 --> 00:25:20,133
+Right now, all of a sudden,
+my columns are able to adjust.
+
+469
+00:25:23,255 --> 00:25:28,120
+What happens if I just have
+it in front of my columns,
+
+470
+00:25:28,120 --> 00:25:29,085
+but not my row?
+
+471
+00:25:32,950 --> 00:25:35,210
+It's not moving over with it.
+
+472
+00:25:35,210 --> 00:25:41,350
+If I pull it over 1, I'm still
+referencing my locked-in K
+
+473
+00:25:41,350 --> 00:25:42,290
+column.
+
+474
+00:25:42,290 --> 00:25:46,790
+But as I move it down, it's
+still moving with the rows.
+
+475
+00:25:46,790 --> 00:25:52,180
+So sometimes it takes a second
+to really try to remember.
+
+476
+00:25:52,180 --> 00:25:56,850
+You can try multiple times
+to see if what is happening
+
+477
+00:25:56,850 --> 00:25:58,540
+makes sense.
+
+478
+00:25:58,540 --> 00:26:01,590
+So in this particular
+case, yes, I just
+
+479
+00:26:01,590 --> 00:26:08,070
+need the dollar sign in front
+of my row for this K1 value.
+
+480
+00:26:08,070 --> 00:26:14,580
+And you can also have
+it show you the formula,
+
+481
+00:26:14,580 --> 00:26:16,570
+which we can see here.
+
+482
+00:26:16,570 --> 00:26:20,040
+We can see where
+all that comes from.
+
+483
+00:26:20,040 --> 00:26:22,330
+And we can also
+evaluate the formula.
+
+484
+00:26:22,330 --> 00:26:25,790
+So what this does is it
+says, OK, we've got F2.
+
+485
+00:26:25,790 --> 00:26:27,040
+And I'm going to hit Evaluate.
+
+486
+00:26:27,040 --> 00:26:29,850
+And you can see how
+it subs the value in.
+
+487
+00:26:29,850 --> 00:26:31,990
+And then I'm going to
+hit Evaluate again.
+
+488
+00:26:31,990 --> 00:26:37,600
+So now, we've got that K1 value
+and then how it ends up looking.
+
+489
+00:26:37,600 --> 00:26:41,400
+And that's really nice
+because, again, it shows you,
+
+490
+00:26:41,400 --> 00:26:46,560
+is this value that you're
+returning one that you expected?
+
+491
+00:26:46,560 --> 00:26:49,210
+And so now, we can come in here.
+
+492
+00:26:49,210 --> 00:26:51,630
+We can hit Control-A again.
+
+493
+00:26:51,630 --> 00:26:55,500
+And we can add our
+sorting filter.
+
+494
+00:26:55,500 --> 00:27:01,700
+And so now, we can call
+this percent of total.
+
+495
+00:27:01,700 --> 00:27:04,790
+And now if we sort by
+largest to smallest,
+
+496
+00:27:04,790 --> 00:27:07,400
+now we can say, OK, this
+one campaign made up
+
+497
+00:27:07,400 --> 00:27:10,370
+4% of our totals.
+
+498
+00:27:10,370 --> 00:27:13,350
+And then if we do
+like a running total--
+
+499
+00:27:13,350 --> 00:27:16,550
+we're just going to do this
+plus our current one, which
+
+500
+00:27:16,550 --> 00:27:18,425
+for the first one isn't
+going to do anything.
+
+501
+00:27:24,010 --> 00:27:30,923
+It's Control-Z because I want
+to do the previous value.
+
+502
+00:27:35,780 --> 00:27:41,210
+So now, I can see
+that actually only--
+
+503
+00:27:41,210 --> 00:27:42,175
+let's come down here--
+
+504
+00:27:45,260 --> 00:27:51,920
+only seven of my campaigns
+make up about 25%
+
+505
+00:27:51,920 --> 00:27:55,050
+of my overall
+campaigns out of 50.
+
+506
+00:27:55,050 --> 00:27:57,390
+And so that can help
+us, again, start
+
+507
+00:27:57,390 --> 00:28:00,630
+to evaluate are these
+campaigns that we're pouring
+
+508
+00:28:00,630 --> 00:28:04,470
+so much money in worth it?
+
+509
+00:28:04,470 --> 00:28:07,890
+So that's just really a
+taste of the different things
+
+510
+00:28:07,890 --> 00:28:09,490
+that we're doing this week.
+
+511
+00:28:09,490 --> 00:28:12,010
+I would recommend going
+to your practice problems.
+
+512
+00:28:12,010 --> 00:28:20,110
+And as a new summary
+statistic pops up,
+
+513
+00:28:20,110 --> 00:28:21,940
+watch the video related to that.
+
+514
+00:28:21,940 --> 00:28:25,710
+We can count, we
+can add, we can--
+
+515
+00:28:25,710 --> 00:28:27,680
+all of these different things.
+
+516
+00:28:27,680 --> 00:28:30,390
+Continue to read the textbook
+and watch those videos
+
+517
+00:28:30,390 --> 00:28:32,800
+as you're working through
+your practice problems.
+
+518
+00:28:32,800 --> 00:28:34,890
+And if you have any
+questions, remember
+
+519
+00:28:34,890 --> 00:28:39,630
+there is that Q&A thread on this
+week's module that you can--
+
+520
+00:28:39,630 --> 00:28:42,280
+I'm more than happy to
+answer your questions there,
+
+521
+00:28:42,280 --> 00:28:44,850
+or you're welcome to schedule
+a time to meet with me,
+
+522
+00:28:44,850 --> 00:28:49,150
+or pop into Friday
+office hour at noon.
+
+523
+00:28:49,150 --> 00:28:52,070
+Thanks, and good
+luck with Excel.

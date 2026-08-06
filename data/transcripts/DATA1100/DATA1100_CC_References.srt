@@ -1,0 +1,479 @@
+1
+00:00:01,720 --> 00:00:05,700
+Hello everyone, today's concepts
+and context lesson is going to
+
+2
+00:00:05,700 --> 00:00:11,200
+be pretty brief, but I want
+to really dive into references
+
+3
+00:00:11,200 --> 00:00:15,280
+specifically because self-referencing,
+like I talked about in the
+
+4
+00:00:15,280 --> 00:00:18,660
+welcome video for this week, is
+one of those things that you're
+
+5
+00:00:18,660 --> 00:00:22,060
+going to find yourself using
+over and over no matter the field
+
+6
+00:00:22,060 --> 00:00:26,220
+you're in, no matter what you're
+trying to leverage Excel to do.
+
+7
+00:00:26,220 --> 00:00:30,080
+So I want to walk through this
+a lot more in depth. And so
+
+8
+00:00:30,080 --> 00:00:33,240
+what we'll be doing is we're
+going to set up a spreadsheet
+
+9
+00:00:33,240 --> 00:00:39,260
+that has one through six up
+here and then one ten, one
+
+10
+00:00:39,260 --> 00:00:45,260
+hundred, one thousand, all the
+way up to is that one million?
+
+11
+00:00:45,740 --> 00:00:48,920
+Yep, I have one million there
+because I want you to be able
+
+12
+00:00:48,920 --> 00:00:52,720
+to see how these different
+things are working. So when
+
+13
+00:00:52,720 --> 00:00:57,120
+you really dive into it and
+you're thinking, what cells do
+
+14
+00:00:57,120 --> 00:01:00,240
+I need to walk into place or
+make an absolute reference,
+
+15
+00:01:00,570 --> 00:01:04,620
+then we understand how this
+is working a little bit more.
+
+16
+00:01:04,750 --> 00:01:06,960
+So first things first,
+what I'm going to do
+
+17
+00:01:06,960 --> 00:01:12,280
+is in C3, I am just
+going to create a simple
+
+18
+00:01:12,660 --> 00:01:18,680
+calculation using C1
+or C2 multiplied by B3.
+
+19
+00:01:18,760 --> 00:01:22,880
+And you'll notice this is one of
+my favorite things about Excel. is
+
+20
+00:01:22,880 --> 00:01:28,580
+that C2 is blue and you'll notice
+that cell here is also highlighted
+
+21
+00:01:28,580 --> 00:01:32,700
+blue and B3 is red and is also
+highlighted red here. So when you
+
+22
+00:01:32,700 --> 00:01:39,240
+click double click into a calculated
+field you can really quickly see
+
+23
+00:01:39,240 --> 00:01:45,040
+what cells are being pulled in to
+get that answer. So it makes sense
+
+24
+00:01:45,580 --> 00:01:51,780
+one times one is in fact one so now
+when I click on this I'm not double
+
+25
+00:01:51,780 --> 00:01:54,780
+clicking I'm just single clicking
+and I get a little green box that
+
+26
+00:01:54,780 --> 00:02:01,580
+gets pulled up now what I can do is
+I can hover over this little green
+
+27
+00:02:01,580 --> 00:02:09,380
+square right here and see how my mouse
+turns into a little crosshair I can
+
+28
+00:02:09,380 --> 00:02:17,450
+take this and drag it across and
+now you'll see that my calculations
+
+29
+00:02:17,680 --> 00:02:23,100
+have been dragged over and you'll
+see depending on how we thought about
+
+30
+00:02:23,100 --> 00:02:27,660
+this maybe some unexpected results so
+I'm going to do the same thing here
+
+31
+00:02:27,660 --> 00:02:35,020
+I'm going to click in C3 I'm going
+to hold my mouse right mouse down
+
+32
+00:02:35,640 --> 00:02:39,800
+and highlight that whole row so now
+what I can do is when my crosshairs
+
+33
+00:02:39,800 --> 00:02:43,540
+show up I can either click this
+little button which is an autofill
+
+34
+00:02:43,540 --> 00:02:51,160
+option I can double click and that
+drags information down as well or
+
+35
+00:02:51,440 --> 00:02:56,940
+I could just drag as many as I want
+and I just take control Z just to
+
+36
+00:02:57,440 --> 00:02:59,180
+go back a few steps.
+
+37
+00:02:59,320 --> 00:03:03,600
+So all these will function
+the same. So let's click into,
+
+38
+00:03:03,600 --> 00:03:09,360
+let's say, F4 here. So when
+I click on this, you'll
+
+39
+00:03:09,360 --> 00:03:18,060
+see that to create this
+calculation, I'm using F3 and E4.
+
+40
+00:03:18,530 --> 00:03:23,020
+So this is a calculation based off
+of this calculation based on this
+
+41
+00:03:23,020 --> 00:03:28,540
+calculation. and that all makes
+sense that's fine but it may not be
+
+42
+00:03:28,540 --> 00:03:34,540
+what we expected it to happen so
+when I drag my formula over and I
+
+43
+00:03:34,540 --> 00:03:39,820
+don't have any dollar signs or absolute
+references here what is happening
+
+44
+00:03:39,820 --> 00:03:45,860
+is that my formula moves over
+the same number of cells that I
+
+45
+00:03:45,860 --> 00:03:52,860
+dragged it to So if you come way
+down here to H9, you'll see this is
+
+46
+00:03:52,860 --> 00:04:07,980
+H8 times G9 because it moved in
+relation to the new cell. So C2 is up
+
+47
+00:04:07,980 --> 00:04:17,220
+one and B3 is over one. And so
+that's exactly what this formula did.
+
+48
+00:04:17,220 --> 00:04:21,280
+It's going to reference the cell
+right above it and the cell right
+
+49
+00:04:21,280 --> 00:04:26,780
+to the left of it in order to
+generate these numbers. but let's say
+
+50
+00:04:26,780 --> 00:04:37,420
+I want to lock these numbers in place
+meaning I want to only reference
+
+51
+00:04:37,420 --> 00:04:44,100
+one so when I move it over I'm
+not moving it with me so I'm going
+
+52
+00:04:44,100 --> 00:04:52,120
+to lock my column in place and then
+multiply that by the row up top.
+
+53
+00:04:52,120 --> 00:04:56,060
+So now when I do this and I click,
+
+54
+00:04:56,760 --> 00:05:02,100
+you'll see that I didn't
+move my blue square with
+
+55
+00:05:02,100 --> 00:05:08,440
+me. It stayed right here
+and it went over. So now I'm
+
+56
+00:05:08,440 --> 00:05:13,860
+one up top, but I'm still
+referencing the column B.
+
+57
+00:05:14,200 --> 00:05:21,140
+Now, based on this, as I drag
+this formula down to the next row,
+
+58
+00:05:21,810 --> 00:05:24,440
+pause for a second and
+see if you can think
+
+59
+00:05:24,440 --> 00:05:27,620
+about your output that
+you're going to get.
+
+60
+00:05:28,300 --> 00:05:34,040
+So when I drag this down, I'm
+going to get 10, 20, 30, 40,
+
+61
+00:05:34,040 --> 00:05:39,640
+50, 60, because I only locked
+the column in place here.
+
+62
+00:05:40,100 --> 00:05:47,980
+so it moved down but you'll notice
+my row and I'm referencing right
+
+63
+00:05:47,980 --> 00:05:53,660
+above it so I'm still referencing
+one above and as I drag it over I
+
+64
+00:05:54,080 --> 00:05:59,760
+have my B column still locked into
+place but I don't have a dollar sign
+
+65
+00:05:59,760 --> 00:06:05,160
+in front of the number so it's
+only going to continue to reference
+
+66
+00:06:06,260 --> 00:06:10,680
+the B column, but it'll move down the
+
+67
+00:06:10,680 --> 00:06:12,840
+row with me as I drag my row down.
+
+68
+00:06:14,510 --> 00:06:16,980
+So now let's delete that back out.
+
+69
+00:06:17,340 --> 00:06:27,200
+Now what would happen if I locked
+both B and 3 into place and then
+
+70
+00:06:27,200 --> 00:06:32,580
+multiplied it by C2 without any absolute
+references being locked in there.
+
+71
+00:06:33,320 --> 00:06:36,340
+So I'm going to do the same
+thing I'm going to drag it across
+
+72
+00:06:36,340 --> 00:06:42,000
+the row and you'll see that you
+know it looks exactly like it did
+
+73
+00:06:42,000 --> 00:06:45,880
+before but where it's going to
+change now is when I drag it
+
+74
+00:06:45,880 --> 00:06:51,340
+down and I click I'm still referencing
+the cell right above that's
+
+75
+00:06:51,340 --> 00:06:56,990
+that e4 with the red but because
+I locked both the column and
+
+76
+00:06:56,990 --> 00:07:03,260
+the row into place I'm only
+referencing b3 so that number no
+
+77
+00:07:03,260 --> 00:07:08,700
+matter how far I drag this formula
+is going to stay right here.
+
+78
+00:07:11,160 --> 00:07:20,400
+Now we can look at this really quick
+the other way where we only have
+
+79
+00:07:20,400 --> 00:07:28,680
+three locked in and we can drag that
+down and we're back to a similar
+
+80
+00:07:28,680 --> 00:07:34,460
+one that we started with but as you
+click on these numbers you'll see that
+
+81
+00:07:34,460 --> 00:07:39,360
+it's the column is moving so it's
+still only one column to the right
+
+82
+00:07:39,360 --> 00:07:43,500
+left of this because that's what we
+specified but it's staying on row
+
+83
+00:07:43,500 --> 00:07:50,380
+three so that's getting locked into
+place and last but not least what
+
+84
+00:07:50,380 --> 00:07:55,220
+happens if we start locking in all of
+these numbers so if we do two absolute
+
+85
+00:07:55,220 --> 00:08:03,140
+references with both the number
+and the column for both parts of
+
+86
+00:08:03,140 --> 00:08:09,320
+this calculation, take a second
+before you start dragging your formula
+
+87
+00:08:09,320 --> 00:08:15,070
+around, take a second to see if you
+know what is going to show up in h9.
+
+88
+00:08:16,820 --> 00:08:20,760
+It's going to stay one,
+because there's no movement
+
+89
+00:08:20,760 --> 00:08:25,160
+happening. When we get
+rid of our dollar signs,
+
+90
+00:08:27,440 --> 00:08:33,760
+that is where movement happens
+in relation to where we've
+
+91
+00:08:33,760 --> 00:08:38,560
+moved to the formula. So this
+is just a quick example. I'll
+
+92
+00:08:38,560 --> 00:08:41,980
+have some questions down below
+just for you to answer to see
+
+93
+00:08:41,980 --> 00:08:45,440
+if you really or conceptually
+getting what the dollar sign
+
+94
+00:08:45,440 --> 00:08:51,900
+is doing. We're locking in the
+value. So as we fill a formula
+
+95
+00:08:51,900 --> 00:08:55,680
+down, we're referencing the
+fields we expect to reference.
+
+96
+00:08:55,940 --> 00:09:00,360
+So go ahead, take a break from this,
+and then answer those questions.
+
+97
+00:09:00,360 --> 00:09:03,880
+And as always, let me know what
+questions you have as I'm here to help.

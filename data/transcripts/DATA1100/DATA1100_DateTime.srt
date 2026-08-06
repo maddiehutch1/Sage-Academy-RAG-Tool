@@ -1,0 +1,2274 @@
+1
+00:00:04,040 --> 00:00:05,130
+INSTRUCTOR: Welcome back.
+
+2
+00:00:05,130 --> 00:00:09,510
+I am so excited to have you
+learn this week about date,
+
+3
+00:00:09,510 --> 00:00:11,190
+time, and text functions.
+
+4
+00:00:11,190 --> 00:00:13,770
+These are really
+invaluable skills to know.
+
+5
+00:00:13,770 --> 00:00:17,100
+They're fairly foundational and
+easy to wrap your head around,
+
+6
+00:00:17,100 --> 00:00:19,310
+but what it allows
+you to do is really
+
+7
+00:00:19,310 --> 00:00:20,840
+get in and start
+cleaning your data
+
+8
+00:00:20,840 --> 00:00:23,720
+and formatting your data in
+a way that is going to be,
+
+9
+00:00:23,720 --> 00:00:25,530
+ultimately, really
+helpful for you.
+
+10
+00:00:25,530 --> 00:00:30,120
+These are skills that
+I use fairly regularly,
+
+11
+00:00:30,120 --> 00:00:33,440
+especially when we get into
+the text portion of the videos
+
+12
+00:00:33,440 --> 00:00:34,170
+this week.
+
+13
+00:00:34,170 --> 00:00:38,072
+Today, we're going to focus
+primarily on that date and time.
+
+14
+00:00:38,072 --> 00:00:39,530
+And these are a
+series of functions
+
+15
+00:00:39,530 --> 00:00:43,880
+that really get at extracting
+information in the format
+
+16
+00:00:43,880 --> 00:00:44,820
+that we want.
+
+17
+00:00:44,820 --> 00:00:47,253
+We can also start to do
+some math using dates.
+
+18
+00:00:47,253 --> 00:00:49,670
+So if I want to know how many
+days ago something happened,
+
+19
+00:00:49,670 --> 00:00:54,320
+or how many hours that you
+worked so I know what to pay you
+
+20
+00:00:54,320 --> 00:00:56,240
+out, if I'm working
+in payroll, these
+
+21
+00:00:56,240 --> 00:00:59,690
+become really critical to
+how businesses function.
+
+22
+00:00:59,690 --> 00:01:03,770
+And so what we'll be doing
+is using our ad events data.
+
+23
+00:01:03,770 --> 00:01:06,310
+You're welcome to
+use your ad events
+
+24
+00:01:06,310 --> 00:01:07,670
+data that you have been using.
+
+25
+00:01:07,670 --> 00:01:10,310
+We're going to be just working
+on a small subset of this data,
+
+26
+00:01:10,310 --> 00:01:13,430
+because I really want to
+show you how this works.
+
+27
+00:01:13,430 --> 00:01:16,310
+You can download this,
+essentially, the same one.
+
+28
+00:01:16,310 --> 00:01:18,200
+It's going to look
+a smidge different,
+
+29
+00:01:18,200 --> 00:01:20,990
+but, overall, it's going
+to be very similar.
+
+30
+00:01:20,990 --> 00:01:24,310
+This has all of the different
+date and time informations
+
+31
+00:01:24,310 --> 00:01:26,870
+that we're going to
+extract or calculate today.
+
+32
+00:01:26,870 --> 00:01:32,110
+And then we're also
+going to be working
+
+33
+00:01:32,110 --> 00:01:34,250
+on another video on
+our text information.
+
+34
+00:01:34,250 --> 00:01:37,510
+So feel free if you want to
+download just this version
+
+35
+00:01:37,510 --> 00:01:40,463
+with our seven events that
+we're going to be looking at,
+
+36
+00:01:40,463 --> 00:01:41,630
+you're more than welcome to.
+
+37
+00:01:41,630 --> 00:01:44,960
+You're also welcome to
+continue to use this data.
+
+38
+00:01:44,960 --> 00:01:47,690
+So let's look at our
+add events table.
+
+39
+00:01:47,690 --> 00:01:50,210
+We've been working in this
+table a lot the last two weeks.
+
+40
+00:01:50,210 --> 00:01:52,840
+And it's extracted
+a lot of data for us
+
+41
+00:01:52,840 --> 00:01:54,890
+already and done
+that calculation.
+
+42
+00:01:54,890 --> 00:01:56,270
+So what time of day is it?
+
+43
+00:01:56,270 --> 00:01:57,800
+What is our event type?
+
+44
+00:01:57,800 --> 00:01:59,960
+Day of the week, and
+gives us a timestamp.
+
+45
+00:01:59,960 --> 00:02:03,440
+We then went in and calculated
+if it was a week day or weekend,
+
+46
+00:02:03,440 --> 00:02:06,220
+but when we're collecting
+data, we usually
+
+47
+00:02:06,220 --> 00:02:09,865
+aren't getting data like that,
+unless we're a data engineer
+
+48
+00:02:09,865 --> 00:02:11,740
+and we're actively
+building that out and then
+
+49
+00:02:11,740 --> 00:02:13,698
+putting it in the database
+because, maybe, that
+
+50
+00:02:13,698 --> 00:02:15,770
+is really important to
+our daily functions.
+
+51
+00:02:15,770 --> 00:02:18,860
+And so a data engineer may be
+going in and building those out
+
+52
+00:02:18,860 --> 00:02:21,080
+and so they exist
+for everyone else.
+
+53
+00:02:21,080 --> 00:02:23,020
+But this is usually
+what the data is going
+
+54
+00:02:23,020 --> 00:02:24,260
+to look like when we get it.
+
+55
+00:02:24,260 --> 00:02:25,808
+It's going to have our event ID.
+
+56
+00:02:25,808 --> 00:02:28,100
+And this is going to usually
+be automatically assigned.
+
+57
+00:02:28,100 --> 00:02:30,200
+So every time there's a
+new event that happens,
+
+58
+00:02:30,200 --> 00:02:32,300
+we're giving it a
+unique identifier.
+
+59
+00:02:32,300 --> 00:02:35,840
+If you're in 2100 right now,
+this is the primary key.
+
+60
+00:02:35,840 --> 00:02:38,320
+If you're not in 2100,
+just forget I said that.
+
+61
+00:02:38,320 --> 00:02:40,700
+Then we have what
+ad it was tied to,
+
+62
+00:02:40,700 --> 00:02:43,390
+because if we're
+getting a bunch of data
+
+63
+00:02:43,390 --> 00:02:45,620
+and we're maybe running
+multiple ad campaigns,
+
+64
+00:02:45,620 --> 00:02:47,360
+especially if we're
+doing A/B testing,
+
+65
+00:02:47,360 --> 00:02:51,130
+we want to know exactly what
+ad these impressions and likes
+
+66
+00:02:51,130 --> 00:02:52,160
+and shares happened on.
+
+67
+00:02:52,160 --> 00:02:53,830
+That way, we can
+start to understand
+
+68
+00:02:53,830 --> 00:02:56,430
+how our ads
+specifically performed,
+
+69
+00:02:56,430 --> 00:02:57,730
+rather than just on the whole.
+
+70
+00:02:57,730 --> 00:02:59,320
+Because if we just want
+to know on the whole,
+
+71
+00:02:59,320 --> 00:03:00,990
+we can always
+aggregate it, throw it
+
+72
+00:03:00,990 --> 00:03:03,240
+in a pivot table to
+understand overall
+
+73
+00:03:03,240 --> 00:03:06,600
+what our annual
+likes and shares are.
+
+74
+00:03:06,600 --> 00:03:08,590
+But if we're just
+collecting on that level,
+
+75
+00:03:08,590 --> 00:03:11,080
+then we're not able to
+go in and dig deeper.
+
+76
+00:03:11,080 --> 00:03:12,720
+So we want to
+collect what exactly
+
+77
+00:03:12,720 --> 00:03:17,230
+ad we ran that garnered
+those different events.
+
+78
+00:03:17,230 --> 00:03:19,980
+Then we have who did those
+events so that way we
+
+79
+00:03:19,980 --> 00:03:24,580
+can understand, maybe, we have
+some really high engaging users.
+
+80
+00:03:24,580 --> 00:03:26,470
+Maybe we have some that
+are just brand new.
+
+81
+00:03:26,470 --> 00:03:29,530
+And they first started
+clicking on our ads.
+
+82
+00:03:29,530 --> 00:03:32,460
+And then, ultimately, too, that
+we can potentially connect it
+
+83
+00:03:32,460 --> 00:03:36,700
+into our e-commerce site.
+
+84
+00:03:36,700 --> 00:03:40,420
+If I'm running an ad
+for a sale on shoes,
+
+85
+00:03:40,420 --> 00:03:44,280
+then I can try to connect my
+user ID from my social media
+
+86
+00:03:44,280 --> 00:03:45,970
+into my e-commerce site.
+
+87
+00:03:45,970 --> 00:03:49,870
+So how did that ad actually
+directly generate revenue?
+
+88
+00:03:49,870 --> 00:03:52,590
+And we can only do that
+if we have that user ID
+
+89
+00:03:52,590 --> 00:03:55,550
+foreign key in this
+data, rather than just
+
+90
+00:03:55,550 --> 00:03:58,200
+measuring share impressions.
+
+91
+00:03:58,200 --> 00:03:59,850
+And then we'll have timestamps.
+
+92
+00:03:59,850 --> 00:04:03,290
+And you'll notice when I copied
+this over, instead of copying it
+
+93
+00:04:03,290 --> 00:04:07,610
+over as a really nice
+timestamp, it copied over
+
+94
+00:04:07,610 --> 00:04:10,260
+as a bunch of numbers,
+and that's perfectly fine.
+
+95
+00:04:10,260 --> 00:04:12,830
+This is just Excel's way
+of storing that date time
+
+96
+00:04:12,830 --> 00:04:13,670
+information.
+
+97
+00:04:13,670 --> 00:04:15,240
+This is our date.
+
+98
+00:04:15,240 --> 00:04:16,746
+This is our time.
+
+99
+00:04:16,746 --> 00:04:19,079
+And we can change that back,
+which we'll do in a second.
+
+100
+00:04:19,079 --> 00:04:21,570
+And then finally, we have
+our different event types.
+
+101
+00:04:21,570 --> 00:04:24,090
+So down here, I have
+formulas set up.
+
+102
+00:04:24,090 --> 00:04:26,420
+So as we build out
+formulas, you'll
+
+103
+00:04:26,420 --> 00:04:30,560
+be able to see exactly what I
+typed and it'll stay that way.
+
+104
+00:04:30,560 --> 00:04:34,460
+So first of all, we want
+to convert this back
+
+105
+00:04:34,460 --> 00:04:36,480
+into a regular date time.
+
+106
+00:04:36,480 --> 00:04:40,100
+So what I'm going to do is I'm
+going to copy this information,
+
+107
+00:04:40,100 --> 00:04:42,840
+and I'm just going
+to paste it back.
+
+108
+00:04:42,840 --> 00:04:47,790
+Now, I'm going to come up to
+my lovely data type formatting,
+
+109
+00:04:47,790 --> 00:04:51,890
+and I'm going to come down
+to more number formats.
+
+110
+00:04:51,890 --> 00:04:54,050
+And when I hit more
+number formats,
+
+111
+00:04:54,050 --> 00:04:56,840
+I'm going to be given a
+lot of different options.
+
+112
+00:04:56,840 --> 00:04:59,590
+And in this case, I'm
+going to click into date
+
+113
+00:04:59,590 --> 00:05:04,180
+and you'll see really quickly,
+I have a lot of options here.
+
+114
+00:05:04,180 --> 00:05:08,620
+So I would like to, if
+I just want to see date,
+
+115
+00:05:08,620 --> 00:05:09,688
+I can just click date.
+
+116
+00:05:09,688 --> 00:05:11,480
+And this is the format
+I want to see it in.
+
+117
+00:05:11,480 --> 00:05:12,440
+That's great.
+
+118
+00:05:12,440 --> 00:05:14,890
+I can also start
+switching things
+
+119
+00:05:14,890 --> 00:05:17,860
+around, make sure I have a
+leading 0 if I need it right.
+
+120
+00:05:17,860 --> 00:05:19,360
+This is going to
+be informed usually
+
+121
+00:05:19,360 --> 00:05:23,090
+by how the analyst
+likes to see the data,
+
+122
+00:05:23,090 --> 00:05:27,490
+or, alternatively, how the
+business tends to report it out
+
+123
+00:05:27,490 --> 00:05:28,032
+consistently.
+
+124
+00:05:28,032 --> 00:05:30,198
+So that's just a judgment
+call that you'll make when
+
+125
+00:05:30,198 --> 00:05:31,400
+you're reporting things out.
+
+126
+00:05:31,400 --> 00:05:33,760
+So now what we do is
+I'm going to come in
+
+127
+00:05:33,760 --> 00:05:38,590
+and I'm going to do a date
+month, day year, with the time,
+
+128
+00:05:38,590 --> 00:05:41,590
+with an AM or PM stamp.
+
+129
+00:05:41,590 --> 00:05:42,160
+Perfect.
+
+130
+00:05:42,160 --> 00:05:46,575
+So now I have my date time in
+a more user friendly format.
+
+131
+00:05:46,575 --> 00:05:48,700
+So that's something we look
+at and we can instantly
+
+132
+00:05:48,700 --> 00:05:49,940
+see and understand.
+
+133
+00:05:49,940 --> 00:05:51,820
+So now let's look at hour.
+
+134
+00:05:51,820 --> 00:05:56,590
+So I'm going to start by
+typing in hour because I
+
+135
+00:05:56,590 --> 00:06:02,800
+need to recalculate the time
+of day that these happened.
+
+136
+00:06:02,800 --> 00:06:04,300
+Because then I can
+start to recreate
+
+137
+00:06:04,300 --> 00:06:06,592
+a lot of those other tables,
+the pivot table we created
+
+138
+00:06:06,592 --> 00:06:08,380
+last week, the
+COUNTIFS from the week
+
+139
+00:06:08,380 --> 00:06:11,770
+before, and that's all
+dependent on the hour
+
+140
+00:06:11,770 --> 00:06:13,040
+that these events occurred.
+
+141
+00:06:13,040 --> 00:06:18,370
+So Excel has a function
+for, basically,
+
+142
+00:06:18,370 --> 00:06:20,947
+any extracting any
+part of our datetime.
+
+143
+00:06:20,947 --> 00:06:23,030
+And datetime is the date
+and time almost together.
+
+144
+00:06:23,030 --> 00:06:25,250
+We could either
+extract the month,
+
+145
+00:06:25,250 --> 00:06:27,920
+which is going to be
+like July and June.
+
+146
+00:06:27,920 --> 00:06:30,290
+It looks like from these
+examples, the day of the month,
+
+147
+00:06:30,290 --> 00:06:33,920
+the year it happened, and the
+hour, the minute, and second.
+
+148
+00:06:33,920 --> 00:06:35,920
+So let's just use
+hour right now so
+
+149
+00:06:35,920 --> 00:06:38,750
+that way we can calculate
+that time of day.
+
+150
+00:06:38,750 --> 00:06:40,310
+So we're going to do hour.
+
+151
+00:06:40,310 --> 00:06:43,390
+And super simply, we're just
+going to click on our datetime
+
+152
+00:06:43,390 --> 00:06:46,180
+that we're interested in.
+
+153
+00:06:46,180 --> 00:06:48,220
+And you'll see that
+it came as zero.
+
+154
+00:06:48,220 --> 00:06:51,405
+And you'll notice down here
+what this first row of formulas
+
+155
+00:06:51,405 --> 00:06:52,030
+is going to be.
+
+156
+00:06:52,030 --> 00:06:54,630
+They didn't have a
+formula, our does.
+
+157
+00:06:54,630 --> 00:06:56,670
+And at first, you
+might be like, oh, no.
+
+158
+00:06:56,670 --> 00:06:58,900
+I did something wrong
+because I returned to zero.
+
+159
+00:06:58,900 --> 00:07:01,510
+But look at the
+date time over here,
+
+160
+00:07:01,510 --> 00:07:05,560
+Excel starts off
+the hours at zero.
+
+161
+00:07:05,560 --> 00:07:08,450
+So 12 in the morning, so right
+after midnight between 12:00
+
+162
+00:07:08,450 --> 00:07:11,260
+and 1:00 AM is going
+to be an hour of zero.
+
+163
+00:07:11,260 --> 00:07:15,390
+Then the hour leading up to
+11:00 PM to midnight is going
+
+164
+00:07:15,390 --> 00:07:17,010
+to be 23.
+
+165
+00:07:17,010 --> 00:07:20,260
+So let's go ahead and
+fill this formula down.
+
+166
+00:07:20,260 --> 00:07:22,600
+But before I do that,
+I want you to think,
+
+167
+00:07:22,600 --> 00:07:25,510
+do I need to put my
+dollar signs in or not?
+
+168
+00:07:25,510 --> 00:07:28,860
+Do I need to lock
+my formula in place?
+
+169
+00:07:28,860 --> 00:07:31,830
+In this case, I do not,
+because I want to keep,
+
+170
+00:07:31,830 --> 00:07:33,960
+as I move my
+formula down, I want
+
+171
+00:07:33,960 --> 00:07:36,550
+to keep referencing a new row.
+
+172
+00:07:36,550 --> 00:07:39,250
+And so that is what
+I'm going to do.
+
+173
+00:07:39,250 --> 00:07:44,710
+So now I have zero, 8:00 AM,
+19 because that's 7:00 PM, two,
+
+174
+00:07:44,710 --> 00:07:46,800
+which is PM, which is 14.
+
+175
+00:07:46,800 --> 00:07:49,220
+So when you're doing these
+kinds of things, make sure
+
+176
+00:07:49,220 --> 00:07:50,660
+you're going back
+and gut checking
+
+177
+00:07:50,660 --> 00:07:55,410
+to make sure that what you're
+actually extracting makes sense,
+
+178
+00:07:55,410 --> 00:07:58,310
+and in this case, it does so.
+
+179
+00:07:58,310 --> 00:08:00,800
+So now that we have
+hour calculated,
+
+180
+00:08:00,800 --> 00:08:04,220
+which you'll see down
+here what this first row
+
+181
+00:08:04,220 --> 00:08:07,250
+formula looks like,
+now let's go ahead
+
+182
+00:08:07,250 --> 00:08:08,970
+and calculate the time of day.
+
+183
+00:08:08,970 --> 00:08:12,970
+And so this is going to be our
+morning, our evening, afternoon,
+
+184
+00:08:12,970 --> 00:08:13,470
+and night.
+
+185
+00:08:13,470 --> 00:08:15,762
+And that's not in the right
+order, but we'll get there.
+
+186
+00:08:15,762 --> 00:08:17,270
+So first thing
+that we need to do
+
+187
+00:08:17,270 --> 00:08:21,300
+is specify what we want
+each one of these to be.
+
+188
+00:08:21,300 --> 00:08:29,550
+So morning, afternoon,
+evening, and night.
+
+189
+00:08:29,550 --> 00:08:34,220
+Now, I need to
+say start and end.
+
+190
+00:08:34,220 --> 00:08:35,813
+So what I need to
+do now is I need
+
+191
+00:08:35,813 --> 00:08:37,730
+to go through and make
+a judgment call on what
+
+192
+00:08:37,730 --> 00:08:40,272
+I want to be considered morning,
+what I want to be considered
+
+193
+00:08:40,272 --> 00:08:42,320
+afternoon, evening, and night.
+
+194
+00:08:42,320 --> 00:08:44,250
+You can go ahead and
+pick out your own numbers
+
+195
+00:08:44,250 --> 00:08:45,458
+if you don't agree with mine.
+
+196
+00:08:45,458 --> 00:08:45,960
+That's fine.
+
+197
+00:08:45,960 --> 00:08:47,335
+That's a different
+judgment call,
+
+198
+00:08:47,335 --> 00:08:48,840
+and that's perfectly acceptable.
+
+199
+00:08:48,840 --> 00:08:51,260
+Usually, if we are really
+interested in specific time
+
+200
+00:08:51,260 --> 00:08:53,490
+of days, then that's something
+our business will set.
+
+201
+00:08:53,490 --> 00:08:56,100
+And at this point, that
+business gets to be you.
+
+202
+00:08:56,100 --> 00:08:58,650
+So you get to set that
+for your own document.
+
+203
+00:08:58,650 --> 00:09:01,460
+So in my case, I'm going to
+start my morning probably around
+
+204
+00:09:01,460 --> 00:09:04,838
+6:00 AM because I know people
+are starting to wake up.
+
+205
+00:09:04,838 --> 00:09:07,380
+Maybe the first thing they're
+doing is checking social media,
+
+206
+00:09:07,380 --> 00:09:11,120
+and I want to capture what
+that morning hours are,
+
+207
+00:09:11,120 --> 00:09:13,590
+and that first taste of
+social media in the day.
+
+208
+00:09:13,590 --> 00:09:17,120
+And I'm going to end
+this at 10:00 AM.
+
+209
+00:09:17,120 --> 00:09:21,050
+Then I'm going to say the
+afternoon is my next option
+
+210
+00:09:21,050 --> 00:09:23,720
+that I can give, because this
+is what was present in our data
+
+211
+00:09:23,720 --> 00:09:25,160
+originally.
+
+212
+00:09:25,160 --> 00:09:28,140
+I might actually say, I'm
+going to end that at 11:00,
+
+213
+00:09:28,140 --> 00:09:31,040
+so it goes all the
+way to 11:59 AM.
+
+214
+00:09:31,040 --> 00:09:35,540
+Then I'm going to start my
+afternoon at 12:00 and continue
+
+215
+00:09:35,540 --> 00:09:37,790
+that until maybe 4:00 PM.
+
+216
+00:09:37,790 --> 00:09:40,910
+And then my evening hours will
+start at 5:00, and, probably,
+
+217
+00:09:40,910 --> 00:09:44,840
+go to 8:00 or 9:00, maybe
+depending on what my ads are.
+
+218
+00:09:44,840 --> 00:09:48,940
+Maybe I'm targeting families
+with young children,
+
+219
+00:09:48,940 --> 00:09:51,400
+and so I know they're
+in bed, hopefully,
+
+220
+00:09:51,400 --> 00:09:53,120
+for their sake by 9:00.
+
+221
+00:09:53,120 --> 00:09:55,390
+And so then I might
+start pushing my ads
+
+222
+00:09:55,390 --> 00:09:57,278
+a lot more frequently
+after that,
+
+223
+00:09:57,278 --> 00:09:58,820
+because I want to
+maximize engagement
+
+224
+00:09:58,820 --> 00:10:01,250
+that's going to drive the
+algorithms a little bit more.
+
+225
+00:10:01,250 --> 00:10:03,520
+So if I know when my
+target audience is
+
+226
+00:10:03,520 --> 00:10:06,380
+interested and
+interacting with my ads,
+
+227
+00:10:06,380 --> 00:10:08,440
+then I can pay a
+little bit more money
+
+228
+00:10:08,440 --> 00:10:11,400
+to have my ads a little bit
+more visible during those times.
+
+229
+00:10:11,400 --> 00:10:13,150
+Because, especially,
+if I go back and link
+
+230
+00:10:13,150 --> 00:10:18,010
+to what ads are selling through
+to my site and generating
+
+231
+00:10:18,010 --> 00:10:20,830
+revenue on my e-commerce
+site, then I want to make sure
+
+232
+00:10:20,830 --> 00:10:23,620
+I'm maximizing my ad spend
+for that specific time.
+
+233
+00:10:23,620 --> 00:10:27,970
+And the night will go from
+10:00, but we can't just go--
+
+234
+00:10:27,970 --> 00:10:30,460
+this is 9:00 PM, which we'll
+need to do some math again
+
+235
+00:10:30,460 --> 00:10:31,340
+in a second.
+
+236
+00:10:31,340 --> 00:10:37,550
+We're going to go from 10:00
+PM all the way to 5:00 AM.
+
+237
+00:10:37,550 --> 00:10:40,990
+But like we noticed up here,
+we actually use military time.
+
+238
+00:10:40,990 --> 00:10:44,950
+And so what I'm going to
+do instead is saying, OK,
+
+239
+00:10:44,950 --> 00:10:48,192
+I have 12:00, that
+stays the same.
+
+240
+00:10:48,192 --> 00:10:50,650
+And then I'm going to come up
+here and look at-- let's see,
+
+241
+00:10:50,650 --> 00:10:53,610
+I've got 3:00, which is
+15, so 4:00 turns into 16.
+
+242
+00:10:53,610 --> 00:11:02,130
+This turns into 17,
+9:00 PM turns into 21,
+
+243
+00:11:02,130 --> 00:11:04,030
+which means this is 22.
+
+244
+00:11:04,030 --> 00:11:07,110
+And that stays at 5:00 because
+we're rotating around 5:000 AM.
+
+245
+00:11:07,110 --> 00:11:09,660
+So now we can
+calculate, based off
+
+246
+00:11:09,660 --> 00:11:11,460
+of the numbers we've
+set our time of day
+
+247
+00:11:11,460 --> 00:11:13,680
+using those nested if
+statements that you've
+
+248
+00:11:13,680 --> 00:11:15,130
+learned a couple of weeks ago.
+
+249
+00:11:15,130 --> 00:11:19,980
+So take a moment and see
+if you can calculate,
+
+250
+00:11:19,980 --> 00:11:21,753
+if it's just do
+morning and afternoon.
+
+251
+00:11:21,753 --> 00:11:23,670
+And then I'm going to
+show you a different way
+
+252
+00:11:23,670 --> 00:11:25,590
+that we can construct
+if statements that
+
+253
+00:11:25,590 --> 00:11:29,340
+is a little more intuitive,
+that is a little more
+
+254
+00:11:29,340 --> 00:11:31,710
+advanced than the MyEducator
+textbook goes, but makes
+
+255
+00:11:31,710 --> 00:11:36,060
+a lot more sense than 18
+different nested if statements.
+
+256
+00:11:36,060 --> 00:11:37,830
+So the function I
+really like to do,
+
+257
+00:11:37,830 --> 00:11:40,000
+if I'm dealing with more
+than three conditions,
+
+258
+00:11:40,000 --> 00:11:42,050
+and in this case, I've
+got four conditions,
+
+259
+00:11:42,050 --> 00:11:47,470
+is I like to rely on ifs.
+
+260
+00:11:47,470 --> 00:11:49,580
+And what ifs does
+is it says, OK,
+
+261
+00:11:49,580 --> 00:11:51,977
+here is a condition
+I'm going to check.
+
+262
+00:11:51,977 --> 00:11:53,560
+If this one's not
+true, then I'm going
+
+263
+00:11:53,560 --> 00:11:55,510
+to move on to this next
+condition and the next condition
+
+264
+00:11:55,510 --> 00:11:57,385
+and the next condition,
+instead of you having
+
+265
+00:11:57,385 --> 00:12:01,400
+to go if, fill in the
+blank, if that's false,
+
+266
+00:12:01,400 --> 00:12:02,562
+another if statement.
+
+267
+00:12:02,562 --> 00:12:04,270
+This does it and builds
+it in and it just
+
+268
+00:12:04,270 --> 00:12:06,270
+makes it a little bit
+more cleaner to deal with.
+
+269
+00:12:06,270 --> 00:12:10,430
+So first things first, let's go
+ahead and look at our morning.
+
+270
+00:12:10,430 --> 00:12:20,480
+So if our hour is less
+than or equal to six then--
+
+271
+00:12:20,480 --> 00:12:23,170
+but if we are just start
+going through it like this,
+
+272
+00:12:23,170 --> 00:12:27,400
+we're not going to be able
+to account for our five
+
+273
+00:12:27,400 --> 00:12:28,460
+being different.
+
+274
+00:12:28,460 --> 00:12:33,970
+So we actually need to use
+our end because we have
+
+275
+00:12:33,970 --> 00:12:35,560
+a start point and an endpoint.
+
+276
+00:12:35,560 --> 00:12:38,510
+And, unfortunately, Excel
+doesn't have a very nice
+
+277
+00:12:38,510 --> 00:12:41,000
+between function, and
+so we have to construct
+
+278
+00:12:41,000 --> 00:12:42,990
+this in a specific way.
+
+279
+00:12:42,990 --> 00:12:50,570
+So if our hour is less than
+or equal to our end time
+
+280
+00:12:50,570 --> 00:12:57,620
+and greater than or
+equal to our start time,
+
+281
+00:12:57,620 --> 00:12:59,630
+let's make sure we've
+got our hour in there,
+
+282
+00:12:59,630 --> 00:13:05,104
+then I'm going to
+call it morning.
+
+283
+00:13:05,104 --> 00:13:09,420
+Now, I could type that all
+up again for afternoon,
+
+284
+00:13:09,420 --> 00:13:11,710
+but I can also
+just copy and paste
+
+285
+00:13:11,710 --> 00:13:13,710
+because we're, basically,
+saying the same thing.
+
+286
+00:13:13,710 --> 00:13:20,330
+I just need to adjust what
+cells I'm referencing.
+
+287
+00:13:20,330 --> 00:13:23,760
+So I changed these
+from 12 to 13,
+
+288
+00:13:23,760 --> 00:13:28,100
+keeping my hour
+reference intact.
+
+289
+00:13:28,100 --> 00:13:33,110
+Now I'm going to do the
+same exact thing again,
+
+290
+00:13:33,110 --> 00:13:35,743
+and I'm going to move
+from 13 down to 14.
+
+291
+00:13:40,390 --> 00:13:41,390
+Perfect.
+
+292
+00:13:41,390 --> 00:13:45,100
+Now with the night, I'm not
+going to be approaching it
+
+293
+00:13:45,100 --> 00:13:50,170
+the same way, because if
+something is happening at 11:30
+
+294
+00:13:50,170 --> 00:13:54,500
+PM, that's going
+to be in our 22.
+
+295
+00:13:54,500 --> 00:13:59,270
+And then if, which is bigger
+than 22 and bigger than 5,
+
+296
+00:13:59,270 --> 00:14:02,650
+but if something is
+happening at 4:00 AM,
+
+297
+00:14:02,650 --> 00:14:07,960
+time is cyclical where
+numbers are linear.
+
+298
+00:14:07,960 --> 00:14:11,840
+So I can't have
+something, like 4:00 AM,
+
+299
+00:14:11,840 --> 00:14:15,740
+which is earlier than 5:00
+and later than 11:00 PM.
+
+300
+00:14:15,740 --> 00:14:17,900
+And that makes sense the
+way we think about time,
+
+301
+00:14:17,900 --> 00:14:19,900
+but it doesn't work when
+we're converting things
+
+302
+00:14:19,900 --> 00:14:20,810
+to numbers like this.
+
+303
+00:14:20,810 --> 00:14:23,750
+So the other thing we need
+to consider is our end.
+
+304
+00:14:23,750 --> 00:14:25,720
+And in this case,
+something can not
+
+305
+00:14:25,720 --> 00:14:30,830
+be simultaneously bigger
+than 22 and less than 5.
+
+306
+00:14:30,830 --> 00:14:34,960
+So in this case, we need
+to use an or statement.
+
+307
+00:14:34,960 --> 00:14:40,380
+So if my hour is greater
+than or equal to 22,
+
+308
+00:14:40,380 --> 00:14:45,840
+or my hour is less
+than or equal to 5,
+
+309
+00:14:45,840 --> 00:14:50,040
+then I'm going to output night.
+
+310
+00:14:50,040 --> 00:14:51,580
+And then I'm going to hit Enter.
+
+311
+00:14:51,580 --> 00:14:56,770
+So now, I'm going
+to drag that down.
+
+312
+00:14:56,770 --> 00:15:01,110
+But what happened when
+I just drag that down?
+
+313
+00:15:01,110 --> 00:15:02,912
+I didn't lock my formula in.
+
+314
+00:15:02,912 --> 00:15:05,620
+And so when I click on it to get
+checked, because I'm like, whoa,
+
+315
+00:15:05,620 --> 00:15:06,850
+these all shouldn't be zero.
+
+316
+00:15:06,850 --> 00:15:09,023
+That makes no sense.
+
+317
+00:15:09,023 --> 00:15:10,440
+That means there's
+something going
+
+318
+00:15:10,440 --> 00:15:14,380
+on with my formula that's not
+doing what I expect it to do.
+
+319
+00:15:14,380 --> 00:15:17,700
+And so you'll see when
+I autofilled it down,
+
+320
+00:15:17,700 --> 00:15:21,340
+the first row, it brought
+my references down a row.
+
+321
+00:15:21,340 --> 00:15:24,930
+Same thing with this second one.
+
+322
+00:15:24,930 --> 00:15:29,260
+And my very end isn't even on
+my reference table anymore.
+
+323
+00:15:29,260 --> 00:15:31,000
+So take a second.
+
+324
+00:15:31,000 --> 00:15:34,050
+Pause the video
+and try to fix it.
+
+325
+00:15:34,050 --> 00:15:36,690
+So I'm going to come
+up to I3, and I am just
+
+326
+00:15:36,690 --> 00:15:39,040
+going to start to
+add my dollar signs.
+
+327
+00:15:39,040 --> 00:15:41,490
+First, I need to evaluate
+if I need any dollar
+
+328
+00:15:41,490 --> 00:15:43,500
+signs in front of my H3.
+
+329
+00:15:43,500 --> 00:15:45,990
+In this case, when
+I come down, I
+
+330
+00:15:45,990 --> 00:15:50,050
+don't want to keep referencing
+the hour on the first entry.
+
+331
+00:15:50,050 --> 00:15:52,690
+I want it to keep moving down
+as I move my formula down,
+
+332
+00:15:52,690 --> 00:15:54,580
+so I don't need
+dollar sign there.
+
+333
+00:15:54,580 --> 00:15:59,790
+I do need dollar sign because
+I wanted to lock in morning,
+
+334
+00:15:59,790 --> 00:16:01,500
+and so I need to
+come up and I just
+
+335
+00:16:01,500 --> 00:16:03,460
+need to start adding
+my dollar signs.
+
+336
+00:16:03,460 --> 00:16:05,460
+And really, I just
+need the dollar sign,
+
+337
+00:16:05,460 --> 00:16:10,440
+in this case, in front of
+the number, because I'm not
+
+338
+00:16:10,440 --> 00:16:13,930
+moving my formula
+across columns,
+
+339
+00:16:13,930 --> 00:16:15,460
+I'm moving it down rows.
+
+340
+00:16:15,460 --> 00:16:18,330
+So I only need the
+dollar sign to show up
+
+341
+00:16:18,330 --> 00:16:21,790
+in front of the thing I don't
+want to move down as I move--
+
+342
+00:16:21,790 --> 00:16:22,930
+my formula moves down.
+
+343
+00:16:22,930 --> 00:16:27,957
+If you wanted to, you could
+completely add dollar signs
+
+344
+00:16:27,957 --> 00:16:29,040
+in front of the D as well.
+
+345
+00:16:29,040 --> 00:16:31,623
+And that's going to make sure
+that you are for sure being safe
+
+346
+00:16:31,623 --> 00:16:39,800
+that B to D rows, 12 through
+15, are not going anywhere.
+
+347
+00:16:39,800 --> 00:16:44,450
+And, again, I need
+to be careful here.
+
+348
+00:16:44,450 --> 00:16:46,225
+And then let's
+see if that works.
+
+349
+00:16:52,850 --> 00:16:54,800
+I'm going to click
+and drag down.
+
+350
+00:16:54,800 --> 00:16:57,660
+So I thought I locked
+everything into place,
+
+351
+00:16:57,660 --> 00:17:00,970
+but it looks like I missed one.
+
+352
+00:17:00,970 --> 00:17:03,470
+And so, again, that's why it's
+really important to come down
+
+353
+00:17:03,470 --> 00:17:04,845
+a couple rows when
+you're working
+
+354
+00:17:04,845 --> 00:17:08,119
+in these really
+complex series in order
+
+355
+00:17:08,119 --> 00:17:12,150
+to make sure that everything's
+sticking where we expect it to.
+
+356
+00:17:12,150 --> 00:17:22,550
+So now I need to come in and
+lock in my B12, B13, B14,
+
+357
+00:17:22,550 --> 00:17:26,240
+and B15.
+
+358
+00:17:26,240 --> 00:17:28,630
+Now let's move that down.
+
+359
+00:17:28,630 --> 00:17:29,270
+Perfect.
+
+360
+00:17:29,270 --> 00:17:31,490
+And that is everything
+I would expect it to be.
+
+361
+00:17:31,490 --> 00:17:33,260
+So I'm checking
+8:00 AM is morning.
+
+362
+00:17:33,260 --> 00:17:33,760
+Yep.
+
+363
+00:17:33,760 --> 00:17:34,550
+That looks right.
+
+364
+00:17:34,550 --> 00:17:35,870
+19 is evening.
+
+365
+00:17:35,870 --> 00:17:36,740
+Also looks great.
+
+366
+00:17:36,740 --> 00:17:37,360
+Perfect.
+
+367
+00:17:37,360 --> 00:17:40,628
+So now I get to just use day of
+the month, which is a completely
+
+368
+00:17:40,628 --> 00:17:41,420
+different function.
+
+369
+00:17:41,420 --> 00:17:44,020
+So in this case, I'm
+going to go with month
+
+370
+00:17:44,020 --> 00:17:47,740
+and then put in my date
+time and hit Enter.
+
+371
+00:17:47,740 --> 00:17:50,180
+And so now I know which
+month things are happening.
+
+372
+00:17:50,180 --> 00:17:52,055
+And so if I wanted to
+build out a pivot table
+
+373
+00:17:52,055 --> 00:17:53,673
+to understand my
+trends over time,
+
+374
+00:17:53,673 --> 00:17:55,840
+now I can do that really
+easy because I don't really
+
+375
+00:17:55,840 --> 00:17:58,190
+care so much about the
+day in this specific case.
+
+376
+00:17:58,190 --> 00:18:01,150
+I care more about where
+it falls in the month.
+
+377
+00:18:01,150 --> 00:18:06,040
+And maybe where it falls in the
+year as far as my month goes.
+
+378
+00:18:06,040 --> 00:18:09,790
+So now I can do the same
+thing with day of week.
+
+379
+00:18:09,790 --> 00:18:13,340
+So when I do week, I have
+two different options.
+
+380
+00:18:13,340 --> 00:18:16,160
+I have weekday or weeknum.
+
+381
+00:18:16,160 --> 00:18:19,940
+In this case, I want to know
+what day of the week it is.
+
+382
+00:18:19,940 --> 00:18:23,030
+I want to know if this is a
+Monday, a Tuesday, a Saturday,
+
+383
+00:18:23,030 --> 00:18:25,300
+and it's going to
+return a number, which
+
+384
+00:18:25,300 --> 00:18:27,258
+works for me because that
+number is going to be
+
+385
+00:18:27,258 --> 00:18:29,120
+consistent across everything.
+
+386
+00:18:29,120 --> 00:18:34,310
+So we select my
+datetime, weeknum.
+
+387
+00:18:39,730 --> 00:18:43,670
+That gives me my week in
+the year, I need weekday.
+
+388
+00:18:43,670 --> 00:18:44,895
+Oh, my goodness, weekday.
+
+389
+00:18:47,525 --> 00:18:48,025
+Perfect.
+
+390
+00:18:51,080 --> 00:18:53,620
+And if I wanted to, I
+could use an if statement
+
+391
+00:18:53,620 --> 00:18:54,410
+to convert these.
+
+392
+00:18:54,410 --> 00:18:57,070
+But I think that works
+just fine for me.
+
+393
+00:18:57,070 --> 00:19:01,300
+So now what I'm going to do is
+I'm going to look up a calendar,
+
+394
+00:19:01,300 --> 00:19:03,880
+and I'm going to
+go back to July.
+
+395
+00:19:03,880 --> 00:19:06,920
+And July 26 was a Saturday.
+
+396
+00:19:06,920 --> 00:19:11,150
+So in this case, I start
+counting one on Sunday.
+
+397
+00:19:11,150 --> 00:19:14,590
+So I've got one, two, three,
+four, five, six, seven.
+
+398
+00:19:14,590 --> 00:19:15,650
+Perfect.
+
+399
+00:19:15,650 --> 00:19:20,320
+And then I need to know
+that if it's a weekday.
+
+400
+00:19:20,320 --> 00:19:22,130
+So let's do another
+if statement.
+
+401
+00:19:22,130 --> 00:19:24,340
+I'm just going to use
+one if, in this case,
+
+402
+00:19:24,340 --> 00:19:28,090
+because I either need to know
+if it's a weekend or a week day.
+
+403
+00:19:28,090 --> 00:19:30,280
+So that's only one if statement.
+
+404
+00:19:30,280 --> 00:19:34,680
+So if, or do or.
+
+405
+00:19:34,680 --> 00:19:37,650
+So if this number equals
+seven, which we just determined
+
+406
+00:19:37,650 --> 00:19:42,570
+was a Saturday, or this number
+equals one, which we just
+
+407
+00:19:42,570 --> 00:19:44,580
+determined was a Sunday.
+
+408
+00:19:44,580 --> 00:19:47,070
+Then say, and I
+use my quotes here
+
+409
+00:19:47,070 --> 00:19:48,960
+because this isn't a
+true or false where
+
+410
+00:19:48,960 --> 00:19:53,050
+I don't need quotes or a number,
+I'm trying to return some text.
+
+411
+00:19:53,050 --> 00:19:54,930
+So if it's either
+one, which is Sunday,
+
+412
+00:19:54,930 --> 00:19:56,890
+or seven, which is
+Saturday, call it a weekend.
+
+413
+00:19:56,890 --> 00:19:59,225
+If it's not one of those,
+then it's just a weekday.
+
+414
+00:20:02,160 --> 00:20:05,070
+And then I drag that down.
+
+415
+00:20:05,070 --> 00:20:06,850
+Now we can do some math.
+
+416
+00:20:06,850 --> 00:20:10,500
+So how long ago from today
+did this event occur?
+
+417
+00:20:10,500 --> 00:20:14,790
+What we need to do is
+come in and say equals.
+
+418
+00:20:14,790 --> 00:20:19,800
+And we got to figure out,
+first of all, what our--
+
+419
+00:20:19,800 --> 00:20:20,300
+oops.
+
+420
+00:20:27,650 --> 00:20:28,220
+Oops.
+
+421
+00:20:28,220 --> 00:20:28,950
+My goodness.
+
+422
+00:20:28,950 --> 00:20:29,510
+OK.
+
+423
+00:20:29,510 --> 00:20:32,060
+I get it.
+
+424
+00:20:32,060 --> 00:20:34,353
+So I need to come down here
+and fix this really quick.
+
+425
+00:20:38,240 --> 00:20:42,210
+OK day of month, day
+of week, weekend.
+
+426
+00:20:42,210 --> 00:20:47,150
+Perfect, and then how long
+ago, needs to be right here.
+
+427
+00:20:47,150 --> 00:20:51,940
+So-- and then let's wrap that.
+
+428
+00:21:00,590 --> 00:21:02,930
+So how long ago.
+
+429
+00:21:02,930 --> 00:21:06,660
+We need to figure
+out what today is.
+
+430
+00:21:06,660 --> 00:21:11,850
+And I could come in and I
+could say, OK it is 9, 10,
+
+431
+00:21:11,850 --> 00:21:17,790
+2025 at 11:03 AM.
+
+432
+00:21:17,790 --> 00:21:19,070
+I could do that.
+
+433
+00:21:19,070 --> 00:21:21,780
+Then I would have to
+come in every single day,
+
+434
+00:21:21,780 --> 00:21:25,355
+or every time I want to write my
+report and update that manually.
+
+435
+00:21:25,355 --> 00:21:27,480
+And that's not going to be
+a good time for anybody.
+
+436
+00:21:27,480 --> 00:21:29,540
+We're going to be likely to
+make mistakes because then we're
+
+437
+00:21:29,540 --> 00:21:30,930
+entering in things manually.
+
+438
+00:21:30,930 --> 00:21:32,870
+And so step one of
+this, to determine
+
+439
+00:21:32,870 --> 00:21:36,950
+how long ago an event occurred,
+is to use the Today function.
+
+440
+00:21:36,950 --> 00:21:39,270
+And the Today function,
+we still use parentheses,
+
+441
+00:21:39,270 --> 00:21:41,690
+but we don't put
+any parentheses in.
+
+442
+00:21:41,690 --> 00:21:45,950
+So now you can
+see what today is.
+
+443
+00:21:45,950 --> 00:21:50,180
+Then I could also see, if I
+wanted to, what the time is.
+
+444
+00:21:50,180 --> 00:21:53,030
+And that gives me
+the date and time.
+
+445
+00:21:53,030 --> 00:21:56,507
+So depending on how granular you
+want to work, you can choose.
+
+446
+00:21:56,507 --> 00:21:58,340
+In this case where we
+do have date and time,
+
+447
+00:21:58,340 --> 00:22:00,740
+I'm going to use now.
+
+448
+00:22:00,740 --> 00:22:03,800
+And then I need to know
+what the difference is
+
+449
+00:22:03,800 --> 00:22:05,130
+between now and then.
+
+450
+00:22:05,130 --> 00:22:09,630
+So what I need to do then is
+subtract my original date time.
+
+451
+00:22:09,630 --> 00:22:11,793
+And this isn't a
+super useful number.
+
+452
+00:22:11,793 --> 00:22:12,960
+This doesn't make any sense.
+
+453
+00:22:12,960 --> 00:22:14,510
+So I need to come
+up to my custom
+
+454
+00:22:14,510 --> 00:22:16,140
+and change that to a number.
+
+455
+00:22:16,140 --> 00:22:20,920
+So now I know this
+is about 46 days ago.
+
+456
+00:22:20,920 --> 00:22:23,200
+The older we get, the
+bigger that number
+
+457
+00:22:23,200 --> 00:22:26,360
+gets, because it was happened
+a lot further back in time.
+
+458
+00:22:26,360 --> 00:22:29,690
+So now I have that 46,
+that's the date part.
+
+459
+00:22:29,690 --> 00:22:30,860
+So that's how many days ago.
+
+460
+00:22:30,860 --> 00:22:34,300
+And then the 45 is what is
+the time difference included
+
+461
+00:22:34,300 --> 00:22:34,940
+in that.
+
+462
+00:22:34,940 --> 00:22:40,000
+If I wanted to just
+use today, then I
+
+463
+00:22:40,000 --> 00:22:43,310
+can also do that and,
+again, switch it to number.
+
+464
+00:22:43,310 --> 00:22:46,090
+And it's always going to be
+0.99 because I don't have
+
+465
+00:22:46,090 --> 00:22:48,100
+the time included in there.
+
+466
+00:22:48,100 --> 00:22:51,323
+And that is how we
+are going to be using
+
+467
+00:22:51,323 --> 00:22:52,490
+some of those date and time.
+
+468
+00:22:52,490 --> 00:22:54,910
+There are other
+functions and formulas,
+
+469
+00:22:54,910 --> 00:22:56,660
+which the textbook
+will walk you through.
+
+470
+00:22:56,660 --> 00:22:58,210
+This is just that high level.
+
+471
+00:22:58,210 --> 00:23:00,460
+Let's blend what we've learned
+in the past with our if
+
+472
+00:23:00,460 --> 00:23:01,310
+statements.
+
+473
+00:23:01,310 --> 00:23:03,680
+How do we think about
+this in context?
+
+474
+00:23:03,680 --> 00:23:05,480
+What do businesses do with this?
+
+475
+00:23:05,480 --> 00:23:08,650
+And then how can we apply
+our different formulas
+
+476
+00:23:08,650 --> 00:23:11,410
+to understand our data better?
+
+477
+00:23:11,410 --> 00:23:14,940
+Thanks, and we'll see you
+as we talk about time.

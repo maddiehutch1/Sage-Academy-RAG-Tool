@@ -1,0 +1,2025 @@
+1
+00:00:01,680 --> 00:00:04,343
+INSTRUCTOR: Hey all,
+welcome to week 2.
+
+2
+00:00:04,343 --> 00:00:05,760
+This week, we're
+going to continue
+
+3
+00:00:05,760 --> 00:00:08,039
+to build on what we learned
+last week, especially
+
+4
+00:00:08,039 --> 00:00:10,540
+with those references and
+building out our own formulas.
+
+5
+00:00:10,540 --> 00:00:13,240
+But this week, we're really
+diving into this world that's
+
+6
+00:00:13,240 --> 00:00:16,400
+built on the idea of
+true versus false.
+
+7
+00:00:16,400 --> 00:00:19,155
+And if you think of the
+idea of true and false,
+
+8
+00:00:19,155 --> 00:00:21,280
+sometimes we'll think of
+it maybe a little bit more
+
+9
+00:00:21,280 --> 00:00:22,627
+as right versus wrong.
+
+10
+00:00:22,627 --> 00:00:24,960
+But in this case, really,
+we're just essentially saying,
+
+11
+00:00:24,960 --> 00:00:29,360
+is this equal to or meets
+the criteria of something,
+
+12
+00:00:29,360 --> 00:00:30,280
+or if it does not?
+
+13
+00:00:30,280 --> 00:00:33,400
+Because what we can then do is
+if we understand if something
+
+14
+00:00:33,400 --> 00:00:35,600
+meets our criteria,
+then we can go ahead
+
+15
+00:00:35,600 --> 00:00:39,060
+and start to do these different
+things with that information.
+
+16
+00:00:39,060 --> 00:00:41,048
+We can start to count
+specific things.
+
+17
+00:00:41,048 --> 00:00:42,840
+We can start to add
+certain things, instead
+
+18
+00:00:42,840 --> 00:00:44,757
+of going through and
+trying to filter them out
+
+19
+00:00:44,757 --> 00:00:47,480
+individually and then sum them.
+
+20
+00:00:47,480 --> 00:00:50,320
+The value of a Boolean, which
+is that true-or-false idea,
+
+21
+00:00:50,320 --> 00:00:54,640
+really lets us dive
+in and establish
+
+22
+00:00:54,640 --> 00:00:57,360
+that kind of relationship.
+
+23
+00:00:57,360 --> 00:00:59,520
+This idea also comes
+in into SQL when
+
+24
+00:00:59,520 --> 00:01:02,220
+you're doing WHERE statements,
+because a WHERE statement
+
+25
+00:01:02,220 --> 00:01:04,537
+has that condition that
+you're pulling in the data.
+
+26
+00:01:04,537 --> 00:01:06,620
+And usually, you're doing
+something with the data.
+
+27
+00:01:06,620 --> 00:01:10,115
+And so this idea transcends
+both of those topics.
+
+28
+00:01:10,115 --> 00:01:11,240
+So what are we doing today?
+
+29
+00:01:11,240 --> 00:01:12,360
+We're going to talk
+about what a Boolean is.
+
+30
+00:01:12,360 --> 00:01:13,060
+We've already talked about it.
+
+31
+00:01:13,060 --> 00:01:14,080
+We're going to
+talk about it more.
+
+32
+00:01:14,080 --> 00:01:15,747
+We're going to talk
+about if statements.
+
+33
+00:01:15,747 --> 00:01:20,260
+If statements are honestly what
+I personally do in Excel 85%
+
+34
+00:01:20,260 --> 00:01:21,380
+of the time.
+
+35
+00:01:21,380 --> 00:01:23,633
+15% of the other part
+of it is lookups.
+
+36
+00:01:23,633 --> 00:01:25,300
+Lookups can start
+getting you in trouble
+
+37
+00:01:25,300 --> 00:01:28,523
+if you start chaining them
+together more than four or five.
+
+38
+00:01:28,523 --> 00:01:30,940
+You can do as many as you want,
+but the more things you're
+
+39
+00:01:30,940 --> 00:01:33,660
+trying to convince it to look
+up, and then the more things
+
+40
+00:01:33,660 --> 00:01:35,743
+you're embedding in if
+statements, the more likely
+
+41
+00:01:35,743 --> 00:01:37,040
+you are to get Excel to crash.
+
+42
+00:01:37,040 --> 00:01:39,020
+So if you start to
+find yourself falling
+
+43
+00:01:39,020 --> 00:01:43,540
+into the multiple chains of
+ifs or a bunch of lookups,
+
+44
+00:01:43,540 --> 00:01:45,980
+at that point, it may be
+better to transfer your data
+
+45
+00:01:45,980 --> 00:01:48,780
+into a tool like SQL
+or Power BI that can
+
+46
+00:01:48,780 --> 00:01:50,073
+handle that a little better.
+
+47
+00:01:50,073 --> 00:01:51,240
+That's a little more robust.
+
+48
+00:01:51,240 --> 00:01:54,460
+But for the most
+of the time, Excel
+
+49
+00:01:54,460 --> 00:01:56,460
+is going to be absolutely
+great for your needs.
+
+50
+00:01:56,460 --> 00:01:59,150
+And we're going to do
+COUNTIFs and SUMIFs.
+
+51
+00:01:59,150 --> 00:02:01,338
+That's going to rely on if
+something is true or not.
+
+52
+00:02:01,338 --> 00:02:03,630
+Then we're going to either
+count it or add it together.
+
+53
+00:02:03,630 --> 00:02:06,950
+And then lookups, which is
+similar to a multi-table join
+
+54
+00:02:06,950 --> 00:02:09,990
+in SQL, which you'll get into
+in probably two weeks from now.
+
+55
+00:02:09,990 --> 00:02:11,950
+But you'll get introduced
+to this idea of data
+
+56
+00:02:11,950 --> 00:02:13,750
+can exist in multiple
+places, but then we
+
+57
+00:02:13,750 --> 00:02:16,430
+want to pull it all together
+in order to evaluate it.
+
+58
+00:02:16,430 --> 00:02:19,370
+In order to understand these
+goals a little bit more,
+
+59
+00:02:19,370 --> 00:02:21,570
+we're going to answer
+these 4 and 1/2 questions.
+
+60
+00:02:21,570 --> 00:02:23,987
+The first one is, how many
+shares did all of our campaigns
+
+61
+00:02:23,987 --> 00:02:24,750
+receive?
+
+62
+00:02:24,750 --> 00:02:27,910
+Using the ad_events table, how
+many likes did each time of day
+
+63
+00:02:27,910 --> 00:02:28,780
+receive?
+
+64
+00:02:28,780 --> 00:02:31,030
+And then we're going to ask
+about how many impressions
+
+65
+00:02:31,030 --> 00:02:32,030
+happened on the weekend.
+
+66
+00:02:32,030 --> 00:02:34,830
+We're going to add
+how much budget we
+
+67
+00:02:34,830 --> 00:02:36,015
+spent on short campaigns.
+
+68
+00:02:36,015 --> 00:02:37,390
+And then we're
+also going to talk
+
+69
+00:02:37,390 --> 00:02:40,098
+about how many impressions users
+made that were in a specific age
+
+70
+00:02:40,098 --> 00:02:40,630
+range.
+
+71
+00:02:40,630 --> 00:02:43,730
+So again, this is the same data
+we were working with last week.
+
+72
+00:02:43,730 --> 00:02:45,870
+We're going to continue
+to use this data as we
+
+73
+00:02:45,870 --> 00:02:47,190
+progress through the semester.
+
+74
+00:02:47,190 --> 00:02:49,810
+And first of all, we're just
+going to go to ad events.
+
+75
+00:02:49,810 --> 00:02:53,230
+We're mostly going to be working
+in this worksheet this week.
+
+76
+00:02:53,230 --> 00:02:55,730
+I've pasted my questions here
+so that they're front of mind.
+
+77
+00:02:55,730 --> 00:02:57,770
+And we can really
+start to see them.
+
+78
+00:02:57,770 --> 00:03:01,742
+But let's first look
+at, how many shares did
+
+79
+00:03:01,742 --> 00:03:02,950
+all of our campaigns receive?
+
+80
+00:03:02,950 --> 00:03:04,930
+So I'm not doing any filtering.
+
+81
+00:03:04,930 --> 00:03:08,210
+I just care about if
+something was shared
+
+82
+00:03:08,210 --> 00:03:10,690
+or not, which is
+in this event type.
+
+83
+00:03:10,690 --> 00:03:13,930
+And so first thing I
+need to do to process
+
+84
+00:03:13,930 --> 00:03:19,670
+that is see if a row of
+data is a share or not.
+
+85
+00:03:19,670 --> 00:03:21,007
+What kind of event happened?
+
+86
+00:03:21,007 --> 00:03:22,590
+So that's where the
+Boolean's come in.
+
+87
+00:03:22,590 --> 00:03:25,050
+We're going to see if this
+is true or if this is false.
+
+88
+00:03:25,050 --> 00:03:26,630
+So we can do this a couple ways.
+
+89
+00:03:26,630 --> 00:03:29,690
+The first way is, again,
+we're hitting this equal sign.
+
+90
+00:03:29,690 --> 00:03:31,110
+I'm referencing G2.
+
+91
+00:03:31,110 --> 00:03:32,490
+That's where my first event is.
+
+92
+00:03:32,490 --> 00:03:33,970
+I'm going to add another equal.
+
+93
+00:03:33,970 --> 00:03:37,770
+And you may be inclined
+to just type "share."
+
+94
+00:03:37,770 --> 00:03:40,010
+And if I do that, I'm
+going to get an error,
+
+95
+00:03:40,010 --> 00:03:45,090
+specifically because we need to
+have-- just like we do in SQL--
+
+96
+00:03:45,090 --> 00:03:48,010
+we need to have our
+quotations around it in order
+
+97
+00:03:48,010 --> 00:03:50,778
+for it to be read in as text,
+because then it's like, OK,
+
+98
+00:03:50,778 --> 00:03:52,570
+I'm evaluating at this
+group of characters.
+
+99
+00:03:52,570 --> 00:03:54,530
+And this specific order is
+equal to this other group
+
+100
+00:03:54,530 --> 00:03:55,980
+of characters in
+a specific order.
+
+101
+00:03:55,980 --> 00:03:58,360
+And like, in this case,
+is not equal to share.
+
+102
+00:03:58,360 --> 00:03:58,860
+OK.
+
+103
+00:03:58,860 --> 00:03:59,960
+We're going to drag that down.
+
+104
+00:03:59,960 --> 00:04:02,585
+And you'll notice I don't have
+"share" capitalized in my equal.
+
+105
+00:04:02,585 --> 00:04:04,680
+But I do have capitalized
+in event type.
+
+106
+00:04:04,680 --> 00:04:07,358
+In this particular case, it
+isn't really picky about it.
+
+107
+00:04:07,358 --> 00:04:09,900
+It's like, OK, yep, an S is an
+S. I don't really care if it's
+
+108
+00:04:09,900 --> 00:04:11,377
+capital S or lowercase s.
+
+109
+00:04:11,377 --> 00:04:12,960
+And I'm going to
+just click that down.
+
+110
+00:04:12,960 --> 00:04:16,240
+And this table has
+400,000 rows of data.
+
+111
+00:04:16,240 --> 00:04:18,446
+So for you to go through
+by hand and be like,
+
+112
+00:04:18,446 --> 00:04:19,279
+OK, this is a share.
+
+113
+00:04:19,279 --> 00:04:20,160
+This isn't a share.
+
+114
+00:04:20,160 --> 00:04:22,380
+This is going to be a
+little time-consuming.
+
+115
+00:04:22,380 --> 00:04:24,380
+One of the other ways
+we can figure this out,
+
+116
+00:04:24,380 --> 00:04:27,780
+is one of the ways we learned
+last week where we came up,
+
+117
+00:04:27,780 --> 00:04:29,725
+and we added our filter.
+
+118
+00:04:29,725 --> 00:04:31,100
+And so in this
+particular case, I
+
+119
+00:04:31,100 --> 00:04:35,060
+could just come up and then
+scroll all the way down and see,
+
+120
+00:04:35,060 --> 00:04:36,880
+right here, I have
+a count that says,
+
+121
+00:04:36,880 --> 00:04:38,300
+OK, I'm only looking
+at the shares
+
+122
+00:04:38,300 --> 00:04:39,592
+because that's what I filtered.
+
+123
+00:04:39,592 --> 00:04:42,950
+I have 1,957.
+
+124
+00:04:42,950 --> 00:04:46,020
+So that's another way
+we can do it to identify
+
+125
+00:04:46,020 --> 00:04:48,680
+how many shares we have.
+
+126
+00:04:48,680 --> 00:04:52,180
+But this Boolean is going to let
+us take it another step further
+
+127
+00:04:52,180 --> 00:04:54,180
+because we'll be
+able to start doing
+
+128
+00:04:54,180 --> 00:04:58,240
+some additional
+calculations on it.
+
+129
+00:04:58,240 --> 00:05:00,880
+So now that I've registered
+if these are true or false,
+
+130
+00:05:00,880 --> 00:05:03,743
+that's where this idea
+of a COUNTIF comes in.
+
+131
+00:05:03,743 --> 00:05:05,160
+So I'm going to
+type in my equals,
+
+132
+00:05:05,160 --> 00:05:07,500
+and I'm going to say COUNTIF.
+
+133
+00:05:07,500 --> 00:05:11,120
+Because what happens is maybe
+I want to predominantly display
+
+134
+00:05:11,120 --> 00:05:12,580
+how many shares we have.
+
+135
+00:05:12,580 --> 00:05:15,960
+Or I might want
+to use that number
+
+136
+00:05:15,960 --> 00:05:18,053
+and feed it into another
+formula down the road.
+
+137
+00:05:18,053 --> 00:05:19,720
+So I'm not going to
+be able to rely just
+
+138
+00:05:19,720 --> 00:05:21,180
+on that little
+number at the bottom.
+
+139
+00:05:21,180 --> 00:05:23,380
+And I want to be able to
+continue to update my data.
+
+140
+00:05:23,380 --> 00:05:25,373
+So as new campaigns
+come in, I don't want
+
+141
+00:05:25,373 --> 00:05:26,540
+to have to recalculate that.
+
+142
+00:05:26,540 --> 00:05:29,020
+So if I have this COUNTIF,
+as I add more data,
+
+143
+00:05:29,020 --> 00:05:31,280
+it's going to automatically
+update my numbers for me.
+
+144
+00:05:31,280 --> 00:05:35,240
+And so how we set up COUNTIF is
+we say the first thing is range.
+
+145
+00:05:35,240 --> 00:05:37,440
+And we can come up to
+this fx, and it'll give us
+
+146
+00:05:37,440 --> 00:05:39,408
+a little bit more information.
+
+147
+00:05:39,408 --> 00:05:41,200
+So this range, it says
+it counts the number
+
+148
+00:05:41,200 --> 00:05:43,367
+of cells within a range
+that meet a given condition.
+
+149
+00:05:43,367 --> 00:05:46,440
+So that given condition right
+is where we're saying it's true.
+
+150
+00:05:46,440 --> 00:05:49,950
+So my range is
+going to be G. OK.
+
+151
+00:06:13,010 --> 00:06:16,023
+So my range is going
+to be that G column.
+
+152
+00:06:16,023 --> 00:06:17,690
+And then my criteria
+is going to be just
+
+153
+00:06:17,690 --> 00:06:19,490
+what we did in this
+column H. But instead
+
+154
+00:06:19,490 --> 00:06:22,770
+of saying equal
+share, if I do that,
+
+155
+00:06:22,770 --> 00:06:26,390
+it should give me
+that it's invalid.
+
+156
+00:06:26,390 --> 00:06:29,673
+If I'm just doing this, , I
+just need to put in share.
+
+157
+00:06:29,673 --> 00:06:31,090
+And you'll see
+automatically, when
+
+158
+00:06:31,090 --> 00:06:33,738
+I'm working in the
+formula bar, it tells me
+
+159
+00:06:33,738 --> 00:06:35,030
+what the answer is going to be.
+
+160
+00:06:35,030 --> 00:06:36,738
+And we know since we
+already filtered it,
+
+161
+00:06:36,738 --> 00:06:39,050
+that that's the number I'm
+looking for in this case.
+
+162
+00:06:39,050 --> 00:06:43,230
+So now I know how many
+shares our campaign received,
+
+163
+00:06:43,230 --> 00:06:46,133
+all of our campaigns received.
+
+164
+00:06:46,133 --> 00:06:48,050
+A lot of times, though,
+a lot of our questions
+
+165
+00:06:48,050 --> 00:06:52,670
+are going to be asking us to
+evaluate more than one criteria.
+
+166
+00:06:52,670 --> 00:06:56,250
+In these cases, very
+similarly to what we just did,
+
+167
+00:06:56,250 --> 00:06:58,790
+we're going to do something
+called a COUNTIFs, with an "S"
+
+168
+00:06:58,790 --> 00:07:01,470
+at the end, because it's going
+to evaluate multiple ifs.
+
+169
+00:07:01,470 --> 00:07:04,550
+So if I want to calculate how
+many likes each time of day
+
+170
+00:07:04,550 --> 00:07:09,070
+received, I need to understand
+this idea of AND versus OR.
+
+171
+00:07:09,070 --> 00:07:13,680
+So let's first consider if
+each row is let's say morning.
+
+172
+00:07:16,990 --> 00:07:20,910
+And then the other one
+we need to see is like,
+
+173
+00:07:20,910 --> 00:07:24,450
+and I want to evaluate if it's
+a like provided in the morning.
+
+174
+00:07:24,450 --> 00:07:26,480
+So conceptually, let's
+just think about this.
+
+175
+00:07:26,480 --> 00:07:28,230
+For this first row of
+data, if you're just
+
+176
+00:07:28,230 --> 00:07:30,070
+looking at this one
+of data, would you
+
+177
+00:07:30,070 --> 00:07:32,696
+say that it is both
+morning and like?
+
+178
+00:07:32,696 --> 00:07:33,575
+You would not.
+
+179
+00:07:33,575 --> 00:07:34,950
+Because even though
+it is a like,
+
+180
+00:07:34,950 --> 00:07:36,550
+it didn't happen in the
+morning, it actually
+
+181
+00:07:36,550 --> 00:07:38,050
+happened in a
+different time of day.
+
+182
+00:07:38,050 --> 00:07:41,540
+So we can start to build out
+these multiple conditions.
+
+183
+00:07:41,540 --> 00:07:43,790
+So let's first-- I'm going
+to have you pause the video
+
+184
+00:07:43,790 --> 00:07:45,970
+and evaluate if
+each row-- again,
+
+185
+00:07:45,970 --> 00:07:47,630
+there's 400,000 rows of data--
+
+186
+00:07:47,630 --> 00:07:50,960
+is a morning time of day or not.
+
+187
+00:07:50,960 --> 00:07:59,080
+So how we would do that is
+equal F2 is equal to "Morning."
+
+188
+00:07:59,080 --> 00:08:00,420
+And we'll double-click that.
+
+189
+00:08:00,420 --> 00:08:01,920
+That's my favorite way to do it.
+
+190
+00:08:01,920 --> 00:08:06,500
+Double-clicking autofills
+our formula down.
+
+191
+00:08:06,500 --> 00:08:08,580
+But we do see that F3
+is equal to warning.
+
+192
+00:08:08,580 --> 00:08:10,380
+And that gives us a true.
+
+193
+00:08:10,380 --> 00:08:12,600
+Now, do the same
+thing for likes.
+
+194
+00:08:12,600 --> 00:08:15,200
+What we'll do is we'll
+say our equal sign, like,
+
+195
+00:08:15,200 --> 00:08:17,360
+is equal to "Like."
+
+196
+00:08:17,360 --> 00:08:18,840
+And what do you
+think this result
+
+197
+00:08:18,840 --> 00:08:21,120
+is going to be-- true or false?
+
+198
+00:08:21,120 --> 00:08:24,180
+Exactly, it's going to be true
+because it is, in fact, a like.
+
+199
+00:08:24,180 --> 00:08:26,037
+And we don't see another
+like for a while.
+
+200
+00:08:26,037 --> 00:08:28,120
+We have a lot more
+impressions, which makes sense.
+
+201
+00:08:28,120 --> 00:08:30,420
+An impression is just
+people scrolling by.
+
+202
+00:08:30,420 --> 00:08:31,700
+They stop, they saw it.
+
+203
+00:08:31,700 --> 00:08:33,679
+But that was the limit
+of their interaction.
+
+204
+00:08:33,679 --> 00:08:35,620
+Going and actually
+actively liking something,
+
+205
+00:08:35,620 --> 00:08:37,600
+sharing it, even going
+through and purchasing
+
+206
+00:08:37,600 --> 00:08:43,720
+are a lot more concrete actions
+than just how many times
+
+207
+00:08:43,720 --> 00:08:45,120
+it was viewed.
+
+208
+00:08:45,120 --> 00:08:47,160
+So now I need to
+evaluate if it's
+
+209
+00:08:47,160 --> 00:08:50,100
+something that happened in both
+the morning and was a like.
+
+210
+00:08:50,100 --> 00:08:54,680
+So what I'm going to do here
+is I'm going to say AND.
+
+211
+00:08:54,680 --> 00:08:56,780
+And if you're doing
+this in English,
+
+212
+00:08:56,780 --> 00:08:59,400
+you're going to say
+it's morning and a like.
+
+213
+00:08:59,400 --> 00:09:03,832
+But in Excel syntax, AND
+or ORs go on the outside.
+
+214
+00:09:03,832 --> 00:09:05,040
+Then we put that parentheses.
+
+215
+00:09:05,040 --> 00:09:07,760
+And again, you can always come
+up and click the fx button.
+
+216
+00:09:07,760 --> 00:09:09,230
+And you can fill it in here.
+
+217
+00:09:09,230 --> 00:09:16,540
+So our first logic
+is if H2 equals TRUE.
+
+218
+00:09:16,540 --> 00:09:22,490
+And our second is
+if I2 equals TRUE.
+
+219
+00:09:37,596 --> 00:09:40,620
+And then we'll
+autofill that down.
+
+220
+00:09:40,620 --> 00:09:42,358
+So we can do the same thing.
+
+221
+00:09:42,358 --> 00:09:43,900
+So I'm going to come
+up here, and I'm
+
+222
+00:09:43,900 --> 00:09:45,200
+going to come to my filter.
+
+223
+00:09:45,200 --> 00:09:47,910
+And I'm going to check to see
+how many times of day events
+
+224
+00:09:47,910 --> 00:09:48,550
+I've got.
+
+225
+00:09:48,550 --> 00:09:49,370
+In this case, I've got four.
+
+226
+00:09:49,370 --> 00:09:51,290
+It looks like I've got morning,
+afternoon, evening, and night.
+
+227
+00:09:51,290 --> 00:09:53,207
+So I'm just going to
+create a table over here.
+
+228
+00:09:55,990 --> 00:09:57,473
+And night.
+
+229
+00:09:57,473 --> 00:09:59,390
+And I'm going to start
+this off very similarly
+
+230
+00:09:59,390 --> 00:10:01,000
+to what my other one was.
+
+231
+00:10:01,000 --> 00:10:01,990
+So COUNTIF.
+
+232
+00:10:01,990 --> 00:10:04,570
+But I have to evaluate
+two conditions.
+
+233
+00:10:04,570 --> 00:10:07,150
+So in this particular case,
+I'm doing my COUNTIFs.
+
+234
+00:10:07,150 --> 00:10:08,450
+And it looks very similar.
+
+235
+00:10:08,450 --> 00:10:12,190
+But I need to first say, OK,
+let's look at time of day,
+
+236
+00:10:12,190 --> 00:10:17,750
+and then if that equals Morning.
+
+237
+00:10:17,750 --> 00:10:24,830
+And then my criteria range
+2, if that equals Like.
+
+238
+00:10:24,830 --> 00:10:29,590
+And so in the morning, I have
+2,981 likes that happened
+
+239
+00:10:29,590 --> 00:10:30,870
+in the morning.
+
+240
+00:10:30,870 --> 00:10:34,570
+So you may be tempted to start
+dragging this formula over.
+
+241
+00:10:34,570 --> 00:10:37,430
+But see if you do
+that, see if you
+
+242
+00:10:37,430 --> 00:10:40,790
+can figure out what the problem
+was and if you can fix it.
+
+243
+00:10:40,790 --> 00:10:42,368
+So the problem is
+our data continued
+
+244
+00:10:42,368 --> 00:10:44,910
+to shift over because we didn't
+use any of those dollar signs
+
+245
+00:10:44,910 --> 00:10:46,570
+to lock in where they're going.
+
+246
+00:10:46,570 --> 00:10:49,385
+So I'm going to find
+my blue, and I'm
+
+247
+00:10:49,385 --> 00:10:50,510
+going to drag it back over.
+
+248
+00:10:50,510 --> 00:10:51,135
+Find my purple.
+
+249
+00:10:51,135 --> 00:10:52,130
+Drag it back over.
+
+250
+00:10:52,130 --> 00:10:59,330
+And since I want to just be able
+to drag my formula over instead
+
+251
+00:10:59,330 --> 00:11:00,830
+of retyping it over
+and over again,
+
+252
+00:11:00,830 --> 00:11:02,770
+if I put my dollar
+signs there, I
+
+253
+00:11:02,770 --> 00:11:09,370
+should be able to
+now drag my formula.
+
+254
+00:11:09,370 --> 00:11:12,350
+And if I click on Night now,
+nothing looks like it shifted.
+
+255
+00:11:12,350 --> 00:11:14,010
+So I'm good to go.
+
+256
+00:11:14,010 --> 00:11:17,610
+And now what I can see is
+that, overall, my likes
+
+257
+00:11:17,610 --> 00:11:21,490
+fall within like maybe 100.
+
+258
+00:11:21,490 --> 00:11:24,730
+My range isn't that
+big, but I can come back
+
+259
+00:11:24,730 --> 00:11:27,450
+and say, yeah, actually,
+night is the most popular time
+
+260
+00:11:27,450 --> 00:11:30,350
+for people to be
+liking our post.
+
+261
+00:11:30,350 --> 00:11:30,850
+Perfect.
+
+262
+00:11:35,050 --> 00:11:38,630
+Now, how many impressions
+happened on the weekend.
+
+263
+00:11:38,630 --> 00:11:40,930
+So how many views
+are we looking at?
+
+264
+00:11:40,930 --> 00:11:44,930
+So I want to create a new
+column called Weekend.
+
+265
+00:11:44,930 --> 00:11:47,080
+And how would you
+expect to do that?
+
+266
+00:11:47,080 --> 00:11:49,260
+So Weekend,
+Saturday, and Sunday.
+
+267
+00:11:49,260 --> 00:11:52,300
+I have day of the
+week data over here.
+
+268
+00:11:52,300 --> 00:11:53,620
+So if I say--
+
+269
+00:11:53,620 --> 00:11:57,620
+again, this goes back
+to that AND or OR, which
+
+270
+00:11:57,620 --> 00:12:00,300
+do you think I need to use?
+
+271
+00:12:00,300 --> 00:12:05,340
+I need to use the OR because
+I can't be both true Saturday
+
+272
+00:12:05,340 --> 00:12:07,240
+and true on Sunday.
+
+273
+00:12:07,240 --> 00:12:09,620
+It's only ever going to be
+Saturday or Sunday in order
+
+274
+00:12:09,620 --> 00:12:10,912
+for me to label it the weekend.
+
+275
+00:12:10,912 --> 00:12:13,860
+And that's where this idea of if
+comes into play really nicely.
+
+276
+00:12:13,860 --> 00:12:17,420
+And what if does is it says,
+I'm going to do this test.
+
+277
+00:12:17,420 --> 00:12:20,215
+And if it's true, I'm
+going to do something.
+
+278
+00:12:20,215 --> 00:12:22,340
+And if it's false, I'm
+going to do this other thing
+
+279
+00:12:22,340 --> 00:12:23,620
+or just leave it blank.
+
+280
+00:12:23,620 --> 00:12:27,200
+So let's first just see
+if Saturday is true.
+
+281
+00:12:27,200 --> 00:12:34,940
+So if this equals Saturday,
+and I'm going to say "Weekend."
+
+282
+00:12:34,940 --> 00:12:38,520
+Else, I'm going
+to say "Weekday."
+
+283
+00:12:38,520 --> 00:12:39,200
+And that works.
+
+284
+00:12:39,200 --> 00:12:42,042
+First, remember, we're just
+evaluating for Saturday.
+
+285
+00:12:42,042 --> 00:12:43,500
+So right now, we're
+labeling Sunday
+
+286
+00:12:43,500 --> 00:12:45,583
+as a weekday, which we're
+going to want to change.
+
+287
+00:12:45,583 --> 00:12:48,040
+And we see that works
+for Friday and Thursday.
+
+288
+00:12:48,040 --> 00:12:50,740
+So based off of what we just
+did for our morning, afternoon,
+
+289
+00:12:50,740 --> 00:12:52,793
+evening, and night, go
+ahead and make the change
+
+290
+00:12:52,793 --> 00:12:54,960
+that you think you need in
+order to consider if it's
+
+291
+00:12:54,960 --> 00:12:58,560
+either Saturday or Sunday.
+
+292
+00:12:58,560 --> 00:13:00,782
+So hopefully, when you
+are working on that,
+
+293
+00:13:00,782 --> 00:13:02,740
+we came to the conclusion
+that we needed an OR.
+
+294
+00:13:02,740 --> 00:13:04,120
+And remember, even though
+we string it together
+
+295
+00:13:04,120 --> 00:13:05,495
+in English in the
+middle, we have
+
+296
+00:13:05,495 --> 00:13:09,320
+to put it on the outside in
+Excel for it to evaluate it.
+
+297
+00:13:09,320 --> 00:13:14,520
+So OR, E2 is equal to Sunday.
+
+298
+00:13:14,520 --> 00:13:15,920
+And then a close parentheses.
+
+299
+00:13:15,920 --> 00:13:18,480
+So we're starting to nest
+functions and formulas
+
+300
+00:13:18,480 --> 00:13:21,840
+within each other, which is
+pretty typical for Excel.
+
+301
+00:13:21,840 --> 00:13:25,100
+So now let's do the same thing
+and drag our formula down a few.
+
+302
+00:13:25,100 --> 00:13:28,320
+And now we see that Sunday
+is also considered a weekend.
+
+303
+00:13:28,320 --> 00:13:33,560
+If we label this AND, everything
+is going to actually be labeled
+
+304
+00:13:33,560 --> 00:13:37,280
+"Weekday," because Excel doesn't
+intuitively know that Saturday
+
+305
+00:13:37,280 --> 00:13:39,260
+and Sunday is something
+that we call weekend.
+
+306
+00:13:39,260 --> 00:13:41,800
+We're just saying that
+this set of characters
+
+307
+00:13:41,800 --> 00:13:43,970
+has to be equal
+to both Saturday.
+
+308
+00:13:43,970 --> 00:13:46,650
+And since we're looking at
+the same reference cell,
+
+309
+00:13:46,650 --> 00:13:49,030
+it also has to be
+equal to Sunday.
+
+310
+00:13:49,030 --> 00:13:52,290
+If that's not true,
+then it has to be false.
+
+311
+00:13:52,290 --> 00:13:54,610
+And so that's why we're
+getting weekday there
+
+312
+00:13:54,610 --> 00:14:01,330
+and why we need OR as
+our operator there.
+
+313
+00:14:01,330 --> 00:14:02,130
+Perfect.
+
+314
+00:14:02,130 --> 00:14:07,830
+So now that we have our
+weekend column built out,
+
+315
+00:14:07,830 --> 00:14:09,990
+how many impressions
+happened on the weekend?
+
+316
+00:14:09,990 --> 00:14:10,490
+OK.
+
+317
+00:14:10,490 --> 00:14:15,850
+Go ahead and do
+that calculation.
+
+318
+00:14:15,850 --> 00:14:16,470
+All right.
+
+319
+00:14:16,470 --> 00:14:19,030
+So now that you're
+back, remember,
+
+320
+00:14:19,030 --> 00:14:23,130
+we need to use the
+COUNTIFs, because I
+
+321
+00:14:23,130 --> 00:14:25,770
+need to use two different
+conditions again.
+
+322
+00:14:25,770 --> 00:14:30,490
+So first one is I want to
+see if it's a weekend or not.
+
+323
+00:14:30,490 --> 00:14:36,350
+Second, I want to see if my
+event type is an impression.
+
+324
+00:14:36,350 --> 00:14:40,970
+And so we see that on
+weekends, we have about 96--
+
+325
+00:14:40,970 --> 00:14:43,460
+almost 97,000 impressions
+on a given weekend.
+
+326
+00:14:46,350 --> 00:14:47,650
+Perfect!
+
+327
+00:14:47,650 --> 00:14:51,270
+And now we'll go ahead
+and move on to question 3.
+
+328
+00:14:51,270 --> 00:14:53,990
+So sum the total budget if the
+project campaign was considered
+
+329
+00:14:53,990 --> 00:14:56,157
+short or less than 30.
+
+330
+00:14:56,157 --> 00:14:57,990
+So in this particular
+case, this is actually
+
+331
+00:14:57,990 --> 00:15:02,130
+going to be found under
+the Campaigns tab.
+
+332
+00:15:02,130 --> 00:15:07,700
+So SUMIF-- oops!
+
+333
+00:15:10,270 --> 00:15:16,840
+I'm going to sum my total budget
+if my duration is less than--
+
+334
+00:15:20,950 --> 00:15:26,102
+so I'm going to SUMIF, and this
+is the range I'm considering--
+
+335
+00:15:26,102 --> 00:15:28,030
+is less than 30 days.
+
+336
+00:15:28,030 --> 00:15:29,970
+Actually, I think our
+lowest is more than 30.
+
+337
+00:15:29,970 --> 00:15:32,070
+Let's change that to
+60 days, because I
+
+338
+00:15:32,070 --> 00:15:35,030
+don't think any campaign
+was shorter than 30 days.
+
+339
+00:15:35,030 --> 00:15:39,450
+SUMIF our duration comma.
+
+340
+00:15:39,450 --> 00:15:41,360
+And I'm just following
+along with what it's
+
+341
+00:15:41,360 --> 00:15:44,640
+asking me to do-- less than 60.
+
+342
+00:15:44,640 --> 00:15:48,320
+And then it's asking
+me to sum my range.
+
+343
+00:15:48,320 --> 00:15:51,320
+And that's what I'm
+actually going to be adding.
+
+344
+00:15:51,320 --> 00:16:01,240
+So I spent almost $843,000 on
+campaigns that were considered
+
+345
+00:16:01,240 --> 00:16:02,160
+short.
+
+346
+00:16:02,160 --> 00:16:04,160
+That's quite a lot of money.
+
+347
+00:16:04,160 --> 00:16:05,220
+But it's the same thing.
+
+348
+00:16:05,220 --> 00:16:06,680
+So SUMIF works a
+little differently
+
+349
+00:16:06,680 --> 00:16:09,380
+because our criteria, we're
+able to point and say,
+
+350
+00:16:09,380 --> 00:16:12,380
+I want the criteria
+based on column E,
+
+351
+00:16:12,380 --> 00:16:17,840
+but then I actually want you
+to add the numbers in column F.
+
+352
+00:16:17,840 --> 00:16:20,240
+And then last but
+not least, I want
+
+353
+00:16:20,240 --> 00:16:23,200
+to count how many impressions
+users had if they were
+
+354
+00:16:23,200 --> 00:16:25,400
+in the 18 to 24 range mode.
+
+355
+00:16:25,400 --> 00:16:27,900
+So looking at our
+data and ad_events--
+
+356
+00:16:27,900 --> 00:16:30,940
+and this is essentially how
+we think about joins in SQL.
+
+357
+00:16:30,940 --> 00:16:33,660
+So in two weeks when you
+get to it in data 2100--
+
+358
+00:16:33,660 --> 00:16:35,577
+if you're taking that,
+alongside this course--
+
+359
+00:16:35,577 --> 00:16:37,910
+this should, hopefully, start
+to feel a little familiar.
+
+360
+00:16:37,910 --> 00:16:39,500
+And we've already
+talked about keys.
+
+361
+00:16:39,500 --> 00:16:42,620
+And so again, this is
+that same idea of keys.
+
+362
+00:16:42,620 --> 00:16:46,300
+So I don't actually
+have the age range here.
+
+363
+00:16:46,300 --> 00:16:48,520
+But I do know that
+in my users table,
+
+364
+00:16:48,520 --> 00:16:51,060
+I do have this age group data.
+
+365
+00:16:51,060 --> 00:16:53,660
+And this is what I want
+to combine in here.
+
+366
+00:16:53,660 --> 00:16:57,580
+Now, a user can have lots
+of different interactions
+
+367
+00:16:57,580 --> 00:16:59,100
+with different campaigns.
+
+368
+00:16:59,100 --> 00:17:04,640
+And in my users table, I
+have about 10,000 users.
+
+369
+00:17:04,640 --> 00:17:08,020
+So I do not want to go through
+by hand and try to find that
+
+370
+00:17:08,020 --> 00:17:09,900
+user 99e3f--
+
+371
+00:17:09,900 --> 00:17:11,700
+is in the 35 to 45 range--
+
+372
+00:17:11,700 --> 00:17:14,319
+and do that for every single
+one of my 400,000 rows.
+
+373
+00:17:14,319 --> 00:17:15,410
+That is not a good time.
+
+374
+00:17:15,410 --> 00:17:16,660
+And this is why we have tools.
+
+375
+00:17:16,660 --> 00:17:18,738
+And so that's what
+a VLOOKUP does.
+
+376
+00:17:18,738 --> 00:17:20,280
+And the textbook
+talks about HLOOKUP.
+
+377
+00:17:20,280 --> 00:17:21,980
+Definitely continue
+to read that.
+
+378
+00:17:21,980 --> 00:17:26,380
+I've just found that VLOOKUPs is
+95% of what I do in Excel when
+
+379
+00:17:26,380 --> 00:17:27,460
+it comes to lookups.
+
+380
+00:17:27,460 --> 00:17:31,220
+And so what we do, a
+VLOOKUP and HLOOKUP,
+
+381
+00:17:31,220 --> 00:17:33,560
+is just where we're
+looking for something.
+
+382
+00:17:33,560 --> 00:17:35,820
+So a VLOOKUP is a vertical--
+
+383
+00:17:35,820 --> 00:17:36,900
+up and down.
+
+384
+00:17:36,900 --> 00:17:38,970
+And so what I want to
+do is I want to say,
+
+385
+00:17:38,970 --> 00:17:41,970
+I'm going to look up column C--
+
+386
+00:17:41,970 --> 00:17:45,870
+in this case, column C2.
+
+387
+00:17:45,870 --> 00:17:49,130
+And I want to find this
+value in a table array.
+
+388
+00:17:49,130 --> 00:17:52,896
+And that table array is the
+table we're trying to reference.
+
+389
+00:17:52,896 --> 00:17:56,790
+And pro tip,
+whatever you select,
+
+390
+00:17:56,790 --> 00:17:58,705
+this needs to be
+in the first row.
+
+391
+00:17:58,705 --> 00:18:01,330
+So your key needs to be in the
+first-- sorry, the first column,
+
+392
+00:18:01,330 --> 00:18:02,390
+not the first row--
+
+393
+00:18:02,390 --> 00:18:05,230
+in order for it to
+identify the lookup.
+
+394
+00:18:05,230 --> 00:18:09,110
+So the next argument
+I need to include
+
+395
+00:18:09,110 --> 00:18:12,590
+is which column number I
+actually want to return.
+
+396
+00:18:12,590 --> 00:18:13,810
+So I'm going to count.
+
+397
+00:18:13,810 --> 00:18:15,490
+So 1, 2, 3, 4.
+
+398
+00:18:15,490 --> 00:18:18,150
+So I want to look up column 4.
+
+399
+00:18:18,150 --> 00:18:20,730
+And I want it to
+be an exact match.
+
+400
+00:18:20,730 --> 00:18:24,365
+Because if a user, for some
+reason, isn't in my user table,
+
+401
+00:18:24,365 --> 00:18:25,990
+then we're not going
+to worry about it.
+
+402
+00:18:25,990 --> 00:18:27,573
+And I'm going to
+double-click that in.
+
+403
+00:18:27,573 --> 00:18:30,390
+So now we can see that we
+have age range based off
+
+404
+00:18:30,390 --> 00:18:31,810
+of that VLOOKUP.
+
+405
+00:18:31,810 --> 00:18:32,310
+OK.
+
+406
+00:18:32,310 --> 00:18:34,690
+Let's go ahead and
+practice this again.
+
+407
+00:18:34,690 --> 00:18:39,790
+Let's say I also want
+to pull in their gender.
+
+408
+00:18:39,790 --> 00:18:41,970
+How would you go
+ahead and do that?
+
+409
+00:18:41,970 --> 00:18:45,210
+Go ahead and pause
+the video and try it.
+
+410
+00:18:45,210 --> 00:18:47,010
+So I'm going to do a
+VLOOKUP the same way.
+
+411
+00:18:47,010 --> 00:18:48,970
+I'm going to click
+on my user ID here
+
+412
+00:18:48,970 --> 00:18:51,610
+because I know that's the value
+that exists in both tables.
+
+413
+00:18:51,610 --> 00:18:53,990
+And then I'm going to
+highlight over here.
+
+414
+00:18:53,990 --> 00:18:57,990
+And in this case, I need one,
+only my second column of data.
+
+415
+00:18:57,990 --> 00:19:00,690
+And again, I want
+the exact match.
+
+416
+00:19:00,690 --> 00:19:03,850
+And now I have all of this
+information pulled in in seconds
+
+417
+00:19:03,850 --> 00:19:05,410
+instead of trying
+to manually compile
+
+418
+00:19:05,410 --> 00:19:07,430
+that information together.
+
+419
+00:19:07,430 --> 00:19:09,370
+So now I count how
+many impressions users
+
+420
+00:19:09,370 --> 00:19:11,383
+made in that 18 to 24 range.
+
+421
+00:19:11,383 --> 00:19:13,510
+So let's go ahead and do it.
+
+422
+00:19:13,510 --> 00:19:19,010
+And that is going to be what
+you turn in to this week.
+
+423
+00:19:19,010 --> 00:19:22,450
+Go ahead and submit the
+answer to question 4.
+
+424
+00:19:22,450 --> 00:19:24,390
+Good luck with your
+textbook reading.
+
+425
+00:19:24,390 --> 00:19:26,150
+I'm excited to see
+how you're doing.
+
+426
+00:19:26,150 --> 00:19:29,130
+As always, please let me know
+how I can help your learning
+
+427
+00:19:29,130 --> 00:19:33,040
+and make Excel an
+exciting topic for you.
