@@ -257,12 +257,18 @@ A simple MVP can use the following concepts:
 - Avoid adding a full knowledge graph or advanced personalization yet.
 
 ## Decisions Finalized in v0.1
-- Transcript formats: SRT and DFXP/TTML, organized in per-course subfolders (`DATA2100/`, `IS3600/`)
+- Transcript formats: SRT and DFXP/TTML, organized in per-course subfolders
+- Ingest input folder: `data/transcripts/` (pending files only). After a successful ingest, the course folder is moved to `data/ingest_transcripts_complete/` so the next run does not re-embed already-indexed courses
 - Embedding model: `text-embedding-3-small`; LLM: `gpt-4o-mini`
 - Chunk size: 400 tokens with 5-entry overlap
-- Video links stored in the `videos.source_url` column (Kaltura `extwidget/preview` URLs); the frontend converts them to `embedPlaykitJs` iframe URLs with `kalturaSeekFrom` for in-chat playback at the cited timestamp
-- Local deployment via Docker Compose (pgvector) + uvicorn + Next.js dev server
-- Multi-course indexing supported (IS 3600 and DATA 2100 both indexed)
+- Video links stored in the `videos.source_url` column (Kaltura `extwidget/preview` URLs); the frontend converts them to `embedPlaykitJs` iframe URLs with `kalturaSeekFrom` for in-chat playback at the cited timestamp. URL-only updates use `scripts/sync_source_urls.py` (no re-embed)
+- Local deployment via Docker Compose (pgvector) + uvicorn + Next.js dev server; production index is the Render Postgres database
+- Multi-course indexing supported. Live courses (174 videos):
+  - DATA 1100: Excel for Business Analysis (16)
+  - DATA 2100: Data and Information in Business (43)
+  - DATA 5300: Database Management (25)
+  - DATA 5400: Advanced Data Visualization (63)
+  - IS 3600: Introduction to Cloud Computing (27)
 
 ## Recommended Next Step
 The next step should be to turn this architecture into a concrete implementation plan with:

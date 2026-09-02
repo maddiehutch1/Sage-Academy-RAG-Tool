@@ -2,6 +2,19 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-01 — DATA5300 course added
+
+- **DATA5300 transcripts ingested:** 25 new transcript files (21 SRT + 4 DFXP) for *DATA 5300: Database Management* ingested into the live Render index. 25 companion JSON sidecars created with human-readable titles, `order` 1–25 (setup → principles/ERD/normalization → SQL queries → CASE/views/dates → tuning/security/OLTP), and Kaltura `source_url` values.
+- **217 chunks stored** in pgvector. Retrieval smoke test (`What is BCNF and how is it different from 3NF?`) returned DATA 5300 *BCNF Part 2* as the top three hits (distances 0.38–0.43).
+- **Kaltura URLs synced without re-embed:** after ingest, `scripts/sync_source_urls.py` pushed all 25 `source_url` values into the `videos` table.
+- **Corpus now five courses:** DATA1100 (16) + DATA2100 (43) + DATA5300 (25) + DATA5400 (63) + IS3600 (27) = 174 videos.
+- **Folder workflow:** pending files live in `data/transcripts/`; after a successful ingest the course folder is moved to `data/ingest_transcripts_complete/` so the next `ingest.py` run does not re-embed already-indexed courses. DATA5300 now lives under `data/ingest_transcripts_complete/DATA5300/`.
+
+## 2026-08-06 — DATA1100 course added
+
+- **DATA1100 transcripts ingested:** 16 transcript files (9 SRT + 7 DFXP) for *DATA 1100: Excel for Business Analysis* added as a fourth indexed course, with JSON sidecars (`order` 1–16) and Kaltura URLs.
+- **`data/ingest_transcripts_complete/` introduced:** already-indexed course folders (DATA1100, DATA2100, DATA5400, IS3600) were moved out of `data/transcripts/` so later `ingest.py` runs only process new files. `ingest.py` and `sync_source_urls.py` still scan `data/transcripts/` only.
+
 ## 2026-07-30 — Video Library Sidebar planned (Milestone 9)
 
 - **Stakeholder feature request:** Following the second internal demo, stakeholders requested a way for students to browse and watch any video in the catalog without needing to ask a question.
