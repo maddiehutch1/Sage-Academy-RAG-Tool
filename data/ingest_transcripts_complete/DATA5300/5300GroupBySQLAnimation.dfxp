@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>559338552 - 1_pheinu7o - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:02.730" tts:direction="ltr">Hey, SQL coders, welcome back.</p>
+        <p begin="00:00:02.730" end="00:00:07.170" tts:direction="ltr">Today, I'm showing you one of the most
+<br />powerful tools for summarizing data,</p>
+        <p begin="00:00:07.170" end="00:00:09.370" tts:direction="ltr">the group by clause.</p>
+        <p begin="00:00:09.370" end="00:00:12.450" tts:direction="ltr">Group by lets you organize your rows into</p>
+        <p begin="00:00:12.450" end="00:00:15.730" tts:direction="ltr">groups based on values from one or more
+<br />columns.</p>
+        <p begin="00:00:15.730" end="00:00:18.850" tts:direction="ltr">It's the secret sauce behind answering
+<br />questions like,</p>
+        <p begin="00:00:18.850" end="00:00:21.010" tts:direction="ltr">how many sales in each region?</p>
+        <p begin="00:00:21.010" end="00:00:24.530" tts:direction="ltr">What's the average salary for each
+<br />department? Stick around.</p>
+        <p begin="00:00:24.530" end="00:00:26.090" tts:direction="ltr">I'll show you how it works,</p>
+        <p begin="00:00:26.090" end="00:00:30.650" tts:direction="ltr">and we'll spot some common mistakes that
+<br />trip people up. Let's dive in.</p>
+        <p begin="00:00:30.650" end="00:00:32.930" tts:direction="ltr">All right, meet the data buddies.</p>
+        <p begin="00:00:32.930" end="00:00:37.170" tts:direction="ltr">We've got a table with six rows and
+<br />columns including ID,</p>
+        <p begin="00:00:37.170" end="00:00:40.210" tts:direction="ltr">nickname, color, salary, and state.</p>
+        <p begin="00:00:40.210" end="00:00:42.450" tts:direction="ltr">Say hi, Dabdies.</p>
+        <p begin="00:00:42.450" end="00:00:44.650" tts:direction="ltr">Even with just six rows,</p>
+        <p begin="00:00:44.650" end="00:00:45.930" tts:direction="ltr">there's a lot we can do.</p>
+        <p begin="00:00:45.930" end="00:00:47.930" tts:direction="ltr">When you group by, the number of</p>
+        <p begin="00:00:47.930" end="00:00:51.010" tts:direction="ltr">output rows depends on how many groups you
+<br />create.</p>
+        <p begin="00:00:51.010" end="00:00:54.370" tts:direction="ltr">Let's see it. Dabdies group by color.</p>
+        <p begin="00:00:54.370" end="00:00:57.050" tts:direction="ltr">You get three groups, red, green,</p>
+        <p begin="00:00:57.050" end="00:01:00.170" tts:direction="ltr">and yellow, Dabdies group by state.</p>
+        <p begin="00:01:00.170" end="00:01:03.130" tts:direction="ltr">In this case, we have four groups.</p>
+        <p begin="00:01:03.130" end="00:01:07.210" tts:direction="ltr">Finally, databdies group by ID.</p>
+        <p begin="00:01:07.480" end="00:01:11.800" tts:direction="ltr">That's right. If every value in a column
+<br />is unique,</p>
+        <p begin="00:01:11.800" end="00:01:14.840" tts:direction="ltr">then the number of rows will be the same
+<br />as the table.</p>
+        <p begin="00:01:14.840" end="00:01:18.280" tts:direction="ltr">In this case, six groups, six rows.</p>
+        <p begin="00:01:18.280" end="00:01:19.840" tts:direction="ltr">Before we go deeper,</p>
+        <p begin="00:01:19.840" end="00:01:21.400" tts:direction="ltr">when you're using group I,</p>
+        <p begin="00:01:21.400" end="00:01:22.840" tts:direction="ltr">you must know the difference between</p>
+        <p begin="00:01:22.840" end="00:01:25.600" tts:direction="ltr">an aggregate function and a regular
+<br />column.</p>
+        <p begin="00:01:25.600" end="00:01:27.760" tts:direction="ltr">We'll call this a non aggregate.</p>
+        <p begin="00:01:27.760" end="00:01:31.080" tts:direction="ltr">SQL has five built in aggregate functions,</p>
+        <p begin="00:01:31.080" end="00:01:35.480" tts:direction="ltr">including min, max, A, sum, and count.</p>
+        <p begin="00:01:35.480" end="00:01:37.520" tts:direction="ltr">Non aggregates, on the other hand,</p>
+        <p begin="00:01:37.520" end="00:01:41.905" tts:direction="ltr">are just regular columns like last name,
+<br />state, or color.</p>
+        <p begin="00:01:41.905" end="00:01:45.250" tts:direction="ltr">So for example, select average salary.</p>
+        <p begin="00:01:45.250" end="00:01:46.930" tts:direction="ltr">That's an aggregate function.</p>
+        <p begin="00:01:46.930" end="00:01:49.610" tts:direction="ltr">Select state from data buddies.</p>
+        <p begin="00:01:49.610" end="00:01:53.890" tts:direction="ltr">State is a regular column or a non
+<br />aggregate. Sounds good.</p>
+        <p begin="00:01:53.890" end="00:01:57.010" tts:direction="ltr">Great. Let's check in on a game show
+<br />called</p>
+        <p begin="00:01:57.010" end="00:02:01.370" tts:direction="ltr">aggregate or non aggregate in progress.</p>
+        <p begin="00:02:01.690" end="00:02:07.650" tts:direction="ltr">All right, welcome back to the show
+<br />aggregate or non aggregate.</p>
+        <p begin="00:02:07.650" end="00:02:11.690" tts:direction="ltr">Holly, you won the first round and have
+<br />100 points.</p>
+        <p begin="00:02:12.020" end="00:02:16.380" tts:direction="ltr">Kelly, you currently have zero points.</p>
+        <p begin="00:02:16.380" end="00:02:18.580" tts:direction="ltr">Let's begin Round two,</p>
+        <p begin="00:02:18.580" end="00:02:20.340" tts:direction="ltr">where the point values are double.</p>
+        <p begin="00:02:20.340" end="00:02:22.860" tts:direction="ltr">In this round, I will say a phrase and you
+<br />have</p>
+        <p begin="00:02:22.860" end="00:02:25.380" tts:direction="ltr">to tell me if it's an aggregate or a non
+<br />aggregate.</p>
+        <p begin="00:02:25.380" end="00:02:28.140" tts:direction="ltr">We continue until one of you incorrectly
+<br />answers a question.</p>
+        <p begin="00:02:28.140" end="00:02:30.220" tts:direction="ltr">Kelly, since you lost the first round,</p>
+        <p begin="00:02:30.220" end="00:02:31.620" tts:direction="ltr">we will begin with Polly.</p>
+        <p begin="00:02:31.620" end="00:02:34.100" tts:direction="ltr">Let's do this. All right,</p>
+        <p begin="00:02:34.100" end="00:02:37.300" tts:direction="ltr">Polly. Now, select state.</p>
+        <p begin="00:02:37.540" end="00:02:40.460" tts:direction="ltr">That's a non aggregate.</p>
+        <p begin="00:02:40.460" end="00:02:44.740" tts:direction="ltr">Correct. Now, select average salary.</p>
+        <p begin="00:02:44.740" end="00:02:47.100" tts:direction="ltr">That would be an aggregate.</p>
+        <p begin="00:02:47.100" end="00:02:51.620" tts:direction="ltr">Correct. Select account, user ID.</p>
+        <p begin="00:02:51.620" end="00:02:55.540" tts:direction="ltr">Aggregate. Correct. Very good.</p>
+        <p begin="00:02:55.540" end="00:02:57.340" tts:direction="ltr">Select zip code.</p>
+        <p begin="00:02:57.340" end="00:02:59.820" tts:direction="ltr">Yet, that would be a non aggregate.</p>
+        <p begin="00:02:59.820" end="00:03:03.380" tts:direction="ltr">Correct. Select first name,</p>
+        <p begin="00:03:03.380" end="00:03:06.860" tts:direction="ltr">last name. Non aggregate.</p>
+        <p begin="00:03:06.860" end="00:03:13.620" tts:direction="ltr">Correct. Select max age, yet again,
+<br />aggregate.</p>
+        <p begin="00:03:13.620" end="00:03:17.700" tts:direction="ltr">Correct. Select salary.</p>
+        <p begin="00:03:17.700" end="00:03:21.700" tts:direction="ltr">Non aggregate. Correct again.</p>
+        <p begin="00:03:21.700" end="00:03:28.810" tts:direction="ltr">Select City aggregate Oh, that is
+<br />incorrect.</p>
+        <p begin="00:03:28.810" end="00:03:31.490" tts:direction="ltr">City is not an aggregate function.</p>
+        <p begin="00:03:31.490" end="00:03:34.810" tts:direction="ltr">Poly, you win round two and the game.</p>
+        <p begin="00:03:34.810" end="00:03:36.450" tts:direction="ltr">Kelly, you didn't win,</p>
+        <p begin="00:03:36.450" end="00:03:39.850" tts:direction="ltr">but we do have some nice parting gifts for
+<br />you. Okay.</p>
+        <p begin="00:03:40.330" end="00:03:45.450" tts:direction="ltr">Now check this out. Let's combine an
+<br />aggregate and non aggregate.</p>
+        <p begin="00:03:45.450" end="00:03:51.370" tts:direction="ltr">Select color out salary from data buddies.
+<br />Will it work?</p>
+        <p begin="00:03:53.040" end="00:03:55.760" tts:direction="ltr">No, it crashes.</p>
+        <p begin="00:03:55.760" end="00:03:58.640" tts:direction="ltr">Why? Because SQL is like, wait,</p>
+        <p begin="00:03:58.640" end="00:04:00.600" tts:direction="ltr">you're giving me a color with</p>
+        <p begin="00:04:00.600" end="00:04:04.400" tts:direction="ltr">six different values and an salary with
+<br />just one value.</p>
+        <p begin="00:04:04.400" end="00:04:06.760" tts:direction="ltr">How am I supposed to match these up?</p>
+        <p begin="00:04:06.760" end="00:04:09.200" tts:direction="ltr">Here is the most important rule for this
+<br />video.</p>
+        <p begin="00:04:09.200" end="00:04:12.560" tts:direction="ltr">If you mix aggregates and non aggregates,</p>
+        <p begin="00:04:12.560" end="00:04:15.400" tts:direction="ltr">you must group by the non aggregate.</p>
+        <p begin="00:04:15.400" end="00:04:18.200" tts:direction="ltr">Here's the fix, select color,</p>
+        <p begin="00:04:18.200" end="00:04:20.920" tts:direction="ltr">the non aggregate, a salary,</p>
+        <p begin="00:04:20.920" end="00:04:23.520" tts:direction="ltr">the aggregate from data buddies.</p>
+        <p begin="00:04:23.520" end="00:04:25.640" tts:direction="ltr">We group by the non aggregate,</p>
+        <p begin="00:04:25.640" end="00:04:27.365" tts:direction="ltr">so we group by color.</p>
+        <p begin="00:04:27.365" end="00:04:29.570" tts:direction="ltr">Now, it works perfectly.</p>
+        <p begin="00:04:29.570" end="00:04:31.290" tts:direction="ltr">Instead of one big average,</p>
+        <p begin="00:04:31.290" end="00:04:33.730" tts:direction="ltr">we get an average for each color group.</p>
+        <p begin="00:04:33.730" end="00:04:37.330" tts:direction="ltr">Red buddies, green buddies, yellow
+<br />buddies.</p>
+        <p begin="00:04:37.330" end="00:04:39.970" tts:direction="ltr">Everyone's got their own average salary
+<br />now.</p>
+        <p begin="00:04:39.970" end="00:04:42.130" tts:direction="ltr">Feeling good? Let's level up.</p>
+        <p begin="00:04:42.130" end="00:04:45.370" tts:direction="ltr">What if your query has more than one non
+<br />aggregate?</p>
+        <p begin="00:04:45.370" end="00:04:52.015" tts:direction="ltr">For example, select state color max salary
+<br />from data buddies.</p>
+        <p begin="00:04:52.015" end="00:04:55.740" tts:direction="ltr">Yep, r again. The rule remains,</p>
+        <p begin="00:04:55.740" end="00:05:00.660" tts:direction="ltr">you must group by every non aggregate
+<br />you're selecting. Fix it like this.</p>
+        <p begin="00:05:00.660" end="00:05:05.900" tts:direction="ltr">Select state color, max salary from data
+<br />buddies,</p>
+        <p begin="00:05:05.900" end="00:05:08.740" tts:direction="ltr">group by state color,</p>
+        <p begin="00:05:08.740" end="00:05:12.620" tts:direction="ltr">and now you're grouping first by state and
+<br />then by color.</p>
+        <p begin="00:05:12.620" end="00:05:14.580" tts:direction="ltr">For instance, in Texas,</p>
+        <p begin="00:05:14.580" end="00:05:17.820" tts:direction="ltr">the red data buddy makes 40,000.</p>
+        <p begin="00:05:17.820" end="00:05:20.300" tts:direction="ltr">This is the highest salary in the state.</p>
+        <p begin="00:05:20.300" end="00:05:22.755" tts:direction="ltr">That's a rap data buddies.</p>
+        <p begin="00:05:22.755" end="00:05:25.850" tts:direction="ltr">Now you know the foundations of group I
+<br />and</p>
+        <p begin="00:05:25.850" end="00:05:29.330" tts:direction="ltr">how to avoid one of the most common
+<br />mistakes in SQL.</p>
+        <p begin="00:05:29.330" end="00:05:32.850" tts:direction="ltr">Now you have an opportunity to apply what
+<br />you've learned with</p>
+        <p begin="00:05:32.850" end="00:05:37.490" tts:direction="ltr">practice items provided good luck and
+<br />happy coating.</p>
+    </div>
+  </body>
+</tt>

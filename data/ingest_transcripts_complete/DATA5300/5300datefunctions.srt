@@ -1,0 +1,1249 @@
+1
+00:00:00,030 --> 00:00:03,650
+Hey Kim, I'm going live. I need
+my fangs. Have you seen them?
+
+2
+00:00:03,790 --> 00:00:06,210
+No, I haven't seen them.
+Did you check the cupboard?
+
+3
+00:00:06,330 --> 00:00:07,970
+Yes, I checked the cupboard.
+
+4
+00:00:08,370 --> 00:00:10,370
+Here, just put this helmet on.
+
+5
+00:00:10,470 --> 00:00:13,650
+Kim, that's not even the
+same character. I'm going to
+
+6
+00:00:13,650 --> 00:00:16,930
+be... Oh wait, we're live.
+In three... Oh, we are live.
+
+7
+00:00:16,970 --> 00:00:19,170
+Welcome to Data 5300.
+
+8
+00:00:27,130 --> 00:00:29,190
+Oh well, that introduction seemed like
+
+9
+00:00:29,190 --> 00:00:31,050
+a good idea last night about midnight.
+
+10
+00:00:31,210 --> 00:00:35,050
+Moving on, Module 10, excited to
+introduce you to date functions.
+
+11
+00:00:35,050 --> 00:00:39,050
+If you're taking the class fall
+semester, it works perfectly for
+
+12
+00:00:39,050 --> 00:00:42,330
+the monster's theme that we have.
+And if you're taking it spring
+
+13
+00:00:42,330 --> 00:00:47,050
+semester, well, we have some kind
+of happy St. Patrick's Day monster.
+
+14
+00:00:47,070 --> 00:00:50,670
+On the screen, I'll provide the
+login that you'll use for both
+
+15
+00:00:50,670 --> 00:00:54,590
+the blue triad and for your
+lab. It differs from semester to
+
+16
+00:00:54,590 --> 00:00:58,370
+semester, so it'll show up on the
+screen. And this will give you access
+
+17
+00:00:58,370 --> 00:01:01,790
+to the monster data set. And
+then what we're going to do today
+
+18
+00:01:01,790 --> 00:01:05,230
+is I'm going to take you through
+these various date functions.
+
+19
+00:01:05,230 --> 00:01:08,030
+As a reminder, they're called
+functions because they have
+
+20
+00:01:08,030 --> 00:01:10,350
+the parentheses. And within
+those parentheses, most
+
+21
+00:01:10,350 --> 00:01:13,830
+of the time, we'll include
+arguments to those functions.
+
+22
+00:01:13,830 --> 00:01:17,770
+And so that is part of our task for
+today. I also have a separate short
+
+23
+00:01:17,770 --> 00:01:22,410
+video on union and union all. We
+introduced this topic briefly because
+
+24
+00:01:22,410 --> 00:01:26,210
+it's also now commonly asked in
+interviews. originally it was only a
+
+25
+00:01:26,210 --> 00:01:30,690
+5310 topic but we're moving part
+of relational database functions in
+
+26
+00:01:30,690 --> 00:01:34,350
+terms of unions so that'll be a very
+short second video and then we have
+
+27
+00:01:34,350 --> 00:01:38,790
+one of my favorite animations which
+covers the end of month and that
+
+28
+00:01:38,790 --> 00:01:42,050
+topic was important enough there are
+several companies that hire many of
+
+29
+00:01:42,050 --> 00:01:46,510
+our students in every interview they
+ask an end of month question so we
+
+30
+00:01:46,510 --> 00:01:50,820
+have a complete separate video animation
+for that along with the animation
+
+31
+00:01:50,820 --> 00:01:54,130
+quiz it's kind of based on the
+Back to the Future theme, so I hope
+
+32
+00:01:54,130 --> 00:01:57,030
+you really enjoy it. We'll go
+ahead and start with the most basic
+
+33
+00:01:57,030 --> 00:02:01,790
+function for date functions, which would
+be the year, the month, and the day
+
+34
+00:02:01,790 --> 00:02:07,150
+function. And this simply returns
+the system date in date time format
+
+35
+00:02:07,150 --> 00:02:10,770
+related to the piece of the full
+date that you would like, either the
+
+36
+00:02:10,770 --> 00:02:14,810
+year, the month, or the day. So
+you have a chance to break down the
+
+37
+00:02:14,810 --> 00:02:19,090
+entire date. Now, your data set that
+you'll use, I've provided the login.
+
+38
+00:02:19,250 --> 00:02:23,570
+you may have different columns but
+you'll at least have one date column
+
+39
+00:02:23,570 --> 00:02:27,530
+and maybe more than one for the for
+this demonstration we'll just use
+
+40
+00:02:27,530 --> 00:02:31,070
+the starting date column and then for
+the lab you might have more columns
+
+41
+00:02:31,070 --> 00:02:34,550
+based on what we load into files it
+changes from semester to semester
+
+42
+00:02:34,550 --> 00:02:37,660
+so I'll make this a little more
+specific I'm just going to indicate
+
+43
+00:02:40,070 --> 00:02:45,630
+citing date from the monster sighting
+and that gives us the year the
+
+44
+00:02:45,630 --> 00:02:50,630
+month and the day. And so in this
+case, if we have a report that only
+
+45
+00:02:50,630 --> 00:02:54,030
+requires the month, which month
+did, you know, this customer make a
+
+46
+00:02:54,030 --> 00:02:59,990
+purchase, then we can use the month
+function and then include the column
+
+47
+00:02:59,990 --> 00:03:03,330
+with the date that we'd like to
+parse out. And in this case, this
+
+48
+00:03:03,330 --> 00:03:07,850
+should return hopefully 10 or it
+retrieves the month for each one. Now
+
+49
+00:03:07,850 --> 00:03:11,250
+you also would have to create an
+alias for that. So this is the most
+
+50
+00:03:11,250 --> 00:03:15,630
+basic month, day, year. On smaller
+data set, these date functions are
+
+51
+00:03:15,630 --> 00:03:20,110
+great and provide a lot of flexibility
+on massive and large data sets.
+
+52
+00:03:20,370 --> 00:03:23,970
+They can cause problems with
+performance in terms of query
+
+53
+00:03:23,970 --> 00:03:27,910
+tuning, and that's a topic that
+we discuss later in the semester.
+
+54
+00:03:28,060 --> 00:03:31,230
+Let's go ahead and take a
+look now at the second topic.
+
+55
+00:03:31,230 --> 00:03:35,970
+And as we go through this, we'll
+start to add the different topics
+
+56
+00:03:35,970 --> 00:03:38,990
+that we're learning and add these
+in this bottom left column. But
+
+57
+00:03:38,990 --> 00:03:42,430
+the next one is the get date.
+It returns to system date in the
+
+58
+00:03:42,430 --> 00:03:46,070
+date time format, and it's just
+select get date. and this is the
+
+59
+00:03:46,070 --> 00:03:49,810
+only function I think we have all
+semester where we won't have an
+
+60
+00:03:49,810 --> 00:03:55,230
+argument of the function. So if I
+just write in select get date we
+
+61
+00:03:55,230 --> 00:04:00,520
+leave the function empty and what
+this will provide is the current
+
+62
+00:04:00,520 --> 00:04:03,850
+date time stamp and as you can
+see it's a date time it gives the
+
+63
+00:04:03,850 --> 00:04:08,090
+years the hours the minutes to
+seconds and then the milliseconds.
+
+64
+00:04:08,710 --> 00:04:12,210
+The idea of the get date is ideally
+so you don't have to hardwire
+
+65
+00:04:12,210 --> 00:04:16,790
+in dates. Think about having
+a resume and hardwiring your
+
+66
+00:04:17,930 --> 00:04:21,790
+age on a resume. That obviously
+changes all the time, and so
+
+67
+00:04:21,790 --> 00:04:26,890
+this is just a dynamic way to
+tackle having the current date.
+
+68
+00:04:26,890 --> 00:04:29,930
+Also, as a reminder, this
+current date is the date on the
+
+69
+00:04:29,930 --> 00:04:33,530
+server, not on your computer,
+and so if you're working in the
+
+70
+00:04:33,530 --> 00:04:36,910
+cloud, you might have to figure
+out what the location of that
+
+71
+00:04:36,910 --> 00:04:39,950
+cloud is or what time that
+they're using on a cloud device.
+
+72
+00:04:41,280 --> 00:04:44,550
+All right now we get into some more
+sophisticated dates and this is
+
+73
+00:04:44,550 --> 00:04:48,350
+a powerful one and this is one
+that is commonly asked on interview
+
+74
+00:04:48,570 --> 00:04:53,090
+questions in addition to the end of
+month function. So this is the date
+
+75
+00:04:53,090 --> 00:04:56,130
+difference and as you can see it
+gives you the difference between two
+
+76
+00:04:56,130 --> 00:05:00,270
+dates but there's three arguments
+to the function. One is the unit
+
+77
+00:05:00,270 --> 00:05:04,410
+of measurement so and it is singular
+day, month, year, minute, second.
+
+78
+00:05:04,410 --> 00:05:07,830
+So what is the difference? And
+then the middle or second argument
+
+79
+00:05:07,830 --> 00:05:12,150
+is what is the day that you're
+starting with and then you separate by
+
+80
+00:05:12,150 --> 00:05:15,350
+a comma and the third one is the
+date that you want to compare it to
+
+81
+00:05:15,350 --> 00:05:19,950
+and in this case we're using get
+date. So as an example here this is
+
+82
+00:05:19,950 --> 00:05:24,590
+me on the left hand side and my
+old high school sweetheart who is a
+
+83
+00:05:24,590 --> 00:05:28,830
+very successful econ professor. She
+was professor Harvard University
+
+84
+00:05:28,950 --> 00:05:33,910
+for about 10 years. On the right
+hand side is my favorite image and
+
+85
+00:05:33,910 --> 00:05:38,050
+I will provide a link to a short
+YouTube video that is narrated by
+
+86
+00:05:38,050 --> 00:05:42,310
+Carl Sagan. If you haven't seen it
+before, this is called, I think,
+
+87
+00:05:42,310 --> 00:05:46,960
+the pale blue dot. And you can see
+that there's kind of this sunbeam
+
+88
+00:05:47,310 --> 00:05:50,990
+and this little teeny dot that's
+just a couple of pixels. And
+
+89
+00:05:50,990 --> 00:05:55,170
+as Voyager, the Voyager satellite
+was traveling out of the solar
+
+90
+00:05:55,170 --> 00:05:59,970
+system, Carl Sagan convinced NASA
+to turn the Voyager around one time
+
+91
+00:05:59,970 --> 00:06:04,210
+and take a photograph so this is
+the the longest distance photograph
+
+92
+00:06:04,210 --> 00:06:09,570
+that I'm aware of uh of earth and
+so that little dot is um is earth
+
+93
+00:06:09,570 --> 00:06:13,930
+and the picture was taken interestingly
+enough in 1990 on February
+
+94
+00:06:13,930 --> 00:06:16,670
+14th and it's Valentine's Day and
+that's why I include the photo
+
+95
+00:06:16,670 --> 00:06:19,830
+is uh Julie and I happened to be
+in Disney World at that time and
+
+96
+00:06:19,830 --> 00:06:23,990
+so it was on Valentine's Day that
+we were there so we can find out
+
+97
+00:06:24,020 --> 00:06:29,630
+excuse me we can find out how long
+ago that was and let's go in and
+
+98
+00:06:29,890 --> 00:06:32,150
+try a date difference function now
+
+99
+00:06:38,570 --> 00:06:41,570
+in this case we're not going to
+need a from statement because we're
+
+100
+00:06:41,570 --> 00:06:44,610
+providing the date but you could
+certainly link a column to that how
+
+101
+00:06:44,610 --> 00:06:47,930
+long it's been by using columns in
+the data set but we're going to use
+
+102
+00:06:47,930 --> 00:06:53,810
+a literal value and let's just use
+the unit of time as day as day and
+
+103
+00:06:53,810 --> 00:07:02,110
+then it is 1990 and 0214, and if you
+have a significant date and you're
+
+104
+00:07:02,110 --> 00:07:05,510
+following along for the blue triad,
+if you would, put that in the
+
+105
+00:07:05,510 --> 00:07:09,070
+year you graduated from high school
+or the day you graduated from high
+
+106
+00:07:09,070 --> 00:07:14,130
+school or some date that is important
+to you, and then we'll put the
+
+107
+00:07:14,130 --> 00:07:19,790
+quote there, and then we'll use get
+date, and on the lab or exams, if
+
+108
+00:07:19,790 --> 00:07:23,090
+it's asking you to write code, and
+it says don't hardwire the current
+
+109
+00:07:23,090 --> 00:07:27,750
+date. That will indicate to use
+getDate so that it's not hardwired.
+
+110
+00:07:27,750 --> 00:07:30,770
+And so this should be it. We have
+the three arguments to the function,
+
+111
+00:07:30,770 --> 00:07:33,390
+the unit of time, starting
+date, and ending date.
+
+112
+00:07:33,890 --> 00:07:37,090
+And sometimes if you get confused,
+you could use the absolute
+
+113
+00:07:37,090 --> 00:07:40,210
+value. There is an absolute value
+function, which of course, if it's
+
+114
+00:07:40,210 --> 00:07:43,330
+a negative number, if you got your
+numbers mixed around, it would
+
+115
+00:07:43,330 --> 00:07:48,130
+still derive a positive number.
+So it's been, wow, 13,000 days.
+
+116
+00:07:49,490 --> 00:07:51,730
+Yeah, that's a long time. Hi, y'all.
+
+117
+00:07:52,920 --> 00:07:57,210
+All right, here is your first
+blue triad. And I get an email
+
+118
+00:07:57,210 --> 00:08:00,930
+every semester, how old, well,
+when was Frankenstein born?
+
+119
+00:08:00,930 --> 00:08:05,430
+Well, go ahead and look that up
+in Google or AI, but go ahead
+
+120
+00:08:05,430 --> 00:08:07,990
+if you want to pause the video
+and try to solve this problem.
+
+121
+00:08:08,290 --> 00:08:11,150
+This will be similar to a
+problem that you see on the exam.
+
+122
+00:08:17,890 --> 00:08:21,990
+And how you would write that code
+is similar to what we just did.
+
+123
+00:08:21,990 --> 00:08:26,230
+Select date diff, year, and then
+whatever year. This is what we
+
+124
+00:08:26,230 --> 00:08:29,500
+found it to be. I don't know if
+that's correct. It may be when the
+
+125
+00:08:29,500 --> 00:08:33,710
+author was born or the book was
+written or something and get date as
+
+126
+00:08:33,960 --> 00:08:38,430
+the minutes old. So that would be
+the code to solve that problem.
+
+127
+00:08:40,100 --> 00:08:43,530
+All right, so now we have the year,
+the month, the day, the get date,
+
+128
+00:08:43,530 --> 00:08:46,950
+and the date difference. And now
+we'll add one more, which is also
+
+129
+00:08:46,950 --> 00:08:50,770
+important when we do end of month,
+and that is the date add. So
+
+130
+00:08:50,770 --> 00:08:54,390
+there are three arguments to the
+date add and that's where we can add
+
+131
+00:08:54,390 --> 00:08:59,730
+to a particular type of date. So
+we start out with the time that we
+
+132
+00:08:59,730 --> 00:09:04,590
+want in terms of the measure of
+time and then the distance we want
+
+133
+00:09:04,590 --> 00:09:08,350
+to move forward and then in this
+case we're using get date but you
+
+134
+00:09:08,350 --> 00:09:12,900
+could put any date in there. Let
+me go ahead and copy this code just
+
+135
+00:09:13,690 --> 00:09:20,040
+to save on time and if we put this
+code in and make sure we understand
+
+136
+00:09:20,040 --> 00:09:23,850
+we have date add we're going to
+add a months and we're going to
+
+137
+00:09:23,850 --> 00:09:29,630
+add months to the current date but
+let's go ahead and put in an actual
+
+138
+00:09:29,630 --> 00:09:33,810
+date just so it'll be easier to
+follow so we can indicate let's say
+
+139
+00:09:35,250 --> 00:09:44,910
+2030 0101 what would six months
+out be from that particular date.
+
+140
+00:09:45,870 --> 00:09:52,130
+And you can see it would be 7
+-1 of 2030. So that is great and
+
+141
+00:09:52,130 --> 00:09:55,190
+you can use it with different
+units of time. Okay, the date
+
+142
+00:09:55,190 --> 00:09:59,670
+name. There are a couple of times
+where you may want to have a
+
+143
+00:09:59,670 --> 00:10:05,090
+specific date name instead of
+having, as we did earlier, remember
+
+144
+00:10:05,090 --> 00:10:11,010
+when we did month, and we got
+the 10 for months right here.
+
+145
+00:10:11,010 --> 00:10:15,210
+So when we ran this, we got
+a 10 or a number, but if
+
+146
+00:10:15,210 --> 00:10:19,650
+we don't want that number,
+we can also get the name,
+
+147
+00:10:20,010 --> 00:10:23,030
+and there's two different kinds
+that we can use, or the main
+
+148
+00:10:23,030 --> 00:10:27,050
+ones that differentiate. One
+is mm for months, and then dw,
+
+149
+00:10:27,130 --> 00:10:30,090
+and I remember dw, months is easy, mm,
+
+150
+00:10:30,090 --> 00:10:32,850
+but dw, there's a character
+in Arthur or something,
+
+151
+00:10:32,850 --> 00:10:35,990
+dw, And I just remembered
+DW for that. If you wanted
+
+152
+00:10:35,990 --> 00:10:38,970
+to get the day of the week
+is what that stands for.
+
+153
+00:10:39,150 --> 00:10:42,110
+And so if you have
+output where in that case
+
+154
+00:10:42,110 --> 00:10:45,750
+you need to have, let's
+just do a new query.
+
+155
+00:10:47,030 --> 00:10:50,310
+If you need to have the month show up,
+
+156
+00:10:51,000 --> 00:10:53,780
+we indicated the day,
+so it was in February.
+
+157
+00:10:54,010 --> 00:10:56,690
+And then we could also change that to DW.
+
+158
+00:10:56,850 --> 00:10:58,030
+Go Arthur.
+
+159
+00:10:58,650 --> 00:11:02,310
+And that happened to be on a Wednesday.
+maybe it was Bargain Wednesday
+
+160
+00:11:02,310 --> 00:11:05,050
+or something at Disney World, I
+can't remember. Prices used to be
+
+161
+00:11:05,050 --> 00:11:09,310
+super cheap, now they're super
+expensive. The next topic, cast, is a
+
+162
+00:11:09,310 --> 00:11:13,990
+great one to use with AI, with ChatGBT,
+because sometimes it's difficult.
+
+163
+00:11:13,990 --> 00:11:17,550
+The idea of cast is if you want
+to convert a data type or cast a
+
+164
+00:11:17,550 --> 00:11:21,570
+data type, so if you want to convert,
+for instance, date-time to just
+
+165
+00:11:21,570 --> 00:11:25,230
+date, so get rid of those, you know,
+hours, minutes, and seconds for
+
+166
+00:11:25,230 --> 00:11:30,010
+your output, or if you want to do
+the opposite you want to add date you
+
+167
+00:11:30,010 --> 00:11:34,070
+want to add time here instead of
+just date you can use the cast
+
+168
+00:11:34,070 --> 00:11:38,470
+function for that and it does have
+some flexibility but you can use ai to
+
+169
+00:11:38,470 --> 00:11:44,730
+help you decide how that would work
+best for you and there is a convert
+
+170
+00:11:44,730 --> 00:11:47,990
+that's also similar that we won't
+discuss today but cast and convert
+
+171
+00:11:47,990 --> 00:11:52,830
+are very very close in terms of
+their purpose so if i paste this
+
+172
+00:11:52,830 --> 00:11:57,130
+information in. What we currently
+have is we have just the date, 2007
+
+173
+00:11:57,130 --> 00:12:03,010
+-02-12, and if we use the cast feature,
+we could change it to this data
+
+174
+00:12:03,010 --> 00:12:06,330
+type, which is date time, including
+the hours, minutes, and the
+
+175
+00:12:06,330 --> 00:12:13,390
+seconds, and this would just be the
+alias that we have. So if we run this,
+
+176
+00:12:13,390 --> 00:12:16,870
+this should add the time to it,
+and sure enough, you can see it's
+
+177
+00:12:16,870 --> 00:12:20,390
+no longer just a date, and we used
+the cast function for that now if it
+
+178
+00:12:20,390 --> 00:12:23,590
+had the hours minutes seconds you
+could also cast it as just a date
+
+179
+00:12:23,710 --> 00:12:28,050
+and not date time and it would work
+as well all right we're ready for
+
+180
+00:12:28,050 --> 00:12:32,470
+the eo month so when i first when
+i bought my first house we had this
+
+181
+00:12:32,470 --> 00:12:36,850
+hot tub and it had an air in it and
+so we had to get fixed and for some
+
+182
+00:12:36,850 --> 00:12:40,850
+reason whenever after it got fixed
+like every 30 seconds it would pop
+
+183
+00:12:40,850 --> 00:12:45,450
+up eo six which is something we'd
+never forget. So you won't relate to
+
+184
+00:12:45,450 --> 00:12:50,870
+it as much, but EO month is how I
+remember it. It's not end of month,
+
+185
+00:12:50,870 --> 00:12:55,310
+it's not E-month, it's EO month,
+and this is the animation. I won't
+
+186
+00:12:55,310 --> 00:12:59,890
+play it as part of this video, but
+my recommendation would be likely to
+
+187
+00:12:59,890 --> 00:13:03,570
+pause the video and watch the
+animation and then come back, or you
+
+188
+00:13:03,570 --> 00:13:06,150
+could watch the rest of the video and
+then watch the animation, but I think
+
+189
+00:13:06,150 --> 00:13:09,630
+the two together will really help
+solidify your knowledge of using
+
+190
+00:13:09,630 --> 00:13:12,820
+the end of month, there is a lot of
+power to this particular function.
+
+191
+00:13:12,890 --> 00:13:15,390
+If you watch the animation
+on EOMonth, you're
+
+192
+00:13:15,390 --> 00:13:17,660
+aware that it has a lot
+of power and flexibility.
+
+193
+00:13:17,790 --> 00:13:21,750
+At its very basic EOMonth,
+you could have just
+
+194
+00:13:21,750 --> 00:13:24,610
+one argument, and that's
+pretty straightforward.
+
+195
+00:13:24,610 --> 00:13:28,110
+You can have one argument here,
+let me paste this over, and
+
+196
+00:13:28,110 --> 00:13:30,590
+if I put one argument in, and
+And in this case, I'm going to
+
+197
+00:13:30,590 --> 00:13:42,010
+put a date in, which is kind
+of fun, let's say 2030-01-05.
+
+198
+00:13:44,350 --> 00:13:47,330
+And it has a huge range,
+past dates and future
+
+199
+00:13:47,330 --> 00:13:50,430
+dates, but in this case,
+I can highlight this code.
+
+200
+00:13:51,030 --> 00:13:55,510
+And as you can see, in 2030, the
+last day of the month is January
+
+201
+00:13:55,570 --> 00:14:01,030
+31st. We can also put that
+date into a little more complex
+
+202
+00:14:01,030 --> 00:14:04,010
+formula where we just want the
+day to show up. And so rather than
+
+203
+00:14:04,010 --> 00:14:07,070
+this whole date to show up, we
+just want the day which would
+
+204
+00:14:07,070 --> 00:14:10,930
+be the 31st. So we have the EO
+month and then we have the day.
+
+205
+00:14:11,190 --> 00:14:14,030
+We want just the day of the EO month.
+
+206
+00:14:14,470 --> 00:14:17,110
+And in that case we just get 31.
+
+207
+00:14:17,770 --> 00:14:21,610
+And of course we could use month
+or year as well in order to
+
+208
+00:14:21,610 --> 00:14:25,550
+solve that. And in the animation,
+I show a few examples of using
+
+209
+00:14:25,550 --> 00:14:30,350
+the second argument of the function.
+So you can use EOMONTH with
+
+210
+00:14:30,350 --> 00:14:33,310
+just one argument, just the date
+that you want to find the end of
+
+211
+00:14:33,310 --> 00:14:36,590
+the month. But a more powerful
+use of it is you can find, for
+
+212
+00:14:36,590 --> 00:14:40,490
+instance, we could use GET TODAY'S
+DATE and then we could add 1
+
+213
+00:14:40,490 --> 00:14:45,930
+to that. And what this would find
+is the last day of next month.
+
+214
+00:14:46,450 --> 00:14:48,630
+And if we put a 2 there,
+we would get the last day
+
+215
+00:14:48,630 --> 00:14:50,530
+of two months from now.
+And if we put a negative
+
+216
+00:14:50,530 --> 00:14:54,550
+one there, we would get
+the last day of last month.
+
+217
+00:14:54,790 --> 00:14:58,990
+And think about it. If you have
+the last day of last month,
+
+218
+00:14:59,750 --> 00:15:02,710
+is it possible to use the EO
+month to get the first day
+
+219
+00:15:02,710 --> 00:15:05,490
+of a month? And the answer
+is yes. You can get the last
+
+220
+00:15:05,490 --> 00:15:09,830
+day of the month and then
+add, use date add, and add one
+
+221
+00:15:09,830 --> 00:15:12,050
+day, and that would give you
+the first day of the month.
+
+222
+00:15:12,730 --> 00:15:14,250
+All right, boo two.
+
+223
+00:15:14,250 --> 00:15:17,490
+Boo who? Boo two is a tough
+one. So if you want to
+
+224
+00:15:17,490 --> 00:15:20,790
+try a tough problem, go
+ahead and pause the video.
+
+225
+00:15:20,850 --> 00:15:25,510
+What it's asking here is this
+gives you the last day of next
+
+226
+00:15:25,510 --> 00:15:29,290
+month using EO month. That's
+great, right? We get the date,
+
+227
+00:15:29,470 --> 00:15:32,470
+we add one month, that'll
+give us the end of next month.
+
+228
+00:15:32,470 --> 00:15:36,900
+But try using date add
+instead and some other key
+
+229
+00:15:36,900 --> 00:15:40,410
+functions that you've learned
+to try to find without using
+
+230
+00:15:40,410 --> 00:15:43,530
+the offset, try to find
+the last day of next month.
+
+231
+00:15:49,820 --> 00:15:53,000
+Here is an example, the top
+one shows it with the EO
+
+232
+00:15:53,000 --> 00:15:56,140
+month, but here it is without
+that, we just have the
+
+233
+00:15:56,140 --> 00:16:00,520
+day, EO month, and then what
+we're doing is date add,
+
+234
+00:16:00,680 --> 00:16:05,260
+we add one month, and then
+we put the get date, and so
+
+235
+00:16:05,260 --> 00:16:10,080
+this would also give you the
+last day of the next month.
+
+236
+00:16:10,800 --> 00:16:12,000
+That's a tough one.
+
+237
+00:16:13,480 --> 00:16:16,280
+Boo, try it number three.
+Go ahead and pause the video
+
+238
+00:16:16,280 --> 00:16:19,580
+if you'd like. Show the
+first day, Monday, Tuesday.
+
+239
+00:16:20,680 --> 00:16:23,920
+There's a character you can
+think of, of the next month.
+
+240
+00:16:24,040 --> 00:16:27,560
+So in this case, you're using a
+few of the tools that you have
+
+241
+00:16:27,560 --> 00:16:29,700
+available to you. In fact, I
+think I have them highlighted,
+
+242
+00:16:29,700 --> 00:16:32,620
+the ones that you might need.
+This one is also a tough one.
+
+243
+00:16:38,910 --> 00:16:41,450
+Here is the code for
+that. Now keep in mind on
+
+244
+00:16:41,450 --> 00:16:43,590
+the lab, you'll have
+plenty of time to practice.
+
+245
+00:16:44,090 --> 00:16:49,570
+So here we have the date add. we're
+adding a day we're also using the
+
+246
+00:16:49,570 --> 00:16:54,250
+end of month so we add one day to
+the end of month which would give us
+
+247
+00:16:54,250 --> 00:17:00,090
+the first day in that particular
+case of the next month all right so
+
+248
+00:17:00,090 --> 00:17:03,410
+if you add the animation on end of
+month which will help round out this
+
+249
+00:17:03,410 --> 00:17:07,110
+particular discussion you'll have
+a lab on date functions with also a
+
+250
+00:17:07,110 --> 00:17:10,950
+few union questions but hopefully
+this gives you a great start on using
+
+251
+00:17:10,950 --> 00:17:15,930
+date functions in your everyday
+use of SQL Server, and I will see
+
+252
+00:17:15,930 --> 00:17:19,550
+you in a few minutes with the union
+video, which will be fairly short,
+
+253
+00:17:19,630 --> 00:17:23,030
+will be a short video to cover that
+topic. Thank you, have a good day.

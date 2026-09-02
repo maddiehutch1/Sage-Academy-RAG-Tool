@@ -1,0 +1,987 @@
+1
+00:00:08,380 --> 00:00:09,020
+Yeah,
+
+2
+00:00:09,440 --> 00:00:10,400
+hello.
+
+3
+00:00:10,580 --> 00:00:14,480
+You tell Provost Corcoran
+to get off my case.
+
+4
+00:00:14,480 --> 00:00:17,260
+Oh, this is Provost Corcoran.
+
+5
+00:00:17,300 --> 00:00:22,100
+I was just saying I'm working
+on case, the case expressions.
+
+6
+00:00:22,100 --> 00:00:24,620
+Yes, I will give, yes, yes, sir.
+
+7
+00:00:24,620 --> 00:00:25,400
+Okay,
+
+8
+00:00:25,800 --> 00:00:29,380
+okay, thank you, goodbye, sir.
+Welcome back to module nine.
+
+9
+00:00:29,380 --> 00:00:32,420
+We just finished views, now
+we go on to case expressions.
+
+10
+00:00:32,760 --> 00:00:35,240
+If you're feeling like this,
+
+11
+00:00:35,680 --> 00:00:39,660
+then maybe exit out of this
+video and work on a different
+
+12
+00:00:39,660 --> 00:00:43,500
+class but if you're feeling
+like this let's continue on.
+
+13
+00:00:43,620 --> 00:00:47,120
+Case Expressions. So what
+is a case expression?
+
+14
+00:00:47,120 --> 00:00:51,160
+Well by definition a case
+expression lets SQL return
+
+15
+00:00:51,160 --> 00:00:53,940
+different values based
+on different conditions.
+
+16
+00:00:54,300 --> 00:00:58,040
+It sounds a little bit complex
+but when you see a simple example
+
+17
+00:00:58,040 --> 00:01:02,000
+hopefully it will make more sense.
+So here's an example we're selecting
+
+18
+00:01:02,000 --> 00:01:05,590
+the first name and the GPA and
+then we have a case expression.
+
+19
+00:01:05,590 --> 00:01:09,800
+Now the case expression examines
+different conditions if the
+
+20
+00:01:09,800 --> 00:01:14,700
+condition is grade point average
+over 3.5 or the condition is GPA is
+
+21
+00:01:14,700 --> 00:01:19,620
+greater than 2.0. It's like an
+if statement but if statements in
+
+22
+00:01:19,620 --> 00:01:24,220
+SQL, you can see the third bullet
+point, SQL if statements are
+
+23
+00:01:24,220 --> 00:01:28,920
+determined control structure. In
+case expressions, they just return an
+
+24
+00:01:28,920 --> 00:01:32,900
+expression. And that expression
+or value would be, if the GPA is
+
+25
+00:01:32,900 --> 00:01:38,300
+greater than 3.5, then the output
+for a new column will be honors.
+
+26
+00:01:38,500 --> 00:01:43,520
+When the GPA is greater than or
+equal to 2.0, then the response
+
+27
+00:01:43,520 --> 00:01:47,720
+in the new column will be good
+standing. And then we have the
+
+28
+00:01:47,720 --> 00:01:52,060
+else part of a case expression,
+and that's like the safety net. If
+
+29
+00:01:52,060 --> 00:01:55,500
+it doesn't fit any of these
+criterias, in this case below a 2,
+
+30
+00:01:55,720 --> 00:02:00,820
+it will say academic warning. And
+then the other parts of it are
+
+31
+00:02:00,820 --> 00:02:04,500
+simply end as, and this will be
+the name of the new column. So
+
+32
+00:02:04,500 --> 00:02:08,460
+this is effectively how we create
+an alias. So to summarize, it's
+
+33
+00:02:08,460 --> 00:02:11,720
+really like a flow chart. That
+flow chart looks at different
+
+34
+00:02:11,720 --> 00:02:15,880
+conditions, and then it provides
+values based on those conditions.
+
+35
+00:02:16,180 --> 00:02:20,260
+We have the safety net and then
+end as the alias. One thing to
+
+36
+00:02:20,260 --> 00:02:27,000
+keep in mind is the first condition
+that is true stops. So if we had
+
+37
+00:02:27,000 --> 00:02:30,900
+these two case expression when
+statements switched around, if you
+
+38
+00:02:30,900 --> 00:02:34,980
+had a 4.0, it would first evaluate
+this one had they been switched,
+
+39
+00:02:34,980 --> 00:02:39,100
+and it would have said good
+standing instead of honors. And
+
+40
+00:02:39,100 --> 00:02:43,600
+so that's another important part
+of case expressions. We're going
+
+41
+00:02:43,600 --> 00:02:47,660
+to run case expressions in two
+different ways. One is called a
+
+42
+00:02:47,660 --> 00:02:52,340
+simple, and I refer to that as a
+type one, and the other is type two,
+
+43
+00:02:52,340 --> 00:02:56,500
+called a searched case expression.
+Let's go ahead and take a look
+
+44
+00:02:56,500 --> 00:03:00,080
+at both. For this business
+challenge to cover case expressions,
+
+45
+00:03:00,480 --> 00:03:04,580
+Polly is giving a presentation,
+and she currently has information
+
+46
+00:03:04,580 --> 00:03:08,200
+about majors, including accounting,
+marketing, finance, but she
+
+47
+00:03:08,200 --> 00:03:12,480
+wants to create another column that
+can provide a little more insight
+
+48
+00:03:12,480 --> 00:03:17,700
+into the students. What she would
+like to do, and Eric, the IT
+
+49
+00:03:17,810 --> 00:03:22,520
+CIO, said no to creating any new
+columns. So Polly, what she'd
+
+50
+00:03:22,520 --> 00:03:26,280
+like to do is create that extra
+column. It will just be temporary,
+
+51
+00:03:26,280 --> 00:03:31,560
+but the extra column will indicate
+who the advisor is for accounting,
+
+52
+00:03:31,560 --> 00:03:35,660
+marketing, finance, and MIS. So
+in this case, we have a situation
+
+53
+00:03:35,660 --> 00:03:39,000
+where we have some conditions,
+and based on those conditions,
+
+54
+00:03:39,000 --> 00:03:43,720
+we want to provide values to a
+new column. So to help Polly solve
+
+55
+00:03:43,720 --> 00:03:47,320
+her challenge of wanting to add
+that extra column and providing
+
+56
+00:03:47,320 --> 00:03:51,100
+additional information, a type 1
+case expression will be perfect.
+
+57
+00:03:51,380 --> 00:03:53,820
+So type 1 is also considered simple.
+
+58
+00:03:53,940 --> 00:03:59,840
+It involves examining a condition
+and these conditions can be numeric
+
+59
+00:03:59,840 --> 00:04:05,080
+or they could include a word like
+risk or a column like risk and then
+
+60
+00:04:05,080 --> 00:04:09,780
+based on those conditions we can
+provide output of value into the new
+
+61
+00:04:09,780 --> 00:04:13,820
+column. Now, the benefit of case
+expressions, one, you don't have to redesign
+
+62
+00:04:13,820 --> 00:04:17,620
+the entire database. That's where
+the CIO said, nope, and we can
+
+63
+00:04:17,620 --> 00:04:22,020
+create that column. And then the
+output is based on a set of rules that
+
+64
+00:04:22,020 --> 00:04:26,060
+you would determine. We'll be using
+the university data set for this video.
+
+65
+00:04:26,060 --> 00:04:30,540
+The data that you have in your
+tables may differ than what I have in
+
+66
+00:04:30,540 --> 00:04:34,860
+my tables, but the concepts will
+still be the same. In this case, to
+
+67
+00:04:34,860 --> 00:04:39,780
+solve Polly's challenge, we want to
+identify this major column for our
+
+68
+00:04:39,780 --> 00:04:43,020
+case expression. That'll represent
+the condition, and then we'll create
+
+69
+00:04:43,020 --> 00:04:47,480
+that new column based on our case
+expression. So let's go ahead and get
+
+70
+00:04:47,480 --> 00:04:52,800
+started. We'll type in select, and
+in this case, let's just say major.
+
+71
+00:04:53,350 --> 00:04:55,560
+That's what we're
+looking at. I'll add the
+
+72
+00:04:55,560 --> 00:04:58,360
+comma, and then we'll
+start our case expression.
+
+73
+00:04:59,120 --> 00:05:01,560
+And to make it a simple case expression,
+
+74
+00:05:01,560 --> 00:05:03,610
+again, this is where I'll include major
+
+75
+00:05:04,620 --> 00:05:11,120
+as the comparison column. We then
+go into the when-thens, so when,
+
+76
+00:05:11,510 --> 00:05:21,220
+and in this case we'll put
+accounting, then, and this is the
+
+77
+00:05:21,220 --> 00:05:26,660
+expression, so this will be Heinz
+is the advisor for accounting.
+
+78
+00:05:29,790 --> 00:05:32,040
+When, and I have a few others, let's say
+
+79
+00:05:32,040 --> 00:05:40,760
+finance, then the advisor is Holland.
+
+80
+00:05:41,100 --> 00:05:44,100
+And I'll just put those
+two for now. A third one
+
+81
+00:05:44,100 --> 00:05:47,620
+is let's go ahead and put
+in the else statement.
+
+82
+00:05:48,360 --> 00:05:50,500
+These are the only two
+we're going to analyze.
+
+83
+00:05:50,500 --> 00:05:54,580
+We have MIS and data analytics and
+I think finance, no, not finance,
+
+84
+00:05:54,580 --> 00:06:00,200
+marketing in there as well. but
+otherwise we'll just say unknown we just
+
+85
+00:06:00,200 --> 00:06:03,700
+don't know who that is so that's
+another piece of the case expression
+
+86
+00:06:03,700 --> 00:06:08,040
+and then I'm going to couch it going
+out one level and including end
+
+87
+00:06:08,180 --> 00:06:13,240
+if I don't include the as I don't
+have the name of the column we have
+
+88
+00:06:13,240 --> 00:06:16,220
+another problem coming up where
+we don't use as because it's in
+
+89
+00:06:16,220 --> 00:06:20,080
+the order by we'll get to that in
+the next video but in this case we
+
+90
+00:06:20,080 --> 00:06:29,760
+can end as and maybe we'll call
+this department advisor and then
+
+91
+00:06:29,760 --> 00:06:32,880
+finally and this is something students
+sometimes miss on the exam too
+
+92
+00:06:32,880 --> 00:06:36,700
+you're so focused on the case
+expression that you forget to indicate
+
+93
+00:06:36,700 --> 00:06:40,520
+that you do need to include which
+table or which table or tables
+
+94
+00:06:40,520 --> 00:06:43,700
+I guess this is coming from in this
+case will indicate this is from
+
+95
+00:06:43,700 --> 00:06:50,340
+the student table let's go ahead
+and run this code and as you can
+
+96
+00:06:50,340 --> 00:06:54,620
+see we've solved the problem that
+Polly had where we have a new column
+
+97
+00:06:54,620 --> 00:07:01,240
+and then we indicate that which
+advisor is related to that particular
+
+98
+00:07:01,240 --> 00:07:05,540
+column and so for your practice
+item Kia blue blue number one
+
+99
+00:07:05,540 --> 00:07:11,010
+go ahead and pause the video and
+recreate what we just discussed and
+
+100
+00:07:12,840 --> 00:07:16,340
+this is an example of what your
+output could look like again you might
+
+101
+00:07:16,340 --> 00:07:20,340
+have a different looking data set,
+but in this case, we've created this
+
+102
+00:07:20,340 --> 00:07:24,600
+new column using a simple case
+expression. One nice thing about having
+
+103
+00:07:24,600 --> 00:07:29,440
+AI available to you is if you have a
+very repetitive process, for instance,
+
+104
+00:07:29,440 --> 00:07:33,220
+this case expression, you may be
+able to find a quick workaround.
+
+105
+00:07:33,220 --> 00:07:40,620
+Here's an example. We indicate that
+when a description of an activity is
+
+106
+00:07:40,620 --> 00:07:44,880
+odd, one, three, five, you can see
+that it's always offered in the fall
+
+107
+00:07:44,880 --> 00:07:49,340
+and anytime that it's even two four
+six it would always be offered in
+
+108
+00:07:49,340 --> 00:07:54,520
+the spring and this would be fine
+except the challenge is what happens
+
+109
+00:07:54,520 --> 00:07:59,060
+if you now have a thousand of these
+to do it follows the same simple
+
+110
+00:07:59,060 --> 00:08:05,200
+principle even and odd numbers but you
+have so many to do and so one of the
+
+111
+00:08:05,200 --> 00:08:09,220
+nice things with ai you can ask for
+solutions some of you are familiar
+
+112
+00:08:09,220 --> 00:08:13,660
+with the mod operator, and in this
+case, we can use the mod operator.
+
+113
+00:08:13,820 --> 00:08:16,820
+Here's an example of how
+it would look. Select case
+
+114
+00:08:16,820 --> 00:08:20,400
+description comma, and
+then we have the case, and
+
+115
+00:08:20,400 --> 00:08:23,480
+now our case, what we're
+indicating is activity ID,
+
+116
+00:08:23,680 --> 00:08:27,280
+which is showing that it is a simple
+case expression, case and then
+
+117
+00:08:27,280 --> 00:08:31,180
+activity ID, but then we're using
+the mod operator too, and effectively
+
+118
+00:08:31,180 --> 00:08:35,380
+with mod, we're looking for is
+there a remainder, yes or no. If
+
+119
+00:08:35,380 --> 00:08:38,760
+there's no remainder, then we know
+it has to be spring. If If there
+
+120
+00:08:38,760 --> 00:08:42,040
+is a remainder, then it's got to
+be fall because it's an odd number.
+
+121
+00:08:42,180 --> 00:08:45,250
+Moving on to type 2 or
+search case expressions.
+
+122
+00:08:45,250 --> 00:08:50,060
+Take a look at this one and see if
+you can tell what the difference
+
+123
+00:08:50,060 --> 00:08:54,780
+is between the type 1 and the type
+2, if anything stands out to you.
+
+124
+00:08:56,000 --> 00:09:00,040
+And one thing would be, in the select
+description, we have the comma.
+
+125
+00:09:00,040 --> 00:09:04,320
+We still need the comma, but notice
+for case, we don't have anything.
+
+126
+00:09:04,320 --> 00:09:07,760
+We go right into the win
+statement. And what this does, it's
+
+127
+00:09:07,760 --> 00:09:12,400
+searched, it's advanced, type two,
+it allows you to use a little more
+
+128
+00:09:12,400 --> 00:09:16,160
+flexibility with the operators,
+greater than, less than, less than,
+
+129
+00:09:16,160 --> 00:09:19,260
+equal to, and so forth. So in this
+case, it's suggesting when the
+
+130
+00:09:19,260 --> 00:09:25,400
+minimum age is greater than 19, then
+20s. And when minimum age is greater
+
+131
+00:09:25,400 --> 00:09:29,580
+than 12, which would move you
+right up to 19, then you must be in
+
+132
+00:09:29,580 --> 00:09:34,340
+the teens. otherwise we have
+just a baby and then we end it as
+
+133
+00:09:34,340 --> 00:09:37,980
+searched and then from the activity
+table and if you remember from the
+
+134
+00:09:37,980 --> 00:09:42,000
+original example on grade point average
+the order of the case expression
+
+135
+00:09:42,000 --> 00:09:45,500
+mattered because if we had put
+the 2.0 grade point above the 3
+
+136
+00:09:45,500 --> 00:09:49,360
+.0 then somebody with a three point
+would get the response of a 2.0
+
+137
+00:09:49,360 --> 00:09:53,200
+grade point average this is the
+same thing if we moved minimum age
+
+138
+00:09:53,200 --> 00:09:58,680
+above the 19 if we move the minimum
+age is greater than 12 then if
+
+139
+00:09:58,680 --> 00:10:03,020
+you're 27 years old, the result
+would be, is this person greater than
+
+140
+00:10:03,020 --> 00:10:07,220
+12? Yes, and they would be labeled
+as teen. So just like the original
+
+141
+00:10:07,220 --> 00:10:10,600
+case expression example, you want
+to be very careful to make sure
+
+142
+00:10:10,600 --> 00:10:15,360
+that the order of your case expression
+accurately depicts the goals
+
+143
+00:10:15,360 --> 00:10:18,460
+that you're trying to accomplish
+for this particular type of search.
+
+144
+00:10:18,740 --> 00:10:24,000
+Let's take a look at a sample
+problem that's easily solved using a
+
+145
+00:10:24,000 --> 00:10:29,120
+type 2 or search case expression.
+In this particular situation let's
+
+146
+00:10:29,120 --> 00:10:33,600
+assume that we have some scholarships
+available for non-traditional
+
+147
+00:10:33,600 --> 00:10:37,800
+students and by non-traditional we just
+mean and your data might be different
+
+148
+00:10:37,800 --> 00:10:40,160
+you might have if you're following
+along for a blue track you
+
+149
+00:10:40,160 --> 00:10:43,560
+might just have to put in some dates
+that fit your particular data set.
+
+150
+00:10:43,560 --> 00:10:46,380
+Traditional versus non-traditional
+we're saying anybody born
+
+151
+00:10:46,380 --> 00:10:52,060
+before 1991 they would be considered
+a non-traditional student.
+
+152
+00:10:52,200 --> 00:10:55,340
+Well let's go ahead and
+see what we can do with
+
+153
+00:10:55,340 --> 00:10:58,310
+a searched case expression.
+So we can say select
+
+154
+00:10:59,240 --> 00:11:05,300
+first name last name and
+how about date of birth.
+
+155
+00:11:08,020 --> 00:11:12,480
+We won't include excuse me we
+will include a comma and we
+
+156
+00:11:12,480 --> 00:11:14,960
+will include the column that
+we're interested in for our
+
+157
+00:11:14,960 --> 00:11:20,380
+case but we include those
+columns down below. We still use
+
+158
+00:11:20,380 --> 00:11:23,820
+our wins, and in this case
+we could indicate when the
+
+159
+00:11:26,380 --> 00:11:32,900
+date of birth is less than,
+and let's put a year in, 1991,
+
+160
+00:11:33,200 --> 00:11:39,130
+we use year and, excuse me,
+year with a dash, hello, 1991,
+
+161
+00:11:39,220 --> 00:11:43,480
+let's put 01 and 01. And we
+include this in quotes. If If we
+
+162
+00:11:43,480 --> 00:11:46,580
+don't, one of the problems is
+SQL may be trying to take 1991
+
+163
+00:11:46,580 --> 00:11:50,260
+minus one minus one, and so
+that's why we put these dates
+
+164
+00:11:50,260 --> 00:11:56,620
+in single quotes. When we have
+that, we need our whens and
+
+165
+00:11:56,620 --> 00:12:01,300
+thens, so then we can put, this
+would be a non-traditional.
+
+166
+00:12:05,380 --> 00:12:09,820
+Otherwise, then they must be traditional.
+
+167
+00:12:13,160 --> 00:12:15,890
+And then we'll close
+this off with end as.
+
+168
+00:12:20,240 --> 00:12:22,080
+We'll put student type.
+
+169
+00:12:24,630 --> 00:12:26,540
+And then I tend to forget it.
+
+170
+00:12:26,540 --> 00:12:28,460
+Focused on the case expression, we forget
+
+171
+00:12:28,460 --> 00:12:33,440
+what table it is and
+from the student table.
+
+172
+00:12:33,810 --> 00:12:35,580
+Let's go ahead and run this.
+
+173
+00:12:37,180 --> 00:12:39,580
+1985 would be a non-traditional.
+
+174
+00:12:39,670 --> 00:12:42,960
+1990 is non-traditional. But
+then when we get to a 1994, it's
+
+175
+00:12:42,960 --> 00:12:48,520
+traditional. And keep in mind the order
+of operation in which SQL reads. It
+
+176
+00:12:48,520 --> 00:12:53,300
+reads the select statement second
+to last only before order by. If
+
+177
+00:12:53,300 --> 00:12:56,340
+we wanted to get rid of all of the
+traditional students in our where
+
+178
+00:12:56,340 --> 00:13:03,020
+clause, we would have to not refer
+to the student type. We would have
+
+179
+00:13:03,020 --> 00:13:06,960
+to say where and then put the
+formula in again where the date of
+
+180
+00:13:06,960 --> 00:13:10,340
+birth is either greater than or less
+than in order to solve that problem
+
+181
+00:13:10,340 --> 00:13:14,360
+with the WHERE clause, because
+again, the SELECT statement alias
+
+182
+00:13:14,360 --> 00:13:17,420
+can only be used in the ORDER BY
+because it's the last column read.
+
+183
+00:13:19,830 --> 00:13:22,240
+All right, we've done a simple
+and a search. Let's take
+
+184
+00:13:22,240 --> 00:13:25,220
+a look at these two examples,
+just comparing the two.
+
+185
+00:13:25,300 --> 00:13:29,040
+We have the case minH, so we know
+this is simple. We have the case
+
+186
+00:13:29,040 --> 00:13:32,660
+with nothing, they both have commas.
+But in this case, you would have
+
+187
+00:13:32,660 --> 00:13:39,560
+to say 22, then 20s, 21, then
+20s, and so forth, in 23, 24, 25.
+
+188
+00:13:39,560 --> 00:13:43,380
+Where in this case, you could say
+where it's greater than, in this
+
+189
+00:13:43,380 --> 00:13:46,850
+case, probably or less than 30, of
+course, than they're in their 20s.
+
+190
+00:13:46,860 --> 00:13:51,620
+Otherwise, teens or just a baby.
+In this one, the same thing. When
+
+191
+00:13:51,620 --> 00:13:56,880
+19, teens. When 18, teens. When 17,
+teens. And so you have to create
+
+192
+00:13:56,880 --> 00:14:01,300
+a lot more rows, wins and thens
+if you're using a simple one for
+
+193
+00:14:01,300 --> 00:14:04,880
+this particular use. Now, the use
+to solve Well, Polly's problem
+
+194
+00:14:04,880 --> 00:14:08,780
+was simple when accounting finance,
+so when you're using columns that
+
+195
+00:14:08,780 --> 00:14:13,680
+have character data, the simple
+is typically an easier one to use.
+
+196
+00:14:13,680 --> 00:14:17,220
+And that concludes this brief
+presentation on case expressions.
+
+197
+00:14:17,220 --> 00:14:21,700
+You'll have plenty of time to apply
+these two types of case expressions
+
+198
+00:14:21,700 --> 00:14:25,480
+during the lab. And please tune
+in for the next video. The next
+
+199
+00:14:25,480 --> 00:14:30,160
+video is brief on using a case
+expression in the order by clause, and
+
+200
+00:14:30,160 --> 00:14:33,640
+this question is on the exam. You'll
+know exactly what it is before
+
+201
+00:14:33,640 --> 00:14:36,980
+you get there. Have a great day.
+We'll see you in the next video

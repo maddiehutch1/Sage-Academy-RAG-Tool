@@ -1,0 +1,1157 @@
+1
+00:00:07,480 --> 00:00:11,260
+If you haven't watched the first
+video on query tuning, highly
+
+2
+00:00:11,260 --> 00:00:15,180
+recommend it, where we start with
+heaps and then move into clustered
+
+3
+00:00:15,180 --> 00:00:20,200
+indexes, which are created when
+you establish a primary key.
+
+4
+00:00:20,200 --> 00:00:23,100
+And now we'll look at query tuning
+
+5
+00:00:23,500 --> 00:00:27,800
+through the lens of non-clustered
+indexes. And these are the
+
+6
+00:00:27,800 --> 00:00:31,880
+indexes that you can use to
+help make code more efficient.
+
+7
+00:00:32,220 --> 00:00:36,900
+And a non-clustered index is
+a separate data structure.
+
+8
+00:00:36,980 --> 00:00:41,420
+It's also a B-tree. So if you first
+think about the clustered index,
+
+9
+00:00:41,420 --> 00:00:47,220
+that's how it's physically stored
+in pages in your database files.
+
+10
+00:00:47,460 --> 00:00:50,140
+And you can only have one
+clustered index because
+
+11
+00:00:50,140 --> 00:00:52,940
+you can only physically
+store something one way.
+
+12
+00:00:53,120 --> 00:00:57,220
+So you think about your closet. You
+can organize your closet one way,
+
+13
+00:00:57,420 --> 00:01:00,740
+and you can't really do anything
+else to that closet, but you
+
+14
+00:01:00,740 --> 00:01:04,290
+could create a little sheet
+of paper on the door that kind
+
+15
+00:01:04,290 --> 00:01:09,040
+of creates a map to certain
+areas of your closet. So it's not
+
+16
+00:01:09,040 --> 00:01:12,180
+physical storage, but it's kind
+of a logical way to organize.
+
+17
+00:01:12,180 --> 00:01:15,960
+And so a non-clustered index
+is not physical. It's in the
+
+18
+00:01:15,960 --> 00:01:19,460
+form of a B-tree. It's not
+physical, but it also provides a
+
+19
+00:01:19,460 --> 00:01:25,230
+roadmap, and that roadmap
+includes links to your original or
+
+20
+00:01:25,440 --> 00:01:29,400
+pointers to your original
+clustered index. And so the idea
+
+21
+00:01:29,400 --> 00:01:32,160
+of a non-clustered index is
+to make things more efficient,
+
+22
+00:01:33,410 --> 00:01:36,620
+and in a sense you think of
+the back of a textbook where
+
+23
+00:01:36,620 --> 00:01:40,760
+you have an index where you
+can quickly look things up so
+
+24
+00:01:40,760 --> 00:01:44,960
+it's not the physical pages
+like your first pages prior to
+
+25
+00:01:44,960 --> 00:01:47,900
+an index but it does help you
+find things more efficiently
+
+26
+00:01:47,900 --> 00:01:51,160
+but it doesn't physically
+change how anything is stored
+
+27
+00:01:51,460 --> 00:01:55,520
+and other than a pointer
+is provided to help quickly
+
+28
+00:01:55,520 --> 00:02:02,810
+link to these row IDs using
+row IDs in a clustered index.
+
+29
+00:02:06,280 --> 00:02:11,300
+This diagram is really good
+illustration of a non-clustered
+
+30
+00:02:11,300 --> 00:02:14,360
+index because you first have
+your database itself. So
+
+31
+00:02:14,360 --> 00:02:17,200
+again, think of your closet.
+It's physically storing things.
+
+32
+00:02:17,390 --> 00:02:20,240
+And then the non-clustered index,
+like that piece of paper you
+
+33
+00:02:20,240 --> 00:02:23,120
+stick on the door that kind of
+points to things where they are
+
+34
+00:02:23,120 --> 00:02:27,220
+located to help make it easier
+to find things in your closet.
+
+35
+00:02:27,640 --> 00:02:31,800
+and then the way the data are
+outputted or found are based
+
+36
+00:02:31,800 --> 00:02:35,600
+on both the physical and the
+logical non-clustered index.
+
+37
+00:02:35,600 --> 00:02:38,360
+Now, you can't just create a non
+-clustered index on everything. That
+
+38
+00:02:38,360 --> 00:02:41,580
+would eventually slow things down,
+and that might be something you have
+
+39
+00:02:41,580 --> 00:02:46,980
+a short conversation with AI on
+regarding having too many non-clustered
+
+40
+00:02:46,980 --> 00:02:54,200
+indexes. But the idea of even
+covering the topic of query tuning,
+
+41
+00:02:54,200 --> 00:02:59,020
+The textbook that Ben Gaughan uses
+is almost, I think, like 850 pages.
+
+42
+00:02:59,060 --> 00:03:04,440
+So we're condensing and trying to
+get at least one path through or
+
+43
+00:03:04,440 --> 00:03:08,260
+a slice through where you can
+understand heaps, clustered index,
+
+44
+00:03:08,260 --> 00:03:10,600
+and now we're looking at the non
+-clustered index, which is really
+
+45
+00:03:10,600 --> 00:03:14,880
+the things that give you power to
+make your code more efficient. Now,
+
+46
+00:03:14,880 --> 00:03:18,720
+a non-clustered index, you typically
+look at the where clause, a
+
+47
+00:03:18,720 --> 00:03:25,180
+join, and an order by in order to
+make the queries more efficient.
+
+48
+00:03:25,790 --> 00:03:29,080
+And we'll look at a couple of these,
+and then your lab will take you
+
+49
+00:03:29,080 --> 00:03:32,340
+into a little bit more detail.
+So let's take a look at the first
+
+50
+00:03:32,340 --> 00:03:37,040
+one. And I may have shown this in
+your introductory class just as a
+
+51
+00:03:37,040 --> 00:03:42,400
+harbinger to query tuning. but the
+number one rule that we'll start
+
+52
+00:03:42,400 --> 00:03:46,960
+with on query tuning is if you if
+you don't need the order by then
+
+53
+00:03:46,960 --> 00:03:52,960
+don't use it and if you are always
+or frequently needing an order by
+
+54
+00:03:52,960 --> 00:03:58,940
+that's when you can create a non
+-clustered index and again the non
+
+55
+00:03:58,940 --> 00:04:04,080
+-clustered index typically occurs to
+make a where a join and an order by
+
+56
+00:04:04,080 --> 00:04:07,380
+more efficient and then in a
+minute I'll explain how a select
+
+57
+00:04:07,380 --> 00:04:13,380
+statement, you'll use the word include
+to add some columns in your select
+
+58
+00:04:13,380 --> 00:04:17,060
+statement that are necessary so
+you don't do what's called a key
+
+59
+00:04:17,060 --> 00:04:19,700
+lookup, but we'll get to that in just
+a minute. So speaking of the this
+
+60
+00:04:19,700 --> 00:04:23,760
+or that, these are the two options
+we have. We can select the top
+
+61
+00:04:24,140 --> 00:04:29,080
+5,000 rows and then sale ID,
+sale date, customer ID from
+
+62
+00:04:29,080 --> 00:04:33,340
+the sale table and order
+by sale date, Or the other
+
+63
+00:04:33,340 --> 00:04:38,260
+option is we don't use the
+order by. So let me copy this
+
+64
+00:04:38,260 --> 00:04:41,600
+code into SQL Server, and
+then we'll take a look at it.
+
+65
+00:04:43,820 --> 00:04:51,380
+Let's take a look at our top
+5,000 rows from the DBO sale.
+
+66
+00:04:51,960 --> 00:04:56,700
+And these DDL, DML will
+be provided in the module.
+
+67
+00:04:57,280 --> 00:04:59,920
+Or if it's not, the data files aren't in
+
+68
+00:04:59,920 --> 00:05:01,680
+the module. They're
+certainly under files.
+
+69
+00:05:01,940 --> 00:05:04,380
+but I'll try to provide a
+link to that or at least
+
+70
+00:05:04,380 --> 00:05:06,940
+an announcement to point
+you to the files to run
+
+71
+00:05:06,940 --> 00:05:10,980
+this code for both the
+video activity and the lab.
+
+72
+00:05:11,260 --> 00:05:16,320
+So we run this code. I do have
+this option, recompile. The idea,
+
+73
+00:05:16,320 --> 00:05:19,460
+and I don't know if it's the
+best code to use, but the idea
+
+74
+00:05:19,460 --> 00:05:22,920
+would be to clear out the cache
+after this runs so it's a little
+
+75
+00:05:22,920 --> 00:05:26,700
+bit easier to keep track of how
+efficiently things are running so
+
+76
+00:05:26,700 --> 00:05:30,820
+it's not just stored in cache,
+which would tend to run faster.
+
+77
+00:05:30,820 --> 00:05:37,030
+But if If we run this code, we get
+our output, and then our executed
+
+78
+00:05:37,620 --> 00:05:43,200
+execution plan is here. Our
+actual execution plan is here.
+
+79
+00:05:43,200 --> 00:05:46,080
+The database engine is so efficient,
+though, we should be able to
+
+80
+00:05:46,080 --> 00:05:51,800
+use the estimated execution plan
+for most of our query tuning.
+
+81
+00:05:51,840 --> 00:05:57,120
+So I'm going to click on this
+estimated plan, and on the plan, again,
+
+82
+00:05:57,120 --> 00:06:01,450
+we'll read it from right to left.
+If we put our mouse cursor over the
+
+83
+00:06:01,450 --> 00:06:04,370
+cluster, you can see in this case
+it's doing a clustered index scan.
+
+84
+00:06:04,370 --> 00:06:10,040
+So it's finding information from
+each row or from each page in our
+
+85
+00:06:10,260 --> 00:06:14,460
+clustered index because it's
+grabbing every data point we have.
+
+86
+00:06:14,600 --> 00:06:20,400
+The cost of it, it looks like 41.
+We have 41 rows that are going
+
+87
+00:06:20,400 --> 00:06:24,560
+to be read and then it tells how
+fast it is and then the IO cost is
+
+88
+00:06:24,560 --> 00:06:28,220
+just how many times it's connecting
+or reconnecting to our input
+
+89
+00:06:28,220 --> 00:06:31,860
+and output. code. And so when we
+read it, 100% of the cost is this
+
+90
+00:06:31,860 --> 00:06:36,360
+scan, we use the top function,
+which doesn't cost anything. So 100
+
+91
+00:06:36,360 --> 00:06:43,440
+% of the cost is our clustered index
+scan. And if I go to the other
+
+92
+00:06:43,440 --> 00:06:47,520
+option, which is the order by, so
+now we have order by sale date.
+
+93
+00:06:48,140 --> 00:06:51,100
+And order by sale date
+is not the clustered
+
+94
+00:06:51,100 --> 00:06:53,320
+index, I think the
+clustered index is sale ID.
+
+95
+00:06:54,780 --> 00:06:59,400
+So And so if we run this code,
+you can see 20% of the cost
+
+96
+00:06:59,810 --> 00:07:02,680
+is that clustered index scan.
+On the other one, it was 100.
+
+97
+00:07:02,680 --> 00:07:07,020
+And then 78% of the cost
+of this is this order buy.
+
+98
+00:07:07,840 --> 00:07:14,180
+If this 22%, if the original scan that we
+
+99
+00:07:14,180 --> 00:07:17,640
+did, 100% of it, let's
+say it took 10 seconds.
+
+100
+00:07:17,880 --> 00:07:21,340
+Now, almost 80% of it is
+this sort and cost. So we
+
+101
+00:07:21,340 --> 00:07:24,500
+would have to add, what,
+another 40 seconds to this?
+
+102
+00:07:25,120 --> 00:07:28,780
+80%. So this would cost
+about 50 seconds compared to
+
+103
+00:07:28,780 --> 00:07:31,540
+10 seconds. So depending on
+the data size, it can be a
+
+104
+00:07:31,540 --> 00:07:36,260
+very significant cost by
+using the order by. And now
+
+105
+00:07:36,260 --> 00:07:38,540
+we'll take a look at how we
+can potentially fix that.
+
+106
+00:07:41,800 --> 00:07:45,960
+So these are the two comparables.
+The top one here, reading from right
+
+107
+00:07:45,960 --> 00:07:52,840
+to left 22% of the cost is to scan
+here 20 100% is to scan 78% so more
+
+108
+00:07:52,840 --> 00:07:58,160
+than you know more than far more of
+the cost is built in that order by
+
+109
+00:07:58,160 --> 00:08:02,640
+and so now let's take a look at how
+we can solve that and clearly one
+
+110
+00:08:02,640 --> 00:08:06,970
+of them the item that we're going to
+create is a non-clustered index on
+
+111
+00:08:07,650 --> 00:08:10,800
+and in this case I think it was
+sale date so so we know that's the
+
+112
+00:08:10,800 --> 00:08:14,810
+initial goal and then we'll find in a
+minute that we also need to use include
+
+113
+00:08:14,810 --> 00:08:19,860
+to add some columns from the select
+statement stick with me here some
+
+114
+00:08:19,860 --> 00:08:23,480
+columns from the select statement
+so that it will also run efficiently
+
+115
+00:08:23,480 --> 00:08:27,400
+because if we don't have those
+included then that non-clustered index
+
+116
+00:08:27,400 --> 00:08:31,980
+just on the order by doesn't necessarily
+help us you can see here that
+
+117
+00:08:31,980 --> 00:08:36,300
+that top and sort which took up
+78 of the cost is very inefficient
+
+118
+00:08:36,300 --> 00:08:39,540
+because first you have to filter it
+and then you have to sort it and then
+
+119
+00:08:39,540 --> 00:08:43,280
+you can finally look into the rows.
+But it creates something of a loop
+
+120
+00:08:43,280 --> 00:08:46,940
+where each row has to be independently
+looked at in order to figure out
+
+121
+00:08:46,940 --> 00:08:52,220
+how to sort. Think about ordering
+blocks or something. It takes a long
+
+122
+00:08:52,220 --> 00:08:57,120
+time in order to figure out A to
+Z, put things in order. And it's an
+
+123
+00:08:57,120 --> 00:09:01,500
+expensive cost, in this case, 78%.
+Where when we just did the top function,
+
+124
+00:09:01,500 --> 00:09:05,520
+everything was already ordered. It
+just grabbed from the data file,
+
+125
+00:09:05,520 --> 00:09:08,050
+grabbed the top. In fact, it probably
+made it a little more efficient
+
+126
+00:09:08,240 --> 00:09:12,280
+because it didn't have to grab
+all of the data in the data set.
+
+127
+00:09:12,280 --> 00:09:15,190
+And so that doesn't slow
+the data set down. But
+
+128
+00:09:15,190 --> 00:09:17,200
+let's take a look at
+our non-clustered index
+
+129
+00:09:18,740 --> 00:09:21,840
+and see how we're going to use
+it. Now, what we're thinking
+
+130
+00:09:21,840 --> 00:09:25,800
+of is we want to create a non
+-clustered index on sale date.
+
+131
+00:09:26,300 --> 00:09:28,800
+And this isn't typed quite right.
+
+132
+00:09:29,200 --> 00:09:30,940
+Let me go to the next one here.
+
+133
+00:09:31,700 --> 00:09:33,560
+So this is what we're thinking to
+
+134
+00:09:33,560 --> 00:09:36,120
+type. So create a non-clustered index,
+
+135
+00:09:36,640 --> 00:09:41,540
+IX, I keep moving my mouse,
+sorry, IX for non-clustered
+
+136
+00:09:41,540 --> 00:09:44,780
+index, sales, the name of the
+table, sale date, and then we use
+
+137
+00:09:44,780 --> 00:09:48,260
+the on clause like we use in
+a join, on, we need the full
+
+138
+00:09:48,260 --> 00:09:52,560
+schema, so dbodatabaseowner
+.sale, and then sale date is
+
+139
+00:09:52,560 --> 00:09:57,880
+going to be our non-clustered
+index. So let me run this code.
+
+140
+00:09:59,180 --> 00:10:01,420
+We have it successful.
+
+141
+00:10:01,940 --> 00:10:04,340
+Then let's go back to the
+one with the order by.
+
+142
+00:10:04,340 --> 00:10:07,240
+So we do have a non
+-clustered index on sale date.
+
+143
+00:10:07,460 --> 00:10:08,740
+Very cool.
+
+144
+00:10:08,740 --> 00:10:11,320
+So let me execute that.
+
+145
+00:10:11,320 --> 00:10:13,600
+Or we could have just
+hit the execution plan.
+
+146
+00:10:13,600 --> 00:10:17,340
+But it looks good,
+right? 25% of the cost.
+
+147
+00:10:17,940 --> 00:10:23,400
+But remember, 78% of the cost
+was that order by. Now we have
+
+148
+00:10:23,400 --> 00:10:27,400
+this thing called key lookup,
+which is taking 73%. So we're
+
+149
+00:10:27,400 --> 00:10:30,320
+not much better. And then we
+have a nested loop with the top.
+
+150
+00:10:30,320 --> 00:10:33,820
+And then that's our cost. And
+also on the left, it does give
+
+151
+00:10:33,820 --> 00:10:38,580
+you more information on the entire
+cash plan and execution plan.
+
+152
+00:10:38,760 --> 00:10:42,660
+And then before I forget,
+too, under each table, as you
+
+153
+00:10:42,660 --> 00:10:45,860
+expand your tables, so this
+one was done on the sale table.
+
+154
+00:10:45,860 --> 00:10:50,800
+But as you expand your tables,
+you can find indexes. And
+
+155
+00:10:50,800 --> 00:10:54,100
+then if I refresh, we certainly
+have clustered indexes.
+
+156
+00:10:54,250 --> 00:10:56,520
+What did we create? This
+one on the sale table.
+
+157
+00:10:56,520 --> 00:10:59,140
+So if I scroll down to the sale table,
+
+158
+00:11:01,140 --> 00:11:04,650
+and right now it just has the
+clustered index, but we created,
+
+159
+00:11:04,860 --> 00:11:08,000
+didn't we create another one? So
+there you can see the clustered
+
+160
+00:11:08,000 --> 00:11:10,740
+index that we created. So we
+can right-click and drop it.
+
+161
+00:11:12,540 --> 00:11:15,760
+But we have this key
+lookup. And let's take
+
+162
+00:11:15,760 --> 00:11:18,270
+a look at what that
+key lookup problem is.
+
+163
+00:11:18,720 --> 00:11:22,160
+All right. So we ran
+this non-clustered index.
+
+164
+00:11:22,320 --> 00:11:25,280
+It made things just a
+little bit more efficient.
+
+165
+00:11:25,280 --> 00:11:27,720
+It created the non
+-clustered index on sale
+
+166
+00:11:27,720 --> 00:11:29,420
+date, so this would run more efficiently.
+
+167
+00:11:29,520 --> 00:11:33,600
+The problem is, in our select
+statement, we have sale ID.
+
+168
+00:11:33,840 --> 00:11:37,000
+Now, sale ID is our clustered
+index, so it's okay.
+
+169
+00:11:37,880 --> 00:11:41,100
+But the challenge we have is
+when it's running this code
+
+170
+00:11:41,100 --> 00:11:44,100
+and order buying, this is
+ordered now through that B tree,
+
+171
+00:11:44,100 --> 00:11:47,080
+through a non-clustered index,
+but there's an additional
+
+172
+00:11:47,080 --> 00:11:49,060
+line of code that we
+need to add to our non
+
+173
+00:11:49,060 --> 00:11:51,600
+-clustered index to make this
+work the way it's written.
+
+174
+00:11:51,630 --> 00:11:53,430
+And what we do is we include,
+
+175
+00:11:54,240 --> 00:11:55,540
+we used the word include,
+
+176
+00:11:55,540 --> 00:11:57,720
+and we indicate the columns
+
+177
+00:11:58,240 --> 00:12:01,200
+that are not in a clustered index. So
+
+178
+00:12:01,200 --> 00:12:03,500
+if you see sale date and customer ID,
+
+179
+00:12:03,760 --> 00:12:08,280
+that is currently causing the
+problem with this key lookup. And so
+
+180
+00:12:08,280 --> 00:12:12,080
+every time it's running, we have
+the non-clustered index on sale
+
+181
+00:12:12,080 --> 00:12:15,200
+date. That's fine. But each time
+it's doing that, it has to go and
+
+182
+00:12:15,200 --> 00:12:19,140
+look up those two columns. columns,
+the two additional columns.
+
+183
+00:12:19,500 --> 00:12:23,940
+And so that is what's creating our
+problem. And we don't want to see
+
+184
+00:12:23,940 --> 00:12:27,240
+key lookup just like we don't
+want to see top in order because
+
+185
+00:12:27,570 --> 00:12:32,020
+effectively it has to do a complete
+loop on every row in the data set.
+
+186
+00:12:32,020 --> 00:12:35,320
+And so this is extremely
+expensive. The nice thing is
+
+187
+00:12:35,320 --> 00:12:38,360
+SQL server, as you can see
+under tune tips, says add
+
+188
+00:12:38,360 --> 00:12:42,920
+missing columns as include
+that will cover this query.
+
+189
+00:12:43,100 --> 00:12:46,620
+If you look, I'm going to drop the index.
+
+190
+00:12:49,670 --> 00:12:51,160
+I'm doing it this way. I could also
+
+191
+00:12:51,160 --> 00:12:53,640
+right-click over here, but this is fancy.
+
+192
+00:12:53,960 --> 00:12:57,320
+Now we've dropped that. What
+we want to do is we still
+
+193
+00:12:57,320 --> 00:12:59,300
+want to do the same thing.
+Our index is going to be
+
+194
+00:12:59,300 --> 00:13:02,440
+on sale, but you can see
+the additional code there to
+
+195
+00:13:02,440 --> 00:13:06,840
+address the columns. Include
+sale ID and customer ID.
+
+196
+00:13:09,940 --> 00:13:12,560
+Sale date is already included
+there, and I don't think
+
+197
+00:13:12,560 --> 00:13:14,800
+we'd have to include sale
+ID, but let's leave it
+
+198
+00:13:14,800 --> 00:13:18,240
+in for now because it's
+already on a clustered index.
+
+199
+00:13:20,980 --> 00:13:23,880
+But I'm going to paste this
+code in, create a non-clustered
+
+200
+00:13:23,880 --> 00:13:26,700
+index. Everything is the same,
+and it's on the sale date.
+
+201
+00:13:27,460 --> 00:13:31,460
+We want to include these
+columns, which are not part of
+
+202
+00:13:31,460 --> 00:13:34,240
+the clustered index. We only
+have sale date as part of it.
+
+203
+00:13:34,240 --> 00:13:39,060
+So effectively, we're creating a
+non-clustered index with these added
+
+204
+00:13:39,060 --> 00:13:43,020
+effectively to our pointer, we're
+adding this include to our pointer
+
+205
+00:13:43,020 --> 00:13:45,680
+to make it more efficient so it
+doesn't have to go back to the main
+
+206
+00:13:45,680 --> 00:13:53,700
+table storage in order to efficiently
+run. So now we've run this code
+
+207
+00:13:55,560 --> 00:13:59,980
+to create the index. And
+then if we run this code
+
+208
+00:13:59,980 --> 00:14:03,220
+here, we execute it. Oh,
+it seemed a little faster.
+
+209
+00:14:03,460 --> 00:14:06,700
+Not enough rows probably seem
+faster. But now if we do the check,
+
+210
+00:14:07,070 --> 00:14:10,460
+if you look at this, is it's
+the same as if we didn't use the
+
+211
+00:14:10,460 --> 00:14:15,740
+order by we have 100% of the cost
+is the non clustered index scan.
+
+212
+00:14:16,640 --> 00:14:20,760
+And this this runs effectively
+like we didn't have the order by
+
+213
+00:14:20,760 --> 00:14:24,980
+at all. So what we had to do
+two things include the sale date
+
+214
+00:14:24,980 --> 00:14:28,760
+as our main non clustered index.
+And then because we had sale
+
+215
+00:14:28,760 --> 00:14:32,200
+ID and customer ID, in addition
+to the sale date, we would
+
+216
+00:14:32,200 --> 00:14:34,640
+include those there. And again,
+I don't think you would need sale
+
+217
+00:14:34,640 --> 00:14:37,560
+ID because that's a clustered
+index. So that's I don't you would
+
+218
+00:14:37,560 --> 00:14:39,800
+be find without that. So you
+could have run it without this.
+
+219
+00:14:40,160 --> 00:14:46,020
+And now we have it running perfectly
+or as efficient as possible. And
+
+220
+00:14:46,020 --> 00:14:51,700
+we get rid of that problematic key
+lookup, which is another super slow.
+
+221
+00:14:52,560 --> 00:14:57,480
+So the non-clustered index is a
+lot of times it's going to have two
+
+222
+00:14:57,480 --> 00:15:01,160
+parts to it. The non-clustered index,
+for instance, the order by sale
+
+223
+00:15:01,160 --> 00:15:04,940
+date. And then the second part
+are just which columns do you want
+
+224
+00:15:04,940 --> 00:15:11,280
+to run that, which columns do you
+want to run. And if they're not in
+
+225
+00:15:11,280 --> 00:15:15,160
+the include statement, then it's
+just as if you didn't create the non
+
+226
+00:15:15,160 --> 00:15:17,640
+-clustered index because it would
+still have to go to the physical
+
+227
+00:15:17,640 --> 00:15:22,020
+and loop around each time. So that's
+quite a firehose of information.
+
+228
+00:15:22,200 --> 00:15:29,100
+But by using include, you're going
+from this problem, the original one,
+
+229
+00:15:29,100 --> 00:15:33,060
+without a non-clustered index to
+a regular non-clustered index with
+
+230
+00:15:33,060 --> 00:15:36,720
+just the sale date, which gives us
+this darn key lookup. And then by
+
+231
+00:15:36,720 --> 00:15:42,920
+adding the word include, we go and we
+do a nice index scan and this looks
+
+232
+00:15:43,040 --> 00:15:47,000
+perfect. And then we can drop that.
+
+233
+00:15:48,020 --> 00:15:52,120
+We can drop that non
+-clustered index and look at
+
+234
+00:15:52,120 --> 00:15:54,920
+another problem. And
+I'll wrap this up for now
+
+235
+00:15:54,920 --> 00:15:59,860
+as our video two covering
+the order by clause.
+
+236
+00:16:01,740 --> 00:16:03,620
+We'll be right back.

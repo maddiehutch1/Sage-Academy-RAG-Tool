@@ -1,0 +1,952 @@
+1
+00:00:28,540 --> 00:00:32,360
+Super excited for this
+module on SQL query tuning.
+
+2
+00:00:32,820 --> 00:00:35,820
+Almost everything we've done in
+this class up until this point
+
+3
+00:00:35,820 --> 00:00:41,100
+is based on logical query tuning
+where we type in the code and
+
+4
+00:00:41,100 --> 00:00:45,260
+the database engine determines
+the most efficient way to run.
+
+5
+00:00:45,840 --> 00:00:47,940
+In this particular module, we'll start to
+
+6
+00:00:47,940 --> 00:00:50,200
+look under the hood at
+the physical components
+
+7
+00:00:50,460 --> 00:00:56,500
+of SQL and identify areas where
+performance is lagging and look
+
+8
+00:00:56,500 --> 00:01:01,160
+at ways to improve that performance.
+And so first thing we'll
+
+9
+00:01:01,160 --> 00:01:05,960
+do is understand what a query
+tuning plan is, looking at estimated
+
+10
+00:01:05,960 --> 00:01:09,760
+primarily in actual execution
+plans to see how the code runs.
+
+11
+00:01:10,720 --> 00:01:14,220
+Probably 40, 50 hours of the been
+gone training I've been to is
+
+12
+00:01:14,220 --> 00:01:17,820
+focused on query tuning. The other
+thing I noticed is whenever I go to
+
+13
+00:01:17,820 --> 00:01:22,100
+a database conference and these
+professionals in the field 20 years
+
+14
+00:01:22,100 --> 00:01:27,260
+plus want to examine code more
+deeply, they'll typically just ask the
+
+15
+00:01:27,260 --> 00:01:30,220
+presenter, can you show me the
+estimated plan? So they're looking
+
+16
+00:01:30,220 --> 00:01:34,000
+at the query tuning plan as kind of
+the highest level of understanding
+
+17
+00:01:34,000 --> 00:01:39,440
+the code being run. We'll identify
+some obvious areas for what
+
+18
+00:01:39,440 --> 00:01:44,940
+makes a query running slow, and then
+we'll follow up with understanding
+
+19
+00:01:44,940 --> 00:01:49,220
+indexes, how we can create and
+change indexes to improve. You're
+
+20
+00:01:49,220 --> 00:01:53,460
+probably too young to remember this
+commercial, and I'll just a portion
+
+21
+00:01:53,460 --> 00:01:58,010
+of it but as we go through the
+material on query tuning we'll
+
+22
+00:01:58,010 --> 00:02:02,900
+show two different types of code
+options and so it just reminds me of
+
+23
+00:02:02,900 --> 00:02:06,240
+this Kia commercial where these
+mice are indicating that you could
+
+24
+00:02:06,240 --> 00:02:09,320
+deal with this particular car you
+can deal with that particular car
+
+25
+00:02:09,320 --> 00:02:13,440
+and in our case we'll be looking
+at one particular set of code and
+
+26
+00:02:13,440 --> 00:02:16,860
+another set of code to see which
+one would run more efficiently okay
+
+27
+00:02:28,350 --> 00:02:33,410
+so let's take a look at what we'll
+be doing the whole idea of query
+
+28
+00:02:33,410 --> 00:02:37,870
+tuning is to figure out how to make
+the code run more efficiently and to
+
+29
+00:02:37,870 --> 00:02:42,040
+identify areas where the code runs
+slowly and try to fix those mistakes.
+
+30
+00:02:43,610 --> 00:02:48,390
+We'll also focus on how SQL retrieves
+the data and not just the data
+
+31
+00:02:48,390 --> 00:02:52,200
+that returns. So how does it
+physically go into the storage to grab
+
+32
+00:02:52,200 --> 00:02:56,270
+information and to provide that
+information back? And so we're looking at
+
+33
+00:02:56,270 --> 00:03:03,650
+the ultimate goal of getting faster
+results and in more efficient code.
+
+34
+00:03:04,210 --> 00:03:07,830
+All right so this starts us
+with if you watch that original
+
+35
+00:03:07,830 --> 00:03:11,390
+video I think this was the first
+item here but we'll begin with
+
+36
+00:03:11,390 --> 00:03:15,750
+different types of structure
+within the database and so on the
+
+37
+00:03:15,750 --> 00:03:18,650
+screen here you can see this
+symbol here is representative
+
+38
+00:03:18,650 --> 00:03:22,470
+of a database and on the right
+side is simply how this data are
+
+39
+00:03:22,470 --> 00:03:26,450
+stored in each one of these
+squares, if you think of a page,
+
+40
+00:03:26,730 --> 00:03:30,570
+just a single page,
+typical page in a notebook,
+
+41
+00:03:31,590 --> 00:03:35,970
+SQL Server is physically stored
+in pages. And these pages,
+
+42
+00:03:35,970 --> 00:03:38,710
+of course, have a little
+bit of metadata headers and
+
+43
+00:03:38,710 --> 00:03:42,090
+footers and different ways to
+go from one page to another.
+
+44
+00:03:42,310 --> 00:03:46,270
+But effectively, the information
+are contained on different pages.
+
+45
+00:03:46,370 --> 00:03:51,510
+And the first type of organization
+that we can have is a heap.
+
+46
+00:03:51,630 --> 00:03:55,590
+And the idea of a heap is that
+it simply has no structure at
+
+47
+00:03:55,590 --> 00:03:58,850
+all. So when data are added
+into the database, it's just
+
+48
+00:03:58,850 --> 00:04:03,090
+simply added into the next
+available page within the data set.
+
+49
+00:04:03,610 --> 00:04:07,650
+Now, one thing I got confused of in
+the training is sometimes Bingham
+
+50
+00:04:07,650 --> 00:04:10,470
+would talk about heaps are
+beneficial, and sometimes they're not
+
+51
+00:04:10,470 --> 00:04:14,670
+beneficial. For most of our
+discussion here today, we'll consider
+
+52
+00:04:14,670 --> 00:04:19,350
+a heap to be slow in terms of
+writing logical queries against the
+
+53
+00:04:19,350 --> 00:04:22,930
+code. So our typically select
+statements, we don't necessarily want
+
+54
+00:04:22,930 --> 00:04:27,170
+to have a heap. That said, the
+advantage of a heap, at least from
+
+55
+00:04:27,170 --> 00:04:31,110
+our perspective today, is just
+one. That is if you're importing
+
+56
+00:04:31,110 --> 00:04:35,350
+massive data. So if you're doing a
+bulk import into a database, it is
+
+57
+00:04:35,350 --> 00:04:38,790
+more efficient to use a heap because
+it doesn't have to organize it
+
+58
+00:04:38,790 --> 00:04:43,670
+as much as when we do our other
+type of database storage options.
+
+59
+00:04:43,670 --> 00:04:46,360
+So if you think of a heap, it's
+just kind of like this big basket.
+
+60
+00:04:48,030 --> 00:04:50,070
+We it lands, that's where it's going to
+
+61
+00:04:50,070 --> 00:04:51,710
+be. There's no necessary organization.
+
+62
+00:04:52,410 --> 00:04:55,490
+If you think about a phone book,
+we'll use that analogy when we
+
+63
+00:04:55,490 --> 00:04:58,610
+get to the next item. But if you
+think about a phone book that's
+
+64
+00:04:58,610 --> 00:05:02,210
+not organized in any way, it's
+just you simply start going page
+
+65
+00:05:02,210 --> 00:05:05,370
+by page trying to find somebody's
+last name. But there's no order
+
+66
+00:05:05,370 --> 00:05:08,790
+to it, no alphabetical order to
+it. It'd become very difficult to
+
+67
+00:05:08,790 --> 00:05:12,670
+manage accessing data. But in
+terms of putting data in, it would
+
+68
+00:05:12,670 --> 00:05:15,130
+be very easy. You can just throw
+stuff in at the end or wherever
+
+69
+00:05:15,130 --> 00:05:17,790
+there's an open spot. And that's
+what makes heaps efficient for
+
+70
+00:05:17,790 --> 00:05:23,550
+importing data, and that's about
+the effectiveness of the heap.
+
+71
+00:05:23,710 --> 00:05:27,130
+So here's a simple table, something
+you would have created in the
+
+72
+00:05:27,130 --> 00:05:30,670
+intro class. We're just going to
+create a table called pet, and
+
+73
+00:05:30,670 --> 00:05:33,570
+we give it two different columns,
+and then we're going to insert
+
+74
+00:05:33,570 --> 00:05:38,490
+some data into the pet database.
+But you'll see in this particular
+
+75
+00:05:38,490 --> 00:05:42,830
+case, we don't have a primary
+key established. and one of the
+
+76
+00:05:42,830 --> 00:05:47,530
+few query tuning items that we
+learned about in the intro class was
+
+77
+00:05:47,530 --> 00:05:51,430
+when you create a primary key,
+it'll automatically create a
+
+78
+00:05:51,430 --> 00:05:54,750
+clustered index. And we haven't
+quite gotten to clustered index here,
+
+79
+00:05:54,750 --> 00:05:58,910
+but without having a primary key,
+the most basic form of storage
+
+80
+00:05:58,910 --> 00:06:03,700
+would be a heap. And so as an
+example, let me run this code and
+
+81
+00:06:04,630 --> 00:06:09,650
+we've created our data set. And
+now I can select a new query let
+
+82
+00:06:16,680 --> 00:06:25,120
+me in fact here I'm going to say
+we have a pet ID so we've created
+
+83
+00:06:25,120 --> 00:06:30,280
+this pet ID you can see the information
+three two four one it's just
+
+84
+00:06:30,280 --> 00:06:34,020
+throwing the information as we
+typed it and so if I go back to how
+
+85
+00:06:34,020 --> 00:06:37,640
+we put this information in you can
+see three two four one it's just
+
+86
+00:06:37,640 --> 00:06:41,000
+a heap we're just throwing it into
+the heap and how we can tell it's
+
+87
+00:06:41,000 --> 00:06:44,480
+a heap and we'll use this estimated
+plan, this button right here.
+
+88
+00:06:44,760 --> 00:06:46,760
+So if you look at the
+execute and you go a
+
+89
+00:06:46,760 --> 00:06:48,920
+couple to the right, we
+have our execution plan.
+
+90
+00:06:49,760 --> 00:06:53,500
+And when I execute this plan,
+as we're reading a query plan,
+
+91
+00:06:53,500 --> 00:06:56,740
+this would be the most basic,
+you typically read it from
+
+92
+00:06:56,740 --> 00:06:59,900
+right to left. So in this
+case, we're doing a table scan.
+
+93
+00:07:00,290 --> 00:07:02,820
+And if you put your mouse over
+the top, it gives you all the
+
+94
+00:07:02,820 --> 00:07:07,160
+information in terms of how many
+rows will be executed, how long it
+
+95
+00:07:07,160 --> 00:07:11,540
+expects it to execute and what
+type of physical operation. So here
+
+96
+00:07:11,540 --> 00:07:15,820
+we're doing a table scan and that
+table scan takes up all the cost
+
+97
+00:07:15,820 --> 00:07:18,820
+and table scan in this instance
+would indicate that we have a
+
+98
+00:07:18,820 --> 00:07:25,740
+heap and it's scanning the entire
+table in order to find pet ID
+
+99
+00:07:25,740 --> 00:07:30,500
+from pet. And so there's no
+efficiency by creating that clustered
+
+100
+00:07:30,500 --> 00:07:34,460
+index. If we only have a heap, we
+have no primary key established.
+
+101
+00:07:34,780 --> 00:07:36,780
+So let's go back to our slides
+
+102
+00:07:37,380 --> 00:07:39,440
+and go to the next option.
+
+103
+00:07:39,440 --> 00:07:44,760
+And what we did just now doing
+select pet ID from pet, it did
+
+104
+00:07:44,760 --> 00:07:48,620
+a table scan. And so effectively,
+in order to find information,
+
+105
+00:07:48,620 --> 00:07:53,080
+it would have to scan
+through every page in order
+
+106
+00:07:53,080 --> 00:07:56,800
+to find the information
+that we're looking for.
+
+107
+00:07:56,980 --> 00:07:59,980
+So the next item, the
+more efficient one, and as
+
+108
+00:07:59,980 --> 00:08:03,240
+a reminder, when you
+create a primary key in SQL
+
+109
+00:08:03,240 --> 00:08:06,480
+Server, it automatically
+creates a clustered index.
+
+110
+00:08:06,480 --> 00:08:12,020
+And that clustered index will
+create a B-tree format. And I think
+
+111
+00:08:12,020 --> 00:08:16,060
+you'll cover B-tree in a lot more
+detail in Dr. Kim's class. But
+
+112
+00:08:16,060 --> 00:08:19,840
+a B-tree effectively will give
+you an organization or a roadmap.
+
+113
+00:08:20,060 --> 00:08:23,480
+And so if you think
+here of a phone book and
+
+114
+00:08:23,480 --> 00:08:27,360
+maybe this particular
+page covers A through C.
+
+115
+00:08:27,360 --> 00:08:35,800
+So anything that is to the
+left of, for instance, B might
+
+116
+00:08:35,800 --> 00:08:38,540
+show up over here. Anything
+after B, B, and C would occur
+
+117
+00:08:38,540 --> 00:08:41,960
+over here. And so you can see
+it's much more efficient in order
+
+118
+00:08:41,960 --> 00:08:45,700
+to go and to find different
+information in the database.
+
+119
+00:08:45,700 --> 00:08:49,120
+Now, if you do a clustered
+index based on that primary key,
+
+120
+00:08:49,120 --> 00:08:52,740
+that clustered index would
+be on, in this case, pet ID.
+
+121
+00:08:53,000 --> 00:08:58,520
+And so if I go back into SQL Server,
+and I have the code here, and in
+
+122
+00:08:58,520 --> 00:09:03,680
+this code, we create a primary
+key, which we typically have done,
+
+123
+00:09:03,680 --> 00:09:07,300
+right? we've always created a primary
+key but we create a primary key
+
+124
+00:09:07,300 --> 00:09:11,220
+on pet ID and we just called this
+a little bit different name pet
+
+125
+00:09:11,220 --> 00:09:18,200
+with primary key and run this code
+it's showing we already have one we
+
+126
+00:09:23,760 --> 00:09:25,280
+delete that okay
+
+127
+00:09:38,960 --> 00:09:43,380
+so now we'll run this
+code and remember when we
+
+128
+00:09:43,380 --> 00:09:47,500
+ran this code it was three
+two four one but now if
+
+129
+00:09:47,500 --> 00:09:55,050
+we create a new query
+indicate select pet ID from
+
+130
+00:09:56,540 --> 00:10:04,040
+pet with PK it's interesting
+it now has an order because
+
+131
+00:10:04,040 --> 00:10:06,940
+it's stored it in the
+data set with order now in
+
+132
+00:10:06,940 --> 00:10:10,280
+the clustered index and now
+if we go this is kind of an
+
+133
+00:10:10,280 --> 00:10:14,580
+aha moment. We find the
+query tuning. We click on it.
+
+134
+00:10:14,740 --> 00:10:20,280
+And now instead of doing a non-clustered
+
+135
+00:10:20,280 --> 00:10:23,300
+scan, we're now doing
+a clustered index scan.
+
+136
+00:10:24,140 --> 00:10:26,480
+Let's go over to slides
+and learn more about that.
+
+137
+00:10:28,240 --> 00:10:31,840
+So we've moved from a heap, a non
+-clustered index. Now we have a
+
+138
+00:10:31,840 --> 00:10:34,480
+clustered index. But in this case,
+you can see we're still doing a
+
+139
+00:10:34,480 --> 00:10:38,820
+scan of the entire table. So in
+our scan, we're reading the entire
+
+140
+00:10:38,820 --> 00:10:43,180
+table and the problem is we don't
+have a where clause in order to
+
+141
+00:10:43,180 --> 00:10:49,420
+allow us to quickly go to the
+particular page that would have that
+
+142
+00:10:49,420 --> 00:10:55,060
+information and so sometimes you
+might think that more code is
+
+143
+00:10:55,060 --> 00:10:59,580
+not as good so for instance if I
+come here and I type in where say
+
+144
+00:11:04,340 --> 00:11:08,940
+pet ID is equal to 2 we've added
+some predicate logic but now
+
+145
+00:11:08,940 --> 00:11:11,340
+that we have the predicate logic
+and you think about a clustered
+
+146
+00:11:11,340 --> 00:11:16,460
+index, it will know where that
+pet ID 2 is equal to, thinking
+
+147
+00:11:16,460 --> 00:11:19,900
+of a phone book that has a
+particular order alphabetized.
+
+148
+00:11:19,900 --> 00:11:23,320
+And in this particular case,
+think of the alphabetized as just
+
+149
+00:11:23,320 --> 00:11:27,360
+a pet ID, so numbers one through
+however many pets we have.
+
+150
+00:11:27,360 --> 00:11:31,440
+And so now if we run this code, we
+get the item that we want. But more
+
+151
+00:11:31,440 --> 00:11:38,620
+importantly, if we go to our query
+plan, we can see now it does a
+
+152
+00:11:38,620 --> 00:11:43,960
+clustered index seek instead of a
+clustered index scan and if you look
+
+153
+00:11:43,960 --> 00:11:49,480
+on the information with your mouse
+over the top of it you can see the
+
+154
+00:11:49,480 --> 00:11:54,900
+number of executions one the number
+of rows to be read one and when
+
+155
+00:11:54,900 --> 00:11:58,480
+we had our scan versus to seek it
+would read the total number of rows
+
+156
+00:11:58,480 --> 00:12:01,590
+in the entire data set so we had
+four rows so it should read four
+
+157
+00:12:01,590 --> 00:12:07,250
+but in this case it only reads one
+so let me quickly jump over here and
+
+158
+00:12:07,460 --> 00:12:13,360
+show you well for instance this
+information it's doing a table scan
+
+159
+00:12:14,100 --> 00:12:17,440
+and when we put the mouse over the
+top you can see it's going to run
+
+160
+00:12:17,770 --> 00:12:23,320
+for number of rows for all X because
+I wrote run all four rows so if
+
+161
+00:12:23,320 --> 00:12:26,920
+we had a million rows it would run
+all million so one of the first
+
+162
+00:12:26,920 --> 00:12:31,040
+takeaways is anytime that you can
+have a clustered index and you can do
+
+163
+00:12:31,310 --> 00:12:36,040
+a where clause based or predicate
+logic based on that clustered index
+
+164
+00:12:36,040 --> 00:12:39,360
+then that will allow you to do a
+clustered index seek instead of a
+
+165
+00:12:39,360 --> 00:12:46,780
+clustered index scan meaning it will
+run much more efficiently in terms
+
+166
+00:12:46,780 --> 00:12:54,080
+of this one runs right to the item
+itself so if we have a clustered
+
+167
+00:12:54,080 --> 00:12:57,880
+index scan it's still scanning every
+row with the clustered index seek
+
+168
+00:12:57,880 --> 00:13:01,720
+it can use the B tree so it could
+it could start here decide whether
+
+169
+00:13:01,720 --> 00:13:06,340
+to go to the left or right of the
+B tree and quickly execute and find
+
+170
+00:13:06,340 --> 00:13:10,900
+the information that it's looking
+for with a clustered index seek.
+
+171
+00:13:12,020 --> 00:13:20,290
+Okay, so up until now, we have a
+heap, which is an unorganized, non
+
+172
+00:13:20,290 --> 00:13:24,540
+-clustered index. We don't have a
+clustered index. We must not have a
+
+173
+00:13:24,540 --> 00:13:28,040
+primary key, or we didn't add the
+constraint to add a clustered index.
+
+174
+00:13:28,640 --> 00:13:31,460
+In that case, it will
+always do a table scan.
+
+175
+00:13:31,520 --> 00:13:34,440
+It's good for importing
+data, but for now, let's say
+
+176
+00:13:34,440 --> 00:13:36,820
+that's it. It's only good
+for importing both data.
+
+177
+00:13:36,840 --> 00:13:39,780
+And then we can create a
+clustered index. Now, if
+
+178
+00:13:39,780 --> 00:13:42,640
+we do a clustered index and
+we don't use the predicate
+
+179
+00:13:42,640 --> 00:13:45,940
+logic, the where clause,
+it will also do a scan.
+
+180
+00:13:46,140 --> 00:13:50,000
+So it's still inefficient,
+although the data are organized.
+
+181
+00:13:52,180 --> 00:13:56,440
+And if we use the where clause
+on a clustered index, you can
+
+182
+00:13:56,440 --> 00:13:58,900
+see where we do the clustered
+index seek. And this would,
+
+183
+00:13:59,080 --> 00:14:01,420
+anytime we can have a
+clustered index seek, we
+
+184
+00:14:01,420 --> 00:14:04,060
+know we're working with
+very efficient code.
+
+185
+00:14:06,820 --> 00:14:11,580
+So in terms of good, bad, and
+indifferent, let's argue clustered
+
+186
+00:14:11,580 --> 00:14:16,000
+index seek is the best when we
+want to directly and efficiently
+
+187
+00:14:16,000 --> 00:14:21,080
+find the information, particularly
+using the predicate logic.
+
+188
+00:14:21,080 --> 00:14:23,900
+and you can see here predicate
+logic that starts with the
+
+189
+00:14:23,900 --> 00:14:28,520
+clustering key simply means that
+the predicate logic is using the
+
+190
+00:14:28,520 --> 00:14:32,280
+cluster key whatever we determine
+to be the primary key or
+
+191
+00:14:32,280 --> 00:14:36,720
+later we can create some other
+types of index not clustered index
+
+192
+00:14:36,720 --> 00:14:41,040
+but non-clustered index and
+we'll get to that in just a bit.

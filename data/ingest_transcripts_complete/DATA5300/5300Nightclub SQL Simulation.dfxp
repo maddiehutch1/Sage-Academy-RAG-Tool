@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>588692903 - 1_p1z147jf - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:08.600" end="00:00:13.520" tts:direction="ltr">What if we told you we live inside a
+<br />simulation?</p>
+        <p begin="00:00:13.520" end="00:00:16.680" tts:direction="ltr">Tonight, we'll peek behind the curtain.</p>
+        <p begin="00:00:16.680" end="00:00:19.400" tts:direction="ltr">What you're about to witness is real.</p>
+        <p begin="00:00:19.400" end="00:00:22.880" tts:direction="ltr">Very few recognize that basic life
+<br />functions are</p>
+        <p begin="00:00:22.880" end="00:00:28.600" tts:direction="ltr">managed using a powerful database coding
+<br />language called SQL.</p>
+        <p begin="00:00:28.860" end="00:00:33.540" tts:direction="ltr">Let's join Randy and Sandy from their
+<br />remote location on</p>
+        <p begin="00:00:33.540" end="00:00:39.420" tts:direction="ltr">Planet Selecta as they currently oversee
+<br />nightclub DB on Earth.</p>
+        <p begin="00:00:39.420" end="00:00:42.780" tts:direction="ltr">Welcome to nightclub DB, Sandy.</p>
+        <p begin="00:00:42.780" end="00:00:45.860" tts:direction="ltr">The club is one of our Earth simulation
+<br />properties.</p>
+        <p begin="00:00:45.860" end="00:00:49.700" tts:direction="ltr">The left screen shows the door where
+<br />guests wait to enter the club.</p>
+        <p begin="00:00:49.700" end="00:00:51.860" tts:direction="ltr">The middle screen is inside the club,</p>
+        <p begin="00:00:51.860" end="00:00:54.820" tts:direction="ltr">and of course, on the right is my SQL
+<br />console.</p>
+        <p begin="00:00:54.820" end="00:00:57.500" tts:direction="ltr">This is where I make the nightclub
+<br />operational.</p>
+        <p begin="00:00:57.500" end="00:01:00.180" tts:direction="ltr">When you type, the world changes?</p>
+        <p begin="00:01:00.180" end="00:01:02.140" tts:direction="ltr">Exactly.</p>
+        <p begin="00:01:02.900" end="00:01:07.180" tts:direction="ltr">OLTP commands, insert, update,</p>
+        <p begin="00:01:07.180" end="00:01:08.860" tts:direction="ltr">delete, run the night,</p>
+        <p begin="00:01:08.860" end="00:01:12.220" tts:direction="ltr">Alter Table changes the building itself.</p>
+        <p begin="00:01:12.220" end="00:01:17.660" tts:direction="ltr">Oh, yeah, I love OLTP, one large technopy.</p>
+        <p begin="00:01:17.660" end="00:01:22.140" tts:direction="ltr">OLTP stands for one large techno party on
+<br />the planet Dis Otera.</p>
+        <p begin="00:01:22.140" end="00:01:23.660" tts:direction="ltr">But in the Earth simulation,</p>
+        <p begin="00:01:23.660" end="00:01:27.300" tts:direction="ltr">OLTP stands for online transaction
+<br />processing,</p>
+        <p begin="00:01:27.300" end="00:01:30.740" tts:direction="ltr">the quick commands that keep the club
+<br />running.</p>
+        <p begin="00:01:31.920" end="00:01:34.680" tts:direction="ltr">Who's performing tonight?</p>
+        <p begin="00:01:34.680" end="00:01:41.240" tts:direction="ltr">Tonight's headline is The Foreign Keys.
+<br />That's right.</p>
+        <p begin="00:01:41.240" end="00:01:45.320" tts:direction="ltr">I hope they play my favorite song, Update
+<br />My Heart.</p>
+        <p begin="00:01:45.320" end="00:01:47.400" tts:direction="ltr">Is my name on the list yet?</p>
+        <p begin="00:01:47.400" end="00:01:49.960" tts:direction="ltr">Yes, Brooke. You are good to go.</p>
+        <p begin="00:01:49.960" end="00:01:52.880" tts:direction="ltr">Have fun, you crazy kid.</p>
+        <p begin="00:01:55.060" end="00:01:58.660" tts:direction="ltr">I'm having trouble getting in the club.</p>
+        <p begin="00:01:58.660" end="00:02:02.140" tts:direction="ltr">Yeah, yeah, just be patient. You'll be in
+<br />soon.</p>
+        <p begin="00:02:02.140" end="00:02:05.100" tts:direction="ltr">Insert is how we make a brand new row?</p>
+        <p begin="00:02:05.100" end="00:02:06.820" tts:direction="ltr">Yep, watch this.</p>
+        <p begin="00:02:06.820" end="00:02:08.700" tts:direction="ltr">I have two similar tables,</p>
+        <p begin="00:02:08.700" end="00:02:11.620" tts:direction="ltr">one that includes a list of all our
+<br />customers and</p>
+        <p begin="00:02:11.620" end="00:02:15.060" tts:direction="ltr">another that only tracks guests on a given
+<br />night like tonight.</p>
+        <p begin="00:02:15.060" end="00:02:18.660" tts:direction="ltr">I use the insert into statement to add
+<br />Brooke as a guest.</p>
+        <p begin="00:02:18.660" end="00:02:21.300" tts:direction="ltr">Notice I don't give her a guest ID number
+<br />because</p>
+        <p begin="00:02:21.300" end="00:02:25.140" tts:direction="ltr">it's automatically generated using a
+<br />surrogate key.</p>
+        <p begin="00:02:29.800" end="00:02:34.400" tts:direction="ltr">It looks like the system assigned her
+<br />guest ID 14.</p>
+        <p begin="00:02:34.400" end="00:02:37.840" tts:direction="ltr">Let's surprise Brooke and update her to
+<br />VIP blue level,</p>
+        <p begin="00:02:37.840" end="00:02:40.800" tts:direction="ltr">which will let her into the lowest VIP
+<br />seating area.</p>
+        <p begin="00:02:40.800" end="00:02:42.960" tts:direction="ltr">I use an update statement for this.</p>
+        <p begin="00:02:42.960" end="00:02:47.720" tts:direction="ltr">Update statements are used to modify
+<br />existing data in a table.</p>
+        <p begin="00:02:54.440" end="00:02:57.760" tts:direction="ltr">Wow. What just happened?</p>
+        <p begin="00:02:57.760" end="00:03:01.800" tts:direction="ltr">Sometimes I feel like I'm living in a
+<br />simulation.</p>
+        <p begin="00:03:09.700" end="00:03:12.940" tts:direction="ltr">Oh, my. Brooke probably can't</p>
+        <p begin="00:03:12.940" end="00:03:15.580" tts:direction="ltr">even see the foreign keys from where she's
+<br />sitting.</p>
+        <p begin="00:03:15.580" end="00:03:20.180" tts:direction="ltr">It's too bad we couldn't upgrade her
+<br />wristband from blue to gold.</p>
+        <p begin="00:03:20.580" end="00:03:24.980" tts:direction="ltr">Let's do this. I'll just code a new update
+<br />statement.</p>
+        <p begin="00:03:24.980" end="00:03:28.660" tts:direction="ltr">In fact, in addition to changing Brooke's
+<br />wristband to gold,</p>
+        <p begin="00:03:28.660" end="00:03:31.700" tts:direction="ltr">which gets her into the best VIP seating
+<br />for the evening,</p>
+        <p begin="00:03:31.700" end="00:03:35.300" tts:direction="ltr">I'll also upgrade Brooke's ongoing VIP
+<br />status to gold.</p>
+        <p begin="00:03:35.300" end="00:03:37.060" tts:direction="ltr">To update two attributes,</p>
+        <p begin="00:03:37.060" end="00:03:39.700" tts:direction="ltr">I just separate them by a comma.</p>
+        <p begin="00:03:54.550" end="00:03:57.870" tts:direction="ltr">VIP show off.</p>
+        <p begin="00:03:57.870" end="00:04:01.630" tts:direction="ltr">Life is good as a gold member.</p>
+        <p begin="00:04:01.630" end="00:04:05.550" tts:direction="ltr">I'm just grateful to be here. Oh, my.</p>
+        <p begin="00:04:05.550" end="00:04:07.990" tts:direction="ltr">Dana is so nice.</p>
+        <p begin="00:04:10.790" end="00:04:18.150" tts:direction="ltr">I'll just upgrade her to VIP blue status
+<br />while Randy is away. He won't notice.</p>
+        <p begin="00:04:28.830" end="00:04:33.470" tts:direction="ltr">Wow. Am I living in a simulation?</p>
+        <p begin="00:04:37.790" end="00:04:42.870" tts:direction="ltr">Hey, I was gold VIP and now I'm blue.</p>
+        <p begin="00:04:42.870" end="00:04:44.830" tts:direction="ltr">What the heck?</p>
+        <p begin="00:04:44.830" end="00:04:46.910" tts:direction="ltr">I'm sorry, ma'am.</p>
+        <p begin="00:04:46.910" end="00:04:51.710" tts:direction="ltr">You need to leave the club for sitting in
+<br />gold VIP with a blue wristband.</p>
+        <p begin="00:05:00.840" end="00:05:06.120" tts:direction="ltr">Sandy, names aren't unique, always use
+<br />IDs.</p>
+        <p begin="00:05:06.120" end="00:05:08.360" tts:direction="ltr">We haven't learned rollback yet.</p>
+        <p begin="00:05:08.360" end="00:05:11.720" tts:direction="ltr">That's in the SQL simulations 4330.</p>
+        <p begin="00:05:11.720" end="00:05:14.160" tts:direction="ltr">Let's fix it explicitly.</p>
+        <p begin="00:05:14.160" end="00:05:16.280" tts:direction="ltr">Morgan's ID is four,</p>
+        <p begin="00:05:16.280" end="00:05:18.520" tts:direction="ltr">so I'll just make the change.</p>
+        <p begin="00:05:24.760" end="00:05:30.280" tts:direction="ltr">On second thought, let's just leave it
+<br />since Morgan isn't very nice.</p>
+        <p begin="00:05:39.830" end="00:05:43.310" tts:direction="ltr">Morgan is being escorted out of the
+<br />building,</p>
+        <p begin="00:05:43.310" end="00:05:45.550" tts:direction="ltr">but is having trouble getting out. Right.</p>
+        <p begin="00:05:45.550" end="00:05:48.630" tts:direction="ltr">I need to delete Morgan from the club.</p>
+        <p begin="00:05:55.750" end="00:05:59.870" tts:direction="ltr">Delete removes rows, not tables.</p>
+        <p begin="00:05:59.870" end="00:06:01.190" tts:direction="ltr">Exactly.</p>
+        <p begin="00:06:01.190" end="00:06:05.230" tts:direction="ltr">What happens if you forget the wear clause
+<br />when using delete?</p>
+        <p begin="00:06:05.230" end="00:06:08.630" tts:direction="ltr">Using delete without a wear clause is
+<br />disastrous.</p>
+        <p begin="00:06:08.630" end="00:06:12.430" tts:direction="ltr">In this case, it would remove all the
+<br />guests, Yikes.</p>
+        <p begin="00:06:12.430" end="00:06:15.870" tts:direction="ltr">Can the system store social media handles?</p>
+        <p begin="00:06:15.870" end="00:06:20.150" tts:direction="ltr">Alter Table reshapes the schema. Watch.</p>
+        <p begin="00:06:30.650" end="00:06:35.290" tts:direction="ltr">Finally, we can track your Instagram
+<br />accounts.</p>
+        <p begin="00:06:36.570" end="00:06:40.770" tts:direction="ltr">Actually, social media is ruining our
+<br />Earth simulation.</p>
+        <p begin="00:06:40.770" end="00:06:43.370" tts:direction="ltr">I'm getting rid of that column.</p>
+        <p begin="00:06:46.890" end="00:06:51.810" tts:direction="ltr">SQL code is a bit tricky when adding or
+<br />dropping columns.</p>
+        <p begin="00:06:51.810" end="00:06:54.330" tts:direction="ltr">When adding a column, you write add.</p>
+        <p begin="00:06:54.330" end="00:06:56.130" tts:direction="ltr">When dropping a column,</p>
+        <p begin="00:06:56.130" end="00:06:58.570" tts:direction="ltr">you write drop column.</p>
+        <p begin="00:06:59.130" end="00:07:01.890" tts:direction="ltr">I wish they were consistent.</p>
+        <p begin="00:07:01.890" end="00:07:06.730" tts:direction="ltr">I like it because it makes SQL exams more
+<br />tricky for students.</p>
+        <p begin="00:07:07.050" end="00:07:11.605" tts:direction="ltr">Never mind. I guess we can't track your
+<br />Instagrams after all.</p>
+        <p begin="00:07:11.605" end="00:07:15.800" tts:direction="ltr">Oh. Type a command,</p>
+        <p begin="00:07:15.800" end="00:07:19.680" tts:direction="ltr">change the world. Insert adds rows.</p>
+        <p begin="00:07:19.680" end="00:07:23.080" tts:direction="ltr">Update modifies rows, target by ID,</p>
+        <p begin="00:07:23.080" end="00:07:29.120" tts:direction="ltr">delete removes rows, Alter Table reshapes
+<br />the structure.</p>
+        <p begin="00:07:30.240" end="00:07:33.920" tts:direction="ltr">That's a wrap. The foreign keys were
+<br />great.</p>
+        <p begin="00:07:33.920" end="00:07:37.600" tts:direction="ltr">Let's end it using DDL code we learned
+<br />previously.</p>
+        <p begin="00:07:37.600" end="00:07:41.520" tts:direction="ltr">We want to remove everyone from the club
+<br />but keep the table structure.</p>
+        <p begin="00:07:41.520" end="00:07:43.000" tts:direction="ltr">Let's truncate.</p>
+        <p begin="00:07:43.000" end="00:07:45.520" tts:direction="ltr">With a few final keystrokes,</p>
+        <p begin="00:07:45.520" end="00:07:48.480" tts:direction="ltr">the world fades to black.</p>
+        <p begin="00:07:50.000" end="00:07:55.440" tts:direction="ltr">Who. I</p>
+    </div>
+  </body>
+</tt>

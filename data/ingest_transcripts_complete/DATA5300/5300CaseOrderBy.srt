@@ -1,0 +1,286 @@
+1
+00:00:07,580 --> 00:00:10,520
+All right, welcome to
+module nine, video three.
+
+2
+00:00:10,520 --> 00:00:12,720
+This one's important
+because it is a coding
+
+3
+00:00:12,720 --> 00:00:15,900
+question on the exam,
+and it's a sneaky one.
+
+4
+00:00:15,900 --> 00:00:19,190
+In the prior video, we used
+case expressions in the select
+
+5
+00:00:19,190 --> 00:00:22,690
+statement, and we also would use
+an alias. So we would say, and
+
+6
+00:00:22,690 --> 00:00:25,840
+as, and then give the column
+a name to solve some problems.
+
+7
+00:00:25,840 --> 00:00:28,920
+In this case, we're gonna use
+a case expression and an order
+
+8
+00:00:28,920 --> 00:00:32,740
+by, and here's how the question
+came about. Are you smarter than
+
+9
+00:00:32,740 --> 00:00:36,980
+a student? We had Conservice at
+Focus Friday a few years ago,
+
+10
+00:00:36,980 --> 00:00:41,860
+And at the last minute, I was
+asked to ask Conservist IT people
+
+11
+00:00:41,860 --> 00:00:46,140
+a SQL question that they might
+struggle with. And so I asked
+
+12
+00:00:46,140 --> 00:00:49,280
+them this. We need a list of
+states ordered in ascending order.
+
+13
+00:00:49,480 --> 00:00:53,200
+Yippee, super simple,
+except we want Montana.
+
+14
+00:00:54,000 --> 00:00:56,420
+Montana is, if you look up the state with
+
+15
+00:00:56,420 --> 00:00:58,920
+the most pride, Montana is number one.
+
+16
+00:00:58,920 --> 00:01:02,500
+This year it's tied with Alaska,
+but we know Montana is number one.
+
+17
+00:01:02,560 --> 00:01:05,020
+Montana needs to be at the top
+of the list, even though it's
+
+18
+00:01:05,020 --> 00:01:08,400
+out of order. And you've seen
+where you fill out a form and
+
+19
+00:01:08,400 --> 00:01:11,360
+because you're from a certain
+state or most likely from a
+
+20
+00:01:11,360 --> 00:01:14,700
+certain state, then that state
+shows up at the top of the list
+
+21
+00:01:14,700 --> 00:01:17,400
+so you can easily check it.
+And that's what we want here.
+
+22
+00:01:17,980 --> 00:01:21,400
+Ultimately, we're going to use a case
+expression in the order by clause.
+
+23
+00:01:21,400 --> 00:01:25,380
+And so the Conservis IT professionals
+were struggling and then a
+
+24
+00:01:25,380 --> 00:01:28,560
+student raised their hand and said,
+you could just do a case expression in
+
+25
+00:01:28,560 --> 00:01:31,800
+the order by. So that's what we're
+going to do. This will be, again,
+
+26
+00:01:32,080 --> 00:01:37,380
+a coding question on the exam. so
+here we have the states that we're
+
+27
+00:01:37,380 --> 00:01:41,720
+interested in and so in this case I'm
+just going to change this to state
+
+28
+00:01:44,670 --> 00:01:52,060
+and we know we need an order by and
+part of this is going to be order
+
+29
+00:01:52,060 --> 00:02:00,640
+by state and technically ASC for
+ascending order but that will be the
+
+30
+00:02:00,640 --> 00:02:04,080
+second criteria we need a criteria
+in front and as you know you don't
+
+31
+00:02:04,080 --> 00:02:07,720
+do two order by as you separate it
+by comma. So now we need to figure
+
+32
+00:02:07,720 --> 00:02:11,920
+out where is this case statement
+going to be and what's it going to do?
+
+33
+00:02:12,300 --> 00:02:16,860
+And conceptually, we want,
+what do we want to happen?
+
+34
+00:02:16,920 --> 00:02:23,240
+We want case state. So
+we know this is just a
+
+35
+00:02:23,240 --> 00:02:27,100
+simple case expression, a
+type one case expression.
+
+36
+00:02:27,560 --> 00:02:30,100
+And we know we're dealing with Montana.
+
+37
+00:02:30,320 --> 00:02:32,180
+So when it's Montana,
+
+38
+00:02:32,760 --> 00:02:35,520
+then, dash,
+
+39
+00:02:35,520 --> 00:02:36,600
+let's give it a zero.
+
+40
+00:02:37,480 --> 00:02:40,380
+And then, because we know
+it's ascending order by
+
+41
+00:02:40,380 --> 00:02:45,660
+default. And then otherwise,
+let's give it a one.
+
+42
+00:02:46,380 --> 00:02:51,800
+Now, we do have to end our case
+expression, but we don't end it using
+
+43
+00:02:51,800 --> 00:02:55,520
+end as, because we're not creating
+an alias. We only did that in
+
+44
+00:02:55,520 --> 00:02:58,640
+select statement when it was going
+to create the heading for a new
+
+45
+00:02:58,640 --> 00:03:03,140
+column. And now I already have
+the comma here. We do separate the
+
+46
+00:03:03,140 --> 00:03:07,100
+first criteria from the second
+criteria. Usually we would do that
+
+47
+00:03:07,100 --> 00:03:10,760
+with, for instance, order by last
+name, comma first name in case
+
+48
+00:03:10,760 --> 00:03:14,160
+there's a tie and then comma by
+something else if there's a tie there.
+
+49
+00:03:14,280 --> 00:03:17,620
+And so let me back this
+up and that's it. This is
+
+50
+00:03:17,620 --> 00:03:20,840
+the code. K-State, when it's
+Montana, give it a zero,
+
+51
+00:03:20,960 --> 00:03:23,780
+otherwise one. So Montana should
+be at the top, everybody else
+
+52
+00:03:23,780 --> 00:03:27,680
+is below it. Otherwise, let's
+just do it alphabetized A to Z.
+
+53
+00:03:28,340 --> 00:03:32,600
+Boom, there it is. Montana's at the
+top, and then of course the rest
+
+54
+00:03:32,600 --> 00:03:36,040
+of them are alphabetized. So
+this is the code that you'll need
+
+55
+00:03:36,040 --> 00:03:40,780
+on the first exam when you solve
+a case expression in the order by,
+
+56
+00:03:40,960 --> 00:03:43,900
+in order to put your favorite
+state, hopefully Montana at the
+
+57
+00:03:43,900 --> 00:03:47,000
+top, or some other topic,
+you'll put something at the top.
+
+58
+00:03:47,360 --> 00:03:49,460
+That's module nine, and we will see
+
+59
+00:03:49,460 --> 00:03:52,320
+you in a week for module 10. Thank you.

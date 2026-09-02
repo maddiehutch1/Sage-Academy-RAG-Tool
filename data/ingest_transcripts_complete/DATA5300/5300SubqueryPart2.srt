@@ -1,0 +1,871 @@
+1
+00:00:07,640 --> 00:00:12,480
+Welcome back to part two of the
+subquery instructional videos.
+
+2
+00:00:12,480 --> 00:00:18,060
+The purpose of the second video
+is to provide additional practice
+
+3
+00:00:18,060 --> 00:00:23,240
+opportunities and also to
+introduce the substring function.
+
+4
+00:00:23,790 --> 00:00:27,940
+These videos, I try to keep them
+a little bit shorter in length.
+
+5
+00:00:27,940 --> 00:00:32,600
+The challenge is topics like
+subqueries, I hate to shorten because
+
+6
+00:00:32,600 --> 00:00:35,980
+the topic is important and I know
+some of you struggle a little
+
+7
+00:00:35,980 --> 00:00:39,600
+bit more with subqueries than joins
+although that's not always the
+
+8
+00:00:39,600 --> 00:00:44,220
+case but here's a blue triad number
+three display the description
+
+9
+00:00:44,220 --> 00:00:48,340
+of activities that have fees paid
+so these are fees paid not listed
+
+10
+00:00:48,340 --> 00:00:52,960
+price or list price of more than
+20. So go ahead and pause the
+
+11
+00:00:52,960 --> 00:01:02,180
+video and try this one and again
+you'll need the database diagram
+
+12
+00:01:02,180 --> 00:01:05,700
+to be able to figure out which
+table or tables you'll need. In this
+
+13
+00:01:05,700 --> 00:01:09,880
+case, it provides the two tables,
+student activity and activity.
+
+14
+00:01:13,740 --> 00:01:17,260
+All right, so here's the answer
+to this particular question.
+
+15
+00:01:17,260 --> 00:01:21,540
+We asked the two questions, do
+we need output from one table?
+
+16
+00:01:25,300 --> 00:01:29,280
+So here's the solution to
+this particular problem, we do
+
+17
+00:01:29,280 --> 00:01:34,540
+satisfy the two questions of
+doing a subquery for this class.
+
+18
+00:01:34,940 --> 00:01:40,940
+Is the output from one table? And
+the answer to this is yes, the
+
+19
+00:01:40,940 --> 00:01:44,160
+activity table. And do we need
+information from another table? The
+
+20
+00:01:44,160 --> 00:01:47,740
+answer to that is also yes. So
+we write the subquery is select
+
+21
+00:01:47,740 --> 00:01:52,980
+description from activity, where
+activity ID in, and then you know the
+
+22
+00:01:52,980 --> 00:01:57,080
+subquery will link the primary
+foreign key so activity ID in select
+
+23
+00:01:57,080 --> 00:02:01,400
+activity ID from the student
+activity table and I'll start to
+
+24
+00:02:01,400 --> 00:02:04,740
+get in this notion are we there
+yet and by there yet I mean do we
+
+25
+00:02:04,740 --> 00:02:08,340
+have the information on the student
+activity table is this the final
+
+26
+00:02:08,340 --> 00:02:12,240
+table if the answer is yes we
+just use the predicate logic fee
+
+27
+00:02:12,240 --> 00:02:15,940
+paid greater than 20. If the answer
+is no and we need to go to another
+
+28
+00:02:15,940 --> 00:02:19,200
+table that's where we would
+indicate the where statement here
+
+29
+00:02:19,200 --> 00:02:23,340
+and then do a primary foreign key
+link whatever that might be and
+
+30
+00:02:23,340 --> 00:02:27,360
+then start another subquery. So
+we'll get to that in just a moment.
+
+31
+00:02:29,380 --> 00:02:32,380
+And then here's another
+one, blue triad number four.
+
+32
+00:02:32,540 --> 00:02:36,140
+Display the activity ID for
+fees paid greater than five
+
+33
+00:02:36,140 --> 00:02:39,520
+dollars. Remember you can use
+columns and literal values.
+
+34
+00:02:39,700 --> 00:02:43,160
+Greater than five dollars more
+than the minimum activity fee.
+
+35
+00:02:43,160 --> 00:02:45,640
+Don't include duplicate output. So go
+
+36
+00:02:45,640 --> 00:02:47,500
+ahead and pause the screen here. And
+
+37
+00:02:52,320 --> 00:02:55,320
+here is the solution to
+blue triad number four.
+
+38
+00:02:55,600 --> 00:03:00,220
+It says don't include duplicate
+output. In this case, I would
+
+39
+00:03:00,220 --> 00:03:03,940
+recommend just indicating select
+distinct. You could run it to see if
+
+40
+00:03:03,940 --> 00:03:07,580
+by chance it does have duplicate
+output, but when in doubt, you could
+
+41
+00:03:07,580 --> 00:03:11,940
+include with the select distinct
+activity ID. This is all from
+
+42
+00:03:11,940 --> 00:03:16,940
+one table, so from student activity
+where fee paid is greater than,
+
+43
+00:03:17,100 --> 00:03:20,670
+and then select, and here we
+just have a simple formula,
+
+44
+00:03:20,740 --> 00:03:24,840
+the minimum fee paid plus
+$5, otherwise it's just a
+
+45
+00:03:24,840 --> 00:03:28,180
+minimum, and then that comes
+from the student activity table.
+
+46
+00:03:28,240 --> 00:03:31,280
+So that would be the solution
+to BlueTriot number four.
+
+47
+00:03:32,020 --> 00:03:35,920
+And now this is a short commercial
+break. It separates completely
+
+48
+00:03:35,920 --> 00:03:39,980
+from the topic of subqueries, but
+we try to add new information either
+
+49
+00:03:39,980 --> 00:03:43,320
+through the labs or through the
+discussions, the instructional
+
+50
+00:03:43,320 --> 00:03:47,200
+videos, or a combination of both. A
+substring is used when you need to
+
+51
+00:03:47,200 --> 00:03:53,420
+gather data out of a larger set of
+data. So maybe within a term or a
+
+52
+00:03:53,420 --> 00:03:57,700
+column, you just need part of that
+column. In this particular case,
+
+53
+00:03:57,700 --> 00:04:01,940
+there are three arguments to the
+substring. And part of studying for
+
+54
+00:04:01,940 --> 00:04:05,940
+the exam, including the date functions,
+these date functions typically
+
+55
+00:04:05,940 --> 00:04:09,520
+have a number of what are called
+arguments to the function. And
+
+56
+00:04:09,520 --> 00:04:13,920
+a substring is just like that.
+It has three arguments. The first
+
+57
+00:04:13,920 --> 00:04:18,100
+thing is what column or literal value
+you're interested in getting part
+
+58
+00:04:18,100 --> 00:04:23,340
+of. And then the first one indicates
+the starting point. In a SQL
+
+59
+00:04:23,340 --> 00:04:27,600
+server with substring, the starting
+point one would be the letter L.
+
+60
+00:04:27,720 --> 00:04:30,980
+It doesn't start at zero, it'll
+start at one. And then the second
+
+61
+00:04:30,980 --> 00:04:35,020
+argument is how many characters do
+you want to include? So in this case,
+
+62
+00:04:35,020 --> 00:04:38,420
+we want a substring of last name,
+starting with their first letter
+
+63
+00:04:38,420 --> 00:04:41,780
+and getting three. So effectively,
+this would get the first three letters
+
+64
+00:04:41,780 --> 00:04:47,280
+of somebody last name. M-I-L for
+Mills, H-I-N for Hines, and that's
+
+65
+00:04:47,280 --> 00:04:51,000
+what the substring would do. You
+could also use substring, for
+
+66
+00:04:51,000 --> 00:04:56,720
+instance, for a phone number. So if
+you had a phone number, 888-123-4567,
+
+67
+00:04:57,440 --> 00:05:03,300
+you could do a substring, the phone
+number, 1,3, and what would that
+
+68
+00:05:03,300 --> 00:05:06,380
+give you? That would give you the
+area code. So if you just wanted
+
+69
+00:05:06,380 --> 00:05:10,040
+the area code, you would do something
+similar. But that's substring.
+
+70
+00:05:12,550 --> 00:05:15,820
+And now we talk a little
+about three table subquery. I
+
+71
+00:05:15,820 --> 00:05:19,100
+mentioned in the first subquery
+that we did or subquery
+
+72
+00:05:19,100 --> 00:05:21,860
+earlier that you start to ask
+the question, are we there
+
+73
+00:05:21,860 --> 00:05:25,700
+yet? So in this particular
+case, here is the question.
+
+74
+00:05:27,300 --> 00:05:30,600
+Display the first three letters
+of the student's last name. So
+
+75
+00:05:30,600 --> 00:05:36,240
+that's the easy little substring
+right there. And then it's saying last
+
+76
+00:05:36,720 --> 00:05:40,200
+name that are associated with the
+activity description basketball.
+
+77
+00:05:40,300 --> 00:05:44,220
+So if we go to activities, we
+have student activity. There's no
+
+78
+00:05:44,220 --> 00:05:47,420
+description there. So we do
+have activity, which does have
+
+79
+00:05:47,420 --> 00:05:51,600
+description. And in this case, it
+represents that are we there yet. So
+
+80
+00:05:51,600 --> 00:05:55,440
+our first where statement would
+be student ID to student ID to the
+
+81
+00:05:55,440 --> 00:05:58,700
+student activity table. And then
+our next where statement instead
+
+82
+00:05:58,700 --> 00:06:02,200
+of predicate logic would be
+connecting student activity to the
+
+83
+00:06:02,200 --> 00:06:06,520
+activity table. And you can go on
+and on with this forever and ever.
+
+84
+00:06:06,520 --> 00:06:10,880
+Let me pull over SQL Server and I
+will show you an example of this.
+
+85
+00:06:13,440 --> 00:06:20,340
+I hope I have the question here.
+So we would say select the first
+
+86
+00:06:20,340 --> 00:06:27,500
+three letters of their last
+name and we'll start with 1 then
+
+87
+00:06:27,500 --> 00:06:36,790
+and then 3 as first three and
+this is from the student table and
+
+88
+00:06:37,480 --> 00:06:42,380
+then we get and then we get to
+the where and the link between
+
+89
+00:06:42,380 --> 00:06:45,980
+the student table and the student
+is a student activity table is
+
+90
+00:06:45,980 --> 00:06:52,180
+student ID so we would say where
+student ID this is the primary
+
+91
+00:06:53,080 --> 00:06:56,960
+key in select you know it's going to be
+
+92
+00:06:56,960 --> 00:07:00,560
+here because it's the link student ID
+
+93
+00:07:00,940 --> 00:07:10,140
+and this is from student
+underscore activity table.
+
+94
+00:07:10,760 --> 00:07:13,480
+Now, if we were there yet,
+and I'm looking at the student
+
+95
+00:07:13,480 --> 00:07:16,000
+activity table, and we could
+include some, and then an
+
+96
+00:07:16,000 --> 00:07:19,360
+and to keep going, but in
+this case, if we needed fee
+
+97
+00:07:19,360 --> 00:07:22,340
+paid or start date or end
+date, we could end right here,
+
+98
+00:07:22,360 --> 00:07:26,060
+but we don't. We need the
+description, and so because of that,
+
+99
+00:07:26,060 --> 00:07:29,200
+we just go to our where clause,
+And instead of having predicate
+
+100
+00:07:29,200 --> 00:07:32,440
+logic in the traditional sense,
+you know, where last name equals
+
+101
+00:07:32,440 --> 00:07:36,160
+to Heinz, we'll use that
+predicate logic to create another
+
+102
+00:07:36,170 --> 00:07:41,880
+subquery within a query. And in
+that case, it would be activity ID.
+
+103
+00:07:44,960 --> 00:07:52,860
+And then we'll link that to,
+excuse me, select activity ID from
+
+104
+00:07:58,640 --> 00:07:59,900
+the activity table.
+
+105
+00:08:02,500 --> 00:08:06,460
+Now the question again, kind of like
+Bart Simpson has a video where he's
+
+106
+00:08:06,460 --> 00:08:08,940
+traveling somewhere. He's like, are
+we there yet? Are we there yet? So
+
+107
+00:08:08,940 --> 00:08:11,960
+in this case, the same thing. Are
+we there yet? In this case, we are.
+
+108
+00:08:12,260 --> 00:08:17,060
+So the where would be
+where description is equal
+
+109
+00:08:17,060 --> 00:08:19,800
+to, and I have no idea
+what our description was,
+
+110
+00:08:19,920 --> 00:08:20,920
+basketball.
+
+111
+00:08:24,980 --> 00:08:29,520
+And then in this case, we'll
+need to have two more parentheses
+
+112
+00:08:29,520 --> 00:08:32,720
+at the end instead of one
+because we have a three-table
+
+113
+00:08:32,720 --> 00:08:36,120
+subquery. It works similar to a
+join, number of tables minus one.
+
+114
+00:08:36,120 --> 00:08:39,540
+And then we can close this
+off. And let's run this code.
+
+115
+00:08:39,600 --> 00:08:41,380
+It's showing that I have
+some error messages.
+
+116
+00:08:44,980 --> 00:08:47,560
+What is math about? Oh, excuse me.
+
+117
+00:08:48,040 --> 00:08:49,040
+Activity ID.
+
+118
+00:08:49,940 --> 00:08:52,540
+I was thinking, I guess,
+of the table. So again,
+
+119
+00:08:52,540 --> 00:08:54,800
+primary, foreign, link. That's
+where it was an easy fix.
+
+120
+00:08:55,120 --> 00:08:57,240
+And so here we have the first three
+
+121
+00:08:57,240 --> 00:08:59,220
+that are associated with basketball.
+
+122
+00:08:59,320 --> 00:09:03,160
+Now, how it's running, it's
+going to take this information,
+
+123
+00:09:03,160 --> 00:09:07,360
+because it is a self-contained
+subquery, so it's going to plop
+
+124
+00:09:07,360 --> 00:09:11,420
+one back, so this would be in
+one, and then, of course, here,
+
+125
+00:09:11,420 --> 00:09:14,960
+it will get the information with
+one, and then send that to the
+
+126
+00:09:14,960 --> 00:09:19,760
+outer query, and that is how
+that three-table subquery goes.
+
+127
+00:09:23,040 --> 00:09:25,660
+and here's just an example
+of that three table
+
+128
+00:09:25,660 --> 00:09:28,180
+subquery that we just did
+you can pause the screen
+
+129
+00:09:28,180 --> 00:09:31,520
+if you want to take a
+longer look at the code
+
+130
+00:09:33,540 --> 00:09:38,240
+this will be our last blue try it
+write an SQL query that shows the
+
+131
+00:09:38,240 --> 00:09:42,320
+risk and list price of activities
+that the student with the last name
+
+132
+00:09:42,320 --> 00:09:46,780
+Heinz participates in and this one we
+don't give you the different tables
+
+133
+00:09:46,780 --> 00:09:51,540
+that are needed you can grab that
+information from your sheet you
+
+134
+00:09:51,540 --> 00:09:55,460
+can also pause the video and just as
+a reminder with blue try it we just
+
+135
+00:09:55,460 --> 00:09:59,140
+hope that you follow along and
+participate in as many of the coding
+
+136
+00:09:59,140 --> 00:10:03,360
+activities as you can but if you
+happen to miss one by all means it's
+
+137
+00:10:03,360 --> 00:10:08,460
+fine we just want to know that you
+are primarily participating and in
+
+138
+00:10:08,460 --> 00:10:12,560
+this case we needed three tables
+we have the activity table and the
+
+139
+00:10:12,560 --> 00:10:16,320
+output is from just the activity
+table. That would be one rule. And
+
+140
+00:10:16,320 --> 00:10:19,300
+then we need information from another
+table. In this case, we need our
+
+141
+00:10:19,300 --> 00:10:23,280
+information from the student table,
+but we need to go via the student
+
+142
+00:10:23,280 --> 00:10:27,520
+activity table. If we try to cut
+the corner, the code will run if we
+
+143
+00:10:27,520 --> 00:10:31,160
+can figure out some kind of link.
+But in that case, we're not going to
+
+144
+00:10:31,160 --> 00:10:34,680
+get the results that we hope for.
+And then we'll finish up today with
+
+145
+00:10:35,340 --> 00:10:37,160
+problematic null values.
+
+146
+00:10:37,560 --> 00:10:40,980
+List the last name in the
+students, list the last
+
+147
+00:10:40,980 --> 00:10:44,140
+name of students that have
+a locker in building B.
+
+148
+00:10:44,340 --> 00:10:46,520
+So I'm going to type this code.
+
+149
+00:10:48,400 --> 00:10:52,360
+Once we have the code copied
+over, and if you would go
+
+150
+00:10:52,360 --> 00:10:55,020
+ahead and you can pause the
+video and copy that code over,
+
+151
+00:10:55,700 --> 00:10:59,620
+select last name from student
+where student ID in, we're used
+
+152
+00:10:59,620 --> 00:11:03,920
+to using in, and then in the
+inner query select student ID
+
+153
+00:11:03,920 --> 00:11:07,320
+from gym locker where locker
+location is equal to B. So
+
+154
+00:11:07,320 --> 00:11:12,940
+this is providing us the last
+name of those who have an ID in
+
+155
+00:11:12,940 --> 00:11:15,960
+building B. So these are the
+people that are in building B.
+
+156
+00:11:17,810 --> 00:11:20,200
+Let's take a look if we want to see who
+
+157
+00:11:20,200 --> 00:11:25,940
+is not in building B and run this code.
+
+158
+00:11:27,560 --> 00:11:34,160
+Wait a minute. Nobody is not in
+building B suggesting that they're
+
+159
+00:11:34,160 --> 00:11:37,580
+all in building B. All of these
+double negatives. Well in the
+
+160
+00:11:37,580 --> 00:11:45,610
+Ben-Gon book he has a great
+section on why the not in can be
+
+161
+00:11:45,610 --> 00:11:50,000
+problematic and so if you read the
+description what you would need to
+
+162
+00:11:50,000 --> 00:11:53,920
+do to solve this code is one
+not use not in but the other one
+
+163
+00:11:53,920 --> 00:12:00,900
+would be also to say something like
+and student id and we're talking
+
+164
+00:12:00,900 --> 00:12:03,900
+about student id of the gym
+locker table so it's a foreign key
+
+165
+00:12:04,600 --> 00:12:07,520
+is not null.
+
+166
+00:12:10,840 --> 00:12:13,680
+And then it works just
+fine. We have 34 students.
+
+167
+00:12:14,120 --> 00:12:16,060
+SQL Server, when doing this
+
+168
+00:12:16,420 --> 00:12:22,640
+subquery with not in, when it finds
+a null value, it just shuts down.
+
+169
+00:12:22,640 --> 00:12:25,820
+It kind of short wires. It doesn't
+really work. So this is the
+
+170
+00:12:25,820 --> 00:12:32,540
+workaround for that problematic not
+in. So that concludes the second video
+
+171
+00:12:32,540 --> 00:12:36,380
+on subqueries. You'll now have a
+chance later in the week to work on
+
+172
+00:12:36,380 --> 00:12:39,960
+the lab where it will include a
+variety of questions to build off of
+
+173
+00:12:39,960 --> 00:12:43,500
+what you've done with joins last
+week and then complementing your
+
+174
+00:12:43,500 --> 00:12:48,200
+skills with both type 1 and type 2
+subqueries. So I hope this was helpful
+
+175
+00:12:48,200 --> 00:12:50,540
+for you. Best of luck in the lab.
+That's where the real learning
+
+176
+00:12:50,540 --> 00:12:54,580
+takes place. I hope you have a great
+day and we will see you next week.
+
+177
+00:12:59,120 --> 00:13:02,040
+Some people have bad hair day.
+
+178
+00:13:02,400 --> 00:13:04,780
+I'm having a bad helmet day.

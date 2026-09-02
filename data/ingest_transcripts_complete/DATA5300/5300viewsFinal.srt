@@ -1,0 +1,1135 @@
+1
+00:00:07,450 --> 00:00:08,670
+the teleprompter.
+
+2
+00:00:10,050 --> 00:00:12,230
+Data 5300 students.
+
+3
+00:00:12,350 --> 00:00:14,830
+Over the past few modules, you know Darth
+
+4
+00:00:14,830 --> 00:00:17,910
+Vader has been part of the online videos.
+
+5
+00:00:18,330 --> 00:00:21,930
+Some of you thought this was the
+real Darth Vader. It was not.
+
+6
+00:00:22,130 --> 00:00:26,370
+It was just me, a professor
+in a Halloween costume,
+
+7
+00:00:26,490 --> 00:00:29,910
+trying to make the online environment
+
+8
+00:00:30,730 --> 00:00:32,570
+a little more entertaining.
+
+9
+00:00:33,830 --> 00:00:37,370
+Also, there is no evidence
+that Luke Skywalker has
+
+10
+00:00:37,370 --> 00:00:40,070
+been trained in SQL. He has
+only been trained in the
+
+11
+00:00:40,070 --> 00:00:43,710
+Force. The only real cast
+member, to our knowledge,
+
+12
+00:00:43,730 --> 00:00:47,570
+is the Stormtrooper. Thank you
+for your attention to this matter.
+
+13
+00:00:56,200 --> 00:00:57,940
+Welcome back to Module 9.
+
+14
+00:00:57,960 --> 00:01:02,000
+Congratulations making it this far.
+After seeing all the Darth Vader
+
+15
+00:01:02,000 --> 00:01:06,140
+introductions, you probably feel
+like these case expressions are going
+
+16
+00:01:06,140 --> 00:01:10,120
+to pack your bags and go on a well
+-deserved vacation. For those of you
+
+17
+00:01:10,120 --> 00:01:13,980
+still here, today we'll cover views
+and case expressions. We're going
+
+18
+00:01:13,980 --> 00:01:17,040
+to break this down into three
+different videos. The first video will
+
+19
+00:01:17,040 --> 00:01:21,080
+be on views, the second video will
+be on case expressions, and then we
+
+20
+00:01:21,080 --> 00:01:24,660
+have a third video related to case
+expressions where there's a challenge
+
+21
+00:01:24,660 --> 00:01:28,160
+question posed to you, and that
+challenge question will specifically
+
+22
+00:01:28,160 --> 00:01:31,640
+be on the exam. So you certainly
+won't want to miss the third video.
+
+23
+00:01:31,900 --> 00:01:34,860
+Let's take a look at the
+deliverables for this week.
+
+24
+00:01:34,860 --> 00:01:38,740
+If you're on campus today, we
+cover the blue triad, meaning
+
+25
+00:01:38,740 --> 00:01:42,940
+just taking notes on the videos
+that we have. For this video,
+
+26
+00:01:42,940 --> 00:01:45,440
+you could take notes on the
+two, the views, and the case
+
+27
+00:01:45,440 --> 00:01:48,640
+expressions, or you could take
+notes on all three views, case
+
+28
+00:01:48,640 --> 00:01:51,480
+expressions, and the challenge
+question, but that's up to you.
+
+29
+00:01:51,700 --> 00:01:54,640
+And then for the on-campus
+class, on Thursday, we'll do
+
+30
+00:01:54,640 --> 00:01:58,520
+lab five, and for online
+class, it's your schedule, so
+
+31
+00:01:58,520 --> 00:02:01,960
+second half of the week, you'll
+probably work on lab five.
+
+32
+00:02:02,100 --> 00:02:05,740
+A view is a reusable type
+of table expression because
+
+33
+00:02:05,740 --> 00:02:08,740
+their definitions are
+stored in database objects.
+
+34
+00:02:09,060 --> 00:02:12,980
+In SQL Server, we'll have a separate
+folder. You have one folder for
+
+35
+00:02:12,980 --> 00:02:16,800
+your tables. You'll now have a separate
+folder for your views, and when
+
+36
+00:02:16,800 --> 00:02:20,560
+we write the code for views, those
+views will show up here, and they
+
+37
+00:02:20,560 --> 00:02:24,120
+work just like tables. You'll
+refer to them just like tables, so
+
+38
+00:02:24,120 --> 00:02:28,760
+instead of select star from class,
+you could indicate select star from
+
+39
+00:02:28,760 --> 00:02:31,880
+whatever the name of this view is.
+All right, let's take a look at some
+
+40
+00:02:31,880 --> 00:02:35,460
+of the benefits of views. The first
+thing is it's a virtual table.
+
+41
+00:02:35,740 --> 00:02:39,520
+So when you create a view, it doesn't
+physically store like a table. It
+
+42
+00:02:39,520 --> 00:02:43,360
+draws the data out of a table, but
+you don't have data physically stored
+
+43
+00:02:43,360 --> 00:02:48,240
+in two places. So it's a virtual
+table. And the primary benefit is
+
+44
+00:02:48,240 --> 00:02:53,160
+you can hide columns, rows, you can
+hide names of columns, you can reuse
+
+45
+00:02:53,160 --> 00:02:57,000
+complex code. So you could write
+some complex code, save it as a view
+
+46
+00:02:57,000 --> 00:03:01,700
+or in the form of a view. And then
+when you refer to that view, the
+
+47
+00:03:01,700 --> 00:03:06,400
+complex code is already written, and
+you can also add some security features.
+
+48
+00:03:06,400 --> 00:03:09,480
+There are some rules associated
+with views. You can read in the Ben
+
+49
+00:03:09,480 --> 00:03:13,120
+Gaughan book about this, but you
+don't use the order by in the view.
+
+50
+00:03:13,180 --> 00:03:16,160
+You can use the order by
+outside of the view when you're
+
+51
+00:03:16,160 --> 00:03:19,320
+referring to it, but not when
+you create it. All columns must
+
+52
+00:03:19,320 --> 00:03:22,960
+have names, and all columns
+must be unique, and these follow
+
+53
+00:03:22,960 --> 00:03:25,860
+the idea of relational
+mathematics, relational algebra.
+
+54
+00:03:26,020 --> 00:03:29,300
+And on the bottom left of the
+screen, I just have an example of the
+
+55
+00:03:29,300 --> 00:03:33,400
+most simple view, like that prototype
+example, a simple view. So you
+
+56
+00:03:33,400 --> 00:03:37,740
+have create, space, view, and then
+the name of the view. Now the name
+
+57
+00:03:37,740 --> 00:03:41,600
+of the view here, I always put a V
+in front of it, so V first, and then
+
+58
+00:03:41,600 --> 00:03:45,480
+the word as. Once you write the
+word as, everything below it to the
+
+59
+00:03:45,480 --> 00:03:49,820
+semicolon will be contained in the
+view. So if we ran this code, it
+
+60
+00:03:49,820 --> 00:03:53,780
+would say command successful, you
+wouldn't see anything happen. But
+
+61
+00:03:53,780 --> 00:03:57,180
+then if we go look under views, we
+would find that our first view was
+
+62
+00:03:57,180 --> 00:04:00,600
+created so let's go ahead and do
+that you could pause the screen if
+
+63
+00:04:00,600 --> 00:04:03,260
+you need to to copy this code if you
+want to follow along on this very
+
+64
+00:04:03,260 --> 00:04:10,400
+first one or you could wait to the
+blue triads but I'm going to copy
+
+65
+00:04:10,400 --> 00:04:14,840
+and paste this information B first
+there's the syntax I'm using the
+
+66
+00:04:14,840 --> 00:04:19,700
+university data set I run this it
+doesn't show any output it doesn't
+
+67
+00:04:19,700 --> 00:04:23,140
+show anything under views too unless
+if I click the refresh button oh
+
+68
+00:04:23,320 --> 00:04:25,280
+Oh, that darn refresh button.
+
+69
+00:04:28,920 --> 00:04:34,600
+The refresh, and here we have dbo
+.vFirst. Now, dbo we'll get to later
+
+70
+00:04:34,600 --> 00:04:38,640
+and primarily in the advanced class.
+It just represents database owner.
+
+71
+00:04:38,640 --> 00:04:42,240
+It's kind of a prefix to
+the name of the table. So in
+
+72
+00:04:42,240 --> 00:04:45,940
+some coding challenges in SQL,
+you actually have to write
+
+73
+00:04:45,940 --> 00:04:48,910
+the entire name. In this
+case, it would be dbo.vFirst.
+
+74
+00:04:49,640 --> 00:04:52,660
+Everything I think we do
+in 5300, you can just write
+
+75
+00:04:52,660 --> 00:04:54,920
+the name of the table or
+just the name of the view.
+
+76
+00:04:55,160 --> 00:04:57,820
+All right, in order to
+see this first one, and
+
+77
+00:04:57,820 --> 00:05:00,060
+we kind of know what
+the code is, right? So,
+
+78
+00:05:00,260 --> 00:05:03,280
+in fact, before you create a
+view, it's good to run that code
+
+79
+00:05:03,280 --> 00:05:06,200
+just to make sure it works.
+I don't include the order by.
+
+80
+00:05:07,880 --> 00:05:10,740
+And then I can go in and run this.
+
+81
+00:05:11,100 --> 00:05:14,040
+In this case, I'm
+selecting everything, but
+
+82
+00:05:14,040 --> 00:05:17,200
+instead of from student,
+I'll say from vFirst,
+
+83
+00:05:23,000 --> 00:05:27,320
+our first use of a view. And
+you can also drop a view.
+
+84
+00:05:27,720 --> 00:05:29,520
+just like a table. So drop
+
+85
+00:05:34,410 --> 00:05:37,010
+the view instead of a table
+and then the name of it.
+
+86
+00:05:37,450 --> 00:05:41,310
+And now this view is gone. Goodbye.
+
+87
+00:05:41,630 --> 00:05:45,990
+Here are some examples in terms of
+security. Human resources, they can
+
+88
+00:05:45,990 --> 00:05:50,490
+see employees' names, but not their
+salaries. So perhaps some in HR
+
+89
+00:05:50,490 --> 00:05:53,730
+have access to everything, but others,
+you don't want them to have access
+
+90
+00:05:53,730 --> 00:05:57,270
+to salaries, so you can create a
+view. For instance, as an airline,
+
+91
+00:05:57,270 --> 00:06:00,410
+when you're making a reservation,
+most of those people only have access
+
+92
+00:06:00,410 --> 00:06:03,650
+to views, they don't have access
+to the underlying table, so they're
+
+93
+00:06:03,650 --> 00:06:07,650
+likely using views. A sales rep can
+only see customers in their region,
+
+94
+00:06:07,650 --> 00:06:11,390
+not customers in other region, so
+they can't go try steal customers.
+
+95
+00:06:12,010 --> 00:06:14,790
+Interns can have limited access to
+
+96
+00:06:14,790 --> 00:06:16,630
+the views, but not to the raw tables,
+
+97
+00:06:16,870 --> 00:06:22,330
+and analysts can use views without
+touching production tables.
+
+98
+00:06:22,340 --> 00:06:25,650
+Now, in data analytics, the
+primary use of this would be
+
+99
+00:06:25,650 --> 00:06:30,290
+reusability. You create a nice
+algorithm, some complex code, and
+
+100
+00:06:30,290 --> 00:06:33,050
+then you can save it as a view
+and you have that reusability
+
+101
+00:06:33,050 --> 00:06:37,030
+factor. This business challenge
+looks like a lot, but this covers
+
+102
+00:06:37,030 --> 00:06:40,730
+all of the topics that we will
+be going over related to views.
+
+103
+00:06:40,730 --> 00:06:46,190
+Kelly, a grumpy worker in DAIS,
+all hypothetical, not real world,
+
+104
+00:06:46,210 --> 00:06:49,770
+wants information from the
+database, but we don't trust this
+
+105
+00:06:49,770 --> 00:06:53,810
+particular Kelly and we would
+like to encrypt that data.
+
+106
+00:06:54,130 --> 00:06:58,150
+In addition, we only want to
+provide Kelly access to the
+
+107
+00:06:58,150 --> 00:07:02,510
+student table via a view, so we
+only want him to use the view.
+
+108
+00:07:02,670 --> 00:07:06,490
+We don't provide him access to
+the student table, just access to
+
+109
+00:07:06,490 --> 00:07:09,570
+the viewed. Now that particular
+writing of the access is kind
+
+110
+00:07:09,570 --> 00:07:12,360
+of behind the scenes. It's more
+of a data administration language
+
+111
+00:07:12,730 --> 00:07:16,030
+code, so it's more the database
+administration, but we can go in
+
+112
+00:07:16,030 --> 00:07:19,130
+and just provide Kelly with
+access to views and not to tables.
+
+113
+00:07:19,670 --> 00:07:23,290
+We also don't want anybody
+deleting columns while we're
+
+114
+00:07:23,290 --> 00:07:25,970
+using this view. And if
+you think about referential
+
+115
+00:07:25,970 --> 00:07:29,510
+integrity, the idea is you
+have to delete the child table
+
+116
+00:07:29,510 --> 00:07:32,490
+before you can delete the
+parent table. Schema binding,
+
+117
+00:07:32,490 --> 00:07:35,350
+if I were making a flashcard,
+is very similar to that.
+
+118
+00:07:35,690 --> 00:07:39,510
+Encrypt the view with encryption.
+We've talked about that already
+
+119
+00:07:39,510 --> 00:07:44,010
+briefly. And then the third item is
+we don't want Kelly inserting rows,
+
+120
+00:07:44,190 --> 00:07:48,130
+inserting information that's not
+related to his area of access.
+
+121
+00:07:48,130 --> 00:07:51,330
+And we'll figure out what his
+area of access is, and that's
+
+122
+00:07:51,330 --> 00:07:53,570
+using what's called the check
+option. So that's everything
+
+123
+00:07:53,570 --> 00:07:57,190
+else we'll cover, encryption,
+schema binding, and with the check
+
+124
+00:07:57,190 --> 00:08:00,750
+option, and then we'll go ahead
+and conclude with the views.
+
+125
+00:08:00,910 --> 00:08:05,650
+So the first one is let's tackle
+that encryption, create view,
+
+126
+00:08:05,650 --> 00:08:09,940
+and then I put this as VE
+instead of first, and then with
+
+127
+00:08:09,940 --> 00:08:13,450
+encryption, notice that's before
+the as because it's describing being
+
+128
+00:08:13,450 --> 00:08:16,780
+the view itself and then we have
+the rest of the information.
+
+129
+00:08:18,220 --> 00:08:20,710
+So let me go ahead and
+copy this. I'm going to go
+
+130
+00:08:20,710 --> 00:08:25,210
+back to our SQL Server and
+the first thing I'm going
+
+131
+00:08:25,210 --> 00:08:27,070
+to do is I'm going to
+create our original view.
+
+132
+00:08:28,310 --> 00:08:30,530
+All right, we have that view created
+
+133
+00:08:32,170 --> 00:08:36,250
+and I haven't created this view
+yet but let's go ahead and refresh
+
+134
+00:08:36,250 --> 00:08:41,890
+again and take a look. we have
+this view. If I right-click on this
+
+135
+00:08:41,890 --> 00:08:48,910
+view and I look at the design,
+you can see that it has all of the
+
+136
+00:08:48,910 --> 00:08:52,770
+information, including the code,
+the columns, the table structure
+
+137
+00:08:53,110 --> 00:08:56,150
+that we use to create this view.
+
+138
+00:08:57,090 --> 00:08:57,950
+Wow.
+
+139
+00:08:58,190 --> 00:09:00,950
+And also, I can write
+this code. I think I had
+
+140
+00:09:00,950 --> 00:09:05,010
+it on the other slide.
+SP underscore help text.
+
+141
+00:09:05,950 --> 00:09:07,910
+And then we'll call it. And
+
+142
+00:09:15,350 --> 00:09:18,130
+in that case it gives us
+everything how we created the
+
+143
+00:09:18,130 --> 00:09:22,790
+view yikes and so let's go
+ahead and run the second one
+
+144
+00:09:23,910 --> 00:09:30,730
+with encryption and again we put
+a ve to describe encryption as
+
+145
+00:09:30,730 --> 00:09:36,030
+everything else is the same it's ve
+first so it should run it looks like
+
+146
+00:09:36,030 --> 00:09:39,830
+it ran okay we're going to refresh
+that but now look at the difference
+
+147
+00:09:39,830 --> 00:09:43,930
+our v first looks fine like a
+normal pages you'll notice there's
+
+148
+00:09:43,930 --> 00:09:48,630
+a little lock on the encrypted
+one. And the design is grayed out.
+
+149
+00:09:49,350 --> 00:09:54,730
+And then if we go and take a look
+at that sp underscore help text and
+
+150
+00:09:54,730 --> 00:09:59,330
+we run that, nope, you can't have
+access to it. So what we've done
+
+151
+00:09:59,330 --> 00:10:03,770
+is we've created some protection
+around this view and only certain
+
+152
+00:10:03,770 --> 00:10:07,910
+people can access it. Next, let's
+look at schema binding. And I think
+
+153
+00:10:07,910 --> 00:10:11,930
+earlier I mentioned we generally don't
+use DBO database object. I forgot
+
+154
+00:10:11,930 --> 00:10:16,210
+before looking at this slide that
+in order to do schema binding you
+
+155
+00:10:16,210 --> 00:10:20,550
+do have to do the two-part format
+so you would have to include dbo
+
+156
+00:10:20,550 --> 00:10:25,630
+.student. The idea of schema binding
+again is if we create this view we
+
+157
+00:10:25,630 --> 00:10:29,280
+don't want any of the underlying
+tables to be deleted dropped because
+
+158
+00:10:29,280 --> 00:10:32,950
+then our view is no longer usable.
+I don't know if there's a convention
+
+159
+00:10:32,950 --> 00:10:37,150
+for naming but I do have this one
+as V, S, S for schema binding,
+
+160
+00:10:37,150 --> 00:10:38,150
+E for encryption.
+
+161
+00:10:39,330 --> 00:10:41,990
+Each company's gonna have
+its own way to represent
+
+162
+00:10:41,990 --> 00:10:45,610
+code. So we have with encryption.
+Also, before I forget,
+
+163
+00:10:45,610 --> 00:10:48,990
+you can use encryption and
+schema binding together, and you
+
+164
+00:10:48,990 --> 00:10:53,830
+would do that just with a comma
+and then writing encryption.
+
+165
+00:10:53,830 --> 00:10:56,410
+So just like you only have one order by,
+
+166
+00:10:56,410 --> 00:10:58,670
+you would only have one with as well.
+
+167
+00:10:58,850 --> 00:11:01,890
+So we could do that, but for
+this we're just looking at
+
+168
+00:11:01,890 --> 00:11:04,690
+the schema binding. This is
+very complex code. Select first
+
+169
+00:11:04,690 --> 00:11:07,970
+and last name from student,
+but if I type in now drop
+
+170
+00:11:08,890 --> 00:11:09,690
+table
+
+171
+00:11:11,390 --> 00:11:12,190
+Student
+
+172
+00:11:13,990 --> 00:11:15,350
+In this case
+
+173
+00:11:15,770 --> 00:11:17,630
+We can't do it, but I think it's in
+
+174
+00:11:17,630 --> 00:11:19,310
+here. It's referenced by a foreign key
+
+175
+00:11:19,390 --> 00:11:22,750
+But if we ran a child table, we would
+
+176
+00:11:22,750 --> 00:11:24,130
+get the same kind of error message
+
+177
+00:11:24,430 --> 00:11:27,410
+So effectively it would do the same
+you can't delete the underlying
+
+178
+00:11:27,410 --> 00:11:31,590
+table with that also as a
+reminder This is because I forgot
+
+179
+00:11:31,590 --> 00:11:35,980
+about it from last semester,
+but if I call this vfirst2 and
+
+180
+00:11:35,980 --> 00:11:41,850
+I don't have the full database
+object, it needs the entire dbo
+
+181
+00:11:41,850 --> 00:11:45,650
+.student, so the entire naming
+convention or the entire schema
+
+182
+00:11:45,650 --> 00:11:49,010
+for that particular object. And
+the third one is check option.
+
+183
+00:11:49,010 --> 00:11:51,190
+And as you look at the
+page, you'll notice that we
+
+184
+00:11:51,190 --> 00:11:54,610
+have a create view, vc,
+vc for check option first.
+
+185
+00:11:54,710 --> 00:11:58,970
+And in this particular case, we've
+got a little bit more complex code.
+
+186
+00:11:58,970 --> 00:12:03,810
+we have we have the check option
+now if you think about when we did
+
+187
+00:12:03,810 --> 00:12:08,570
+encryption it was at the top when
+we did schema binding it was also at
+
+188
+00:12:08,570 --> 00:12:12,610
+the top you'll notice that check
+option is down below and let's copy
+
+189
+00:12:12,610 --> 00:12:17,030
+this and then i'll describe what the
+check option does to show the delete
+
+190
+00:12:17,030 --> 00:12:20,570
+or some of the power of the check
+option i've created a more simplified
+
+191
+00:12:20,850 --> 00:12:24,390
+view and the reason for that is
+the other one had joins it gets a
+
+192
+00:12:24,390 --> 00:12:28,110
+little confusing when you start
+trying to delete or change things So
+
+193
+00:12:28,110 --> 00:12:31,250
+let's just create this simple one.
+It's similar to what we're giving
+
+194
+00:12:31,250 --> 00:12:36,050
+Kelly access to. It just has access
+to building A. If we run this view,
+
+195
+00:12:36,790 --> 00:12:48,310
+select everything from
+VCSimple, and this is perfect.
+
+196
+00:12:48,370 --> 00:12:52,610
+Okay, let me go ahead and
+add an insert statement.
+
+197
+00:12:53,790 --> 00:12:55,070
+insert into.
+
+198
+00:12:55,850 --> 00:12:57,730
+All right, so here's the code we're going
+
+199
+00:12:57,730 --> 00:13:00,310
+to try to use using
+the view. Insert into.
+
+200
+00:13:00,350 --> 00:13:03,370
+We have the three columns. We
+don't use the first column,
+
+201
+00:13:03,370 --> 00:13:07,450
+which was, I think, locker number.
+That's a surrogate key, but
+
+202
+00:13:07,450 --> 00:13:10,910
+we have this information.
+Remember, we do have Kelly limited
+
+203
+00:13:10,910 --> 00:13:14,590
+through the check option, and
+we run this code. It says,
+
+204
+00:13:14,620 --> 00:13:20,490
+the target view is a no-go with
+the check option. Heck yeah.
+
+205
+00:13:20,740 --> 00:13:22,870
+And so he goes, fine,
+okay, we'll put you in
+
+206
+00:13:22,870 --> 00:13:25,790
+building A. And you can do
+this with insert, delete.
+
+207
+00:13:25,790 --> 00:13:27,350
+So go into building A.
+
+208
+00:13:27,790 --> 00:13:31,030
+And away we go. What a
+cool thing. Check option.
+
+209
+00:13:31,030 --> 00:13:35,170
+It limits Kelly, the
+fictional character Kelly.
+
+210
+00:13:38,350 --> 00:13:42,050
+All right, we'll finish up
+with just a quick new topic. It
+
+211
+00:13:42,050 --> 00:13:45,290
+won't take long at all. The
+top filter. Sometimes you just
+
+212
+00:13:45,290 --> 00:13:48,910
+want to limit the percentages
+or the number of rows that
+
+213
+00:13:48,910 --> 00:13:51,650
+will return in your query, and
+you can do that just through
+
+214
+00:13:51,650 --> 00:13:54,910
+the top option. I'll just show
+you the two possibilities.
+
+215
+00:13:55,190 --> 00:13:57,230
+You could have, for instance,
+
+216
+00:13:59,250 --> 00:14:04,130
+select top five, and then
+we'll just put everything,
+
+217
+00:14:04,130 --> 00:14:06,990
+but you could put specific
+rows from student.
+
+218
+00:14:08,130 --> 00:14:09,890
+Now if you run this,
+
+219
+00:14:10,310 --> 00:14:13,390
+we get the top five.
+Using top five, though,
+
+220
+00:14:13,510 --> 00:14:16,650
+technically, SQL grabs these
+rows in whatever order they
+
+221
+00:14:16,650 --> 00:14:20,430
+choose to run it in. So in
+most cases, you're going to
+
+222
+00:14:20,430 --> 00:14:24,210
+use select with an order by and
+whatever that order by might
+
+223
+00:14:24,210 --> 00:14:30,370
+be. So we could do it by
+last name in ascending order.
+
+224
+00:14:30,490 --> 00:14:34,830
+So most of the time, they go
+hand in hand. And we can also use
+
+225
+00:14:34,830 --> 00:14:38,070
+either top five as a number or
+you could use a percent. So in
+
+226
+00:14:38,070 --> 00:14:41,830
+this case, let's say top 50 and
+then write the word percent.
+
+227
+00:14:42,930 --> 00:14:47,790
+and I checked my student number.
+I thought I had an error. 81 rows,
+
+228
+00:14:47,790 --> 00:14:52,090
+so top 50% should give us, 80 should
+give us about half of that. So
+
+229
+00:14:52,090 --> 00:14:57,650
+in this case, it delivers 41 rows
+of data using the top function.
+
+230
+00:14:57,770 --> 00:15:01,190
+So that covers the views.
+You've learned a lot about what
+
+231
+00:15:01,190 --> 00:15:03,990
+they are, how to build them,
+how to get rid of them,
+
+232
+00:15:03,990 --> 00:15:07,150
+the encryption, the schema
+binding, and the check option,
+
+233
+00:15:07,250 --> 00:15:09,550
+and we will see you in the next video to
+
+234
+00:15:09,550 --> 00:15:11,630
+cover case expressions. Have a great day.

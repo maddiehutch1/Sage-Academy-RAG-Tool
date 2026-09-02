@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US"
+  xmlns="http://www.w3.org/ns/ttml"
+  xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+  xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+      <ttm:title>559341132 - 1_bk0pfafx - PID 1530551</ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:textAlign="center" />
+    </styling>
+  </head>
+
+  <body>
+    <div style="basic">
+        <p begin="00:00:00.000" end="00:00:05.400" tts:direction="ltr">SQL coders, I'm excited to introduce you
+<br />to the exist predicate.</p>
+        <p begin="00:00:05.400" end="00:00:10.280" tts:direction="ltr">The exist predicate replaces the in
+<br />operator that's commonly</p>
+        <p begin="00:00:10.280" end="00:00:15.520" tts:direction="ltr">used in sub queries and checks if the
+<br />inner query returns any rows.</p>
+        <p begin="00:00:15.520" end="00:00:18.040" tts:direction="ltr">If it does, it returns true.</p>
+        <p begin="00:00:18.040" end="00:00:19.960" tts:direction="ltr">If not false.</p>
+        <p begin="00:00:19.960" end="00:00:23.080" tts:direction="ltr">Once it finds match or matches,</p>
+        <p begin="00:00:23.080" end="00:00:25.880" tts:direction="ltr">the code stops executing.</p>
+        <p begin="00:00:26.870" end="00:00:31.510" tts:direction="ltr">As a result, the exist predicate is
+<br />typically more</p>
+        <p begin="00:00:31.510" end="00:00:36.110" tts:direction="ltr">efficient than joins or sub queries with
+<br />the in operator.</p>
+        <p begin="00:00:36.110" end="00:00:39.110" tts:direction="ltr">This definition might sound confusing,</p>
+        <p begin="00:00:39.110" end="00:00:41.270" tts:direction="ltr">but applying your prior knowledge of</p>
+        <p begin="00:00:41.270" end="00:00:46.230" tts:direction="ltr">traditional sub queries will make the
+<br />exist predicate easier to understand.</p>
+        <p begin="00:00:46.230" end="00:00:51.550" tts:direction="ltr">In our example, we are tracking one of our
+<br />customers named Kelly,</p>
+        <p begin="00:00:51.550" end="00:00:55.270" tts:direction="ltr">but we're not sure if he's ever made an
+<br />actual purchase.</p>
+        <p begin="00:00:55.270" end="00:00:57.510" tts:direction="ltr">Is he paying for these meals?</p>
+        <p begin="00:00:57.510" end="00:01:00.430" tts:direction="ltr">We aren't even sure what Kelly's last name
+<br />is,</p>
+        <p begin="00:01:00.430" end="00:01:03.790" tts:direction="ltr">but we do know he is customer equal to
+<br />four.</p>
+        <p begin="00:01:03.790" end="00:01:05.990" tts:direction="ltr">Let's analyze our data.</p>
+        <p begin="00:01:05.990" end="00:01:09.870" tts:direction="ltr">Let's write a query to return the first
+<br />and last name</p>
+        <p begin="00:01:09.870" end="00:01:14.230" tts:direction="ltr">of a customer with customer ID equal four,</p>
+        <p begin="00:01:14.230" end="00:01:17.150" tts:direction="ltr">but only if they've made a purchase.</p>
+        <p begin="00:01:17.150" end="00:01:18.670" tts:direction="ltr">To solve this problem,</p>
+        <p begin="00:01:18.670" end="00:01:20.190" tts:direction="ltr">we need two tables,</p>
+        <p begin="00:01:20.190" end="00:01:23.110" tts:direction="ltr">the customer table and the sale table.</p>
+        <p begin="00:01:23.110" end="00:01:26.470" tts:direction="ltr">Before solving the problem with the exist
+<br />predicate,</p>
+        <p begin="00:01:26.470" end="00:01:29.670" tts:direction="ltr">let's solve using code you are already
+<br />familiar</p>
+        <p begin="00:01:29.670" end="00:01:33.320" tts:direction="ltr">with a sub query using the in operator.</p>
+        <p begin="00:01:33.320" end="00:01:35.890" tts:direction="ltr">The outer query is pretty standard.</p>
+        <p begin="00:01:35.890" end="00:01:38.330" tts:direction="ltr">We select first and last name from</p>
+        <p begin="00:01:38.330" end="00:01:42.930" tts:direction="ltr">the customer table where customer ID is
+<br />equal to four.</p>
+        <p begin="00:01:42.930" end="00:01:45.370" tts:direction="ltr">The sub query, as expected,</p>
+        <p begin="00:01:45.370" end="00:01:49.290" tts:direction="ltr">links the inner and outer query using
+<br />customer ID,</p>
+        <p begin="00:01:49.290" end="00:01:52.530" tts:direction="ltr">which establishes the primary foreign
+<br />relationship</p>
+        <p begin="00:01:52.530" end="00:01:55.130" tts:direction="ltr">between the customer and sale table.</p>
+        <p begin="00:01:55.130" end="00:02:00.620" tts:direction="ltr">We write and customer ID in left
+<br />parenthesis,</p>
+        <p begin="00:02:00.620" end="00:02:03.980" tts:direction="ltr">select customer ID from sale</p>
+        <p begin="00:02:03.980" end="00:02:09.580" tts:direction="ltr">where customer dot customer ID equal sale
+<br />dot customer ID,</p>
+        <p begin="00:02:09.580" end="00:02:12.340" tts:direction="ltr">right parenthesis semicolon.</p>
+        <p begin="00:02:12.340" end="00:02:16.480" tts:direction="ltr">Now let's solve the same problem using the
+<br />exist predicate.</p>
+        <p begin="00:02:16.480" end="00:02:20.140" tts:direction="ltr">The outer query is the same for both
+<br />coding methods.</p>
+        <p begin="00:02:20.140" end="00:02:22.500" tts:direction="ltr">We select first and last name from</p>
+        <p begin="00:02:22.500" end="00:02:26.660" tts:direction="ltr">the customer table where customer ID is
+<br />equal to four.</p>
+        <p begin="00:02:26.660" end="00:02:30.500" tts:direction="ltr">The inner query is where the exist
+<br />predicate is used.</p>
+        <p begin="00:02:30.500" end="00:02:37.300" tts:direction="ltr">We write and exist left parenthesis and
+<br />then select star from sale,</p>
+        <p begin="00:02:37.300" end="00:02:40.420" tts:direction="ltr">and now check to see for a match where</p>
+        <p begin="00:02:40.420" end="00:02:45.905" tts:direction="ltr">customer dot customer ID equals sale dot
+<br />customer ID.</p>
+        <p begin="00:02:45.905" end="00:02:50.110" tts:direction="ltr">This allows the exist predicate to compare
+<br />the outer query,</p>
+        <p begin="00:02:50.110" end="00:02:53.870" tts:direction="ltr">the customer table, and the inner query
+<br />the sale table.</p>
+        <p begin="00:02:53.870" end="00:02:56.990" tts:direction="ltr">If C four is in the sale table,</p>
+        <p begin="00:02:56.990" end="00:03:00.630" tts:direction="ltr">the code will stop after the first match
+<br />is located.</p>
+        <p begin="00:03:00.630" end="00:03:03.230" tts:direction="ltr">Also, you have likely learned that</p>
+        <p begin="00:03:03.230" end="00:03:07.790" tts:direction="ltr">select star isn't considered best practice
+<br />and should be avoided.</p>
+        <p begin="00:03:07.790" end="00:03:12.030" tts:direction="ltr">However, it's perfectly fine for the exist
+<br />predicate because we are</p>
+        <p begin="00:03:12.030" end="00:03:16.750" tts:direction="ltr">simply looking for a match and not
+<br />returning data from an inner query.</p>
+        <p begin="00:03:16.750" end="00:03:22.560" tts:direction="ltr">Our results in both coding examples First
+<br />name, Kelly, last name?</p>
+        <p begin="00:03:22.560" end="00:03:26.720" tts:direction="ltr">Well, we just have an initial F. It's
+<br />Kelly F.</p>
+        <p begin="00:03:26.720" end="00:03:31.040" tts:direction="ltr">I'm surprised. Apparently, Kelly does
+<br />purchase his food.</p>
+        <p begin="00:03:31.040" end="00:03:34.320" tts:direction="ltr">Well, at least once according to our code.</p>
+        <p begin="00:03:34.320" end="00:03:37.280" tts:direction="ltr">Now, pause the video and try solving</p>
+        <p begin="00:03:37.280" end="00:03:41.880" tts:direction="ltr">the exist practice questions using your
+<br />own SQL code.</p>
+        <p begin="00:03:41.880" end="00:03:45.320" tts:direction="ltr">When you're done, resume the video to see
+<br />how</p>
+        <p begin="00:03:45.320" end="00:03:49.905" tts:direction="ltr">the exist predicate works and why it's
+<br />such an efficient option.</p>
+        <p begin="00:03:49.905" end="00:03:54.930" tts:direction="ltr">Now, let's compare the coding efficiency
+<br />between our two examples,</p>
+        <p begin="00:03:54.930" end="00:03:59.650" tts:direction="ltr">the well known sub query used in the in
+<br />operator and the exist predicate.</p>
+        <p begin="00:03:59.650" end="00:04:03.890" tts:direction="ltr">To analyze the number of reads required to
+<br />run each example,</p>
+        <p begin="00:04:03.890" end="00:04:07.530" tts:direction="ltr">we set statistics IO on.</p>
+        <p begin="00:04:07.530" end="00:04:09.850" tts:direction="ltr">What are Ostistics?</p>
+        <p begin="00:04:09.850" end="00:04:14.130" tts:direction="ltr">You can think of O statistics like reading
+<br />a page out a book.</p>
+        <p begin="00:04:14.130" end="00:04:15.650" tts:direction="ltr">However, in this case,</p>
+        <p begin="00:04:15.650" end="00:04:17.490" tts:direction="ltr">the read isn't in a book,</p>
+        <p begin="00:04:17.490" end="00:04:20.890" tts:direction="ltr">instead, it's reading a page of data from
+<br />memory.</p>
+        <p begin="00:04:20.890" end="00:04:23.490" tts:direction="ltr">According to IO statistics,</p>
+        <p begin="00:04:23.490" end="00:04:27.170" tts:direction="ltr">the exist predicate only requires one
+<br />read.</p>
+        <p begin="00:04:27.280" end="00:04:33.400" tts:direction="ltr">The inner query using the in operator
+<br />requires five reads.</p>
+        <p begin="00:04:33.400" end="00:04:36.480" tts:direction="ltr">Ready to level up your SQL,</p>
+        <p begin="00:04:36.480" end="00:04:41.040" tts:direction="ltr">try using exist and watch your queries
+<br />fly.</p>
+    </div>
+  </body>
+</tt>

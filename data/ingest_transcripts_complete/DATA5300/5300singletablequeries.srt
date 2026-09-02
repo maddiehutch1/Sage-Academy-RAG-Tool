@@ -1,0 +1,1569 @@
+1
+00:00:13,530 --> 00:00:16,750
+congratulations, you've made it
+through exam one, you've gone
+
+2
+00:00:16,750 --> 00:00:19,960
+through the vegetable portion of
+the course, the ER diagram and the
+
+3
+00:00:19,960 --> 00:00:24,350
+normalization, the DDL, DML, and
+now we're ready to write SQL code
+
+4
+00:00:24,350 --> 00:00:28,470
+based on the diagrams that we've
+created earlier in the course.
+
+5
+00:00:28,470 --> 00:00:33,170
+Just as a reminder, about 85% of
+all technology positions require SQL
+
+6
+00:00:33,170 --> 00:00:38,060
+Server, so this particular class,
+5300, is a great opportunity to develop
+
+7
+00:00:38,060 --> 00:00:42,990
+foundation skills, and if you have
+an interest in developing a more
+
+8
+00:00:43,180 --> 00:00:48,350
+depth in the area to kind of carve
+out SQL as one of your core areas,
+
+9
+00:00:48,350 --> 00:00:53,130
+we also invite you to consider taking
+the advanced course, data 5310.
+
+10
+00:00:54,070 --> 00:00:58,450
+All right. The deliverables for
+today, we have a blue triad. As a
+
+11
+00:00:58,450 --> 00:01:02,170
+reminder from the syllabus, blue
+triad, in this particular case, we'd
+
+12
+00:01:02,170 --> 00:01:07,190
+like you to log in to SQL Server
+to load the planet dataset. Planet
+
+13
+00:01:07,190 --> 00:01:11,310
+data set is located under files
+in Canvas and we have instructions
+
+14
+00:01:11,310 --> 00:01:15,870
+elsewhere on how to log in to SQL
+Server, how to load data files. So
+
+15
+00:01:15,870 --> 00:01:19,690
+once you get the planet data set
+loaded, you'll be ready for today.
+
+16
+00:01:20,350 --> 00:01:24,230
+Speaking of planets, I love
+anything to deal with space.
+
+17
+00:01:24,250 --> 00:01:30,550
+And years ago, I wrote a proposal
+for an honors class using SQL Server
+
+18
+00:01:30,550 --> 00:01:34,090
+and astronomy data. We thought it
+would be great to go and use the
+
+19
+00:01:34,090 --> 00:01:39,150
+telescope. and anyways it didn't work
+out and I think the project went to
+
+20
+00:01:39,150 --> 00:01:42,630
+studying snails or some other thing
+it was a long time ago but we still
+
+21
+00:01:42,630 --> 00:01:46,450
+have this initial data set that was
+put together as as just a proof of
+
+22
+00:01:46,450 --> 00:01:51,830
+concept the blue triad for today
+you'll follow along as I go through
+
+23
+00:01:51,830 --> 00:01:57,910
+different coding examples and then we
+also have the blue triad so once you
+
+24
+00:01:57,910 --> 00:02:01,690
+follow along we have some specific
+blue triads you'll upload your notes
+
+25
+00:02:01,690 --> 00:02:05,310
+along with screen captures or whatever
+you take to show that you were
+
+26
+00:02:05,310 --> 00:02:09,570
+fully paying attention to the video
+today to help you prepare for the
+
+27
+00:02:09,570 --> 00:02:13,310
+labs and for the exam. We also have
+a group by animation separate from
+
+28
+00:02:13,310 --> 00:02:17,630
+this video, and there is a group by
+animation quiz associated with that.
+
+29
+00:02:17,750 --> 00:02:22,150
+And then for those on campus,
+Thursday you will have lab two, and
+
+30
+00:02:22,150 --> 00:02:25,350
+for those of you online, the second
+part of the week you'll have lab
+
+31
+00:02:25,350 --> 00:02:29,970
+two where you'll be able to
+demonstrate your skills in SQL Server.
+
+32
+00:02:29,970 --> 00:02:32,730
+Anyways, let's ahead and get started.
+I was trying to take a picture
+
+33
+00:02:32,730 --> 00:02:36,430
+of this helicopter when some car
+drove in front of me and then I
+
+34
+00:02:36,430 --> 00:02:39,870
+noticed it did have kind of an
+interesting tail light that stood out
+
+35
+00:02:39,870 --> 00:02:43,850
+to me, but just trying to catch a
+picture of this helicopter here.
+
+36
+00:02:45,350 --> 00:02:50,550
+All right, we'll start with the
+most basic SQL, select statement,
+
+37
+00:02:50,550 --> 00:02:54,650
+from statement, where statement,
+I'll describe that, and then we'll
+
+38
+00:02:54,650 --> 00:02:57,980
+move into aggregate functions,
+group by, and having, which is
+
+39
+00:02:57,980 --> 00:03:02,230
+arguably the more a difficult part
+of single table queries that we're
+
+40
+00:03:02,230 --> 00:03:05,890
+covering today. The problem that
+I've noticed over the last forever
+
+41
+00:03:05,890 --> 00:03:10,620
+years is if I cover all of the
+basics in SQL Server in a traditional
+
+42
+00:03:10,620 --> 00:03:13,690
+class, by the time we get to a
+group by having, it's almost the
+
+43
+00:03:13,690 --> 00:03:18,150
+end of class, everybody's tired
+and they're ready to go. And then
+
+44
+00:03:18,150 --> 00:03:20,890
+we cover the most important topic
+in the last five or six minutes.
+
+45
+00:03:20,890 --> 00:03:24,310
+So we're going to flip that and
+cover those a little bit earlier.
+
+46
+00:03:24,510 --> 00:03:29,090
+So let's go ahead and move over
+to our Playground in SQL Server.
+
+47
+00:03:32,200 --> 00:03:38,010
+In SQL Server, you can use
+a couple of items to comment
+
+48
+00:03:38,010 --> 00:03:41,230
+in the code. If I use dash
+dash, you'll notice that
+
+49
+00:03:41,230 --> 00:03:47,050
+everything turns green, and
+I can indicate select from
+
+50
+00:03:50,010 --> 00:03:54,670
+and where, and that code won't run
+when I eventually execute and run
+
+51
+00:03:54,670 --> 00:03:57,650
+this code. I can always click on
+a new query. That will give me a
+
+52
+00:03:57,650 --> 00:04:01,670
+new tab, and then it's good to
+make comments just to keep track of
+
+53
+00:04:01,670 --> 00:04:06,630
+what you're actually doing to create
+documentation for those that go
+
+54
+00:04:06,630 --> 00:04:09,600
+ahead of you. You can also use a
+forward slash and then an asterisk.
+
+55
+00:04:09,790 --> 00:04:15,370
+You'll notice it turns green,
+and then you can include comments
+
+56
+00:04:15,370 --> 00:04:18,880
+here, and then to finish it
+off, I just remember that the
+
+57
+00:04:18,880 --> 00:04:22,330
+asterisks go together with the
+text, and so in this case you
+
+58
+00:04:22,330 --> 00:04:27,370
+could use asterisks and then
+the forward slash and that will
+
+59
+00:04:27,370 --> 00:04:30,290
+finish the comment. So this
+could work with multiple lines
+
+60
+00:04:30,290 --> 00:04:33,870
+until you indicate. Either way,
+whichever works better for you.
+
+61
+00:04:34,150 --> 00:04:39,070
+But in terms of the most simple code
+you can write, we'll learn about
+
+62
+00:04:39,070 --> 00:04:42,910
+or we'll use this more often later,
+but SQL does work with literal
+
+63
+00:04:42,910 --> 00:04:47,610
+values and it also works with
+column values or attributes, and you
+
+64
+00:04:47,610 --> 00:04:52,920
+can use combinations of the two,
+I could put select 5 plus 2, and
+
+65
+00:04:53,170 --> 00:04:56,150
+in this particular case, there's
+no table, there's no from clause
+
+66
+00:04:56,150 --> 00:05:01,110
+needed. I can run this and it simply
+adds this information together,
+
+67
+00:05:01,390 --> 00:05:05,250
+5 plus 2, and we'll come back
+to order of operation a little
+
+68
+00:05:05,250 --> 00:05:09,690
+bit later as well. But typically,
+we'll use a table or tables.
+
+69
+00:05:09,690 --> 00:05:13,890
+Today we're using a single
+table, and we'll indicate select
+
+70
+00:05:14,920 --> 00:05:19,970
+everything at this point from
+the planet table. And then if I
+
+71
+00:05:19,970 --> 00:05:23,890
+highlight it, I can run that
+particular code, and this gives
+
+72
+00:05:23,890 --> 00:05:29,010
+us a starting point to work on
+the planet data set. Now, we'll
+
+73
+00:05:29,010 --> 00:05:35,150
+cover one more keyword, and
+that would be the where clause.
+
+74
+00:05:35,290 --> 00:05:38,630
+The SELECT statement indicates
+which column or columns you're
+
+75
+00:05:38,630 --> 00:05:42,790
+interested in using, and right now
+we're using the SELECT statement.
+
+76
+00:05:42,930 --> 00:05:45,810
+Typically you don't want to
+use SELECT, and you can read
+
+77
+00:05:45,810 --> 00:05:49,030
+in the Ben-Gon book about
+why in detail, but just as
+
+78
+00:05:49,030 --> 00:05:52,850
+an example, if somebody
+comes in and deletes columns,
+
+79
+00:05:53,150 --> 00:05:56,370
+the SELECT statement will
+still work, and maybe you don't
+
+80
+00:05:56,370 --> 00:05:59,150
+want it to work. Or if somebody
+adds columns, you may not
+
+81
+00:05:59,150 --> 00:06:01,910
+know which columns were added.
+So one of the problems with
+
+82
+00:06:01,910 --> 00:06:04,870
+the SELECT star is that you
+lose a little bit of control
+
+83
+00:06:04,870 --> 00:06:08,010
+over what is changed or what
+hasn't changed in the dataset.
+
+84
+00:06:08,270 --> 00:06:12,730
+And so for class, you're just fine
+using select star to represent
+
+85
+00:06:12,730 --> 00:06:16,470
+all columns just for the
+sake of convenience. But in a
+
+86
+00:06:16,470 --> 00:06:19,230
+traditional business, you normally
+wouldn't include a select star
+
+87
+00:06:19,230 --> 00:06:24,550
+just to be more descriptive. And
+we will discuss that in detail
+
+88
+00:06:24,550 --> 00:06:28,310
+throughout the semester as well.
+The from statement is which
+
+89
+00:06:28,310 --> 00:06:32,550
+table or tables. In our case, we
+only have one table called planet.
+
+90
+00:06:32,550 --> 00:06:36,150
+And then the where statement
+is considered predicate logic.
+
+91
+00:06:36,150 --> 00:06:40,570
+And predicate logic is based on
+relational algebra, which is kind of
+
+92
+00:06:40,570 --> 00:06:44,450
+the foundations for SQL Server.
+And the idea of predicate logic in
+
+93
+00:06:44,450 --> 00:06:49,890
+SQL Server, normally things are
+either true or they're false. But in
+
+94
+00:06:49,890 --> 00:06:53,800
+SQL Server, they can be true, false,
+or unknown. So we have a three
+
+95
+00:06:53,800 --> 00:06:58,390
+logic in SQL Server. True, false,
+or unknown. and this is where I
+
+96
+00:06:58,390 --> 00:07:03,960
+could refer to a column, for instance,
+where mass is greater than 50.
+
+97
+00:07:07,050 --> 00:07:10,990
+And the predicate logic
+here will evaluate each one
+
+98
+00:07:11,210 --> 00:07:16,070
+of these rows and determine it
+to be true, false, or unknown,
+
+99
+00:07:16,070 --> 00:07:19,070
+and we'll discuss null values
+and unknown a little bit
+
+100
+00:07:19,070 --> 00:07:21,490
+later. In this case, we just
+have true or false values,
+
+101
+00:07:21,730 --> 00:07:26,590
+and so it indicates all of these
+four rows of data because they
+
+102
+00:07:26,590 --> 00:07:30,710
+have a mass of greater than 50. So
+the idea of predicate logic is we
+
+103
+00:07:30,710 --> 00:07:34,550
+take a table and we remove out
+rows that don't match the criteria
+
+104
+00:07:34,550 --> 00:07:36,610
+that we happen to be looking for.
+
+105
+00:07:37,770 --> 00:07:42,510
+That is the basis of select
+from and where. And so
+
+106
+00:07:42,510 --> 00:07:46,230
+now let's take a look at
+some aggregate functions.
+
+107
+00:07:48,510 --> 00:07:53,110
+I've mentioned the where clause
+is the predicate logic. But now we
+
+108
+00:07:53,110 --> 00:07:56,950
+have some built-in aggregate
+functions for SQL Server. In the data
+
+109
+00:07:56,950 --> 00:08:01,250
+5310 class, we will be using
+user-defined functions where you
+
+110
+00:08:01,250 --> 00:08:06,230
+could create your own function based
+on company formulas or algorithms.
+
+111
+00:08:06,230 --> 00:08:09,630
+But there are five basic aggregate
+functions that are available
+
+112
+00:08:09,630 --> 00:08:13,510
+to you. And they're very straightforward
+math, basic math. We have
+
+113
+00:08:13,510 --> 00:08:16,870
+the count function, which will
+simply count the number of rows.
+
+114
+00:08:17,050 --> 00:08:20,510
+We have the minimum function,
+determine the minimum value.
+
+115
+00:08:20,510 --> 00:08:23,830
+The maximum will determine
+the maximum value, sum will
+
+116
+00:08:23,830 --> 00:08:26,770
+add up the columns that
+you're interested in, and then
+
+117
+00:08:26,770 --> 00:08:30,170
+average will take the arithmetic,
+the mean, the average mean
+
+118
+00:08:30,460 --> 00:08:33,330
+of the particular data
+that you're looking
+
+119
+00:08:33,330 --> 00:08:35,710
+at. So let's switch over to SQL Server.
+
+120
+00:08:41,760 --> 00:08:42,380
+Okay,
+
+121
+00:08:42,840 --> 00:08:50,920
+let's add these aggregate functions.
+So we have count, min, max, sum,
+
+122
+00:08:51,800 --> 00:08:54,580
+av. And these need to be
+typed out as they are, so
+
+123
+00:08:54,580 --> 00:08:57,260
+you'd have to have avg and
+not the full word average.
+
+124
+00:08:57,920 --> 00:09:02,760
+Let's take a look at one instance
+of a null value using the
+
+125
+00:09:02,760 --> 00:09:05,860
+count function. If you take a
+look at distance from the sun,
+
+126
+00:09:11,850 --> 00:09:13,770
+take a look at that particular column,
+
+127
+00:09:14,270 --> 00:09:17,510
+and you'll notice that
+there is one null value.
+
+128
+00:09:17,510 --> 00:09:23,710
+So when you count, you generally
+have two options. One, you would do
+
+129
+00:09:23,710 --> 00:09:29,530
+count, and then star, and that would
+mean show me all of the columns,
+
+130
+00:09:31,190 --> 00:09:34,650
+and regardless of if they have null
+values or not. So in this case,
+
+131
+00:09:34,650 --> 00:09:38,200
+you could see on the left-hand
+side that there would be 10 rows.
+
+132
+00:09:38,570 --> 00:09:42,370
+And if you take a normal
+column that has a value,
+
+133
+00:09:42,370 --> 00:09:45,030
+you would also get the
+10 rows or a column that
+
+134
+00:09:45,030 --> 00:09:47,850
+is a primary key because
+it can't be left null.
+
+135
+00:09:48,070 --> 00:09:51,030
+That's possible. However, if you do count
+
+136
+00:09:52,170 --> 00:09:55,310
+and you need this information,
+you count it based
+
+137
+00:09:55,310 --> 00:09:58,450
+on distance from the sun,
+you'll see that it goes from
+
+138
+00:09:58,450 --> 00:10:05,730
+10 to 9 now if we go on
+to let's say is it moons
+
+139
+00:10:06,330 --> 00:10:09,850
+yeah so let's select the
+moons for some of our other
+
+140
+00:10:09,850 --> 00:10:14,150
+aggregate functions and we
+can have the list of moons
+
+141
+00:10:14,150 --> 00:10:20,450
+here and now if I put in
+min and moons and I run this
+
+142
+00:10:21,150 --> 00:10:24,330
+it gives me a big old zero
+which is a number right it's
+
+143
+00:10:24,330 --> 00:10:26,950
+not null but it does Let's
+leave the column name blank.
+
+144
+00:10:27,280 --> 00:10:29,920
+And in this case, I want
+to give it an alias.
+
+145
+00:10:30,750 --> 00:10:34,350
+And you can use the ads. If you
+don't want to use the ads, that's
+
+146
+00:10:34,350 --> 00:10:37,870
+fine. So one of, to me, either of
+those are best practice. I like to
+
+147
+00:10:37,870 --> 00:10:40,850
+use as just because it's a little
+more descriptive. And then you would
+
+148
+00:10:40,850 --> 00:10:47,310
+give it the name. So min, moons,
+and you can see where it says no
+
+149
+00:10:47,310 --> 00:10:50,990
+column name, and I run this, and
+now it says there's the min, moons.
+
+150
+00:10:50,990 --> 00:10:53,290
+And of course, everything
+in the select statement
+
+151
+00:10:53,290 --> 00:10:57,010
+is separated by commas,
+and you determine the order
+
+152
+00:10:57,250 --> 00:11:00,470
+of your output columns by which order
+
+153
+00:11:00,470 --> 00:11:02,390
+you included in the select statement.
+
+154
+00:11:02,580 --> 00:11:05,210
+In this case, I'm starting
+with moons, but then I could go
+
+155
+00:11:05,210 --> 00:11:12,150
+right to max and moons or
+some other column as max moons
+
+156
+00:11:14,390 --> 00:11:18,890
+and run this information, and
+we know that 67 is the max.
+
+157
+00:11:19,430 --> 00:11:22,610
+So we're getting more
+information, descriptive
+
+158
+00:11:22,610 --> 00:11:26,970
+information by just using
+these aggregate functions.
+
+159
+00:11:26,970 --> 00:11:28,910
+Now, we've already done count. We
+
+160
+00:11:28,910 --> 00:11:31,530
+could do sum. We want to sum the moons.
+
+161
+00:11:34,070 --> 00:11:37,690
+And this would be a sum
+of the moons, 178 total
+
+162
+00:11:37,690 --> 00:11:40,210
+moons, just according
+to my last data set. And
+
+163
+00:11:40,210 --> 00:11:45,290
+then, of course, the average
+would give the average
+
+164
+00:11:48,040 --> 00:11:51,450
+number of moons, and that's the
+mean average. Go ahead and pause
+
+165
+00:11:51,450 --> 00:11:55,090
+the video and try this with your
+data set, the planet data set.
+
+166
+00:11:55,390 --> 00:11:58,810
+These are similar to the coding
+questions that you'll get on
+
+167
+00:11:58,810 --> 00:12:02,210
+the exam and on the labs, and
+so the blue triads will help
+
+168
+00:12:02,210 --> 00:12:05,570
+get you prepared for those labs
+and for the exams. Write an
+
+169
+00:12:05,570 --> 00:12:09,410
+SQL statement that shows the
+lowest and highest planet mass.
+
+170
+00:12:09,930 --> 00:12:13,970
+Include alias when appropriate, and
+that would indicate that if it's
+
+171
+00:12:13,970 --> 00:12:17,850
+going to be no name for your column,
+you'll want to give it an alias.
+
+172
+00:12:21,290 --> 00:12:25,790
+Okay, here is the code.
+We have select min, mass,
+
+173
+00:12:25,790 --> 00:12:29,030
+the minimum is the aggregate
+function, as min mass,
+
+174
+00:12:29,030 --> 00:12:33,450
+comma, maximum mass, as
+maximum mass from the planet.
+
+175
+00:12:33,830 --> 00:12:38,790
+Perfect. Okay, now we're ready
+for a research question. We asked
+
+176
+00:12:38,790 --> 00:12:43,350
+Dr. Sigurd, go through the planets
+and tell us your interest in that
+
+177
+00:12:43,350 --> 00:12:47,230
+particular planet. She likes
+astronomy too, so does Mark Dawson.
+
+178
+00:12:47,650 --> 00:12:49,470
+All right, so Mercury, low.
+
+179
+00:12:50,270 --> 00:12:51,690
+Venus, medium.
+
+180
+00:12:51,710 --> 00:12:52,950
+Earth, high.
+
+181
+00:12:52,950 --> 00:12:55,810
+So Dr. Sigurd has listed her interest,
+
+182
+00:12:55,810 --> 00:12:57,430
+low, medium, high on the planets.
+
+183
+00:12:58,970 --> 00:13:04,090
+If we just use the average moons,
+as you know, it gives one result.
+
+184
+00:13:04,810 --> 00:13:07,790
+It just takes up one row.
+But now we want to see
+
+185
+00:13:07,790 --> 00:13:12,790
+the average moons based
+on Dr. Sigurd's interest.
+
+186
+00:13:13,010 --> 00:13:21,100
+And so if I come up to our
+statement, and this is arguably
+
+187
+00:13:21,100 --> 00:13:23,950
+the first question that you're
+asked on an interview, and
+
+188
+00:13:23,950 --> 00:13:28,190
+this is something that will
+100% be on the exam in very
+
+189
+00:13:28,190 --> 00:13:30,970
+similar format, and I'll explain
+the rule in just a minute.
+
+190
+00:13:31,390 --> 00:13:34,450
+So now we want to see the
+interest and the average moons.
+
+191
+00:13:37,030 --> 00:13:38,990
+And we get an error message.
+
+192
+00:13:39,490 --> 00:13:44,050
+We know if we do average
+moons, we get one value.
+
+193
+00:13:45,670 --> 00:13:51,090
+And if we do interest, we get 10
+rows of output. We get 10 values.
+
+194
+00:13:51,150 --> 00:13:54,230
+So the question is, how do we fix this?
+
+195
+00:13:54,230 --> 00:13:58,950
+And long before AI, this was
+mine as a kid, Bobby Mills, I
+
+196
+00:13:58,950 --> 00:14:04,610
+had Jack, Jack and the Beanstalk,
+or Jack Bean Needle, but
+
+197
+00:14:04,610 --> 00:14:07,630
+this one, Jack, what has he
+got to say here? He's saying,
+
+198
+00:14:08,070 --> 00:14:08,610
+oh,
+
+199
+00:14:09,530 --> 00:14:11,050
+we need a group buy.
+
+200
+00:14:11,230 --> 00:14:12,530
+Thank you, Jack.
+
+201
+00:14:12,670 --> 00:14:14,110
+What the heck?
+
+202
+00:14:14,110 --> 00:14:14,770
+Ah!
+
+203
+00:14:14,770 --> 00:14:17,610
+What's a group buy for?
+Well, let's take a look.
+
+204
+00:14:17,750 --> 00:14:20,970
+And if we read this error
+code, it does give a hint.
+
+205
+00:14:21,470 --> 00:14:25,030
+Let me get this error message,
+maybe we need a group buy clause.
+
+206
+00:14:25,830 --> 00:14:31,730
+hmm so now we have to group by
+here's the rule if we have an
+
+207
+00:14:31,730 --> 00:14:34,990
+aggregate function and then we
+have a non-aggregate function
+
+208
+00:14:34,990 --> 00:14:41,210
+you must group by the non
+-aggregate function in this case
+
+209
+00:14:42,690 --> 00:14:46,950
+we add our next keyword
+we have select from where
+
+210
+00:14:46,950 --> 00:14:50,310
+group by and in this case
+we have to say group by
+
+211
+00:14:50,990 --> 00:14:54,070
+interest, and if we have more
+than one non-aggregate in
+
+212
+00:14:54,070 --> 00:14:56,350
+the select statement, we
+would have to include it here.
+
+213
+00:14:56,570 --> 00:15:01,590
+And now I think the thing that's
+most important at this stage is
+
+214
+00:15:01,590 --> 00:15:05,830
+how many rows do you expect to
+show up by using this group by.
+
+215
+00:15:06,070 --> 00:15:11,430
+Now let's take a look at
+our table, and we have
+
+216
+00:15:11,630 --> 00:15:15,450
+how many values in interest. We have low,
+
+217
+00:15:15,570 --> 00:15:19,770
+medium, and high. In this particular
+case, it's going to provide
+
+218
+00:15:19,770 --> 00:15:22,950
+three groups, low, medium, and
+high. And then what it's going to
+
+219
+00:15:22,950 --> 00:15:27,030
+do is take the average for just
+the low group, for just the medium
+
+220
+00:15:27,030 --> 00:15:30,550
+group, or just a large group. So
+the research question could say,
+
+221
+00:15:30,810 --> 00:15:33,970
+in terms of interest, does
+Reagan tend to be interested in
+
+222
+00:15:33,970 --> 00:15:38,270
+planets that have lots of moons
+or very few moons? And that
+
+223
+00:15:38,270 --> 00:15:40,870
+would, you know, effectively be
+the research question. But before
+
+224
+00:15:40,870 --> 00:15:43,930
+we run it, I think it's important
+to think about grouping.
+
+225
+00:15:44,270 --> 00:15:48,590
+I have a deck of cards, and
+this particular deck just gives
+
+226
+00:15:48,590 --> 00:15:52,830
+some ideas of groups, and more
+importantly, how many rows
+
+227
+00:15:52,830 --> 00:15:56,310
+you would expect. So for
+instance, if we grouped by color,
+
+228
+00:15:56,760 --> 00:16:00,350
+the output you would expect to
+have two rows, right? And it
+
+229
+00:16:00,350 --> 00:16:03,390
+would give you whatever we're
+looking for, maximum, average,
+
+230
+00:16:03,650 --> 00:16:07,150
+min, sum, count, and so forth.
+
+231
+00:16:07,450 --> 00:16:11,230
+However, as you know, we
+can also group by suit.
+
+232
+00:16:11,310 --> 00:16:14,970
+And so for instance, if this
+was count and then group
+
+233
+00:16:14,970 --> 00:16:18,530
+by suit. For clubs, we
+would have a value of two.
+
+234
+00:16:18,950 --> 00:16:22,110
+Spades, we'd have a value of one.
+Hearts, we would have a value of
+
+235
+00:16:22,110 --> 00:16:26,170
+one, and diamonds. But more
+importantly, how many rows do we expect
+
+236
+00:16:26,170 --> 00:16:29,710
+for the output? And you would expect
+four rows of output. Give me the
+
+237
+00:16:29,710 --> 00:16:34,710
+average or min, max, whatever those
+aggregate functions are. Now we
+
+238
+00:16:34,710 --> 00:16:40,390
+have the code set up. We run this.
+We get three rows, high low and
+
+239
+00:16:40,390 --> 00:16:48,150
+medium we don't have a column name
+so we could say as and then bridge
+
+240
+00:16:55,630 --> 00:16:59,310
+rows now you can either use a
+quote or you can use the brackets
+
+241
+00:16:59,330 --> 00:17:03,210
+the brackets tend to always
+work and where it becomes
+
+242
+00:17:03,210 --> 00:17:06,750
+really important is if you download
+a data set and for instance
+
+243
+00:17:06,750 --> 00:17:12,250
+there was something called
+interest moon column with a space
+
+244
+00:17:12,250 --> 00:17:16,810
+the only way you could run
+this without fixing the data in
+
+245
+00:17:16,810 --> 00:17:19,650
+getting rid of that space would
+be to put brackets around it.
+
+246
+00:17:19,730 --> 00:17:23,330
+So brackets tend to be very
+powerful and it's just an option
+
+247
+00:17:23,330 --> 00:17:26,750
+for providing the alias as well
+or you could use the quote.
+
+248
+00:17:27,610 --> 00:17:31,090
+And so we run this. Now we
+have average rows per entrance,
+
+249
+00:17:31,270 --> 00:17:33,210
+high and low and medium.
+
+250
+00:17:33,210 --> 00:17:36,950
+And so based on this really
+simple study, it looks like Dr.
+
+251
+00:17:36,950 --> 00:17:39,950
+Sigurd is interested in planets
+that have lots of moons.
+
+252
+00:17:40,630 --> 00:17:43,850
+And now armed with that
+extra group by, select
+
+253
+00:17:43,850 --> 00:17:46,550
+from where group by, here's another one.
+
+254
+00:17:46,850 --> 00:17:52,170
+Pause the screen, if you would,
+and try this as another blue triad.
+
+255
+00:17:52,430 --> 00:17:54,040
+Again, at the end of the video, you'll
+
+256
+00:17:54,040 --> 00:17:56,180
+upload. If you just do the blue triads,
+
+257
+00:17:56,570 --> 00:17:59,810
+copy those images into a single
+Word document. If you take
+
+258
+00:17:59,810 --> 00:18:02,410
+notes and want to include
+that, but again, mainly looking
+
+259
+00:18:02,410 --> 00:18:05,610
+for just screen caps showing
+that you followed along today.
+
+260
+00:18:06,190 --> 00:18:10,070
+So here's the correct code. We
+have select location, locations and
+
+261
+00:18:10,070 --> 00:18:15,790
+non-aggregate, max density, aggregate
+as max, min density, aggregate.
+
+262
+00:18:15,870 --> 00:18:20,230
+And then in this case, we
+have to group by the location.
+
+263
+00:18:20,270 --> 00:18:23,270
+The halving clause, by definition,
+
+264
+00:18:23,550 --> 00:18:28,510
+the halving clause can be used to
+restrict which groups are displayed.
+
+265
+00:18:28,730 --> 00:18:31,770
+Remember, if we had
+grouped this by color,
+
+266
+00:18:32,950 --> 00:18:36,650
+in this case, we would have two
+rows that show up. And that would
+
+267
+00:18:36,650 --> 00:18:39,330
+be using the group by clause.
+Now the halving clause could
+
+268
+00:18:39,330 --> 00:18:43,070
+decide whether these groups stay
+or go. So for instance, let's say
+
+269
+00:18:43,270 --> 00:18:45,890
+that in order to keep these
+groups, you want them to have
+
+270
+00:18:45,890 --> 00:18:48,390
+at least three cards or you
+don't want to have them at all.
+
+271
+00:18:48,390 --> 00:18:51,150
+And that would be having the count
+
+272
+00:18:51,570 --> 00:18:54,830
+of three or greater. And what
+would happen if you did that is you
+
+273
+00:18:54,830 --> 00:18:58,130
+would get rid of this particular
+group. Now, if you said they need
+
+274
+00:18:58,130 --> 00:19:00,730
+to have at least one in the
+group, this has two and this has
+
+275
+00:19:00,730 --> 00:19:04,530
+three, and you run that having
+clause, then both would be retained.
+
+276
+00:19:04,530 --> 00:19:08,130
+So in a way, you can get rid of
+rows that you think are outliers
+
+277
+00:19:08,130 --> 00:19:10,850
+or you just don't want to
+consider because you want to get
+
+278
+00:19:10,850 --> 00:19:13,790
+rid of those. So in this case,
+we can use the having clause.
+
+279
+00:19:13,790 --> 00:19:15,500
+Here we have our problem.
+
+280
+00:19:15,550 --> 00:19:19,210
+Select location average moons
+from planet. Group by location. We
+
+281
+00:19:19,210 --> 00:19:22,310
+have an aggregate, non-aggregate.
+We have a whole animation on group
+
+282
+00:19:22,310 --> 00:19:27,230
+by. It's just because it's forgotten
+so quickly that the need for
+
+283
+00:19:27,230 --> 00:19:31,290
+aggregate, non-aggregate has to
+have a group by. And then if we just
+
+284
+00:19:31,290 --> 00:19:36,310
+run this information without the
+having clause, here's an example.
+
+285
+00:19:37,130 --> 00:19:42,830
+we have zero average moons in the
+inner we have 35 average moons
+
+286
+00:19:42,830 --> 00:19:46,350
+in the outer so let's let's say
+we consider that anything you
+
+287
+00:19:46,350 --> 00:19:51,410
+know less than 10 or something
+would be an outlier what we can
+
+288
+00:19:51,410 --> 00:19:57,530
+do is add having the average
+number of moons greater than 10 so
+
+289
+00:19:57,530 --> 00:20:02,290
+this is the average of zero this
+is 35 so what you would expect
+
+290
+00:20:03,090 --> 00:20:07,850
+is for the inner to disappear
+we got rid of that entire group
+
+291
+00:20:08,630 --> 00:20:12,330
+if you think about students
+and we have kind of three three
+
+292
+00:20:12,330 --> 00:20:15,790
+columns of students and one has
+five members in the group and
+
+293
+00:20:15,790 --> 00:20:18,590
+one has 10 members in the group
+and the other has one member
+
+294
+00:20:18,790 --> 00:20:22,670
+and if you're trying to work on
+something you might say look okay the
+
+295
+00:20:22,670 --> 00:20:26,590
+group with one member let's just let's
+just either get rid of you or move
+
+296
+00:20:26,590 --> 00:20:29,910
+you into another group that would
+be like having the three groups and
+
+297
+00:20:29,910 --> 00:20:33,050
+saying having let's we're just going
+to get rid of you in that case it
+
+298
+00:20:33,050 --> 00:20:37,070
+would be having count but these can
+be having the min the max the average
+
+299
+00:20:37,070 --> 00:20:44,990
+for instance if i put average count
+moons is greater than five i'm
+
+300
+00:20:44,990 --> 00:20:48,030
+kind of running blind here i'm not
+exactly sure how many are inner and how
+
+301
+00:20:48,030 --> 00:20:54,350
+many are outer but let's take a
+select location excuse me from planet
+
+302
+00:20:56,930 --> 00:21:01,990
+and we run this code and we have
+one, two, three, four, five.
+
+303
+00:21:02,110 --> 00:21:04,930
+And one, two, three, we kind of have
+
+304
+00:21:04,930 --> 00:21:07,990
+a tie here. So if we did put this,
+
+305
+00:21:08,130 --> 00:21:11,810
+having the count, both of
+them disappear because they
+
+306
+00:21:11,810 --> 00:21:14,530
+have five at each. But if we
+say have greater than four,
+
+307
+00:21:14,750 --> 00:21:20,090
+which they do, both of them reappear.
+So you can use count, min, max,
+
+308
+00:21:21,370 --> 00:21:23,130
+whichever aggregate function that
+
+309
+00:21:23,130 --> 00:21:25,770
+you decide to use that having clause.
+
+310
+00:21:26,150 --> 00:21:30,190
+All right, and let's conclude this
+video with one last blue try it.
+
+311
+00:21:30,190 --> 00:21:33,650
+You can pause the video if
+you want to try, and if you've
+
+312
+00:21:33,650 --> 00:21:36,070
+been following along, you
+likely have the answer to this.
+
+313
+00:21:37,330 --> 00:21:40,870
+And the coding solution,
+we changed it from location
+
+314
+00:21:40,870 --> 00:21:43,470
+to interest, select interest,
+the average gravity,
+
+315
+00:21:43,610 --> 00:21:47,310
+as gravity average from
+planet and group by interest
+
+316
+00:21:47,310 --> 00:21:50,110
+because we have an aggregate
+and non-aggregate, And in
+
+317
+00:21:50,110 --> 00:21:53,870
+this case, having average
+gravity is greater than 10.
+
+318
+00:21:54,590 --> 00:21:57,290
+All right, that's a stopping
+point for now, but that gives
+
+319
+00:21:57,290 --> 00:22:03,570
+you an overview of select from
+where group by having and also
+
+320
+00:22:03,570 --> 00:22:09,210
+how to comment out code. And
+we will see you in video two.
+
+321
+00:22:09,210 --> 00:22:10,410
+Take care.

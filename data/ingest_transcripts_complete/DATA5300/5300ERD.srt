@@ -1,0 +1,2130 @@
+1
+00:00:08,600 --> 00:00:11,790
+I hate to admit it, but one of
+my favorite movies is Titanic.
+
+2
+00:00:11,960 --> 00:00:14,380
+And I love the scene where Mr. Andrews,
+
+3
+00:00:14,380 --> 00:00:15,850
+after the boat has hit the iceberg,
+
+4
+00:00:16,560 --> 00:00:18,340
+he's calculating, thinking,
+
+5
+00:00:18,580 --> 00:00:21,460
+the ship can stay afloat
+with four compartments, but
+
+6
+00:00:21,460 --> 00:00:25,100
+not five, not five breached.
+And Ismay's like, but this
+
+7
+00:00:25,100 --> 00:00:27,360
+ship can't sink. And he's
+like, it's made of iron, sir,
+
+8
+00:00:27,360 --> 00:00:29,530
+it can, and it will. It's
+a mathematical certainty.
+
+9
+00:00:29,800 --> 00:00:34,640
+Well, Mr. Andrews was using
+the blueprint for the Titanic.
+
+10
+00:00:34,700 --> 00:00:37,060
+And the blueprint
+represents the instructions,
+
+11
+00:00:37,060 --> 00:00:39,920
+the guidelines for
+putting together the ship.
+
+12
+00:00:40,280 --> 00:00:43,940
+Similar to blueprints for the
+Titanic, we also have blueprints
+
+13
+00:00:43,940 --> 00:00:48,340
+for homes. And so architects build
+very specific instructions for
+
+14
+00:00:48,340 --> 00:00:52,980
+how to build a home. This happens
+to be a blueprint for my home.
+
+15
+00:00:53,020 --> 00:00:55,980
+And I'm glad we have a blueprint because
+
+16
+00:00:56,120 --> 00:00:59,200
+on the right-hand side, you can see
+we have some high ceilings where I
+
+17
+00:00:59,200 --> 00:01:02,580
+still don't walk under the chandelier.
+I'm afraid it's gonna fall down
+
+18
+00:01:02,580 --> 00:01:07,300
+one of these days. We also have
+rooms with different shapes, and this
+
+19
+00:01:07,300 --> 00:01:12,280
+is a ceiling in our Christmas room
+where you can see the ceiling has 12
+
+20
+00:01:12,280 --> 00:01:17,900
+different dimensions or corners to
+it on the ceiling. And so you'll
+
+21
+00:01:17,900 --> 00:01:22,520
+become something of an architect
+instead of creating blueprints for a
+
+22
+00:01:22,520 --> 00:01:27,040
+building, you'll then create the
+blueprints for designing and creating a
+
+23
+00:01:27,040 --> 00:01:31,380
+database. And so you'll use ER
+diagramming beyond this class. You'll
+
+24
+00:01:31,380 --> 00:01:34,960
+use it in the engineering program
+courses, such as, I think in this case,
+
+25
+00:01:34,960 --> 00:01:38,460
+data warehousing class. You'll also
+use it in the data pipeline class,
+
+26
+00:01:38,460 --> 00:01:42,280
+and hopefully it's something that
+you'll use in your career as well.
+
+27
+00:01:42,320 --> 00:01:50,400
+At this point, you may want to
+pause the video and watch the ER
+
+28
+00:01:50,400 --> 00:01:54,820
+diagramming video. It's a fairly
+comprehensive video on ER diagramming.
+
+29
+00:01:54,820 --> 00:01:58,060
+It's created by one of your
+colleagues, one of our former students,
+
+30
+00:01:58,060 --> 00:02:02,240
+Gina, and this video, even though
+it's 13 years old, is still very
+
+31
+00:02:02,240 --> 00:02:06,540
+relevant today, covers the topics
+that we need, has over a million hits.
+
+32
+00:02:06,540 --> 00:02:09,520
+And the feedback you
+can see is excellent.
+
+33
+00:02:09,880 --> 00:02:13,390
+Some digs at professors, which are
+probably well-deserved. This 15
+
+34
+00:02:13,390 --> 00:02:17,000
+-minute video is better than a $200
+textbook. Remember, you get the
+
+35
+00:02:17,000 --> 00:02:20,200
+textbook free, I think, online,
+or Ben Gaughan is very reasonable.
+
+36
+00:02:20,480 --> 00:02:23,100
+Three hours of boring university lecture.
+
+37
+00:02:23,100 --> 00:02:26,490
+That's why this video
+supplements the different
+
+38
+00:02:27,420 --> 00:02:30,160
+talking points that I'll
+discuss here in this video.
+
+39
+00:02:30,560 --> 00:02:33,640
+And then one of my favorites here,
+this particular student dropped
+
+40
+00:02:33,640 --> 00:02:37,760
+out of college, he watched the video,
+it completely changed his life.
+
+41
+00:02:37,760 --> 00:02:41,960
+And now he's no longer in college
+debt, making good money all because
+
+42
+00:02:41,960 --> 00:02:44,760
+of a video. So I don't know if
+it'll change your life, but it's
+
+43
+00:02:44,760 --> 00:02:48,260
+a great video to help complement
+the different talking points that
+
+44
+00:02:48,260 --> 00:02:54,620
+I'll be discussing here today all
+right the deliverables for today or
+
+45
+00:02:54,620 --> 00:02:57,860
+actually for the whole week so for
+today we have a blue triad with
+
+46
+00:02:57,860 --> 00:03:02,300
+this particular video and you can
+go to the syllabus for instructions
+
+47
+00:03:02,300 --> 00:03:05,240
+on the blue triad but effectively
+we just want to know that you're
+
+48
+00:03:05,240 --> 00:03:08,760
+watching the video that you're
+following along when you can so for
+
+49
+00:03:08,760 --> 00:03:11,980
+this particular video you could
+upload some notes if you took notes
+
+50
+00:03:11,980 --> 00:03:15,750
+you could also upload just a few of
+the diagrams that we'll create in
+
+51
+00:03:15,750 --> 00:03:19,880
+Lucidcharts to show that you've
+taken time to log in and manipulated
+
+52
+00:03:19,880 --> 00:03:22,660
+the diagram some. It doesn't have
+to be perfect, but just enough
+
+53
+00:03:22,660 --> 00:03:25,860
+that we know that you've watched
+the video. We want you to get credit
+
+54
+00:03:25,860 --> 00:03:29,520
+for that, and we think that it
+will help you on the exams. We also
+
+55
+00:03:29,520 --> 00:03:32,820
+have a blue triad for a different
+video, and then a couple quizzes,
+
+56
+00:03:32,960 --> 00:03:36,920
+animation, and just a kind of a
+topic quiz. As a reminder, those
+
+57
+00:03:36,920 --> 00:03:41,580
+quizzes are repeatable, and you can
+earn up to I guess 100% until you
+
+58
+00:03:41,580 --> 00:03:45,560
+keep taking it until you earn 100
+% and 30 to 40% of those questions
+
+59
+00:03:45,560 --> 00:03:50,080
+are specifically in the test bank.
+Up until this point we've gone
+
+60
+00:03:50,080 --> 00:03:54,580
+through some database concepts,
+principles, terms, table, column, row,
+
+61
+00:03:54,660 --> 00:03:58,100
+tuple. Tuple rhymes with couple
+is the same thing as row. We
+
+62
+00:03:58,100 --> 00:04:02,080
+traditionally use row now and then a
+primary key. So now that you've got
+
+63
+00:04:02,140 --> 00:04:06,960
+those terms down. In the ER diagramming
+world, we also use different
+
+64
+00:04:06,960 --> 00:04:10,820
+terms. So instead of this being
+a table, we call it an entity.
+
+65
+00:04:11,090 --> 00:04:14,000
+Instead of a column, we now
+have an attribute. So if
+
+66
+00:04:14,000 --> 00:04:16,570
+you think of a student entity,
+student has attributes,
+
+67
+00:04:16,570 --> 00:04:19,360
+last name, first name, just
+as a person has attributes,
+
+68
+00:04:19,360 --> 00:04:21,880
+hair color, height, weight.
+So we have attributes
+
+69
+00:04:21,880 --> 00:04:24,860
+or fields. And then we also
+have an entity instance.
+
+70
+00:04:25,630 --> 00:04:28,340
+Entity instance, you can see
+in this case, would be a row.
+
+71
+00:04:28,440 --> 00:04:31,560
+When we create our ER diagram,
+you'll notice we don't have an
+
+72
+00:04:31,560 --> 00:04:35,760
+entity instance because I'll
+explain in just a slide or two. And
+
+73
+00:04:35,760 --> 00:04:39,650
+then we also have identifiers,
+which would be primary keys.
+
+74
+00:04:42,140 --> 00:04:45,040
+All right, so we're going
+to cover the difference in
+
+75
+00:04:45,040 --> 00:04:48,760
+nomenclature. So the language
+of an ER diagram versus just
+
+76
+00:04:48,760 --> 00:04:52,720
+regular tables, columns,
+rows, and how to construct
+
+77
+00:04:52,720 --> 00:04:55,310
+them. You'll learn a couple
+of new terms, relationships,
+
+78
+00:04:55,800 --> 00:05:00,580
+cardinality, and then how to
+represent and place a foreign key in a
+
+79
+00:05:00,580 --> 00:05:05,360
+one-to-one, one-to-many, or a many
+-to-many relationship. So those
+
+80
+00:05:05,360 --> 00:05:10,420
+are the main topics that we'll
+cover today. This happens to be a
+
+81
+00:05:10,420 --> 00:05:15,110
+sample of an ER diagram. It's a
+partial one that we use for class, but
+
+82
+00:05:15,110 --> 00:05:18,200
+you can see this represents the
+blueprint. So in this particular
+
+83
+00:05:18,200 --> 00:05:21,840
+case, if we're building the data
+set, we would know how many entities.
+
+84
+00:05:21,840 --> 00:05:25,240
+In this case, we would have our
+six entities, and within those,
+
+85
+00:05:25,240 --> 00:05:28,650
+they have different attributes and
+identifiers and relationships and
+
+86
+00:05:28,650 --> 00:05:31,840
+cardinality and and that's what
+we'll get into here in a moment
+
+87
+00:05:31,840 --> 00:05:35,260
+so let's look at some of the terminology
+here so as i mentioned before
+
+88
+00:05:35,260 --> 00:05:39,180
+we have entities now so we have a
+student entity and that represents
+
+89
+00:05:39,180 --> 00:05:43,280
+one theme and everything in in
+this er diagram also follows
+
+90
+00:05:43,280 --> 00:05:46,980
+normalization good normalization
+practice we have our attributes that
+
+91
+00:05:46,980 --> 00:05:51,080
+i mentioned represent what we
+referred to before as columns we have
+
+92
+00:05:51,080 --> 00:05:53,840
+identifiers which would would be
+the same thing as a primary key.
+
+93
+00:05:53,840 --> 00:05:57,060
+We have entity instance,
+which shows up here,
+
+94
+00:05:58,270 --> 00:06:00,640
+but if you look on the
+prior slide, you'll
+
+95
+00:06:00,640 --> 00:06:02,400
+notice there are no entity instances.
+
+96
+00:06:02,400 --> 00:06:04,320
+There's no data. This represents the
+
+97
+00:06:04,320 --> 00:06:06,460
+metadata, this represents the blueprint,
+
+98
+00:06:06,460 --> 00:06:08,160
+but there's no data here.
+
+99
+00:06:08,280 --> 00:06:10,940
+And so the data doesn't
+show up until we build
+
+100
+00:06:10,940 --> 00:06:13,720
+the tables and start
+populating those tables.
+
+101
+00:06:13,720 --> 00:06:16,020
+And that's the difference between entity
+
+102
+00:06:16,100 --> 00:06:17,940
+and then an entity instance.
+
+103
+00:06:18,380 --> 00:06:23,860
+In our next class, our next
+video, we will learn about DDL,
+
+104
+00:06:23,860 --> 00:06:27,520
+creating tables, and DML,
+inserting values into tables.
+
+105
+00:06:27,520 --> 00:06:30,080
+So at this point, you can think
+of an entity as where you'll
+
+106
+00:06:30,080 --> 00:06:33,620
+create the tables based on the
+blueprint. And entity instance
+
+107
+00:06:33,620 --> 00:06:36,440
+is when you start topulating
+the tables, and we use something
+
+108
+00:06:36,440 --> 00:06:40,740
+called DML, data manipulation
+language, in order to do that.
+
+109
+00:06:41,620 --> 00:06:45,960
+And then data types refer to the
+type of data, whether it's numeric
+
+110
+00:06:45,960 --> 00:06:50,960
+or character or date time. data,
+and on the left-hand side, these
+
+111
+00:06:50,960 --> 00:06:54,340
+are the primary data types that
+we'll use up through the first exam.
+
+112
+00:06:54,720 --> 00:06:58,700
+And so in the next video when
+we're creating the database
+
+113
+00:06:58,980 --> 00:06:59,860
+tables,
+
+114
+00:07:00,190 --> 00:07:04,000
+we have to assign the columns a
+data type. And so we're not going
+
+115
+00:07:04,000 --> 00:07:07,520
+to overcomplicate this. We'll
+have either numeric or character
+
+116
+00:07:07,520 --> 00:07:12,200
+data, or we could have date, time
+data to represent a date and time.
+
+117
+00:07:12,200 --> 00:07:15,340
+So as a brief overview, and we'll
+cover this in more detail later,
+
+118
+00:07:15,340 --> 00:07:19,070
+but we have two types of numeric
+data. One is an integer that
+
+119
+00:07:19,320 --> 00:07:22,580
+we're going to use, and we can use,
+as you see on the right-hand side,
+
+120
+00:07:22,580 --> 00:07:26,200
+you have a tiny integer, which
+uses a little bit less space on
+
+121
+00:07:26,200 --> 00:07:29,740
+the computer, and you have a big
+integer, which gives you a lot
+
+122
+00:07:29,740 --> 00:07:34,880
+more capacity for data. But these
+are whole numbers, and they can go
+
+123
+00:07:34,880 --> 00:07:39,580
+negative or positive, so that
+would be an INT integer data type.
+
+124
+00:07:39,640 --> 00:07:42,160
+If we need a little more
+specificity for now,
+
+125
+00:07:42,160 --> 00:07:45,080
+we're just going to use
+numeric data type. And in
+
+126
+00:07:45,080 --> 00:07:47,560
+that particular case,
+we have, as you can see,
+
+127
+00:07:47,720 --> 00:07:49,920
+numeric four comma two.
+
+128
+00:07:50,780 --> 00:07:54,600
+And so the four represents,
+and I don't know if you'll be
+
+129
+00:07:54,600 --> 00:07:59,260
+able to see this, but the four
+represents four total spaces.
+
+130
+00:07:59,760 --> 00:08:03,980
+And then the two represents how
+many to go back on the decimal. So
+
+131
+00:08:03,980 --> 00:08:08,220
+this would be four, two. so if
+we wanted to have something like
+
+132
+00:08:08,220 --> 00:08:17,460
+three comma one for numeric we would
+go one two three and then we would
+
+133
+00:08:17,460 --> 00:08:21,180
+just go back one so this would
+be three one so the first number
+
+134
+00:08:21,180 --> 00:08:25,040
+is how many total digits and the
+second number is how far to go back
+
+135
+00:08:25,040 --> 00:08:30,120
+with character data char is
+character data meaning they can have
+
+136
+00:08:30,120 --> 00:08:34,460
+in this case, 30 spaces. So if we
+build that, we'll have 30 spaces.
+
+137
+00:08:35,830 --> 00:08:37,780
+And if we use them, great. If we don't
+
+138
+00:08:37,780 --> 00:08:39,680
+use them, it still uses 30 spaces.
+
+139
+00:08:39,820 --> 00:08:44,860
+The varchar, it says varchar 30.
+The max could be 30. But if I just
+
+140
+00:08:44,860 --> 00:08:50,440
+said, Bob, B-O-B, right? B-O-B,
+the other 27 spaces aren't used.
+
+141
+00:08:50,680 --> 00:08:53,640
+And so you think, well, why
+wouldn't you use varchar for
+
+142
+00:08:53,640 --> 00:08:56,760
+everything? Let's get rid of
+everything we don't use. Well, Well, it
+
+143
+00:08:56,760 --> 00:08:59,980
+does take a little more processing
+to set up a VARCHAR, and
+
+144
+00:08:59,980 --> 00:09:03,500
+so a lot of times it works great,
+but for instance, if you just
+
+145
+00:09:03,500 --> 00:09:07,040
+need a two-state acronym each
+time, so something like Hawaii,
+
+146
+00:09:07,320 --> 00:09:11,380
+in this case, you'd be
+better to have a CHAR2 than a
+
+147
+00:09:11,380 --> 00:09:16,280
+VARCHAR because it takes up
+more space per character when
+
+148
+00:09:16,280 --> 00:09:18,820
+you have the VARCHAR. And
+then the date time, as you
+
+149
+00:09:18,820 --> 00:09:21,540
+can see, in this case, it
+gives you hours, months, day,
+
+150
+00:09:21,560 --> 00:09:25,840
+and then years, months, day, and
+then hours, minutes, seconds,
+
+151
+00:09:25,840 --> 00:09:29,200
+and then even milliseconds
+in the SQL that we're using.
+
+152
+00:09:29,200 --> 00:09:30,900
+And we'll use that a little
+bit later when we spend an
+
+153
+00:09:30,900 --> 00:09:36,640
+entire module on dates and times
+and those kind of functions.
+
+154
+00:09:37,880 --> 00:09:42,560
+So that would be a very specific
+version of an ERD if you go into the
+
+155
+00:09:42,560 --> 00:09:45,690
+detail of the data types, but the
+more you have, the better. All
+
+156
+00:09:45,690 --> 00:09:48,840
+right, at this point, let's go
+ahead and get into Lucid Charts, and
+
+157
+00:09:48,840 --> 00:09:53,200
+we'll start to build some of these
+ER diagrams or start to model them.
+
+158
+00:09:53,200 --> 00:09:58,870
+So I'm just going to go under
+lucidchart.com, and I'll click that.
+
+159
+00:09:59,160 --> 00:10:03,140
+And then it's a free login. You'll
+be using this for multiple courses.
+
+160
+00:10:03,360 --> 00:10:07,740
+You may already have one from
+2100. I'm not 100% certain on that.
+
+161
+00:10:07,840 --> 00:10:11,360
+But I've gone ahead and logged
+in, and in this case, with
+
+162
+00:10:11,360 --> 00:10:13,700
+the free login, I'm just
+going to click on templates.
+
+163
+00:10:15,220 --> 00:10:19,720
+then within templates I could scroll
+down probably find it I'm just
+
+164
+00:10:19,720 --> 00:10:24,160
+going to type in ERD and see if
+that will find it and so what we'll
+
+165
+00:10:24,160 --> 00:10:29,040
+be using is the database ER diagram
+using crows foot notation and
+
+166
+00:10:35,650 --> 00:10:39,310
+you can see when you select it
+it does provide a template for
+
+167
+00:10:39,310 --> 00:10:43,030
+you and in this case I think
+we'll go ahead and just use the
+
+168
+00:10:43,030 --> 00:10:46,990
+template to describe it for your
+blue triad today if you get logged
+
+169
+00:10:46,990 --> 00:10:50,270
+in to lucidcharts let's change
+just a few of these to represent
+
+170
+00:10:50,670 --> 00:10:53,590
+some of the ER diagrams
+that I showed you earlier,
+
+171
+00:10:53,590 --> 00:10:57,270
+and that would be great to
+upload for the blue tries.
+
+172
+00:10:57,850 --> 00:11:01,610
+We have a student table
+with student ID as the
+
+173
+00:11:01,610 --> 00:11:04,070
+primary key, last name,
+first name, and major.
+
+174
+00:11:04,190 --> 00:11:07,230
+If we look at that in terms of
+normalization, we would indicate
+
+175
+00:11:07,230 --> 00:11:10,450
+that student ID determines last
+name, first name, and major.
+
+176
+00:11:10,470 --> 00:11:14,230
+And we represent this in an ER
+diagram with student being the entity.
+
+177
+00:11:14,230 --> 00:11:20,710
+student ID is the PK or identifier
+and then these represent our columns
+
+178
+00:11:20,710 --> 00:11:25,490
+or in this particular case our
+attributes and we wouldn't have this on
+
+179
+00:11:25,490 --> 00:11:28,650
+the exam because sometimes it's hard
+to tell but you can see that some
+
+180
+00:11:28,870 --> 00:11:32,950
+of these are bold and one of them is
+not bold if they're bold that means
+
+181
+00:11:32,950 --> 00:11:36,860
+that they are required you have to
+put value in and if it's not bold
+
+182
+00:11:36,860 --> 00:11:40,270
+excuse me if it's not bold you could
+leave it, you could leave it null.
+
+183
+00:11:40,750 --> 00:11:47,810
+So if you have your Lucid charts on
+the screen, as I mentioned earlier,
+
+184
+00:11:47,810 --> 00:11:52,510
+we do have a template that Lucid
+has provided, kind of just set
+
+185
+00:11:52,510 --> 00:11:56,610
+up a sample ER diagram. You could
+go over to the Entity Relationship
+
+186
+00:11:57,690 --> 00:12:02,330
+information that they have here
+and pull over a new entity as well.
+
+187
+00:12:02,910 --> 00:12:07,230
+It just doesn't have all the fancy
+components built into it quite
+
+188
+00:12:07,230 --> 00:12:10,810
+yet. But let's go ahead and use the
+sample one if they have that one.
+
+189
+00:12:10,950 --> 00:12:16,850
+If they don't, then, excuse me,
+if they don't, you could drag one
+
+190
+00:12:16,850 --> 00:12:20,690
+over from your entity relationship
+and build that. But this
+
+191
+00:12:20,690 --> 00:12:24,150
+particular one, let's go ahead and
+build the entity, call it student.
+
+192
+00:12:25,890 --> 00:12:30,750
+And then in this case, we would
+have a maybe a student ID.
+
+193
+00:12:31,170 --> 00:12:34,850
+And a student ID key in this
+case would likely be that integer
+
+194
+00:12:34,850 --> 00:12:38,810
+data type, and it would also
+represent the primary key for
+
+195
+00:12:38,810 --> 00:12:42,010
+this table. So in this particular
+attribute, the way that
+
+196
+00:12:42,010 --> 00:12:46,170
+it's set up is the detail level
+doesn't include identifiers,
+
+197
+00:12:46,430 --> 00:12:49,990
+at least by, you know,
+built in to the entity.
+
+198
+00:12:49,990 --> 00:12:51,930
+I guess you could put
+PK here or something.
+
+199
+00:12:52,210 --> 00:12:54,750
+But if you right click on your entity,
+
+200
+00:12:54,930 --> 00:12:58,350
+you do have, or I guess if you
+just click on the entity, you
+
+201
+00:12:58,350 --> 00:13:01,810
+have an option to change that
+entity to have more detail or
+
+202
+00:13:01,810 --> 00:13:07,600
+less detail. So here I can
+click on Entity Key Field Type
+
+203
+00:13:07,600 --> 00:13:11,990
+and that gives a little more
+detail possibility in this case
+
+204
+00:13:11,990 --> 00:13:18,310
+indicating either a primary key
+or no primary key. We've made
+
+205
+00:13:18,310 --> 00:13:22,510
+a student entity with student
+ID being the primary key and
+
+206
+00:13:28,970 --> 00:13:32,560
+we can continue to fill this out
+so could have a last name and
+
+207
+00:13:33,930 --> 00:13:41,970
+that would likely be a chart
+say 30 data type so if you would
+
+208
+00:13:41,970 --> 00:13:45,650
+go ahead and fill in yours as far
+as your blue triad in interest
+
+209
+00:13:45,650 --> 00:13:48,830
+of time I'm going to skip over
+to this one and in this case
+
+210
+00:13:48,830 --> 00:13:52,410
+we'll create let's just create
+the gym locker I think of the arc
+
+211
+00:13:56,470 --> 00:13:59,210
+In fact, I won't put the underscore,
+it's probably not a good idea,
+
+212
+00:14:01,320 --> 00:14:05,190
+even though I think we have it in
+ours. We have a gym locker. Here
+
+213
+00:14:05,190 --> 00:14:11,010
+we might have the locker ID, and
+this would be an integer data type.
+
+214
+00:14:12,550 --> 00:14:17,800
+And then that would represent
+kind of the basics of the
+
+215
+00:14:17,800 --> 00:14:22,210
+entities, the attributes, the
+data types, and the identifier.
+
+216
+00:14:22,210 --> 00:14:24,810
+Now let's figure out these
+lines. We've got these lines
+
+217
+00:14:24,810 --> 00:14:29,130
+and then what are referred to
+as the crow's foot notation.
+
+218
+00:14:29,310 --> 00:14:32,070
+Great. So let's tackle relationship.
+
+219
+00:14:32,090 --> 00:14:34,470
+So relationship is just
+a connection between two
+
+220
+00:14:34,470 --> 00:14:36,930
+tables to indicate that
+there is a relationship.
+
+221
+00:14:36,950 --> 00:14:41,030
+So in this case we have a line
+and the lines happen to have
+
+222
+00:14:41,030 --> 00:14:46,870
+arrows to show a relationship
+between these two tables.
+
+223
+00:14:46,870 --> 00:14:50,230
+And then you can see with the
+relationship we also have some verbs.
+
+224
+00:14:50,230 --> 00:14:54,430
+Now this is getting to be overkill.
+Usually one verb is the most, but if
+
+225
+00:14:54,430 --> 00:14:57,750
+you do have two verbs, if you want
+to go for it, you have two verbs,
+
+226
+00:14:57,750 --> 00:15:01,590
+you would read from left to right.
+So you would say a student has a
+
+227
+00:15:01,590 --> 00:15:07,110
+phone, in this case, or a phone,
+starting with this table or entity, a
+
+228
+00:15:07,110 --> 00:15:12,250
+phone is assigned to a student. So
+you would read the item closest to
+
+229
+00:15:12,250 --> 00:15:15,490
+the table. So a student has a phone
+or a phone is assigned to a student.
+
+230
+00:15:15,490 --> 00:15:18,710
+Typically you just have one word.
+Student has, if you want to create
+
+231
+00:15:18,710 --> 00:15:23,490
+the verb to describe that relationship
+now relationship does refer
+
+232
+00:15:23,490 --> 00:15:28,910
+to a degree and for this particular
+class when you think of degree it
+
+233
+00:15:28,910 --> 00:15:34,010
+just means how many how many
+relationships are we discussing in this
+
+234
+00:15:34,010 --> 00:15:39,270
+case you can see a student is is
+linked to the phone so this is a binary
+
+235
+00:15:39,270 --> 00:15:45,090
+relationship almost every relationship
+we'll use in 5300 is a binary
+
+236
+00:15:45,090 --> 00:15:49,290
+relationship so this table to this
+table. Now it is possible to have
+
+237
+00:15:49,290 --> 00:15:52,970
+what's called a unary relationship.
+I think I have a slide later where
+
+238
+00:15:52,970 --> 00:15:58,230
+a table or entity refers to itself.
+I'll describe that in a bit. Or
+
+239
+00:15:58,230 --> 00:16:01,830
+we could have a ternary where we
+have three tables that are related.
+
+240
+00:16:02,370 --> 00:16:07,150
+But the link to those is not from
+one table to another. We would have
+
+241
+00:16:07,150 --> 00:16:10,330
+kind of an intersection of these
+lines. But for what we're doing in
+
+242
+00:16:10,330 --> 00:16:13,750
+class, everything will be a binary
+relationship. If there's a question
+
+243
+00:16:13,750 --> 00:16:17,870
+on the exam, what's the most
+common degree the degree common is
+
+244
+00:16:17,870 --> 00:16:20,930
+always or the common degree is always
+going to be a binary relationship
+
+245
+00:16:20,930 --> 00:16:26,290
+so let's pull the ER diagram over
+and we have a student and a gym
+
+246
+00:16:26,290 --> 00:16:30,170
+locker table and now at this point
+we just have the relationship we'll
+
+247
+00:16:30,170 --> 00:16:33,690
+worry about these other lines later
+these little that little single
+
+248
+00:16:33,690 --> 00:16:37,050
+line and the little crow's foot
+looks like kind of a witch's broom or
+
+249
+00:16:37,050 --> 00:16:40,870
+something but at this point we
+have the relationship between these
+
+250
+00:16:40,870 --> 00:16:45,770
+two tables and if you simply double
+click on the relationship line it
+
+251
+00:16:45,770 --> 00:16:50,210
+does give you an opportunity and in
+this case any kind of verb is fine
+
+252
+00:16:50,210 --> 00:16:53,730
+just so you can say a student has a
+gym locker or a student is assigned
+
+253
+00:16:53,730 --> 00:16:57,470
+a gym locker and you can include
+two if you wanted to but this
+
+254
+00:16:57,470 --> 00:17:01,530
+is the relationship showing a binary
+relationship binary because the
+
+255
+00:17:01,530 --> 00:17:06,990
+line refers to two tables or two
+entities in this particular case and
+
+256
+00:17:06,990 --> 00:17:11,710
+that would lead us to these lines
+here which represent our cardinality.
+
+257
+00:17:11,710 --> 00:17:16,850
+And here is a sample of cardinality
+through crow's foot notation.
+
+258
+00:17:16,850 --> 00:17:22,550
+And so you do have the opportunity
+to describe your table into
+
+259
+00:17:22,550 --> 00:17:27,330
+more detail. So cardinality
+represents how many or how few,
+
+260
+00:17:27,550 --> 00:17:30,650
+what's the minimum, what's
+the maximum allowed with
+
+261
+00:17:30,650 --> 00:17:34,770
+this relationship. For
+instance, with our, well, let me
+
+262
+00:17:34,770 --> 00:17:37,270
+bring it over, with ours,
+we have a couple of choices,
+
+263
+00:17:37,290 --> 00:17:44,490
+we can say one gym locker
+can belong to many students.
+
+264
+00:17:45,170 --> 00:17:47,350
+That's the way that
+it's set up right now.
+
+265
+00:17:47,810 --> 00:17:52,850
+And that would be cardinality one
+to many. And that is what we're
+
+266
+00:17:52,850 --> 00:17:56,010
+describing here when I go back to this
+chart. So the options that we have are
+
+267
+00:17:56,010 --> 00:18:00,850
+zero to one. So a student could have
+no gym lockers or one gym locker.
+
+268
+00:18:00,850 --> 00:18:03,570
+That's how you could indicate it.
+They're not required to participate
+
+269
+00:18:03,570 --> 00:18:07,510
+but they could they can only do one
+activity you can have a one and only
+
+270
+00:18:07,510 --> 00:18:10,410
+one meaning you're required to have
+a lot so high school you're required
+
+271
+00:18:10,410 --> 00:18:14,650
+to have a locker and each person
+has their own locker the other
+
+272
+00:18:14,650 --> 00:18:19,370
+options are you're not required to
+have a locker or participate but if you
+
+273
+00:18:19,370 --> 00:18:23,890
+do you could have many lockers or in
+this case you have to have a locker
+
+274
+00:18:23,890 --> 00:18:26,350
+but you could also have many
+lockers so those are kind of the
+
+275
+00:18:26,350 --> 00:18:31,930
+possibilities for cardinality so in
+this case the way I think I have it set
+
+276
+00:18:31,930 --> 00:18:36,850
+up in our diagram is a student, one
+student can have one gym locker. That's
+
+277
+00:18:36,850 --> 00:18:40,250
+just how we set it up. So then we
+just have to find the lines, and
+
+278
+00:18:40,250 --> 00:18:44,290
+those lines, at least in Lucid charts,
+are found up here, where in this
+
+279
+00:18:44,290 --> 00:18:51,090
+case we're probably looking for one
+and only one student can have one.
+
+280
+00:18:52,510 --> 00:18:53,310
+Now
+
+281
+00:18:53,670 --> 00:18:56,090
+the difference between these
+two, this just provides more
+
+282
+00:18:56,090 --> 00:18:59,030
+detail. This would say one and
+only one student it just says
+
+283
+00:18:59,030 --> 00:19:04,470
+one student so we probably
+will go ahead and make those
+
+284
+00:19:04,650 --> 00:19:10,650
+oops excuse me let me click on
+this and we probably we would make
+
+285
+00:19:10,650 --> 00:19:14,140
+those the same so in this case we're
+saying one and only one student
+
+286
+00:19:14,140 --> 00:19:18,350
+has one and only one gym locker and
+what this would indicate is that
+
+287
+00:19:18,350 --> 00:19:21,570
+the gym locker in this case is
+required you have to have a gym locker
+
+288
+00:19:22,010 --> 00:19:23,650
+If you didn't want to have a gym locker
+
+289
+00:19:23,650 --> 00:19:29,070
+required, then you could
+change it to 0 to 1.
+
+290
+00:19:29,750 --> 00:19:34,140
+So a student can have 0 to 1 gym lockers.
+
+291
+00:19:34,310 --> 00:19:37,810
+And I'm assuming you'll fill
+this in for the blue triad.
+
+292
+00:19:37,910 --> 00:19:44,790
+And then the other option is,
+well, you could have one to many.
+
+293
+00:19:44,790 --> 00:19:47,350
+So in this case, you're required
+to one, but you could have many.
+
+294
+00:19:47,630 --> 00:19:49,350
+How many can you have?
+
+295
+00:19:49,690 --> 00:19:52,190
+and there's a famous kind of database
+
+296
+00:19:52,190 --> 00:19:53,950
+feature. How many can you have? Many.
+
+297
+00:19:53,950 --> 00:19:57,890
+So in this case, you would
+indicate many. There may be a
+
+298
+00:19:57,890 --> 00:20:00,690
+number or something close to
+it to indicate the maximum,
+
+299
+00:20:00,890 --> 00:20:04,010
+but the notion is just
+unlimited unless if you
+
+300
+00:20:04,010 --> 00:20:07,790
+specify a value there. So
+in a course or a gym locker,
+
+301
+00:20:08,310 --> 00:20:10,970
+maybe the maximum would be
+two or three, but you would
+
+302
+00:20:10,970 --> 00:20:13,650
+indicate that. And then when
+we build the database, there's
+
+303
+00:20:13,650 --> 00:20:16,430
+specificity as how we
+would do that. So these are
+
+304
+00:20:16,430 --> 00:20:19,350
+kind of the basics of the ER
+diagram. We have the entity.
+
+305
+00:20:19,590 --> 00:20:22,450
+We have the entity name. We have the
+
+306
+00:20:22,450 --> 00:20:24,830
+attributes. We have the data types.
+
+307
+00:20:25,190 --> 00:20:32,830
+We also indicate if they
+are primary key or not.
+
+308
+00:20:33,130 --> 00:20:36,590
+So here we can call this a PK or a key.
+
+309
+00:20:37,610 --> 00:20:40,090
+And we'll indicate that.
+We have a relationship
+
+310
+00:20:40,090 --> 00:20:42,870
+between these two tables.
+That's a binary relationship.
+
+311
+00:20:42,950 --> 00:20:48,110
+and in this case one and only
+one student can have one too
+
+312
+00:20:48,110 --> 00:20:54,250
+many lockers is how we have
+this particular ER diagram set
+
+313
+00:20:54,250 --> 00:20:56,650
+up. This is about all you would
+need to submit for your blue
+
+314
+00:20:56,650 --> 00:20:59,890
+triad for this to show that
+you've been following along.
+
+315
+00:21:00,070 --> 00:21:02,590
+Now let's take a look at
+the final piece for this
+
+316
+00:21:02,590 --> 00:21:06,750
+particular video is how do
+we implement the foreign key.
+
+317
+00:21:07,670 --> 00:21:10,910
+Let me bring the ER diagram. We
+do have one more thing to indicate
+
+318
+00:21:10,910 --> 00:21:14,390
+here if we want that specificity
+is where are we going to place the
+
+319
+00:21:14,390 --> 00:21:18,250
+foreign key and right now we have
+let's go back to where we had it
+
+320
+00:21:18,250 --> 00:21:24,850
+before we had a one-to-one one
+mandatory so now the question is where
+
+321
+00:21:24,850 --> 00:21:28,270
+do we place the foreign key how
+do we link these two tables back
+
+322
+00:21:28,270 --> 00:21:33,050
+up here are options we can either
+take student ID from the student
+
+323
+00:21:33,050 --> 00:21:36,970
+table and put it in the locker ID
+table or we can take the locker ID
+
+324
+00:21:36,970 --> 00:21:41,010
+and put it in the student ID or
+student table. Those are our two
+
+325
+00:21:41,010 --> 00:21:43,510
+options. So the question here is,
+where do we place the foreign key?
+
+326
+00:21:43,630 --> 00:21:46,610
+On a one-to-one implementation,
+so here we have it,
+
+327
+00:21:46,610 --> 00:21:49,310
+one-to-one, just as we
+have in Lucid chart. The
+
+328
+00:21:49,310 --> 00:21:52,650
+answer is, it doesn't matter.
+It will work either way.
+
+329
+00:21:53,090 --> 00:21:56,110
+How you would then approach
+is, which table do you consider
+
+330
+00:21:56,110 --> 00:21:58,890
+to be the parent, and which do
+you consider to be the child?
+
+331
+00:21:58,950 --> 00:22:02,390
+In this particular case, I would
+consider the student table to be more
+
+332
+00:22:02,390 --> 00:22:07,290
+valuable at a university than a locker
+table, and in this case, I would
+
+333
+00:22:07,290 --> 00:22:15,490
+put the SID, student ID, I would
+put it over here, and I would call
+
+334
+00:22:15,490 --> 00:22:19,830
+this, in this case, I would put FK,
+and now I would change this to PK,
+
+335
+00:22:20,150 --> 00:22:22,570
+where before it didn't matter. Now, if
+
+336
+00:22:22,570 --> 00:22:25,880
+you want to add fields,
+you can add fields
+
+337
+00:22:27,730 --> 00:22:30,950
+through the menu item. You just
+click on it and add fields,
+
+338
+00:22:30,950 --> 00:22:34,430
+but this is how I would set
+up Let's go back to two,
+
+339
+00:22:34,630 --> 00:22:36,110
+oops, four, three, two.
+
+340
+00:22:36,570 --> 00:22:39,060
+This is how, at a minimum,
+you would set it up,
+
+341
+00:22:39,060 --> 00:22:41,360
+and that would be in a
+one-to-one relationship.
+
+342
+00:22:41,710 --> 00:22:43,490
+Now, we can look at some
+other possibilities.
+
+343
+00:22:43,710 --> 00:22:45,370
+We have the one-to-one.
+
+344
+00:22:48,050 --> 00:22:52,390
+If you had a one-to-many, where
+do you place the foreign key?
+
+345
+00:22:52,470 --> 00:22:55,270
+And in a one-to-many, you always place
+
+346
+00:22:55,270 --> 00:22:56,860
+the foreign key on the many side.
+
+347
+00:22:56,930 --> 00:23:00,530
+So in this case, you don't have a
+choice. you have to put the student
+
+348
+00:23:00,530 --> 00:23:04,910
+ID on the one side the parent
+side into the child side and the
+
+349
+00:23:04,910 --> 00:23:08,830
+reason for that is on the mini side
+if you think about this you have
+
+350
+00:23:08,830 --> 00:23:13,470
+a phone number I have a phone
+number 555 this is me and it's my
+
+351
+00:23:13,470 --> 00:23:18,610
+home number and then I have a phone
+number 444 it's still me and so
+
+352
+00:23:18,610 --> 00:23:21,890
+I can show up here many times and
+that could be my cell number my
+
+353
+00:23:21,890 --> 00:23:25,910
+work number my I don't have a guest
+cabin or something but if i had
+
+354
+00:23:25,910 --> 00:23:30,210
+a cabin or a beach house or
+something but the point is that's why
+
+355
+00:23:30,530 --> 00:23:33,890
+the foreign key has to be on the
+mini side so you don't have a choice
+
+356
+00:23:33,890 --> 00:23:37,430
+like the one-to-one because in the
+one-to-one you're only you're only
+
+357
+00:23:37,430 --> 00:23:42,050
+going to have one max entered there
+and then the most important one is
+
+358
+00:23:42,050 --> 00:23:46,410
+on a many-to-many relationship how
+is that handled in an er diagram
+
+359
+00:23:46,410 --> 00:23:49,510
+you most certainly could have something
+that looked like this a mini-to
+
+360
+00:23:49,510 --> 00:23:56,790
+-many so an activity and a student,
+and then we have this bridge table.
+
+361
+00:23:56,790 --> 00:24:00,130
+And here's the problem, and here's
+what we would originally have. A
+
+362
+00:24:00,130 --> 00:24:04,230
+student can participate in many
+activities. Stick with me here. An
+
+363
+00:24:04,230 --> 00:24:07,220
+activity can have many students, so
+we have a many-to-many relationship.
+
+364
+00:24:07,470 --> 00:24:11,250
+If we look at that and we put the
+foreign key here, student ID and
+
+365
+00:24:11,250 --> 00:24:16,010
+activity, don't think of this. Don't
+think of the bottom one. If we do
+
+366
+00:24:16,010 --> 00:24:20,150
+that, then we can only have one
+student participate in an activity.
+
+367
+00:24:20,470 --> 00:24:24,770
+And if we move activity ID over
+to the student table, then that
+
+368
+00:24:24,770 --> 00:24:27,850
+student can only, because these are
+always one, one student ID, one last
+
+369
+00:24:27,850 --> 00:24:31,170
+name, one first name. So you can
+only have one activity ID, one
+
+370
+00:24:31,170 --> 00:24:34,910
+activity the student can participate
+in. So that's why a many-to-many,
+
+371
+00:24:34,910 --> 00:24:37,010
+and you'd see it in the video if
+you watched that as the follow
+
+372
+00:24:37,010 --> 00:24:41,450
+-up, it doesn't work. So for all
+many-to-many, the answer is you have
+
+373
+00:24:41,450 --> 00:24:45,380
+to create a bridge or an association
+table and create two one-to
+
+374
+00:24:45,380 --> 00:24:48,530
+-many's. Now, the nice thing is if
+you don't know what to call it, you
+
+375
+00:24:48,530 --> 00:24:51,430
+simply call it the name of the
+first table, underscore the name of
+
+376
+00:24:51,430 --> 00:24:56,350
+the second table, and they both, the
+primary keys are both the primary
+
+377
+00:24:56,350 --> 00:24:59,870
+key and the foreign key. And in
+that case, a student can participate
+
+378
+00:24:59,870 --> 00:25:04,390
+in many activities, and an
+activity can contain many students.
+
+379
+00:25:04,470 --> 00:25:07,310
+So let's do some review
+with our final diagram and
+
+380
+00:25:07,310 --> 00:25:11,160
+take a look at some of these
+relationships cardinality.
+
+381
+00:25:11,470 --> 00:25:14,250
+In this case, we have the
+student table and the gym
+
+382
+00:25:14,250 --> 00:25:17,040
+locker table, and they do have
+a one-to-one relationship.
+
+383
+00:25:17,090 --> 00:25:20,210
+We don't have any verbs
+listed here, but okay, that's
+
+384
+00:25:20,210 --> 00:25:22,550
+still as detailed as we
+thought we needed to be.
+
+385
+00:25:22,590 --> 00:25:25,270
+So here we have a gym locker and a
+
+386
+00:25:25,270 --> 00:25:27,030
+student table. We have the student ID.
+
+387
+00:25:27,110 --> 00:25:30,470
+We have the locker ID, so we
+know we're going to have to put
+
+388
+00:25:30,520 --> 00:25:34,730
+one of these into the other
+table. So we can either put the
+
+389
+00:25:34,730 --> 00:25:37,470
+locker ID in the student table
+or the student ID into the
+
+390
+00:25:37,470 --> 00:25:40,710
+locker table. We place the
+foreign key. In this case, I would
+
+391
+00:25:40,710 --> 00:25:44,360
+recommend either. So on the
+exam, if you said either, that's
+
+392
+00:25:44,710 --> 00:25:47,510
+the correct answer if you
+decided. So it doesn't matter.
+
+393
+00:25:48,030 --> 00:25:50,690
+But in this case, you'd put
+it in the less important
+
+394
+00:25:50,690 --> 00:25:52,970
+one, perhaps. So you'd
+put student ID here.
+
+395
+00:25:53,210 --> 00:26:00,410
+Then we also have a situation where
+a student can have many awards,
+
+396
+00:26:00,430 --> 00:26:03,110
+and an award can be
+given to many students.
+
+397
+00:26:03,230 --> 00:26:06,010
+And see, remember, that's a many
+-to-many relationship, and it's
+
+398
+00:26:06,010 --> 00:26:10,390
+not allowed. the giveaway here
+is look at the name of this table
+
+399
+00:26:10,390 --> 00:26:14,990
+student award so we have student
+underscore award this is the link
+
+400
+00:26:14,990 --> 00:26:18,770
+between that many-to-many
+otherwise as a reminder we can only
+
+401
+00:26:18,770 --> 00:26:22,590
+have one student ID in the award
+table so that means an award could
+
+402
+00:26:22,590 --> 00:26:26,110
+only ever go to one student or
+if we put the award ID in the
+
+403
+00:26:26,110 --> 00:26:29,750
+student table that means the award
+could only go to one student so
+
+404
+00:26:29,750 --> 00:26:34,490
+to do to overcome that we create
+the one-to-many the primary keys
+
+405
+00:26:34,490 --> 00:26:38,090
+of each table become the primary
+and foreign key. So one-to-one,
+
+406
+00:26:38,410 --> 00:26:41,870
+it doesn't matter. One-to-many,
+you place it in the child table,
+
+407
+00:26:41,870 --> 00:26:46,430
+and many-to-many, you would
+create that bridge or association
+
+408
+00:26:46,430 --> 00:26:51,170
+table. And then as a reminder
+on the degree relationship,
+
+409
+00:26:51,570 --> 00:26:54,710
+binary relationship is the
+most common. The only other one
+
+410
+00:26:54,710 --> 00:26:59,670
+that we will use a little bit
+later is a unary relationship.
+
+411
+00:26:59,790 --> 00:27:03,750
+And don't overthink this,
+but look at this, this table,
+
+412
+00:27:03,750 --> 00:27:07,550
+the key, primary key to
+many, a one to many, has a
+
+413
+00:27:07,550 --> 00:27:10,390
+relationship with itself.
+This is a unary relationship.
+
+414
+00:27:10,510 --> 00:27:13,230
+The idea would be, in
+this case, you can see we
+
+415
+00:27:13,230 --> 00:27:16,370
+have an employee ID, and
+they have some managers,
+
+416
+00:27:17,290 --> 00:27:21,230
+a manager. So each employee has a
+manager, except for the top employee,
+
+417
+00:27:21,230 --> 00:27:23,950
+like the CEO, they don't have,
+they wouldn't have a manager under
+
+418
+00:27:23,950 --> 00:27:27,350
+them. But all the rest of them would.
+So if this was null, you would know
+
+419
+00:27:27,350 --> 00:27:31,290
+that they're either not assigned
+or they're the CEO but in this case
+
+420
+00:27:31,290 --> 00:27:35,290
+if you think of the characteristics
+of the employee so last name first
+
+421
+00:27:35,290 --> 00:27:39,390
+name city state then you think of
+the characteristics of a manager they
+
+422
+00:27:39,390 --> 00:27:43,610
+would be the same last name city
+first name state gender and the idea
+
+423
+00:27:43,610 --> 00:27:47,690
+of a unary relationship is not to
+have to repeat an entire table just
+
+424
+00:27:47,690 --> 00:27:52,550
+to add one attribute and so
+effectively this unary relationship can
+
+425
+00:27:52,550 --> 00:27:56,390
+link up the employee ID to the
+manager ID so effectively when When we
+
+426
+00:27:56,390 --> 00:27:59,950
+join these, we could see all of the
+information about the employee and
+
+427
+00:27:59,950 --> 00:28:04,030
+all of the information about the
+manager by joining to a single table.
+
+428
+00:28:04,150 --> 00:28:08,690
+And again, we'll do that a little
+bit later in the semester. And
+
+429
+00:28:08,690 --> 00:28:13,570
+that concludes the ER diagramming.
+This is just looking forward to the
+
+430
+00:28:13,570 --> 00:28:17,320
+next video where we'll start to
+use those ER diagrams to create
+
+431
+00:28:17,350 --> 00:28:21,270
+what are called the DDL, data
+definition language, and then ultimately
+
+432
+00:28:21,270 --> 00:28:25,430
+the DML to populate those data
+sets. We'll start that video next.
+
+433
+00:28:25,490 --> 00:28:26,890
+Thank you. Have a good day.

@@ -1,0 +1,1552 @@
+1
+00:00:08,220 --> 00:00:12,700
+Welcome back to module six
+on single table queries.
+
+2
+00:00:12,700 --> 00:00:16,080
+We will once again be
+using the space data set,
+
+3
+00:00:16,380 --> 00:00:18,500
+the planet data set, excuse me.
+
+4
+00:00:18,500 --> 00:00:21,800
+And we have already covered in video one
+
+5
+00:00:21,800 --> 00:00:24,280
+the more difficult topic for this week,
+
+6
+00:00:24,280 --> 00:00:26,560
+aggregate functions along with the group
+
+7
+00:00:26,560 --> 00:00:28,960
+by clause and then the having clause.
+
+8
+00:00:29,020 --> 00:00:34,780
+And the second part, we will go
+through the more basic topics but I
+
+9
+00:00:34,780 --> 00:00:38,220
+wanted to cover the more difficult
+group by having first. Here are
+
+10
+00:00:38,220 --> 00:00:41,700
+some of the topics that we'll cover.
+We'll have the distinct clause.
+
+11
+00:00:41,840 --> 00:00:46,560
+We'll also use where
+with equal, not equal to,
+
+12
+00:00:46,620 --> 00:00:49,120
+greater than or less than,
+greater than or equal to.
+
+13
+00:00:49,120 --> 00:00:53,840
+We'll use and and or conjunctions.
+And just as a heads up, and in
+
+14
+00:00:53,840 --> 00:00:58,120
+SQL Server runs before or. And I'll
+show you an example of that. and
+
+15
+00:00:58,120 --> 00:01:01,860
+then you'll have some examples
+on both the labs and the quizzes.
+
+16
+00:01:01,860 --> 00:01:06,040
+We'll use in, not in,
+between, like, null.
+
+17
+00:01:06,160 --> 00:01:09,540
+Values we'll finally approach
+in terms of is or is not.
+
+18
+00:01:09,760 --> 00:01:12,860
+Wildcard characters,
+order by, concat, write,
+
+19
+00:01:12,860 --> 00:01:16,800
+trim, and featuring format,
+the format function.
+
+20
+00:01:17,120 --> 00:01:20,710
+Let's go ahead. I'll switch over to SQL
+
+21
+00:01:20,780 --> 00:01:23,440
+Server, and I'll try
+to cover these topics,
+
+22
+00:01:23,560 --> 00:01:27,200
+and most of them will be covered
+in the video along with the lab,
+
+23
+00:01:27,200 --> 00:01:30,920
+and some of them will be reinforced
+primarily through the lab. Let's
+
+24
+00:01:30,920 --> 00:01:34,860
+go ahead and get started. We just
+have on the screen select star
+
+25
+00:01:34,860 --> 00:01:38,660
+from planet, so this is our very
+small data set that we have. At
+
+26
+00:01:38,660 --> 00:01:42,520
+the top of the screen I have commented
+out some of the key terms that
+
+27
+00:01:42,520 --> 00:01:46,470
+we'll be going through in this
+video. The first one is distinct.
+
+28
+00:01:46,720 --> 00:01:53,920
+If I type in interest, so which
+planets is Dr. Sigurd interested
+
+29
+00:01:53,920 --> 00:01:58,520
+in, you can see we get a list. we
+have 10 rows, all 10 rows show up,
+
+30
+00:01:58,520 --> 00:02:01,880
+but there are times, for instance,
+where the question might be,
+
+31
+00:02:01,880 --> 00:02:05,960
+you know, what are the various
+interest possibilities? And certainly
+
+32
+00:02:05,960 --> 00:02:10,100
+this output gives you the
+possibilities, but if I include the
+
+33
+00:02:10,100 --> 00:02:17,060
+keyword distinct and then interest,
+you can see that it will remove
+
+34
+00:02:17,060 --> 00:02:20,520
+any duplicate information. So
+when you want to remove duplicate
+
+35
+00:02:20,520 --> 00:02:24,900
+information, you can use the distinct
+keyword it takes place right after
+
+36
+00:02:24,900 --> 00:02:29,700
+the select statement and now
+looking at our order of operation
+
+37
+00:02:29,700 --> 00:02:36,720
+in terms of order operation you
+remember back in maybe middle school
+
+38
+00:02:36,720 --> 00:02:40,740
+we have parentheses and then in
+addition to parentheses we have
+
+39
+00:02:40,740 --> 00:02:46,220
+exponents we have multiplication
+and then division, multiplication,
+
+40
+00:02:46,360 --> 00:02:47,360
+and then division,
+
+41
+00:02:47,720 --> 00:02:49,000
+and then hi-yah,
+
+42
+00:02:49,750 --> 00:02:56,320
+and then addition and subtraction.
+You'll likely want to be liberal
+
+43
+00:02:56,320 --> 00:03:00,180
+with parentheses as that can guide
+the formula since parentheses will
+
+44
+00:03:00,180 --> 00:03:04,940
+run first. Also, this looks like an
+order of operation where multiplication
+
+45
+00:03:04,940 --> 00:03:08,860
+takes place before division, and
+that's not true. So multiplication,
+
+46
+00:03:08,860 --> 00:03:12,380
+division take place from left
+to right, whichever comes first,
+
+47
+00:03:12,560 --> 00:03:16,220
+and addition and subtraction
+is also from left to right.
+
+48
+00:03:16,220 --> 00:03:20,620
+Now the other one are these
+conjunctions in SQL Server and
+
+49
+00:03:20,620 --> 00:03:25,620
+in OR, and this makes the
+calculus, it's not calculus, but
+
+50
+00:03:25,620 --> 00:03:28,280
+this makes the calculations a
+little more difficult because
+
+51
+00:03:29,140 --> 00:03:33,440
+the logic sometimes looks like it
+will provide one output and the
+
+52
+00:03:33,440 --> 00:03:37,060
+reality because AND runs before
+OR, unless you have parentheses,
+
+53
+00:03:37,060 --> 00:03:39,860
+will provide another one. Let's
+take a look at this particular
+
+54
+00:03:39,860 --> 00:03:45,600
+coding problem where we introduce
+the OR and the AND conjunction.
+
+55
+00:03:45,600 --> 00:03:50,020
+And so in this case, we have
+all of our planet information.
+
+56
+00:03:50,020 --> 00:03:53,380
+And if we read it from left to right, we
+
+57
+00:03:53,380 --> 00:03:55,840
+have where location is equal to inner.
+
+58
+00:03:55,840 --> 00:03:58,260
+And now think of the Earth.
+So the Earth is inner.
+
+59
+00:03:58,700 --> 00:04:02,740
+OR interest is high.
+And that is also true.
+
+60
+00:04:02,920 --> 00:04:09,060
+And moons are greater than one.
+and so in this case it might look
+
+61
+00:04:09,060 --> 00:04:13,540
+like earth wouldn't show up because
+we have this conjunction and moons
+
+62
+00:04:13,540 --> 00:04:16,270
+is greater than one and we know
+that earth does not have that
+
+63
+00:04:16,270 --> 00:04:22,200
+however if we run this code wait a
+minute you can see that earth shows
+
+64
+00:04:22,200 --> 00:04:26,460
+up and we look at why that shows
+up here is what is actually
+
+65
+00:04:26,460 --> 00:04:31,720
+happening it'll run the and conjunction
+first so it's first running where
+
+66
+00:04:31,720 --> 00:04:36,220
+interest is high and moons is
+greater than one, so that is true.
+
+67
+00:04:38,610 --> 00:04:41,980
+No, excuse me, that is false. Interest
+is high and moons greater than
+
+68
+00:04:41,980 --> 00:04:45,320
+one, that would be false. However,
+the OR would be inner, which of
+
+69
+00:04:45,320 --> 00:04:48,920
+course Mercury, Venus, Earth, and
+in this case the moon are all inner.
+
+70
+00:04:48,920 --> 00:04:53,020
+And so that's why Earth will show
+up. Now the use of parentheses, you
+
+71
+00:04:53,020 --> 00:04:57,200
+can change that logic. For instance,
+if I want the OR to run first
+
+72
+00:04:57,200 --> 00:05:01,400
+before the end, I can provide the
+parentheses and now it's going to say
+
+73
+00:05:01,400 --> 00:05:05,420
+where location is equal to inner
+that's true for earth interest is
+
+74
+00:05:05,420 --> 00:05:08,880
+equal to high that's truth for earth
+so these are true however we get to
+
+75
+00:05:08,880 --> 00:05:13,520
+the and moon's greater than one and
+so by running it in a little bit
+
+76
+00:05:13,520 --> 00:05:17,680
+different order because of the
+parentheses and now earth is removed
+
+77
+00:05:17,680 --> 00:05:22,140
+from this and also just some simple
+order of operations we know that
+
+78
+00:05:22,140 --> 00:05:26,060
+multiplication takes place before
+addition subtraction and so in this
+
+79
+00:05:26,060 --> 00:05:31,420
+particular case you could think three
+plus two right five times 4, 20.
+
+80
+00:05:31,770 --> 00:05:35,720
+However, if we run this code, you
+can see that it's going to take 4
+
+81
+00:05:35,720 --> 00:05:42,220
+times 3, 12, and then add the 2,
+which would give you 14. Alright, now
+
+82
+00:05:42,220 --> 00:05:45,760
+let's take a look at three ways we
+can manipulate the WHERE clause.
+
+83
+00:05:46,220 --> 00:05:58,980
+If I want to see all planets
+where moons is equal to one or 62.
+
+84
+00:06:02,640 --> 00:06:07,240
+This is a common error on the
+exam. If I run this code it looks
+
+85
+00:06:07,240 --> 00:06:11,540
+like it makes sense where moons
+equal to one or 62 but if I run this
+
+86
+00:06:11,540 --> 00:06:15,680
+we get the error message and it's
+indicating that for each value,
+
+87
+00:06:15,680 --> 00:06:19,780
+we need to include the column that
+we're interested in evaluating.
+
+88
+00:06:19,780 --> 00:06:24,800
+So SQL doesn't make the assumption,
+even in the current year,
+
+89
+00:06:24,800 --> 00:06:27,220
+SQL doesn't make the assumption
+without having the column first.
+
+90
+00:06:27,220 --> 00:06:32,060
+So in this case, we would have to
+say where moons is equal to 62.
+
+91
+00:06:32,700 --> 00:06:35,200
+And in this case, the
+conjunction or would allow
+
+92
+00:06:35,200 --> 00:06:38,320
+for either. So we have moons
+of one and moons of 62.
+
+93
+00:06:38,540 --> 00:06:41,840
+Now, if you wanted to do this five
+or six times, that could be a bit
+
+94
+00:06:41,840 --> 00:06:46,780
+cumbersome. And so we have a couple
+of new options that we'll also
+
+95
+00:06:46,780 --> 00:06:50,600
+include on the lab. We have in and
+not in and then between conjunction.
+
+96
+00:06:50,990 --> 00:06:54,420
+And so let me just copy this
+and I'll show you the other two.
+
+97
+00:06:54,740 --> 00:06:57,680
+Any three, any of these three
+are great. Best practice
+
+98
+00:06:57,680 --> 00:07:00,280
+is just what your
+preference is. But in this
+
+99
+00:07:00,280 --> 00:07:04,780
+case, you could indicate
+where moons and then use in.
+
+100
+00:07:06,760 --> 00:07:11,160
+And then within in, you could
+indicate the numbers. And so to be
+
+101
+00:07:11,160 --> 00:07:15,500
+exactly the same as we had before
+you could put in 62 and you could put
+
+102
+00:07:15,500 --> 00:07:18,820
+one here and it would still work
+but typically this is used for
+
+103
+00:07:18,820 --> 00:07:24,020
+multiple and so if i run this code
+we get the same answer there are some
+
+104
+00:07:24,020 --> 00:07:27,580
+questions on the exam that will
+indicate are these code or are they
+
+105
+00:07:27,580 --> 00:07:31,180
+equivalent are these equivalent
+outputs and in this case the answer
+
+106
+00:07:31,180 --> 00:07:34,920
+for this would be yes if you ran
+both of them the output would be
+
+107
+00:07:34,920 --> 00:07:39,220
+exactly the same now the other
+one it doesn't fit necessarily for
+
+108
+00:07:39,220 --> 00:07:45,660
+this one but you also have the
+between clause and this would be where
+
+109
+00:07:45,660 --> 00:07:50,480
+you want to include a range that
+is consecutive and so we could do
+
+110
+00:07:50,480 --> 00:07:57,640
+the 1 and 62 here but we could do
+between 1 and 62 and if we put this
+
+111
+00:07:57,640 --> 00:08:02,340
+code in it is a different response
+but this would give us anything
+
+112
+00:08:02,340 --> 00:08:06,460
+between 1 and 62 and one of the
+bigger questions when you're taking
+
+113
+00:08:06,460 --> 00:08:10,460
+the exam and you see something
+like this the question would be, is
+
+114
+00:08:10,460 --> 00:08:14,920
+the between clause inclusive? And
+you can clearly see that the answer
+
+115
+00:08:14,920 --> 00:08:19,300
+is yes, it is inclusive. We have
+a one here and we also have a 62.
+
+116
+00:08:20,040 --> 00:08:23,700
+The next topic we'll cover
+includes wildcard characters
+
+117
+00:08:23,700 --> 00:08:26,140
+along with the like that
+you see on the screen.
+
+118
+00:08:26,260 --> 00:08:31,060
+I'm not the best at spelling on the
+planet, but let's say I was really
+
+119
+00:08:31,060 --> 00:08:36,320
+bad. So in this case, I'd like to
+see everything related to pluto and
+
+120
+00:08:36,320 --> 00:08:43,240
+so in this particular case you could
+indicate where name is equal to and
+
+121
+00:08:43,240 --> 00:08:46,380
+i just don't remember how to spell
+it and remember sequel is not case
+
+122
+00:08:46,380 --> 00:08:52,360
+sensitive puto so we think puto might
+work but no we didn't get it and
+
+123
+00:08:52,360 --> 00:08:56,460
+yeah we know that there's something
+there and so if you're not exactly
+
+124
+00:08:56,460 --> 00:09:00,360
+sure the spelling you can use the
+wildcard character and that includes
+
+125
+00:09:00,360 --> 00:09:05,460
+like we'll replace the equality
+symbol with like and then you also
+
+126
+00:09:05,460 --> 00:09:10,600
+have available to you the percent which
+represents any number of characters
+
+127
+00:09:10,840 --> 00:09:17,020
+and also the underscore which
+simply represents one unspecified
+
+128
+00:09:17,020 --> 00:09:22,800
+character so for instance if I knew
+that it was Hawaii state abbreviation
+
+129
+00:09:22,800 --> 00:09:26,250
+but I can't remember the second you
+could use the underscore for one
+
+130
+00:09:26,250 --> 00:09:29,630
+unspecified character but most of the
+time you'll use the percentage and
+
+131
+00:09:29,760 --> 00:09:34,400
+in this case how this would work is
+I know I'm going to use a wild card
+
+132
+00:09:34,400 --> 00:09:39,700
+so I'll put in a like and then I
+know with like I need a percent or
+
+133
+00:09:39,700 --> 00:09:44,980
+an underscore so here if I just
+remember it starts with a P I could put
+
+134
+00:09:44,980 --> 00:09:52,320
+this information in and run it and
+it indicates Pluto and you could
+
+135
+00:09:52,320 --> 00:09:57,200
+also start with I don't remember what
+Pluto starts with so you could go
+
+136
+00:09:57,200 --> 00:10:00,830
+I'm not really sure what it is but
+I do know that it ends in an O and
+
+137
+00:10:01,160 --> 00:10:06,340
+you could put that information in and
+even further I just know there's a
+
+138
+00:10:06,340 --> 00:10:10,240
+U in here which you probably wouldn't
+do but you could you could say
+
+139
+00:10:10,240 --> 00:10:14,640
+is there just a U in there so anywhere
+in here there's some kind of U
+
+140
+00:10:14,640 --> 00:10:18,740
+which will bring up a few but it
+also brings up Pluto so these are the
+
+141
+00:10:18,740 --> 00:10:24,200
+wild card characters with like and
+also the percent and the underscore.
+
+142
+00:10:24,920 --> 00:10:28,640
+All right let's take one of
+our first look at null values.
+
+143
+00:10:30,040 --> 00:10:34,960
+We've already discussed,
+just as a review,
+
+144
+00:10:35,160 --> 00:10:42,040
+if I indicate select count star
+
+145
+00:10:42,990 --> 00:10:50,170
+from planet and I run this code you
+can see that there's ten columns.
+
+146
+00:10:50,500 --> 00:10:59,050
+Now if I go back and I
+look at this column called
+
+147
+00:10:59,050 --> 00:11:01,530
+distance from the sun, you
+can see we have a null value.
+
+148
+00:11:01,660 --> 00:11:07,340
+If I include that column in
+our equation, you can see
+
+149
+00:11:07,340 --> 00:11:11,140
+it goes from 10 to 9. So that's
+potentially one problematic
+
+150
+00:11:11,630 --> 00:11:15,100
+issue with the null value.
+Now let's go back here
+
+151
+00:11:18,540 --> 00:11:21,600
+and we're going to say
+select distance from the sun
+
+152
+00:11:24,660 --> 00:11:27,480
+in fact let's just go
+back to showing everything
+
+153
+00:11:27,480 --> 00:11:31,140
+here so select everything from the planet
+
+154
+00:11:32,320 --> 00:11:36,100
+and for my predicate logic by
+where clause I kind of want to
+
+155
+00:11:36,100 --> 00:11:39,300
+isolate this null value so we know
+the distance from the sun has a
+
+156
+00:11:39,300 --> 00:11:43,240
+null value so I could indicate
+and that refers to the moon so
+
+157
+00:11:43,240 --> 00:11:50,900
+I could indicate where distance
+from the sun is equal to null kind
+
+158
+00:11:50,900 --> 00:11:56,500
+of thinking about this and I
+get it nothing and sometimes the
+
+159
+00:11:56,500 --> 00:11:59,780
+code will say how many rows do
+you expect to show up on an exam
+
+160
+00:11:59,780 --> 00:12:03,200
+because if I ask you will this
+cause an error message in this
+
+161
+00:12:03,200 --> 00:12:06,320
+case it doesn't cause an error
+message but nothing shows up now
+
+162
+00:12:06,320 --> 00:12:09,460
+I could think oh that's right
+anytime we have a character value
+
+163
+00:12:09,820 --> 00:12:14,100
+we're going to include a
+single quote around it and that
+
+164
+00:12:14,100 --> 00:12:18,480
+doesn't work either and so in
+this particular case because it's
+
+165
+00:12:18,480 --> 00:12:24,860
+a null value it gets its very
+own is null and in that case
+
+166
+00:12:26,080 --> 00:12:29,580
+it does pull up the planet
+or I could say I just
+
+167
+00:12:29,580 --> 00:12:31,860
+don't want to see anything
+that's not null value
+
+168
+00:12:32,020 --> 00:12:34,720
+and in that case we
+expect everything to show
+
+169
+00:12:34,720 --> 00:12:39,140
+up except for in this in
+this instance the moon
+
+170
+00:12:39,360 --> 00:12:43,720
+And the issue with the null
+value is it's not a value, so it
+
+171
+00:12:43,720 --> 00:12:47,520
+doesn't really make sense to say
+equal to null. So instead it has
+
+172
+00:12:47,520 --> 00:12:50,480
+its very own reserved word, is
+or is not. So if I'm making a
+
+173
+00:12:50,480 --> 00:12:53,660
+flashcard again or studying for the
+exam with the exam review sheet,
+
+174
+00:12:53,660 --> 00:12:59,020
+I would definitely associate is
+or is not with the null values.
+
+175
+00:12:59,440 --> 00:13:04,060
+All right, let's now take a
+look at the order by clause.
+
+176
+00:13:04,420 --> 00:13:06,640
+and in this case I show you what we
+
+177
+00:13:06,640 --> 00:13:10,660
+won't accept if you put in mass and name
+
+178
+00:13:11,820 --> 00:13:20,320
+and that's fine let's just leave
+it at this from the planet in this
+
+179
+00:13:20,320 --> 00:13:25,060
+case you can see that it's there's
+really no specified order and according
+
+180
+00:13:25,060 --> 00:13:30,300
+to relational algebra there is no
+specified order 2 times 3 is the
+
+181
+00:13:30,300 --> 00:13:35,080
+same as 3 times two so by definition
+the order shouldn't matter if you
+
+182
+00:13:35,080 --> 00:13:38,620
+need it to matter you can use an
+order by we'll discuss later in the
+
+183
+00:13:38,620 --> 00:13:42,780
+semester how this slows down the
+code when we talk about query tuning
+
+184
+00:13:43,000 --> 00:13:45,200
+but in this case we could order by so for
+
+185
+00:13:45,200 --> 00:13:47,780
+instance in fact let's
+let's switch this around
+
+186
+00:13:47,880 --> 00:13:50,600
+how do we switch the
+column order around so
+
+187
+00:13:50,600 --> 00:13:54,460
+we put name and mass we
+have this information
+
+188
+00:13:54,920 --> 00:13:58,500
+and we run it and now if
+we want to order by order
+
+189
+00:14:04,150 --> 00:14:09,870
+space by in this case if we want to
+order by the the name of the planet
+
+190
+00:14:10,360 --> 00:14:15,310
+we have we can put in just the name
+and by default the name will be
+
+191
+00:14:16,430 --> 00:14:20,860
+ASC like the analytical solution
+center or you can put in DESC
+
+192
+00:14:20,860 --> 00:14:27,910
+to go from Z to A so 1 to 100 A
+to Z would be the default, or I
+
+193
+00:14:27,910 --> 00:14:33,630
+could put ASC here either way. If
+I wanted to go from Z to A, I can
+
+194
+00:14:33,630 --> 00:14:38,890
+put in this information. Now,
+if there happens to be a tie, I
+
+195
+00:14:38,890 --> 00:14:42,170
+could separate this. So if we had
+two that were exactly the same,
+
+196
+00:14:42,170 --> 00:14:45,370
+I don't think we have it in here,
+but I could separate it. And
+
+197
+00:14:45,370 --> 00:14:50,770
+if there is a tie, we could then
+order by mass or something that
+
+198
+00:14:50,770 --> 00:14:54,800
+doesn't show up here, any column
+that we could order by. What we
+
+199
+00:14:54,800 --> 00:14:58,010
+don't accept, and you can read
+in Ben Ghosn in a lot of detail,
+
+200
+00:14:58,010 --> 00:15:03,250
+is we don't accept pointers in
+3330. So you could say order by,
+
+201
+00:15:03,490 --> 00:15:06,410
+and it looks cool, order
+by one, which would
+
+202
+00:15:06,410 --> 00:15:09,350
+refer to name here, and
+it does look kind of cool.
+
+203
+00:15:09,450 --> 00:15:13,490
+But in this case, Ben Ghosn
+describes why this is just not best
+
+204
+00:15:13,490 --> 00:15:16,390
+practice. For instance, if
+you change, add a column, move
+
+205
+00:15:16,390 --> 00:15:19,630
+something around, it's really
+easy to forget about this. So it
+
+206
+00:15:19,630 --> 00:15:24,510
+doesn't look quite as cool, but
+it's just more reliable if you
+
+207
+00:15:24,510 --> 00:15:27,190
+just type the columns out rather
+than pointers. So just make
+
+208
+00:15:27,190 --> 00:15:33,510
+sure in this class that you refer
+to order by columns by name.
+
+209
+00:15:35,590 --> 00:15:39,330
+And then let's look at a
+couple of other options.
+
+210
+00:15:39,330 --> 00:15:43,350
+Before I forget, everything
+we've done in the where
+
+211
+00:15:43,350 --> 00:15:47,410
+clause, so if we say
+where name, for instance,
+
+212
+00:15:47,850 --> 00:15:54,490
+is equal to earth, just as a
+reminder, any time we use character
+
+213
+00:15:54,490 --> 00:15:58,650
+values, we include a quote, a single
+quote around it. If we're using
+
+214
+00:15:59,230 --> 00:16:06,010
+numeric values to analyze, so if
+I put in mass is equal to, in this
+
+215
+00:16:06,010 --> 00:16:14,010
+case you wouldn't include a quote
+around it, so 5.970, which is
+
+216
+00:16:14,010 --> 00:16:16,850
+getting pretty specific, but we
+could do greater than or less than.
+
+217
+00:16:17,770 --> 00:16:21,270
+And so just as a reminder, if
+it's character date or no quotes.
+
+218
+00:16:21,570 --> 00:16:26,530
+Okay, just a few more for today.
+The next one would be concat, and I
+
+219
+00:16:26,530 --> 00:16:31,590
+don't necessarily have a great one
+for here. Later we'll do concatenate,
+
+220
+00:16:31,590 --> 00:16:35,050
+put together your first and last name,
+for instance, but this will still
+
+221
+00:16:35,050 --> 00:16:40,070
+work for for example purposes and
+in this case if I have two columns
+
+222
+00:16:40,070 --> 00:16:45,510
+and I want to merge them into one
+column I can use the concat function
+
+223
+00:16:46,590 --> 00:16:53,970
+so in this case I can concat name
+and mass and the cat can cat just
+
+224
+00:16:53,970 --> 00:17:03,830
+smushes things together, if you
+spell it right, and there we have the
+
+225
+00:17:03,830 --> 00:17:07,250
+tables concatenated. Now because
+it creates one column, you would
+
+226
+00:17:07,250 --> 00:17:12,790
+need an alias as, we'll just call
+it combined, so you would need that
+
+227
+00:17:12,790 --> 00:17:19,570
+alias, and if you're following along,
+and you're certainly welcome to
+
+228
+00:17:19,570 --> 00:17:24,650
+pause the screen if moving a little
+bit too quickly and here we can
+
+229
+00:17:24,650 --> 00:17:28,650
+also we can see on this on the backside
+of mercury we look like we have
+
+230
+00:17:28,650 --> 00:17:34,230
+some spaces there and this looks
+like it must be a char data type
+
+231
+00:17:34,230 --> 00:17:38,650
+not of our char and so what I can
+do is I can go just directly to name
+
+232
+00:17:38,650 --> 00:17:45,350
+and put in an R trim and that will
+eliminate those lagging spaces.
+
+233
+00:17:46,610 --> 00:17:49,230
+But then it kind of
+introduces one more problem.
+
+234
+00:17:49,930 --> 00:17:53,870
+So now you can see that it's
+smushed together. So I can go in and
+
+235
+00:17:53,870 --> 00:17:57,910
+include a literal value. In this
+case, I could put in a single quote.
+
+236
+00:18:00,930 --> 00:18:04,450
+And by putting that single quote
+in, I can at least put a space
+
+237
+00:18:04,450 --> 00:18:08,100
+here or something else. So as a
+reminder, I can use literal values,
+
+238
+00:18:08,100 --> 00:18:14,930
+and I can also use column values.
+Okay, the last one, I think
+
+239
+00:18:14,930 --> 00:18:17,570
+for today, then we'll look back
+at the slice to see what I missed.
+
+240
+00:18:18,170 --> 00:18:19,970
+Let's just, oh, there it is, select star.
+
+241
+00:18:19,970 --> 00:18:21,710
+Let's look at select star from planet.
+
+242
+00:18:22,430 --> 00:18:26,470
+And you can see on most
+of these, this one here,
+
+243
+00:18:26,470 --> 00:18:28,470
+it has, it looks like
+three decimal places.
+
+244
+00:18:28,530 --> 00:18:33,330
+You can format, you can
+format your code. So in
+
+245
+00:18:33,330 --> 00:18:37,710
+this case, I could indicate
+select and then format.
+
+246
+00:18:38,330 --> 00:18:42,090
+This is a function and it has a couple
+of arguments. The first is, what
+
+247
+00:18:42,090 --> 00:18:45,680
+do I want to format? So in this
+case, I'm going to format mass, the
+
+248
+00:18:46,590 --> 00:18:53,450
+mass column, and then if you use n,
+n alone, actually let's use n alone,
+
+249
+00:18:53,590 --> 00:18:56,550
+would change it to two
+decimal places. So the default
+
+250
+00:18:56,550 --> 00:18:59,070
+is just two decimal places.
+So you can see we have the
+
+251
+00:18:59,070 --> 00:19:02,510
+three decimal places here,
+and if I run this column, you
+
+252
+00:19:02,510 --> 00:19:04,580
+can see that it drops down
+to the two decimal place.
+
+253
+00:19:04,580 --> 00:19:08,450
+Now, if you want to put another
+digit here, for instance, one decimal
+
+254
+00:19:08,450 --> 00:19:12,750
+place, we would drop this from two
+decimal down to one decimal place.
+
+255
+00:19:13,600 --> 00:19:17,230
+and so now we have the decimal.
+So n indicates how many decimal.
+
+256
+00:19:17,230 --> 00:19:20,510
+There's a lot of different options
+for formatting. The only two I'll
+
+257
+00:19:20,510 --> 00:19:24,450
+describe here is n, and then a
+value for how many decimal places.
+
+258
+00:19:24,490 --> 00:19:30,290
+So clearly if we put something
+like n5, we get our five decimal
+
+259
+00:19:30,290 --> 00:19:35,590
+places. And the most common one is
+probably c, because your business
+
+260
+00:19:35,590 --> 00:19:40,070
+major is c for currency, and so
+this would put a dollar sign and
+
+261
+00:19:40,070 --> 00:19:43,530
+drop it down to two decimal places.
+Let's go ahead and check the
+
+262
+00:19:43,530 --> 00:19:46,590
+slides out to see that we've
+covered all the topics for today. I
+
+263
+00:19:46,590 --> 00:19:50,150
+think we've covered most of it.
+These slides are uploaded for you.
+
+264
+00:19:50,290 --> 00:19:55,070
+The exam is set up first on
+the lectures, so the class
+
+265
+00:19:55,070 --> 00:19:57,230
+slides would be probably
+the number one resource.
+
+266
+00:19:57,630 --> 00:20:00,270
+Number two, and they do go hand
+in hand, would be the labs.
+
+267
+00:20:00,530 --> 00:20:04,710
+And number three resource would
+be the animations. As you know,
+
+268
+00:20:04,710 --> 00:20:08,030
+about 40% of the questions come
+directly from the animation video,
+
+269
+00:20:08,030 --> 00:20:11,230
+and then other supplements. You
+could use AI, the reading, the
+
+270
+00:20:11,230 --> 00:20:14,490
+been gone book to round out your
+learning, but that's kind of the
+
+271
+00:20:14,490 --> 00:20:18,050
+order that the order of operation
+order of what the exam would be.
+
+272
+00:20:18,050 --> 00:20:21,910
+So this goes through the order
+of operation, the and and the or.
+
+273
+00:20:22,870 --> 00:20:27,430
+Here's an example of the in
+function as a reminder where planet
+
+274
+00:20:27,430 --> 00:20:34,750
+ID in, planet ID in 1, 3, five
+six and seven in order to do this
+
+275
+00:20:34,750 --> 00:20:38,550
+with typical coding you would
+have to say where planet id equal
+
+276
+00:20:38,550 --> 00:20:45,010
+to one or planet id equal to
+three or planet id equal to five
+
+277
+00:20:45,010 --> 00:20:50,350
+and so you can see where the the
+in clause is uh is helpful the
+
+278
+00:20:50,350 --> 00:20:53,610
+between when you have contiguous
+numbers between one and five
+
+279
+00:20:53,660 --> 00:20:57,070
+that works well and it's just
+as a reminder that speak that's
+
+280
+00:20:57,070 --> 00:21:02,070
+inclusive uh the null values you
+associate is null or is not null.
+
+281
+00:21:02,890 --> 00:21:06,730
+The wild card characters, you
+would always associate like along
+
+282
+00:21:06,730 --> 00:21:10,610
+with either percent underscore or
+some combination of both of those.
+
+283
+00:21:10,910 --> 00:21:13,770
+When you're sorting by
+results, just as a reminder,
+
+284
+00:21:13,770 --> 00:21:15,960
+you'll only have one
+order by forever and ever
+
+285
+00:21:15,960 --> 00:21:18,530
+separated by commas if you
+have more than one column.
+
+286
+00:21:18,670 --> 00:21:24,410
+ASC for ascending and DESC, excuse
+me, for descending. And then
+
+287
+00:21:24,410 --> 00:21:27,770
+let's just take a look at the
+difference between physical and logical
+
+288
+00:21:27,770 --> 00:21:35,250
+SQL. So physical SQL we write
+so far select from where group
+
+289
+00:21:35,250 --> 00:21:39,110
+by having order by we'll get to
+offset fetch later but it's a
+
+290
+00:21:39,110 --> 00:21:43,070
+derivative of order by and then
+the way the computer reads it would
+
+291
+00:21:43,070 --> 00:21:49,990
+be from is read first where group
+by having and then select as you
+
+292
+00:21:49,990 --> 00:21:53,790
+can see is the second to last.
+So if you create an alias in the
+
+293
+00:21:53,790 --> 00:21:58,810
+select statement, so select
+something as combined columns, the
+
+294
+00:21:58,810 --> 00:22:02,550
+only place you can refer to those
+would be in the order by clause.
+
+295
+00:22:03,310 --> 00:22:07,750
+And if you formatted something in
+the select statement and gave it
+
+296
+00:22:07,750 --> 00:22:11,930
+an alias, you can't refer to it in
+the order by either because once
+
+297
+00:22:11,930 --> 00:22:16,350
+you format something, it becomes
+what's called an ASCII value, similar
+
+298
+00:22:16,350 --> 00:22:19,010
+to how you want the T to be in a
+certain place on your keyboard.
+
+299
+00:22:19,010 --> 00:22:21,930
+there's some standards but because
+you have for instance a dollar
+
+300
+00:22:21,930 --> 00:22:25,870
+sign and some additional decimos
+it's no longer just a normal value
+
+301
+00:22:25,870 --> 00:22:30,150
+so if you refer to in the order
+by you wouldn't refer to the alias
+
+302
+00:22:30,150 --> 00:22:34,550
+you just refer to the column itself
+so that you don't have incorrect
+
+303
+00:22:34,550 --> 00:22:37,930
+data and if you try it and you
+find the error then you'll you'll
+
+304
+00:22:37,930 --> 00:22:42,510
+know why that error takes place and
+the whole idea of SQL Server was
+
+305
+00:22:42,510 --> 00:22:47,270
+to make it more conversational
+language. If I said, for instance,
+
+306
+00:22:47,590 --> 00:22:52,310
+would you please get the book
+from my office, that would make
+
+307
+00:22:52,310 --> 00:22:55,410
+sense. Would you please get
+the book from my office? What
+
+308
+00:22:55,410 --> 00:22:58,830
+you wouldn't say is how SQL
+actually reads it. You wouldn't say,
+
+309
+00:22:58,830 --> 00:23:01,970
+from the office, get my book,
+right? So the whole idea of
+
+310
+00:23:01,970 --> 00:23:04,990
+this change, whether it's good
+or bad, that's the reason for
+
+311
+00:23:04,990 --> 00:23:08,270
+it, is they wanted to make it
+a more conversational language.
+
+312
+00:23:08,990 --> 00:23:12,950
+So that concludes the part
+two of single table queries.
+
+313
+00:23:12,950 --> 00:23:16,290
+Best of luck on your lab,
+and we will see you in a week
+
+314
+00:23:16,290 --> 00:23:20,130
+on introducing multiple
+tables with joins. Take care.

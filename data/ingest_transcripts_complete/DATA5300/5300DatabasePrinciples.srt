@@ -1,0 +1,1662 @@
+1
+00:00:07,450 --> 00:00:09,810
+Welcome back, excited to have you here.
+
+2
+00:00:09,810 --> 00:00:13,570
+And today we're gonna
+cover database principles
+
+3
+00:00:13,770 --> 00:00:18,770
+and this is foundation knowledge
+that is critically important
+
+4
+00:00:18,770 --> 00:00:22,330
+to everything you learn in
+SQL Server from here on out.
+
+5
+00:00:22,710 --> 00:00:24,910
+We have a unique approach today.
+
+6
+00:00:25,650 --> 00:00:28,990
+After you finish this
+particular video, you'll
+
+7
+00:00:28,990 --> 00:00:31,600
+be able to take the
+module one activity quiz
+
+8
+00:00:32,170 --> 00:00:35,870
+and then homework number
+one and hopefully you've
+
+9
+00:00:35,870 --> 00:00:37,990
+got the syllabus review
+quiz done and then read
+
+10
+00:00:37,990 --> 00:00:40,650
+chapter three or the
+topics for chapter three.
+
+11
+00:00:41,550 --> 00:00:45,170
+The class approach for
+today is interesting.
+
+12
+00:00:45,170 --> 00:00:47,910
+It follows a gentleman
+named David Ossible.
+
+13
+00:00:47,930 --> 00:00:51,130
+Dr. Ossible was a famous
+psychologist and came up with
+
+14
+00:00:51,130 --> 00:00:53,810
+a number of theories,
+including advanced organizers.
+
+15
+00:00:53,810 --> 00:00:57,750
+The idea of an advanced organizers
+is to relate what a student
+
+16
+00:00:57,750 --> 00:01:01,830
+already knows to new content being
+learned. And this particular lesson
+
+17
+00:01:01,830 --> 00:01:06,810
+fits perfectly with that. Dr. Osible
+had a very famous instructional
+
+18
+00:01:06,810 --> 00:01:11,310
+design student, M. David Merrill.
+M. David Merrill taught at USU
+
+19
+00:01:11,310 --> 00:01:15,910
+Stanford, also at Utah State, and
+he had a graduate student, me.
+
+20
+00:01:15,910 --> 00:01:19,650
+I pretty much teach in the basement
+of the business building, and
+
+21
+00:01:19,650 --> 00:01:25,230
+then you. So here is the approach.
+We do this workshop, but because
+
+22
+00:01:25,230 --> 00:01:29,970
+it's online, I've had my wife, Kim,
+who is going through this guessing
+
+23
+00:01:29,970 --> 00:01:33,610
+game trying to tie existing
+knowledge and the new knowledge that
+
+24
+00:01:33,610 --> 00:01:37,930
+we'll talk about so Kim is just
+retired this year she is the former
+
+25
+00:01:37,930 --> 00:01:44,090
+teacher of the year for all 30
+cash schools so the question is are
+
+26
+00:01:44,090 --> 00:01:48,610
+you smarter than and now it needs
+to say a retired second grade
+
+27
+00:01:48,610 --> 00:01:52,890
+teacher but we'll use Kim as we go
+through the terms and she'll try to
+
+28
+00:01:52,890 --> 00:01:56,650
+guess the term based on terms
+that you're already familiar with,
+
+29
+00:01:56,650 --> 00:02:00,830
+and then I'll explain the concepts
+briefly as we move through today.
+
+30
+00:02:01,270 --> 00:02:04,530
+So here we go with the first
+clue. See if you can guess
+
+31
+00:02:04,530 --> 00:02:10,150
+the keyword that we'll cover
+as I give clues to Mrs. Mills.
+
+32
+00:02:13,060 --> 00:02:15,850
+So you don't have a lot of
+day-based background, correct?
+
+33
+00:02:15,850 --> 00:02:20,170
+No. All right. Here come the
+first three clues. All right.
+
+34
+00:02:21,250 --> 00:02:24,790
+Coffee, top,
+
+35
+00:02:25,390 --> 00:02:27,230
+dinner.
+
+36
+00:02:44,680 --> 00:02:46,800
+You know the soft top.
+
+37
+00:02:47,380 --> 00:02:48,380
+Okay,
+
+38
+00:02:49,520 --> 00:02:53,920
+how about, the word was table.
+
+39
+00:02:54,760 --> 00:02:55,760
+Table.
+
+40
+00:02:56,020 --> 00:02:57,600
+Dinner table,
+
+41
+00:02:57,740 --> 00:02:59,480
+coffee table,
+
+42
+00:02:59,720 --> 00:03:01,620
+light or something.
+
+43
+00:03:01,620 --> 00:03:03,480
+Okay, so you don't have to.
+
+44
+00:03:03,520 --> 00:03:06,020
+All right, so the key
+word there is table.
+
+45
+00:03:06,580 --> 00:03:12,580
+Earlier we talked about the idea of
+a penny and how a penny can be fairly
+
+46
+00:03:12,580 --> 00:03:17,480
+difficult. but the penny also
+represents one in a database and so
+
+47
+00:03:17,480 --> 00:03:22,500
+when you think about a tables in a
+house you have a dinner table which is
+
+48
+00:03:22,500 --> 00:03:26,660
+usually used just for dinner ideally
+and then you might have a coffee
+
+49
+00:03:26,660 --> 00:03:31,260
+table which is just for putting
+drinks on and so in a database context
+
+50
+00:03:31,260 --> 00:03:37,400
+a table is no different the idea is
+you have one theme per table so if
+
+51
+00:03:37,400 --> 00:03:41,100
+you're working with a small
+organization and you have, for instance,
+
+52
+00:03:41,100 --> 00:03:47,540
+this spreadsheet here, you certainly
+look at columns A, B, C, and it looks
+
+53
+00:03:47,540 --> 00:03:52,780
+like kind of a student theme or a
+student table. And then from D on,
+
+54
+00:03:53,120 --> 00:03:57,240
+Locker, Locker Location Manager
+Phone, that starts to look like kind
+
+55
+00:03:57,240 --> 00:04:01,360
+of something different, right?
+Maybe the Arc has a Locker database.
+
+56
+00:04:01,630 --> 00:04:04,740
+And so in this particular
+case, in a spreadsheet it might
+
+57
+00:04:04,740 --> 00:04:08,060
+be okay, but in database you
+would have to break that apart.
+
+58
+00:04:08,060 --> 00:04:11,420
+And we will do that systematically
+using normalization.
+
+59
+00:04:11,960 --> 00:04:15,000
+There are some other rules we'll
+get into that are related to
+
+60
+00:04:15,000 --> 00:04:18,560
+normalization. It's also one
+piece of information per cell.
+
+61
+00:04:18,560 --> 00:04:22,320
+So you can have one last name
+and one first name and so forth.
+
+62
+00:04:22,820 --> 00:04:24,260
+One record,
+
+63
+00:04:24,920 --> 00:04:29,600
+excuse me, one row per record.
+So if we take Mills here, Megan
+
+64
+00:04:29,600 --> 00:04:32,660
+Mills, she can only have row
+three. She can't start hogging more
+
+65
+00:04:32,660 --> 00:04:35,820
+rows, as you sometimes would
+do in a spreadsheet where you
+
+66
+00:04:35,820 --> 00:04:38,760
+might give somebody two rows to
+have two different phone numbers,
+
+67
+00:04:38,760 --> 00:04:42,420
+and then one data type per
+column. So if this is character,
+
+68
+00:04:42,420 --> 00:04:45,080
+they all have to be character.
+If this is numeric, it should be
+
+69
+00:04:45,080 --> 00:04:49,100
+numeric. So it should be the
+same data type for the column. So
+
+70
+00:04:49,100 --> 00:04:53,200
+that all represents the theme
+of one as it relates to a table.
+
+71
+00:04:55,620 --> 00:04:59,200
+Here's an example of a relational
+table that we just discussed. So
+
+72
+00:04:59,200 --> 00:05:03,080
+if we had that original spreadsheet
+we normalize it and we would break
+
+73
+00:05:03,080 --> 00:05:06,740
+it into two different tables and
+these tables have a relationship
+
+74
+00:05:06,740 --> 00:05:10,980
+with each other we'll cover this
+more in about about a week or two
+
+75
+00:05:12,680 --> 00:05:16,000
+and when you do create a table
+this is looking way forward and
+
+76
+00:05:16,000 --> 00:05:18,780
+this is one of the first test
+questions that you have on your
+
+77
+00:05:18,780 --> 00:05:23,600
+exam how to create a table from
+scratch that'll be one of your
+
+78
+00:05:23,600 --> 00:05:27,800
+requirements and this is somewhat
+cryptic but you can read it
+
+79
+00:05:27,860 --> 00:05:31,680
+create a table, student, we've
+got this parenthesis, this
+
+80
+00:05:31,680 --> 00:05:34,640
+looks like the column name,
+these are the data types, this
+
+81
+00:05:34,640 --> 00:05:37,020
+is kind of strange, but it's
+a surrogate key, we'll get to
+
+82
+00:05:37,020 --> 00:05:41,460
+that, and so that will be how
+you will create these tables.
+
+83
+00:05:42,380 --> 00:05:45,280
+All right, next clue. Good
+luck, Kim, let's do this.
+
+84
+00:05:50,620 --> 00:05:52,580
+All right, this one's in your wheelhouse.
+
+85
+00:05:53,080 --> 00:05:56,950
+Okay, but I'm gonna have trouble
+with clues here. um vinyl
+
+86
+00:05:57,930 --> 00:06:08,640
+what does it start with r okay
+vinyl vinyl yeah vinyl lp song
+
+87
+00:06:11,380 --> 00:06:17,800
+starts with an r oh yeah
+vinyl lp record yeah
+
+88
+00:06:21,520 --> 00:06:24,100
+All right, so the next term is record.
+
+89
+00:06:24,500 --> 00:06:29,340
+In a database, we have rows and
+columns and cells. The nice thing is
+
+90
+00:06:29,340 --> 00:06:31,880
+you're familiar with that if you're
+familiar with the spreadsheet.
+
+91
+00:06:31,920 --> 00:06:34,440
+They do have different
+names, though. You'll
+
+92
+00:06:34,440 --> 00:06:38,120
+see a row, a typical row in the data set.
+
+93
+00:06:39,980 --> 00:06:42,160
+A row represents...
+
+94
+00:06:44,030 --> 00:06:46,380
+Another name for a row is also a record.
+
+95
+00:06:46,420 --> 00:06:50,300
+This entire row consists of
+a record. It's also called
+
+96
+00:06:50,300 --> 00:06:53,260
+a tuple. You can think of
+tuple. It rhymes with couple.
+
+97
+00:06:53,400 --> 00:06:59,320
+And in the SQL industry, that's
+what they refer to it as, a tuple.
+
+98
+00:06:59,540 --> 00:07:04,360
+A column is also considered
+a field or an attribute. So
+
+99
+00:07:04,360 --> 00:07:06,540
+everything here should be related.
+These should be all student
+
+100
+00:07:06,540 --> 00:07:10,760
+IDs, and these should all be
+class IDs, and these should
+
+101
+00:07:10,760 --> 00:07:14,640
+all be grades. And then a cell
+is simply an intersection of
+
+102
+00:07:14,640 --> 00:07:17,820
+a column and a row. So we do
+have some different language.
+
+103
+00:07:17,900 --> 00:07:21,280
+Typically, the terms here
+are used more when we're
+
+104
+00:07:21,280 --> 00:07:24,200
+designing the database, and
+then the row, column, and
+
+105
+00:07:24,200 --> 00:07:27,420
+cell are used more when
+we're using the data set.
+
+106
+00:07:30,260 --> 00:07:32,060
+All right, next clue.
+
+107
+00:07:34,800 --> 00:07:36,540
+All right, next clue.
+
+108
+00:07:37,120 --> 00:07:39,500
+Clues. I'm 0 for 1.
+
+109
+00:07:39,500 --> 00:07:40,400
+Car.
+
+110
+00:07:40,400 --> 00:07:41,160
+Car.
+
+111
+00:07:41,700 --> 00:07:42,660
+Unique.
+
+112
+00:07:43,280 --> 00:07:44,240
+House.
+
+113
+00:07:52,840 --> 00:07:55,480
+All right, so the term is key.
+
+114
+00:07:56,220 --> 00:08:00,100
+And when we refer to a
+key in SQL, we'll refer to
+
+115
+00:08:00,100 --> 00:08:03,840
+a primary key. We also
+refer to non-keys, and this
+
+116
+00:08:03,840 --> 00:08:06,140
+becomes important when
+we're normalizing data.
+
+117
+00:08:06,160 --> 00:08:08,200
+We'll use the term non-key.
+
+118
+00:08:08,260 --> 00:08:13,620
+But a primary key, by definition,
+is a column that uniquely
+
+119
+00:08:13,620 --> 00:08:17,700
+identifies a row. So if you
+give me your social security
+
+120
+00:08:17,700 --> 00:08:22,020
+number, I can look and your
+social security number should
+
+121
+00:08:22,020 --> 00:08:26,160
+uniquely identify you. Same
+thing with an A number. If you
+
+122
+00:08:26,160 --> 00:08:30,000
+give me an A number, that will
+automatically identify you.
+
+123
+00:08:30,000 --> 00:08:33,100
+It ideally should be numeric,
+
+124
+00:08:33,540 --> 00:08:37,740
+a number, non-repeating, obviously,
+and have no meaning to the user.
+
+125
+00:08:37,740 --> 00:08:41,200
+So if you had to decide between a
+social security and an A number,
+
+126
+00:08:41,200 --> 00:08:45,080
+you'd pick the A number because it
+has less or no meaning to the user.
+
+127
+00:08:45,140 --> 00:08:48,780
+It also creates what's
+called a cluster index.
+
+128
+00:08:48,780 --> 00:08:52,680
+And a clustered index and indexing
+is beyond what we will cover
+
+129
+00:08:52,680 --> 00:08:57,400
+formally, but the term clustered
+index simply means when you create a
+
+130
+00:08:57,400 --> 00:09:02,560
+primary key and you think about a
+phone book, a phone book is indexed,
+
+131
+00:09:02,560 --> 00:09:06,600
+of course, in alphabetical order,
+and so it creates that clustered
+
+132
+00:09:06,600 --> 00:09:11,360
+index based on your primary key and
+what that does is it allows you to
+
+133
+00:09:11,360 --> 00:09:16,400
+quickly look up information because
+it's clustered index it determines
+
+134
+00:09:16,400 --> 00:09:20,180
+how that data will physically
+be stored in the in the database
+
+135
+00:09:20,180 --> 00:09:24,980
+itself and it makes it more efficient
+because it's physically stored and
+
+136
+00:09:24,980 --> 00:09:28,560
+ordered you can only have one
+clustered index allowed per table
+
+137
+00:09:28,560 --> 00:09:32,380
+because that's physically stored
+a phone book you can't have it two
+
+138
+00:09:32,380 --> 00:09:36,400
+different ways If you think about
+even a back of a book, too, might have
+
+139
+00:09:36,400 --> 00:09:41,140
+an index, and that index is generally
+sorted by alphabetical order.
+
+140
+00:09:42,980 --> 00:09:49,480
+A primary key in a database diagram
+is represented by the PK here. You
+
+141
+00:09:49,480 --> 00:09:53,400
+can see the PK, and then anything
+else would be a non-key attribute.
+
+142
+00:09:55,020 --> 00:09:58,820
+And then to add a primary key,
+again, this will be a couple weeks.
+
+143
+00:09:58,820 --> 00:10:01,240
+We're just looking forward,
+but you can see this is how we
+
+144
+00:10:01,240 --> 00:10:05,600
+create a table. and then we need
+a primary key. So looking ahead
+
+145
+00:10:05,600 --> 00:10:10,240
+we'll write the word constraint
+student underscore PK which hence
+
+146
+00:10:10,240 --> 00:10:13,820
+this is the name of it and what
+is it it'll be a primary key and
+
+147
+00:10:13,820 --> 00:10:18,120
+in parentheses this is the primary
+key in this case student ID.
+
+148
+00:10:21,480 --> 00:10:24,680
+Good luck. This clue starts with an N.
+
+149
+00:10:25,160 --> 00:10:29,660
+It's four letters. four letters. Empty.
+
+150
+00:10:30,380 --> 00:10:32,060
+Zero.
+
+151
+00:10:32,580 --> 00:10:33,440
+Niche.
+
+152
+00:10:35,720 --> 00:10:37,400
+Absence.
+
+153
+00:10:39,400 --> 00:10:41,080
+Incomplete.
+
+154
+00:10:42,020 --> 00:10:43,300
+No.
+
+155
+00:10:43,540 --> 00:10:45,440
+No. I do know that.
+
+156
+00:10:55,500 --> 00:10:59,580
+That is fine. The one
+value that I provided
+
+157
+00:10:59,580 --> 00:11:03,040
+just to bring up in this
+conversation is zero.
+
+158
+00:11:03,100 --> 00:11:05,980
+And if you think about
+it, zero is a number.
+
+159
+00:11:05,980 --> 00:11:09,000
+How many elective courses
+have you taken? Zero.
+
+160
+00:11:09,000 --> 00:11:10,620
+That would be different than null.
+
+161
+00:11:10,620 --> 00:11:13,380
+Now null would suggest
+that you don't know
+
+162
+00:11:13,420 --> 00:11:16,960
+or you haven't decided.
+So a null value, not to
+
+163
+00:11:17,040 --> 00:11:19,460
+overcomplicate it, but
+if you see a null value,
+
+164
+00:11:19,820 --> 00:11:23,460
+it is simply the absence of a
+value. So it's either been undecided
+
+165
+00:11:23,460 --> 00:11:27,980
+or it's just not known. And the null
+values have a lot of ramifications
+
+166
+00:11:27,980 --> 00:11:33,700
+as we code, so in some cases
+we write code and it calculates
+
+167
+00:11:33,700 --> 00:11:37,900
+or includes null values. In other
+cases it ignores null values, and
+
+168
+00:11:37,900 --> 00:11:42,900
+so as we go through we'll figure
+that there are different times when
+
+169
+00:11:42,900 --> 00:11:45,500
+we want to include null values,
+and there's also times when we
+
+170
+00:11:45,500 --> 00:11:51,180
+don't want to include null values.
+If you think back to 2100, many
+
+171
+00:11:51,180 --> 00:11:53,980
+of you have forgotten this. I've
+asked it in prior semesters, but
+
+172
+00:11:53,980 --> 00:11:58,700
+here we have select star from customer
+where phone number, and typically
+
+173
+00:11:58,700 --> 00:12:02,100
+you see equal, right, or not
+equal or some equality symbol. But
+
+174
+00:12:02,100 --> 00:12:05,820
+in this case, null value is
+important enough that we say is null.
+
+175
+00:12:05,820 --> 00:12:10,000
+And the reason it's not equal to null
+is because it's not equal to null.
+
+176
+00:12:10,000 --> 00:12:13,760
+It's an unknown, and that's why it
+is null instead of equal to null.
+
+177
+00:12:16,420 --> 00:12:19,540
+this one starts with a c okay and wait
+
+178
+00:12:19,540 --> 00:12:21,730
+till i give you the
+three clues okay romney
+
+179
+00:12:26,640 --> 00:12:28,480
+president obama okay
+
+180
+00:12:34,520 --> 00:12:38,630
+let me think of some
+more selection chosen
+
+181
+00:12:41,920 --> 00:12:48,280
+um counted committee country candidate
+
+182
+00:12:50,480 --> 00:12:56,580
+this one starts with a c candidate
+key candidate key and as we go
+
+183
+00:12:56,580 --> 00:13:00,260
+through these these are these are
+such important terms to remember
+
+184
+00:13:00,410 --> 00:13:04,460
+long term think of i don't know
+the b verbs when you were in
+
+185
+00:13:04,460 --> 00:13:07,640
+fourth grade, and we had a contest.
+Who could say him the fastest?
+
+186
+00:13:07,640 --> 00:13:10,640
+Is, and, be, or was, were, been,
+be, been, being, or something.
+
+187
+00:13:10,800 --> 00:13:14,860
+These terms are important to know
+because the rest of the semester,
+
+188
+00:13:14,860 --> 00:13:18,980
+and really the rest of your career,
+this is just common terminology. And
+
+189
+00:13:18,980 --> 00:13:22,660
+so when we talk about normalization,
+if you understand these terms,
+
+190
+00:13:22,660 --> 00:13:26,520
+it will make all of the other learning
+a little bit easier than having
+
+191
+00:13:26,520 --> 00:13:30,340
+to go back and figure out what these
+terms mean. But Canada does fit.
+
+192
+00:13:30,340 --> 00:13:36,120
+If you think of Romney or Trump or
+Obama, these were candidates and
+
+193
+00:13:36,120 --> 00:13:40,420
+only one would be selected as president.
+So right now we have a President
+
+194
+00:13:40,420 --> 00:13:45,340
+Trump in office. And so a candidate
+key is a column that could have
+
+195
+00:13:45,340 --> 00:13:48,720
+been president. So Harris could
+have been president, but only one is
+
+196
+00:13:48,720 --> 00:13:53,700
+picked. And so as a database person,
+you can choose among candidate
+
+197
+00:13:53,700 --> 00:13:57,860
+keys, which one will be the primary
+key. and going back to a couple
+
+198
+00:13:57,860 --> 00:14:02,900
+slides ago the idea would be is it
+numeric is it non-repeating does it
+
+199
+00:14:02,900 --> 00:14:06,800
+have no meaning to the user in this
+particular case you could probably
+
+200
+00:14:06,800 --> 00:14:10,860
+use well you could use I think
+locker number if those are unique and
+
+201
+00:14:10,860 --> 00:14:14,880
+then you have the serial number and
+those are all unique too and then
+
+202
+00:14:14,880 --> 00:14:19,940
+I guess the lock or combo are probably
+unique locations not unique so
+
+203
+00:14:19,940 --> 00:14:24,030
+in this case this is numeric non
+-repeating no meaning to the user and
+
+204
+00:14:24,060 --> 00:14:29,790
+that would be the idea that I would
+recommend for a candidate key and
+
+205
+00:14:30,180 --> 00:14:34,260
+also a candidate key is considered
+this will be another term on the
+
+206
+00:14:34,260 --> 00:14:39,440
+midterm exam just saying a candidate
+key is a minimal super key and a
+
+207
+00:14:39,440 --> 00:14:43,920
+super key is just a combination of
+columns that can make a candidate
+
+208
+00:14:43,920 --> 00:14:49,460
+key and so in this case all you
+need is this alone to determine the
+
+209
+00:14:49,460 --> 00:14:53,820
+candidate key that would be a super
+key but another super key could be
+
+210
+00:14:53,820 --> 00:15:00,040
+location plus the locker and you
+think well yes of course but that is
+
+211
+00:15:00,040 --> 00:15:03,940
+it's not minimal but it is a super
+key and so every combination that
+
+212
+00:15:03,940 --> 00:15:07,640
+does create something that could
+be used is considered a super key a
+
+213
+00:15:07,640 --> 00:15:10,960
+minimal one is when you is what we
+typically look at this is a minimal
+
+214
+00:15:10,960 --> 00:15:16,060
+one that could be used by itself as
+a super key i guess that means move
+
+215
+00:15:16,060 --> 00:15:21,890
+to the next slide I think we're
+going forward let's see no friends
+
+216
+00:15:22,340 --> 00:15:38,420
+this one starts with an F okay
+international foreign Wow so foreign and
+
+217
+00:15:38,420 --> 00:15:42,400
+we're talking about a foreign key
+now remember earlier we talked about
+
+218
+00:15:42,400 --> 00:15:46,960
+this the themes one theme per table
+so So we have a student theme and
+
+219
+00:15:46,960 --> 00:15:50,520
+we have a locker theme. So we need
+to break those two tables apart.
+
+220
+00:15:50,900 --> 00:15:54,600
+But later, we have to be able to
+put those tables back together. So
+
+221
+00:15:54,600 --> 00:15:58,800
+there's always one thing that doesn't
+quite look like it perfectly fits.
+
+222
+00:15:58,800 --> 00:16:02,180
+So I always think of serial and
+I drop something in my serial and
+
+223
+00:16:02,180 --> 00:16:05,760
+it doesn't look right. It's for
+an object. And so in this case,
+
+224
+00:16:05,780 --> 00:16:09,800
+the requirement is when we have
+two tables to link them together,
+
+225
+00:16:09,800 --> 00:16:13,160
+we have to take the primary key
+from one table and put it into
+
+226
+00:16:13,160 --> 00:16:18,220
+the other. So in this case, it
+looks like we have student ID,
+
+227
+00:16:18,220 --> 00:16:20,600
+last name, first name, and then
+we have some locker information.
+
+228
+00:16:20,760 --> 00:16:23,860
+So student ID and locker number
+are primary keys. We would
+
+229
+00:16:23,860 --> 00:16:27,540
+have to take one of those and
+put it into the other table.
+
+230
+00:16:27,540 --> 00:16:30,760
+Now, in this case, we'll likely
+take the student ID and put it in
+
+231
+00:16:30,760 --> 00:16:33,860
+the locker table because student
+table is a little bit more
+
+232
+00:16:33,860 --> 00:16:37,040
+important probably than the locker
+table. But in a couple of weeks,
+
+233
+00:16:37,040 --> 00:16:40,820
+we'll learn the formal process
+for doing that based on the
+
+234
+00:16:40,870 --> 00:16:44,740
+relationship between those two tables.
+and we'll talk about that later.
+
+235
+00:16:44,740 --> 00:16:48,080
+But the foreign key is always
+the key that doesn't quite fit,
+
+236
+00:16:48,080 --> 00:16:51,000
+but it needs to be there to connect
+these two tables together. We
+
+237
+00:16:57,070 --> 00:17:00,390
+don't have Kim on this one
+because this is a tough one,
+
+238
+00:17:00,610 --> 00:17:05,230
+but if you think about metals, and
+sometimes metals might have steel
+
+239
+00:17:05,230 --> 00:17:08,590
+and copper, and you put those
+metals together, that's considered a
+
+240
+00:17:08,590 --> 00:17:11,630
+composite. So anytime you put two
+or more things together, that's
+
+241
+00:17:11,630 --> 00:17:16,040
+composite. This is a picture of
+the car that I had, my first car in
+
+242
+00:17:16,040 --> 00:17:21,850
+Hawaii going to school, and as you
+can see on the top here there wasn't
+
+243
+00:17:21,850 --> 00:17:26,190
+a roof. It was all rusted out. So
+we went down to, a friend and I
+
+244
+00:17:26,190 --> 00:17:31,290
+went down and we got bondo. And so
+this bondo is two parts, so like
+
+245
+00:17:31,290 --> 00:17:34,410
+a pink and a white part, and we
+mixed it together. And then what we
+
+246
+00:17:34,410 --> 00:17:37,610
+were able to do is kind of paint
+a roof on. So bondo is a composite
+
+247
+00:17:37,610 --> 00:17:41,890
+material. What that means in the
+database context, though, and think
+
+248
+00:17:41,890 --> 00:17:46,090
+about composite, it just means two
+or more columns are combined to
+
+249
+00:17:46,090 --> 00:17:51,550
+make or uniquely identify a row or
+to make a primary key. So if you
+
+250
+00:17:51,550 --> 00:17:57,230
+think about your grade, so you go
+down to your advisor and you ask,
+
+251
+00:17:57,230 --> 00:18:01,370
+what's my grade? The first thing
+they may ask is, who are you? Oh,
+
+252
+00:18:01,530 --> 00:18:05,070
+I'm student one. But then you
+can take more than one class,
+
+253
+00:18:05,070 --> 00:18:07,810
+so they would have to know which
+class. So to determine your
+
+254
+00:18:07,810 --> 00:18:10,830
+grade, you would have to have
+a composite key. You You need
+
+255
+00:18:10,830 --> 00:18:13,530
+two pieces of information in
+order to determine your grade.
+
+256
+00:18:15,550 --> 00:18:18,670
+And this word is unique, I
+guess we don't have a video
+
+257
+00:18:18,670 --> 00:18:21,590
+for it, but unique is
+referring to a surrogate key.
+
+258
+00:18:21,770 --> 00:18:25,990
+And a surrogate key is a numeric added
+
+259
+00:18:26,040 --> 00:18:30,010
+column that can serve as the primary key.
+
+260
+00:18:30,010 --> 00:18:33,870
+And so earlier I showed
+you the create table and I
+
+261
+00:18:33,870 --> 00:18:36,270
+mentioned, I actually mentioned
+this looks a little strange,
+
+262
+00:18:36,270 --> 00:18:40,920
+the identity one comma one.
+And so in this case, identity
+
+263
+00:18:40,920 --> 00:18:44,370
+is the way that we'll use
+to create a surrogate key.
+
+264
+00:18:44,370 --> 00:18:50,370
+So when you create a table, if you
+write identity 1, 1, that means
+
+265
+00:18:50,370 --> 00:18:54,090
+we're going to start with these
+numbers. It's going to start at 1, and
+
+266
+00:18:54,090 --> 00:18:58,550
+it's going to increment by 1. So
+this would give you 1, 2, 3, 4, 5.
+
+267
+00:18:58,550 --> 00:19:01,790
+On this customer number, same
+thing. It's going to start at
+
+268
+00:19:01,790 --> 00:19:06,270
+1 and increment by 1. And if we
+put 10 here, it would start at
+
+269
+00:19:06,270 --> 00:19:10,790
+10 and then increment by 1. Or
+if we started at 1 and put a
+
+270
+00:19:10,790 --> 00:19:13,710
+5 there, it would start at 1
+and then increment by 5. So it
+
+271
+00:19:13,710 --> 00:19:18,870
+would go 1 and 5, 1 and 6, and
+then increase by 5 each time.
+
+272
+00:19:22,070 --> 00:19:24,350
+All right, this word starts with an I.
+
+273
+00:19:26,170 --> 00:19:31,880
+These are tough to find clues.
+So moral, standard, personal.
+
+274
+00:19:34,470 --> 00:19:35,830
+Individual.
+
+275
+00:19:37,310 --> 00:19:38,670
+Personal,
+
+276
+00:19:39,070 --> 00:19:40,370
+moral,
+
+277
+00:19:41,250 --> 00:19:42,610
+standard.
+
+278
+00:19:43,910 --> 00:19:49,670
+Oh, someone's kind of like their compass.
+
+279
+00:19:49,710 --> 00:19:50,650
+Okay. Yeah.
+
+280
+00:19:51,170 --> 00:19:52,830
+Integrity. Integrity.
+
+281
+00:19:52,890 --> 00:19:53,730
+Correct.
+
+282
+00:19:54,470 --> 00:19:58,970
+I didn't do very well on those
+clues, but the word is integrity. And
+
+283
+00:19:58,970 --> 00:20:03,210
+this is a great concept in databases
+where we have something called
+
+284
+00:20:03,210 --> 00:20:07,370
+referential integrity. So when we
+normalize the database in a week, the
+
+285
+00:20:07,370 --> 00:20:12,530
+idea is to make the data more reliable
+and have less redundant data. And
+
+286
+00:20:12,530 --> 00:20:15,850
+having redundant data, you can have
+errors and which error is correct
+
+287
+00:20:15,850 --> 00:20:19,450
+or which item is correct and which
+is error if we have discrepancies.
+
+288
+00:20:19,650 --> 00:20:23,250
+So the idea of referential
+integrity is to help maintain the
+
+289
+00:20:23,250 --> 00:20:27,370
+database where a primary key
+must exist before you can
+
+290
+00:20:27,370 --> 00:20:32,630
+establish a foreign key. But
+writing the constraint is indicating
+
+291
+00:20:32,630 --> 00:20:37,770
+where the foreign key is. And
+so here is the idea of it.
+
+292
+00:20:37,770 --> 00:20:42,630
+Let's say you go over here to
+this locker and now I want to
+
+293
+00:20:42,630 --> 00:20:46,730
+build a new locker and I tell
+them that I am student ID 11.
+
+294
+00:20:47,130 --> 00:20:51,330
+And what it will do, and this is
+the wording of it, it'll say student
+
+295
+00:20:51,330 --> 00:20:57,290
+ID and locker must exist in student
+ID in the student table, and I
+
+296
+00:20:57,290 --> 00:21:01,030
+always remember this just because F
+foreign comes before P primary, so
+
+297
+00:21:01,030 --> 00:21:05,730
+that's how I remember which table
+comes first, but that's the formal
+
+298
+00:21:05,730 --> 00:21:10,770
+definition, so student ID in the
+locker table must exist in student ID
+
+299
+00:21:10,770 --> 00:21:14,510
+in the student table, meaning you
+can't add a locker unless you exist
+
+300
+00:21:14,510 --> 00:21:17,670
+as a student, so if I go to the ARC
+and I'm like, hello, I'd like to,
+
+301
+00:21:17,980 --> 00:21:20,750
+you know, rent a locker, and they're
+like, okay, what's your A number,
+
+302
+00:21:20,750 --> 00:21:23,330
+and I say, my A number is 11,
+they're going, sorry, you're not a
+
+303
+00:21:23,330 --> 00:21:26,670
+student, you have to be a student
+to be able to do that. So that helps
+
+304
+00:21:26,670 --> 00:21:30,090
+to protect the database. Otherwise,
+if they allow me to do it, and
+
+305
+00:21:30,090 --> 00:21:33,270
+there's an emergency, and now they
+have to look up an emergency contact,
+
+306
+00:21:33,550 --> 00:21:37,450
+there is no student 11,
+so it doesn't exist. So
+
+307
+00:21:37,450 --> 00:21:39,630
+the database is protected
+with this referential
+
+308
+00:21:39,630 --> 00:21:43,450
+integrity. And then the
+last term for today is meta.
+
+309
+00:21:43,610 --> 00:21:46,910
+And meta technically means about.
+
+310
+00:21:47,390 --> 00:21:50,610
+So sometimes meta is
+used in different ways.
+
+311
+00:21:50,750 --> 00:21:53,970
+You'll be watching the news, and
+they'll say, you know, the government
+
+312
+00:21:53,970 --> 00:21:57,670
+is tracking our data. They're collecting
+metadata. They have your phone
+
+313
+00:21:57,670 --> 00:22:00,950
+number. They have your phone calls.
+They have your time of call. Well,
+
+314
+00:22:00,950 --> 00:22:05,530
+in a database context, that's all
+data. And so metadata in our context
+
+315
+00:22:05,530 --> 00:22:09,750
+is data about the data. So if you
+remember when we said create table,
+
+316
+00:22:09,750 --> 00:22:13,950
+that is metadata. That's how we're
+creating the table. So the metadata
+
+317
+00:22:14,430 --> 00:22:17,910
+is data about the data.
+And for now, if you
+
+318
+00:22:17,910 --> 00:22:20,510
+just think about when we
+did that create table,
+
+319
+00:22:20,690 --> 00:22:25,030
+and these are the columns and these
+are the data types we'll get to
+
+320
+00:22:25,030 --> 00:22:28,690
+later and this is if you can leave it
+null or if it has to have information
+
+321
+00:22:28,690 --> 00:22:34,190
+and then this one here identity 1
+comma 1 remember what that was that's
+
+322
+00:22:34,190 --> 00:22:39,130
+a surrogate key and is that the
+primary key well it probably will be
+
+323
+00:22:39,130 --> 00:22:44,190
+but it's not until we do this
+constraint and make it student ID the
+
+324
+00:22:44,190 --> 00:22:47,930
+primary key it becomes but this is
+the data about the data it's not the
+
+325
+00:22:47,930 --> 00:22:51,910
+data itself so sometimes you look
+at this and you think where am I or
+
+326
+00:22:51,910 --> 00:22:55,890
+where where is the student right this
+is just a shell this is the structure
+
+327
+00:22:55,890 --> 00:22:58,750
+it takes a little while to understand
+that because this is different
+
+328
+00:22:58,750 --> 00:23:02,770
+than a spreadsheet I think of
+metadata there are two different types
+
+329
+00:23:02,770 --> 00:23:07,310
+this will be the last slide so there's
+DDL which stands for data definition
+
+330
+00:23:07,310 --> 00:23:11,410
+language and I have on when we
+create a table that's data definition
+
+331
+00:23:11,410 --> 00:23:14,530
+when we delete a table you get
+rid of the whole table well that's
+
+332
+00:23:14,530 --> 00:23:18,550
+table level so that's a DDL test. Or
+when you alter the table, you're going
+
+333
+00:23:18,550 --> 00:23:21,770
+to add a column or delete a column.
+So all of that is considered data
+
+334
+00:23:21,770 --> 00:23:25,350
+definition language. Data manipulation
+language is likely what you did
+
+335
+00:23:25,350 --> 00:23:29,610
+in 2100, where you might have just
+questioned the database. How many
+
+336
+00:23:29,610 --> 00:23:32,850
+students participate in activities?
+So you write your select statement.
+
+337
+00:23:33,030 --> 00:23:37,530
+Also, if you insert a row, that's
+just one row, so that's data
+
+338
+00:23:37,530 --> 00:23:41,090
+manipulation, not the full
+table. Or if you delete a row,
+
+339
+00:23:41,090 --> 00:23:44,150
+somebody leaves school, so you
+delete that row or if you simply
+
+340
+00:23:44,150 --> 00:23:47,270
+update change somebody's name
+all of those would be considered
+
+341
+00:23:47,270 --> 00:23:50,990
+dml tasks and again all through
+the semester we'll talk ddl dml
+
+342
+00:23:50,990 --> 00:23:54,730
+and it will become very you know
+very much conversational language
+
+343
+00:23:54,730 --> 00:23:58,290
+for you so this is an overview
+of the database principles

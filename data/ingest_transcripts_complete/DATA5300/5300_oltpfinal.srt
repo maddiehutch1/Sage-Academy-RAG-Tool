@@ -1,0 +1,921 @@
+1
+00:00:00,860 --> 00:00:05,440
+SQL Online Transaction
+Processing. Who's down?
+
+2
+00:00:06,340 --> 00:00:08,240
+You down with OLTP?
+
+3
+00:00:08,580 --> 00:00:10,720
+You down with OLTP?
+
+4
+00:00:11,460 --> 00:00:13,180
+You down with OLTP?
+
+5
+00:00:13,560 --> 00:00:15,600
+Who's down with OLTP?
+
+6
+00:00:16,660 --> 00:00:17,580
+Back
+
+7
+00:00:30,490 --> 00:00:33,830
+to your final module
+before you take exam one.
+
+8
+00:00:34,070 --> 00:00:38,680
+Today we're going to cover Online
+Transaction Processing or OLTP.
+
+9
+00:00:39,630 --> 00:00:43,530
+OLTP represents the everyday
+transactions that you would
+
+10
+00:00:43,530 --> 00:00:47,250
+make using SQL Server. For
+instance, you register for
+
+11
+00:00:47,250 --> 00:00:50,830
+a course, or you drop a
+course, you change your major,
+
+12
+00:00:51,010 --> 00:00:54,650
+you get admitted to the hospital,
+or you make a purchase. All
+
+13
+00:00:54,650 --> 00:00:57,770
+of these are handled through
+online transaction processing.
+
+14
+00:00:57,770 --> 00:01:02,610
+The other type of OL is
+considered OLAP, Online Analytical
+
+15
+00:01:02,610 --> 00:01:05,530
+Processing, and that's where
+you tend to use the data to make
+
+16
+00:01:05,530 --> 00:01:09,750
+decisions related to trends and
+decision-making and so forth.
+
+17
+00:01:09,750 --> 00:01:14,830
+In this module, we will focus
+on primarily the update and the
+
+18
+00:01:14,830 --> 00:01:18,770
+alter table. We've covered the insert
+statement, the create statement,
+
+19
+00:01:18,770 --> 00:01:21,990
+the delete statement, drop table,
+truncate in the prior module.
+
+20
+00:01:21,990 --> 00:01:25,390
+So we'll focus primarily on
+the update and the alter table.
+
+21
+00:01:25,390 --> 00:01:28,830
+Although this is a shorter module,
+it's fairly heavily weighted on
+
+22
+00:01:28,830 --> 00:01:33,550
+the exam. 30% of your exam is
+based on coding questions. Those
+
+23
+00:01:33,550 --> 00:01:38,310
+coding questions would derive
+from last module on create, table,
+
+24
+00:01:38,490 --> 00:01:42,790
+insert, into, drop,
+truncate, and delete. And the
+
+25
+00:01:42,790 --> 00:01:45,750
+remainder of the coding
+questions would be related to the
+
+26
+00:01:45,750 --> 00:01:48,910
+alter table update statements
+that we'll cover today.
+
+27
+00:01:48,970 --> 00:01:52,170
+We'll first take a look at the
+update statement. It's considered
+
+28
+00:01:52,170 --> 00:01:56,350
+a DML, data manipulation language,
+because it's intended to fix or
+
+29
+00:01:56,350 --> 00:02:00,450
+update or make a change to generally
+a single row. And so that's
+
+30
+00:02:00,450 --> 00:02:03,610
+why it's considered to be a DML.
+I've got a short intro to the
+
+31
+00:02:03,610 --> 00:02:07,170
+update statement, and as you watch
+this brief interview on memories,
+
+32
+00:02:07,170 --> 00:02:13,950
+the idea is Bob Mills growing older,
+and my hair changes colors, and
+
+33
+00:02:14,010 --> 00:02:17,610
+you'll notice in the video the
+update statement contains three
+
+34
+00:02:17,610 --> 00:02:21,130
+lines of statement, the final
+one being the where clause. In
+
+35
+00:02:21,130 --> 00:02:24,210
+a real-world situation, I'd
+use an A number or a social
+
+36
+00:02:24,210 --> 00:02:27,230
+security number, something that
+uniquely identifies me. wouldn't
+
+37
+00:02:27,230 --> 00:02:30,690
+use Bob Mills. But as you watch
+this, think about what would
+
+38
+00:02:30,690 --> 00:02:33,790
+happen if you forget the where
+statement. Be back in a second.
+
+39
+00:02:34,090 --> 00:02:34,770
+Oh
+
+40
+00:02:42,790 --> 00:02:44,700
+yeah, I used to have blonde hair.
+
+41
+00:02:45,110 --> 00:02:47,250
+I'll have to update my database.
+
+42
+00:02:48,350 --> 00:02:49,510
+Update Mills,
+
+43
+00:02:50,370 --> 00:02:56,850
+set hair color equal to blonde,
+where, name equal Bob Mills.
+
+44
+00:02:59,310 --> 00:03:04,250
+And then my hair turned brown and I
+have to update the database update
+
+45
+00:03:04,250 --> 00:03:10,890
+mills set hair color equal to
+brown where name equals Bob Mills
+
+46
+00:03:10,890 --> 00:03:17,910
+now it's turning gray set hair color
+equal to gray where name equals
+
+47
+00:03:17,910 --> 00:03:24,110
+Bob Mills all right after that video
+you can see there were the three
+
+48
+00:03:24,110 --> 00:03:27,950
+parts to it the update statement
+the set statement and then the
+
+49
+00:03:27,950 --> 00:03:31,710
+where clause let's take a look at
+what happens to our student table if
+
+50
+00:03:32,510 --> 00:03:38,190
+we only do update and we update
+and then it's the name of the table
+
+51
+00:03:38,190 --> 00:03:43,750
+so in this case we're using the
+student table and what we're thinking
+
+52
+00:03:43,750 --> 00:03:52,250
+here is Sam Hines wants to change
+his major from MIS to analytics
+
+53
+00:03:55,240 --> 00:04:00,590
+and we know that is what Sam wants
+to do. However, if we run this,
+
+54
+00:04:00,930 --> 00:04:04,650
+81 rows affect it, it looks
+like it worked out okay. We run
+
+55
+00:04:04,650 --> 00:04:08,490
+the select statement, and now
+everybody is analytics. Yikes!
+
+56
+00:04:09,010 --> 00:04:14,070
+Now sometimes you do want to use all
+columns to be changed. For instance,
+
+57
+00:04:14,140 --> 00:04:17,630
+we could look this up, but we want
+everything to be uppercase in,
+
+58
+00:04:17,630 --> 00:04:21,970
+let's say, the major column. So we
+can have where major is equal to,
+
+59
+00:04:24,090 --> 00:04:27,530
+and in this case we
+could indicate using the
+
+60
+00:04:27,530 --> 00:04:31,970
+upper function and we
+indicate their major.
+
+61
+00:04:33,750 --> 00:04:39,910
+81 rows affected and now you
+can see that every row has been
+
+62
+00:04:39,910 --> 00:04:42,910
+changed. So when we do data
+wrangling and data cleansing we may
+
+63
+00:04:42,910 --> 00:04:45,850
+want every row to be affected.
+And that's the update without
+
+64
+00:04:45,850 --> 00:04:48,730
+having a WHERE clause. All
+right, let's say SAM changes back
+
+65
+00:04:48,730 --> 00:04:53,110
+to MIS. In this case we could
+indicate WHERE setMajor is equal
+
+66
+00:04:54,650 --> 00:04:59,890
+to MIS, and now SAM will be
+the only major, but at this
+
+67
+00:04:59,890 --> 00:05:08,450
+time we do remember and
+where student ID equal to 1.
+
+68
+00:05:13,700 --> 00:05:17,680
+So update is a powerful tool
+to make changes to your tables,
+
+69
+00:05:17,680 --> 00:05:21,680
+but remember without the where
+clause everything changes, and
+
+70
+00:05:21,680 --> 00:05:25,680
+most of the time that's not what
+you want to occur. And the delete
+
+71
+00:05:25,680 --> 00:05:29,300
+statement is also dangerous,
+just like the update statement.
+
+72
+00:05:29,420 --> 00:05:31,620
+For delete, we would indicate,
+
+73
+00:05:31,820 --> 00:05:35,740
+and delete is considered DML because
+you typically are only removing
+
+74
+00:05:35,740 --> 00:05:39,280
+a row or a few rows. If you
+want to get rid of all the rows,
+
+75
+00:05:39,280 --> 00:05:42,540
+remember, you can use truncate,
+which removes the rows and keeps the
+
+76
+00:05:42,540 --> 00:05:45,140
+database structure, the table
+structure. You can also use drop
+
+77
+00:05:45,140 --> 00:05:48,640
+table, and those are considered
+DML because the entire table is
+
+78
+00:05:48,640 --> 00:05:54,120
+effective. In this case, we would
+indicate delete from student. If I
+
+79
+00:05:54,120 --> 00:05:58,220
+run this, it will remove all
+students. A test question could be,
+
+80
+00:05:58,220 --> 00:06:03,540
+is delete from student similar to
+the truncate student table? And
+
+81
+00:06:03,540 --> 00:06:06,440
+the answer would be yes. They
+effectively would do the same thing.
+
+82
+00:06:06,440 --> 00:06:10,980
+Also related to the delete statement
+is a reminder about referential
+
+83
+00:06:10,980 --> 00:06:13,800
+integrity and some of the concepts
+that we discussed earlier.
+
+84
+00:06:13,910 --> 00:06:16,600
+For instance, if we want to
+get rid of Sam, you're out of
+
+85
+00:06:16,600 --> 00:06:20,320
+here, Sam. we would indicate
+delete from student where
+
+86
+00:06:21,780 --> 00:06:32,660
+student ID, if I can spell it,
+is equal to, and SAM is one.
+
+87
+00:06:32,880 --> 00:06:37,220
+If I run this code, we
+want to get rid of SAM, but
+
+88
+00:06:37,220 --> 00:06:39,360
+we can't. It says the delete
+statement is conflicted
+
+89
+00:06:39,360 --> 00:06:43,970
+with the reference and
+the student activity,
+
+90
+00:06:44,620 --> 00:06:47,860
+and SAM is referenced in a
+few different tables. So as a
+
+91
+00:06:47,860 --> 00:06:52,340
+reminder, we would have to drop,
+delete the child rows, Sam and
+
+92
+00:06:52,340 --> 00:06:54,940
+the other tables, the child
+tables, before we can delete them
+
+93
+00:06:54,940 --> 00:06:58,520
+here. And the idea is we don't
+want to have Sam somewhere in
+
+94
+00:06:58,520 --> 00:07:02,260
+the database if he is not even
+in the main one as a student.
+
+95
+00:07:02,260 --> 00:07:06,280
+For alter table, we're only going
+to use two different commands. One
+
+96
+00:07:06,280 --> 00:07:11,660
+is to add a column, and the other
+alter table is to remove a column.
+
+97
+00:07:12,140 --> 00:07:16,020
+All right, let's take a
+look at our student table.
+
+98
+00:07:16,600 --> 00:07:21,300
+and in this case we're thinking we
+want to add something like phone
+
+99
+00:07:21,520 --> 00:07:25,980
+number and in that case as a designer
+you would ask yourself thinking of
+
+100
+00:07:25,980 --> 00:07:30,540
+normalization am I just going to have
+one number or will I have multiple
+
+101
+00:07:30,540 --> 00:07:33,560
+numbers if it's multiple numbers we
+know we have to create a separate
+
+102
+00:07:33,560 --> 00:07:38,200
+table if it's just one number we're
+okay favorite number and you're
+
+103
+00:07:38,200 --> 00:07:41,760
+only allowed one favorite number
+could this go on the table and the
+
+104
+00:07:41,760 --> 00:07:46,380
+answer is yes so let's go ahead and
+add a column called favorite number.
+
+105
+00:07:46,420 --> 00:07:52,900
+Now, to do that, we'll write alter
+table and the name of the table.
+
+106
+00:07:53,560 --> 00:07:57,010
+And this is considered a DDL
+because we're altering the entire
+
+107
+00:07:57,010 --> 00:08:00,420
+structure we're adding or deleting a
+column. And in this case, I'm going
+
+108
+00:08:00,420 --> 00:08:05,520
+to add, and I want to write the
+word column, but you only do that
+
+109
+00:08:05,520 --> 00:08:09,400
+with a drop column. So when you're
+preparing for the coding questions,
+
+110
+00:08:09,400 --> 00:08:13,340
+the alter table is fairly
+consistent except for add and drop
+
+111
+00:08:13,340 --> 00:08:16,820
+are different. In this case, what
+you would indicate is the name of
+
+112
+00:08:16,820 --> 00:08:19,760
+the column after add, the name of
+the column that you want to add.
+
+113
+00:08:21,560 --> 00:08:23,460
+Let's indicate favorite number.
+
+114
+00:08:24,100 --> 00:08:26,830
+And then we indicate the
+data type for that favorite
+
+115
+00:08:26,830 --> 00:08:29,240
+number. And in this
+case, I'll just put int.
+
+116
+00:08:29,740 --> 00:08:35,080
+You may be thinking, if I'm adding a
+column and the data type is integer,
+
+117
+00:08:35,080 --> 00:08:37,920
+should I also include other
+information, for instance, null or not
+
+118
+00:08:37,920 --> 00:08:42,260
+null? Well, as you know, if I'm
+gonna add a column, it will have null
+
+119
+00:08:42,540 --> 00:08:47,100
+values, and so in that case, by default,
+it has to allow for null values.
+
+120
+00:08:47,120 --> 00:08:50,500
+Otherwise, the code
+wouldn't run after the fact.
+
+121
+00:08:51,660 --> 00:08:56,920
+So we execute this, and we now
+go and look at our data set,
+
+122
+00:08:56,920 --> 00:08:59,920
+and now we have a lot of
+null numbers for our favorite
+
+123
+00:08:59,920 --> 00:09:02,720
+number, but again, that's
+because we haven't added anything
+
+124
+00:09:02,720 --> 00:09:06,440
+to the data set. And now we
+could go in doing update again.
+
+125
+00:09:07,260 --> 00:09:09,020
+Let's go ahead and add that.
+
+126
+00:09:09,020 --> 00:09:09,820
+Update.
+
+127
+00:09:10,340 --> 00:09:11,700
+The name of the table,
+
+128
+00:09:11,840 --> 00:09:22,140
+student, set, set favorite
+number equal to 10. That was my
+
+129
+00:09:22,140 --> 00:09:25,440
+daughter's basketball number.
+So we'll set it there. If we run
+
+130
+00:09:25,440 --> 00:09:28,630
+this, you know the problem,
+right? We need that where clause.
+
+131
+00:09:29,000 --> 00:09:31,620
+But in this case, well, it's too late.
+
+132
+00:09:32,180 --> 00:09:36,000
+In the next class, we'll discuss
+how to roll back our data sets.
+
+133
+00:09:36,000 --> 00:09:40,160
+Here now, everybody's favorite
+number is 10. Now we don't like
+
+134
+00:09:40,160 --> 00:09:42,460
+that column. We want to get rid
+of the favorite number. It doesn't
+
+135
+00:09:42,460 --> 00:09:46,020
+really make sense It's illegal
+to track for some reason, so we
+
+136
+00:09:46,020 --> 00:09:48,600
+want to go in and change that
+you'll note it in fact Let me keep
+
+137
+00:09:48,600 --> 00:09:53,420
+the date the alter table add
+here, and I just want below that
+
+138
+00:09:53,540 --> 00:09:56,960
+alter table and now
+we're going to drop and
+
+139
+00:09:57,960 --> 00:10:01,300
+We do write the name
+column and then just the
+
+140
+00:10:01,300 --> 00:10:04,780
+name of the column without
+using the data type
+
+141
+00:10:07,460 --> 00:10:14,680
+and this should run and now we've
+removed that column so prior to
+
+142
+00:10:14,680 --> 00:10:17,800
+taking the exam you'll definitely
+want to go through and make sure
+
+143
+00:10:17,800 --> 00:10:21,800
+that you're proficient on writing
+code creating a table dropping a
+
+144
+00:10:21,800 --> 00:10:27,720
+table truncating a table insert
+into alter table update and delete
+
+145
+00:10:27,720 --> 00:10:31,200
+we're also at a stage in the course
+where the ben gone book becomes
+
+146
+00:10:31,200 --> 00:10:34,620
+relevant if you're interested
+in using it To be successful in
+
+147
+00:10:34,620 --> 00:10:38,960
+class, you can certainly do it with
+the video demonstration lectures,
+
+148
+00:10:38,960 --> 00:10:42,080
+the PowerPoint slides that
+are associated with that, the
+
+149
+00:10:42,080 --> 00:10:46,460
+animation, and the labs project.
+So you can do well there. But
+
+150
+00:10:46,460 --> 00:10:48,820
+for those of you who want to
+take it one step further, it's
+
+151
+00:10:48,820 --> 00:10:50,960
+this part of the course where
+you can start to use the Ben
+
+152
+00:10:50,960 --> 00:10:55,660
+Ghosn book that I highly recommend.
+And if it's available for
+
+153
+00:10:55,660 --> 00:10:58,140
+free, there's an announcement
+that will be made for that.
+
+154
+00:10:58,300 --> 00:11:02,920
+Ben Ghosn has only about three
+pages on the update statement. It
+
+155
+00:11:02,920 --> 00:11:05,780
+has everything that we've covered
+for this particular class,
+
+156
+00:11:05,780 --> 00:11:09,940
+so update using the where clause,
+but it has a small section on
+
+157
+00:11:09,940 --> 00:11:13,300
+update based on a join. How do
+you do an update based on a join?
+
+158
+00:11:13,400 --> 00:11:17,800
+And then it has a few related topics
+that we don't cover in 5300, for
+
+159
+00:11:17,800 --> 00:11:21,620
+instance, merging data. And so I
+would highly recommend for those that
+
+160
+00:11:21,620 --> 00:11:25,120
+are motivated that have a passion
+for SQL is to start to use the Ben
+
+161
+00:11:25,120 --> 00:11:29,700
+-Gon book to complement the current
+instruction that is provided online.
+
+162
+00:11:31,000 --> 00:11:35,260
+And now I recommend that you watch
+the nightclub SQL simulation.
+
+163
+00:11:35,260 --> 00:11:39,840
+In this case, Randy and Sandy
+control the entire world using
+
+164
+00:11:40,970 --> 00:11:44,040
+OLTP. I hope you enjoy that,
+and I hope that it helps to
+
+165
+00:11:44,040 --> 00:11:46,920
+reinforce the concepts that
+we're learning as well. So the
+
+166
+00:11:46,920 --> 00:11:49,100
+course is set up to help
+complement those different learning
+
+167
+00:11:49,100 --> 00:11:52,580
+styles. So we have the
+traditional lecture demonstration.
+
+168
+00:11:52,580 --> 00:11:55,460
+Along with that, you have
+the labs to reinforce that.
+
+169
+00:11:55,740 --> 00:11:59,190
+And then you have the animations,
+which is a different modality
+
+170
+00:11:59,190 --> 00:12:03,020
+that hopefully will help you
+remember the concept longer term.
+
+171
+00:12:03,020 --> 00:12:06,600
+And then finally, for some of
+you, the Ben-Gon book is a great
+
+172
+00:12:06,600 --> 00:12:11,000
+supplement to help round out your
+knowledge of a particular topic.
+
+173
+00:12:11,340 --> 00:12:16,640
+The culminating project for this
+module is the SQL internship,
+
+174
+00:12:16,800 --> 00:12:19,860
+Soda or Pop. We're doing a
+simple study to determine
+
+175
+00:12:19,860 --> 00:12:24,140
+whether you say pop or soda.
+I'm from Montana, and so
+
+176
+00:12:24,140 --> 00:12:27,340
+I tend to say POP, but it
+varies based on your states.
+
+177
+00:12:27,340 --> 00:12:32,080
+And for this, we will cover briefly
+normalization, ER diagramming,
+
+178
+00:12:32,160 --> 00:12:37,220
+your DDLDML, altering tables,
+updating, and deleting different
+
+179
+00:12:37,220 --> 00:12:40,280
+information. So here are the project
+goals that are also described
+
+180
+00:12:40,280 --> 00:12:43,740
+under the project design. But in
+order to complete this particular
+
+181
+00:12:43,740 --> 00:12:48,900
+task, you'll be using OLTP in order
+to solve this particular project
+
+182
+00:12:48,900 --> 00:12:53,840
+and get the data clean and ready
+to go to analyze for the study.
+
+183
+00:12:53,840 --> 00:12:58,540
+Best of luck to you as you
+learn. Get down with OLTP, and we
+
+184
+00:12:58,540 --> 00:13:02,320
+will see you for the exam review.
+Have a great day. Take care.
+
+185
+00:13:03,020 --> 00:13:08,000
+Yeah, SQL Online Transaction
+Processing. Who's down?
+
+186
+00:13:08,900 --> 00:13:10,780
+You down with OLTP?
+
+187
+00:13:11,160 --> 00:13:15,740
+you down with OLTP you down with OLTP
+
+188
+00:13:16,120 --> 00:13:18,140
+who's down with OLTP

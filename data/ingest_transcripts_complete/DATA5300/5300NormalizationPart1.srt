@@ -1,0 +1,1600 @@
+1
+00:00:07,640 --> 00:00:10,100
+Hey, Dr. Corcoran, I've
+got one for you. What
+
+2
+00:00:10,100 --> 00:00:14,160
+do you call somebody
+with no body and no nose?
+
+3
+00:00:14,460 --> 00:00:15,720
+Nobody knows.
+
+4
+00:00:16,340 --> 00:00:17,600
+Wait, what?
+
+5
+00:00:17,600 --> 00:00:19,060
+You got one for me?
+
+6
+00:00:19,240 --> 00:00:21,520
+What do you call a company that's looking
+
+7
+00:00:21,520 --> 00:00:23,980
+for students to understand normalization?
+
+8
+00:00:24,680 --> 00:00:28,220
+Nobody knows because Mills
+teaches it? Oh, brother.
+
+9
+00:00:28,220 --> 00:00:29,440
+Listen, I got to go.
+
+10
+00:00:29,440 --> 00:00:30,760
+Thanks. Take care. Bye-bye.
+
+11
+00:00:32,500 --> 00:00:37,280
+Hey, everyone. Welcome to
+Module 2 on normalization. Super
+
+12
+00:00:37,280 --> 00:00:39,840
+excited for this topic. It
+tends to be one of the more
+
+13
+00:00:39,840 --> 00:00:42,920
+difficult topics of the semester.
+But hopefully you've got
+
+14
+00:00:42,920 --> 00:00:46,640
+your thinking cap on, you're
+ready to go, and let's do this.
+
+15
+00:00:46,840 --> 00:00:51,180
+So today we'll have after class,
+and for the online class, module
+
+16
+00:00:51,180 --> 00:00:55,480
+two, think of video activity quiz.
+So you'll take the video activity
+
+17
+00:00:55,480 --> 00:00:58,880
+quiz to reinforce some of the
+concepts that we'll cover today.
+
+18
+00:00:58,880 --> 00:01:02,800
+And then the equivalent on Thursday
+of this week, at least for the on
+
+19
+00:01:02,800 --> 00:01:06,520
+-campus students, we have lab one.
+So later this week after the video
+
+20
+00:01:06,520 --> 00:01:10,920
+and learning about normalization,
+you'll go through lab one. I'm also
+
+21
+00:01:10,920 --> 00:01:16,200
+excited today we have a great
+animation video on normalization and
+
+22
+00:01:16,200 --> 00:01:20,060
+specifically a new topic I'll cover.
+We'll cover after the animation.
+
+23
+00:01:20,070 --> 00:01:24,480
+But what we've done over the
+summer is taken some of the more
+
+24
+00:01:24,480 --> 00:01:27,680
+difficult topics and put them into
+an animation where I can write
+
+25
+00:01:27,680 --> 00:01:32,520
+word by word and create the script
+so that it's exactly the right
+
+26
+00:01:32,960 --> 00:01:37,020
+structure, format, content that
+I want to cover, as opposed
+
+27
+00:01:37,020 --> 00:01:40,040
+to rambling through a typical
+discussion or presentation.
+
+28
+00:01:40,640 --> 00:01:45,620
+So why do we normalize? If you think
+about a spreadsheet we talked about
+
+29
+00:01:45,620 --> 00:01:48,820
+the first week, a spreadsheet,
+you can contain a lot of different
+
+30
+00:01:48,820 --> 00:01:53,760
+columns. You can contain different
+themes. You could have, for instance,
+
+31
+00:01:54,380 --> 00:01:57,480
+Dr. Sigurd, if she had
+more than one phone number,
+
+32
+00:01:57,480 --> 00:02:00,580
+you could just give her this
+next row, leave all of this
+
+33
+00:02:00,580 --> 00:02:03,240
+blank, and put a phone
+number here. That's common.
+
+34
+00:02:03,380 --> 00:02:05,400
+Sometimes in a spreadsheet, you can put
+
+35
+00:02:05,400 --> 00:02:07,580
+two pieces of information in a cell.
+
+36
+00:02:08,160 --> 00:02:10,960
+But none of that is
+allowed in a database.
+
+37
+00:02:11,120 --> 00:02:16,180
+So first, delete anomalies. What
+happens if we delete something. So
+
+38
+00:02:16,180 --> 00:02:20,320
+Reagan is now on our faculty. She
+was a former teaching assistant
+
+39
+00:02:20,320 --> 00:02:23,560
+as a student and then a graduate
+student and she finished her PhD.
+
+40
+00:02:23,560 --> 00:02:30,280
+But if we get rid of Reagan, this
+entire row, then we're left with
+
+41
+00:02:30,280 --> 00:02:35,700
+locker three being destroyed as
+well. And so sometimes if you
+
+42
+00:02:35,700 --> 00:02:40,270
+delete an entire row, then you
+lose information and have a delete
+
+43
+00:02:40,270 --> 00:02:43,820
+anomaly. Or if you just delete part
+of it, then you have a bunch of
+
+44
+00:02:43,820 --> 00:02:48,240
+null values. And as we go through
+both 33 and 4330, you'll see why
+
+45
+00:02:48,240 --> 00:02:51,720
+null values can be problematic and
+should be avoided when possible.
+
+46
+00:02:52,000 --> 00:02:53,920
+As for an update anomaly,
+
+47
+00:02:54,420 --> 00:02:56,080
+if we need to update the,
+
+48
+00:02:56,180 --> 00:02:58,660
+apparently they have the same
+number, but if we need to update
+
+49
+00:02:58,660 --> 00:03:01,720
+a phone number, we have to make
+sure we update it everywhere.
+
+50
+00:03:01,960 --> 00:03:06,380
+And in a database, you want to
+have as few of updates as possible.
+
+51
+00:03:06,380 --> 00:03:10,820
+In Canvas even, as we provide
+dates in different modules,
+
+52
+00:03:10,920 --> 00:03:14,200
+when we update the course, we have
+to go through and find every time
+
+53
+00:03:14,200 --> 00:03:17,480
+we put that data and update it or
+if we link the syllabus in several
+
+54
+00:03:17,480 --> 00:03:20,840
+places we have to go find that
+syllabus and try to update it and
+
+55
+00:03:20,840 --> 00:03:24,940
+ultimately we tend to have problems
+for a class to have a few problems
+
+56
+00:03:24,940 --> 00:03:29,380
+not a big deal but in a database
+the data needs to be accurate and
+
+57
+00:03:29,380 --> 00:03:33,640
+then if we have an insert anomaly
+we also run into a similar problem
+
+58
+00:03:34,180 --> 00:03:39,340
+we want to insert just a locker if
+we do that then we have some null
+
+59
+00:03:39,340 --> 00:03:43,340
+values if we want to insert just a
+student then we have a bunch of locker
+
+60
+00:03:43,340 --> 00:03:47,140
+null values and so in this particular
+case we go back to that rule of
+
+61
+00:03:47,140 --> 00:03:51,420
+one or one theme where we will
+eventually have what looks like a student
+
+62
+00:03:51,420 --> 00:03:56,560
+theme and perhaps the arc has a
+locker system and so we have a locker
+
+63
+00:03:56,560 --> 00:04:00,740
+theme so ultimately we break these
+tables and that will help to avoid
+
+64
+00:04:00,740 --> 00:04:06,560
+these update delete and insert or
+unintended consequences All right.
+
+65
+00:04:07,320 --> 00:04:11,100
+This tends to be one of the most
+critical topics for the first exam.
+
+66
+00:04:11,100 --> 00:04:14,420
+And as a reminder, if you're
+struggling at all, please come in
+
+67
+00:04:14,420 --> 00:04:17,360
+during office hours. We're happy
+to sit down with you and just write
+
+68
+00:04:17,360 --> 00:04:21,460
+through example after example. But
+that calls for our class cheer.
+
+69
+00:04:21,600 --> 00:04:26,000
+Chigga, chigga, whole potato, half
+past alligator, bim bam, bolligata,
+
+70
+00:04:26,000 --> 00:04:30,760
+give three cheers for the happy
+sequel coders. Are we happy?
+
+71
+00:04:30,800 --> 00:04:35,680
+Not today. Sequel, sequel. Yes,
+yes, yes. Hopefully, after the
+
+72
+00:04:35,680 --> 00:04:39,340
+first exam, you'll be super happy
+because you learned normalization.
+
+73
+00:04:39,440 --> 00:04:43,040
+Looking back to the prior
+week on database principles,
+
+74
+00:04:43,040 --> 00:04:45,760
+there are a few topics that
+are critical for today.
+
+75
+00:04:45,860 --> 00:04:48,860
+The first one is when
+we talked about a table.
+
+76
+00:04:48,860 --> 00:04:51,640
+Looking forward, I mentioned
+this would be first normal
+
+77
+00:04:51,640 --> 00:04:56,500
+form. So let's briefly look
+through this slide from last week.
+
+78
+00:04:56,500 --> 00:04:59,540
+So we have one theme per
+table. We just discussed we'll
+
+79
+00:04:59,540 --> 00:05:02,540
+have a student theme and a
+locker theme and more if needed.
+
+80
+00:05:02,660 --> 00:05:07,320
+one piece of information per cell
+so we can only have one phone
+
+81
+00:05:07,320 --> 00:05:12,300
+number and by one piece of
+information you as the database person
+
+82
+00:05:12,300 --> 00:05:15,500
+decide what that value is we'll
+talk about that in a minute but in
+
+83
+00:05:15,500 --> 00:05:18,900
+this case a last name is appropriate
+a first name we wouldn't put
+
+84
+00:05:18,970 --> 00:05:24,640
+one cell for full name we can
+break it out later excuse me we can
+
+85
+00:05:24,640 --> 00:05:28,640
+put it back together later we
+can only have one row per record.
+
+86
+00:05:29,120 --> 00:05:33,600
+So again, Reagan, if she has a
+second phone number, we can't just
+
+87
+00:05:33,600 --> 00:05:38,520
+add a second phone number here.
+We also can't add a second phone
+
+88
+00:05:38,520 --> 00:05:42,640
+number here, and I'll show you why
+that is in just a minute, and then
+
+89
+00:05:42,640 --> 00:05:46,100
+one data type per column. So if
+this is all numeric, the data needs
+
+90
+00:05:46,100 --> 00:05:50,100
+to stay numeric. If it's character,
+it should stay character,
+
+91
+00:05:50,100 --> 00:05:54,240
+ideally. Second review point,
+primary key, and non-primary key. For
+
+92
+00:05:54,240 --> 00:05:59,540
+today, you can forget about clustered
+index, but key and non-key. A
+
+93
+00:05:59,540 --> 00:06:04,000
+key is a primary key. It's numeric,
+non-repeating, no meaning to the
+
+94
+00:06:04,000 --> 00:06:10,400
+user. A non-key is just a regular
+old columns value. So last name,
+
+95
+00:06:10,580 --> 00:06:15,000
+Mills, Heinz, Ostrom, that would
+be a non-key. That last name
+
+96
+00:06:15,000 --> 00:06:18,040
+doesn't determine anything else,
+so it's considered a non-key.
+
+97
+00:06:18,860 --> 00:06:23,780
+and then a candidate key a candidate
+key as a reminder is any column
+
+98
+00:06:23,780 --> 00:06:27,540
+that could be used as a primary key
+you can forget super key for this
+
+99
+00:06:27,540 --> 00:06:32,360
+discussion so locker number it's
+bait and everything will be based
+
+100
+00:06:32,360 --> 00:06:35,920
+on the data so locker number
+appears to be unique so this is a
+
+101
+00:06:35,920 --> 00:06:41,000
+candidate key locker serial number is
+also unique that could be a candidate
+
+102
+00:06:41,000 --> 00:06:46,200
+key location is not unique because
+we have two locations with A.
+
+103
+00:06:46,200 --> 00:06:50,220
+And then locker combo in our
+situation is unique. So we could argue
+
+104
+00:06:50,220 --> 00:06:54,160
+that we have three candidate keys,
+locker combo, locker serial number,
+
+105
+00:06:54,160 --> 00:06:57,870
+and locker number. In this case,
+we want to take the one that's
+
+106
+00:06:57,870 --> 00:07:01,560
+numeric, non-repeating, all three
+of them, and no meaning to the user.
+
+107
+00:07:01,580 --> 00:07:04,300
+Locker number tends to
+be the best of those.
+
+108
+00:07:04,620 --> 00:07:10,490
+And then finally, composite key. A
+composite key is a primary key that
+
+109
+00:07:10,490 --> 00:07:15,960
+combines two or more columns. to
+uniquely identify a row. We mentioned
+
+110
+00:07:15,960 --> 00:07:20,120
+bondo, where we would take one
+substance and another substance, mix it
+
+111
+00:07:20,170 --> 00:07:23,480
+up, and then you can paint on a roof.
+But there are two materials to begin
+
+112
+00:07:23,480 --> 00:07:28,080
+with for bondo to work properly. So
+in this case, we have a composite
+
+113
+00:07:28,080 --> 00:07:31,880
+primary key, and that becomes very
+important when we discuss second
+
+114
+00:07:31,880 --> 00:07:36,520
+normal form. So that's a review from
+last week that will hopefully help.
+
+115
+00:07:37,080 --> 00:07:43,440
+and now thinking caps on we move
+into normalization in this video
+
+116
+00:07:43,440 --> 00:07:47,580
+we'll cover the basics and first
+normal form and then in a follow-up
+
+117
+00:07:47,580 --> 00:07:51,200
+video we'll cover second third normal
+form and then take a quick look at
+
+118
+00:07:51,200 --> 00:07:54,840
+quick look at something called
+Boyce Cod normal form so the first
+
+119
+00:07:54,840 --> 00:07:58,980
+new key specific to normalization
+is called determination and we look
+
+120
+00:07:58,980 --> 00:08:04,400
+at two two terms a determinant
+and a functional dependency. And a
+
+121
+00:08:04,400 --> 00:08:08,900
+determinant is something that can
+determine the right side of the equation,
+
+122
+00:08:08,900 --> 00:08:12,600
+which is the functional dependency.
+So for instance, in this example
+
+123
+00:08:12,600 --> 00:08:16,380
+at the bottom of the screen, I
+have an item price and a quantity.
+
+124
+00:08:16,540 --> 00:08:20,700
+So if I have the item price
+and a quantity, I can determine
+
+125
+00:08:20,700 --> 00:08:24,640
+the total price. I would multiply
+item price times quantity,
+
+126
+00:08:24,640 --> 00:08:27,060
+and that would give us the
+total price for that item.
+
+127
+00:08:27,200 --> 00:08:32,580
+If I had in this diagram here, if
+I had my social security number,
+
+128
+00:08:32,620 --> 00:08:36,540
+My social security number would
+determine my last name, my
+
+129
+00:08:36,540 --> 00:08:41,020
+first name, my address, my
+zip code, and so forth. So the
+
+130
+00:08:41,020 --> 00:08:44,940
+determinant determines the
+functional dependencies, and the
+
+131
+00:08:44,940 --> 00:08:50,200
+functional dependencies are
+dependent on the determinant.
+
+132
+00:08:50,560 --> 00:08:53,700
+That becomes critically
+important in a moment. Here's a
+
+133
+00:08:53,700 --> 00:08:58,140
+couple more examples. So if I
+know color one is blue and I know
+
+134
+00:08:58,140 --> 00:09:02,120
+color two is yellow, these are
+the determinants. Everything
+
+135
+00:09:02,120 --> 00:09:04,780
+on the left side of the arrow
+are determinants. Anything
+
+136
+00:09:04,780 --> 00:09:07,160
+on the right side of the arrow
+are functional dependencies.
+
+137
+00:09:07,620 --> 00:09:12,100
+So, going back to second grade,
+blue and yellow make, da-da-da,
+
+138
+00:09:12,260 --> 00:09:13,060
+bing.
+
+139
+00:09:13,060 --> 00:09:14,020
+Is it green?
+
+140
+00:09:14,280 --> 00:09:17,140
+Took me an hour to get
+that little spinny thing.
+
+141
+00:09:17,700 --> 00:09:20,280
+So, left side determinants,
+right side functional
+
+142
+00:09:20,280 --> 00:09:22,500
+dependency. The green is
+functionally dependent on
+
+143
+00:09:22,500 --> 00:09:25,940
+both. This would be a
+composite, both blue and yellow.
+
+144
+00:09:26,280 --> 00:09:30,380
+So, this is an example of a composite
+primary key or composite determinant,
+
+145
+00:09:30,380 --> 00:09:34,240
+if you will. on the exam it'll be
+confusing at first but everything
+
+146
+00:09:34,240 --> 00:09:39,400
+is done in letters so blue and
+yellow may green how does this look
+
+147
+00:09:39,400 --> 00:09:43,800
+in what we call a b no p format it's
+just a very common way to look at
+
+148
+00:09:43,800 --> 00:09:48,020
+it sometimes i use a b d p c just for
+the name of the little booklet that
+
+149
+00:09:48,020 --> 00:09:51,700
+we created years ago but in this
+case what we're suggesting is if i
+
+150
+00:09:51,700 --> 00:09:55,100
+know a and b these are the determinants
+they're on the left side of the
+
+151
+00:09:55,100 --> 00:10:00,720
+arrow i can determine n so in this
+case as an example you would say a
+
+152
+00:10:00,720 --> 00:10:04,800
+and b would determine a and b together
+would determine n and sometimes
+
+153
+00:10:04,800 --> 00:10:08,380
+you'll ask well what is a and what
+is b and what is n on the exam you'll
+
+154
+00:10:08,380 --> 00:10:12,160
+just focus on the letters and that
+way you don't have to really think
+
+155
+00:10:12,160 --> 00:10:16,640
+through if i know this do i really
+can i really determine it you'll
+
+156
+00:10:16,640 --> 00:10:21,300
+know from the letters exactly what's
+happening so in this case you'll know
+
+157
+00:10:21,300 --> 00:10:25,320
+that a and b determines n what is
+a and b could be anything in this
+
+158
+00:10:25,320 --> 00:10:29,940
+case it could be blue and it could
+be yellow and it determines green.
+
+159
+00:10:29,940 --> 00:10:35,160
+It could be your student ID and your
+course ID, and both of those together
+
+160
+00:10:35,160 --> 00:10:39,840
+determine your grade. So your grade
+is determined on both A and B.
+
+161
+00:10:39,840 --> 00:10:44,180
+Or just your student number alone,
+we get rid of the B, student number
+
+162
+00:10:44,180 --> 00:10:48,240
+alone determines, again, last name,
+first name, address, and so forth.
+
+163
+00:10:48,240 --> 00:10:52,150
+So that's determinant, functional
+dependency. Those are important for
+
+164
+00:10:52,150 --> 00:10:55,600
+normalization, along with the prior
+information that we just discussed.
+
+165
+00:10:56,160 --> 00:10:58,120
+In this case, student ID
+
+166
+00:10:58,280 --> 00:11:02,380
+If I know the student ID, I would
+know the last name, the first name.
+
+167
+00:11:02,520 --> 00:11:06,080
+And if this were the database
+table, I would know the locker
+
+168
+00:11:06,080 --> 00:11:08,390
+number, I would know the location,
+and I would know the manager
+
+169
+00:11:08,390 --> 00:11:11,200
+phone. And that seems confusing
+because you think, wait, we have
+
+170
+00:11:11,200 --> 00:11:13,880
+two themes, we're going to break
+this out. And the answer is yes.
+
+171
+00:11:13,980 --> 00:11:19,840
+But if I ask you, what's student
+3's last name, you can look at it,
+
+172
+00:11:20,240 --> 00:11:22,480
+and you would say, oh, Sigurd.
+
+173
+00:11:22,680 --> 00:11:26,760
+But if you said, well, what
+is student ID 3's location,
+
+174
+00:11:27,140 --> 00:11:30,880
+even though it's somewhat unrelated
+you go oh it must be a and
+
+175
+00:11:30,880 --> 00:11:34,140
+what's their manager phone number
+for student three so because this
+
+176
+00:11:34,140 --> 00:11:38,980
+is numeric non-repeating and no
+meaning to the user or mainly because
+
+177
+00:11:38,980 --> 00:11:42,860
+it's non-repeating it is a
+determinant on itself independently
+
+178
+00:11:42,860 --> 00:11:45,540
+and you can do the same thing
+with locker number locker number
+
+179
+00:11:45,540 --> 00:11:50,460
+determines everything in this
+particular case and this when we get to
+
+180
+00:11:50,460 --> 00:11:54,020
+next week this is our only look
+ahead is we will be creating er
+
+181
+00:11:54,020 --> 00:11:59,360
+diagrams that look something like
+this and this is how our determinants
+
+182
+00:11:59,360 --> 00:12:03,200
+and functional dependencies work
+student id is the primary key
+
+183
+00:12:03,200 --> 00:12:06,820
+it's the determinant and it alone
+determines your last name your
+
+184
+00:12:06,820 --> 00:12:11,100
+first name and your major how this
+would look in terms of the a b n
+
+185
+00:12:11,100 --> 00:12:15,920
+o p notation is a what is a doesn't
+really matter but think about
+
+186
+00:12:15,920 --> 00:12:20,600
+it as student id if you want a
+best case or a real case scenario,
+
+187
+00:12:20,900 --> 00:12:23,500
+but A determines B, N, and O.
+
+188
+00:12:23,700 --> 00:12:29,240
+B is a non-key, A is a non-key,
+and O is a non-key. And without any
+
+189
+00:12:29,240 --> 00:12:32,000
+additional information, we can't
+really tell if this is normalized
+
+190
+00:12:32,000 --> 00:12:35,900
+or not, but in this case, we assume
+it's normalized until we hear
+
+191
+00:12:35,900 --> 00:12:40,980
+differently. On the exam, the only
+way you can tell if it's not is
+
+192
+00:12:41,020 --> 00:12:43,600
+if, and it'll look a little bit
+different than this, I'll show you
+
+193
+00:12:43,600 --> 00:12:47,400
+in a minute, but if we have more
+information, for instance, B alone
+
+194
+00:12:47,400 --> 00:12:51,590
+determines N, then we can look at
+what that problem, what type of
+
+195
+00:12:51,590 --> 00:12:55,040
+normalization problem that will
+be. That'll be in the next. This is
+
+196
+00:12:55,100 --> 00:12:58,920
+the DROP acronym, and this
+is what we'll use in class. I
+
+197
+00:12:58,920 --> 00:13:01,480
+did come up with a DROP. I used
+to have more letters because
+
+198
+00:13:01,480 --> 00:13:04,280
+there are a few other items,
+but these are the main
+
+199
+00:13:04,280 --> 00:13:08,740
+ones to determine first normal
+form. So given an overview,
+
+200
+00:13:09,170 --> 00:13:13,080
+normalization, you would first
+determine if you're in first normal
+
+201
+00:13:13,080 --> 00:13:16,240
+form. If you are, then you
+can look at, are we in second
+
+202
+00:13:16,240 --> 00:13:20,840
+normal form? If you are, then you
+can look at third. Now to be in
+
+203
+00:13:20,840 --> 00:13:23,720
+second normal form, you first
+have to be in first normal form.
+
+204
+00:13:23,720 --> 00:13:26,540
+So if you're not in first normal
+form, you're done. You stop and
+
+205
+00:13:26,540 --> 00:13:30,990
+you fix it. If you're in first
+normal form and in second normal
+
+206
+00:13:30,990 --> 00:13:33,540
+form, then you can look to see
+if you're in third normal form.
+
+207
+00:13:33,540 --> 00:13:36,980
+If you're not in second normal
+form, forget it. Stop, fix it. Same
+
+208
+00:13:36,980 --> 00:13:39,200
+thing. Third normal form, you
+can look at the final one that we
+
+209
+00:13:39,200 --> 00:13:42,580
+cover is Boyce Cod normal form
+at the very, in the second video.
+
+210
+00:13:42,740 --> 00:13:46,740
+But I don't usually use acronyms
+because as you know, you'll go to a
+
+211
+00:13:46,740 --> 00:13:50,580
+training workshop and they'll be
+like and today's acronym is wonderful
+
+212
+00:13:50,580 --> 00:13:57,260
+and w stands for whatever right but
+the drop acronym i think is really
+
+213
+00:13:57,260 --> 00:14:02,720
+helpful for the exam so here it is
+first a data type consistency with
+
+214
+00:14:02,720 --> 00:14:08,660
+columns that goes back to that table
+where if the data type is numeric
+
+215
+00:14:08,660 --> 00:14:13,740
+all of the values have to be numeric
+if the data type are excuse me
+
+216
+00:14:13,740 --> 00:14:16,880
+if the data type is character then
+it would all have to be character.
+
+217
+00:14:17,300 --> 00:14:21,400
+That's the first one. So the data
+type consistency within the columns.
+
+218
+00:14:21,560 --> 00:14:23,240
+Second one is R,
+
+219
+00:14:23,240 --> 00:14:25,140
+no repeating groups.
+
+220
+00:14:25,420 --> 00:14:29,940
+Let me jump back to the slide
+before. So no repeating groups.
+
+221
+00:14:29,940 --> 00:14:32,900
+There are a couple ways to do
+it, both in row format and in
+
+222
+00:14:32,900 --> 00:14:36,980
+column format. In this particular
+case, I have a repeating group
+
+223
+00:14:36,980 --> 00:14:41,200
+right here. Pete Ostrom, he
+has a home phone and you think,
+
+224
+00:14:41,380 --> 00:14:44,580
+well, he has another phone. So
+let's just give him this whole row.
+
+225
+00:14:44,720 --> 00:14:48,540
+That's a repeating group. We're
+repeating his phone number on rows.
+
+226
+00:14:48,540 --> 00:14:51,620
+We can't do that. The other thing
+we can't do, though, is I can't
+
+227
+00:14:51,620 --> 00:14:55,780
+create another column called phone
+number two and then add Pete's
+
+228
+00:14:55,780 --> 00:14:58,720
+second phone number here. That's
+also a repeating group. So
+
+229
+00:14:58,720 --> 00:15:01,480
+repeating groups is just when you
+either try to hog a column, an extra
+
+230
+00:15:01,480 --> 00:15:05,060
+column, or hog an extra row
+trying to give them more than one
+
+231
+00:15:05,060 --> 00:15:07,940
+piece of information. Because as
+a reminder, you can only have one
+
+232
+00:15:07,940 --> 00:15:12,820
+piece of information per cell,
+per row, per column, for instance,
+
+233
+00:15:13,200 --> 00:15:14,600
+not per column.
+
+234
+00:15:15,940 --> 00:15:20,180
+One, D-R-O, one entry per cell.
+
+235
+00:15:21,220 --> 00:15:26,220
+And in this example, Sam, no, you
+have more than one. So because we
+
+236
+00:15:26,220 --> 00:15:30,060
+can't have repeating groups, the phone
+number can't take another row and
+
+237
+00:15:30,060 --> 00:15:32,820
+the phone number can't take another
+column, for instance, phone two,
+
+238
+00:15:32,820 --> 00:15:36,140
+we can't just smush them together
+and separate them by a So you can't
+
+239
+00:15:36,140 --> 00:15:39,580
+put two phone numbers together. So
+this would be an example of the O,
+
+240
+00:15:39,580 --> 00:15:41,880
+one piece of information per cell.
+
+241
+00:15:42,020 --> 00:15:44,880
+If they also had their first
+and last name in one cell,
+
+242
+00:15:44,880 --> 00:15:48,880
+that would also violate one
+piece of information per cell.
+
+243
+00:15:50,040 --> 00:15:54,520
+And I call this the atomic drop,
+because how do you determine,
+
+244
+00:15:55,500 --> 00:15:59,660
+how do you determine what
+an atomic attribute is? How
+
+245
+00:15:59,660 --> 00:16:02,200
+do you determine what one
+piece of information is?
+
+246
+00:16:02,520 --> 00:16:04,780
+Ultimately, that's up to you
+as the database developer.
+
+247
+00:16:05,520 --> 00:16:07,040
+But there are conventions.
+
+248
+00:16:07,040 --> 00:16:10,040
+So, for instance, on the
+left side, if you think
+
+249
+00:16:10,040 --> 00:16:14,260
+about an, I guess I have
+a kind of an atom up here.
+
+250
+00:16:14,260 --> 00:16:17,280
+In the atom, we have some
+protons and neutrons.
+
+251
+00:16:17,400 --> 00:16:21,060
+And so if you think about
+that, the student name,
+
+252
+00:16:21,060 --> 00:16:23,960
+in this case, we're using
+their entire student name.
+
+253
+00:16:23,960 --> 00:16:26,800
+So that may be looking at
+not the atomic value, but
+
+254
+00:16:26,800 --> 00:16:29,020
+maybe like a molecule, right,
+which consists of multiple
+
+255
+00:16:29,020 --> 00:16:31,700
+atoms. So that's too much,
+too much information there.
+
+256
+00:16:31,800 --> 00:16:35,000
+Last name, perfect, it
+looks just like the atom.
+
+257
+00:16:35,000 --> 00:16:38,240
+So here we have one last
+name, one for everybody.
+
+258
+00:16:38,240 --> 00:16:41,340
+But if we think, well, let's really
+get atomic and start using just
+
+259
+00:16:41,340 --> 00:16:44,100
+their first letter for a column,
+that's where you start to get
+
+260
+00:16:44,100 --> 00:16:48,140
+into maybe like the quarks or
+something, and so it's too detailed. So
+
+261
+00:16:48,140 --> 00:16:51,000
+the idea of the atomic attribute,
+it's up to you as the database
+
+262
+00:16:51,000 --> 00:16:54,020
+developer, it's just what is a
+reasonable one piece of information
+
+263
+00:16:54,020 --> 00:16:57,480
+per cell? So in this case, last
+name would be exactly right. That's
+
+264
+00:16:57,480 --> 00:17:01,460
+what atomic means, it's just the
+best value, the most basic value
+
+265
+00:17:01,460 --> 00:17:05,540
+that you can't divide further,
+but by that it means in a database
+
+266
+00:17:05,540 --> 00:17:08,780
+context, because of course everything
+seems to divide further and
+
+267
+00:17:08,780 --> 00:17:12,820
+further. On the screen is an example
+of the data type consistency.
+
+268
+00:17:13,550 --> 00:17:17,100
+Just as a reminder, within a
+column, the data types have to be
+
+269
+00:17:17,100 --> 00:17:19,740
+the same. So if you're using
+characters, you use characters.
+
+270
+00:17:19,740 --> 00:17:23,280
+If you're using numeric, in fact,
+this wouldn't be allowed either.
+
+271
+00:17:23,280 --> 00:17:25,920
+This would be multi. This would
+break the data type consistency
+
+272
+00:17:25,920 --> 00:17:30,740
+along with the repeating
+groups. So that's an example of
+
+273
+00:17:30,740 --> 00:17:34,860
+the D in drop problem, the
+repeating group we've talked about.
+
+274
+00:17:34,970 --> 00:17:37,080
+On the bottom of the
+screen, this is how a
+
+275
+00:17:37,080 --> 00:17:39,340
+repeating group would
+look like on the exam.
+
+276
+00:17:39,540 --> 00:17:44,860
+So we have table 1, A is a primary
+key. We'll talk about that in
+
+277
+00:17:44,860 --> 00:17:50,460
+a minute. It's underlined. And then
+B1, B2, B3, these would represent
+
+278
+00:17:50,460 --> 00:17:54,300
+columns. But what we're trying
+here, perhaps, would be here's
+
+279
+00:17:54,300 --> 00:17:57,440
+phone number 1, here's phone number
+2, and here's phone number 3.
+
+280
+00:17:57,660 --> 00:17:59,880
+That's not allowed
+because what if somebody
+
+281
+00:17:59,880 --> 00:18:02,560
+has no phone at all? Then
+we have a null value.
+
+282
+00:18:02,560 --> 00:18:05,160
+What if they have 10 phones?
+
+283
+00:18:05,160 --> 00:18:07,600
+Not only one null value, we'd
+have three null values. And
+
+284
+00:18:07,600 --> 00:18:10,780
+what if they have 10 phones?
+This database no longer works.
+
+285
+00:18:10,780 --> 00:18:12,900
+So we would redesign it so
+that it would work for that.
+
+286
+00:18:13,180 --> 00:18:17,380
+This would be an example of
+a repeating group in terms
+
+287
+00:18:17,380 --> 00:18:20,800
+of the ABNOP format that
+you would see on the exam.
+
+288
+00:18:21,780 --> 00:18:24,920
+One entry per cell, the O,
+we've talked about that. You
+
+289
+00:18:24,920 --> 00:18:27,860
+can only have the atomic value
+that you determined. so one
+
+290
+00:18:27,860 --> 00:18:31,700
+phone number you wouldn't put
+the dash there either in most
+
+291
+00:18:31,700 --> 00:18:34,800
+cases we'll talk about that
+a little bit later but most
+
+292
+00:18:34,800 --> 00:18:38,320
+of the time the application
+would provide the formatting
+
+293
+00:18:38,780 --> 00:18:44,780
+instead of the database and then p
+is determined by the underlined one
+
+294
+00:18:44,780 --> 00:18:49,550
+primary key here student id so we
+have a primary key established and
+
+295
+00:18:49,900 --> 00:18:54,700
+this is the ultimate rule for
+normalization for us is the rule that
+
+296
+00:18:54,700 --> 00:18:58,960
+all determinants are candidate keys.
+And I'll show examples of this.
+
+297
+00:18:58,960 --> 00:19:02,600
+But as a reminder, the determinant
+is on the left side of the arrow.
+
+298
+00:19:03,440 --> 00:19:06,820
+And if it's on the left side of
+the arrow, if it's a determinant,
+
+299
+00:19:06,820 --> 00:19:10,860
+it has to determine everything.
+So we'll discuss that.
+
+300
+00:19:11,220 --> 00:19:12,740
+Here's an example,
+
+301
+00:19:13,120 --> 00:19:14,840
+ABNOP.
+
+302
+00:19:15,660 --> 00:19:20,080
+In this case, AB, the composite primary,
+
+303
+00:19:20,360 --> 00:19:23,260
+determines everything else, NOP.
+
+304
+00:19:23,640 --> 00:19:27,040
+In this case, all
+determinants are a candidate
+
+305
+00:19:27,040 --> 00:19:29,370
+key, unless if we have more information.
+
+306
+00:19:29,900 --> 00:19:31,560
+Here's another example.
+
+307
+00:19:32,320 --> 00:19:34,580
+AB determines NOP.
+
+308
+00:19:34,740 --> 00:19:39,500
+P determines ABNO. P
+determines everything.
+
+309
+00:19:39,560 --> 00:19:41,560
+So in this case, you can see we had some
+
+310
+00:19:41,560 --> 00:19:44,600
+candidate keys. P could
+have been a candidate key.
+
+311
+00:19:44,600 --> 00:19:46,080
+AB was selected.
+
+312
+00:19:46,180 --> 00:19:49,360
+Usually you don't, but in
+this case it's a composite.
+
+313
+00:19:49,360 --> 00:19:52,280
+But as long as P determines
+everything, it's a
+
+314
+00:19:52,280 --> 00:19:55,020
+determinant, it determines
+everything, it's okay.
+
+315
+00:19:56,700 --> 00:20:00,400
+A, B, N, O, P, N determines,
+
+316
+00:20:00,950 --> 00:20:04,360
+well, first of all, A, B
+determines N, O, P, because it's
+
+317
+00:20:04,360 --> 00:20:07,820
+a composite primary, so we have
+one candidate key, which is
+
+318
+00:20:07,820 --> 00:20:10,840
+a primary key, but we also
+have N, and we have to make
+
+319
+00:20:10,840 --> 00:20:15,360
+sure N is a candidate key. N
+determines A, B, N, A, B, O, P,
+
+320
+00:20:15,360 --> 00:20:19,500
+then it's okay. As an example, looking
+forward to the next video, though,
+
+321
+00:20:19,500 --> 00:20:24,100
+if N alone determines P, did we
+have a problem so as long as it
+
+322
+00:20:24,100 --> 00:20:31,200
+determines everything it's okay and
+then finally here's an example a b n
+
+323
+00:20:31,200 --> 00:20:38,580
+o p a b the composite primary key
+determines n o p but in this case n
+
+324
+00:20:38,580 --> 00:20:42,640
+alone determines p and this is
+problematic and we will fix that that
+
+325
+00:20:42,640 --> 00:20:45,940
+it will be a different kind of normal
+form all right i'll pause the video
+
+326
+00:20:45,940 --> 00:20:49,760
+here and we'll pick up on part two
+talking about second normal form
+
+327
+00:20:51,460 --> 00:20:53,260
+Thank you.

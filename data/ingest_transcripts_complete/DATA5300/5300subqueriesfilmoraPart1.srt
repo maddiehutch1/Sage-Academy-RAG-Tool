@@ -1,0 +1,1117 @@
+1
+00:00:12,060 --> 00:00:17,340
+Luke, a subquery is a
+query inside of a query,
+
+2
+00:00:17,480 --> 00:00:21,680
+similar to how the
+force is inside of you.
+
+3
+00:00:21,880 --> 00:00:25,840
+Watch this video on subqueries in case
+
+4
+00:00:25,840 --> 00:00:29,620
+your whole Jedi gig doesn't pan out.
+
+5
+00:00:29,680 --> 00:00:34,180
+May the force and subqueries
+be with you always.
+
+6
+00:00:34,620 --> 00:00:39,830
+And cut. Oh boy, that was the worst
+job ever. We need better actors.
+
+7
+00:00:39,830 --> 00:00:44,480
+Would somebody please see if Fidel
+is available? We need to up our game.
+
+8
+00:00:44,620 --> 00:00:48,600
+Nobody's going to want to learn
+SQL unless these videos improve.
+
+9
+00:00:49,940 --> 00:00:53,730
+Welcome back to Module 8 on Subqueries.
+
+10
+00:00:53,840 --> 00:00:58,600
+Subqueries are so important
+that even Luke Skywalker himself
+
+11
+00:00:58,600 --> 00:01:02,580
+may be learning subqueries just
+in case the whole Jedi thing
+
+12
+00:01:02,580 --> 00:01:06,340
+doesn't work out. This is on the
+screen a photo of Hannah Davies.
+
+13
+00:01:06,340 --> 00:01:09,890
+She's a former colleague, student
+of yours. We were in Clearwater,
+
+14
+00:01:09,890 --> 00:01:14,160
+Florida, where she helped give
+a conference presentation.
+
+15
+00:01:14,300 --> 00:01:17,960
+And I just happened to have
+the Data Fundamentals book
+
+16
+00:01:17,960 --> 00:01:22,020
+in our snorkeling gear, along
+with my daughter, Megan.
+
+17
+00:01:22,080 --> 00:01:26,740
+Megan's on the boat, and I posed
+this question to her, to Megan.
+
+18
+00:01:28,620 --> 00:01:31,520
+Hey, do you want to hear about
+self-contained surgeries?
+
+19
+00:01:31,520 --> 00:01:32,100
+No.
+
+20
+00:01:33,040 --> 00:01:39,020
+Sorry. and Megan did not want to
+hear about self-contained subqueries
+
+21
+00:01:40,440 --> 00:01:44,000
+but that's what we're going to
+cover today and they're called self
+
+22
+00:01:44,000 --> 00:01:49,080
+-contained subqueries and just as
+Vader said a subquery is a query
+
+23
+00:01:49,080 --> 00:01:54,680
+inside of a query and that's what
+makes it a subquery a query inside
+
+24
+00:01:54,680 --> 00:02:00,440
+of a query but they're also called
+self-contained subqueries and I'll
+
+25
+00:02:00,440 --> 00:02:03,440
+show you what that means in just a
+minute and And then in the advanced
+
+26
+00:02:03,440 --> 00:02:07,060
+class, 5310, we do a different kind
+of subquery called a correlated
+
+27
+00:02:07,060 --> 00:02:10,560
+subquery, which is not self
+-contained. Your deliverables for this
+
+28
+00:02:10,560 --> 00:02:13,640
+week include the blue triad, which
+again is to follow along with
+
+29
+00:02:13,640 --> 00:02:17,080
+code, copy the code into Word document
+as we go through the video, and
+
+30
+00:02:17,080 --> 00:02:21,240
+upload that just to show that you
+are following along. We also have
+
+31
+00:02:21,240 --> 00:02:28,820
+an animation on a topic called Exist,
+and Exist is a type of subquery
+
+32
+00:02:28,820 --> 00:02:33,800
+that uniquely stops once a single
+value that it's looking for
+
+33
+00:02:33,800 --> 00:02:37,200
+becomes true. And we'll have more
+about that, of course, later in a
+
+34
+00:02:37,200 --> 00:02:41,140
+different video. Part of that exists
+animation also has an associated
+
+35
+00:02:41,140 --> 00:02:44,920
+quiz that goes along with it. Again,
+you can retake the quiz as many
+
+36
+00:02:44,920 --> 00:02:49,760
+times as you need in order to get
+100%. And then if you're on campus
+
+37
+00:02:49,760 --> 00:02:53,620
+Thursday, we'll have the lab. If
+you're online, then the second part
+
+38
+00:02:53,620 --> 00:02:58,450
+of the week you'll work on lab
+four based entirely on subqueries.
+
+39
+00:03:00,510 --> 00:03:04,020
+All right we'll start out with
+the blue triad and this goes back
+
+40
+00:03:04,020 --> 00:03:08,620
+to module seven on joins. Here's
+the problem for you to solve and
+
+41
+00:03:08,620 --> 00:03:12,300
+we're using the university data
+set for this particular module.
+
+42
+00:03:12,620 --> 00:03:15,880
+Using a joined lists the
+last name of students that
+
+43
+00:03:15,880 --> 00:03:19,540
+have a locker in building
+B and go ahead and pause
+
+44
+00:03:19,540 --> 00:03:22,620
+the video and try to Solve
+that problem on your own.
+
+45
+00:03:22,800 --> 00:03:26,140
+This is similar to a problem
+that you'll have on the exam.
+
+46
+00:03:31,800 --> 00:03:34,900
+Let's take a look at it.
+Here's the solution. We have
+
+47
+00:03:34,900 --> 00:03:38,960
+select S. S is the alias for
+student, S dot last name.
+
+48
+00:03:39,340 --> 00:03:42,240
+From student is S, join Jim Locker is
+
+49
+00:03:42,240 --> 00:03:44,340
+GL. We put the two tables together.
+
+50
+00:03:44,520 --> 00:03:49,380
+On S dot student ID is equal to GL
+dot student ID, then the predicate
+
+51
+00:03:49,380 --> 00:03:54,040
+logic where GL, where the business
+where the locker location is building
+
+52
+00:03:54,040 --> 00:03:58,980
+B and so this is the solution to the
+blue triad number one and that is
+
+53
+00:03:58,980 --> 00:04:03,000
+using a join now we have two different
+sub queries that we're going to
+
+54
+00:04:03,000 --> 00:04:08,220
+cover today one of them and the first
+one we'll tackle is a type 2 sub
+
+55
+00:04:08,220 --> 00:04:13,460
+query and the typing is is is my
+way of categorizing these two types
+
+56
+00:04:13,460 --> 00:04:18,310
+of sub sub queries and by type 2 what
+I mean is the subquery will derive
+
+57
+00:04:18,310 --> 00:04:24,020
+information from two or more different
+tables, and so to do a type 2
+
+58
+00:04:24,020 --> 00:04:28,620
+subquery, you would ask yourself, is
+my output from one table, which you
+
+59
+00:04:28,620 --> 00:04:31,880
+can see in this case is true, it's
+from the student table, and do I
+
+60
+00:04:31,880 --> 00:04:35,600
+need information from another table,
+for instance, the gym locker, in
+
+61
+00:04:35,600 --> 00:04:39,540
+order to solve this problem? So if
+the answer to both of these are true,
+
+62
+00:04:39,640 --> 00:04:44,340
+then it could be a subquery that
+you use in order to solve that
+
+63
+00:04:44,340 --> 00:04:49,600
+problem. So let's take a look at the
+subquery and compare it to a join.
+
+64
+00:04:49,680 --> 00:04:53,880
+And one of the things, there's
+some amazing videos on YouTube, but
+
+65
+00:04:53,880 --> 00:04:58,180
+very few really demonstrate the
+difference between a subquery
+
+66
+00:04:58,180 --> 00:05:02,660
+and a join is very small. In fact,
+in some ways it's the way that
+
+67
+00:05:02,660 --> 00:05:05,440
+you're writing the code, the way
+that you're presenting the code.
+
+68
+00:05:05,440 --> 00:05:08,420
+If we look at the traditional
+join, remember we have
+
+69
+00:05:08,420 --> 00:05:11,520
+two parts. One are which
+tables you're going to
+
+70
+00:05:11,520 --> 00:05:15,460
+join. and then two is the
+primary foreign key link.
+
+71
+00:05:15,800 --> 00:05:19,400
+A subquery needs both of those
+pieces of information, which
+
+72
+00:05:19,400 --> 00:05:23,260
+tables, and then the primary
+foreign key link. However,
+
+73
+00:05:23,480 --> 00:05:29,180
+when you write the select last name,
+and because we say from student
+
+74
+00:05:29,180 --> 00:05:32,820
+only, you don't need to have the
+alias and you don't need the alias
+
+75
+00:05:32,820 --> 00:05:36,500
+up here. So this starts out similar,
+select student from last, excuse
+
+76
+00:05:36,500 --> 00:05:40,800
+me, select last name from student.
+And then the WHERE clause is
+
+77
+00:05:40,800 --> 00:05:44,420
+where our subqueries for this class
+are going to take place. So in the
+
+78
+00:05:44,420 --> 00:05:48,940
+WHERE clause is where we're going
+to indicate the second part of a
+
+79
+00:05:48,940 --> 00:05:53,200
+join, which is which primary foreign
+key links are we interested in.
+
+80
+00:05:53,200 --> 00:05:56,860
+So we'll initially say WHERE student ID,
+
+81
+00:05:56,860 --> 00:05:58,980
+and think of the join.
+We have student ID.
+
+82
+00:05:59,800 --> 00:06:02,980
+IN is going to be the link
+between the outer and the
+
+83
+00:06:02,980 --> 00:06:07,480
+inner subquery. so in and
+after the word in then we
+
+84
+00:06:07,480 --> 00:06:10,760
+start our subquery with the
+parentheses the word select
+
+85
+00:06:10,980 --> 00:06:16,320
+and then the next item would be
+that foreign key primary key link so
+
+86
+00:06:16,320 --> 00:06:22,260
+if we say where student id in
+select almost every time for us it's
+
+87
+00:06:22,260 --> 00:06:26,710
+going to be student id so if you
+think about the where clause student
+
+88
+00:06:26,710 --> 00:06:30,400
+id and student id represents that
+part of the join it's just written
+
+89
+00:06:30,400 --> 00:06:32,700
+a little bit differently and it's
+written after the end statement
+
+90
+00:06:32,700 --> 00:06:37,980
+and then we would indicate from and
+the second table where in the join
+
+91
+00:06:37,980 --> 00:06:41,860
+we join both tables on one line
+here we write the initial from the
+
+92
+00:06:41,860 --> 00:06:46,000
+student table we do the primary
+foreign key link and then we have from
+
+93
+00:06:46,000 --> 00:06:49,820
+the gym locker which would be
+the second table after that the
+
+94
+00:06:49,820 --> 00:06:53,460
+information we need is from another
+table being the gym locker table we
+
+95
+00:06:53,460 --> 00:06:57,840
+can end with our predicate logic
+where the locker location is equal
+
+96
+00:06:57,840 --> 00:07:02,560
+to building b now there is a
+difference between a scalar and multi
+
+97
+00:07:02,570 --> 00:07:07,640
+-valued subquery. And for this class,
+the difference for us is just going
+
+98
+00:07:07,640 --> 00:07:12,480
+to be this. If you see an equality
+symbol here, an equal symbol, we
+
+99
+00:07:12,480 --> 00:07:17,720
+know that we want just one row
+returned from the inner query to the
+
+100
+00:07:17,720 --> 00:07:22,160
+outer query. If it's multi-valued,
+think of n or anything else,
+
+101
+00:07:22,160 --> 00:07:25,810
+greater than, less than, all of those
+would be great for a multi-valued
+
+102
+00:07:25,810 --> 00:07:28,760
+subquery. And that just means
+you expect more than one piece of
+
+103
+00:07:28,760 --> 00:07:32,640
+information, more than one row to be
+provided back. And I'll show you in
+
+104
+00:07:32,850 --> 00:07:36,580
+SQL in just a minute, but what's
+happening is this inner query runs.
+
+105
+00:07:36,720 --> 00:07:40,160
+It provides the results to the
+outer query, similar to our
+
+106
+00:07:40,160 --> 00:07:43,400
+in that we learned earlier in
+the semester when we did single
+
+107
+00:07:43,400 --> 00:07:46,900
+table joins. So let me demonstrate
+this over in SQL Server.
+
+108
+00:07:47,020 --> 00:07:51,560
+I copied this code from the PDF
+document, and the PDF document
+
+109
+00:07:51,560 --> 00:07:56,160
+was made in Microsoft PowerPoint.
+And I just want to show you,
+
+110
+00:07:56,160 --> 00:08:01,420
+if you create something in
+PowerPoint or in Word, it will have
+
+111
+00:08:01,420 --> 00:08:06,240
+apostrophes with this fancy
+curve to it. And if it does, then
+
+112
+00:08:06,240 --> 00:08:10,400
+that code just doesn't work. If
+you double-click on the error
+
+113
+00:08:10,400 --> 00:08:13,620
+message, it shows there's some
+kind of problem up here. And in
+
+114
+00:08:13,620 --> 00:08:18,460
+that case, it just is referring
+to that fancy parenthesis or
+
+115
+00:08:18,460 --> 00:08:24,280
+apostrophe, which needs to be just
+plain like TXT document. Okay,
+
+116
+00:08:24,480 --> 00:08:26,920
+let's take a look at what
+we have here. We have
+
+117
+00:08:26,920 --> 00:08:30,520
+select last name from
+student, where student ID in.
+
+118
+00:08:31,520 --> 00:08:35,720
+This is where the subquery will
+begin. We have the primary key,
+
+119
+00:08:35,740 --> 00:08:45,730
+the in link, the parentheses,
+and then we start the subquery.
+
+120
+00:08:45,980 --> 00:08:49,300
+Now, in the Ben Ghosn book, he
+does talk a bit about how to format
+
+121
+00:08:49,300 --> 00:08:53,860
+your code, and there are some
+conventions. I'll let you go ahead and
+
+122
+00:08:53,860 --> 00:08:59,980
+read that. In our class, we're not
+critical about code. It should follow
+
+123
+00:08:59,980 --> 00:09:03,700
+a fairly logical pattern, but each
+company is going to have its own
+
+124
+00:09:03,780 --> 00:09:07,020
+standards for how the code
+should be written, and so we're
+
+125
+00:09:07,020 --> 00:09:10,000
+fairly flexible on that. There
+are some common conventions.
+
+126
+00:09:10,060 --> 00:09:14,200
+The keywords select from where
+are all completely capitalized
+
+127
+00:09:14,200 --> 00:09:19,480
+and so forth. And some of it
+is just for convenience of
+
+128
+00:09:19,480 --> 00:09:22,120
+tabbing in and making the code
+a little bit more readable.
+
+129
+00:09:22,120 --> 00:09:24,540
+Looking forward to the exam,
+though, you'll want to make
+
+130
+00:09:24,540 --> 00:09:27,200
+sure that any code that you
+write, don't worry about spaces
+
+131
+00:09:27,200 --> 00:09:32,920
+or tabs. Sometimes that can
+cause the exam, the proctorio,
+
+132
+00:09:32,920 --> 00:09:36,700
+and everything to fail when
+you're doing coding questions.
+
+133
+00:09:36,700 --> 00:09:40,660
+All right. So with this, let's
+take a look at what's happening.
+
+134
+00:09:40,680 --> 00:09:45,260
+We have this inner query, and earlier
+I called this a self-contained.
+
+135
+00:09:45,300 --> 00:09:49,860
+subquery. If I run this query,
+you can see that it provides this
+
+136
+00:09:49,860 --> 00:09:54,820
+information, a number of different
+rows, and what this is doing
+
+137
+00:09:54,820 --> 00:10:02,760
+technically is it's providing this
+information back similar to if
+
+138
+00:10:02,760 --> 00:10:12,120
+we had just said where student ID
+in and then 6 comma 39 comma 33
+
+139
+00:10:12,120 --> 00:10:17,000
+and so forth and if we put all of
+those in that would be the same.
+
+140
+00:10:17,200 --> 00:10:23,380
+Now when this runs the inner query
+when it feeds this information
+
+141
+00:10:23,380 --> 00:10:27,240
+to the outer query it does automatically
+distinct in the inner query.
+
+142
+00:10:27,240 --> 00:10:30,460
+So you technically don't have to
+do distinct in the inner query.
+
+143
+00:10:30,460 --> 00:10:34,100
+However, to make both a join and
+a subquery the same because joins
+
+144
+00:10:34,100 --> 00:10:37,800
+don't use distinct, you may have to
+use distinct in the outer subquery
+
+145
+00:10:37,860 --> 00:10:43,230
+because that's not automatically
+or default going to be considered
+
+146
+00:10:43,230 --> 00:10:47,100
+distinct. And so we have this
+information, what's happening. So
+
+147
+00:10:47,100 --> 00:10:51,700
+effectively, we take the inner query
+and we provide that information.
+
+148
+00:10:51,700 --> 00:10:55,100
+It's self-contained again
+because it can run on its own. It
+
+149
+00:10:55,100 --> 00:10:58,600
+provides that to the outer
+query, and that is conceptually
+
+150
+00:10:58,600 --> 00:11:02,860
+how a type 2 subquery works.
+All right, based on what we
+
+151
+00:11:02,860 --> 00:11:06,680
+just did, let's take a look
+at another blue triad. Show me
+
+152
+00:11:06,680 --> 00:11:11,350
+student's last name that received
+an award from 2010 to 2023.
+
+153
+00:11:12,560 --> 00:11:16,700
+And I have some of the code
+set up for you. And you'll also
+
+154
+00:11:16,700 --> 00:11:20,880
+need to solve code on the
+main page, again, for Canvas.
+
+155
+00:11:20,880 --> 00:11:24,060
+We do have the diagrams, but
+you'll need to have the diagrams
+
+156
+00:11:24,060 --> 00:11:26,800
+so you can see which table
+or tables we're connecting.
+
+157
+00:11:28,190 --> 00:11:30,760
+So go ahead and stop the
+video if you want to try this.
+
+158
+00:11:36,010 --> 00:11:38,510
+Here's the code for the
+blue try it, number two.
+
+159
+00:11:38,510 --> 00:11:42,150
+We have select last and first
+name of students that received
+
+160
+00:11:42,150 --> 00:11:45,290
+an award. So from the student
+table, this is the output
+
+161
+00:11:45,290 --> 00:11:47,790
+from one table. We do need
+information from another
+
+162
+00:11:47,790 --> 00:11:52,250
+table. So we notice that the
+primary foreign key between the
+
+163
+00:11:52,250 --> 00:11:55,690
+student table and the student
+award table is student ID.
+
+164
+00:11:55,770 --> 00:12:01,390
+So we'll use where student ID in
+and then select. and some of the
+
+165
+00:12:01,390 --> 00:12:04,650
+exam questions might even ask you
+what is the what's most likely going
+
+166
+00:12:04,650 --> 00:12:07,610
+to go after this inner select
+statement and the answer would be
+
+167
+00:12:07,610 --> 00:12:11,470
+whatever is after the where statement
+in this case student id from
+
+168
+00:12:11,470 --> 00:12:14,810
+the new table student award and
+then we have the predicate logic or
+
+169
+00:12:14,810 --> 00:12:20,690
+award year between 2010 and 2023
+so go ahead and paste that into the
+
+170
+00:12:20,690 --> 00:12:26,170
+document that you're creating the
+blue triad and then let's cover
+
+171
+00:12:26,170 --> 00:12:29,950
+a type one sub query and i think what
+i'll do is i'm going to introduce
+
+172
+00:12:29,950 --> 00:12:33,870
+type 1 subquery so that you
+have a initial introduction to a
+
+173
+00:12:33,870 --> 00:12:38,070
+type 2, initial introduction to a
+type 1, then I'll stop that video.
+
+174
+00:12:38,310 --> 00:12:42,590
+And then in video 2 I'll primarily
+have examples of different
+
+175
+00:12:42,610 --> 00:12:47,350
+subqueries, type 1 and type 2, along
+with subqueries that use three, four,
+
+176
+00:12:47,350 --> 00:12:50,590
+five different levels of subquery.
+So referring to four or five
+
+177
+00:12:50,590 --> 00:12:55,290
+different tables. All right, a type
+1 subquery is one where I don't have
+
+178
+00:12:55,290 --> 00:12:59,470
+you do a join before it because
+this type of subquery it requires
+
+179
+00:12:59,470 --> 00:13:03,610
+a subquery. And I call it a type
+1 because you just have one table
+
+180
+00:13:03,610 --> 00:13:07,350
+that you're dealing with. And in
+this case, we have, as you can see,
+
+181
+00:13:07,670 --> 00:13:11,070
+in fact, let me highlight
+this, and I'll copy this over
+
+182
+00:13:11,070 --> 00:13:15,110
+and bring SQL Server. And
+let me show you what I think
+
+183
+00:13:15,350 --> 00:13:19,350
+makes sense. And this is where
+students miss it on the exam sometimes.
+
+184
+00:13:19,530 --> 00:13:24,020
+So we have select cash prize and
+description from award, where cash
+
+185
+00:13:24,020 --> 00:13:28,010
+prize, and I think we want is
+greater than the average cash price?
+
+186
+00:13:28,250 --> 00:13:32,170
+Well, you know based on doing
+aggregate functions, you don't write
+
+187
+00:13:32,170 --> 00:13:40,410
+out the full word average, but you
+could say average cash price, and we
+
+188
+00:13:40,410 --> 00:13:44,770
+run this, and the challenge is it
+looks pretty good where cash price
+
+189
+00:13:44,770 --> 00:13:47,430
+is greater than the average cash
+price. Which table are we referring
+
+190
+00:13:47,430 --> 00:13:50,830
+to? Only the award table. That's
+all we've got. But if you run it,
+
+191
+00:13:51,570 --> 00:13:54,510
+it says that you can't
+use an aggregate in the
+
+192
+00:13:54,510 --> 00:13:58,030
+WHERE clause unless it's
+contained in a subquery.
+
+193
+00:13:58,390 --> 00:14:02,670
+So this is where a type 1
+subquery would come into effect.
+
+194
+00:14:02,670 --> 00:14:06,270
+You don't simply repeat it
+like we did for the type 2, but
+
+195
+00:14:06,270 --> 00:14:09,550
+what you would do is after
+this greater than is start your
+
+196
+00:14:09,650 --> 00:14:14,010
+inner query, which if I said
+show me the average cash price
+
+197
+00:14:14,010 --> 00:14:17,900
+from the award table, just that,
+you would likely say select
+
+198
+00:14:17,920 --> 00:14:26,970
+average cash price from award
+and we have to close that off.
+
+199
+00:14:27,350 --> 00:14:29,430
+On the exam you don't
+have the IntelliSense
+
+200
+00:14:29,430 --> 00:14:31,370
+showing that you properly closed it off.
+
+201
+00:14:31,790 --> 00:14:33,710
+And let's run this code
+
+202
+00:14:33,930 --> 00:14:38,250
+and now it's perfect. What this is
+showing is any of the awards that
+
+203
+00:14:38,250 --> 00:14:41,710
+happen to be greater than the
+average award and by average again we
+
+204
+00:14:41,710 --> 00:14:45,830
+mean the mean. Where these are
+all going to be self-contained, at
+
+205
+00:14:45,830 --> 00:14:51,810
+least for the subqueries, you can
+highlight that inner query. It takes
+
+206
+00:14:51,810 --> 00:14:56,530
+this information, the 52.2, and
+that's where, on a question, if it
+
+207
+00:14:56,530 --> 00:15:01,030
+says don't hardwire, what it's asking
+for is a subquery. If you hardwire
+
+208
+00:15:01,030 --> 00:15:07,010
+it, you would type in 52.2, and
+you try to run this, and it would
+
+209
+00:15:07,010 --> 00:15:10,230
+work just fine. It's just think
+about transaction systems where you
+
+210
+00:15:10,230 --> 00:15:14,090
+have your data are changing all
+the time and so this would be a way
+
+211
+00:15:14,090 --> 00:15:19,250
+not to hardwire it but to use that
+inner query so in this case it did
+
+212
+00:15:19,250 --> 00:15:24,400
+require a subquery it's a type
+one and so you don't have a choice
+
+213
+00:15:24,400 --> 00:15:28,550
+on the exam if it says write a query
+and it doesn't tell you join or
+
+214
+00:15:28,550 --> 00:15:32,070
+subquery you can decide but make
+sure if it says write a join you
+
+215
+00:15:32,070 --> 00:15:36,050
+write join code if it says write a
+subquery you write subquery code and
+
+216
+00:15:36,050 --> 00:15:39,970
+in this case if it's a question
+like this that shows greater than
+
+217
+00:15:39,970 --> 00:15:44,690
+the average or $10 greater than
+something, you'd have to use a subquery
+
+218
+00:15:44,690 --> 00:15:48,490
+because you can't have an aggregate
+function in the where clause.
+
+219
+00:15:48,660 --> 00:15:49,930
+That's a no-no.
+
+220
+00:15:50,130 --> 00:15:53,210
+All right, I'm going to pause
+the video here and come back
+
+221
+00:15:53,210 --> 00:15:56,010
+with a second video just so
+we can break these videos
+
+222
+00:15:56,010 --> 00:15:58,970
+into a little bit smaller
+chunks for you, and I will see
+
+223
+00:15:58,970 --> 00:16:02,390
+you in subqueries part two where
+we'll go into more detailed
+
+224
+00:16:02,390 --> 00:16:07,010
+subqueries and we also cover
+a topic called substring.
+
+225
+00:16:07,330 --> 00:16:09,390
+We'll see you in just a few.
+
+226
+00:16:09,530 --> 00:16:11,170
+For more information visit www.fema.gov

@@ -1,0 +1,341 @@
+1
+00:00:00,920 --> 00:00:01,840
+Do
+
+2
+00:00:07,530 --> 00:00:12,190
+you, Table 1, agree to union
+with Table 2, combining
+
+3
+00:00:12,190 --> 00:00:14,550
+your first name, last
+name, and city columns?
+
+4
+00:00:14,550 --> 00:00:17,740
+And I mean vertically,
+not horizontally, because
+
+5
+00:00:17,740 --> 00:00:20,260
+horizontally would be a join,
+and this is a union ceremony.
+
+6
+00:00:21,710 --> 00:00:23,570
+And do you, Table 2,
+
+7
+00:00:23,750 --> 00:00:27,670
+agree to union with Table 1,
+stacking your rows together into
+
+8
+00:00:27,670 --> 00:00:31,090
+one beautiful result set? And
+again, vertically, not horizontally,
+
+9
+00:00:31,090 --> 00:00:33,630
+because that would require
+counseling from an inner join.
+
+10
+00:00:35,630 --> 00:00:39,830
+if anyone objects to this union
+please raise a syntax air now or
+
+11
+00:00:39,830 --> 00:00:44,250
+forever hold your semicolon i now
+pronounce you union you may select
+
+12
+00:00:44,250 --> 00:00:47,290
+the bride exclaimers this ceremony
+supports compatible data types
+
+13
+00:00:47,290 --> 00:00:48,930
+only these tables have agreed
+to remove duplicates from their
+
+14
+00:00:48,930 --> 00:00:50,710
+relationship union always considered
+but there were too many duplicates
+
+15
+00:00:50,710 --> 00:00:52,610
+in the family for legal reasons
+no values are considered equal and
+
+16
+00:01:04,630 --> 00:01:07,510
+hopefully sticks with you that's
+pretty much everything i want to
+
+17
+00:01:07,510 --> 00:01:12,250
+mention about the union operator we
+we're adding this short section to
+
+18
+00:01:12,250 --> 00:01:16,110
+5300 because we do get some feedback
+from students that they are asked
+
+19
+00:01:16,110 --> 00:01:19,190
+about it in interviews and typically
+the question is what is the
+
+20
+00:01:19,190 --> 00:01:23,050
+difference between a union and a join
+here's the formula for union based
+
+21
+00:01:23,050 --> 00:01:28,390
+on set theory so if you had table
+a union table b what's what that's
+
+22
+00:01:28,390 --> 00:01:32,050
+equivalent to is you're adding
+table a some columns and then you're
+
+23
+00:01:32,050 --> 00:01:37,930
+adding rows table b below that and
+then this subtraction of a intersect
+
+24
+00:01:37,930 --> 00:01:41,590
+b simply means if there's any duplicate
+information you would subtract
+
+25
+00:01:41,590 --> 00:01:46,570
+that out So union, we can add
+vertically and then remove duplicates.
+
+26
+00:01:47,920 --> 00:01:50,240
+And here we have an example of a join.
+
+27
+00:01:50,240 --> 00:01:53,930
+As you can see, joins typically
+expand horizontally where
+
+28
+00:01:53,930 --> 00:01:56,630
+we add columns from one
+table, for instance, Halloween
+
+29
+00:01:56,630 --> 00:02:00,110
+events, and columns from
+another, the monster sighting.
+
+30
+00:02:01,930 --> 00:02:06,270
+Here's some code for the set operator
+union, and then I'll get to some
+
+31
+00:02:06,270 --> 00:02:10,530
+rules. but we have select location
+from Halloween events and then the
+
+32
+00:02:10,530 --> 00:02:14,650
+word union and then below that would
+be the second table select location
+
+33
+00:02:14,650 --> 00:02:18,990
+from monster sightings and you can
+see the result on the on the right
+
+34
+00:02:18,990 --> 00:02:23,110
+hand of the screen. As a reminder
+the union gets rid of any duplicates
+
+35
+00:02:23,110 --> 00:02:27,070
+so if there are duplicate locations
+they will be removed. In addition
+
+36
+00:02:27,070 --> 00:02:31,590
+if you want to create an alias
+for this particular code you would
+
+37
+00:02:31,590 --> 00:02:35,470
+include the alias in the initial select
+statement and if you wanted to do
+
+38
+00:02:35,470 --> 00:02:39,490
+an order by, you would do the order
+by in the last select statement.
+
+39
+00:02:41,010 --> 00:02:44,630
+And we also have another option if
+you do want to include duplicate
+
+40
+00:02:44,630 --> 00:02:48,310
+information is the union all.
+So in this code we have a union
+
+41
+00:02:48,310 --> 00:02:52,250
+with no duplicates and we have a
+union all where we have duplicates.
+
+42
+00:02:52,250 --> 00:02:56,630
+You can see old man Jaken's
+mansion is listed twice and so
+
+43
+00:02:56,630 --> 00:03:01,210
+the difference between those union
+all includes duplicates. If the
+
+44
+00:03:01,210 --> 00:03:04,590
+two were run and you tested to
+see which had better performance,
+
+45
+00:03:04,590 --> 00:03:07,750
+which run more quickly. Obviously
+union all would run faster
+
+46
+00:03:07,750 --> 00:03:10,890
+because it doesn't have to go find
+duplicates and remove those. In
+
+47
+00:03:10,890 --> 00:03:13,710
+addition to that the data type
+should be the same so character
+
+48
+00:03:13,710 --> 00:03:17,830
+data lines up with character data
+and ideally the meaning as well.
+
+49
+00:03:18,070 --> 00:03:21,230
+If you're adding and stacking
+it only makes sense if the
+
+50
+00:03:21,230 --> 00:03:25,270
+meaning between those columns
+between those tables are the same.
+
+51
+00:03:25,570 --> 00:03:28,610
+And then the other two
+duplicates are removed for union
+
+52
+00:03:28,610 --> 00:03:32,170
+and finally null values are
+considered equal and as you
+
+53
+00:03:32,170 --> 00:03:34,930
+know nulls always have kind
+of an exception to the rule.
+
+54
+00:03:35,050 --> 00:03:39,510
+And this will be the last slide
+I'll show you here. As you can see,
+
+55
+00:03:39,510 --> 00:03:43,230
+this appears to be a union all.
+And the reason for that is you can
+
+56
+00:03:43,230 --> 00:03:48,850
+see that Kim Mills null and Kim
+Mills null. So this is repeated. If
+
+57
+00:03:48,850 --> 00:03:53,090
+we ran a union on this, the question
+is, are these considered equal?
+
+58
+00:03:53,090 --> 00:03:57,130
+If they're considered equal, then
+it would only show up one time. If
+
+59
+00:03:57,130 --> 00:03:59,790
+they're not, the nulls are not
+considered equal, it would show up
+
+60
+00:03:59,790 --> 00:04:04,630
+twice. If this were just the union
+because Kim is the same as Kim and
+
+61
+00:04:04,630 --> 00:04:09,210
+Mills is the same as Mills. Nulls
+are considered equal and so if you
+
+62
+00:04:09,210 --> 00:04:13,510
+just ran the union, it would remove
+one of these pieces of information.
+
+63
+00:04:13,510 --> 00:04:16,890
+That's a brief overview of the
+union. We'll go into more detail
+
+64
+00:04:16,890 --> 00:04:20,950
+in 5310 if you take that class,
+but that should be enough to get
+
+65
+00:04:20,950 --> 00:04:24,770
+you through any interview question
+asking about the union. Take care.
+
+66
+00:04:24,770 --> 00:04:27,190
+Disclaimers. This ceremony supports
+compatible data types only.
+
+67
+00:04:27,190 --> 00:04:28,970
+These tables have agreed to remove
+duplicates from their relationship.
+
+68
+00:04:28,970 --> 00:04:30,270
+Union all was considered, but
+there were too many duplicates
+
+69
+00:04:30,270 --> 00:04:31,950
+in the family. For legal reasons,
+no values are considered equal.
