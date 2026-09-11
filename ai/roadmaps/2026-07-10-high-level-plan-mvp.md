@@ -138,10 +138,14 @@ These were completed after all 7 milestones above were marked done and represent
 ### DATA5400 Course Expansion ✅
 - Added *DATA 5400: Advanced Data Visualization* as a third indexed course.
 - 63 transcript files (12 SRT + 51 DFXP) ingested with real timestamps and clean video titles.
-- All three courses (DATA2100, IS3600, DATA5400) are now live in the RAG tool and searchable end-to-end.
+- DATA2100, IS3600, and DATA5400 were the live set at the time of this expansion.
+
+### Later course expansions ✅
+- DATA1100 (16 videos, 2026-08-06) and DATA5300 (25 videos, 2026-09-01) were added afterward.
+- Live catalog is now five courses / 174 videos. See `aiDocs/changelog.md` and `aiDocs/architecture.md`.
 
 ### Video Ordering ✅
-- All 133 videos across the three courses assigned a sequential `order` field in their JSON sidecars.
+- All videos assigned a sequential `order` field in their JSON sidecars (133 at the time of this work; 174 now).
 - `video_order` column added to the `videos` DB table and wired through the full stack: `ingest.py` → `retrieval.py` → `answer.py` → `main.py` API response.
 - Every source citation returned by the API now includes `video_order`, enabling the frontend to display module position or support ordered browsing in a future update.
 
@@ -151,7 +155,7 @@ These were completed after all 7 milestones above were marked done and represent
 
 Shaped by feedback from the first internal demo. The core experience landed well; reviewers asked for more curriculum context around each retrieved video — specifically, what comes before and after it in the course sequence.
 
-### Milestone 8 — Sequence Navigation ⬜
+### Milestone 8 — Sequence Navigation ✅
 **Goal**: Surface the adjacent videos (previous and next by `video_order`) beneath each source card so students can orient themselves in the course sequence without leaving the tool.
 
 **Tasks**
@@ -167,7 +171,7 @@ Shaped by feedback from the first internal demo. The core experience landed well
 - The neighbor embed opens at the start of the video (no seek offset)
 - The strip is visually subordinate to the main source card
 
-See `ai/roadmaps/2026-07-28-phase-07-sequence-navigation-plan.md` and `2026-07-28-phase-07-sequence-navigation-roadmap.md` for full detail.
+See `ai/roadmaps/complete/2026-07-28-phase-07-sequence-navigation-plan.md` and `2026-07-28-phase-07-sequence-navigation-roadmap.md` for full detail.
 
 ---
 
@@ -175,17 +179,17 @@ See `ai/roadmaps/2026-07-28-phase-07-sequence-navigation-plan.md` and `2026-07-2
 
 Shaped by stakeholder feedback after the second demo. The sequence navigation landed well; stakeholders requested a way for students to browse the full video catalog without needing to ask a question first.
 
-### Milestone 9 — Video Library Sidebar ⬜
+### Milestone 9 — Video Library Sidebar ✅
 **Goal**: Add a collapsible left-side panel that lets students browse and play any video in the database directly, independent of the Q&A flow.
 
 **Tasks**
-- [ ] Add `GET /videos` endpoint to `backend/main.py` — returns all videos grouped by course, ordered by `video_order`
-- [ ] Add `CourseWithVideos` and `VideoSummary` Pydantic models
-- [ ] Restructure `frontend/app/page.tsx` layout to flex-row: sidebar slot + main chat area
-- [ ] Build `VideoLibrarySidebar` component: toggle, search input, course accordions (first expanded, others collapsed), video list
-- [ ] Build `VideoModal` floating overlay: Kaltura embed starting at t=0, × / ESC / backdrop-click dismissal
-- [ ] Wire sidebar → modal in parent state; confirm chat source card behavior is unchanged
-- [ ] Integration QA: all three courses, search filtering, modal open/close, sidebar always-visible-but-collapsed on narrow screens
+- [x] Add `GET /videos` endpoint to `backend/main.py` — returns all videos grouped by course, ordered by `video_order`
+- [x] Add `CourseWithVideos` and `VideoSummary` Pydantic models
+- [x] Restructure `frontend/app/page.tsx` layout to flex-row: sidebar slot + main chat area
+- [x] Build the sidebar in `page.tsx`: toggle, search input, course accordions (all collapsed by default), video list
+- [x] Build `VideoModal` floating overlay: Kaltura embed starting at t=0, × / ESC / backdrop-click dismissal
+- [x] Wire sidebar → modal in parent state; chat source card behavior unchanged
+- [x] Integration QA: all five courses (174 videos), search filtering, modal open/close, sidebar always-visible-but-collapsed on narrow screens
 
 **Exit criteria**
 - Sidebar is visible (collapsed) on load and opens to show all courses and videos
@@ -194,4 +198,4 @@ Shaped by stakeholder feedback after the second demo. The sequence navigation la
 - Modal closes cleanly via × button, ESC, or backdrop click without disrupting chat state
 - Source card inline embeds continue working exactly as before
 
-See `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-plan.md` and `2026-07-30-phase-08-video-library-sidebar-roadmap.md` for full detail.
+See `ai/roadmaps/complete/2026-07-30-phase-08-video-library-sidebar-plan.md` and `2026-07-30-phase-08-video-library-sidebar-roadmap.md` for full detail.

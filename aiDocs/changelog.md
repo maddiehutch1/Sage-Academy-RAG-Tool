@@ -2,6 +2,13 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-11 — Phase 8 Video Library Sidebar complete (Milestone 9)
+
+- **Sidebar shipped:** Collapsible left-side video library lists all 174 videos across five courses, grouped by course and sorted by `video_order`. Search filters titles client-side; clicking a video opens a floating Kaltura modal at t=0 (ESC / × / backdrop dismiss). Chat source-card embeds are unchanged.
+- **`GET /videos`:** Returns courses with nested video summaries from existing `courses` / `videos` tables. No schema changes.
+- **QA signed off:** Five-course catalog, search restore, first/last video per sequence, modal vs chat isolation.
+- **Planning docs closed:** `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-plan.md` and matching roadmap moved to `ai/roadmaps/complete/`. Source: those files and Milestone 9 in `ai/roadmaps/2026-07-10-high-level-plan-mvp.md`.
+
 ## 2026-09-01 — DATA5300 course added
 
 - **DATA5300 transcripts ingested:** 25 new transcript files (21 SRT + 4 DFXP) for *DATA 5300: Database Management* ingested into the live Render index. 25 companion JSON sidecars created with human-readable titles, `order` 1–25 (setup → principles/ERD/normalization → SQL queries → CASE/views/dates → tuning/security/OLTP), and Kaltura `source_url` values.
@@ -18,7 +25,7 @@ This file is a concise record of project changes as the Sage Academy RAG Tool ev
 ## 2026-07-30 — Video Library Sidebar planned (Milestone 9)
 
 - **Stakeholder feature request:** Following the second internal demo, stakeholders requested a way for students to browse and watch any video in the catalog without needing to ask a question.
-- **Planning documents created:** Detailed phase plan written at `ai/roadmaps/2026-07-30-phase-08-video-library-sidebar-plan.md`; Milestone 9 added to the high-level MVP plan.
+- **Planning documents created:** Detailed phase plan written at `ai/roadmaps/complete/2026-07-30-phase-08-video-library-sidebar-plan.md`; Milestone 9 added to the high-level MVP plan.
 - **Scope added to `aiDocs/mvp.md`:** Collapsible left sidebar, search/filter input, floating Kaltura modal (starts at t=0), ESC/× dismiss. Source card inline embeds in chat are unchanged.
 - **No code changes in this entry** — this is a planning-only update. Implementation begins next.
 
