@@ -39,3 +39,27 @@ Following stakeholder feedback, the following browsing capability is being added
 - It reliably points users to a relevant video section with a timestamp
 - The embedded video player opens within the chatbot and begins at the cited moment
 - The demo is understandable and easy to extend
+
+## Stage 2 increment
+Stage 2 is the next prototype slice after v0.1. It is not a new MVP. Planning lives in [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md). Vision stays the grounded Q&A flow in [aiDocs/context.md](context.md).
+
+### Added to scope
+- Dual-example answers for coding/layout questions (lecture scenario, then a generic reusable example) with sources still attached
+- An in-tab ChatGPT-like thread: prior turns stay visible, composer at the bottom, New thread resets the tab
+- Thin follow-up understanding: last few turns sent to the LLM; retrieval concatenates previous user question + current question
+- Render assistant markdown in the thread so bold, lists, and code look natural (Phase 2). Do not strip markdown in the prompt.
+
+### Still out of scope (Stage 2)
+- Accounts, auth, saved chats, localStorage persistence, conversation tables
+- Streaming, query-rewrite LLM, agents/tools
+- Course filter, knowledge graph, personalization, analytics
+- Answering from general knowledge when retrieval finds nothing
+- Sidebar ↔ chat highlight sync, playback memory, favorites
+- Syntax highlighting, GFM tables, or a markdown theme kit — render the common bits only
+
+### Stage 2 success criteria
+- A student can ask a follow-up without typing over the original question
+- "Explain that" uses the previous turn; refresh starts a new thread
+- A coding/layout question names the lecture's example, then gives a generic one the student can reuse
+- Assistant answers do not show raw `*` / `**` / backtick fences; those render as formatted text
+- Every grounded answer still points at a video section with a timestamp

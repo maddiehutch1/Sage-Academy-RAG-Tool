@@ -16,11 +16,30 @@ To keep the first release practical, the team should focus on the MVP experience
 
 This is a RAG prototype, not a full-scale knowledge platform. It is not necessary to implement the most robust or highest-scale solution yet. Functionality and time-to-test are the priority. The main goal is to show that the tool can answer common questions using curriculum content and point students to the right video section.
 
+## Stage 2 (iteration 2)
+Stage 2 does not change that vision. It is still a grounded course Q&A prototype with video and timestamp citations — not a general chatbot, not ChatGPT with a course corpus glued on.
+
+Student feedback after the MVP asked for three things only:
+- Follow-up questions in a ChatGPT-like thread, instead of typing over the original question.
+- Coding and layout answers that briefly name the lecture's scenario, then give a generic reusable example.
+- Assistant answers rendered as normal formatted text, not raw markdown asterisks and backticks from the OpenAI API.
+
+Stay inside that boundary:
+- Follow-ups live in the current browser tab. Refresh starts a new thread. No accounts, no saved conversations, no conversation table.
+- History is a short list of prior user/assistant text sent with `/ask` so "explain that" works. Retrieval concatenates the previous user question with the current one. No query-rewrite model, no streaming.
+- Dual-example behavior is a prompt instruction, not a classifier or a second model. Other questions stay tightly grounded in the transcripts.
+- Keep markdown in model output (code fences, lists, bold). The Phase 2 thread UI renders it. Do not strip formatting in the prompt, and do not add a syntax highlighter.
+- If the corpus has nothing relevant, say so. Do not answer from general knowledge.
+
+Planning docs: [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md).
+
 ## Alignment with the rest of the docs
-- [aiDocs/mvp.md](mvp.md): defines the v0.1 scope, demo goals, and success criteria
+- [aiDocs/mvp.md](mvp.md): defines the v0.1 scope, demo goals, and success criteria, plus the Stage 2 increment
 - [aiDocs/prd.md](prd.md): defines the product requirements and target users
 - [aiDocs/architecture.md](architecture.md): describes the implementation approach and technical structure
 - [aiDocs/changelog.md](changelog.md): tracks changes as the project evolves
+- [ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md](../ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md): completed v0.1 phased plan
+- [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md): Stage 2 phased plan
 
 ## Behavior
 Whenever creating plan docs and roadmap docs, always save them in ai/roadmaps. Prefix the name with the date. Add a note that we need to avoid over-engineering, cruft, and legacy-compatibility features in this clean code project. Make sure they reference each other.
@@ -40,6 +59,6 @@ Whenever finishing with implementing a plan / roadmap doc pair, make sure the ro
 | [aiDocs/mvp.md](mvp.md) | Defines the v0.1 scope and success criteria |
 | [aiDocs/prd.md](prd.md) | Captures product requirements and expectations |
 | [aiDocs/architecture.md](architecture.md) | Describes the recommended stack, architecture, and data flow |
-| [ai/roadmaps/2026-07-10-high-level-plan.md](../ai/roadmaps/2026-07-10-high-level-plan.md) | Main phased roadmap for implementation |
-| [ai/roadmaps/2026-07-10-milestone-delivery-plan.md](../ai/roadmaps/2026-07-10-milestone-delivery-plan.md) | Ordered milestone-based delivery plan |
-| [aiDocs/changelog.md](../aiDocs/changelog.md) | Log of changes as project progresses |
+| [ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md](../ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md) | Completed v0.1 phased plan |
+| [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md) | Stage 2 phased plan |
+| [aiDocs/changelog.md](changelog.md) | Log of changes as project progresses |

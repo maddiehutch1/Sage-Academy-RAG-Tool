@@ -33,3 +33,23 @@ These requirements support the v0.1 MVP described in [aiDocs/mvp.md](mvp.md) and
 - Students can find relevant video content for common course questions
 - Answers include useful source references
 - The prototype is clear enough to demonstrate value in a short demo
+
+## Stage 2 Requirements
+Stage 2 is an increment on v0.1, not a new product. Requirements below support [aiDocs/mvp.md](mvp.md) and [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md).
+
+### Added features
+- In-tab follow-up thread so a student can ask another question without losing the previous answer
+- Dual-example answers for coding, structure, and layout questions: name what the lecture demonstrated, then give a generic reusable version, still cited to video/timestamp
+- Assistant answers displayed as formatted markdown (bold, lists, code blocks) instead of raw asterisks and backticks
+
+### Added functional requirements
+- Keep prior turns visible in the current tab until the student starts a new thread or refreshes
+- Send a short history of user/assistant text with the next `/ask` so follow-ups like "explain that" work
+- Retrieve follow-ups using the previous user question plus the current question
+- When the question is about writing code or a layout, answer in two parts (lecture scenario, then generic example) without dropping source attribution
+- Render markdown in the assistant answer pane; leave user questions and transcript excerpts as plain text
+
+### Stage 2 does not add
+- User accounts, saved conversations, or server-side session storage
+- Un-grounded general-knowledge answers, a coding copilot, or a ChatGPT clone
+- Course filters, analytics, personalization, or authentication

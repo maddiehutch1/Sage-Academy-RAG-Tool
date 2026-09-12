@@ -2,6 +2,22 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-12 — Stage 2: markdown rendering added to Phase 2
+
+- **Additional student feedback:** answers show raw OpenAI markdown (asterisks, backticks). Stage 2 will render assistant markdown in the thread UI instead of stripping it from the prompt.
+- **Phased into follow-up thread (Phase 2):** `react-markdown` only; no syntax highlighter. Phase 1 must not add a "plain text only" prompt rule (code examples need fences). Phase 3 QA includes formatted bold/lists/code.
+- **Docs updated:** high-level Stage 2 plan, `context.md` / `prd.md` / `mvp.md`, and Phase 1–3 plan/roadmap pairs.
+- **No code changes in this entry.**
+
+## 2026-09-11 — Stage 2 planned (student feedback)
+
+- **Student feedback locked to three items:** in-tab follow-up thread (ChatGPT-like layout, no typing over the original question); dual-example answers for coding/layout questions (name the lecture scenario, then a generic reusable example); render assistant markdown so asterisks and backticks look like normal formatted text.
+- **Vision unchanged:** still a grounded course Q&A prototype with video/timestamp citations. No accounts, saved chats, conversation tables, streaming, or query-rewrite model.
+- **High-level plan expanded:** `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md` now has phases 0–3, milestones, and in/out of scope. Markdown rendering is a Phase 2 UI task (not a Phase 1 prompt strip).
+- **Phase docs written:** dual-example (Phase 1), follow-up thread (Phase 2), and joint validation (Phase 3) each have a plan + roadmap pair under `ai/roadmaps/`.
+- **aiDocs updated:** Stage 2 sections added to `context.md`, `prd.md`, and `mvp.md`.
+- **No code changes in this entry** — this is a planning-only update. Implementation begins with Phase 1.
+
 ## 2026-09-11 — Phase 8 Video Library Sidebar complete (Milestone 9)
 
 - **Sidebar shipped:** Collapsible left-side video library lists all 174 videos across five courses, grouped by course and sorted by `video_order`. Search filters titles client-side; clicking a video opens a floating Kaltura modal at t=0 (ESC / × / backdrop dismiss). Chat source-card embeds are unchanged.
