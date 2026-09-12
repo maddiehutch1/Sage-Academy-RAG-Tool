@@ -53,3 +53,23 @@ Stage 2 is an increment on v0.1, not a new product. Requirements below support [
 - User accounts, saved conversations, or server-side session storage
 - Un-grounded general-knowledge answers, a coding copilot, or a ChatGPT clone
 - Course filters, analytics, personalization, or authentication
+
+## Stage 3 Requirements
+Stage 3 is an increment on v0.1 + Stage 2, not a new product. Requirements below support [aiDocs/mvp.md](mvp.md) and [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md).
+
+### Added features
+- Offline helper that turns a YouTube playlist into SRT transcripts + JSON sidecars in a course folder
+- In-chat and sidebar playback for YouTube `source_url` values, seeking to the cited timestamp
+- Same grounded Q&A and source cards for that course as for Kaltura courses
+
+### Added functional requirements
+- Prepare playlist videos on disk (captions + sidecar metadata + watch URL + playlist order)
+- Ingest those files with the existing SRT pipeline (no new chunk format)
+- When `source_url` is YouTube, embed `youtube.com/embed/<id>?start=<seconds>` and offer an "Open on YouTube" watch link
+- Leave Kaltura `embedPlaykitJs` / `kalturaSeekFrom` behavior unchanged
+
+### Stage 3 does not add
+- A playlist table, a video-provider column, or a second ingest pipeline
+- Speech-to-text when a video has no captions
+- Live YouTube API calls from the web app
+- Nightly playlist sync, or re-hosting YouTube videos in Kaltura

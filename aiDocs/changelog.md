@@ -2,6 +2,13 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-12 — Stage 3 planned (YouTube playlist ingest)
+
+- **Locked approach (Choice B):** offline helper turns a YouTube playlist into SRT + JSON sidecars; existing `ingest.py` indexes them; frontend sniffs YouTube vs Kaltura `source_url` for playback.
+- **Not in Stage 3:** playlist table, provider column, Whisper, YouTube API in `/ask`, nightly sync. Playlist URL and course name are operator inputs at implementation time.
+- **Planning docs:** `ai/roadmaps/2026-09-12-high-level-plan-stage-3.md` plus Phase 1 plan/roadmap. Vision notes added to `context.md` / `prd.md` / `mvp.md` / `architecture.md`.
+- **No code changes in this entry.**
+
 ## 2026-09-12 — Follow-up retrieval uses an anchor question
 
 - **Retrieval:** Follow-ups like "explain that" / "generic example" embed the last substantial user question + current question. A new standalone question in the thread embeds current-only, so off-topic asks no longer inherit the previous topic.

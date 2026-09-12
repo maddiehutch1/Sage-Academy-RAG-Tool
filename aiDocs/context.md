@@ -33,13 +33,24 @@ Stay inside that boundary:
 
 Planning docs: [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md).
 
+## Stage 3 (iteration 3)
+Stage 3 does not change that vision. It is still a grounded course Q&A prototype with video and timestamp citations. One additional course may live on YouTube instead of Kaltura.
+
+Stay inside that boundary:
+- Offline helper writes SRT + JSON sidecars from a playlist; existing ingest indexes them.
+- `source_url` may be a Kaltura preview URL or a YouTube watch URL. The player sniffs the host. No playlist table, no provider column.
+- No Whisper, no YouTube API in `/ask`, no nightly playlist sync.
+
+Playlist URL and course name are operator inputs at implementation time. Planning docs: [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md).
+
 ## Alignment with the rest of the docs
-- [aiDocs/mvp.md](mvp.md): defines the v0.1 scope, demo goals, and success criteria, plus the Stage 2 increment
+- [aiDocs/mvp.md](mvp.md): defines the v0.1 scope, demo goals, and success criteria, plus Stage 2 and Stage 3 increments
 - [aiDocs/prd.md](prd.md): defines the product requirements and target users
 - [aiDocs/architecture.md](architecture.md): describes the implementation approach and technical structure
 - [aiDocs/changelog.md](changelog.md): tracks changes as the project evolves
 - [ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md](../ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md): completed v0.1 phased plan
 - [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md): Stage 2 phased plan
+- [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md): Stage 3 phased plan
 
 ## Behavior
 Whenever creating plan docs and roadmap docs, always save them in ai/roadmaps. Prefix the name with the date. Add a note that we need to avoid over-engineering, cruft, and legacy-compatibility features in this clean code project. Make sure they reference each other.
@@ -61,4 +72,5 @@ Whenever finishing with implementing a plan / roadmap doc pair, make sure the ro
 | [aiDocs/architecture.md](architecture.md) | Describes the recommended stack, architecture, and data flow |
 | [ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md](../ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md) | Completed v0.1 phased plan |
 | [ai/roadmaps/2026-09-11-high-level-plan-stage-2.md](../ai/roadmaps/2026-09-11-high-level-plan-stage-2.md) | Stage 2 phased plan |
+| [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md) | Stage 3 phased plan (YouTube playlist ingest) |
 | [aiDocs/changelog.md](changelog.md) | Log of changes as project progresses |

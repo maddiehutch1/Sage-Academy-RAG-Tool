@@ -63,3 +63,28 @@ Stage 2 is the next prototype slice after v0.1. It is not a new MVP. Planning li
 - A coding/layout question names the lecture's example, then gives a generic one the student can reuse
 - Assistant answers do not show raw `*` / `**` / backtick fences; those render as formatted text
 - Every grounded answer still points at a video section with a timestamp
+
+## Stage 3 increment
+Stage 3 is the next prototype slice after Stage 2. It is not a new MVP. Planning lives in [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md). Vision stays the grounded Q&A flow in [aiDocs/context.md](context.md).
+
+### Added to scope
+- One YouTube playlist prepared as a normal course folder (SRT + JSON sidecars) via `scripts/prepare_youtube_playlist.py`
+- Existing `ingest.py` indexes that folder
+- Source cards and the sidebar modal play YouTube URLs at a timestamp, with an "Open on YouTube" fallback
+- Kaltura courses keep their current player
+
+### Still out of scope (Stage 3)
+- Playlist entity in the database, `source_type` column, VTT parsing in ingest (convert to SRT instead)
+- Whisper / transcription for captionless videos
+- YouTube Data API in the web app, nightly sync
+- Accounts, course filter, saved chats (already out of Stage 2)
+- Sidebar ↔ chat highlight sync, playback memory, favorites
+
+### Stage 3 success criteria
+- Helper output is ingestible without changing SRT/DFXP parsers
+- A YouTube citation is watchable at the cited time (embed or watch link)
+- A Kaltura citation still seeks with `kalturaSeekFrom`
+- The new course appears in the video library sidebar
+- Videos with no captions are skipped and reported, not empty-ingested
+
+Playlist URL and course name are operator inputs; live ingest can wait until they are known.

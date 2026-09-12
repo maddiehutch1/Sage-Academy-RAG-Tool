@@ -270,10 +270,15 @@ A simple MVP can use the following concepts:
   - DATA 5400: Advanced Data Visualization (63)
   - IS 3600: Introduction to Cloud Computing (27)
 
+## Stage 3 (planned)
+YouTube is a second host for the same `videos.source_url` string, not a second pipeline. Planning: [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md).
+
+- Offline helper `scripts/prepare_youtube_playlist.py` lists a playlist with `yt-dlp` (local operator tool, not a web dependency), writes `.srt` + JSON sidecars into `data/transcripts/<COURSE>/`
+- `ingest.py` stays SRT/DFXP-only; YouTube captions are converted to SRT before ingest
+- Frontend sniffs YouTube vs Kaltura from `source_url` and builds the matching iframe (`youtube.com/embed/<id>?start=<seconds>` vs existing `embedPlaykitJs` + `kalturaSeekFrom`)
+- No playlist table, no `source_type` column, no YouTube I/O in `/ask`
+
+Update the "Decisions Finalized" bullets above when Phase 1 closes.
+
 ## Recommended Next Step
-The next step should be to turn this architecture into a concrete implementation plan with:
-- a starter folder structure
-- a first-pass database schema
-- a basic ingestion script
-- a simple retrieval endpoint
-- a minimal web UI
+Implement Stage 3 Phase 1 when the playlist URL and course name are available (or smoke-test the helper on a short public playlist first): [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).
