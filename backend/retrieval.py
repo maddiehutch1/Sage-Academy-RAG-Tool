@@ -6,6 +6,7 @@ and returns the top-k most similar transcript chunks from PostgreSQL.
 """
 
 import os
+import re
 from openai import OpenAI
 from dotenv import load_dotenv
 from db import get_conn
@@ -18,7 +19,54 @@ TOP_K = 5
 # Based on eval data: legitimate answers score 0.36–0.54; 0.65 gives clear headroom.
 MAX_DISTANCE = float(os.getenv("MAX_RETRIEVAL_DISTANCE", "0.65"))
 
+# Short / deictic follow-ups should retrieve against the last substantial user
+# question, not against "explain that" itself. Keep this list small and literal.
+FOLLOW_UP_HINTS = (
+    "explain that",
+    "explain this",
+    "what does that",
+    "what does this",
+    "tell me more",
+    "say more",
+    "more simply",
+    "simpler version",
+    "make it simpler",
+    "generic example",
+    "generic layout",
+    "more generic",
+    "in other words",
+    "why is that",
+    "how does that",
+    "can you elaborate",
+)
+_DEICTIC = re.compile(r"\b(that|this|those|these)\b", re.IGNORECASE)
+_SHORT_FOLLOW_UP_WORDS = 10
+
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+def is_follow_up(text: str) -> bool:
+    lowered = text.lower().strip()
+    if not lowered:
+        return False
+    if any(hint in lowered for hint in FOLLOW_UP_HINTS):
+        return True
+    words = lowered.split()
+    return len(words) <= _SHORT_FOLLOW_UP_WORDS and bool(_DEICTIC.search(lowered))
+
+
+def retrieval_anchor(question: str, prior_user_questions: list[str]) -> str | None:
+    """
+    For follow-ups, return the last substantial prior user question to concat
+    into the embedding. New standalone questions return None (embed current only).
+    """
+    priors = [q.strip() for q in prior_user_questions if q and q.strip()]
+    if not priors or not is_follow_up(question):
+        return None
+    for prior in reversed(priors):
+        if not is_follow_up(prior):
+            return prior
+    return priors[0]
 
 
 def _embed(text: str) -> list[float]:

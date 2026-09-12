@@ -2,6 +2,18 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-12 — Follow-up retrieval uses an anchor question
+
+- **Retrieval:** Follow-ups like "explain that" / "generic example" embed the last substantial user question + current question. A new standalone question in the thread embeds current-only, so off-topic asks no longer inherit the previous topic.
+- **Prompt:** History is for pronouns only. If excerpts are not about the current question, say so rather than answering from general knowledge.
+- Closes the two retrieval gaps logged in the Phase 3 QA pass. Refresh-clears-thread is unchanged.
+
+## 2026-09-12 — Stage 2 Phase 3 Joint Validation complete (Milestone 4)
+
+- **Eval:** Render index run `tests/eval_results/eval_2026-09-12_17-06-41.md` — 12 questions, 0 weak flags. Dual-example checklist filled. IS3600 q01–q08 stay conceptual.
+- **Thread QA:** First ask + "explain that" stay on topic; topic change to IaaS/PaaS/SaaS retrieves IS 3600; first-turn off-topic still uses soft no-content. Five-course catalog (174 videos) and neighbor chips confirmed on Render.
+- **Gaps logged (not fixed):** follow-up retrieval uses only the last user utterance, so chained follow-ups can retrieve off-topic sources; in-thread off-topic can still answer from general knowledge; refresh clears the thread by design. Source: Milestone 4 in `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md`. Phase 2–3 plan/roadmap pairs moved to `ai/roadmaps/complete/`.
+
 ## 2026-09-12 — Stage 2 Phase 2 Follow-Up Thread complete (Milestone 3)
 
 - **API:** `POST /ask` accepts optional `history` (last 6 `{role, content}` messages). Retrieval embeds previous user question + current question. `generate_answer` includes those turns so follow-ups like "explain that" resolve. `question_logs` still stores the current turn only.

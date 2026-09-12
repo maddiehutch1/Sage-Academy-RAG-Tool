@@ -2,7 +2,7 @@
 
 Date: 2026-09-11
 
-See `ai/roadmaps/2026-09-11-phase-02-follow-up-thread-roadmap.md` for the step-by-step implementation roadmap.
+See `ai/roadmaps/complete/2026-09-11-phase-02-follow-up-thread-roadmap.md` for the step-by-step implementation roadmap.
 See `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md` Milestone 3 for how this phase sits in Stage 2.
 
 ## Engineering Philosophy

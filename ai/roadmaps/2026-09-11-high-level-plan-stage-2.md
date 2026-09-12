@@ -26,8 +26,8 @@ Park everything else. Auth, saved chats, course filters, extra models, and broad
 
 Phase plan and roadmap pairs:
 - [Phase 1 plan](complete/2026-09-11-phase-01-dual-example-answers-plan.md) / [roadmap](complete/2026-09-11-phase-01-dual-example-answers-roadmap.md)
-- [Phase 2 plan](2026-09-11-phase-02-follow-up-thread-plan.md) / [roadmap](2026-09-11-phase-02-follow-up-thread-roadmap.md)
-- [Phase 3 plan](2026-09-11-phase-03-joint-validation-plan.md) / [roadmap](2026-09-11-phase-03-joint-validation-roadmap.md)
+- [Phase 2 plan](complete/2026-09-11-phase-02-follow-up-thread-plan.md) / [roadmap](complete/2026-09-11-phase-02-follow-up-thread-roadmap.md)
+- [Phase 3 plan](complete/2026-09-11-phase-03-joint-validation-plan.md) / [roadmap](complete/2026-09-11-phase-03-joint-validation-roadmap.md)
 
 The completed MVP plan lives at [ai/roadmaps/complete/2026-07-10-high-level-plan-mvp.md](complete/2026-07-10-high-level-plan-mvp.md).
 
@@ -126,22 +126,22 @@ See [Phase 1 plan](complete/2026-09-11-phase-01-dual-example-answers-plan.md) an
 - Refresh starts a new thread
 - Source cards and neighbor chips still work on each turn
 
-See [Phase 2 plan](2026-09-11-phase-02-follow-up-thread-plan.md) and [roadmap](2026-09-11-phase-02-follow-up-thread-roadmap.md).
+See [Phase 2 plan](complete/2026-09-11-phase-02-follow-up-thread-plan.md) and [roadmap](complete/2026-09-11-phase-02-follow-up-thread-roadmap.md).
 
-### Milestone 4 — Joint Validation
+### Milestone 4 — Joint Validation ✅
 **Goal**: Prove both Stage 2 changes together without regressing the MVP demo.
 
 **Tasks**
-- [ ] Walk pronoun follow-ups, generic-layout follow-ups, markdown rendering, and in-thread topic changes
-- [ ] Confirm empty retrieval, New thread, and refresh behavior
-- [ ] Confirm sidebar and modal stay isolated from chat state
-- [ ] Document remaining gaps for a later iteration
+- [x] Walk pronoun follow-ups, generic-layout follow-ups, markdown rendering, and in-thread topic changes
+- [x] Confirm empty retrieval, New thread, and refresh behavior
+- [x] Confirm sidebar and modal stay isolated from chat state
+- [x] Document remaining gaps for a later iteration
 
 **Exit criteria**
 - The Stage 2 prototype can be demoed as a grounded course chat, not a general assistant
 - Known gaps are written down instead of silently expanding scope
 
-See [Phase 3 plan](2026-09-11-phase-03-joint-validation-plan.md) and [roadmap](2026-09-11-phase-03-joint-validation-roadmap.md).
+See [Phase 3 plan](complete/2026-09-11-phase-03-joint-validation-plan.md) and [roadmap](complete/2026-09-11-phase-03-joint-validation-roadmap.md).
 
 ## Expected Outcome
 By the end of Stage 2, a student can keep a short study thread in the current tab, read answers as formatted text (not raw markdown), and get coding/layout help that is still cited to lecture video, with a generic example they can reuse. The product remains a RAG prototype.

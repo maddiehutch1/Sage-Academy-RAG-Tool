@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
-from retrieval import retrieve_chunks
+from retrieval import retrieve_chunks, retrieval_anchor
 from answer import generate_answer
 from db import get_conn
 
@@ -84,11 +84,8 @@ def ask(body: AskRequest):
         raise HTTPException(status_code=400, detail="Question must not be empty.")
 
     history = body.history[-HISTORY_CAP:]
-    previous_question: str | None = None
-    for msg in reversed(history):
-        if msg.role == "user":
-            previous_question = msg.content.strip() or None
-            break
+    prior_user = [msg.content for msg in history if msg.role == "user"]
+    previous_question = retrieval_anchor(question, prior_user)
 
     chunks = retrieve_chunks(question, previous_question=previous_question)
     if not chunks:

@@ -2,7 +2,7 @@
 
 Date: 2026-09-11
 
-See `ai/roadmaps/2026-09-11-phase-02-follow-up-thread-plan.md` for goal, decisions, and exit criteria.
+See `ai/roadmaps/complete/2026-09-11-phase-02-follow-up-thread-plan.md` for goal, decisions, and exit criteria.
 
 **Avoid over-engineering, cruft, and legacy-compatibility features.** In-tab thread plus optional `history` on `/ask`, plus rendering the markdown the model already returns. No conversation table, no localStorage, no streaming, no rewrite model, no syntax highlighter.
 

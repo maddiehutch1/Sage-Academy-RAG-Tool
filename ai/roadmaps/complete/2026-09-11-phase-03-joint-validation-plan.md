@@ -2,7 +2,7 @@
 
 Date: 2026-09-11
 
-See `ai/roadmaps/2026-09-11-phase-03-joint-validation-roadmap.md` for the step-by-step implementation roadmap.
+See `ai/roadmaps/complete/2026-09-11-phase-03-joint-validation-roadmap.md` for the step-by-step implementation roadmap.
 See `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md` Milestone 4 for how this phase sits in Stage 2.
 
 ## Engineering Philosophy
@@ -62,15 +62,18 @@ Use the live UI (and `/ask` with history where noted). Phase 1 eval questions pl
 ## Files expected to change
 None required. Only change code in this phase if a checklist item fails because of a Phase 1 or Phase 2 bug. If a failure is actually new product scope, write it down under Remaining gaps instead.
 
-## Remaining gaps (fill in when closing the phase)
-Capture anything that is real but out of Stage 2, for example:
-- Thread lost on refresh (by design; only note if students still find it painful).
-- Course filter, auth, saved chats.
-- Eval still thin outside IS3600 + a few Python questions.
+## Remaining gaps (filled 2026-09-12)
+
+- Thread lost on refresh (by design). Fine for a prototype; students who want saved chats will still feel it.
+- Follow-up retrieval concatenates only the immediately previous user utterance with the current one. A chain like "explain that" then "now give a generic example" can retrieve off-topic sources (observed: Entity Relationship Diagrams on a Python follow-up) even when generation stays on topic. No query-rewrite model in Stage 2.
+- Off-topic follow-ups after a real course question can still retrieve chunks (the previous question is in the embed) and the model may answer from general knowledge (observed: "the capital of France is Paris"). First-turn off-topic still returns the soft no-content copy.
+- Coding/layout answers sometimes name the lecture title instead of the demo scenario (q11 if-statements). Same pattern as Phase 1. Not a Stage 2 prompt rewrite.
+- Course filter, auth, saved chats — out of Stage 2.
+- Eval still thin outside IS3600 plus a few DATA2100 Python/flowchart questions.
 - No syntax highlighting in code blocks (by design for Stage 2).
 
 ## Deliverables
-- [ ] Checklist executed against the live prototype
-- [ ] Automated eval still run (`python scripts/run_eval.py`)
-- [ ] Remaining gaps written down
-- [ ] High-level Stage 2 milestones 2–4 can be marked complete only after this pass
+- [x] Checklist executed against the live prototype
+- [x] Automated eval still run (`python scripts/run_eval.py`)
+- [x] Remaining gaps written down
+- [x] High-level Stage 2 milestones 2–4 can be marked complete only after this pass
