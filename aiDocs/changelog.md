@@ -2,6 +2,12 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-12 — Stage 2 Phase 1 Dual-Example Answers complete (Milestone 2)
+
+- **Prompt:** `backend/answer.py` `SYSTEM_PROMPT` now asks coding/layout answers to name the lecture's demo scenario, then give a generic reusable example. No classifier; one generate path. Markdown left in the output (Phase 2 renders it).
+- **Eval:** `scripts/run_eval.py` imports that prompt. Added DATA2100 q09–q12 (lists, for-loop, if, flowchart). Render index run `tests/eval_results/eval_2026-09-12_16-19-34.md` — 12 questions, 0 weak flags; dual-example checklist filled.
+- **Planning docs closed:** Phase 1 plan/roadmap moved to `ai/roadmaps/complete/`. Source: those files and Milestone 2 in `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md`.
+
 ## 2026-09-12 — Stage 2: markdown rendering added to Phase 2
 
 - **Additional student feedback:** answers show raw OpenAI markdown (asterisks, backticks). Stage 2 will render assistant markdown in the thread UI instead of stripping it from the prompt.

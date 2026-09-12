@@ -25,7 +25,7 @@ Park everything else. Auth, saved chats, course filters, extra models, and broad
 4. Phase 3 — Joint Validation
 
 Phase plan and roadmap pairs:
-- [Phase 1 plan](2026-09-11-phase-01-dual-example-answers-plan.md) / [roadmap](2026-09-11-phase-01-dual-example-answers-roadmap.md)
+- [Phase 1 plan](complete/2026-09-11-phase-01-dual-example-answers-plan.md) / [roadmap](complete/2026-09-11-phase-01-dual-example-answers-roadmap.md)
 - [Phase 2 plan](2026-09-11-phase-02-follow-up-thread-plan.md) / [roadmap](2026-09-11-phase-02-follow-up-thread-roadmap.md)
 - [Phase 3 plan](2026-09-11-phase-03-joint-validation-plan.md) / [roadmap](2026-09-11-phase-03-joint-validation-roadmap.md)
 
@@ -90,22 +90,22 @@ The completed MVP plan lives at [ai/roadmaps/complete/2026-07-10-high-level-plan
 - Later work cannot treat saved chats, accounts, or ungrounded codegen as in-vision
 - Each build phase has a plan and a roadmap that reference this file
 
-### Milestone 2 — Dual-Example Answers
+### Milestone 2 — Dual-Example Answers ✅
 **Goal**: Coding and layout answers teach a reusable pattern without dropping the lecture citation.
 
 **Tasks**
-- [ ] Update the system prompt in `backend/answer.py`
-- [ ] Keep `scripts/run_eval.py` on the same prompt (import it; do not keep a second copy)
-- [ ] Add a few DATA2100 Python / layout eval questions
-- [ ] Add a short manual checklist for dual-example quality
-- [ ] Confirm non-coding answers are unchanged in tone and grounding
+- [x] Update the system prompt in `backend/answer.py`
+- [x] Keep `scripts/run_eval.py` on the same prompt (import it; do not keep a second copy)
+- [x] Add a few DATA2100 Python / layout eval questions
+- [x] Add a short manual checklist for dual-example quality
+- [x] Confirm non-coding answers are unchanged in tone and grounding
 
 **Exit criteria**
 - A coding/layout question names the lecture scenario, then gives a generic example that is not that domain
 - Sources still include video and timestamp
 - Conceptual questions (existing IS3600 eval set) still look grounded
 
-See [Phase 1 plan](2026-09-11-phase-01-dual-example-answers-plan.md) and [roadmap](2026-09-11-phase-01-dual-example-answers-roadmap.md).
+See [Phase 1 plan](complete/2026-09-11-phase-01-dual-example-answers-plan.md) and [roadmap](complete/2026-09-11-phase-01-dual-example-answers-roadmap.md).
 
 ### Milestone 3 — Follow-Up Thread
 **Goal**: Students can ask a follow-up without typing over the original question.

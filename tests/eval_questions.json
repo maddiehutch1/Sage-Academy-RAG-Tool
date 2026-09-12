@@ -46,5 +46,33 @@
     "question": "What tools will students be using in this course?",
     "topic": "course tools",
     "expected_keywords": ["AWS", "EC2", "S3", "tools"]
+  },
+  {
+    "id": "q09",
+    "question": "How do I create a list in Python and loop through the items?",
+    "topic": "python lists and for loops",
+    "expected_keywords": ["list", "for", "loop"],
+    "manual_checklist": "dual_example"
+  },
+  {
+    "id": "q10",
+    "question": "Can you give me an example of how to write a Python for loop? I want a general pattern I can reuse, not the lecture's demo.",
+    "topic": "python for loop example",
+    "expected_keywords": ["for", "in", "loop"],
+    "manual_checklist": "dual_example"
+  },
+  {
+    "id": "q11",
+    "question": "How do I write an if statement in Python?",
+    "topic": "python conditionals",
+    "expected_keywords": ["if", "else", "condition"],
+    "manual_checklist": "dual_example"
+  },
+  {
+    "id": "q12",
+    "question": "How should I lay out a flowchart for a simple process?",
+    "topic": "flowchart layout",
+    "expected_keywords": ["flowchart", "process", "start"],
+    "manual_checklist": "dual_example"
   }
 ]

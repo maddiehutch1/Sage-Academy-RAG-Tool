@@ -1,8 +1,9 @@
 # Phase 1 Plan: Dual-Example Answers
 
 Date: 2026-09-11
+Updated: 2026-09-12
 
-See `ai/roadmaps/2026-09-11-phase-01-dual-example-answers-roadmap.md` for the step-by-step implementation roadmap.
+See `ai/roadmaps/complete/2026-09-11-phase-01-dual-example-answers-roadmap.md` for the step-by-step implementation roadmap.
 See `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md` Milestone 2 for how this phase sits in Stage 2.
 
 ## Engineering Philosophy
@@ -39,8 +40,8 @@ Keep the existing grounded-assistant rules. Add a dual-example instruction. Sugg
 
 ```
 When the student asks how to write code, a structure, or a layout:
-1. Briefly name the scenario the lecture used (so they can find it in the video).
-2. Then give a generic reusable example that is not that lecture domain, unless they asked for that scenario.
+1. Briefly name the lecture's demo scenario (the specific example used in the video, not only the video title) so they can find it.
+2. Then give a generic reusable example that is not that same scenario, unless they asked for that scenario.
 Do not let a lecture-specific domain (foods, a named demo dataset, etc.) become the student's template.
 For other questions, stay tightly grounded in the excerpts and do not invent extra examples.
 ```
@@ -75,7 +76,14 @@ No schema changes. No new dependencies. No frontend changes.
 - DATA2100 Python transcripts are already in the live index.
 
 ## Deliverables
-- [ ] Updated production prompt
-- [ ] Eval runner uses that prompt
-- [ ] Coding/layout questions + manual checklist
-- [ ] Regression pass on the existing IS3600 set
+- [x] Updated production prompt
+- [x] Eval runner uses that prompt
+- [x] Coding/layout questions + manual checklist
+- [x] Regression pass on the existing IS3600 set
+
+## Completion Notes (2026-09-12)
+- `backend/answer.py`: dual-example instruction added to `SYSTEM_PROMPT`. Wording tightened once so the model names the lecture's demo (e.g. Candy list, paycheck tax) rather than only the video title.
+- `scripts/run_eval.py`: imports `SYSTEM_PROMPT` from `answer.py`; appends a dual-example checklist section for questions with `"manual_checklist": "dual_example"`.
+- `tests/eval_questions.json`: added q09–q12 (lists/for-loop, generic for-loop, if statement, flowchart layout).
+- Eval against the Render index: `tests/eval_results/eval_2026-09-12_16-19-34.md` — 12 questions, 0 weak retrieval flags. Dual-example checklist filled in that report. IS3600 q01–q08 remain conceptual with sources; no unsolicited code samples.
+- Live UI `/ask` was not running locally; eval uses the same imported production prompt.

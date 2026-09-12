@@ -29,26 +29,33 @@ load_dotenv()
 # Config
 # ---------------------------------------------------------------------------
 
-QUESTIONS_FILE = Path(__file__).parent.parent / "tests" / "eval_questions.json"
-RESULTS_DIR    = Path(__file__).parent.parent / "tests" / "eval_results"
+ROOT = Path(__file__).parent.parent
+BACKEND_DIR = ROOT / "backend"
+sys.path.insert(0, str(BACKEND_DIR))
+
+from answer import SYSTEM_PROMPT  # noqa: E402  — same prompt as production
+
+QUESTIONS_FILE = ROOT / "tests" / "eval_questions.json"
+RESULTS_DIR    = ROOT / "tests" / "eval_results"
 EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 CHAT_MODEL      = os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")
 DATABASE_URL    = os.getenv("DATABASE_URL")
 TOP_K           = 5
 WARN_DISTANCE   = 0.55   # cosine distance above this is flagged as weak retrieval
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+DUAL_EXAMPLE_CHECKS = [
+    "Answer names what the lecture used as its example",
+    "Generic example is present and is not that same domain",
+    "Sources include at least one video + timestamp",
+    "Answer is still a study aid, not a full homework dump",
+]
 
-SYSTEM_PROMPT = """\
-You are a helpful academic assistant for Sage Academy.
-Answer the student's question using ONLY the course transcript excerpts provided below.
-If the answer cannot be found in the excerpts, say so clearly — do not invent information.
-Keep your answer concise, accurate, and easy for a student to understand.
-"""
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 # ---------------------------------------------------------------------------
-# Helpers (duplicated from backend to keep scripts self-contained)
+# Helpers (retrieval duplicated from backend so this script stays runnable
+# without importing the full answer pipeline; SYSTEM_PROMPT is imported.)
 # ---------------------------------------------------------------------------
 
 def _embed(text: str) -> list[float]:
@@ -144,6 +151,7 @@ def run_eval() -> None:
     conn = psycopg2.connect(DATABASE_URL)
     lines: list[str] = []
     warn_count = 0
+    dual_example_ids: list[tuple[str, str]] = []
 
     lines.append(f"# Eval Report — {timestamp}\n")
     lines.append(f"Model: `{CHAT_MODEL}` | Embedding: `{EMBEDDING_MODEL}` | top_k={TOP_K}\n")
@@ -155,6 +163,8 @@ def run_eval() -> None:
             question = q["question"]
             topic    = q.get("topic", "")
             keywords = q.get("expected_keywords", [])
+            if q.get("manual_checklist") == "dual_example":
+                dual_example_ids.append((qid, question))
 
             print(f"\n[{qid}] {question}")
 
@@ -196,6 +206,18 @@ def run_eval() -> None:
         conn.close()
 
     lines.append(f"\n**Summary:** {len(questions)} questions, {warn_count} weak retrieval flag(s).\n")
+
+    if dual_example_ids:
+        lines.append("\n## Dual-example checklist\n")
+        lines.append(
+            "Keyword coverage is not sufficient for coding/layout questions. "
+            "Fill these in after reading the answers above.\n"
+        )
+        for qid, question in dual_example_ids:
+            lines.append(f"### [{qid}] {question}\n")
+            for check in DUAL_EXAMPLE_CHECKS:
+                lines.append(f"- [ ] {check}\n")
+            lines.append("\n")
 
     report_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"\nReport saved to: {report_path}")
