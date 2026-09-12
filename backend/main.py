@@ -1,5 +1,5 @@
 import os
-from typing import Optional
+from typing import Literal, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -22,8 +22,17 @@ app.add_middleware(
 )
 
 
+HISTORY_CAP = 6
+
+
+class HistoryMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+
 class AskRequest(BaseModel):
     question: str
+    history: list[HistoryMessage] = []
 
 
 class NeighborVideo(BaseModel):
@@ -74,7 +83,14 @@ def ask(body: AskRequest):
     if not question:
         raise HTTPException(status_code=400, detail="Question must not be empty.")
 
-    chunks = retrieve_chunks(question)
+    history = body.history[-HISTORY_CAP:]
+    previous_question: str | None = None
+    for msg in reversed(history):
+        if msg.role == "user":
+            previous_question = msg.content.strip() or None
+            break
+
+    chunks = retrieve_chunks(question, previous_question=previous_question)
     if not chunks:
         return AskResponse(
             answer="I wasn't able to find relevant course content for that question. "
@@ -82,7 +98,8 @@ def ask(body: AskRequest):
             sources=[],
         )
 
-    result = generate_answer(question, chunks)
+    history_payload = [{"role": msg.role, "content": msg.content} for msg in history]
+    result = generate_answer(question, chunks, history=history_payload)
 
     _log_question(question, result["answer"], chunks[0])
 

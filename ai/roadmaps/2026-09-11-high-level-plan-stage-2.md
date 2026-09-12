@@ -107,17 +107,17 @@ The completed MVP plan lives at [ai/roadmaps/complete/2026-07-10-high-level-plan
 
 See [Phase 1 plan](complete/2026-09-11-phase-01-dual-example-answers-plan.md) and [roadmap](complete/2026-09-11-phase-01-dual-example-answers-roadmap.md).
 
-### Milestone 3 — Follow-Up Thread
+### Milestone 3 — Follow-Up Thread ✅
 **Goal**: Students can ask a follow-up without typing over the original question.
 
 **Tasks**
-- [ ] Render a message thread with per-turn source cards and a bottom composer
-- [ ] Render assistant markdown (bold, lists, fenced code) so asterisks and backticks are not shown raw
-- [ ] Add a New thread control; keep state in the tab only
-- [ ] Accept optional `history` on `POST /ask` and pass it into answer generation
-- [ ] When history exists, retrieve using previous user question + current question
-- [ ] Split `page.tsx` lightly (thread vs sidebar) instead of growing one file
-- [ ] Leave sidebar and Kaltura modal behavior unchanged
+- [x] Render a message thread with per-turn source cards and a bottom composer
+- [x] Render assistant markdown (bold, lists, fenced code) so asterisks and backticks are not shown raw
+- [x] Add a New thread control; keep state in the tab only
+- [x] Accept optional `history` on `POST /ask` and pass it into answer generation
+- [x] When history exists, retrieve using previous user question + current question
+- [x] Split `page.tsx` lightly (thread vs sidebar) instead of growing one file
+- [x] Leave sidebar and Kaltura modal behavior unchanged
 
 **Exit criteria**
 - Prior Q&A stays visible after a follow-up

@@ -30,14 +30,23 @@ def _vector_to_pg(vec: list[float]) -> str:
     return "[" + ",".join(f"{v:.8f}" for v in vec) + "]"
 
 
-def retrieve_chunks(question: str, top_k: int = TOP_K) -> list[dict]:
+def retrieve_chunks(
+    question: str,
+    top_k: int = TOP_K,
+    previous_question: str | None = None,
+) -> list[dict]:
     """
     Embed the question and return the top-k nearest transcript chunks.
+
+    If previous_question is provided (follow-up turns), embed the previous
+    user question and the current question together. TOP_K and MAX_DISTANCE
+    stay the same.
 
     Each result dict contains:
         chunk_text, course, video, chunk_index, start_time, end_time, distance
     """
-    vec_str = _vector_to_pg(_embed(question))
+    embed_text = f"{previous_question}\n{question}" if previous_question else question
+    vec_str = _vector_to_pg(_embed(embed_text))
 
     conn = get_conn()
     try:

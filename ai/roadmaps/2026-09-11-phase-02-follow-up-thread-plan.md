@@ -140,9 +140,9 @@ No schema changes. No new tables.
 - `react-markdown` is the only new frontend dependency. If a dual-example answer uses fences, they must look like a code block, not a wall of backticks.
 
 ## Deliverables
-- [ ] `/ask` accepts optional history and uses it for generation
-- [ ] Follow-up retrieval concatenates the previous user question
-- [ ] In-tab thread UI with New thread
-- [ ] Assistant markdown rendered (bold, lists, fenced code; no raw asterisks)
-- [ ] Light frontend split
-- [ ] Sidebar and modal still work with a live thread
+- [x] `/ask` accepts optional history and uses it for generation
+- [x] Follow-up retrieval concatenates the previous user question
+- [x] In-tab thread UI with New thread
+- [x] Assistant markdown rendered (bold, lists, fenced code; no raw asterisks)
+- [x] Light frontend split
+- [x] Sidebar and modal still work with a live thread

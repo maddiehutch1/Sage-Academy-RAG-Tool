@@ -2,6 +2,12 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-12 — Stage 2 Phase 2 Follow-Up Thread complete (Milestone 3)
+
+- **API:** `POST /ask` accepts optional `history` (last 6 `{role, content}` messages). Retrieval embeds previous user question + current question. `generate_answer` includes those turns so follow-ups like "explain that" resolve. `question_logs` still stores the current turn only.
+- **UI:** In-tab thread with per-turn source cards, bottom composer, and New thread (tab state only). Assistant answers render with `react-markdown` (bold, lists, fenced code). `page.tsx` split into `ChatThread.tsx` + `SourceCards.tsx`.
+- **Smoke:** First ask still returns sources; follow-up "explain that more simply" stayed on IaaS/PaaS/SaaS; topic change retrieved flowcharting; coding answer included a fenced Python block. Source: Milestone 3 in `ai/roadmaps/2026-09-11-high-level-plan-stage-2.md`.
+
 ## 2026-09-12 — Stage 2 Phase 1 Dual-Example Answers complete (Milestone 2)
 
 - **Prompt:** `backend/answer.py` `SYSTEM_PROMPT` now asks coding/layout answers to name the lecture's demo scenario, then give a generic reusable example. No classifier; one generate path. Markdown left in the output (Phase 2 renders it).

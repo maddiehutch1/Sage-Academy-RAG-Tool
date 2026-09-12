@@ -80,7 +80,11 @@ def _format_context(chunks: list[dict]) -> str:
     return "\n\n".join(parts)
 
 
-def generate_answer(question: str, chunks: list[dict]) -> dict:
+def generate_answer(
+    question: str,
+    chunks: list[dict],
+    history: list | None = None,
+) -> dict:
     """
     Call the LLM with the retrieved context and return:
         {
@@ -101,12 +105,14 @@ def generate_answer(question: str, chunks: list[dict]) -> dict:
     context = _format_context(chunks)
     user_message = f"Transcript excerpts:\n\n{context}\n\nStudent question: {question}"
 
+    messages: list[dict] = [{"role": "system", "content": SYSTEM_PROMPT}]
+    for item in history or []:
+        messages.append({"role": item["role"], "content": item["content"]})
+    messages.append({"role": "user", "content": user_message})
+
     response = client.chat.completions.create(
         model=CHAT_MODEL,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user",   "content": user_message},
-        ],
+        messages=messages,
         temperature=0.2,
     )
 
