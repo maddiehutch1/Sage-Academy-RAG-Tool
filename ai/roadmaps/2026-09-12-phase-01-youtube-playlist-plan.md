@@ -52,7 +52,7 @@ Prepare one YouTube playlist as a normal course folder, ingest it with the curre
 | Embed-blocked videos | Keep a watch-URL link with `&t=<sec>s` | Some videos disable iframe playback; the citation must still be usable |
 | Playlist in the DB | No | `video_order` already models sequence |
 | Filenames | `{index:02d}_{youtube_id}.srt` (+ matching `.json`) | Stable, unique, independent of messy titles |
-| Sidecar `video` title | YouTube title, trimmed / uniqued if needed | Ingest slugs `video_id` from the title (`VARCHAR(100)`). Helper must not emit colliding or huge slugs |
+| Sidecar `video` title | YouTube title, trimmed / uniqued if needed | Ingest slugs `video_id` from the title (`VARCHAR(100)`). Use the course code to disambiguate collisions; use the YouTube id only if that still collides |
 | Videos with no captions | Skip + print a list at the end | Do not invent transcript text |
 
 ## Helper contract
@@ -134,11 +134,13 @@ No schema changes. No new npm packages. No new pip packages unless subprocess + 
 - Live ingest still uses `DATABASE_URL` in `.env` (Render for production index, local Docker for a dry run). Confirm which target before embedding.
 
 ## Deliverables
-- [ ] Playlist helper that writes SRT + sidecars ingest already understands
-- [ ] Source cards + sidebar modal play YouTube at a timestamp (Kaltura unchanged)
-- [ ] "Open on YouTube" fallback on YouTube cards
-- [ ] README note for the helper
-- [ ] Live course ingest **or** a written deferral if operator inputs are still TBD (helper + player still ship)
+- [x] Playlist helper writes SRT + sidecars ingest already understands
+- [x] Source cards + sidebar modal build timestamped YouTube players; Kaltura URL generation is unchanged
+- [x] "Open on YouTube" fallback on YouTube cards
+- [x] README note for the helper
+- [x] IS 5750 course ingested into the local Docker database (216 videos, 559 chunks)
+
+Playback QA note: YouTube in-chat playback at a cited timestamp and the sidebar modal at t=0 were verified in the browser. Kaltura source-card/modal URLs were verified, but two real Kaltura entries displayed a "Media stream error" when playback was started. Keep Phase 1 open until existing Kaltura playback is confirmed working or that external playback issue is resolved.
 
 ## Exit Criteria
 - Running the helper on a playlist produces a course folder `ingest.py` can index without parser changes.

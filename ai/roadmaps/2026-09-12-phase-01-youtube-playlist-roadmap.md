@@ -22,7 +22,7 @@ See `ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md` for goal, decisio
    - Resolve playlist items (index, id, title) with `yt-dlp` subprocess. `--flat-playlist` / print fields; do not download video bytes (`--skip-download`).
    - For each item: prefer official English subs, then auto-subs; convert to SRT; write `{index:02d}_{id}.srt`.
    - Write a matching `.json` sidecar: `course`, `video`, `source_url` (`https://www.youtube.com/watch?v=<id>`), `order` (playlist index).
-   - Sanitize `video` titles so ingest's slug (`title.lower().replace(" ", "-")`) stays unique and fits `videos.video_id VARCHAR(100)`. Append the YouTube id if two titles collide.
+   - Sanitize `video` titles so ingest's slug (`title.lower().replace(" ", "-")`) stays unique and fits `videos.video_id VARCHAR(100)`. Add the course code to duplicate titles; use the YouTube id only if the course-qualified title still collides.
    - Skip captionless / unavailable videos; print a skip list at the end (id, title, reason). Print a success count.
 
 4. [x] Smoke-test the helper on the real playlist.
@@ -50,22 +50,21 @@ See `ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md` for goal, decisio
    - Document the helper, `yt-dlp` as a local prerequisite, and that `source_url` may be Kaltura or YouTube.
    - Do not rewrite the ingest section; add a short "YouTube playlist" subsection next to the existing sidecar instructions.
 
-9. [ ] Live ingest (blocked on local environment setup).
-   - Run the helper with the real playlist / course name / outdir.
-   - Review skip list; decide if missing videos are acceptable or need captions added on YouTube first.
-   - Run `python scripts/ingest.py` against the intended database (`DATABASE_URL`).
-   - After confirming successful ingest, manually move the course folder to `data/ingest_transcripts_complete/IS5750/`; `scripts/ingest.py` does not move it automatically.
-   - Use the local Docker database only for the first ingest; do not use Render yet.
-   - Current blockers: Docker CLI/database and `.env` are absent; `OPENAI_API_KEY` is not configured. `ingest.py` startup was attempted and exited before any database connection.
+9. [x] Ingest the course into local Docker.
+   - Ran `python scripts/ingest.py`; the latest run exited successfully.
+   - Verified local Postgres has 216 IS 5750 videos, 559 chunks, 216 YouTube URLs, and order 1–216.
+   - Moved the verified course folder to `data/ingest_transcripts_complete/IS5750/`; `scripts/ingest.py` does not move it automatically.
 
-10. [ ] QA (caption/output checks passed; local database and frontend runtime checks pending).
-    - Ask a question expected to hit a YouTube chunk: source card embed seeks (or the watch link has `&t=`).
-    - Ask a question expected to hit a Kaltura chunk: `kalturaSeekFrom` still works; neighbor chips unchanged.
-    - Sidebar lists the new course in `video_order`; modal opens a YouTube video at t=0; ESC / × / backdrop still close it; chat thread is not wiped.
-    - Follow-up thread, dual-example answers, and markdown rendering still work (no Stage 2 regressions).
+10. [ ] QA (YouTube path passes; Kaltura playback remains blocked).
+    - [x] Asked a question that returned IS 5750 sources; a source at 5:11 built `youtube.com/embed/O2UbjUJ5hgo?start=311` and the fallback URL used `t=311s`.
+    - [x] Sidebar lists all 216 videos in order; its YouTube modal builds an embed at t=0.
+    - [x] Kaltura source-card and modal builders produced the expected `embedPlaykitJs` URLs with `kalturaSeekFrom` (timestamp and t=0 respectively); Kaltura cards did not show the YouTube fallback.
+    - [ ] Confirm an existing Kaltura video actually plays. Two archived Kaltura URLs rendered the player controls but displayed "Media stream error" on play; local DB currently contains IS 5750 only, so no indexed Kaltura citation was available.
+    - [ ] Confirm ESC / × / backdrop close behavior and no chat-thread loss after the final Kaltura playback check.
+    - [ ] Recheck Stage 2 follow-up, dual-example, and markdown behavior; these areas were not changed in Phase 1.
     - Optional: `python scripts/run_eval.py` against the index if the live course was ingested (existing questions should still retrieve; do not expand the eval set in this phase unless a YouTube-course smoke question is cheap and wanted).
 
-11. [ ] Close the phase.
+11. [ ] Close the phase after resolving Kaltura playback QA.
     - Check off Milestone 2 in `ai/roadmaps/2026-09-12-high-level-plan-stage-3.md`.
     - Update `aiDocs/architecture.md` finalized decisions (YouTube as a second `source_url` host; helper path).
     - Move this plan/roadmap pair to `ai/roadmaps/complete/`.

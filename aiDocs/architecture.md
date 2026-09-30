@@ -277,9 +277,9 @@ YouTube is a second host for the same `videos.source_url` string, not a second p
 - `ingest.py` stays SRT/DFXP-only; YouTube captions are converted to SRT before ingest
 - Frontend sniffs YouTube vs Kaltura from `source_url` and builds the matching iframe (`youtube.com/embed/<id>?start=<seconds>` vs existing `embedPlaykitJs` + `kalturaSeekFrom`)
 - No playlist table, no `source_type` column, no YouTube I/O in `/ask`
-- Operator inputs: IS 5750 playlist, `IS 5750: JavaScript for Absolute Beginners`, English captions, output `data/transcripts/IS5750/`. Helper/player implementation and caption preparation are complete (216 videos); local ingest and end-to-end QA remain pending local Docker and API-key configuration.
+- Operator inputs: IS 5750 playlist, `IS 5750: JavaScript for Absolute Beginners`, English captions, output `data/transcripts/IS5750/`. Helper, caption preparation, and local ingest are complete (216 videos, 559 chunks). YouTube timestamp playback is verified; Kaltura iframe URLs are unchanged, but two browser playback attempts returned a media-stream error. See the Phase 1 roadmap for the remaining QA gate.
 
 Update the "Decisions Finalized" bullets above when Phase 1 closes.
 
 ## Recommended Next Step
-Complete local ingest and end-to-end QA after Docker is available and local `.env` settings are configured: [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).
+Resolve Kaltura playback QA, then close Phase 1: [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).

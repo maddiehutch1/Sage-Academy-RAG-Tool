@@ -47,19 +47,44 @@ def title_slug(title: str) -> str:
     return title.lower().replace(" ", "-")
 
 
-def unique_video_title(title: str, video_id: str, order: int, used_slugs: set[str]) -> str:
+def existing_video_slugs(output_dir: Path) -> set[str]:
+    data_dir = output_dir.parent.parent
+    slugs = set()
+    for folder_name in ("transcripts", "ingest_transcripts_complete"):
+        folder = data_dir / folder_name
+        if not folder.exists():
+            continue
+        for sidecar in folder.rglob("*.json"):
+            try:
+                title = json.loads(sidecar.read_text(encoding="utf-8-sig")).get("video")
+            except (OSError, json.JSONDecodeError):
+                continue
+            if title:
+                slugs.add(title_slug(title))
+    return slugs
+
+
+def unique_video_title(
+    title: str,
+    course: str,
+    video_id: str,
+    order: int,
+    used_slugs: set[str],
+) -> str:
     clean_title = re.sub(r"\s+", " ", title).strip() or video_id
+    course_label = course.split(":", 1)[0].strip() or course.strip()
     suffix = ""
     candidate = clean_title
 
     if len(title_slug(candidate)) > 100:
-        candidate = candidate[:88].rstrip()
-        suffix = f" - {video_id}"
+        suffix = f" - {course_label}"
 
     if title_slug(candidate + suffix) in used_slugs:
-        suffix = f" - {video_id}"
+        suffix = f" - {course_label}"
     if title_slug(candidate + suffix) in used_slugs:
-        suffix = f" - {video_id} - {order}"
+        suffix = f" - {course_label} - {video_id}"
+    if title_slug(candidate + suffix) in used_slugs:
+        suffix = f" - {course_label} - {video_id} - {order}"
 
     max_title_length = 100 - len(title_slug(suffix))
     candidate = candidate[:max_title_length].rstrip()
@@ -117,7 +142,7 @@ def prepare_playlist(
         raise RuntimeError("The playlist did not contain any videos.")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    used_slugs: set[str] = set()
+    used_slugs = existing_video_slugs(output_dir)
     skipped = []
     written = 0
 
@@ -140,7 +165,7 @@ def prepare_playlist(
             skipped.append((video_id, title, reason or "empty captions"))
             continue
 
-        clean_title = unique_video_title(title, video_id, int(order), used_slugs)
+        clean_title = unique_video_title(title, course, video_id, int(order), used_slugs)
         metadata = {
             "course": course,
             "video": clean_title,

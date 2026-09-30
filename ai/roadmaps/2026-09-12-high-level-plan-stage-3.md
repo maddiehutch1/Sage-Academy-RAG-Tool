@@ -91,8 +91,8 @@ Related plans:
 - [x] Write `scripts/prepare_youtube_playlist.py`
 - [x] Branch the frontend player on Kaltura vs YouTube URLs
 - [x] Smoke-test the helper on the real playlist (216 videos prepared; all captions and sidecars validated)
-- [ ] When operator inputs are available: generate files, ingest, confirm the new course in the sidebar
-- [ ] Confirm existing Kaltura courses still play from source cards and the modal
+- [x] Generate files, ingest IS 5750 into local Docker, and confirm the course in the sidebar (216 videos, 559 chunks)
+- [ ] Confirm existing Kaltura courses play from source cards and the modal (iframe URLs verified; player returned "Media stream error" on two archived entries)
 
 **Exit criteria**
 - Helper writes SRT + sidecars that `ingest.py` accepts without format changes
