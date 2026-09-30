@@ -1,0 +1,371 @@
+1
+00:00:00,080 --> 00:00:03,840
+Now that we've talked about what an
+
+2
+00:00:01,439 --> 00:00:06,160
+object is, how do we create one? Well,
+
+3
+00:00:03,840 --> 00:00:09,599
+if we want to create an array, we say,
+
+4
+00:00:06,160 --> 00:00:12,160
+"Let my array equal
+
+5
+00:00:09,599 --> 00:00:13,920
+and then we use square braces." So to
+
+6
+00:00:12,160 --> 00:00:16,000
+differentiate objects from arrays, we
+
+7
+00:00:13,920 --> 00:00:17,840
+actually use a similar but slightly
+
+8
+00:00:16,000 --> 00:00:20,480
+different syntax. So we'd say let my
+
+9
+00:00:17,840 --> 00:00:22,320
+object equal and then we'd use curly
+
+10
+00:00:20,480 --> 00:00:26,880
+braces.
+
+11
+00:00:22,320 --> 00:00:30,160
+So this is an this is an array. This is
+
+12
+00:00:26,880 --> 00:00:31,359
+an object. Okay. Well, how do we put
+
+13
+00:00:30,160 --> 00:00:32,559
+something in an object? Well, I'm going
+
+14
+00:00:31,359 --> 00:00:36,160
+to give this object a name. And I'm
+
+15
+00:00:32,559 --> 00:00:39,760
+gonna call this object Batman. And I'm
+
+16
+00:00:36,160 --> 00:00:42,719
+going to create um remember just like a
+
+17
+00:00:39,760 --> 00:00:45,200
+dictionary, it has a a word and an
+
+18
+00:00:42,719 --> 00:00:48,320
+associated definition. So, in this case,
+
+19
+00:00:45,200 --> 00:00:50,000
+I'm going to put first name and then a
+
+20
+00:00:48,320 --> 00:00:52,160
+colon and then on the other side of it,
+
+21
+00:00:50,000 --> 00:00:55,440
+I'm going to put Batman. What that does
+
+22
+00:00:52,160 --> 00:00:58,399
+is it says create a bat an object, store
+
+23
+00:00:55,440 --> 00:01:00,239
+it in a variable called Batman. that
+
+24
+00:00:58,399 --> 00:01:02,640
+object will have a property called first
+
+25
+00:01:00,239 --> 00:01:04,879
+name. When someone tries to access that,
+
+26
+00:01:02,640 --> 00:01:07,280
+give them Batman.
+
+27
+00:01:04,879 --> 00:01:10,400
+All right, then we'll keep going. Um, so
+
+28
+00:01:07,280 --> 00:01:13,439
+we'll say last name Whoa, sorry, I don't
+
+29
+00:01:10,400 --> 00:01:16,240
+know what I said. First name Bruce, last
+
+30
+00:01:13,439 --> 00:01:19,360
+name Wayne.
+
+31
+00:01:16,240 --> 00:01:21,119
+um alias
+
+32
+00:01:19,360 --> 00:01:25,520
+Batman
+
+33
+00:01:21,119 --> 00:01:29,439
+and then I could say numbum villains
+
+34
+00:01:25,520 --> 00:01:32,240
+caught and 20.
+
+35
+00:01:29,439 --> 00:01:36,880
+So what I've done is I've made an object
+
+36
+00:01:32,240 --> 00:01:39,040
+in that object it has values and sorry
+
+37
+00:01:36,880 --> 00:01:41,520
+it has definitions and those definitions
+
+38
+00:01:39,040 --> 00:01:43,759
+have values. So just like I could look
+
+39
+00:01:41,520 --> 00:01:45,840
+up in my dictionary and find a word and
+
+40
+00:01:43,759 --> 00:01:48,880
+it'll give me back the definition. I can
+
+41
+00:01:45,840 --> 00:01:51,920
+look things up in this object.
+
+42
+00:01:48,880 --> 00:01:53,920
+So if I want to alert Batman's first
+
+43
+00:01:51,920 --> 00:01:57,119
+name, then I would access my variable
+
+44
+00:01:53,920 --> 00:01:58,640
+Batman say dot and then I have these
+
+45
+00:01:57,119 --> 00:02:00,159
+properties here. So I could say
+
+46
+00:01:58,640 --> 00:02:02,880
+Batman.irstame.
+
+47
+00:02:00,159 --> 00:02:05,920
+If I save this and I go live, I get
+
+48
+00:02:02,880 --> 00:02:10,319
+Bruce. If I come back over here and I
+
+49
+00:02:05,920 --> 00:02:12,160
+access Batman.ast name, save it. and it
+
+50
+00:02:10,319 --> 00:02:14,560
+says Wayne.
+
+51
+00:02:12,160 --> 00:02:18,400
+So the reason this is nice is because
+
+52
+00:02:14,560 --> 00:02:20,400
+then we can access attributes by their
+
+53
+00:02:18,400 --> 00:02:22,000
+names.
+
+54
+00:02:20,400 --> 00:02:24,160
+Another way we can do this is we can say
+
+55
+00:02:22,000 --> 00:02:26,080
+Batman and then use the square braces
+
+56
+00:02:24,160 --> 00:02:30,080
+just like we did with an array and then
+
+57
+00:02:26,080 --> 00:02:32,879
+we'll put in the text alias
+
+58
+00:02:30,080 --> 00:02:34,640
+and we get Batman. So there's two ways
+
+59
+00:02:32,879 --> 00:02:38,239
+you can access an attribute on an
+
+60
+00:02:34,640 --> 00:02:40,720
+object. You can say Batman square braces
+
+61
+00:02:38,239 --> 00:02:43,200
+and then the attribute or you can say
+
+62
+00:02:40,720 --> 00:02:45,519
+Batman dot and then the attribute. So
+
+63
+00:02:43,200 --> 00:02:48,400
+you take whatever variable you have, use
+
+64
+00:02:45,519 --> 00:02:51,040
+square braces and access it using quotes
+
+65
+00:02:48,400 --> 00:02:53,760
+around the name or you can just say dot
+
+66
+00:02:51,040 --> 00:02:55,920
+and then directly access the name. So
+
+67
+00:02:53,760 --> 00:02:59,440
+that's how you access attributes in an
+
+68
+00:02:55,920 --> 00:03:02,239
+object. So why is this nice? Well,
+
+69
+00:02:59,440 --> 00:03:06,239
+um let's bring in our Batman list. So
+
+70
+00:03:02,239 --> 00:03:06,239
+I'm going to go copy it from here.
+
+71
+00:03:07,120 --> 00:03:15,360
+and I'm going to paste it.
+
+72
+00:03:10,319 --> 00:03:20,800
+So, we'll call this Batman 2.
+
+73
+00:03:15,360 --> 00:03:22,560
+All right. So if we want to do um array
+
+74
+00:03:20,800 --> 00:03:26,239
+dstructuring so that we can access these
+
+75
+00:03:22,560 --> 00:03:29,280
+by names then we might say let first
+
+76
+00:03:26,239 --> 00:03:31,760
+last alias
+
+77
+00:03:29,280 --> 00:03:35,280
+num villains
+
+78
+00:03:31,760 --> 00:03:38,319
+equal Batman 2. What that does is it
+
+79
+00:03:35,280 --> 00:03:41,519
+takes Bruce puts it in first, Wayne puts
+
+80
+00:03:38,319 --> 00:03:43,840
+it in last, Batman puts it in alias and
+
+81
+00:03:41,519 --> 00:03:46,319
+20 and puts it in number of villains.
+
+82
+00:03:43,840 --> 00:03:48,959
+The problem becomes when there's a data
+
+83
+00:03:46,319 --> 00:03:53,200
+entry error and Wayne is actually
+
+84
+00:03:48,959 --> 00:03:55,920
+swapped places with Batman.
+
+85
+00:03:53,200 --> 00:03:58,720
+Oops.
+
+86
+00:03:55,920 --> 00:04:00,480
+Now, this destructuring is going to take
+
+87
+00:03:58,720 --> 00:04:02,319
+Bruce and put it in first, which works,
+
+88
+00:04:00,480 --> 00:04:03,920
+but it's going to put Batman in last.
+
+89
+00:04:02,319 --> 00:04:08,640
+And his last name is not Batman. His
+
+90
+00:04:03,920 --> 00:04:10,799
+last name is Wayne. Um, with an object,
+
+91
+00:04:08,640 --> 00:04:13,040
+Bruce is firmly tied to first name,
+
+92
+00:04:10,799 --> 00:04:16,560
+which means when we access Batman. first
+
+93
+00:04:13,040 --> 00:04:16,560
+name, it will always be Bruce.

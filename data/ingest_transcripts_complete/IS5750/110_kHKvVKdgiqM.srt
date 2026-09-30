@@ -1,0 +1,119 @@
+1
+00:00:00,080 --> 00:00:04,400
+Okay, so let's take this a step further.
+
+2
+00:00:01,920 --> 00:00:07,120
+How would we access an object inside of
+
+3
+00:00:04,400 --> 00:00:08,639
+an array? Um, well, let's go back to our
+
+4
+00:00:07,120 --> 00:00:11,519
+syntax. How do we access something
+
+5
+00:00:08,639 --> 00:00:15,679
+inside of an array? Well, we would say
+
+6
+00:00:11,519 --> 00:00:17,199
+my array at the zero position. Great.
+
+7
+00:00:15,679 --> 00:00:20,800
+How would we access something inside of
+
+8
+00:00:17,199 --> 00:00:22,320
+an object? Well, we'd say my object dot
+
+9
+00:00:20,800 --> 00:00:24,160
+and then the name that we're trying to
+
+10
+00:00:22,320 --> 00:00:26,800
+access.
+
+11
+00:00:24,160 --> 00:00:29,439
+So, how would I print out Tim Drake?
+
+12
+00:00:26,800 --> 00:00:31,760
+Well, I would say console.log. And then
+
+13
+00:00:29,439 --> 00:00:33,600
+let's look at our syntax.
+
+14
+00:00:31,760 --> 00:00:35,600
+The object is inside of the array. How
+
+15
+00:00:33,600 --> 00:00:37,440
+do we access something in array? Well,
+
+16
+00:00:35,600 --> 00:00:40,239
+I've shown you that syntax here. So,
+
+17
+00:00:37,440 --> 00:00:41,840
+we'd say my array the zero position.
+
+18
+00:00:40,239 --> 00:00:44,640
+What is in the zero position of the
+
+19
+00:00:41,840 --> 00:00:46,480
+array? Well, it's an object. How do we
+
+20
+00:00:44,640 --> 00:00:48,559
+access something in an object? Well,
+
+21
+00:00:46,480 --> 00:00:51,120
+there's two ways. We could either say
+
+22
+00:00:48,559 --> 00:00:53,280
+name. So, we're saying go into the zero
+
+23
+00:00:51,120 --> 00:00:55,840
+position of the array, which is this,
+
+24
+00:00:53,280 --> 00:00:58,800
+and grab the name attribute,
+
+25
+00:00:55,840 --> 00:01:01,600
+which is this. Or the other way I could
+
+26
+00:00:58,800 --> 00:01:05,119
+do this is I say go into my array at the
+
+27
+00:01:01,600 --> 00:01:07,840
+zero position name. And in that way I
+
+28
+00:01:05,119 --> 00:01:09,920
+would be able to print out Tim Drake.
+
+29
+00:01:07,840 --> 00:01:13,840
+And that concludes this video on
+
+30
+00:01:09,920 --> 00:01:13,840
+accessing an object inside of an array.

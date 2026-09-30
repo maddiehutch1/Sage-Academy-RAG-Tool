@@ -1,0 +1,395 @@
+1
+00:00:00,080 --> 00:00:03,760
+All right. In the last video, I promised
+
+2
+00:00:02,159 --> 00:00:05,920
+that I'd show you how to make decisions
+
+3
+00:00:03,760 --> 00:00:07,359
+using code. So, let's actually do that.
+
+4
+00:00:05,920 --> 00:00:08,800
+Okay. So, the first thing you need to
+
+5
+00:00:07,359 --> 00:00:10,719
+know when you're making a decision is
+
+6
+00:00:08,800 --> 00:00:12,800
+you need to know how to compare things.
+
+7
+00:00:10,719 --> 00:00:14,480
+So, for example, in the decision we
+
+8
+00:00:12,800 --> 00:00:16,000
+discussed in the last video, my student
+
+9
+00:00:14,480 --> 00:00:18,160
+looked out the window and said, "If it's
+
+10
+00:00:16,000 --> 00:00:19,680
+nice outside, in other words, he was
+
+11
+00:00:18,160 --> 00:00:21,119
+checking what the condition of the
+
+12
+00:00:19,680 --> 00:00:22,560
+weather was." So, if you're going to
+
+13
+00:00:21,119 --> 00:00:25,039
+check what a condition is, you need to
+
+14
+00:00:22,560 --> 00:00:27,760
+make a comparison. So nice outside.
+
+15
+00:00:25,039 --> 00:00:30,800
+Maybe he was saying, "Is the temperature
+
+16
+00:00:27,760 --> 00:00:33,680
+greater than 70°?" Um, if it's greater
+
+17
+00:00:30,800 --> 00:00:36,320
+than 70°, then it's nice outside. Or
+
+18
+00:00:33,680 --> 00:00:38,800
+maybe he was saying, "If it's partly
+
+19
+00:00:36,320 --> 00:00:41,680
+cloudy, then it's nice outside." So when
+
+20
+00:00:38,800 --> 00:00:43,760
+he's making those comparisons, um, in
+
+21
+00:00:41,680 --> 00:00:46,160
+code, you need to use an operator to
+
+22
+00:00:43,760 --> 00:00:48,320
+make that comparison. So here are some
+
+23
+00:00:46,160 --> 00:00:50,640
+of the operators. If you want to
+
+24
+00:00:48,320 --> 00:00:53,120
+compare, um, to see if something is
+
+25
+00:00:50,640 --> 00:00:56,399
+exactly the same as something else. So,
+
+26
+00:00:53,120 --> 00:00:58,160
+in other words, um
+
+27
+00:00:56,399 --> 00:00:59,920
+someone enters like their password into
+
+28
+00:00:58,160 --> 00:01:01,680
+a system and you want to check that it's
+
+29
+00:00:59,920 --> 00:01:03,600
+the right password. You want to say is
+
+30
+00:01:01,680 --> 00:01:05,680
+the password they entered exactly the
+
+31
+00:01:03,600 --> 00:01:07,360
+same as the password we're storing. The
+
+32
+00:01:05,680 --> 00:01:10,159
+way you do that is you'd use a triple
+
+33
+00:01:07,360 --> 00:01:13,119
+equal sign.
+
+34
+00:01:10,159 --> 00:01:15,680
+Um if you wanted to see if something was
+
+35
+00:01:13,119 --> 00:01:18,560
+not equal, then you'd use exclamation
+
+36
+00:01:15,680 --> 00:01:20,479
+mark and then an equal sign.
+
+37
+00:01:18,560 --> 00:01:21,680
+Let's say for the case of the weather
+
+38
+00:01:20,479 --> 00:01:23,759
+that we were talking about, if it's
+
+39
+00:01:21,680 --> 00:01:25,920
+greater than 70°,
+
+40
+00:01:23,759 --> 00:01:30,400
+then he would consider it nice outside.
+
+41
+00:01:25,920 --> 00:01:33,360
+So, you would use the greater than. Um
+
+42
+00:01:30,400 --> 00:01:36,799
+maybe he's willing to include 70° in his
+
+43
+00:01:33,360 --> 00:01:38,240
+scale of nice. Um my student that we
+
+44
+00:01:36,799 --> 00:01:40,000
+referenced in the last video, in that
+
+45
+00:01:38,240 --> 00:01:41,759
+case, we would use the greater than or
+
+46
+00:01:40,000 --> 00:01:45,920
+equal to. So, you'd say greater than or
+
+47
+00:01:41,759 --> 00:01:48,479
+equal to 70°. It's nice outside. Um,
+
+48
+00:01:45,920 --> 00:01:50,079
+but we know that if it gets greater than
+
+49
+00:01:48,479 --> 00:01:51,759
+a certain temperature, it's also not so
+
+50
+00:01:50,079 --> 00:01:56,079
+nice outside. So maybe he was like, and
+
+51
+00:01:51,759 --> 00:01:58,159
+as long as it's less than 85. So
+
+52
+00:01:56,079 --> 00:02:01,360
+less than, that's the less than
+
+53
+00:01:58,159 --> 00:02:03,759
+operator. Um, maybe he's okay if it is
+
+54
+00:02:01,360 --> 00:02:05,360
+85 exactly. So then he could do a less
+
+55
+00:02:03,759 --> 00:02:06,960
+than
+
+56
+00:02:05,360 --> 00:02:08,879
+or equal operator. So these are the
+
+57
+00:02:06,960 --> 00:02:09,840
+operators we're going to use. Um, in the
+
+58
+00:02:08,879 --> 00:02:11,120
+next video, we're going to actually
+
+59
+00:02:09,840 --> 00:02:12,560
+write the if statement. But when you
+
+60
+00:02:11,120 --> 00:02:14,959
+want to make a comparison between two
+
+61
+00:02:12,560 --> 00:02:16,480
+variables, you put this between the two
+
+62
+00:02:14,959 --> 00:02:18,560
+variables.
+
+63
+00:02:16,480 --> 00:02:23,520
+So what I'm going to do is I'm going to
+
+64
+00:02:18,560 --> 00:02:25,520
+create a variable. Let password equal
+
+65
+00:02:23,520 --> 00:02:27,520
+password. Don't ever make that your
+
+66
+00:02:25,520 --> 00:02:28,959
+password. U but I'm going to for the
+
+67
+00:02:27,520 --> 00:02:31,599
+sake of this video. So we'll say let
+
+68
+00:02:28,959 --> 00:02:35,080
+password equal password. And then I'm
+
+69
+00:02:31,599 --> 00:02:35,080
+going to prompt
+
+70
+00:02:35,280 --> 00:02:39,959
+um what is your password?
+
+71
+00:02:40,480 --> 00:02:42,879
+And I'm going to store that in a
+
+72
+00:02:41,760 --> 00:02:45,519
+variable. So I need to create a
+
+73
+00:02:42,879 --> 00:02:49,280
+variable. So I'm going to say let
+
+74
+00:02:45,519 --> 00:02:51,440
+entered password equal prompt. What is
+
+75
+00:02:49,280 --> 00:02:53,760
+your password? And then what I'm going
+
+76
+00:02:51,440 --> 00:02:57,200
+to do is I'm going to alert the result
+
+77
+00:02:53,760 --> 00:03:01,280
+of comparing password
+
+78
+00:02:57,200 --> 00:03:03,599
+to the entered password.
+
+79
+00:03:01,280 --> 00:03:08,599
+So I'm going to save this.
+
+80
+00:03:03,599 --> 00:03:08,599
+I'm going to go live.
+
+81
+00:03:08,720 --> 00:03:12,599
+And it says false.
+
+82
+00:03:14,400 --> 00:03:18,560
+Um I think I must have saved. So what
+
+83
+00:03:17,200 --> 00:03:20,239
+we're going to do is we're going to
+
+84
+00:03:18,560 --> 00:03:22,400
+reload this page. Okay. What is your
+
+85
+00:03:20,239 --> 00:03:24,480
+password? Uh so we're going to say
+
+86
+00:03:22,400 --> 00:03:26,800
+password. That is the exact password.
+
+87
+00:03:24,480 --> 00:03:29,519
+And it says true. They are exactly the
+
+88
+00:03:26,800 --> 00:03:31,760
+same. Um we'll reload the page and we'll
+
+89
+00:03:29,519 --> 00:03:34,239
+put in something else.
+
+90
+00:03:31,760 --> 00:03:35,920
+And it says false. So those passwords
+
+91
+00:03:34,239 --> 00:03:38,080
+were not the same. So, we were able to
+
+92
+00:03:35,920 --> 00:03:40,879
+use this comparison operator in between
+
+93
+00:03:38,080 --> 00:03:42,560
+these two um variables to figure out if
+
+94
+00:03:40,879 --> 00:03:44,400
+they were exactly the same. And then it
+
+95
+00:03:42,560 --> 00:03:45,840
+returned true or false. So, in this
+
+96
+00:03:44,400 --> 00:03:47,360
+case, if we entered the right password,
+
+97
+00:03:45,840 --> 00:03:49,120
+it returned true. If we entered the
+
+98
+00:03:47,360 --> 00:03:53,040
+wrong password, it returned false. And
+
+99
+00:03:49,120 --> 00:03:53,040
+we'll take advantage of that in the next

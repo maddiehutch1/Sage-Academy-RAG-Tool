@@ -1,0 +1,1147 @@
+1
+00:00:00,080 --> 00:00:04,960
+All right, let's get started. So, the
+
+2
+00:00:02,159 --> 00:00:10,040
+thing that we want to do um is we want
+
+3
+00:00:04,960 --> 00:00:10,040
+to write two functions. And
+
+4
+00:00:10,639 --> 00:00:15,920
+I'm just going to zoom my code out a
+
+5
+00:00:12,559 --> 00:00:17,359
+little bit. Okay, so this toggle die
+
+6
+00:00:15,920 --> 00:00:18,880
+hold function is one of the functions
+
+7
+00:00:17,359 --> 00:00:20,080
+we'll need to write. And this roll dice
+
+8
+00:00:18,880 --> 00:00:22,240
+function is the other function we'll
+
+9
+00:00:20,080 --> 00:00:23,840
+need to write. As always, I am going to
+
+10
+00:00:22,240 --> 00:00:26,840
+put my name and a description at the
+
+11
+00:00:23,840 --> 00:00:26,840
+top.
+
+12
+00:00:33,440 --> 00:00:38,239
+And then now we can get started. So if
+
+13
+00:00:35,840 --> 00:00:40,079
+we look over here, this toggle die hold
+
+14
+00:00:38,239 --> 00:00:41,840
+is receiving a number and that number
+
+15
+00:00:40,079 --> 00:00:44,079
+corresponds with this ID. And you can
+
+16
+00:00:41,840 --> 00:00:45,840
+see that on each of those lines. So I
+
+17
+00:00:44,079 --> 00:00:48,320
+need to write toggle die hold such that
+
+18
+00:00:45,840 --> 00:00:51,440
+it takes one of those numbers. So I'm
+
+19
+00:00:48,320 --> 00:00:55,199
+going to write function
+
+20
+00:00:51,440 --> 00:00:57,760
+toggle by hold and I'm going to accept
+
+21
+00:00:55,199 --> 00:01:02,399
+an ID and I'm going to adjust based on
+
+22
+00:00:57,760 --> 00:01:04,799
+what that ID says to do. So if we come
+
+23
+00:01:02,399 --> 00:01:06,560
+back over to the instructions, it says
+
+24
+00:01:04,799 --> 00:01:08,240
+we should accept a parameter called ID.
+
+25
+00:01:06,560 --> 00:01:10,000
+We've done that. Now we need to access
+
+26
+00:01:08,240 --> 00:01:11,840
+the corresponding image element for the
+
+27
+00:01:10,000 --> 00:01:14,000
+die and toggle the attribute data
+
+28
+00:01:11,840 --> 00:01:18,479
+active. So the attribute data active is
+
+29
+00:01:14,000 --> 00:01:22,960
+either storing true or false. And if we
+
+30
+00:01:18,479 --> 00:01:24,799
+and it says here that it starts as true
+
+31
+00:01:22,960 --> 00:01:26,720
+and we can actually confirm that. So
+
+32
+00:01:24,799 --> 00:01:29,119
+data active starts as true. So all of
+
+33
+00:01:26,720 --> 00:01:31,360
+those are true. So what we want to do is
+
+34
+00:01:29,119 --> 00:01:32,960
+we want to access the element based on
+
+35
+00:01:31,360 --> 00:01:35,520
+the ID. To do that we're going to say
+
+36
+00:01:32,960 --> 00:01:37,759
+document.getelement by ID. We're going
+
+37
+00:01:35,520 --> 00:01:40,400
+to pass in the ID that we received. And
+
+38
+00:01:37,759 --> 00:01:43,119
+then we're going to get attribute not
+
+39
+00:01:40,400 --> 00:01:45,280
+animations get attribute.
+
+40
+00:01:43,119 --> 00:01:47,360
+And the attribute we want is data
+
+41
+00:01:45,280 --> 00:01:50,320
+active.
+
+42
+00:01:47,360 --> 00:01:52,640
+And then um once we've got that, we want
+
+43
+00:01:50,320 --> 00:01:54,159
+to store it in a variable. Um I am going
+
+44
+00:01:52,640 --> 00:01:55,840
+to put a semicolon at the end of that
+
+45
+00:01:54,159 --> 00:01:59,200
+line. All right. So let's create a
+
+46
+00:01:55,840 --> 00:02:03,280
+variable called let current active
+
+47
+00:01:59,200 --> 00:02:04,719
+status equal grabbing that attribute.
+
+48
+00:02:03,280 --> 00:02:08,720
+Once we've got that attribute, we want
+
+49
+00:02:04,719 --> 00:02:12,319
+to toggle it. So we'll say um
+
+50
+00:02:08,720 --> 00:02:15,120
+let new status equal the current active
+
+51
+00:02:12,319 --> 00:02:17,120
+status. And if the current active status
+
+52
+00:02:15,120 --> 00:02:19,440
+is
+
+53
+00:02:17,120 --> 00:02:21,920
+um
+
+54
+00:02:19,440 --> 00:02:25,200
+if the current active status is true
+
+55
+00:02:21,920 --> 00:02:27,440
+then we want to set it to false.
+
+56
+00:02:25,200 --> 00:02:29,840
+Otherwise sorry yeah otherwise we want
+
+57
+00:02:27,440 --> 00:02:31,520
+to set it to true.
+
+58
+00:02:29,840 --> 00:02:33,280
+So basically we're saying if it is true
+
+59
+00:02:31,520 --> 00:02:35,920
+set it false. If it's false set it to
+
+60
+00:02:33,280 --> 00:02:38,720
+true.
+
+61
+00:02:35,920 --> 00:02:39,599
+And we do need to actually reapply that.
+
+62
+00:02:38,720 --> 00:02:41,360
+So we're going to say
+
+63
+00:02:39,599 --> 00:02:43,599
+document.getelement
+
+64
+00:02:41,360 --> 00:02:45,280
+by ID. We're going to access the ID.
+
+65
+00:02:43,599 --> 00:02:48,720
+We're going to call set attribute. The
+
+66
+00:02:45,280 --> 00:02:50,879
+attribute we want to set is data active.
+
+67
+00:02:48,720 --> 00:02:54,920
+And what do we want to set it to? We
+
+68
+00:02:50,879 --> 00:02:54,920
+want to set it to the new status.
+
+69
+00:02:55,440 --> 00:02:58,720
+Great.
+
+70
+00:02:57,040 --> 00:03:00,640
+Okay,
+
+71
+00:02:58,720 --> 00:03:03,280
+let's just go test this to make sure it
+
+72
+00:03:00,640 --> 00:03:05,360
+works. So, we're going to come to our
+
+73
+00:03:03,280 --> 00:03:06,959
+die roller. I'm going to inspect the
+
+74
+00:03:05,360 --> 00:03:08,879
+page. I'm going to rightclick here and
+
+75
+00:03:06,959 --> 00:03:10,879
+click inspect so that it pops open my
+
+76
+00:03:08,879 --> 00:03:14,239
+image. All right. So it has a data
+
+77
+00:03:10,879 --> 00:03:19,319
+active to equal to true if I click it.
+
+78
+00:03:14,239 --> 00:03:19,319
+Oh, I had a debug point. Um,
+
+79
+00:03:19,840 --> 00:03:23,200
+so it has data active equal to true. If
+
+80
+00:03:21,440 --> 00:03:28,040
+I click it, nothing happened. Let's
+
+81
+00:03:23,200 --> 00:03:28,040
+check the console. Um,
+
+82
+00:03:28,640 --> 00:03:34,000
+okay. So let's check our logic. Um, if
+
+83
+00:03:32,720 --> 00:03:35,360
+something doesn't work the way we
+
+84
+00:03:34,000 --> 00:03:36,319
+expect, we will want to put a
+
+85
+00:03:35,360 --> 00:03:38,319
+breakpoint. So I'm going to come to
+
+86
+00:03:36,319 --> 00:03:40,000
+sources. Going to click on script.js.
+
+87
+00:03:38,319 --> 00:03:42,480
+I'm going to put a break point here and
+
+88
+00:03:40,000 --> 00:03:44,720
+I'm going to click the die. Okay. So,
+
+89
+00:03:42,480 --> 00:03:48,080
+our current active status, it's going to
+
+90
+00:03:44,720 --> 00:03:51,120
+get that attribute. If we hit next, our
+
+91
+00:03:48,080 --> 00:03:54,239
+current active status is true. Um, true
+
+92
+00:03:51,120 --> 00:03:56,959
+should be slightly equal to true, not
+
+93
+00:03:54,239 --> 00:03:58,640
+equal on types, but it has single it has
+
+94
+00:03:56,959 --> 00:04:00,560
+quotes around it. So, if we make this
+
+95
+00:03:58,640 --> 00:04:02,159
+comparison, they should be equal. So,
+
+96
+00:04:00,560 --> 00:04:06,000
+the result of new status should be
+
+97
+00:04:02,159 --> 00:04:09,599
+false. We'll hit next. And the result of
+
+98
+00:04:06,000 --> 00:04:09,599
+new status is true.
+
+99
+00:04:11,439 --> 00:04:15,439
+H
+
+100
+00:04:12,959 --> 00:04:18,439
+current active status is true and we
+
+101
+00:04:15,439 --> 00:04:18,439
+made
+
+102
+00:04:19,120 --> 00:04:22,120
+H
+
+103
+00:04:22,240 --> 00:04:25,759
+well we know that the true comes back in
+
+104
+00:04:24,240 --> 00:04:29,120
+quotes. So let's just go adjust our
+
+105
+00:04:25,759 --> 00:04:31,919
+logic there. Um so we're going to say if
+
+106
+00:04:29,120 --> 00:04:34,720
+current status is exactly equal to the
+
+107
+00:04:31,919 --> 00:04:36,479
+text true then we want to set it to
+
+108
+00:04:34,720 --> 00:04:38,560
+false. Otherwise, we want to set it to
+
+109
+00:04:36,479 --> 00:04:40,320
+true. Um, we're going to remove our
+
+110
+00:04:38,560 --> 00:04:44,240
+breakpoint,
+
+111
+00:04:40,320 --> 00:04:46,960
+hit continue, reload the page, come to
+
+112
+00:04:44,240 --> 00:04:48,639
+elements, click the die, and now it's
+
+113
+00:04:46,960 --> 00:04:51,280
+adjusting. It's going from true to false
+
+114
+00:04:48,639 --> 00:04:53,759
+and false to true. So now our logic
+
+115
+00:04:51,280 --> 00:04:56,880
+works.
+
+116
+00:04:53,759 --> 00:05:00,080
+Um, let's look at the next step. The
+
+117
+00:04:56,880 --> 00:05:02,400
+next step is to either add or remove the
+
+118
+00:05:00,080 --> 00:05:04,479
+held class from the class list. The
+
+119
+00:05:02,400 --> 00:05:07,360
+class should be held if data active is
+
+120
+00:05:04,479 --> 00:05:09,840
+false. The class should not be held if
+
+121
+00:05:07,360 --> 00:05:13,199
+data active is true.
+
+122
+00:05:09,840 --> 00:05:16,080
+So, um, I'm just going to copy this so I
+
+123
+00:05:13,199 --> 00:05:20,360
+don't have to toggle back and forth
+
+124
+00:05:16,080 --> 00:05:20,360
+and I'm going to put it in here.
+
+125
+00:05:23,120 --> 00:05:26,120
+Okay.
+
+126
+00:05:28,000 --> 00:05:35,600
+So um new status is going to be either
+
+127
+00:05:32,000 --> 00:05:37,520
+true or false. Um and the new status is
+
+128
+00:05:35,600 --> 00:05:40,000
+going to be what the element currently
+
+129
+00:05:37,520 --> 00:05:41,600
+has as its status. So we can use new
+
+130
+00:05:40,000 --> 00:05:46,000
+status in this if statement. So we'll
+
+131
+00:05:41,600 --> 00:05:48,320
+say if and it says if
+
+132
+00:05:46,000 --> 00:05:52,560
+the class should be held if data active
+
+133
+00:05:48,320 --> 00:05:57,360
+is false. So if
+
+134
+00:05:52,560 --> 00:05:59,919
+data if new status so we'll say if new
+
+135
+00:05:57,360 --> 00:06:03,280
+status because we're checking if it's
+
+136
+00:05:59,919 --> 00:06:05,759
+true. If it's true the clash should not
+
+137
+00:06:03,280 --> 00:06:07,680
+be held. Well one of the ways you can
+
+138
+00:06:05,759 --> 00:06:09,360
+edit classes is you can say
+
+139
+00:06:07,680 --> 00:06:12,560
+document.getelement
+
+140
+00:06:09,360 --> 00:06:14,639
+by ID. Once you've got the ID then you
+
+141
+00:06:12,560 --> 00:06:16,960
+can access the class list. What that
+
+142
+00:06:14,639 --> 00:06:19,280
+does is it takes all of the CSS classes
+
+143
+00:06:16,960 --> 00:06:20,960
+that are listed out here and it converts
+
+144
+00:06:19,280 --> 00:06:23,120
+it into a list that you can add and
+
+145
+00:06:20,960 --> 00:06:25,039
+remove from. Because this is a
+
+146
+00:06:23,120 --> 00:06:27,120
+customuilt list, you have to use their
+
+147
+00:06:25,039 --> 00:06:29,919
+built-in methods. One of those built-in
+
+148
+00:06:27,120 --> 00:06:32,000
+methods is add and one of the built-in
+
+149
+00:06:29,919 --> 00:06:35,199
+methods is remove. So you can add and
+
+150
+00:06:32,000 --> 00:06:37,840
+remove classes. So if
+
+151
+00:06:35,199 --> 00:06:39,919
+the class is true, it should not contain
+
+152
+00:06:37,840 --> 00:06:44,600
+the held class. So we're going to remove
+
+153
+00:06:39,919 --> 00:06:44,600
+the held class. Otherwise,
+
+154
+00:06:46,720 --> 00:06:55,080
+we're going to add the held class.
+
+155
+00:06:51,039 --> 00:06:55,080
+Let's go see if that worked.
+
+156
+00:06:56,080 --> 00:07:01,440
+And it did. We can see that the class is
+
+157
+00:06:59,280 --> 00:07:03,120
+expanding to have held and then it's
+
+158
+00:07:01,440 --> 00:07:04,720
+being removed when we click off of the
+
+159
+00:07:03,120 --> 00:07:08,479
+die.
+
+160
+00:07:04,720 --> 00:07:10,479
+So, that correctly works. We can now
+
+161
+00:07:08,479 --> 00:07:12,160
+toggle the class. And I should probably
+
+162
+00:07:10,479 --> 00:07:18,680
+have some comments in here. So I'm going
+
+163
+00:07:12,160 --> 00:07:18,680
+to say grab the data active attribute
+
+164
+00:07:19,280 --> 00:07:25,440
+and toggle it.
+
+165
+00:07:22,720 --> 00:07:29,199
+And that will do all of that. And then
+
+166
+00:07:25,440 --> 00:07:31,280
+here we'll say apply the held class
+
+167
+00:07:29,199 --> 00:07:34,880
+accordingly.
+
+168
+00:07:31,280 --> 00:07:36,639
+Cool. So we've done part of it. Now we
+
+169
+00:07:34,880 --> 00:07:40,720
+can
+
+170
+00:07:36,639 --> 00:07:43,360
+um toggle these die. Um but what we want
+
+171
+00:07:40,720 --> 00:07:46,720
+is we want to roll all of the ones that
+
+172
+00:07:43,360 --> 00:07:49,759
+are still active.
+
+173
+00:07:46,720 --> 00:07:52,319
+And if we look at the instructions, it
+
+174
+00:07:49,759 --> 00:07:54,000
+says generate a random number for each
+
+175
+00:07:52,319 --> 00:07:56,319
+die that has the data active equal to
+
+176
+00:07:54,000 --> 00:07:59,360
+true. Um update the source and alt
+
+177
+00:07:56,319 --> 00:08:04,319
+attributes of the image accordingly. So,
+
+178
+00:07:59,360 --> 00:08:06,479
+if we look um the alt says die and then
+
+179
+00:08:04,319 --> 00:08:08,160
+um the number presently showing and
+
+180
+00:08:06,479 --> 00:08:10,000
+that's so that a screen reader can tell
+
+181
+00:08:08,160 --> 00:08:13,360
+someone what face is currently showing
+
+182
+00:08:10,000 --> 00:08:16,240
+on the die. So, um what we're going to
+
+183
+00:08:13,360 --> 00:08:19,440
+do is we're going to need to write this
+
+184
+00:08:16,240 --> 00:08:25,160
+roll the dice function.
+
+185
+00:08:19,440 --> 00:08:25,160
+So we'll say function roll the dice
+
+186
+00:08:25,919 --> 00:08:31,919
+and we need to access all of them that
+
+187
+00:08:28,639 --> 00:08:33,680
+have data active equal to true.
+
+188
+00:08:31,919 --> 00:08:37,760
+Well, one of the easy ways to do this is
+
+189
+00:08:33,680 --> 00:08:41,839
+to use query selector all.
+
+190
+00:08:37,760 --> 00:08:44,159
+And we can pass in a CSS selector. And
+
+191
+00:08:41,839 --> 00:08:46,000
+I'm going to select based on attribute.
+
+192
+00:08:44,159 --> 00:08:49,279
+And I'm going to select where data
+
+193
+00:08:46,000 --> 00:08:51,040
+active is
+
+194
+00:08:49,279 --> 00:08:53,200
+true
+
+195
+00:08:51,040 --> 00:08:54,640
+because I want all of the ones where
+
+196
+00:08:53,200 --> 00:08:56,000
+it's true. And I'm going to put single
+
+197
+00:08:54,640 --> 00:08:58,480
+quotes so that I can have the double
+
+198
+00:08:56,000 --> 00:09:00,720
+quotes inside of the selector. Okay. So
+
+199
+00:08:58,480 --> 00:09:03,760
+that should get me a list of all active
+
+200
+00:09:00,720 --> 00:09:08,640
+die. So, I'm going to say let all active
+
+201
+00:09:03,760 --> 00:09:10,399
+die or dice equal
+
+202
+00:09:08,640 --> 00:09:13,839
+all of those elements. So, it should
+
+203
+00:09:10,399 --> 00:09:17,480
+come out and it should grab each of
+
+204
+00:09:13,839 --> 00:09:17,480
+these image tags
+
+205
+00:09:17,839 --> 00:09:23,839
+um except for the ones that are false.
+
+206
+00:09:20,240 --> 00:09:25,519
+Then what I want to do is if we come
+
+207
+00:09:23,839 --> 00:09:27,680
+look at the instructions, I need to
+
+208
+00:09:25,519 --> 00:09:29,680
+generate a random number and update the
+
+209
+00:09:27,680 --> 00:09:32,720
+source and alt attributes of the image
+
+210
+00:09:29,680 --> 00:09:37,279
+accordingly. So I'm going to say for let
+
+211
+00:09:32,720 --> 00:09:42,959
+die of all active dice
+
+212
+00:09:37,279 --> 00:09:46,320
+and then I'm going to say let num equal
+
+213
+00:09:42,959 --> 00:09:49,279
+um math dolore
+
+214
+00:09:46,320 --> 00:09:51,360
+math do random and I'm going to multiply
+
+215
+00:09:49,279 --> 00:09:53,600
+it by six because this will give me a
+
+216
+00:09:51,360 --> 00:09:55,200
+number between 0 and five and if I add
+
+217
+00:09:53,600 --> 00:09:58,720
+one that'll give me a number between
+
+218
+00:09:55,200 --> 00:10:01,360
+zero and six. Then I want to take the
+
+219
+00:09:58,720 --> 00:10:02,640
+die and I want to set attribute. What
+
+220
+00:10:01,360 --> 00:10:04,880
+attribute do I want to set? Well, I want
+
+221
+00:10:02,640 --> 00:10:07,839
+to set its source. And what do I want to
+
+222
+00:10:04,880 --> 00:10:11,279
+set it source equal to? Well, right now
+
+223
+00:10:07,839 --> 00:10:14,800
+the source is images.png.
+
+224
+00:10:11,279 --> 00:10:17,200
+And that shows the one die face. So if I
+
+225
+00:10:14,800 --> 00:10:19,680
+want to follow that same pattern, then
+
+226
+00:10:17,200 --> 00:10:23,440
+the die face I want to show is images
+
+227
+00:10:19,680 --> 00:10:24,959
+slash whatever number I rolled.png.
+
+228
+00:10:23,440 --> 00:10:26,480
+So, what I'm going to do is I'm going to
+
+229
+00:10:24,959 --> 00:10:29,360
+make a template string here and I'm
+
+230
+00:10:26,480 --> 00:10:31,920
+going to say images slash and then I'm
+
+231
+00:10:29,360 --> 00:10:37,120
+going to put in num and then I'm going
+
+232
+00:10:31,920 --> 00:10:39,200
+to put png. So, that will update um its
+
+233
+00:10:37,120 --> 00:10:42,560
+source attribute.
+
+234
+00:10:39,200 --> 00:10:44,320
+And if we look at its alt attribute, its
+
+235
+00:10:42,560 --> 00:10:47,120
+alt attribute I'm actually just going to
+
+236
+00:10:44,320 --> 00:10:49,040
+copy one of these. It says die and then
+
+237
+00:10:47,120 --> 00:10:53,839
+the number that was rolled. So, we're
+
+238
+00:10:49,040 --> 00:10:56,880
+going to say die set attribute alt
+
+239
+00:10:53,839 --> 00:10:59,440
+And we want to set it equal to and
+
+240
+00:10:56,880 --> 00:11:01,839
+instead of saying
+
+241
+00:10:59,440 --> 00:11:05,279
+die one,
+
+242
+00:11:01,839 --> 00:11:09,320
+we're going to say die
+
+243
+00:11:05,279 --> 00:11:09,320
+and then the number we rolled.
+
+244
+00:11:10,880 --> 00:11:15,920
+Okay,
+
+245
+00:11:12,399 --> 00:11:19,279
+that should roll the dice all except for
+
+246
+00:11:15,920 --> 00:11:21,200
+the ones that are not active. So, let's
+
+247
+00:11:19,279 --> 00:11:23,680
+just come over and test that. So, if I
+
+248
+00:11:21,200 --> 00:11:26,160
+click I'm gonna hold this one and I'm
+
+249
+00:11:23,680 --> 00:11:31,360
+click roll the dieice. And it says roll
+
+250
+00:11:26,160 --> 00:11:33,279
+dice is not defined. And
+
+251
+00:11:31,360 --> 00:11:35,200
+it's because this function that it calls
+
+252
+00:11:33,279 --> 00:11:36,880
+on the on click is called roll dice. And
+
+253
+00:11:35,200 --> 00:11:39,279
+I named mine the wrong wrong thing. I
+
+254
+00:11:36,880 --> 00:11:41,680
+called it roll the dice. So, I'm going
+
+255
+00:11:39,279 --> 00:11:43,360
+to update my function name. Come back.
+
+256
+00:11:41,680 --> 00:11:46,000
+Hold this first one. Click roll the
+
+257
+00:11:43,360 --> 00:11:48,800
+dice. All of the others changed. Roll
+
+258
+00:11:46,000 --> 00:11:53,279
+the dice. And I'm going to pin that one.
+
+259
+00:11:48,800 --> 00:11:57,519
+and pin that one. Pin that one. And now
+
+260
+00:11:53,279 --> 00:11:59,200
+I've got all the dice that match. Um,
+
+261
+00:11:57,519 --> 00:12:02,000
+and so let's just double check our
+
+262
+00:11:59,200 --> 00:12:03,920
+instructions. Um, we generated a random
+
+263
+00:12:02,000 --> 00:12:05,519
+number. We updated source and alt. Let's
+
+264
+00:12:03,920 --> 00:12:08,560
+just make sure source and alt are
+
+265
+00:12:05,519 --> 00:12:12,399
+correct. Uh, this is die one. This is
+
+266
+00:12:08,560 --> 00:12:15,680
+die object HTML element.
+
+267
+00:12:12,399 --> 00:12:17,680
+Okay. So, we updated the alt
+
+268
+00:12:15,680 --> 00:12:20,160
+incorrectly. So, we're going to come
+
+269
+00:12:17,680 --> 00:12:24,560
+here. Ah, I put die and I should have
+
+270
+00:12:20,160 --> 00:12:26,880
+put no because die is an HTML element
+
+271
+00:12:24,560 --> 00:12:28,480
+because this query selector grabs HTML
+
+272
+00:12:26,880 --> 00:12:31,120
+elements, stores them in all active
+
+273
+00:12:28,480 --> 00:12:33,440
+dice. Die gets pulled out of all active
+
+274
+00:12:31,120 --> 00:12:35,360
+dice which means die is an HTML element
+
+275
+00:12:33,440 --> 00:12:38,639
+and I put the wrong one here. So, we'll
+
+276
+00:12:35,360 --> 00:12:40,720
+save that. We'll reload this page. I'll
+
+277
+00:12:38,639 --> 00:12:42,480
+click that. I'll click roll the die and
+
+278
+00:12:40,720 --> 00:12:44,560
+it updated them. So, this one says alt
+
+279
+00:12:42,480 --> 00:12:46,480
+die one and has the correct image
+
+280
+00:12:44,560 --> 00:12:49,440
+showing. So, we've now correctly updated
+
+281
+00:12:46,480 --> 00:12:51,440
+source and image. Um, everything is
+
+282
+00:12:49,440 --> 00:12:53,040
+working as expected. So, we just need to
+
+283
+00:12:51,440 --> 00:12:58,320
+add some comments. So, I'm going to say
+
+284
+00:12:53,040 --> 00:12:59,920
+grab all active dice and
+
+285
+00:12:58,320 --> 00:13:05,279
+up
+
+286
+00:12:59,920 --> 00:13:08,800
+roll the dice and update source and alt.
+
+287
+00:13:05,279 --> 00:13:08,800
+And if we save that, we are

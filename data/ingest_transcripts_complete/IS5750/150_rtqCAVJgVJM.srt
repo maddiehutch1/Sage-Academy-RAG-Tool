@@ -1,0 +1,255 @@
+1
+00:00:00,080 --> 00:00:05,440
+Okay, in the last uh video group I
+
+2
+00:00:03,280 --> 00:00:07,919
+showed you that
+
+3
+00:00:05,440 --> 00:00:10,160
+um an input could be hijacked if you
+
+4
+00:00:07,919 --> 00:00:12,160
+directly injected user input into your
+
+5
+00:00:10,160 --> 00:00:14,320
+inner HTML. They could someone could
+
+6
+00:00:12,160 --> 00:00:15,920
+hijack it and do some cross-ite
+
+7
+00:00:14,320 --> 00:00:18,960
+scripting, inject their own script and
+
+8
+00:00:15,920 --> 00:00:21,279
+it will run. And that's problematic cuz
+
+9
+00:00:18,960 --> 00:00:22,800
+I mean we need to build to-do lists. No,
+
+10
+00:00:21,279 --> 00:00:24,800
+but really we need to take user input
+
+11
+00:00:22,800 --> 00:00:27,359
+and we need to put it on the screen. And
+
+12
+00:00:24,800 --> 00:00:28,480
+so um I'm going to show you one of the
+
+13
+00:00:27,359 --> 00:00:30,320
+ways that you could do that. So let's
+
+14
+00:00:28,480 --> 00:00:33,680
+come over and take a look at the code.
+
+15
+00:00:30,320 --> 00:00:36,320
+So right now we have an element and we
+
+16
+00:00:33,680 --> 00:00:37,760
+are and we want it to be a list element
+
+17
+00:00:36,320 --> 00:00:39,680
+so that we can keep adding items to
+
+18
+00:00:37,760 --> 00:00:41,680
+this. In the past I converted this to a
+
+19
+00:00:39,680 --> 00:00:44,640
+div and then just directly appended text
+
+20
+00:00:41,680 --> 00:00:46,559
+content to it. And that filtered out any
+
+21
+00:00:44,640 --> 00:00:49,039
+script tags, anything like that that
+
+22
+00:00:46,559 --> 00:00:51,120
+someone could have injected. Um but it'd
+
+23
+00:00:49,039 --> 00:00:53,360
+be really nice to append list items kind
+
+24
+00:00:51,120 --> 00:00:54,879
+of like I'm doing here. Um so instead of
+
+25
+00:00:53,360 --> 00:00:57,600
+using inner HTML, we're going to use
+
+26
+00:00:54,879 --> 00:01:00,879
+something else. So, we still do want to
+
+27
+00:00:57,600 --> 00:01:02,640
+get their input. Um, that is valuable.
+
+28
+00:01:00,879 --> 00:01:04,479
+And so, we're going to keep grabbing the
+
+29
+00:01:02,640 --> 00:01:07,119
+input. We're going out to the DOM and
+
+30
+00:01:04,479 --> 00:01:09,760
+grabbing the input. Rather than using
+
+31
+00:01:07,119 --> 00:01:13,760
+inner HTML,
+
+32
+00:01:09,760 --> 00:01:15,280
+we are going to create a list item. So,
+
+33
+00:01:13,760 --> 00:01:16,960
+let's create our list item. So, we'll
+
+34
+00:01:15,280 --> 00:01:18,720
+say document
+
+35
+00:01:16,960 --> 00:01:20,240
+create
+
+36
+00:01:18,720 --> 00:01:22,560
+um
+
+37
+00:01:20,240 --> 00:01:24,000
+elements.
+
+38
+00:01:22,560 --> 00:01:26,320
+And then we need to give it a tag name.
+
+39
+00:01:24,000 --> 00:01:30,479
+And in this case, we want a list item.
+
+40
+00:01:26,320 --> 00:01:32,479
+So now we have created a list item. Um,
+
+41
+00:01:30,479 --> 00:01:34,640
+and let's actually store it in a
+
+42
+00:01:32,479 --> 00:01:37,360
+variable for now. We'll say my list item
+
+43
+00:01:34,640 --> 00:01:39,280
+equals we've now created a list item.
+
+44
+00:01:37,360 --> 00:01:41,840
+Once we've created it, we could access
+
+45
+00:01:39,280 --> 00:01:45,600
+the list item and set its text content
+
+46
+00:01:41,840 --> 00:01:47,920
+equal to uh the inputs value.
+
+47
+00:01:45,600 --> 00:01:50,880
+So, what we're saying is go out to the
+
+48
+00:01:47,920 --> 00:01:52,960
+DOM, grab the input,
+
+49
+00:01:50,880 --> 00:01:55,600
+create an element,
+
+50
+00:01:52,960 --> 00:01:57,680
+put the text content there, and notice
+
+51
+00:01:55,600 --> 00:02:00,159
+because we're setting text content, they
+
+52
+00:01:57,680 --> 00:02:02,079
+can no longer inject a button. And then
+
+53
+00:02:00,159 --> 00:02:04,000
+let's set the value back to nothing and
+
+54
+00:02:02,079 --> 00:02:06,399
+set the focus. And you would think that
+
+55
+00:02:04,000 --> 00:02:10,560
+this would work. So, we can say go
+
+56
+00:02:06,399 --> 00:02:13,440
+shopping, add item. Where did it go?
+
+57
+00:02:10,560 --> 00:02:15,360
+Well, if you think back to the video a
+
+58
+00:02:13,440 --> 00:02:17,040
+while ago that talked about HTML trees
+
+59
+00:02:15,360 --> 00:02:19,360
+and how everything needed to fall within
+
+60
+00:02:17,040 --> 00:02:21,680
+HTML tags and then within the body tags
+
+61
+00:02:19,360 --> 00:02:23,760
+and how there was a whole hierarchy of
+
+62
+00:02:21,680 --> 00:02:25,440
+tags. We've created a tag, but we
+
+63
+00:02:23,760 --> 00:02:28,319
+haven't put it anywhere. And that will
+
+64
+00:02:25,440 --> 00:02:28,319
+be the topic of the next

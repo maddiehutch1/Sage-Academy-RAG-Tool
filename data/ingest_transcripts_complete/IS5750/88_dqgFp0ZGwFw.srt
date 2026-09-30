@@ -1,0 +1,339 @@
+1
+00:00:00,080 --> 00:00:05,600
+Okay, it's time to have some talk about
+
+2
+00:00:02,639 --> 00:00:07,600
+definitions and terminology.
+
+3
+00:00:05,600 --> 00:00:09,679
+For the past few videos, I've tried to
+
+4
+00:00:07,600 --> 00:00:10,800
+use simple terms, things that uh you
+
+5
+00:00:09,679 --> 00:00:12,320
+don't have to be a programmer to
+
+6
+00:00:10,800 --> 00:00:14,000
+understand, but when you have a
+
+7
+00:00:12,320 --> 00:00:15,839
+technical interview, they are going to
+
+8
+00:00:14,000 --> 00:00:17,119
+expect you to know the right word for
+
+9
+00:00:15,839 --> 00:00:18,640
+some of the things that we've used in
+
+10
+00:00:17,119 --> 00:00:20,160
+the past few videos. So, I want to give
+
+11
+00:00:18,640 --> 00:00:23,119
+you the right word for those so you're
+
+12
+00:00:20,160 --> 00:00:24,720
+not confused in an interview or um just
+
+13
+00:00:23,119 --> 00:00:26,160
+if in case you need to do some extra
+
+14
+00:00:24,720 --> 00:00:27,519
+searching about that term, I want to
+
+15
+00:00:26,160 --> 00:00:29,359
+give you the right term for it. So,
+
+16
+00:00:27,519 --> 00:00:31,359
+let's talk about some definitions. I'm
+
+17
+00:00:29,359 --> 00:00:33,440
+gonna share my screen real quick. All
+
+18
+00:00:31,359 --> 00:00:36,160
+right. So, here I've written a function
+
+19
+00:00:33,440 --> 00:00:38,399
+and I used the older syntax. Um, that's
+
+20
+00:00:36,160 --> 00:00:41,200
+because um I need it to help you
+
+21
+00:00:38,399 --> 00:00:43,440
+understand some definitions. So, the
+
+22
+00:00:41,200 --> 00:00:46,800
+first thing is that writing this right
+
+23
+00:00:43,440 --> 00:00:49,280
+here is called declaring a function.
+
+24
+00:00:46,800 --> 00:00:51,520
+When you declare a function, I told you
+
+25
+00:00:49,280 --> 00:00:54,399
+that you can define some places where
+
+26
+00:00:51,520 --> 00:00:58,160
+you can receive some input. When you
+
+27
+00:00:54,399 --> 00:01:01,199
+define those, we call those parameters.
+
+28
+00:00:58,160 --> 00:01:04,799
+So input one and input two I've called
+
+29
+00:01:01,199 --> 00:01:07,600
+param 1 and param 2. That is because
+
+30
+00:01:04,799 --> 00:01:09,840
+when you define places for input to come
+
+31
+00:01:07,600 --> 00:01:12,960
+into your function you are creating
+
+32
+00:01:09,840 --> 00:01:14,720
+parameters. So up here is called a
+
+33
+00:01:12,960 --> 00:01:16,799
+parameter.
+
+34
+00:01:14,720 --> 00:01:18,799
+When you put parentheses after a
+
+35
+00:01:16,799 --> 00:01:21,759
+function it is called calling the
+
+36
+00:01:18,799 --> 00:01:23,840
+function or executing the function.
+
+37
+00:01:21,759 --> 00:01:25,920
+The pieces of information that you put
+
+38
+00:01:23,840 --> 00:01:28,640
+into the function the actual real
+
+39
+00:01:25,920 --> 00:01:32,320
+information. So where I'm putting a one
+
+40
+00:01:28,640 --> 00:01:35,360
+or a two, those are called arguments. A
+
+41
+00:01:32,320 --> 00:01:38,799
+function takes arguments, stores them in
+
+42
+00:01:35,360 --> 00:01:40,400
+parameters, and then executes it. So
+
+43
+00:01:38,799 --> 00:01:42,240
+when you're defining the function,
+
+44
+00:01:40,400 --> 00:01:43,680
+they're called parameters. When you're
+
+45
+00:01:42,240 --> 00:01:45,280
+putting information in and you're
+
+46
+00:01:43,680 --> 00:01:48,880
+calling the function, they're called
+
+47
+00:01:45,280 --> 00:01:50,880
+arguments. So these are arguments. One
+
+48
+00:01:48,880 --> 00:01:54,240
+and two are arguments. Three and four
+
+49
+00:01:50,880 --> 00:01:55,920
+are arguments. Pam one and param 2 are
+
+50
+00:01:54,240 --> 00:01:57,200
+parameters.
+
+51
+00:01:55,920 --> 00:01:58,880
+Nothing has changed about how this
+
+52
+00:01:57,200 --> 00:02:00,479
+function works. So just to be clear,
+
+53
+00:01:58,880 --> 00:02:03,600
+this function still takes two pieces of
+
+54
+00:02:00,479 --> 00:02:06,000
+input, does some work, and returns the
+
+55
+00:02:03,600 --> 00:02:08,720
+output. In this case, it's taking 1 and
+
+56
+00:02:06,000 --> 00:02:10,399
+two as input and returning 1 + 2. In
+
+57
+00:02:08,720 --> 00:02:13,760
+this case, it's taking three and four as
+
+58
+00:02:10,399 --> 00:02:15,680
+input and returning 3 + 4. So nothing
+
+59
+00:02:13,760 --> 00:02:18,160
+has changed, but the definition of the
+
+60
+00:02:15,680 --> 00:02:20,560
+word is that down here, these are called
+
+61
+00:02:18,160 --> 00:02:22,640
+arguments. Up here in the definition of
+
+62
+00:02:20,560 --> 00:02:24,879
+the function, they're called parameters.
+
+63
+00:02:22,640 --> 00:02:26,640
+The next thing I want to talk about is
+
+64
+00:02:24,879 --> 00:02:29,599
+the thing I've called shorthand
+
+65
+00:02:26,640 --> 00:02:31,680
+functions. So if you wanted to create a
+
+66
+00:02:29,599 --> 00:02:33,920
+function where you say um where you put
+
+67
+00:02:31,680 --> 00:02:38,000
+the parentheses,
+
+68
+00:02:33,920 --> 00:02:40,080
+you put the little arrow and then
+
+69
+00:02:38,000 --> 00:02:43,040
+you write
+
+70
+00:02:40,080 --> 00:02:47,280
+maybe you take a and b and you return a
+
+71
+00:02:43,040 --> 00:02:50,160
+plus b. So this right here is called a
+
+72
+00:02:47,280 --> 00:02:51,680
+lambda function or an arrow function.
+
+73
+00:02:50,160 --> 00:02:55,120
+It's called an arrow because of this
+
+74
+00:02:51,680 --> 00:02:56,640
+little arrow here. Um, but this is
+
+75
+00:02:55,120 --> 00:02:58,800
+called a lambda function. So, I called
+
+76
+00:02:56,640 --> 00:03:00,959
+them shorter functions or shorthand
+
+77
+00:02:58,800 --> 00:03:02,480
+functions in the previous videos, but if
+
+78
+00:03:00,959 --> 00:03:04,319
+you're ever talking to an employer and
+
+79
+00:03:02,480 --> 00:03:06,400
+they want you to use the actual term,
+
+80
+00:03:04,319 --> 00:03:07,920
+this is called a lambda function. And
+
+81
+00:03:06,400 --> 00:03:09,599
+occasionally in slang, it's called an
+
+82
+00:03:07,920 --> 00:03:11,599
+arrow function. So hopefully that helps
+
+83
+00:03:09,599 --> 00:03:13,120
+with definitions in case um you have
+
+84
+00:03:11,599 --> 00:03:15,760
+anything in an interview, you won't get
+
+85
+00:03:13,120 --> 00:03:15,760
+caught by surprise.

@@ -1,0 +1,387 @@
+1
+00:00:00,480 --> 00:00:06,640
+Okay. Um maybe you're like me and you've
+
+2
+00:00:03,360 --> 00:00:08,800
+noticed now that um there's a difference
+
+3
+00:00:06,640 --> 00:00:11,120
+between the way we were handling strings
+
+4
+00:00:08,800 --> 00:00:14,480
+in the last video and the way we were
+
+5
+00:00:11,120 --> 00:00:17,680
+handling numbers in the last few videos.
+
+6
+00:00:14,480 --> 00:00:19,760
+Um, so if you think back to how we
+
+7
+00:00:17,680 --> 00:00:22,240
+manipulated a string, if we had a string
+
+8
+00:00:19,760 --> 00:00:26,000
+and we called it my name and set it
+
+9
+00:00:22,240 --> 00:00:28,400
+equal to Bruce Wayne and we wanted to
+
+10
+00:00:26,000 --> 00:00:33,040
+pull a subsection out of that, we said
+
+11
+00:00:28,400 --> 00:00:36,399
+my name dot and then we did sub string
+
+12
+00:00:33,040 --> 00:00:38,160
+or substr, whichever one you preferred.
+
+13
+00:00:36,399 --> 00:00:41,040
+And you'll notice the syntax for that
+
+14
+00:00:38,160 --> 00:00:43,360
+was variable name dot and then something
+
+15
+00:00:41,040 --> 00:00:45,680
+you wanted to do with it. However, when
+
+16
+00:00:43,360 --> 00:00:47,840
+we wanted to manipulate um numbers like
+
+17
+00:00:45,680 --> 00:00:51,440
+take the square root of something um we
+
+18
+00:00:47,840 --> 00:00:52,640
+had a number like let my or we'll just
+
+19
+00:00:51,440 --> 00:00:56,800
+take this random number that we
+
+20
+00:00:52,640 --> 00:00:58,559
+generated here and if we wanted to um
+
+21
+00:00:56,800 --> 00:01:00,480
+take the square root of that then we had
+
+22
+00:00:58,559 --> 00:01:03,840
+to say maths
+
+23
+00:01:00,480 --> 00:01:05,840
+square root my num.
+
+24
+00:01:03,840 --> 00:01:08,159
+So in this case we were accessing an
+
+25
+00:01:05,840 --> 00:01:10,640
+outside library and using the square
+
+26
+00:01:08,159 --> 00:01:13,520
+root function um rather than just using
+
+27
+00:01:10,640 --> 00:01:16,080
+our variable name dot and then the
+
+28
+00:01:13,520 --> 00:01:17,600
+function we wanted to use.
+
+29
+00:01:16,080 --> 00:01:19,600
+So that was because we were covering the
+
+30
+00:01:17,600 --> 00:01:21,439
+math library there. Actually just like
+
+31
+00:01:19,600 --> 00:01:23,600
+there are with strings where you can say
+
+32
+00:01:21,439 --> 00:01:26,479
+my name dot and you can see everything
+
+33
+00:01:23,600 --> 00:01:28,560
+you could do with the string. There is a
+
+34
+00:01:26,479 --> 00:01:33,200
+similar thing for numbers. So, I'm going
+
+35
+00:01:28,560 --> 00:01:36,640
+to say my number equals 10.
+
+36
+00:01:33,200 --> 00:01:38,320
+And then I could say my number dot and
+
+37
+00:01:36,640 --> 00:01:41,759
+then you can see a list of things you
+
+38
+00:01:38,320 --> 00:01:43,840
+can do with it. So, uh the first one
+
+39
+00:01:41,759 --> 00:01:46,799
+we're going to talk about is two fixed.
+
+40
+00:01:43,840 --> 00:01:50,479
+So, two fixed is how you round numbers.
+
+41
+00:01:46,799 --> 00:01:52,240
+So, if I have 10.998
+
+42
+00:01:50,479 --> 00:01:54,640
+and I round want to round it to two
+
+43
+00:01:52,240 --> 00:01:57,520
+decimal places, then I'm going to use my
+
+44
+00:01:54,640 --> 00:02:01,840
+num.2fixed too fixed.
+
+45
+00:01:57,520 --> 00:02:05,920
+So the way this works is we'll say alert
+
+46
+00:02:01,840 --> 00:02:08,160
+my num oh not my name my num dot to
+
+47
+00:02:05,920 --> 00:02:10,399
+fixed and then we put the parenthesis.
+
+48
+00:02:08,160 --> 00:02:12,160
+Now I'm going to pause here to explain
+
+49
+00:02:10,399 --> 00:02:14,879
+the hint that pops up when you pop up
+
+50
+00:02:12,160 --> 00:02:16,400
+the hint. It says fraction digits and it
+
+51
+00:02:14,879 --> 00:02:18,400
+wants you to give a number and this is
+
+52
+00:02:16,400 --> 00:02:20,560
+the number of digits after the decimal
+
+53
+00:02:18,400 --> 00:02:22,319
+point and it must be in the range of 0
+
+54
+00:02:20,560 --> 00:02:24,319
+to 20 inclusive. So, you could have it
+
+55
+00:02:22,319 --> 00:02:26,720
+round to zero digits or you could have
+
+56
+00:02:24,319 --> 00:02:29,200
+it round to 20 digits after the decimal
+
+57
+00:02:26,720 --> 00:02:31,760
+place. In this case, I want to round it
+
+58
+00:02:29,200 --> 00:02:33,120
+to just oh, actually, let me make those
+
+59
+00:02:31,760 --> 00:02:35,280
+numbers something that will round a
+
+60
+00:02:33,120 --> 00:02:37,200
+little better. Um, so I want to round it
+
+61
+00:02:35,280 --> 00:02:40,879
+to the second decimal place after the
+
+62
+00:02:37,200 --> 00:02:43,760
+digit. So, if I put a two and I save
+
+63
+00:02:40,879 --> 00:02:49,080
+that, if we come over to our web
+
+64
+00:02:43,760 --> 00:02:49,080
+browser, we can see it rounded to 10.99.
+
+65
+00:02:49,120 --> 00:02:53,040
+So the reason I changed that was because
+
+66
+00:02:51,200 --> 00:02:55,840
+if this was a nine and we round it to
+
+67
+00:02:53,040 --> 00:02:58,720
+two decimal places and we reload the
+
+68
+00:02:55,840 --> 00:03:01,360
+page, it rounds to 11 because it rounds
+
+69
+00:02:58,720 --> 00:03:02,959
+up the nine and that becomes a 10. So
+
+70
+00:03:01,360 --> 00:03:06,959
+you carry the one and it rounds all the
+
+71
+00:03:02,959 --> 00:03:09,200
+way up to 11. So um two fixed allows you
+
+72
+00:03:06,959 --> 00:03:10,959
+to specify the number of decimal the
+
+73
+00:03:09,200 --> 00:03:12,720
+number of digits after the decimal
+
+74
+00:03:10,959 --> 00:03:15,120
+place.
+
+75
+00:03:12,720 --> 00:03:19,440
+Um, some other things you can do with my
+
+76
+00:03:15,120 --> 00:03:21,840
+numbers. You can say my num dot Oh, I
+
+77
+00:03:19,440 --> 00:03:25,280
+deleted my number. Sorry. We'll say let
+
+78
+00:03:21,840 --> 00:03:27,440
+my num equal
+
+79
+00:03:25,280 --> 00:03:31,680
+10.
+
+80
+00:03:27,440 --> 00:03:35,599
+You can say my num dot and you can say
+
+81
+00:03:31,680 --> 00:03:37,840
+to string. When you do this, it takes
+
+82
+00:03:35,599 --> 00:03:40,159
+your number and converts it into a
+
+83
+00:03:37,840 --> 00:03:42,959
+string. So it takes this 10 without
+
+84
+00:03:40,159 --> 00:03:45,120
+quotes and turns it into a 10 with
+
+85
+00:03:42,959 --> 00:03:48,720
+quotes.
+
+86
+00:03:45,120 --> 00:03:50,400
+So if we alert and we go back to a
+
+87
+00:03:48,720 --> 00:03:53,360
+concept we covered in a previous video
+
+88
+00:03:50,400 --> 00:03:56,879
+where we did type of. So if we said
+
+89
+00:03:53,360 --> 00:03:58,480
+alert the type of my num.2 string then
+
+90
+00:03:56,879 --> 00:04:01,280
+the message we get is that this should
+
+91
+00:03:58,480 --> 00:04:04,239
+be a string. So if we come over here and
+
+92
+00:04:01,280 --> 00:04:06,159
+we reload our page we get that this is a
+
+93
+00:04:04,239 --> 00:04:08,879
+string. So if you want to convert
+
+94
+00:04:06,159 --> 00:04:11,760
+something from a number into a string,
+
+95
+00:04:08,879 --> 00:04:13,840
+you'll use my num.ring.
+
+96
+00:04:11,760 --> 00:04:16,239
+And that concludes this video on working
+
+97
+00:04:13,840 --> 00:04:16,239
+with numbers.

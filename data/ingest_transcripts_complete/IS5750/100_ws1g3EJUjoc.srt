@@ -1,0 +1,315 @@
+1
+00:00:00,080 --> 00:00:04,880
+Okay, so we successfully sorted this
+
+2
+00:00:01,760 --> 00:00:07,520
+array and or sorry, filtered this array.
+
+3
+00:00:04,880 --> 00:00:09,679
+Um, and we were able to find those who
+
+4
+00:00:07,520 --> 00:00:11,280
+had less than five villains caught, but
+
+5
+00:00:09,679 --> 00:00:13,920
+maybe we want to keep all of the members
+
+6
+00:00:11,280 --> 00:00:16,240
+in the array and we just want to find um
+
+7
+00:00:13,920 --> 00:00:17,760
+the people or we just want to organize
+
+8
+00:00:16,240 --> 00:00:19,920
+them in order of the most villains
+
+9
+00:00:17,760 --> 00:00:22,640
+caught. So maybe let's just try to sort
+
+10
+00:00:19,920 --> 00:00:24,320
+them real quick. Um, so what I'm going
+
+11
+00:00:22,640 --> 00:00:26,800
+to do is I'm going to call this built-in
+
+12
+00:00:24,320 --> 00:00:29,920
+method called dotsort. And if we save
+
+13
+00:00:26,800 --> 00:00:33,440
+this and we come over here, let's look
+
+14
+00:00:29,920 --> 00:00:35,200
+at our array. Well, 10, 18, 25, 12.
+
+15
+00:00:33,440 --> 00:00:36,960
+Looks like it didn't sort it. It
+
+16
+00:00:35,200 --> 00:00:38,559
+actually did. If you look over here, it
+
+17
+00:00:36,960 --> 00:00:41,360
+goes Arthur, Barry, Bruce, Carter,
+
+18
+00:00:38,559 --> 00:00:43,120
+Clark, Courtney, Diana, Dina. And so,
+
+19
+00:00:41,360 --> 00:00:45,280
+you can see it sorted them in
+
+20
+00:00:43,120 --> 00:00:46,800
+alphabetical order, which is not what we
+
+21
+00:00:45,280 --> 00:00:47,840
+want. We want to sort them in numeric
+
+22
+00:00:46,800 --> 00:00:49,840
+order. If you're ever trying to sort
+
+23
+00:00:47,840 --> 00:00:52,079
+alphabetically, that is a great way to
+
+24
+00:00:49,840 --> 00:00:54,079
+do it. But if you want to sort them
+
+25
+00:00:52,079 --> 00:00:56,800
+numerically, so maybe we want to sort on
+
+26
+00:00:54,079 --> 00:00:58,320
+this number, then you need to give it a
+
+27
+00:00:56,800 --> 00:01:00,800
+function.
+
+28
+00:00:58,320 --> 00:01:02,719
+And I for one can never remember the
+
+29
+00:01:00,800 --> 00:01:06,320
+order of this function. So I generally
+
+30
+00:01:02,719 --> 00:01:08,080
+look it up. So right here it says sort
+
+31
+00:01:06,320 --> 00:01:09,439
+to sort numbers in ascending order, you
+
+32
+00:01:08,080 --> 00:01:12,960
+need to write a function that takes a
+
+33
+00:01:09,439 --> 00:01:15,439
+and b and returns a minus b.
+
+34
+00:01:12,960 --> 00:01:18,640
+In descending order, you take a and b
+
+35
+00:01:15,439 --> 00:01:21,200
+and return b minus a.
+
+36
+00:01:18,640 --> 00:01:23,520
+So I say I never remember but one of the
+
+37
+00:01:21,200 --> 00:01:25,439
+ways that you could try to remember is
+
+38
+00:01:23,520 --> 00:01:27,600
+this function that you give it needs to
+
+39
+00:01:25,439 --> 00:01:31,119
+take an A and a B
+
+40
+00:01:27,600 --> 00:01:34,479
+and it needs to return A minus B or B
+
+41
+00:01:31,119 --> 00:01:38,079
+minus A. If you want it in ascending
+
+42
+00:01:34,479 --> 00:01:39,920
+order then the A goes first. If you want
+
+43
+00:01:38,079 --> 00:01:42,320
+it in descending order then the B goes
+
+44
+00:01:39,920 --> 00:01:44,400
+first. Remember A goes first in
+
+45
+00:01:42,320 --> 00:01:47,439
+ascending order because ascending starts
+
+46
+00:01:44,400 --> 00:01:50,320
+with the letter A. All right. So then
+
+47
+00:01:47,439 --> 00:01:53,200
+we're going to say a. But remember
+
+48
+00:01:50,320 --> 00:01:56,000
+Justice League isn't storing numbers,
+
+49
+00:01:53,200 --> 00:01:58,159
+it's storing arrays. So if we want to
+
+50
+00:01:56,000 --> 00:02:01,360
+sort them based on the fourth position,
+
+51
+00:01:58,159 --> 00:02:05,040
+then we have to say a sorry at the three
+
+52
+00:02:01,360 --> 00:02:08,800
+position minus B at the three position.
+
+53
+00:02:05,040 --> 00:02:10,560
+So that will now compare 12 to 20 and
+
+54
+00:02:08,800 --> 00:02:13,840
+sort them. What order is it going to
+
+55
+00:02:10,560 --> 00:02:16,640
+sort them in? Well, A came first. A is
+
+56
+00:02:13,840 --> 00:02:19,760
+means ascending. So, we should get uh
+
+57
+00:02:16,640 --> 00:02:22,000
+Mr. Terrific first. If we come over to
+
+58
+00:02:19,760 --> 00:02:26,800
+Safari, sure enough, Mr. Terrific is
+
+59
+00:02:22,000 --> 00:02:28,319
+first and 1 2 3 3 4 5 55 5. And you can
+
+60
+00:02:26,800 --> 00:02:32,000
+see that we go all the way down that
+
+61
+00:02:28,319 --> 00:02:35,920
+list um in ascending order. If we swap
+
+62
+00:02:32,000 --> 00:02:38,400
+these and said, let's compare B minus A
+
+63
+00:02:35,920 --> 00:02:40,080
+and we save that and we come back, we
+
+64
+00:02:38,400 --> 00:02:41,840
+can see that they are now in descending
+
+65
+00:02:40,080 --> 00:02:43,519
+order, where Batman is the most
+
+66
+00:02:41,840 --> 00:02:46,480
+effective, having caught 20 villains
+
+67
+00:02:43,519 --> 00:02:49,280
+this month. And the Flash is the second
+
+68
+00:02:46,480 --> 00:02:51,040
+most having caught 18 villains. And we
+
+69
+00:02:49,280 --> 00:02:53,760
+can see that the list goes down from
+
+70
+00:02:51,040 --> 00:02:55,280
+there and it has been sorted. So when
+
+71
+00:02:53,760 --> 00:02:56,879
+you use the sort function to sort
+
+72
+00:02:55,280 --> 00:02:59,440
+numbers, you give it a function that
+
+73
+00:02:56,879 --> 00:03:02,080
+takes in two values from your array and
+
+74
+00:02:59,440 --> 00:03:04,239
+then it compares them. Um if you want it
+
+75
+00:03:02,080 --> 00:03:06,879
+in ascending order, put the a value or
+
+76
+00:03:04,239 --> 00:03:09,200
+the first value first. If you want it in
+
+77
+00:03:06,879 --> 00:03:11,840
+descending order, put the first value
+
+78
+00:03:09,200 --> 00:03:14,959
+second. And that is how you sort an
+
+79
+00:03:11,840 --> 00:03:14,959
+array in JavaScript.

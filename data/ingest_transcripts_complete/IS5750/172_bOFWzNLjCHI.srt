@@ -1,0 +1,251 @@
+1
+00:00:00,160 --> 00:00:06,960
+Okay, now that we now know how to chain
+
+2
+00:00:03,760 --> 00:00:08,720
+um promises and thens together to do
+
+3
+00:00:06,960 --> 00:00:10,400
+multiple operations that depend upon
+
+4
+00:00:08,720 --> 00:00:12,719
+each other, it's time to go back and
+
+5
+00:00:10,400 --> 00:00:15,360
+look at our callback code. So, if we
+
+6
+00:00:12,719 --> 00:00:17,359
+remember this terrible monstrosity, it's
+
+7
+00:00:15,360 --> 00:00:19,199
+time to simplify it a little bit. I'm
+
+8
+00:00:17,359 --> 00:00:20,960
+going to leave it here so you can see
+
+9
+00:00:19,199 --> 00:00:23,920
+it, but I'm going to comment it out and
+
+10
+00:00:20,960 --> 00:00:27,279
+I'm going to paste in the equivalent
+
+11
+00:00:23,920 --> 00:00:31,840
+when you're using promises.
+
+12
+00:00:27,279 --> 00:00:33,600
+So what we did is we said wait once
+
+13
+00:00:31,840 --> 00:00:36,160
+you've waited take the return value of
+
+14
+00:00:33,600 --> 00:00:39,040
+wait and because the return value is a
+
+15
+00:00:36,160 --> 00:00:42,160
+promise um we want you to wait until it
+
+16
+00:00:39,040 --> 00:00:44,079
+resolves and then log out the result and
+
+17
+00:00:42,160 --> 00:00:47,200
+then wait again then log the result then
+
+18
+00:00:44,079 --> 00:00:48,719
+wait again then log the result and it's
+
+19
+00:00:47,200 --> 00:00:50,719
+going to keep doing this. But if you
+
+20
+00:00:48,719 --> 00:00:52,719
+look at this, this code is so much
+
+21
+00:00:50,719 --> 00:00:54,160
+easier to read because you know it's
+
+22
+00:00:52,719 --> 00:00:55,360
+going to run this then, then it's going
+
+23
+00:00:54,160 --> 00:00:57,920
+to run this then, then then it's going
+
+24
+00:00:55,360 --> 00:00:59,600
+to run this then in order. And so
+
+25
+00:00:57,920 --> 00:01:01,120
+instead of having to figure out this
+
+26
+00:00:59,600 --> 00:01:02,879
+whole tree structure of callback
+
+27
+00:01:01,120 --> 00:01:06,159
+functions, you can take advantage of
+
+28
+00:01:02,879 --> 00:01:07,760
+promises to write then multiple times.
+
+29
+00:01:06,159 --> 00:01:10,400
+And I know now it's going to wait 5
+
+30
+00:01:07,760 --> 00:01:13,119
+seconds, then three, sorry, 3 seconds,
+
+31
+00:01:10,400 --> 00:01:14,960
+then five, then two, then four, then
+
+32
+00:01:13,119 --> 00:01:17,680
+one, then five, and it's just going to
+
+33
+00:01:14,960 --> 00:01:19,680
+keep going down that list. And I know
+
+34
+00:01:17,680 --> 00:01:22,479
+that it works that way because these
+
+35
+00:01:19,680 --> 00:01:24,799
+dotns are all chained together neatly.
+
+36
+00:01:22,479 --> 00:01:26,159
+And now I don't have this giant nested
+
+37
+00:01:24,799 --> 00:01:28,400
+structure that was going to keep nesting
+
+38
+00:01:26,159 --> 00:01:30,960
+further and further to the right until
+
+39
+00:01:28,400 --> 00:01:33,680
+it was off the screen. And so promises
+
+40
+00:01:30,960 --> 00:01:35,920
+are a way to simplify the way you write
+
+41
+00:01:33,680 --> 00:01:38,880
+your code. And it helps you avoid having
+
+42
+00:01:35,920 --> 00:01:42,720
+to write this many callback functions.
+
+43
+00:01:38,880 --> 00:01:44,880
+Um but and if this still looks like a
+
+44
+00:01:42,720 --> 00:01:47,680
+pain to you, that's cuz it still can't
+
+45
+00:01:44,880 --> 00:01:49,840
+be. And I am going to show you another
+
+46
+00:01:47,680 --> 00:01:51,280
+way to do this in the next video. So
+
+47
+00:01:49,840 --> 00:01:53,920
+we'll have a little moment of silence
+
+48
+00:01:51,280 --> 00:01:55,360
+for these developers, but way less short
+
+49
+00:01:53,920 --> 00:01:56,240
+of a moment of silence than we had for
+
+50
+00:01:55,360 --> 00:01:58,399
+the developers who had to write
+
+51
+00:01:56,240 --> 00:01:59,920
+callbacks. That's just terrible. Um, so
+
+52
+00:01:58,399 --> 00:02:02,719
+in the next video I'll show you another
+
+53
+00:01:59,920 --> 00:02:04,320
+fun way that makes it cuz it would be
+
+54
+00:02:02,719 --> 00:02:07,119
+nice if rather than writing our
+
+55
+00:02:04,320 --> 00:02:09,039
+asynchronous code like this is if we
+
+56
+00:02:07,119 --> 00:02:10,560
+wrote our asynchronous code like we
+
+57
+00:02:09,039 --> 00:02:12,480
+write our synchronous code. Wouldn't it
+
+58
+00:02:10,560 --> 00:02:14,560
+be nice if our JavaScript looked exactly
+
+59
+00:02:12,480 --> 00:02:16,080
+the same for functions that needed to
+
+60
+00:02:14,560 --> 00:02:18,720
+run in the background as it did for
+
+61
+00:02:16,080 --> 00:02:21,120
+functions that run normally? And if you
+
+62
+00:02:18,720 --> 00:02:23,680
+are thinking that great because there is
+
+63
+00:02:21,120 --> 00:02:23,680
+a way to do

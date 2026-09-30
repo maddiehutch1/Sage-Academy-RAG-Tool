@@ -1,0 +1,231 @@
+1
+00:00:00,080 --> 00:00:03,600
+Okay, so I kind of just glossed over the
+
+2
+00:00:01,839 --> 00:00:06,000
+fact that you can put arrays inside of
+
+3
+00:00:03,600 --> 00:00:09,519
+objects. So this the goal of this video
+
+4
+00:00:06,000 --> 00:00:13,840
+is to go over that a little more slowly
+
+5
+00:00:09,519 --> 00:00:15,920
+and a little more detail. So um I've
+
+6
+00:00:13,840 --> 00:00:19,760
+created two objects here, my object and
+
+7
+00:00:15,920 --> 00:00:22,080
+my array. My object has one key or one
+
+8
+00:00:19,760 --> 00:00:25,279
+thing that I can look up called key and
+
+9
+00:00:22,080 --> 00:00:28,000
+it's storing an array.
+
+10
+00:00:25,279 --> 00:00:29,920
+So let's just So how would I access
+
+11
+00:00:28,000 --> 00:00:31,519
+number three?
+
+12
+00:00:29,920 --> 00:00:32,960
+Well,
+
+13
+00:00:31,519 --> 00:00:34,719
+let's go over how we'd access something
+
+14
+00:00:32,960 --> 00:00:36,880
+in an array. If we want to access
+
+15
+00:00:34,719 --> 00:00:38,879
+something in an array, we say the name
+
+16
+00:00:36,880 --> 00:00:41,120
+of the array and then we put square
+
+17
+00:00:38,879 --> 00:00:44,239
+braces. And then if I want to access the
+
+18
+00:00:41,120 --> 00:00:46,480
+three in this array, it's in the 0 1 2
+
+19
+00:00:44,239 --> 00:00:48,960
+position. So that's how I'd access
+
+20
+00:00:46,480 --> 00:00:50,960
+something in that array.
+
+21
+00:00:48,960 --> 00:00:52,719
+Okay, how do we access something in an
+
+22
+00:00:50,960 --> 00:00:54,960
+object? Well, there's two ways to do it.
+
+23
+00:00:52,719 --> 00:00:59,039
+We can say
+
+24
+00:00:54,960 --> 00:01:03,680
+my object at the key position
+
+25
+00:00:59,039 --> 00:01:05,680
+or we can say my object.key.
+
+26
+00:01:03,680 --> 00:01:08,640
+Those are both valid ways to access
+
+27
+00:01:05,680 --> 00:01:12,240
+something out of a dictionary.
+
+28
+00:01:08,640 --> 00:01:15,760
+So what is inside of my object key?
+
+29
+00:01:12,240 --> 00:01:19,119
+Well, my object key is storing an array.
+
+30
+00:01:15,760 --> 00:01:21,439
+So that means that this is an array. How
+
+31
+00:01:19,119 --> 00:01:23,920
+do we access something out of an array?
+
+32
+00:01:21,439 --> 00:01:25,360
+I showed you that on line 17. So what
+
+33
+00:01:23,920 --> 00:01:26,720
+that means is we can say go into my
+
+34
+00:01:25,360 --> 00:01:29,280
+object. How do you access something out
+
+35
+00:01:26,720 --> 00:01:31,360
+of an object? by using the dot notation
+
+36
+00:01:29,280 --> 00:01:35,600
+or the square braces. So I'll say my
+
+37
+00:01:31,360 --> 00:01:37,600
+object key and then here I'll say at the
+
+38
+00:01:35,600 --> 00:01:39,280
+two position. What that does is says go
+
+39
+00:01:37,600 --> 00:01:42,240
+into my object. Once you're there, look
+
+40
+00:01:39,280 --> 00:01:45,840
+for a key called key. Once you're there,
+
+41
+00:01:42,240 --> 00:01:48,560
+look for the look in the second index.
+
+42
+00:01:45,840 --> 00:01:51,200
+So 0 1 2 and that will access this
+
+43
+00:01:48,560 --> 00:01:53,200
+three. If I wanted to do it using this
+
+44
+00:01:51,200 --> 00:01:55,280
+syntax, I'd say my object at the key
+
+45
+00:01:53,200 --> 00:01:56,960
+position and then once I'm there, what's
+
+46
+00:01:55,280 --> 00:01:58,640
+there? An array. How do I access
+
+47
+00:01:56,960 --> 00:02:01,200
+something out of an array? I use square
+
+48
+00:01:58,640 --> 00:02:04,079
+braces and then I would say at the two
+
+49
+00:02:01,200 --> 00:02:06,079
+position. Both of these are valid ways
+
+50
+00:02:04,079 --> 00:02:07,680
+of accessing that number. And hopefully
+
+51
+00:02:06,079 --> 00:02:09,679
+that makes sense because all we're doing
+
+52
+00:02:07,680 --> 00:02:11,840
+is we're accessing something in an
+
+53
+00:02:09,679 --> 00:02:13,360
+object which happens to be an array. And
+
+54
+00:02:11,840 --> 00:02:15,599
+so how do you access something out of an
+
+55
+00:02:13,360 --> 00:02:17,760
+array? Well, with the syntax we just
+
+56
+00:02:15,599 --> 00:02:20,160
+showed you on line 17. And that's how
+
+57
+00:02:17,760 --> 00:02:22,319
+you access an array that's inside of an
+
+58
+00:02:20,160 --> 00:02:22,319
+object.

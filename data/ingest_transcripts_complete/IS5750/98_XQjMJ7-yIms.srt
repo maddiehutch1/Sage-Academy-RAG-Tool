@@ -1,0 +1,487 @@
+1
+00:00:02,480 --> 00:00:06,240
+Okay, so why did I show you array
+
+2
+00:00:04,319 --> 00:00:08,400
+dstructuring and the spread operator?
+
+3
+00:00:06,240 --> 00:00:11,599
+Well, this becomes very helpful when you
+
+4
+00:00:08,400 --> 00:00:13,519
+start to have data inside of other data.
+
+5
+00:00:11,599 --> 00:00:16,000
+So, for example, if we took an array and
+
+6
+00:00:13,519 --> 00:00:17,440
+we stuck it inside of an array, then it
+
+7
+00:00:16,000 --> 00:00:18,640
+could get harder to loop through that.
+
+8
+00:00:17,440 --> 00:00:19,920
+We haven't done that before, so I'm
+
+9
+00:00:18,640 --> 00:00:21,520
+going to demonstrate that to you real
+
+10
+00:00:19,920 --> 00:00:24,320
+quick. So, let's say we've got one
+
+11
+00:00:21,520 --> 00:00:26,160
+superhero, which is Bruce Wayne Batman,
+
+12
+00:00:24,320 --> 00:00:27,840
+and he caught 20 villains. And we could
+
+13
+00:00:26,160 --> 00:00:29,679
+create another superhero right below and
+
+14
+00:00:27,840 --> 00:00:32,880
+we'd maybe call this superhero 1 and
+
+15
+00:00:29,679 --> 00:00:36,079
+we'd say um Clark K Superman caught 11
+
+16
+00:00:32,880 --> 00:00:38,000
+villains. Um or what we could do is we
+
+17
+00:00:36,079 --> 00:00:40,079
+could put it all in an array. So I'm
+
+18
+00:00:38,000 --> 00:00:42,559
+going to bring in that array that um
+
+19
+00:00:40,079 --> 00:00:45,360
+Chad GBT helpfully created for me called
+
+20
+00:00:42,559 --> 00:00:47,760
+the Justice League array. This array
+
+21
+00:00:45,360 --> 00:00:50,160
+contains arrays inside of it. So for
+
+22
+00:00:47,760 --> 00:00:52,160
+example, in the Justice League, we have
+
+23
+00:00:50,160 --> 00:00:57,280
+this array right here which represents
+
+24
+00:00:52,160 --> 00:01:00,559
+one superhero. It has Clark, Kent, and
+
+25
+00:00:57,280 --> 00:01:01,840
+Superman and 12 representing the number
+
+26
+00:01:00,559 --> 00:01:03,920
+of villains he caught this month. So,
+
+27
+00:01:01,840 --> 00:01:06,240
+his first name, his last name, his hero
+
+28
+00:01:03,920 --> 00:01:08,080
+alias, and the number of villains he
+
+29
+00:01:06,240 --> 00:01:10,400
+caught this month. And you notice that
+
+30
+00:01:08,080 --> 00:01:12,240
+it's done that for each of these. So, if
+
+31
+00:01:10,400 --> 00:01:14,560
+I were to loop through the Justice
+
+32
+00:01:12,240 --> 00:01:16,320
+League array, each item in the array is
+
+33
+00:01:14,560 --> 00:01:18,479
+another array. And I could loop through
+
+34
+00:01:16,320 --> 00:01:20,799
+that array as well. In fact, what I want
+
+35
+00:01:18,479 --> 00:01:23,280
+to do is I want to print out their first
+
+36
+00:01:20,799 --> 00:01:27,520
+name and their last name and then say
+
+37
+00:01:23,280 --> 00:01:29,759
+alias and then their alias and then
+
+38
+00:01:27,520 --> 00:01:31,360
+caught this many villains this month.
+
+39
+00:01:29,759 --> 00:01:33,680
+So, let's start writing that code. So,
+
+40
+00:01:31,360 --> 00:01:37,920
+I'm going to say for
+
+41
+00:01:33,680 --> 00:01:40,799
+let hero of Justice League.
+
+42
+00:01:37,920 --> 00:01:42,400
+So, I'm saying take each item in Justice
+
+43
+00:01:40,799 --> 00:01:44,079
+League. What is an item in Justice
+
+44
+00:01:42,400 --> 00:01:46,159
+League? Well, it's this entire array
+
+45
+00:01:44,079 --> 00:01:47,840
+right here. And it says and store it in
+
+46
+00:01:46,159 --> 00:01:49,840
+hero. Which means if I go to hero in the
+
+47
+00:01:47,840 --> 00:01:51,920
+zero position on the first time through
+
+48
+00:01:49,840 --> 00:01:53,040
+the loop it'll pull out Clark and then
+
+49
+00:01:51,920 --> 00:01:55,840
+the next time through the loop it'll
+
+50
+00:01:53,040 --> 00:02:01,200
+pull out pull out Bruce, Diana, Barry,
+
+51
+00:01:55,840 --> 00:02:03,600
+Arthur, Hal, Victor and so on. So um
+
+52
+00:02:01,200 --> 00:02:05,280
+inside of this loop I'm going to alert
+
+53
+00:02:03,600 --> 00:02:06,960
+and then I'm going to create a formatted
+
+54
+00:02:05,280 --> 00:02:09,039
+string. You could do concatenation. I
+
+55
+00:02:06,960 --> 00:02:12,160
+prefer formatted strings. Um, so I'm
+
+56
+00:02:09,039 --> 00:02:16,560
+going to say dollar curly brace um, hero
+
+57
+00:02:12,160 --> 00:02:20,080
+at the zero position space dollar curly
+
+58
+00:02:16,560 --> 00:02:24,000
+brace hero at the one position
+
+59
+00:02:20,080 --> 00:02:27,760
+space alias
+
+60
+00:02:24,000 --> 00:02:31,080
+dollar sign and curly brace hero at the
+
+61
+00:02:27,760 --> 00:02:31,080
+two position
+
+62
+00:02:32,000 --> 00:02:37,920
+has caught
+
+63
+00:02:34,480 --> 00:02:42,480
+dollar sign curly brace hero at the
+
+64
+00:02:37,920 --> 00:02:45,280
+three position number of villains.
+
+65
+00:02:42,480 --> 00:02:46,800
+So this code right here will work. And
+
+66
+00:02:45,280 --> 00:02:48,400
+just to prove it, we're going to go over
+
+67
+00:02:46,800 --> 00:02:50,080
+here. It says Clark Kent, alias
+
+68
+00:02:48,400 --> 00:02:51,840
+Superman, has caught 12 villains. Bruce
+
+69
+00:02:50,080 --> 00:02:54,160
+Wayne, alias Batman, has caught 20
+
+70
+00:02:51,840 --> 00:02:55,840
+number of villains. Diana Prince, alias
+
+71
+00:02:54,160 --> 00:02:59,040
+Wonder Woman, has caught 15 number of
+
+72
+00:02:55,840 --> 00:03:00,640
+villains. And I'm going to take out
+
+73
+00:02:59,040 --> 00:03:02,080
+number of because that makes the message
+
+74
+00:03:00,640 --> 00:03:05,200
+sound silly. And I'm just going to put
+
+75
+00:03:02,080 --> 00:03:07,760
+it back to villains. So, this is okay
+
+76
+00:03:05,200 --> 00:03:09,200
+and it definitely works, but we could
+
+77
+00:03:07,760 --> 00:03:11,920
+use what we learned about array
+
+78
+00:03:09,200 --> 00:03:13,760
+destructuring um to make it a little
+
+79
+00:03:11,920 --> 00:03:16,640
+more readable. So, what I'm going to do
+
+80
+00:03:13,760 --> 00:03:18,480
+right here is I'm going to say let and
+
+81
+00:03:16,640 --> 00:03:22,640
+then I'm going to use my uh square
+
+82
+00:03:18,480 --> 00:03:24,400
+braces and I'm going to say first last
+
+83
+00:03:22,640 --> 00:03:26,959
+alias
+
+84
+00:03:24,400 --> 00:03:29,760
+and villains
+
+85
+00:03:26,959 --> 00:03:31,680
+and I'm going to set it equal to hero.
+
+86
+00:03:29,760 --> 00:03:35,120
+So, it's going to take each array out of
+
+87
+00:03:31,680 --> 00:03:38,080
+here, put it into hero, and then out of
+
+88
+00:03:35,120 --> 00:03:39,760
+hero, I'm going to say set the first my
+
+89
+00:03:38,080 --> 00:03:40,959
+variable called first equal to the first
+
+90
+00:03:39,760 --> 00:03:42,720
+position in the array, my variable
+
+91
+00:03:40,959 --> 00:03:44,720
+called last to the second position in
+
+92
+00:03:42,720 --> 00:03:46,239
+the array, my variable called alias to
+
+93
+00:03:44,720 --> 00:03:48,000
+the third position in the array, and my
+
+94
+00:03:46,239 --> 00:03:50,159
+variable called villains to the fourth
+
+95
+00:03:48,000 --> 00:03:52,480
+position array. Now, where I said hero
+
+96
+00:03:50,159 --> 00:03:55,840
+zero, I can just put first. Where I said
+
+97
+00:03:52,480 --> 00:03:58,159
+hero one, I can put last. Where I said
+
+98
+00:03:55,840 --> 00:04:02,799
+alias, or where I said hero 2, I can put
+
+99
+00:03:58,159 --> 00:04:05,840
+alias. And where I put hero 3 I can put
+
+100
+00:04:02,799 --> 00:04:07,120
+villains. So what I'm saying is so now
+
+101
+00:04:05,840 --> 00:04:08,560
+this becomes a little more readable
+
+102
+00:04:07,120 --> 00:04:09,760
+because now when I look at this alert
+
+103
+00:04:08,560 --> 00:04:12,480
+instead of saying oh they're pulling
+
+104
+00:04:09,760 --> 00:04:15,200
+things out of an array I see first last
+
+105
+00:04:12,480 --> 00:04:17,120
+alias alias has caught villains
+
+106
+00:04:15,200 --> 00:04:18,880
+villains. And now I know that they're
+
+107
+00:04:17,120 --> 00:04:20,720
+injecting the number of villains here
+
+108
+00:04:18,880 --> 00:04:22,320
+the alias of the superhero here and the
+
+109
+00:04:20,720 --> 00:04:23,840
+first and the last name here. And it's a
+
+110
+00:04:22,320 --> 00:04:25,199
+little more readable and therefore a
+
+111
+00:04:23,840 --> 00:04:28,080
+little more maintainable. All right. So,
+
+112
+00:04:25,199 --> 00:04:30,240
+we'll save this and we'll go over to our
+
+113
+00:04:28,080 --> 00:04:31,840
+code and we'll see that Clark Kent alias
+
+114
+00:04:30,240 --> 00:04:33,440
+Superman has called 12 villains. Bruce
+
+115
+00:04:31,840 --> 00:04:36,000
+Wayne alias Batman has called 20
+
+116
+00:04:33,440 --> 00:04:37,680
+villains. And I'm going to go through
+
+117
+00:04:36,000 --> 00:04:40,960
+just a couple more of these and you can
+
+118
+00:04:37,680 --> 00:04:42,479
+see that it is still working exactly the
+
+119
+00:04:40,960 --> 00:04:44,320
+way it was before. But now we've
+
+120
+00:04:42,479 --> 00:04:47,680
+dstructured our array so our code is a
+
+121
+00:04:44,320 --> 00:04:49,840
+little more readable and um we can go
+
+122
+00:04:47,680 --> 00:04:49,840
+from

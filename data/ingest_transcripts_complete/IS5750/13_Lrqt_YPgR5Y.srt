@@ -1,0 +1,455 @@
+1
+00:00:01,120 --> 00:00:04,240
+All right. In this video, we're going to
+
+2
+00:00:02,480 --> 00:00:07,680
+talk about the different types of data
+
+3
+00:00:04,240 --> 00:00:09,440
+types, or at least four of them. Um, if
+
+4
+00:00:07,680 --> 00:00:11,360
+you remember back to the video where I
+
+5
+00:00:09,440 --> 00:00:13,360
+talked about variables, I described two
+
+6
+00:00:11,360 --> 00:00:15,120
+differentiz boxes, a small box and a
+
+7
+00:00:13,360 --> 00:00:17,039
+large box. That is because different
+
+8
+00:00:15,120 --> 00:00:19,199
+variables that are holding different
+
+9
+00:00:17,039 --> 00:00:20,800
+types of information use differentized
+
+10
+00:00:19,199 --> 00:00:22,960
+boxes.
+
+11
+00:00:20,800 --> 00:00:24,480
+So, when we create a variable, I have
+
+12
+00:00:22,960 --> 00:00:26,000
+cleared out everything in my script tag
+
+13
+00:00:24,480 --> 00:00:28,960
+from the last video. When we create a
+
+14
+00:00:26,000 --> 00:00:31,279
+variable, we use the keyword let. So
+
+15
+00:00:28,960 --> 00:00:33,120
+we'll say let and then we can create a
+
+16
+00:00:31,279 --> 00:00:34,800
+variable. We want to label it. So we're
+
+17
+00:00:33,120 --> 00:00:37,680
+going to give it a name and I'll say
+
+18
+00:00:34,800 --> 00:00:40,719
+first name
+
+19
+00:00:37,680 --> 00:00:43,120
+and then I put double quotes here. Or I
+
+20
+00:00:40,719 --> 00:00:45,680
+could put single quotes here. When I do
+
+21
+00:00:43,120 --> 00:00:48,559
+that, JavaScript now knows that this
+
+22
+00:00:45,680 --> 00:00:51,200
+type of variable is a string. A string
+
+23
+00:00:48,559 --> 00:00:53,039
+takes up a decent size space. So it's
+
+24
+00:00:51,200 --> 00:00:55,840
+going to create a larger box that's
+
+25
+00:00:53,039 --> 00:00:58,879
+ready to hold a string. So I could say
+
+26
+00:00:55,840 --> 00:01:01,920
+let first name equal TOA. Anything that
+
+27
+00:00:58,879 --> 00:01:03,680
+is text on your page that you're going
+
+28
+00:01:01,920 --> 00:01:06,880
+anytime you're storing text that has
+
+29
+00:01:03,680 --> 00:01:09,119
+letters or special characters that is a
+
+30
+00:01:06,880 --> 00:01:12,320
+string. And so the way you create a
+
+31
+00:01:09,119 --> 00:01:14,799
+string is you use either single quotes
+
+32
+00:01:12,320 --> 00:01:17,280
+or double quotes.
+
+33
+00:01:14,799 --> 00:01:19,680
+Um and you can create your string. We'll
+
+34
+00:01:17,280 --> 00:01:24,960
+talk more about strings in a future
+
+35
+00:01:19,680 --> 00:01:30,880
+video, but I'm going to say a string is
+
+36
+00:01:24,960 --> 00:01:36,159
+a data type that stores text and is
+
+37
+00:01:30,880 --> 00:01:37,920
+created using single or double quotes.
+
+38
+00:01:36,159 --> 00:01:40,640
+Okay.
+
+39
+00:01:37,920 --> 00:01:42,799
+And I actually want this comment to be
+
+40
+00:01:40,640 --> 00:01:45,200
+on the line above. So, what I'm going to
+
+41
+00:01:42,799 --> 00:01:47,200
+do is I'm going to highlight and I'm
+
+42
+00:01:45,200 --> 00:01:49,520
+going to hold the shift key and the
+
+43
+00:01:47,200 --> 00:01:53,520
+arrow key to highlight what I want to
+
+44
+00:01:49,520 --> 00:01:57,280
+move. Hit command X or controlX on a
+
+45
+00:01:53,520 --> 00:01:59,520
+Windows and then paste it on the next
+
+46
+00:01:57,280 --> 00:02:01,840
+line. So, a string is a data type that
+
+47
+00:01:59,520 --> 00:02:04,719
+stores text. The next type of data type
+
+48
+00:02:01,840 --> 00:02:08,319
+is an integer.
+
+49
+00:02:04,719 --> 00:02:11,200
+And an integer is a data type that
+
+50
+00:02:08,319 --> 00:02:14,200
+stores numbers, specifically whole
+
+51
+00:02:11,200 --> 00:02:14,200
+numbers.
+
+52
+00:02:14,239 --> 00:02:18,239
+So if I want to create an integer, I use
+
+53
+00:02:16,000 --> 00:02:21,440
+the keyword let. That allocates the box
+
+54
+00:02:18,239 --> 00:02:25,760
+in memory. I'm going to say age and that
+
+55
+00:02:21,440 --> 00:02:30,239
+stores an age. And then I could say 200.
+
+56
+00:02:25,760 --> 00:02:34,239
+And that would store the integer 200 in
+
+57
+00:02:30,239 --> 00:02:36,400
+a variable called age. I um because it
+
+58
+00:02:34,239 --> 00:02:40,319
+is an integer it stores any whole
+
+59
+00:02:36,400 --> 00:02:43,680
+number. Um so we could do 200 or we
+
+60
+00:02:40,319 --> 00:02:47,040
+could do -200 and in both cases because
+
+61
+00:02:43,680 --> 00:02:49,360
+it is a whole number it is an integer.
+
+62
+00:02:47,040 --> 00:02:51,200
+The another type of number that we can
+
+63
+00:02:49,360 --> 00:02:53,120
+store is a number that has a decimal
+
+64
+00:02:51,200 --> 00:02:56,640
+place and that is stored in a different
+
+65
+00:02:53,120 --> 00:02:58,319
+type of data type. So we're going to
+
+66
+00:02:56,640 --> 00:03:01,280
+create a comment here. I used command
+
+67
+00:02:58,319 --> 00:03:02,879
+slash this time and I'm going to say a
+
+68
+00:03:01,280 --> 00:03:06,000
+float
+
+69
+00:03:02,879 --> 00:03:08,159
+is a data type that
+
+70
+00:03:06,000 --> 00:03:09,680
+stores
+
+71
+00:03:08,159 --> 00:03:13,360
+decimal
+
+72
+00:03:09,680 --> 00:03:16,360
+numbers. So I could say let pi equal
+
+73
+00:03:13,360 --> 00:03:16,360
+3.14159.
+
+74
+00:03:17,680 --> 00:03:24,319
+And just like with an integer it stores
+
+75
+00:03:21,760 --> 00:03:26,400
+numbers with a decimal place and it
+
+76
+00:03:24,319 --> 00:03:29,120
+stores positive and negative numbers. So
+
+77
+00:03:26,400 --> 00:03:31,040
+if I put -3.14159,
+
+78
+00:03:29,120 --> 00:03:34,080
+that would be a float. Some important
+
+79
+00:03:31,040 --> 00:03:36,239
+things I want to point out here. The age
+
+80
+00:03:34,080 --> 00:03:38,959
+does not have quotes around it. Only the
+
+81
+00:03:36,239 --> 00:03:41,519
+string has quotes around it. The age,
+
+82
+00:03:38,959 --> 00:03:42,879
+um, JavaScript figures out it's a number
+
+83
+00:03:41,519 --> 00:03:45,040
+and then it figures out it's a whole
+
+84
+00:03:42,879 --> 00:03:47,120
+number and it's not in quotes, so then
+
+85
+00:03:45,040 --> 00:03:51,040
+it creates an integer storage place for
+
+86
+00:03:47,120 --> 00:03:52,799
+it. for pi. It looks at it and realizes
+
+87
+00:03:51,040 --> 00:03:54,560
+there's a decimal place in it and it's
+
+88
+00:03:52,799 --> 00:03:58,879
+not in quotation marks. So then it
+
+89
+00:03:54,560 --> 00:04:00,239
+creates a float storage space for that.
+
+90
+00:03:58,879 --> 00:04:03,120
+The last one that we're going to talk
+
+91
+00:04:00,239 --> 00:04:07,200
+about in this video is a boolean.
+
+92
+00:04:03,120 --> 00:04:09,760
+A boolean is a data type that stores
+
+93
+00:04:07,200 --> 00:04:12,480
+true
+
+94
+00:04:09,760 --> 00:04:14,000
+or false. So there's only two pieces of
+
+95
+00:04:12,480 --> 00:04:16,799
+information you can store in a boolean.
+
+96
+00:04:14,000 --> 00:04:21,440
+It's either true or it's false. So I
+
+97
+00:04:16,799 --> 00:04:25,600
+could say let happy today equal true
+
+98
+00:04:21,440 --> 00:04:28,320
+and then I'll put a semicolon. So true
+
+99
+00:04:25,600 --> 00:04:30,960
+is a keyword and it must be all
+
+100
+00:04:28,320 --> 00:04:32,400
+lowercase. In a previous video you saw
+
+101
+00:04:30,960 --> 00:04:33,840
+that I made the mistake of using it
+
+102
+00:04:32,400 --> 00:04:35,759
+uppercase. That was because I've been
+
+103
+00:04:33,840 --> 00:04:38,960
+programming in a different language. In
+
+104
+00:04:35,759 --> 00:04:42,080
+JavaScript true is a keyword and it is
+
+105
+00:04:38,960 --> 00:04:44,479
+all lowercase. The other option is false
+
+106
+00:04:42,080 --> 00:04:46,560
+which is all lowercase. And you'll
+
+107
+00:04:44,479 --> 00:04:49,440
+notice it turns blue. So, no quotation
+
+108
+00:04:46,560 --> 00:04:51,600
+marks, all lowercase. And so, happy
+
+109
+00:04:49,440 --> 00:04:53,680
+today is a boolean because there are no
+
+110
+00:04:51,600 --> 00:04:56,240
+quotes around this and it is all
+
+111
+00:04:53,680 --> 00:04:58,400
+lowercase and it is the keyword false.
+
+112
+00:04:56,240 --> 00:05:01,280
+Um, in this case, I am happy today. So,
+
+113
+00:04:58,400 --> 00:05:04,320
+I'm going to set it to true and that
+
+114
+00:05:01,280 --> 00:05:04,320
+will end this video.

@@ -1,0 +1,1107 @@
+1
+00:00:00,160 --> 00:00:08,040
+Okay. So, I'm going put my name
+
+2
+00:00:04,799 --> 00:00:08,040
+and a description.
+
+3
+00:00:10,800 --> 00:00:16,720
+All right. Um, create an array of pizza
+
+4
+00:00:14,240 --> 00:00:19,039
+the shop sells. Eats pizza should be
+
+5
+00:00:16,720 --> 00:00:22,000
+pizza should be an object with keys name
+
+6
+00:00:19,039 --> 00:00:24,240
+price is vegetarian. Okay. So what I'm
+
+7
+00:00:22,000 --> 00:00:27,680
+going to do is I'm going to say
+
+8
+00:00:24,240 --> 00:00:31,599
+um let pizza shop
+
+9
+00:00:27,680 --> 00:00:33,120
+pizzas equal array and in that array
+
+10
+00:00:31,599 --> 00:00:35,920
+there are objects. So I'm going to say
+
+11
+00:00:33,120 --> 00:00:40,320
+name
+
+12
+00:00:35,920 --> 00:00:45,480
+and let's put cheese pizza here.
+
+13
+00:00:40,320 --> 00:00:45,480
+Um price we're going to put $8.99
+
+14
+00:00:46,960 --> 00:00:54,800
+and is vegetarian.
+
+15
+00:00:51,840 --> 00:00:57,199
+We'll set to true.
+
+16
+00:00:54,800 --> 00:00:58,559
+Um and then we'll put a comma and then
+
+17
+00:00:57,199 --> 00:01:02,879
+I'm going to copy this down to get
+
+18
+00:00:58,559 --> 00:01:06,240
+three. So I'm going to put in
+
+19
+00:01:02,879 --> 00:01:09,200
+veggie supreme
+
+20
+00:01:06,240 --> 00:01:14,720
+that is $9.99.
+
+21
+00:01:09,200 --> 00:01:16,560
+And then I'm going to put in barbecue
+
+22
+00:01:14,720 --> 00:01:19,600
+chicken,
+
+23
+00:01:16,560 --> 00:01:21,759
+which is $11.99
+
+24
+00:01:19,600 --> 00:01:25,119
+and is not vegetarian. So I'm going to
+
+25
+00:01:21,759 --> 00:01:27,759
+make that false. Okay, so it said create
+
+26
+00:01:25,119 --> 00:01:29,119
+an array. Um, it should have objects
+
+27
+00:01:27,759 --> 00:01:30,880
+with keys, name, price, and is
+
+28
+00:01:29,119 --> 00:01:33,040
+vegetarian. Add at least three pizzas.
+
+29
+00:01:30,880 --> 00:01:36,479
+And then print the array. Okay, so I'm
+
+30
+00:01:33,040 --> 00:01:38,640
+just going to say console.log
+
+31
+00:01:36,479 --> 00:01:42,759
+pizza shop pizzas. I'm going to save
+
+32
+00:01:38,640 --> 00:01:42,759
+this. I'm going to go live.
+
+33
+00:01:44,720 --> 00:01:49,520
+And
+
+34
+00:01:46,320 --> 00:01:51,360
+if I inspect in my console, I have an
+
+35
+00:01:49,520 --> 00:01:53,920
+array of three items. And there are the
+
+36
+00:01:51,360 --> 00:01:57,040
+three objects. Great. Okay, let's move
+
+37
+00:01:53,920 --> 00:01:59,119
+to the next problem. Problematically add
+
+38
+00:01:57,040 --> 00:02:01,280
+problematically programmatically add a
+
+39
+00:01:59,119 --> 00:02:03,920
+new pizza object to the array. Print the
+
+40
+00:02:01,280 --> 00:02:05,200
+updated array. Okay. Well, if we want to
+
+41
+00:02:03,920 --> 00:02:08,560
+programmatically add something to an
+
+42
+00:02:05,200 --> 00:02:10,560
+array, we access the array and then we
+
+43
+00:02:08,560 --> 00:02:12,879
+use push. And what do we push in? Well,
+
+44
+00:02:10,560 --> 00:02:16,160
+we want to push in a new object with the
+
+45
+00:02:12,879 --> 00:02:20,400
+name of meat lovers.
+
+46
+00:02:16,160 --> 00:02:21,920
+Um, the price of $12.99
+
+47
+00:02:20,400 --> 00:02:26,080
+and
+
+48
+00:02:21,920 --> 00:02:29,200
+the is vegetarian is false.
+
+49
+00:02:26,080 --> 00:02:32,400
+And then print the array console.log
+
+50
+00:02:29,200 --> 00:02:34,640
+pizza shop pizzas. So, if we save this
+
+51
+00:02:32,400 --> 00:02:37,680
+and we go over, we can see that the
+
+52
+00:02:34,640 --> 00:02:39,599
+first one has one, two, three items in
+
+53
+00:02:37,680 --> 00:02:41,280
+it. The second one has one, two, three,
+
+54
+00:02:39,599 --> 00:02:44,720
+four items, and the last one is this
+
+55
+00:02:41,280 --> 00:02:46,800
+meat lovers pizza. Great. Um, use the
+
+56
+00:02:44,720 --> 00:02:48,800
+spread operator to make a copy of the
+
+57
+00:02:46,800 --> 00:02:51,280
+pizza array and add a calzone at the end
+
+58
+00:02:48,800 --> 00:02:54,000
+of it. Do not change the original. Okay,
+
+59
+00:02:51,280 --> 00:02:56,959
+so important caveat here. Um, the spread
+
+60
+00:02:54,000 --> 00:02:58,480
+operator only works on the item that
+
+61
+00:02:56,959 --> 00:03:00,560
+you're applying it to. So if we apply it
+
+62
+00:02:58,480 --> 00:03:03,599
+to an array, it'll spread out all of the
+
+63
+00:03:00,560 --> 00:03:06,159
+things in the array. This array is
+
+64
+00:03:03,599 --> 00:03:07,840
+storing objects, but the way objects are
+
+65
+00:03:06,159 --> 00:03:09,519
+stored is it's just storing a reference
+
+66
+00:03:07,840 --> 00:03:11,200
+to where that object is located. We
+
+67
+00:03:09,519 --> 00:03:14,560
+would also need to spread out each
+
+68
+00:03:11,200 --> 00:03:17,680
+object. So the best way to do this is to
+
+69
+00:03:14,560 --> 00:03:23,080
+use a map function. So I'm going to say
+
+70
+00:03:17,680 --> 00:03:23,080
+let new pizza shop
+
+71
+00:03:23,840 --> 00:03:30,480
+um array. I'm going to set it equal to
+
+72
+00:03:27,440 --> 00:03:33,360
+pizza shop pizzas.m map. So I'm going to
+
+73
+00:03:30,480 --> 00:03:35,519
+say take each item out of the array. So
+
+74
+00:03:33,360 --> 00:03:38,319
+this is each object
+
+75
+00:03:35,519 --> 00:03:40,799
+and what I want you to do is I want you
+
+76
+00:03:38,319 --> 00:03:44,640
+to
+
+77
+00:03:40,799 --> 00:03:46,720
+create a new object and in that object I
+
+78
+00:03:44,640 --> 00:03:48,879
+want to spread out whatever the item is.
+
+79
+00:03:46,720 --> 00:03:50,959
+So, it's going to come in here, grab
+
+80
+00:03:48,879 --> 00:03:53,280
+cheese, cheese cheese pizza, and it's
+
+81
+00:03:50,959 --> 00:03:55,920
+going to take those and spread them out.
+
+82
+00:03:53,280 --> 00:04:00,720
+And then it will return the array. All
+
+83
+00:03:55,920 --> 00:04:02,480
+right. Once I'm finished mapping it,
+
+84
+00:04:00,720 --> 00:04:04,159
+um,
+
+85
+00:04:02,480 --> 00:04:08,239
+I want to add a cowzone at the end. So
+
+86
+00:04:04,159 --> 00:04:11,439
+I'll say new pizza shop array
+
+87
+00:04:08,239 --> 00:04:14,000
+um dot push
+
+88
+00:04:11,439 --> 00:04:17,040
+um
+
+89
+00:04:14,000 --> 00:04:19,440
+need to make an object where the name is
+
+90
+00:04:17,040 --> 00:04:23,680
+calzone.
+
+91
+00:04:19,440 --> 00:04:26,479
+The price is $7.99
+
+92
+00:04:23,680 --> 00:04:30,639
+and it is not vegetarian. So is
+
+93
+00:04:26,479 --> 00:04:32,479
+vegetarian is false. Okay. And then
+
+94
+00:04:30,639 --> 00:04:33,840
+we'll need to console.log log both
+
+95
+00:04:32,479 --> 00:04:35,520
+arrays to show that the first array
+
+96
+00:04:33,840 --> 00:04:38,720
+didn't change. So, we'll do pizza shop
+
+97
+00:04:35,520 --> 00:04:42,479
+pizzas and console.log
+
+98
+00:04:38,720 --> 00:04:45,680
+um new pizza shop array.
+
+99
+00:04:42,479 --> 00:04:47,280
+We'll save this. We'll come over. We've
+
+100
+00:04:45,680 --> 00:04:50,080
+got our first one, our second one with
+
+101
+00:04:47,280 --> 00:04:51,919
+meatlovers. Um
+
+102
+00:04:50,080 --> 00:04:53,360
+and then we get that exact same array
+
+103
+00:04:51,919 --> 00:04:56,400
+again because we're printing it without
+
+104
+00:04:53,360 --> 00:04:58,160
+the change. And then we get a different
+
+105
+00:04:56,400 --> 00:05:00,320
+array because we're printing it with our
+
+106
+00:04:58,160 --> 00:05:02,240
+cal zone. And so, we've successfully
+
+107
+00:05:00,320 --> 00:05:04,000
+done that step. So, we use the spread
+
+108
+00:05:02,240 --> 00:05:06,560
+operator to make a copy of the array.
+
+109
+00:05:04,000 --> 00:05:08,639
+Okay. Use array.mmap to make a new array
+
+110
+00:05:06,560 --> 00:05:11,600
+of just the pizza names and print the
+
+111
+00:05:08,639 --> 00:05:16,479
+result. Okay. So, I'll say let pizza
+
+112
+00:05:11,600 --> 00:05:20,560
+names equal array. Whoa.
+
+113
+00:05:16,479 --> 00:05:22,000
+Equal pizza shop pizzas map.
+
+114
+00:05:20,560 --> 00:05:23,520
+Actually, I'm going to do the full one
+
+115
+00:05:22,000 --> 00:05:26,960
+that has the calzone in it. So, I'll say
+
+116
+00:05:23,520 --> 00:05:29,199
+new pizza shop array map. And I want to
+
+117
+00:05:26,960 --> 00:05:33,440
+take each item out of the array. And I
+
+118
+00:05:29,199 --> 00:05:35,600
+want to return item.name.
+
+119
+00:05:33,440 --> 00:05:37,520
+And then we'll console.log
+
+120
+00:05:35,600 --> 00:05:39,919
+pizza names.
+
+121
+00:05:37,520 --> 00:05:41,120
+Save that. Come over. Check our work.
+
+122
+00:05:39,919 --> 00:05:42,560
+Sure enough, cheese pizza, veggies,
+
+123
+00:05:41,120 --> 00:05:45,360
+supreme, barbecue, chicken, meatlovers,
+
+124
+00:05:42,560 --> 00:05:46,960
+and calzone. Okay. Use array.filter to
+
+125
+00:05:45,360 --> 00:05:50,639
+make a new array of only vegetarian
+
+126
+00:05:46,960 --> 00:05:56,360
+pizzas. So I'll say let veggie pizzas
+
+127
+00:05:50,639 --> 00:05:56,360
+equal um new pizza shop array.
+
+128
+00:05:56,880 --> 00:06:00,639
+And I want to take each item out of the
+
+129
+00:05:58,479 --> 00:06:05,280
+array.
+
+130
+00:06:00,639 --> 00:06:08,400
+And I want to filter to where item
+
+131
+00:06:05,280 --> 00:06:10,720
+is vegetarian is true. Or in other
+
+132
+00:06:08,400 --> 00:06:12,319
+words, I can just say where item is
+
+133
+00:06:10,720 --> 00:06:14,560
+vegetarian because in this case
+
+134
+00:06:12,319 --> 00:06:16,400
+vegetarian is true false. So we'll
+
+135
+00:06:14,560 --> 00:06:20,160
+console.log
+
+136
+00:06:16,400 --> 00:06:22,000
+veggie pizzas. Save. Come over and we
+
+137
+00:06:20,160 --> 00:06:24,319
+get cheese pizza is vegetarian and
+
+138
+00:06:22,000 --> 00:06:28,000
+veggie supreme is vegetarian. If we look
+
+139
+00:06:24,319 --> 00:06:29,680
+at our list above, um barbecue, chicken,
+
+140
+00:06:28,000 --> 00:06:31,360
+meat lovers, and calzone are not
+
+141
+00:06:29,680 --> 00:06:34,400
+vegetarian. So, we successfully filtered
+
+142
+00:06:31,360 --> 00:06:37,120
+our array. Great. Um now, let's move on
+
+143
+00:06:34,400 --> 00:06:38,720
+to reducing the array. Um use array.
+
+144
+00:06:37,120 --> 00:06:41,120
+calculate total cost if you bought one
+
+145
+00:06:38,720 --> 00:06:45,440
+of each pizza. Okay. So, I'll say let
+
+146
+00:06:41,120 --> 00:06:47,840
+total cost equal um new pizza shop
+
+147
+00:06:45,440 --> 00:06:51,039
+array.
+
+148
+00:06:47,840 --> 00:06:56,120
+reduce takes in a function that previous
+
+149
+00:06:51,039 --> 00:06:56,120
+and current value and
+
+150
+00:06:56,880 --> 00:07:01,120
+um what we want to do is we want to take
+
+151
+00:06:58,960 --> 00:07:03,680
+return the previous value plus the
+
+152
+00:07:01,120 --> 00:07:05,919
+current value price because current is
+
+153
+00:07:03,680 --> 00:07:07,520
+going to be an object from the array. If
+
+154
+00:07:05,919 --> 00:07:10,800
+we look at our array each one has a
+
+155
+00:07:07,520 --> 00:07:12,560
+price. So if we say current.pric that
+
+156
+00:07:10,800 --> 00:07:16,000
+will pull out the price and add it on to
+
+157
+00:07:12,560 --> 00:07:19,280
+the previous. Now, as a caveat here,
+
+158
+00:07:16,000 --> 00:07:20,960
+because previous would normally start as
+
+159
+00:07:19,280 --> 00:07:22,560
+the first item of the array, and that's
+
+160
+00:07:20,960 --> 00:07:24,000
+an object, that is not where we want to
+
+161
+00:07:22,560 --> 00:07:25,759
+start. We want our current to start
+
+162
+00:07:24,000 --> 00:07:27,759
+there. So, if we want that, then we need
+
+163
+00:07:25,759 --> 00:07:30,000
+to add an extra parameter here. And
+
+164
+00:07:27,759 --> 00:07:32,639
+we're going to start our count at zero.
+
+165
+00:07:30,000 --> 00:07:34,960
+And that should reduce it. So, let's
+
+166
+00:07:32,639 --> 00:07:37,440
+console.log
+
+167
+00:07:34,960 --> 00:07:40,080
+the total cost
+
+168
+00:07:37,440 --> 00:07:42,400
+and double check our work. And here it
+
+169
+00:07:40,080 --> 00:07:45,120
+is. 51.95. if you want to buy one of
+
+170
+00:07:42,400 --> 00:07:47,280
+each pizza. I definitely don't think I
+
+171
+00:07:45,120 --> 00:07:48,960
+want to buy that many pizzas. Um, we'll
+
+172
+00:07:47,280 --> 00:07:53,280
+sort the pizzas by price from cheapest
+
+173
+00:07:48,960 --> 00:07:57,599
+to most expensive. All right, let sorted
+
+174
+00:07:53,280 --> 00:07:59,360
+array equal new pizza shop array dot
+
+175
+00:07:57,599 --> 00:08:01,199
+sort
+
+176
+00:07:59,360 --> 00:08:04,000
+um
+
+177
+00:08:01,199 --> 00:08:05,759
+cheapest to most expensive is in
+
+178
+00:08:04,000 --> 00:08:09,120
+ascending order. So if you remember dots
+
+179
+00:08:05,759 --> 00:08:13,039
+sort takes an array with a and b and you
+
+180
+00:08:09,120 --> 00:08:15,199
+need to do some subtraction. A minus b
+
+181
+00:08:13,039 --> 00:08:17,120
+will put it into ascending order.
+
+182
+00:08:15,199 --> 00:08:18,879
+Remember because the a comes first. A is
+
+183
+00:08:17,120 --> 00:08:21,280
+in ascending. But the problem is we're
+
+184
+00:08:18,879 --> 00:08:23,840
+not sorting them by the object. We are
+
+185
+00:08:21,280 --> 00:08:26,720
+sorting them by the object's uh price
+
+186
+00:08:23,840 --> 00:08:28,319
+attribute. So we'll say a.pric minus
+
+187
+00:08:26,720 --> 00:08:31,360
+b.pric
+
+188
+00:08:28,319 --> 00:08:34,959
+and we'll console.log sorted array.
+
+189
+00:08:31,360 --> 00:08:38,000
+Whoa. sort sorted array.
+
+190
+00:08:34,959 --> 00:08:40,320
+Save that. And if we come here, we can
+
+191
+00:08:38,000 --> 00:08:45,040
+see the cowzone is $7.99, cheese pizza
+
+192
+00:08:40,320 --> 00:08:47,200
+is $8.99, $9.99, $11.99, and $12.99. So,
+
+193
+00:08:45,040 --> 00:08:48,720
+we've successfully sorted that array.
+
+194
+00:08:47,200 --> 00:08:50,080
+Now, we need to dstructure the first
+
+195
+00:08:48,720 --> 00:08:51,440
+pizza in the previous array into
+
+196
+00:08:50,080 --> 00:08:53,519
+separate variables for its name and
+
+197
+00:08:51,440 --> 00:08:56,160
+price. Print them. Okay. So, if we want
+
+198
+00:08:53,519 --> 00:08:57,920
+to do that, we'll say let
+
+199
+00:08:56,160 --> 00:08:59,360
+and it's an object. The first item in
+
+200
+00:08:57,920 --> 00:09:02,160
+the array is an object. So, we'll say
+
+201
+00:08:59,360 --> 00:09:06,080
+let name and price
+
+202
+00:09:02,160 --> 00:09:07,680
+equal um sorted array at the zero
+
+203
+00:09:06,080 --> 00:09:10,560
+position. So, we're saying go into the
+
+204
+00:09:07,680 --> 00:09:12,800
+array, grab the first item, break out
+
+205
+00:09:10,560 --> 00:09:14,240
+its name and price, and then console.log
+
+206
+00:09:12,800 --> 00:09:18,240
+those. So, we're going to console.log
+
+207
+00:09:14,240 --> 00:09:22,000
+name and price. We'll save that. If we
+
+208
+00:09:18,240 --> 00:09:24,160
+come over zone and 799 is the name and
+
+209
+00:09:22,000 --> 00:09:26,480
+price, and we console.log calzone and
+
+210
+00:09:24,160 --> 00:09:28,560
+799. So, we successfully dstructured
+
+211
+00:09:26,480 --> 00:09:31,360
+that object. Now we need to create a
+
+212
+00:09:28,560 --> 00:09:34,640
+function called find pizza by name. So
+
+213
+00:09:31,360 --> 00:09:37,440
+const find pizza by name equals new
+
+214
+00:09:34,640 --> 00:09:44,080
+function that should take in a pizza
+
+215
+00:09:37,440 --> 00:09:46,959
+array and a name and it should return
+
+216
+00:09:44,080 --> 00:09:50,480
+um the matching pizza object or null if
+
+217
+00:09:46,959 --> 00:09:53,920
+not found. Okay, so it sounds like what
+
+218
+00:09:50,480 --> 00:09:56,720
+we want to do is we want to say let
+
+219
+00:09:53,920 --> 00:10:01,120
+results equal
+
+220
+00:09:56,720 --> 00:10:04,320
+pizza array filter and um we're
+
+221
+00:10:01,120 --> 00:10:06,560
+filtering it where we take each item out
+
+222
+00:10:04,320 --> 00:10:09,440
+of the array and we return it if item
+
+223
+00:10:06,560 --> 00:10:12,880
+dot name
+
+224
+00:10:09,440 --> 00:10:15,600
+is exactly equal to the name that they
+
+225
+00:10:12,880 --> 00:10:18,560
+provided us. If it is we're going to
+
+226
+00:10:15,600 --> 00:10:21,680
+return that. So filter filters down to
+
+227
+00:10:18,560 --> 00:10:23,360
+where this condition is met. Um so if
+
+228
+00:10:21,680 --> 00:10:25,279
+this condition is met where the item
+
+229
+00:10:23,360 --> 00:10:28,720
+name is equal to this name. So let's say
+
+230
+00:10:25,279 --> 00:10:32,160
+we put in cheese. Um if it finds cheese
+
+231
+00:10:28,720 --> 00:10:34,320
+pizza it'll return it. If it doesn't
+
+232
+00:10:32,160 --> 00:10:37,040
+then it will not add it to the list and
+
+233
+00:10:34,320 --> 00:10:38,880
+it will just return an empty list. So
+
+234
+00:10:37,040 --> 00:10:40,880
+this tells us that we need to return
+
+235
+00:10:38,880 --> 00:10:45,279
+null if it's not found. So what we want
+
+236
+00:10:40,880 --> 00:10:48,640
+to do is we say if results.length length
+
+237
+00:10:45,279 --> 00:10:49,680
+is greater than zero, meaning if we
+
+238
+00:10:48,640 --> 00:10:51,920
+found something, then we're going to
+
+239
+00:10:49,680 --> 00:10:53,440
+return the results.
+
+240
+00:10:51,920 --> 00:10:57,920
+Otherwise,
+
+241
+00:10:53,440 --> 00:10:59,279
+we're going to return null. Okay. Um, so
+
+242
+00:10:57,920 --> 00:11:01,040
+takes in a pizza array with a name,
+
+243
+00:10:59,279 --> 00:11:03,200
+returns matching pizza object or null if
+
+244
+00:11:01,040 --> 00:11:07,279
+found, test it with two names. So, we're
+
+245
+00:11:03,200 --> 00:11:10,880
+going to console who console.log
+
+246
+00:11:07,279 --> 00:11:14,399
+and we are going to take um find pizza
+
+247
+00:11:10,880 --> 00:11:19,200
+by name. Uh, let's give it this sorted
+
+248
+00:11:14,399 --> 00:11:20,800
+array and let's give it the name cheese
+
+249
+00:11:19,200 --> 00:11:23,760
+pizza
+
+250
+00:11:20,800 --> 00:11:28,000
+and then we'll copy this down and we'll
+
+251
+00:11:23,760 --> 00:11:30,079
+give it orange chicken pizza which is
+
+252
+00:11:28,000 --> 00:11:33,680
+definitely not in the array. So if we
+
+253
+00:11:30,079 --> 00:11:36,160
+come over here um we get an array with
+
+254
+00:11:33,680 --> 00:11:38,560
+just cheese pizza and we get null
+
+255
+00:11:36,160 --> 00:11:40,399
+meaning that this one worked as well. So
+
+256
+00:11:38,560 --> 00:11:41,680
+our function correctly works. Now, we
+
+257
+00:11:40,399 --> 00:11:44,880
+need to create an array where each
+
+258
+00:11:41,680 --> 00:11:46,959
+element is another array representing uh
+
+259
+00:11:44,880 --> 00:11:48,480
+the pizza name and the price. And we
+
+260
+00:11:46,959 --> 00:11:49,440
+need to print that array. So, what I'm
+
+261
+00:11:48,480 --> 00:11:51,680
+going to do is I'm going to take our
+
+262
+00:11:49,440 --> 00:11:53,600
+sorted array and I'm going to map it.
+
+263
+00:11:51,680 --> 00:11:58,000
+I'm going to take each item out of that
+
+264
+00:11:53,600 --> 00:12:01,279
+sorted array and I'm going to return
+
+265
+00:11:58,000 --> 00:12:05,600
+an array that has item.name
+
+266
+00:12:01,279 --> 00:12:09,200
+and item price in an array. And we're
+
+267
+00:12:05,600 --> 00:12:11,920
+going to store this new
+
+268
+00:12:09,200 --> 00:12:13,839
+letfal array equal our sorted array
+
+269
+00:12:11,920 --> 00:12:15,600
+where we've mapped those. And I'm going
+
+270
+00:12:13,839 --> 00:12:20,079
+to console.log
+
+271
+00:12:15,600 --> 00:12:22,880
+our final array. Save this. Come over.
+
+272
+00:12:20,079 --> 00:12:25,920
+And here we can see we've got calzone
+
+273
+00:12:22,880 --> 00:12:28,959
+$799, cheese pizza $8.99, veggie supreme
+
+274
+00:12:25,920 --> 00:12:32,399
+$9.99, barbecue chicken and meat lovers.
+
+275
+00:12:28,959 --> 00:12:34,560
+And it's um it is an array of arrays
+
+276
+00:12:32,399 --> 00:12:38,399
+with the pizza name and the price. And
+
+277
+00:12:34,560 --> 00:12:38,399
+that concludes this walkthrough.

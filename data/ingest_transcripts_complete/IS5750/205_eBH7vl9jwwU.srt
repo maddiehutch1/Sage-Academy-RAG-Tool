@@ -1,0 +1,111 @@
+1
+00:00:00,080 --> 00:00:02,960
+Now that we have all of our data stored
+
+2
+00:00:01,280 --> 00:00:06,960
+into a form data object, let's make that
+
+3
+00:00:02,960 --> 00:00:11,400
+post request. So we'll say axios.post
+
+4
+00:00:06,960 --> 00:00:11,400
+and we're going to go to our API
+
+5
+00:00:14,320 --> 00:00:18,000
+and
+
+6
+00:00:16,000 --> 00:00:20,400
+let's post
+
+7
+00:00:18,000 --> 00:00:23,039
+um the username and the username is
+
+8
+00:00:20,400 --> 00:00:25,199
+going to be form data.get
+
+9
+00:00:23,039 --> 00:00:28,000
+username
+
+10
+00:00:25,199 --> 00:00:30,560
+and then the password is going to be
+
+11
+00:00:28,000 --> 00:00:32,399
+form data.get get
+
+12
+00:00:30,560 --> 00:00:35,520
+password.
+
+13
+00:00:32,399 --> 00:00:37,120
+And then once we're done, let me zoom
+
+14
+00:00:35,520 --> 00:00:39,520
+out a little bit so you can see the full
+
+15
+00:00:37,120 --> 00:00:40,800
+line of code. Well, that's actually not
+
+16
+00:00:39,520 --> 00:00:42,079
+helpful. I'm just going to full screen
+
+17
+00:00:40,800 --> 00:00:43,760
+this for a little bit. So there is the
+
+18
+00:00:42,079 --> 00:00:46,640
+full line of code. We're making a post
+
+19
+00:00:43,760 --> 00:00:48,719
+request to that URL. We are sending over
+
+20
+00:00:46,640 --> 00:00:51,200
+that data and we're using the form data
+
+21
+00:00:48,719 --> 00:00:53,840
+object to gather the data.
+
+22
+00:00:51,200 --> 00:00:56,480
+Now, if we split it back onto two
+
+23
+00:00:53,840 --> 00:01:00,559
+screens and we open up db.json, JSON we
+
+24
+00:00:56,480 --> 00:01:02,960
+can say um hello and password of world
+
+25
+00:01:00,559 --> 00:01:05,360
+and if we hit submit we can see hello
+
+26
+00:01:02,960 --> 00:01:07,040
+and world came over with username and
+
+27
+00:01:05,360 --> 00:01:11,200
+password and that's how you can gather
+
+28
+00:01:07,040 --> 00:01:11,200
+form data and then use Axios to post

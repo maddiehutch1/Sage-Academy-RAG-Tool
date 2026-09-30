@@ -1,0 +1,1247 @@
+1
+00:00:00,240 --> 00:00:04,319
+Okay, let's get to solving this. Um, I
+
+2
+00:00:02,960 --> 00:00:06,080
+think the very first thing we want to do
+
+3
+00:00:04,319 --> 00:00:08,000
+is we want to gather all the questions
+
+4
+00:00:06,080 --> 00:00:09,840
+and put them in local storage. So, let's
+
+5
+00:00:08,000 --> 00:00:14,160
+do that. Um, and I'm going to do that
+
+6
+00:00:09,840 --> 00:00:21,560
+using a function, um,
+
+7
+00:00:14,160 --> 00:00:21,560
+get questions and load local storage.
+
+8
+00:00:23,680 --> 00:00:27,039
+And I'm going to have that be an
+
+9
+00:00:25,279 --> 00:00:29,840
+asynchronous function because I am going
+
+10
+00:00:27,039 --> 00:00:31,359
+to use Axios.
+
+11
+00:00:29,840 --> 00:00:33,200
+So
+
+12
+00:00:31,359 --> 00:00:35,920
+we actually have Axios up here. So we
+
+13
+00:00:33,200 --> 00:00:38,320
+can just go ahead and grab it. Um so get
+
+14
+00:00:35,920 --> 00:00:42,000
+questions and load local storage. So
+
+15
+00:00:38,320 --> 00:00:44,559
+we'll say let data equal await.
+
+16
+00:00:42,000 --> 00:00:47,280
+Um and then we'll say
+
+17
+00:00:44,559 --> 00:00:51,879
+axios.get.
+
+18
+00:00:47,280 --> 00:00:51,879
+And then let's go grab that API.
+
+19
+00:00:55,199 --> 00:01:00,960
+And that should give us the results. So
+
+20
+00:00:57,039 --> 00:01:04,840
+let's just log those. And
+
+21
+00:01:00,960 --> 00:01:04,840
+see where that gets us.
+
+22
+00:01:05,040 --> 00:01:11,840
+And then if it's an asynchronous
+
+23
+00:01:08,720 --> 00:01:16,000
+um function, I do have to actually call
+
+24
+00:01:11,840 --> 00:01:18,320
+it. So let's call it and save that. And
+
+25
+00:01:16,000 --> 00:01:19,840
+then let's go check our console. So if
+
+26
+00:01:18,320 --> 00:01:23,280
+we check our console, we've got this
+
+27
+00:01:19,840 --> 00:01:26,720
+data object. And in the data object, it
+
+28
+00:01:23,280 --> 00:01:29,840
+has more data. So inside of data, there
+
+29
+00:01:26,720 --> 00:01:34,720
+is a data object. And inside of that,
+
+30
+00:01:29,840 --> 00:01:38,759
+there is a results object. So let's go
+
+31
+00:01:34,720 --> 00:01:38,759
+back over to our code.
+
+32
+00:01:40,079 --> 00:01:47,040
+And let's unpack and grab the data out.
+
+33
+00:01:43,600 --> 00:01:50,399
+And let's print data.res.
+
+34
+00:01:47,040 --> 00:01:52,960
+And save that. And now if we come over,
+
+35
+00:01:50,399 --> 00:01:57,560
+we get this array where it's a an array
+
+36
+00:01:52,960 --> 00:01:57,560
+of objects um with a question.
+
+37
+00:01:57,840 --> 00:02:04,799
+And then it also has a correct answer.
+
+38
+00:02:01,040 --> 00:02:07,759
+So let's go back over to our code and
+
+39
+00:02:04,799 --> 00:02:13,040
+let's store that in local storage. So to
+
+40
+00:02:07,759 --> 00:02:15,680
+do that, say local storage dot set item.
+
+41
+00:02:13,040 --> 00:02:18,959
+And the item we want to set is trivia.
+
+42
+00:02:15,680 --> 00:02:21,200
+And what do we want to set it to? Well,
+
+43
+00:02:18,959 --> 00:02:23,680
+um, remember we do need to convert this
+
+44
+00:02:21,200 --> 00:02:25,840
+into a nice string storeable format. So,
+
+45
+00:02:23,680 --> 00:02:27,360
+we're going to say JSON.stringify
+
+46
+00:02:25,840 --> 00:02:30,360
+and the thing we're stringifying is
+
+47
+00:02:27,360 --> 00:02:30,360
+data.s.
+
+48
+00:02:31,920 --> 00:02:35,840
+So, now
+
+49
+00:02:33,760 --> 00:02:39,200
+we'll save this
+
+50
+00:02:35,840 --> 00:02:42,239
+and we'll come check our code. And if we
+
+51
+00:02:39,200 --> 00:02:45,360
+go to application here in trivia, you
+
+52
+00:02:42,239 --> 00:02:48,000
+can see that it stores 10 questions.
+
+53
+00:02:45,360 --> 00:02:50,560
+Awesome. All right. So I think the next
+
+54
+00:02:48,000 --> 00:02:52,400
+thing we'd want to do is we'd want to
+
+55
+00:02:50,560 --> 00:02:54,319
+write a function that checks local
+
+56
+00:02:52,400 --> 00:02:56,480
+storage for a question and if it exists
+
+57
+00:02:54,319 --> 00:02:59,200
+displays it on screen. If it doesn't
+
+58
+00:02:56,480 --> 00:03:02,400
+then it calls our last function and then
+
+59
+00:02:59,200 --> 00:03:04,959
+displays it on screen. So let's go back
+
+60
+00:03:02,400 --> 00:03:08,400
+over to our code. So let's write that
+
+61
+00:03:04,959 --> 00:03:10,239
+second function. const get
+
+62
+00:03:08,400 --> 00:03:13,720
+question
+
+63
+00:03:10,239 --> 00:03:13,720
+from storage.
+
+64
+00:03:16,000 --> 00:03:21,000
+And we'll also make this an async
+
+65
+00:03:18,000 --> 00:03:21,000
+function.
+
+66
+00:03:21,360 --> 00:03:30,640
+All right. So, um want to see if
+
+67
+00:03:28,640 --> 00:03:34,080
+um
+
+68
+00:03:30,640 --> 00:03:36,080
+local storage.get item
+
+69
+00:03:34,080 --> 00:03:39,280
+trivia.
+
+70
+00:03:36,080 --> 00:03:42,560
+And that will give us back the item
+
+71
+00:03:39,280 --> 00:03:45,599
+um if it exists.
+
+72
+00:03:42,560 --> 00:03:47,040
+Um, if it doesn't exist, then that means
+
+73
+00:03:45,599 --> 00:03:48,319
+that we don't have a trivia key and we
+
+74
+00:03:47,040 --> 00:03:51,760
+don't have any trivia questions and we
+
+75
+00:03:48,319 --> 00:03:54,239
+need to get them. So, I'm going to say
+
+76
+00:03:51,760 --> 00:03:55,760
+if it doesn't exist, go out and get
+
+77
+00:03:54,239 --> 00:03:56,959
+those trivia questions. And we actually
+
+78
+00:03:55,760 --> 00:03:59,200
+already wrote that function. So, we'll
+
+79
+00:03:56,959 --> 00:04:02,159
+say await
+
+80
+00:03:59,200 --> 00:04:04,799
+question from storage.
+
+81
+00:04:02,159 --> 00:04:07,040
+So, what that does is it allows us to
+
+82
+00:04:04,799 --> 00:04:09,920
+set local storage.
+
+83
+00:04:07,040 --> 00:04:11,280
+Once we're done, um, we now once we get
+
+84
+00:04:09,920 --> 00:04:13,599
+to this line, we know the only way to
+
+85
+00:04:11,280 --> 00:04:16,959
+get to this line is if the trivia key
+
+86
+00:04:13,599 --> 00:04:18,799
+exists or we just created the trivia key
+
+87
+00:04:16,959 --> 00:04:21,519
+in this function. So we know at this
+
+88
+00:04:18,799 --> 00:04:24,720
+point the trivia key exists. So now we
+
+89
+00:04:21,519 --> 00:04:27,720
+can grab a question. So we'll say let
+
+90
+00:04:24,720 --> 00:04:27,720
+um
+
+91
+00:04:28,800 --> 00:04:36,840
+let
+
+92
+00:04:30,880 --> 00:04:36,840
+questions equal um JSON.parse
+
+93
+00:04:37,199 --> 00:04:43,199
+local storage. Get item and we're
+
+94
+00:04:40,160 --> 00:04:47,759
+looking for trivia.
+
+95
+00:04:43,199 --> 00:04:50,800
+And then we'll say let question and
+
+96
+00:04:47,759 --> 00:04:53,440
+correct answer
+
+97
+00:04:50,800 --> 00:04:55,199
+equal
+
+98
+00:04:53,440 --> 00:04:57,199
+questions.
+
+99
+00:04:55,199 --> 00:04:58,960
+So questions.pop goes into the array,
+
+100
+00:04:57,199 --> 00:05:01,280
+grabs out an object, and then we are
+
+101
+00:04:58,960 --> 00:05:03,919
+going to dstructure that object and take
+
+102
+00:05:01,280 --> 00:05:07,199
+out the question and the correct answer.
+
+103
+00:05:03,919 --> 00:05:08,800
+Um, if you look over at the
+
+104
+00:05:07,199 --> 00:05:10,560
+instructions, it says to store the
+
+105
+00:05:08,800 --> 00:05:12,080
+correct answer in session storage. So,
+
+106
+00:05:10,560 --> 00:05:16,880
+let's go ahead and do that. So, we'll
+
+107
+00:05:12,080 --> 00:05:18,400
+say session storage set item correct
+
+108
+00:05:16,880 --> 00:05:21,360
+answer
+
+109
+00:05:18,400 --> 00:05:23,360
+and we'll set it equal to the correct
+
+110
+00:05:21,360 --> 00:05:27,759
+answer.
+
+111
+00:05:23,360 --> 00:05:32,639
+And then now we need to um display on
+
+112
+00:05:27,759 --> 00:05:35,440
+stream um the correct uh the question.
+
+113
+00:05:32,639 --> 00:05:39,919
+So uh let's go ahead and we need to
+
+114
+00:05:35,440 --> 00:05:42,960
+access the div id of question. So let's
+
+115
+00:05:39,919 --> 00:05:46,160
+use jQuery and we'll say we're looking
+
+116
+00:05:42,960 --> 00:05:50,080
+for the question
+
+117
+00:05:46,160 --> 00:05:52,160
+and then we want to set its HTML
+
+118
+00:05:50,080 --> 00:05:55,479
+equal to
+
+119
+00:05:52,160 --> 00:05:55,479
+the question.
+
+120
+00:05:56,800 --> 00:06:01,280
+All right, let's call this function and
+
+121
+00:05:59,199 --> 00:06:03,600
+make sure it's working.
+
+122
+00:06:01,280 --> 00:06:05,600
+So we'll say get
+
+123
+00:06:03,600 --> 00:06:08,400
+question
+
+124
+00:06:05,600 --> 00:06:10,639
+from storage.
+
+125
+00:06:08,400 --> 00:06:14,600
+So if we save this,
+
+126
+00:06:10,639 --> 00:06:14,600
+we come over to our code
+
+127
+00:06:14,800 --> 00:06:20,479
+and we reload the page.
+
+128
+00:06:18,400 --> 00:06:21,600
+It looks like it did not put anything on
+
+129
+00:06:20,479 --> 00:06:24,479
+the page. But let's look at the
+
+130
+00:06:21,600 --> 00:06:28,000
+application. So um we've got our trivia
+
+131
+00:06:24,479 --> 00:06:30,560
+questions and in session storage we have
+
+132
+00:06:28,000 --> 00:06:32,560
+that the correct answer is true.
+
+133
+00:06:30,560 --> 00:06:34,560
+Um,
+
+134
+00:06:32,560 --> 00:06:38,639
+so it looks like the thing that didn't
+
+135
+00:06:34,560 --> 00:06:40,800
+work is displaying the HTML of the
+
+136
+00:06:38,639 --> 00:06:44,440
+question.
+
+137
+00:06:40,800 --> 00:06:44,440
+So let's see.
+
+138
+00:06:46,400 --> 00:06:52,280
+It would help if I spelled question
+
+139
+00:06:47,919 --> 00:06:52,280
+correctly. Question.
+
+140
+00:06:52,400 --> 00:06:58,080
+And down here, if I spelled that
+
+141
+00:06:54,400 --> 00:07:00,720
+correctly as well, question.
+
+142
+00:06:58,080 --> 00:07:03,280
+And save that. And now let's go see.
+
+143
+00:07:00,720 --> 00:07:06,639
+Okay, the sum of all the numbers on a
+
+144
+00:07:03,280 --> 00:07:08,960
+roulette wheel is 666. And then we can
+
+145
+00:07:06,639 --> 00:07:11,840
+go look in our application and we can
+
+146
+00:07:08,960 --> 00:07:13,759
+see that the correct answer is true. So
+
+147
+00:07:11,840 --> 00:07:16,479
+now what we want to do is we want to
+
+148
+00:07:13,759 --> 00:07:19,440
+make these buttons work. So now we have
+
+149
+00:07:16,479 --> 00:07:22,720
+to have something that checks if the
+
+150
+00:07:19,440 --> 00:07:24,880
+button clicked has the same text as the
+
+151
+00:07:22,720 --> 00:07:28,560
+correct answer in session storage. So
+
+152
+00:07:24,880 --> 00:07:30,000
+let's go over there and let's write that
+
+153
+00:07:28,560 --> 00:07:31,440
+question and we'll call it check
+
+154
+00:07:30,000 --> 00:07:36,000
+function and we'll call it check answer.
+
+155
+00:07:31,440 --> 00:07:40,000
+So we'll say const check answer equals
+
+156
+00:07:36,000 --> 00:07:45,680
+and we'll receive an event
+
+157
+00:07:40,000 --> 00:07:48,560
+and we'll say if e dot target dot
+
+158
+00:07:45,680 --> 00:07:51,039
+um
+
+159
+00:07:48,560 --> 00:07:53,759
+inner text
+
+160
+00:07:51,039 --> 00:07:57,840
+is exactly equal to
+
+161
+00:07:53,759 --> 00:08:01,280
+session storage.get get item
+
+162
+00:07:57,840 --> 00:08:03,360
+correct answer.
+
+163
+00:08:01,280 --> 00:08:05,280
+Then what do we want to do? We want to
+
+164
+00:08:03,360 --> 00:08:07,440
+alert
+
+165
+00:08:05,280 --> 00:08:10,879
+correct.
+
+166
+00:08:07,440 --> 00:08:14,319
+And then we want to call get [sighs]
+
+167
+00:08:10,879 --> 00:08:17,599
+uh question from storage to grab a new
+
+168
+00:08:14,319 --> 00:08:21,599
+question. Otherwise, we want to alert
+
+169
+00:08:17,599 --> 00:08:23,039
+try again. And really, it's true false.
+
+170
+00:08:21,599 --> 00:08:25,680
+So there's really only one other answer
+
+171
+00:08:23,039 --> 00:08:28,080
+that it could be. Um, and when do we
+
+172
+00:08:25,680 --> 00:08:29,840
+want this check answer to get called? We
+
+173
+00:08:28,080 --> 00:08:31,199
+want it to get called when they click on
+
+174
+00:08:29,840 --> 00:08:34,560
+a button. So, let's go ahead and attach
+
+175
+00:08:31,199 --> 00:08:36,719
+it to the button using jQuery. So, let's
+
+176
+00:08:34,560 --> 00:08:38,320
+grab the true
+
+177
+00:08:36,719 --> 00:08:39,919
+button.
+
+178
+00:08:38,320 --> 00:08:42,800
+And
+
+179
+00:08:39,919 --> 00:08:46,080
+when it gets clicked, we want to call
+
+180
+00:08:42,800 --> 00:08:48,720
+check answer. And then let's just copy
+
+181
+00:08:46,080 --> 00:08:50,480
+this down. And we'll make this the false
+
+182
+00:08:48,720 --> 00:08:53,279
+button.
+
+183
+00:08:50,480 --> 00:08:56,800
+And when it gets clicked, oh, and those
+
+184
+00:08:53,279 --> 00:08:59,519
+are both IDs, which means I do need to
+
+185
+00:08:56,800 --> 00:09:01,519
+add the hashtag in front of them. And
+
+186
+00:08:59,519 --> 00:09:02,959
+we'll save that.
+
+187
+00:09:01,519 --> 00:09:05,200
+And then we'll come over here. So the
+
+188
+00:09:02,959 --> 00:09:07,600
+sum of all numbers on a roulette wheel
+
+189
+00:09:05,200 --> 00:09:08,720
+is 666. And we can check session
+
+190
+00:09:07,600 --> 00:09:10,160
+storage. And it says the correct answer
+
+191
+00:09:08,720 --> 00:09:11,680
+is true. So if I click that, I get
+
+192
+00:09:10,160 --> 00:09:15,360
+correct.
+
+193
+00:09:11,680 --> 00:09:17,760
+And it moves on. Or rather, it didn't.
+
+194
+00:09:15,360 --> 00:09:22,640
+It's still displaying the same question.
+
+195
+00:09:17,760 --> 00:09:29,839
+So we can now find the correct answer.
+
+196
+00:09:22,640 --> 00:09:31,920
+So what we want to do is we want to um
+
+197
+00:09:29,839 --> 00:09:34,000
+when they get the when they grab a new
+
+198
+00:09:31,920 --> 00:09:37,000
+question, we want to remove the old
+
+199
+00:09:34,000 --> 00:09:37,000
+question.
+
+200
+00:09:37,839 --> 00:09:41,760
+Sorry, thinking through how we want to
+
+201
+00:09:39,360 --> 00:09:43,040
+do this. So when they get the correct
+
+202
+00:09:41,760 --> 00:09:44,720
+question, we want to grab a new question
+
+203
+00:09:43,040 --> 00:09:48,240
+from local storage. And we should be
+
+204
+00:09:44,720 --> 00:09:51,040
+slowly depleting local storage. So um
+
+205
+00:09:48,240 --> 00:09:55,200
+this is removing it from local storage
+
+206
+00:09:51,040 --> 00:09:57,360
+and displaying it on the screen but
+
+207
+00:09:55,200 --> 00:09:58,959
+we're never resetting local storage. So
+
+208
+00:09:57,360 --> 00:10:01,279
+local storage is still storing the
+
+209
+00:09:58,959 --> 00:10:03,360
+original thing. So what we need to do is
+
+210
+00:10:01,279 --> 00:10:06,800
+we need to restore local storage. So
+
+211
+00:10:03,360 --> 00:10:09,279
+we'll say local storage dot set item
+
+212
+00:10:06,800 --> 00:10:12,560
+trivia
+
+213
+00:10:09,279 --> 00:10:16,160
+and we want to set its value equal to
+
+214
+00:10:12,560 --> 00:10:17,920
+JSON stringify and we want to stringify
+
+215
+00:10:16,160 --> 00:10:22,360
+the questions array that now we'll have
+
+216
+00:10:17,920 --> 00:10:22,360
+one less question because of this pop
+
+217
+00:10:23,519 --> 00:10:27,920
+and then
+
+218
+00:10:26,240 --> 00:10:29,440
+we actually only want to do that if
+
+219
+00:10:27,920 --> 00:10:31,120
+there's even a question left. If there's
+
+220
+00:10:29,440 --> 00:10:33,680
+not, we just want to remove the trivia
+
+221
+00:10:31,120 --> 00:10:38,079
+item so that it knows that it should
+
+222
+00:10:33,680 --> 00:10:42,519
+grab new qu it should um
+
+223
+00:10:38,079 --> 00:10:42,519
+get questions and load local storage.
+
+224
+00:10:44,800 --> 00:10:47,800
+So
+
+225
+00:10:47,839 --> 00:10:55,000
+let's go ahead and write
+
+226
+00:10:51,360 --> 00:10:55,000
+that if statement.
+
+227
+00:10:55,760 --> 00:11:00,720
+So we're going to say if questions
+
+228
+00:10:58,880 --> 00:11:04,160
+dolength
+
+229
+00:11:00,720 --> 00:11:05,839
+is less than or equal to zero
+
+230
+00:11:04,160 --> 00:11:07,839
+then we're just going to local storage
+
+231
+00:11:05,839 --> 00:11:10,399
+remove item
+
+232
+00:11:07,839 --> 00:11:13,399
+trivia.
+
+233
+00:11:10,399 --> 00:11:13,399
+Otherwise
+
+234
+00:11:15,360 --> 00:11:20,160
+we're going to set it equal to the
+
+235
+00:11:17,279 --> 00:11:22,240
+remaining questions. So let's save that
+
+236
+00:11:20,160 --> 00:11:24,240
+and see if this works. Okay. Sum of all
+
+237
+00:11:22,240 --> 00:11:26,880
+numbers on roulette wheel is 66. We'll
+
+238
+00:11:24,240 --> 00:11:28,640
+say true. says correct and it says in
+
+239
+00:11:26,880 --> 00:11:30,720
+Star Trek's Cllingon are commonly
+
+240
+00:11:28,640 --> 00:11:32,160
+referred to as black eyes. It says the
+
+241
+00:11:30,720 --> 00:11:34,480
+correct answer is false. So I'm going
+
+242
+00:11:32,160 --> 00:11:37,040
+say false. It's going to say okay. I'm
+
+243
+00:11:34,480 --> 00:11:38,800
+going to check local storage and you can
+
+244
+00:11:37,040 --> 00:11:41,120
+see that there are seven questions
+
+245
+00:11:38,800 --> 00:11:45,480
+remaining. So let's answer the remaining
+
+246
+00:11:41,120 --> 00:11:45,480
+seven questions. So it's true.
+
+247
+00:11:45,680 --> 00:11:51,279
+We'll answer this one wrong. Says try
+
+248
+00:11:47,839 --> 00:11:53,839
+again. We'll hit false and then we'll
+
+249
+00:11:51,279 --> 00:11:56,320
+say false.
+
+250
+00:11:53,839 --> 00:11:58,399
+And then we'll say false.
+
+251
+00:11:56,320 --> 00:11:59,600
+And let's check local storage. If we
+
+252
+00:11:58,399 --> 00:12:02,880
+look at trivia questions, there are
+
+253
+00:11:59,600 --> 00:12:04,640
+three questions left. And so we'll say
+
+254
+00:12:02,880 --> 00:12:06,639
+true.
+
+255
+00:12:04,640 --> 00:12:10,399
+There should be two questions left now.
+
+256
+00:12:06,639 --> 00:12:12,320
+False. One question left now. And let's
+
+257
+00:12:10,399 --> 00:12:16,000
+check local storage. There's one
+
+258
+00:12:12,320 --> 00:12:18,480
+question left. Um, so this one will
+
+259
+00:12:16,000 --> 00:12:20,000
+answer true.
+
+260
+00:12:18,480 --> 00:12:22,160
+And now if we look in local storage,
+
+261
+00:12:20,000 --> 00:12:24,480
+there are no questions left. The answer
+
+262
+00:12:22,160 --> 00:12:27,120
+to this one is false.
+
+263
+00:12:24,480 --> 00:12:28,959
+So, we called our API and now if we
+
+264
+00:12:27,120 --> 00:12:32,160
+check local storage, we're back to
+
+265
+00:12:28,959 --> 00:12:34,399
+having um
+
+266
+00:12:32,160 --> 00:12:37,519
+nine questions left because we are
+
+267
+00:12:34,399 --> 00:12:39,920
+displaying the 10th question on screen.
+
+268
+00:12:37,519 --> 00:12:41,279
+All right. Um so, what I'm going to do
+
+269
+00:12:39,920 --> 00:12:43,839
+is I'm going to go in and add some
+
+270
+00:12:41,279 --> 00:12:46,880
+comments.
+
+271
+00:12:43,839 --> 00:12:50,000
+So, I'm going to say get questions and
+
+272
+00:12:46,880 --> 00:12:53,000
+load local storage.
+
+273
+00:12:50,000 --> 00:12:53,000
+um
+
+274
+00:12:55,600 --> 00:13:05,040
+grab questions from storage and display
+
+275
+00:13:00,000 --> 00:13:08,800
+and set correct answer. And then here
+
+276
+00:13:05,040 --> 00:13:12,320
+we're going to say check if there
+
+277
+00:13:08,800 --> 00:13:14,079
+are questions left. If not, grab new
+
+278
+00:13:12,320 --> 00:13:19,279
+questions.
+
+279
+00:13:14,079 --> 00:13:22,720
+Um here we're going to say um
+
+280
+00:13:19,279 --> 00:13:25,680
+grab the questions and set correct
+
+281
+00:13:22,720 --> 00:13:29,079
+answer and
+
+282
+00:13:25,680 --> 00:13:29,079
+and display.
+
+283
+00:13:30,959 --> 00:13:38,560
+Here we're going to say um reset
+
+284
+00:13:35,120 --> 00:13:43,320
+um local storage
+
+285
+00:13:38,560 --> 00:13:43,320
+based on remaining questions.
+
+286
+00:13:44,639 --> 00:13:52,320
+And then here we're going to say set
+
+287
+00:13:47,839 --> 00:13:54,320
+correct answer and display question.
+
+288
+00:13:52,320 --> 00:13:58,720
+Here in the check answer we're going to
+
+289
+00:13:54,320 --> 00:14:01,519
+see say check if button has the correct
+
+290
+00:13:58,720 --> 00:14:05,920
+text.
+
+291
+00:14:01,519 --> 00:14:09,800
+Here we'll say add event listeners.
+
+292
+00:14:05,920 --> 00:14:09,800
+And here we'll say
+
+293
+00:14:10,240 --> 00:14:16,720
+we actually don't need that one anymore.
+
+294
+00:14:13,360 --> 00:14:18,639
+So let's save this and run our code one
+
+295
+00:14:16,720 --> 00:14:21,440
+more time.
+
+296
+00:14:18,639 --> 00:14:23,040
+Oh
+
+297
+00:14:21,440 --> 00:14:27,199
+actually we do have one more portion
+
+298
+00:14:23,040 --> 00:14:29,040
+that we need to do. Um I was calling
+
+299
+00:14:27,199 --> 00:14:30,720
+if we put it back I was calling get
+
+300
+00:14:29,040 --> 00:14:32,480
+question from storage when the page
+
+301
+00:14:30,720 --> 00:14:37,440
+loaded. If I want to do this during
+
+302
+00:14:32,480 --> 00:14:40,000
+during using jQuery, then I will say
+
+303
+00:14:37,440 --> 00:14:43,199
+look for the body tag and when it's
+
+304
+00:14:40,000 --> 00:14:46,480
+ready I want you to call get question
+
+305
+00:14:43,199 --> 00:14:50,240
+from storage. Then we can remove this
+
+306
+00:14:46,480 --> 00:14:54,240
+last item and save. And if we come back
+
+307
+00:14:50,240 --> 00:14:55,760
+over um it looks like our game is back
+
+308
+00:14:54,240 --> 00:14:58,000
+to working and the correct answer of
+
+309
+00:14:55,760 --> 00:14:59,440
+this one is true.
+
+310
+00:14:58,000 --> 00:15:01,199
+And obviously this game will be a lot
+
+311
+00:14:59,440 --> 00:15:04,079
+more fun if you play it with the console
+
+312
+00:15:01,199 --> 00:15:04,079
+closed.

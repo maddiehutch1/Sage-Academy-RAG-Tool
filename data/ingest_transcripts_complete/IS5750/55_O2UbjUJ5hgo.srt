@@ -1,0 +1,707 @@
+1
+00:00:00,080 --> 00:00:04,480
+All right. So, the best way I found to
+
+2
+00:00:02,080 --> 00:00:06,240
+teach while loops is typically to go
+
+3
+00:00:04,480 --> 00:00:07,680
+back and reference the if statement that
+
+4
+00:00:06,240 --> 00:00:09,920
+we learned when we were talking about
+
+5
+00:00:07,680 --> 00:00:12,000
+selection. So, let's say we have
+
+6
+00:00:09,920 --> 00:00:14,799
+something that we are trying to make a
+
+7
+00:00:12,000 --> 00:00:16,880
+guess about. So, uh or something we're
+
+8
+00:00:14,799 --> 00:00:18,480
+trying to check in this case. So, let's
+
+9
+00:00:16,880 --> 00:00:21,279
+say that we've got the user who's
+
+10
+00:00:18,480 --> 00:00:27,359
+entering in a password. So we'll say uh
+
+11
+00:00:21,279 --> 00:00:31,599
+let my pass let the entered
+
+12
+00:00:27,359 --> 00:00:35,640
+password equal prompt
+
+13
+00:00:31,599 --> 00:00:35,640
+what is the password
+
+14
+00:00:36,880 --> 00:00:42,640
+and then let's create just uh a
+
+15
+00:00:40,000 --> 00:00:46,399
+hard-coded password. We'll say let
+
+16
+00:00:42,640 --> 00:00:50,160
+correct password equal
+
+17
+00:00:46,399 --> 00:00:52,239
+um hello.
+
+18
+00:00:50,160 --> 00:00:53,520
+So when they've entered that prompt,
+
+19
+00:00:52,239 --> 00:00:54,800
+maybe we want to welcome them to the
+
+20
+00:00:53,520 --> 00:00:58,160
+system if they get the right password.
+
+21
+00:00:54,800 --> 00:01:00,000
+So we could say if the entered password
+
+22
+00:00:58,160 --> 00:01:02,239
+is exactly the same as the correct
+
+23
+00:01:00,000 --> 00:01:04,080
+password,
+
+24
+00:01:02,239 --> 00:01:05,760
+then
+
+25
+00:01:04,080 --> 00:01:08,159
+alert
+
+26
+00:01:05,760 --> 00:01:11,720
+welcome
+
+27
+00:01:08,159 --> 00:01:11,720
+to the system.
+
+28
+00:01:11,760 --> 00:01:18,400
+And then else
+
+29
+00:01:14,159 --> 00:01:20,799
+alert wrong password.
+
+30
+00:01:18,400 --> 00:01:22,320
+But wait a minute.
+
+31
+00:01:20,799 --> 00:01:23,920
+If they get the wrong password, we
+
+32
+00:01:22,320 --> 00:01:25,280
+probably do want to give them a second
+
+33
+00:01:23,920 --> 00:01:26,799
+attempt. I mean, can you imagine if you
+
+34
+00:01:25,280 --> 00:01:29,119
+tried to log in to your bank and you got
+
+35
+00:01:26,799 --> 00:01:30,479
+one attempt and if you ever got the
+
+36
+00:01:29,119 --> 00:01:32,400
+password wrong, you were never getting
+
+37
+00:01:30,479 --> 00:01:33,520
+in. That' probably be pretty bad. So,
+
+38
+00:01:32,400 --> 00:01:38,479
+you probably want to give them a couple
+
+39
+00:01:33,520 --> 00:01:40,320
+of attempts. Um, so I mean we could copy
+
+40
+00:01:38,479 --> 00:01:43,040
+the code
+
+41
+00:01:40,320 --> 00:01:44,960
+and paste it.
+
+42
+00:01:43,040 --> 00:01:46,960
+Man, generally you you get several
+
+43
+00:01:44,960 --> 00:01:51,200
+attempts. So we could copy the code and
+
+44
+00:01:46,960 --> 00:01:52,960
+paste it. But now we've copied and
+
+45
+00:01:51,200 --> 00:01:54,399
+pasted code. So what happens when we
+
+46
+00:01:52,960 --> 00:01:57,200
+need to change it from saying wrong
+
+47
+00:01:54,399 --> 00:02:00,240
+password to wrong password,
+
+48
+00:01:57,200 --> 00:02:01,840
+please try again. Now I'd have to change
+
+49
+00:02:00,240 --> 00:02:04,320
+it in every single spot that I just
+
+50
+00:02:01,840 --> 00:02:05,680
+copied it. And then sometimes, unlike a
+
+51
+00:02:04,320 --> 00:02:07,119
+password where you probably want to
+
+52
+00:02:05,680 --> 00:02:09,440
+limit the number of times someone can
+
+53
+00:02:07,119 --> 00:02:11,280
+attempt to enter the password, there are
+
+54
+00:02:09,440 --> 00:02:16,160
+some things that you want to keep going.
+
+55
+00:02:11,280 --> 00:02:18,160
+For example, let's say you are um
+
+56
+00:02:16,160 --> 00:02:20,560
+you're making a deposit into the bank
+
+57
+00:02:18,160 --> 00:02:22,800
+and you have a bunch of checks. I will
+
+58
+00:02:20,560 --> 00:02:24,720
+have no idea how many checks you have,
+
+59
+00:02:22,800 --> 00:02:26,239
+but I need the system to keep asking
+
+60
+00:02:24,720 --> 00:02:29,599
+you, do you want to deposit another
+
+61
+00:02:26,239 --> 00:02:32,239
+check while you still have checks? Um,
+
+62
+00:02:29,599 --> 00:02:33,760
+and that need to continually run
+
+63
+00:02:32,239 --> 00:02:35,840
+something over and over when we don't
+
+64
+00:02:33,760 --> 00:02:37,680
+know how many times to run it is why we
+
+65
+00:02:35,840 --> 00:02:38,959
+would use a while loop. So, I'm going to
+
+66
+00:02:37,680 --> 00:02:40,720
+show you how we could rewrite this
+
+67
+00:02:38,959 --> 00:02:42,879
+password logic to use a while loop so
+
+68
+00:02:40,720 --> 00:02:44,879
+we're not duplicating code. So, what I'm
+
+69
+00:02:42,879 --> 00:02:48,400
+going to do here is I'm going to use the
+
+70
+00:02:44,879 --> 00:02:52,160
+keyword while I'm going to say while the
+
+71
+00:02:48,400 --> 00:02:54,160
+entered password is not the same as the
+
+72
+00:02:52,160 --> 00:02:55,920
+correct password. And then I'm going to
+
+73
+00:02:54,160 --> 00:02:58,400
+put curly braces so I can have a code
+
+74
+00:02:55,920 --> 00:02:59,920
+block that will repeat. Anytime the
+
+75
+00:02:58,400 --> 00:03:01,760
+correct password and the enter password
+
+76
+00:02:59,920 --> 00:03:04,879
+are not the same, this code block will
+
+77
+00:03:01,760 --> 00:03:09,159
+repeat. So maybe we want to say, "Alert,
+
+78
+00:03:04,879 --> 00:03:09,159
+wrong password. Try again."
+
+79
+00:03:10,400 --> 00:03:15,920
+And then this will keep going until they
+
+80
+00:03:13,519 --> 00:03:17,519
+enter the right password. Some of you
+
+81
+00:03:15,920 --> 00:03:21,519
+may have noticed that there's a problem
+
+82
+00:03:17,519 --> 00:03:24,400
+with this code. Um,
+
+83
+00:03:21,519 --> 00:03:27,440
+but I like to demonstrate my computer
+
+84
+00:03:24,400 --> 00:03:30,400
+crashing. So, um, we're going to run
+
+85
+00:03:27,440 --> 00:03:31,840
+this anyway. Um,
+
+86
+00:03:30,400 --> 00:03:33,280
+okay. So, it says, "What is the
+
+87
+00:03:31,840 --> 00:03:34,799
+password?" And I'm going to type
+
+88
+00:03:33,280 --> 00:03:36,239
+gibberish. And I'm going to hit okay.
+
+89
+00:03:34,799 --> 00:03:37,760
+And it says, "Wrong password. Please try
+
+90
+00:03:36,239 --> 00:03:40,159
+again. Wrong password. Please try again.
+
+91
+00:03:37,760 --> 00:03:43,280
+Wrong password. Please try again." And
+
+92
+00:03:40,159 --> 00:03:45,920
+we are actually stuck in a never- ending
+
+93
+00:03:43,280 --> 00:03:47,280
+loop. a never- ending loop of being told
+
+94
+00:03:45,920 --> 00:03:49,280
+the wrong password because we've never
+
+95
+00:03:47,280 --> 00:03:50,799
+given ourselves a way to exit the loop.
+
+96
+00:03:49,280 --> 00:03:53,599
+If we come back over to our Visual
+
+97
+00:03:50,799 --> 00:03:56,000
+Studio Code, we said that the entered
+
+98
+00:03:53,599 --> 00:03:57,680
+password um as long as it was not the
+
+99
+00:03:56,000 --> 00:03:59,280
+same as the correct password, alert
+
+100
+00:03:57,680 --> 00:04:01,040
+this. But we never gave them a chance to
+
+101
+00:03:59,280 --> 00:04:03,120
+reenter their password. So, what we've
+
+102
+00:04:01,040 --> 00:04:05,280
+entered is what I like to call a really
+
+103
+00:04:03,120 --> 00:04:07,920
+long loop, but other people like to call
+
+104
+00:04:05,280 --> 00:04:09,599
+it an infinite loop. I have yet to see a
+
+105
+00:04:07,920 --> 00:04:10,879
+loop that's still running. So, you know,
+
+106
+00:04:09,599 --> 00:04:13,200
+that doesn't really meet the definition
+
+107
+00:04:10,879 --> 00:04:15,200
+of infinite for me, but technically
+
+108
+00:04:13,200 --> 00:04:18,799
+speaking, this is called an infinite
+
+109
+00:04:15,200 --> 00:04:19,680
+loop. Um, so we need this to stop. So,
+
+110
+00:04:18,799 --> 00:04:22,160
+what I'm going to do is I'm going to
+
+111
+00:04:19,680 --> 00:04:25,440
+kill my server and I'm going to come
+
+112
+00:04:22,160 --> 00:04:27,199
+over here and I'm going to kill the tab
+
+113
+00:04:25,440 --> 00:04:29,440
+and I'm going to come back over to
+
+114
+00:04:27,199 --> 00:04:31,919
+Visual Studio Code and I'm going to add
+
+115
+00:04:29,440 --> 00:04:35,520
+in a way for this loop to end. So, we're
+
+116
+00:04:31,919 --> 00:04:38,080
+going to say um entered password.
+
+117
+00:04:35,520 --> 00:04:40,800
+Uh, we'll So, if they're not the same,
+
+118
+00:04:38,080 --> 00:04:42,479
+then we need to alert them that it's the
+
+119
+00:04:40,800 --> 00:04:47,840
+wrong password. And then we'll say
+
+120
+00:04:42,479 --> 00:04:52,120
+entered password equals prompt.
+
+121
+00:04:47,840 --> 00:04:52,120
+Please try again.
+
+122
+00:04:52,400 --> 00:04:56,880
+So, now we'll save this. Now, there is a
+
+123
+00:04:54,720 --> 00:04:58,320
+way for our loop to end. Um, we don't
+
+124
+00:04:56,880 --> 00:04:59,840
+know how many times they'll enter the
+
+125
+00:04:58,320 --> 00:05:01,600
+wrong password cuz they could enter the
+
+126
+00:04:59,840 --> 00:05:03,440
+wrong password as many times as we want
+
+127
+00:05:01,600 --> 00:05:04,880
+and this while loop will keep running.
+
+128
+00:05:03,440 --> 00:05:06,560
+But as soon as they enter the right
+
+129
+00:05:04,880 --> 00:05:08,720
+password, meaning entered password and
+
+130
+00:05:06,560 --> 00:05:11,120
+correct password are equal, then this
+
+131
+00:05:08,720 --> 00:05:12,960
+condition is no longer true. And so it
+
+132
+00:05:11,120 --> 00:05:15,360
+will skip out of the while loop and the
+
+133
+00:05:12,960 --> 00:05:17,919
+while loop will end. So just to prove
+
+134
+00:05:15,360 --> 00:05:19,680
+that to you, oh, I'll need to hit my go
+
+135
+00:05:17,919 --> 00:05:21,120
+live button.
+
+136
+00:05:19,680 --> 00:05:22,960
+And it says, what is the password? And
+
+137
+00:05:21,120 --> 00:05:24,479
+I'll enter gibberish. And it says wrong
+
+138
+00:05:22,960 --> 00:05:26,000
+password. Please try again. What is the
+
+139
+00:05:24,479 --> 00:05:28,960
+password? Enter gibberish. Wrong
+
+140
+00:05:26,000 --> 00:05:31,520
+password. Please try again. Um, and then
+
+141
+00:05:28,960 --> 00:05:34,560
+it says, please try again. And here I'm
+
+142
+00:05:31,520 --> 00:05:37,199
+going to enter hello. and hit enter. And
+
+143
+00:05:34,560 --> 00:05:39,360
+the loop ended. Um, we were successfully
+
+144
+00:05:37,199 --> 00:05:41,600
+able to end the loop. So coming back
+
+145
+00:05:39,360 --> 00:05:43,520
+over to our Visual Studio Code, we can
+
+146
+00:05:41,600 --> 00:05:46,400
+see that this while loop will repeat as
+
+147
+00:05:43,520 --> 00:05:49,759
+long as this condition is met. And then
+
+148
+00:05:46,400 --> 00:05:51,759
+once it's done, then it will exit. So
+
+149
+00:05:49,759 --> 00:05:53,840
+the only way to exit this while loop
+
+150
+00:05:51,759 --> 00:05:55,759
+right now is if the enter password is
+
+151
+00:05:53,840 --> 00:06:00,080
+equal to the correct password. So what I
+
+152
+00:05:55,759 --> 00:06:01,680
+could do here is I could say alert
+
+153
+00:06:00,080 --> 00:06:04,240
+welcome
+
+154
+00:06:01,680 --> 00:06:06,639
+to the system
+
+155
+00:06:04,240 --> 00:06:09,120
+and then save that.
+
+156
+00:06:06,639 --> 00:06:11,039
+So if we come back over here it says
+
+157
+00:06:09,120 --> 00:06:13,759
+what is the password? Gibberish. Wrong
+
+158
+00:06:11,039 --> 00:06:16,400
+password. Please try again.
+
+159
+00:06:13,759 --> 00:06:18,080
+Wrong password. Please try again. Wrong
+
+160
+00:06:16,400 --> 00:06:20,479
+password. Please try again. Now we'll
+
+161
+00:06:18,080 --> 00:06:23,199
+enter the correct one and it'll say
+
+162
+00:06:20,479 --> 00:06:26,000
+welcome to the system. And so that is
+
+163
+00:06:23,199 --> 00:06:27,440
+how a while loop works. It evaluates a
+
+164
+00:06:26,000 --> 00:06:29,520
+condition just like an if statement
+
+165
+00:06:27,440 --> 00:06:32,080
+evaluates a condition. If the condition
+
+166
+00:06:29,520 --> 00:06:34,160
+is true, then it drops into the loop and
+
+167
+00:06:32,080 --> 00:06:36,479
+runs it and then it re-evaluates the
+
+168
+00:06:34,160 --> 00:06:38,960
+condition. And so as long as you've
+
+169
+00:06:36,479 --> 00:06:40,560
+created a way to exit the loop, then
+
+170
+00:06:38,960 --> 00:06:42,319
+there will be a way then you won't run
+
+171
+00:06:40,560 --> 00:06:43,600
+into infinite loops. So you always want
+
+172
+00:06:42,319 --> 00:06:45,840
+to make sure you've got a way to exit
+
+173
+00:06:43,600 --> 00:06:47,360
+your loop. Um this loop will continue to
+
+174
+00:06:45,840 --> 00:06:49,440
+run as long as the password's not the
+
+175
+00:06:47,360 --> 00:06:51,360
+same as the correct password. Once it is
+
+176
+00:06:49,440 --> 00:06:54,479
+the same, it'll exit and it'll alert
+
+177
+00:06:51,360 --> 00:06:54,479
+welcome to the system.

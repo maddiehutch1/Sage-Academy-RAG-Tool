@@ -1,0 +1,123 @@
+1
+00:00:00,400 --> 00:00:06,720
+Okay, it is um project time. So, uh
+
+2
+00:00:05,520 --> 00:00:08,960
+don't forget your name and description
+
+3
+00:00:06,720 --> 00:00:12,000
+at the top.
+
+4
+00:00:08,960 --> 00:00:16,080
+Um in this uh homework, we're going to
+
+5
+00:00:12,000 --> 00:00:19,359
+be a pizza shop. So, I want you to make
+
+6
+00:00:16,080 --> 00:00:21,279
+an array which has objects inside of it
+
+7
+00:00:19,359 --> 00:00:23,519
+that are storing the name, price, and
+
+8
+00:00:21,279 --> 00:00:26,080
+whether or not the pizza is vegetarian.
+
+9
+00:00:23,519 --> 00:00:31,119
+Um I've given dummy data right below
+
+10
+00:00:26,080 --> 00:00:33,440
+that you can see. I want you to add um a
+
+11
+00:00:31,119 --> 00:00:36,079
+new pizza to the array programmatically.
+
+12
+00:00:33,440 --> 00:00:38,960
+I want you to use the spread operator um
+
+13
+00:00:36,079 --> 00:00:41,920
+strategically to create a new array that
+
+14
+00:00:38,960 --> 00:00:44,079
+also has a cow zone. Um I want you to
+
+15
+00:00:41,920 --> 00:00:46,640
+map the new array to just the pizza
+
+16
+00:00:44,079 --> 00:00:48,879
+names and print the results. I want you
+
+17
+00:00:46,640 --> 00:00:51,039
+to filter to only vegetarian pizzas. I
+
+18
+00:00:48,879 --> 00:00:52,480
+want you to reduce to figure out how
+
+19
+00:00:51,039 --> 00:00:56,000
+much it would cost you to buy one of
+
+20
+00:00:52,480 --> 00:00:58,559
+each type of pizza. I want you to find
+
+21
+00:00:56,000 --> 00:01:01,280
+to sort by price. Then I want you to
+
+22
+00:00:58,559 --> 00:01:04,000
+dstructure the very first object in that
+
+23
+00:01:01,280 --> 00:01:05,519
+sorted array to get the name and price.
+
+24
+00:01:04,000 --> 00:01:06,960
+Then I want you to write a function that
+
+25
+00:01:05,519 --> 00:01:09,680
+will allow someone to search through
+
+26
+00:01:06,960 --> 00:01:11,600
+your array um by name and find an object
+
+27
+00:01:09,680 --> 00:01:13,119
+in it. And then finally, I want you to
+
+28
+00:01:11,600 --> 00:01:15,760
+create an array where each element is
+
+29
+00:01:13,119 --> 00:01:17,200
+another array where it has the pizza
+
+30
+00:01:15,760 --> 00:01:20,880
+name and price. And I want you to print
+
+31
+00:01:17,200 --> 00:01:20,880
+that array. Good luck.

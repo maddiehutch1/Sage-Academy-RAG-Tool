@@ -1,0 +1,387 @@
+1
+00:00:00,080 --> 00:00:05,359
+Okay, so sometimes you want to store
+
+2
+00:00:02,800 --> 00:00:07,440
+multiple pieces of information and you
+
+3
+00:00:05,359 --> 00:00:08,639
+may be thinking, well, how do I do that?
+
+4
+00:00:07,440 --> 00:00:10,320
+Maybe you want to store multiple
+
+5
+00:00:08,639 --> 00:00:13,920
+information pieces of information about
+
+6
+00:00:10,320 --> 00:00:16,160
+multiple things. So for example, here I
+
+7
+00:00:13,920 --> 00:00:20,160
+have an array of numbers which is 4 5 6
+
+8
+00:00:16,160 --> 00:00:21,760
+1 2 3. Perhaps I want to store the name
+
+9
+00:00:20,160 --> 00:00:24,240
+of the movie that's associated with
+
+10
+00:00:21,760 --> 00:00:26,560
+them. So if these are the episodes in
+
+11
+00:00:24,240 --> 00:00:30,400
+Star Wars, then episode 4 I would want
+
+12
+00:00:26,560 --> 00:00:32,239
+to store a new hope as the name and um
+
+13
+00:00:30,400 --> 00:00:35,200
+episode 5 I'd want to store the Empire
+
+14
+00:00:32,239 --> 00:00:37,120
+Strikes Back, etc., etc. Um one of the
+
+15
+00:00:35,200 --> 00:00:40,160
+ways you can do that is with a parallel
+
+16
+00:00:37,120 --> 00:00:42,960
+array. So what a parallel array means is
+
+17
+00:00:40,160 --> 00:00:45,840
+that you keep your information in the
+
+18
+00:00:42,960 --> 00:00:48,719
+same position in every single array. So
+
+19
+00:00:45,840 --> 00:00:52,320
+in other words, position Z holds four in
+
+20
+00:00:48,719 --> 00:00:54,640
+the numbers array. position zero holds
+
+21
+00:00:52,320 --> 00:00:57,600
+um a new hope because a new hope is
+
+22
+00:00:54,640 --> 00:00:59,840
+associated with the number four. Uh the
+
+23
+00:00:57,600 --> 00:01:02,320
+Empire Strikes Back would be in the one
+
+24
+00:00:59,840 --> 00:01:04,640
+position and that is associated with the
+
+25
+00:01:02,320 --> 00:01:06,320
+five because the five is also in the one
+
+26
+00:01:04,640 --> 00:01:07,920
+position of this array. So in other
+
+27
+00:01:06,320 --> 00:01:10,000
+words, because the positions of the
+
+28
+00:01:07,920 --> 00:01:12,640
+arrays line up, you can use the
+
+29
+00:01:10,000 --> 00:01:14,400
+positioning where it sits in the array
+
+30
+00:01:12,640 --> 00:01:17,040
+to figure out extra information about
+
+31
+00:01:14,400 --> 00:01:19,119
+it. So now I know that if I go to the
+
+32
+00:01:17,040 --> 00:01:20,799
+last position, Revenge of the Sith, the
+
+33
+00:01:19,119 --> 00:01:22,240
+last position of the names array is
+
+34
+00:01:20,799 --> 00:01:24,000
+going to correspond with the last
+
+35
+00:01:22,240 --> 00:01:25,680
+position of the numbers array. Meaning
+
+36
+00:01:24,000 --> 00:01:27,680
+three corresponds with Revenge of the
+
+37
+00:01:25,680 --> 00:01:29,680
+Sith. And we could keep storing
+
+38
+00:01:27,680 --> 00:01:35,520
+additional information this way. So I
+
+39
+00:01:29,680 --> 00:01:37,840
+could say let has storm troopers equal.
+
+40
+00:01:35,520 --> 00:01:40,560
+And then a new hope does have
+
+41
+00:01:37,840 --> 00:01:42,240
+stormtroopers. So we'd store true. Uh
+
+42
+00:01:40,560 --> 00:01:44,000
+the Empire Strikes Back does, so we'd
+
+43
+00:01:42,240 --> 00:01:47,000
+store true.
+
+44
+00:01:44,000 --> 00:01:47,000
+Um,
+
+45
+00:01:47,280 --> 00:01:52,560
+wow, I'm blanking. Return of the Jedi
+
+46
+00:01:49,040 --> 00:01:54,640
+does, so we'd store true. Um, Phantom
+
+47
+00:01:52,560 --> 00:01:56,159
+Menace does not, so we'd store false.
+
+48
+00:01:54,640 --> 00:01:58,240
+Uh, Attack of the Clones does not, so
+
+49
+00:01:56,159 --> 00:02:00,000
+we'd store false. Uh, you could debate
+
+50
+00:01:58,240 --> 00:02:01,920
+with me on whether or not the clones
+
+51
+00:02:00,000 --> 00:02:03,439
+count as Stormtroopers in Revenge of the
+
+52
+00:02:01,920 --> 00:02:06,960
+Sith, but we're going to store false
+
+53
+00:02:03,439 --> 00:02:09,039
+just for the sake of simplicity. So now,
+
+54
+00:02:06,960 --> 00:02:10,959
+if I look through my three parallel
+
+55
+00:02:09,039 --> 00:02:12,800
+arrays, I am now storing three pieces of
+
+56
+00:02:10,959 --> 00:02:14,879
+information about a single movie. So,
+
+57
+00:02:12,800 --> 00:02:17,280
+for example, a new hope I now know is
+
+58
+00:02:14,879 --> 00:02:19,040
+episode 4 and it has stormtroopers. The
+
+59
+00:02:17,280 --> 00:02:20,959
+Empire Strikes Back is Empire. Good
+
+60
+00:02:19,040 --> 00:02:23,599
+luck. The Empire Strikes Back is episode
+
+61
+00:02:20,959 --> 00:02:25,280
+5 and it also has stormtroopers. And
+
+62
+00:02:23,599 --> 00:02:27,360
+because all of the arrays are in the
+
+63
+00:02:25,280 --> 00:02:29,200
+same positioning because all the
+
+64
+00:02:27,360 --> 00:02:31,200
+information is organized in the exact
+
+65
+00:02:29,200 --> 00:02:33,599
+same order. We call these parallel
+
+66
+00:02:31,200 --> 00:02:35,440
+arrays. There's a small weakness with
+
+67
+00:02:33,599 --> 00:02:37,920
+parallel arrays and that is that they're
+
+68
+00:02:35,440 --> 00:02:40,560
+not actually glued together. So, for
+
+69
+00:02:37,920 --> 00:02:44,720
+example, if I were to uncomment this
+
+70
+00:02:40,560 --> 00:02:46,800
+bubble sort that we just built, um, and
+
+71
+00:02:44,720 --> 00:02:50,319
+I were to sort numbers, suddenly this
+
+72
+00:02:46,800 --> 00:02:52,959
+would now be 1 2 3 4 5 6. Now, it would
+
+73
+00:02:50,319 --> 00:02:57,280
+be saying that A New Hope is episode 1
+
+74
+00:02:52,959 --> 00:02:59,120
+and that it has Stormtroopers. Um, and
+
+75
+00:02:57,280 --> 00:03:00,560
+so now our information is broken and
+
+76
+00:02:59,120 --> 00:03:04,560
+worthless. Broken information is
+
+77
+00:03:00,560 --> 00:03:06,480
+worthless. So, um,
+
+78
+00:03:04,560 --> 00:03:08,480
+what we'd want to do is if we sort one
+
+79
+00:03:06,480 --> 00:03:11,440
+of these arrays, we'd want to sort all
+
+80
+00:03:08,480 --> 00:03:13,040
+of the arrays. And that can be a pain.
+
+81
+00:03:11,440 --> 00:03:15,040
+And so, we're not going to cover that at
+
+82
+00:03:13,040 --> 00:03:16,959
+this point in time. You would just take
+
+83
+00:03:15,040 --> 00:03:18,879
+this same logic and you would expand on
+
+84
+00:03:16,959 --> 00:03:20,720
+it. And if you want to do that, go ahead
+
+85
+00:03:18,879 --> 00:03:23,599
+and ask Chad GBT how to expand the
+
+86
+00:03:20,720 --> 00:03:25,760
+bubble sort logic to do three arrays.
+
+87
+00:03:23,599 --> 00:03:27,519
+Um, but
+
+88
+00:03:25,760 --> 00:03:29,120
+there are much better sorting methods,
+
+89
+00:03:27,519 --> 00:03:30,400
+and we'll learn those in a minute. But
+
+90
+00:03:29,120 --> 00:03:31,680
+for now, I would just want you to know
+
+91
+00:03:30,400 --> 00:03:33,120
+that if you want to store multiple
+
+92
+00:03:31,680 --> 00:03:34,879
+pieces of information and you need them
+
+93
+00:03:33,120 --> 00:03:36,560
+all to stay associated, one thing you
+
+94
+00:03:34,879 --> 00:03:38,159
+could do is you could use parallel
+
+95
+00:03:36,560 --> 00:03:41,360
+arrays and store the information
+
+96
+00:03:38,159 --> 00:03:43,920
+parallel to another array. All right,
+
+97
+00:03:41,360 --> 00:03:43,920
+thanks for watching.

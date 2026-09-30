@@ -1,0 +1,143 @@
+1
+00:00:00,160 --> 00:00:04,880
+Now that we've talked a little bit about
+
+2
+00:00:02,560 --> 00:00:06,160
+Axios, it's time to pivot again. This
+
+3
+00:00:04,880 --> 00:00:08,000
+time we're going to start talking about
+
+4
+00:00:06,160 --> 00:00:09,440
+something that is once again built into
+
+5
+00:00:08,000 --> 00:00:11,519
+JavaScript. So you don't have to bring
+
+6
+00:00:09,440 --> 00:00:13,200
+in an external script tag. So this is
+
+7
+00:00:11,519 --> 00:00:15,599
+just as built in as local storage and
+
+8
+00:00:13,200 --> 00:00:16,800
+session storage. And that is forms. And
+
+9
+00:00:15,599 --> 00:00:19,199
+I'm going to show you how to work with
+
+10
+00:00:16,800 --> 00:00:22,720
+forms. So let's say here I put in my
+
+11
+00:00:19,199 --> 00:00:24,720
+username and I put in my password and I
+
+12
+00:00:22,720 --> 00:00:27,439
+hit submit. You'll see here that in the
+
+13
+00:00:24,720 --> 00:00:29,679
+on click thing I have it logging out
+
+14
+00:00:27,439 --> 00:00:32,000
+hello world. So, watch here very
+
+15
+00:00:29,679 --> 00:00:33,680
+closely.
+
+16
+00:00:32,000 --> 00:00:37,040
+Did you see how it appeared and then
+
+17
+00:00:33,680 --> 00:00:39,680
+vanished really quickly? What happened?
+
+18
+00:00:37,040 --> 00:00:42,079
+Well, if you look up at my URL bar, you
+
+19
+00:00:39,680 --> 00:00:45,600
+can see now it says localhost 5000
+
+20
+00:00:42,079 --> 00:00:47,920
+username to password pa and it took my
+
+21
+00:00:45,600 --> 00:00:50,320
+username and put it on the top bar and
+
+22
+00:00:47,920 --> 00:00:52,399
+my password and put it up there as well.
+
+23
+00:00:50,320 --> 00:00:55,440
+So, what we did is we actually navigated
+
+24
+00:00:52,399 --> 00:00:57,600
+to a new page. Um, and that's what
+
+25
+00:00:55,440 --> 00:01:00,000
+happens when you click a button inside
+
+26
+00:00:57,600 --> 00:01:02,960
+of a form. And also, typically when that
+
+27
+00:01:00,000 --> 00:01:05,519
+type of button is type submit, it means
+
+28
+00:01:02,960 --> 00:01:07,040
+that it wants to submit this form. So
+
+29
+00:01:05,519 --> 00:01:08,880
+forms are really nice as long as you
+
+30
+00:01:07,040 --> 00:01:11,200
+include them in form tags because it
+
+31
+00:01:08,880 --> 00:01:13,119
+bundles up all of the data and submits
+
+32
+00:01:11,200 --> 00:01:16,880
+it for you. So if I wanted to send all
+
+33
+00:01:13,119 --> 00:01:18,960
+of this data to a server to a server,
+
+34
+00:01:16,880 --> 00:01:21,520
+um, this submit button bundles it all up
+
+35
+00:01:18,960 --> 00:01:24,400
+and sends it somewhere. And we'll keep
+
+36
+00:01:21,520 --> 00:01:24,400
+talking about that in the next

@@ -1,0 +1,179 @@
+1
+00:00:00,160 --> 00:00:05,040
+Okay, so in the last video when we
+
+2
+00:00:02,159 --> 00:00:07,040
+submitted this form, it took us to a new
+
+3
+00:00:05,040 --> 00:00:08,480
+page and the way it did that is it
+
+4
+00:00:07,040 --> 00:00:11,440
+changed the URL from just being
+
+5
+00:00:08,480 --> 00:00:13,280
+localhost 5500 to localhost 5500 and
+
+6
+00:00:11,440 --> 00:00:16,000
+then passing over information for the
+
+7
+00:00:13,280 --> 00:00:17,520
+username and the password. Now one thing
+
+8
+00:00:16,000 --> 00:00:19,600
+that's a problem with this is my
+
+9
+00:00:17,520 --> 00:00:23,439
+password is now visible on the URL bar
+
+10
+00:00:19,600 --> 00:00:25,439
+and that's kind of problematic. Um, and
+
+11
+00:00:23,439 --> 00:00:27,279
+for another maybe the resource I'm using
+
+12
+00:00:25,439 --> 00:00:29,679
+on the back end needs this to come
+
+13
+00:00:27,279 --> 00:00:32,079
+across as a post request. So what it's
+
+14
+00:00:29,679 --> 00:00:34,399
+come across right now is this is called
+
+15
+00:00:32,079 --> 00:00:36,079
+a get request. One of the key things
+
+16
+00:00:34,399 --> 00:00:37,680
+about a git request is that it encodes
+
+17
+00:00:36,079 --> 00:00:41,120
+all of the data and puts it into the
+
+18
+00:00:37,680 --> 00:00:43,200
+URL. So when it gets sent over all of
+
+19
+00:00:41,120 --> 00:00:46,239
+this data is sent over and it's visible
+
+20
+00:00:43,200 --> 00:00:48,000
+to anybody who can see the URL. Um and
+
+21
+00:00:46,239 --> 00:00:49,920
+again that could be problematic. So what
+
+22
+00:00:48,000 --> 00:00:51,760
+we could do is we could change the type
+
+23
+00:00:49,920 --> 00:00:53,760
+of form this is and you could say what
+
+24
+00:00:51,760 --> 00:00:56,239
+method do I want it to use to send the
+
+25
+00:00:53,760 --> 00:00:58,480
+data. Well there are three options here.
+
+26
+00:00:56,239 --> 00:01:00,640
+There's get, post and dialogue. dialogue
+
+27
+00:00:58,480 --> 00:01:03,520
+means show a pop-up box on the screen.
+
+28
+00:01:00,640 --> 00:01:07,280
+Um, and you may remember this from when
+
+29
+00:01:03,520 --> 00:01:09,840
+we talked about modals. Um, but here I
+
+30
+00:01:07,280 --> 00:01:13,600
+am going to put post.
+
+31
+00:01:09,840 --> 00:01:17,200
+And so if I save this now, uh, let's go
+
+32
+00:01:13,600 --> 00:01:19,360
+back to our normal website and I put in
+
+33
+00:01:17,200 --> 00:01:22,000
+my username and put in my last name as a
+
+34
+00:01:19,360 --> 00:01:24,640
+password and hit submit.
+
+35
+00:01:22,000 --> 00:01:27,439
+Um, it says it tried to make a post
+
+36
+00:01:24,640 --> 00:01:30,240
+request and it didn't get anything back.
+
+37
+00:01:27,439 --> 00:01:32,720
+And that's because um it tried to talk
+
+38
+00:01:30,240 --> 00:01:34,400
+to a server that doesn't really exist.
+
+39
+00:01:32,720 --> 00:01:36,640
+Um right now we're just running this on
+
+40
+00:01:34,400 --> 00:01:38,320
+live server. Um and live server isn't
+
+41
+00:01:36,640 --> 00:01:40,000
+listening for post requests. It's
+
+42
+00:01:38,320 --> 00:01:41,759
+listening for get requests so that we
+
+43
+00:01:40,000 --> 00:01:44,079
+can find
+
+44
+00:01:41,759 --> 00:01:48,159
+a website, but it is not listening for
+
+45
+00:01:44,079 --> 00:01:48,159
+post requests like our API

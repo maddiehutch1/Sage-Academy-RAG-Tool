@@ -1,0 +1,411 @@
+1
+00:00:00,080 --> 00:00:05,440
+Hey, in the last video I told you that
+
+2
+00:00:03,120 --> 00:00:07,200
+you can put functions into variables. So
+
+3
+00:00:05,440 --> 00:00:11,040
+let's look at what that would look like.
+
+4
+00:00:07,200 --> 00:00:14,000
+So let's create a function. Um,
+
+5
+00:00:11,040 --> 00:00:18,320
+and we'll just call this function add
+
+6
+00:00:14,000 --> 00:00:22,560
+two numbers. And we'll take in a num one
+
+7
+00:00:18,320 --> 00:00:26,640
+and a num two. We'll do some work. Um,
+
+8
+00:00:22,560 --> 00:00:29,119
+we'll say let results equal num one plus
+
+9
+00:00:26,640 --> 00:00:34,399
+num two. And then we'll give some
+
+10
+00:00:29,119 --> 00:00:36,960
+output. So we'll return num one plus num
+
+11
+00:00:34,399 --> 00:00:39,520
+two. Okay,
+
+12
+00:00:36,960 --> 00:00:40,640
+or sorry we'll return the result.
+
+13
+00:00:39,520 --> 00:00:42,800
+There's no point in doing the work
+
+14
+00:00:40,640 --> 00:00:44,800
+twice. So this entire thing could be
+
+15
+00:00:42,800 --> 00:00:46,879
+simplified to just saying return num one
+
+16
+00:00:44,800 --> 00:00:48,160
+plus num two. But I like to have it
+
+17
+00:00:46,879 --> 00:00:49,760
+split onto two lines because it makes
+
+18
+00:00:48,160 --> 00:00:51,360
+you easier to it makes it easier to show
+
+19
+00:00:49,760 --> 00:00:53,520
+things in the debugger. So we've created
+
+20
+00:00:51,360 --> 00:00:56,320
+a function. It takes two pieces of
+
+21
+00:00:53,520 --> 00:00:58,879
+input. It does some work and then it
+
+22
+00:00:56,320 --> 00:01:00,879
+gives some output. Now let's create a
+
+23
+00:00:58,879 --> 00:01:05,600
+variable. Um we'll create a variable
+
+24
+00:01:00,879 --> 00:01:08,799
+called my var. And we'll set it equal to
+
+25
+00:01:05,600 --> 00:01:11,760
+um a string. Hello. Okay. So that's how
+
+26
+00:01:08,799 --> 00:01:15,280
+you set a variable equal to a string.
+
+27
+00:01:11,760 --> 00:01:17,520
+Um let's create another variable um and
+
+28
+00:01:15,280 --> 00:01:18,960
+set it equal to a number. And that's how
+
+29
+00:01:17,520 --> 00:01:20,240
+you set it equal to a number. Let's
+
+30
+00:01:18,960 --> 00:01:24,000
+create another variable and let's set it
+
+31
+00:01:20,240 --> 00:01:27,520
+equal to a boolean. Um
+
+32
+00:01:24,000 --> 00:01:33,600
+okay. Well, now I'm going to create
+
+33
+00:01:27,520 --> 00:01:36,640
+another variable and say let my
+
+34
+00:01:33,600 --> 00:01:40,000
+function equal. Then I'm going to say
+
+35
+00:01:36,640 --> 00:01:43,360
+set it equal to add two numbers.
+
+36
+00:01:40,000 --> 00:01:46,000
+Okay, notice something different about
+
+37
+00:01:43,360 --> 00:01:48,079
+the syntax. If I wanted the result of
+
+38
+00:01:46,000 --> 00:01:53,360
+adding the two numbers, then I could say
+
+39
+00:01:48,079 --> 00:01:55,040
+let result equal add two numbers one and
+
+40
+00:01:53,360 --> 00:01:56,880
+two.
+
+41
+00:01:55,040 --> 00:01:58,640
+Notice I put parenthesis. When I put
+
+42
+00:01:56,880 --> 00:02:01,759
+parenthesis, I'm saying run the
+
+43
+00:01:58,640 --> 00:02:03,920
+function. Give me the result. Here I'm
+
+44
+00:02:01,759 --> 00:02:07,040
+saying don't run the function, just set
+
+45
+00:02:03,920 --> 00:02:10,560
+my variable equal to that function.
+
+46
+00:02:07,040 --> 00:02:16,800
+So that means that on this line I could
+
+47
+00:02:10,560 --> 00:02:20,640
+say um let result two equal
+
+48
+00:02:16,800 --> 00:02:24,640
+my function and call it and give it um
+
+49
+00:02:20,640 --> 00:02:26,400
+two and three. Okay, let's save this and
+
+50
+00:02:24,640 --> 00:02:27,920
+let's just go see this in action. So
+
+51
+00:02:26,400 --> 00:02:30,879
+let's go live. Okay, we're going to
+
+52
+00:02:27,920 --> 00:02:34,160
+inspect the page
+
+53
+00:02:30,879 --> 00:02:36,959
+and let's put a break point on line 15.
+
+54
+00:02:34,160 --> 00:02:39,840
+Okay, we'll reload our page. So, we're
+
+55
+00:02:36,959 --> 00:02:41,519
+about to create a variable called hello.
+
+56
+00:02:39,840 --> 00:02:44,879
+Cool. We've created the variable. If we
+
+57
+00:02:41,519 --> 00:02:46,879
+hover over my var, it stores hello.
+
+58
+00:02:44,879 --> 00:02:50,000
+Um, we've created our others. If we look
+
+59
+00:02:46,879 --> 00:02:52,080
+at my num, it stores 10. If we look at
+
+60
+00:02:50,000 --> 00:02:54,000
+my bool, it stores true. So, we're about
+
+61
+00:02:52,080 --> 00:02:56,640
+to set my function equal to add two
+
+62
+00:02:54,000 --> 00:02:59,360
+numbers. Add two numbers. If you hover
+
+63
+00:02:56,640 --> 00:03:01,920
+over it, it says that's a function that
+
+64
+00:02:59,360 --> 00:03:04,080
+does uh that takes two inputs, does some
+
+65
+00:03:01,920 --> 00:03:06,319
+work, and gives some output. If we hit
+
+66
+00:03:04,080 --> 00:03:08,560
+next now, if we hover over my function,
+
+67
+00:03:06,319 --> 00:03:10,640
+it says that's a function that takes two
+
+68
+00:03:08,560 --> 00:03:13,360
+pieces of input, does some work, and
+
+69
+00:03:10,640 --> 00:03:15,200
+gives some output. Now, we're going to
+
+70
+00:03:13,360 --> 00:03:17,519
+call the function. So, we're saying let
+
+71
+00:03:15,200 --> 00:03:20,080
+result equal add two numbers, one and
+
+72
+00:03:17,519 --> 00:03:22,879
+two. So, if we hit next, it jumps up to
+
+73
+00:03:20,080 --> 00:03:24,959
+add two numbers. Num one is the one we
+
+74
+00:03:22,879 --> 00:03:27,360
+passed in. Num two is the two we passed
+
+75
+00:03:24,959 --> 00:03:28,959
+in. If we add those together, we get
+
+76
+00:03:27,360 --> 00:03:30,319
+three. So, if we hover over result, we
+
+77
+00:03:28,959 --> 00:03:32,799
+get three. And we're about to return
+
+78
+00:03:30,319 --> 00:03:34,959
+three back to the program.
+
+79
+00:03:32,799 --> 00:03:37,840
+and we return it back to the program.
+
+80
+00:03:34,959 --> 00:03:39,680
+Result is now three. Now we're about to
+
+81
+00:03:37,840 --> 00:03:41,680
+call result two and we're setting it
+
+82
+00:03:39,680 --> 00:03:43,840
+equal to my function. Well, what is my
+
+83
+00:03:41,680 --> 00:03:45,440
+function? My function is a variable. And
+
+84
+00:03:43,840 --> 00:03:47,440
+what is it storing? It's storing the
+
+85
+00:03:45,440 --> 00:03:49,360
+function called add two numbers. So,
+
+86
+00:03:47,440 --> 00:03:51,280
+we're about to jump up to that function.
+
+87
+00:03:49,360 --> 00:03:53,519
+So, we'll hit next and we jump up to
+
+88
+00:03:51,280 --> 00:03:56,159
+that function. Num one is the two that
+
+89
+00:03:53,519 --> 00:03:59,439
+we passed in. Num two is the three that
+
+90
+00:03:56,159 --> 00:04:01,840
+we passed in. And so now we can take
+
+91
+00:03:59,439 --> 00:04:04,000
+those two numbers together, add them,
+
+92
+00:04:01,840 --> 00:04:06,560
+the result is five, and we can return
+
+93
+00:04:04,000 --> 00:04:08,720
+them to the main program. And now if we
+
+94
+00:04:06,560 --> 00:04:10,879
+hover over result two, we can see the
+
+95
+00:04:08,720 --> 00:04:12,480
+result is five. So why is this
+
+96
+00:04:10,879 --> 00:04:14,319
+important? And why did I take the time
+
+97
+00:04:12,480 --> 00:04:16,079
+to show you this? Why didn't I just call
+
+98
+00:04:14,319 --> 00:04:17,600
+my function my function in the first
+
+99
+00:04:16,079 --> 00:04:19,519
+place if I was just going to rename it a
+
+100
+00:04:17,600 --> 00:04:22,800
+few lines later? Well, what I'm trying
+
+101
+00:04:19,519 --> 00:04:25,360
+to show you is that a variable can hold
+
+102
+00:04:22,800 --> 00:04:29,360
+a function. And if a variable can hold a
+
+103
+00:04:25,360 --> 00:04:29,360
+function, it lets us do some pretty cool

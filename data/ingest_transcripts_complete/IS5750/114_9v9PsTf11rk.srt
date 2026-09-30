@@ -1,0 +1,179 @@
+1
+00:00:00,000 --> 00:00:04,799
+In the next few videos, we're going to
+
+2
+00:00:01,360 --> 00:00:06,160
+be discussing Git and GitHub. And in
+
+3
+00:00:04,799 --> 00:00:07,680
+order to understand why you might need
+
+4
+00:00:06,160 --> 00:00:11,200
+them, I've arranged a little bit of a
+
+5
+00:00:07,680 --> 00:00:14,880
+demonstration. So, here
+
+6
+00:00:11,200 --> 00:00:17,199
+I have a very important, very, very
+
+7
+00:00:14,880 --> 00:00:19,760
+important list of numbers. Definitely
+
+8
+00:00:17,199 --> 00:00:22,720
+didn't just come from a Kaggle data set.
+
+9
+00:00:19,760 --> 00:00:24,720
+Um, but I need to update these. And at
+
+10
+00:00:22,720 --> 00:00:27,199
+the same time, my teammate also is going
+
+11
+00:00:24,720 --> 00:00:30,080
+to be updating some things. Um, he's
+
+12
+00:00:27,199 --> 00:00:31,760
+been asked to go down this column and
+
+13
+00:00:30,080 --> 00:00:33,920
+the black on red's a little hard to
+
+14
+00:00:31,760 --> 00:00:36,399
+read. So, he's gonna make the background
+
+15
+00:00:33,920 --> 00:00:38,399
+color a navy color and the the
+
+16
+00:00:36,399 --> 00:00:39,680
+foreground color, the font color, he's
+
+17
+00:00:38,399 --> 00:00:40,800
+going to make it white. So, really
+
+18
+00:00:39,680 --> 00:00:42,480
+important stuff. And I'm going to be
+
+19
+00:00:40,800 --> 00:00:44,160
+over here fixing these numbers cuz it's
+
+20
+00:00:42,480 --> 00:00:46,399
+actually been a month since this data
+
+21
+00:00:44,160 --> 00:00:48,879
+was collected. So, I need to go through
+
+22
+00:00:46,399 --> 00:00:51,440
+and collect the data. So, um, I'm going
+
+23
+00:00:48,879 --> 00:00:54,079
+to have my teammate get started.
+
+24
+00:00:51,440 --> 00:00:56,160
+And, okay, looks like he's started.
+
+25
+00:00:54,079 --> 00:01:00,320
+Let's see. So, this gu is going to be
+
+26
+00:00:56,160 --> 00:01:04,559
+25. This guy's 17. This guy's 23. Oh,
+
+27
+00:01:00,320 --> 00:01:07,360
+wait. No, that's supposed to be 22.
+
+28
+00:01:04,559 --> 00:01:11,360
+And oh, hang on.
+
+29
+00:01:07,360 --> 00:01:13,040
+Oh, that's supposed to be 17. 22.
+
+30
+00:01:11,360 --> 00:01:16,400
+25.
+
+31
+00:01:13,040 --> 00:01:18,400
+Uh, this is a nine. And oh, that wasn't
+
+32
+00:01:16,400 --> 00:01:19,920
+supposed to be nine. Supposed to be
+
+33
+00:01:18,400 --> 00:01:22,720
+seven.
+
+34
+00:01:19,920 --> 00:01:24,640
+And that's a 13. And some of you may
+
+35
+00:01:22,720 --> 00:01:28,000
+have noticed what is happening here.
+
+36
+00:01:24,640 --> 00:01:31,280
+When I hit control-z to undo some of my
+
+37
+00:01:28,000 --> 00:01:34,880
+changes on this month column, I actually
+
+38
+00:01:31,280 --> 00:01:36,880
+also undid some of my teammates changes.
+
+39
+00:01:34,880 --> 00:01:39,600
+So, wouldn't it be nice if my teammate
+
+40
+00:01:36,880 --> 00:01:41,680
+could make changes to this column on a
+
+41
+00:01:39,600 --> 00:01:44,000
+separate file and I could make changes
+
+42
+00:01:41,680 --> 00:01:46,159
+to this column and then we could just
+
+43
+00:01:44,000 --> 00:01:47,520
+put the two changes together. That would
+
+44
+00:01:46,159 --> 00:01:50,799
+be really nice. And that is the
+
+45
+00:01:47,520 --> 00:01:50,799
+principle that git is built

@@ -1,0 +1,475 @@
+1
+00:00:00,080 --> 00:00:03,360
+So, we've learned how to make a
+
+2
+00:00:01,600 --> 00:00:05,440
+decision, but sometimes the decision has
+
+3
+00:00:03,360 --> 00:00:06,640
+multiple steps within it, multiple
+
+4
+00:00:05,440 --> 00:00:08,400
+decisions that you want to make. So,
+
+5
+00:00:06,640 --> 00:00:09,760
+when you want to stack decisions, you
+
+6
+00:00:08,400 --> 00:00:12,880
+can actually just stack the if
+
+7
+00:00:09,760 --> 00:00:14,080
+statements inside of each other. So, um
+
+8
+00:00:12,880 --> 00:00:16,240
+I'm going to clear this and we're going
+
+9
+00:00:14,080 --> 00:00:18,400
+to do a different example. Um we're
+
+10
+00:00:16,240 --> 00:00:21,760
+going to do the example of a calculator.
+
+11
+00:00:18,400 --> 00:00:22,960
+So, we're going to um prompt the user to
+
+12
+00:00:21,760 --> 00:00:25,119
+ask them if they want to make a
+
+13
+00:00:22,960 --> 00:00:30,480
+calculation. So, we're going to say, let
+
+14
+00:00:25,119 --> 00:00:34,160
+make calculation equal prompt.
+
+15
+00:00:30,480 --> 00:00:37,640
+Do you want to make
+
+16
+00:00:34,160 --> 00:00:37,640
+a calculation?
+
+17
+00:00:38,879 --> 00:00:44,960
+And then um we can make use an if
+
+18
+00:00:42,559 --> 00:00:47,920
+statement. So we'll say if
+
+19
+00:00:44,960 --> 00:00:50,640
+um make calculation
+
+20
+00:00:47,920 --> 00:00:53,680
+is yes
+
+21
+00:00:50,640 --> 00:00:58,239
+then we want to do something otherwise
+
+22
+00:00:53,680 --> 00:01:02,000
+we want to alert goodbye.
+
+23
+00:00:58,239 --> 00:01:04,559
+Well that's great. Um
+
+24
+00:01:02,000 --> 00:01:06,240
+but once we have figured out that they
+
+25
+00:01:04,559 --> 00:01:07,600
+want to make a calculation we want to
+
+26
+00:01:06,240 --> 00:01:11,920
+ask them what kind of calculation they
+
+27
+00:01:07,600 --> 00:01:18,320
+want to make. So um let's ask them. So
+
+28
+00:01:11,920 --> 00:01:23,200
+we'll say let um operation equal prompt.
+
+29
+00:01:18,320 --> 00:01:27,759
+What operation would you like to use?
+
+30
+00:01:23,200 --> 00:01:29,520
+And then it we'll put add, subtract,
+
+31
+00:01:27,759 --> 00:01:32,520
+multiply,
+
+32
+00:01:29,520 --> 00:01:32,520
+divide
+
+33
+00:01:32,880 --> 00:01:37,439
+just to give the user some um options.
+
+34
+00:01:35,920 --> 00:01:40,640
+I'm going to close this side panel so
+
+35
+00:01:37,439 --> 00:01:42,000
+you can see all of my code. So,
+
+36
+00:01:40,640 --> 00:01:43,920
+we're going to ask them if they want to
+
+37
+00:01:42,000 --> 00:01:45,119
+make a calculation. If they said yes,
+
+38
+00:01:43,920 --> 00:01:46,720
+then we want to ask them what kind of
+
+39
+00:01:45,119 --> 00:01:49,360
+operation they'd like to use. Otherwise,
+
+40
+00:01:46,720 --> 00:01:51,840
+we'd just like to tell them goodbye.
+
+41
+00:01:49,360 --> 00:01:53,759
+Now that we are in know that they want
+
+42
+00:01:51,840 --> 00:01:55,200
+to make a calculation. Now, we need to
+
+43
+00:01:53,759 --> 00:01:57,920
+figure out if they said add, subtract,
+
+44
+00:01:55,200 --> 00:01:59,680
+multiply or divide. So, that's another
+
+45
+00:01:57,920 --> 00:02:01,040
+decision-making process. So, let's
+
+46
+00:01:59,680 --> 00:02:03,119
+create another if statement. So we'll
+
+47
+00:02:01,040 --> 00:02:04,880
+say if
+
+48
+00:02:03,119 --> 00:02:08,080
+operation
+
+49
+00:02:04,880 --> 00:02:12,560
+is add
+
+50
+00:02:08,080 --> 00:02:14,720
+then we're going to say oh actually we
+
+51
+00:02:12,560 --> 00:02:17,200
+should prompt them for two numbers. So
+
+52
+00:02:14,720 --> 00:02:18,800
+we're going to ask if they want to make
+
+53
+00:02:17,200 --> 00:02:19,840
+a calculation. If they do then we're
+
+54
+00:02:18,800 --> 00:02:23,360
+going to ask them for two numbers. So
+
+55
+00:02:19,840 --> 00:02:27,599
+we'll say let num one equal prompt. What
+
+56
+00:02:23,360 --> 00:02:30,400
+is your number? What is
+
+57
+00:02:27,599 --> 00:02:32,720
+number one?
+
+58
+00:02:30,400 --> 00:02:39,080
+And then we'll get number two. Let num
+
+59
+00:02:32,720 --> 00:02:39,080
+two equal prompt. What is number two?
+
+60
+00:02:40,000 --> 00:02:42,879
+So we're going to prompt them for two
+
+61
+00:02:41,200 --> 00:02:44,480
+numbers. We're going to ask them what
+
+62
+00:02:42,879 --> 00:02:48,400
+kind of operation they'd like to do. If
+
+63
+00:02:44,480 --> 00:02:51,519
+they say add, then we want to alert.
+
+64
+00:02:48,400 --> 00:02:53,680
+And I'm going to use those characters.
+
+65
+00:02:51,519 --> 00:02:57,239
+The
+
+66
+00:02:53,680 --> 00:02:57,239
+sum of
+
+67
+00:02:58,319 --> 00:03:04,640
+num one and
+
+68
+00:03:02,319 --> 00:03:07,640
+num two
+
+69
+00:03:04,640 --> 00:03:07,640
+is
+
+70
+00:03:08,480 --> 00:03:18,000
+num one plus num two. And I realized um
+
+71
+00:03:15,200 --> 00:03:20,239
+num one and num two right now they are
+
+72
+00:03:18,000 --> 00:03:22,400
+coming back from a prompt as a string.
+
+73
+00:03:20,239 --> 00:03:24,400
+So we probably want to make them into a
+
+74
+00:03:22,400 --> 00:03:28,159
+number. So let's do that. So we'll say
+
+75
+00:03:24,400 --> 00:03:31,519
+parse float just in case they enter um
+
+76
+00:03:28,159 --> 00:03:36,200
+something with a decimal place and we'll
+
+77
+00:03:31,519 --> 00:03:36,200
+parse float on this one as well.
+
+78
+00:03:37,280 --> 00:03:40,480
+So we're saying ask for number one turn
+
+79
+00:03:39,040 --> 00:03:42,000
+it into a float. Ask for number two turn
+
+80
+00:03:40,480 --> 00:03:43,760
+it into a float. ask them what operation
+
+81
+00:03:42,000 --> 00:03:48,400
+they'd like to perform. If they said
+
+82
+00:03:43,760 --> 00:03:53,040
+add, then give them the sum. Um, and
+
+83
+00:03:48,400 --> 00:03:57,239
+then I'm going to say else if operation
+
+84
+00:03:53,040 --> 00:03:57,239
+is subtract
+
+85
+00:03:57,280 --> 00:04:04,040
+then alert
+
+86
+00:04:00,000 --> 00:04:04,040
+the result is
+
+87
+00:04:07,680 --> 00:04:15,680
+and then we'll concatenate on. num one
+
+88
+00:04:12,159 --> 00:04:17,519
+minus num two
+
+89
+00:04:15,680 --> 00:04:19,519
+and you could keep going and you could
+
+90
+00:04:17,519 --> 00:04:22,400
+do multiply and divide for the sake of
+
+91
+00:04:19,519 --> 00:04:24,000
+time. I am just going to stop there. So
+
+92
+00:04:22,400 --> 00:04:27,680
+what we've done is we've nested a
+
+93
+00:04:24,000 --> 00:04:31,919
+decision in the decision. So we said if
+
+94
+00:04:27,680 --> 00:04:34,000
+they said yes then we want to um do some
+
+95
+00:04:31,919 --> 00:04:36,240
+processing. Part of that processing is
+
+96
+00:04:34,000 --> 00:04:38,800
+we want to decide if we want to add or
+
+97
+00:04:36,240 --> 00:04:41,680
+subtract. If they said no then we just
+
+98
+00:04:38,800 --> 00:04:43,360
+want to say goodbye. So we'll save this
+
+99
+00:04:41,680 --> 00:04:44,880
+and
+
+100
+00:04:43,360 --> 00:04:46,160
+we'll visit our web page and it says do
+
+101
+00:04:44,880 --> 00:04:48,400
+you want to make a calculation? We'll
+
+102
+00:04:46,160 --> 00:04:51,919
+say yes. And then it says what is number
+
+103
+00:04:48,400 --> 00:04:53,680
+one? One. What is number two? One. Do
+
+104
+00:04:51,919 --> 00:04:56,080
+you want to add, subtract, multiply or
+
+105
+00:04:53,680 --> 00:04:58,960
+divide? If I say add, then I get the sum
+
+106
+00:04:56,080 --> 00:05:00,080
+of one and one is two. If I reload the
+
+107
+00:04:58,960 --> 00:05:02,880
+page, it says, do you want to make a
+
+108
+00:05:00,080 --> 00:05:05,440
+calculation? I can say yes. Um, what is
+
+109
+00:05:02,880 --> 00:05:07,759
+number one? Five. What is number two?
+
+110
+00:05:05,440 --> 00:05:10,400
+Two. Do you want to add, subtract,
+
+111
+00:05:07,759 --> 00:05:12,720
+multiply, or divide? We can say subtract
+
+112
+00:05:10,400 --> 00:05:15,440
+and it says the result is three. So 5 -
+
+113
+00:05:12,720 --> 00:05:16,960
+2 is 3. And if we reload, do you want to
+
+114
+00:05:15,440 --> 00:05:20,560
+make a calculation? And if we type
+
+115
+00:05:16,960 --> 00:05:24,960
+anything but yes, then we get goodbye.
+
+116
+00:05:20,560 --> 00:05:28,080
+So in that way we were able to um make a
+
+117
+00:05:24,960 --> 00:05:29,919
+decision and within our decision we were
+
+118
+00:05:28,080 --> 00:05:33,840
+able to make a different decision and
+
+119
+00:05:29,919 --> 00:05:33,840
+that is how nesting if statements works.

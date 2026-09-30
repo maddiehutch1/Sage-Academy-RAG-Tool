@@ -1,0 +1,383 @@
+1
+00:00:00,080 --> 00:00:04,400
+All right. So, um, in the last one, I
+
+2
+00:00:03,120 --> 00:00:06,799
+showed you how to sort them. Another
+
+3
+00:00:04,400 --> 00:00:09,840
+thing you might want to do with arrays,
+
+4
+00:00:06,799 --> 00:00:11,920
+um, is you might want to aggregate all
+
+5
+00:00:09,840 --> 00:00:13,440
+of the information inside of that. Or,
+
+6
+00:00:11,920 --> 00:00:15,519
+in other words, you may want to reduce
+
+7
+00:00:13,440 --> 00:00:18,000
+this entire array down to a single
+
+8
+00:00:15,519 --> 00:00:20,240
+value. So, the way that works is rather
+
+9
+00:00:18,000 --> 00:00:23,279
+than calling this dossort function,
+
+10
+00:00:20,240 --> 00:00:25,359
+you're going to call a dot um, reduce
+
+11
+00:00:23,279 --> 00:00:29,119
+function.
+
+12
+00:00:25,359 --> 00:00:30,720
+This function takes in a function and it
+
+13
+00:00:29,119 --> 00:00:32,160
+can optionally accept up to four
+
+14
+00:00:30,720 --> 00:00:34,640
+parameters. We're probably only going to
+
+15
+00:00:32,160 --> 00:00:39,920
+use two. So it will accept the previous
+
+16
+00:00:34,640 --> 00:00:42,480
+value and a current value. So if I call
+
+17
+00:00:39,920 --> 00:00:46,160
+Justice League.reduce on this, it needs
+
+18
+00:00:42,480 --> 00:00:49,760
+to accept a function. Okay. So we'll
+
+19
+00:00:46,160 --> 00:00:52,640
+write our function and um it should
+
+20
+00:00:49,760 --> 00:00:55,840
+accept the previous value. So we'll call
+
+21
+00:00:52,640 --> 00:00:58,559
+that previous and then we'll accept the
+
+22
+00:00:55,840 --> 00:01:00,879
+current value. And then it says, well,
+
+23
+00:00:58,559 --> 00:01:03,680
+how do you want to aggregate this
+
+24
+00:01:00,879 --> 00:01:06,159
+information? So if I was going through
+
+25
+00:01:03,680 --> 00:01:07,520
+this list and I wanted to sum up the
+
+26
+00:01:06,159 --> 00:01:09,680
+number of villains that were caught, I
+
+27
+00:01:07,520 --> 00:01:14,080
+would say take the previous value, add
+
+28
+00:01:09,680 --> 00:01:17,759
+on the current value, and make that. So
+
+29
+00:01:14,080 --> 00:01:20,080
+that would be 12 + 20, so be 32. And
+
+30
+00:01:17,759 --> 00:01:22,640
+then I would say, okay, now take that 32
+
+31
+00:01:20,080 --> 00:01:24,400
+and add on this 15. then add on this 18,
+
+32
+00:01:22,640 --> 00:01:25,520
+then add on this 10. So in other words,
+
+33
+00:01:24,400 --> 00:01:28,080
+what I'm doing is I'm taking the
+
+34
+00:01:25,520 --> 00:01:29,840
+previous value and I'm adding on the
+
+35
+00:01:28,080 --> 00:01:31,840
+current value. So what do I want to
+
+36
+00:01:29,840 --> 00:01:35,840
+return here? I want to return the
+
+37
+00:01:31,840 --> 00:01:38,400
+previous value plus the current value.
+
+38
+00:01:35,840 --> 00:01:42,479
+Well, let's save this and see what
+
+39
+00:01:38,400 --> 00:01:45,280
+happens. Oh dear, we have a mess here.
+
+40
+00:01:42,479 --> 00:01:47,280
+Well, what is each value in the Justice
+
+41
+00:01:45,280 --> 00:01:51,520
+League array? Each value in the Justice
+
+42
+00:01:47,280 --> 00:01:55,840
+League array is an array. So if we want
+
+43
+00:01:51,520 --> 00:01:57,759
+to um take the previous value and add on
+
+44
+00:01:55,840 --> 00:01:59,680
+the current value, well, we don't want
+
+45
+00:01:57,759 --> 00:02:04,439
+to add on an entire array to the
+
+46
+00:01:59,680 --> 00:02:04,439
+previous value. We want to add on
+
+47
+00:02:05,040 --> 00:02:10,160
+the third position of the current value.
+
+48
+00:02:07,280 --> 00:02:12,800
+So the third position of Bruce Wayne
+
+49
+00:02:10,160 --> 00:02:14,879
+Batman is 20. So let's save that and
+
+50
+00:02:12,800 --> 00:02:17,440
+we'll see what we've got. Well, we've
+
+51
+00:02:14,879 --> 00:02:19,920
+got Clark can't see Superman and then
+
+52
+00:02:17,440 --> 00:02:22,879
+this really long number which is all of
+
+53
+00:02:19,920 --> 00:02:26,480
+the numbers concatenated together.
+
+54
+00:02:22,879 --> 00:02:28,720
+Why did that happen? Well, here's a
+
+55
+00:02:26,480 --> 00:02:32,400
+caveat that you need to know about
+
+56
+00:02:28,720 --> 00:02:34,400
+reduce. Reduce always starts at the
+
+57
+00:02:32,400 --> 00:02:36,400
+first position
+
+58
+00:02:34,400 --> 00:02:37,760
+of the array. So, if we're looking at
+
+59
+00:02:36,400 --> 00:02:40,239
+Justice League, it takes the first
+
+60
+00:02:37,760 --> 00:02:42,879
+position of the array and puts that into
+
+61
+00:02:40,239 --> 00:02:45,599
+current. So current would be this array
+
+62
+00:02:42,879 --> 00:02:48,720
+of Bruce Wayne Batman 20. So that's
+
+63
+00:02:45,599 --> 00:02:51,840
+what's going in here. Previous is it
+
+64
+00:02:48,720 --> 00:02:53,760
+uses the first value in this array as
+
+65
+00:02:51,840 --> 00:02:57,519
+the previous value. So what is the
+
+66
+00:02:53,760 --> 00:02:59,599
+previous value here? Well, it's Clark K
+
+67
+00:02:57,519 --> 00:03:00,879
+Superman and it's the entire array. So
+
+68
+00:02:59,599 --> 00:03:04,000
+what we're doing is we're saying take
+
+69
+00:03:00,879 --> 00:03:06,560
+the entire array from the first position
+
+70
+00:03:04,000 --> 00:03:08,080
+concatenate on
+
+71
+00:03:06,560 --> 00:03:10,159
+20.
+
+72
+00:03:08,080 --> 00:03:12,239
+Then take all of that and put that into
+
+73
+00:03:10,159 --> 00:03:15,040
+the previous position. So we take all of
+
+74
+00:03:12,239 --> 00:03:18,159
+this plus 20 added to the end. And then
+
+75
+00:03:15,040 --> 00:03:20,400
+we do it again and again and again. If
+
+76
+00:03:18,159 --> 00:03:22,080
+you don't want it to start with the
+
+77
+00:03:20,400 --> 00:03:23,280
+first position in the array, then you
+
+78
+00:03:22,080 --> 00:03:25,440
+have to give it another piece of
+
+79
+00:03:23,280 --> 00:03:27,519
+information in this reduce. So we gave
+
+80
+00:03:25,440 --> 00:03:29,120
+it a function for how we want to reduce
+
+81
+00:03:27,519 --> 00:03:31,040
+all the information.
+
+82
+00:03:29,120 --> 00:03:33,360
+Um, but the next thing we need to do is
+
+83
+00:03:31,040 --> 00:03:34,799
+we put a comma and we need to give it an
+
+84
+00:03:33,360 --> 00:03:37,440
+initial value. So, we're saying let's
+
+85
+00:03:34,799 --> 00:03:39,280
+start with zero
+
+86
+00:03:37,440 --> 00:03:41,360
+villains and then we're going to take
+
+87
+00:03:39,280 --> 00:03:46,959
+the previous value plus the current
+
+88
+00:03:41,360 --> 00:03:49,120
+value and um so now the previous value
+
+89
+00:03:46,959 --> 00:03:51,840
+is going to start at zero. The current
+
+90
+00:03:49,120 --> 00:03:54,239
+value is going to be this array. So,
+
+91
+00:03:51,840 --> 00:03:56,159
+we're going to say the previous value 0
+
+92
+00:03:54,239 --> 00:03:57,840
+plus the current value of 12. Add those
+
+93
+00:03:56,159 --> 00:03:59,360
+together and you get 12. And then it
+
+94
+00:03:57,840 --> 00:04:01,920
+will continue on through this array. So
+
+95
+00:03:59,360 --> 00:04:04,480
+if we save this and we come over, we get
+
+96
+00:04:01,920 --> 00:04:04,480
+160.

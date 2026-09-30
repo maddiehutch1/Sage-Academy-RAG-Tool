@@ -1,0 +1,359 @@
+1
+00:00:00,160 --> 00:00:03,919
+Okay, so let's build that bubble squirt
+
+2
+00:00:02,240 --> 00:00:05,839
+that I just showed you in the last
+
+3
+00:00:03,919 --> 00:00:07,440
+video. And while it could look really
+
+4
+00:00:05,839 --> 00:00:08,880
+intimidating to build, I think if we
+
+5
+00:00:07,440 --> 00:00:10,800
+break it down into steps, it'll be a
+
+6
+00:00:08,880 --> 00:00:12,559
+little less intimidating. So, one of the
+
+7
+00:00:10,800 --> 00:00:15,040
+steps I thought that we probably should
+
+8
+00:00:12,559 --> 00:00:17,279
+discuss first is how do we actually swap
+
+9
+00:00:15,040 --> 00:00:19,199
+things positions in an array? How do we
+
+10
+00:00:17,279 --> 00:00:21,520
+take this five and swap it with this
+
+11
+00:00:19,199 --> 00:00:23,680
+four? So if we wanted to do that, what
+
+12
+00:00:21,520 --> 00:00:25,359
+I'll do, what you may originally think
+
+13
+00:00:23,680 --> 00:00:27,519
+to do is you say, well, let's just go to
+
+14
+00:00:25,359 --> 00:00:29,599
+the numbers array, access the zero
+
+15
+00:00:27,519 --> 00:00:32,000
+position, set it equal to the numbers
+
+16
+00:00:29,599 --> 00:00:34,239
+array in the one position. So you're
+
+17
+00:00:32,000 --> 00:00:36,320
+saying, take that, set it equal to that,
+
+18
+00:00:34,239 --> 00:00:39,040
+and then you might think you could just
+
+19
+00:00:36,320 --> 00:00:42,000
+say numbers position at the one equals
+
+20
+00:00:39,040 --> 00:00:44,960
+number's position at the zero position.
+
+21
+00:00:42,000 --> 00:00:47,680
+So you say take that, set it equal to
+
+22
+00:00:44,960 --> 00:00:49,200
+that, take that, set it equal to that.
+
+23
+00:00:47,680 --> 00:00:51,600
+But I'm just going to console.log log
+
+24
+00:00:49,200 --> 00:00:54,480
+this so you can watch it happen in real
+
+25
+00:00:51,600 --> 00:00:57,520
+time. So we'll come over to our window
+
+26
+00:00:54,480 --> 00:01:00,960
+here and we'll reload our page and you
+
+27
+00:00:57,520 --> 00:01:02,960
+see it says five 56 and we have now lost
+
+28
+00:01:00,960 --> 00:01:05,360
+our four. There's no longer a four in
+
+29
+00:01:02,960 --> 00:01:06,880
+this array. So what happened? Well,
+
+30
+00:01:05,360 --> 00:01:08,320
+anytime you've got something confusing
+
+31
+00:01:06,880 --> 00:01:11,360
+like that, it's helpful to just put a
+
+32
+00:01:08,320 --> 00:01:12,799
+break point in. So we'll reload and
+
+33
+00:01:11,360 --> 00:01:16,560
+we'll look at our numbers array. Our
+
+34
+00:01:12,799 --> 00:01:20,080
+numbers hold 4 5 6 1 2 3. And we're
+
+35
+00:01:16,560 --> 00:01:22,880
+about to do this next step here. So if
+
+36
+00:01:20,080 --> 00:01:25,680
+we hit next and then now we've paused.
+
+37
+00:01:22,880 --> 00:01:29,439
+So we've run one step. Now if we look at
+
+38
+00:01:25,680 --> 00:01:32,960
+our numbers array, it's 5 5 6 1 2 3. And
+
+39
+00:01:29,439 --> 00:01:34,960
+the four is nowhere to be seen. Um which
+
+40
+00:01:32,960 --> 00:01:37,680
+means that when we run this numbers in
+
+41
+00:01:34,960 --> 00:01:40,320
+the one position is five and numbers in
+
+42
+00:01:37,680 --> 00:01:42,400
+the zero position is five. So now when
+
+43
+00:01:40,320 --> 00:01:44,000
+we set the numbers in the one position
+
+44
+00:01:42,400 --> 00:01:46,799
+equal the numbers in the zero position,
+
+45
+00:01:44,000 --> 00:01:48,960
+we're setting five equal to five, which
+
+46
+00:01:46,799 --> 00:01:54,240
+once we've done that, we log our numbers
+
+47
+00:01:48,960 --> 00:01:56,079
+array and we once again get 5 6 1 2 3.
+
+48
+00:01:54,240 --> 00:01:58,719
+And so that's a little problematic. So
+
+49
+00:01:56,079 --> 00:02:00,640
+if we want to swap something, then we'll
+
+50
+00:01:58,719 --> 00:02:02,640
+come back over here. We need to hold on
+
+51
+00:02:00,640 --> 00:02:04,000
+to the information before we make a
+
+52
+00:02:02,640 --> 00:02:06,159
+swap. So I'm going to create a new
+
+53
+00:02:04,000 --> 00:02:08,640
+variable here, and I'm going to call the
+
+54
+00:02:06,159 --> 00:02:12,000
+call it hold number. and I'm going to
+
+55
+00:02:08,640 --> 00:02:13,520
+set it equal to um the numbers array at
+
+56
+00:02:12,000 --> 00:02:15,520
+the zero position. So what I'm doing is
+
+57
+00:02:13,520 --> 00:02:21,440
+I'm saying take four out and store it in
+
+58
+00:02:15,520 --> 00:02:24,000
+old number. Then set zeros to five.
+
+59
+00:02:21,440 --> 00:02:26,879
+Set the zero position to five and then
+
+60
+00:02:24,000 --> 00:02:28,959
+set the one position to the number that
+
+61
+00:02:26,879 --> 00:02:30,959
+I held outside.
+
+62
+00:02:28,959 --> 00:02:34,560
+So I'm saying take four out, put it
+
+63
+00:02:30,959 --> 00:02:36,160
+here. Put five here and then put four
+
+64
+00:02:34,560 --> 00:02:40,160
+back in.
+
+65
+00:02:36,160 --> 00:02:44,160
+So, we'll save this. We'll reload. And
+
+66
+00:02:40,160 --> 00:02:46,879
+if we come to here, wait, did I save it?
+
+67
+00:02:44,160 --> 00:02:49,040
+Hang on. I did save it. So, we'll come
+
+68
+00:02:46,879 --> 00:02:51,360
+here and we'll reload. And now we get 5
+
+69
+00:02:49,040 --> 00:02:53,840
+4 6 1 2 3. So, we've successfully
+
+70
+00:02:51,360 --> 00:02:55,440
+swapped five and four places. Uh, but
+
+71
+00:02:53,840 --> 00:02:57,840
+just to prove it, we'll reload. We'll
+
+72
+00:02:55,440 --> 00:03:01,920
+pause. We're about So, if we look at our
+
+73
+00:02:57,840 --> 00:03:03,599
+numbers array, it is 4561 23. We hit the
+
+74
+00:03:01,920 --> 00:03:06,080
+next button. If we look at our hold
+
+75
+00:03:03,599 --> 00:03:08,159
+number, it's holding four. If we hit the
+
+76
+00:03:06,080 --> 00:03:11,760
+next button now, if we look at our
+
+77
+00:03:08,159 --> 00:03:13,440
+numbers array, it's 556123.
+
+78
+00:03:11,760 --> 00:03:15,280
+And now we're going to put back in our
+
+79
+00:03:13,440 --> 00:03:17,599
+hold number. So if we hit next and we
+
+80
+00:03:15,280 --> 00:03:20,080
+hover over numbers, now we see it's 5 4
+
+81
+00:03:17,599 --> 00:03:22,640
+6 1 2 3. So we took the number out of
+
+82
+00:03:20,080 --> 00:03:23,840
+the array, swapped, copied over the one
+
+83
+00:03:22,640 --> 00:03:25,920
+number, and then put the number back
+
+84
+00:03:23,840 --> 00:03:27,280
+into the array. And then everything's
+
+85
+00:03:25,920 --> 00:03:29,280
+nice and we haven't lost any
+
+86
+00:03:27,280 --> 00:03:31,920
+information. So that's how we would swap
+
+87
+00:03:29,280 --> 00:03:33,519
+the number. So that's I'm going to hold
+
+88
+00:03:31,920 --> 00:03:35,200
+on to that logic here, and I'm just
+
+89
+00:03:33,519 --> 00:03:37,920
+going to copy it out. I'm just going to
+
+90
+00:03:35,200 --> 00:03:37,920
+comment it out for

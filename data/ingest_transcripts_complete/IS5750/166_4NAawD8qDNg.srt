@@ -1,0 +1,327 @@
+1
+00:00:00,080 --> 00:00:04,560
+Okay. So, all I've done from last time
+
+2
+00:00:02,240 --> 00:00:06,720
+is I've hidden the elapse timer. So,
+
+3
+00:00:04,560 --> 00:00:08,320
+it's right here.
+
+4
+00:00:06,720 --> 00:00:10,240
+I wrapped it in curly braces so I could
+
+5
+00:00:08,320 --> 00:00:11,759
+hide it so you could focus on just the
+
+6
+00:00:10,240 --> 00:00:13,200
+code that I'm writing for this one. So,
+
+7
+00:00:11,759 --> 00:00:16,320
+what I want to show you is I want to
+
+8
+00:00:13,200 --> 00:00:19,119
+show you how you could console.log hello
+
+9
+00:00:16,320 --> 00:00:22,000
+after 3 seconds. If you wanted to do
+
+10
+00:00:19,119 --> 00:00:24,160
+that, you would say set timeout and then
+
+11
+00:00:22,000 --> 00:00:25,600
+it needs a function. Um, you could
+
+12
+00:00:24,160 --> 00:00:27,119
+either write this function outside or
+
+13
+00:00:25,600 --> 00:00:29,199
+I'm just going to define mine directly
+
+14
+00:00:27,119 --> 00:00:30,880
+inside. And I'm gonna say console.log
+
+15
+00:00:29,199 --> 00:00:34,559
+log
+
+16
+00:00:30,880 --> 00:00:38,239
+hello world and then after that I need
+
+17
+00:00:34,559 --> 00:00:40,800
+to have it wait 3 seconds.
+
+18
+00:00:38,239 --> 00:00:42,879
+So if I save this and I come over to my
+
+19
+00:00:40,800 --> 00:00:45,440
+code, waited 1 2 3 seconds and there's
+
+20
+00:00:42,879 --> 00:00:47,200
+my hello world and then my timer keeps
+
+21
+00:00:45,440 --> 00:00:50,160
+on going.
+
+22
+00:00:47,200 --> 00:00:52,160
+Well, what if I wanted to wait 3 seconds
+
+23
+00:00:50,160 --> 00:00:54,320
+and in a data retrieval sense, maybe I
+
+24
+00:00:52,160 --> 00:00:55,520
+retrieve data and it takes 3 seconds.
+
+25
+00:00:54,320 --> 00:00:57,520
+Hopefully, it doesn't actually take that
+
+26
+00:00:55,520 --> 00:01:00,000
+long, but for the sake of imagination,
+
+27
+00:00:57,520 --> 00:01:01,920
+it takes 3 seconds. Then, once I have
+
+28
+00:01:00,000 --> 00:01:03,840
+that data, I need to do something with
+
+29
+00:01:01,920 --> 00:01:06,080
+that data, which takes an additional 5
+
+30
+00:01:03,840 --> 00:01:08,320
+seconds. Um, but I don't want to start
+
+31
+00:01:06,080 --> 00:01:10,880
+that that 5-second process until I
+
+32
+00:01:08,320 --> 00:01:11,920
+finish the first 3 seconds. So, how
+
+33
+00:01:10,880 --> 00:01:13,439
+would I do that? Well, I'm going to show
+
+34
+00:01:11,920 --> 00:01:16,080
+you the wrong way first, and then I'll
+
+35
+00:01:13,439 --> 00:01:18,000
+show you the right way. So, if I wanted
+
+36
+00:01:16,080 --> 00:01:19,680
+the wrong way, you might think, "Oh,
+
+37
+00:01:18,000 --> 00:01:23,600
+well, I'll just set another timeout."
+
+38
+00:01:19,680 --> 00:01:25,360
+After this first timeout finishes um in
+
+39
+00:01:23,600 --> 00:01:30,159
+3 seconds, then I'll just start another
+
+40
+00:01:25,360 --> 00:01:33,840
+timeout. And I'll say console.log
+
+41
+00:01:30,159 --> 00:01:36,640
+hello world. And I will do that one
+
+42
+00:01:33,840 --> 00:01:37,840
+after 5 seconds because code runs from
+
+43
+00:01:36,640 --> 00:01:40,079
+top to bottom. So, we're going to do
+
+44
+00:01:37,840 --> 00:01:42,320
+that one and then that one. So, when we
+
+45
+00:01:40,079 --> 00:01:44,479
+save this and we come over, we wait one,
+
+46
+00:01:42,320 --> 00:01:46,560
+two, three. There's hello world. Four.
+
+47
+00:01:44,479 --> 00:01:49,840
+Five. Uh-oh. There's the hello world. 3
+
+48
+00:01:46,560 --> 00:01:51,360
++ 5 is 8. Why did it print after 5?
+
+49
+00:01:49,840 --> 00:01:55,040
+Well, the answer is because we moved it
+
+50
+00:01:51,360 --> 00:01:57,040
+to the background by using set timeout.
+
+51
+00:01:55,040 --> 00:01:59,520
+It actually wasn't waiting for the other
+
+52
+00:01:57,040 --> 00:02:01,280
+process to complete. So, it already set
+
+53
+00:01:59,520 --> 00:02:03,920
+that one up and then it set that one up
+
+54
+00:02:01,280 --> 00:02:06,320
+immediately after. Then 3 seconds went
+
+55
+00:02:03,920 --> 00:02:08,160
+by and printed hello world. And then the
+
+56
+00:02:06,320 --> 00:02:10,879
+remaining 2 seconds went by and it
+
+57
+00:02:08,160 --> 00:02:12,879
+printed hello world again. Well, that's
+
+58
+00:02:10,879 --> 00:02:14,879
+problematic. We didn't want to start the
+
+59
+00:02:12,879 --> 00:02:15,840
+5-second wait until we finish the 3-se
+
+60
+00:02:14,879 --> 00:02:17,120
+secondond wait. That would be like
+
+61
+00:02:15,840 --> 00:02:19,360
+trying to process the data that we don't
+
+62
+00:02:17,120 --> 00:02:23,360
+even have yet.
+
+63
+00:02:19,360 --> 00:02:24,959
+So to handle that, what we could do,
+
+64
+00:02:23,360 --> 00:02:28,160
+what we'll need to do is we'll need to
+
+65
+00:02:24,959 --> 00:02:31,040
+actually move this function
+
+66
+00:02:28,160 --> 00:02:32,959
+inside of this function. So if we want
+
+67
+00:02:31,040 --> 00:02:35,680
+to make this function multi-line, we
+
+68
+00:02:32,959 --> 00:02:37,840
+have to use curly braces. So there's the
+
+69
+00:02:35,680 --> 00:02:39,440
+curly braces and I'm going to format my
+
+70
+00:02:37,840 --> 00:02:41,680
+code real quick. Then I'm going to take
+
+71
+00:02:39,440 --> 00:02:44,000
+this set timeout and I'm going to move
+
+72
+00:02:41,680 --> 00:02:46,239
+it inside. Okay. So now it's going to
+
+73
+00:02:44,000 --> 00:02:47,760
+after 3 seconds it's going to say hello
+
+74
+00:02:46,239 --> 00:02:50,239
+world and then it's going to set a
+
+75
+00:02:47,760 --> 00:02:53,680
+timeout for another 5 seconds. So if we
+
+76
+00:02:50,239 --> 00:02:58,640
+save this and we come over 1 2 3 there's
+
+77
+00:02:53,680 --> 00:03:00,640
+our first hello world. 4 5 6 7 8 there's
+
+78
+00:02:58,640 --> 00:03:02,400
+our second hello world. And then our
+
+79
+00:03:00,640 --> 00:03:06,959
+code's just going to keep on ticking.
+
+80
+00:03:02,400 --> 00:03:08,720
+Um, but as you can see,
+
+81
+00:03:06,959 --> 00:03:12,080
+in order for that to happen, I had to
+
+82
+00:03:08,720 --> 00:03:12,080
+nest this inside of

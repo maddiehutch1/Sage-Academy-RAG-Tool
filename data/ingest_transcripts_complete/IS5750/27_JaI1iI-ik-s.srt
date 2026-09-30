@@ -1,0 +1,147 @@
+1
+00:00:00,080 --> 00:00:05,600
+All right, it's time to talk about that
+
+2
+00:00:02,000 --> 00:00:07,359
+modulus operator. So, what does it do?
+
+3
+00:00:05,600 --> 00:00:08,639
+All right, so in order to explain that,
+
+4
+00:00:07,359 --> 00:00:11,679
+I'm going to take you all the way back
+
+5
+00:00:08,639 --> 00:00:13,759
+to third or fourth grade math. So, let's
+
+6
+00:00:11,679 --> 00:00:17,039
+do some division.
+
+7
+00:00:13,759 --> 00:00:20,160
+Um, if we wanted to see
+
+8
+00:00:17,039 --> 00:00:24,160
+how many times seven could go into 12,
+
+9
+00:00:20,160 --> 00:00:28,240
+um, we would say, okay, 7 goes into 12
+
+10
+00:00:24,160 --> 00:00:31,519
+um, one time evenly. So, we'd say 7* 1.
+
+11
+00:00:28,240 --> 00:00:35,840
+And so then we'd say 1 * 7, we'd put the
+
+12
+00:00:31,519 --> 00:00:37,280
+7 there. 12 - 7 gives us 5. And
+
+13
+00:00:35,840 --> 00:00:40,000
+hopefully you're familiar with how
+
+14
+00:00:37,280 --> 00:00:41,440
+division works. Um, if we wanted to go
+
+15
+00:00:40,000 --> 00:00:43,200
+all the way out and figure out what the
+
+16
+00:00:41,440 --> 00:00:45,360
+decimal place was that comes after this,
+
+17
+00:00:43,200 --> 00:00:48,000
+we'd put a point. We'd bring a zero down
+
+18
+00:00:45,360 --> 00:00:51,200
+and then we'd say 7 goes into 50. 7
+
+19
+00:00:48,000 --> 00:00:54,079
+times. 7 * 7 is 49. And then we'd
+
+20
+00:00:51,200 --> 00:00:56,559
+subtract and that would give us a 1. And
+
+21
+00:00:54,079 --> 00:00:58,559
+we keep going from there until we
+
+22
+00:00:56,559 --> 00:01:00,640
+figured out exactly how many times 7
+
+23
+00:00:58,559 --> 00:01:04,400
+goes into 12. Well, I have good news for
+
+24
+00:01:00,640 --> 00:01:08,159
+you. We don't have to go that far.
+
+25
+00:01:04,400 --> 00:01:10,640
+Um, 7 goes into 12 exactly one time. The
+
+26
+00:01:08,159 --> 00:01:13,280
+remainder that's left over is this five
+
+27
+00:01:10,640 --> 00:01:16,240
+down here. So 7 goes into 12 one time
+
+28
+00:01:13,280 --> 00:01:18,240
+with a remainder of five. This five
+
+29
+00:01:16,240 --> 00:01:20,960
+right here is the result that using the
+
+30
+00:01:18,240 --> 00:01:24,320
+modulus operator will give you. So if
+
+31
+00:01:20,960 --> 00:01:26,240
+you said 12 modulus 7, it would say how
+
+32
+00:01:24,320 --> 00:01:27,840
+many times does seven evenly go into 12.
+
+33
+00:01:26,240 --> 00:01:29,280
+Once we figured that out, what's the
+
+34
+00:01:27,840 --> 00:01:31,520
+remainder? In this case, the remainder
+
+35
+00:01:29,280 --> 00:01:33,840
+is five. And that is the result of using
+
+36
+00:01:31,520 --> 00:01:36,880
+the modulus operator. And the next video
+
+37
+00:01:33,840 --> 00:01:36,880
+I'll show you that in practice.

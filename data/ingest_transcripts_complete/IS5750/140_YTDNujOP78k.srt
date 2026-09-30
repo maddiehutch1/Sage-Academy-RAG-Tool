@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:05,440
+Okay, I want to show you another way to
+
+2
+00:00:02,960 --> 00:00:08,559
+um change an attribute and to read an
+
+3
+00:00:05,440 --> 00:00:12,160
+attribute. So, what we're going to do is
+
+4
+00:00:08,559 --> 00:00:14,000
+I have this form here built out. And if
+
+5
+00:00:12,160 --> 00:00:15,599
+you look at it, um it is a form that
+
+6
+00:00:14,000 --> 00:00:17,440
+shows a picture of a dog. And when you
+
+7
+00:00:15,599 --> 00:00:19,439
+click the button, I want it to change to
+
+8
+00:00:17,440 --> 00:00:22,480
+a picture of a bear. If it's a bear, I
+
+9
+00:00:19,439 --> 00:00:25,279
+want to change back to being a dog. So,
+
+10
+00:00:22,480 --> 00:00:26,640
+what we're going to do here is the first
+
+11
+00:00:25,279 --> 00:00:29,199
+thing I need to do is I need to figure
+
+12
+00:00:26,640 --> 00:00:31,199
+out which picture is currently showing.
+
+13
+00:00:29,199 --> 00:00:33,440
+And I can figure that out by accessing
+
+14
+00:00:31,199 --> 00:00:37,440
+this source attribute. So I'm going to
+
+15
+00:00:33,440 --> 00:00:39,120
+say let current source equal
+
+16
+00:00:37,440 --> 00:00:43,360
+document.getelement
+
+17
+00:00:39,120 --> 00:00:45,600
+by ID and the ID is avatar.
+
+18
+00:00:43,360 --> 00:00:50,399
+And then I want to get its source
+
+19
+00:00:45,600 --> 00:00:52,480
+attribute. And so I'll say get attribute
+
+20
+00:00:50,399 --> 00:00:55,280
+and it says which attribute do you want
+
+21
+00:00:52,480 --> 00:00:58,239
+to get? I want to get the source.
+
+22
+00:00:55,280 --> 00:01:00,960
+Okay. So that'll read off the source.
+
+23
+00:00:58,239 --> 00:01:04,000
+And then um based on what that source
+
+24
+00:01:00,960 --> 00:01:08,560
+is, I want to change it. So um I'm going
+
+25
+00:01:04,000 --> 00:01:12,960
+to say let new image equal and then I'll
+
+26
+00:01:08,560 --> 00:01:14,479
+say if current source dot
+
+27
+00:01:12,960 --> 00:01:17,280
+includes
+
+28
+00:01:14,479 --> 00:01:19,759
+um and you'll notice the image for dog
+
+29
+00:01:17,280 --> 00:01:22,560
+has dog in it. So I'm going to say if it
+
+30
+00:01:19,759 --> 00:01:25,200
+includes dog
+
+31
+00:01:22,560 --> 00:01:28,000
+then I want to set it to the bear image
+
+32
+00:01:25,200 --> 00:01:30,880
+which I've defined right here.
+
+33
+00:01:28,000 --> 00:01:34,720
+If not, then I want to set it to the
+
+34
+00:01:30,880 --> 00:01:36,960
+doggo image. Okay, so I'm saying if the
+
+35
+00:01:34,720 --> 00:01:39,520
+current source, this right here,
+
+36
+00:01:36,960 --> 00:01:42,240
+includes dog, then I wanted to set it to
+
+37
+00:01:39,520 --> 00:01:46,079
+this bear image. If not, I want to set
+
+38
+00:01:42,240 --> 00:01:47,920
+it to this dog image. All right. And
+
+39
+00:01:46,079 --> 00:01:49,280
+then now we need to actually set it. So
+
+40
+00:01:47,920 --> 00:01:51,280
+all I've done is defined what the
+
+41
+00:01:49,280 --> 00:01:53,360
+variable is going to be. But now I'm
+
+42
+00:01:51,280 --> 00:01:56,560
+going to say document.getelement
+
+43
+00:01:53,360 --> 00:01:59,600
+by ID avatar.
+
+44
+00:01:56,560 --> 00:02:00,960
+and then set attribute. And what do I
+
+45
+00:01:59,600 --> 00:02:03,360
+want to set? Well, I want to set the
+
+46
+00:02:00,960 --> 00:02:07,200
+source. And what do I want to set its
+
+47
+00:02:03,360 --> 00:02:10,319
+value equal to? The new image.
+
+48
+00:02:07,200 --> 00:02:12,959
+So, if I save this and I come over, I've
+
+49
+00:02:10,319 --> 00:02:14,879
+got my dog image. Now, I've got a bear.
+
+50
+00:02:12,959 --> 00:02:17,040
+Now, I've got a dog. Now I've got a
+
+51
+00:02:14,879 --> 00:02:17,040
+bear.

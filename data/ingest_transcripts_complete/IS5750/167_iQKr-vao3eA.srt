@@ -1,0 +1,151 @@
+1
+00:00:00,080 --> 00:00:06,080
+Well, nesting um functions inside of
+
+2
+00:00:03,439 --> 00:00:08,480
+each other, it can get out of hand. And
+
+3
+00:00:06,080 --> 00:00:10,000
+this is code that I had CHIGBT generate
+
+4
+00:00:08,480 --> 00:00:13,920
+cuz there was no way I was writing this
+
+5
+00:00:10,000 --> 00:00:16,000
+myself. Um yuck. Um and honestly, if
+
+6
+00:00:13,920 --> 00:00:18,160
+Chad GBT ever goes terminator, I will
+
+7
+00:00:16,000 --> 00:00:21,520
+probably be on a hit list for this. Um
+
+8
+00:00:18,160 --> 00:00:23,519
+but this is having your computer wait
+
+9
+00:00:21,520 --> 00:00:26,000
+various amounts of time and then logging
+
+10
+00:00:23,519 --> 00:00:27,599
+out exactly how long it waited. Um and
+
+11
+00:00:26,000 --> 00:00:30,640
+it's waiting an additional amount of
+
+12
+00:00:27,599 --> 00:00:33,680
+time each time. And if you're struggling
+
+13
+00:00:30,640 --> 00:00:35,920
+to read this, good. This is a pain.
+
+14
+00:00:33,680 --> 00:00:38,000
+Nobody wants to read this. But in the
+
+15
+00:00:35,920 --> 00:00:40,239
+past, this was the only way to deal with
+
+16
+00:00:38,000 --> 00:00:41,600
+asynchronous code. And you may think,
+
+17
+00:00:40,239 --> 00:00:43,440
+well, when would I ever need to deal
+
+18
+00:00:41,600 --> 00:00:45,760
+with it like that? Well, I had an app
+
+19
+00:00:43,440 --> 00:00:48,719
+that I built. And in that app, you
+
+20
+00:00:45,760 --> 00:00:50,559
+needed to make a request to the Genius
+
+21
+00:00:48,719 --> 00:00:53,840
+API. Or in other words, I needed to make
+
+22
+00:00:50,559 --> 00:00:55,360
+a request with song lyrics. And then the
+
+23
+00:00:53,840 --> 00:00:57,360
+resource would give me back a list of
+
+24
+00:00:55,360 --> 00:00:59,760
+song names. I then took those song names
+
+25
+00:00:57,360 --> 00:01:02,000
+and sent them to Spotify. So that would
+
+26
+00:00:59,760 --> 00:01:03,760
+be asynchronous functions nested in
+
+27
+00:01:02,000 --> 00:01:05,519
+asynchronous functions. I had to wait
+
+28
+00:01:03,760 --> 00:01:07,360
+for my first data to come back before I
+
+29
+00:01:05,519 --> 00:01:09,360
+could send the second data. And in the
+
+30
+00:01:07,360 --> 00:01:13,040
+past, I would have had to code something
+
+31
+00:01:09,360 --> 00:01:14,320
+like this monstrosity. And so let's all
+
+32
+00:01:13,040 --> 00:01:16,159
+take a moment of silence for the
+
+33
+00:01:14,320 --> 00:01:19,880
+developers who only had this as an
+
+34
+00:01:16,159 --> 00:01:19,880
+option for years.
+
+35
+00:01:19,920 --> 00:01:23,520
+Okay, that's a long enough moment of
+
+36
+00:01:21,439 --> 00:01:25,200
+silence. Um, fortunately, there are
+
+37
+00:01:23,520 --> 00:01:28,720
+things that will make our lives better.
+
+38
+00:01:25,200 --> 00:01:28,720
+Um they are our white Bronx.

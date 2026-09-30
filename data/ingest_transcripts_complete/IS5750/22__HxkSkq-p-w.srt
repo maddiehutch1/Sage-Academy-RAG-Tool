@@ -1,0 +1,447 @@
+1
+00:00:02,720 --> 00:00:07,520
+All right. In the last video, we showed
+
+2
+00:00:04,799 --> 00:00:11,040
+you how to use substr
+
+3
+00:00:07,520 --> 00:00:13,360
+um to pull text out of another piece of
+
+4
+00:00:11,040 --> 00:00:15,519
+text. But in order to do that, I had to
+
+5
+00:00:13,360 --> 00:00:17,440
+count out to find where this Wayne is.
+
+6
+00:00:15,519 --> 00:00:18,880
+That's really frustrating. So there is
+
+7
+00:00:17,440 --> 00:00:21,359
+an easier way to do that and I'm going
+
+8
+00:00:18,880 --> 00:00:23,519
+to show you how to do that.
+
+9
+00:00:21,359 --> 00:00:26,720
+So there is a function in JavaScript
+
+10
+00:00:23,519 --> 00:00:32,800
+called search. So, um if we want to do
+
+11
+00:00:26,720 --> 00:00:35,440
+this, we would say my text search
+
+12
+00:00:32,800 --> 00:00:37,920
+and it says
+
+13
+00:00:35,440 --> 00:00:40,239
+um it searches for something within a
+
+14
+00:00:37,920 --> 00:00:41,680
+string. So, we need to give it a symbol
+
+15
+00:00:40,239 --> 00:00:44,320
+to search through or we could hit the
+
+16
+00:00:41,680 --> 00:00:47,280
+down arrow and it says it just needs a
+
+17
+00:00:44,320 --> 00:00:48,879
+string and then it'll return a number.
+
+18
+00:00:47,280 --> 00:00:50,960
+So remember when I was counting this
+
+19
+00:00:48,879 --> 00:00:53,120
+out, I said that the B was at the zero
+
+20
+00:00:50,960 --> 00:00:55,199
+position and the R was at the one
+
+21
+00:00:53,120 --> 00:00:58,960
+position and so on and so forth. What
+
+22
+00:00:55,199 --> 00:01:02,640
+the search does is it says look through
+
+23
+00:00:58,960 --> 00:01:05,680
+a piece of string and see if it contains
+
+24
+00:01:02,640 --> 00:01:08,159
+another string and if it does give back
+
+25
+00:01:05,680 --> 00:01:10,400
+the position of that string. So if I was
+
+26
+00:01:08,159 --> 00:01:13,040
+looking for this W here, I could say
+
+27
+00:01:10,400 --> 00:01:14,720
+search for the W. And what I'm going to
+
+28
+00:01:13,040 --> 00:01:16,400
+do is I'm going to alert this to show
+
+29
+00:01:14,720 --> 00:01:19,439
+you what it does. So, I'm going to say
+
+30
+00:01:16,400 --> 00:01:21,680
+alert my text.arch
+
+31
+00:01:19,439 --> 00:01:23,600
+open quotes w close quote. And then I'm
+
+32
+00:01:21,680 --> 00:01:25,600
+going to close off both functions. Going
+
+33
+00:01:23,600 --> 00:01:27,360
+to save this and I'm going to open it
+
+34
+00:01:25,600 --> 00:01:31,360
+up. And it says it is in the sixth
+
+35
+00:01:27,360 --> 00:01:33,360
+position. So now without knowing where
+
+36
+00:01:31,360 --> 00:01:36,240
+Wayne was or having to count it out, I
+
+37
+00:01:33,360 --> 00:01:39,520
+now know it's in the sixth position. Um,
+
+38
+00:01:36,240 --> 00:01:42,799
+this could be a basic string. Um, or it
+
+39
+00:01:39,520 --> 00:01:44,799
+could be a more complicated string. Um,
+
+40
+00:01:42,799 --> 00:01:49,840
+so let's say I want to search for the
+
+41
+00:01:44,799 --> 00:01:52,560
+text of is. If I save that and I reload,
+
+42
+00:01:49,840 --> 00:01:54,799
+it says the text of is starts at the
+
+43
+00:01:52,560 --> 00:01:57,200
+12th position. So that means the letter
+
+44
+00:01:54,799 --> 00:02:01,040
+I is in the 12th position and the letter
+
+45
+00:01:57,200 --> 00:02:02,640
+S is in the 13th position. Um, which
+
+46
+00:02:01,040 --> 00:02:04,320
+makes sense because we knew that the B
+
+47
+00:02:02,640 --> 00:02:06,719
+from previous video was the 15th
+
+48
+00:02:04,320 --> 00:02:08,879
+position. So the space was the 14, the S
+
+49
+00:02:06,719 --> 00:02:11,840
+is the 13, and the I is the 12th
+
+50
+00:02:08,879 --> 00:02:13,040
+position. So using this my text.arch, we
+
+51
+00:02:11,840 --> 00:02:16,239
+were able to find the position of
+
+52
+00:02:13,040 --> 00:02:20,319
+something. So if I added a whole bunch
+
+53
+00:02:16,239 --> 00:02:22,480
+of text here and added a whole bunch of
+
+54
+00:02:20,319 --> 00:02:24,959
+text there,
+
+55
+00:02:22,480 --> 00:02:27,440
+I could find and pull out this Batman by
+
+56
+00:02:24,959 --> 00:02:30,560
+combining what I you what I just learned
+
+57
+00:02:27,440 --> 00:02:33,599
+with my substring substr function. So I
+
+58
+00:02:30,560 --> 00:02:35,440
+could say
+
+59
+00:02:33,599 --> 00:02:40,480
+let
+
+60
+00:02:35,440 --> 00:02:42,480
+Batman position equal my text.
+
+61
+00:02:40,480 --> 00:02:45,480
+And I'm going to search for the text
+
+62
+00:02:42,480 --> 00:02:45,480
+Batman.
+
+63
+00:02:45,519 --> 00:02:50,080
+Now I know that Batman is in here. I am
+
+64
+00:02:48,800 --> 00:02:51,840
+not going to count out the letters to
+
+65
+00:02:50,080 --> 00:02:54,080
+figure out where that is. But I do know
+
+66
+00:02:51,840 --> 00:03:00,560
+that Batman is six characters. So what I
+
+67
+00:02:54,080 --> 00:03:04,400
+can do is I can say let um Batman text
+
+68
+00:03:00,560 --> 00:03:07,599
+equal and then I'm going to say my text
+
+69
+00:03:04,400 --> 00:03:10,159
+dot and then I'm going to use the substr
+
+70
+00:03:07,599 --> 00:03:12,720
+function. It needs a starting position
+
+71
+00:03:10,159 --> 00:03:14,879
+and a length. So what I'm going to do is
+
+72
+00:03:12,720 --> 00:03:16,560
+I'm going to give it the Batman position
+
+73
+00:03:14,879 --> 00:03:18,000
+that we just found in the last one
+
+74
+00:03:16,560 --> 00:03:20,159
+because that gives back the number where
+
+75
+00:03:18,000 --> 00:03:22,319
+Batman starts.
+
+76
+00:03:20,159 --> 00:03:23,840
+And then I know that Batman is six
+
+77
+00:03:22,319 --> 00:03:25,599
+characters. So, that'll go six
+
+78
+00:03:23,840 --> 00:03:27,760
+characters over. And that should find us
+
+79
+00:03:25,599 --> 00:03:31,440
+the Batman text. Just to prove it, let's
+
+80
+00:03:27,760 --> 00:03:33,920
+do an alert. Batman text.
+
+81
+00:03:31,440 --> 00:03:37,280
+And we'll save it. And now, if we come
+
+82
+00:03:33,920 --> 00:03:40,640
+over and reload our page, we get the
+
+83
+00:03:37,280 --> 00:03:42,319
+text Batman. I have no idea where the B
+
+84
+00:03:40,640 --> 00:03:44,480
+is. I just smashed random characters
+
+85
+00:03:42,319 --> 00:03:46,560
+into this sentence. So, I have no idea
+
+86
+00:03:44,480 --> 00:03:48,080
+where the B for Batman is. But, I was
+
+87
+00:03:46,560 --> 00:03:50,239
+able to use the search function to find
+
+88
+00:03:48,080 --> 00:03:52,000
+out which position that's in. And then I
+
+89
+00:03:50,239 --> 00:03:55,360
+took that position and said move over
+
+90
+00:03:52,000 --> 00:03:57,680
+six positions. So one, two, three, four,
+
+91
+00:03:55,360 --> 00:03:59,599
+five, six. And then that grabbed the
+
+92
+00:03:57,680 --> 00:04:01,360
+entirety of Batman. And then I was able
+
+93
+00:03:59,599 --> 00:04:03,519
+to alert it. And so that is how you
+
+94
+00:04:01,360 --> 00:04:05,360
+would use the search function. Let's try
+
+95
+00:04:03,519 --> 00:04:06,879
+and search for something that's not in
+
+96
+00:04:05,360 --> 00:04:09,280
+there. And I will show you what the
+
+97
+00:04:06,879 --> 00:04:12,239
+search function gives you if it's not in
+
+98
+00:04:09,280 --> 00:04:14,080
+there. So let's do alert Batman
+
+99
+00:04:12,239 --> 00:04:16,079
+position. If we save it right now,
+
+100
+00:04:14,080 --> 00:04:18,479
+Batman is in there. So if we save it and
+
+101
+00:04:16,079 --> 00:04:20,320
+we come over, Batman starts in the 41st
+
+102
+00:04:18,479 --> 00:04:21,759
+position.
+
+103
+00:04:20,320 --> 00:04:24,160
+Let's search for something that's not in
+
+104
+00:04:21,759 --> 00:04:26,160
+there. Let's search for Superman. If we
+
+105
+00:04:24,160 --> 00:04:29,120
+save that and we come over to our
+
+106
+00:04:26,160 --> 00:04:30,880
+website, it gives us negative one. So if
+
+107
+00:04:29,120 --> 00:04:33,040
+zero is the start of the sentence,
+
+108
+00:04:30,880 --> 00:04:34,960
+negative one is outside of the sentence.
+
+109
+00:04:33,040 --> 00:04:37,040
+Or in other words, Superman is not in
+
+110
+00:04:34,960 --> 00:04:38,880
+this sentence. And that's how you use
+
+111
+00:04:37,040 --> 00:04:42,919
+search to determine if a string is
+
+112
+00:04:38,880 --> 00:04:42,919
+within another string.

@@ -1,0 +1,187 @@
+1
+00:00:00,080 --> 00:00:03,679
+Well, in the last video I mentioned
+
+2
+00:00:01,680 --> 00:00:05,600
+array dstructuring, and so it's only
+
+3
+00:00:03,679 --> 00:00:07,200
+natural that I now talk about object
+
+4
+00:00:05,600 --> 00:00:08,960
+destructuring. So, I'm going to do is
+
+5
+00:00:07,200 --> 00:00:11,519
+I'm going to comment out these two
+
+6
+00:00:08,960 --> 00:00:13,120
+lines, but I'm going to leave this um
+
+7
+00:00:11,519 --> 00:00:15,040
+line right here that shows how you
+
+8
+00:00:13,120 --> 00:00:17,039
+destructure an array. If we want to
+
+9
+00:00:15,040 --> 00:00:19,920
+dstructure an object, we can do it the
+
+10
+00:00:17,039 --> 00:00:24,000
+same way. So we would say let and then
+
+11
+00:00:19,920 --> 00:00:27,599
+curly braces first name comma last name
+
+12
+00:00:24,000 --> 00:00:31,039
+alias comma num villains caught and we
+
+13
+00:00:27,599 --> 00:00:33,360
+would set it equal to Batman. What we're
+
+14
+00:00:31,039 --> 00:00:35,520
+doing is we're saying go into Batman
+
+15
+00:00:33,360 --> 00:00:38,640
+pull out each of these attributes and
+
+16
+00:00:35,520 --> 00:00:43,600
+store them in these variables.
+
+17
+00:00:38,640 --> 00:00:46,559
+So on the next line I could alert alias.
+
+18
+00:00:43,600 --> 00:00:49,440
+If I save that and I come over here, I
+
+19
+00:00:46,559 --> 00:00:51,360
+get Batman. So that works about like we
+
+20
+00:00:49,440 --> 00:00:52,800
+expected. But num villains caught as
+
+21
+00:00:51,360 --> 00:00:56,559
+long to type. What if I just type that
+
+22
+00:00:52,800 --> 00:00:58,640
+as numbum and save it? And here I alert
+
+23
+00:00:56,559 --> 00:01:01,680
+numb.
+
+24
+00:00:58,640 --> 00:01:03,760
+If I do that, sorry, reload. I get
+
+25
+00:01:01,680 --> 00:01:06,080
+undefined.
+
+26
+00:01:03,760 --> 00:01:08,880
+And that is because num does not exist
+
+27
+00:01:06,080 --> 00:01:10,560
+in this object. Unlike arrays where you
+
+28
+00:01:08,880 --> 00:01:13,119
+can give it any name because arrays
+
+29
+00:01:10,560 --> 00:01:15,280
+store things in order, objects store
+
+30
+00:01:13,119 --> 00:01:18,400
+things by name. So that means you have
+
+31
+00:01:15,280 --> 00:01:21,360
+to pull them out by name. So here I do
+
+32
+00:01:18,400 --> 00:01:22,960
+have to say numbum villains cop. But
+
+33
+00:01:21,360 --> 00:01:25,200
+what if you don't really want to type
+
+34
+00:01:22,960 --> 00:01:27,040
+that all that many times? Well, there's
+
+35
+00:01:25,200 --> 00:01:29,439
+something you can do called aliasing,
+
+36
+00:01:27,040 --> 00:01:32,079
+meaning you give it a shorter nickname
+
+37
+00:01:29,439 --> 00:01:33,680
+style name. So I'm going to put a colon
+
+38
+00:01:32,079 --> 00:01:37,119
+here and I'm just going to call it
+
+39
+00:01:33,680 --> 00:01:39,040
+numbum. So I said bring out first name,
+
+40
+00:01:37,119 --> 00:01:40,640
+bring out last name, bring out alias,
+
+41
+00:01:39,040 --> 00:01:45,280
+bring out num villains caught and call
+
+42
+00:01:40,640 --> 00:01:48,560
+it numbum. And now when I alert numb
+
+43
+00:01:45,280 --> 00:01:51,040
+and reload, I get 20 because I said pull
+
+44
+00:01:48,560 --> 00:01:53,920
+out the attribute called numbum villains
+
+45
+00:01:51,040 --> 00:01:56,320
+caught and name it numbum. And now I can
+
+46
+00:01:53,920 --> 00:01:59,200
+alert using that. And that is how object
+
+47
+00:01:56,320 --> 00:01:59,200
+destructuring works.

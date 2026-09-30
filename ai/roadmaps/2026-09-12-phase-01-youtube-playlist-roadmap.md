@@ -8,15 +8,16 @@ See `ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md` for goal, decisio
 
 ## Steps
 
-1. [ ] Confirm operator inputs, or decide to smoke-test first.
-   - Fill in playlist URL/ID, course display name, and `data/transcripts/<COURSECODE>/` in the Stage 3 high-level plan table when they are known.
-   - If they are not known yet, pick a short public playlist only for helper smoke-test. Do not ingest that throwaway playlist into the Render index.
+1. [x] Confirm operator inputs.
+   - Playlist: `https://www.youtube.com/playlist?list=PLA1SJqfgQFEGZfzeSsmgJlvhLlAsmv9h0`
+   - Course display name: `IS 5750: JavaScript for Absolute Beginners`
+   - Pending output folder: `data/transcripts/IS5750/`
 
-2. [ ] Confirm `yt-dlp` is available on the machine that will run the helper.
+2. [x] Confirm `yt-dlp` is available on the machine that will run the helper.
    - `yt-dlp --version`
-   - Do not add `yt-dlp` to the web app dependencies. Install it locally for the operator if missing.
+   - Installed in the repository `.venv` with `python -m pip install yt-dlp`; added `.venv/Scripts` to PATH for helper runs. It is not a web-app dependency.
 
-3. [ ] Add `scripts/prepare_youtube_playlist.py`.
+3. [x] Add and run `scripts/prepare_youtube_playlist.py`.
    - Args: `--playlist`, `--course`, `--outdir`. Optional `--lang` (default `en`) and `--limit` only if useful for smoke-test.
    - Resolve playlist items (index, id, title) with `yt-dlp` subprocess. `--flat-playlist` / print fields; do not download video bytes (`--skip-download`).
    - For each item: prefer official English subs, then auto-subs; convert to SRT; write `{index:02d}_{id}.srt`.
@@ -24,39 +25,40 @@ See `ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md` for goal, decisio
    - Sanitize `video` titles so ingest's slug (`title.lower().replace(" ", "-")`) stays unique and fits `videos.video_id VARCHAR(100)`. Append the YouTube id if two titles collide.
    - Skip captionless / unavailable videos; print a skip list at the end (id, title, reason). Print a success count.
 
-4. [ ] Smoke-test the helper (public playlist or the real one).
-   - Output folder contains paired `.srt` / `.json` files.
-   - Spot-check one SRT has real timestamps; spot-check one sidecar against the helper contract in the plan.
-   - Confirm skipped videos are reported, not written as empty SRTs.
+4. [x] Smoke-test the helper on the real playlist.
+   - Prepared all 216 videos in `data/transcripts/IS5750/`; no videos were skipped.
+   - Confirmed 216 paired SRT/JSON files, valid sidecar fields, unique order 1–216, and valid timestamped captions.
+   - Existing `ingest.parse_srt()` parsed all 216 files (19,695 subtitle entries; zero empty parses).
 
-5. [ ] Add YouTube URL helpers in `frontend/app/SourceCards.tsx`.
+5. [x] Add YouTube URL helpers in `frontend/app/SourceCards.tsx`.
    - Parse video id from `watch?v=`, `youtu.be/`, and `/embed/` URLs.
    - `buildVideoIframeSrc(sourceUrl, startSec)` (name can stay close to the existing Kaltura helper): Kaltura pattern → current `embedPlaykitJs` + `kalturaSeekFrom`; YouTube → `https://www.youtube.com/embed/<id>?start=<startSec>`; else return the original URL.
    - Keep `parseKalturaUrl` / Kaltura seek behavior byte-for-byte for existing URLs.
    - Point source-card and neighbor iframes at the shared builder.
 
-6. [ ] YouTube fallback link on source cards.
+6. [x] YouTube fallback link on source cards.
    - When `source_url` is YouTube, show "Open on YouTube" → `https://www.youtube.com/watch?v=<id>&t=<start_time>s`.
    - Do not add that link on Kaltura cards.
    - Do not add embed-failure detection.
 
-7. [ ] Sidebar modal in `frontend/app/page.tsx`.
+7. [x] Sidebar modal in `frontend/app/page.tsx`.
    - Use the same builder (`startSec = 0`) so a YouTube library item plays in the modal.
    - Null `source_url` still shows "Video link not available yet."
    - Do not change sidebar fetch, accordion, or search.
 
-8. [ ] README.
+8. [x] README.
    - Document the helper, `yt-dlp` as a local prerequisite, and that `source_url` may be Kaltura or YouTube.
    - Do not rewrite the ingest section; add a short "YouTube playlist" subsection next to the existing sidecar instructions.
 
-9. [ ] Live ingest (blocked on operator inputs).
+9. [ ] Live ingest (blocked on local environment setup).
    - Run the helper with the real playlist / course name / outdir.
    - Review skip list; decide if missing videos are acceptable or need captions added on YouTube first.
    - Run `python scripts/ingest.py` against the intended database (`DATABASE_URL`).
-   - Confirm the course folder is moved to `data/ingest_transcripts_complete/` after success.
-   - If operator inputs are still TBD, stop here, leave this step unchecked, and ship helper + player. Note the deferral in the changelog when the phase otherwise closes.
+   - After confirming successful ingest, manually move the course folder to `data/ingest_transcripts_complete/IS5750/`; `scripts/ingest.py` does not move it automatically.
+   - Use the local Docker database only for the first ingest; do not use Render yet.
+   - Current blockers: Docker CLI/database and `.env` are absent; `OPENAI_API_KEY` is not configured. `ingest.py` startup was attempted and exited before any database connection.
 
-10. [ ] QA.
+10. [ ] QA (caption/output checks passed; local database and frontend runtime checks pending).
     - Ask a question expected to hit a YouTube chunk: source card embed seeks (or the watch link has `&t=`).
     - Ask a question expected to hit a Kaltura chunk: `kalturaSeekFrom` still works; neighbor chips unchanged.
     - Sidebar lists the new course in `video_order`; modal opens a YouTube video at t=0; ESC / × / backdrop still close it; chat thread is not wiped.

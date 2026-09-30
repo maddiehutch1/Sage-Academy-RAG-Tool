@@ -1,0 +1,427 @@
+1
+00:00:00,000 --> 00:00:03,439
+Uh well the first thing you probably
+
+2
+00:00:01,760 --> 00:00:05,520
+want should know about functions is that
+
+3
+00:00:03,439 --> 00:00:08,639
+you've actually already been using them.
+
+4
+00:00:05,520 --> 00:00:11,679
+Um so for example when I told you if you
+
+5
+00:00:08,639 --> 00:00:13,440
+type alert and you see this little box
+
+6
+00:00:11,679 --> 00:00:15,679
+that is a function. So when we type
+
+7
+00:00:13,440 --> 00:00:18,000
+alert we can give it some information.
+
+8
+00:00:15,679 --> 00:00:19,520
+It will take that input do some work and
+
+9
+00:00:18,000 --> 00:00:22,400
+give us some output. The output that it
+
+10
+00:00:19,520 --> 00:00:24,320
+gives is a popup box that says whatever
+
+11
+00:00:22,400 --> 00:00:30,720
+we type in here. So if we type hello
+
+12
+00:00:24,320 --> 00:00:34,559
+world um we'll get hello world. Um,
+
+13
+00:00:30,720 --> 00:00:35,760
+if you want to um
+
+14
+00:00:34,559 --> 00:00:37,040
+if you want to prompt someone for
+
+15
+00:00:35,760 --> 00:00:40,239
+information, you probably used a
+
+16
+00:00:37,040 --> 00:00:43,600
+different um function. And this one
+
+17
+00:00:40,239 --> 00:00:46,079
+takes an input as well. Um,
+
+18
+00:00:43,600 --> 00:00:47,520
+and it shows it takes an input, does
+
+19
+00:00:46,079 --> 00:00:49,680
+some work. The work it does is it shows
+
+20
+00:00:47,520 --> 00:00:52,160
+a pop-up box with an input box inside of
+
+21
+00:00:49,680 --> 00:00:54,000
+it, and it shows your custom message.
+
+22
+00:00:52,160 --> 00:00:55,840
+So, this one takes an input, does some
+
+23
+00:00:54,000 --> 00:00:58,239
+work, and gives you some output. And
+
+24
+00:00:55,840 --> 00:01:00,399
+actually this one does something that we
+
+25
+00:00:58,239 --> 00:01:02,320
+call returning. So it returns some
+
+26
+00:01:00,399 --> 00:01:04,159
+output. So it does this function, it
+
+27
+00:01:02,320 --> 00:01:06,479
+does some work, someone types something
+
+28
+00:01:04,159 --> 00:01:08,720
+into it and then it gives the result of
+
+29
+00:01:06,479 --> 00:01:11,600
+that back to your variable. So I could
+
+30
+00:01:08,720 --> 00:01:14,320
+store it by saying let my var equal
+
+31
+00:01:11,600 --> 00:01:16,640
+prompt. So I take a prompt, I ask the
+
+32
+00:01:14,320 --> 00:01:18,400
+user for information, it enters that
+
+33
+00:01:16,640 --> 00:01:21,200
+information and then the result of that
+
+34
+00:01:18,400 --> 00:01:23,920
+is returned to my variable. So now my
+
+35
+00:01:21,200 --> 00:01:25,280
+variable is storing the result of the
+
+36
+00:01:23,920 --> 00:01:27,280
+prompt.
+
+37
+00:01:25,280 --> 00:01:30,479
+You've also used some other ones. So for
+
+38
+00:01:27,280 --> 00:01:33,119
+example, parse int takes in a string and
+
+39
+00:01:30,479 --> 00:01:37,439
+gives you back a number. Um and you can
+
+40
+00:01:33,119 --> 00:01:40,479
+store that number by saying let my num
+
+41
+00:01:37,439 --> 00:01:43,439
+equal parse int. Parse float is another
+
+42
+00:01:40,479 --> 00:01:47,280
+one we've used. Um maybe if we think
+
+43
+00:01:43,439 --> 00:01:50,159
+about strings, say my string
+
+44
+00:01:47,280 --> 00:01:54,560
+hello strings have some built-in
+
+45
+00:01:50,159 --> 00:01:58,799
+functions. So you can say my string dot
+
+46
+00:01:54,560 --> 00:02:00,880
+um to lowercase and what that does is it
+
+47
+00:01:58,799 --> 00:02:03,200
+takes this string converts it to
+
+48
+00:02:00,880 --> 00:02:05,920
+lowercase and then returns it and we can
+
+49
+00:02:03,200 --> 00:02:08,000
+store it. So we can say let new string
+
+50
+00:02:05,920 --> 00:02:10,720
+equal my string. So it takes the string
+
+51
+00:02:08,000 --> 00:02:13,680
+as an input turns it into lowercase and
+
+52
+00:02:10,720 --> 00:02:15,360
+then returns it and we store it in new
+
+53
+00:02:13,680 --> 00:02:17,440
+string. So if you've been using
+
+54
+00:02:15,360 --> 00:02:19,120
+functions all along then why are we
+
+55
+00:02:17,440 --> 00:02:20,319
+having a discussion about functions?
+
+56
+00:02:19,120 --> 00:02:22,000
+Well, the reason we're discussing
+
+57
+00:02:20,319 --> 00:02:23,920
+functions is we're going to show you how
+
+58
+00:02:22,000 --> 00:02:25,520
+to build your own custom functions so
+
+59
+00:02:23,920 --> 00:02:28,239
+that you can take pieces of code that
+
+60
+00:02:25,520 --> 00:02:30,879
+you use over and over and repeat them.
+
+61
+00:02:28,239 --> 00:02:32,959
+So, someone out there said, "Man, we
+
+62
+00:02:30,879 --> 00:02:34,879
+keep showing all of these pop-up boxes.
+
+63
+00:02:32,959 --> 00:02:36,640
+Wouldn't it be nice if we could just
+
+64
+00:02:34,879 --> 00:02:38,239
+type the word alert rather than writing
+
+65
+00:02:36,640 --> 00:02:41,519
+all the code for a pop-up box every
+
+66
+00:02:38,239 --> 00:02:42,959
+time?" Um, someone else said, "Wow,
+
+67
+00:02:41,519 --> 00:02:45,120
+we're prompting a lot of people for
+
+68
+00:02:42,959 --> 00:02:46,720
+information. be nice if instead of
+
+69
+00:02:45,120 --> 00:02:48,800
+typing all the code to make that pop-up
+
+70
+00:02:46,720 --> 00:02:52,640
+box show, I could just type the word
+
+71
+00:02:48,800 --> 00:02:54,720
+prompt and have it work. Well, we can do
+
+72
+00:02:52,640 --> 00:02:57,280
+the same thing. So, how do you write a
+
+73
+00:02:54,720 --> 00:02:59,760
+function? Well, you start by using the
+
+74
+00:02:57,280 --> 00:03:02,480
+keyword function. Say function and then
+
+75
+00:02:59,760 --> 00:03:04,159
+you give your function a name. Um, by
+
+76
+00:03:02,480 --> 00:03:05,760
+convention in JavaScript, your function
+
+77
+00:03:04,159 --> 00:03:08,239
+names should probably start with a
+
+78
+00:03:05,760 --> 00:03:10,400
+lowercase character. Um, generally they
+
+79
+00:03:08,239 --> 00:03:12,480
+use camelc case in JavaScript, which
+
+80
+00:03:10,400 --> 00:03:14,959
+means that you start your function with
+
+81
+00:03:12,480 --> 00:03:17,599
+a lowercase letter, but then each
+
+82
+00:03:14,959 --> 00:03:21,360
+additional word in your function name is
+
+83
+00:03:17,599 --> 00:03:22,879
+marked by an uppercase letter. So if I
+
+84
+00:03:21,360 --> 00:03:26,319
+wanted to create a function that added
+
+85
+00:03:22,879 --> 00:03:30,319
+two numbers, I would say add two
+
+86
+00:03:26,319 --> 00:03:31,360
+numbers. Um, and then the next thing you
+
+87
+00:03:30,319 --> 00:03:33,360
+need to do is you need to put
+
+88
+00:03:31,360 --> 00:03:36,159
+parentheses
+
+89
+00:03:33,360 --> 00:03:38,640
+and then you need to put curly braces.
+
+90
+00:03:36,159 --> 00:03:42,159
+So now we have successfully created a
+
+91
+00:03:38,640 --> 00:03:43,599
+function called add two numbers. And we
+
+92
+00:03:42,159 --> 00:03:46,799
+could call this function. We could say
+
+93
+00:03:43,599 --> 00:03:48,799
+add two numbers put parenthesis.
+
+94
+00:03:46,799 --> 00:03:50,560
+Um and just to show you that it is in
+
+95
+00:03:48,799 --> 00:03:52,560
+fact a function. You'll notice that it
+
+96
+00:03:50,560 --> 00:03:54,640
+is marked with a cube here and not this
+
+97
+00:03:52,560 --> 00:03:56,480
+square. This is a function. We can call
+
+98
+00:03:54,640 --> 00:03:58,319
+it. We can put parenthesis and it will
+
+99
+00:03:56,480 --> 00:03:59,680
+do something.
+
+100
+00:03:58,319 --> 00:04:02,239
+So the question is what does this
+
+101
+00:03:59,680 --> 00:04:04,720
+function do? Well, right now absolutely
+
+102
+00:04:02,239 --> 00:04:06,879
+nothing. Um, if you look inside these
+
+103
+00:04:04,720 --> 00:04:08,720
+curly braces, this is the code that runs
+
+104
+00:04:06,879 --> 00:04:11,360
+when you call the function. And right
+
+105
+00:04:08,720 --> 00:04:13,120
+now, our code does absolutely nothing.
+
+106
+00:04:11,360 --> 00:04:16,640
+Um, in the next video we'll talk about
+
+107
+00:04:13,120 --> 00:04:16,640
+how you can make your function do

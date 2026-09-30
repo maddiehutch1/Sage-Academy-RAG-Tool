@@ -1,0 +1,135 @@
+1
+00:00:00,080 --> 00:00:04,160
+Now that we can successfully stop the
+
+2
+00:00:02,240 --> 00:00:05,759
+form from submitting, now we can control
+
+3
+00:00:04,160 --> 00:00:08,559
+what we want to do with it once it does
+
+4
+00:00:05,759 --> 00:00:11,280
+submit. So, for example, here um I have
+
+5
+00:00:08,559 --> 00:00:15,519
+now brought back in my Axios library and
+
+6
+00:00:11,280 --> 00:00:21,000
+down here I can say Axios.
+
+7
+00:00:15,519 --> 00:00:21,000
+And I'm going to post to my um API.
+
+8
+00:00:22,480 --> 00:00:28,400
+And what do I want to post? Well, I want
+
+9
+00:00:25,359 --> 00:00:31,199
+to post the data from my form.
+
+10
+00:00:28,400 --> 00:00:33,280
+So, um, just to demonstrate this, I
+
+11
+00:00:31,199 --> 00:00:34,960
+could say name,
+
+12
+00:00:33,280 --> 00:00:36,399
+username,
+
+13
+00:00:34,960 --> 00:00:39,840
+and I'm going to put I'm going to
+
+14
+00:00:36,399 --> 00:00:43,200
+hardcode for now and password
+
+15
+00:00:39,840 --> 00:00:47,039
+and then set that. So, if I save this
+
+16
+00:00:43,200 --> 00:00:49,840
+and I put test and hit submit, if I come
+
+17
+00:00:47,039 --> 00:00:52,800
+over here to the DBJSON, you can see
+
+18
+00:00:49,840 --> 00:00:55,120
+that it put in the username and password
+
+19
+00:00:52,800 --> 00:00:57,520
+that I requested. All right, I'm going
+
+20
+00:00:55,120 --> 00:01:00,320
+to delete this data from my database for
+
+21
+00:00:57,520 --> 00:01:03,760
+now and save it. So you can see that the
+
+22
+00:01:00,320 --> 00:01:06,799
+API did in fact respond. Well, now I
+
+23
+00:01:03,760 --> 00:01:08,880
+need to get data out of the form. So if
+
+24
+00:01:06,799 --> 00:01:13,479
+I want to get the username, then I have
+
+25
+00:01:08,880 --> 00:01:13,479
+to say document.query
+
+26
+00:01:13,520 --> 00:01:21,119
+selector and then I have to find it um
+
+27
+00:01:17,520 --> 00:01:23,119
+by its name and that can be a pain. And
+
+28
+00:01:21,119 --> 00:01:25,840
+then I'd have to do that for usern for
+
+29
+00:01:23,119 --> 00:01:28,720
+password as well.
+
+30
+00:01:25,840 --> 00:01:30,560
+But imagine if my form got longer. That
+
+31
+00:01:28,720 --> 00:01:32,320
+is a whole bunch of query selectors I'm
+
+32
+00:01:30,560 --> 00:01:33,680
+going to need to be doing. So, what I'm
+
+33
+00:01:32,320 --> 00:01:37,680
+going to show you in the next video is
+
+34
+00:01:33,680 --> 00:01:37,680
+how you can do it all on one

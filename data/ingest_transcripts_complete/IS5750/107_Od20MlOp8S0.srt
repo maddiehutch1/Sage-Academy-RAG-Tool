@@ -1,0 +1,611 @@
+1
+00:00:00,080 --> 00:00:05,120
+All right. So, I showed you why when
+
+2
+00:00:02,879 --> 00:00:07,359
+you're storing information that you want
+
+3
+00:00:05,120 --> 00:00:09,679
+to access by name, why an object might
+
+4
+00:00:07,359 --> 00:00:12,800
+be better. Um, because I showed you that
+
+5
+00:00:09,679 --> 00:00:15,280
+if you um rearrange
+
+6
+00:00:12,800 --> 00:00:17,520
+uh the information, then it can get put
+
+7
+00:00:15,280 --> 00:00:19,279
+into the wrong order when you do an
+
+8
+00:00:17,520 --> 00:00:21,600
+array destructuring.
+
+9
+00:00:19,279 --> 00:00:24,320
+Um whereas when you destructure an
+
+10
+00:00:21,600 --> 00:00:26,320
+object, they are already assigned by
+
+11
+00:00:24,320 --> 00:00:27,840
+name and therefore you're not going to
+
+12
+00:00:26,320 --> 00:00:29,039
+pull them out in the wrong order. her
+
+13
+00:00:27,840 --> 00:00:32,000
+first name isn't going to end up with
+
+14
+00:00:29,039 --> 00:00:34,399
+alias inside of it. Well, storing
+
+15
+00:00:32,000 --> 00:00:35,920
+objects in arrays is something we fairly
+
+16
+00:00:34,399 --> 00:00:37,440
+commonly want to do. What I'm going to
+
+17
+00:00:35,920 --> 00:00:40,719
+do here is I'm going to uncopy this
+
+18
+00:00:37,440 --> 00:00:43,200
+array. I'm sorry, uncomment this array.
+
+19
+00:00:40,719 --> 00:00:45,600
+Okay, so I have an array. It has arrays
+
+20
+00:00:43,200 --> 00:00:47,760
+in it. That's not what I want. I
+
+21
+00:00:45,600 --> 00:00:50,960
+actually want this array to have objects
+
+22
+00:00:47,760 --> 00:00:54,239
+in it. Well, and I kind of want them to
+
+23
+00:00:50,960 --> 00:00:57,120
+look like this. Well, fortunately, there
+
+24
+00:00:54,239 --> 00:00:59,520
+is a built-in method to do it. And this
+
+25
+00:00:57,120 --> 00:01:03,039
+is the last array method that I'll cover
+
+26
+00:00:59,520 --> 00:01:08,320
+for now. Um so the way this works is we
+
+27
+00:01:03,039 --> 00:01:13,360
+can say justice um let new justice
+
+28
+00:01:08,320 --> 00:01:15,760
+league equal justice league dom
+
+29
+00:01:13,360 --> 00:01:17,600
+here it takes a function. Do you
+
+30
+00:01:15,760 --> 00:01:20,960
+remember when I made you write a
+
+31
+00:01:17,600 --> 00:01:22,320
+function called apply to array where it
+
+32
+00:01:20,960 --> 00:01:24,000
+took in a function that you wanted to
+
+33
+00:01:22,320 --> 00:01:26,479
+apply and it applied it to the entire
+
+34
+00:01:24,000 --> 00:01:29,280
+array to make changes to the array?
+
+35
+00:01:26,479 --> 00:01:31,200
+Well, I'm sorry. Confession time. That
+
+36
+00:01:29,280 --> 00:01:33,360
+already existed. It's called the map
+
+37
+00:01:31,200 --> 00:01:34,400
+function. I made you write it because I
+
+38
+00:01:33,360 --> 00:01:37,920
+wanted you to get experience with
+
+39
+00:01:34,400 --> 00:01:39,600
+functions and looping and arrays, but it
+
+40
+00:01:37,920 --> 00:01:42,240
+actually already exists. It's called the
+
+41
+00:01:39,600 --> 00:01:44,159
+map function. So, what map does is it
+
+42
+00:01:42,240 --> 00:01:46,159
+says, give me a function and I will
+
+43
+00:01:44,159 --> 00:01:49,759
+apply it to every single item in this
+
+44
+00:01:46,159 --> 00:01:51,840
+array. Well, let's write that function.
+
+45
+00:01:49,759 --> 00:01:54,399
+Um, it's going to take in a value which
+
+46
+00:01:51,840 --> 00:01:56,079
+is going to be an item in the array. So
+
+47
+00:01:54,399 --> 00:01:58,479
+in this case, I'm going to call each
+
+48
+00:01:56,079 --> 00:02:01,600
+item in this array is a list and each
+
+49
+00:01:58,479 --> 00:02:04,240
+list is a superhero. So I'm going to say
+
+50
+00:02:01,600 --> 00:02:06,479
+let's take a superhero
+
+51
+00:02:04,240 --> 00:02:07,759
+out of the array.
+
+52
+00:02:06,479 --> 00:02:09,679
+And then I'm going to write a lambda
+
+53
+00:02:07,759 --> 00:02:11,200
+function because it's going to be on
+
+54
+00:02:09,679 --> 00:02:12,720
+multiple lines. I'm going to use curly
+
+55
+00:02:11,200 --> 00:02:14,959
+braces.
+
+56
+00:02:12,720 --> 00:02:16,800
+So now I'm writing a function. Um
+
+57
+00:02:14,959 --> 00:02:19,280
+hopefully you recognize this syntax for
+
+58
+00:02:16,800 --> 00:02:22,080
+writing a function. And what do I want
+
+59
+00:02:19,280 --> 00:02:24,400
+to do? Well, I want to dstructure that
+
+60
+00:02:22,080 --> 00:02:27,760
+superhero. So, I'm going to say let
+
+61
+00:02:24,400 --> 00:02:29,760
+first last
+
+62
+00:02:27,760 --> 00:02:32,480
+alias
+
+63
+00:02:29,760 --> 00:02:34,239
+numbum villains
+
+64
+00:02:32,480 --> 00:02:36,560
+equal
+
+65
+00:02:34,239 --> 00:02:40,080
+the superhero.
+
+66
+00:02:36,560 --> 00:02:43,120
+Okay. Then I want to turn that into an
+
+67
+00:02:40,080 --> 00:02:45,200
+object. So, I'm going to say let um
+
+68
+00:02:43,120 --> 00:02:47,920
+superhero
+
+69
+00:02:45,200 --> 00:02:49,680
+object equal and then I'm going to do
+
+70
+00:02:47,920 --> 00:02:52,400
+curly braces and I'm going to say first
+
+71
+00:02:49,680 --> 00:02:56,239
+name
+
+72
+00:02:52,400 --> 00:02:58,080
+first name and I'm going to put in first
+
+73
+00:02:56,239 --> 00:02:59,599
+right here
+
+74
+00:02:58,080 --> 00:03:01,760
+and then I'm going to put a comma and
+
+75
+00:02:59,599 --> 00:03:05,920
+I'm going to say last name and I'm going
+
+76
+00:03:01,760 --> 00:03:07,519
+to store last. And then I'm gonna say
+
+77
+00:03:05,920 --> 00:03:10,080
+alias.
+
+78
+00:03:07,519 --> 00:03:12,319
+And I'm going to put in this alias right
+
+79
+00:03:10,080 --> 00:03:14,800
+here.
+
+80
+00:03:12,319 --> 00:03:17,519
+And then I'm gonna say
+
+81
+00:03:14,800 --> 00:03:22,239
+numbum
+
+82
+00:03:17,519 --> 00:03:25,120
+villains caught. And I am going to store
+
+83
+00:03:22,239 --> 00:03:27,280
+this num villains variable. Okay, that
+
+84
+00:03:25,120 --> 00:03:28,959
+creates an object. But we want to put
+
+85
+00:03:27,280 --> 00:03:31,120
+that object into the new array that
+
+86
+00:03:28,959 --> 00:03:33,440
+we're creating. So in order to do that,
+
+87
+00:03:31,120 --> 00:03:35,360
+we write return. And what are we
+
+88
+00:03:33,440 --> 00:03:37,040
+returning? We're returning the superhero
+
+89
+00:03:35,360 --> 00:03:40,480
+object.
+
+90
+00:03:37,040 --> 00:03:44,720
+So, let's save this. And I'm in our
+
+91
+00:03:40,480 --> 00:03:46,879
+console.log, our new Justice League.
+
+92
+00:03:44,720 --> 00:03:49,599
+If we save it
+
+93
+00:03:46,879 --> 00:03:52,560
+and we come over to our console, we
+
+94
+00:03:49,599 --> 00:03:55,360
+reload our page.
+
+95
+00:03:52,560 --> 00:04:00,319
+Um, okay. If we hover over Justice
+
+96
+00:03:55,360 --> 00:04:02,480
+League, it has a bunch of arrays in it
+
+97
+00:04:00,319 --> 00:04:04,560
+and it took superhero out of the array.
+
+98
+00:04:02,480 --> 00:04:07,200
+Superhero was one array with Clark,
+
+99
+00:04:04,560 --> 00:04:10,000
+Kent, Superman, and 12. Now we're going
+
+100
+00:04:07,200 --> 00:04:13,599
+to dstructure that array. So now it put
+
+101
+00:04:10,000 --> 00:04:15,360
+Clark into first, Kent into last, alias
+
+102
+00:04:13,599 --> 00:04:17,199
+into Superman, and number of villains
+
+103
+00:04:15,360 --> 00:04:19,280
+into 12. Now we're going to create a
+
+104
+00:04:17,199 --> 00:04:22,400
+superhero object out of that. If we hit
+
+105
+00:04:19,280 --> 00:04:25,120
+next, our superhero object has four
+
+106
+00:04:22,400 --> 00:04:27,520
+definitions and four values. We call
+
+107
+00:04:25,120 --> 00:04:29,919
+these keys and we call these values. So
+
+108
+00:04:27,520 --> 00:04:32,000
+alias is storing Superman, first name is
+
+109
+00:04:29,919 --> 00:04:34,400
+storing Clark, last name is storing
+
+110
+00:04:32,000 --> 00:04:36,400
+Kent, and num villains caught is storing
+
+111
+00:04:34,400 --> 00:04:38,479
+12. Now we're going to return that
+
+112
+00:04:36,400 --> 00:04:41,520
+object
+
+113
+00:04:38,479 --> 00:04:43,440
+and we're going to start over. So now
+
+114
+00:04:41,520 --> 00:04:47,280
+we've pulled in the second item which is
+
+115
+00:04:43,440 --> 00:04:49,440
+Bruce Wayne Batman. And I am going to
+
+116
+00:04:47,280 --> 00:04:50,560
+speed this up and go until this next
+
+117
+00:04:49,440 --> 00:04:52,960
+breakpoint. So I'm going to remove this
+
+118
+00:04:50,560 --> 00:04:54,400
+breakpoint and hit continue. Once we're
+
+119
+00:04:52,960 --> 00:04:56,000
+done, if we look at our new Justice
+
+120
+00:04:54,400 --> 00:04:58,080
+League, it is storing a bunch of
+
+121
+00:04:56,000 --> 00:04:59,919
+objects. No longer is it storing a bunch
+
+122
+00:04:58,080 --> 00:05:01,360
+of arrays. It's storing objects, which
+
+123
+00:04:59,919 --> 00:05:03,919
+means we can pull things out of those
+
+124
+00:05:01,360 --> 00:05:05,520
+objects by name. To test this out, let's
+
+125
+00:05:03,919 --> 00:05:08,800
+go to the console. I'm going to copy the
+
+126
+00:05:05,520 --> 00:05:12,560
+name of our new array. So I'm going to
+
+127
+00:05:08,800 --> 00:05:16,000
+paste it here. Say new Justice League
+
+128
+00:05:12,560 --> 00:05:18,320
+at the zero position. And let's just hit
+
+129
+00:05:16,000 --> 00:05:20,240
+enter. And you can hopefully see here
+
+130
+00:05:18,320 --> 00:05:22,240
+that it is an object with first name
+
+131
+00:05:20,240 --> 00:05:24,880
+Clark, last name Kent, alias Superman,
+
+132
+00:05:22,240 --> 00:05:27,680
+number villains caught 12. So if I say
+
+133
+00:05:24,880 --> 00:05:29,919
+new Justice League at the zero position
+
+134
+00:05:27,680 --> 00:05:32,720
+first name, it should print out Clark.
+
+135
+00:05:29,919 --> 00:05:36,240
+Sure enough, there it is. If we print
+
+136
+00:05:32,720 --> 00:05:38,160
+out dot alias,
+
+137
+00:05:36,240 --> 00:05:40,240
+we can see that it's Superman. So what
+
+138
+00:05:38,160 --> 00:05:43,600
+we could do is we can now loop through
+
+139
+00:05:40,240 --> 00:05:47,520
+this Justice League array and then print
+
+140
+00:05:43,600 --> 00:05:50,720
+out everything by first name.ast name
+
+141
+00:05:47,520 --> 00:05:52,880
+alias and num villain Scott.
+
+142
+00:05:50,720 --> 00:05:57,120
+And so what you can see is we were able
+
+143
+00:05:52,880 --> 00:06:00,720
+to successfully apply a function
+
+144
+00:05:57,120 --> 00:06:02,400
+to this Justice League array to create a
+
+145
+00:06:00,720 --> 00:06:06,160
+new array
+
+146
+00:06:02,400 --> 00:06:07,840
+that's been adjusted. So we took in an
+
+147
+00:06:06,160 --> 00:06:10,080
+array filled with arrays. We took in
+
+148
+00:06:07,840 --> 00:06:12,240
+each array, converted it into an object,
+
+149
+00:06:10,080 --> 00:06:14,639
+and put it into the new array. The new
+
+150
+00:06:12,240 --> 00:06:16,880
+array is here. So, map takes in a
+
+151
+00:06:14,639 --> 00:06:18,960
+function, applies it to an entire array,
+
+152
+00:06:16,880 --> 00:06:23,840
+and creates a new array that you can
+
+153
+00:06:18,960 --> 00:06:23,840
+store. And that covers our video on dot

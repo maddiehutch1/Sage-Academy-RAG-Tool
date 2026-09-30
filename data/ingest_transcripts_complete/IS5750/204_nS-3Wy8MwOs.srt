@@ -1,0 +1,239 @@
+1
+00:00:00,080 --> 00:00:03,520
+All right. To grab the form on one line,
+
+2
+00:00:02,080 --> 00:00:05,920
+the first thing we need to do is we need
+
+3
+00:00:03,520 --> 00:00:07,600
+to grab this form. And it has a nice ID
+
+4
+00:00:05,920 --> 00:00:11,360
+right here. So, we're going to say let
+
+5
+00:00:07,600 --> 00:00:14,240
+my form equal document doquery selector.
+
+6
+00:00:11,360 --> 00:00:17,039
+And we're going to look for um login
+
+7
+00:00:14,240 --> 00:00:19,680
+form. The the element that has login
+
+8
+00:00:17,039 --> 00:00:21,760
+form as its ID. Once we've done that, we
+
+9
+00:00:19,680 --> 00:00:24,000
+can now turn it into a form data object.
+
+10
+00:00:21,760 --> 00:00:26,720
+The form data object
+
+11
+00:00:24,000 --> 00:00:28,960
+is very similar to a normal object. So
+
+12
+00:00:26,720 --> 00:00:31,599
+you can get attributes
+
+13
+00:00:28,960 --> 00:00:36,000
+based on their keys and their values. So
+
+14
+00:00:31,599 --> 00:00:37,360
+I could say let form data equal new and
+
+15
+00:00:36,000 --> 00:00:38,800
+the keyword new is really important
+
+16
+00:00:37,360 --> 00:00:41,520
+here. And then you're going to use this
+
+17
+00:00:38,800 --> 00:00:43,120
+form data. And you'll know it's the
+
+18
+00:00:41,520 --> 00:00:44,640
+right one because it'll start with a
+
+19
+00:00:43,120 --> 00:00:46,480
+capital F and then start with a capital
+
+20
+00:00:44,640 --> 00:00:47,920
+D. And then you'll put parenthesis. And
+
+21
+00:00:46,480 --> 00:00:51,680
+it says, okay, I need you to give me a
+
+22
+00:00:47,920 --> 00:00:53,760
+form. So we'll access the form. And now
+
+23
+00:00:51,680 --> 00:00:57,120
+we have all of the form data stored
+
+24
+00:00:53,760 --> 00:00:58,960
+here. So um if I console.log that for
+
+25
+00:00:57,120 --> 00:01:01,840
+you
+
+26
+00:00:58,960 --> 00:01:04,640
+um when you submit the form I'll put
+
+27
+00:01:01,840 --> 00:01:07,200
+test test and hit submit you can see it
+
+28
+00:01:04,640 --> 00:01:11,119
+logs out this form data object. And if
+
+29
+00:01:07,200 --> 00:01:15,040
+we open it up it has get attributes. So
+
+30
+00:01:11,119 --> 00:01:19,200
+if we do form data.get username and save
+
+31
+00:01:15,040 --> 00:01:23,119
+it and we type test test and hit submit
+
+32
+00:01:19,200 --> 00:01:26,400
+then we get the word test. If we type
+
+33
+00:01:23,119 --> 00:01:28,799
+username here and hit submit, we get the
+
+34
+00:01:26,400 --> 00:01:31,200
+word username. And so you can use
+
+35
+00:01:28,799 --> 00:01:32,479
+this.get to grab items. And how is it
+
+36
+00:01:31,200 --> 00:01:34,000
+grabbing them? Well, it's grabbing them
+
+37
+00:01:32,479 --> 00:01:36,159
+by the name that you've put on your
+
+38
+00:01:34,000 --> 00:01:39,680
+input field. So if you put a name of
+
+39
+00:01:36,159 --> 00:01:42,799
+password then and then you access it
+
+40
+00:01:39,680 --> 00:01:44,000
+using password form data.get password,
+
+41
+00:01:42,799 --> 00:01:45,439
+then you'll be able to grab that
+
+42
+00:01:44,000 --> 00:01:49,439
+password that we've put. So if we hit
+
+43
+00:01:45,439 --> 00:01:54,159
+submit now um oh if we save it if we
+
+44
+00:01:49,439 --> 00:01:56,799
+type test and password and hit submit
+
+45
+00:01:54,159 --> 00:01:58,560
+you can see that password is logged out.
+
+46
+00:01:56,799 --> 00:02:01,119
+All right well I promised you this on
+
+47
+00:01:58,560 --> 00:02:02,880
+one line. So could this be simplified to
+
+48
+00:02:01,119 --> 00:02:06,560
+one line? And the answer is yes it
+
+49
+00:02:02,880 --> 00:02:12,000
+could. So we could say let form data
+
+50
+00:02:06,560 --> 00:02:13,520
+equal new form data document query
+
+51
+00:02:12,000 --> 00:02:17,680
+selector
+
+52
+00:02:13,520 --> 00:02:20,879
+hashtag login form
+
+53
+00:02:17,680 --> 00:02:24,000
+and then
+
+54
+00:02:20,879 --> 00:02:25,599
+we put a semicolon and now we no longer
+
+55
+00:02:24,000 --> 00:02:27,360
+need the previous two lines of code. So
+
+56
+00:02:25,599 --> 00:02:30,160
+what this does is it gives us a form
+
+57
+00:02:27,360 --> 00:02:32,560
+data object and we can access attributes
+
+58
+00:02:30,160 --> 00:02:33,920
+by using this.get get. And in the next
+
+59
+00:02:32,560 --> 00:02:37,200
+video, I'll show you how we could then
+
+60
+00:02:33,920 --> 00:02:37,200
+use that to make a post request.

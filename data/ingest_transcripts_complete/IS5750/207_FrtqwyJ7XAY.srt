@@ -1,0 +1,235 @@
+1
+00:00:00,080 --> 00:00:03,760
+So, we've been flipping back and forth
+
+2
+00:00:01,760 --> 00:00:06,240
+between internal libraries and external
+
+3
+00:00:03,760 --> 00:00:08,400
+libraries. Let's come back to internal
+
+4
+00:00:06,240 --> 00:00:11,120
+libraries. Um, or the one I'm going to
+
+5
+00:00:08,400 --> 00:00:12,719
+show you is called navigator. So, right
+
+6
+00:00:11,120 --> 00:00:14,880
+now, um, when you click this button,
+
+7
+00:00:12,719 --> 00:00:16,240
+copy text, um, it doesn't do anything.
+
+8
+00:00:14,880 --> 00:00:17,359
+It just calls this copy text function.
+
+9
+00:00:16,240 --> 00:00:20,960
+So, what I'm going to do is I'm going to
+
+10
+00:00:17,359 --> 00:00:23,119
+console.log the navigator object.
+
+11
+00:00:20,960 --> 00:00:26,960
+And if I click copy text, this navigator
+
+12
+00:00:23,119 --> 00:00:29,279
+object pops up. And it says that I am
+
+13
+00:00:26,960 --> 00:00:30,640
+using something from Google Inc. And
+
+14
+00:00:29,279 --> 00:00:32,239
+there's actually a whole bunch of data
+
+15
+00:00:30,640 --> 00:00:34,320
+in here. And I'd really rather you not
+
+16
+00:00:32,239 --> 00:00:36,079
+know that about my computer. So I am not
+
+17
+00:00:34,320 --> 00:00:38,160
+going to open up that data object. But
+
+18
+00:00:36,079 --> 00:00:40,320
+what I am going to show you is that that
+
+19
+00:00:38,160 --> 00:00:42,719
+data object has a lot of values in it.
+
+20
+00:00:40,320 --> 00:00:45,840
+So if we come back over here and we type
+
+21
+00:00:42,719 --> 00:00:47,360
+navigator dot um you can see that
+
+22
+00:00:45,840 --> 00:00:50,559
+there's a whole bunch of information
+
+23
+00:00:47,360 --> 00:00:54,160
+here. So I could say navigator.getcurren
+
+24
+00:00:50,559 --> 00:00:55,680
+position and that would return my
+
+25
+00:00:54,160 --> 00:00:56,960
+current position which I'm definitely
+
+26
+00:00:55,680 --> 00:01:00,079
+not going to run because I really don't
+
+27
+00:00:56,960 --> 00:01:06,240
+want to dox myself. Um, I could say
+
+28
+00:01:00,079 --> 00:01:08,640
+navigator dot um dot clipboard dot write
+
+29
+00:01:06,240 --> 00:01:11,040
+text. What that does is it allows me to
+
+30
+00:01:08,640 --> 00:01:12,880
+write text onto the clipboard. So, for
+
+31
+00:01:11,040 --> 00:01:16,560
+example, if we wanted this copy text
+
+32
+00:01:12,880 --> 00:01:18,880
+button to work, um, if I come here and
+
+33
+00:01:16,560 --> 00:01:20,640
+paste it, you can see that the tag I
+
+34
+00:01:18,880 --> 00:01:23,200
+have copied right now is the script tag
+
+35
+00:01:20,640 --> 00:01:25,920
+for the CDN. But what I'm going to do is
+
+36
+00:01:23,200 --> 00:01:28,080
+I'm going to say go to the navigator,
+
+37
+00:01:25,920 --> 00:01:29,840
+access the clipboard, and write text.
+
+38
+00:01:28,080 --> 00:01:31,920
+And what do I want to write? Well, let's
+
+39
+00:01:29,840 --> 00:01:35,520
+write the value from the text box. So,
+
+40
+00:01:31,920 --> 00:01:38,640
+I'm going to say document let value
+
+41
+00:01:35,520 --> 00:01:40,640
+equal document.query selector and I'm
+
+42
+00:01:38,640 --> 00:01:42,799
+going to grab the input tag and I'm
+
+43
+00:01:40,640 --> 00:01:44,400
+going to get its value.
+
+44
+00:01:42,799 --> 00:01:46,960
+And here in the right text, I'm going to
+
+45
+00:01:44,400 --> 00:01:48,720
+write that value.
+
+46
+00:01:46,960 --> 00:01:51,040
+So, I'm going to save that. Now when I
+
+47
+00:01:48,720 --> 00:01:53,119
+click copy text, when I come down here
+
+48
+00:01:51,040 --> 00:01:54,960
+and click paste, it has the data
+
+49
+00:01:53,119 --> 00:01:58,000
+directly out of this text box. So if I
+
+50
+00:01:54,960 --> 00:02:01,280
+change this to say hello world and then
+
+51
+00:01:58,000 --> 00:02:03,520
+I click copy text and I paste it, you
+
+52
+00:02:01,280 --> 00:02:05,439
+can see it copied hello world. And so
+
+53
+00:02:03,520 --> 00:02:07,360
+now I can programmatically control the
+
+54
+00:02:05,439 --> 00:02:08,640
+clipboard. And there's a whole bunch of
+
+55
+00:02:07,360 --> 00:02:10,879
+things that you can do and they're all
+
+56
+00:02:08,640 --> 00:02:12,879
+built into Navigator. Um, but that's
+
+57
+00:02:10,879 --> 00:02:14,560
+about where we'll stop for now and I'll
+
+58
+00:02:12,879 --> 00:02:17,120
+let you do some more research on that on
+
+59
+00:02:14,560 --> 00:02:17,120
+your own.

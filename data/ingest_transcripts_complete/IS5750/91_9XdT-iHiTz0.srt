@@ -1,0 +1,443 @@
+1
+00:00:00,080 --> 00:00:03,280
+Okay, so this video is going to feel a
+
+2
+00:00:01,520 --> 00:00:04,720
+little weird and definitely just jammed
+
+3
+00:00:03,280 --> 00:00:06,480
+straight into the middle of the course
+
+4
+00:00:04,720 --> 00:00:09,040
+and that's because I was driving home
+
+5
+00:00:06,480 --> 00:00:10,480
+from work and I was like, "Oh no, I
+
+6
+00:00:09,040 --> 00:00:12,240
+forgot to teach them how to do optional
+
+7
+00:00:10,480 --> 00:00:15,839
+parameters." So this is the video on
+
+8
+00:00:12,240 --> 00:00:19,520
+that. So um you may remember there is a
+
+9
+00:00:15,839 --> 00:00:24,880
+function called prompt and you can give
+
+10
+00:00:19,520 --> 00:00:26,880
+it a prompt say what is your name?
+
+11
+00:00:24,880 --> 00:00:28,000
+And then if we save this and we go over
+
+12
+00:00:26,880 --> 00:00:29,760
+to our running code, we get a prompt
+
+13
+00:00:28,000 --> 00:00:32,079
+that says what is your name? Leave that
+
+14
+00:00:29,760 --> 00:00:33,840
+stuff in here and we can come back. But
+
+15
+00:00:32,079 --> 00:00:39,440
+you may also remember that you can put a
+
+16
+00:00:33,840 --> 00:00:42,079
+comma and oh sorry you can put a comma
+
+17
+00:00:39,440 --> 00:00:45,040
+and you can put in a second string here
+
+18
+00:00:42,079 --> 00:00:47,680
+and this will be the default value. So
+
+19
+00:00:45,040 --> 00:00:51,200
+now if we go live
+
+20
+00:00:47,680 --> 00:00:54,399
+we've got an input and it has our prompt
+
+21
+00:00:51,200 --> 00:00:56,879
+here and it has our default value here.
+
+22
+00:00:54,399 --> 00:01:00,000
+So in other words, the way this prompt
+
+23
+00:00:56,879 --> 00:01:01,120
+worked um one it changed based on input
+
+24
+00:01:00,000 --> 00:01:03,520
+which we know how to do that with
+
+25
+00:01:01,120 --> 00:01:04,879
+parameters but two there was optional
+
+26
+00:01:03,520 --> 00:01:07,840
+input that you could give it. You could
+
+27
+00:01:04,879 --> 00:01:11,200
+give it optional extra parameters.
+
+28
+00:01:07,840 --> 00:01:12,560
+Well I am here to show you how to do
+
+29
+00:01:11,200 --> 00:01:14,799
+that. So here I have this function
+
+30
+00:01:12,560 --> 00:01:16,880
+called get random number and it takes in
+
+31
+00:01:14,799 --> 00:01:18,960
+a minimum number and a maximum number
+
+32
+00:01:16,880 --> 00:01:20,479
+and then it does math necessary to
+
+33
+00:01:18,960 --> 00:01:22,720
+generate a random number between the
+
+34
+00:01:20,479 --> 00:01:24,640
+minimum and the maximum inclusive. So
+
+35
+00:01:22,720 --> 00:01:26,080
+you can put in 1 and 10 and it'll
+
+36
+00:01:24,640 --> 00:01:29,600
+generate a random number that could be
+
+37
+00:01:26,080 --> 00:01:31,520
+one and anywhere between 1 and 10. And
+
+38
+00:01:29,600 --> 00:01:34,159
+I've used math.f floor. So it will
+
+39
+00:01:31,520 --> 00:01:39,040
+always be an integer.
+
+40
+00:01:34,159 --> 00:01:41,920
+So I could say um alert get random
+
+41
+00:01:39,040 --> 00:01:44,000
+number. Uh I want it to be between 20
+
+42
+00:01:41,920 --> 00:01:46,000
+and 25.
+
+43
+00:01:44,000 --> 00:01:48,799
+And if I save that and I come over here
+
+44
+00:01:46,000 --> 00:01:52,079
+to my code, I get 22. If I reload, I get
+
+45
+00:01:48,799 --> 00:01:53,520
+21. Reload, get 25. Reload, get 22. and
+
+46
+00:01:52,079 --> 00:01:55,520
+it's consistently generating random
+
+47
+00:01:53,520 --> 00:01:57,520
+numbers between that range. Well, that's
+
+48
+00:01:55,520 --> 00:02:00,159
+really great, but wouldn't it be nice if
+
+49
+00:01:57,520 --> 00:02:02,399
+I could just call get random number by
+
+50
+00:02:00,159 --> 00:02:03,600
+saying alert get random number and just
+
+51
+00:02:02,399 --> 00:02:05,200
+putting in the top of the range because
+
+52
+00:02:03,600 --> 00:02:07,840
+maybe I just want a number between zero
+
+53
+00:02:05,200 --> 00:02:09,360
+and 10. And that's probably a pretty
+
+54
+00:02:07,840 --> 00:02:10,720
+frequent occurrence if you think about
+
+55
+00:02:09,360 --> 00:02:12,640
+how you would use this function. If
+
+56
+00:02:10,720 --> 00:02:14,800
+computers start counting at zero and
+
+57
+00:02:12,640 --> 00:02:16,720
+you're interacting with anything that's
+
+58
+00:02:14,800 --> 00:02:18,640
+computerenerated, chances are you want
+
+59
+00:02:16,720 --> 00:02:20,959
+to include zero in your range. So
+
+60
+00:02:18,640 --> 00:02:22,959
+chances are you want to start at zero
+
+61
+00:02:20,959 --> 00:02:24,480
+and you don't need to tell it both. It's
+
+62
+00:02:22,959 --> 00:02:25,920
+nice that it's flexible enough to take
+
+63
+00:02:24,480 --> 00:02:27,840
+both, but it'd be nice if you didn't
+
+64
+00:02:25,920 --> 00:02:29,280
+have to give it a minimum number. Well,
+
+65
+00:02:27,840 --> 00:02:31,680
+that is what optional parameters are
+
+66
+00:02:29,280 --> 00:02:33,920
+for. So if you come here to get random
+
+67
+00:02:31,680 --> 00:02:35,920
+number, you can set a default value.
+
+68
+00:02:33,920 --> 00:02:39,040
+There are some rules with this though.
+
+69
+00:02:35,920 --> 00:02:41,840
+Any optional parameters must appear
+
+70
+00:02:39,040 --> 00:02:44,560
+after the required parameters. So for
+
+71
+00:02:41,840 --> 00:02:46,400
+example, if we are requiring a maximum
+
+72
+00:02:44,560 --> 00:02:47,920
+number, then we need to change the order
+
+73
+00:02:46,400 --> 00:02:49,840
+of these parameters. So we'd need to
+
+74
+00:02:47,920 --> 00:02:51,920
+take a maximum number and then
+
+75
+00:02:49,840 --> 00:02:53,599
+optionally we'd need to take a minimum
+
+76
+00:02:51,920 --> 00:02:56,080
+number. And then to set it to have a
+
+77
+00:02:53,599 --> 00:02:59,280
+default value, we'll set it to zero.
+
+78
+00:02:56,080 --> 00:03:00,800
+Okay. So when I call this,
+
+79
+00:02:59,280 --> 00:03:02,720
+I'm going to show you both of these and
+
+80
+00:03:00,800 --> 00:03:05,760
+we're going to go use the debugger.
+
+81
+00:03:02,720 --> 00:03:08,560
+Okay. So we got 24 and 10, but let's
+
+82
+00:03:05,760 --> 00:03:11,200
+come over here to sources and let's put
+
+83
+00:03:08,560 --> 00:03:13,040
+a break point on line 16 and reload the
+
+84
+00:03:11,200 --> 00:03:14,480
+page. Okay, we're about to call get
+
+85
+00:03:13,040 --> 00:03:17,519
+random number and we're going to pass in
+
+86
+00:03:14,480 --> 00:03:21,840
+20 and 25. If we hit next, if we hover
+
+87
+00:03:17,519 --> 00:03:23,840
+over max, it is 20 and minimum is 25.
+
+88
+00:03:21,840 --> 00:03:26,159
+Lovely. I broke this function because I
+
+89
+00:03:23,840 --> 00:03:28,640
+called this one in the wrong order. Um,
+
+90
+00:03:26,159 --> 00:03:30,480
+but we'll hit next and it generates a
+
+91
+00:03:28,640 --> 00:03:34,879
+random number and alerts it and we get
+
+92
+00:03:30,480 --> 00:03:38,799
+24. Then um, we call get random number
+
+93
+00:03:34,879 --> 00:03:40,400
+with 10. We hit next. The max is 10. The
+
+94
+00:03:38,799 --> 00:03:43,519
+minimum is zero. Because we didn't give
+
+95
+00:03:40,400 --> 00:03:46,720
+it a minimum, it set it to zero. So we
+
+96
+00:03:43,519 --> 00:03:48,959
+hit next. It generates those numbers and
+
+97
+00:03:46,720 --> 00:03:51,760
+then it alerts nine which is in fact
+
+98
+00:03:48,959 --> 00:03:54,080
+between 0 and 10. Coming back over, if
+
+99
+00:03:51,760 --> 00:03:55,920
+you want to make something optional, you
+
+100
+00:03:54,080 --> 00:03:57,519
+put it at the end and you assign it a
+
+101
+00:03:55,920 --> 00:03:59,200
+default value, meaning if they don't
+
+102
+00:03:57,519 --> 00:04:00,959
+give you anything, that's the value you
+
+103
+00:03:59,200 --> 00:04:04,560
+want to assign. I'm going to fix this
+
+104
+00:04:00,959 --> 00:04:07,040
+function call real quick so that 25 is
+
+105
+00:04:04,560 --> 00:04:09,439
+the max and 20 is the minimum. And so
+
+106
+00:04:07,040 --> 00:04:11,439
+now 25 would go into max. Because we
+
+107
+00:04:09,439 --> 00:04:12,959
+gave it a minimum, it'll set it to 20 on
+
+108
+00:04:11,439 --> 00:04:15,040
+the next one. because we don't give it a
+
+109
+00:04:12,959 --> 00:04:16,560
+minimum, it sets it to zero. And that's
+
+110
+00:04:15,040 --> 00:04:20,320
+how optional parameters work. And it can
+
+111
+00:04:16,560 --> 00:04:20,320
+make your functions a lot more flexible.

@@ -1,0 +1,479 @@
+1
+00:00:00,080 --> 00:00:04,880
+All right. So, we are back here on our
+
+2
+00:00:02,960 --> 00:00:06,960
+index.html page that we've been working
+
+3
+00:00:04,880 --> 00:00:10,080
+on. So, what I'm going to do is I'm
+
+4
+00:00:06,960 --> 00:00:11,759
+going to delete all of our variables
+
+5
+00:00:10,080 --> 00:00:14,080
+that we created here and I'm just going
+
+6
+00:00:11,759 --> 00:00:15,360
+to show you well, we'll maybe leave our
+
+7
+00:00:14,080 --> 00:00:16,960
+first name. So, I'm just going to leave
+
+8
+00:00:15,360 --> 00:00:19,039
+the first name variable and I'm going to
+
+9
+00:00:16,960 --> 00:00:20,720
+show you the first type of output. So,
+
+10
+00:00:19,039 --> 00:00:22,240
+this output you've probably seen on a
+
+11
+00:00:20,720 --> 00:00:24,720
+website before. It shows a little popup
+
+12
+00:00:22,240 --> 00:00:26,000
+at the top. Um, and so we're going to
+
+13
+00:00:24,720 --> 00:00:27,760
+use a little bit of built-in
+
+14
+00:00:26,000 --> 00:00:30,240
+functionality with JavaScript and we're
+
+15
+00:00:27,760 --> 00:00:32,160
+going to display that message. So, the
+
+16
+00:00:30,240 --> 00:00:33,680
+way you display a message in JavaScript
+
+17
+00:00:32,160 --> 00:00:37,760
+that you want to pop up on someone's
+
+18
+00:00:33,680 --> 00:00:39,920
+screen is you use the keyword alert. And
+
+19
+00:00:37,760 --> 00:00:42,079
+you should see it will come up with this
+
+20
+00:00:39,920 --> 00:00:45,120
+little box. If it's not highlighted, the
+
+21
+00:00:42,079 --> 00:00:47,600
+box will be purple. Um, so we'll say
+
+22
+00:00:45,120 --> 00:00:49,440
+alert. And then I'm going to put an
+
+23
+00:00:47,600 --> 00:00:51,440
+opening parenthesy. When I do that,
+
+24
+00:00:49,440 --> 00:00:53,440
+Visual Studio Code automatically closes
+
+25
+00:00:51,440 --> 00:00:56,000
+it. And it gives me this little message
+
+26
+00:00:53,440 --> 00:00:58,399
+right here. And it says alert. And then
+
+27
+00:00:56,000 --> 00:00:59,840
+in between the parenthesis, it's has
+
+28
+00:00:58,399 --> 00:01:01,600
+something that says message with a
+
+29
+00:00:59,840 --> 00:01:04,559
+question mark, a colon, and then the
+
+30
+00:01:01,600 --> 00:01:06,640
+word any. So what that's telling us is
+
+31
+00:01:04,559 --> 00:01:08,080
+that in between these parenthesis, I can
+
+32
+00:01:06,640 --> 00:01:10,000
+put a message. This is the message
+
+33
+00:01:08,080 --> 00:01:12,000
+that's going to display on the screen.
+
+34
+00:01:10,000 --> 00:01:14,720
+What type of variable can I put here?
+
+35
+00:01:12,000 --> 00:01:16,159
+Well, it can be anything. So um I could
+
+36
+00:01:14,720 --> 00:01:17,759
+put in a string. I could put in an
+
+37
+00:01:16,159 --> 00:01:20,000
+integer. I could put in a boolean. It
+
+38
+00:01:17,759 --> 00:01:22,240
+doesn't really care, but it will take in
+
+39
+00:01:20,000 --> 00:01:24,400
+a message. So let's put in a message
+
+40
+00:01:22,240 --> 00:01:26,320
+here. So, I could say this is a
+
+41
+00:01:24,400 --> 00:01:27,600
+programming course. We are required to
+
+42
+00:01:26,320 --> 00:01:30,080
+start with hello world. So, we're going
+
+43
+00:01:27,600 --> 00:01:32,799
+to say hello world. And then I'm going
+
+44
+00:01:30,080 --> 00:01:34,960
+to save that.
+
+45
+00:01:32,799 --> 00:01:37,280
+Um, if we open up our website by
+
+46
+00:01:34,960 --> 00:01:38,720
+clicking the go live button or just tab
+
+47
+00:01:37,280 --> 00:01:40,960
+over, you can see that we now have this
+
+48
+00:01:38,720 --> 00:01:42,320
+pop-up in the center of our screen or if
+
+49
+00:01:40,960 --> 00:01:44,240
+you're using a different web browser
+
+50
+00:01:42,320 --> 00:01:46,320
+than Safari, it might be somewhere else,
+
+51
+00:01:44,240 --> 00:01:49,119
+but you'll get a popup that says hello
+
+52
+00:01:46,320 --> 00:01:51,439
+world. Um, I can close it. And if we
+
+53
+00:01:49,119 --> 00:01:53,920
+reload the page, we get our pop-up again
+
+54
+00:01:51,439 --> 00:01:56,079
+that says hello world. And this happens
+
+55
+00:01:53,920 --> 00:01:58,479
+because we've written an alert function
+
+56
+00:01:56,079 --> 00:02:00,159
+that says show a message on this page.
+
+57
+00:01:58,479 --> 00:02:01,680
+The message we want to show is hello
+
+58
+00:02:00,159 --> 00:02:05,439
+world.
+
+59
+00:02:01,680 --> 00:02:08,080
+This alert function takes in input. So
+
+60
+00:02:05,439 --> 00:02:10,319
+from the keyboard from the user, so
+
+61
+00:02:08,080 --> 00:02:12,080
+instead of hard coding in the text hello
+
+62
+00:02:10,319 --> 00:02:15,520
+world, we could pass in the variable
+
+63
+00:02:12,080 --> 00:02:17,760
+name first name. And now if we save it
+
+64
+00:02:15,520 --> 00:02:20,239
+and we come back to our page, now the
+
+65
+00:02:17,760 --> 00:02:22,239
+alert box says Toa. And then when we hit
+
+66
+00:02:20,239 --> 00:02:24,400
+close, we come to our web page. So
+
+67
+00:02:22,239 --> 00:02:26,400
+that's how you do an alert box. Alert
+
+68
+00:02:24,400 --> 00:02:28,800
+boxes are great for showing messages to
+
+69
+00:02:26,400 --> 00:02:30,400
+users. Sometimes you want to show a
+
+70
+00:02:28,800 --> 00:02:32,640
+message that's not designed for the
+
+71
+00:02:30,400 --> 00:02:34,800
+users to see, but maybe if they're
+
+72
+00:02:32,640 --> 00:02:36,000
+digging into the problem on their on the
+
+73
+00:02:34,800 --> 00:02:37,440
+website, maybe it's not loading and
+
+74
+00:02:36,000 --> 00:02:39,599
+they're a little techsavvy, they might
+
+75
+00:02:37,440 --> 00:02:41,280
+open the developer tools. So maybe you
+
+76
+00:02:39,599 --> 00:02:43,680
+want to send a message that's just for
+
+77
+00:02:41,280 --> 00:02:46,000
+developers. So the way that we do that
+
+78
+00:02:43,680 --> 00:02:47,040
+is instead of using alert, we'll use a
+
+79
+00:02:46,000 --> 00:02:49,120
+different built-in piece of
+
+80
+00:02:47,040 --> 00:02:51,120
+functionality in JavaScript. This one is
+
+81
+00:02:49,120 --> 00:02:54,239
+called console.log. So you'll type the
+
+82
+00:02:51,120 --> 00:02:56,000
+word console and you'll hit tab if
+
+83
+00:02:54,239 --> 00:02:58,319
+you're autocompleting and then you'll
+
+84
+00:02:56,000 --> 00:03:00,239
+type dot and then this is all of the
+
+85
+00:02:58,319 --> 00:03:01,760
+things that you could do with a console.
+
+86
+00:03:00,239 --> 00:03:03,599
+But in our case, we're just going to use
+
+87
+00:03:01,760 --> 00:03:06,080
+log. We're gonna put an opening
+
+88
+00:03:03,599 --> 00:03:11,760
+parenthesy and it says it can take in a
+
+89
+00:03:06,080 --> 00:03:14,480
+data just a piece of data and it will
+
+90
+00:03:11,760 --> 00:03:17,120
+and that data can be any type. So
+
+91
+00:03:14,480 --> 00:03:19,599
+similar to the alert it can take in any
+
+92
+00:03:17,120 --> 00:03:22,159
+piece of data and it can be any type. So
+
+93
+00:03:19,599 --> 00:03:24,480
+it can be a string, an integer, float, a
+
+94
+00:03:22,159 --> 00:03:27,599
+boolean, you name it, you can put it in
+
+95
+00:03:24,480 --> 00:03:30,480
+console.log. So, I'm going to once again
+
+96
+00:03:27,599 --> 00:03:32,319
+type hello world here and I'll save it
+
+97
+00:03:30,480 --> 00:03:34,400
+by hitting command S or if you're on a
+
+98
+00:03:32,319 --> 00:03:36,720
+Windows, hit control S. You'll notice my
+
+99
+00:03:34,400 --> 00:03:39,440
+dot up here at the top vanished. If we
+
+100
+00:03:36,720 --> 00:03:41,120
+go back over to our web page, the alert
+
+101
+00:03:39,440 --> 00:03:43,280
+box didn't show up because we got rid of
+
+102
+00:03:41,120 --> 00:03:46,159
+that. But if I click on the console tab
+
+103
+00:03:43,280 --> 00:03:49,200
+here, um you can see down at the bottom
+
+104
+00:03:46,159 --> 00:03:50,640
+it says hello world. So, if you've been
+
+105
+00:03:49,200 --> 00:03:53,120
+following along and you enabled your
+
+106
+00:03:50,640 --> 00:03:54,319
+developer tools or if you were on a
+
+107
+00:03:53,120 --> 00:03:56,799
+Windows, if you've opened up your
+
+108
+00:03:54,319 --> 00:03:59,280
+developer tools, you can see this hello
+
+109
+00:03:56,799 --> 00:04:00,799
+world message here. But the average user
+
+110
+00:03:59,280 --> 00:04:02,799
+who doesn't have their developer tools
+
+111
+00:04:00,799 --> 00:04:04,720
+open won't see that message at all. So,
+
+112
+00:04:02,799 --> 00:04:06,239
+that's the benefit of console.log. It's
+
+113
+00:04:04,720 --> 00:04:07,599
+great for when you're trying to debug
+
+114
+00:04:06,239 --> 00:04:09,519
+something on your site. You can show
+
+115
+00:04:07,599 --> 00:04:12,239
+test messages there and then take them
+
+116
+00:04:09,519 --> 00:04:13,920
+out before you show it to the user. Um,
+
+117
+00:04:12,239 --> 00:04:15,760
+but that should cover our two outputs.
+
+118
+00:04:13,920 --> 00:04:18,000
+So, the first output is alert, second
+
+119
+00:04:15,760 --> 00:04:20,880
+output is console.log, log. And that
+
+120
+00:04:18,000 --> 00:04:20,880
+will wrap up this

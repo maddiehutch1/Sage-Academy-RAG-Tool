@@ -1,0 +1,1019 @@
+1
+00:00:00,240 --> 00:00:06,319
+So I told you that this assignment was
+
+2
+00:00:02,879 --> 00:00:07,440
+intentionally repetitive and one of the
+
+3
+00:00:06,319 --> 00:00:08,880
+reasons this was intentionally
+
+4
+00:00:07,440 --> 00:00:10,960
+repetitive was to show you the benefit
+
+5
+00:00:08,880 --> 00:00:12,400
+of a for loop. So let's look through
+
+6
+00:00:10,960 --> 00:00:15,440
+this code that we wrote for that
+
+7
+00:00:12,400 --> 00:00:18,160
+selection project. So we got their
+
+8
+00:00:15,440 --> 00:00:19,600
+letter grades.
+
+9
+00:00:18,160 --> 00:00:21,439
+Then we used this if statement to
+
+10
+00:00:19,600 --> 00:00:23,600
+convert one letter grade, two letter
+
+11
+00:00:21,439 --> 00:00:26,880
+grades, three letter grades, four letter
+
+12
+00:00:23,600 --> 00:00:29,599
+grades. Then once we were done, we added
+
+13
+00:00:26,880 --> 00:00:31,760
+them all up, divided them by four. Then
+
+14
+00:00:29,599 --> 00:00:36,480
+we used another if statement for their
+
+15
+00:00:31,760 --> 00:00:39,280
+GPA. And well, you can see already here
+
+16
+00:00:36,480 --> 00:00:42,399
+we're at 223 lines of code. Yes, some of
+
+17
+00:00:39,280 --> 00:00:45,440
+that is comments, but a lot of that is
+
+18
+00:00:42,399 --> 00:00:48,320
+code. And we could definitely simplify
+
+19
+00:00:45,440 --> 00:00:50,640
+this. Anytime that you find yourself
+
+20
+00:00:48,320 --> 00:00:53,520
+copying and pasting code, I want you to
+
+21
+00:00:50,640 --> 00:00:56,399
+ask yourself, could I do this as a loop?
+
+22
+00:00:53,520 --> 00:00:58,559
+Um, I'll come back to this question
+
+23
+00:00:56,399 --> 00:01:01,120
+again because there's two ways to handle
+
+24
+00:00:58,559 --> 00:01:03,199
+repetitive code that we learn in this
+
+25
+00:01:01,120 --> 00:01:04,479
+course. But the first one is loops. So
+
+26
+00:01:03,199 --> 00:01:06,000
+if you're doing something over and over
+
+27
+00:01:04,479 --> 00:01:10,960
+again, ask yourself, could this be a
+
+28
+00:01:06,000 --> 00:01:13,119
+loop? And in this case, this can be. So
+
+29
+00:01:10,960 --> 00:01:17,360
+we said, what is your letter grade for
+
+30
+00:01:13,119 --> 00:01:19,840
+class 1, 2, 3, and four? This is
+
+31
+00:01:17,360 --> 00:01:22,080
+repeated. We created four variables
+
+32
+00:01:19,840 --> 00:01:24,400
+here. That is repeated lines of code.
+
+33
+00:01:22,080 --> 00:01:26,400
+This if statement was repeated multiple
+
+34
+00:01:24,400 --> 00:01:28,320
+times and in fact each of them was
+
+35
+00:01:26,400 --> 00:01:30,400
+repeated four times. But what we've
+
+36
+00:01:28,320 --> 00:01:33,600
+learned is that we can have some code
+
+37
+00:01:30,400 --> 00:01:36,880
+that repeats multiple times and that
+
+38
+00:01:33,600 --> 00:01:39,119
+changes slightly. So let's do that. So
+
+39
+00:01:36,880 --> 00:01:40,720
+let's create our for loop. So four,
+
+40
+00:01:39,119 --> 00:01:42,240
+where do we want to start counting?
+
+41
+00:01:40,720 --> 00:01:44,400
+Well, in the last video I started
+
+42
+00:01:42,240 --> 00:01:46,399
+counting at one, but in general
+
+43
+00:01:44,400 --> 00:01:48,000
+computers start counting at zero. So
+
+44
+00:01:46,399 --> 00:01:49,680
+generally you want to start your
+
+45
+00:01:48,000 --> 00:01:54,240
+counters at zero. So I'll say let
+
+46
+00:01:49,680 --> 00:01:57,920
+counter equal zero semicolon counter is
+
+47
+00:01:54,240 --> 00:02:00,960
+less than four because it'll do 0 1 2
+
+48
+00:01:57,920 --> 00:02:04,640
+and 3 and that is four times and so the
+
+49
+00:02:00,960 --> 00:02:06,479
+loop will run four times. Um if we said
+
+50
+00:02:04,640 --> 00:02:09,360
+it's less than or equal to four then it
+
+51
+00:02:06,479 --> 00:02:11,680
+would do 0 1 2 3 4 and that's actually
+
+52
+00:02:09,360 --> 00:02:16,640
+five times. So we want it to run from
+
+53
+00:02:11,680 --> 00:02:18,160
+zero to almost four and we want it to go
+
+54
+00:02:16,640 --> 00:02:21,440
+up
+
+55
+00:02:18,160 --> 00:02:25,840
+by one each time. This will make it so
+
+56
+00:02:21,440 --> 00:02:29,599
+that the loop will run four times.
+
+57
+00:02:25,840 --> 00:02:32,000
+Well, one thing we want to do
+
+58
+00:02:29,599 --> 00:02:34,560
+is we want to take we want to run
+
+59
+00:02:32,000 --> 00:02:35,920
+multiple lines of code because we've got
+
+60
+00:02:34,560 --> 00:02:37,920
+those lines of code and this if
+
+61
+00:02:35,920 --> 00:02:39,760
+statement is definitely multiple lines
+
+62
+00:02:37,920 --> 00:02:41,920
+of code. So, we're going to use the
+
+63
+00:02:39,760 --> 00:02:45,920
+curly braces. And so, now whatever we
+
+64
+00:02:41,920 --> 00:02:47,519
+put in here will run four times.
+
+65
+00:02:45,920 --> 00:02:48,879
+I'm going to take this and I'm going to
+
+66
+00:02:47,519 --> 00:02:51,120
+hold the option or if you're on a
+
+67
+00:02:48,879 --> 00:02:53,519
+Windows, you can hold alt and hit the up
+
+68
+00:02:51,120 --> 00:02:55,840
+arrow to bring it into the for loop.
+
+69
+00:02:53,519 --> 00:02:58,720
+What this would do is it would take a
+
+70
+00:02:55,840 --> 00:03:01,120
+letter grade and it would ask the user
+
+71
+00:02:58,720 --> 00:03:03,840
+for a letter grade. And so, we'd say
+
+72
+00:03:01,120 --> 00:03:06,879
+letter grade one equals prompt, what was
+
+73
+00:03:03,840 --> 00:03:08,959
+your letter grade for class one? So
+
+74
+00:03:06,879 --> 00:03:11,519
+there's a small problem but this this is
+
+75
+00:03:08,959 --> 00:03:13,280
+hardcoded but we want it to adjust. So
+
+76
+00:03:11,519 --> 00:03:15,120
+the first time we ask we want it to be
+
+77
+00:03:13,280 --> 00:03:16,720
+one then we want it to be two then we
+
+78
+00:03:15,120 --> 00:03:19,440
+want it to be three then we want it to
+
+79
+00:03:16,720 --> 00:03:20,560
+be four. Well what we could do is we
+
+80
+00:03:19,440 --> 00:03:24,800
+could take advantage of this counter
+
+81
+00:03:20,560 --> 00:03:27,599
+which is already going up four times. So
+
+82
+00:03:24,800 --> 00:03:31,040
+um we could say let letter grade one
+
+83
+00:03:27,599 --> 00:03:33,040
+equal prompt and then we'll use back
+
+84
+00:03:31,040 --> 00:03:35,680
+tick. You could use concatenation. I
+
+85
+00:03:33,040 --> 00:03:37,760
+prefer formatted strings. So I'm going
+
+86
+00:03:35,680 --> 00:03:40,560
+to put another back tick here. And where
+
+87
+00:03:37,760 --> 00:03:44,799
+we put one, we'll put dollar sign curly
+
+88
+00:03:40,560 --> 00:03:47,120
+brace. And now we can put our counter.
+
+89
+00:03:44,799 --> 00:03:50,120
+So just going to highlight everything
+
+90
+00:03:47,120 --> 00:03:50,120
+else
+
+91
+00:03:51,120 --> 00:03:56,480
+and comment it out
+
+92
+00:03:54,239 --> 00:04:00,640
+by hitting control or command slash. And
+
+93
+00:03:56,480 --> 00:04:02,959
+we'll save this. Now if we go live,
+
+94
+00:04:00,640 --> 00:04:04,959
+we'll see what was your class grade for
+
+95
+00:04:02,959 --> 00:04:10,319
+class zero.
+
+96
+00:04:04,959 --> 00:04:12,400
+A a A. So you notice that did zero
+
+97
+00:04:10,319 --> 00:04:14,319
+through three, which is what we expected
+
+98
+00:04:12,400 --> 00:04:15,760
+because we put our counter at zero. One
+
+99
+00:04:14,319 --> 00:04:19,919
+way you can handle this is you can say
+
+100
+00:04:15,760 --> 00:04:21,519
+counter + 1. The reason this works is
+
+101
+00:04:19,919 --> 00:04:23,840
+we're not storing this anywhere. We
+
+102
+00:04:21,519 --> 00:04:25,840
+didn't say counter equals counter + one.
+
+103
+00:04:23,840 --> 00:04:27,680
+We just said counter + one. So we're
+
+104
+00:04:25,840 --> 00:04:30,479
+saying we're going to take whatever
+
+105
+00:04:27,680 --> 00:04:32,639
+counter happens to be and display
+
+106
+00:04:30,479 --> 00:04:38,560
+whatever it is plus one. So now this
+
+107
+00:04:32,639 --> 00:04:40,479
+will display 1 2 3 and four. Um now our
+
+108
+00:04:38,560 --> 00:04:42,479
+um variable name doesn't make a whole
+
+109
+00:04:40,479 --> 00:04:44,240
+lot of sense because this is no longer
+
+110
+00:04:42,479 --> 00:04:46,320
+just storing letter grade 1. The first
+
+111
+00:04:44,240 --> 00:04:48,240
+time this loop goes through it's storing
+
+112
+00:04:46,320 --> 00:04:50,240
+letter grade 1, but the next time it's
+
+113
+00:04:48,240 --> 00:04:52,639
+storing letter grade 2. So maybe it'd be
+
+114
+00:04:50,240 --> 00:04:54,400
+better to just call this variable letter
+
+115
+00:04:52,639 --> 00:04:58,320
+grade.
+
+116
+00:04:54,400 --> 00:05:02,400
+Well, once we did that, we gathered four
+
+117
+00:04:58,320 --> 00:05:05,440
+inputs and then we stored um and then we
+
+118
+00:05:02,400 --> 00:05:07,360
+set GPA to be zero. And maybe we'll do
+
+119
+00:05:05,440 --> 00:05:10,320
+that again. So, let's grab this line and
+
+120
+00:05:07,360 --> 00:05:12,720
+hold option or alt and hit the up arrow.
+
+121
+00:05:10,320 --> 00:05:14,800
+Oh, the up arrow, not the down arrow to
+
+122
+00:05:12,720 --> 00:05:19,039
+bring it up into your code. And we'll
+
+123
+00:05:14,800 --> 00:05:21,280
+say let GPA equal zero.
+
+124
+00:05:19,039 --> 00:05:22,720
+After we did that, we ran a conversion.
+
+125
+00:05:21,280 --> 00:05:24,240
+So, I'm going to grab this if statement
+
+126
+00:05:22,720 --> 00:05:26,479
+here.
+
+127
+00:05:24,240 --> 00:05:30,880
+Sorry,
+
+128
+00:05:26,479 --> 00:05:32,160
+banged the wrong key. Grab Oh my gosh.
+
+129
+00:05:30,880 --> 00:05:34,400
+We're going to grab this if statement
+
+130
+00:05:32,160 --> 00:05:37,280
+here
+
+131
+00:05:34,400 --> 00:05:41,000
+and then hold the option or alt key and
+
+132
+00:05:37,280 --> 00:05:41,000
+we're going to move it up
+
+133
+00:05:43,520 --> 00:05:47,400
+into our loop.
+
+134
+00:05:47,520 --> 00:05:51,680
+Okay, it is now in our loop and we're
+
+135
+00:05:49,919 --> 00:05:53,199
+going to uncomment it by hitting command
+
+136
+00:05:51,680 --> 00:05:55,199
+slash
+
+137
+00:05:53,199 --> 00:05:58,560
+Okay,
+
+138
+00:05:55,199 --> 00:06:00,479
+so we said if their letter grade is a um
+
+139
+00:05:58,560 --> 00:06:01,840
+we said letter grade one and in all of
+
+140
+00:06:00,479 --> 00:06:03,280
+these cases we don't want the one
+
+141
+00:06:01,840 --> 00:06:05,919
+because we've called this letter grade.
+
+142
+00:06:03,280 --> 00:06:08,000
+So we'll get rid of letter grade one and
+
+143
+00:06:05,919 --> 00:06:10,479
+if you hold the option key or the alt
+
+144
+00:06:08,000 --> 00:06:12,560
+key and click in multiple places you can
+
+145
+00:06:10,479 --> 00:06:14,880
+put your cursor in multiple places and
+
+146
+00:06:12,560 --> 00:06:18,160
+we'll delete that.
+
+147
+00:06:14,880 --> 00:06:20,479
+So if we save this, we are now saying
+
+148
+00:06:18,160 --> 00:06:24,319
+get a letter grade.
+
+149
+00:06:20,479 --> 00:06:29,000
+Um create a GPA for it and then set that
+
+150
+00:06:24,319 --> 00:06:29,000
+GPA based on what the letter grade is.
+
+151
+00:06:29,520 --> 00:06:36,560
+So at the bottom we could alert GPA.
+
+152
+00:06:33,600 --> 00:06:37,840
+So now if we go back to
+
+153
+00:06:36,560 --> 00:06:40,080
+here, it says, "What is your letter
+
+154
+00:06:37,840 --> 00:06:41,360
+grade for class one?" If we enter an A,
+
+155
+00:06:40,080 --> 00:06:42,800
+uh it says, "What is your letter grade
+
+156
+00:06:41,360 --> 00:06:44,720
+for class 2?" And actually I'm going to
+
+157
+00:06:42,800 --> 00:06:46,000
+hit cancel, cancel, cancel. And I'm
+
+158
+00:06:44,720 --> 00:06:47,360
+going to reload this because I don't
+
+159
+00:06:46,000 --> 00:06:48,639
+think it reloaded after the last time.
+
+160
+00:06:47,360 --> 00:06:50,639
+So, what is your letter grade for class
+
+161
+00:06:48,639 --> 00:06:52,560
+one? A. And then it tells us that is a
+
+162
+00:06:50,639 --> 00:06:54,960
+four. What is your letter grade for
+
+163
+00:06:52,560 --> 00:06:57,360
+class 2? B minus. It tells us that's a
+
+164
+00:06:54,960 --> 00:06:59,840
+2.7. So, it looks like our converter is
+
+165
+00:06:57,360 --> 00:07:02,720
+working and it's able to take in all
+
+166
+00:06:59,840 --> 00:07:06,160
+four letter grades.
+
+167
+00:07:02,720 --> 00:07:09,440
+So, let's come back over here. Um, and
+
+168
+00:07:06,160 --> 00:07:12,240
+we don't need this alert anymore.
+
+169
+00:07:09,440 --> 00:07:14,319
+we're able to get a prompt, convert them
+
+170
+00:07:12,240 --> 00:07:16,319
+all to letter grades. But what we
+
+171
+00:07:14,319 --> 00:07:19,199
+probably want to be doing is, if you
+
+172
+00:07:16,319 --> 00:07:21,680
+notice at the bottom of all of this,
+
+173
+00:07:19,199 --> 00:07:23,840
+after we did all of the letter grades,
+
+174
+00:07:21,680 --> 00:07:25,759
+um, we had to calculate the total GPA,
+
+175
+00:07:23,840 --> 00:07:29,120
+which was summing up each of the letter
+
+176
+00:07:25,759 --> 00:07:34,080
+grades and then dividing it by four. We
+
+177
+00:07:29,120 --> 00:07:36,240
+could do this step by step. And so
+
+178
+00:07:34,080 --> 00:07:38,960
+what we could do is we could create a
+
+179
+00:07:36,240 --> 00:07:44,479
+running variable that stores the total
+
+180
+00:07:38,960 --> 00:07:46,560
+GPA. So total GPA equals zero.
+
+181
+00:07:44,479 --> 00:07:48,960
+Then
+
+182
+00:07:46,560 --> 00:07:52,400
+we'd gather a GPA and then we'd add it
+
+183
+00:07:48,960 --> 00:07:56,400
+to that GPA. So we'd say total GPA
+
+184
+00:07:52,400 --> 00:07:59,520
+equals total GPA plus whatever the GPA
+
+185
+00:07:56,400 --> 00:08:03,599
+for this letter grade is. or if we want
+
+186
+00:07:59,520 --> 00:08:05,599
+to shorten this plus equals GPA
+
+187
+00:08:03,599 --> 00:08:08,000
+and that so what that does is it's the
+
+188
+00:08:05,599 --> 00:08:11,479
+same as summing up all of the GPA. So
+
+189
+00:08:08,000 --> 00:08:11,479
+instead of taking
+
+190
+00:08:11,919 --> 00:08:20,160
+um instead of taking GPA 1 and adding
+
+191
+00:08:16,400 --> 00:08:21,919
+GPA 2 and then GPA 3 and then GPA 4, we
+
+192
+00:08:20,160 --> 00:08:23,759
+just said
+
+193
+00:08:21,919 --> 00:08:26,560
+take the GPA and set it to whatever the
+
+194
+00:08:23,759 --> 00:08:28,160
+first one is and then add on the second,
+
+195
+00:08:26,560 --> 00:08:30,960
+then add on the third, and then add on
+
+196
+00:08:28,160 --> 00:08:32,640
+the fourth as you go through the loop.
+
+197
+00:08:30,960 --> 00:08:35,279
+And then you'll notice at the end we do
+
+198
+00:08:32,640 --> 00:08:38,560
+need to divide by four. So we're going
+
+199
+00:08:35,279 --> 00:08:40,479
+to come after the loop. So
+
+200
+00:08:38,560 --> 00:08:42,240
+the for loop is the yellow curly brace.
+
+201
+00:08:40,479 --> 00:08:45,680
+So all the way down to the next curly
+
+202
+00:08:42,240 --> 00:08:49,920
+brace and we'll say total GPA equals
+
+203
+00:08:45,680 --> 00:08:52,320
+total GPA / 4. Or if you want to use
+
+204
+00:08:49,920 --> 00:08:55,279
+compound assignment, you'd say divide
+
+205
+00:08:52,320 --> 00:08:57,360
+equals 4.
+
+206
+00:08:55,279 --> 00:09:00,480
+And that gives us the exact same GPA
+
+207
+00:08:57,360 --> 00:09:02,480
+that we got last time.
+
+208
+00:09:00,480 --> 00:09:04,959
+Now, all that's left once we've gotten
+
+209
+00:09:02,480 --> 00:09:07,360
+that GPA
+
+210
+00:09:04,959 --> 00:09:10,240
+is to do the last if statement,
+
+211
+00:09:07,360 --> 00:09:12,240
+calculating their total. And so, I am
+
+212
+00:09:10,240 --> 00:09:13,680
+just going to grab it with option and
+
+213
+00:09:12,240 --> 00:09:16,680
+the up arrow, and I'm going to bring it
+
+214
+00:09:13,680 --> 00:09:16,680
+up
+
+215
+00:09:17,519 --> 00:09:22,959
+a whole long ways. I probably should
+
+216
+00:09:19,200 --> 00:09:25,440
+have just cut pasted at this point. Oh
+
+217
+00:09:22,959 --> 00:09:28,080
+well, you live and you learn.
+
+218
+00:09:25,440 --> 00:09:30,800
+So, you bring it all the way up.
+
+219
+00:09:28,080 --> 00:09:33,839
+put it right under total GPA.
+
+220
+00:09:30,800 --> 00:09:38,040
+Uncomment it.
+
+221
+00:09:33,839 --> 00:09:38,040
+And if we scroll back down,
+
+222
+00:09:38,480 --> 00:09:44,760
+that was the last line of code that we
+
+223
+00:09:40,640 --> 00:09:44,760
+needed to run. Um,
+
+224
+00:09:46,399 --> 00:09:51,680
+so now if we look at our code, our for
+
+225
+00:09:49,440 --> 00:09:56,160
+loop code, it is lacking some comments,
+
+226
+00:09:51,680 --> 00:09:59,120
+but using a for loop from line 14 to
+
+227
+00:09:56,160 --> 00:10:02,959
+line 70 is all the code that's needed to
+
+228
+00:09:59,120 --> 00:10:06,800
+do the assignment that previously took
+
+229
+00:10:02,959 --> 00:10:08,399
+all the way to about line 223.
+
+230
+00:10:06,800 --> 00:10:09,920
+So, because we didn't have to repeat
+
+231
+00:10:08,399 --> 00:10:12,800
+those if statements, we only had to
+
+232
+00:10:09,920 --> 00:10:14,480
+write one if statement. And then we um
+
+233
+00:10:12,800 --> 00:10:16,800
+inside of the loop, instead of having to
+
+234
+00:10:14,480 --> 00:10:18,640
+write four different if statements, um
+
+235
+00:10:16,800 --> 00:10:21,920
+we only had to write one prompt instead
+
+236
+00:10:18,640 --> 00:10:23,760
+of four prompts. And we were still able
+
+237
+00:10:21,920 --> 00:10:25,200
+to accomplish the same result. And that
+
+238
+00:10:23,760 --> 00:10:27,120
+is the power of the for loop. If you see
+
+239
+00:10:25,200 --> 00:10:29,360
+yourself duplicating code over and over
+
+240
+00:10:27,120 --> 00:10:31,519
+and over, then maybe you should use a
+
+241
+00:10:29,360 --> 00:10:33,839
+loop that will allow you to write the
+
+242
+00:10:31,519 --> 00:10:36,560
+code once and run it multiple times. So,
+
+243
+00:10:33,839 --> 00:10:37,680
+we'll save this just to prove it works.
+
+244
+00:10:36,560 --> 00:10:41,200
+and we'll say, "What is your letter
+
+245
+00:10:37,680 --> 00:10:46,480
+grade for class one?" We'll do an A, an
+
+246
+00:10:41,200 --> 00:10:50,320
+A minus, a B, a B+,
+
+247
+00:10:46,480 --> 00:10:51,680
+and a B. And that gives us a GPA of 3.5.
+
+248
+00:10:50,320 --> 00:10:53,360
+Says, "Great job. Your consistent effort
+
+249
+00:10:51,680 --> 00:10:56,320
+is paying off. Keep challenging yourself
+
+250
+00:10:53,360 --> 00:10:59,920
+and building on this progress." And so,
+
+251
+00:10:56,320 --> 00:11:01,680
+in just in much, much less code, we were
+
+252
+00:10:59,920 --> 00:11:05,360
+able to write something that
+
+253
+00:11:01,680 --> 00:11:07,279
+accomplished the exact same thing. Um,
+
+254
+00:11:05,360 --> 00:11:09,839
+and we'll pick up more on this in the
+
+255
+00:11:07,279 --> 00:11:09,839
+next video.

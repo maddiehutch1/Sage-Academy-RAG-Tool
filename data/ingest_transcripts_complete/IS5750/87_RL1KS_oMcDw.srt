@@ -1,0 +1,387 @@
+1
+00:00:00,240 --> 00:00:04,319
+Okay, so to explain this next part, I
+
+2
+00:00:02,320 --> 00:00:07,359
+actually brought in um the function and
+
+3
+00:00:04,319 --> 00:00:11,440
+the string array from a previous video.
+
+4
+00:00:07,359 --> 00:00:13,200
+So here um we've got that string array
+
+5
+00:00:11,440 --> 00:00:15,360
+with extra spaces and different
+
+6
+00:00:13,200 --> 00:00:17,920
+capitalization. And here we've got the
+
+7
+00:00:15,360 --> 00:00:20,640
+function that will take an input array
+
+8
+00:00:17,920 --> 00:00:22,960
+and take an input function. So if we
+
+9
+00:00:20,640 --> 00:00:24,960
+want to call this input function apply
+
+10
+00:00:22,960 --> 00:00:29,439
+to array
+
+11
+00:00:24,960 --> 00:00:32,000
+um maybe we'll say let result equal
+
+12
+00:00:29,439 --> 00:00:33,920
+apply to array and then we'll take in an
+
+13
+00:00:32,000 --> 00:00:35,840
+input array. We'll pass in that string
+
+14
+00:00:33,920 --> 00:00:37,520
+array that we got earlier and then we'll
+
+15
+00:00:35,840 --> 00:00:40,079
+put a comma and now we want to take an
+
+16
+00:00:37,520 --> 00:00:42,719
+input function. So I could pass in
+
+17
+00:00:40,079 --> 00:00:45,120
+cleanup string here but maybe let's say
+
+18
+00:00:42,719 --> 00:00:47,200
+I hadn't defined that yet. So what I'm
+
+19
+00:00:45,120 --> 00:00:49,520
+going to show you is you can take this
+
+20
+00:00:47,200 --> 00:00:51,600
+very shortand that we just used and use
+
+21
+00:00:49,520 --> 00:00:53,680
+it here. So rather than passing in a
+
+22
+00:00:51,600 --> 00:00:57,039
+function with a name, we can pass in an
+
+23
+00:00:53,680 --> 00:00:58,719
+anonymous function. So we can say messy
+
+24
+00:00:57,039 --> 00:01:01,680
+string
+
+25
+00:00:58,719 --> 00:01:03,760
+and then do that and then say messy
+
+26
+00:01:01,680 --> 00:01:06,960
+string.trim
+
+27
+00:01:03,760 --> 00:01:09,520
+dot to uppercase.
+
+28
+00:01:06,960 --> 00:01:13,040
+And so what we're saying is
+
+29
+00:01:09,520 --> 00:01:15,280
+um we've defined a function here and
+
+30
+00:01:13,040 --> 00:01:17,600
+we've given an array. So we'll take this
+
+31
+00:01:15,280 --> 00:01:18,960
+function and we'll call it right here.
+
+32
+00:01:17,600 --> 00:01:22,400
+And it's going to be called input
+
+33
+00:01:18,960 --> 00:01:24,000
+function inside of this um function. But
+
+34
+00:01:22,400 --> 00:01:25,200
+outside of it, we don't really need a
+
+35
+00:01:24,000 --> 00:01:28,880
+name because we're not going to use this
+
+36
+00:01:25,200 --> 00:01:30,320
+again. Um I am going to save this and
+
+37
+00:01:28,880 --> 00:01:32,880
+we're going to put a breakpoint on this
+
+38
+00:01:30,320 --> 00:01:36,320
+line when we get over to our code just
+
+39
+00:01:32,880 --> 00:01:41,200
+so you can see it in action.
+
+40
+00:01:36,320 --> 00:01:44,520
+Okay. So, we'll inspect our page. We'll
+
+41
+00:01:41,200 --> 00:01:44,520
+come to sources.
+
+42
+00:01:44,960 --> 00:01:49,040
+We'll go back over and make sure I
+
+43
+00:01:46,479 --> 00:01:50,320
+actually saved this page.
+
+44
+00:01:49,040 --> 00:01:52,880
+And we're just going to hit go live
+
+45
+00:01:50,320 --> 00:01:54,640
+again because it'll be easier. Okay. All
+
+46
+00:01:52,880 --> 00:01:57,360
+right.
+
+47
+00:01:54,640 --> 00:02:00,240
+So, here we've got our function. Let's
+
+48
+00:01:57,360 --> 00:02:02,000
+put a break point on line 36 and we'll
+
+49
+00:02:00,240 --> 00:02:04,560
+reload the page. Okay. So, we're about
+
+50
+00:02:02,000 --> 00:02:07,119
+to call this apply to array string. or
+
+51
+00:02:04,560 --> 00:02:10,000
+sorry apply to array function. We hit
+
+52
+00:02:07,119 --> 00:02:13,920
+the next. So what is in the input array?
+
+53
+00:02:10,000 --> 00:02:15,840
+Um it's text hello world and hi all that
+
+54
+00:02:13,920 --> 00:02:18,000
+have extra spaces and different
+
+55
+00:02:15,840 --> 00:02:20,000
+capitalization. What is the input
+
+56
+00:02:18,000 --> 00:02:22,560
+function? Well, it's an anonymous
+
+57
+00:02:20,000 --> 00:02:25,680
+function. It takes in an input of messy
+
+58
+00:02:22,560 --> 00:02:28,720
+string, trims it, and uppercases it. So
+
+59
+00:02:25,680 --> 00:02:30,560
+now we'll hit the next button and we'll
+
+60
+00:02:28,720 --> 00:02:32,319
+enter our array. What are we sending
+
+61
+00:02:30,560 --> 00:02:34,400
+into the function? Um, we're going to
+
+62
+00:02:32,319 --> 00:02:36,959
+send in input array at the zero
+
+63
+00:02:34,400 --> 00:02:39,680
+position, which is extra spaces and the
+
+64
+00:02:36,959 --> 00:02:41,120
+word hello. If we hit next, it comes
+
+65
+00:02:39,680 --> 00:02:43,440
+over here to where we defined the
+
+66
+00:02:41,120 --> 00:02:45,599
+function. So, what is messy string? It's
+
+67
+00:02:43,440 --> 00:02:46,800
+hello cuz we took it as an input. And
+
+68
+00:02:45,599 --> 00:02:49,680
+then now we're going to trim it and
+
+69
+00:02:46,800 --> 00:02:51,280
+uppercase it. And then we're going to
+
+70
+00:02:49,680 --> 00:02:54,239
+return it to the array. Now, if we look
+
+71
+00:02:51,280 --> 00:02:56,080
+at the array, now it says hello. So, we
+
+72
+00:02:54,239 --> 00:02:59,120
+can see that defining this function
+
+73
+00:02:56,080 --> 00:03:01,360
+directly inside of where we called a
+
+74
+00:02:59,120 --> 00:03:03,280
+different function, it works. And it's
+
+75
+00:03:01,360 --> 00:03:05,280
+much shorter than if we had to define
+
+76
+00:03:03,280 --> 00:03:06,800
+the function on separate lines and then
+
+77
+00:03:05,280 --> 00:03:08,480
+pass it in. So if you're only ever going
+
+78
+00:03:06,800 --> 00:03:09,920
+to use the function once, maybe we're
+
+79
+00:03:08,480 --> 00:03:12,879
+only ever going to use this cleanup
+
+80
+00:03:09,920 --> 00:03:14,879
+string once. We can just define it
+
+81
+00:03:12,879 --> 00:03:18,239
+directly inside of the function that
+
+82
+00:03:14,879 --> 00:03:20,239
+uses it. So it defines the function,
+
+83
+00:03:18,239 --> 00:03:22,000
+passes it in. So now when you hover over
+
+84
+00:03:20,239 --> 00:03:24,000
+input function, it now has a function
+
+85
+00:03:22,000 --> 00:03:26,560
+inside of it. And then it uses that
+
+86
+00:03:24,000 --> 00:03:28,879
+function and stores the results. And
+
+87
+00:03:26,560 --> 00:03:30,879
+that is why we might want to use lambda
+
+88
+00:03:28,879 --> 00:03:32,959
+functions. As a matter of fact, there
+
+89
+00:03:30,879 --> 00:03:35,120
+are a lot of built-in functions that
+
+90
+00:03:32,959 --> 00:03:37,040
+need us to give them a function. So, we
+
+91
+00:03:35,120 --> 00:03:39,200
+could define it separately like we were
+
+92
+00:03:37,040 --> 00:03:41,920
+doing before where we define function
+
+93
+00:03:39,200 --> 00:03:44,159
+cleanup string, write the return, and
+
+94
+00:03:41,920 --> 00:03:46,560
+then pass in that function to those
+
+95
+00:03:44,159 --> 00:03:48,720
+functions. Or now that we know how to
+
+96
+00:03:46,560 --> 00:03:53,360
+write it on one line, we can write it on
+
+97
+00:03:48,720 --> 00:03:53,360
+one line directly inside of the input.

@@ -1,0 +1,203 @@
+1
+00:00:00,719 --> 00:00:05,680
+Okay, so in the last video we showed you
+
+2
+00:00:03,840 --> 00:00:07,359
+how you could make a comparison and how
+
+3
+00:00:05,680 --> 00:00:08,720
+it would return either true or false
+
+4
+00:00:07,359 --> 00:00:10,559
+depending on the result of that
+
+5
+00:00:08,720 --> 00:00:11,840
+comparison. In this video I'm going to
+
+6
+00:00:10,559 --> 00:00:15,280
+show you how you can control what your
+
+7
+00:00:11,840 --> 00:00:18,320
+code does based on that um based on the
+
+8
+00:00:15,280 --> 00:00:19,840
+returned value. So the way you do that
+
+9
+00:00:18,320 --> 00:00:24,320
+when you want to make a decision you use
+
+10
+00:00:19,840 --> 00:00:26,000
+the keyword if. So you'll say if
+
+11
+00:00:24,320 --> 00:00:28,640
+password
+
+12
+00:00:26,000 --> 00:00:32,239
+is exactly the same as the entered
+
+13
+00:00:28,640 --> 00:00:34,800
+password and then you put curly braces
+
+14
+00:00:32,239 --> 00:00:36,719
+hit enter and now whatever you type
+
+15
+00:00:34,800 --> 00:00:40,640
+between this code these lines of code
+
+16
+00:00:36,719 --> 00:00:43,200
+will only happen if the passwords match.
+
+17
+00:00:40,640 --> 00:00:45,040
+So we could say alert
+
+18
+00:00:43,200 --> 00:00:49,079
+the
+
+19
+00:00:45,040 --> 00:00:49,079
+welcome to the system.
+
+20
+00:00:50,800 --> 00:00:54,960
+So, it's going to compare password to
+
+21
+00:00:52,399 --> 00:00:56,559
+password and then all of this entire
+
+22
+00:00:54,960 --> 00:00:58,800
+expression is going to reduce down to
+
+23
+00:00:56,559 --> 00:01:00,320
+either true or false. So, they either
+
+24
+00:00:58,800 --> 00:01:03,280
+entered the right password or they did
+
+25
+00:01:00,320 --> 00:01:04,799
+not. If it comes out as true, then we're
+
+26
+00:01:03,280 --> 00:01:07,360
+going to tell them welcome to the
+
+27
+00:01:04,799 --> 00:01:08,960
+system. If it doesn't, then we're not
+
+28
+00:01:07,360 --> 00:01:10,640
+going to do anything. Um, so we're going
+
+29
+00:01:08,960 --> 00:01:12,880
+to say if the passwords are the same,
+
+30
+00:01:10,640 --> 00:01:15,360
+alert, welcome to the system. So, let's
+
+31
+00:01:12,880 --> 00:01:18,000
+see this in action. So, we'll hit go
+
+32
+00:01:15,360 --> 00:01:20,799
+live.
+
+33
+00:01:18,000 --> 00:01:22,720
+And it says, "What is your password?"
+
+34
+00:01:20,799 --> 00:01:26,159
+So, if I type a bunch of gibberish and
+
+35
+00:01:22,720 --> 00:01:28,400
+hit enter, it says false. And then
+
+36
+00:01:26,159 --> 00:01:30,080
+nothing else shows. Um, so if we come
+
+37
+00:01:28,400 --> 00:01:32,320
+back over to our code, that's what we
+
+38
+00:01:30,080 --> 00:01:36,880
+expected because we entered the
+
+39
+00:01:32,320 --> 00:01:39,280
+password. Um, and then it alerted false.
+
+40
+00:01:36,880 --> 00:01:42,079
+And then because this is false, it
+
+41
+00:01:39,280 --> 00:01:44,159
+skipped over line 24 and went to the
+
+42
+00:01:42,079 --> 00:01:45,520
+end. Let's try that again, but this time
+
+43
+00:01:44,159 --> 00:01:48,159
+we'll enter the right password. So,
+
+44
+00:01:45,520 --> 00:01:50,560
+we'll reload the page and it says, "What
+
+45
+00:01:48,159 --> 00:01:53,520
+is your password?" We'll say password.
+
+46
+00:01:50,560 --> 00:01:55,600
+Hit okay. And it says true. Welcome to
+
+47
+00:01:53,520 --> 00:01:57,280
+the system. So, this time the alert
+
+48
+00:01:55,600 --> 00:01:59,439
+message did show up because we
+
+49
+00:01:57,280 --> 00:02:00,960
+successfully met the condition we used.
+
+50
+00:01:59,439 --> 00:02:03,920
+So you can use an if statement to
+
+51
+00:02:00,960 --> 00:02:03,920
+control the flow of your

@@ -1,0 +1,443 @@
+1
+00:00:00,880 --> 00:00:06,560
+Hello everyone and welcome back. So um
+
+2
+00:00:04,799 --> 00:00:07,839
+we're going to open up I've closed the
+
+3
+00:00:06,560 --> 00:00:09,120
+folder because I assume at some point
+
+4
+00:00:07,839 --> 00:00:10,639
+you're going to close Visual Studio
+
+5
+00:00:09,120 --> 00:00:12,160
+Code. So I've closed a folder on our
+
+6
+00:00:10,639 --> 00:00:13,920
+website and I'm just going to reopen it
+
+7
+00:00:12,160 --> 00:00:15,920
+just so you have a reminder as how to do
+
+8
+00:00:13,920 --> 00:00:18,720
+that. So I'm going to come over here,
+
+9
+00:00:15,920 --> 00:00:20,720
+click the open folder button, and then I
+
+10
+00:00:18,720 --> 00:00:22,400
+have my folder on my desktop and then
+
+11
+00:00:20,720 --> 00:00:25,039
+here I've called it first website. So
+
+12
+00:00:22,400 --> 00:00:26,400
+highlight that and then click open. If
+
+13
+00:00:25,039 --> 00:00:27,519
+you're on a Windows, your Finder is
+
+14
+00:00:26,400 --> 00:00:29,840
+going to look a little different but the
+
+15
+00:00:27,519 --> 00:00:31,439
+steps are exactly the same. All right,
+
+16
+00:00:29,840 --> 00:00:33,840
+so we are back to where we were. This is
+
+17
+00:00:31,439 --> 00:00:36,880
+our HTML. Last time we talked about how
+
+18
+00:00:33,840 --> 00:00:38,320
+to use um the development tools to look
+
+19
+00:00:36,880 --> 00:00:40,879
+at our HTML and to look at our
+
+20
+00:00:38,320 --> 00:00:43,360
+JavaScript. So in this video we're going
+
+21
+00:00:40,879 --> 00:00:46,239
+to talk a little bit about comments. So
+
+22
+00:00:43,360 --> 00:00:48,079
+comments are pieces of code the computer
+
+23
+00:00:46,239 --> 00:00:49,840
+does not read. It completely ignores
+
+24
+00:00:48,079 --> 00:00:52,239
+those lines of code. It's very helpful
+
+25
+00:00:49,840 --> 00:00:54,079
+for a developer who's learning how to
+
+26
+00:00:52,239 --> 00:00:55,600
+document their code so that the next
+
+27
+00:00:54,079 --> 00:00:58,480
+developer who comes along knows what's
+
+28
+00:00:55,600 --> 00:01:00,879
+happening. Um, so if you want to put in
+
+29
+00:00:58,480 --> 00:01:04,239
+a comment for HTML, the way you put a
+
+30
+00:01:00,879 --> 00:01:06,159
+comment is you do the open carrot sign,
+
+31
+00:01:04,239 --> 00:01:08,720
+then an exclamation mark, and two
+
+32
+00:01:06,159 --> 00:01:10,320
+dashes. If you're in Visual Studio Code,
+
+33
+00:01:08,720 --> 00:01:12,720
+it will automatically fill in the
+
+34
+00:01:10,320 --> 00:01:14,000
+following part. But if you're ever not
+
+35
+00:01:12,720 --> 00:01:16,240
+in Visual Studio Code and your
+
+36
+00:01:14,000 --> 00:01:18,240
+environment doesn't fill it in, you'll
+
+37
+00:01:16,240 --> 00:01:20,720
+just close it with two dashes and then
+
+38
+00:01:18,240 --> 00:01:22,960
+the other carrot sign. Now, anything I
+
+39
+00:01:20,720 --> 00:01:28,240
+type here will not show up on the page.
+
+40
+00:01:22,960 --> 00:01:29,920
+So, I could say my first comment. Um,
+
+41
+00:01:28,240 --> 00:01:31,280
+but I'm going to use this comment for
+
+42
+00:01:29,920 --> 00:01:34,079
+what I would typically use this comment
+
+43
+00:01:31,280 --> 00:01:36,479
+for. So, this comment I usually put at
+
+44
+00:01:34,079 --> 00:01:38,799
+the top of every coding file so that
+
+45
+00:01:36,479 --> 00:01:40,880
+people know who changed the file last
+
+46
+00:01:38,799 --> 00:01:44,240
+and why they changed the file. So, I'm
+
+47
+00:01:40,880 --> 00:01:46,240
+going to say my name is Choa and I'm
+
+48
+00:01:44,240 --> 00:01:50,479
+going to give a description of what this
+
+49
+00:01:46,240 --> 00:01:54,640
+does. So I'm going to say this HTML file
+
+50
+00:01:50,479 --> 00:01:55,920
+is the hello world page. So now if
+
+51
+00:01:54,640 --> 00:01:58,159
+someone were to come along and try and
+
+52
+00:01:55,920 --> 00:02:00,399
+maintain this page later, they'll open
+
+53
+00:01:58,159 --> 00:02:02,399
+up my code and they'll see a description
+
+54
+00:02:00,399 --> 00:02:04,159
+and it says this page is for the hello
+
+55
+00:02:02,399 --> 00:02:06,159
+world page, which means if they're
+
+56
+00:02:04,159 --> 00:02:07,439
+having a error on the Hello World page,
+
+57
+00:02:06,159 --> 00:02:10,399
+they know this is the code they need to
+
+58
+00:02:07,439 --> 00:02:13,200
+look at. If they're having an error with
+
+59
+00:02:10,399 --> 00:02:15,200
+the welcome to the website page, then
+
+60
+00:02:13,200 --> 00:02:16,400
+they know it's not on this page. So, if
+
+61
+00:02:15,200 --> 00:02:18,000
+you give a description of what your
+
+62
+00:02:16,400 --> 00:02:19,599
+project does, it helps someone who comes
+
+63
+00:02:18,000 --> 00:02:21,840
+along later, and that someone could be
+
+64
+00:02:19,599 --> 00:02:23,040
+you. Um, sometimes you'll go back and
+
+65
+00:02:21,840 --> 00:02:24,640
+maintain your own code. You'll wonder
+
+66
+00:02:23,040 --> 00:02:27,920
+what you've done, and the comment helps
+
+67
+00:02:24,640 --> 00:02:30,480
+you know that. Um, so I'm going to add
+
+68
+00:02:27,920 --> 00:02:32,239
+another comment in the body.
+
+69
+00:02:30,480 --> 00:02:33,840
+Um, right here under Hello World, I'm
+
+70
+00:02:32,239 --> 00:02:35,680
+going to add another comment. The other
+
+71
+00:02:33,840 --> 00:02:38,400
+way you can put a comment is you can hit
+
+72
+00:02:35,680 --> 00:02:40,800
+command or if you're on Windows control
+
+73
+00:02:38,400 --> 00:02:43,040
+and then slash and it's the forward
+
+74
+00:02:40,800 --> 00:02:45,920
+slash that is right next to the right
+
+75
+00:02:43,040 --> 00:02:47,840
+shift key. So if I hit command slash, it
+
+76
+00:02:45,920 --> 00:02:53,120
+puts in the comment for me and I can
+
+77
+00:02:47,840 --> 00:02:58,400
+type this is my first comment and it
+
+78
+00:02:53,120 --> 00:03:01,519
+will not show up on the web page.
+
+79
+00:02:58,400 --> 00:03:03,680
+So if we save this as a reminder that's
+
+80
+00:03:01,519 --> 00:03:07,840
+command S or control S or you can come
+
+81
+00:03:03,680 --> 00:03:10,640
+up to the top and hit file and then save
+
+82
+00:03:07,840 --> 00:03:12,720
+and that'll save your file. If you have
+
+83
+00:03:10,640 --> 00:03:14,159
+your live server running from last time,
+
+84
+00:03:12,720 --> 00:03:15,840
+then you can just flip back over to the
+
+85
+00:03:14,159 --> 00:03:18,159
+browser and see what your web page looks
+
+86
+00:03:15,840 --> 00:03:19,599
+like. If you don't have it running, you
+
+87
+00:03:18,159 --> 00:03:22,000
+can come down here to the bottom right
+
+88
+00:03:19,599 --> 00:03:23,760
+hand corner and click this go live. As
+
+89
+00:03:22,000 --> 00:03:25,519
+soon as you click go live, it'll bring
+
+90
+00:03:23,760 --> 00:03:27,599
+you to your website where I still have
+
+91
+00:03:25,519 --> 00:03:30,080
+my developer tools open. And you can see
+
+92
+00:03:27,599 --> 00:03:31,519
+that it says hello world. You can also
+
+93
+00:03:30,080 --> 00:03:33,760
+see that it does not include our
+
+94
+00:03:31,519 --> 00:03:35,440
+comments on the page. If we want to see
+
+95
+00:03:33,760 --> 00:03:37,599
+those, we'll have to click over onto the
+
+96
+00:03:35,440 --> 00:03:39,599
+elements tab of the developer tool. And
+
+97
+00:03:37,599 --> 00:03:41,840
+then we can see our comment at the top
+
+98
+00:03:39,599 --> 00:03:44,080
+with our name and a description. And
+
+99
+00:03:41,840 --> 00:03:45,920
+then if we open up the body tag, we can
+
+100
+00:03:44,080 --> 00:03:47,599
+see our other comment as well as a
+
+101
+00:03:45,920 --> 00:03:50,720
+comment that was injected by our live
+
+102
+00:03:47,599 --> 00:03:52,560
+server. So these comments are all in
+
+103
+00:03:50,720 --> 00:03:54,080
+here and the developer can see them and
+
+104
+00:03:52,560 --> 00:03:56,159
+someone using the developer tools can
+
+105
+00:03:54,080 --> 00:03:58,400
+see them, but the average user will not
+
+106
+00:03:56,159 --> 00:04:00,640
+be able to see them. So that is how you
+
+107
+00:03:58,400 --> 00:04:02,400
+make an HTML comment. And I'm going to
+
+108
+00:04:00,640 --> 00:04:03,680
+stop the video there and in the next
+
+109
+00:04:02,400 --> 00:04:05,680
+video we'll talk about running your
+
+110
+00:04:03,680 --> 00:04:08,400
+first JavaScript and then JavaScript
+
+111
+00:04:05,680 --> 00:04:08,400
+comments.

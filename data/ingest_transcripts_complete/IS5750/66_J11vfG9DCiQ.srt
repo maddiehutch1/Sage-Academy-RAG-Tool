@@ -1,0 +1,347 @@
+1
+00:00:00,080 --> 00:00:05,359
+Now, let's go look at our slideshow for
+
+2
+00:00:03,439 --> 00:00:07,839
+a little bit. And I want you to pay
+
+3
+00:00:05,359 --> 00:00:10,800
+attention to where the green arrow is.
+
+4
+00:00:07,839 --> 00:00:12,880
+So, it starts here and we do some
+
+5
+00:00:10,800 --> 00:00:15,599
+processing and then it moves over one.
+
+6
+00:00:12,880 --> 00:00:18,880
+And we do some processing and it moves
+
+7
+00:00:15,599 --> 00:00:20,880
+over one. And we do some processing and
+
+8
+00:00:18,880 --> 00:00:23,279
+it moves over one. We do some more
+
+9
+00:00:20,880 --> 00:00:25,680
+processing and it moves over one. Do
+
+10
+00:00:23,279 --> 00:00:29,199
+some more processing.
+
+11
+00:00:25,680 --> 00:00:31,519
+And you'll notice it stopped almost at
+
+12
+00:00:29,199 --> 00:00:33,680
+the end of the array. So we will know
+
+13
+00:00:31,519 --> 00:00:37,040
+we've written. So you'll notice it
+
+14
+00:00:33,680 --> 00:00:39,120
+repeated the arrow just slowly moved
+
+15
+00:00:37,040 --> 00:00:41,200
+down. When you see something slowly
+
+16
+00:00:39,120 --> 00:00:43,200
+moving through logic, I want you to
+
+17
+00:00:41,200 --> 00:00:45,040
+think of a loop because we started at
+
+18
+00:00:43,200 --> 00:00:46,800
+one and went up to five. If you want to
+
+19
+00:00:45,040 --> 00:00:49,440
+start at one and go up to five, that's
+
+20
+00:00:46,800 --> 00:00:51,440
+very, very doable with a for loop. So we
+
+21
+00:00:49,440 --> 00:00:53,600
+will know our code will work if we can
+
+22
+00:00:51,440 --> 00:00:57,360
+write a for loop that moves an arrow
+
+23
+00:00:53,600 --> 00:00:59,840
+from 1 to 5. So from the beginning of
+
+24
+00:00:57,360 --> 00:01:02,399
+our array to almost the end of our
+
+25
+00:00:59,840 --> 00:01:04,720
+array. So let's just go try and log
+
+26
+00:01:02,399 --> 00:01:06,640
+those numbers. So we'll come over here
+
+27
+00:01:04,720 --> 00:01:08,000
+to Visual Studio Code. We're only
+
+28
+00:01:06,640 --> 00:01:09,439
+worried about the arrow portion. We're
+
+29
+00:01:08,000 --> 00:01:10,960
+not worried about any swapping. We'll
+
+30
+00:01:09,439 --> 00:01:13,920
+get there in a minute. We just want an
+
+31
+00:01:10,960 --> 00:01:15,680
+arrow that will print out where it's at.
+
+32
+00:01:13,920 --> 00:01:17,759
+And we don't want it to go quite to the
+
+33
+00:01:15,680 --> 00:01:20,159
+end of the array. So let's write that.
+
+34
+00:01:17,759 --> 00:01:24,880
+So we'll say for
+
+35
+00:01:20,159 --> 00:01:25,920
+let um counter equal well we know we
+
+36
+00:01:24,880 --> 00:01:27,280
+want to start at the beginning of the
+
+37
+00:01:25,920 --> 00:01:29,200
+array zero because that's where our
+
+38
+00:01:27,280 --> 00:01:31,520
+arrow started.
+
+39
+00:01:29,200 --> 00:01:34,880
+Then we'll put a semicolon. And then
+
+40
+00:01:31,520 --> 00:01:39,840
+we'll say let's set how long do we want
+
+41
+00:01:34,880 --> 00:01:41,600
+to run? Well, we want to run 0 1 2 3 4.
+
+42
+00:01:39,840 --> 00:01:42,960
+We don't actually want to include the
+
+43
+00:01:41,600 --> 00:01:45,680
+fifth one. So we just want to run
+
+44
+00:01:42,960 --> 00:01:48,240
+through the first um zero through four
+
+45
+00:01:45,680 --> 00:01:50,880
+positions. Or in other words, if this
+
+46
+00:01:48,240 --> 00:01:53,360
+length, if this array has six positions
+
+47
+00:01:50,880 --> 00:01:55,280
+and we want to go 0 through four, then
+
+48
+00:01:53,360 --> 00:01:57,119
+we want to run just less than five
+
+49
+00:01:55,280 --> 00:01:59,840
+times. Or in other words, we want to run
+
+50
+00:01:57,119 --> 00:02:03,119
+just less than the length of the array
+
+51
+00:01:59,840 --> 00:02:07,040
+minus one. So we'll say our counter is
+
+52
+00:02:03,119 --> 00:02:09,440
+less than numbers.length.
+
+53
+00:02:07,040 --> 00:02:12,879
+So that would be six. And then we'll
+
+54
+00:02:09,440 --> 00:02:17,599
+subtract off one, which will be 5 minus
+
+55
+00:02:12,879 --> 00:02:20,800
+1. So it will run 0 1 2 3 4 because our
+
+56
+00:02:17,599 --> 00:02:23,440
+array is length 6. 6 - 1 is 5 and we're
+
+57
+00:02:20,800 --> 00:02:27,120
+running less than it. So it'll be 0 1 2
+
+58
+00:02:23,440 --> 00:02:29,840
+3 4. We will know this works
+
+59
+00:02:27,120 --> 00:02:33,920
+if we can print out the numbers 4 5 6 1
+
+60
+00:02:29,840 --> 00:02:36,000
+and 2. So we'll put a semicolon here and
+
+61
+00:02:33,920 --> 00:02:36,000
+then we'll say counter plus bus plus bus
+
+62
+00:02:36,000 --> 00:02:37,280
+plus bus plus bus plus bus plus bus plus
+
+63
+00:02:36,000 --> 00:02:39,760
+bus plus bus plus bus plus bus plus and
+
+64
+00:02:37,280 --> 00:02:41,840
+we'll do open curly braces close curly
+
+65
+00:02:39,760 --> 00:02:45,440
+braces and what we'll do is we'll log
+
+66
+00:02:41,840 --> 00:02:49,040
+numbers array at the counter position.
+
+67
+00:02:45,440 --> 00:02:52,640
+So we'll save it and we'll come over to
+
+68
+00:02:49,040 --> 00:02:56,239
+sorry come over to our running code
+
+69
+00:02:52,640 --> 00:02:58,160
+we'll reload the page and we get um four
+
+70
+00:02:56,239 --> 00:03:00,319
+five six one two three. Let me go check
+
+71
+00:02:58,160 --> 00:03:02,800
+that I saved my code cuz I never
+
+72
+00:03:00,319 --> 00:03:04,800
+remember to do that. Oh, I forgot to log
+
+73
+00:03:02,800 --> 00:03:08,640
+it. Okay, right here we're going to log
+
+74
+00:03:04,800 --> 00:03:10,879
+this console.log numbers at the counter
+
+75
+00:03:08,640 --> 00:03:13,599
+position.
+
+76
+00:03:10,879 --> 00:03:15,599
+So, we'll save that
+
+77
+00:03:13,599 --> 00:03:17,920
+and we'll come over here. We'll reload
+
+78
+00:03:15,599 --> 00:03:20,720
+our page. We'll look at our console and
+
+79
+00:03:17,920 --> 00:03:22,159
+we get 45 612
+
+80
+00:03:20,720 --> 00:03:25,040
+which was what we were hoping we would
+
+81
+00:03:22,159 --> 00:03:27,599
+get. We were hoping we'd get four 5 6 1
+
+82
+00:03:25,040 --> 00:03:29,920
+and 2 because we are now able to have an
+
+83
+00:03:27,599 --> 00:03:31,680
+arrow that goes over each of those four
+
+84
+00:03:29,920 --> 00:03:35,200
+numbers.
+
+85
+00:03:31,680 --> 00:03:36,560
+So now we know that this code is
+
+86
+00:03:35,200 --> 00:03:39,760
+successfully working. So, we're going to
+
+87
+00:03:36,560 --> 00:03:39,760
+comment it out and leave it for

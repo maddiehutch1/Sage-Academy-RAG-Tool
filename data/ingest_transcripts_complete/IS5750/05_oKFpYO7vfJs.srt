@@ -1,0 +1,703 @@
+1
+00:00:03,360 --> 00:00:08,240
+All right. So, today we're going to talk
+
+2
+00:00:05,759 --> 00:00:10,960
+about a little bit about HTML and
+
+3
+00:00:08,240 --> 00:00:12,639
+starting your first web page. So, what
+
+4
+00:00:10,960 --> 00:00:14,320
+we're going to want to do is just like I
+
+5
+00:00:12,639 --> 00:00:15,759
+said in the last video, is we want
+
+6
+00:00:14,320 --> 00:00:17,279
+everything in this course, we want to be
+
+7
+00:00:15,759 --> 00:00:18,720
+working in a folder. So, the very first
+
+8
+00:00:17,279 --> 00:00:21,359
+thing we want to do is open a folder.
+
+9
+00:00:18,720 --> 00:00:22,960
+So, come over here and click on these uh
+
+10
+00:00:21,359 --> 00:00:25,840
+this explorer tab and then we're going
+
+11
+00:00:22,960 --> 00:00:29,359
+to click open folder. In the last video,
+
+12
+00:00:25,840 --> 00:00:31,279
+I created um a folder on my desktop
+
+13
+00:00:29,359 --> 00:00:33,200
+called first website. And I'm going to
+
+14
+00:00:31,279 --> 00:00:34,640
+open that. Or if you are following
+
+15
+00:00:33,200 --> 00:00:37,760
+along, you can create you're welcome to
+
+16
+00:00:34,640 --> 00:00:39,440
+create your own website, your own folder
+
+17
+00:00:37,760 --> 00:00:41,040
+here. Um but I'm just going to use this
+
+18
+00:00:39,440 --> 00:00:43,040
+first website folder that I made in the
+
+19
+00:00:41,040 --> 00:00:45,280
+last video. So I'm going to click open.
+
+20
+00:00:43,040 --> 00:00:46,879
+And now that folder is open. So over
+
+21
+00:00:45,280 --> 00:00:48,640
+here on the lefth hand panel, you can
+
+22
+00:00:46,879 --> 00:00:51,120
+see that this folder doesn't have any
+
+23
+00:00:48,640 --> 00:00:53,039
+folders or files in it at all. We're
+
+24
+00:00:51,120 --> 00:00:55,120
+going to start by making a first our
+
+25
+00:00:53,039 --> 00:00:57,199
+first file. Typically, when you make
+
+26
+00:00:55,120 --> 00:01:01,199
+your first HTML file, you'll name it
+
+27
+00:00:57,199 --> 00:01:02,879
+index.html because that is where um
+
+28
+00:01:01,199 --> 00:01:04,159
+computers will go automatically when
+
+29
+00:01:02,879 --> 00:01:06,799
+they're looking for the homepage of your
+
+30
+00:01:04,159 --> 00:01:09,040
+website. They'll look for index.html.
+
+31
+00:01:06,799 --> 00:01:11,439
+So, I'm going to create index.html. The
+
+32
+00:01:09,040 --> 00:01:12,880
+way I do that is this little icon here
+
+33
+00:01:11,439 --> 00:01:14,640
+that looks like a piece of paper with
+
+34
+00:01:12,880 --> 00:01:16,880
+the top corner folded down that says new
+
+35
+00:01:14,640 --> 00:01:20,560
+file. I'm going to click on that and I'm
+
+36
+00:01:16,880 --> 00:01:23,040
+going to type in index.html.
+
+37
+00:01:20,560 --> 00:01:24,720
+Importantly, you do not want to include
+
+38
+00:01:23,040 --> 00:01:27,600
+spaces in this file name. So, I'm going
+
+39
+00:01:24,720 --> 00:01:29,360
+to hit enter. And you can tell that I
+
+40
+00:01:27,600 --> 00:01:32,640
+have the right thing because it'll have
+
+41
+00:01:29,360 --> 00:01:35,040
+these two carrot signs. And that is how
+
+42
+00:01:32,640 --> 00:01:37,040
+you know that it's an HTML file. Also,
+
+43
+00:01:35,040 --> 00:01:38,720
+down at the bottom, it says that the
+
+44
+00:01:37,040 --> 00:01:40,479
+type of language we're writing in is
+
+45
+00:01:38,720 --> 00:01:42,479
+HTML.
+
+46
+00:01:40,479 --> 00:01:45,439
+If you don't see that, make sure you
+
+47
+00:01:42,479 --> 00:01:50,159
+typed HTML as lowercase. Also, make sure
+
+48
+00:01:45,439 --> 00:01:53,040
+you typed HTML with no spaces. Um, and
+
+49
+00:01:50,159 --> 00:01:54,880
+that should handle the language. If that
+
+50
+00:01:53,040 --> 00:01:57,200
+doesn't happen, you can come down here
+
+51
+00:01:54,880 --> 00:01:59,759
+at the bottom and you can click HTML and
+
+52
+00:01:57,200 --> 00:02:02,240
+you can click change it from auto detect
+
+53
+00:01:59,759 --> 00:02:04,960
+and then you can scroll down and you can
+
+54
+00:02:02,240 --> 00:02:06,479
+tell it that you want it to be HTML. So
+
+55
+00:02:04,960 --> 00:02:08,959
+you can manually set which language
+
+56
+00:02:06,479 --> 00:02:10,640
+you're using, but if you put HTML,
+
+57
+00:02:08,959 --> 00:02:12,080
+Visual Studio Code is smart enough that
+
+58
+00:02:10,640 --> 00:02:14,480
+it should be able to figure out what
+
+59
+00:02:12,080 --> 00:02:17,120
+type of language you're using.
+
+60
+00:02:14,480 --> 00:02:22,080
+HTML is a coding
+
+61
+00:02:17,120 --> 00:02:24,319
+language that um structures a website.
+
+62
+00:02:22,080 --> 00:02:26,720
+It's composed of opening tags and
+
+63
+00:02:24,319 --> 00:02:29,680
+closing tags. Any website you see on the
+
+64
+00:02:26,720 --> 00:02:32,400
+internet is composed of HTML.
+
+65
+00:02:29,680 --> 00:02:35,120
+So the typical format for HTML is you
+
+66
+00:02:32,400 --> 00:02:38,000
+have an opening HTML tag and a closing
+
+67
+00:02:35,120 --> 00:02:40,480
+HTML tag. And that tells the computer,
+
+68
+00:02:38,000 --> 00:02:42,720
+hey, this is going to be a web page.
+
+69
+00:02:40,480 --> 00:02:46,239
+Inside of that HTML, you have two more
+
+70
+00:02:42,720 --> 00:02:49,040
+tags. So you'll have a head tag,
+
+71
+00:02:46,239 --> 00:02:51,280
+an opening and a closing one, and then
+
+72
+00:02:49,040 --> 00:02:54,480
+you'll have a body tag. And if you don't
+
+73
+00:02:51,280 --> 00:02:56,560
+type the carrots and you just hit tab,
+
+74
+00:02:54,480 --> 00:02:58,239
+it will autocomplete and create the
+
+75
+00:02:56,560 --> 00:02:59,599
+closing tag for you. And that'll save
+
+76
+00:02:58,239 --> 00:03:01,120
+you from having to type the carrot sign
+
+77
+00:02:59,599 --> 00:03:03,519
+all the time because for me, it's in an
+
+78
+00:03:01,120 --> 00:03:05,840
+awkward spot on the keyboard. So
+
+79
+00:03:03,519 --> 00:03:07,920
+typically an HTML page will have an HTML
+
+80
+00:03:05,840 --> 00:03:10,239
+tag that contains everything. Inside of
+
+81
+00:03:07,920 --> 00:03:13,280
+that HTML tag, it'll have a head tag and
+
+82
+00:03:10,239 --> 00:03:15,840
+inside of that it will have a body tag.
+
+83
+00:03:13,280 --> 00:03:18,319
+The body is most most of what you see on
+
+84
+00:03:15,840 --> 00:03:20,159
+a web page. The head tag is helpful for
+
+85
+00:03:18,319 --> 00:03:21,599
+search engines as they're looking for
+
+86
+00:03:20,159 --> 00:03:23,120
+your website. So, a lot of times you'll
+
+87
+00:03:21,599 --> 00:03:25,200
+put a lot of information in the head tag
+
+88
+00:03:23,120 --> 00:03:27,200
+that will help your website be found.
+
+89
+00:03:25,200 --> 00:03:28,480
+The body tag is where you'll put a lot
+
+90
+00:03:27,200 --> 00:03:31,040
+of the stuff that will show up on the
+
+91
+00:03:28,480 --> 00:03:32,799
+page for your users.
+
+92
+00:03:31,040 --> 00:03:35,599
+Now, if you're like me, you don't like
+
+93
+00:03:32,799 --> 00:03:37,840
+typing if you don't have to. So, there
+
+94
+00:03:35,599 --> 00:03:39,519
+is a shortcut for all of this. So rather
+
+95
+00:03:37,840 --> 00:03:43,040
+than just typing out everything that I
+
+96
+00:03:39,519 --> 00:03:46,879
+just typed out here, you can type HTML
+
+97
+00:03:43,040 --> 00:03:48,959
+colon 5 and hit tab and that'll put in
+
+98
+00:03:46,879 --> 00:03:54,000
+all of the boilerplate code to build
+
+99
+00:03:48,959 --> 00:03:56,959
+your first HTML page. Or you can type
+
+100
+00:03:54,000 --> 00:03:58,400
+exclamation mark and hit enter and that
+
+101
+00:03:56,959 --> 00:04:00,239
+will type out all of the code. The
+
+102
+00:03:58,400 --> 00:04:02,480
+exclamation mark is what I commonly use
+
+103
+00:04:00,239 --> 00:04:05,840
+to put in all of my boilerplate HTML
+
+104
+00:04:02,480 --> 00:04:07,280
+code. So I want you to see this live.
+
+105
+00:04:05,840 --> 00:04:09,439
+And one thing I want to point out is
+
+106
+00:04:07,280 --> 00:04:11,519
+there's a little white dot up here next
+
+107
+00:04:09,439 --> 00:04:13,840
+to our tab. That means that our file
+
+108
+00:04:11,519 --> 00:04:15,120
+hasn't been saved. If you're ever
+
+109
+00:04:13,840 --> 00:04:16,880
+writing code and you're wondering why
+
+110
+00:04:15,120 --> 00:04:18,720
+your website's not updating to reflect
+
+111
+00:04:16,880 --> 00:04:20,639
+your changes, check to make sure that
+
+112
+00:04:18,720 --> 00:04:23,040
+you've saved it. There are a couple ways
+
+113
+00:04:20,639 --> 00:04:24,960
+you could do this, but I prefer the
+
+114
+00:04:23,040 --> 00:04:28,000
+keyboard shortcut. So, you can hit
+
+115
+00:04:24,960 --> 00:04:30,000
+commands on a Mac or control S on a
+
+116
+00:04:28,000 --> 00:04:32,160
+Windows and that will save it. But if
+
+117
+00:04:30,000 --> 00:04:34,080
+you don't like keyboard shortcuts, um
+
+118
+00:04:32,160 --> 00:04:36,960
+you can come up here to the top and hit
+
+119
+00:04:34,080 --> 00:04:39,040
+file and then hit save. And that will
+
+120
+00:04:36,960 --> 00:04:41,040
+save your file.
+
+121
+00:04:39,040 --> 00:04:45,360
+So I'm going to hit this little go live
+
+122
+00:04:41,040 --> 00:04:48,160
+button. And that will pop open
+
+123
+00:04:45,360 --> 00:04:49,919
+a website. And there's nothing on it.
+
+124
+00:04:48,160 --> 00:04:51,759
+And that's exactly what we're hoping to
+
+125
+00:04:49,919 --> 00:04:53,759
+see. We didn't want to see anything on
+
+126
+00:04:51,759 --> 00:04:55,520
+this website um because we haven't
+
+127
+00:04:53,759 --> 00:04:57,520
+written any HTML to show anything. All
+
+128
+00:04:55,520 --> 00:04:58,960
+we've written is the boilerplate code.
+
+129
+00:04:57,520 --> 00:05:00,960
+So, let's go make it actually do
+
+130
+00:04:58,960 --> 00:05:03,759
+something. So, change tabs back over to
+
+131
+00:05:00,960 --> 00:05:05,680
+Visual Studio. And in Visual Studio,
+
+132
+00:05:03,759 --> 00:05:07,840
+let's type inside of the body tags,
+
+133
+00:05:05,680 --> 00:05:09,199
+we're going to say hello world because
+
+134
+00:05:07,840 --> 00:05:10,479
+this is a programming course. Wouldn't
+
+135
+00:05:09,199 --> 00:05:12,639
+be a programming course if we didn't
+
+136
+00:05:10,479 --> 00:05:15,199
+start with hello world. So, we'll save
+
+137
+00:05:12,639 --> 00:05:18,080
+that because we're running live server.
+
+138
+00:05:15,199 --> 00:05:19,600
+As soon as we save a change here, that's
+
+139
+00:05:18,080 --> 00:05:21,520
+when we click this go live down at the
+
+140
+00:05:19,600 --> 00:05:24,880
+bottom. As soon as we save a change on
+
+141
+00:05:21,520 --> 00:05:26,800
+our index.html file, it updates on our
+
+142
+00:05:24,880 --> 00:05:29,440
+website. And so now we can see that our
+
+143
+00:05:26,800 --> 00:05:31,039
+website has hello world. If we mouse
+
+144
+00:05:29,440 --> 00:05:34,080
+over the lefth hand tab, we can see that
+
+145
+00:05:31,039 --> 00:05:36,240
+we have one tab and that tab is called
+
+146
+00:05:34,080 --> 00:05:38,240
+document. It's going to look a little
+
+147
+00:05:36,240 --> 00:05:42,400
+different in if you're on Google Chrome.
+
+148
+00:05:38,240 --> 00:05:44,479
+Um I'm in Safari right now. Um maybe we
+
+149
+00:05:42,400 --> 00:05:46,080
+don't want our tab to say document.
+
+150
+00:05:44,479 --> 00:05:47,600
+Maybe we want it to say something else.
+
+151
+00:05:46,080 --> 00:05:50,080
+So we'll come back over to our Visual
+
+152
+00:05:47,600 --> 00:05:51,680
+Studio Code. This isn't information
+
+153
+00:05:50,080 --> 00:05:53,520
+that's displayed on the page. It's
+
+154
+00:05:51,680 --> 00:05:55,280
+information about the page. So, we're
+
+155
+00:05:53,520 --> 00:05:56,960
+going to look in the head tag. And right
+
+156
+00:05:55,280 --> 00:05:59,600
+here in title, we can see that it says
+
+157
+00:05:56,960 --> 00:06:03,280
+document. Let's change that to say our
+
+158
+00:05:59,600 --> 00:06:08,160
+first website. So, I'm going to type um
+
+159
+00:06:03,280 --> 00:06:10,400
+my first website and hit command S to
+
+160
+00:06:08,160 --> 00:06:13,840
+save my changes. You'll notice the white
+
+161
+00:06:10,400 --> 00:06:15,440
+dot disappeared. If we tab back over, we
+
+162
+00:06:13,840 --> 00:06:17,919
+can see that our website still looks the
+
+163
+00:06:15,440 --> 00:06:20,160
+same. It still says hello world. But now
+
+164
+00:06:17,919 --> 00:06:22,240
+if we look at our tabs,
+
+165
+00:06:20,160 --> 00:06:24,400
+we can see that the tab is labeled my
+
+166
+00:06:22,240 --> 00:06:26,319
+first website. And so hopefully that
+
+167
+00:06:24,400 --> 00:06:29,600
+gets you a little bit of an orientation
+
+168
+00:06:26,319 --> 00:06:31,280
+to HTML. Um,
+
+169
+00:06:29,600 --> 00:06:33,360
+we're only going to go into as much
+
+170
+00:06:31,280 --> 00:06:34,960
+depth in HTML as you need to understand
+
+171
+00:06:33,360 --> 00:06:37,680
+JavaScript because this is primarily a
+
+172
+00:06:34,960 --> 00:06:39,280
+JavaScript course. Um, and maybe one day
+
+173
+00:06:37,680 --> 00:06:41,199
+in the future I'll make an HTML course,
+
+174
+00:06:39,280 --> 00:06:43,199
+but for now we're just going to focus on
+
+175
+00:06:41,199 --> 00:06:46,080
+JavaScript. So, thank you for watching
+
+176
+00:06:43,199 --> 00:06:46,080
+and have a good

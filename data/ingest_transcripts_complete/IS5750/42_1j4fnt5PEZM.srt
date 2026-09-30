@@ -1,0 +1,391 @@
+1
+00:00:00,080 --> 00:00:03,439
+All right, so the last video was a
+
+2
+00:00:01,920 --> 00:00:06,240
+little bit harsh for a scholarship.
+
+3
+00:00:03,439 --> 00:00:08,000
+Surely there's some grace between having
+
+4
+00:00:06,240 --> 00:00:11,360
+one and not having one. Maybe you could
+
+5
+00:00:08,000 --> 00:00:13,920
+get a partial scholarship. Um, and you
+
+6
+00:00:11,360 --> 00:00:16,160
+can do that in code, too. So, we've said
+
+7
+00:00:13,920 --> 00:00:18,240
+if they have greater than 3.5, alert,
+
+8
+00:00:16,160 --> 00:00:21,039
+congrats, here's a scholarship. Well,
+
+9
+00:00:18,240 --> 00:00:26,400
+what if they have between 3.5 and 3.0?
+
+10
+00:00:21,039 --> 00:00:29,760
+Let's do that. So we'll say else if
+
+11
+00:00:26,400 --> 00:00:32,640
+and then we'll put our parenthesis.
+
+12
+00:00:29,760 --> 00:00:34,480
+And so this is how you make a second
+
+13
+00:00:32,640 --> 00:00:36,000
+consideration. So you make a first
+
+14
+00:00:34,480 --> 00:00:39,280
+consideration and you say if it's
+
+15
+00:00:36,000 --> 00:00:41,440
+greater than 3.5 alert congrats here's a
+
+16
+00:00:39,280 --> 00:00:44,160
+scholarship. Here it says if it's not
+
+17
+00:00:41,440 --> 00:00:46,000
+greater than 3.5 um what other
+
+18
+00:00:44,160 --> 00:00:47,680
+consideration do you want to make? Well
+
+19
+00:00:46,000 --> 00:00:49,840
+in this case I want to say let's see if
+
+20
+00:00:47,680 --> 00:00:52,160
+their GPA is greater than or equal to
+
+21
+00:00:49,840 --> 00:00:54,000
+3.0.
+
+22
+00:00:52,160 --> 00:00:56,960
+And then right here between these
+
+23
+00:00:54,000 --> 00:01:01,039
+parentheses, all alert.
+
+24
+00:00:56,960 --> 00:01:02,640
+Good job. Here is a partial
+
+25
+00:01:01,039 --> 00:01:05,680
+scholarship.
+
+26
+00:01:02,640 --> 00:01:10,640
+Whoa, can't spell.
+
+27
+00:01:05,680 --> 00:01:13,600
+All right. So, what's going to happen
+
+28
+00:01:10,640 --> 00:01:16,640
+is we're going to gather their GPA. If
+
+29
+00:01:13,600 --> 00:01:20,159
+they've entered 3.5 exactly, then we're
+
+30
+00:01:16,640 --> 00:01:22,400
+going to say, is 3.5 greater than 3.5?
+
+31
+00:01:20,159 --> 00:01:25,439
+It's not. So, we're going to skip there.
+
+32
+00:01:22,400 --> 00:01:29,600
+Then, we're going to say, well, what if
+
+33
+00:01:25,439 --> 00:01:31,920
+3 point is 3.5 greater than 3.0? It is.
+
+34
+00:01:29,600 --> 00:01:33,520
+So, now we can alert, good job. Here's a
+
+35
+00:01:31,920 --> 00:01:36,000
+partial scholarship. Let's see this in
+
+36
+00:01:33,520 --> 00:01:37,439
+action. So, I'm going to save this and
+
+37
+00:01:36,000 --> 00:01:40,000
+come over here and it says, what is your
+
+38
+00:01:37,439 --> 00:01:42,000
+GPA? I'll put 3.5. Says, good job.
+
+39
+00:01:40,000 --> 00:01:45,200
+Here's a partial scholarship. If we
+
+40
+00:01:42,000 --> 00:01:48,000
+reload and we put 3.7, we get, congrats,
+
+41
+00:01:45,200 --> 00:01:51,600
+here's a scholarship. We reload and we
+
+42
+00:01:48,000 --> 00:01:54,479
+put uh 2.0. know then we say sorry maybe
+
+43
+00:01:51,600 --> 00:01:57,439
+next year. So in that way we were able
+
+44
+00:01:54,479 --> 00:01:58,880
+to have multiple considerations
+
+45
+00:01:57,439 --> 00:02:03,680
+and you can keep stringing these
+
+46
+00:01:58,880 --> 00:02:08,920
+together. So I could say else if GPA is
+
+47
+00:02:03,680 --> 00:02:08,920
+greater than or equal to 2.5
+
+48
+00:02:09,280 --> 00:02:16,879
+alert
+
+49
+00:02:11,440 --> 00:02:20,400
+let's see if we can raise your GPA
+
+50
+00:02:16,879 --> 00:02:24,080
+and then I could say else if GPA is
+
+51
+00:02:20,400 --> 00:02:26,000
+greater than or equal to 2.0 No
+
+52
+00:02:24,080 --> 00:02:28,319
+alert
+
+53
+00:02:26,000 --> 00:02:32,560
+keep trying
+
+54
+00:02:28,319 --> 00:02:37,120
+and then we'll say else if GPA is
+
+55
+00:02:32,560 --> 00:02:39,680
+greater than or equal to 1.5
+
+56
+00:02:37,120 --> 00:02:44,160
+alert
+
+57
+00:02:39,680 --> 00:02:45,760
+don't worry there are more important
+
+58
+00:02:44,160 --> 00:02:48,239
+things
+
+59
+00:02:45,760 --> 00:02:52,640
+than grades
+
+60
+00:02:48,239 --> 00:02:54,560
+and then finally we'll A. So if they
+
+61
+00:02:52,640 --> 00:02:56,319
+don't have a GPA of higher than 3.5,
+
+62
+00:02:54,560 --> 00:02:58,239
+don't have a GPA higher than 3.0, don't
+
+63
+00:02:56,319 --> 00:03:00,319
+have a GPA higher than 2.5, don't have a
+
+64
+00:02:58,239 --> 00:03:03,120
+GPA higher than 2.0, and don't have a
+
+65
+00:03:00,319 --> 00:03:06,120
+GPA higher than 1.5, then we'll say
+
+66
+00:03:03,120 --> 00:03:06,120
+alert.
+
+67
+00:03:06,239 --> 00:03:15,519
+Um, looks like your GPA is too low for
+
+68
+00:03:12,400 --> 00:03:17,599
+this later.
+
+69
+00:03:15,519 --> 00:03:20,080
+We'll save that
+
+70
+00:03:17,599 --> 00:03:22,560
+and we'll go check it out. So, it says,
+
+71
+00:03:20,080 --> 00:03:25,200
+"What is your GPA?" Let's say I enter
+
+72
+00:03:22,560 --> 00:03:28,959
+3.7. I get, "Congrats, here's a
+
+73
+00:03:25,200 --> 00:03:33,040
+scholarship." Reload 3.1.
+
+74
+00:03:28,959 --> 00:03:34,879
+Good job school scholarship. Reload 2.5.
+
+75
+00:03:33,040 --> 00:03:40,799
+Let's see if we can raise your GPA.
+
+76
+00:03:34,879 --> 00:03:42,560
+Reload 2.0. Keep trying. Reload. One.
+
+77
+00:03:40,799 --> 00:03:44,720
+Looks like your GPA is too low for this
+
+78
+00:03:42,560 --> 00:03:49,280
+calculator. So, we're able to make a lot
+
+79
+00:03:44,720 --> 00:03:51,200
+of decisions just um based on the GPA.
+
+80
+00:03:49,280 --> 00:03:53,760
+And so, that is how you use else if you
+
+81
+00:03:51,200 --> 00:03:55,519
+can make additional decisions if the
+
+82
+00:03:53,760 --> 00:03:57,599
+first condition is not met. The way an
+
+83
+00:03:55,519 --> 00:03:59,439
+if statement works, it starts at the top
+
+84
+00:03:57,599 --> 00:04:01,519
+and it goes to the bottom. So, if it
+
+85
+00:03:59,439 --> 00:04:03,680
+meets this condition, it will never get
+
+86
+00:04:01,519 --> 00:04:07,200
+to line 20. It will always go to line
+
+87
+00:04:03,680 --> 00:04:09,120
+16. If it doesn't meet line 16, then
+
+88
+00:04:07,200 --> 00:04:10,879
+sorry, if it doesn't meet line 15, then
+
+89
+00:04:09,120 --> 00:04:13,360
+it'll check line 18. If it doesn't meet
+
+90
+00:04:10,879 --> 00:04:15,599
+line 18, it'll check line 22. If it
+
+91
+00:04:13,360 --> 00:04:18,400
+doesn't meet line 22, it'll check line
+
+92
+00:04:15,599 --> 00:04:21,040
+25. If it meets line 25, then it will
+
+93
+00:04:18,400 --> 00:04:23,680
+never get to line 28. If it doesn't meet
+
+94
+00:04:21,040 --> 00:04:25,360
+line 25, then it'll check line 28. If it
+
+95
+00:04:23,680 --> 00:04:27,680
+doesn't meet line 28, then it will have
+
+96
+00:04:25,360 --> 00:04:30,000
+met none of these conditions and it will
+
+97
+00:04:27,680 --> 00:04:33,759
+do the else statement. And that is how
+
+98
+00:04:30,000 --> 00:04:33,759
+if, else if and else works.

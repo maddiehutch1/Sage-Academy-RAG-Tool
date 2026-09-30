@@ -1,0 +1,167 @@
+1
+00:00:00,240 --> 00:00:05,200
+All right. In the last video, we talked
+
+2
+00:00:02,159 --> 00:00:06,560
+about how to use this substring um
+
+3
+00:00:05,200 --> 00:00:09,120
+function. So, what I'm going to do is
+
+4
+00:00:06,560 --> 00:00:11,840
+I'm going to show you how to use a
+
+5
+00:00:09,120 --> 00:00:13,599
+related function called substr. So,
+
+6
+00:00:11,840 --> 00:00:14,960
+substring, if you recall, it took a
+
+7
+00:00:13,599 --> 00:00:16,640
+starting position and an ending
+
+8
+00:00:14,960 --> 00:00:18,400
+position. So, if we wanted to get Bruce,
+
+9
+00:00:16,640 --> 00:00:21,920
+then we'd have to say start at position
+
+10
+00:00:18,400 --> 00:00:23,760
+zero and end at position five. Um, if we
+
+11
+00:00:21,920 --> 00:00:26,640
+wanted to get Wayne, then we'd have to
+
+12
+00:00:23,760 --> 00:00:31,279
+say start at position six and end at
+
+13
+00:00:26,640 --> 00:00:34,000
+position uh 7 8 9 10 11. End at position
+
+14
+00:00:31,279 --> 00:00:35,600
+11. And that can be kind of a pain to
+
+15
+00:00:34,000 --> 00:00:37,040
+grab something out of the middle using
+
+16
+00:00:35,600 --> 00:00:38,320
+substring. So, I'm going to show you a
+
+17
+00:00:37,040 --> 00:00:39,840
+different function that'll allow you to
+
+18
+00:00:38,320 --> 00:00:43,200
+do something similar. So, if we do my
+
+19
+00:00:39,840 --> 00:00:46,160
+texts substr,
+
+20
+00:00:43,200 --> 00:00:48,480
+we can say we want to grab Wayne out of
+
+21
+00:00:46,160 --> 00:00:49,600
+this um sentence. So, what we're going
+
+22
+00:00:48,480 --> 00:00:54,079
+to do is we're going to start at
+
+23
+00:00:49,600 --> 00:00:57,360
+position 0 1 2 3 4 5 6. The W is in
+
+24
+00:00:54,079 --> 00:00:59,199
+position 6 and then a comma and then how
+
+25
+00:00:57,360 --> 00:01:00,960
+long is Wayne. So, it says the number of
+
+26
+00:00:59,199 --> 00:01:03,600
+characters to include. So, rather than
+
+27
+00:01:00,960 --> 00:01:06,880
+having to figure out where Wayne ends,
+
+28
+00:01:03,600 --> 00:01:09,360
+we can just say Wayne is 1 2 3 4 5
+
+29
+00:01:06,880 --> 00:01:11,760
+letters. So, we can put a five here. We
+
+30
+00:01:09,360 --> 00:01:15,360
+put a semicolon and we save that. And we
+
+31
+00:01:11,760 --> 00:01:17,759
+come over and we reload our page.
+
+32
+00:01:15,360 --> 00:01:20,159
+We now get the text Wayne. So, we didn't
+
+33
+00:01:17,759 --> 00:01:22,880
+have to figure out
+
+34
+00:01:20,159 --> 00:01:24,000
+the ending portion of Wayne. We didn't
+
+35
+00:01:22,880 --> 00:01:25,600
+have to figure out what character
+
+36
+00:01:24,000 --> 00:01:27,360
+position this is. We could just say
+
+37
+00:01:25,600 --> 00:01:29,200
+Wayne is five letters long. So, start at
+
+38
+00:01:27,360 --> 00:01:32,320
+the sixth position in the sentence where
+
+39
+00:01:29,200 --> 00:01:34,400
+the W is and go five characters. And so,
+
+40
+00:01:32,320 --> 00:01:36,000
+if you're just trying to find text in
+
+41
+00:01:34,400 --> 00:01:38,400
+the middle of the string, substr is
+
+42
+00:01:36,000 --> 00:01:38,400
+helpful.

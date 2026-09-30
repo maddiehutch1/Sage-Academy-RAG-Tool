@@ -1,0 +1,647 @@
+1
+00:00:00,560 --> 00:00:05,040
+All right, we are going to talk about
+
+2
+00:00:02,639 --> 00:00:08,639
+conversion. So if you want to convert
+
+3
+00:00:05,040 --> 00:00:11,360
+from one um data type to another, you do
+
+4
+00:00:08,639 --> 00:00:12,800
+something called parsing. So let's say
+
+5
+00:00:11,360 --> 00:00:14,400
+we want to get an input from the user.
+
+6
+00:00:12,800 --> 00:00:18,000
+We want to ask how old they are. We can
+
+7
+00:00:14,400 --> 00:00:19,439
+say um that our age um and I'm going to
+
+8
+00:00:18,000 --> 00:00:20,960
+say age is a string because we know
+
+9
+00:00:19,439 --> 00:00:23,680
+everything that comes back from a prompt
+
+10
+00:00:20,960 --> 00:00:28,640
+is a string. So we'll say age string
+
+11
+00:00:23,680 --> 00:00:30,480
+equals prompt what is your age? And then
+
+12
+00:00:28,640 --> 00:00:33,120
+we'll put a semicolon. And then on the
+
+13
+00:00:30,480 --> 00:00:36,239
+next line, I'm going to alert the type
+
+14
+00:00:33,120 --> 00:00:38,320
+of age string. So this should tell me
+
+15
+00:00:36,239 --> 00:00:40,079
+what type of information I have in age
+
+16
+00:00:38,320 --> 00:00:41,760
+string. If we've done everything
+
+17
+00:00:40,079 --> 00:00:43,040
+correctly, we expect this to be a string
+
+18
+00:00:41,760 --> 00:00:45,040
+cuz we know everything that comes back
+
+19
+00:00:43,040 --> 00:00:46,640
+from a prompt is a string. So I'm going
+
+20
+00:00:45,040 --> 00:00:48,320
+to save this. I've got my live server
+
+21
+00:00:46,640 --> 00:00:50,399
+running already. So when I go over to my
+
+22
+00:00:48,320 --> 00:00:53,039
+website, I get a popup. It says, "What
+
+23
+00:00:50,399 --> 00:00:56,559
+is your age?" We'll enter 99. We'll hit
+
+24
+00:00:53,039 --> 00:00:58,000
+okay. And it says that is a string. So,
+
+25
+00:00:56,559 --> 00:01:00,000
+just like we expected, everything that
+
+26
+00:00:58,000 --> 00:01:01,520
+comes back from a prompt is a string.
+
+27
+00:01:00,000 --> 00:01:03,520
+So, what I'm going to do is I'm going to
+
+28
+00:01:01,520 --> 00:01:06,960
+add a new line in between these lines of
+
+29
+00:01:03,520 --> 00:01:12,080
+code. And so, right here, um, I'm going
+
+30
+00:01:06,960 --> 00:01:13,600
+to say let a oops, I apologize. Been
+
+31
+00:01:12,080 --> 00:01:15,920
+coding in Python too long. And they
+
+32
+00:01:13,600 --> 00:01:17,119
+don't use the keyword let, but let is
+
+33
+00:01:15,920 --> 00:01:19,840
+important to put in front. So, you'll
+
+34
+00:01:17,119 --> 00:01:22,240
+say let age string equal prompt. What is
+
+35
+00:01:19,840 --> 00:01:24,880
+your age? that will create a variable,
+
+36
+00:01:22,240 --> 00:01:27,360
+give it a name, and then assign the
+
+37
+00:01:24,880 --> 00:01:28,720
+result of the prompt to that variable.
+
+38
+00:01:27,360 --> 00:01:32,560
+I'm going to create a new variable here.
+
+39
+00:01:28,720 --> 00:01:34,400
+I'm going to say let age int equal
+
+40
+00:01:32,560 --> 00:01:36,640
+prompt
+
+41
+00:01:34,400 --> 00:01:39,439
+or sorry equal and then we're going to
+
+42
+00:01:36,640 --> 00:01:42,479
+convert this age string into an age
+
+43
+00:01:39,439 --> 00:01:45,360
+integer. The way we do that is we say
+
+44
+00:01:42,479 --> 00:01:48,240
+parse and then we use this parse int
+
+45
+00:01:45,360 --> 00:01:51,280
+function. So, we're going to hit tab and
+
+46
+00:01:48,240 --> 00:01:52,479
+then um I'm going to undo that real
+
+47
+00:01:51,280 --> 00:01:54,960
+quick so I can show you the little
+
+48
+00:01:52,479 --> 00:01:56,560
+IntelliSense hint. So, we're say parse
+
+49
+00:01:54,960 --> 00:02:00,079
+and then you'll notice that this parse
+
+50
+00:01:56,560 --> 00:02:02,000
+int has a purple cube. Anytime you see a
+
+51
+00:02:00,079 --> 00:02:03,759
+purple cube, that means it's a function,
+
+52
+00:02:02,000 --> 00:02:06,079
+which means you need to put parentheses
+
+53
+00:02:03,759 --> 00:02:08,000
+after it. We will talk about functions
+
+54
+00:02:06,079 --> 00:02:11,680
+in greater depth in the future, but just
+
+55
+00:02:08,000 --> 00:02:13,920
+as a rule of thumb, if it is this square
+
+56
+00:02:11,680 --> 00:02:16,000
+inside of brackets, you don't need
+
+57
+00:02:13,920 --> 00:02:17,520
+parenthesis. If it's a cube, you need
+
+58
+00:02:16,000 --> 00:02:20,000
+parenthesis. So, we're going to do this
+
+59
+00:02:17,520 --> 00:02:20,879
+parse int. It requires parenthesis. So,
+
+60
+00:02:20,000 --> 00:02:23,280
+we're going to put our opening
+
+61
+00:02:20,879 --> 00:02:25,440
+parenthesy. And then, if we pause, it'll
+
+62
+00:02:23,280 --> 00:02:27,280
+give us this hint that tells us what we
+
+63
+00:02:25,440 --> 00:02:30,400
+need to put inside of these parenthesis.
+
+64
+00:02:27,280 --> 00:02:33,680
+So, it says this thing converts a string
+
+65
+00:02:30,400 --> 00:02:35,599
+into a number. And the input it takes is
+
+66
+00:02:33,680 --> 00:02:38,239
+a string. So, do we have a string to
+
+67
+00:02:35,599 --> 00:02:39,920
+convert? We do. On line 17, we created a
+
+68
+00:02:38,239 --> 00:02:41,519
+variable called age string. We're going
+
+69
+00:02:39,920 --> 00:02:43,040
+to take that age string. We're going to
+
+70
+00:02:41,519 --> 00:02:45,040
+put it in here. and then it's going to
+
+71
+00:02:43,040 --> 00:02:47,440
+convert it into an integer. So I'm going
+
+72
+00:02:45,040 --> 00:02:49,599
+to type age string.
+
+73
+00:02:47,440 --> 00:02:52,239
+I'm going to put a semicolon and then
+
+74
+00:02:49,599 --> 00:02:56,080
+now on the next line I'm going to alert
+
+75
+00:02:52,239 --> 00:02:57,680
+type of age string. Now rather than we
+
+76
+00:02:56,080 --> 00:02:59,680
+already know age string is a string
+
+77
+00:02:57,680 --> 00:03:02,080
+because it came from a prompt. We want
+
+78
+00:02:59,680 --> 00:03:04,080
+to know the type of age integer. If this
+
+79
+00:03:02,080 --> 00:03:06,480
+says that it is a number, it means our
+
+80
+00:03:04,080 --> 00:03:08,239
+conversion has worked successfully.
+
+81
+00:03:06,480 --> 00:03:10,400
+So we're going to save that and come
+
+82
+00:03:08,239 --> 00:03:13,920
+over to our code. Says what is your age?
+
+83
+00:03:10,400 --> 00:03:16,480
+We'll say 99. We'll hit okay and it says
+
+84
+00:03:13,920 --> 00:03:18,640
+that is a number. So fantastic. We've
+
+85
+00:03:16,480 --> 00:03:21,599
+now converted from a string to a number
+
+86
+00:03:18,640 --> 00:03:24,480
+which means any of the methods that we
+
+87
+00:03:21,599 --> 00:03:26,239
+use to change how a number is uh being
+
+88
+00:03:24,480 --> 00:03:27,840
+stored in our system will be able to use
+
+89
+00:03:26,239 --> 00:03:29,920
+now with this variable called age
+
+90
+00:03:27,840 --> 00:03:31,680
+integer.
+
+91
+00:03:29,920 --> 00:03:33,360
+Now some of you may have been watching
+
+92
+00:03:31,680 --> 00:03:35,840
+and realized that that is a lot of lines
+
+93
+00:03:33,360 --> 00:03:38,080
+of code just to convert an input into a
+
+94
+00:03:35,840 --> 00:03:40,080
+number. We already knew we wanted age to
+
+95
+00:03:38,080 --> 00:03:42,720
+be a number. We've created now two
+
+96
+00:03:40,080 --> 00:03:44,159
+variables just to get age as a number
+
+97
+00:03:42,720 --> 00:03:45,599
+and you probably don't want to do that.
+
+98
+00:03:44,159 --> 00:03:48,560
+So let me show you how to put this on
+
+99
+00:03:45,599 --> 00:03:50,799
+one line. So we said let's create a
+
+100
+00:03:48,560 --> 00:03:52,879
+variable called age string and then
+
+101
+00:03:50,799 --> 00:03:54,480
+we're going to assign the value of that
+
+102
+00:03:52,879 --> 00:03:56,319
+variable meaning the thing it's going to
+
+103
+00:03:54,480 --> 00:03:58,959
+store is going to be whatever the user
+
+104
+00:03:56,319 --> 00:04:02,000
+entered here. We also know that this
+
+105
+00:03:58,959 --> 00:04:03,840
+parse int can take in a string. We know
+
+106
+00:04:02,000 --> 00:04:06,319
+that whatever the user types in comes
+
+107
+00:04:03,840 --> 00:04:08,560
+back as a string. So the way we can
+
+108
+00:04:06,319 --> 00:04:10,959
+simplify this onto one line is we can
+
+109
+00:04:08,560 --> 00:04:14,080
+take our prompt
+
+110
+00:04:10,959 --> 00:04:16,560
+and remove it. And where we had age
+
+111
+00:04:14,080 --> 00:04:18,160
+string, we can place our prompt. So
+
+112
+00:04:16,560 --> 00:04:20,239
+we're going to get a string. It's going
+
+113
+00:04:18,160 --> 00:04:22,320
+to take the result of that string, send
+
+114
+00:04:20,239 --> 00:04:24,960
+it to the parse int. It's going to parse
+
+115
+00:04:22,320 --> 00:04:27,600
+that into an integer and store it as age
+
+116
+00:04:24,960 --> 00:04:30,160
+int. So now we don't need this line of
+
+117
+00:04:27,600 --> 00:04:32,560
+code anymore.
+
+118
+00:04:30,160 --> 00:04:34,320
+And now that we only have one variable,
+
+119
+00:04:32,560 --> 00:04:36,880
+we can just call this variable age. So
+
+120
+00:04:34,320 --> 00:04:38,720
+we're going to call it age.
+
+121
+00:04:36,880 --> 00:04:40,320
+If we alert type of age, I'm just going
+
+122
+00:04:38,720 --> 00:04:42,000
+to prove to you that this is the exact
+
+123
+00:04:40,320 --> 00:04:46,960
+same thing. So we'll go over to our
+
+124
+00:04:42,000 --> 00:04:49,680
+website. We'll say what is our age? 99.
+
+125
+00:04:46,960 --> 00:04:52,639
+We'll hit okay. And it says is a number.
+
+126
+00:04:49,680 --> 00:04:56,160
+So it's successfully converting.
+
+127
+00:04:52,639 --> 00:04:58,479
+Um what I'm going to do is I'm going to
+
+128
+00:04:56,160 --> 00:05:00,240
+alert just age right now. And I'm going
+
+129
+00:04:58,479 --> 00:05:03,440
+to show you the difference between parse
+
+130
+00:05:00,240 --> 00:05:05,120
+int and parse float. So, if I save my
+
+131
+00:05:03,440 --> 00:05:08,160
+code and I come over to the website, it
+
+132
+00:05:05,120 --> 00:05:11,440
+says, "What is your age?" If I say 99.5
+
+133
+00:05:08,160 --> 00:05:14,880
+and said, "Okay, it just alerts 99." So,
+
+134
+00:05:11,440 --> 00:05:18,000
+it dropped the 0.5, which in some cases
+
+135
+00:05:14,880 --> 00:05:19,840
+is great. If um if you are intending to
+
+136
+00:05:18,000 --> 00:05:22,000
+only have a whole number, I guess that
+
+137
+00:05:19,840 --> 00:05:24,160
+works. But if you're rounding grade
+
+138
+00:05:22,000 --> 00:05:28,080
+points or something like that and you
+
+139
+00:05:24,160 --> 00:05:30,160
+were at a 99.9, you want your you want
+
+140
+00:05:28,080 --> 00:05:32,960
+it to round up to 100 and not down to
+
+141
+00:05:30,160 --> 00:05:34,880
+99. So, what we're going to do is we're
+
+142
+00:05:32,960 --> 00:05:37,199
+going to show you how to convert it from
+
+143
+00:05:34,880 --> 00:05:39,360
+a string into a number that has a
+
+144
+00:05:37,199 --> 00:05:41,360
+decimal place or a float. So, we're
+
+145
+00:05:39,360 --> 00:05:42,720
+going to come over here. All we do is we
+
+146
+00:05:41,360 --> 00:05:46,639
+change this from being parse int to
+
+147
+00:05:42,720 --> 00:05:48,080
+parse float. And now, if we save it and
+
+148
+00:05:46,639 --> 00:05:51,280
+we come back over, it says, what is your
+
+149
+00:05:48,080 --> 00:05:53,360
+age? We'll say 55.4.
+
+150
+00:05:51,280 --> 00:05:55,520
+And we'll hit okay. And the alert is
+
+151
+00:05:53,360 --> 00:05:58,000
+55.4.
+
+152
+00:05:55,520 --> 00:06:03,280
+If we come back over here and we alert
+
+153
+00:05:58,000 --> 00:06:07,120
+type of age and save and go back over to
+
+154
+00:06:03,280 --> 00:06:09,280
+our code, what is your age? 55.4.
+
+155
+00:06:07,120 --> 00:06:10,720
+Hit okay. And it says it's a number. So,
+
+156
+00:06:09,280 --> 00:06:12,639
+we've successfully converted into a
+
+157
+00:06:10,720 --> 00:06:13,840
+number that retains the decimal place.
+
+158
+00:06:12,639 --> 00:06:16,240
+So, if you want to keep the decimal
+
+159
+00:06:13,840 --> 00:06:18,080
+place, use parse float. If you want to
+
+160
+00:06:16,240 --> 00:06:20,160
+just have the whole number, then you can
+
+161
+00:06:18,080 --> 00:06:23,680
+just use parse int. And that concludes
+
+162
+00:06:20,160 --> 00:06:23,680
+this video. Thanks for watching.

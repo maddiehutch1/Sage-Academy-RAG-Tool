@@ -139,6 +139,18 @@ Each transcript file needs a companion `.json` sidecar **in the same folder** wi
 }
 ```
 
+### Preparing a YouTube playlist
+
+Install `yt-dlp` on the machine that will prepare the playlist, then confirm it is available with `yt-dlp --version`. It is a local operator tool, not a web-app or backend dependency.
+
+The helper downloads English captions (official first, then auto-captions), converts them to SRT, and writes matching JSON sidecars. Videos without captions are skipped and reported. For the IS 5750 playlist:
+
+```text
+python scripts/prepare_youtube_playlist.py --playlist "https://www.youtube.com/playlist?list=PLA1SJqfgQFEGZfzeSsmgJlvhLlAsmv9h0" --course "IS 5750: JavaScript for Absolute Beginners" --outdir data/transcripts/IS5750 --lang en
+```
+
+The output folder is under `data/transcripts/`, which is the ingest input. Use a course subfolder such as `IS5750`, not the `data/` root or `data/ingest_transcripts_complete/`. `videos.source_url` may contain either a Kaltura preview URL or a YouTube watch URL; the frontend selects the matching player. After verifying a successful ingest, move the course folder manually to `data/ingest_transcripts_complete/IS5750/`; `scripts/ingest.py` does not move it automatically.
+
 All transcripts currently in `data/transcripts/` already have their sidecars. To run ingestion:
 
 ```

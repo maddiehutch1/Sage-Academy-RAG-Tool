@@ -1,0 +1,135 @@
+1
+00:00:00,080 --> 00:00:07,839
+Okay, I have something to show you that
+
+2
+00:00:03,040 --> 00:00:10,320
+goes with events. So, if you look at our
+
+3
+00:00:07,839 --> 00:00:12,320
+stacked HTML, ignore my terrible
+
+4
+00:00:10,320 --> 00:00:14,400
+styling. Don't use a center tag. I'm
+
+5
+00:00:12,320 --> 00:00:16,800
+just using it for this demonstration.
+
+6
+00:00:14,400 --> 00:00:18,160
+So, I have a div. Inside of that div, I
+
+7
+00:00:16,800 --> 00:00:20,800
+have another div. And inside of that
+
+8
+00:00:18,160 --> 00:00:22,400
+div, I have another div. Um, I've styled
+
+9
+00:00:20,800 --> 00:00:24,720
+them so you can see them on screen
+
+10
+00:00:22,400 --> 00:00:27,119
+visually. Each of them has an onclick
+
+11
+00:00:24,720 --> 00:00:29,599
+event. That onclick event calls this log
+
+12
+00:00:27,119 --> 00:00:31,679
+function, hello world. So, what would
+
+13
+00:00:29,599 --> 00:00:33,600
+you expect to happen if I click them?
+
+14
+00:00:31,679 --> 00:00:35,920
+Well, let's just click the outer one and
+
+15
+00:00:33,600 --> 00:00:39,200
+we'll see what happens. It logs hello
+
+16
+00:00:35,920 --> 00:00:41,040
+once, exactly like we would expect. What
+
+17
+00:00:39,200 --> 00:00:42,800
+happens when we click inside the second?
+
+18
+00:00:41,040 --> 00:00:44,640
+It also calls the same log function.
+
+19
+00:00:42,800 --> 00:00:48,800
+You'd probably expect it to just log
+
+20
+00:00:44,640 --> 00:00:52,239
+hello once as well. It logged it twice.
+
+21
+00:00:48,800 --> 00:00:54,719
+Odd. Well, let's click three layers in.
+
+22
+00:00:52,239 --> 00:00:56,879
+It logged it three times. Well, why is
+
+23
+00:00:54,719 --> 00:00:58,559
+that? Well, because technically when we
+
+24
+00:00:56,879 --> 00:01:00,399
+click on this div, we are clicking on
+
+25
+00:00:58,559 --> 00:01:02,079
+it. But because it's inside of this div,
+
+26
+00:01:00,399 --> 00:01:04,239
+we're also technically clicking on that
+
+27
+00:01:02,079 --> 00:01:06,080
+div. And because it's inside of this
+
+28
+00:01:04,239 --> 00:01:07,840
+outer div, we're technically clicking on
+
+29
+00:01:06,080 --> 00:01:09,920
+that. And because this is inside of the
+
+30
+00:01:07,840 --> 00:01:12,320
+HTML body, we're technically clicking on
+
+31
+00:01:09,920 --> 00:01:14,560
+that. So when we click here, all of
+
+32
+00:01:12,320 --> 00:01:17,439
+these were technically clicked on. And
+
+33
+00:01:14,560 --> 00:01:20,799
+handling how that event is processed is
+
+34
+00:01:17,439 --> 00:01:20,799
+an important part of JavaScript.

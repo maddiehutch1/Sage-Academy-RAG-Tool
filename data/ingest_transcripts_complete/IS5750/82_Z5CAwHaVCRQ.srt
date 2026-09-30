@@ -1,0 +1,255 @@
+1
+00:00:00,080 --> 00:00:04,560
+Okay, so in order to understand why you
+
+2
+00:00:02,800 --> 00:00:06,960
+might want to pass a function into
+
+3
+00:00:04,560 --> 00:00:08,639
+another function, um we need to talk
+
+4
+00:00:06,960 --> 00:00:10,960
+about what happens to a variable when it
+
+5
+00:00:08,639 --> 00:00:13,040
+gets passed to a function. So I am going
+
+6
+00:00:10,960 --> 00:00:16,240
+to create a function here and I'm going
+
+7
+00:00:13,040 --> 00:00:21,600
+to call it clean up string and it's
+
+8
+00:00:16,240 --> 00:00:23,840
+going to take in um a messy string
+
+9
+00:00:21,600 --> 00:00:25,279
+and then I'm going to do some stuff with
+
+10
+00:00:23,840 --> 00:00:27,039
+that string. Well, the first thing I
+
+11
+00:00:25,279 --> 00:00:30,560
+want to do is I want to set messy string
+
+12
+00:00:27,039 --> 00:00:33,840
+equal to itself. Um, but where I've
+
+13
+00:00:30,560 --> 00:00:35,120
+trimmed off extra spaces. The next thing
+
+14
+00:00:33,840 --> 00:00:38,079
+I want to do is I probably want to set
+
+15
+00:00:35,120 --> 00:00:39,600
+messy string equal to itself, but where
+
+16
+00:00:38,079 --> 00:00:42,960
+I've
+
+17
+00:00:39,600 --> 00:00:46,079
+changed everything to uppercase
+
+18
+00:00:42,960 --> 00:00:48,000
+and then I want to return this back to
+
+19
+00:00:46,079 --> 00:00:49,360
+the main program. So, I wrote this out
+
+20
+00:00:48,000 --> 00:00:51,600
+in longhand, but I really want to show
+
+21
+00:00:49,360 --> 00:00:53,600
+you that you can simplify this a lot.
+
+22
+00:00:51,600 --> 00:00:56,239
+So, what I'm going to do is I'm going to
+
+23
+00:00:53,600 --> 00:00:58,000
+reduce this down to return messy
+
+24
+00:00:56,239 --> 00:00:59,920
+string.trim.
+
+25
+00:00:58,000 --> 00:01:02,559
+And then once I've trimmed it, I want to
+
+26
+00:00:59,920 --> 00:01:04,320
+do two uppercase.
+
+27
+00:01:02,559 --> 00:01:07,439
+Now that means that any string that I
+
+28
+00:01:04,320 --> 00:01:10,960
+give this should come back without any
+
+29
+00:01:07,439 --> 00:01:13,520
+spaces at the front, the back and it
+
+30
+00:01:10,960 --> 00:01:15,840
+should also be completely uppercase. So
+
+31
+00:01:13,520 --> 00:01:19,360
+let's create a variable my var and set
+
+32
+00:01:15,840 --> 00:01:21,840
+it oh sorry let my var and set it equal
+
+33
+00:01:19,360 --> 00:01:23,759
+to an empty string. And actually, let's
+
+34
+00:01:21,840 --> 00:01:27,200
+put a lot of spaces in the front, the
+
+35
+00:01:23,759 --> 00:01:29,200
+word hello, and then a lot of spaces at
+
+36
+00:01:27,200 --> 00:01:31,840
+the end.
+
+37
+00:01:29,200 --> 00:01:33,759
+And then I'm going to create let results
+
+38
+00:01:31,840 --> 00:01:38,560
+and I'm going to set it equal to cleanup
+
+39
+00:01:33,759 --> 00:01:41,600
+string. And I'm going to pass in my var.
+
+40
+00:01:38,560 --> 00:01:44,159
+And then we'll alert results. So let's
+
+41
+00:01:41,600 --> 00:01:46,720
+go over to our
+
+42
+00:01:44,159 --> 00:01:49,439
+running website and we'll reload the
+
+43
+00:01:46,720 --> 00:01:53,200
+page. And we get hello.
+
+44
+00:01:49,439 --> 00:01:55,040
+And then if we inspect the page, um I'll
+
+45
+00:01:53,200 --> 00:01:56,880
+prove to you that it really did remove
+
+46
+00:01:55,040 --> 00:02:00,479
+those spaces. Let's put a break point
+
+47
+00:01:56,880 --> 00:02:03,600
+here. Reload the page. And if we hit
+
+48
+00:02:00,479 --> 00:02:05,520
+next, um we pass it into the string.
+
+49
+00:02:03,600 --> 00:02:07,840
+Messy string is hello with a lot of
+
+50
+00:02:05,520 --> 00:02:10,640
+spaces. And then we're going to trim it
+
+51
+00:02:07,840 --> 00:02:12,560
+and turn it to uppercase. We hit next.
+
+52
+00:02:10,640 --> 00:02:14,480
+It returns it. If we hover over result,
+
+53
+00:02:12,560 --> 00:02:16,720
+we can see that it's just hello all in
+
+54
+00:02:14,480 --> 00:02:19,200
+uppercase. And therefore, our function
+
+55
+00:02:16,720 --> 00:02:20,959
+worked. Now, why is this important?
+
+56
+00:02:19,200 --> 00:02:23,920
+Well, this is important because it tells
+
+57
+00:02:20,959 --> 00:02:26,800
+us that when we pass a variable into our
+
+58
+00:02:23,920 --> 00:02:29,120
+function, it maintains all of its
+
+59
+00:02:26,800 --> 00:02:31,280
+attributes that it had before. So, just
+
+60
+00:02:29,120 --> 00:02:33,440
+like you can trim a string and convert
+
+61
+00:02:31,280 --> 00:02:36,080
+it to uppercase, if you pass in a
+
+62
+00:02:33,440 --> 00:02:38,800
+function, you can call it inside of
+
+63
+00:02:36,080 --> 00:02:41,120
+another function. And we will do that in
+
+64
+00:02:38,800 --> 00:02:41,120
+the next

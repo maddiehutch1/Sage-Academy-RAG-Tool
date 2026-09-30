@@ -1,0 +1,371 @@
+1
+00:00:00,160 --> 00:00:04,400
+In the last video, we talked about how
+
+2
+00:00:02,240 --> 00:00:06,640
+to gather input. Now that we're
+
+3
+00:00:04,400 --> 00:00:07,919
+gathering input, we may not always know
+
+4
+00:00:06,640 --> 00:00:09,280
+what we've put into our variables
+
+5
+00:00:07,919 --> 00:00:11,360
+because that input could be coming from
+
+6
+00:00:09,280 --> 00:00:12,719
+anywhere. So, if we don't know what's in
+
+7
+00:00:11,360 --> 00:00:15,280
+our variable, we might not know what
+
+8
+00:00:12,719 --> 00:00:16,720
+type of information it's storing. So,
+
+9
+00:00:15,280 --> 00:00:19,039
+for example, first name right now is
+
+10
+00:00:16,720 --> 00:00:20,320
+storing a string. Um, but we also
+
+11
+00:00:19,039 --> 00:00:22,240
+mentioned that there are other types of
+
+12
+00:00:20,320 --> 00:00:25,760
+variables. So, we could say I'm going to
+
+13
+00:00:22,240 --> 00:00:27,760
+call this variable my var. Um, and if I
+
+14
+00:00:25,760 --> 00:00:30,160
+type the keyword true, then it would be
+
+15
+00:00:27,760 --> 00:00:31,920
+holding a boolean. If I type the number
+
+16
+00:00:30,160 --> 00:00:34,719
+eight, then it's holding an integer. If
+
+17
+00:00:31,920 --> 00:00:36,399
+I type 8.8, now it's holding a float.
+
+18
+00:00:34,719 --> 00:00:38,239
+So, we talked about many different types
+
+19
+00:00:36,399 --> 00:00:40,079
+of variables. So, how do we know what's
+
+20
+00:00:38,239 --> 00:00:43,680
+being stored in a variable that's coming
+
+21
+00:00:40,079 --> 00:00:45,440
+from outside input? Um,
+
+22
+00:00:43,680 --> 00:00:48,399
+one of the ways we can do this is using
+
+23
+00:00:45,440 --> 00:00:51,920
+the keyword type of.
+
+24
+00:00:48,399 --> 00:00:53,440
+So, we are gathering username. So, if we
+
+25
+00:00:51,920 --> 00:00:56,399
+want to know the type of username, we'd
+
+26
+00:00:53,440 --> 00:00:57,920
+say type of username.
+
+27
+00:00:56,399 --> 00:00:59,440
+Right now, what I've typed won't do
+
+28
+00:00:57,920 --> 00:01:01,440
+anything. it'll determine the type of
+
+29
+00:00:59,440 --> 00:01:03,280
+username and then it won't do anything
+
+30
+00:01:01,440 --> 00:01:04,879
+with it. If we want to show that
+
+31
+00:01:03,280 --> 00:01:08,080
+information, then we need to use one of
+
+32
+00:01:04,879 --> 00:01:12,479
+the output um methods that I showed you
+
+33
+00:01:08,080 --> 00:01:15,439
+prior. So, we could say let's alert the
+
+34
+00:01:12,479 --> 00:01:16,880
+type of username. So, it's going to take
+
+35
+00:01:15,439 --> 00:01:19,040
+the username, figure out what type of
+
+36
+00:01:16,880 --> 00:01:22,240
+variable it is, and then alert it. So,
+
+37
+00:01:19,040 --> 00:01:26,000
+if we save this and we come over here,
+
+38
+00:01:22,240 --> 00:01:27,680
+says, and I'm going to reload the page.
+
+39
+00:01:26,000 --> 00:01:31,520
+So we'll reload the page and it says
+
+40
+00:01:27,680 --> 00:01:33,040
+what is your username and we'll say I am
+
+41
+00:01:31,520 --> 00:01:34,720
+Batman
+
+42
+00:01:33,040 --> 00:01:37,920
+and it says the type of information
+
+43
+00:01:34,720 --> 00:01:39,840
+there is a string. So the information we
+
+44
+00:01:37,920 --> 00:01:42,240
+got back from the user is a string. So
+
+45
+00:01:39,840 --> 00:01:45,439
+let's close that. And now we'll come
+
+46
+00:01:42,240 --> 00:01:47,119
+over to Visual Studio Code. Um let's
+
+47
+00:01:45,439 --> 00:01:54,159
+create another variable here. We'll call
+
+48
+00:01:47,119 --> 00:01:56,640
+this say let my name equal or sorry let
+
+49
+00:01:54,159 --> 00:01:59,360
+equal true. And we're going to say,
+
+50
+00:01:56,640 --> 00:02:02,079
+let's see what type of variable happy
+
+51
+00:01:59,360 --> 00:02:04,479
+is. So I've created a new variable. It's
+
+52
+00:02:02,079 --> 00:02:07,119
+called happy. It's a boolean. And so
+
+53
+00:02:04,479 --> 00:02:09,039
+when I show this alert message, I should
+
+54
+00:02:07,119 --> 00:02:10,399
+see a boolean. Because we're not using
+
+55
+00:02:09,039 --> 00:02:12,480
+username right now, I'm going to comment
+
+56
+00:02:10,399 --> 00:02:13,760
+it out. You could put two slashes in
+
+57
+00:02:12,480 --> 00:02:15,200
+front of it. Or you could just click
+
+58
+00:02:13,760 --> 00:02:17,200
+into the line that you want commented
+
+59
+00:02:15,200 --> 00:02:19,840
+and hit command slash or control slash
+
+60
+00:02:17,200 --> 00:02:22,720
+if you're on Windows and save that. Now
+
+61
+00:02:19,840 --> 00:02:26,560
+if we come back over here, it pops up a
+
+62
+00:02:22,720 --> 00:02:30,319
+message and says this is a boolean. Um
+
+63
+00:02:26,560 --> 00:02:32,720
+if we change this variable to age and we
+
+64
+00:02:30,319 --> 00:02:34,560
+put it as eight and we say what is the
+
+65
+00:02:32,720 --> 00:02:36,400
+type of age?
+
+66
+00:02:34,560 --> 00:02:39,680
+If we come back over here, we can see
+
+67
+00:02:36,400 --> 00:02:42,080
+the age is a number. Well, fantastic.
+
+68
+00:02:39,680 --> 00:02:44,959
+This type of is showing us what is being
+
+69
+00:02:42,080 --> 00:02:47,200
+stored in a variable. So let's go back
+
+70
+00:02:44,959 --> 00:02:49,840
+and let's see what's in username. So,
+
+71
+00:02:47,200 --> 00:02:52,160
+we're going to save our code, come back
+
+72
+00:02:49,840 --> 00:02:55,519
+over, and for our username, we're going
+
+73
+00:02:52,160 --> 00:02:57,760
+to enter the number eight and hit okay.
+
+74
+00:02:55,519 --> 00:03:01,120
+Interesting. It said that the number
+
+75
+00:02:57,760 --> 00:03:03,599
+eight is a string.
+
+76
+00:03:01,120 --> 00:03:06,319
+And that is correct. Anytime you gather
+
+77
+00:03:03,599 --> 00:03:08,800
+information using the prompt input, it
+
+78
+00:03:06,319 --> 00:03:11,280
+returns it as a string. So, this prompt
+
+79
+00:03:08,800 --> 00:03:13,599
+input says, "What is your username?"
+
+80
+00:03:11,280 --> 00:03:17,599
+They enter the information and it is the
+
+81
+00:03:13,599 --> 00:03:19,360
+equivalent of typing in quotes 8 and
+
+82
+00:03:17,599 --> 00:03:21,599
+this is a string. Remember to be an
+
+83
+00:03:19,360 --> 00:03:23,440
+integer it needs to not have the quotes.
+
+84
+00:03:21,599 --> 00:03:26,400
+Everything that comes back from a prompt
+
+85
+00:03:23,440 --> 00:03:29,360
+is a string. Sometimes we need to work
+
+86
+00:03:26,400 --> 00:03:30,799
+with it like it's a number like age. And
+
+87
+00:03:29,360 --> 00:03:32,239
+so in order to do that we need to
+
+88
+00:03:30,799 --> 00:03:34,879
+convert which will be the topic of our
+
+89
+00:03:32,239 --> 00:03:36,959
+next video. In summary for this video
+
+90
+00:03:34,879 --> 00:03:39,280
+you use the keyword type of to figure
+
+91
+00:03:36,959 --> 00:03:41,760
+out what type of variable you have when
+
+92
+00:03:39,280 --> 00:03:44,000
+you don't know. And that concludes this
+
+93
+00:03:41,760 --> 00:03:44,000
+video.

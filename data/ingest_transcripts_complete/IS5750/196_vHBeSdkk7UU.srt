@@ -1,0 +1,51 @@
+1
+00:00:00,080 --> 00:00:04,880
+Just so that you don't have to make any
+
+2
+00:00:01,680 --> 00:00:07,359
+logical leaps here. I have some code and
+
+3
+00:00:04,880 --> 00:00:08,960
+I've created an array. So an array is a
+
+4
+00:00:07,359 --> 00:00:10,800
+complicated piece of data just like an
+
+5
+00:00:08,960 --> 00:00:13,519
+object. If I want to store it, I would
+
+6
+00:00:10,800 --> 00:00:16,000
+then first need to stringify it and then
+
+7
+00:00:13,519 --> 00:00:19,039
+set that data and then once I'm done, I
+
+8
+00:00:16,000 --> 00:00:21,039
+can parse that data and log it. So if we
+
+9
+00:00:19,039 --> 00:00:23,279
+do that, you can see it comes back as 1
+
+10
+00:00:21,039 --> 00:00:26,240
+2 3 as an array. But if we look in our
+
+11
+00:00:23,279 --> 00:00:29,679
+application, it stores as a text the
+
+12
+00:00:26,240 --> 00:00:33,599
+square braces 1, 2, 3. And that's how
+
+13
+00:00:29,679 --> 00:00:33,599
+you would store an array in local

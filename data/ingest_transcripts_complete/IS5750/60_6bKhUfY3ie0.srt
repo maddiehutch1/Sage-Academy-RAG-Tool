@@ -1,0 +1,459 @@
+1
+00:00:00,080 --> 00:00:04,000
+Okay, so I told you an array could store
+
+2
+00:00:02,480 --> 00:00:06,720
+multiple things. So let's see how this
+
+3
+00:00:04,000 --> 00:00:08,480
+magic variable works. So just like any
+
+4
+00:00:06,720 --> 00:00:10,880
+other variable, you'll create it with
+
+5
+00:00:08,480 --> 00:00:13,440
+the keyword let
+
+6
+00:00:10,880 --> 00:00:15,200
+and then you'll give it a name. Um let's
+
+7
+00:00:13,440 --> 00:00:18,160
+say I'm storing a bunch of first names.
+
+8
+00:00:15,200 --> 00:00:20,640
+So we'll say first names. Um and then
+
+9
+00:00:18,160 --> 00:00:23,199
+I'll say equals. And now if we were just
+
+10
+00:00:20,640 --> 00:00:25,840
+to store a string, I would put it like
+
+11
+00:00:23,199 --> 00:00:29,119
+that. Um,
+
+12
+00:00:25,840 --> 00:00:32,800
+maybe if we were to store a number, I'd
+
+13
+00:00:29,119 --> 00:00:34,320
+do that. Um, but as you can see, you're
+
+14
+00:00:32,800 --> 00:00:36,160
+still going to use the equal sign. But
+
+15
+00:00:34,320 --> 00:00:38,239
+if you want an array, then you want to
+
+16
+00:00:36,160 --> 00:00:42,800
+have things separated by commas. So, I
+
+17
+00:00:38,239 --> 00:00:44,800
+would want Toa and then Bruce and then,
+
+18
+00:00:42,800 --> 00:00:47,840
+and you can already see my computer's
+
+19
+00:00:44,800 --> 00:00:50,399
+starting to get mad at me. Um, in order
+
+20
+00:00:47,840 --> 00:00:53,120
+for your computer to know that this is
+
+21
+00:00:50,399 --> 00:00:55,440
+one value that just is separated into
+
+22
+00:00:53,120 --> 00:00:57,440
+smaller values, you need to use the
+
+23
+00:00:55,440 --> 00:00:59,840
+square braces. So, you can find the
+
+24
+00:00:57,440 --> 00:01:03,199
+square braces above your enter or return
+
+25
+00:00:59,840 --> 00:01:06,320
+key and then slightly to the left um
+
+26
+00:01:03,199 --> 00:01:08,560
+above your return key. So, I'm going to
+
+27
+00:01:06,320 --> 00:01:12,560
+delete this and I'm going to put those.
+
+28
+00:01:08,560 --> 00:01:14,960
+So, that right there is the syntax for
+
+29
+00:01:12,560 --> 00:01:16,720
+creating an array. You create a
+
+30
+00:01:14,960 --> 00:01:19,119
+variable, you give it a name, and then
+
+31
+00:01:16,720 --> 00:01:21,200
+you assign it equal to these square
+
+32
+00:01:19,119 --> 00:01:23,200
+braces. Now, if I want to put multiple
+
+33
+00:01:21,200 --> 00:01:26,240
+values in there, I could. So, I could
+
+34
+00:01:23,200 --> 00:01:30,799
+put Toa, I could put Bruce, I could put
+
+35
+00:01:26,240 --> 00:01:32,880
+Tim, I could put Natasha, um,
+
+36
+00:01:30,799 --> 00:01:36,000
+and I could go on and on and on, and I
+
+37
+00:01:32,880 --> 00:01:39,040
+can put a whole bunch of values inside
+
+38
+00:01:36,000 --> 00:01:40,720
+of one array.
+
+39
+00:01:39,040 --> 00:01:42,000
+So, well, if I asked you how to get to
+
+40
+00:01:40,720 --> 00:01:44,640
+something in the array, I said, "How do
+
+41
+00:01:42,000 --> 00:01:46,880
+I get to TOA?" Just visually speaking,
+
+42
+00:01:44,640 --> 00:01:48,399
+you say, "Well, first go to the array.
+
+43
+00:01:46,880 --> 00:01:50,880
+Then once you're in the array, go to the
+
+44
+00:01:48,399 --> 00:01:52,399
+first position." So, if I asked you how
+
+45
+00:01:50,880 --> 00:01:54,159
+to get to Natasha, you'd probably say,
+
+46
+00:01:52,399 --> 00:01:56,320
+"Well, visually speaking, go to the
+
+47
+00:01:54,159 --> 00:01:58,960
+array, find the item in the last
+
+48
+00:01:56,320 --> 00:02:00,640
+position. That's Natasha." Well, that's
+
+49
+00:01:58,960 --> 00:02:05,520
+exactly how you tell a computer how to
+
+50
+00:02:00,640 --> 00:02:07,759
+do it. Um, if you want to access um,
+
+51
+00:02:05,520 --> 00:02:10,640
+Bruce, then you say go to the first
+
+52
+00:02:07,759 --> 00:02:12,640
+names array and then in one of the
+
+53
+00:02:10,640 --> 00:02:14,319
+positions and you use square braces to
+
+54
+00:02:12,640 --> 00:02:18,000
+tell it you're accessing a specific
+
+55
+00:02:14,319 --> 00:02:20,160
+position rather than the entire array.
+
+56
+00:02:18,000 --> 00:02:22,879
+So just that right there, first names
+
+57
+00:02:20,160 --> 00:02:24,400
+accesses the entire array. If I put
+
+58
+00:02:22,879 --> 00:02:27,200
+square braces, I'm accessing an
+
+59
+00:02:24,400 --> 00:02:29,520
+individual item in the array. Just to
+
+60
+00:02:27,200 --> 00:02:33,760
+demonstrate this, I'm going to
+
+61
+00:02:29,520 --> 00:02:39,239
+console.log log first names. And if I do
+
+62
+00:02:33,760 --> 00:02:39,239
+that and save it, let's go live.
+
+63
+00:02:40,239 --> 00:02:47,680
+Um, and then we open up our terminal
+
+64
+00:02:44,640 --> 00:02:51,280
+in the console. Um, we got an array here
+
+65
+00:02:47,680 --> 00:02:54,800
+and it has TA, Bruce, Tim, and Natasha.
+
+66
+00:02:51,280 --> 00:02:56,800
+So, you can see that we access the
+
+67
+00:02:54,800 --> 00:02:58,560
+entire array. Now if we want to access
+
+68
+00:02:56,800 --> 00:03:01,040
+just one item in the array, we have to
+
+69
+00:02:58,560 --> 00:03:02,720
+say go to the array using its name and
+
+70
+00:03:01,040 --> 00:03:05,760
+then we have to say go to a specific
+
+71
+00:03:02,720 --> 00:03:08,319
+item in the array. So go to first names
+
+72
+00:03:05,760 --> 00:03:11,360
+and then go to computer start counting
+
+73
+00:03:08,319 --> 00:03:13,040
+at zero. So if we want Bruce then we
+
+74
+00:03:11,360 --> 00:03:14,640
+have to put one. So this would be
+
+75
+00:03:13,040 --> 00:03:16,400
+position zero. This would be position
+
+76
+00:03:14,640 --> 00:03:18,080
+one. This would be position two and this
+
+77
+00:03:16,400 --> 00:03:21,360
+would be position three. So we're saying
+
+78
+00:03:18,080 --> 00:03:25,519
+go to the array go to position one which
+
+79
+00:03:21,360 --> 00:03:27,519
+is two in. Now, if we save that and we
+
+80
+00:03:25,519 --> 00:03:29,599
+reload this page down here, we can see
+
+81
+00:03:27,519 --> 00:03:32,080
+that it says Bruce. And so, we've
+
+82
+00:03:29,599 --> 00:03:34,959
+successfully pulled an item directly out
+
+83
+00:03:32,080 --> 00:03:36,720
+of our array.
+
+84
+00:03:34,959 --> 00:03:39,200
+The same can be true for updating the
+
+85
+00:03:36,720 --> 00:03:43,280
+array. Let's say we want to change um
+
+86
+00:03:39,200 --> 00:03:44,400
+Bruce to be Natalie. I don't know why I
+
+87
+00:03:43,280 --> 00:03:47,120
+picked that one. I don't know how to
+
+88
+00:03:44,400 --> 00:03:49,040
+spell Natalie. Um but we'll try. So,
+
+89
+00:03:47,120 --> 00:03:50,480
+we're saying go to the first names Ray.
+
+90
+00:03:49,040 --> 00:03:52,640
+Go to the first position and set it
+
+91
+00:03:50,480 --> 00:03:54,400
+equal to Natalie. I think that's how you
+
+92
+00:03:52,640 --> 00:03:57,120
+spell it. And then once you've done
+
+93
+00:03:54,400 --> 00:03:58,560
+that, print out the name. And after
+
+94
+00:03:57,120 --> 00:04:02,239
+that, I'm actually going to print out
+
+95
+00:03:58,560 --> 00:04:03,760
+the entire first names list. So, I'm
+
+96
+00:04:02,239 --> 00:04:06,959
+going to save it. I'm going to come over
+
+97
+00:04:03,760 --> 00:04:09,280
+here and I printed out Natalie. And now
+
+98
+00:04:06,959 --> 00:04:12,480
+you can see that my array is to Natalie,
+
+99
+00:04:09,280 --> 00:04:14,640
+Tim, and Natasha. Um, where it used to
+
+100
+00:04:12,480 --> 00:04:16,959
+be to Bruce, Tim, and Natasha, we were
+
+101
+00:04:14,640 --> 00:04:20,000
+able to go into this position and edit
+
+102
+00:04:16,959 --> 00:04:22,000
+it. So now we have one variable that's
+
+103
+00:04:20,000 --> 00:04:23,520
+storing multiple pieces of information.
+
+104
+00:04:22,000 --> 00:04:26,639
+And then it makes it a lot easier to
+
+105
+00:04:23,520 --> 00:04:28,639
+track throughout our code because now I
+
+106
+00:04:26,639 --> 00:04:30,240
+just if I'm looking for any of the first
+
+107
+00:04:28,639 --> 00:04:31,840
+names in my code, I know they're all in
+
+108
+00:04:30,240 --> 00:04:33,759
+one variable and then I just have to
+
+109
+00:04:31,840 --> 00:04:35,919
+know what order they're in and then I
+
+110
+00:04:33,759 --> 00:04:38,240
+can edit them.
+
+111
+00:04:35,919 --> 00:04:39,680
+And that is the power of arrays. In the
+
+112
+00:04:38,240 --> 00:04:41,759
+next video, I'm going to show you how
+
+113
+00:04:39,680 --> 00:04:43,759
+you can add to an array and how you can
+
+114
+00:04:41,759 --> 00:04:46,000
+remove from an array. Thanks for
+
+115
+00:04:43,759 --> 00:04:46,000
+watching.

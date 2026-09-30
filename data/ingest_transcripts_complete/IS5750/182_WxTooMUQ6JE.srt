@@ -1,0 +1,279 @@
+1
+00:00:00,080 --> 00:00:05,839
+All right, it is time to make a request
+
+2
+00:00:02,879 --> 00:00:08,240
+from our code. So there is a function
+
+3
+00:00:05,839 --> 00:00:11,679
+for this. And so in your script tag,
+
+4
+00:00:08,240 --> 00:00:15,280
+write the keyword fetch. And inside of
+
+5
+00:00:11,679 --> 00:00:17,600
+there, um, it takes a URL that you want
+
+6
+00:00:15,280 --> 00:00:19,840
+to make a request to. So if I want to
+
+7
+00:00:17,600 --> 00:00:23,519
+make a request to the same one I made to
+
+8
+00:00:19,840 --> 00:00:26,240
+before, I'll say https colash. So, I'm
+
+9
+00:00:23,519 --> 00:00:28,240
+going to make an HTTP request and I'm
+
+10
+00:00:26,240 --> 00:00:31,199
+going to go out over the internet and I
+
+11
+00:00:28,240 --> 00:00:33,600
+want to go to api.advice
+
+12
+00:00:31,199 --> 00:00:36,920
+slip. Sorry, make sure I spell
+
+13
+00:00:33,600 --> 00:00:36,920
+everything right.
+
+14
+00:00:37,520 --> 00:00:43,680
+So, we know that that will give us back
+
+15
+00:00:41,360 --> 00:00:45,520
+an object, but it doesn't directly give
+
+16
+00:00:43,680 --> 00:00:48,000
+us back an object because this takes
+
+17
+00:00:45,520 --> 00:00:51,600
+time. What does fetch return? You
+
+18
+00:00:48,000 --> 00:00:53,199
+guessed it, it returns a promise. So um
+
+19
+00:00:51,600 --> 00:00:55,199
+there are two ways that we could handle
+
+20
+00:00:53,199 --> 00:00:57,680
+this and I'm going to demonstrate both
+
+21
+00:00:55,199 --> 00:00:59,600
+of them. So first demonstrate my
+
+22
+00:00:57,680 --> 00:01:03,440
+favorite. So you can write an async
+
+23
+00:00:59,600 --> 00:01:07,760
+function. So I'll call async get data
+
+24
+00:01:03,440 --> 00:01:11,960
+and um
+
+25
+00:01:07,760 --> 00:01:11,960
+I do need to use the word function.
+
+26
+00:01:12,560 --> 00:01:18,560
+So, async
+
+27
+00:01:15,439 --> 00:01:22,000
+get data
+
+28
+00:01:18,560 --> 00:01:25,200
+and then in here
+
+29
+00:01:22,000 --> 00:01:26,240
+I'm going to await that fetch and I'm
+
+30
+00:01:25,200 --> 00:01:29,360
+going to store it. So, I'm going to say
+
+31
+00:01:26,240 --> 00:01:31,600
+let response equal
+
+32
+00:01:29,360 --> 00:01:35,960
+await fetch. And then now on the next
+
+33
+00:01:31,600 --> 00:01:35,960
+line I can console.log log
+
+34
+00:01:36,960 --> 00:01:40,200
+the response
+
+35
+00:01:40,240 --> 00:01:45,840
+or if you like to chain then um oh I do
+
+36
+00:01:43,920 --> 00:01:50,000
+need to call my get data I never
+
+37
+00:01:45,840 --> 00:01:52,720
+remember to do that um or you can take
+
+38
+00:01:50,000 --> 00:01:58,079
+this line here
+
+39
+00:01:52,720 --> 00:02:00,640
+and I'll paste it below and you can say
+
+40
+00:01:58,079 --> 00:02:03,280
+fetch and then once you've gone out and
+
+41
+00:02:00,640 --> 00:02:07,799
+fetched it then take the response that
+
+42
+00:02:03,280 --> 00:02:07,799
+you were given and log it.
+
+43
+00:02:08,000 --> 00:02:16,000
+So line 20 and lines 11 through 18 do
+
+44
+00:02:13,200 --> 00:02:19,400
+the same thing. So we'll save this and
+
+45
+00:02:16,000 --> 00:02:19,400
+we'll go live.
+
+46
+00:02:22,000 --> 00:02:25,800
+Oh, sorry. One second.
+
+47
+00:02:26,160 --> 00:02:31,920
+And if we inspect this page here on the
+
+48
+00:02:29,040 --> 00:02:34,160
+console, we can see we got response and
+
+49
+00:02:31,920 --> 00:02:37,120
+response. So, let's open up this first
+
+50
+00:02:34,160 --> 00:02:40,480
+response. And you can see the URL we
+
+51
+00:02:37,120 --> 00:02:42,480
+sent it to. Um, and you can see that we
+
+52
+00:02:40,480 --> 00:02:45,280
+did in fact get a good response. And if
+
+53
+00:02:42,480 --> 00:02:46,640
+you're familiar with HTTP status codes,
+
+54
+00:02:45,280 --> 00:02:48,319
+we get the status code. There's all
+
+55
+00:02:46,640 --> 00:02:49,840
+sorts of information in this response.
+
+56
+00:02:48,319 --> 00:02:51,599
+The one that I really want to point your
+
+57
+00:02:49,840 --> 00:02:55,360
+attention to is this body. Notice that
+
+58
+00:02:51,599 --> 00:02:58,160
+it has dot dot dot here. And if I click
+
+59
+00:02:55,360 --> 00:03:00,319
+on it, it says that the body is a
+
+60
+00:02:58,160 --> 00:03:01,840
+readable stream. What is a readable
+
+61
+00:03:00,319 --> 00:03:03,760
+stream? Well, it is a stream of
+
+62
+00:03:01,840 --> 00:03:06,239
+information coming back from wherever
+
+63
+00:03:03,760 --> 00:03:08,319
+you requested it. And it can take some
+
+64
+00:03:06,239 --> 00:03:09,920
+time to read this stream. And if I want
+
+65
+00:03:08,319 --> 00:03:11,280
+to read this stream and put it into a
+
+66
+00:03:09,920 --> 00:03:13,280
+variable in my code, it can take some
+
+67
+00:03:11,280 --> 00:03:14,879
+time. And if it's going to take some
+
+68
+00:03:13,280 --> 00:03:17,519
+time, what does that mean we're dealing
+
+69
+00:03:14,879 --> 00:03:20,080
+with? You guessed it. We're dealing with
+
+70
+00:03:17,519 --> 00:03:20,080
+another promise.

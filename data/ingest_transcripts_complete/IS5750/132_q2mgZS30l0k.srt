@@ -1,0 +1,375 @@
+1
+00:00:00,160 --> 00:00:05,279
+Okay. So, what I've shown you before is
+
+2
+00:00:02,080 --> 00:00:07,759
+a nice like rosy way of looking at
+
+3
+00:00:05,279 --> 00:00:10,160
+things. Um, but sometimes things don't
+
+4
+00:00:07,759 --> 00:00:14,080
+always work out quite as smoothly as
+
+5
+00:00:10,160 --> 00:00:16,960
+we'd like. So, um, what I've done here
+
+6
+00:00:14,080 --> 00:00:20,240
+is I added this function here called
+
+7
+00:00:16,960 --> 00:00:22,400
+divide. Um, if you don't know how to
+
+8
+00:00:20,240 --> 00:00:24,000
+write a function like that, um, I'd
+
+9
+00:00:22,400 --> 00:00:26,400
+recommend looking at a previous video.
+
+10
+00:00:24,000 --> 00:00:29,279
+But um in this video, I've written the
+
+11
+00:00:26,400 --> 00:00:31,679
+divide function and I'm ready to push
+
+12
+00:00:29,279 --> 00:00:33,520
+that up to GitHub. So I published my
+
+13
+00:00:31,679 --> 00:00:36,640
+branch and now I'm going to create a
+
+14
+00:00:33,520 --> 00:00:38,879
+pull request. Down here it says I cannot
+
+15
+00:00:36,640 --> 00:00:40,559
+automatically merge. Says don't worry,
+
+16
+00:00:38,879 --> 00:00:41,600
+you can still create the pull request.
+
+17
+00:00:40,559 --> 00:00:45,320
+So what I'm going to do is I'm going to
+
+18
+00:00:41,600 --> 00:00:45,320
+hit create pull request.
+
+19
+00:00:45,520 --> 00:00:51,039
+And now I am here. And it says you can't
+
+20
+00:00:48,559 --> 00:00:54,320
+automatically merge. Don't worry, you
+
+21
+00:00:51,039 --> 00:00:56,000
+can still create the pull request. So,
+
+22
+00:00:54,320 --> 00:00:59,239
+I'm going to go ahead and create this
+
+23
+00:00:56,000 --> 00:00:59,239
+pull request.
+
+24
+00:01:00,719 --> 00:01:04,159
+And it says the branch has conflicts
+
+25
+00:01:02,399 --> 00:01:05,760
+that must be resolved. Use the web
+
+26
+00:01:04,159 --> 00:01:08,080
+editor or command line to resolve the
+
+27
+00:01:05,760 --> 00:01:11,119
+conflicts before moving on. In other
+
+28
+00:01:08,080 --> 00:01:14,000
+words, my code contradicts code that is
+
+29
+00:01:11,119 --> 00:01:15,520
+in the main branch. So, what I'm going
+
+30
+00:01:14,000 --> 00:01:19,520
+to do is I'm going to click this resolve
+
+31
+00:01:15,520 --> 00:01:21,600
+conflicts. This happened because another
+
+32
+00:01:19,520 --> 00:01:24,400
+account created this function called
+
+33
+00:01:21,600 --> 00:01:28,799
+divide. So, we edited the same lines of
+
+34
+00:01:24,400 --> 00:01:32,479
+code and now GitHub doesn't know which
+
+35
+00:01:28,799 --> 00:01:36,960
+one is correct. So, I've got my line
+
+36
+00:01:32,479 --> 00:01:39,840
+here and their lines are here.
+
+37
+00:01:36,960 --> 00:01:41,920
+So, this is my change. This is their
+
+38
+00:01:39,840 --> 00:01:43,600
+change. I'm going to move my picture a
+
+39
+00:01:41,920 --> 00:01:46,560
+little bit so we can see the rest of
+
+40
+00:01:43,600 --> 00:01:48,320
+this. So, to handle this, all you do is
+
+41
+00:01:46,560 --> 00:01:50,240
+you compare the lines of code. So
+
+42
+00:01:48,320 --> 00:01:53,360
+everything between the equal sign and
+
+43
+00:01:50,240 --> 00:01:55,680
+the arrows is what's on the main copy of
+
+44
+00:01:53,360 --> 00:01:58,079
+our code. Everything between the equal
+
+45
+00:01:55,680 --> 00:01:59,759
+sign and the other arrows is the copy
+
+46
+00:01:58,079 --> 00:02:03,600
+that we're bringing in. So the question
+
+47
+00:01:59,759 --> 00:02:06,640
+is, do we want to keep our code or the
+
+48
+00:02:03,600 --> 00:02:08,959
+other code? If you want to keep both,
+
+49
+00:02:06,640 --> 00:02:11,760
+then you totally can. So you could have
+
+50
+00:02:08,959 --> 00:02:13,280
+two divide functions. Well, you probably
+
+51
+00:02:11,760 --> 00:02:15,440
+don't want two divide functions, but you
+
+52
+00:02:13,280 --> 00:02:17,040
+could keep both lines of code. So maybe
+
+53
+00:02:15,440 --> 00:02:19,440
+this isn't actually a conflict and you
+
+54
+00:02:17,040 --> 00:02:21,840
+want both lines of code. If you do that,
+
+55
+00:02:19,440 --> 00:02:24,319
+you'll accept both changes. In this
+
+56
+00:02:21,840 --> 00:02:26,239
+case, because these are written using
+
+57
+00:02:24,319 --> 00:02:27,680
+lambda syntax, I want to keep the
+
+58
+00:02:26,239 --> 00:02:29,280
+incoming change because that's written
+
+59
+00:02:27,680 --> 00:02:33,560
+with lambda syntax. So I'm going to
+
+60
+00:02:29,280 --> 00:02:33,560
+click accept incoming change.
+
+61
+00:02:34,080 --> 00:02:39,040
+Whoops. Going to hit control Z. I'm
+
+62
+00:02:37,120 --> 00:02:40,480
+going to accept the current change. It's
+
+63
+00:02:39,040 --> 00:02:42,400
+marked right next to it which one is
+
+64
+00:02:40,480 --> 00:02:44,319
+which. So I'm going to accept the
+
+65
+00:02:42,400 --> 00:02:46,800
+current change. and that will get my
+
+66
+00:02:44,319 --> 00:02:49,680
+correct function. And then I will mark
+
+67
+00:02:46,800 --> 00:02:51,360
+this as resolved. And then because I'm
+
+68
+00:02:49,680 --> 00:02:53,280
+resolving conflicts and I've changed
+
+69
+00:02:51,360 --> 00:02:55,360
+something about my code, I now have to
+
+70
+00:02:53,280 --> 00:02:59,080
+make a new commit. So I'm going to click
+
+71
+00:02:55,360 --> 00:02:59,080
+this commit merge.
+
+72
+00:02:59,760 --> 00:03:05,280
+And once it's done, I have now removed
+
+73
+00:03:03,120 --> 00:03:08,400
+any conflicts between my copy of code
+
+74
+00:03:05,280 --> 00:03:11,120
+and the main copy of code. Now I can
+
+75
+00:03:08,400 --> 00:03:13,920
+merge this pull request. So we'll merge
+
+76
+00:03:11,120 --> 00:03:17,599
+the pull request.
+
+77
+00:03:13,920 --> 00:03:20,640
+And now if we look at the live code um
+
+78
+00:03:17,599 --> 00:03:22,400
+here in multiply.js we have multiply add
+
+79
+00:03:20,640 --> 00:03:23,920
+and divide. So even though my code
+
+80
+00:03:22,400 --> 00:03:27,200
+conflicted with code that was already
+
+81
+00:03:23,920 --> 00:03:30,000
+there um we were able to just go into
+
+82
+00:03:27,200 --> 00:03:31,440
+the resolve editor and find the code
+
+83
+00:03:30,000 --> 00:03:33,680
+that we wanted to keep and the code that
+
+84
+00:03:31,440 --> 00:03:35,680
+we didn't want to keep and we were able
+
+85
+00:03:33,680 --> 00:03:38,000
+to merge them together. And that is how
+
+86
+00:03:35,680 --> 00:03:39,920
+you deal with a conflict in GitHub. It's
+
+87
+00:03:38,000 --> 00:03:41,440
+not normally that clean. Normally takes
+
+88
+00:03:39,920 --> 00:03:43,040
+a lot of work. You probably have to talk
+
+89
+00:03:41,440 --> 00:03:44,400
+to a lot of other people if you're
+
+90
+00:03:43,040 --> 00:03:46,000
+working with other people to figure out
+
+91
+00:03:44,400 --> 00:03:48,560
+why your code is conflicting and which
+
+92
+00:03:46,000 --> 00:03:51,200
+code should be kept. Um but the process
+
+93
+00:03:48,560 --> 00:03:54,480
+for resolving it um can be done in the
+
+94
+00:03:51,200 --> 00:03:54,480
+GitHub online editor.

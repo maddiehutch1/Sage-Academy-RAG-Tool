@@ -1,0 +1,111 @@
+1
+00:00:00,080 --> 00:00:05,520
+Okay, so it is time to stop the bubbling
+
+2
+00:00:03,120 --> 00:00:07,839
+effect. In order to do that, we do have
+
+3
+00:00:05,520 --> 00:00:11,440
+to access the event attribute. So come
+
+4
+00:00:07,839 --> 00:00:13,040
+into each of the logs and add the word
+
+5
+00:00:11,440 --> 00:00:15,599
+event because we're going to pass the
+
+6
+00:00:13,040 --> 00:00:18,560
+event into our function. Our function
+
+7
+00:00:15,599 --> 00:00:21,199
+needs to accept the event and then we're
+
+8
+00:00:18,560 --> 00:00:22,880
+just going to say e.
+
+9
+00:00:21,199 --> 00:00:25,439
+Stop
+
+10
+00:00:22,880 --> 00:00:27,680
+propagation.
+
+11
+00:00:25,439 --> 00:00:31,599
+And that stops propagation. Sorry,
+
+12
+00:00:27,680 --> 00:00:34,640
+really hard to spell that. Um, and then
+
+13
+00:00:31,599 --> 00:00:36,719
+we're going to console.log
+
+14
+00:00:34,640 --> 00:00:38,879
+hello.
+
+15
+00:00:36,719 --> 00:00:41,520
+So, if we come over to our running code
+
+16
+00:00:38,879 --> 00:00:43,440
+and we click uh the outer layer, oh,
+
+17
+00:00:41,520 --> 00:00:45,120
+it'd help if we have our console open.
+
+18
+00:00:43,440 --> 00:00:47,039
+If we click the outer layer, we get
+
+19
+00:00:45,120 --> 00:00:48,800
+hello. If we click the middle layer, we
+
+20
+00:00:47,039 --> 00:00:50,559
+get hello. And if we click the inner
+
+21
+00:00:48,800 --> 00:00:52,480
+layer, we get hello. So, now it's only
+
+22
+00:00:50,559 --> 00:00:57,360
+being called once because we've stopped
+
+23
+00:00:52,480 --> 00:00:59,520
+the bubbling from happening. And so that
+
+24
+00:00:57,360 --> 00:01:02,000
+is how you can prevent the bubbling from
+
+25
+00:00:59,520 --> 00:01:04,159
+happening. You access the event and you
+
+26
+00:01:02,000 --> 00:01:08,159
+say stop propagation and that will stop
+
+27
+00:01:04,159 --> 00:01:10,799
+it from going up the tree to any of the
+
+28
+00:01:08,159 --> 00:01:10,799
+higher components.

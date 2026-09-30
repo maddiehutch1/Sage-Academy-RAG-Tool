@@ -1,0 +1,475 @@
+1
+00:00:00,160 --> 00:00:06,480
+Okay, so if you're anything like me, as
+
+2
+00:00:04,080 --> 00:00:09,040
+soon as you start writing a ton of code,
+
+3
+00:00:06,480 --> 00:00:11,759
+it starts to get hard to process. Maybe
+
+4
+00:00:09,040 --> 00:00:13,440
+let's look at our array project.html.
+
+5
+00:00:11,759 --> 00:00:15,120
+Look at all that code. And like
+
+6
+00:00:13,440 --> 00:00:18,480
+mentally, that's just kind of hard to
+
+7
+00:00:15,120 --> 00:00:20,080
+process. And so, generally, as a good
+
+8
+00:00:18,480 --> 00:00:23,199
+practice, you don't want all of your
+
+9
+00:00:20,080 --> 00:00:25,600
+code to be in one file. In fact, it'd be
+
+10
+00:00:23,199 --> 00:00:27,279
+really nice if none of these functions
+
+11
+00:00:25,600 --> 00:00:29,279
+were in this file and we could just use
+
+12
+00:00:27,279 --> 00:00:31,359
+them because isn't it so much nicer to
+
+13
+00:00:29,279 --> 00:00:33,920
+just be able to type alert without
+
+14
+00:00:31,359 --> 00:00:36,719
+having to see up here someone who
+
+15
+00:00:33,920 --> 00:00:38,160
+defined a function called alert?
+
+16
+00:00:36,719 --> 00:00:39,600
+Like we don't need to see all the code
+
+17
+00:00:38,160 --> 00:00:43,280
+to make it work. We just want to make it
+
+18
+00:00:39,600 --> 00:00:44,800
+run. Well, I've got good news for you.
+
+19
+00:00:43,280 --> 00:00:47,440
+We can do that with our own functions,
+
+20
+00:00:44,800 --> 00:00:50,160
+too. So, let's take these functions and
+
+21
+00:00:47,440 --> 00:00:54,879
+move them to another file. So, let's
+
+22
+00:00:50,160 --> 00:00:56,800
+command X or control X to cut them
+
+23
+00:00:54,879 --> 00:00:58,480
+and then save that file and then create
+
+24
+00:00:56,800 --> 00:01:01,120
+a new file. And we're going to call this
+
+25
+00:00:58,480 --> 00:01:03,520
+one script.js.
+
+26
+00:01:01,120 --> 00:01:05,680
+Whenever you put js on the end of a
+
+27
+00:01:03,520 --> 00:01:08,240
+file, it tells it that it's a JavaScript
+
+28
+00:01:05,680 --> 00:01:09,760
+file. Which means unlike HTML where we
+
+29
+00:01:08,240 --> 00:01:13,520
+need to put a script tag to start
+
+30
+00:01:09,760 --> 00:01:15,520
+writing code, in a JS file, we can just
+
+31
+00:01:13,520 --> 00:01:19,840
+write code. Write JavaScript code. So
+
+32
+00:01:15,520 --> 00:01:21,040
+we'd say let my val equal hello. And
+
+33
+00:01:19,840 --> 00:01:23,439
+just like that, we've created a
+
+34
+00:01:21,040 --> 00:01:25,840
+variable. Well, let's paste in our
+
+35
+00:01:23,439 --> 00:01:28,880
+functions here. And then to format them,
+
+36
+00:01:25,840 --> 00:01:30,159
+hold option shift F or alt shift F if
+
+37
+00:01:28,880 --> 00:01:32,240
+you're on a Windows. That will
+
+38
+00:01:30,159 --> 00:01:34,479
+automatically format your code. So now
+
+39
+00:01:32,240 --> 00:01:38,000
+all of our functions are here in our
+
+40
+00:01:34,479 --> 00:01:40,560
+script.js file. Um, so let's just save
+
+41
+00:01:38,000 --> 00:01:43,759
+our file and we'll go see what's
+
+42
+00:01:40,560 --> 00:01:46,880
+running. And oh no, it says it cannot
+
+43
+00:01:43,759 --> 00:01:49,280
+find apply to array. And if we look
+
+44
+00:01:46,880 --> 00:01:51,680
+here, it says apply to array isn't
+
+45
+00:01:49,280 --> 00:01:54,479
+defined. So it turns out there is one
+
+46
+00:01:51,680 --> 00:01:56,079
+more step to this. And that is before
+
+47
+00:01:54,479 --> 00:01:57,600
+your script tag where you wrote your
+
+48
+00:01:56,079 --> 00:02:00,640
+code, you need to write another script
+
+49
+00:01:57,600 --> 00:02:02,880
+tag. And here you need to bring in the
+
+50
+00:02:00,640 --> 00:02:05,759
+file that you just created. The way you
+
+51
+00:02:02,880 --> 00:02:08,720
+do that is you do src equals and then
+
+52
+00:02:05,759 --> 00:02:11,120
+you do open quotes and then you say
+
+53
+00:02:08,720 --> 00:02:12,720
+where is the file on my computer. There
+
+54
+00:02:11,120 --> 00:02:17,200
+are two ways you could type this. You
+
+55
+00:02:12,720 --> 00:02:20,800
+could say it's in the C drive in the um
+
+56
+00:02:17,200 --> 00:02:22,720
+on the desktop or you could use what's
+
+57
+00:02:20,800 --> 00:02:25,120
+known as
+
+58
+00:02:22,720 --> 00:02:28,160
+relative references.
+
+59
+00:02:25,120 --> 00:02:31,440
+So rather than saying here's the exact
+
+60
+00:02:28,160 --> 00:02:34,480
+location on the computer, it's like um
+
+61
+00:02:31,440 --> 00:02:37,519
+giving directions from where you are. Um
+
+62
+00:02:34,480 --> 00:02:40,239
+so we're in test.html.
+
+63
+00:02:37,519 --> 00:02:41,840
+If we want to get to script.js, where is
+
+64
+00:02:40,239 --> 00:02:43,920
+it in relation to us? Well, we are in
+
+65
+00:02:41,840 --> 00:02:46,160
+the same folder. So if we are in the
+
+66
+00:02:43,920 --> 00:02:48,720
+same folder, then we can just say it's
+
+67
+00:02:46,160 --> 00:02:51,200
+in the same folder as us. Now let's say
+
+68
+00:02:48,720 --> 00:02:53,040
+you wanted to go up one folder. Maybe
+
+69
+00:02:51,200 --> 00:02:56,160
+it's not in array project. It's in the
+
+70
+00:02:53,040 --> 00:02:59,280
+parent folder. dot dot slash says go up
+
+71
+00:02:56,160 --> 00:03:03,040
+one folder. So we would be saying from
+
+72
+00:02:59,280 --> 00:03:04,800
+where test.html is go up one folder out
+
+73
+00:03:03,040 --> 00:03:07,200
+of array project and into the folder
+
+74
+00:03:04,800 --> 00:03:10,080
+that holds array project and then look
+
+75
+00:03:07,200 --> 00:03:12,560
+for script.js.
+
+76
+00:03:10,080 --> 00:03:14,879
+Um if we don't include that, it just
+
+77
+00:03:12,560 --> 00:03:18,000
+says look for script.js from where we
+
+78
+00:03:14,879 --> 00:03:21,120
+are. So if we save this and we come over
+
+79
+00:03:18,000 --> 00:03:23,200
+to our console, we see that our code
+
+80
+00:03:21,120 --> 00:03:24,640
+successfully worked. All of our strings
+
+81
+00:03:23,200 --> 00:03:27,599
+have been capitalized. All of our
+
+82
+00:03:24,640 --> 00:03:30,480
+numbers have been rounded.
+
+83
+00:03:27,599 --> 00:03:32,000
+Um, and then I'm going to show you a
+
+84
+00:03:30,480 --> 00:03:35,120
+couple of caveats, a couple of things
+
+85
+00:03:32,000 --> 00:03:37,760
+that'll break this. Um, one is that
+
+86
+00:03:35,120 --> 00:03:39,840
+script tags run in order. Code runs from
+
+87
+00:03:37,760 --> 00:03:41,840
+the top to the bottom. So, if you use
+
+88
+00:03:39,840 --> 00:03:44,720
+your script tag down here, it will bring
+
+89
+00:03:41,840 --> 00:03:47,440
+your functions into your HTML file after
+
+90
+00:03:44,720 --> 00:03:49,760
+it tries to run this. So if we save it
+
+91
+00:03:47,440 --> 00:03:51,280
+and we go look at our code, we get to
+
+92
+00:03:49,760 --> 00:03:53,280
+sorry go look at our running website, we
+
+93
+00:03:51,280 --> 00:03:56,080
+get to see that apply to array doesn't
+
+94
+00:03:53,280 --> 00:03:59,599
+exist. The other thing that people are
+
+95
+00:03:56,080 --> 00:04:01,920
+tempted to try to do is
+
+96
+00:03:59,599 --> 00:04:04,239
+they will not include that and they will
+
+97
+00:04:01,920 --> 00:04:07,040
+just in this script tag write a source
+
+98
+00:04:04,239 --> 00:04:09,439
+and say script.js.
+
+99
+00:04:07,040 --> 00:04:11,200
+If you do that now nothing is running.
+
+100
+00:04:09,439 --> 00:04:13,360
+So when you use a script tag you can
+
+101
+00:04:11,200 --> 00:04:16,959
+only do one thing with it. You can
+
+102
+00:04:13,360 --> 00:04:21,440
+either bring in information from outside
+
+103
+00:04:16,959 --> 00:04:24,320
+in which case you would say script
+
+104
+00:04:21,440 --> 00:04:26,320
+source equals script.js
+
+105
+00:04:24,320 --> 00:04:28,320
+or
+
+106
+00:04:26,320 --> 00:04:30,320
+you can run your own JavaScript inside
+
+107
+00:04:28,320 --> 00:04:32,479
+of it like we have here in which case
+
+108
+00:04:30,320 --> 00:04:34,639
+you don't put the source tag. If you try
+
+109
+00:04:32,479 --> 00:04:37,680
+and do both in one script your code will
+
+110
+00:04:34,639 --> 00:04:40,080
+stop working. So important things if you
+
+111
+00:04:37,680 --> 00:04:41,919
+move your functions to an external file
+
+112
+00:04:40,080 --> 00:04:44,880
+then you need to bring that file in
+
+113
+00:04:41,919 --> 00:04:46,720
+before you call your functions. If you
+
+114
+00:04:44,880 --> 00:04:48,639
+are bringing in an external file you
+
+115
+00:04:46,720 --> 00:04:50,880
+must do it in a separate script tag from
+
+116
+00:04:48,639 --> 00:04:52,800
+the script tag where you write your code
+
+117
+00:04:50,880 --> 00:04:54,160
+that calls those functions. And that
+
+118
+00:04:52,800 --> 00:04:57,280
+concludes this video on how to export
+
+119
+00:04:54,160 --> 00:04:57,280
+your functions to a different file.

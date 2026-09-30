@@ -1,0 +1,423 @@
+1
+00:00:00,080 --> 00:00:04,240
+Okay, now that we've discussed the
+
+2
+00:00:01,600 --> 00:00:07,200
+spread operator, um, we can discuss
+
+3
+00:00:04,240 --> 00:00:09,200
+destructuring an array, which sounds
+
+4
+00:00:07,200 --> 00:00:10,400
+scary, but I promise you it isn't. So,
+
+5
+00:00:09,200 --> 00:00:12,639
+what I'm going to do is I'm going to get
+
+6
+00:00:10,400 --> 00:00:13,840
+rid of this code here, and I'm going to
+
+7
+00:00:12,639 --> 00:00:15,360
+create an array like this. So, let's say
+
+8
+00:00:13,840 --> 00:00:18,000
+we have an array that says superhero
+
+9
+00:00:15,360 --> 00:00:22,320
+Bruce, Wayne, Batman, and 20. If I
+
+10
+00:00:18,000 --> 00:00:25,920
+wanted to print out um Bruce, then I
+
+11
+00:00:22,320 --> 00:00:27,599
+might alert superhero at the zero
+
+12
+00:00:25,920 --> 00:00:29,760
+position.
+
+13
+00:00:27,599 --> 00:00:33,280
+Um, and if I want to print out Wayne,
+
+14
+00:00:29,760 --> 00:00:35,920
+I'd have to say superhero
+
+15
+00:00:33,280 --> 00:00:39,200
+at the one position. And that would
+
+16
+00:00:35,920 --> 00:00:43,760
+alert Bruce and then Wayne. So, I'm
+
+17
+00:00:39,200 --> 00:00:47,360
+going to save this and go live
+
+18
+00:00:43,760 --> 00:00:49,200
+and we get Bruce and then Wayne. And so,
+
+19
+00:00:47,360 --> 00:00:50,719
+if we come back over here, that works.
+
+20
+00:00:49,200 --> 00:00:53,440
+But wouldn't it be nice if we had just
+
+21
+00:00:50,719 --> 00:00:56,879
+access Bruce with first name and Wayne
+
+22
+00:00:53,440 --> 00:01:00,480
+with last name? um or maybe first last
+
+23
+00:00:56,879 --> 00:01:03,680
+identity and um number of villains
+
+24
+00:01:00,480 --> 00:01:05,280
+caught this month. Um well, we can the
+
+25
+00:01:03,680 --> 00:01:06,159
+way we do that is we use the keyword let
+
+26
+00:01:05,280 --> 00:01:08,000
+because we're going to create some
+
+27
+00:01:06,159 --> 00:01:09,920
+variables. Where we create them is
+
+28
+00:01:08,000 --> 00:01:11,760
+between these square braces. We're
+
+29
+00:01:09,920 --> 00:01:13,520
+saying we have an array and we want to
+
+30
+00:01:11,760 --> 00:01:15,840
+pull each item out of the array and put
+
+31
+00:01:13,520 --> 00:01:20,560
+it into a corresponding variable. So,
+
+32
+00:01:15,840 --> 00:01:24,320
+I'm going to put first, last, um,
+
+33
+00:01:20,560 --> 00:01:27,439
+identity, and
+
+34
+00:01:24,320 --> 00:01:31,280
+villain count, and I'm going to set it
+
+35
+00:01:27,439 --> 00:01:33,920
+equal to superhero. What this does is it
+
+36
+00:01:31,280 --> 00:01:36,079
+says K.
+
+37
+00:01:33,920 --> 00:01:38,320
+Take the first thing out of the
+
+38
+00:01:36,079 --> 00:01:40,320
+superhero array and put it into this
+
+39
+00:01:38,320 --> 00:01:41,439
+variable called first. Take the second
+
+40
+00:01:40,320 --> 00:01:42,799
+thing and put it into the second
+
+41
+00:01:41,439 --> 00:01:44,240
+variable. on the third thing and put it
+
+42
+00:01:42,799 --> 00:01:46,000
+in the third variable on the fourth
+
+43
+00:01:44,240 --> 00:01:48,079
+thing and put it in the fourth variable.
+
+44
+00:01:46,000 --> 00:01:52,720
+What this allows me to do is just allow
+
+45
+00:01:48,079 --> 00:01:54,960
+alert first and then alert last.
+
+46
+00:01:52,720 --> 00:01:57,600
+So if I save this and I go over, we get
+
+47
+00:01:54,960 --> 00:02:00,159
+Bruce and Wayne. And so in this way,
+
+48
+00:01:57,600 --> 00:02:03,280
+we're able to access each item in this
+
+49
+00:02:00,159 --> 00:02:04,960
+array by a variable name rather than
+
+50
+00:02:03,280 --> 00:02:07,520
+having to say superhero at the zero
+
+51
+00:02:04,960 --> 00:02:09,520
+position. So, but what if you only
+
+52
+00:02:07,520 --> 00:02:12,239
+wanted to do this for certain items?
+
+53
+00:02:09,520 --> 00:02:15,280
+What if we just want the first name and
+
+54
+00:02:12,239 --> 00:02:17,920
+the identity? Well, if we want to do
+
+55
+00:02:15,280 --> 00:02:21,120
+that, then
+
+56
+00:02:17,920 --> 00:02:23,599
+we'll say what you do is you just get
+
+57
+00:02:21,120 --> 00:02:25,280
+rid of the parts you don't want and you
+
+58
+00:02:23,599 --> 00:02:28,560
+leave the commas. So, I'm saying I want
+
+59
+00:02:25,280 --> 00:02:30,720
+the first one, nothing, and the third
+
+60
+00:02:28,560 --> 00:02:34,080
+one, and then nothing. So, if I save
+
+61
+00:02:30,720 --> 00:02:37,280
+this, and I alert first,
+
+62
+00:02:34,080 --> 00:02:38,959
+and then I alert identity.
+
+63
+00:02:37,280 --> 00:02:42,080
+If I save that and I come over, I get
+
+64
+00:02:38,959 --> 00:02:43,360
+Bruce and Batman. Um, because we said we
+
+65
+00:02:42,080 --> 00:02:46,879
+don't care about the one that comes
+
+66
+00:02:43,360 --> 00:02:49,040
+between the zero position and the two
+
+67
+00:02:46,879 --> 00:02:50,879
+position. We don't care about the one
+
+68
+00:02:49,040 --> 00:02:52,239
+position and we don't care about the
+
+69
+00:02:50,879 --> 00:02:53,360
+position that comes after the two
+
+70
+00:02:52,239 --> 00:02:56,480
+position. Meaning, we don't care about
+
+71
+00:02:53,360 --> 00:02:59,599
+the three position. We care about zero
+
+72
+00:02:56,480 --> 00:03:02,000
+and two. And in that way, we're able to
+
+73
+00:02:59,599 --> 00:03:03,599
+get just some of the things. Well, what
+
+74
+00:03:02,000 --> 00:03:06,080
+if
+
+75
+00:03:03,599 --> 00:03:07,360
+we want to grab the first two out and
+
+76
+00:03:06,080 --> 00:03:09,760
+then we still want the rest of them
+
+77
+00:03:07,360 --> 00:03:11,599
+stored in an array? Well, you can do
+
+78
+00:03:09,760 --> 00:03:15,760
+that as well. So, what you can do is you
+
+79
+00:03:11,599 --> 00:03:17,680
+say you want first and last
+
+80
+00:03:15,760 --> 00:03:20,319
+and then you can use the spread operator
+
+81
+00:03:17,680 --> 00:03:23,120
+that we just learned to say everything
+
+82
+00:03:20,319 --> 00:03:28,480
+else.
+
+83
+00:03:23,120 --> 00:03:31,200
+So now if we alert first, last, and then
+
+84
+00:03:28,480 --> 00:03:35,000
+everything else. If we save that, if we
+
+85
+00:03:31,200 --> 00:03:35,000
+come over here, we get Bruce.
+
+86
+00:03:35,360 --> 00:03:40,400
+Oh, where do I have identity? We'll
+
+87
+00:03:37,599 --> 00:03:42,879
+reload this page. We get Bruce, Wayne,
+
+88
+00:03:40,400 --> 00:03:44,720
+Batman, 20, meaning the rest of these
+
+89
+00:03:42,879 --> 00:03:47,519
+are still in an array called everything
+
+90
+00:03:44,720 --> 00:03:50,080
+else. Um, but we were able to pull out
+
+91
+00:03:47,519 --> 00:03:51,680
+first and last. And so that's how array
+
+92
+00:03:50,080 --> 00:03:55,360
+dstructuring works. You can pull out
+
+93
+00:03:51,680 --> 00:03:56,560
+just specific items. Um, and it's
+
+94
+00:03:55,360 --> 00:03:58,080
+important to know that you can use the
+
+95
+00:03:56,560 --> 00:04:00,239
+spread operator to say take all the
+
+96
+00:03:58,080 --> 00:04:02,560
+other items and throw them into a list.
+
+97
+00:04:00,239 --> 00:04:07,360
+Um, commonly you'll see this called
+
+98
+00:04:02,560 --> 00:04:10,000
+rest. Um, I called it everything else.
+
+99
+00:04:07,360 --> 00:04:12,080
+You could call it whatever you want, but
+
+100
+00:04:10,000 --> 00:04:16,239
+you say pull out the first item and the
+
+101
+00:04:12,080 --> 00:04:19,199
+second item and then pull out other
+
+102
+00:04:16,239 --> 00:04:20,720
+stuff. And then it takes the rest of the
+
+103
+00:04:19,199 --> 00:04:22,800
+array, however much of it is left, and
+
+104
+00:04:20,720 --> 00:04:24,400
+puts it in an array called other stuff,
+
+105
+00:04:22,800 --> 00:04:26,560
+which you can then use in the rest of
+
+106
+00:04:24,400 --> 00:04:26,560
+your

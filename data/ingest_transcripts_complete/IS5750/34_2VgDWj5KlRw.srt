@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:03,040
+All right. Now that you've learned
+
+2
+00:00:01,040 --> 00:00:06,879
+multiple operators, it's time to learn
+
+3
+00:00:03,040 --> 00:00:08,800
+how to force order of operations. So, if
+
+4
+00:00:06,879 --> 00:00:11,120
+you remember from elementary school, um
+
+5
+00:00:08,800 --> 00:00:13,360
+it's please excuse my dear aunt Sally.
+
+6
+00:00:11,120 --> 00:00:15,200
+Uh parentheses, exponents,
+
+7
+00:00:13,360 --> 00:00:18,880
+multiplication, division, and then
+
+8
+00:00:15,200 --> 00:00:20,720
+addition and subtraction. Um
+
+9
+00:00:18,880 --> 00:00:22,080
+if you want to have that happen in code,
+
+10
+00:00:20,720 --> 00:00:24,080
+just like when you entered it into a
+
+11
+00:00:22,080 --> 00:00:25,519
+calculator, you had to use parenthesis.
+
+12
+00:00:24,080 --> 00:00:28,560
+You have to use parenthesis in your code
+
+13
+00:00:25,519 --> 00:00:30,080
+as well. So, for example, if I typed
+
+14
+00:00:28,560 --> 00:00:35,520
+alert
+
+15
+00:00:30,080 --> 00:00:38,239
+2 * 3 + 4. Um,
+
+16
+00:00:35,520 --> 00:00:42,320
+and I run this,
+
+17
+00:00:38,239 --> 00:00:46,480
+I get 10 because 2 * 3 is 6. And then if
+
+18
+00:00:42,320 --> 00:00:50,559
+I add four, that comes out to 10.
+
+19
+00:00:46,480 --> 00:00:53,280
+Maybe I wanted it to be 2 * 3 + 4. So in
+
+20
+00:00:50,559 --> 00:00:54,879
+other words, I wanted it to be 2 * 7. In
+
+21
+00:00:53,280 --> 00:00:56,480
+order to do that, you use parenthesis.
+
+22
+00:00:54,879 --> 00:00:58,719
+So I put an opening parenthesis around
+
+23
+00:00:56,480 --> 00:01:01,120
+the three and a closing parenthesy after
+
+24
+00:00:58,719 --> 00:01:03,120
+the four. And now it will do what is in
+
+25
+00:01:01,120 --> 00:01:05,600
+parenthesis first and then it'll do the
+
+26
+00:01:03,120 --> 00:01:09,360
+multiplication. So if we come over now
+
+27
+00:01:05,600 --> 00:01:12,400
+we get 14 because 2 * 7 is 14. And that
+
+28
+00:01:09,360 --> 00:01:12,400
+is how you use parenthesis.

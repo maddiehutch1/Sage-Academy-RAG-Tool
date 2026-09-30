@@ -1,0 +1,403 @@
+1
+00:00:02,000 --> 00:00:06,080
+All right. So in this video we are going
+
+2
+00:00:03,840 --> 00:00:07,359
+to talk about what programming is. Um
+
+3
+00:00:06,080 --> 00:00:08,639
+since JavaScript is a programming
+
+4
+00:00:07,359 --> 00:00:12,400
+language it's important to understand
+
+5
+00:00:08,639 --> 00:00:13,759
+what programming is. So when you think
+
+6
+00:00:12,400 --> 00:00:15,280
+about a computer the way a computer
+
+7
+00:00:13,759 --> 00:00:16,560
+works is it uses ones and zeros to
+
+8
+00:00:15,280 --> 00:00:19,039
+communicate. It's just electrical
+
+9
+00:00:16,560 --> 00:00:21,279
+impulses. So there's either an on signal
+
+10
+00:00:19,039 --> 00:00:22,480
+or an off signal and then together you
+
+11
+00:00:21,279 --> 00:00:24,000
+can string those together to create
+
+12
+00:00:22,480 --> 00:00:25,439
+messages and complex pieces of
+
+13
+00:00:24,000 --> 00:00:27,840
+information. If you think like Morse
+
+14
+00:00:25,439 --> 00:00:29,920
+code, you can tap out a message in Morse
+
+15
+00:00:27,840 --> 00:00:31,599
+code. So, three short taps and then
+
+16
+00:00:29,920 --> 00:00:34,559
+three long taps and then three short
+
+17
+00:00:31,599 --> 00:00:38,239
+taps comes out to SOS and that's how you
+
+18
+00:00:34,559 --> 00:00:39,760
+would send a message for help. Um, and
+
+19
+00:00:38,239 --> 00:00:42,160
+that was how you could communicate in
+
+20
+00:00:39,760 --> 00:00:44,079
+Morse code. So, using just two signals,
+
+21
+00:00:42,160 --> 00:00:46,239
+a short signal and a long signal, you
+
+22
+00:00:44,079 --> 00:00:48,559
+could communicate in Morse code. So,
+
+23
+00:00:46,239 --> 00:00:50,320
+computers communicate using ones and
+
+24
+00:00:48,559 --> 00:00:52,800
+zeros. So, two different types of
+
+25
+00:00:50,320 --> 00:00:56,320
+messages, either an on or an off. Uh
+
+26
+00:00:52,800 --> 00:00:58,719
+this next slide um is a slide that shows
+
+27
+00:00:56,320 --> 00:01:00,800
+a message in binary. I do not speak
+
+28
+00:00:58,719 --> 00:01:03,760
+binary. Maybe one of you is really
+
+29
+00:01:00,800 --> 00:01:05,439
+really smart and you speak binary. Um
+
+30
+00:01:03,760 --> 00:01:07,280
+and you might know what this says. I had
+
+31
+00:01:05,439 --> 00:01:11,600
+to use a translator. But when I created
+
+32
+00:01:07,280 --> 00:01:14,159
+it, this in binary is hello world. So
+
+33
+00:01:11,600 --> 00:01:18,240
+it's not super efficient to have humans
+
+34
+00:01:14,159 --> 00:01:20,640
+write ones and zeros for a computer. Um,
+
+35
+00:01:18,240 --> 00:01:23,360
+so humans over the years we've developed
+
+36
+00:01:20,640 --> 00:01:25,600
+ways to communicate with a computer that
+
+37
+00:01:23,360 --> 00:01:28,640
+is not directly ones and zeros. So we
+
+38
+00:01:25,600 --> 00:01:30,159
+take human readable text and we
+
+39
+00:01:28,640 --> 00:01:32,400
+transform it into the ones and zeros
+
+40
+00:01:30,159 --> 00:01:34,960
+that the computer understands.
+
+41
+00:01:32,400 --> 00:01:36,960
+So on the next slide is how you would
+
+42
+00:01:34,960 --> 00:01:39,840
+write hello world in an assembly
+
+43
+00:01:36,960 --> 00:01:41,360
+language. So probably looks a little
+
+44
+00:01:39,840 --> 00:01:43,119
+intimidating. I hope it looks a little
+
+45
+00:01:41,360 --> 00:01:45,119
+intimidating. It's intimidating to me.
+
+46
+00:01:43,119 --> 00:01:47,040
+Um, but at the bottom it says hello
+
+47
+00:01:45,119 --> 00:01:48,880
+world. And so there is a little bit of
+
+48
+00:01:47,040 --> 00:01:50,240
+this that is human readable, but over
+
+49
+00:01:48,880 --> 00:01:52,240
+the years we've gotten even better at
+
+50
+00:01:50,240 --> 00:01:55,680
+this. So here is how you write hello
+
+51
+00:01:52,240 --> 00:01:58,960
+world in C++. It's a lot better, a lot
+
+52
+00:01:55,680 --> 00:02:01,680
+shorter, way briefer. Um, which is
+
+53
+00:01:58,960 --> 00:02:03,439
+great. Um, and I've got good news for
+
+54
+00:02:01,680 --> 00:02:06,000
+you. This is how you write it in
+
+55
+00:02:03,439 --> 00:02:08,319
+JavaScript. Just says hello world.
+
+56
+00:02:06,000 --> 00:02:10,479
+Console.log hello world. One line and
+
+57
+00:02:08,319 --> 00:02:13,440
+you are done. And that is why we like
+
+58
+00:02:10,479 --> 00:02:16,080
+JavaScript. So why study JavaScript?
+
+59
+00:02:13,440 --> 00:02:17,840
+Well, in a recent study done by Jet
+
+60
+00:02:16,080 --> 00:02:19,280
+Brains, they surveyed a whole bunch of
+
+61
+00:02:17,840 --> 00:02:23,040
+developers and they asked them what they
+
+62
+00:02:19,280 --> 00:02:25,520
+developed in in 2024. And so they just
+
+63
+00:02:23,040 --> 00:02:27,200
+recently published this in 2025. But as
+
+64
+00:02:25,520 --> 00:02:29,599
+you can see from this graph,
+
+65
+00:02:27,200 --> 00:02:32,720
+overwhelmingly JavaScript was the most
+
+66
+00:02:29,599 --> 00:02:34,239
+frequently used language in 2024. So if
+
+67
+00:02:32,720 --> 00:02:36,160
+you are going to learn a programming
+
+68
+00:02:34,239 --> 00:02:38,720
+language, JavaScript is the language to
+
+69
+00:02:36,160 --> 00:02:40,000
+use. And if you're still not convinced,
+
+70
+00:02:38,720 --> 00:02:42,239
+well, here's some things you can do with
+
+71
+00:02:40,000 --> 00:02:44,239
+it. Um, for web development, I'm going
+
+72
+00:02:42,239 --> 00:02:46,000
+to list off some, you know, little known
+
+73
+00:02:44,239 --> 00:02:47,760
+websites. You probably didn't know. You
+
+74
+00:02:46,000 --> 00:02:50,720
+know, they're built in JavaScript, like
+
+75
+00:02:47,760 --> 00:02:52,800
+google.com and YouTube.com and
+
+76
+00:02:50,720 --> 00:02:53,840
+Netflix.com. And I know you've probably
+
+77
+00:02:52,800 --> 00:02:55,760
+never heard of them, but all of those
+
+78
+00:02:53,840 --> 00:02:59,200
+are built in JavaScript. Um, if you want
+
+79
+00:02:55,760 --> 00:03:00,959
+to do mobile app development, um,
+
+80
+00:02:59,200 --> 00:03:02,560
+Facebook's mobile app was developed in
+
+81
+00:03:00,959 --> 00:03:05,120
+JavaScript. Instagram's mobile app was
+
+82
+00:03:02,560 --> 00:03:07,280
+developed in JavaScript. Discord was
+
+83
+00:03:05,120 --> 00:03:09,120
+developed in JavaScript. JavaScript can
+
+84
+00:03:07,280 --> 00:03:11,680
+do a lot of things. Some other things
+
+85
+00:03:09,120 --> 00:03:13,360
+that JavaScript can do include data
+
+86
+00:03:11,680 --> 00:03:14,879
+analytics, machine learning, can
+
+87
+00:03:13,360 --> 00:03:17,280
+automate financial processes and
+
+88
+00:03:14,879 --> 00:03:19,120
+accounting processes. Um, basically if
+
+89
+00:03:17,280 --> 00:03:21,120
+you want to do automation, JavaScript is
+
+90
+00:03:19,120 --> 00:03:23,120
+really good for that. Um, if you want to
+
+91
+00:03:21,120 --> 00:03:25,280
+scrape the web for information,
+
+92
+00:03:23,120 --> 00:03:26,879
+JavaScript can do that. And there's a
+
+93
+00:03:25,280 --> 00:03:29,200
+lot more. Basically, if you can dream
+
+94
+00:03:26,879 --> 00:03:32,480
+it, JavaScript can probably do it. Which
+
+95
+00:03:29,200 --> 00:03:35,440
+is why, um, there's a law that was
+
+96
+00:03:32,480 --> 00:03:37,440
+coined named Atwood's law. And it says
+
+97
+00:03:35,440 --> 00:03:39,680
+that any application that can be written
+
+98
+00:03:37,440 --> 00:03:42,480
+in JavaScript will eventually be written
+
+99
+00:03:39,680 --> 00:03:44,799
+in JavaScript. Um,
+
+100
+00:03:42,480 --> 00:03:49,480
+and so that is why I would study
+
+101
+00:03:44,799 --> 00:03:49,480
+JavaScript. Uh, welcome to the course.

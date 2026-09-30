@@ -1,0 +1,227 @@
+1
+00:00:00,000 --> 00:00:05,920
+So, I said the Axios made it easier to
+
+2
+00:00:02,000 --> 00:00:07,600
+make um post, put, patch, and delete
+
+3
+00:00:05,920 --> 00:00:09,040
+requests in the last video, and I said
+
+4
+00:00:07,600 --> 00:00:13,519
+I'd show you how to use them here. In
+
+5
+00:00:09,040 --> 00:00:16,320
+order to do that, I spun up an API and a
+
+6
+00:00:13,519 --> 00:00:19,039
+REST API, and it just listens and then
+
+7
+00:00:16,320 --> 00:00:21,439
+when it gets a get request, it returns
+
+8
+00:00:19,039 --> 00:00:23,279
+the data inside of this name. If it gets
+
+9
+00:00:21,439 --> 00:00:25,039
+a post request, it adds the data. If it
+
+10
+00:00:23,279 --> 00:00:26,800
+gets a put request or a patch request,
+
+11
+00:00:25,039 --> 00:00:30,000
+it edits the data. And if it gets a
+
+12
+00:00:26,800 --> 00:00:32,239
+delete request, it deletes the data. So
+
+13
+00:00:30,000 --> 00:00:35,360
+um let's go ahead and add a data. So if
+
+14
+00:00:32,239 --> 00:00:36,880
+I say axiospost
+
+15
+00:00:35,360 --> 00:00:39,040
+and then it says where do I want to post
+
+16
+00:00:36,880 --> 00:00:42,160
+to? Well my
+
+17
+00:00:39,040 --> 00:00:47,360
+um API is running locally on localhost
+
+18
+00:00:42,160 --> 00:00:48,879
+and it's running on localhost 5000names.
+
+19
+00:00:47,360 --> 00:00:51,120
+What do I want to send it? Well, I want
+
+20
+00:00:48,879 --> 00:00:53,680
+to send it a new name and I'm going to
+
+21
+00:00:51,120 --> 00:00:56,000
+put my name in. If I save this, it runs
+
+22
+00:00:53,680 --> 00:00:59,600
+my code. And now I can see in the DBJ
+
+23
+00:00:56,000 --> 00:01:03,120
+JSON I have my name which is great. So
+
+24
+00:00:59,600 --> 00:01:05,119
+now we have created a resource. Um
+
+25
+00:01:03,120 --> 00:01:08,479
+what if we want to get the resource? So
+
+26
+00:01:05,119 --> 00:01:12,479
+we could say get
+
+27
+00:01:08,479 --> 00:01:16,400
+and then do then take the result data
+
+28
+00:01:12,479 --> 00:01:18,400
+take the result and console.log
+
+29
+00:01:16,400 --> 00:01:20,640
+result.data.
+
+30
+00:01:18,400 --> 00:01:23,200
+And if we log it, we can see we got back
+
+31
+00:01:20,640 --> 00:01:24,720
+both items that we wanted.
+
+32
+00:01:23,200 --> 00:01:26,640
+Well, what if we wanted to update one of
+
+33
+00:01:24,720 --> 00:01:30,479
+the items? Well, there's two ways to do
+
+34
+00:01:26,640 --> 00:01:32,159
+that. There's put and there's patch. Um,
+
+35
+00:01:30,479 --> 00:01:35,280
+so what I'm going to do is I'm going to
+
+36
+00:01:32,159 --> 00:01:36,960
+say I want you to go out and edit the
+
+37
+00:01:35,280 --> 00:01:38,400
+data. So, I'm going to say put and then
+
+38
+00:01:36,960 --> 00:01:40,159
+it needs to know which one I want to
+
+39
+00:01:38,400 --> 00:01:42,240
+edit. To do that, I put a slash on the
+
+40
+00:01:40,159 --> 00:01:45,360
+end and then I find the ID. In this
+
+41
+00:01:42,240 --> 00:01:52,880
+case, let's edit the ID I just made of
+
+42
+00:01:45,360 --> 00:01:55,200
+CE D0 for my name. So we'll do C E D0.
+
+43
+00:01:52,880 --> 00:01:56,720
+And then what we need to do is we need
+
+44
+00:01:55,200 --> 00:02:00,479
+to tell it what we want to update. So
+
+45
+00:01:56,720 --> 00:02:03,040
+now let's set my name equal to my full
+
+46
+00:02:00,479 --> 00:02:05,119
+name. If I save that and I come over
+
+47
+00:02:03,040 --> 00:02:06,479
+here, you can see it updated my full
+
+48
+00:02:05,119 --> 00:02:08,000
+name, but it left the other record
+
+49
+00:02:06,479 --> 00:02:11,039
+alone.
+
+50
+00:02:08,000 --> 00:02:13,599
+Um, and then if I wanted to delete my
+
+51
+00:02:11,039 --> 00:02:17,080
+name, I could call the delete method,
+
+52
+00:02:13,599 --> 00:02:17,080
+find my name,
+
+53
+00:02:17,280 --> 00:02:23,120
+and delete it, and it's gone. And so,
+
+54
+00:02:20,480 --> 00:02:28,239
+you can see that Axios made it super
+
+55
+00:02:23,120 --> 00:02:30,400
+simple to do um, post, put, and delete.
+
+56
+00:02:28,239 --> 00:02:34,800
+And all you had to do was call the right
+
+57
+00:02:30,400 --> 00:02:34,800
+keyword and change the URL slightly.

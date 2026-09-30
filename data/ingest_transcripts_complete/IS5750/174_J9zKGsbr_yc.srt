@@ -1,0 +1,275 @@
+1
+00:00:00,160 --> 00:00:04,720
+Okay, so I promised I'd show you how
+
+2
+00:00:02,240 --> 00:00:06,560
+this is simplified. So if you recall on
+
+3
+00:00:04,720 --> 00:00:07,839
+this one, we had to set a timeout and
+
+4
+00:00:06,560 --> 00:00:09,200
+then inside of that timeout, we had to
+
+5
+00:00:07,839 --> 00:00:10,480
+set our next timeout. And then inside of
+
+6
+00:00:09,200 --> 00:00:12,559
+that timeout, we had to set our next
+
+7
+00:00:10,480 --> 00:00:13,840
+timeout and so on and so forth down the
+
+8
+00:00:12,559 --> 00:00:14,960
+line. And that was terrible. And that's
+
+9
+00:00:13,840 --> 00:00:16,880
+how you would do it with callback
+
+10
+00:00:14,960 --> 00:00:18,560
+functions to handle asynchronous code.
+
+11
+00:00:16,880 --> 00:00:20,240
+So if you needed to get data and then
+
+12
+00:00:18,560 --> 00:00:21,840
+you depended on that data for your next
+
+13
+00:00:20,240 --> 00:00:23,760
+function, you'd have to write your next
+
+14
+00:00:21,840 --> 00:00:26,000
+function inside of that first function
+
+15
+00:00:23,760 --> 00:00:27,680
+to get a second set of data and so on
+
+16
+00:00:26,000 --> 00:00:30,640
+and so forth until you nested into a
+
+17
+00:00:27,680 --> 00:00:33,280
+giant tree. With promises, it gave us
+
+18
+00:00:30,640 --> 00:00:36,399
+the ability to use dot then. Um, so we
+
+19
+00:00:33,280 --> 00:00:40,000
+could say uh wait 3 seconds, then wait 5
+
+20
+00:00:36,399 --> 00:00:42,320
+seconds, then wait 2 thou uh 2 seconds,
+
+21
+00:00:40,000 --> 00:00:44,800
+then wait 4 seconds, and so on and so
+
+22
+00:00:42,320 --> 00:00:46,640
+forth. But chaining the thens does look
+
+23
+00:00:44,800 --> 00:00:48,640
+a little different and can lead to some
+
+24
+00:00:46,640 --> 00:00:51,640
+results. So like if down here I wrote
+
+25
+00:00:48,640 --> 00:00:51,640
+console.log
+
+26
+00:00:52,559 --> 00:00:57,680
+hello world, this hello world would
+
+27
+00:00:55,520 --> 00:00:59,199
+probably run before this very first
+
+28
+00:00:57,680 --> 00:01:02,000
+console.log. log because this first
+
+29
+00:00:59,199 --> 00:01:04,640
+console.log won't run until 3 seconds
+
+30
+00:01:02,000 --> 00:01:05,840
+later. And so it's counterintuitive to
+
+31
+00:01:04,640 --> 00:01:07,680
+realize that because this is outside of
+
+32
+00:01:05,840 --> 00:01:10,240
+the then chain, it might run on its own
+
+33
+00:01:07,680 --> 00:01:12,400
+beforehand. So let's rewrite this with
+
+34
+00:01:10,240 --> 00:01:14,000
+async and await so that our code's a
+
+35
+00:01:12,400 --> 00:01:15,520
+little simpler to read. So to do that,
+
+36
+00:01:14,000 --> 00:01:21,680
+we need to write our async function. So
+
+37
+00:01:15,520 --> 00:01:23,200
+we'd say async um async, sorry, async
+
+38
+00:01:21,680 --> 00:01:26,960
+function
+
+39
+00:01:23,200 --> 00:01:28,880
+um and I'm going to call it run.
+
+40
+00:01:26,960 --> 00:01:31,200
+Sorry, my keyboard shortcuts are going
+
+41
+00:01:28,880 --> 00:01:34,000
+wild. I clicking some wrong keys. All
+
+42
+00:01:31,200 --> 00:01:35,600
+right, so I could say let's run this
+
+43
+00:01:34,000 --> 00:01:37,439
+function. Um, and I'm actually going to
+
+44
+00:01:35,600 --> 00:01:40,000
+paste it in because I don't want to type
+
+45
+00:01:37,439 --> 00:01:43,360
+this much.
+
+46
+00:01:40,000 --> 00:01:45,520
+Sorry, one second.
+
+47
+00:01:43,360 --> 00:01:47,119
+This code is the equivalent of the above
+
+48
+00:01:45,520 --> 00:01:49,439
+code.
+
+49
+00:01:47,119 --> 00:01:52,640
+So, we still have our function for a
+
+50
+00:01:49,439 --> 00:01:54,240
+waiting. Um, but here inside of our
+
+51
+00:01:52,640 --> 00:01:56,240
+asynchronous run function, we said wait
+
+52
+00:01:54,240 --> 00:01:58,479
+3 seconds, then log it. wait 5 seconds,
+
+53
+00:01:56,240 --> 00:02:00,479
+then log it. And this code just runs
+
+54
+00:01:58,479 --> 00:02:02,640
+line by line like you would expect. The
+
+55
+00:02:00,479 --> 00:02:05,119
+only difference is this line won't run
+
+56
+00:02:02,640 --> 00:02:07,600
+until this line is complete because we
+
+57
+00:02:05,119 --> 00:02:09,280
+used the await keyword inside of an
+
+58
+00:02:07,600 --> 00:02:12,879
+asynchronous function. Then once we were
+
+59
+00:02:09,280 --> 00:02:15,280
+done, we ran it. So those lines are the
+
+60
+00:02:12,879 --> 00:02:17,840
+equivalent
+
+61
+00:02:15,280 --> 00:02:19,599
+of those lines and those lines are the
+
+62
+00:02:17,840 --> 00:02:22,560
+equivalent of these lines. But if you
+
+63
+00:02:19,599 --> 00:02:24,879
+ask me, this code is the easiest to
+
+64
+00:02:22,560 --> 00:02:26,239
+read. So, these devs, no moment of
+
+65
+00:02:24,879 --> 00:02:28,720
+silence for them. They're really
+
+66
+00:02:26,239 --> 00:02:31,120
+spoiled. Um, we're really spoiled. But
+
+67
+00:02:28,720 --> 00:02:34,560
+this way allows us to write all of the
+
+68
+00:02:31,120 --> 00:02:38,080
+power of asynchronous code. Um, but to
+
+69
+00:02:34,560 --> 00:02:38,080
+write it as if it was synchronous

@@ -1,0 +1,159 @@
+1
+00:00:00,080 --> 00:00:03,520
+I've shown you how to create and I've
+
+2
+00:00:02,159 --> 00:00:05,440
+shown you how to retrieve. So we are now
+
+3
+00:00:03,520 --> 00:00:07,839
+on to update. How would I update
+
+4
+00:00:05,440 --> 00:00:10,160
+something in here? So let's go back to
+
+5
+00:00:07,839 --> 00:00:12,719
+our console. And if I want to access
+
+6
+00:00:10,160 --> 00:00:14,559
+local storage, then I'll say local
+
+7
+00:00:12,719 --> 00:00:17,760
+storage
+
+8
+00:00:14,559 --> 00:00:19,520
+dot set item. And if we access a key
+
+9
+00:00:17,760 --> 00:00:22,480
+that already exists, the thing that we
+
+10
+00:00:19,520 --> 00:00:24,720
+put in here will be um will overwrite
+
+11
+00:00:22,480 --> 00:00:31,119
+what was previously there. So if I say
+
+12
+00:00:24,720 --> 00:00:33,360
+take item hello and set it to new value
+
+13
+00:00:31,119 --> 00:00:35,760
+and I hit enter, if we come over here to
+
+14
+00:00:33,360 --> 00:00:37,680
+our application where it used to say
+
+15
+00:00:35,760 --> 00:00:39,840
+hello and then the value used to be
+
+16
+00:00:37,680 --> 00:00:41,760
+world, it is now a new value. Part of
+
+17
+00:00:39,840 --> 00:00:43,200
+the reason I chose to change that one is
+
+18
+00:00:41,760 --> 00:00:45,040
+because if we look in session storage,
+
+19
+00:00:43,200 --> 00:00:48,079
+session storage and local storage are
+
+20
+00:00:45,040 --> 00:00:50,480
+separate entities. So the hello key in
+
+21
+00:00:48,079 --> 00:00:53,280
+session storage is storing world. the
+
+22
+00:00:50,480 --> 00:00:55,360
+hello key in local storage is storing
+
+23
+00:00:53,280 --> 00:00:57,199
+new value. So I partially wanted to show
+
+24
+00:00:55,360 --> 00:00:58,480
+you um how to update a value but I also
+
+25
+00:00:57,199 --> 00:01:00,320
+wanted to show you this local storage
+
+26
+00:00:58,480 --> 00:01:04,000
+and session storage are two distinct
+
+27
+00:01:00,320 --> 00:01:05,519
+places to store information. And um if
+
+28
+00:01:04,000 --> 00:01:09,000
+we come over here if we want to change
+
+29
+00:01:05,519 --> 00:01:09,000
+session storage
+
+30
+00:01:10,240 --> 00:01:14,640
+um you do the same thing. You say set
+
+31
+00:01:11,840 --> 00:01:17,439
+item you look for an item that exists
+
+32
+00:01:14,640 --> 00:01:21,840
+and you set it to be something else. So
+
+33
+00:01:17,439 --> 00:01:23,520
+this will be my new value.
+
+34
+00:01:21,840 --> 00:01:25,520
+And if we hit enter now, if we come over
+
+35
+00:01:23,520 --> 00:01:26,960
+to our application um and we come into
+
+36
+00:01:25,520 --> 00:01:28,720
+session storage, you can see that hello
+
+37
+00:01:26,960 --> 00:01:32,240
+is now storing my new value instead of
+
+38
+00:01:28,720 --> 00:01:34,320
+storing the text world. And so that is
+
+39
+00:01:32,240 --> 00:01:36,640
+how you update values using local and
+
+40
+00:01:34,320 --> 00:01:36,640
+session

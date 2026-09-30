@@ -1,0 +1,139 @@
+1
+00:00:00,080 --> 00:00:06,000
+Okay, the other function that's really
+
+2
+00:00:01,520 --> 00:00:09,920
+helpful to know um is the set interval.
+
+3
+00:00:06,000 --> 00:00:11,280
+So the set interval um to have that run,
+
+4
+00:00:09,920 --> 00:00:13,120
+I'm just going to change this log
+
+5
+00:00:11,280 --> 00:00:14,240
+statement slightly so you can see a
+
+6
+00:00:13,120 --> 00:00:16,240
+little bit of the difference. I'm going
+
+7
+00:00:14,240 --> 00:00:20,800
+to create a global variable here. I'm
+
+8
+00:00:16,240 --> 00:00:25,199
+going to say let counter or let seconds
+
+9
+00:00:20,800 --> 00:00:30,599
+equal zero. And then here in this log,
+
+10
+00:00:25,199 --> 00:00:30,599
+I'm just going to log out. Um,
+
+11
+00:00:32,239 --> 00:00:35,239
+sorry.
+
+12
+00:00:36,960 --> 00:00:42,320
+Waited for
+
+13
+00:00:40,399 --> 00:00:43,680
+seconds.
+
+14
+00:00:42,320 --> 00:00:45,680
+seconds seconds. So, I'm going to log
+
+15
+00:00:43,680 --> 00:00:48,640
+out however many seconds it's been, and
+
+16
+00:00:45,680 --> 00:00:51,280
+I'm going to increment seconds before I
+
+17
+00:00:48,640 --> 00:00:53,440
+log it. Okay. Now, I'm going to adjust
+
+18
+00:00:51,280 --> 00:00:55,680
+this slightly. The main difference
+
+19
+00:00:53,440 --> 00:00:57,760
+between set interval and set timeout is
+
+20
+00:00:55,680 --> 00:00:59,680
+the way you define them. So this one I
+
+21
+00:00:57,760 --> 00:01:01,199
+just say set interval. Then I give it a
+
+22
+00:00:59,680 --> 00:01:02,960
+function that I want it to run and I
+
+23
+00:01:01,199 --> 00:01:05,119
+give it a pause time. In this case I'm
+
+24
+00:01:02,960 --> 00:01:07,760
+going to put 1,000 milliseconds so that
+
+25
+00:01:05,119 --> 00:01:10,479
+we get every second. So now if I save
+
+26
+00:01:07,760 --> 00:01:13,360
+this and I come over to my workspace,
+
+27
+00:01:10,479 --> 00:01:15,760
+you can see that every second it logs
+
+28
+00:01:13,360 --> 00:01:17,759
+out exactly how long it waited for. And
+
+29
+00:01:15,760 --> 00:01:21,040
+so with this we can track the passage of
+
+30
+00:01:17,759 --> 00:01:23,119
+time. And with set timeout, we can have
+
+31
+00:01:21,040 --> 00:01:25,040
+things pause. Having things pause will
+
+32
+00:01:23,119 --> 00:01:28,560
+simulate making requests out to the
+
+33
+00:01:25,040 --> 00:01:30,000
+internet. And this interval here will
+
+34
+00:01:28,560 --> 00:01:32,159
+tell us exactly how long we've been
+
+35
+00:01:30,000 --> 00:01:32,159
+waiting.

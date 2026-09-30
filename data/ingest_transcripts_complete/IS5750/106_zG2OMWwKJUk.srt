@@ -1,0 +1,443 @@
+1
+00:00:00,080 --> 00:00:04,000
+Okay, in the last video you saw that
+
+2
+00:00:01,680 --> 00:00:05,920
+object dstructuring was a thing. So that
+
+3
+00:00:04,000 --> 00:00:08,400
+might lead you to ask, can you spread an
+
+4
+00:00:05,920 --> 00:00:11,440
+object? And you in fact can because
+
+5
+00:00:08,400 --> 00:00:13,840
+objects just like arrays um your
+
+6
+00:00:11,440 --> 00:00:16,320
+variable here is not storing the actual
+
+7
+00:00:13,840 --> 00:00:17,760
+object. It's actually just storing uh
+
+8
+00:00:16,320 --> 00:00:20,560
+information about where the actual
+
+9
+00:00:17,760 --> 00:00:23,519
+object is. So that means if I created a
+
+10
+00:00:20,560 --> 00:00:26,000
+second object called Batman 2 and set it
+
+11
+00:00:23,519 --> 00:00:29,240
+equal to Batman and then made a change
+
+12
+00:00:26,000 --> 00:00:29,240
+to Batman
+
+13
+00:00:29,599 --> 00:00:33,200
+um
+
+14
+00:00:31,359 --> 00:00:34,800
+suddenly that would change Batman 2
+
+15
+00:00:33,200 --> 00:00:36,719
+because Batman 2 isn't holding the
+
+16
+00:00:34,800 --> 00:00:38,879
+actual object right here. It's just
+
+17
+00:00:36,719 --> 00:00:41,360
+holding a location where that actual
+
+18
+00:00:38,879 --> 00:00:44,480
+object is. So when I change the actual
+
+19
+00:00:41,360 --> 00:00:46,879
+object, it changes the actual object.
+
+20
+00:00:44,480 --> 00:00:49,120
+And since both Batman and Batman 2 are
+
+21
+00:00:46,879 --> 00:00:51,600
+pointing to the same object, only one
+
+22
+00:00:49,120 --> 00:00:53,360
+thing has been changed.
+
+23
+00:00:51,600 --> 00:00:55,680
+Um,
+
+24
+00:00:53,360 --> 00:00:57,039
+okay. So, how do we get around this?
+
+25
+00:00:55,680 --> 00:00:59,520
+Well, the way we get around this is we
+
+26
+00:00:57,039 --> 00:01:03,120
+can say let Batman 2 equal and then we
+
+27
+00:00:59,520 --> 00:01:04,720
+create a new object. And it'd be a pain
+
+28
+00:01:03,120 --> 00:01:09,439
+just like when we were creating a new
+
+29
+00:01:04,720 --> 00:01:12,000
+array. So if we said let Batman 3 equal
+
+30
+00:01:09,439 --> 00:01:14,320
+a new array where we'd have to copy in
+
+31
+00:01:12,000 --> 00:01:16,400
+by hand all of the numbers that would
+
+32
+00:01:14,320 --> 00:01:18,159
+kind of suck. So what we can do is we
+
+33
+00:01:16,400 --> 00:01:20,000
+can use the same spread operator we used
+
+34
+00:01:18,159 --> 00:01:24,000
+with arrays we can use it with objects.
+
+35
+00:01:20,000 --> 00:01:27,759
+So I can say dot dot dot Batman. So what
+
+36
+00:01:24,000 --> 00:01:29,840
+I'm saying is create a new object here.
+
+37
+00:01:27,759 --> 00:01:32,079
+Take all of the things inside of the old
+
+38
+00:01:29,840 --> 00:01:34,720
+object and copy them into this new
+
+39
+00:01:32,079 --> 00:01:38,400
+object. Spread them out. Now we have a
+
+40
+00:01:34,720 --> 00:01:40,960
+new object called Batman 2.
+
+41
+00:01:38,400 --> 00:01:43,920
+And then what I'm going to do is on the
+
+42
+00:01:40,960 --> 00:01:48,159
+next line I'm going to say Batman do
+
+43
+00:01:43,920 --> 00:01:50,159
+first name equals hello.
+
+44
+00:01:48,159 --> 00:01:52,479
+So when I run this through the code,
+
+45
+00:01:50,159 --> 00:01:54,320
+it's going to create one object and
+
+46
+00:01:52,479 --> 00:01:57,280
+store it in Batman. And it's going to
+
+47
+00:01:54,320 --> 00:01:59,280
+create another object and copy in the
+
+48
+00:01:57,280 --> 00:02:03,200
+attributes from the first object. then
+
+49
+00:01:59,280 --> 00:02:05,119
+it's going to change the first object
+
+50
+00:02:03,200 --> 00:02:08,959
+and we'll go to that point. So we'll
+
+51
+00:02:05,119 --> 00:02:11,920
+save it and we'll come over here
+
+52
+00:02:08,959 --> 00:02:14,239
+and we'll come to our sources
+
+53
+00:02:11,920 --> 00:02:16,800
+and we'll click on script.js and we're
+
+54
+00:02:14,239 --> 00:02:19,200
+going to put a break point right on this
+
+55
+00:02:16,800 --> 00:02:21,280
+line. So if we reload our page, it
+
+56
+00:02:19,200 --> 00:02:23,200
+pauses. We're about to create our Batman
+
+57
+00:02:21,280 --> 00:02:25,120
+variable. If we hit next and we hover
+
+58
+00:02:23,200 --> 00:02:26,800
+over Batman, we can see the alias is
+
+59
+00:02:25,120 --> 00:02:30,080
+Batman. First name is Bruce, last name
+
+60
+00:02:26,800 --> 00:02:33,040
+is Wayne. Numb villains caught is 20.
+
+61
+00:02:30,080 --> 00:02:35,120
+If we hit If we hover over Batman 2, it
+
+62
+00:02:33,040 --> 00:02:38,480
+has not been created yet. If we hit
+
+63
+00:02:35,120 --> 00:02:40,560
+next, it spreads out Batman into Batman
+
+64
+00:02:38,480 --> 00:02:42,400
+2. And when we hover over Batman 2, it
+
+65
+00:02:40,560 --> 00:02:43,920
+has an alias of Batman, a first name of
+
+66
+00:02:42,400 --> 00:02:46,879
+Bruce, a last name of Waynees, and
+
+67
+00:02:43,920 --> 00:02:49,360
+number of villains caught equal to 20.
+
+68
+00:02:46,879 --> 00:02:51,920
+If we hit the next button, we just
+
+69
+00:02:49,360 --> 00:02:53,599
+adjusted the first object. So now his
+
+70
+00:02:51,920 --> 00:02:55,599
+alias is Batman. His first name is
+
+71
+00:02:53,599 --> 00:02:58,480
+hello.
+
+72
+00:02:55,599 --> 00:03:00,000
+Let's look at Batman 2. His first name
+
+73
+00:02:58,480 --> 00:03:01,840
+is still Bruce. That is because these
+
+74
+00:03:00,000 --> 00:03:04,080
+are two different objects. We created an
+
+75
+00:03:01,840 --> 00:03:06,720
+object using the two curly braces and
+
+76
+00:03:04,080 --> 00:03:09,680
+then we said copy these attributes into
+
+77
+00:03:06,720 --> 00:03:13,360
+this object. Once you've done that,
+
+78
+00:03:09,680 --> 00:03:16,159
+change the first object. So that's cool.
+
+79
+00:03:13,360 --> 00:03:18,159
+Um, but what if we wanted to copy all of
+
+80
+00:03:16,159 --> 00:03:20,480
+the attributes with one slight
+
+81
+00:03:18,159 --> 00:03:22,879
+adjustment? So, what I'm going to do is
+
+82
+00:03:20,480 --> 00:03:24,560
+I'm going to create Batman 2. But in
+
+83
+00:03:22,879 --> 00:03:27,040
+addition to copying all of these
+
+84
+00:03:24,560 --> 00:03:28,879
+attributes, I want to give him a new
+
+85
+00:03:27,040 --> 00:03:30,959
+attribute and I'm going to call it
+
+86
+00:03:28,879 --> 00:03:33,959
+vehicle. And I'm going to store
+
+87
+00:03:30,959 --> 00:03:33,959
+Batmobile.
+
+88
+00:03:34,080 --> 00:03:39,760
+So, if I save this
+
+89
+00:03:36,480 --> 00:03:43,599
+and I come over here
+
+90
+00:03:39,760 --> 00:03:46,159
+then and I reload.
+
+91
+00:03:43,599 --> 00:03:47,840
+Oops, sorry. Reload with a break point.
+
+92
+00:03:46,159 --> 00:03:50,640
+So, I'm going to put a breakpoint here.
+
+93
+00:03:47,840 --> 00:03:52,400
+Reload. It pauses. We create the Batman
+
+94
+00:03:50,640 --> 00:03:54,159
+variable. The Batman variable, four
+
+95
+00:03:52,400 --> 00:03:56,000
+attributes. You've seen them enough
+
+96
+00:03:54,159 --> 00:03:57,599
+times. I'm not going to read them again.
+
+97
+00:03:56,000 --> 00:04:00,080
+I'm going to hit next. We're about to
+
+98
+00:03:57,599 --> 00:04:02,400
+create Batman 2 by putting in everything
+
+99
+00:04:00,080 --> 00:04:05,200
+from Batman and then creating a new key
+
+100
+00:04:02,400 --> 00:04:07,280
+called vehicle and storing Batmobile.
+
+101
+00:04:05,200 --> 00:04:09,599
+So, if we hit next and hover over Batman
+
+102
+00:04:07,280 --> 00:04:11,439
+2, it has all of the four attributes we
+
+103
+00:04:09,599 --> 00:04:14,080
+previously had plus a new attribute
+
+104
+00:04:11,439 --> 00:04:15,760
+called vehicle that's storing Batmobile.
+
+105
+00:04:14,080 --> 00:04:17,759
+So when you are using this spread
+
+106
+00:04:15,760 --> 00:04:19,280
+operator, you don't have to just
+
+107
+00:04:17,759 --> 00:04:21,280
+directly copy the object. You can
+
+108
+00:04:19,280 --> 00:04:23,680
+directly copy the object and then make a
+
+109
+00:04:21,280 --> 00:04:26,080
+change to it. And that concludes this
+
+110
+00:04:23,680 --> 00:04:28,560
+video on changing with object
+
+111
+00:04:26,080 --> 00:04:28,560
+destructuring.

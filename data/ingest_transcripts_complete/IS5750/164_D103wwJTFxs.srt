@@ -1,0 +1,131 @@
+1
+00:00:00,240 --> 00:00:04,480
+Okay, so the set timeout function is
+
+2
+00:00:02,960 --> 00:00:06,480
+really helpful because it allows us to
+
+3
+00:00:04,480 --> 00:00:08,880
+delay the execution of a function for a
+
+4
+00:00:06,480 --> 00:00:11,040
+set amount of time. For example, if I
+
+5
+00:00:08,880 --> 00:00:17,600
+had a function here
+
+6
+00:00:11,040 --> 00:00:20,560
+um called log and inside I console.log
+
+7
+00:00:17,600 --> 00:00:22,960
+hello world. If I call this function
+
+8
+00:00:20,560 --> 00:00:26,240
+inside of my script tag, it'll run
+
+9
+00:00:22,960 --> 00:00:27,519
+immediately. So if I save this and I
+
+10
+00:00:26,240 --> 00:00:29,599
+come over to my website, you can see
+
+11
+00:00:27,519 --> 00:00:31,760
+hello world loads as soon as the page
+
+12
+00:00:29,599 --> 00:00:33,920
+loads. It's nearly instantaneously on
+
+13
+00:00:31,760 --> 00:00:36,399
+the page. But sometimes it's really
+
+14
+00:00:33,920 --> 00:00:38,640
+helpful to be able to delay execution of
+
+15
+00:00:36,399 --> 00:00:40,480
+a function. So if you want to delay the
+
+16
+00:00:38,640 --> 00:00:42,399
+execution of a function, you can do
+
+17
+00:00:40,480 --> 00:00:45,440
+something. You can use a function called
+
+18
+00:00:42,399 --> 00:00:47,039
+set timeout. So if I say set timeout,
+
+19
+00:00:45,440 --> 00:00:49,440
+this function takes in two things. It
+
+20
+00:00:47,039 --> 00:00:51,200
+takes in a function to call after a set
+
+21
+00:00:49,440 --> 00:00:53,039
+time and it takes the amount of time
+
+22
+00:00:51,200 --> 00:00:55,600
+that you want to time out. that's given
+
+23
+00:00:53,039 --> 00:00:57,199
+in milliseconds. So for example, if I
+
+24
+00:00:55,600 --> 00:00:58,559
+want to call my log function, I'll pass
+
+25
+00:00:57,199 --> 00:01:02,000
+in the log function as the first
+
+26
+00:00:58,559 --> 00:01:04,000
+parameter and then 30,00 milliseconds as
+
+27
+00:01:02,000 --> 00:01:06,880
+the second parameter and that will give
+
+28
+00:01:04,000 --> 00:01:10,560
+us 3 seconds and then it will log. So if
+
+29
+00:01:06,880 --> 00:01:13,360
+we come over here and reload one, two,
+
+30
+00:01:10,560 --> 00:01:15,840
+three, there it is. And so we
+
+31
+00:01:13,360 --> 00:01:17,840
+successfully were able to pause function
+
+32
+00:01:15,840 --> 00:01:20,000
+a function from running for a set amount
+
+33
+00:01:17,840 --> 00:01:20,000
+of

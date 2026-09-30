@@ -1,0 +1,427 @@
+1
+00:00:00,080 --> 00:00:05,040
+Okay, what I'm going to show you here is
+
+2
+00:00:01,600 --> 00:00:06,879
+called async and await. And this is how
+
+3
+00:00:05,040 --> 00:00:08,720
+you can write asynchronous code that
+
+4
+00:00:06,879 --> 00:00:11,120
+looks so similar to synchronous code. I
+
+5
+00:00:08,720 --> 00:00:13,440
+think you'll really like it. Um, it
+
+6
+00:00:11,120 --> 00:00:15,360
+works on the same principle as promises.
+
+7
+00:00:13,440 --> 00:00:18,080
+So, we do still have to have a promise.
+
+8
+00:00:15,360 --> 00:00:21,279
+That promise will resolve or reject um
+
+9
+00:00:18,080 --> 00:00:22,880
+after something happens. Um, so in our
+
+10
+00:00:21,279 --> 00:00:24,800
+case, after a timeout is done, it will
+
+11
+00:00:22,880 --> 00:00:28,640
+resolve. So, after a set time, our code
+
+12
+00:00:24,800 --> 00:00:29,920
+will run. um or if you were working over
+
+13
+00:00:28,640 --> 00:00:32,320
+the network, which we're going to be
+
+14
+00:00:29,920 --> 00:00:34,399
+getting to in a couple of videos. Um
+
+15
+00:00:32,320 --> 00:00:37,600
+this could be as soon as you get a
+
+16
+00:00:34,399 --> 00:00:41,040
+response with the data. So, um here
+
+17
+00:00:37,600 --> 00:00:44,559
+we've got our function um that returns a
+
+18
+00:00:41,040 --> 00:00:46,239
+promise. If we want to use asynchronous,
+
+19
+00:00:44,559 --> 00:00:47,920
+if we want to use the keywords async and
+
+20
+00:00:46,239 --> 00:00:49,600
+await, they need to be inside of a
+
+21
+00:00:47,920 --> 00:00:51,360
+function that's asynchronous. So, we
+
+22
+00:00:49,600 --> 00:00:53,760
+need to write ourselves a function here.
+
+23
+00:00:51,360 --> 00:00:54,960
+So, the way we do this is well, I'm
+
+24
+00:00:53,760 --> 00:00:59,359
+going to show you with both function
+
+25
+00:00:54,960 --> 00:01:02,640
+methods. So you could say async function
+
+26
+00:00:59,359 --> 00:01:05,040
+um test and you could write your
+
+27
+00:01:02,640 --> 00:01:06,640
+function that way or if you like the
+
+28
+00:01:05,040 --> 00:01:12,240
+other way of defining functions I could
+
+29
+00:01:06,640 --> 00:01:15,040
+say const test 2 equals async
+
+30
+00:01:12,240 --> 00:01:16,400
+and then create my arrow function. So
+
+31
+00:01:15,040 --> 00:01:20,159
+that's that's the two ways you can
+
+32
+00:01:16,400 --> 00:01:22,640
+define it. Um I'm going to write it
+
+33
+00:01:20,159 --> 00:01:25,040
+here. But now that we are inside of an
+
+34
+00:01:22,640 --> 00:01:27,759
+asynchronous function, we can await
+
+35
+00:01:25,040 --> 00:01:29,280
+certain things to happen. So if I want
+
+36
+00:01:27,759 --> 00:01:32,320
+to wait a set amount of time before I
+
+37
+00:01:29,280 --> 00:01:35,600
+console.log something, I could say let
+
+38
+00:01:32,320 --> 00:01:37,920
+results equal
+
+39
+00:01:35,600 --> 00:01:41,040
+await
+
+40
+00:01:37,920 --> 00:01:43,439
+the wait function for 3,00 seconds. And
+
+41
+00:01:41,040 --> 00:01:45,759
+then right below it,
+
+42
+00:01:43,439 --> 00:01:47,759
+I'll console.log
+
+43
+00:01:45,759 --> 00:01:50,799
+the result.
+
+44
+00:01:47,759 --> 00:01:52,240
+So if you notice this is strikingly
+
+45
+00:01:50,799 --> 00:01:54,479
+similar. Do how you would write your
+
+46
+00:01:52,240 --> 00:01:55,840
+normal code. Um you said do something
+
+47
+00:01:54,479 --> 00:01:58,479
+and then on the next line do something
+
+48
+00:01:55,840 --> 00:02:00,960
+else. But this await keyword here is the
+
+49
+00:01:58,479 --> 00:02:03,040
+key thing. It says this entire function
+
+50
+00:02:00,960 --> 00:02:03,920
+will run after this is completed. So
+
+51
+00:02:03,040 --> 00:02:05,520
+we're going to wait for this to
+
+52
+00:02:03,920 --> 00:02:07,360
+complete. And you can let the rest of
+
+53
+00:02:05,520 --> 00:02:09,679
+your code run on as normal, but don't
+
+54
+00:02:07,360 --> 00:02:14,319
+move to this line until this line is
+
+55
+00:02:09,679 --> 00:02:18,000
+complete. So if we save this and we come
+
+56
+00:02:14,319 --> 00:02:19,680
+over and we reload the page. Oh, one
+
+57
+00:02:18,000 --> 00:02:21,040
+thing I always forget, you do need to
+
+58
+00:02:19,680 --> 00:02:22,480
+call your function after you've defined
+
+59
+00:02:21,040 --> 00:02:24,000
+it. So, right here, I'm going to call
+
+60
+00:02:22,480 --> 00:02:26,800
+test.
+
+61
+00:02:24,000 --> 00:02:29,520
+So, if we call it
+
+62
+00:02:26,800 --> 00:02:32,000
+3 seconds later, there's hello world.
+
+63
+00:02:29,520 --> 00:02:34,000
+And the great thing is, remember when I
+
+64
+00:02:32,000 --> 00:02:35,120
+told you last time that like, oh, well,
+
+65
+00:02:34,000 --> 00:02:37,519
+now you're going to have to chain your
+
+66
+00:02:35,120 --> 00:02:39,360
+thens together. If I want to wait 3
+
+67
+00:02:37,519 --> 00:02:41,440
+seconds and then wait another five after
+
+68
+00:02:39,360 --> 00:02:44,800
+that, I write it just like you would
+
+69
+00:02:41,440 --> 00:02:47,920
+expect. I'd say let result two equal
+
+70
+00:02:44,800 --> 00:02:52,160
+await wait
+
+71
+00:02:47,920 --> 00:02:54,640
+5 seconds and then console.log
+
+72
+00:02:52,160 --> 00:02:57,920
+result two.
+
+73
+00:02:54,640 --> 00:02:59,200
+So if you save this and you come over oh
+
+74
+00:02:57,920 --> 00:03:00,640
+actually it would be helpful if I grab
+
+75
+00:02:59,200 --> 00:03:03,599
+my timer. Let me grab my timer from
+
+76
+00:03:00,640 --> 00:03:05,680
+promise. So I've hidden this timer so
+
+77
+00:03:03,599 --> 00:03:08,959
+you didn't have to look at it. But let's
+
+78
+00:03:05,680 --> 00:03:10,959
+put it in.
+
+79
+00:03:08,959 --> 00:03:13,200
+We're on a sync so I'm going to add it
+
+80
+00:03:10,959 --> 00:03:14,239
+in. right here. And I'm gonna hide those
+
+81
+00:03:13,200 --> 00:03:16,000
+lines of code so you don't have to look
+
+82
+00:03:14,239 --> 00:03:18,480
+at them. But I have a function right
+
+83
+00:03:16,000 --> 00:03:20,400
+there that's going to be counting off
+
+84
+00:03:18,480 --> 00:03:22,480
+the seconds. So if we come over, waited
+
+85
+00:03:20,400 --> 00:03:25,519
+1 second, 2 second, 3 seconds, hello
+
+86
+00:03:22,480 --> 00:03:28,400
+world, 4 seconds, 5 seconds, 6 seconds,
+
+87
+00:03:25,519 --> 00:03:31,040
+7 seconds, 8 seconds, hello world, just
+
+88
+00:03:28,400 --> 00:03:33,200
+like we would expect. And so that's the
+
+89
+00:03:31,040 --> 00:03:35,040
+amazing thing about async and wait. You
+
+90
+00:03:33,200 --> 00:03:37,280
+can write your code almost the same as
+
+91
+00:03:35,040 --> 00:03:38,879
+you did before, but you just said wait
+
+92
+00:03:37,280 --> 00:03:40,640
+for that result to come back. And you
+
+93
+00:03:38,879 --> 00:03:42,239
+get all of the benefits of asynchronous
+
+94
+00:03:40,640 --> 00:03:44,720
+code, meaning my screen didn't freeze up
+
+95
+00:03:42,239 --> 00:03:47,599
+while I waited those 5 seconds, but you
+
+96
+00:03:44,720 --> 00:03:49,840
+get to write it as if it was normal code
+
+97
+00:03:47,599 --> 00:03:51,280
+where you just write line after line
+
+98
+00:03:49,840 --> 00:03:53,200
+exactly how you would expect it to
+
+99
+00:03:51,280 --> 00:03:56,480
+execute. And that is the power of async
+
+100
+00:03:53,200 --> 00:04:00,159
+and wait. And in fact um in the next
+
+101
+00:03:56,480 --> 00:04:02,640
+video I will show you um if we come to
+
+102
+00:04:00,159 --> 00:04:04,640
+this one I showed you callbacks then I
+
+103
+00:04:02,640 --> 00:04:05,840
+showed you how to chain vends together.
+
+104
+00:04:04,640 --> 00:04:07,200
+I'll show you how to do it with async
+
+105
+00:04:05,840 --> 00:04:08,959
+and away and I promise you the code
+
+106
+00:04:07,200 --> 00:04:11,200
+looks a lot less exciting but it's more
+
+107
+00:04:08,959 --> 00:04:11,200
+readable.

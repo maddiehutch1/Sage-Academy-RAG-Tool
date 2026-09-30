@@ -1,0 +1,311 @@
+1
+00:00:00,000 --> 00:00:04,799
+So what we're going to do is we're going
+
+2
+00:00:01,520 --> 00:00:06,960
+to put a break point here on our arrow
+
+3
+00:00:04,799 --> 00:00:09,760
+for loop and we're going to reload the
+
+4
+00:00:06,960 --> 00:00:13,599
+page. So we've paused right now. If we
+
+5
+00:00:09,760 --> 00:00:15,679
+look at numbers, numbers is 456 1 2 3.
+
+6
+00:00:13,599 --> 00:00:18,000
+We're going to hit the next button and
+
+7
+00:00:15,679 --> 00:00:20,080
+it's going to set arrow equal to
+
+8
+00:00:18,000 --> 00:00:21,520
+numbers.length minus one. As long as
+
+9
+00:00:20,080 --> 00:00:25,199
+it's less than that, it's going to keep
+
+10
+00:00:21,520 --> 00:00:29,119
+running. Arrow is zero. So we hit next.
+
+11
+00:00:25,199 --> 00:00:33,600
+So arrow is zero. box is going to be
+
+12
+00:00:29,119 --> 00:00:35,200
+arrow + 1. So in other words,
+
+13
+00:00:33,600 --> 00:00:36,960
+um, and as long and it's going to keep
+
+14
+00:00:35,200 --> 00:00:40,160
+doing that as long as box is less than
+
+15
+00:00:36,960 --> 00:00:42,800
+the length of numbers, which is six.
+
+16
+00:00:40,160 --> 00:00:44,960
+We're going to hit next.
+
+17
+00:00:42,800 --> 00:00:49,840
+All right. So let's hover over those.
+
+18
+00:00:44,960 --> 00:00:52,800
+Box is in the one position. Arrow is in
+
+19
+00:00:49,840 --> 00:00:54,239
+the Come on, work with me here. Arrow is
+
+20
+00:00:52,800 --> 00:00:55,760
+in the zero position. So, we're
+
+21
+00:00:54,239 --> 00:00:57,360
+comparing.
+
+22
+00:00:55,760 --> 00:00:59,840
+We're seeing if the number in position
+
+23
+00:00:57,360 --> 00:01:02,320
+zero is bigger than the number in
+
+24
+00:00:59,840 --> 00:01:04,640
+position one. So, we're seeing if four
+
+25
+00:01:02,320 --> 00:01:06,400
+is bigger than five. If it is, we want
+
+26
+00:01:04,640 --> 00:01:09,360
+to swap. If it's not, we're going to go
+
+27
+00:01:06,400 --> 00:01:11,280
+to the next. So, it's not. So, we're
+
+28
+00:01:09,360 --> 00:01:13,360
+going to skip. And now box is going to
+
+29
+00:01:11,280 --> 00:01:16,320
+increment.
+
+30
+00:01:13,360 --> 00:01:21,520
+And we're now comparing box, which is in
+
+31
+00:01:16,320 --> 00:01:22,960
+the two position, to arrow, which is in
+
+32
+00:01:21,520 --> 00:01:26,960
+the zero position. So now we're
+
+33
+00:01:22,960 --> 00:01:28,640
+comparing four and six.
+
+34
+00:01:26,960 --> 00:01:31,200
+Four is not bigger than six. So we'll
+
+35
+00:01:28,640 --> 00:01:34,320
+skip our for loop and increment our box.
+
+36
+00:01:31,200 --> 00:01:37,280
+Now box is in the three position and
+
+37
+00:01:34,320 --> 00:01:41,280
+arrow is still in the zero position. So
+
+38
+00:01:37,280 --> 00:01:44,479
+we're now comparing zero with 1 2 3 0
+
+39
+00:01:41,280 --> 00:01:46,640
+with four. So numbers
+
+40
+00:01:44,479 --> 00:01:51,200
+at the arrow position in the zero
+
+41
+00:01:46,640 --> 00:01:54,200
+position is four. numbers at the box
+
+42
+00:01:51,200 --> 00:01:54,200
+position
+
+43
+00:01:55,360 --> 00:02:00,799
+which is three. Numbers at the box
+
+44
+00:01:57,040 --> 00:02:02,799
+position is one. Four is bigger than
+
+45
+00:02:00,799 --> 00:02:04,960
+one. So now we want to swap them. So
+
+46
+00:02:02,799 --> 00:02:07,680
+we'll hit next. We're going to pull out
+
+47
+00:02:04,960 --> 00:02:09,440
+a number. Our hold number is four. We
+
+48
+00:02:07,680 --> 00:02:11,120
+took it out of the numbers array because
+
+49
+00:02:09,440 --> 00:02:12,560
+number's ray at the zero position was
+
+50
+00:02:11,120 --> 00:02:15,040
+four. So we pulled it out and we're
+
+51
+00:02:12,560 --> 00:02:17,920
+storing it. Now, we're going to look at
+
+52
+00:02:15,040 --> 00:02:19,280
+the number's position at the zero, and
+
+53
+00:02:17,920 --> 00:02:23,280
+we're going to set it equal to whatever
+
+54
+00:02:19,280 --> 00:02:26,239
+was in the numbers position at in the
+
+55
+00:02:23,280 --> 00:02:28,400
+third box. So, we're going to go three
+
+56
+00:02:26,239 --> 00:02:31,120
+and that's storing a one. So, we're
+
+57
+00:02:28,400 --> 00:02:32,959
+going to hit next. So, now if we hover
+
+58
+00:02:31,120 --> 00:02:35,040
+over our numbers array, we now have one
+
+59
+00:02:32,959 --> 00:02:36,800
+in both spots. Now, we need to put the
+
+60
+00:02:35,040 --> 00:02:38,560
+four back. So, we're going to say go to
+
+61
+00:02:36,800 --> 00:02:41,599
+wherever the box position was, wherever
+
+62
+00:02:38,560 --> 00:02:43,360
+we got the one from, and put in the
+
+63
+00:02:41,599 --> 00:02:45,040
+number that we were holding. Well, the
+
+64
+00:02:43,360 --> 00:02:46,480
+number we were holding was four. So,
+
+65
+00:02:45,040 --> 00:02:48,239
+we'll hit next. And it's now been
+
+66
+00:02:46,480 --> 00:02:50,239
+entered. So, now if we look at our
+
+67
+00:02:48,239 --> 00:02:52,480
+numbers, we have successfully bubbled
+
+68
+00:02:50,239 --> 00:02:53,920
+one all the way up to the top. This loop
+
+69
+00:02:52,480 --> 00:02:56,720
+will keep running and it will run
+
+70
+00:02:53,920 --> 00:02:58,640
+exactly like the slideshow that I had in
+
+71
+00:02:56,720 --> 00:02:59,920
+the last video. So, if you're confused,
+
+72
+00:02:58,640 --> 00:03:02,640
+I encourage you to go back and watch
+
+73
+00:02:59,920 --> 00:03:04,239
+that slideshow. Um, but we'll take this
+
+74
+00:03:02,640 --> 00:03:06,640
+off and we'll put a break point right
+
+75
+00:03:04,239 --> 00:03:08,480
+before our numbers. And if we continue
+
+76
+00:03:06,640 --> 00:03:11,440
+now, if we hover over numbers, we can
+
+77
+00:03:08,480 --> 00:03:14,640
+see it's 1, two, three, four, five, six,
+
+78
+00:03:11,440 --> 00:03:14,640
+and we are

@@ -1,0 +1,163 @@
+1
+00:00:00,000 --> 00:00:03,439
+Okay, so I have some bad news.
+
+2
+00:00:01,280 --> 00:00:05,279
+Programming just like everything else is
+
+3
+00:00:03,439 --> 00:00:07,040
+bound by the laws of physics, which
+
+4
+00:00:05,279 --> 00:00:09,200
+means we are also bound by the speed of
+
+5
+00:00:07,040 --> 00:00:11,920
+light. We cannot send information or
+
+6
+00:00:09,200 --> 00:00:13,679
+process pull in information any faster
+
+7
+00:00:11,920 --> 00:00:15,839
+than the speed of light. Because the
+
+8
+00:00:13,679 --> 00:00:17,199
+speed of light is not instantaneous, it
+
+9
+00:00:15,839 --> 00:00:18,880
+means that if we want to send something
+
+10
+00:00:17,199 --> 00:00:20,080
+over a short distance, it takes a
+
+11
+00:00:18,880 --> 00:00:22,480
+shorter time than if we want to send
+
+12
+00:00:20,080 --> 00:00:24,400
+something over a long distance. Um, that
+
+13
+00:00:22,480 --> 00:00:26,160
+variation can cause us problems when we
+
+14
+00:00:24,400 --> 00:00:27,920
+are trying to access data outside of our
+
+15
+00:00:26,160 --> 00:00:30,400
+computer. when our computer is accessing
+
+16
+00:00:27,920 --> 00:00:32,719
+a variable from memory, it's only going
+
+17
+00:00:30,400 --> 00:00:35,280
+to a very short distance inside the
+
+18
+00:00:32,719 --> 00:00:37,440
+computer from the processor to the RAM.
+
+19
+00:00:35,280 --> 00:00:39,760
+Um, but when you're trying to access
+
+20
+00:00:37,440 --> 00:00:41,440
+something that's not in memory, it can
+
+21
+00:00:39,760 --> 00:00:42,719
+take longer. For example, maybe it's
+
+22
+00:00:41,440 --> 00:00:44,800
+going from your computer to another
+
+23
+00:00:42,719 --> 00:00:46,160
+computer on your network. Or if you're
+
+24
+00:00:44,800 --> 00:00:47,760
+requesting something from out on the
+
+25
+00:00:46,160 --> 00:00:49,760
+internet, then it has to go from your
+
+26
+00:00:47,760 --> 00:00:51,520
+computer out of your network, probably
+
+27
+00:00:49,760 --> 00:00:53,120
+over multiple other networks, to that
+
+28
+00:00:51,520 --> 00:00:56,320
+other computer, and then back to your
+
+29
+00:00:53,120 --> 00:00:58,000
+computer. And all of that takes time.
+
+30
+00:00:56,320 --> 00:00:59,840
+when you're coding, you have to think
+
+31
+00:00:58,000 --> 00:01:01,600
+about that. So sometimes these
+
+32
+00:00:59,840 --> 00:01:04,239
+operations take so long that our options
+
+33
+00:01:01,600 --> 00:01:06,400
+are to either freeze the screen or shift
+
+34
+00:01:04,239 --> 00:01:09,280
+stuff to the background while we wait
+
+35
+00:01:06,400 --> 00:01:10,799
+for the request to process. In order to
+
+36
+00:01:09,280 --> 00:01:12,159
+demonstrate that, I do need to show you
+
+37
+00:01:10,799 --> 00:01:14,240
+two functions. We'll use these two
+
+38
+00:01:12,159 --> 00:01:17,200
+functions to simulate the passage of
+
+39
+00:01:14,240 --> 00:01:19,439
+time and then a delay. So the first is
+
+40
+00:01:17,200 --> 00:01:22,320
+called set timeout and the second is
+
+41
+00:01:19,439 --> 00:01:22,320
+called set interval.

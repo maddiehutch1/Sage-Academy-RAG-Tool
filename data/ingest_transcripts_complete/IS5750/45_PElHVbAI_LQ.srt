@@ -1,0 +1,375 @@
+1
+00:00:00,080 --> 00:00:04,720
+All right. Um, welcome back. So, in this
+
+2
+00:00:03,760 --> 00:00:06,799
+video, we're going to talk about the
+
+3
+00:00:04,720 --> 00:00:08,160
+turnary operator. Before I show you
+
+4
+00:00:06,799 --> 00:00:10,639
+that, I thought it'd be helpful to
+
+5
+00:00:08,160 --> 00:00:11,759
+review how an if statement works. And
+
+6
+00:00:10,639 --> 00:00:13,200
+one of the ways I thought would be
+
+7
+00:00:11,759 --> 00:00:14,639
+helpful to do that, let's do it in
+
+8
+00:00:13,200 --> 00:00:15,920
+Excel. Hopefully, you're familiar with
+
+9
+00:00:14,639 --> 00:00:18,960
+Excel. If you're not, here's a free
+
+10
+00:00:15,920 --> 00:00:21,279
+lesson. Um, so what you'll do, um, let's
+
+11
+00:00:18,960 --> 00:00:23,519
+say we want to compare price A to price
+
+12
+00:00:21,279 --> 00:00:25,760
+B and then determine which column is
+
+13
+00:00:23,519 --> 00:00:27,439
+bigger. The way we can do this is we can
+
+14
+00:00:25,760 --> 00:00:30,560
+use an if statement in Excel. The way
+
+15
+00:00:27,439 --> 00:00:32,399
+you do that is you say equals if and
+
+16
+00:00:30,560 --> 00:00:35,280
+then in parenthesis it says let you need
+
+17
+00:00:32,399 --> 00:00:38,719
+to give it a logical test first. So what
+
+18
+00:00:35,280 --> 00:00:44,239
+we'll do is we'll say if cell A2 is
+
+19
+00:00:38,719 --> 00:00:46,079
+bigger then or equal to B2 then we'll
+
+20
+00:00:44,239 --> 00:00:48,000
+put a comma and then it'll say what
+
+21
+00:00:46,079 --> 00:00:52,079
+value do you want to appear in this cell
+
+22
+00:00:48,000 --> 00:00:55,600
+if this condition is true? We'll say A.
+
+23
+00:00:52,079 --> 00:01:00,160
+And if it's not true we'll say B. Now,
+
+24
+00:00:55,600 --> 00:01:02,320
+if I hit enter, A2 is bigger than B2.
+
+25
+00:01:00,160 --> 00:01:05,439
+So, it's going to return A. So, if I hit
+
+26
+00:01:02,320 --> 00:01:09,600
+enter, it's A. If I copy this down to
+
+27
+00:01:05,439 --> 00:01:12,640
+the next line, A3 is bigger than or
+
+28
+00:01:09,600 --> 00:01:14,720
+equal to B3, and so it returns A.
+
+29
+00:01:12,640 --> 00:01:16,640
+However, if I copy this to the next
+
+30
+00:01:14,720 --> 00:01:20,960
+line,
+
+31
+00:01:16,640 --> 00:01:24,080
+A4 is not bigger than B4, and so instead
+
+32
+00:01:20,960 --> 00:01:26,400
+of returning A, it returns B. The reason
+
+33
+00:01:24,080 --> 00:01:28,640
+I showed you this is this is very
+
+34
+00:01:26,400 --> 00:01:31,200
+similar to how the turnary operator
+
+35
+00:01:28,640 --> 00:01:34,159
+works in JavaScript. So we're going to
+
+36
+00:01:31,200 --> 00:01:35,360
+go over to Visual Studio Code and I'm
+
+37
+00:01:34,159 --> 00:01:38,320
+going to clear out a lot of the code
+
+38
+00:01:35,360 --> 00:01:42,240
+that we wrote last time.
+
+39
+00:01:38,320 --> 00:01:44,400
+So what we can do is we can say if we
+
+40
+00:01:42,240 --> 00:01:46,000
+want to use a turnary operator, the
+
+41
+00:01:44,400 --> 00:01:47,759
+turnary operator works very much like
+
+42
+00:01:46,000 --> 00:01:49,920
+that Excel if statement. So we can
+
+43
+00:01:47,759 --> 00:01:52,920
+create a variable. We'll say let my
+
+44
+00:01:49,920 --> 00:01:52,920
+variable
+
+45
+00:01:52,960 --> 00:01:57,520
+equal.
+
+46
+00:01:54,479 --> 00:02:02,479
+And so just like we did equals if
+
+47
+00:01:57,520 --> 00:02:05,520
+something for um a condition to check
+
+48
+00:02:02,479 --> 00:02:08,640
+and then what to put if it's true and
+
+49
+00:02:05,520 --> 00:02:12,160
+what to put if it's false.
+
+50
+00:02:08,640 --> 00:02:16,080
+We'll do a very similar thing here. So
+
+51
+00:02:12,160 --> 00:02:20,319
+we'll say my variable equals
+
+52
+00:02:16,080 --> 00:02:22,879
+let's do 10 is greater than five
+
+53
+00:02:20,319 --> 00:02:24,720
+and then we'll put the question mark.
+
+54
+00:02:22,879 --> 00:02:27,920
+That's the turnary operator. So we're
+
+55
+00:02:24,720 --> 00:02:32,160
+saying if 10 is bigger than five then we
+
+56
+00:02:27,920 --> 00:02:35,040
+want the value of my variable to be um
+
+57
+00:02:32,160 --> 00:02:36,800
+first and then we'll put a colon and
+
+58
+00:02:35,040 --> 00:02:40,160
+then we'll say otherwise we want the
+
+59
+00:02:36,800 --> 00:02:42,480
+value to be second.
+
+60
+00:02:40,160 --> 00:02:44,800
+So what this does is it says set my
+
+61
+00:02:42,480 --> 00:02:47,440
+variable equal to either first or
+
+62
+00:02:44,800 --> 00:02:50,319
+second. If 10 is bigger than five, set
+
+63
+00:02:47,440 --> 00:02:52,879
+it to first. If 10 is not bigger than
+
+64
+00:02:50,319 --> 00:02:55,280
+five, set it to second.
+
+65
+00:02:52,879 --> 00:02:57,519
+So coming back over to Excel, it's
+
+66
+00:02:55,280 --> 00:03:00,000
+similar to how we said if 10 is bigger
+
+67
+00:02:57,519 --> 00:03:03,599
+than five, set it to A. If 10 is not
+
+68
+00:03:00,000 --> 00:03:05,200
+bigger than 5, set it to B. So if we
+
+69
+00:03:03,599 --> 00:03:07,040
+wanted to duplicate that, we'd say if 10
+
+70
+00:03:05,200 --> 00:03:09,280
+is greater than or equal to 5, question
+
+71
+00:03:07,040 --> 00:03:11,599
+mark. And this is what comes out if it's
+
+72
+00:03:09,280 --> 00:03:14,400
+true. So we'd put A. This is what comes
+
+73
+00:03:11,599 --> 00:03:17,120
+out if it's false. We'd put B. To show
+
+74
+00:03:14,400 --> 00:03:20,000
+you this in action, I'll alert my
+
+75
+00:03:17,120 --> 00:03:22,800
+variable. We'll save that. So we're
+
+76
+00:03:20,000 --> 00:03:25,360
+saying if 10 is bigger than five, set my
+
+77
+00:03:22,800 --> 00:03:27,760
+variable to A. If 10 is not bigger than
+
+78
+00:03:25,360 --> 00:03:30,799
+five, set my variable to B. So we'll
+
+79
+00:03:27,760 --> 00:03:33,360
+save and
+
+80
+00:03:30,799 --> 00:03:36,159
+we'll go live.
+
+81
+00:03:33,360 --> 00:03:37,599
+And we get a just like we would have
+
+82
+00:03:36,159 --> 00:03:44,400
+expected.
+
+83
+00:03:37,599 --> 00:03:48,440
+Um, if we do 40 and 50 and save and we
+
+84
+00:03:44,400 --> 00:03:48,440
+go live, we get B.
+
+85
+00:03:50,319 --> 00:03:53,200
+So hopefully that helps you understand a
+
+86
+00:03:52,000 --> 00:03:55,040
+little bit about how the turnary
+
+87
+00:03:53,200 --> 00:03:59,280
+operator works. It's very similar to the
+
+88
+00:03:55,040 --> 00:04:01,599
+ifs um if function in Excel um where you
+
+89
+00:03:59,280 --> 00:04:03,120
+take a condition, you put a question
+
+90
+00:04:01,599 --> 00:04:05,280
+mark, what you put after the question
+
+91
+00:04:03,120 --> 00:04:06,959
+mark is what will happen if it's true.
+
+92
+00:04:05,280 --> 00:04:09,040
+What you put after the colon is what
+
+93
+00:04:06,959 --> 00:04:12,640
+will happen if it's false. And that is
+
+94
+00:04:09,040 --> 00:04:12,640
+the turnary operator.

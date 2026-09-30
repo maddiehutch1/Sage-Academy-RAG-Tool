@@ -107,11 +107,11 @@ Kaltura cards do not need a YouTube link.
 
 | Input | Value |
 | --- | --- |
-| Playlist URL or ID | _TBD_ |
-| Course display name (`--course`) | _TBD_ |
-| Output folder (`--outdir`) | _TBD_ |
+| Playlist URL or ID | `https://www.youtube.com/playlist?list=PLA1SJqfgQFEGZfzeSsmgJlvhLlAsmv9h0` |
+| Course display name (`--course`) | `IS 5750: JavaScript for Absolute Beginners` |
+| Output folder (`--outdir`) | `data/transcripts/IS5750/` |
 
-Until those are filled, implement and smoke-test against a short **public** playlist. Do not invent the real course name in sidecars.
+The operator supplied these inputs on 2026-09-29. The display name follows the existing `COURSE CODE: Course Title` convention. Write pending files under `data/transcripts/IS5750/`, not the `data/` root or completed archive.
 
 ## Files expected to change
 

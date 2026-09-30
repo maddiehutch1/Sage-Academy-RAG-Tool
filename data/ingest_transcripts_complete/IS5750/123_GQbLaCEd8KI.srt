@@ -1,0 +1,279 @@
+1
+00:00:00,160 --> 00:00:05,839
+Okay, we are back on github.com except
+
+2
+00:00:03,520 --> 00:00:07,359
+this time we are now logged in. Um, so
+
+3
+00:00:05,839 --> 00:00:09,599
+you should see a screen somewhat like
+
+4
+00:00:07,359 --> 00:00:10,880
+this. Um, the important thing is this
+
+5
+00:00:09,599 --> 00:00:12,800
+big green button over here that says
+
+6
+00:00:10,880 --> 00:00:15,040
+new. We are going to be creating a new
+
+7
+00:00:12,800 --> 00:00:17,039
+repository. What is a repository? Well,
+
+8
+00:00:15,040 --> 00:00:19,119
+a repository is defined as a place,
+
+9
+00:00:17,039 --> 00:00:22,800
+building or receptacle where things are
+
+10
+00:00:19,119 --> 00:00:24,480
+or may be stored. Um, and in this case,
+
+11
+00:00:22,800 --> 00:00:26,080
+the thing that is being stored is our
+
+12
+00:00:24,480 --> 00:00:28,000
+code. So, we're going to hit this new
+
+13
+00:00:26,080 --> 00:00:30,400
+button here.
+
+14
+00:00:28,000 --> 00:00:34,320
+And now we need to give it a name. I'm
+
+15
+00:00:30,400 --> 00:00:36,239
+going to call it demo repo. Um,
+
+16
+00:00:34,320 --> 00:00:39,040
+but you can call it whatever you want.
+
+17
+00:00:36,239 --> 00:00:40,559
+Um, and then you can give it a
+
+18
+00:00:39,040 --> 00:00:42,079
+description. I'm going to say
+
+19
+00:00:40,559 --> 00:00:44,399
+demonstrate
+
+20
+00:00:42,079 --> 00:00:48,640
+setting
+
+21
+00:00:44,399 --> 00:00:50,320
+up a code repo. Okay. Now, you can
+
+22
+00:00:48,640 --> 00:00:52,399
+choose a visibility. So, there are two
+
+23
+00:00:50,320 --> 00:00:54,000
+options here. There's public and that's
+
+24
+00:00:52,399 --> 00:00:55,600
+anyone on the internet can see it. They
+
+25
+00:00:54,000 --> 00:00:57,520
+won't necessarily be able to edit it,
+
+26
+00:00:55,600 --> 00:00:59,280
+but they can see it. Um, and then
+
+27
+00:00:57,520 --> 00:01:00,879
+there's private. So, there's some things
+
+28
+00:00:59,280 --> 00:01:03,359
+to consider when you are making this
+
+29
+00:01:00,879 --> 00:01:05,439
+decision. Like, for example, um, if you
+
+30
+00:01:03,359 --> 00:01:07,920
+make it public, future employers could
+
+31
+00:01:05,439 --> 00:01:09,119
+see, um, some of the projects you've
+
+32
+00:01:07,920 --> 00:01:10,159
+done and they can look at the code and
+
+33
+00:01:09,119 --> 00:01:12,080
+it can help them know if they want to
+
+34
+00:01:10,159 --> 00:01:14,240
+hire you, can help you get an interview.
+
+35
+00:01:12,080 --> 00:01:17,040
+Um, so maybe you want to set it public.
+
+36
+00:01:14,240 --> 00:01:18,960
+Um, on the other hand, if you set it
+
+37
+00:01:17,040 --> 00:01:22,560
+public, um, anyone on the internet can
+
+38
+00:01:18,960 --> 00:01:24,080
+see your code. So, for example, um I'm
+
+39
+00:01:22,560 --> 00:01:26,159
+embarrassed to admit that at the
+
+40
+00:01:24,080 --> 00:01:28,880
+beginning of my programming career, I
+
+41
+00:01:26,159 --> 00:01:30,799
+wrote this nice website. It had this
+
+42
+00:01:28,880 --> 00:01:33,600
+part in my code that needed to be kept
+
+43
+00:01:30,799 --> 00:01:35,439
+secret. It was a key, a security key,
+
+44
+00:01:33,600 --> 00:01:37,360
+and I pushed it to a public repository,
+
+45
+00:01:35,439 --> 00:01:39,439
+which meant everyone on the internet
+
+46
+00:01:37,360 --> 00:01:41,680
+could see the secret key. So, had to
+
+47
+00:01:39,439 --> 00:01:44,720
+take it down, change the key, repush it.
+
+48
+00:01:41,680 --> 00:01:46,399
+Um, so if you're starting out and you're
+
+49
+00:01:44,720 --> 00:01:47,680
+not planning to share it with anyone
+
+50
+00:01:46,399 --> 00:01:49,280
+while you're working on learning
+
+51
+00:01:47,680 --> 00:01:50,960
+security practices, you may want to
+
+52
+00:01:49,280 --> 00:01:52,399
+choose private. Um, but on the other
+
+53
+00:01:50,960 --> 00:01:54,240
+hand, if you want your employers to know
+
+54
+00:01:52,399 --> 00:01:55,920
+about a project or other people to be
+
+55
+00:01:54,240 --> 00:01:57,600
+able to see what's going on, you might
+
+56
+00:01:55,920 --> 00:01:59,840
+want to choose public. In this case, I'm
+
+57
+00:01:57,600 --> 00:02:01,600
+going to leave this as public. Okay. The
+
+58
+00:01:59,840 --> 00:02:03,600
+next part, and this is very important,
+
+59
+00:02:01,600 --> 00:02:07,200
+is you will want to click add a readme
+
+60
+00:02:03,600 --> 00:02:09,280
+file. What a readme file does is it lets
+
+61
+00:02:07,200 --> 00:02:10,720
+you describe your project. The other
+
+62
+00:02:09,280 --> 00:02:12,239
+thing it does is it makes it easier to
+
+63
+00:02:10,720 --> 00:02:15,440
+work with GitHub desktop. So, we're
+
+64
+00:02:12,239 --> 00:02:17,040
+going to add a readme file. Um, and then
+
+65
+00:02:15,440 --> 00:02:19,200
+we're going to come here and hit create
+
+66
+00:02:17,040 --> 00:02:21,920
+repository. And it's going to think for
+
+67
+00:02:19,200 --> 00:02:24,319
+a minute. Um, but once it's done, you
+
+68
+00:02:21,920 --> 00:02:26,239
+should see this screen. And you have now
+
+69
+00:02:24,319 --> 00:02:28,640
+successfully created your own code
+
+70
+00:02:26,239 --> 00:02:28,640
+repository.

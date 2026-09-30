@@ -1,0 +1,223 @@
+1
+00:00:00,160 --> 00:00:04,000
+Okay, regardless of which profile you
+
+2
+00:00:02,080 --> 00:00:07,520
+are on, you should now be able to get to
+
+3
+00:00:04,000 --> 00:00:09,040
+this repository page. Um, and now it'd
+
+4
+00:00:07,520 --> 00:00:11,040
+be nice to have more than just this
+
+5
+00:00:09,040 --> 00:00:12,639
+readme file here. It'd be nice to
+
+6
+00:00:11,040 --> 00:00:14,320
+actually put some code here. So, in
+
+7
+00:00:12,639 --> 00:00:17,039
+order to do that, we first have to get
+
+8
+00:00:14,320 --> 00:00:18,560
+this copy from the internet down onto
+
+9
+00:00:17,039 --> 00:00:20,640
+our computer. So, the way we do that is
+
+10
+00:00:18,560 --> 00:00:22,640
+we do something called cloning. Just
+
+11
+00:00:20,640 --> 00:00:24,160
+basically just copy the files from the
+
+12
+00:00:22,640 --> 00:00:26,800
+internet and put them on our computer.
+
+13
+00:00:24,160 --> 00:00:29,359
+So the way you do that is you'll open up
+
+14
+00:00:26,800 --> 00:00:31,359
+this code dropdown and then you're going
+
+15
+00:00:29,359 --> 00:00:33,040
+to click open with GitHub desktop. Now
+
+16
+00:00:31,359 --> 00:00:35,280
+the popup that pops up after this is
+
+17
+00:00:33,040 --> 00:00:38,239
+going to look slightly different on a
+
+18
+00:00:35,280 --> 00:00:41,360
+Windows versus a Mac. Um but the gist of
+
+19
+00:00:38,239 --> 00:00:42,879
+it is it's going to say open or cancel.
+
+20
+00:00:41,360 --> 00:00:45,840
+In our case, we're going to open with
+
+21
+00:00:42,879 --> 00:00:48,079
+GitHub Desktop and then it will open up
+
+22
+00:00:45,840 --> 00:00:50,000
+GitHub Desktop and it'll say okay out on
+
+23
+00:00:48,079 --> 00:00:52,559
+the internet there's a repository. It's
+
+24
+00:00:50,000 --> 00:00:53,760
+at that URL. Um, and then it'll say,
+
+25
+00:00:52,559 --> 00:00:55,600
+"Where do you want to put it on your
+
+26
+00:00:53,760 --> 00:00:56,960
+computer?" Well, right now it's asking
+
+27
+00:00:55,600 --> 00:00:58,879
+me if I want to put it in my 3D
+
+28
+00:00:56,960 --> 00:01:00,640
+tic-tac-toe folder. The answer is I do
+
+29
+00:00:58,879 --> 00:01:01,920
+not. So, what I'm going to do is I'm
+
+30
+00:01:00,640 --> 00:01:04,159
+going to go to my desktop. I'm going to
+
+31
+00:01:01,920 --> 00:01:07,600
+create a new folder. And I'm going to
+
+32
+00:01:04,159 --> 00:01:09,520
+call this demo repo.
+
+33
+00:01:07,600 --> 00:01:12,000
+And I'm going to select that and hit
+
+34
+00:01:09,520 --> 00:01:14,000
+select folder. So now I'm saying I want
+
+35
+00:01:12,000 --> 00:01:15,840
+to copy from the internet at that
+
+36
+00:01:14,000 --> 00:01:19,200
+location. And I want to copy it down
+
+37
+00:01:15,840 --> 00:01:21,360
+onto my computer at this location. And
+
+38
+00:01:19,200 --> 00:01:25,280
+then I'll hit clone.
+
+39
+00:01:21,360 --> 00:01:28,479
+And now it clones the repository.
+
+40
+00:01:25,280 --> 00:01:30,880
+And all right, it is now on our
+
+41
+00:01:28,479 --> 00:01:32,640
+computer. Just to prove it, I'm going to
+
+42
+00:01:30,880 --> 00:01:34,560
+click this open in Visual Studio Code
+
+43
+00:01:32,640 --> 00:01:36,159
+button.
+
+44
+00:01:34,560 --> 00:01:37,920
+What that does is it opens it up in
+
+45
+00:01:36,159 --> 00:01:39,600
+Visual Studio Code. We can see this
+
+46
+00:01:37,920 --> 00:01:42,159
+readme.md
+
+47
+00:01:39,600 --> 00:01:46,640
+and it says demo repo demonstrate
+
+48
+00:01:42,159 --> 00:01:48,720
+setting up a a code repository. And oh
+
+49
+00:01:46,640 --> 00:01:51,360
+boy,
+
+50
+00:01:48,720 --> 00:01:54,479
+if we look
+
+51
+00:01:51,360 --> 00:01:58,880
+at our repository online, it has that
+
+52
+00:01:54,479 --> 00:02:01,439
+exact same file. So if you um can click
+
+53
+00:01:58,880 --> 00:02:02,960
+open in Visual Studio Code and it opens
+
+54
+00:02:01,439 --> 00:02:05,040
+up and you can see that readme file that
+
+55
+00:02:02,960 --> 00:02:08,560
+we added, you have successfully cloned
+
+56
+00:02:05,040 --> 00:02:08,560
+the code to your own computer.

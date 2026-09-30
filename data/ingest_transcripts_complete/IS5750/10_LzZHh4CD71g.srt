@@ -1,0 +1,391 @@
+1
+00:00:00,880 --> 00:00:06,080
+All right, in this video we are going to
+
+2
+00:00:03,040 --> 00:00:08,240
+discuss um running JavaScript for the
+
+3
+00:00:06,080 --> 00:00:09,599
+very first time and then we're also
+
+4
+00:00:08,240 --> 00:00:11,840
+going to discuss some JavaScript
+
+5
+00:00:09,599 --> 00:00:14,320
+comments. All right, in order to run
+
+6
+00:00:11,840 --> 00:00:17,119
+JavaScript you need a special HTML tag.
+
+7
+00:00:14,320 --> 00:00:19,359
+This tells the web browser that we are
+
+8
+00:00:17,119 --> 00:00:20,800
+no longer running HTML. We are now
+
+9
+00:00:19,359 --> 00:00:22,240
+running JavaScript. So it needs to work
+
+10
+00:00:20,800 --> 00:00:25,039
+a little differently. The way we make
+
+11
+00:00:22,240 --> 00:00:28,320
+this tag is we type a the word script
+
+12
+00:00:25,039 --> 00:00:30,400
+and then hit tab or enter. And that puts
+
+13
+00:00:28,320 --> 00:00:32,800
+in two script tags. Anything I type
+
+14
+00:00:30,400 --> 00:00:36,880
+between these two script tags is
+
+15
+00:00:32,800 --> 00:00:39,920
+JavaScript and not HTML. So, um, up
+
+16
+00:00:36,880 --> 00:00:43,600
+here, um, I typed the body tag. If I
+
+17
+00:00:39,920 --> 00:00:45,120
+type body between script, um, and I type
+
+18
+00:00:43,600 --> 00:00:47,440
+body just like we would type normal
+
+19
+00:00:45,120 --> 00:00:49,440
+HTML, you can see it gives me an error.
+
+20
+00:00:47,440 --> 00:00:51,120
+It's this red squiggly line says, "Wait
+
+21
+00:00:49,440 --> 00:00:54,079
+a minute, that's not supposed to exist
+
+22
+00:00:51,120 --> 00:00:56,239
+in a script tag." So, we'll get rid of
+
+23
+00:00:54,079 --> 00:00:59,120
+that. So what we can type whatever we
+
+24
+00:00:56,239 --> 00:01:01,440
+type here is JavaScript.
+
+25
+00:00:59,120 --> 00:01:04,320
+Traditional for coding is with
+
+26
+00:01:01,440 --> 00:01:06,240
+JavaScript is you say hello world for
+
+27
+00:01:04,320 --> 00:01:08,400
+your first program. So let's write hello
+
+28
+00:01:06,240 --> 00:01:10,000
+world. Um one of the ways we can do that
+
+29
+00:01:08,400 --> 00:01:12,479
+is with a pop-up box that shows up on
+
+30
+00:01:10,000 --> 00:01:13,840
+the screen. Um in our pop-up box we're
+
+31
+00:01:12,479 --> 00:01:16,080
+going to say hello world. The way you
+
+32
+00:01:13,840 --> 00:01:18,400
+make a pop-up box in JavaScript is you
+
+33
+00:01:16,080 --> 00:01:21,119
+use the keyword alert. So we're going to
+
+34
+00:01:18,400 --> 00:01:23,200
+say alert and then we're going to put
+
+35
+00:01:21,119 --> 00:01:25,360
+open parenthesis.
+
+36
+00:01:23,200 --> 00:01:27,920
+This says, "When you want to show an
+
+37
+00:01:25,360 --> 00:01:29,439
+alert, I need a message of some sort."
+
+38
+00:01:27,920 --> 00:01:33,360
+So, for our message, we're going to say,
+
+39
+00:01:29,439 --> 00:01:34,720
+"Hello world." Um, and for this video,
+
+40
+00:01:33,360 --> 00:01:36,960
+I'm just going to tell you to put it in
+
+41
+00:01:34,720 --> 00:01:38,560
+double quotes. I'll explain why in the
+
+42
+00:01:36,960 --> 00:01:40,400
+next video, but we're going to say
+
+43
+00:01:38,560 --> 00:01:43,840
+double quotes. And then we're going to
+
+44
+00:01:40,400 --> 00:01:45,759
+say hello world.
+
+45
+00:01:43,840 --> 00:01:48,720
+And then we're going to save our code.
+
+46
+00:01:45,759 --> 00:01:52,720
+So that's command S on a Mac, uh,
+
+47
+00:01:48,720 --> 00:01:54,560
+control S on a Windows, or file save in
+
+48
+00:01:52,720 --> 00:01:56,960
+either case, and that will save your
+
+49
+00:01:54,560 --> 00:01:58,320
+file. I have my live server running. If
+
+50
+00:01:56,960 --> 00:02:00,079
+you don't, you'll come down here and
+
+51
+00:01:58,320 --> 00:02:01,360
+click this button. I promise I will stop
+
+52
+00:02:00,079 --> 00:02:02,560
+saying that in a few videos, but just
+
+53
+00:02:01,360 --> 00:02:04,079
+while we're getting started, wanted to
+
+54
+00:02:02,560 --> 00:02:06,000
+remind you that this button is where you
+
+55
+00:02:04,079 --> 00:02:08,160
+can access your live server. If your
+
+56
+00:02:06,000 --> 00:02:10,160
+live server is already running, then you
+
+57
+00:02:08,160 --> 00:02:15,040
+can come over here to Safari and you can
+
+58
+00:02:10,160 --> 00:02:17,040
+see, tada, pop-up box. Now we are really
+
+59
+00:02:15,040 --> 00:02:20,319
+getting into coding. So we've got a
+
+60
+00:02:17,040 --> 00:02:23,680
+pop-up box. It says hello world. So now
+
+61
+00:02:20,319 --> 00:02:25,360
+we've run our first JavaScript and with
+
+62
+00:02:23,680 --> 00:02:26,560
+great power comes great responsibility.
+
+63
+00:02:25,360 --> 00:02:28,879
+So it's important to learn how to
+
+64
+00:02:26,560 --> 00:02:31,120
+comment. So inside of our script tag,
+
+65
+00:02:28,879 --> 00:02:32,720
+we'll we'll enter down. There are three
+
+66
+00:02:31,120 --> 00:02:36,720
+ways to make a comment in JavaScript.
+
+67
+00:02:32,720 --> 00:02:39,040
+You can use the double forward slash.
+
+68
+00:02:36,720 --> 00:02:41,519
+You can use the forward slash asterisk
+
+69
+00:02:39,040 --> 00:02:43,200
+and then asterisk forward slash. And
+
+70
+00:02:41,519 --> 00:02:46,160
+then that will let you comment multiple
+
+71
+00:02:43,200 --> 00:02:48,000
+lines. So whatever I type here is a
+
+72
+00:02:46,160 --> 00:02:49,680
+comment and will not cause errors
+
+73
+00:02:48,000 --> 00:02:51,280
+because the computer as a reminder from
+
+74
+00:02:49,680 --> 00:02:53,599
+the last video the computer sees the
+
+75
+00:02:51,280 --> 00:02:55,440
+comments but doesn't run them. So this
+
+76
+00:02:53,599 --> 00:02:57,599
+allows the developer to leave notes for
+
+77
+00:02:55,440 --> 00:03:00,720
+themselves or anyone that comes after.
+
+78
+00:02:57,599 --> 00:03:03,599
+So this is a multi-line comment. Double
+
+79
+00:03:00,720 --> 00:03:05,519
+slashes is a single line comment.
+
+80
+00:03:03,599 --> 00:03:06,800
+And then sorry the third way of making a
+
+81
+00:03:05,519 --> 00:03:08,879
+comment is actually just a keyboard
+
+82
+00:03:06,800 --> 00:03:11,680
+shortcut. The keyboard shortcut is
+
+83
+00:03:08,879 --> 00:03:14,560
+command slash or control slash on a
+
+84
+00:03:11,680 --> 00:03:16,800
+Windows and that puts in the two slashes
+
+85
+00:03:14,560 --> 00:03:19,120
+for a single line comment and then you
+
+86
+00:03:16,800 --> 00:03:22,319
+can type something here and this is a
+
+87
+00:03:19,120 --> 00:03:23,519
+comment. We are good developers so we
+
+88
+00:03:22,319 --> 00:03:25,200
+are going to leave ourselves a note
+
+89
+00:03:23,519 --> 00:03:30,879
+about what we've done here. So I'm going
+
+90
+00:03:25,200 --> 00:03:35,040
+to say this is my first message to the
+
+91
+00:03:30,879 --> 00:03:36,959
+world and then hit command or control S.
+
+92
+00:03:35,040 --> 00:03:38,319
+That will save it. This comment is just
+
+93
+00:03:36,959 --> 00:03:39,760
+for us. So it doesn't change anything
+
+94
+00:03:38,319 --> 00:03:41,360
+about the way the website runs, but it
+
+95
+00:03:39,760 --> 00:03:44,480
+means that someone coming along later
+
+96
+00:03:41,360 --> 00:03:46,720
+will know what our code does. And that
+
+97
+00:03:44,480 --> 00:03:49,840
+wraps up commenting in JavaScript and
+
+98
+00:03:46,720 --> 00:03:49,840
+running our first JavaScript.

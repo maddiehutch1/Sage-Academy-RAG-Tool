@@ -1,0 +1,107 @@
+1
+00:00:00,080 --> 00:00:03,360
+It's project time again. So, what I'm
+
+2
+00:00:01,920 --> 00:00:06,480
+going to have you do is I'm going to
+
+3
+00:00:03,360 --> 00:00:07,520
+have you build this trivia app here. Um,
+
+4
+00:00:06,480 --> 00:00:08,720
+basically what you're going to do is
+
+5
+00:00:07,520 --> 00:00:10,719
+you're going to fetch the questions from
+
+6
+00:00:08,720 --> 00:00:13,200
+the API, store the questions in local
+
+7
+00:00:10,719 --> 00:00:14,719
+storage, and then, um, display a
+
+8
+00:00:13,200 --> 00:00:16,640
+question on the screen out of local
+
+9
+00:00:14,719 --> 00:00:19,119
+storage. The correct answer you're going
+
+10
+00:00:16,640 --> 00:00:20,240
+to store in session storage. Um, and
+
+11
+00:00:19,119 --> 00:00:22,480
+then you're going to display the
+
+12
+00:00:20,240 --> 00:00:23,920
+questions using jQuery and handle all of
+
+13
+00:00:22,480 --> 00:00:26,160
+the interaction with the user using
+
+14
+00:00:23,920 --> 00:00:28,000
+jQuery. When they're correct, I want you
+
+15
+00:00:26,160 --> 00:00:29,439
+to automatically load the next question.
+
+16
+00:00:28,000 --> 00:00:31,119
+Once they've answered all of the
+
+17
+00:00:29,439 --> 00:00:34,239
+questions, I want you to go back to the
+
+18
+00:00:31,119 --> 00:00:36,239
+API and grab some new questions.
+
+19
+00:00:34,239 --> 00:00:37,760
+Um, to show you what the user interface
+
+20
+00:00:36,239 --> 00:00:38,879
+looks like, this is the user interface.
+
+21
+00:00:37,760 --> 00:00:40,800
+Um, you're going to replace this
+
+22
+00:00:38,879 --> 00:00:42,079
+placeholder text with the trivia
+
+23
+00:00:40,800 --> 00:00:44,239
+question, and then they're going to
+
+24
+00:00:42,079 --> 00:00:46,079
+answer by either clicking true or false
+
+25
+00:00:44,239 --> 00:00:47,360
+based on that trivia question. And then
+
+26
+00:00:46,079 --> 00:00:49,760
+you'll just give them the feedback
+
+27
+00:00:47,360 --> 00:00:49,760
+accordingly.

@@ -1,0 +1,343 @@
+1
+00:00:00,080 --> 00:00:03,919
+In the previous video, we've or previous
+
+2
+00:00:02,159 --> 00:00:05,200
+videos, we talked a lot about local
+
+3
+00:00:03,919 --> 00:00:07,040
+storage and session storage and those
+
+4
+00:00:05,200 --> 00:00:08,480
+are just two built-in functions. But
+
+5
+00:00:07,040 --> 00:00:10,880
+sometimes you want to use functions that
+
+6
+00:00:08,480 --> 00:00:12,240
+are not builtin. For example, let's say
+
+7
+00:00:10,880 --> 00:00:14,639
+you were working with this fetch
+
+8
+00:00:12,240 --> 00:00:16,880
+function and you said you wanted to
+
+9
+00:00:14,639 --> 00:00:18,560
+fetch a piece of advice. In order to do
+
+10
+00:00:16,880 --> 00:00:20,000
+that, you had to fetch it and then you
+
+11
+00:00:18,560 --> 00:00:22,320
+had to turn it into JSON and then you
+
+12
+00:00:20,000 --> 00:00:24,880
+had to log it. Or written using async
+
+13
+00:00:22,320 --> 00:00:28,160
+aait, you had to fetch it, turn it into
+
+14
+00:00:24,880 --> 00:00:30,160
+JSON and then log it. Um, and maybe that
+
+15
+00:00:28,160 --> 00:00:32,559
+felt like a lot of steps to you. Also,
+
+16
+00:00:30,160 --> 00:00:35,760
+if you wanted to do a post request, then
+
+17
+00:00:32,559 --> 00:00:38,160
+you had to add in extra data here. And I
+
+18
+00:00:35,760 --> 00:00:43,680
+actually didn't show you this, but um
+
+19
+00:00:38,160 --> 00:00:45,440
+you could say method is post. And it was
+
+20
+00:00:43,680 --> 00:00:47,760
+kind of a pain to set that up, which is
+
+21
+00:00:45,440 --> 00:00:49,200
+why I didn't show it to you because in
+
+22
+00:00:47,760 --> 00:00:51,200
+this video, we're going to talk about a
+
+23
+00:00:49,200 --> 00:00:55,440
+library that makes all of that easier.
+
+24
+00:00:51,200 --> 00:00:58,320
+So, this library is, drum roll please,
+
+25
+00:00:55,440 --> 00:01:01,280
+Axios. So, Axios makes it so that you
+
+26
+00:00:58,320 --> 00:01:03,440
+can write um you can say axios.get to do
+
+27
+00:01:01,280 --> 00:01:07,119
+a get request, you can do axios.post to
+
+28
+00:01:03,440 --> 00:01:08,799
+do a post request. Um and instead of
+
+29
+00:01:07,119 --> 00:01:11,200
+having to take the response and turn it
+
+30
+00:01:08,799 --> 00:01:14,400
+into JSON data, it automatically does
+
+31
+00:01:11,200 --> 00:01:15,840
+that for you. So, if you want to know
+
+32
+00:01:14,400 --> 00:01:17,280
+how to use this magic thing, well, you
+
+33
+00:01:15,840 --> 00:01:19,040
+first have to bring it in. So, it's just
+
+34
+00:01:17,280 --> 00:01:20,320
+code that someone else wrote. And in
+
+35
+00:01:19,040 --> 00:01:22,240
+order to get the code someone else wrote
+
+36
+00:01:20,320 --> 00:01:24,479
+onto your computer, you have to tell it
+
+37
+00:01:22,240 --> 00:01:25,840
+where that code is. So, just like you
+
+38
+00:01:24,479 --> 00:01:28,080
+can have a script tag that points to
+
+39
+00:01:25,840 --> 00:01:30,640
+your own external script file, um, like
+
+40
+00:01:28,080 --> 00:01:32,560
+if I made a script.js over here, you can
+
+41
+00:01:30,640 --> 00:01:34,960
+have a script tag that points to someone
+
+42
+00:01:32,560 --> 00:01:36,960
+else's external JS file. So, this is
+
+43
+00:01:34,960 --> 00:01:42,560
+saying go out to the content delivery
+
+44
+00:01:36,960 --> 00:01:44,400
+network and find the Axios library.
+
+45
+00:01:42,560 --> 00:01:46,240
+Once you've done that, you can now use
+
+46
+00:01:44,400 --> 00:01:48,240
+the Axios keyword. So, you can say
+
+47
+00:01:46,240 --> 00:01:52,320
+axios.get
+
+48
+00:01:48,240 --> 00:01:57,079
+and then we can put in https/
+
+49
+00:01:52,320 --> 00:01:57,079
+API advice slip.com/advice
+
+50
+00:01:58,079 --> 00:02:03,840
+and then axios.get returns a promise. So
+
+51
+00:02:01,040 --> 00:02:06,719
+we can say then and inside of that
+
+52
+00:02:03,840 --> 00:02:08,879
+promise it returns an object with a data
+
+53
+00:02:06,719 --> 00:02:13,680
+attribute. But let's just take the
+
+54
+00:02:08,879 --> 00:02:15,280
+result and log it.
+
+55
+00:02:13,680 --> 00:02:17,760
+So if we save this and I'm actually
+
+56
+00:02:15,280 --> 00:02:19,120
+going to comment out that and comment
+
+57
+00:02:17,760 --> 00:02:21,599
+out this fetch. So the only thing
+
+58
+00:02:19,120 --> 00:02:23,520
+running is our axios.get.
+
+59
+00:02:21,599 --> 00:02:25,760
+And if we come over here, we can see
+
+60
+00:02:23,520 --> 00:02:28,640
+that it returns data. And if we open up
+
+61
+00:02:25,760 --> 00:02:30,959
+data, data actually contains our data.
+
+62
+00:02:28,640 --> 00:02:33,120
+We don't then have to convert it into
+
+63
+00:02:30,959 --> 00:02:36,080
+JavaScript and wait for that to happen
+
+64
+00:02:33,120 --> 00:02:39,200
+using um this asynchronous.json
+
+65
+00:02:36,080 --> 00:02:40,800
+function. So what we could do is rather
+
+66
+00:02:39,200 --> 00:02:43,360
+than just receiving this response
+
+67
+00:02:40,800 --> 00:02:45,519
+object, we could dstructure it into
+
+68
+00:02:43,360 --> 00:02:47,200
+data. So we're saying take the object,
+
+69
+00:02:45,519 --> 00:02:49,360
+destructure it, just grab the data
+
+70
+00:02:47,200 --> 00:02:52,480
+attribute, and then let's log out the
+
+71
+00:02:49,360 --> 00:02:56,319
+data. So now if we do that we can log
+
+72
+00:02:52,480 --> 00:02:58,400
+out our slip directly.
+
+73
+00:02:56,319 --> 00:03:00,720
+So writing this in async weight will
+
+74
+00:02:58,400 --> 00:03:02,959
+actually show you how many less lines it
+
+75
+00:03:00,720 --> 00:03:04,640
+is. So what I'm going to do is I'm going
+
+76
+00:03:02,959 --> 00:03:09,599
+to comment this out and I'm going to
+
+77
+00:03:04,640 --> 00:03:12,959
+write it below. So I'll say let um data
+
+78
+00:03:09,599 --> 00:03:15,959
+equal axios.get
+
+79
+00:03:12,959 --> 00:03:15,959
+httpsi.advicelip.comadvice.
+
+80
+00:03:19,040 --> 00:03:26,400
+And I need to await that. And once I'm
+
+81
+00:03:22,319 --> 00:03:29,120
+done, I can console.log the data. And so
+
+82
+00:03:26,400 --> 00:03:33,920
+I've dropped off this entire line just
+
+83
+00:03:29,120 --> 00:03:35,920
+by um switching over to Axios. Um, and
+
+84
+00:03:33,920 --> 00:03:37,840
+I'll show you in the next videos how you
+
+85
+00:03:35,920 --> 00:03:40,000
+can use Axios for the other parts of
+
+86
+00:03:37,840 --> 00:03:40,000
+CRUD.

@@ -1,0 +1,671 @@
+1
+00:00:01,040 --> 00:00:04,960
+In the last video, we talked about what
+
+2
+00:00:02,879 --> 00:00:08,480
+a variable is and how it sets aside
+
+3
+00:00:04,960 --> 00:00:11,200
+memory on your computer and I used
+
+4
+00:00:08,480 --> 00:00:13,599
+different size boxes to demonstrate
+
+5
+00:00:11,200 --> 00:00:15,599
+that. So, in this video, we're going to
+
+6
+00:00:13,599 --> 00:00:19,359
+talk about the code that actually makes
+
+7
+00:00:15,599 --> 00:00:21,279
+that happen. So,
+
+8
+00:00:19,359 --> 00:00:23,840
+I'm going to click into my Visual Studio
+
+9
+00:00:21,279 --> 00:00:25,760
+Code and I'm going to talk about three
+
+10
+00:00:23,840 --> 00:00:27,680
+keywords. So there are three keywords
+
+11
+00:00:25,760 --> 00:00:29,760
+you can use when you want to set aside
+
+12
+00:00:27,680 --> 00:00:32,239
+memory on your computer to store
+
+13
+00:00:29,760 --> 00:00:34,399
+information. The first keyword and the
+
+14
+00:00:32,239 --> 00:00:37,680
+one that I use most often is the keyword
+
+15
+00:00:34,399 --> 00:00:40,719
+let. What the keyword let says is it
+
+16
+00:00:37,680 --> 00:00:42,879
+says set aside some memory. This memory
+
+17
+00:00:40,719 --> 00:00:45,920
+you can change what's inside of it but
+
+18
+00:00:42,879 --> 00:00:48,320
+just go ahead and set it aside. So I use
+
+19
+00:00:45,920 --> 00:00:50,800
+the keyword let and then I give the
+
+20
+00:00:48,320 --> 00:00:54,160
+variable a name. So using the keyword
+
+21
+00:00:50,800 --> 00:00:56,239
+let is like creating this box. This box
+
+22
+00:00:54,160 --> 00:00:58,239
+doesn't have a name. I said you probably
+
+23
+00:00:56,239 --> 00:01:00,320
+want to put something descriptive so
+
+24
+00:00:58,239 --> 00:01:02,800
+people know what's inside of it. So if I
+
+25
+00:01:00,320 --> 00:01:04,799
+was going to store a first name inside
+
+26
+00:01:02,800 --> 00:01:07,360
+this variable, then I'm going to use the
+
+27
+00:01:04,799 --> 00:01:09,680
+keyword let. That creates a box. And
+
+28
+00:01:07,360 --> 00:01:11,920
+then I am going to create the variable
+
+29
+00:01:09,680 --> 00:01:13,280
+first name.
+
+30
+00:01:11,920 --> 00:01:15,680
+That tells you what's inside the
+
+31
+00:01:13,280 --> 00:01:17,840
+variable. Some of you may have noticed
+
+32
+00:01:15,680 --> 00:01:19,920
+that I did something weird with the
+
+33
+00:01:17,840 --> 00:01:23,360
+casing on this variable. I used a
+
+34
+00:01:19,920 --> 00:01:24,640
+lowercase F and an uppercase N. There
+
+35
+00:01:23,360 --> 00:01:26,560
+are different variable naming
+
+36
+00:01:24,640 --> 00:01:28,400
+conventions and the naming convention
+
+37
+00:01:26,560 --> 00:01:30,080
+you use should be whichever one your
+
+38
+00:01:28,400 --> 00:01:33,040
+company uses. Whoever you're working
+
+39
+00:01:30,080 --> 00:01:34,960
+for, whatever they use, use that. If
+
+40
+00:01:33,040 --> 00:01:36,640
+there isn't a set standard, then be
+
+41
+00:01:34,960 --> 00:01:37,840
+consistent. So, I'm going to show you a
+
+42
+00:01:36,640 --> 00:01:40,240
+couple of different ways that you could
+
+43
+00:01:37,840 --> 00:01:41,920
+type this. So, the first is I could say
+
+44
+00:01:40,240 --> 00:01:43,280
+I'm going to make this a comment. So, as
+
+45
+00:01:41,920 --> 00:01:45,840
+a reminder, when you put in a comment,
+
+46
+00:01:43,280 --> 00:01:48,399
+it's two forward slashes or you can hit
+
+47
+00:01:45,840 --> 00:01:50,640
+command or control slash and that'll put
+
+48
+00:01:48,399 --> 00:01:53,119
+in the comments. So the first type, the
+
+49
+00:01:50,640 --> 00:01:54,799
+one that I used is called camelc case.
+
+50
+00:01:53,119 --> 00:01:58,320
+That's where you make the first letter
+
+51
+00:01:54,799 --> 00:02:00,079
+lowercase and then every start of a word
+
+52
+00:01:58,320 --> 00:02:04,960
+thereafter starts with an uppercase
+
+53
+00:02:00,079 --> 00:02:06,399
+character. So this is camelc case.
+
+54
+00:02:04,960 --> 00:02:08,959
+The next one we're going to talk about
+
+55
+00:02:06,399 --> 00:02:11,680
+is called snake case. This is often used
+
+56
+00:02:08,959 --> 00:02:13,440
+by people who develop in Python. Um but
+
+57
+00:02:11,680 --> 00:02:16,080
+it can be used with any language. And
+
+58
+00:02:13,440 --> 00:02:18,640
+that is you you type it all lowercase
+
+59
+00:02:16,080 --> 00:02:20,560
+and then you use an underscore and that
+
+60
+00:02:18,640 --> 00:02:23,040
+denotes the next word. So I could type
+
+61
+00:02:20,560 --> 00:02:26,400
+first underscore name and so this is
+
+62
+00:02:23,040 --> 00:02:31,200
+called snake case.
+
+63
+00:02:26,400 --> 00:02:34,640
+I could type um all uppercase for every
+
+64
+00:02:31,200 --> 00:02:37,680
+single word. So I could say first name
+
+65
+00:02:34,640 --> 00:02:40,800
+and we call this Pascal case.
+
+66
+00:02:37,680 --> 00:02:42,160
+Um, and there are others, but these are
+
+67
+00:02:40,800 --> 00:02:44,800
+probably the most common ones you're
+
+68
+00:02:42,160 --> 00:02:46,000
+going to see. Um, I like camel case, so
+
+69
+00:02:44,800 --> 00:02:49,440
+that's probably the one you'll see me
+
+70
+00:02:46,000 --> 00:02:51,760
+use throughout most of these videos. So,
+
+71
+00:02:49,440 --> 00:02:54,720
+I have now created I used the let
+
+72
+00:02:51,760 --> 00:02:56,080
+keyword that created a box. I'm now
+
+73
+00:02:54,720 --> 00:02:57,519
+putting a name on the box and I'm
+
+74
+00:02:56,080 --> 00:02:59,360
+putting a label across it that says
+
+75
+00:02:57,519 --> 00:03:03,120
+first name. That means that this
+
+76
+00:02:59,360 --> 00:03:05,680
+variable is going to store a first name.
+
+77
+00:03:03,120 --> 00:03:08,080
+Now, we could end it there. So, what
+
+78
+00:03:05,680 --> 00:03:09,840
+we've done is we've created a box and we
+
+79
+00:03:08,080 --> 00:03:12,640
+put a semicolon that says we are done
+
+80
+00:03:09,840 --> 00:03:14,319
+with this line. So, I've now created a
+
+81
+00:03:12,640 --> 00:03:16,560
+box and I've put a label on it called
+
+82
+00:03:14,319 --> 00:03:20,159
+first name.
+
+83
+00:03:16,560 --> 00:03:21,760
+I could now put something into that box.
+
+84
+00:03:20,159 --> 00:03:25,120
+One way you put something into the box
+
+85
+00:03:21,760 --> 00:03:26,319
+is you say first name equals and then
+
+86
+00:03:25,120 --> 00:03:29,360
+whatever you put on the other side of
+
+87
+00:03:26,319 --> 00:03:31,680
+the equals goes into that box. So, I
+
+88
+00:03:29,360 --> 00:03:33,680
+would say my first name is Toa and then
+
+89
+00:03:31,680 --> 00:03:37,760
+I'll put a semicolon and that ends that
+
+90
+00:03:33,680 --> 00:03:39,519
+line. So what I've done is I've created
+
+91
+00:03:37,760 --> 00:03:42,080
+the variable and then I've stored
+
+92
+00:03:39,519 --> 00:03:43,840
+something in it. We can actually do this
+
+93
+00:03:42,080 --> 00:03:46,319
+all on one line if we know what we want
+
+94
+00:03:43,840 --> 00:03:49,440
+to store in the box ahead of time. So we
+
+95
+00:03:46,319 --> 00:03:52,480
+can say let first name
+
+96
+00:03:49,440 --> 00:03:55,120
+equal to. So what that does is it says
+
+97
+00:03:52,480 --> 00:03:57,840
+create a box put a label on it called
+
+98
+00:03:55,120 --> 00:04:00,480
+first name. inside of that box store the
+
+99
+00:03:57,840 --> 00:04:02,879
+text toa.
+
+100
+00:04:00,480 --> 00:04:05,040
+The other type of variable, the other
+
+101
+00:04:02,879 --> 00:04:06,159
+way you can defer define a variable and
+
+102
+00:04:05,040 --> 00:04:08,239
+actually in this case what you're doing
+
+103
+00:04:06,159 --> 00:04:12,959
+is you're defining a constant is to use
+
+104
+00:04:08,239 --> 00:04:17,759
+the keyword const. So that's c o n s t
+
+105
+00:04:12,959 --> 00:04:19,120
+and then um we'll say const.
+
+106
+00:04:17,759 --> 00:04:21,280
+Trying to think of something that
+
+107
+00:04:19,120 --> 00:04:22,880
+doesn't change
+
+108
+00:04:21,280 --> 00:04:26,160
+const
+
+109
+00:04:22,880 --> 00:04:28,000
+happy. I am sometimes not happy. This
+
+110
+00:04:26,160 --> 00:04:31,919
+isn't a really good example, but we'll
+
+111
+00:04:28,000 --> 00:04:33,759
+create a constant and we'll store in it
+
+112
+00:04:31,919 --> 00:04:36,720
+um
+
+113
+00:04:33,759 --> 00:04:39,280
+the word true.
+
+114
+00:04:36,720 --> 00:04:42,720
+Oh, sorry. I've been coding in Python.
+
+115
+00:04:39,280 --> 00:04:45,440
+True is lowercase. Okay. What we've done
+
+116
+00:04:42,720 --> 00:04:47,680
+here is we've said create a box. That's
+
+117
+00:04:45,440 --> 00:04:50,479
+what the con does. It does the same
+
+118
+00:04:47,680 --> 00:04:52,560
+thing as let except it says create a box
+
+119
+00:04:50,479 --> 00:04:54,479
+and don't let anything change what's in
+
+120
+00:04:52,560 --> 00:04:56,560
+the box. So once I've put something in
+
+121
+00:04:54,479 --> 00:04:59,040
+the box, lock the box and don't let
+
+122
+00:04:56,560 --> 00:05:01,280
+anyone else get in there. So now for the
+
+123
+00:04:59,040 --> 00:05:03,360
+rest of our program, happy will always
+
+124
+00:05:01,280 --> 00:05:05,759
+be true. Later on, we can change what
+
+125
+00:05:03,360 --> 00:05:07,600
+the first name is, but we cannot change
+
+126
+00:05:05,759 --> 00:05:10,080
+what's inside of happy. So the happy
+
+127
+00:05:07,600 --> 00:05:14,080
+box, as because we've put it as a
+
+128
+00:05:10,080 --> 00:05:16,880
+constant, it does not change. So the two
+
+129
+00:05:14,080 --> 00:05:18,400
+keywords you'll most often use is let
+
+130
+00:05:16,880 --> 00:05:19,840
+and that's for when you want to create a
+
+131
+00:05:18,400 --> 00:05:22,240
+box that could have information that
+
+132
+00:05:19,840 --> 00:05:25,680
+changes and const is for when you want
+
+133
+00:05:22,240 --> 00:05:27,120
+to create a box where nothing changes.
+
+134
+00:05:25,680 --> 00:05:29,440
+This is helpful if you're like setting
+
+135
+00:05:27,120 --> 00:05:31,520
+up some settings for your app and you
+
+136
+00:05:29,440 --> 00:05:33,280
+want those settings to be the same every
+
+137
+00:05:31,520 --> 00:05:36,880
+single time your app runs. Then you'll
+
+138
+00:05:33,280 --> 00:05:39,840
+want to use const. Um, there is one
+
+139
+00:05:36,880 --> 00:05:41,520
+other way to create a variable and this
+
+140
+00:05:39,840 --> 00:05:43,600
+keyword works very similar to the
+
+141
+00:05:41,520 --> 00:05:45,919
+keyword let. You'll see it in people
+
+142
+00:05:43,600 --> 00:05:48,400
+who've been coding in JavaScript for a
+
+143
+00:05:45,919 --> 00:05:50,720
+long time because the let keyword didn't
+
+144
+00:05:48,400 --> 00:05:54,320
+used to exist. The let keyword is the
+
+145
+00:05:50,720 --> 00:05:55,759
+best way to create a variable, but um
+
+146
+00:05:54,320 --> 00:05:57,120
+you're going to work with other people's
+
+147
+00:05:55,759 --> 00:05:58,800
+code and so you're going to see other
+
+148
+00:05:57,120 --> 00:06:01,600
+ways to create variables. The last way
+
+149
+00:05:58,800 --> 00:06:03,840
+to create a variable is the keyword var.
+
+150
+00:06:01,600 --> 00:06:06,240
+There are some issues with the way this
+
+151
+00:06:03,840 --> 00:06:09,919
+creates a variable. So, I would avoid
+
+152
+00:06:06,240 --> 00:06:11,600
+using it if you can. Um,
+
+153
+00:06:09,919 --> 00:06:13,919
+but if you see someone else has it in
+
+154
+00:06:11,600 --> 00:06:15,840
+their code, um, just understand that it
+
+155
+00:06:13,919 --> 00:06:17,919
+creates a variable exactly the same way
+
+156
+00:06:15,840 --> 00:06:22,479
+let does. So, if I wanted to create a
+
+157
+00:06:17,919 --> 00:06:24,160
+last name, I'd say var last name equals
+
+158
+00:06:22,479 --> 00:06:27,440
+and then that's where I'd put my last
+
+159
+00:06:24,160 --> 00:06:30,080
+name. Um, and that wraps up our
+
+160
+00:06:27,440 --> 00:06:32,720
+discussion on how to create variables.
+
+161
+00:06:30,080 --> 00:06:35,919
+So in summary, let is for creating
+
+162
+00:06:32,720 --> 00:06:38,319
+variables that you want to change. Const
+
+163
+00:06:35,919 --> 00:06:41,120
+is for creating a constant that doesn't
+
+164
+00:06:38,319 --> 00:06:42,720
+ever change. And var is an old way of
+
+165
+00:06:41,120 --> 00:06:45,039
+creating variables that you might see
+
+166
+00:06:42,720 --> 00:06:46,639
+when you're working on your job. And
+
+167
+00:06:45,039 --> 00:06:49,280
+that wraps up this video. Thanks for
+
+168
+00:06:46,639 --> 00:06:49,280
+watching.

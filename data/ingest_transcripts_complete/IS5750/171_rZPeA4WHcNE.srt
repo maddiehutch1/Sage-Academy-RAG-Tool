@@ -1,0 +1,543 @@
+1
+00:00:00,160 --> 00:00:06,879
+Okay, so what if you want to have code
+
+2
+00:00:04,720 --> 00:00:09,599
+that relies on other code that you might
+
+3
+00:00:06,879 --> 00:00:11,440
+not get? Um, and so you need to do two
+
+4
+00:00:09,599 --> 00:00:12,960
+asynchronous operations, meaning you
+
+5
+00:00:11,440 --> 00:00:15,280
+need to get data from one source and get
+
+6
+00:00:12,960 --> 00:00:17,119
+data from another source. Um, remember
+
+7
+00:00:15,280 --> 00:00:19,279
+last time we simulated that when we were
+
+8
+00:00:17,119 --> 00:00:21,279
+doing it with functional callbacks. We
+
+9
+00:00:19,279 --> 00:00:23,600
+simulated that by pausing for three
+
+10
+00:00:21,279 --> 00:00:24,640
+seconds and then pausing for five or I
+
+11
+00:00:23,600 --> 00:00:25,840
+don't remember the number of seconds we
+
+12
+00:00:24,640 --> 00:00:27,119
+paused but we paused for a certain
+
+13
+00:00:25,840 --> 00:00:28,560
+amount of time and then we paused for an
+
+14
+00:00:27,119 --> 00:00:30,880
+additional amount of time once the first
+
+15
+00:00:28,560 --> 00:00:34,239
+operation was complete. Let's say we
+
+16
+00:00:30,880 --> 00:00:36,000
+want to do that here. So one way um what
+
+17
+00:00:34,239 --> 00:00:37,840
+I've done is I brought in our
+
+18
+00:00:36,000 --> 00:00:39,200
+incrementtor. So I've hidden the code
+
+19
+00:00:37,840 --> 00:00:40,800
+here so it doesn't distract from what
+
+20
+00:00:39,200 --> 00:00:43,120
+we're doing but it's just going to print
+
+21
+00:00:40,800 --> 00:00:45,520
+out how many seconds have passed. And
+
+22
+00:00:43,120 --> 00:00:47,360
+then here I've written a function that
+
+23
+00:00:45,520 --> 00:00:49,600
+returns a promise. So the promise that
+
+24
+00:00:47,360 --> 00:00:52,320
+we wrote in the last one resolved hello
+
+25
+00:00:49,600 --> 00:00:54,320
+world after a set amount of time. This
+
+26
+00:00:52,320 --> 00:00:56,079
+will give us a promise that resolves
+
+27
+00:00:54,320 --> 00:00:57,360
+after a set amount of time that we pass
+
+28
+00:00:56,079 --> 00:00:59,120
+it. Because it's a function, the
+
+29
+00:00:57,360 --> 00:01:00,800
+function will return a promise. And
+
+30
+00:00:59,120 --> 00:01:02,879
+because it's a promise, we can do things
+
+31
+00:01:00,800 --> 00:01:06,640
+with that promise. So for example, I
+
+32
+00:01:02,879 --> 00:01:08,320
+could say let promise one equal wait.
+
+33
+00:01:06,640 --> 00:01:11,920
+And then how long would I like to wait?
+
+34
+00:01:08,320 --> 00:01:14,320
+Well, let's do the wait 3 seconds first.
+
+35
+00:01:11,920 --> 00:01:16,799
+And then I want once it's done, I want
+
+36
+00:01:14,320 --> 00:01:18,159
+to print out the results. of promise
+
+37
+00:01:16,799 --> 00:01:19,520
+one, I want to print out this hello
+
+38
+00:01:18,159 --> 00:01:21,680
+world. So after 3 seconds, I want to
+
+39
+00:01:19,520 --> 00:01:24,000
+print out hello world. Once that's done,
+
+40
+00:01:21,680 --> 00:01:25,759
+I want to print out hello world again an
+
+41
+00:01:24,000 --> 00:01:30,240
+additional 5 seconds later, meaning at
+
+42
+00:01:25,759 --> 00:01:31,920
+the 8second mark. So I'd say promise 1.n
+
+43
+00:01:30,240 --> 00:01:35,040
+and then it receives the value hello
+
+44
+00:01:31,920 --> 00:01:36,640
+world and passes it into a function. So
+
+45
+00:01:35,040 --> 00:01:39,119
+I'm going to write that function that
+
+46
+00:01:36,640 --> 00:01:41,439
+accepts value. And because it's only one
+
+47
+00:01:39,119 --> 00:01:44,479
+parameter, I don't need the parenthesis.
+
+48
+00:01:41,439 --> 00:01:46,320
+I put them in the last video just for um
+
+49
+00:01:44,479 --> 00:01:48,320
+consistency, but you don't need them and
+
+50
+00:01:46,320 --> 00:01:49,759
+so I'm not going to put them anymore. So
+
+51
+00:01:48,320 --> 00:01:51,439
+here I'm going to take the value and I'm
+
+52
+00:01:49,759 --> 00:01:54,640
+going to log it out to the console.
+
+53
+00:01:51,439 --> 00:01:58,200
+console.log Oh boy, not typing well
+
+54
+00:01:54,640 --> 00:01:58,200
+today. console.log.
+
+55
+00:01:58,240 --> 00:02:03,119
+And we'll log that value. And let's just
+
+56
+00:02:00,479 --> 00:02:07,920
+save this and make sure it works.
+
+57
+00:02:03,119 --> 00:02:09,440
+Um okay so if we reload printed out
+
+58
+00:02:07,920 --> 00:02:12,000
+hello world immediately which means
+
+59
+00:02:09,440 --> 00:02:16,000
+there is some problem with my code. Um
+
+60
+00:02:12,000 --> 00:02:19,200
+return a new promise resolve reject
+
+61
+00:02:16,000 --> 00:02:22,560
+um take in the number of milliseconds
+
+62
+00:02:19,200 --> 00:02:24,879
+resolve it after oh I apologize this
+
+63
+00:02:22,560 --> 00:02:26,640
+needs to be wrapped in a function um an
+
+64
+00:02:24,879 --> 00:02:29,360
+anonymous function. So if we save that
+
+65
+00:02:26,640 --> 00:02:30,720
+and we come over waited 1 2 3 seconds
+
+66
+00:02:29,360 --> 00:02:34,879
+and then it prints out hello world and
+
+67
+00:02:30,720 --> 00:02:38,000
+then wait 4 6 7 8 at this point is when
+
+68
+00:02:34,879 --> 00:02:40,000
+we want to call hello world again. So
+
+69
+00:02:38,000 --> 00:02:42,080
+let's go over here and you might think
+
+70
+00:02:40,000 --> 00:02:46,879
+that you could just do another promise.
+
+71
+00:02:42,080 --> 00:02:49,120
+So, I could say let promise 2 equal wait
+
+72
+00:02:46,879 --> 00:02:52,080
+5,000 milliseconds.
+
+73
+00:02:49,120 --> 00:02:56,000
+And then I'll say promise 2
+
+74
+00:02:52,080 --> 00:02:58,480
+then um and then I'll pass in 5,000
+
+75
+00:02:56,000 --> 00:03:01,120
+milliseconds or
+
+76
+00:02:58,480 --> 00:03:03,440
+or sorry
+
+77
+00:03:01,120 --> 00:03:07,280
+tongue twisted today. I will take the
+
+78
+00:03:03,440 --> 00:03:09,120
+value and I'll log the value.
+
+79
+00:03:07,280 --> 00:03:11,680
+Okay. So, what I've done is I've made a
+
+80
+00:03:09,120 --> 00:03:13,120
+promise and then once it's done, I'm
+
+81
+00:03:11,680 --> 00:03:15,280
+logging it. Then I made another promise
+
+82
+00:03:13,120 --> 00:03:16,319
+and once it's done, I'm logging it. This
+
+83
+00:03:15,280 --> 00:03:17,599
+is where we're going to run into a
+
+84
+00:03:16,319 --> 00:03:20,560
+similar issue we ran into with
+
+85
+00:03:17,599 --> 00:03:23,040
+callbacks. So, we go 1 2 3 Hello World 4
+
+86
+00:03:20,560 --> 00:03:25,680
+Hello World. We actually wanted it 5
+
+87
+00:03:23,040 --> 00:03:27,680
+minutes, sorry, 5 seconds after the
+
+88
+00:03:25,680 --> 00:03:29,840
+first hello world, not 5 seconds after
+
+89
+00:03:27,680 --> 00:03:31,920
+the start of our program. So, if we want
+
+90
+00:03:29,840 --> 00:03:34,959
+to do that, then we need to be able to
+
+91
+00:03:31,920 --> 00:03:36,799
+chain promises together. And that's the
+
+92
+00:03:34,959 --> 00:03:38,480
+amazing thing about then. As long as you
+
+93
+00:03:36,799 --> 00:03:41,280
+return a promise inside of your then
+
+94
+00:03:38,480 --> 00:03:44,879
+statement, then you can keep chaining
+
+95
+00:03:41,280 --> 00:03:48,959
+then together. So let's come back over
+
+96
+00:03:44,879 --> 00:03:52,159
+here. So on this first promise, I said
+
+97
+00:03:48,959 --> 00:03:54,000
+wait 3,00 seconds. Once you're done,
+
+98
+00:03:52,159 --> 00:03:55,920
+console.log it. And I'm actually going
+
+99
+00:03:54,000 --> 00:03:59,959
+to make this into a multi-line function
+
+100
+00:03:55,920 --> 00:03:59,959
+by putting curly braces.
+
+101
+00:04:02,080 --> 00:04:05,680
+Boy,
+
+102
+00:04:03,760 --> 00:04:08,959
+typing is not going well today. And I'm
+
+103
+00:04:05,680 --> 00:04:11,439
+going to console.log the value.
+
+104
+00:04:08,959 --> 00:04:13,360
+Then underneath what I'm going to do is
+
+105
+00:04:11,439 --> 00:04:15,680
+I'm going to type the word return. And
+
+106
+00:04:13,360 --> 00:04:17,040
+then I'm going to say wait. And how long
+
+107
+00:04:15,680 --> 00:04:19,359
+do I want to wait? This time I want to
+
+108
+00:04:17,040 --> 00:04:21,759
+wait an additional 5,000 milliseconds.
+
+109
+00:04:19,359 --> 00:04:24,880
+Because it's returning it, I could store
+
+110
+00:04:21,759 --> 00:04:26,240
+that in another promise. Or rather than
+
+111
+00:04:24,880 --> 00:04:28,479
+storing it in another promise, at the
+
+112
+00:04:26,240 --> 00:04:30,240
+end of this then, I can tag on another
+
+113
+00:04:28,479 --> 00:04:32,000
+then. So, just like you could take a
+
+114
+00:04:30,240 --> 00:04:33,360
+string and uppercase it and that
+
+115
+00:04:32,000 --> 00:04:35,360
+returned a string and you could store it
+
+116
+00:04:33,360 --> 00:04:37,600
+in a new variable, but you could also
+
+117
+00:04:35,360 --> 00:04:39,600
+take a string and then uppercase it and
+
+118
+00:04:37,600 --> 00:04:41,440
+then split it and you could just keep
+
+119
+00:04:39,600 --> 00:04:43,759
+chaining string methods together. As
+
+120
+00:04:41,440 --> 00:04:45,440
+long as your then returns a promise, you
+
+121
+00:04:43,759 --> 00:04:48,479
+can string those together. So, right
+
+122
+00:04:45,440 --> 00:04:52,560
+here, I could say then and take uh the
+
+123
+00:04:48,479 --> 00:04:55,520
+second value and console.log
+
+124
+00:04:52,560 --> 00:04:57,040
+the second value. So, if we save that
+
+125
+00:04:55,520 --> 00:04:59,520
+and I'm going to format my code so it
+
+126
+00:04:57,040 --> 00:05:02,160
+looks a little neater. So I'm saying
+
+127
+00:04:59,520 --> 00:05:05,199
+create a promise. Once that promise
+
+128
+00:05:02,160 --> 00:05:07,440
+resolves, log the result and then create
+
+129
+00:05:05,199 --> 00:05:09,759
+another promise and then log that
+
+130
+00:05:07,440 --> 00:05:12,080
+result. So if we save this and we come
+
+131
+00:05:09,759 --> 00:05:18,080
+over here, it's waited 1 2 3 seconds.
+
+132
+00:05:12,080 --> 00:05:21,280
+Hello world. 4 5 6 7 8 Hello World. And
+
+133
+00:05:18,080 --> 00:05:24,160
+then we were able to create um code that
+
+134
+00:05:21,280 --> 00:05:25,919
+ran after a set delay based on another
+
+135
+00:05:24,160 --> 00:05:28,639
+set delay. And we're able to do that
+
+136
+00:05:25,919 --> 00:05:28,639
+using promises.

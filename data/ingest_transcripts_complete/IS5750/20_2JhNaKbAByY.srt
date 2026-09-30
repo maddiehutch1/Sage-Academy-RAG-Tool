@@ -1,0 +1,527 @@
+1
+00:00:00,240 --> 00:00:03,439
+All right. So, in the last video, we
+
+2
+00:00:01,760 --> 00:00:05,120
+talked about concatenation and formatted
+
+3
+00:00:03,439 --> 00:00:06,480
+strings. I just want to show you a
+
+4
+00:00:05,120 --> 00:00:08,880
+reference that shows you all of the
+
+5
+00:00:06,480 --> 00:00:10,880
+things you can do with strings. So, what
+
+6
+00:00:08,880 --> 00:00:12,800
+I've done is I've gone to W3 Schools. If
+
+7
+00:00:10,880 --> 00:00:14,960
+you just Google W3 Schools, it'll be
+
+8
+00:00:12,800 --> 00:00:18,560
+probably the first website that pops up.
+
+9
+00:00:14,960 --> 00:00:21,119
+Um, this has a whole bunch of references
+
+10
+00:00:18,560 --> 00:00:22,640
+for a whole bunch of languages, whole
+
+11
+00:00:21,119 --> 00:00:23,920
+bunch of programming stuff. But if you
+
+12
+00:00:22,640 --> 00:00:26,240
+want to reference the JavaScript stuff,
+
+13
+00:00:23,920 --> 00:00:28,480
+you'll come here to JavaScript, and then
+
+14
+00:00:26,240 --> 00:00:32,399
+you can see all of this JavaScript
+
+15
+00:00:28,480 --> 00:00:34,399
+information. Um, so there's JavaScript.
+
+16
+00:00:32,399 --> 00:00:36,320
+You could click on strings and this will
+
+17
+00:00:34,399 --> 00:00:37,840
+show you how to create a string. And
+
+18
+00:00:36,320 --> 00:00:39,360
+this is a very helpful resource. One of
+
+19
+00:00:37,840 --> 00:00:41,600
+the things I want to point you to under
+
+20
+00:00:39,360 --> 00:00:43,680
+JavaScript strings, there's a JavaScript
+
+21
+00:00:41,600 --> 00:00:46,000
+string reference. If you click on
+
+22
+00:00:43,680 --> 00:00:48,079
+JavaScript string reference, it'll show
+
+23
+00:00:46,000 --> 00:00:51,760
+you everything that you can do with a
+
+24
+00:00:48,079 --> 00:00:53,280
+string. Um, so in this video I am going
+
+25
+00:00:51,760 --> 00:00:54,879
+to talk about something specific you can
+
+26
+00:00:53,280 --> 00:00:57,280
+do with the string. And we're going to
+
+27
+00:00:54,879 --> 00:00:59,520
+talk about this substring method. So
+
+28
+00:00:57,280 --> 00:01:02,399
+click on that if you are following along
+
+29
+00:00:59,520 --> 00:01:06,880
+with me. And it says what it does is it
+
+30
+00:01:02,399 --> 00:01:08,960
+sub extracts a substring from the text.
+
+31
+00:01:06,880 --> 00:01:10,560
+So if you want to get just part of the
+
+32
+00:01:08,960 --> 00:01:12,000
+text, you don't want all of the hello
+
+33
+00:01:10,560 --> 00:01:14,799
+world, you just want part of the hello
+
+34
+00:01:12,000 --> 00:01:17,759
+world, then you can use substring.
+
+35
+00:01:14,799 --> 00:01:19,759
+Um if you come down here, it says it
+
+36
+00:01:17,759 --> 00:01:22,240
+takes in a starting position and it
+
+37
+00:01:19,759 --> 00:01:25,439
+takes in an ending position up to but
+
+38
+00:01:22,240 --> 00:01:26,880
+not including the ending position. Um,
+
+39
+00:01:25,439 --> 00:01:28,560
+and if you don't give it the ending
+
+40
+00:01:26,880 --> 00:01:30,240
+position, then it'll just give you the
+
+41
+00:01:28,560 --> 00:01:33,759
+rest of the string. So, let's go see
+
+42
+00:01:30,240 --> 00:01:35,840
+this in action. Come over here to your
+
+43
+00:01:33,759 --> 00:01:39,360
+Visual Studio Code. We're going to get
+
+44
+00:01:35,840 --> 00:01:42,240
+rid of everything we had last time. And
+
+45
+00:01:39,360 --> 00:01:45,360
+we're going to type the text Bruce Wayne
+
+46
+00:01:42,240 --> 00:01:46,720
+is Batman.
+
+47
+00:01:45,360 --> 00:01:48,159
+And we're going to put that into a
+
+48
+00:01:46,720 --> 00:01:52,240
+variable. So, let's create a variable.
+
+49
+00:01:48,159 --> 00:01:54,640
+We'll say let my text equal and then the
+
+50
+00:01:52,240 --> 00:01:58,159
+text Bruce Wayne is Batman.
+
+51
+00:01:54,640 --> 00:02:00,640
+Okay, let's say I just want to pull out
+
+52
+00:01:58,159 --> 00:02:02,799
+the word Bruce.
+
+53
+00:02:00,640 --> 00:02:07,200
+Um, I'm going to create another variable
+
+54
+00:02:02,799 --> 00:02:10,000
+and I'm going to say let um
+
+55
+00:02:07,200 --> 00:02:11,840
+short text
+
+56
+00:02:10,000 --> 00:02:15,760
+equal.
+
+57
+00:02:11,840 --> 00:02:18,480
+And then now I'm going to slice off part
+
+58
+00:02:15,760 --> 00:02:21,840
+of this string. So I want a substring.
+
+59
+00:02:18,480 --> 00:02:23,840
+So if I come over to my code, I come
+
+60
+00:02:21,840 --> 00:02:25,360
+over to the reference guide, it says the
+
+61
+00:02:23,840 --> 00:02:27,280
+way you get a substring is you take the
+
+62
+00:02:25,360 --> 00:02:29,599
+variable name and then you do dot
+
+63
+00:02:27,280 --> 00:02:32,000
+substring. So coming back over to our
+
+64
+00:02:29,599 --> 00:02:35,280
+code, our variable is called my text. So
+
+65
+00:02:32,000 --> 00:02:37,120
+we'll say my text dot substring
+
+66
+00:02:35,280 --> 00:02:39,360
+and if we put the opening parenthesy, it
+
+67
+00:02:37,120 --> 00:02:42,560
+says it needs a starting number which is
+
+68
+00:02:39,360 --> 00:02:44,959
+it says it's zerobased index. That means
+
+69
+00:02:42,560 --> 00:02:47,440
+that the first letter is going to be
+
+70
+00:02:44,959 --> 00:02:48,879
+zero and then everything on from that is
+
+71
+00:02:47,440 --> 00:02:51,519
+going to be an increasing number. So it
+
+72
+00:02:48,879 --> 00:02:54,560
+means this capital B in Bruce is in
+
+73
+00:02:51,519 --> 00:02:56,480
+position zero. Computers start counting
+
+74
+00:02:54,560 --> 00:02:58,640
+from zero. And so when they made
+
+75
+00:02:56,480 --> 00:03:00,480
+JavaScript they made it so that it also
+
+76
+00:02:58,640 --> 00:03:02,159
+started counting from zero. If you
+
+77
+00:03:00,480 --> 00:03:04,560
+remember computers store information is
+
+78
+00:03:02,159 --> 00:03:06,159
+0 and one. Therefore a logical starting
+
+79
+00:03:04,560 --> 00:03:09,519
+place for counting for a computer is
+
+80
+00:03:06,159 --> 00:03:11,920
+zero. So our strings start counting at
+
+81
+00:03:09,519 --> 00:03:14,080
+zero as well. So, if we want to grab the
+
+82
+00:03:11,920 --> 00:03:17,120
+letter B, then we need to start at the
+
+83
+00:03:14,080 --> 00:03:18,560
+zero position. And then if we want to
+
+84
+00:03:17,120 --> 00:03:20,879
+grab all the way through the end of
+
+85
+00:03:18,560 --> 00:03:22,400
+Bruce, then we've got to count out how
+
+86
+00:03:20,879 --> 00:03:24,640
+many positions we're moving over. So,
+
+87
+00:03:22,400 --> 00:03:27,519
+we'll say, comma, and then it says now
+
+88
+00:03:24,640 --> 00:03:29,519
+where is the zerobased ending number.
+
+89
+00:03:27,519 --> 00:03:36,400
+So, if
+
+90
+00:03:29,519 --> 00:03:40,480
+B is 0, R is 1, U is 2, C is 3, and E is
+
+91
+00:03:36,400 --> 00:03:43,680
+4. So if we do a substring of 0, 4, then
+
+92
+00:03:40,480 --> 00:03:45,360
+that should give us the word Bruce.
+
+93
+00:03:43,680 --> 00:03:49,680
+Let's just see if that worked. So we'll
+
+94
+00:03:45,360 --> 00:03:52,000
+say alert and then we'll say short text
+
+95
+00:03:49,680 --> 00:03:55,440
+and we'll save that.
+
+96
+00:03:52,000 --> 00:03:58,480
+If we go live, we'll pop over to our
+
+97
+00:03:55,440 --> 00:04:00,319
+website and you can see it said B R U C.
+
+98
+00:03:58,480 --> 00:04:02,720
+And it looks like I must have miscounted
+
+99
+00:04:00,319 --> 00:04:06,640
+because it chopped off the E. If we come
+
+100
+00:04:02,720 --> 00:04:08,400
+back, we can see why that is. So if we
+
+101
+00:04:06,640 --> 00:04:10,080
+put the parenthesis on our substring, it
+
+102
+00:04:08,400 --> 00:04:12,560
+says what's the starting number? I said
+
+103
+00:04:10,080 --> 00:04:16,400
+zero. What's the ending number? If you
+
+104
+00:04:12,560 --> 00:04:18,720
+read closely, it says if um up to but
+
+105
+00:04:16,400 --> 00:04:23,040
+not including the character indicated by
+
+106
+00:04:18,720 --> 00:04:26,479
+the end. So I said 0 was B, one was R,
+
+107
+00:04:23,040 --> 00:04:29,360
+two was U, three was C,
+
+108
+00:04:26,479 --> 00:04:31,280
+four was E. I said four, but it doesn't
+
+109
+00:04:29,360 --> 00:04:33,360
+include the last number. So what I want
+
+110
+00:04:31,280 --> 00:04:35,919
+to do is I actually want to say go to
+
+111
+00:04:33,360 --> 00:04:37,520
+the space which is position five and
+
+112
+00:04:35,919 --> 00:04:40,320
+then it doesn't include that. So then
+
+113
+00:04:37,520 --> 00:04:43,919
+this will include the text just the text
+
+114
+00:04:40,320 --> 00:04:46,560
+Bruce. If we save that and we come over
+
+115
+00:04:43,919 --> 00:04:49,759
+here now we've got our full string for
+
+116
+00:04:46,560 --> 00:04:51,120
+Bruce. Um
+
+117
+00:04:49,759 --> 00:04:52,880
+if we wanted to start at a different
+
+118
+00:04:51,120 --> 00:04:56,720
+position let's say we just wanted to get
+
+119
+00:04:52,880 --> 00:05:00,240
+Batman. We would have to find where the
+
+120
+00:04:56,720 --> 00:05:07,120
+text of Batman started. So, it's zero. 1
+
+121
+00:05:00,240 --> 00:05:10,400
+2 3 4 5 6 7 8 9 10 11 12 13 14 15. It
+
+122
+00:05:07,120 --> 00:05:12,240
+looks like it is in the 15th space.
+
+123
+00:05:10,400 --> 00:05:16,400
+Um, we could count out to figure out
+
+124
+00:05:12,240 --> 00:05:18,960
+where the n comes in this string or
+
+125
+00:05:16,400 --> 00:05:20,560
+um the hint said that if you leave it
+
+126
+00:05:18,960 --> 00:05:23,039
+off, it'll just return the rest of the
+
+127
+00:05:20,560 --> 00:05:25,360
+string. So, if we if you leave off the
+
+128
+00:05:23,039 --> 00:05:27,280
+end portion. So, if we run this, we
+
+129
+00:05:25,360 --> 00:05:29,039
+should expect to see Batman. So, we'll
+
+130
+00:05:27,280 --> 00:05:31,360
+save our code. We'll come back over to
+
+131
+00:05:29,039 --> 00:05:34,960
+our website and we get the text Batman.
+
+132
+00:05:31,360 --> 00:05:34,960
+And that is how you use Substream.

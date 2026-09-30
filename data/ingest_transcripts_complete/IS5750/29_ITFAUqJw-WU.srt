@@ -1,0 +1,283 @@
+1
+00:00:00,880 --> 00:00:04,960
+All right, welcome back. Perhaps you
+
+2
+00:00:03,280 --> 00:00:06,240
+watched the last few videos and thought,
+
+3
+00:00:04,960 --> 00:00:08,559
+"Okay, you've taught me how to add,
+
+4
+00:00:06,240 --> 00:00:10,160
+subtract, multiply, divide, raise it to
+
+5
+00:00:08,559 --> 00:00:11,519
+an exponent, and even the modulus
+
+6
+00:00:10,160 --> 00:00:13,599
+operator." You might not know how you
+
+7
+00:00:11,519 --> 00:00:15,360
+feel about that one yet. Um, but you may
+
+8
+00:00:13,599 --> 00:00:16,480
+have noticed that I did not teach you
+
+9
+00:00:15,360 --> 00:00:18,240
+how to take the square root of
+
+10
+00:00:16,480 --> 00:00:19,600
+something. That is because I want to
+
+11
+00:00:18,240 --> 00:00:22,960
+introduce you to something called the
+
+12
+00:00:19,600 --> 00:00:25,039
+math library. So, the math library is
+
+13
+00:00:22,960 --> 00:00:26,640
+uh, so basically what a library is is
+
+14
+00:00:25,039 --> 00:00:28,720
+it's just code that someone else has
+
+15
+00:00:26,640 --> 00:00:30,080
+written that makes your life easier. You
+
+16
+00:00:28,720 --> 00:00:31,359
+don't have to fully understand how it
+
+17
+00:00:30,080 --> 00:00:34,160
+works. You just have to know that it
+
+18
+00:00:31,359 --> 00:00:35,680
+works. If you think about a car, you
+
+19
+00:00:34,160 --> 00:00:37,200
+probably don't understand all of the
+
+20
+00:00:35,680 --> 00:00:38,960
+complex chemical reactions that are
+
+21
+00:00:37,200 --> 00:00:40,399
+happening in the engine to make it run
+
+22
+00:00:38,960 --> 00:00:41,920
+or to make it accelerate when you push
+
+23
+00:00:40,399 --> 00:00:43,520
+the gas pedal, but you know that when
+
+24
+00:00:41,920 --> 00:00:46,000
+you push the gas pedal, your car
+
+25
+00:00:43,520 --> 00:00:48,160
+accelerates. So, similarly, in
+
+26
+00:00:46,000 --> 00:00:50,000
+programming, when you use a library, you
+
+27
+00:00:48,160 --> 00:00:51,840
+might not know exactly how it was coded
+
+28
+00:00:50,000 --> 00:00:53,520
+behind the scenes, but you trust that it
+
+29
+00:00:51,840 --> 00:00:55,600
+works and you can use it to speed up
+
+30
+00:00:53,520 --> 00:00:56,800
+your development. So, in this case, I'm
+
+31
+00:00:55,600 --> 00:00:58,719
+going to introduce you to the math
+
+32
+00:00:56,800 --> 00:01:00,399
+library. And the first thing I'm going
+
+33
+00:00:58,719 --> 00:01:02,079
+to show you in the math library is the
+
+34
+00:01:00,399 --> 00:01:03,760
+square root function. So if we want to
+
+35
+00:01:02,079 --> 00:01:05,760
+know what the square root of my number
+
+36
+00:01:03,760 --> 00:01:08,000
+is, then we're going to say alert just
+
+37
+00:01:05,760 --> 00:01:09,520
+so we can see the output of any math
+
+38
+00:01:08,000 --> 00:01:11,680
+that we do. And then we're going to
+
+39
+00:01:09,520 --> 00:01:12,960
+access the math library. To tell
+
+40
+00:01:11,680 --> 00:01:14,640
+JavaScript that we want to access the
+
+41
+00:01:12,960 --> 00:01:17,040
+math library, we have to use the math
+
+42
+00:01:14,640 --> 00:01:19,759
+libraries name. The name for the math
+
+43
+00:01:17,040 --> 00:01:23,280
+library is math. So you're going to use
+
+44
+00:01:19,759 --> 00:01:24,560
+a capital M and then lowercase a th. So,
+
+45
+00:01:23,280 --> 00:01:26,320
+you're just going to spell out math with
+
+46
+00:01:24,560 --> 00:01:29,840
+a capital N, and then you're going to
+
+47
+00:01:26,320 --> 00:01:32,640
+hit the period or the dot symbol. Um,
+
+48
+00:01:29,840 --> 00:01:34,479
+everything you see here is code that
+
+49
+00:01:32,640 --> 00:01:36,880
+someone else wrote that you just get to
+
+50
+00:01:34,479 --> 00:01:39,759
+take advantage of. Uh, so if you want to
+
+51
+00:01:36,880 --> 00:01:41,680
+take the log of something, um, if you
+
+52
+00:01:39,759 --> 00:01:45,360
+want to find
+
+53
+00:01:41,680 --> 00:01:46,560
+um the sign of something, you can see
+
+54
+00:01:45,360 --> 00:01:48,399
+that there's a lot of things the math
+
+55
+00:01:46,560 --> 00:01:49,840
+library can do. In this case, we want to
+
+56
+00:01:48,399 --> 00:01:52,000
+take the square root. So, the way we do
+
+57
+00:01:49,840 --> 00:01:54,560
+that is sqrt.
+
+58
+00:01:52,000 --> 00:01:56,799
+And then you'll notice if I mouse off of
+
+59
+00:01:54,560 --> 00:01:59,600
+it, it's a purple box. Anytime you see a
+
+60
+00:01:56,799 --> 00:02:01,520
+purple box, it means you need um opening
+
+61
+00:01:59,600 --> 00:02:04,320
+and closing parenthesis. So, I'm going
+
+62
+00:02:01,520 --> 00:02:06,240
+to put those and it says, "K, you need
+
+63
+00:02:04,320 --> 00:02:08,319
+to give me a number." So, I'm going to
+
+64
+00:02:06,240 --> 00:02:10,080
+give it my num because that is holding a
+
+65
+00:02:08,319 --> 00:02:12,480
+number. 25 is a number. We're going to
+
+66
+00:02:10,080 --> 00:02:15,360
+say, "Take my num, take the square root,
+
+67
+00:02:12,480 --> 00:02:17,120
+and then alert it." So if I save this
+
+68
+00:02:15,360 --> 00:02:19,120
+and
+
+69
+00:02:17,120 --> 00:02:21,520
+I go to my website, you can see the
+
+70
+00:02:19,120 --> 00:02:25,040
+square root of 25 is five, which is
+
+71
+00:02:21,520 --> 00:02:25,040
+exactly what we'd expect.

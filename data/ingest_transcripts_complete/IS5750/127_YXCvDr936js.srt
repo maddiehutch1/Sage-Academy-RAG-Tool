@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:03,840
+Okay. So, the next thing I'm going to
+
+2
+00:00:02,320 --> 00:00:06,080
+show you is how you can create your own
+
+3
+00:00:03,840 --> 00:00:08,160
+branch. What a branch is is it looks at
+
+4
+00:00:06,080 --> 00:00:11,360
+the code, takes a copy, and then you can
+
+5
+00:00:08,160 --> 00:00:12,800
+work on that copy, and then when you
+
+6
+00:00:11,360 --> 00:00:14,880
+decide to, you can eventually bring that
+
+7
+00:00:12,800 --> 00:00:16,880
+copy back and merge it with the original
+
+8
+00:00:14,880 --> 00:00:20,480
+code and keep the changes that you want
+
+9
+00:00:16,880 --> 00:00:22,720
+from the copy and not keep some of the
+
+10
+00:00:20,480 --> 00:00:24,880
+changes you don't want. Sometimes you'll
+
+11
+00:00:22,720 --> 00:00:26,400
+even make a copy and then you'll decide,
+
+12
+00:00:24,880 --> 00:00:28,240
+"Oh, that was a useless pursuit." And
+
+13
+00:00:26,400 --> 00:00:30,160
+you'll just delete the copy. Um, but
+
+14
+00:00:28,240 --> 00:00:34,480
+your main code stays safe from any
+
+15
+00:00:30,160 --> 00:00:36,719
+accidental changes. Um, so you basically
+
+16
+00:00:34,480 --> 00:00:38,879
+never ever ever want to be developing on
+
+17
+00:00:36,719 --> 00:00:41,600
+the main copy of your code. If anyone
+
+18
+00:00:38,879 --> 00:00:43,360
+tells you differently,
+
+19
+00:00:41,600 --> 00:00:44,879
+ask them how long they've been coding.
+
+20
+00:00:43,360 --> 00:00:46,239
+Um, because if they've been coding for a
+
+21
+00:00:44,879 --> 00:00:49,520
+while, they probably will not tell you
+
+22
+00:00:46,239 --> 00:00:53,039
+that. Um, so what you want to do is you
+
+23
+00:00:49,520 --> 00:00:54,960
+want to come to your current branch and
+
+24
+00:00:53,039 --> 00:00:56,480
+you can click this dropown and it'll say
+
+25
+00:00:54,960 --> 00:00:58,320
+currently you are on the main version of
+
+26
+00:00:56,480 --> 00:00:59,680
+the code. We do not want to edit the
+
+27
+00:00:58,320 --> 00:01:01,680
+main version of the code because that
+
+28
+00:00:59,680 --> 00:01:03,280
+could lead to huge problems. So, we're
+
+29
+00:01:01,680 --> 00:01:05,519
+going to do is we're going to click this
+
+30
+00:01:03,280 --> 00:01:07,600
+new branch button. And then we're going
+
+31
+00:01:05,519 --> 00:01:09,280
+to create a branch. Usually, you want to
+
+32
+00:01:07,600 --> 00:01:11,680
+name your branch something descriptive.
+
+33
+00:01:09,280 --> 00:01:14,320
+Um, probably the feature that you're
+
+34
+00:01:11,680 --> 00:01:16,000
+working on for the app. So, in my case,
+
+35
+00:01:14,320 --> 00:01:17,360
+this is the very first thing I'm
+
+36
+00:01:16,000 --> 00:01:20,159
+creating, but I'm going to create a
+
+37
+00:01:17,360 --> 00:01:23,360
+multiply function. So, I like to put my
+
+38
+00:01:20,159 --> 00:01:27,759
+name in front of it and then multiply
+
+39
+00:01:23,360 --> 00:01:30,479
+function. So, I've got my name and then
+
+40
+00:01:27,759 --> 00:01:33,439
+I've got this description of what I'm
+
+41
+00:01:30,479 --> 00:01:36,000
+doing for this project. And then I'm
+
+42
+00:01:33,439 --> 00:01:37,840
+going to hit create branch.
+
+43
+00:01:36,000 --> 00:01:40,720
+You will know you're successful if the
+
+44
+00:01:37,840 --> 00:01:45,280
+current branch switches from saying main
+
+45
+00:01:40,720 --> 00:01:46,640
+up here to saying your branch. So, um if
+
+46
+00:01:45,280 --> 00:01:48,560
+you want to switch branches, you can
+
+47
+00:01:46,640 --> 00:01:50,000
+click on main. Now, we are on the main
+
+48
+00:01:48,560 --> 00:01:53,119
+version of our code, the version we do
+
+49
+00:01:50,000 --> 00:01:55,119
+not want to be editing. Um, over here we
+
+50
+00:01:53,119 --> 00:01:56,960
+are on a perfect duplicate of that main
+
+51
+00:01:55,119 --> 00:01:58,640
+branch. And now we can edit the code
+
+52
+00:01:56,960 --> 00:02:00,240
+here, run tests here, make sure
+
+53
+00:01:58,640 --> 00:02:02,079
+everything works here. And then once
+
+54
+00:02:00,240 --> 00:02:04,719
+we're sure that it works, we can put it
+
+55
+00:02:02,079 --> 00:02:06,240
+back into the other one. So, um, I'm
+
+56
+00:02:04,719 --> 00:02:09,039
+going to open this up in Visual Studio
+
+57
+00:02:06,240 --> 00:02:12,319
+Code and I'm going to add a file and I'm
+
+58
+00:02:09,039 --> 00:02:14,239
+going to call this multiply.js.
+
+59
+00:02:12,319 --> 00:02:16,400
+And I'm going to write a function here,
+
+60
+00:02:14,239 --> 00:02:18,400
+const multiply.
+
+61
+00:02:16,400 --> 00:02:20,239
+And I'm going to use the arrow function
+
+62
+00:02:18,400 --> 00:02:26,080
+syntax.
+
+63
+00:02:20,239 --> 00:02:29,520
+And I'm going to accept A and B.
+
+64
+00:02:26,080 --> 00:02:31,840
+And then I'm going to return A* B. And
+
+65
+00:02:29,520 --> 00:02:33,440
+I'll save that. And then in the next
+
+66
+00:02:31,840 --> 00:02:36,239
+video I'll talk you about talk to you
+
+67
+00:02:33,440 --> 00:02:38,879
+about how you can save those changes to
+
+68
+00:02:36,239 --> 00:02:38,879
+your repository.

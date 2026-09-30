@@ -1,0 +1,327 @@
+1
+00:00:00,080 --> 00:00:06,240
+Right. Now that we've um handled Now
+
+2
+00:00:04,640 --> 00:00:07,279
+that we've learned try and catch, it's
+
+3
+00:00:06,240 --> 00:00:09,840
+time to talk about how to handle
+
+4
+00:00:07,279 --> 00:00:11,120
+rejection. Well, at least promise
+
+5
+00:00:09,840 --> 00:00:12,719
+rejection. I'm still not good at
+
+6
+00:00:11,120 --> 00:00:13,840
+handling other rejection, but promise
+
+7
+00:00:12,719 --> 00:00:16,240
+rejection. We will talk about how to
+
+8
+00:00:13,840 --> 00:00:18,560
+handle promise rejection. So, in our
+
+9
+00:00:16,240 --> 00:00:21,439
+weight function that returns a promise,
+
+10
+00:00:18,560 --> 00:00:25,359
+um inside of that promise, um there's a
+
+11
+00:00:21,439 --> 00:00:27,359
+keyword reject. And so instead of having
+
+12
+00:00:25,359 --> 00:00:31,119
+it resolve, what I'm going to do is I'm
+
+13
+00:00:27,359 --> 00:00:34,160
+going to have it reject and say big
+
+14
+00:00:31,119 --> 00:00:37,440
+scary error. And that's the string it's
+
+15
+00:00:34,160 --> 00:00:39,280
+going to return when it rejects. Well,
+
+16
+00:00:37,440 --> 00:00:42,000
+the first way I'm going to show you how
+
+17
+00:00:39,280 --> 00:00:43,920
+to handle rejection with promises is
+
+18
+00:00:42,000 --> 00:00:44,960
+with async and await. So to do that, I'm
+
+19
+00:00:43,920 --> 00:00:50,480
+going to create an asynchronous
+
+20
+00:00:44,960 --> 00:00:53,199
+function. uh my function and um
+
+21
+00:00:50,480 --> 00:00:55,920
+oh async function would help if I use
+
+22
+00:00:53,199 --> 00:00:57,920
+the right keyword and then in here I'm
+
+23
+00:00:55,920 --> 00:01:02,800
+going to await
+
+24
+00:00:57,920 --> 00:01:04,320
+the weight and I'm going to wait 3000
+
+25
+00:01:02,800 --> 00:01:08,400
+seconds
+
+26
+00:01:04,320 --> 00:01:12,240
+and I'm going to try
+
+27
+00:01:08,400 --> 00:01:14,720
+to await and then I'm going to catch the
+
+28
+00:01:12,240 --> 00:01:17,759
+error that results if this doesn't work
+
+29
+00:01:14,720 --> 00:01:20,320
+and and I'm going to log it. console.log
+
+30
+00:01:17,759 --> 00:01:22,880
+the error. So let's comment out this
+
+31
+00:01:20,320 --> 00:01:24,560
+code. So what I'm doing is I'm saying
+
+32
+00:01:22,880 --> 00:01:26,400
+run an asynchronous function. This could
+
+33
+00:01:24,560 --> 00:01:30,400
+be any asynchronous function, but in
+
+34
+00:01:26,400 --> 00:01:32,240
+this case um I am waiting. I'm calling
+
+35
+00:01:30,400 --> 00:01:35,759
+the wait function with 3,000
+
+36
+00:01:32,240 --> 00:01:37,600
+milliseconds. So 3 seconds. And in 3
+
+37
+00:01:35,759 --> 00:01:39,520
+seconds, it's going to reject it.
+
+38
+00:01:37,600 --> 00:01:41,920
+Meaning something's going to go wrong.
+
+39
+00:01:39,520 --> 00:01:46,040
+And we're going to give back a big scary
+
+40
+00:01:41,920 --> 00:01:46,040
+error. If we save this
+
+41
+00:01:46,159 --> 00:01:51,920
+and we come over here
+
+42
+00:01:48,960 --> 00:01:55,680
+and we wait a bit, we reload the page.
+
+43
+00:01:51,920 --> 00:01:57,360
+One, two, three.
+
+44
+00:01:55,680 --> 00:01:59,280
+Interesting. Let me go double check my
+
+45
+00:01:57,360 --> 00:02:03,200
+code. Actually, make make sure I'm on
+
+46
+00:01:59,280 --> 00:02:05,920
+the right tab here. Um, I am on the
+
+47
+00:02:03,200 --> 00:02:07,600
+right tab. Oh, I told you I always
+
+48
+00:02:05,920 --> 00:02:10,879
+forget to do this. I never called my
+
+49
+00:02:07,600 --> 00:02:14,160
+function. So, we'll call our function.
+
+50
+00:02:10,879 --> 00:02:16,319
+And now if we wait one, two, three, big
+
+51
+00:02:14,160 --> 00:02:18,319
+scary error. We got our error. And where
+
+52
+00:02:16,319 --> 00:02:20,720
+are we logging it? We're logging it in
+
+53
+00:02:18,319 --> 00:02:23,120
+this catch statement. So what happens is
+
+54
+00:02:20,720 --> 00:02:25,040
+if you call resolve, it gets returned
+
+55
+00:02:23,120 --> 00:02:28,800
+out here and you can store it. So I
+
+56
+00:02:25,040 --> 00:02:30,879
+could say let my value equal
+
+57
+00:02:28,800 --> 00:02:32,480
+the result of that. And so if we
+
+58
+00:02:30,879 --> 00:02:35,280
+resolved it, it would have returned into
+
+59
+00:02:32,480 --> 00:02:37,680
+my value. When we reject it, our catch
+
+60
+00:02:35,280 --> 00:02:39,680
+here grabs a hold of it and lets us log
+
+61
+00:02:37,680 --> 00:02:41,519
+it. And that is what you can do with
+
+62
+00:02:39,680 --> 00:02:43,360
+rejected promises. So if you make a
+
+63
+00:02:41,519 --> 00:02:45,360
+request out to the internet and they
+
+64
+00:02:43,360 --> 00:02:48,160
+don't give you back what you want, your
+
+65
+00:02:45,360 --> 00:02:51,200
+request will fail. In other words, it
+
+66
+00:02:48,160 --> 00:02:53,680
+will reject it and then you can use try
+
+67
+00:02:51,200 --> 00:02:55,360
+and catch to say, "Oh, that error is not
+
+68
+00:02:53,680 --> 00:02:57,360
+available this I mean that data is not
+
+69
+00:02:55,360 --> 00:02:59,519
+available at this time." And you've
+
+70
+00:02:57,360 --> 00:03:01,120
+probably seen this on websites where it
+
+71
+00:02:59,519 --> 00:03:02,800
+has a loading bar for a while and then
+
+72
+00:03:01,120 --> 00:03:04,959
+it says, "Sorry, couldn't retrieve the
+
+73
+00:03:02,800 --> 00:03:07,120
+data." The way they're accomplishing it
+
+74
+00:03:04,959 --> 00:03:10,080
+is they're doing asynchronous requests
+
+75
+00:03:07,120 --> 00:03:12,159
+to get the data and then once if they
+
+76
+00:03:10,080 --> 00:03:13,280
+get an error, they're showing it on
+
+77
+00:03:12,159 --> 00:03:14,959
+screen. In this case, I'm just
+
+78
+00:03:13,280 --> 00:03:17,280
+console.logging it, but you could
+
+79
+00:03:14,959 --> 00:03:19,280
+totally show it on screen. Now that you
+
+80
+00:03:17,280 --> 00:03:21,280
+understand how to do it the async await
+
+81
+00:03:19,280 --> 00:03:25,280
+way, in the next video I'll show you how
+
+82
+00:03:21,280 --> 00:03:25,280
+to do it if you prefer to chain vends

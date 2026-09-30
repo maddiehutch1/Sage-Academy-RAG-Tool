@@ -270,15 +270,16 @@ A simple MVP can use the following concepts:
   - DATA 5400: Advanced Data Visualization (63)
   - IS 3600: Introduction to Cloud Computing (27)
 
-## Stage 3 (planned)
+## Stage 3 (in progress)
 YouTube is a second host for the same `videos.source_url` string, not a second pipeline. Planning: [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md).
 
 - Offline helper `scripts/prepare_youtube_playlist.py` lists a playlist with `yt-dlp` (local operator tool, not a web dependency), writes `.srt` + JSON sidecars into `data/transcripts/<COURSE>/`
 - `ingest.py` stays SRT/DFXP-only; YouTube captions are converted to SRT before ingest
 - Frontend sniffs YouTube vs Kaltura from `source_url` and builds the matching iframe (`youtube.com/embed/<id>?start=<seconds>` vs existing `embedPlaykitJs` + `kalturaSeekFrom`)
 - No playlist table, no `source_type` column, no YouTube I/O in `/ask`
+- Operator inputs: IS 5750 playlist, `IS 5750: JavaScript for Absolute Beginners`, English captions, output `data/transcripts/IS5750/`. Helper/player implementation and caption preparation are complete (216 videos); local ingest and end-to-end QA remain pending local Docker and API-key configuration.
 
 Update the "Decisions Finalized" bullets above when Phase 1 closes.
 
 ## Recommended Next Step
-Implement Stage 3 Phase 1 when the playlist URL and course name are available (or smoke-test the helper on a short public playlist first): [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).
+Complete local ingest and end-to-end QA after Docker is available and local `.env` settings are configured: [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).

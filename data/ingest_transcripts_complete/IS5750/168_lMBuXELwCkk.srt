@@ -1,0 +1,139 @@
+1
+00:00:00,640 --> 00:00:03,760
+So, if I asked you what a promise is,
+
+2
+00:00:02,399 --> 00:00:06,560
+you would probably say it's an agreement
+
+3
+00:00:03,760 --> 00:00:08,320
+between two parties. So, for example, if
+
+4
+00:00:06,560 --> 00:00:10,080
+I promised to give you ice cream at some
+
+5
+00:00:08,320 --> 00:00:12,080
+point in the future, as long as I
+
+6
+00:00:10,080 --> 00:00:14,080
+eventually gave you that ice cream, you
+
+7
+00:00:12,080 --> 00:00:16,400
+would say that I'd fulfilled my promise.
+
+8
+00:00:14,080 --> 00:00:18,160
+In fact, you'd probably resolve me of my
+
+9
+00:00:16,400 --> 00:00:20,160
+obligation to give you more ice cream
+
+10
+00:00:18,160 --> 00:00:22,080
+because I promised to give you ice cream
+
+11
+00:00:20,160 --> 00:00:23,519
+and then I gave you ice cream. Once you
+
+12
+00:00:22,080 --> 00:00:25,680
+receive the ice cream, you're probably
+
+13
+00:00:23,519 --> 00:00:27,439
+going to eat the ice cream. Um, you'll
+
+14
+00:00:25,680 --> 00:00:30,080
+probably take some action as a result of
+
+15
+00:00:27,439 --> 00:00:32,480
+receiving the thing I promised.
+
+16
+00:00:30,080 --> 00:00:35,200
+Well, now let's take that same scenario.
+
+17
+00:00:32,480 --> 00:00:37,360
+Um, let's say I promised you ice cream
+
+18
+00:00:35,200 --> 00:00:40,160
+and then a couple hours later I came
+
+19
+00:00:37,360 --> 00:00:41,920
+back and handed you broccoli. Well, you
+
+20
+00:00:40,160 --> 00:00:44,000
+probably reject that because that is not
+
+21
+00:00:41,920 --> 00:00:46,559
+the thing I promised you. I promised you
+
+22
+00:00:44,000 --> 00:00:48,879
+ice cream and I brought you broccoli and
+
+23
+00:00:46,559 --> 00:00:51,280
+so my instead of resolving my
+
+24
+00:00:48,879 --> 00:00:53,600
+obligation, I will have given you
+
+25
+00:00:51,280 --> 00:00:56,079
+something that you rejected. Well,
+
+26
+00:00:53,600 --> 00:00:58,480
+promises work like this in JavaScript.
+
+27
+00:00:56,079 --> 00:01:00,480
+In JavaScript, a promise is just a
+
+28
+00:00:58,480 --> 00:01:03,280
+special kind of variable. And what it
+
+29
+00:01:00,480 --> 00:01:06,000
+does is it either resolves if the code
+
+30
+00:01:03,280 --> 00:01:07,680
+runs correctly or it rejects it if the
+
+31
+00:01:06,000 --> 00:01:09,280
+code doesn't run correctly. And so you
+
+32
+00:01:07,680 --> 00:01:11,280
+can write your code that says, "Hey,
+
+33
+00:01:09,280 --> 00:01:14,080
+wait until we get back the results that
+
+34
+00:01:11,280 --> 00:01:17,119
+we were expecting." And promises make
+
+35
+00:01:14,080 --> 00:01:17,119
+our life a lot easier.

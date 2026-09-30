@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import ChatThread, { type ThreadTurn } from "./ChatThread";
-import { buildKalturaIframeSrc } from "./SourceCards";
+import { buildVideoIframeSrc } from "./SourceCards";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
@@ -292,7 +292,7 @@ export default function HomePage() {
             {selectedVideo.video.source_url ? (
               <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                 <iframe
-                  src={buildKalturaIframeSrc(selectedVideo.video.source_url, 0)}
+                  src={buildVideoIframeSrc(selectedVideo.video.source_url, 0)}
                   className="absolute inset-0 w-full h-full"
                   allowFullScreen
                   allow="autoplay *; fullscreen *; encrypted-media *"

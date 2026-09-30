@@ -1,0 +1,155 @@
+1
+00:00:00,080 --> 00:00:04,480
+Okay. Um what we're going to do is we're
+
+2
+00:00:02,399 --> 00:00:08,080
+going to actually cover how to access
+
+3
+00:00:04,480 --> 00:00:10,400
+both local storage and session storage.
+
+4
+00:00:08,080 --> 00:00:12,400
+And we're just going to follow um the
+
+5
+00:00:10,400 --> 00:00:13,440
+same CRUD functionality that I talked
+
+6
+00:00:12,400 --> 00:00:16,400
+about previously. So I'm going to show
+
+7
+00:00:13,440 --> 00:00:19,359
+you how to create items, retrieve items,
+
+8
+00:00:16,400 --> 00:00:20,560
+update items, and delete items. So to do
+
+9
+00:00:19,359 --> 00:00:22,480
+that, what I'm going to do is I'm going
+
+10
+00:00:20,560 --> 00:00:24,560
+to come here and I'm going to say let's
+
+11
+00:00:22,480 --> 00:00:26,560
+add an item to local storage. The way
+
+12
+00:00:24,560 --> 00:00:29,279
+you do that is you say local storage do
+
+13
+00:00:26,560 --> 00:00:30,960
+set item and then you give it a key. and
+
+14
+00:00:29,279 --> 00:00:34,160
+I'm gonna say hello and then I'm going
+
+15
+00:00:30,960 --> 00:00:36,880
+to set the value to world. If I hit
+
+16
+00:00:34,160 --> 00:00:38,879
+enter, it returns undefined. But now if
+
+17
+00:00:36,880 --> 00:00:40,879
+I come over here to application and I
+
+18
+00:00:38,879 --> 00:00:44,079
+click on local storage, you can see that
+
+19
+00:00:40,879 --> 00:00:45,920
+the key is hello and the value is world.
+
+20
+00:00:44,079 --> 00:00:48,320
+Um, so I have now stored something
+
+21
+00:00:45,920 --> 00:00:49,680
+successfully in local storage. The way
+
+22
+00:00:48,320 --> 00:00:51,600
+you store something in session storage
+
+23
+00:00:49,680 --> 00:00:54,800
+is very similar. So you'd say session
+
+24
+00:00:51,600 --> 00:00:56,480
+storage set item and we'll also set
+
+25
+00:00:54,800 --> 00:00:58,879
+hello
+
+26
+00:00:56,480 --> 00:01:01,120
+and world.
+
+27
+00:00:58,879 --> 00:01:02,879
+And now if we look at our application um
+
+28
+00:01:01,120 --> 00:01:04,479
+here in session storage we have hello
+
+29
+00:01:02,879 --> 00:01:09,280
+and world. And the great thing about
+
+30
+00:01:04,479 --> 00:01:10,720
+this is if I reload my page um if I come
+
+31
+00:01:09,280 --> 00:01:11,920
+to my console it still prints out one
+
+32
+00:01:10,720 --> 00:01:13,680
+and everything else is gone. So you can
+
+33
+00:01:11,920 --> 00:01:15,760
+see I reloaded the page. But if I come
+
+34
+00:01:13,680 --> 00:01:17,520
+here to application, my local storage is
+
+35
+00:01:15,760 --> 00:01:19,520
+still storing hello and world. And my
+
+36
+00:01:17,520 --> 00:01:22,560
+session storage is storing hello and
+
+37
+00:01:19,520 --> 00:01:24,640
+world as well. So the key is hello, the
+
+38
+00:01:22,560 --> 00:01:28,159
+value is world. And that's how you add
+
+39
+00:01:24,640 --> 00:01:28,159
+something to local and session

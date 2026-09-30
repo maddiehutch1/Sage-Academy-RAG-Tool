@@ -1,0 +1,363 @@
+1
+00:00:00,160 --> 00:00:03,360
+We're going to get a little more in
+
+2
+00:00:01,199 --> 00:00:06,640
+depth and we're going to simplify this
+
+3
+00:00:03,360 --> 00:00:08,080
+for loop just a little bit. So in order
+
+4
+00:00:06,640 --> 00:00:10,639
+to do that, we need to talk about this
+
+5
+00:00:08,080 --> 00:00:16,080
+operator right here. So what I've said
+
+6
+00:00:10,639 --> 00:00:21,279
+is start at one, go up two and include
+
+7
+00:00:16,080 --> 00:00:23,840
+10 and go up each time by one. So
+
+8
+00:00:21,279 --> 00:00:25,439
+because we write this so often, there's
+
+9
+00:00:23,840 --> 00:00:27,760
+actually some shortcuts you can take
+
+10
+00:00:25,439 --> 00:00:30,080
+here. So we could say counter instead of
+
+11
+00:00:27,760 --> 00:00:31,279
+saying counter equals counter + 1. You
+
+12
+00:00:30,080 --> 00:00:33,040
+may remember from the compound
+
+13
+00:00:31,279 --> 00:00:36,079
+assignment video that you can say
+
+14
+00:00:33,040 --> 00:00:38,559
+counter plus equals 1.
+
+15
+00:00:36,079 --> 00:00:43,040
+So that is one syntax and we could save
+
+16
+00:00:38,559 --> 00:00:50,640
+this and go over uh sorry to our running
+
+17
+00:00:43,040 --> 00:00:53,440
+code and it says 1 2 3 4 5 6 7 8 9 10.
+
+18
+00:00:50,640 --> 00:00:58,239
+So what you can see is
+
+19
+00:00:53,440 --> 00:00:59,840
+the alert has run 10 times. Um so this
+
+20
+00:00:58,239 --> 00:01:02,399
+line of code we only had to write it
+
+21
+00:00:59,840 --> 00:01:05,119
+once but it ran 10 times and it actually
+
+22
+00:01:02,399 --> 00:01:06,960
+adjusted because the counter variable
+
+23
+00:01:05,119 --> 00:01:08,720
+was always adjusting. So each time the
+
+24
+00:01:06,960 --> 00:01:12,720
+loop went through the counter variable
+
+25
+00:01:08,720 --> 00:01:15,200
+was now something different. Um,
+
+26
+00:01:12,720 --> 00:01:17,840
+and because we typically write loops to
+
+27
+00:01:15,200 --> 00:01:21,360
+go one at a time, we've actually written
+
+28
+00:01:17,840 --> 00:01:24,000
+some much more um, simple syntax. So
+
+29
+00:01:21,360 --> 00:01:26,560
+rather than saying counter plus equals
+
+30
+00:01:24,000 --> 00:01:30,000
+1, we can actually reduce this down to
+
+31
+00:01:26,560 --> 00:01:32,000
+counter plus. This does the exact same
+
+32
+00:01:30,000 --> 00:01:35,200
+thing. It says take what's in counter,
+
+33
+00:01:32,000 --> 00:01:37,840
+go up by one. So if you do counter plus,
+
+34
+00:01:35,200 --> 00:01:41,119
+it will go up by one every single time.
+
+35
+00:01:37,840 --> 00:01:42,960
+So, let's save that and go live. And
+
+36
+00:01:41,119 --> 00:01:44,560
+one, two.
+
+37
+00:01:42,960 --> 00:01:50,720
+Sorry. Just get through this as fast as
+
+38
+00:01:44,560 --> 00:01:53,840
+we can. 7 8 9 and 10. Perfect. So, now
+
+39
+00:01:50,720 --> 00:01:56,799
+we've got a loop that runs um from 1 to
+
+40
+00:01:53,840 --> 00:02:00,560
+10 and it alerts it. Well, let's say we
+
+41
+00:01:56,799 --> 00:02:03,439
+want to alert our name right after it.
+
+42
+00:02:00,560 --> 00:02:06,560
+Um, so I'll just write to. So, we'll
+
+43
+00:02:03,439 --> 00:02:09,200
+save that and we'll come over and it
+
+44
+00:02:06,560 --> 00:02:12,319
+just says one, two. Wait a minute, my
+
+45
+00:02:09,200 --> 00:02:14,480
+name isn't showing up every time.
+
+46
+00:02:12,319 --> 00:02:17,520
+So, if only there was a way to tell the
+
+47
+00:02:14,480 --> 00:02:20,319
+for Oh, there's my name.
+
+48
+00:02:17,520 --> 00:02:22,640
+Interesting. So, it looks like for a for
+
+49
+00:02:20,319 --> 00:02:25,040
+loop, it only does the line right after
+
+50
+00:02:22,640 --> 00:02:26,640
+it. So, there is a way that you can get
+
+51
+00:02:25,040 --> 00:02:28,959
+around this, and this is by using a
+
+52
+00:02:26,640 --> 00:02:30,720
+block of code. The way you signify a
+
+53
+00:02:28,959 --> 00:02:32,480
+block of code is you use curly braces.
+
+54
+00:02:30,720 --> 00:02:35,360
+So an opening curly brace and a closing
+
+55
+00:02:32,480 --> 00:02:37,680
+curly brace. This says the next line of
+
+56
+00:02:35,360 --> 00:02:39,920
+code is all grouped together. Everything
+
+57
+00:02:37,680 --> 00:02:42,480
+between these curly braces is grouped
+
+58
+00:02:39,920 --> 00:02:44,560
+together. So when the for loop says run
+
+59
+00:02:42,480 --> 00:02:47,040
+the next line of code every time we go
+
+60
+00:02:44,560 --> 00:02:48,800
+through the loop, it run it sees these
+
+61
+00:02:47,040 --> 00:02:51,280
+curly braces and says oh instead of just
+
+62
+00:02:48,800 --> 00:02:57,440
+running line 13, run everything between
+
+63
+00:02:51,280 --> 00:02:59,280
+line 13 and line 15. So now if we take
+
+64
+00:02:57,440 --> 00:03:00,879
+our two lines of code and we put them
+
+65
+00:02:59,280 --> 00:03:03,760
+inside of those curly braces because
+
+66
+00:03:00,879 --> 00:03:06,000
+curly braces signify a code block the
+
+67
+00:03:03,760 --> 00:03:07,920
+for loop knows oh I don't need to run
+
+68
+00:03:06,000 --> 00:03:10,879
+just one line I need to run everything
+
+69
+00:03:07,920 --> 00:03:13,840
+in that code block. So, let's save this
+
+70
+00:03:10,879 --> 00:03:15,680
+and go over. And we get one toa, two
+
+71
+00:03:13,840 --> 00:03:17,040
+Toa, three toa, and I probably should
+
+72
+00:03:15,680 --> 00:03:18,560
+have made that Mississippi. So, then I
+
+73
+00:03:17,040 --> 00:03:20,640
+could be counting one Mississippi, two
+
+74
+00:03:18,560 --> 00:03:22,159
+Mississippi, but I also didn't want to
+
+75
+00:03:20,640 --> 00:03:24,800
+try and spell Mississippi live on
+
+76
+00:03:22,159 --> 00:03:27,280
+screen. All right, so hopefully that
+
+77
+00:03:24,800 --> 00:03:29,519
+gives you a good idea of how for loops
+
+78
+00:03:27,280 --> 00:03:31,040
+work and their syntax. You tell it where
+
+79
+00:03:29,519 --> 00:03:32,799
+you want to start, how long you want to
+
+80
+00:03:31,040 --> 00:03:34,560
+run, then you tell it how much you want
+
+81
+00:03:32,799 --> 00:03:36,480
+to change by. In this case, we are just
+
+82
+00:03:34,560 --> 00:03:40,080
+using the shorthand syntax to say go up
+
+83
+00:03:36,480 --> 00:03:41,760
+by one every single time. And then in if
+
+84
+00:03:40,080 --> 00:03:43,440
+you put curly braces you can then put
+
+85
+00:03:41,760 --> 00:03:46,640
+multiple lines of code and these lines
+
+86
+00:03:43,440 --> 00:03:49,200
+of code will get run every single time.
+
+87
+00:03:46,640 --> 00:03:50,959
+Now having done that we can actually
+
+88
+00:03:49,200 --> 00:03:53,440
+jump into how we could have made your
+
+89
+00:03:50,959 --> 00:03:56,000
+last project your selection project much
+
+90
+00:03:53,440 --> 00:03:58,480
+much easier and we will do that in the
+
+91
+00:03:56,000 --> 00:03:58,480
+next video.

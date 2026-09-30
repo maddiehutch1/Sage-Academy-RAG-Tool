@@ -1,0 +1,667 @@
+1
+00:00:00,080 --> 00:00:02,960
+All right, we're going to do two
+
+2
+00:00:01,199 --> 00:00:04,720
+problems in this video. The first one
+
+3
+00:00:02,960 --> 00:00:07,120
+tells us it wants us to receive an input
+
+4
+00:00:04,720 --> 00:00:09,360
+for a number, then multiply that number
+
+5
+00:00:07,120 --> 00:00:11,519
+by two, then add nine, then subtract
+
+6
+00:00:09,360 --> 00:00:13,280
+three, then divide by two, then subtract
+
+7
+00:00:11,519 --> 00:00:16,160
+the original number, and then print the
+
+8
+00:00:13,280 --> 00:00:17,680
+results. All right, so let's get
+
+9
+00:00:16,160 --> 00:00:19,359
+started. Uh, the first thing we're going
+
+10
+00:00:17,680 --> 00:00:22,480
+to want to do is we're going to want to
+
+11
+00:00:19,359 --> 00:00:24,240
+put our name as a comment at the top. So
+
+12
+00:00:22,480 --> 00:00:25,279
+name,
+
+13
+00:00:24,240 --> 00:00:26,800
+and then we're going to want to put a
+
+14
+00:00:25,279 --> 00:00:31,240
+brief description of what our program
+
+15
+00:00:26,800 --> 00:00:31,240
+does. um
+
+16
+00:00:31,920 --> 00:00:37,680
+does some cool math.
+
+17
+00:00:35,040 --> 00:00:39,280
+Um if this was a real world project,
+
+18
+00:00:37,680 --> 00:00:41,760
+you'd want probably want to be more
+
+19
+00:00:39,280 --> 00:00:44,399
+descriptive. In this case, we're just
+
+20
+00:00:41,760 --> 00:00:45,920
+doing math. All right. So, let's take an
+
+21
+00:00:44,399 --> 00:00:50,559
+input for a number. Let's start with
+
+22
+00:00:45,920 --> 00:00:58,360
+that. So, right here, we're going to say
+
+23
+00:00:50,559 --> 00:00:58,360
+um let my number equal prompt
+
+24
+00:00:58,559 --> 00:01:03,000
+Please enter a number.
+
+25
+00:01:03,600 --> 00:01:08,159
+Um, this prompt remember always returns
+
+26
+00:01:06,159 --> 00:01:09,439
+a string. So if we want it to be an
+
+27
+00:01:08,159 --> 00:01:11,280
+actual number so that we can do the
+
+28
+00:01:09,439 --> 00:01:13,600
+multiplication, the addition and the
+
+29
+00:01:11,280 --> 00:01:16,960
+subtraction, then we need to convert it.
+
+30
+00:01:13,600 --> 00:01:18,720
+Um, so I if they enter a number with
+
+31
+00:01:16,960 --> 00:01:21,200
+decimal places, I want to keep track of
+
+32
+00:01:18,720 --> 00:01:23,360
+that. So I'm going to use parse float.
+
+33
+00:01:21,200 --> 00:01:26,720
+So I'm going to turn my string into a
+
+34
+00:01:23,360 --> 00:01:30,159
+floating number. So we'll say parse
+
+35
+00:01:26,720 --> 00:01:32,799
+float and that's takes in an input of a
+
+36
+00:01:30,159 --> 00:01:34,400
+string and turns it into a float. So I'm
+
+37
+00:01:32,799 --> 00:01:37,040
+going to prompt them for a number. Going
+
+38
+00:01:34,400 --> 00:01:39,360
+to get a number going to as a string.
+
+39
+00:01:37,040 --> 00:01:41,920
+I'm going to convert it into a number
+
+40
+00:01:39,360 --> 00:01:44,720
+and I'm going to store it.
+
+41
+00:01:41,920 --> 00:01:47,119
+Once I've done that, um I know I'm going
+
+42
+00:01:44,720 --> 00:01:49,680
+to need that original number later. So
+
+43
+00:01:47,119 --> 00:01:51,280
+before I do multiplication, I need to
+
+44
+00:01:49,680 --> 00:01:53,600
+make sure that I don't change what this
+
+45
+00:01:51,280 --> 00:01:56,799
+number is. So, I should probably create
+
+46
+00:01:53,600 --> 00:02:01,600
+a new variable. So, I'm going to say let
+
+47
+00:01:56,799 --> 00:02:03,600
+um running number equal and we said
+
+48
+00:02:01,600 --> 00:02:08,319
+multiply that number by two. So, we'll
+
+49
+00:02:03,600 --> 00:02:12,879
+say my num times two.
+
+50
+00:02:08,319 --> 00:02:14,720
+And then it says add nine. All right.
+
+51
+00:02:12,879 --> 00:02:16,640
+So, we can just access our running
+
+52
+00:02:14,720 --> 00:02:21,760
+number again and say running number
+
+53
+00:02:16,640 --> 00:02:26,000
+equals itself plus 9. So now we've added
+
+54
+00:02:21,760 --> 00:02:31,440
+9. So let's say we took three. 3 * 2 is
+
+55
+00:02:26,000 --> 00:02:34,080
+6. 6 + 9 is 15. Um so then it says
+
+56
+00:02:31,440 --> 00:02:36,239
+subtract 3.
+
+57
+00:02:34,080 --> 00:02:41,440
+Running number
+
+58
+00:02:36,239 --> 00:02:43,440
+equals running number minus 3.
+
+59
+00:02:41,440 --> 00:02:46,400
+And then it wants us to divide by two.
+
+60
+00:02:43,440 --> 00:02:49,760
+So we'll say running number equals
+
+61
+00:02:46,400 --> 00:02:52,800
+running number divided by two.
+
+62
+00:02:49,760 --> 00:02:56,959
+And then it wants us to subtract the
+
+63
+00:02:52,800 --> 00:03:00,160
+original number. So we're going to say
+
+64
+00:02:56,959 --> 00:03:03,200
+running number equals running number
+
+65
+00:03:00,160 --> 00:03:04,400
+minus the original number is my number
+
+66
+00:03:03,200 --> 00:03:05,680
+because we haven't changed this
+
+67
+00:03:04,400 --> 00:03:08,480
+variable. We've just been changing
+
+68
+00:03:05,680 --> 00:03:10,879
+running number this whole time.
+
+69
+00:03:08,480 --> 00:03:14,680
+And then we need to print the result. So
+
+70
+00:03:10,879 --> 00:03:14,680
+I'm going to say alert
+
+71
+00:03:14,800 --> 00:03:20,640
+running number. So that should be our
+
+72
+00:03:16,879 --> 00:03:23,200
+final answer. So, if we save this and we
+
+73
+00:03:20,640 --> 00:03:27,920
+come over
+
+74
+00:03:23,200 --> 00:03:29,840
+to our browser and we um reload our
+
+75
+00:03:27,920 --> 00:03:32,480
+page, it'll say please enter a number.
+
+76
+00:03:29,840 --> 00:03:35,959
+If we enter three and we hit okay, the
+
+77
+00:03:32,480 --> 00:03:35,959
+result is three.
+
+78
+00:03:39,920 --> 00:03:45,159
+And I just realized I'm sharing the
+
+79
+00:03:41,840 --> 00:03:45,159
+wrong screen.
+
+80
+00:03:47,680 --> 00:03:51,519
+Okay, so I will reload this page and it
+
+81
+00:03:50,080 --> 00:03:54,159
+says please enter a number. I'm going to
+
+82
+00:03:51,519 --> 00:03:56,720
+enter three. If I hit enter, it runs all
+
+83
+00:03:54,159 --> 00:03:59,200
+those calculations and I get three. If I
+
+84
+00:03:56,720 --> 00:04:01,200
+reload the page and I enter 10, it runs
+
+85
+00:03:59,200 --> 00:04:03,519
+all those calculations and I get three.
+
+86
+00:04:01,200 --> 00:04:05,040
+The reason this is called magic math is
+
+87
+00:04:03,519 --> 00:04:06,560
+because no matter what number you enter
+
+88
+00:04:05,040 --> 00:04:08,239
+here, you will always get a three. So
+
+89
+00:04:06,560 --> 00:04:10,159
+you know you've written this correctly
+
+90
+00:04:08,239 --> 00:04:12,720
+if every time you run your program, you
+
+91
+00:04:10,159 --> 00:04:15,040
+get a three. So let's move on to problem
+
+92
+00:04:12,720 --> 00:04:17,840
+number two. Problem number two says to
+
+93
+00:04:15,040 --> 00:04:19,840
+rewrite the last problem using compound
+
+94
+00:04:17,840 --> 00:04:23,919
+assignment.
+
+95
+00:04:19,840 --> 00:04:26,800
+So um I'm going to start by grabbing my
+
+96
+00:04:23,919 --> 00:04:29,199
+number again but because I'm in the same
+
+97
+00:04:26,800 --> 00:04:32,160
+file I cannot reuse the same name. So
+
+98
+00:04:29,199 --> 00:04:36,000
+I'm going to call my variable instead of
+
+99
+00:04:32,160 --> 00:04:38,000
+calling it my number I'll call it uh num
+
+100
+00:04:36,000 --> 00:04:40,240
+two. So this is my second number that
+
+101
+00:04:38,000 --> 00:04:42,479
+I'm getting
+
+102
+00:04:40,240 --> 00:04:44,880
+and I'm getting information and I'm
+
+103
+00:04:42,479 --> 00:04:46,880
+turning it into a float. We can't do
+
+104
+00:04:44,880 --> 00:04:49,280
+anything with num two. We can't use
+
+105
+00:04:46,880 --> 00:04:51,680
+compound assignment on number two
+
+106
+00:04:49,280 --> 00:04:53,280
+because we need it to stay the same um
+
+107
+00:04:51,680 --> 00:04:55,199
+because we need to use it twice in our
+
+108
+00:04:53,280 --> 00:04:56,639
+program. However, all of these times
+
+109
+00:04:55,199 --> 00:04:59,759
+where we did running number equals
+
+110
+00:04:56,639 --> 00:05:02,479
+running number plus or minus, we can
+
+111
+00:04:59,759 --> 00:05:06,160
+change those to be compound assignment.
+
+112
+00:05:02,479 --> 00:05:09,680
+So let's do that. We'll say let running
+
+113
+00:05:06,160 --> 00:05:11,759
+number two equal
+
+114
+00:05:09,680 --> 00:05:15,360
+minum
+
+115
+00:05:11,759 --> 00:05:17,039
+* 2. That line has to stay the same. The
+
+116
+00:05:15,360 --> 00:05:18,560
+next line, however, can be shortened.
+
+117
+00:05:17,039 --> 00:05:21,520
+Instead of saying running number equals
+
+118
+00:05:18,560 --> 00:05:25,520
+running number + 9, we can say running
+
+119
+00:05:21,520 --> 00:05:26,800
+number plus= 9. The next line says
+
+120
+00:05:25,520 --> 00:05:29,680
+running number equals running number
+
+121
+00:05:26,800 --> 00:05:34,320
+minus 3. So we'll say running number
+
+122
+00:05:29,680 --> 00:05:35,840
+minus equals 3. The next line is wait,
+
+123
+00:05:34,320 --> 00:05:38,880
+let me just double check I've got all my
+
+124
+00:05:35,840 --> 00:05:40,560
+lines. 2 93. Okay, so next one is
+
+125
+00:05:38,880 --> 00:05:43,520
+divided by two. So we can say running
+
+126
+00:05:40,560 --> 00:05:45,759
+number divide equal 2.
+
+127
+00:05:43,520 --> 00:05:48,240
+And then we can do the last one, which
+
+128
+00:05:45,759 --> 00:05:50,160
+is running number um equals running
+
+129
+00:05:48,240 --> 00:05:54,160
+number minus my number. So we'll say
+
+130
+00:05:50,160 --> 00:05:55,680
+running number minus equals num two. And
+
+131
+00:05:54,160 --> 00:05:57,600
+I realized these are all supposed to be
+
+132
+00:05:55,680 --> 00:06:00,000
+running number two. If you're ever
+
+133
+00:05:57,600 --> 00:06:02,240
+trying to fix multiple lines at once, on
+
+134
+00:06:00,000 --> 00:06:04,400
+a Windows you'll hold the Alt key. On a
+
+135
+00:06:02,240 --> 00:06:06,639
+Mac, you'll hold the option key and you
+
+136
+00:06:04,400 --> 00:06:09,120
+can click into multiple places on your
+
+137
+00:06:06,639 --> 00:06:10,880
+computer and it allows you to type once
+
+138
+00:06:09,120 --> 00:06:13,600
+and have it be typed into all of those
+
+139
+00:06:10,880 --> 00:06:15,840
+places. So in all these places, I can
+
+140
+00:06:13,600 --> 00:06:17,440
+just type the number two and I've now
+
+141
+00:06:15,840 --> 00:06:21,120
+fixed those so they all say running
+
+142
+00:06:17,440 --> 00:06:24,240
+number two. So I get my number two
+
+143
+00:06:21,120 --> 00:06:26,160
+prompt. I take it and multiply it by two
+
+144
+00:06:24,240 --> 00:06:29,280
+and store it back. And then I'm
+
+145
+00:06:26,160 --> 00:06:31,919
+constantly using compound assignment to
+
+146
+00:06:29,280 --> 00:06:33,840
+add 9, subtract three, divide by two,
+
+147
+00:06:31,919 --> 00:06:38,319
+and then subtract whatever our original
+
+148
+00:06:33,840 --> 00:06:40,240
+number was. And once we're done,
+
+149
+00:06:38,319 --> 00:06:42,960
+we'll alert
+
+150
+00:06:40,240 --> 00:06:44,560
+our running number two. And we'll save
+
+151
+00:06:42,960 --> 00:06:47,120
+our code. So if everything works
+
+152
+00:06:44,560 --> 00:06:48,639
+perfectly, we should be able to enter um
+
+153
+00:06:47,120 --> 00:06:50,479
+any number on the first one and get
+
+154
+00:06:48,639 --> 00:06:52,720
+three and any number on the second one
+
+155
+00:06:50,479 --> 00:06:55,039
+and get three as well.
+
+156
+00:06:52,720 --> 00:06:57,759
+So, if we come back over, I'm going to
+
+157
+00:06:55,039 --> 00:07:00,639
+hit cancel
+
+158
+00:06:57,759 --> 00:07:03,599
+and cancel and reload the page. Okay,
+
+159
+00:07:00,639 --> 00:07:04,880
+please enter a number 10. Three. We knew
+
+160
+00:07:03,599 --> 00:07:07,039
+the first one worked, so that's not
+
+161
+00:07:04,880 --> 00:07:08,639
+surprising. Second one, we'll enter 10.
+
+162
+00:07:07,039 --> 00:07:11,520
+And we get three, which means we
+
+163
+00:07:08,639 --> 00:07:15,680
+successfully were able to adapt our
+
+164
+00:07:11,520 --> 00:07:18,240
+original um our original code to be use
+
+165
+00:07:15,680 --> 00:07:20,000
+to use compound assignment instead. And
+
+166
+00:07:18,240 --> 00:07:22,240
+that concludes this video. Thanks for
+
+167
+00:07:20,000 --> 00:07:22,240
+watching.

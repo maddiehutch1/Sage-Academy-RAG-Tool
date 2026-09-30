@@ -1,0 +1,691 @@
+1
+00:00:00,080 --> 00:00:03,120
+All right. One of the things you might
+
+2
+00:00:01,439 --> 00:00:05,680
+want to do with an array is you might
+
+3
+00:00:03,120 --> 00:00:08,639
+want to sort it. Here we have a list of
+
+4
+00:00:05,680 --> 00:00:10,080
+six numbers. Four, five, six, 1 2 3. And
+
+5
+00:00:08,639 --> 00:00:13,759
+you might want to sort them into order
+
+6
+00:00:10,080 --> 00:00:14,960
+where it goes 1 2 3 4 5 6. And so if I
+
+7
+00:00:13,759 --> 00:00:16,160
+were to ask you how to do that, you
+
+8
+00:00:14,960 --> 00:00:18,000
+would probably look at this and just
+
+9
+00:00:16,160 --> 00:00:20,800
+say, "Well, duh. Move the 1 2 3 in front
+
+10
+00:00:18,000 --> 00:00:22,880
+of the 456 and we're done." Um, and
+
+11
+00:00:20,800 --> 00:00:24,320
+while that works great, unfortunately
+
+12
+00:00:22,880 --> 00:00:26,400
+that's not the way a computer thinks
+
+13
+00:00:24,320 --> 00:00:29,519
+about this. Because you see a computer
+
+14
+00:00:26,400 --> 00:00:32,399
+when it looks at an array, all it knows
+
+15
+00:00:29,519 --> 00:00:34,079
+is that it has six boxes. It doesn't
+
+16
+00:00:32,399 --> 00:00:36,880
+know what's inside of those boxes. It
+
+17
+00:00:34,079 --> 00:00:39,040
+just has six boxes. So if we wanted to
+
+18
+00:00:36,880 --> 00:00:41,600
+sort them, we would have to open up each
+
+19
+00:00:39,040 --> 00:00:42,719
+box and see what's inside of it. So the
+
+20
+00:00:41,600 --> 00:00:46,079
+one I'm going to show you today is
+
+21
+00:00:42,719 --> 00:00:47,920
+called a bubble sort. So if you look the
+
+22
+00:00:46,079 --> 00:00:50,640
+reason we call it bubble sort is because
+
+23
+00:00:47,920 --> 00:00:53,039
+we sort until the first position has
+
+24
+00:00:50,640 --> 00:00:55,680
+been solved and we put the smallest
+
+25
+00:00:53,039 --> 00:00:58,719
+thing first meaning it has bubbled all
+
+26
+00:00:55,680 --> 00:01:00,640
+the way up to the top and then we sort
+
+27
+00:00:58,719 --> 00:01:02,559
+the next position and the next position
+
+28
+00:01:00,640 --> 00:01:04,000
+and the next position and so on and so
+
+29
+00:01:02,559 --> 00:01:06,560
+forth until we've completed the bubble
+
+30
+00:01:04,000 --> 00:01:08,479
+sort. So just to show you this in
+
+31
+00:01:06,560 --> 00:01:10,560
+practice, um what we would do is we'd
+
+32
+00:01:08,479 --> 00:01:12,560
+open up the box in the first position.
+
+33
+00:01:10,560 --> 00:01:15,280
+With arrays, this is called position
+
+34
+00:01:12,560 --> 00:01:17,280
+zero or index zero. So if we want to
+
+35
+00:01:15,280 --> 00:01:19,360
+look at what's in index zero and then
+
+36
+00:01:17,280 --> 00:01:22,080
+the second box right here, which is
+
+37
+00:01:19,360 --> 00:01:24,560
+index one, we can do that. So we'll open
+
+38
+00:01:22,080 --> 00:01:26,479
+them up and we'll compare four and five.
+
+39
+00:01:24,560 --> 00:01:29,280
+If we are trying to put the smallest
+
+40
+00:01:26,479 --> 00:01:31,119
+item first, then we are always going to
+
+41
+00:01:29,280 --> 00:01:34,640
+be looking to see if we need to swap the
+
+42
+00:01:31,119 --> 00:01:37,280
+two things positions. So the pos the
+
+43
+00:01:34,640 --> 00:01:40,000
+item in position zero is four. The item
+
+44
+00:01:37,280 --> 00:01:41,759
+in position one is five. Five is bigger
+
+45
+00:01:40,000 --> 00:01:44,000
+than four. So we'll just leave things
+
+46
+00:01:41,759 --> 00:01:47,439
+be. We'll put the box back and then
+
+47
+00:01:44,000 --> 00:01:50,880
+we'll open up the box in position two.
+
+48
+00:01:47,439 --> 00:01:53,360
+Um so position zero and position two get
+
+49
+00:01:50,880 --> 00:01:54,720
+compared. Position two still has a
+
+50
+00:01:53,360 --> 00:01:57,040
+bigger number. So we're going to leave
+
+51
+00:01:54,720 --> 00:02:00,479
+things be. We'll put the box back and
+
+52
+00:01:57,040 --> 00:02:01,600
+open up position three. So, just again
+
+53
+00:02:00,479 --> 00:02:03,119
+for those of you who are less
+
+54
+00:02:01,600 --> 00:02:06,000
+comfortable counting with arrays, four
+
+55
+00:02:03,119 --> 00:02:07,439
+is in the zero position. Um, according
+
+56
+00:02:06,000 --> 00:02:11,200
+to a computer, we don't know what's in
+
+57
+00:02:07,439 --> 00:02:12,640
+five. We do know what's in sorry, four
+
+58
+00:02:11,200 --> 00:02:14,720
+is in the zero position. We don't know
+
+59
+00:02:12,640 --> 00:02:17,360
+what's in position one. We do know that
+
+60
+00:02:14,720 --> 00:02:19,040
+six is in position two for now. Um, but
+
+61
+00:02:17,360 --> 00:02:21,040
+we're going to close position two and
+
+62
+00:02:19,040 --> 00:02:23,520
+look at position three. So, we close
+
+63
+00:02:21,040 --> 00:02:27,040
+that box and open up the next box. Okay,
+
+64
+00:02:23,520 --> 00:02:29,760
+so four is in the zero position. One is
+
+65
+00:02:27,040 --> 00:02:32,000
+in the three position.
+
+66
+00:02:29,760 --> 00:02:34,160
+One is smaller than four. So we need to
+
+67
+00:02:32,000 --> 00:02:37,280
+swap these. So we're going to take one
+
+68
+00:02:34,160 --> 00:02:40,160
+out of the fourth or sorry out of the
+
+69
+00:02:37,280 --> 00:02:42,239
+third position or index three and we're
+
+70
+00:02:40,160 --> 00:02:45,040
+going to take four out of index zero and
+
+71
+00:02:42,239 --> 00:02:47,519
+we're going to swap them. So we've now
+
+72
+00:02:45,040 --> 00:02:51,360
+swapped them. So one has moved to the
+
+73
+00:02:47,519 --> 00:02:54,640
+front. And now what's in box the fourth
+
+74
+00:02:51,360 --> 00:02:56,959
+box or index number three is the number
+
+75
+00:02:54,640 --> 00:03:01,840
+four. We'll put the box back down. And
+
+76
+00:02:56,959 --> 00:03:04,239
+now we'll compare index 0 to index 4.
+
+77
+00:03:01,840 --> 00:03:06,400
+One is smaller than two. So nothing
+
+78
+00:03:04,239 --> 00:03:10,400
+needs to swap. We'll put our boxes down.
+
+79
+00:03:06,400 --> 00:03:12,239
+Compare index 0 to index 5. And one is
+
+80
+00:03:10,400 --> 00:03:14,239
+still smaller than three. Which means we
+
+81
+00:03:12,239 --> 00:03:16,480
+can put our box back down. If you're
+
+82
+00:03:14,239 --> 00:03:19,280
+paying attention, that means that we
+
+83
+00:03:16,480 --> 00:03:21,440
+have now compared index zero to every
+
+84
+00:03:19,280 --> 00:03:24,159
+single number here. And we know for a
+
+85
+00:03:21,440 --> 00:03:26,400
+fact that index 0 is the smallest one.
+
+86
+00:03:24,159 --> 00:03:28,480
+The one bubbled all the way up to the
+
+87
+00:03:26,400 --> 00:03:31,519
+front. And now that we know the first
+
+88
+00:03:28,480 --> 00:03:32,720
+position or index zero has been solved,
+
+89
+00:03:31,519 --> 00:03:34,480
+we don't even need to look at it
+
+90
+00:03:32,720 --> 00:03:36,480
+anymore. We can just start looking at
+
+91
+00:03:34,480 --> 00:03:40,159
+the second position. From here on out,
+
+92
+00:03:36,480 --> 00:03:42,400
+I'm going to refer to them by 1 2 3 4 5
+
+93
+00:03:40,159 --> 00:03:44,319
+6 so that I don't get myself tongue
+
+94
+00:03:42,400 --> 00:03:46,080
+twisted. But just remember that a
+
+95
+00:03:44,319 --> 00:03:49,599
+computer refers to them as zero, one,
+
+96
+00:03:46,080 --> 00:03:51,360
+two, three, four, and five. Okay, so
+
+97
+00:03:49,599 --> 00:03:54,000
+we're looking at the box. We're looking
+
+98
+00:03:51,360 --> 00:03:56,480
+at box number two, and we need to sort
+
+99
+00:03:54,000 --> 00:03:58,239
+it so that the next smallest number goes
+
+100
+00:03:56,480 --> 00:04:00,560
+into box number two. So we'll look at
+
+101
+00:03:58,239 --> 00:04:02,879
+box number two, and we'll compare it to
+
+102
+00:04:00,560 --> 00:04:04,640
+box number three. Box number two holds a
+
+103
+00:04:02,879 --> 00:04:06,560
+smaller number, so we won't do anything.
+
+104
+00:04:04,640 --> 00:04:08,799
+We'll put back down box number three and
+
+105
+00:04:06,560 --> 00:04:11,840
+open up box number four. We're comparing
+
+106
+00:04:08,799 --> 00:04:13,920
+box number two and box number four. Box
+
+107
+00:04:11,840 --> 00:04:16,000
+number four contains a smaller number.
+
+108
+00:04:13,920 --> 00:04:17,519
+So, we're going to swap them places.
+
+109
+00:04:16,000 --> 00:04:18,959
+Then, we're going to close box number
+
+110
+00:04:17,519 --> 00:04:22,160
+four and we're going to compare box
+
+111
+00:04:18,959 --> 00:04:24,560
+number two to box number five. Four and
+
+112
+00:04:22,160 --> 00:04:26,000
+two, two is smaller, so we need to swap
+
+113
+00:04:24,560 --> 00:04:28,000
+them. So, we're going to swap them and
+
+114
+00:04:26,000 --> 00:04:30,479
+we're going to move the four into box
+
+115
+00:04:28,000 --> 00:04:32,880
+number five and the two into box number
+
+116
+00:04:30,479 --> 00:04:35,680
+two. Now that we've swapped them, we'll
+
+117
+00:04:32,880 --> 00:04:37,759
+put back down the box on box number five
+
+118
+00:04:35,680 --> 00:04:40,240
+and we'll compare box number two to box
+
+119
+00:04:37,759 --> 00:04:42,000
+number six. So you can see there's no
+
+120
+00:04:40,240 --> 00:04:44,560
+need to swap these because box number
+
+121
+00:04:42,000 --> 00:04:46,240
+two is the smaller number. If you're
+
+122
+00:04:44,560 --> 00:04:48,080
+still hanging in there with me, that
+
+123
+00:04:46,240 --> 00:04:49,680
+means we have successfully sorted the
+
+124
+00:04:48,080 --> 00:04:51,759
+first two positions and we no longer
+
+125
+00:04:49,680 --> 00:04:53,520
+need to look at them anymore. So now
+
+126
+00:04:51,759 --> 00:04:56,479
+we're going to look at position number
+
+127
+00:04:53,520 --> 00:04:58,080
+or box number three. Box number one and
+
+128
+00:04:56,479 --> 00:05:00,560
+box number two have successfully bubbled
+
+129
+00:04:58,080 --> 00:05:02,960
+up. Okay, we'll put our boxes back down.
+
+130
+00:05:00,560 --> 00:05:04,479
+We'll open up box number, box number
+
+131
+00:05:02,960 --> 00:05:06,320
+three, and compare it to box number
+
+132
+00:05:04,479 --> 00:05:08,320
+four. Box number four is smaller, so we
+
+133
+00:05:06,320 --> 00:05:10,240
+need to swap those places. We'll put
+
+134
+00:05:08,320 --> 00:05:12,560
+down box number four and compare box
+
+135
+00:05:10,240 --> 00:05:14,000
+number three to box number five. Box
+
+136
+00:05:12,560 --> 00:05:16,160
+number five contains a smaller number.
+
+137
+00:05:14,000 --> 00:05:18,720
+So, we need to switch boxes the contents
+
+138
+00:05:16,160 --> 00:05:20,720
+of boxes three and five. We'll swap
+
+139
+00:05:18,720 --> 00:05:23,919
+those places and we'll put the box back
+
+140
+00:05:20,720 --> 00:05:27,199
+down on number five. Now, we compare box
+
+141
+00:05:23,919 --> 00:05:29,360
+three to box six. Box six contains a
+
+142
+00:05:27,199 --> 00:05:31,520
+smaller number, so we need to sort
+
+143
+00:05:29,360 --> 00:05:33,680
+switch the contents of box three and box
+
+144
+00:05:31,520 --> 00:05:35,840
+six. Now that we've done that, we'll put
+
+145
+00:05:33,680 --> 00:05:38,400
+the box back down on four. And those
+
+146
+00:05:35,840 --> 00:05:40,240
+astute of you may have noticed that we
+
+147
+00:05:38,400 --> 00:05:42,080
+have now successfully sorted our first
+
+148
+00:05:40,240 --> 00:05:43,680
+three positions, which means we don't
+
+149
+00:05:42,080 --> 00:05:45,360
+even need to look at them anymore. And
+
+150
+00:05:43,680 --> 00:05:47,280
+we just need to look at box four. So
+
+151
+00:05:45,360 --> 00:05:49,280
+we'll put our boxes back down. We'll
+
+152
+00:05:47,280 --> 00:05:51,199
+compare four and five. They need to
+
+153
+00:05:49,280 --> 00:05:54,400
+switch. We'll put the box back down and
+
+154
+00:05:51,199 --> 00:05:57,199
+compare four and six. Four and six need
+
+155
+00:05:54,400 --> 00:06:00,560
+to switch. So we'll swap them. Now, you
+
+156
+00:05:57,199 --> 00:06:04,400
+may have noticed we have successfully um
+
+157
+00:06:00,560 --> 00:06:05,759
+filled out the first four numbers,
+
+158
+00:06:04,400 --> 00:06:07,199
+which means we don't need to look at
+
+159
+00:06:05,759 --> 00:06:08,960
+them anymore. Now, we just need to look
+
+160
+00:06:07,199 --> 00:06:11,440
+at this slot. So, we'll put our boxes
+
+161
+00:06:08,960 --> 00:06:14,240
+back down. We'll compare box five and
+
+162
+00:06:11,440 --> 00:06:18,000
+box six. They need to swap. As soon as
+
+163
+00:06:14,240 --> 00:06:19,520
+we make this swap, we know that we will
+
+164
+00:06:18,000 --> 00:06:21,680
+have successfully sorted the first five
+
+165
+00:06:19,520 --> 00:06:23,919
+numbers. If you've successfully sorted
+
+166
+00:06:21,680 --> 00:06:25,759
+the first five numbers, then it means
+
+167
+00:06:23,919 --> 00:06:28,400
+that the sixth number has to be in the
+
+168
+00:06:25,759 --> 00:06:30,479
+right spot. So, we'll make the swap and
+
+169
+00:06:28,400 --> 00:06:32,319
+we are done. And that is how a bubble
+
+170
+00:06:30,479 --> 00:06:34,160
+sort works. Hopefully, that visual was
+
+171
+00:06:32,319 --> 00:06:35,759
+helpful. In the next video, we're going
+
+172
+00:06:34,160 --> 00:06:38,240
+to talk about how we would implement
+
+173
+00:06:35,759 --> 00:06:38,240
+that in

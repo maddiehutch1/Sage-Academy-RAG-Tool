@@ -1,0 +1,679 @@
+1
+00:00:02,080 --> 00:00:05,920
+One of the reasons that we did GitHub
+
+2
+00:00:03,679 --> 00:00:07,919
+pages first as a deployment option is
+
+3
+00:00:05,920 --> 00:00:10,480
+because this option actually relies on
+
+4
+00:00:07,919 --> 00:00:15,120
+GitHub to deploy. Um so this option is
+
+5
+00:00:10,480 --> 00:00:17,680
+called forcell and um they uh built a
+
+6
+00:00:15,120 --> 00:00:19,279
+nice JavaScript framework called Nex.js
+
+7
+00:00:17,680 --> 00:00:21,520
+and it's a wonderful framework for
+
+8
+00:00:19,279 --> 00:00:22,960
+building pages and um you can learn
+
+9
+00:00:21,520 --> 00:00:24,720
+about that in the future but for now
+
+10
+00:00:22,960 --> 00:00:26,320
+we're just going to deploy our normal
+
+11
+00:00:24,720 --> 00:00:28,960
+dice roller app just like we did last
+
+12
+00:00:26,320 --> 00:00:30,400
+time. And to do that, um, you'll want to
+
+13
+00:00:28,960 --> 00:00:33,520
+sign up for an account. So, you'll click
+
+14
+00:00:30,400 --> 00:00:38,520
+sign up, and I'm going to click that I
+
+15
+00:00:33,520 --> 00:00:38,520
+am working on personal projects. Um,
+
+16
+00:00:38,719 --> 00:00:43,840
+and then I'm going to click continue.
+
+17
+00:00:42,320 --> 00:00:45,520
+And then it says, let's create your
+
+18
+00:00:43,840 --> 00:00:48,480
+account. And I'm going to continue with
+
+19
+00:00:45,520 --> 00:00:50,480
+GitHub. And I'm going to continue with
+
+20
+00:00:48,480 --> 00:00:52,960
+my account. What you're doing is you're
+
+21
+00:00:50,480 --> 00:00:54,559
+authorizing it to let you log in using
+
+22
+00:00:52,960 --> 00:00:56,640
+GitHub.
+
+23
+00:00:54,559 --> 00:00:59,440
+And so it wants to one verify your
+
+24
+00:00:56,640 --> 00:01:01,280
+identity, two um we're going to let
+
+25
+00:00:59,440 --> 00:01:03,359
+Verscell know what they can access from
+
+26
+00:01:01,280 --> 00:01:05,680
+our GitHub and three we're going to let
+
+27
+00:01:03,359 --> 00:01:07,520
+it act on our behalf. Um but the main
+
+28
+00:01:05,680 --> 00:01:09,360
+resources it's going to use is it's
+
+29
+00:01:07,520 --> 00:01:11,200
+going to verify our email address to
+
+30
+00:01:09,360 --> 00:01:13,680
+verify that we are who we say we are. So
+
+31
+00:01:11,200 --> 00:01:18,560
+I'm going to authorize that.
+
+32
+00:01:13,680 --> 00:01:20,159
+And now we are on Versel. Um and we will
+
+33
+00:01:18,560 --> 00:01:22,159
+need to enter our phone number to verify
+
+34
+00:01:20,159 --> 00:01:24,080
+our login. And I'm going to stop the
+
+35
+00:01:22,159 --> 00:01:26,159
+recording for that.
+
+36
+00:01:24,080 --> 00:01:27,920
+Okay, as soon as you've entered the code
+
+37
+00:01:26,159 --> 00:01:31,280
+that they text you, you will be brought
+
+38
+00:01:27,920 --> 00:01:34,000
+to this location. So, we want to bring
+
+39
+00:01:31,280 --> 00:01:36,479
+in a GitHub repository. Um, to do that,
+
+40
+00:01:34,000 --> 00:01:38,079
+you'll have to install it. Install the
+
+41
+00:01:36,479 --> 00:01:40,400
+GitHub application here. So, what you'll
+
+42
+00:01:38,079 --> 00:01:43,360
+do is you'll click install.
+
+43
+00:01:40,400 --> 00:01:45,520
+And it says which user wants to
+
+44
+00:01:43,360 --> 00:01:47,520
+authorize for cell. And so, I'm going to
+
+45
+00:01:45,520 --> 00:01:48,799
+go as the user I was with. If you only
+
+46
+00:01:47,520 --> 00:01:50,799
+have one GitHub account, that's probably
+
+47
+00:01:48,799 --> 00:01:54,000
+what you'll get. All right. Now it wants
+
+48
+00:01:50,799 --> 00:01:55,920
+to know which GitHub wants to know which
+
+49
+00:01:54,000 --> 00:01:58,560
+repositories you want for cell to
+
+50
+00:01:55,920 --> 00:02:00,880
+access. Um you could do all repositories
+
+51
+00:01:58,560 --> 00:02:04,000
+and it would be able to access all of
+
+52
+00:02:00,880 --> 00:02:05,840
+them read only. Um but I'm going to do
+
+53
+00:02:04,000 --> 00:02:08,560
+only select repositories because I only
+
+54
+00:02:05,840 --> 00:02:10,080
+want it to access a specific repository
+
+55
+00:02:08,560 --> 00:02:12,400
+or maybe a couple of specific
+
+56
+00:02:10,080 --> 00:02:16,000
+repositories. In this case I want it to
+
+57
+00:02:12,400 --> 00:02:18,720
+access dice roller or dice roller. I
+
+58
+00:02:16,000 --> 00:02:22,480
+want it to be able to read and write it.
+
+59
+00:02:18,720 --> 00:02:25,120
+Um, and now I'm going to click install.
+
+60
+00:02:22,480 --> 00:02:27,520
+Once I've clicked install, it now has
+
+61
+00:02:25,120 --> 00:02:29,280
+access to dice roller and I can click
+
+62
+00:02:27,520 --> 00:02:31,120
+import. Okay, so you're going to be
+
+63
+00:02:29,280 --> 00:02:33,920
+asked to create a new project. I'm going
+
+64
+00:02:31,120 --> 00:02:35,760
+to name leave my default as dice roller.
+
+65
+00:02:33,920 --> 00:02:38,000
+If you were deploying like an Angular
+
+66
+00:02:35,760 --> 00:02:39,200
+project or React app or like there's a
+
+67
+00:02:38,000 --> 00:02:41,680
+whole bunch of things that you could be
+
+68
+00:02:39,200 --> 00:02:42,720
+trying to deploy, um, you could put one
+
+69
+00:02:41,680 --> 00:02:44,000
+of those, but I'm just going to leave it
+
+70
+00:02:42,720 --> 00:02:45,280
+as other because we aren't using a
+
+71
+00:02:44,000 --> 00:02:46,959
+framework. We're just writing normal
+
+72
+00:02:45,280 --> 00:02:49,280
+vanilla JavaScript. So, we're going to
+
+73
+00:02:46,959 --> 00:02:50,720
+leave it as other. Um, then it says,
+
+74
+00:02:49,280 --> 00:02:52,720
+what directory do you want to deploy
+
+75
+00:02:50,720 --> 00:02:55,040
+from? If you remember, our index.html
+
+76
+00:02:52,720 --> 00:02:56,640
+file is in our root directory. So, we're
+
+77
+00:02:55,040 --> 00:02:58,879
+going to go ahead and leave that. And
+
+78
+00:02:56,640 --> 00:03:00,239
+we're going to click deploy.
+
+79
+00:02:58,879 --> 00:03:02,560
+And this is going to take a minute to
+
+80
+00:03:00,239 --> 00:03:05,680
+deploy or a couple seconds actually. So,
+
+81
+00:03:02,560 --> 00:03:08,400
+the deploying is cued. It started to 3
+
+82
+00:03:05,680 --> 00:03:09,599
+seconds for And it's done. Okay. So,
+
+83
+00:03:08,400 --> 00:03:11,040
+we're going to continue to the
+
+84
+00:03:09,599 --> 00:03:15,200
+dashboard. And you can see we have a
+
+85
+00:03:11,040 --> 00:03:16,959
+preview of our live running site. And
+
+86
+00:03:15,200 --> 00:03:19,360
+I'm going to do a hard refresh on this
+
+87
+00:03:16,959 --> 00:03:21,360
+page.
+
+88
+00:03:19,360 --> 00:03:23,440
+And it says it's pulling from our main
+
+89
+00:03:21,360 --> 00:03:25,920
+branch. Some of you may see a problem
+
+90
+00:03:23,440 --> 00:03:28,080
+with that. So if I open up the domain
+
+91
+00:03:25,920 --> 00:03:29,440
+and I roll the dice, if you had merged
+
+92
+00:03:28,080 --> 00:03:31,440
+your code with the main branch, this
+
+93
+00:03:29,440 --> 00:03:33,120
+would have been a perfectly deployed
+
+94
+00:03:31,440 --> 00:03:34,799
+piece of code. Sometimes you want to
+
+95
+00:03:33,120 --> 00:03:36,400
+deploy from a different branch. In my
+
+96
+00:03:34,799 --> 00:03:37,840
+case, I want to deploy from the deploy
+
+97
+00:03:36,400 --> 00:03:40,319
+branch. This is just the starter code
+
+98
+00:03:37,840 --> 00:03:42,159
+with no JavaScript written in it. So to
+
+99
+00:03:40,319 --> 00:03:44,959
+change that, you're going to come back
+
+100
+00:03:42,159 --> 00:03:47,040
+here. You're going to click on settings.
+
+101
+00:03:44,959 --> 00:03:49,680
+You're going to click on environments.
+
+102
+00:03:47,040 --> 00:03:51,360
+And here where it says production um
+
+103
+00:03:49,680 --> 00:03:52,640
+that code is pulling from the main
+
+104
+00:03:51,360 --> 00:03:54,480
+branch. We don't want it to pull from
+
+105
+00:03:52,640 --> 00:03:56,319
+the main branch. We want to pull it from
+
+106
+00:03:54,480 --> 00:03:57,519
+the deploy branch. So we're going to
+
+107
+00:03:56,319 --> 00:04:00,799
+click on this and we're going to change
+
+108
+00:03:57,519 --> 00:04:03,200
+the name from main to deploy.
+
+109
+00:04:00,799 --> 00:04:05,120
+Then we're going to hit save.
+
+110
+00:04:03,200 --> 00:04:06,720
+So it says each commit pushed to the
+
+111
+00:04:05,120 --> 00:04:08,239
+deploy branch will create a production
+
+112
+00:04:06,720 --> 00:04:10,959
+deployment.
+
+113
+00:04:08,239 --> 00:04:12,640
+Now you can come over here to overview.
+
+114
+00:04:10,959 --> 00:04:14,640
+Here you can see that the source is
+
+115
+00:04:12,640 --> 00:04:16,239
+main. If we do a control shift R or
+
+116
+00:04:14,640 --> 00:04:18,959
+command shift R to hard refresh the
+
+117
+00:04:16,239 --> 00:04:20,560
+page, that means don't pull from cache.
+
+118
+00:04:18,959 --> 00:04:22,800
+Um, you can see right now it still says
+
+119
+00:04:20,560 --> 00:04:24,880
+the source is main. But if you look down
+
+120
+00:04:22,800 --> 00:04:27,759
+here, it says to update your production
+
+121
+00:04:24,880 --> 00:04:29,360
+deployment, push to the deploy branch.
+
+122
+00:04:27,759 --> 00:04:30,639
+Meaning, if we want this to change,
+
+123
+00:04:29,360 --> 00:04:32,560
+because right now, if we click this
+
+124
+00:04:30,639 --> 00:04:35,040
+link, click roll the dice, nothing's
+
+125
+00:04:32,560 --> 00:04:37,360
+happening. If we want it to change, we
+
+126
+00:04:35,040 --> 00:04:39,840
+have to make a change to our deploy
+
+127
+00:04:37,360 --> 00:04:41,280
+branch. This used to say main and now it
+
+128
+00:04:39,840 --> 00:04:42,880
+says deploy because we've switched which
+
+129
+00:04:41,280 --> 00:04:44,720
+branch it's watching.
+
+130
+00:04:42,880 --> 00:04:47,840
+So to show you the real power of this,
+
+131
+00:04:44,720 --> 00:04:50,320
+let's come over here and let's go to our
+
+132
+00:04:47,840 --> 00:04:52,240
+dice roller and instead of being on
+
+133
+00:04:50,320 --> 00:04:54,240
+main, switch to your deploy branch or
+
+134
+00:04:52,240 --> 00:04:56,960
+whatever you call your branch. And then
+
+135
+00:04:54,240 --> 00:04:59,520
+I'm going to edit this dice roller right
+
+136
+00:04:56,960 --> 00:05:01,199
+here. And I'm just going to add a new
+
+137
+00:04:59,520 --> 00:05:06,479
+line and commit my changes. And I'm
+
+138
+00:05:01,199 --> 00:05:09,520
+going to say um redeploying with new
+
+139
+00:05:06,479 --> 00:05:10,960
+read me.
+
+140
+00:05:09,520 --> 00:05:14,800
+And we're going to commit directly to
+
+141
+00:05:10,960 --> 00:05:17,199
+the deploy branch. So we commit that
+
+142
+00:05:14,800 --> 00:05:20,720
+and now
+
+143
+00:05:17,199 --> 00:05:23,840
+um our GitHub pages is redeploying. You
+
+144
+00:05:20,720 --> 00:05:25,840
+can see it right there. Um but if we
+
+145
+00:05:23,840 --> 00:05:27,919
+come over here
+
+146
+00:05:25,840 --> 00:05:31,919
+um and we do a hard refresh on this
+
+147
+00:05:27,919 --> 00:05:34,639
+page, you can see it takes a minute and
+
+148
+00:05:31,919 --> 00:05:35,919
+it says now the source is deploy. Oops,
+
+149
+00:05:34,639 --> 00:05:38,560
+didn't mean to click that. Now the
+
+150
+00:05:35,919 --> 00:05:40,240
+source is deploy and it redeployed with
+
+151
+00:05:38,560 --> 00:05:41,520
+the new readme. So that means all of my
+
+152
+00:05:40,240 --> 00:05:43,759
+changes that I just made to my code are
+
+153
+00:05:41,520 --> 00:05:45,440
+now live. So if I click on this link,
+
+154
+00:05:43,759 --> 00:05:47,120
+you can see that my dice are rolling. I
+
+155
+00:05:45,440 --> 00:05:49,199
+pulled code from the correct branch. I
+
+156
+00:05:47,120 --> 00:05:51,280
+can freeze the dice. And so the nice
+
+157
+00:05:49,199 --> 00:05:54,639
+thing about Verscell is that as you push
+
+158
+00:05:51,280 --> 00:05:57,120
+changes to your code branch, Verscell
+
+159
+00:05:54,639 --> 00:05:59,199
+will redeploy it for you. And so that is
+
+160
+00:05:57,120 --> 00:06:00,240
+how you deploy on Versel. And you can
+
+161
+00:05:59,199 --> 00:06:03,240
+see from the URL, it's
+
+162
+00:06:00,240 --> 00:06:03,240
+https-roller-neon.vercell
+
+163
+00:06:05,039 --> 00:06:09,520
+app. And if we come over and reload this
+
+164
+00:06:07,919 --> 00:06:12,520
+page,
+
+165
+00:06:09,520 --> 00:06:12,520
+um,
+
+166
+00:06:13,759 --> 00:06:18,720
+sorry, if we reload this page, you can
+
+167
+00:06:16,639 --> 00:06:22,240
+see that the domain
+
+168
+00:06:18,720 --> 00:06:24,479
+is dice- roller-neon.cell.app.
+
+169
+00:06:22,240 --> 00:06:26,720
+And your app is live. Anyone can just
+
+170
+00:06:24,479 --> 00:06:26,720
+this

@@ -1,0 +1,299 @@
+1
+00:00:00,080 --> 00:00:04,000
+Okay, so we started this off by saying
+
+2
+00:00:02,080 --> 00:00:05,520
+we wanted to have this number here and
+
+3
+00:00:04,000 --> 00:00:09,679
+we wanted it to increment every time we
+
+4
+00:00:05,520 --> 00:00:12,240
+visited the page. So
+
+5
+00:00:09,679 --> 00:00:14,639
+if we come over here, um, how would we
+
+6
+00:00:12,240 --> 00:00:17,119
+actually accomplish that? Well, we would
+
+7
+00:00:14,639 --> 00:00:18,960
+need to access the local storage object.
+
+8
+00:00:17,119 --> 00:00:22,320
+Um,
+
+9
+00:00:18,960 --> 00:00:24,080
+so I could say local storage dot set
+
+10
+00:00:22,320 --> 00:00:28,800
+item
+
+11
+00:00:24,080 --> 00:00:33,040
+and then I could say page visit count
+
+12
+00:00:28,800 --> 00:00:34,719
+and then I could set that to one.
+
+13
+00:00:33,040 --> 00:00:37,120
+But the problem is this will set it to
+
+14
+00:00:34,719 --> 00:00:39,360
+one every single time the page loads.
+
+15
+00:00:37,120 --> 00:00:41,120
+What I want to do is I want to increase
+
+16
+00:00:39,360 --> 00:00:44,480
+it if it exists. And if it doesn't
+
+17
+00:00:41,120 --> 00:00:48,000
+exist, then I want to set it to one.
+
+18
+00:00:44,480 --> 00:00:49,920
+Well, how could we do that? Well, if we
+
+19
+00:00:48,000 --> 00:00:52,719
+go back over and visit our page and I
+
+20
+00:00:49,920 --> 00:00:54,800
+say local storage.get item and I try and
+
+21
+00:00:52,719 --> 00:00:56,960
+get an item that doesn't exist like blah
+
+22
+00:00:54,800 --> 00:01:00,960
+blah blah.
+
+23
+00:00:56,960 --> 00:01:03,600
+If I hit enter, it returns null. So what
+
+24
+00:01:00,960 --> 00:01:06,560
+I can do is I can see if an item exists
+
+25
+00:01:03,600 --> 00:01:08,159
+by trying to access it. So I could say
+
+26
+00:01:06,560 --> 00:01:13,040
+if
+
+27
+00:01:08,159 --> 00:01:15,600
+local storage.get item page visit count.
+
+28
+00:01:13,040 --> 00:01:17,759
+So what I'm saying is if the page visit
+
+29
+00:01:15,600 --> 00:01:20,799
+count exists
+
+30
+00:01:17,759 --> 00:01:23,040
+then I want to do something otherwise
+
+31
+00:01:20,799 --> 00:01:25,360
+I want to
+
+32
+00:01:23,040 --> 00:01:29,920
+create page visit count and set it equal
+
+33
+00:01:25,360 --> 00:01:31,680
+to one. So
+
+34
+00:01:29,920 --> 00:01:33,040
+it's going to see if page visit count
+
+35
+00:01:31,680 --> 00:01:34,640
+exists because it's going to run this
+
+36
+00:01:33,040 --> 00:01:36,880
+function. If it returns null it's going
+
+37
+00:01:34,640 --> 00:01:38,400
+to go straight to false. If it returns
+
+38
+00:01:36,880 --> 00:01:42,000
+something then it's going to come in
+
+39
+00:01:38,400 --> 00:01:46,240
+here into this true. So what I can do is
+
+40
+00:01:42,000 --> 00:01:49,280
+I can say let um
+
+41
+00:01:46,240 --> 00:01:50,640
+visit count equal and then I've got to
+
+42
+00:01:49,280 --> 00:01:53,439
+convert it to a number. So I'll say
+
+43
+00:01:50,640 --> 00:01:57,200
+local storage.get get item and we'll get
+
+44
+00:01:53,439 --> 00:02:02,960
+page visit count
+
+45
+00:01:57,200 --> 00:02:05,840
+and then um I'll say visit count++
+
+46
+00:02:02,960 --> 00:02:10,640
+to increment it one and then I'll say
+
+47
+00:02:05,840 --> 00:02:13,440
+local storage set item page
+
+48
+00:02:10,640 --> 00:02:16,000
+visit count and I want to set it equal
+
+49
+00:02:13,440 --> 00:02:18,239
+to the visit count.
+
+50
+00:02:16,000 --> 00:02:21,280
+Once that's done,
+
+51
+00:02:18,239 --> 00:02:24,920
+I want to log
+
+52
+00:02:21,280 --> 00:02:24,920
+the visit count.
+
+53
+00:02:25,760 --> 00:02:30,959
+So if I save that and I come here, I get
+
+54
+00:02:28,319 --> 00:02:33,120
+null the first time I visit the page.
+
+55
+00:02:30,959 --> 00:02:34,640
+Null again, which means I have done
+
+56
+00:02:33,120 --> 00:02:36,640
+something wrong. Let's look through
+
+57
+00:02:34,640 --> 00:02:39,959
+this. Oh, it's because it's called page
+
+58
+00:02:36,640 --> 00:02:39,959
+visit count.
+
+59
+00:02:40,720 --> 00:02:44,720
+So I'll save it and I'll come over and
+
+60
+00:02:42,800 --> 00:02:48,080
+it says I visited this page five times.
+
+61
+00:02:44,720 --> 00:02:49,920
+If I reload, I've now visited 6 7 8 9
+
+62
+00:02:48,080 --> 00:02:52,319
+10. And that's because we're going into
+
+63
+00:02:49,920 --> 00:02:56,239
+local storage, accessing the value if it
+
+64
+00:02:52,319 --> 00:02:57,760
+exists and running our code. Um, let's
+
+65
+00:02:56,239 --> 00:02:59,440
+get rid of that value. So, you can come
+
+66
+00:02:57,760 --> 00:03:01,360
+over here and click on page visit count
+
+67
+00:02:59,440 --> 00:03:03,360
+and delete it. And now, if we come to
+
+68
+00:03:01,360 --> 00:03:05,040
+our console and reload, it says because
+
+69
+00:03:03,360 --> 00:03:07,280
+the key didn't exist, it went and
+
+70
+00:03:05,040 --> 00:03:09,599
+created the key and says we visited this
+
+71
+00:03:07,280 --> 00:03:11,360
+page one time. If we reload, we visited
+
+72
+00:03:09,599 --> 00:03:14,720
+two times. If we reload, we visited
+
+73
+00:03:11,360 --> 00:03:18,000
+three times. And that's how you can use
+
+74
+00:03:14,720 --> 00:03:21,280
+local storage to persist information um
+
+75
+00:03:18,000 --> 00:03:21,280
+between page reloads.

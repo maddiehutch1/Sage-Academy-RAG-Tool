@@ -1,0 +1,287 @@
+1
+00:00:00,080 --> 00:00:04,880
+Okay. So, how do you access um something
+
+2
+00:00:02,879 --> 00:00:08,880
+from your promise? We've created two
+
+3
+00:00:04,880 --> 00:00:10,880
+promises here. Um and we want to access
+
+4
+00:00:08,880 --> 00:00:14,000
+them. Um so, what I'm going to do is I'm
+
+5
+00:00:10,880 --> 00:00:16,960
+going to actually console
+
+6
+00:00:14,000 --> 00:00:19,439
+log promise so that you can see it the
+
+7
+00:00:16,960 --> 00:00:22,240
+one that we just created on line 17 so
+
+8
+00:00:19,439 --> 00:00:26,600
+that you can see what it returns. So if
+
+9
+00:00:22,240 --> 00:00:26,600
+we do that and we go live,
+
+10
+00:00:29,439 --> 00:00:33,760
+theoretically it will go live at some
+
+11
+00:00:31,119 --> 00:00:35,920
+point. Okay, here we are. And if we go
+
+12
+00:00:33,760 --> 00:00:37,760
+to our console, um you can see here it
+
+13
+00:00:35,920 --> 00:00:39,280
+returns a promise. And if you open it
+
+14
+00:00:37,760 --> 00:00:41,120
+up, it says promise. And then it says
+
+15
+00:00:39,280 --> 00:00:42,879
+the promise was fulfilled and it
+
+16
+00:00:41,120 --> 00:00:44,719
+returned hello world. That's what's
+
+17
+00:00:42,879 --> 00:00:46,160
+going to be returned. So this could be
+
+18
+00:00:44,719 --> 00:00:47,920
+asynchronous code and it could take a
+
+19
+00:00:46,160 --> 00:00:50,000
+long time to run. And so then this would
+
+20
+00:00:47,920 --> 00:00:53,440
+just say it was a promise. So, for
+
+21
+00:00:50,000 --> 00:00:56,320
+example, let's make this take 10 times
+
+22
+00:00:53,440 --> 00:00:58,320
+as long and we'll reload our page. We
+
+23
+00:00:56,320 --> 00:01:00,239
+have a promise that's pending. It's
+
+24
+00:00:58,320 --> 00:01:02,399
+undefined. So, when we console.logged
+
+25
+00:01:00,239 --> 00:01:04,640
+it, it was in the pending state. We
+
+26
+00:01:02,399 --> 00:01:06,880
+don't yet have the result of it. It's
+
+27
+00:01:04,640 --> 00:01:10,080
+pending. So, how do you access the
+
+28
+00:01:06,880 --> 00:01:12,320
+results? Well, what you can do is just
+
+29
+00:01:10,080 --> 00:01:13,840
+like a string has built-in attributes
+
+30
+00:01:12,320 --> 00:01:16,400
+likelit.
+
+31
+00:01:13,840 --> 00:01:18,400
+two uppercase promises also have
+
+32
+00:01:16,400 --> 00:01:20,640
+built-in attributes and functions that
+
+33
+00:01:18,400 --> 00:01:25,119
+you can call. So if I wanted to call a
+
+34
+00:01:20,640 --> 00:01:27,520
+function here, I could say promise
+
+35
+00:01:25,119 --> 00:01:30,320
+then. The dot then function is a
+
+36
+00:01:27,520 --> 00:01:32,000
+built-in function to promises and it
+
+37
+00:01:30,320 --> 00:01:34,159
+allows you to take the result of the
+
+38
+00:01:32,000 --> 00:01:35,840
+promise once it's been resolved. In
+
+39
+00:01:34,159 --> 00:01:38,479
+other words, it allows you to wait until
+
+40
+00:01:35,840 --> 00:01:42,560
+your code is done running and then print
+
+41
+00:01:38,479 --> 00:01:44,640
+out the value. So it what it takes in as
+
+42
+00:01:42,560 --> 00:01:46,960
+a param as an input is it takes in a
+
+43
+00:01:44,640 --> 00:01:48,320
+function. That function receives a value
+
+44
+00:01:46,960 --> 00:01:50,640
+and the value is going to be what's
+
+45
+00:01:48,320 --> 00:01:52,159
+returned from your promise. So up here
+
+46
+00:01:50,640 --> 00:01:53,920
+where we're resolving it with hello
+
+47
+00:01:52,159 --> 00:01:56,240
+world that is what's going to go into
+
+48
+00:01:53,920 --> 00:01:59,840
+value. If we change this to resolving
+
+49
+00:01:56,240 --> 00:02:02,880
+with 1 2 3 then it would resolve with 1
+
+50
+00:01:59,840 --> 00:02:05,280
+2 3 and that would go into value. And so
+
+51
+00:02:02,880 --> 00:02:07,200
+your function needs to take in that
+
+52
+00:02:05,280 --> 00:02:08,640
+parameter and then it needs to do
+
+53
+00:02:07,200 --> 00:02:12,000
+something with it. So here we could
+
+54
+00:02:08,640 --> 00:02:15,520
+console.blog not log the value. So if we
+
+55
+00:02:12,000 --> 00:02:17,599
+save that and we come over here and we
+
+56
+00:02:15,520 --> 00:02:19,599
+reload.
+
+57
+00:02:17,599 --> 00:02:22,000
+Oh yeah, I'm having it wait 10 seconds
+
+58
+00:02:19,599 --> 00:02:25,840
+before it does that. I'm going to go
+
+59
+00:02:22,000 --> 00:02:27,680
+change that. Let's have that wait
+
+60
+00:02:25,840 --> 00:02:28,959
+3 seconds. So if we save that and we
+
+61
+00:02:27,680 --> 00:02:30,959
+come over here, we can look at our
+
+62
+00:02:28,959 --> 00:02:34,239
+console. One, two, three. And there's
+
+63
+00:02:30,959 --> 00:02:36,879
+our hello world. And we're good to go.
+
+64
+00:02:34,239 --> 00:02:38,640
+So that is how you can have a promise.
+
+65
+00:02:36,879 --> 00:02:40,400
+You can set it up to delay code a
+
+66
+00:02:38,640 --> 00:02:41,680
+certain amount of time or if you're
+
+67
+00:02:40,400 --> 00:02:43,040
+waiting for something to come back from
+
+68
+00:02:41,680 --> 00:02:44,640
+the internet to wait till something
+
+69
+00:02:43,040 --> 00:02:47,200
+comes back from the internet and then
+
+70
+00:02:44,640 --> 00:02:50,400
+you can say once it does take the value
+
+71
+00:02:47,200 --> 00:02:53,360
+and do something with it. Um, and we'll
+
+72
+00:02:50,400 --> 00:02:53,360
+continue that in the next

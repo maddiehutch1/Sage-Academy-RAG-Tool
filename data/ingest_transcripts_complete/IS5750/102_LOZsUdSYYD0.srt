@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,679
+Well, in the last one, I showed you how
+
+2
+00:00:01,439 --> 00:00:05,839
+to get a sum of the villains um that
+
+3
+00:00:03,679 --> 00:00:07,839
+were caught. But maybe we want to reduce
+
+4
+00:00:05,839 --> 00:00:11,120
+this down to just the maximum number of
+
+5
+00:00:07,839 --> 00:00:13,200
+villains that any one hero caught. Um so
+
+6
+00:00:11,120 --> 00:00:15,360
+if we want to do that in a reducer, then
+
+7
+00:00:13,200 --> 00:00:16,880
+we're saying take the previous value and
+
+8
+00:00:15,360 --> 00:00:18,160
+the current value. What is the current
+
+9
+00:00:16,880 --> 00:00:21,039
+value? Well, the current value is going
+
+10
+00:00:18,160 --> 00:00:23,279
+to be this entire array right here or
+
+11
+00:00:21,039 --> 00:00:26,160
+this entire array right here. And so
+
+12
+00:00:23,279 --> 00:00:28,480
+what we want to do is we want to return
+
+13
+00:00:26,160 --> 00:00:30,240
+um the bigger number. So what we want to
+
+14
+00:00:28,480 --> 00:00:33,360
+do is we want to see if the previous
+
+15
+00:00:30,240 --> 00:00:35,280
+number is bigger than the current hero's
+
+16
+00:00:33,360 --> 00:00:36,880
+number of villains caught, then we want
+
+17
+00:00:35,280 --> 00:00:39,040
+to return the previous number.
+
+18
+00:00:36,880 --> 00:00:42,399
+Otherwise, we want to return the current
+
+19
+00:00:39,040 --> 00:00:44,239
+hero's number of villains caught.
+
+20
+00:00:42,399 --> 00:00:46,399
+And we'll start our count at zero
+
+21
+00:00:44,239 --> 00:00:48,399
+because no one in our array caught zero.
+
+22
+00:00:46,399 --> 00:00:50,800
+So if we save this and we reduce it
+
+23
+00:00:48,399 --> 00:00:53,440
+down, we get 20. 20 was the maximum
+
+24
+00:00:50,800 --> 00:00:56,879
+number of villains caught.
+
+25
+00:00:53,440 --> 00:00:59,039
+Um you could reverse this here. um just
+
+26
+00:00:56,879 --> 00:01:01,359
+by reversing this and that would give us
+
+27
+00:00:59,039 --> 00:01:03,120
+the smallest number of villains caught.
+
+28
+00:01:01,359 --> 00:01:04,960
+And if we come over, zero was the
+
+29
+00:01:03,120 --> 00:01:06,560
+smallest number of villains caught. Now,
+
+30
+00:01:04,960 --> 00:01:09,119
+if you look at our array, you'll notice
+
+31
+00:01:06,560 --> 00:01:10,720
+that zero is not in there. And why was
+
+32
+00:01:09,119 --> 00:01:13,200
+that? Well, it's because we said our
+
+33
+00:01:10,720 --> 00:01:14,640
+initial value is zero. So, what we want
+
+34
+00:01:13,200 --> 00:01:17,360
+to do is we want to set the initial
+
+35
+00:01:14,640 --> 00:01:19,280
+value to like a th00and because no one
+
+36
+00:01:17,360 --> 00:01:23,360
+in here caught a th00and. And if we come
+
+37
+00:01:19,280 --> 00:01:23,360
+over, it has now been reduced down.

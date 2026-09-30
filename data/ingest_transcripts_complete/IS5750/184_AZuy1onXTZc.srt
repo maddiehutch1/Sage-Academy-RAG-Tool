@@ -1,0 +1,339 @@
+1
+00:00:00,080 --> 00:00:03,919
+All right. Well, let's bridge this the
+
+2
+00:00:01,760 --> 00:00:06,799
+last step. We are here printing out the
+
+3
+00:00:03,919 --> 00:00:11,200
+entire object and we actually just want
+
+4
+00:00:06,799 --> 00:00:13,120
+to print this advice. Um, so let's go
+
+5
+00:00:11,200 --> 00:00:16,160
+in. So this object that we're printing
+
+6
+00:00:13,120 --> 00:00:18,800
+out has a key called slip. And that slip
+
+7
+00:00:16,160 --> 00:00:22,320
+key has another object inside of it that
+
+8
+00:00:18,800 --> 00:00:24,640
+has a key called advice. So if we want
+
+9
+00:00:22,320 --> 00:00:27,119
+to access it here, instead of
+
+10
+00:00:24,640 --> 00:00:32,119
+console.logging JSON.data, I'll
+
+11
+00:00:27,119 --> 00:00:32,119
+console.log JSON.data.slip. slip.vice.
+
+12
+00:00:32,399 --> 00:00:36,000
+And down here, instead of console
+
+13
+00:00:34,000 --> 00:00:39,000
+logging result, I'll console log
+
+14
+00:00:36,000 --> 00:00:39,000
+result.slip.advice.
+
+15
+00:00:39,760 --> 00:00:43,840
+And if I save that here, we get the
+
+16
+00:00:42,399 --> 00:00:45,280
+number of vampires in the average home
+
+17
+00:00:43,840 --> 00:00:47,120
+is directly proportional to the amount
+
+18
+00:00:45,280 --> 00:00:50,160
+of garlic bread in the fridge. Um, and
+
+19
+00:00:47,120 --> 00:00:52,239
+we get that twice. Um, which means we
+
+20
+00:00:50,160 --> 00:00:56,320
+are able to successfully go out, access
+
+21
+00:00:52,239 --> 00:01:00,000
+an API, and use it in our code. So, what
+
+22
+00:00:56,320 --> 00:01:02,879
+APIs are there? Well, there's a lot.
+
+23
+00:01:00,000 --> 00:01:07,600
+Most of the internet runs this way. Um,
+
+24
+00:01:02,879 --> 00:01:11,680
+so here, um, if you come to github.com/
+
+25
+00:01:07,600 --> 00:01:13,119
+uh, public API list API lists, um, you
+
+26
+00:01:11,680 --> 00:01:16,159
+will, and I'll put the link in the
+
+27
+00:01:13,119 --> 00:01:18,320
+description. Um, you can see a list of
+
+28
+00:01:16,159 --> 00:01:20,080
+APIs that do a lot of things. So,
+
+29
+00:01:18,320 --> 00:01:22,240
+there's this catfax API where you could
+
+30
+00:01:20,080 --> 00:01:24,880
+get cat facts. Um, you could get random
+
+31
+00:01:22,240 --> 00:01:26,400
+dog pictures, random fox pictures. Um,
+
+32
+00:01:24,880 --> 00:01:28,320
+you could learn things about rescue
+
+33
+00:01:26,400 --> 00:01:29,680
+groups. Um, that's if you're into
+
+34
+00:01:28,320 --> 00:01:31,680
+animals, if you're into anime, if you're
+
+35
+00:01:29,680 --> 00:01:34,799
+into anti-malware. Some of these are
+
+36
+00:01:31,680 --> 00:01:37,840
+pretty cool. Um,
+
+37
+00:01:34,799 --> 00:01:40,320
+you can, uh, Google safe browse. Like,
+
+38
+00:01:37,840 --> 00:01:42,720
+there is so many cool things out there
+
+39
+00:01:40,320 --> 00:01:45,280
+that someone has built an API so you can
+
+40
+00:01:42,720 --> 00:01:47,280
+access it. I believe up here Google
+
+41
+00:01:45,280 --> 00:01:49,119
+calendar has an API. That means you
+
+42
+00:01:47,280 --> 00:01:51,200
+could write yourself an app using the
+
+43
+00:01:49,119 --> 00:01:52,720
+JavaScript you've learned and the fetch
+
+44
+00:01:51,200 --> 00:01:54,079
+function that you've learned that will
+
+45
+00:01:52,720 --> 00:01:56,560
+integrate directly with your Google
+
+46
+00:01:54,079 --> 00:01:59,840
+calendar, which is pretty freaking cool.
+
+47
+00:01:56,560 --> 00:02:01,759
+Um, and just look at all of the APIs
+
+48
+00:01:59,840 --> 00:02:04,240
+that are now available to you now that
+
+49
+00:02:01,759 --> 00:02:06,960
+you know how to access data over the
+
+50
+00:02:04,240 --> 00:02:09,440
+internet using JavaScript. Like the sky
+
+51
+00:02:06,960 --> 00:02:13,520
+is the limit here. I mean, it just keeps
+
+52
+00:02:09,440 --> 00:02:16,000
+going. Um, so hopefully that is helpful.
+
+53
+00:02:13,520 --> 00:02:18,480
+And um right now I know I've only taught
+
+54
+00:02:16,000 --> 00:02:20,080
+you get requests. I'm going to put a
+
+55
+00:02:18,480 --> 00:02:21,760
+little bit of a pin in that. Leave you
+
+56
+00:02:20,080 --> 00:02:23,760
+on a bit of a cliffhanger and we are
+
+57
+00:02:21,760 --> 00:02:26,319
+going to stop at get requests for now
+
+58
+00:02:23,760 --> 00:02:28,480
+and then in future videos we'll talk
+
+59
+00:02:26,319 --> 00:02:30,000
+about the other requests and probably a
+
+60
+00:02:28,480 --> 00:02:31,520
+little bit of an easier way to do the
+
+61
+00:02:30,000 --> 00:02:33,760
+other requests. But again, just wanted
+
+62
+00:02:31,520 --> 00:02:36,800
+to show you how many resources there are
+
+63
+00:02:33,760 --> 00:02:39,440
+out there um that you can use. Like I
+
+64
+00:02:36,800 --> 00:02:40,480
+said, it just keeps going. If there's
+
+65
+00:02:39,440 --> 00:02:42,080
+something you want to build, there is
+
+66
+00:02:40,480 --> 00:02:43,440
+probably an API out there to help you
+
+67
+00:02:42,080 --> 00:02:45,040
+build it.
+
+68
+00:02:43,440 --> 00:02:47,680
+Oh, I should probably also define what
+
+69
+00:02:45,040 --> 00:02:49,599
+API is. API stands for application
+
+70
+00:02:47,680 --> 00:02:51,599
+programming interface and it is
+
+71
+00:02:49,599 --> 00:02:54,080
+something that makes your job easier. So
+
+72
+00:02:51,599 --> 00:02:56,640
+the function that we used called fetch
+
+73
+00:02:54,080 --> 00:02:58,400
+is actually called the fetch API. It is
+
+74
+00:02:56,640 --> 00:03:00,000
+an application programming interface,
+
+75
+00:02:58,400 --> 00:03:02,640
+meaning it's something that you use your
+
+76
+00:03:00,000 --> 00:03:04,400
+code for that makes your job easier. So
+
+77
+00:03:02,640 --> 00:03:06,080
+rather than having to go write all the
+
+78
+00:03:04,400 --> 00:03:08,640
+code to go out to the internet and grab
+
+79
+00:03:06,080 --> 00:03:12,800
+stuff, it makes your job easier. These
+
+80
+00:03:08,640 --> 00:03:15,760
+are REST APIs, meaning they follow the
+
+81
+00:03:12,800 --> 00:03:17,519
+framework where you make get um post,
+
+82
+00:03:15,760 --> 00:03:20,720
+put, and delete requests to them. And
+
+83
+00:03:17,519 --> 00:03:23,200
+they all follow that format. And um so
+
+84
+00:03:20,720 --> 00:03:25,760
+you can come check these out. And that's
+
+85
+00:03:23,200 --> 00:03:25,760
+it for this

@@ -1,0 +1,311 @@
+1
+00:00:00,080 --> 00:00:03,919
+All right, let's make a get request from
+
+2
+00:00:02,240 --> 00:00:05,600
+our browser. And you may be thinking,
+
+3
+00:00:03,919 --> 00:00:08,080
+are you sure I'm ready for that? I don't
+
+4
+00:00:05,600 --> 00:00:09,519
+even know how to make a get request. Um,
+
+5
+00:00:08,080 --> 00:00:11,200
+I guarantee you, you're ready for it.
+
+6
+00:00:09,519 --> 00:00:13,920
+You make get requests all the time. So,
+
+7
+00:00:11,200 --> 00:00:16,880
+if I come up here to the URL bar, URL
+
+8
+00:00:13,920 --> 00:00:18,480
+stands for uniform resource locator. In
+
+9
+00:00:16,880 --> 00:00:19,920
+other words, it's just an address that
+
+10
+00:00:18,480 --> 00:00:21,760
+makes it really easy for us to find
+
+11
+00:00:19,920 --> 00:00:25,000
+resources. So, if I come up here and I
+
+12
+00:00:21,760 --> 00:00:25,000
+type www.google.com
+
+13
+00:00:25,039 --> 00:00:29,199
+and I hit enter, it gives me back a web
+
+14
+00:00:27,359 --> 00:00:31,599
+page. Congratulations, you've made a get
+
+15
+00:00:29,199 --> 00:00:33,520
+request. You requested the Google web
+
+16
+00:00:31,599 --> 00:00:35,920
+page and Google returned it. So, you
+
+17
+00:00:33,520 --> 00:00:38,640
+said, "Can you please get me the Google
+
+18
+00:00:35,920 --> 00:00:41,680
+web page?" When you make requests, um
+
+19
+00:00:38,640 --> 00:00:44,239
+all sorts of information um can be sent
+
+20
+00:00:41,680 --> 00:00:47,039
+on that request. For example, sometimes
+
+21
+00:00:44,239 --> 00:00:49,520
+when you fill a form out, um that form
+
+22
+00:00:47,039 --> 00:00:53,440
+will send out to a server. So, I could
+
+23
+00:00:49,520 --> 00:00:56,239
+say, "What is a get request?" And if I
+
+24
+00:00:53,440 --> 00:00:58,160
+hit enter, I actually sent a whole bunch
+
+25
+00:00:56,239 --> 00:01:01,199
+of information in a request out to
+
+26
+00:00:58,160 --> 00:01:03,920
+Google. Um, and you can actually see all
+
+27
+00:01:01,199 --> 00:01:06,479
+of the information that I sent out. And
+
+28
+00:01:03,920 --> 00:01:09,119
+that was sent out using a get request.
+
+29
+00:01:06,479 --> 00:01:13,200
+And so I sent out the words my query was
+
+30
+00:01:09,119 --> 00:01:15,200
+what is a get request? And then
+
+31
+00:01:13,200 --> 00:01:17,280
+this is all of the other data that got
+
+32
+00:01:15,200 --> 00:01:19,600
+sent with it that they were using to
+
+33
+00:01:17,280 --> 00:01:22,720
+customize the search results for me. um
+
+34
+00:01:19,600 --> 00:01:26,000
+as far as um what answer I am most
+
+35
+00:01:22,720 --> 00:01:28,080
+likely to want. And here I can see um
+
+36
+00:01:26,000 --> 00:01:32,320
+posted answers. Well, if you want to
+
+37
+00:01:28,080 --> 00:01:34,159
+work um with um if you want to get
+
+38
+00:01:32,320 --> 00:01:36,240
+external data, one of the ways you do
+
+39
+00:01:34,159 --> 00:01:42,079
+that is using something called a REST
+
+40
+00:01:36,240 --> 00:01:45,280
+API. A REST API uses get, put, post, and
+
+41
+00:01:42,079 --> 00:01:46,720
+delete to work with your code. And if
+
+42
+00:01:45,280 --> 00:01:49,280
+you'll give me a second, I'm going to
+
+43
+00:01:46,720 --> 00:01:50,799
+pause this video and go grab the URL. I
+
+44
+00:01:49,280 --> 00:01:54,000
+forgot the URL for the API I was going
+
+45
+00:01:50,799 --> 00:01:57,360
+to show you. So, give me one second.
+
+46
+00:01:54,000 --> 00:02:00,000
+Okay, I've got that URL. So, let's make
+
+47
+00:01:57,360 --> 00:02:02,880
+a request to an API. This API is an
+
+48
+00:02:00,000 --> 00:02:05,680
+advice API. It gives you back advice.
+
+49
+00:02:02,880 --> 00:02:08,239
+Disclaimer, I did not write this API.
+
+50
+00:02:05,680 --> 00:02:09,840
+Um, I have no idea what advice it's
+
+51
+00:02:08,239 --> 00:02:11,760
+going to give back. I do not necessarily
+
+52
+00:02:09,840 --> 00:02:13,280
+endorse the advice that it's going to
+
+53
+00:02:11,760 --> 00:02:16,239
+give. It might be good advice, it might
+
+54
+00:02:13,280 --> 00:02:19,360
+be bad advice. it's just advice. So, um,
+
+55
+00:02:16,239 --> 00:02:21,440
+we're going to go to an advice API. To
+
+56
+00:02:19,360 --> 00:02:24,239
+do that, up here on the URL bar, I'm
+
+57
+00:02:21,440 --> 00:02:26,800
+going to type HTTPS.
+
+58
+00:02:24,239 --> 00:02:28,640
+That means I am going to be making an
+
+59
+00:02:26,800 --> 00:02:31,599
+HTTP
+
+60
+00:02:28,640 --> 00:02:34,319
+um, request, and I want it to be secure.
+
+61
+00:02:31,599 --> 00:02:36,000
+So, HTTPS and then I'm going to do
+
+62
+00:02:34,319 --> 00:02:39,000
+double slash then I'm going to say
+
+63
+00:02:36,000 --> 00:02:39,000
+API.lip.comvice.
+
+64
+00:02:42,879 --> 00:02:49,200
+And so this is a URL
+
+65
+00:02:45,760 --> 00:02:50,720
+um for the API. And when I type it in,
+
+66
+00:02:49,200 --> 00:02:52,959
+it's going to go find that API and it's
+
+67
+00:02:50,720 --> 00:02:54,480
+going to make a get request. When I hit
+
+68
+00:02:52,959 --> 00:02:56,640
+enter,
+
+69
+00:02:54,480 --> 00:02:59,360
+I got back information. It wasn't a web
+
+70
+00:02:56,640 --> 00:03:01,280
+page. When I type in ww.google.com,
+
+71
+00:02:59,360 --> 00:03:03,360
+that gives me back a web page. But what
+
+72
+00:03:01,280 --> 00:03:05,280
+this gave me back is it gave me back an
+
+73
+00:03:03,360 --> 00:03:07,200
+object. In fact, it gave me back a
+
+74
+00:03:05,280 --> 00:03:10,720
+JavaScript object. And if it's a
+
+75
+00:03:07,200 --> 00:03:13,440
+JavaScript object, I can then access
+
+76
+00:03:10,720 --> 00:03:16,319
+parts of that object. And that is how
+
+77
+00:03:13,440 --> 00:03:19,760
+you can get it into your code. So, um I
+
+78
+00:03:16,319 --> 00:03:19,760
+actually do like this piece of advice.

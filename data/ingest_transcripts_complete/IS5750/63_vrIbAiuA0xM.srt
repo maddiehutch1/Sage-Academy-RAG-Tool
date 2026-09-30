@@ -1,0 +1,811 @@
+1
+00:00:00,160 --> 00:00:03,520
+Sometimes we want to do a little more
+
+2
+00:00:01,760 --> 00:00:07,440
+than just print out a name. So maybe we
+
+3
+00:00:03,520 --> 00:00:08,960
+want to welcome them to um the welcome
+
+4
+00:00:07,440 --> 00:00:11,200
+them to the system. So we're going to
+
+5
+00:00:08,960 --> 00:00:14,799
+say welcome to the system Wanda. Welcome
+
+6
+00:00:11,200 --> 00:00:16,560
+to the system Pietro. Well, let's do a
+
+7
+00:00:14,799 --> 00:00:19,520
+little more processing. And maybe we
+
+8
+00:00:16,560 --> 00:00:21,119
+want to capitalize their entire name. So
+
+9
+00:00:19,520 --> 00:00:23,760
+inside of our loop, we want to grab
+
+10
+00:00:21,119 --> 00:00:26,880
+their name. So we'll say let first name
+
+11
+00:00:23,760 --> 00:00:30,960
+equal and then we'll access the first
+
+12
+00:00:26,880 --> 00:00:32,640
+names array and we'll access a specific
+
+13
+00:00:30,960 --> 00:00:35,680
+item in the array and we want to access
+
+14
+00:00:32,640 --> 00:00:37,520
+whichever one we're currently at.
+
+15
+00:00:35,680 --> 00:00:40,640
+And then we want to say first name
+
+16
+00:00:37,520 --> 00:00:42,480
+equals first name dot
+
+17
+00:00:40,640 --> 00:00:45,520
+two uppercase. That'll make their entire
+
+18
+00:00:42,480 --> 00:00:49,960
+name uppercase. So, we'll say, let's put
+
+19
+00:00:45,520 --> 00:00:49,960
+a comment. Say, grab the name,
+
+20
+00:00:50,640 --> 00:00:55,600
+make the name uppercase.
+
+21
+00:00:53,920 --> 00:00:58,079
+And you may have noticed I already made
+
+22
+00:00:55,600 --> 00:01:01,199
+a mistake here. I need square braces
+
+23
+00:00:58,079 --> 00:01:03,680
+because I need to say I'm not trying to
+
+24
+00:01:01,199 --> 00:01:08,240
+um Oh, sorry. I want to say take the
+
+25
+00:01:03,680 --> 00:01:10,479
+first name and make it uppercase. Um,
+
+26
+00:01:08,240 --> 00:01:13,200
+so grab the first name, store it in a
+
+27
+00:01:10,479 --> 00:01:15,680
+variable, make it uppercase, store back
+
+28
+00:01:13,200 --> 00:01:17,119
+in itself, and then now we'll just
+
+29
+00:01:15,680 --> 00:01:20,119
+welcome to the system. So we'll say
+
+30
+00:01:17,119 --> 00:01:20,119
+console.log,
+
+31
+00:01:20,479 --> 00:01:26,159
+welcome to the system
+
+32
+00:01:23,840 --> 00:01:28,000
+plus, and then we'll concatenate on
+
+33
+00:01:26,159 --> 00:01:31,520
+first name.
+
+34
+00:01:28,000 --> 00:01:34,560
+So we'll save this. And
+
+35
+00:01:31,520 --> 00:01:36,320
+if we go over to our code, we can see it
+
+36
+00:01:34,560 --> 00:01:38,479
+says, "Welcome to the system, Anna,
+
+37
+00:01:36,320 --> 00:01:42,159
+Mark, Steven, Jake, Johnny, Danny,
+
+38
+00:01:38,479 --> 00:01:46,960
+Robbie, Camala, or Carol, Jennifer, and
+
+39
+00:01:42,159 --> 00:01:48,240
+Norin." Um, and so it looks like it
+
+40
+00:01:46,960 --> 00:01:49,840
+successfully welcomed them to the
+
+41
+00:01:48,240 --> 00:01:53,840
+system.
+
+42
+00:01:49,840 --> 00:01:56,560
+Um, but this can be kind of annoying to
+
+43
+00:01:53,840 --> 00:01:59,040
+reference items in the array by saying
+
+44
+00:01:56,560 --> 00:02:01,840
+go to the array and then use square
+
+45
+00:01:59,040 --> 00:02:04,240
+braces. Whoops. And then do the counter.
+
+46
+00:02:01,840 --> 00:02:06,799
+And because we do this so often, we loop
+
+47
+00:02:04,240 --> 00:02:09,280
+through arrays so often, we've actually
+
+48
+00:02:06,799 --> 00:02:10,560
+made a much easier way to do it. And so
+
+49
+00:02:09,280 --> 00:02:13,200
+I'm going to show you that easier way.
+
+50
+00:02:10,560 --> 00:02:18,160
+You can say for and then you create a
+
+51
+00:02:13,200 --> 00:02:19,680
+new variable name. We'll say let name
+
+52
+00:02:18,160 --> 00:02:22,319
+of
+
+53
+00:02:19,680 --> 00:02:25,440
+and then what are you looping through
+
+54
+00:02:22,319 --> 00:02:31,400
+first names
+
+55
+00:02:25,440 --> 00:02:31,400
+and then you can console.log log
+
+56
+00:02:31,440 --> 00:02:38,920
+um welcome to the system
+
+57
+00:02:35,920 --> 00:02:38,920
+plus
+
+58
+00:02:39,040 --> 00:02:43,840
+name
+
+59
+00:02:41,760 --> 00:02:47,120
+dot to
+
+60
+00:02:43,840 --> 00:02:50,160
+uppercase. So what this does is it says
+
+61
+00:02:47,120 --> 00:02:52,720
+go find the array then take an item out
+
+62
+00:02:50,160 --> 00:02:56,319
+of the array and store it in name. Once
+
+63
+00:02:52,720 --> 00:02:58,560
+you've done that, log it. Then go back
+
+64
+00:02:56,319 --> 00:03:00,319
+in, grab the next name in the array,
+
+65
+00:02:58,560 --> 00:03:03,120
+store it in array. Once you've done it,
+
+66
+00:03:00,319 --> 00:03:05,200
+log it. This loop is doing the exact
+
+67
+00:03:03,120 --> 00:03:06,879
+same thing as the loop above. The loop
+
+68
+00:03:05,200 --> 00:03:08,560
+above, I said create a variable called
+
+69
+00:03:06,879 --> 00:03:10,560
+first name, take an item out of the
+
+70
+00:03:08,560 --> 00:03:12,800
+loop, and store it. But rather than
+
+71
+00:03:10,560 --> 00:03:14,959
+writing out the really long syntax and
+
+72
+00:03:12,800 --> 00:03:17,440
+figuring out the length of the array and
+
+73
+00:03:14,959 --> 00:03:20,640
+writing the incrementer and all of that
+
+74
+00:03:17,440 --> 00:03:22,159
+which takes longer to type um and then
+
+75
+00:03:20,640 --> 00:03:23,840
+going into the array and grabbing
+
+76
+00:03:22,159 --> 00:03:26,800
+something at whatever the incrementor is
+
+77
+00:03:23,840 --> 00:03:28,879
+at or counter variable rather than doing
+
+78
+00:03:26,800 --> 00:03:30,640
+all of that they just said how about you
+
+79
+00:03:28,879 --> 00:03:32,799
+just make a variable pull something out
+
+80
+00:03:30,640 --> 00:03:34,640
+of the list and put it in that variable.
+
+81
+00:03:32,799 --> 00:03:37,680
+Well let's just go see this in action so
+
+82
+00:03:34,640 --> 00:03:40,319
+you can see that they work very very
+
+83
+00:03:37,680 --> 00:03:43,440
+similarly. So,
+
+84
+00:03:40,319 --> 00:03:45,200
+we'll come over to Safari and we're
+
+85
+00:03:43,440 --> 00:03:46,720
+going to come here to the sources tab
+
+86
+00:03:45,200 --> 00:03:48,720
+and we're going to put a breakpoint on
+
+87
+00:03:46,720 --> 00:03:51,120
+line 47.
+
+88
+00:03:48,720 --> 00:03:54,959
+Um,
+
+89
+00:03:51,120 --> 00:03:57,360
+oh, and I may need to reload this.
+
+90
+00:03:54,959 --> 00:04:01,040
+One moment.
+
+91
+00:03:57,360 --> 00:04:03,280
+Cancel. Reload the page. And it looks
+
+92
+00:04:01,040 --> 00:04:06,560
+like my for loop has not shown up. Did I
+
+93
+00:04:03,280 --> 00:04:11,040
+save my code? I did not save my code. Oh
+
+94
+00:04:06,560 --> 00:04:15,280
+boy. Okay. save the code then go over
+
+95
+00:04:11,040 --> 00:04:16,880
+and then now you can see the for loop is
+
+96
+00:04:15,280 --> 00:04:20,400
+here. So there's the for loop and then
+
+97
+00:04:16,880 --> 00:04:23,600
+below it we call this a for loop. So
+
+98
+00:04:20,400 --> 00:04:26,160
+right now we're on line 47. We're about
+
+99
+00:04:23,600 --> 00:04:28,960
+to start the variable. So we grab our
+
+100
+00:04:26,160 --> 00:04:30,960
+counter. Our counter is zero. Um we run
+
+101
+00:04:28,960 --> 00:04:34,800
+it for the full length of first
+
+102
+00:04:30,960 --> 00:04:37,600
+names.length which is 32. We hit next
+
+103
+00:04:34,800 --> 00:04:39,520
+and then it says first name equals first
+
+104
+00:04:37,600 --> 00:04:41,759
+names at the counter position. So if we
+
+105
+00:04:39,520 --> 00:04:44,080
+hit next and we hover over first name,
+
+106
+00:04:41,759 --> 00:04:46,240
+first name is Peter. So now we're going
+
+107
+00:04:44,080 --> 00:04:48,160
+to make first name uppercase. Now first
+
+108
+00:04:46,240 --> 00:04:50,000
+name is uppercase Peter. And now we're
+
+109
+00:04:48,160 --> 00:04:51,199
+going to log it to the console. If we
+
+110
+00:04:50,000 --> 00:04:55,040
+come over here to console, it says
+
+111
+00:04:51,199 --> 00:04:57,360
+welcome to the system Peter. Um then we
+
+112
+00:04:55,040 --> 00:04:59,040
+run it again and we're about to
+
+113
+00:04:57,360 --> 00:05:00,960
+increment the counter. So if we
+
+114
+00:04:59,040 --> 00:05:03,360
+increment the counter now counter is
+
+115
+00:05:00,960 --> 00:05:06,960
+one.
+
+116
+00:05:03,360 --> 00:05:11,120
+and one is still less than the length of
+
+117
+00:05:06,960 --> 00:05:12,880
+32. Um, so we're going to hit next.
+
+118
+00:05:11,120 --> 00:05:15,919
+We'll drop in here and we'll grab first
+
+119
+00:05:12,880 --> 00:05:17,280
+name. First name is now Tony. And that's
+
+120
+00:05:15,919 --> 00:05:19,039
+because we went into the first names
+
+121
+00:05:17,280 --> 00:05:20,960
+array. We went to the one position and
+
+122
+00:05:19,039 --> 00:05:23,199
+we grabbed Tony. And then we stored in a
+
+123
+00:05:20,960 --> 00:05:24,960
+variable called first name.
+
+124
+00:05:23,199 --> 00:05:27,360
+Then we uppercase that. So now we get
+
+125
+00:05:24,960 --> 00:05:28,720
+uppercase Tony. And then we print
+
+126
+00:05:27,360 --> 00:05:30,080
+welcome to the system. So if we come
+
+127
+00:05:28,720 --> 00:05:33,759
+over here, we get welcome to the system
+
+128
+00:05:30,080 --> 00:05:36,160
+Peter. Welcome to the system, Tony. Um,
+
+129
+00:05:33,759 --> 00:05:37,520
+and then we increment, and for good
+
+130
+00:05:36,160 --> 00:05:39,360
+measure, I'm going to do this one more
+
+131
+00:05:37,520 --> 00:05:42,880
+time. So, we increment the counter.
+
+132
+00:05:39,360 --> 00:05:45,280
+Counter is at two. First names, um, has
+
+133
+00:05:42,880 --> 00:05:47,759
+a length of 32. So, this loop is going
+
+134
+00:05:45,280 --> 00:05:49,759
+to run again. So, we hit next. We go to
+
+135
+00:05:47,759 --> 00:05:53,360
+first names at the two position, which
+
+136
+00:05:49,759 --> 00:05:56,000
+is Steve. And if we hit next, now first
+
+137
+00:05:53,360 --> 00:05:58,560
+name is holding Steve.
+
+138
+00:05:56,000 --> 00:05:59,919
+And then we uppercase it. And then we
+
+139
+00:05:58,560 --> 00:06:00,960
+print it. Now, if we come to the
+
+140
+00:05:59,919 --> 00:06:03,360
+console, it says, "Welcome to the
+
+141
+00:06:00,960 --> 00:06:05,360
+system, Steve." So, hopefully you've got
+
+142
+00:06:03,360 --> 00:06:06,639
+a good idea of how the for loop works.
+
+143
+00:06:05,360 --> 00:06:08,560
+Now, we're going to put a breakpoint on
+
+144
+00:06:06,639 --> 00:06:10,880
+the for of loop. So, I'm going to take
+
+145
+00:06:08,560 --> 00:06:12,800
+this off, and I'm going to hit continue,
+
+146
+00:06:10,880 --> 00:06:14,960
+and it's going to have printed out all
+
+147
+00:06:12,800 --> 00:06:17,919
+the rest of the names. And then we'll
+
+148
+00:06:14,960 --> 00:06:19,840
+come over here. So, it says let name of
+
+149
+00:06:17,919 --> 00:06:23,120
+first name. So, it comes to first names.
+
+150
+00:06:19,840 --> 00:06:24,720
+Notice zero is storing Peter. If we hit
+
+151
+00:06:23,120 --> 00:06:27,360
+next,
+
+152
+00:06:24,720 --> 00:06:29,759
+it's about to assign the first value in
+
+153
+00:06:27,360 --> 00:06:31,520
+first names to name. If we hit next and
+
+154
+00:06:29,759 --> 00:06:33,680
+we hover over name, now we can see that
+
+155
+00:06:31,520 --> 00:06:36,240
+the name is Peter. So now we're going to
+
+156
+00:06:33,680 --> 00:06:39,360
+print welcome to the system Peter.2
+
+157
+00:06:36,240 --> 00:06:43,240
+uppercase. If we hit next
+
+158
+00:06:39,360 --> 00:06:43,240
+and we come to our console,
+
+159
+00:06:46,400 --> 00:06:52,479
+oh sorry, we uppercased it. We hit next.
+
+160
+00:06:49,680 --> 00:06:55,120
+We come to our console and all the way
+
+161
+00:06:52,479 --> 00:06:57,120
+down it says welcome to the system Peter
+
+162
+00:06:55,120 --> 00:06:59,520
+and we come back over to our sources.
+
+163
+00:06:57,120 --> 00:07:02,560
+Now it's hovering over first name. Right
+
+164
+00:06:59,520 --> 00:07:04,319
+now name is still storing Peter but as
+
+165
+00:07:02,560 --> 00:07:06,319
+soon as this line runs it's going to
+
+166
+00:07:04,319 --> 00:07:09,440
+grab the next name out of the list and
+
+167
+00:07:06,319 --> 00:07:11,520
+put it into name. So if we hit next now
+
+168
+00:07:09,440 --> 00:07:14,319
+if we hover over name is storing the
+
+169
+00:07:11,520 --> 00:07:17,039
+text Tony. And if we hit next and then
+
+170
+00:07:14,319 --> 00:07:20,080
+log it, we come to the console. Now we
+
+171
+00:07:17,039 --> 00:07:22,080
+can see welcome to the system Tony.
+
+172
+00:07:20,080 --> 00:07:24,000
+And now if we look at first names, the
+
+173
+00:07:22,080 --> 00:07:25,440
+very next name in the list is Steve. So
+
+174
+00:07:24,000 --> 00:07:26,880
+we should expect that if we run this
+
+175
+00:07:25,440 --> 00:07:29,199
+loop another time, it's going to take
+
+176
+00:07:26,880 --> 00:07:31,520
+Steve out and store it in name. So if we
+
+177
+00:07:29,199 --> 00:07:33,360
+hit next, now if we hover over name, now
+
+178
+00:07:31,520 --> 00:07:35,280
+it's Steve. So you can see that these
+
+179
+00:07:33,360 --> 00:07:38,400
+loops are doing the exact same thing,
+
+180
+00:07:35,280 --> 00:07:40,880
+but this loop down here on line 55 uses
+
+181
+00:07:38,400 --> 00:07:43,120
+much less code to do the exact same
+
+182
+00:07:40,880 --> 00:07:45,199
+thing as the loop that runs from line 47
+
+183
+00:07:43,120 --> 00:07:46,639
+to 53.
+
+184
+00:07:45,199 --> 00:07:48,960
+And if that is something that you
+
+185
+00:07:46,639 --> 00:07:51,840
+appreciate, then four of loops might be
+
+186
+00:07:48,960 --> 00:07:54,560
+for you. Um, depending on the developer,
+
+187
+00:07:51,840 --> 00:07:56,240
+lots of developers live by four of loops
+
+188
+00:07:54,560 --> 00:07:59,440
+and other developers don't like them at
+
+189
+00:07:56,240 --> 00:08:01,039
+all. I like for loops, but I will let
+
+190
+00:07:59,440 --> 00:08:02,400
+you make that decision. I just want you
+
+191
+00:08:01,039 --> 00:08:03,520
+to be aware that there are two ways to
+
+192
+00:08:02,400 --> 00:08:04,879
+loop through arrays. There are actually
+
+193
+00:08:03,520 --> 00:08:07,039
+a lot of ways to loop through arrays,
+
+194
+00:08:04,879 --> 00:08:08,560
+but two of them are you can use the for
+
+195
+00:08:07,039 --> 00:08:10,639
+loop where you write out the full
+
+196
+00:08:08,560 --> 00:08:12,720
+counter and you write it out for the
+
+197
+00:08:10,639 --> 00:08:14,160
+length and you use the counter++ or you
+
+198
+00:08:12,720 --> 00:08:18,080
+can use the for of loop where you just
+
+199
+00:08:14,160 --> 00:08:19,680
+say for let variable name of your array
+
+200
+00:08:18,080 --> 00:08:22,800
+and then it just pulls each item out of
+
+201
+00:08:19,680 --> 00:08:24,879
+the array one at a time. And that
+
+202
+00:08:22,800 --> 00:08:27,599
+concludes this section on four of loops.
+
+203
+00:08:24,879 --> 00:08:27,599
+Thanks for watching.

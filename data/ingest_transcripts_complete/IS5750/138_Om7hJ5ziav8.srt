@@ -1,0 +1,467 @@
+1
+00:00:00,080 --> 00:00:04,560
+Okay, now that we know that our input is
+
+2
+00:00:02,639 --> 00:00:06,560
+just an object and it has attributes,
+
+3
+00:00:04,560 --> 00:00:08,720
+one of the attributes that it has is
+
+4
+00:00:06,560 --> 00:00:10,800
+this value attribute. What is a value
+
+5
+00:00:08,720 --> 00:00:13,599
+attribute? Well, it's the text that
+
+6
+00:00:10,800 --> 00:00:16,000
+shows up when you type inside of the
+
+7
+00:00:13,599 --> 00:00:18,320
+text box that gets stored in its value
+
+8
+00:00:16,000 --> 00:00:20,720
+attribute. And because it's an object,
+
+9
+00:00:18,320 --> 00:00:21,920
+we can access attributes and we can
+
+10
+00:00:20,720 --> 00:00:24,000
+change them. So, I'm going to
+
+11
+00:00:21,920 --> 00:00:27,599
+demonstrate that by coming back over to
+
+12
+00:00:24,000 --> 00:00:29,359
+Visual Studio Code, and I'm going to get
+
+13
+00:00:27,599 --> 00:00:32,160
+rid
+
+14
+00:00:29,359 --> 00:00:33,440
+of everything here. I'm I'm actually
+
+15
+00:00:32,160 --> 00:00:36,160
+going to get rid of the script tag for
+
+16
+00:00:33,440 --> 00:00:38,399
+now, too. And I'm going to have an input
+
+17
+00:00:36,160 --> 00:00:41,760
+of type text.
+
+18
+00:00:38,399 --> 00:00:44,559
+And I'm going to give it an ID
+
+19
+00:00:41,760 --> 00:00:48,079
+of input
+
+20
+00:00:44,559 --> 00:00:50,160
+box. And I'm going to have another one.
+
+21
+00:00:48,079 --> 00:00:54,079
+And I'm going to give this one the ID of
+
+22
+00:00:50,160 --> 00:00:56,879
+output box. Okay, awesome. I have an
+
+23
+00:00:54,079 --> 00:00:58,719
+input box and an output box. What I want
+
+24
+00:00:56,879 --> 00:01:00,960
+to do is I want to take whatever they
+
+25
+00:00:58,719 --> 00:01:03,280
+type in the input box and as they type,
+
+26
+00:01:00,960 --> 00:01:06,080
+I want to put it in the output box in
+
+27
+00:01:03,280 --> 00:01:08,479
+uppercase. So in the input box, I'm
+
+28
+00:01:06,080 --> 00:01:11,280
+going to wait for an event. What event
+
+29
+00:01:08,479 --> 00:01:13,439
+am I waiting for? Well, I'm interacting
+
+30
+00:01:11,280 --> 00:01:15,280
+with the user pushing buttons on the
+
+31
+00:01:13,439 --> 00:01:19,680
+keyboard. So let's look at some of those
+
+32
+00:01:15,280 --> 00:01:21,520
+buttons. So if I say on key, so it looks
+
+33
+00:01:19,680 --> 00:01:25,680
+like there are three of them. There's on
+
+34
+00:01:21,520 --> 00:01:27,759
+key down, on key press, and on key up.
+
+35
+00:01:25,680 --> 00:01:30,159
+On key down works when the key goes
+
+36
+00:01:27,759 --> 00:01:31,520
+down. Um, but that means that the value
+
+37
+00:01:30,159 --> 00:01:33,119
+won't yet have updated because it won't
+
+38
+00:01:31,520 --> 00:01:36,079
+have fully read the key. It just knows
+
+39
+00:01:33,119 --> 00:01:38,159
+that a key is going down. Um, what we
+
+40
+00:01:36,079 --> 00:01:40,720
+want is on key up. When they lift their
+
+41
+00:01:38,159 --> 00:01:43,360
+finger off of the key, we want to
+
+42
+00:01:40,720 --> 00:01:44,560
+execute a function. Um, and the function
+
+43
+00:01:43,360 --> 00:01:47,360
+we're going to execute is called
+
+44
+00:01:44,560 --> 00:01:49,360
+transfer text.
+
+45
+00:01:47,360 --> 00:01:50,720
+So when they type in the first box,
+
+46
+00:01:49,360 --> 00:01:53,680
+every time they lift their finger off of
+
+47
+00:01:50,720 --> 00:01:56,240
+a key, we want to transfer text. So
+
+48
+00:01:53,680 --> 00:01:59,119
+let's create our script tag
+
+49
+00:01:56,240 --> 00:02:04,920
+and let's create our function. So we're
+
+50
+00:01:59,119 --> 00:02:04,920
+going to say transfer text equals
+
+51
+00:02:05,759 --> 00:02:11,039
+K. And we want to transfer text from the
+
+52
+00:02:08,640 --> 00:02:14,319
+first box into the second box. Well, how
+
+53
+00:02:11,039 --> 00:02:16,720
+do we do that? Well, first things first,
+
+54
+00:02:14,319 --> 00:02:18,720
+we would need to grab this input box.
+
+55
+00:02:16,720 --> 00:02:21,280
+So, how do we do that? Well, we need to
+
+56
+00:02:18,720 --> 00:02:23,120
+use the DOM. How do you use the DOM? By
+
+57
+00:02:21,280 --> 00:02:25,760
+using the keyword document. So, we're
+
+58
+00:02:23,120 --> 00:02:28,560
+going to say document.getelement
+
+59
+00:02:25,760 --> 00:02:31,520
+by ID. So, now we're looking through our
+
+60
+00:02:28,560 --> 00:02:34,160
+HTML page for an object. And we know
+
+61
+00:02:31,520 --> 00:02:37,360
+that the object has an ID. And we know
+
+62
+00:02:34,160 --> 00:02:40,560
+that ID is input box. So we're saying
+
+63
+00:02:37,360 --> 00:02:44,480
+look through the entire object for an ID
+
+64
+00:02:40,560 --> 00:02:47,519
+of input box. That will return us this
+
+65
+00:02:44,480 --> 00:02:49,519
+input tag. This input tag is an object.
+
+66
+00:02:47,519 --> 00:02:51,519
+If it's an object, it has attributes.
+
+67
+00:02:49,519 --> 00:02:53,360
+How do you access attributes of objects?
+
+68
+00:02:51,519 --> 00:02:56,480
+Well, you use the dot notation. So I'm
+
+69
+00:02:53,360 --> 00:02:58,160
+going to say dot value. So what I've
+
+70
+00:02:56,480 --> 00:03:01,920
+done is I've said go out to the
+
+71
+00:02:58,160 --> 00:03:04,720
+document, look through it for an object
+
+72
+00:03:01,920 --> 00:03:07,280
+or in other words a piece of HTML that
+
+73
+00:03:04,720 --> 00:03:09,840
+has an ID of the input box and then grab
+
+74
+00:03:07,280 --> 00:03:11,360
+the value. So right now I'm not doing
+
+75
+00:03:09,840 --> 00:03:12,959
+anything with it. If I want to use that
+
+76
+00:03:11,360 --> 00:03:15,040
+value I have to store it. So I'm going
+
+77
+00:03:12,959 --> 00:03:19,360
+to say let
+
+78
+00:03:15,040 --> 00:03:21,360
+um input val equal that. So I'm saying
+
+79
+00:03:19,360 --> 00:03:23,840
+create a new variable. inside of that
+
+80
+00:03:21,360 --> 00:03:26,480
+variable. I want you to go grab the
+
+81
+00:03:23,840 --> 00:03:28,480
+input box object and look for its value.
+
+82
+00:03:26,480 --> 00:03:32,159
+Take that value and store an input
+
+83
+00:03:28,480 --> 00:03:35,120
+value. And that is how you read um an
+
+84
+00:03:32,159 --> 00:03:37,360
+attribute out of the HTML page. You
+
+85
+00:03:35,120 --> 00:03:39,040
+access it using the DOM and then you
+
+86
+00:03:37,360 --> 00:03:42,159
+access the name of that object's
+
+87
+00:03:39,040 --> 00:03:44,400
+attribute. Um in this case, the value.
+
+88
+00:03:42,159 --> 00:03:46,560
+You can also set those similar to how
+
+89
+00:03:44,400 --> 00:03:48,319
+you would change um if you had an
+
+90
+00:03:46,560 --> 00:03:50,480
+object, you could change its name
+
+91
+00:03:48,319 --> 00:03:52,000
+attribute. um we've got an object that
+
+92
+00:03:50,480 --> 00:03:54,319
+has a value attribute and we can change
+
+93
+00:03:52,000 --> 00:03:56,480
+that as well. So what we want to do is
+
+94
+00:03:54,319 --> 00:03:58,720
+we want to change the value inside of
+
+95
+00:03:56,480 --> 00:04:00,480
+this input. So what we want to do is we
+
+96
+00:03:58,720 --> 00:04:02,000
+want to say our output box. So we'll say
+
+97
+00:04:00,480 --> 00:04:04,879
+document.getelement
+
+98
+00:04:02,000 --> 00:04:06,400
+by ID. What ID are we looking for? Well,
+
+99
+00:04:04,879 --> 00:04:08,239
+this time we're looking for the output
+
+100
+00:04:06,400 --> 00:04:09,920
+box.
+
+101
+00:04:08,239 --> 00:04:12,000
+And then what do we want to do? Well, we
+
+102
+00:04:09,920 --> 00:04:13,519
+want to access its value. This time
+
+103
+00:04:12,000 --> 00:04:15,840
+instead of reading the value, we're
+
+104
+00:04:13,519 --> 00:04:19,519
+going to set the value. So we'll say set
+
+105
+00:04:15,840 --> 00:04:23,199
+its value equal to um the input value
+
+106
+00:04:19,519 --> 00:04:25,759
+dot to uppercase. So we're saying take
+
+107
+00:04:23,199 --> 00:04:28,479
+the input value convert it to uppercase
+
+108
+00:04:25,759 --> 00:04:30,560
+and store it in the output box. When do
+
+109
+00:04:28,479 --> 00:04:33,600
+we want this to run? Every time the key
+
+110
+00:04:30,560 --> 00:04:38,320
+comes up in the input box. So I'm going
+
+111
+00:04:33,600 --> 00:04:40,560
+to save this and I come to my website
+
+112
+00:04:38,320 --> 00:04:44,560
+and I'm going to type
+
+113
+00:04:40,560 --> 00:04:46,400
+my name is Toa. And you can see it took
+
+114
+00:04:44,560 --> 00:04:48,960
+all of my keys and every time I lifted
+
+115
+00:04:46,400 --> 00:04:51,919
+my finger off the keyboard, it converted
+
+116
+00:04:48,960 --> 00:04:54,080
+this entire thing to uppercase and put
+
+117
+00:04:51,919 --> 00:04:54,080
+it

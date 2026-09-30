@@ -1,0 +1,347 @@
+1
+00:00:00,000 --> 00:00:03,600
+All right, hopefully you've survived
+
+2
+00:00:01,760 --> 00:00:05,279
+thus far and if you hang in there a
+
+3
+00:00:03,600 --> 00:00:08,480
+little longer, we're about to cover my
+
+4
+00:00:05,279 --> 00:00:10,639
+favorite subject. Um, this time we are
+
+5
+00:00:08,480 --> 00:00:12,320
+covering arrays. Why are arrays my
+
+6
+00:00:10,639 --> 00:00:14,559
+favorite? Because by the time we've hit
+
+7
+00:00:12,320 --> 00:00:16,160
+this point, if you can use arrays
+
+8
+00:00:14,559 --> 00:00:18,400
+effectively, you can build anything that
+
+9
+00:00:16,160 --> 00:00:21,920
+you want. Arrays in combination with
+
+10
+00:00:18,400 --> 00:00:23,920
+loops and selection and math, string
+
+11
+00:00:21,920 --> 00:00:26,000
+manipulation, with that you can build
+
+12
+00:00:23,920 --> 00:00:27,279
+just about anything you want. There are
+
+13
+00:00:26,000 --> 00:00:29,439
+things that we will learn in the future
+
+14
+00:00:27,279 --> 00:00:31,119
+that will make your life easier. But the
+
+15
+00:00:29,439 --> 00:00:32,960
+things we've learned thus far, you can
+
+16
+00:00:31,119 --> 00:00:36,399
+build anything you want after you learn
+
+17
+00:00:32,960 --> 00:00:37,840
+arrays. Um, so I'm excited to give that
+
+18
+00:00:36,399 --> 00:00:40,480
+knowledge to you. Hopefully it's
+
+19
+00:00:37,840 --> 00:00:42,559
+helpful. So what is an array? Um, well,
+
+20
+00:00:40,480 --> 00:00:44,000
+an array is just a variable. So if we
+
+21
+00:00:42,559 --> 00:00:46,079
+think back to other variables, I
+
+22
+00:00:44,000 --> 00:00:48,640
+described them as a box. And a box could
+
+23
+00:00:46,079 --> 00:00:50,960
+hold something. So I showed you a box
+
+24
+00:00:48,640 --> 00:00:53,600
+that was holding like action figures.
+
+25
+00:00:50,960 --> 00:00:54,879
+Um, and I showed you another box. And I
+
+26
+00:00:53,600 --> 00:00:56,399
+told you to name your variables
+
+27
+00:00:54,879 --> 00:00:58,480
+descriptively.
+
+28
+00:00:56,399 --> 00:01:00,800
+Well, today I'm here to tell you that
+
+29
+00:00:58,480 --> 00:01:03,120
+one special type of box is called an
+
+30
+00:01:00,800 --> 00:01:04,879
+array. The reason it's a special type of
+
+31
+00:01:03,120 --> 00:01:07,119
+box is because it can actually hold
+
+32
+00:01:04,879 --> 00:01:09,200
+multiple pieces of information. So all
+
+33
+00:01:07,119 --> 00:01:11,840
+of the previous variables, an integer,
+
+34
+00:01:09,200 --> 00:01:13,920
+when we put an integer in something,
+
+35
+00:01:11,840 --> 00:01:17,280
+that type of box could only hold one
+
+36
+00:01:13,920 --> 00:01:21,280
+value. It could only be 18 or 22.5 if it
+
+37
+00:01:17,280 --> 00:01:23,119
+was a float or the string hello. Well,
+
+38
+00:01:21,280 --> 00:01:25,439
+arrays are really cool because they
+
+39
+00:01:23,119 --> 00:01:28,560
+allow you to hold multiple things in one
+
+40
+00:01:25,439 --> 00:01:31,600
+box. So, to visualize this, I bought a
+
+41
+00:01:28,560 --> 00:01:33,920
+little divider to show you.
+
+42
+00:01:31,600 --> 00:01:37,040
+Okay, hopefully you can see this. So,
+
+43
+00:01:33,920 --> 00:01:39,280
+this is like an array. Um, as you can
+
+44
+00:01:37,040 --> 00:01:40,880
+see, it is one box and I could move it
+
+45
+00:01:39,280 --> 00:01:43,360
+around
+
+46
+00:01:40,880 --> 00:01:46,640
+and everything inside of it moves with
+
+47
+00:01:43,360 --> 00:01:48,479
+the box. Here on the box, I've actually
+
+48
+00:01:46,640 --> 00:01:51,680
+got it labeled. So I've got a position 1
+
+49
+00:01:48,479 --> 00:01:53,840
+2 3 4 5 and six. And I realized after I
+
+50
+00:01:51,680 --> 00:01:55,680
+made this box that I should have started
+
+51
+00:01:53,840 --> 00:01:58,240
+at zero because computers start at zero.
+
+52
+00:01:55,680 --> 00:02:01,920
+But oh well, you live and you learn. So
+
+53
+00:01:58,240 --> 00:02:04,479
+um this represents an array. So when I
+
+54
+00:02:01,920 --> 00:02:07,600
+said an array is like a box, the entire
+
+55
+00:02:04,479 --> 00:02:10,720
+thing here is like one big container.
+
+56
+00:02:07,600 --> 00:02:13,760
+Inside of that box, it's subdivided into
+
+57
+00:02:10,720 --> 00:02:16,239
+six smaller boxes. Your array is
+
+58
+00:02:13,760 --> 00:02:18,640
+subdivided into six smaller storage
+
+59
+00:02:16,239 --> 00:02:22,160
+containers. So if I said go to my big
+
+60
+00:02:18,640 --> 00:02:24,640
+divider box and grab the thing in box
+
+61
+00:02:22,160 --> 00:02:27,520
+one, you would come to this divider box.
+
+62
+00:02:24,640 --> 00:02:29,520
+You'd open up the box and you'd find a
+
+63
+00:02:27,520 --> 00:02:33,120
+charging cable.
+
+64
+00:02:29,520 --> 00:02:34,560
+If I said grab what's in box two, you
+
+65
+00:02:33,120 --> 00:02:37,280
+would open it up and you'd find a
+
+66
+00:02:34,560 --> 00:02:39,599
+different charging cable. If I said grab
+
+67
+00:02:37,280 --> 00:02:43,280
+what's in box three, you'd open it up
+
+68
+00:02:39,599 --> 00:02:46,319
+and find a pair. So the point of an
+
+69
+00:02:43,280 --> 00:02:48,959
+array is that it is one big container
+
+70
+00:02:46,319 --> 00:02:51,120
+that you can move around, but it also
+
+71
+00:02:48,959 --> 00:02:54,000
+has smaller containers within it that
+
+72
+00:02:51,120 --> 00:02:56,000
+are holding information. So just like um
+
+73
+00:02:54,000 --> 00:02:57,599
+my multiple dividers in my container,
+
+74
+00:02:56,000 --> 00:03:00,239
+your arrays can contain multiple things
+
+75
+00:02:57,599 --> 00:03:02,640
+as well. So they can store a couple of
+
+76
+00:03:00,239 --> 00:03:04,080
+numbers and a couple of pieces of text
+
+77
+00:03:02,640 --> 00:03:05,599
+and a bunch of other things. Anything
+
+78
+00:03:04,080 --> 00:03:07,760
+you want to store, the great thing about
+
+79
+00:03:05,599 --> 00:03:09,440
+an array is that you can store it. The
+
+80
+00:03:07,760 --> 00:03:10,959
+other nice thing about arrays, unlike my
+
+81
+00:03:09,440 --> 00:03:14,560
+little box divider here that I just
+
+82
+00:03:10,959 --> 00:03:16,640
+showed you, is that they can expand and
+
+83
+00:03:14,560 --> 00:03:18,959
+they can contract based on how much
+
+84
+00:03:16,640 --> 00:03:21,200
+information you decide to put in them.
+
+85
+00:03:18,959 --> 00:03:22,560
+And so that is where we're going and
+
+86
+00:03:21,200 --> 00:03:25,680
+I'll show you how to implement that in
+
+87
+00:03:22,560 --> 00:03:25,680
+code. Thanks for watching.

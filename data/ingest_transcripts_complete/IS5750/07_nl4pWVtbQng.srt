@@ -1,0 +1,475 @@
+1
+00:00:00,480 --> 00:00:04,880
+All right. So, now that you've got your
+
+2
+00:00:03,040 --> 00:00:07,520
+website set up and you've got your
+
+3
+00:00:04,880 --> 00:00:09,679
+developer tools enabled, it's time to
+
+4
+00:00:07,520 --> 00:00:11,599
+figure out how they work. So, the way we
+
+5
+00:00:09,679 --> 00:00:13,280
+do that, um, the way you open your
+
+6
+00:00:11,599 --> 00:00:17,440
+developer tools is you use two fingers
+
+7
+00:00:13,280 --> 00:00:20,320
+and you click or you can hit command
+
+8
+00:00:17,440 --> 00:00:23,840
+option I
+
+9
+00:00:20,320 --> 00:00:25,199
+and that will pull up this toolbar at
+
+10
+00:00:23,840 --> 00:00:28,160
+the bottom and it's a whole bunch of
+
+11
+00:00:25,199 --> 00:00:30,000
+developer tools. So, there are four tabs
+
+12
+00:00:28,160 --> 00:00:32,399
+that we're going to use. And so, I'm
+
+13
+00:00:30,000 --> 00:00:34,000
+going to start on the left and just work
+
+14
+00:00:32,399 --> 00:00:36,399
+my way to the right. So, the first one
+
+15
+00:00:34,000 --> 00:00:39,120
+is this elements tab. This is helpful
+
+16
+00:00:36,399 --> 00:00:41,200
+for when you're looking at HTML. You can
+
+17
+00:00:39,120 --> 00:00:43,280
+see that it pulled in our HTML exactly
+
+18
+00:00:41,200 --> 00:00:46,000
+as we wrote it on our other page. And as
+
+19
+00:00:43,280 --> 00:00:48,079
+we hover over each HTML element, it'll
+
+20
+00:00:46,000 --> 00:00:50,000
+highlight it on the page. So, we know
+
+21
+00:00:48,079 --> 00:00:52,879
+that inside of our body element, there's
+
+22
+00:00:50,000 --> 00:00:54,320
+the text hello world. Something fun you
+
+23
+00:00:52,879 --> 00:00:57,039
+can do with this tab, and this works on
+
+24
+00:00:54,320 --> 00:00:59,760
+any website, is you can doubleclick and
+
+25
+00:00:57,039 --> 00:01:04,479
+you can change the text here. So, if I
+
+26
+00:00:59,760 --> 00:01:07,840
+was on um microsoft.com, I could come in
+
+27
+00:01:04,479 --> 00:01:11,200
+and inspect it and change how the page
+
+28
+00:01:07,840 --> 00:01:15,119
+shows up. Um so, this you can see it
+
+29
+00:01:11,200 --> 00:01:16,880
+highlights our HTML. And that that's
+
+30
+00:01:15,119 --> 00:01:19,040
+mostly what you'll use this elements tab
+
+31
+00:01:16,880 --> 00:01:22,560
+for is figuring out how your HTML is
+
+32
+00:01:19,040 --> 00:01:24,400
+working. You can test some styling here.
+
+33
+00:01:22,560 --> 00:01:26,799
+We probably won't use this tab very
+
+34
+00:01:24,400 --> 00:01:28,400
+often, but it is a tab we might possibly
+
+35
+00:01:26,799 --> 00:01:29,920
+use, so I wanted you to be aware of it.
+
+36
+00:01:28,400 --> 00:01:34,000
+The tab we're going to use the most
+
+37
+00:01:29,920 --> 00:01:37,119
+often is the console tab. So, this is
+
+38
+00:01:34,000 --> 00:01:40,320
+our console tab, and you can type into
+
+39
+00:01:37,119 --> 00:01:42,720
+the console and hit enter. And so, this
+
+40
+00:01:40,320 --> 00:01:44,320
+is where all of the errors you have when
+
+41
+00:01:42,720 --> 00:01:46,399
+something crashes in your code,
+
+42
+00:01:44,320 --> 00:01:49,600
+JavaScript is going to create an error.
+
+43
+00:01:46,399 --> 00:01:52,240
+So, I just typed out ASDF and a whole
+
+44
+00:01:49,600 --> 00:01:54,000
+bunch of letters and it said that's an
+
+45
+00:01:52,240 --> 00:01:56,320
+error. That doesn't work. That's not
+
+46
+00:01:54,000 --> 00:01:58,399
+accurate code. So, this is a great place
+
+47
+00:01:56,320 --> 00:02:00,079
+to look if you're having problems and
+
+48
+00:01:58,399 --> 00:02:01,759
+your code isn't running as you expect.
+
+49
+00:02:00,079 --> 00:02:03,680
+The first place you want to look is in
+
+50
+00:02:01,759 --> 00:02:05,520
+your console. The other helpful thing
+
+51
+00:02:03,680 --> 00:02:07,360
+about the console is that you can type
+
+52
+00:02:05,520 --> 00:02:10,319
+code into it. So, if you remember back
+
+53
+00:02:07,360 --> 00:02:12,080
+to the intro to JavaScript video where I
+
+54
+00:02:10,319 --> 00:02:13,760
+talked about what JavaScript was, talked
+
+55
+00:02:12,080 --> 00:02:16,959
+about coding languages, and I said that
+
+56
+00:02:13,760 --> 00:02:19,120
+you can create a hello world message um
+
+57
+00:02:16,959 --> 00:02:20,879
+with one line of code. The terminal
+
+58
+00:02:19,120 --> 00:02:22,239
+actually allows you to write JavaScript.
+
+59
+00:02:20,879 --> 00:02:24,560
+So, we're going to write that one line
+
+60
+00:02:22,239 --> 00:02:26,400
+of code. So, I'm going to zoom in a
+
+61
+00:02:24,560 --> 00:02:29,680
+little bit so you can see my terminal.
+
+62
+00:02:26,400 --> 00:02:35,440
+Um, and I'm going to type console.log
+
+63
+00:02:29,680 --> 00:02:37,120
+and then open parenthesis hello world.
+
+64
+00:02:35,440 --> 00:02:39,519
+And then I'm going to close that. And
+
+65
+00:02:37,120 --> 00:02:41,680
+then I'm going to hit enter. And you can
+
+66
+00:02:39,519 --> 00:02:43,920
+see immediately below where I typed the
+
+67
+00:02:41,680 --> 00:02:47,280
+JavaScript, it sent the message hello
+
+68
+00:02:43,920 --> 00:02:48,400
+world. Um, and now you've got your
+
+69
+00:02:47,280 --> 00:02:51,280
+you've run your first piece of
+
+70
+00:02:48,400 --> 00:02:52,720
+JavaScript. Um, so that's the console's
+
+71
+00:02:51,280 --> 00:02:54,800
+helpful because you can test any
+
+72
+00:02:52,720 --> 00:02:57,200
+JavaScript you want here. It'll also
+
+73
+00:02:54,800 --> 00:02:58,640
+show you all of your errors. The next
+
+74
+00:02:57,200 --> 00:03:01,680
+tab we want to talk about is this
+
+75
+00:02:58,640 --> 00:03:03,680
+sources tab. When you click on sources,
+
+76
+00:03:01,680 --> 00:03:05,360
+um, you're going to see that there's a
+
+77
+00:03:03,680 --> 00:03:06,879
+whole bunch of just a whole bunch of
+
+78
+00:03:05,360 --> 00:03:09,040
+information. The main thing you're going
+
+79
+00:03:06,879 --> 00:03:12,640
+to see is that this HTML document shows
+
+80
+00:03:09,040 --> 00:03:15,120
+up here and it's got a bunch of HTML.
+
+81
+00:03:12,640 --> 00:03:17,840
+On the left hand panel, you can see that
+
+82
+00:03:15,120 --> 00:03:19,440
+we're pulling from index.html.
+
+83
+00:03:17,840 --> 00:03:21,360
+We're going to talk more about this tab
+
+84
+00:03:19,440 --> 00:03:22,959
+when we get to debugging, but I wanted
+
+85
+00:03:21,360 --> 00:03:24,560
+you to be aware that it's here. If
+
+86
+00:03:22,959 --> 00:03:26,080
+you're overwhelmed right now, that's
+
+87
+00:03:24,560 --> 00:03:27,280
+totally okay. You don't need to
+
+88
+00:03:26,080 --> 00:03:28,720
+understand everything that's here. I
+
+89
+00:03:27,280 --> 00:03:30,959
+just want you to know that this tab is
+
+90
+00:03:28,720 --> 00:03:32,319
+here because we will be using it later.
+
+91
+00:03:30,959 --> 00:03:35,280
+And then the last tab we're going to
+
+92
+00:03:32,319 --> 00:03:37,200
+talk about is the network tab. This tab
+
+93
+00:03:35,280 --> 00:03:40,319
+is helpful for when we get to calling on
+
+94
+00:03:37,200 --> 00:03:42,319
+outside resources because it shows us
+
+95
+00:03:40,319 --> 00:03:45,280
+where those outside resources came from.
+
+96
+00:03:42,319 --> 00:03:47,200
+So if I zoom out just a little bit, um
+
+97
+00:03:45,280 --> 00:03:49,840
+you can see that I requested two
+
+98
+00:03:47,200 --> 00:03:52,720
+resources from this address. That's what
+
+99
+00:03:49,840 --> 00:03:54,640
+these numbers are. And it looks like
+
+100
+00:03:52,720 --> 00:03:56,560
+both of those resources came back. So
+
+101
+00:03:54,640 --> 00:03:58,640
+everything necessary to run this page
+
+102
+00:03:56,560 --> 00:04:00,879
+successfully showed up on this page.
+
+103
+00:03:58,640 --> 00:04:02,959
+Anytime I have a problem with my website
+
+104
+00:04:00,879 --> 00:04:05,120
+and something isn't loading properly,
+
+105
+00:04:02,959 --> 00:04:07,200
+I'll come check the network tab and that
+
+106
+00:04:05,120 --> 00:04:10,080
+will tell me um what's loading and
+
+107
+00:04:07,200 --> 00:04:12,239
+what's not. So again, just a quick
+
+108
+00:04:10,080 --> 00:04:13,760
+summary. Elements tab, it's where you
+
+109
+00:04:12,239 --> 00:04:16,400
+look for problems. If you have problems
+
+110
+00:04:13,760 --> 00:04:17,840
+with your HTML, console tab, if you have
+
+111
+00:04:16,400 --> 00:04:20,320
+problems with your JavaScript, this is
+
+112
+00:04:17,840 --> 00:04:22,079
+where you're going to look. Sources tab
+
+113
+00:04:20,320 --> 00:04:23,600
+is when you want to walk through your
+
+114
+00:04:22,079 --> 00:04:25,600
+code, and we'll talk more in depth in
+
+115
+00:04:23,600 --> 00:04:27,040
+debugging. And network tab is when
+
+116
+00:04:25,600 --> 00:04:28,639
+something isn't loading on your page
+
+117
+00:04:27,040 --> 00:04:30,960
+properly. This is the tab you're going
+
+118
+00:04:28,639 --> 00:04:33,520
+to want to check. All right, thanks for
+
+119
+00:04:30,960 --> 00:04:33,520
+watching.

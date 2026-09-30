@@ -1,0 +1,103 @@
+1
+00:00:00,080 --> 00:00:03,919
+All right. So, when you're wanting to
+
+2
+00:00:01,920 --> 00:00:06,560
+edit an HTML page, it's helpful to know
+
+3
+00:00:03,919 --> 00:00:08,880
+the HTML has rules. As long as you
+
+4
+00:00:06,560 --> 00:00:11,519
+follow those rules, um you will be able
+
+5
+00:00:08,880 --> 00:00:13,920
+to safely work within the page. Um those
+
+6
+00:00:11,519 --> 00:00:15,759
+rules enable you to write JavaScript
+
+7
+00:00:13,920 --> 00:00:19,039
+that interacts with those rules to
+
+8
+00:00:15,759 --> 00:00:22,240
+change how HTML looks. Um we call those
+
+9
+00:00:19,039 --> 00:00:23,920
+rules the document object model. Um
+
+10
+00:00:22,240 --> 00:00:26,400
+breaking that down into its three words,
+
+11
+00:00:23,920 --> 00:00:29,439
+document references the HTML document.
+
+12
+00:00:26,400 --> 00:00:31,359
+object um references the fact that
+
+13
+00:00:29,439 --> 00:00:34,000
+everything on the HTML page can be
+
+14
+00:00:31,359 --> 00:00:37,040
+represented as a JavaScript object. And
+
+15
+00:00:34,000 --> 00:00:39,440
+then um model is just that everything is
+
+16
+00:00:37,040 --> 00:00:40,960
+modeled using JavaScript objects. So
+
+17
+00:00:39,440 --> 00:00:42,879
+that means that if you could do it to a
+
+18
+00:00:40,960 --> 00:00:44,480
+JavaScript object like accessing an
+
+19
+00:00:42,879 --> 00:00:46,800
+attribute, you can probably do it to
+
+20
+00:00:44,480 --> 00:00:49,039
+something that's on the HTML page. If
+
+21
+00:00:46,800 --> 00:00:50,640
+you can do it to an object in JavaScript
+
+22
+00:00:49,039 --> 00:00:52,079
+like updating an attribute, you can
+
+23
+00:00:50,640 --> 00:00:54,480
+probably do it to something that's part
+
+24
+00:00:52,079 --> 00:00:56,719
+of the HTML page. We call the document
+
+25
+00:00:54,480 --> 00:00:59,199
+object module
+
+26
+00:00:56,719 --> 00:00:59,199
+for short.

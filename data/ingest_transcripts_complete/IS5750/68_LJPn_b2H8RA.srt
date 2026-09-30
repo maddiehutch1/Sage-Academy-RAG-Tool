@@ -1,0 +1,315 @@
+1
+00:00:00,480 --> 00:00:07,279
+So let's come over to our code.
+
+2
+00:00:04,160 --> 00:00:10,320
+We will know that. So we're going to
+
+3
+00:00:07,279 --> 00:00:12,240
+uncomment this code. This code right
+
+4
+00:00:10,320 --> 00:00:15,960
+here is our counter. And I'm going to
+
+5
+00:00:12,240 --> 00:00:15,960
+rename it to arrow
+
+6
+00:00:21,439 --> 00:00:25,199
+at the arrow position. So that's our
+
+7
+00:00:23,119 --> 00:00:26,720
+number at the arrow position. What we
+
+8
+00:00:25,199 --> 00:00:29,119
+want to do is we want to start another
+
+9
+00:00:26,720 --> 00:00:31,199
+loop inside of this loop that repeats
+
+10
+00:00:29,119 --> 00:00:34,320
+itself. So this loop is going to repeat
+
+11
+00:00:31,199 --> 00:00:37,440
+another loop. So we'll start with a four
+
+12
+00:00:34,320 --> 00:00:39,360
+and then we're going to say let
+
+13
+00:00:37,440 --> 00:00:42,079
+and then we're going to call this one
+
+14
+00:00:39,360 --> 00:00:45,120
+box. And we're going to say the box that
+
+15
+00:00:42,079 --> 00:00:49,600
+we're comparing is equal to wherever the
+
+16
+00:00:45,120 --> 00:00:51,680
+arrow is plus one. Because if we come
+
+17
+00:00:49,600 --> 00:00:54,960
+over to our slideshow,
+
+18
+00:00:51,680 --> 00:00:56,879
+when we start our comparison on each
+
+19
+00:00:54,960 --> 00:01:00,079
+round, so right after we've moved the
+
+20
+00:00:56,879 --> 00:01:03,199
+arrow, we move the arrow. What box do we
+
+21
+00:01:00,079 --> 00:01:05,119
+compare? The one right next to it.
+
+22
+00:01:03,199 --> 00:01:07,439
+We move the arrow. What box do we
+
+23
+00:01:05,119 --> 00:01:09,680
+compare? The one right next to it. So
+
+24
+00:01:07,439 --> 00:01:11,280
+that much we know. So we want it to
+
+25
+00:01:09,680 --> 00:01:13,600
+compare the one right next to it. So
+
+26
+00:01:11,280 --> 00:01:16,240
+we've said we want to start the box
+
+27
+00:01:13,600 --> 00:01:18,000
+counter at wherever the arrow counter is
+
+28
+00:01:16,240 --> 00:01:20,640
+plus one.
+
+29
+00:01:18,000 --> 00:01:23,119
+That's where we want it to start. How
+
+30
+00:01:20,640 --> 00:01:26,799
+long do we want it to go? Well, that's
+
+31
+00:01:23,119 --> 00:01:30,159
+really easy. It's just the end um of the
+
+32
+00:01:26,799 --> 00:01:33,040
+array because if you watch which box we
+
+33
+00:01:30,159 --> 00:01:34,960
+compare before we move the arrow again,
+
+34
+00:01:33,040 --> 00:01:38,079
+we always look at the last box in the
+
+35
+00:01:34,960 --> 00:01:40,960
+array. Okay? So, that means we need our
+
+36
+00:01:38,079 --> 00:01:43,600
+box counter to go all the way to the
+
+37
+00:01:40,960 --> 00:01:47,280
+last one in the array. So we'll come
+
+38
+00:01:43,600 --> 00:01:51,479
+here and we'll say let's go until box is
+
+39
+00:01:47,280 --> 00:01:51,479
+less than numbers.length.
+
+40
+00:01:54,720 --> 00:02:01,000
+And then we'll increment box as we
+
+41
+00:01:57,040 --> 00:02:01,000
+slowly move down the array.
+
+42
+00:02:08,560 --> 00:02:14,800
+So we will know this works if box starts
+
+43
+00:02:12,879 --> 00:02:19,760
+at 1
+
+44
+00:02:14,800 --> 00:02:22,879
+and goes 1 2 3 4 5 and then starts at 2
+
+45
+00:02:19,760 --> 00:02:26,480
+and goes 2 3 4 5 and then starts at
+
+46
+00:02:22,879 --> 00:02:28,800
+three goes 3 4 5 and then four five and
+
+47
+00:02:26,480 --> 00:02:30,480
+then five. So let's just console.log
+
+48
+00:02:28,800 --> 00:02:31,760
+that
+
+49
+00:02:30,480 --> 00:02:33,680
+because that's talking about the
+
+50
+00:02:31,760 --> 00:02:37,519
+position in the array. We'll console.log
+
+51
+00:02:33,680 --> 00:02:39,599
+box and we'll go look at our code. So,
+
+52
+00:02:37,519 --> 00:02:43,120
+we'll come over here to Safari. Come to
+
+53
+00:02:39,599 --> 00:02:46,080
+our console. We'll reload. And we get 1
+
+54
+00:02:43,120 --> 00:02:50,879
+2 3 4 5
+
+55
+00:02:46,080 --> 00:02:52,720
+5 2 3 4 5 6 and oh, sorry. I think I
+
+56
+00:02:50,879 --> 00:02:54,480
+have another log. Ah, we have a log
+
+57
+00:02:52,720 --> 00:02:56,959
+right here. Let's get rid of that. Save
+
+58
+00:02:54,480 --> 00:02:58,879
+it. Come back over.
+
+59
+00:02:56,959 --> 00:03:03,440
+Come to our console. We'll reload. We
+
+60
+00:02:58,879 --> 00:03:07,920
+get 1 2 3 4 5 2 3 4 5 3 4 5 and then
+
+61
+00:03:03,440 --> 00:03:07,920
+four and then five. And then just five.
+
+62
+00:03:08,480 --> 00:03:14,560
+So, if we go over to here and look at
+
+63
+00:03:12,640 --> 00:03:16,800
+where the box compares, we're going to
+
+64
+00:03:14,560 --> 00:03:18,560
+go all the way back to the beginning of
+
+65
+00:03:16,800 --> 00:03:21,440
+this array.
+
+66
+00:03:18,560 --> 00:03:24,000
+The box starts in position
+
+67
+00:03:21,440 --> 00:03:26,400
+01. So, the box starts at position index
+
+68
+00:03:24,000 --> 00:03:30,080
+one, then index two, then index three,
+
+69
+00:03:26,400 --> 00:03:31,680
+then index four, then index five, and
+
+70
+00:03:30,080 --> 00:03:36,319
+then
+
+71
+00:03:31,680 --> 00:03:43,519
+index 2, 3, 4, 5.
+
+72
+00:03:36,319 --> 00:03:45,599
+3 4 5 and then three four five
+
+73
+00:03:43,519 --> 00:03:48,480
+and then
+
+74
+00:03:45,599 --> 00:03:50,239
+four or sorry and then five and then it
+
+75
+00:03:48,480 --> 00:03:52,480
+was done.
+
+76
+00:03:50,239 --> 00:03:54,480
+So, because we have successfully logged
+
+77
+00:03:52,480 --> 00:03:57,120
+out those numbers, we now know that our
+
+78
+00:03:54,480 --> 00:03:59,439
+box will store the position that we're
+
+79
+00:03:57,120 --> 00:03:59,439
+comparing.

@@ -1,0 +1,123 @@
+1
+00:00:00,160 --> 00:00:04,720
+Okay, now that you know how to add
+
+2
+00:00:02,159 --> 00:00:07,359
+things, now it's time to learn how to
+
+3
+00:00:04,720 --> 00:00:10,320
+delete them. So, let's say we want to
+
+4
+00:00:07,359 --> 00:00:12,080
+remove this off of the screen because
+
+5
+00:00:10,320 --> 00:00:15,040
+there are duplicates. We don't need two
+
+6
+00:00:12,080 --> 00:00:16,240
+of the exact same picture here. Um, so
+
+7
+00:00:15,040 --> 00:00:19,520
+let's talk about how we do that
+
+8
+00:00:16,240 --> 00:00:22,240
+dynamically. So, what I've done up here
+
+9
+00:00:19,520 --> 00:00:24,640
+is I've added an on click to this very
+
+10
+00:00:22,240 --> 00:00:27,519
+first div, and it has a function called
+
+11
+00:00:24,640 --> 00:00:28,960
+remove me. And if I scroll down to the
+
+12
+00:00:27,519 --> 00:00:31,519
+bottom, I've created the function called
+
+13
+00:00:28,960 --> 00:00:34,880
+remove me. And removing is pretty dang
+
+14
+00:00:31,519 --> 00:00:37,280
+simple. You say document dot query
+
+15
+00:00:34,880 --> 00:00:39,360
+selector. And I'm just going to remove
+
+16
+00:00:37,280 --> 00:00:41,200
+the very first div element. So to do
+
+17
+00:00:39,360 --> 00:00:43,680
+that, I'm going to look for the first
+
+18
+00:00:41,200 --> 00:00:45,280
+div that has a card attribute. And
+
+19
+00:00:43,680 --> 00:00:47,440
+because query selector grabs the first
+
+20
+00:00:45,280 --> 00:00:48,719
+one, I have now grabbed an element. Once
+
+21
+00:00:47,440 --> 00:00:52,960
+you've grabbed the element you want to
+
+22
+00:00:48,719 --> 00:00:54,960
+remove, you type dot remove.
+
+23
+00:00:52,960 --> 00:00:56,960
+And it's that simple. So if you come
+
+24
+00:00:54,960 --> 00:00:58,719
+over here and you click on it, boom,
+
+25
+00:00:56,960 --> 00:01:00,399
+we've deleted the card. And now this
+
+26
+00:00:58,719 --> 00:01:02,399
+card expands to take up the full space
+
+27
+00:01:00,399 --> 00:01:05,040
+because that's how the CSS was set up.
+
+28
+00:01:02,399 --> 00:01:06,880
+We have successfully deleted a card. All
+
+29
+00:01:05,040 --> 00:01:09,280
+that work to learn how to create,
+
+30
+00:01:06,880 --> 00:01:13,200
+retrieve, and update. And to delete, you
+
+31
+00:01:09,280 --> 00:01:13,200
+just find it and do remove and you're

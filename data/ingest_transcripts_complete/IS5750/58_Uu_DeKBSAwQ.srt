@@ -1,0 +1,1307 @@
+1
+00:00:00,080 --> 00:00:03,840
+All right, let's get started. So, um,
+
+2
+00:00:02,399 --> 00:00:05,839
+first thing I'm going to do is put my
+
+3
+00:00:03,840 --> 00:00:08,400
+name and then description. I'm going to
+
+4
+00:00:05,839 --> 00:00:13,360
+say computer
+
+5
+00:00:08,400 --> 00:00:17,840
+uses algorithm to guess
+
+6
+00:00:13,360 --> 00:00:20,080
+numbers from the user. All right, so we
+
+7
+00:00:17,840 --> 00:00:21,840
+want to write a program. Um, we want to
+
+8
+00:00:20,080 --> 00:00:24,160
+welcome the user to the game. So, we'll
+
+9
+00:00:21,840 --> 00:00:29,760
+just say alert,
+
+10
+00:00:24,160 --> 00:00:34,719
+welcome to the computer guessing game.
+
+11
+00:00:29,760 --> 00:00:38,239
+The computer will guess a number from
+
+12
+00:00:34,719 --> 00:00:40,079
+your head. K.
+
+13
+00:00:38,239 --> 00:00:44,079
+Um, then we're going to prompt them for
+
+14
+00:00:40,079 --> 00:00:46,000
+the maximum number in the range. Um, so
+
+15
+00:00:44,079 --> 00:00:49,120
+I'm going to need to store the maximum
+
+16
+00:00:46,000 --> 00:00:51,600
+number. So I'm going to say let maxum
+
+17
+00:00:49,120 --> 00:00:54,079
+equals, we'll initialize it to zero, but
+
+18
+00:00:51,600 --> 00:00:56,640
+we'll change it later. We'll say minum
+
+19
+00:00:54,079 --> 00:00:58,640
+equals zero. Um, we're going to need the
+
+20
+00:00:56,640 --> 00:01:00,559
+minimum number.
+
+21
+00:00:58,640 --> 00:01:01,920
+Um,
+
+22
+00:01:00,559 --> 00:01:05,399
+we're going to need a number for the
+
+23
+00:01:01,920 --> 00:01:05,399
+computer guess.
+
+24
+00:01:09,520 --> 00:01:12,520
+Um,
+
+25
+00:01:14,000 --> 00:01:19,720
+we're going to need a string for the
+
+26
+00:01:16,400 --> 00:01:19,720
+user response.
+
+27
+00:01:22,479 --> 00:01:26,479
+And let's see.
+
+28
+00:01:30,240 --> 00:01:36,640
+We're going to need a running number of
+
+29
+00:01:31,600 --> 00:01:38,560
+guesses. So, let num guesses equal zero.
+
+30
+00:01:36,640 --> 00:01:41,840
+So, what I've done is I've created all
+
+31
+00:01:38,560 --> 00:01:43,280
+of my variables ahead of time. Um, so
+
+32
+00:01:41,840 --> 00:01:46,159
+I'm going to create a little comment up
+
+33
+00:01:43,280 --> 00:01:51,600
+here says
+
+34
+00:01:46,159 --> 00:01:55,840
+variables needed for the program
+
+35
+00:01:51,600 --> 00:01:58,640
+and we initialize them as well.
+
+36
+00:01:55,840 --> 00:02:00,320
+Okay, then I'm going to welcome them to
+
+37
+00:01:58,640 --> 00:02:03,520
+the program. Now I need them to provide
+
+38
+00:02:00,320 --> 00:02:05,119
+me a maximum number in the range. Um,
+
+39
+00:02:03,520 --> 00:02:07,439
+that number is going to need to be a
+
+40
+00:02:05,119 --> 00:02:12,160
+number. So we're going to convert it.
+
+41
+00:02:07,439 --> 00:02:13,599
+Um, so let's say let max num or sorry
+
+42
+00:02:12,160 --> 00:02:16,480
+we've already created the maximum number
+
+43
+00:02:13,599 --> 00:02:18,879
+variable. So we'll say max num equals
+
+44
+00:02:16,480 --> 00:02:21,440
+and then we'll convert whatever the user
+
+45
+00:02:18,879 --> 00:02:24,840
+gives us into an integer and we'll
+
+46
+00:02:21,440 --> 00:02:24,840
+prompt them
+
+47
+00:02:25,280 --> 00:02:34,680
+and say um what is the maximum
+
+48
+00:02:29,920 --> 00:02:34,680
+number in your range
+
+49
+00:02:37,200 --> 00:02:41,200
+and then we'll convert that into an
+
+50
+00:02:38,560 --> 00:02:44,080
+integer and we'll store it
+
+51
+00:02:41,200 --> 00:02:45,840
+Um
+
+52
+00:02:44,080 --> 00:02:47,680
+then we'll say what is the minimum
+
+53
+00:02:45,840 --> 00:02:49,840
+number in your range. So we'll say min
+
+54
+00:02:47,680 --> 00:02:52,239
+num equals and I'm actually going to
+
+55
+00:02:49,840 --> 00:02:54,720
+copy this
+
+56
+00:02:52,239 --> 00:02:58,720
+and paste it and I'm going to just
+
+57
+00:02:54,720 --> 00:03:00,400
+change the word maximum to minimum.
+
+58
+00:02:58,720 --> 00:03:02,239
+Okay. So now we've gathered the maximum
+
+59
+00:03:00,400 --> 00:03:04,640
+number and the minimum number. Now we
+
+60
+00:03:02,239 --> 00:03:09,640
+need to alert them the game is starting.
+
+61
+00:03:04,640 --> 00:03:09,640
+The game has begun.
+
+62
+00:03:10,800 --> 00:03:14,800
+Now, we need to have the computer guess
+
+63
+00:03:12,400 --> 00:03:16,080
+the middle number in the current range.
+
+64
+00:03:14,800 --> 00:03:20,640
+So, let's think through this
+
+65
+00:03:16,080 --> 00:03:26,080
+mathematically. Um, if the if your range
+
+66
+00:03:20,640 --> 00:03:28,480
+was from 50 to 100, um, then the number
+
+67
+00:03:26,080 --> 00:03:31,280
+halfway would be the distance between
+
+68
+00:03:28,480 --> 00:03:34,879
+them divided by two. And so, the
+
+69
+00:03:31,280 --> 00:03:40,000
+distance between 50 and 100 is 50
+
+70
+00:03:34,879 --> 00:03:43,200
+divided by two is 25. So 25 above 50 or
+
+71
+00:03:40,000 --> 00:03:44,640
+25 below 100 is going to give us the
+
+72
+00:03:43,200 --> 00:03:47,760
+middle of the range. Middle of that
+
+73
+00:03:44,640 --> 00:03:49,280
+range is going to be 75. So from the
+
+74
+00:03:47,760 --> 00:03:51,840
+steps that I just took as I thought
+
+75
+00:03:49,280 --> 00:03:53,599
+through it, I took the maximum number in
+
+76
+00:03:51,840 --> 00:03:55,280
+the range and the min and subtracted off
+
+77
+00:03:53,599 --> 00:03:57,519
+the minimum number of the range to
+
+78
+00:03:55,280 --> 00:03:59,599
+figure out the distance. Then once I
+
+79
+00:03:57,519 --> 00:04:01,200
+figured out the distance, I took that
+
+80
+00:03:59,599 --> 00:04:03,040
+distance and added it to the minimum
+
+81
+00:04:01,200 --> 00:04:05,680
+number of the range to get to the middle
+
+82
+00:04:03,040 --> 00:04:07,360
+of the range. So I'm going to do that
+
+83
+00:04:05,680 --> 00:04:10,799
+now in code. Now that I've thought
+
+84
+00:04:07,360 --> 00:04:15,280
+through how I want to do that. So here
+
+85
+00:04:10,799 --> 00:04:18,479
+I'm going to say um take
+
+86
+00:04:15,280 --> 00:04:22,240
+um the distance is going to be the
+
+87
+00:04:18,479 --> 00:04:25,520
+maximum number minus the minimum number
+
+88
+00:04:22,240 --> 00:04:29,520
+um and then we'll divide it by two. So
+
+89
+00:04:25,520 --> 00:04:32,240
+we'll say maximum number minus minimum
+
+90
+00:04:29,520 --> 00:04:35,040
+number and that is the distance. So, I'm
+
+91
+00:04:32,240 --> 00:04:37,360
+say let distance equal maximum number
+
+92
+00:04:35,040 --> 00:04:39,360
+minus minimum number. Because I'm trying
+
+93
+00:04:37,360 --> 00:04:41,199
+to make all of my variables be up here
+
+94
+00:04:39,360 --> 00:04:43,280
+at the top, I'm actually going to remove
+
+95
+00:04:41,199 --> 00:04:45,440
+that and I'm going to say let distance
+
+96
+00:04:43,280 --> 00:04:47,199
+equals zero. Then down here, I'm going
+
+97
+00:04:45,440 --> 00:04:48,720
+to reuse the distance variable. I'm
+
+98
+00:04:47,199 --> 00:04:51,520
+going to set it equal to the maximum
+
+99
+00:04:48,720 --> 00:04:53,919
+number minus the minimum number. So,
+
+100
+00:04:51,520 --> 00:04:55,840
+that gives me the distance between them.
+
+101
+00:04:53,919 --> 00:04:59,199
+Halfway is going to be that distance
+
+102
+00:04:55,840 --> 00:05:04,479
+divided by two. Um,
+
+103
+00:04:59,199 --> 00:05:08,720
+and so the guess is going to be um the
+
+104
+00:05:04,479 --> 00:05:11,919
+distance / 2. And then once I figured
+
+105
+00:05:08,720 --> 00:05:15,680
+out what that is, I'm going to add it to
+
+106
+00:05:11,919 --> 00:05:17,840
+the minimum number. So going through
+
+107
+00:05:15,680 --> 00:05:20,400
+this again,
+
+108
+00:05:17,840 --> 00:05:24,800
+100 is the maximum number minus the
+
+109
+00:05:20,400 --> 00:05:26,080
+minimum number of 50 gives us 50.
+
+110
+00:05:24,800 --> 00:05:28,800
+And then we're going to take 50 and
+
+111
+00:05:26,080 --> 00:05:30,160
+divide it by 2, which gives us 25. And
+
+112
+00:05:28,800 --> 00:05:32,800
+then we're going to add that to the
+
+113
+00:05:30,160 --> 00:05:35,759
+minimum number, which was 50. So 50 + 25
+
+114
+00:05:32,800 --> 00:05:38,320
+is 75. And thus our guess is now exactly
+
+115
+00:05:35,759 --> 00:05:42,800
+in the middle. Now that we've made that
+
+116
+00:05:38,320 --> 00:05:45,120
+guess, um, we need to prompt the user to
+
+117
+00:05:42,800 --> 00:05:50,720
+see if it's correct.
+
+118
+00:05:45,120 --> 00:05:53,720
+So, we'll say um user response equals
+
+119
+00:05:50,720 --> 00:05:53,720
+prompt
+
+120
+00:05:53,759 --> 00:05:59,600
+the computer and actually I'm going to
+
+121
+00:05:56,479 --> 00:06:03,320
+use a formatted string here.
+
+122
+00:05:59,600 --> 00:06:03,320
+Say the computer
+
+123
+00:06:03,680 --> 00:06:07,960
+guessed the number
+
+124
+00:06:08,720 --> 00:06:14,240
+and then we're going to enter our guess
+
+125
+00:06:11,120 --> 00:06:20,720
+here. So guess that number.
+
+126
+00:06:14,240 --> 00:06:25,160
+Is that correct? Enter C for correct,
+
+127
+00:06:20,720 --> 00:06:25,160
+H for too high,
+
+128
+00:06:25,440 --> 00:06:33,360
+and L for too low.
+
+129
+00:06:30,000 --> 00:06:35,280
+And then um down below it says make sure
+
+130
+00:06:33,360 --> 00:06:38,160
+to normalize your input. Adjust to
+
+131
+00:06:35,280 --> 00:06:41,280
+handle both capital C and lowerase C.
+
+132
+00:06:38,160 --> 00:06:44,319
+The way you do that is you say dot to
+
+133
+00:06:41,280 --> 00:06:46,000
+lowercase. That converts everything to
+
+134
+00:06:44,319 --> 00:06:47,759
+lowerase. So if they enter a capital C,
+
+135
+00:06:46,000 --> 00:06:51,759
+it'll be a lowercase C. If they enter a
+
+136
+00:06:47,759 --> 00:06:54,080
+lowerase C, it'll be a capital C. Um
+
+137
+00:06:51,759 --> 00:06:56,400
+based on the user's response, adjust the
+
+138
+00:06:54,080 --> 00:07:03,120
+range accordingly. So what we're going
+
+139
+00:06:56,400 --> 00:07:07,599
+to do is we're going to say um if
+
+140
+00:07:03,120 --> 00:07:10,240
+um user response
+
+141
+00:07:07,599 --> 00:07:12,880
+is h
+
+142
+00:07:10,240 --> 00:07:16,080
+then that means they guessed too high.
+
+143
+00:07:12,880 --> 00:07:18,000
+So if they guess too high the new
+
+144
+00:07:16,080 --> 00:07:19,680
+maximum becomes whatever the computer
+
+145
+00:07:18,000 --> 00:07:21,840
+guessed last. So what we're going to do
+
+146
+00:07:19,680 --> 00:07:27,759
+is we're going to say
+
+147
+00:07:21,840 --> 00:07:31,919
+um max num equals guess
+
+148
+00:07:27,759 --> 00:07:35,919
+else if user response
+
+149
+00:07:31,919 --> 00:07:37,759
+is um l
+
+150
+00:07:35,919 --> 00:07:39,199
+if it's too low the new minimum becomes
+
+151
+00:07:37,759 --> 00:07:41,199
+whatever the computer guessed. So we'll
+
+152
+00:07:39,199 --> 00:07:44,400
+say max
+
+153
+00:07:41,199 --> 00:07:47,599
+or sorry minum
+
+154
+00:07:44,400 --> 00:07:50,000
+equals guess
+
+155
+00:07:47,599 --> 00:07:52,639
+and then finally
+
+156
+00:07:50,000 --> 00:07:55,039
+we'll say else if
+
+157
+00:07:52,639 --> 00:07:57,840
+user response
+
+158
+00:07:55,039 --> 00:08:00,319
+is correct.
+
+159
+00:07:57,840 --> 00:08:03,199
+Um
+
+160
+00:08:00,319 --> 00:08:06,160
+then we'll set both the min num equal to
+
+161
+00:08:03,199 --> 00:08:09,160
+the guess and the max num equal to the
+
+162
+00:08:06,160 --> 00:08:09,160
+guess.
+
+163
+00:08:09,680 --> 00:08:15,120
+And then we'll have an else here and
+
+164
+00:08:12,560 --> 00:08:19,560
+we'll just alert
+
+165
+00:08:15,120 --> 00:08:19,560
+not a valid response.
+
+166
+00:08:20,639 --> 00:08:24,400
+Okay.
+
+167
+00:08:22,720 --> 00:08:26,080
+Then it says repeat the process of
+
+168
+00:08:24,400 --> 00:08:28,319
+guessing the middle number and adjusting
+
+169
+00:08:26,080 --> 00:08:30,879
+the range until the computer gets the
+
+170
+00:08:28,319 --> 00:08:35,200
+correct number.
+
+171
+00:08:30,879 --> 00:08:38,880
+So we need to repeat the process from
+
+172
+00:08:35,200 --> 00:08:41,360
+five all the way to seven and we need to
+
+173
+00:08:38,880 --> 00:08:43,360
+keep doing it until the computer gets
+
+174
+00:08:41,360 --> 00:08:46,959
+the right number. So in other words,
+
+175
+00:08:43,360 --> 00:08:51,440
+while the guess is not the same as the
+
+176
+00:08:46,959 --> 00:08:55,120
+user's enter number, then um
+
+177
+00:08:51,440 --> 00:08:58,399
+we need to run the guess again. So to do
+
+178
+00:08:55,120 --> 00:09:01,519
+that, let's do a while loop. So we'll
+
+179
+00:08:58,399 --> 00:09:03,120
+have and as a matter of fact we always
+
+180
+00:09:01,519 --> 00:09:07,120
+want to make at least one guess. So
+
+181
+00:09:03,120 --> 00:09:08,640
+we're going to do a dowh loop. So
+
+182
+00:09:07,120 --> 00:09:11,920
+once we've alerted that the game has
+
+183
+00:09:08,640 --> 00:09:14,480
+begun we're going to say do
+
+184
+00:09:11,920 --> 00:09:17,519
+and then we're going to go all the way
+
+185
+00:09:14,480 --> 00:09:21,360
+until the end of that if statement. And
+
+186
+00:09:17,519 --> 00:09:24,880
+then to format your code, you can hold
+
+187
+00:09:21,360 --> 00:09:27,040
+um altshift f or on a Mac it's option
+
+188
+00:09:24,880 --> 00:09:31,760
+shift f and that will format your code.
+
+189
+00:09:27,040 --> 00:09:38,560
+So I'm going to do this while
+
+190
+00:09:31,760 --> 00:09:41,560
+um the guess is not equal to um
+
+191
+00:09:38,560 --> 00:09:41,560
+the
+
+192
+00:09:42,880 --> 00:09:49,920
+sorry we're going to run this while the
+
+193
+00:09:46,080 --> 00:09:52,080
+user response is not equal to C because
+
+194
+00:09:49,920 --> 00:09:53,839
+if the user response is C then it's the
+
+195
+00:09:52,080 --> 00:09:56,320
+number from the user's head. If it's not
+
+196
+00:09:53,839 --> 00:09:59,920
+C then we need to run this loop again.
+
+197
+00:09:56,320 --> 00:10:01,200
+So, while the user response is not C,
+
+198
+00:09:59,920 --> 00:10:03,279
+figure out the distance between the
+
+199
+00:10:01,200 --> 00:10:05,600
+maximum number and the minimum number.
+
+200
+00:10:03,279 --> 00:10:08,959
+Guess the middle number, prompt them if
+
+201
+00:10:05,600 --> 00:10:10,560
+it's correct. If the user enters C, then
+
+202
+00:10:08,959 --> 00:10:13,040
+we know our range is correct and we'll
+
+203
+00:10:10,560 --> 00:10:14,800
+end the loop. If they didn't enter C,
+
+204
+00:10:13,040 --> 00:10:17,519
+then we're going to adjust our range and
+
+205
+00:10:14,800 --> 00:10:19,680
+adjust our range and run our loop again.
+
+206
+00:10:17,519 --> 00:10:21,920
+That means the only way we can get
+
+207
+00:10:19,680 --> 00:10:24,720
+outside of this loop is if we've guessed
+
+208
+00:10:21,920 --> 00:10:28,480
+the correct number. So, what we want to
+
+209
+00:10:24,720 --> 00:10:29,839
+do is now we want to um so it says
+
+210
+00:10:28,480 --> 00:10:31,040
+repeat the process of guessing the
+
+211
+00:10:29,839 --> 00:10:32,399
+middle number and adjusting the range
+
+212
+00:10:31,040 --> 00:10:34,320
+until the computer gets the correct
+
+213
+00:10:32,399 --> 00:10:35,920
+number. Once the computer guesses the
+
+214
+00:10:34,320 --> 00:10:38,560
+number, display the number of attempts
+
+215
+00:10:35,920 --> 00:10:41,360
+it took. Well, we actually haven't been
+
+216
+00:10:38,560 --> 00:10:43,680
+tracking attempts thus far. Um what
+
+217
+00:10:41,360 --> 00:10:46,720
+we've done is we've alerted them. We've
+
+218
+00:10:43,680 --> 00:10:50,399
+created our range and then we've put in
+
+219
+00:10:46,720 --> 00:10:52,880
+two numbers and then we've guessed. And
+
+220
+00:10:50,399 --> 00:10:54,560
+so once we make this guess, we actually
+
+221
+00:10:52,880 --> 00:10:57,360
+probably want to increment the number of
+
+222
+00:10:54,560 --> 00:10:59,760
+guesses. So we set our number of guesses
+
+223
+00:10:57,360 --> 00:11:02,640
+to zero at the start. So right here, I'm
+
+224
+00:10:59,760 --> 00:11:05,680
+going to say
+
+225
+00:11:02,640 --> 00:11:08,560
+increment guesses
+
+226
+00:11:05,680 --> 00:11:10,079
+and we're going to take user response.
+
+227
+00:11:08,560 --> 00:11:11,040
+Sorry,
+
+228
+00:11:10,079 --> 00:11:16,040
+we're going to take the number of
+
+229
+00:11:11,040 --> 00:11:16,040
+guesses and we're going to increment it.
+
+230
+00:11:16,720 --> 00:11:21,360
+All right,
+
+231
+00:11:19,040 --> 00:11:24,360
+we've guessed their input. So now we can
+
+232
+00:11:21,360 --> 00:11:24,360
+alert
+
+233
+00:11:27,120 --> 00:11:32,200
+array. The computer guessed it.
+
+234
+00:11:33,440 --> 00:11:37,480
+It only took
+
+235
+00:11:37,760 --> 00:11:42,839
+numb guesses,
+
+236
+00:11:39,839 --> 00:11:42,839
+tries.
+
+237
+00:11:43,360 --> 00:11:51,200
+Okay, let's save this and let's go test
+
+238
+00:11:46,240 --> 00:11:53,440
+it. So, I'm going to go live
+
+239
+00:11:51,200 --> 00:11:54,880
+and it's going to say, "Welcome to the
+
+240
+00:11:53,440 --> 00:11:57,680
+computer guessing game. The computer
+
+241
+00:11:54,880 --> 00:12:01,360
+will guess a number from your head."
+
+242
+00:11:57,680 --> 00:12:03,920
+So, I'm going to go with 76.
+
+243
+00:12:01,360 --> 00:12:05,760
+So, what is the And I'll use the range 0
+
+244
+00:12:03,920 --> 00:12:08,560
+to 100. So, what is the maximum number
+
+245
+00:12:05,760 --> 00:12:09,680
+in your range? 100. What is the minimum
+
+246
+00:12:08,560 --> 00:12:11,839
+number in the range? We'll actually go
+
+247
+00:12:09,680 --> 00:12:14,320
+with one. So, it says the game has
+
+248
+00:12:11,839 --> 00:12:17,760
+begun. Um, the computer guessed the
+
+249
+00:12:14,320 --> 00:12:20,639
+number 50.5. Is that correct? Enter C
+
+250
+00:12:17,760 --> 00:12:24,639
+for correct, H for too high, and L for
+
+251
+00:12:20,639 --> 00:12:26,880
+too low. Well, my number was 76. So, I'm
+
+252
+00:12:24,639 --> 00:12:29,600
+going to say that that's too low. And
+
+253
+00:12:26,880 --> 00:12:32,480
+then it said it guessed 75.25.
+
+254
+00:12:29,600 --> 00:12:35,360
+Is that correct? It's still too low. And
+
+255
+00:12:32,480 --> 00:12:39,360
+then it guessed 87.625.
+
+256
+00:12:35,360 --> 00:12:41,920
+That's too high. Uh 81.4375.
+
+257
+00:12:39,360 --> 00:12:44,560
+That's too low. And this is probably
+
+258
+00:12:41,920 --> 00:12:46,240
+going to go on forever and ever and ever
+
+259
+00:12:44,560 --> 00:12:47,760
+because it's guessing decimal places and
+
+260
+00:12:46,240 --> 00:12:49,120
+I want it to guess whole numbers. So
+
+261
+00:12:47,760 --> 00:12:51,920
+what we're going to do is we're going to
+
+262
+00:12:49,120 --> 00:12:54,240
+go around that number. So let's come
+
+263
+00:12:51,920 --> 00:12:56,880
+over
+
+264
+00:12:54,240 --> 00:12:59,120
+here and instead of setting our guess
+
+265
+00:12:56,880 --> 00:13:02,480
+equal to the distance plus the minimum
+
+266
+00:12:59,120 --> 00:13:04,560
+number, we're going to round this. Um,
+
+267
+00:13:02,480 --> 00:13:08,320
+and the way we're going to do that is
+
+268
+00:13:04,560 --> 00:13:10,399
+we're going to say guess equals guess.2
+
+269
+00:13:08,320 --> 00:13:12,320
+to fixed.
+
+270
+00:13:10,399 --> 00:13:14,560
+And then it says, how many decimal
+
+271
+00:13:12,320 --> 00:13:16,880
+places do you want? I want zero decimal
+
+272
+00:13:14,560 --> 00:13:18,240
+places, but you'll notice this returns a
+
+273
+00:13:16,880 --> 00:13:20,720
+string. So, we're going to have to
+
+274
+00:13:18,240 --> 00:13:24,800
+convert this to a number. Um, I've been
+
+275
+00:13:20,720 --> 00:13:27,760
+using uh parse int and parse float. Um,
+
+276
+00:13:24,800 --> 00:13:29,600
+but you can also use the number function
+
+277
+00:13:27,760 --> 00:13:30,560
+and that will also convert it to a
+
+278
+00:13:29,600 --> 00:13:32,720
+number. So, we're going to take our
+
+279
+00:13:30,560 --> 00:13:35,920
+guess, round it to zero decimal places,
+
+280
+00:13:32,720 --> 00:13:38,079
+turn it into a number, and now we'll try
+
+281
+00:13:35,920 --> 00:13:40,880
+our code again. So, we'll hit cancel.
+
+282
+00:13:38,079 --> 00:13:42,639
+We'll reload the page. Um, we're going
+
+283
+00:13:40,880 --> 00:13:44,720
+to go with 76. What's the maximum number
+
+284
+00:13:42,639 --> 00:13:48,160
+in our range? 100. What's the minimum?
+
+285
+00:13:44,720 --> 00:13:51,680
+One. Game has begun. Uh, guessed 51. Is
+
+286
+00:13:48,160 --> 00:13:53,760
+that correct? That is too low. It
+
+287
+00:13:51,680 --> 00:13:55,440
+guessed 76. Is that correct? That is
+
+288
+00:13:53,760 --> 00:13:57,120
+correct. And it says, hooray. The
+
+289
+00:13:55,440 --> 00:14:00,480
+computer guessed it. It only took two
+
+290
+00:13:57,120 --> 00:14:01,920
+tries. And so, it looks like our code is
+
+291
+00:14:00,480 --> 00:14:05,279
+working. Let's come over and do some
+
+292
+00:14:01,920 --> 00:14:08,079
+cleaning up. Um, so
+
+293
+00:14:05,279 --> 00:14:10,639
+we've got our name and description.
+
+294
+00:14:08,079 --> 00:14:12,079
+We've got the variables needed. Um, we
+
+295
+00:14:10,639 --> 00:14:14,399
+probably don't need this comment
+
+296
+00:14:12,079 --> 00:14:16,160
+anymore. So, let's get rid of that. Um,
+
+297
+00:14:14,399 --> 00:14:19,040
+we welcome the user, ask them to provide
+
+298
+00:14:16,160 --> 00:14:20,959
+the number, display the alert, and then
+
+299
+00:14:19,040 --> 00:14:24,320
+here I'm going to add a comment that
+
+300
+00:14:20,959 --> 00:14:29,399
+says calculating
+
+301
+00:14:24,320 --> 00:14:29,399
+the mid guess.
+
+302
+00:14:29,600 --> 00:14:33,040
+And then here we're going to prompt them
+
+303
+00:14:31,279 --> 00:14:35,440
+and see if it's correct. The user should
+
+304
+00:14:33,040 --> 00:14:37,040
+respond with that. And then we're going
+
+305
+00:14:35,440 --> 00:14:39,360
+to increment the guess. We don't need
+
+306
+00:14:37,040 --> 00:14:42,079
+that anymore. We don't need that
+
+307
+00:14:39,360 --> 00:14:45,519
+anymore. Um, based on the response,
+
+308
+00:14:42,079 --> 00:14:48,720
+adjust the range accordingly. And then,
+
+309
+00:14:45,519 --> 00:14:50,399
+um, I'm going to
+
+310
+00:14:48,720 --> 00:14:51,839
+remove those. We don't need those
+
+311
+00:14:50,399 --> 00:14:54,480
+anymore.
+
+312
+00:14:51,839 --> 00:14:57,040
+Um,
+
+313
+00:14:54,480 --> 00:15:02,079
+and up above the dowhile loop, I'm going
+
+314
+00:14:57,040 --> 00:15:04,160
+to say keep guessing until you get it
+
+315
+00:15:02,079 --> 00:15:07,440
+right.
+
+316
+00:15:04,160 --> 00:15:10,680
+Until actually, until the computer gets
+
+317
+00:15:07,440 --> 00:15:10,680
+it right.
+
+318
+00:15:11,120 --> 00:15:15,279
+And then we're going to take this
+
+319
+00:15:12,959 --> 00:15:16,560
+comment and says once it does display
+
+320
+00:15:15,279 --> 00:15:19,279
+that, and we're just going to move it
+
+321
+00:15:16,560 --> 00:15:21,760
+above the alert. So now looks like we've
+
+322
+00:15:19,279 --> 00:15:24,240
+cleaned things up nicely. And our code
+
+323
+00:15:21,760 --> 00:15:27,199
+is good to go. Uh hopefully you were
+
+324
+00:15:24,240 --> 00:15:30,079
+able to come to a solution on your own.
+
+325
+00:15:27,199 --> 00:15:31,360
+This is my solution. Um and that
+
+326
+00:15:30,079 --> 00:15:33,600
+concludes this video. Thanks for
+
+327
+00:15:31,360 --> 00:15:33,600
+watching.

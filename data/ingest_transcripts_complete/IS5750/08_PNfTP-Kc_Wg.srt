@@ -1,0 +1,599 @@
+1
+00:00:00,560 --> 00:00:04,400
+All right, now that you've built your
+
+2
+00:00:02,720 --> 00:00:07,440
+first web page, it's time to learn how
+
+3
+00:00:04,400 --> 00:00:09,200
+to use the developer tools. So, this
+
+4
+00:00:07,440 --> 00:00:11,519
+video is going to be for anyone who's
+
+5
+00:00:09,200 --> 00:00:13,040
+using a Chromiumbi based browser. So,
+
+6
+00:00:11,519 --> 00:00:16,400
+basically, if you're using Google
+
+7
+00:00:13,040 --> 00:00:19,680
+Chrome, Firefox, Microsoft Edge, most
+
+8
+00:00:16,400 --> 00:00:22,000
+popular browsers, um your chances are
+
+9
+00:00:19,680 --> 00:00:24,720
+you're using a Chromiumbased browser. So
+
+10
+00:00:22,000 --> 00:00:26,800
+the way you access your developer tools
+
+11
+00:00:24,720 --> 00:00:28,400
+on a chromium based browser is you'll
+
+12
+00:00:26,800 --> 00:00:31,840
+click on the screen and you'll hit
+
+13
+00:00:28,400 --> 00:00:34,399
+command option I if you're on a Mac or
+
+14
+00:00:31,840 --> 00:00:36,239
+you'll hit control shift I if you're on
+
+15
+00:00:34,399 --> 00:00:38,719
+a Windows. The other way you can access
+
+16
+00:00:36,239 --> 00:00:41,920
+it is you can double click or right
+
+17
+00:00:38,719 --> 00:00:43,360
+click if you're on a Windows into the
+
+18
+00:00:41,920 --> 00:00:45,920
+center of the window and you can click
+
+19
+00:00:43,360 --> 00:00:48,559
+inspect and that will pop up this tab
+
+20
+00:00:45,920 --> 00:00:50,640
+right here. Um, for most of you, this
+
+21
+00:00:48,559 --> 00:00:52,239
+tab was probably docked to the right
+
+22
+00:00:50,640 --> 00:00:54,640
+hand panel like this when you first
+
+23
+00:00:52,239 --> 00:00:55,920
+viewed it. I don't like mine there, so I
+
+24
+00:00:54,640 --> 00:00:57,280
+like to move it to the bottom. The way
+
+25
+00:00:55,920 --> 00:01:00,320
+you do that is you'll click these three
+
+26
+00:00:57,280 --> 00:01:03,199
+dots right here, and then I will dock it
+
+27
+00:01:00,320 --> 00:01:06,240
+to the bottom. And now my developer
+
+28
+00:01:03,199 --> 00:01:07,840
+tools are where I want them. So, let's
+
+29
+00:01:06,240 --> 00:01:10,960
+talk about the different tabs. Let me
+
+30
+00:01:07,840 --> 00:01:12,960
+zoom in real quick on my console. All
+
+31
+00:01:10,960 --> 00:01:15,040
+right. So, the first tab that we're
+
+32
+00:01:12,960 --> 00:01:16,880
+going to talk about is the elements tab.
+
+33
+00:01:15,040 --> 00:01:21,040
+Here in the elements tab, you can see it
+
+34
+00:01:16,880 --> 00:01:24,080
+actually pulled in our HTML exactly as
+
+35
+00:01:21,040 --> 00:01:27,520
+we typed it. And as we hover around,
+
+36
+00:01:24,080 --> 00:01:29,520
+you'll see that it highlights on screen
+
+37
+00:01:27,520 --> 00:01:32,320
+the part of the HTML that we're hovering
+
+38
+00:01:29,520 --> 00:01:34,880
+over. We use the elements tab when we're
+
+39
+00:01:32,320 --> 00:01:37,119
+trying to understand how our HTML is
+
+40
+00:01:34,880 --> 00:01:38,880
+working and how our CSS is working. So,
+
+41
+00:01:37,119 --> 00:01:41,200
+if we open up the body tag, we can
+
+42
+00:01:38,880 --> 00:01:43,360
+actually edit this on the live website
+
+43
+00:01:41,200 --> 00:01:45,680
+and see what changes would look like.
+
+44
+00:01:43,360 --> 00:01:48,000
+This won't actually change the code, but
+
+45
+00:01:45,680 --> 00:01:49,759
+it'll allow us to test code without
+
+46
+00:01:48,000 --> 00:01:51,600
+having to constantly flip back and forth
+
+47
+00:01:49,759 --> 00:01:52,880
+between windows. So, what I'm going to
+
+48
+00:01:51,600 --> 00:01:54,479
+do here is I'm going to just change
+
+49
+00:01:52,880 --> 00:01:56,000
+hello world, and I'm going to double
+
+50
+00:01:54,479 --> 00:01:59,439
+click into it, and I'm going to change
+
+51
+00:01:56,000 --> 00:02:02,719
+it to say hello
+
+52
+00:01:59,439 --> 00:02:05,680
+um moon. And then as soon as I click
+
+53
+00:02:02,719 --> 00:02:07,520
+off, you can see it updated on screen.
+
+54
+00:02:05,680 --> 00:02:09,920
+If I reload the page, it goes back to
+
+55
+00:02:07,520 --> 00:02:11,920
+the original HTML that we wrote. And so
+
+56
+00:02:09,920 --> 00:02:13,920
+I was able to test some HTML really
+
+57
+00:02:11,920 --> 00:02:16,000
+quickly and just determine if that
+
+58
+00:02:13,920 --> 00:02:17,599
+solved my problem. That is the main
+
+59
+00:02:16,000 --> 00:02:19,120
+reason you'll use the elements tab. We
+
+60
+00:02:17,599 --> 00:02:20,480
+probably won't use the elements tab a
+
+61
+00:02:19,120 --> 00:02:22,959
+lot in this course because this is a
+
+62
+00:02:20,480 --> 00:02:24,480
+JavaScript course and not an HTML or CSS
+
+63
+00:02:22,959 --> 00:02:27,120
+course. But I wanted you to be aware
+
+64
+00:02:24,480 --> 00:02:28,879
+that this tab was here. The tab where we
+
+65
+00:02:27,120 --> 00:02:31,120
+will spend most of our time is the
+
+66
+00:02:28,879 --> 00:02:34,720
+console tab. So this here is your
+
+67
+00:02:31,120 --> 00:02:36,640
+console. And in here you can type
+
+68
+00:02:34,720 --> 00:02:38,319
+whatever you want. This is where all of
+
+69
+00:02:36,640 --> 00:02:40,000
+your JavaScript errors are going to show
+
+70
+00:02:38,319 --> 00:02:41,519
+up. So, if you write code that doesn't
+
+71
+00:02:40,000 --> 00:02:43,519
+work and you don't know why it's not
+
+72
+00:02:41,519 --> 00:02:45,760
+working, the console tab is the best tab
+
+73
+00:02:43,519 --> 00:02:47,599
+to check. So, I'm just going to type a
+
+74
+00:02:45,760 --> 00:02:50,160
+bunch of gibberish and hit enter and it
+
+75
+00:02:47,599 --> 00:02:51,680
+says uncaught reference error. And if
+
+76
+00:02:50,160 --> 00:02:53,599
+you don't understand what that means,
+
+77
+00:02:51,680 --> 00:02:55,599
+don't worry. I'm just showing you that
+
+78
+00:02:53,599 --> 00:02:58,239
+there. This is a place where you will
+
+79
+00:02:55,599 --> 00:02:59,200
+see errors with your code. It's also a
+
+80
+00:02:58,239 --> 00:03:01,920
+place where you can test your
+
+81
+00:02:59,200 --> 00:03:03,519
+JavaScript. So, if I want to test my
+
+82
+00:03:01,920 --> 00:03:05,440
+JavaScript skills, if you think back to
+
+83
+00:03:03,519 --> 00:03:08,159
+the video where I talked about what
+
+84
+00:03:05,440 --> 00:03:10,319
+programming is, I showed you how to type
+
+85
+00:03:08,159 --> 00:03:11,680
+the hello world message in JavaScript.
+
+86
+00:03:10,319 --> 00:03:14,080
+I'm going to just type that line right
+
+87
+00:03:11,680 --> 00:03:17,080
+here, right now. And it's going to say
+
+88
+00:03:14,080 --> 00:03:17,080
+console.log
+
+89
+00:03:17,120 --> 00:03:22,640
+and then in parenthesis. I'm going to
+
+90
+00:03:18,720 --> 00:03:24,560
+type hello world. Close parenthes close
+
+91
+00:03:22,640 --> 00:03:26,959
+my quotation marks, close my
+
+92
+00:03:24,560 --> 00:03:28,480
+parenthesis, and hit enter. And you'll
+
+93
+00:03:26,959 --> 00:03:30,640
+see that as soon as I did this, it said
+
+94
+00:03:28,480 --> 00:03:32,400
+console.log log hello world and right
+
+95
+00:03:30,640 --> 00:03:34,799
+below where I typed that code, it wrote
+
+96
+00:03:32,400 --> 00:03:36,400
+the message hello world. If you were
+
+97
+00:03:34,799 --> 00:03:37,760
+following along, you have successfully
+
+98
+00:03:36,400 --> 00:03:41,120
+written your first JavaScript.
+
+99
+00:03:37,760 --> 00:03:42,879
+Congratulations. Um, so the main reasons
+
+100
+00:03:41,120 --> 00:03:44,400
+we use the console is to find our
+
+101
+00:03:42,879 --> 00:03:46,159
+JavaScript errors and to test
+
+102
+00:03:44,400 --> 00:03:48,239
+JavaScript.
+
+103
+00:03:46,159 --> 00:03:49,920
+On the sources tab, we're not going to
+
+104
+00:03:48,239 --> 00:03:51,280
+talk much about this. I want you to be
+
+105
+00:03:49,920 --> 00:03:53,280
+aware of it because when we get to
+
+106
+00:03:51,280 --> 00:03:55,360
+debugging, this is a tab you'll want to
+
+107
+00:03:53,280 --> 00:03:58,080
+look at. but it basically just shows you
+
+108
+00:03:55,360 --> 00:04:00,560
+all of the files that are associated
+
+109
+00:03:58,080 --> 00:04:02,400
+with your project. And we will use this
+
+110
+00:04:00,560 --> 00:04:04,959
+a lot more when we get to the debugging
+
+111
+00:04:02,400 --> 00:04:07,120
+section. Um, the last tab I want to show
+
+112
+00:04:04,959 --> 00:04:08,959
+you is the network tab. And for this
+
+113
+00:04:07,120 --> 00:04:11,840
+tab, I do need to expand the window a
+
+114
+00:04:08,959 --> 00:04:13,920
+bit. But when you reload your page, your
+
+115
+00:04:11,840 --> 00:04:15,599
+network tab will show you all of the
+
+116
+00:04:13,920 --> 00:04:17,919
+files that your computer requested to
+
+117
+00:04:15,599 --> 00:04:19,199
+run this page. So, if you are requesting
+
+118
+00:04:17,919 --> 00:04:20,880
+styles for the page, if you're
+
+119
+00:04:19,199 --> 00:04:22,960
+requesting images for the page, if
+
+120
+00:04:20,880 --> 00:04:25,600
+you're requesting videos for the page,
+
+121
+00:04:22,960 --> 00:04:30,240
+all of them will show up here.
+
+122
+00:04:25,600 --> 00:04:33,120
+Um, and the main thing to notice here is
+
+123
+00:04:30,240 --> 00:04:35,199
+the status codes. If you've taken a
+
+124
+00:04:33,120 --> 00:04:37,040
+course that talks about status codes,
+
+125
+00:04:35,199 --> 00:04:39,919
+fantastic. If you haven't taken a course
+
+126
+00:04:37,040 --> 00:04:41,600
+that talks about status codes, the thing
+
+127
+00:04:39,919 --> 00:04:44,240
+I want you to remember is red equals
+
+128
+00:04:41,600 --> 00:04:46,000
+bad. So the network tab is what I use
+
+129
+00:04:44,240 --> 00:04:48,240
+when something isn't loading properly on
+
+130
+00:04:46,000 --> 00:04:50,160
+my page. So if I've written a website
+
+131
+00:04:48,240 --> 00:04:51,680
+and then an image isn't loading, then
+
+132
+00:04:50,160 --> 00:04:53,280
+I'll come over here to the network tab
+
+133
+00:04:51,680 --> 00:04:55,360
+and make sure that it doesn't highlight
+
+134
+00:04:53,280 --> 00:04:56,880
+the image in red. If it's highlighted
+
+135
+00:04:55,360 --> 00:04:59,120
+the image in red, it means it cannot
+
+136
+00:04:56,880 --> 00:05:01,040
+find my image and I need to locate that
+
+137
+00:04:59,120 --> 00:05:04,560
+image so that it can show up on the
+
+138
+00:05:01,040 --> 00:05:06,240
+website. Um, so for the network tab, you
+
+139
+00:05:04,560 --> 00:05:08,320
+use it if something isn't loading on
+
+140
+00:05:06,240 --> 00:05:10,080
+your website. For the sources tab, you
+
+141
+00:05:08,320 --> 00:05:11,520
+use it for when you're debugging. For
+
+142
+00:05:10,080 --> 00:05:13,120
+the console tab, it's where you're going
+
+143
+00:05:11,520 --> 00:05:15,039
+to see all of your error messages and
+
+144
+00:05:13,120 --> 00:05:16,880
+it's where you can test your JavaScript.
+
+145
+00:05:15,039 --> 00:05:19,039
+And for the elements tab, it's when you
+
+146
+00:05:16,880 --> 00:05:20,560
+want to test your HTML and your CSS and
+
+147
+00:05:19,039 --> 00:05:22,320
+you want to understand how the page is
+
+148
+00:05:20,560 --> 00:05:23,680
+set up. I hope that helps you understand
+
+149
+00:05:22,320 --> 00:05:25,840
+the developer tools. Thanks for
+
+150
+00:05:23,680 --> 00:05:25,840
+watching.

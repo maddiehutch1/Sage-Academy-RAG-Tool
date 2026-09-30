@@ -1,0 +1,951 @@
+1
+00:00:00,080 --> 00:00:04,319
+Okay, so maybe you got a little lost in
+
+2
+00:00:02,000 --> 00:00:06,480
+that hairy code in the last video, and
+
+3
+00:00:04,319 --> 00:00:09,200
+that is totally okay and totally
+
+4
+00:00:06,480 --> 00:00:10,160
+expected at this point in time. Um, so
+
+5
+00:00:09,200 --> 00:00:11,840
+what I'm going to do is I'm going to
+
+6
+00:00:10,160 --> 00:00:13,840
+show you a co tool that will help you
+
+7
+00:00:11,840 --> 00:00:15,759
+walk through code so that you don't get
+
+8
+00:00:13,840 --> 00:00:17,359
+lost in the future. And if you do get
+
+9
+00:00:15,759 --> 00:00:18,880
+lost, you can use it to walk through and
+
+10
+00:00:17,359 --> 00:00:20,960
+help you understand it. It's also great
+
+11
+00:00:18,880 --> 00:00:24,160
+for finding bugs. Um, and that is the
+
+12
+00:00:20,960 --> 00:00:26,560
+Safari debugger. So I have here fired up
+
+13
+00:00:24,160 --> 00:00:30,080
+in live server in Safari, um, the app
+
+14
+00:00:26,560 --> 00:00:32,000
+that we just wrote. So, we'll put in uh
+
+15
+00:00:30,080 --> 00:00:35,520
+four A's. And you can see it gave us our
+
+16
+00:00:32,000 --> 00:00:38,160
+GPA and the message. So, if you want to
+
+17
+00:00:35,520 --> 00:00:41,600
+use the debugging tool, um you'll hit
+
+18
+00:00:38,160 --> 00:00:43,360
+command option I and that will pop up
+
+19
+00:00:41,600 --> 00:00:45,840
+this little window at the bottom, which
+
+20
+00:00:43,360 --> 00:00:47,280
+is the Safari developer tools. The tab
+
+21
+00:00:45,840 --> 00:00:49,120
+you want to you're going to want to
+
+22
+00:00:47,280 --> 00:00:50,800
+click on is the sources tab. If you
+
+23
+00:00:49,120 --> 00:00:52,320
+click on that, you'll see some very
+
+24
+00:00:50,800 --> 00:00:54,559
+familiar code, at least hopefully,
+
+25
+00:00:52,320 --> 00:00:56,160
+because this is the code you just wrote.
+
+26
+00:00:54,559 --> 00:00:58,960
+Um,
+
+27
+00:00:56,160 --> 00:01:01,840
+so what I'm going to do is I am going to
+
+28
+00:00:58,960 --> 00:01:03,680
+click on line 16. When I click on line
+
+29
+00:01:01,840 --> 00:01:06,159
+16, you'll notice it puts this gray
+
+30
+00:01:03,680 --> 00:01:08,159
+highlight. What that is is that is a
+
+31
+00:01:06,159 --> 00:01:10,080
+break point. A break point says pause
+
+32
+00:01:08,159 --> 00:01:11,520
+the code execution and give me control
+
+33
+00:01:10,080 --> 00:01:13,680
+because I want to control how this
+
+34
+00:01:11,520 --> 00:01:14,880
+executes and I want to go line by line.
+
+35
+00:01:13,680 --> 00:01:16,560
+So what it's going to do is it's going
+
+36
+00:01:14,880 --> 00:01:19,439
+to run the code all the way up till line
+
+37
+00:01:16,560 --> 00:01:22,080
+16. Then it's going to pause and then
+
+38
+00:01:19,439 --> 00:01:23,840
+it's going to let you take over. So I'm
+
+39
+00:01:22,080 --> 00:01:26,080
+going to reload this page to trigger the
+
+40
+00:01:23,840 --> 00:01:29,360
+code. So the code is running and it has
+
+41
+00:01:26,080 --> 00:01:33,280
+paused. Um
+
+42
+00:01:29,360 --> 00:01:36,560
+and so we can see here that counter is
+
+43
+00:01:33,280 --> 00:01:39,040
+going to be set to zero. It over here
+
+44
+00:01:36,560 --> 00:01:40,720
+there are the controls for the debugger.
+
+45
+00:01:39,040 --> 00:01:42,240
+Our code has paused. Nothing is
+
+46
+00:01:40,720 --> 00:01:44,560
+happening. You'll notice our page is
+
+47
+00:01:42,240 --> 00:01:47,280
+partially loaded but not fully loaded.
+
+48
+00:01:44,560 --> 00:01:49,920
+That's because we've paused everything.
+
+49
+00:01:47,280 --> 00:01:51,600
+So if we run this line, the highlighted
+
+50
+00:01:49,920 --> 00:01:54,320
+portion will run next. You'll notice
+
+51
+00:01:51,600 --> 00:01:55,920
+this let counter equals zero is darkly
+
+52
+00:01:54,320 --> 00:01:57,200
+highlighted. That's because that is the
+
+53
+00:01:55,920 --> 00:01:58,719
+portion that's going to run when we hit
+
+54
+00:01:57,200 --> 00:02:00,640
+the next button. So there are two next
+
+55
+00:01:58,719 --> 00:02:02,640
+buttons. There's the step over button
+
+56
+00:02:00,640 --> 00:02:05,600
+and the step into button. I typically
+
+57
+00:02:02,640 --> 00:02:07,200
+use the step into button. Um and when we
+
+58
+00:02:05,600 --> 00:02:08,879
+talk about functions, I'll explain the
+
+59
+00:02:07,200 --> 00:02:11,680
+difference later, but for now just click
+
+60
+00:02:08,879 --> 00:02:14,800
+the step into button or click F7 or
+
+61
+00:02:11,680 --> 00:02:16,720
+command semicolon. So that will run the
+
+62
+00:02:14,800 --> 00:02:18,239
+very next line of code. So we've run
+
+63
+00:02:16,720 --> 00:02:19,680
+that line of code and now over here we
+
+64
+00:02:18,239 --> 00:02:23,040
+can see we have a new variable called
+
+65
+00:02:19,680 --> 00:02:26,480
+counter which has a value of zero
+
+66
+00:02:23,040 --> 00:02:28,160
+if we hit the step into button again. So
+
+67
+00:02:26,480 --> 00:02:30,239
+right now it's going to see if zero is
+
+68
+00:02:28,160 --> 00:02:32,480
+less than four. It is. So we should
+
+69
+00:02:30,239 --> 00:02:34,879
+expect this loop to start. So we'll hit
+
+70
+00:02:32,480 --> 00:02:36,640
+next. And now we're in the loop. If
+
+71
+00:02:34,879 --> 00:02:38,800
+counter if we hover over it counter is
+
+72
+00:02:36,640 --> 00:02:40,239
+zero. Counter + one would be one. So we
+
+73
+00:02:38,800 --> 00:02:42,800
+should expect this prompt to say what is
+
+74
+00:02:40,239 --> 00:02:44,959
+your letter grade for class one. If we
+
+75
+00:02:42,800 --> 00:02:46,080
+hit next, it runs this line of code and
+
+76
+00:02:44,959 --> 00:02:47,840
+says, "What is your letter grade for
+
+77
+00:02:46,080 --> 00:02:50,959
+class one?" We're going to put a B+ for
+
+78
+00:02:47,840 --> 00:02:52,800
+now. So, we hit okay. And now, if we
+
+79
+00:02:50,959 --> 00:02:54,959
+hover over letter grade, we can see that
+
+80
+00:02:52,800 --> 00:02:57,680
+letter grade is B+. We have another
+
+81
+00:02:54,959 --> 00:02:59,360
+variable called GPA. And it's undefined
+
+82
+00:02:57,680 --> 00:03:02,800
+because we haven't run this line of code
+
+83
+00:02:59,360 --> 00:03:05,840
+yet. When we run line 19, GPA will go
+
+84
+00:03:02,800 --> 00:03:08,159
+from being undefined to being zero. So,
+
+85
+00:03:05,840 --> 00:03:10,640
+we'll hit next. And now we have a GPA of
+
+86
+00:03:08,159 --> 00:03:13,360
+zero and a letter grade of B+. Now we've
+
+87
+00:03:10,640 --> 00:03:17,120
+come to our if statement.
+
+88
+00:03:13,360 --> 00:03:18,959
+We're going to see if B+ is equal to A.
+
+89
+00:03:17,120 --> 00:03:21,040
+Because it's not, we should expect it to
+
+90
+00:03:18,959 --> 00:03:24,080
+jump to line 24 and check if it's equal
+
+91
+00:03:21,040 --> 00:03:26,080
+to A minus. If we hit next, sure enough,
+
+92
+00:03:24,080 --> 00:03:29,840
+there it is. And now we're checking if
+
+93
+00:03:26,080 --> 00:03:32,239
+B+ is equal to A minus. It's not. So, we
+
+94
+00:03:29,840 --> 00:03:35,200
+should expect it to skip over line 25
+
+95
+00:03:32,239 --> 00:03:38,799
+and 26 and jump to line 27 to see if B+
+
+96
+00:03:35,200 --> 00:03:41,360
+is equal to B+. If we hit next, it does.
+
+97
+00:03:38,799 --> 00:03:45,120
+Now we're seeing if B+ is B+. It is. So
+
+98
+00:03:41,360 --> 00:03:48,239
+we should expect it to enter line 28 and
+
+99
+00:03:45,120 --> 00:03:50,239
+compare and then execute that line. And
+
+100
+00:03:48,239 --> 00:03:53,200
+then it should finish that. Hit this
+
+101
+00:03:50,239 --> 00:03:55,440
+closing curly brace on line 29 and jump
+
+102
+00:03:53,200 --> 00:03:58,319
+all the way down
+
+103
+00:03:55,440 --> 00:03:59,519
+um to line 57 at the end of the if
+
+104
+00:03:58,319 --> 00:04:01,280
+statement because this is where the if
+
+105
+00:03:59,519 --> 00:04:04,080
+statement ends. So we're going to hit
+
+106
+00:04:01,280 --> 00:04:07,519
+that next button. We'll hit next. Sure
+
+107
+00:04:04,080 --> 00:04:09,920
+enough, B+ is the same as B+. So, we're
+
+108
+00:04:07,519 --> 00:04:12,720
+going to set GPA to 3.3. Right now, GPA
+
+109
+00:04:09,920 --> 00:04:15,360
+is zero. We hit the next button. Now,
+
+110
+00:04:12,720 --> 00:04:17,120
+our GPA is 3.3. And then it jumped to
+
+111
+00:04:15,360 --> 00:04:19,840
+the end of the if statement. Our total
+
+112
+00:04:17,120 --> 00:04:24,960
+GPA, we started off at zero. But we're
+
+113
+00:04:19,840 --> 00:04:27,919
+going to say set it equal to zero plus
+
+114
+00:04:24,960 --> 00:04:29,759
+whatever is in GPA. And so, if we run
+
+115
+00:04:27,919 --> 00:04:31,840
+that line
+
+116
+00:04:29,759 --> 00:04:33,520
+now, if we hover over total GPA, it's
+
+117
+00:04:31,840 --> 00:04:35,280
+3.3.
+
+118
+00:04:33,520 --> 00:04:38,639
+And you can see the highlighted line is
+
+119
+00:04:35,280 --> 00:04:40,560
+this counter plus+. So our counter
+
+120
+00:04:38,639 --> 00:04:42,880
+variable is zero. I told you plus+
+
+121
+00:04:40,560 --> 00:04:44,639
+increments. So if we run this next line
+
+122
+00:04:42,880 --> 00:04:46,720
+of code, we should see that our counter
+
+123
+00:04:44,639 --> 00:04:49,680
+goes from 0 to 1. So we'll hit the next
+
+124
+00:04:46,720 --> 00:04:51,840
+button. And so now our counter is 1. Now
+
+125
+00:04:49,680 --> 00:04:54,160
+we're checking if 1 is less than four.
+
+126
+00:04:51,840 --> 00:04:56,960
+It is. So we're going to start the loop.
+
+127
+00:04:54,160 --> 00:04:58,880
+And then 1 + 1 is two. So we should
+
+128
+00:04:56,960 --> 00:05:01,840
+expect to see what is your letter grade
+
+129
+00:04:58,880 --> 00:05:03,120
+for class 2. If we run that, we get a
+
+130
+00:05:01,840 --> 00:05:05,680
+prompt. What is your letter grade for
+
+131
+00:05:03,120 --> 00:05:08,320
+class 2? And I will say A. So you can
+
+132
+00:05:05,680 --> 00:05:11,280
+see how quickly an if statement can run.
+
+133
+00:05:08,320 --> 00:05:14,080
+And our letter grade is A. Our GPA is
+
+134
+00:05:11,280 --> 00:05:17,600
+undefined. If we hit next, now our GPA
+
+135
+00:05:14,080 --> 00:05:20,720
+is zero. And don't mix up GPA with total
+
+136
+00:05:17,600 --> 00:05:23,840
+GPA. Our total GPA is 3.3.
+
+137
+00:05:20,720 --> 00:05:26,639
+So if we hit the next button, um, we get
+
+138
+00:05:23,840 --> 00:05:27,919
+that our GPA is 4.0. And it drops
+
+139
+00:05:26,639 --> 00:05:29,120
+immediately to the end of the if
+
+140
+00:05:27,919 --> 00:05:30,639
+statement. It didn't even check any of
+
+141
+00:05:29,120 --> 00:05:32,400
+the other conditions cuz as soon as it
+
+142
+00:05:30,639 --> 00:05:34,400
+found the condition that was true, it
+
+143
+00:05:32,400 --> 00:05:37,199
+did that and then skipped to the end. So
+
+144
+00:05:34,400 --> 00:05:39,440
+now our total GPA is 3.3 and we're going
+
+145
+00:05:37,199 --> 00:05:43,680
+to add on an A here. So it should be
+
+146
+00:05:39,440 --> 00:05:46,960
+like uh 7.3. If we hit next, our total
+
+147
+00:05:43,680 --> 00:05:49,440
+GPA is 7.3. At this point, we've run our
+
+148
+00:05:46,960 --> 00:05:51,280
+loop twice. We've evaluated it and we
+
+149
+00:05:49,440 --> 00:05:52,560
+know that this loop works. So maybe
+
+150
+00:05:51,280 --> 00:05:53,759
+you're done testing it and there's
+
+151
+00:05:52,560 --> 00:05:55,840
+another portion of the code that you
+
+152
+00:05:53,759 --> 00:05:57,840
+want to test. Like for example, this if
+
+153
+00:05:55,840 --> 00:05:59,600
+statement we want to and maybe this
+
+154
+00:05:57,840 --> 00:06:01,280
+total GPA calculation, we want to make
+
+155
+00:05:59,600 --> 00:06:02,800
+sure that actually works. So what you
+
+156
+00:06:01,280 --> 00:06:05,600
+can do is you can add a breakpoint to
+
+157
+00:06:02,800 --> 00:06:09,039
+line 61 and come up and remove the
+
+158
+00:06:05,600 --> 00:06:12,479
+breakpoint by clicking on it on line 16.
+
+159
+00:06:09,039 --> 00:06:14,000
+Now you can hit this uh it looks like a
+
+160
+00:06:12,479 --> 00:06:15,680
+mix between the pause and the play
+
+161
+00:06:14,000 --> 00:06:17,680
+button and that will continue script
+
+162
+00:06:15,680 --> 00:06:19,440
+execution and it will run all the way up
+
+163
+00:06:17,680 --> 00:06:21,199
+until it hits your next breakpoint. So,
+
+164
+00:06:19,440 --> 00:06:22,639
+we'll continue to the next one. And it
+
+165
+00:06:21,199 --> 00:06:27,919
+says, "What is your letter grade for
+
+166
+00:06:22,639 --> 00:06:29,759
+class three?" We'll put in a C minus.
+
+167
+00:06:27,919 --> 00:06:32,160
+And then, what is your letter grade for
+
+168
+00:06:29,759 --> 00:06:33,680
+class 4? We'll give ourselves another A.
+
+169
+00:06:32,160 --> 00:06:36,319
+But you'll notice it didn't pause
+
+170
+00:06:33,680 --> 00:06:38,479
+between loops. It just immediately went
+
+171
+00:06:36,319 --> 00:06:41,120
+through the code twice without any
+
+172
+00:06:38,479 --> 00:06:43,360
+pause. Now, it has paused again because
+
+173
+00:06:41,120 --> 00:06:46,160
+it's hit our break point on line 61. Our
+
+174
+00:06:43,360 --> 00:06:48,960
+total GPA is 13, but that's not actually
+
+175
+00:06:46,160 --> 00:06:51,360
+our GPA because a grade point average um
+
+176
+00:06:48,960 --> 00:06:52,960
+is your grade points divided by the
+
+177
+00:06:51,360 --> 00:06:55,039
+total number of classes you've taken to
+
+178
+00:06:52,960 --> 00:06:56,639
+get an average. And so we've taken four
+
+179
+00:06:55,039 --> 00:06:59,280
+classes, so we're going to take 13 and
+
+180
+00:06:56,639 --> 00:07:02,720
+divide it by four. We'll hit next. And
+
+181
+00:06:59,280 --> 00:07:04,720
+our GPA is 3.25.
+
+182
+00:07:02,720 --> 00:07:06,160
+So now I'm going to show you something
+
+183
+00:07:04,720 --> 00:07:08,160
+you can do with the debugger and it's
+
+184
+00:07:06,160 --> 00:07:10,560
+called forcing a condition. So right
+
+185
+00:07:08,160 --> 00:07:12,400
+here, maybe we want to test this if
+
+186
+00:07:10,560 --> 00:07:15,840
+statement and we really want to test
+
+187
+00:07:12,400 --> 00:07:19,280
+what happens when we pass in exactly 3.3
+
+188
+00:07:15,840 --> 00:07:20,720
+is the GPA at um
+
+189
+00:07:19,280 --> 00:07:23,039
+and maybe you don't want to figure out
+
+190
+00:07:20,720 --> 00:07:25,840
+the letter grades that would be
+
+191
+00:07:23,039 --> 00:07:27,599
+necessary to get a 3.3. Um so what you
+
+192
+00:07:25,840 --> 00:07:30,960
+can do is called forcing a condition.
+
+193
+00:07:27,599 --> 00:07:32,400
+Right now our GPA evaluates to 3.25 and
+
+194
+00:07:30,960 --> 00:07:33,440
+that's not going to work for us. So,
+
+195
+00:07:32,400 --> 00:07:34,960
+what we're going to do is we're going to
+
+196
+00:07:33,440 --> 00:07:38,479
+click over to the console tab and we're
+
+197
+00:07:34,960 --> 00:07:41,360
+going to say total GPA equals 3.3 and
+
+198
+00:07:38,479 --> 00:07:43,199
+then we'll hit enter. As soon as we have
+
+199
+00:07:41,360 --> 00:07:45,599
+done that, we'll go over to our sources
+
+200
+00:07:43,199 --> 00:07:47,759
+tab and hover over GPA. And now, even
+
+201
+00:07:45,599 --> 00:07:49,680
+though it was 3.25, that's what all of
+
+202
+00:07:47,759 --> 00:07:51,680
+our calculations came out to, we've
+
+203
+00:07:49,680 --> 00:07:53,360
+forced it to be something else. So, now
+
+204
+00:07:51,680 --> 00:07:55,039
+we can check if this if statement works
+
+205
+00:07:53,360 --> 00:07:57,520
+the way it's supposed to. If you have a
+
+206
+00:07:55,039 --> 00:07:59,680
+GPA of exactly 3.3, then you should get
+
+207
+00:07:57,520 --> 00:08:02,560
+this first message. So, now we've forced
+
+208
+00:07:59,680 --> 00:08:05,280
+the GPA to be what we want it to be. Um,
+
+209
+00:08:02,560 --> 00:08:08,560
+so if total GPA 3.3 is greater than or
+
+210
+00:08:05,280 --> 00:08:10,160
+equal to 3.3, 3.3 and 3.3 are equal, so
+
+211
+00:08:08,560 --> 00:08:12,639
+we should expect this next alert
+
+212
+00:08:10,160 --> 00:08:14,160
+function to run. If we hit the next
+
+213
+00:08:12,639 --> 00:08:15,680
+button, sure enough, it drops to that
+
+214
+00:08:14,160 --> 00:08:18,000
+alert statement. And if we hit the next
+
+215
+00:08:15,680 --> 00:08:19,440
+button, it says, "Your GPA is 3.3. Great
+
+216
+00:08:18,000 --> 00:08:21,039
+job. Your consistent effort is paying
+
+217
+00:08:19,440 --> 00:08:24,479
+off." And then the whole rest of that
+
+218
+00:08:21,039 --> 00:08:26,160
+message. So using the console, we can
+
+219
+00:08:24,479 --> 00:08:27,840
+force a certain condition to be met so
+
+220
+00:08:26,160 --> 00:08:29,840
+that we can test specific portions of
+
+221
+00:08:27,840 --> 00:08:32,880
+our code even if the prior calculations
+
+222
+00:08:29,840 --> 00:08:34,479
+didn't allow it. So, we'll hit close and
+
+223
+00:08:32,880 --> 00:08:35,839
+then it drops to the end of the script
+
+224
+00:08:34,479 --> 00:08:37,919
+tag. If you were just running this
+
+225
+00:08:35,839 --> 00:08:39,680
+normally um and not running it using
+
+226
+00:08:37,919 --> 00:08:41,440
+live server, then you might not have
+
+227
+00:08:39,680 --> 00:08:42,880
+this extra code because we're running it
+
+228
+00:08:41,440 --> 00:08:44,720
+using live server. There's some extra
+
+229
+00:08:42,880 --> 00:08:46,399
+code here. It's just JavaScript to make
+
+230
+00:08:44,720 --> 00:08:48,800
+it so that your window reloads if
+
+231
+00:08:46,399 --> 00:08:51,680
+something changes, things like that. And
+
+232
+00:08:48,800 --> 00:08:54,080
+so, it's just their extra code. You can
+
+233
+00:08:51,680 --> 00:08:55,600
+totally ignore it. Um but in order for
+
+234
+00:08:54,080 --> 00:08:57,040
+your page to fully load, you'll see it's
+
+235
+00:08:55,600 --> 00:08:58,560
+still in the partial loading. You'll
+
+236
+00:08:57,040 --> 00:09:01,760
+need to hit this continue button one
+
+237
+00:08:58,560 --> 00:09:04,160
+more time and then boom, your page is
+
+238
+00:09:01,760 --> 00:09:04,160
+loaded.

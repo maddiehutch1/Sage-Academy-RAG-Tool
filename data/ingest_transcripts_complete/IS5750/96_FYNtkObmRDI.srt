@@ -1,0 +1,279 @@
+1
+00:00:00,080 --> 00:00:05,120
+Well, we now have a bit of a dilemma on
+
+2
+00:00:02,000 --> 00:00:07,839
+our hands. Um, because if we do this, we
+
+3
+00:00:05,120 --> 00:00:09,360
+aren't actually getting a new array with
+
+4
+00:00:07,839 --> 00:00:12,559
+the same information. We're just
+
+5
+00:00:09,360 --> 00:00:14,880
+pointing to the exact same array. So now
+
+6
+00:00:12,559 --> 00:00:16,640
+what we need to do is basically we would
+
+7
+00:00:14,880 --> 00:00:18,400
+need to create a new array. So rather
+
+8
+00:00:16,640 --> 00:00:21,680
+than doing this line, we'd have to say
+
+9
+00:00:18,400 --> 00:00:25,439
+let B equal a new array. And then I'm
+
+10
+00:00:21,680 --> 00:00:26,800
+going to manually copy in 1 2 3. But you
+
+11
+00:00:25,439 --> 00:00:28,320
+probably can see pretty quickly this
+
+12
+00:00:26,800 --> 00:00:30,960
+wouldn't really work if I was running
+
+13
+00:00:28,320 --> 00:00:34,559
+the program because what's the point of
+
+14
+00:00:30,960 --> 00:00:36,160
+um setting it equal to that if
+
+15
+00:00:34,559 --> 00:00:38,960
+um we're going to have to manually type
+
+16
+00:00:36,160 --> 00:00:41,520
+it out by hand. So well maybe you
+
+17
+00:00:38,960 --> 00:00:44,640
+thought of another way to do it. Maybe
+
+18
+00:00:41,520 --> 00:00:47,200
+you said let's create a new array called
+
+19
+00:00:44,640 --> 00:00:50,719
+B. We'll set it equal to an empty array
+
+20
+00:00:47,200 --> 00:00:56,160
+and then we'll loop through everything
+
+21
+00:00:50,719 --> 00:01:00,480
+in A. So we could say for let item of A
+
+22
+00:00:56,160 --> 00:01:02,800
+and then we would say B do append or
+
+23
+00:01:00,480 --> 00:01:06,000
+sorry B.push
+
+24
+00:01:02,800 --> 00:01:08,240
+item and then there now we will have
+
+25
+00:01:06,000 --> 00:01:10,799
+taken every item out of A and pushed it
+
+26
+00:01:08,240 --> 00:01:12,240
+into B. And hopefully you think that
+
+27
+00:01:10,799 --> 00:01:14,799
+sounds icky to have to write that out
+
+28
+00:01:12,240 --> 00:01:17,680
+just to copy an array because it is. So
+
+29
+00:01:14,799 --> 00:01:20,640
+I've got good news for you. Um, the real
+
+30
+00:01:17,680 --> 00:01:22,479
+solution is very similar to what we just
+
+31
+00:01:20,640 --> 00:01:24,479
+did here where I said, "Okay, let's
+
+32
+00:01:22,479 --> 00:01:27,040
+create a new array and then put in one,
+
+33
+00:01:24,479 --> 00:01:29,360
+two, three. What if there are 100 items?
+
+34
+00:01:27,040 --> 00:01:31,200
+That's a lot to type." And we may not
+
+35
+00:01:29,360 --> 00:01:33,520
+know how many items are in the array.
+
+36
+00:01:31,200 --> 00:01:35,280
+What we could do is we could do what's
+
+37
+00:01:33,520 --> 00:01:36,560
+called spreading the array, which means
+
+38
+00:01:35,280 --> 00:01:38,159
+take every item out of the array and
+
+39
+00:01:36,560 --> 00:01:40,960
+just spread it out and separate them
+
+40
+00:01:38,159 --> 00:01:43,439
+with commas. So here in B, we can say,
+
+41
+00:01:40,960 --> 00:01:46,720
+let's take A and spread it out. So the
+
+42
+00:01:43,439 --> 00:01:48,159
+syntax for that is you do dot dot dot
+
+43
+00:01:46,720 --> 00:01:50,799
+and then the array you want to spread
+
+44
+00:01:48,159 --> 00:01:53,280
+out. What this does is it says create a
+
+45
+00:01:50,799 --> 00:01:56,560
+new array. Inside of that array, I want
+
+46
+00:01:53,280 --> 00:02:00,880
+you to take every item out of A and copy
+
+47
+00:01:56,560 --> 00:02:03,040
+it into B. So now what this should do is
+
+48
+00:02:00,880 --> 00:02:04,399
+now B is pointing to a different array
+
+49
+00:02:03,040 --> 00:02:06,479
+because we just made a new array here
+
+50
+00:02:04,399 --> 00:02:08,640
+using the square braces. So it's not
+
+51
+00:02:06,479 --> 00:02:10,959
+pointing to this any one anymore. Which
+
+52
+00:02:08,640 --> 00:02:13,440
+means when we make a change here, it
+
+53
+00:02:10,959 --> 00:02:15,440
+doesn't change B because we copied these
+
+54
+00:02:13,440 --> 00:02:17,360
+items before we made the change. So if
+
+55
+00:02:15,440 --> 00:02:19,920
+we save this and go over to our running
+
+56
+00:02:17,360 --> 00:02:22,319
+code, we get A was originally 1 2 3.
+
+57
+00:02:19,920 --> 00:02:27,040
+Then we get B was originally 1 2 3. A is
+
+58
+00:02:22,319 --> 00:02:30,080
+now high 23. B is still 1 2 3. So this
+
+59
+00:02:27,040 --> 00:02:33,840
+is how you copy information out of an
+
+60
+00:02:30,080 --> 00:02:36,000
+array into a new copy of an array. So
+
+61
+00:02:33,840 --> 00:02:38,239
+you create your array. What is A
+
+62
+00:02:36,000 --> 00:02:39,519
+holding? A is not holding the array.
+
+63
+00:02:38,239 --> 00:02:42,319
+It's holding information about where
+
+64
+00:02:39,519 --> 00:02:45,120
+that array is located. So when you make
+
+65
+00:02:42,319 --> 00:02:47,920
+B, you say, go to where A is located,
+
+66
+00:02:45,120 --> 00:02:50,640
+take out all of the items where it tells
+
+67
+00:02:47,920 --> 00:02:52,400
+you, and put them into a new array that
+
+68
+00:02:50,640 --> 00:02:54,319
+we're going to store in B. And now we've
+
+69
+00:02:52,400 --> 00:02:58,800
+successfully actually made a second
+
+70
+00:02:54,319 --> 00:02:58,800
+array that holds the exact same

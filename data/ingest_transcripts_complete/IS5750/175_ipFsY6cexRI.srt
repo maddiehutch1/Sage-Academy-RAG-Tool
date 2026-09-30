@@ -1,0 +1,87 @@
+1
+00:00:00,080 --> 00:00:03,679
+At this point, you can probably tell
+
+2
+00:00:01,760 --> 00:00:05,600
+which one I prefer when in my own
+
+3
+00:00:03,679 --> 00:00:07,359
+personal coding. That being said, you
+
+4
+00:00:05,600 --> 00:00:09,040
+are going to run into all of them are
+
+5
+00:00:07,359 --> 00:00:11,040
+viable ways of handling asynchronous
+
+6
+00:00:09,040 --> 00:00:12,719
+code. Um, the most common ones that
+
+7
+00:00:11,040 --> 00:00:15,360
+you're going to see are async and awaits
+
+8
+00:00:12,719 --> 00:00:16,960
+and the then um the then chain that I
+
+9
+00:00:15,360 --> 00:00:20,880
+showed you. Um, in fact, they call
+
+10
+00:00:16,960 --> 00:00:22,560
+promises thenable objects. Um, but
+
+11
+00:00:20,880 --> 00:00:24,080
+because both of those are valid, I will
+
+12
+00:00:22,560 --> 00:00:26,720
+continue to show both throughout the
+
+13
+00:00:24,080 --> 00:00:28,000
+rest of this. Um, and we'll pick up from
+
+14
+00:00:26,720 --> 00:00:30,160
+there. But the next thing we need to
+
+15
+00:00:28,000 --> 00:00:32,239
+talk about is rejection. How do you
+
+16
+00:00:30,160 --> 00:00:34,160
+handle rejection? If you remember when I
+
+17
+00:00:32,239 --> 00:00:35,600
+gave you the broccoli in the promise and
+
+18
+00:00:34,160 --> 00:00:36,880
+when I explained what a promise was, I
+
+19
+00:00:35,600 --> 00:00:38,559
+gave you broccoli instead of ice cream
+
+20
+00:00:36,880 --> 00:00:39,920
+and you rejected it. We need to figure
+
+21
+00:00:38,559 --> 00:00:42,239
+out how to handle that with our
+
+22
+00:00:39,920 --> 00:00:42,239
+promises.

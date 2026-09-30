@@ -1,0 +1,171 @@
+1
+00:00:00,400 --> 00:00:04,400
+All right, we're going to speedrun this
+
+2
+00:00:02,080 --> 00:00:06,080
+a little bit. So, I'm going to show you
+
+3
+00:00:04,400 --> 00:00:08,240
+how to find the minimum, the maximum,
+
+4
+00:00:06,080 --> 00:00:10,080
+and the absolute value. So, all of these
+
+5
+00:00:08,240 --> 00:00:12,800
+are in the math library. So, just like
+
+6
+00:00:10,080 --> 00:00:14,639
+we accessed um the math library in the
+
+7
+00:00:12,800 --> 00:00:20,640
+last video, we'll access in this video
+
+8
+00:00:14,639 --> 00:00:22,080
+by doing capital M atth math dot. And in
+
+9
+00:00:20,640 --> 00:00:24,800
+this case, to find the minimum, you do
+
+10
+00:00:22,080 --> 00:00:26,400
+math.min. Um you'll notice it's that
+
+11
+00:00:24,800 --> 00:00:29,519
+cube shape again. So, that means we're
+
+12
+00:00:26,400 --> 00:00:30,960
+going to use parenthesis. Um, and now it
+
+13
+00:00:29,519 --> 00:00:35,920
+says that we need to give it a bunch of
+
+14
+00:00:30,960 --> 00:00:41,000
+values. So if I type 5 47 91
+
+15
+00:00:35,920 --> 00:00:41,000
+and I alert that,
+
+16
+00:00:41,280 --> 00:00:46,079
+we save it and we go to our web browser.
+
+17
+00:00:44,160 --> 00:00:47,680
+It says that the minimum value in that
+
+18
+00:00:46,079 --> 00:00:53,039
+list of numbers that I gave it was a
+
+19
+00:00:47,680 --> 00:00:56,239
+one. Um, if we change this to math.max
+
+20
+00:00:53,039 --> 00:01:00,000
+and save it and go back over, maximum
+
+21
+00:00:56,239 --> 00:01:03,760
+number I typed was nine. Um,
+
+22
+00:01:00,000 --> 00:01:05,680
+so that's how min and max work. Um,
+
+23
+00:01:03,760 --> 00:01:07,040
+we'll also alert an absolute value.
+
+24
+00:01:05,680 --> 00:01:09,360
+Absolute value is just something's
+
+25
+00:01:07,040 --> 00:01:12,159
+distance from zero. So like -2 is two
+
+26
+00:01:09,360 --> 00:01:16,400
+steps from zero. So that's the absolute
+
+27
+00:01:12,159 --> 00:01:19,360
+value of -2 is two. So um, we'll take
+
+28
+00:01:16,400 --> 00:01:21,600
+math.abs ABS is how you do absolute
+
+29
+00:01:19,360 --> 00:01:23,040
+value. If you put parenthesis, it needs
+
+30
+00:01:21,600 --> 00:01:25,759
+a number. So, I'm going to give it a
+
+31
+00:01:23,040 --> 00:01:29,360
+negative -2 and I'm going to alert that.
+
+32
+00:01:25,759 --> 00:01:31,840
+We save it. We come over and we reload
+
+33
+00:01:29,360 --> 00:01:35,439
+our page. We get two exactly like we
+
+34
+00:01:31,840 --> 00:01:37,920
+expected. So, um if you are wondering
+
+35
+00:01:35,439 --> 00:01:39,920
+about how to use math functions, um I'd
+
+36
+00:01:37,920 --> 00:01:41,520
+recommend again checking W3 Schools. It
+
+37
+00:01:39,920 --> 00:01:44,000
+has a whole outline of a whole bunch of
+
+38
+00:01:41,520 --> 00:01:45,600
+different math functions and information
+
+39
+00:01:44,000 --> 00:01:47,280
+on how to use them. These are the ones
+
+40
+00:01:45,600 --> 00:01:48,479
+we'll use in this course. Um, and then
+
+41
+00:01:47,280 --> 00:01:49,759
+the one that I'll cover in the next
+
+42
+00:01:48,479 --> 00:01:52,000
+video, which is how to generate a random
+
+43
+00:01:49,759 --> 00:01:52,000
+nublet.

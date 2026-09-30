@@ -1,0 +1,691 @@
+1
+00:00:00,160 --> 00:00:04,640
+Okay. Well, let's give this a shot. So,
+
+2
+00:00:03,040 --> 00:00:06,879
+um, important thing to know, as the
+
+3
+00:00:04,640 --> 00:00:10,160
+naming convention goes, it goes for the
+
+4
+00:00:06,879 --> 00:00:13,040
+dog API, it's dog-b. For the advice API,
+
+5
+00:00:10,160 --> 00:00:17,760
+it's advice-BT. For the joke API, it's
+
+6
+00:00:13,040 --> 00:00:20,480
+joke-b or output um or image in the case
+
+7
+00:00:17,760 --> 00:00:22,320
+of the dog. So, let's add those event
+
+8
+00:00:20,480 --> 00:00:24,960
+listeners first. So, we'll say
+
+9
+00:00:22,320 --> 00:00:28,920
+document.query selector and we'll look
+
+10
+00:00:24,960 --> 00:00:28,920
+for dog-ashbutton.
+
+11
+00:00:28,960 --> 00:00:32,800
+and we'll add an event listener. We're
+
+12
+00:00:30,960 --> 00:00:34,160
+going to add a click event listener. And
+
+13
+00:00:32,800 --> 00:00:36,880
+what do we want to do? We want to call
+
+14
+00:00:34,160 --> 00:00:38,399
+the get dog function. That's when they
+
+15
+00:00:36,880 --> 00:00:43,680
+click it. And I'm going to duplicate
+
+16
+00:00:38,399 --> 00:00:49,520
+that. So here um when they do the advice
+
+17
+00:00:43,680 --> 00:00:53,920
+button, I want to call get advice.
+
+18
+00:00:49,520 --> 00:00:57,600
+And here when they do the joke button,
+
+19
+00:00:53,920 --> 00:00:59,600
+I want to call get joke. Now I'm going
+
+20
+00:00:57,600 --> 00:01:02,000
+to write them. The first one I'm going
+
+21
+00:00:59,600 --> 00:01:04,799
+to write is get dog. And I'm going to do
+
+22
+00:01:02,000 --> 00:01:06,560
+this first using the then chain and then
+
+23
+00:01:04,799 --> 00:01:08,159
+everything else I'm going to do async a
+
+24
+00:01:06,560 --> 00:01:09,920
+weight because that's the one I prefer.
+
+25
+00:01:08,159 --> 00:01:11,920
+But just so that I can demonstrate both,
+
+26
+00:01:09,920 --> 00:01:13,439
+we're going to do both here. So the
+
+27
+00:01:11,920 --> 00:01:15,680
+first thing we need to do is we need to
+
+28
+00:01:13,439 --> 00:01:20,320
+write get dog. So we'll say const get
+
+29
+00:01:15,680 --> 00:01:21,759
+dog equals a function.
+
+30
+00:01:20,320 --> 00:01:23,680
+And inside of the function we need to
+
+31
+00:01:21,759 --> 00:01:25,439
+call fetch. And what are we fetching?
+
+32
+00:01:23,680 --> 00:01:27,360
+Well, let's check the readme. Here in
+
+33
+00:01:25,439 --> 00:01:29,920
+the readme, it's got this link to the
+
+34
+00:01:27,360 --> 00:01:31,759
+dog image. And actually, if we click it,
+
+35
+00:01:29,920 --> 00:01:33,280
+we can see what gets returned. And you
+
+36
+00:01:31,759 --> 00:01:36,400
+can see that it is an object that has
+
+37
+00:01:33,280 --> 00:01:39,920
+the keyword message. And all of that in
+
+38
+00:01:36,400 --> 00:01:41,600
+the message has um the URL to the image.
+
+39
+00:01:39,920 --> 00:01:43,520
+So if we want to set the source to that,
+
+40
+00:01:41,600 --> 00:01:47,759
+then we just need to access it. So we'll
+
+41
+00:01:43,520 --> 00:01:50,560
+say fetch. Well, not that URL.
+
+42
+00:01:47,759 --> 00:01:53,920
+Got to actually copy the URL.
+
+43
+00:01:50,560 --> 00:01:57,200
+Fetch from this URL.
+
+44
+00:01:53,920 --> 00:01:59,200
+And what do we want to do? Well, um once
+
+45
+00:01:57,200 --> 00:02:02,719
+we have it, we want to take the results
+
+46
+00:01:59,200 --> 00:02:04,399
+of what we got and convert it to JSON.
+
+47
+00:02:02,719 --> 00:02:06,000
+And that is an asynchronous function.
+
+48
+00:02:04,399 --> 00:02:07,280
+And remember, if you wrapped this in
+
+49
+00:02:06,000 --> 00:02:09,200
+curly braces, then you have to use the
+
+50
+00:02:07,280 --> 00:02:11,120
+keyword return because I did it on all
+
+51
+00:02:09,200 --> 00:02:12,879
+on one line and no curly braces. I don't
+
+52
+00:02:11,120 --> 00:02:14,800
+need the keyword return. And then I'm
+
+53
+00:02:12,879 --> 00:02:18,400
+going to say then and what do I want to
+
+54
+00:02:14,800 --> 00:02:21,920
+do here? I want to take the result um
+
+55
+00:02:18,400 --> 00:02:23,520
+and I'm going to call it data and I'm
+
+56
+00:02:21,920 --> 00:02:25,840
+going to display it on the page. So, I'm
+
+57
+00:02:23,520 --> 00:02:27,520
+going to say document.query selector.
+
+58
+00:02:25,840 --> 00:02:30,319
+And this is the dog. So, we're going to
+
+59
+00:02:27,520 --> 00:02:33,680
+say dog uh we're going to look for the
+
+60
+00:02:30,319 --> 00:02:36,160
+image that has the ID of dog img. And
+
+61
+00:02:33,680 --> 00:02:40,879
+we're going to set it source
+
+62
+00:02:36,160 --> 00:02:43,280
+equal to the data we got back dot mess.
+
+63
+00:02:40,879 --> 00:02:45,200
+Let me move my image
+
+64
+00:02:43,280 --> 00:02:48,319
+message.
+
+65
+00:02:45,200 --> 00:02:50,879
+So, if we save that,
+
+66
+00:02:48,319 --> 00:02:53,519
+um we're saying set it equal to this URL
+
+67
+00:02:50,879 --> 00:02:56,480
+that we get back. And if we come here
+
+68
+00:02:53,519 --> 00:02:58,000
+and we click get dog,
+
+69
+00:02:56,480 --> 00:03:00,480
+let's inspect and see if we got an
+
+70
+00:02:58,000 --> 00:03:03,120
+error. Uncut error cannot access get dog
+
+71
+00:03:00,480 --> 00:03:05,040
+before initialization. And I apologize.
+
+72
+00:03:03,120 --> 00:03:06,400
+If we want to attach get dog to this
+
+73
+00:03:05,040 --> 00:03:08,720
+function, we actually have to put it
+
+74
+00:03:06,400 --> 00:03:10,239
+before. So we're going to take all of
+
+75
+00:03:08,720 --> 00:03:13,040
+these
+
+76
+00:03:10,239 --> 00:03:15,840
+and move it under get dog and save it.
+
+77
+00:03:13,040 --> 00:03:19,760
+Now if we click get dog, tada, there's
+
+78
+00:03:15,840 --> 00:03:22,480
+our dog who's a good boy. All right. Um,
+
+79
+00:03:19,760 --> 00:03:24,959
+so that's get dog and that's how you'd
+
+80
+00:03:22,480 --> 00:03:27,120
+fetch that. Well, let's do advice. And
+
+81
+00:03:24,959 --> 00:03:31,360
+I'm going to do this using async8. So
+
+82
+00:03:27,120 --> 00:03:34,720
+I'll say const get advice and I'm going
+
+83
+00:03:31,360 --> 00:03:37,120
+to set it equal to async
+
+84
+00:03:34,720 --> 00:03:39,599
+function.
+
+85
+00:03:37,120 --> 00:03:44,560
+And here I need to get the data. So I'm
+
+86
+00:03:39,599 --> 00:03:48,519
+going to say const get um const uh
+
+87
+00:03:44,560 --> 00:03:48,519
+response equals
+
+88
+00:03:51,200 --> 00:03:58,159
+await fetch. And where are we fetching?
+
+89
+00:03:54,640 --> 00:04:01,120
+Well, let's go check. It says go to this
+
+90
+00:03:58,159 --> 00:04:03,280
+advice API. So, I'm going to copy that.
+
+91
+00:04:01,120 --> 00:04:04,720
+I'm going to paste it here. And I'm
+
+92
+00:04:03,280 --> 00:04:06,319
+going to get the response. Well, now I
+
+93
+00:04:04,720 --> 00:04:12,560
+need as JSON data. So, I'm going to say
+
+94
+00:04:06,319 --> 00:04:14,080
+const JSON data equals await
+
+95
+00:04:12,560 --> 00:04:15,920
+res.json.
+
+96
+00:04:14,080 --> 00:04:17,840
+Okay. So, what I'm doing is I'm fetching
+
+97
+00:04:15,920 --> 00:04:19,919
+the data and then I'm turning it into
+
+98
+00:04:17,840 --> 00:04:21,680
+JSON data that I can use. I'm going to
+
+99
+00:04:19,919 --> 00:04:24,960
+click on this link to see what I'm going
+
+100
+00:04:21,680 --> 00:04:27,199
+to get back. If I come over here and I
+
+101
+00:04:24,960 --> 00:04:29,440
+see that I get back an object that has a
+
+102
+00:04:27,199 --> 00:04:31,759
+key of slip and inside of it, it has
+
+103
+00:04:29,440 --> 00:04:33,360
+another object which has an key of
+
+104
+00:04:31,759 --> 00:04:36,720
+advice.
+
+105
+00:04:33,360 --> 00:04:40,960
+And what I can do because this returns
+
+106
+00:04:36,720 --> 00:04:43,280
+JSON, I can actually dstructure it and
+
+107
+00:04:40,960 --> 00:04:44,800
+grab slip out of it. So this returns an
+
+108
+00:04:43,280 --> 00:04:47,040
+object and I can say go into the object
+
+109
+00:04:44,800 --> 00:04:49,520
+and grab out slip. Once you have that
+
+110
+00:04:47,040 --> 00:04:54,479
+then I want you to query selector the
+
+111
+00:04:49,520 --> 00:04:57,479
+page and look for um advice
+
+112
+00:04:54,479 --> 00:04:57,479
+dashoutput
+
+113
+00:04:57,759 --> 00:05:06,240
+and we're going to set its inner text
+
+114
+00:05:01,360 --> 00:05:09,039
+equal to slip advice.
+
+115
+00:05:06,240 --> 00:05:10,639
+So notice because we got back an object
+
+116
+00:05:09,039 --> 00:05:14,160
+and then I destructured it and grabbed
+
+117
+00:05:10,639 --> 00:05:17,039
+out slip. Um now I can go into that
+
+118
+00:05:14,160 --> 00:05:21,440
+object and grab out advice.
+
+119
+00:05:17,039 --> 00:05:24,080
+So if we save this and we come over to
+
+120
+00:05:21,440 --> 00:05:26,160
+our running code, we can click get dog
+
+121
+00:05:24,080 --> 00:05:27,680
+and we get a dog. We click get advice
+
+122
+00:05:26,160 --> 00:05:29,680
+and it says don't be afraid of silly
+
+123
+00:05:27,680 --> 00:05:31,520
+ideas. We can click get advice again. It
+
+124
+00:05:29,680 --> 00:05:32,960
+says when hugging, hug with both arms
+
+125
+00:05:31,520 --> 00:05:35,120
+and apply reasonable affectionate
+
+126
+00:05:32,960 --> 00:05:36,880
+pressure. And there you go. We can now
+
+127
+00:05:35,120 --> 00:05:39,199
+get advice. Now the last one we want to
+
+128
+00:05:36,880 --> 00:05:40,479
+do is just this get joke. And actually
+
+129
+00:05:39,199 --> 00:05:42,720
+you will notice that the code is going
+
+130
+00:05:40,479 --> 00:05:46,240
+to be strikingly similar to this. So
+
+131
+00:05:42,720 --> 00:05:49,520
+let's come over here and I have set a
+
+132
+00:05:46,240 --> 00:05:51,120
+bunch of flags on this API so that it
+
+133
+00:05:49,520 --> 00:05:53,120
+avoids anything that's not safe for
+
+134
+00:05:51,120 --> 00:05:56,240
+work, not religious, not political, not
+
+135
+00:05:53,120 --> 00:05:57,919
+racist, not sexist or explicit. And um I
+
+136
+00:05:56,240 --> 00:06:00,960
+set the type of joke we get back to be a
+
+137
+00:05:57,919 --> 00:06:04,000
+oneliner um or something that doesn't
+
+138
+00:06:00,960 --> 00:06:05,520
+have a question and then a response. So,
+
+139
+00:06:04,000 --> 00:06:08,000
+I'm going to copy that. That's what I've
+
+140
+00:06:05,520 --> 00:06:09,360
+set on this API. And you can actually go
+
+141
+00:06:08,000 --> 00:06:12,160
+look at the documentation for it and it
+
+142
+00:06:09,360 --> 00:06:13,440
+explains how to set all of that. Um, but
+
+143
+00:06:12,160 --> 00:06:16,080
+I'm going to come over here to my script
+
+144
+00:06:13,440 --> 00:06:18,319
+tag and I am going to duplicate this
+
+145
+00:06:16,080 --> 00:06:21,440
+code and I'm going to switch this from
+
+146
+00:06:18,319 --> 00:06:26,080
+saying get advice to saying get joke.
+
+147
+00:06:21,440 --> 00:06:28,560
+And here I'm going to just swap the URL
+
+148
+00:06:26,080 --> 00:06:32,800
+and save it. And if I actually click on
+
+149
+00:06:28,560 --> 00:06:36,000
+this, I can see that what it gives me
+
+150
+00:06:32,800 --> 00:06:41,280
+back is it gives me back an object that
+
+151
+00:06:36,000 --> 00:06:43,039
+has a joke attribute. So I can actually
+
+152
+00:06:41,280 --> 00:06:45,280
+dstructure it and just grab the joke
+
+153
+00:06:43,039 --> 00:06:47,680
+directly. And then here instead of going
+
+154
+00:06:45,280 --> 00:06:50,080
+to advice output, I'm going to go to
+
+155
+00:06:47,680 --> 00:06:51,759
+joke output and instead of setting it to
+
+156
+00:06:50,080 --> 00:06:55,120
+slip.vice, I'm going to set it equal to
+
+157
+00:06:51,759 --> 00:06:56,720
+the joke. So now, and I apologize, I
+
+158
+00:06:55,120 --> 00:06:58,880
+don't control these jokes. I tried to
+
+159
+00:06:56,720 --> 00:07:00,800
+with the flags. We I have no idea what
+
+160
+00:06:58,880 --> 00:07:03,520
+jokes are going to show up. So, I click
+
+161
+00:07:00,800 --> 00:07:05,840
+get dog. Boom. Dog picture. I click get
+
+162
+00:07:03,520 --> 00:07:07,520
+advice. Boom. Be brave. Even if you're
+
+163
+00:07:05,840 --> 00:07:09,599
+not, pretend to be. No one can tell the
+
+164
+00:07:07,520 --> 00:07:11,919
+difference. Then I click random joke.
+
+165
+00:07:09,599 --> 00:07:13,520
+And it says I sentence you to the
+
+166
+00:07:11,919 --> 00:07:15,440
+maximum punishment. Me thinking, please
+
+167
+00:07:13,520 --> 00:07:19,440
+be death. Please be death. Judge, learn
+
+168
+00:07:15,440 --> 00:07:21,440
+Java. Me. Dang it. And there you have
+
+169
+00:07:19,440 --> 00:07:23,840
+it. Now you get a random joke. Um, and
+
+170
+00:07:21,440 --> 00:07:25,840
+you can get another one.
+
+171
+00:07:23,840 --> 00:07:27,360
+And this is now a fully functional
+
+172
+00:07:25,840 --> 00:07:30,000
+thing. And you have successfully used
+
+173
+00:07:27,360 --> 00:07:30,000
+fetch.

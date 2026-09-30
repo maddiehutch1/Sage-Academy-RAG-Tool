@@ -1,0 +1,235 @@
+1
+00:00:00,080 --> 00:00:04,240
+Okay, in the last video I told you that
+
+2
+00:00:01,680 --> 00:00:06,240
+if you could um take those three steps
+
+3
+00:00:04,240 --> 00:00:07,520
+and count, then you could do a for loop.
+
+4
+00:00:06,240 --> 00:00:10,000
+So, let's just talk about how to do a
+
+5
+00:00:07,520 --> 00:00:12,480
+for loop. It comes in three steps. Um
+
+6
+00:00:10,000 --> 00:00:14,880
+you start by saying the word for. So,
+
+7
+00:00:12,480 --> 00:00:17,119
+you'll say four and then you put
+
+8
+00:00:14,880 --> 00:00:18,720
+parenthesis and then inside these
+
+9
+00:00:17,119 --> 00:00:21,199
+parentheses, the first thing you give it
+
+10
+00:00:18,720 --> 00:00:24,000
+is where you want it to start. Usually,
+
+11
+00:00:21,199 --> 00:00:26,240
+people use a variable here. saw um I'm
+
+12
+00:00:24,000 --> 00:00:28,080
+going to say let
+
+13
+00:00:26,240 --> 00:00:30,960
+counter
+
+14
+00:00:28,080 --> 00:00:32,640
+equal uh let's say the first example I
+
+15
+00:00:30,960 --> 00:00:35,040
+said is we'd start at one and go to 10.
+
+16
+00:00:32,640 --> 00:00:37,520
+So we'd say let counter equal one and
+
+17
+00:00:35,040 --> 00:00:40,399
+then you put a semicolon. Then after
+
+18
+00:00:37,520 --> 00:00:42,000
+that you tell it. So this says where do
+
+19
+00:00:40,399 --> 00:00:44,719
+you want to start counting and we're
+
+20
+00:00:42,000 --> 00:00:46,559
+saying start it at one. The next portion
+
+21
+00:00:44,719 --> 00:00:48,239
+right here is how long you want it to
+
+22
+00:00:46,559 --> 00:00:50,800
+count to. So when I told you to count to
+
+23
+00:00:48,239 --> 00:00:53,199
+10, I said start at one, go to 10. So if
+
+24
+00:00:50,800 --> 00:00:56,559
+we want to go to 10, we would say
+
+25
+00:00:53,199 --> 00:00:58,960
+counter is less than or equal to 10. So
+
+26
+00:00:56,559 --> 00:01:01,440
+as long as counter is less than 10, this
+
+27
+00:00:58,960 --> 00:01:05,119
+loop will keep going. As soon as it's
+
+28
+00:01:01,440 --> 00:01:08,479
+equal to 10, then the loop will stop. So
+
+29
+00:01:05,119 --> 00:01:10,240
+it says um so if it hits 11, 11 is not
+
+30
+00:01:08,479 --> 00:01:12,960
+less than 10 and the loop will stop. So
+
+31
+00:01:10,240 --> 00:01:14,560
+just like you did with the counting um
+
+32
+00:01:12,960 --> 00:01:16,720
+in your head, you're telling the
+
+33
+00:01:14,560 --> 00:01:18,400
+computer where to start and how long to
+
+34
+00:01:16,720 --> 00:01:20,000
+go.
+
+35
+00:01:18,400 --> 00:01:22,320
+Well, the computer doesn't automatically
+
+36
+00:01:20,000 --> 00:01:25,439
+know which direction to go. So, we want
+
+37
+00:01:22,320 --> 00:01:28,400
+to tell it to take the counter and then
+
+38
+00:01:25,439 --> 00:01:32,000
+for each step, each time this loop goes
+
+39
+00:01:28,400 --> 00:01:34,079
+through, we want the counter to go up
+
+40
+00:01:32,000 --> 00:01:38,079
+by one. So, we could say counter equals
+
+41
+00:01:34,079 --> 00:01:39,520
+counter + one. And some of you who have
+
+42
+00:01:38,079 --> 00:01:41,119
+programmed before may know there's some
+
+43
+00:01:39,520 --> 00:01:42,880
+shorter syntax for this. We'll get to
+
+44
+00:01:41,119 --> 00:01:44,720
+that in a minute. I just want to
+
+45
+00:01:42,880 --> 00:01:48,560
+demonstrate this as simply as possible.
+
+46
+00:01:44,720 --> 00:01:50,240
+So this for loop says give me a counter
+
+47
+00:01:48,560 --> 00:01:55,439
+start it at one. So start counting at
+
+48
+00:01:50,240 --> 00:01:57,280
+one go to 10 go up by one each time and
+
+49
+00:01:55,439 --> 00:01:59,280
+then anything that you put directly
+
+50
+00:01:57,280 --> 00:02:02,799
+after the for loop will run that many
+
+51
+00:01:59,280 --> 00:02:04,880
+times. So, I could say, "Let's alert the
+
+52
+00:02:02,799 --> 00:02:07,920
+counter."
+
+53
+00:02:04,880 --> 00:02:11,920
+And we'll save this. And we'll go over
+
+54
+00:02:07,920 --> 00:02:20,000
+here to our running code. And it says 1,
+
+55
+00:02:11,920 --> 00:02:22,400
+2, 3, 4, 5, 6, 7, 8, 9, 10. Okay. So,
+
+56
+00:02:20,000 --> 00:02:24,480
+three parts of a for loop. Where do you
+
+57
+00:02:22,400 --> 00:02:27,680
+want to start? How long do you want to
+
+58
+00:02:24,480 --> 00:02:32,560
+run? How much do you want to count by?
+
+59
+00:02:27,680 --> 00:02:32,560
+And then um we'll pick up in the next

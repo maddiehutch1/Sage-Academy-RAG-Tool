@@ -1,0 +1,223 @@
+1
+00:00:00,080 --> 00:00:04,000
+Now that we know that you can access
+
+2
+00:00:02,159 --> 00:00:06,400
+attributes from the HTML and you can set
+
+3
+00:00:04,000 --> 00:00:08,639
+attributes of the HTML, the sky is the
+
+4
+00:00:06,400 --> 00:00:11,360
+limit. Um, for example, what I want to
+
+5
+00:00:08,639 --> 00:00:12,960
+do here is I want to take this input and
+
+6
+00:00:11,360 --> 00:00:14,639
+I want to change the color of the body
+
+7
+00:00:12,960 --> 00:00:16,400
+based on what color they picked in the
+
+8
+00:00:14,639 --> 00:00:19,199
+color picker.
+
+9
+00:00:16,400 --> 00:00:21,359
+So if I want to do that, I need to write
+
+10
+00:00:19,199 --> 00:00:24,840
+this change color function. So const
+
+11
+00:00:21,359 --> 00:00:24,840
+change color
+
+12
+00:00:27,920 --> 00:00:33,440
+and it helps if you don't have a typo.
+
+13
+00:00:30,880 --> 00:00:34,640
+Okay, so now we have a function. If we
+
+14
+00:00:33,440 --> 00:00:37,120
+want to change the color, then we need
+
+15
+00:00:34,640 --> 00:00:38,399
+to access the value of this input and we
+
+16
+00:00:37,120 --> 00:00:40,000
+need to change the color of the body
+
+17
+00:00:38,399 --> 00:00:43,040
+tag. How do we change the color of the
+
+18
+00:00:40,000 --> 00:00:46,160
+body tag without um JavaScript? Well,
+
+19
+00:00:43,040 --> 00:00:49,200
+the way you do that is you'd say style
+
+20
+00:00:46,160 --> 00:00:52,239
+background color red. And that would set
+
+21
+00:00:49,200 --> 00:00:55,440
+the background color of the body to red.
+
+22
+00:00:52,239 --> 00:00:57,360
+Well, if we want to access this object,
+
+23
+00:00:55,440 --> 00:00:59,600
+then we need to use the DOM. So, we'll
+
+24
+00:00:57,360 --> 00:01:04,239
+say document.getelement
+
+25
+00:00:59,600 --> 00:01:06,479
+by id and main. And we want to set its
+
+26
+00:01:04,239 --> 00:01:10,720
+style attribute to be something. Now, we
+
+27
+00:01:06,479 --> 00:01:13,360
+could set it to say background color
+
+28
+00:01:10,720 --> 00:01:16,240
+red, but what I want to do is I actually
+
+29
+00:01:13,360 --> 00:01:19,040
+want to just use because style is a
+
+30
+00:01:16,240 --> 00:01:20,880
+JavaScript object, I can type dot. And
+
+31
+00:01:19,040 --> 00:01:22,560
+now I can access all of the attributes
+
+32
+00:01:20,880 --> 00:01:25,439
+directly. So, I'm going to set the
+
+33
+00:01:22,560 --> 00:01:28,000
+background color
+
+34
+00:01:25,439 --> 00:01:29,280
+equal to well, now what color do I want
+
+35
+00:01:28,000 --> 00:01:32,720
+to set it to? Well, I want to set it to
+
+36
+00:01:29,280 --> 00:01:35,119
+this input tag. So, um, I could do this
+
+37
+00:01:32,720 --> 00:01:36,240
+all on one line, but for ease of reading
+
+38
+00:01:35,119 --> 00:01:38,000
+my code, I'm going to say
+
+39
+00:01:36,240 --> 00:01:42,159
+document.getelement
+
+40
+00:01:38,000 --> 00:01:43,680
+by ID color picker.
+
+41
+00:01:42,159 --> 00:01:47,119
+And then I'm going to access the value
+
+42
+00:01:43,680 --> 00:01:51,759
+of that. And I'm going to say
+
+43
+00:01:47,119 --> 00:01:54,399
+let chosen color equal grab that color
+
+44
+00:01:51,759 --> 00:01:57,680
+picker value. And then I want to set the
+
+45
+00:01:54,399 --> 00:02:00,479
+background color of my body tag. I want
+
+46
+00:01:57,680 --> 00:02:03,200
+to set it equal to my chosen color. So,
+
+47
+00:02:00,479 --> 00:02:05,119
+if we save that and we come over here,
+
+48
+00:02:03,200 --> 00:02:07,600
+we've got our little color picker here
+
+49
+00:02:05,119 --> 00:02:10,959
+and we could choose this color and it
+
+50
+00:02:07,600 --> 00:02:14,080
+updates. Um, we could use the dropper
+
+51
+00:02:10,959 --> 00:02:17,360
+and choose the top menu
+
+52
+00:02:14,080 --> 00:02:23,319
+and it updates. Um,
+
+53
+00:02:17,360 --> 00:02:23,319
+we could put in a hex value. Um,
+
+54
+00:02:26,720 --> 00:02:32,400
+and now our page updates. And so that is
+
+55
+00:02:29,280 --> 00:02:35,440
+how you can um update the visual display
+
+56
+00:02:32,400 --> 00:02:35,440
+based on user input.

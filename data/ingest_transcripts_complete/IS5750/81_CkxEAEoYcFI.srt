@@ -1,0 +1,199 @@
+1
+00:00:00,080 --> 00:00:05,839
+Okay, in the last video, we proved that
+
+2
+00:00:02,480 --> 00:00:08,320
+you could in fact store a function in a
+
+3
+00:00:05,839 --> 00:00:09,760
+variable. So, let's see what you can do
+
+4
+00:00:08,320 --> 00:00:10,960
+with that. Uh, to do that, I'm going to
+
+5
+00:00:09,760 --> 00:00:13,759
+create another function here, and I'm
+
+6
+00:00:10,960 --> 00:00:15,839
+going to call it display type. And it's
+
+7
+00:00:13,759 --> 00:00:18,720
+going to take in
+
+8
+00:00:15,839 --> 00:00:20,960
+an input value as input,
+
+9
+00:00:18,720 --> 00:00:24,720
+and then it's going to return the type
+
+10
+00:00:20,960 --> 00:00:25,920
+of the input value.
+
+11
+00:00:24,720 --> 00:00:27,599
+Then down here, I'm going to create a
+
+12
+00:00:25,920 --> 00:00:30,800
+variable called my var. And I'm going to
+
+13
+00:00:27,599 --> 00:00:32,800
+set it equal to a string.
+
+14
+00:00:30,800 --> 00:00:35,680
+And then I'm going to create a variable
+
+15
+00:00:32,800 --> 00:00:38,079
+called result and set it equal to the
+
+16
+00:00:35,680 --> 00:00:40,960
+result of calling display type and
+
+17
+00:00:38,079 --> 00:00:42,879
+giving it the input of my var. And then
+
+18
+00:00:40,960 --> 00:00:46,239
+once that's done, I'm going to alert the
+
+19
+00:00:42,879 --> 00:00:48,719
+result. Okay. So what this should do is
+
+20
+00:00:46,239 --> 00:00:51,760
+if it works correctly, we should take my
+
+21
+00:00:48,719 --> 00:00:54,559
+var. We should give it to display type.
+
+22
+00:00:51,760 --> 00:00:56,719
+It will then store that in input value.
+
+23
+00:00:54,559 --> 00:00:59,199
+So now input value should be resto
+
+24
+00:00:56,719 --> 00:01:00,800
+should be storing hello. So then when we
+
+25
+00:00:59,199 --> 00:01:02,559
+return the type of input value, it
+
+26
+00:01:00,800 --> 00:01:05,680
+should return that this is a string and
+
+27
+00:01:02,559 --> 00:01:07,760
+alert it. So let's save that
+
+28
+00:01:05,680 --> 00:01:10,880
+and let's come to our code and it says
+
+29
+00:01:07,760 --> 00:01:13,760
+string. Hooray. Okay, let's come back
+
+30
+00:01:10,880 --> 00:01:17,360
+here. Let's change this to a three.
+
+31
+00:01:13,760 --> 00:01:20,159
+We'll save it and it says it's a number.
+
+32
+00:01:17,360 --> 00:01:23,200
+Cool. Let's change it to the word true.
+
+33
+00:01:20,159 --> 00:01:26,560
+Save it. Come back over. It's a boolean.
+
+34
+00:01:23,200 --> 00:01:27,600
+Okay. Well, we know now that you can
+
+35
+00:01:26,560 --> 00:01:29,040
+take a function and I'm going to
+
+36
+00:01:27,600 --> 00:01:33,360
+uncomment the function we wrote in the
+
+37
+00:01:29,040 --> 00:01:36,159
+last video and we can store it
+
+38
+00:01:33,360 --> 00:01:39,520
+in a variable. So now what I'm going to
+
+39
+00:01:36,159 --> 00:01:41,200
+do is I'm going to call uh I'm going to
+
+40
+00:01:39,520 --> 00:01:44,000
+pass that variable that we created
+
+41
+00:01:41,200 --> 00:01:46,479
+called my function into display type and
+
+42
+00:01:44,000 --> 00:01:47,920
+we'll see what we get. So now it says
+
+43
+00:01:46,479 --> 00:01:51,200
+that the type of variable that we got
+
+44
+00:01:47,920 --> 00:01:53,119
+inside the function is a function which
+
+45
+00:01:51,200 --> 00:01:55,280
+is great because that means that if we
+
+46
+00:01:53,119 --> 00:01:57,520
+can store a function in a variable it
+
+47
+00:01:55,280 --> 00:02:00,240
+means we can pass that function into
+
+48
+00:01:57,520 --> 00:02:02,000
+another function as a piece of input.
+
+49
+00:02:00,240 --> 00:02:05,680
+Now why would you want to do this? Well,
+
+50
+00:02:02,000 --> 00:02:05,680
+that's a topic for the next

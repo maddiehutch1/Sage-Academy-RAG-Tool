@@ -1,0 +1,703 @@
+1
+00:00:00,080 --> 00:00:04,560
+Okay, in the last video I showed you how
+
+2
+00:00:02,320 --> 00:00:09,360
+to use a while loop. A while loop and a
+
+3
+00:00:04,560 --> 00:00:11,280
+for loop are both called are both
+
+4
+00:00:09,360 --> 00:00:14,240
+tongue twisted. They both belong to the
+
+5
+00:00:11,280 --> 00:00:16,080
+category of precondition loops.
+
+6
+00:00:14,240 --> 00:00:18,800
+Precondition loops means it checks the
+
+7
+00:00:16,080 --> 00:00:21,039
+condition before it runs the loop. So
+
+8
+00:00:18,800 --> 00:00:22,880
+here for example um we've got a for loop
+
+9
+00:00:21,039 --> 00:00:25,359
+and I've changed the syntax a little
+
+10
+00:00:22,880 --> 00:00:29,039
+bit. Um it says let counter equal four,
+
+11
+00:00:25,359 --> 00:00:31,279
+counter less than four, counter++.
+
+12
+00:00:29,039 --> 00:00:33,840
+So, what this is doing is it says start
+
+13
+00:00:31,279 --> 00:00:35,760
+at four, count until you get almost up
+
+14
+00:00:33,840 --> 00:00:40,239
+to four, but if you pass four, stop the
+
+15
+00:00:35,760 --> 00:00:42,320
+loop, and then continue on. If you've
+
+16
+00:00:40,239 --> 00:00:44,000
+noticed, this loop will never run
+
+17
+00:00:42,320 --> 00:00:45,680
+because it will start the counter at
+
+18
+00:00:44,000 --> 00:00:47,520
+four, and then it'll check if four is
+
+19
+00:00:45,680 --> 00:00:48,960
+less than four. Four is not less than
+
+20
+00:00:47,520 --> 00:00:51,760
+four, so it's just going to skip over
+
+21
+00:00:48,960 --> 00:00:54,559
+this loop and end. Meaning, a for loop
+
+22
+00:00:51,760 --> 00:00:56,800
+can run zero times or possibly many
+
+23
+00:00:54,559 --> 00:00:59,120
+times. Um, in this case, it will run
+
+24
+00:00:56,800 --> 00:01:01,120
+zero times. The same is true for our
+
+25
+00:00:59,120 --> 00:01:03,440
+while loop. It checks a condition and
+
+26
+00:01:01,120 --> 00:01:05,920
+then it runs the loop. So we're checking
+
+27
+00:01:03,440 --> 00:01:08,159
+if my password is not the same as the
+
+28
+00:01:05,920 --> 00:01:10,400
+real password. Um and then we're going
+
+29
+00:01:08,159 --> 00:01:12,720
+to alert the loop ran. So in this case,
+
+30
+00:01:10,400 --> 00:01:14,000
+hello and hello are exactly the same. So
+
+31
+00:01:12,720 --> 00:01:15,760
+this condition is going to get checked
+
+32
+00:01:14,000 --> 00:01:18,720
+and it's just going to skip over it.
+
+33
+00:01:15,760 --> 00:01:20,960
+Meaning a while loop can run zero and
+
+34
+00:01:18,720 --> 00:01:23,200
+possibly many times. Let's just see this
+
+35
+00:01:20,960 --> 00:01:24,720
+in practice. So I'm going to click go
+
+36
+00:01:23,200 --> 00:01:28,080
+live.
+
+37
+00:01:24,720 --> 00:01:29,439
+And there it is. nothing ran and maybe
+
+38
+00:01:28,080 --> 00:01:30,880
+you thought maybe the code isn't
+
+39
+00:01:29,439 --> 00:01:33,520
+working. So just to prove to you that
+
+40
+00:01:30,880 --> 00:01:35,920
+it's not just the code um we're going to
+
+41
+00:01:33,520 --> 00:01:38,000
+put a break point on line 14 and we're
+
+42
+00:01:35,920 --> 00:01:40,079
+going to reload our page and it paused.
+
+43
+00:01:38,000 --> 00:01:43,200
+So sure enough this for loop started
+
+44
+00:01:40,079 --> 00:01:45,439
+executing and we said let's initialize
+
+45
+00:01:43,200 --> 00:01:48,079
+the counter to four. Now let's see if
+
+46
+00:01:45,439 --> 00:01:50,640
+four is less than four. It's not. So
+
+47
+00:01:48,079 --> 00:01:52,799
+skip the loop. And then it came to my
+
+48
+00:01:50,640 --> 00:01:55,520
+password. So we said while hello is not
+
+49
+00:01:52,799 --> 00:01:57,280
+equal to hello. Well those are equal. So
+
+50
+00:01:55,520 --> 00:01:59,280
+this condition is no longer true which
+
+51
+00:01:57,280 --> 00:02:02,880
+means we should skip this one. And sure
+
+52
+00:01:59,280 --> 00:02:04,799
+enough it skipped it. Um those are what
+
+53
+00:02:02,880 --> 00:02:06,960
+are called precondition loops. We check
+
+54
+00:02:04,799 --> 00:02:08,640
+the condition and then we run the loop.
+
+55
+00:02:06,960 --> 00:02:10,479
+I am going to show you now something
+
+56
+00:02:08,640 --> 00:02:12,720
+that is called a postcond condition
+
+57
+00:02:10,479 --> 00:02:14,319
+loop. A postcond condition loop is for
+
+58
+00:02:12,720 --> 00:02:16,319
+when you want your code to run at least
+
+59
+00:02:14,319 --> 00:02:18,879
+once. Both of the previous loops I
+
+60
+00:02:16,319 --> 00:02:20,720
+showed you ran zero times, but they
+
+61
+00:02:18,879 --> 00:02:22,879
+could have run many times. The loop I'm
+
+62
+00:02:20,720 --> 00:02:26,959
+about to show you will always run once,
+
+63
+00:02:22,879 --> 00:02:28,879
+but might possibly run many times. So,
+
+64
+00:02:26,959 --> 00:02:32,400
+in order for this to work, I'm going to
+
+65
+00:02:28,879 --> 00:02:35,680
+create a deposit. Um, and I'm going to
+
+66
+00:02:32,400 --> 00:02:38,680
+set it to I'm going to create a total
+
+67
+00:02:35,680 --> 00:02:38,680
+deposit
+
+68
+00:02:40,800 --> 00:02:46,000
+and I'm going to set it to $0. Sorry, I
+
+69
+00:02:43,200 --> 00:02:49,200
+can't stop. Um,
+
+70
+00:02:46,000 --> 00:02:52,160
+then I'm going to create a um continue
+
+71
+00:02:49,200 --> 00:02:56,080
+to deposit
+
+72
+00:02:52,160 --> 00:02:58,319
+and I'm going to set it equal to no.
+
+73
+00:02:56,080 --> 00:03:01,720
+Now I'm going to start my loop. So I'm
+
+74
+00:02:58,319 --> 00:03:01,720
+going to say do.
+
+75
+00:03:02,000 --> 00:03:05,360
+And then I want to ask the user if they
+
+76
+00:03:03,599 --> 00:03:11,200
+want to deposit money. So, I'm going to
+
+77
+00:03:05,360 --> 00:03:13,040
+say let deposit amount equal um and
+
+78
+00:03:11,200 --> 00:03:16,000
+we'll just assume that they're going to
+
+79
+00:03:13,040 --> 00:03:19,920
+enter whole numbers. Um parse int and
+
+80
+00:03:16,000 --> 00:03:22,640
+we'll prompt them, how much would you
+
+81
+00:03:19,920 --> 00:03:24,319
+like to deposit.
+
+82
+00:03:22,640 --> 00:03:26,000
+Once they've given us that amount, we're
+
+83
+00:03:24,319 --> 00:03:28,239
+going to take our total deposit and
+
+84
+00:03:26,000 --> 00:03:30,799
+we're going to increase it by the
+
+85
+00:03:28,239 --> 00:03:32,720
+deposit amount. Um, if you wanted to
+
+86
+00:03:30,799 --> 00:03:34,480
+write this out in longhand, uh, you
+
+87
+00:03:32,720 --> 00:03:37,280
+could say total deposit equals total
+
+88
+00:03:34,480 --> 00:03:38,720
+deposit plus deposit amount. I like
+
+89
+00:03:37,280 --> 00:03:40,959
+shorthand notation, so we're going to do
+
+90
+00:03:38,720 --> 00:03:44,319
+total deposit plus equals deposit
+
+91
+00:03:40,959 --> 00:03:46,879
+amount. Then we need to ask them if they
+
+92
+00:03:44,319 --> 00:03:50,640
+want to deposit again. So, we'll say
+
+93
+00:03:46,879 --> 00:03:53,040
+continue to deposit equals prompt
+
+94
+00:03:50,640 --> 00:03:54,640
+would
+
+95
+00:03:53,040 --> 00:03:58,720
+would
+
+96
+00:03:54,640 --> 00:04:03,040
+you like to deposit more?
+
+97
+00:03:58,720 --> 00:04:05,280
+And then um I'm going to say yes or no.
+
+98
+00:04:03,040 --> 00:04:07,200
+And then to clean up my input, they
+
+99
+00:04:05,280 --> 00:04:09,280
+could enter a lowercase Y. And I still
+
+100
+00:04:07,200 --> 00:04:11,840
+want to count that as an uppercase Y. To
+
+101
+00:04:09,280 --> 00:04:14,319
+handle that, I'm going to say dot2
+
+102
+00:04:11,840 --> 00:04:15,680
+uppercase. What this does is it converts
+
+103
+00:04:14,319 --> 00:04:18,720
+everything that they entered into the
+
+104
+00:04:15,680 --> 00:04:21,040
+prompt into uppercase.
+
+105
+00:04:18,720 --> 00:04:23,120
+Once I've done that, I'm going to get
+
+106
+00:04:21,040 --> 00:04:25,199
+here to the end of this do statement. So
+
+107
+00:04:23,120 --> 00:04:28,240
+it says do this code. That means run
+
+108
+00:04:25,199 --> 00:04:30,080
+that code exactly once. But I might want
+
+109
+00:04:28,240 --> 00:04:34,800
+that code to repeat. And I'm going to
+
+110
+00:04:30,080 --> 00:04:38,400
+say while um continue to deposit
+
+111
+00:04:34,800 --> 00:04:40,160
+is equal to yes. So if they enter yes,
+
+112
+00:04:38,400 --> 00:04:43,280
+then I want to run the loop again. If
+
+113
+00:04:40,160 --> 00:04:45,280
+they don't, then the loop will end.
+
+114
+00:04:43,280 --> 00:04:48,479
+And then once it's done, I'm going to
+
+115
+00:04:45,280 --> 00:04:50,479
+alert the total deposit.
+
+116
+00:04:48,479 --> 00:04:53,360
+So I'm going to save this code and I'm
+
+117
+00:04:50,479 --> 00:04:57,040
+going to come over here and we're going
+
+118
+00:04:53,360 --> 00:04:59,040
+to stop the present debugger. um and
+
+119
+00:04:57,040 --> 00:05:00,639
+reload our page. Says, "How much would
+
+120
+00:04:59,040 --> 00:05:02,320
+you like to deposit?" So, you'll notice
+
+121
+00:05:00,639 --> 00:05:04,560
+neither of the precondition loops ran
+
+122
+00:05:02,320 --> 00:05:05,919
+because their condition said not to.
+
+123
+00:05:04,560 --> 00:05:07,120
+This one hasn't even checked the
+
+124
+00:05:05,919 --> 00:05:08,720
+condition yet. It just said, "How much
+
+125
+00:05:07,120 --> 00:05:11,360
+would you like to deposit?" So, I'll say
+
+126
+00:05:08,720 --> 00:05:13,039
+$100. And then I'll hit okay. Then it
+
+127
+00:05:11,360 --> 00:05:15,120
+says, "Would you like to deposit more?"
+
+128
+00:05:13,039 --> 00:05:16,560
+If I say yes and hit enter, it says,
+
+129
+00:05:15,120 --> 00:05:18,320
+"How much would you like to deposit?"
+
+130
+00:05:16,560 --> 00:05:19,919
+I'll do another $100. Then it says,
+
+131
+00:05:18,320 --> 00:05:22,479
+"Would you like to deposit more?" I'll
+
+132
+00:05:19,919 --> 00:05:24,080
+say no. And then it says 200, meaning
+
+133
+00:05:22,479 --> 00:05:26,720
+that was the total amount that I had
+
+134
+00:05:24,080 --> 00:05:28,560
+there. To show you this in the debugger,
+
+135
+00:05:26,720 --> 00:05:29,919
+I'm going to remove the break. I'm going
+
+136
+00:05:28,560 --> 00:05:32,720
+to actually leave the break point on
+
+137
+00:05:29,919 --> 00:05:35,120
+line 14. And we're going to reload this
+
+138
+00:05:32,720 --> 00:05:37,199
+page. So, we get to our precondition for
+
+139
+00:05:35,120 --> 00:05:40,240
+loop. Um, meaning it checks the
+
+140
+00:05:37,199 --> 00:05:42,400
+condition before it runs. And the
+
+141
+00:05:40,240 --> 00:05:44,000
+condition is not true, so it just skips
+
+142
+00:05:42,400 --> 00:05:45,919
+the for loop. Now, we get to our while
+
+143
+00:05:44,000 --> 00:05:49,360
+loop, and it checks the condition before
+
+144
+00:05:45,919 --> 00:05:51,440
+it runs. the condition isn't true, so it
+
+145
+00:05:49,360 --> 00:05:54,160
+drops through it. We create our total
+
+146
+00:05:51,440 --> 00:05:56,960
+deposit and we can we create our
+
+147
+00:05:54,160 --> 00:05:59,120
+continue to deposit variable. Now we say
+
+148
+00:05:56,960 --> 00:06:01,199
+let the deposit amount equal how much
+
+149
+00:05:59,120 --> 00:06:02,560
+would you like to deposit. Notice this
+
+150
+00:06:01,199 --> 00:06:04,560
+loop has already started running. It
+
+151
+00:06:02,560 --> 00:06:07,120
+hasn't even checked the condition once.
+
+152
+00:06:04,560 --> 00:06:12,160
+So we'll give it an amount. We'll say
+
+153
+00:06:07,120 --> 00:06:15,759
+100. And then we'll hit the next button.
+
+154
+00:06:12,160 --> 00:06:18,080
+And now our deposit is 100. um we
+
+155
+00:06:15,759 --> 00:06:19,680
+increment our total deposits. And now we
+
+156
+00:06:18,080 --> 00:06:21,360
+prompt to see if you would like to
+
+157
+00:06:19,680 --> 00:06:23,759
+deposit more. So we're going to hit
+
+158
+00:06:21,360 --> 00:06:26,400
+next. I'm going to say no. I'm going to
+
+159
+00:06:23,759 --> 00:06:28,800
+hit okay. And then our continue to
+
+160
+00:06:26,400 --> 00:06:31,120
+deposit is a sorry continue to deposit
+
+161
+00:06:28,800 --> 00:06:34,080
+is capital N. Capital N is not the same
+
+162
+00:06:31,120 --> 00:06:36,160
+as capital Y. So now it's evaluating if
+
+163
+00:06:34,080 --> 00:06:38,319
+this loop should run again. If I had
+
+164
+00:06:36,160 --> 00:06:40,319
+entered Y, the loop would run again.
+
+165
+00:06:38,319 --> 00:06:43,039
+Because I've entered N, it says, okay,
+
+166
+00:06:40,319 --> 00:06:46,080
+the loop is over. Now alert. So notice
+
+167
+00:06:43,039 --> 00:06:49,199
+this loop ran only once. Um but it ran
+
+168
+00:06:46,080 --> 00:06:52,800
+at least once and then we'll alert our
+
+169
+00:06:49,199 --> 00:06:55,759
+deposit and um our code works as we
+
+170
+00:06:52,800 --> 00:06:57,840
+expected. So if we come back over here
+
+171
+00:06:55,759 --> 00:07:00,000
+um the main difference between a dowh
+
+172
+00:06:57,840 --> 00:07:02,639
+loop and a while loop is that a while
+
+173
+00:07:00,000 --> 00:07:05,120
+loop might never run. A dowh loop will
+
+174
+00:07:02,639 --> 00:07:06,960
+run at least once. And that concludes
+
+175
+00:07:05,120 --> 00:07:09,199
+the video on dowhile loops. Thanks for
+
+176
+00:07:06,960 --> 00:07:09,199
+watching.

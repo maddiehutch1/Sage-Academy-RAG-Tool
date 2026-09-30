@@ -1,0 +1,367 @@
+1
+00:00:00,080 --> 00:00:03,919
+Okay, so I've made one small change and
+
+2
+00:00:02,000 --> 00:00:06,960
+that is I've changed the unordered list
+
+3
+00:00:03,919 --> 00:00:08,720
+to an ordered list. So now I can say go
+
+4
+00:00:06,960 --> 00:00:12,240
+shopping
+
+5
+00:00:08,720 --> 00:00:16,720
+and add an item. And then I can say go
+
+6
+00:00:12,240 --> 00:00:18,480
+uh go to the bank and add an item. Well,
+
+7
+00:00:16,720 --> 00:00:21,119
+you'll notice that appending the item to
+
+8
+00:00:18,480 --> 00:00:23,519
+the end makes it so that it is number
+
+9
+00:00:21,119 --> 00:00:25,359
+two in the list. And maybe I need it to
+
+10
+00:00:23,519 --> 00:00:27,119
+go to the bank before I go shopping. So,
+
+11
+00:00:25,359 --> 00:00:29,760
+it' be nice to instead of inserting at
+
+12
+00:00:27,119 --> 00:00:32,559
+the end, um it'd be nice to insert
+
+13
+00:00:29,760 --> 00:00:34,480
+before. So, let's come over here. I've
+
+14
+00:00:32,559 --> 00:00:36,640
+added a new button called insert item.
+
+15
+00:00:34,480 --> 00:00:39,440
+Insert item. I want it to put at the top
+
+16
+00:00:36,640 --> 00:00:41,120
+of the list the new item. So, we can
+
+17
+00:00:39,440 --> 00:00:45,040
+actually take a lot of stuff from add
+
+18
+00:00:41,120 --> 00:00:47,200
+item and copy it into insert item. So, I
+
+19
+00:00:45,040 --> 00:00:49,200
+still want to gather the input. I still
+
+20
+00:00:47,200 --> 00:00:52,000
+want to create a new element. I still
+
+21
+00:00:49,200 --> 00:00:54,160
+want to set the elements inner text or
+
+22
+00:00:52,000 --> 00:00:57,360
+sorry text content equal to whatever the
+
+23
+00:00:54,160 --> 00:00:59,920
+user typed into the box and I want to
+
+24
+00:00:57,360 --> 00:01:02,000
+still access the output but I want to
+
+25
+00:00:59,920 --> 00:01:03,520
+put it in a specific spot rather than
+
+26
+00:01:02,000 --> 00:01:06,640
+just appending it to the end. I want it
+
+27
+00:01:03,520 --> 00:01:08,080
+in a specific spot. Well to do that we
+
+28
+00:01:06,640 --> 00:01:11,600
+need to find the element that we want to
+
+29
+00:01:08,080 --> 00:01:15,360
+put it before. Um because instead of
+
+30
+00:01:11,600 --> 00:01:18,320
+doing append child you'll sayinsert
+
+31
+00:01:15,360 --> 00:01:19,759
+before. Insert before takes two things.
+
+32
+00:01:18,320 --> 00:01:20,960
+It takes the thing you want to insert
+
+33
+00:01:19,759 --> 00:01:23,439
+and it takes the thing you're supposed
+
+34
+00:01:20,960 --> 00:01:26,960
+to insert it before. So first you say go
+
+35
+00:01:23,439 --> 00:01:29,040
+to the document, find this element that
+
+36
+00:01:26,960 --> 00:01:31,280
+has the ID of output. So it comes up
+
+37
+00:01:29,040 --> 00:01:33,360
+here and finds this. And then it says in
+
+38
+00:01:31,280 --> 00:01:35,520
+there I want you to insert a tag and I
+
+39
+00:01:33,360 --> 00:01:39,759
+want you to insert it before something.
+
+40
+00:01:35,520 --> 00:01:41,680
+Well, insert before um
+
+41
+00:01:39,759 --> 00:01:44,079
+takes in two elements. So we need to
+
+42
+00:01:41,680 --> 00:01:47,200
+find an element that's inside of output.
+
+43
+00:01:44,079 --> 00:01:51,439
+So the way we do that is we say document
+
+44
+00:01:47,200 --> 00:01:54,960
+doquery selector and it um either
+
+45
+00:01:51,439 --> 00:01:59,200
+returns an HTML element or it returns
+
+46
+00:01:54,960 --> 00:02:01,439
+nothing or null. Insert before will
+
+47
+00:01:59,200 --> 00:02:03,439
+either insert this element that we're
+
+48
+00:02:01,439 --> 00:02:06,000
+trying to insert before the element that
+
+49
+00:02:03,439 --> 00:02:08,879
+we found or if it gets a null it'll
+
+50
+00:02:06,000 --> 00:02:10,319
+insert it as the last item in the list
+
+51
+00:02:08,879 --> 00:02:11,920
+because it'll be the only item in the
+
+52
+00:02:10,319 --> 00:02:13,920
+list. So, we're going to do document
+
+53
+00:02:11,920 --> 00:02:18,000
+query selector and we are going to look
+
+54
+00:02:13,920 --> 00:02:20,480
+for list items. Query selector finds the
+
+55
+00:02:18,000 --> 00:02:22,720
+very first list item that matches. We
+
+56
+00:02:20,480 --> 00:02:24,959
+could do query selector all to grab all
+
+57
+00:02:22,720 --> 00:02:26,640
+of the list items, but in this case, I
+
+58
+00:02:24,959 --> 00:02:28,239
+want to insert it first, which means I
+
+59
+00:02:26,640 --> 00:02:30,640
+want to insert it before the first list
+
+60
+00:02:28,239 --> 00:02:33,599
+item. And in fact, we can actually
+
+61
+00:02:30,640 --> 00:02:36,560
+narrow our search by saying, let's look
+
+62
+00:02:33,599 --> 00:02:38,400
+in the output tag for a list item that's
+
+63
+00:02:36,560 --> 00:02:40,640
+immediately inside of it. So, it's going
+
+64
+00:02:38,400 --> 00:02:42,239
+to come up here to this
+
+65
+00:02:40,640 --> 00:02:44,400
+output tag and it's going to see if
+
+66
+00:02:42,239 --> 00:02:46,160
+there are any list items. If there are,
+
+67
+00:02:44,400 --> 00:02:48,800
+it will return the list item, the very
+
+68
+00:02:46,160 --> 00:02:53,040
+first one in this list. If there aren't,
+
+69
+00:02:48,800 --> 00:02:54,879
+it will return null. So, let's put that
+
+70
+00:02:53,040 --> 00:02:58,959
+in a variable to access it. So, we'll
+
+71
+00:02:54,879 --> 00:03:02,159
+say let first li equal document.query
+
+72
+00:02:58,959 --> 00:03:05,440
+selector. So, we've now found our first
+
+73
+00:03:02,159 --> 00:03:08,239
+list item. Now we're going to find the
+
+74
+00:03:05,440 --> 00:03:11,680
+output tag, insert into the output tag,
+
+75
+00:03:08,239 --> 00:03:13,840
+and we want to insert our new line item
+
+76
+00:03:11,680 --> 00:03:16,400
+that we've created. So we'll say insert
+
+77
+00:03:13,840 --> 00:03:17,760
+my list item. And where do we want to
+
+78
+00:03:16,400 --> 00:03:21,040
+insert it before? Well, we want to
+
+79
+00:03:17,760 --> 00:03:23,920
+insert it before the first list item.
+
+80
+00:03:21,040 --> 00:03:28,239
+So if we save this and we come over
+
+81
+00:03:23,920 --> 00:03:31,200
+here, we can say go shopping,
+
+82
+00:03:28,239 --> 00:03:34,080
+add the item and then we can say go to
+
+83
+00:03:31,200 --> 00:03:36,319
+the bank and insert the item and it
+
+84
+00:03:34,080 --> 00:03:38,720
+inserts it above, shifts the other one
+
+85
+00:03:36,319 --> 00:03:41,760
+down, and now this one is one and this
+
+86
+00:03:38,720 --> 00:03:43,599
+one is two. And reloading it, there is
+
+87
+00:03:41,760 --> 00:03:46,480
+no list items right now. So it should
+
+88
+00:03:43,599 --> 00:03:50,000
+return null. So if we say go choose a
+
+89
+00:03:46,480 --> 00:03:52,000
+bank and insert item because it was null
+
+90
+00:03:50,000 --> 00:03:55,120
+it just added our item at the very end
+
+91
+00:03:52,000 --> 00:03:58,319
+of the ul tag. And that concludes how
+
+92
+00:03:55,120 --> 00:03:58,319
+you would use insert

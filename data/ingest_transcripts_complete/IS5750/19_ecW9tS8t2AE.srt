@@ -1,0 +1,711 @@
+1
+00:00:03,200 --> 00:00:06,720
+All right. Now that we've talked about
+
+2
+00:00:05,040 --> 00:00:08,400
+data types, how to convert between them,
+
+3
+00:00:06,720 --> 00:00:10,800
+how to tell what type of variable you
+
+4
+00:00:08,400 --> 00:00:13,280
+have, we are going to talk more in depth
+
+5
+00:00:10,800 --> 00:00:14,400
+about strings specifically. This is one
+
+6
+00:00:13,280 --> 00:00:16,160
+of my favorite parts of the course
+
+7
+00:00:14,400 --> 00:00:18,000
+because if you can manipulate a string,
+
+8
+00:00:16,160 --> 00:00:20,880
+you can make a computer do just about
+
+9
+00:00:18,000 --> 00:00:22,480
+anything that you want. So, let's get
+
+10
+00:00:20,880 --> 00:00:24,880
+started. The first thing you want to
+
+11
+00:00:22,480 --> 00:00:27,119
+know about strings is how to concatenate
+
+12
+00:00:24,880 --> 00:00:28,720
+them. So concatenation is where you take
+
+13
+00:00:27,119 --> 00:00:31,519
+one string and you glue it to another
+
+14
+00:00:28,720 --> 00:00:33,440
+string to create a whole new string. So
+
+15
+00:00:31,519 --> 00:00:35,760
+let's demonstrate that real quick. So I
+
+16
+00:00:33,440 --> 00:00:37,840
+could say come here in my code and
+
+17
+00:00:35,760 --> 00:00:39,280
+create a new variable. We'll say let to
+
+18
+00:00:37,840 --> 00:00:41,200
+create the new variable. Then we'll give
+
+19
+00:00:39,280 --> 00:00:43,520
+the variable name. We'll call it first
+
+20
+00:00:41,200 --> 00:00:44,879
+name and we'll say equals and then let's
+
+21
+00:00:43,520 --> 00:00:46,480
+just prompt the user for their first
+
+22
+00:00:44,879 --> 00:00:50,239
+name. So we'll say prompt and we'll say
+
+23
+00:00:46,480 --> 00:00:51,920
+what is your first name and we'll put a
+
+24
+00:00:50,239 --> 00:00:53,520
+semicolon.
+
+25
+00:00:51,920 --> 00:00:55,440
+Now, we also know that we could use the
+
+26
+00:00:53,520 --> 00:00:58,640
+alert function to share a message to the
+
+27
+00:00:55,440 --> 00:01:01,520
+screen. So, we could say hello world,
+
+28
+00:00:58,640 --> 00:01:03,359
+but hello world isn't the most
+
+29
+00:01:01,520 --> 00:01:04,879
+personalized message really. We want to
+
+30
+00:01:03,359 --> 00:01:07,360
+say hello and then whatever first name
+
+31
+00:01:04,879 --> 00:01:08,400
+they entered. So, what we're going to do
+
+32
+00:01:07,360 --> 00:01:09,760
+is I'm going to show you how to
+
+33
+00:01:08,400 --> 00:01:13,119
+concatenate. So, we're going to say
+
+34
+00:01:09,760 --> 00:01:15,200
+hello and then plus. And that says we
+
+35
+00:01:13,119 --> 00:01:17,119
+are now concatenating. Take the string
+
+36
+00:01:15,200 --> 00:01:19,520
+before the plus and the string after the
+
+37
+00:01:17,119 --> 00:01:21,520
+plus and glue them together. We know
+
+38
+00:01:19,520 --> 00:01:23,200
+that first name is a variable and the
+
+39
+00:01:21,520 --> 00:01:25,759
+variable it's holding is the result of
+
+40
+00:01:23,200 --> 00:01:27,360
+the prompt and that result is always a
+
+41
+00:01:25,759 --> 00:01:29,840
+string. So we know first name is a
+
+42
+00:01:27,360 --> 00:01:31,520
+string. So we can take the string hello
+
+43
+00:01:29,840 --> 00:01:34,880
+and concatenate it with the string
+
+44
+00:01:31,520 --> 00:01:37,119
+inside of first name. If we save our
+
+45
+00:01:34,880 --> 00:01:39,840
+code and we move over to our web
+
+46
+00:01:37,119 --> 00:01:42,240
+browser, we can see it says what is your
+
+47
+00:01:39,840 --> 00:01:44,560
+first name? I will enter toa. Hit okay
+
+48
+00:01:42,240 --> 00:01:46,320
+and it says hello toa. And you'll notice
+
+49
+00:01:44,560 --> 00:01:48,000
+it glued them directly to each other.
+
+50
+00:01:46,320 --> 00:01:50,000
+There's no space in between the hello
+
+51
+00:01:48,000 --> 00:01:51,600
+and the toa. Um, that's because
+
+52
+00:01:50,000 --> 00:01:53,600
+JavaScript's not smart enough. It
+
+53
+00:01:51,600 --> 00:01:55,280
+doesn't read English. All it knows is
+
+54
+00:01:53,600 --> 00:01:57,360
+you told it glue this string to this
+
+55
+00:01:55,280 --> 00:01:58,880
+string. And it did that. If you want a
+
+56
+00:01:57,360 --> 00:02:01,520
+space, you've got to tell it you want a
+
+57
+00:01:58,880 --> 00:02:03,439
+space. So, let's go back over and we'll
+
+58
+00:02:01,520 --> 00:02:05,840
+put that in. So, we'll say hello and
+
+59
+00:02:03,439 --> 00:02:08,399
+then we'll put a space and then we'll
+
+60
+00:02:05,840 --> 00:02:10,239
+concatenate on first name. So, you'll
+
+61
+00:02:08,399 --> 00:02:11,840
+notice the space is inside of the
+
+62
+00:02:10,239 --> 00:02:13,599
+quotes. So, it's part of this first
+
+63
+00:02:11,840 --> 00:02:16,000
+string. This first string is hello
+
+64
+00:02:13,599 --> 00:02:18,560
+space. and then we put a plus sign for
+
+65
+00:02:16,000 --> 00:02:21,680
+concatenation and then we put first name
+
+66
+00:02:18,560 --> 00:02:23,440
+and that glues them together and it says
+
+67
+00:02:21,680 --> 00:02:25,599
+hello and then whatever the first name
+
+68
+00:02:23,440 --> 00:02:30,239
+is. If we save this and we come over to
+
+69
+00:02:25,599 --> 00:02:32,959
+our code um I'm going to hit cancel and
+
+70
+00:02:30,239 --> 00:02:35,920
+reload the page um says what is your
+
+71
+00:02:32,959 --> 00:02:39,200
+first name? If we put Ryan and hit okay
+
+72
+00:02:35,920 --> 00:02:41,760
+it says hello space Ryan. And so we've
+
+73
+00:02:39,200 --> 00:02:43,440
+successfully concatenated. So let's come
+
+74
+00:02:41,760 --> 00:02:46,160
+back over to our code. We now know that
+
+75
+00:02:43,440 --> 00:02:48,239
+we can glue strings together. Let's say
+
+76
+00:02:46,160 --> 00:02:50,239
+we wanted to glue some complicated stuff
+
+77
+00:02:48,239 --> 00:02:52,959
+together. So, let's say we wanted to get
+
+78
+00:02:50,239 --> 00:02:56,720
+their last name and we'd say prompt,
+
+79
+00:02:52,959 --> 00:03:00,720
+what is your last name?
+
+80
+00:02:56,720 --> 00:03:04,800
+And then we want their GPA. GPA equals
+
+81
+00:03:00,720 --> 00:03:07,920
+prompt, what is your GPA?
+
+82
+00:03:04,800 --> 00:03:10,400
+And then you you get the picture. You
+
+83
+00:03:07,920 --> 00:03:11,599
+could get a lot of information and you
+
+84
+00:03:10,400 --> 00:03:13,840
+would need to concatenate it all
+
+85
+00:03:11,599 --> 00:03:16,959
+together. So I might be saying hello
+
+86
+00:03:13,840 --> 00:03:19,200
+last name, first name. Your GPA is and
+
+87
+00:03:16,959 --> 00:03:20,959
+then concatenating on the GPA. If we do
+
+88
+00:03:19,200 --> 00:03:24,239
+it the way I showed you originally, then
+
+89
+00:03:20,959 --> 00:03:27,200
+we'd have to say hello space last name
+
+90
+00:03:24,239 --> 00:03:29,920
+and then concatenate on a comma and then
+
+91
+00:03:27,200 --> 00:03:34,640
+concatenate on the first name and then
+
+92
+00:03:29,920 --> 00:03:37,920
+concatenate on a space and then the text
+
+93
+00:03:34,640 --> 00:03:40,799
+your GPA is and then a space and then
+
+94
+00:03:37,920 --> 00:03:42,480
+concatenate on the GPA. And you can see
+
+95
+00:03:40,799 --> 00:03:44,159
+that the more information you're
+
+96
+00:03:42,480 --> 00:03:46,000
+concatenating together, the more
+
+97
+00:03:44,159 --> 00:03:48,319
+complicated this becomes. So if we save
+
+98
+00:03:46,000 --> 00:03:50,879
+this and we come over, says, what is
+
+99
+00:03:48,319 --> 00:03:55,440
+your first name? Say Tim. What is your
+
+100
+00:03:50,879 --> 00:03:57,680
+last name? Drake. What is your GPA? 3.4.
+
+101
+00:03:55,440 --> 00:04:00,400
+And now it says, hello, Drake, Tim. Your
+
+102
+00:03:57,680 --> 00:04:02,159
+GPA is 3.4.
+
+103
+00:04:00,400 --> 00:04:03,439
+So that's great. We're only
+
+104
+00:04:02,159 --> 00:04:04,640
+concatenating three pieces of
+
+105
+00:04:03,439 --> 00:04:06,319
+information, but you could see how this
+
+106
+00:04:04,640 --> 00:04:08,080
+could quickly become a pain. So, I'm
+
+107
+00:04:06,319 --> 00:04:09,519
+going to hit close and I'm going to come
+
+108
+00:04:08,080 --> 00:04:11,920
+back over and I'm going to show you how
+
+109
+00:04:09,519 --> 00:04:13,760
+you could do this exact same thing a
+
+110
+00:04:11,920 --> 00:04:16,000
+little more simply. So, what I'm going
+
+111
+00:04:13,760 --> 00:04:18,239
+to do is I'm going to type alert and
+
+112
+00:04:16,000 --> 00:04:19,919
+then I'm going to create a string. And
+
+113
+00:04:18,239 --> 00:04:22,160
+what I'm going to create is called a
+
+114
+00:04:19,919 --> 00:04:23,919
+formatted string. The way you create a
+
+115
+00:04:22,160 --> 00:04:26,400
+formatted string is you use the little
+
+116
+00:04:23,919 --> 00:04:28,080
+back tick icon and it is right
+
+117
+00:04:26,400 --> 00:04:30,320
+underneath the escape key on your
+
+118
+00:04:28,080 --> 00:04:32,080
+computer. So, type the back tick icon
+
+119
+00:04:30,320 --> 00:04:34,880
+and then type it again and that will
+
+120
+00:04:32,080 --> 00:04:37,759
+give you a string. And inside of here,
+
+121
+00:04:34,880 --> 00:04:39,919
+we're going to say hello. And then now,
+
+122
+00:04:37,759 --> 00:04:41,840
+this is where we would want to inject
+
+123
+00:04:39,919 --> 00:04:44,240
+their last name. So, what we're going to
+
+124
+00:04:41,840 --> 00:04:46,479
+do is we're going to say dollar sign
+
+125
+00:04:44,240 --> 00:04:49,600
+curly braces.
+
+126
+00:04:46,479 --> 00:04:51,199
+Um, the curly braces are near the delete
+
+127
+00:04:49,600 --> 00:04:52,960
+or backspace key, depending on if you're
+
+128
+00:04:51,199 --> 00:04:57,040
+on Windows or Mac. It's directly below
+
+129
+00:04:52,960 --> 00:04:59,360
+it. Well, almost directly below it. So,
+
+130
+00:04:57,040 --> 00:05:01,360
+now anything I type in between these
+
+131
+00:04:59,360 --> 00:05:03,360
+curly braces, I can now reference other
+
+132
+00:05:01,360 --> 00:05:05,199
+variables. And JavaScript is smart
+
+133
+00:05:03,360 --> 00:05:06,880
+enough that it'll take this string and
+
+134
+00:05:05,199 --> 00:05:10,639
+it'll inject the variable directly in
+
+135
+00:05:06,880 --> 00:05:12,639
+there. So I can say hello last name
+
+136
+00:05:10,639 --> 00:05:16,320
+and then I can put a comma after the
+
+137
+00:05:12,639 --> 00:05:18,880
+curly braces and then I can put a dollar
+
+138
+00:05:16,320 --> 00:05:21,600
+sign and another set of curly braces.
+
+139
+00:05:18,880 --> 00:05:25,919
+First name and then I can put a space
+
+140
+00:05:21,600 --> 00:05:29,120
+and say your GPA is and then I can put
+
+141
+00:05:25,919 --> 00:05:31,520
+dollar sign curly braces GPA.
+
+142
+00:05:29,120 --> 00:05:33,600
+This line does exactly the same thing as
+
+143
+00:05:31,520 --> 00:05:35,039
+the line above, but now we don't have as
+
+144
+00:05:33,600 --> 00:05:36,479
+many plus signs and we don't have to
+
+145
+00:05:35,039 --> 00:05:38,880
+worry if we've closed all our double
+
+146
+00:05:36,479 --> 00:05:41,280
+quotes and make sure we have spaces in
+
+147
+00:05:38,880 --> 00:05:43,039
+all the right place. We can type out our
+
+148
+00:05:41,280 --> 00:05:46,080
+messages exactly as we want it to
+
+149
+00:05:43,039 --> 00:05:47,919
+appear. Put in placeholders and say what
+
+150
+00:05:46,080 --> 00:05:49,199
+we want to go into those placeholders.
+
+151
+00:05:47,919 --> 00:05:50,160
+So in this case, we have a placeholder
+
+152
+00:05:49,199 --> 00:05:52,080
+here and we want to fill it with
+
+153
+00:05:50,160 --> 00:05:53,120
+whatever last name is. A placeholder
+
+154
+00:05:52,080 --> 00:05:54,720
+here and we want to fill it with
+
+155
+00:05:53,120 --> 00:05:56,000
+whatever first name is. And a
+
+156
+00:05:54,720 --> 00:05:58,560
+placeholder here and we want to fill it
+
+157
+00:05:56,000 --> 00:06:00,880
+with whether whatever GPA is. These two
+
+158
+00:05:58,560 --> 00:06:02,880
+lines accomplish the exact same thing.
+
+159
+00:06:00,880 --> 00:06:05,840
+The second line, depending on your
+
+160
+00:06:02,880 --> 00:06:07,440
+opinion, might be more readable. In the
+
+161
+00:06:05,840 --> 00:06:10,000
+course, I don't care which one you do.
+
+162
+00:06:07,440 --> 00:06:11,360
+Just pick one and do whichever one works
+
+163
+00:06:10,000 --> 00:06:13,600
+for you. But these are two different
+
+164
+00:06:11,360 --> 00:06:15,360
+ways to concatenate the same thing. To
+
+165
+00:06:13,600 --> 00:06:17,840
+prove that to you, I will save this
+
+166
+00:06:15,360 --> 00:06:20,000
+code. We'll come over here and it'll
+
+167
+00:06:17,840 --> 00:06:22,080
+say, "What is your first name?" Tim.
+
+168
+00:06:20,000 --> 00:06:25,440
+What is your last name? Drake. What is
+
+169
+00:06:22,080 --> 00:06:28,319
+your GPA? 4.0. And it says, "Hello,
+
+170
+00:06:25,440 --> 00:06:30,960
+Drake, Tim. Your GPA is 4.0. 0. Hello
+
+171
+00:06:28,319 --> 00:06:33,039
+Drake, Tim, your GPA is 4.0. So, we got
+
+172
+00:06:30,960 --> 00:06:34,639
+two messages. They look exactly the
+
+173
+00:06:33,039 --> 00:06:37,440
+same. We were able to accomplish the
+
+174
+00:06:34,639 --> 00:06:39,440
+same thing. One of them uses um
+
+175
+00:06:37,440 --> 00:06:41,520
+formatted strings and the other one uses
+
+176
+00:06:39,440 --> 00:06:43,520
+concatenation. And I will let you take
+
+177
+00:06:41,520 --> 00:06:46,680
+your pick which one you prefer. Thanks
+
+178
+00:06:43,520 --> 00:06:46,680
+for watching.

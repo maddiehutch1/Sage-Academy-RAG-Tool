@@ -1,0 +1,331 @@
+1
+00:00:00,080 --> 00:00:03,200
+In order to further understand that
+
+2
+00:00:01,600 --> 00:00:06,319
+though, we do first have to understand
+
+3
+00:00:03,200 --> 00:00:07,919
+the event object a little more. So, what
+
+4
+00:00:06,319 --> 00:00:10,080
+I'm going to do is I'm going to get rid
+
+5
+00:00:07,919 --> 00:00:13,280
+of this log here, and I'll put it back
+
+6
+00:00:10,080 --> 00:00:15,599
+for the next video. Um, but we're just
+
+7
+00:00:13,280 --> 00:00:18,080
+going to have this log here. If we want
+
+8
+00:00:15,599 --> 00:00:21,439
+to see the event, we can actually pass
+
+9
+00:00:18,080 --> 00:00:23,199
+it as a we can actually pass it into our
+
+10
+00:00:21,439 --> 00:00:25,680
+function. Here in our function, we need
+
+11
+00:00:23,199 --> 00:00:27,119
+to accept it. Um, oftent times when
+
+12
+00:00:25,680 --> 00:00:29,840
+you're accepting an event, it's
+
+13
+00:00:27,119 --> 00:00:31,039
+abbreviated as E. You can type out event
+
+14
+00:00:29,840 --> 00:00:32,719
+because again you can name your
+
+15
+00:00:31,039 --> 00:00:35,120
+parameter whatever you want but it'll
+
+16
+00:00:32,719 --> 00:00:37,120
+receive whatever gets passed in. So I'm
+
+17
+00:00:35,120 --> 00:00:39,360
+going to call mine e and I'm just going
+
+18
+00:00:37,120 --> 00:00:41,360
+to log out
+
+19
+00:00:39,360 --> 00:00:43,360
+console.log
+
+20
+00:00:41,360 --> 00:00:48,160
+e.
+
+21
+00:00:43,360 --> 00:00:50,960
+So if we come over to our running page
+
+22
+00:00:48,160 --> 00:00:52,239
+and we click on this innermost layer.
+
+23
+00:00:50,960 --> 00:00:53,440
+Remember technically when we click on
+
+24
+00:00:52,239 --> 00:00:55,760
+this we're clicking on the one in front
+
+25
+00:00:53,440 --> 00:00:58,399
+of it and the one outside of there. So,
+
+26
+00:00:55,760 --> 00:01:00,160
+if we click, we get a pointer event and
+
+27
+00:00:58,399 --> 00:01:02,879
+we can actually open this up and it's an
+
+28
+00:01:00,160 --> 00:01:04,799
+object and
+
+29
+00:01:02,879 --> 00:01:06,479
+it has a lot of attributes. One of the
+
+30
+00:01:04,799 --> 00:01:08,080
+attributes that's really interesting is
+
+31
+00:01:06,479 --> 00:01:11,200
+it's a type. It says the event that just
+
+32
+00:01:08,080 --> 00:01:12,720
+happened was a click event. Um, the
+
+33
+00:01:11,200 --> 00:01:15,520
+other thing that's helpful is it has a
+
+34
+00:01:12,720 --> 00:01:17,840
+target and that target is this div with
+
+35
+00:01:15,520 --> 00:01:19,680
+the class of third. So, this div right
+
+36
+00:01:17,840 --> 00:01:21,119
+here, you can see it highlighted and if
+
+37
+00:01:19,680 --> 00:01:23,520
+I click on it, it actually takes me over
+
+38
+00:01:21,119 --> 00:01:26,880
+to the HTML page and highlights it. So
+
+39
+00:01:23,520 --> 00:01:29,759
+you can see exactly which
+
+40
+00:01:26,880 --> 00:01:33,360
+which thing was targeted.
+
+41
+00:01:29,759 --> 00:01:35,439
+Um we can see the pointer type is mouse.
+
+42
+00:01:33,360 --> 00:01:38,079
+Um
+
+43
+00:01:35,439 --> 00:01:42,159
+we can see there's just a whole bunch of
+
+44
+00:01:38,079 --> 00:01:45,040
+details here. Um
+
+45
+00:01:42,159 --> 00:01:47,439
+and so you can see a whole bunch of
+
+46
+00:01:45,040 --> 00:01:49,360
+things about the event. Two things that
+
+47
+00:01:47,439 --> 00:01:52,640
+are really helpful to know about the
+
+48
+00:01:49,360 --> 00:01:54,880
+event. One of those is to know the
+
+49
+00:01:52,640 --> 00:01:59,680
+event.target because then you know what
+
+50
+00:01:54,880 --> 00:02:04,479
+got clicked and I'm going to console.log
+
+51
+00:01:59,680 --> 00:02:06,960
+um the item that was clicked was and
+
+52
+00:02:04,479 --> 00:02:10,080
+then I'm going to log out the target and
+
+53
+00:02:06,960 --> 00:02:12,480
+then I'm going to say console.log log
+
+54
+00:02:10,080 --> 00:02:15,280
+the item that
+
+55
+00:02:12,480 --> 00:02:18,560
+has the event
+
+56
+00:02:15,280 --> 00:02:22,160
+handler is and then below it I'm going
+
+57
+00:02:18,560 --> 00:02:24,000
+to log console.log
+
+58
+00:02:22,160 --> 00:02:25,920
+ecurrent
+
+59
+00:02:24,000 --> 00:02:27,520
+target.
+
+60
+00:02:25,920 --> 00:02:29,840
+So we're going to save this and we're
+
+61
+00:02:27,520 --> 00:02:32,959
+going to come over. If I click here it
+
+62
+00:02:29,840 --> 00:02:36,480
+says the item that was clicked was div
+
+63
+00:02:32,959 --> 00:02:38,480
+class third two layers in. So we can see
+
+64
+00:02:36,480 --> 00:02:41,519
+that it's that div. The item that has
+
+65
+00:02:38,480 --> 00:02:45,440
+the event handler is this big outer
+
+66
+00:02:41,519 --> 00:02:49,680
+object. So we clicked here, it bubbled
+
+67
+00:02:45,440 --> 00:02:51,280
+up and then it triggered the log here.
+
+68
+00:02:49,680 --> 00:02:54,160
+So
+
+69
+00:02:51,280 --> 00:02:56,319
+current item, sorry. So current target
+
+70
+00:02:54,160 --> 00:02:59,680
+is the one that actually has the event,
+
+71
+00:02:56,319 --> 00:03:02,000
+the onclick event. Target is where the
+
+72
+00:02:59,680 --> 00:03:04,000
+click actually happened. So if you want
+
+73
+00:03:02,000 --> 00:03:07,040
+to know what they actually clicked on,
+
+74
+00:03:04,000 --> 00:03:09,440
+then you use target. If you want to know
+
+75
+00:03:07,040 --> 00:03:11,200
+which event handler got called, then you
+
+76
+00:03:09,440 --> 00:03:13,200
+use current target and that'll tell you
+
+77
+00:03:11,200 --> 00:03:14,560
+the HTML element that handles that
+
+78
+00:03:13,200 --> 00:03:18,319
+event.
+
+79
+00:03:14,560 --> 00:03:22,840
+But let's come back here and we're going
+
+80
+00:03:18,319 --> 00:03:22,840
+to add back those on click events.
+
+81
+00:03:24,560 --> 00:03:29,280
+And I will show you in the next video
+
+82
+00:03:26,720 --> 00:03:31,440
+how to prevent the bubbling that we just
+
+83
+00:03:29,280 --> 00:03:31,440
+saw.

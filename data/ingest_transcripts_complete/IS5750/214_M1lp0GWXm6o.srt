@@ -1,0 +1,303 @@
+1
+00:00:00,480 --> 00:00:04,000
+Well, GitHub and Verscell are not the
+
+2
+00:00:02,560 --> 00:00:06,560
+only places that you can deploy your
+
+3
+00:00:04,000 --> 00:00:08,400
+code. Another option is Netifi. Um, and
+
+4
+00:00:06,560 --> 00:00:09,360
+they also have a free account. So, what
+
+5
+00:00:08,400 --> 00:00:11,040
+I'm going to do is I'm going to click
+
+6
+00:00:09,360 --> 00:00:12,240
+sign up.
+
+7
+00:00:11,040 --> 00:00:13,519
+And then it's going to say, what do you
+
+8
+00:00:12,240 --> 00:00:16,720
+want to sign up with? I'm going to sign
+
+9
+00:00:13,519 --> 00:00:19,520
+up with my GitHub. And then I'm going to
+
+10
+00:00:16,720 --> 00:00:21,680
+continue. And then it says just like for
+
+11
+00:00:19,520 --> 00:00:23,680
+sale, it's asking if Netifi can access
+
+12
+00:00:21,680 --> 00:00:25,519
+my GitHub account. And the main thing it
+
+13
+00:00:23,680 --> 00:00:29,039
+wants to access is my email address. I'm
+
+14
+00:00:25,519 --> 00:00:31,439
+going to authorize that.
+
+15
+00:00:29,039 --> 00:00:34,439
+And now um it's asking for my first
+
+16
+00:00:31,439 --> 00:00:34,439
+name.
+
+17
+00:00:36,079 --> 00:00:39,440
+And then how am I planning to use
+
+18
+00:00:37,360 --> 00:00:44,239
+Netifi? I'm going to use it for personal
+
+19
+00:00:39,440 --> 00:00:46,480
+things. Um I like web apps.
+
+20
+00:00:44,239 --> 00:00:50,760
+We're going to go with other here. What
+
+21
+00:00:46,480 --> 00:00:50,760
+is the name of my team?
+
+22
+00:00:51,600 --> 00:00:56,000
+And then we'll continue to deploy. So
+
+23
+00:00:54,239 --> 00:00:58,079
+now there's a couple ways to do this.
+
+24
+00:00:56,000 --> 00:00:59,600
+Um, the easiest way for us is to choose
+
+25
+00:00:58,079 --> 00:01:01,680
+GitHub.
+
+26
+00:00:59,600 --> 00:01:03,440
+And it says, "Please authorize it."
+
+27
+00:01:01,680 --> 00:01:05,040
+We're going to authorize Netlefi to
+
+28
+00:01:03,440 --> 00:01:08,159
+access some of our resources on our
+
+29
+00:01:05,040 --> 00:01:09,680
+account. Um, and we're going to let it
+
+30
+00:01:08,159 --> 00:01:11,520
+know specifically which resources we
+
+31
+00:01:09,680 --> 00:01:13,200
+want it to use, and it is going to
+
+32
+00:01:11,520 --> 00:01:14,640
+verify that we are who we say we are
+
+33
+00:01:13,200 --> 00:01:16,080
+using our email address. So, let's
+
+34
+00:01:14,640 --> 00:01:18,159
+authorize that similar thing that we
+
+35
+00:01:16,080 --> 00:01:21,200
+authorize for sale for. We'll hit
+
+36
+00:01:18,159 --> 00:01:22,799
+continue. And once again, you now have a
+
+37
+00:01:21,200 --> 00:01:24,799
+choice. You can give it access to all of
+
+38
+00:01:22,799 --> 00:01:27,040
+your repositories or only specific ones.
+
+39
+00:01:24,799 --> 00:01:29,200
+I'm going to go with only specific ones.
+
+40
+00:01:27,040 --> 00:01:32,920
+And I'm going to click on dice roller.
+
+41
+00:01:29,200 --> 00:01:32,920
+And I'm going to click install.
+
+42
+00:01:32,960 --> 00:01:38,320
+And here it is. Um,
+
+43
+00:01:36,560 --> 00:01:41,119
+and it says deploy dice roller to
+
+44
+00:01:38,320 --> 00:01:43,280
+Netlefi. And I'm going to click, I don't
+
+45
+00:01:41,119 --> 00:01:44,720
+know if you saw that, edit uh deployment
+
+46
+00:01:43,280 --> 00:01:46,880
+settings. And instead of deploying from
+
+47
+00:01:44,720 --> 00:01:50,560
+main, I'm going to click deploy. If you
+
+48
+00:01:46,880 --> 00:01:53,040
+merged all of your code from main um
+
+49
+00:01:50,560 --> 00:01:55,360
+from your branch into main, then you can
+
+50
+00:01:53,040 --> 00:01:56,720
+just go ahead and deploy main. And that
+
+51
+00:01:55,360 --> 00:01:57,920
+is the only thing I'm going to change.
+
+52
+00:01:56,720 --> 00:02:00,960
+And I'm going to click deploy dice
+
+53
+00:01:57,920 --> 00:02:02,479
+roller to netify. And now it's going to
+
+54
+00:02:00,960 --> 00:02:04,399
+take a little bit. And it does offer you
+
+55
+00:02:02,479 --> 00:02:05,600
+to play a game. It is a matching game.
+
+56
+00:02:04,399 --> 00:02:07,040
+You can play a matching game while you
+
+57
+00:02:05,600 --> 00:02:08,720
+wait. Wow. What are the chances that I
+
+58
+00:02:07,040 --> 00:02:11,760
+would get a first try? Anyway, I'm going
+
+59
+00:02:08,720 --> 00:02:14,800
+to return to deploy because um this one
+
+60
+00:02:11,760 --> 00:02:17,040
+is complete and it's working on it's
+
+61
+00:02:14,800 --> 00:02:18,640
+complete the initialization. It's
+
+62
+00:02:17,040 --> 00:02:22,080
+completed building, deploying, and
+
+63
+00:02:18,640 --> 00:02:24,800
+cleaning up. And it's deployed it. Um so
+
+64
+00:02:22,080 --> 00:02:27,200
+now we can open production deploy. Here
+
+65
+00:02:24,800 --> 00:02:30,239
+it is. And our dice are ready to roll.
+
+66
+00:02:27,200 --> 00:02:31,599
+We can go ahead and freeze them. And
+
+67
+00:02:30,239 --> 00:02:34,720
+awesome. So let's come back over to
+
+68
+00:02:31,599 --> 00:02:37,840
+Netifi. Um,
+
+69
+00:02:34,720 --> 00:02:39,760
+and you can see here is the perma link.
+
+70
+00:02:37,840 --> 00:02:42,560
+And if you open it up, you can see in
+
+71
+00:02:39,760 --> 00:02:44,959
+the top URL bar it's https,
+
+72
+00:02:42,560 --> 00:02:46,879
+a whole bunch of stuff.netifi.app.
+
+73
+00:02:44,959 --> 00:02:48,239
+And your app is now publicly accessible
+
+74
+00:02:46,879 --> 00:02:50,080
+to the world. Anyone you give this link
+
+75
+00:02:48,239 --> 00:02:53,440
+to will be able to use your app. And
+
+76
+00:02:50,080 --> 00:02:53,440
+that is how you'd play on Netifi.

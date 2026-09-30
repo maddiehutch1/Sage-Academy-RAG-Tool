@@ -1,0 +1,511 @@
+1
+00:00:00,080 --> 00:00:04,880
+Now that we've talked a little bit about
+
+2
+00:00:01,439 --> 00:00:06,960
+how you can access things from an array
+
+3
+00:00:04,880 --> 00:00:08,320
+and how you can update them, one of the
+
+4
+00:00:06,960 --> 00:00:10,400
+things we need to do is we need to talk
+
+5
+00:00:08,320 --> 00:00:12,320
+about how to add things to the end and
+
+6
+00:00:10,400 --> 00:00:13,759
+remove them and add things to the front
+
+7
+00:00:12,320 --> 00:00:15,360
+and remove them. So what I'm going to do
+
+8
+00:00:13,759 --> 00:00:17,600
+is I'm going to clear out this section.
+
+9
+00:00:15,360 --> 00:00:20,720
+So I've just got my first names and it's
+
+10
+00:00:17,600 --> 00:00:24,080
+to Bruce, Tim, and Natasha. So if we
+
+11
+00:00:20,720 --> 00:00:26,160
+want to add to this array then and we
+
+12
+00:00:24,080 --> 00:00:28,640
+want to add on to the end then we access
+
+13
+00:00:26,160 --> 00:00:30,720
+the array and we say first names dot and
+
+14
+00:00:28,640 --> 00:00:32,559
+because it's an array there's a whole
+
+15
+00:00:30,720 --> 00:00:34,640
+bunch of things you can do with it. So
+
+16
+00:00:32,559 --> 00:00:36,559
+you can concatenate, you can copy
+
+17
+00:00:34,640 --> 00:00:38,640
+within, there's an every function,
+
+18
+00:00:36,559 --> 00:00:40,800
+there's a for each function. Like
+
+19
+00:00:38,640 --> 00:00:43,120
+there's a ton of things that you can do
+
+20
+00:00:40,800 --> 00:00:45,280
+with this. And just to show you that
+
+21
+00:00:43,120 --> 00:00:49,600
+this is not unique to arrays, we'll say
+
+22
+00:00:45,280 --> 00:00:51,520
+let my name equal to. If I said my name
+
+23
+00:00:49,600 --> 00:00:53,120
+dot, you can see that there's a whole
+
+24
+00:00:51,520 --> 00:00:55,600
+bunch of things that you can do with a
+
+25
+00:00:53,120 --> 00:00:59,520
+string. So some of the things that you
+
+26
+00:00:55,600 --> 00:01:02,640
+one of the things that you can do
+
+27
+00:00:59,520 --> 00:01:05,439
+um with an array is you can add
+
+28
+00:01:02,640 --> 00:01:07,439
+something to the end. So we could say
+
+29
+00:01:05,439 --> 00:01:11,040
+let wonderoman
+
+30
+00:01:07,439 --> 00:01:13,680
+name equal Diana and we could add her
+
+31
+00:01:11,040 --> 00:01:15,840
+name into the first names list or sorry
+
+32
+00:01:13,680 --> 00:01:18,400
+first names Ray. Um we'll say first
+
+33
+00:01:15,840 --> 00:01:21,360
+names dot and the way you add something
+
+34
+00:01:18,400 --> 00:01:23,759
+is you use the push function. when we
+
+35
+00:01:21,360 --> 00:01:26,560
+put a parenthesy, it says it needs some
+
+36
+00:01:23,759 --> 00:01:30,560
+items that you want to add into this
+
+37
+00:01:26,560 --> 00:01:32,799
+first names um list. So, let's push in
+
+38
+00:01:30,560 --> 00:01:36,880
+Wonder Woman's name. Once we've done
+
+39
+00:01:32,799 --> 00:01:40,360
+that, we're going to console.log
+
+40
+00:01:36,880 --> 00:01:40,360
+first names.
+
+41
+00:01:40,400 --> 00:01:46,640
+So, we'll save this.
+
+42
+00:01:44,079 --> 00:01:49,200
+We'll come over to our code. And now you
+
+43
+00:01:46,640 --> 00:01:51,920
+can see that the array says Toa, Bruce,
+
+44
+00:01:49,200 --> 00:01:54,960
+Tim, Natasha, and Diana. And it put
+
+45
+00:01:51,920 --> 00:01:56,640
+Diana directly on at the end of the
+
+46
+00:01:54,960 --> 00:01:57,920
+array.
+
+47
+00:01:56,640 --> 00:01:59,119
+Well, let's say you want to remove
+
+48
+00:01:57,920 --> 00:02:00,560
+something from the array, and you want
+
+49
+00:01:59,119 --> 00:02:02,240
+to remove something off of the end of
+
+50
+00:02:00,560 --> 00:02:03,840
+the array.
+
+51
+00:02:02,240 --> 00:02:05,759
+So,
+
+52
+00:02:03,840 --> 00:02:07,200
+let's say we want to take Diana off. If
+
+53
+00:02:05,759 --> 00:02:11,520
+we want to do that, then we can say
+
+54
+00:02:07,200 --> 00:02:15,200
+first names. Pop.
+
+55
+00:02:11,520 --> 00:02:17,840
+And if we save that and we come over and
+
+56
+00:02:15,200 --> 00:02:21,120
+we reload our page. Oh, I forgot to
+
+57
+00:02:17,840 --> 00:02:22,959
+print it again. We'll add console
+
+58
+00:02:21,120 --> 00:02:26,239
+console.log
+
+59
+00:02:22,959 --> 00:02:29,360
+first names. And if we save that and we
+
+60
+00:02:26,239 --> 00:02:31,840
+come over here, we first get the array
+
+61
+00:02:29,360 --> 00:02:33,200
+that has Diana added to the end and then
+
+62
+00:02:31,840 --> 00:02:36,160
+then we get an array that has her
+
+63
+00:02:33,200 --> 00:02:38,000
+removed from the end.
+
+64
+00:02:36,160 --> 00:02:41,120
+Well, sometimes you don't want to add to
+
+65
+00:02:38,000 --> 00:02:44,000
+the end. You want to add to the front.
+
+66
+00:02:41,120 --> 00:02:47,040
+So, let's do that. So, let's go to our
+
+67
+00:02:44,000 --> 00:02:50,160
+first names list and then we'll say
+
+68
+00:02:47,040 --> 00:02:52,239
+unshift. Unshift means take all the
+
+69
+00:02:50,160 --> 00:02:55,360
+items, shift them over to the right, and
+
+70
+00:02:52,239 --> 00:02:58,959
+insert something in front. So, let's
+
+71
+00:02:55,360 --> 00:03:03,560
+unshift Wonder Woman's name.
+
+72
+00:02:58,959 --> 00:03:03,560
+And then let's console.log that again.
+
+73
+00:03:03,760 --> 00:03:08,480
+So, if we come back over here, we see
+
+74
+00:03:06,319 --> 00:03:10,560
+Toa, Bruce, Tim, Natasha, Diana. She was
+
+75
+00:03:08,480 --> 00:03:12,480
+added to the end. Then we see Toa,
+
+76
+00:03:10,560 --> 00:03:14,640
+Bruce, Tim, Natasha. She was removed
+
+77
+00:03:12,480 --> 00:03:16,720
+from the end. Then we see Diana, Toa,
+
+78
+00:03:14,640 --> 00:03:19,840
+Bruce, Tim, Natasha. And we've stuck
+
+79
+00:03:16,720 --> 00:03:22,159
+Diana in at the front.
+
+80
+00:03:19,840 --> 00:03:25,120
+Well, sometimes you also want to get rid
+
+81
+00:03:22,159 --> 00:03:27,120
+of something from the front. Um, and if
+
+82
+00:03:25,120 --> 00:03:30,640
+you want to do that, then you say first
+
+83
+00:03:27,120 --> 00:03:33,280
+names do uh shift.
+
+84
+00:03:30,640 --> 00:03:37,040
+Shift means take out the first item and
+
+85
+00:03:33,280 --> 00:03:39,840
+shift everything over to the left.
+
+86
+00:03:37,040 --> 00:03:41,599
+So if we save that and we come here to
+
+87
+00:03:39,840 --> 00:03:45,400
+our code. Oh, it would help if I
+
+88
+00:03:41,599 --> 00:03:45,400
+console.log bit.
+
+89
+00:03:48,480 --> 00:03:52,959
+So we save that and we come over here.
+
+90
+00:03:50,720 --> 00:03:54,959
+Now we see Bruce, Tim, Nat Tasha, Diana.
+
+91
+00:03:52,959 --> 00:03:57,040
+We've added her to the end. To Bruce,
+
+92
+00:03:54,959 --> 00:03:59,680
+Tim, Natasha, we've removed her from the
+
+93
+00:03:57,040 --> 00:04:01,519
+end. Diana to Bruce, Tim, Natasha, we've
+
+94
+00:03:59,680 --> 00:04:03,680
+added her to the front. And then we say
+
+95
+00:04:01,519 --> 00:04:08,159
+to Bruce, Tim, Natasha, we've now
+
+96
+00:04:03,680 --> 00:04:11,200
+removed Diana from the front. And um in
+
+97
+00:04:08,159 --> 00:04:13,040
+that way you can manipulate your array.
+
+98
+00:04:11,200 --> 00:04:14,720
+Now you may be wondering why would we
+
+99
+00:04:13,040 --> 00:04:16,639
+want to do this? Well, it's just
+
+100
+00:04:14,720 --> 00:04:18,720
+different forms of processing. So for
+
+101
+00:04:16,639 --> 00:04:21,120
+example, if you think about when you go
+
+102
+00:04:18,720 --> 00:04:23,680
+to the store and you get in line to
+
+103
+00:04:21,120 --> 00:04:26,000
+check out when you're standing in line,
+
+104
+00:04:23,680 --> 00:04:27,680
+the first person who got in line is the
+
+105
+00:04:26,000 --> 00:04:30,720
+first person who gets taken out of the
+
+106
+00:04:27,680 --> 00:04:33,840
+line. So in that case we're the first
+
+107
+00:04:30,720 --> 00:04:37,759
+thing we added is being removed from the
+
+108
+00:04:33,840 --> 00:04:39,680
+front and that is what we call a Q. A
+
+109
+00:04:37,759 --> 00:04:41,199
+stack is if you think of a stack of
+
+110
+00:04:39,680 --> 00:04:42,720
+plates at a buffet table they put the
+
+111
+00:04:41,199 --> 00:04:45,120
+plates at the table and the plates
+
+112
+00:04:42,720 --> 00:04:48,080
+slowly rise up. The last plate they put
+
+113
+00:04:45,120 --> 00:04:50,320
+on is the first plate they take off. So
+
+114
+00:04:48,080 --> 00:04:52,960
+in that case they're removing the very
+
+115
+00:04:50,320 --> 00:04:54,880
+last item off the end of an array. And
+
+116
+00:04:52,960 --> 00:04:57,199
+sometimes in your coding you'll want to
+
+117
+00:04:54,880 --> 00:04:58,800
+do either of those. I don't need you to
+
+118
+00:04:57,199 --> 00:05:00,720
+remember either of those for now. I just
+
+119
+00:04:58,800 --> 00:05:02,160
+need you to remember that you can remove
+
+120
+00:05:00,720 --> 00:05:04,800
+you can add and remove items from the
+
+121
+00:05:02,160 --> 00:05:06,240
+front and you can add and remove items
+
+122
+00:05:04,800 --> 00:05:07,360
+from sorry you can add and remove items
+
+123
+00:05:06,240 --> 00:05:09,440
+from the front and you can add and
+
+124
+00:05:07,360 --> 00:05:11,039
+remove items from the end. And as long
+
+125
+00:05:09,440 --> 00:05:13,600
+as you know how to do that you know a
+
+126
+00:05:11,039 --> 00:05:15,360
+lot about how to manipulate an array.
+
+127
+00:05:13,600 --> 00:05:17,919
+And that concludes this video. Thanks
+
+128
+00:05:15,360 --> 00:05:17,919
+for watching.

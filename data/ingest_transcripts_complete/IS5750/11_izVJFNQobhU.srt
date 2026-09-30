@@ -1,0 +1,315 @@
+1
+00:00:00,640 --> 00:00:06,240
+So variables, data types, what makes
+
+2
+00:00:03,360 --> 00:00:09,040
+them tick? So we're going to talk about
+
+3
+00:00:06,240 --> 00:00:10,960
+that today. A variable, when you create
+
+4
+00:00:09,040 --> 00:00:12,719
+a variable, all you're doing is you're
+
+5
+00:00:10,960 --> 00:00:14,400
+saying, "Hey, computer, there's a piece
+
+6
+00:00:12,719 --> 00:00:16,160
+of information I need you to keep track
+
+7
+00:00:14,400 --> 00:00:17,840
+of." And then you're going to say,
+
+8
+00:00:16,160 --> 00:00:19,920
+"Please store this piece of
+
+9
+00:00:17,840 --> 00:00:22,240
+information." Different pieces of
+
+10
+00:00:19,920 --> 00:00:24,960
+information take up different sizes and
+
+11
+00:00:22,240 --> 00:00:27,760
+different amounts of memory. And so
+
+12
+00:00:24,960 --> 00:00:29,599
+those are called data types. When you
+
+13
+00:00:27,760 --> 00:00:31,199
+store something on your computer, it
+
+14
+00:00:29,599 --> 00:00:33,040
+needs somewhere to store it. So, what it
+
+15
+00:00:31,199 --> 00:00:35,280
+does is it takes all of the memory it
+
+16
+00:00:33,040 --> 00:00:37,440
+has available and then it allocates a
+
+17
+00:00:35,280 --> 00:00:38,960
+small section of that memory and says,
+
+18
+00:00:37,440 --> 00:00:40,719
+"Okay, here's where I'm going to store
+
+19
+00:00:38,960 --> 00:00:42,719
+the information that you give me." And
+
+20
+00:00:40,719 --> 00:00:46,000
+it can store it in different size boxes.
+
+21
+00:00:42,719 --> 00:00:49,680
+So, I've got a box this size
+
+22
+00:00:46,000 --> 00:00:51,200
+and I've got a box this size. Your
+
+23
+00:00:49,680 --> 00:00:52,960
+computer does a similar thing when it's
+
+24
+00:00:51,200 --> 00:00:54,719
+storing pieces of information. It tries
+
+25
+00:00:52,960 --> 00:00:58,000
+to find the right size box to store it
+
+26
+00:00:54,719 --> 00:00:59,680
+in. So, if
+
+27
+00:00:58,000 --> 00:01:01,359
+I had a small piece of information, I'd
+
+28
+00:00:59,680 --> 00:01:02,800
+store it in this box. If I had a larger
+
+29
+00:01:01,359 --> 00:01:06,240
+piece of information, I'd store it in
+
+30
+00:01:02,800 --> 00:01:07,920
+this box. And that is how your computer
+
+31
+00:01:06,240 --> 00:01:10,560
+works with pieces of information because
+
+32
+00:01:07,920 --> 00:01:12,479
+it finds the right box for them.
+
+33
+00:01:10,560 --> 00:01:15,840
+Now, if I were to ask you what is in
+
+34
+00:01:12,479 --> 00:01:17,119
+this box, you probably couldn't tell me.
+
+35
+00:01:15,840 --> 00:01:18,479
+Not unless you've watched further in
+
+36
+00:01:17,119 --> 00:01:21,119
+this video and you know exactly what's
+
+37
+00:01:18,479 --> 00:01:23,280
+in this box. If I put a label on this
+
+38
+00:01:21,119 --> 00:01:24,720
+box and it said electronics, then you'd
+
+39
+00:01:23,280 --> 00:01:26,799
+probably guess that there's electronics
+
+40
+00:01:24,720 --> 00:01:28,960
+in here. If I put a different label on
+
+41
+00:01:26,799 --> 00:01:30,720
+this box and I said action figures, then
+
+42
+00:01:28,960 --> 00:01:32,960
+you guess they're probably action
+
+43
+00:01:30,720 --> 00:01:35,920
+figures. I could be really specific with
+
+44
+00:01:32,960 --> 00:01:37,680
+the label and I could say this box um if
+
+45
+00:01:35,920 --> 00:01:39,600
+I put a label on it that said poseable
+
+46
+00:01:37,680 --> 00:01:40,720
+action figures, then you'd probably
+
+47
+00:01:39,600 --> 00:01:42,400
+guess that there are some pososeable
+
+48
+00:01:40,720 --> 00:01:44,720
+action figures in there. As a matter of
+
+49
+00:01:42,400 --> 00:01:47,600
+fact,
+
+50
+00:01:44,720 --> 00:01:49,280
+there are. So, I have poseable action
+
+51
+00:01:47,600 --> 00:01:52,000
+figures. And then this can illustrate
+
+52
+00:01:49,280 --> 00:01:55,439
+the point of size. So this box, this
+
+53
+00:01:52,000 --> 00:01:57,840
+box, different sizes. If I took the
+
+54
+00:01:55,439 --> 00:02:01,920
+action figure from the one box and
+
+55
+00:01:57,840 --> 00:02:03,680
+attempted to store it in the other box,
+
+56
+00:02:01,920 --> 00:02:07,200
+it probably doesn't fit very well. And
+
+57
+00:02:03,680 --> 00:02:09,440
+so because it does not fit, um, if I was
+
+58
+00:02:07,200 --> 00:02:12,400
+a computer, then I would throw a fit and
+
+59
+00:02:09,440 --> 00:02:14,800
+you would get an error. So when you are
+
+60
+00:02:12,400 --> 00:02:16,400
+programming with variables,
+
+61
+00:02:14,800 --> 00:02:18,480
+what you are saying is you're saying set
+
+62
+00:02:16,400 --> 00:02:19,920
+aside a certain amount of space. Some
+
+63
+00:02:18,480 --> 00:02:21,200
+variables take up more space than
+
+64
+00:02:19,920 --> 00:02:23,599
+others. And we'll talk a little bit
+
+65
+00:02:21,200 --> 00:02:25,040
+about that in another video. But I want
+
+66
+00:02:23,599 --> 00:02:26,640
+you to think when you're creating a
+
+67
+00:02:25,040 --> 00:02:28,000
+variable, how much space do you want it
+
+68
+00:02:26,640 --> 00:02:30,480
+to take up? Do you want to take up a
+
+69
+00:02:28,000 --> 00:02:32,160
+little bit of space or a lot of space?
+
+70
+00:02:30,480 --> 00:02:34,160
+And then when you're naming your
+
+71
+00:02:32,160 --> 00:02:36,560
+variable, that's like putting a label on
+
+72
+00:02:34,160 --> 00:02:38,239
+these boxes. Do you want your variable
+
+73
+00:02:36,560 --> 00:02:40,640
+to be descriptive so that someone knows
+
+74
+00:02:38,239 --> 00:02:43,040
+what's inside of it or do you just want
+
+75
+00:02:40,640 --> 00:02:44,640
+to put a random label on it and then no
+
+76
+00:02:43,040 --> 00:02:45,599
+one will know what's in there? So, those
+
+77
+00:02:44,640 --> 00:02:47,280
+are some things to think about with
+
+78
+00:02:45,599 --> 00:02:50,640
+variables. We'll talk about the actual
+
+79
+00:02:47,280 --> 00:02:50,640
+code in the next video.

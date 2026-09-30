@@ -1,0 +1,219 @@
+1
+00:00:00,080 --> 00:00:03,919
+All right, before we go further, I need
+
+2
+00:00:02,240 --> 00:00:06,319
+to teach you another way of storing
+
+3
+00:00:03,919 --> 00:00:08,720
+data. What we've done so far is I've
+
+4
+00:00:06,319 --> 00:00:11,120
+shown you how arrays work. Arrays store
+
+5
+00:00:08,720 --> 00:00:12,800
+data. You remember I brought in a
+
+6
+00:00:11,120 --> 00:00:15,200
+multicolored thing that had multiple
+
+7
+00:00:12,800 --> 00:00:17,440
+boxes. And in each of the boxes, labeled
+
+8
+00:00:15,200 --> 00:00:19,119
+by number, I could put information.
+
+9
+00:00:17,440 --> 00:00:21,600
+Well, what I'm about to teach you is
+
+10
+00:00:19,119 --> 00:00:23,600
+called an object. Objects, instead of
+
+11
+00:00:21,600 --> 00:00:26,720
+storing information in order, like an
+
+12
+00:00:23,600 --> 00:00:30,640
+array with 0, one, two, um, objects
+
+13
+00:00:26,720 --> 00:00:31,760
+store them by name. Um, in fact, objects
+
+14
+00:00:30,640 --> 00:00:33,680
+are really cool. They're one of my
+
+15
+00:00:31,760 --> 00:00:36,000
+favorite programming tools. Um, in fact,
+
+16
+00:00:33,680 --> 00:00:37,360
+my favorite um my favorite way to
+
+17
+00:00:36,000 --> 00:00:39,040
+program is called object-oriented
+
+18
+00:00:37,360 --> 00:00:42,160
+programming, but that is a little bit
+
+19
+00:00:39,040 --> 00:00:45,360
+beyond this course, sadly. So, maybe
+
+20
+00:00:42,160 --> 00:00:47,440
+another time. Um, but for now, I'm just
+
+21
+00:00:45,360 --> 00:00:50,559
+going to teach you the basics of
+
+22
+00:00:47,440 --> 00:00:53,039
+JavaScript objects. So, in order to do
+
+23
+00:00:50,559 --> 00:00:56,640
+that, I have brought
+
+24
+00:00:53,039 --> 00:00:57,680
+a dictionary. Um, yes, I did have to go
+
+25
+00:00:56,640 --> 00:00:58,960
+to the library to get one of these
+
+26
+00:00:57,680 --> 00:01:02,559
+because I don't own a dictionary. That's
+
+27
+00:00:58,960 --> 00:01:05,119
+what Google's for. Um, but if I wanted
+
+28
+00:01:02,559 --> 00:01:08,000
+to find something in a dictionary, then
+
+29
+00:01:05,119 --> 00:01:10,799
+let's say I wanted to look up um the
+
+30
+00:01:08,000 --> 00:01:12,000
+definition of defenestration. So, what I
+
+31
+00:01:10,799 --> 00:01:14,159
+would do is I would open up my
+
+32
+00:01:12,000 --> 00:01:16,720
+dictionary,
+
+33
+00:01:14,159 --> 00:01:18,479
+search through until I found the word
+
+34
+00:01:16,720 --> 00:01:20,479
+I'm looking for. And in this case,
+
+35
+00:01:18,479 --> 00:01:24,240
+defenistration
+
+36
+00:01:20,479 --> 00:01:26,400
+is right here. and it says the action of
+
+37
+00:01:24,240 --> 00:01:29,040
+throwing someone or something out of a
+
+38
+00:01:26,400 --> 00:01:32,720
+window. So notice how I used the
+
+39
+00:01:29,040 --> 00:01:34,880
+dictionary. What I did is I looked up by
+
+40
+00:01:32,720 --> 00:01:36,640
+name something that I wanted. So I
+
+41
+00:01:34,880 --> 00:01:39,439
+looked up the word defenistration. Next
+
+42
+00:01:36,640 --> 00:01:41,439
+to defenistration there was information
+
+43
+00:01:39,439 --> 00:01:44,960
+and that information was the definition
+
+44
+00:01:41,439 --> 00:01:48,399
+of the word. Um objects work like this
+
+45
+00:01:44,960 --> 00:01:50,240
+in JavaScript. um they have something
+
+46
+00:01:48,399 --> 00:01:52,799
+that you look up with and that thing
+
+47
+00:01:50,240 --> 00:01:55,920
+that you look up um has information
+
+48
+00:01:52,799 --> 00:01:59,360
+stored there. So just like I could look
+
+49
+00:01:55,920 --> 00:02:01,040
+up in this book the word defenistration
+
+50
+00:01:59,360 --> 00:02:02,399
+and it gave me a definition in my
+
+51
+00:02:01,040 --> 00:02:04,000
+JavaScript object, I could look
+
+52
+00:02:02,399 --> 00:02:06,000
+something up by name and it'll give me
+
+53
+00:02:04,000 --> 00:02:08,879
+the value stored. So I'm just going to
+
+54
+00:02:06,000 --> 00:02:12,560
+look up another definition in here.
+
+55
+00:02:08,879 --> 00:02:12,560
+Tired. How do they take my picture?

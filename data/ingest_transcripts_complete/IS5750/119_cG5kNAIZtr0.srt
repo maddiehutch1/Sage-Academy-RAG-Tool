@@ -1,0 +1,203 @@
+1
+00:00:00,080 --> 00:00:03,040
+Okay, now that we know what Git is,
+
+2
+00:00:01,520 --> 00:00:04,720
+let's talk about how we would install it
+
+3
+00:00:03,040 --> 00:00:06,160
+on a Mac. On a Mac, it's actually pretty
+
+4
+00:00:04,720 --> 00:00:08,480
+easy. You're going to hit command space
+
+5
+00:00:06,160 --> 00:00:09,599
+and then type terminal. And then you're
+
+6
+00:00:08,480 --> 00:00:11,200
+going to hit enter. And it's going to
+
+7
+00:00:09,599 --> 00:00:14,160
+open up this terminal. And I'm going to
+
+8
+00:00:11,200 --> 00:00:15,839
+try and increase the font size. Um, all
+
+9
+00:00:14,160 --> 00:00:17,199
+right.
+
+10
+00:00:15,839 --> 00:00:18,480
+What you're going to want to do is
+
+11
+00:00:17,199 --> 00:00:22,480
+you're going to want to type the word
+
+12
+00:00:18,480 --> 00:00:24,000
+get and d- version. When you run that,
+
+13
+00:00:22,480 --> 00:00:25,279
+some of you will see a version, and that
+
+14
+00:00:24,000 --> 00:00:27,599
+means you already have Git installed and
+
+15
+00:00:25,279 --> 00:00:31,679
+there's nothing left to do. The rest of
+
+16
+00:00:27,599 --> 00:00:33,680
+you will um see this popup here that
+
+17
+00:00:31,679 --> 00:00:35,360
+asks if you want to install um the
+
+18
+00:00:33,680 --> 00:00:37,840
+command line developer tools. So, I'm
+
+19
+00:00:35,360 --> 00:00:40,320
+going to click install. I'm going to
+
+20
+00:00:37,840 --> 00:00:42,320
+agree to Apple's terms
+
+21
+00:00:40,320 --> 00:00:43,680
+and continue on battery power. Probably
+
+22
+00:00:42,320 --> 00:00:46,239
+should have done this plugged in. Oh
+
+23
+00:00:43,680 --> 00:00:48,399
+well. Says there are 15 hours. It
+
+24
+00:00:46,239 --> 00:00:52,840
+shouldn't actually take that long, but I
+
+25
+00:00:48,399 --> 00:00:52,840
+am going to pause until it's done.
+
+26
+00:00:54,719 --> 00:01:00,399
+Okay. So you can see I started this at
+
+27
+00:00:57,680 --> 00:01:02,160
+like 11:26, maybe 11:27, and it's only
+
+28
+00:01:00,399 --> 00:01:04,080
+11:34. So it actually didn't take that
+
+29
+00:01:02,160 --> 00:01:06,000
+long, but it is now done. So we'll hit
+
+30
+00:01:04,080 --> 00:01:09,840
+done. Now, if we come here and we type
+
+31
+00:01:06,000 --> 00:01:11,600
+get, you can see that it says everything
+
+32
+00:01:09,840 --> 00:01:13,040
+that you can do with Git. So if you can
+
+33
+00:01:11,600 --> 00:01:14,640
+type get on your command line and you
+
+34
+00:01:13,040 --> 00:01:16,000
+see all of that, congratulations, you've
+
+35
+00:01:14,640 --> 00:01:17,680
+installed Git. There's a couple of
+
+36
+00:01:16,000 --> 00:01:18,960
+things you're going to want to do in
+
+37
+00:01:17,680 --> 00:01:20,159
+order to make sure your Git runs
+
+38
+00:01:18,960 --> 00:01:25,439
+properly. The first is you're going to
+
+39
+00:01:20,159 --> 00:01:28,159
+want to type get config dash global
+
+40
+00:01:25,439 --> 00:01:29,600
+space user.name. And here's where you're
+
+41
+00:01:28,159 --> 00:01:31,840
+going to want to put your username. I'm
+
+42
+00:01:29,600 --> 00:01:34,560
+going to put Toa. Then you're going to
+
+43
+00:01:31,840 --> 00:01:38,079
+type get config-
+
+44
+00:01:34,560 --> 00:01:39,200
+global user.mail. And this is email is
+
+45
+00:01:38,079 --> 00:01:40,320
+probably going to be the one you're
+
+46
+00:01:39,200 --> 00:01:42,560
+going to probably want to put the one
+
+47
+00:01:40,320 --> 00:01:48,840
+that you use on GitHub. So I'm going to
+
+48
+00:01:42,560 --> 00:01:48,840
+type uh to teaches techgmail.com
+
+49
+00:01:49,280 --> 00:01:53,040
+and hit enter.
+
+50
+00:01:51,439 --> 00:01:56,720
+Once you've done that, you're good to
+
+51
+00:01:53,040 --> 00:01:56,720
+go. You've got to get installed on your

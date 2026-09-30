@@ -1,0 +1,251 @@
+1
+00:00:00,080 --> 00:00:03,360
+Okay, so in the last one we talked about
+
+2
+00:00:01,839 --> 00:00:05,279
+how an if statement can control the flow
+
+3
+00:00:03,360 --> 00:00:06,799
+of your code. I'm going to delete this
+
+4
+00:00:05,279 --> 00:00:09,200
+and we're going to do a different um
+
+5
+00:00:06,799 --> 00:00:13,400
+example here. Um so we're going to
+
+6
+00:00:09,200 --> 00:00:13,400
+gather a student's GPA.
+
+7
+00:00:16,000 --> 00:00:22,240
+GPA. So let's store that in a variable.
+
+8
+00:00:18,720 --> 00:00:23,760
+So we'll say let GPA equal um and the
+
+9
+00:00:22,240 --> 00:00:27,119
+GPA is going to be a float. So, I'm
+
+10
+00:00:23,760 --> 00:00:28,880
+going to parse float and then I'm going
+
+11
+00:00:27,119 --> 00:00:32,880
+to prompt
+
+12
+00:00:28,880 --> 00:00:34,880
+what is your GPA.
+
+13
+00:00:32,880 --> 00:00:37,360
+Now, if they have a high enough GPA,
+
+14
+00:00:34,880 --> 00:00:39,920
+let's say like a 3.5, uh we'll give them
+
+15
+00:00:37,360 --> 00:00:42,800
+a scholarship. So, we'll say if GPA is
+
+16
+00:00:39,920 --> 00:00:44,879
+greater than 3.5,
+
+17
+00:00:42,800 --> 00:00:46,879
+and then we'll put our curly braces. So,
+
+18
+00:00:44,879 --> 00:00:48,640
+now whatever happens in between these
+
+19
+00:00:46,879 --> 00:00:51,120
+curly braces will only happen if they
+
+20
+00:00:48,640 --> 00:00:55,039
+have a GPA of above 3.5. So, we're going
+
+21
+00:00:51,120 --> 00:00:58,719
+to alert um congrats.
+
+22
+00:00:55,039 --> 00:01:03,120
+Here is a scholarship.
+
+23
+00:00:58,719 --> 00:01:05,119
+We'll save that and
+
+24
+00:01:03,120 --> 00:01:09,280
+we'll visit our website and it says,
+
+25
+00:01:05,119 --> 00:01:12,080
+"What is your GPA?" We'll enter 3.8.
+
+26
+00:01:09,280 --> 00:01:14,320
+Congrats. Here's your scholarship. Okay,
+
+27
+00:01:12,080 --> 00:01:16,159
+great. So, we know that that portion
+
+28
+00:01:14,320 --> 00:01:18,080
+works.
+
+29
+00:01:16,159 --> 00:01:20,240
+But what if we want to do something if
+
+30
+00:01:18,080 --> 00:01:21,680
+they don't have a high enough GPA? What
+
+31
+00:01:20,240 --> 00:01:25,280
+if we want to tell them keep working on
+
+32
+00:01:21,680 --> 00:01:27,040
+your grades, maybe next year? Um,
+
+33
+00:01:25,280 --> 00:01:29,759
+well, there's a way that you can do
+
+34
+00:01:27,040 --> 00:01:31,439
+that. So, after this if, we put curly
+
+35
+00:01:29,759 --> 00:01:33,840
+braces. At the end of those curly
+
+36
+00:01:31,439 --> 00:01:37,040
+braces, we can type something to do if
+
+37
+00:01:33,840 --> 00:01:39,119
+all else fails. And we call this else.
+
+38
+00:01:37,040 --> 00:01:41,280
+So, we'll say if their GPA is higher
+
+39
+00:01:39,119 --> 00:01:43,439
+than 3.5, tell them congratulations,
+
+40
+00:01:41,280 --> 00:01:47,840
+here's a scholarship. If it's not higher
+
+41
+00:01:43,439 --> 00:01:50,479
+than 3.5, then we want to say, "Sorry,
+
+42
+00:01:47,840 --> 00:01:53,119
+maybe next year."
+
+43
+00:01:50,479 --> 00:01:55,840
+So, we'll save that. We'll come over
+
+44
+00:01:53,119 --> 00:01:58,240
+here. What is our GPA? 3.5.
+
+45
+00:01:55,840 --> 00:02:00,399
+Nope. Sorry, maybe next year. So, the
+
+46
+00:01:58,240 --> 00:02:02,399
+reason that happened is because I said
+
+47
+00:02:00,399 --> 00:02:06,640
+it has to be greater than 3.5. So, if
+
+48
+00:02:02,399 --> 00:02:08,399
+it's exactly 3.5, then this is not true,
+
+49
+00:02:06,640 --> 00:02:11,840
+which means it's going to come here and
+
+50
+00:02:08,399 --> 00:02:13,040
+say, "Sorry, maybe next year." So,
+
+51
+00:02:11,840 --> 00:02:15,280
+unfortunately, it looks like we don't
+
+52
+00:02:13,040 --> 00:02:20,640
+have a scholarship this time. Let's
+
+53
+00:02:15,280 --> 00:02:21,920
+reload our page. What is your GPA? 3.51.
+
+54
+00:02:20,640 --> 00:02:25,280
+Congratulations. Here's your
+
+55
+00:02:21,920 --> 00:02:28,239
+scholarship. Um, and that is how if and
+
+56
+00:02:25,280 --> 00:02:30,400
+else statements work. So, if statements
+
+57
+00:02:28,239 --> 00:02:33,120
+are used for making a decision.
+
+58
+00:02:30,400 --> 00:02:35,519
+Elsements are attached to an if
+
+59
+00:02:33,120 --> 00:02:38,400
+statement and they run when no other
+
+60
+00:02:35,519 --> 00:02:40,239
+condition is met. Sometimes there are
+
+61
+00:02:38,400 --> 00:02:42,080
+times where you will want to check more
+
+62
+00:02:40,239 --> 00:02:45,360
+than one condition. And in the next
+
+63
+00:02:42,080 --> 00:02:45,360
+video we'll talk about that.

@@ -1,0 +1,183 @@
+1
+00:00:00,080 --> 00:00:03,360
+And if this is scaring you a little bit,
+
+2
+00:00:01,920 --> 00:00:04,960
+we're going to go through this in with a
+
+3
+00:00:03,360 --> 00:00:08,320
+debugger once we've finished our last
+
+4
+00:00:04,960 --> 00:00:10,639
+line of code. So what we want to do now
+
+5
+00:00:08,320 --> 00:00:12,320
+is we know our arrow is the position
+
+6
+00:00:10,639 --> 00:00:14,240
+that we're sorting for. We want to move
+
+7
+00:00:12,320 --> 00:00:18,400
+the smallest thing to wherever the arrow
+
+8
+00:00:14,240 --> 00:00:20,720
+is. And we know we want to swap if
+
+9
+00:00:18,400 --> 00:00:23,199
+whatever is in the arrow position is
+
+10
+00:00:20,720 --> 00:00:25,039
+larger than whatever is in the box
+
+11
+00:00:23,199 --> 00:00:28,240
+position, meaning the one right next to
+
+12
+00:00:25,039 --> 00:00:29,840
+it or wherever the box happens to be. So
+
+13
+00:00:28,240 --> 00:00:33,120
+what we're going to do is we're going to
+
+14
+00:00:29,840 --> 00:00:35,680
+say if numbers
+
+15
+00:00:33,120 --> 00:00:39,600
+at the arrow position
+
+16
+00:00:35,680 --> 00:00:44,559
+is bigger than numbers at the box
+
+17
+00:00:39,600 --> 00:00:47,520
+position. Meaning if or is bigger than
+
+18
+00:00:44,559 --> 00:00:49,039
+one, then we want to swap those. Well,
+
+19
+00:00:47,520 --> 00:00:51,920
+now we can take advantage of our swap
+
+20
+00:00:49,039 --> 00:00:54,480
+logic. So let's copy that swap logic and
+
+21
+00:00:51,920 --> 00:00:57,120
+paste it down here. I'm going to hold
+
+22
+00:00:54,480 --> 00:00:58,800
+option shift and then F or alt shift F
+
+23
+00:00:57,120 --> 00:01:00,559
+on a Windows. And that will format my
+
+24
+00:00:58,800 --> 00:01:04,159
+code to make it neater and easier to
+
+25
+00:01:00,559 --> 00:01:06,400
+read. So I'm going to get a hold number.
+
+26
+00:01:04,159 --> 00:01:08,479
+The hold number is the number I'm taking
+
+27
+00:01:06,400 --> 00:01:10,560
+out. Well, which number am I taking out?
+
+28
+00:01:08,479 --> 00:01:13,119
+Well, the one I'm about to overwrite.
+
+29
+00:01:10,560 --> 00:01:15,520
+Well, if I want to swap one into the
+
+30
+00:01:13,119 --> 00:01:18,080
+four position, then I'm going to take
+
+31
+00:01:15,520 --> 00:01:21,119
+let's one would be in the box position.
+
+32
+00:01:18,080 --> 00:01:23,280
+So we're going to say our hold number is
+
+33
+00:01:21,119 --> 00:01:24,960
+the four that's about to get replaced.
+
+34
+00:01:23,280 --> 00:01:28,240
+So in other words, it's wherever our
+
+35
+00:01:24,960 --> 00:01:33,600
+arrow is.
+
+36
+00:01:28,240 --> 00:01:35,920
+Then we want to set our arrow position
+
+37
+00:01:33,600 --> 00:01:38,560
+equal to whatever was in the box that we
+
+38
+00:01:35,920 --> 00:01:42,720
+were comparing to. And then once we're
+
+39
+00:01:38,560 --> 00:01:45,119
+done, we're going to set the box equal
+
+40
+00:01:42,720 --> 00:01:48,479
+to the hold number. So, I'm going to
+
+41
+00:01:45,119 --> 00:01:50,479
+save this and I'm going to log numbers
+
+42
+00:01:48,479 --> 00:01:52,479
+at the end.
+
+43
+00:01:50,479 --> 00:01:55,200
+So, let's go to our console. We'll
+
+44
+00:01:52,479 --> 00:01:56,720
+reload and we get 1 2 3 4 5 6 which may
+
+45
+00:01:55,200 --> 00:02:00,399
+look like magic but I'm going to show
+
+46
+00:01:56,720 --> 00:02:00,399
+you how that works using the debugger.

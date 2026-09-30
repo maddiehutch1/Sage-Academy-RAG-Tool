@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:03,120
+I feel bad that I've done a lot of
+
+2
+00:00:01,520 --> 00:00:05,520
+talking and a lot less coding in this
+
+3
+00:00:03,120 --> 00:00:07,200
+section, but I did realize that I do
+
+4
+00:00:05,520 --> 00:00:08,639
+have to show you just a couple more
+
+5
+00:00:07,200 --> 00:00:09,920
+things and that is I haven't shown you
+
+6
+00:00:08,639 --> 00:00:13,679
+how to read the documentation for an
+
+7
+00:00:09,920 --> 00:00:15,519
+API. So, um here under personality um is
+
+8
+00:00:13,679 --> 00:00:17,760
+the advice slip API that we were using.
+
+9
+00:00:15,519 --> 00:00:21,760
+So, you can click on this link and it'll
+
+10
+00:00:17,760 --> 00:00:23,680
+take you to advice slip and it says um
+
+11
+00:00:21,760 --> 00:00:25,199
+your advice is cached for 2 seconds. any
+
+12
+00:00:23,680 --> 00:00:26,480
+repeat request within two seconds will
+
+13
+00:00:25,199 --> 00:00:27,840
+return the same piece of advice, which
+
+14
+00:00:26,480 --> 00:00:29,840
+was actually very helpful for teaching
+
+15
+00:00:27,840 --> 00:00:30,960
+because I needed it to return the same
+
+16
+00:00:29,840 --> 00:00:33,760
+thing. So, you could see that both
+
+17
+00:00:30,960 --> 00:00:36,000
+functions did the same thing. Um, but
+
+18
+00:00:33,760 --> 00:00:38,399
+it'll tell you the HTTP method to
+
+19
+00:00:36,000 --> 00:00:41,280
+interact with it is a get request and if
+
+20
+00:00:38,399 --> 00:00:44,160
+you use this URL, then it will return
+
+21
+00:00:41,280 --> 00:00:45,520
+you a random piece of advice. Um, you
+
+22
+00:00:44,160 --> 00:00:48,719
+can actually pass in additional
+
+23
+00:00:45,520 --> 00:00:50,559
+parameters if you want. Um, if you want
+
+24
+00:00:48,719 --> 00:00:52,640
+to get a specific piece of advice, then
+
+25
+00:00:50,559 --> 00:00:55,840
+you can grab it by its ID. And what you
+
+26
+00:00:52,640 --> 00:00:57,680
+do is you make a get request to this URL
+
+27
+00:00:55,840 --> 00:00:59,680
+and then at the end where it says slip
+
+28
+00:00:57,680 --> 00:01:02,000
+ID, you insert it. So if you want to get
+
+29
+00:00:59,680 --> 00:01:05,000
+um advice number 99, then you'd say
+
+30
+00:01:02,000 --> 00:01:05,000
+https/api.advicelip.com/advice/99.
+
+31
+00:01:07,920 --> 00:01:13,680
+Um
+
+32
+00:01:10,240 --> 00:01:17,840
+searching advice um you would make a get
+
+33
+00:01:13,680 --> 00:01:19,680
+request to this URL and you would um
+
+34
+00:01:17,840 --> 00:01:22,080
+this URL right here. So it would be
+
+35
+00:01:19,680 --> 00:01:24,000
+advice slash search slash the thing
+
+36
+00:01:22,080 --> 00:01:28,000
+you're searching for. So if you're
+
+37
+00:01:24,000 --> 00:01:31,680
+searching and if it's found um it
+
+38
+00:01:28,000 --> 00:01:36,000
+returns an array of slip objects. So
+
+39
+00:01:31,680 --> 00:01:40,159
+rather than going into JSON data advice
+
+40
+00:01:36,000 --> 00:01:41,680
+or yeah JSON data advice, you would go
+
+41
+00:01:40,159 --> 00:01:43,680
+into
+
+42
+00:01:41,680 --> 00:01:45,520
+um you would go into JSON data and you
+
+43
+00:01:43,680 --> 00:01:49,119
+would loop through all of the advice
+
+44
+00:01:45,520 --> 00:01:51,920
+objects that it gives you back. Um,
+
+45
+00:01:49,119 --> 00:01:53,280
+and so you can see that, um, it
+
+46
+00:01:51,920 --> 00:01:55,439
+documents pretty well how to use this
+
+47
+00:01:53,280 --> 00:01:58,719
+API. Let's go look at another one. Um,
+
+48
+00:01:55,439 --> 00:02:01,840
+let's look at this. Chucknorris.io.
+
+49
+00:01:58,719 --> 00:02:04,000
+Hey, Chuck Norris.io. So, if we come
+
+50
+00:02:01,840 --> 00:02:06,560
+here, documentation will look a little
+
+51
+00:02:04,000 --> 00:02:09,520
+bit different, but to retrieve a random
+
+52
+00:02:06,560 --> 00:02:11,440
+Jo Chuck Norris joke in JSON format, you
+
+53
+00:02:09,520 --> 00:02:14,400
+would visit, you'd make a git request to
+
+54
+00:02:11,440 --> 00:02:16,160
+that URL. Um, if you want it in a given
+
+55
+00:02:14,400 --> 00:02:18,400
+category, you'd make a git request to
+
+56
+00:02:16,160 --> 00:02:20,160
+that URL and you'd put in category at
+
+57
+00:02:18,400 --> 00:02:21,920
+the end. If you want to retrieve a list
+
+58
+00:02:20,160 --> 00:02:25,520
+of all of the available categories, you
+
+59
+00:02:21,920 --> 00:02:27,040
+make a get request to that URL. Um, and
+
+60
+00:02:25,520 --> 00:02:28,800
+if you want to just use a free text
+
+61
+00:02:27,040 --> 00:02:31,280
+search, so search for a specific joke,
+
+62
+00:02:28,800 --> 00:02:33,120
+then you use a get request to that URL.
+
+63
+00:02:31,280 --> 00:02:34,640
+And so you can see it's a very well
+
+64
+00:02:33,120 --> 00:02:36,160
+documented how you would use this. And
+
+65
+00:02:34,640 --> 00:02:38,400
+so a helpful thing to do is just go
+
+66
+00:02:36,160 --> 00:02:40,400
+through and read the documentation for
+
+67
+00:02:38,400 --> 00:02:42,879
+how your API works or the one that
+
+68
+00:02:40,400 --> 00:02:42,879
+you're trying to

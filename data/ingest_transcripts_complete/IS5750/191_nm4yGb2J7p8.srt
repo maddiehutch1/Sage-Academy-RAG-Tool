@@ -1,0 +1,211 @@
+1
+00:00:00,160 --> 00:00:05,600
+Okay. So, how do we get an item out of
+
+2
+00:00:03,760 --> 00:00:07,759
+um session or local storage? In other
+
+3
+00:00:05,600 --> 00:00:09,840
+words, how do we retrieve data? So, if
+
+4
+00:00:07,759 --> 00:00:12,080
+we come over here to application, I've
+
+5
+00:00:09,840 --> 00:00:15,599
+actually added a second number and a
+
+6
+00:00:12,080 --> 00:00:17,279
+number and a key for hello. Um, so I've
+
+7
+00:00:15,599 --> 00:00:19,439
+got a key for hello, a key for second
+
+8
+00:00:17,279 --> 00:00:22,960
+num and a key for num. And in session
+
+9
+00:00:19,439 --> 00:00:25,199
+storage, I have this hello key. So, if I
+
+10
+00:00:22,960 --> 00:00:29,599
+want to access an item, then what I do
+
+11
+00:00:25,199 --> 00:00:31,279
+is I say local storage.get get item
+
+12
+00:00:29,599 --> 00:00:32,480
+and then I put in the key that I'm
+
+13
+00:00:31,279 --> 00:00:35,040
+trying to get. So let's say I'm trying
+
+14
+00:00:32,480 --> 00:00:37,040
+to get hello. If I put that in, it
+
+15
+00:00:35,040 --> 00:00:38,399
+retrieves world and I could actually
+
+16
+00:00:37,040 --> 00:00:43,040
+store that in a variable. So I could say
+
+17
+00:00:38,399 --> 00:00:46,040
+let my var equal local storage.get item
+
+18
+00:00:43,040 --> 00:00:46,040
+hello.
+
+19
+00:00:46,079 --> 00:00:53,520
+And now if I console.log
+
+20
+00:00:50,160 --> 00:00:55,440
+log my var.
+
+21
+00:00:53,520 --> 00:00:58,559
+You can see that it logs out the word
+
+22
+00:00:55,440 --> 00:01:00,719
+world just like we would expect. So
+
+23
+00:00:58,559 --> 00:01:02,879
+that's great. Um that's how we get an
+
+24
+00:01:00,719 --> 00:01:04,239
+item. Um and you do the same thing for
+
+25
+00:01:02,879 --> 00:01:07,239
+session storage. So I could say
+
+26
+00:01:04,239 --> 00:01:07,239
+console.log
+
+27
+00:01:08,320 --> 00:01:14,680
+session
+
+28
+00:01:10,159 --> 00:01:14,680
+boy can't spell session
+
+29
+00:01:17,439 --> 00:01:20,799
+storage.get
+
+30
+00:01:19,200 --> 00:01:23,439
+get
+
+31
+00:01:20,799 --> 00:01:26,159
+item and we could put in the hello key
+
+32
+00:01:23,439 --> 00:01:28,080
+that we put into session storage
+
+33
+00:01:26,159 --> 00:01:29,439
+and we get world from there as well. And
+
+34
+00:01:28,080 --> 00:01:31,200
+if we went and checked our application,
+
+35
+00:01:29,439 --> 00:01:34,560
+you could see that we're storing hello
+
+36
+00:01:31,200 --> 00:01:36,720
+world and session storage. So we are
+
+37
+00:01:34,560 --> 00:01:38,320
+able to store items in session storage
+
+38
+00:01:36,720 --> 00:01:39,840
+and we were able to retrieve them.
+
+39
+00:01:38,320 --> 00:01:41,759
+Remember the caveat I said that
+
+40
+00:01:39,840 --> 00:01:44,000
+everything that is stored in session
+
+41
+00:01:41,759 --> 00:01:46,720
+storage is a string. If you come back
+
+42
+00:01:44,000 --> 00:01:49,680
+over here and you look in local storage,
+
+43
+00:01:46,720 --> 00:01:54,720
+um it has second num which has a value
+
+44
+00:01:49,680 --> 00:01:57,439
+of two. So if I console.log
+
+45
+00:01:54,720 --> 00:01:59,439
+the type of
+
+46
+00:01:57,439 --> 00:02:01,439
+local storage.get
+
+47
+00:01:59,439 --> 00:02:04,439
+item
+
+48
+00:02:01,439 --> 00:02:04,439
+number,
+
+49
+00:02:05,040 --> 00:02:09,039
+then I get that it is a string. Even
+
+50
+00:02:07,520 --> 00:02:11,120
+though when we look in the application
+
+51
+00:02:09,039 --> 00:02:12,560
+it looks like it'd be a number, it is in
+
+52
+00:02:11,120 --> 00:02:16,239
+fact a string. And so if we want it to
+
+53
+00:02:12,560 --> 00:02:16,239
+be a number, we just have to convert

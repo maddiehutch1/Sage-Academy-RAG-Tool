@@ -1,0 +1,267 @@
+1
+00:00:00,080 --> 00:00:04,080
+Okay. So, what is the syntax of how you
+
+2
+00:00:02,159 --> 00:00:06,400
+create a promise? Well, the way you
+
+3
+00:00:04,080 --> 00:00:10,000
+create a promise is you use the keyword
+
+4
+00:00:06,400 --> 00:00:11,360
+new and then you say promise. And then
+
+5
+00:00:10,000 --> 00:00:13,599
+you're going to want to store that
+
+6
+00:00:11,360 --> 00:00:17,279
+promise in a variable. So, I'd say let
+
+7
+00:00:13,599 --> 00:00:18,800
+my var equal a new promise. If I do this
+
+8
+00:00:17,279 --> 00:00:20,880
+opening parenthesis, you'll see that it
+
+9
+00:00:18,800 --> 00:00:22,480
+says it takes an executor function. That
+
+10
+00:00:20,880 --> 00:00:24,640
+function takes in two parameters,
+
+11
+00:00:22,480 --> 00:00:26,960
+resolve and reject. Resolve is a
+
+12
+00:00:24,640 --> 00:00:29,439
+function that gets called and receives a
+
+13
+00:00:26,960 --> 00:00:31,760
+value for if the code successfully ran.
+
+14
+00:00:29,439 --> 00:00:33,840
+Um, think of the when I gave you ice
+
+15
+00:00:31,760 --> 00:00:36,559
+cream in the example before and reject
+
+16
+00:00:33,840 --> 00:00:38,879
+is what it will do if it didn't get back
+
+17
+00:00:36,559 --> 00:00:40,960
+what we expected. Um, for example, when
+
+18
+00:00:38,879 --> 00:00:43,040
+I gave you the broccoli. So, writing it
+
+19
+00:00:40,960 --> 00:00:44,559
+on multiple lines makes it helpful to
+
+20
+00:00:43,040 --> 00:00:47,200
+see how the syntax works. So, I'm going
+
+21
+00:00:44,559 --> 00:00:48,160
+to do that really quick. Um, so I'm
+
+22
+00:00:47,200 --> 00:00:49,760
+going to write my executor function
+
+23
+00:00:48,160 --> 00:00:51,760
+here. So, I'm going to say function
+
+24
+00:00:49,760 --> 00:00:55,520
+executor
+
+25
+00:00:51,760 --> 00:00:57,920
+and it takes in two parameters resolve
+
+26
+00:00:55,520 --> 00:01:01,359
+and reject. And these parameters are
+
+27
+00:00:57,920 --> 00:01:02,719
+automatically passed in. And then inside
+
+28
+00:01:01,359 --> 00:01:04,879
+we can call our function. So we could
+
+29
+00:01:02,719 --> 00:01:08,320
+say set timeout.
+
+30
+00:01:04,879 --> 00:01:10,000
+And we could set our timeout for um we
+
+31
+00:01:08,320 --> 00:01:14,880
+could call the resolve function inside
+
+32
+00:01:10,000 --> 00:01:17,840
+the timeout. And outside the timeout
+
+33
+00:01:14,880 --> 00:01:19,200
+um we can put 1,00 seconds. And if we
+
+34
+00:01:17,840 --> 00:01:20,720
+want the resolve function to return
+
+35
+00:01:19,200 --> 00:01:23,200
+hello world, let's say we want to return
+
+36
+00:01:20,720 --> 00:01:27,759
+hello world after this wait time of
+
+37
+00:01:23,200 --> 00:01:30,320
+1,000 milliseconds, then we would say k
+
+38
+00:01:27,759 --> 00:01:32,560
+inside of our timeout call the resolve
+
+39
+00:01:30,320 --> 00:01:35,840
+function after 1,00 milliseconds and to
+
+40
+00:01:32,560 --> 00:01:37,680
+the resolve pass hello world. We could
+
+41
+00:01:35,840 --> 00:01:39,840
+also use this reject function if our
+
+42
+00:01:37,680 --> 00:01:41,439
+code was going to fail. Um, our timeout
+
+43
+00:01:39,840 --> 00:01:43,439
+isn't going to fail, so I'm not going to
+
+44
+00:01:41,439 --> 00:01:46,479
+call reject right now. I'll show that in
+
+45
+00:01:43,439 --> 00:01:48,880
+a later video. But for now, this is how
+
+46
+00:01:46,479 --> 00:01:50,880
+you create the function that goes inside
+
+47
+00:01:48,880 --> 00:01:54,560
+of the promise. And then in the promise,
+
+48
+00:01:50,880 --> 00:01:56,560
+you pass that function. Now, some of you
+
+49
+00:01:54,560 --> 00:01:57,840
+may with sharp eyes may have noticed
+
+50
+00:01:56,560 --> 00:01:59,520
+that you could have probably simplified
+
+51
+00:01:57,840 --> 00:02:03,119
+this onto one line. The way you do that
+
+52
+00:01:59,520 --> 00:02:05,520
+is you'd say let promise equal and you
+
+53
+00:02:03,119 --> 00:02:08,319
+can say a new promise and into that
+
+54
+00:02:05,520 --> 00:02:12,440
+promise you pass a function that
+
+55
+00:02:08,319 --> 00:02:12,440
+receives resolve and reject.
+
+56
+00:02:12,879 --> 00:02:19,680
+And then
+
+57
+00:02:14,800 --> 00:02:24,800
+um it has a timeout inside of it. Um and
+
+58
+00:02:19,680 --> 00:02:28,640
+in that timeout it calls resolve
+
+59
+00:02:24,800 --> 00:02:31,520
+and passes hello world
+
+60
+00:02:28,640 --> 00:02:33,200
+and then we can have that pause for
+
+61
+00:02:31,520 --> 00:02:34,560
+thousand milliseconds. So this is the
+
+62
+00:02:33,200 --> 00:02:37,040
+same thing but instead of having to
+
+63
+00:02:34,560 --> 00:02:39,200
+create our executor function outside we
+
+64
+00:02:37,040 --> 00:02:41,120
+created it inside. And so that's how you
+
+65
+00:02:39,200 --> 00:02:43,599
+make a promise. But once you've made a
+
+66
+00:02:41,120 --> 00:02:46,239
+promise, how do you access it? What does
+
+67
+00:02:43,599 --> 00:02:46,239
+that even mean?

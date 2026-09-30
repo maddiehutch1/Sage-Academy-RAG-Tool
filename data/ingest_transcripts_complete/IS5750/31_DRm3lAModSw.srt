@@ -1,0 +1,435 @@
+1
+00:00:00,080 --> 00:00:03,600
+All right. So, now we're going to talk
+
+2
+00:00:01,520 --> 00:00:05,440
+about how to generate a random number.
+
+3
+00:00:03,600 --> 00:00:07,919
+So, when you generate a random number,
+
+4
+00:00:05,440 --> 00:00:11,040
+it's not really random. Your computer is
+
+5
+00:00:07,919 --> 00:00:12,719
+running a whole bunch of um math on a
+
+6
+00:00:11,040 --> 00:00:14,400
+starting point and it gives you a number
+
+7
+00:00:12,719 --> 00:00:15,920
+that seems random. It's not really
+
+8
+00:00:14,400 --> 00:00:18,160
+random, but it's as close as we can get
+
+9
+00:00:15,920 --> 00:00:20,640
+in computers. So, the way you generate a
+
+10
+00:00:18,160 --> 00:00:22,320
+random number is you use the math
+
+11
+00:00:20,640 --> 00:00:23,600
+library. So to use the math library,
+
+12
+00:00:22,320 --> 00:00:26,320
+just like we've been doing in the last
+
+13
+00:00:23,600 --> 00:00:30,160
+videos, we type math and then we type
+
+14
+00:00:26,320 --> 00:00:31,760
+dot and then we type random.
+
+15
+00:00:30,160 --> 00:00:34,480
+This random and then we'll put
+
+16
+00:00:31,760 --> 00:00:38,399
+parenthesis. This generates a random
+
+17
+00:00:34,480 --> 00:00:42,239
+number between zero and.9999
+
+18
+00:00:38,399 --> 00:00:44,239
+repeating. So to demonstrate this, I'm
+
+19
+00:00:42,239 --> 00:00:48,640
+going to create a variable say let my
+
+20
+00:00:44,239 --> 00:00:50,559
+num equal math.random random and then
+
+21
+00:00:48,640 --> 00:00:53,280
+put the parenthesis and the semicolon
+
+22
+00:00:50,559 --> 00:00:56,320
+and then we'll just alert my null. So
+
+23
+00:00:53,280 --> 00:01:01,079
+we'll save this and we'll go take a look
+
+24
+00:00:56,320 --> 00:01:01,079
+at our web page and it put 319250
+
+25
+00:01:01,600 --> 00:01:07,520
+and that's the number on screen. So
+
+26
+00:01:03,440 --> 00:01:11,200
+we'll reload the page and now we got 018
+
+27
+00:01:07,520 --> 00:01:14,720
+and we'll reload the page and it's 0551.
+
+28
+00:01:11,200 --> 00:01:17,600
+So it's always between zero and almost
+
+29
+00:01:14,720 --> 00:01:20,960
+positive one. It will never include one,
+
+30
+00:01:17,600 --> 00:01:22,960
+but it'll get close. So, let's say you
+
+31
+00:01:20,960 --> 00:01:26,640
+want to generate a number, but you want
+
+32
+00:01:22,960 --> 00:01:29,920
+to generate a number between 0 and 10.
+
+33
+00:01:26,640 --> 00:01:31,759
+So, let's So, if this right here
+
+34
+00:01:29,920 --> 00:01:34,759
+generates a number between zero
+
+35
+00:01:31,759 --> 00:01:34,759
+and.9999,
+
+36
+00:01:35,040 --> 00:01:44,119
+if we multiply that by 10, then it'll
+
+37
+00:01:38,400 --> 00:01:44,119
+generate a number between 0 and 9.9999.
+
+38
+00:01:44,320 --> 00:01:50,320
+Um, so that could get us a random number
+
+39
+00:01:47,520 --> 00:01:54,320
+between zero and nine. If we multiplied
+
+40
+00:01:50,320 --> 00:01:58,560
+it by 11, that would give us um a number
+
+41
+00:01:54,320 --> 00:02:00,960
+between zero and almost 11. So um we can
+
+42
+00:01:58,560 --> 00:02:02,240
+take advantage of that and generate that
+
+43
+00:02:00,960 --> 00:02:03,600
+random number. So what I'm going to do
+
+44
+00:02:02,240 --> 00:02:07,360
+is I'm going to say let's take this
+
+45
+00:02:03,600 --> 00:02:10,000
+random number and let's multiply it by
+
+46
+00:02:07,360 --> 00:02:15,200
+10.
+
+47
+00:02:10,000 --> 00:02:18,480
+We save that and we alert my number.
+
+48
+00:02:15,200 --> 00:02:23,120
+We now get 8.1. And if we reload, we get
+
+49
+00:02:18,480 --> 00:02:25,040
+3.7. We reload, we get 3.4. Um, so we
+
+50
+00:02:23,120 --> 00:02:26,720
+can see it's generating random numbers,
+
+51
+00:02:25,040 --> 00:02:28,319
+but it has a lot of decimal places on
+
+52
+00:02:26,720 --> 00:02:29,920
+the end. And maybe we want to get rid of
+
+53
+00:02:28,319 --> 00:02:32,800
+those. If only there was a way to chop
+
+54
+00:02:29,920 --> 00:02:35,200
+decimal places off of a number. And
+
+55
+00:02:32,800 --> 00:02:37,680
+there is. Um, the way you do that is you
+
+56
+00:02:35,200 --> 00:02:41,040
+use what is called the floor function.
+
+57
+00:02:37,680 --> 00:02:43,360
+So you say math.f floor and if you put
+
+58
+00:02:41,040 --> 00:02:44,879
+parenthesis it takes in a number and it
+
+59
+00:02:43,360 --> 00:02:49,120
+returns the same number without any
+
+60
+00:02:44,879 --> 00:02:52,560
+decimal places. So if we put my number
+
+61
+00:02:49,120 --> 00:02:54,400
+when we say alert math.f floor on my
+
+62
+00:02:52,560 --> 00:02:59,200
+number our number can be anywhere
+
+63
+00:02:54,400 --> 00:03:02,080
+between zero and um 9.99999
+
+64
+00:02:59,200 --> 00:03:06,080
+because we're multiplying by 10.
+
+65
+00:03:02,080 --> 00:03:08,879
+So if we save that and we come over to
+
+66
+00:03:06,080 --> 00:03:10,959
+our code, we get seven. And we reload
+
+67
+00:03:08,879 --> 00:03:13,120
+the page and we get zero. We reload the
+
+68
+00:03:10,959 --> 00:03:15,680
+page and we get one. We reload the page
+
+69
+00:03:13,120 --> 00:03:19,840
+and we get six. So now we are generating
+
+70
+00:03:15,680 --> 00:03:21,599
+a random number between zero and nine
+
+71
+00:03:19,840 --> 00:03:23,200
+inclusive.
+
+72
+00:03:21,599 --> 00:03:24,879
+Well, what if we wanted it to be between
+
+73
+00:03:23,200 --> 00:03:27,200
+1 and 10?
+
+74
+00:03:24,879 --> 00:03:28,720
+Well, if we want to shift that, then we
+
+75
+00:03:27,200 --> 00:03:31,280
+could take the number that we've just
+
+76
+00:03:28,720 --> 00:03:33,120
+floored, and I'm going to take the alert
+
+77
+00:03:31,280 --> 00:03:35,680
+off of it.
+
+78
+00:03:33,120 --> 00:03:37,360
+So, the first number makes it so that we
+
+79
+00:03:35,680 --> 00:03:39,680
+generate a number between zero and
+
+80
+00:03:37,360 --> 00:03:42,879
+9.99999.
+
+81
+00:03:39,680 --> 00:03:45,200
+Math.floor says strip off
+
+82
+00:03:42,879 --> 00:03:47,200
+the decimal places. So, now we're
+
+83
+00:03:45,200 --> 00:03:50,000
+generating a number between zero and
+
+84
+00:03:47,200 --> 00:03:52,879
+nine. So if we want to be generating a
+
+85
+00:03:50,000 --> 00:03:55,519
+number between one and 10, all we have
+
+86
+00:03:52,879 --> 00:03:58,480
+to do is add one to it. Because if we
+
+87
+00:03:55,519 --> 00:04:00,560
+add one, if we generate the bottom of
+
+88
+00:03:58,480 --> 00:04:02,480
+the range, we'll generate a zero. 0 + 1
+
+89
+00:04:00,560 --> 00:04:05,280
+is 1. If we generate the top of the
+
+90
+00:04:02,480 --> 00:04:06,959
+range, uh we'll generate a 9. 9 + 1 is
+
+91
+00:04:05,280 --> 00:04:10,439
+10. So that'll give us a number between
+
+92
+00:04:06,959 --> 00:04:10,439
+0 and 10.
+
+93
+00:04:11,120 --> 00:04:15,519
+You can do this all on one line if you
+
+94
+00:04:13,599 --> 00:04:19,199
+would like. Um, and the way you do that
+
+95
+00:04:15,519 --> 00:04:21,120
+is you say let my random num. So you're
+
+96
+00:04:19,199 --> 00:04:23,280
+creating a random number. You're setting
+
+97
+00:04:21,120 --> 00:04:25,360
+it equal to. So you'll start by taking
+
+98
+00:04:23,280 --> 00:04:28,000
+math.random. That's a number between
+
+99
+00:04:25,360 --> 00:04:30,560
+zero and almost one.
+
+100
+00:04:28,000 --> 00:04:34,639
+You'll multiply it by 10. So that's a
+
+101
+00:04:30,560 --> 00:04:38,320
+number between 0 and 9.9999.
+
+102
+00:04:34,639 --> 00:04:41,199
+And then if you say math.f floor on that
+
+103
+00:04:38,320 --> 00:04:44,080
+number. Now
+
+104
+00:04:41,199 --> 00:04:45,520
+you have a number between zero and nine
+
+105
+00:04:44,080 --> 00:04:48,800
+because you're chopping off the decimal
+
+106
+00:04:45,520 --> 00:04:50,800
+places. And if you add one to it, now
+
+107
+00:04:48,800 --> 00:04:54,160
+you have a number random number between
+
+108
+00:04:50,800 --> 00:04:57,040
+1 and 10. And that concludes the video
+
+109
+00:04:54,160 --> 00:04:57,040
+on random numbers.

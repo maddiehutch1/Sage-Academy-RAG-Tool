@@ -1,0 +1,195 @@
+1
+00:00:00,160 --> 00:00:07,919
+Okay. So, um it's project time again. Um
+
+2
+00:00:05,759 --> 00:00:10,160
+this project is going to look shockingly
+
+3
+00:00:07,919 --> 00:00:13,599
+familiar. Um we are going to make a
+
+4
+00:00:10,160 --> 00:00:16,080
+weighted GPA calculator. Um so, we are
+
+5
+00:00:13,599 --> 00:00:17,680
+going to use some of what we did in our
+
+6
+00:00:16,080 --> 00:00:19,680
+selection project and we're going to
+
+7
+00:00:17,680 --> 00:00:21,279
+rebuild it this time. So, I want you to
+
+8
+00:00:19,680 --> 00:00:23,519
+write a program that asks the user for
+
+9
+00:00:21,279 --> 00:00:25,039
+the number of classes they are taking.
+
+10
+00:00:23,519 --> 00:00:27,039
+For each class, I want you to ask them
+
+11
+00:00:25,039 --> 00:00:28,880
+what letter grade they got in the class
+
+12
+00:00:27,039 --> 00:00:30,480
+and how many credits that class was
+
+13
+00:00:28,880 --> 00:00:33,680
+worth. So, if the class is worth one
+
+14
+00:00:30,480 --> 00:00:35,120
+credit, um, then they would say that
+
+15
+00:00:33,680 --> 00:00:37,680
+class. So, maybe they're taking like
+
+16
+00:00:35,120 --> 00:00:39,120
+spreadsheets, spreadsheets, one credit.
+
+17
+00:00:37,680 --> 00:00:41,200
+Maybe they're taking accounting, you'd
+
+18
+00:00:39,120 --> 00:00:42,640
+say accounting, three credits. I want
+
+19
+00:00:41,200 --> 00:00:47,440
+you to just gather all of that
+
+20
+00:00:42,640 --> 00:00:49,440
+information. As you do, um, you're
+
+21
+00:00:47,440 --> 00:00:52,079
+probably going to want to store that in
+
+22
+00:00:49,440 --> 00:00:53,840
+an array. Um, I didn't make you here. If
+
+23
+00:00:52,079 --> 00:00:57,360
+you know a better way to do it, go for
+
+24
+00:00:53,840 --> 00:00:58,800
+it. Um but um one way you could possibly
+
+25
+00:00:57,360 --> 00:01:01,120
+do it is to store them in parallel
+
+26
+00:00:58,800 --> 00:01:03,280
+arrays. Um then I want you to convert
+
+27
+00:01:01,120 --> 00:01:05,360
+each letter grade to its corresponding
+
+28
+00:01:03,280 --> 00:01:08,880
+grade point value. So instead of having
+
+29
+00:01:05,360 --> 00:01:12,560
+an A, I want you to make it a 4.0, an A
+
+30
+00:01:08,880 --> 00:01:15,280
+minus to be a 3.7, etc. Then I want you
+
+31
+00:01:12,560 --> 00:01:17,360
+to use the following GPA formula. I want
+
+32
+00:01:15,280 --> 00:01:19,439
+you to take each grade point and
+
+33
+00:01:17,360 --> 00:01:21,119
+multiply it by the credits it is. So
+
+34
+00:01:19,439 --> 00:01:24,560
+like your spreadsheets class, maybe
+
+35
+00:01:21,119 --> 00:01:25,920
+that's worth one credit. You'd take
+
+36
+00:01:24,560 --> 00:01:28,400
+whatever you earned, so maybe you're
+
+37
+00:01:25,920 --> 00:01:30,720
+4.0, and you'd multiply it by one. And
+
+38
+00:01:28,400 --> 00:01:33,040
+then once you've multiplied each of them
+
+39
+00:01:30,720 --> 00:01:35,360
+by their weight, I want you to sum them
+
+40
+00:01:33,040 --> 00:01:37,119
+all up. And then I want you to divide it
+
+41
+00:01:35,360 --> 00:01:39,200
+by the total number of credits that were
+
+42
+00:01:37,119 --> 00:01:41,360
+taken.
+
+43
+00:01:39,200 --> 00:01:42,880
+Um, and then after calculating the GPA
+
+44
+00:01:41,360 --> 00:01:44,560
+for the semester, display one of the
+
+45
+00:01:42,880 --> 00:01:46,880
+following messages. And those messages
+
+46
+00:01:44,560 --> 00:01:48,960
+are there for you. And then down at the
+
+47
+00:01:46,880 --> 00:01:52,399
+bottom, I've included the grade table.
+
+48
+00:01:48,960 --> 00:01:55,520
+So, good luck. Um,
+
+49
+00:01:52,399 --> 00:01:55,520
+and I'll see you in the next

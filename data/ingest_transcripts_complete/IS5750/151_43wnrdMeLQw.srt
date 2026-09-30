@@ -1,0 +1,151 @@
+1
+00:00:00,080 --> 00:00:04,720
+Okay, let's actually put our item on the
+
+2
+00:00:02,480 --> 00:00:06,720
+screen now because
+
+3
+00:00:04,720 --> 00:00:09,120
+that's what we want to do. That's the
+
+4
+00:00:06,720 --> 00:00:11,040
+whole reason we created the element. So,
+
+5
+00:00:09,120 --> 00:00:12,880
+in order to do that, we have now set
+
+6
+00:00:11,040 --> 00:00:14,960
+we've created the element and we've set
+
+7
+00:00:12,880 --> 00:00:16,720
+its text content. Now, all we need to do
+
+8
+00:00:14,960 --> 00:00:18,800
+is add it to the screen. The way you add
+
+9
+00:00:16,720 --> 00:00:20,880
+it to the screen um is you have to find
+
+10
+00:00:18,800 --> 00:00:22,960
+the spot you want to add it to. So, I'm
+
+11
+00:00:20,880 --> 00:00:25,279
+going to say document
+
+12
+00:00:22,960 --> 00:00:28,560
+query selector and I am going to look
+
+13
+00:00:25,279 --> 00:00:29,920
+for this output ul. So, I'm going to
+
+14
+00:00:28,560 --> 00:00:31,439
+look for something that has the ID of
+
+15
+00:00:29,920 --> 00:00:34,640
+output.
+
+16
+00:00:31,439 --> 00:00:37,440
+And then I'm going to say append child.
+
+17
+00:00:34,640 --> 00:00:38,960
+What this does is it takes in an element
+
+18
+00:00:37,440 --> 00:00:40,480
+and it appends it to the screen. So,
+
+19
+00:00:38,960 --> 00:00:41,760
+we're going to take in this element and
+
+20
+00:00:40,480 --> 00:00:44,320
+we're going to append it to the screen.
+
+21
+00:00:41,760 --> 00:00:47,200
+So, I'm going to access that element.
+
+22
+00:00:44,320 --> 00:00:49,360
+And now I'm going to save this. So,
+
+23
+00:00:47,200 --> 00:00:51,840
+let's come over to our running thing and
+
+24
+00:00:49,360 --> 00:00:53,440
+we're going to say go shopping.
+
+25
+00:00:51,840 --> 00:00:55,520
+And now go shopping has been added to
+
+26
+00:00:53,440 --> 00:00:59,840
+the screen. Let's try and do our button
+
+27
+00:00:55,520 --> 00:01:06,199
+trick again. button on click
+
+28
+00:00:59,840 --> 00:01:06,199
+alert one. Close the button. Hi.
+
+29
+00:01:06,320 --> 00:01:10,320
+And if we add it, you'll notice it
+
+30
+00:01:08,799 --> 00:01:11,520
+turned it into text content and put it
+
+31
+00:01:10,320 --> 00:01:13,439
+on the screen. So, the cross-ite
+
+32
+00:01:11,520 --> 00:01:15,360
+scripting attack no longer worked
+
+33
+00:01:13,439 --> 00:01:17,439
+because we're not directly setting inner
+
+34
+00:01:15,360 --> 00:01:19,840
+HTML, which means they can't give us
+
+35
+00:01:17,439 --> 00:01:22,000
+HTML. We're setting the text content,
+
+36
+00:01:19,840 --> 00:01:23,759
+but we are still creating an element.
+
+37
+00:01:22,000 --> 00:01:27,759
+And in this way, we were safely able to
+
+38
+00:01:23,759 --> 00:01:27,759
+sanitize and put it on the screen.

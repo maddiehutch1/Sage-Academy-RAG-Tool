@@ -53,6 +53,46 @@ export function buildKalturaIframeSrc(sourceUrl: string, startSec: number): stri
   );
 }
 
+export function parseYouTubeVideoId(sourceUrl: string): string | null {
+  try {
+    const url = new URL(sourceUrl);
+    const host = url.hostname.toLowerCase();
+    let videoId: string | null = null;
+
+    if (host === "youtu.be") {
+      videoId = url.pathname.split("/").filter(Boolean)[0] ?? null;
+    } else if (["youtube.com", "www.youtube.com", "m.youtube.com"].includes(host)) {
+      if (url.pathname === "/watch") {
+        videoId = url.searchParams.get("v");
+      } else if (url.pathname.startsWith("/embed/")) {
+        videoId = url.pathname.split("/")[2] ?? null;
+      }
+    }
+
+    return videoId && /^[A-Za-z0-9_-]+$/.test(videoId) ? videoId : null;
+  } catch {
+    return null;
+  }
+}
+
+export function buildYouTubeWatchUrl(sourceUrl: string, startSec: number): string | null {
+  const videoId = parseYouTubeVideoId(sourceUrl);
+  if (!videoId) return null;
+  const seconds = Number.isFinite(startSec) ? Math.max(0, Math.floor(startSec)) : 0;
+  return `https://www.youtube.com/watch?v=${videoId}&t=${seconds}s`;
+}
+
+export function buildVideoIframeSrc(sourceUrl: string, startSec: number): string {
+  if (parseKalturaUrl(sourceUrl)) {
+    return buildKalturaIframeSrc(sourceUrl, startSec);
+  }
+
+  const videoId = parseYouTubeVideoId(sourceUrl);
+  if (!videoId) return sourceUrl;
+  const seconds = Number.isFinite(startSec) ? Math.max(0, Math.floor(startSec)) : 0;
+  return `https://www.youtube.com/embed/${videoId}?start=${seconds}`;
+}
+
 export default function SourceCards({ sources }: { sources: Source[] }) {
   const [expandedSource, setExpandedSource] = useState<number | null>(null);
   const [expandedNeighbor, setExpandedNeighbor] = useState<string | null>(null);
@@ -82,7 +122,10 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
         {sources.map((src, i) => {
           const isExpanded = expandedSource === i;
           const iframeSrc = src.source_url
-            ? buildKalturaIframeSrc(src.source_url, src.start_time)
+            ? buildVideoIframeSrc(src.source_url, src.start_time)
+            : null;
+          const youtubeWatchUrl = src.source_url
+            ? buildYouTubeWatchUrl(src.source_url, src.start_time)
             : null;
 
           const prevNeighbor =
@@ -101,10 +144,10 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
           const isNextExpanded = expandedNeighbor === nextKey;
 
           const prevIframeSrc = prevNeighbor?.source_url
-            ? buildKalturaIframeSrc(prevNeighbor.source_url, 0)
+            ? buildVideoIframeSrc(prevNeighbor.source_url, 0)
             : null;
           const nextIframeSrc = nextNeighbor?.source_url
-            ? buildKalturaIframeSrc(nextNeighbor.source_url, 0)
+            ? buildVideoIframeSrc(nextNeighbor.source_url, 0)
             : null;
 
           const openNeighborTitle = isPrevExpanded
@@ -161,6 +204,16 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                 <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3 whitespace-pre-wrap">
                   "{src.excerpt}…"
                 </p>
+                {youtubeWatchUrl && (
+                  <a
+                    href={youtubeWatchUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex text-xs font-medium text-sage-700 hover:text-sage-800 underline underline-offset-2"
+                  >
+                    Open on YouTube
+                  </a>
+                )}
               </div>
 
               {isExpanded && iframeSrc && (

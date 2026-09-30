@@ -88,9 +88,9 @@ Related plans:
 **Goal**: A YouTube playlist can be prepared on disk, ingested like any other course, and watched from source cards and the sidebar at the cited timestamp.
 
 **Tasks**
-- [ ] Write `scripts/prepare_youtube_playlist.py`
-- [ ] Branch the frontend player on Kaltura vs YouTube URLs
-- [ ] Smoke-test the helper (short public playlist is enough if the real playlist is not ready)
+- [x] Write `scripts/prepare_youtube_playlist.py`
+- [x] Branch the frontend player on Kaltura vs YouTube URLs
+- [x] Smoke-test the helper on the real playlist (216 videos prepared; all captions and sidecars validated)
 - [ ] When operator inputs are available: generate files, ingest, confirm the new course in the sidebar
 - [ ] Confirm existing Kaltura courses still play from source cards and the modal
 
@@ -109,7 +109,7 @@ By the end of Stage 3, one additional course whose videos live on YouTube can be
 
 | Input | Value | Notes |
 | --- | --- | --- |
-| Playlist URL or ID | _TBD_ | Public or unlisted playlist the students can play |
-| Course display name | _TBD_ | Sidecar `course` string, e.g. `DATA XXXX: Title` |
-| Output folder | _TBD_ | `data/transcripts/<COURSECODE>/` |
+| Playlist URL or ID | `https://www.youtube.com/playlist?list=PLA1SJqfgQFEGZfzeSsmgJlvhLlAsmv9h0` | Public or unlisted playlist the students can play |
+| Course display name | `IS 5750: JavaScript for Absolute Beginners` | Sidecar `course` string |
+| Output folder | `data/transcripts/IS5750/` | Pending ingest folder; archive after successful ingest |
 | Caption language | `en` (default) | Change only if the playlist is not English |

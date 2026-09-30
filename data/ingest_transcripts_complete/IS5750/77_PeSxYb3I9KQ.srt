@@ -1,0 +1,459 @@
+1
+00:00:00,080 --> 00:00:04,880
+All right. So, we need some way of
+
+2
+00:00:02,159 --> 00:00:08,880
+getting result out of this function and
+
+3
+00:00:04,880 --> 00:00:10,800
+out into our main program. Well, um
+
+4
+00:00:08,880 --> 00:00:12,719
+let's think about how we've previously
+
+5
+00:00:10,800 --> 00:00:17,279
+gotten the result of a function out of a
+
+6
+00:00:12,719 --> 00:00:19,439
+function. Um if you think about when um
+
+7
+00:00:17,279 --> 00:00:23,359
+you replace text in a string, you said
+
+8
+00:00:19,439 --> 00:00:27,519
+let my new string equal
+
+9
+00:00:23,359 --> 00:00:30,800
+um old string.replace.
+
+10
+00:00:27,519 --> 00:00:32,559
+And then you probably put something here
+
+11
+00:00:30,800 --> 00:00:34,800
+and you replace it with something here.
+
+12
+00:00:32,559 --> 00:00:37,200
+Whoops.
+
+13
+00:00:34,800 --> 00:00:39,040
+Replaced it with something there. So
+
+14
+00:00:37,200 --> 00:00:41,600
+that would have taken the old string,
+
+15
+00:00:39,040 --> 00:00:44,000
+replaced those two things and stored it
+
+16
+00:00:41,600 --> 00:00:48,239
+in a new string. So how did it do that?
+
+17
+00:00:44,000 --> 00:00:51,920
+Well, the key here is that um
+
+18
+00:00:48,239 --> 00:00:53,680
+you set a variable equal to the result
+
+19
+00:00:51,920 --> 00:00:55,760
+of a function. And if you think about
+
+20
+00:00:53,680 --> 00:01:01,239
+it, you've done this a lot. You probably
+
+21
+00:00:55,760 --> 00:01:01,239
+said, "Let first name equal prompt."
+
+22
+00:01:02,079 --> 00:01:06,880
+Um, you've probably done other things
+
+23
+00:01:04,479 --> 00:01:09,920
+like that so far in this course where
+
+24
+00:01:06,880 --> 00:01:12,880
+you said, "Let my variable equal the
+
+25
+00:01:09,920 --> 00:01:14,400
+results of the function." So, if we want
+
+26
+00:01:12,880 --> 00:01:16,000
+to access result, we're going to have to
+
+27
+00:01:14,400 --> 00:01:19,119
+do something similar out here. So, we'll
+
+28
+00:01:16,000 --> 00:01:22,400
+say, "Let um
+
+29
+00:01:19,119 --> 00:01:25,600
+my results equal add two numbers." and
+
+30
+00:01:22,400 --> 00:01:28,960
+then we'll alert Whoops, sorry. We'll
+
+31
+00:01:25,600 --> 00:01:31,840
+alert my result.
+
+32
+00:01:28,960 --> 00:01:33,600
+So that's part of the solution. Part of
+
+33
+00:01:31,840 --> 00:01:35,600
+the solution is to take the result of
+
+34
+00:01:33,600 --> 00:01:37,759
+this, store it in a variable, and then
+
+35
+00:01:35,600 --> 00:01:40,479
+alert it. But what is the result of
+
+36
+00:01:37,759 --> 00:01:42,320
+this? Well, up here we called it result,
+
+37
+00:01:40,479 --> 00:01:44,560
+but JavaScript isn't smart enough to
+
+38
+00:01:42,320 --> 00:01:46,880
+know which part of this it needs to give
+
+39
+00:01:44,560 --> 00:01:48,320
+back to the main program. In order for
+
+40
+00:01:46,880 --> 00:01:51,119
+us to tell it what it needs to give
+
+41
+00:01:48,320 --> 00:01:53,759
+back, we need to use the keyword return.
+
+42
+00:01:51,119 --> 00:01:56,000
+So when you use the keyword return, it
+
+43
+00:01:53,759 --> 00:01:58,640
+ends this function and gives some
+
+44
+00:01:56,000 --> 00:02:00,159
+information out into the main program.
+
+45
+00:01:58,640 --> 00:02:02,240
+So it's going to send it to the other
+
+46
+00:02:00,159 --> 00:02:04,640
+side of an equal statement. So we could
+
+47
+00:02:02,240 --> 00:02:06,640
+say let my result equal and it's going
+
+48
+00:02:04,640 --> 00:02:10,160
+to be equal to whatever gets returned
+
+49
+00:02:06,640 --> 00:02:12,480
+here. Um right now we're not returning
+
+50
+00:02:10,160 --> 00:02:15,440
+anything, but we could say return
+
+51
+00:02:12,480 --> 00:02:19,120
+result. So what that will do is it will
+
+52
+00:02:15,440 --> 00:02:21,120
+take my m1 and then my m2 it'll add them
+
+53
+00:02:19,120 --> 00:02:23,920
+together and then it'll say return
+
+54
+00:02:21,120 --> 00:02:27,040
+result and it will take result and store
+
+55
+00:02:23,920 --> 00:02:30,560
+it in my result so that when we alert my
+
+56
+00:02:27,040 --> 00:02:36,120
+result we see the resulting value. I'm
+
+57
+00:02:30,560 --> 00:02:36,120
+going to um go live with this
+
+58
+00:02:36,480 --> 00:02:40,319
+and we can see that we got 30. So we've
+
+59
+00:02:38,560 --> 00:02:42,319
+successfully accessed result from inside
+
+60
+00:02:40,319 --> 00:02:43,599
+the program but let's watch that happen
+
+61
+00:02:42,319 --> 00:02:46,080
+in action.
+
+62
+00:02:43,599 --> 00:02:49,200
+Um, so we're going to come over here to
+
+63
+00:02:46,080 --> 00:02:51,599
+our sources tab and I'm going to put a
+
+64
+00:02:49,200 --> 00:02:54,160
+break point
+
+65
+00:02:51,599 --> 00:02:56,480
+right here on this line, line 22, and
+
+66
+00:02:54,160 --> 00:02:58,640
+I'm going to reload the page. Okay, it
+
+67
+00:02:56,480 --> 00:03:00,319
+has paused. Right now, my result is
+
+68
+00:02:58,640 --> 00:03:03,840
+nothing, but we're about to set it equal
+
+69
+00:03:00,319 --> 00:03:05,680
+to calling our function add two numbers.
+
+70
+00:03:03,840 --> 00:03:08,480
+So, I'm going to hit the next button,
+
+71
+00:03:05,680 --> 00:03:11,120
+and it's going to go into the function.
+
+72
+00:03:08,480 --> 00:03:15,519
+Um, it's going to say, so you'll notice
+
+73
+00:03:11,120 --> 00:03:19,200
+it jumped from line 22 up to line 13.
+
+74
+00:03:15,519 --> 00:03:22,879
+You'll hit next and my num one is now
+
+75
+00:03:19,200 --> 00:03:25,120
+10. We will hit next. My num 2 is now
+
+76
+00:03:22,879 --> 00:03:27,120
+20. Hopefully you know how to assign a
+
+77
+00:03:25,120 --> 00:03:29,599
+variable by now. Um, we'll add the
+
+78
+00:03:27,120 --> 00:03:32,560
+results together and result is now 30.
+
+79
+00:03:29,599 --> 00:03:34,640
+So if we hover over result, it is 30. If
+
+80
+00:03:32,560 --> 00:03:36,640
+we hover over my result, there's nothing
+
+81
+00:03:34,640 --> 00:03:38,159
+in it. We're going to hit the next
+
+82
+00:03:36,640 --> 00:03:40,239
+button.
+
+83
+00:03:38,159 --> 00:03:42,720
+And now if we hover over my result, it
+
+84
+00:03:40,239 --> 00:03:44,640
+has 30 in it. So it had exactly whatever
+
+85
+00:03:42,720 --> 00:03:48,120
+got returned from result is now stored
+
+86
+00:03:44,640 --> 00:03:48,120
+in my result.
+
+87
+00:03:48,959 --> 00:03:52,879
+Excuse me. You'll also notice that
+
+88
+00:03:51,280 --> 00:03:54,720
+because we're outside these curly braces
+
+89
+00:03:52,879 --> 00:03:56,879
+now, when I hover over result, it has
+
+90
+00:03:54,720 --> 00:03:58,640
+nothing in it. Um when I hover over my
+
+91
+00:03:56,879 --> 00:04:01,680
+result, it has the result of the
+
+92
+00:03:58,640 --> 00:04:06,080
+function, which is 30. And then if we
+
+93
+00:04:01,680 --> 00:04:10,480
+hit our next button, it alerts 30. So if
+
+94
+00:04:06,080 --> 00:04:12,480
+you want to um get information out of a
+
+95
+00:04:10,480 --> 00:04:14,400
+function and you want to use it in your
+
+96
+00:04:12,480 --> 00:04:17,199
+main program, the way you do that is you
+
+97
+00:04:14,400 --> 00:04:20,000
+use a return statement. Now this
+
+98
+00:04:17,199 --> 00:04:22,479
+function is probably not very useful
+
+99
+00:04:20,000 --> 00:04:25,199
+because right now all it's doing is
+
+100
+00:04:22,479 --> 00:04:27,199
+repeatedly adding 10 and 20. It'd be
+
+101
+00:04:25,199 --> 00:04:29,360
+nice if this function was a little more
+
+102
+00:04:27,199 --> 00:04:32,080
+flexible and we could give it our own
+
+103
+00:04:29,360 --> 00:04:33,840
+numbers to use. So, similar to how an
+
+104
+00:04:32,080 --> 00:04:37,199
+alert box doesn't show the same message
+
+105
+00:04:33,840 --> 00:04:39,600
+every time, and we can say hello world
+
+106
+00:04:37,199 --> 00:04:42,240
+and it will show hello world or we could
+
+107
+00:04:39,600 --> 00:04:46,320
+say um
+
+108
+00:04:42,240 --> 00:04:48,320
+I love ice cream um
+
+109
+00:04:46,320 --> 00:04:51,040
+and it will adjust the alert box. We
+
+110
+00:04:48,320 --> 00:04:53,120
+want our add to numbers to be flexible
+
+111
+00:04:51,040 --> 00:04:55,040
+just like that so that we can add
+
+112
+00:04:53,120 --> 00:04:57,040
+multiple different types of different
+
+113
+00:04:55,040 --> 00:04:59,520
+numbers rather than just always adding
+
+114
+00:04:57,040 --> 00:05:02,160
+10 and 20. And in the next video, we'll
+
+115
+00:04:59,520 --> 00:05:02,160
+talk about how to do

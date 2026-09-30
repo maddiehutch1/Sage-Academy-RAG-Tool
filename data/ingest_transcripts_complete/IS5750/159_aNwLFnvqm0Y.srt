@@ -1,0 +1,151 @@
+1
+00:00:00,080 --> 00:00:05,279
+Okay, we're coming back over to our dog
+
+2
+00:00:02,320 --> 00:00:06,640
+page again. Um,
+
+3
+00:00:05,279 --> 00:00:09,440
+we're pretending that this was
+
+4
+00:00:06,640 --> 00:00:11,519
+accidentally added where we have two
+
+5
+00:00:09,440 --> 00:00:12,800
+cards of the same thing. We're going to
+
+6
+00:00:11,519 --> 00:00:15,280
+call the remove me and we're going to
+
+7
+00:00:12,800 --> 00:00:17,279
+pass the event. Right now, the way the
+
+8
+00:00:15,280 --> 00:00:19,520
+remove me function works is I said go to
+
+9
+00:00:17,279 --> 00:00:22,000
+the event, grab the target element, and
+
+10
+00:00:19,520 --> 00:00:24,160
+remove it. Now, if you think through
+
+11
+00:00:22,000 --> 00:00:26,080
+this very carefully, you'll remember
+
+12
+00:00:24,160 --> 00:00:29,199
+that the target element is what we
+
+13
+00:00:26,080 --> 00:00:31,279
+clicked. The current target is the one
+
+14
+00:00:29,199 --> 00:00:33,440
+that has the event handler. So, let's
+
+15
+00:00:31,279 --> 00:00:36,559
+show you some strange things that happen
+
+16
+00:00:33,440 --> 00:00:39,040
+with this. So, let's say I want to
+
+17
+00:00:36,559 --> 00:00:41,760
+delete this card, but I'm hovering over
+
+18
+00:00:39,040 --> 00:00:43,920
+the H tag. I don't remember which level
+
+19
+00:00:41,760 --> 00:00:46,160
+H tag it is, but I'm hovering over the H
+
+20
+00:00:43,920 --> 00:00:48,160
+tag. If I click on it, it deletes it,
+
+21
+00:00:46,160 --> 00:00:50,320
+but it didn't delete the card. What I
+
+22
+00:00:48,160 --> 00:00:53,280
+wanted to delete was the card. And if we
+
+23
+00:00:50,320 --> 00:00:54,719
+come back over, you'll notice that the
+
+24
+00:00:53,280 --> 00:00:58,079
+card is the one that has the onclick
+
+25
+00:00:54,719 --> 00:01:00,559
+event. Um, oh, I guess it's just a
+
+26
+00:00:58,079 --> 00:01:02,960
+Pclass with name or P tag with name on
+
+27
+00:01:00,559 --> 00:01:05,040
+it. But this is what I clicked and
+
+28
+00:01:02,960 --> 00:01:07,439
+that's what got removed. And that is
+
+29
+00:01:05,040 --> 00:01:09,520
+because I did the target. If I want to
+
+30
+00:01:07,439 --> 00:01:11,680
+remove the thing that has the event
+
+31
+00:01:09,520 --> 00:01:12,880
+handler on it, then I need to use
+
+32
+00:01:11,680 --> 00:01:15,280
+current target. So I'll say
+
+33
+00:01:12,880 --> 00:01:18,000
+event.current
+
+34
+00:01:15,280 --> 00:01:20,720
+target.
+
+35
+00:01:18,000 --> 00:01:23,040
+And now if we come over here, if I click
+
+36
+00:01:20,720 --> 00:01:24,479
+on the H1 tag, it removes the entire
+
+37
+00:01:23,040 --> 00:01:28,960
+card. And you can see that the other
+
+38
+00:01:24,479 --> 00:01:28,960
+card then expanded to take up the slice.

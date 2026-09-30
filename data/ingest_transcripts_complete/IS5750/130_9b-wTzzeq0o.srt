@@ -1,0 +1,211 @@
+1
+00:00:00,080 --> 00:00:04,640
+Okay, so here I am logged into my other
+
+2
+00:00:02,960 --> 00:00:06,960
+account. Not the account that made the
+
+3
+00:00:04,640 --> 00:00:10,240
+poll request, but into my other account.
+
+4
+00:00:06,960 --> 00:00:12,000
+Um, to remind you, you may have noticed
+
+5
+00:00:10,240 --> 00:00:13,920
+that the pull request was made by this
+
+6
+00:00:12,000 --> 00:00:15,440
+user with the brown icon. I am now
+
+7
+00:00:13,920 --> 00:00:17,359
+signed in as the user with the green
+
+8
+00:00:15,440 --> 00:00:19,520
+icon. Um, I'm just showing you that
+
+9
+00:00:17,359 --> 00:00:21,439
+because as a reminder, you typically
+
+10
+00:00:19,520 --> 00:00:23,279
+don't want to merge your own code. You
+
+11
+00:00:21,439 --> 00:00:25,119
+want someone else to at least look at it
+
+12
+00:00:23,279 --> 00:00:27,039
+first. So, I'm going to show you how to
+
+13
+00:00:25,119 --> 00:00:29,519
+merge a pull request made by someone
+
+14
+00:00:27,039 --> 00:00:32,399
+else. So, what you do um is you'll click
+
+15
+00:00:29,519 --> 00:00:34,640
+here on this pull request tab. When you
+
+16
+00:00:32,399 --> 00:00:36,320
+do, it'll show you all of the open pull
+
+17
+00:00:34,640 --> 00:00:38,480
+requests. You're going to click on this
+
+18
+00:00:36,320 --> 00:00:40,559
+created a multiply function or whatever
+
+19
+00:00:38,480 --> 00:00:43,520
+your pull request is called. You'll
+
+20
+00:00:40,559 --> 00:00:46,480
+click on it and it says that there are
+
+21
+00:00:43,520 --> 00:00:50,320
+no um conflicts.
+
+22
+00:00:46,480 --> 00:00:52,559
+Um and so what you can do um is you can
+
+23
+00:00:50,320 --> 00:00:54,239
+come here and click on commits. And this
+
+24
+00:00:52,559 --> 00:00:56,559
+shows you all of the changes that they
+
+25
+00:00:54,239 --> 00:00:58,800
+committed. You can also click on checks
+
+26
+00:00:56,559 --> 00:01:01,199
+if you have tests, but I'm going to
+
+27
+00:00:58,800 --> 00:01:03,120
+click on this files changed. And it
+
+28
+00:01:01,199 --> 00:01:05,680
+looks like they changed the multiply.js
+
+29
+00:01:03,120 --> 00:01:07,200
+file and they added that line of code.
+
+30
+00:01:05,680 --> 00:01:08,400
+So now that I've know and I'm
+
+31
+00:01:07,200 --> 00:01:10,799
+comfortable with the changes that
+
+32
+00:01:08,400 --> 00:01:15,360
+they've made, I can come over here and
+
+33
+00:01:10,799 --> 00:01:18,640
+say I approve these changes
+
+34
+00:01:15,360 --> 00:01:20,000
+and I can comment it and then I can
+
+35
+00:01:18,640 --> 00:01:22,000
+merge this pull request. So, I'm going
+
+36
+00:01:20,000 --> 00:01:26,000
+to click this button and it's going to
+
+37
+00:01:22,000 --> 00:01:29,200
+merge pull request number one from um
+
+38
+00:01:26,000 --> 00:01:31,600
+that branch and it's going to create a
+
+39
+00:01:29,200 --> 00:01:33,600
+multiply function. As soon as I hit
+
+40
+00:01:31,600 --> 00:01:35,759
+confirm merge, it will merge that
+
+41
+00:01:33,600 --> 00:01:38,560
+request. Now, if we come over to our
+
+42
+00:01:35,759 --> 00:01:40,880
+code by clicking the code tab, you can
+
+43
+00:01:38,560 --> 00:01:42,960
+see a readme file and a multiply.js
+
+44
+00:01:40,880 --> 00:01:44,640
+file. If you click on this multiply.js
+
+45
+00:01:42,960 --> 00:01:47,119
+file, you can see the code that was
+
+46
+00:01:44,640 --> 00:01:48,960
+written on the local computer. And so in
+
+47
+00:01:47,119 --> 00:01:50,560
+that way we were able to keep the main
+
+48
+00:01:48,960 --> 00:01:52,880
+branch safe until we were sure that the
+
+49
+00:01:50,560 --> 00:01:54,880
+multiply.js function worked. We were
+
+50
+00:01:52,880 --> 00:01:57,040
+able to develop it on a copy then push
+
+51
+00:01:54,880 --> 00:01:59,040
+it up to GitHub. Take that copy from
+
+52
+00:01:57,040 --> 00:02:02,640
+GitHub and merge it in with our main
+
+53
+00:01:59,040 --> 00:02:02,640
+code. And now it's with our main

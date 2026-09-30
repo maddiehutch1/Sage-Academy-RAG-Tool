@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:00:04,000
+Another
+
+2
+00:00:02,000 --> 00:00:05,680
+post popular hosting website is called
+
+3
+00:00:04,000 --> 00:00:08,480
+CloudFlare. So, we're going to go ahead
+
+4
+00:00:05,680 --> 00:00:10,080
+and click this start for free and it's
+
+5
+00:00:08,480 --> 00:00:12,639
+going to load and I'm going to continue
+
+6
+00:00:10,080 --> 00:00:15,360
+with GitHub again
+
+7
+00:00:12,639 --> 00:00:18,240
+and continue with my account. And this
+
+8
+00:00:15,360 --> 00:00:20,240
+is access this is basically once again
+
+9
+00:00:18,240 --> 00:00:22,320
+asking if Cloudflare can use your GitHub
+
+10
+00:00:20,240 --> 00:00:24,000
+to log in and you're going to authorize
+
+11
+00:00:22,320 --> 00:00:27,519
+that.
+
+12
+00:00:24,000 --> 00:00:29,039
+And now Cloudflare knows who I am. Um,
+
+13
+00:00:27,519 --> 00:00:31,760
+so,
+
+14
+00:00:29,039 --> 00:00:34,399
+um, we've brought up this nice thing.
+
+15
+00:00:31,760 --> 00:00:37,399
+Um, let's come here to our account home.
+
+16
+00:00:34,399 --> 00:00:37,399
+Um,
+
+17
+00:00:38,719 --> 00:00:43,280
+finish the walk through. Okay. So,
+
+18
+00:00:41,600 --> 00:00:44,719
+sorry. We're going to click on developer
+
+19
+00:00:43,280 --> 00:00:46,239
+platform and we're going to click start
+
+20
+00:00:44,719 --> 00:00:47,680
+building. And it's going to bring us to
+
+21
+00:00:46,239 --> 00:00:49,120
+this workers and pages. And then it's
+
+22
+00:00:47,680 --> 00:00:50,800
+going to say, how do you want to deploy?
+
+23
+00:00:49,120 --> 00:00:53,280
+So, here you could just directly upload
+
+24
+00:00:50,800 --> 00:00:56,160
+your files. Um, or you could connect
+
+25
+00:00:53,280 --> 00:00:59,359
+GitHub. We aren't actually. So this is
+
+26
+00:00:56,160 --> 00:01:00,960
+if we had built like
+
+27
+00:00:59,359 --> 00:01:02,640
+a a dynamic website, but what we've
+
+28
+00:01:00,960 --> 00:01:03,520
+built is a vanilla JavaScript website.
+
+29
+00:01:02,640 --> 00:01:05,199
+So what we're going to do is we're going
+
+30
+00:01:03,520 --> 00:01:06,799
+to go to this looking to deploy to pages
+
+31
+00:01:05,199 --> 00:01:08,720
+and click get started. Now it says
+
+32
+00:01:06,799 --> 00:01:09,840
+import an existing git repository. So
+
+33
+00:01:08,720 --> 00:01:11,360
+we're going to go ahead and click get
+
+34
+00:01:09,840 --> 00:01:13,040
+started or we could drag and drop our
+
+35
+00:01:11,360 --> 00:01:15,040
+files here and it would upload them. So
+
+36
+00:01:13,040 --> 00:01:17,360
+if you wanted you could open up your
+
+37
+00:01:15,040 --> 00:01:19,520
+finder, drag in the files and you'd be
+
+38
+00:01:17,360 --> 00:01:20,799
+good to go. But I would rather deploy
+
+39
+00:01:19,520 --> 00:01:22,880
+from a git repository. So I'm going to
+
+40
+00:01:20,799 --> 00:01:24,799
+click get started.
+
+41
+00:01:22,880 --> 00:01:26,560
+And it says deploy a site from your
+
+42
+00:01:24,799 --> 00:01:27,680
+account. Um, we want to connect to
+
+43
+00:01:26,560 --> 00:01:30,640
+GitHub. So, we're going to click connect
+
+44
+00:01:27,680 --> 00:01:32,400
+to GitHub. We're going to continue. And
+
+45
+00:01:30,640 --> 00:01:35,040
+this page should look shockingly
+
+46
+00:01:32,400 --> 00:01:37,280
+familiar at this point. GitHub is
+
+47
+00:01:35,040 --> 00:01:38,880
+wondering if you want Cloudflare to use
+
+48
+00:01:37,280 --> 00:01:40,240
+all of your repositories or only
+
+49
+00:01:38,880 --> 00:01:42,960
+specific ones. We're going to go with
+
+50
+00:01:40,240 --> 00:01:44,640
+only specific ones. And we're going to
+
+51
+00:01:42,960 --> 00:01:48,560
+go with our dice roller. And we're going
+
+52
+00:01:44,640 --> 00:01:50,159
+to hit install and authorize.
+
+53
+00:01:48,560 --> 00:01:52,960
+All right.
+
+54
+00:01:50,159 --> 00:01:55,040
+Now
+
+55
+00:01:52,960 --> 00:01:58,079
+um
+
+56
+00:01:55,040 --> 00:02:01,119
+we're here um and so we'll click connect
+
+57
+00:01:58,079 --> 00:02:03,600
+to GitHub continue.
+
+58
+00:02:01,119 --> 00:02:06,799
+All right. So now we can automatically
+
+59
+00:02:03,600 --> 00:02:08,239
+deploy um whenever we make a pull
+
+60
+00:02:06,799 --> 00:02:09,679
+request to our GitHub repository. So
+
+61
+00:02:08,239 --> 00:02:11,200
+basically whenever we make a change to a
+
+62
+00:02:09,679 --> 00:02:13,440
+branch it will redeploy just like
+
+63
+00:02:11,200 --> 00:02:17,440
+Verscell just like Netlefi it will
+
+64
+00:02:13,440 --> 00:02:21,680
+redeploy. Um, and we said we wanted it
+
+65
+00:02:17,440 --> 00:02:23,440
+only to have access to specific um,
+
+66
+00:02:21,680 --> 00:02:27,360
+repositories
+
+67
+00:02:23,440 --> 00:02:29,599
+and we said that we want it to have
+
+68
+00:02:27,360 --> 00:02:31,680
+access to dice roller. So, this is on
+
+69
+00:02:29,599 --> 00:02:33,280
+GitHub. Uh, let's come back over to
+
+70
+00:02:31,680 --> 00:02:35,840
+Cloudflare.
+
+71
+00:02:33,280 --> 00:02:38,840
+Oh, click login. I got logged out, I
+
+72
+00:02:35,840 --> 00:02:38,840
+guess.
+
+73
+00:02:38,879 --> 00:02:44,879
+Okay. on developer platform.
+
+74
+00:02:42,441 --> 00:02:47,440
+[snorts] Start building.
+
+75
+00:02:44,879 --> 00:02:49,760
+Get started with pages. Get started with
+
+76
+00:02:47,440 --> 00:02:51,519
+GitHub. And now that we've got our
+
+77
+00:02:49,760 --> 00:02:53,360
+account logged in, it'll show up here.
+
+78
+00:02:51,519 --> 00:02:55,040
+We can select the repository we want.
+
+79
+00:02:53,360 --> 00:02:56,640
+This is our dice roll repository. So
+
+80
+00:02:55,040 --> 00:02:58,480
+then we're going to click begin setup.
+
+81
+00:02:56,640 --> 00:02:59,920
+So a couple things you'll want to do. If
+
+82
+00:02:58,480 --> 00:03:02,080
+you merge your code with main, you'll
+
+83
+00:02:59,920 --> 00:03:03,680
+leave this production branch as main. I
+
+84
+00:03:02,080 --> 00:03:04,879
+didn't. I left mine on a branch called
+
+85
+00:03:03,680 --> 00:03:06,879
+deploy. So you're going to go ahead and
+
+86
+00:03:04,879 --> 00:03:08,640
+use that. If you used a framework, you
+
+87
+00:03:06,879 --> 00:03:10,319
+could go ahead and select it. We didn't.
+
+88
+00:03:08,640 --> 00:03:11,760
+So, we're going to use none. And you can
+
+89
+00:03:10,319 --> 00:03:13,440
+go ahead and leave everything else as it
+
+90
+00:03:11,760 --> 00:03:16,640
+was. Your root directory, you could
+
+91
+00:03:13,440 --> 00:03:18,640
+change where um it deployed from. So, if
+
+92
+00:03:16,640 --> 00:03:20,080
+your index.html wasn't in the main
+
+93
+00:03:18,640 --> 00:03:22,560
+folder, you could choose a different
+
+94
+00:03:20,080 --> 00:03:23,519
+folder. But ours is in the main folder.
+
+95
+00:03:22,560 --> 00:03:25,840
+So, we're going to go ahead and click
+
+96
+00:03:23,519 --> 00:03:28,000
+save and deploy. And this is going to
+
+97
+00:03:25,840 --> 00:03:30,000
+load for a couple of seconds. And so,
+
+98
+00:03:28,000 --> 00:03:32,159
+it's initializing our build environment.
+
+99
+00:03:30,000 --> 00:03:34,239
+And now it's going out, grabbing our
+
+100
+00:03:32,159 --> 00:03:36,239
+code, copying it over, it's building our
+
+101
+00:03:34,239 --> 00:03:37,840
+application, and then it's going to
+
+102
+00:03:36,239 --> 00:03:42,720
+deploy it to Cloudflare's global
+
+103
+00:03:37,840 --> 00:03:46,400
+network. And loads for a second longer.
+
+104
+00:03:42,720 --> 00:03:49,280
+Success. 11 files uploaded in 1.73
+
+105
+00:03:46,400 --> 00:03:50,959
+seconds. And now we can continue to our
+
+106
+00:03:49,280 --> 00:03:52,480
+project. Once we're here, we can see
+
+107
+00:03:50,959 --> 00:03:54,480
+that we've got dice roller-
+
+108
+00:03:52,480 --> 00:03:55,760
+nfy.pages.dev.
+
+109
+00:03:54,480 --> 00:03:57,599
+And we can go ahead and open it. And
+
+110
+00:03:55,760 --> 00:03:59,200
+here it is. And we can roll our dice
+
+111
+00:03:57,599 --> 00:04:01,840
+just like we did before. We can freeze
+
+112
+00:03:59,200 --> 00:04:01,840
+them.

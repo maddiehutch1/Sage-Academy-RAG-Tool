@@ -1,0 +1,371 @@
+1
+00:00:00,480 --> 00:00:07,759
+Okay, this is just a friendly reminder
+
+2
+00:00:03,360 --> 00:00:10,320
+um that HTML tags when you query them
+
+3
+00:00:07,759 --> 00:00:11,920
+are returned as objects and that means
+
+4
+00:00:10,320 --> 00:00:15,599
+they have attributes and you can access
+
+5
+00:00:11,920 --> 00:00:18,640
+those attributes. So this object this
+
+6
+00:00:15,599 --> 00:00:21,119
+template tag has a content attribute and
+
+7
+00:00:18,640 --> 00:00:26,240
+we can use that content attribute to
+
+8
+00:00:21,119 --> 00:00:29,519
+create cards based on that template. So
+
+9
+00:00:26,240 --> 00:00:31,760
+coming over here, um let's go ahead and
+
+10
+00:00:29,519 --> 00:00:36,320
+make this add item function. So we're
+
+11
+00:00:31,760 --> 00:00:38,160
+going to do function add item.
+
+12
+00:00:36,320 --> 00:00:39,760
+And the first thing we want to do is we
+
+13
+00:00:38,160 --> 00:00:43,680
+want to get the template tag. So let's
+
+14
+00:00:39,760 --> 00:00:46,480
+say let templates equal
+
+15
+00:00:43,680 --> 00:00:48,640
+document.query selector and we're going
+
+16
+00:00:46,480 --> 00:00:50,160
+to look for the template tag. Once we
+
+17
+00:00:48,640 --> 00:00:52,079
+have our template tag, we want to access
+
+18
+00:00:50,160 --> 00:00:53,199
+the content. If we want to access the
+
+19
+00:00:52,079 --> 00:00:54,719
+content and we want to use it on the
+
+20
+00:00:53,199 --> 00:00:56,559
+page, remember template tags are read
+
+21
+00:00:54,719 --> 00:00:58,239
+only. So if we want to access the
+
+22
+00:00:56,559 --> 00:01:00,719
+content, we need to import it so that we
+
+23
+00:00:58,239 --> 00:01:02,320
+can uh make a copy of it and edit that
+
+24
+00:01:00,719 --> 00:01:06,000
+copy which we can then put on the
+
+25
+00:01:02,320 --> 00:01:12,080
+screen. So to do that, we'll say let's
+
+26
+00:01:06,000 --> 00:01:13,840
+new card equal document dot import node.
+
+27
+00:01:12,080 --> 00:01:15,520
+And it says, well, what node do you want
+
+28
+00:01:13,840 --> 00:01:18,400
+to import? Well, we want to go to the
+
+29
+00:01:15,520 --> 00:01:21,360
+template and access its content. The
+
+30
+00:01:18,400 --> 00:01:24,720
+template content contains all of this
+
+31
+00:01:21,360 --> 00:01:27,119
+HTML. So if we want to access this HTML,
+
+32
+00:01:24,720 --> 00:01:29,439
+we need to go to template.content. And
+
+33
+00:01:27,119 --> 00:01:32,079
+we're going to say take that HTML and
+
+34
+00:01:29,439 --> 00:01:34,400
+import it here. So now this new card is
+
+35
+00:01:32,079 --> 00:01:36,479
+that imported content. There are two
+
+36
+00:01:34,400 --> 00:01:39,360
+ways to import. There are deep imports
+
+37
+00:01:36,479 --> 00:01:41,119
+and there are shallow imports. Um, and
+
+38
+00:01:39,360 --> 00:01:42,960
+so if you do a shallow import, all it
+
+39
+00:01:41,119 --> 00:01:45,520
+will grab is this div. It won't grab
+
+40
+00:01:42,960 --> 00:01:47,439
+anything inside the div, just the div.
+
+41
+00:01:45,520 --> 00:01:49,439
+If you want everything inside of the div
+
+42
+00:01:47,439 --> 00:01:51,840
+like the image tag and the other divs,
+
+43
+00:01:49,439 --> 00:01:54,000
+then you need to access them. So here in
+
+44
+00:01:51,840 --> 00:01:56,159
+the import node, it asks if you want to
+
+45
+00:01:54,000 --> 00:01:57,840
+grab all of the children. So you can put
+
+46
+00:01:56,159 --> 00:02:00,479
+true if you want all of them, or if you
+
+47
+00:01:57,840 --> 00:02:03,439
+just want the upper div, then you'll
+
+48
+00:02:00,479 --> 00:02:07,360
+just put false here. Okay, now that I
+
+49
+00:02:03,439 --> 00:02:10,239
+have it, I can go ahead and I can query
+
+50
+00:02:07,360 --> 00:02:13,040
+this new HTML element and I can make
+
+51
+00:02:10,239 --> 00:02:15,440
+some changes to it. So rather than
+
+52
+00:02:13,040 --> 00:02:17,599
+having it hardcoded to have this source
+
+53
+00:02:15,440 --> 00:02:20,000
+and to have this alt and to have this
+
+54
+00:02:17,599 --> 00:02:22,879
+name and to have this bio, I could
+
+55
+00:02:20,000 --> 00:02:25,360
+actually um query it. And I took the
+
+56
+00:02:22,879 --> 00:02:26,720
+liberty of writing this ahead of time so
+
+57
+00:02:25,360 --> 00:02:28,959
+that you didn't have to watch me write
+
+58
+00:02:26,720 --> 00:02:30,800
+it. But basically, I'm going into each
+
+59
+00:02:28,959 --> 00:02:33,840
+of those inputs and I'm grabbing the
+
+60
+00:02:30,800 --> 00:02:35,680
+files and I'm setting inside of this new
+
+61
+00:02:33,840 --> 00:02:37,360
+card. I'm setting the image to what I
+
+62
+00:02:35,680 --> 00:02:39,040
+want, the alt to what I want, the name
+
+63
+00:02:37,360 --> 00:02:40,560
+to what I want, and the title to what I
+
+64
+00:02:39,040 --> 00:02:42,160
+want.
+
+65
+00:02:40,560 --> 00:02:44,160
+Once I'm done with that, I just need to
+
+66
+00:02:42,160 --> 00:02:46,720
+append it to the page. So, we can say
+
+67
+00:02:44,160 --> 00:02:50,640
+document.query
+
+68
+00:02:46,720 --> 00:02:52,879
+selector and we can look for output and
+
+69
+00:02:50,640 --> 00:02:56,800
+we can append
+
+70
+00:02:52,879 --> 00:02:59,280
+this new child and it is this new card.
+
+71
+00:02:56,800 --> 00:03:02,640
+So, if we save this and we come over
+
+72
+00:02:59,280 --> 00:03:07,239
+here, we can add fluffy
+
+73
+00:03:02,640 --> 00:03:07,239
+um title cutest
+
+74
+00:03:07,280 --> 00:03:11,840
+fun.
+
+75
+00:03:08,800 --> 00:03:15,599
+And we'll upload a picture of Fluffy.
+
+76
+00:03:11,840 --> 00:03:17,760
+And we'll say open. And we'll add dog.
+
+77
+00:03:15,599 --> 00:03:19,280
+And there's Fluffy. And he's a fun dog.
+
+78
+00:03:17,760 --> 00:03:22,159
+And we were able to add a whole bunch of
+
+79
+00:03:19,280 --> 00:03:24,159
+HTML elements to the page and edit them
+
+80
+00:03:22,159 --> 00:03:27,440
+without having to create a whole bunch
+
+81
+00:03:24,159 --> 00:03:28,800
+of elements in our JavaScript code. And
+
+82
+00:03:27,440 --> 00:03:31,680
+that's the power of templates because
+
+83
+00:03:28,800 --> 00:03:34,000
+now we can take this and we can name it
+
+84
+00:03:31,680 --> 00:03:37,519
+um phto
+
+85
+00:03:34,000 --> 00:03:39,120
+and we can super
+
+86
+00:03:37,519 --> 00:03:42,080
+energetic
+
+87
+00:03:39,120 --> 00:03:45,680
+can't spell but you get the picture and
+
+88
+00:03:42,080 --> 00:03:47,920
+I'll put in dog picture one and I'll add
+
+89
+00:03:45,680 --> 00:03:50,400
+the dog and now he's on the screen and
+
+90
+00:03:47,920 --> 00:03:51,840
+now we have a bunch of neat cards added
+
+91
+00:03:50,400 --> 00:03:53,920
+to the screen and we're able to use a
+
+92
+00:03:51,840 --> 00:03:56,400
+template and have everything pre-estyled
+
+93
+00:03:53,920 --> 00:03:56,400
+ahead of

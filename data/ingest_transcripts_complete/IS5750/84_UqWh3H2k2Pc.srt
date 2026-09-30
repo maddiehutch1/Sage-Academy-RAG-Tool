@@ -1,0 +1,835 @@
+1
+00:00:00,000 --> 00:00:04,319
+So where might you want to take a
+
+2
+00:00:02,000 --> 00:00:06,640
+function as an input? Well, what it lets
+
+3
+00:00:04,319 --> 00:00:09,599
+you do is it lets you write a function
+
+4
+00:00:06,640 --> 00:00:11,599
+that takes a function and calls it. So
+
+5
+00:00:09,599 --> 00:00:13,120
+I'm going to demonstrate this by
+
+6
+00:00:11,599 --> 00:00:14,639
+commenting out we don't need that last
+
+7
+00:00:13,120 --> 00:00:17,119
+function. So I'm going to comment that
+
+8
+00:00:14,639 --> 00:00:19,600
+out for now. But we do need our cleanup
+
+9
+00:00:17,119 --> 00:00:22,960
+string function. So what I'm going to do
+
+10
+00:00:19,600 --> 00:00:26,240
+is I'm going to create a string array.
+
+11
+00:00:22,960 --> 00:00:27,760
+And I'm just going to Whoa.
+
+12
+00:00:26,240 --> 00:00:30,800
+I'm going to create a string array. And
+
+13
+00:00:27,760 --> 00:00:34,640
+I'm just going to pass in
+
+14
+00:00:30,800 --> 00:00:37,120
+um random things. So we'll say hello.
+
+15
+00:00:34,640 --> 00:00:40,320
+And that one has a lot of spaces at the
+
+16
+00:00:37,120 --> 00:00:43,840
+front. We're going to put spaces and
+
+17
+00:00:40,320 --> 00:00:46,079
+then type we're going to actually type
+
+18
+00:00:43,840 --> 00:00:49,280
+world and put a lot of spaces at the
+
+19
+00:00:46,079 --> 00:00:53,440
+end. And then we're going to put spaces
+
+20
+00:00:49,280 --> 00:00:57,199
+and then hi and then spaces. So as you
+
+21
+00:00:53,440 --> 00:00:58,879
+can see, we have a string array. Well,
+
+22
+00:00:57,199 --> 00:01:04,320
+let's write a function. We're going to
+
+23
+00:00:58,879 --> 00:01:05,840
+call this function pro apply to array.
+
+24
+00:01:04,320 --> 00:01:08,320
+What it's going to do is it's going to
+
+25
+00:01:05,840 --> 00:01:11,360
+take an input array and it's going to
+
+26
+00:01:08,320 --> 00:01:13,360
+take an input function.
+
+27
+00:01:11,360 --> 00:01:15,520
+Then what we're going to do is we're
+
+28
+00:01:13,360 --> 00:01:20,159
+going to loop over that array. So we'll
+
+29
+00:01:15,520 --> 00:01:24,320
+say for let I or sorry counter equal
+
+30
+00:01:20,159 --> 00:01:26,560
+zero counter is less than input
+
+31
+00:01:24,320 --> 00:01:29,040
+array.length
+
+32
+00:01:26,560 --> 00:01:30,560
+Because if we get an array here, then it
+
+33
+00:01:29,040 --> 00:01:32,799
+should have a property called length,
+
+34
+00:01:30,560 --> 00:01:34,479
+which means we can loop over this array.
+
+35
+00:01:32,799 --> 00:01:38,079
+Then I'll put a semicolon, and then
+
+36
+00:01:34,479 --> 00:01:39,759
+we'll say counter plus+. So thus far,
+
+37
+00:01:38,079 --> 00:01:41,680
+all this function does is it takes in an
+
+38
+00:01:39,759 --> 00:01:44,400
+input array, and it takes in an input
+
+39
+00:01:41,680 --> 00:01:46,560
+function. It starts a counter at zero,
+
+40
+00:01:44,400 --> 00:01:49,600
+loops for the length of the array. So in
+
+41
+00:01:46,560 --> 00:01:51,200
+this case, this array has 0 1 2 items.
+
+42
+00:01:49,600 --> 00:01:52,640
+So, we're going to start at zero and
+
+43
+00:01:51,200 --> 00:01:54,159
+we're going to go almost up to three,
+
+44
+00:01:52,640 --> 00:01:56,159
+but not quite including three, which
+
+45
+00:01:54,159 --> 00:01:57,520
+means we're going to go 0, one, two, and
+
+46
+00:01:56,159 --> 00:02:00,000
+we're going to increment by one each
+
+47
+00:01:57,520 --> 00:02:01,520
+time. So, hopefully you've watched the
+
+48
+00:02:00,000 --> 00:02:04,000
+array videos and you understand how to
+
+49
+00:02:01,520 --> 00:02:05,840
+loop through an array. Okay, what I want
+
+50
+00:02:04,000 --> 00:02:08,399
+to do is I want to go to the string
+
+51
+00:02:05,840 --> 00:02:09,759
+array at the counter position. So,
+
+52
+00:02:08,399 --> 00:02:11,680
+meaning the first time this loop goes
+
+53
+00:02:09,759 --> 00:02:13,920
+through, I want to go to this very first
+
+54
+00:02:11,680 --> 00:02:17,520
+position. And what I want to do is I
+
+55
+00:02:13,920 --> 00:02:20,800
+want to set it equal to um the result of
+
+56
+00:02:17,520 --> 00:02:23,959
+calling input function and passing in as
+
+57
+00:02:20,800 --> 00:02:23,959
+an input.
+
+58
+00:02:24,080 --> 00:02:26,959
+Oh, and I'm sorry. This isn't supposed
+
+59
+00:02:25,840 --> 00:02:28,879
+to be string array. This is supposed to
+
+60
+00:02:26,959 --> 00:02:30,800
+be input array. So I'm going to take
+
+61
+00:02:28,879 --> 00:02:32,720
+whichever array I receive. I'm going to
+
+62
+00:02:30,800 --> 00:02:34,560
+go to the zero position. If we pass in
+
+63
+00:02:32,720 --> 00:02:38,080
+string array, the zero position is going
+
+64
+00:02:34,560 --> 00:02:40,480
+to be this hello. And I want to set it
+
+65
+00:02:38,080 --> 00:02:44,160
+equal to calling whichever function we
+
+66
+00:02:40,480 --> 00:02:46,879
+pass in. And um as an input to that
+
+67
+00:02:44,160 --> 00:02:51,120
+function, I'm going to take in this
+
+68
+00:02:46,879 --> 00:02:55,040
+exact same thing. So
+
+69
+00:02:51,120 --> 00:02:58,000
+what I'm saying is take this string with
+
+70
+00:02:55,040 --> 00:03:00,480
+a lot of spaces that says hello,
+
+71
+00:02:58,000 --> 00:03:03,360
+pass it in to whatever function I happen
+
+72
+00:03:00,480 --> 00:03:07,680
+to be calling. Take the result and store
+
+73
+00:03:03,360 --> 00:03:09,760
+it back where this hello was.
+
+74
+00:03:07,680 --> 00:03:11,599
+And then I put a semicolon. And then I'm
+
+75
+00:03:09,760 --> 00:03:15,720
+going to return
+
+76
+00:03:11,599 --> 00:03:15,720
+the input array.
+
+77
+00:03:17,040 --> 00:03:22,720
+And so I'm going to call this I'm going
+
+78
+00:03:19,360 --> 00:03:26,080
+to say let results equal
+
+79
+00:03:22,720 --> 00:03:27,599
+apply to array. What am I going to take?
+
+80
+00:03:26,080 --> 00:03:28,879
+What is the input array I want to give
+
+81
+00:03:27,599 --> 00:03:31,200
+it? Well, I want to give it string
+
+82
+00:03:28,879 --> 00:03:32,879
+array. What is the input function I want
+
+83
+00:03:31,200 --> 00:03:37,360
+to give it? Well, I want to give it
+
+84
+00:03:32,879 --> 00:03:40,159
+cleanup string. And then um I'm going to
+
+85
+00:03:37,360 --> 00:03:47,400
+console
+
+86
+00:03:40,159 --> 00:03:47,400
+log the result. Okay, so let's save this
+
+87
+00:03:48,239 --> 00:03:55,440
+and come over to our running code and
+
+88
+00:03:52,480 --> 00:03:57,439
+stop it and reload the page. Okay, if we
+
+89
+00:03:55,440 --> 00:04:01,120
+look at our console, we can see that it
+
+90
+00:03:57,439 --> 00:04:04,400
+says hello world and hi. But let's just
+
+91
+00:04:01,120 --> 00:04:05,680
+go over to sources and run our debugger.
+
+92
+00:04:04,400 --> 00:04:08,720
+So what I'm going to do is I'm going to
+
+93
+00:04:05,680 --> 00:04:11,120
+put a break point on line 33 and I'm
+
+94
+00:04:08,720 --> 00:04:13,200
+going to reload the page. Okay, it says
+
+95
+00:04:11,120 --> 00:04:15,680
+result is going to be equal to whatever
+
+96
+00:04:13,200 --> 00:04:17,919
+the result of calling apply to array is.
+
+97
+00:04:15,680 --> 00:04:21,199
+Apply to array is give receiving an
+
+98
+00:04:17,919 --> 00:04:23,520
+input of an array which has strings with
+
+99
+00:04:21,199 --> 00:04:25,199
+different casing and spaces in random
+
+100
+00:04:23,520 --> 00:04:28,000
+places. And then it's also going to
+
+101
+00:04:25,199 --> 00:04:31,120
+receive an input of cleanup function.
+
+102
+00:04:28,000 --> 00:04:33,440
+When we hit next, input array is storing
+
+103
+00:04:31,120 --> 00:04:35,520
+that string array we just passed in.
+
+104
+00:04:33,440 --> 00:04:37,680
+input function is storing the cleanup
+
+105
+00:04:35,520 --> 00:04:40,560
+function we just passed in. Which means
+
+106
+00:04:37,680 --> 00:04:42,400
+if we hit next and we start our counter,
+
+107
+00:04:40,560 --> 00:04:44,880
+our counter is at zero. If we go to
+
+108
+00:04:42,400 --> 00:04:46,880
+input array at the zero position, that's
+
+109
+00:04:44,880 --> 00:04:49,199
+going to be the text with a lot of
+
+110
+00:04:46,880 --> 00:04:51,199
+spaces that says hello and a closing
+
+111
+00:04:49,199 --> 00:04:52,960
+space. And we're going to call input
+
+112
+00:04:51,199 --> 00:04:54,479
+function. What is input function? It's
+
+113
+00:04:52,960 --> 00:04:57,360
+the cleanup string function we wrote
+
+114
+00:04:54,479 --> 00:04:59,759
+earlier. So we'll hit next.
+
+115
+00:04:57,360 --> 00:05:02,320
+And it comes here. What is messy string?
+
+116
+00:04:59,759 --> 00:05:05,360
+Well, it's that spaces with hello inside
+
+117
+00:05:02,320 --> 00:05:08,720
+of it. So, we're going to trim it and
+
+118
+00:05:05,360 --> 00:05:11,039
+turn it all to uppercase and return it.
+
+119
+00:05:08,720 --> 00:05:12,880
+And now, if we look at our input array,
+
+120
+00:05:11,039 --> 00:05:14,720
+we can see that hello is in all
+
+121
+00:05:12,880 --> 00:05:16,639
+uppercases and all the spaces have been
+
+122
+00:05:14,720 --> 00:05:19,600
+removed. We're going to increment our
+
+123
+00:05:16,639 --> 00:05:22,160
+counter. Um, now we're going to input
+
+124
+00:05:19,600 --> 00:05:24,320
+array at the one position, which means
+
+125
+00:05:22,160 --> 00:05:26,320
+we're taking world with spaces on the
+
+126
+00:05:24,320 --> 00:05:28,080
+end, and we're going to pass it into
+
+127
+00:05:26,320 --> 00:05:29,440
+input function. What is input function?
+
+128
+00:05:28,080 --> 00:05:31,120
+Well, it's still the cleanup string
+
+129
+00:05:29,440 --> 00:05:33,199
+function that we used earlier. So, we'll
+
+130
+00:05:31,120 --> 00:05:35,199
+hit next. We'll trim it, convert it to
+
+131
+00:05:33,199 --> 00:05:37,120
+uppercase. And now if we look at our
+
+132
+00:05:35,199 --> 00:05:41,840
+input array, we've seen we've cleaned up
+
+133
+00:05:37,120 --> 00:05:44,160
+the first two strings. And we run it and
+
+134
+00:05:41,840 --> 00:05:46,400
+clean up the next string. Return our
+
+135
+00:05:44,160 --> 00:05:49,520
+array. And it returns to result. And now
+
+136
+00:05:46,400 --> 00:05:52,160
+result is storing hello, world, and hi.
+
+137
+00:05:49,520 --> 00:05:54,479
+All in uppercase with no spaces. So
+
+138
+00:05:52,160 --> 00:05:56,639
+that's cool and all. We probably didn't
+
+139
+00:05:54,479 --> 00:05:58,720
+need to write a function passed into a
+
+140
+00:05:56,639 --> 00:06:01,680
+function for that. But why did we do
+
+141
+00:05:58,720 --> 00:06:05,600
+that? Well, let's say I write another
+
+142
+00:06:01,680 --> 00:06:07,759
+function and I call this function
+
+143
+00:06:05,600 --> 00:06:10,759
+um
+
+144
+00:06:07,759 --> 00:06:10,759
+round
+
+145
+00:06:11,440 --> 00:06:16,440
+and we take in a number
+
+146
+00:06:16,800 --> 00:06:23,039
+and we return math
+
+147
+00:06:21,440 --> 00:06:25,440
+round
+
+148
+00:06:23,039 --> 00:06:27,759
+um and it says what value do you want to
+
+149
+00:06:25,440 --> 00:06:29,199
+round the number and it rounds it to the
+
+150
+00:06:27,759 --> 00:06:30,880
+nearest integer. So, what this does is
+
+151
+00:06:29,199 --> 00:06:33,360
+it takes in a number and rounds it to
+
+152
+00:06:30,880 --> 00:06:35,919
+the nearest integer.
+
+153
+00:06:33,360 --> 00:06:38,479
+Well, now if we have another array,
+
+154
+00:06:35,919 --> 00:06:41,199
+we'll call it numbum array and we'll set
+
+155
+00:06:38,479 --> 00:06:43,440
+it equal to a bunch of numbers. So, 3.5,
+
+156
+00:06:41,199 --> 00:06:46,440
+2.3,
+
+157
+00:06:43,440 --> 00:06:46,440
+5.5.
+
+158
+00:06:46,720 --> 00:06:50,880
+The great thing about our apply to array
+
+159
+00:06:48,560 --> 00:06:52,960
+function is it doesn't care what array
+
+160
+00:06:50,880 --> 00:06:55,360
+we give it or what function we give it.
+
+161
+00:06:52,960 --> 00:06:58,720
+So that means we can reuse our apply to
+
+162
+00:06:55,360 --> 00:07:02,720
+array function and we can say let result
+
+163
+00:06:58,720 --> 00:07:05,120
+2 equal apply to array. We can take in
+
+164
+00:07:02,720 --> 00:07:09,919
+the number array. We can take in the
+
+165
+00:07:05,120 --> 00:07:13,039
+round function. And now if we save it,
+
+166
+00:07:09,919 --> 00:07:16,080
+we can come over here and if we come to
+
+167
+00:07:13,039 --> 00:07:19,599
+our console. Oh, I forgot to log the
+
+168
+00:07:16,080 --> 00:07:24,360
+results. console.log
+
+169
+00:07:19,599 --> 00:07:24,360
+log result two
+
+170
+00:07:24,960 --> 00:07:30,639
+and we reload the page. We come to the
+
+171
+00:07:28,080 --> 00:07:32,319
+console. We get hello world and hi. That
+
+172
+00:07:30,639 --> 00:07:35,120
+string was clean. All those strings were
+
+173
+00:07:32,319 --> 00:07:37,039
+cleaned up. Then we get four 2 five and
+
+174
+00:07:35,120 --> 00:07:39,680
+five.
+
+175
+00:07:37,039 --> 00:07:42,720
+Well, how did that happen? Well, we
+
+176
+00:07:39,680 --> 00:07:45,280
+already wrote an apply to array function
+
+177
+00:07:42,720 --> 00:07:47,440
+and it can take in an array. So the
+
+178
+00:07:45,280 --> 00:07:49,280
+first time it took in this string array
+
+179
+00:07:47,440 --> 00:07:51,360
+and what function did it apply to every
+
+180
+00:07:49,280 --> 00:07:53,440
+item in the array? It applied cleanup
+
+181
+00:07:51,360 --> 00:07:55,599
+string. Well, the next time we called
+
+182
+00:07:53,440 --> 00:07:57,599
+it, we called it and we passed in this
+
+183
+00:07:55,599 --> 00:08:00,479
+number array. And what function did we
+
+184
+00:07:57,599 --> 00:08:02,879
+apply to it? The round function. So why
+
+185
+00:08:00,479 --> 00:08:04,560
+is this nice? Well, it allows us to
+
+186
+00:08:02,879 --> 00:08:07,199
+write a function that takes other
+
+187
+00:08:04,560 --> 00:08:08,879
+functions and applies it to an array.
+
+188
+00:08:07,199 --> 00:08:11,039
+There wasn't a function previously
+
+189
+00:08:08,879 --> 00:08:13,039
+called apply to array, but we were able
+
+190
+00:08:11,039 --> 00:08:14,879
+to create one and we made it flexible
+
+191
+00:08:13,039 --> 00:08:16,960
+enough that it can take in any function
+
+192
+00:08:14,879 --> 00:08:19,280
+that you want and it can apply it to an
+
+193
+00:08:16,960 --> 00:08:22,800
+array. And the nice thing about this is
+
+194
+00:08:19,280 --> 00:08:26,160
+it can take in built-in functions. So we
+
+195
+00:08:22,800 --> 00:08:28,720
+could say let result three equal apply
+
+196
+00:08:26,160 --> 00:08:30,960
+to array and we could take the number
+
+197
+00:08:28,720 --> 00:08:33,599
+array as an input and we could apply
+
+198
+00:08:30,960 --> 00:08:35,440
+math.round.
+
+199
+00:08:33,599 --> 00:08:37,120
+And instead of calling this round
+
+200
+00:08:35,440 --> 00:08:39,200
+function, we could just directly pass in
+
+201
+00:08:37,120 --> 00:08:42,240
+the math.round function and it will
+
+202
+00:08:39,200 --> 00:08:45,120
+apply it to our array.
+
+203
+00:08:42,240 --> 00:08:47,360
+So, um, the nice thing about being able
+
+204
+00:08:45,120 --> 00:08:49,120
+to take a function as an input is that
+
+205
+00:08:47,360 --> 00:08:50,720
+you can call it and you don't need to
+
+206
+00:08:49,120 --> 00:08:53,040
+care which function it is. We didn't
+
+207
+00:08:50,720 --> 00:08:55,760
+care which function they passed us. We
+
+208
+00:08:53,040 --> 00:08:58,720
+just called it on the array and applied
+
+209
+00:08:55,760 --> 00:08:58,720
+the result to the array.

@@ -1,0 +1,219 @@
+1
+00:00:00,080 --> 00:00:05,200
+Well, it can be kind of problematic to
+
+2
+00:00:01,920 --> 00:00:06,960
+only be able to use post and get
+
+3
+00:00:05,200 --> 00:00:08,720
+requests because what if we need to do a
+
+4
+00:00:06,960 --> 00:00:11,120
+put request or a patch request or a
+
+5
+00:00:08,720 --> 00:00:13,200
+delete request? Um, we wouldn't be able
+
+6
+00:00:11,120 --> 00:00:15,599
+to do these from our form. And in
+
+7
+00:00:13,200 --> 00:00:17,680
+addition, um, I told you this form is
+
+8
+00:00:15,599 --> 00:00:20,000
+going to the wrong location. So, I could
+
+9
+00:00:17,680 --> 00:00:24,480
+definitely add a correct location by
+
+10
+00:00:20,000 --> 00:00:26,000
+saying action go to my API at htt
+
+11
+00:00:24,480 --> 00:00:29,519
+http
+
+12
+00:00:26,000 --> 00:00:32,480
+col / localhost and it's running on port
+
+13
+00:00:29,519 --> 00:00:35,040
+5000. And now if I save this and I put
+
+14
+00:00:32,480 --> 00:00:37,440
+test and data here and I hit submit now
+
+15
+00:00:35,040 --> 00:00:40,399
+I get an error and that's because this
+
+16
+00:00:37,440 --> 00:00:42,640
+is sending it across as form data but my
+
+17
+00:00:40,399 --> 00:00:45,760
+API is expecting it to come across as
+
+18
+00:00:42,640 --> 00:00:48,800
+JSON and our form is not in valid JSON
+
+19
+00:00:45,760 --> 00:00:50,800
+format. So, what we'd need to do is we'd
+
+20
+00:00:48,800 --> 00:00:54,320
+need to be able to take this form and
+
+21
+00:00:50,800 --> 00:00:56,320
+process it using JavaScript. But if you
+
+22
+00:00:54,320 --> 00:00:58,399
+noticed, I tried to use JavaScript right
+
+23
+00:00:56,320 --> 00:01:00,640
+here in this onclick request, and it
+
+24
+00:00:58,399 --> 00:01:02,559
+keeps getting denied, and it just keeps
+
+25
+00:01:00,640 --> 00:01:04,080
+skipping straight past the JavaScript.
+
+26
+00:01:02,559 --> 00:01:05,600
+It console.logs it, but then it goes to
+
+27
+00:01:04,080 --> 00:01:08,080
+a new page, and so my JavaScript doesn't
+
+28
+00:01:05,600 --> 00:01:09,680
+have a chance to really run. So, if we
+
+29
+00:01:08,080 --> 00:01:12,080
+want to fix this, then we need to change
+
+30
+00:01:09,680 --> 00:01:13,520
+some stuff here on this form. So, what
+
+31
+00:01:12,080 --> 00:01:16,560
+I'm going to do is I'm going to actually
+
+32
+00:01:13,520 --> 00:01:20,320
+get rid of all of that right there.
+
+33
+00:01:16,560 --> 00:01:23,119
+And going to go back and here what I'm
+
+34
+00:01:20,320 --> 00:01:28,000
+going to do
+
+35
+00:01:23,119 --> 00:01:29,920
+is I am going to say onsubmit
+
+36
+00:01:28,000 --> 00:01:32,240
+and this calls a javascript function
+
+37
+00:01:29,920 --> 00:01:38,520
+when the form submits and I'm going to
+
+38
+00:01:32,240 --> 00:01:38,520
+call my function um stop form submit.
+
+39
+00:01:38,560 --> 00:01:42,320
+Now in my script tag I need to write
+
+40
+00:01:40,079 --> 00:01:44,720
+that function. So I'll say function stop
+
+41
+00:01:42,320 --> 00:01:48,320
+form submit
+
+42
+00:01:44,720 --> 00:01:50,960
+and I'm going to receive the event
+
+43
+00:01:48,320 --> 00:01:54,560
+of the form submitting and I'm going to
+
+44
+00:01:50,960 --> 00:01:57,560
+say e dot prevent
+
+45
+00:01:54,560 --> 00:01:57,560
+default.
+
+46
+00:01:57,680 --> 00:02:04,320
+So now if I save this and I say test
+
+47
+00:02:01,200 --> 00:02:06,640
+user and I hit submit my hello world
+
+48
+00:02:04,320 --> 00:02:09,360
+stays. And why? Because we didn't
+
+49
+00:02:06,640 --> 00:02:11,280
+navigate between pages because this
+
+50
+00:02:09,360 --> 00:02:13,040
+e.prevent prevent default said rather
+
+51
+00:02:11,280 --> 00:02:15,040
+than just having the form default and do
+
+52
+00:02:13,040 --> 00:02:17,040
+its submission to the server, we can go
+
+53
+00:02:15,040 --> 00:02:18,800
+ahead and stop that. Now that we've
+
+54
+00:02:17,040 --> 00:02:21,680
+stopped it, we can do whatever we want
+
+55
+00:02:18,800 --> 00:02:21,680
+with our JavaScript.

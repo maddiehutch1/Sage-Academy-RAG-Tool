@@ -1,0 +1,159 @@
+1
+00:00:00,080 --> 00:00:04,720
+Now that we know what git is, um the
+
+2
+00:00:02,480 --> 00:00:07,600
+question you may have is what is GitHub?
+
+3
+00:00:04,720 --> 00:00:10,080
+Um well, when you are doing git version
+
+4
+00:00:07,600 --> 00:00:12,080
+control, you'll remember that those
+
+5
+00:00:10,080 --> 00:00:14,000
+files are stored on your computer. So,
+
+6
+00:00:12,080 --> 00:00:16,320
+it keeps track in a little hidden folder
+
+7
+00:00:14,000 --> 00:00:18,640
+called.git. Um and it keeps track of
+
+8
+00:00:16,320 --> 00:00:21,119
+every change you made to your file. The
+
+9
+00:00:18,640 --> 00:00:23,279
+problem becomes if something happens to
+
+10
+00:00:21,119 --> 00:00:25,119
+your computer, all of the changes and
+
+11
+00:00:23,279 --> 00:00:28,160
+all of those track changes were on your
+
+12
+00:00:25,119 --> 00:00:30,480
+computer and they're gone. So let's say
+
+13
+00:00:28,160 --> 00:00:32,320
+crazy situation, your computer explodes,
+
+14
+00:00:30,480 --> 00:00:34,320
+you'll have lost all of your code. So
+
+15
+00:00:32,320 --> 00:00:36,960
+what GitHub does is it allows you to
+
+16
+00:00:34,320 --> 00:00:39,600
+store your code in the cloud. And that
+
+17
+00:00:36,960 --> 00:00:41,680
+way when your computer dies or something
+
+18
+00:00:39,600 --> 00:00:43,680
+happens to it, everything is still in
+
+19
+00:00:41,680 --> 00:00:45,280
+the cloud. The other thing GitHub allows
+
+20
+00:00:43,680 --> 00:00:46,960
+you to do is to collaborate with other
+
+21
+00:00:45,280 --> 00:00:49,840
+users who are not on the same device as
+
+22
+00:00:46,960 --> 00:00:52,079
+you. So you can push it your code up
+
+23
+00:00:49,840 --> 00:00:54,399
+into the cloud. They can access the code
+
+24
+00:00:52,079 --> 00:00:56,640
+in the cloud, make changes, and push
+
+25
+00:00:54,399 --> 00:00:58,719
+their code to the cloud. And now it's
+
+26
+00:00:56,640 --> 00:01:02,480
+all stored where multiple people can
+
+27
+00:00:58,719 --> 00:01:04,239
+access it. Um, and if a fire happens and
+
+28
+00:01:02,480 --> 00:01:06,080
+you lose your computer or you drop it
+
+29
+00:01:04,239 --> 00:01:08,799
+down the stairs or who knows what
+
+30
+00:01:06,080 --> 00:01:11,520
+happens, um,
+
+31
+00:01:08,799 --> 00:01:14,880
+your computer, your code is still safe
+
+32
+00:01:11,520 --> 00:01:17,040
+because it's out in the cloud. Um, and
+
+33
+00:01:14,880 --> 00:01:19,759
+just to show you what it will look like
+
+34
+00:01:17,040 --> 00:01:22,479
+when you log in to GitHub, this is what
+
+35
+00:01:19,759 --> 00:01:26,400
+it looks like when you log into GitHub.
+
+36
+00:01:22,479 --> 00:01:27,920
+Um, and so I'll pick up further here
+
+37
+00:01:26,400 --> 00:01:30,240
+when I start describing how you use
+
+38
+00:01:27,920 --> 00:01:33,280
+GitHub, but just as a definition, GitHub
+
+39
+00:01:30,240 --> 00:01:36,479
+is a place that stores your code just
+
+40
+00:01:33,280 --> 00:01:36,479
+somewhere out on the in it.

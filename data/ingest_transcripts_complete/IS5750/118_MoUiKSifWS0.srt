@@ -1,0 +1,1763 @@
+1
+00:00:00,080 --> 00:00:05,520
+Okay, so there was a request to go
+
+2
+00:00:02,800 --> 00:00:06,960
+through um the options here. So I'm
+
+3
+00:00:05,520 --> 00:00:10,639
+going to go through the options on this
+
+4
+00:00:06,960 --> 00:00:13,519
+get setup and explain them. Um so on
+
+5
+00:00:10,639 --> 00:00:15,920
+this screen um
+
+6
+00:00:13,519 --> 00:00:17,119
+I didn't want I didn't select these
+
+7
+00:00:15,920 --> 00:00:20,640
+because what they'll do is they'll
+
+8
+00:00:17,119 --> 00:00:23,680
+create a little icon on your desktop and
+
+9
+00:00:20,640 --> 00:00:26,080
+on your like uh launching bar um that'll
+
+10
+00:00:23,680 --> 00:00:28,160
+let you quickly launch the get um
+
+11
+00:00:26,080 --> 00:00:29,599
+interface. because we're using a graphic
+
+12
+00:00:28,160 --> 00:00:32,239
+interface, I typically don't want to
+
+13
+00:00:29,599 --> 00:00:34,320
+launch that. Um, so I didn't install
+
+14
+00:00:32,239 --> 00:00:35,920
+those, but if you do want to interact
+
+15
+00:00:34,320 --> 00:00:40,000
+exclusively through the terminal, you
+
+16
+00:00:35,920 --> 00:00:42,399
+maybe will want to install those. Um,
+
+17
+00:00:40,000 --> 00:00:43,920
+down here, um, you could enable it to
+
+18
+00:00:42,399 --> 00:00:45,600
+constantly check to see if there's an
+
+19
+00:00:43,920 --> 00:00:50,480
+update for the software forget on
+
+20
+00:00:45,600 --> 00:00:53,120
+Windows. Um, in my experience, the
+
+21
+00:00:50,480 --> 00:00:55,680
+version doesn't change all of that much.
+
+22
+00:00:53,120 --> 00:00:57,840
+Um, so I didn't feel like that was super
+
+23
+00:00:55,680 --> 00:00:59,920
+important to check. And then it said add
+
+24
+00:00:57,840 --> 00:01:02,000
+a git bash profile to the Windows
+
+25
+00:00:59,920 --> 00:01:03,920
+terminal. So the Windows terminal has
+
+26
+00:01:02,000 --> 00:01:06,799
+two profiles by default. It has a
+
+27
+00:01:03,920 --> 00:01:08,240
+PowerShell and a command prompt. Um, and
+
+28
+00:01:06,799 --> 00:01:10,000
+what this would allow you to do is
+
+29
+00:01:08,240 --> 00:01:12,240
+change from PowerShell to command prompt
+
+30
+00:01:10,000 --> 00:01:14,880
+to a get bash terminal. It's just
+
+31
+00:01:12,240 --> 00:01:16,960
+another type of terminal. Um, again, if
+
+32
+00:01:14,880 --> 00:01:18,880
+you're using the visual interfaces to
+
+33
+00:01:16,960 --> 00:01:20,159
+interact with Git, then this isn't super
+
+34
+00:01:18,880 --> 00:01:23,280
+important, which is why I left that one
+
+35
+00:01:20,159 --> 00:01:26,080
+unselected. All right. So, here I told
+
+36
+00:01:23,280 --> 00:01:28,240
+you that you could leave uh it was on
+
+37
+00:01:26,080 --> 00:01:30,080
+Vim.
+
+38
+00:01:28,240 --> 00:01:32,240
+Oh, there we go. I said you could leave
+
+39
+00:01:30,080 --> 00:01:36,320
+Vim as the default editor. What the
+
+40
+00:01:32,240 --> 00:01:37,920
+default editor does is when you make um
+
+41
+00:01:36,320 --> 00:01:41,040
+when you interact with Git on the
+
+42
+00:01:37,920 --> 00:01:42,960
+terminal and you type get commit, um you
+
+43
+00:01:41,040 --> 00:01:46,159
+need to give it a message that explains
+
+44
+00:01:42,960 --> 00:01:49,920
+what changes you made to the code. Um,
+
+45
+00:01:46,159 --> 00:01:52,240
+if you're using Visual Studio Code or
+
+46
+00:01:49,920 --> 00:01:53,680
+um, GitHub Desktop, they actually have a
+
+47
+00:01:52,240 --> 00:01:55,200
+nice editor right there that you can
+
+48
+00:01:53,680 --> 00:01:57,280
+type all of your messages in and hit
+
+49
+00:01:55,200 --> 00:01:58,960
+commit and it's a nice visual interface
+
+50
+00:01:57,280 --> 00:02:00,560
+to interact with it. If you were
+
+51
+00:01:58,960 --> 00:02:02,719
+exclusively interacting over the
+
+52
+00:02:00,560 --> 00:02:04,560
+terminal, then it would need to open up
+
+53
+00:02:02,719 --> 00:02:06,079
+an editor for you to type your message.
+
+54
+00:02:04,560 --> 00:02:08,560
+So, it's saying which editor would you
+
+55
+00:02:06,079 --> 00:02:09,920
+like to use? Vim can be difficult to use
+
+56
+00:02:08,560 --> 00:02:11,440
+because there's certain keyboard
+
+57
+00:02:09,920 --> 00:02:14,000
+shortcuts you have to use to get out of
+
+58
+00:02:11,440 --> 00:02:15,599
+Vim. Um, and especially if you've done
+
+59
+00:02:14,000 --> 00:02:19,200
+all of your development in Visual Studio
+
+60
+00:02:15,599 --> 00:02:22,640
+Code, um, you may not be expecting to
+
+61
+00:02:19,200 --> 00:02:24,640
+see the Vim interface. So, if you want
+
+62
+00:02:22,640 --> 00:02:26,959
+to exclusively interact over the command
+
+63
+00:02:24,640 --> 00:02:29,200
+line, then you will probably want to
+
+64
+00:02:26,959 --> 00:02:31,599
+switch this to use Visual Studio Code.
+
+65
+00:02:29,200 --> 00:02:34,000
+U, because I'm using a graphic user
+
+66
+00:02:31,599 --> 00:02:36,480
+interface, um, like Visual Studio Code's
+
+67
+00:02:34,000 --> 00:02:38,720
+built-in um,
+
+68
+00:02:36,480 --> 00:02:41,200
+version control system or GitHub
+
+69
+00:02:38,720 --> 00:02:43,519
+Desktop, this doesn't really matter as
+
+70
+00:02:41,200 --> 00:02:47,040
+much. um which is why I left it as the
+
+71
+00:02:43,519 --> 00:02:48,959
+default. Um but you can use Visual
+
+72
+00:02:47,040 --> 00:02:51,920
+Studio Code if you're going to be
+
+73
+00:02:48,959 --> 00:02:55,360
+interacting over the terminal. Um on
+
+74
+00:02:51,920 --> 00:02:56,879
+this one, we adjusted the name. Um I
+
+75
+00:02:55,360 --> 00:02:59,840
+think I did explain this in the last
+
+76
+00:02:56,879 --> 00:03:02,000
+video, but normally when Git creates um
+
+77
+00:02:59,840 --> 00:03:05,040
+your main version of your code, they
+
+78
+00:03:02,000 --> 00:03:08,080
+call that master. Um but because that
+
+79
+00:03:05,040 --> 00:03:10,640
+has some negative connotations um you
+
+80
+00:03:08,080 --> 00:03:13,200
+can in new versions of git you can
+
+81
+00:03:10,640 --> 00:03:15,200
+overwrite it. Um so some people like to
+
+82
+00:03:13,200 --> 00:03:17,840
+call their main branch or their main
+
+83
+00:03:15,200 --> 00:03:20,720
+version of their code development or
+
+84
+00:03:17,840 --> 00:03:22,560
+production or something else but one of
+
+85
+00:03:20,720 --> 00:03:24,800
+the ones that's pretty standard is to
+
+86
+00:03:22,560 --> 00:03:26,879
+call it main. So I selected that and
+
+87
+00:03:24,800 --> 00:03:29,120
+left that option as main. Basically, all
+
+88
+00:03:26,879 --> 00:03:33,519
+it does is change the name of the
+
+89
+00:03:29,120 --> 00:03:35,599
+version, your main version of code.
+
+90
+00:03:33,519 --> 00:03:38,319
+All right. And then it says, how would
+
+91
+00:03:35,599 --> 00:03:40,720
+you like your path environment adjusted?
+
+92
+00:03:38,319 --> 00:03:42,319
+So, your path environment is how Windows
+
+93
+00:03:40,720 --> 00:03:44,720
+knows where programs are on your
+
+94
+00:03:42,319 --> 00:03:48,159
+computer. So, when you doubleclick on
+
+95
+00:03:44,720 --> 00:03:49,840
+the Chrome icon, it needs to run some
+
+96
+00:03:48,159 --> 00:03:52,640
+code that someone wrote to launch your
+
+97
+00:03:49,840 --> 00:03:54,000
+web browser. Um, and in order to do
+
+98
+00:03:52,640 --> 00:03:56,720
+that, it needs to know where that code
+
+99
+00:03:54,000 --> 00:03:58,480
+is located. Windows uses the path
+
+100
+00:03:56,720 --> 00:04:02,720
+environment to figure out where
+
+101
+00:03:58,480 --> 00:04:04,480
+different pieces of code are located. So
+
+102
+00:04:02,720 --> 00:04:06,400
+this is saying we're about to install
+
+103
+00:04:04,480 --> 00:04:08,239
+new software. Your Windows needs to know
+
+104
+00:04:06,400 --> 00:04:10,480
+where it's located. How would you like
+
+105
+00:04:08,239 --> 00:04:12,640
+us to configure it? So if we do the
+
+106
+00:04:10,480 --> 00:04:15,920
+first one, then it means that we can
+
+107
+00:04:12,640 --> 00:04:18,320
+only interact with Git from the terminal
+
+108
+00:04:15,920 --> 00:04:20,639
+because Windows won't really know where
+
+109
+00:04:18,320 --> 00:04:23,680
+it is. Only our Git terminal will know
+
+110
+00:04:20,639 --> 00:04:25,520
+where it is. Um, but if you're going to
+
+111
+00:04:23,680 --> 00:04:27,759
+use a visual interface like Visual
+
+112
+00:04:25,520 --> 00:04:30,320
+Studio Code's built-in um, version
+
+113
+00:04:27,759 --> 00:04:32,720
+control or you're going to use GitHub
+
+114
+00:04:30,320 --> 00:04:35,199
+Desktop, then you're going to want to
+
+115
+00:04:32,720 --> 00:04:38,800
+use this second option because what it
+
+116
+00:04:35,199 --> 00:04:41,600
+does is it allows Windows to know where
+
+117
+00:04:38,800 --> 00:04:43,199
+the files to run Git are. And so then
+
+118
+00:04:41,600 --> 00:04:45,040
+when another program says, "Hey, I want
+
+119
+00:04:43,199 --> 00:04:47,440
+to use Git," Windows knows where that's
+
+120
+00:04:45,040 --> 00:04:49,199
+located and other programs can use it.
+
+121
+00:04:47,440 --> 00:04:50,479
+So selecting the first option means that
+
+122
+00:04:49,199 --> 00:04:52,560
+you can only use the terminal to
+
+123
+00:04:50,479 --> 00:04:56,160
+interact with git. Selecting the second
+
+124
+00:04:52,560 --> 00:04:58,240
+option means that you can use any um
+
+125
+00:04:56,160 --> 00:05:00,880
+software to interact with git like
+
+126
+00:04:58,240 --> 00:05:02,880
+GitHub desktop or visual studio code. Um
+
+127
+00:05:00,880 --> 00:05:05,680
+and then the last one is use git and
+
+128
+00:05:02,880 --> 00:05:07,840
+optional Unix tools from the command
+
+129
+00:05:05,680 --> 00:05:10,240
+prompt. So by default Windows has a
+
+130
+00:05:07,840 --> 00:05:12,320
+bunch of commands that you can run. Um
+
+131
+00:05:10,240 --> 00:05:14,720
+one that I usually run is I think it's
+
+132
+00:05:12,320 --> 00:05:16,320
+ns flush or something like that. I can't
+
+133
+00:05:14,720 --> 00:05:20,160
+ever remember the command, but what it
+
+134
+00:05:16,320 --> 00:05:24,639
+does is it clears out um cached records
+
+135
+00:05:20,160 --> 00:05:28,800
+on my system um so that I can test when
+
+136
+00:05:24,639 --> 00:05:30,560
+I've assigned a new u website URL to one
+
+137
+00:05:28,800 --> 00:05:32,479
+of my websites and I want to make sure
+
+138
+00:05:30,560 --> 00:05:34,800
+it's been applied, I'll run a command
+
+139
+00:05:32,479 --> 00:05:38,000
+that will refresh my windows. Um that
+
+140
+00:05:34,800 --> 00:05:40,639
+command is built into command prompt.
+
+141
+00:05:38,000 --> 00:05:42,320
+There are two types of operating systems
+
+142
+00:05:40,639 --> 00:05:43,919
+or two main types of operating systems.
+
+143
+00:05:42,320 --> 00:05:45,840
+There's the Windows type of operating
+
+144
+00:05:43,919 --> 00:05:48,080
+system and then there's Unix type
+
+145
+00:05:45,840 --> 00:05:51,120
+operating systems. They have their own
+
+146
+00:05:48,080 --> 00:05:53,360
+set of commands that you can run. Um,
+
+147
+00:05:51,120 --> 00:05:55,680
+and so if you're on a Mac or a Linux,
+
+148
+00:05:53,360 --> 00:05:57,199
+you can run all of these commands. Um,
+
+149
+00:05:55,680 --> 00:06:00,720
+and they're really nice commands and I
+
+150
+00:05:57,199 --> 00:06:03,360
+really like them. Um, but this last
+
+151
+00:06:00,720 --> 00:06:05,840
+option would overwrite some of your
+
+152
+00:06:03,360 --> 00:06:08,080
+pre-built Windows commands and it would
+
+153
+00:06:05,840 --> 00:06:11,039
+overwrite them with the commands that
+
+154
+00:06:08,080 --> 00:06:13,680
+are available on a Mac or Linux. Again,
+
+155
+00:06:11,039 --> 00:06:16,160
+because I'm not planning to use the
+
+156
+00:06:13,680 --> 00:06:19,520
+terminal to interact with my version
+
+157
+00:06:16,160 --> 00:06:21,600
+control, I won't select this option. Um,
+
+158
+00:06:19,520 --> 00:06:23,759
+selecting the middle option allows me to
+
+159
+00:06:21,600 --> 00:06:27,199
+interact with the terminal with GitHub
+
+160
+00:06:23,759 --> 00:06:29,680
+Desktop or any other user interface. Um,
+
+161
+00:06:27,199 --> 00:06:32,000
+and with Visual Studio Code, selecting
+
+162
+00:06:29,680 --> 00:06:33,680
+the third option will allow all of those
+
+163
+00:06:32,000 --> 00:06:37,440
+same things, but it will also allow me
+
+164
+00:06:33,680 --> 00:06:39,680
+to run commands like find or um, this
+
+165
+00:06:37,440 --> 00:06:41,600
+one says sort will be overwritten. But
+
+166
+00:06:39,680 --> 00:06:44,960
+there are a bunch of other commands on a
+
+167
+00:06:41,600 --> 00:06:47,360
+Linux like ls and things like that that
+
+168
+00:06:44,960 --> 00:06:48,960
+don't work on a Windows. Um, this would
+
+169
+00:06:47,360 --> 00:06:51,440
+make it so that you could run those on a
+
+170
+00:06:48,960 --> 00:06:53,680
+Windows. Again, I'm not planning to do
+
+171
+00:06:51,440 --> 00:06:56,080
+that, so I'm going to leave this option.
+
+172
+00:06:53,680 --> 00:06:59,039
+Okay. There's a couple ways to get your
+
+173
+00:06:56,080 --> 00:07:00,880
+code from like GitHub or somewhere out
+
+174
+00:06:59,039 --> 00:07:04,800
+on the internet where it's stored. One
+
+175
+00:07:00,880 --> 00:07:08,400
+of those is SSH. Um SSH um is a secure
+
+176
+00:07:04,800 --> 00:07:11,520
+shell. Um that's what it stands for. Um
+
+177
+00:07:08,400 --> 00:07:13,039
+and it's a way of using your computer to
+
+178
+00:07:11,520 --> 00:07:15,599
+send a message to another computer and
+
+179
+00:07:13,039 --> 00:07:17,440
+to securely um encrypt the files and
+
+180
+00:07:15,599 --> 00:07:18,960
+bring them back to your computer. So
+
+181
+00:07:17,440 --> 00:07:20,479
+there's a couple ways to do that and
+
+182
+00:07:18,960 --> 00:07:23,199
+they are giving you an option. You can
+
+183
+00:07:20,479 --> 00:07:27,840
+either use the SSH, open SSH that comes
+
+184
+00:07:23,199 --> 00:07:30,400
+with Git, or you can use an external SSH
+
+185
+00:07:27,840 --> 00:07:32,639
+that um
+
+186
+00:07:30,400 --> 00:07:34,479
+does not come with Git. So, I just
+
+187
+00:07:32,639 --> 00:07:36,400
+choose the option that comes with Git.
+
+188
+00:07:34,479 --> 00:07:40,400
+Either way, what it does is it allows
+
+189
+00:07:36,400 --> 00:07:41,840
+you to grab your code and your files
+
+190
+00:07:40,400 --> 00:07:44,880
+from somewhere else and bring them to
+
+191
+00:07:41,840 --> 00:07:46,800
+your computer.
+
+192
+00:07:44,880 --> 00:07:49,840
+Okay. The next way, and this is the way
+
+193
+00:07:46,800 --> 00:07:51,440
+that GitHub Desktop uses, is HTTPS. So,
+
+194
+00:07:49,840 --> 00:07:52,960
+similar to when you visit a website,
+
+195
+00:07:51,440 --> 00:07:56,560
+when you visit a website, you type on
+
+196
+00:07:52,960 --> 00:07:58,800
+the URL bar https/
+
+197
+00:07:56,560 --> 00:08:00,319
+www.google.com.
+
+198
+00:07:58,800 --> 00:08:03,039
+What it's saying is, I would like
+
+199
+00:08:00,319 --> 00:08:04,560
+something from Google. Um, please go get
+
+200
+00:08:03,039 --> 00:08:06,160
+that information and bring it back.
+
+201
+00:08:04,560 --> 00:08:08,960
+Because you added the s, it means
+
+202
+00:08:06,160 --> 00:08:11,120
+secure. So, it's using keys, um,
+
+203
+00:08:08,960 --> 00:08:13,520
+cryptographic keys to encrypt the data
+
+204
+00:08:11,120 --> 00:08:16,479
+between Google and you so that no one
+
+205
+00:08:13,520 --> 00:08:18,639
+can edit it or, uh, see what you're
+
+206
+00:08:16,479 --> 00:08:20,319
+browsing if they were to stand in
+
+207
+00:08:18,639 --> 00:08:22,319
+between you and Google and try and
+
+208
+00:08:20,319 --> 00:08:24,080
+intercept your messages. So, this just
+
+209
+00:08:22,319 --> 00:08:25,520
+allows it to be more secure and it
+
+210
+00:08:24,080 --> 00:08:29,199
+brings it to your computer in a more
+
+211
+00:08:25,520 --> 00:08:31,360
+secure manner. Um, there are two options
+
+212
+00:08:29,199 --> 00:08:34,399
+here. The first option is to just use
+
+213
+00:08:31,360 --> 00:08:37,919
+the open SSL library. So that's to use
+
+214
+00:08:34,399 --> 00:08:40,479
+the default keys that know where where
+
+215
+00:08:37,919 --> 00:08:42,719
+and who people are. The second one is to
+
+216
+00:08:40,479 --> 00:08:45,279
+use the native Windows secure channel.
+
+217
+00:08:42,719 --> 00:08:48,000
+So what this does is it allows um let's
+
+218
+00:08:45,279 --> 00:08:50,720
+say your company manages your laptop. It
+
+219
+00:08:48,000 --> 00:08:52,800
+allows them to add some special keys
+
+220
+00:08:50,720 --> 00:08:54,640
+that are just for your company and it'll
+
+221
+00:08:52,800 --> 00:08:57,200
+be able to use those to interact with
+
+222
+00:08:54,640 --> 00:08:59,200
+specific servers. So this is the option
+
+223
+00:08:57,200 --> 00:09:02,399
+I like to choose and it's also the
+
+224
+00:08:59,200 --> 00:09:04,800
+default. Um, okay.
+
+225
+00:09:02,399 --> 00:09:06,800
+When you write code on a Windows and
+
+226
+00:09:04,800 --> 00:09:10,399
+when you write code on a Unix system
+
+227
+00:09:06,800 --> 00:09:12,640
+like a Mac or a Linux, um, there are two
+
+228
+00:09:10,399 --> 00:09:14,399
+different ways that files end their
+
+229
+00:09:12,640 --> 00:09:16,720
+lines. So, when you open up Visual
+
+230
+00:09:14,399 --> 00:09:20,399
+Studio Code, your code goes from top to
+
+231
+00:09:16,720 --> 00:09:22,480
+bottom and there are um, line breaks.
+
+232
+00:09:20,399 --> 00:09:26,080
+So, your code is now on the next line.
+
+233
+00:09:22,480 --> 00:09:29,920
+In order to know where a line ends, um,
+
+234
+00:09:26,080 --> 00:09:32,000
+Windows injects a specific character. um
+
+235
+00:09:29,920 --> 00:09:34,160
+at the end to say this is the end of the
+
+236
+00:09:32,000 --> 00:09:38,000
+line. Make sure the new line shows up on
+
+237
+00:09:34,160 --> 00:09:41,760
+the next line visually. Um those line
+
+238
+00:09:38,000 --> 00:09:44,880
+breaks are CRLF is how it's written out.
+
+239
+00:09:41,760 --> 00:09:47,120
+Um on a Unix, meaning a Mac or a Linux,
+
+240
+00:09:44,880 --> 00:09:49,680
+it's written differently. That is it's
+
+241
+00:09:47,120 --> 00:09:52,640
+written as an LF. So, if you were to
+
+242
+00:09:49,680 --> 00:09:55,200
+directly pull code, if you were to
+
+243
+00:09:52,640 --> 00:09:56,560
+directly copy code from a Mac onto a
+
+244
+00:09:55,200 --> 00:09:58,560
+Windows without changing the line
+
+245
+00:09:56,560 --> 00:10:02,720
+endings, Windows wouldn't know where
+
+246
+00:09:58,560 --> 00:10:05,600
+each line of code ended. Um, and so what
+
+247
+00:10:02,720 --> 00:10:08,560
+this is saying is there is going to be a
+
+248
+00:10:05,600 --> 00:10:12,000
+shared place where all of my code lives.
+
+249
+00:10:08,560 --> 00:10:13,519
+When I get that code on my computer,
+
+250
+00:10:12,000 --> 00:10:16,079
+what would I like it to do? So, this
+
+251
+00:10:13,519 --> 00:10:18,640
+first option says I want to check it out
+
+252
+00:10:16,079 --> 00:10:20,480
+in Windows style. meaning when I go out
+
+253
+00:10:18,640 --> 00:10:22,240
+and grab the code from the internet and
+
+254
+00:10:20,480 --> 00:10:23,839
+bring it down onto my computer, I want
+
+255
+00:10:22,240 --> 00:10:27,120
+you to adjust it so that it works on
+
+256
+00:10:23,839 --> 00:10:30,079
+Windows. Um, and then when I send it
+
+257
+00:10:27,120 --> 00:10:33,120
+back, I want you to readjust it from my
+
+258
+00:10:30,079 --> 00:10:36,480
+Windows version into a version that um,
+
+259
+00:10:33,120 --> 00:10:38,800
+Unix computers can use. Um, and this is
+
+260
+00:10:36,480 --> 00:10:41,440
+the default. The second option is to
+
+261
+00:10:38,800 --> 00:10:42,880
+check out ASIS and commit with Unix
+
+262
+00:10:41,440 --> 00:10:44,720
+style line endings. What that means is
+
+263
+00:10:42,880 --> 00:10:46,720
+it'll check it out and if it already had
+
+264
+00:10:44,720 --> 00:10:50,480
+Windows line endings, it'll use Windows
+
+265
+00:10:46,720 --> 00:10:52,320
+line endings. If it had um Unix line
+
+266
+00:10:50,480 --> 00:10:54,399
+endings, it'll use Unix line endings,
+
+267
+00:10:52,320 --> 00:10:56,160
+which could maybe cause you some issues,
+
+268
+00:10:54,399 --> 00:10:58,079
+but when you commit, you'll commit it
+
+269
+00:10:56,160 --> 00:10:59,760
+back as Unix line endings, which means
+
+270
+00:10:58,079 --> 00:11:03,680
+that everyone will be able to access it
+
+271
+00:10:59,760 --> 00:11:05,360
+and it'll work as intended. Um, the last
+
+272
+00:11:03,680 --> 00:11:07,279
+one is you cannot change the line
+
+273
+00:11:05,360 --> 00:11:09,760
+endings at all. So you can pull down
+
+274
+00:11:07,279 --> 00:11:11,920
+Unix line endings, use them as Unix line
+
+275
+00:11:09,760 --> 00:11:13,680
+endings, and then send up whatever you
+
+276
+00:11:11,920 --> 00:11:15,680
+have. So that means if your computer
+
+277
+00:11:13,680 --> 00:11:17,839
+made some changes at some point to put
+
+278
+00:11:15,680 --> 00:11:20,160
+Windows line endings, now your file will
+
+279
+00:11:17,839 --> 00:11:23,200
+be a mix of Windows line endings and
+
+280
+00:11:20,160 --> 00:11:25,120
+Unix line endings. For cleanliness and
+
+281
+00:11:23,200 --> 00:11:28,480
+ease of access, we're going to do the
+
+282
+00:11:25,120 --> 00:11:30,640
+first option because it allows us to
+
+283
+00:11:28,480 --> 00:11:33,200
+work in our native Windows environments,
+
+284
+00:11:30,640 --> 00:11:35,920
+but still commit and have it work for
+
+285
+00:11:33,200 --> 00:11:40,640
+everyone.
+
+286
+00:11:35,920 --> 00:11:42,800
+Okay, so this one um says when you use
+
+287
+00:11:40,640 --> 00:11:44,880
+your default terminal emulator, meaning
+
+288
+00:11:42,800 --> 00:11:47,760
+when you fire up that window that shows
+
+289
+00:11:44,880 --> 00:11:51,120
+get bash, um which one do you want to
+
+290
+00:11:47,760 --> 00:11:53,680
+use? So the first one is the default and
+
+291
+00:11:51,120 --> 00:11:58,079
+this is the option I recommend. Um this
+
+292
+00:11:53,680 --> 00:12:02,240
+one is um it it's a window that can be
+
+293
+00:11:58,079 --> 00:12:04,079
+resized. Um you can run commands in it.
+
+294
+00:12:02,240 --> 00:12:05,920
+The only caveat is that if you want to
+
+295
+00:12:04,079 --> 00:12:09,200
+run something that's a Windows command,
+
+296
+00:12:05,920 --> 00:12:12,240
+you have to use some special um stuff to
+
+297
+00:12:09,200 --> 00:12:15,040
+do that. The other one is the Windows
+
+298
+00:12:12,240 --> 00:12:16,720
+default console window. So that is your
+
+299
+00:12:15,040 --> 00:12:18,480
+powers, not your PowerShell, your
+
+300
+00:12:16,720 --> 00:12:19,760
+command prompt. If you open up command
+
+301
+00:12:18,480 --> 00:12:23,040
+prompt, command prompt is fairly
+
+302
+00:12:19,760 --> 00:12:26,320
+limited. There's your computer has ways
+
+303
+00:12:23,040 --> 00:12:28,480
+of encoding text um into code that it
+
+304
+00:12:26,320 --> 00:12:31,600
+can store and handle and then it
+
+305
+00:12:28,480 --> 00:12:34,639
+converts it back for you to see. Um
+
+306
+00:12:31,600 --> 00:12:37,760
+Originally there was this um encoding
+
+307
+00:12:34,639 --> 00:12:40,800
+system called ASI. ASI would take the
+
+308
+00:12:37,760 --> 00:12:43,440
+characters on your system and it would
+
+309
+00:12:40,800 --> 00:12:45,519
+convert it. But in the modern day with
+
+310
+00:12:43,440 --> 00:12:48,320
+so many languages and so many characters
+
+311
+00:12:45,519 --> 00:12:51,040
+not to mention emojis and all of that um
+
+312
+00:12:48,320 --> 00:12:52,959
+we ran out of ways to encode in ASI and
+
+313
+00:12:51,040 --> 00:12:54,800
+so we created a new version of encoding
+
+314
+00:12:52,959 --> 00:12:56,800
+called Unicode.
+
+315
+00:12:54,800 --> 00:12:58,720
+So, Unicode
+
+316
+00:12:56,800 --> 00:13:01,040
+is supported by default in this first
+
+317
+00:12:58,720 --> 00:13:03,200
+version, which means that any character
+
+318
+00:13:01,040 --> 00:13:04,639
+that shows up on basically any screen
+
+319
+00:13:03,200 --> 00:13:07,440
+will be able to show up in your
+
+320
+00:13:04,639 --> 00:13:08,720
+terminal. If you select this one, then
+
+321
+00:13:07,440 --> 00:13:09,920
+you'll have to reconfigure it.
+
+322
+00:13:08,720 --> 00:13:11,360
+Otherwise, some of them are going to
+
+323
+00:13:09,920 --> 00:13:14,240
+show up as like these question mark
+
+324
+00:13:11,360 --> 00:13:16,240
+icons, meaning it doesn't know what type
+
+325
+00:13:14,240 --> 00:13:19,120
+of character it's supposed to show there
+
+326
+00:13:16,240 --> 00:13:21,839
+because it's using Unicode and not ASKI.
+
+327
+00:13:19,120 --> 00:13:23,920
+Um, so if you want the full version
+
+328
+00:13:21,839 --> 00:13:26,160
+where you can resize the screen, you can
+
+329
+00:13:23,920 --> 00:13:28,079
+scroll up and down, and you can have all
+
+330
+00:13:26,160 --> 00:13:29,519
+of the characters show up on screen,
+
+331
+00:13:28,079 --> 00:13:31,600
+then you're going to want to choose this
+
+332
+00:13:29,519 --> 00:13:34,240
+first version.
+
+333
+00:13:31,600 --> 00:13:36,160
+All right, this one says, what do you
+
+334
+00:13:34,240 --> 00:13:38,399
+want to be the default behavior of git
+
+335
+00:13:36,160 --> 00:13:40,320
+pull? So, what gitpull does is it goes
+
+336
+00:13:38,399 --> 00:13:42,480
+out, finds where your code is located on
+
+337
+00:13:40,320 --> 00:13:44,720
+the internet, pulls down that version to
+
+338
+00:13:42,480 --> 00:13:46,800
+your computer. if you are working on
+
+339
+00:13:44,720 --> 00:13:49,760
+that version, um, it's going to pull
+
+340
+00:13:46,800 --> 00:13:51,120
+down that version and sometimes the
+
+341
+00:13:49,760 --> 00:13:53,279
+version on the internet and the version
+
+342
+00:13:51,120 --> 00:13:54,800
+on your computer aren't going to match.
+
+343
+00:13:53,279 --> 00:13:57,120
+So, it's asking what do you want me to
+
+344
+00:13:54,800 --> 00:14:00,079
+do when they don't match. So, the first
+
+345
+00:13:57,120 --> 00:14:02,079
+one, fast forward or merge, attempts to
+
+346
+00:14:00,079 --> 00:14:04,240
+just realign your code with what was on
+
+347
+00:14:02,079 --> 00:14:05,760
+the internet. Um, and if it's not
+
+348
+00:14:04,240 --> 00:14:07,680
+possible to align your code with what's
+
+349
+00:14:05,760 --> 00:14:11,440
+on the internet, it wants you to merge
+
+350
+00:14:07,680 --> 00:14:13,040
+them um, at a point in history. The
+
+351
+00:14:11,440 --> 00:14:17,040
+benefit of this is you can undo that
+
+352
+00:14:13,040 --> 00:14:19,680
+merge if something breaks. Um only ever
+
+353
+00:14:17,040 --> 00:14:22,160
+fast forward says let's just see if we
+
+354
+00:14:19,680 --> 00:14:25,199
+can combine the code naturally. If we
+
+355
+00:14:22,160 --> 00:14:28,560
+can't then say we can't combine the
+
+356
+00:14:25,199 --> 00:14:30,800
+code. Um and then this rebase option is
+
+357
+00:14:28,560 --> 00:14:33,839
+if you are really really really into get
+
+358
+00:14:30,800 --> 00:14:35,839
+and you have a whole bunch of
+
+359
+00:14:33,839 --> 00:14:37,600
+experience. There are developers out
+
+360
+00:14:35,839 --> 00:14:39,040
+there who say the only option is to
+
+361
+00:14:37,600 --> 00:14:42,000
+merge. There are developers out there
+
+362
+00:14:39,040 --> 00:14:44,480
+who say the only option is to rebase. Um
+
+363
+00:14:42,000 --> 00:14:47,519
+rebase basically aligns your history
+
+364
+00:14:44,480 --> 00:14:49,600
+down to a single line of points.
+
+365
+00:14:47,519 --> 00:14:51,519
+If that's too complicated, I wouldn't
+
+366
+00:14:49,600 --> 00:14:54,560
+choose that option. Um I would choose
+
+367
+00:14:51,519 --> 00:14:56,160
+fast forward and merge. Um again, this
+
+368
+00:14:54,560 --> 00:14:57,839
+is the default behavior if you're
+
+369
+00:14:56,160 --> 00:14:59,519
+interacting with it from the terminal.
+
+370
+00:14:57,839 --> 00:15:01,760
+If you're using a graphic user interface
+
+371
+00:14:59,519 --> 00:15:04,320
+like Visual Studio Code or GitHub
+
+372
+00:15:01,760 --> 00:15:06,399
+Desktop, this isn't really going to be
+
+373
+00:15:04,320 --> 00:15:07,920
+that much of an issue for you. So I'm
+
+374
+00:15:06,399 --> 00:15:11,279
+going to leave the default option and
+
+375
+00:15:07,920 --> 00:15:13,920
+move to the next one. A git credential
+
+376
+00:15:11,279 --> 00:15:16,800
+manager. Git credential manager um
+
+377
+00:15:13,920 --> 00:15:19,279
+manages credentials for you as you are
+
+378
+00:15:16,800 --> 00:15:20,880
+working in Git. For example, when I
+
+379
+00:15:19,279 --> 00:15:23,279
+deployed a website to one of the hosting
+
+380
+00:15:20,880 --> 00:15:26,720
+services I used, I needed to take my
+
+381
+00:15:23,279 --> 00:15:28,800
+code that was stored in a git repository
+
+382
+00:15:26,720 --> 00:15:31,519
+on my local computer and I needed to
+
+383
+00:15:28,800 --> 00:15:35,279
+give it to the host computer. In order
+
+384
+00:15:31,519 --> 00:15:37,279
+to do that, um, I had to verify that I
+
+385
+00:15:35,279 --> 00:15:39,279
+actually was the developer because I
+
+386
+00:15:37,279 --> 00:15:42,560
+don't want just anyone pushing code to
+
+387
+00:15:39,279 --> 00:15:45,279
+my hosted server. And so, in order to do
+
+388
+00:15:42,560 --> 00:15:47,440
+that, I set up a bunch of credentials to
+
+389
+00:15:45,279 --> 00:15:50,560
+allow me to log in and verify that I am
+
+390
+00:15:47,440 --> 00:15:52,320
+who I say I am. Um, if I don't use the
+
+391
+00:15:50,560 --> 00:15:54,399
+Git Credential Manager, this is a lot
+
+392
+00:15:52,320 --> 00:15:56,160
+harder to do. The git credential manager
+
+393
+00:15:54,399 --> 00:15:58,720
+stores your credentials and allows you
+
+394
+00:15:56,160 --> 00:16:01,040
+to keep sending changes out to that
+
+395
+00:15:58,720 --> 00:16:03,920
+server that requires you to be uh
+
+396
+00:16:01,040 --> 00:16:05,839
+verified. Um so this get credential
+
+397
+00:16:03,920 --> 00:16:07,519
+manager very helpful. I would choose
+
+398
+00:16:05,839 --> 00:16:10,480
+that option. You could choose the option
+
+399
+00:16:07,519 --> 00:16:13,440
+not to have a credential helper.
+
+400
+00:16:10,480 --> 00:16:16,639
+All right. So these two options
+
+401
+00:16:13,440 --> 00:16:20,399
+file system caching um when a computer
+
+402
+00:16:16,639 --> 00:16:22,240
+runs there's two types of ways it stores
+
+403
+00:16:20,399 --> 00:16:25,199
+information. It stores them temporarily
+
+404
+00:16:22,240 --> 00:16:28,240
+in what is called RAM or memory and then
+
+405
+00:16:25,199 --> 00:16:30,639
+it stores them permanently on your hard
+
+406
+00:16:28,240 --> 00:16:33,440
+drive or your disk. So what this is
+
+407
+00:16:30,639 --> 00:16:35,519
+saying is can we enable file caching? So
+
+408
+00:16:33,440 --> 00:16:37,519
+what file caching does is it reads the
+
+409
+00:16:35,519 --> 00:16:39,920
+appropriate files off the disk and
+
+410
+00:16:37,519 --> 00:16:41,839
+stores them in memory. Memory is a lot
+
+411
+00:16:39,920 --> 00:16:44,079
+faster to access. So if you enable file
+
+412
+00:16:41,839 --> 00:16:47,360
+caching, when git is trying to access
+
+413
+00:16:44,079 --> 00:16:49,199
+files from your disk, it will read them
+
+414
+00:16:47,360 --> 00:16:50,720
+once and then store them in memory and
+
+415
+00:16:49,199 --> 00:16:52,639
+then it'll interact with the ones in
+
+416
+00:16:50,720 --> 00:16:54,720
+memory rather than reading the disk
+
+417
+00:16:52,639 --> 00:16:57,680
+every time. This will just drastically
+
+418
+00:16:54,720 --> 00:16:59,839
+speed up your system. Um,
+
+419
+00:16:57,680 --> 00:17:01,440
+and so yeah, that's what file caching
+
+420
+00:16:59,839 --> 00:17:02,560
+does is it just boosts your system
+
+421
+00:17:01,440 --> 00:17:04,160
+performance. So if you have enough
+
+422
+00:17:02,560 --> 00:17:06,160
+memory, I would definitely select this
+
+423
+00:17:04,160 --> 00:17:07,520
+option. Um, if you have a modern
+
+424
+00:17:06,160 --> 00:17:10,319
+computer, chances are you have enough
+
+425
+00:17:07,520 --> 00:17:12,559
+memory. Okay. And then there's this
+
+426
+00:17:10,319 --> 00:17:14,640
+enable symbolic links. So enable
+
+427
+00:17:12,559 --> 00:17:16,480
+symbolic links. What that does is it
+
+428
+00:17:14,640 --> 00:17:19,439
+allows you to store your files in one
+
+429
+00:17:16,480 --> 00:17:22,799
+location and then just store a reference
+
+430
+00:17:19,439 --> 00:17:25,280
+to those files in another location. So
+
+431
+00:17:22,799 --> 00:17:27,439
+um so that you can make changes to this
+
+432
+00:17:25,280 --> 00:17:29,039
+file, but anyone that needs to read the
+
+433
+00:17:27,439 --> 00:17:31,120
+file is actually looking over here and
+
+434
+00:17:29,039 --> 00:17:34,480
+then getting redirected to your original
+
+435
+00:17:31,120 --> 00:17:36,640
+file. I don't really need that. I don't
+
+436
+00:17:34,480 --> 00:17:38,320
+ever use it. So I don't have that one
+
+437
+00:17:36,640 --> 00:17:39,840
+selected. And then that is the last
+
+438
+00:17:38,320 --> 00:17:41,679
+option. and you'll click install. And
+
+439
+00:17:39,840 --> 00:17:44,080
+this will go through and continue on
+
+440
+00:17:41,679 --> 00:17:46,720
+like the installing get on Windows
+
+441
+00:17:44,080 --> 00:17:46,720
+video.

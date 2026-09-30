@@ -1,0 +1,531 @@
+1
+00:00:00,160 --> 00:00:05,120
+All right. So, we are we covered
+
+2
+00:00:03,760 --> 00:00:06,879
+operators, but I want to show you
+
+3
+00:00:05,120 --> 00:00:12,960
+something really cool called compound
+
+4
+00:00:06,879 --> 00:00:15,599
+operators. So, um we talked about um
+
+5
+00:00:12,960 --> 00:00:20,160
+addition, subtraction, multiplication,
+
+6
+00:00:15,599 --> 00:00:22,480
+and division and the modulus operator.
+
+7
+00:00:20,160 --> 00:00:24,000
+And for the first four, I am going to
+
+8
+00:00:22,480 --> 00:00:26,800
+show you something called compound
+
+9
+00:00:24,000 --> 00:00:32,800
+assignment. If we created a variable,
+
+10
+00:00:26,800 --> 00:00:35,920
+we'll say let um fancy number equal
+
+11
+00:00:32,800 --> 00:00:38,000
+equal three.
+
+12
+00:00:35,920 --> 00:00:39,760
+Let's say I wanted to add three to that.
+
+13
+00:00:38,000 --> 00:00:43,840
+Hopefully you remember that you can just
+
+14
+00:00:39,760 --> 00:00:45,920
+say fancy num plus three. So that's how
+
+15
+00:00:43,840 --> 00:00:47,840
+you'd add it to alert it. But maybe we
+
+16
+00:00:45,920 --> 00:00:49,120
+want to store that information. So I
+
+17
+00:00:47,840 --> 00:00:54,320
+could create a new variable here. I
+
+18
+00:00:49,120 --> 00:00:58,320
+could say let my new num equal
+
+19
+00:00:54,320 --> 00:01:01,039
+fancy number plus three. And now if we
+
+20
+00:00:58,320 --> 00:01:06,320
+alert my new number, then we should get
+
+21
+00:01:01,039 --> 00:01:08,159
+three + 3 is six. So we should get six
+
+22
+00:01:06,320 --> 00:01:10,960
+if we
+
+23
+00:01:08,159 --> 00:01:14,080
+pop over to our web browser.
+
+24
+00:01:10,960 --> 00:01:16,400
+Oh, I apologize. I was using a different
+
+25
+00:01:14,080 --> 00:01:20,960
+thing. So, I need to close my server,
+
+26
+00:01:16,400 --> 00:01:23,920
+restart my server, and now we get six.
+
+27
+00:01:20,960 --> 00:01:26,000
+Okay, so hopefully that's nothing too
+
+28
+00:01:23,920 --> 00:01:30,080
+scary. You remember how to do addition
+
+29
+00:01:26,000 --> 00:01:32,799
+hopefully. Um, so
+
+30
+00:01:30,080 --> 00:01:34,720
+what we've done though is we've created
+
+31
+00:01:32,799 --> 00:01:38,960
+a variable and then we created another
+
+32
+00:01:34,720 --> 00:01:40,880
+variable um just to get the number six.
+
+33
+00:01:38,960 --> 00:01:43,680
+And maybe we don't want to do that on
+
+34
+00:01:40,880 --> 00:01:45,600
+multiple lines. So, and maybe we don't
+
+35
+00:01:43,680 --> 00:01:47,520
+want to use multiple variables. So,
+
+36
+00:01:45,600 --> 00:01:49,200
+we're going to start first by getting
+
+37
+00:01:47,520 --> 00:01:51,759
+rid of our extra variable. So, rather
+
+38
+00:01:49,200 --> 00:01:53,920
+than saying let my new number equal my
+
+39
+00:01:51,759 --> 00:01:55,520
+fancy number plus three, why don't we
+
+40
+00:01:53,920 --> 00:01:58,240
+just overwrite what was in my fancy
+
+41
+00:01:55,520 --> 00:02:00,000
+number? So, my fancy number was three
+
+42
+00:01:58,240 --> 00:02:02,799
+and then we added three to that to get
+
+43
+00:02:00,000 --> 00:02:05,119
+six. And if we assign it back to itself,
+
+44
+00:02:02,799 --> 00:02:09,280
+then it will be updated from being three
+
+45
+00:02:05,119 --> 00:02:12,720
+to being six. So, let's do that. So
+
+46
+00:02:09,280 --> 00:02:15,599
+we'll say fancy num equals fancy number
+
+47
+00:02:12,720 --> 00:02:18,640
+plus three. And now when we alert fancy
+
+48
+00:02:15,599 --> 00:02:21,520
+number we should see six. So if we pop
+
+49
+00:02:18,640 --> 00:02:24,239
+over we see six. We reload our page we
+
+50
+00:02:21,520 --> 00:02:27,120
+see six exactly like we were expecting.
+
+51
+00:02:24,239 --> 00:02:29,760
+So we said take the three
+
+52
+00:02:27,120 --> 00:02:31,599
+and call it fancy number. Then take that
+
+53
+00:02:29,760 --> 00:02:33,920
+fancy number and add three which will
+
+54
+00:02:31,599 --> 00:02:36,640
+give us a total of six and store that
+
+55
+00:02:33,920 --> 00:02:38,400
+back inside of fancy number. So now when
+
+56
+00:02:36,640 --> 00:02:41,040
+we get to this line, fancy number is
+
+57
+00:02:38,400 --> 00:02:43,440
+six. So now we've cut down the number of
+
+58
+00:02:41,040 --> 00:02:45,120
+variables we're using. There's a way to
+
+59
+00:02:43,440 --> 00:02:47,200
+cut it down even further so you're not
+
+60
+00:02:45,120 --> 00:02:50,800
+using multiple lines of code. Rather
+
+61
+00:02:47,200 --> 00:02:52,560
+than saying this equals itself + 3,
+
+62
+00:02:50,800 --> 00:02:55,440
+there's a shorthand notation for this
+
+63
+00:02:52,560 --> 00:02:58,800
+because um we don't like typing that
+
+64
+00:02:55,440 --> 00:03:01,920
+much. So we'll say fancy number plus
+
+65
+00:02:58,800 --> 00:03:05,040
+equals 3. What that's saying is take
+
+66
+00:03:01,920 --> 00:03:07,040
+fancy number, add three to it, and then
+
+67
+00:03:05,040 --> 00:03:09,440
+store it back. So you can see the plus
+
+68
+00:03:07,040 --> 00:03:10,959
+and the equals are still here, but it
+
+69
+00:03:09,440 --> 00:03:13,280
+saves us from having to type fancy
+
+70
+00:03:10,959 --> 00:03:17,599
+number twice.
+
+71
+00:03:13,280 --> 00:03:20,480
+Line 19 and line 21 are exactly the same
+
+72
+00:03:17,599 --> 00:03:22,480
+functionalitywise.
+
+73
+00:03:20,480 --> 00:03:24,400
+This is just a shorter way of doing it.
+
+74
+00:03:22,480 --> 00:03:26,560
+So what we're saying is take what was
+
+75
+00:03:24,400 --> 00:03:29,040
+already in fancy number, add three to
+
+76
+00:03:26,560 --> 00:03:30,959
+it, and then save it.
+
+77
+00:03:29,040 --> 00:03:34,239
+So just to prove this is the case, we'll
+
+78
+00:03:30,959 --> 00:03:35,760
+comment out this line. So this is a
+
+79
+00:03:34,239 --> 00:03:37,680
+three and we're saying take what's
+
+80
+00:03:35,760 --> 00:03:39,760
+already in the variable, meaning three,
+
+81
+00:03:37,680 --> 00:03:42,480
+add three to it and save it. Which means
+
+82
+00:03:39,760 --> 00:03:45,599
+when we alert, we should get a six. So
+
+83
+00:03:42,480 --> 00:03:47,519
+if we save this and we come over here,
+
+84
+00:03:45,599 --> 00:03:50,640
+there's our six from last time. If we
+
+85
+00:03:47,519 --> 00:03:52,560
+reload our page, we get a six again. And
+
+86
+00:03:50,640 --> 00:03:54,879
+that is because of compound assignment.
+
+87
+00:03:52,560 --> 00:03:56,879
+So compound assignment doesn't just work
+
+88
+00:03:54,879 --> 00:03:59,760
+with addition. You can do it with
+
+89
+00:03:56,879 --> 00:04:04,319
+multiplication and division um and
+
+90
+00:03:59,760 --> 00:04:06,000
+subtraction. So if I wanted to say fancy
+
+91
+00:04:04,319 --> 00:04:10,720
+number
+
+92
+00:04:06,000 --> 00:04:13,200
+fancy number equals fancy number time
+
+93
+00:04:10,720 --> 00:04:15,599
+two that would say take what's in there
+
+94
+00:04:13,200 --> 00:04:17,519
+multiply it by two and then store it. I
+
+95
+00:04:15,599 --> 00:04:22,479
+could write that on one line by saying
+
+96
+00:04:17,519 --> 00:04:25,919
+fancy num multiply equals 2.
+
+97
+00:04:22,479 --> 00:04:28,240
+line 23 and line 24 are the exact same
+
+98
+00:04:25,919 --> 00:04:30,000
+thing.
+
+99
+00:04:28,240 --> 00:04:32,960
+We can do it with division. So if we
+
+100
+00:04:30,000 --> 00:04:35,600
+said fancy number equals fancy number
+
+101
+00:04:32,960 --> 00:04:38,000
+divided by two,
+
+102
+00:04:35,600 --> 00:04:40,400
+that's uh we would say take what's
+
+103
+00:04:38,000 --> 00:04:42,960
+already in there divided by two and then
+
+104
+00:04:40,400 --> 00:04:46,400
+store it back. So write that in
+
+105
+00:04:42,960 --> 00:04:50,960
+shorthand. Say fancy number equals fancy
+
+106
+00:04:46,400 --> 00:04:53,840
+number sorry fancy number divide equals
+
+107
+00:04:50,960 --> 00:04:56,080
+2.
+
+108
+00:04:53,840 --> 00:04:56,960
+And just to really hit the point home,
+
+109
+00:04:56,080 --> 00:04:58,479
+we're going to do it again with
+
+110
+00:04:56,960 --> 00:05:00,400
+subtraction. If you're really bored, you
+
+111
+00:04:58,479 --> 00:05:02,560
+can skip the end of this video. Um, all
+
+112
+00:05:00,400 --> 00:05:04,240
+we're doing is with subtraction. So if
+
+113
+00:05:02,560 --> 00:05:07,440
+we want to do a subtraction, we say
+
+114
+00:05:04,240 --> 00:05:11,199
+fancy number equals what's already in
+
+115
+00:05:07,440 --> 00:05:14,880
+fancy number minus 2. to write that
+
+116
+00:05:11,199 --> 00:05:18,080
+shorthand. Fancy number minus equals
+
+117
+00:05:14,880 --> 00:05:21,360
+fancy number or sorry fancy number minus
+
+118
+00:05:18,080 --> 00:05:24,560
+equals 2. Line 29 and 30 exactly the
+
+119
+00:05:21,360 --> 00:05:26,960
+same lines. Line 26 and 27 exactly the
+
+120
+00:05:24,560 --> 00:05:29,919
+same lines as each other. Lines 23 and
+
+121
+00:05:26,960 --> 00:05:32,560
+24 are the exact same lines. Lines 19
+
+122
+00:05:29,919 --> 00:05:35,039
+when it's not commented and lines 21 are
+
+123
+00:05:32,560 --> 00:05:38,560
+exactly the same lines. compound allows
+
+124
+00:05:35,039 --> 00:05:39,840
+us to quickly uh do in shorthand what
+
+125
+00:05:38,560 --> 00:05:41,520
+would have taken us a long time to
+
+126
+00:05:39,840 --> 00:05:43,520
+write. This is really helpful when you
+
+127
+00:05:41,520 --> 00:05:45,280
+have really long variable names, but
+
+128
+00:05:43,520 --> 00:05:47,520
+describe what's being held in the
+
+129
+00:05:45,280 --> 00:05:49,680
+variable. Um then you don't have to type
+
+130
+00:05:47,520 --> 00:05:52,160
+them over and over and over. Uh
+
+131
+00:05:49,680 --> 00:05:53,840
+hopefully that um explained how compound
+
+132
+00:05:52,160 --> 00:05:57,120
+assignment works. And that's the end of
+
+133
+00:05:53,840 --> 00:05:57,120
+this video. Thanks for watching.

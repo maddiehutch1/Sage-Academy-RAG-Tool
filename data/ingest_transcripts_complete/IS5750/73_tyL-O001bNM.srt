@@ -1,0 +1,2307 @@
+1
+00:00:00,160 --> 00:00:07,040
+All right. So, let's um start working on
+
+2
+00:00:03,040 --> 00:00:08,559
+this program. So, it says write um I
+
+3
+00:00:07,040 --> 00:00:09,920
+explained the instructions in the last
+
+4
+00:00:08,559 --> 00:00:12,000
+video. So, I'm just going to read
+
+5
+00:00:09,920 --> 00:00:14,000
+through and kind of look for some things
+
+6
+00:00:12,000 --> 00:00:15,280
+to help me get started. Well, the first
+
+7
+00:00:14,000 --> 00:00:20,000
+thing I probably should do is put my
+
+8
+00:00:15,280 --> 00:00:22,160
+name and description. Um calculates GPA
+
+9
+00:00:20,000 --> 00:00:24,640
+for a semester.
+
+10
+00:00:22,160 --> 00:00:26,480
+All right. So, we want to write a
+
+11
+00:00:24,640 --> 00:00:28,720
+program that asks the user what classes
+
+12
+00:00:26,480 --> 00:00:30,400
+they're taking. So,
+
+13
+00:00:28,720 --> 00:00:31,599
+I'm going actually leave that comment as
+
+14
+00:00:30,400 --> 00:00:33,680
+the top comment because I'm going to do
+
+15
+00:00:31,599 --> 00:00:35,360
+that right underneath. For each class
+
+16
+00:00:33,680 --> 00:00:37,360
+they are taking, prompt them for a
+
+17
+00:00:35,360 --> 00:00:38,800
+letter grade and number of credits. That
+
+18
+00:00:37,360 --> 00:00:41,200
+tells me the very next thing I'm going
+
+19
+00:00:38,800 --> 00:00:44,239
+to need is probably a for loop for
+
+20
+00:00:41,200 --> 00:00:45,360
+classes because it says or each class.
+
+21
+00:00:44,239 --> 00:00:47,120
+That means I'm going to repeat
+
+22
+00:00:45,360 --> 00:00:50,079
+something. If I'm going to repeat it,
+
+23
+00:00:47,120 --> 00:00:52,719
+then I probably want a loop. Um, so I'm
+
+24
+00:00:50,079 --> 00:00:54,480
+going to use a for loop here.
+
+25
+00:00:52,719 --> 00:00:58,559
+Convert each letter grade to its grade
+
+26
+00:00:54,480 --> 00:01:01,440
+point value. example a to 4.0 a minus to
+
+27
+00:00:58,559 --> 00:01:05,199
+3.7. So what we're going to do here is
+
+28
+00:01:01,440 --> 00:01:08,199
+we're just going to add if statement if
+
+29
+00:01:05,199 --> 00:01:08,199
+statement
+
+30
+00:01:08,240 --> 00:01:14,640
+to convert grades.
+
+31
+00:01:11,280 --> 00:01:17,520
+And then once I'm done, I need to use
+
+32
+00:01:14,640 --> 00:01:19,200
+this formula um which is you take the
+
+33
+00:01:17,520 --> 00:01:20,799
+grade point and you multiply it by its
+
+34
+00:01:19,200 --> 00:01:23,200
+credits and then you divide it by the
+
+35
+00:01:20,799 --> 00:01:25,680
+sum and then after you sum all that up,
+
+36
+00:01:23,200 --> 00:01:29,360
+you divide it by the sum of the credits.
+
+37
+00:01:25,680 --> 00:01:32,960
+Um, I'm probably going to take a loop
+
+38
+00:01:29,360 --> 00:01:34,479
+that multiplies these together and
+
+39
+00:01:32,960 --> 00:01:35,680
+uh we'll see what we do from there. But
+
+40
+00:01:34,479 --> 00:01:40,560
+that means I'm going to need another
+
+41
+00:01:35,680 --> 00:01:43,560
+loop. So I'm going to say for loop for
+
+42
+00:01:40,560 --> 00:01:43,560
+calculation
+
+43
+00:01:46,479 --> 00:01:53,200
+and then after calculating display one
+
+44
+00:01:49,759 --> 00:01:55,439
+of these exact messages. Um, so then
+
+45
+00:01:53,200 --> 00:01:57,600
+after that, we'll just need our if
+
+46
+00:01:55,439 --> 00:02:00,320
+statement.
+
+47
+00:01:57,600 --> 00:02:02,240
+And that should end us off with our
+
+48
+00:02:00,320 --> 00:02:04,640
+program. Now I'm going to go through and
+
+49
+00:02:02,240 --> 00:02:06,960
+see kind of what variables I'm probably
+
+50
+00:02:04,640 --> 00:02:08,879
+going to need in this program. So it
+
+51
+00:02:06,960 --> 00:02:10,640
+looks like every time we prompt them, we
+
+52
+00:02:08,879 --> 00:02:13,520
+do prompt them for a letter grade and a
+
+53
+00:02:10,640 --> 00:02:14,800
+number of classes. Their letter grade is
+
+54
+00:02:13,520 --> 00:02:16,319
+going to be a letter and the number of
+
+55
+00:02:14,800 --> 00:02:17,599
+classes is going to be a number. So I'm
+
+56
+00:02:16,319 --> 00:02:21,520
+going to create those two variables
+
+57
+00:02:17,599 --> 00:02:25,040
+here. create variables.
+
+58
+00:02:21,520 --> 00:02:30,959
+So I'll say let letter grade equal an
+
+59
+00:02:25,040 --> 00:02:35,840
+empty string for now. Let um num credits
+
+60
+00:02:30,959 --> 00:02:37,920
+equal zero. And then
+
+61
+00:02:35,840 --> 00:02:39,599
+um
+
+62
+00:02:37,920 --> 00:02:41,680
+I'm going to take their letter grade and
+
+63
+00:02:39,599 --> 00:02:44,000
+convert it to a GPA. So, I probably need
+
+64
+00:02:41,680 --> 00:02:49,040
+a
+
+65
+00:02:44,000 --> 00:02:52,040
+GPA um variable.
+
+66
+00:02:49,040 --> 00:02:52,040
+Um,
+
+67
+00:02:52,319 --> 00:02:58,640
+and actually,
+
+68
+00:02:54,319 --> 00:03:00,720
+I need this to be single class GPA
+
+69
+00:02:58,640 --> 00:03:03,200
+because I'm going to have an overall GPA
+
+70
+00:03:00,720 --> 00:03:06,159
+variable there. And so, then that means
+
+71
+00:03:03,200 --> 00:03:09,519
+I need to create an overall. So, I'll
+
+72
+00:03:06,159 --> 00:03:12,080
+say final GPA and I'll set that equal to
+
+73
+00:03:09,519 --> 00:03:12,080
+zero.
+
+74
+00:03:13,200 --> 00:03:17,120
+And it looks like that's most of the
+
+75
+00:03:15,440 --> 00:03:18,959
+variables I'm going to need. I do know
+
+76
+00:03:17,120 --> 00:03:22,959
+that I'm going to be asking them for the
+
+77
+00:03:18,959 --> 00:03:25,200
+number of credits and the letter grade.
+
+78
+00:03:22,959 --> 00:03:27,519
+Um, so I'm probably going to need two
+
+79
+00:03:25,200 --> 00:03:29,519
+arrays. Um, because I'm going to be
+
+80
+00:03:27,519 --> 00:03:30,720
+storing multiple pieces of information
+
+81
+00:03:29,519 --> 00:03:34,879
+and I don't know how many I'm going to
+
+82
+00:03:30,720 --> 00:03:37,840
+store. So I can't just say let var one,
+
+83
+00:03:34,879 --> 00:03:39,440
+let var two, let because I don't know
+
+84
+00:03:37,840 --> 00:03:41,120
+how many variables I'm going to create.
+
+85
+00:03:39,440 --> 00:03:44,000
+So, I need two arrays here. So, I'm
+
+86
+00:03:41,120 --> 00:03:48,879
+going to create those. I'll say let
+
+87
+00:03:44,000 --> 00:03:50,640
+um and you know, rather than storing
+
+88
+00:03:48,879 --> 00:03:55,680
+um the letter grade, I'll probably just
+
+89
+00:03:50,640 --> 00:04:00,239
+store the single class GPA. So, I'll say
+
+90
+00:03:55,680 --> 00:04:02,400
+class GPA is equal to an empty array.
+
+91
+00:04:00,239 --> 00:04:07,360
+And then I'll create another one. And
+
+92
+00:04:02,400 --> 00:04:11,200
+I'm going to call this let um
+
+93
+00:04:07,360 --> 00:04:12,560
+class weight equal
+
+94
+00:04:11,200 --> 00:04:13,840
+an empty array. And that's where I'm
+
+95
+00:04:12,560 --> 00:04:16,479
+going to store the credits for each
+
+96
+00:04:13,840 --> 00:04:17,840
+class. So I think that's the variables
+
+97
+00:04:16,479 --> 00:04:19,040
+I'm going to need. I'm going to start
+
+98
+00:04:17,840 --> 00:04:22,880
+writing my program and we'll see if we
+
+99
+00:04:19,040 --> 00:04:24,400
+need some more. So we first need to ask
+
+100
+00:04:22,880 --> 00:04:29,520
+the user for the number of classes
+
+101
+00:04:24,400 --> 00:04:31,919
+they're taking. So we're going to say um
+
+102
+00:04:29,520 --> 00:04:33,759
+oh well there we go. We need another
+
+103
+00:04:31,919 --> 00:04:36,320
+one. Um, but I'm going to create it
+
+104
+00:04:33,759 --> 00:04:39,840
+right here and give it a value. So,
+
+105
+00:04:36,320 --> 00:04:43,680
+we're going to say let num classes
+
+106
+00:04:39,840 --> 00:04:46,000
+equal. Um, and then this is going to be
+
+107
+00:04:43,680 --> 00:04:47,680
+a prompt. Prompts always return strings.
+
+108
+00:04:46,000 --> 00:04:49,280
+If you're prompting for a string, you do
+
+109
+00:04:47,680 --> 00:04:50,479
+need to convert it to a number. Since we
+
+110
+00:04:49,280 --> 00:04:51,440
+are going to use this in our for loop
+
+111
+00:04:50,479 --> 00:04:52,639
+later, we're going to want to convert it
+
+112
+00:04:51,440 --> 00:04:55,680
+to a number. So, I'm going to use
+
+113
+00:04:52,639 --> 00:05:01,800
+number. And then I'm going to say prompt
+
+114
+00:04:55,680 --> 00:05:01,800
+um how many classes in this semester.
+
+115
+00:05:02,320 --> 00:05:07,120
+And then I need to loop through each of
+
+116
+00:05:04,400 --> 00:05:12,639
+the classes. So I'm going to say four.
+
+117
+00:05:07,120 --> 00:05:14,400
+Um let I let counter equal zero. Um so
+
+118
+00:05:12,639 --> 00:05:16,000
+this counter is going to count in my
+
+119
+00:05:14,400 --> 00:05:17,520
+loop. How long do I want the loop to
+
+120
+00:05:16,000 --> 00:05:19,039
+run? Well, I want to run it for the
+
+121
+00:05:17,520 --> 00:05:20,400
+exact number of classes they entered. So
+
+122
+00:05:19,039 --> 00:05:22,960
+they entered three classes. I want to
+
+123
+00:05:20,400 --> 00:05:24,880
+ask them for their class three times. If
+
+124
+00:05:22,960 --> 00:05:29,440
+I start at zero, then I'm going to go 0
+
+125
+00:05:24,880 --> 00:05:32,960
+1 2 and that will be three times. Um,
+
+126
+00:05:29,440 --> 00:05:36,800
+and so if they entered the number three,
+
+127
+00:05:32,960 --> 00:05:38,400
+I want this loop to go from zero to two.
+
+128
+00:05:36,800 --> 00:05:40,320
+So in other words, I want to run just
+
+129
+00:05:38,400 --> 00:05:42,240
+less than whatever number they entered.
+
+130
+00:05:40,320 --> 00:05:46,320
+So I'm going to say keep running this
+
+131
+00:05:42,240 --> 00:05:48,720
+loop while counter is less than
+
+132
+00:05:46,320 --> 00:05:50,880
+number of classes. And I'm going to put
+
+133
+00:05:48,720 --> 00:05:52,240
+a semicolon. And then which direction do
+
+134
+00:05:50,880 --> 00:05:54,000
+I want to go? Well, if I'm starting at
+
+135
+00:05:52,240 --> 00:05:56,560
+zero and I want to go up to the number
+
+136
+00:05:54,000 --> 00:05:59,360
+of classes, then I need to increment. In
+
+137
+00:05:56,560 --> 00:06:04,560
+order to increment, I could say who I
+
+138
+00:05:59,360 --> 00:06:06,720
+could say counter equals counter + 1,
+
+139
+00:06:04,560 --> 00:06:09,600
+which could also be abbreviated as
+
+140
+00:06:06,720 --> 00:06:12,880
+counter plus= 1, but it also could just
+
+141
+00:06:09,600 --> 00:06:15,039
+be abbreviated as counter++.
+
+142
+00:06:12,880 --> 00:06:16,240
+I know I'm going to be taking two inputs
+
+143
+00:06:15,039 --> 00:06:17,919
+here, so this is going to be a
+
+144
+00:06:16,240 --> 00:06:20,639
+multi-line for loop, which means I'm
+
+145
+00:06:17,919 --> 00:06:23,280
+going to need curly braces.
+
+146
+00:06:20,639 --> 00:06:24,560
+Um, and you know, kind of as I go, I do
+
+147
+00:06:23,280 --> 00:06:27,440
+like to format my code. So, I'm going to
+
+148
+00:06:24,560 --> 00:06:29,440
+hold option shift F or alt shift F on a
+
+149
+00:06:27,440 --> 00:06:31,680
+Windows that format my code. It looks
+
+150
+00:06:29,440 --> 00:06:33,360
+like it's met whatever formatting I'm
+
+151
+00:06:31,680 --> 00:06:37,120
+have set for my VS code. So, I'm just
+
+152
+00:06:33,360 --> 00:06:40,000
+going to leave things be. All right.
+
+153
+00:06:37,120 --> 00:06:42,080
+In the for loop, oh,
+
+154
+00:06:40,000 --> 00:06:43,280
+I need an if statement to convert
+
+155
+00:06:42,080 --> 00:06:44,560
+grades. And I'm going to move that into
+
+156
+00:06:43,280 --> 00:06:47,919
+the for loop by holding option and
+
+157
+00:06:44,560 --> 00:06:50,000
+hitting the F arrow. So, well, first I
+
+158
+00:06:47,919 --> 00:06:51,440
+probably need to get those grades. So I
+
+159
+00:06:50,000 --> 00:06:53,680
+need to prompt for a letter grade and
+
+160
+00:06:51,440 --> 00:06:55,759
+the number of credits that it is. So
+
+161
+00:06:53,680 --> 00:06:57,039
+I'll say let
+
+162
+00:06:55,759 --> 00:06:58,319
+Oh, actually I've already created the
+
+163
+00:06:57,039 --> 00:07:02,319
+letter grade variable. So I'll just say
+
+164
+00:06:58,319 --> 00:07:06,800
+letter grade equals prompt
+
+165
+00:07:02,319 --> 00:07:10,080
+what is your letter grade or class
+
+166
+00:07:06,800 --> 00:07:13,520
+and then I'm going to concatenate on the
+
+167
+00:07:10,080 --> 00:07:15,360
+counter plus one so that the user
+
+168
+00:07:13,520 --> 00:07:18,080
+doesn't see what is your letter grade
+
+169
+00:07:15,360 --> 00:07:19,599
+for class zero. um they'll see what is
+
+170
+00:07:18,080 --> 00:07:21,520
+your letter grade for class one and so
+
+171
+00:07:19,599 --> 00:07:23,360
+on and so forth. So that'll give us our
+
+172
+00:07:21,520 --> 00:07:25,599
+letter grade and then we need to figure
+
+173
+00:07:23,360 --> 00:07:29,759
+out how many credits it was worth. So
+
+174
+00:07:25,599 --> 00:07:31,440
+we'll say prompt and I'm going to use on
+
+175
+00:07:29,759 --> 00:07:33,280
+the last one I did concatenation. So on
+
+176
+00:07:31,440 --> 00:07:35,759
+this one I'll do a formatted string.
+
+177
+00:07:33,280 --> 00:07:38,479
+It's your choice which one you use. Um
+
+178
+00:07:35,759 --> 00:07:42,479
+but I'll say okay number of credits is
+
+179
+00:07:38,479 --> 00:07:45,120
+how many credits was
+
+180
+00:07:42,479 --> 00:07:50,880
+um and then we'll do dollar sign curly
+
+181
+00:07:45,120 --> 00:07:54,639
+brace uh counter + one worth and we'll
+
+182
+00:07:50,880 --> 00:07:59,039
+say how many credits was class counter +
+
+183
+00:07:54,639 --> 00:08:01,680
+one worth. Now remember this is a prompt
+
+184
+00:07:59,039 --> 00:08:03,039
+and we are wanting a number here. So we
+
+185
+00:08:01,680 --> 00:08:06,240
+probably need to convert this to a
+
+186
+00:08:03,039 --> 00:08:08,800
+number. So, we'll say number
+
+187
+00:08:06,240 --> 00:08:10,639
+prompt, how many credits was this class
+
+188
+00:08:08,800 --> 00:08:12,080
+worth? And then we'll close that
+
+189
+00:08:10,639 --> 00:08:13,440
+parenthesis. So, we're taking a prompt,
+
+190
+00:08:12,080 --> 00:08:16,960
+converting it to a number, and then
+
+191
+00:08:13,440 --> 00:08:20,319
+we're storing it in the credits.
+
+192
+00:08:16,960 --> 00:08:22,000
+So, I'm going to put here gather user
+
+193
+00:08:20,319 --> 00:08:25,039
+input.
+
+194
+00:08:22,000 --> 00:08:28,080
+And then here is where I need to put my
+
+195
+00:08:25,039 --> 00:08:31,919
+if statement for grades.
+
+196
+00:08:28,080 --> 00:08:34,560
+And I have this in another file. I would
+
+197
+00:08:31,919 --> 00:08:36,080
+strongly recommend grabbing it from the
+
+198
+00:08:34,560 --> 00:08:37,599
+last homework assignment where you did
+
+199
+00:08:36,080 --> 00:08:39,279
+this so you don't have to retype it
+
+200
+00:08:37,599 --> 00:08:45,040
+again. So, I'm going to come to my
+
+201
+00:08:39,279 --> 00:08:47,360
+desktop. And I have mine in
+
+202
+00:08:45,040 --> 00:08:50,760
+uh first website, wherever the heck that
+
+203
+00:08:47,360 --> 00:08:50,760
+folder went.
+
+204
+00:08:51,040 --> 00:08:58,640
+There it is. First website. And I have
+
+205
+00:08:54,000 --> 00:09:00,320
+mine in lettergrade togpa.html.
+
+206
+00:08:58,640 --> 00:09:02,959
+I meant to open that in Visual Studio
+
+207
+00:09:00,320 --> 00:09:06,800
+Code, but if you want to copy it and you
+
+208
+00:09:02,959 --> 00:09:09,680
+like me opened the wrong window,
+
+209
+00:09:06,800 --> 00:09:12,080
+you can hit command option I or control
+
+210
+00:09:09,680 --> 00:09:13,920
+shift I, you can come over here to
+
+211
+00:09:12,080 --> 00:09:17,680
+elements,
+
+212
+00:09:13,920 --> 00:09:20,160
+can open up the script tag, and I'm just
+
+213
+00:09:17,680 --> 00:09:24,240
+going to grab this first
+
+214
+00:09:20,160 --> 00:09:26,240
+um letter grade right here.
+
+215
+00:09:24,240 --> 00:09:29,360
+So, I'm going to scroll down to the else
+
+216
+00:09:26,240 --> 00:09:31,200
+and copy it.
+
+217
+00:09:29,360 --> 00:09:33,600
+come over to Visual Studio Code and
+
+218
+00:09:31,200 --> 00:09:35,440
+paste it. So there's my if statement for
+
+219
+00:09:33,600 --> 00:09:40,800
+my letter grade. I'm going to hit option
+
+220
+00:09:35,440 --> 00:09:43,279
+shift F to format my code. All right.
+
+221
+00:09:40,800 --> 00:09:45,040
+So first things I want to do is this is
+
+222
+00:09:43,279 --> 00:09:46,720
+not called letter grade anymore. Letter
+
+223
+00:09:45,040 --> 00:09:49,279
+grade one, it's called letter grade. So
+
+224
+00:09:46,720 --> 00:09:50,880
+I'm going to do a command F. And here
+
+225
+00:09:49,279 --> 00:09:52,480
+I'm going to hit the little drop down
+
+226
+00:09:50,880 --> 00:09:56,000
+and I'm going to say replace every
+
+227
+00:09:52,480 --> 00:09:58,000
+instance of letter grade one with letter
+
+228
+00:09:56,000 --> 00:09:59,680
+grade.
+
+229
+00:09:58,000 --> 00:10:01,760
+And then I'm going to replace all 11.
+
+230
+00:09:59,680 --> 00:10:03,120
+And that fixed a lot of the if
+
+231
+00:10:01,760 --> 00:10:05,760
+statement. The other thing I'm going to
+
+232
+00:10:03,120 --> 00:10:09,279
+replace is GPA 1.
+
+233
+00:10:05,760 --> 00:10:11,360
+And I'm going to replace it with um what
+
+234
+00:10:09,279 --> 00:10:15,040
+did I call it?
+
+235
+00:10:11,360 --> 00:10:17,680
+I called it single class GPA. Single
+
+236
+00:10:15,040 --> 00:10:21,040
+class GPA. And I'm going to replace all
+
+237
+00:10:17,680 --> 00:10:24,640
+of those. And so that should give me an
+
+238
+00:10:21,040 --> 00:10:26,880
+if statement that meets the requirements
+
+239
+00:10:24,640 --> 00:10:29,880
+here. and it will convert each unique
+
+240
+00:10:26,880 --> 00:10:29,880
+class
+
+241
+00:10:29,920 --> 00:10:37,600
+into the GPA we want. Um, so I'm going
+
+242
+00:10:33,680 --> 00:10:41,360
+to close my search. What I'm going to do
+
+243
+00:10:37,600 --> 00:10:43,120
+is I am going to run this and I'm just
+
+244
+00:10:41,360 --> 00:10:47,839
+going to make sure that it is converting
+
+245
+00:10:43,120 --> 00:10:51,200
+my GPA as expected. So,
+
+246
+00:10:47,839 --> 00:10:53,279
+let's go live.
+
+247
+00:10:51,200 --> 00:10:55,839
+And I don't know why my prompt is off
+
+248
+00:10:53,279 --> 00:10:57,279
+screen. Well, all right. It looks like
+
+249
+00:10:55,839 --> 00:10:58,880
+my screen is frozen. So, I'm going to
+
+250
+00:10:57,279 --> 00:11:00,320
+pause this recording and I will be back
+
+251
+00:10:58,880 --> 00:11:02,160
+in a minute. Well, that was exciting. I
+
+252
+00:11:00,320 --> 00:11:04,160
+had to restart my computer. I'm not sure
+
+253
+00:11:02,160 --> 00:11:06,640
+what happened there, but we'll reload
+
+254
+00:11:04,160 --> 00:11:08,640
+this page to get our test. Says how many
+
+255
+00:11:06,640 --> 00:11:09,760
+classes this semester and I'm actually
+
+256
+00:11:08,640 --> 00:11:11,920
+just going to cancel out of this
+
+257
+00:11:09,760 --> 00:11:13,360
+dialogue so that we can do this in
+
+258
+00:11:11,920 --> 00:11:15,120
+debugger mode just to make sure
+
+259
+00:11:13,360 --> 00:11:18,480
+everything is working. So, I'm going to
+
+260
+00:11:15,120 --> 00:11:22,000
+come over here to sources and I'm going
+
+261
+00:11:18,480 --> 00:11:23,839
+to put a break point in our for loop and
+
+262
+00:11:22,000 --> 00:11:25,200
+reload our page. says, "How many classes
+
+263
+00:11:23,839 --> 00:11:27,600
+this semester?" I'm going to just test
+
+264
+00:11:25,200 --> 00:11:30,000
+two. Um, just to make sure everything's
+
+265
+00:11:27,600 --> 00:11:31,680
+working. So, if number of classes right
+
+266
+00:11:30,000 --> 00:11:34,160
+now, number of classes is two. That's
+
+267
+00:11:31,680 --> 00:11:35,920
+great. I'm going to hit the next button.
+
+268
+00:11:34,160 --> 00:11:37,600
+Um, it's drops into the loop. Says,
+
+269
+00:11:35,920 --> 00:11:40,399
+"What letter grade for class one?" I'll
+
+270
+00:11:37,600 --> 00:11:42,800
+enter a. It says, "How many credits was
+
+271
+00:11:40,399 --> 00:11:44,160
+class one should come up next? And how
+
+272
+00:11:42,800 --> 00:11:48,399
+many credits was it worth?" Let's just
+
+273
+00:11:44,160 --> 00:11:51,839
+do three. Um, if we hit the next button,
+
+274
+00:11:48,399 --> 00:11:55,040
+number of credits is three. letter grade
+
+275
+00:11:51,839 --> 00:11:57,680
+is, come on, work with me here, it's an
+
+276
+00:11:55,040 --> 00:12:00,800
+A. So, we should expect it to drop down
+
+277
+00:11:57,680 --> 00:12:02,880
+and set single class GPA to 4.0. We'll
+
+278
+00:12:00,800 --> 00:12:07,200
+hit next. Sure enough, it does. Single
+
+279
+00:12:02,880 --> 00:12:09,279
+GPA is 4.0. The loop increments and we
+
+280
+00:12:07,200 --> 00:12:14,720
+start over. What is your prompt for
+
+281
+00:12:09,279 --> 00:12:17,440
+this? Um, let's enter a D minus.
+
+282
+00:12:14,720 --> 00:12:19,040
+And then it's going to ask us how many
+
+283
+00:12:17,440 --> 00:12:20,480
+credits it was worth. We'll say it's
+
+284
+00:12:19,040 --> 00:12:22,720
+worth one.
+
+285
+00:12:20,480 --> 00:12:25,120
+And then we'll drop into our if
+
+286
+00:12:22,720 --> 00:12:28,399
+statement. Looks like it does correctly
+
+287
+00:12:25,120 --> 00:12:33,279
+evaluate this condition. And it does
+
+288
+00:12:28,399 --> 00:12:35,279
+successfully set um single class GPA to
+
+289
+00:12:33,279 --> 00:12:37,200
+07. So we know everything's working.
+
+290
+00:12:35,279 --> 00:12:40,320
+Let's go back over to our code. Let's
+
+291
+00:12:37,200 --> 00:12:42,800
+stop this and go over to our code and
+
+292
+00:12:40,320 --> 00:12:46,079
+keep going. Okay. So now that I've got
+
+293
+00:12:42,800 --> 00:12:48,800
+the letter grade, I do need to add it to
+
+294
+00:12:46,079 --> 00:12:53,360
+my running array of class GPA. So I'm
+
+295
+00:12:48,800 --> 00:12:55,600
+going to say class GPA dot push and that
+
+296
+00:12:53,360 --> 00:12:58,399
+will push this letter grade in to that
+
+297
+00:12:55,600 --> 00:13:01,519
+array. So we'll put single class GPA and
+
+298
+00:12:58,399 --> 00:13:03,279
+then the other one we need to do is we
+
+299
+00:13:01,519 --> 00:13:04,800
+need to figure out what the class weight
+
+300
+00:13:03,279 --> 00:13:07,519
+was. Well, that's just going to be
+
+301
+00:13:04,800 --> 00:13:14,160
+whatever uh the number of credits was.
+
+302
+00:13:07,519 --> 00:13:17,839
+So, we'll say class weight dot push and
+
+303
+00:13:14,160 --> 00:13:20,000
+um we're going to push in the number of
+
+304
+00:13:17,839 --> 00:13:22,399
+credits.
+
+305
+00:13:20,000 --> 00:13:24,000
+Now, class weight implies that there's
+
+306
+00:13:22,399 --> 00:13:26,399
+only a single class weight being stored
+
+307
+00:13:24,000 --> 00:13:28,399
+here. So, what I'm going to do is I'm
+
+308
+00:13:26,399 --> 00:13:32,240
+going to rename this. So, I'm going to
+
+309
+00:13:28,399 --> 00:13:34,240
+rightclick and then
+
+310
+00:13:32,240 --> 00:13:35,839
+um right here where it says rename
+
+311
+00:13:34,240 --> 00:13:37,200
+symbol, I'm going to click that and I'm
+
+312
+00:13:35,839 --> 00:13:39,360
+going to add an s to the end because
+
+313
+00:13:37,200 --> 00:13:40,880
+this is multiple weights. And if we do
+
+314
+00:13:39,360 --> 00:13:42,399
+that and we come down here to the
+
+315
+00:13:40,880 --> 00:13:44,959
+bottom, we'll see it updated that
+
+316
+00:13:42,399 --> 00:13:46,639
+reference as well. So now class
+
+317
+00:13:44,959 --> 00:13:49,040
+weights.push, we're going to push in the
+
+318
+00:13:46,639 --> 00:13:51,200
+number of credits that it was worth. Um,
+
+319
+00:13:49,040 --> 00:13:55,279
+and if we've done everything correctly
+
+320
+00:13:51,200 --> 00:13:58,639
+now, um, this should store an array of
+
+321
+00:13:55,279 --> 00:14:02,240
+what their grade was as a number. And
+
+322
+00:13:58,639 --> 00:14:05,839
+this should store an array of what, um,
+
+323
+00:14:02,240 --> 00:14:07,600
+of how much each class was worth.
+
+324
+00:14:05,839 --> 00:14:09,279
+So now I need to go look. So the next
+
+325
+00:14:07,600 --> 00:14:11,199
+thing we need to do is run a for loop
+
+326
+00:14:09,279 --> 00:14:12,959
+for the calculation.
+
+327
+00:14:11,199 --> 00:14:17,839
+So, what I'm going to do is I'm going to
+
+328
+00:14:12,959 --> 00:14:19,360
+take this and I'm going to move it up
+
+329
+00:14:17,839 --> 00:14:20,639
+here under my for loop for the
+
+330
+00:14:19,360 --> 00:14:23,199
+calculation. So, I can run that
+
+331
+00:14:20,639 --> 00:14:24,720
+calculation. Whenever you see sum of a
+
+332
+00:14:23,199 --> 00:14:26,480
+whole bunch of things, that's kind of
+
+333
+00:14:24,720 --> 00:14:29,279
+just a for loop. So, what we're going to
+
+334
+00:14:26,480 --> 00:14:31,040
+do is we're going to need to take every
+
+335
+00:14:29,279 --> 00:14:34,000
+grade point and multiply it by the
+
+336
+00:14:31,040 --> 00:14:36,000
+number of credits. Um, whenever you hear
+
+337
+00:14:34,000 --> 00:14:37,360
+every, one thing you could think to do
+
+338
+00:14:36,000 --> 00:14:39,519
+is to create a for loop. So, I'm going
+
+339
+00:14:37,360 --> 00:14:44,959
+to create a for loop here, and I'm going
+
+340
+00:14:39,519 --> 00:14:46,639
+to say let um counter to equal zero. And
+
+341
+00:14:44,959 --> 00:14:48,079
+then, how long do I want to run this for
+
+342
+00:14:46,639 --> 00:14:49,839
+loop? Well, I want to run it for every
+
+343
+00:14:48,079 --> 00:14:51,680
+single grade point. Well, where are the
+
+344
+00:14:49,839 --> 00:14:54,399
+grade points being stored? They're being
+
+345
+00:14:51,680 --> 00:14:58,079
+stored in class GPA. So, I want to run
+
+346
+00:14:54,399 --> 00:15:00,000
+it for just less than class GPA.length.
+
+347
+00:14:58,079 --> 00:15:01,680
+If there are five letter grades in class
+
+348
+00:15:00,000 --> 00:15:04,320
+GPA, the length will be five. And we're
+
+349
+00:15:01,680 --> 00:15:07,760
+going to run 0 1 2 3 4. And that will
+
+350
+00:15:04,320 --> 00:15:10,639
+give us five total. Um, and then we'll
+
+351
+00:15:07,760 --> 00:15:16,279
+say counter 2 plus+ because we want to
+
+352
+00:15:10,639 --> 00:15:16,279
+increment this loop as we go. So,
+
+353
+00:15:16,639 --> 00:15:21,600
+um, final GPA is going to be what our
+
+354
+00:15:19,360 --> 00:15:24,240
+final GPA is. But I just realized we
+
+355
+00:15:21,600 --> 00:15:27,600
+need a running sum of GPA. So, I'm going
+
+356
+00:15:24,240 --> 00:15:30,560
+to say let running G
+
+357
+00:15:27,600 --> 00:15:32,480
+GP sum because we're going to say grade
+
+358
+00:15:30,560 --> 00:15:33,920
+point sum
+
+359
+00:15:32,480 --> 00:15:36,079
+and we're going to set that equal to
+
+360
+00:15:33,920 --> 00:15:37,920
+zero. And then down here, what we want
+
+361
+00:15:36,079 --> 00:15:40,079
+to do is we want to take each grade
+
+362
+00:15:37,920 --> 00:15:42,560
+point and multiply it by the number of
+
+363
+00:15:40,079 --> 00:15:45,040
+credits. Well, that means we need to go
+
+364
+00:15:42,560 --> 00:15:47,519
+into the class GPA to get the grade
+
+365
+00:15:45,040 --> 00:15:50,240
+points. Um, so what we're going to do is
+
+366
+00:15:47,519 --> 00:15:52,720
+we're going to go into class GPA at the
+
+367
+00:15:50,240 --> 00:15:54,720
+counter 2 position. That will give us
+
+368
+00:15:52,720 --> 00:15:56,560
+whatever the GPA is for the current
+
+369
+00:15:54,720 --> 00:15:58,880
+iteration. So if we have if we're at
+
+370
+00:15:56,560 --> 00:16:00,800
+zero, it'll give us the first grade
+
+371
+00:15:58,880 --> 00:16:02,639
+point. If we're at one, it'll give us
+
+372
+00:16:00,800 --> 00:16:06,160
+the second grade point and so on and so
+
+373
+00:16:02,639 --> 00:16:08,160
+forth. And then we want to multiply that
+
+374
+00:16:06,160 --> 00:16:10,959
+by the number of credits that that class
+
+375
+00:16:08,160 --> 00:16:13,199
+was worth. Well, if you noticed here, we
+
+376
+00:16:10,959 --> 00:16:15,440
+pushed in at the exact same time. We
+
+377
+00:16:13,199 --> 00:16:17,120
+pushed in the grade point and the number
+
+378
+00:16:15,440 --> 00:16:18,480
+of credits was worth, which means these
+
+379
+00:16:17,120 --> 00:16:20,160
+arrays are parallel. Which means
+
+380
+00:16:18,480 --> 00:16:21,920
+whatever is in the zero position of this
+
+381
+00:16:20,160 --> 00:16:24,240
+array corresponds with what's in the
+
+382
+00:16:21,920 --> 00:16:25,920
+zero position of this array. Which means
+
+383
+00:16:24,240 --> 00:16:28,160
+that if we want to multiply a grade
+
+384
+00:16:25,920 --> 00:16:29,759
+point by its associated credits, all we
+
+385
+00:16:28,160 --> 00:16:32,000
+need to do is access the exact same
+
+386
+00:16:29,759 --> 00:16:34,240
+position in both arrays. So what we'll
+
+387
+00:16:32,000 --> 00:16:36,720
+do is we'll take the class GPA and
+
+388
+00:16:34,240 --> 00:16:40,160
+multiply at a certain position and
+
+389
+00:16:36,720 --> 00:16:42,320
+multiply it by class weights at the
+
+390
+00:16:40,160 --> 00:16:44,240
+exact same position.
+
+391
+00:16:42,320 --> 00:16:47,199
+So that will give us this part of the
+
+392
+00:16:44,240 --> 00:16:49,360
+calculation. But in order for us to sum
+
+393
+00:16:47,199 --> 00:16:52,560
+them over time, we need to add it to
+
+394
+00:16:49,360 --> 00:16:54,079
+whatever the sum was previously. So the
+
+395
+00:16:52,560 --> 00:16:55,839
+first time the loop runs, it's going to
+
+396
+00:16:54,079 --> 00:16:58,720
+be zero. The next time it runs, it's
+
+397
+00:16:55,839 --> 00:17:00,399
+going to be 0 plus whatever this is plus
+
+398
+00:16:58,720 --> 00:17:02,160
+whatever it is for the current loop.
+
+399
+00:17:00,399 --> 00:17:04,640
+Well, if you want to continually add on
+
+400
+00:17:02,160 --> 00:17:07,360
+to a variable, then you want to use the
+
+401
+00:17:04,640 --> 00:17:10,000
+plus equal sign. Well, what variable do
+
+402
+00:17:07,360 --> 00:17:12,880
+we want to continually add on to? Well,
+
+403
+00:17:10,000 --> 00:17:14,640
+up here, we created a running GP sum,
+
+404
+00:17:12,880 --> 00:17:16,480
+and that would be a running sum of the
+
+405
+00:17:14,640 --> 00:17:20,000
+grade points multiplied by their weight.
+
+406
+00:17:16,480 --> 00:17:21,919
+So, we're going to say running GP sum is
+
+407
+00:17:20,000 --> 00:17:25,039
+equal to whatever was previously in it
+
+408
+00:17:21,919 --> 00:17:28,400
+plus all of this new information.
+
+409
+00:17:25,039 --> 00:17:29,919
+Okay, great. So now we've multiplied
+
+410
+00:17:28,400 --> 00:17:32,400
+together and we've added them to the
+
+411
+00:17:29,919 --> 00:17:34,160
+running sum. The other part of this
+
+412
+00:17:32,400 --> 00:17:37,039
+equation is that we need to sum credits
+
+413
+00:17:34,160 --> 00:17:39,440
+over time. So actually what we also need
+
+414
+00:17:37,039 --> 00:17:42,480
+to do up here is we need a sum of
+
+415
+00:17:39,440 --> 00:17:46,160
+credits. So we'll say let credit sum
+
+416
+00:17:42,480 --> 00:17:47,679
+equal zero. And so what we want to do is
+
+417
+00:17:46,160 --> 00:17:48,880
+if the first class they took was three
+
+418
+00:17:47,679 --> 00:17:50,640
+credits and the second class they took
+
+419
+00:17:48,880 --> 00:17:53,280
+was two credits, then we want the sum to
+
+420
+00:17:50,640 --> 00:17:56,160
+be five credits. So basically we want to
+
+421
+00:17:53,280 --> 00:17:58,160
+take out of the class weights whatever
+
+422
+00:17:56,160 --> 00:17:59,440
+that is and add it to a running total.
+
+423
+00:17:58,160 --> 00:18:01,760
+So we're going to do the same thing we
+
+424
+00:17:59,440 --> 00:18:04,320
+did on the line above except this time
+
+425
+00:18:01,760 --> 00:18:05,840
+we're going to do it for credit sum.
+
+426
+00:18:04,320 --> 00:18:09,120
+We're going to say credit sum plus
+
+427
+00:18:05,840 --> 00:18:12,000
+equals the class weights
+
+428
+00:18:09,120 --> 00:18:13,840
+at the counter two position. What this
+
+429
+00:18:12,000 --> 00:18:15,440
+does is it says take whatever the credit
+
+430
+00:18:13,840 --> 00:18:17,520
+sum was which originally it's going to
+
+431
+00:18:15,440 --> 00:18:19,039
+be zero and then add in what the new
+
+432
+00:18:17,520 --> 00:18:21,280
+credit value is. So for the first class
+
+433
+00:18:19,039 --> 00:18:23,919
+let's say we entered three. 0 + 3 is
+
+434
+00:18:21,280 --> 00:18:28,559
+three. Second class, we enter two. 3 + 2
+
+435
+00:18:23,919 --> 00:18:30,320
+is five. And so that should work. Um,
+
+436
+00:18:28,559 --> 00:18:34,720
+but I'm going to put a comment in here
+
+437
+00:18:30,320 --> 00:18:40,480
+and I'm going to say calculate the sum
+
+438
+00:18:34,720 --> 00:18:44,480
+of GP times credits. And then on this
+
+439
+00:18:40,480 --> 00:18:48,280
+one, I'm going to say keep running sum.
+
+440
+00:18:44,480 --> 00:18:48,280
+And we'll save that.
+
+441
+00:18:49,120 --> 00:18:51,760
+Perfect.
+
+442
+00:18:55,520 --> 00:19:00,400
+All right.
+
+443
+00:18:57,919 --> 00:19:03,600
+Um, now that we've got all of that
+
+444
+00:19:00,400 --> 00:19:06,000
+together, let's go test it again. So,
+
+445
+00:19:03,600 --> 00:19:07,760
+we'll come over here. We know this first
+
+446
+00:19:06,000 --> 00:19:10,320
+for loop is working, so we don't even
+
+447
+00:19:07,760 --> 00:19:12,880
+need to test it. Let's reload this page.
+
+448
+00:19:10,320 --> 00:19:14,960
+Hit cancel. We know the first for loop
+
+449
+00:19:12,880 --> 00:19:18,240
+is working. Let's double check our
+
+450
+00:19:14,960 --> 00:19:20,880
+second for loop here. So, we'll reload.
+
+451
+00:19:18,240 --> 00:19:22,480
+How many classes this semester? Three.
+
+452
+00:19:20,880 --> 00:19:24,720
+What is the letter grade for class one?
+
+453
+00:19:22,480 --> 00:19:26,480
+A. How many credits was it worth? Three.
+
+454
+00:19:24,720 --> 00:19:28,640
+What is the letter grade for class two?
+
+455
+00:19:26,480 --> 00:19:30,000
+B. How many credits was it worth? Two.
+
+456
+00:19:28,640 --> 00:19:32,559
+What is the letter grade for class
+
+457
+00:19:30,000 --> 00:19:36,000
+three? C. How many credits was it worth?
+
+458
+00:19:32,559 --> 00:19:38,480
+One. All right. So, if we hover over
+
+459
+00:19:36,000 --> 00:19:41,039
+class GPA, we can see that it's storing
+
+460
+00:19:38,480 --> 00:19:44,400
+four, three, and two. It converted the A
+
+461
+00:19:41,039 --> 00:19:46,640
+to a 4.0, the B to a 3.0, and the C to a
+
+462
+00:19:44,400 --> 00:19:49,120
+2..0. and they are being stored in
+
+463
+00:19:46,640 --> 00:19:51,200
+exactly that order. The class that was
+
+464
+00:19:49,120 --> 00:19:52,720
+associated with them, the first one was
+
+465
+00:19:51,200 --> 00:19:54,080
+worth three credits, the second one was
+
+466
+00:19:52,720 --> 00:19:56,640
+worth two credits, and the last one was
+
+467
+00:19:54,080 --> 00:19:58,400
+worth one credit. That means that that
+
+468
+00:19:56,640 --> 00:20:00,559
+part of our loop works successfully.
+
+469
+00:19:58,400 --> 00:20:04,320
+Now, we're about to start the next loop.
+
+470
+00:20:00,559 --> 00:20:09,039
+So, our running GP sum is zero. We do
+
+471
+00:20:04,320 --> 00:20:11,280
+know that um class GPA is at the counter
+
+472
+00:20:09,039 --> 00:20:13,919
+two position. Counter 2 hasn't started
+
+473
+00:20:11,280 --> 00:20:15,520
+yet, but it's going to be zero. Um, we
+
+474
+00:20:13,919 --> 00:20:18,559
+know that that's four and we're going to
+
+475
+00:20:15,520 --> 00:20:20,400
+be multiplying it by the associated spot
+
+476
+00:20:18,559 --> 00:20:23,200
+in the class weights class, which is
+
+477
+00:20:20,400 --> 00:20:26,320
+three. Four * 3 is 12. So once this loop
+
+478
+00:20:23,200 --> 00:20:28,960
+runs, this should go from 0 to 12. So
+
+479
+00:20:26,320 --> 00:20:32,320
+we're going to hit next.
+
+480
+00:20:28,960 --> 00:20:34,080
+And if we hover over running GP sum, we
+
+481
+00:20:32,320 --> 00:20:36,320
+get 12. And then we're going to take the
+
+482
+00:20:34,080 --> 00:20:37,760
+credit sum and add on however many
+
+483
+00:20:36,320 --> 00:20:39,520
+credits are in the zero position, which
+
+484
+00:20:37,760 --> 00:20:42,559
+is three. So credit sum should go from 0
+
+485
+00:20:39,520 --> 00:20:46,240
+to three. When we hit next, credit sum
+
+486
+00:20:42,559 --> 00:20:49,919
+is now three. We'll iterate on our loop.
+
+487
+00:20:46,240 --> 00:20:52,400
+Running GP sum is now 18. Uh, credit sum
+
+488
+00:20:49,919 --> 00:20:55,200
+is now five.
+
+489
+00:20:52,400 --> 00:20:58,080
+And we'll run our loop one more time.
+
+490
+00:20:55,200 --> 00:21:02,880
+And now our GP sum is 20 and our credit
+
+491
+00:20:58,080 --> 00:21:05,760
+sum is six. And then if we hit next, our
+
+492
+00:21:02,880 --> 00:21:08,320
+loop ends. Okay, so we know that that
+
+493
+00:21:05,760 --> 00:21:11,679
+loop works correctly. Let's go continue
+
+494
+00:21:08,320 --> 00:21:13,520
+coding. All right. Now we need to um
+
+495
+00:21:11,679 --> 00:21:18,159
+there was an additional part to this
+
+496
+00:21:13,520 --> 00:21:20,880
+statement. GPA is equal to th those
+
+497
+00:21:18,159 --> 00:21:23,039
+parts divided by that part which means
+
+498
+00:21:20,880 --> 00:21:25,679
+we need to take this running sum and
+
+499
+00:21:23,039 --> 00:21:29,760
+divide it by the credit sum.
+
+500
+00:21:25,679 --> 00:21:33,840
+So to do that we're going to say GPA
+
+501
+00:21:29,760 --> 00:21:37,840
+or final GPA equals the running grade
+
+502
+00:21:33,840 --> 00:21:40,480
+point sum divided by the credit sum.
+
+503
+00:21:37,840 --> 00:21:42,080
+That gives us our final GPA. And then we
+
+504
+00:21:40,480 --> 00:21:45,520
+take that if statement and I'm going to
+
+505
+00:21:42,080 --> 00:21:48,960
+go grab it from my last project. So, I'm
+
+506
+00:21:45,520 --> 00:21:51,200
+going to open up Finder.
+
+507
+00:21:48,960 --> 00:21:53,440
+Going to go to my desktop. I'm going to
+
+508
+00:21:51,200 --> 00:21:56,559
+find the first website folder and I'm
+
+509
+00:21:53,440 --> 00:22:00,200
+going to find where I stored
+
+510
+00:21:56,559 --> 00:22:00,200
+my old code.
+
+511
+00:22:01,039 --> 00:22:03,919
+And then I'm going to grab that if
+
+512
+00:22:02,320 --> 00:22:06,480
+statement. So, I'm going to hit command
+
+513
+00:22:03,919 --> 00:22:09,600
+option I. Um, I'm actually gonna grab it
+
+514
+00:22:06,480 --> 00:22:11,840
+from sources this time. And if I scroll
+
+515
+00:22:09,600 --> 00:22:15,080
+all the way to the bottom, there is my
+
+516
+00:22:11,840 --> 00:22:15,080
+if statement.
+
+517
+00:22:15,200 --> 00:22:21,400
+I'm going to copy it.
+
+518
+00:22:17,679 --> 00:22:21,400
+Come back over here.
+
+519
+00:22:22,320 --> 00:22:26,640
+Paste it.
+
+520
+00:22:25,200 --> 00:22:28,799
+And I accidentally put a back tick
+
+521
+00:22:26,640 --> 00:22:30,880
+there. Get rid of that.
+
+522
+00:22:28,799 --> 00:22:34,080
+All right.
+
+523
+00:22:30,880 --> 00:22:36,559
+So, that should give us our total GPA.
+
+524
+00:22:34,080 --> 00:22:38,400
+Um, and let's see if there's anything
+
+525
+00:22:36,559 --> 00:22:40,000
+else it wanted us to do. It doesn't look
+
+526
+00:22:38,400 --> 00:22:44,000
+like it. So, let's just double check
+
+527
+00:22:40,000 --> 00:22:45,760
+that our GPA calculation is correct. So,
+
+528
+00:22:44,000 --> 00:22:47,760
+we're going to come over here to our
+
+529
+00:22:45,760 --> 00:22:50,080
+array project. Reload the page. How many
+
+530
+00:22:47,760 --> 00:22:52,320
+classes this semester? Three. What is
+
+531
+00:22:50,080 --> 00:22:54,240
+your letter grade for class one? A. How
+
+532
+00:22:52,320 --> 00:22:58,000
+many credits was worth? Three. Letter
+
+533
+00:22:54,240 --> 00:22:59,919
+grade for class 2 B plus two. Letter
+
+534
+00:22:58,000 --> 00:23:03,400
+grade for class three A. And we'll make
+
+535
+00:22:59,919 --> 00:23:03,400
+that three credits.
+
+536
+00:23:03,919 --> 00:23:08,640
+And it broke on this break point. And we
+
+537
+00:23:07,280 --> 00:23:12,000
+actually don't want to test that. We
+
+538
+00:23:08,640 --> 00:23:14,000
+want to test our if statement. Oh, and
+
+539
+00:23:12,000 --> 00:23:15,840
+it can't find a variable total GPA. And
+
+540
+00:23:14,000 --> 00:23:18,480
+that is because we called ours final
+
+541
+00:23:15,840 --> 00:23:20,640
+GPA. So our code broke. Let's go fix
+
+542
+00:23:18,480 --> 00:23:22,559
+that. Right here, you can see why it
+
+543
+00:23:20,640 --> 00:23:24,640
+broke. It said can't find variable total
+
+544
+00:23:22,559 --> 00:23:26,559
+GPA. So we're going to come over here
+
+545
+00:23:24,640 --> 00:23:28,000
+and wherever there's total GPA, we're
+
+546
+00:23:26,559 --> 00:23:29,760
+going to replace it with final GPA.
+
+547
+00:23:28,000 --> 00:23:31,840
+Okay. So, I'm going to hit command F,
+
+548
+00:23:29,760 --> 00:23:34,320
+search for total GPA, and replace it
+
+549
+00:23:31,840 --> 00:23:37,360
+with final GPA. Going to replace all
+
+550
+00:23:34,320 --> 00:23:39,120
+five instances, save my code, and go
+
+551
+00:23:37,360 --> 00:23:41,120
+rerun it. How many classes this
+
+552
+00:23:39,120 --> 00:23:43,120
+semester? Three. Letter grade for class
+
+553
+00:23:41,120 --> 00:23:46,159
+one A was worth three credits. Letter
+
+554
+00:23:43,120 --> 00:23:48,960
+grade for class 2 B+ is worth two
+
+555
+00:23:46,159 --> 00:23:51,360
+credits. Letter grade for class 3 A,
+
+556
+00:23:48,960 --> 00:23:53,679
+three credits. And it says your GPA is
+
+557
+00:23:51,360 --> 00:23:55,120
+3.825. Great job. Your consistent effort
+
+558
+00:23:53,679 --> 00:23:58,000
+is paying off. Keep challenging yourself
+
+559
+00:23:55,120 --> 00:24:00,880
+and building on this progress. So, it
+
+560
+00:23:58,000 --> 00:24:03,600
+looks like everything is working. Um,
+
+561
+00:24:00,880 --> 00:24:05,600
+all I'm going to do now is clean up. So,
+
+562
+00:24:03,600 --> 00:24:07,679
+keep my comments. Those comments are
+
+563
+00:24:05,600 --> 00:24:09,200
+good so far. And I'm just going to
+
+564
+00:24:07,679 --> 00:24:12,720
+change this from convert letter grade
+
+565
+00:24:09,200 --> 00:24:16,640
+one to just convert letter grade um to
+
+566
+00:24:12,720 --> 00:24:21,000
+grade point. Um, right here, I'm going
+
+567
+00:24:16,640 --> 00:24:21,000
+to say store in parallel
+
+568
+00:24:22,240 --> 00:24:27,640
+and then run my for loop calculation.
+
+569
+00:24:28,960 --> 00:24:36,000
+and then if statement for final message.
+
+570
+00:24:34,320 --> 00:24:37,760
+And then I don't need any of these
+
+571
+00:24:36,000 --> 00:24:40,559
+comments because these were just
+
+572
+00:24:37,760 --> 00:24:45,360
+explaining the project.
+
+573
+00:24:40,559 --> 00:24:47,360
+So if we delete those and save our code
+
+574
+00:24:45,360 --> 00:24:48,960
+and give it one last look through, it
+
+575
+00:24:47,360 --> 00:24:50,640
+looks like we are done. And so that
+
+576
+00:24:48,960 --> 00:24:52,960
+wraps up this project. Thanks for
+
+577
+00:24:50,640 --> 00:24:52,960
+watching.

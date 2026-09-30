@@ -1,0 +1,91 @@
+1
+00:00:00,080 --> 00:00:04,640
+Y'all, it is my favorite time. It is
+
+2
+00:00:02,159 --> 00:00:06,319
+time to apply what we just learned. So,
+
+3
+00:00:04,640 --> 00:00:07,680
+I've got a project here for you. So,
+
+4
+00:00:06,319 --> 00:00:09,920
+what I want you to do is I want you to
+
+5
+00:00:07,680 --> 00:00:11,599
+write a bunch of functions. Um, I want
+
+6
+00:00:09,920 --> 00:00:14,719
+you to write add, subtract, multiply,
+
+7
+00:00:11,599 --> 00:00:17,840
+divide, modulus, and power. And each of
+
+8
+00:00:14,719 --> 00:00:20,560
+them should return the result of doing
+
+9
+00:00:17,840 --> 00:00:22,000
+that mathematical operation between two
+
+10
+00:00:20,560 --> 00:00:24,720
+numbers. So, they should each take two
+
+11
+00:00:22,000 --> 00:00:27,519
+numbers. they should then add, subtract,
+
+12
+00:00:24,720 --> 00:00:29,599
+multiply, divide, uh give the remainder
+
+13
+00:00:27,519 --> 00:00:33,120
+in the modulus case, raise it to another
+
+14
+00:00:29,599 --> 00:00:34,399
+power, um all of that. And so that's
+
+15
+00:00:33,120 --> 00:00:36,000
+what each of those functions should do.
+
+16
+00:00:34,399 --> 00:00:37,520
+And then I after that, I want you to
+
+17
+00:00:36,000 --> 00:00:40,160
+write a calculate function that takes
+
+18
+00:00:37,520 --> 00:00:42,879
+two numbers and one of the above
+
+19
+00:00:40,160 --> 00:00:46,239
+functions as parameters. And then I want
+
+20
+00:00:42,879 --> 00:00:47,520
+you to apply the calculation. Call the
+
+21
+00:00:46,239 --> 00:00:49,440
+calculate function with each one of the
+
+22
+00:00:47,520 --> 00:00:53,200
+functions previously mentioned and alert
+
+23
+00:00:49,440 --> 00:00:53,200
+the results. Good luck.

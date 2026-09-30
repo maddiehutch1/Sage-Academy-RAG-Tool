@@ -1,0 +1,151 @@
+1
+00:00:00,800 --> 00:00:03,840
+All right. Now that you understand the
+
+2
+00:00:02,399 --> 00:00:05,839
+different types of variables, we're
+
+3
+00:00:03,840 --> 00:00:07,600
+going to talk about input and output. In
+
+4
+00:00:05,839 --> 00:00:09,599
+programming, basically everything
+
+5
+00:00:07,600 --> 00:00:12,480
+happens by taking some input, doing some
+
+6
+00:00:09,599 --> 00:00:14,240
+work, and giving back some output. So,
+
+7
+00:00:12,480 --> 00:00:16,880
+we're going to talk about how to do
+
+8
+00:00:14,240 --> 00:00:19,039
+input and output. I'm going to show you
+
+9
+00:00:16,880 --> 00:00:20,880
+two simple types of output and one
+
+10
+00:00:19,039 --> 00:00:22,000
+simple type of input for the first half
+
+11
+00:00:20,880 --> 00:00:23,680
+of the course. And we're going to use
+
+12
+00:00:22,000 --> 00:00:26,480
+those pretty much exclusively for the
+
+13
+00:00:23,680 --> 00:00:28,880
+first half. After we've learned most of
+
+14
+00:00:26,480 --> 00:00:30,320
+the do work portion of programming, then
+
+15
+00:00:28,880 --> 00:00:31,679
+we'll talk more in depth about different
+
+16
+00:00:30,320 --> 00:00:33,280
+types of input and different types of
+
+17
+00:00:31,679 --> 00:00:34,960
+output. But to start, we're just going
+
+18
+00:00:33,280 --> 00:00:37,360
+to keep the input and output simple. So,
+
+19
+00:00:34,960 --> 00:00:39,440
+I'm going to teach you two outputs, one
+
+20
+00:00:37,360 --> 00:00:41,680
+input, but just know you could swap them
+
+21
+00:00:39,440 --> 00:00:42,960
+for any type of input or output in your
+
+22
+00:00:41,680 --> 00:00:44,719
+program, and your program would work
+
+23
+00:00:42,960 --> 00:00:46,719
+just about the same. So, some versions
+
+24
+00:00:44,719 --> 00:00:48,079
+of output, you could maybe send it to a
+
+25
+00:00:46,719 --> 00:00:50,160
+printer, you could display it on the
+
+26
+00:00:48,079 --> 00:00:52,000
+screen. Um, there's a lot of different
+
+27
+00:00:50,160 --> 00:00:53,120
+versions of output. Um, there's a lot of
+
+28
+00:00:52,000 --> 00:00:54,320
+different versions of input. You could
+
+29
+00:00:53,120 --> 00:00:56,719
+get input from the keyboard. You could
+
+30
+00:00:54,320 --> 00:00:58,559
+get input from the mouse. You could get
+
+31
+00:00:56,719 --> 00:01:00,160
+input from someone talking into a
+
+32
+00:00:58,559 --> 00:01:02,239
+microphone. All of these different
+
+33
+00:01:00,160 --> 00:01:04,000
+versions of input can be replaced for
+
+34
+00:01:02,239 --> 00:01:05,680
+the simple one I'm going to teach you.
+
+35
+00:01:04,000 --> 00:01:06,960
+Um, but for now we're going to keep it
+
+36
+00:01:05,680 --> 00:01:09,119
+simple and we're just going to talk
+
+37
+00:01:06,960 --> 00:01:12,159
+about simple ways of doing input and
+
+38
+00:01:09,119 --> 00:01:12,159
+simple ways of doing output.

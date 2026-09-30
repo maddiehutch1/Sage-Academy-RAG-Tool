@@ -1,0 +1,191 @@
+1
+00:00:00,800 --> 00:00:04,000
+Okay, this section may feel like it's a
+
+2
+00:00:02,960 --> 00:00:05,359
+bunch of different things jammed
+
+3
+00:00:04,000 --> 00:00:06,720
+together. So, this video is to kind of
+
+4
+00:00:05,359 --> 00:00:08,160
+help tie together all the things that
+
+5
+00:00:06,720 --> 00:00:10,320
+we're going to be talking about. When
+
+6
+00:00:08,160 --> 00:00:11,519
+you do software development, uh, full
+
+7
+00:00:10,320 --> 00:00:13,440
+stack development, when you are
+
+8
+00:00:11,519 --> 00:00:14,880
+programming, um, oftentimes you will
+
+9
+00:00:13,440 --> 00:00:16,800
+find yourself using libraries and
+
+10
+00:00:14,880 --> 00:00:18,560
+functions that other people wrote. Um,
+
+11
+00:00:16,800 --> 00:00:20,560
+and this is going to cover several of
+
+12
+00:00:18,560 --> 00:00:22,000
+those. Um, some of them are going to
+
+13
+00:00:20,560 --> 00:00:23,439
+cover libraries that you have to bring
+
+14
+00:00:22,000 --> 00:00:25,039
+into your code, and others are going to
+
+15
+00:00:23,439 --> 00:00:26,400
+cover libraries that are pre-built into
+
+16
+00:00:25,039 --> 00:00:28,960
+the browser that you can just go ahead
+
+17
+00:00:26,400 --> 00:00:30,720
+and access. Um, but why do we like
+
+18
+00:00:28,960 --> 00:00:33,520
+libraries? Well, because libraries make
+
+19
+00:00:30,720 --> 00:00:35,440
+it faster to develop our code. If you
+
+20
+00:00:33,520 --> 00:00:37,040
+have a problem, um, chances are someone
+
+21
+00:00:35,440 --> 00:00:38,399
+else has encountered that problem and
+
+22
+00:00:37,040 --> 00:00:40,879
+they've probably built a library to make
+
+23
+00:00:38,399 --> 00:00:43,040
+your life easier. So, for example, we've
+
+24
+00:00:40,879 --> 00:00:44,640
+already used one of those. Um, getting
+
+25
+00:00:43,040 --> 00:00:46,640
+data from a server used to be really,
+
+26
+00:00:44,640 --> 00:00:48,160
+really hard. Um, and you used to have to
+
+27
+00:00:46,640 --> 00:00:50,000
+do a whole bunch of callbacks nested
+
+28
+00:00:48,160 --> 00:00:51,280
+together. Then someone came along and
+
+29
+00:00:50,000 --> 00:00:52,960
+built fetch so that we could take
+
+30
+00:00:51,280 --> 00:00:54,719
+advantage of promises and it's much
+
+31
+00:00:52,960 --> 00:00:57,360
+easier to fetch data now because someone
+
+32
+00:00:54,719 --> 00:00:59,520
+built that. And if you are trying to
+
+33
+00:00:57,360 --> 00:01:01,359
+securely store passwords, someone built
+
+34
+00:00:59,520 --> 00:01:02,879
+a library for that. There are a lot of
+
+35
+00:01:01,359 --> 00:01:05,040
+libraries that make your life easier.
+
+36
+00:01:02,879 --> 00:01:07,520
+Why do we like libraries? Because they
+
+37
+00:01:05,040 --> 00:01:09,280
+make our code faster. Um, we can just
+
+38
+00:01:07,520 --> 00:01:10,880
+use someone else's code and it doesn't
+
+39
+00:01:09,280 --> 00:01:12,799
+take us as long to build something. The
+
+40
+00:01:10,880 --> 00:01:15,600
+downside is that if someone upgrades the
+
+41
+00:01:12,799 --> 00:01:17,119
+library, it might break your code or
+
+42
+00:01:15,600 --> 00:01:19,200
+they could start charging money to use
+
+43
+00:01:17,119 --> 00:01:20,640
+the library and then now you're stuck
+
+44
+00:01:19,200 --> 00:01:22,159
+either paying them or writing it from
+
+45
+00:01:20,640 --> 00:01:24,159
+scratch. Um, so those are some
+
+46
+00:01:22,159 --> 00:01:26,240
+trade-offs you have to consider. But in
+
+47
+00:01:24,159 --> 00:01:30,720
+general, the benefits of using a library
+
+48
+00:01:26,240 --> 00:01:30,720
+far outweigh the costs of using the

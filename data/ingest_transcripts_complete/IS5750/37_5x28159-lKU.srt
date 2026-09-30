@@ -1,0 +1,175 @@
+1
+00:00:01,040 --> 00:00:04,960
+Okay, so you may be wondering why on
+
+2
+00:00:03,040 --> 00:00:07,919
+earth do we spend that much time talking
+
+3
+00:00:04,960 --> 00:00:09,679
+about text and numbers? Well, to answer
+
+4
+00:00:07,919 --> 00:00:12,320
+your question, here are some things you
+
+5
+00:00:09,679 --> 00:00:15,839
+can do with it. Um, everything that you
+
+6
+00:00:12,320 --> 00:00:19,520
+do on the internet is a string.
+
+7
+00:00:15,839 --> 00:00:22,560
+Everything. So when you visit YouTube
+
+8
+00:00:19,520 --> 00:00:25,359
+and it pulls back the HTML page, that's
+
+9
+00:00:22,560 --> 00:00:27,680
+a string. If you know how to manipulate
+
+10
+00:00:25,359 --> 00:00:30,160
+strings, you can manipulate how that
+
+11
+00:00:27,680 --> 00:00:32,079
+works. Um,
+
+12
+00:00:30,160 --> 00:00:34,000
+I had an internship. They said, "Hey, we
+
+13
+00:00:32,079 --> 00:00:36,719
+need you to update these 100 HTML
+
+14
+00:00:34,000 --> 00:00:37,920
+pages." And I noticed that there was a
+
+15
+00:00:36,719 --> 00:00:40,559
+pattern with how they wanted me to
+
+16
+00:00:37,920 --> 00:00:43,440
+implement that. So, I wrote some string
+
+17
+00:00:40,559 --> 00:00:45,120
+manipulation and I ran my program and
+
+18
+00:00:43,440 --> 00:00:48,160
+six minutes later, all 100 pages were
+
+19
+00:00:45,120 --> 00:00:50,160
+updated. So, if you too like to be
+
+20
+00:00:48,160 --> 00:00:52,480
+faster at how you navigate the internet
+
+21
+00:00:50,160 --> 00:00:53,840
+and have superpowers, then string
+
+22
+00:00:52,480 --> 00:00:57,039
+manipulation is something you'll want to
+
+23
+00:00:53,840 --> 00:00:59,760
+be really good at. Um, and then the
+
+24
+00:00:57,039 --> 00:01:01,840
+other reason that we spent so long on
+
+25
+00:00:59,760 --> 00:01:05,840
+numbers is because just about everything
+
+26
+00:01:01,840 --> 00:01:07,920
+you work with is a number. Um, if you
+
+27
+00:01:05,840 --> 00:01:10,080
+are programming a financial system,
+
+28
+00:01:07,920 --> 00:01:12,080
+financial systems working with numbers.
+
+29
+00:01:10,080 --> 00:01:13,520
+If you are programming something that
+
+30
+00:01:12,080 --> 00:01:16,000
+allows people to schedule things on
+
+31
+00:01:13,520 --> 00:01:17,920
+their calendar, numbers. If you are
+
+32
+00:01:16,000 --> 00:01:20,000
+programming a shopping list, there are
+
+33
+00:01:17,920 --> 00:01:21,360
+probably numbers involved with that. So,
+
+34
+00:01:20,000 --> 00:01:23,280
+you really needed to be good at working
+
+35
+00:01:21,360 --> 00:01:24,880
+with both strings and numbers because in
+
+36
+00:01:23,280 --> 00:01:26,240
+almost everything you do, you will be
+
+37
+00:01:24,880 --> 00:01:27,680
+working with strings and numbers. So,
+
+38
+00:01:26,240 --> 00:01:29,360
+hopefully that explains why we spent so
+
+39
+00:01:27,680 --> 00:01:30,799
+long on that. We are now about to get
+
+40
+00:01:29,360 --> 00:01:32,560
+into the really exciting stuff and we
+
+41
+00:01:30,799 --> 00:01:34,479
+are going to talk about selection and it
+
+42
+00:01:32,560 --> 00:01:36,960
+just goes uphill from here. Everything
+
+43
+00:01:34,479 --> 00:01:39,920
+is so much fun from fun from here.
+
+44
+00:01:36,960 --> 00:01:39,920
+decided to get into it with

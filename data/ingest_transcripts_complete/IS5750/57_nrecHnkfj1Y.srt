@@ -1,0 +1,215 @@
+1
+00:00:00,160 --> 00:00:04,880
+All right, it's project time. So, what
+
+2
+00:00:03,520 --> 00:00:06,319
+we're going to create here is a number
+
+3
+00:00:04,880 --> 00:00:08,080
+guessesser. So, I want you to write a
+
+4
+00:00:06,319 --> 00:00:09,920
+program in JavaScript where the computer
+
+5
+00:00:08,080 --> 00:00:11,920
+tries to guess a number that the user
+
+6
+00:00:09,920 --> 00:00:13,759
+has in their head. Follow the steps
+
+7
+00:00:11,920 --> 00:00:14,799
+below to complete the assignment. You're
+
+8
+00:00:13,759 --> 00:00:15,920
+going to welcome the user with a
+
+9
+00:00:14,799 --> 00:00:17,279
+message. You're going to ask them to
+
+10
+00:00:15,920 --> 00:00:19,279
+provide you the top number in the range
+
+11
+00:00:17,279 --> 00:00:21,039
+and the bottom number in the range. Um,
+
+12
+00:00:19,279 --> 00:00:23,439
+then you want to display an alert to let
+
+13
+00:00:21,039 --> 00:00:24,720
+them know the game has started. And then
+
+14
+00:00:23,439 --> 00:00:26,800
+once you've done that, you want to have
+
+15
+00:00:24,720 --> 00:00:29,119
+the computer guess the middle number in
+
+16
+00:00:26,800 --> 00:00:31,039
+the current range. So, if they said, uh,
+
+17
+00:00:29,119 --> 00:00:34,000
+the current range is 1 to 100, then
+
+18
+00:00:31,039 --> 00:00:35,360
+you'd say, have the computer guess 50.
+
+19
+00:00:34,000 --> 00:00:36,800
+And then you're going to prompt the user
+
+20
+00:00:35,360 --> 00:00:38,640
+to see if the guess is correct. They
+
+21
+00:00:36,800 --> 00:00:41,120
+should respond with H if the guess is
+
+22
+00:00:38,640 --> 00:00:43,360
+too high, L if the guess is too low, or
+
+23
+00:00:41,120 --> 00:00:44,719
+C if the guess is correct. And then you
+
+24
+00:00:43,360 --> 00:00:47,039
+want to make sure to normalize your
+
+25
+00:00:44,719 --> 00:00:48,480
+input. So, if they give you a capital C,
+
+26
+00:00:47,039 --> 00:00:51,360
+then you still want to count that as a
+
+27
+00:00:48,480 --> 00:00:52,879
+lowercase C. Um, it's in one of the
+
+28
+00:00:51,360 --> 00:00:56,000
+previous videos, but if you need a hint,
+
+29
+00:00:52,879 --> 00:00:57,840
+check W3 schools. Then based on their
+
+30
+00:00:56,000 --> 00:01:00,559
+response, adjust your range accordingly.
+
+31
+00:00:57,840 --> 00:01:03,440
+So if you guessed 50 out of the range of
+
+32
+00:01:00,559 --> 00:01:05,360
+1 to 100 and they said too high, then
+
+33
+00:01:03,440 --> 00:01:09,280
+you automatically know that the number
+
+34
+00:01:05,360 --> 00:01:10,880
+is between 50 and one. So what you'll do
+
+35
+00:01:09,280 --> 00:01:12,400
+is you'll say, okay, the new range is
+
+36
+00:01:10,880 --> 00:01:14,640
+between 50 and one. So then you'll guess
+
+37
+00:01:12,400 --> 00:01:16,240
+25. And then as long as you keep
+
+38
+00:01:14,640 --> 00:01:18,560
+guessing the middle of the range, it'll
+
+39
+00:01:16,240 --> 00:01:21,280
+keep drastically reducing the amount of
+
+40
+00:01:18,560 --> 00:01:22,960
+possible answers. So, if it's too high,
+
+41
+00:01:21,280 --> 00:01:25,040
+the new maximum becomes whatever the
+
+42
+00:01:22,960 --> 00:01:26,479
+computer guessed last. If it's too low,
+
+43
+00:01:25,040 --> 00:01:28,320
+the new minimum becomes whatever the
+
+44
+00:01:26,479 --> 00:01:30,479
+computer guessed last. And then you'll
+
+45
+00:01:28,320 --> 00:01:32,560
+repeat the process um of guessing the
+
+46
+00:01:30,479 --> 00:01:34,320
+middle number and adjusting the range
+
+47
+00:01:32,560 --> 00:01:37,280
+until the computer gets the correct
+
+48
+00:01:34,320 --> 00:01:38,560
+number. Once it gets the correct number,
+
+49
+00:01:37,280 --> 00:01:40,640
+I want you to display the number of
+
+50
+00:01:38,560 --> 00:01:42,079
+attempts it took. And as usual, make
+
+51
+00:01:40,640 --> 00:01:44,079
+sure you have the correct comments
+
+52
+00:01:42,079 --> 00:01:47,040
+throughout your code um to make sure
+
+53
+00:01:44,079 --> 00:01:49,680
+that it's documented for future use.
+
+54
+00:01:47,040 --> 00:01:49,680
+Good luck.

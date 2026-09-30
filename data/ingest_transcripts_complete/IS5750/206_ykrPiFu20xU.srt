@@ -1,0 +1,471 @@
+1
+00:00:00,320 --> 00:00:06,240
+All right. Have you ever thought that
+
+2
+00:00:02,800 --> 00:00:09,120
+JavaScript was unnecessarily wordy? For
+
+3
+00:00:06,240 --> 00:00:11,440
+example, look at this. Um, in this code,
+
+4
+00:00:09,120 --> 00:00:14,880
+I am saying go out and find the input
+
+5
+00:00:11,440 --> 00:00:16,880
+tag and then add an event listener um
+
+6
+00:00:14,880 --> 00:00:18,720
+for the key up and then call the handle
+
+7
+00:00:16,880 --> 00:00:20,800
+change function. In the handle change
+
+8
+00:00:18,720 --> 00:00:23,680
+function, I want you to go find the P
+
+9
+00:00:20,800 --> 00:00:26,320
+tag and set its inner HTML equal to the
+
+10
+00:00:23,680 --> 00:00:28,960
+input tags value. all of that so that I
+
+11
+00:00:26,320 --> 00:00:31,359
+could say hello world and have it appear
+
+12
+00:00:28,960 --> 00:00:34,399
+on screen. If you thought that was
+
+13
+00:00:31,359 --> 00:00:35,840
+unnecessarily um long to type out, I've
+
+14
+00:00:34,399 --> 00:00:37,440
+got good news for you. There is a
+
+15
+00:00:35,840 --> 00:00:40,559
+library called jQuery that actually
+
+16
+00:00:37,440 --> 00:00:44,079
+makes a lot of JavaScript um syntax much
+
+17
+00:00:40,559 --> 00:00:47,360
+shorter. So um if you want to use
+
+18
+00:00:44,079 --> 00:00:51,879
+jQuery, um you can see right here is a
+
+19
+00:00:47,360 --> 00:00:51,879
+URL. Uh this is on cdnjs.com/jquery.
+
+20
+00:00:52,160 --> 00:00:56,160
+This is the latest version of jQuery.
+
+21
+00:00:54,399 --> 00:00:57,520
+And to bring it in, we just have to add
+
+22
+00:00:56,160 --> 00:01:00,000
+our script tag just like we would have
+
+23
+00:00:57,520 --> 00:01:03,600
+done for Axios. And then we'll do source
+
+24
+00:01:00,000 --> 00:01:07,360
+and we'll paste in jQuery.
+
+25
+00:01:03,600 --> 00:01:09,680
+So why is jQuery nice? Well, to do this
+
+26
+00:01:07,360 --> 00:01:11,600
+exact same thing, let's do it using
+
+27
+00:01:09,680 --> 00:01:13,520
+jQuery syntax. Rather than having to
+
+28
+00:01:11,600 --> 00:01:17,200
+type the word document, jQuery lets us
+
+29
+00:01:13,520 --> 00:01:19,600
+use the dollar sign. The dollar sign um
+
+30
+00:01:17,200 --> 00:01:21,600
+does and then parenthesis does basically
+
+31
+00:01:19,600 --> 00:01:23,840
+the exact same thing as document.query
+
+32
+00:01:21,600 --> 00:01:25,759
+selector. So rather than having to type
+
+33
+00:01:23,840 --> 00:01:28,159
+all of that,
+
+34
+00:01:25,759 --> 00:01:29,360
+I just type that. And well, what am I
+
+35
+00:01:28,159 --> 00:01:32,000
+wanting to select? Well, I want to find
+
+36
+00:01:29,360 --> 00:01:33,439
+the input. Then what do I want to do?
+
+37
+00:01:32,000 --> 00:01:35,200
+Well, the next thing I'm doing over here
+
+38
+00:01:33,439 --> 00:01:39,280
+is I'm adding an event listener for key
+
+39
+00:01:35,200 --> 00:01:41,280
+up. And here I can say key up. And it's
+
+40
+00:01:39,280 --> 00:01:45,680
+a function that will attach a function
+
+41
+00:01:41,280 --> 00:01:47,200
+to it um as soon as this line of code
+
+42
+00:01:45,680 --> 00:01:50,000
+runs. So what it's doing is it's saying
+
+43
+00:01:47,200 --> 00:01:52,880
+go find the input box and attach a key
+
+44
+00:01:50,000 --> 00:01:55,840
+up function.
+
+45
+00:01:52,880 --> 00:01:58,000
+And if we wanted
+
+46
+00:01:55,840 --> 00:02:00,719
+this line of code on line 15 to be the
+
+47
+00:01:58,000 --> 00:02:03,840
+same as line 17, I could just put handle
+
+48
+00:02:00,719 --> 00:02:06,240
+change. And tada, I've written line 17
+
+49
+00:02:03,840 --> 00:02:09,759
+on line 15. And they work exactly the
+
+50
+00:02:06,240 --> 00:02:11,520
+same. Um, but because it's so short, I
+
+51
+00:02:09,759 --> 00:02:13,200
+figure why not keep going. So, let's
+
+52
+00:02:11,520 --> 00:02:16,440
+just actually define the change function
+
+53
+00:02:13,200 --> 00:02:16,440
+in here.
+
+54
+00:02:16,480 --> 00:02:20,800
+And well, now in this handle change
+
+55
+00:02:18,720 --> 00:02:23,440
+function, I need to go find the P tag.
+
+56
+00:02:20,800 --> 00:02:25,120
+Well, how do I find the P tag?
+
+57
+00:02:23,440 --> 00:02:27,840
+Tada!
+
+58
+00:02:25,120 --> 00:02:29,840
+I found the P tag. Well, I want to set
+
+59
+00:02:27,840 --> 00:02:32,160
+its inner HTML. Well, the way you do
+
+60
+00:02:29,840 --> 00:02:33,920
+that is you call an HTML function. If I
+
+61
+00:02:32,160 --> 00:02:36,480
+just call this function, it will return
+
+62
+00:02:33,920 --> 00:02:38,720
+the HTML that's inside of the P tag. If
+
+63
+00:02:36,480 --> 00:02:40,239
+I want to set the HTML, then I need to
+
+64
+00:02:38,720 --> 00:02:41,760
+pass in some information to this
+
+65
+00:02:40,239 --> 00:02:44,080
+function. Well, what do I want to pass
+
+66
+00:02:41,760 --> 00:02:47,440
+into this function? Well, I want to pass
+
+67
+00:02:44,080 --> 00:02:50,080
+in the inputs
+
+68
+00:02:47,440 --> 00:02:52,000
+value. So what I'm doing is I'm saying
+
+69
+00:02:50,080 --> 00:02:54,319
+go find the input, grab its value, set
+
+70
+00:02:52,000 --> 00:02:57,280
+the P tags, enter HTML to it whenever
+
+71
+00:02:54,319 --> 00:02:59,200
+the key up is pushed. And so now on
+
+72
+00:02:57,280 --> 00:03:01,120
+those few lines of code, I've written
+
+73
+00:02:59,200 --> 00:03:03,280
+the exact same thing as all of those
+
+74
+00:03:01,120 --> 00:03:05,519
+lines of code. So if I comment it out
+
+75
+00:03:03,280 --> 00:03:08,560
+and I come over to my document, I can
+
+76
+00:03:05,519 --> 00:03:12,400
+say hello world and it types out exactly
+
+77
+00:03:08,560 --> 00:03:14,560
+like we expected. Some caveats here.
+
+78
+00:03:12,400 --> 00:03:16,800
+HTML does suffer from the same thing as
+
+79
+00:03:14,560 --> 00:03:20,959
+this.in inner HTML, which means if I
+
+80
+00:03:16,800 --> 00:03:22,879
+typed button um and I gave it an on
+
+81
+00:03:20,959 --> 00:03:26,879
+click
+
+82
+00:03:22,879 --> 00:03:28,720
+um event where it alerted one and then I
+
+83
+00:03:26,879 --> 00:03:31,280
+close it and I say hello and then I
+
+84
+00:03:28,720 --> 00:03:33,680
+close off the button.
+
+85
+00:03:31,280 --> 00:03:36,239
+Uh this button will run the outside
+
+86
+00:03:33,680 --> 00:03:38,640
+JavaScript. So this HTML doesn't handle
+
+87
+00:03:36,239 --> 00:03:40,319
+sanitization. Um, so you'll have to be
+
+88
+00:03:38,640 --> 00:03:42,319
+aware of all of the same things that you
+
+89
+00:03:40,319 --> 00:03:44,480
+were aware with in JavaScript. But
+
+90
+00:03:42,319 --> 00:03:46,879
+jQuery can allow you to shorten
+
+91
+00:03:44,480 --> 00:03:48,799
+drastically long JavaScript down to just
+
+92
+00:03:46,879 --> 00:03:50,560
+a few lines. So rather than doing
+
+93
+00:03:48,799 --> 00:03:52,480
+document.query selector, you can use
+
+94
+00:03:50,560 --> 00:03:54,720
+this dollar sign. Rather than doing
+
+95
+00:03:52,480 --> 00:03:58,159
+addeventlister key up, you can just say
+
+96
+00:03:54,720 --> 00:04:00,319
+key up. And then rather than saying html
+
+97
+00:03:58,159 --> 00:04:02,480
+equals, you can just call the HTML
+
+98
+00:04:00,319 --> 00:04:03,920
+function rather than typing out value.
+
+99
+00:04:02,480 --> 00:04:07,680
+Admittedly, that's about the same number
+
+100
+00:04:03,920 --> 00:04:09,120
+of characters because um uh you add the
+
+101
+00:04:07,680 --> 00:04:11,360
+parenthesis instead of finishing the
+
+102
+00:04:09,120 --> 00:04:13,360
+word value. But still, you get the
+
+103
+00:04:11,360 --> 00:04:15,120
+picture. JQuery can make your life a lot
+
+104
+00:04:13,360 --> 00:04:16,639
+easier and it can make your stuff a lot
+
+105
+00:04:15,120 --> 00:04:18,720
+shorter.
+
+106
+00:04:16,639 --> 00:04:20,000
+Sometimes jQuery isn't used because it's
+
+107
+00:04:18,720 --> 00:04:22,720
+not all that difficult to type
+
+108
+00:04:20,000 --> 00:04:24,960
+document.query selector. And one of the
+
+109
+00:04:22,720 --> 00:04:27,199
+other reasons jQuery was created was to
+
+110
+00:04:24,960 --> 00:04:30,320
+handle the difficulty of fetching data.
+
+111
+00:04:27,199 --> 00:04:32,320
+But now with Axios and fetch, um, that's
+
+112
+00:04:30,320 --> 00:04:34,479
+actually not as hard as it used to be.
+
+113
+00:04:32,320 --> 00:04:36,880
+However, all of that being said, jQuery
+
+114
+00:04:34,479 --> 00:04:38,400
+can save you some lines of code. And so
+
+115
+00:04:36,880 --> 00:04:41,040
+if you want to use it, you'll just go
+
+116
+00:04:38,400 --> 00:04:43,040
+out, grab the script tag, and then you
+
+117
+00:04:41,040 --> 00:04:45,520
+should be able to use jQuery syntax in
+
+118
+00:04:43,040 --> 00:04:45,520
+your code.

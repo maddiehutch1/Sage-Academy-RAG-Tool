@@ -1,0 +1,291 @@
+1
+00:00:00,080 --> 00:00:03,679
+Well, a function is really boring if it
+
+2
+00:00:02,000 --> 00:00:05,600
+doesn't actually do anything. So, let's
+
+3
+00:00:03,679 --> 00:00:10,639
+make this function do something. So, I'm
+
+4
+00:00:05,600 --> 00:00:14,960
+going to say let my num one equal 10.
+
+5
+00:00:10,639 --> 00:00:20,279
+And I'll say let my num 2 equal 20. And
+
+6
+00:00:14,960 --> 00:00:20,279
+then I'm going to say um
+
+7
+00:00:20,560 --> 00:00:28,400
+let result equal my num one plus my num
+
+8
+00:00:26,320 --> 00:00:32,399
+two.
+
+9
+00:00:28,400 --> 00:00:35,200
+And now if we save that then we can call
+
+10
+00:00:32,399 --> 00:00:39,440
+this add two numbers function and then
+
+11
+00:00:35,200 --> 00:00:40,960
+we can alert result.
+
+12
+00:00:39,440 --> 00:00:44,120
+All right let's see what happens when we
+
+13
+00:00:40,960 --> 00:00:44,120
+do that.
+
+14
+00:00:47,440 --> 00:00:52,960
+So I'm going to bring this here.
+
+15
+00:00:50,399 --> 00:00:56,879
+I'm going to reload the page. Nothing's
+
+16
+00:00:52,960 --> 00:00:59,760
+happening. Why is that? So if I inspect
+
+17
+00:00:56,879 --> 00:01:03,280
+this page and I go to the console tab,
+
+18
+00:00:59,760 --> 00:01:05,920
+it said result is not defined. Weird
+
+19
+00:01:03,280 --> 00:01:08,720
+because result is defined right here.
+
+20
+00:01:05,920 --> 00:01:11,119
+Well, um in order to understand that, we
+
+21
+00:01:08,720 --> 00:01:13,600
+have to talk a little bit about scope.
+
+22
+00:01:11,119 --> 00:01:15,520
+So variables only live for a certain
+
+23
+00:01:13,600 --> 00:01:17,840
+amount of time. When you create
+
+24
+00:01:15,520 --> 00:01:19,759
+variables, um they take up space on your
+
+25
+00:01:17,840 --> 00:01:21,920
+computer. Um your computer only has so
+
+26
+00:01:19,759 --> 00:01:23,119
+much memory. um you'll have to look at
+
+27
+00:01:21,920 --> 00:01:24,479
+your computer to determine how much
+
+28
+00:01:23,119 --> 00:01:26,640
+memory it has, but your computer only
+
+29
+00:01:24,479 --> 00:01:28,640
+has so much memory. If you continue
+
+30
+00:01:26,640 --> 00:01:30,960
+filling that memory with variables,
+
+31
+00:01:28,640 --> 00:01:32,799
+eventually you will run out of space.
+
+32
+00:01:30,960 --> 00:01:35,280
+And you'll notice we never delete a
+
+33
+00:01:32,799 --> 00:01:37,280
+variable out of memory. So, if you
+
+34
+00:01:35,280 --> 00:01:38,720
+create a ton of variables, why isn't
+
+35
+00:01:37,280 --> 00:01:41,360
+your computer crashing when it runs out
+
+36
+00:01:38,720 --> 00:01:45,759
+of memory? Well, the answer to that
+
+37
+00:01:41,360 --> 00:01:48,000
+question um is the garbage collector. So
+
+38
+00:01:45,759 --> 00:01:49,680
+the garbage collector goes through and
+
+39
+00:01:48,000 --> 00:01:53,680
+it looks for variables that it knows
+
+40
+00:01:49,680 --> 00:01:56,399
+that you cannot access anymore. So when
+
+41
+00:01:53,680 --> 00:01:59,200
+you create a variable using let as the
+
+42
+00:01:56,399 --> 00:02:01,439
+keyword, it creates the variable within
+
+43
+00:01:59,200 --> 00:02:03,280
+the code block. So as long as it's
+
+44
+00:02:01,439 --> 00:02:05,360
+within these curly braces, you can
+
+45
+00:02:03,280 --> 00:02:07,040
+access that variable. As soon as it goes
+
+46
+00:02:05,360 --> 00:02:10,080
+outside of those curly braces, you can
+
+47
+00:02:07,040 --> 00:02:12,480
+no longer access that variable. So, as
+
+48
+00:02:10,080 --> 00:02:15,840
+long as I'm in here, I could alert
+
+49
+00:02:12,480 --> 00:02:18,319
+results. But as soon as I come out here,
+
+50
+00:02:15,840 --> 00:02:20,160
+I can't access results anymore because
+
+51
+00:02:18,319 --> 00:02:22,959
+the garbage collector came along and
+
+52
+00:02:20,160 --> 00:02:25,280
+looked at it and said, "Oh, you said I'm
+
+53
+00:02:22,959 --> 00:02:28,319
+only going to use result in these curly
+
+54
+00:02:25,280 --> 00:02:29,760
+braces." And so, as soon as you're out
+
+55
+00:02:28,319 --> 00:02:31,680
+of those curly braces, I'm going to go
+
+56
+00:02:29,760 --> 00:02:33,200
+ahead and delete result. So, it's going
+
+57
+00:02:31,680 --> 00:02:36,480
+through and automatically cleaning up
+
+58
+00:02:33,200 --> 00:02:38,160
+after you. Um, it's wonderful. Um, but
+
+59
+00:02:36,480 --> 00:02:40,160
+sometimes it can be frustrating when you
+
+60
+00:02:38,160 --> 00:02:43,040
+want to access a variable and it's stuck
+
+61
+00:02:40,160 --> 00:02:44,640
+somewhere else. Um, so if we want to
+
+62
+00:02:43,040 --> 00:02:48,400
+access that results variable that we
+
+63
+00:02:44,640 --> 00:02:50,239
+just created, then um, we need some way
+
+64
+00:02:48,400 --> 00:02:53,120
+of getting it out of this function and
+
+65
+00:02:50,239 --> 00:02:55,920
+back into our main program. Right now,
+
+66
+00:02:53,120 --> 00:02:58,879
+I've shown you how to do some work. So,
+
+67
+00:02:55,920 --> 00:03:00,800
+you can um, add numbers. Basically, the
+
+68
+00:02:58,879 --> 00:03:03,040
+doing work part just involves writing
+
+69
+00:03:00,800 --> 00:03:05,200
+code that you've already learned between
+
+70
+00:03:03,040 --> 00:03:07,440
+these curly braces. In the next video,
+
+71
+00:03:05,200 --> 00:03:10,239
+I'll show you how to access the result
+
+72
+00:03:07,440 --> 00:03:13,920
+of doing that work outside of those
+
+73
+00:03:10,239 --> 00:03:13,920
+curly braces and in your main

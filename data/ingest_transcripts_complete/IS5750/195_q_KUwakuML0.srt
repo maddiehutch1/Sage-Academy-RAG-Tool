@@ -1,0 +1,283 @@
+1
+00:00:00,080 --> 00:00:03,679
+Okay, so let's say I have a little bit
+
+2
+00:00:02,000 --> 00:00:05,279
+more complicated data. Remember I said
+
+3
+00:00:03,679 --> 00:00:06,879
+that everything stores as a string. So
+
+4
+00:00:05,279 --> 00:00:10,320
+what happens when I try and store my
+
+5
+00:00:06,879 --> 00:00:14,719
+data? So if I go to local storage and I
+
+6
+00:00:10,320 --> 00:00:18,560
+set an item and we'll call it um my data
+
+7
+00:00:14,719 --> 00:00:22,000
+and um I'll store this object that I've
+
+8
+00:00:18,560 --> 00:00:25,359
+created. If I save that and I come over
+
+9
+00:00:22,000 --> 00:00:29,599
+to the running site um
+
+10
+00:00:25,359 --> 00:00:33,960
+and I look at my application, I can see
+
+11
+00:00:29,599 --> 00:00:33,960
+Oh, I need to reload the page.
+
+12
+00:00:35,680 --> 00:00:40,399
+Oh, my live server is not running. It
+
+13
+00:00:37,440 --> 00:00:43,120
+would help if I ran that. Okay. So if we
+
+14
+00:00:40,399 --> 00:00:45,360
+come over to our page and we inspect it
+
+15
+00:00:43,120 --> 00:00:48,000
+and we look at the application in local
+
+16
+00:00:45,360 --> 00:00:50,879
+storage can see that my data is storing
+
+17
+00:00:48,000 --> 00:00:52,800
+object object. Well that is not very
+
+18
+00:00:50,879 --> 00:00:54,559
+helpful. Um what it did is it tried to
+
+19
+00:00:52,800 --> 00:00:56,160
+take our object and convert it into a
+
+20
+00:00:54,559 --> 00:00:58,719
+string. It didn't know how to do that.
+
+21
+00:00:56,160 --> 00:01:00,640
+So it just said okay it's an object.
+
+22
+00:00:58,719 --> 00:01:02,079
+Let's just store the text object. The
+
+23
+00:01:00,640 --> 00:01:04,400
+problem is when we try and convert this
+
+24
+00:01:02,079 --> 00:01:06,000
+back we can't convert it back into the
+
+25
+00:01:04,400 --> 00:01:08,240
+object. We have lost all of our
+
+26
+00:01:06,000 --> 00:01:10,320
+information. So if we want to store our
+
+27
+00:01:08,240 --> 00:01:13,360
+object, we first have to convert it to a
+
+28
+00:01:10,320 --> 00:01:16,000
+string ourselves. So to do that, what we
+
+29
+00:01:13,360 --> 00:01:20,080
+can do is we can use the JSON tool. So
+
+30
+00:01:16,000 --> 00:01:21,840
+we'll say JSON dot stringify
+
+31
+00:01:20,080 --> 00:01:23,680
+and then we give it the information.
+
+32
+00:01:21,840 --> 00:01:26,400
+What this does is it takes our
+
+33
+00:01:23,680 --> 00:01:30,080
+information and turns this into a string
+
+34
+00:01:26,400 --> 00:01:33,360
+that we can access. So I could say let
+
+35
+00:01:30,080 --> 00:01:36,479
+um my value equal JSON.stringify.
+
+36
+00:01:33,360 --> 00:01:39,119
+And then here we'll set my data equal to
+
+37
+00:01:36,479 --> 00:01:41,920
+my value.
+
+38
+00:01:39,119 --> 00:01:45,759
+Now if we come over, you can see that it
+
+39
+00:01:41,920 --> 00:01:48,079
+put in text the curly braces and then
+
+40
+00:01:45,759 --> 00:01:50,159
+the keys and then the values and it's
+
+41
+00:01:48,079 --> 00:01:53,040
+all there in an object. Well, that's
+
+42
+00:01:50,159 --> 00:01:55,200
+great. Now we can get it out. So um what
+
+43
+00:01:53,040 --> 00:01:56,880
+I'm going to do is I'm going to come
+
+44
+00:01:55,200 --> 00:02:00,960
+over here to the console and I'm going
+
+45
+00:01:56,880 --> 00:02:06,320
+to say local storage.get item. And the
+
+46
+00:02:00,960 --> 00:02:07,920
+item I want to get is my data.
+
+47
+00:02:06,320 --> 00:02:10,640
+And you can see it comes back as a
+
+48
+00:02:07,920 --> 00:02:12,720
+string. Because it's a string, I cannot
+
+49
+00:02:10,640 --> 00:02:17,200
+access it like an object. So I cannot
+
+50
+00:02:12,720 --> 00:02:21,280
+say let my new value equal local
+
+51
+00:02:17,200 --> 00:02:25,280
+storage.get item my data.
+
+52
+00:02:21,280 --> 00:02:27,360
+I cannot say my new value.name name
+
+53
+00:02:25,280 --> 00:02:28,959
+because if I do it's undefined because a
+
+54
+00:02:27,360 --> 00:02:30,640
+string doesn't have a property
+
+55
+00:02:28,959 --> 00:02:32,480
+calledame.
+
+56
+00:02:30,640 --> 00:02:34,480
+If we want to get this back out and turn
+
+57
+00:02:32,480 --> 00:02:37,840
+it back into an object then we have to
+
+58
+00:02:34,480 --> 00:02:40,160
+use the JSON tool again. So coming back
+
+59
+00:02:37,840 --> 00:02:44,319
+over here let's say I wanted to get it
+
+60
+00:02:40,160 --> 00:02:46,160
+out. I could say console.log
+
+61
+00:02:44,319 --> 00:02:50,080
+and then I'll use the JSON tool and then
+
+62
+00:02:46,160 --> 00:02:52,959
+I'll say parse. Parse takes in a JSON
+
+63
+00:02:50,080 --> 00:02:56,319
+string and converts it into an object.
+
+64
+00:02:52,959 --> 00:02:58,480
+So we can say go to local storage and
+
+65
+00:02:56,319 --> 00:03:00,800
+get an item out. The item that we want
+
+66
+00:02:58,480 --> 00:03:02,879
+to get is my data and then we want to
+
+67
+00:03:00,800 --> 00:03:05,040
+parse it and log it. So now if we come
+
+68
+00:03:02,879 --> 00:03:08,720
+over we can see that it logs out an
+
+69
+00:03:05,040 --> 00:03:10,720
+object and we can then access the
+
+70
+00:03:08,720 --> 00:03:12,879
+attributes of this object just like we
+
+71
+00:03:10,720 --> 00:03:12,879
+would
