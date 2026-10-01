@@ -27,7 +27,7 @@ The real playlist URL and course display name are **operator inputs at implement
 2. Phase 1 — YouTube Playlist Ingest
 
 Phase plan and roadmap pair:
-- [Phase 1 plan](2026-09-12-phase-01-youtube-playlist-plan.md) / [roadmap](2026-09-12-phase-01-youtube-playlist-roadmap.md)
+- [Phase 1 plan](complete/2026-09-12-phase-01-youtube-playlist-plan.md) / [roadmap](complete/2026-09-12-phase-01-youtube-playlist-roadmap.md)
 
 Related plans:
 - [Stage 2 high-level plan](2026-09-11-high-level-plan-stage-2.md) (complete)
@@ -92,7 +92,7 @@ Related plans:
 - [x] Branch the frontend player on Kaltura vs YouTube URLs
 - [x] Smoke-test the helper on the real playlist (216 videos prepared; all captions and sidecars validated)
 - [x] Generate files, ingest IS 5750 into local Docker, and confirm the course in the sidebar (216 videos, 559 chunks)
-- [ ] Confirm existing Kaltura courses play from source cards and the modal (iframe URLs verified; player returned "Media stream error" on two archived entries)
+- [x] Confirm existing Kaltura playback in production (project owner confirmation, 2026-09-30)
 
 **Exit criteria**
 - Helper writes SRT + sidecars that `ingest.py` accepts without format changes
@@ -100,7 +100,7 @@ Related plans:
 - Kaltura playback is unchanged
 - Videos with no captions are skipped and listed, not silently empty-ingested
 
-See [Phase 1 plan](2026-09-12-phase-01-youtube-playlist-plan.md) and [roadmap](2026-09-12-phase-01-youtube-playlist-roadmap.md).
+See [Phase 1 plan](complete/2026-09-12-phase-01-youtube-playlist-plan.md) and [roadmap](complete/2026-09-12-phase-01-youtube-playlist-roadmap.md).
 
 ## Expected Outcome
 By the end of Stage 3, one additional course whose videos live on YouTube can be asked about like the Kaltura courses: grounded answers, timestamps, in-chat watch, and a sidebar entry. The product remains a RAG prototype. The host of the video is an implementation detail of `source_url`.

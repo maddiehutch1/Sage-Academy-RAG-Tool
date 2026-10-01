@@ -270,16 +270,16 @@ A simple MVP can use the following concepts:
   - DATA 5400: Advanced Data Visualization (63)
   - IS 3600: Introduction to Cloud Computing (27)
 
-## Stage 3 (in progress)
+## Stage 3 (complete)
 YouTube is a second host for the same `videos.source_url` string, not a second pipeline. Planning: [ai/roadmaps/2026-09-12-high-level-plan-stage-3.md](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md).
 
 - Offline helper `scripts/prepare_youtube_playlist.py` lists a playlist with `yt-dlp` (local operator tool, not a web dependency), writes `.srt` + JSON sidecars into `data/transcripts/<COURSE>/`
 - `ingest.py` stays SRT/DFXP-only; YouTube captions are converted to SRT before ingest
 - Frontend sniffs YouTube vs Kaltura from `source_url` and builds the matching iframe (`youtube.com/embed/<id>?start=<seconds>` vs existing `embedPlaykitJs` + `kalturaSeekFrom`)
 - No playlist table, no `source_type` column, no YouTube I/O in `/ask`
-- Operator inputs: IS 5750 playlist, `IS 5750: JavaScript for Absolute Beginners`, English captions, output `data/transcripts/IS5750/`. Helper, caption preparation, and local ingest are complete (216 videos, 559 chunks). YouTube timestamp playback is verified; Kaltura iframe URLs are unchanged, but two browser playback attempts returned a media-stream error. See the Phase 1 roadmap for the remaining QA gate.
+- Operator inputs: IS 5750 playlist, `IS 5750: JavaScript for Absolute Beginners`, English captions, output `data/transcripts/IS5750/`. Helper, caption preparation, and local ingest are complete (216 videos, 559 chunks). YouTube timestamp playback was verified, and the project owner confirmed production playback is working. See the [completed Phase 1 roadmap](../ai/roadmaps/complete/2026-09-12-phase-01-youtube-playlist-roadmap.md).
 
-Update the "Decisions Finalized" bullets above when Phase 1 closes.
+The Stage 3 implementation preserves the existing SRT/DFXP ingestion contract and adds YouTube as a second playback host.
 
 ## Recommended Next Step
-Resolve Kaltura playback QA, then close Phase 1: [ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md](../ai/roadmaps/2026-09-12-phase-01-youtube-playlist-plan.md).
+For source videos supplied without transcripts, decide how transcripts will be produced before changing the ingestion pipeline.

@@ -2,6 +2,12 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-30 — Stage 3 Phase 1 complete (YouTube playlist ingest)
+
+- **Production QA:** Project owner confirmed Sage Tool production behavior is working, including the previously blocked Kaltura playback.
+- **Phase closed:** YouTube playlist preparation, local IS 5750 ingest (216 videos, 559 chunks), and timestamped YouTube playback are complete. Phase 1 plan and roadmap moved to `ai/roadmaps/complete/`.
+- **Source:** [Stage 3 plan](../ai/roadmaps/2026-09-12-high-level-plan-stage-3.md) and completed Phase 1 plan/roadmap.
+
 ## 2026-09-12 — Stage 3 planned (YouTube playlist ingest)
 
 - **Locked approach (Choice B):** offline helper turns a YouTube playlist into SRT + JSON sidecars; existing `ingest.py` indexes them; frontend sniffs YouTube vs Kaltura `source_url` for playback.
