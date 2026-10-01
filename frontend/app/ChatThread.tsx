@@ -267,7 +267,7 @@ export default function ChatThread({
                       : "border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
                   }`}
                 >
-                  <h2 className="text-xs font-semibold uppercase tracking-widest text-sage-500 mb-3">
+                  <h2 className="text-xs font-semibold uppercase tracking-widest text-sage-500 mb-3 dark:text-sage-300">
                     Answer
                   </h2>
                   <AssistantBody answer={turn.answer} empty={turn.sources.length === 0} />
@@ -283,7 +283,7 @@ export default function ChatThread({
               {loading && (
                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-900">
                   <div className="flex items-center gap-2 text-sm text-gray-400">
-                    <span className="h-4 w-4 border-2 border-gray-300 border-t-transparent rounded-full animate-spin" />
+                    <span className="h-4 w-4 border-2 border-gray-300 border-t-transparent rounded-full animate-spin dark:border-gray-600 dark:border-t-transparent" />
                     Thinking…
                   </div>
                 </div>

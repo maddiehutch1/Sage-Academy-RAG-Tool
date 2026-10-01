@@ -224,7 +224,7 @@ export default function HomePage() {
                                 setSelectedVideo({ video, courseName: course.course_name })
                               }
                               className="w-full flex items-start gap-2 px-3 py-2 text-left
-                                         hover:bg-sage-50 transition group
+                                         hover:bg-sage-50 dark:hover:bg-gray-800 transition group
                                          border-b border-gray-100/70 dark:border-gray-800"
                             >
                               {video.video_order !== null && (

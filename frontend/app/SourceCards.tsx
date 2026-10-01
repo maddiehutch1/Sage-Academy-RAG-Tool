@@ -245,7 +245,9 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                           <button
                             onClick={() => toggleNeighbor(prevKey)}
                             className="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2 py-0.5
-                                       text-xs font-medium text-gray-600 hover:bg-gray-200 transition border border-gray-200"
+                                       text-xs font-medium text-gray-600 hover:bg-gray-200 transition
+                                       border border-gray-200 dark:bg-gray-800 dark:text-gray-200
+                                       dark:hover:bg-gray-700 dark:border-gray-600"
                           >
                             {isPrevExpanded ? (
                               <>
@@ -275,7 +277,9 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                           <button
                             onClick={() => toggleNeighbor(nextKey)}
                             className="inline-flex items-center gap-1 rounded-md bg-gray-100 px-2 py-0.5
-                                       text-xs font-medium text-gray-600 hover:bg-gray-200 transition border border-gray-200"
+                                       text-xs font-medium text-gray-600 hover:bg-gray-200 transition
+                                       border border-gray-200 dark:bg-gray-800 dark:text-gray-200
+                                       dark:hover:bg-gray-700 dark:border-gray-600"
                           >
                             {isNextExpanded ? (
                               <>
