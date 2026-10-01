@@ -2,6 +2,13 @@
 
 This file is a concise record of project changes as the Sage Academy RAG Tool evolves. Each entry should remain short and point back to the source planning document that informed the change.
 
+## 2026-09-30 — Stage 4 planned (dark mode and appearance settings)
+
+- **User request:** Add a dark appearance option to Sage.
+- **Direction:** Follow the operating-system preference by default; offer System, Light, and Dark through an upper-right gear menu; remember the choice in the current browser only.
+- **Scope:** Frontend appearance only. No app code changed; account/backend persistence and video-player restyling are out of scope.
+- **Planning:** [Stage 4 high-level plan](../ai/roadmaps/2026-09-30-high-level-plan-stage-4.md), [Phase 1 plan](../ai/roadmaps/2026-09-30-phase-01-dark-mode-plan.md), and [roadmap](../ai/roadmaps/2026-09-30-phase-01-dark-mode-roadmap.md).
+
 ## 2026-09-30 — Stage 3 Phase 1 complete (YouTube playlist ingest)
 
 - **Production QA:** Project owner confirmed Sage Tool production behavior is working, including the previously blocked Kaltura playback.

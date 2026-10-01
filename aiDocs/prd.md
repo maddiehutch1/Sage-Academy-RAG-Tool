@@ -73,3 +73,21 @@ Stage 3 is an increment on v0.1 + Stage 2, not a new product. Requirements below
 - Speech-to-text when a video has no captions
 - Live YouTube API calls from the web app
 - Nightly playlist sync, or re-hosting YouTube videos in Kaltura
+
+## Stage 4 Requirements
+Stage 4 is a focused appearance increment on v0.1 + Stages 2–3, not a new product. Requirements below support [aiDocs/mvp.md](mvp.md) and [ai/roadmaps/2026-09-30-high-level-plan-stage-4.md](../ai/roadmaps/2026-09-30-high-level-plan-stage-4.md).
+
+### Added features
+- System-aware Light/Dark appearance with an explicit user preference
+- Upper-right gear control that opens a compact Appearance menu
+
+### Added functional requirements
+- Provide System, Light, and Dark choices; System is the first-visit default and follows operating-system changes
+- Persist the selected mode locally in the user's browser, without an account or server-side preference
+- Keep the control available in empty-chat and active-thread layouts
+- Apply the selected theme consistently to Sage-owned UI while leaving embedded video players unchanged
+
+### Stage 4 does not add
+- User accounts, backend storage, or cross-device preference sync
+- A general settings page or unrelated settings
+- Changes to chat, retrieval, transcript, or video playback behavior

@@ -88,3 +88,24 @@ Stage 3 is the next prototype slice after Stage 2. It is not a new MVP. Planning
 - Videos with no captions are skipped and reported, not empty-ingested
 
 Playlist URL and course name are operator inputs; live ingest can wait until they are known.
+
+## Stage 4 increment
+Stage 4 is a focused frontend increment after Stage 3, not a new product. Planning lives in [ai/roadmaps/2026-09-30-high-level-plan-stage-4.md](../ai/roadmaps/2026-09-30-high-level-plan-stage-4.md).
+
+### Added to scope
+- Appearance choices for System, Light, and Dark, available from an upper-right gear menu
+- System preference as the default, with the selected mode remembered in the current browser
+- Consistent dark styling for Sage-owned chat, library, source, and modal surfaces
+
+### Still out of scope (Stage 4)
+- User accounts, backend/database storage, or syncing preferences across devices
+- A general settings page or settings unrelated to appearance
+- Changes to chat behavior, retrieval, transcript ingestion, or embedded video players
+- A third-party theme package unless implementation establishes a concrete need
+
+### Stage 4 success criteria
+- First-time use follows the operating system; System mode continues to follow later OS changes
+- Light/Dark overrides persist on reload in the same browser and System can be restored
+- The Appearance menu is consistently available in empty chat and active thread
+- Both themes remain legible and keyboard-accessible across app surfaces and responsive layouts
+- Existing chat and video workflows are unchanged

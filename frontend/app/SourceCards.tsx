@@ -115,7 +115,7 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
 
   return (
     <div>
-      <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 px-1">
+      <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 px-1 dark:text-gray-500">
         Sources
       </h2>
       <div className="space-y-3">
@@ -164,16 +164,16 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
           return (
             <div
               key={i}
-              className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+              className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden dark:border-gray-700 dark:bg-gray-900"
             >
               <div className="p-4">
                 <div className="flex items-start justify-between gap-3 flex-wrap">
                   <div>
-                    <p className="text-sm font-medium text-gray-800">{src.video}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">{src.course}</p>
+                    <p className="text-sm font-medium text-gray-800 dark:text-gray-100">{src.video}</p>
+                    <p className="text-xs text-gray-500 mt-0.5 dark:text-gray-400">{src.course}</p>
                   </div>
                   <div className="flex items-center gap-2 shrink-0 flex-wrap">
-                    <span className="rounded-md bg-sage-50 px-2.5 py-1 text-xs font-mono text-sage-600 border border-sage-200">
+                    <span className="rounded-md bg-sage-50 px-2.5 py-1 text-xs font-mono text-sage-600 border border-sage-200 dark:bg-sage-900/50 dark:text-sage-300 dark:border-sage-800">
                       {formatTime(src.start_time)} – {formatTime(src.end_time)}
                     </span>
                     {iframeSrc && (
@@ -201,7 +201,7 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                     )}
                   </div>
                 </div>
-                <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3 whitespace-pre-wrap">
+                <p className="mt-3 text-xs text-gray-500 leading-relaxed border-t border-gray-100 pt-3 whitespace-pre-wrap dark:border-gray-800 dark:text-gray-400">
                   "{src.excerpt}…"
                 </p>
                 {youtubeWatchUrl && (
@@ -209,7 +209,7 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                     href={youtubeWatchUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-2 inline-flex text-xs font-medium text-sage-700 hover:text-sage-800 underline underline-offset-2"
+                    className="mt-2 inline-flex text-xs font-medium text-sage-700 hover:text-sage-800 underline underline-offset-2 dark:text-sage-300 dark:hover:text-sage-200"
                   >
                     Open on YouTube
                   </a>
@@ -231,14 +231,14 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
               )}
 
               {hasNeighbors && (
-                <div className="border-t border-gray-100 bg-gray-50 px-4 py-3">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+                <div className="border-t border-gray-100 bg-gray-50 px-4 py-3 dark:border-gray-800 dark:bg-gray-950">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 dark:text-gray-500">
                     Also in this series
                   </p>
                   <div className="flex gap-2 flex-wrap">
                     {prevNeighbor && (
-                      <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2">
-                        <p className="text-xs text-gray-600 font-medium truncate mb-1.5">
+                      <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2 dark:border-gray-700 dark:bg-gray-900">
+                        <p className="text-xs text-gray-600 font-medium truncate mb-1.5 dark:text-gray-300">
                           ← {prevNeighbor.title}
                         </p>
                         {prevIframeSrc && (
@@ -267,8 +267,8 @@ export default function SourceCards({ sources }: { sources: Source[] }) {
                       </div>
                     )}
                     {nextNeighbor && (
-                      <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2">
-                        <p className="text-xs text-gray-600 font-medium truncate mb-1.5">
+                      <div className="flex-1 min-w-0 rounded-lg border border-gray-200 bg-white px-3 py-2 dark:border-gray-700 dark:bg-gray-900">
+                        <p className="text-xs text-gray-600 font-medium truncate mb-1.5 dark:text-gray-300">
                           {nextNeighbor.title} →
                         </p>
                         {nextIframeSrc && (

@@ -281,5 +281,13 @@ YouTube is a second host for the same `videos.source_url` string, not a second p
 
 The Stage 3 implementation preserves the existing SRT/DFXP ingestion contract and adds YouTube as a second playback host.
 
+## Stage 4 (planned)
+Stage 4 adds a frontend-only appearance preference. Planning: [Stage 4 high-level plan](../ai/roadmaps/2026-09-30-high-level-plan-stage-4.md) and [Phase 1 plan](../ai/roadmaps/2026-09-30-phase-01-dark-mode-plan.md).
+
+- Default to the operating system's color preference; offer System, Light, and Dark.
+- Store the selection in the current browser; do not add account or backend persistence.
+- A gear at the upper-right app level opens the Appearance menu in empty and active chat states.
+- Use the existing Tailwind/CSS stack; theme the Sage interface while leaving embedded player visuals unchanged.
+
 ## Recommended Next Step
-For source videos supplied without transcripts, decide how transcripts will be produced before changing the ingestion pipeline.
+Implement and validate the Stage 4 Phase 1 plan without changing the chat/API or video playback contracts.
