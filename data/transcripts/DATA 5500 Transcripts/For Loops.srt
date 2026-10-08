@@ -1,0 +1,748 @@
+1
+00:00:02,840 --> 00:00:06,440
+Hey everybody and welcome to the
+content video going over four
+
+2
+00:00:06,440 --> 00:00:10,160
+statements or section 3.8 of
+your textbook. And if you can't
+
+3
+00:00:10,160 --> 00:00:12,650
+tell at this point, I really
+am a big fan of this textbook.
+
+4
+00:00:12,650 --> 00:00:15,800
+It's, I think it describes
+things extremely well and in
+
+5
+00:00:15,800 --> 00:00:20,300
+very easy to understand terms
+and ideas. It gives plenty of
+
+6
+00:00:20,300 --> 00:00:24,740
+examples. There's also checkpoint
+activities in pretty much
+
+7
+00:00:24,740 --> 00:00:28,080
+every single section of every
+single chapter. So if you're
+
+8
+00:00:28,080 --> 00:00:30,640
+ever getting confused at any
+point during the semester.
+
+9
+00:00:30,820 --> 00:00:34,280
+Like for example if you haven't
+quite gotten the hang of four
+
+10
+00:00:34,280 --> 00:00:37,300
+loops this would be a really
+great time for you to really dive
+
+11
+00:00:37,300 --> 00:00:40,340
+into the textbook and get a
+little bit of practice. I also
+
+12
+00:00:40,340 --> 00:00:44,480
+have a physical copy of the
+textbook in my office if you would
+
+13
+00:00:44,480 --> 00:00:47,620
+like to borrow it from me. Check
+it out for a couple of days.
+
+14
+00:00:47,760 --> 00:00:54,180
+It's a really really great read
+and it's super fun. So I highly
+
+15
+00:00:54,180 --> 00:00:57,920
+recommend reading through this if
+you are feeling stuck or if you
+
+16
+00:00:57,920 --> 00:01:01,980
+aren't quite sure how something
+works and really practicing the
+
+17
+00:01:01,980 --> 00:01:04,260
+activities that it gives you as
+well as doing the programming
+
+18
+00:01:04,260 --> 00:01:07,980
+activities that I give you in class.
+So that being said, four statements
+
+19
+00:01:07,980 --> 00:01:11,820
+or four loops are one of my
+favorite tools in Python. I think
+
+20
+00:01:11,820 --> 00:01:15,020
+that they are awesome. I think
+that they have a lot of power, but
+
+21
+00:01:15,020 --> 00:01:18,100
+I also understand and realize that
+they can be kind of confusing.
+
+22
+00:01:18,100 --> 00:01:20,880
+And so a lot of what we're going
+to do with this section is going
+
+23
+00:01:20,880 --> 00:01:24,840
+to be some hands-on activities
+or some just hands-on examples.
+
+24
+00:01:25,300 --> 00:01:29,380
+But let's just talk about the
+structure of a for loop really quick.
+
+25
+00:01:29,380 --> 00:01:34,820
+So I guess they work really
+similarly to while loops. We set up
+
+26
+00:01:34,820 --> 00:01:38,540
+some kind of a, it's not quite a
+condition like a while loop is,
+
+27
+00:01:38,540 --> 00:01:43,160
+but we set up some kind of a
+sequence or something for the list to
+
+28
+00:01:43,160 --> 00:01:47,360
+loop through. For loops only run
+a certain amount of times. It's
+
+29
+00:01:47,360 --> 00:01:52,100
+finite. Whereas while loops will
+run infinitely unless we stop
+
+30
+00:01:52,100 --> 00:01:57,040
+them or use a break or have some
+kind of an end condition for them.
+
+31
+00:01:57,160 --> 00:02:01,850
+So the way that they're set up is
+we say we want to loop for something
+
+32
+00:02:01,850 --> 00:02:06,620
+in something else. And the first
+something is what I usually
+
+33
+00:02:06,620 --> 00:02:11,720
+call an iterator variable. It
+represents one thing at a time in a
+
+34
+00:02:11,720 --> 00:02:18,760
+sequence of items, whether it be a
+string, a list, objects, a tuple,
+
+35
+00:02:18,880 --> 00:02:23,900
+anything like that, that's just a
+sequence of items. So our iterator
+
+36
+00:02:23,900 --> 00:02:29,980
+variable becomes or represents
+each item in that sequence and
+
+37
+00:02:29,980 --> 00:02:33,100
+the second something, so I said
+for something and something, the
+
+38
+00:02:33,100 --> 00:02:36,680
+second something is that sequence.
+So you can see in this example
+
+39
+00:02:36,680 --> 00:02:41,100
+here, for character in programming
+gives us the letters in
+
+40
+00:02:41,100 --> 00:02:44,700
+programming one at a time. So we'll
+do an example like that, but I kind
+
+41
+00:02:44,700 --> 00:02:48,680
+of just want to talk through a
+couple of things here. We'll do
+
+42
+00:02:48,680 --> 00:02:52,860
+an example using end equals. This
+is a print function argument. It
+
+43
+00:02:52,860 --> 00:02:55,800
+helps us to format strings well.
+We'll use it in just a second.
+
+44
+00:02:56,660 --> 00:02:59,960
+Separate equals is also
+very similar to end equals.
+
+45
+00:03:00,340 --> 00:03:02,800
+I think I just wanted to,
+
+46
+00:03:04,500 --> 00:03:07,740
+oh yeah, I guess this is all kind
+of what we're going to do in our
+
+47
+00:03:07,740 --> 00:03:11,420
+example. So we can loop through
+a range, we can loop through a
+
+48
+00:03:11,420 --> 00:03:15,060
+string, and we can loop through
+lists. Those are kind of the most
+
+49
+00:03:15,060 --> 00:03:18,920
+common things you'll see people
+use for loops to iterate through.
+
+50
+00:03:19,160 --> 00:03:21,640
+So let's do a couple of examples.
+
+51
+00:03:27,000 --> 00:03:32,100
+So first thing I want to do is
+let's loop through a string.
+
+52
+00:03:34,340 --> 00:03:37,940
+My brain doesn't like thinking
+of a creative example,
+
+53
+00:03:37,940 --> 00:03:40,520
+so we're gonna loop through
+the characters in my name.
+
+54
+00:03:44,380 --> 00:03:47,160
+Okay, so here's my name. And
+what we're going to do is
+
+55
+00:03:47,160 --> 00:03:49,960
+we are going to say for
+something in something to set
+
+56
+00:03:49,960 --> 00:03:51,920
+up our loop, okay? And what
+we want to do is we just
+
+57
+00:03:51,920 --> 00:03:54,160
+want to print out the
+characters one at a time, okay?
+
+58
+00:03:54,280 --> 00:03:59,720
+So we kind of already know what
+the code inside the scope of our
+
+59
+00:03:59,720 --> 00:04:02,740
+loop should look like, but setting
+up the loop usually looks like
+
+60
+00:04:02,740 --> 00:04:05,980
+this. We want to set up an
+iterator variable, something that's
+
+61
+00:04:05,980 --> 00:04:09,240
+going to represent each item in
+the sequence of whatever it is
+
+62
+00:04:09,240 --> 00:04:13,080
+we're iterating through. So for
+me right now, I'm thinking a good
+
+63
+00:04:13,080 --> 00:04:16,300
+name for this iterator variable
+is going to be something like
+
+64
+00:04:16,300 --> 00:04:20,100
+letter or character, because that's
+what it's going to be representing.
+
+65
+00:04:20,100 --> 00:04:24,660
+So I'll say for letter in,
+and then what am I iterating
+
+66
+00:04:24,660 --> 00:04:28,840
+through? It's going to be the name
+variable. So for letter in name.
+
+67
+00:04:29,480 --> 00:04:32,060
+And then what I'm going to do is
+I'm just going to print out letter.
+
+68
+00:04:34,220 --> 00:04:39,540
+So if I run this code,
+I should see a somewhat
+
+69
+00:04:39,540 --> 00:04:42,740
+disjointed version of
+my name and here it is.
+
+70
+00:04:42,920 --> 00:04:47,140
+It actually only, hang on, let me
+rerun this. There we go. So you
+
+71
+00:04:47,140 --> 00:04:51,480
+can see it printed out my name
+one letter at a time. Each letter
+
+72
+00:04:51,480 --> 00:04:54,900
+is on its own line. Let's change
+our print statement a little bit.
+
+73
+00:04:55,200 --> 00:05:02,020
+So we're going to print out letter,
+and the print statement by default
+
+74
+00:05:02,020 --> 00:05:05,400
+always will print. So if you like
+run a print statement and then
+
+75
+00:05:05,400 --> 00:05:08,330
+you run a print statement again,
+it's always going to put that like
+
+76
+00:05:08,480 --> 00:05:11,900
+that second print on a new line. So
+the print statement kind of has a
+
+77
+00:05:11,900 --> 00:05:16,100
+new line built into it by default.
+So if you want to overwrite that,
+
+78
+00:05:16,100 --> 00:05:25,250
+what you can do is you can use the
+argument end equals and in end equals
+
+79
+00:05:25,250 --> 00:05:28,640
+you put quotation marks at the
+end of and then it you can put a
+
+80
+00:05:28,640 --> 00:05:33,080
+space in there you can put a comma
+in there you could put comma space
+
+81
+00:05:33,080 --> 00:05:38,140
+whatever you put in the end equals
+it is going to separate your values
+
+82
+00:05:38,140 --> 00:05:42,300
+by that so you can see we've got
+end equals here's all the letters
+
+83
+00:05:42,300 --> 00:05:44,880
+in my name they all have a comma
+space in between them so that's kind
+
+84
+00:05:44,880 --> 00:05:47,920
+of weird maybe I'll just put a space
+between each of the letters you
+
+85
+00:05:49,340 --> 00:05:53,800
+can see there. Or if we had end
+equals with empty quotation marks,
+
+86
+00:05:54,490 --> 00:05:58,340
+here's my name just as it is, which
+is ironic because that's what we
+
+87
+00:05:58,340 --> 00:06:02,680
+started with. So that's kind of
+how a while loop works. It's going
+
+88
+00:06:02,680 --> 00:06:08,280
+to execute some amount of code for
+a certain number of times. Okay,
+
+89
+00:06:09,000 --> 00:06:14,240
+let's do another example using
+a list. So let's say we have a
+
+90
+00:06:14,240 --> 00:06:18,840
+list of favorite colors and we'll
+cover more about lists in another
+
+91
+00:06:18,840 --> 00:06:22,900
+content video so don't worry too
+much about this if you aren't
+
+92
+00:06:22,900 --> 00:06:27,940
+quite sure what a list is or
+how it works we will definitely
+
+93
+00:06:27,940 --> 00:06:31,380
+cover that in more depth um so
+my favorite colors are aggie blue
+
+94
+00:06:31,380 --> 00:06:35,860
+fighting white and i'm really
+partial to uh like blush pink
+
+95
+00:06:36,770 --> 00:06:40,360
+like the really light pinks you
+know what i'm talking about but
+
+96
+00:06:40,360 --> 00:06:42,800
+obviously my favorite colors are
+Aggie Blue and Fighting White.
+
+97
+00:06:43,220 --> 00:06:47,340
+So one of the things that we
+iterate through most commonly with
+
+98
+00:06:47,340 --> 00:06:52,880
+for loops is a list so I might
+say for color in favorite colors
+
+99
+00:06:53,420 --> 00:06:56,080
+and then I don't know let's just
+print out our favorite colors.
+
+100
+00:07:02,270 --> 00:07:06,690
+If we were to run this code
+you can see that oh whoops
+
+101
+00:07:06,810 --> 00:07:10,730
+let's add a print statement
+here to just give us a new line.
+
+102
+00:07:12,470 --> 00:07:15,030
+We don't want, see how it concatenated my
+
+103
+00:07:15,030 --> 00:07:17,090
+name with fav colors? We don't want that.
+
+104
+00:07:17,230 --> 00:07:20,610
+Okay, now it's on a new line because
+the print function with, when
+
+105
+00:07:20,610 --> 00:07:22,930
+you just run a print function
+empty like that, it just prints up
+
+106
+00:07:22,930 --> 00:07:26,810
+a new blank line. Okay, so here's
+my favorite colors. Oh, whoops.
+
+107
+00:07:26,970 --> 00:07:30,250
+Okay, maybe this is a good
+teaching moment. So favorite
+
+108
+00:07:30,250 --> 00:07:34,190
+colors, you can see that my
+code ran three times, which
+
+109
+00:07:34,190 --> 00:07:36,850
+is the number of items I had
+in my list, three colors.
+
+110
+00:07:37,190 --> 00:07:39,790
+But do you see, I don't
+know if you can see what my
+
+111
+00:07:39,790 --> 00:07:42,850
+error was here. I had it
+print out favorite colors
+
+112
+00:07:42,990 --> 00:07:48,290
+and then I just printed out my
+entire list each time. So for color
+
+113
+00:07:48,290 --> 00:07:50,910
+and favorite colors, what I really
+wanted to print out here was
+
+114
+00:07:50,910 --> 00:07:57,270
+my color just one at a time, my
+iterator variable. Aggie blue,
+
+115
+00:07:57,390 --> 00:08:02,430
+fighting white, and blush pink.
+So as I iterate through my list,
+
+116
+00:08:02,430 --> 00:08:07,990
+my iterator variable becomes each
+of these values one at a time.
+
+117
+00:08:08,930 --> 00:08:11,210
+It does get a little
+bit more complicated,
+
+118
+00:08:11,210 --> 00:08:14,610
+so let's do one using the range function.
+
+119
+00:08:15,670 --> 00:08:19,670
+So let's say I want to loop
+through a range, so I'll say for
+
+120
+00:08:19,670 --> 00:08:24,130
+i in range, and let's go to
+10. We did an example like this
+
+121
+00:08:24,130 --> 00:08:27,430
+in another content video, and
+let's just print out i, okay?
+
+122
+00:08:28,850 --> 00:08:34,310
+So here we have 0 to 9. So what
+i represents in this case is
+
+123
+00:08:34,310 --> 00:08:38,550
+each of the numbers in our range.
+And people commonly use I I think
+
+124
+00:08:38,550 --> 00:08:41,670
+because I could stand for
+iterable and then if they have a
+
+125
+00:08:41,670 --> 00:08:47,670
+second loop they might use for J
+in range 20 something like that.
+
+126
+00:08:48,090 --> 00:08:53,250
+Okay this gets complicated once
+we start using ranges or iterator
+
+127
+00:08:53,250 --> 00:08:58,070
+variables and indexing and
+lists. So be aware that the basic
+
+128
+00:08:58,070 --> 00:09:01,050
+structure of a for loop is always
+going to be for something in
+
+129
+00:09:01,050 --> 00:09:04,450
+something, for iterable, for some
+kind of variable that's going
+
+130
+00:09:04,450 --> 00:09:08,690
+to represent something in a
+sequence of items in something that
+
+131
+00:09:08,690 --> 00:09:11,590
+is iterable, like something that
+you can actually loop through.
+
+132
+00:09:12,650 --> 00:09:16,470
+And let's see, I think that almost covers
+
+133
+00:09:16,470 --> 00:09:19,250
+everything I wanted to talk
+about. So really quick,
+
+134
+00:09:19,570 --> 00:09:26,890
+one thing that's worth pointing out
+is that in a for loop and a while
+
+135
+00:09:26,890 --> 00:09:31,150
+loop, you can basically do the
+exact same things. And so if you're
+
+136
+00:09:31,150 --> 00:09:34,830
+ever not really sure which loop
+to use or which type of loop to
+
+137
+00:09:34,830 --> 00:09:38,370
+use, you can basically do the same
+things in a while loop as you can
+
+138
+00:09:38,370 --> 00:09:42,890
+in a for loop. So if I wanted to
+do, let's say I wanted to say for i
+
+139
+00:09:42,890 --> 00:09:46,870
+in range 10 print i, I could do
+that. So that's zero to nine. I could
+
+140
+00:09:46,870 --> 00:09:55,170
+say, here's a number equals zero.
+And I could say while num less
+
+141
+00:09:55,250 --> 00:10:03,710
+than 10 print num and my while loop
+will do oh whoops I forgot to add
+
+142
+00:10:03,710 --> 00:10:10,320
+one to number hang on let's kill
+this terminal okay num equals num
+
+143
+00:10:10,620 --> 00:10:21,040
+one okay so here is my for loop
+adding up zero to or sorry iterating
+
+144
+00:10:21,040 --> 00:10:24,210
+through a range of zero to nine
+and here's my while loop doing the
+
+145
+00:10:24,210 --> 00:10:27,570
+exact same thing zero to nine and
+outputting that to the console
+
+146
+00:10:27,570 --> 00:10:31,830
+are they doing it in slightly
+different ways yes are they technically
+
+147
+00:10:31,830 --> 00:10:35,550
+maybe it's like the root of them
+doing the exact same logic I don't
+
+148
+00:10:35,550 --> 00:10:39,070
+know because one's using a range
+and one is using addition we could
+
+149
+00:10:39,070 --> 00:10:41,410
+get into the nitty-gritty but
+essentially what they're outputting
+
+150
+00:10:41,410 --> 00:10:47,770
+is is kind of the same so I think
+that is everything I want to cover
+
+151
+00:10:47,770 --> 00:10:51,970
+in this content video. So we'll
+conclude here. Thanks for watching.

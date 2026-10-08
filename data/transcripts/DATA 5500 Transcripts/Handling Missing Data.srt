@@ -1,0 +1,615 @@
+1
+00:00:01,950 --> 00:00:05,390
+Hey everybody, in this last content
+video for going over pandas,
+
+2
+00:00:05,390 --> 00:00:08,590
+we're going to talk about handling
+messy data. So one of the reasons
+
+3
+00:00:08,590 --> 00:00:12,310
+that I like the Titanic data set
+is that it's not perfect. And
+
+4
+00:00:12,310 --> 00:00:15,950
+I think more often than not in
+life, you have data sets that don't
+
+5
+00:00:15,950 --> 00:00:19,950
+completely accurately reflect
+reality. I mean, if I took a survey
+
+6
+00:00:19,950 --> 00:00:25,130
+of our current class and asked
+you, I don't know, something that
+
+7
+00:00:25,130 --> 00:00:28,890
+there's definitely a clear answer
+to, like your height, maybe,
+
+8
+00:00:29,330 --> 00:00:34,350
+then we would hope that we'd get 100
+% accuracy on a survey such as that.
+
+9
+00:00:34,350 --> 00:00:37,630
+But just because I ask you a question
+doesn't mean you have to answer
+
+10
+00:00:37,630 --> 00:00:41,470
+honestly, or doesn't mean that maybe
+you're feeling silly and you want
+
+11
+00:00:41,470 --> 00:00:45,890
+to put down a silly answer,
+something like that, right? There's a
+
+12
+00:00:45,890 --> 00:00:51,650
+million reasons why data isn't
+accurately entered. But what we have to
+
+13
+00:00:51,650 --> 00:00:56,790
+realize as data scientists and data
+analysts is that we're often pretty
+
+14
+00:00:56,790 --> 00:01:01,130
+much 100% of the time working with
+data that's not perfect. And so this
+
+15
+00:01:01,130 --> 00:01:04,570
+isn't going to be a comprehensive
+way of how to handle messy data, but
+
+16
+00:01:04,570 --> 00:01:07,340
+we're just going to talk about some
+of the ways that we can handle it
+
+17
+00:01:07,340 --> 00:01:12,630
+in Python using Pandas. So we've
+got the Titanic data set again, I've
+
+18
+00:01:12,630 --> 00:01:18,170
+already loaded it in. And what I
+want to do is I want to see how many
+
+19
+00:01:19,580 --> 00:01:28,270
+values I have that aren't numbers.
+I'm going to use is NA so not a number
+
+20
+00:01:28,270 --> 00:01:33,450
+or NA it stands for something but
+and just that's the function we'll
+
+21
+00:01:33,450 --> 00:01:37,730
+use. So is NA so not a value we want
+to count those up. So you can see
+
+22
+00:01:37,730 --> 00:01:42,870
+I've got values in all of my rows
+and columns except for age, I have
+
+23
+00:01:42,870 --> 00:01:49,130
+177 missing values, Cab and I have
+687 missing values, and Embarked, I
+
+24
+00:01:49,130 --> 00:01:54,790
+have two missing values. So one of
+the things that we can do is we can
+
+25
+00:01:54,790 --> 00:02:03,490
+drop our NAs from our data frame.
+So So here's a, let's print out, and
+
+26
+00:02:10,870 --> 00:02:19,750
+then what we'll do is we will
+clean, clean our NA vowels.
+
+27
+00:02:19,750 --> 00:02:25,470
+We'll set that equal to dataframe
+.dropNA, and that's a function
+
+28
+00:02:25,470 --> 00:02:29,890
+you can use. And then let's print
+out the shape after cleaning.
+
+29
+00:02:31,990 --> 00:02:37,050
+We'll just do dataframe.shape,
+and note the difference here.
+
+30
+00:02:37,710 --> 00:02:42,830
+okay so oh something didn't happen
+let's go they printed out the data
+
+31
+00:02:42,830 --> 00:02:48,410
+frame again instead of the clean
+one so clean NA vowels here we go
+
+32
+00:02:49,720 --> 00:02:56,630
+okay so our original shape was 891
+rows 12 columns and after we clean
+
+33
+00:02:56,630 --> 00:03:05,010
+we have 183 values and 12 columns
+or rows and columns so is is it
+
+34
+00:03:05,010 --> 00:03:09,550
+worth it to drop any values in this
+case? Probably not because we lose
+
+35
+00:03:09,550 --> 00:03:13,670
+such a staggering amount of our
+data here. So maybe a smarter way
+
+36
+00:03:13,670 --> 00:03:17,030
+to do things would be to target
+specific columns. So for example,
+
+37
+00:03:17,030 --> 00:03:21,930
+we're missing only two values in the
+embarked column. So maybe one thing
+
+38
+00:03:21,930 --> 00:03:33,110
+I could do is I could say embarked
+clean is equal to data frame dot
+
+39
+00:03:33,110 --> 00:03:39,990
+drop na and then let's do a subset
+here we only want to drop our
+
+40
+00:03:39,990 --> 00:03:47,530
+embarked column and then let's print
+out the embarked clean dot shape
+
+41
+00:03:49,070 --> 00:03:57,970
+okay so 12 columns 888 or 889
+rows is a lot better than 183 so
+
+42
+00:03:57,970 --> 00:04:02,670
+this is pretty good um but what
+about all of our other data that's
+
+43
+00:04:02,670 --> 00:04:05,890
+still missing right like we're
+missing cabin numbers for most
+
+44
+00:04:05,890 --> 00:04:10,670
+everybody so it kind of begs the
+question of what do we do like is
+
+45
+00:04:10,670 --> 00:04:16,290
+cabin number really really important
+to our analysis? Is it something
+
+46
+00:04:16,290 --> 00:04:19,030
+that's going to play into maybe
+a machine learning algorithm?
+
+47
+00:04:19,030 --> 00:04:23,450
+Maybe, maybe not. But what we
+don't want to have is a bunch of
+
+48
+00:04:23,450 --> 00:04:27,110
+missing values. And so there's a
+couple things that we can do. So I'm
+
+49
+00:04:27,110 --> 00:04:31,130
+going to add a new code cell in
+here. And maybe let's fill in some
+
+50
+00:04:31,130 --> 00:04:35,010
+of this missing data. So let's
+look again, we've got age that's
+
+51
+00:04:35,010 --> 00:04:38,630
+missing a bunch, cabin that's missing
+a bunch, and embarked. So we took
+
+52
+00:04:38,630 --> 00:04:42,670
+care of embarked, we dropped
+those, let's maybe tackle age next.
+
+53
+00:04:43,370 --> 00:04:45,450
+So let's
+
+54
+00:04:51,000 --> 00:04:55,260
+print out missing ages before.
+Let's say data frame at age.
+
+55
+00:04:56,540 --> 00:04:58,420
+We'll say
+
+56
+00:04:59,680 --> 00:05:04,660
+is NA and we'll do a sum of that.
+
+57
+00:05:05,100 --> 00:05:09,360
+And then what we'll do
+is it can be common to
+
+58
+00:05:09,360 --> 00:05:13,660
+include or when cleaning
+values, you can add in the
+
+59
+00:05:13,660 --> 00:05:17,620
+average age to fill all
+of our missing values.
+
+60
+00:05:17,840 --> 00:05:22,280
+That can sometimes be skewed by
+outliers, so another good practice
+
+61
+00:05:22,280 --> 00:05:27,370
+is to fill missing values with
+the median age instead. So
+
+62
+00:05:27,370 --> 00:05:30,520
+in order to find the median age,
+and that's what we'll do here,
+
+63
+00:05:32,040 --> 00:05:36,560
+median age we'll say is our
+data frame in our age column,
+
+64
+00:05:37,080 --> 00:05:40,040
+and then you probably guessed it,
+there's literally just a a function
+
+65
+00:05:40,040 --> 00:05:45,820
+median and then what we'll do and
+let's actually print out what that is
+
+66
+00:05:54,350 --> 00:05:55,570
+median age
+
+67
+00:05:55,980 --> 00:05:58,770
+and then let's fill our
+
+68
+00:06:02,170 --> 00:06:04,410
+our column with that
+so let's actually make
+
+69
+00:06:04,410 --> 00:06:09,180
+a new column we'll say
+data frame age filled
+
+70
+00:06:10,310 --> 00:06:15,240
+and we will set that equal to data frame
+
+71
+00:06:23,280 --> 00:06:29,720
+at our age column and then we'll
+use another function called fill
+
+72
+00:06:29,720 --> 00:06:36,780
+NA which is super fun and we'll
+fill it with the median age and this
+
+73
+00:06:36,780 --> 00:06:39,420
+is actually something I don't
+think we've talked about up to this
+
+74
+00:06:39,420 --> 00:06:42,800
+point is that you can create new
+columns in a data frame and it's
+
+75
+00:06:42,800 --> 00:06:46,540
+as easy as just saying the name of
+data frame creating a bracket and
+
+76
+00:06:46,540 --> 00:06:51,000
+then um making a new column so we
+could we could make as many new
+
+77
+00:06:51,000 --> 00:06:53,520
+columns as we want it's kind of
+like adding something to the end of
+
+78
+00:06:53,520 --> 00:06:57,020
+a list we can continue adding and
+adding and adding um and it can
+
+79
+00:06:57,020 --> 00:07:01,000
+be beneficial especially if we have
+new items that we want to add on
+
+80
+00:07:01,000 --> 00:07:03,900
+to our data frame that are a
+byproduct of other columns so for
+
+81
+00:07:03,900 --> 00:07:11,560
+example if I had um maybe like profit
+and or not profit uh how do you
+
+82
+00:07:11,560 --> 00:07:16,360
+calculate like a actually my mind
+is blanking on that but maybe if
+
+83
+00:07:16,360 --> 00:07:21,940
+I had like sales and tax then maybe
+I'd calculate like sales tax or
+
+84
+00:07:21,940 --> 00:07:30,300
+something in a new column so bad
+example we filled our ages now so
+
+85
+00:07:30,300 --> 00:07:36,200
+let's do another print statement
+here ages after or missing ages
+
+86
+00:07:36,200 --> 00:07:46,580
+after I guess and we'll print out
+the data frame at our new column,
+
+87
+00:07:47,720 --> 00:07:57,120
+age filled, is an A dot, oh my gosh,
+
+88
+00:07:58,240 --> 00:07:59,480
+awesome.
+
+89
+00:07:59,960 --> 00:08:01,180
+Okay, that took a minute.
+
+90
+00:08:01,320 --> 00:08:04,300
+So we'll run this cell block,
+and of course I made a mistake.
+
+91
+00:08:06,820 --> 00:08:12,160
+There we go. Okay, so our missing
+age before was 177. We filled in all
+
+92
+00:08:12,160 --> 00:08:16,280
+the missing ages with 28, it looks
+like, and then we have no missing
+
+93
+00:08:16,280 --> 00:08:20,600
+ages after. So this is a great tool
+we can use. And at this point, we
+
+94
+00:08:20,600 --> 00:08:25,880
+could now drop the age column, but
+it's still a bit valuable data. And
+
+95
+00:08:25,880 --> 00:08:30,700
+we don't ever want to completely
+just, so like now that we've filled
+
+96
+00:08:30,700 --> 00:08:33,660
+in the missing ages, that's something
+that we should very, very clearly
+
+97
+00:08:33,660 --> 00:08:37,440
+communicate to whoever our findings
+are going towards. if I was doing
+
+98
+00:08:37,440 --> 00:08:40,520
+some kind of an analysis on this
+and I was reporting the findings of
+
+99
+00:08:40,520 --> 00:08:44,000
+that analysis to higher ups or
+somebody who's really interested in
+
+100
+00:08:44,000 --> 00:08:47,820
+the Titanic I would want to be very
+very clear that I filled in missing
+
+101
+00:08:47,820 --> 00:08:52,000
+age values with the median age okay
+so just another quick thing there
+
+102
+00:08:52,240 --> 00:08:58,500
+okay and our last one that was
+missing was our cabin number and
+
+103
+00:08:58,500 --> 00:09:01,900
+so what we can do here is something
+maybe a little bit different.
+
+104
+00:09:03,180 --> 00:09:09,780
+Let's label all missing
+cabins as unknown.
+
+105
+00:09:11,060 --> 00:09:13,180
+Let me add a little bit
+of documentation here.
+
+106
+00:09:13,460 --> 00:09:20,280
+I forgot to fill missing
+pages with median page.
+
+107
+00:09:21,420 --> 00:09:25,240
+I also forgot to add
+documentation here. Let me do that
+
+108
+00:09:25,240 --> 00:09:32,200
+really quick as well. we will
+drop missing and embarked.
+
+109
+00:09:37,980 --> 00:09:43,660
+Okay, so label all missing cabins
+as unknown. So let's take our data
+
+110
+00:09:43,660 --> 00:09:55,560
+frame at our cabin spot, and we'll
+say data frame at cabin dot fill
+
+111
+00:09:55,560 --> 00:10:04,560
+na with unknown and then let's
+just output our data frame at cabin
+
+112
+00:10:06,960 --> 00:10:13,040
+and we'll see what it gives us
+okay so that looks pretty good so
+
+113
+00:10:13,040 --> 00:10:17,240
+unknown ca5 unknown and it looks
+like we've got quite a few unknowns,
+
+114
+00:10:17,240 --> 00:10:22,620
+which we expected. So to sum up,
+there's a lot of ways you can handle
+
+115
+00:10:22,620 --> 00:10:26,120
+missing data. This is by no means
+the only way, nor is it a perfect
+
+116
+00:10:26,120 --> 00:10:30,860
+way. And when we deal with missing
+data or get rid of missing data,
+
+117
+00:10:30,860 --> 00:10:34,400
+we need to be very, very clear
+and explicit with our audience or
+
+118
+00:10:34,400 --> 00:10:37,560
+whoever we're sharing our findings
+with that that is what we're doing.
+
+119
+00:10:37,700 --> 00:10:42,800
+So that there's no kind of like, so
+we're having transparency, right?
+
+120
+00:10:42,800 --> 00:10:46,000
+Like the worst thing is when somebody
+takes data and skews it so that
+
+121
+00:10:46,000 --> 00:10:49,040
+they're trying to give you reporting
+their findings that are accurate
+
+122
+00:10:49,040 --> 00:10:52,040
+to the data and you guys are data
+stewards because you're studying
+
+123
+00:10:52,040 --> 00:10:57,240
+at least this class with regards to
+data analysis so it's important to
+
+124
+00:10:57,240 --> 00:11:00,160
+be very open and clear about the
+data that you're using that's going
+
+125
+00:11:00,160 --> 00:11:02,840
+to sum up everything for this content
+video, so thanks for watching.

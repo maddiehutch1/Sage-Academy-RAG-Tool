@@ -1,0 +1,1220 @@
+1
+00:00:02,418 --> 00:00:04,960
+INSTRUCTOR: Hello, everyone,
+and welcome to the video for how
+
+2
+00:00:04,960 --> 00:00:08,800
+to create an EC2 instance with
+built-in VS Code web clients,
+
+3
+00:00:08,800 --> 00:00:11,920
+React, React Native, and
+Expo app running on it,
+
+4
+00:00:11,920 --> 00:00:13,990
+with a Django backend.
+
+5
+00:00:13,990 --> 00:00:14,740
+Let's get into it.
+
+6
+00:00:14,740 --> 00:00:16,198
+So once you're in
+AWS, you're going
+
+7
+00:00:16,198 --> 00:00:17,860
+to want to launch
+a new instance.
+
+8
+00:00:21,160 --> 00:00:24,900
+I'm just going to
+call mine vscode_test.
+
+9
+00:00:24,900 --> 00:00:26,520
+Oop.
+
+10
+00:00:26,520 --> 00:00:27,520
+There we go.
+
+11
+00:00:27,520 --> 00:00:29,000
+Choose Ubuntu,
+because all the bash
+
+12
+00:00:29,000 --> 00:00:31,047
+scripts that I'm going
+to use are Ubuntu,
+
+13
+00:00:31,047 --> 00:00:32,880
+and the ones you're
+going to use are Ubuntu.
+
+14
+00:00:32,880 --> 00:00:35,027
+I'm going to not use a T2 micro.
+
+15
+00:00:35,027 --> 00:00:36,860
+That's a little bit not
+quite enough memory.
+
+16
+00:00:36,860 --> 00:00:38,583
+I've tried it on a T2 small.
+
+17
+00:00:38,583 --> 00:00:39,500
+That seems to be fine.
+
+18
+00:00:39,500 --> 00:00:41,640
+But I'm going to be
+a T2 medium to make
+
+19
+00:00:41,640 --> 00:00:43,060
+sure it's got plenty of memory.
+
+20
+00:00:43,060 --> 00:00:46,040
+It's $0.05 per hour, so
+if you're working on it
+
+21
+00:00:46,040 --> 00:00:48,863
+and then shutting it down,
+it'll still be really cheap.
+
+22
+00:00:48,863 --> 00:00:50,280
+And even if you
+do want to launch,
+
+23
+00:00:50,280 --> 00:00:55,120
+this as a beta, $0.05 per
+hour for a whole month
+
+24
+00:00:55,120 --> 00:00:56,927
+works out to be
+about $36 a month.
+
+25
+00:00:56,927 --> 00:00:59,260
+And again, this will have
+your back end, your front end,
+
+26
+00:00:59,260 --> 00:01:01,120
+and your SQLite database on it.
+
+27
+00:01:01,120 --> 00:01:03,800
+So for $36 a month,
+you actually get a lot.
+
+28
+00:01:03,800 --> 00:01:06,760
+But if you're in dev mode still
+and you want to keep it cheap,
+
+29
+00:01:06,760 --> 00:01:09,028
+just shut down your server
+when you're not using it.
+
+30
+00:01:09,028 --> 00:01:10,320
+I'm going to it a launch there.
+
+31
+00:01:10,320 --> 00:01:11,945
+I'm going to proceed
+without a key pair
+
+32
+00:01:11,945 --> 00:01:14,140
+because my primary method
+of logging into the server
+
+33
+00:01:14,140 --> 00:01:16,560
+is going to be through
+VS Code web client.
+
+34
+00:01:16,560 --> 00:01:19,680
+So I don't need a key pair to
+launch from PuTTY or anything.
+
+35
+00:01:25,500 --> 00:01:27,260
+I'm going to connect
+to my instance
+
+36
+00:01:27,260 --> 00:01:36,540
+to start running some
+scripts and hit Connect.
+
+37
+00:01:36,540 --> 00:01:38,910
+And that'll take a
+second to connect
+
+38
+00:01:38,910 --> 00:01:40,160
+while the server is coming up.
+
+39
+00:01:40,160 --> 00:01:42,780
+So while that's doing that, I'm
+going to go ahead and open up
+
+40
+00:01:42,780 --> 00:01:46,280
+a few ports so I can connect
+to the server from my laptop,
+
+41
+00:01:46,280 --> 00:01:49,720
+or if it's a beta for
+an app you're building,
+
+42
+00:01:49,720 --> 00:01:52,480
+you can give the
+URL to your friends.
+
+43
+00:01:52,480 --> 00:01:55,560
+So to open up the ports
+you need, go to Instances,
+
+44
+00:01:55,560 --> 00:01:56,648
+and then I clicked on--
+
+45
+00:01:56,648 --> 00:01:57,440
+I'll do that again.
+
+46
+00:01:57,440 --> 00:01:58,580
+I did it quick.
+
+47
+00:01:58,580 --> 00:02:03,240
+Click on the EC2
+instance that you want.
+
+48
+00:02:03,240 --> 00:02:06,800
+Again, mine was-- there
+it is-- vscode_test.
+
+49
+00:02:06,800 --> 00:02:08,479
+Scroll down, you'll
+see Security.
+
+50
+00:02:08,479 --> 00:02:11,120
+The Security tab is
+where you open up ports.
+
+51
+00:02:11,120 --> 00:02:13,640
+Security group, click on that.
+
+52
+00:02:13,640 --> 00:02:17,883
+And then you're going to do Edit
+inbound rules for your ports.
+
+53
+00:02:17,883 --> 00:02:19,300
+I'm going to add
+three more rules.
+
+54
+00:02:19,300 --> 00:02:24,840
+Custom TCP connection, I'm going
+to open up port 8000 for Django.
+
+55
+00:02:24,840 --> 00:02:29,760
+I'm going to open up port
+8080 for VS Code web client.
+
+56
+00:02:29,760 --> 00:02:34,500
+And I'm going to open up port
+8081 for the React Native app.
+
+57
+00:02:34,500 --> 00:02:36,320
+I'm going to save
+the-- oop, open it up
+
+58
+00:02:36,320 --> 00:02:37,880
+for the world on that one.
+
+59
+00:02:37,880 --> 00:02:38,820
+Save the rules.
+
+60
+00:02:38,820 --> 00:02:44,820
+Now the servers open up,
+and we should be connected.
+
+61
+00:02:49,100 --> 00:02:50,820
+And we have a brand-new server.
+
+62
+00:02:50,820 --> 00:02:53,240
+So let's start putting
+stuff on here now.
+
+63
+00:02:53,240 --> 00:02:59,000
+So the co-instructor, Elijah, we
+have a bunch of scripts and apps
+
+64
+00:02:59,000 --> 00:02:59,780
+on there for you.
+
+65
+00:02:59,780 --> 00:03:05,140
+So if you go to github.com
+and go to Manodiestra,
+
+66
+00:03:05,140 --> 00:03:10,800
+that's Elijah's GitHub username.
+
+67
+00:03:10,800 --> 00:03:13,275
+Go to Repositories and
+then go to EC2 scripts.
+
+68
+00:03:13,275 --> 00:03:14,900
+This is going to be
+all the scripts you
+
+69
+00:03:14,900 --> 00:03:17,940
+want to download everything.
+
+70
+00:03:17,940 --> 00:03:20,680
+And then I'm going to grab the
+URL there so I can clone it.
+
+71
+00:03:20,680 --> 00:03:27,340
+So copy the URL for that repo,
+go back here, do a git clone,
+
+72
+00:03:27,340 --> 00:03:30,860
+and then paste in that repo.
+
+73
+00:03:30,860 --> 00:03:32,000
+And there you go.
+
+74
+00:03:32,000 --> 00:03:34,542
+One more thing you need to do
+before you start running things
+
+75
+00:03:34,542 --> 00:03:35,400
+is change the mode.
+
+76
+00:03:35,400 --> 00:03:38,500
+So the command is chmod,
+and do a -R. That'll do it
+
+77
+00:03:38,500 --> 00:03:40,540
+for all the scripts at once.
+
+78
+00:03:40,540 --> 00:03:43,320
+And then the folder is EC2.
+
+79
+00:03:43,320 --> 00:03:43,820
+Oop.
+
+80
+00:03:47,460 --> 00:03:49,220
+Let me double check there.
+
+81
+00:03:49,220 --> 00:03:50,280
+Yeah, we've got EC2.
+
+82
+00:03:50,280 --> 00:03:53,560
+Yep, that looks
+good, chmod - R EC2.
+
+83
+00:03:57,980 --> 00:04:00,720
+What do we got there?
+
+84
+00:04:00,720 --> 00:04:01,820
+Invalid mode.
+
+85
+00:04:01,820 --> 00:04:02,500
+Oh, pardon me.
+
+86
+00:04:02,500 --> 00:04:03,000
+Duh.
+
+87
+00:04:03,000 --> 00:04:04,858
+Do chmod - R775.
+
+88
+00:04:04,858 --> 00:04:06,400
+I've got to give
+the mode, of course.
+
+89
+00:04:06,400 --> 00:04:09,320
+775, that'll make it
+open for you, your group,
+
+90
+00:04:09,320 --> 00:04:12,440
+and lock down for
+execution for the world.
+
+91
+00:04:12,440 --> 00:04:13,193
+So run that.
+
+92
+00:04:13,193 --> 00:04:13,860
+That looks good.
+
+93
+00:04:13,860 --> 00:04:17,920
+Now we're going to run
+dot slash EC2 scripts,
+
+94
+00:04:17,920 --> 00:04:21,339
+and we're going to do
+VS Code server install.
+
+95
+00:04:21,339 --> 00:04:24,200
+So that is now loading
+all the libraries
+
+96
+00:04:24,200 --> 00:04:25,740
+to run VS Code on the server.
+
+97
+00:04:25,740 --> 00:04:27,600
+So you can code
+directly on your server.
+
+98
+00:04:27,600 --> 00:04:29,740
+Similar to AWS
+Cloud9 how it works,
+
+99
+00:04:29,740 --> 00:04:34,000
+but since that's been end
+of lifed, VS Code web client
+
+100
+00:04:34,000 --> 00:04:35,600
+is a better IDE anyway.
+
+101
+00:04:35,600 --> 00:04:38,340
+And you can run it right on
+the server just like Cloud9.
+
+102
+00:04:38,340 --> 00:04:39,740
+So that takes about 15 minutes.
+
+103
+00:04:39,740 --> 00:04:40,760
+I'm going to go ahead
+and pause the video.
+
+104
+00:04:40,760 --> 00:04:42,787
+And I'll come back in
+once the script is done.
+
+105
+00:04:42,787 --> 00:04:43,620
+See you in a minute.
+
+106
+00:04:48,740 --> 00:04:49,300
+We're back.
+
+107
+00:04:49,300 --> 00:04:50,880
+And that actually only
+took three or four minutes
+
+108
+00:04:50,880 --> 00:04:51,588
+to load all that.
+
+109
+00:04:51,588 --> 00:04:53,100
+So that's good.
+
+110
+00:04:53,100 --> 00:04:56,060
+So now I'm going to open
+up VS Code web client.
+
+111
+00:04:56,060 --> 00:04:57,900
+And actually, the
+script gives you the URL
+
+112
+00:04:57,900 --> 00:04:58,900
+you can open right here.
+
+113
+00:04:58,900 --> 00:05:01,660
+So I'm going to grab that.
+
+114
+00:05:01,660 --> 00:05:03,660
+By the way you could
+keep running scripts
+
+115
+00:05:03,660 --> 00:05:07,883
+inside that command line.
+
+116
+00:05:07,883 --> 00:05:09,300
+But I like doing
+it within VS Code
+
+117
+00:05:09,300 --> 00:05:11,520
+because it actually has
+some built-in tools to see,
+
+118
+00:05:11,520 --> 00:05:13,812
+oh, you're running an app,
+and it'll give you the links
+
+119
+00:05:13,812 --> 00:05:15,000
+to view it, which I like.
+
+120
+00:05:15,000 --> 00:05:16,940
+So I'm going to go
+straight to VS Code.
+
+121
+00:05:16,940 --> 00:05:20,000
+When you connect here, you need
+to verify their certificate.
+
+122
+00:05:20,000 --> 00:05:22,000
+Maybe you've seen this
+before on other websites.
+
+123
+00:05:22,000 --> 00:05:24,400
+But hit Advance and
+then do proceed to it.
+
+124
+00:05:24,400 --> 00:05:26,180
+That'll accept the certificate.
+
+125
+00:05:26,180 --> 00:05:27,520
+And then you need to log in.
+
+126
+00:05:27,520 --> 00:05:30,080
+So the default
+password is "changeme!"
+
+127
+00:05:30,080 --> 00:05:32,300
+And you can see the
+file right there.
+
+128
+00:05:32,300 --> 00:05:36,040
+Change the password in that file
+and then lock the permissions
+
+129
+00:05:36,040 --> 00:05:36,540
+down.
+
+130
+00:05:36,540 --> 00:05:40,000
+And then you'll be secure.
+
+131
+00:05:40,000 --> 00:05:42,580
+So now we are logged
+in to the VS Code web
+
+132
+00:05:42,580 --> 00:05:44,745
+client running on our EC2.
+
+133
+00:05:44,745 --> 00:05:46,620
+I'm going to hit, "Yes,
+I trust the authors,"
+
+134
+00:05:46,620 --> 00:05:49,240
+and open up a terminal.
+
+135
+00:05:49,240 --> 00:05:52,420
+Now we've got a terminal
+on our VS Code web client.
+
+136
+00:05:52,420 --> 00:05:54,700
+I'm going to-- let's
+take a look at--
+
+137
+00:05:54,700 --> 00:05:56,940
+let me zoom in a little
+bit so you can see better.
+
+138
+00:05:56,940 --> 00:05:58,420
+There we go.
+
+139
+00:05:58,420 --> 00:05:59,460
+Look at the script here.
+
+140
+00:05:59,460 --> 00:06:02,380
+So we just ran vs code server
+install in the other window.
+
+141
+00:06:02,380 --> 00:06:06,260
+Now we're going to
+run install tools.
+
+142
+00:06:06,260 --> 00:06:06,760
+Oh.
+
+143
+00:06:12,055 --> 00:06:13,680
+That'll load everything
+you need to run
+
+144
+00:06:13,680 --> 00:06:22,080
+Django and React and
+React Native Expo,
+
+145
+00:06:22,080 --> 00:06:24,340
+and I think Python
+virtual environments, too.
+
+146
+00:06:30,738 --> 00:06:31,780
+So that'll take a minute.
+
+147
+00:06:31,780 --> 00:06:33,000
+I won't pause the video,
+though, because it
+
+148
+00:06:33,000 --> 00:06:33,958
+should be pretty quick.
+
+149
+00:06:37,160 --> 00:06:39,140
+You guys know any jokes,
+while that's running?
+
+150
+00:07:13,250 --> 00:07:15,050
+Cruising along there,
+about halfway done.
+
+151
+00:07:19,450 --> 00:07:20,870
+Once we've got
+install tools done,
+
+152
+00:07:20,870 --> 00:07:25,010
+we'll go ahead and run
+install Elijah demos,
+
+153
+00:07:25,010 --> 00:07:28,930
+and that'll bring in
+Django, and it actually
+
+154
+00:07:28,930 --> 00:07:32,570
+bring in the GitHub repos with
+some pre-built projects for you
+
+155
+00:07:32,570 --> 00:07:34,610
+guys to get started with.
+
+156
+00:07:34,610 --> 00:07:36,670
+Oh, well, I thought
+we were done.
+
+157
+00:07:51,050 --> 00:07:52,110
+There we go.
+
+158
+00:07:52,110 --> 00:07:52,950
+So that's done now.
+
+159
+00:07:52,950 --> 00:07:54,710
+Now we're going to run--
+
+160
+00:07:58,172 --> 00:07:59,630
+there we go--
+install Elijah demos.
+
+161
+00:07:59,630 --> 00:08:01,350
+Essentially, that'll
+pull the GitHub repos
+
+162
+00:08:01,350 --> 00:08:02,630
+for the Django app
+we're going to give you
+
+163
+00:08:02,630 --> 00:08:03,830
+and the React,
+React Native, Expo
+
+164
+00:08:03,830 --> 00:08:05,110
+app we're going to give you.
+
+165
+00:08:05,110 --> 00:08:05,850
+So run that.
+
+166
+00:08:05,850 --> 00:08:07,850
+And you can see what just
+popped in right there,
+
+167
+00:08:07,850 --> 00:08:12,772
+the Django example fall 2024,
+for our back end right there.
+
+168
+00:08:12,772 --> 00:08:14,230
+And again, the
+other script install
+
+169
+00:08:14,230 --> 00:08:16,438
+tools, that loaded everything
+you need to run Django.
+
+170
+00:08:16,438 --> 00:08:18,550
+So you should be
+good to go right now.
+
+171
+00:08:18,550 --> 00:08:19,210
+So there it is.
+
+172
+00:08:19,210 --> 00:08:21,090
+If you see your app is running.
+
+173
+00:08:21,090 --> 00:08:22,970
+So this is actually
+your Django backend.
+
+174
+00:08:22,970 --> 00:08:25,152
+It's only what Django serves up.
+
+175
+00:08:25,152 --> 00:08:27,610
+It's not your beautiful front
+end, it's just your back end.
+
+176
+00:08:27,610 --> 00:08:29,250
+So that's running.
+
+177
+00:08:29,250 --> 00:08:32,049
+And now it's starting
+up Expo as well.
+
+178
+00:08:36,110 --> 00:08:38,210
+Recall that React is
+the web front end.
+
+179
+00:08:38,210 --> 00:08:40,190
+React Native is your mobile app.
+
+180
+00:08:40,190 --> 00:08:41,950
+And Expo partnered
+with React Native
+
+181
+00:08:41,950 --> 00:08:44,930
+so that you can use one
+code base for all three.
+
+182
+00:08:44,930 --> 00:08:45,850
+It's pretty awesome.
+
+183
+00:08:45,850 --> 00:08:47,910
+One code base gets
+you a full web app,
+
+184
+00:08:47,910 --> 00:08:52,510
+a full mobile app on Android
+and on iOS all at once,
+
+185
+00:08:52,510 --> 00:08:53,690
+which is really nice.
+
+186
+00:08:56,083 --> 00:08:57,250
+That's fired up right there.
+
+187
+00:08:57,250 --> 00:09:00,250
+You can see, open and
+browser, although the Expo
+
+188
+00:09:00,250 --> 00:09:01,790
+app is on 8081.
+
+189
+00:09:01,790 --> 00:09:05,210
+I found that to be finicky when
+you click on that link here.
+
+190
+00:09:05,210 --> 00:09:10,610
+So what I'm actually going
+to do, if you see up here,
+
+191
+00:09:10,610 --> 00:09:14,670
+I'm going to grab this
+or go in here to this.
+
+192
+00:09:14,670 --> 00:09:18,110
+This is the link for
+that Django back end.
+
+193
+00:09:18,110 --> 00:09:19,950
+So just switch that to 8081.
+
+194
+00:09:19,950 --> 00:09:22,330
+And actually, you don't
+want proxy there either.
+
+195
+00:09:22,330 --> 00:09:26,670
+So go to the IP
+address and then 8081.
+
+196
+00:09:26,670 --> 00:09:27,170
+Oop.
+
+197
+00:09:30,478 --> 00:09:31,233
+"Not found."
+
+198
+00:09:31,233 --> 00:09:32,650
+Hang on, let me
+double check that.
+
+199
+00:09:36,150 --> 00:09:39,950
+Expo-- let's try this guy.
+
+200
+00:09:56,507 --> 00:09:57,590
+I think that should do it.
+
+201
+00:09:57,590 --> 00:10:01,110
+It's loading, because the first
+time you log into your React app
+
+202
+00:10:01,110 --> 00:10:05,390
+from the web, not just
+from one browser, anytime--
+
+203
+00:10:05,390 --> 00:10:08,350
+the first time it's
+logged in period.
+
+204
+00:10:08,350 --> 00:10:09,570
+No, didn't like that either.
+
+205
+00:10:09,570 --> 00:10:12,430
+It'll load all of
+your web components.
+
+206
+00:10:12,430 --> 00:10:13,930
+You'll see them
+compile right there.
+
+207
+00:10:13,930 --> 00:10:15,370
+That doesn't look right.
+
+208
+00:10:15,370 --> 00:10:18,690
+Let me go back here, grab
+the right IP address.
+
+209
+00:10:18,690 --> 00:10:29,090
+Let me go back to
+Instances, vscode_test.
+
+210
+00:10:36,550 --> 00:10:37,050
+There we go.
+
+211
+00:10:37,050 --> 00:10:40,510
+I'm going to grab the public
+IP address right here.
+
+212
+00:10:40,510 --> 00:10:48,150
+And then that guy, I'm going to
+put 8081 and remove the S. Expo
+
+213
+00:10:48,150 --> 00:10:51,510
+app's not secure
+yet, so remove the S.
+
+214
+00:10:51,510 --> 00:10:53,267
+And let's see that's
+loading there.
+
+215
+00:10:53,267 --> 00:10:54,850
+And if you go, you
+can go see it load.
+
+216
+00:10:54,850 --> 00:10:55,250
+There we go.
+
+217
+00:10:55,250 --> 00:10:55,917
+That looks good.
+
+218
+00:10:55,917 --> 00:10:56,830
+So you can go see it.
+
+219
+00:10:56,830 --> 00:10:58,810
+In your terminal,
+when it's loading,
+
+220
+00:10:58,810 --> 00:11:02,230
+you'll see these web
+components compiling.
+
+221
+00:11:02,230 --> 00:11:03,890
+That only happens once.
+
+222
+00:11:03,890 --> 00:11:05,590
+So it's lazy loading.
+
+223
+00:11:05,590 --> 00:11:08,770
+So everything that
+needs to be compiled
+
+224
+00:11:08,770 --> 00:11:10,030
+is done once the first time.
+
+225
+00:11:10,030 --> 00:11:11,322
+So you can see that in the log.
+
+226
+00:11:11,322 --> 00:11:11,989
+That looks good.
+
+227
+00:11:11,989 --> 00:11:13,447
+While that's
+compiling, you'll just
+
+228
+00:11:13,447 --> 00:11:14,990
+see the website
+hanging and waiting.
+
+229
+00:11:14,990 --> 00:11:15,750
+That's normal.
+
+230
+00:11:29,130 --> 00:11:30,990
+That looks like it's good.
+
+231
+00:11:30,990 --> 00:11:31,590
+Here it is.
+
+232
+00:11:31,590 --> 00:11:33,007
+And we can test
+it out right here.
+
+233
+00:11:33,007 --> 00:11:37,770
+I'm going to do Add user form
+because this will save down
+
+234
+00:11:37,770 --> 00:11:38,910
+to your database.
+
+235
+00:11:42,130 --> 00:11:44,510
+Django comes with a
+built-in SQLite database.
+
+236
+00:11:44,510 --> 00:11:46,650
+So it's a file-based
+database, but it still
+
+237
+00:11:46,650 --> 00:11:49,530
+gives you tables and
+can easily store tables
+
+238
+00:11:49,530 --> 00:11:50,755
+with a few million rows each.
+
+239
+00:11:50,755 --> 00:11:52,130
+Anything bigger
+than that, you're
+
+240
+00:11:52,130 --> 00:11:55,550
+probably going to want to set
+up a proper RDS database in AWS.
+
+241
+00:11:55,550 --> 00:11:57,190
+But while you're
+in beta and just
+
+242
+00:11:57,190 --> 00:12:02,870
+building things out and vetting
+out some things, SQLite is fine.
+
+243
+00:12:02,870 --> 00:12:06,910
+And then hit Submit,
+come back here to Home.
+
+244
+00:12:06,910 --> 00:12:07,610
+And there it is.
+
+245
+00:12:07,610 --> 00:12:11,090
+There's our user
+entry that we added.
+
+246
+00:12:11,090 --> 00:12:13,950
+So that's been persisted
+to the back end.
+
+247
+00:12:13,950 --> 00:12:15,470
+And you're done.
+
+248
+00:12:15,470 --> 00:12:18,735
+Now from here, you can build it.
+
+249
+00:12:18,735 --> 00:12:20,610
+Go build your front end,
+build your back end,
+
+250
+00:12:20,610 --> 00:12:23,670
+go build your app,
+and build your dreams.
+
+251
+00:12:23,670 --> 00:12:27,350
+So just to recap,
+new server, don't
+
+252
+00:12:27,350 --> 00:12:30,650
+forget to chmod, the directory,
+so you can run those scripts.
+
+253
+00:12:30,650 --> 00:12:34,630
+Let's get the scripts
+from Elijah's repo.
+
+254
+00:12:34,630 --> 00:12:35,910
+Run the vs code install.
+
+255
+00:12:35,910 --> 00:12:37,010
+That gets you VS Code.
+
+256
+00:12:37,010 --> 00:12:38,790
+Open up a terminal,
+run the install tools,
+
+257
+00:12:38,790 --> 00:12:40,570
+and install Elijah's demos.
+
+258
+00:12:40,570 --> 00:12:42,070
+That gets you your
+back end, which
+
+259
+00:12:42,070 --> 00:12:44,570
+has your database built-in,
+your front end, React,
+
+260
+00:12:44,570 --> 00:12:46,150
+React Native, Expo.
+
+261
+00:12:46,150 --> 00:12:48,430
+And you can run it, take a
+look, play around with it,
+
+262
+00:12:48,430 --> 00:12:50,990
+and start building it
+out and doing more.
+
+263
+00:12:50,990 --> 00:12:51,490
+That is it.
+
+264
+00:12:51,490 --> 00:12:52,670
+Thanks for watching.
+
+265
+00:12:52,670 --> 00:12:54,620
+Have a good one.

@@ -1,0 +1,745 @@
+1
+00:00:02,710 --> 00:00:05,280
+Hello, everyone, and welcome
+to the content video going
+
+2
+00:00:05,280 --> 00:00:08,290
+over, well, it's going over a
+lot. We're going to talk about
+
+3
+00:00:08,290 --> 00:00:13,770
+if statements, if else, and
+if else, if else statements.
+
+4
+00:00:13,770 --> 00:00:16,000
+So these go along with control statements
+
+5
+00:00:16,000 --> 00:00:18,510
+in that they control
+the flow of our code.
+
+6
+00:00:19,730 --> 00:00:23,170
+So I like the example it gives
+here. Suppose that a passing grade
+
+7
+00:00:23,170 --> 00:00:25,990
+on an exam is 60. The pseudocode
+would look like this. If a
+
+8
+00:00:25,990 --> 00:00:28,890
+student's grade is greater than
+or equal to 60, display passed. So
+
+9
+00:00:28,890 --> 00:00:32,030
+what does that look like in code?
+We would use an if statement.
+
+10
+00:00:32,030 --> 00:00:37,790
+And then we use the comparison
+operators greater than, equal to,
+
+11
+00:00:38,040 --> 00:00:42,370
+less than, equal to, just
+greater than, just less than, or
+
+12
+00:00:42,370 --> 00:00:46,510
+equal, equal to, to determine
+truthfulness of statements.
+
+13
+00:00:47,350 --> 00:00:53,950
+And one thing that is really, really
+important with if statements and
+
+14
+00:00:53,950 --> 00:00:57,650
+loops and a lot of other types of
+things that you'll code, and this
+
+15
+00:00:57,650 --> 00:01:02,270
+is a syntax thing, is that when
+you start an if statement, and some
+
+16
+00:01:02,270 --> 00:01:05,470
+of those other examples, you do
+need to make sure that all the code
+
+17
+00:01:05,470 --> 00:01:09,370
+that comes after the colon with
+it is indented properly. And we'll
+
+18
+00:01:09,370 --> 00:01:12,110
+do an example in just a minute so
+you can see what that looks like.
+
+19
+00:01:12,530 --> 00:01:15,210
+But just know that if your indentation is
+
+20
+00:01:15,210 --> 00:01:16,640
+off, you're going to get a lot of errors.
+
+21
+00:01:17,860 --> 00:01:20,050
+This is kind of what an if
+statement would look like with
+
+22
+00:01:20,050 --> 00:01:23,670
+a flow chart. So grade
+greater than or equal to 60,
+
+23
+00:01:23,670 --> 00:01:27,510
+true, print passed, false, not
+passed. So nothing happens.
+
+24
+00:01:29,790 --> 00:01:31,930
+Every expression could
+be interpreted as either
+
+25
+00:01:31,930 --> 00:01:34,670
+true or false. This is an
+interesting little tidbit.
+
+26
+00:01:34,670 --> 00:01:37,670
+Anything that's non-zero is
+automatically interpreted
+
+27
+00:01:37,670 --> 00:01:40,730
+as true, but zero is
+interpreted as false.
+
+28
+00:01:40,730 --> 00:01:44,030
+So that's a fun thing to
+test out in your code.
+
+29
+00:01:44,500 --> 00:01:47,410
+And then the last thing we'll
+talk about here before we jump
+
+30
+00:01:47,410 --> 00:01:51,410
+into some examples is the
+fact that we don't use the
+
+31
+00:01:51,410 --> 00:01:55,010
+assignment operator when we're
+using an if statement. We use
+
+32
+00:01:55,010 --> 00:01:59,510
+the double confusing, which is
+called the equality operator.
+
+33
+00:01:59,510 --> 00:02:04,310
+So we use this to check
+for something being equal
+
+34
+00:02:04,310 --> 00:02:07,810
+to something else instead
+of a single equal sign
+
+35
+00:02:07,810 --> 00:02:10,350
+because that assigns a
+value to another value.
+
+36
+00:02:10,590 --> 00:02:13,370
+So let's jump over to our code space, and
+
+37
+00:02:13,370 --> 00:02:15,810
+let's do a couple of
+examples of if statements.
+
+38
+00:02:21,980 --> 00:02:22,900
+Okay.
+
+39
+00:02:24,320 --> 00:02:29,100
+So I could do something
+like this. I could say, if 5
+
+40
+00:02:29,570 --> 00:02:33,920
+greater than 10, colon at
+the end of my if statement,
+
+41
+00:02:34,220 --> 00:02:38,400
+print 5 is greater.
+
+42
+00:02:38,400 --> 00:02:41,020
+And then maybe let's code
+another one down here.
+
+43
+00:02:41,020 --> 00:02:53,920
+we'll say if 10 greater
+than 5 print 10 it whoops
+
+44
+00:02:54,810 --> 00:02:59,060
+10 is greater let's run
+these and see what happens
+
+45
+00:02:59,610 --> 00:03:03,900
+okay so we only get one output that
+says 10 is greater why do we only
+
+46
+00:03:03,900 --> 00:03:07,580
+get one output well as Python goes
+through our code line by line, it
+
+47
+00:03:07,580 --> 00:03:13,660
+finds a false statement right here
+on line five. So it says five greater
+
+48
+00:03:13,660 --> 00:03:17,720
+than 10. That is false. And so if it
+comes back with a false statement,
+
+49
+00:03:17,740 --> 00:03:21,660
+any of the code that falls
+under the if statement is not
+
+50
+00:03:21,660 --> 00:03:25,800
+executed. If it finds a true, it
+will be executed. So that's why
+
+51
+00:03:25,800 --> 00:03:29,240
+we see this print statement that
+is on line nine, because the
+
+52
+00:03:29,240 --> 00:03:33,080
+if statement on line eight
+returned true. Now, what if I do
+
+53
+00:03:33,080 --> 00:03:38,380
+something like this? Let's reverse
+the sign. If 5 less than 10.
+
+54
+00:03:38,890 --> 00:03:40,400
+And I run this code.
+
+55
+00:03:41,020 --> 00:03:44,700
+Okay, both of these statements
+returned true, right?
+
+56
+00:03:45,000 --> 00:03:49,260
+5 is greater, 10 is greater,
+but 5 is not greater than 10. So
+
+57
+00:03:49,260 --> 00:03:52,500
+what's the problem here? Well,
+the problem is a hard-coded value.
+
+58
+00:03:52,580 --> 00:03:56,560
+And maybe that's not the best
+idea. There's a lot of reasons why
+
+59
+00:03:56,560 --> 00:03:59,720
+it's not a good idea to hard
+-code values and to use variables
+
+60
+00:03:59,720 --> 00:04:03,840
+instead. But we'll address that
+a lot more as we go throughout
+
+61
+00:04:03,840 --> 00:04:08,120
+the course. So just know that if
+you're going to do something like
+
+62
+00:04:08,120 --> 00:04:12,920
+this, it's probably best if you
+maybe don't hard code values.
+
+63
+00:04:13,180 --> 00:04:16,520
+Let's do a couple more just
+kind of simple examples that are
+
+64
+00:04:16,520 --> 00:04:22,920
+similar to if statements, but
+a little bit different. So
+
+65
+00:04:22,920 --> 00:04:26,560
+I'm going to do just a couple
+of little things in here. Let's
+
+66
+00:04:26,560 --> 00:04:32,100
+do 10 greater than or sorry
+that's less than or equal to
+
+67
+00:04:33,320 --> 00:04:36,760
+5 print let's do 10
+
+68
+00:04:37,560 --> 00:04:39,660
+what did I do above that
+
+69
+00:04:41,560 --> 00:04:44,590
+greater than or equal to 5
+
+70
+00:04:46,980 --> 00:04:55,280
+10 equal to 5 and we'll do this is
+the last one print 10 not equal to
+
+71
+00:04:55,780 --> 00:04:56,580
+five.
+
+72
+00:04:59,420 --> 00:05:00,220
+Okay,
+
+73
+00:05:01,120 --> 00:05:03,680
+you probably can determine
+the truthfulness of each
+
+74
+00:05:03,680 --> 00:05:05,700
+of these statements before
+I ever run the code, but
+
+75
+00:05:05,700 --> 00:05:07,700
+let's just kind of talk
+through each one. So, ten
+
+76
+00:05:07,760 --> 00:05:10,980
+smaller than five, no, that's
+false. Ten greater than five,
+
+77
+00:05:10,980 --> 00:05:15,180
+true. Ten less than or equal
+to five, no, that's also still
+
+78
+00:05:15,180 --> 00:05:17,940
+false. Ten greater than or
+equal to five, that'll be true.
+
+79
+00:05:18,200 --> 00:05:22,420
+Ten equal to five, no, but ten not
+equal to five, yes. So, we should
+
+80
+00:05:22,420 --> 00:05:26,040
+see a variety of false true false
+true false true and that's because
+
+81
+00:05:26,040 --> 00:05:29,840
+the way that our numbers are okay
+so we could test for all of these
+
+82
+00:05:29,840 --> 00:05:33,720
+conditions in an if statement and
+depending on if the statement came
+
+83
+00:05:33,720 --> 00:05:37,360
+back as true or false it would run
+the code underneath the if statement
+
+84
+00:05:37,360 --> 00:05:40,720
+this is where that indentation
+thing comes into play so anything
+
+85
+00:05:40,720 --> 00:05:44,920
+that is in my if statement even
+if it had nothing to do with it um
+
+86
+00:05:45,070 --> 00:05:51,220
+it's a great day this would get run
+within my in sorry this would get
+
+87
+00:05:51,220 --> 00:05:55,200
+run if my if statement returned
+true so anything that's within the
+
+88
+00:05:55,200 --> 00:06:01,200
+scope of my if statement there okay
+so then let's talk about if else
+
+89
+00:06:01,200 --> 00:06:10,120
+statements so let's say I have a
+condition like a status actually let's
+
+90
+00:06:10,120 --> 00:06:17,520
+do a grade so grade let's say grade
+equals 90 and we'll say if grade
+
+91
+00:06:17,520 --> 00:06:22,660
+how high do you need to get an A
+Is it greater than or equal to 95?
+
+92
+00:06:23,280 --> 00:06:26,280
+So if grade is greater
+than or equal to 95, then
+
+93
+00:06:26,280 --> 00:06:32,780
+we'll print out, you
+have an A in the class.
+
+94
+00:06:34,300 --> 00:06:35,660
+Great work.
+
+95
+00:06:36,860 --> 00:06:39,800
+But realistically, there's a
+lot of grades to check. And
+
+96
+00:06:39,800 --> 00:06:46,180
+we don't necessarily want to
+say if grade greater than or
+
+97
+00:06:46,180 --> 00:06:49,960
+equal to, I don't know, what's
+an A minus, an 89, I think.
+
+98
+00:06:50,740 --> 00:06:58,900
+Then we'll print out you have an
+A minus in the class. Great work.
+
+99
+00:06:58,900 --> 00:07:01,940
+And we could go through and do this
+for every single letter possibility
+
+100
+00:07:01,940 --> 00:07:06,300
+and that might be something that
+we would want to do. But what we
+
+101
+00:07:06,300 --> 00:07:09,320
+could do instead is if we just wanted
+to tell the student if they had
+
+102
+00:07:09,320 --> 00:07:12,520
+an A or not, we could say something
+like this. If grade greater than
+
+103
+00:07:12,520 --> 00:07:21,260
+or equal to 95 print whatever and
+then we can say else print you are
+
+104
+00:07:21,260 --> 00:07:29,640
+still learning a lot so if my if
+statement does not return true by
+
+105
+00:07:29,640 --> 00:07:35,220
+default my else statement will
+execute so if for whatever reason this
+
+106
+00:07:35,220 --> 00:07:38,700
+line or sorry this line does not
+return true this line will always get
+
+107
+00:07:38,700 --> 00:07:44,260
+run so let's run this and you can
+see that we are still learning a
+
+108
+00:07:44,260 --> 00:07:50,520
+lot. So let's change our grade up
+here to 95 and we would expect to now
+
+109
+00:07:50,520 --> 00:07:54,440
+see you have an A in the class.
+Great work. So that's kind of what
+
+110
+00:07:54,440 --> 00:08:01,360
+an else statement does. It runs
+something underneath our if statement
+
+111
+00:08:01,360 --> 00:08:07,170
+if the if statement does not return
+true. And then there is if elif,
+
+112
+00:08:08,600 --> 00:08:12,360
+which is a totally different
+thing so let's take that grade
+
+113
+00:08:12,360 --> 00:08:16,580
+example again and let's say we've
+got grade equals I don't know
+
+114
+00:08:16,580 --> 00:08:23,440
+let's say 76 that's a good grade
+we could say if grade and this
+
+115
+00:08:23,440 --> 00:08:25,900
+is where I might get a little
+bit long let me just kind of copy
+
+116
+00:08:25,900 --> 00:08:30,740
+this from a note that I've got
+actually no I'll do the first
+
+117
+00:08:30,740 --> 00:08:35,050
+one so if grade and we already
+said greater than or equal to 95
+
+118
+00:08:39,680 --> 00:08:40,560
+And
+
+119
+00:08:45,730 --> 00:08:50,290
+then what we did a second ago is we
+said an else statement will execute
+
+120
+00:08:50,290 --> 00:08:53,290
+something else, but what if we
+actually wanted it to run through every
+
+121
+00:08:53,290 --> 00:08:57,070
+single possibility before it ran an
+else statement? We don't necessarily
+
+122
+00:08:57,070 --> 00:09:01,270
+want to code 19 different if
+statements. And so what we could do is
+
+123
+00:09:01,270 --> 00:09:05,370
+we can use an else if. And so what
+an else if will do is it will check
+
+124
+00:09:05,370 --> 00:09:13,920
+another condition. So I can say L if
+grade greater than or equal to 90,
+
+125
+00:09:14,510 --> 00:09:15,610
+print,
+
+126
+00:09:15,790 --> 00:09:17,870
+and we already know, minus,
+
+127
+00:09:18,450 --> 00:09:20,750
+and then let's do another one.
+
+128
+00:09:21,230 --> 00:09:26,490
+L if grade, and this is where
+I stop knowing what grades
+
+129
+00:09:26,490 --> 00:09:30,170
+equal which letters, so we're
+just going to generalize. If grade
+
+130
+00:09:30,170 --> 00:09:35,290
+greater than or equal to 80,
+let's just say you have a B,
+
+131
+00:09:37,980 --> 00:09:47,970
+we'll do L if grade greater than
+or equal to 70, then you have a C.
+
+132
+00:09:49,590 --> 00:09:52,950
+And then let's throw an else on the end
+
+133
+00:09:52,950 --> 00:09:54,430
+of that, because if you don't have a C,
+
+134
+00:09:54,590 --> 00:10:00,710
+you probably have a not passing
+grade. so we'll print you should go
+
+135
+00:10:00,710 --> 00:10:10,250
+get help you can totally do this
+something like that so the thing
+
+136
+00:10:10,250 --> 00:10:15,250
+with an if l if statement is that
+one condition only one condition
+
+137
+00:10:15,250 --> 00:10:20,610
+can be true all right so if I run
+this it's kind of there's a lot in
+
+138
+00:10:20,610 --> 00:10:25,290
+my output let me comment this
+stuff out let me run this again so
+
+139
+00:10:25,290 --> 00:10:30,590
+if I run my code, I should see the
+letter C because I have a grade of
+
+140
+00:10:30,590 --> 00:10:34,390
+76, so I have a C, right? So if
+I change this to a 90, I would
+
+141
+00:10:34,390 --> 00:10:39,270
+expect to see an A minus. If I
+changed it to, I don't know, let's say
+
+142
+00:10:39,270 --> 00:10:45,430
+a 45% in the class, then I should
+go get help and I can totally do
+
+143
+00:10:45,430 --> 00:10:50,590
+this, right? So only one of these
+statements is ever true, but there
+
+144
+00:10:50,590 --> 00:10:55,290
+are times where you may still want
+to use multiple if statements.
+
+145
+00:10:56,290 --> 00:11:02,650
+and that is when there can be more
+than one true condition so maybe
+
+146
+00:11:02,650 --> 00:11:11,510
+if it's a Wednesday but it's also
+the I don't know 20th of the month
+
+147
+00:11:11,510 --> 00:11:16,170
+those are two true conditions that
+can both be become true so that's a
+
+148
+00:11:16,170 --> 00:11:19,770
+case where you might want to use
+multiple if statements instead of an
+
+149
+00:11:19,770 --> 00:11:24,610
+if lf because remember with an if
+lf there can only be one condition
+
+150
+00:11:24,610 --> 00:11:28,690
+that returns true so only one of
+these statements will execute but
+
+151
+00:11:28,690 --> 00:11:33,170
+with you have multiple if statements
+then it doesn't matter you can you
+
+152
+00:11:33,170 --> 00:11:36,050
+can have multiple if statements and
+they are all testing for different
+
+153
+00:11:36,050 --> 00:11:39,930
+things. So that concludes this
+content video. Thanks for watching.

@@ -1,0 +1,623 @@
+1
+00:00:02,780 --> 00:00:04,900
+Hey everybody, welcome to
+the content video going
+
+2
+00:00:04,900 --> 00:00:08,640
+over section 4.2 of your
+textbook defining functions.
+
+3
+00:00:08,780 --> 00:00:11,900
+Now something that whenever
+we start a new chapter in the
+
+4
+00:00:11,900 --> 00:00:15,010
+book I fail to do is go over
+the introduction section.
+
+5
+00:00:15,380 --> 00:00:19,840
+You guys are more than welcome
+to kind of read the outline and
+
+6
+00:00:19,840 --> 00:00:23,280
+objective section of each of the
+chapters, but I usually just jump
+
+7
+00:00:23,280 --> 00:00:26,220
+right into the ones that start
+working on code. So if you're
+
+8
+00:00:26,220 --> 00:00:29,220
+interested in why we always start
+at like the point two, that's why.
+
+9
+00:00:29,520 --> 00:00:34,060
+Okay, so functions. This is a
+great concept to learn when you're
+
+10
+00:00:34,060 --> 00:00:38,940
+working with anything in Python or
+any code really because at some point
+
+11
+00:00:38,940 --> 00:00:41,440
+in your code you're going to want
+to be able to do something that
+
+12
+00:00:41,440 --> 00:00:45,920
+isn't built in. So let me give you
+a quick analogy about functions.
+
+13
+00:00:46,420 --> 00:00:51,100
+So we call tons and tons and
+tons of built-in functions like
+
+14
+00:00:51,100 --> 00:00:56,180
+print, float, they list a couple
+of them here, len, min, max,
+
+15
+00:00:56,280 --> 00:00:59,740
+There's like hundreds of these
+functions that we call all the time
+
+16
+00:00:59,740 --> 00:01:03,340
+and they do really great and useful
+stuff for us. But like it says in
+
+17
+00:01:03,340 --> 00:01:06,340
+our textbook, sometimes you're going
+to want to have something custom
+
+18
+00:01:06,340 --> 00:01:09,800
+for a specific purpose, right?
+So this is sometimes like when I
+
+19
+00:01:09,800 --> 00:01:12,980
+go to Walmart and I don't know why
+I picked Walmart. I go to stores
+
+20
+00:01:12,980 --> 00:01:15,820
+looking for like the perfect pair
+of jeans, right? And like I can't
+
+21
+00:01:15,820 --> 00:01:19,860
+find the perfect pair of jeans at
+any store. So I just buy some denim,
+
+22
+00:01:19,860 --> 00:01:23,140
+get a pattern and I make them myself.
+They're custom, right? So same
+
+23
+00:01:23,140 --> 00:01:26,260
+kind of idea here with functions
+is that sometimes we have specific
+
+24
+00:01:26,260 --> 00:01:32,760
+things that we just want to do
+and want to have operate in our
+
+25
+00:01:32,760 --> 00:01:39,340
+algorithm, but it doesn't make sense
+to have it be built using the built
+
+26
+00:01:39,340 --> 00:01:42,320
+-in methods of Python. And sometimes
+it's nice to be able to have
+
+27
+00:01:42,320 --> 00:01:47,530
+something that you can call over
+and over and over again so that you
+
+28
+00:01:47,680 --> 00:01:50,720
+don't have to, like, write out a
+ton of code every time you want to
+
+29
+00:01:50,720 --> 00:01:54,800
+do the same process. So let me kind
+of walk you through an example.
+
+30
+00:01:57,060 --> 00:02:00,980
+And maybe we'll just do this one.
+
+31
+00:02:02,480 --> 00:02:06,100
+Well, I'll walk you through the
+example. So here's one where they
+
+32
+00:02:06,100 --> 00:02:09,920
+are defining a function that will
+square a number, right? and when we
+
+33
+00:02:09,920 --> 00:02:15,420
+square a number we do something
+like this here let me just we say
+
+34
+00:02:15,420 --> 00:02:24,200
+you know square is equal to two
+raised to the power of two we could
+
+35
+00:02:24,200 --> 00:02:30,620
+do that again right square again
+equal or sorry sine to the value of
+
+36
+00:02:31,350 --> 00:02:36,800
+two it's the power actually that's
+cubed so we'll just write cubed
+
+37
+00:02:39,000 --> 00:02:42,060
+And we could go one more, we could, I
+
+38
+00:02:42,060 --> 00:02:43,540
+don't know what to the fourth power is,
+
+39
+00:02:43,700 --> 00:02:44,300
+fourth,
+
+40
+00:02:44,740 --> 00:02:45,700
+two,
+
+41
+00:02:46,670 --> 00:02:50,140
+raise to the power of four, right?
+But it does get a little bit
+
+42
+00:02:50,140 --> 00:02:54,280
+tiring, like, writing all of this
+out. Okay, so one thing that they're
+
+43
+00:02:54,280 --> 00:02:57,940
+using as an example is, they're
+saying, here is a function where you
+
+44
+00:02:57,940 --> 00:03:01,200
+can just put in a number, and it
+will raise that number to the second
+
+45
+00:03:01,200 --> 00:03:06,840
+power, right? and that means you
+could run this function any number
+
+46
+00:03:06,840 --> 00:03:10,590
+of times just like how we run
+the print function or the min max
+
+47
+00:03:10,590 --> 00:03:13,980
+whatever function you could run
+this function over and over and over
+
+48
+00:03:13,980 --> 00:03:17,700
+and over again on any number and
+it will do the same thing for it.
+
+49
+00:03:18,000 --> 00:03:24,800
+So to create a function
+you need a couple of pieces
+
+50
+00:03:24,800 --> 00:03:30,510
+you You need a name,
+you need arguments, you
+
+51
+00:03:33,560 --> 00:03:38,820
+need the main body of logic,
+and you need a return.
+
+52
+00:03:39,780 --> 00:03:43,040
+So what this looks like is if I
+was to create a function that would
+
+53
+00:03:43,040 --> 00:03:46,720
+square a number, I would define it,
+and this is the syntax, you say def
+
+54
+00:03:46,720 --> 00:03:50,620
+or definition, and then you name
+your function. I would call this one
+
+55
+00:03:50,620 --> 00:03:57,320
+square or maybe I'd call it square
+two numbers square or I don't know
+
+56
+00:03:57,320 --> 00:04:00,660
+actually no I would just call it
+square because that makes the most
+
+57
+00:04:00,660 --> 00:04:05,780
+sense and if I am going to square a
+number I need the number I want to
+
+58
+00:04:05,780 --> 00:04:12,120
+square all right you use a colon so
+that anything that comes after it
+
+59
+00:04:12,120 --> 00:04:16,540
+gets indented so it's within the
+scope of the function definition so
+
+60
+00:04:16,540 --> 00:04:22,760
+I'll say let's take the number and
+we will set it or assign it the value
+
+61
+00:04:22,760 --> 00:04:28,960
+of or sorry we don't want the
+number we want the square like a new
+
+62
+00:04:28,960 --> 00:04:36,760
+variable square is equal to the
+number raised to the power of two and
+
+63
+00:04:36,760 --> 00:04:41,540
+then we will return square let's
+actually name it something else so it's
+
+64
+00:04:41,540 --> 00:04:45,540
+not the same name as our function
+name we'll call it square num turn
+
+65
+00:04:54,810 --> 00:04:59,370
+square num so check out what
+happens when I print out square.
+
+66
+00:05:06,450 --> 00:05:09,110
+You guessed it. Nothing happened, right?
+
+67
+00:05:09,270 --> 00:05:13,370
+And check out why. Type error
+square is missing one required
+
+68
+00:05:13,370 --> 00:05:16,250
+positional argument number. So
+it's saying, hey, I can't do
+
+69
+00:05:16,250 --> 00:05:20,770
+anything because you didn't
+give me an argument. You didn't
+
+70
+00:05:20,770 --> 00:05:22,910
+give me the number I was
+expecting. So let's put in seven.
+
+71
+00:05:23,410 --> 00:05:25,230
+I think that's the one
+they use in the textbook.
+
+72
+00:05:25,590 --> 00:05:29,720
+And outcomes, oh, there
+it is, 49. All Let's run
+
+73
+00:05:31,290 --> 00:05:34,950
+this again, but let's
+run it on 10 this time.
+
+74
+00:05:35,210 --> 00:05:37,910
+We would expect to see 100, and we do.
+
+75
+00:05:38,270 --> 00:05:39,930
+Here's something worth noting.
+
+76
+00:05:41,010 --> 00:05:44,300
+What happens if I just run square
+
+77
+00:05:45,730 --> 00:05:46,930
+on 5?
+
+78
+00:05:49,770 --> 00:05:52,870
+We don't get the result outputted.
+Why not? Well, it's because
+
+79
+00:05:52,870 --> 00:05:58,390
+we're not printing the result.
+So is 5 being squared? Yes, it is
+
+80
+00:05:58,390 --> 00:06:01,950
+being squared, because we are calling
+this function that we defined,
+
+81
+00:06:01,950 --> 00:06:06,410
+so 5 is getting fed into this
+function definition, and then
+
+82
+00:06:06,410 --> 00:06:10,810
+the number 5 is getting squared
+and assigned to the value of square
+
+83
+00:06:10,810 --> 00:06:13,410
+num, and then square num is
+being returned, but it's like the
+
+84
+00:06:13,410 --> 00:06:15,810
+number is being returned and then
+we don't do anything with it.
+
+85
+00:06:15,990 --> 00:06:23,510
+But check out this. I could say
+result is equal to square of five
+
+86
+00:06:23,510 --> 00:06:30,210
+and then I could say result plus
+equals four and then print results.
+
+87
+00:06:42,830 --> 00:06:47,370
+Result is now 29. Why is it 29?
+Well it's because it was 25 once I
+
+88
+00:06:47,370 --> 00:06:51,430
+squared five but then I added
+four to it, right? So once we have
+
+89
+00:06:51,430 --> 00:06:54,690
+a variable of a returning from a
+function we can return it to our
+
+90
+00:06:54,690 --> 00:06:57,850
+code and then that's what the
+return statement does. It throws the
+
+91
+00:06:57,850 --> 00:07:02,490
+variable back to us that we can
+then do more things with it. So
+
+92
+00:07:02,490 --> 00:07:06,170
+this becomes useful because now we
+have a function that we can call
+
+93
+00:07:06,170 --> 00:07:12,690
+as many times as we want. So I
+could say for I in range a thousand
+
+94
+00:07:17,380 --> 00:07:20,630
+print square and we'll just do it on I.
+
+95
+00:07:21,630 --> 00:07:24,850
+And we should see some
+numbers that get pretty
+
+96
+00:07:24,850 --> 00:07:26,770
+big pretty fast, right?
+These are the numbers that
+
+97
+00:07:26,770 --> 00:07:29,350
+we're squaring, and they
+are already in like the
+
+98
+00:07:30,070 --> 00:07:35,510
+600,000s. So pretty cool. And
+that's kind of the idea of defining
+
+99
+00:07:35,510 --> 00:07:39,750
+a custom function. So one thing
+you might be asking is, well,
+
+100
+00:07:39,750 --> 00:07:42,910
+why would I do any of that?
+Because I could just as easily
+
+101
+00:07:42,910 --> 00:07:47,290
+square the number. And while that's
+true, for these examples that
+
+102
+00:07:47,290 --> 00:07:50,650
+I'm showing you, it's pretty
+straightforward, and you probably
+
+103
+00:07:50,650 --> 00:07:53,910
+wouldn't need to define a
+function just to square a number.
+
+104
+00:07:53,950 --> 00:07:58,470
+But we do get into some pretty
+complicated algorithms, especially
+
+105
+00:07:58,470 --> 00:08:01,420
+as we code more and more and
+as you get out into industry.
+
+106
+00:08:01,670 --> 00:08:08,530
+You get into examples that are
+just not feasible to be writing out
+
+107
+00:08:08,530 --> 00:08:12,690
+10 different times for, you know,
+very small changes to be made.
+
+108
+00:08:12,690 --> 00:08:15,410
+And so that's where functions
+become really, really helpful is
+
+109
+00:08:15,410 --> 00:08:21,070
+because they're a set of code, a
+block of code that will be the same
+
+110
+00:08:21,070 --> 00:08:25,150
+every single time it gets run. You
+shouldn't have any bugs or errors,
+
+111
+00:08:25,150 --> 00:08:27,750
+which I actually don't remember
+if the textbook talks about, but
+
+112
+00:08:27,750 --> 00:08:32,150
+there's a bunch of reasons that
+using a function is really, really
+
+113
+00:08:32,150 --> 00:08:36,630
+great. One of them is modularity.
+So it helps us to break up our
+
+114
+00:08:36,630 --> 00:08:41,290
+code into specific modules and
+helps us to have specific little
+
+115
+00:08:41,290 --> 00:08:44,710
+elements that we can reuse over
+and over. It helps with debugging.
+
+116
+00:08:45,450 --> 00:08:48,450
+So that, you know, if I know
+that this function is working
+
+117
+00:08:48,450 --> 00:08:51,010
+perfectly, there's probably and
+there's something still wrong
+
+118
+00:08:51,010 --> 00:08:54,010
+with my code. The problem is
+somewhere outside of the function.
+
+119
+00:08:54,170 --> 00:08:57,970
+It also helps us with
+readability of our code. I'm not
+
+120
+00:08:57,970 --> 00:09:00,950
+seeing any of these things
+in here, but they're probably
+
+121
+00:09:00,950 --> 00:09:04,170
+in here somewhere. I'm just
+saying them off my memory.
+
+122
+00:09:04,650 --> 00:09:09,330
+So, yeah, readability of our code
+functions really help with readability.
+
+123
+00:09:09,330 --> 00:09:11,790
+And I think there's a couple of
+other benefits as well that I
+
+124
+00:09:11,790 --> 00:09:16,650
+can't remember off the top of my
+head. But really, it's good for
+
+125
+00:09:16,650 --> 00:09:22,010
+reusability of code and, yeah,
+breaking things into smaller, easier
+
+126
+00:09:22,010 --> 00:09:26,910
+chunks that are better situated for
+specific use cases. So that's going
+
+127
+00:09:26,910 --> 00:09:29,630
+to wrap up everything for this
+content video. Thanks for watching.

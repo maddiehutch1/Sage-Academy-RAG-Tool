@@ -1,0 +1,1680 @@
+1
+00:00:02,393 --> 00:00:03,560
+INSTRUCTOR: Hello, everyone.
+
+2
+00:00:03,560 --> 00:00:07,920
+And welcome to the content and
+video for tree data structure,
+
+3
+00:00:07,920 --> 00:00:08,420
+OK.
+
+4
+00:00:08,420 --> 00:00:11,480
+So now that we've covered the
+list-like data structures,
+
+5
+00:00:11,480 --> 00:00:15,230
+like lists, arrays,
+queues and stacks,
+
+6
+00:00:15,230 --> 00:00:16,940
+we're going to talk about trees.
+
+7
+00:00:16,940 --> 00:00:21,410
+So tree data structures
+provide some optimization
+
+8
+00:00:21,410 --> 00:00:25,220
+with a lot of the operations
+you do in a data structure,
+
+9
+00:00:25,220 --> 00:00:28,280
+putting data inside there,
+finding it, deleting it.
+
+10
+00:00:28,280 --> 00:00:31,760
+And those operations can be
+done a lot faster in a tree
+
+11
+00:00:31,760 --> 00:00:34,220
+than they can in a
+list data structure.
+
+12
+00:00:34,220 --> 00:00:40,190
+And to demonstrate that
+or illustrate that,
+
+13
+00:00:40,190 --> 00:00:44,070
+let's bring back up the
+example of a phone book.
+
+14
+00:00:44,070 --> 00:00:46,880
+So in a phone book, since
+everything's sorted,
+
+15
+00:00:46,880 --> 00:00:50,630
+recall that you can find
+something in log n time or log
+
+16
+00:00:50,630 --> 00:00:54,650
+base 2n because 2 being every
+time you open up the phone book
+
+17
+00:00:54,650 --> 00:00:58,640
+in half, you've removed half of
+the phone book that needs to be
+
+18
+00:00:58,640 --> 00:01:00,030
+searched again.
+
+19
+00:01:00,030 --> 00:01:02,030
+So if you just keep
+searching in halves,
+
+20
+00:01:02,030 --> 00:01:04,890
+half, half, half, half,
+half, the number of page
+
+21
+00:01:04,890 --> 00:01:07,560
+turns it takes you to find
+something in a phone book
+
+22
+00:01:07,560 --> 00:01:09,870
+is log base 2 of n.
+
+23
+00:01:09,870 --> 00:01:12,270
+So the idea with
+the tree structure
+
+24
+00:01:12,270 --> 00:01:17,400
+is, let's take advantage of that
+log n ability in a find, insert,
+
+25
+00:01:17,400 --> 00:01:20,340
+and delete opposed to the log--
+
+26
+00:01:20,340 --> 00:01:22,950
+excuse me, opposed
+to order n of a
+
+27
+00:01:22,950 --> 00:01:25,750
+find, insert, and
+delete in a list.
+
+28
+00:01:25,750 --> 00:01:30,030
+So that's what we're after
+is the speed of log n, OK.
+
+29
+00:01:30,030 --> 00:01:33,868
+So let's take a look at
+some tree structures here.
+
+30
+00:01:33,868 --> 00:01:35,910
+First, the bulk of what
+we're going to talk about
+
+31
+00:01:35,910 --> 00:01:38,760
+is a binary search tree, a BST.
+
+32
+00:01:38,760 --> 00:01:42,480
+But to set that up, let's
+have just a quick look
+
+33
+00:01:42,480 --> 00:01:44,080
+at a binary tree.
+
+34
+00:01:44,080 --> 00:01:47,650
+So a binary tree, as
+you can see right here,
+
+35
+00:01:47,650 --> 00:01:51,280
+a binary tree has nodes
+and then children.
+
+36
+00:01:51,280 --> 00:01:56,170
+They're also referred
+to as inner nodes,
+
+37
+00:01:56,170 --> 00:01:58,500
+if they're inside the
+tree or leaf nodes
+
+38
+00:01:58,500 --> 00:02:01,620
+if they're at the edge of a
+tree and have no children,
+
+39
+00:02:01,620 --> 00:02:02,707
+that's a leaf node.
+
+40
+00:02:02,707 --> 00:02:04,290
+And then there's the
+root node, if you
+
+41
+00:02:04,290 --> 00:02:06,090
+can see where my mouse is
+hovering right now at the top
+
+42
+00:02:06,090 --> 00:02:06,600
+here.
+
+43
+00:02:06,600 --> 00:02:09,669
+Number one is the root node
+or the beginning of the tree.
+
+44
+00:02:09,669 --> 00:02:13,410
+All these inside nodes or inner
+nodes and then these leaf nodes
+
+45
+00:02:13,410 --> 00:02:15,780
+are at the end here, OK.
+
+46
+00:02:15,780 --> 00:02:18,060
+So this is a binary tree.
+
+47
+00:02:18,060 --> 00:02:21,970
+But so what the heck are nodes
+or what do they represent?
+
+48
+00:02:21,970 --> 00:02:27,250
+They're the exact same thing as
+whatever you stored in the list.
+
+49
+00:02:27,250 --> 00:02:30,690
+So if you have a list of
+floats, the tree version of that
+
+50
+00:02:30,690 --> 00:02:33,550
+would just be a node
+containing a float.
+
+51
+00:02:33,550 --> 00:02:39,140
+So just like we don't really
+call spaces in a list nodes,
+
+52
+00:02:39,140 --> 00:02:40,640
+but that's really
+just all they are.
+
+53
+00:02:40,640 --> 00:02:42,810
+So a space inside a list.
+
+54
+00:02:42,810 --> 00:02:47,790
+For example, you start counting
+at index 0 in a list, here,
+
+55
+00:02:47,790 --> 00:02:49,990
+you would start at
+the root of the tree.
+
+56
+00:02:49,990 --> 00:02:52,860
+But that's really all they are,
+just a space to store data.
+
+57
+00:02:52,860 --> 00:02:55,470
+And as you can see, though,
+they have a different structure.
+
+58
+00:02:55,470 --> 00:02:59,440
+Instead of one node next
+to another, like a list,
+
+59
+00:02:59,440 --> 00:03:01,890
+here, there's a child
+relationship, a parent
+
+60
+00:03:01,890 --> 00:03:03,340
+and child relationship.
+
+61
+00:03:03,340 --> 00:03:06,130
+So the root is the parent
+of all the other nodes.
+
+62
+00:03:06,130 --> 00:03:08,260
+And then you can see,
+it's got two children.
+
+63
+00:03:08,260 --> 00:03:10,690
+Hence, the name binary,
+refers to two children.
+
+64
+00:03:10,690 --> 00:03:14,940
+So the left child is node
+two and the right child
+
+65
+00:03:14,940 --> 00:03:17,100
+is node three, OK.
+
+66
+00:03:17,100 --> 00:03:18,987
+So that's the rule
+of a binary tree.
+
+67
+00:03:18,987 --> 00:03:20,070
+And again, why do we care?
+
+68
+00:03:20,070 --> 00:03:22,890
+It's because we want to
+get to where we have find,
+
+69
+00:03:22,890 --> 00:03:26,040
+insert, and delete
+operations in log n time
+
+70
+00:03:26,040 --> 00:03:29,720
+much faster than order n time.
+
+71
+00:03:29,720 --> 00:03:31,970
+All right, so now, let's add
+one little piece to this.
+
+72
+00:03:31,970 --> 00:03:35,880
+So binary tree, in
+practice really, I've
+
+73
+00:03:35,880 --> 00:03:38,050
+never used a binary
+tree in my life.
+
+74
+00:03:38,050 --> 00:03:42,090
+I've used binary search trees,
+a specific type of binary tree
+
+75
+00:03:42,090 --> 00:03:43,500
+often.
+
+76
+00:03:43,500 --> 00:03:46,320
+So here's the one rule we add
+to a binary tree to make it
+
+77
+00:03:46,320 --> 00:03:47,350
+a binary search tree.
+
+78
+00:03:47,350 --> 00:03:48,270
+Here's the rule.
+
+79
+00:03:48,270 --> 00:03:53,820
+That every child on the left
+has to be smaller than the node.
+
+80
+00:03:53,820 --> 00:03:57,070
+And every child on the right
+has to be greater than the node.
+
+81
+00:03:57,070 --> 00:03:59,000
+So let's start with
+the root node here, 8.
+
+82
+00:03:59,000 --> 00:04:01,650
+So if the root node is
+8, everything on the left
+
+83
+00:04:01,650 --> 00:04:02,590
+must be smaller.
+
+84
+00:04:02,590 --> 00:04:05,290
+Well, is 3, 1, 6, 4, and
+7 all smaller than 8?
+
+85
+00:04:05,290 --> 00:04:05,970
+Yes.
+
+86
+00:04:05,970 --> 00:04:08,890
+On the right side, is 10, 14,
+and 13 all smaller than 8?
+
+87
+00:04:08,890 --> 00:04:09,970
+Yes, they all are.
+
+88
+00:04:09,970 --> 00:04:12,870
+So this binary
+search tree follows
+
+89
+00:04:12,870 --> 00:04:14,950
+that rule of everything
+on the left smaller.
+
+90
+00:04:14,950 --> 00:04:17,019
+And you can see all of the
+inner nodes follow that as well.
+
+91
+00:04:17,019 --> 00:04:17,769
+Look at this 3.
+
+92
+00:04:17,769 --> 00:04:20,740
+Everything on the left
+of the 3, 1 is smaller.
+
+93
+00:04:20,740 --> 00:04:24,400
+Everything on the right of the
+3, 6, 4, 7 is greater than.
+
+94
+00:04:24,400 --> 00:04:27,760
+And that's true for all
+of the nodes in the tree.
+
+95
+00:04:27,760 --> 00:04:29,680
+So that's a binary search tree.
+
+96
+00:04:29,680 --> 00:04:32,320
+And a binary search
+tree, that's where
+
+97
+00:04:32,320 --> 00:04:37,420
+you start to get the phone
+book ability, the ability to
+
+98
+00:04:37,420 --> 00:04:38,930
+divide the data in half.
+
+99
+00:04:38,930 --> 00:04:40,720
+So when I look for
+something, say, I'm
+
+100
+00:04:40,720 --> 00:04:43,900
+looking for the number 6 here,
+well, if I start at the root 8,
+
+101
+00:04:43,900 --> 00:04:46,270
+I know 6 is less than
+8, go to the left.
+
+102
+00:04:46,270 --> 00:04:50,190
+Then I get to the node
+with a value 3, OK,
+
+103
+00:04:50,190 --> 00:04:52,140
+6 is greater than
+3, go to the right.
+
+104
+00:04:52,140 --> 00:04:53,500
+And then I go to the right here.
+
+105
+00:04:53,500 --> 00:04:55,960
+So it's like that phone.
+
+106
+00:04:55,960 --> 00:04:57,060
+Like I divide--
+
+107
+00:04:57,060 --> 00:04:58,950
+I'm dividing my tree
+in half each time,
+
+108
+00:04:58,950 --> 00:05:00,928
+looking for what
+I want because I
+
+109
+00:05:00,928 --> 00:05:02,970
+know I don't need to search
+that half of the tree
+
+110
+00:05:02,970 --> 00:05:05,380
+at all, if it's not
+what I'm looking for.
+
+111
+00:05:05,380 --> 00:05:07,560
+So that's what
+gives us that order
+
+112
+00:05:07,560 --> 00:05:11,920
+log n speed of a binary
+search tree, all right.
+
+113
+00:05:11,920 --> 00:05:20,564
+So let's do some
+examples here, OK.
+
+114
+00:05:20,564 --> 00:05:27,170
+So I'm going to take these
+nodes here and do some--
+
+115
+00:05:27,170 --> 00:05:28,500
+insert them into a tree.
+
+116
+00:05:28,500 --> 00:05:29,480
+So I'll start with 3.
+
+117
+00:05:29,480 --> 00:05:31,850
+These are the nodes here,
+3, 1, 4, 1, 5, 9, 2, 6.
+
+118
+00:05:31,850 --> 00:05:33,690
+And I'm going to insert
+them into a tree.
+
+119
+00:05:33,690 --> 00:05:36,040
+So first, we have the root 3.
+
+120
+00:05:36,040 --> 00:05:38,500
+1, we go to the left.
+
+121
+00:05:38,500 --> 00:05:39,130
+Add 1 there.
+
+122
+00:05:39,130 --> 00:05:42,400
+4, we insert, go
+to the right there.
+
+123
+00:05:42,400 --> 00:05:43,390
+1 is a duplicate.
+
+124
+00:05:43,390 --> 00:05:45,340
+There's a couple of ways
+to handle duplicates.
+
+125
+00:05:45,340 --> 00:05:48,902
+In practice, you can either
+have a counter on each node
+
+126
+00:05:48,902 --> 00:05:50,360
+and then just
+increment the counter
+
+127
+00:05:50,360 --> 00:05:51,943
+and say, hey, there's
+a duplicate one,
+
+128
+00:05:51,943 --> 00:05:53,030
+just add a counter.
+
+129
+00:05:53,030 --> 00:05:56,680
+So count would be 1 here already
+and you make it counter 2.
+
+130
+00:05:56,680 --> 00:05:58,910
+Or in practice, you
+can just add it.
+
+131
+00:05:58,910 --> 00:06:01,550
+If you make a rule, just
+add duplicates to the left.
+
+132
+00:06:01,550 --> 00:06:02,280
+That's fine too.
+
+133
+00:06:02,280 --> 00:06:03,530
+And I'm going to do that here.
+
+134
+00:06:03,530 --> 00:06:05,150
+So 1 gets added there.
+
+135
+00:06:05,150 --> 00:06:08,200
+5, we start at the root,
+we go to the right.
+
+136
+00:06:08,200 --> 00:06:10,780
+5 is greater than 3,
+5 is greater than 4.
+
+137
+00:06:10,780 --> 00:06:14,060
+As soon as we hit an
+empty, we insert it.
+
+138
+00:06:14,060 --> 00:06:16,670
+In fact, maybe I
+should point out here,
+
+139
+00:06:16,670 --> 00:06:21,743
+if we have a leaf node here,
+it still has two children,
+
+140
+00:06:21,743 --> 00:06:22,910
+it's just that they're null.
+
+141
+00:06:22,910 --> 00:06:24,170
+They're empty values.
+
+142
+00:06:24,170 --> 00:06:26,990
+And that'll come into play when
+we write the code for this.
+
+143
+00:06:26,990 --> 00:06:29,780
+When we hit a null value,
+that's when we know,
+
+144
+00:06:29,780 --> 00:06:33,260
+OK, this is where I'm going
+to insert my node, all right.
+
+145
+00:06:33,260 --> 00:06:34,650
+So next up, we have a 9.
+
+146
+00:06:34,650 --> 00:06:36,860
+We start from the root,
+9 is greater than 3,
+
+147
+00:06:36,860 --> 00:06:39,140
+9 is greater than 4,
+9 is greater than 5.
+
+148
+00:06:39,140 --> 00:06:42,240
+And we insert a 9.
+
+149
+00:06:42,240 --> 00:06:43,350
+2 is less than 3.
+
+150
+00:06:43,350 --> 00:06:45,330
+2 is greater than 1.
+
+151
+00:06:45,330 --> 00:06:47,430
+2 is inserted right there.
+
+152
+00:06:47,430 --> 00:06:50,980
+6 is greater than 3, greater
+than 4, greater than 5,
+
+153
+00:06:50,980 --> 00:06:51,710
+less than 9.
+
+154
+00:06:54,970 --> 00:06:58,275
+And here's our binary
+search tree, OK.
+
+155
+00:06:58,275 --> 00:07:01,650
+So then when we
+want to do a find,
+
+156
+00:07:01,650 --> 00:07:09,600
+let's say we do a find of
+5, a find of 5 here, OK.
+
+157
+00:07:09,600 --> 00:07:11,490
+We start at the root
+5 is greater than 3
+
+158
+00:07:11,490 --> 00:07:13,670
+and greater than 4,
+and then we hit the 5.
+
+159
+00:07:13,670 --> 00:07:16,870
+So as soon as we find
+this, we return true.
+
+160
+00:07:16,870 --> 00:07:18,450
+We return true.
+
+161
+00:07:18,450 --> 00:07:21,340
+And that return true goes
+back to the 4, back to the 3,
+
+162
+00:07:21,340 --> 00:07:27,940
+and then is returned to the find
+5 function call as true, OK.
+
+163
+00:07:27,940 --> 00:07:29,230
+So when is it not true?
+
+164
+00:07:29,230 --> 00:07:32,650
+What will be the case
+when we cannot find the 5?
+
+165
+00:07:32,650 --> 00:07:35,330
+Well, it's actually as
+simple as when we hit a null.
+
+166
+00:07:35,330 --> 00:07:38,375
+So for example, what if
+we did a find 7 here.
+
+167
+00:07:41,520 --> 00:07:43,020
+7 does not exist in the tree.
+
+168
+00:07:43,020 --> 00:07:46,080
+We start at root, go to the
+right, 7 is greater than 4,
+
+169
+00:07:46,080 --> 00:07:50,230
+7 is greater than 5, 7 is less
+than 9, 7 is greater than 6,
+
+170
+00:07:50,230 --> 00:07:52,300
+and we hit a null.
+
+171
+00:07:52,300 --> 00:07:53,870
+I'll even add 1.
+
+172
+00:07:53,870 --> 00:07:54,850
+There we go.
+
+173
+00:07:54,850 --> 00:07:56,690
+Then I'll add 2.
+
+174
+00:07:56,690 --> 00:07:57,610
+We hit a null.
+
+175
+00:07:57,610 --> 00:08:00,120
+Well, null then,
+we return false.
+
+176
+00:08:00,120 --> 00:08:04,250
+So this return false is returned
+back up to 6, 9, 5, 4, 3.
+
+177
+00:08:04,250 --> 00:08:07,130
+And then find 7 is true.
+
+178
+00:08:07,130 --> 00:08:09,920
+Excuse me, find 7 is false, OK.
+
+179
+00:08:09,920 --> 00:08:13,360
+So I need to point out
+one concept that I've
+
+180
+00:08:13,360 --> 00:08:16,360
+been glossing over quickly.
+
+181
+00:08:16,360 --> 00:08:21,620
+The operations in a tree can
+be performed recursively.
+
+182
+00:08:21,620 --> 00:08:24,550
+So recall from our
+definition of recursion,
+
+183
+00:08:24,550 --> 00:08:29,020
+a recursive problem
+is when the logic
+
+184
+00:08:29,020 --> 00:08:31,150
+to solve the superset
+of the problem
+
+185
+00:08:31,150 --> 00:08:35,200
+is the same as the logic to
+solve the subset of the problem.
+
+186
+00:08:35,200 --> 00:08:37,960
+OK, that's a wordy
+explanation, but it's actually
+
+187
+00:08:37,960 --> 00:08:39,919
+a really practical example here.
+
+188
+00:08:39,919 --> 00:08:42,460
+So when I take this tree,
+when I'm looking for 7,
+
+189
+00:08:42,460 --> 00:08:46,450
+the logic on how to get it,
+if the tree is this size,
+
+190
+00:08:46,450 --> 00:08:50,930
+is the exact same as if the
+tree is only 4 and then down.
+
+191
+00:08:50,930 --> 00:08:53,780
+So the logic I start up
+here, 3, I go to the right,
+
+192
+00:08:53,780 --> 00:08:55,572
+it's the exact same
+logic all the way down.
+
+193
+00:08:55,572 --> 00:08:57,572
+Go to the left, go to the
+right, go to the left,
+
+194
+00:08:57,572 --> 00:08:59,810
+go to the right. go down,
+go down, go down, go down,
+
+195
+00:08:59,810 --> 00:09:01,340
+hit a null 7.
+
+196
+00:09:01,340 --> 00:09:05,870
+Well, in recursion, what
+stops the recursion?
+
+197
+00:09:05,870 --> 00:09:07,250
+The base case.
+
+198
+00:09:07,250 --> 00:09:10,210
+So in my base case, I'm going
+to be looking for either I
+
+199
+00:09:10,210 --> 00:09:12,680
+found my number in
+the case of find 5,
+
+200
+00:09:12,680 --> 00:09:15,230
+my base case is going to
+look for the number I found,
+
+201
+00:09:15,230 --> 00:09:18,260
+or it's going to
+look for a null.
+
+202
+00:09:18,260 --> 00:09:20,690
+So those are my base
+cases and the operations
+
+203
+00:09:20,690 --> 00:09:22,850
+of a binary search
+tree for the find.
+
+204
+00:09:22,850 --> 00:09:25,800
+Did I find what I'm looking
+for or did I hit a null?
+
+205
+00:09:25,800 --> 00:09:27,930
+Then those base cases return.
+
+206
+00:09:27,930 --> 00:09:30,740
+In the case of find 5,
+it's going to hit the 5
+
+207
+00:09:30,740 --> 00:09:32,930
+and return true,
+return true, return
+
+208
+00:09:32,930 --> 00:09:35,850
+true to the original function
+call, and then you're done.
+
+209
+00:09:35,850 --> 00:09:36,890
+That's recursion.
+
+210
+00:09:36,890 --> 00:09:38,252
+Same thing with the find 7.
+
+211
+00:09:38,252 --> 00:09:40,460
+I make a function call,
+function call, function call,
+
+212
+00:09:40,460 --> 00:09:41,043
+function call.
+
+213
+00:09:41,043 --> 00:09:43,530
+Hit a null, base case
+triggers, return false,
+
+214
+00:09:43,530 --> 00:09:46,040
+return false, false,
+false, false, false, false.
+
+215
+00:09:46,040 --> 00:09:50,030
+Recursively find 7,
+function call returns false.
+
+216
+00:09:50,030 --> 00:09:54,980
+So trees are also a perfect
+candidate for recursion.
+
+217
+00:09:54,980 --> 00:09:58,100
+And you'll find that when you
+do these operations recursively,
+
+218
+00:09:58,100 --> 00:10:01,350
+it actually makes the code
+very small and concise.
+
+219
+00:10:01,350 --> 00:10:05,630
+Because remember, the logic
+to do this on a tree of size 1
+
+220
+00:10:05,630 --> 00:10:09,870
+is the same exact logic to
+do it of size 1 million.
+
+221
+00:10:09,870 --> 00:10:12,290
+You don't need more for
+loops and while loops
+
+222
+00:10:12,290 --> 00:10:15,050
+and if statements to handle
+a tree of size 1 million,
+
+223
+00:10:15,050 --> 00:10:18,270
+it's the same exact logic
+if it's the tree of size 1.
+
+224
+00:10:18,270 --> 00:10:20,900
+So once you get your recursive
+function, which is just
+
+225
+00:10:20,900 --> 00:10:24,050
+a few lines of code for
+the find and the insert,
+
+226
+00:10:24,050 --> 00:10:26,130
+it works no matter
+what size the tree is.
+
+227
+00:10:26,130 --> 00:10:28,190
+So it makes it a perfect
+candidate for recursion
+
+228
+00:10:28,190 --> 00:10:31,970
+and the recursive solution
+a lot more simple, OK.
+
+229
+00:10:31,970 --> 00:10:36,440
+Last thing we'll cover here
+on the board is delete.
+
+230
+00:10:36,440 --> 00:10:39,420
+So now, let's say we're
+going to delete this 5,
+
+231
+00:10:39,420 --> 00:10:43,050
+there's one caveat you need
+to keep in mind when you do.
+
+232
+00:10:43,050 --> 00:10:44,140
+In fact, I'm going to--
+
+233
+00:10:44,140 --> 00:10:45,640
+I'm going to change
+on the fly here.
+
+234
+00:10:45,640 --> 00:10:48,110
+Let's do a 10.
+
+235
+00:10:48,110 --> 00:10:49,313
+And then we'll do--
+
+236
+00:10:52,450 --> 00:10:54,100
+let's do another
+10 because we're
+
+237
+00:10:54,100 --> 00:10:55,550
+following the rule duplicates.
+
+238
+00:10:55,550 --> 00:10:57,880
+Go to the left and then 11, OK.
+
+239
+00:10:57,880 --> 00:11:00,840
+I'm adding this really
+quick here to 2.
+
+240
+00:11:00,840 --> 00:11:03,340
+There's one caveat you have to
+keep in mind with the delete.
+
+241
+00:11:03,340 --> 00:11:05,210
+And I'm adding a
+little bit of the tree,
+
+242
+00:11:05,210 --> 00:11:06,430
+so I can show you that.
+
+243
+00:11:06,430 --> 00:11:14,648
+OK, so now, we're going
+to delete the 9, OK.
+
+244
+00:11:14,648 --> 00:11:16,090
+So we're going to delete the 9.
+
+245
+00:11:16,090 --> 00:11:18,760
+Well, to delete the 9,
+first we have to find it.
+
+246
+00:11:18,760 --> 00:11:22,090
+So a delete is
+identical to a find.
+
+247
+00:11:22,090 --> 00:11:23,700
+It's just that once
+you find it, you
+
+248
+00:11:23,700 --> 00:11:25,380
+need to delete it
+out of the tree
+
+249
+00:11:25,380 --> 00:11:28,320
+and adjust the tree so it's
+still a binary search tree, OK.
+
+250
+00:11:28,320 --> 00:11:32,440
+So first step in the delete
+is find it, 3, 4, 5, 9,
+
+251
+00:11:32,440 --> 00:11:33,490
+we found it.
+
+252
+00:11:33,490 --> 00:11:36,900
+So can we just delete
+it and call it good?
+
+253
+00:11:36,900 --> 00:11:39,520
+Well, no, we can't
+have a binary search
+
+254
+00:11:39,520 --> 00:11:41,830
+tree that just has something
+missing in the middle.
+
+255
+00:11:41,830 --> 00:11:43,820
+It just has a non-existent node.
+
+256
+00:11:43,820 --> 00:11:47,200
+We need to readjust this
+tree, so that it's still
+
+257
+00:11:47,200 --> 00:11:49,200
+a valid binary search tree.
+
+258
+00:11:49,200 --> 00:11:50,800
+So how do we do that?
+
+259
+00:11:50,800 --> 00:11:52,880
+Well, what are our options here?
+
+260
+00:11:52,880 --> 00:11:56,380
+We could bring up the 6 here.
+
+261
+00:11:56,380 --> 00:11:58,300
+And then would that
+still be valid?
+
+262
+00:11:58,300 --> 00:12:00,933
+6 is greater than 5 and
+10 is greater than 6.
+
+263
+00:12:00,933 --> 00:12:01,850
+Yeah, that would work.
+
+264
+00:12:01,850 --> 00:12:05,210
+But I added this to show you
+one problem that can arise.
+
+265
+00:12:05,210 --> 00:12:07,700
+If this tree right here,
+if the next layer is full,
+
+266
+00:12:07,700 --> 00:12:09,140
+can we bring this 10 up?
+
+267
+00:12:09,140 --> 00:12:11,390
+No, because 10 has
+two children already.
+
+268
+00:12:11,390 --> 00:12:13,510
+So if we bring
+this 10 up, 6 would
+
+269
+00:12:13,510 --> 00:12:14,930
+become the left child of 10.
+
+270
+00:12:14,930 --> 00:12:17,613
+Well, 10 already has a left
+child and a right child.
+
+271
+00:12:17,613 --> 00:12:19,780
+And you can't have three
+children in a binary search
+
+272
+00:12:19,780 --> 00:12:20,280
+tree.
+
+273
+00:12:20,280 --> 00:12:22,270
+So what do we do to--
+
+274
+00:12:22,270 --> 00:12:23,948
+so this 6 doesn't have children.
+
+275
+00:12:23,948 --> 00:12:24,740
+But what if it did?
+
+276
+00:12:24,740 --> 00:12:26,500
+What if this 6 tree
+was full right here
+
+277
+00:12:26,500 --> 00:12:28,390
+and this 10 tree
+was full right here?
+
+278
+00:12:28,390 --> 00:12:31,330
+Well, we'd have to make
+a rule of something
+
+279
+00:12:31,330 --> 00:12:33,670
+to bring up to become
+the new member,
+
+280
+00:12:33,670 --> 00:12:35,520
+to become this new node here.
+
+281
+00:12:35,520 --> 00:12:37,890
+And there's two
+options you can do.
+
+282
+00:12:37,890 --> 00:12:42,530
+You can either find the
+max in the left tree.
+
+283
+00:12:42,530 --> 00:12:44,880
+So let's see, let me just
+add a max really quick here.
+
+284
+00:12:44,880 --> 00:12:50,090
+So let's say that was a 9,
+this is going to be a 7, OK.
+
+285
+00:12:50,090 --> 00:12:54,510
+We can either find the max in
+our left tree, so bring 7 up.
+
+286
+00:12:57,500 --> 00:12:58,980
+And the structure is intact.
+
+287
+00:12:58,980 --> 00:13:03,140
+And the reason we can find
+the max, if we have a max,
+
+288
+00:13:03,140 --> 00:13:05,700
+it means there's no right child.
+
+289
+00:13:05,700 --> 00:13:07,950
+There's no right child,
+if that's the maximum.
+
+290
+00:13:07,950 --> 00:13:09,890
+So then we can
+bring it up, and it
+
+291
+00:13:09,890 --> 00:13:12,290
+won't hurt any--
+it won't mess up
+
+292
+00:13:12,290 --> 00:13:15,740
+the structure of adding any new
+right children because it never
+
+293
+00:13:15,740 --> 00:13:16,970
+had a right child.
+
+294
+00:13:16,970 --> 00:13:19,020
+Let me restate that a
+little more clearly.
+
+295
+00:13:19,020 --> 00:13:21,410
+If I find the max
+on my left subtree,
+
+296
+00:13:21,410 --> 00:13:24,140
+it will not have a right child
+because that right child would
+
+297
+00:13:24,140 --> 00:13:26,310
+be greater than, and
+that would be the max.
+
+298
+00:13:26,310 --> 00:13:29,310
+So the max does not have a right
+child, we can bring that up.
+
+299
+00:13:29,310 --> 00:13:30,740
+And then any right
+child that did
+
+300
+00:13:30,740 --> 00:13:34,080
+exist can just become the
+new right child of that node.
+
+301
+00:13:34,080 --> 00:13:36,200
+And then the structure
+of the BST is maintained.
+
+302
+00:13:36,200 --> 00:13:37,440
+And that works great.
+
+303
+00:13:37,440 --> 00:13:39,200
+The other option,
+you may have guessed,
+
+304
+00:13:39,200 --> 00:13:42,830
+we can either bring up the
+max in the left subtree
+
+305
+00:13:42,830 --> 00:13:46,460
+or the minimum in
+the right subtree.
+
+306
+00:13:46,460 --> 00:13:49,700
+Because the same idea, the
+minimum in the right subtree
+
+307
+00:13:49,700 --> 00:13:51,690
+will not have a left child.
+
+308
+00:13:51,690 --> 00:13:54,770
+So in this case,
+our minimum is 10.
+
+309
+00:13:54,770 --> 00:13:57,480
+Bring up this 10, it does
+not have a left subchild.
+
+310
+00:13:57,480 --> 00:14:01,850
+So any left subtree that
+this deleted node had,
+
+311
+00:14:01,850 --> 00:14:05,030
+we can simply attach to
+it as its new left subtree
+
+312
+00:14:05,030 --> 00:14:06,740
+because we know it
+didn't have any,
+
+313
+00:14:06,740 --> 00:14:10,680
+if it came up as the max
+node in the right subtree.
+
+314
+00:14:10,680 --> 00:14:12,890
+So we bring that node up,
+it becomes the new node.
+
+315
+00:14:12,890 --> 00:14:20,830
+And then the structure of the
+BST has remained in place, OK.
+
+316
+00:14:20,830 --> 00:14:24,180
+So that is why binary
+search trees are used today
+
+317
+00:14:24,180 --> 00:14:27,450
+because it's a way, a simple way
+to have a data structure that
+
+318
+00:14:27,450 --> 00:14:30,900
+gets you find,
+inserts, and deletes
+
+319
+00:14:30,900 --> 00:14:34,910
+in order log n time, all right.
+
+320
+00:14:34,910 --> 00:14:37,410
+To conclude this video, I'm
+going to show you one more thing
+
+321
+00:14:37,410 --> 00:14:37,910
+here.
+
+322
+00:14:41,570 --> 00:14:44,270
+So we've talked about structure.
+
+323
+00:14:44,270 --> 00:14:50,480
+We've talked about the
+point of a binary search
+
+324
+00:14:50,480 --> 00:14:54,140
+tree is to get order log
+n findings or deletes.
+
+325
+00:14:54,140 --> 00:14:56,420
+This might be a new
+data structure to you,
+
+326
+00:14:56,420 --> 00:15:00,060
+but it's actually used
+pretty heavily in the world.
+
+327
+00:15:00,060 --> 00:15:02,360
+And now, you know what
+a binary search tree is,
+
+328
+00:15:02,360 --> 00:15:06,080
+you might notice it more or
+see where it's a better data
+
+329
+00:15:06,080 --> 00:15:07,250
+structure for.
+
+330
+00:15:07,250 --> 00:15:12,200
+But just as a fun
+example, I put into GPT,
+
+331
+00:15:12,200 --> 00:15:14,810
+what are some examples
+of BST in use today?
+
+332
+00:15:14,810 --> 00:15:17,060
+And it gave me binary search
+trees or widely used data
+
+333
+00:15:17,060 --> 00:15:17,720
+structures.
+
+334
+00:15:17,720 --> 00:15:20,630
+Databases, many database systems
+use BST to store and retrieve
+
+335
+00:15:20,630 --> 00:15:21,680
+data efficiently.
+
+336
+00:15:21,680 --> 00:15:24,390
+Well, how is it stored
+and retrieved efficiently?
+
+337
+00:15:24,390 --> 00:15:26,210
+It's stored and
+retrieved efficiently
+
+338
+00:15:26,210 --> 00:15:28,310
+with order log n time.
+
+339
+00:15:28,310 --> 00:15:31,470
+Log n is way faster
+than order n time.
+
+340
+00:15:31,470 --> 00:15:33,240
+So database is a great fit.
+
+341
+00:15:33,240 --> 00:15:35,570
+File systems are a
+great uses for trees.
+
+342
+00:15:35,570 --> 00:15:36,860
+And you can see that.
+
+343
+00:15:36,860 --> 00:15:40,910
+If you're using a Mac OS X
+operating system or a Linux
+
+344
+00:15:40,910 --> 00:15:43,950
+operating system,
+the root directory
+
+345
+00:15:43,950 --> 00:15:46,180
+is the root node of the tree.
+
+346
+00:15:46,180 --> 00:15:48,678
+So that's a direct comparison.
+
+347
+00:15:48,678 --> 00:15:50,970
+Windows is a little bit
+different, Windows uses drives.
+
+348
+00:15:50,970 --> 00:15:54,960
+But just think of those drives
+like mini roots themselves
+
+349
+00:15:54,960 --> 00:15:58,210
+or multiple tree structure.
+
+350
+00:15:58,210 --> 00:16:01,980
+But all of the big three
+operating systems, Mac OS X,
+
+351
+00:16:01,980 --> 00:16:08,080
+Linux, and Windows all use
+binary search trees, OK.
+
+352
+00:16:08,080 --> 00:16:11,440
+Also, symbol tables
+or just network
+
+353
+00:16:11,440 --> 00:16:14,210
+routing and spell checkers,
+there's language models.
+
+354
+00:16:14,210 --> 00:16:16,420
+There's a lot of uses
+for binary search trees
+
+355
+00:16:16,420 --> 00:16:21,910
+because they get you the
+speed of entering data, OK.
+
+356
+00:16:21,910 --> 00:16:25,190
+That is a overview of
+binary search trees.
+
+357
+00:16:25,190 --> 00:16:27,180
+Thanks for watching.

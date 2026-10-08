@@ -1,0 +1,425 @@
+1
+00:00:02,860 --> 00:00:05,320
+INSTRUCTOR: Hello, everyone,
+and welcome to the video
+
+2
+00:00:05,320 --> 00:00:08,290
+for creating an AWS account.
+
+3
+00:00:08,290 --> 00:00:11,080
+So AWS will be the
+platform that--
+
+4
+00:00:11,080 --> 00:00:13,960
+it's Amazon's cloud
+platform that we will
+
+5
+00:00:13,960 --> 00:00:18,910
+we will use in Data 3500 to
+write all of our programs,
+
+6
+00:00:18,910 --> 00:00:22,760
+to write and turn in your
+homework and the final project,
+
+7
+00:00:22,760 --> 00:00:24,310
+and it will be
+where you download
+
+8
+00:00:24,310 --> 00:00:28,160
+all the code from my Github repo
+to follow along with the class.
+
+9
+00:00:28,160 --> 00:00:29,860
+So it's pretty much
+what we're going
+
+10
+00:00:29,860 --> 00:00:32,409
+to use for all things
+writing our code.
+
+11
+00:00:32,409 --> 00:00:34,720
+So to create an
+AWS account, you're
+
+12
+00:00:34,720 --> 00:00:38,660
+going to, as kind of, you would
+expect, create an account,
+
+13
+00:00:38,660 --> 00:00:42,370
+verify your email address,
+verify who you are,
+
+14
+00:00:42,370 --> 00:00:43,580
+and things like that.
+
+15
+00:00:43,580 --> 00:00:46,080
+So I'm just going to go to the
+beginning of that right here.
+
+16
+00:00:46,080 --> 00:00:46,810
+So you'll go to--
+
+17
+00:00:46,810 --> 00:00:49,280
+this link is provided
+on canvas, by the way--
+
+18
+00:00:49,280 --> 00:00:52,150
+go to Amazon AWS homepage.
+
+19
+00:00:52,150 --> 00:00:56,530
+And then there will be a sign
+in to console link and then
+
+20
+00:00:56,530 --> 00:00:58,208
+a place for you to--
+
+21
+00:00:58,208 --> 00:00:59,500
+oops, mine's already signed in.
+
+22
+00:00:59,500 --> 00:01:02,150
+One second, let me log out.
+
+23
+00:01:02,150 --> 00:01:04,560
+So when you go to
+Log Into AWS link,
+
+24
+00:01:04,560 --> 00:01:06,430
+you'll see this page right here.
+
+25
+00:01:06,430 --> 00:01:09,080
+You'll want to log in
+with a root user, which
+
+26
+00:01:09,080 --> 00:01:11,813
+will be the email address that
+you set up in the beginning.
+
+27
+00:01:11,813 --> 00:01:13,230
+And then, but for
+your first time,
+
+28
+00:01:13,230 --> 00:01:14,730
+you're going to
+click on the button,
+
+29
+00:01:14,730 --> 00:01:17,030
+Create A New AWS Account.
+
+30
+00:01:17,030 --> 00:01:19,310
+And then you'll go through
+and do kind of the things
+
+31
+00:01:19,310 --> 00:01:20,370
+that you would expect.
+
+32
+00:01:20,370 --> 00:01:21,420
+Enter an email address.
+
+33
+00:01:21,420 --> 00:01:23,370
+You'll need to verify
+that email address.
+
+34
+00:01:23,370 --> 00:01:26,400
+And I'm going to hop back up--
+back to this page really quick.
+
+35
+00:01:26,400 --> 00:01:30,080
+You'll need to provide
+a credit card number.
+
+36
+00:01:30,080 --> 00:01:33,980
+Now, if you set up your server
+the way that I have you,
+
+37
+00:01:33,980 --> 00:01:35,930
+you will never get
+charged a penny
+
+38
+00:01:35,930 --> 00:01:38,250
+for using anything that's AWS.
+
+39
+00:01:38,250 --> 00:01:40,490
+We're going to only
+use free servers,
+
+40
+00:01:40,490 --> 00:01:44,010
+and all the services that we use
+on AWS are all the free ones.
+
+41
+00:01:44,010 --> 00:01:46,430
+So you should never
+get charged anything.
+
+42
+00:01:46,430 --> 00:01:49,320
+If you have any questions
+or concerns about that,
+
+43
+00:01:49,320 --> 00:01:53,840
+just DM me on Slack and I
+can explain any particulars
+
+44
+00:01:53,840 --> 00:01:55,200
+that you want to know on that.
+
+45
+00:01:55,200 --> 00:01:57,630
+But if you just follow
+along with all of my steps,
+
+46
+00:01:57,630 --> 00:01:59,360
+you'll never get
+charged anything.
+
+47
+00:01:59,360 --> 00:02:00,800
+All right, so then you'll
+go through a couple
+
+48
+00:02:00,800 --> 00:02:03,410
+more verifications to make sure
+that everything with your AWS
+
+49
+00:02:03,410 --> 00:02:04,470
+account is set up.
+
+50
+00:02:04,470 --> 00:02:06,012
+And then when you're
+all done, you'll
+
+51
+00:02:06,012 --> 00:02:08,870
+have your email address that
+will be your root user email
+
+52
+00:02:08,870 --> 00:02:14,630
+address and a password that
+you use to log in day to day.
+
+53
+00:02:14,630 --> 00:02:16,400
+So let's just make
+sure that everything
+
+54
+00:02:16,400 --> 00:02:18,272
+is logged in and good to go.
+
+55
+00:02:18,272 --> 00:02:19,730
+So I'm going to go
+and log in also.
+
+56
+00:02:28,180 --> 00:02:31,720
+All right, so you should be able
+to log in and see an AWS Console
+
+57
+00:02:31,720 --> 00:02:32,830
+page.
+
+58
+00:02:32,830 --> 00:02:35,090
+And then to make sure that
+everything's looking good,
+
+59
+00:02:35,090 --> 00:02:37,820
+go to the Cloud9 dashboard.
+
+60
+00:02:37,820 --> 00:02:42,160
+Cloud9 is the IDE or the
+Integrated Development
+
+61
+00:02:42,160 --> 00:02:42,770
+Environment.
+
+62
+00:02:42,770 --> 00:02:44,800
+It's basically the
+the place that you're
+
+63
+00:02:44,800 --> 00:02:47,720
+going to write all
+of your code in AWS.
+
+64
+00:02:47,720 --> 00:02:49,350
+So to make sure you
+have access, you
+
+65
+00:02:49,350 --> 00:02:52,480
+can put Cloud9 in this
+search bar at the top.
+
+66
+00:02:52,480 --> 00:02:54,160
+And you can see
+right there Cloud9.
+
+67
+00:02:54,160 --> 00:02:55,660
+Click on that and
+make sure that you
+
+68
+00:02:55,660 --> 00:02:59,630
+can get to the Cloud9
+dashboard just like this.
+
+69
+00:02:59,630 --> 00:03:02,140
+This is what you should see
+once your account is all set up
+
+70
+00:03:02,140 --> 00:03:03,533
+and you go to Cloud9.
+
+71
+00:03:03,533 --> 00:03:05,200
+All right, also,
+here's a one little tip
+
+72
+00:03:05,200 --> 00:03:07,910
+that I think will help you,
+if you look in the top right,
+
+73
+00:03:07,910 --> 00:03:10,100
+if you see where my mouse
+is hovering right now,
+
+74
+00:03:10,100 --> 00:03:13,480
+you can see that we're logged
+into the AWS's North Virginia
+
+75
+00:03:13,480 --> 00:03:14,480
+data center.
+
+76
+00:03:14,480 --> 00:03:16,630
+I think it's a little
+more responsive if you go
+
+77
+00:03:16,630 --> 00:03:18,380
+to the Northern California one.
+
+78
+00:03:18,380 --> 00:03:21,620
+So on the dropdown where
+you see the region,
+
+79
+00:03:21,620 --> 00:03:26,130
+click on US West
+North California.
+
+80
+00:03:26,130 --> 00:03:29,280
+This will automatically change
+you to AWS's data center
+
+81
+00:03:29,280 --> 00:03:31,227
+in Northern California,
+which again, we're
+
+82
+00:03:31,227 --> 00:03:33,060
+a little closer to than
+Virginia, and I it's
+
+83
+00:03:33,060 --> 00:03:34,390
+a little faster anyway.
+
+84
+00:03:34,390 --> 00:03:38,200
+So then once you're here, AWS
+Cloud9 in Northern California,
+
+85
+00:03:38,200 --> 00:03:40,240
+you have done
+everything correctly.
+
+86
+00:03:40,240 --> 00:03:44,370
+I'll have a separate video for
+how to set up an AWS Cloud9
+
+87
+00:03:44,370 --> 00:03:45,145
+account.
+
+88
+00:03:45,145 --> 00:03:46,770
+So if you can get to
+this point, you've
+
+89
+00:03:46,770 --> 00:03:47,890
+done everything correctly.
+
+90
+00:03:47,890 --> 00:03:51,020
+Good job, and
+thanks for watching.

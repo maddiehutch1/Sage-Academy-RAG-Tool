@@ -1,0 +1,306 @@
+1
+00:00:02,710 --> 00:00:06,810
+Hey everybody, welcome to the content
+video for section 8.7, Searching
+
+2
+00:00:06,810 --> 00:00:11,050
+for Substrings. This is actually
+pretty similar to something
+
+3
+00:00:11,050 --> 00:00:14,450
+we've talked about before with
+strings operating a lot like lists.
+
+4
+00:00:14,810 --> 00:00:18,350
+And some of the functionality
+that we can do in a string
+
+5
+00:00:18,350 --> 00:00:20,630
+is going to be really,
+really similar to what we can
+
+6
+00:00:20,630 --> 00:00:24,030
+do in lists. So let's go
+ahead and jump over to our
+
+7
+00:00:24,030 --> 00:00:26,230
+code space and we'll kind of
+talk through some examples.
+
+8
+00:00:26,650 --> 00:00:29,350
+This was the example that they
+gave in the textbook and I thought
+
+9
+00:00:29,350 --> 00:00:32,050
+I'd just save us a minute by
+pasting it over instead of typing
+
+10
+00:00:32,050 --> 00:00:35,290
+it out with you watching. So here
+we have a phrase to be or not
+
+11
+00:00:35,290 --> 00:00:38,290
+to be. That is the question. And
+I want to search for the substring
+
+12
+00:00:38,320 --> 00:00:41,730
+two because it appears so often.
+So I'm going to make a count
+
+13
+00:00:42,230 --> 00:00:45,730
+and set that equal to phrase.count2.
+
+14
+00:00:47,990 --> 00:00:53,710
+And then let's just print out the count.
+
+15
+00:00:57,030 --> 00:00:58,690
+See how many times we get it.
+
+16
+00:01:00,070 --> 00:01:03,570
+All right, we have it twice.
+to be or not to be that is the
+
+17
+00:01:03,570 --> 00:01:07,850
+question so we got it right um
+and then what we could do is
+
+18
+00:01:07,850 --> 00:01:13,830
+if we were you know we've got
+our um we've got two instances
+
+19
+00:01:13,830 --> 00:01:16,810
+of this of the string showing
+up so what we could do is we
+
+20
+00:01:16,810 --> 00:01:21,270
+can count it using a specific
+index in the count function
+
+21
+00:01:21,270 --> 00:01:25,530
+which I believe it talks about
+over in this section. Let me,
+
+22
+00:01:28,650 --> 00:01:33,830
+yeah, so we can, if we wanted to
+find a count from a specific index,
+
+23
+00:01:33,830 --> 00:01:37,450
+sorry, we can use the start index
+and an end index in the count
+
+24
+00:01:37,450 --> 00:01:46,850
+function. So we could say count equals
+phrase dot count. Let's look for
+
+25
+00:01:46,850 --> 00:01:51,230
+the same word again too, and then,
+let's see, so strings are going
+
+26
+00:01:51,230 --> 00:01:55,650
+to be indexed the same way that
+lists are, but each word is in its
+
+27
+00:01:55,650 --> 00:01:59,950
+own element, each character is its
+own element. So let's start counting
+
+28
+00:01:59,950 --> 00:02:03,390
+from, let's see, that's zero,
+one. Let's start counting from the
+
+29
+00:02:03,390 --> 00:02:08,030
+first index, see how many instances
+of count we, or of two we get.
+
+30
+00:02:11,620 --> 00:02:13,670
+We get one, so that's
+about what we would expect
+
+31
+00:02:13,670 --> 00:02:15,750
+if we start counting after
+the first occurrence.
+
+32
+00:02:15,890 --> 00:02:19,690
+We could also do it, let
+me just copy this code,
+
+33
+00:02:20,970 --> 00:02:22,870
+counting from, let's see,
+
+34
+00:02:23,090 --> 00:02:29,650
+that's 0, 1, 2, 3, 4, 5,
+6, 7, 8, 9, 10, 11, 12, 13.
+
+35
+00:02:30,250 --> 00:02:35,150
+Let's count after the 13th
+index, see how many instances
+
+36
+00:02:35,150 --> 00:02:40,850
+of 2 we get. Oh, maybe we
+should start counting from 14.
+
+37
+00:02:40,850 --> 00:02:43,490
+There we go. So now we have
+zero. We started counting after
+
+38
+00:02:43,490 --> 00:02:47,510
+both occurrences. So that's
+kind of the count function.
+
+39
+00:02:47,530 --> 00:02:55,510
+There's also an index function
+in strings that we can use. So
+
+40
+00:02:55,510 --> 00:03:03,730
+let's say index and we want to take
+our phrase again. We're going to
+
+41
+00:03:03,730 --> 00:03:08,010
+use the index function and we're
+going to give it the word two.
+
+42
+00:03:09,470 --> 00:03:11,930
+and let's print out the index.
+
+43
+00:03:16,050 --> 00:03:17,530
+See what it gives us.
+
+44
+00:03:22,690 --> 00:03:27,550
+Okay, the index of two is zero
+because that's the first time it found
+
+45
+00:03:27,550 --> 00:03:31,850
+the word two. Now what about our
+second one? Well, we can do a similar
+
+46
+00:03:31,850 --> 00:03:36,870
+thing with the count function as we
+can with index is we can give it a
+
+47
+00:03:38,770 --> 00:03:44,530
+second argument there. Let me show
+you, and maybe that'll make more
+
+48
+00:03:44,530 --> 00:03:48,430
+sense. So two, and then let's throw
+in, let's see, where was that second?
+
+49
+00:03:48,830 --> 00:03:50,670
+Where was that 13? So I don't know.
+
+50
+00:03:50,670 --> 00:03:52,370
+Let's just throw in like 10 or something.
+
+51
+00:03:55,530 --> 00:04:01,790
+All right. So we start looking
+after the 10th index point for
+
+52
+00:04:01,790 --> 00:04:06,050
+the next instance of the word
+two. So kind of interesting. And
+
+53
+00:04:06,050 --> 00:04:10,430
+then the last thing that I wanted
+to go over was the in operator,
+
+54
+00:04:10,470 --> 00:04:14,810
+which works really, really similar
+to a way that a list would.
+
+55
+00:04:14,990 --> 00:04:30,610
+So if we want to find out, let's
+say, who in phrase, we'll see if
+
+56
+00:04:30,610 --> 00:04:33,250
+that returns true. And it should
+return true because it is in there.
+
+57
+00:04:33,250 --> 00:04:41,570
+um what if we said uh that that
+should return false because the word
+
+58
+00:04:41,570 --> 00:04:51,170
+that oh my bad that isn't there
+uh let's say what instead so that
+
+59
+00:04:51,170 --> 00:04:55,830
+returns false because the word
+what is not in phrase All right, so
+
+60
+00:04:55,830 --> 00:05:03,190
+that's like kind of a brief summary
+of finding substrings in strings.
+
+61
+00:05:03,190 --> 00:05:07,170
+There's a couple more methods
+that we can use to find specific
+
+62
+00:05:07,170 --> 00:05:12,010
+instances of even smaller substrings
+in strings, but that's all
+
+63
+00:05:12,010 --> 00:05:14,030
+that we'll go over for right
+now, so thank you for watching.

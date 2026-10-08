@@ -1,0 +1,798 @@
+1
+00:00:02,590 --> 00:00:04,840
+INSTRUCTOR: Hello, everyone
+and welcome to the content
+
+2
+00:00:04,840 --> 00:00:08,920
+video for graphs implementation.
+
+3
+00:00:08,920 --> 00:00:11,410
+So this content
+video covers how do
+
+4
+00:00:11,410 --> 00:00:15,340
+we go from the logical
+structure of a graph
+
+5
+00:00:15,340 --> 00:00:17,680
+or I understand
+how a graph works
+
+6
+00:00:17,680 --> 00:00:19,540
+or in theory how
+it works, how do I
+
+7
+00:00:19,540 --> 00:00:22,810
+go to now implementing
+that or building
+
+8
+00:00:22,810 --> 00:00:24,800
+an application around that?
+
+9
+00:00:24,800 --> 00:00:28,450
+So that's what this
+content video covers.
+
+10
+00:00:28,450 --> 00:00:30,600
+So coding a graph.
+
+11
+00:00:30,600 --> 00:00:32,340
+Again, now that
+we're coding it, we
+
+12
+00:00:32,340 --> 00:00:36,100
+want to look through how do
+we keep it computational?
+
+13
+00:00:36,100 --> 00:00:37,890
+How do we do it fast?
+
+14
+00:00:37,890 --> 00:00:40,710
+How do we traverse the
+graph and calculate things
+
+15
+00:00:40,710 --> 00:00:41,843
+as efficiently as possible?
+
+16
+00:00:44,830 --> 00:00:46,710
+The graph is a data
+structure itself,
+
+17
+00:00:46,710 --> 00:00:49,440
+but it's a data structure
+that utilizes data structures
+
+18
+00:00:49,440 --> 00:00:53,030
+and also algorithms, but it
+heavily uses these two kind.
+
+19
+00:00:53,030 --> 00:00:55,770
+One is an adjacency
+matrix, you can see where
+
+20
+00:00:55,770 --> 00:00:57,660
+my mouse is hovering there.
+
+21
+00:00:57,660 --> 00:01:02,822
+Adjacency matrix, which is just
+a 2D list and an adjacency list,
+
+22
+00:01:02,822 --> 00:01:04,739
+which is a list or a
+vector that you can grow,
+
+23
+00:01:04,739 --> 00:01:07,820
+you can append things to
+over and over and over.
+
+24
+00:01:07,820 --> 00:01:10,850
+So an adjacency matrix
+representation, as I mentioned,
+
+25
+00:01:10,850 --> 00:01:15,290
+it's a 2D array, a 2D list.
+
+26
+00:01:15,290 --> 00:01:19,787
+You get an index, so it's like
+rows and columns that are nodes.
+
+27
+00:01:19,787 --> 00:01:20,370
+So here it is.
+
+28
+00:01:20,370 --> 00:01:24,650
+So think of it like
+there's nodes, A,B,C,D,
+
+29
+00:01:24,650 --> 00:01:27,150
+you have those in a column,
+you have those in rows,
+
+30
+00:01:27,150 --> 00:01:32,690
+and whether or not there is
+an element at column 2, row 2,
+
+31
+00:01:32,690 --> 00:01:36,080
+that represents is there an
+edge that gets me from that node
+
+32
+00:01:36,080 --> 00:01:36,870
+to that node?
+
+33
+00:01:36,870 --> 00:01:40,730
+So 2D list where the data
+containing the list is edge
+
+34
+00:01:40,730 --> 00:01:44,000
+information, and then the row
+and columns themselves are
+
+35
+00:01:44,000 --> 00:01:46,200
+the nodes.
+
+36
+00:01:46,200 --> 00:01:47,260
+So here's an example.
+
+37
+00:01:47,260 --> 00:01:50,020
+Here's a graph on the right,
+so this is a logical structure.
+
+38
+00:01:50,020 --> 00:01:52,425
+This is how you think
+about it as a human
+
+39
+00:01:52,425 --> 00:01:54,325
+and view the
+relationships and how
+
+40
+00:01:54,325 --> 00:01:55,950
+to traverse it and
+get data out of here
+
+41
+00:01:55,950 --> 00:01:57,880
+and make decisions
+with this data.
+
+42
+00:01:57,880 --> 00:01:59,890
+But at some point,
+you got to code it up.
+
+43
+00:01:59,890 --> 00:02:03,310
+So that's the 2D list
+on the left here.
+
+44
+00:02:03,310 --> 00:02:08,350
+So all of the 1's in this 2D
+array, they represent the nodes.
+
+45
+00:02:08,350 --> 00:02:12,790
+So think of it like
+node 2 here has a loop.
+
+46
+00:02:12,790 --> 00:02:16,230
+So if you look at the spot
+2, 2 in this 2D array,
+
+47
+00:02:16,230 --> 00:02:20,970
+there's a 1 representing an
+edge exists from there to there.
+
+48
+00:02:20,970 --> 00:02:25,470
+Well, then how come
+this isn't a symmetric?
+
+49
+00:02:25,470 --> 00:02:30,450
+How come all of the
+from nodes, the edges
+
+50
+00:02:30,450 --> 00:02:32,430
+that represent from
+and to aren't the same
+
+51
+00:02:32,430 --> 00:02:34,660
+back and forth because
+it's a directed graph.
+
+52
+00:02:34,660 --> 00:02:38,730
+So if you think of the rows here
+as from and then the columns
+
+53
+00:02:38,730 --> 00:02:45,110
+as to, then you get your
+relationship information.
+
+54
+00:02:45,110 --> 00:02:47,410
+So if a 1 exists,
+that's it's from one
+
+55
+00:02:47,410 --> 00:02:49,250
+column to another column here.
+
+56
+00:02:49,250 --> 00:02:53,300
+So, for example, let's
+take our row here.
+
+57
+00:02:53,300 --> 00:02:55,100
+So look at this red edge.
+
+58
+00:02:55,100 --> 00:02:58,964
+So from node 1 to node
+2, we have an edge.
+
+59
+00:02:58,964 --> 00:03:03,610
+So our index starts at 0,
+so our row for our node 1
+
+60
+00:03:03,610 --> 00:03:06,160
+is right here, if you can see
+where my mouse is hovering.
+
+61
+00:03:06,160 --> 00:03:08,110
+And then all of the
+edges to other nodes
+
+62
+00:03:08,110 --> 00:03:10,190
+are represented in
+this row right here.
+
+63
+00:03:10,190 --> 00:03:13,960
+Well, 012, I see this
+red 1 right here,
+
+64
+00:03:13,960 --> 00:03:19,630
+that tells me I've got an edge
+from node 1 to node 2 and you
+
+65
+00:03:19,630 --> 00:03:22,070
+can see it's represented
+there like that.
+
+66
+00:03:22,070 --> 00:03:23,840
+So that would be
+edge information.
+
+67
+00:03:23,840 --> 00:03:27,880
+And here it's just a 1,
+but if the edge represents
+
+68
+00:03:27,880 --> 00:03:31,150
+a mathematical
+relationship, then you
+
+69
+00:03:31,150 --> 00:03:32,450
+just put the number in there.
+
+70
+00:03:32,450 --> 00:03:36,700
+So adjacency matrix work
+really well for any graphs
+
+71
+00:03:36,700 --> 00:03:40,680
+that store numeric information.
+
+72
+00:03:40,680 --> 00:03:44,237
+And then here is just
+a more complex example
+
+73
+00:03:44,237 --> 00:03:45,320
+of what we just went over.
+
+74
+00:03:45,320 --> 00:03:49,110
+All the from and the two are
+the rows and the columns.
+
+75
+00:03:49,110 --> 00:03:51,710
+And then whenever there's
+an edge from 1 to another,
+
+76
+00:03:51,710 --> 00:03:54,230
+it's represented as a 1.
+
+77
+00:03:54,230 --> 00:03:56,630
+So look at Mary really quick.
+
+78
+00:03:56,630 --> 00:03:58,970
+Mary has no edges
+going to her, let's say
+
+79
+00:03:58,970 --> 00:04:02,330
+that this represented a
+graph point to someone
+
+80
+00:04:02,330 --> 00:04:03,660
+who's younger than you.
+
+81
+00:04:03,660 --> 00:04:06,380
+Well, if Mary's
+younger than everybody,
+
+82
+00:04:06,380 --> 00:04:09,320
+Mary doesn't point to anybody,
+just everybody points to her.
+
+83
+00:04:09,320 --> 00:04:12,950
+Well, if you look at the Mary
+row or the node at index 0
+
+84
+00:04:12,950 --> 00:04:16,100
+right here, they're all 0's
+in that row because Mary's got
+
+85
+00:04:16,100 --> 00:04:17,130
+no one to point to.
+
+86
+00:04:17,130 --> 00:04:19,660
+There's no edges going from
+Mary to the other nodes.
+
+87
+00:04:23,940 --> 00:04:24,880
+Pros and cons.
+
+88
+00:04:24,880 --> 00:04:28,500
+So this is set up for why
+adjacency list exists is
+
+89
+00:04:28,500 --> 00:04:30,520
+because as you notice,
+let me go back a slide,
+
+90
+00:04:30,520 --> 00:04:31,853
+there's a lot of zeros in there.
+
+91
+00:04:31,853 --> 00:04:35,890
+There's a lot of data
+allocated that's never used.
+
+92
+00:04:35,890 --> 00:04:38,430
+Well, can we make that
+any more efficient?
+
+93
+00:04:38,430 --> 00:04:42,000
+And by the way, adjacency
+matrices and lists
+
+94
+00:04:42,000 --> 00:04:44,430
+are both used and
+I like matrices
+
+95
+00:04:44,430 --> 00:04:49,140
+because they're really simple
+to understand the relationships.
+
+96
+00:04:49,140 --> 00:04:50,940
+But a big con that you
+can't really ignore,
+
+97
+00:04:50,940 --> 00:04:53,040
+no matter what
+you do, the matrix
+
+98
+00:04:53,040 --> 00:04:55,360
+takes order n squared memory.
+
+99
+00:04:55,360 --> 00:04:58,290
+An n squared is slower than
+we're after, we covered that
+
+100
+00:04:58,290 --> 00:05:00,450
+through sorting and trees.
+
+101
+00:05:00,450 --> 00:05:02,760
+But it's a trade
+off because they're
+
+102
+00:05:02,760 --> 00:05:07,410
+simple to understand
+but take more space.
+
+103
+00:05:07,410 --> 00:05:08,780
+So adjacency list.
+
+104
+00:05:08,780 --> 00:05:10,530
+Adjacency list is,
+well, why don't we just
+
+105
+00:05:10,530 --> 00:05:14,100
+have a list for each node and
+then if there's an edge to it,
+
+106
+00:05:14,100 --> 00:05:16,150
+we just add it to the
+list, we append it on.
+
+107
+00:05:16,150 --> 00:05:18,450
+Then we're really memory
+efficient because we're only
+
+108
+00:05:18,450 --> 00:05:20,820
+adding things to
+the adjacency list
+
+109
+00:05:20,820 --> 00:05:25,170
+when there's actually
+an edge to another node.
+
+110
+00:05:25,170 --> 00:05:28,020
+And that does work well and
+it is more memory efficient.
+
+111
+00:05:28,020 --> 00:05:29,020
+So take a look at these.
+
+112
+00:05:29,020 --> 00:05:32,430
+So now I've got a list for
+each node and I put in the data
+
+113
+00:05:32,430 --> 00:05:34,240
+where I can get
+to from that node.
+
+114
+00:05:34,240 --> 00:05:35,950
+So take a look at L2 right here.
+
+115
+00:05:35,950 --> 00:05:41,250
+The John node is 2, I can
+get to 0, 1, 4, and 5.
+
+116
+00:05:41,250 --> 00:05:46,200
+And you can see edges from John
+to 0, Mary, Helen 1, Tom 4,
+
+117
+00:05:46,200 --> 00:05:48,370
+and Paul 5, they're
+the edges right there.
+
+118
+00:05:48,370 --> 00:05:52,800
+So it is more memory
+efficient that way.
+
+119
+00:05:52,800 --> 00:05:55,235
+But you need to account
+for different length sizes
+
+120
+00:05:55,235 --> 00:05:56,610
+now, so if you
+write an algorithm
+
+121
+00:05:56,610 --> 00:05:58,320
+to go through and
+find out, well,
+
+122
+00:05:58,320 --> 00:06:00,120
+who is younger than Mary here?
+
+123
+00:06:00,120 --> 00:06:02,820
+Your algorithm associated
+with that data structure
+
+124
+00:06:02,820 --> 00:06:04,260
+will be a little
+bit more complex
+
+125
+00:06:04,260 --> 00:06:05,860
+if you use an adjacency list.
+
+126
+00:06:05,860 --> 00:06:09,200
+So it's a trade off and
+in practice both are used.
+
+127
+00:06:13,900 --> 00:06:16,480
+Directed and undirected graphs.
+
+128
+00:06:16,480 --> 00:06:18,620
+We covered those in
+the overview video,
+
+129
+00:06:18,620 --> 00:06:22,990
+I just want to add
+here though, directed
+
+130
+00:06:22,990 --> 00:06:26,470
+and undirected also influenced
+the data structure itself.
+
+131
+00:06:26,470 --> 00:06:35,780
+As I mentioned with
+matrices, adjacency matrix,
+
+132
+00:06:35,780 --> 00:06:41,270
+the data is not symmetric in a
+matrix if the graph is directed.
+
+133
+00:06:41,270 --> 00:06:45,350
+So just keep that in mind
+that both the data contains
+
+134
+00:06:45,350 --> 00:06:47,090
+relationship information
+whether or not
+
+135
+00:06:47,090 --> 00:06:52,340
+it's directed or undirected,
+that's part of the information.
+
+136
+00:06:52,340 --> 00:06:55,310
+Examples of undirected graph.
+
+137
+00:06:55,310 --> 00:06:58,170
+So this would be like a
+relationship, so same people,
+
+138
+00:06:58,170 --> 00:07:02,190
+but the first four are siblings
+and the last two are siblings.
+
+139
+00:07:02,190 --> 00:07:06,500
+So now we've got
+relationship information
+
+140
+00:07:06,500 --> 00:07:09,890
+in the graph which are a sibling
+is a yes or no, it doesn't
+
+141
+00:07:09,890 --> 00:07:11,580
+need a directed relationship.
+
+142
+00:07:11,580 --> 00:07:13,920
+Older would but are
+you a sibling does not.
+
+143
+00:07:13,920 --> 00:07:16,730
+So here these four
+siblings and these two
+
+144
+00:07:16,730 --> 00:07:20,130
+are not so their
+graphs are undirected.
+
+145
+00:07:23,660 --> 00:07:27,205
+So then you can see here
+this changes things.
+
+146
+00:07:32,210 --> 00:07:34,550
+Now you can see as I
+was mentioning earlier,
+
+147
+00:07:34,550 --> 00:07:37,006
+the adjacency matrix
+now is symmetric.
+
+148
+00:07:37,006 --> 00:07:40,180
+And you can see
+where my mouse is at.
+
+149
+00:07:40,180 --> 00:07:43,220
+All of the axes right
+here are 0's, and if you
+
+150
+00:07:43,220 --> 00:07:46,550
+look at this side right
+here, the six 1's right here,
+
+151
+00:07:46,550 --> 00:07:49,305
+they're symmetric to
+these six 1's over here.
+
+152
+00:07:49,305 --> 00:07:50,930
+Same thing with these
+two 1's down here
+
+153
+00:07:50,930 --> 00:07:54,270
+that represent Tom and Paul are
+siblings, they're symmetric.
+
+154
+00:07:54,270 --> 00:07:56,600
+They're symmetric
+because it's undirected.
+
+155
+00:07:56,600 --> 00:07:58,310
+If there's an edge
+from Tom to Paul,
+
+156
+00:07:58,310 --> 00:08:00,750
+there's an edge from
+Paul to Tom every time.
+
+157
+00:08:00,750 --> 00:08:02,750
+There's no sense of
+direction to or from they're
+
+158
+00:08:02,750 --> 00:08:03,990
+connected period.
+
+159
+00:08:03,990 --> 00:08:07,130
+So the symmetry in
+an adjacency matrix
+
+160
+00:08:07,130 --> 00:08:10,100
+is expected in undirected
+graphs because you
+
+161
+00:08:10,100 --> 00:08:12,860
+can get to and from any
+node, excuse me, if you
+
+162
+00:08:12,860 --> 00:08:15,650
+can get to a node from a node,
+you can get from that node
+
+163
+00:08:15,650 --> 00:08:16,720
+back to the first node.
+
+164
+00:08:20,500 --> 00:08:25,060
+And again, that was set
+up for how to code a graph
+
+165
+00:08:25,060 --> 00:08:27,050
+and how to implement it.
+
+166
+00:08:27,050 --> 00:08:30,860
+And that concludes our content
+video on graph implementation.
+
+167
+00:08:30,860 --> 00:08:32,610
+Thanks for watching.

@@ -1,0 +1,155 @@
+1
+00:00:02,910 --> 00:00:04,990
+Hey everybody, welcome
+to the content video
+
+2
+00:00:04,990 --> 00:00:08,630
+going over section 4.7, the math module.
+
+3
+00:00:08,710 --> 00:00:13,850
+So in this video, we kind of
+branch out a little bit from
+
+4
+00:00:13,850 --> 00:00:17,450
+the last topic we covered,
+which was the random module.
+
+5
+00:00:17,450 --> 00:00:20,570
+The math module is another
+library in Python that you
+
+6
+00:00:20,570 --> 00:00:23,810
+can import into your code that
+has a whole host of functions
+
+7
+00:00:23,810 --> 00:00:26,190
+that you can borrow. And
+what are those functions?
+
+8
+00:00:26,270 --> 00:00:29,030
+Wow, I'm so glad that you asked.
+
+9
+00:00:29,270 --> 00:00:32,370
+Here are a summary of the
+different functions that are
+
+10
+00:00:32,370 --> 00:00:35,990
+within the math module. So they
+are extremely helpful so that
+
+11
+00:00:35,990 --> 00:00:40,250
+you don't have to code some
+more complex math by hand.
+
+12
+00:00:40,480 --> 00:00:43,270
+Somebody has already done that
+and so they're all contained right
+
+13
+00:00:43,270 --> 00:00:47,330
+here. We've got functions like
+ceiling, floor, sine, cosine, tangent,
+
+14
+00:00:47,710 --> 00:00:48,610
+exponential,
+
+15
+00:00:48,810 --> 00:00:51,630
+log, log 10, power, square root,
+
+16
+00:00:52,750 --> 00:00:57,550
+fabs which oh absolute value float
+absolute value and f mod which is
+
+17
+00:00:57,550 --> 00:01:04,310
+a floating point um remainder so uh
+rather than show you every single
+
+18
+00:01:04,310 --> 00:01:09,510
+one of these we'll just go ahead and
+do a demo a quick one of just like
+
+19
+00:01:09,510 --> 00:01:17,210
+maybe one or two of them so let's
+do import math and then let's bar
+
+20
+00:01:17,210 --> 00:01:22,190
+let's do square root and power so
+um and if you ever want to read more
+
+21
+00:01:22,190 --> 00:01:26,190
+about how these work they've got
+examples of how you would use them
+
+22
+00:01:26,190 --> 00:01:29,970
+here so like power takes two
+arguments and square root takes one so
+
+23
+00:01:29,970 --> 00:01:41,690
+for example let's say print uh math
+dot square root of 144 and we'll
+
+24
+00:01:41,690 --> 00:01:50,230
+also print math math.pow of 2 and
+5, and let's see what those give us,
+
+25
+00:01:51,730 --> 00:01:56,410
+12 and 32. So, 2 raised
+to the fifth power and the
+
+26
+00:01:56,410 --> 00:01:59,030
+square root of 144. So,
+that's kind of like a
+
+27
+00:01:59,030 --> 00:02:01,810
+quick summary and introduction
+to the math module.
+
+28
+00:02:02,130 --> 00:02:05,810
+If you're doing things in your
+code that might need some more
+
+29
+00:02:05,810 --> 00:02:09,750
+complicated math, this is a great
+way to explore those without
+
+30
+00:02:09,750 --> 00:02:13,980
+necessarily getting too bogged
+down with writing up complete
+
+31
+00:02:13,980 --> 00:02:18,670
+statement or like complete math
+for like solving it all yourself.
+
+32
+00:02:18,670 --> 00:02:20,950
+Anyways, that's all for this
+content video. Thanks for watching.

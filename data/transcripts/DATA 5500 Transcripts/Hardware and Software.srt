@@ -1,0 +1,699 @@
+1
+00:00:02,750 --> 00:00:04,770
+Hey everybody, this is the content video
+
+2
+00:00:04,770 --> 00:00:08,310
+going over section 1.2 of your textbook.
+
+3
+00:00:08,650 --> 00:00:11,330
+This is the hardware
+and software section.
+
+4
+00:00:11,910 --> 00:00:14,950
+So this is going to be maybe somewhat
+basic for some of you, but that's
+
+5
+00:00:14,950 --> 00:00:17,670
+okay. We're just going to quickly
+review it and go over some different
+
+6
+00:00:17,670 --> 00:00:20,990
+components about computers. And you
+might think, why is this important
+
+7
+00:00:20,990 --> 00:00:24,230
+in the context of programming?
+Well, it's important to know how the
+
+8
+00:00:24,230 --> 00:00:27,890
+code that you write interacts with the
+different components of a computer.
+
+9
+00:00:27,890 --> 00:00:31,260
+It's not just magic commands that
+you write that make it do stuff.
+
+10
+00:00:31,590 --> 00:00:34,210
+There's pretty good
+systems to all of it. So to
+
+11
+00:00:34,210 --> 00:00:35,830
+start off with, we're going
+to just talk about some
+
+12
+00:00:35,830 --> 00:00:37,750
+of the differences between
+hardware and software.
+
+13
+00:00:37,850 --> 00:00:41,070
+We'll briefly touch on
+Moore's Law, computer
+
+14
+00:00:41,070 --> 00:00:43,850
+organization, input-output units, memory,
+
+15
+00:00:44,050 --> 00:00:47,250
+the CPU, and then software.
+
+16
+00:00:47,930 --> 00:00:53,410
+So very first, hardware and software.
+So hardware, that's kind of the
+
+17
+00:00:53,410 --> 00:00:57,390
+basic concept is that's the physical
+components of a computer that
+
+18
+00:00:57,390 --> 00:01:00,570
+make it run. And these are the
+things that you can touch. you can
+
+19
+00:01:00,570 --> 00:01:03,690
+dismantle, you can take them apart,
+you can rebuild them. They're going to
+
+20
+00:01:03,690 --> 00:01:08,950
+be things like your CPU, your
+memory, your RAM, fans, thermal sync,
+
+21
+00:01:08,950 --> 00:01:12,990
+motherboard, anything else that is
+a component, a physical component
+
+22
+00:01:12,990 --> 00:01:17,690
+of your computer that comes together
+to create the actual computer.
+
+23
+00:01:17,690 --> 00:01:22,210
+We'll talk about the CPU in a little
+more depth in just a few moments,
+
+24
+00:01:22,250 --> 00:01:26,130
+but like I said, we touched on RAM
+for a minute, so that stands for
+
+25
+00:01:26,130 --> 00:01:29,970
+Random Access Memory, or just memory
+is what a lot of people will call
+
+26
+00:01:29,970 --> 00:01:34,290
+it, that enables you to store data
+for currently open applications.
+
+27
+00:01:34,290 --> 00:01:38,330
+So for example, right now I'm
+running Zoom, an internet browser.
+
+28
+00:01:38,490 --> 00:01:42,610
+Typically you have an Outlook
+tab open as well, and RAM
+
+29
+00:01:42,610 --> 00:01:46,000
+helps all of those applications
+to run simultaneously.
+
+30
+00:01:46,770 --> 00:01:50,650
+You probably also have a bunch of
+applications open. Again, that's
+
+31
+00:01:50,650 --> 00:01:54,470
+going to be your RAM keeping those
+things running and running smoothly.
+
+32
+00:01:55,210 --> 00:01:58,190
+Another key component to
+hardware is going to be your
+
+33
+00:01:58,190 --> 00:02:00,990
+motherboard, which handles
+a lot of the input and
+
+34
+00:02:00,990 --> 00:02:04,170
+output data that's coming
+into your computer or laptop.
+
+35
+00:02:05,070 --> 00:02:10,010
+And I think, yeah, that's kind of
+a basic introduction to hardware.
+
+36
+00:02:10,010 --> 00:02:13,590
+We'll get to software in a second,
+but let's talk a little bit more
+
+37
+00:02:13,590 --> 00:02:16,610
+about some of these components.
+But I also, before we move too far
+
+38
+00:02:16,610 --> 00:02:21,250
+into that, want to talk about
+Moore's Law. So this is section 1.2.1
+
+39
+00:02:21,250 --> 00:02:25,850
+of your textbook. And Moore's Law is
+a fairly simple concept. Basically
+
+40
+00:02:25,850 --> 00:02:30,370
+what it says is that technology
+is constantly improving and what
+
+41
+00:02:30,370 --> 00:02:34,150
+you might expect current computers
+and current trends to have now
+
+42
+00:02:34,150 --> 00:02:40,950
+is um well I guess let me let me
+rephrase that uh in about 18 months
+
+43
+00:02:40,950 --> 00:02:46,270
+if you were to go to your favorite
+computer store Apple, Dell, HP,
+
+44
+00:02:46,270 --> 00:02:49,970
+Best Buy I don't know wherever
+you guys go to get your technology
+
+45
+00:02:49,970 --> 00:02:55,110
+high um you go to that store and you
+walk in and what you would expect
+
+46
+00:02:55,110 --> 00:02:59,770
+to see 18 months from now is that
+a lot of the machines in there,
+
+47
+00:02:59,770 --> 00:03:04,170
+most all of them have doubled in
+their capacity since today. So today,
+
+48
+00:03:04,250 --> 00:03:11,070
+uh, 2026, let's say we go to the
+store in, uh, 2027 or 2028. Um,
+
+49
+00:03:11,630 --> 00:03:16,510
+and you, you see the computers have
+doubled, tripled in their capacity.
+
+50
+00:03:16,510 --> 00:03:19,990
+Um, they're faster, they're more
+robust, they can handle more
+
+51
+00:03:19,990 --> 00:03:26,030
+data. That idea is Moore's law.
+It's, um, it's just something that I
+
+52
+00:03:26,030 --> 00:03:29,390
+want you to kind of keep in mind in
+the back of your head as you take
+
+53
+00:03:29,390 --> 00:03:32,020
+this course that the things that
+we code and the things that we
+
+54
+00:03:32,020 --> 00:03:34,230
+create in this class they're going
+to be awesome and they're going to
+
+55
+00:03:34,230 --> 00:03:37,730
+be great for now but thinking
+forward what things are going to be
+
+56
+00:03:37,730 --> 00:03:41,470
+created that are going to be faster
+and stronger and easier than the
+
+57
+00:03:41,470 --> 00:03:45,890
+things that we'll create in this
+course now and how can you keep up with
+
+58
+00:03:45,890 --> 00:03:49,790
+your own skills to stay on top
+of those changing times so for
+
+59
+00:03:49,790 --> 00:03:54,150
+example generative AI can code basically
+everything that you're going to
+
+60
+00:03:54,150 --> 00:03:57,850
+learn in this class so what does
+that mean to you as a student who's
+
+61
+00:03:57,850 --> 00:04:01,650
+learning how to code why do these
+things matter to you and what
+
+62
+00:04:01,650 --> 00:04:05,630
+does it mean right now learning to
+code when AI can just do it for you
+
+63
+00:04:05,630 --> 00:04:12,630
+why is it still important that you
+are code literate so to speak so
+
+64
+00:04:12,630 --> 00:04:15,690
+just keeping keep those things in
+the back of your head okay let's
+
+65
+00:04:15,690 --> 00:04:20,390
+move on to computer organization
+so we've got kind of two different
+
+66
+00:04:21,470 --> 00:04:24,850
+logical units or sections, like
+it says here, we've got input
+
+67
+00:04:24,850 --> 00:04:30,390
+units and output units or input
+devices and output devices.
+
+68
+00:04:30,710 --> 00:04:35,770
+So input devices, this is pretty
+straightforward. It's anything that
+
+69
+00:04:35,770 --> 00:04:40,410
+gives data or units for processing
+into the computer. So for example,
+
+70
+00:04:40,410 --> 00:04:44,690
+right now I am recording a video.
+I'm also scrolling with my mouse.
+
+71
+00:04:45,370 --> 00:04:48,550
+My computer is picking
+up audio that is coming
+
+72
+00:04:48,550 --> 00:04:50,850
+in and it's going to
+transcribe all of that.
+
+73
+00:04:51,470 --> 00:04:54,350
+So these are all input
+devices. And here's
+
+74
+00:04:54,350 --> 00:04:56,670
+another couple of examples, thumb drives,
+
+75
+00:04:56,910 --> 00:04:58,510
+GPS,
+
+76
+00:04:58,630 --> 00:05:02,790
+ebooks, memory sticks, the Nintendo
+Switch. Actually, just kidding,
+
+77
+00:05:02,790 --> 00:05:07,130
+that's an example under
+something else. But a device that
+
+78
+00:05:07,130 --> 00:05:10,600
+responds to up, down, left, right,
+forward, backward, accelerations.
+
+79
+00:05:11,390 --> 00:05:14,890
+So those are all types
+of input devices that you
+
+80
+00:05:14,890 --> 00:05:17,690
+might see on a computer
+or a type of computer.
+
+81
+00:05:18,430 --> 00:05:20,800
+And on the flip side,
+we've got output devices.
+
+82
+00:05:21,550 --> 00:05:24,490
+Those are going to be
+things that are giving data
+
+83
+00:05:24,490 --> 00:05:27,170
+back out. So it's not
+taking data in, it's giving
+
+84
+00:05:27,170 --> 00:05:29,770
+data out. These are
+things like your screen.
+
+85
+00:05:31,110 --> 00:05:33,930
+That's all I can think of off
+the top of my head. Audio,
+
+86
+00:05:33,930 --> 00:05:35,900
+video, I'm just going to
+read from the textbook here.
+
+87
+00:05:36,110 --> 00:05:39,710
+I often think of printers for some
+reason. I guess it's just because
+
+88
+00:05:39,710 --> 00:05:43,660
+like in my head, the paper comes
+out and so that's an output device.
+
+89
+00:05:44,390 --> 00:05:47,090
+But yeah, there's other forms, virtual
+
+90
+00:05:47,090 --> 00:05:49,790
+reality devices, PlayStation, VR,
+
+91
+00:05:50,110 --> 00:05:52,110
+you know, pick your favorite,
+right? There's a lot of
+
+92
+00:05:52,110 --> 00:05:54,750
+different output devices. So
+pretty simple concepts there.
+
+93
+00:05:54,870 --> 00:05:58,990
+Let's move down to memory
+units. So we talked about
+
+94
+00:05:58,990 --> 00:06:02,430
+RAM a minute ago. RAM stands
+for random access memory.
+
+95
+00:06:02,810 --> 00:06:09,570
+Most computers as a standard
+contain 8 to 16 gigabytes of RAM.
+
+96
+00:06:09,570 --> 00:06:12,630
+You probably have somewhere in
+that range unless you've got
+
+97
+00:06:12,630 --> 00:06:15,110
+a super cool computer and you've
+customized it. That's great.
+
+98
+00:06:16,990 --> 00:06:22,020
+And that's kind of it here. I
+guess it's worth mentioning that
+
+99
+00:06:22,630 --> 00:06:26,930
+gigabytes stands for, or GB stands
+for gigabytes. A gigabyte is
+
+100
+00:06:26,930 --> 00:06:30,670
+a billion bytes and a byte is
+eight bits. A bit is either a zero
+
+101
+00:06:30,670 --> 00:06:33,990
+or a one. So there's kind of a
+hierarchy, not hierarchy, but
+
+102
+00:06:33,990 --> 00:06:38,630
+kind of a chain there of how these
+data points are all connected.
+
+103
+00:06:39,690 --> 00:06:44,330
+Quite a bit of data here,
+a billion bytes. So very
+
+104
+00:06:44,330 --> 00:06:47,370
+cool. Okay, let's skip over
+arithmetic and logic unit
+
+105
+00:06:47,370 --> 00:06:51,770
+and jump down to central
+processing unit or CPU.
+
+106
+00:06:52,970 --> 00:06:57,830
+I like to think of the CPU as
+the brain of your computer.
+
+107
+00:06:57,830 --> 00:07:00,910
+It does all of the thinking,
+all the processing.
+
+108
+00:07:01,490 --> 00:07:04,490
+Well, I guess not all of it,
+but it takes the inputs and the
+
+109
+00:07:04,490 --> 00:07:08,390
+outputs or it processes the
+inputs and outputs sorry it can do
+
+110
+00:07:08,390 --> 00:07:12,610
+quite a bit all at once and you
+can read all about that here
+
+111
+00:07:12,610 --> 00:07:17,750
+a lot of them have multi-core
+or sorry well yeah multi-core
+
+112
+00:07:17,750 --> 00:07:25,010
+processors dual core processors
+we've got quad core processors
+
+113
+00:07:25,010 --> 00:07:29,550
+octa core processors these are
+things that can like it says
+
+114
+00:07:29,550 --> 00:07:32,790
+here execute billions of instructions
+per second and that's why
+
+115
+00:07:32,910 --> 00:07:37,250
+technology is so fast and it's
+able to run so many things all at
+
+116
+00:07:37,250 --> 00:07:42,170
+once and again you you think about
+the brain you think about how
+
+117
+00:07:42,170 --> 00:07:45,050
+you want your brain to be making
+snap decisions and and the same
+
+118
+00:07:45,050 --> 00:07:47,630
+goes for your computer you want
+it to be running quickly smoothly
+
+119
+00:07:47,630 --> 00:07:51,950
+and able to take a lot of data
+all at once and do a lot with that
+
+120
+00:07:51,950 --> 00:07:58,010
+okay um and I think we're probably
+going to wrap up about there
+
+121
+00:07:58,220 --> 00:08:02,330
+So since this is the hardware
+and software section,
+
+122
+00:08:02,330 --> 00:08:05,250
+I do briefly want to just
+talk about software. So
+
+123
+00:08:05,250 --> 00:08:09,250
+software is what drives
+the hardware of a computer.
+
+124
+00:08:09,730 --> 00:08:13,870
+It's written by men or men or women as a
+
+125
+00:08:13,870 --> 00:08:16,570
+set of instructions fed to the computer.
+
+126
+00:08:17,470 --> 00:08:20,410
+I often think of softwares
+as like, I don't know, like
+
+127
+00:08:20,410 --> 00:08:23,490
+Microsoft Word or Tableau
+or something that's kind
+
+128
+00:08:23,490 --> 00:08:25,970
+of like a package that you
+download and install. all.
+
+129
+00:08:26,230 --> 00:08:30,230
+And that's true that those are
+very detailed sets of instructions
+
+130
+00:08:30,230 --> 00:08:32,970
+that have been programmed and
+set up as software that you can
+
+131
+00:08:32,970 --> 00:08:36,970
+download onto your computer. But
+a lot of softwares are just basic
+
+132
+00:08:36,970 --> 00:08:40,050
+things like your operating system.
+So if you're running Windows,
+
+133
+00:08:40,510 --> 00:08:46,550
+Mac operating system, Linux, any others
+out there, those are very detailed
+
+134
+00:08:46,550 --> 00:08:49,490
+instructions as well that are
+telling your computer how to run and
+
+135
+00:08:49,490 --> 00:08:54,310
+how to do basic things such as here's
+how you pop up a window and here's
+
+136
+00:08:54,310 --> 00:08:57,370
+how you have a background and
+here's you know everything else that
+
+137
+00:08:57,370 --> 00:09:02,430
+um it has to do with what your computer
+is actually doing with the hardware
+
+138
+00:09:02,430 --> 00:09:06,170
+components so hardware the things
+that you can touch i don't know
+
+139
+00:09:06,170 --> 00:09:10,530
+why i thought of smell but you can
+also smell them um and the software
+
+140
+00:09:10,530 --> 00:09:14,870
+are the things that you do on the
+computer with the hardware so i mean
+
+141
+00:09:14,870 --> 00:09:18,930
+like if minecraft is your favorite
+software that's amazing um so that
+
+142
+00:09:18,930 --> 00:09:22,750
+about wraps up this video on hardware
+and software Thanks for watching.

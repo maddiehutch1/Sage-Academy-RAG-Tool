@@ -1,0 +1,3649 @@
+1
+00:00:00,500 --> 00:00:02,600
+ELIJAH BLAKE: All
+right, welcome back.
+
+2
+00:00:02,600 --> 00:00:08,660
+We're going to be going over
+Redux and network requests,
+
+3
+00:00:08,660 --> 00:00:12,480
+so connecting our
+Redux-Sagas to the backend so
+
+4
+00:00:12,480 --> 00:00:15,980
+that not only our Redux
+store gets updated,
+
+5
+00:00:15,980 --> 00:00:19,280
+but our backend
+databases as well.
+
+6
+00:00:19,280 --> 00:00:25,000
+And we'll just recap quickly
+on our Redux setup in this app.
+
+7
+00:00:25,000 --> 00:00:27,400
+So for those of you that
+have been following along
+
+8
+00:00:27,400 --> 00:00:32,280
+with this lecture
+set, we had this form
+
+9
+00:00:32,280 --> 00:00:37,680
+that we could put data in.
+
+10
+00:00:37,680 --> 00:00:43,940
+And let's give it
+some data there.
+
+11
+00:00:43,940 --> 00:00:46,620
+Submit, it refreshes
+our form data.
+
+12
+00:00:46,620 --> 00:00:50,760
+Then we can go down here, with
+this button, to view the list.
+
+13
+00:00:50,760 --> 00:00:55,520
+And actually before, it
+was only a single instance.
+
+14
+00:00:55,520 --> 00:00:58,720
+Off camera here,
+off the recording,
+
+15
+00:00:58,720 --> 00:01:07,560
+I made it so that this will
+also append multiple instances
+
+16
+00:01:07,560 --> 00:01:11,200
+of the user class, which is
+going to help it work well
+
+17
+00:01:11,200 --> 00:01:16,460
+with our database since we'll
+have multiple rows in our table.
+
+18
+00:01:26,160 --> 00:01:30,440
+So if we submit that, now we've
+got two items in our list.
+
+19
+00:01:30,440 --> 00:01:32,100
+And it'll keep going.
+
+20
+00:01:32,100 --> 00:01:34,840
+This is a scroll view,
+it'll go for as long
+
+21
+00:01:34,840 --> 00:01:38,040
+as we add data there.
+
+22
+00:01:38,040 --> 00:01:43,480
+And then let's look
+at the code for that.
+
+23
+00:01:43,480 --> 00:01:46,960
+Here we've got our slice.
+
+24
+00:01:46,960 --> 00:01:51,100
+And I've made a
+few changes here.
+
+25
+00:01:51,100 --> 00:01:56,720
+So addFormData will
+take the current list
+
+26
+00:01:56,720 --> 00:02:01,860
+and it will push a new
+instance or the new payload,
+
+27
+00:02:01,860 --> 00:02:05,900
+whatever new user we're
+adding there, to the list.
+
+28
+00:02:05,900 --> 00:02:10,620
+So instead of doing formData
+equals action.payload,
+
+29
+00:02:10,620 --> 00:02:13,960
+we're doing formdata.push
+since this is a list.
+
+30
+00:02:13,960 --> 00:02:20,880
+Before it was just
+a single object,
+
+31
+00:02:20,880 --> 00:02:22,880
+but now it'll hold
+a list of objects
+
+32
+00:02:22,880 --> 00:02:25,360
+so that that works
+as a list instead
+
+33
+00:02:25,360 --> 00:02:31,440
+of only holding a single
+object's worth of data there.
+
+34
+00:02:31,440 --> 00:02:35,760
+And then in our
+DisplayUserData, here we
+
+35
+00:02:35,760 --> 00:02:44,160
+have our Selector that pulls the
+form data out of our user state.
+
+36
+00:02:44,160 --> 00:02:46,740
+And then that is a array.
+
+37
+00:02:46,740 --> 00:02:49,780
+So we can array dot map.
+
+38
+00:02:49,780 --> 00:02:51,320
+Map is a fun--
+
+39
+00:02:51,320 --> 00:02:55,860
+I don't remember if Python has
+an equivalent list function,
+
+40
+00:02:55,860 --> 00:02:58,360
+but I'm sure they do.
+
+41
+00:02:58,360 --> 00:02:59,840
+Basically, it just maps over.
+
+42
+00:02:59,840 --> 00:03:05,160
+For every item in the list,
+we're going to return,
+
+43
+00:03:05,160 --> 00:03:07,060
+and we're returning a card.
+
+44
+00:03:07,060 --> 00:03:09,720
+So instead of returning
+like a value, like a number,
+
+45
+00:03:09,720 --> 00:03:15,600
+or some string, our return
+value is this entire set
+
+46
+00:03:15,600 --> 00:03:18,840
+of JSX, this component.
+
+47
+00:03:18,840 --> 00:03:21,240
+That's why we see--
+
+48
+00:03:21,240 --> 00:03:22,600
+well, we did.
+
+49
+00:03:22,600 --> 00:03:25,240
+It must have refreshed--
+
+50
+00:03:25,240 --> 00:03:27,260
+but multiple card
+components there.
+
+51
+00:03:30,360 --> 00:03:36,800
+But we want to update this
+so that we not only store
+
+52
+00:03:36,800 --> 00:03:42,640
+our data here in our
+Redux slice, in our store,
+
+53
+00:03:42,640 --> 00:03:45,480
+but we also want to
+persist it to a database
+
+54
+00:03:45,480 --> 00:03:47,280
+so that we have something--
+
+55
+00:03:47,280 --> 00:03:51,000
+so the data can live beyond
+a single user session list.
+
+56
+00:03:51,000 --> 00:03:55,720
+Like we see here, if I go back
+to the list, the list is empty.
+
+57
+00:03:55,720 --> 00:04:02,620
+Any time you refresh your
+browser, or spin down,
+
+58
+00:04:02,620 --> 00:04:05,840
+spin back up your Metro
+instance, this list,
+
+59
+00:04:05,840 --> 00:04:08,600
+all the Redux store
+data, will be reset
+
+60
+00:04:08,600 --> 00:04:11,140
+back to your initial state.
+
+61
+00:04:11,140 --> 00:04:14,360
+In this case, that's
+an empty list.
+
+62
+00:04:14,360 --> 00:04:20,200
+So we're going to persist
+it to a database here.
+
+63
+00:04:20,200 --> 00:04:24,720
+So the first thing that
+we're going to do with that
+
+64
+00:04:24,720 --> 00:04:31,600
+is, we'll want to make sure
+that our backend can be spun up
+
+65
+00:04:31,600 --> 00:04:32,140
+as well.
+
+66
+00:04:32,140 --> 00:04:38,320
+So I've got our Metro server
+running for the Expo app.
+
+67
+00:04:38,320 --> 00:04:39,900
+And I'll exit out of that.
+
+68
+00:04:39,900 --> 00:04:47,560
+So here in data5570 folder,
+I have the Expo app folder.
+
+69
+00:04:47,560 --> 00:04:50,600
+And if I cd out
+of that, I've got
+
+70
+00:04:50,600 --> 00:04:58,520
+the Expo app, my Django app,
+and then my virtual environment.
+
+71
+00:04:58,520 --> 00:05:02,180
+So I'm going to-- in
+order to spin up Django,
+
+72
+00:05:02,180 --> 00:05:08,560
+I'm going to source the
+virtual environment,
+
+73
+00:05:08,560 --> 00:05:13,360
+source myvenv/bin/activate.
+
+74
+00:05:13,360 --> 00:05:15,000
+And it's been a
+minute since we've
+
+75
+00:05:15,000 --> 00:05:18,960
+done this so if you've
+forgotten, we're refreshing
+
+76
+00:05:18,960 --> 00:05:20,100
+right now.
+
+77
+00:05:20,100 --> 00:05:20,600
+Source that.
+
+78
+00:05:20,600 --> 00:05:26,880
+That adds your virtual
+environment info to your path.
+
+79
+00:05:26,880 --> 00:05:31,640
+In this case, that's all the
+items we installed with pip,
+
+80
+00:05:31,640 --> 00:05:35,840
+so that includes
+Django REST framework.
+
+81
+00:05:35,840 --> 00:05:37,800
+Now that we have that
+active, we should
+
+82
+00:05:37,800 --> 00:05:43,280
+be able to cd into the
+Django project, whatever
+
+83
+00:05:43,280 --> 00:05:45,280
+you called your project.
+
+84
+00:05:45,280 --> 00:05:49,040
+And then where manage.py
+is, we should be able to--
+
+85
+00:05:49,040 --> 00:05:53,590
+python3 manage.py runserver.
+
+86
+00:05:56,930 --> 00:06:01,430
+And if you wanted to
+expose to external traffic,
+
+87
+00:06:01,430 --> 00:06:05,950
+we were doing 0.0.0.0 or 8000.
+
+88
+00:06:05,950 --> 00:06:10,610
+And that way, you can
+access it from your browser.
+
+89
+00:06:10,610 --> 00:06:13,850
+So we've got the
+Django server up.
+
+90
+00:06:13,850 --> 00:06:20,430
+And then I'm running it here.
+
+91
+00:06:23,142 --> 00:06:27,770
+Oh, yeah, right, I don't
+have a default path defined.
+
+92
+00:06:27,770 --> 00:06:33,810
+So in my Django project, my
+Django app, in my urls.py,
+
+93
+00:06:33,810 --> 00:06:42,270
+I'm expecting traffic at
+slash api slash users.
+
+94
+00:06:42,270 --> 00:06:51,290
+So I go to api/users, and
+there's my Django REST framework
+
+95
+00:06:51,290 --> 00:06:53,090
+interface.
+
+96
+00:06:53,090 --> 00:06:56,490
+And again, I got that path
+from inside of my app.
+
+97
+00:06:56,490 --> 00:06:57,510
+I have users.
+
+98
+00:06:57,510 --> 00:07:02,610
+But before that, inside of the
+project, there's a urls.py,
+
+99
+00:07:02,610 --> 00:07:05,110
+and I added api there.
+
+100
+00:07:05,110 --> 00:07:06,810
+So I need api/users.
+
+101
+00:07:15,370 --> 00:07:19,930
+OK, so we've verified
+that the API endpoint is
+
+102
+00:07:19,930 --> 00:07:22,530
+up with Django REST framework.
+
+103
+00:07:22,530 --> 00:07:24,350
+If you used Django
+REST framework--
+
+104
+00:07:24,350 --> 00:07:27,250
+and how do if you used
+Django REST framework?
+
+105
+00:07:27,250 --> 00:07:34,970
+In your views.py, you
+would import rest_framework
+
+106
+00:07:34,970 --> 00:07:39,730
+and create your GET
+and POST handlers
+
+107
+00:07:39,730 --> 00:07:42,510
+with your rest_framework.
+
+108
+00:07:42,510 --> 00:07:45,830
+And you can just get your
+JNI to make yours for you.
+
+109
+00:07:45,830 --> 00:07:48,570
+If you have REST
+framework installed,
+
+110
+00:07:48,570 --> 00:07:52,250
+you just install that with pip.
+
+111
+00:07:52,250 --> 00:07:55,330
+And then if you used Django REST
+framework to set up your POST
+
+112
+00:07:55,330 --> 00:08:00,050
+and GET endpoint, you should
+be able to get this interface.
+
+113
+00:08:00,050 --> 00:08:04,330
+And you message me or
+review the Django lectures,
+
+114
+00:08:04,330 --> 00:08:07,530
+if you have questions on getting
+caught back up with that.
+
+115
+00:08:07,530 --> 00:08:11,950
+But we've verified that our
+Django backend is running,
+
+116
+00:08:11,950 --> 00:08:14,490
+the endpoint is available,
+so I'm going to open--
+
+117
+00:08:14,490 --> 00:08:20,050
+I'm going to leave this running
+and then open up a new terminal.
+
+118
+00:08:20,050 --> 00:08:27,670
+And if you're on your
+VS Code interface,
+
+119
+00:08:27,670 --> 00:08:29,510
+you should be able
+to-- up at the top,
+
+120
+00:08:29,510 --> 00:08:33,409
+there's a hamburger menu where
+you can select and then open
+
+121
+00:08:33,409 --> 00:08:35,169
+a new terminal.
+
+122
+00:08:35,169 --> 00:08:38,809
+You can have multiple
+terminals open in your VS Code.
+
+123
+00:08:38,809 --> 00:08:43,090
+I just have my system terminal
+here, so I opened up a new app.
+
+124
+00:08:43,090 --> 00:08:49,810
+And then in this one, I'm going
+to cd out of the Django project
+
+125
+00:08:49,810 --> 00:08:53,250
+and then into Expo app.
+
+126
+00:08:53,250 --> 00:08:57,050
+I've got this terminal
+running with the Django app.
+
+127
+00:08:57,050 --> 00:09:00,530
+This one is inside
+of the Expo app.
+
+128
+00:09:00,530 --> 00:09:05,650
+It can npm start there.
+
+129
+00:09:05,650 --> 00:09:11,370
+Then you should be able to
+hit W and pop that open.
+
+130
+00:09:11,370 --> 00:09:16,130
+Django is running on port
+8000 because I told it to.
+
+131
+00:09:16,130 --> 00:09:22,690
+And Expo runs on
+port 8081 by default.
+
+132
+00:09:22,690 --> 00:09:25,350
+OK, so they're both
+running side by side,
+
+133
+00:09:25,350 --> 00:09:27,650
+but they're not
+talking to each other.
+
+134
+00:09:27,650 --> 00:09:32,070
+But Django is ready to accept
+traffic at our endpoint.
+
+135
+00:09:32,070 --> 00:09:34,670
+That's the way we set
+it up in our homework.
+
+136
+00:09:34,670 --> 00:09:36,890
+So now, we just need
+to get Expo to point
+
+137
+00:09:36,890 --> 00:09:40,930
+to our backend instance.
+
+138
+00:09:40,930 --> 00:09:45,530
+So the way we're going
+to do that is I'm
+
+139
+00:09:45,530 --> 00:09:49,930
+going to open my userSlice here.
+
+140
+00:09:49,930 --> 00:09:57,730
+And this is where we set up our
+Redux slice to handle updates
+
+141
+00:09:57,730 --> 00:10:00,290
+to our list of user data.
+
+142
+00:10:00,290 --> 00:10:05,450
+Yours may be a list of
+customer data or any other data
+
+143
+00:10:05,450 --> 00:10:07,890
+that you're storing in Redux.
+
+144
+00:10:07,890 --> 00:10:16,050
+I'm going to go ahead and just
+copy that, pop over here to GPT,
+
+145
+00:10:16,050 --> 00:10:20,470
+and then I can just get
+a new window going there.
+
+146
+00:10:23,090 --> 00:10:25,390
+And let's remember
+the context here.
+
+147
+00:10:25,390 --> 00:10:29,250
+If you have got your
+GPT running inline,
+
+148
+00:10:29,250 --> 00:10:31,330
+then it can pull the
+context from the files
+
+149
+00:10:31,330 --> 00:10:34,450
+that it has in its parameters.
+
+150
+00:10:34,450 --> 00:10:37,523
+If you don't, you're prompting
+in a browser like this,
+
+151
+00:10:37,523 --> 00:10:39,690
+there are a few things that
+you want to keep in mind
+
+152
+00:10:39,690 --> 00:10:42,810
+so that it knows what
+it's looking for.
+
+153
+00:10:42,810 --> 00:10:55,930
+"I'm using--" or let's see, "I
+have an expo app using redux
+
+154
+00:10:55,930 --> 00:11:02,050
+slices--" And this terminology
+here, Redux slices,
+
+155
+00:11:02,050 --> 00:11:03,650
+is important.
+
+156
+00:11:03,650 --> 00:11:07,370
+As we saw with our
+Redux homework,
+
+157
+00:11:07,370 --> 00:11:11,690
+Redux slices are important
+because that's the way we set up
+
+158
+00:11:11,690 --> 00:11:14,570
+our Redux slice.
+
+159
+00:11:14,570 --> 00:11:19,790
+Without using a slice like
+this from Redux toolkit,
+
+160
+00:11:19,790 --> 00:11:24,190
+you have to set up
+your actions manually.
+
+161
+00:11:24,190 --> 00:11:28,170
+So you have to define
+those yourself.
+
+162
+00:11:28,170 --> 00:11:31,130
+But we've used the
+slices toolkit,
+
+163
+00:11:31,130 --> 00:11:34,570
+so that simplifies
+our code a little bit.
+
+164
+00:11:34,570 --> 00:11:40,130
+So "I have an expo app
+using redux slices.
+
+165
+00:11:40,130 --> 00:11:56,970
+I have a django server accepting
+traffic at--" Mine is localhost
+
+166
+00:11:56,970 --> 00:11:58,730
+right now.
+
+167
+00:11:58,730 --> 00:12:03,710
+Yours would be the IP
+address of your EC2 instance.
+
+168
+00:12:03,710 --> 00:12:10,970
+So just grab your IP address,
+and remember it's port
+
+169
+00:12:10,970 --> 00:12:16,330
+8000, and then you're going
+to need your whole path
+
+170
+00:12:16,330 --> 00:12:17,710
+to the endpoint.
+
+171
+00:12:17,710 --> 00:12:20,470
+Mine is api/users.
+
+172
+00:12:20,470 --> 00:12:25,010
+And again, just to make sure
+we know how to get that,
+
+173
+00:12:25,010 --> 00:12:26,850
+open up Django--
+
+174
+00:12:26,850 --> 00:12:29,930
+or Django project, open that up.
+
+175
+00:12:29,930 --> 00:12:33,130
+There's an app folder.
+
+176
+00:12:33,130 --> 00:12:39,210
+And then there's the
+project logic in here.
+
+177
+00:12:39,210 --> 00:12:42,410
+So next to your settings.py,
+there's a urls.py.
+
+178
+00:12:45,190 --> 00:12:47,630
+This is where your
+admin site is set up
+
+179
+00:12:47,630 --> 00:12:52,170
+if you went that route,
+which is not necessary.
+
+180
+00:12:52,170 --> 00:12:57,570
+But then I also
+included api_app.urls.
+
+181
+00:12:57,570 --> 00:13:02,390
+And that is this, the exact
+same spelling, api_app.urls.
+
+182
+00:13:02,390 --> 00:13:08,150
+I included that to append
+onto the API endpoint.
+
+183
+00:13:08,150 --> 00:13:16,550
+So if I pop open api_app,
+then open the urls.py here,
+
+184
+00:13:16,550 --> 00:13:19,330
+then I have users.
+
+185
+00:13:19,330 --> 00:13:23,730
+And this endpoint is the one I'm
+using for GET and POST requests.
+
+186
+00:13:23,730 --> 00:13:25,870
+There's one here that is users.
+
+187
+00:13:25,870 --> 00:13:33,230
+And then an ID, that's
+for PUT or DELETE,
+
+188
+00:13:33,230 --> 00:13:35,910
+so if I'm going to delete
+a specific instance.
+
+189
+00:13:35,910 --> 00:13:39,690
+But in this case, we're just
+worried about GET and POST.
+
+190
+00:13:39,690 --> 00:13:42,690
+So I have the users
+endpoint here.
+
+191
+00:13:42,690 --> 00:13:49,610
+So again, that's from
+this urls.py api,
+
+192
+00:13:49,610 --> 00:13:54,090
+and then append on to that
+whatever the path is inside
+
+193
+00:13:54,090 --> 00:13:58,250
+of urls.py.
+
+194
+00:13:58,250 --> 00:14:05,090
+So I'm "accepting traffic at
+localhost:8000/api/users."
+
+195
+00:14:05,090 --> 00:14:07,570
+Now it knows where to look.
+
+196
+00:14:07,570 --> 00:14:14,570
+And I'm going to
+give it my models.py,
+
+197
+00:14:14,570 --> 00:14:25,610
+just so it knows what format
+I'm expecting on the backend
+
+198
+00:14:25,610 --> 00:14:29,330
+because it's case
+sensitive, and it'll
+
+199
+00:14:29,330 --> 00:14:34,890
+need to match when it
+gets sent to the backend.
+
+200
+00:14:34,890 --> 00:14:37,370
+So if I pop open
+models.py, these
+
+201
+00:14:37,370 --> 00:14:39,650
+are all of the items
+it's going to look for,
+
+202
+00:14:39,650 --> 00:14:43,370
+or the keys in my user model.
+
+203
+00:14:43,370 --> 00:14:50,610
+So I'm just going to copy all
+that and paste that in there.
+
+204
+00:14:50,610 --> 00:15:03,890
+And then "This is my redux
+slice:" Keep that open.
+
+205
+00:15:03,890 --> 00:15:09,090
+UserSlice, I'm
+going to copy that.
+
+206
+00:15:09,090 --> 00:15:13,370
+So now, it's got the
+context it needs.
+
+207
+00:15:13,370 --> 00:15:17,070
+We know we're working in an
+Expo app with Redux slices.
+
+208
+00:15:17,070 --> 00:15:18,890
+I've got a Django
+server, and it knows
+
+209
+00:15:18,890 --> 00:15:22,170
+where we're expecting traffic.
+
+210
+00:15:22,170 --> 00:15:24,010
+This is my models.py.
+
+211
+00:15:24,010 --> 00:15:28,370
+Then I gave it my
+Redux slice as well.
+
+212
+00:15:28,370 --> 00:15:42,690
+"I want to edit the redux slice
+to push and pull data from
+
+213
+00:15:42,690 --> 00:15:46,390
+the django server."
+
+214
+00:15:51,005 --> 00:15:52,130
+I think that's all we need.
+
+215
+00:15:52,130 --> 00:15:54,270
+Because what this
+is going to do,
+
+216
+00:15:54,270 --> 00:15:58,330
+they're going to-- we
+have the reducers here,
+
+217
+00:15:58,330 --> 00:16:07,690
+where they're editing users, or
+we're adding users, or I guess,
+
+218
+00:16:07,690 --> 00:16:10,850
+in this case, we
+can remove them.
+
+219
+00:16:10,850 --> 00:16:15,890
+I am not using the remove or
+update functionality in my app
+
+220
+00:16:15,890 --> 00:16:19,690
+anywhere, but
+we've got it there.
+
+221
+00:16:19,690 --> 00:16:22,210
+But instead of having
+reducers, we're
+
+222
+00:16:22,210 --> 00:16:26,130
+going to use this thing
+called extraReducers
+
+223
+00:16:26,130 --> 00:16:29,110
+to handle asynchronous updates.
+
+224
+00:16:34,330 --> 00:16:36,160
+Let's go ahead and
+start with that.
+
+225
+00:16:42,926 --> 00:16:46,940
+OK, so it's breaking
+this down here.
+
+226
+00:16:46,940 --> 00:16:51,720
+Use Redux Thunks, and
+it's a funny word,
+
+227
+00:16:51,720 --> 00:16:55,580
+but the reason
+they're using thunks
+
+228
+00:16:55,580 --> 00:16:57,840
+is because of Redux toolkit.
+
+229
+00:16:57,840 --> 00:17:01,060
+Thunks is something we
+get out of Redux toolkit
+
+230
+00:17:01,060 --> 00:17:06,339
+as well, to handle API requests.
+
+231
+00:17:06,339 --> 00:17:11,500
+So we're going to go ahead
+and modify the slice,
+
+232
+00:17:11,500 --> 00:17:17,579
+and go ahead and set up this
+to fetch data from the backend.
+
+233
+00:17:17,579 --> 00:17:20,140
+Let's go ahead and
+update that slice
+
+234
+00:17:20,140 --> 00:17:23,917
+and see what we've got here.
+
+235
+00:17:23,917 --> 00:17:28,820
+OK, so thunks for
+the async operations.
+
+236
+00:17:28,820 --> 00:17:33,940
+Oh, and it's giving us a
+Base API URL constant here.
+
+237
+00:17:33,940 --> 00:17:41,180
+That's good, because whenever
+you spin down and spin back up,
+
+238
+00:17:41,180 --> 00:17:47,900
+your EC2 instance, your
+IP address changes, right?
+
+239
+00:17:47,900 --> 00:17:49,900
+So in a development
+environment, that's
+
+240
+00:17:49,900 --> 00:17:53,000
+fine that your IP
+address will change.
+
+241
+00:17:53,000 --> 00:17:55,580
+You'll just have to make sure--
+if you set it up this way,
+
+242
+00:17:55,580 --> 00:17:58,940
+where you have your API_URL
+in a constant like this,
+
+243
+00:17:58,940 --> 00:18:03,100
+or in a variable, you could
+just go ahead and change your IP
+
+244
+00:18:03,100 --> 00:18:05,340
+address right there.
+
+245
+00:18:05,340 --> 00:18:07,280
+And then the rest of
+the code stays the same.
+
+246
+00:18:07,280 --> 00:18:09,860
+You only have one
+place to update it.
+
+247
+00:18:09,860 --> 00:18:14,020
+In a production
+setting, the IP would
+
+248
+00:18:14,020 --> 00:18:20,940
+be pulled from an environment
+variable in your EC2 instance,
+
+249
+00:18:20,940 --> 00:18:25,420
+or wherever you have
+your app deployed.
+
+250
+00:18:25,420 --> 00:18:30,360
+So our fetchUsers, this
+is going to pull down--
+
+251
+00:18:30,360 --> 00:18:34,820
+so this is going to fire our GET
+request, to get the list of data
+
+252
+00:18:34,820 --> 00:18:38,220
+from our Django backend.
+
+253
+00:18:38,220 --> 00:18:42,587
+So "fetch" is a
+JavaScript function.
+
+254
+00:18:42,587 --> 00:18:43,920
+It's just built into JavaScript.
+
+255
+00:18:43,920 --> 00:18:48,460
+JavaScript was made for web
+applications originally,
+
+256
+00:18:48,460 --> 00:18:53,340
+so it handles network requests
+and asynchronous functionality
+
+257
+00:18:53,340 --> 00:18:55,620
+pretty well out of the box.
+
+258
+00:18:55,620 --> 00:18:58,440
+This "await" keyword
+is important.
+
+259
+00:18:58,440 --> 00:19:00,500
+So this is this async
+for the function.
+
+260
+00:19:00,500 --> 00:19:02,580
+That just makes sure
+that even though fetch
+
+261
+00:19:02,580 --> 00:19:06,420
+is going to take an
+unknown amount of time,
+
+262
+00:19:06,420 --> 00:19:10,740
+this function will
+still execute--
+
+263
+00:19:10,740 --> 00:19:13,640
+it'll run as if it were
+executing line by line.
+
+264
+00:19:16,260 --> 00:19:21,280
+And then if this response
+from our GET request
+
+265
+00:19:21,280 --> 00:19:25,780
+comes back with a response
+other than OK, in other words,
+
+266
+00:19:25,780 --> 00:19:28,953
+the request was bad
+or there was an error,
+
+267
+00:19:28,953 --> 00:19:31,120
+then it's going to go ahead
+and just throw an error.
+
+268
+00:19:31,120 --> 00:19:35,380
+That's just some super
+simple error handling there.
+
+269
+00:19:35,380 --> 00:19:41,420
+And then it'll return the
+JSON from the response
+
+270
+00:19:41,420 --> 00:19:44,380
+of that fetch request.
+
+271
+00:19:44,380 --> 00:19:47,940
+So that's the GET request
+to our Django backend.
+
+272
+00:19:47,940 --> 00:19:51,960
+CreateUser, we're going to
+actually have to specify.
+
+273
+00:19:51,960 --> 00:19:58,220
+So fetch, by default, is
+going to use the GET method.
+
+274
+00:19:58,220 --> 00:20:03,220
+Here, we're hitting
+the same endpoint,
+
+275
+00:20:03,220 --> 00:20:07,900
+but we're doing a POST
+request and adding
+
+276
+00:20:07,900 --> 00:20:14,020
+our body, which is just all
+of our user data in our--
+
+277
+00:20:14,020 --> 00:20:19,420
+or it's the new user data that
+we submitted with our form.
+
+278
+00:20:19,420 --> 00:20:22,220
+And then the same, we've just
+got some simple error handling
+
+279
+00:20:22,220 --> 00:20:23,860
+there.
+
+280
+00:20:23,860 --> 00:20:26,140
+And then we've got an update.
+
+281
+00:20:26,140 --> 00:20:27,600
+So this is a PUT request.
+
+282
+00:20:27,600 --> 00:20:32,220
+This will update an existing row
+in our database on the backend.
+
+283
+00:20:35,660 --> 00:20:41,460
+We just pass the user data
+for that endpoint as well,
+
+284
+00:20:41,460 --> 00:20:43,900
+and it's passing the ID.
+
+285
+00:20:43,900 --> 00:20:49,860
+So the URL that we're using
+here, these backticks,
+
+286
+00:20:49,860 --> 00:20:54,540
+and the dollar sign,
+and brackets here, this
+
+287
+00:20:54,540 --> 00:20:58,860
+is a-- what's it called--
+a string composition
+
+288
+00:20:58,860 --> 00:20:59,800
+in JavaScript.
+
+289
+00:20:59,800 --> 00:21:05,300
+So this is just getting our
+URL, and then slash, and then
+
+290
+00:21:05,300 --> 00:21:08,840
+the ID of the user that we
+want to change or update.
+
+291
+00:21:08,840 --> 00:21:13,220
+Then our DELETE will-- yeah,
+it's doing the same thing.
+
+292
+00:21:13,220 --> 00:21:16,020
+And that will map to our--
+
+293
+00:21:16,020 --> 00:21:19,340
+we look at our models--
+
+294
+00:21:19,340 --> 00:21:20,840
+or no, our urls.py.
+
+295
+00:21:20,840 --> 00:21:24,780
+Again, we have users,
+endpoints for GET and POST.
+
+296
+00:21:24,780 --> 00:21:29,780
+And then for our PUT or
+DELETE, we have users slash,
+
+297
+00:21:29,780 --> 00:21:36,260
+and then an ID that
+matches what we're
+
+298
+00:21:36,260 --> 00:21:42,780
+doing here with our DELETE
+and our PUT endpoints.
+
+299
+00:21:42,780 --> 00:21:45,840
+And then our Initial
+State is changed again.
+
+300
+00:21:45,840 --> 00:21:48,160
+So we used to just have
+a list of form data,
+
+301
+00:21:48,160 --> 00:21:52,660
+but now we've also got
+a status and an error.
+
+302
+00:21:52,660 --> 00:22:00,940
+And those can help us track the
+state of our network requests
+
+303
+00:22:00,940 --> 00:22:02,900
+as it's going.
+
+304
+00:22:02,900 --> 00:22:05,480
+So let's go ahead and look at
+what happened to our reducers.
+
+305
+00:22:05,480 --> 00:22:08,060
+So reducers is now empty.
+
+306
+00:22:08,060 --> 00:22:10,580
+And that's because
+these reducers are only
+
+307
+00:22:10,580 --> 00:22:15,860
+for synchronous operations,
+meaning they're going to happen.
+
+308
+00:22:15,860 --> 00:22:17,880
+They're only happening
+locally on our device,
+
+309
+00:22:17,880 --> 00:22:20,540
+and they don't have to
+wait on any [AUDIO OUT].
+
+310
+00:22:20,540 --> 00:22:23,380
+ExtraReducers do have
+to wait on things.
+
+311
+00:22:23,380 --> 00:22:29,280
+They can handle
+asynchronous updates.
+
+312
+00:22:29,280 --> 00:22:31,060
+And then they just
+have these cases,
+
+313
+00:22:31,060 --> 00:22:35,600
+where it listens
+to these events.
+
+314
+00:22:35,600 --> 00:22:38,340
+So pending, fulfilled, rejected.
+
+315
+00:22:38,340 --> 00:22:43,580
+Pending is when you've
+started to add a user using
+
+316
+00:22:43,580 --> 00:22:47,360
+the-- this is going to be
+using the createUser endpoint,
+
+317
+00:22:47,360 --> 00:22:50,220
+I believe.
+
+318
+00:22:50,220 --> 00:22:52,460
+This is for fetch.
+
+319
+00:22:52,460 --> 00:22:55,220
+Yes, fetchUsers is
+pending, meaning,
+
+320
+00:22:55,220 --> 00:22:58,260
+we've started to fetch
+users from the backend.
+
+321
+00:22:58,260 --> 00:23:00,680
+Fulfilled means it succeeded.
+
+322
+00:23:00,680 --> 00:23:03,900
+And in that case, we're
+going to grab our--
+
+323
+00:23:03,900 --> 00:23:11,300
+we're going to set our
+network request as succeeded
+
+324
+00:23:11,300 --> 00:23:13,220
+and update our user
+list to whatever
+
+325
+00:23:13,220 --> 00:23:15,600
+the backend returned for us.
+
+326
+00:23:15,600 --> 00:23:17,700
+And then again, if
+it rejected, we're
+
+327
+00:23:17,700 --> 00:23:25,100
+going to fail, and update
+the error part of our state,
+
+328
+00:23:25,100 --> 00:23:27,940
+so that we can read
+that if we want to.
+
+329
+00:23:27,940 --> 00:23:31,060
+It's somewhere in the app.
+
+330
+00:23:31,060 --> 00:23:34,480
+And then we've got
+cases for createUser.
+
+331
+00:23:37,980 --> 00:23:50,660
+It looks like this createUser
+case doesn't have-- the pop up
+
+332
+00:23:50,660 --> 00:23:54,660
+is annoying-- it doesn't
+have one for pending,
+
+333
+00:23:54,660 --> 00:23:58,820
+but we could put
+one if we wanted to.
+
+334
+00:23:58,820 --> 00:24:01,080
+I guess it just assumed
+we didn't need one.
+
+335
+00:24:01,080 --> 00:24:02,860
+And maybe, we don't.
+
+336
+00:24:02,860 --> 00:24:07,000
+For example, on our frontend,
+if we hit the Submit button,
+
+337
+00:24:07,000 --> 00:24:11,620
+do we want to have to show the
+user that it's still submitting
+
+338
+00:24:11,620 --> 00:24:14,740
+or still updating, or do we
+want it to just continue and act
+
+339
+00:24:14,740 --> 00:24:16,460
+like it happened instantly?
+
+340
+00:24:16,460 --> 00:24:19,440
+In this case, it's going to
+act like it happened instantly.
+
+341
+00:24:19,440 --> 00:24:24,260
+So we're just submitting
+that data to the backend.
+
+342
+00:24:24,260 --> 00:24:28,180
+If it succeeded,
+then we're going
+
+343
+00:24:28,180 --> 00:24:34,620
+to take whatever that data
+was and add it to our list
+
+344
+00:24:34,620 --> 00:24:39,540
+so that we have a local copy of
+that new user data in our list
+
+345
+00:24:39,540 --> 00:24:40,360
+as well.
+
+346
+00:24:40,360 --> 00:24:45,420
+So say, we already had users in
+this list, it's just going to--
+
+347
+00:24:45,420 --> 00:24:47,560
+after we succeed pushing
+it to the backend,
+
+348
+00:24:47,560 --> 00:24:50,540
+and the backend says, yeah,
+I got you, I got that data,
+
+349
+00:24:50,540 --> 00:24:52,920
+then we're going to add it
+to our local copy as well.
+
+350
+00:24:52,920 --> 00:24:54,780
+So we've got one.
+
+351
+00:24:54,780 --> 00:25:01,300
+We don't have to pull a new
+list, we've already got it here.
+
+352
+00:25:01,300 --> 00:25:04,340
+And then we've
+got a success case
+
+353
+00:25:04,340 --> 00:25:06,340
+for updateUser and deleteUser.
+
+354
+00:25:09,980 --> 00:25:12,220
+We could tell the
+GPT to do this,
+
+355
+00:25:12,220 --> 00:25:13,760
+or we could do it ourselves.
+
+356
+00:25:13,760 --> 00:25:17,840
+But if we wanted to add
+a case-- for example,
+
+357
+00:25:17,840 --> 00:25:24,420
+let's say, we had
+our UI here, and we
+
+358
+00:25:24,420 --> 00:25:27,780
+wanted to show the user
+that, hey, submitting
+
+359
+00:25:27,780 --> 00:25:29,500
+that user data
+failed-- you wanted
+
+360
+00:25:29,500 --> 00:25:34,940
+to show a toast, or some sort
+of message, a notification,
+
+361
+00:25:34,940 --> 00:25:38,420
+that this form failed,
+then what we would do
+
+362
+00:25:38,420 --> 00:25:44,740
+is add a new case here for
+createUsers.rejected, kind
+
+363
+00:25:44,740 --> 00:25:46,900
+of like they did
+here on the fetch.
+
+364
+00:25:46,900 --> 00:25:52,300
+And then we could
+track the error message
+
+365
+00:25:52,300 --> 00:25:55,700
+and then display that
+to the [AUDIO OUT].
+
+366
+00:25:55,700 --> 00:25:58,800
+I think, in this case,
+we don't need it.
+
+367
+00:25:58,800 --> 00:26:01,952
+But, just so you
+know, if you did,
+
+368
+00:26:01,952 --> 00:26:03,160
+that's where you would do it.
+
+369
+00:26:03,160 --> 00:26:06,460
+You would add a case here, make
+sure you had a rejected case
+
+370
+00:26:06,460 --> 00:26:09,800
+so that your user interface
+could respond to that.
+
+371
+00:26:13,900 --> 00:26:16,980
+But I think that's about--
+
+372
+00:26:16,980 --> 00:26:19,840
+at least, that covers what's
+going on in this file.
+
+373
+00:26:22,460 --> 00:26:27,900
+And then we're going to need to
+update our form because here,
+
+374
+00:26:27,900 --> 00:26:34,260
+in index.jsx, where we are
+submitting the user form data,
+
+375
+00:26:34,260 --> 00:26:37,800
+we're dispatching the
+addFormData action.
+
+376
+00:26:37,800 --> 00:26:43,380
+But let's see, if we copy
+that, come back here,
+
+377
+00:26:43,380 --> 00:26:46,040
+and we search for it, it
+doesn't exist anymore, right?
+
+378
+00:26:46,040 --> 00:26:50,380
+We used to have
+addFormData as a reducer
+
+379
+00:26:50,380 --> 00:26:54,900
+inside of our reducers list,
+but we don't have that anymore.
+
+380
+00:26:54,900 --> 00:26:57,320
+Instead, we have
+these extraReducers.
+
+381
+00:26:57,320 --> 00:27:01,120
+And we don't actually
+call these cases.
+
+382
+00:27:01,120 --> 00:27:08,340
+These are listening to
+events from these thunks.
+
+383
+00:27:08,340 --> 00:27:14,220
+So instead, we're going to
+go ahead and call the thunk.
+
+384
+00:27:14,220 --> 00:27:17,820
+So we're going to want to call--
+
+385
+00:27:17,820 --> 00:27:21,590
+you can see this
+createUser is exported.
+
+386
+00:27:21,590 --> 00:27:24,688
+That's what we're going to
+want to dispatch instead.
+
+387
+00:27:24,688 --> 00:27:25,230
+So if we go--
+
+388
+00:27:25,230 --> 00:27:31,310
+I actually already
+prompted it here.
+
+389
+00:27:35,750 --> 00:27:39,990
+I just gave it my
+DisplayUserData component,
+
+390
+00:27:39,990 --> 00:27:43,710
+where I was showing the
+list, and my index component,
+
+391
+00:27:43,710 --> 00:27:46,330
+where I was adding to
+the list, and said,
+
+392
+00:27:46,330 --> 00:27:49,130
+and what other updates
+do I need on these files?
+
+393
+00:27:52,270 --> 00:27:57,970
+So in the index.jsx,
+it's just saying, hey,
+
+394
+00:27:57,970 --> 00:28:04,750
+all you need to do is update
+which function you're calling--
+
+395
+00:28:04,750 --> 00:28:09,090
+or call the thunk
+instead of your reducer.
+
+396
+00:28:09,090 --> 00:28:12,510
+So let's go ahead and do that.
+
+397
+00:28:12,510 --> 00:28:18,522
+Inside of our index, we're
+going to call create--
+
+398
+00:28:18,522 --> 00:28:21,830
+I already forgot what
+I called it exactly,
+
+399
+00:28:21,830 --> 00:28:25,590
+or what it called it; I
+didn't write it-- createUser.
+
+400
+00:28:25,590 --> 00:28:27,150
+Go ahead and call createUser.
+
+401
+00:28:30,310 --> 00:28:30,810
+There we go.
+
+402
+00:28:30,810 --> 00:28:32,190
+And we've got the import.
+
+403
+00:28:36,230 --> 00:28:38,770
+And as long as we're
+giving it the data--
+
+404
+00:28:41,430 --> 00:28:47,550
+oh, and when I made
+this display a list--
+
+405
+00:28:47,550 --> 00:28:51,490
+when you display a list of items
+that have the same structure,
+
+406
+00:28:51,490 --> 00:28:53,890
+you need to give
+them all a unique ID.
+
+407
+00:28:53,890 --> 00:28:59,850
+So I had given them
+that unique ID for now,
+
+408
+00:28:59,850 --> 00:29:03,430
+while I had a list
+render locally.
+
+409
+00:29:03,430 --> 00:29:07,270
+But our backend is
+going to be in charge
+
+410
+00:29:07,270 --> 00:29:09,790
+of handling unique IDs,
+because our backend is
+
+411
+00:29:09,790 --> 00:29:12,990
+in charge of the database and
+the database makes these IDs,
+
+412
+00:29:12,990 --> 00:29:13,490
+right?
+
+413
+00:29:13,490 --> 00:29:15,470
+So we're not going to
+have the frontend tell
+
+414
+00:29:15,470 --> 00:29:19,710
+the backend database what
+IDs the rows should have.
+
+415
+00:29:19,710 --> 00:29:23,930
+So the frontend doesn't
+need to know about the IDs,
+
+416
+00:29:23,930 --> 00:29:33,850
+so I'm just going to pass data
+to the thunk action there.
+
+417
+00:29:37,150 --> 00:29:44,190
+And DisplayUserData,
+it grabbed a whole--
+
+418
+00:29:44,190 --> 00:29:45,930
+it wrote some new
+code for me here.
+
+419
+00:29:45,930 --> 00:29:48,070
+And let's walk
+through what that is.
+
+420
+00:29:48,070 --> 00:29:51,630
+So we have our fetchUsers-- oh,
+and it pulled in deleteUser too.
+
+421
+00:29:51,630 --> 00:29:54,090
+Do we have a delete
+button on here?
+
+422
+00:29:54,090 --> 00:29:56,410
+Oh my gosh, it added
+a button for us.
+
+423
+00:29:56,410 --> 00:29:59,230
+I didn't even ask for that.
+
+424
+00:29:59,230 --> 00:30:03,430
+They're just
+proactively helpful.
+
+425
+00:30:03,430 --> 00:30:08,950
+OK, so what's happened
+here is, instead of--
+
+426
+00:30:08,950 --> 00:30:15,270
+and I don't remember what the
+Selector was reading before.
+
+427
+00:30:15,270 --> 00:30:16,570
+Actually, it might be--
+
+428
+00:30:19,390 --> 00:30:20,490
+yeah, it's the same.
+
+429
+00:30:20,490 --> 00:30:23,670
+We're just pulling
+state.user data
+
+430
+00:30:23,670 --> 00:30:25,970
+and pulling the
+formDataList out of there.
+
+431
+00:30:25,970 --> 00:30:34,750
+So we're pulling-- in our
+slice, we have this list.
+
+432
+00:30:34,750 --> 00:30:37,810
+That's what we're pulling
+with our useSelector.
+
+433
+00:30:37,810 --> 00:30:42,990
+So it's reading the data from
+our Redux store the same way,
+
+434
+00:30:42,990 --> 00:30:47,750
+but we've also got this
+extra logic right here.
+
+435
+00:30:47,750 --> 00:30:50,390
+We're dispatching fetchUsers.
+
+436
+00:30:50,390 --> 00:30:52,190
+And why are we doing that?
+
+437
+00:30:52,190 --> 00:30:56,070
+So just in case we landed
+on this component that
+
+438
+00:30:56,070 --> 00:31:05,870
+shares the list of
+data here, we want
+
+439
+00:31:05,870 --> 00:31:08,710
+to make sure we pull the
+entire list of user data
+
+440
+00:31:08,710 --> 00:31:12,190
+to display on this page.
+
+441
+00:31:12,190 --> 00:31:15,550
+So we're going to
+dispatch fetchUsers
+
+442
+00:31:15,550 --> 00:31:20,230
+so that it will call
+this fetchUsers thunk
+
+443
+00:31:20,230 --> 00:31:23,270
+and just pull all the
+data-- make a GET request
+
+444
+00:31:23,270 --> 00:31:28,430
+to pull all the data that
+that endpoint exposes.
+
+445
+00:31:28,430 --> 00:31:33,350
+So now, we have a complete
+list of the data here.
+
+446
+00:31:33,350 --> 00:31:37,310
+And so if we refresh our
+app, or we land on the page
+
+447
+00:31:37,310 --> 00:31:39,950
+and we reload the
+page, then it'll
+
+448
+00:31:39,950 --> 00:31:43,390
+just make a fetch
+request to the backend,
+
+449
+00:31:43,390 --> 00:31:46,270
+to pull the list of data.
+
+450
+00:31:46,270 --> 00:31:52,550
+And that will
+rehydrate this list,
+
+451
+00:31:52,550 --> 00:31:55,670
+so it won't be empty anymore.
+
+452
+00:31:55,670 --> 00:31:58,090
+And what is useEffect?
+
+453
+00:31:58,090 --> 00:32:04,910
+UseEffect, it's a way to
+run some logic whenever
+
+454
+00:32:04,910 --> 00:32:06,830
+certain data in the app changes.
+
+455
+00:32:06,830 --> 00:32:11,270
+In this case, it is
+waiting for dispatch
+
+456
+00:32:11,270 --> 00:32:14,390
+to change, which I
+might ask it about that,
+
+457
+00:32:14,390 --> 00:32:18,470
+because that doesn't
+make any sense to me.
+
+458
+00:32:18,470 --> 00:32:20,630
+I'm going to not
+listen to anything.
+
+459
+00:32:20,630 --> 00:32:26,430
+So what this is going to
+do is when this app mounts,
+
+460
+00:32:26,430 --> 00:32:30,610
+it will run whatever is inside
+of useEffect at least once.
+
+461
+00:32:30,610 --> 00:32:33,950
+The first time that
+this page loads,
+
+462
+00:32:33,950 --> 00:32:36,630
+we're going to
+dispatch fetchUsers.
+
+463
+00:32:36,630 --> 00:32:39,750
+And then what this little list
+down here is supposed to be for,
+
+464
+00:32:39,750 --> 00:32:43,190
+is anytime data in
+this list updates, we
+
+465
+00:32:43,190 --> 00:32:46,910
+run the contents
+of useEffect again.
+
+466
+00:32:46,910 --> 00:32:51,150
+But I don't really want
+to run dispatch fetchUsers
+
+467
+00:32:51,150 --> 00:32:52,050
+multiple times.
+
+468
+00:32:52,050 --> 00:32:55,990
+I don't expect the
+list of users to change
+
+469
+00:32:55,990 --> 00:33:01,370
+while I am on this page, unless
+I have something to change it.
+
+470
+00:33:01,370 --> 00:33:02,790
+And I don't do
+that on this page.
+
+471
+00:33:02,790 --> 00:33:05,590
+Though I could
+delete it, I guess.
+
+472
+00:33:05,590 --> 00:33:13,790
+Delete happens but delete
+also updates our local copy,
+
+473
+00:33:13,790 --> 00:33:17,810
+so we don't need to run
+this more than once.
+
+474
+00:33:17,810 --> 00:33:20,150
+So once, when this
+page loads, we're
+
+475
+00:33:20,150 --> 00:33:22,910
+going to dispatch fetchUsers.
+
+476
+00:33:22,910 --> 00:33:25,230
+If for some reason,
+you think you
+
+477
+00:33:25,230 --> 00:33:30,070
+need to check the user's
+data or the list of user data
+
+478
+00:33:30,070 --> 00:33:33,070
+more than once, you could
+put some sort of variable
+
+479
+00:33:33,070 --> 00:33:36,030
+in here that you listen to.
+
+480
+00:33:36,030 --> 00:33:39,050
+And when that variable
+changes, call fetchUsers again.
+
+481
+00:33:45,310 --> 00:33:48,750
+But the long story short
+is, useEffect just makes it
+
+482
+00:33:48,750 --> 00:33:52,030
+so this only runs once.
+
+483
+00:33:52,030 --> 00:33:53,850
+And the UI can still update.
+
+484
+00:33:53,850 --> 00:33:59,290
+But if this list updates, we're
+not going to fetchUsers again.
+
+485
+00:33:59,290 --> 00:34:02,690
+We're still only going to do
+it once, when this page loads.
+
+486
+00:34:06,030 --> 00:34:11,090
+That all said-- so we
+got our slice updated.
+
+487
+00:34:11,090 --> 00:34:13,170
+It's using extra reducers.
+
+488
+00:34:13,170 --> 00:34:14,330
+We've got thunks.
+
+489
+00:34:14,330 --> 00:34:18,550
+We've got the thunks
+imported into our components.
+
+490
+00:34:18,550 --> 00:34:22,854
+So let's go ahead
+and give it a shot.
+
+491
+00:34:22,854 --> 00:34:25,170
+The Metro server
+was already running.
+
+492
+00:34:25,170 --> 00:34:29,150
+But I don't need to restart
+it because I haven't
+
+493
+00:34:29,150 --> 00:34:31,510
+installed any new node modules.
+
+494
+00:34:31,510 --> 00:34:36,370
+If I open the Network tab
+and I refresh this page--
+
+495
+00:34:42,830 --> 00:34:50,290
+users, and I'm going to say,
+this is maybe a CORS error.
+
+496
+00:34:56,110 --> 00:35:01,470
+So it looks like I
+accidentally deleted something
+
+497
+00:35:01,470 --> 00:35:05,690
+while I had the file open.
+
+498
+00:35:08,420 --> 00:35:13,590
+You know what a good way to
+check for undesired file changes
+
+499
+00:35:13,590 --> 00:35:15,870
+is?
+
+500
+00:35:15,870 --> 00:35:17,910
+Check with Git.
+
+501
+00:35:17,910 --> 00:35:22,330
+OK, it looks like
+api urls.py changed.
+
+502
+00:35:25,590 --> 00:35:31,590
+So Git has ew.as_view.
+
+503
+00:35:31,590 --> 00:35:34,550
+It's ew.
+
+504
+00:35:34,550 --> 00:35:41,650
+I'm going to just
+undo those changes.
+
+505
+00:35:51,430 --> 00:35:53,410
+Oh, I had an extra
+space in there.
+
+506
+00:35:53,410 --> 00:35:54,210
+Delete it.
+
+507
+00:35:54,210 --> 00:35:59,690
+OK, so now, I need
+to spin this back up.
+
+508
+00:36:03,110 --> 00:36:05,410
+And the Metro server
+is still running.
+
+509
+00:36:05,410 --> 00:36:10,750
+So if I refresh this,
+users CORS error.
+
+510
+00:36:10,750 --> 00:36:13,150
+That's what I was looking for.
+
+511
+00:36:13,150 --> 00:36:25,230
+So what CORS is, is
+cross-origin resource sharing.
+
+512
+00:36:25,230 --> 00:36:28,830
+It's basically
+making sure that you
+
+513
+00:36:28,830 --> 00:36:36,110
+can't pull files or resources
+on the same machine,
+
+514
+00:36:36,110 --> 00:36:37,530
+from the same machine.
+
+515
+00:36:37,530 --> 00:36:39,150
+And what that does
+is it makes it--
+
+516
+00:36:39,150 --> 00:36:46,050
+it's a way to protect your
+computer, your EC2 instance,
+
+517
+00:36:46,050 --> 00:36:49,990
+or any other machine that
+you have a server running.
+
+518
+00:36:49,990 --> 00:36:55,590
+It helps protect it from
+certain types of cyber attacks.
+
+519
+00:36:55,590 --> 00:36:59,590
+And so what we're going to
+need to do to set up Django
+
+520
+00:36:59,590 --> 00:37:05,270
+to allow CORS-- since we're
+running this as a development
+
+521
+00:37:05,270 --> 00:37:07,510
+server, you wouldn't do this.
+
+522
+00:37:07,510 --> 00:37:11,830
+In prod, your-- like,
+if you were running
+
+523
+00:37:11,830 --> 00:37:17,190
+an app in production, you would
+have your Django server running
+
+524
+00:37:17,190 --> 00:37:21,970
+on one machine,
+at one URL or IP,
+
+525
+00:37:21,970 --> 00:37:30,070
+and then your app frontend
+would be hosted somewhere else,
+
+526
+00:37:30,070 --> 00:37:32,930
+so you wouldn't
+have CORS errors.
+
+527
+00:37:32,930 --> 00:37:35,430
+But while we do
+have this set up,
+
+528
+00:37:35,430 --> 00:37:40,270
+so that it's running on one
+EC2 for dev and for our test
+
+529
+00:37:40,270 --> 00:37:43,870
+environment, we will want to--
+
+530
+00:37:43,870 --> 00:37:47,450
+we'll need to
+enable CORS headers.
+
+531
+00:37:47,450 --> 00:37:51,890
+So let's go ahead and do that.
+
+532
+00:37:51,890 --> 00:37:53,290
+There's a pip install.
+
+533
+00:37:53,290 --> 00:37:57,590
+And I don't remember what it
+is off the top of my head.
+
+534
+00:37:57,590 --> 00:38:09,750
+So "I am running my
+django server and expo app
+
+535
+00:38:09,750 --> 00:38:14,470
+on the same machine.
+
+536
+00:38:14,470 --> 00:38:19,910
+Django on port 8000--" it
+probably doesn't need to know
+
+537
+00:38:19,910 --> 00:38:23,510
+what the ports are.
+
+538
+00:38:23,510 --> 00:38:29,790
+It will want your settings.py
+so it has something to edit.
+
+539
+00:38:29,790 --> 00:38:33,350
+Let's go ahead and
+get my settings.py.
+
+540
+00:38:33,350 --> 00:38:36,330
+My INSTALLED_APPS, it's got
+rest_framework, api_app.
+
+541
+00:38:36,330 --> 00:38:38,510
+We're going to add
+another one there--
+
+542
+00:38:41,110 --> 00:38:42,570
+here, in just a second.
+
+543
+00:38:48,782 --> 00:38:51,750
+OK, there's the pip install.
+
+544
+00:38:51,750 --> 00:38:54,950
+And I'm going to modify that a
+little bit because we're using--
+
+545
+00:38:54,950 --> 00:38:57,843
+I believe we have pip3.
+
+546
+00:39:03,360 --> 00:39:05,560
+Yeah, so instead of--
+
+547
+00:39:05,560 --> 00:39:08,480
+they gave us pip
+install, but we have
+
+548
+00:39:08,480 --> 00:39:11,400
+pip3 install
+django-cors-headers.
+
+549
+00:39:11,400 --> 00:39:17,080
+And make sure your virtual
+environment is active when
+
+550
+00:39:17,080 --> 00:39:18,760
+you do these pip installs--
+
+551
+00:39:18,760 --> 00:39:21,980
+pip3 install
+django-cors-headers.
+
+552
+00:39:21,980 --> 00:39:23,620
+I'm going to let that run.
+
+553
+00:39:23,620 --> 00:39:25,960
+There we go, it's quick.
+
+554
+00:39:25,960 --> 00:39:27,295
+Then let's see.
+
+555
+00:39:27,295 --> 00:39:28,920
+The next step is
+we'll need to update--
+
+556
+00:39:28,920 --> 00:39:38,560
+yeah, corsheaders, add that to
+our installed apps, right here.
+
+557
+00:39:38,560 --> 00:39:52,000
+Then we're going to add
+CorsMiddleware, just
+
+558
+00:39:52,000 --> 00:39:53,840
+add that line.
+
+559
+00:39:53,840 --> 00:39:59,200
+I don't think the
+order here matters,
+
+560
+00:39:59,200 --> 00:40:01,140
+but I'm going to
+keep it the same.
+
+561
+00:40:05,800 --> 00:40:14,640
+And then let's go ahead and set
+this environment variable, True.
+
+562
+00:40:20,320 --> 00:40:22,680
+And I'm just going
+to keep this up here,
+
+563
+00:40:22,680 --> 00:40:26,480
+next to my ALLOWED
+HOSTS being anything.
+
+564
+00:40:26,480 --> 00:40:31,800
+Remember that both of these
+things need to change in prod.
+
+565
+00:40:31,800 --> 00:40:34,560
+Only use in development,
+this is very important.
+
+566
+00:40:34,560 --> 00:40:38,780
+You do not want CORS attacks
+on your machine in prod.
+
+567
+00:40:43,840 --> 00:40:46,260
+Oh, look at that,
+CORS_ALLOWED_ORIGINS,
+
+568
+00:40:46,260 --> 00:40:52,320
+so it's allowing
+it from port 8081.
+
+569
+00:40:52,320 --> 00:40:57,740
+If you know where your requests
+are going to come from,
+
+570
+00:40:57,740 --> 00:41:00,720
+you could do that.
+
+571
+00:41:00,720 --> 00:41:03,580
+I'm just going to do this for
+now in development, though.
+
+572
+00:41:13,160 --> 00:41:16,100
+Oh, look at that, mobile
+devices on the current network.
+
+573
+00:41:16,100 --> 00:41:19,160
+So if you-- yeah, so if
+you've got your mobile app
+
+574
+00:41:19,160 --> 00:41:21,120
+running-- how thoughtful.
+
+575
+00:41:21,120 --> 00:41:24,000
+Or you could just
+ALLOW_ALL_ORIGINS and not
+
+576
+00:41:24,000 --> 00:41:25,660
+have to worry about
+it while in dev.
+
+577
+00:41:31,360 --> 00:41:36,680
+And then this, we're not going
+to be worried about credentials
+
+578
+00:41:36,680 --> 00:41:38,760
+yet, but we'll get there.
+
+579
+00:41:38,760 --> 00:41:45,400
+So I'm going to just put that
+in there for now, anyway.
+
+580
+00:41:45,400 --> 00:41:47,480
+But that, Restart Django
+Server, yeah, this
+
+581
+00:41:47,480 --> 00:41:51,280
+will require a Django restart.
+
+582
+00:41:51,280 --> 00:41:56,140
+And by my memory, that is
+everything that we need.
+
+583
+00:42:08,960 --> 00:42:13,090
+All right, let's go ahead
+and check-- the Metro
+
+584
+00:42:13,090 --> 00:42:14,380
+is still running, right?
+
+585
+00:42:14,380 --> 00:42:16,320
+Yep.
+
+586
+00:42:16,320 --> 00:42:19,640
+Go ahead and refresh that page.
+
+587
+00:42:19,640 --> 00:42:22,060
+CORS error, again.
+
+588
+00:42:25,640 --> 00:42:30,040
+I got it figured out, so all
+we need to add for a CORS
+
+589
+00:42:30,040 --> 00:42:31,920
+to allow for our
+development environment is
+
+590
+00:42:31,920 --> 00:42:36,000
+this CORS_ALLOW_ALL_ORIGINS,
+True.
+
+591
+00:42:36,000 --> 00:42:37,620
+Later, if we get
+to authentication,
+
+592
+00:42:37,620 --> 00:42:39,620
+we'll need this,
+credentials, True as well,
+
+593
+00:42:39,620 --> 00:42:43,960
+but not necessarily
+necessary right now.
+
+594
+00:42:43,960 --> 00:42:48,140
+Then in INSTALLED_APPS,
+we'll need corsheaders,
+
+595
+00:42:48,140 --> 00:42:49,580
+which we pip installed.
+
+596
+00:42:49,580 --> 00:42:52,480
+And then I did check,
+the order matters.
+
+597
+00:42:52,480 --> 00:42:56,560
+CorsMiddleware needs to go
+inside of our middleware list
+
+598
+00:42:56,560 --> 00:42:57,120
+here.
+
+599
+00:42:57,120 --> 00:43:00,480
+It has to be before
+CommonMiddleware,
+
+600
+00:43:00,480 --> 00:43:02,180
+like I put in the comment here.
+
+601
+00:43:02,180 --> 00:43:04,840
+And don't worry about
+memorizing this.
+
+602
+00:43:04,840 --> 00:43:09,120
+I will commit this, and
+push it to the repo,
+
+603
+00:43:09,120 --> 00:43:14,360
+and post that repo link,
+so that you have it.
+
+604
+00:43:14,360 --> 00:43:17,180
+You'll have the code
+when I post this lecture,
+
+605
+00:43:17,180 --> 00:43:19,840
+so don't worry about
+memorizing that.
+
+606
+00:43:19,840 --> 00:43:22,180
+You can always look it
+up there for reference.
+
+607
+00:43:24,800 --> 00:43:27,880
+Then the other thing I
+forgot-- or not forgot,
+
+608
+00:43:27,880 --> 00:43:30,760
+I don't know if I knew this.
+
+609
+00:43:30,760 --> 00:43:33,360
+Maybe I did, and then I forgot.
+
+610
+00:43:33,360 --> 00:43:37,960
+Django has a strict requirement
+for their request URLs.
+
+611
+00:43:37,960 --> 00:43:42,940
+I had api/users, like this,
+with no slash at the end,
+
+612
+00:43:42,940 --> 00:43:46,080
+and Django doesn't like it.
+
+613
+00:43:46,080 --> 00:43:48,840
+You have to have a slash
+at the end of your URL
+
+614
+00:43:48,840 --> 00:43:53,480
+or Django will-- it was throwing
+a CORS error without the slash,
+
+615
+00:43:53,480 --> 00:43:55,440
+and I don't know why.
+
+616
+00:43:55,440 --> 00:44:04,120
+But, yeah, it just threw a
+CORS error, of all things.
+
+617
+00:44:04,120 --> 00:44:10,000
+So make sure you have the
+slash at the end of your URL.
+
+618
+00:44:10,000 --> 00:44:13,300
+And I went ahead and modified
+these string compositions.
+
+619
+00:44:13,300 --> 00:44:15,300
+They used to have
+a slash in here,
+
+620
+00:44:15,300 --> 00:44:21,240
+but since the base URL has the
+slash in it, I took that out.
+
+621
+00:44:21,240 --> 00:44:24,720
+And we've still got the slash
+at the end there, after the ID,
+
+622
+00:44:24,720 --> 00:44:28,520
+for the update and
+delete endpoints.
+
+623
+00:44:28,520 --> 00:44:34,600
+But the GET and POST endpoints,
+we'll just use this whole string
+
+624
+00:44:34,600 --> 00:44:37,720
+with the slash at the end.
+
+625
+00:44:37,720 --> 00:44:42,360
+Then over here, if we pop
+open that page in the app,
+
+626
+00:44:42,360 --> 00:44:48,240
+and then I hard refresh, now
+we are getting-- let's see,
+
+627
+00:44:48,240 --> 00:44:52,960
+if we go open up the
+Network tab, we go to users,
+
+628
+00:44:52,960 --> 00:44:56,440
+and we can see we're getting
+that request coming in, OK.
+
+629
+00:44:56,440 --> 00:45:00,380
+Request URL is
+localhost:8000/api/users/.
+
+630
+00:45:00,380 --> 00:45:05,200
+Yours will be your EC2 address,
+if you're running on EC2.
+
+631
+00:45:05,200 --> 00:45:09,840
+If you want to debug this on
+localhost, that's fine as well.
+
+632
+00:45:09,840 --> 00:45:12,620
+And our status is
+coming back 200.
+
+633
+00:45:12,620 --> 00:45:18,720
+Anything that starts with
+a 2 is generally a success.
+
+634
+00:45:18,720 --> 00:45:24,240
+In the Response, you can
+see the data that I made.
+
+635
+00:45:24,240 --> 00:45:29,320
+And I made that one, again,
+just here with the REST API
+
+636
+00:45:29,320 --> 00:45:31,300
+endpoint for development.
+
+637
+00:45:31,300 --> 00:45:36,360
+But let's-- now that
+we've got that working,
+
+638
+00:45:36,360 --> 00:45:44,560
+let's go ahead and try to
+add one from our Expo app.
+
+639
+00:45:44,560 --> 00:45:51,920
+Upload Expo app home page.
+
+640
+00:45:51,920 --> 00:45:56,120
+I'm just going to
+collapse this, actually.
+
+641
+00:45:56,120 --> 00:46:00,340
+And I'm going to call
+myself Expo User.
+
+642
+00:46:08,560 --> 00:46:13,000
+And I like yellow.
+
+643
+00:46:13,000 --> 00:46:14,260
+Submit.
+
+644
+00:46:19,480 --> 00:46:23,880
+Oh, it didn't catch it because
+I didn't have DevTools open.
+
+645
+00:46:23,880 --> 00:46:29,620
+But if we go to
+the user page, app,
+
+646
+00:46:29,620 --> 00:46:32,120
+now we've got the
+Django User that I
+
+647
+00:46:32,120 --> 00:46:35,440
+added from the Django
+page, and Expo User
+
+648
+00:46:35,440 --> 00:46:39,440
+added from our Expo app.
+
+649
+00:46:39,440 --> 00:46:45,680
+So again, the way that
+worked, let's start from--
+
+650
+00:46:45,680 --> 00:46:49,960
+let's do a run
+through from start
+
+651
+00:46:49,960 --> 00:46:52,980
+to finish of how that worked.
+
+652
+00:46:56,520 --> 00:47:01,380
+So from our React component,
+our index in this case--
+
+653
+00:47:01,380 --> 00:47:05,880
+it could be whatever component
+you have your form in--
+
+654
+00:47:05,880 --> 00:47:09,380
+we get our user
+data from our form.
+
+655
+00:47:09,380 --> 00:47:11,880
+And I just have it here.
+
+656
+00:47:11,880 --> 00:47:16,020
+We pass that user data
+to our createUser.
+
+657
+00:47:16,020 --> 00:47:20,600
+And this is no longer a Redux
+action, this is a thunk.
+
+658
+00:47:20,600 --> 00:47:23,240
+We're passing that to
+our thunk, but we still
+
+659
+00:47:23,240 --> 00:47:27,600
+have to dispatch it with
+dispatch, which we import
+
+660
+00:47:27,600 --> 00:47:31,620
+from useDispatch, react-redux.
+
+661
+00:47:31,620 --> 00:47:36,560
+UseDispatch makes
+a dispatch function
+
+662
+00:47:36,560 --> 00:47:41,680
+that we pass our createUser
+thunk with our data to.
+
+663
+00:47:41,680 --> 00:47:46,440
+That createUser thunk
+is inside of our slice
+
+664
+00:47:46,440 --> 00:47:53,420
+now, which is dispatching--
+or it's fetching,
+
+665
+00:47:53,420 --> 00:47:58,120
+it's creating a fetch
+request at our endpoint
+
+666
+00:47:58,120 --> 00:48:01,300
+here as a POST request.
+
+667
+00:48:01,300 --> 00:48:04,880
+Remember, a POST request
+always include data
+
+668
+00:48:04,880 --> 00:48:07,720
+that we are sending
+in the request.
+
+669
+00:48:07,720 --> 00:48:10,920
+And that data here
+is in the body.
+
+670
+00:48:10,920 --> 00:48:12,500
+And we're sending JSON data.
+
+671
+00:48:12,500 --> 00:48:17,260
+So in our headers, Content-Type
+is application/json.
+
+672
+00:48:17,260 --> 00:48:21,960
+Our body has our JSON body.
+
+673
+00:48:21,960 --> 00:48:27,780
+And you can't just send
+the JSON object directly,
+
+674
+00:48:27,780 --> 00:48:30,240
+you have to send it as a string.
+
+675
+00:48:30,240 --> 00:48:33,440
+And that has to do
+with the way the data
+
+676
+00:48:33,440 --> 00:48:36,500
+is serialized when it's
+passed in the network request.
+
+677
+00:48:39,360 --> 00:48:43,040
+So at this point, it gets--
+
+678
+00:48:43,040 --> 00:48:49,140
+the fetch request will push
+that data to the backend block.
+
+679
+00:48:49,140 --> 00:48:55,640
+At this point, this is,
+from here on, asynchronous.
+
+680
+00:48:55,640 --> 00:48:59,300
+So the JavaScript code stops
+executing at this point.
+
+681
+00:48:59,300 --> 00:49:00,720
+It's waiting.
+
+682
+00:49:00,720 --> 00:49:04,360
+And we go to Django.
+
+683
+00:49:04,360 --> 00:49:08,640
+So we hit Django
+with this URL, OK,
+
+684
+00:49:08,640 --> 00:49:13,360
+localhost or your EC2 instance.
+
+685
+00:49:13,360 --> 00:49:17,780
+8000/api/users/, Django
+gets this and it's like, OK,
+
+686
+00:49:17,780 --> 00:49:22,532
+api/users, do I have
+anything that can match that?
+
+687
+00:49:22,532 --> 00:49:25,400
+And then we hit
+our Django backend.
+
+688
+00:49:25,400 --> 00:49:28,320
+Urls.py, the one next
+to settings.py, this guy
+
+689
+00:49:28,320 --> 00:49:30,520
+gets hit first, OK.
+
+690
+00:49:30,520 --> 00:49:33,920
+So this one says, hey, I've
+got this thing called api.
+
+691
+00:49:33,920 --> 00:49:39,520
+And this API endpoint also
+has these added on to it,
+
+692
+00:49:39,520 --> 00:49:41,920
+api_app.urls.
+
+693
+00:49:41,920 --> 00:49:43,840
+So we can now open that.
+
+694
+00:49:43,840 --> 00:49:47,090
+And then we've got this users
+endpoint and a users endpoint
+
+695
+00:49:47,090 --> 00:49:50,430
+with an integer at the end.
+
+696
+00:49:50,430 --> 00:49:55,450
+Well, api/users is what we've
+got, so we've got a match.
+
+697
+00:49:55,450 --> 00:49:59,750
+Since we've got a match, we're
+going to open up this view.
+
+698
+00:49:59,750 --> 00:50:02,510
+This view will
+handle the request.
+
+699
+00:50:02,510 --> 00:50:05,730
+So let's go ahead and open up
+this UserListCreateAPIView.
+
+700
+00:50:08,290 --> 00:50:13,250
+Over here-- look at that,
+UserListCreateAPIView.
+
+701
+00:50:13,250 --> 00:50:17,810
+And it's made with our
+generics from REST framework.
+
+702
+00:50:17,810 --> 00:50:20,860
+That's basically all
+the code that we need.
+
+703
+00:50:20,860 --> 00:50:25,970
+And REST framework writes
+the rest of it for us.
+
+704
+00:50:25,970 --> 00:50:28,190
+And then we have our Serializer.
+
+705
+00:50:28,190 --> 00:50:34,370
+We need the serializer because,
+remember, in our slice,
+
+706
+00:50:34,370 --> 00:50:37,890
+we had to stringify this, right?
+
+707
+00:50:37,890 --> 00:50:40,450
+So it's a string, it's not JSON.
+
+708
+00:50:40,450 --> 00:50:48,130
+Python-JSON is not the
+same as JavaScript-JSON.
+
+709
+00:50:48,130 --> 00:50:52,130
+So in our view, we've got a
+serializer to help handle that.
+
+710
+00:50:52,130 --> 00:50:54,690
+And Django REST
+framework kind of
+
+711
+00:50:54,690 --> 00:50:56,990
+handles the rest of
+the logic for us.
+
+712
+00:50:56,990 --> 00:51:02,650
+But at the end of the
+day, it uses our models.py
+
+713
+00:51:02,650 --> 00:51:07,910
+to say, hey, have you got
+a table for this user?
+
+714
+00:51:07,910 --> 00:51:08,410
+Yes.
+
+715
+00:51:08,410 --> 00:51:11,730
+And then we match it up.
+
+716
+00:51:11,730 --> 00:51:16,900
+The data that we've got gets
+matched to these columns.
+
+717
+00:51:16,900 --> 00:51:18,650
+First_name, last_name,
+phone_number, these
+
+718
+00:51:18,650 --> 00:51:21,130
+are all columns.
+
+719
+00:51:21,130 --> 00:51:24,770
+They're character fields,
+in other words, strings that
+
+720
+00:51:24,770 --> 00:51:28,150
+match a length of 100 or less.
+
+721
+00:51:28,150 --> 00:51:34,710
+So if I had submitted some name
+with more than 100 characters,
+
+722
+00:51:34,710 --> 00:51:36,770
+we would see this fail.
+
+723
+00:51:36,770 --> 00:51:40,270
+We would get a bad request
+response from Django.
+
+724
+00:51:43,370 --> 00:51:49,070
+And then after that, it
+gets added to the database,
+
+725
+00:51:49,070 --> 00:51:52,490
+suppose it gets added to
+the database successfully.
+
+726
+00:51:52,490 --> 00:51:55,710
+Our view, Django REST framework
+again handles this for us.
+
+727
+00:51:55,710 --> 00:52:00,650
+But it just responds,
+saying, hey, I got that data,
+
+728
+00:52:00,650 --> 00:52:03,450
+you get a 200
+status, and I'm going
+
+729
+00:52:03,450 --> 00:52:08,610
+to give you the entire object
+you gave me back to you
+
+730
+00:52:08,610 --> 00:52:11,810
+in response.
+
+731
+00:52:11,810 --> 00:52:23,550
+So back in our slice, let's
+go down to the fulfilled.
+
+732
+00:52:23,550 --> 00:52:26,450
+Oh, actually, let's handle--
+
+733
+00:52:26,450 --> 00:52:28,910
+in our createUser
+POST, so at this point,
+
+734
+00:52:28,910 --> 00:52:31,890
+yeah, Django responded to us.
+
+735
+00:52:31,890 --> 00:52:35,050
+The asynchronous waiting
+period here is over.
+
+736
+00:52:35,050 --> 00:52:36,810
+We've come to the next line now.
+
+737
+00:52:36,810 --> 00:52:41,790
+If not response.ok-- well,
+we did get an OK response,
+
+738
+00:52:41,790 --> 00:52:44,810
+that data was sent successfully,
+and added to the database,
+
+739
+00:52:44,810 --> 00:52:48,770
+and it gave it back to us.
+
+740
+00:52:48,770 --> 00:52:50,470
+So we're not throwing
+an error here.
+
+741
+00:52:50,470 --> 00:52:52,830
+But if we got an error, this
+is where it would happen.
+
+742
+00:52:52,830 --> 00:52:56,110
+And then we return
+response.json.
+
+743
+00:52:56,110 --> 00:53:02,330
+So we return whatever
+data it gave back to us.
+
+744
+00:53:02,330 --> 00:53:07,810
+And then that triggers
+the fulfilled event, which
+
+745
+00:53:07,810 --> 00:53:09,910
+is caught by our extraReducers.
+
+746
+00:53:09,910 --> 00:53:16,730
+So if we go down here to the
+createUser.fulfilled event,
+
+747
+00:53:16,730 --> 00:53:18,210
+then we have an action.
+
+748
+00:53:18,210 --> 00:53:23,270
+That action.payload is that JSON
+that the server gave back to us.
+
+749
+00:53:23,270 --> 00:53:31,770
+So we add to our existing list
+of form users that user that got
+
+750
+00:53:31,770 --> 00:53:33,330
+returned to us.
+
+751
+00:53:33,330 --> 00:53:38,530
+So we had a form here.
+
+752
+00:53:38,530 --> 00:53:40,150
+We pushed the data to Django.
+
+753
+00:53:40,150 --> 00:53:42,110
+Django responded
+with the same data.
+
+754
+00:53:42,110 --> 00:53:46,590
+So Django got the copy that
+got added to the database.
+
+755
+00:53:46,590 --> 00:53:47,430
+We got a copy.
+
+756
+00:53:47,430 --> 00:53:49,410
+We added it to our Redux store.
+
+757
+00:53:49,410 --> 00:53:52,790
+So now, we both have a
+copy of the same data.
+
+758
+00:53:55,570 --> 00:53:58,610
+So that's how it
+goes full circle.
+
+759
+00:53:58,610 --> 00:54:03,050
+I think that handles all of the
+requirements for Homework 4.
+
+760
+00:54:03,050 --> 00:54:06,630
+So yeah, we went from Homework
+3 to Homework 4 in one lecture.
+
+761
+00:54:06,630 --> 00:54:07,370
+It's a lot.
+
+762
+00:54:07,370 --> 00:54:12,850
+If you need to stop this or
+go through it multiple times--
+
+763
+00:54:12,850 --> 00:54:20,810
+please, please, ask questions
+in the teams chats and channel.
+
+764
+00:54:20,810 --> 00:54:22,610
+We can have an open
+discussion there
+
+765
+00:54:22,610 --> 00:54:26,850
+to follow up with any questions
+you may have from this lecture,
+
+766
+00:54:26,850 --> 00:54:29,810
+or any hiccups that
+you come along.
+
+767
+00:54:29,810 --> 00:54:32,270
+But if I don't hear
+from you there,
+
+768
+00:54:32,270 --> 00:54:34,090
+hope you have a
+happy spring break,
+
+769
+00:54:34,090 --> 00:54:38,280
+and we'll see you
+after the break.

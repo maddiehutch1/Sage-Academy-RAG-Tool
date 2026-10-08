@@ -1,0 +1,1331 @@
+1
+00:00:03,128 --> 00:00:05,670
+INSTRUCTOR: Hello, everyone,
+and welcome to the content video
+
+2
+00:00:05,670 --> 00:00:07,350
+for Graphs--
+
+3
+00:00:07,350 --> 00:00:12,510
+A Currency Exchange
+Rate Arbitrage Example.
+
+4
+00:00:12,510 --> 00:00:16,470
+OK, so a great example of
+graphs used in the real world
+
+5
+00:00:16,470 --> 00:00:19,115
+are currencies and
+foreign exchange.
+
+6
+00:00:19,115 --> 00:00:20,740
+So maybe you've heard
+of forex trading.
+
+7
+00:00:20,740 --> 00:00:22,270
+That stands for
+foreign exchange.
+
+8
+00:00:22,270 --> 00:00:25,090
+That's where you trade
+currencies between themselves.
+
+9
+00:00:25,090 --> 00:00:27,420
+So you start with
+US dollars traded
+
+10
+00:00:27,420 --> 00:00:30,330
+for euro, traded to another
+currency, come back to us
+
+11
+00:00:30,330 --> 00:00:32,710
+dollars, things like that.
+
+12
+00:00:32,710 --> 00:00:38,650
+So a specific strategy in forex
+is called triangular arbitrage.
+
+13
+00:00:38,650 --> 00:00:40,950
+That's where you start
+in a certain currency
+
+14
+00:00:40,950 --> 00:00:42,810
+and then move around
+to different currencies
+
+15
+00:00:42,810 --> 00:00:44,518
+and come back to the
+original currencies,
+
+16
+00:00:44,518 --> 00:00:46,200
+and you've made a slight profit.
+
+17
+00:00:46,200 --> 00:00:48,113
+In fact, here is an example.
+
+18
+00:00:48,113 --> 00:00:49,780
+Here's a graph of
+what I just mentioned.
+
+19
+00:00:49,780 --> 00:00:52,080
+So triangular arbitrage--
+in this example,
+
+20
+00:00:52,080 --> 00:00:56,950
+it starts with $5 million in
+US with a Citibank account.
+
+21
+00:00:56,950 --> 00:01:01,440
+Then you monitor exchange rates
+and realize, hey, I can go to--
+
+22
+00:01:01,440 --> 00:01:05,080
+I can go to in euro
+in Deutsche Bank
+
+23
+00:01:05,080 --> 00:01:11,770
+and then go to pound
+with Crédit Agricole
+
+24
+00:01:11,770 --> 00:01:14,300
+and then come back to
+US through Barclays.
+
+25
+00:01:14,300 --> 00:01:17,240
+And those exchange
+rates will work out.
+
+26
+00:01:17,240 --> 00:01:20,290
+So when I come back to my
+$5 million at Citibank,
+
+27
+00:01:20,290 --> 00:01:27,670
+I have $5,025,406, given me an
+arbitrage profit of $25,000.
+
+28
+00:01:27,670 --> 00:01:29,530
+That's a triangular arbitrage.
+
+29
+00:01:29,530 --> 00:01:31,520
+Well, what is that right there?
+
+30
+00:01:31,520 --> 00:01:32,870
+Look at that data structure.
+
+31
+00:01:32,870 --> 00:01:33,790
+That's a graph.
+
+32
+00:01:33,790 --> 00:01:36,250
+To be specific, that's
+a directed graph,
+
+33
+00:01:36,250 --> 00:01:38,680
+where the nodes are currencies.
+
+34
+00:01:38,680 --> 00:01:40,880
+And the edges are
+exchange rates.
+
+35
+00:01:40,880 --> 00:01:42,730
+So how could you do
+this in real life?
+
+36
+00:01:42,730 --> 00:01:44,560
+Well, you would need
+to get those exchange
+
+37
+00:01:44,560 --> 00:01:49,330
+rates in real time and then have
+a way to take those currencies
+
+38
+00:01:49,330 --> 00:01:51,700
+and move them from one
+currency to another.
+
+39
+00:01:51,700 --> 00:01:54,880
+If you could do
+that and then find
+
+40
+00:01:54,880 --> 00:01:57,740
+the disequilibrium in real
+time, you could trade this.
+
+41
+00:01:57,740 --> 00:02:00,550
+So when all things
+are in equilibrium,
+
+42
+00:02:00,550 --> 00:02:02,650
+if I started with $5
+million, it would come back
+
+43
+00:02:02,650 --> 00:02:04,400
+and be $5 million again.
+
+44
+00:02:04,400 --> 00:02:07,780
+But when exchange rates
+get into disequilibrium,
+
+45
+00:02:07,780 --> 00:02:10,300
+then there's
+arbitrage opportunity.
+
+46
+00:02:10,300 --> 00:02:15,640
+OK, so how can you do this
+in Python using networkx?
+
+47
+00:02:15,640 --> 00:02:19,730
+All right, so back
+to our Python now.
+
+48
+00:02:19,730 --> 00:02:22,648
+So I'm using networkx here, and
+I'm going to do an example using
+
+49
+00:02:22,648 --> 00:02:24,940
+static data, where I just
+put all of the exchange rates
+
+50
+00:02:24,940 --> 00:02:26,150
+in a 2D array.
+
+51
+00:02:26,150 --> 00:02:28,790
+So let's take a look here,
+so here's my currencies.
+
+52
+00:02:28,790 --> 00:02:32,740
+I've got the Polish zloty,
+the euro, US dollar,
+
+53
+00:02:32,740 --> 00:02:36,363
+the Russian ruble, the Indian
+rupee, and the Mexican peso.
+
+54
+00:02:36,363 --> 00:02:37,780
+And here's all the
+exchange rates.
+
+55
+00:02:37,780 --> 00:02:40,460
+And I copied these at one point
+in time, so they're all static.
+
+56
+00:02:40,460 --> 00:02:41,930
+They're not updated dynamically.
+
+57
+00:02:41,930 --> 00:02:43,960
+I'll show you how to do
+that in just a second.
+
+58
+00:02:43,960 --> 00:02:45,550
+So here's all the
+exchange rates,
+
+59
+00:02:45,550 --> 00:02:47,000
+and here's how you read this.
+
+60
+00:02:47,000 --> 00:02:50,650
+This first list or this first
+row in this 2D list is all
+
+61
+00:02:50,650 --> 00:02:53,710
+of the Polish exchange rates,
+the second row, all of the euro,
+
+62
+00:02:53,710 --> 00:02:54,650
+and so on.
+
+63
+00:02:54,650 --> 00:02:56,890
+So if I want to
+take one Polish--
+
+64
+00:02:56,890 --> 00:02:58,990
+here's my row for all
+my Polish Zoltys--
+
+65
+00:02:58,990 --> 00:03:01,180
+and turn it into
+a euro, I'm going
+
+66
+00:03:01,180 --> 00:03:04,610
+to get 0.23 euros when
+the exchange is done.
+
+67
+00:03:04,610 --> 00:03:06,340
+If I want to take
+my one Polish zloty
+
+68
+00:03:06,340 --> 00:03:09,970
+and turn it into us
+dollars, I get $0.25 US.
+
+69
+00:03:09,970 --> 00:03:13,100
+If I want to put it into Russian
+rubles, I get more rubles.
+
+70
+00:03:13,100 --> 00:03:15,050
+I get 16.43 rubles.
+
+71
+00:03:15,050 --> 00:03:17,720
+That's how the exchange--
+the exchange rates work.
+
+72
+00:03:17,720 --> 00:03:20,930
+But that's a perfect graph
+data structure right there.
+
+73
+00:03:20,930 --> 00:03:23,350
+One node is a currency,
+goes to another node.
+
+74
+00:03:23,350 --> 00:03:26,620
+And the edge in between them
+represents the exchange rate.
+
+75
+00:03:26,620 --> 00:03:28,990
+So how do we load
+those up into a graph?
+
+76
+00:03:28,990 --> 00:03:31,930
+Well, we create a graph
+object on line 48.
+
+77
+00:03:31,930 --> 00:03:34,087
+You can see it's a digraph
+or a directed graph,
+
+78
+00:03:34,087 --> 00:03:35,920
+meaning the edges are
+directed from one node
+
+79
+00:03:35,920 --> 00:03:38,830
+to another, in this case,
+from one currency to another.
+
+80
+00:03:38,830 --> 00:03:41,480
+And then we append all these
+edges right here, like this.
+
+81
+00:03:41,480 --> 00:03:42,920
+So check out line 55.
+
+82
+00:03:42,920 --> 00:03:45,920
+Remember, I'm adding tuples
+to this list of edges.
+
+83
+00:03:45,920 --> 00:03:48,730
+So each of these has
+C1 for our currency
+
+84
+00:03:48,730 --> 00:03:52,310
+1, C2 for our currency 2,
+and then our rate from i,
+
+85
+00:03:52,310 --> 00:03:55,182
+j-- that gives me the
+exchange rate from I to j.
+
+86
+00:03:55,182 --> 00:03:56,390
+And I print a little message.
+
+87
+00:03:56,390 --> 00:03:58,390
+I'm adding the edge,
+I'm using the function
+
+88
+00:03:58,390 --> 00:03:59,800
+add_weighted_edges_from.
+
+89
+00:03:59,800 --> 00:04:02,300
+And that function wants
+all of them at once.
+
+90
+00:04:02,300 --> 00:04:04,490
+That's how you create
+the graph from scratch,
+
+91
+00:04:04,490 --> 00:04:06,530
+and I give it all of
+my edges to create it.
+
+92
+00:04:06,530 --> 00:04:09,190
+And then once I've done
+that, my graph is built.
+
+93
+00:04:09,190 --> 00:04:11,200
+All right, so how do
+I traverse it now?
+
+94
+00:04:11,200 --> 00:04:15,310
+We talked about graph traversal
+in the past couple of videos.
+
+95
+00:04:15,310 --> 00:04:17,260
+So I traverse this
+graph, but I'm looking
+
+96
+00:04:17,260 --> 00:04:18,529
+for something specific here.
+
+97
+00:04:18,529 --> 00:04:23,000
+I'm looking for disequilibrium
+or opportunity for arbitrage.
+
+98
+00:04:23,000 --> 00:04:25,492
+Well, if an exchange rate--
+
+99
+00:04:25,492 --> 00:04:26,950
+take a look at
+these exchange rate.
+
+100
+00:04:26,950 --> 00:04:28,930
+What do you notice when
+they're in equilibrium?
+
+101
+00:04:28,930 --> 00:04:30,880
+If you multiply
+the exchange rate
+
+102
+00:04:30,880 --> 00:04:36,010
+from the Polish zloty to USD
+and USD to the Polish zloty,
+
+103
+00:04:36,010 --> 00:04:38,660
+if they're in equilibrium,
+they should be 1.0.
+
+104
+00:04:38,660 --> 00:04:40,600
+So let's test that.
+
+105
+00:04:40,600 --> 00:04:44,140
+0.23 is going from
+zloty to US dollar.
+
+106
+00:04:44,140 --> 00:04:46,640
+And I multiply that times 4.--
+
+107
+00:04:46,640 --> 00:04:49,750
+what was it again?
+
+108
+00:04:49,750 --> 00:04:55,250
+4.34, and the answer is 0.9982.
+
+109
+00:04:55,250 --> 00:04:57,310
+So there's a slight
+disequilibrium here.
+
+110
+00:04:57,310 --> 00:05:02,370
+And again, the reality is,
+in real-world exchanges,
+
+111
+00:05:02,370 --> 00:05:05,140
+there's never perfect,
+perfect equilibrium.
+
+112
+00:05:05,140 --> 00:05:07,560
+So 0.9999 is actually
+pretty common.
+
+113
+00:05:07,560 --> 00:05:11,580
+In fact, 0.9998-- that actually
+has some disequilibrium in it.
+
+114
+00:05:11,580 --> 00:05:14,880
+OK, but my point is, though,
+if I take the exchange rate
+
+115
+00:05:14,880 --> 00:05:16,800
+from one currency to
+another and then back
+
+116
+00:05:16,800 --> 00:05:18,800
+when I multiply them, if
+they're in equilibrium,
+
+117
+00:05:18,800 --> 00:05:19,770
+they should be one.
+
+118
+00:05:19,770 --> 00:05:22,560
+So when I traverse these here,
+take a look what I'm doing,
+
+119
+00:05:22,560 --> 00:05:24,490
+line 71 here.
+
+120
+00:05:24,490 --> 00:05:27,090
+I'm using all the
+combinations of these nodes--
+
+121
+00:05:27,090 --> 00:05:29,950
+of these nodes or
+of these currencies.
+
+122
+00:05:29,950 --> 00:05:33,180
+Recall that a combination
+gives me all of the sets
+
+123
+00:05:33,180 --> 00:05:36,138
+but doesn't care
+about order, and I
+
+124
+00:05:36,138 --> 00:05:38,680
+don't either because I'm going
+to check the path to and from.
+
+125
+00:05:38,680 --> 00:05:40,572
+So I don't want
+permutation here like I
+
+126
+00:05:40,572 --> 00:05:42,030
+would if I'm going
+to get the data,
+
+127
+00:05:42,030 --> 00:05:43,480
+I'll show you that in a second.
+
+128
+00:05:43,480 --> 00:05:45,563
+But because order doesn't
+matter, because I just--
+
+129
+00:05:45,563 --> 00:05:47,640
+I just need a pair in
+any order because I'm
+
+130
+00:05:47,640 --> 00:05:51,780
+going to check the path going to
+and the path going from myself.
+
+131
+00:05:51,780 --> 00:05:52,880
+So there you go.
+
+132
+00:05:52,880 --> 00:05:55,150
+Now, once I've got that,
+I use this really nice,
+
+133
+00:05:55,150 --> 00:05:57,020
+easy-to-use function called nx.
+
+134
+00:05:57,020 --> 00:05:59,780
+This is a network
+function all_simple_paths.
+
+135
+00:05:59,780 --> 00:06:02,710
+This gives me a list of all
+the paths from one node, n1,
+
+136
+00:06:02,710 --> 00:06:04,567
+one to another node, n2.
+
+137
+00:06:04,567 --> 00:06:07,150
+So I'm going to go through all
+the combinations of currencies,
+
+138
+00:06:07,150 --> 00:06:09,850
+all the currency pairs
+and check all of the paths
+
+139
+00:06:09,850 --> 00:06:11,390
+from one currency to another.
+
+140
+00:06:11,390 --> 00:06:13,750
+Then I'm going to multiply
+them, so take a look at lines
+
+141
+00:06:13,750 --> 00:06:16,090
+81 through 83 here.
+
+142
+00:06:16,090 --> 00:06:18,700
+I'm going through this
+path, and I'm multiplying
+
+143
+00:06:18,700 --> 00:06:20,680
+all of the edges I see.
+
+144
+00:06:20,680 --> 00:06:23,260
+Recall from our
+previous video, I
+
+145
+00:06:23,260 --> 00:06:26,780
+can access these edges
+dictionary style on my graph.
+
+146
+00:06:26,780 --> 00:06:28,720
+So g is my graph object.
+
+147
+00:06:28,720 --> 00:06:31,150
+Path i is the first
+node in this edge.
+
+148
+00:06:31,150 --> 00:06:32,990
+Path i plus 1 is the second one.
+
+149
+00:06:32,990 --> 00:06:35,200
+And then I use the key
+weight to give me the weight.
+
+150
+00:06:35,200 --> 00:06:37,325
+And then I just go through
+and multiply all of them
+
+151
+00:06:37,325 --> 00:06:38,150
+in that path.
+
+152
+00:06:38,150 --> 00:06:40,180
+And when I have the path
+to and the path from,
+
+153
+00:06:40,180 --> 00:06:43,030
+if everything's in
+equilibrium, it should be 1.0.
+
+154
+00:06:43,030 --> 00:06:45,290
+So let's take a look here.
+
+155
+00:06:45,290 --> 00:06:48,240
+OK, let me grab an example here.
+
+156
+00:06:48,240 --> 00:06:51,350
+Let's go Path To.
+
+157
+00:06:51,350 --> 00:06:51,850
+Here we go.
+
+158
+00:06:51,850 --> 00:06:53,230
+Let's do Path.
+
+159
+00:06:53,230 --> 00:06:54,910
+So I'll just grab one.
+
+160
+00:06:54,910 --> 00:07:01,640
+From INR to Mexican peso, I
+have a path weight of 0.26.
+
+161
+00:07:01,640 --> 00:07:05,200
+Then going from Mexican peso to
+INR, which is an Indian rupee--
+
+162
+00:07:05,200 --> 00:07:07,150
+it's 3.65.
+
+163
+00:07:07,150 --> 00:07:10,810
+So let's try this to see, did
+we get any disequilibrium here?
+
+164
+00:07:10,810 --> 00:07:12,380
+So I'm going to copy that.
+
+165
+00:07:12,380 --> 00:07:14,628
+There's the exchange
+rate of that path.
+
+166
+00:07:14,628 --> 00:07:15,670
+That's not just one edge.
+
+167
+00:07:15,670 --> 00:07:19,850
+That's the path of
+the rupee to peso.
+
+168
+00:07:19,850 --> 00:07:23,970
+And then I'm going to grab the
+path back from peso to rupee.
+
+169
+00:07:26,595 --> 00:07:27,680
+Oh, hang on.
+
+170
+00:07:27,680 --> 00:07:30,850
+Mixing up my tabs here.
+
+171
+00:07:30,850 --> 00:07:35,200
+And it's 0.95, so it
+is in disequilibrium.
+
+172
+00:07:35,200 --> 00:07:37,713
+And then when I go
+through and find--
+
+173
+00:07:37,713 --> 00:07:39,880
+if I go through all of them,
+I can figure out, well,
+
+174
+00:07:39,880 --> 00:07:43,000
+which path is in the
+greatest disequilibrium?
+
+175
+00:07:43,000 --> 00:07:45,430
+And you want it to give you
+a number larger than 1.0
+
+176
+00:07:45,430 --> 00:07:47,860
+because, again, back to
+triangular arbitrage,
+
+177
+00:07:47,860 --> 00:07:49,450
+I want the number
+to be greater when
+
+178
+00:07:49,450 --> 00:07:51,040
+I get back around the cycle.
+
+179
+00:07:51,040 --> 00:07:52,957
+So the difference between
+triangular arbitrage
+
+180
+00:07:52,957 --> 00:07:55,040
+and what we're doing here
+in this Python example--
+
+181
+00:07:55,040 --> 00:07:56,810
+this has more than
+three currencies in it.
+
+182
+00:07:56,810 --> 00:07:59,500
+This one has, what
+was it, seven--
+
+183
+00:07:59,500 --> 00:08:00,510
+six currencies in it.
+
+184
+00:08:00,510 --> 00:08:02,510
+But you can have as many
+currencies as you want.
+
+185
+00:08:02,510 --> 00:08:04,120
+So instead of doing
+a triangle, we're
+
+186
+00:08:04,120 --> 00:08:07,392
+doing a full cycle
+in a graph, one path
+
+187
+00:08:07,392 --> 00:08:09,850
+all the way around to another
+currency and then all the way
+
+188
+00:08:09,850 --> 00:08:12,890
+back to look for disequilibrium.
+
+189
+00:08:12,890 --> 00:08:14,935
+OK, so that's for static data.
+
+190
+00:08:14,935 --> 00:08:16,560
+How would you do it
+for real-time data?
+
+191
+00:08:16,560 --> 00:08:18,143
+What if you wanted
+to do this for real
+
+192
+00:08:18,143 --> 00:08:20,540
+to see if-- is there
+really just equilibrium
+
+193
+00:08:20,540 --> 00:08:22,230
+in real-time exchange rates?
+
+194
+00:08:22,230 --> 00:08:24,170
+Well, this example right
+here is very similar,
+
+195
+00:08:24,170 --> 00:08:26,490
+but I don't have static
+data in a 2D array.
+
+196
+00:08:26,490 --> 00:08:30,485
+I actually go and get these
+exchange rates from float rates.
+
+197
+00:08:30,485 --> 00:08:32,360
+So float rates-- let me
+go ahead and run this
+
+198
+00:08:32,360 --> 00:08:36,100
+because it'll give me
+the URLs when I run here.
+
+199
+00:08:36,100 --> 00:08:38,250
+So this example right
+here-- let's take a look.
+
+200
+00:08:38,250 --> 00:08:41,770
+I'm using this URL
+float rates, and it's
+
+201
+00:08:41,770 --> 00:08:42,909
+going through all of them.
+
+202
+00:08:42,909 --> 00:08:44,450
+I just want to grab one of them.
+
+203
+00:08:47,638 --> 00:08:48,930
+Let's take a look at this data.
+
+204
+00:08:48,930 --> 00:08:52,100
+And again, using the Andy
+Brim method of processing data
+
+205
+00:08:52,100 --> 00:08:56,027
+from a web JSON API, put in the
+url, hit Enter, stare at it,
+
+206
+00:08:56,027 --> 00:08:57,860
+figure out the keys you
+know, and then write
+
+207
+00:08:57,860 --> 00:08:59,140
+the code to process it.
+
+208
+00:08:59,140 --> 00:09:00,290
+So I put in the URL.
+
+209
+00:09:00,290 --> 00:09:02,690
+I'm going to stare at it,
+and I realize, OK, these are
+
+210
+00:09:02,690 --> 00:09:05,990
+the rates for the Indian rupee.
+
+211
+00:09:05,990 --> 00:09:07,650
+Here's the US rate.
+
+212
+00:09:07,650 --> 00:09:08,880
+So check it out right here.
+
+213
+00:09:08,880 --> 00:09:12,560
+If I want to buy a rupee,
+it takes me that much USD,
+
+214
+00:09:12,560 --> 00:09:14,850
+0.012, right there.
+
+215
+00:09:14,850 --> 00:09:16,550
+So what I can do
+here is I can then
+
+216
+00:09:16,550 --> 00:09:19,200
+figure out the keys I
+need to get these rates.
+
+217
+00:09:19,200 --> 00:09:23,480
+I need the-- well, if I'm
+interested in the Indian rupee
+
+218
+00:09:23,480 --> 00:09:28,580
+to USD exchange rate, then I
+go, I want this URL and then
+
+219
+00:09:28,580 --> 00:09:31,950
+this key right here, USD, and
+then this key rate right here.
+
+220
+00:09:31,950 --> 00:09:36,880
+So I would go back to my python,
+save the USD and the rates.
+
+221
+00:09:36,880 --> 00:09:40,950
+And I've got those right here.
+
+222
+00:09:40,950 --> 00:09:43,380
+USD is actually my
+second currency.
+
+223
+00:09:43,380 --> 00:09:45,770
+And then I create
+my URL with that--
+
+224
+00:09:45,770 --> 00:09:48,250
+C1 in that example
+would be my rupee.
+
+225
+00:09:48,250 --> 00:09:50,430
+I go get my JSON
+there, and then I
+
+226
+00:09:50,430 --> 00:09:54,610
+get my rate by my dictionary c2,
+which would be USD in my example
+
+227
+00:09:54,610 --> 00:09:56,200
+and then the rate right there.
+
+228
+00:09:56,200 --> 00:09:58,770
+So once I've got
+my rate, then I can
+
+229
+00:09:58,770 --> 00:10:01,870
+add my edge c1, c2, and rate.
+
+230
+00:10:01,870 --> 00:10:06,700
+Now I've got an edge in
+that example, rupee to USD.
+
+231
+00:10:06,700 --> 00:10:08,153
+But I do that for all of them.
+
+232
+00:10:08,153 --> 00:10:10,070
+And one other-- one other
+thing to note here--
+
+233
+00:10:10,070 --> 00:10:12,880
+In the previous example,
+I used combinations
+
+234
+00:10:12,880 --> 00:10:16,280
+when I wanted to go through all
+of the different currency pairs.
+
+235
+00:10:16,280 --> 00:10:19,030
+But when I specifically
+want to go from one currency
+
+236
+00:10:19,030 --> 00:10:21,940
+to another currency and
+the direction matters,
+
+237
+00:10:21,940 --> 00:10:24,850
+then I want then I
+want permutations.
+
+238
+00:10:24,850 --> 00:10:27,340
+Recall the difference between
+permutations and combination.
+
+239
+00:10:27,340 --> 00:10:29,330
+Permutation order matters.
+
+240
+00:10:29,330 --> 00:10:31,288
+Like, if you had a
+group of 10 people
+
+241
+00:10:31,288 --> 00:10:33,580
+and you wanted to make a
+presidency of three people out
+
+242
+00:10:33,580 --> 00:10:35,205
+of that, then it
+would matter the order
+
+243
+00:10:35,205 --> 00:10:37,622
+that you pick president and
+vice president and second vice
+
+244
+00:10:37,622 --> 00:10:38,330
+president.
+
+245
+00:10:38,330 --> 00:10:39,770
+Whereas if you just
+said, I have 10 people
+
+246
+00:10:39,770 --> 00:10:42,437
+and I want to make a committee,
+the order of those three people,
+
+247
+00:10:42,437 --> 00:10:43,140
+would it matter.
+
+248
+00:10:43,140 --> 00:10:45,070
+Well, when I'm making
+a directed graph,
+
+249
+00:10:45,070 --> 00:10:46,580
+I want the-- the order matters.
+
+250
+00:10:46,580 --> 00:10:49,180
+I want to know from currency
+1 to currency 2, what's
+
+251
+00:10:49,180 --> 00:10:50,170
+the exchange rate?
+
+252
+00:10:50,170 --> 00:10:53,050
+That's different than
+currency 2 back to currency 1,
+
+253
+00:10:53,050 --> 00:10:54,670
+what is the exchange rate?
+
+254
+00:10:54,670 --> 00:10:56,710
+So I use permutations
+to get all the currency
+
+255
+00:10:56,710 --> 00:10:58,292
+pairs where order matters.
+
+256
+00:10:58,292 --> 00:10:59,750
+They'll get all
+the exchange rates,
+
+257
+00:10:59,750 --> 00:11:01,990
+and then I use my function
+add_weighted_edges
+
+258
+00:11:01,990 --> 00:11:03,620
+to load up my graph.
+
+259
+00:11:03,620 --> 00:11:05,330
+And you can check out here.
+
+260
+00:11:05,330 --> 00:11:10,270
+I also created a file
+currencies_graph_visual.png.
+
+261
+00:11:10,270 --> 00:11:12,970
+I save that out
+using my matplotlib,
+
+262
+00:11:12,970 --> 00:11:16,100
+and let's take a look,
+currencies_graph_visual.
+
+263
+00:11:16,100 --> 00:11:20,360
+And there it is, a little
+bit messy because it didn't--
+
+264
+00:11:20,360 --> 00:11:21,620
+the floats are long there.
+
+265
+00:11:21,620 --> 00:11:22,830
+There's a lot of
+precision on the floats.
+
+266
+00:11:22,830 --> 00:11:25,308
+But if you look at all of the
+interest rat-- or excuse me,
+
+267
+00:11:25,308 --> 00:11:27,350
+the exchange rates from
+the different currencies,
+
+268
+00:11:27,350 --> 00:11:28,590
+they're all correct.
+
+269
+00:11:28,590 --> 00:11:29,790
+And there's your graph.
+
+270
+00:11:29,790 --> 00:11:34,340
+Now you can traverse it, look
+for equilibrium disequilibrium
+
+271
+00:11:34,340 --> 00:11:37,960
+and arbitrage opportunity.
+
+272
+00:11:37,960 --> 00:11:41,410
+OK, and I think that
+about covers it.
+
+273
+00:11:41,410 --> 00:11:45,160
+If you're trying to do this on
+your own or for an assignment,
+
+274
+00:11:45,160 --> 00:11:47,260
+I would say definitely
+thoroughly look
+
+275
+00:11:47,260 --> 00:11:48,813
+through these examples.
+
+276
+00:11:48,813 --> 00:11:49,480
+Give them a try.
+
+277
+00:11:49,480 --> 00:11:50,650
+Try them out yourselves.
+
+278
+00:11:50,650 --> 00:11:54,100
+Try and build a graphs, look at
+the graphs, traverse the graphs.
+
+279
+00:11:54,100 --> 00:11:58,000
+And make sure you're
+calculating the equilibrium
+
+280
+00:11:58,000 --> 00:11:59,740
+and disequilibrium correctly.
+
+281
+00:11:59,740 --> 00:12:02,615
+And you can see it's a lot of
+fun and a real-world example.
+
+282
+00:12:02,615 --> 00:12:04,490
+All right, that concludes
+this content video.
+
+283
+00:12:04,490 --> 00:12:06,240
+Thanks for watching.

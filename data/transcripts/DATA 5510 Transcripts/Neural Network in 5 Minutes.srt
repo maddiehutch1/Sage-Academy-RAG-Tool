@@ -1,0 +1,583 @@
+1
+00:00:00,000 --> 00:00:03,140
+PRESENTER: Last summer, my
+family and I visited Russia.
+
+2
+00:00:03,140 --> 00:00:05,500
+Even though none of
+us could read Russian,
+
+3
+00:00:05,500 --> 00:00:08,180
+we did not have any trouble
+in figuring our way out,
+
+4
+00:00:08,180 --> 00:00:11,630
+all thanks to Google's real time
+translation of Russian boards
+
+5
+00:00:11,630 --> 00:00:12,750
+into English.
+
+6
+00:00:12,750 --> 00:00:16,560
+This is just one of the several
+applications of neural networks.
+
+7
+00:00:16,560 --> 00:00:20,030
+Neural networks form the base
+of deep learning, a subfield
+
+8
+00:00:20,030 --> 00:00:22,190
+of machine learning,
+where the algorithms are
+
+9
+00:00:22,190 --> 00:00:24,900
+inspired by the structure
+of the human brain.
+
+10
+00:00:24,900 --> 00:00:27,860
+Neural networks take in
+data, train themselves
+
+11
+00:00:27,860 --> 00:00:30,170
+to recognize the
+patterns in this data,
+
+12
+00:00:30,170 --> 00:00:34,170
+and then predict the outputs
+for a new set of similar data.
+
+13
+00:00:34,170 --> 00:00:36,530
+Let's understand
+how this is done.
+
+14
+00:00:36,530 --> 00:00:38,780
+Let's construct a
+neural network that
+
+15
+00:00:38,780 --> 00:00:42,390
+differentiates between a
+square, circle, and triangle.
+
+16
+00:00:42,390 --> 00:00:45,480
+Neural networks are made
+up of layers of neurons.
+
+17
+00:00:45,480 --> 00:00:49,590
+These neurons are the core
+processing units of the network.
+
+18
+00:00:49,590 --> 00:00:53,130
+First, we have the input layer,
+which receives the input.
+
+19
+00:00:53,130 --> 00:00:56,200
+The output layer predicts
+our final output.
+
+20
+00:00:56,200 --> 00:00:58,580
+In between, exist
+the hidden layers
+
+21
+00:00:58,580 --> 00:01:01,770
+which perform most of
+the computations required
+
+22
+00:01:01,770 --> 00:01:02,950
+by our network.
+
+23
+00:01:02,950 --> 00:01:04,900
+Here's an image of a circle.
+
+24
+00:01:04,900 --> 00:01:08,520
+This image is composed
+of 28 by 28 pixels,
+
+25
+00:01:08,520 --> 00:01:11,740
+which make up for 784 pixels.
+
+26
+00:01:11,740 --> 00:01:16,630
+Each pixel is fed as input to
+each neuron of the first layer.
+
+27
+00:01:16,630 --> 00:01:18,540
+Neurons of one
+layer are connected
+
+28
+00:01:18,540 --> 00:01:21,520
+to neurons of the next
+layer through channels.
+
+29
+00:01:21,520 --> 00:01:24,720
+Each of these channels is
+assigned a numerical value
+
+30
+00:01:24,720 --> 00:01:25,930
+known as weight.
+
+31
+00:01:25,930 --> 00:01:29,310
+The inputs are multiplied to
+the corresponding weights,
+
+32
+00:01:29,310 --> 00:01:32,430
+and their sum is sent
+as input to the neurons
+
+33
+00:01:32,430 --> 00:01:33,880
+in the hidden layer.
+
+34
+00:01:33,880 --> 00:01:36,300
+Each of these
+neurons is associated
+
+35
+00:01:36,300 --> 00:01:39,390
+with a numerical value
+called the bias, which
+
+36
+00:01:39,390 --> 00:01:41,500
+is then added to the input sum.
+
+37
+00:01:41,500 --> 00:01:44,730
+This value is then passed
+through a threshold function
+
+38
+00:01:44,730 --> 00:01:47,020
+called the activation function.
+
+39
+00:01:47,020 --> 00:01:49,320
+The result of the
+activation function
+
+40
+00:01:49,320 --> 00:01:52,770
+determines if the particular
+neuron will get activated
+
+41
+00:01:52,770 --> 00:01:53,780
+or not.
+
+42
+00:01:53,780 --> 00:01:56,220
+An activated neuron
+transmits data
+
+43
+00:01:56,220 --> 00:01:59,790
+to the neurons of the next
+layer over the channels.
+
+44
+00:01:59,790 --> 00:02:03,550
+In this manner, the data is
+propagated through the network.
+
+45
+00:02:03,550 --> 00:02:06,430
+This is called
+forward propagation.
+
+46
+00:02:06,430 --> 00:02:09,630
+In the output layer, the
+neuron with the highest value
+
+47
+00:02:09,630 --> 00:02:11,860
+fires and determines the output.
+
+48
+00:02:11,860 --> 00:02:14,530
+The values are
+basically a probability.
+
+49
+00:02:14,530 --> 00:02:18,060
+For example, here, our
+neuron associated with square
+
+50
+00:02:18,060 --> 00:02:20,170
+has the highest probability.
+
+51
+00:02:20,170 --> 00:02:24,070
+Hence, that's the output
+predicted by the neural network.
+
+52
+00:02:24,070 --> 00:02:26,700
+Of course, just by
+a look at it, we
+
+53
+00:02:26,700 --> 00:02:29,310
+know our neural network has
+made a wrong prediction,
+
+54
+00:02:29,310 --> 00:02:32,440
+but how does the
+network figure this out?
+
+55
+00:02:32,440 --> 00:02:35,500
+Note that our network
+is yet to be trained.
+
+56
+00:02:35,500 --> 00:02:38,850
+During this training process,
+along with the input,
+
+57
+00:02:38,850 --> 00:02:41,890
+our network also has
+the output fed to it.
+
+58
+00:02:41,890 --> 00:02:45,390
+The predicted output is compared
+against the actual output
+
+59
+00:02:45,390 --> 00:02:47,560
+to realize the
+error in prediction.
+
+60
+00:02:47,560 --> 00:02:50,640
+The magnitude of the error
+indicates how wrong we are,
+
+61
+00:02:50,640 --> 00:02:53,430
+and the sign suggests if
+our predicted values are
+
+62
+00:02:53,430 --> 00:02:55,650
+higher or lower than expected.
+
+63
+00:02:55,650 --> 00:02:57,870
+The arrows here
+give an indication
+
+64
+00:02:57,870 --> 00:03:01,740
+of the direction and magnitude
+of change to reduce the error.
+
+65
+00:03:01,740 --> 00:03:04,890
+This information is then
+transferred backward
+
+66
+00:03:04,890 --> 00:03:06,070
+through our network.
+
+67
+00:03:06,070 --> 00:03:08,590
+This is known as
+back propagation.
+
+68
+00:03:08,590 --> 00:03:13,390
+Now, based on this information,
+the weights are adjusted.
+
+69
+00:03:13,390 --> 00:03:16,740
+This cycle of forward
+propagation and back propagation
+
+70
+00:03:16,740 --> 00:03:20,320
+is iteratively performed
+with multiple inputs.
+
+71
+00:03:20,320 --> 00:03:22,770
+This process continues
+until our weights
+
+72
+00:03:22,770 --> 00:03:25,740
+are assigned, such that the
+network can predict the shapes
+
+73
+00:03:25,740 --> 00:03:28,120
+correctly in most of the cases.
+
+74
+00:03:28,120 --> 00:03:31,140
+This brings our training
+process to an end.
+
+75
+00:03:31,140 --> 00:03:34,450
+You might wonder, how long
+this training process takes.
+
+76
+00:03:34,450 --> 00:03:38,070
+Honestly, neural networks
+may take hours or even months
+
+77
+00:03:38,070 --> 00:03:41,370
+to train, but time is
+a reasonable trade-off
+
+78
+00:03:41,370 --> 00:03:43,260
+when compared to its scope.
+
+79
+00:03:43,260 --> 00:03:47,140
+Let us look at some of the prime
+applications of neural networks.
+
+80
+00:03:47,140 --> 00:03:49,980
+Facial recognition--
+cameras on smartphones
+
+81
+00:03:49,980 --> 00:03:52,500
+these days can estimate
+the age of the person
+
+82
+00:03:52,500 --> 00:03:54,370
+based on their facial features.
+
+83
+00:03:54,370 --> 00:03:56,500
+This is neural networks at play.
+
+84
+00:03:56,500 --> 00:03:59,370
+First differentiating the
+face from the background,
+
+85
+00:03:59,370 --> 00:04:02,250
+and then correlating the
+lines and spots on your face
+
+86
+00:04:02,250 --> 00:04:03,820
+to a possible age.
+
+87
+00:04:03,820 --> 00:04:05,940
+Forecasting--
+neural networks are
+
+88
+00:04:05,940 --> 00:04:07,530
+trained to understand
+the patterns
+
+89
+00:04:07,530 --> 00:04:09,780
+and detect the
+possibility of rainfall,
+
+90
+00:04:09,780 --> 00:04:13,450
+or a rise in stock prices
+with high accuracy.
+
+91
+00:04:13,450 --> 00:04:15,960
+Music composition--
+neural networks
+
+92
+00:04:15,960 --> 00:04:19,019
+can even learn patterns
+in music and train itself
+
+93
+00:04:19,019 --> 00:04:21,459
+enough to compose a fresh tune.
+
+94
+00:04:21,459 --> 00:04:23,380
+So here's a question for you.
+
+95
+00:04:23,380 --> 00:04:26,920
+Which of the following
+statements does not hold true?
+
+96
+00:04:26,920 --> 00:04:30,460
+A, activation functions
+are threshold functions.
+
+97
+00:04:30,460 --> 00:04:34,510
+B, error is calculated at each
+layer of the neural network.
+
+98
+00:04:34,510 --> 00:04:37,320
+C, both forward and
+back propagation
+
+99
+00:04:37,320 --> 00:04:40,780
+take place during the training
+process of a neural network.
+
+100
+00:04:40,780 --> 00:04:43,890
+D, most of the data
+processing is carried out
+
+101
+00:04:43,890 --> 00:04:45,280
+in the hidden layers.
+
+102
+00:04:45,280 --> 00:04:47,790
+Leave your answers in the
+comments section below.
+
+103
+00:04:47,790 --> 00:04:50,890
+Three of you stand a chance
+to win Amazon vouchers.
+
+104
+00:04:50,890 --> 00:04:52,640
+So don't miss it.
+
+105
+00:04:52,640 --> 00:04:54,660
+With deep learning
+and neural networks,
+
+106
+00:04:54,660 --> 00:04:57,040
+we are still taking baby steps.
+
+107
+00:04:57,040 --> 00:05:00,190
+The growth in this field has
+been foreseen by the big names.
+
+108
+00:05:00,190 --> 00:05:03,340
+Companies such as Google,
+Amazon, and NVIDIA
+
+109
+00:05:03,340 --> 00:05:06,850
+have invested in developing
+products such as libraries,
+
+110
+00:05:06,850 --> 00:05:09,850
+predictive models,
+and intuitive GPUs
+
+111
+00:05:09,850 --> 00:05:12,710
+that support the implementation
+of neural networks.
+
+112
+00:05:12,710 --> 00:05:14,770
+The question dividing
+the visionaries
+
+113
+00:05:14,770 --> 00:05:17,090
+is on the reach of
+neural networks--
+
+114
+00:05:17,090 --> 00:05:20,160
+to what extent can we
+replicate the human brain?
+
+115
+00:05:20,160 --> 00:05:23,050
+We'd have to wait a few more
+years to give a definite answer,
+
+116
+00:05:23,050 --> 00:05:25,330
+but if you enjoyed
+this video, it
+
+117
+00:05:25,330 --> 00:05:27,740
+would only take a few
+seconds to like and share it.
+
+118
+00:05:27,740 --> 00:05:31,150
+Also, if you haven't yet,
+do subscribe to our channel
+
+119
+00:05:31,150 --> 00:05:34,990
+and hit the bell icon as we
+have a lot more exciting videos
+
+120
+00:05:34,990 --> 00:05:35,870
+coming up.
+
+121
+00:05:35,870 --> 00:05:37,240
+Fun learning till then.
+
+122
+00:05:37,240 --> 00:05:40,290
+[MUSIC PLAYING]

@@ -1,0 +1,881 @@
+1
+00:00:02,810 --> 00:00:04,970
+Hey everybody, welcome to
+the content video going
+
+2
+00:00:04,970 --> 00:00:08,650
+over section 5.2, lists.
+So there's quite a bit to
+
+3
+00:00:08,650 --> 00:00:11,790
+cover in this section, but
+I'll try to keep it brief.
+
+4
+00:00:12,930 --> 00:00:16,910
+Lists are definitely one
+of the more powerful tools.
+
+5
+00:00:16,910 --> 00:00:19,370
+Built-in lists in Python
+are a powerful tool that you
+
+6
+00:00:19,370 --> 00:00:21,630
+can use while you're building
+out code and algorithms.
+
+7
+00:00:23,270 --> 00:00:26,310
+There's a lot to them and a lot
+to know. So again, we're going to
+
+8
+00:00:26,310 --> 00:00:29,730
+try and cover most of that in
+this video, but we'll probably be
+
+9
+00:00:29,730 --> 00:00:33,790
+brief with every little thing. So
+this is definitely something that
+
+10
+00:00:33,790 --> 00:00:36,030
+you're going to want to try and
+practice on your own if it's not
+
+11
+00:00:36,030 --> 00:00:40,090
+something that you're getting. So
+what is a list? It's a sequence
+
+12
+00:00:40,090 --> 00:00:45,250
+of values, typically comma
+separated, that you store data with
+
+13
+00:00:45,250 --> 00:00:50,230
+in Python. So a list typically
+looks like this. Here's a list C,
+
+14
+00:00:50,350 --> 00:00:53,650
+and it looks like it's just
+a couple of integers, right?
+
+15
+00:00:54,030 --> 00:00:56,870
+It's good to note here
+that lists usually store
+
+16
+00:00:56,870 --> 00:01:00,330
+homogeneous data, which means
+data is all the same type.
+
+17
+00:01:00,410 --> 00:01:06,250
+um rather than heterogeneous data
+and that is it's kind of just best
+
+18
+00:01:06,250 --> 00:01:11,230
+practice to store the same type of
+data in your list it is possible to
+
+19
+00:01:11,230 --> 00:01:14,310
+store data of different types in a
+list so like this list right here
+
+20
+00:01:14,310 --> 00:01:19,290
+stores a student's name their gpa
+and the year that they're out that
+
+21
+00:01:19,290 --> 00:01:23,490
+their graduation year so it is
+possible but it's better practice to
+
+22
+00:01:23,490 --> 00:01:27,010
+store data all of the same type and
+there are better data structures to
+
+23
+00:01:27,010 --> 00:01:32,130
+store heterogeneous data that we'll
+learn about later in this course.
+
+24
+00:01:32,130 --> 00:01:34,570
+And those data types are
+things like dictionaries or
+
+25
+00:01:34,570 --> 00:01:38,510
+JSON. So best practice for
+lists, same type of data.
+
+26
+00:01:39,010 --> 00:01:42,270
+All right, so how do we access
+elements of a list? So let's
+
+27
+00:01:42,270 --> 00:01:45,070
+say we've got all this data, we
+want to do something with it.
+
+28
+00:01:45,330 --> 00:01:48,250
+This is where we start indexing lists.
+
+29
+00:01:48,390 --> 00:01:51,630
+And this is a really important
+graphic. I'll try and zoom in here for
+
+30
+00:01:51,630 --> 00:01:55,450
+you guys. So here's a list. This is
+the exact same list we were looking
+
+31
+00:01:55,450 --> 00:02:00,690
+at very first. So there are five
+elements in the list as you can see,
+
+32
+00:02:00,690 --> 00:02:05,570
+but the list starts indexing or
+starts counting from zero. So that's
+
+33
+00:02:05,570 --> 00:02:10,450
+just a computer science programming
+thing is that everything starts counting
+
+34
+00:02:10,450 --> 00:02:13,980
+from zero and that's why we get
+a lot of what we call off by one
+
+35
+00:02:13,980 --> 00:02:17,730
+errors is when we expect something to
+be a certain number and it's actually
+
+36
+00:02:17,730 --> 00:02:21,770
+one off of that because we forgot
+computers start counting at zero.
+
+37
+00:02:21,970 --> 00:02:25,150
+And so you can see that
+negative 45 is in the
+
+38
+00:02:25,150 --> 00:02:28,210
+zeroth position, 6 is
+in the first position,
+
+39
+00:02:28,890 --> 00:02:34,590
+0 is in the second position,
+72 in the third, and 1543 in
+
+40
+00:02:34,590 --> 00:02:38,150
+the fourth position. But this
+list has a length of 5, so
+
+41
+00:02:38,150 --> 00:02:40,510
+that's kind of where things,
+again, get kind of confusing.
+
+42
+00:02:41,190 --> 00:02:44,610
+There's a built-in function that
+you can use to see how long a list
+
+43
+00:02:44,610 --> 00:02:48,550
+is, so it's just called len, and that
+will output the length of a list.
+
+44
+00:02:49,650 --> 00:02:55,750
+If you wanted to output a single
+variable from a list or a single
+
+45
+00:02:55,750 --> 00:02:59,290
+value, you could print out the name
+of that list along with brackets
+
+46
+00:02:59,290 --> 00:03:04,250
+and the index of that particular
+thing in the list, or sorry, the
+
+47
+00:03:04,250 --> 00:03:07,570
+index of that value in the list.
+We'll do some examples of this in a
+
+48
+00:03:07,570 --> 00:03:10,570
+second. So if you're kind of lost,
+just stick with me for a second.
+
+49
+00:03:11,890 --> 00:03:14,850
+Another really important concept that
+
+50
+00:03:15,170 --> 00:03:19,770
+doesn't get talked about a
+lot is that lists are mutable
+
+51
+00:03:19,770 --> 00:03:23,010
+or changeable, whereas
+other things like sequences,
+
+52
+00:03:24,000 --> 00:03:28,130
+strings, tuples, those are immutable,
+so they can't be modified. So
+
+53
+00:03:28,130 --> 00:03:31,350
+what do I mean by that? I mean, if
+I have a list of all the ages of
+
+54
+00:03:31,350 --> 00:03:35,830
+everybody in this class, and then
+somebody new joins the class, I can add
+
+55
+00:03:35,830 --> 00:03:38,990
+a new age to that list. Or let's
+say somebody drops it, or somebody
+
+56
+00:03:38,990 --> 00:03:42,990
+has a birthday. I can go in and I
+can change that data to update it so
+
+57
+00:03:42,990 --> 00:03:46,890
+that it reflects reality. Whereas
+if I have a string like my first
+
+58
+00:03:46,890 --> 00:03:53,910
+name, Chelsea, I can't change the
+variable that stores that string or I
+
+59
+00:03:53,910 --> 00:03:57,710
+guess I can change the variable but
+I can't change that string itself.
+
+60
+00:03:57,710 --> 00:04:03,130
+If I want to change the string I
+actually just create a new string.
+
+61
+00:04:03,410 --> 00:04:06,510
+So like let's say that I don't
+know I updated the spelling
+
+62
+00:04:06,510 --> 00:04:10,790
+of my name to instead of be S
+-E-A, I wanted it to be S-E-Y.
+
+63
+00:04:11,410 --> 00:04:15,930
+I would be creating a new string
+even if I like went and like said
+
+64
+00:04:15,930 --> 00:04:19,790
+to the string, hey, lop off the A
+at the end of my name and make it
+
+65
+00:04:19,790 --> 00:04:23,050
+a Y instead. That string will
+always bounce back. It will always
+
+66
+00:04:23,050 --> 00:04:27,650
+revert back to the original way
+that it was. So if I wanted to store
+
+67
+00:04:27,650 --> 00:04:30,710
+that changed string, I actually
+just created an entirely new one.
+
+68
+00:04:30,830 --> 00:04:34,390
+So lists are changeable.
+They can be modified.
+
+69
+00:04:34,550 --> 00:04:38,670
+Strings and other things like
+tuples are not changeable.
+
+70
+00:04:40,590 --> 00:04:44,530
+And I think that's everything I
+wanted to go over from the textbook.
+
+71
+00:04:45,230 --> 00:04:48,970
+So let's, oh yeah, we'll do some
+examples of foreign range. So
+
+72
+00:04:48,970 --> 00:04:53,690
+yeah, let's go and jump into
+our code space and actually code
+
+73
+00:04:53,690 --> 00:04:56,690
+a couple of examples so we can
+see what's going on with lists.
+
+74
+00:04:58,890 --> 00:05:04,590
+Okay, let's do an example where
+we've got last stages. I think that's
+
+75
+00:05:04,590 --> 00:05:10,930
+a pretty good example. So let's say
+we've got all sorts of ages, 41,
+
+76
+00:05:11,070 --> 00:05:12,570
+52,
+
+77
+00:05:12,850 --> 00:05:15,490
+we've got a 21 year old, a 22 year old,
+
+78
+00:05:15,710 --> 00:05:16,990
+19,
+
+79
+00:05:20,510 --> 00:05:23,890
+65, and we'll throw in another
+22 year old. That's great.
+
+80
+00:05:24,090 --> 00:05:27,430
+Just a variety of ages. So this
+is kind of how you create a list.
+
+81
+00:05:27,430 --> 00:05:30,610
+You just enclose your data with
+brackets and you can put any type
+
+82
+00:05:30,610 --> 00:05:35,250
+of data and list, and you just
+separate the values by commas. Okay,
+
+83
+00:05:35,770 --> 00:05:39,430
+so what can I do with this
+with these ages? Well, I could
+
+84
+00:05:39,430 --> 00:05:44,250
+index my list. So let's say I
+wanted to access the element 21.
+
+85
+00:05:44,750 --> 00:05:50,410
+That's in the 1, 2, 3, sorry
+I can't count, 1, 2, 3, the
+
+86
+00:05:50,410 --> 00:05:53,170
+third position in my list, but
+I remember that lists count
+
+87
+00:05:53,170 --> 00:05:57,650
+from 0, so 0, 1, 2, so it's
+actually in the second position
+
+88
+00:05:57,650 --> 00:06:02,650
+in my list. So I could print
+out class ages at the index 2.
+
+89
+00:06:04,470 --> 00:06:07,890
+And that should give me
+the age 21, as you can see
+
+90
+00:06:07,890 --> 00:06:10,150
+right there. Let me clear
+this terminal up a little bit.
+
+91
+00:06:11,430 --> 00:06:13,090
+Okay, so there it is, 21.
+
+92
+00:06:14,190 --> 00:06:20,470
+Similarly, I could print out class
+ages at the index 0, or maybe
+
+93
+00:06:20,470 --> 00:06:25,630
+if I wanted to get the last
+element of my list, I could do the
+
+94
+00:06:25,630 --> 00:06:29,690
+negative 1th index, which will
+give me the very last thing in my
+
+95
+00:06:29,690 --> 00:06:33,830
+list. So it's zero, or sorry, the
+second index gave me 21, the zeroth
+
+96
+00:06:33,830 --> 00:06:37,570
+index gave me 41, and then the
+last element of my list is 21.
+
+97
+00:06:37,910 --> 00:06:41,670
+There are times when we might not
+know the length of our list, and we
+
+98
+00:06:41,670 --> 00:06:45,550
+don't want to hard code values in,
+and so if we wanted to access the
+
+99
+00:06:45,550 --> 00:06:48,270
+very last element, negative one's
+a great way to do that. Because
+
+100
+00:06:48,270 --> 00:06:53,390
+what if I add something new into my
+list? Well, the negative one is still
+
+101
+00:06:53,390 --> 00:06:57,290
+just going to give me the last
+element of my list. So it's going to
+
+102
+00:06:57,290 --> 00:07:00,950
+give me 90 now. It's not hard-coded
+to give me this specific value.
+
+103
+00:07:01,210 --> 00:07:05,430
+Okay, so that's a little bit of
+indexing. And we've mentioned that
+
+104
+00:07:05,430 --> 00:07:10,030
+we use for loops a lot to iterate
+through a list. So if I wanted
+
+105
+00:07:10,030 --> 00:07:15,030
+to iterate through this list, I
+could say for age in class ages.
+
+106
+00:07:16,530 --> 00:07:20,010
+And I don't know what I might
+want to do here, but maybe
+
+107
+00:07:21,620 --> 00:07:25,090
+maybe everybody had a birthday
+and I need to update my ages so I
+
+108
+00:07:25,090 --> 00:07:32,390
+could say age equals well I guess
+age plus equals one print age
+
+109
+00:07:35,330 --> 00:07:42,710
+and uh there they all
+are 42 53 22 23 20 66
+
+110
+00:07:42,890 --> 00:07:46,130
+23 and 91 so everybody
+had a birthday that's
+
+111
+00:07:46,290 --> 00:07:54,070
+that's my new data set um this
+okay I want to I don't know if I
+
+112
+00:07:54,070 --> 00:07:59,070
+want to get into this too deeply
+in this video but let's say we
+
+113
+00:08:02,570 --> 00:08:11,110
+had a list of ages and well I guess
+let me let me show you something
+
+114
+00:08:11,110 --> 00:08:16,390
+Maybe this is what I'll do. So
+let's say that we have a variable
+
+115
+00:08:17,940 --> 00:08:21,650
+called i, and i we're just
+going to set that equal to zero.
+
+116
+00:08:22,570 --> 00:08:29,930
+What we could do is we could say
+for age in class ages brings out
+
+117
+00:08:30,570 --> 00:08:40,150
+class ages at index i,
+and then add one to i.
+
+118
+00:08:42,890 --> 00:08:46,730
+Okay, so what is this code doing?
+And maybe I want you to ask
+
+119
+00:08:46,730 --> 00:08:50,850
+yourself that as you're watching.
+What does class ages at index
+
+120
+00:08:50,850 --> 00:08:56,990
+i give us? Well, index i is just
+pointing to a variable zero.
+
+121
+00:08:57,150 --> 00:09:03,030
+and so class ages at i should just
+give us the zero with index of
+
+122
+00:09:03,030 --> 00:09:08,390
+our list right and then we increase
+i by one so i becomes one and then
+
+123
+00:09:08,390 --> 00:09:11,430
+that should give us the next index
+of our list over and over and
+
+124
+00:09:11,430 --> 00:09:15,990
+over again so if i was to print out
+this you can see it's just going
+
+125
+00:09:15,990 --> 00:09:21,330
+to print out all the ages in my
+loop or sorry in my list so then
+
+126
+00:09:21,330 --> 00:09:24,970
+what's the difference between doing
+that and just printing out age.
+
+127
+00:09:25,930 --> 00:09:29,490
+Well, in this context, there is no
+difference. They're printing out
+
+128
+00:09:29,490 --> 00:09:32,810
+the same data, and you can see
+we're just getting doubles of that
+
+129
+00:09:32,810 --> 00:09:37,570
+now in our output terminal. So
+what's the benefit? Well, there are
+
+130
+00:09:37,570 --> 00:09:41,030
+a lot of cases where this could
+be beneficial. Like, let's say you
+
+131
+00:09:41,030 --> 00:09:50,630
+wanted to grab an index of a
+value before or after your current
+
+132
+00:09:50,630 --> 00:09:58,370
+index. So let's say I wanted to get
+class ages plus one and if I was to
+
+133
+00:09:58,370 --> 00:10:03,070
+print that well I get an error but
+ignore that for now so the first
+
+134
+00:10:03,070 --> 00:10:07,530
+time I run my loop class ages at
+zero plus one is gonna give me
+
+135
+00:10:07,530 --> 00:10:12,610
+one so it's gonna go and pull the
+first index which is 52 and then
+
+136
+00:10:12,610 --> 00:10:16,370
+age is 41 so you can see it printed
+out both of those maybe I should
+
+137
+00:10:16,370 --> 00:10:20,790
+add some commentary very sphere
+so you can tell what's going on a
+
+138
+00:10:33,770 --> 00:10:34,790
+little bit clearer.
+
+139
+00:10:35,210 --> 00:10:40,250
+Okay also still ignore the error
+message. So we've got class age at
+
+140
+00:10:40,250 --> 00:10:46,670
+index i is 52 but age is 41 and
+then class age at index i is 21 and
+
+141
+00:10:46,670 --> 00:10:52,870
+then age is 52. So index i is one
+step ahead or one iteration ahead
+
+142
+00:10:52,870 --> 00:10:56,170
+kind of than the age variable is.
+But check out what happens when
+
+143
+00:10:56,170 --> 00:10:59,950
+I try to do the same thing to age.
+So if I say print out age plus
+
+144
+00:10:59,950 --> 00:11:04,730
+one, that's not pulling an index,
+that's just going to literally add
+
+145
+00:11:04,730 --> 00:11:08,710
+one to my age, which is what I
+did here. So that's actually not
+
+146
+00:11:08,710 --> 00:11:14,790
+what I want to do. So using an
+iterator variable outside of our loop
+
+147
+00:11:14,790 --> 00:11:19,590
+to grab indexes in our list can
+be really helpful if there are
+
+148
+00:11:19,590 --> 00:11:24,890
+specific reasons to be getting the
+variables around our iterator variable.
+
+149
+00:11:24,890 --> 00:11:28,810
+That's a lot of terminology, so
+hopefully that all makes sense.
+
+150
+00:11:29,170 --> 00:11:31,810
+Okay, and to wrap this
+up, we'll just do one more
+
+151
+00:11:31,810 --> 00:11:34,650
+example. This will be
+simpler, so a list of strings.
+
+152
+00:11:36,330 --> 00:11:44,350
+Let's say we've got favorite
+colors, and obviously all
+
+153
+00:11:44,350 --> 00:11:50,430
+of our favorite colors are
+Aggie blue, fighting white,
+
+154
+00:11:51,890 --> 00:11:56,690
+and we don't have favorite
+colors after that, pink,
+
+155
+00:11:57,050 --> 00:12:05,230
+okay? So we could loop through our
+list of colors, so for color in fav
+
+156
+00:12:05,230 --> 00:12:10,890
+colors, whoops, and of course we
+can print out each of the colors one
+
+157
+00:12:10,890 --> 00:12:21,230
+at a time let me add some documentation
+and that's perfect and if we
+
+158
+00:12:21,230 --> 00:12:26,070
+were to run this we still get an
+error let me comment out uh this line
+
+159
+00:12:26,070 --> 00:12:30,750
+of code because that's what's breaking
+okay aggie blue fighting white
+
+160
+00:12:30,750 --> 00:12:35,210
+and pink now this is what i wanted to
+show you guys so we have an iterator
+
+161
+00:12:35,210 --> 00:12:40,030
+variable here called color, all
+right? Color is going to point to
+
+162
+00:12:40,470 --> 00:12:42,710
+each of the elements of our list one at a
+
+163
+00:12:42,710 --> 00:12:46,190
+time as we iterate
+through the list, but then
+
+164
+00:12:47,650 --> 00:12:51,490
+color is a string, right? It's Aggie
+blue, then fighting white, then
+
+165
+00:12:51,490 --> 00:12:56,050
+pink, and strings behave pretty
+similar to list in a lot of regards.
+
+166
+00:12:56,330 --> 00:13:01,160
+um so I could iterate through a
+string after I iterate through
+
+167
+00:13:01,160 --> 00:13:04,590
+a list so if I'm iterating
+through a list of strings I could
+
+168
+00:13:04,590 --> 00:13:11,430
+do a nested for loop so for
+letter in color print out letter
+
+169
+00:13:13,640 --> 00:13:16,450
+all right so what's going on here
+is we're creating an iterator
+
+170
+00:13:16,450 --> 00:13:20,730
+variable to iterate through my list
+so color becomes aggie blue and
+
+171
+00:13:20,730 --> 00:13:25,150
+then I'm saying well take that
+aggie blue string and I actually
+
+172
+00:13:25,150 --> 00:13:28,930
+want to loop through that and print
+out each of the letters in it.
+
+173
+00:13:29,160 --> 00:13:33,770
+So if I was to run this code,
+I would expect to see each of
+
+174
+00:13:33,770 --> 00:13:37,050
+the letters one at a time along
+with the outer loop printing
+
+175
+00:13:37,050 --> 00:13:40,750
+out the actual item of the list.
+So hopefully this wasn't too
+
+176
+00:13:40,750 --> 00:13:44,010
+long and hopefully that made
+some sense regarding lists and
+
+177
+00:13:44,010 --> 00:13:47,250
+indexing. We'll talk more about
+lists and what you can do with
+
+178
+00:13:47,250 --> 00:13:49,610
+them in more in future content
+videos. Thanks for watching.

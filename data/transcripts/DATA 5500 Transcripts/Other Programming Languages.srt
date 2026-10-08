@@ -1,0 +1,435 @@
+1
+00:00:02,910 --> 00:00:06,050
+Hey, everybody, welcome to the
+content video going over section
+
+2
+00:00:06,050 --> 00:00:10,210
+1.9 of your textbook, Other
+Popular Programming Languages.
+
+3
+00:00:10,350 --> 00:00:12,970
+So one of the reasons I
+like to talk about other
+
+4
+00:00:12,970 --> 00:00:15,570
+programming languages is because
+there's a lot of programmers
+
+5
+00:00:15,570 --> 00:00:18,830
+out there and a lot of
+programmers won't just use
+
+6
+00:00:18,830 --> 00:00:21,730
+one language. They'll use
+all sorts. So, for example,
+
+7
+00:00:21,870 --> 00:00:26,790
+maybe you use Python primarily, but
+you also incorporate JavaScript or
+
+8
+00:00:26,790 --> 00:00:31,130
+R programming into your programs.
+and that's a pretty common practice
+
+9
+00:00:31,130 --> 00:00:34,490
+is that a lot of programmers will
+use multiple different languages.
+
+10
+00:00:35,010 --> 00:00:38,090
+And it's good to be aware of some
+of them. And all of these ones
+
+11
+00:00:38,090 --> 00:00:41,070
+that I'm going to talk about right
+here are high level languages. So
+
+12
+00:00:41,070 --> 00:00:44,090
+if you remember from a previous
+video, we talked about there's high
+
+13
+00:00:44,090 --> 00:00:48,210
+level languages, assembly languages,
+machine languages, and these
+
+14
+00:00:48,210 --> 00:00:50,990
+are all going to be high level
+languages, which means that they are
+
+15
+00:00:50,990 --> 00:00:54,630
+human readable and writable. And
+once they're all written and run,
+
+16
+00:00:54,630 --> 00:00:58,150
+the operating system will take them
+as machine code to the CPU, which
+
+17
+00:00:58,150 --> 00:01:02,760
+will then do whatever is programmed.
+So without further ado, let's
+
+18
+00:01:02,890 --> 00:01:06,440
+talk about some of these. So we've
+got BASIC developed in the 90s.
+
+19
+00:01:07,670 --> 00:01:10,150
+C was developed in the, or sorry, in
+
+20
+00:01:10,150 --> 00:01:12,040
+the 90s. Wow, I can't read. The 1960s.
+
+21
+00:01:13,670 --> 00:01:17,030
+C was developed in the
+1970s. So these are older
+
+22
+00:01:17,030 --> 00:01:20,190
+languages. Hopefully maybe
+you guys have heard of some
+
+23
+00:01:20,190 --> 00:01:22,290
+of them because they have
+been around for so long.
+
+24
+00:01:22,670 --> 00:01:25,970
+I've mentioned in another video
+that C is kind of a root language
+
+25
+00:01:25,970 --> 00:01:30,510
+for many other programming
+languages, right? So, it's used
+
+26
+00:01:30,510 --> 00:01:34,690
+for a lot of other operating
+systems. It's used for the kernel.
+
+27
+00:01:36,070 --> 00:01:39,910
+When it was created initially,
+it was called Unix, which
+
+28
+00:01:39,910 --> 00:01:42,150
+is a word that maybe some of
+you have seen floating around.
+
+29
+00:01:42,270 --> 00:01:49,050
+And then C++, which also you may
+have heard of, is a language that's
+
+30
+00:01:49,050 --> 00:01:53,430
+similar to C, but as you can maybe
+guess, the++ kind of implies that there
+
+31
+00:01:53,430 --> 00:01:57,290
+have been features or add-ons. And
+so it's just a kind of fancy way
+
+32
+00:01:57,290 --> 00:02:02,510
+of saying that there's C plus some
+capabilities for object-oriented
+
+33
+00:02:02,510 --> 00:02:06,790
+programming, as you can read right
+here. And we are actually going to talk
+
+34
+00:02:06,790 --> 00:02:10,190
+about object-oriented programming a
+little bit later on in the course.
+
+35
+00:02:10,790 --> 00:02:15,810
+But basically, objects are a
+way in code to represent things
+
+36
+00:02:15,810 --> 00:02:19,480
+in the real world. So for
+example, a person, a university,
+
+37
+00:02:19,690 --> 00:02:25,720
+a car, cell phone stock those are
+all real world things that we can
+
+38
+00:02:25,720 --> 00:02:31,670
+represent with objects in our code
+and objects are kind of like data that
+
+39
+00:02:31,670 --> 00:02:35,810
+have functionality so um that's
+all that we'll talk about right now
+
+40
+00:02:35,810 --> 00:02:45,270
+but c++ is object oriented um let's
+move on to java so java is another
+
+41
+00:02:45,270 --> 00:02:51,330
+really really common coding language,
+also object-oriented coding language.
+
+42
+00:02:51,330 --> 00:02:54,590
+And the thing that made it so
+popular was that it was able to be
+
+43
+00:02:54,590 --> 00:02:59,930
+written once and run anywhere. So
+it was a lot, it was able to be run
+
+44
+00:02:59,930 --> 00:03:04,090
+on a wider variety of machines.
+There weren't as many stipulations to
+
+45
+00:03:04,090 --> 00:03:09,270
+using it, and it was great for
+developing applications with something
+
+46
+00:03:09,270 --> 00:03:14,390
+called a GUI, which stands for graphical
+user interface. So that's Java.
+
+47
+00:03:14,590 --> 00:03:20,110
+And then C sharp, another
+derivative of C is
+
+48
+00:03:20,550 --> 00:03:24,030
+Microsoft's answer to Java.
+So Java was getting really,
+
+49
+00:03:24,030 --> 00:03:26,170
+really popular back in the
+day. And Microsoft said,
+
+50
+00:03:26,170 --> 00:03:28,750
+well, let's come up with
+another language that will be
+
+51
+00:03:28,750 --> 00:03:31,490
+a rival to Java. And that's
+where C sharp came from.
+
+52
+00:03:31,630 --> 00:03:36,790
+And C sharp, I believe is an open,
+oh yeah, right here, open source
+
+53
+00:03:38,070 --> 00:03:39,110
+language.
+
+54
+00:03:39,530 --> 00:03:42,690
+So, another really important
+one to note is JavaScript.
+
+55
+00:03:43,870 --> 00:03:49,130
+JavaScript is an incredibly common
+language because it's used so widely,
+
+56
+00:03:49,350 --> 00:03:54,950
+and it's very, very strong with,
+or sorry, very commonly used with
+
+57
+00:03:54,950 --> 00:04:00,230
+building websites. In fact, the
+Codespace and GitHub that we use in
+
+58
+00:04:00,230 --> 00:04:05,410
+this course is actually coded using
+JavaScript and TypeScript, which is
+
+59
+00:04:05,410 --> 00:04:09,030
+not one that I have that we'll talk
+about in this video. But JavaScript
+
+60
+00:04:09,210 --> 00:04:13,310
+is incredibly commonly used to
+make robust websites. So I think
+
+61
+00:04:13,310 --> 00:04:18,690
+Facebook is coded with JavaScript,
+which probably means that Instagram is
+
+62
+00:04:18,690 --> 00:04:23,490
+as well. Some pretty big websites.
+I think maybe Amazon could be wrong
+
+63
+00:04:23,490 --> 00:04:26,470
+there. It's really pretty impressive.
+So if you've ever made anything
+
+64
+00:04:26,470 --> 00:04:30,850
+in JavaScript, you'll know that to
+have something that works as well
+
+65
+00:04:30,850 --> 00:04:36,610
+as something like Facebook or
+GitHub, to have it work as well as it
+
+66
+00:04:36,610 --> 00:04:40,250
+does requires quite a bit of programming.
+So JavaScript is really cool.
+
+67
+00:04:40,530 --> 00:04:44,530
+And one of the reasons it's called
+JavaScript is because people
+
+68
+00:04:44,530 --> 00:04:48,530
+wanted it to appeal to people who
+knew Java. And so some of the syntax
+
+69
+00:04:48,530 --> 00:04:53,250
+is pretty similar in JavaScript
+and Java. So if you knew Java,
+
+70
+00:04:53,730 --> 00:04:55,490
+JavaScript is probably somewhat developed
+
+71
+00:04:55,490 --> 00:04:57,790
+or sorry, somewhat familiar to you.
+
+72
+00:04:58,130 --> 00:05:03,830
+And then there's Swift, which is an
+Apple programming language and not
+
+73
+00:05:03,830 --> 00:05:09,110
+as common today. You'll see it
+sometimes, but it's not as widely used.
+
+74
+00:05:09,110 --> 00:05:14,170
+And then R is a language that you
+might see as somebody who's taking
+
+75
+00:05:14,170 --> 00:05:17,550
+a data analytics course. You may
+have been exposed to R programming
+
+76
+00:05:17,550 --> 00:05:21,470
+since it's widely used in statistical
+applications and visualizations.
+
+77
+00:05:21,470 --> 00:05:26,930
+And so Python and R are two most
+widely used data science languages.
+
+78
+00:05:26,930 --> 00:05:28,930
+So that about wraps up. Oh, actually,
+
+79
+00:05:28,930 --> 00:05:30,750
+sorry. We're almost done with this video.
+
+80
+00:05:31,010 --> 00:05:37,070
+In the code that I had you guys
+pull for the semester, I have
+
+81
+00:05:37,070 --> 00:05:40,270
+included a couple of samples
+of different types of code and
+
+82
+00:05:40,270 --> 00:05:42,850
+what they look like. Oh, it's
+not that one. That one's broken.
+
+83
+00:05:43,170 --> 00:05:45,730
+So you can see we've got C. I think
+
+84
+00:05:45,730 --> 00:05:48,380
+this one is C Sharp. we've got HTML,
+
+85
+00:05:48,930 --> 00:05:54,090
+Java, Python, and Ruby and
+these different codes are all
+
+86
+00:05:54,090 --> 00:05:56,330
+doing the exact same thing
+they're just printing out hello
+
+87
+00:05:56,330 --> 00:05:59,170
+world to the console so you
+can check those out and look at
+
+88
+00:05:59,170 --> 00:06:01,470
+what some other programming
+languages might look like and
+
+89
+00:06:01,470 --> 00:06:03,930
+that wraps up everything for
+this video thanks for watching

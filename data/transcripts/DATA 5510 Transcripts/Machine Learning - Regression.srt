@@ -1,0 +1,1295 @@
+1
+00:00:02,118 --> 00:00:04,410
+INSTRUCTOR: Hello, everyone,
+and welcome to the content
+
+2
+00:00:04,410 --> 00:00:07,810
+video for machine
+learning regression.
+
+3
+00:00:07,810 --> 00:00:08,310
+OK.
+
+4
+00:00:08,310 --> 00:00:09,900
+Now that we've covered
+an introduction
+
+5
+00:00:09,900 --> 00:00:12,600
+to artificial intelligence,
+machine learning
+
+6
+00:00:12,600 --> 00:00:17,110
+is the statistical side of
+artificial intelligence.
+
+7
+00:00:17,110 --> 00:00:19,470
+It's also probably
+the fastest growing
+
+8
+00:00:19,470 --> 00:00:23,190
+and largest subfield of all
+artificial intelligence,
+
+9
+00:00:23,190 --> 00:00:26,250
+and it's the one that's
+probably had the most success
+
+10
+00:00:26,250 --> 00:00:28,210
+in changing our society.
+
+11
+00:00:28,210 --> 00:00:29,530
+That's machine learning.
+
+12
+00:00:29,530 --> 00:00:31,150
+So what is machine learning?
+
+13
+00:00:31,150 --> 00:00:34,230
+And how does it compare to
+the artificial intelligence
+
+14
+00:00:34,230 --> 00:00:38,290
+we've talked about
+so far, like AlphaGo?
+
+15
+00:00:38,290 --> 00:00:42,360
+Well, with machine learning
+and artificial intelligence
+
+16
+00:00:42,360 --> 00:00:46,980
+in general, you're
+trying to provide
+
+17
+00:00:46,980 --> 00:00:50,550
+data that can be learned
+from so that the model that's
+
+18
+00:00:50,550 --> 00:00:56,100
+the result of that trained data,
+you can do something with it,
+
+19
+00:00:56,100 --> 00:00:59,190
+predict with it, or generate
+an action with it like AlphaGo
+
+20
+00:00:59,190 --> 00:01:01,150
+generate a move in Go.
+
+21
+00:01:01,150 --> 00:01:02,980
+But the problem
+you're trying to solve
+
+22
+00:01:02,980 --> 00:01:07,600
+has to be able to be broken
+down into inputs, inputs that
+
+23
+00:01:07,600 --> 00:01:09,610
+take data that can
+be learned from,
+
+24
+00:01:09,610 --> 00:01:11,770
+and then an output
+that can be measured
+
+25
+00:01:11,770 --> 00:01:13,690
+on how the learning went.
+
+26
+00:01:13,690 --> 00:01:17,930
+So that's actually not a
+new concept, not at all.
+
+27
+00:01:17,930 --> 00:01:21,730
+In fact, as I call
+regression, linear regression,
+
+28
+00:01:21,730 --> 00:01:24,760
+I call it the mother of
+machine learning because linear
+
+29
+00:01:24,760 --> 00:01:30,400
+regression, which really goes
+as far back as the 1800s,
+
+30
+00:01:30,400 --> 00:01:34,360
+it follows that same
+pattern of you have inputs,
+
+31
+00:01:34,360 --> 00:01:37,660
+there's something to be
+learned or something to be fit,
+
+32
+00:01:37,660 --> 00:01:42,550
+and then outputs that can be
+used in a model for predictions
+
+33
+00:01:42,550 --> 00:01:44,390
+or an action of some kind.
+
+34
+00:01:44,390 --> 00:01:48,190
+So while it sounds
+really new, high tech,
+
+35
+00:01:48,190 --> 00:01:52,500
+buzzwordy, the principles of it
+have been around a long time.
+
+36
+00:01:52,500 --> 00:01:53,750
+So let's take a look at those.
+
+37
+00:01:53,750 --> 00:01:55,370
+So back to regression.
+
+38
+00:01:55,370 --> 00:01:58,810
+Regression in its
+simplest form can
+
+39
+00:01:58,810 --> 00:02:02,510
+be linear algebra back to your
+high school linear algebra
+
+40
+00:02:02,510 --> 00:02:05,200
+when you studied y
+equals mx plus b.
+
+41
+00:02:05,200 --> 00:02:06,850
+So what are you learning there?
+
+42
+00:02:06,850 --> 00:02:11,200
+Well, there you're learning
+the slope coefficient of m.
+
+43
+00:02:11,200 --> 00:02:13,420
+m will be different
+for every data set.
+
+44
+00:02:13,420 --> 00:02:16,340
+For every problem you solve, m
+will be a different coefficient.
+
+45
+00:02:16,340 --> 00:02:18,910
+So what you're learning
+with regression
+
+46
+00:02:18,910 --> 00:02:22,840
+is coefficients in a data set
+that you can use to go use them
+
+47
+00:02:22,840 --> 00:02:24,730
+for something else.
+
+48
+00:02:24,730 --> 00:02:29,770
+So let's take a look and maybe
+review a little bit regression
+
+49
+00:02:29,770 --> 00:02:31,830
+of variables and coefficients.
+
+50
+00:02:31,830 --> 00:02:32,330
+OK.
+
+51
+00:02:32,330 --> 00:02:34,300
+So I just went to GPT
+and threw in some,
+
+52
+00:02:34,300 --> 00:02:37,130
+what are some examples of
+regression used in agriculture?
+
+53
+00:02:37,130 --> 00:02:38,290
+And there's actually a lot.
+
+54
+00:02:38,290 --> 00:02:42,580
+Yield production, if you want
+to predict how much yield a crop
+
+55
+00:02:42,580 --> 00:02:43,750
+is going to give.
+
+56
+00:02:43,750 --> 00:02:46,390
+Growth analysis, if you want to
+analyze the growth of the crop
+
+57
+00:02:46,390 --> 00:02:50,470
+itself, the health
+of the soil itself,
+
+58
+00:02:50,470 --> 00:02:54,340
+pest and disease control,
+water management, crop quality,
+
+59
+00:02:54,340 --> 00:02:57,310
+livestock production,
+pricing and market analysis.
+
+60
+00:02:57,310 --> 00:03:00,820
+A regression model can be
+very powerful to predict
+
+61
+00:03:00,820 --> 00:03:03,130
+in these types of scenarios.
+
+62
+00:03:03,130 --> 00:03:05,060
+So how do you set that
+up for prediction?
+
+63
+00:03:05,060 --> 00:03:07,070
+Well, I again, love GPT.
+
+64
+00:03:07,070 --> 00:03:08,390
+Put in another question.
+
+65
+00:03:08,390 --> 00:03:10,060
+What would the
+independent variables
+
+66
+00:03:10,060 --> 00:03:11,480
+be in the yield prediction?
+
+67
+00:03:11,480 --> 00:03:14,480
+So I'm referring to this first
+example that GPT gave me.
+
+68
+00:03:14,480 --> 00:03:17,350
+Regression can be used
+to predict yields.
+
+69
+00:03:17,350 --> 00:03:19,030
+So what would the
+input variables
+
+70
+00:03:19,030 --> 00:03:20,870
+or the independent variables be?
+
+71
+00:03:20,870 --> 00:03:25,000
+Well, here they are-- weather,
+soil, agronomic practices,
+
+72
+00:03:25,000 --> 00:03:28,065
+genetic factors of the
+crop, management practices.
+
+73
+00:03:28,065 --> 00:03:29,440
+Some farms yield
+more than others
+
+74
+00:03:29,440 --> 00:03:30,610
+because of the management.
+
+75
+00:03:30,610 --> 00:03:32,230
+Pest and disease.
+
+76
+00:03:32,230 --> 00:03:33,760
+Similarly, if
+there's more disease,
+
+77
+00:03:33,760 --> 00:03:36,580
+obviously, less yield and
+other environment variables
+
+78
+00:03:36,580 --> 00:03:43,970
+like pollution factors, where
+the crop is, things like that.
+
+79
+00:03:43,970 --> 00:03:46,330
+So these are the
+input variables.
+
+80
+00:03:46,330 --> 00:03:48,430
+By the way,
+independent variables
+
+81
+00:03:48,430 --> 00:03:51,340
+in regression and input
+variables in machine learning
+
+82
+00:03:51,340 --> 00:03:52,220
+are the same.
+
+83
+00:03:52,220 --> 00:03:54,340
+And the way I always
+remember that is in-in.
+
+84
+00:03:54,340 --> 00:03:58,150
+Independent variables,
+input features, same.
+
+85
+00:03:58,150 --> 00:03:59,420
+It's just terminology.
+
+86
+00:03:59,420 --> 00:04:00,920
+Typically with
+machine learning, we,
+
+87
+00:04:00,920 --> 00:04:03,460
+use input features
+and an output,
+
+88
+00:04:03,460 --> 00:04:06,280
+whereas in regression
+it's independent variables
+
+89
+00:04:06,280 --> 00:04:07,908
+and a dependent variable.
+
+90
+00:04:07,908 --> 00:04:09,700
+The dependent variable
+is just the variable
+
+91
+00:04:09,700 --> 00:04:10,880
+we're trying to predict.
+
+92
+00:04:10,880 --> 00:04:13,270
+So in this example, these
+independent variables
+
+93
+00:04:13,270 --> 00:04:15,910
+or the input features of
+weather, soil, agronomics
+
+94
+00:04:15,910 --> 00:04:17,870
+genetics, these
+would be the inputs.
+
+95
+00:04:17,870 --> 00:04:19,517
+We're trying to
+predict how much yield
+
+96
+00:04:19,517 --> 00:04:21,100
+is going to come
+from this crop or how
+
+97
+00:04:21,100 --> 00:04:23,800
+much the output of this
+model, machine learning model
+
+98
+00:04:23,800 --> 00:04:26,450
+could be how much yield is
+going to come from that.
+
+99
+00:04:26,450 --> 00:04:28,020
+But it's the same setup.
+
+100
+00:04:28,020 --> 00:04:29,770
+So if you can think
+of a problem like that
+
+101
+00:04:29,770 --> 00:04:32,560
+in terms of inputs
+and then an output
+
+102
+00:04:32,560 --> 00:04:36,190
+that you're trying
+to predict, then you
+
+103
+00:04:36,190 --> 00:04:39,220
+have a candidate for
+machine learning.
+
+104
+00:04:39,220 --> 00:04:42,710
+All right, so let's review
+how to do this in Python now.
+
+105
+00:04:42,710 --> 00:04:43,260
+All right.
+
+106
+00:04:43,260 --> 00:04:47,500
+So I'm looking at this
+file here, regression.
+
+107
+00:04:47,500 --> 00:04:50,300
+And regression, remember,
+it's linear algebra.
+
+108
+00:04:50,300 --> 00:04:53,180
+So back to your
+high school algebra,
+
+109
+00:04:53,180 --> 00:04:56,140
+we can break down the
+solution to the coefficients
+
+110
+00:04:56,140 --> 00:04:58,610
+mathematically in
+linear regression.
+
+111
+00:04:58,610 --> 00:05:00,410
+And here's an example
+of how to do that.
+
+112
+00:05:00,410 --> 00:05:03,160
+So let me start in the
+main, and then I'll
+
+113
+00:05:03,160 --> 00:05:05,530
+show you the other
+functions in a second.
+
+114
+00:05:05,530 --> 00:05:09,650
+So here, I have my x
+variable and my y variable.
+
+115
+00:05:09,650 --> 00:05:12,020
+So the y is our
+dependent variable
+
+116
+00:05:12,020 --> 00:05:13,210
+we're trying to predict.
+
+117
+00:05:13,210 --> 00:05:16,930
+And our x, our input or
+independent variables
+
+118
+00:05:16,930 --> 00:05:20,108
+that are used to predict
+our dependent variable.
+
+119
+00:05:20,108 --> 00:05:21,650
+OK, so let's look
+at it for a second.
+
+120
+00:05:21,650 --> 00:05:23,067
+You can kind of
+see the x is here.
+
+121
+00:05:23,067 --> 00:05:26,570
+They're just the numbers 0
+through 9, incrementing by one.
+
+122
+00:05:26,570 --> 00:05:27,890
+But let's look at the y here.
+
+123
+00:05:27,890 --> 00:05:29,060
+They're much larger.
+
+124
+00:05:29,060 --> 00:05:32,500
+2, 3, 4, 5, 7, 8, 9, 15, 20.
+
+125
+00:05:32,500 --> 00:05:35,110
+So if you're trying and figure
+out how much growth is there
+
+126
+00:05:35,110 --> 00:05:39,100
+from x to the y, well,
+the y is obviously bigger,
+
+127
+00:05:39,100 --> 00:05:41,867
+so we'd expect a
+coefficient larger than 1.
+
+128
+00:05:41,867 --> 00:05:43,700
+How the heck do you
+calculate a coefficient?
+
+129
+00:05:43,700 --> 00:05:44,450
+Well, here it is.
+
+130
+00:05:44,450 --> 00:05:48,640
+Here's the way to
+estimate coefficients.
+
+131
+00:05:48,640 --> 00:05:52,000
+And it uses the means and
+the sum of squares of them
+
+132
+00:05:52,000 --> 00:05:53,600
+to estimate the coefficient.
+
+133
+00:05:53,600 --> 00:05:55,450
+And once I have the
+coefficient, then it's
+
+134
+00:05:55,450 --> 00:05:58,930
+just another line of code to
+calculate the y-intercept,
+
+135
+00:05:58,930 --> 00:06:02,410
+and then you can plot the line
+once you have the coefficients
+
+136
+00:06:02,410 --> 00:06:03,530
+and the intercept.
+
+137
+00:06:03,530 --> 00:06:06,700
+And then this function right
+here, plot regression line,
+
+138
+00:06:06,700 --> 00:06:11,830
+it just puts the regression line
+and the data into an image right
+
+139
+00:06:11,830 --> 00:06:13,890
+there, regression_byhand.png.
+
+140
+00:06:13,890 --> 00:06:15,015
+OK, so let's give it a run.
+
+141
+00:06:23,480 --> 00:06:24,560
+That is the wrong file.
+
+142
+00:06:24,560 --> 00:06:26,680
+Please hold.
+
+143
+00:06:26,680 --> 00:06:27,285
+There we go.
+
+144
+00:06:31,230 --> 00:06:31,730
+OK.
+
+145
+00:06:31,730 --> 00:06:33,180
+So a coefficient greater than 1.
+
+146
+00:06:33,180 --> 00:06:35,670
+That's what we expected, 1.7.
+
+147
+00:06:35,670 --> 00:06:38,005
+The intercept, the
+y-intercept is 0.43.
+
+148
+00:06:38,005 --> 00:06:39,380
+And let's take a
+look at our data
+
+149
+00:06:39,380 --> 00:06:43,010
+and our line plotted
+on the same line.
+
+150
+00:06:43,010 --> 00:06:43,620
+Where am I?
+
+151
+00:06:43,620 --> 00:06:46,180
+Here, week 12.
+
+152
+00:06:46,180 --> 00:06:49,230
+And output, regression by hand.
+
+153
+00:06:49,230 --> 00:06:51,610
+And so there it is.
+
+154
+00:06:51,610 --> 00:06:52,910
+So there's our data point.
+
+155
+00:06:52,910 --> 00:06:55,190
+So what did we really
+learn from here?
+
+156
+00:06:55,190 --> 00:06:56,650
+Well, we've got our data.
+
+157
+00:06:56,650 --> 00:06:59,500
+We've got the independent
+variables, the x's.
+
+158
+00:06:59,500 --> 00:07:02,500
+And then the y variables,
+we're trying to predict.
+
+159
+00:07:02,500 --> 00:07:05,318
+What we've done here
+is we've made a line.
+
+160
+00:07:05,318 --> 00:07:06,110
+It's linear, right?
+
+161
+00:07:06,110 --> 00:07:09,712
+A line that now we can use
+to predict future events.
+
+162
+00:07:09,712 --> 00:07:10,670
+So what does that mean?
+
+163
+00:07:10,670 --> 00:07:12,940
+So if we get
+additional input data
+
+164
+00:07:12,940 --> 00:07:17,680
+points of x's, like for
+example, if an x value is seven,
+
+165
+00:07:17,680 --> 00:07:19,810
+well, we can predict the y then.
+
+166
+00:07:19,810 --> 00:07:22,820
+It's going to be kind
+of around 11.2 here.
+
+167
+00:07:22,820 --> 00:07:24,230
+Now, will it be perfect?
+
+168
+00:07:24,230 --> 00:07:26,030
+No, there will be an error.
+
+169
+00:07:26,030 --> 00:07:28,250
+An error is just exactly
+what it sounds like.
+
+170
+00:07:28,250 --> 00:07:35,080
+It is the difference between
+the actual and predicted value.
+
+171
+00:07:35,080 --> 00:07:36,190
+And we test that.
+
+172
+00:07:36,190 --> 00:07:38,740
+We have a data
+set that we fit on
+
+173
+00:07:38,740 --> 00:07:40,510
+and then a separate
+data set we test on
+
+174
+00:07:40,510 --> 00:07:45,160
+so we can know that, we
+can correctly evaluate
+
+175
+00:07:45,160 --> 00:07:47,805
+the accuracy of the model.
+
+176
+00:07:47,805 --> 00:07:48,930
+OK, so that's a simple one.
+
+177
+00:07:48,930 --> 00:07:50,722
+Let's do a little bit
+more complicated one.
+
+178
+00:07:50,722 --> 00:07:55,430
+This is a kind of a classic
+data set, the Boston Housing
+
+179
+00:07:55,430 --> 00:07:57,230
+data set, which,
+by the way, you can
+
+180
+00:07:57,230 --> 00:08:00,590
+look at the entire
+Boston Housing data set
+
+181
+00:08:00,590 --> 00:08:02,190
+the description on Kaggle.
+
+182
+00:08:02,190 --> 00:08:03,740
+For those not
+familiar with Kaggle,
+
+183
+00:08:03,740 --> 00:08:06,480
+Kaggle is an excellent
+resource for data science.
+
+184
+00:08:06,480 --> 00:08:09,740
+It started out as competitions
+data science competitions
+
+185
+00:08:09,740 --> 00:08:13,430
+and has expanded to data science
+problems and data science
+
+186
+00:08:13,430 --> 00:08:15,600
+examples and lessons
+and data sets.
+
+187
+00:08:15,600 --> 00:08:16,980
+And it's really useful.
+
+188
+00:08:16,980 --> 00:08:19,730
+So the Boston Housing
+data set, again,
+
+189
+00:08:19,730 --> 00:08:21,902
+remember, with artificial
+intelligence and machine
+
+190
+00:08:21,902 --> 00:08:23,360
+learning, you have
+to break it down
+
+191
+00:08:23,360 --> 00:08:25,790
+into the problem of
+what are the inputs
+
+192
+00:08:25,790 --> 00:08:28,890
+and what is the output
+we're trying to learn?
+
+193
+00:08:28,890 --> 00:08:30,860
+Well, in the Boston
+Housing data set,
+
+194
+00:08:30,860 --> 00:08:34,860
+the inputs are
+everything about a house.
+
+195
+00:08:34,860 --> 00:08:37,870
+And then what we're trying
+to predict is the price.
+
+196
+00:08:37,870 --> 00:08:40,990
+So our inputs or independent
+variables are all of these.
+
+197
+00:08:40,990 --> 00:08:42,998
+And then the dependent
+variable or the output
+
+198
+00:08:42,998 --> 00:08:45,040
+we're trying to predict
+is going to be the price.
+
+199
+00:08:45,040 --> 00:08:47,430
+And let's just look through
+them and they kind of
+
+200
+00:08:47,430 --> 00:08:48,790
+make logical sense.
+
+201
+00:08:48,790 --> 00:08:52,500
+The crime rate that
+the house is in,
+
+202
+00:08:52,500 --> 00:08:55,750
+what the zoning is, if it's
+zoned residential, commercial
+
+203
+00:08:55,750 --> 00:08:59,220
+or an in-between, proportion
+of non-retail business,
+
+204
+00:08:59,220 --> 00:09:02,310
+acres per town,
+industrial, and then
+
+205
+00:09:02,310 --> 00:09:04,660
+a lot of different
+variables about the area.
+
+206
+00:09:04,660 --> 00:09:05,922
+So what would you expect?
+
+207
+00:09:05,922 --> 00:09:07,380
+Well, if it's in
+a high crime area,
+
+208
+00:09:07,380 --> 00:09:09,820
+the value is going to be
+down, things like that.
+
+209
+00:09:09,820 --> 00:09:11,470
+Those are things
+that can be learned.
+
+210
+00:09:11,470 --> 00:09:16,050
+We can learn from
+those inputs how they
+
+211
+00:09:16,050 --> 00:09:19,210
+affect the price of a house.
+
+212
+00:09:19,210 --> 00:09:21,420
+So that's the data set
+that we're going to use.
+
+213
+00:09:21,420 --> 00:09:22,710
+And then we have--
+
+214
+00:09:22,710 --> 00:09:24,980
+let's go to the Python code.
+
+215
+00:09:24,980 --> 00:09:25,480
+All right.
+
+216
+00:09:25,480 --> 00:09:29,730
+So the code is a little
+bit more here, obviously.
+
+217
+00:09:29,730 --> 00:09:32,670
+I should also mention it's
+using the SKLearn Python
+
+218
+00:09:32,670 --> 00:09:36,870
+library, which is an incredibly
+well done library for machine
+
+219
+00:09:36,870 --> 00:09:37,680
+learning.
+
+220
+00:09:37,680 --> 00:09:40,880
+And I'm getting the
+data set from SKLearn.
+
+221
+00:09:40,880 --> 00:09:43,210
+Notice I'm using the
+datasets.load_boston.
+
+222
+00:09:43,210 --> 00:09:46,840
+So SKLearn has access to data
+sets that they'll let you use.
+
+223
+00:09:46,840 --> 00:09:48,270
+I'm using this one on Boston.
+
+224
+00:09:48,270 --> 00:09:49,770
+And then I'm going
+to what I'm going
+
+225
+00:09:49,770 --> 00:09:52,840
+to do is I'm going to save
+so you can look at the data.
+
+226
+00:09:52,840 --> 00:09:55,200
+So the x values,
+again, remember,
+
+227
+00:09:55,200 --> 00:09:57,750
+that kind of references the
+mother of machine learning
+
+228
+00:09:57,750 --> 00:10:00,150
+regression where we have
+the independent or the input
+
+229
+00:10:00,150 --> 00:10:04,020
+features as our x's
+and then the value
+
+230
+00:10:04,020 --> 00:10:05,650
+we're trying to
+predict as the y.
+
+231
+00:10:05,650 --> 00:10:07,870
+So what are we trying
+to predict? y, price.
+
+232
+00:10:07,870 --> 00:10:11,010
+So we'd expect to see
+the housing price in a y,
+
+233
+00:10:11,010 --> 00:10:14,250
+and then all the info
+about the house as an x.
+
+234
+00:10:14,250 --> 00:10:18,180
+Then here's the line of code
+where we create our model,
+
+235
+00:10:18,180 --> 00:10:19,050
+and then fit.
+
+236
+00:10:19,050 --> 00:10:20,860
+Fit is where all
+the magic happens.
+
+237
+00:10:20,860 --> 00:10:23,880
+Fit is also referred to as
+training, especially when you're
+
+238
+00:10:23,880 --> 00:10:26,140
+talking about neural networks,
+but they're essentially
+
+239
+00:10:26,140 --> 00:10:26,990
+the same thing.
+
+240
+00:10:26,990 --> 00:10:29,050
+Fitting a model is the
+learning phase where
+
+241
+00:10:29,050 --> 00:10:31,450
+you learn, in this
+case, the coefficients
+
+242
+00:10:31,450 --> 00:10:33,550
+or in a neural network,
+you're learning
+
+243
+00:10:33,550 --> 00:10:35,690
+the weights of the
+neurons through training.
+
+244
+00:10:35,690 --> 00:10:36,730
+But it's the same idea.
+
+245
+00:10:36,730 --> 00:10:39,440
+Fitting or training
+is the learning phase.
+
+246
+00:10:39,440 --> 00:10:40,330
+And I'm giving it.
+
+247
+00:10:40,330 --> 00:10:41,770
+All right, here's
+all my x values,
+
+248
+00:10:41,770 --> 00:10:45,440
+here's all the inputs of
+the Boston Housing data set.
+
+249
+00:10:45,440 --> 00:10:48,290
+And then here's the prices
+that I'm trying to predict on.
+
+250
+00:10:48,290 --> 00:10:51,340
+So I'm learning from the data
+how to predict those prices.
+
+251
+00:10:51,340 --> 00:10:52,750
+And then I print
+the coefficients
+
+252
+00:10:52,750 --> 00:10:59,110
+and the variance in the data,
+and then I output other--
+
+253
+00:10:59,110 --> 00:11:03,220
+I'm actually generating a
+visual for the data set,
+
+254
+00:11:03,220 --> 00:11:05,278
+and then I output it
+to a file, a png file.
+
+255
+00:11:05,278 --> 00:11:06,570
+All right, let's give it a run.
+
+256
+00:11:12,950 --> 00:11:14,160
+And there we go.
+
+257
+00:11:14,160 --> 00:11:15,000
+And that looks good.
+
+258
+00:11:15,000 --> 00:11:17,960
+Let's take a look
+at our data set.
+
+259
+00:11:17,960 --> 00:11:19,430
+And ta-da, there it is.
+
+260
+00:11:19,430 --> 00:11:25,070
+So we've generated all our data
+points and our regression line.
+
+261
+00:11:25,070 --> 00:11:27,560
+So there you go.
+
+262
+00:11:27,560 --> 00:11:31,490
+So in closing, what do I want
+you to learn from this video?
+
+263
+00:11:31,490 --> 00:11:36,110
+Well, one, regression is
+the mother machine learning.
+
+264
+00:11:36,110 --> 00:11:39,200
+And machine learning and
+artificial intelligence
+
+265
+00:11:39,200 --> 00:11:40,620
+are not magic.
+
+266
+00:11:40,620 --> 00:11:42,770
+The problem that can
+be solved by them
+
+267
+00:11:42,770 --> 00:11:44,690
+has to be broken down
+into a problem that
+
+268
+00:11:44,690 --> 00:11:48,380
+has inputs, something
+to learn, and then
+
+269
+00:11:48,380 --> 00:11:50,930
+an output that can be used
+for either a prediction
+
+270
+00:11:50,930 --> 00:11:52,080
+or an action.
+
+271
+00:11:52,080 --> 00:11:55,400
+And if a problem can be
+put into that structure,
+
+272
+00:11:55,400 --> 00:11:58,040
+then AI and machine
+learning is a perfect tool
+
+273
+00:11:58,040 --> 00:12:01,040
+to learn from and
+then predict on it.
+
+274
+00:12:01,040 --> 00:12:04,770
+OK, that concludes this video
+on machine learning regression.
+
+275
+00:12:04,770 --> 00:12:06,610
+Thanks for watching.

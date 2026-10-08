@@ -1,0 +1,597 @@
+1
+00:00:02,870 --> 00:00:06,090
+Hello everybody, and welcome
+to the content video going
+
+2
+00:00:06,090 --> 00:00:09,490
+over section 1.6 of your
+textbook, operating systems.
+
+3
+00:00:09,610 --> 00:00:11,830
+So we're just gonna talk a
+little bit about operating
+
+4
+00:00:11,830 --> 00:00:14,130
+systems, some of the main
+ones and how they run.
+
+5
+00:00:14,130 --> 00:00:18,070
+So an operating system is what works
+
+6
+00:00:18,070 --> 00:00:19,770
+with your software on your computer,
+
+7
+00:00:19,990 --> 00:00:22,910
+connects it to the hardware.
+We kind of talked about that
+
+8
+00:00:22,910 --> 00:00:25,630
+in the content video going
+over hardware and software.
+
+9
+00:00:26,010 --> 00:00:30,310
+So in another video, we talked
+about high level languages,
+
+10
+00:00:30,310 --> 00:00:33,850
+assembly languages, and machine
+languages, And what really happens is
+
+11
+00:00:33,850 --> 00:00:40,210
+once your software turns code into
+machine code, or once your code
+
+12
+00:00:40,210 --> 00:00:42,950
+turns into that, or once your
+software is translated into that, the
+
+13
+00:00:42,950 --> 00:00:47,390
+operating system then takes the machine
+code and sends it down to the CPU.
+
+14
+00:00:47,650 --> 00:00:50,350
+So that's kind of what this section
+is talking about right here.
+
+15
+00:00:50,530 --> 00:00:55,090
+So I probably said in one of the
+other videos that your code is taken
+
+16
+00:00:55,090 --> 00:00:57,770
+down a level from, let's say, a
+high-level language and then taken
+
+17
+00:00:57,770 --> 00:01:01,590
+down another level until it gets
+to machine language or binary. but
+
+18
+00:01:01,590 --> 00:01:05,450
+really it's the operating system
+that sends your code to the CPU.
+
+19
+00:01:06,390 --> 00:01:13,590
+So like I said the CPU allows
+software to work together with the
+
+20
+00:01:13,590 --> 00:01:17,070
+hardware or sorry the operating
+system allows software to work
+
+21
+00:01:17,070 --> 00:01:20,450
+together with the hardware. So there
+are three main operating systems
+
+22
+00:01:20,450 --> 00:01:23,830
+and you've probably heard of all
+of them. There's Windows, Linux
+
+23
+00:01:23,830 --> 00:01:29,070
+and if we scroll down a little bit
+further Apple Mac OS And there's
+
+24
+00:01:29,070 --> 00:01:31,670
+more, but we'll just talk about
+these three for just a moment.
+
+25
+00:01:32,830 --> 00:01:34,890
+I run Windows personally. You can
+
+26
+00:01:34,890 --> 00:01:36,650
+probably see it on this video recording.
+
+27
+00:01:37,010 --> 00:01:39,370
+A lot of you probably run
+it as well. The second
+
+28
+00:01:39,370 --> 00:01:42,490
+most common one is going
+to be Apple or Mac OS.
+
+29
+00:01:42,610 --> 00:01:45,310
+And if you're running Linux,
+that's awesome. Kudos to
+
+30
+00:01:45,310 --> 00:01:48,430
+you. One day I want to run
+a Linux operating system.
+
+31
+00:01:48,430 --> 00:01:50,910
+I just have not gotten
+around to setting one up yet.
+
+32
+00:01:50,990 --> 00:01:54,780
+But I think that they're really
+cool in that they're actually
+
+33
+00:01:54,780 --> 00:02:00,030
+fairly really good if you're in
+a development or a software or a
+
+34
+00:02:00,030 --> 00:02:02,510
+data engineering position. I
+think that they're great for that.
+
+35
+00:02:03,290 --> 00:02:06,590
+One thing I want to talk about really
+quick is the difference between a
+
+36
+00:02:06,590 --> 00:02:11,910
+proprietary operating system and an
+open source operating system. So a
+
+37
+00:02:11,910 --> 00:02:16,590
+proprietary operating system like
+Windows means that it's owned by like
+
+38
+00:02:16,590 --> 00:02:21,450
+the like one head company and they're
+the ones who are developing it.
+
+39
+00:02:21,980 --> 00:02:25,750
+They're the ones who are controlling
+it, releasing updates, etc, etc.
+
+40
+00:02:25,750 --> 00:02:29,130
+And And Windows is a proprietary
+operating system because Windows
+
+41
+00:02:29,130 --> 00:02:34,250
+takes care of all of the updates.
+They run the operating system. They
+
+42
+00:02:34,250 --> 00:02:36,950
+take care of everything. It's
+controlled by Microsoft exclusively.
+
+43
+00:02:37,450 --> 00:02:41,350
+So something like Linux is open
+source, meaning that it's actually
+
+44
+00:02:41,350 --> 00:02:45,830
+the community that upkeeps it and
+develops it and manages it. So
+
+45
+00:02:45,830 --> 00:02:48,950
+what's interesting is you think that
+if it's just the community running
+
+46
+00:02:48,950 --> 00:02:51,610
+something, that it actually would
+probably fall apart. I mean, I've
+
+47
+00:02:51,610 --> 00:02:56,070
+seen the community basketball pit
+or core or whatever. it's not very
+
+48
+00:02:56,070 --> 00:03:00,090
+good right but the one that's
+owned by the university that's that
+
+49
+00:03:00,090 --> 00:03:03,050
+one's great I really like playing
+basketball at that one right so
+
+50
+00:03:03,050 --> 00:03:07,230
+what's the difference between a
+proprietary operating system versus
+
+51
+00:03:07,230 --> 00:03:10,970
+an open source one well it happened
+what really happens is that there
+
+52
+00:03:10,970 --> 00:03:14,110
+are so many people who use something
+like Linux that it actually
+
+53
+00:03:14,110 --> 00:03:18,610
+gets scrutinized all the time and
+so if something's not working right
+
+54
+00:03:18,610 --> 00:03:22,150
+or something's not good enough the
+community really comes together
+
+55
+00:03:22,150 --> 00:03:27,150
+and actually fixes errors a lot
+quicker and sometimes a lot better
+
+56
+00:03:27,150 --> 00:03:30,390
+than a proprietary operating system.
+Because if you think about it,
+
+57
+00:03:30,390 --> 00:03:32,250
+well, they got to wait
+for funding or maybe they
+
+58
+00:03:32,250 --> 00:03:34,830
+got to wait for a big
+patch update or something.
+
+59
+00:03:34,970 --> 00:03:39,190
+And so an open source operating
+system like Linux is really open
+
+60
+00:03:39,190 --> 00:03:42,150
+to the community of coders to
+continue to adapt it and change
+
+61
+00:03:42,150 --> 00:03:45,870
+it as they see fit. So like you
+could even join the people who
+
+62
+00:03:45,870 --> 00:03:48,950
+are developing Linux right now
+and you could actually make
+
+63
+00:03:48,950 --> 00:03:51,930
+changes that are to the benefit
+of everyone. And it's up to you.
+
+64
+00:03:53,010 --> 00:03:54,630
+Let's scroll down a little bit.
+
+65
+00:03:54,630 --> 00:03:56,830
+There's a lot of open-source communities.
+
+66
+00:03:56,830 --> 00:03:58,870
+Python is open-source.
+
+67
+00:03:58,890 --> 00:04:03,070
+Hopefully, you recognize GitHub
+as being something that you've
+
+68
+00:04:03,070 --> 00:04:06,770
+used at least once for this
+class, and that's open-source as
+
+69
+00:04:06,770 --> 00:04:10,430
+well. There's a couple more in here,
+but Python and GitHub and Linux
+
+70
+00:04:10,430 --> 00:04:13,550
+are probably three of the most
+common open-source softwares.
+
+71
+00:04:14,850 --> 00:04:20,350
+We'll scroll down a little
+bit further to Mac OS here.
+
+72
+00:04:20,830 --> 00:04:27,130
+so there's a little bit of a story
+about mac os that if you're super
+
+73
+00:04:27,130 --> 00:04:31,470
+interested you can read about here
+but basically apple was founded by
+
+74
+00:04:31,470 --> 00:04:35,870
+steve jobs and steve wozniak and
+through a lot of different decisions
+
+75
+00:04:35,870 --> 00:04:41,010
+that they both made mac os came
+into existence um it's actually
+
+76
+00:04:41,010 --> 00:04:45,950
+interesting i think it was uh yeah
+steve jobs thought that microsoft was
+
+77
+00:04:45,950 --> 00:04:50,170
+gonna or was like feeling threatened
+by Microsoft he's like oh no
+
+78
+00:04:50,170 --> 00:04:53,470
+that's a really up-and-coming company
+it's better than ours what do we
+
+79
+00:04:53,470 --> 00:04:57,930
+do right and well you guys can tell
+me whether or not you think Microsoft
+
+80
+00:04:57,990 --> 00:05:01,890
+is better than macOS I don't
+have an opinion on this I've used
+
+81
+00:05:01,890 --> 00:05:07,610
+them both but then eventually he
+came back to Apple and there's this
+
+82
+00:05:07,610 --> 00:05:11,950
+whole thing about Next Incorporated
+and then eventually it just became
+
+83
+00:05:11,950 --> 00:05:16,830
+Apple's macOS operating system and
+so it's a descendant of this next
+
+84
+00:05:17,220 --> 00:05:22,770
+step or next incorporated operating
+system and it's used on most Apple
+
+85
+00:05:22,770 --> 00:05:27,310
+products so if you have an iPhone
+and Apple Watch I don't think many
+
+86
+00:05:27,310 --> 00:05:31,770
+people have iPods anymore but oh
+that's an iPad my bad I have an
+
+87
+00:05:31,770 --> 00:05:37,830
+iPod and an iPad so I guess I just
+still love my iPod Touch I think we
+
+88
+00:05:37,830 --> 00:05:43,820
+peaked when the iPod Touch was the
+pinnacle of technology so um and
+
+89
+00:05:44,410 --> 00:05:47,690
+yeah that's oh actually let's talk
+about the kernel for a second i
+
+90
+00:05:47,690 --> 00:05:53,610
+think i skipped over that so the the
+kernel is uh actually kind of like
+
+91
+00:05:53,930 --> 00:05:58,970
+the core code that runs your
+operating system and um you know what
+
+92
+00:05:58,970 --> 00:06:02,210
+you're probably thinking there's code
+that runs my code yeah it's inception
+
+93
+00:06:02,210 --> 00:06:05,330
+code i guess code that runs code
+it's a little bit complicated.
+
+94
+00:06:05,430 --> 00:06:11,170
+But if you think about that, the
+kernel is kind of like the brain of
+
+95
+00:06:11,170 --> 00:06:14,490
+the operating system. And the
+operating system is what connects your
+
+96
+00:06:14,490 --> 00:06:18,070
+hardware to your software, right?
+So there's layers to it. But almost
+
+97
+00:06:18,070 --> 00:06:23,330
+every kernel is written in C code.
+And so C is just another programming
+
+98
+00:06:23,330 --> 00:06:27,810
+language. You can take another class
+at Utah State and learn C code.
+
+99
+00:06:29,590 --> 00:06:33,330
+What's interesting is that
+Python is a derivative of C
+
+100
+00:06:33,330 --> 00:06:37,090
+code. So if you think about
+languages that are spoken,
+
+101
+00:06:37,090 --> 00:06:41,530
+you know, a lot of languages
+are derived from Latin.
+
+102
+00:06:41,530 --> 00:06:45,150
+So things like, I think,
+Italian, Portuguese, Spanish,
+
+103
+00:06:45,150 --> 00:06:49,010
+there's probably more, but we use
+a lot of Latin words to this day in
+
+104
+00:06:49,010 --> 00:06:53,090
+many of those languages. And similarly,
+you can trace a lot of coding
+
+105
+00:06:53,090 --> 00:06:58,270
+languages back to C code, C++,
+Python, a lot of others. They're all
+
+106
+00:06:58,270 --> 00:07:03,310
+derivatives of C. And what's interesting
+about that is that they all run,
+
+107
+00:07:03,310 --> 00:07:08,190
+these different languages, all run
+really well on C-based operating systems.
+
+108
+00:07:08,190 --> 00:07:11,830
+So if your kernel is written in C
+code, a lot of other applications
+
+109
+00:07:11,830 --> 00:07:15,930
+that are written in any other coding
+languages that are derived from C
+
+110
+00:07:15,930 --> 00:07:19,530
+will work really well on your computer.
+So we're going to be coding in
+
+111
+00:07:19,530 --> 00:07:23,930
+Python this semester, and it runs really
+well on these three main operating
+
+112
+00:07:23,930 --> 00:07:31,290
+systems, Linux, Windows, and mac
+os so each of them will have kind
+
+113
+00:07:31,290 --> 00:07:34,950
+of like their own differences and
+whatnot but at the end of the day the
+
+114
+00:07:34,950 --> 00:07:38,300
+code will run really well on each
+of those different operating systems
+
+115
+00:07:39,550 --> 00:07:43,210
+now some of you might be wondering
+you might also not be wondering
+
+116
+00:07:43,210 --> 00:07:45,810
+what's to stop somebody else from
+coming along and building another
+
+117
+00:07:45,810 --> 00:07:50,100
+operating system a fourth one if you
+will and really the answer is nothing
+
+118
+00:07:50,100 --> 00:07:53,390
+there could be another operating
+system that comes out tomorrow that
+
+119
+00:07:53,390 --> 00:07:57,150
+knocks all these other guys out of
+the park. But until that happens,
+
+120
+00:07:57,150 --> 00:08:00,290
+it hasn't happened yet. So that
+about wraps up this section on
+
+121
+00:08:00,300 --> 00:08:03,130
+operating systems. Please let me know
+if you have any questions. Thanks.

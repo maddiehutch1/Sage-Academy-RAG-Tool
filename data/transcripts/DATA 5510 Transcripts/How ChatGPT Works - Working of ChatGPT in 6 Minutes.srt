@@ -1,0 +1,591 @@
+1
+00:00:00,000 --> 00:00:03,090
+NARRATOR: Meet John,
+a software developer.
+
+2
+00:00:03,090 --> 00:00:05,190
+John develops a
+program, and now he
+
+3
+00:00:05,190 --> 00:00:09,120
+realizes the program is
+surrounded by a lot of bugs.
+
+4
+00:00:09,120 --> 00:00:11,880
+John starts
+exploring a solution.
+
+5
+00:00:11,880 --> 00:00:15,600
+He surfs through the internet,
+checks programmer communities.
+
+6
+00:00:15,600 --> 00:00:18,210
+Doubting every step
+of the way, John
+
+7
+00:00:18,210 --> 00:00:21,180
+feels his problem is not solved.
+
+8
+00:00:21,180 --> 00:00:25,680
+Desperate to find the solution,
+John meets his friend Adam.
+
+9
+00:00:25,680 --> 00:00:28,110
+Adam comes up with an
+idea of an artificially
+
+10
+00:00:28,110 --> 00:00:33,060
+intelligent and practical
+solution called the ChatGPT.
+
+11
+00:00:33,060 --> 00:00:35,490
+Adam says ChatGPT
+has the caliber
+
+12
+00:00:35,490 --> 00:00:37,830
+to systematically
+resolve all the bugs
+
+13
+00:00:37,830 --> 00:00:41,340
+with an elaborate explanation
+for every step it makes.
+
+14
+00:00:41,340 --> 00:00:44,010
+ChatGPT is an
+AI-trained model that
+
+15
+00:00:44,010 --> 00:00:48,480
+works in a conversational
+way, developed by OpenAI.
+
+16
+00:00:48,480 --> 00:00:51,390
+Fascinated by hearing
+this, John asks
+
+17
+00:00:51,390 --> 00:00:53,290
+Adam to explain him in detail.
+
+18
+00:00:53,290 --> 00:00:57,120
+After Adam explains
+that, GPT a.k.a.
+
+19
+00:00:57,120 --> 00:00:59,430
+generative pre-training
+transformer,
+
+20
+00:00:59,430 --> 00:01:01,210
+has come a long way.
+
+21
+00:01:01,210 --> 00:01:05,230
+Before the introduction of GPT,
+natural language processing
+
+22
+00:01:05,230 --> 00:01:09,250
+used to deal with a specific
+task with large amounts of data.
+
+23
+00:01:09,250 --> 00:01:13,240
+GPT was first released
+in 2018, which contained
+
+24
+00:01:13,240 --> 00:01:16,270
+117 million parameters.
+
+25
+00:01:16,270 --> 00:01:21,400
+GPT, GPT-2, and GPT-3,
+each one is stronger
+
+26
+00:01:21,400 --> 00:01:23,050
+than the one before it.
+
+27
+00:01:23,050 --> 00:01:26,380
+The main reason why GPT
+received little attention
+
+28
+00:01:26,380 --> 00:01:30,220
+was that it was more of an idea
+or test than a finished product.
+
+29
+00:01:30,220 --> 00:01:32,890
+But after the
+introduction of GPT-2,
+
+30
+00:01:32,890 --> 00:01:35,620
+it gained a lot of attention,
+as it could accurately
+
+31
+00:01:35,620 --> 00:01:38,110
+predict the word that
+would begin a text.
+
+32
+00:01:38,110 --> 00:01:42,400
+Then they introduced GPT-3,
+which is a strong language
+
+33
+00:01:42,400 --> 00:01:45,580
+model, achieving translation,
+question-answering,
+
+34
+00:01:45,580 --> 00:01:48,360
+and performing
+three-digit arithmetic.
+
+35
+00:01:48,360 --> 00:01:52,260
+But ChatGPT stands tall compared
+to all other achievements
+
+36
+00:01:52,260 --> 00:01:53,240
+of OpenAI.
+
+37
+00:01:53,240 --> 00:01:55,180
+So how does it work?
+
+38
+00:01:55,180 --> 00:01:57,810
+ChatGPT uses deep
+learning techniques
+
+39
+00:01:57,810 --> 00:01:59,950
+to generate human-like text.
+
+40
+00:01:59,950 --> 00:02:01,440
+It is based on the
+machine learning
+
+41
+00:02:01,440 --> 00:02:04,380
+model derived from the class
+called, the large language
+
+42
+00:02:04,380 --> 00:02:05,250
+model.
+
+43
+00:02:05,250 --> 00:02:09,150
+ChatGPT is a byproduct
+of InstructGPT.
+
+44
+00:02:09,150 --> 00:02:11,520
+InstructGPT
+introduced a strategy
+
+45
+00:02:11,520 --> 00:02:14,550
+for integrating human feedback
+into the training process
+
+46
+00:02:14,550 --> 00:02:16,560
+to match model outputs.
+
+47
+00:02:16,560 --> 00:02:21,210
+This innovative technology
+made ChatGPT exceptional.
+
+48
+00:02:21,210 --> 00:02:23,880
+It is trained on the
+massive data sets of text
+
+49
+00:02:23,880 --> 00:02:25,890
+from the internet and
+learns from the patterns
+
+50
+00:02:25,890 --> 00:02:28,570
+and relationships between
+words and phrases.
+
+51
+00:02:28,570 --> 00:02:31,800
+It responds to a prompt by
+determining the next word based
+
+52
+00:02:31,800 --> 00:02:34,560
+on the context, then
+repeats the process
+
+53
+00:02:34,560 --> 00:02:36,870
+until a stop condition is met.
+
+54
+00:02:36,870 --> 00:02:41,130
+As a result, ChatGPT can produce
+various logical responses
+
+55
+00:02:41,130 --> 00:02:43,260
+to various queries and prompts.
+
+56
+00:02:43,260 --> 00:02:46,170
+The most important
+components of ChatGPT
+
+57
+00:02:46,170 --> 00:02:49,450
+are the transformer
+model and language model.
+
+58
+00:02:49,450 --> 00:02:51,700
+Coming to the
+transformer model, it
+
+59
+00:02:51,700 --> 00:02:53,980
+is a neural network
+architecture designed
+
+60
+00:02:53,980 --> 00:02:56,020
+to process sequential data.
+
+61
+00:02:56,020 --> 00:02:58,870
+It consists of multiple
+layers of self-attention
+
+62
+00:02:58,870 --> 00:03:01,420
+and a feedforward network.
+
+63
+00:03:01,420 --> 00:03:04,540
+After the transformer model
+has processed the input,
+
+64
+00:03:04,540 --> 00:03:06,820
+a decoder generates the output.
+
+65
+00:03:06,820 --> 00:03:10,210
+The decoder uses the context
+provided by the encoder
+
+66
+00:03:10,210 --> 00:03:12,100
+to generate the response.
+
+67
+00:03:12,100 --> 00:03:14,950
+The model is trained using
+unsupervised learning
+
+68
+00:03:14,950 --> 00:03:19,300
+and fine-tuned on specific
+tasks using supervised learning.
+
+69
+00:03:19,300 --> 00:03:21,430
+For successful
+completion of tasks,
+
+70
+00:03:21,430 --> 00:03:23,800
+it needs pre-trained data.
+
+71
+00:03:23,800 --> 00:03:26,440
+The model first
+encodes the input text,
+
+72
+00:03:26,440 --> 00:03:29,150
+then converts it to a
+numerical representation,
+
+73
+00:03:29,150 --> 00:03:32,140
+which can be processed by
+the model's neural network.
+
+74
+00:03:32,140 --> 00:03:35,020
+This encoding is done using
+the embedded layer that
+
+75
+00:03:35,020 --> 00:03:36,430
+maps the work.
+
+76
+00:03:36,430 --> 00:03:38,650
+Then comes the language model.
+
+77
+00:03:38,650 --> 00:03:41,980
+ChatGPT is trained as a
+language model, trained
+
+78
+00:03:41,980 --> 00:03:44,080
+to predict the next
+word in a sequence given
+
+79
+00:03:44,080 --> 00:03:45,580
+the previous words.
+
+80
+00:03:45,580 --> 00:03:48,970
+The language model intends to
+produce rational, consistent.
+
+81
+00:03:48,970 --> 00:03:50,800
+And meaningful output.
+
+82
+00:03:50,800 --> 00:03:55,240
+The pre-trained ChatGPT can
+be tuned for a specific task.
+
+83
+00:03:55,240 --> 00:03:58,150
+So ChatGPT passes
+a fine-tuning test
+
+84
+00:03:58,150 --> 00:04:01,150
+by answering questions,
+generating text summaries,
+
+85
+00:04:01,150 --> 00:04:04,300
+or generating text in
+response to a query.
+
+86
+00:04:04,300 --> 00:04:07,750
+Overall, ChatGPT is a
+powerful language model
+
+87
+00:04:07,750 --> 00:04:09,310
+with a combination
+of techniques.
+
+88
+00:04:09,310 --> 00:04:12,100
+Like deep learning, machine
+learning, neural networks,
+
+89
+00:04:12,100 --> 00:04:14,590
+and natural language processing.
+
+90
+00:04:14,590 --> 00:04:17,079
+Can ChatGPT change
+a wide variety
+
+91
+00:04:17,079 --> 00:04:19,510
+of business tasks, John asked?
+
+92
+00:04:19,510 --> 00:04:23,410
+ChatGPT possesses the ability
+to automate content creation
+
+93
+00:04:23,410 --> 00:04:27,100
+on social media, create
+chatbot and e-commerce sites,
+
+94
+00:04:27,100 --> 00:04:30,400
+provide medical assistance by
+acting as a symptom checker,
+
+95
+00:04:30,400 --> 00:04:33,400
+write code and
+assist a developer.
+
+96
+00:04:33,400 --> 00:04:37,570
+Thus, ChatGPT can change the
+working of every industry.
+
+97
+00:04:37,570 --> 00:04:39,970
+Now, John can resolve
+any coding issue
+
+98
+00:04:39,970 --> 00:04:42,700
+without looking into
+any other resources.
+
+99
+00:04:42,700 --> 00:04:45,850
+But like any other
+technology, ChatGPT
+
+100
+00:04:45,850 --> 00:04:49,690
+comes with a few limitations
+that can be its Achilles heel.
+
+101
+00:04:49,690 --> 00:04:54,160
+ChatGPT is capable of
+developing content up to 2021.
+
+102
+00:04:54,160 --> 00:04:56,920
+It finds difficulty in
+providing logical reasoning
+
+103
+00:04:56,920 --> 00:04:58,540
+in certain situations.
+
+104
+00:04:58,540 --> 00:05:02,530
+And also, ChatGPT lags in
+translation, summarization,
+
+105
+00:05:02,530 --> 00:05:05,020
+and sometimes
+question-answering.
+
+106
+00:05:05,020 --> 00:05:09,280
+But above all, ChatGPT has
+shown remarkable ability
+
+107
+00:05:09,280 --> 00:05:13,030
+by providing accurate answers
+flawlessly in a creative way
+
+108
+00:05:13,030 --> 00:05:15,730
+in very short periods of time.
+
+109
+00:05:15,730 --> 00:05:18,940
+But before we end, I
+have a question for you.
+
+110
+00:05:18,940 --> 00:05:22,510
+Which language model
+does ChatGPT belong to?
+
+111
+00:05:22,510 --> 00:05:25,300
+1, GPT-3.
+
+112
+00:05:25,300 --> 00:05:28,390
+2, GPT-4.
+
+113
+00:05:28,390 --> 00:05:31,630
+3, GPT-2.
+
+114
+00:05:31,630 --> 00:05:35,050
+4, GPT.
+
+115
+00:05:35,050 --> 00:05:37,330
+Give the answer with
+reasoning and stand a chance
+
+116
+00:05:37,330 --> 00:05:39,100
+to win an Amazon voucher.
+
+117
+00:05:39,100 --> 00:05:41,920
+Think about it and leave the
+answer in the comment section,
+
+118
+00:05:41,920 --> 00:05:44,860
+and we will provide the
+answer in the next week.
+
+119
+00:05:44,860 --> 00:05:46,690
+We hope you enjoyed this video.
+
+120
+00:05:46,690 --> 00:05:49,940
+If you did, a thumbs up
+would be really appreciated.
+
+121
+00:05:49,940 --> 00:05:52,270
+Here's your reminder to
+subscribe to our channel
+
+122
+00:05:52,270 --> 00:05:55,150
+and click on the bell icon for
+more on the latest technologies
+
+123
+00:05:55,150 --> 00:05:56,070
+and trends.
+
+124
+00:05:56,070 --> 00:05:59,830
+Thank you for watching and stay
+tuned for more from Simplilearn.
+
+125
+00:05:59,830 --> 00:06:02,880
+[MUSIC PLAYING]

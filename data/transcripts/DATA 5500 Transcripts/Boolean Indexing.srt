@@ -1,0 +1,556 @@
+1
+00:00:01,980 --> 00:00:05,980
+Hey everybody! Welcome to yet
+another video on pandas. This content
+
+2
+00:00:05,980 --> 00:00:09,640
+video is going to go over boolean
+indexing which as it says here in
+
+3
+00:00:09,640 --> 00:00:13,060
+your textbook is one of pandas more
+powerful selection capabilities.
+
+4
+00:00:13,900 --> 00:00:17,760
+It's really great again for
+getting subsets of data and for
+
+5
+00:00:17,760 --> 00:00:21,220
+filtering things depending on what
+your conditions may be. A lot of
+
+6
+00:00:21,220 --> 00:00:25,980
+the things that are in these
+content videos about pandas is more
+
+7
+00:00:25,980 --> 00:00:30,420
+just tools that you can use for
+your specific use cases and so
+
+8
+00:00:30,420 --> 00:00:34,000
+you may not always need all of
+these tools for the specific things
+
+9
+00:00:34,000 --> 00:00:36,880
+you're doing but if the situation
+comes up in which you need
+
+10
+00:00:36,880 --> 00:00:40,220
+something like boolean indexing
+here it is for you so we're just
+
+11
+00:00:40,220 --> 00:00:43,380
+gonna go ahead and jump over
+into our code space to talk about
+
+12
+00:00:43,380 --> 00:00:51,880
+this and what we're gonna do is
+as always we are going to import
+
+13
+00:00:53,480 --> 00:00:54,400
+pandas.
+
+14
+00:00:54,600 --> 00:00:55,900
+I can't spell.
+
+15
+00:00:56,640 --> 00:00:59,620
+That's pd. And then
+we'll make a data frame.
+
+16
+00:01:02,180 --> 00:01:06,760
+At this point, I really should
+be good at typing in the titanic
+
+17
+00:01:07,280 --> 00:01:11,220
+.csv file path, but I'm not. So
+I'm just going to copy it again.
+
+18
+00:01:12,760 --> 00:01:19,780
+And we'll do df.head to see if
+everything's reading in fine.
+
+19
+00:01:21,480 --> 00:01:25,360
+and it looks like it
+is, so that's perfect.
+
+20
+00:01:25,360 --> 00:01:28,000
+Okay, so let's talk about
+boolean indexing. So
+
+21
+00:01:28,280 --> 00:01:32,550
+let's say we have a
+condition like survived and
+
+22
+00:01:33,180 --> 00:01:36,740
+we'll set that equal to
+data frame at survived
+
+23
+00:01:40,680 --> 00:01:46,480
+and we'll say survived is when the
+data frame has a value equal to one,
+
+24
+00:01:46,480 --> 00:01:50,980
+right? I don't know if uh maybe you
+recall but this um survived column
+
+25
+00:01:50,980 --> 00:01:54,960
+is a it's not a boolean it's like
+a boolean it's a binary um it's
+
+26
+00:01:54,960 --> 00:02:00,200
+either zero if they did not survive
+or one if they did survive so we know
+
+27
+00:02:00,200 --> 00:02:06,380
+that they survived if the value is
+equal to one so this is called a mask
+
+28
+00:02:07,110 --> 00:02:12,000
+and we could print out survived or
+output survive I guess and it would
+
+29
+00:02:12,000 --> 00:02:15,700
+uh return to us true or false
+right so here's we kind of get that
+
+30
+00:02:15,700 --> 00:02:19,840
+Boolean element coming in, right?
+So where we've got all these true or
+
+31
+00:02:19,840 --> 00:02:24,680
+falses, now we can do indexing based
+off of this. So instead of outputting
+
+32
+00:02:24,680 --> 00:02:27,780
+survive, what I'm going to do is
+I'm going to make a new data frame.
+
+33
+00:02:29,620 --> 00:02:30,940
+Oh, I can't spell.
+
+34
+00:02:32,520 --> 00:02:33,320
+Survivors.
+
+35
+00:02:33,840 --> 00:02:35,060
+That's not right.
+
+36
+00:02:35,400 --> 00:02:36,640
+That is right.
+
+37
+00:02:37,980 --> 00:02:41,700
+Okay, that's right. And we're going
+to say it's a new data frame based
+
+38
+00:02:41,700 --> 00:02:54,140
+off of the mask. So the mask being
+data frame at survived equals one.
+
+39
+00:02:56,050 --> 00:02:58,470
+Okay, and then if we
+were to output survivors,
+
+40
+00:03:02,720 --> 00:03:07,260
+we would expect to see a
+data frame full of only those
+
+41
+00:03:07,260 --> 00:03:11,480
+who survived the mass of
+the Titanic. These content
+
+42
+00:03:11,480 --> 00:03:14,080
+videos sure are sad. We're
+talking about a lot of death.
+
+43
+00:03:14,400 --> 00:03:19,360
+Anyways, so as you can
+see, we have 342 rows, 12
+
+44
+00:03:19,360 --> 00:03:22,840
+columns, and you should
+expect to see missing rows
+
+45
+00:03:22,840 --> 00:03:25,220
+here, right? So we've
+got row one, two, three,
+
+46
+00:03:25,340 --> 00:03:26,560
+no row zero,
+
+47
+00:03:26,580 --> 00:03:31,540
+no row four, also missing five, six,
+seven, and then we've got eight,
+
+48
+00:03:31,540 --> 00:03:38,980
+nine, and on and on, right? So this
+is a Boolean indexed data frame. We're
+
+49
+00:03:38,980 --> 00:03:44,120
+basing it off of the mask that we
+created or this Boolean condition.
+
+50
+00:03:45,860 --> 00:03:49,660
+One thing that's worth noting
+with pandas is that they
+
+51
+00:03:49,660 --> 00:04:00,140
+do not use the standard Python
+Boolean keywords, I guess.
+
+52
+00:04:00,200 --> 00:04:03,990
+Let me show you what I mean.
+So let's say we wanted to find
+
+53
+00:04:03,990 --> 00:04:08,860
+people who were rich who survived.
+So and I feel like it's somewhat
+
+54
+00:04:08,860 --> 00:04:12,000
+common knowledge that more
+people in first class survived
+
+55
+00:04:12,000 --> 00:04:14,700
+the wreck of the Titanic rather
+than people in the third class.
+
+56
+00:04:14,700 --> 00:04:18,700
+So let's make a new data frame.
+We'll call it rich survivors.
+
+57
+00:04:20,360 --> 00:04:24,570
+And we will assign that the
+value of a data frame at
+
+58
+00:04:26,090 --> 00:04:30,420
+based off of the this two
+conditions. We'll do one condition
+
+59
+00:04:30,420 --> 00:04:33,570
+and it'll be a data frame.
+We'll base it on survived.
+
+60
+00:04:37,880 --> 00:04:41,720
+and then we will also,
+oh sorry, survived equals
+
+61
+00:04:41,720 --> 00:04:45,760
+one, and then we will
+also do a condition,
+
+62
+00:04:45,760 --> 00:04:48,800
+so here's our keyword and,
+right, we're used to that,
+
+63
+00:04:49,040 --> 00:04:53,180
+and data frame at the
+
+64
+00:04:54,840 --> 00:04:59,880
+person class column,
+equaling also one for first
+
+65
+00:04:59,880 --> 00:05:02,680
+class, okay, and then let's
+just output rich survivors.
+
+66
+00:05:06,460 --> 00:05:10,520
+I forgot. Okay, here we go. Okay,
+so we're going to get an error here.
+
+67
+00:05:10,940 --> 00:05:14,900
+It says the truth value of
+a series is ambiguous. Okay,
+
+68
+00:05:14,900 --> 00:05:19,700
+so what we need to do is
+change this and to an ampersand
+
+69
+00:05:20,710 --> 00:05:23,000
+and then it will work for us.
+
+70
+00:05:23,720 --> 00:05:29,300
+There we go. So these are our rich
+survivors. Notice how the number
+
+71
+00:05:29,300 --> 00:05:34,460
+is nearly half of, actually I'm bad
+at math, that's a little less than
+
+72
+00:05:34,460 --> 00:05:39,420
+half of our survivors were also
+in first class. So that gives us a
+
+73
+00:05:39,420 --> 00:05:43,340
+little bit of insight into our data
+here. Okay, so we use ampersand.
+
+74
+00:05:44,380 --> 00:05:49,900
+So yeah, it's worth noting that
+pandas uses ampersand for and,
+
+75
+00:05:52,240 --> 00:06:00,220
+type for or and um what else we got
+
+76
+00:06:01,600 --> 00:06:07,410
+oh the the I don't know what this
+is called so the tilde or not all
+
+77
+00:06:07,460 --> 00:06:13,200
+right so let's do one more example
+here let's find out if our passengers
+
+78
+00:06:13,200 --> 00:06:22,160
+um were expensive or in uh first
+class So if they paid a certain amount
+
+79
+00:06:22,160 --> 00:06:31,260
+for their fare or not, so let's say
+expensive or first, that'll be a
+
+80
+00:06:31,260 --> 00:06:41,300
+data frame based on the conditions,
+data frame, fare. let's say if they
+
+81
+00:06:41,300 --> 00:06:48,640
+paid more than $200 or whatever
+amount of payment they used. We'll use
+
+82
+00:06:48,640 --> 00:06:58,060
+the pipe there for OR and then we'll
+say data frame P class equals 1.
+
+83
+00:06:58,860 --> 00:06:59,940
+Okay,
+
+84
+00:07:00,160 --> 00:07:02,760
+so then let's output expensive or first.
+
+85
+00:07:03,420 --> 00:07:04,500
+Oops,
+
+86
+00:07:04,730 --> 00:07:06,580
+where's my keyboard? There we go.
+
+87
+00:07:06,840 --> 00:07:08,600
+Expensive or first.
+
+88
+00:07:08,740 --> 00:07:12,180
+And if we run this cute little
+code cell, we would expect to see
+
+89
+00:07:12,180 --> 00:07:17,000
+more than the people who were just
+in first class and survived, because
+
+90
+00:07:17,000 --> 00:07:19,140
+we're not looking at survived
+anymore. We're looking at if they
+
+91
+00:07:19,140 --> 00:07:22,280
+paid a lot for their fare or if
+they were in first class. So let's
+
+92
+00:07:22,280 --> 00:07:26,490
+take our very first entry here on
+the list. It's Mrs. John Bradley
+
+93
+00:07:27,080 --> 00:07:32,960
+something, and she did not pay more
+than $200 for her fare, but she
+
+94
+00:07:32,960 --> 00:07:36,540
+was in first class. So we see that
+our condition hopefully worked.
+
+95
+00:07:36,620 --> 00:07:40,400
+I don't see any of these being
+greater than 200. So I'm looking at
+
+96
+00:07:40,400 --> 00:07:43,200
+the class and they are all reporting
+first class, which is good.
+
+97
+00:07:44,620 --> 00:07:49,340
+Okay, there is an alternative
+that we can use to kind of index
+
+98
+00:07:49,340 --> 00:07:57,340
+through our data frames. And
+it's called is in, which is kind
+
+99
+00:07:57,340 --> 00:08:02,220
+of similar to in, let's see,
+in a list if we're looking for.
+
+100
+00:08:03,320 --> 00:08:05,900
+Yeah, I think that's the method is in.
+
+101
+00:08:05,900 --> 00:08:08,520
+So let's say we're looking at ports now.
+
+102
+00:08:09,050 --> 00:08:12,550
+Ports is equal to a data frame
+based off the data frame embarked.
+
+103
+00:08:18,110 --> 00:08:26,030
+We'll say we want them from
+embarked if they embarked from
+
+104
+00:08:28,670 --> 00:08:32,630
+C or Q, which I can't
+remember what those are.
+
+105
+00:08:33,040 --> 00:08:34,550
+I know they're in here.
+
+106
+00:08:35,310 --> 00:08:40,790
+yeah it was like it's the cities
+that they embarked from um can't
+
+107
+00:08:40,790 --> 00:08:44,300
+remember what they were I want to
+say that one of them was scotland
+
+108
+00:08:45,130 --> 00:08:47,730
+but that doesn't actually sound
+right and it's been a long time
+
+109
+00:08:47,730 --> 00:08:52,070
+since I've seen the titanic so let's
+output ports and see what we got
+
+110
+00:08:53,130 --> 00:08:57,090
+so we should only be getting
+the passengers who embarked from
+
+111
+00:08:57,090 --> 00:09:01,790
+either the c or the q port um I'm
+going to look that up so that I
+
+112
+00:09:01,790 --> 00:09:05,570
+know what it is for the next
+content video. But that is another
+
+113
+00:09:05,570 --> 00:09:09,910
+way that you could somewhat
+Boolean index your data frame. It's
+
+114
+00:09:09,910 --> 00:09:13,030
+just another way to look up
+specific values. So that's going
+
+115
+00:09:13,030 --> 00:09:15,910
+to be everything for this content
+video. Thank you for watching.

@@ -1,0 +1,905 @@
+1
+00:00:02,298 --> 00:00:04,840
+INSTRUCTOR: Hello, everyone,
+and welcome to the content video
+
+2
+00:00:04,840 --> 00:00:07,360
+for creating your
+own GitHub repo
+
+3
+00:00:07,360 --> 00:00:09,260
+for the homework and
+final project code,
+
+4
+00:00:09,260 --> 00:00:13,960
+and how to add new code and,
+excuse me, commit it and push it
+
+5
+00:00:13,960 --> 00:00:15,600
+to your repo.
+
+6
+00:00:15,600 --> 00:00:18,120
+OK, so this video assumes
+that you've already
+
+7
+00:00:18,120 --> 00:00:21,560
+set up your VS Code web
+client on an AWS EC2,
+
+8
+00:00:21,560 --> 00:00:26,267
+and that you've already pulled
+down the code for this course,
+
+9
+00:00:26,267 --> 00:00:27,100
+which is right here.
+
+10
+00:00:27,100 --> 00:00:28,850
+If you can see where
+my mouse is hovering,
+
+11
+00:00:28,850 --> 00:00:31,160
+the data 5500, spring 2025.
+
+12
+00:00:31,160 --> 00:00:33,240
+So let me just clarify
+something really quick
+
+13
+00:00:33,240 --> 00:00:35,482
+before we add
+another GitHub repo.
+
+14
+00:00:35,482 --> 00:00:36,940
+There's a little
+button right here,
+
+15
+00:00:36,940 --> 00:00:41,320
+source control, which will show
+you all of your GitHub repos.
+
+16
+00:00:41,320 --> 00:00:43,240
+And it's showing you--
+
+17
+00:00:43,240 --> 00:00:44,560
+where is this one.
+
+18
+00:00:44,560 --> 00:00:45,060
+Hang on.
+
+19
+00:00:45,060 --> 00:00:47,580
+Let me collapse right here.
+
+20
+00:00:51,080 --> 00:00:53,240
+Well, anyway, the
+two repos are--
+
+21
+00:00:53,240 --> 00:00:56,780
+there's one GitHub repo,
+data 5500, spring 2025.
+
+22
+00:00:56,780 --> 00:00:59,280
+That's the code
+that you pull down
+
+23
+00:00:59,280 --> 00:01:02,095
+that contains all of the starter
+code for the entire semester.
+
+24
+00:01:02,095 --> 00:01:03,720
+There's also another
+little GitHub repo
+
+25
+00:01:03,720 --> 00:01:06,017
+that you use, this EC2 scripts.
+
+26
+00:01:06,017 --> 00:01:07,600
+That's where you got
+the setup scripts
+
+27
+00:01:07,600 --> 00:01:10,000
+to install all the libraries
+you needed on here.
+
+28
+00:01:10,000 --> 00:01:10,500
+All right.
+
+29
+00:01:10,500 --> 00:01:12,680
+So those two little GitHub
+repos are all the code
+
+30
+00:01:12,680 --> 00:01:15,800
+you got for this course.
+
+31
+00:01:15,800 --> 00:01:17,960
+Now, I'm talking
+about another GitHub
+
+32
+00:01:17,960 --> 00:01:19,443
+repo that's going to be yours.
+
+33
+00:01:19,443 --> 00:01:21,360
+So that'll be all of
+your code, your homework,
+
+34
+00:01:21,360 --> 00:01:24,260
+your final project,
+anything like that.
+
+35
+00:01:24,260 --> 00:01:26,280
+The day to day code that
+you write to turn in
+
+36
+00:01:26,280 --> 00:01:27,720
+will go into this repo.
+
+37
+00:01:27,720 --> 00:01:28,220
+All right.
+
+38
+00:01:28,220 --> 00:01:29,680
+So that's what
+I'm talking about.
+
+39
+00:01:29,680 --> 00:01:34,380
+So what I'm going
+to do now is kind
+
+40
+00:01:34,380 --> 00:01:37,760
+of walk it through-- so I have
+a GitHub repo set up right now.
+
+41
+00:01:37,760 --> 00:01:40,240
+I'm logged in as a GitHub user.
+
+42
+00:01:40,240 --> 00:01:42,480
+As a teacher right
+now, I also logged
+
+43
+00:01:42,480 --> 00:01:45,320
+in on in my Firefox
+browser as a student
+
+44
+00:01:45,320 --> 00:01:47,280
+account to simulate
+what you guys would see
+
+45
+00:01:47,280 --> 00:01:48,760
+and how you would do it.
+
+46
+00:01:48,760 --> 00:01:49,260
+All right.
+
+47
+00:01:49,260 --> 00:01:50,420
+So here, we'll do it together.
+
+48
+00:01:50,420 --> 00:01:52,400
+So I'm going to start in
+my Ubuntu folder right
+
+49
+00:01:52,400 --> 00:02:03,880
+here, and create a new folder,
+and call it data5500_mycode.
+
+50
+00:02:03,880 --> 00:02:06,660
+So now that I've got
+data 5500 my code,
+
+51
+00:02:06,660 --> 00:02:09,405
+I'm going to add another
+folder there called homework 1.
+
+52
+00:02:09,405 --> 00:02:11,030
+And inside homework
+1, I'm going to add
+
+53
+00:02:11,030 --> 00:02:14,350
+a new file called homework1.py.
+
+54
+00:02:14,350 --> 00:02:16,690
+And then I'm going to add
+there just a simple print,
+
+55
+00:02:16,690 --> 00:02:17,830
+hello world.
+
+56
+00:02:17,830 --> 00:02:22,810
+Yours will have all the homework
+for your actual homework.
+
+57
+00:02:22,810 --> 00:02:23,970
+Mine is just a test.
+
+58
+00:02:23,970 --> 00:02:27,530
+So all right, now I've got my
+code that I want to submit.
+
+59
+00:02:27,530 --> 00:02:31,870
+So what I'm going to do right
+now is this data5500_mycode,
+
+60
+00:02:31,870 --> 00:02:33,590
+I'm going to turn that
+into a GitHub repo
+
+61
+00:02:33,590 --> 00:02:37,370
+on my student GitHub account.
+
+62
+00:02:37,370 --> 00:02:39,030
+And that's where
+all-- everything
+
+63
+00:02:39,030 --> 00:02:41,530
+of my homework and final
+project is going to get pushed.
+
+64
+00:02:41,530 --> 00:02:44,150
+So let me show you
+how to do that.
+
+65
+00:02:44,150 --> 00:02:45,690
+So this is where
+you would log in.
+
+66
+00:02:45,690 --> 00:02:47,648
+And if you don't already
+have a GitHub account,
+
+67
+00:02:47,648 --> 00:02:49,430
+you'll need to create
+a GitHub account.
+
+68
+00:02:49,430 --> 00:02:51,470
+Go to your repositories
+page, and then create
+
+69
+00:02:51,470 --> 00:02:56,570
+a new one to match that folder
+we just created in VS Code.
+
+70
+00:02:56,570 --> 00:03:03,870
+So mine's going to be
+called data 5500 My code.
+
+71
+00:03:03,870 --> 00:03:05,330
+This one's going to be private.
+
+72
+00:03:05,330 --> 00:03:07,980
+And you're going to
+share collaborator access
+
+73
+00:03:07,980 --> 00:03:10,230
+with the grader so that the
+grader can grade your code
+
+74
+00:03:10,230 --> 00:03:13,450
+and the instructor can
+look at it and grade it.
+
+75
+00:03:13,450 --> 00:03:15,530
+Be sure to not
+add a readme file.
+
+76
+00:03:15,530 --> 00:03:16,450
+Leave that unchecked.
+
+77
+00:03:16,450 --> 00:03:17,158
+That's important.
+
+78
+00:03:17,158 --> 00:03:19,337
+Because if it's
+unchecked, then GitHub
+
+79
+00:03:19,337 --> 00:03:21,670
+will give you the steps to
+make it really easy to set up
+
+80
+00:03:21,670 --> 00:03:22,490
+a GitHub repo.
+
+81
+00:03:22,490 --> 00:03:24,330
+If you don't, It'll--
+you can still do it.
+
+82
+00:03:24,330 --> 00:03:26,810
+It's just way easier
+leave it unchecked.
+
+83
+00:03:26,810 --> 00:03:27,490
+All right.
+
+84
+00:03:27,490 --> 00:03:28,712
+So create a repository.
+
+85
+00:03:28,712 --> 00:03:30,170
+Now, it'll take
+you to this screen.
+
+86
+00:03:30,170 --> 00:03:31,670
+So check this out right here.
+
+87
+00:03:31,670 --> 00:03:35,630
+All of these commands right
+here create a repository
+
+88
+00:03:35,630 --> 00:03:36,870
+from the command line.
+
+89
+00:03:36,870 --> 00:03:40,110
+If you just copy
+everything right there,
+
+90
+00:03:40,110 --> 00:03:43,590
+and then go back to
+your VS Code web client,
+
+91
+00:03:43,590 --> 00:03:45,830
+and then CD into that
+folder we just created,
+
+92
+00:03:45,830 --> 00:03:48,182
+this data 5500 my
+code, so check out
+
+93
+00:03:48,182 --> 00:03:49,390
+right there in that terminal.
+
+94
+00:03:49,390 --> 00:03:50,330
+I'm in the folder now.
+
+95
+00:03:50,330 --> 00:03:52,550
+Home Ubuntu data 5500 my code.
+
+96
+00:03:52,550 --> 00:03:57,130
+Now, I can simply paste
+all of that repo setup.
+
+97
+00:03:57,130 --> 00:03:57,950
+Hit Enter.
+
+98
+00:03:57,950 --> 00:04:00,430
+And what it's going to do is
+it'll take care of everything
+
+99
+00:04:00,430 --> 00:04:01,930
+for you after you just log in.
+
+100
+00:04:01,930 --> 00:04:04,630
+So I'm going to hit allow right
+there, continue to GitHub,
+
+101
+00:04:04,630 --> 00:04:06,550
+open it up.
+
+102
+00:04:06,550 --> 00:04:09,070
+Doing the last thing
+I'll need to make
+
+103
+00:04:09,070 --> 00:04:11,950
+sure you're signed in your
+student account this time.
+
+104
+00:04:11,950 --> 00:04:12,520
+I have three.
+
+105
+00:04:12,520 --> 00:04:13,770
+You'll probably just have one.
+
+106
+00:04:13,770 --> 00:04:14,940
+And the last little
+thing I forgot
+
+107
+00:04:14,940 --> 00:04:16,982
+is that when you go-- in
+your VS Code web client,
+
+108
+00:04:16,982 --> 00:04:19,311
+they're going to give you a
+little code here to log in.
+
+109
+00:04:19,311 --> 00:04:20,019
+So look for that.
+
+110
+00:04:20,019 --> 00:04:21,320
+Once it was a pop
+up in the middle,
+
+111
+00:04:21,320 --> 00:04:23,278
+it's usually a pop up in
+the bottom right here.
+
+112
+00:04:23,278 --> 00:04:24,820
+So I copied that code.
+
+113
+00:04:24,820 --> 00:04:29,420
+Go over here, paste
+that in, Enter.
+
+114
+00:04:29,420 --> 00:04:31,380
+And now, we're authorized.
+
+115
+00:04:31,380 --> 00:04:32,200
+Great.
+
+116
+00:04:32,200 --> 00:04:33,580
+And so when I come
+back in here, check out
+
+117
+00:04:33,580 --> 00:04:34,820
+my output in my terminal now.
+
+118
+00:04:34,820 --> 00:04:36,420
+It's saying everything's set up.
+
+119
+00:04:36,420 --> 00:04:37,440
+That looks good.
+
+120
+00:04:37,440 --> 00:04:42,420
+And then we go to hit
+Refresh on this repo now.
+
+121
+00:04:42,420 --> 00:04:44,740
+And you can see, it's
+got my readme file there
+
+122
+00:04:44,740 --> 00:04:46,300
+and my repo set up.
+
+123
+00:04:46,300 --> 00:04:46,800
+All right.
+
+124
+00:04:46,800 --> 00:04:48,040
+But notice, my code's
+not in there yet.
+
+125
+00:04:48,040 --> 00:04:49,580
+So let's add that right now.
+
+126
+00:04:49,580 --> 00:04:52,443
+So day to day, when you
+are working on homework
+
+127
+00:04:52,443 --> 00:04:54,860
+and adding things to your
+homework 1 then homework 2, then
+
+128
+00:04:54,860 --> 00:04:57,925
+homework 3 folders, when
+you want to actually push it
+
+129
+00:04:57,925 --> 00:05:00,300
+to your repo, so the graders
+can grade it, what you'll do
+
+130
+00:05:00,300 --> 00:05:03,340
+is you'll go into your terminal,
+and you'll go into that folder
+
+131
+00:05:03,340 --> 00:05:03,840
+again.
+
+132
+00:05:03,840 --> 00:05:06,000
+And then these are the
+three commands you want.
+
+133
+00:05:06,000 --> 00:05:06,820
+You're going to-- these
+are the ones you're
+
+134
+00:05:06,820 --> 00:05:07,600
+going to be doing often.
+
+135
+00:05:07,600 --> 00:05:09,020
+So try and memorize these ones.
+
+136
+00:05:09,020 --> 00:05:10,780
+You're going to add
+everything that you've
+
+137
+00:05:10,780 --> 00:05:12,160
+updated to your repo.
+
+138
+00:05:12,160 --> 00:05:14,163
+And the way to do
+that is Git add dot.
+
+139
+00:05:14,163 --> 00:05:16,080
+And dot just stands for
+the current directory,
+
+140
+00:05:16,080 --> 00:05:17,413
+and then it will add everything.
+
+141
+00:05:17,413 --> 00:05:21,060
+So when I hit Enter,
+then do a Git commit.
+
+142
+00:05:21,060 --> 00:05:24,420
+Give it a dash M for a message,
+and then say homework 1 folder
+
+143
+00:05:24,420 --> 00:05:27,220
+and files or the message
+can be whatever you want.
+
+144
+00:05:27,220 --> 00:05:33,320
+And then notice now, it's
+updated the file I've added.
+
+145
+00:05:33,320 --> 00:05:36,940
+And then last thing you
+need to do is Git push.
+
+146
+00:05:36,940 --> 00:05:37,800
+And there we go.
+
+147
+00:05:37,800 --> 00:05:42,100
+So now, when I go back to
+my repo, hit Refresh again.
+
+148
+00:05:42,100 --> 00:05:46,380
+I've got my homework folder and
+my homework1.py right there.
+
+149
+00:05:46,380 --> 00:05:47,200
+And that's it.
+
+150
+00:05:47,200 --> 00:05:49,120
+So then same thing.
+
+151
+00:05:49,120 --> 00:05:54,460
+Next time you go in here, you'll
+add a new folder, homework 2,
+
+152
+00:05:54,460 --> 00:05:55,560
+and then homework 2.
+
+153
+00:05:55,560 --> 00:05:58,660
+Inside that folder, you're going
+to have a new file, homework2.py
+
+154
+00:05:58,660 --> 00:06:00,837
+or whatever the files named.
+
+155
+00:06:00,837 --> 00:06:02,420
+Then you're going
+to add code in here.
+
+156
+00:06:02,420 --> 00:06:03,837
+I'll do something
+for real estate.
+
+157
+00:06:03,837 --> 00:06:06,100
+Let's do for I in range.
+
+158
+00:06:06,100 --> 00:06:07,540
+100.
+
+159
+00:06:07,540 --> 00:06:10,410
+Print.
+
+160
+00:06:10,410 --> 00:06:13,020
+I love Python.
+
+161
+00:06:13,020 --> 00:06:14,238
+Give that a run.
+
+162
+00:06:14,238 --> 00:06:14,780
+There you go.
+
+163
+00:06:14,780 --> 00:06:15,540
+I love python.
+
+164
+00:06:15,540 --> 00:06:16,540
+That's working.
+
+165
+00:06:16,540 --> 00:06:19,860
+Now, do the Git
+add dot, Git commit
+
+166
+00:06:19,860 --> 00:06:22,610
+with the dash M, homework 2.
+
+167
+00:06:22,610 --> 00:06:25,450
+And a Git push.
+
+168
+00:06:25,450 --> 00:06:25,950
+Pushed.
+
+169
+00:06:25,950 --> 00:06:28,530
+Go back to my repo.
+
+170
+00:06:28,530 --> 00:06:31,050
+Hit Refresh.
+
+171
+00:06:31,050 --> 00:06:32,890
+And there, you can
+see my homework 2.
+
+172
+00:06:32,890 --> 00:06:33,390
+Awesome.
+
+173
+00:06:33,390 --> 00:06:35,057
+And the last thing
+I'm going to show you
+
+174
+00:06:35,057 --> 00:06:36,202
+is how to add the grader.
+
+175
+00:06:36,202 --> 00:06:38,910
+So the graders are going to need
+to be added, and the instructor.
+
+176
+00:06:38,910 --> 00:06:41,890
+So once you're in your
+repo, click on Settings.
+
+177
+00:06:41,890 --> 00:06:43,950
+Then in the top left,
+you'll see collaborators.
+
+178
+00:06:43,950 --> 00:06:46,570
+And then you're going to add
+people and add the username.
+
+179
+00:06:46,570 --> 00:06:48,870
+So here, I'm logged in
+as my student account.
+
+180
+00:06:48,870 --> 00:06:51,010
+So I'll just add the
+teacher account I have.
+
+181
+00:06:51,010 --> 00:06:52,510
+And then you can
+see it right there.
+
+182
+00:06:52,510 --> 00:06:54,010
+So whatever the
+username is that you
+
+183
+00:06:54,010 --> 00:06:55,290
+want to add as a collaborator.
+
+184
+00:06:55,290 --> 00:06:56,353
+Select that.
+
+185
+00:06:56,353 --> 00:06:57,270
+They'll get an invite.
+
+186
+00:06:57,270 --> 00:06:59,853
+And then they can come in here
+and look at your code and grade
+
+187
+00:06:59,853 --> 00:07:01,230
+your homework.
+
+188
+00:07:01,230 --> 00:07:01,730
+OK.
+
+189
+00:07:01,730 --> 00:07:06,130
+So that concludes this video on
+how to set up your own GitHub
+
+190
+00:07:06,130 --> 00:07:08,630
+repo to push your homework
+code and things like that.
+
+191
+00:07:08,630 --> 00:07:11,750
+So once you've done all
+that, then you're good to go.
+
+192
+00:07:11,750 --> 00:07:13,698
+You can start creating
+files, and folders,
+
+193
+00:07:13,698 --> 00:07:15,990
+and run whatever you want,
+and build whatever you want.
+
+194
+00:07:15,990 --> 00:07:19,430
+And in those three commands, Git
+add, Git commit and Git push,
+
+195
+00:07:19,430 --> 00:07:22,875
+you can just push it to your
+repo whenever you need to.
+
+196
+00:07:22,875 --> 00:07:23,750
+All right, that's it.
+
+197
+00:07:23,750 --> 00:07:25,500
+And thanks for watching.

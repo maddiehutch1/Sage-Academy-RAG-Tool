@@ -1,0 +1,497 @@
+1
+00:00:02,870 --> 00:00:05,330
+Hey everybody, welcome to the
+content video going over section
+
+2
+00:00:05,330 --> 00:00:10,710
+8.9 of the textbook Splitting
+and Joining Strings. So this
+
+3
+00:00:10,710 --> 00:00:14,750
+is a super helpful chapter
+because it teaches us how we can
+
+4
+00:00:15,170 --> 00:00:21,310
+take a string and turn it into some,
+I guess, substrings, which we talked
+
+5
+00:00:21,310 --> 00:00:24,550
+about in a different content video
+searching for substrings. This
+
+6
+00:00:24,550 --> 00:00:29,530
+actually allows us to take a string
+value and break it up into individual
+
+7
+00:00:29,530 --> 00:00:32,990
+pieces that we might be able to
+manipulate little things within it.
+
+8
+00:00:32,990 --> 00:00:37,210
+And this becomes especially useful
+when we're working with files and with
+
+9
+00:00:37,210 --> 00:00:41,310
+the contents of a file because files
+by default read into our Python
+
+10
+00:00:41,310 --> 00:00:47,130
+code as string values. And so splitting
+strings and joining strings back
+
+11
+00:00:47,130 --> 00:00:51,430
+together becomes extremely useful
+when we're working with files. So
+
+12
+00:00:51,430 --> 00:00:54,690
+let me just jump right over into our
+code space and we'll go ahead and
+
+13
+00:00:54,690 --> 00:00:58,150
+we'll do some examples to teach you
+kind of what we're looking at here.
+
+14
+00:01:04,380 --> 00:01:08,260
+Okay, so we'll do an example
+first of splitting a string.
+
+15
+00:01:08,260 --> 00:01:16,480
+So let's say we have a string
+of data that looks like this.
+
+16
+00:01:17,200 --> 00:01:23,120
+It's just going to be 1,
+2, 3, 4, 5, 6, 7, 8, 9.
+
+17
+00:01:23,760 --> 00:01:27,560
+And then what I want to do is
+I want to split each of those
+
+18
+00:01:27,560 --> 00:01:31,220
+numbers into individual
+elements so that I can actually
+
+19
+00:01:31,220 --> 00:01:34,660
+treat them as integers, which
+they kind of are. I mean, they're
+
+20
+00:01:34,660 --> 00:01:36,740
+strings right now, but I want
+to treat them as integers.
+
+21
+00:01:36,910 --> 00:01:39,980
+So I would create some kind of a variable
+
+22
+00:01:39,980 --> 00:01:42,340
+to store the results of my split.
+
+23
+00:01:42,660 --> 00:01:47,660
+When you split a string, it
+will split your values up into a
+
+24
+00:01:47,660 --> 00:01:51,900
+list. And so I'm going to name
+a string nums, or sorry, I'm
+
+25
+00:01:51,900 --> 00:01:55,050
+going to name this list. I'm going
+to store the results in nums.
+
+26
+00:01:55,050 --> 00:01:57,580
+And I'm going to set it equal to or
+
+27
+00:01:57,580 --> 00:02:00,560
+assign the value of datastring.split.
+
+28
+00:02:02,380 --> 00:02:05,400
+and then I'm actually going
+to specifically indicate
+
+29
+00:02:05,400 --> 00:02:09,460
+that I wanted to split
+my values on the comma
+
+30
+00:02:09,460 --> 00:02:13,980
+and then let's just print
+out my numbers list.
+
+31
+00:02:19,810 --> 00:02:24,690
+Okay so check it out we have a list
+that is full of all of the numbers
+
+32
+00:02:24,690 --> 00:02:27,700
+but you know what's interesting
+about each of these numbers one
+
+33
+00:02:27,910 --> 00:02:31,690
+is on its own there's no white
+space but all of the other numbers
+
+34
+00:02:31,690 --> 00:02:35,970
+actually have white space attached to
+them left white space right because
+
+35
+00:02:35,970 --> 00:02:42,770
+the the um the split took the string
+as it was and after every comma
+
+36
+00:02:42,770 --> 00:02:46,210
+it would take everything coming
+after that and it would save that
+
+37
+00:02:46,210 --> 00:02:51,630
+as its own value check out what
+happens when we split instead on the
+
+38
+00:02:51,630 --> 00:02:59,670
+space so we get one comma two
+comma, three comma, four comma, etc.
+
+39
+00:03:01,650 --> 00:03:06,170
+It's interesting to designate this
+because whatever we put into the
+
+40
+00:03:06,170 --> 00:03:10,710
+the value for the split function is
+what it's going to cut our string
+
+41
+00:03:10,710 --> 00:03:15,470
+up into based on that. It also is
+the thing that gets removed from
+
+42
+00:03:15,470 --> 00:03:19,270
+the string when it gets split.
+So then if you wanted to convert
+
+43
+00:03:19,270 --> 00:03:22,730
+these numbers into integers you
+could. You would also probably want to
+
+44
+00:03:22,730 --> 00:03:24,890
+strip the white space off of them
+if you were just kind of treat
+
+45
+00:03:24,890 --> 00:03:29,630
+them as I don't not just string
+values. So that's how you do a split.
+
+46
+00:03:29,710 --> 00:03:31,510
+Let's talk about a join.
+
+47
+00:03:38,220 --> 00:03:40,700
+So a join is exactly the
+opposite. It takes something
+
+48
+00:03:40,700 --> 00:03:44,580
+iterable like a list and it
+combines it, concatenates it back
+
+49
+00:03:44,580 --> 00:03:52,340
+together. So let's say we
+wanted to create a new string
+
+50
+00:03:53,780 --> 00:03:57,720
+and we'll assign it equal
+to the value, or we'll
+
+51
+00:03:57,720 --> 00:04:02,220
+assign it the value of,
+um let's put a space back
+
+52
+00:04:02,220 --> 00:04:08,520
+in there between our
+elements dot join nums oops
+
+53
+00:04:10,180 --> 00:04:13,080
+and if you're wondering where I'm
+coming up with any of this this is
+
+54
+00:04:13,080 --> 00:04:17,680
+just the syntax for the split and
+the syntax for the join so split it
+
+55
+00:04:17,680 --> 00:04:23,000
+it's kind of like a function that
+operates on a list whereas the join
+
+56
+00:04:23,000 --> 00:04:27,660
+function or the join method um has
+weird syntax where it wants you to
+
+57
+00:04:27,660 --> 00:04:33,160
+put the character that you're going
+to join your list back together on
+
+58
+00:04:33,160 --> 00:04:36,740
+first and then you do a dot join
+and put the list in so it's kind of
+
+59
+00:04:36,740 --> 00:04:40,340
+they literally like work backwards
+from each other so new string so
+
+60
+00:04:40,340 --> 00:04:48,290
+let's print out our new string and
+we should see it looking pretty much
+
+61
+00:04:48,290 --> 00:04:51,300
+exactly the same as we had it in
+the first place which it does look
+
+62
+00:04:51,300 --> 00:04:58,180
+like that so that is a uh split and
+a join now one more thing I'm going
+
+63
+00:04:58,180 --> 00:05:05,060
+to show you with the join is that
+we could also do this, but we could
+
+64
+00:05:05,460 --> 00:05:11,540
+designate a different character
+in between our join. So for
+
+65
+00:05:11,540 --> 00:05:14,480
+example, if I was to put a
+semicolon, now we have a one comma
+
+66
+00:05:14,480 --> 00:05:18,420
+semicolon, two comma semicolon,
+three comma semicolon, etc,
+
+67
+00:05:18,420 --> 00:05:21,660
+etc. So whatever we put in our
+quotation marks is going to be
+
+68
+00:05:21,660 --> 00:05:25,440
+inserted into our string as
+it's concatenated back together.
+
+69
+00:05:26,900 --> 00:05:29,060
+Let's do an example
+with list comprehension.
+
+70
+00:05:32,980 --> 00:05:35,660
+So if you remember what list
+comprehension is, it's kind of doing
+
+71
+00:05:35,660 --> 00:05:39,540
+all the steps of a list in one
+line of code. So maybe normally we
+
+72
+00:05:39,540 --> 00:05:48,130
+do lists equals empty list and
+then we'd say for I in range 100
+
+73
+00:05:51,140 --> 00:05:56,320
+list dot append I and that's great
+and then we'd have a list of 100
+
+74
+00:05:56,320 --> 00:05:59,760
+numbers but we're not going to
+do that because that is the old
+
+75
+00:05:59,760 --> 00:06:05,820
+way of doing lists we're going to
+do a list comprehension um actually
+
+76
+00:06:05,820 --> 00:06:08,740
+we do need a list first so we'll
+keep that we'll keep that So,
+
+77
+00:06:09,400 --> 00:06:10,760
+let's find the list.
+
+78
+00:06:14,900 --> 00:06:17,160
+Perfect. Okay, list of 100 numbers.
+
+79
+00:06:19,120 --> 00:06:22,830
+What we're going to do is we
+are going to join all those
+
+80
+00:06:22,830 --> 00:06:25,870
+numbers together. So, but we'll
+do it with a list comprehension.
+
+81
+00:06:25,940 --> 00:06:32,920
+So, we'll say string list,
+assign at the value of a join,
+
+82
+00:06:32,980 --> 00:06:36,080
+comma, and I'm going to
+throw a space after my comma.
+
+83
+00:06:37,080 --> 00:06:42,860
+just because I think that that
+looks good uh comma space dot join
+
+84
+00:06:42,870 --> 00:06:48,940
+and then here's our list
+comprehension ready um actually we
+
+85
+00:06:48,940 --> 00:06:51,760
+don't need this because we are
+doing it in the list comprehension
+
+86
+00:06:53,100 --> 00:07:06,080
+okay we'll say string I or
+I in range 100 and that will
+
+87
+00:07:06,080 --> 00:07:08,980
+be the exact same list as
+we had before it has to be
+
+88
+00:07:08,980 --> 00:07:12,940
+a string because the join
+function only can operate on
+
+89
+00:07:12,940 --> 00:07:16,900
+lists that are full of
+strings or any iterable item.
+
+90
+00:07:17,060 --> 00:07:22,800
+It just has to be a string value.
+So if I was to print my string list,
+
+91
+00:07:25,610 --> 00:07:39,940
+we would expect to see a big long
+string that is all the numbers
+
+92
+00:07:39,940 --> 00:07:45,560
+from 0 to 99 with a comma space
+between each of them now again this
+
+93
+00:07:45,560 --> 00:07:49,460
+becomes really really handy when
+we're working with uh files especially
+
+94
+00:07:49,460 --> 00:07:55,420
+files like comma separated uh value
+files or csv files because all of
+
+95
+00:07:55,420 --> 00:07:59,660
+our data usually comes in in those
+files separated by a comma right
+
+96
+00:07:59,660 --> 00:08:04,870
+so now we know how to isolate
+individual items from a csv and we
+
+97
+00:08:04,870 --> 00:08:08,720
+hypothetically know how to put them
+back together in a CSV format and write
+
+98
+00:08:08,720 --> 00:08:12,920
+new data to a file. So that's going
+to conclude this content video.
+
+99
+00:08:12,920 --> 00:08:15,300
+But just think about the
+bigger picture of how all
+
+100
+00:08:15,300 --> 00:08:17,220
+these concepts are kind
+of going to fit together,
+
+101
+00:08:17,220 --> 00:08:19,860
+and that would be good.
+So thanks for watching.

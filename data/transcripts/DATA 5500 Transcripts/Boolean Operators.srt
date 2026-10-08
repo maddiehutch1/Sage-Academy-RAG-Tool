@@ -1,0 +1,657 @@
+1
+00:00:02,910 --> 00:00:05,330
+Hey everybody, welcome to the
+content video going over 3
+
+2
+00:00:05,330 --> 00:00:10,510
+.16 of your textbook, Boolean
+operators and, or, and not.
+
+3
+00:00:10,510 --> 00:00:12,730
+So there's gonna be a couple
+of different ideas we're
+
+4
+00:00:12,730 --> 00:00:15,850
+gonna cover in this video,
+and a couple of new keywords
+
+5
+00:00:15,850 --> 00:00:19,610
+that you can only use in
+specific contexts in Python.
+
+6
+00:00:20,410 --> 00:00:25,050
+So we've talked about conditional
+statements, like if statements,
+
+7
+00:00:25,050 --> 00:00:29,470
+while statements that execute true
+or false things, or they execute
+
+8
+00:00:29,470 --> 00:00:32,490
+the code underneath them if it
+comes back as true or false. And
+
+9
+00:00:32,490 --> 00:00:37,050
+most of the time when we're writing
+out those conditional statements,
+
+10
+00:00:37,050 --> 00:00:39,810
+we use operators like greater
+than, less than, greater than,
+
+11
+00:00:39,810 --> 00:00:44,370
+equal to, less than, equal to,
+equal equals to, and not equals to.
+
+12
+00:00:44,720 --> 00:00:47,550
+So today we're going to, or I
+guess in this video, we're going to
+
+13
+00:00:47,550 --> 00:00:52,350
+combine a couple of these ideas
+with the AND operator. So you
+
+14
+00:00:52,350 --> 00:00:56,750
+can probably assume this maybe,
+but the AND operator looks to see
+
+15
+00:00:56,750 --> 00:01:00,230
+that two conditions are true
+before it will execute a statement.
+
+16
+00:01:00,670 --> 00:01:03,810
+Similarly, there is the operator OR,
+
+17
+00:01:03,950 --> 00:01:06,950
+which will look for truthfulness in one
+
+18
+00:01:06,950 --> 00:01:09,350
+statement or the other
+before it will operate.
+
+19
+00:01:09,550 --> 00:01:14,690
+And then we've also got the NOT
+operator, which reverses the meaning
+
+20
+00:01:14,690 --> 00:01:17,970
+of a condition like it says here.
+So if it's a true statement,
+
+21
+00:01:17,970 --> 00:01:21,030
+then it becomes false. And if
+it's false, then it becomes true.
+
+22
+00:01:21,540 --> 00:01:23,670
+We'll do a bunch of examples
+with these. So let's
+
+23
+00:01:23,670 --> 00:01:26,710
+maybe jump over to our
+code space and get going.
+
+24
+00:01:29,770 --> 00:01:31,330
+Boolean operators.
+
+25
+00:01:31,970 --> 00:01:36,170
+So there's also the idea that we
+can set variables as Booleans.
+
+26
+00:01:38,330 --> 00:01:41,330
+So let's say we want to, I don't know,
+
+27
+00:01:41,330 --> 00:01:43,350
+we want to check somebody's status.
+
+28
+00:01:43,450 --> 00:01:44,710
+And maybe,
+
+29
+00:01:44,930 --> 00:01:47,850
+or that's actually
+dumb. Let's say that we
+
+30
+00:01:47,850 --> 00:01:52,390
+have a variable called
+having a great time.
+
+31
+00:01:52,950 --> 00:01:55,570
+and we'll set that equal to true.
+
+32
+00:01:56,530 --> 00:01:59,450
+Then if we were to do a
+conditional statement like an if
+
+33
+00:01:59,450 --> 00:02:05,330
+statement, we could say if having
+a great time then print awesome.
+
+34
+00:02:06,920 --> 00:02:09,590
+So if we were to run this
+code, this code would return
+
+35
+00:02:09,590 --> 00:02:13,450
+to us the print state or
+it would print out awesome.
+
+36
+00:02:13,750 --> 00:02:19,550
+If having a great time was false,
+then let's throw an else on here.
+
+37
+00:02:23,810 --> 00:02:25,410
+That's too bad.
+
+38
+00:02:25,790 --> 00:02:28,970
+So, having a great time,
+false, that's too bad. Okay,
+
+39
+00:02:28,970 --> 00:02:32,470
+so what the conditional is
+looking for is a true statement,
+
+40
+00:02:32,470 --> 00:02:35,550
+and if we have a variable
+that's literally true,
+
+41
+00:02:35,630 --> 00:02:39,170
+then it will execute. If it's
+literally false, then it won't execute.
+
+42
+00:02:39,170 --> 00:02:46,470
+So, having a great time, false won't
+execute so yeah and then we can
+
+43
+00:02:46,470 --> 00:02:54,390
+also set up some variables with
+comparisons which we may have talked
+
+44
+00:02:54,390 --> 00:02:57,830
+about in a previous content video but
+we'll just do another example here
+
+45
+00:02:57,830 --> 00:03:01,710
+so let's say we have a variable
+called age and we'll set it equal to
+
+46
+00:03:01,710 --> 00:03:09,450
+45 then we could say old equals age
+greater than I I don't know what
+
+47
+00:03:09,450 --> 00:03:14,670
+constitutes as old in people's minds
+we'll say 80. You're old if you're
+
+48
+00:03:15,950 --> 00:03:18,770
+sorry you're old if your age is
+
+49
+00:03:20,450 --> 00:03:23,930
+greater than 80. Yeah that's correct
+
+50
+00:03:23,930 --> 00:03:27,990
+okay so if we were to say print old
+
+51
+00:03:30,050 --> 00:03:32,390
+maybe ask yourself what will this return
+
+52
+00:03:32,390 --> 00:03:34,570
+to us before we even run this code?
+
+53
+00:03:35,570 --> 00:03:39,850
+old is false right because age
+is not greater than 80 but if we
+
+54
+00:03:39,850 --> 00:03:47,150
+were to change age to 81 old
+would be true right so these are
+
+55
+00:03:47,150 --> 00:03:52,610
+also boolean operators boolean
+variables right they're all booleans
+
+56
+00:03:52,610 --> 00:04:00,850
+so let's talk a little bit more
+about and and or and not um so
+
+57
+00:04:02,880 --> 00:04:05,110
+So let's use our two
+variables we just barely made,
+
+58
+00:04:05,110 --> 00:04:09,250
+actually. So let's say if
+having a great time and
+
+59
+00:04:09,250 --> 00:04:17,030
+old prints, you are old
+and having a great time.
+
+60
+00:04:19,790 --> 00:04:21,850
+But that probably won't
+print. Why will it
+
+61
+00:04:21,850 --> 00:04:26,350
+not print? Well, having
+a great time is false.
+
+62
+00:04:26,430 --> 00:04:33,470
+And old is true. but the and operator
+needs both of these conditions
+
+63
+00:04:33,470 --> 00:04:36,870
+to be true in order to actually
+execute the code underneath it.
+
+64
+00:04:36,990 --> 00:04:44,690
+So if we were to change having a
+great time to true and run this code
+
+65
+00:04:44,690 --> 00:04:49,490
+again we should see that print
+statement now you are old and having a
+
+66
+00:04:49,490 --> 00:04:52,610
+great time which is now output into
+our console because having a great
+
+67
+00:04:52,610 --> 00:04:59,390
+time true and old true okay so that's
+kind of how and works or just looks
+
+68
+00:04:59,390 --> 00:05:04,050
+for one of them to be true, right?
+So if having a great time or old.
+
+69
+00:05:04,510 --> 00:05:05,790
+And Brent,
+
+70
+00:05:06,200 --> 00:05:12,550
+you're either having a
+great time or you're old.
+
+71
+00:05:13,970 --> 00:05:16,630
+I don't know.
+
+72
+00:05:17,110 --> 00:05:22,390
+So let's change one of these.
+Let's change age to go back to 45.
+
+73
+00:05:23,180 --> 00:05:24,910
+We'll run our code again.
+
+74
+00:05:27,270 --> 00:05:32,630
+and notice now that having a great
+time in old did not execute. We didn't
+
+75
+00:05:32,630 --> 00:05:36,310
+see your old and having a great
+time printed out to our console, but
+
+76
+00:05:36,310 --> 00:05:39,350
+we do see you were either having
+a great time or your old, I don't
+
+77
+00:05:39,350 --> 00:05:43,370
+know, print out to our console. Now
+if we were to change age back to 81,
+
+78
+00:05:43,370 --> 00:05:48,050
+we should see both of them because
+we found two true conditions. Both
+
+79
+00:05:48,050 --> 00:05:52,490
+of these returned true for the and
+and one of them, both of them, but one
+
+80
+00:05:52,490 --> 00:05:55,210
+of them returned true for the or,
+and the or said that's all I need.
+
+81
+00:05:55,850 --> 00:05:57,670
+So some interesting things here.
+
+82
+00:05:57,930 --> 00:06:03,330
+And then let's do an example with not.
+
+83
+00:06:05,770 --> 00:06:16,250
+Let's say if having a great
+time and not old. Oh this is
+
+84
+00:06:16,250 --> 00:06:19,110
+kind confusing. So if you're
+having a great time but you're
+
+85
+00:06:19,110 --> 00:06:25,470
+not old, that means you're
+young and ready to party, right?
+
+86
+00:06:26,750 --> 00:06:28,590
+So if I run this,
+
+87
+00:06:28,750 --> 00:06:31,610
+this statement won't
+execute. Why? Because
+
+88
+00:06:31,610 --> 00:06:34,190
+the and is looking for two trues, right?
+
+89
+00:06:34,970 --> 00:06:39,300
+Which in this case, having a
+great time and old are both true,
+
+90
+00:06:39,300 --> 00:06:42,690
+but the not is saying, well
+instead of looking for a true
+
+91
+00:06:42,690 --> 00:06:47,430
+here I'm actually looking for a
+false so if we changed old back
+
+92
+00:06:47,430 --> 00:06:54,870
+to 45 now this one will return
+true because this is true and
+
+93
+00:06:55,110 --> 00:06:59,490
+this is not true because we do
+the not operator in there okay
+
+94
+00:06:59,770 --> 00:07:04,390
+so it gets a little bit confusing
+I like to think of it kind of
+
+95
+00:07:04,390 --> 00:07:07,670
+like this so like if you were to
+build like a multiplication table.
+
+96
+00:07:08,610 --> 00:07:12,050
+This is like, or is like addition.
+
+97
+00:07:13,810 --> 00:07:18,350
+So if you had 1 plus 1,
+
+98
+00:07:18,350 --> 00:07:21,390
+that's going to equal 2. But
+in this case, let's just say
+
+99
+00:07:21,390 --> 00:07:27,170
+it's 1 because of Boolean
+logic. But if you have 1 plus 0,
+
+100
+00:07:27,290 --> 00:07:28,630
+that's still 1.
+
+101
+00:07:28,850 --> 00:07:36,270
+0 plus 1 is still 1.
+And 0 plus 0 is 0. So if
+
+102
+00:07:36,270 --> 00:07:38,120
+you think about it in
+kind of Boolean logic,
+
+103
+00:07:38,510 --> 00:07:41,450
+ones are trues, zeros are falses, right?
+
+104
+00:07:42,930 --> 00:07:45,030
+Similarly, let's do another one.
+
+105
+00:07:45,090 --> 00:07:46,510
+Addition, or sorry,
+
+106
+00:07:46,810 --> 00:07:49,190
+and is like multiplication.
+
+107
+00:07:52,830 --> 00:07:58,050
+So if we change all of our
+symbols in here, 1 times 1 is 1.
+
+108
+00:07:59,190 --> 00:08:03,230
+1 times 0 is 0.
+
+109
+00:08:04,290 --> 00:08:12,690
+0 times 1 is also 0 and 0. Did
+I say 1 times 0? 0 times 0 is 0.
+
+110
+00:08:13,110 --> 00:08:17,590
+So if you think about your 1s
+as your trues, your 0s as your
+
+111
+00:08:17,590 --> 00:08:21,490
+falses, that will help you kind
+of think through this with both of
+
+112
+00:08:21,490 --> 00:08:24,890
+these examples. So a true plus a
+true is true. A true plus a false
+
+113
+00:08:24,890 --> 00:08:28,710
+is still true. A false plus a
+true is true, false plus false is
+
+114
+00:08:28,710 --> 00:08:35,050
+false, true and true is true,
+true and false is false, false and
+
+115
+00:08:35,050 --> 00:08:39,450
+true is false, and false and
+false is false. So quite a bit of
+
+116
+00:08:41,810 --> 00:08:43,390
+lingo in there.
+
+117
+00:08:44,450 --> 00:08:54,230
+Let's do one more example and
+then we'll end this content video.
+
+118
+00:08:54,230 --> 00:09:02,670
+Okay, so let's say that we want to
+know if somebody can, I don't know,
+
+119
+00:09:03,690 --> 00:09:08,130
+drive a car. So let's say their age
+is 15 and in Utah you need to be
+
+120
+00:09:08,130 --> 00:09:12,050
+16 to drive with your license after
+you get all your hours done or
+
+121
+00:09:12,050 --> 00:09:17,830
+whatever. But let's say we've got a
+variable called age 15 and hours done.
+
+122
+00:09:18,170 --> 00:09:25,610
+I don't know let's call it
+parent permission just for the
+
+123
+00:09:25,740 --> 00:09:28,630
+simplicity of the example and
+we'll say that this is false
+
+124
+00:09:28,630 --> 00:09:44,740
+um so can you drive equals
+age greater than 16 or let's
+
+125
+00:09:45,310 --> 00:09:48,160
+put this in parentheses this
+might be a big statement age
+
+126
+00:09:52,890 --> 00:09:56,770
+equals 15 and parent permission
+
+127
+00:09:58,990 --> 00:10:02,770
+equals true. And we don't actually
+need to say parent permission
+
+128
+00:10:02,770 --> 00:10:04,930
+equals true because we're just
+looking for a truthfulness in
+
+129
+00:10:04,930 --> 00:10:08,830
+there. So, and parent permission.
+So, let's see if we can drive.
+
+130
+00:10:11,130 --> 00:10:12,510
+Can you drive?
+
+131
+00:10:14,430 --> 00:10:16,990
+That was supposed to be a
+question mark. Can you drive?
+
+132
+00:10:18,030 --> 00:10:19,270
+Can you drive?
+
+133
+00:10:19,680 --> 00:10:21,970
+Let's see. I think the
+answer is going to be false.
+
+134
+00:10:22,270 --> 00:10:25,790
+You cannot drive because parent
+permission is equal to false. So
+
+135
+00:10:25,790 --> 00:10:30,770
+let's say maybe parent permission
+is true, and now you can drive.
+
+136
+00:10:30,770 --> 00:10:35,850
+So kind of a basic example there,
+But this just shows kind of
+
+137
+00:10:35,850 --> 00:10:39,850
+the power of Boolean operators
+and all the things about them. So
+
+138
+00:10:39,850 --> 00:10:42,250
+that's going to wrap up this
+content video. Thanks for watching.

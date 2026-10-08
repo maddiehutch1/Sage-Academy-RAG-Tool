@@ -1,0 +1,662 @@
+1
+00:00:02,780 --> 00:00:04,600
+Hey everybody, welcome
+to the content video
+
+2
+00:00:04,600 --> 00:00:07,740
+going over section 9.2
+of your textbook, Files.
+
+3
+00:00:07,750 --> 00:00:10,340
+We actually aren't going to get a lot of
+
+4
+00:00:10,340 --> 00:00:13,660
+information from this
+particular section, but this
+
+5
+00:00:14,260 --> 00:00:16,660
+chapter does require a little bit of
+
+6
+00:00:16,660 --> 00:00:18,500
+introduction, I think,
+before we jump into
+
+7
+00:00:19,000 --> 00:00:26,120
+some of the more detailed areas of
+working with files. So the basic
+
+8
+00:00:26,120 --> 00:00:28,720
+idea I want you to get from
+the textbook here is that we're
+
+9
+00:00:28,720 --> 00:00:32,640
+able to open files of any type in
+Python. You know, you can open an
+
+10
+00:00:32,640 --> 00:00:38,620
+image file, a text file, a Python
+file, any kind of file, a data
+
+11
+00:00:38,620 --> 00:00:43,680
+file, and we can do things with
+them. And it becomes really powerful
+
+12
+00:00:43,680 --> 00:00:49,820
+being able to open up data sets
+or things like that so that
+
+13
+00:00:49,820 --> 00:00:53,660
+we are able to actually do some
+data analysis or data science. So
+
+14
+00:00:53,660 --> 00:00:56,520
+we're going to just go through
+a couple of examples over in our
+
+15
+00:00:56,520 --> 00:01:01,480
+code space here of opening files
+and working with them in Python.
+
+16
+00:01:02,260 --> 00:01:07,800
+Very first, when you're opening a
+file, whether it be in your code
+
+17
+00:01:07,800 --> 00:01:12,020
+space on the Cloud, or if it's on
+your own personal laptop or anything,
+
+18
+00:01:12,060 --> 00:01:17,820
+you need to give your interpreter
+the exact file path to your file.
+
+19
+00:01:17,980 --> 00:01:20,360
+In the opening, it's just a
+matter of creating a variable
+
+20
+00:01:20,360 --> 00:01:25,060
+to store that file. I usually
+name this variable, file, and
+
+21
+00:01:27,060 --> 00:01:29,690
+then the method that you're
+going to use is called open.
+
+22
+00:01:29,690 --> 00:01:34,720
+It looks just like that. within the
+open function or method, we will
+
+23
+00:01:34,720 --> 00:01:39,300
+put the file path to our file within
+quotation marks. So the file that
+
+24
+00:01:39,300 --> 00:01:43,480
+I want to open up is called example
+.txt. I have it right here. There's
+
+25
+00:01:43,480 --> 00:01:50,120
+just some text in it. And I can
+type out the exact file path to it.
+
+26
+00:01:50,720 --> 00:01:54,380
+It's going to be kind of long at
+times. So it looks like it's in
+
+27
+00:01:54,380 --> 00:02:00,690
+data 5500 code, week five, files,
+section 9.2, or sorry, example
+
+28
+00:02:00,690 --> 00:02:04,120
+.txt or there's usually a nice
+shortcut way to do this where if
+
+29
+00:02:04,120 --> 00:02:09,400
+you just right click on the file
+name and click on copy path you
+
+30
+00:02:09,400 --> 00:02:15,540
+can usually just paste it right
+into your quotation marks and then
+
+31
+00:02:15,540 --> 00:02:19,120
+it will open that file for you
+so now you're probably wondering
+
+32
+00:02:19,120 --> 00:02:25,460
+what happens if I just print out
+the file well let's see we get
+
+33
+00:02:25,460 --> 00:02:29,380
+something like this so this is not
+exactly what we're looking for.
+
+34
+00:02:29,540 --> 00:02:32,260
+As a reminder, this is what
+the file looks like. So
+
+35
+00:02:32,260 --> 00:02:35,020
+it's just a bunch of
+description on lorem ipsum text.
+
+36
+00:02:35,400 --> 00:02:40,140
+And I printed out this file and
+I see some stuff in my output
+
+37
+00:02:40,140 --> 00:02:43,240
+console that is definitely not
+the contents of that file. But
+
+38
+00:02:43,240 --> 00:02:45,500
+if we read this, we actually do
+gain some interesting information.
+
+39
+00:02:45,500 --> 00:02:51,180
+So it says io text io wrapper
+name, name of the file, mode
+
+40
+00:02:51,180 --> 00:02:55,520
+r encoding utf8. So if you've
+done a lot of programming or
+
+41
+00:02:55,520 --> 00:02:57,940
+worked with a lot of files, maybe
+some of that makes sense to you.
+
+42
+00:02:57,940 --> 00:03:01,840
+If not, that's okay. But what
+I do want you to know is that
+
+43
+00:03:02,190 --> 00:03:06,540
+our mode is R. We're going to
+talk about that in just a second.
+
+44
+00:03:07,100 --> 00:03:10,440
+So, this isn't really going
+to do anything for us.
+
+45
+00:03:10,440 --> 00:03:14,560
+So, how do we actually see
+the contents of our file?
+
+46
+00:03:14,560 --> 00:03:17,540
+And that's going to be
+something called read lines,
+
+47
+00:03:19,160 --> 00:03:22,360
+which is a slightly different
+function. So, let's say I've got
+
+48
+00:03:22,360 --> 00:03:27,960
+another variable, lines. I'm going
+to set that equal to file.read lines.
+
+49
+00:03:27,960 --> 00:03:32,440
+This is another function that
+takes all the contents of the file
+
+50
+00:03:32,440 --> 00:03:39,180
+and spits it back out to us. So
+let's see what lines looks like.
+
+51
+00:03:39,180 --> 00:03:43,740
+Let me add some better commenting here.
+
+52
+00:03:44,080 --> 00:03:45,000
+Okay.
+
+53
+00:03:47,680 --> 00:03:52,100
+all right so check it out lines
+is equal to something within a
+
+54
+00:03:52,100 --> 00:03:57,520
+square bracket and then we get
+comma separated values so if you
+
+55
+00:03:57,520 --> 00:04:00,320
+were in front of me right now I'd
+say what is that and you would
+
+56
+00:04:00,320 --> 00:04:06,320
+answer oh that's a list and I'd
+say exactly right lines is a list
+
+57
+00:04:06,320 --> 00:04:11,940
+of the lines in the file and this
+file.readlines function returns
+
+58
+00:04:11,940 --> 00:04:16,490
+to us a list of each of the
+lines of the file. Now what if
+
+59
+00:04:16,490 --> 00:04:19,820
+everything in my file was just on
+one line? Then we would get a list
+
+60
+00:04:19,820 --> 00:04:22,680
+with just one item in it and it
+would be everything in my file.
+
+61
+00:04:23,120 --> 00:04:24,500
+Remember this function because it's
+
+62
+00:04:24,500 --> 00:04:26,820
+going to be more important later on.
+
+63
+00:04:27,660 --> 00:04:31,160
+Let me do a slightly different
+example here. This is doing the exact
+
+64
+00:04:31,160 --> 00:04:34,920
+same thing. Now that we know we
+have a list, what can we do with it?
+
+65
+00:04:34,920 --> 00:04:37,600
+Well we can do a lot of things but
+one of the things I love to do is
+
+66
+00:04:37,600 --> 00:04:42,620
+iterate through my list. So for line
+in lines, let's just print out the
+
+67
+00:04:42,620 --> 00:04:48,820
+line one at a time. It'll give us
+pretty much the same thing, but oh,
+
+68
+00:04:50,380 --> 00:04:53,220
+let's take a look at our
+output console here. So a line,
+
+69
+00:04:53,340 --> 00:04:56,130
+lorem ipsum is simply dummy text
+of the printing and typesetting
+
+70
+00:04:56,130 --> 00:04:59,080
+industry. Here's the next line,
+lorem ipsum has been an industry
+
+71
+00:04:59,080 --> 00:05:04,280
+standard dummy text ever since 1966
+when designers, it was a lot of text
+
+72
+00:05:04,280 --> 00:05:08,360
+that survived many decades. It
+was popularized thanks to sheets.
+
+73
+00:05:08,560 --> 00:05:12,740
+Yeah, blah, blah, blah. So we're
+just looping through our list
+
+74
+00:05:12,740 --> 00:05:16,300
+of lines from the file and
+printing them out one at a time.
+
+75
+00:05:16,320 --> 00:05:19,800
+Now, another important
+thing when working with
+
+76
+00:05:19,800 --> 00:05:23,860
+files is closing the
+file when we're done.
+
+77
+00:05:24,380 --> 00:05:29,940
+So by default, Python will close
+your file at the end of your code.
+
+78
+00:05:29,940 --> 00:05:33,940
+so when it's done running but if
+you open a file and then you're
+
+79
+00:05:33,940 --> 00:05:37,560
+done with it earlier on in your
+algorithm you should it's best
+
+80
+00:05:37,560 --> 00:05:41,440
+practice to close that file as soon
+as you're done accessing it so you
+
+81
+00:05:41,440 --> 00:05:45,820
+can do that just by saying file
+.close and now your file is closed
+
+82
+00:05:46,190 --> 00:05:51,260
+so then if you wanted to open that
+file again and do something else
+
+83
+00:05:51,260 --> 00:05:55,460
+to it you could do that now speaking
+of opening back up the file,
+
+84
+00:05:55,460 --> 00:06:01,540
+we use this method or function
+open to open our file. Now the open
+
+85
+00:06:01,540 --> 00:06:06,200
+function takes two arguments. One
+is the file path and the other
+
+86
+00:06:06,200 --> 00:06:11,040
+is the mode in which we want to
+open our file. There's three modes.
+
+87
+00:06:12,820 --> 00:06:16,200
+There's read, write, and append.
+
+88
+00:06:17,050 --> 00:06:19,570
+So if you were to open up your file
+
+89
+00:06:20,780 --> 00:06:25,380
+in, well I'm just going to copy
+the same exact thing right here.
+
+90
+00:06:25,820 --> 00:06:29,360
+File equals open. If you
+don't put an argument in,
+
+91
+00:06:29,360 --> 00:06:32,400
+Python will by default open
+your file in read mode.
+
+92
+00:06:32,400 --> 00:06:34,340
+And it looks like this if
+you were to type it out.
+
+93
+00:06:34,800 --> 00:06:38,820
+Quotation marks are, that opens
+your file in read mode. You don't
+
+94
+00:06:38,820 --> 00:06:41,640
+have to put it there because
+by default Python will always
+
+95
+00:06:41,640 --> 00:06:44,480
+open your file in read mode. Read
+mode just means you can see the
+
+96
+00:06:44,480 --> 00:06:48,400
+contents of the file. Now what
+if, I remember there's a really
+
+97
+00:06:48,400 --> 00:06:51,440
+important sentence I need to add
+to this file like it's killing
+
+98
+00:06:51,440 --> 00:06:55,340
+me and I need to edit the file
+alter its contents. Well then I
+
+99
+00:06:55,340 --> 00:06:59,520
+would open this file in write
+mode which is designated by a w.
+
+100
+00:06:59,900 --> 00:07:02,540
+So file equals open in write mode.
+
+101
+00:07:03,000 --> 00:07:04,980
+Let's write a new line to the file.
+
+102
+00:07:06,840 --> 00:07:10,220
+I will say file.write
+
+103
+00:07:14,780 --> 00:07:19,900
+my favorite sentence oh dang
+it I'm so bad at spelling a
+
+104
+00:07:19,900 --> 00:07:24,020
+sentence with an a or an e my
+favorite thing to write down
+
+105
+00:07:24,020 --> 00:07:27,880
+is this we'll just leave it
+at that and we'll slap a new
+
+106
+00:07:27,880 --> 00:07:33,160
+line character in there we love
+that okay so file.write and
+
+107
+00:07:33,160 --> 00:07:37,360
+then uh I'll throw another
+sentence in there file.write.
+
+108
+00:07:38,380 --> 00:07:41,960
+This is a new line in my file.
+
+109
+00:07:42,780 --> 00:07:44,380
+Another new line character.
+
+110
+00:07:45,000 --> 00:07:47,280
+And then we'll close the file again.
+
+111
+00:07:48,780 --> 00:07:51,660
+Right? So check out what happens
+when I run this code now.
+
+112
+00:07:52,250 --> 00:07:55,000
+Nothing new gets printed out
+to my console, but if I go
+
+113
+00:07:55,000 --> 00:07:59,360
+and look at example.txt, check
+out what's in my file now.
+
+114
+00:08:03,540 --> 00:08:07,300
+My favorite thing to write
+down is this. Wow, that's a
+
+115
+00:08:07,300 --> 00:08:10,200
+heart attack of a sentence.
+And this is a new line in
+
+116
+00:08:10,200 --> 00:08:13,240
+my file. So what happened to
+my lorem ipsum text? Well,
+
+117
+00:08:13,240 --> 00:08:17,220
+fun fact, when you open a
+file in write mode, whoops,
+
+118
+00:08:17,360 --> 00:08:22,140
+you automatically overwrite
+everything that was previously in the
+
+119
+00:08:22,140 --> 00:08:28,580
+file. So by reopening this file,
+example.txt, in write mode, I
+
+120
+00:08:28,580 --> 00:08:32,040
+erased everything that was already
+in it. So this kind of brings us to
+
+121
+00:08:32,040 --> 00:08:37,620
+our third mode of editing a file
+or opening a file, append mode.
+
+122
+00:08:39,240 --> 00:08:43,080
+So file equals open. Let's
+just paste that in there again.
+
+123
+00:08:43,080 --> 00:08:45,720
+This time we're going to
+open it in append mode.
+
+124
+00:08:46,540 --> 00:08:49,180
+And let's say file.write.
+
+125
+00:08:51,000 --> 00:08:53,640
+One more new line.
+
+126
+00:08:53,640 --> 00:08:54,760
+Good, sir.
+
+127
+00:08:56,480 --> 00:08:59,740
+And we'll throw another one
+in there for good measure.
+
+128
+00:09:02,800 --> 00:09:10,220
+see how my old lines are
+still here that is append
+
+129
+00:09:10,220 --> 00:09:16,380
+mode boom all right so
+now when I run my code
+
+130
+00:09:20,100 --> 00:09:26,580
+we should see the lines that
+we wrote in there and then
+
+131
+00:09:26,580 --> 00:09:31,640
+we are appending new lines
+to my file so So append mode,
+
+132
+00:09:31,840 --> 00:09:34,520
+write mode, and read mode. And I
+think that's everything I wanted
+
+133
+00:09:34,520 --> 00:09:37,560
+to cover in this content video.
+Oh, don't forget to, well, I
+
+134
+00:09:37,560 --> 00:09:39,920
+don't necessarily need to close
+my file because I'm at the end
+
+135
+00:09:39,920 --> 00:09:43,020
+of my code at this point, but
+still good practice too. But that
+
+136
+00:09:43,020 --> 00:09:45,240
+wraps up everything for this
+content video. Thanks for watching.

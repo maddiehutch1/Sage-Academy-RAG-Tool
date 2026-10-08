@@ -1,0 +1,220 @@
+1
+00:00:02,750 --> 00:00:05,970
+Hey everybody, welcome to the
+content video for section 3.15,
+
+2
+00:00:06,350 --> 00:00:10,910
+break and continue statements. So
+I keep saying this in reference to
+
+3
+00:00:10,910 --> 00:00:13,690
+a while loop that one of the
+ways to break out of a while loop
+
+4
+00:00:13,690 --> 00:00:16,530
+is to use a break or continue so
+we finally get to talk about it.
+
+5
+00:00:17,270 --> 00:00:20,870
+So break and continues are
+fairly straightforward concepts.
+
+6
+00:00:21,010 --> 00:00:26,450
+Break will exit the loop at
+any point that a break is
+
+7
+00:00:26,450 --> 00:00:33,630
+hit and continue skips a
+single iteration of that loop.
+
+8
+00:00:33,630 --> 00:00:39,010
+So we will just jump to some
+examples. I think that's
+
+9
+00:00:39,010 --> 00:00:41,890
+probably the most straightforward
+way to cover this.
+
+10
+00:00:44,510 --> 00:00:46,710
+So break and continue.
+
+11
+00:00:46,770 --> 00:00:50,710
+Okay, so let's say we had, I
+don't know, maybe like a for
+
+12
+00:00:50,710 --> 00:00:55,930
+loop, for I in range. Let's do
+20. And let's say that, whoops.
+
+13
+00:00:56,770 --> 00:01:01,170
+let's say that once we hit the
+number I don't know 10 we want
+
+14
+00:01:01,170 --> 00:01:05,550
+to print out every number
+except 10 and we and we want to
+
+15
+00:01:05,550 --> 00:01:13,290
+uh not print out 10 so we could
+say if i equals 10 continue
+
+16
+00:01:14,170 --> 00:01:18,970
+and it's as simple as that
+uh and then we'll print i
+
+17
+00:01:25,190 --> 00:01:27,470
+okay so let's run our code
+
+18
+00:01:28,170 --> 00:01:33,430
+we see that the loop printed out
+let's make this a little bigger zero
+
+19
+00:01:33,430 --> 00:01:36,850
+one two three four five six seven
+eight nine and then it skipped 10 it
+
+20
+00:01:36,850 --> 00:01:42,230
+didn't output it and then um it continued
+on and went up to 19 not including
+
+21
+00:01:42,230 --> 00:01:50,130
+20 of course uh so let's continue
+let's do break so let's say we
+
+22
+00:01:50,130 --> 00:01:55,990
+wanted to do the exact same thing
+actually i don't know why i'm bothering
+
+23
+00:01:55,990 --> 00:01:58,710
+to come up with a different example
+let's just do the exact same thing
+
+24
+00:01:58,710 --> 00:02:02,110
+we did but this time let's say break
+instead of continue so if i run
+
+25
+00:02:02,110 --> 00:02:06,190
+my code you can see that the code
+just stops the loop stops executing
+
+26
+00:02:06,190 --> 00:02:11,470
+immediately after we hit the condition
+that was set in there so maybe if
+
+27
+00:02:11,470 --> 00:02:21,890
+we had a while loop let's say age
+equals five while age i don't know not
+
+28
+00:02:21,890 --> 00:02:25,690
+equal all right we could just say
+while age because if you remember
+
+29
+00:02:25,690 --> 00:02:30,150
+from a previous content video all
+integers all whole numbers are true um
+
+30
+00:02:30,150 --> 00:02:35,370
+and zero is false so if we say while
+age that is basically saying while
+
+31
+00:02:35,370 --> 00:02:38,050
+true and so if a condition returns
+true the while loop is going to
+
+32
+00:02:38,050 --> 00:02:47,370
+continue to run so while age will say
+age plus equals one um if age equals
+
+33
+00:02:47,870 --> 00:02:51,950
+I don't know let's say 56 then we
+
+34
+00:02:51,950 --> 00:02:58,050
+will break and let's print out age so
+
+35
+00:03:06,200 --> 00:03:08,980
+there's a little bit of
+scroll back here we can see
+
+36
+00:03:08,980 --> 00:03:12,240
+age starts at five and then
+it gets one added to it and
+
+37
+00:03:12,240 --> 00:03:14,880
+it gets all the way up to
+55 and then we break that
+
+38
+00:03:14,880 --> 00:03:19,410
+loop so the y loop does not
+become an infinite loop so
+
+39
+00:03:20,860 --> 00:03:23,680
+yeah I think that's pretty much
+everything about break and continue
+
+40
+00:03:23,680 --> 00:03:27,700
+they're super useful tools for if we
+want to have a loop run especially
+
+41
+00:03:27,700 --> 00:03:30,500
+if we're like searching for something
+if we want to find something in
+
+42
+00:03:30,500 --> 00:03:35,080
+a list or in a dictionary or something
+like that and once we find it
+
+43
+00:03:35,080 --> 00:03:38,020
+we want the loop to stop searching
+for it that's a really great way to
+
+44
+00:03:38,020 --> 00:03:41,840
+use break and continue but there's
+really a variety of use cases for
+
+45
+00:03:41,840 --> 00:03:44,900
+it. So that's everything for this
+content video. Thanks for watching.

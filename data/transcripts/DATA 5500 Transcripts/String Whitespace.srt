@@ -1,0 +1,289 @@
+1
+00:00:02,680 --> 00:00:05,260
+Hey everybody, welcome
+to this content video
+
+2
+00:00:05,260 --> 00:00:08,460
+that will go over section
+8.4 of the textbook,
+
+3
+00:00:08,460 --> 00:00:11,340
+stripping white space from
+strings. I know nothing sounds more
+
+4
+00:00:11,340 --> 00:00:14,660
+enthralling than stripping white
+space from strings. Here we go.
+
+5
+00:00:14,860 --> 00:00:17,780
+Sometimes strings will have
+leading or trailing white
+
+6
+00:00:17,780 --> 00:00:20,880
+space and you can use the
+built-in Python method
+
+7
+00:00:20,880 --> 00:00:24,860
+strip to get rid of that
+white space. So for example,
+
+8
+00:00:24,860 --> 00:00:27,580
+you have a sentence like this.
+
+9
+00:00:28,100 --> 00:00:31,770
+Notice it's got the Python
+tab character and a newline
+
+10
+00:00:31,770 --> 00:00:34,080
+character and then it says
+this is a test string,
+
+11
+00:00:34,360 --> 00:00:38,440
+tab, tab, new line, if you were to
+strip that then the output would
+
+12
+00:00:38,440 --> 00:00:43,240
+be this is a test string. There's
+also L strip, which stands for
+
+13
+00:00:43,240 --> 00:00:49,040
+remove the left leading white
+space, and R strip, which stands for
+
+14
+00:00:49,040 --> 00:00:52,640
+remove the R, the right trailing
+white space, but there's no method
+
+15
+00:00:52,640 --> 00:00:56,020
+called chicken strip, so we're all
+a little bit sad about that one.
+
+16
+00:00:56,370 --> 00:00:58,540
+Anyways, let's do a couple of examples.
+
+17
+00:01:04,940 --> 00:01:07,700
+So let's make a different
+variable. We'll call it pi.
+
+18
+00:01:07,800 --> 00:01:11,940
+Set that equal to tab character.
+We love tab character.
+
+19
+00:01:12,580 --> 00:01:14,120
+New line character,
+
+20
+00:01:15,080 --> 00:01:18,860
+tab character. And I'm also adding
+like spaces in between them too.
+
+21
+00:01:19,340 --> 00:01:23,000
+We'll do new line and
+then tab. And then 3.1415.
+
+22
+00:01:33,210 --> 00:01:34,100
+I don't know
+
+23
+00:01:34,200 --> 00:01:37,490
+All right, so if we print out pi, let's
+
+24
+00:01:37,680 --> 00:01:39,810
+just print it and see what it gives us,
+
+25
+00:01:41,680 --> 00:01:48,600
+3.1415 pi, all right, so then if
+we were to print out pi.strip,
+
+26
+00:01:49,200 --> 00:01:53,840
+we would expect to see the leading
+and trailing whitespaces, hang on,
+
+27
+00:01:54,020 --> 00:01:55,300
+I forgot parentheses,
+
+28
+00:01:56,110 --> 00:01:58,670
+we would expect to see the
+leading and trailing whitespaces
+
+29
+00:01:58,670 --> 00:02:02,840
+gone, and they are, except
+we still have a ton of spaces
+
+30
+00:02:02,840 --> 00:02:04,940
+in between the first part
+of our string and the second
+
+31
+00:02:04,940 --> 00:02:08,540
+part of our string. Why is
+that? Well, it's because those
+
+32
+00:02:08,860 --> 00:02:12,000
+spaces are not leading or
+trailing. And so how do we
+
+33
+00:02:12,000 --> 00:02:14,960
+get rid of those spaces?
+That's another content video.
+
+34
+00:02:14,960 --> 00:02:18,020
+But for now, that's all
+you really need to know.
+
+35
+00:02:18,360 --> 00:02:22,680
+The R strip, L strip, and
+I'll just throw those in here
+
+36
+00:02:22,680 --> 00:02:26,120
+really quick so that we can
+see them. And I have a question
+
+37
+00:02:26,120 --> 00:02:30,400
+for you at the end of it all.
+So give me like one second.
+
+38
+00:02:30,420 --> 00:02:32,860
+I guess we already did regular
+strips. I'll make this L
+
+39
+00:02:32,860 --> 00:02:45,900
+strip, and then we'll do pi
+.rstrip, and it'll print out pi.
+
+40
+00:02:46,760 --> 00:02:47,760
+Okay,
+
+41
+00:02:50,240 --> 00:02:52,400
+well I should have added more commenting.
+
+42
+00:02:52,900 --> 00:02:53,980
+Okay,
+
+43
+00:02:54,140 --> 00:03:00,320
+so here's regular pi, and then
+we printed out pi just completely
+
+44
+00:03:00,320 --> 00:03:05,120
+stripped and then we printed out
+pi l strip with the the white space
+
+45
+00:03:05,120 --> 00:03:09,260
+on the left side removed and then
+we printed out pi with the space
+
+46
+00:03:09,260 --> 00:03:11,960
+on the right removed so that's
+this one and then we printed out
+
+47
+00:03:11,960 --> 00:03:16,940
+pi again so here's a question
+for you pi again has all of its
+
+48
+00:03:16,940 --> 00:03:21,240
+leading and trailing white space
+why is that well it's because of a
+
+49
+00:03:21,240 --> 00:03:25,180
+concept that we've talked about
+called mutability so strings are
+
+50
+00:03:25,210 --> 00:03:29,560
+immutable which means they are sorry
+yeah immutable, which means they
+
+51
+00:03:29,560 --> 00:03:32,720
+are not changeable. So when I do
+all these functions and methods
+
+52
+00:03:32,720 --> 00:03:36,640
+to a string, the string is actually
+not changed. If I was to do
+
+53
+00:03:36,640 --> 00:03:40,060
+something similar to a list, the
+list would actually be changed. It
+
+54
+00:03:40,060 --> 00:03:43,680
+is mutable, but strings are
+immutable. So if I wanted to actually
+
+55
+00:03:44,120 --> 00:03:48,120
+make this change permanent, I
+could say pi equals pi dot strip,
+
+56
+00:03:48,410 --> 00:03:53,600
+and then I could print out pi,
+and I would see that pi is now
+
+57
+00:03:53,600 --> 00:03:57,560
+this variable. But that's kind
+of a new string that we've been,
+
+58
+00:03:57,560 --> 00:04:01,840
+that we've created, we aren't
+changing that string from before,
+
+59
+00:04:01,840 --> 00:04:04,620
+we're just setting a new variable
+equal to the string. So hopefully
+
+60
+00:04:04,620 --> 00:04:06,800
+that makes some sense and that's
+all for this content video.

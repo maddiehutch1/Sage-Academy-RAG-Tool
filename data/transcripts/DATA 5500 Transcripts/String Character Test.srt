@@ -1,0 +1,225 @@
+1
+00:00:02,810 --> 00:00:05,310
+Hey everybody, welcome to
+content video going over
+
+2
+00:00:05,310 --> 00:00:08,250
+section 8.10, characters
+and character testing.
+
+3
+00:00:08,250 --> 00:00:13,770
+So the idea behind this chapter
+is that we want to test to
+
+4
+00:00:13,770 --> 00:00:18,160
+see if something is truly
+alphanumeric or if it contains
+
+5
+00:00:18,160 --> 00:00:24,930
+things that are alphabetic or
+integers but all string values,
+
+6
+00:00:24,930 --> 00:00:27,790
+right? So there's a couple
+of built-in Python functions
+
+7
+00:00:28,310 --> 00:00:33,750
+that we check to see if something
+is alphanumeric so there's one
+
+8
+00:00:33,750 --> 00:00:36,370
+called is digit that will look
+to see if every character in
+
+9
+00:00:36,370 --> 00:00:40,410
+the string is a digit so like
+negative 27 for example not everything
+
+10
+00:00:40,410 --> 00:00:43,810
+is a digit because the negative
+sign makes it not a digit
+
+11
+00:00:43,810 --> 00:00:47,710
+but if you take that off then
+it returns true there's also is
+
+12
+00:00:47,710 --> 00:00:52,410
+alnum which looks to see if
+everything is only digits and letters
+
+13
+00:00:52,830 --> 00:00:58,590
+So, for example, A9876
+is alphanumeric, but this
+
+14
+00:00:58,590 --> 00:01:01,570
+123 Main Street is not
+because it has spaces.
+
+15
+00:01:01,630 --> 00:01:06,570
+And there's a whole other list of
+methods like this. So, is alpha, which
+
+16
+00:01:06,570 --> 00:01:11,190
+is only alphabetic characters, is
+decimal, is identifier, is lower,
+
+17
+00:01:11,190 --> 00:01:16,550
+is numeric, is space, is tidal, and
+is upper, which looks like ISupper.
+
+18
+00:01:18,140 --> 00:01:19,230
+Yeah, I don't know.
+
+19
+00:01:19,230 --> 00:01:21,650
+So, anyways, let's do
+an example together.
+
+20
+00:01:22,390 --> 00:01:25,990
+So this is string character test.
+
+21
+00:01:26,950 --> 00:01:33,700
+So let's say we've got
+a string negative 1, 2,
+
+22
+00:01:33,700 --> 00:01:40,010
+3, 4, 5. So if we print
+it out, string is digit,
+
+23
+00:01:41,010 --> 00:01:45,040
+we would expect to see false because,
+
+24
+00:01:46,400 --> 00:01:48,250
+oh, sorry. This is not a string.
+
+25
+00:01:50,510 --> 00:01:51,810
+now it's a string
+
+26
+00:01:53,530 --> 00:01:57,590
+yeah we would expect to see false
+because the string that we included
+
+27
+00:01:57,610 --> 00:02:02,550
+is um it's got that negative
+sign in there whereas if we take
+
+28
+00:02:02,550 --> 00:02:06,550
+that off just like the example in
+the textbook we see that that is true
+
+29
+00:02:06,550 --> 00:02:11,050
+so let's also do the alphanumeric
+one let's take an address like
+
+30
+00:02:15,680 --> 00:02:18,840
+that one it gave us address
+equals one two three
+
+31
+00:02:22,960 --> 00:02:26,630
+North Main Street, Logan,
+
+32
+00:02:28,380 --> 00:02:29,800
+Utah.
+
+33
+00:02:29,960 --> 00:02:32,140
+That might be somewhere.
+I don't know, actually.
+
+34
+00:02:32,940 --> 00:02:39,820
+So then we print address.isAlnum,
+and we would expect to see false
+
+35
+00:02:39,820 --> 00:02:42,860
+because we've got lots of spaces
+in there. So what can we do to make
+
+36
+00:02:42,860 --> 00:02:45,760
+this all alphanumeric? Well, we
+could do some string replacing so we
+
+37
+00:02:45,760 --> 00:02:51,940
+could say address equals address
+dot replace and we could replace the
+
+38
+00:02:51,940 --> 00:03:08,560
+spaces with nothing we could replace
+the periods with nothing what
+
+39
+00:03:17,150 --> 00:03:22,690
+else we got a comma we could replace
+the comma with nothing and then
+
+40
+00:03:22,690 --> 00:03:32,640
+let's print out what that looks
+like and then prints out address dot
+
+41
+00:03:33,510 --> 00:03:40,330
+is on them see what that gives us
+so once we take out all the white
+
+42
+00:03:40,330 --> 00:03:43,110
+space notice we're not really like
+stripping the white space we're
+
+43
+00:03:43,110 --> 00:03:45,740
+actually just replacing the white
+space and the punctuation with
+
+44
+00:03:45,740 --> 00:03:52,090
+nothings oh oh I messed up again I
+forgot to put parentheses on the end.
+
+45
+00:03:53,370 --> 00:03:56,330
+Then we see that our address is now
+
+46
+00:03:56,430 --> 00:03:58,230
+alphanumeric. So that's everything for
+
+47
+00:03:58,230 --> 00:04:00,180
+this content video.
+Thank you for watching.

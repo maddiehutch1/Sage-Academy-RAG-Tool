@@ -1,0 +1,272 @@
+1
+00:00:02,158 --> 00:00:04,450
+INSTRUCTOR: Hello, everyone,
+and welcome to the content
+
+2
+00:00:04,450 --> 00:00:07,618
+video for how to
+update a Github repo.
+
+3
+00:00:07,618 --> 00:00:09,160
+So this is something
+that you'll have
+
+4
+00:00:09,160 --> 00:00:11,717
+to do multiple times
+throughout the semester.
+
+5
+00:00:11,717 --> 00:00:14,050
+Whenever I add anything or
+change anything on the Github
+
+6
+00:00:14,050 --> 00:00:16,420
+repo, you'll need
+to pull it down
+
+7
+00:00:16,420 --> 00:00:19,700
+to your repository
+on your Cloud9 server
+
+8
+00:00:19,700 --> 00:00:23,193
+so you have all the up-to-date
+code throughout the semester.
+
+9
+00:00:23,193 --> 00:00:24,110
+So how do you do that?
+
+10
+00:00:24,110 --> 00:00:25,068
+Here's how you do that.
+
+11
+00:00:25,068 --> 00:00:26,770
+So let's go into
+the terminal here.
+
+12
+00:00:26,770 --> 00:00:31,660
+I'm going to type the command
+clear to clear up my console.
+
+13
+00:00:31,660 --> 00:00:35,500
+OK, and now that I'm in here,
+I'm going to do a git status,
+
+14
+00:00:35,500 --> 00:00:38,243
+which is going to tell
+me I'm on the main branch
+
+15
+00:00:38,243 --> 00:00:39,410
+and everything's up to date.
+
+16
+00:00:39,410 --> 00:00:41,170
+So here's what
+you'll want to do.
+
+17
+00:00:41,170 --> 00:00:43,250
+Let's say I put out
+a message on Slack.
+
+18
+00:00:43,250 --> 00:00:44,540
+The repo has been updated.
+
+19
+00:00:44,540 --> 00:00:47,140
+There's code we're going
+to cover this week.
+
+20
+00:00:47,140 --> 00:00:48,320
+Please update your repo.
+
+21
+00:00:48,320 --> 00:00:49,528
+Here's how you would do that.
+
+22
+00:00:49,528 --> 00:00:51,160
+The command is
+git pull, and that
+
+23
+00:00:51,160 --> 00:00:53,710
+will pull down all of the
+code from the repo back
+
+24
+00:00:53,710 --> 00:00:55,940
+into your local version.
+
+25
+00:00:55,940 --> 00:00:57,345
+Now mine says
+already up to date,
+
+26
+00:00:57,345 --> 00:00:58,720
+and that's the
+message you'll get
+
+27
+00:00:58,720 --> 00:00:59,970
+when everything is good to go.
+
+28
+00:00:59,970 --> 00:01:03,020
+When you're up to date
+with the remote repo,
+
+29
+00:01:03,020 --> 00:01:06,200
+it'll say already up to
+date with your local repo.
+
+30
+00:01:06,200 --> 00:01:09,650
+OK, but oftentimes if you've
+changed things, which is great--
+
+31
+00:01:09,650 --> 00:01:11,990
+if you've changed things
+in your local repo,
+
+32
+00:01:11,990 --> 00:01:13,630
+it'll give you a message, hey--
+
+33
+00:01:13,630 --> 00:01:16,270
+I forget the exact verbiage,
+but basically, you've
+
+34
+00:01:16,270 --> 00:01:19,430
+updated things
+locally or, you know,
+
+35
+00:01:19,430 --> 00:01:21,620
+there's edits that are
+not being tracked locally.
+
+36
+00:01:21,620 --> 00:01:23,000
+So here's how you handle those.
+
+37
+00:01:23,000 --> 00:01:24,760
+You could merge them,
+but you're never
+
+38
+00:01:24,760 --> 00:01:26,240
+going to push
+anything to my repo,
+
+39
+00:01:26,240 --> 00:01:28,660
+so you really don't need to
+worry about merging anything
+
+40
+00:01:28,660 --> 00:01:31,150
+because you're just going to
+be a consumer of this repo
+
+41
+00:01:31,150 --> 00:01:32,180
+over and over.
+
+42
+00:01:32,180 --> 00:01:36,040
+So the command that you want to
+just store your changes locally
+
+43
+00:01:36,040 --> 00:01:39,490
+that you made but still get the
+new stuff from the repo, first
+
+44
+00:01:39,490 --> 00:01:40,610
+do a git stash.
+
+45
+00:01:40,610 --> 00:01:42,760
+So it'll be git stash
+just like that git--
+
+46
+00:01:42,760 --> 00:01:44,080
+-G-I-T-- stash--
+
+47
+00:01:44,080 --> 00:01:46,100
+S-T-A-S-H. Hit Enter.
+
+48
+00:01:46,100 --> 00:01:48,160
+I'm not going to because
+I want my changes to be
+
+49
+00:01:48,160 --> 00:01:50,200
+in sync with the remote repo.
+
+50
+00:01:50,200 --> 00:01:51,017
+Hit Enter.
+
+51
+00:01:51,017 --> 00:01:52,600
+Then it'll say a
+message like, keeping
+
+52
+00:01:52,600 --> 00:01:56,450
+track of these local
+changes separately.
+
+53
+00:01:56,450 --> 00:01:58,850
+Then after you do a stash
+and a git pull again,
+
+54
+00:01:58,850 --> 00:02:01,480
+you should get the message
+already up to date.
+
+55
+00:02:01,480 --> 00:02:05,290
+OK, so that's it, that
+is how to keep in sync
+
+56
+00:02:05,290 --> 00:02:09,110
+or keep repulling the code,
+latest code from the repo.
+
+57
+00:02:09,110 --> 00:02:10,639
+That's the end of
+the content video.
+
+58
+00:02:10,639 --> 00:02:12,420
+Thanks for watching.

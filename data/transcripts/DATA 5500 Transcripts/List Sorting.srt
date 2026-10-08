@@ -1,0 +1,153 @@
+1
+00:00:02,650 --> 00:00:04,150
+Hey everybody, welcome to the section
+
+2
+00:00:04,150 --> 00:00:06,990
+on 5.8 of your textbook, sorting lists.
+
+3
+00:00:07,050 --> 00:00:09,150
+And this is kind of ironic because this
+
+4
+00:00:09,150 --> 00:00:12,790
+is actually a really complicated and very
+
+5
+00:00:16,250 --> 00:00:20,550
+technical idea in programming.
+And this is going to be a
+
+6
+00:00:20,550 --> 00:00:23,350
+pretty quick content video.
+So all we're going to go over
+
+7
+00:00:23,350 --> 00:00:27,110
+in this content video is the
+sort function. So let's go
+
+8
+00:00:27,110 --> 00:00:31,240
+ahead and jump over into our
+code space, sorting lists.
+
+9
+00:00:32,650 --> 00:00:36,310
+So all you really need to know
+is that there is a function
+
+10
+00:00:36,310 --> 00:00:38,590
+that will sort a list for you.
+So let's say we've got a list
+
+11
+00:00:38,590 --> 00:00:46,870
+1, 2, 5, I don't know, 2, 9,
+4, 11, something like that.
+
+12
+00:00:47,310 --> 00:00:49,890
+What the sort function
+does is it just returns
+
+13
+00:00:49,890 --> 00:00:52,770
+it in, you guessed it,
+smallest to greatest order.
+
+14
+00:00:52,770 --> 00:00:59,230
+So if I said list.sort
+and print out my list.
+
+15
+00:01:02,710 --> 00:01:08,490
+We would expect to see
+1, 2, 3, 4, 5, 9, and 11.
+
+16
+00:01:08,610 --> 00:01:11,370
+So the only other thing
+that I think that's worth
+
+17
+00:01:11,370 --> 00:01:15,130
+mentioning with this content
+video is that if you're
+
+18
+00:01:15,130 --> 00:01:19,250
+sorting letters, so let's
+say we have, oh, this is fun.
+
+19
+00:01:19,950 --> 00:01:24,130
+Let's say we have a
+variable called today, and
+
+20
+00:01:24,130 --> 00:01:27,110
+I'll set that equal to, I
+think it's Monday today.
+
+21
+00:01:28,110 --> 00:01:36,830
+and what I want to do is I want
+to do today dot sort actually I
+
+22
+00:01:37,590 --> 00:01:45,770
+lied this won't work on a string
+I don't think yeah okay you
+
+23
+00:01:45,770 --> 00:01:51,690
+guys caught me but if we had for
+example a list of the characters
+
+24
+00:01:52,550 --> 00:01:54,590
+in the string Monday,
+
+25
+00:02:03,430 --> 00:02:05,270
+we sorted that, you
+
+26
+00:02:11,430 --> 00:02:14,650
+would expect to see the
+letters in alphabetical order.
+
+27
+00:02:14,930 --> 00:02:19,250
+So that's pretty cool, except
+that capital letters are
+
+28
+00:02:19,250 --> 00:02:24,370
+technically more, they have more
+precedent than lowercase letters.
+
+29
+00:02:24,370 --> 00:02:27,670
+So that's why the M, capital
+M, is still at the beginning of
+
+30
+00:02:27,670 --> 00:02:30,530
+our list. That's about everything
+for this content video. So
+
+31
+00:02:30,530 --> 00:02:34,690
+yeah, sort will sort numbers
+from smallest to greatest, and
+
+32
+00:02:34,690 --> 00:02:37,690
+letters from in alphabetical
+order. So, thanks for watching.

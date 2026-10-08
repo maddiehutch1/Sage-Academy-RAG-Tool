@@ -1,0 +1,266 @@
+1
+00:00:01,820 --> 00:00:02,640
+Hey, everybody.
+
+2
+00:00:03,040 --> 00:00:10,600
+We're still in section 7.142 or
+something like that. Anyways, this
+
+3
+00:00:10,600 --> 00:00:14,560
+content video is going to go over
+accessing data in a data frame, right?
+
+4
+00:00:14,560 --> 00:00:17,980
+So there's a couple ways that we
+can, I guess, what you might commonly
+
+5
+00:00:17,980 --> 00:00:24,060
+refer to as index a data frame. It's
+not quite that way, but we're going
+
+6
+00:00:24,060 --> 00:00:28,640
+to look at how you can get data
+from columns and rows. And then in
+
+7
+00:00:28,640 --> 00:00:32,980
+a future content video, we'll talk
+about lock and iLock or location, I
+
+8
+00:00:32,980 --> 00:00:41,440
+guess. So let's jump over into our
+data, not data, code base. That's
+
+9
+00:00:41,440 --> 00:00:47,800
+what this is. And we'll just add a
+quick title, accessing a data frame.
+
+10
+00:00:52,400 --> 00:00:53,360
+Okay.
+
+11
+00:00:54,840 --> 00:00:59,650
+So we are going to start this the
+exact same way that we started
+
+12
+00:00:59,650 --> 00:01:04,960
+our last video. We're going to
+import pandas as pd, and then
+
+13
+00:01:04,960 --> 00:01:09,990
+we are going to make a data frame,
+assign it the value of pd.read
+
+14
+00:01:09,990 --> 00:01:15,600
+csv, and we will just load in
+our titanic data set once again.
+
+15
+00:01:20,550 --> 00:01:23,230
+I always like to double check and
+make sure that my data frame has
+
+16
+00:01:23,230 --> 00:01:26,150
+read in properly, so I usually just
+output it really quick just so can
+
+17
+00:01:26,150 --> 00:01:31,110
+see it looks good so we'll go
+ahead and get get into it so we've
+
+18
+00:01:31,770 --> 00:01:36,770
+already kind of talked about how you
+can access a column in a data set
+
+19
+00:01:36,770 --> 00:01:40,090
+so I believe in the last content
+video we talked about a series right
+
+20
+00:01:40,090 --> 00:01:43,370
+and if I wanted to pull out just
+a single column I could say ages
+
+21
+00:01:43,490 --> 00:01:46,700
+and assign that to the
+value of data frame at
+
+22
+00:01:46,700 --> 00:01:51,490
+the column age and then
+we could output ages
+
+23
+00:01:54,770 --> 00:01:59,530
+and you can see we've got a series
+now which is like a list with
+
+24
+00:01:59,530 --> 00:02:03,910
+all the ages of my data frame we
+could do a dot head here to just
+
+25
+00:02:03,910 --> 00:02:08,270
+see like the first you know three
+or maybe we want to see like the
+
+26
+00:02:08,270 --> 00:02:13,950
+first 14 I don't know here they
+are here's the first 14 ages so
+
+27
+00:02:13,950 --> 00:02:19,410
+the thing that is notable here is
+that strings will target columns.
+
+28
+00:02:21,470 --> 00:02:24,520
+And that kind of makes sense,
+right? Because we've got these
+
+29
+00:02:24,520 --> 00:02:27,150
+columns here, and they all
+have a name. And so if we want
+
+30
+00:02:27,150 --> 00:02:30,870
+to access a specific column,
+we give it a string, okay?
+
+31
+00:02:31,410 --> 00:02:35,270
+So then how do you target a
+row? Well, you use integers,
+
+32
+00:02:35,270 --> 00:02:39,290
+right? So let's say we wanted to
+grab, I don't know, the first five
+
+33
+00:02:41,430 --> 00:02:46,630
+rows we could assign that the
+value of data frame at the index 0
+
+34
+00:02:46,630 --> 00:02:56,630
+to 5 and then let's print out first
+five or output first five there
+
+35
+00:02:56,630 --> 00:03:03,030
+we go 0 1 2 3 and 4 so note how
+the bracket is non-inclusive here
+
+36
+00:03:03,530 --> 00:03:10,490
+So yes, if you want to access a
+row, integers will target rows.
+
+37
+00:03:12,400 --> 00:03:15,190
+So what if you wanted to
+get a row and a column?
+
+38
+00:03:18,110 --> 00:03:21,090
+What if there's a value in
+there that you want to grab?
+
+39
+00:03:21,290 --> 00:03:30,910
+Let's print out data frame at
+name and then we, so that's
+
+40
+00:03:30,910 --> 00:03:33,330
+going to pull out the name
+column, but then let's say we only
+
+41
+00:03:33,330 --> 00:03:39,950
+want the, I don't know, 8 through
+15 names in our data frame.
+
+42
+00:03:40,930 --> 00:03:42,150
+Here they are.
+
+43
+00:03:42,510 --> 00:03:47,220
+So we've got 8, 9, 10, 11, 12,
+13, and 14. So it's only a subset
+
+44
+00:03:47,220 --> 00:03:52,930
+of two, so it's a subset of our
+columns because we're only grabbing
+
+45
+00:03:52,930 --> 00:03:56,330
+one column and then a subset of
+our rows as well. So this is okay
+
+46
+00:03:56,330 --> 00:04:00,570
+to do, but oftentimes what happens
+when we give a data frame a
+
+47
+00:04:00,570 --> 00:04:04,470
+bracket is it makes a copy of the
+data and so if we're wanting to
+
+48
+00:04:04,470 --> 00:04:08,410
+alter or edit any of the data
+that's in our data frame the proper
+
+49
+00:04:08,410 --> 00:04:12,010
+methods and functions to use are
+going to be the lock and iLock
+
+50
+00:04:12,010 --> 00:04:15,050
+functions which we're going to talk
+about in another content video but
+
+51
+00:04:15,050 --> 00:04:17,070
+just know that if you're wanting
+to like kind of quickly access
+
+52
+00:04:17,070 --> 00:04:19,990
+something in a data frame this
+is okay but sometimes we do get a
+
+53
+00:04:19,990 --> 00:04:23,030
+warning here which is why we use
+lock and iLock so that's going to
+
+54
+00:04:23,030 --> 00:04:25,650
+sum up everything for this content
+video. Thank you for watching.

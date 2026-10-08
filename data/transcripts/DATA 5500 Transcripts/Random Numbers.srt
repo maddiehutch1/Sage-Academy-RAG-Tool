@@ -1,0 +1,362 @@
+1
+00:00:02,840 --> 00:00:04,960
+Hey everybody, welcome to section 4.4 of
+
+2
+00:00:04,960 --> 00:00:06,900
+your textbook, Random Number Generation.
+
+3
+00:00:07,000 --> 00:00:10,700
+So I like how they even say, we
+now take a brief diversion into
+
+4
+00:00:10,700 --> 00:00:14,880
+popular type of programming application,
+simulation and game, or yeah,
+
+5
+00:00:14,880 --> 00:00:18,000
+simulation and game playing. So I
+guess that's what we're doing too.
+
+6
+00:00:18,040 --> 00:00:21,460
+Anyways, we're going to talk about
+random numbers, which this kind of
+
+7
+00:00:21,460 --> 00:00:23,880
+goes along with the other things
+that we're going to talk about in
+
+8
+00:00:23,880 --> 00:00:27,320
+the next couple of content videos
+anyways, which is external libraries
+
+9
+00:00:27,320 --> 00:00:32,480
+that we'll import into Python and
+use for different purposes. So the
+
+10
+00:00:32,480 --> 00:00:36,490
+first one is going to be the random
+library, and you can see here kind
+
+11
+00:00:36,540 --> 00:00:40,640
+of how they use that library and
+how they import it into their code.
+
+12
+00:00:41,120 --> 00:00:46,620
+So let me just briefly talk. The
+random library and any other library
+
+13
+00:00:46,620 --> 00:00:50,980
+that you're going to borrow in
+Python is code that exists somewhere
+
+14
+00:00:50,980 --> 00:00:55,260
+else that somebody else wrote that
+is widely accessible to anybody.
+
+15
+00:00:55,260 --> 00:00:59,360
+Now, there are a few that require
+some installation packages first. Then
+
+16
+00:00:59,360 --> 00:01:02,680
+there's also some that kind of come
+with Python, but that you still
+
+17
+00:01:02,680 --> 00:01:07,460
+need to explicitly say import this.
+So they're built in in a sense.
+
+18
+00:01:07,460 --> 00:01:11,320
+And random is going to be one of
+those. So when we use the random
+
+19
+00:01:11,320 --> 00:01:15,760
+library, we import it at the top
+of our code. And then whenever we
+
+20
+00:01:15,760 --> 00:01:20,660
+want to use a function from the random
+library, we do random dot whatever
+
+21
+00:01:20,660 --> 00:01:23,830
+function it is. And if you ever
+want to read up more on like...
+
+22
+00:01:25,060 --> 00:01:29,640
+a specific library or module I
+would just recommend googling it and
+
+23
+00:01:29,640 --> 00:01:33,800
+then you can click on the documentation
+for it and documentation I know
+
+24
+00:01:33,800 --> 00:01:38,220
+looks super scary I don't want to
+read that I don't have capacity
+
+25
+00:01:38,220 --> 00:01:41,420
+to focus for more than 15 seconds
+without a bag of popcorn in front of
+
+26
+00:01:41,420 --> 00:01:45,230
+me whatever it might be but it is
+really helpful to read documentation
+
+27
+00:01:45,230 --> 00:01:48,870
+you can also go to one of my
+favorite websites which is w3schools
+
+28
+00:01:53,520 --> 00:01:58,340
+and type in exactly what you want
+to learn more about and w3schools is
+
+29
+00:01:58,340 --> 00:02:01,800
+amazing because it's a little bit
+less just chunks of text on the
+
+30
+00:02:01,800 --> 00:02:07,260
+screen and a little bit more interactable
+so for example you could click
+
+31
+00:02:07,260 --> 00:02:10,780
+on any of these functions here and
+it will tell you more about them
+
+32
+00:02:10,780 --> 00:02:19,300
+and it will also give you a demo
+where you can learn more about the
+
+33
+00:02:19,300 --> 00:02:22,280
+function and actually use it. So
+for example, the ones we're going to
+
+34
+00:02:22,280 --> 00:02:25,340
+talk about today are rand range
+and rand int. So I'm going to click
+
+35
+00:02:25,340 --> 00:02:31,180
+on rand int and here it gives me a
+very easy and simple definition of
+
+36
+00:02:31,180 --> 00:02:34,960
+what that function does and I can
+try it myself. So and it opens up
+
+37
+00:02:34,960 --> 00:02:39,460
+another interactive page and talks
+about syntax, talks about parameters.
+
+38
+00:02:39,460 --> 00:02:42,820
+So I love, love, love W3 schools
+for when you're trying to learn
+
+39
+00:02:42,820 --> 00:02:47,640
+about Python syntax or just trying
+to figure out some different things
+
+40
+00:02:47,640 --> 00:02:51,720
+for your code. You can also read
+the documentation. This is amazing.
+
+41
+00:02:51,840 --> 00:02:55,200
+Sometimes it's a little bit much
+for me even. And so this is a great
+
+42
+00:02:55,200 --> 00:02:59,320
+thing to paste into an LLM to have
+it kind of translate it to you. But
+
+43
+00:02:59,320 --> 00:03:03,360
+for now, let's jump over to our
+code space and we'll talk a little
+
+44
+00:03:03,360 --> 00:03:06,900
+bit about randoms. Whoops, I added
+one too many quotation mark there.
+
+45
+00:03:07,240 --> 00:03:09,500
+Random numbers.
+
+46
+00:03:09,660 --> 00:03:12,900
+So we're going to grab two
+functions from the random
+
+47
+00:03:12,900 --> 00:03:15,350
+library, but before we do
+anything, we're going to import
+
+48
+00:03:17,740 --> 00:03:18,620
+random.
+
+49
+00:03:20,200 --> 00:03:25,100
+You may have also seen people
+say import a library as something
+
+50
+00:03:25,100 --> 00:03:28,660
+else, and that's totally okay too.
+I'm just going to import random.
+
+51
+00:03:28,960 --> 00:03:32,640
+So I want to use rand range.
+
+52
+00:03:33,240 --> 00:03:35,800
+So I'm going to say
+number, let's call it rand
+
+53
+00:03:35,800 --> 00:03:41,420
+number, is going to be equal
+to random dot rand range.
+
+54
+00:03:41,960 --> 00:03:45,360
+And rand range requires
+two arguments, your
+
+55
+00:03:45,360 --> 00:03:49,080
+starting number and your
+up to inclusive number.
+
+56
+00:03:50,480 --> 00:03:53,540
+And then let's just print out
+what that random number is.
+
+57
+00:03:55,660 --> 00:03:58,700
+Let's say rand range random.
+
+58
+00:04:03,040 --> 00:04:09,420
+And if we were to run this code, I
+would hope we see a random number
+
+59
+00:04:09,420 --> 00:04:14,420
+including all the numbers between
+one and four, but not including
+
+60
+00:04:14,420 --> 00:04:18,800
+four. And I broke it. It's fine.
+Great. Okay, so that's rand range.
+
+61
+00:04:19,000 --> 00:04:24,920
+The other function is going
+to be rand int, which I like
+
+62
+00:04:24,920 --> 00:04:30,580
+better because it's inclusive.
+So here's our rand number two.
+
+63
+00:04:31,220 --> 00:04:37,620
+We'll call random dot rand
+int. Let's do one and four
+
+64
+00:04:39,220 --> 00:04:44,560
+again. And we'll print randint random.
+
+65
+00:04:50,590 --> 00:04:55,750
+Hopefully we should see four popping
+up, which thankfully I only took
+
+66
+00:04:55,750 --> 00:05:00,350
+two times running it. So randint is
+inclusive, randrange is not inclusive.
+
+67
+00:05:00,350 --> 00:05:03,090
+So that's basically all you need
+to know. Now why would you ever
+
+68
+00:05:03,090 --> 00:05:07,330
+want to generate a random number
+in your python code well then the
+
+69
+00:05:07,330 --> 00:05:13,570
+possibilities are endless you could be
+coding a game that requires dice roll
+
+70
+00:05:13,570 --> 00:05:18,890
+you could be um trying to like
+shuffle a deck and like requiring
+
+71
+00:05:18,890 --> 00:05:22,870
+random numbers for that you could
+be simulating a coin toss so there's
+
+72
+00:05:22,870 --> 00:05:28,690
+infinite possibilities here and I hope
+that your brain has exploded learning
+
+73
+00:05:28,690 --> 00:05:33,350
+about random numbers so that you
+too can code something amazing and
+
+74
+00:05:33,350 --> 00:05:35,810
+And anyways, that's all for this
+content video. Thanks for watching.

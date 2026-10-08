@@ -1,0 +1,295 @@
+1
+00:00:02,780 --> 00:00:05,620
+Hey everybody, welcome to the
+content video going over to section
+
+2
+00:00:05,620 --> 00:00:09,980
+8.3 from the textbook,
+concatenating and repeating strings.
+
+3
+00:00:10,380 --> 00:00:14,100
+Really what I wanted to
+go over in this section is
+
+4
+00:00:14,100 --> 00:00:16,740
+how to concatenate strings,
+what that means, and
+
+5
+00:00:16,740 --> 00:00:19,420
+how to use augmented
+assignment with strings. So
+
+6
+00:00:19,680 --> 00:00:23,160
+it's a really short section. You
+guys are welcome to look through
+
+7
+00:00:23,160 --> 00:00:25,620
+it, but I think what we're going
+to do is just jump over to a
+
+8
+00:00:25,620 --> 00:00:29,820
+couple of examples because I think
+that will help us make the most
+
+9
+00:00:29,820 --> 00:00:37,500
+sense of this a string concatenation
+okay so what we've been
+
+10
+00:00:37,500 --> 00:00:41,840
+doing primarily is when we do like
+a print statement we say hello
+
+11
+00:00:42,030 --> 00:00:46,120
+and then we put like our variable
+name in there and then we put
+
+12
+00:00:46,120 --> 00:00:51,410
+like another I don't know thing
+in there let's say that variable
+
+13
+00:00:51,820 --> 00:00:58,300
+is equal to the string book because
+I I can't think of anything.
+
+14
+00:00:58,500 --> 00:01:03,130
+And then if we were to print this
+out, we would see hello, book,
+
+15
+00:01:03,130 --> 00:01:08,140
+world. That's a really dumb print
+statement. But what we've done so far
+
+16
+00:01:08,140 --> 00:01:13,060
+is we've kind of used this built
+-in, I guess, operator in print
+
+17
+00:01:13,060 --> 00:01:19,660
+statements, the comma, to add a
+space between our strings. So in the
+
+18
+00:01:19,660 --> 00:01:26,720
+real world, I guess, when you're using
+strings, what happens is something
+
+19
+00:01:26,720 --> 00:01:29,170
+more like this. Let's say we
+have a variable called firstName.
+
+20
+00:01:30,450 --> 00:01:33,230
+I'm going to set that equal
+to my firstName, lastName.
+
+21
+00:01:38,040 --> 00:01:41,260
+And then if we made another
+variable called fullName,
+
+22
+00:01:42,920 --> 00:01:48,360
+that would be something like firstName
+plus lastName, right? Whoops.
+
+23
+00:01:50,620 --> 00:01:52,750
+So if we were to print out fullName,
+
+24
+00:01:57,220 --> 00:02:01,000
+we would see something like this
+printed out to the console. But
+
+25
+00:02:01,000 --> 00:02:04,880
+what's the problem here? It's
+that full name is a variable and
+
+26
+00:02:04,880 --> 00:02:08,200
+it's first name plus last name,
+but we've got no space in between
+
+27
+00:02:08,200 --> 00:02:11,090
+our variables. So what's going
+on here is called concatenation.
+
+28
+00:02:11,090 --> 00:02:13,800
+It's just where we take two
+strings and we literally add them
+
+29
+00:02:13,800 --> 00:02:16,920
+together. And so we don't add
+them together in the sense like
+
+30
+00:02:16,920 --> 00:02:20,340
+maybe you would in math where a
+variable like an integer plus an
+
+31
+00:02:20,340 --> 00:02:23,540
+integer is a greater integer or
+less if you're using negatives.
+
+32
+00:02:23,760 --> 00:02:28,980
+In this case, we take two strings
+and we just literally like place them
+
+33
+00:02:28,980 --> 00:02:32,540
+flush next to each other. Whatever
+is in one string plus whatever is
+
+34
+00:02:32,540 --> 00:02:35,960
+in the other string. So if we wanted
+to format this string, we would
+
+35
+00:02:35,960 --> 00:02:41,760
+have to literally add a space plus
+the other string. And then if we
+
+36
+00:02:41,760 --> 00:02:44,740
+printed full name out to the console,
+it would be correct in this case.
+
+37
+00:02:45,460 --> 00:02:48,320
+So this can be done with
+augmented assignment.
+
+38
+00:02:50,420 --> 00:02:56,910
+So if I said full name plus equals comma
+
+39
+00:02:56,960 --> 00:03:04,740
+welcome and let's now
+print full name again
+
+40
+00:03:06,780 --> 00:03:10,640
+we would see Chelsea
+Harding welcome. That's so
+
+41
+00:03:10,640 --> 00:03:14,600
+nice. Wow. And we could
+do something like this 2.
+
+42
+00:03:14,800 --> 00:03:16,660
+3 equals apple.
+
+43
+00:03:17,300 --> 00:03:19,720
+4i in range
+
+44
+00:03:21,080 --> 00:03:22,000
+10
+
+45
+00:03:23,120 --> 00:03:24,040
+root
+
+46
+00:03:25,020 --> 00:03:28,320
+I don't know multiply equals.
+That could be exciting.
+
+47
+00:03:28,920 --> 00:03:29,500
+2?
+
+48
+00:03:30,440 --> 00:03:31,360
+Wait.
+
+49
+00:03:33,700 --> 00:03:35,280
+I don't think I'm doing this right.
+
+50
+00:03:36,280 --> 00:03:40,080
+If we times a string by 2,
+what happens? Is it just like
+
+51
+00:03:40,480 --> 00:03:41,880
+oh, let's see what happens.
+
+52
+00:03:45,560 --> 00:03:47,320
+It'll either break on us or it'll be
+
+53
+00:03:47,320 --> 00:03:49,380
+a lot of apples. It's a lot of apples.
+
+54
+00:03:50,220 --> 00:03:51,960
+It's a ton of apples.
+
+55
+00:03:51,960 --> 00:03:56,300
+So what did we do here? We
+multiply equals by two each time we
+
+56
+00:03:56,300 --> 00:04:00,500
+looped, and we did that ten times.
+So we started out with just one
+
+57
+00:04:00,500 --> 00:04:05,080
+apple, and then we multiplied apple
+by two, so it became two apples.
+
+58
+00:04:05,080 --> 00:04:08,780
+Oh, where'd that go? Multiply
+equals two. Two apples, and then
+
+59
+00:04:08,780 --> 00:04:14,190
+two apples by two again became
+four apples. and it just got
+
+60
+00:04:14,190 --> 00:04:17,000
+exponentially bigger 10 times.
+So by the end of it, we have
+
+61
+00:04:17,000 --> 00:04:19,980
+a lot of apples. So that's
+everything in this content video.
+
+62
+00:04:19,980 --> 00:04:20,920
+Thank you for watching.

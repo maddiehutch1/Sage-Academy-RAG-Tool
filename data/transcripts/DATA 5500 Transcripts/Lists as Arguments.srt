@@ -1,0 +1,188 @@
+1
+00:00:02,650 --> 00:00:06,810
+Hey, everybody. In this content
+video, we're actually, so we've been
+
+2
+00:00:06,810 --> 00:00:10,990
+talking about functions and function
+defaults, function arguments.
+
+3
+00:00:10,990 --> 00:00:13,870
+We're actually jumping back over
+into the list section of the textbook
+
+4
+00:00:13,870 --> 00:00:17,530
+at this point and talking about
+passing lists to functions, which is
+
+5
+00:00:17,530 --> 00:00:22,030
+a really simple idea. It's just
+basically that you can put a list in
+
+6
+00:00:22,030 --> 00:00:26,010
+a function as an argument, which
+is worth kind of bringing up the
+
+7
+00:00:26,010 --> 00:00:30,830
+conversation about what kinds of
+variables you can pass into functions.
+
+8
+00:00:32,250 --> 00:00:36,090
+and the answer is anything you can
+you can literally pass anything
+
+9
+00:00:36,090 --> 00:00:40,290
+into a function and it can use it
+um this will become more relevant
+
+10
+00:00:40,290 --> 00:00:44,990
+too as we talk about objects and
+classes um and you can use an
+
+11
+00:00:44,990 --> 00:00:47,990
+object in a class in this kind of
+similar ways you would a variable
+
+12
+00:00:47,990 --> 00:00:53,950
+so let's um do an example here
+uh we'll create a function we'll
+
+13
+00:00:53,950 --> 00:01:01,450
+say sum all values and the argument
+that will take is a list and
+
+14
+00:01:06,880 --> 00:01:13,080
+we'll say for I in range length of list
+
+15
+00:01:16,920 --> 00:01:19,140
+we'll say actually
+
+16
+00:01:27,700 --> 00:01:29,420
+let's say
+
+17
+00:01:33,260 --> 00:01:35,260
+let's say we have a variable called total
+
+18
+00:01:37,000 --> 00:01:38,760
+and we'll say
+
+19
+00:01:40,560 --> 00:01:42,840
+for I in list
+
+20
+00:01:44,220 --> 00:01:45,260
+total
+
+21
+00:01:46,780 --> 00:01:48,740
+plus equals one
+
+22
+00:01:49,440 --> 00:01:51,320
+and we'll return the total.
+
+23
+00:01:53,190 --> 00:01:56,470
+So if we were to say oh I
+don't know here's a list
+
+24
+00:01:57,420 --> 00:02:03,300
+for fun and it is one two three
+four five six seven eight nine
+
+25
+00:02:03,620 --> 00:02:04,660
+ten
+
+26
+00:02:06,170 --> 00:02:08,700
+then we can pass that list into our
+
+27
+00:02:08,700 --> 00:02:11,400
+argument or into our
+function we could say
+
+28
+00:02:13,140 --> 00:02:19,200
+print out the sum of all values for
+
+29
+00:02:19,200 --> 00:02:26,360
+my list for fun and it should do that
+
+30
+00:02:29,160 --> 00:02:31,500
+Then the total is 10.
+
+31
+00:02:31,940 --> 00:02:33,680
+That's not right.
+
+32
+00:02:33,990 --> 00:02:38,000
+Why did it say that? Oh, it's
+because I said total plus
+
+33
+00:02:38,000 --> 00:02:42,320
+equals one. No, I meant to say
+total plus equals I. My bad.
+
+34
+00:02:42,800 --> 00:02:43,340
+Okay.
+
+35
+00:02:44,380 --> 00:02:47,980
+55. That's what we
+should see because we did
+
+36
+00:02:47,980 --> 00:02:50,780
+this correctly the first
+time through. Anyways,
+
+37
+00:02:51,180 --> 00:02:55,180
+point being, you can pass a
+list into a function as an
+
+38
+00:02:55,180 --> 00:02:58,340
+argument and it will still behave
+as a list and it will still
+
+39
+00:02:58,340 --> 00:03:00,840
+be a list and you can do all
+sorts of things to it in your
+
+40
+00:03:00,840 --> 00:03:03,200
+function that you would
+normally do to a list and that's
+
+41
+00:03:03,200 --> 00:03:06,420
+everything for this content
+video thank you for watching

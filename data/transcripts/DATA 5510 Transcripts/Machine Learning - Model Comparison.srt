@@ -1,0 +1,883 @@
+1
+00:00:02,588 --> 00:00:04,880
+INSTRUCTOR: Hello, everyone,
+and welcome to the content
+
+2
+00:00:04,880 --> 00:00:08,880
+video for machine
+learning model comparison.
+
+3
+00:00:08,880 --> 00:00:09,380
+OK.
+
+4
+00:00:09,380 --> 00:00:12,470
+So this video is really
+just a discussion
+
+5
+00:00:12,470 --> 00:00:16,219
+or sets up a discussion on
+the different machine learning
+
+6
+00:00:16,219 --> 00:00:17,490
+models that exist.
+
+7
+00:00:17,490 --> 00:00:19,740
+What are they and why
+are there so many?
+
+8
+00:00:19,740 --> 00:00:22,040
+Why isn't it just that
+regression and all
+
+9
+00:00:22,040 --> 00:00:25,080
+the regression variations
+can do the same thing
+
+10
+00:00:25,080 --> 00:00:27,290
+and we call it good with that?
+
+11
+00:00:27,290 --> 00:00:30,660
+And it compares what they do
+and how they do it, essentially.
+
+12
+00:00:30,660 --> 00:00:34,850
+So as I mentioned,
+there is a lot
+
+13
+00:00:34,850 --> 00:00:38,180
+of different machine
+learning models out there
+
+14
+00:00:38,180 --> 00:00:39,990
+that fit data differently.
+
+15
+00:00:39,990 --> 00:00:42,020
+Each kind of have
+algorithm on how
+
+16
+00:00:42,020 --> 00:00:45,390
+they fit that they pair
+with that's different.
+
+17
+00:00:45,390 --> 00:00:49,220
+The structure of the
+model itself is different
+
+18
+00:00:49,220 --> 00:00:50,970
+depending on the scenario.
+
+19
+00:00:50,970 --> 00:00:54,290
+And largely the reason we
+have so many different models
+
+20
+00:00:54,290 --> 00:00:57,080
+is because we have so many
+different types of data--
+
+21
+00:00:57,080 --> 00:00:59,120
+and not even just types
+of data, but structure
+
+22
+00:00:59,120 --> 00:01:04,220
+of data where different
+models perform better more
+
+23
+00:01:04,220 --> 00:01:07,620
+accurately on some data
+sets rather than others.
+
+24
+00:01:07,620 --> 00:01:11,030
+And because of the vastness
+of different types of data
+
+25
+00:01:11,030 --> 00:01:15,290
+in the world, all of these
+machine learning models
+
+26
+00:01:15,290 --> 00:01:17,810
+do really, really
+well in their space.
+
+27
+00:01:17,810 --> 00:01:23,370
+So let's go through a
+quick example of that.
+
+28
+00:01:23,370 --> 00:01:24,630
+So you can see it here.
+
+29
+00:01:24,630 --> 00:01:27,960
+This gives a good
+visual on what they do
+
+30
+00:01:27,960 --> 00:01:29,110
+and how they're different.
+
+31
+00:01:29,110 --> 00:01:33,210
+So the data set
+I'm going to use,
+
+32
+00:01:33,210 --> 00:01:34,950
+I actually got it from sklearn.
+
+33
+00:01:34,950 --> 00:01:38,550
+And it's like a dummy
+classification data set.
+
+34
+00:01:38,550 --> 00:01:40,170
+Really the visuals
+are really good,
+
+35
+00:01:40,170 --> 00:01:41,640
+but the data is really simple.
+
+36
+00:01:41,640 --> 00:01:44,140
+And it's classification.
+
+37
+00:01:44,140 --> 00:01:47,340
+So classification refers to
+you have multiple classes
+
+38
+00:01:47,340 --> 00:01:49,750
+and you're trying to
+predict the correct one.
+
+39
+00:01:49,750 --> 00:01:51,870
+For example, it could be
+an animal I'm predicting.
+
+40
+00:01:51,870 --> 00:01:53,970
+The data set could
+be images and you're
+
+41
+00:01:53,970 --> 00:01:56,160
+predicting the difference
+between cats and dogs
+
+42
+00:01:56,160 --> 00:01:58,830
+and hamsters and guinea pigs,
+those would be the classes--
+
+43
+00:01:58,830 --> 00:02:01,697
+the dog class, cat class,
+hamster class, guinea pig class.
+
+44
+00:02:01,697 --> 00:02:03,780
+And then you're trying to
+learn which one is which
+
+45
+00:02:03,780 --> 00:02:05,850
+and then predict which
+one is which in a new data
+
+46
+00:02:05,850 --> 00:02:07,270
+set you haven't seen yet.
+
+47
+00:02:07,270 --> 00:02:08,470
+This is much more simple.
+
+48
+00:02:08,470 --> 00:02:09,870
+It just uses data
+points that can
+
+49
+00:02:09,870 --> 00:02:14,140
+be defined as the blue class
+and then the red class.
+
+50
+00:02:14,140 --> 00:02:18,390
+And then it uses the most
+popular, most successful machine
+
+51
+00:02:18,390 --> 00:02:22,110
+learning models of the day,
+nearest neighbor, linear support
+
+52
+00:02:22,110 --> 00:02:25,052
+vector machine and other support
+vector machine, Gaussian,
+
+53
+00:02:25,052 --> 00:02:27,010
+decision tree, random
+forest, which by the way,
+
+54
+00:02:27,010 --> 00:02:29,170
+was developed by a
+professor at Utah State
+
+55
+00:02:29,170 --> 00:02:33,800
+while she was doing her PhD
+at Cal Berkeley, I believe.
+
+56
+00:02:33,800 --> 00:02:36,370
+And for those who
+know Sherrod Jones,
+
+57
+00:02:36,370 --> 00:02:39,700
+Sherrod was her PhD student,
+so he knows random forests
+
+58
+00:02:39,700 --> 00:02:40,630
+thoroughly.
+
+59
+00:02:40,630 --> 00:02:44,740
+Neural net AdaBoost,
+naive Bayes.
+
+60
+00:02:44,740 --> 00:02:48,500
+So anyway, just a
+slew of models here.
+
+61
+00:02:48,500 --> 00:02:50,597
+Then a really
+simple data and then
+
+62
+00:02:50,597 --> 00:02:53,305
+we're going to predict the class
+on each of those and take a look
+
+63
+00:02:53,305 --> 00:02:56,370
+and generate some
+visuals on how it did.
+
+64
+00:02:56,370 --> 00:02:56,870
+All right.
+
+65
+00:02:56,870 --> 00:02:57,390
+So I run it.
+
+66
+00:02:57,390 --> 00:02:59,390
+And I don't need to say
+too much about the code.
+
+67
+00:02:59,390 --> 00:03:00,890
+In case you're
+curious, it just goes
+
+68
+00:03:00,890 --> 00:03:05,020
+through this kind of generic
+data and learns on it,
+
+69
+00:03:05,020 --> 00:03:06,817
+fits it, and then
+predicts it, and then
+
+70
+00:03:06,817 --> 00:03:08,150
+generates a visual to show that.
+
+71
+00:03:08,150 --> 00:03:11,110
+So let's go straight to the
+visual, I think that'll help.
+
+72
+00:03:11,110 --> 00:03:14,820
+And it is big, so it
+takes a second to load.
+
+73
+00:03:17,400 --> 00:03:20,275
+I'll see if I can fit the
+whole thing on the page here.
+
+74
+00:03:24,480 --> 00:03:27,160
+Yeah, it might have been too big
+that it-- oh no, there we go.
+
+75
+00:03:27,160 --> 00:03:28,440
+It made it.
+
+76
+00:03:28,440 --> 00:03:32,120
+Let me shrink it just a touch.
+
+77
+00:03:32,120 --> 00:03:33,180
+That looks good.
+
+78
+00:03:33,180 --> 00:03:34,640
+Let me go a little more.
+
+79
+00:03:34,640 --> 00:03:36,210
+OK, here we go.
+
+80
+00:03:36,210 --> 00:03:36,710
+All right.
+
+81
+00:03:36,710 --> 00:03:37,793
+So what are we looking at?
+
+82
+00:03:37,793 --> 00:03:44,760
+So the rows of the
+data are each classes.
+
+83
+00:03:44,760 --> 00:03:46,855
+So the row is-- here's
+the red and blue class
+
+84
+00:03:46,855 --> 00:03:49,230
+where you can see the red
+class is all in the upper left,
+
+85
+00:03:49,230 --> 00:03:52,110
+the blue class kind
+of makes a U here.
+
+86
+00:03:52,110 --> 00:03:57,290
+And that's the same all
+the way across in the rows.
+
+87
+00:03:57,290 --> 00:03:57,862
+There we go.
+
+88
+00:03:57,862 --> 00:03:59,570
+And then the same
+thing in the second row
+
+89
+00:03:59,570 --> 00:04:01,620
+here, the blue class
+is all in the middle,
+
+90
+00:04:01,620 --> 00:04:03,432
+the red class is
+all surrounding it.
+
+91
+00:04:03,432 --> 00:04:04,890
+That's the same
+for the entire row.
+
+92
+00:04:04,890 --> 00:04:07,015
+And then each of the columns
+is a different machine
+
+93
+00:04:07,015 --> 00:04:09,420
+learning model and how it
+tried to classify that data.
+
+94
+00:04:09,420 --> 00:04:10,253
+And then same thing.
+
+95
+00:04:10,253 --> 00:04:13,280
+Third row is a different data
+set, red and blue classes,
+
+96
+00:04:13,280 --> 00:04:16,079
+and each of the columns
+is a different model.
+
+97
+00:04:16,079 --> 00:04:17,160
+OK, so here it is.
+
+98
+00:04:17,160 --> 00:04:18,829
+This is a really
+good visual on--
+
+99
+00:04:18,829 --> 00:04:21,410
+it's the same data,
+but each model,
+
+100
+00:04:21,410 --> 00:04:24,387
+it tries to separate
+the classes differently.
+
+101
+00:04:24,387 --> 00:04:25,470
+Well, how does it do that?
+
+102
+00:04:25,470 --> 00:04:27,800
+Each model has an
+associated algorithm
+
+103
+00:04:27,800 --> 00:04:29,940
+that it uses to fit the data.
+
+104
+00:04:29,940 --> 00:04:32,940
+Remember that the fitting
+phase is the learning phase.
+
+105
+00:04:32,940 --> 00:04:34,820
+It's where we learn
+about the data,
+
+106
+00:04:34,820 --> 00:04:38,360
+how the data is different,
+how the classes are
+
+107
+00:04:38,360 --> 00:04:40,140
+different from each other.
+
+108
+00:04:40,140 --> 00:04:45,855
+And then the model tries to
+segment or create class areas
+
+109
+00:04:45,855 --> 00:04:46,980
+that it can use to predict.
+
+110
+00:04:46,980 --> 00:04:48,260
+So here's nearest neighbor.
+
+111
+00:04:48,260 --> 00:04:51,230
+Nearest neighbor
+you can see like--
+
+112
+00:04:51,230 --> 00:04:53,520
+compare it to human
+intelligence for a second.
+
+113
+00:04:53,520 --> 00:04:56,000
+If I showed you this data on
+the left here, these classes,
+
+114
+00:04:56,000 --> 00:05:03,520
+how would you draw a line
+to divide those two areas?
+
+115
+00:05:03,520 --> 00:05:07,690
+Well, one line go through
+there and call it good.
+
+116
+00:05:07,690 --> 00:05:10,530
+Well, you can see you're
+similar to nearest
+
+117
+00:05:10,530 --> 00:05:11,920
+neighbors and neural net.
+
+118
+00:05:11,920 --> 00:05:15,900
+That's how the nearest neighbor
+models and the neural net model
+
+119
+00:05:15,900 --> 00:05:16,680
+did it.
+
+120
+00:05:16,680 --> 00:05:18,700
+You can see-- look
+at random forest.
+
+121
+00:05:18,700 --> 00:05:20,380
+It creates a tree.
+
+122
+00:05:20,380 --> 00:05:21,570
+But what does a tree do?
+
+123
+00:05:21,570 --> 00:05:23,177
+A tree creates a divide.
+
+124
+00:05:23,177 --> 00:05:25,260
+It says, all right, this
+variable for these values
+
+125
+00:05:25,260 --> 00:05:25,960
+go to the left.
+
+126
+00:05:25,960 --> 00:05:27,900
+Remember the binary tree
+that we talked about?
+
+127
+00:05:27,900 --> 00:05:29,820
+For this value of
+input go to the left,
+
+128
+00:05:29,820 --> 00:05:31,360
+for this value go to the right.
+
+129
+00:05:31,360 --> 00:05:32,330
+It creates a divide.
+
+130
+00:05:32,330 --> 00:05:36,010
+Well, here in the image, you see
+that divide by just these lines.
+
+131
+00:05:36,010 --> 00:05:37,090
+They create a section.
+
+132
+00:05:37,090 --> 00:05:38,820
+That section has
+been divided off
+
+133
+00:05:38,820 --> 00:05:41,597
+because if it's in that
+section, it will likely be--
+
+134
+00:05:41,597 --> 00:05:43,180
+let me give an
+example, the red class.
+
+135
+00:05:43,180 --> 00:05:45,388
+So look at these lines right
+here, this vertical line
+
+136
+00:05:45,388 --> 00:05:46,570
+and this horizontal line.
+
+137
+00:05:46,570 --> 00:05:48,520
+We've created a
+section of the tree.
+
+138
+00:05:48,520 --> 00:05:51,390
+Well, this section, when
+I make this visual here,
+
+139
+00:05:51,390 --> 00:05:52,510
+is for the red.
+
+140
+00:05:52,510 --> 00:05:55,350
+And then for these blues,
+it tries to section off.
+
+141
+00:05:55,350 --> 00:05:56,910
+The real magic
+comes in the middle
+
+142
+00:05:56,910 --> 00:06:02,340
+here where random forest is
+really good at linearities
+
+143
+00:06:02,340 --> 00:06:05,790
+where it can come in here
+and make little tiny sections
+
+144
+00:06:05,790 --> 00:06:07,210
+around the class.
+
+145
+00:06:07,210 --> 00:06:09,610
+That's really where you
+get high accuracies.
+
+146
+00:06:09,610 --> 00:06:12,012
+Look at random
+forest is 0.93 here.
+
+147
+00:06:12,012 --> 00:06:12,720
+That's the point.
+
+148
+00:06:12,720 --> 00:06:15,780
+Linear SVM is 0.88.
+
+149
+00:06:15,780 --> 00:06:20,970
+So trees, your eye can quickly
+go to the tree-based models
+
+150
+00:06:20,970 --> 00:06:24,000
+by the lines where the
+lines are sections you
+
+151
+00:06:24,000 --> 00:06:26,700
+know that's a tree-based model.
+
+152
+00:06:26,700 --> 00:06:29,520
+The ones that can
+almost draw a circle,
+
+153
+00:06:29,520 --> 00:06:32,160
+check it out, like neural
+net and naive Bayes,
+
+154
+00:06:32,160 --> 00:06:36,570
+those work really well when you
+have these data sets right here.
+
+155
+00:06:36,570 --> 00:06:40,290
+And again, regression
+handles linear data sets.
+
+156
+00:06:40,290 --> 00:06:42,870
+Well, the vast majority of--
+
+157
+00:06:42,870 --> 00:06:45,960
+the world grows in
+ever infinite amounts
+
+158
+00:06:45,960 --> 00:06:47,430
+of data getting generated.
+
+159
+00:06:47,430 --> 00:06:49,800
+More and more of it
+is not linear data.
+
+160
+00:06:49,800 --> 00:06:53,280
+It's data where inputs
+have crazy random effects
+
+161
+00:06:53,280 --> 00:06:58,780
+on the outputs that
+can't be drawn linearly.
+
+162
+00:06:58,780 --> 00:07:00,780
+So nonlinearities
+in your data require
+
+163
+00:07:00,780 --> 00:07:03,700
+a nonlinear fitting
+machine learning model.
+
+164
+00:07:03,700 --> 00:07:05,805
+And you can see here
+the different ways
+
+165
+00:07:05,805 --> 00:07:07,680
+that machine learning
+models will try and fit
+
+166
+00:07:07,680 --> 00:07:11,670
+the data so that they can
+predict it most accurately.
+
+167
+00:07:11,670 --> 00:07:13,770
+This is a good visual.
+
+168
+00:07:13,770 --> 00:07:16,800
+I should also mention,
+obviously, this video,
+
+169
+00:07:16,800 --> 00:07:19,680
+I'm talking about the
+differences at a high level
+
+170
+00:07:19,680 --> 00:07:20,880
+here.
+
+171
+00:07:20,880 --> 00:07:24,630
+I'm not going to cover the
+literals of how machine learning
+
+172
+00:07:24,630 --> 00:07:27,360
+models are constructed-- their
+architecture, the algorithms
+
+173
+00:07:27,360 --> 00:07:29,340
+that fit are different.
+
+174
+00:07:29,340 --> 00:07:31,920
+However, that is very
+interesting and very important
+
+175
+00:07:31,920 --> 00:07:33,540
+information.
+
+176
+00:07:33,540 --> 00:07:36,930
+I highly recommend you
+take our courses here--
+
+177
+00:07:36,930 --> 00:07:40,530
+DATA 5600 and DATA 5610.
+
+178
+00:07:40,530 --> 00:07:43,750
+At least those are the names of
+the classes at the time of this.
+
+179
+00:07:43,750 --> 00:07:48,640
+This video are extremely
+good, extremely interesting.
+
+180
+00:07:48,640 --> 00:07:52,290
+And they take machine
+learning from magic
+
+181
+00:07:52,290 --> 00:07:55,860
+to really the guts of what it
+can do, how to take a problem
+
+182
+00:07:55,860 --> 00:07:59,610
+and put it into inputs and
+outputs, inputs to be learned
+
+183
+00:07:59,610 --> 00:08:01,800
+and then an output
+to predict, and when
+
+184
+00:08:01,800 --> 00:08:07,100
+to use which model in whatever
+data scenario that you run into.
+
+185
+00:08:07,100 --> 00:08:07,760
+OK.
+
+186
+00:08:07,760 --> 00:08:10,940
+So that concludes this video
+on machine learning models
+
+187
+00:08:10,940 --> 00:08:12,390
+and comparing how they work.
+
+188
+00:08:12,390 --> 00:08:14,290
+Thanks for watching.

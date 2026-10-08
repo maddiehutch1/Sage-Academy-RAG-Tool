@@ -1,0 +1,813 @@
+1
+00:00:02,940 --> 00:00:04,400
+Hey everybody, welcome to the content
+
+2
+00:00:04,400 --> 00:00:07,180
+video going over
+variables and arithmetic.
+
+3
+00:00:07,580 --> 00:00:11,140
+We are gonna start in
+section 2.2 of your textbook,
+
+4
+00:00:11,440 --> 00:00:14,720
+starting with variables, and then
+we'll jump to section 2.3. And
+
+5
+00:00:14,720 --> 00:00:19,020
+just a quick note about these content
+videos is that they are always
+
+6
+00:00:19,020 --> 00:00:22,140
+going to, most of the time, draw
+from topics from the textbook,
+
+7
+00:00:22,280 --> 00:00:27,580
+but we don't always hit every
+single section in the textbook, if
+
+8
+00:00:27,580 --> 00:00:30,940
+that makes sense. And so not only
+can you watch the content videos,
+
+9
+00:00:30,940 --> 00:00:33,500
+you can also follow along with
+the content in the textbook
+
+10
+00:00:33,500 --> 00:00:39,580
+and you can use the content video
+repository code to help you learn
+
+11
+00:00:39,580 --> 00:00:42,200
+the subject matter as we go
+throughout the course of semester.
+
+12
+00:00:42,360 --> 00:00:46,160
+We're going to start by talking
+about variables and assignment. So
+
+13
+00:00:46,160 --> 00:00:50,280
+the main thing here is that variables
+are how we store data in memory.
+
+14
+00:00:50,320 --> 00:00:53,880
+If you've ever taken something like
+algebra maybe you learned about
+
+15
+00:00:53,880 --> 00:00:58,300
+you know a plus b equals c and a
+and b c they all represent some
+
+16
+00:00:58,300 --> 00:01:03,180
+kind of a data, usually numbers in
+the context of algebra, but some
+
+17
+00:01:03,180 --> 00:01:06,700
+kind of data that we're working
+with. And in Python, variables are
+
+18
+00:01:06,700 --> 00:01:09,820
+going to represent all sorts of
+things. They can represent objects,
+
+19
+00:01:09,820 --> 00:01:13,400
+they can represent data such as
+numbers, they can represent strings,
+
+20
+00:01:13,460 --> 00:01:18,600
+booleans, and all sorts of
+different data points like that. And
+
+21
+00:01:18,600 --> 00:01:22,860
+then the way that we assign
+values to variables is through the
+
+22
+00:01:22,860 --> 00:01:26,540
+assignment operator, or as you
+probably know it, the equals sign.
+
+23
+00:01:26,780 --> 00:01:30,080
+So it's important to know that
+the equals sign is called the
+
+24
+00:01:30,080 --> 00:01:34,700
+assignment operator in Python.
+And the difference comes up
+
+25
+00:01:34,700 --> 00:01:38,120
+a couple of times, especially
+when we are testing for truth.
+
+26
+00:01:39,020 --> 00:01:42,040
+For example, in like an if
+statement or an if else,
+
+27
+00:01:42,150 --> 00:01:45,480
+we would use a double
+equals instead of a single
+
+28
+00:01:45,480 --> 00:01:48,260
+equals because the equals
+is the assignment operator.
+
+29
+00:01:50,400 --> 00:01:56,640
+So let's jump over to
+our GitHub repository.
+
+30
+00:01:56,960 --> 00:01:59,540
+And really quick, what I
+wanted, I was actually looking
+
+31
+00:01:59,540 --> 00:02:02,160
+at how to do it here. I
+wanted to have you guys
+
+32
+00:02:02,160 --> 00:02:05,960
+quickly change a setting before
+we get too far into code.
+
+33
+00:02:06,120 --> 00:02:10,360
+In your code space here, I want you
+
+34
+00:02:10,360 --> 00:02:12,820
+to go ahead and search for disable AI
+
+35
+00:02:13,840 --> 00:02:17,500
+features and right here it comes up
+chat disable AI features go ahead
+
+36
+00:02:17,500 --> 00:02:21,950
+and just check that box this will be
+really helpful as you are learning
+
+37
+00:02:21,950 --> 00:02:25,200
+code so that you don't just have
+an AI learn all of the code for
+
+38
+00:02:25,200 --> 00:02:28,800
+you so I'll go ahead and close that
+there so what we're going to do
+
+39
+00:02:28,800 --> 00:02:33,120
+is we are actually going to code
+a couple of things really quick
+
+40
+00:02:33,120 --> 00:02:40,100
+together in this code space for the
+content video code and as you're as
+
+41
+00:02:40,100 --> 00:02:42,420
+you're watching the content videos
+I recommend that you follow along
+
+42
+00:02:42,420 --> 00:02:46,730
+so that you can help yourself if
+you're struggling with any of the
+
+43
+00:02:46,730 --> 00:02:49,640
+concepts. Some of the stuff in the
+beginning might be a little bit of
+
+44
+00:02:49,640 --> 00:02:52,940
+review for you. If it's not, that's
+fine. And if it is, that's great.
+
+45
+00:02:54,040 --> 00:02:57,040
+But as we go throughout the
+course, the ideas in the content
+
+46
+00:02:57,040 --> 00:03:00,800
+videos will become a little
+bit more complex and more
+
+47
+00:03:00,800 --> 00:03:04,480
+difficult. And so I recommend you
+follow along with me as iCode.
+
+48
+00:03:04,480 --> 00:03:07,060
+And I've given you the content
+video code repo so that you
+
+49
+00:03:07,060 --> 00:03:10,740
+can have access to all of this
+code already written. But what
+
+50
+00:03:10,740 --> 00:03:13,380
+we're going to do is we're
+going to start with variables.
+
+51
+00:03:15,720 --> 00:03:20,280
+So we already said that the equal
+sign is the assignment operator.
+
+52
+00:03:20,310 --> 00:03:22,100
+So what we're going to
+do is we're going to
+
+53
+00:03:22,100 --> 00:03:25,460
+just grab a variable.
+Let's say, I don't know,
+
+54
+00:03:25,720 --> 00:03:27,820
+age. That's always an easy one. And let's
+
+55
+00:03:27,820 --> 00:03:29,850
+set it to some number. We'll choose 56.
+
+56
+00:03:30,100 --> 00:03:32,420
+So if I was to, for example, come down
+
+57
+00:03:32,420 --> 00:03:34,670
+here and say, let's print out age.
+
+58
+00:03:35,200 --> 00:03:36,600
+Run that code.
+
+59
+00:03:36,940 --> 00:03:39,400
+we'd see down here in
+our output terminal here
+
+60
+00:03:39,400 --> 00:03:42,920
+is our age that's some
+kind of data that has been
+
+61
+00:03:43,900 --> 00:03:49,060
+assigned to the variable age and is
+now able to be printed out so pretty
+
+62
+00:03:49,060 --> 00:03:51,720
+straightforward there let's make
+another one let's just call it vow
+
+63
+00:03:51,720 --> 00:03:56,020
+so this is just going to represent a
+value value equals two we can print
+
+64
+00:03:56,020 --> 00:04:00,680
+out value as well we can do math
+on value let's print it out for now
+
+65
+00:04:01,700 --> 00:04:03,040
+run that.
+
+66
+00:04:03,860 --> 00:04:06,780
+Here's our value and our age. Perfect.
+
+67
+00:04:07,230 --> 00:04:11,420
+One thing I wanted to specify for
+you guys is that what if we've got
+
+68
+00:04:11,420 --> 00:04:15,000
+a variable called val that represents
+age, but then I also wanted
+
+69
+00:04:15,000 --> 00:04:21,560
+to create another value using the
+exact same naming convention, but
+
+70
+00:04:21,560 --> 00:04:27,600
+this time I want to set it to 5.
+What happens to line 8 val equals 2
+
+71
+00:04:27,600 --> 00:04:32,040
+or val is assigned to 2? Well, what
+happens is Python has a built-in
+
+72
+00:04:32,040 --> 00:04:36,200
+kind of system called garbage
+collection that comes and it cleans
+
+73
+00:04:36,200 --> 00:04:41,240
+up old like memory assignments like
+this old value. So, for example,
+
+74
+00:04:41,480 --> 00:04:46,720
+value equals 2 is overwritten
+by value equal 5. And so value
+
+75
+00:04:46,720 --> 00:04:49,880
+equal 2 just kind of goes away
+into garbage collection. It's
+
+76
+00:04:49,880 --> 00:04:53,500
+not really referenced anymore.
+because if I was to use val now,
+
+77
+00:04:53,500 --> 00:04:58,560
+like printout val, the value
+that I'm going to get is five.
+
+78
+00:04:58,560 --> 00:05:01,900
+Now you might be like, why do we
+still get two? It's because value was
+
+79
+00:05:01,900 --> 00:05:07,920
+assigned to two on line nine, but
+it gets reassigned on line 11. And
+
+80
+00:05:07,920 --> 00:05:13,920
+so this val at the end of our code
+is all but gone and has been replaced
+
+81
+00:05:13,920 --> 00:05:16,940
+with a val equal five. So hopefully
+that's not too confusing. think.
+
+82
+00:05:18,440 --> 00:05:21,140
+Let's talk a little bit
+about naming conventions.
+
+83
+00:05:25,170 --> 00:05:28,080
+So you can have all sorts
+of things that are variable
+
+84
+00:05:28,080 --> 00:05:31,120
+names. So maybe if we want
+to name something spring one,
+
+85
+00:05:31,620 --> 00:05:35,440
+we'll call this hello
+world. I can't spell.
+
+86
+00:05:35,680 --> 00:05:36,940
+Hello world.
+
+87
+00:05:37,060 --> 00:05:38,920
+That's a good naming convention.
+
+88
+00:05:39,700 --> 00:05:42,860
+You can always start something
+with an underscore. So if I wanted
+
+89
+00:05:42,860 --> 00:05:47,240
+to say underscore variable one,
+that can be equal to, I don't know,
+
+90
+00:05:47,400 --> 00:05:48,020
+ten.
+
+91
+00:05:49,880 --> 00:05:52,520
+We can do something like, I love
+
+92
+00:05:53,820 --> 00:05:55,960
+variables, very good name,
+
+93
+00:05:56,940 --> 00:06:03,940
+type, hang on, 3.1415, pi, that's great.
+
+94
+00:06:04,880 --> 00:06:07,300
+Let's specify a couple
+different naming conventions.
+
+95
+00:06:07,300 --> 00:06:09,100
+So we've got something called camel case,
+
+96
+00:06:09,660 --> 00:06:18,020
+which looks like this uh something
+like that and camel case is where
+
+97
+00:06:18,020 --> 00:06:22,880
+you don't capitalize the first
+letter in a variable name but you do
+
+98
+00:06:22,880 --> 00:06:28,620
+capitalize all the letters of the
+words preceding that you don't use a
+
+99
+00:06:28,620 --> 00:06:31,860
+space in between the different words
+so that's camel case and then there's
+
+100
+00:06:31,860 --> 00:06:35,520
+also the other case that I use
+more often I don't know what it's
+
+101
+00:06:35,520 --> 00:06:39,260
+called but I use it on line 17 it's
+where you use an underscore between
+
+102
+00:06:39,260 --> 00:06:44,460
+your words. You can't use a space.
+So if I tried to do something like
+
+103
+00:06:44,940 --> 00:06:49,000
+first space name equals Chelsea,
+
+104
+00:06:49,060 --> 00:06:51,080
+that Python won't let
+me do that. You see how
+
+105
+00:06:51,080 --> 00:06:53,300
+we've got all sorts of
+little squiggly lines saying
+
+106
+00:06:53,300 --> 00:06:55,740
+we don't like that? Yeah,
+they don't like that.
+
+107
+00:06:55,980 --> 00:06:59,480
+So first name equals Chelsea.
+What we would do instead is first
+
+108
+00:06:59,480 --> 00:07:03,560
+underscore name equals Chelsea
+and that is more appropriate.
+
+109
+00:07:03,560 --> 00:07:05,800
+Again, don't really know what
+that case is called. There's
+
+110
+00:07:05,800 --> 00:07:08,000
+probably a name for it. I'm not
+going to look it up right now.
+
+111
+00:07:09,200 --> 00:07:12,280
+And let's see, I think
+that's everything I wanted
+
+112
+00:07:12,280 --> 00:07:15,550
+to hit on with or to
+touch on with variables.
+
+113
+00:07:15,780 --> 00:07:18,260
+So let's move on to arithmetic.
+
+114
+00:07:20,840 --> 00:07:24,260
+And I'm going to try really
+hard to spell this right.
+
+115
+00:07:25,220 --> 00:07:26,060
+Arithmetic.
+
+116
+00:07:26,540 --> 00:07:28,980
+I'm cheating because I
+have notes on the side.
+
+117
+00:07:29,180 --> 00:07:33,680
+And okay, this is section
+2.3 of our textbook.
+
+118
+00:07:34,960 --> 00:07:37,340
+So the basic things I
+wanted to talk about
+
+119
+00:07:37,340 --> 00:07:39,540
+here are addition,
+subtraction, multiplication,
+
+120
+00:07:40,450 --> 00:07:42,860
+exponentation. Nobody calls
+it that. They just call
+
+121
+00:07:42,860 --> 00:07:45,980
+it raising something to the
+power of something else.
+
+122
+00:07:46,080 --> 00:07:49,280
+True division and floor
+division. Oh, and then modulo.
+
+123
+00:07:50,500 --> 00:07:54,940
+So let me, I'm just going to copy
+some stuff really quick because I
+
+124
+00:07:54,940 --> 00:07:58,000
+don't want to take all the time
+to uh type all this out but we'll
+
+125
+00:07:58,000 --> 00:08:02,140
+just review it really quick so
+let's say we have a variable called
+
+126
+00:08:02,140 --> 00:08:06,200
+age we'll say it's I don't know 30
+is a boring age let's say it's 40
+
+127
+00:08:06,200 --> 00:08:11,980
+we like being 40 okay age equals
+20 plus 20 is a basic example of
+
+128
+00:08:11,980 --> 00:08:15,780
+addition so we're taking a variable
+and we are assigning it to the
+
+129
+00:08:15,780 --> 00:08:20,820
+results of a mathematical expression
+that in English means we're adding
+
+130
+00:08:20,820 --> 00:08:22,800
+the two numbers together and
+then we're assigning that to the
+
+131
+00:08:22,800 --> 00:08:27,200
+variable age. So then we're printing
+out age. Same thing with subtraction.
+
+132
+00:08:27,200 --> 00:08:31,560
+So age equals age minus one. So
+I'll let you kind of think in
+
+133
+00:08:31,560 --> 00:08:34,600
+your head what that should equal.
+We'll run this code in just a minute.
+
+134
+00:08:34,600 --> 00:08:38,780
+So if we took age being 40 and
+then subtracted one off of that.
+
+135
+00:08:39,000 --> 00:08:42,700
+We've also got multiplication.
+So x is equal to
+
+136
+00:08:42,700 --> 00:08:45,140
+three times two. It's
+pretty straightforward one.
+
+137
+00:08:45,340 --> 00:08:51,860
+Then we reassign x to a new value it
+equals five divided by two and then
+
+138
+00:08:51,860 --> 00:08:55,400
+floor division is actually so let
+me let me specify the differences
+
+139
+00:08:55,400 --> 00:09:00,220
+really quick right here so regular
+division true division sometimes called
+
+140
+00:09:00,220 --> 00:09:05,780
+float division gives us a decimal
+number so five divided by two it
+
+141
+00:09:05,780 --> 00:09:10,400
+does not divide evenly right and so
+we've got five divided by two should
+
+142
+00:09:10,400 --> 00:09:15,660
+be 2.5 and so the result we would
+get from float division is literally
+
+143
+00:09:15,660 --> 00:09:22,720
+2.5, a float, or a decimal number.
+And then floor division is the same
+
+144
+00:09:22,720 --> 00:09:28,160
+idea. We divide some number by some
+other number, but instead of getting
+
+145
+00:09:28,160 --> 00:09:32,140
+a decimal number, we actually lopped
+that decimal off the back. So what
+
+146
+00:09:32,140 --> 00:09:37,300
+we would get from 5 floor divided
+by 2 is actually just 2. So it's
+
+147
+00:09:37,300 --> 00:09:41,060
+asking how many times does this number
+cleanly divide into the other number
+
+148
+00:09:41,060 --> 00:09:46,620
+without a remainder, okay and then
+the modulus operator is kind of
+
+149
+00:09:46,620 --> 00:09:50,780
+the opposite of that one instead of
+the number cleanly dividing into the
+
+150
+00:09:50,780 --> 00:09:54,840
+other we want to know just the
+remainder so if I take five and mod it
+
+151
+00:09:54,840 --> 00:10:00,180
+by two I only want the remainder which
+in this case should be uh remainder
+
+152
+00:10:00,180 --> 00:10:04,980
+one right because five divides into
+two cleanly twice but then we get
+
+153
+00:10:04,980 --> 00:10:10,680
+one left over so let's run these
+these uh multiplication expressions.
+
+154
+00:10:10,920 --> 00:10:13,300
+I don't know what that is. And you can
+
+155
+00:10:13,300 --> 00:10:16,200
+see here, so let's
+scroll up a little bit.
+
+156
+00:10:17,120 --> 00:10:20,720
+Age equals 20 plus 20, that gives us 40.
+
+157
+00:10:20,820 --> 00:10:24,260
+Age is equal to age minus 1, gave us 39.
+
+158
+00:10:24,640 --> 00:10:29,080
+And then we got, where are
+we? Multiplication, 3 times
+
+159
+00:10:29,080 --> 00:10:32,340
+2 is 6. Division, remember
+this is float division,
+
+160
+00:10:32,480 --> 00:10:34,920
+gave us 2.5.
+
+161
+00:10:35,200 --> 00:10:38,700
+Floor division gave us two, and the
+
+162
+00:10:38,700 --> 00:10:41,640
+modulus operator gave us one. Okay,
+
+163
+00:10:41,880 --> 00:10:44,180
+one last note on arithmetic
+before we wrap up
+
+164
+00:10:44,180 --> 00:10:47,800
+this video is that when
+we do floor division, we
+
+165
+00:10:47,800 --> 00:10:53,620
+are always rounding down
+to the nearest positive,
+
+166
+00:10:53,780 --> 00:10:56,820
+or sorry, we're always
+rounding down. Okay,
+
+167
+00:10:56,960 --> 00:10:59,540
+so just remember that as we
+go throughout the course.
+
+168
+00:10:59,540 --> 00:11:01,380
+And that's everything for
+this video. Thank you.

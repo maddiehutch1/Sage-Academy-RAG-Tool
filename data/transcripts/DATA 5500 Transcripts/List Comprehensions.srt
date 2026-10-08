@@ -1,0 +1,485 @@
+1
+00:00:02,680 --> 00:00:04,560
+Hey everybody this is the content video
+
+2
+00:00:04,560 --> 00:00:07,840
+for section 5.12 list comprehensions.
+
+3
+00:00:08,050 --> 00:00:12,020
+As much as I love list comprehensions
+they're a little bit of an
+
+4
+00:00:12,020 --> 00:00:16,720
+unnecessary idea but don't leave
+the video just because I said that
+
+5
+00:00:16,720 --> 00:00:20,800
+because they're really cool and the
+reason I love list comprehensions
+
+6
+00:00:20,800 --> 00:00:24,360
+is because to me they are a
+lot like augmented assignment.
+
+7
+00:00:24,540 --> 00:00:27,600
+Not necessarily something
+you have to do but something
+
+8
+00:00:27,600 --> 00:00:30,080
+that can make your code
+a lot easier to write.
+
+9
+00:00:30,240 --> 00:00:32,780
+So the idea of list comprehension
+is you can take multiple
+
+10
+00:00:32,780 --> 00:00:36,100
+lines of code that are doing
+something like building out a list
+
+11
+00:00:36,100 --> 00:00:39,180
+and simplify it down to one line
+of code. Here's what I mean.
+
+12
+00:00:39,420 --> 00:00:44,600
+So let's say we have a list and we
+want to fill it with six numbers.
+
+13
+00:00:44,600 --> 00:00:48,260
+So, or sorry, five numbers, a range
+of one to six. So we would normally
+
+14
+00:00:48,260 --> 00:00:54,160
+set it up as four item in range one
+to six list dot append item. And
+
+15
+00:00:54,160 --> 00:00:58,080
+that's great. And then here's our
+list. But doing a list comprehension
+
+16
+00:00:58,080 --> 00:01:02,100
+means that you can do the exact
+same thing with one line of code.
+
+17
+00:01:02,280 --> 00:01:06,340
+And it looks like this. So
+instead we would say list
+
+18
+00:01:06,340 --> 00:01:10,700
+equal item for item in
+range, excuse me, one to six.
+
+19
+00:01:11,200 --> 00:01:15,260
+So there's a kind of syntax to
+it, which I don't think they have
+
+20
+00:01:15,400 --> 00:01:18,980
+here, but I'll write it out in
+our code space. So let me jump
+
+21
+00:01:18,980 --> 00:01:22,880
+over here and we'll do a couple
+of examples of list comprehension.
+
+22
+00:01:25,180 --> 00:01:26,060
+Okay.
+
+23
+00:01:26,850 --> 00:01:30,540
+I'm a terrible speller, so I have
+to sound stuff out as I write
+
+24
+00:01:30,540 --> 00:01:34,620
+it. All right, so list comprehension.
+So let's do an example.
+
+25
+00:01:35,770 --> 00:01:38,240
+Well, let me let me write
+out the syntax for you. So
+
+26
+00:01:38,240 --> 00:01:40,660
+typically a list comprehension
+will look like this.
+
+27
+00:01:40,940 --> 00:01:44,260
+You've got your list name,
+which is the easy part,
+
+28
+00:01:45,280 --> 00:01:45,900
+right?
+
+29
+00:01:46,640 --> 00:01:51,560
+List name equals brackets
+and then the syntax is item
+
+30
+00:01:51,560 --> 00:01:56,100
+for item in iterable and
+then you can also throw in a
+
+31
+00:01:56,100 --> 00:01:59,220
+condition if something,
+something, something, something,
+
+32
+00:01:59,380 --> 00:02:00,540
+whatever, right?
+
+33
+00:02:00,940 --> 00:02:05,540
+So item is the thing that we want in our
+
+34
+00:02:05,540 --> 00:02:08,520
+list at the end of our creating the list.
+
+35
+00:02:08,700 --> 00:02:13,440
+For item is setting up an
+iterator variable to loop
+
+36
+00:02:13,440 --> 00:02:15,980
+through something that's
+iterable, and then the
+
+37
+00:02:15,980 --> 00:02:18,960
+condition is optional. So
+let me show what I mean.
+
+38
+00:02:19,340 --> 00:02:21,960
+Let's create a list of colors.
+
+39
+00:02:24,380 --> 00:02:25,340
+Wait.
+
+40
+00:02:28,860 --> 00:02:31,160
+Let's create an empty list of colors.
+
+41
+00:02:32,240 --> 00:02:33,480
+Excuse me.
+
+42
+00:02:33,680 --> 00:02:38,240
+And normally what we would
+maybe do is we would,
+
+43
+00:02:40,150 --> 00:02:41,580
+well, let's see.
+
+44
+00:02:41,880 --> 00:02:45,160
+Let's go back to the range
+actually, the range activity. So
+
+45
+00:02:45,160 --> 00:02:50,940
+let's say normally we would fill
+a list by saying for i in range.
+
+46
+00:02:51,100 --> 00:02:52,520
+Let's do 10.
+
+47
+00:02:53,830 --> 00:02:55,340
+Let's make a list name.
+
+48
+00:02:56,080 --> 00:03:00,040
+Call it nums equals empty list. For i
+
+49
+00:03:00,040 --> 00:03:06,360
+in range 10, we'd say nums.append i,
+
+50
+00:03:07,610 --> 00:03:11,840
+but using a list comprehension we
+can say nums, let's call it nums2,
+
+51
+00:03:12,210 --> 00:03:15,220
+and then we set up our brackets
+and then we ask ourselves what
+
+52
+00:03:15,220 --> 00:03:18,460
+do we want left in this list at
+the end of it when we're done?
+
+53
+00:03:18,460 --> 00:03:20,600
+What do we want this list to look
+like? We want it to have numbers
+
+54
+00:03:20,600 --> 00:03:28,840
+in it so we know we want to put
+num in there num for num in range
+
+55
+00:03:29,760 --> 00:03:30,520
+10.
+
+56
+00:03:31,240 --> 00:03:36,070
+All right and then if I print it
+out let me print out nums and nums
+
+57
+00:03:38,420 --> 00:03:44,160
+too so you can see that they're
+identical in this case all right so
+
+58
+00:03:44,160 --> 00:03:47,960
+there they both are so it's the same
+idea but we're doing it in two lines
+
+59
+00:03:47,960 --> 00:03:51,020
+of code as opposed or yeah three
+lines of code technically as opposed
+
+60
+00:03:51,020 --> 00:03:54,000
+to one line of code so you might
+kind of ask what's the benefit of
+
+61
+00:03:54,000 --> 00:03:57,750
+doing it well I don't know that
+it's necessarily about beneficial
+
+62
+00:03:58,830 --> 00:04:05,580
+things but it is a stylistic choice
+that can often be more convenient.
+
+63
+00:04:06,000 --> 00:04:09,400
+So let's talk about this
+last portion of it if
+
+64
+00:04:09,400 --> 00:04:12,500
+you have a conditional
+statement on the end. So
+
+65
+00:04:12,500 --> 00:04:14,380
+let's say we want to do
+another list comprehension
+
+66
+00:04:15,240 --> 00:04:19,200
+and we want to let's actually
+say we have a list of colors.
+
+67
+00:04:20,140 --> 00:04:24,120
+What was I think it was list
+searching yeah I'm going to take the
+
+68
+00:04:24,120 --> 00:04:30,360
+list fav colors from the list
+searching.py file and I'm just going to
+
+69
+00:04:30,360 --> 00:04:32,800
+paste it in here, because I don't
+want to type all that out again.
+
+70
+00:04:33,160 --> 00:04:34,140
+Okay,
+
+71
+00:04:34,640 --> 00:04:40,880
+let's say we want to create
+a new list based off of
+
+72
+00:04:40,880 --> 00:04:46,330
+the list colors, and we only
+want to keep colors that
+
+73
+00:04:48,000 --> 00:04:50,080
+start with the letter G.
+
+74
+00:04:51,840 --> 00:04:55,620
+Yeah, we'll do that.
+Okay, this will get into,
+
+75
+00:04:56,440 --> 00:05:04,420
+we'll just do it together okay
+so we'll say colors okay you know
+
+76
+00:05:04,420 --> 00:05:07,380
+what we'll just we'll just say
+well we only want to list with the
+
+77
+00:05:07,380 --> 00:05:12,620
+color green in it so green colors
+because that's all that it would
+
+78
+00:05:12,620 --> 00:05:14,880
+give us anyways so that's what
+we're going to call the list and
+
+79
+00:05:15,080 --> 00:05:18,940
+then what do we want to end up in
+this list at the end of the day or
+
+80
+00:05:18,940 --> 00:05:22,180
+at the end of our running this
+algorithm we want it to be a color
+
+81
+00:05:22,180 --> 00:05:27,800
+right now I don't know anything
+else really about my my list
+
+82
+00:05:27,800 --> 00:05:31,660
+comprehension here but I'm gonna say
+color and then what am I iterating
+
+83
+00:05:31,660 --> 00:05:40,300
+through well it's gonna be for and
+then I'm gonna say color probably
+
+84
+00:05:40,400 --> 00:05:44,700
+because I want to create an
+iterator variable that's going to
+
+85
+00:05:44,700 --> 00:05:50,080
+iterate through my list of colors.
+So for color in colors, right?
+
+86
+00:05:51,820 --> 00:05:55,620
+It's almost like once you have
+established the variable that you
+
+87
+00:05:55,620 --> 00:05:58,220
+want left in your list at the end,
+you can kind of forget about it.
+
+88
+00:05:58,220 --> 00:06:00,880
+You can kind of pretend it's not
+there. And then you just set up your
+
+89
+00:06:00,880 --> 00:06:04,360
+for loop right here for color
+and colors, right? We're familiar
+
+90
+00:06:04,360 --> 00:06:07,740
+with that syntax. We know that. And
+then this color thing is what I'm
+
+91
+00:06:07,740 --> 00:06:11,740
+ending up with at the end. So I
+both create it and append it into
+
+92
+00:06:11,740 --> 00:06:15,620
+my list in one line of code. so
+for color in colors and then we'll
+
+93
+00:06:15,620 --> 00:06:23,040
+say if color equals green easy
+enough right and then let's print
+
+94
+00:06:23,040 --> 00:06:28,440
+out green colors and I mean we
+already know what we expect to see
+
+95
+00:06:28,440 --> 00:06:33,060
+green and green so pretty
+straightforward well I don't know if it's
+
+96
+00:06:33,060 --> 00:06:36,840
+straightforward but but this
+example maybe is so why use list
+
+97
+00:06:36,840 --> 00:06:42,180
+comprehension it's fun it's cool I
+think it's more convenient and you could
+
+98
+00:06:42,180 --> 00:06:45,520
+really simplify a lot of your
+code that we'll probably come back
+
+99
+00:06:45,520 --> 00:06:48,400
+to this in a later content video
+and i'll show you how you can
+
+100
+00:06:48,400 --> 00:06:51,840
+simplify more of your code but for
+now this is everything that i want
+
+101
+00:06:51,840 --> 00:06:54,580
+you guys to know about list
+comprehension so thank you for watching

@@ -1,0 +1,275 @@
+1
+00:00:02,190 --> 00:00:07,070
+Hey everybody and welcome to the
+content video going over section 3
+
+2
+00:00:07,070 --> 00:00:13,290
+.9 augmented assignment and this is
+a pretty simple idea. It's mostly
+
+3
+00:00:13,440 --> 00:00:16,970
+it's mostly just a shortcut for
+something that you probably already
+
+4
+00:00:16,970 --> 00:00:21,050
+know how to do and it's something
+that goes right along with
+
+5
+00:00:21,050 --> 00:00:27,210
+loops. So what we're used to doing
+is saying doing some math like this
+
+6
+00:00:27,210 --> 00:00:31,330
+total equals total plus one or
+total equals total minus one plus
+
+7
+00:00:32,000 --> 00:00:35,250
+subtract so I just said the same
+things twice I meant to say multiply
+
+8
+00:00:35,250 --> 00:00:40,470
+divide exponent whatever modulo
+an augmented assignment is just
+
+9
+00:00:40,470 --> 00:00:46,010
+kind of simplifying that into a
+statement called plus equals or minus
+
+10
+00:00:46,010 --> 00:00:48,850
+equals or mod equals and there's
+a whole list of them right here
+
+11
+00:00:48,850 --> 00:00:52,610
+so plus equals minus equals multiply
+equals I don't know if you guys
+
+12
+00:00:52,610 --> 00:00:56,970
+can see that maybe it's too small
+exponent equals divide equals
+
+13
+00:00:56,970 --> 00:01:01,130
+floor divide equals modulo equals
+and here's some examples of what
+
+14
+00:01:01,130 --> 00:01:04,750
+they would look like so rather than
+waste time in the textbook because
+
+15
+00:01:04,750 --> 00:01:07,430
+it's a pretty short section we'll
+just jump over into a couple
+
+16
+00:01:07,430 --> 00:01:14,350
+of examples um what is this called
+sorry um augmented assignment um
+
+17
+00:01:19,140 --> 00:01:25,680
+okay so what this is gonna look
+like is basically like let's
+
+18
+00:01:25,680 --> 00:01:36,120
+say we've got, oh I don't know,
+age equals 90 and then what
+
+19
+00:01:36,120 --> 00:01:38,800
+we're used to doing is we're
+used to saying age equals age
+
+20
+00:01:38,800 --> 00:01:44,960
+plus one, print out age, and
+we all know what that should
+
+21
+00:01:44,960 --> 00:01:48,980
+give us, 91, there it is. So
+what we're saying we can do now
+
+22
+00:01:48,980 --> 00:01:53,960
+we can do age plus equals one
+and then let's print out age.
+
+23
+00:01:56,630 --> 00:01:59,900
+And what you would expect to see
+is 92 because we already added
+
+24
+00:01:59,900 --> 00:02:03,960
+one to age. So I'm just gonna copy
+this from my notes and show you
+
+25
+00:02:03,960 --> 00:02:08,520
+because it's a little bit easier
+here than typing all this out.
+
+26
+00:02:10,900 --> 00:02:16,060
+Let's do age minus equals 11,
+floor divide equals by two,
+
+27
+00:02:16,060 --> 00:02:19,140
+and multiply equals by 7.
+Let's see what that gives us.
+
+28
+00:02:19,520 --> 00:02:20,020
+Okay,
+
+29
+00:02:20,280 --> 00:02:25,960
+so 91, 92, and then we minus
+equals 11, so that gave us 81,
+
+30
+00:02:25,960 --> 00:02:28,900
+and then we floor divided that
+by 2, which remember floor
+
+31
+00:02:28,900 --> 00:02:31,720
+division lops off the extra
+decimals and remainder and whatnot,
+
+32
+00:02:31,720 --> 00:02:36,710
+so we get an even 40, and then
+we times equal that by 7, which
+
+33
+00:02:36,710 --> 00:02:40,240
+7 times 4 is easy math, and
+you just add 0 on the end, 28,
+
+34
+00:02:40,480 --> 00:02:41,900
+sorry not 2800,
+
+35
+00:02:42,140 --> 00:02:43,100
+280.
+
+36
+00:02:43,680 --> 00:02:48,880
+All right, Let's use a loop to
+actually implement augmented
+
+37
+00:02:48,880 --> 00:02:54,700
+assignment. Let's say we've got a
+list of grades. Oops, I'm not typing.
+
+38
+00:02:57,370 --> 00:02:59,110
+Let's say we've got a list of grades.
+
+39
+00:02:59,890 --> 00:03:02,620
+And you guys are all doing amazing
+in the class, so we're going to use
+
+40
+00:03:02,620 --> 00:03:05,900
+your grades as an example. I'm just
+kidding. I'm just making these up.
+
+41
+00:03:08,360 --> 00:03:11,380
+And what we want to do is
+let's say we have a total.
+
+42
+00:03:12,510 --> 00:03:14,460
+and I want to add up all the grades using
+
+43
+00:03:14,460 --> 00:03:18,060
+a for loop. So I'll
+say for grade in grades
+
+44
+00:03:18,880 --> 00:03:25,440
+and I will say total plus equals grade.
+
+45
+00:03:25,800 --> 00:03:28,520
+And then outside our loop,
+let's print out what the
+
+46
+00:03:29,640 --> 00:03:31,720
+total grades are
+
+47
+00:03:33,200 --> 00:03:34,160
+total
+
+48
+00:03:36,780 --> 00:03:42,360
+total grades are 404 grade not found
+right so this is awesome but this
+
+49
+00:03:42,360 --> 00:03:45,140
+is also great for calculating an
+average right because now all we
+
+50
+00:03:45,140 --> 00:03:49,380
+have to do is divide that total by
+the length of grades right and that's
+
+51
+00:03:49,380 --> 00:03:53,880
+a list thing so we'll not do it
+like that but we'll say print out
+
+52
+00:03:55,940 --> 00:03:57,460
+average grade
+
+53
+00:03:59,580 --> 00:04:04,000
+is, and then we'll take total and
+we'll divide it by 1, 2, 3, 4, 5.
+
+54
+00:04:06,700 --> 00:04:10,120
+It's 80.8. So a really nice
+and easy way to calculate an
+
+55
+00:04:10,120 --> 00:04:13,820
+average is using a loop and
+augmented assignment, and then just
+
+56
+00:04:13,820 --> 00:04:16,760
+some basic arithmetic. So I
+think that covers everything I
+
+57
+00:04:16,760 --> 00:04:19,220
+wanted to cover for this content
+video, so thanks for watching.

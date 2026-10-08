@@ -1,0 +1,3608 @@
+1
+00:00:00,742 --> 00:00:02,200
+INSTRUCTOR: All
+right, so I'm going
+
+2
+00:00:02,200 --> 00:00:09,360
+to go ahead and record
+Expo Lecture 1 material
+
+3
+00:00:09,360 --> 00:00:13,480
+in a more concise format here
+for class and for easy review
+
+4
+00:00:13,480 --> 00:00:15,960
+and lookup.
+
+5
+00:00:15,960 --> 00:00:21,440
+I'll go ahead and share my
+screen here to get started.
+
+6
+00:00:21,440 --> 00:00:23,920
+Some of these first
+couple of topics
+
+7
+00:00:23,920 --> 00:00:28,680
+we've already covered
+if you've been in class.
+
+8
+00:00:28,680 --> 00:00:33,000
+So if you have been,
+and you're ready to get
+
+9
+00:00:33,000 --> 00:00:37,280
+into building and running the
+app, you can go ahead and skip.
+
+10
+00:00:37,280 --> 00:00:42,760
+I'll put time stamps
+in an announcement
+
+11
+00:00:42,760 --> 00:00:45,560
+so that you can skip to that
+part of the video that's
+
+12
+00:00:45,560 --> 00:00:48,600
+relevant to you.
+
+13
+00:00:48,600 --> 00:00:51,480
+But yeah, to keep
+it all in one place
+
+14
+00:00:51,480 --> 00:00:53,880
+and keep a concise
+format here, I'll
+
+15
+00:00:53,880 --> 00:00:57,080
+go ahead and start from
+the beginning with Expo.
+
+16
+00:00:57,080 --> 00:00:59,700
+So just for getting
+started here,
+
+17
+00:00:59,700 --> 00:01:07,000
+we're going to run this
+command to create a Expo app.
+
+18
+00:01:07,000 --> 00:01:12,860
+And I am going to be running
+locally here on my machine.
+
+19
+00:01:12,860 --> 00:01:15,580
+But this is a Linux environment.
+
+20
+00:01:15,580 --> 00:01:19,900
+It's Linux Mint, which is
+very similar to Ubuntu.
+
+21
+00:01:19,900 --> 00:01:22,060
+So everything will
+be exactly the same.
+
+22
+00:01:22,060 --> 00:01:24,840
+Commands and such will
+run exactly the same
+
+23
+00:01:24,840 --> 00:01:29,600
+as they would on
+our EC2 instances.
+
+24
+00:01:29,600 --> 00:01:31,480
+The reason I'm
+running locally is
+
+25
+00:01:31,480 --> 00:01:34,900
+for the mobile side
+of this for Expo,
+
+26
+00:01:34,900 --> 00:01:38,200
+and I'll get to
+that here in a bit.
+
+27
+00:01:38,200 --> 00:01:41,400
+But just to get
+started, you will
+
+28
+00:01:41,400 --> 00:01:47,560
+want to run this command
+to create your app--
+
+29
+00:01:47,560 --> 00:01:54,280
+npx create-expo-app@latest,
+and I'll put that
+
+30
+00:01:54,280 --> 00:01:59,550
+in the announcement as well so
+that you can copy it easily.
+
+31
+00:01:59,550 --> 00:02:02,050
+You don't have to
+memorize anything here.
+
+32
+00:02:02,050 --> 00:02:03,925
+When you do that,
+it'll be like, hey,
+
+33
+00:02:03,925 --> 00:02:05,550
+we're going to make
+a new repo for you.
+
+34
+00:02:05,550 --> 00:02:07,170
+What do you want to call it?
+
+35
+00:02:07,170 --> 00:02:09,070
+Go ahead and call it
+whatever you want.
+
+36
+00:02:09,070 --> 00:02:15,410
+I called mine expo
+app to keep it simple.
+
+37
+00:02:15,410 --> 00:02:19,690
+Because this is all going
+to be in a repo for you
+
+38
+00:02:19,690 --> 00:02:25,930
+to review and reference as
+you're doing your homework,
+
+39
+00:02:25,930 --> 00:02:29,610
+that you would name this
+whatever your project is,
+
+40
+00:02:29,610 --> 00:02:36,210
+like Andy would go baby-ninjas.
+
+41
+00:02:36,210 --> 00:02:37,450
+I'm just going to go ahead.
+
+42
+00:02:37,450 --> 00:02:41,450
+On our Ubuntu EC2 instances,
+you should already
+
+43
+00:02:41,450 --> 00:02:44,170
+have node installed.
+
+44
+00:02:44,170 --> 00:02:45,990
+Check that you do.
+
+45
+00:02:50,490 --> 00:02:51,950
+I guess you have
+to spell it right.
+
+46
+00:02:55,170 --> 00:02:57,750
+Node -v will give you
+the version number.
+
+47
+00:02:57,750 --> 00:03:02,730
+And as long as it's 18 dot
+something or newer, you're fine.
+
+48
+00:03:02,730 --> 00:03:06,970
+16 or older will not
+work with Expo at all.
+
+49
+00:03:06,970 --> 00:03:13,090
+And then you'll be able to run
+that npx create-expo-app@latest
+
+50
+00:03:13,090 --> 00:03:14,570
+command.
+
+51
+00:03:14,570 --> 00:03:19,810
+OK, so going on, jumping
+into What is Expo?
+
+52
+00:03:19,810 --> 00:03:24,870
+A quick overview of Expo,
+and I'll link the docs here.
+
+53
+00:03:24,870 --> 00:03:28,130
+Quick Start-- they've got that
+command that I linked there npx
+
+54
+00:03:28,130 --> 00:03:29,590
+create-expo-app@latest.
+
+55
+00:03:29,590 --> 00:03:34,570
+And that'll get you started
+with a new Expo repo.
+
+56
+00:03:34,570 --> 00:03:38,390
+And you can go
+ahead and do that.
+
+57
+00:03:41,090 --> 00:03:43,650
+So I'll talk about
+quickly what Expo is.
+
+58
+00:03:43,650 --> 00:03:50,050
+Expo is a framework that
+is built on React Native.
+
+59
+00:03:50,050 --> 00:03:53,470
+And React Native is a framework
+that adapted React.js.
+
+60
+00:03:53,470 --> 00:03:58,220
+React.js was made
+by Meta, which would
+
+61
+00:03:58,220 --> 00:04:01,220
+use-- at the time was
+Facebook, for creating
+
+62
+00:04:01,220 --> 00:04:04,920
+their dynamic, data-driven
+social media app.
+
+63
+00:04:04,920 --> 00:04:08,280
+And that's what Expo and
+React and React Native,
+
+64
+00:04:08,280 --> 00:04:12,540
+et cetera, is data-driven apps.
+
+65
+00:04:12,540 --> 00:04:17,660
+It allows you to build reusable
+UI elements that render
+
+66
+00:04:17,660 --> 00:04:20,100
+differently, depending
+on whatever data
+
+67
+00:04:20,100 --> 00:04:23,020
+you have available to
+your app or for that user
+
+68
+00:04:23,020 --> 00:04:26,940
+or for that scenario.
+
+69
+00:04:26,940 --> 00:04:32,380
+And we'll go ahead
+and show how to make
+
+70
+00:04:32,380 --> 00:04:34,660
+reusable portions
+of your app and how
+
+71
+00:04:34,660 --> 00:04:37,965
+to make those data
+dependent, data driven.
+
+72
+00:04:37,965 --> 00:04:39,340
+One of the best
+things about Expo
+
+73
+00:04:39,340 --> 00:04:43,220
+is you can build
+for web, mobile,
+
+74
+00:04:43,220 --> 00:04:47,460
+Android and iOS, both mobile
+platforms, all with one code
+
+75
+00:04:47,460 --> 00:04:47,960
+base.
+
+76
+00:04:47,960 --> 00:04:50,100
+So you reduce the amount
+of work that you're
+
+77
+00:04:50,100 --> 00:04:55,820
+doing to create an app to hit
+as many users as possible,
+
+78
+00:04:55,820 --> 00:05:00,020
+or make your app available
+to as many users as possible.
+
+79
+00:05:00,020 --> 00:05:05,300
+And if we go ahead, and
+I'll open up the Expo
+
+80
+00:05:05,300 --> 00:05:07,420
+app that I made here.
+
+81
+00:05:07,420 --> 00:05:08,280
+And all I've done--
+
+82
+00:05:08,280 --> 00:05:09,880
+I haven't modified this at all.
+
+83
+00:05:09,880 --> 00:05:15,380
+I've literally just run the
+npx create-expo-app command
+
+84
+00:05:15,380 --> 00:05:20,320
+and have this expo-app folder.
+
+85
+00:05:20,320 --> 00:05:25,400
+And I put this inside
+my data5570 folder
+
+86
+00:05:25,400 --> 00:05:30,380
+so you can keep it in the same
+repository as your Django app
+
+87
+00:05:30,380 --> 00:05:31,428
+side by side.
+
+88
+00:05:31,428 --> 00:05:33,220
+So you can see I've
+got my Django app here,
+
+89
+00:05:33,220 --> 00:05:35,540
+and Expo is right next to it.
+
+90
+00:05:35,540 --> 00:05:39,180
+The virtual environment for
+Django is also right next to it.
+
+91
+00:05:39,180 --> 00:05:41,980
+You do not have to have
+a virtual environment,
+
+92
+00:05:41,980 --> 00:05:46,940
+your Python virtual environment
+active to work in your Expo app.
+
+93
+00:05:46,940 --> 00:05:51,340
+Expo uses Node and
+JavaScript libraries
+
+94
+00:05:51,340 --> 00:05:58,950
+and will not use any
+Python libraries at all.
+
+95
+00:05:58,950 --> 00:06:03,290
+So once we've got that
+installed, you'll see--
+
+96
+00:06:03,290 --> 00:06:05,950
+let me just open that--
+
+97
+00:06:05,950 --> 00:06:07,850
+Visual Studio code here.
+
+98
+00:06:07,850 --> 00:06:09,950
+Once we've got that
+installed, you'll
+
+99
+00:06:09,950 --> 00:06:15,590
+see we've got a few things
+here that it gives us out
+
+100
+00:06:15,590 --> 00:06:16,510
+of the gate.
+
+101
+00:06:16,510 --> 00:06:20,550
+First thing that you want to pay
+attention to is node_modules.
+
+102
+00:06:20,550 --> 00:06:24,350
+It's just a giant folder
+full of libraries and things
+
+103
+00:06:24,350 --> 00:06:27,350
+that you'll need to use
+to build your Expo app
+
+104
+00:06:27,350 --> 00:06:29,470
+and be able to run it.
+
+105
+00:06:29,470 --> 00:06:33,390
+That is completely
+generated for you,
+
+106
+00:06:33,390 --> 00:06:37,350
+so you should never edit
+or anything directly
+
+107
+00:06:37,350 --> 00:06:38,690
+inside of node_modules.
+
+108
+00:06:38,690 --> 00:06:44,350
+It's all built depending on
+the package.json configuration.
+
+109
+00:06:44,350 --> 00:06:50,990
+This list of dependencies
+is what populates
+
+110
+00:06:50,990 --> 00:06:53,350
+the node_modules folder.
+
+111
+00:06:53,350 --> 00:06:56,710
+There are a few dependencies
+I want to call attention to.
+
+112
+00:06:56,710 --> 00:07:00,870
+React-native-web
+and react-dom are
+
+113
+00:07:00,870 --> 00:07:06,990
+the two main ones that we use
+to make a React Native app,
+
+114
+00:07:06,990 --> 00:07:11,310
+be able to compile for web
+and be able to run on web,
+
+115
+00:07:11,310 --> 00:07:14,910
+as well as React
+Native for mobile.
+
+116
+00:07:14,910 --> 00:07:18,150
+Another one to pay attention
+to that we'll get into today
+
+117
+00:07:18,150 --> 00:07:21,990
+is expo-router.
+
+118
+00:07:21,990 --> 00:07:28,030
+This sets up our routing
+capability, which, in this case,
+
+119
+00:07:28,030 --> 00:07:30,790
+routing refers to how
+the user navigates
+
+120
+00:07:30,790 --> 00:07:33,310
+between different screens.
+
+121
+00:07:33,310 --> 00:07:36,950
+So you'll start out on your
+index screen or your default
+
+122
+00:07:36,950 --> 00:07:37,450
+screen.
+
+123
+00:07:37,450 --> 00:07:40,950
+And then they'll be able to want
+to navigate to different screens
+
+124
+00:07:40,950 --> 00:07:41,950
+from there.
+
+125
+00:07:41,950 --> 00:07:46,150
+Expo-router handles that
+logic, and it does it
+
+126
+00:07:46,150 --> 00:07:48,230
+in a pretty intuitive way.
+
+127
+00:07:48,230 --> 00:07:51,470
+I like it so far.
+
+128
+00:07:51,470 --> 00:07:55,300
+And then you'll get
+several folders in here.
+
+129
+00:07:55,300 --> 00:08:03,720
+App is going to have the code
+for our screens that we create.
+
+130
+00:08:03,720 --> 00:08:04,940
+Components is one.
+
+131
+00:08:04,940 --> 00:08:07,400
+You can place different
+custom components,
+
+132
+00:08:07,400 --> 00:08:10,840
+reusable components in here.
+
+133
+00:08:10,840 --> 00:08:14,800
+Assets will hold things
+like images or fonts,
+
+134
+00:08:14,800 --> 00:08:17,340
+custom elements like that.
+
+135
+00:08:17,340 --> 00:08:18,800
+So we have everything
+that we need
+
+136
+00:08:18,800 --> 00:08:26,160
+to be able to run this on
+mobile and web out of the box.
+
+137
+00:08:26,160 --> 00:08:28,960
+To do that, just go ahead
+and open your terminal.
+
+138
+00:08:28,960 --> 00:08:36,360
+And you can use the EC2 terminal
+that you connect with right
+
+139
+00:08:36,360 --> 00:08:37,620
+when you open it up.
+
+140
+00:08:37,620 --> 00:08:42,323
+Or you can create a
+terminal in the VS Code web.
+
+141
+00:08:42,323 --> 00:08:43,740
+It's in a slightly
+different spot.
+
+142
+00:08:43,740 --> 00:08:50,620
+You can use the VS Code Terminal
+or your EC2 system terminal.
+
+143
+00:08:50,620 --> 00:08:52,440
+It doesn't really matter.
+
+144
+00:08:52,440 --> 00:08:56,020
+For visibility, I'm just going
+to use my system terminal.
+
+145
+00:08:56,020 --> 00:08:58,840
+They function the
+exact same way.
+
+146
+00:08:58,840 --> 00:09:03,840
+I'm going to run npm
+start, and that's
+
+147
+00:09:03,840 --> 00:09:07,900
+going to go ahead and
+run the Metro server.
+
+148
+00:09:07,900 --> 00:09:11,440
+Metro serves the
+assets for our app,
+
+149
+00:09:11,440 --> 00:09:13,880
+and it'll give you
+a QR code here.
+
+150
+00:09:13,880 --> 00:09:16,480
+And we'll get to that
+here in just a second.
+
+151
+00:09:16,480 --> 00:09:20,680
+It'll also give you
+some prompts and some
+
+152
+00:09:20,680 --> 00:09:22,800
+hotkeys you can press here.
+
+153
+00:09:22,800 --> 00:09:31,080
+So if I press W, it says
+here that will open up web.
+
+154
+00:09:31,080 --> 00:09:34,620
+So that's popped open a browser
+window, and it was pretty fast.
+
+155
+00:09:34,620 --> 00:09:37,500
+It might not be that fast for
+you the first time you run it.
+
+156
+00:09:37,500 --> 00:09:43,480
+But what it did here is
+it loaded router elements
+
+157
+00:09:43,480 --> 00:09:46,200
+and compiled our
+web assets to be
+
+158
+00:09:46,200 --> 00:09:53,410
+able to render this on the web,
+so built the website for us
+
+159
+00:09:53,410 --> 00:09:53,943
+right away.
+
+160
+00:09:53,943 --> 00:09:55,610
+And by default, this
+is just what you'll
+
+161
+00:09:55,610 --> 00:09:58,130
+see with the default Expo app.
+
+162
+00:09:58,130 --> 00:10:01,110
+You've got an image here.
+
+163
+00:10:01,110 --> 00:10:02,450
+You've got some text.
+
+164
+00:10:02,450 --> 00:10:07,250
+And they use this
+bottom tab navigator
+
+165
+00:10:07,250 --> 00:10:10,930
+by default, which
+is a little bit
+
+166
+00:10:10,930 --> 00:10:13,970
+weird to do on web in
+my opinion but works
+
+167
+00:10:13,970 --> 00:10:19,350
+great on mobile if you take this
+website and if you were to--
+
+168
+00:10:19,350 --> 00:10:24,610
+I like to shrink it down to the
+form factor of a mobile screen.
+
+169
+00:10:24,610 --> 00:10:28,410
+And your thumb is down at
+the bottom of the screen.
+
+170
+00:10:28,410 --> 00:10:33,130
+The bottom tab navigator
+is pretty intuitive.
+
+171
+00:10:33,130 --> 00:10:42,530
+But on web, you can use other
+navigation functionality
+
+172
+00:10:42,530 --> 00:10:45,130
+that we can demo in class later.
+
+173
+00:10:45,130 --> 00:10:50,050
+Some of the other prompts
+here is a will open Android.
+
+174
+00:10:50,050 --> 00:10:52,250
+Which one opens iOS?
+
+175
+00:10:52,250 --> 00:10:53,390
+One of them will.
+
+176
+00:10:57,090 --> 00:10:59,530
+Well, I probably don't
+have a prompt to open iOS,
+
+177
+00:10:59,530 --> 00:11:01,890
+because I'm running on Linux.
+
+178
+00:11:01,890 --> 00:11:06,790
+To run on iOS locally
+on your computer,
+
+179
+00:11:06,790 --> 00:11:12,410
+you have to have a Mac because
+that's the way Apple designed
+
+180
+00:11:12,410 --> 00:11:16,010
+their development flow.
+
+181
+00:11:16,010 --> 00:11:19,890
+But if you don't have a Mac,
+and you want to develop on iOS,
+
+182
+00:11:19,890 --> 00:11:21,230
+there's still a way to do that.
+
+183
+00:11:21,230 --> 00:11:23,090
+So let's go ahead
+and talk about it.
+
+184
+00:11:23,090 --> 00:11:24,150
+Web is pretty easy.
+
+185
+00:11:24,150 --> 00:11:27,410
+All you do is npm
+start and hit W,
+
+186
+00:11:27,410 --> 00:11:29,670
+and it'll open up
+the website for you.
+
+187
+00:11:29,670 --> 00:11:32,490
+And you can get
+going from there.
+
+188
+00:11:32,490 --> 00:11:35,450
+Mobile is a little
+bit more complicated,
+
+189
+00:11:35,450 --> 00:11:39,410
+and I'll show that real quick.
+
+190
+00:11:39,410 --> 00:11:41,650
+The easiest way to
+get going with this
+
+191
+00:11:41,650 --> 00:11:46,650
+is Expo Go app literally
+just on your phone.
+
+192
+00:11:46,650 --> 00:11:50,580
+Go to your Google Play
+store or the Apple App Store
+
+193
+00:11:50,580 --> 00:11:52,320
+and look for Expo Go.
+
+194
+00:11:52,320 --> 00:11:54,860
+It's got this icon here.
+
+195
+00:11:54,860 --> 00:12:01,500
+Install that, and
+it will give you
+
+196
+00:12:01,500 --> 00:12:07,640
+a screen that-- and I'll pop
+the camera open to show it here.
+
+197
+00:12:15,500 --> 00:12:20,480
+I've got an Android tablet
+here I'll demo this with.
+
+198
+00:12:28,540 --> 00:12:30,480
+So this is what you'll
+see more or less.
+
+199
+00:12:30,480 --> 00:12:35,420
+I don't know how well that
+comes up on the webcam there.
+
+200
+00:12:35,420 --> 00:12:38,160
+But there's a scan
+QR code button.
+
+201
+00:12:38,160 --> 00:12:41,740
+You pop open a typical
+QR code scanner.
+
+202
+00:12:41,740 --> 00:12:48,980
+And you can scan the QR code.
+
+203
+00:12:48,980 --> 00:12:56,380
+And you'll see it in
+the terminal compiling
+
+204
+00:12:56,380 --> 00:13:01,820
+Android assets to be able
+to serve it up on Android.
+
+205
+00:13:01,820 --> 00:13:04,700
+And then voila.
+
+206
+00:13:04,700 --> 00:13:06,760
+I've got the Android app.
+
+207
+00:13:06,760 --> 00:13:10,300
+I've got that bottom
+tab navigator in there,
+
+208
+00:13:10,300 --> 00:13:12,040
+and that's ready to go.
+
+209
+00:13:12,040 --> 00:13:15,500
+It's that simple, which is--
+
+210
+00:13:15,500 --> 00:13:18,330
+for mobile dev, it blows--
+
+211
+00:13:18,330 --> 00:13:20,580
+for me that's been doing
+this for a little while, used
+
+212
+00:13:20,580 --> 00:13:24,640
+to React Native or fiddling
+around with Native Dev,
+
+213
+00:13:24,640 --> 00:13:30,400
+it's mind boggling but extremely
+empowering and enabling.
+
+214
+00:13:32,940 --> 00:13:36,440
+Again, if you have an iPhone,
+but you don't have a Mac,
+
+215
+00:13:36,440 --> 00:13:39,320
+you can still download
+Expo Go, scan that QR code.
+
+216
+00:13:39,320 --> 00:13:41,940
+And you can develop on
+iOS without any burden,
+
+217
+00:13:41,940 --> 00:13:45,660
+without having to buy a Mac.
+
+218
+00:13:45,660 --> 00:13:48,230
+So let's look at--
+
+219
+00:13:48,230 --> 00:13:50,990
+I don't have an iPhone here
+that I'm going to demo.
+
+220
+00:13:50,990 --> 00:13:55,650
+There's one other way
+on mobile to run this,
+
+221
+00:13:55,650 --> 00:13:57,570
+and that is with an emulator.
+
+222
+00:14:01,710 --> 00:14:04,270
+Android Studio here.
+
+223
+00:14:04,270 --> 00:14:06,770
+Actually, let's go
+to the Expo Docs.
+
+224
+00:14:12,870 --> 00:14:15,510
+So if you go to the
+Expo Docs, search for
+
+225
+00:14:15,510 --> 00:14:17,170
+Set up your environment.
+
+226
+00:14:17,170 --> 00:14:18,410
+And you can go down here.
+
+227
+00:14:18,410 --> 00:14:21,350
+Let's say you want to do it on
+an Android or an iOS device,
+
+228
+00:14:21,350 --> 00:14:25,390
+this is just going to walk you
+through getting the Expo Go app.
+
+229
+00:14:25,390 --> 00:14:28,590
+But let's say you're
+on Linux or Windows,
+
+230
+00:14:28,590 --> 00:14:31,230
+and you want to do
+an Android emulator,
+
+231
+00:14:31,230 --> 00:14:34,730
+or you want to do an
+iOS simulator on Mac OS,
+
+232
+00:14:34,730 --> 00:14:36,150
+you can click those toggles.
+
+233
+00:14:36,150 --> 00:14:37,410
+And then keep scrolling.
+
+234
+00:14:37,410 --> 00:14:41,510
+It'll show you how to do this.
+
+235
+00:14:41,510 --> 00:14:46,890
+Development build requires a lot
+more DevTools to be installed.
+
+236
+00:14:46,890 --> 00:14:50,990
+Again, Expo Go is the easiest
+way to get going here.
+
+237
+00:14:50,990 --> 00:14:52,750
+It's going to prompt
+you to download
+
+238
+00:14:52,750 --> 00:14:55,308
+Android Studio, download SDK.
+
+239
+00:14:55,308 --> 00:14:57,850
+I've already done this, and it's
+a little bit time consuming.
+
+240
+00:14:57,850 --> 00:14:59,225
+So I'm not going
+to take the time
+
+241
+00:14:59,225 --> 00:15:01,910
+to do it here on the recording.
+
+242
+00:15:01,910 --> 00:15:08,310
+But the Docs are up to
+date and easy to use.
+
+243
+00:15:08,310 --> 00:15:10,270
+And if you are
+running on Linux, it's
+
+244
+00:15:10,270 --> 00:15:14,250
+going to give you Mac
+OS or Windows options.
+
+245
+00:15:14,250 --> 00:15:20,950
+Really, the big difference
+there is how you can--
+
+246
+00:15:20,950 --> 00:15:23,490
+there might be a couple of SDKs
+that are slightly different,
+
+247
+00:15:23,490 --> 00:15:24,740
+but it'll show you which ones.
+
+248
+00:15:24,740 --> 00:15:26,790
+But the main difference
+is going to be setting up
+
+249
+00:15:26,790 --> 00:15:29,430
+your environment variables.
+
+250
+00:15:29,430 --> 00:15:34,590
+On Mac OS, you're going to
+update your zprofile or Z shell
+
+251
+00:15:34,590 --> 00:15:38,410
+RC it says, or bash.
+
+252
+00:15:38,410 --> 00:15:40,050
+If you don't know if
+you're using bash,
+
+253
+00:15:40,050 --> 00:15:42,450
+you're probably using
+Z shell on Mac OS.
+
+254
+00:15:42,450 --> 00:15:46,800
+Z shell is the default. And
+you'll just add this text
+
+255
+00:15:46,800 --> 00:15:50,040
+to your Z shell RC.
+
+256
+00:15:50,040 --> 00:15:52,100
+On Windows, it's a little
+bit more complicated.
+
+257
+00:15:52,100 --> 00:15:56,920
+But again, it will
+step you through that.
+
+258
+00:15:56,920 --> 00:15:58,960
+I've got it running here.
+
+259
+00:15:58,960 --> 00:16:07,080
+So once you've got it running,
+you can click this here.
+
+260
+00:16:07,080 --> 00:16:11,200
+I don't know why that's popping
+up on this other screen.
+
+261
+00:16:11,200 --> 00:16:15,820
+OK, so you can see this
+image here on their website.
+
+262
+00:16:15,820 --> 00:16:19,440
+It pops you up in
+SDK manager, which
+
+263
+00:16:19,440 --> 00:16:22,360
+is where you'll go to
+download the SDKs it suggests,
+
+264
+00:16:22,360 --> 00:16:25,120
+or there's Virtual
+Device Manager.
+
+265
+00:16:25,120 --> 00:16:32,720
+For some reason-- let me
+pop open this dropdown.
+
+266
+00:16:32,720 --> 00:16:35,880
+I'm getting it on
+the other screen.
+
+267
+00:16:35,880 --> 00:16:38,960
+But let's go to
+virtual Device Manager.
+
+268
+00:16:38,960 --> 00:16:42,640
+You can set up a
+virtual device here.
+
+269
+00:16:42,640 --> 00:16:46,060
+And if you click the plus--
+that was probably a little fast.
+
+270
+00:16:46,060 --> 00:16:49,200
+Up here in the top left,
+there's a plus icon.
+
+271
+00:16:49,200 --> 00:16:51,300
+You won't have any
+items here by default.
+
+272
+00:16:51,300 --> 00:16:56,180
+But if you hit the plus, you
+can pick a device to emulate.
+
+273
+00:16:56,180 --> 00:17:00,560
+I suggest getting one of those
+that has the Play Store included
+
+274
+00:17:00,560 --> 00:17:04,839
+in the operating system
+image, just because it
+
+275
+00:17:04,839 --> 00:17:10,319
+has the normal Play Store tools
+that you're used to seeing
+
+276
+00:17:10,319 --> 00:17:14,657
+or that you would expect to
+see on an Android device.
+
+277
+00:17:14,657 --> 00:17:15,740
+You can pick any of these.
+
+278
+00:17:15,740 --> 00:17:19,760
+I've seen that the fold is a
+little bit wonky just because
+
+279
+00:17:19,760 --> 00:17:25,560
+of the folding screen
+emulating that's a little bit--
+
+280
+00:17:25,560 --> 00:17:29,160
+sometimes, it's a
+little unstable.
+
+281
+00:17:29,160 --> 00:17:34,200
+But you can test your
+phone on a large screen,
+
+282
+00:17:34,200 --> 00:17:38,180
+on a normal-sized
+screen, on a tablet.
+
+283
+00:17:38,180 --> 00:17:40,540
+I think they have a
+tablet emulator here, too.
+
+284
+00:17:40,540 --> 00:17:44,030
+That way, you can test your
+app on different screen sizes.
+
+285
+00:17:44,030 --> 00:17:47,770
+That's mostly what I use these
+for, is for different screen
+
+286
+00:17:47,770 --> 00:17:49,770
+sizes.
+
+287
+00:17:49,770 --> 00:17:50,890
+Just click on one.
+
+288
+00:17:50,890 --> 00:17:52,930
+Hit Next.
+
+289
+00:17:52,930 --> 00:17:54,730
+Get the latest SDK.
+
+290
+00:17:54,730 --> 00:17:56,430
+It's listed in the Docs.
+
+291
+00:17:56,430 --> 00:18:00,350
+But right now, that's API 35.
+
+292
+00:18:00,350 --> 00:18:02,490
+Go ahead and hit
+Next and then it'll
+
+293
+00:18:02,490 --> 00:18:04,890
+name it whatever it is for you.
+
+294
+00:18:04,890 --> 00:18:06,310
+And then you can click Finish.
+
+295
+00:18:06,310 --> 00:18:11,050
+I'm not going to, because
+these take a few gigs each.
+
+296
+00:18:11,050 --> 00:18:14,090
+And I don't need
+another one right now.
+
+297
+00:18:14,090 --> 00:18:15,950
+Then you can go
+ahead and hit Play.
+
+298
+00:18:19,650 --> 00:18:23,150
+My graphics card doesn't play
+well with these sometimes,
+
+299
+00:18:23,150 --> 00:18:24,050
+so I get that pop-up.
+
+300
+00:18:29,410 --> 00:18:31,390
+Yeah, and it is
+rendering kind of funny.
+
+301
+00:18:41,650 --> 00:18:46,410
+Anyway, once it's
+done booting up,
+
+302
+00:18:46,410 --> 00:18:53,050
+you just need to go over
+to your terminal, wherever
+
+303
+00:18:53,050 --> 00:18:54,110
+you have that running.
+
+304
+00:18:54,110 --> 00:18:56,330
+And then you can
+press the A key,
+
+305
+00:18:56,330 --> 00:18:58,970
+and it will
+automatically install
+
+306
+00:18:58,970 --> 00:19:03,830
+the Expo Go utilities it
+needs on your emulator
+
+307
+00:19:03,830 --> 00:19:07,570
+and run the app on
+the emulator for you.
+
+308
+00:19:07,570 --> 00:19:11,050
+Same with iOS.
+
+309
+00:19:11,050 --> 00:19:12,930
+It will give you a
+prompt in the terminal
+
+310
+00:19:12,930 --> 00:19:14,790
+to be able to run it
+on an iOS simulator.
+
+311
+00:19:14,790 --> 00:19:21,730
+But on iOS, you would download
+Xcode from the App Store
+
+312
+00:19:21,730 --> 00:19:24,410
+and/or from the
+website directly.
+
+313
+00:19:24,410 --> 00:19:29,750
+And then through Xcode, you
+download iOS simulators.
+
+314
+00:19:32,370 --> 00:19:34,950
+I'm going to go ahead
+and stop it for now.
+
+315
+00:19:39,450 --> 00:19:41,380
+The one downside of
+running these emulators
+
+316
+00:19:41,380 --> 00:19:45,880
+is it's pretty heavy
+computationally.
+
+317
+00:19:45,880 --> 00:19:49,460
+So if you don't have
+a beefy computer,
+
+318
+00:19:49,460 --> 00:19:51,980
+your computer might
+struggle to run those
+
+319
+00:19:51,980 --> 00:19:56,093
+at the same time
+as everything else.
+
+320
+00:19:56,093 --> 00:19:57,260
+Again, one of the benefits--
+
+321
+00:19:57,260 --> 00:20:00,460
+I recommend going with a
+physical device with Expo Go,
+
+322
+00:20:00,460 --> 00:20:02,440
+just because that's
+the easiest way.
+
+323
+00:20:02,440 --> 00:20:07,100
+And you don't have to
+worry about extra software
+
+324
+00:20:07,100 --> 00:20:08,080
+on your computer.
+
+325
+00:20:13,020 --> 00:20:16,120
+So that's everything we
+need to get going there.
+
+326
+00:20:18,700 --> 00:20:21,120
+When you're running
+on your EC2 instance,
+
+327
+00:20:21,120 --> 00:20:26,680
+you will be able to access the
+web version of your expo app.
+
+328
+00:20:26,680 --> 00:20:30,180
+If you are wanting to
+target mobile specifically
+
+329
+00:20:30,180 --> 00:20:34,580
+for your app, or even
+exclusively mobile,
+
+330
+00:20:34,580 --> 00:20:41,660
+you will need to clone your
+repo to your local computer
+
+331
+00:20:41,660 --> 00:20:42,800
+and run it locally.
+
+332
+00:20:42,800 --> 00:20:46,180
+There isn't a way
+to do mobile dev
+
+333
+00:20:46,180 --> 00:20:50,460
+with Expo on Amazon EC2 images.
+
+334
+00:20:50,460 --> 00:21:01,540
+The reason for that is
+because to run Expo Go
+
+335
+00:21:01,540 --> 00:21:03,720
+and connect to your
+local Metro server,
+
+336
+00:21:03,720 --> 00:21:06,920
+you have to be on
+the same network.
+
+337
+00:21:13,500 --> 00:21:17,540
+And I have tested this on
+Blue-- or not BlueZone.
+
+338
+00:21:17,540 --> 00:21:18,760
+It's not BlueZone anymore.
+
+339
+00:21:18,760 --> 00:21:22,300
+It's called eduroam, I think.
+
+340
+00:21:22,300 --> 00:21:26,780
+I did install or connect
+to eduroam on my laptop
+
+341
+00:21:26,780 --> 00:21:36,460
+and on my phone, and I was able
+to run Expo Go through my phone
+
+342
+00:21:36,460 --> 00:21:38,890
+on the eduroam.
+
+343
+00:21:38,890 --> 00:21:40,470
+I don't know how
+that works or how
+
+344
+00:21:40,470 --> 00:21:43,610
+they are able to see each
+other on that network,
+
+345
+00:21:43,610 --> 00:21:45,070
+but it does work.
+
+346
+00:21:45,070 --> 00:21:48,250
+But it won't work on
+your Amazon EC2 instance.
+
+347
+00:21:52,110 --> 00:21:54,830
+OK, so I've got
+that popped open.
+
+348
+00:21:54,830 --> 00:21:59,230
+Let's look at routing
+at this point.
+
+349
+00:21:59,230 --> 00:22:03,030
+So we'll pop open this.
+
+350
+00:22:03,030 --> 00:22:06,030
+It talks about
+file-based routing.
+
+351
+00:22:06,030 --> 00:22:09,910
+And what this means is
+usually with React Navigation,
+
+352
+00:22:09,910 --> 00:22:11,470
+or other web
+navigation, you would
+
+353
+00:22:11,470 --> 00:22:15,670
+have to set up some sort
+of routing configuration
+
+354
+00:22:15,670 --> 00:22:20,990
+so you have extra files that
+define your navigation tree.
+
+355
+00:22:20,990 --> 00:22:26,750
+In the case of expo-router,
+you don't have to do that.
+
+356
+00:22:26,750 --> 00:22:32,710
+You're going to just lay out
+your navigation tree in the file
+
+357
+00:22:32,710 --> 00:22:39,630
+system, and it will interpret
+that and build the file trees
+
+358
+00:22:39,630 --> 00:22:40,910
+for you.
+
+359
+00:22:40,910 --> 00:22:43,010
+While we've got
+this Expo App open,
+
+360
+00:22:43,010 --> 00:22:48,070
+I'll just step through
+what a router layout might
+
+361
+00:22:48,070 --> 00:22:52,870
+look like for the demo
+example that Expo gives us
+
+362
+00:22:52,870 --> 00:22:54,350
+when we start it up.
+
+363
+00:22:54,350 --> 00:22:59,950
+We've got the _layout.tsx
+inside this (tabs) folder.
+
+364
+00:22:59,950 --> 00:23:02,950
+The parentheses name
+of a folder here
+
+365
+00:23:02,950 --> 00:23:11,150
+is how they denote a nested
+router inside of the app folder.
+
+366
+00:23:11,150 --> 00:23:15,250
+You could put all of your pages
+just directly in the app folder.
+
+367
+00:23:15,250 --> 00:23:19,230
+But if you have
+nested router logic,
+
+368
+00:23:19,230 --> 00:23:23,950
+then you can organize those
+into folders like this.
+
+369
+00:23:23,950 --> 00:23:28,550
+So inside of their tabs,
+they've got their _layout.tsx.
+
+370
+00:23:28,550 --> 00:23:33,370
+And I don't know why this is
+highlighting it red this time,
+
+371
+00:23:33,370 --> 00:23:35,950
+but it is.
+
+372
+00:23:35,950 --> 00:23:39,992
+But anyway, they just
+put a tab navigator,
+
+373
+00:23:39,992 --> 00:23:42,200
+and that's what we saw on
+the other screen, those two
+
+374
+00:23:42,200 --> 00:23:43,140
+bottom tabs.
+
+375
+00:23:43,140 --> 00:23:49,960
+And they defined what screens
+those tabs navigate to.
+
+376
+00:23:49,960 --> 00:23:52,440
+The default one is index.
+
+377
+00:23:52,440 --> 00:23:58,560
+And so we can open
+up the or index.tsx
+
+378
+00:23:58,560 --> 00:24:03,480
+and see there's the source image
+for that image that was up top.
+
+379
+00:24:03,480 --> 00:24:07,180
+And then they've got some
+ThemedViews, ThemedText.
+
+380
+00:24:07,180 --> 00:24:09,240
+And that's just their
+way of styling their text
+
+381
+00:24:09,240 --> 00:24:12,920
+in wrapper components.
+
+382
+00:24:12,920 --> 00:24:15,680
+Yeah, we don't want to
+spend too much time on this,
+
+383
+00:24:15,680 --> 00:24:17,300
+because I'm going to--
+
+384
+00:24:20,640 --> 00:24:21,660
+that one more time.
+
+385
+00:24:25,280 --> 00:24:26,420
+Pop it open.
+
+386
+00:24:30,840 --> 00:24:33,160
+It's taking a second
+to build the--
+
+387
+00:24:33,160 --> 00:24:34,860
+compile the web assets.
+
+388
+00:24:37,700 --> 00:24:40,940
+Yeah, so they say
+you can try it out.
+
+389
+00:24:40,940 --> 00:24:46,120
+You can go ahead and just modify
+the index.tsx right inside
+
+390
+00:24:46,120 --> 00:24:50,720
+of the tabs, like we
+were looking at here.
+
+391
+00:24:50,720 --> 00:24:54,220
+And if you wanted to use
+this as a starting point,
+
+392
+00:24:54,220 --> 00:24:56,520
+you're welcome to.
+
+393
+00:24:56,520 --> 00:24:59,280
+That would just involve a
+little bit more familiarity
+
+394
+00:24:59,280 --> 00:25:04,920
+with reading the code that
+they've got implemented already.
+
+395
+00:25:04,920 --> 00:25:10,280
+But what I'm going to
+do for demo purposes
+
+396
+00:25:10,280 --> 00:25:16,880
+is npm run reset-project,
+like they recommend here,
+
+397
+00:25:16,880 --> 00:25:21,440
+to start my own
+project structure.
+
+398
+00:25:21,440 --> 00:25:26,840
+So Control-C to quit
+that, and then I'll
+
+399
+00:25:26,840 --> 00:25:29,440
+just paste that in there.
+
+400
+00:25:29,440 --> 00:25:33,810
+No, I don't need to keep
+those example files.
+
+401
+00:25:33,810 --> 00:25:35,310
+OK, so it--
+
+402
+00:25:38,570 --> 00:25:42,810
+I went ahead and deleted the
+demo files and then started
+
+403
+00:25:42,810 --> 00:25:44,190
+a new blank project.
+
+404
+00:25:44,190 --> 00:25:47,130
+So let's look at
+what that looks like.
+
+405
+00:25:47,130 --> 00:25:51,230
+npm start-- let's
+run that up again.
+
+406
+00:25:51,230 --> 00:25:52,630
+We'll open it up again.
+
+407
+00:25:55,490 --> 00:25:57,330
+And this is all it is.
+
+408
+00:25:57,330 --> 00:26:02,750
+There's an app bar at the top
+and then just a blank-- well,
+
+409
+00:26:02,750 --> 00:26:04,650
+it's got a text there.
+
+410
+00:26:04,650 --> 00:26:06,690
+So let's look at our
+file structure now.
+
+411
+00:26:06,690 --> 00:26:08,130
+We've got app.
+
+412
+00:26:08,130 --> 00:26:11,630
+We've got a _layout.tsx,
+which just returns a stack.
+
+413
+00:26:11,630 --> 00:26:17,130
+So it's not doing any special
+routing or any special layout.
+
+414
+00:26:17,130 --> 00:26:22,730
+And then we've got
+this index file.
+
+415
+00:26:22,730 --> 00:26:26,490
+We've got this view
+that's being rendered,
+
+416
+00:26:26,490 --> 00:26:29,770
+and it has a text inside of it.
+
+417
+00:26:29,770 --> 00:26:34,130
+So let's look at some
+basic component structure
+
+418
+00:26:34,130 --> 00:26:37,650
+and how this is laid out.
+
+419
+00:26:37,650 --> 00:26:43,270
+First of all, the index is the
+name of this page component.
+
+420
+00:26:43,270 --> 00:26:47,230
+So this whole page is
+the index component,
+
+421
+00:26:47,230 --> 00:26:50,970
+which is a page since it's
+inside of our app folder.
+
+422
+00:26:50,970 --> 00:26:56,210
+We have two components inside
+of our index component, View
+
+423
+00:26:56,210 --> 00:26:57,270
+and a Text.
+
+424
+00:26:57,270 --> 00:27:02,050
+Those are just imported from
+React Native, like this.
+
+425
+00:27:02,050 --> 00:27:09,310
+Text is just a tag that
+takes text as children.
+
+426
+00:27:09,310 --> 00:27:15,390
+So you can put any text
+in here and edit that.
+
+427
+00:27:15,390 --> 00:27:18,570
+And as long as your
+metro server is still
+
+428
+00:27:18,570 --> 00:27:22,290
+running in the
+terminal, this app
+
+429
+00:27:22,290 --> 00:27:27,890
+will hot reload anytime you
+update your source files.
+
+430
+00:27:27,890 --> 00:27:33,440
+And then the view has a prop.
+
+431
+00:27:33,440 --> 00:27:35,700
+The prop is style,
+and we're just
+
+432
+00:27:35,700 --> 00:27:42,180
+defining the flex, which
+is a way of saying,
+
+433
+00:27:42,180 --> 00:27:47,500
+this component should fill
+all the space that it can.
+
+434
+00:27:47,500 --> 00:27:49,900
+And it should take
+up-- one is like, I
+
+435
+00:27:49,900 --> 00:27:55,140
+should get one share of all
+the space that's remaining.
+
+436
+00:27:55,140 --> 00:27:57,200
+And since it's the
+only one in here,
+
+437
+00:27:57,200 --> 00:27:59,680
+it gets 100% of that space.
+
+438
+00:27:59,680 --> 00:28:02,300
+JustifyContent "center",
+alignItems "center"
+
+439
+00:28:02,300 --> 00:28:07,160
+is why this text is centered
+instead of up in the top left.
+
+440
+00:28:07,160 --> 00:28:12,300
+So if we delete that,
+boom, it's up there.
+
+441
+00:28:12,300 --> 00:28:16,400
+As you're editing
+styles in your classes,
+
+442
+00:28:16,400 --> 00:28:21,100
+you will probably be able
+to test and say, hey, AI,
+
+443
+00:28:21,100 --> 00:28:23,400
+I want this style
+to look like this.
+
+444
+00:28:23,400 --> 00:28:27,620
+And it's pretty good at
+laying that out for you.
+
+445
+00:28:27,620 --> 00:28:30,980
+For your ability to read
+and understand the code,
+
+446
+00:28:30,980 --> 00:28:33,520
+there are a few ways
+that it might do this.
+
+447
+00:28:33,520 --> 00:28:34,920
+One way is just inline.
+
+448
+00:28:34,920 --> 00:28:36,300
+You can have inline
+styles, which
+
+449
+00:28:36,300 --> 00:28:39,420
+is what this view
+has by default.
+
+450
+00:28:39,420 --> 00:28:44,940
+The other way is to define
+a style sheet and use those.
+
+451
+00:28:44,940 --> 00:28:46,660
+So let's import.
+
+452
+00:28:46,660 --> 00:28:49,180
+Let's actually
+make a style sheet.
+
+453
+00:28:49,180 --> 00:28:51,500
+So I'm going to do const.
+
+454
+00:28:51,500 --> 00:28:55,340
+And again, for those that
+haven't used JavaScript before,
+
+455
+00:28:55,340 --> 00:28:58,500
+const is how you
+declare a variable that
+
+456
+00:28:58,500 --> 00:29:01,380
+doesn't get overwritten.
+
+457
+00:29:01,380 --> 00:29:06,680
+Styles-- styles =.
+
+458
+00:29:06,680 --> 00:29:09,200
+And then I'm going to
+do StyleSheet.create.
+
+459
+00:29:18,460 --> 00:29:20,340
+And I'm going to--
+
+460
+00:29:23,020 --> 00:29:24,780
+an object in the middle.
+
+461
+00:29:24,780 --> 00:29:32,000
+StyleSheet needs to be
+imported from React Native.
+
+462
+00:29:32,000 --> 00:29:36,410
+And then in here,
+I can make a style.
+
+463
+00:29:36,410 --> 00:29:39,430
+I'm going to call this the--
+
+464
+00:29:39,430 --> 00:29:41,450
+let's just call it
+the pageWrapper.
+
+465
+00:29:45,750 --> 00:29:54,550
+And then I can get this
+exact object, put it in here.
+
+466
+00:29:54,550 --> 00:29:58,810
+And that is defining
+that the same way.
+
+467
+00:29:58,810 --> 00:30:03,250
+So now in here, we can
+do styles.pageWrapper.
+
+468
+00:30:08,270 --> 00:30:12,770
+And now we should have the same
+styles available on this page.
+
+469
+00:30:12,770 --> 00:30:17,510
+And now you can see it's
+still centering the content.
+
+470
+00:30:17,510 --> 00:30:20,150
+And it's taking
+up the entire page
+
+471
+00:30:20,150 --> 00:30:22,730
+because it's centered
+across the entire page.
+
+472
+00:30:22,730 --> 00:30:26,150
+So yeah, for your
+ability to read this,
+
+473
+00:30:26,150 --> 00:30:30,110
+using StyleSheet.create
+to define a style
+
+474
+00:30:30,110 --> 00:30:34,770
+object on the side is the
+same as doing inline styles.
+
+475
+00:30:34,770 --> 00:30:38,950
+Actually, it's usually preferred
+to do StyleSheet.create
+
+476
+00:30:38,950 --> 00:30:46,350
+like this because it's more
+efficient when the app is
+
+477
+00:30:46,350 --> 00:30:49,270
+rerendering multiple times.
+
+478
+00:30:49,270 --> 00:30:54,350
+So if you can, usually I
+prefer to make a style sheet
+
+479
+00:30:54,350 --> 00:30:57,150
+on the side like this.
+
+480
+00:30:57,150 --> 00:31:00,590
+OK, so let's look at
+modifying this page further
+
+481
+00:31:00,590 --> 00:31:03,710
+with other components.
+
+482
+00:31:03,710 --> 00:31:08,370
+You won't need to worry about
+memorizing how to do that.
+
+483
+00:31:08,370 --> 00:31:13,870
+What I want you to focus on is
+understanding the concept of,
+
+484
+00:31:13,870 --> 00:31:16,450
+there are components
+inside of components.
+
+485
+00:31:16,450 --> 00:31:20,670
+And that's how you
+make up your page.
+
+486
+00:31:20,670 --> 00:31:25,630
+You will be able to
+just, say, go to your AI
+
+487
+00:31:25,630 --> 00:31:29,860
+and get help building
+whatever you want it to be.
+
+488
+00:31:29,860 --> 00:31:37,080
+So let's say I have
+a new Expo App.
+
+489
+00:31:37,080 --> 00:31:40,760
+This is my--
+
+490
+00:31:40,760 --> 00:31:44,660
+I don't even need to tell it
+what my index.tsx is so far.
+
+491
+00:31:44,660 --> 00:31:50,200
+Let's just say I
+want a new index.--
+
+492
+00:31:50,200 --> 00:31:55,480
+and actually, I'm going to do an
+index.jsx file since we're not--
+
+493
+00:31:55,480 --> 00:32:00,720
+I feel like most of you are
+familiar with Python than other
+
+494
+00:32:00,720 --> 00:32:04,380
+strongly typed languages,
+like C++ or Java.
+
+495
+00:32:04,380 --> 00:32:06,880
+So we'll do regular
+JavaScript so we
+
+496
+00:32:06,880 --> 00:32:11,560
+don't have to worry about
+types when we write things.
+
+497
+00:32:11,560 --> 00:32:18,560
+I want a new index.jsx page.
+
+498
+00:32:18,560 --> 00:32:23,100
+I want the page to
+have-- let's see.
+
+499
+00:32:23,100 --> 00:32:27,960
+Let's just get a form
+for registration data.
+
+500
+00:32:27,960 --> 00:32:36,840
+A form for filling out
+user registration data.
+
+501
+00:32:36,840 --> 00:32:44,720
+I want the form
+data to match my--
+
+502
+00:32:44,720 --> 00:32:47,960
+and you don't have to worry
+about connecting to your Django
+
+503
+00:32:47,960 --> 00:32:51,760
+backend yet, but it is a good
+idea, when you're designing
+
+504
+00:32:51,760 --> 00:32:54,100
+your UI, to keep
+your backend in mind
+
+505
+00:32:54,100 --> 00:32:57,020
+or whatever your whole
+project structure is--
+
+506
+00:33:00,960 --> 00:33:02,320
+Django model.
+
+507
+00:33:02,320 --> 00:33:06,120
+So let's go grab
+our Django model.
+
+508
+00:33:06,120 --> 00:33:12,160
+OK, so there's my
+Django API app.
+
+509
+00:33:12,160 --> 00:33:14,280
+Here's my model.
+
+510
+00:33:14,280 --> 00:33:15,780
+Let's grab the user model.
+
+511
+00:33:37,530 --> 00:33:39,290
+And we're not going
+to worry about logic
+
+512
+00:33:39,290 --> 00:33:43,530
+like submitting the data.
+
+513
+00:33:43,530 --> 00:33:52,650
+Let's just say for
+now onSubmit just
+
+514
+00:33:52,650 --> 00:33:56,750
+console.log the data for now.
+
+515
+00:34:14,969 --> 00:34:19,010
+So it's getting some
+default values set up
+
+516
+00:34:19,010 --> 00:34:22,650
+to click that Django data.
+
+517
+00:34:22,650 --> 00:34:27,770
+They are writing an onSubmit
+function to console.log.
+
+518
+00:34:27,770 --> 00:34:31,929
+And console.log and JavaScript
+is the equivalent of--
+
+519
+00:34:31,929 --> 00:34:33,949
+in Python, you would
+just say print.
+
+520
+00:34:36,730 --> 00:34:40,150
+Personal opinion-- print is
+more intuitive than console.log.
+
+521
+00:34:40,150 --> 00:34:42,810
+[CHUCKLES]
+
+522
+00:34:42,810 --> 00:34:48,110
+And then the return statement
+has this View Controller.
+
+523
+00:34:48,110 --> 00:34:49,409
+Oh, what?
+
+524
+00:34:49,409 --> 00:34:52,510
+Are we using react-hook-form?
+
+525
+00:34:52,510 --> 00:34:53,429
+Very nice.
+
+526
+00:34:57,970 --> 00:35:03,110
+And then it's defining
+styles down at the bottom.
+
+527
+00:35:03,110 --> 00:35:06,150
+Look at that StyleSheet.create,
+just like we had talked about.
+
+528
+00:35:06,150 --> 00:35:11,450
+And it's setting up the styles
+for all the UI elements in here.
+
+529
+00:35:11,450 --> 00:35:14,850
+And they're giving us
+a quick explanation.
+
+530
+00:35:14,850 --> 00:35:19,430
+We will step through that
+here in just a minute.
+
+531
+00:35:19,430 --> 00:35:26,620
+So let's put that in here.
+
+532
+00:35:26,620 --> 00:35:32,580
+I'm going to close
+this code window.
+
+533
+00:35:32,580 --> 00:35:36,920
+OK, let's find my app, Expo
+app, inside of the app folder,
+
+534
+00:35:36,920 --> 00:35:39,460
+inside of index.tsx.
+
+535
+00:35:39,460 --> 00:35:46,480
+So let's just replace that
+whole file, or that's 160 lines.
+
+536
+00:35:46,480 --> 00:35:50,540
+But we'll get through it.
+
+537
+00:35:50,540 --> 00:35:52,860
+And again, you don't have
+to worry about memorizing
+
+538
+00:35:52,860 --> 00:35:54,120
+how to write all this stuff.
+
+539
+00:35:54,120 --> 00:35:57,940
+But I do want you to be able
+to understand it and read it.
+
+540
+00:35:57,940 --> 00:36:01,620
+So first things first, it's
+complaining about this import
+
+541
+00:36:01,620 --> 00:36:02,580
+react-hook-form.
+
+542
+00:36:05,180 --> 00:36:10,420
+That is something we'll have
+to include in our package.json
+
+543
+00:36:10,420 --> 00:36:11,920
+and in our node modules.
+
+544
+00:36:11,920 --> 00:36:15,340
+And they actually told us this.
+
+545
+00:36:15,340 --> 00:36:18,960
+They recommended npm
+install react-hook-form,
+
+546
+00:36:18,960 --> 00:36:20,320
+so let's copy that.
+
+547
+00:36:24,620 --> 00:36:27,420
+For this, you'll
+want to be inside
+
+548
+00:36:27,420 --> 00:36:33,240
+of the same directory as
+your package.json folder.
+
+549
+00:36:33,240 --> 00:36:38,640
+So you can see expo app
+is visible where I'm at.
+
+550
+00:36:38,640 --> 00:36:40,880
+So let's cd into expo-app.
+
+551
+00:36:40,880 --> 00:36:42,180
+And in here is--
+
+552
+00:36:42,180 --> 00:36:44,280
+I got the package.json.
+
+553
+00:36:44,280 --> 00:36:46,820
+So we're in the right place.
+
+554
+00:36:46,820 --> 00:36:49,160
+Npm install react-hook-form.
+
+555
+00:36:52,780 --> 00:36:56,600
+And if you do and need
+a form in your UI,
+
+556
+00:36:56,600 --> 00:36:58,800
+which you probably
+will at some point,
+
+557
+00:36:58,800 --> 00:37:01,560
+I do recommend react-hook-form.
+
+558
+00:37:01,560 --> 00:37:06,860
+It's a nice way to organize
+and check form data
+
+559
+00:37:06,860 --> 00:37:10,140
+and validate your forms.
+
+560
+00:37:10,140 --> 00:37:15,980
+So it's got that installed,
+added two new packages.
+
+561
+00:37:15,980 --> 00:37:18,100
+And then if we go
+ahead and double check,
+
+562
+00:37:18,100 --> 00:37:20,660
+we can pull open
+our package.json
+
+563
+00:37:20,660 --> 00:37:25,510
+and see react-hook-form
+is right there.
+
+564
+00:37:25,510 --> 00:37:28,050
+So we should be good to go.
+
+565
+00:37:28,050 --> 00:37:32,910
+And yep, it's not complaining
+about that import anymore.
+
+566
+00:37:32,910 --> 00:37:35,370
+Let's not get too off
+in the weeds here,
+
+567
+00:37:35,370 --> 00:37:38,150
+but let's just step through
+to make sure we can understand
+
+568
+00:37:38,150 --> 00:37:39,830
+what's going on here.
+
+569
+00:37:39,830 --> 00:37:43,070
+So once again, our
+index, our page component
+
+570
+00:37:43,070 --> 00:37:46,710
+is defined as a function.
+
+571
+00:37:46,710 --> 00:37:53,190
+And that's how we write
+react components now.
+
+572
+00:37:53,190 --> 00:37:58,890
+In here, this is setting up
+form data for react-hook-form.
+
+573
+00:37:58,890 --> 00:38:01,830
+It's using this
+useForm hook, which is
+
+574
+00:38:01,830 --> 00:38:03,970
+imported from react-hook-form.
+
+575
+00:38:06,550 --> 00:38:11,790
+And then it built an
+onSubmit function for us.
+
+576
+00:38:11,790 --> 00:38:15,030
+And again, for
+readability, this is
+
+577
+00:38:15,030 --> 00:38:18,530
+how you define a
+function in JavaScript.
+
+578
+00:38:18,530 --> 00:38:20,550
+And you might say,
+hey, I thought const
+
+579
+00:38:20,550 --> 00:38:22,990
+was how you write variables.
+
+580
+00:38:22,990 --> 00:38:24,390
+You're right.
+
+581
+00:38:24,390 --> 00:38:26,410
+You can write
+functions two ways,
+
+582
+00:38:26,410 --> 00:38:28,890
+and I feel like this is
+important to point out,
+
+583
+00:38:28,890 --> 00:38:30,910
+so that you can read
+and understand the code
+
+584
+00:38:30,910 --> 00:38:33,430
+that the AI is writing for you.
+
+585
+00:38:33,430 --> 00:38:36,130
+This is what's called
+a fat arrow function.
+
+586
+00:38:36,130 --> 00:38:43,695
+See, because of that guy right
+there, this equal sign bracket.
+
+587
+00:38:43,695 --> 00:38:45,070
+The other way to
+write a function
+
+588
+00:38:45,070 --> 00:38:46,890
+would be with the
+function keyword,
+
+589
+00:38:46,890 --> 00:38:53,830
+and you could say onSubmit
+and put data in parentheses
+
+590
+00:38:53,830 --> 00:38:55,350
+right there.
+
+591
+00:38:55,350 --> 00:39:01,670
+This is equivalent to this.
+
+592
+00:39:01,670 --> 00:39:04,235
+These two functions
+are the same.
+
+593
+00:39:04,235 --> 00:39:05,610
+They have the same
+functionality,
+
+594
+00:39:05,610 --> 00:39:07,590
+and you use them the same way.
+
+595
+00:39:07,590 --> 00:39:12,230
+In every case except for--
+
+596
+00:39:12,230 --> 00:39:16,870
+let's say you're going to use
+this dot something in here.
+
+597
+00:39:16,870 --> 00:39:20,920
+Then this keyword functions
+differently inside
+
+598
+00:39:20,920 --> 00:39:22,260
+of each kind of function.
+
+599
+00:39:22,260 --> 00:39:25,660
+But in this case, we don't
+need to worry about that.
+
+600
+00:39:25,660 --> 00:39:29,080
+Just understand that this is
+one way to write a function.
+
+601
+00:39:29,080 --> 00:39:32,180
+And if you see this
+fat arrow function,
+
+602
+00:39:32,180 --> 00:39:33,780
+this is also a function.
+
+603
+00:39:36,680 --> 00:39:41,200
+And then the return
+statement is a big one
+
+604
+00:39:41,200 --> 00:39:44,340
+in our index component.
+
+605
+00:39:44,340 --> 00:39:48,500
+So every component you write
+will have a return statement,
+
+606
+00:39:48,500 --> 00:39:49,160
+every one.
+
+607
+00:39:49,160 --> 00:39:52,060
+They don't necessarily have to
+have functions or variables,
+
+608
+00:39:52,060 --> 00:39:54,400
+but they will all have
+a return statement.
+
+609
+00:39:54,400 --> 00:39:58,560
+And that returns
+your UI components
+
+610
+00:39:58,560 --> 00:40:02,680
+or your UI elements
+for this page.
+
+611
+00:40:02,680 --> 00:40:06,020
+In this case, we have a View,
+which is just a container.
+
+612
+00:40:06,020 --> 00:40:10,200
+It's a wrapper around
+all of our UI elements.
+
+613
+00:40:10,200 --> 00:40:14,720
+And then it's got a text
+that says User Registration.
+
+614
+00:40:14,720 --> 00:40:19,520
+And let's run this
+so we can see what
+
+615
+00:40:19,520 --> 00:40:21,820
+it looks like as we're
+stepping through the code
+
+616
+00:40:21,820 --> 00:40:25,000
+I find it helpful to be able
+to see, oh, this is the code.
+
+617
+00:40:25,000 --> 00:40:29,220
+And this is how it ended
+up looking on the page.
+
+618
+00:40:29,220 --> 00:40:33,800
+There's our text,
+User Registration.
+
+619
+00:40:33,800 --> 00:40:40,720
+And you will notice this is
+centered and bold and large.
+
+620
+00:40:40,720 --> 00:40:45,100
+And it's just a regular text
+component like any other,
+
+621
+00:40:45,100 --> 00:40:48,600
+but it's got this styles.title.
+
+622
+00:40:48,600 --> 00:40:52,480
+I'm going to hit Control and
+click on that to pop down
+
+623
+00:40:52,480 --> 00:40:54,320
+to the bottom of the file.
+
+624
+00:40:54,320 --> 00:40:59,540
+The title has a fontSize
+of 20, bold fontWeight.
+
+625
+00:40:59,540 --> 00:41:01,240
+TextAlign is center.
+
+626
+00:41:01,240 --> 00:41:02,900
+MarginBottom is 20.
+
+627
+00:41:02,900 --> 00:41:09,240
+Margin is this gap in
+between the User Registration
+
+628
+00:41:09,240 --> 00:41:12,860
+and the next item down there.
+
+629
+00:41:16,000 --> 00:41:19,770
+And if you want to see
+this, you can go ahead
+
+630
+00:41:19,770 --> 00:41:20,950
+and open your DevTools.
+
+631
+00:41:20,950 --> 00:41:25,950
+I'm going to hit F12, and
+the elements are selected.
+
+632
+00:41:25,950 --> 00:41:28,470
+Here you can see the
+different UI elements.
+
+633
+00:41:28,470 --> 00:41:31,530
+I'm going to click
+this little arrow.
+
+634
+00:41:31,530 --> 00:41:35,210
+And then this will highlight
+whatever in the UI--
+
+635
+00:41:35,210 --> 00:41:36,870
+whatever your mouse
+is hovering over.
+
+636
+00:41:36,870 --> 00:41:39,090
+So let's hover over this
+User Registration piece
+
+637
+00:41:39,090 --> 00:41:40,650
+and click on it.
+
+638
+00:41:40,650 --> 00:41:47,330
+And you can see here, usually--
+
+639
+00:41:47,330 --> 00:41:48,530
+OK, there we go.
+
+640
+00:41:48,530 --> 00:41:51,690
+So you can see this
+little diagram points
+
+641
+00:41:51,690 --> 00:41:54,730
+out each piece of the component.
+
+642
+00:41:54,730 --> 00:41:58,450
+Right here at the core,
+the highlighted section
+
+643
+00:41:58,450 --> 00:42:00,930
+on the screen is all the
+space that this component
+
+644
+00:42:00,930 --> 00:42:02,810
+is taking up.
+
+645
+00:42:02,810 --> 00:42:04,950
+This component has no padding.
+
+646
+00:42:04,950 --> 00:42:06,030
+It has no border.
+
+647
+00:42:06,030 --> 00:42:10,550
+But it does have a margin, which
+is null on top and the sides.
+
+648
+00:42:10,550 --> 00:42:13,170
+But it's 20 on bottom.
+
+649
+00:42:13,170 --> 00:42:16,370
+So you can see that margin
+that's separating this component
+
+650
+00:42:16,370 --> 00:42:18,090
+from the bottom there.
+
+651
+00:42:18,090 --> 00:42:21,730
+And anyway, that's
+the way-- if you're
+
+652
+00:42:21,730 --> 00:42:25,810
+wondering why your UI layout
+looks funny sometimes,
+
+653
+00:42:25,810 --> 00:42:30,730
+just pop open F12, open
+your developer tools in web,
+
+654
+00:42:30,730 --> 00:42:34,090
+click this guy, and
+inspect your elements.
+
+655
+00:42:34,090 --> 00:42:39,850
+And you can see, what is
+this rendering to the screen?
+
+656
+00:42:39,850 --> 00:42:43,750
+What is all this style
+stuff doing to my layout?
+
+657
+00:42:46,530 --> 00:42:48,150
+Then we can keep
+going down here.
+
+658
+00:42:48,150 --> 00:42:52,890
+This is an inline
+comment, this bracket.
+
+659
+00:42:52,890 --> 00:42:57,530
+And this /*, that's how you
+write an inline comment inside
+
+660
+00:42:57,530 --> 00:42:58,830
+your return statement.
+
+661
+00:42:58,830 --> 00:43:04,210
+In Python, comments are
+denoted by this guy, pound sign
+
+662
+00:43:04,210 --> 00:43:06,810
+or the number sign.
+
+663
+00:43:06,810 --> 00:43:10,090
+I'm going to delete
+the comment for now.
+
+664
+00:43:10,090 --> 00:43:11,750
+And then there's a Controller.
+
+665
+00:43:11,750 --> 00:43:15,540
+This is part of react-hook-form.
+
+666
+00:43:15,540 --> 00:43:17,360
+So don't worry about
+this right now.
+
+667
+00:43:17,360 --> 00:43:19,460
+We can talk about
+react-hook-form later
+
+668
+00:43:19,460 --> 00:43:20,640
+if you end up using that.
+
+669
+00:43:20,640 --> 00:43:28,100
+But what we're looking at is,
+this form input has a view.
+
+670
+00:43:28,100 --> 00:43:32,160
+So it's just that's in order
+to be able to style it.
+
+671
+00:43:32,160 --> 00:43:34,340
+And then it has a TextInput.
+
+672
+00:43:34,340 --> 00:43:37,520
+This TextInput component is--
+
+673
+00:43:37,520 --> 00:43:40,020
+it's not popping
+over to it, but it
+
+674
+00:43:40,020 --> 00:43:44,260
+is imported from React Native.
+
+675
+00:43:44,260 --> 00:43:49,040
+So just like the text and
+button and other items,
+
+676
+00:43:49,040 --> 00:43:51,340
+it's imported from React Native.
+
+677
+00:43:51,340 --> 00:43:53,100
+And then it has a style.
+
+678
+00:43:53,100 --> 00:44:00,660
+Placeholder text is--
+keyboard's being funny.
+
+679
+00:44:00,660 --> 00:44:01,900
+There we go.
+
+680
+00:44:01,900 --> 00:44:04,920
+So this placeholder text, as
+you see inside the TextInput,
+
+681
+00:44:04,920 --> 00:44:08,980
+there's this first name
+grayed-out text there.
+
+682
+00:44:08,980 --> 00:44:13,040
+If I start typing,
+that goes away.
+
+683
+00:44:13,040 --> 00:44:18,340
+And then the value is-- that's
+just react-hook-form helping
+
+684
+00:44:18,340 --> 00:44:22,540
+keep track of whatever the
+user has typed in here for you.
+
+685
+00:44:22,540 --> 00:44:26,980
+And onChangeText is a
+function handler, again,
+
+686
+00:44:26,980 --> 00:44:29,020
+for react-hook-form to
+be able to track what's
+
+687
+00:44:29,020 --> 00:44:32,660
+happening with this TextInput.
+
+688
+00:44:32,660 --> 00:44:34,580
+And then there's
+another TextInput
+
+689
+00:44:34,580 --> 00:44:41,020
+for the last name input, another
+one for the phone number.
+
+690
+00:44:41,020 --> 00:44:45,100
+It's got a little bit
+more validation here.
+
+691
+00:44:45,100 --> 00:44:47,900
+React-hook-form is-- I'm
+going to validate that this
+
+692
+00:44:47,900 --> 00:44:49,580
+is actually a phone number.
+
+693
+00:44:49,580 --> 00:44:54,043
+So if I go ahead and type
+in something like that
+
+694
+00:44:54,043 --> 00:44:55,460
+and then try to
+submit, it's going
+
+695
+00:44:55,460 --> 00:45:00,380
+to say that's not a
+valid phone number.
+
+696
+00:45:00,380 --> 00:45:02,940
+This form field
+validation is one
+
+697
+00:45:02,940 --> 00:45:07,220
+of the main reasons you may want
+to use react-hook-form, to help
+
+698
+00:45:07,220 --> 00:45:11,420
+make sure your inputs are good.
+
+699
+00:45:11,420 --> 00:45:16,970
+And if I change this
+to an actual number,
+
+700
+00:45:16,970 --> 00:45:19,850
+then it's going to say, yeah,
+that looks like a phone number.
+
+701
+00:45:19,850 --> 00:45:22,870
+It matches this regex.
+
+702
+00:45:22,870 --> 00:45:24,153
+Regex is complicated.
+
+703
+00:45:24,153 --> 00:45:25,570
+I don't even know
+how to write it.
+
+704
+00:45:25,570 --> 00:45:28,190
+So I just write--
+
+705
+00:45:28,190 --> 00:45:32,530
+have Gen AI do that for
+you, like we did here.
+
+706
+00:45:35,350 --> 00:45:41,010
+Email is just another TextInput
+with some form validation.
+
+707
+00:45:41,010 --> 00:45:43,430
+It's going to look
+for an ampersand
+
+708
+00:45:43,430 --> 00:45:46,910
+so they don't just
+type in nonsense.
+
+709
+00:45:46,910 --> 00:45:51,470
+And then another TextInput
+for favorite color.
+
+710
+00:45:51,470 --> 00:45:55,470
+Let's say we want
+to do something--
+
+711
+00:45:55,470 --> 00:45:58,470
+well, I don't know
+if they have a picker
+
+712
+00:45:58,470 --> 00:46:03,210
+component in React Native
+by default. Let's try it.
+
+713
+00:46:23,093 --> 00:46:27,270
+OK, so we're going to need
+to install another-- yeah,
+
+714
+00:46:27,270 --> 00:46:29,430
+React Native doesn't have
+one out of the box, which
+
+715
+00:46:29,430 --> 00:46:31,270
+is what I thought.
+
+716
+00:46:31,270 --> 00:46:38,230
+So let's just copy that
+npm install, Control-C.
+
+717
+00:46:38,230 --> 00:46:41,410
+And I'm going to paste in there
+npm install react-native-picker.
+
+718
+00:46:45,030 --> 00:46:48,950
+And then let's see if it's done.
+
+719
+00:46:48,950 --> 00:46:53,510
+Yep, it's done generating
+that file for us.
+
+720
+00:46:53,510 --> 00:46:58,750
+Let's go ahead and
+copy it in our code--
+
+721
+00:46:58,750 --> 00:47:02,590
+select all paste.
+
+722
+00:47:02,590 --> 00:47:07,750
+And now we've got our
+phone number, email,
+
+723
+00:47:07,750 --> 00:47:14,840
+and favorite color is
+a picker item, I think.
+
+724
+00:47:14,840 --> 00:47:16,160
+Let's see.
+
+725
+00:47:16,160 --> 00:47:18,600
+I don't know if we're
+going to have to--
+
+726
+00:47:18,600 --> 00:47:22,500
+yeah, so once you install a new
+packet or a new node module--
+
+727
+00:47:25,620 --> 00:47:26,120
+let's see.
+
+728
+00:47:26,120 --> 00:47:27,180
+I stopped this.
+
+729
+00:47:27,180 --> 00:47:28,600
+That's why it's not refreshing.
+
+730
+00:47:28,600 --> 00:47:30,140
+npm start.
+
+731
+00:47:35,400 --> 00:47:44,540
+Refresh OK, now we've got
+some colors to pick from.
+
+732
+00:47:44,540 --> 00:47:48,660
+And we can go look at
+the code for that picker.
+
+733
+00:47:48,660 --> 00:47:54,040
+So we've got this picker
+component that we just
+
+734
+00:47:54,040 --> 00:47:56,880
+installed with node module.
+
+735
+00:47:56,880 --> 00:47:59,340
+And we have all these.
+
+736
+00:47:59,340 --> 00:48:03,600
+These are the items
+that they can select.
+
+737
+00:48:03,600 --> 00:48:05,680
+So I love being
+able to have access
+
+738
+00:48:05,680 --> 00:48:07,060
+to node modules like this.
+
+739
+00:48:07,060 --> 00:48:11,260
+We get this nice
+dropdown picker component
+
+740
+00:48:11,260 --> 00:48:14,240
+we didn't have to build
+ourself, getting the UI
+
+741
+00:48:14,240 --> 00:48:15,720
+to handle the onClick events.
+
+742
+00:48:15,720 --> 00:48:19,680
+And render this conditionally
+would be a little bit of work.
+
+743
+00:48:19,680 --> 00:48:22,000
+But look, we just did it
+with an import statement
+
+744
+00:48:22,000 --> 00:48:25,240
+for a node module,
+and we're good to go.
+
+745
+00:48:25,240 --> 00:48:27,060
+Now let's fill this out.
+
+746
+00:48:42,960 --> 00:48:48,440
+And I'm going to hit
+F12 to open my console.
+
+747
+00:48:48,440 --> 00:48:50,300
+So in here, these
+are the UI elements.
+
+748
+00:48:50,300 --> 00:48:52,700
+But this tab here
+has the console.
+
+749
+00:48:52,700 --> 00:48:58,360
+So we should be able to see--
+there we go, console.log.
+
+750
+00:48:58,360 --> 00:48:59,620
+And you can expand that.
+
+751
+00:48:59,620 --> 00:49:04,160
+And you can see we've got the
+email and name and other items
+
+752
+00:49:04,160 --> 00:49:06,520
+and their values there.
+
+753
+00:49:06,520 --> 00:49:11,290
+So that's going to be ready
+to go once we hook this up
+
+754
+00:49:11,290 --> 00:49:13,530
+to the backend.
+
+755
+00:49:13,530 --> 00:49:17,490
+Yeah, that button
+has an onPress prop,
+
+756
+00:49:17,490 --> 00:49:20,350
+which we pass this
+handleSubmit function to.
+
+757
+00:49:26,530 --> 00:49:28,830
+So there we go, console.log.
+
+758
+00:49:28,830 --> 00:49:33,730
+And eventually, instead of
+console.logging the data,
+
+759
+00:49:33,730 --> 00:49:39,950
+we will pass it to a
+network rest handler.
+
+760
+00:49:39,950 --> 00:49:41,790
+And that will be able
+to go to our backend.
+
+761
+00:49:41,790 --> 00:49:46,050
+So that's all it took
+to get a form that we
+
+762
+00:49:46,050 --> 00:49:49,890
+can submit user data for.
+
+763
+00:49:49,890 --> 00:49:52,810
+Next time, we'll talk
+more about functions
+
+764
+00:49:52,810 --> 00:49:59,370
+and how to manage local state
+inside of our React components
+
+765
+00:49:59,370 --> 00:50:03,330
+in our UI.
+
+766
+00:50:03,330 --> 00:50:07,160
+That should wrap
+it up here for now.

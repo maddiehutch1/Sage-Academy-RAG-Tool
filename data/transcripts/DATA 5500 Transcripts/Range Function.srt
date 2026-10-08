@@ -1,0 +1,218 @@
+1
+00:00:02,680 --> 00:00:05,420
+Hey everybody, in this content video,
+we're going to take a little bit
+
+2
+00:00:05,420 --> 00:00:09,080
+of a deeper and more in-depth look
+at the range function in Python.
+
+3
+00:00:09,120 --> 00:00:11,220
+And we don't need to spend a
+ton of time in the textbook
+
+4
+00:00:11,220 --> 00:00:14,780
+here, but let's just jump
+right over into our code space.
+
+5
+00:00:16,000 --> 00:00:19,270
+And what we're going to look at is
+
+6
+00:00:21,320 --> 00:00:23,900
+the step part of the range function.
+
+7
+00:00:25,120 --> 00:00:28,340
+So we mentioned in a previous
+content video that you
+
+8
+00:00:28,340 --> 00:00:33,700
+can do something like this,
+for i in range 10 print i
+
+9
+00:00:37,920 --> 00:00:44,440
+and that will print everything from
+0 to 10 except not because there
+
+10
+00:00:44,440 --> 00:00:48,920
+we go uh not 0 to 10 sorry 0 up
+to 10 but not including 10 and
+
+11
+00:00:48,920 --> 00:00:52,780
+that's kind of like the standard
+range function so what we're going
+
+12
+00:00:52,780 --> 00:00:57,070
+to do is let's print an empty line
+here um we're going to introduce
+
+13
+00:00:57,070 --> 00:01:00,760
+the step part of the range function
+which i think we may be mentioned
+
+14
+00:01:00,760 --> 00:01:04,720
+in a previous content video but
+um we're going to talk about it
+
+15
+00:01:04,720 --> 00:01:08,620
+a little bit more here so by
+default the range function can take
+
+16
+00:01:08,620 --> 00:01:13,420
+one argument it can take two arguments
+or it can take three arguments
+
+17
+00:01:13,420 --> 00:01:17,080
+so here's what it looks like if
+we include two arguments for i
+
+18
+00:01:17,080 --> 00:01:24,060
+let's do j in range one to eleven
+and we've done this before so you
+
+19
+00:01:24,060 --> 00:01:29,480
+guys should hopefully know what
+this gives us print uh i like this
+
+20
+00:01:31,020 --> 00:01:34,560
+uh that should start our range at one
+
+21
+00:01:34,560 --> 00:01:37,040
+and go up two but not including 11.
+
+22
+00:01:38,040 --> 00:01:41,800
+uh or it will just give
+us nine every time oh
+
+23
+00:01:41,800 --> 00:01:44,880
+it's because i had it
+printing i not j here we go
+
+24
+00:01:48,140 --> 00:01:53,060
+okay so here it goes 1 to
+10 not including 11 okay so
+
+25
+00:01:53,060 --> 00:01:57,280
+that is range with two
+arguments and then let's talk
+
+26
+00:01:57,280 --> 00:02:01,960
+about range with three arguments
+so let's say 4k in range
+
+27
+00:02:01,960 --> 00:02:10,100
+one two let's do let's do
+two to twenty step of two so
+
+28
+00:02:21,290 --> 00:02:25,190
+here it is two four six eight
+ten twelve fourteen 16, 18.
+
+29
+00:02:25,190 --> 00:02:29,590
+So this is the third argument
+of the range function. It
+
+30
+00:02:29,590 --> 00:02:35,310
+tells us what we want our step
+to be. And if we do one more,
+
+31
+00:02:36,910 --> 00:02:40,110
+or let's go back to i in range.
+
+32
+00:02:40,270 --> 00:02:43,070
+Let's go 10 to negative 11.
+
+33
+00:02:43,290 --> 00:02:47,390
+Step of negative 2. I don't
+know. I'm making this up.
+
+34
+00:02:47,390 --> 00:02:51,070
+let's go step of negative
+three. That's way more unique.
+
+35
+00:02:51,230 --> 00:02:57,150
+In French, I maybe guess what this is
+going to give us before we actually
+
+36
+00:02:57,150 --> 00:03:01,570
+run the code. All right, so here
+it is 10, and then 7, and then
+
+37
+00:03:01,570 --> 00:03:06,130
+4, 1, negative 2, negative 5,
+negative 8. So maybe ask yourself, why
+
+38
+00:03:06,130 --> 00:03:09,630
+did it stop at negative 8 instead
+of going all the way to negative 11?
+
+39
+00:03:09,630 --> 00:03:13,810
+Well, it's starting at 10, and it's
+going to negative 11, and it's not
+
+40
+00:03:13,810 --> 00:03:17,350
+including or passing negative 11.
+So it's getting as close to it as
+
+41
+00:03:17,350 --> 00:03:20,870
+possible. But if we were to subtract
+three more off of negative eight,
+
+42
+00:03:20,870 --> 00:03:24,850
+we would have gotten to 11. It
+would be inclusive. And so we don't
+
+43
+00:03:24,850 --> 00:03:27,430
+want to include that, or the range
+function doesn't include that in our
+
+44
+00:03:27,430 --> 00:03:30,350
+range. And so that's why it stops
+there. So hopefully that answers a
+
+45
+00:03:30,350 --> 00:03:32,870
+couple more questions about the
+range function. Thanks for watching.

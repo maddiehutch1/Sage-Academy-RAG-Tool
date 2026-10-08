@@ -1,0 +1,1321 @@
+1
+00:00:02,622 --> 00:00:05,080
+PRESENTER: Hello everyone, and
+welcome to the content video
+
+2
+00:00:05,080 --> 00:00:08,320
+for the Graph Data Structure.
+
+3
+00:00:08,320 --> 00:00:11,020
+OK, so the Graph Data
+Structure, there's
+
+4
+00:00:11,020 --> 00:00:13,780
+some similarities between
+the Tree Data Structure
+
+5
+00:00:13,780 --> 00:00:15,820
+and the Graph Data Structure.
+
+6
+00:00:15,820 --> 00:00:17,270
+But some key differences.
+
+7
+00:00:17,270 --> 00:00:19,380
+So a tree, as you can
+see in my image here--
+
+8
+00:00:21,890 --> 00:00:24,710
+a tree has a parent-child
+relationship.
+
+9
+00:00:24,710 --> 00:00:27,260
+And the nodes, or the
+data that's stored,
+
+10
+00:00:27,260 --> 00:00:29,930
+are connected through
+these edges from parent
+
+11
+00:00:29,930 --> 00:00:33,680
+to child, or from
+root down to leaf.
+
+12
+00:00:33,680 --> 00:00:36,830
+So the graph is
+similar, but the changes
+
+13
+00:00:36,830 --> 00:00:40,790
+are a node can have
+multiple parents.
+
+14
+00:00:40,790 --> 00:00:43,110
+And you can think of it
+like multiple children.
+
+15
+00:00:43,110 --> 00:00:45,980
+So really the rule of one
+parent to two children
+
+16
+00:00:45,980 --> 00:00:47,370
+doesn't exist in a graph.
+
+17
+00:00:47,370 --> 00:00:50,960
+A node can be connected to
+other nodes by as many edges
+
+18
+00:00:50,960 --> 00:00:52,260
+as you want.
+
+19
+00:00:52,260 --> 00:00:56,750
+There is a concept of successor
+and predecessor in graphs.
+
+20
+00:00:56,750 --> 00:01:00,380
+But really, it can be--
+
+21
+00:01:00,380 --> 00:01:01,290
+there's no limit.
+
+22
+00:01:01,290 --> 00:01:02,915
+There's no limit to
+the number of nodes
+
+23
+00:01:02,915 --> 00:01:05,290
+or the number of
+edges in a graph.
+
+24
+00:01:05,290 --> 00:01:07,940
+Graphs are used,
+really, all over.
+
+25
+00:01:07,940 --> 00:01:09,550
+But the common
+thing between them
+
+26
+00:01:09,550 --> 00:01:12,640
+all is that there
+needs to be nodes,
+
+27
+00:01:12,640 --> 00:01:15,550
+or really where the
+data pieces are stored.
+
+28
+00:01:15,550 --> 00:01:19,720
+And then edges, or-- which
+can be a physical connection,
+
+29
+00:01:19,720 --> 00:01:24,040
+a representation of a physical
+connection, or a relationship,
+
+30
+00:01:24,040 --> 00:01:26,050
+including a mathematical
+relationship.
+
+31
+00:01:26,050 --> 00:01:29,597
+But something that connects
+the nodes to each other.
+
+32
+00:01:29,597 --> 00:01:31,930
+As I mentioned, a graph is a
+tree with multiple children
+
+33
+00:01:31,930 --> 00:01:33,310
+and parents.
+
+34
+00:01:33,310 --> 00:01:35,860
+And consistently,
+you'll see the verbiage
+
+35
+00:01:35,860 --> 00:01:39,610
+that's used when talking about
+graphs is vertices and edges.
+
+36
+00:01:39,610 --> 00:01:42,050
+But vertices are just
+nodes-- same things.
+
+37
+00:01:42,050 --> 00:01:44,260
+And I commonly use the
+term nodes and edges,
+
+38
+00:01:44,260 --> 00:01:46,250
+but vertices, same thing.
+
+39
+00:01:46,250 --> 00:01:47,800
+So vertices and edges.
+
+40
+00:01:47,800 --> 00:01:49,310
+But it's a set of those.
+
+41
+00:01:49,310 --> 00:01:52,570
+So a set of nodes, and then a
+set of edges that connect that
+
+42
+00:01:52,570 --> 00:01:56,800
+nodes in whatever way you want.
+
+43
+00:01:56,800 --> 00:01:58,510
+Graphs are all over the place.
+
+44
+00:01:58,510 --> 00:02:03,880
+They represent physical
+things, like hardware networks,
+
+45
+00:02:03,880 --> 00:02:07,930
+and/or logical things,
+like this example
+
+46
+00:02:07,930 --> 00:02:12,370
+of if you want to get a
+degree in computer science--
+
+47
+00:02:12,370 --> 00:02:15,610
+and this one's a little bit
+old, but the idea the idea
+
+48
+00:02:15,610 --> 00:02:16,220
+is the same.
+
+49
+00:02:16,220 --> 00:02:18,400
+You start here, and then you
+go through all these classes,
+
+50
+00:02:18,400 --> 00:02:20,942
+and eventually you get down to
+the bottom right of this graph
+
+51
+00:02:20,942 --> 00:02:22,940
+where you graduate.
+
+52
+00:02:22,940 --> 00:02:25,600
+Well, the edges
+represent the workflow
+
+53
+00:02:25,600 --> 00:02:27,830
+and then the classes
+represent the nodes.
+
+54
+00:02:27,830 --> 00:02:30,450
+That's the relationship.
+
+55
+00:02:30,450 --> 00:02:33,010
+Now, the relationship
+matters, obviously,
+
+56
+00:02:33,010 --> 00:02:35,270
+because you can't take
+classes in any order you want.
+
+57
+00:02:35,270 --> 00:02:37,730
+There's a structure
+and an ordering to it.
+
+58
+00:02:37,730 --> 00:02:39,700
+So the combination of
+those nodes and edges
+
+59
+00:02:39,700 --> 00:02:44,290
+together gives that
+relationship, gives those--
+
+60
+00:02:44,290 --> 00:02:46,850
+gives that structure to
+the graph to represent it.
+
+61
+00:02:46,850 --> 00:02:48,040
+So you start here.
+
+62
+00:02:48,040 --> 00:02:51,460
+You go through, take
+CS1400, 1410, 2420.
+
+63
+00:02:51,460 --> 00:02:53,140
+And then, as you take
+those, it opens up
+
+64
+00:02:53,140 --> 00:02:56,550
+the possibility of other
+classes for you to take.
+
+65
+00:02:56,550 --> 00:02:59,222
+You still have your prereqs over
+here, your gen ed requirements.
+
+66
+00:02:59,222 --> 00:03:01,430
+And then eventually, once
+you've got everything done,
+
+67
+00:03:01,430 --> 00:03:05,320
+you make it over to
+where you graduate.
+
+68
+00:03:05,320 --> 00:03:06,380
+Another common example.
+
+69
+00:03:06,380 --> 00:03:08,050
+So this would be
+a physical example
+
+70
+00:03:08,050 --> 00:03:11,720
+that's represented with a
+graph, would be bus routes.
+
+71
+00:03:11,720 --> 00:03:15,640
+So the edges here would
+actually be a physical road,
+
+72
+00:03:15,640 --> 00:03:17,570
+and the nodes here
+would also be physical.
+
+73
+00:03:17,570 --> 00:03:19,340
+They'd be a physical bus stop.
+
+74
+00:03:19,340 --> 00:03:21,430
+And the relationships,
+obviously,
+
+75
+00:03:21,430 --> 00:03:25,210
+are where can I
+go on this route.
+
+76
+00:03:25,210 --> 00:03:27,940
+So you have to think of it
+in terms of the application,
+
+77
+00:03:27,940 --> 00:03:29,450
+is what nodes can I get to?
+
+78
+00:03:29,450 --> 00:03:31,550
+I need to go on a bus
+to get to another node.
+
+79
+00:03:31,550 --> 00:03:34,240
+And then, obviously,
+it shows you
+
+80
+00:03:34,240 --> 00:03:36,380
+the edges you're going to
+traverse as you go along.
+
+81
+00:03:36,380 --> 00:03:39,910
+So that's another classic
+example of a graph.
+
+82
+00:03:39,910 --> 00:03:40,940
+Matching algorithm.
+
+83
+00:03:40,940 --> 00:03:43,480
+So this is a logical
+example of a graph.
+
+84
+00:03:43,480 --> 00:03:45,700
+The nodes here would be
+people, and the edges
+
+85
+00:03:45,700 --> 00:03:49,540
+would represent a relationship
+between them, which
+
+86
+00:03:49,540 --> 00:03:53,680
+could be an employee,
+a job, or a dating app,
+
+87
+00:03:53,680 --> 00:03:55,370
+or website that
+would match people.
+
+88
+00:03:55,370 --> 00:03:57,550
+The nodes would still
+be people there.
+
+89
+00:03:57,550 --> 00:03:59,770
+And then the edges would
+be the relationship
+
+90
+00:03:59,770 --> 00:04:01,520
+you're trying to match
+between the people.
+
+91
+00:04:01,520 --> 00:04:07,590
+So the node here is physical, a
+person, and the edge is logical,
+
+92
+00:04:07,590 --> 00:04:08,640
+a relationship.
+
+93
+00:04:12,580 --> 00:04:14,480
+Whoop.
+
+94
+00:04:14,480 --> 00:04:15,240
+There we go.
+
+95
+00:04:15,240 --> 00:04:18,140
+So some other terms when you're
+dealing with graph-- and this
+
+96
+00:04:18,140 --> 00:04:20,570
+really sets up when we talk
+about traversing a graph,
+
+97
+00:04:20,570 --> 00:04:22,880
+or how to get through
+graphs the fastest,
+
+98
+00:04:22,880 --> 00:04:26,270
+or how to calculate things
+efficiently to make decisions
+
+99
+00:04:26,270 --> 00:04:27,690
+with the data in a graph.
+
+100
+00:04:27,690 --> 00:04:30,920
+Here's some terminology
+and some concepts
+
+101
+00:04:30,920 --> 00:04:32,730
+we're going to need for those.
+
+102
+00:04:32,730 --> 00:04:35,090
+So graph, we mentioned, is
+a set of vertices and edges
+
+103
+00:04:35,090 --> 00:04:36,020
+connected with--
+
+104
+00:04:36,020 --> 00:04:39,860
+or, excuse me, of vertices
+and nodes connected by edges.
+
+105
+00:04:39,860 --> 00:04:43,670
+Commonly, when you see
+mathematical representations--
+
+106
+00:04:43,670 --> 00:04:44,960
+you know, the--
+
+107
+00:04:44,960 --> 00:04:48,380
+it'll be V and E.
+This relationship
+
+108
+00:04:48,380 --> 00:04:50,690
+of successor-predecessor,
+it's similar to a tree
+
+109
+00:04:50,690 --> 00:04:53,480
+structure of parent-child,
+but not necessarily.
+
+110
+00:04:53,480 --> 00:04:55,520
+Successor and
+predecessor, now, more
+
+111
+00:04:55,520 --> 00:04:58,230
+has to do with the way
+you traverse a graph.
+
+112
+00:04:58,230 --> 00:05:01,190
+So for the example of getting
+a computer science degree,
+
+113
+00:05:01,190 --> 00:05:04,580
+there's an obvious flow there
+of successor-predecessor,.
+
+114
+00:05:04,580 --> 00:05:06,825
+But that not necessarily--
+that might not necessarily
+
+115
+00:05:06,825 --> 00:05:07,950
+be the case in every graph.
+
+116
+00:05:07,950 --> 00:05:11,820
+It might be a
+logical relationship,
+
+117
+00:05:11,820 --> 00:05:13,820
+where you could go-- a
+predecessor could go back
+
+118
+00:05:13,820 --> 00:05:15,330
+and visit a successor again.
+
+119
+00:05:15,330 --> 00:05:19,602
+Maybe to try and use that
+getting a degree example,
+
+120
+00:05:19,602 --> 00:05:22,060
+Maybe you have to go back and
+take a class for some reason.
+
+121
+00:05:22,060 --> 00:05:24,630
+That would be like going
+back to the successor.
+
+122
+00:05:24,630 --> 00:05:25,560
+And then degrees.
+
+123
+00:05:25,560 --> 00:05:29,010
+Degrees are the number
+of edges each node has
+
+124
+00:05:29,010 --> 00:05:30,550
+or each vertex has.
+
+125
+00:05:30,550 --> 00:05:32,490
+The indegree is the
+number of edges coming in,
+
+126
+00:05:32,490 --> 00:05:36,130
+and the outdegree is the
+number of edges going out.
+
+127
+00:05:36,130 --> 00:05:37,690
+There's another
+relationship we need
+
+128
+00:05:37,690 --> 00:05:40,060
+to cover when
+talking about graphs,
+
+129
+00:05:40,060 --> 00:05:43,210
+is directed versus undirected.
+
+130
+00:05:43,210 --> 00:05:48,100
+So directed refers to
+when an edge has a--
+
+131
+00:05:48,100 --> 00:05:49,520
+an edge is an arrow.
+
+132
+00:05:49,520 --> 00:05:51,740
+An edge has a flow to it.
+
+133
+00:05:51,740 --> 00:05:54,490
+It has a--
+
+134
+00:05:54,490 --> 00:05:59,860
+It cannot be-- an edge going
+from node A to node B does not
+
+135
+00:05:59,860 --> 00:06:01,480
+necessarily, in
+a directed graph,
+
+136
+00:06:01,480 --> 00:06:08,350
+mean there's an edge back from
+B to A. So the direction matters
+
+137
+00:06:08,350 --> 00:06:09,490
+in a directed graph.
+
+138
+00:06:09,490 --> 00:06:11,950
+Undirected is there's
+no concept of that.
+
+139
+00:06:11,950 --> 00:06:16,090
+Any edge-- like, for example,
+the matching algorithm--
+
+140
+00:06:16,090 --> 00:06:19,750
+if you're trying to match
+people in a dating app,
+
+141
+00:06:19,750 --> 00:06:24,080
+if they're a match, then that
+just means an edge exists.
+
+142
+00:06:24,080 --> 00:06:27,220
+There's a relationship or
+a possible relationship
+
+143
+00:06:27,220 --> 00:06:31,510
+between these two people,
+whereas maybe in a network flow,
+
+144
+00:06:31,510 --> 00:06:35,840
+or back to the bus
+routes-- let me put that
+
+145
+00:06:35,840 --> 00:06:37,620
+in really quick-- traffic flow.
+
+146
+00:06:37,620 --> 00:06:39,540
+Traffic flow could
+kind of be both.
+
+147
+00:06:39,540 --> 00:06:42,620
+So a-- traffic could
+be an undirected graph
+
+148
+00:06:42,620 --> 00:06:45,740
+if, for the roads that
+are represented by edges,
+
+149
+00:06:45,740 --> 00:06:48,000
+there's flow to
+and from the nodes.
+
+150
+00:06:48,000 --> 00:06:50,060
+So both-- two-way traffic.
+
+151
+00:06:50,060 --> 00:06:51,260
+You can go both ways.
+
+152
+00:06:51,260 --> 00:06:53,120
+However, if there's
+a one-way street,
+
+153
+00:06:53,120 --> 00:06:54,390
+then that would be directed.
+
+154
+00:06:54,390 --> 00:06:56,220
+You can only go one direction.
+
+155
+00:06:56,220 --> 00:07:00,560
+So that edge would
+have a direction to it.
+
+156
+00:07:00,560 --> 00:07:02,820
+And then the terminology
+is a little bit different.
+
+157
+00:07:02,820 --> 00:07:05,660
+So indegree for directed graph,
+it's indegree and outdegree,
+
+158
+00:07:05,660 --> 00:07:08,272
+which-- the number of edges
+coming in and leaving.
+
+159
+00:07:08,272 --> 00:07:09,980
+But if it's undirected,
+where there's not
+
+160
+00:07:09,980 --> 00:07:14,450
+the concept of in and out,
+it's just called degree--
+
+161
+00:07:14,450 --> 00:07:17,000
+degree and neighbors--
+when talking
+
+162
+00:07:17,000 --> 00:07:19,310
+about an undirected graph.
+
+163
+00:07:19,310 --> 00:07:21,790
+OK, so younger than.
+
+164
+00:07:21,790 --> 00:07:24,840
+So you tell me what kind of
+graph is this going to be,
+
+165
+00:07:24,840 --> 00:07:27,250
+directed or undirected?
+
+166
+00:07:27,250 --> 00:07:28,925
+Well, one pretty big hint.
+
+167
+00:07:28,925 --> 00:07:30,550
+You can go look at
+the graph right away
+
+168
+00:07:30,550 --> 00:07:31,750
+and see that it has arrows.
+
+169
+00:07:31,750 --> 00:07:34,810
+So you know that it's directed.
+
+170
+00:07:34,810 --> 00:07:37,250
+But they're arrows, though.
+
+171
+00:07:37,250 --> 00:07:40,100
+It's not directed
+because we have arrows.
+
+172
+00:07:40,100 --> 00:07:42,380
+It's because the
+relationship is directed.
+
+173
+00:07:42,380 --> 00:07:44,080
+So in this example,
+it's a younger than.
+
+174
+00:07:44,080 --> 00:07:46,430
+Point to someone who's
+younger than you.
+
+175
+00:07:46,430 --> 00:07:48,310
+Well, that right
+there is you need
+
+176
+00:07:48,310 --> 00:07:52,280
+to determine the relationship
+of who is younger than me.
+
+177
+00:07:52,280 --> 00:07:54,138
+That brings in a direction.
+
+178
+00:07:54,138 --> 00:07:55,430
+That person is younger than me.
+
+179
+00:07:55,430 --> 00:07:56,420
+That person is older than me.
+
+180
+00:07:56,420 --> 00:07:58,450
+I'm not going to point to them,
+but they can point back to me.
+
+181
+00:07:58,450 --> 00:07:59,840
+That's a directed graph.
+
+182
+00:07:59,840 --> 00:08:01,300
+So even though
+it's not physical,
+
+183
+00:08:01,300 --> 00:08:03,735
+it's still the relationship
+determines it's directed.
+
+184
+00:08:06,880 --> 00:08:08,080
+OK.
+
+185
+00:08:08,080 --> 00:08:09,700
+Another example of a graph--
+
+186
+00:08:09,700 --> 00:08:13,810
+and this is kind of setting up
+how you store a graph, what,
+
+187
+00:08:13,810 --> 00:08:16,210
+what data structure, what
+data types, and the structure
+
+188
+00:08:16,210 --> 00:08:17,990
+of a graph looks like
+when you store it.
+
+189
+00:08:17,990 --> 00:08:20,240
+So here's an example of
+someone you want to work with.
+
+190
+00:08:20,240 --> 00:08:22,150
+You can look at the vertices.
+
+191
+00:08:22,150 --> 00:08:24,040
+So here, it'll be a set.
+
+192
+00:08:24,040 --> 00:08:26,320
+Notice the squirrely braces.
+
+193
+00:08:26,320 --> 00:08:30,370
+Although it's not really a
+dictionary, this is kind of--
+
+194
+00:08:30,370 --> 00:08:35,740
+I'm using-- this slide refers to
+the mathematic notation of it,
+
+195
+00:08:35,740 --> 00:08:37,490
+not necessarily the Python code.
+
+196
+00:08:37,490 --> 00:08:38,919
+So here's all the edge--
+
+197
+00:08:38,919 --> 00:08:40,580
+0, 1, 2, 3, 4.
+
+198
+00:08:40,580 --> 00:08:45,050
+And then the-- excuse me, here's
+all the nodes, 0, 1, 2, 3, 4.
+
+199
+00:08:45,050 --> 00:08:48,260
+And then the edges, notice
+they're always in pairs--
+
+200
+00:08:48,260 --> 00:08:51,830
+0,1; 1,2; 0,3; 3,0; 2,2; 4,3.
+
+201
+00:08:51,830 --> 00:08:56,270
+So we can go down here and see
+all of those edges are directed.
+
+202
+00:08:56,270 --> 00:08:59,470
+So here's all of the
+arrows between the nodes.
+
+203
+00:08:59,470 --> 00:09:01,070
+And what about this
+loop here, 2,2?
+
+204
+00:09:01,070 --> 00:09:03,450
+Well, we have an
+edge from 2 to 2.
+
+205
+00:09:03,450 --> 00:09:05,810
+So that would be a loop.
+
+206
+00:09:05,810 --> 00:09:07,570
+That's exactly what
+a loop is in a graph,
+
+207
+00:09:07,570 --> 00:09:09,910
+is when you have one
+node, have an edge that
+
+208
+00:09:09,910 --> 00:09:11,793
+comes back to itself.
+
+209
+00:09:11,793 --> 00:09:13,210
+And that could
+represent something
+
+210
+00:09:13,210 --> 00:09:16,030
+in the physical
+world, like a park
+
+211
+00:09:16,030 --> 00:09:20,650
+up in the mountains
+where a road from a cabin
+
+212
+00:09:20,650 --> 00:09:22,330
+goes around to see
+something beautiful,
+
+213
+00:09:22,330 --> 00:09:23,997
+and it just comes
+back around to itself.
+
+214
+00:09:23,997 --> 00:09:26,320
+And that's all the road
+does, is loop around
+
+215
+00:09:26,320 --> 00:09:28,610
+so you can see the
+beautiful environment.
+
+216
+00:09:28,610 --> 00:09:31,670
+That could be an example
+of a loop inside a graph.
+
+217
+00:09:31,670 --> 00:09:35,760
+But yeah, there it is.
+
+218
+00:09:35,760 --> 00:09:38,850
+And, as I mentioned,
+this is really commonly
+
+219
+00:09:38,850 --> 00:09:41,500
+what you're going to use
+graphs for in the real world
+
+220
+00:09:41,500 --> 00:09:45,600
+in your job one day, is graphs
+that represent relationships.
+
+221
+00:09:45,600 --> 00:09:50,430
+The node x likes y, like if it's
+a customer and they're shopping,
+
+222
+00:09:50,430 --> 00:09:52,500
+what's a product
+they might like?
+
+223
+00:09:52,500 --> 00:09:55,190
+x knows how to contact
+y in a contact list.
+
+224
+00:09:55,190 --> 00:09:58,170
+A friend of y, x, wants to work
+for y-- like a LinkedIn kind
+
+225
+00:09:58,170 --> 00:09:59,280
+of scenario there.
+
+226
+00:09:59,280 --> 00:10:02,772
+x is a child of y.
+
+227
+00:10:02,772 --> 00:10:04,230
+If you're thinking,
+well, I thought
+
+228
+00:10:04,230 --> 00:10:08,050
+we left child and parent
+structures with trees,
+
+229
+00:10:08,050 --> 00:10:08,550
+well yeah.
+
+230
+00:10:08,550 --> 00:10:10,110
+But you can just
+make a child edge,
+
+231
+00:10:10,110 --> 00:10:11,820
+and then this edge
+represents a child,
+
+232
+00:10:11,820 --> 00:10:12,840
+and start using those edges.
+
+233
+00:10:12,840 --> 00:10:14,340
+And then you've,
+you've brought back
+
+234
+00:10:14,340 --> 00:10:15,730
+in the parent-child
+relationship.
+
+235
+00:10:15,730 --> 00:10:18,480
+There's a flight
+from x to x to y.
+
+236
+00:10:18,480 --> 00:10:20,890
+Clubs x and y share common
+members, things like that.
+
+237
+00:10:20,890 --> 00:10:24,610
+So there's countless
+examples of relationships.
+
+238
+00:10:24,610 --> 00:10:26,070
+And when you start
+to think about--
+
+239
+00:10:26,070 --> 00:10:28,350
+you know, that's really
+what graphs are used for,
+
+240
+00:10:28,350 --> 00:10:32,640
+is when you have a system
+where the relationships get
+
+241
+00:10:32,640 --> 00:10:37,980
+complex, a list, a dictionary,
+a table, and a database
+
+242
+00:10:37,980 --> 00:10:39,580
+doesn't quite capture it all.
+
+243
+00:10:39,580 --> 00:10:42,630
+And you need
+something to capture
+
+244
+00:10:42,630 --> 00:10:45,360
+both the data itself
+and the relationship
+
+245
+00:10:45,360 --> 00:10:47,100
+with other pieces of data.
+
+246
+00:10:47,100 --> 00:10:49,290
+A graph is perfect for that.
+
+247
+00:10:49,290 --> 00:10:49,790
+OK.
+
+248
+00:10:49,790 --> 00:10:52,280
+And I threw some examples.
+
+249
+00:10:52,280 --> 00:10:55,700
+I put into ChatGPT, "What are
+some examples of the real world
+
+250
+00:10:55,700 --> 00:10:58,380
+of graphs used today?"
+
+251
+00:10:58,380 --> 00:11:00,260
+Social networks,
+heavily, obviously.
+
+252
+00:11:00,260 --> 00:11:04,340
+The networks that you
+participate in in social media
+
+253
+00:11:04,340 --> 00:11:06,720
+are represented by graphs.
+
+254
+00:11:06,720 --> 00:11:11,720
+Search engines use-- represent
+websites, and hyperlinks,
+
+255
+00:11:11,720 --> 00:11:14,000
+and the connection between
+websites using graphs.
+
+256
+00:11:14,000 --> 00:11:16,100
+Transportation networks,
+we talked about.
+
+257
+00:11:16,100 --> 00:11:19,370
+Recommendation systems,
+like Amazon, connecting user
+
+258
+00:11:19,370 --> 00:11:22,560
+nodes to items or services
+that they would like.
+
+259
+00:11:22,560 --> 00:11:25,070
+So the relationship there would
+be something they would like
+
+260
+00:11:25,070 --> 00:11:27,440
+or something they'd
+like to purchase--
+
+261
+00:11:27,440 --> 00:11:30,500
+would be the graph and the node
+in the edge relationship there.
+
+262
+00:11:30,500 --> 00:11:32,720
+Obviously, physical
+network infrastructure
+
+263
+00:11:32,720 --> 00:11:37,760
+is a classic example of a graph,
+and still heavily used today.
+
+264
+00:11:37,760 --> 00:11:40,400
+And then knowledge graphs.
+
+265
+00:11:40,400 --> 00:11:43,730
+Knowledge, if you look
+at knowledge-- and again,
+
+266
+00:11:43,730 --> 00:11:46,410
+a parallel to this would
+be how to get a degree.
+
+267
+00:11:46,410 --> 00:11:47,760
+Well, that has a flow to it.
+
+268
+00:11:47,760 --> 00:11:50,400
+You need classes that build on
+each other to get you to the end
+
+269
+00:11:50,400 --> 00:11:51,400
+where you have a degree.
+
+270
+00:11:51,400 --> 00:11:54,725
+Knowledge itself follows
+that same pattern.
+
+271
+00:11:54,725 --> 00:11:56,100
+Before you get
+calculus, you need
+
+272
+00:11:56,100 --> 00:12:00,120
+to learn arithmetic, and
+algebra, and geometry.
+
+273
+00:12:00,120 --> 00:12:03,840
+Knowledge itself kind
+of has a flow to it.
+
+274
+00:12:03,840 --> 00:12:07,330
+The knowledge components have
+relationships among themselves.
+
+275
+00:12:07,330 --> 00:12:10,950
+So using graphs to
+represent knowledge
+
+276
+00:12:10,950 --> 00:12:15,120
+and how knowledge can
+be learned by someone--
+
+277
+00:12:15,120 --> 00:12:16,820
+a graph is a good fit for that.
+
+278
+00:12:16,820 --> 00:12:17,320
+OK.
+
+279
+00:12:17,320 --> 00:12:20,620
+And that concludes this
+content video of the Graph Data
+
+280
+00:12:20,620 --> 00:12:21,830
+Structure overview.
+
+281
+00:12:21,830 --> 00:12:23,700
+Thanks for watching.

@@ -1,0 +1,398 @@
+1
+00:00:02,780 --> 00:00:06,020
+Hey everybody, welcome to
+the content video going over
+
+2
+00:00:06,020 --> 00:00:09,100
+section 5.10, other list
+methods. So we're going to talk
+
+3
+00:00:09,100 --> 00:00:11,520
+about a couple of the specific
+things in this chapter,
+
+4
+00:00:11,940 --> 00:00:14,860
+like the insert function,
+the append function.
+
+5
+00:00:16,300 --> 00:00:21,200
+We'll briefly talk
+about extend and remove,
+
+6
+00:00:22,140 --> 00:00:29,600
+clear, and count, maybe. And that's
+everything. So yeah, we'll skip
+
+7
+00:00:29,600 --> 00:00:36,900
+copy. That one's pretty straightforward
+so we'll call this one list
+
+8
+00:00:36,900 --> 00:00:42,960
+appending and so let's say we've
+got an empty lists just like this
+
+9
+00:00:42,960 --> 00:00:50,740
+nothing in it we could say for I in
+range and normally we might print out
+
+10
+00:00:50,740 --> 00:00:53,740
+like the contents of the list or
+something like that but right now
+
+11
+00:00:53,740 --> 00:00:56,940
+there's nothing in our list so let's
+say we wanted to add data to our
+
+12
+00:00:56,940 --> 00:01:00,300
+list or update the list or maybe
+we are missing some data that we
+
+13
+00:01:00,300 --> 00:01:04,200
+found and we want to add it, we would
+do that all with a function called
+
+14
+00:01:04,200 --> 00:01:12,600
+append. So in this loop that I'm
+creating, I could say list.pend.i.
+
+15
+00:01:14,080 --> 00:01:19,000
+And outside my loop, if I was
+now to print out my lists, you
+
+16
+00:01:19,780 --> 00:01:25,560
+would see all the numbers, or
+you should see all the numbers in
+
+17
+00:01:25,560 --> 00:01:30,200
+the range of zero to nine, or
+I guess a range of 10 in our
+
+18
+00:01:30,200 --> 00:01:34,440
+list now. So you can see, yeah,
+we've got that zero up to nine.
+
+19
+00:01:34,740 --> 00:01:39,980
+But then let's say I
+wanted to also add the
+
+20
+00:01:39,980 --> 00:01:42,190
+number 10. I could also
+just say list.append.
+
+21
+00:01:46,380 --> 00:01:48,980
+And then print.list again.
+
+22
+00:01:53,120 --> 00:01:57,220
+We should see the exact same thing
+but now with 10 added on to the end.
+
+23
+00:01:57,220 --> 00:02:00,260
+So the append function by default
+will always take the data you're
+
+24
+00:02:00,260 --> 00:02:03,860
+adding and put it at the very end of
+the list. Now let's say you wanted to
+
+25
+00:02:03,860 --> 00:02:07,080
+put it somewhere specific. This is
+where the insert function comes in.
+
+26
+00:02:07,440 --> 00:02:12,600
+So let's say I've got my list and I
+
+27
+00:02:12,600 --> 00:02:16,060
+wanted to insert the number negative one
+
+28
+00:02:18,720 --> 00:02:20,620
+and print out my list.
+
+29
+00:02:23,420 --> 00:02:24,340
+Sorry,
+
+30
+00:02:24,640 --> 00:02:27,620
+you also with the insert
+function need to specify
+
+31
+00:02:27,620 --> 00:02:30,420
+where you're putting it
+in your list. So I want to
+
+32
+00:02:30,420 --> 00:02:32,620
+add the number negative one
+at the zero width index.
+
+33
+00:02:33,540 --> 00:02:34,680
+There we go.
+
+34
+00:02:35,400 --> 00:02:36,160
+Except,
+
+35
+00:02:37,570 --> 00:02:40,030
+oh sorry, you know what, I
+think I had that backwards.
+
+36
+00:02:40,640 --> 00:02:44,020
+Your index of where you want the number
+
+37
+00:02:44,020 --> 00:02:47,160
+first and then the number itself.
+
+38
+00:02:47,760 --> 00:02:52,920
+There we go. So I wanted to put
+at the zero with index negative
+
+39
+00:02:52,920 --> 00:02:55,460
+one. So now I've got a range
+of negative one up to ten.
+
+40
+00:02:56,700 --> 00:03:01,000
+But if I also wanted to put something
+else in my list at a different
+
+41
+00:03:01,000 --> 00:03:05,860
+index I could do that so like let's
+say I want to add in the number
+
+42
+00:03:05,860 --> 00:03:13,600
+3.5 into my list in between three
+and four that will be let's see
+
+43
+00:03:13,600 --> 00:03:19,310
+zero one two three four so I want
+to put it at the fifth index maybe
+
+44
+00:03:21,440 --> 00:03:25,160
+yeah there we go okay so now I've
+got a whole bunch of numbers and
+
+45
+00:03:25,160 --> 00:03:27,960
+so I'm just putting them in in
+numeric order right where it makes
+
+46
+00:03:27,960 --> 00:03:35,280
+sense the extend function that just
+lengthens your list if you wanted
+
+47
+00:03:35,280 --> 00:03:39,900
+to like add a couple of things so
+if I said list dot extend and then
+
+48
+00:03:39,900 --> 00:03:48,100
+I wanted to add the numbers 11
+12 13 and 14 we whoops should be
+
+49
+00:03:48,100 --> 00:03:52,640
+able to see those things added it
+onto the end of my list. Let's see.
+
+50
+00:03:54,500 --> 00:03:56,780
+So we have to put it within parentheses.
+
+51
+00:03:57,040 --> 00:03:57,700
+My bad.
+
+52
+00:03:59,340 --> 00:04:03,420
+There we go. Okay, and
+you can see I've got those
+
+53
+00:04:03,420 --> 00:04:05,780
+numbers kind of added onto
+the end. Extend kind of works
+
+54
+00:04:05,780 --> 00:04:08,320
+like augmented assignment
+where we've got plus equals.
+
+55
+00:04:08,770 --> 00:04:10,040
+Let me add that here.
+
+56
+00:04:17,890 --> 00:04:18,830
+Plus equals.
+
+57
+00:04:18,830 --> 00:04:22,350
+So it's just a simpler way to add
+data to our list without necessarily
+
+58
+00:04:22,350 --> 00:04:25,270
+having to store that data
+somewhere else and then put it into
+
+59
+00:04:25,270 --> 00:04:31,610
+our list with an append okay next
+one is remove this is similar to
+
+60
+00:04:31,610 --> 00:04:38,190
+insert so if I said list.remove
+I could state what I wanted it to
+
+61
+00:04:38,190 --> 00:04:44,250
+remove and I want it to remove
+the value 10 let me just copy this
+
+62
+00:04:44,250 --> 00:04:51,450
+it's faster let's print this out
+now so now we've got our list with
+
+63
+00:04:51,450 --> 00:04:54,790
+all the same contents except
+there's no longer the variable or
+
+64
+00:04:54,790 --> 00:04:59,910
+the yeah the integer 10 in there um
+this is similar to the pop method
+
+65
+00:04:59,910 --> 00:05:04,950
+except list.pop will take whatever
+is at the end of our list and
+
+66
+00:05:04,950 --> 00:05:09,490
+just pop it off the end so now
+you've got everything up until 13.
+
+67
+00:05:10,170 --> 00:05:15,210
+um and then there's also the
+the function for clearing a
+
+68
+00:05:15,210 --> 00:05:20,270
+list list whoops list.clear
+will clear all the contents.
+
+69
+00:05:25,920 --> 00:05:28,200
+So if I run this one, there's
+going to be nothing left in my
+
+70
+00:05:28,200 --> 00:05:32,140
+list anymore. So maybe let's
+comment that one out for now.
+
+71
+00:05:32,480 --> 00:05:41,500
+And then there is count. So
+if I said for number in list,
+
+72
+00:05:42,700 --> 00:05:52,180
+I could say printout num dot,
+let's see, let me double check this
+
+73
+00:05:52,180 --> 00:06:00,080
+index on this one. It was in our
+textbook responses.count. Yeah, OK.
+
+74
+00:06:01,600 --> 00:06:12,040
+So we'd say print num
+is found list.count num.
+
+75
+00:06:13,600 --> 00:06:18,780
+And then we'll also throw in
+items or something like that.
+
+76
+00:06:24,600 --> 00:06:26,300
+Maybe instead of saying num, we should
+
+77
+00:06:26,300 --> 00:06:28,300
+actually say what the number is.
+
+78
+00:06:29,180 --> 00:06:34,600
+So num is found count many times.
+
+79
+00:06:35,220 --> 00:06:38,340
+So that would be nice if
+we actually had different
+
+80
+00:06:38,780 --> 00:06:41,000
+numbers on our list. But
+we didn't have everything
+
+81
+00:06:41,000 --> 00:06:42,980
+just one time. So that's
+kind of everything.
+
+82
+00:06:43,040 --> 00:06:45,180
+And that's everything
+I wanted to cover in
+
+83
+00:06:45,180 --> 00:06:46,660
+this content video. So
+thanks for watching.

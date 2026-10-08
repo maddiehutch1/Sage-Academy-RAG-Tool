@@ -1,0 +1,232 @@
+1
+00:00:02,620 --> 00:00:04,680
+Hey everybody, welcome to
+the content video going
+
+2
+00:00:04,680 --> 00:00:08,440
+over section 4.3, functions
+with multiple parameters.
+
+3
+00:00:08,800 --> 00:00:11,280
+Parameters are just
+another word for arguments
+
+4
+00:00:11,280 --> 00:00:13,560
+when it comes to defining a function.
+
+5
+00:00:13,560 --> 00:00:19,460
+So this is actually a pretty straightforward
+and short section. Basically,
+
+6
+00:00:19,460 --> 00:00:24,300
+when you create a custom function,
+you can have as many or as few
+
+7
+00:00:24,300 --> 00:00:30,820
+arguments as you want. So this
+example right here they've created a
+
+8
+00:00:30,820 --> 00:00:37,300
+function called maximum which works
+exactly the same as the max function.
+
+9
+00:00:38,210 --> 00:00:41,760
+Value one, value two, value three
+just returns the biggest one of all
+
+10
+00:00:41,760 --> 00:00:46,660
+of those. So you can see they call
+it here with three arguments. They've
+
+11
+00:00:46,660 --> 00:00:51,720
+defined it with three arguments
+and then we'll go through kind of
+
+12
+00:00:51,720 --> 00:00:58,160
+coding this but we could add in more
+or less arguments just depending
+
+13
+00:00:58,160 --> 00:01:04,700
+on how we're feeling that day. So
+let's jump over to our code space.
+
+14
+00:01:08,460 --> 00:01:12,360
+So remember a function
+requires four things.
+
+15
+00:01:13,360 --> 00:01:17,060
+A name so we'll call this
+let's call it biggest. It's
+
+16
+00:01:17,060 --> 00:01:19,520
+a little bit different than
+the built-in maximum function
+
+17
+00:01:19,520 --> 00:01:25,440
+biggest and then we need
+argument so let's take 4
+
+18
+00:01:26,880 --> 00:01:34,840
+arg1, arg2, arg3, and arg4 and then
+
+19
+00:01:34,840 --> 00:01:45,540
+we'll say biggest equals max of arg1
+
+20
+00:01:50,080 --> 00:01:52,680
+r2, r3, arg4.
+
+21
+00:01:53,360 --> 00:01:56,400
+And the last thing we need
+after our main body of
+
+22
+00:01:56,400 --> 00:01:58,950
+code is the return statement,
+so we'll return biggest.
+
+23
+00:02:00,140 --> 00:02:03,380
+And I did that thing again where I
+named the variable the same as the
+
+24
+00:02:03,380 --> 00:02:07,300
+function. I think it's fine in this
+case, so we'll leave it. Anyways,
+
+25
+00:02:07,300 --> 00:02:18,680
+let's call this function. Let's say
+large boy equals biggest of 1, 5,
+
+26
+00:02:19,180 --> 00:02:24,760
+45, and 1,009. That's
+a lot more than 1,009.
+
+27
+00:02:26,000 --> 00:02:28,400
+Let's print out large boy.
+
+28
+00:02:34,220 --> 00:02:35,280
+There he is.
+
+29
+00:02:35,280 --> 00:02:37,320
+We would never have guessed that.
+
+30
+00:02:38,550 --> 00:02:42,420
+And let's run it one
+more time. this time with
+
+31
+00:02:42,420 --> 00:02:45,680
+negative 1, negative
+whatever number that is.
+
+32
+00:02:47,550 --> 00:02:50,700
+45 is our biggest. Okay, so
+this is where it gets really
+
+33
+00:02:50,700 --> 00:02:53,980
+kind of interesting. So I
+could also add r5 on here,
+
+34
+00:02:54,820 --> 00:02:58,100
+right? But check out what
+happens when I run my code now.
+
+35
+00:02:58,480 --> 00:03:01,980
+We are missing an argument when
+we call the function. So if
+
+36
+00:03:01,980 --> 00:03:05,040
+I was to add another argument,
+I kind of need to add in more
+
+37
+00:03:05,100 --> 00:03:11,700
+numbers when I call the
+function so that my code doesn't
+
+38
+00:03:11,700 --> 00:03:19,040
+break so oh weird 35 definitely
+isn't the biggest year 90s you
+
+39
+00:03:23,830 --> 00:03:32,450
+just break something in python huh
+oh it's because here's why it's
+
+40
+00:03:32,450 --> 00:03:35,990
+it is broken it's because we're
+not using arg5 in our function
+
+41
+00:03:35,990 --> 00:03:38,350
+right so this is a good teaching
+moment for you guys while you're
+
+42
+00:03:38,350 --> 00:03:44,010
+watching me figure this out live
+arg5 is something that is required
+
+43
+00:03:44,010 --> 00:03:47,280
+for us to call the function but
+then we're not actually returning
+
+44
+00:03:47,280 --> 00:03:51,930
+the max of all the numbers. We're
+only looking at them up to arg4.
+
+45
+00:03:51,930 --> 00:03:57,210
+So if we threw arg5 in here, then
+our code should be fixed. All
+
+46
+00:03:57,210 --> 00:03:59,670
+right, so that's kind of all I
+wanted you guys to know for this
+
+47
+00:03:59,670 --> 00:04:03,110
+content video is that you can have
+as many arguments as possible as
+
+48
+00:04:03,110 --> 00:04:07,370
+you want in a custom function
+definition. So thank you for watching

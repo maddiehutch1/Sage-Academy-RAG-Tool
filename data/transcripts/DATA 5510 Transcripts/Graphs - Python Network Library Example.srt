@@ -1,0 +1,1256 @@
+1
+00:00:02,828 --> 00:00:05,120
+INSTRUCTOR: Hello, everyone,
+and welcome to the content
+
+2
+00:00:05,120 --> 00:00:10,310
+video on graphs
+implementation in Python.
+
+3
+00:00:10,310 --> 00:00:12,510
+All right, so the
+previous videos,
+
+4
+00:00:12,510 --> 00:00:14,510
+we've talked about the
+graph data structure
+
+5
+00:00:14,510 --> 00:00:18,120
+and how to implement it and
+how to traverse a graph.
+
+6
+00:00:18,120 --> 00:00:21,200
+But this video is where
+the rubber meets the road
+
+7
+00:00:21,200 --> 00:00:24,490
+and how you actually
+do it in Python.
+
+8
+00:00:24,490 --> 00:00:30,560
+So we are going to use the
+Python library called Networkx.
+
+9
+00:00:30,560 --> 00:00:35,170
+Networkx has some really
+easy-to-implement,
+
+10
+00:00:35,170 --> 00:00:40,300
+very well-written
+professional library.
+
+11
+00:00:40,300 --> 00:00:41,720
+That's easy to use.
+
+12
+00:00:41,720 --> 00:00:43,060
+It's great, Networkx.
+
+13
+00:00:43,060 --> 00:00:46,480
+So there are a couple--
+if you look in the--
+
+14
+00:00:46,480 --> 00:00:49,190
+if you look in the file
+here, find_paths.py,
+
+15
+00:00:49,190 --> 00:00:54,160
+you can see I've actually
+included the commands to install
+
+16
+00:00:54,160 --> 00:00:57,340
+Networkx and Matplotlib so
+that you can actually print out
+
+17
+00:00:57,340 --> 00:00:58,840
+graphs and look at
+what the graphs--
+
+18
+00:00:58,840 --> 00:01:01,720
+look at all the nodes and
+look at all the edges and see
+
+19
+00:01:01,720 --> 00:01:02,840
+what's in the graph.
+
+20
+00:01:02,840 --> 00:01:05,377
+So those commands
+are right there.
+
+21
+00:01:05,377 --> 00:01:07,960
+So what I'm going to do right
+now is just go through this code
+
+22
+00:01:07,960 --> 00:01:11,230
+really quickly, point out
+how the data is loaded,
+
+23
+00:01:11,230 --> 00:01:13,900
+how the nodes and
+edges are created,
+
+24
+00:01:13,900 --> 00:01:17,410
+how to traverse the
+graph, and how to use
+
+25
+00:01:17,410 --> 00:01:19,810
+the data to make decisions.
+
+26
+00:01:19,810 --> 00:01:22,870
+OK, so once you've got
+your libraries installed,
+
+27
+00:01:22,870 --> 00:01:26,320
+this next part right here,
+this matplotlib.use 'Agg',
+
+28
+00:01:26,320 --> 00:01:28,790
+that basically
+puts the matplotlib
+
+29
+00:01:28,790 --> 00:01:31,510
+and lets you use
+matplotlib in server mode
+
+30
+00:01:31,510 --> 00:01:33,560
+because there's no
+desktop environment here.
+
+31
+00:01:33,560 --> 00:01:35,780
+We're running this
+on an AWS server.
+
+32
+00:01:35,780 --> 00:01:38,260
+So all of the visuals that
+I generate with matplotlib,
+
+33
+00:01:38,260 --> 00:01:40,960
+I'm going to save them
+as files, as PNG files.
+
+34
+00:01:40,960 --> 00:01:45,230
+So I can look at the graph and
+look at the visuals that way.
+
+35
+00:01:45,230 --> 00:01:48,740
+All right, then I'm going to
+import my networkx library,
+
+36
+00:01:48,740 --> 00:01:50,910
+and then I'm going
+to get my data.
+
+37
+00:01:50,910 --> 00:01:53,210
+So here I've got just a simple--
+
+38
+00:01:53,210 --> 00:01:56,310
+a simple edges.txt here.
+
+39
+00:01:56,310 --> 00:01:59,420
+And if you recall
+back from our graph
+
+40
+00:01:59,420 --> 00:02:03,260
+here when we talked about
+Dijkstra's, this is the graph
+
+41
+00:02:03,260 --> 00:02:04,530
+that we're implementing.
+
+42
+00:02:04,530 --> 00:02:07,220
+So all of this node
+and edge information
+
+43
+00:02:07,220 --> 00:02:09,960
+I put into this file edges.txt.
+
+44
+00:02:09,960 --> 00:02:16,580
+So every edge v0,v1,2; v0,v3,1;
+v1,v3,3; all of those--
+
+45
+00:02:16,580 --> 00:02:21,840
+it's node, node, edge,
+so v0,v1,2; v0,v3,1--
+
+46
+00:02:21,840 --> 00:02:24,780
+all of that information
+is stored here.
+
+47
+00:02:24,780 --> 00:02:28,920
+So this is-- this is our
+graph information right here.
+
+48
+00:02:28,920 --> 00:02:30,830
+OK, now back in
+python, I'm going
+
+49
+00:02:30,830 --> 00:02:34,473
+to load that file, edges.txt,
+right here with this edges file.
+
+50
+00:02:34,473 --> 00:02:36,140
+I should also point
+out this is a really
+
+51
+00:02:36,140 --> 00:02:39,630
+nice, easy-to-use
+library, os.path.dirname.
+
+52
+00:02:39,630 --> 00:02:42,810
+This will basically get you
+whatever file I'm running here.
+
+53
+00:02:42,810 --> 00:02:45,060
+It'll give me the
+directory that I'm
+
+54
+00:02:45,060 --> 00:02:47,560
+in right now that the file
+that I'm running is in.
+
+55
+00:02:47,560 --> 00:02:50,820
+So since I've got edges.txt
+in the same folder
+
+56
+00:02:50,820 --> 00:02:54,795
+as find_paths.py, it'll
+go and grab those edges.
+
+57
+00:02:54,795 --> 00:02:56,420
+And then I'm going
+to put them, and I'm
+
+58
+00:02:56,420 --> 00:02:58,160
+going to create my graph.
+
+59
+00:02:58,160 --> 00:03:02,590
+OK, so check out line
+41, g = nx.DiGraph.
+
+60
+00:03:02,590 --> 00:03:05,520
+This is going to create
+our graph object.
+
+61
+00:03:05,520 --> 00:03:07,580
+So it starts out
+as an empty graph,
+
+62
+00:03:07,580 --> 00:03:10,310
+and then we fill it up with
+all our nodes and edges.
+
+63
+00:03:10,310 --> 00:03:12,440
+So line 48 here--
+
+64
+00:03:12,440 --> 00:03:15,510
+I created a list-- it's empty
+right now, but of all the edges.
+
+65
+00:03:15,510 --> 00:03:17,810
+So all this edge
+information and edges.txt--
+
+66
+00:03:17,810 --> 00:03:19,010
+it's going to go in there.
+
+67
+00:03:19,010 --> 00:03:20,880
+And then I'm going to
+add it into my graph.
+
+68
+00:03:20,880 --> 00:03:22,140
+So how do I do that?
+
+69
+00:03:22,140 --> 00:03:24,120
+I go through all of
+the lines in the file.
+
+70
+00:03:24,120 --> 00:03:27,320
+I split on the comma to get
+my node 1, node 2, and weight.
+
+71
+00:03:27,320 --> 00:03:29,070
+Again, if you go over
+to edges right here,
+
+72
+00:03:29,070 --> 00:03:32,010
+so that would be my node 1,
+node 2, and weight right here,
+
+73
+00:03:32,010 --> 00:03:35,170
+v0,v1,2.
+
+74
+00:03:35,170 --> 00:03:36,730
+I iterate through
+all of those edges,
+
+75
+00:03:36,730 --> 00:03:38,360
+and then I append them here.
+
+76
+00:03:38,360 --> 00:03:40,990
+Notice how I don't just--
+
+77
+00:03:40,990 --> 00:03:46,750
+they're all tuples, so I need
+a way to identify the actual--
+
+78
+00:03:46,750 --> 00:03:47,720
+the edge I need.
+
+79
+00:03:47,720 --> 00:03:49,190
+So it's by a tuple.
+
+80
+00:03:49,190 --> 00:03:51,370
+So I have node 1, node
+2 weight, all comma
+
+81
+00:03:51,370 --> 00:03:52,790
+separated in this tuple.
+
+82
+00:03:52,790 --> 00:03:54,100
+And I add on that edge.
+
+83
+00:03:54,100 --> 00:03:55,790
+I do it over and
+over and over again.
+
+84
+00:03:55,790 --> 00:03:58,810
+And here's the function
+where all the magic happens.
+
+85
+00:03:58,810 --> 00:04:01,220
+g.add_weighted_edges_from.
+
+86
+00:04:01,220 --> 00:04:02,860
+So that right there--
+from tells you
+
+87
+00:04:02,860 --> 00:04:06,760
+it's a directed graph
+from node 1 to node 2.
+
+88
+00:04:06,760 --> 00:04:08,960
+I give it all of my
+edges, and that's it.
+
+89
+00:04:08,960 --> 00:04:13,950
+Line 56 right there creates
+the entire graph for me.
+
+90
+00:04:13,950 --> 00:04:15,700
+I should also point
+out, if you ever--
+
+91
+00:04:15,700 --> 00:04:17,519
+another really
+easy-to-use function
+
+92
+00:04:17,519 --> 00:04:21,060
+that's really useful in
+networkx is add a single edge.
+
+93
+00:04:21,060 --> 00:04:24,270
+If you either want to add an
+edge later or add all the edges
+
+94
+00:04:24,270 --> 00:04:28,180
+one at a time as you get
+new data, things like that,
+
+95
+00:04:28,180 --> 00:04:28,970
+add edge.
+
+96
+00:04:28,970 --> 00:04:32,080
+Add just one more
+edge to the graph,
+
+97
+00:04:32,080 --> 00:04:35,230
+as opposed to line 56
+when it adds everything.
+
+98
+00:04:35,230 --> 00:04:37,590
+OK, then I can print my notes
+to see if they look like.
+
+99
+00:04:37,590 --> 00:04:39,550
+And this code is really useful.
+
+100
+00:04:39,550 --> 00:04:43,030
+This is matplotlib right
+here, line 67 through 72,
+
+101
+00:04:43,030 --> 00:04:45,370
+where I save my visual.
+
+102
+00:04:45,370 --> 00:04:47,050
+So I can look at
+my graph and see--
+
+103
+00:04:47,050 --> 00:04:49,200
+make sure that the data
+is everything's correct.
+
+104
+00:04:49,200 --> 00:04:52,330
+In fact, before I traverse it,
+I'm going to run it that far.
+
+105
+00:04:52,330 --> 00:04:56,130
+And then we can take a look
+at the graph that got created.
+
+106
+00:04:56,130 --> 00:05:00,150
+OK, so here is my
+new graph_visual.png.
+
+107
+00:05:00,150 --> 00:05:01,080
+And let's take a look.
+
+108
+00:05:01,080 --> 00:05:01,890
+So here's my nodes.
+
+109
+00:05:01,890 --> 00:05:03,600
+Here's all the
+edges, and you can
+
+110
+00:05:03,600 --> 00:05:07,180
+see it included the edge
+weights on top of the edges.
+
+111
+00:05:07,180 --> 00:05:08,670
+So that's nice and easy to see.
+
+112
+00:05:08,670 --> 00:05:12,180
+Let's compare it to the one that
+I had in mind before right here.
+
+113
+00:05:12,180 --> 00:05:15,780
+You can see it doesn't-- it
+doesn't really have a set way
+
+114
+00:05:15,780 --> 00:05:18,780
+of orienting anything.
+
+115
+00:05:18,780 --> 00:05:19,830
+It just kind of--
+
+116
+00:05:19,830 --> 00:05:23,340
+it spaces things out evenly
+to make a a good visual,
+
+117
+00:05:23,340 --> 00:05:23,980
+essentially.
+
+118
+00:05:23,980 --> 00:05:29,760
+So it doesn't really, that
+I've seen, have a method to--
+
+119
+00:05:29,760 --> 00:05:31,200
+maybe it does if
+you go one by one
+
+120
+00:05:31,200 --> 00:05:32,950
+and you fix the position
+of all the nodes.
+
+121
+00:05:32,950 --> 00:05:36,400
+Then you could get the exact
+look you're looking for.
+
+122
+00:05:36,400 --> 00:05:38,370
+Like, if you wanted to
+recreate a physical map,
+
+123
+00:05:38,370 --> 00:05:39,203
+something like that.
+
+124
+00:05:39,203 --> 00:05:41,250
+But anyway, this is still
+a really good visual
+
+125
+00:05:41,250 --> 00:05:43,530
+to make sure that the
+graph structure, all
+
+126
+00:05:43,530 --> 00:05:46,300
+of the nodes and the
+edges are intact.
+
+127
+00:05:46,300 --> 00:05:47,830
+So that's nice.
+
+128
+00:05:47,830 --> 00:05:49,780
+OK, so then how--
+we've got our graph.
+
+129
+00:05:49,780 --> 00:05:50,830
+We've built it.
+
+130
+00:05:50,830 --> 00:05:52,910
+We can look at it to
+make sure it's correct.
+
+131
+00:05:52,910 --> 00:05:54,210
+How do we use it?
+
+132
+00:05:54,210 --> 00:05:56,270
+How do we analyze the
+data that's in the graph?
+
+133
+00:05:56,270 --> 00:05:58,930
+How do we traverse the graph
+to look for things we want?
+
+134
+00:05:58,930 --> 00:06:00,370
+Here's how you do it.
+
+135
+00:06:00,370 --> 00:06:01,960
+So what I'm going
+to do right now,
+
+136
+00:06:01,960 --> 00:06:05,270
+check out my for
+loop on line 80 here.
+
+137
+00:06:05,270 --> 00:06:07,690
+I'm going to go through
+every node parent here using
+
+138
+00:06:07,690 --> 00:06:09,800
+the permutations function.
+
+139
+00:06:09,800 --> 00:06:12,250
+So again, permutations--
+permutations
+
+140
+00:06:12,250 --> 00:06:13,670
+is different than combinations.
+
+141
+00:06:13,670 --> 00:06:15,880
+As a quick reminder,
+permutations
+
+142
+00:06:15,880 --> 00:06:18,940
+is like if you have 10
+people and you say, OK, I
+
+143
+00:06:18,940 --> 00:06:21,400
+want to make a presidency
+of three, well,
+
+144
+00:06:21,400 --> 00:06:22,900
+the order matters
+in a presidency.
+
+145
+00:06:22,900 --> 00:06:25,180
+You've got a president, a
+vice president number 1,
+
+146
+00:06:25,180 --> 00:06:26,360
+vice president number 2.
+
+147
+00:06:26,360 --> 00:06:29,090
+So if order matters,
+you use permutations.
+
+148
+00:06:29,090 --> 00:06:32,650
+That's the way to remember that,
+PP, Permutation Presidency.
+
+149
+00:06:32,650 --> 00:06:34,835
+Combination is similar,
+but order does not matter.
+
+150
+00:06:34,835 --> 00:06:35,960
+So that's like a committee.
+
+151
+00:06:35,960 --> 00:06:38,377
+If you have 10 people and you
+need to take those 10 people
+
+152
+00:06:38,377 --> 00:06:41,200
+and then, out of them, create
+a committee of three people,
+
+153
+00:06:41,200 --> 00:06:42,230
+order doesn't matter.
+
+154
+00:06:42,230 --> 00:06:43,355
+You would use combinations.
+
+155
+00:06:43,355 --> 00:06:44,980
+Well, here what I'm
+going to go through
+
+156
+00:06:44,980 --> 00:06:47,210
+is I'm going to look for
+all the paths from one node
+
+157
+00:06:47,210 --> 00:06:48,540
+to another node.
+
+158
+00:06:48,540 --> 00:06:51,780
+And since it's a directed
+graph, order does matter.
+
+159
+00:06:51,780 --> 00:06:53,810
+So I want to use
+permutations where--
+
+160
+00:06:53,810 --> 00:06:55,260
+where position matters.
+
+161
+00:06:55,260 --> 00:06:58,310
+So I'm going to go through
+here and get for n1, n2,
+
+162
+00:06:58,310 --> 00:06:59,960
+which is node 1, node 2.
+
+163
+00:06:59,960 --> 00:07:01,850
+All of those
+combinations-- excuse me,
+
+164
+00:07:01,850 --> 00:07:03,320
+all of those
+permutations-- let's
+
+165
+00:07:03,320 --> 00:07:05,910
+be exact here because I just
+told you the difference.
+
+166
+00:07:05,910 --> 00:07:09,350
+I'm going to go through all the
+permutations of those two nodes
+
+167
+00:07:09,350 --> 00:07:13,550
+in the graph and then prints
+out here's the path from them.
+
+168
+00:07:13,550 --> 00:07:16,100
+All right, now here's
+another magical function
+
+169
+00:07:16,100 --> 00:07:18,113
+I love of all the-- here's
+the magical functions
+
+170
+00:07:18,113 --> 00:07:19,280
+you're going to learn today.
+
+171
+00:07:19,280 --> 00:07:21,980
+On line 56, add_weighted_edges,
+which creates your graph
+
+172
+00:07:21,980 --> 00:07:22,500
+for you.
+
+173
+00:07:22,500 --> 00:07:23,330
+Very nice.
+
+174
+00:07:23,330 --> 00:07:27,360
+Here's another one that's even
+more magic, all_simple_paths.
+
+175
+00:07:27,360 --> 00:07:30,335
+So this takes care of
+traversing your graph for you.
+
+176
+00:07:30,335 --> 00:07:31,210
+It takes care of you.
+
+177
+00:07:31,210 --> 00:07:35,310
+You don't need to write
+Dijkstra's by hand.
+
+178
+00:07:35,310 --> 00:07:37,680
+all_simple_paths will do
+the traversal for you.
+
+179
+00:07:37,680 --> 00:07:41,270
+And basically, what it says
+is, I want all of the paths
+
+180
+00:07:41,270 --> 00:07:43,770
+from one node to another.
+
+181
+00:07:43,770 --> 00:07:47,280
+So the shortest one
+or the data you want,
+
+182
+00:07:47,280 --> 00:07:49,950
+I'm going to handle the
+logic of looking through it
+
+183
+00:07:49,950 --> 00:07:51,410
+to get what I want out of there.
+
+184
+00:07:51,410 --> 00:07:54,248
+So I'm going to print
+the path right there,
+
+185
+00:07:54,248 --> 00:07:56,040
+and then I'm going to
+calculate the weight.
+
+186
+00:07:56,040 --> 00:07:57,300
+So this weight is a sum.
+
+187
+00:07:57,300 --> 00:08:00,140
+All of the weights
+are going to add up
+
+188
+00:08:00,140 --> 00:08:02,098
+to be either the
+shortest or the greatest,
+
+189
+00:08:02,098 --> 00:08:03,640
+and I'm going to
+take a look at them.
+
+190
+00:08:03,640 --> 00:08:05,068
+I got a pathway of 0.
+
+191
+00:08:05,068 --> 00:08:06,860
+And then this little
+loop right here-- this
+
+192
+00:08:06,860 --> 00:08:09,840
+goes through the path because
+I need to know those edges.
+
+193
+00:08:09,840 --> 00:08:11,600
+Let me show you a visual again.
+
+194
+00:08:11,600 --> 00:08:15,500
+For example, to calculate
+a path from v3 to v6--
+
+195
+00:08:15,500 --> 00:08:17,720
+or let's go to v5.
+
+196
+00:08:17,720 --> 00:08:19,780
+Let's go v3 to v2--
+
+197
+00:08:19,780 --> 00:08:23,940
+excuse me-- v3 to v4, from
+v4 to v6, and v6 to v5,
+
+198
+00:08:23,940 --> 00:08:24,990
+what is that path?
+
+199
+00:08:24,990 --> 00:08:27,410
+Well, I need to add
+up all of these edges.
+
+200
+00:08:27,410 --> 00:08:30,170
+OK, well, the edges are
+going to be 2 plus 6 plus 1,
+
+201
+00:08:30,170 --> 00:08:32,539
+so that's going to be 9.
+
+202
+00:08:32,539 --> 00:08:33,923
+All right, it sums them up.
+
+203
+00:08:33,923 --> 00:08:36,090
+So back to the code, that's
+exactly what it's doing.
+
+204
+00:08:36,090 --> 00:08:37,980
+I have a pathway
+that starts at 0.
+
+205
+00:08:37,980 --> 00:08:40,250
+I loop through all
+of the edges here.
+
+206
+00:08:40,250 --> 00:08:43,549
+And then I add them up, and then
+I print out what the pathway is.
+
+207
+00:08:43,549 --> 00:08:45,230
+Let me point out one--
+
+208
+00:08:45,230 --> 00:08:47,990
+another little bit of syntax
+you'll need for networkx.
+
+209
+00:08:47,990 --> 00:08:52,760
+When you want to specifically
+go get an edge in the graph,
+
+210
+00:08:52,760 --> 00:08:55,200
+similar to how you in
+an adjacency matrix,
+
+211
+00:08:55,200 --> 00:08:59,130
+it's two-dimensional, so it's
+two indices, here it's similar.
+
+212
+00:08:59,130 --> 00:09:02,860
+But it's actually more
+dictionary access style.
+
+213
+00:09:02,860 --> 00:09:05,310
+So I have g, my graph
+object, and I give it
+
+214
+00:09:05,310 --> 00:09:09,150
+my path 1, which is going
+to be a node, path i
+
+215
+00:09:09,150 --> 00:09:11,595
+plus one, the next
+node in that path.
+
+216
+00:09:11,595 --> 00:09:12,970
+And then I say I
+want the weight.
+
+217
+00:09:12,970 --> 00:09:16,560
+So this basically says, give
+me the weight of this edge.
+
+218
+00:09:16,560 --> 00:09:20,310
+And then I go through the path
+edge by edge, add them all up,
+
+219
+00:09:20,310 --> 00:09:22,048
+and that's my weight
+of the entire path.
+
+220
+00:09:22,048 --> 00:09:23,090
+So let's give that a run.
+
+221
+00:09:26,430 --> 00:09:28,800
+And here they are.
+
+222
+00:09:28,800 --> 00:09:30,750
+Whoops, got on my--
+
+223
+00:09:30,750 --> 00:09:32,770
+so you can see a lot
+of these right here.
+
+224
+00:09:32,770 --> 00:09:34,300
+These caught my eye right away.
+
+225
+00:09:34,300 --> 00:09:36,120
+There's a lot of paths that
+don't exist from one node
+
+226
+00:09:36,120 --> 00:09:37,200
+to another, because
+it's directed.
+
+227
+00:09:37,200 --> 00:09:39,700
+But a lot do, so let's take a
+look at some of these that do.
+
+228
+00:09:39,700 --> 00:09:42,270
+In fact, let's take a look at--
+
+229
+00:09:42,270 --> 00:09:42,770
+here we go.
+
+230
+00:09:42,770 --> 00:09:43,940
+Let's go from the--
+
+231
+00:09:43,940 --> 00:09:46,190
+we'll do this one because
+we can see them all.
+
+232
+00:09:46,190 --> 00:09:48,770
+All existing paths
+from v0 to v2.
+
+233
+00:09:48,770 --> 00:09:49,710
+So here they are.
+
+234
+00:09:49,710 --> 00:09:51,140
+When it gives you
+a path, it tells
+
+235
+00:09:51,140 --> 00:09:53,460
+you, here's all the nodes you
+need to visit in that path.
+
+236
+00:09:53,460 --> 00:09:55,710
+And then we added them all
+up, so there's the pathway,
+
+237
+00:09:55,710 --> 00:09:59,190
+pathway from v0,v1,2 is 7.
+
+238
+00:09:59,190 --> 00:10:03,830
+The pathway from v0v3v2
+is three, and so on.
+
+239
+00:10:03,830 --> 00:10:06,380
+So now this does
+not-- this does not--
+
+240
+00:10:06,380 --> 00:10:07,520
+whoop, reload that.
+
+241
+00:10:07,520 --> 00:10:10,287
+This does not include the
+logic of all those paths.
+
+242
+00:10:10,287 --> 00:10:11,370
+Which one is the shortest?
+
+243
+00:10:11,370 --> 00:10:12,742
+I didn't add that here.
+
+244
+00:10:12,742 --> 00:10:14,450
+I'll let you do
+something similar to that
+
+245
+00:10:14,450 --> 00:10:16,248
+in an assignment.
+
+246
+00:10:16,248 --> 00:10:17,540
+But that's how you would do it.
+
+247
+00:10:17,540 --> 00:10:19,280
+Right here, when you look
+through all the paths, which
+
+248
+00:10:19,280 --> 00:10:19,910
+one--
+
+249
+00:10:19,910 --> 00:10:21,990
+and again, this is all
+the paths that exist.
+
+250
+00:10:21,990 --> 00:10:24,500
+So this isn't Dijkstra's,
+where we go from one node
+
+251
+00:10:24,500 --> 00:10:25,290
+to all other node.
+
+252
+00:10:25,290 --> 00:10:26,220
+What's the shortest?
+
+253
+00:10:26,220 --> 00:10:27,620
+This one is comprehensive.
+
+254
+00:10:27,620 --> 00:10:29,580
+Of all the permutations
+of two nodes,
+
+255
+00:10:29,580 --> 00:10:31,163
+here's all the paths
+to get from them.
+
+256
+00:10:31,163 --> 00:10:32,580
+And then if you
+wanted to find out
+
+257
+00:10:32,580 --> 00:10:34,670
+which one was the
+shortest or the greatest,
+
+258
+00:10:34,670 --> 00:10:37,410
+you would add that logic here.
+
+259
+00:10:37,410 --> 00:10:43,040
+OK, so I would recommend playing
+with this, learning networkx.
+
+260
+00:10:43,040 --> 00:10:44,600
+The only way to
+really learn network
+
+261
+00:10:44,600 --> 00:10:47,570
+is just try it out for yourself
+and be hands-on with it
+
+262
+00:10:47,570 --> 00:10:52,010
+and really try and update
+a graph or move data around
+
+263
+00:10:52,010 --> 00:10:54,920
+and make sure that you
+understand how it all works.
+
+264
+00:10:54,920 --> 00:10:57,050
+And then you'll see
+hopefully that networkx
+
+265
+00:10:57,050 --> 00:11:00,495
+is a very powerful, easy-to-use
+graph library in Python.
+
+266
+00:11:00,495 --> 00:11:02,370
+All right, that concludes
+this content video.
+
+267
+00:11:02,370 --> 00:11:04,120
+Thanks for watching.

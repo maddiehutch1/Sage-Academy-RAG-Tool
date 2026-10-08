@@ -1,0 +1,318 @@
+1
+00:00:02,810 --> 00:00:04,610
+Hey, everybody. Welcome
+to the content video
+
+2
+00:00:04,610 --> 00:00:07,290
+going over section 9.3 of your textbook.
+
+3
+00:00:07,530 --> 00:00:10,470
+I know it says text file processing,
+but really we're going to
+
+4
+00:00:10,470 --> 00:00:13,890
+be talking about files with
+open. So the with open statement.
+
+5
+00:00:13,890 --> 00:00:17,770
+So in the last content video,
+we talked about files and how to
+
+6
+00:00:17,770 --> 00:00:21,670
+use the open function to open a
+file, read it, write to it, and
+
+7
+00:00:21,670 --> 00:00:26,430
+append. And the with statement
+kind of simplifies all of that.
+
+8
+00:00:27,390 --> 00:00:30,010
+And it makes it a lot
+easier to open files. So
+
+9
+00:00:30,010 --> 00:00:31,530
+we're just going to jump
+right over into some
+
+10
+00:00:31,530 --> 00:00:34,770
+examples, because I think
+it'll help make more sense.
+
+11
+00:00:38,650 --> 00:00:45,650
+Okay, so like I said, we have
+covered how to open a file with open.
+
+12
+00:00:45,650 --> 00:00:49,310
+One thing that I failed to mention,
+let's make a file, we'll call it
+
+13
+00:00:49,310 --> 00:00:57,750
+output.txt. if we create or if I was
+to do something like this file equals
+
+14
+00:00:57,750 --> 00:01:02,730
+open output.txt I will get a file
+not found error and this is a really
+
+15
+00:01:02,730 --> 00:01:06,190
+common error if you're looking for
+something and you have not pointed
+
+16
+00:01:06,190 --> 00:01:10,770
+your file path to the right
+location you'll get a file not found
+
+17
+00:01:10,770 --> 00:01:15,630
+error. Now I want to create a file
+in my week 5 directory here so I'm
+
+18
+00:01:15,630 --> 00:01:19,050
+actually going to copy the path of
+my week 5 directory and paste it in
+
+19
+00:01:19,050 --> 00:01:24,420
+before my output.txt see how it
+gave me up to week five but then it
+
+20
+00:01:24,420 --> 00:01:28,370
+concatenated my strings here so I'm
+actually going to add a forward slash
+
+21
+00:01:28,370 --> 00:01:31,910
+there between them and since this
+file doesn't exist what I'm going to
+
+22
+00:01:31,910 --> 00:01:35,890
+do is I'm actually going to open it
+in write mode and write mode will
+
+23
+00:01:35,890 --> 00:01:39,970
+create the file for me so I ran that
+and now check out what's over here
+
+24
+00:01:39,970 --> 00:01:45,250
+in my directory is output.txt so
+that's really cool okay and then we
+
+25
+00:01:45,250 --> 00:01:48,790
+talked about how you can write to
+the file and close it. But I'm just
+
+26
+00:01:48,790 --> 00:01:53,040
+going to close it right now. I don't
+know. Maybe I'll file.write, spell.
+
+27
+00:01:58,890 --> 00:02:01,450
+And then we'll file.close. OK.
+
+28
+00:02:05,310 --> 00:02:09,950
+So withOpen operates kind
+of like an if statement.
+
+29
+00:02:09,950 --> 00:02:18,310
+So with open allows you to
+open a file and do all the
+
+30
+00:02:18,310 --> 00:02:21,530
+logic on it within the
+scope of the with statement.
+
+31
+00:02:21,530 --> 00:02:24,530
+And then the file will by
+default close once the with
+
+32
+00:02:24,530 --> 00:02:26,530
+statement is over. So let
+me show you what I mean. So
+
+33
+00:02:26,530 --> 00:02:29,390
+let's say with open, let's
+paste in that file path
+
+34
+00:02:29,390 --> 00:02:32,720
+again. And then this time I'm
+going to say output 2.ext,
+
+35
+00:02:34,130 --> 00:02:36,650
+close this in quotation
+marks because it didn't.
+
+36
+00:02:37,750 --> 00:02:41,810
+I'll open this file in write mode
+again because the file doesn't
+
+37
+00:02:41,810 --> 00:02:47,930
+currently exist and then the with
+statement needs I don't know if I
+
+38
+00:02:47,930 --> 00:02:51,610
+would call this a qualifier or just
+another another bit to it called
+
+39
+00:02:51,610 --> 00:02:56,550
+as and then you define your variable
+name that you want your file
+
+40
+00:02:56,550 --> 00:03:02,730
+saved to in the with statement
+so I'll call this file to add a
+
+41
+00:03:02,730 --> 00:03:06,470
+colon at the end and then notice
+how when I hit enter, my next line
+
+42
+00:03:06,470 --> 00:03:12,360
+of code was automatically indented.
+So I'll say file2.write, hello,
+
+43
+00:03:14,210 --> 00:03:16,150
+throw a new line in there,
+
+44
+00:03:17,810 --> 00:03:19,890
+file2.write,
+
+45
+00:03:20,250 --> 00:03:21,570
+goodbye,
+
+46
+00:03:23,170 --> 00:03:25,210
+throw another new line in there.
+
+47
+00:03:26,150 --> 00:03:33,010
+And then I can just run this code
+and you might be thinking, oh well
+
+48
+00:03:33,010 --> 00:03:35,330
+this is already at the end of your
+code so the file would have been
+
+49
+00:03:35,330 --> 00:03:40,470
+closed by default anyways you're
+correct but the file actually closes
+
+50
+00:03:40,470 --> 00:03:45,930
+as soon as my with statement is
+done running and so my my file is
+
+51
+00:03:45,930 --> 00:03:50,870
+actually closed before we hit line
+13 unlike this file up here where if
+
+52
+00:03:50,870 --> 00:03:53,950
+I didn't include this line right
+here it wouldn't automatically close
+
+53
+00:03:53,950 --> 00:03:59,350
+so the with open uh function in
+regards to files is super useful for
+
+54
+00:03:59,350 --> 00:04:02,350
+keeping things clean and making
+sure that you don't have just like
+
+55
+00:04:02,350 --> 00:04:06,990
+loose hanging files open in your
+algorithm floating around out there.
+
+56
+00:04:07,330 --> 00:04:10,610
+Let me just wrap this
+video up with another quick
+
+57
+00:04:10,610 --> 00:04:13,510
+thing. So I can still
+open up that file again.
+
+58
+00:04:13,510 --> 00:04:20,150
+I can say file 2 n equals
+by or sorry equals open
+
+59
+00:04:21,270 --> 00:04:28,690
+and then let's grab
+output 2.txt and I can
+
+60
+00:04:28,690 --> 00:04:31,260
+still read through this.
+I can still say print
+
+61
+00:04:32,950 --> 00:04:39,990
+file to again dot read lines and
+that will print out the output
+
+62
+00:04:39,990 --> 00:04:44,250
+hello and goodbye in a list
+like we like we learned so we're
+
+63
+00:04:44,250 --> 00:04:48,250
+still totally able to do that and
+good practice would be to file
+
+64
+00:04:48,730 --> 00:04:54,350
+to again dot close once we're
+done with it so that's kind of the
+
+65
+00:04:54,350 --> 00:04:57,590
+width open in a nutshell Thanks
+for watching this content video.

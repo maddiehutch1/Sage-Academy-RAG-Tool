@@ -1,0 +1,7226 @@
+1
+00:00:01,395 --> 00:00:05,230
+ANDREW BRIM: We are
+live from Logan.
+
+2
+00:00:05,230 --> 00:00:07,580
+This is Data 5500.
+
+3
+00:00:07,580 --> 00:00:10,740
+Thank you for coming.
+
+4
+00:00:10,740 --> 00:00:13,000
+Announcements and
+items of business.
+
+5
+00:00:13,000 --> 00:00:16,149
+There is one big announcement.
+
+6
+00:00:16,149 --> 00:00:19,325
+It is midterm week.
+
+7
+00:00:19,325 --> 00:00:19,975
+STUDENT: Woo!
+
+8
+00:00:19,975 --> 00:00:21,630
+ANDREW BRIM: Woo!
+
+9
+00:00:21,630 --> 00:00:25,260
+We did it!-- almost.
+
+10
+00:00:25,260 --> 00:00:30,250
+The midterm is open
+Wednesday through Friday.
+
+11
+00:00:30,250 --> 00:00:34,410
+Please take it and get an A.
+
+12
+00:00:34,410 --> 00:00:39,160
+OK, so the plan for today
+and the plan for this week.
+
+13
+00:00:39,160 --> 00:00:42,270
+Today, we are reviewing
+for the midterm.
+
+14
+00:00:42,270 --> 00:00:44,500
+Wednesday, there is no class.
+
+15
+00:00:44,500 --> 00:00:50,430
+I'm giving you that time to
+study and/or take the midterm.
+
+16
+00:00:50,430 --> 00:00:55,050
+The midterm, I guess we'll
+just jump into it, shall we?
+
+17
+00:00:55,050 --> 00:00:58,770
+The midterm is on Proctorio.
+
+18
+00:00:58,770 --> 00:01:01,910
+And my feeling
+with Proctorio is--
+
+19
+00:01:05,300 --> 00:01:07,390
+yeah, nobody loves--
+nobody likes Proctorio,
+
+20
+00:01:07,390 --> 00:01:09,390
+but they like it better
+than the testing center,
+
+21
+00:01:09,390 --> 00:01:13,220
+so that's the equilibrium
+that we've reached is--
+
+22
+00:01:13,220 --> 00:01:14,460
+I stick with Proctorio.
+
+23
+00:01:14,460 --> 00:01:17,960
+So if you are nervous about it
+recording you-- which I am also;
+
+24
+00:01:17,960 --> 00:01:19,410
+I think it's annoying--
+
+25
+00:01:19,410 --> 00:01:21,718
+please take it on
+campus in a public area.
+
+26
+00:01:21,718 --> 00:01:22,260
+There you go.
+
+27
+00:01:22,260 --> 00:01:26,060
+That'll help that, hopefully.
+
+28
+00:01:26,060 --> 00:01:29,150
+There you go, Proctorio.
+
+29
+00:01:29,150 --> 00:01:32,870
+Similar to the Data 3500
+exam, you are allowed a sheet
+
+30
+00:01:32,870 --> 00:01:34,560
+of notes, 8 and 1/2 by 11.
+
+31
+00:01:34,560 --> 00:01:37,310
+Just normal piece of paper,
+front and back, is fine.
+
+32
+00:01:37,310 --> 00:01:39,110
+Most people start with
+the review outline
+
+33
+00:01:39,110 --> 00:01:40,902
+that I provided and
+then build off of that.
+
+34
+00:01:40,902 --> 00:01:41,700
+That's great.
+
+35
+00:01:41,700 --> 00:01:44,210
+You're allowed scratch
+paper, pen and pencil,
+
+36
+00:01:44,210 --> 00:01:45,600
+basic calculator.
+
+37
+00:01:45,600 --> 00:01:48,170
+Although I attempt to
+make sure any math you
+
+38
+00:01:48,170 --> 00:01:54,750
+need is computable without
+a calculator, you have one.
+
+39
+00:01:54,750 --> 00:01:56,360
+You're free to use
+one if you like.
+
+40
+00:01:56,360 --> 00:01:59,850
+You can visit two
+websites during the exam.
+
+41
+00:01:59,850 --> 00:02:03,660
+The first website is
+Canvas to take the exam.
+
+42
+00:02:03,660 --> 00:02:08,930
+The second is repl.it, which
+is a little Python interpreter
+
+43
+00:02:08,930 --> 00:02:11,720
+in a website, which allows
+you, if you would like,
+
+44
+00:02:11,720 --> 00:02:18,030
+to run your code for the
+coding portion of the exam.
+
+45
+00:02:18,030 --> 00:02:20,860
+And you do not need
+to memorize this URL.
+
+46
+00:02:20,860 --> 00:02:24,990
+It will be in the
+midterm details.
+
+47
+00:02:24,990 --> 00:02:25,805
+So there you go.
+
+48
+00:02:28,410 --> 00:02:35,900
+I think that's about it for
+processes and procedures.
+
+49
+00:02:35,900 --> 00:02:37,260
+Yeah, so there we go.
+
+50
+00:02:37,260 --> 00:02:39,813
+So the plan for today is
+to review the outline.
+
+51
+00:02:43,450 --> 00:02:45,110
+Yeah, you get two hours.
+
+52
+00:02:45,110 --> 00:02:49,150
+I would say the average,
+the average exam
+
+53
+00:02:49,150 --> 00:02:52,030
+takes somebody about an hour,
+but I give you two hours,
+
+54
+00:02:52,030 --> 00:02:53,160
+so you have plenty of time.
+
+55
+00:02:55,870 --> 00:02:57,880
+There you go.
+
+56
+00:02:57,880 --> 00:03:00,490
+If you need more, if you feel
+like you need more than that,
+
+57
+00:03:00,490 --> 00:03:03,800
+please reach out to me, and I'll
+be happy to up the time for you.
+
+58
+00:03:03,800 --> 00:03:06,420
+But in my opinion, that's--
+
+59
+00:03:06,420 --> 00:03:07,880
+I try and get people--
+
+60
+00:03:07,880 --> 00:03:11,300
+I don't like tests that are
+put you under time pressure
+
+61
+00:03:11,300 --> 00:03:13,630
+so I try and guess
+double what you need.
+
+62
+00:03:13,630 --> 00:03:15,840
+But let me know if you
+have a concern with that.
+
+63
+00:03:18,970 --> 00:03:20,010
+Let's see here.
+
+64
+00:03:22,768 --> 00:03:24,310
+Yeah, that's pretty
+much it, I think.
+
+65
+00:03:24,310 --> 00:03:26,870
+Without further ado, let's
+jump into the review outline
+
+66
+00:03:26,870 --> 00:03:27,995
+and go through the content.
+
+67
+00:03:30,930 --> 00:03:37,110
+OK, so do I have--
+yeah, here we go.
+
+68
+00:03:37,110 --> 00:03:42,220
+All right, trees.
+
+69
+00:03:42,220 --> 00:03:45,430
+So I got each
+section into things
+
+70
+00:03:45,430 --> 00:03:49,893
+you need to understand about
+that principle or concept,
+
+71
+00:03:49,893 --> 00:03:51,310
+and then, coding--
+things you need
+
+72
+00:03:51,310 --> 00:03:54,260
+to be able to do to code them.
+
+73
+00:03:54,260 --> 00:03:58,048
+All right, so you
+need to understand
+
+74
+00:03:58,048 --> 00:03:59,340
+the purpose of tree structures.
+
+75
+00:03:59,340 --> 00:04:00,960
+So let's-- we've got
+a lot to get through.
+
+76
+00:04:00,960 --> 00:04:02,710
+So we'll just-- we'll
+just start cruising.
+
+77
+00:04:02,710 --> 00:04:04,410
+OK, what are trees useful for?
+
+78
+00:04:04,410 --> 00:04:05,185
+Why do they exist?
+
+79
+00:04:08,300 --> 00:04:10,065
+Why aren't lists enough?
+
+80
+00:04:10,065 --> 00:04:15,400
+(SINGING) Never enough,
+lists are never enough
+
+81
+00:04:15,400 --> 00:04:15,900
+Right?
+
+82
+00:04:15,900 --> 00:04:19,320
+Why do we have trees?
+
+83
+00:04:19,320 --> 00:04:20,140
+Faster speed.
+
+84
+00:04:20,140 --> 00:04:22,990
+Yep, finds, inserts, and
+deletes in log n time.
+
+85
+00:04:22,990 --> 00:04:25,890
+OK, so if you can
+insert something
+
+86
+00:04:25,890 --> 00:04:29,340
+into a tree in log n time, how
+long does it take you to insert
+
+87
+00:04:29,340 --> 00:04:32,263
+n number of items into a tree?
+
+88
+00:04:32,263 --> 00:04:33,110
+STUDENT: n log n.
+
+89
+00:04:33,110 --> 00:04:34,980
+ANDREW BRIM: n log n.
+
+90
+00:04:34,980 --> 00:04:36,810
+Each insert is log n.
+
+91
+00:04:36,810 --> 00:04:38,210
+You have n number of items.
+
+92
+00:04:38,210 --> 00:04:42,830
+So it's n log n to
+insert into a tree,
+
+93
+00:04:42,830 --> 00:04:44,690
+to insert n number of items.
+
+94
+00:04:44,690 --> 00:04:46,550
+OK, please review vocab.
+
+95
+00:04:46,550 --> 00:04:51,115
+So you have a root node,
+inner nodes, and leaf nodes.
+
+96
+00:04:54,200 --> 00:04:56,150
+There you go.
+
+97
+00:04:56,150 --> 00:05:01,460
+Or complexity of finding
+certain deletes or log n time.
+
+98
+00:05:01,460 --> 00:05:03,620
+You'll need to understand
+how to use recursion
+
+99
+00:05:03,620 --> 00:05:07,910
+to perform operations-- that
+kind of gets into coding.
+
+100
+00:05:07,910 --> 00:05:11,090
+Be able to write a preorder,
+inorder, and postorder traversal
+
+101
+00:05:11,090 --> 00:05:11,940
+in Python.
+
+102
+00:05:11,940 --> 00:05:15,680
+Be able to write a find
+function recursively in Python.
+
+103
+00:05:15,680 --> 00:05:17,630
+Those might sound
+big, but really, just
+
+104
+00:05:17,630 --> 00:05:19,750
+review this example from class.
+
+105
+00:05:22,560 --> 00:05:24,670
+If you got this example,
+then you're good to go.
+
+106
+00:05:24,670 --> 00:05:26,820
+Remember bst.py in week 7?
+
+107
+00:05:26,820 --> 00:05:30,270
+So understand this
+node class right here.
+
+108
+00:05:30,270 --> 00:05:32,410
+And I'm not making
+you do the insert.
+
+109
+00:05:32,410 --> 00:05:34,080
+I'm making you do the
+easier ones, which
+
+110
+00:05:34,080 --> 00:05:39,370
+are inorder traversal--
+
+111
+00:05:39,370 --> 00:05:42,310
+inorder, pre-order,
+post-order-- and just
+
+112
+00:05:42,310 --> 00:05:45,830
+being able to print
+or find is enough.
+
+113
+00:05:45,830 --> 00:05:49,250
+And I'm OK with a find being,
+"This item exists in the tree.
+
+114
+00:05:49,250 --> 00:05:50,990
+I found it," as a
+print statement.
+
+115
+00:05:50,990 --> 00:05:52,750
+That's OK.
+
+116
+00:05:52,750 --> 00:05:55,690
+But you need to
+understand, what's
+
+117
+00:05:55,690 --> 00:05:58,160
+the difference between inorder,
+pre-order, and post-order.
+
+118
+00:05:58,160 --> 00:05:59,110
+Tell me in plain English.
+
+119
+00:05:59,110 --> 00:05:59,655
+Yeah, go ahead.
+
+120
+00:05:59,655 --> 00:06:00,370
+STUDENT: I have a question.
+
+121
+00:06:00,370 --> 00:06:02,037
+ANDREW BRIM: Yeah,
+what's your question?
+
+122
+00:06:02,037 --> 00:06:08,065
+STUDENT: For [INAUDIBLE]
+n log n, we [INAUDIBLE]
+
+123
+00:06:08,065 --> 00:06:08,815
+ANDREW BRIM: Yeah.
+
+124
+00:06:08,815 --> 00:06:13,970
+STUDENT: [INAUDIBLE]
+
+125
+00:06:13,970 --> 00:06:17,330
+ANDREW BRIM: No, I'm saying
+to do a find or insert
+
+126
+00:06:17,330 --> 00:06:22,280
+or delete in a tree, it is
+an order log n operation
+
+127
+00:06:22,280 --> 00:06:23,720
+for all three of those.
+
+128
+00:06:23,720 --> 00:06:29,510
+But let's say you need to put
+n number of items in a list.
+
+129
+00:06:29,510 --> 00:06:31,460
+Like let's say n is a million.
+
+130
+00:06:31,460 --> 00:06:33,212
+If you need to put a million--
+
+131
+00:06:33,212 --> 00:06:34,170
+I'm sorry, into a tree.
+
+132
+00:06:34,170 --> 00:06:34,800
+I'm sorry.
+
+133
+00:06:34,800 --> 00:06:38,630
+If you need to put a million
+things into a tree, what
+
+134
+00:06:38,630 --> 00:06:45,290
+is the order of complexity
+to do all n items, n log n?
+
+135
+00:06:45,290 --> 00:06:48,170
+Because each operation
+is a log n operation,
+
+136
+00:06:48,170 --> 00:06:50,570
+and you've got to do it n times.
+
+137
+00:06:50,570 --> 00:06:51,630
+Does that make sense?
+
+138
+00:06:51,630 --> 00:06:53,690
+Yeah, yep.
+
+139
+00:06:53,690 --> 00:06:56,040
+So inorder,
+pre-order, post-order.
+
+140
+00:06:56,040 --> 00:06:59,178
+What I really want
+you to understand is--
+
+141
+00:06:59,178 --> 00:07:00,470
+well, tell me in plain English.
+
+142
+00:07:00,470 --> 00:07:01,860
+You guys be the brains.
+
+143
+00:07:01,860 --> 00:07:05,180
+What's the difference between
+an inorder or-- excuse me--
+
+144
+00:07:05,180 --> 00:07:08,100
+traversal, and a
+pre-order traversal?
+
+145
+00:07:11,040 --> 00:07:13,990
+STUDENT: [INAUDIBLE]
+
+146
+00:07:13,990 --> 00:07:15,920
+ANDREW BRIM: Yep, how
+it traverses the tree.
+
+147
+00:07:15,920 --> 00:07:19,565
+And what's the
+difference exactly?
+
+148
+00:07:19,565 --> 00:07:24,240
+STUDENT: [INAUDIBLE]
+inorder to go left.
+
+149
+00:07:24,240 --> 00:07:26,171
+ANDREW BRIM: Yep.
+
+150
+00:07:26,171 --> 00:07:30,120
+STUDENT: The
+inorder, [INAUDIBLE]
+
+151
+00:07:30,120 --> 00:07:31,170
+ANDREW BRIM: Good.
+
+152
+00:07:31,170 --> 00:07:34,350
+So for those who couldn't hear
+Isaac, he's saying inorder,
+
+153
+00:07:34,350 --> 00:07:37,200
+you go left, then
+print, and then right.
+
+154
+00:07:37,200 --> 00:07:40,200
+All right, but remember, in
+this example, it's a print.
+
+155
+00:07:40,200 --> 00:07:46,640
+Excuse me, in this
+example, it's a print,
+
+156
+00:07:46,640 --> 00:07:50,680
+but it's just the operation.
+
+157
+00:07:50,680 --> 00:07:53,360
+Because again, this tree
+could be storing data.
+
+158
+00:07:53,360 --> 00:07:57,050
+It's not storing integers
+or names of your classmates.
+
+159
+00:07:57,050 --> 00:07:58,540
+It's storing data.
+
+160
+00:07:58,540 --> 00:08:02,560
+So the operation here is
+a print, but the operation
+
+161
+00:08:02,560 --> 00:08:06,400
+could be, calculate a mean,
+or a moving average, or a sum,
+
+162
+00:08:06,400 --> 00:08:08,080
+or some other--
+
+163
+00:08:08,080 --> 00:08:12,140
+transform the data, transpose
+the data-- the operation.
+
+164
+00:08:12,140 --> 00:08:16,000
+And when you have a tree, the
+order you do the operation
+
+165
+00:08:16,000 --> 00:08:18,980
+is designated by the
+tree traversal algorithm.
+
+166
+00:08:18,980 --> 00:08:20,860
+Meaning if you do a
+preorder traversal,
+
+167
+00:08:20,860 --> 00:08:26,290
+you do the operation first,
+then go left, and then go right.
+
+168
+00:08:26,290 --> 00:08:32,320
+So in a traversal was--
+
+169
+00:08:32,320 --> 00:08:35,470
+if a traversal was
+inorder, when would you
+
+170
+00:08:35,470 --> 00:08:38,376
+expect to see the root
+in that traversal?
+
+171
+00:08:41,770 --> 00:08:44,000
+Halfway or in the middle.
+
+172
+00:08:44,000 --> 00:08:46,400
+Yeah, a little more generic.
+
+173
+00:08:46,400 --> 00:08:48,370
+Yeah, if you're doing
+an inorder traversal,
+
+174
+00:08:48,370 --> 00:08:50,950
+and let's say you're
+printing, you'll
+
+175
+00:08:50,950 --> 00:08:52,910
+see the routes
+somewhere in the middle.
+
+176
+00:08:52,910 --> 00:08:56,272
+(SINGING) Why don't you
+just meet me in the middle?
+
+177
+00:08:56,272 --> 00:08:57,730
+(SPEAKING) I want
+you to write down
+
+178
+00:08:57,730 --> 00:09:01,510
+that song on your
+notes next to inorder.
+
+179
+00:09:01,510 --> 00:09:02,423
+Who sings that song?
+
+180
+00:09:02,423 --> 00:09:03,340
+STUDENT: Maren Morris.
+
+181
+00:09:03,340 --> 00:09:04,593
+ANDREW BRIM: Maren Watts?
+
+182
+00:09:04,593 --> 00:09:05,510
+STUDENT: Maren Morris.
+
+183
+00:09:05,510 --> 00:09:06,593
+ANDREW BRIM: Maren Morris.
+
+184
+00:09:06,593 --> 00:09:09,400
+Write down "Maren Morris"
+next to "inorder",
+
+185
+00:09:09,400 --> 00:09:13,240
+because the print will be
+somewhere in-- the roots will be
+
+186
+00:09:13,240 --> 00:09:14,410
+in the middle.
+
+187
+00:09:14,410 --> 00:09:16,070
+Maren Morris is the root.
+
+188
+00:09:16,070 --> 00:09:18,730
+Write that down, because
+the root will be somewhere
+
+189
+00:09:18,730 --> 00:09:19,670
+in the middle.
+
+190
+00:09:19,670 --> 00:09:20,498
+How about preorder?
+
+191
+00:09:20,498 --> 00:09:22,040
+Where are you going
+to see the root--
+
+192
+00:09:22,040 --> 00:09:24,623
+either if you're printing, where
+are you going to see the root
+
+193
+00:09:24,623 --> 00:09:25,820
+printed, or, if it's an--
+
+194
+00:09:25,820 --> 00:09:28,520
+or operated?
+
+195
+00:09:28,520 --> 00:09:29,240
+Beginning.
+
+196
+00:09:29,240 --> 00:09:32,340
+If you see the root first--
+
+197
+00:09:32,340 --> 00:09:34,560
+you guys like hints or tips?
+
+198
+00:09:34,560 --> 00:09:44,590
+If you see the root first,
+it's a preorder traversal.
+
+199
+00:09:44,590 --> 00:09:45,890
+How about postorder?
+
+200
+00:09:45,890 --> 00:09:47,515
+Where are you going to see
+the root in a postorder?
+
+201
+00:09:47,515 --> 00:09:48,098
+STUDENT: Last.
+
+202
+00:09:48,098 --> 00:09:49,720
+ANDREW BRIM: Last, exactly.
+
+203
+00:09:49,720 --> 00:09:51,638
+All right, I think you got it.
+
+204
+00:09:51,638 --> 00:09:53,680
+Now, when I say you need
+to be able to code this,
+
+205
+00:09:53,680 --> 00:09:58,400
+you do not need to be to
+regurgitate this entire bst.py,
+
+206
+00:09:58,400 --> 00:10:02,620
+but I need you to be able
+to write one of these--
+
+207
+00:10:02,620 --> 00:10:03,435
+or all three.
+
+208
+00:10:03,435 --> 00:10:04,810
+OK?
+
+209
+00:10:04,810 --> 00:10:06,580
+Does that make sense?
+
+210
+00:10:06,580 --> 00:10:09,590
+You do not need to write all
+the bst.py all over again,
+
+211
+00:10:09,590 --> 00:10:12,490
+but I want to see that you
+can write these traversals
+
+212
+00:10:12,490 --> 00:10:14,770
+all over again.
+
+213
+00:10:14,770 --> 00:10:15,680
+All right, good.
+
+214
+00:10:15,680 --> 00:10:19,180
+Let's see, what
+else about trees?
+
+215
+00:10:19,180 --> 00:10:20,617
+Again, the recursive.
+
+216
+00:10:20,617 --> 00:10:22,450
+Don't get caught up on
+the recursive, right?
+
+217
+00:10:22,450 --> 00:10:25,075
+If you can write one of these,
+then you've done it recursively.
+
+218
+00:10:25,075 --> 00:10:27,520
+These are recursive.
+
+219
+00:10:27,520 --> 00:10:28,162
+Pop quiz.
+
+220
+00:10:28,162 --> 00:10:30,370
+The preorder traversal right
+here, what lines of code
+
+221
+00:10:30,370 --> 00:10:33,707
+indicate this is a
+recursive algorithm?
+
+222
+00:10:33,707 --> 00:10:34,870
+STUDENT: [INAUDIBLE]
+
+223
+00:10:34,870 --> 00:10:39,290
+ANDREW BRIM: 75 and 76, exactly
+these are calls to itself.
+
+224
+00:10:39,290 --> 00:10:41,680
+They're recursive,
+recursive algorithms.
+
+225
+00:10:41,680 --> 00:10:42,483
+So that's all.
+
+226
+00:10:42,483 --> 00:10:44,650
+So don't worry about recursive
+or get hung up on it.
+
+227
+00:10:44,650 --> 00:10:48,065
+If you understand those three,
+you've got it recursively.
+
+228
+00:10:48,065 --> 00:10:49,940
+All right, I think that's
+about it for trees.
+
+229
+00:10:49,940 --> 00:10:51,023
+Let me think for a second.
+
+230
+00:10:51,023 --> 00:10:51,975
+Other hints and tips?
+
+231
+00:10:55,893 --> 00:10:56,560
+That's about it.
+
+232
+00:10:56,560 --> 00:10:57,660
+I think you guys got it.
+
+233
+00:11:00,260 --> 00:11:01,510
+Yeah, I think that's about it.
+
+234
+00:11:01,510 --> 00:11:03,060
+Any other questions on trees?
+
+235
+00:11:03,060 --> 00:11:03,760
+Yes.
+
+236
+00:11:03,760 --> 00:11:06,030
+STUDENT: [INAUDIBLE]
+
+237
+00:11:06,030 --> 00:11:07,560
+ANDREW BRIM: Yeah, so let's--
+
+238
+00:11:07,560 --> 00:11:08,910
+I got an example question.
+
+239
+00:11:08,910 --> 00:11:11,277
+We can jump down to
+there right now, though.
+
+240
+00:11:11,277 --> 00:11:12,110
+STUDENT: [INAUDIBLE]
+
+241
+00:11:12,110 --> 00:11:17,503
+ANDREW BRIM: So this guy
+right here, number three.
+
+242
+00:11:17,503 --> 00:11:19,170
+Let's do this one
+together really quick.
+
+243
+00:11:19,170 --> 00:11:23,710
+Is this Linux/Unix Find command
+depth-first or breadth-first?
+
+244
+00:11:23,710 --> 00:11:28,080
+Does it print the contents
+preorder, inorder, postorder?
+
+245
+00:11:28,080 --> 00:11:34,200
+All right, so to
+remind you, in Linux,
+
+246
+00:11:34,200 --> 00:11:36,480
+ls just tells you
+what's in this folder.
+
+247
+00:11:36,480 --> 00:11:39,530
+So look at this output
+here. ls alex/ bill/ mark/,
+
+248
+00:11:39,530 --> 00:11:40,770
+there's three folders--
+
+249
+00:11:40,770 --> 00:11:43,160
+alex, bill, mark, OK?
+
+250
+00:11:43,160 --> 00:11:46,130
+So when I call find dot--
+
+251
+00:11:46,130 --> 00:11:48,410
+find is a tree
+traversal algorithm
+
+252
+00:11:48,410 --> 00:11:50,990
+to print the contents
+of a tree in Linux--
+
+253
+00:11:50,990 --> 00:11:53,220
+it goes through here
+and prints it all out.
+
+254
+00:11:53,220 --> 00:11:59,650
+mark, bill, alex, OK?
+
+255
+00:11:59,650 --> 00:12:02,173
+It's in week 10?
+
+256
+00:12:02,173 --> 00:12:04,090
+Oh, the contents of that
+folder are somewhere?
+
+257
+00:12:04,090 --> 00:12:05,508
+Is that what your
+guys are saying?
+
+258
+00:12:05,508 --> 00:12:06,300
+STUDENT: No, sorry.
+
+259
+00:12:06,300 --> 00:12:08,670
+STUDENT: I'm trying to
+find the [INAUDIBLE], so--
+
+260
+00:12:08,670 --> 00:12:11,190
+Oh, it's week 10
+in Canvas, yeah.
+
+261
+00:12:11,190 --> 00:12:13,350
+Yeah, here there's print.
+
+262
+00:12:13,350 --> 00:12:16,710
+And that's what I
+want, tree utility.
+
+263
+00:12:16,710 --> 00:12:18,472
+We'll just stick to this.
+
+264
+00:12:18,472 --> 00:12:26,140
+OK, so is this breadth
+first or depth first?
+
+265
+00:12:26,140 --> 00:12:28,100
+ANDREW BRIM: Breadth.
+
+266
+00:12:28,100 --> 00:12:29,480
+Ooh.
+
+267
+00:12:29,480 --> 00:12:33,770
+Talk to your neighbor
+for 23 seconds.
+
+268
+00:12:33,770 --> 00:12:35,010
+Look at the output.
+
+269
+00:12:35,010 --> 00:12:38,720
+Is it breadth or depth first?
+
+270
+00:12:38,720 --> 00:12:43,110
+And while you're at it, is it
+preorder, inorder, or postorder?
+
+271
+00:12:43,110 --> 00:12:46,596
+[INTERPOSING VOICES]
+
+272
+00:12:56,060 --> 00:12:57,410
+ANDREW BRIM: Depth or breadth?
+
+273
+00:12:57,410 --> 00:12:59,710
+Pre, inorder, or postorder?
+
+274
+00:13:07,530 --> 00:13:09,205
+Remember-- what's
+her name again?
+
+275
+00:13:09,205 --> 00:13:10,205
+Mary Morris or whatever?
+
+276
+00:13:10,205 --> 00:13:13,000
+[INTERPOSING VOICES]
+
+277
+00:13:40,220 --> 00:13:41,960
+ANDREW BRIM: All
+right, 23 seconds.
+
+278
+00:13:41,960 --> 00:13:43,590
+Let's do the first question.
+
+279
+00:13:43,590 --> 00:13:44,690
+Depth or breadth?
+
+280
+00:13:44,690 --> 00:13:48,670
+Is the find Linux command
+depth-first or breadth-first?
+
+281
+00:13:48,670 --> 00:13:49,430
+STUDENT: Depth.
+
+282
+00:13:49,430 --> 00:13:50,370
+ANDREW BRIM: Depth.
+
+283
+00:13:50,370 --> 00:13:51,871
+How did you guys know that?
+
+284
+00:13:51,871 --> 00:13:54,130
+STUDENT: [INAUDIBLE]
+
+285
+00:13:54,130 --> 00:13:56,170
+ANDREW BRIM: Yep, it
+goes into all of mark
+
+286
+00:13:56,170 --> 00:13:57,980
+before it goes on to bill.
+
+287
+00:13:57,980 --> 00:13:59,380
+You see that?
+
+288
+00:13:59,380 --> 00:14:01,510
+If it was breadth
+first, what would
+
+289
+00:14:01,510 --> 00:14:03,510
+you-- what were the first
+folders you would see?
+
+290
+00:14:03,510 --> 00:14:04,690
+STUDENT: mark, bill, alex.
+
+291
+00:14:04,690 --> 00:14:06,510
+ANDREW BRIM: mark,
+bill, alex, exactly.
+
+292
+00:14:06,510 --> 00:14:07,150
+You would see those first.
+
+293
+00:14:07,150 --> 00:14:08,390
+But it goes down into mark.
+
+294
+00:14:08,390 --> 00:14:10,510
+It goes all the way down.
+
+295
+00:14:10,510 --> 00:14:13,060
+It is depth-first.
+
+296
+00:14:13,060 --> 00:14:16,060
+All right, how about preorder,
+inorder, or postorder?
+
+297
+00:14:16,060 --> 00:14:16,645
+So--
+
+298
+00:14:16,645 --> 00:14:16,990
+STUDENT: Preorder.
+
+299
+00:14:16,990 --> 00:14:18,170
+ANDREW BRIM: Preorder.
+
+300
+00:14:18,170 --> 00:14:20,200
+How did you know that?
+
+301
+00:14:20,200 --> 00:14:21,790
+The root first.
+
+302
+00:14:21,790 --> 00:14:25,360
+If it's preorder traversal, the
+very first thing you should see
+
+303
+00:14:25,360 --> 00:14:28,170
+is the root.
+
+304
+00:14:28,170 --> 00:14:32,302
+So in Linux, then--
+you don't really
+
+305
+00:14:32,302 --> 00:14:34,510
+necessarily need to know
+this to figure out preorder.
+
+306
+00:14:34,510 --> 00:14:35,968
+You can figure it
+out without this.
+
+307
+00:14:35,968 --> 00:14:38,370
+But here's a little
+piece of trivia.
+
+308
+00:14:38,370 --> 00:14:41,400
+Anyone know what
+dot means in Linux?
+
+309
+00:14:41,400 --> 00:14:42,930
+The current directory.
+
+310
+00:14:42,930 --> 00:14:45,540
+So when you say find
+dot, you're saying,
+
+311
+00:14:45,540 --> 00:14:50,220
+traverse everything from this
+current directory below me.
+
+312
+00:14:50,220 --> 00:14:54,040
+And the very first thing
+it prints out is that dot.
+
+313
+00:14:54,040 --> 00:14:57,300
+So it's saying, here's
+where you're at right now,
+
+314
+00:14:57,300 --> 00:14:58,675
+and then it starts traversing.
+
+315
+00:14:58,675 --> 00:15:00,300
+And you didn't
+necessarily need to know
+
+316
+00:15:00,300 --> 00:15:02,650
+that dot because you
+can just look at mark.
+
+317
+00:15:02,650 --> 00:15:06,450
+When you look at mark, the first
+thing it does is prints mark.
+
+318
+00:15:06,450 --> 00:15:08,830
+Think of mark like the
+root, or the subroot.
+
+319
+00:15:08,830 --> 00:15:11,820
+Then it goes down
+and prints book.
+
+320
+00:15:11,820 --> 00:15:15,420
+Then it goes down
+and prints chapter 3.
+
+321
+00:15:15,420 --> 00:15:18,180
+Let's say this was in order.
+
+322
+00:15:18,180 --> 00:15:19,560
+Where would you see that dot?
+
+323
+00:15:19,560 --> 00:15:21,900
+Or where would you see mark
+compared to the other mark
+
+324
+00:15:21,900 --> 00:15:22,400
+stuff?
+
+325
+00:15:25,300 --> 00:15:28,760
+If this was in order,
+where would you see mark?
+
+326
+00:15:28,760 --> 00:15:31,210
+Like I'll highlight
+all the mark stuff.
+
+327
+00:15:31,210 --> 00:15:32,870
+Here's all the mark stuff.
+
+328
+00:15:32,870 --> 00:15:35,380
+Where would you see the
+top directory, mark,
+
+329
+00:15:35,380 --> 00:15:36,720
+if this was in order?
+
+330
+00:15:36,720 --> 00:15:37,630
+STUDENT: [INAUDIBLE]
+
+331
+00:15:37,630 --> 00:15:40,090
+ANDREW BRIM: Yes. (SINGING)
+Why don't you just meet me
+
+332
+00:15:40,090 --> 00:15:41,550
+in the middle?
+
+333
+00:15:41,550 --> 00:15:46,030
+You would see the root
+somewhere in the middle.
+
+334
+00:15:46,030 --> 00:15:49,637
+If this was postorder,
+where would you see mark?
+
+335
+00:15:49,637 --> 00:15:50,470
+STUDENT: [INAUDIBLE]
+
+336
+00:15:50,470 --> 00:15:52,990
+ANDREW BRIM: Yeah, mark
+itself would be last
+
+337
+00:15:52,990 --> 00:15:55,940
+in all of the mark contents.
+
+338
+00:15:55,940 --> 00:15:58,700
+So you know it's preorder
+because the first thing it
+
+339
+00:15:58,700 --> 00:16:01,500
+does when it goes to a new
+directory is it prints it.
+
+340
+00:16:01,500 --> 00:16:03,830
+Then it starts
+traversing inside.
+
+341
+00:16:03,830 --> 00:16:06,290
+So the answer is
+depth-first preorder.
+
+342
+00:16:06,290 --> 00:16:07,990
+Questions?
+
+343
+00:16:07,990 --> 00:16:10,700
+STUDENT: For example, that
+third line is the order
+
+344
+00:16:10,700 --> 00:16:12,717
+that [INAUDIBLE] then mark?
+
+345
+00:16:12,717 --> 00:16:13,800
+ANDREW BRIM: Say it again?
+
+346
+00:16:13,800 --> 00:16:16,342
+STUDENT: So on that third line,
+it would be be like chapter 3
+
+347
+00:16:16,342 --> 00:16:19,438
+and then mark?
+
+348
+00:16:19,438 --> 00:16:20,730
+ANDREW BRIM: Well, it would be.
+
+349
+00:16:20,730 --> 00:16:22,647
+You're right, it would
+be chapter 3 then book.
+
+350
+00:16:22,647 --> 00:16:26,560
+But mark actually wouldn't be
+until the very end of mark--
+
+351
+00:16:26,560 --> 00:16:27,320
+the very end.
+
+352
+00:16:27,320 --> 00:16:28,300
+Yep, if this was--
+
+353
+00:16:28,300 --> 00:16:34,490
+if this was postorder of all of
+the traversal of mark, of all
+
+354
+00:16:34,490 --> 00:16:38,770
+the mark stuff, the mark
+directory would be last.
+
+355
+00:16:38,770 --> 00:16:42,130
+So where would the dot
+be if this was postorder?
+
+356
+00:16:42,130 --> 00:16:42,890
+Last.
+
+357
+00:16:42,890 --> 00:16:45,090
+The dot would be the
+very last thing printed.
+
+358
+00:16:47,760 --> 00:16:50,740
+Any questions on that?
+
+359
+00:16:50,740 --> 00:16:55,750
+OK, I think we
+got trees covered.
+
+360
+00:16:55,750 --> 00:16:59,210
+All right, recursion
+tell me in plain English,
+
+361
+00:16:59,210 --> 00:17:03,020
+in three or four sentences
+and in your own words,
+
+362
+00:17:03,020 --> 00:17:07,920
+please tell me, when
+would you use recursion?
+
+363
+00:17:07,920 --> 00:17:11,220
+STUDENT: [INAUDIBLE]
+
+364
+00:17:11,720 --> 00:17:14,359
+ANDREW BRIM: You tell me, Lucy.
+
+365
+00:17:14,359 --> 00:17:17,750
+It's your show this week.
+
+366
+00:17:17,750 --> 00:17:19,319
+All right, tell me
+the one sentence.
+
+367
+00:17:19,319 --> 00:17:20,630
+Which is probably going
+to be a run-on sentence,
+
+368
+00:17:20,630 --> 00:17:22,749
+but go ahead and tell me
+your one sentence, Lucy.
+
+369
+00:17:26,030 --> 00:17:31,370
+STUDENT: So you use recursion
+when the logic to solve it
+
+370
+00:17:31,370 --> 00:17:34,920
+is [INAUDIBLE].
+
+371
+00:17:34,920 --> 00:17:36,260
+ANDREW BRIM: Good.
+
+372
+00:17:36,260 --> 00:17:37,950
+A problem is recursive
+in nature when
+
+373
+00:17:37,950 --> 00:17:40,890
+the logic to solve the
+subset of the problem
+
+374
+00:17:40,890 --> 00:17:42,890
+is the same as the
+superset of the problem.
+
+375
+00:17:42,890 --> 00:17:45,720
+Good.
+
+376
+00:17:45,720 --> 00:17:49,300
+To use a recursive solution,
+you do need some things.
+
+377
+00:17:49,300 --> 00:17:52,960
+Then, the space needs to
+be shrinking naturally.
+
+378
+00:17:52,960 --> 00:17:56,400
+Like when you traverse
+a tree, as you traverse,
+
+379
+00:17:56,400 --> 00:17:58,500
+you are shrinking the
+tree size each traversal
+
+380
+00:17:58,500 --> 00:18:01,110
+to get through all of it.
+
+381
+00:18:01,110 --> 00:18:03,660
+Or like another way to
+visualize that is the factorial.
+
+382
+00:18:03,660 --> 00:18:09,070
+When you do factorial
+recursively, you could do--
+
+383
+00:18:09,070 --> 00:18:10,160
+you know, it's shrinking.
+
+384
+00:18:10,160 --> 00:18:12,920
+So 5 factorial is 5 times
+4 times 3 times 2 times 1.
+
+385
+00:18:12,920 --> 00:18:15,910
+It's working
+towards a base case.
+
+386
+00:18:15,910 --> 00:18:17,590
+OK, tell me in
+plain English, what
+
+387
+00:18:17,590 --> 00:18:21,396
+is a base case in recursion?
+
+388
+00:18:21,396 --> 00:18:23,863
+STUDENT: [INAUDIBLE]
+
+389
+00:18:23,863 --> 00:18:25,530
+ANDREW BRIM: Simplest
+form of a problem?
+
+390
+00:18:25,530 --> 00:18:29,820
+OK, I like it.
+
+391
+00:18:29,820 --> 00:18:30,870
+When it ends?
+
+392
+00:18:30,870 --> 00:18:32,550
+STUDENT: It just
+[INAUDIBLE] it returns
+
+393
+00:18:32,550 --> 00:18:36,358
+a value instead of [INAUDIBLE].
+
+394
+00:18:36,358 --> 00:18:38,350
+ANDREW BRIM: Good,
+it returns a value.
+
+395
+00:18:38,350 --> 00:18:41,520
+It doesn't go on to the
+next recursive call, good.
+
+396
+00:18:41,520 --> 00:18:45,580
+Tell me in plain English,
+how are the Towers of Hanoi
+
+397
+00:18:45,580 --> 00:18:47,970
+a recursive problem?
+
+398
+00:18:47,970 --> 00:18:53,515
+The Towers of Hanoi,
+Towers of Hanoi.
+
+399
+00:18:56,500 --> 00:18:59,643
+Remember these guys,
+Towers of Hanoi?
+
+400
+00:19:02,410 --> 00:19:03,487
+Fisher-Price?
+
+401
+00:19:03,487 --> 00:19:05,070
+You guys had these
+when you were kids?
+
+402
+00:19:07,630 --> 00:19:08,807
+Here we go, actually.
+
+403
+00:19:08,807 --> 00:19:09,390
+Is that right?
+
+404
+00:19:11,960 --> 00:19:14,260
+I worked at a
+nursery for a while,
+
+405
+00:19:14,260 --> 00:19:17,560
+and I taught those
+three-year-olds
+
+406
+00:19:17,560 --> 00:19:18,970
+all about recursion.
+
+407
+00:19:18,970 --> 00:19:22,990
+It would be with the
+Fisher-Price Towers of Hanoi
+
+408
+00:19:22,990 --> 00:19:24,538
+that had four disks.
+
+409
+00:19:24,538 --> 00:19:26,080
+What did I tell
+those three-year-olds
+
+410
+00:19:26,080 --> 00:19:27,470
+to teach them about recursion?
+
+411
+00:19:27,470 --> 00:19:30,720
+I'll just use these discs.
+
+412
+00:19:30,720 --> 00:19:34,510
+How is that recursive,
+in plain English?
+
+413
+00:19:34,510 --> 00:19:36,540
+Don't worry about base case or--
+
+414
+00:19:36,540 --> 00:19:39,400
+recursive problems need
+to be a shrinking space.
+
+415
+00:19:39,400 --> 00:19:40,600
+How does that recursive?
+
+416
+00:19:44,600 --> 00:19:53,000
+STUDENT: [INAUDIBLE]
+on the right post
+
+417
+00:19:53,000 --> 00:19:58,420
+where [INAUDIBLE]
+got to bring it back.
+
+418
+00:20:01,160 --> 00:20:03,398
+ANDREW BRIM: I like it, good.
+
+419
+00:20:03,398 --> 00:20:04,190
+Any other thoughts?
+
+420
+00:20:04,190 --> 00:20:05,775
+How is this a recursive problem?
+
+421
+00:20:09,960 --> 00:20:12,810
+Because you can represent it
+in-- if the discs in Tower
+
+422
+00:20:12,810 --> 00:20:14,040
+of Hanoi, you can never put--
+
+423
+00:20:14,040 --> 00:20:16,660
+you can never put a larger
+disc on top of a smaller disc,
+
+424
+00:20:16,660 --> 00:20:18,540
+well, then, you
+can represent this
+
+425
+00:20:18,540 --> 00:20:21,160
+as, if I keep the
+bottom disc stationary,
+
+426
+00:20:21,160 --> 00:20:24,000
+I can perform the
+Towers of Hanoi solution
+
+427
+00:20:24,000 --> 00:20:27,120
+on everything above
+it, move it all over,
+
+428
+00:20:27,120 --> 00:20:30,370
+then move that one disc, then
+move everything else back over.
+
+429
+00:20:30,370 --> 00:20:33,630
+I can represent it in that way.
+
+430
+00:20:33,630 --> 00:20:35,520
+So because I can
+represent it that way,
+
+431
+00:20:35,520 --> 00:20:38,430
+I can do the same for
+every smaller problem.
+
+432
+00:20:38,430 --> 00:20:41,160
+If I have a larger disc, and
+I can represent this problem
+
+433
+00:20:41,160 --> 00:20:44,282
+and solve the Towers of Hanoi
+for all the discs on top of it,
+
+434
+00:20:44,282 --> 00:20:46,740
+then move to the bottom, I can
+do the same for the one disc
+
+435
+00:20:46,740 --> 00:20:47,610
+above it.
+
+436
+00:20:47,610 --> 00:20:50,640
+I can represent the
+next problem as all--
+
+437
+00:20:50,640 --> 00:20:54,330
+the bottom largest disc and
+all of the smaller discs
+
+438
+00:20:54,330 --> 00:20:55,240
+on top of it.
+
+439
+00:20:55,240 --> 00:20:58,320
+And I can represent that problem
+as the largest bottom discs
+
+440
+00:20:58,320 --> 00:21:02,310
+and all the smaller
+discs on top of it.
+
+441
+00:21:02,310 --> 00:21:04,013
+Does that make sense?
+
+442
+00:21:04,013 --> 00:21:06,180
+You are not going to have
+to write the code to solve
+
+443
+00:21:06,180 --> 00:21:08,223
+Towers of Hanoi recursively.
+
+444
+00:21:08,223 --> 00:21:10,223
+I'm happy-- I'm going to
+have do it iteratively.
+
+445
+00:21:10,223 --> 00:21:12,330
+[LAUGHTER]
+
+446
+00:21:12,330 --> 00:21:14,910
+Just kidding.
+
+447
+00:21:14,910 --> 00:21:15,583
+All right.
+
+448
+00:21:15,583 --> 00:21:18,000
+Question on our chat, because
+the logic of moving one disc
+
+449
+00:21:18,000 --> 00:21:19,542
+is the same, yep,
+you got it, Austin.
+
+450
+00:21:19,542 --> 00:21:20,917
+Great job.
+
+451
+00:21:20,917 --> 00:21:21,500
+True or false?
+
+452
+00:21:21,500 --> 00:21:25,820
+Austin will get
+an A on this exam.
+
+453
+00:21:25,820 --> 00:21:27,740
+We'll see.
+
+454
+00:21:27,740 --> 00:21:28,680
+You guys will be fine.
+
+455
+00:21:28,680 --> 00:21:31,900
+I took the exam and got a B+,
+so you guys will be great.
+
+456
+00:21:31,900 --> 00:21:33,687
+STUDENT: I thought you got a 0.
+
+457
+00:21:33,687 --> 00:21:34,520
+ANDREW BRIM: I got ?
+
+458
+00:21:34,520 --> 00:21:35,020
+0.
+
+459
+00:21:35,020 --> 00:21:37,490
+Yeah, I got it.
+
+460
+00:21:37,490 --> 00:21:38,490
+All right, just kidding.
+
+461
+00:21:38,490 --> 00:21:40,400
+I took the exam in three
+minutes, and I got 100%
+
+462
+00:21:40,400 --> 00:21:41,490
+So you guys will do great.
+
+463
+00:21:44,330 --> 00:21:45,360
+OK, let's see.
+
+464
+00:21:45,360 --> 00:21:46,506
+What else about recursive?
+
+465
+00:21:50,360 --> 00:21:53,060
+Yeah, you should be able
+to understand examples
+
+466
+00:21:53,060 --> 00:21:56,173
+of factorial, Fibonacci, trees.
+
+467
+00:21:59,522 --> 00:22:01,980
+Coding, write a function to
+solve a factorial for any given
+
+468
+00:22:01,980 --> 00:22:02,757
+number--
+
+469
+00:22:02,757 --> 00:22:03,340
+true or false?
+
+470
+00:22:03,340 --> 00:22:06,870
+If I made you write a
+recursive function right now
+
+471
+00:22:06,870 --> 00:22:11,050
+to solve a factorial,
+you could do it.
+
+472
+00:22:11,050 --> 00:22:11,990
+Let's find out.
+
+473
+00:22:11,990 --> 00:22:13,270
+What would the base case be?
+
+474
+00:22:13,270 --> 00:22:15,400
+If I made you write a
+factorial recursive,
+
+475
+00:22:15,400 --> 00:22:17,180
+what would the base case be?
+
+476
+00:22:17,180 --> 00:22:17,680
+STUDENT: 1.
+
+477
+00:22:17,680 --> 00:22:18,310
+ANDREW BRIM: 1.
+
+478
+00:22:18,310 --> 00:22:19,750
+So what would you do?
+
+479
+00:22:19,750 --> 00:22:21,650
+You'd print, I found a 1?
+
+480
+00:22:21,650 --> 00:22:22,300
+STUDENT: No.
+
+481
+00:22:22,300 --> 00:22:24,050
+ANDREW BRIM: Nope,
+you'd return something.
+
+482
+00:22:24,050 --> 00:22:24,760
+What would you return?
+
+483
+00:22:24,760 --> 00:22:25,260
+STUDENT: 1.
+
+484
+00:22:25,260 --> 00:22:26,770
+ANDREW BRIM: 1, good.
+
+485
+00:22:26,770 --> 00:22:29,350
+All right, what would be
+the logic of the recursive
+
+486
+00:22:29,350 --> 00:22:33,600
+calls that's
+shrinking the space?
+
+487
+00:22:33,600 --> 00:22:34,230
+Yes?
+
+488
+00:22:34,230 --> 00:22:39,050
+STUDENT: [INAUDIBLE] number.
+
+489
+00:22:39,050 --> 00:22:42,290
+ANDREW BRIM: Yeah,
+so you'd else return
+
+490
+00:22:42,290 --> 00:22:48,110
+the number times the recursive
+call number minus 1, yep.
+
+491
+00:22:48,110 --> 00:22:52,550
+You guys, did you see that
+in air as I was talking?
+
+492
+00:22:52,550 --> 00:22:53,240
+Here we go.
+
+493
+00:22:53,240 --> 00:22:55,700
+Let's review it.
+
+494
+00:22:55,700 --> 00:22:56,450
+Let's review.
+
+495
+00:23:01,670 --> 00:23:03,540
+Factorial-- so here's factorial.
+
+496
+00:23:03,540 --> 00:23:05,070
+And this is Week 3 recursion.
+
+497
+00:23:05,070 --> 00:23:08,930
+This is factorial in
+iterative, and here's
+
+498
+00:23:08,930 --> 00:23:13,432
+factorial in recursive.
+
+499
+00:23:13,432 --> 00:23:15,265
+So maybe if you want
+to review that example?
+
+500
+00:23:18,000 --> 00:23:20,530
+And I think I've got Towers
+of Hanoi in here somewhere.
+
+501
+00:23:26,370 --> 00:23:27,260
+STUDENT: Didn't work.
+
+502
+00:23:27,260 --> 00:23:28,427
+ANDREW BRIM: It didn't work?
+
+503
+00:23:28,427 --> 00:23:29,095
+There you go.
+
+504
+00:23:29,095 --> 00:23:30,220
+Well, don't worry about it.
+
+505
+00:23:30,220 --> 00:23:32,490
+You do not need to-- you do not
+need to. code Towers of Hanoi.
+
+506
+00:23:32,490 --> 00:23:33,190
+True, yeah.
+
+507
+00:23:33,190 --> 00:23:35,370
+STUDENT: [INAUDIBLE]
+
+508
+00:23:35,370 --> 00:23:38,250
+ANDREW BRIM: It
+kept going forever?
+
+509
+00:23:38,250 --> 00:23:38,963
+Yeah.
+
+510
+00:23:38,963 --> 00:23:39,880
+OK, well, don't worry.
+
+511
+00:23:39,880 --> 00:23:43,090
+Don't worry about
+Towers of Hanoi.
+
+512
+00:23:43,090 --> 00:23:49,340
+OK, I think that's pretty
+much it for recursion.
+
+513
+00:23:49,340 --> 00:23:52,520
+All right, Python
+dictionary and JSON.
+
+514
+00:23:52,520 --> 00:23:56,060
+What is the difference between a
+key and a value in a dictionary
+
+515
+00:23:56,060 --> 00:23:57,090
+or in JSON?
+
+516
+00:23:57,090 --> 00:23:59,110
+What's the difference
+between a key and value?
+
+517
+00:24:01,700 --> 00:24:05,258
+What is a key-value pair?
+
+518
+00:24:05,258 --> 00:24:06,902
+STUDENT: Pair [INAUDIBLE].
+
+519
+00:24:06,902 --> 00:24:08,360
+ANDREW BRIM: Pair
+of key and value.
+
+520
+00:24:08,360 --> 00:24:08,902
+You're ready.
+
+521
+00:24:08,902 --> 00:24:12,545
+[LAUGHS] You're ready.
+
+522
+00:24:12,545 --> 00:24:13,670
+Anyone else have a thought?
+
+523
+00:24:13,670 --> 00:24:16,840
+Key-value pair?
+
+524
+00:24:16,840 --> 00:24:18,450
+Yep?
+
+525
+00:24:18,450 --> 00:24:19,410
+What is it?
+
+526
+00:24:19,410 --> 00:24:20,730
+It's a dictionary?
+
+527
+00:24:20,730 --> 00:24:22,770
+Yeah, what does that mean?
+
+528
+00:24:22,770 --> 00:24:25,235
+How does a dictionary store
+things in a key and value?
+
+529
+00:24:28,470 --> 00:24:31,240
+Whatever the value is.
+
+530
+00:24:31,240 --> 00:24:36,510
+Yep Yep.
+
+531
+00:24:36,510 --> 00:24:37,010
+There it is.
+
+532
+00:24:37,010 --> 00:24:37,968
+So here's a dictionary.
+
+533
+00:24:37,968 --> 00:24:41,980
+Here's the key, and here's the
+value associated with that key.
+
+534
+00:24:41,980 --> 00:24:45,950
+So what kind of name
+should you give to the key?
+
+535
+00:24:45,950 --> 00:24:49,016
+What are some good key names?
+
+536
+00:24:49,016 --> 00:24:50,672
+STUDENT: Something descriptive.
+
+537
+00:24:50,672 --> 00:24:52,130
+ANDREW BRIM:
+Something descriptive?
+
+538
+00:24:52,130 --> 00:24:54,720
+Yep, key names are
+like variable names.
+
+539
+00:24:54,720 --> 00:24:59,590
+They should be descriptive
+of what it is you're storing.
+
+540
+00:24:59,590 --> 00:25:00,090
+Good?
+
+541
+00:25:03,360 --> 00:25:05,610
+Yeah, pretty much it.
+
+542
+00:25:05,610 --> 00:25:06,490
+Let's see here.
+
+543
+00:25:06,490 --> 00:25:11,043
+What is the Andy Brim method for
+processing the data in a JSON?
+
+544
+00:25:11,043 --> 00:25:11,990
+STUDENT: [INAUDIBLE]
+
+545
+00:25:11,990 --> 00:25:13,453
+STUDENT: [INAUDIBLE]
+stare at it.
+
+546
+00:25:13,453 --> 00:25:15,620
+ANDREW BRIM: One, yep, You
+put the URL in a browser.
+
+547
+00:25:15,620 --> 00:25:17,600
+Number two, you stare at it.
+
+548
+00:25:17,600 --> 00:25:21,350
+Number three,
+figure out the keys.
+
+549
+00:25:21,350 --> 00:25:25,010
+Number four, you start
+hacking away at code
+
+550
+00:25:25,010 --> 00:25:26,920
+to get the data out of there--
+
+551
+00:25:26,920 --> 00:25:28,741
+good.
+
+552
+00:25:28,741 --> 00:25:32,850
+Good, and I mean,
+if you could do--
+
+553
+00:25:32,850 --> 00:25:35,310
+I gave you some pretty serious--
+
+554
+00:25:35,310 --> 00:25:38,470
+between the COVID
+and the crypto,
+
+555
+00:25:38,470 --> 00:25:42,930
+those are some pretty serious
+how to get data out of a JSON.
+
+556
+00:25:42,930 --> 00:25:45,270
+So if you can do
+those, you're ready.
+
+557
+00:25:45,270 --> 00:25:48,800
+You're ready for
+professional-level JSON,
+
+558
+00:25:48,800 --> 00:25:55,390
+because those are pretty serious
+examples from the real world.
+
+559
+00:25:55,390 --> 00:25:57,490
+OK, queues and stacks.
+
+560
+00:25:57,490 --> 00:25:59,625
+What's the difference
+between FIFO and LIFO?
+
+561
+00:25:59,625 --> 00:26:02,410
+STUDENT: [INAUDIBLE]
+
+562
+00:26:02,410 --> 00:26:06,330
+ANDREW BRIM: OK, what
+the heck does LIFO mean?
+
+563
+00:26:06,330 --> 00:26:08,230
+What does Last In,
+First Out mean?
+
+564
+00:26:08,230 --> 00:26:15,410
+STUDENT: Whatever gets added,
+then that [INAUDIBLE] goes out.
+
+565
+00:26:15,410 --> 00:26:17,170
+ANDREW BRIM: Yep, so good.
+
+566
+00:26:17,170 --> 00:26:18,930
+LIFO is last in, first out.
+
+567
+00:26:18,930 --> 00:26:22,498
+So give me an example
+of a stack in real life.
+
+568
+00:26:22,498 --> 00:26:23,818
+STUDENT: [INAUDIBLE]
+
+569
+00:26:23,818 --> 00:26:24,860
+ANDREW BRIM: What's that?
+
+570
+00:26:24,860 --> 00:26:27,258
+STUDENT: [INAUDIBLE]
+
+571
+00:26:27,258 --> 00:26:28,550
+ANDREW BRIM: Pancakes, exactly.
+
+572
+00:26:28,550 --> 00:26:30,175
+The last pancake that
+goes on the stack
+
+573
+00:26:30,175 --> 00:26:33,520
+is the first one that's going
+to come off and get eaten, yep.
+
+574
+00:26:33,520 --> 00:26:35,820
+Does that make you feel
+bad for the bottom pancake?
+
+575
+00:26:35,820 --> 00:26:39,630
+STUDENT: [INAUDIBLE]
+
+576
+00:26:39,630 --> 00:26:42,240
+ANDREW BRIM: That's just
+the life of a pancake.
+
+577
+00:26:42,240 --> 00:26:44,743
+How would you make
+a queue of pancakes?
+
+578
+00:26:44,743 --> 00:26:46,160
+STUDENT: Have
+someone [INAUDIBLE].
+
+579
+00:26:46,160 --> 00:26:47,690
+Every time you [INAUDIBLE].
+
+580
+00:26:47,690 --> 00:26:50,065
+ANDREW BRIM: Put them on,
+every pancake on its own plate?
+
+581
+00:26:50,065 --> 00:26:52,565
+STUDENT: [INAUDIBLE] you have
+a district, like a [INAUDIBLE]
+
+582
+00:26:52,565 --> 00:26:53,780
+that holds a [INAUDIBLE].
+
+583
+00:26:53,780 --> 00:26:55,322
+ANDREW BRIM: Yeah,
+put each pancake--
+
+584
+00:26:55,322 --> 00:26:57,920
+exactly, I like it.
+
+585
+00:26:57,920 --> 00:27:00,530
+Take the dish rack
+out of the dishwasher.
+
+586
+00:27:00,530 --> 00:27:02,050
+Put pancakes.
+
+587
+00:27:02,050 --> 00:27:02,550
+I like it.
+
+588
+00:27:02,550 --> 00:27:03,810
+That's good with pancakes.
+
+589
+00:27:03,810 --> 00:27:05,300
+I like it.
+
+590
+00:27:05,300 --> 00:27:07,250
+Good.
+
+591
+00:27:07,250 --> 00:27:10,690
+True or false, stacks are
+used in the real world and not
+
+592
+00:27:10,690 --> 00:27:12,165
+in this class.
+
+593
+00:27:12,165 --> 00:27:13,300
+Good, yeah.
+
+594
+00:27:13,300 --> 00:27:14,860
+True, they are.
+
+595
+00:27:14,860 --> 00:27:18,642
+What are some examples of
+stacks in the real world?
+
+596
+00:27:18,642 --> 00:27:20,486
+STUDENT: A line for a ride.
+
+597
+00:27:20,486 --> 00:27:22,510
+ANDREW BRIM: What's that?
+
+598
+00:27:22,510 --> 00:27:23,880
+STUDENT: A line for a ride.
+
+599
+00:27:23,880 --> 00:27:25,200
+ANDREW BRIM: A line for a ride?
+
+600
+00:27:25,200 --> 00:27:27,847
+Oh, yeah, I meant,
+like, in programming.
+
+601
+00:27:27,847 --> 00:27:28,680
+STUDENT: [INAUDIBLE]
+
+602
+00:27:28,680 --> 00:27:29,715
+ANDREW BRIM: Yeah, yeah.
+
+603
+00:27:29,715 --> 00:27:32,970
+STUDENT: [INAUDIBLE]
+
+604
+00:27:32,970 --> 00:27:34,092
+ANDREW BRIM: Yeah.
+
+605
+00:27:34,092 --> 00:27:35,700
+STUDENT: [INAUDIBLE]
+
+606
+00:27:35,700 --> 00:27:37,360
+ANDREW BRIM: Yeah,
+yeah, you could.
+
+607
+00:27:37,360 --> 00:27:38,610
+And you're on the right track.
+
+608
+00:27:38,610 --> 00:27:44,310
+Yeah, converting a infix
+mathematical expression
+
+609
+00:27:44,310 --> 00:27:48,840
+to postfix can be done with
+a stack in order n time.
+
+610
+00:27:48,840 --> 00:27:53,730
+And then, solving it is, again,
+another order n operation.
+
+611
+00:27:53,730 --> 00:27:57,350
+Yeah, good.
+
+612
+00:27:57,350 --> 00:28:02,120
+What does-- when would you
+use a pop zero in Python--
+
+613
+00:28:02,120 --> 00:28:03,085
+pop 0?
+
+614
+00:28:05,920 --> 00:28:08,780
+Or what's the difference
+between pop and pop 0?
+
+615
+00:28:08,780 --> 00:28:09,466
+Yes?
+
+616
+00:28:09,466 --> 00:28:15,685
+STUDENT: [INAUDIBLE]
+pop [INAUDIBLE]
+
+617
+00:28:15,685 --> 00:28:16,560
+ANDREW BRIM: Perfect.
+
+618
+00:28:16,560 --> 00:28:19,870
+Pop pops off the last thing
+in the list and returns it.
+
+619
+00:28:19,870 --> 00:28:20,700
+Remember that?
+
+620
+00:28:20,700 --> 00:28:24,040
+And pop 0 returns the
+first thing in the list.
+
+621
+00:28:24,040 --> 00:28:25,300
+So which would you use when?
+
+622
+00:28:25,300 --> 00:28:27,730
+When would you use-- when
+would you use a pop 0,
+
+623
+00:28:27,730 --> 00:28:31,230
+and when would you-- if you
+were implementing a blank data
+
+624
+00:28:31,230 --> 00:28:32,890
+structure, you would use pop 0.
+
+625
+00:28:32,890 --> 00:28:35,250
+And if you were implementing
+a blank data structure,
+
+626
+00:28:35,250 --> 00:28:36,400
+you would use pop.
+
+627
+00:28:36,400 --> 00:28:38,910
+What are the blanks there?
+
+628
+00:28:38,910 --> 00:28:42,040
+Queue pop 0, stack pop.
+
+629
+00:28:42,040 --> 00:28:43,190
+You got it.
+
+630
+00:28:43,190 --> 00:28:46,820
+If you're implementing a
+Python list as a queue,
+
+631
+00:28:46,820 --> 00:28:51,070
+you would use pop 0 to get the
+first in, first out element.
+
+632
+00:28:51,070 --> 00:28:54,290
+If you're implementing a
+Python list as a stack,
+
+633
+00:28:54,290 --> 00:28:58,750
+you would use pop to get you
+the last element in the list.
+
+634
+00:28:58,750 --> 00:29:01,760
+That makes sense?
+
+635
+00:29:01,760 --> 00:29:02,600
+Yes?
+
+636
+00:29:02,600 --> 00:29:05,720
+STUDENT: [INAUDIBLE]
+if you stack objects
+
+637
+00:29:05,720 --> 00:29:07,825
+and just using the
+list [INAUDIBLE].
+
+638
+00:29:07,825 --> 00:29:08,700
+ANDREW BRIM: Nothing.
+
+639
+00:29:08,700 --> 00:29:11,930
+The queue and stack objects
+in Python are faster.
+
+640
+00:29:11,930 --> 00:29:16,010
+But you could use a
+Python list, no problem.
+
+641
+00:29:16,010 --> 00:29:18,200
+Yeah.
+
+642
+00:29:18,200 --> 00:29:24,050
+All right, sorting algorithms,
+sorting algorithms.
+
+643
+00:29:24,050 --> 00:29:27,200
+On that list of sorting
+algorithms, bubble, insertion,
+
+644
+00:29:27,200 --> 00:29:33,380
+selection, merge, and quick,
+of those five sorts, which
+
+645
+00:29:33,380 --> 00:29:37,110
+ones are recursive?
+
+646
+00:29:37,110 --> 00:29:43,345
+Of those five sorts,
+which ones are recursive?
+
+647
+00:29:43,345 --> 00:29:45,170
+STUDENT: Quick and merge.
+
+648
+00:29:45,170 --> 00:29:47,420
+ANDREW BRIM: Quick
+and merge, you got it.
+
+649
+00:29:47,420 --> 00:29:50,046
+How are quick and
+merge recursive?
+
+650
+00:29:52,910 --> 00:29:56,340
+STUDENT: [INAUDIBLE]
+
+651
+00:29:56,340 --> 00:29:58,980
+ANDREW BRIM: Yes, Victor's
+question was on the right track,
+
+652
+00:29:58,980 --> 00:30:00,990
+and Annelie's just
+shouted out the answer.
+
+653
+00:30:00,990 --> 00:30:03,180
+[LAUGHTER]
+
+654
+00:30:03,180 --> 00:30:07,020
+It breaks the list down
+to smaller parts and sorts
+
+655
+00:30:07,020 --> 00:30:08,470
+those smaller parts.
+
+656
+00:30:08,470 --> 00:30:11,230
+And in the merge, it
+merges them back up.
+
+657
+00:30:11,230 --> 00:30:14,440
+And in quicksort, it
+picks a pivot and merge--
+
+658
+00:30:14,440 --> 00:30:19,500
+and sorts them on the
+way down with a pivot.
+
+659
+00:30:19,500 --> 00:30:23,420
+You will not be
+required to code a--
+
+660
+00:30:28,460 --> 00:30:32,090
+you'll only have
+to code the bubble.
+
+661
+00:30:32,090 --> 00:30:34,323
+Bubble, who's seen
+bubble-bobble?
+
+662
+00:30:34,323 --> 00:30:36,990
+(SINGING WORDLESSLY) Da, no, no,
+no, no, no, no, no, no, no, no,
+
+663
+00:30:36,990 --> 00:30:39,650
+no, no, no, no, no, no, no,
+no, no, no, no, no, no, no,
+
+664
+00:30:39,650 --> 00:30:41,374
+no, no, no.
+
+665
+00:30:41,374 --> 00:30:45,465
+Oh, man, you guys are
+not ready for this exam.
+
+666
+00:30:45,465 --> 00:30:48,854
+[LAUGHTER]
+
+667
+00:30:56,171 --> 00:30:56,838
+[VIDEO PLAYBACK]
+
+668
+00:30:56,838 --> 00:30:59,142
+[ENERGETIC ELECTRONIC MUSIC]
+
+669
+00:30:59,142 --> 00:31:01,350
+ANDREW BRIM: In addition to
+covering the bubble sort,
+
+670
+00:31:01,350 --> 00:31:04,530
+you will be required to
+understand this '80s reference.
+
+671
+00:31:04,530 --> 00:31:06,860
+- I trim my chest hair into
+the shape of small animals.
+
+672
+00:31:06,860 --> 00:31:09,078
+It's a squirrel.
+
+673
+00:31:09,078 --> 00:31:12,571
+[CHIME]
+
+674
+00:31:18,560 --> 00:31:20,721
+ANDREW BRIM: Insert coin.
+
+675
+00:31:20,721 --> 00:31:23,583
+[ELECTRONIC CHIRPING]
+
+676
+00:31:23,583 --> 00:31:26,922
+[ENERGETIC ELECTRONIC COINS]
+
+677
+00:31:27,890 --> 00:31:29,180
+The weapon is bubbles.
+
+678
+00:31:36,027 --> 00:31:36,610
+[END PLAYBACK]
+
+679
+00:31:36,610 --> 00:31:37,110
+All right.
+
+680
+00:31:37,110 --> 00:31:40,330
+Your weapon this
+Wednesday is also bubbles.
+
+681
+00:31:40,330 --> 00:31:43,680
+You'll be-- you have
+to write a bubble sort.
+
+682
+00:31:43,680 --> 00:31:46,060
+So how do you prepare for that?
+
+683
+00:31:46,060 --> 00:31:49,960
+Go check out-- let's see here.
+
+684
+00:31:49,960 --> 00:31:53,060
+All week 4 is all of the others.
+
+685
+00:31:53,060 --> 00:31:54,490
+Where's the bubble?
+
+686
+00:31:54,490 --> 00:31:59,440
+Week 6-- or, excuse me,
+week 3, week 3 is bubble.
+
+687
+00:31:59,440 --> 00:32:02,120
+So there it is.
+
+688
+00:32:02,120 --> 00:32:03,000
+Pop quiz.
+
+689
+00:32:03,000 --> 00:32:06,260
+What is the big O
+notation, or what
+
+690
+00:32:06,260 --> 00:32:07,590
+is the order of complexity--
+
+691
+00:32:07,590 --> 00:32:09,115
+Same thing-- of the bubble sort?
+
+692
+00:32:11,830 --> 00:32:14,450
+How'd you know it was n squared?
+
+693
+00:32:14,450 --> 00:32:17,870
+Yep, two nested
+for loops, exactly.
+
+694
+00:32:17,870 --> 00:32:19,027
+Exactly.
+
+695
+00:32:19,027 --> 00:32:19,860
+All right, pop quiz.
+
+696
+00:32:19,860 --> 00:32:22,010
+What are the order
+complexities of the insertion
+
+697
+00:32:22,010 --> 00:32:25,785
+and the selection sort?
+
+698
+00:32:25,785 --> 00:32:29,124
+STUDENT: [INAUDIBLE]
+
+699
+00:32:30,080 --> 00:32:32,690
+ANDREW BRIM: No, man.
+
+700
+00:32:32,690 --> 00:32:34,080
+It is also n squared.
+
+701
+00:32:34,080 --> 00:32:36,860
+So selection, insertion.
+
+702
+00:32:36,860 --> 00:32:38,160
+Here's insertion.
+
+703
+00:32:38,160 --> 00:32:41,640
+So two for loops, nested
+for loop, also n squared.
+
+704
+00:32:41,640 --> 00:32:42,810
+Here's selection.
+
+705
+00:32:42,810 --> 00:32:46,310
+Selection is nested
+for loops also.
+
+706
+00:32:46,310 --> 00:32:50,450
+So here's, again,
+selection-- basically,
+
+707
+00:32:50,450 --> 00:32:53,720
+if you're sorting
+these by ascending,
+
+708
+00:32:53,720 --> 00:32:57,280
+it goes through and selects
+the smallest number,
+
+709
+00:32:57,280 --> 00:33:00,950
+swaps it with the first spot and
+it moves on to the second spot.
+
+710
+00:33:00,950 --> 00:33:05,990
+It goes through and it finds a
+next smallest number, swaps it.
+
+711
+00:33:05,990 --> 00:33:07,540
+It selects-- selection sort.
+
+712
+00:33:07,540 --> 00:33:11,650
+It selects the smallest number,
+swaps it with that spot,
+
+713
+00:33:11,650 --> 00:33:14,500
+selects the next smallest
+number, swaps it.
+
+714
+00:33:14,500 --> 00:33:20,010
+The insertion sort,
+the insertion sort
+
+715
+00:33:20,010 --> 00:33:23,660
+treats the list like
+two separate lists.
+
+716
+00:33:23,660 --> 00:33:28,800
+It starts with the sorted
+list and an unsorted list.
+
+717
+00:33:28,800 --> 00:33:32,070
+And the sorted list starts
+out with just one item.
+
+718
+00:33:32,070 --> 00:33:36,480
+So this list of three
+right here is sorted.
+
+719
+00:33:36,480 --> 00:33:37,840
+It's got one thing in it.
+
+720
+00:33:37,840 --> 00:33:40,080
+Then it goes and it
+grabs the next item,
+
+721
+00:33:40,080 --> 00:33:42,660
+and it inserts it
+into the sorted list
+
+722
+00:33:42,660 --> 00:33:45,040
+into the correct spot.
+
+723
+00:33:45,040 --> 00:33:45,720
+So it'll be 1-3.
+
+724
+00:33:45,720 --> 00:33:46,480
+Three.
+
+725
+00:33:46,480 --> 00:33:49,758
+Then it'll grab the 4 and
+insert it into the sorted list,
+
+726
+00:33:49,758 --> 00:33:50,800
+and it'll leave it there.
+
+727
+00:33:50,800 --> 00:33:51,970
+It'll be 1-3-4.
+
+728
+00:33:51,970 --> 00:33:53,580
+Then it'll grab
+the next number 1.
+
+729
+00:33:53,580 --> 00:33:55,660
+It'll insert it into
+the sorted list.
+
+730
+00:33:55,660 --> 00:33:57,060
+It'll be 1-1-3-4.
+
+731
+00:33:57,060 --> 00:33:58,560
+And it keeps going.
+
+732
+00:33:58,560 --> 00:33:59,880
+That's insertion sort.
+
+733
+00:33:59,880 --> 00:34:02,370
+It keeps a sorted list
+and an unsorted list,
+
+734
+00:34:02,370 --> 00:34:07,720
+and it inserts values one at a
+time into these sorted lists.
+
+735
+00:34:07,720 --> 00:34:12,699
+What is the order of complexity
+of the insertion sort?
+
+736
+00:34:12,699 --> 00:34:13,710
+N squared.
+
+737
+00:34:13,710 --> 00:34:16,600
+What is the order of
+complexity of the insertion
+
+738
+00:34:16,600 --> 00:34:18,899
+sort if everything
+is already sorted?
+
+739
+00:34:21,805 --> 00:34:23,270
+STUDENT: N, [INAUDIBLE].
+
+740
+00:34:23,270 --> 00:34:25,851
+ANDREW BRIM: N.
+How do you know N?
+
+741
+00:34:25,851 --> 00:34:27,000
+STUDENT: Educated guess.
+
+742
+00:34:27,000 --> 00:34:28,810
+ANDREW BRIM: Educated
+guess is correct.
+
+743
+00:34:28,810 --> 00:34:32,752
+So if the insertion
+sort is already sorted,
+
+744
+00:34:32,752 --> 00:34:34,210
+you can add-- this
+doesn't have it.
+
+745
+00:34:34,210 --> 00:34:39,540
+You can add an if statement to
+say, if the number I'm inserting
+
+746
+00:34:39,540 --> 00:34:43,739
+is greater than the largest
+number in the sorted array,
+
+747
+00:34:43,739 --> 00:34:45,719
+I can leave it alone.
+
+748
+00:34:45,719 --> 00:34:47,550
+So instead of doing
+a nested for loop,
+
+749
+00:34:47,550 --> 00:34:50,880
+you can just do an if statement
+for each one of these,
+
+750
+00:34:50,880 --> 00:34:54,120
+and it's an order n operation.
+
+751
+00:34:54,120 --> 00:34:59,490
+So that's why insertion sort
+was preferred for a long time.
+
+752
+00:34:59,490 --> 00:35:01,230
+Anyone remember
+the name of the guy
+
+753
+00:35:01,230 --> 00:35:06,210
+who broke the four-minute
+mile of sorting?
+
+754
+00:35:06,210 --> 00:35:08,400
+Don Shell.
+
+755
+00:35:08,400 --> 00:35:12,060
+His sort beat the n squared
+algorithms and paved
+
+756
+00:35:12,060 --> 00:35:16,230
+the way for the n
+log n algorithms.
+
+757
+00:35:16,230 --> 00:35:18,540
+All right, you don't need
+to code the Shell sort,
+
+758
+00:35:18,540 --> 00:35:20,710
+but you just remember
+the name Don Shell.
+
+759
+00:35:20,710 --> 00:35:23,380
+He is the Roger
+Bannister of sorting.
+
+760
+00:35:23,380 --> 00:35:26,260
+Roger Bannister was the guy
+who broke the four-minute mile.
+
+761
+00:35:26,260 --> 00:35:28,690
+Don Shell was the guy
+to break the n squared
+
+762
+00:35:28,690 --> 00:35:31,480
+sorting algorithms.
+
+763
+00:35:31,480 --> 00:35:37,610
+OK, algorithm analysis
+and big O notation.
+
+764
+00:35:37,610 --> 00:35:40,730
+Understand how big O notation
+is used to measure and compare
+
+765
+00:35:40,730 --> 00:35:42,000
+algorithms.
+
+766
+00:35:42,000 --> 00:35:44,420
+Be able to give the big O
+notation for the following
+
+767
+00:35:44,420 --> 00:35:45,590
+algorithms--
+
+768
+00:35:45,590 --> 00:35:48,443
+finding the middle
+element of a list,
+
+769
+00:35:48,443 --> 00:35:50,360
+printing the items in a
+list-- the quicksort--
+
+770
+00:35:50,360 --> 00:35:53,780
+and finding an average
+of two-dimensional lists.
+
+771
+00:35:53,780 --> 00:35:56,990
+All right, so what is the order
+complexity of just getting
+
+772
+00:35:56,990 --> 00:35:59,470
+the middle item in a list?
+
+773
+00:36:03,600 --> 00:36:05,560
+STUDENT: [INAUDIBLE] N.
+
+774
+00:36:05,560 --> 00:36:06,185
+ANDREW BRIM: N?
+
+775
+00:36:08,710 --> 00:36:10,680
+Yep.
+
+776
+00:36:10,680 --> 00:36:12,860
+What if you know the
+length of the list?
+
+777
+00:36:19,570 --> 00:36:20,662
+It'll be N divided by 2.
+
+778
+00:36:20,662 --> 00:36:22,120
+And what is the
+order of complexity
+
+779
+00:36:22,120 --> 00:36:24,300
+of the mathematical
+operation N divided by 2?
+
+780
+00:36:28,252 --> 00:36:29,160
+STUDENT: 1?
+
+781
+00:36:29,160 --> 00:36:32,760
+ANDREW BRIM: 1, an
+order 1 operation.
+
+782
+00:36:32,760 --> 00:36:35,370
+Here's another example
+of an order 1 operation.
+
+783
+00:36:35,370 --> 00:36:45,360
+What order of complexity
+is the pop 0 function.
+
+784
+00:36:45,360 --> 00:36:47,325
+What's the order or
+complexity of pop 0?
+
+785
+00:36:47,325 --> 00:36:48,855
+STUDENT: [INAUDIBLE] 1.
+
+786
+00:36:48,855 --> 00:36:49,480
+ANDREW BRIM: 1.
+
+787
+00:36:49,480 --> 00:36:50,610
+Order 1.
+
+788
+00:36:50,610 --> 00:36:51,632
+How did you know that?
+
+789
+00:36:51,632 --> 00:36:53,340
+STUDENT: [INAUDIBLE]
+order 1 [INAUDIBLE].
+
+790
+00:36:53,340 --> 00:36:54,990
+STUDENT: Yeah, you just go
+to the beginning of the list
+
+791
+00:36:54,990 --> 00:36:56,020
+and pop it off.
+
+792
+00:36:56,020 --> 00:36:58,353
+You don't need to go through
+all the list to figure out,
+
+793
+00:36:58,353 --> 00:37:00,340
+is this really the first one?
+
+794
+00:37:00,340 --> 00:37:05,700
+So pop 0 is an
+order 1 operation.
+
+795
+00:37:05,700 --> 00:37:06,640
+What's that?
+
+796
+00:37:06,640 --> 00:37:08,640
+STUDENT: [INAUDIBLE]
+
+797
+00:37:08,640 --> 00:37:10,570
+ANDREW BRIM: Without
+pop 0, with a pop?
+
+798
+00:37:10,570 --> 00:37:12,840
+Maybe if you--
+unless you had a--
+
+799
+00:37:12,840 --> 00:37:16,650
+usually, stacks will have
+a index or an indicator
+
+800
+00:37:16,650 --> 00:37:17,920
+what the last element is.
+
+801
+00:37:17,920 --> 00:37:20,080
+So usually it's also an order.
+
+802
+00:37:20,080 --> 00:37:20,615
+1 operation.
+
+803
+00:37:20,615 --> 00:37:26,187
+STUDENT: [INAUDIBLE] or 1.
+
+804
+00:37:26,187 --> 00:37:27,645
+ANDREW BRIM: If
+you know, n, it is.
+
+805
+00:37:27,645 --> 00:37:29,490
+STUDENT: Oh.
+
+806
+00:37:29,490 --> 00:37:32,100
+ANDREW BRIM: If you know the
+number of elements in a list,
+
+807
+00:37:32,100 --> 00:37:33,460
+then it would be an
+order 1 operation.
+
+808
+00:37:33,460 --> 00:37:35,585
+If you don't, then you
+would have to search through
+
+809
+00:37:35,585 --> 00:37:38,790
+to find which would be order n.
+
+810
+00:37:38,790 --> 00:37:39,665
+Does that make sense?
+
+811
+00:37:39,665 --> 00:37:42,390
+STUDENT: Does it
+all [INAUDIBLE]?
+
+812
+00:37:42,390 --> 00:37:45,420
+ANDREW BRIM: Yeah, but
+does length of the list
+
+813
+00:37:45,420 --> 00:37:47,885
+store its length, or does
+it go through and count?
+
+814
+00:37:48,716 --> 00:37:50,460
+STUDENT: Oh, right.
+
+815
+00:37:50,460 --> 00:37:54,122
+ANDREW BRIM: Yeah, so that's
+why I say, it depends.
+
+816
+00:37:54,122 --> 00:37:55,830
+All right, what's the
+order of complexity
+
+817
+00:37:55,830 --> 00:37:58,150
+to print the items in a list?
+
+818
+00:37:58,150 --> 00:37:58,650
+STUDENT: N.
+
+819
+00:37:58,650 --> 00:38:01,260
+ANDREW BRIM: N, yep,
+to print the items--
+
+820
+00:38:01,260 --> 00:38:03,000
+to print N number
+of items in a list,
+
+821
+00:38:03,000 --> 00:38:05,858
+you have to go through n
+number of items and print them.
+
+822
+00:38:05,858 --> 00:38:07,150
+All right, how about quicksort?
+
+823
+00:38:07,150 --> 00:38:09,390
+What's the order of
+complexity of a quicksort?
+
+824
+00:38:09,390 --> 00:38:11,238
+STUDENT: N Log N.
+
+825
+00:38:11,238 --> 00:38:12,870
+ANDREW BRIM: N log n.
+
+826
+00:38:12,870 --> 00:38:14,860
+You split the list
+in half each time.
+
+827
+00:38:14,860 --> 00:38:16,860
+That gives you
+the log N But then
+
+828
+00:38:16,860 --> 00:38:19,350
+you also have to sort
+N number of items.
+
+829
+00:38:19,350 --> 00:38:25,480
+So you sort N number of
+items, log N times N log N
+
+830
+00:38:25,970 --> 00:38:26,470
+All right.
+
+831
+00:38:26,470 --> 00:38:28,620
+What is the order
+complexity of putting
+
+832
+00:38:28,620 --> 00:38:30,573
+N number of items in a tree?
+
+833
+00:38:33,284 --> 00:38:34,280
+STUDENT: N log N.
+
+834
+00:38:34,280 --> 00:38:37,530
+ANDREW BRIM: N log N, because
+remember, each operation is
+
+835
+00:38:37,530 --> 00:38:39,840
+a log N operation into a tree.
+
+836
+00:38:39,840 --> 00:38:42,120
+So what is the
+order of complexity
+
+837
+00:38:42,120 --> 00:38:47,140
+to take N number of items,
+put them all into a tree,
+
+838
+00:38:47,140 --> 00:38:50,525
+and then take them all out?
+
+839
+00:38:54,030 --> 00:38:56,610
+Which, by the way,
+is the heapsort?
+
+840
+00:38:56,610 --> 00:39:01,510
+Yeah, 2 N log N. Let's make
+sure that one sinks in.
+
+841
+00:39:01,510 --> 00:39:04,570
+So to take N number
+of items and put them
+
+842
+00:39:04,570 --> 00:39:08,470
+in a binary search tree, it's N
+log N. You guys with me on that?
+
+843
+00:39:08,470 --> 00:39:14,410
+Then, to get--
+what's the order of--
+
+844
+00:39:14,410 --> 00:39:16,910
+to get the smallest,
+to find, do a find min,
+
+845
+00:39:16,910 --> 00:39:19,600
+what's the order of
+complexity to do a find min
+
+846
+00:39:19,600 --> 00:39:22,430
+on a binary search tree?
+
+847
+00:39:22,430 --> 00:39:25,578
+To do one, to do one find
+min on a binary search tree,
+
+848
+00:39:25,578 --> 00:39:26,870
+what's the order of complexity?
+
+849
+00:39:26,870 --> 00:39:27,495
+STUDENT: Log N.
+
+850
+00:39:27,495 --> 00:39:30,300
+ANDREW BRIM: Log
+N. So if you wanted
+
+851
+00:39:30,300 --> 00:39:34,300
+to take out the numbers
+of a binary search tree
+
+852
+00:39:34,300 --> 00:39:37,460
+so they're in order
+when you're done,
+
+853
+00:39:37,460 --> 00:39:40,130
+you can either do find
+min any number of times,
+
+854
+00:39:40,130 --> 00:39:42,350
+or you could do an inorder
+traversal, same order
+
+855
+00:39:42,350 --> 00:39:43,580
+of complexity.
+
+856
+00:39:43,580 --> 00:39:45,230
+So to get everything
+into a tree is
+
+857
+00:39:45,230 --> 00:39:50,590
+N log N. To get everything out
+of a tree sorted is N log N.
+
+858
+00:39:50,590 --> 00:39:54,310
+So if your sort was just
+throw everything in a tree,
+
+859
+00:39:54,310 --> 00:39:56,470
+take it all out again
+sorted, it would
+
+860
+00:39:56,470 --> 00:40:03,180
+be 2 N log N, which is
+the-- in big O notation,
+
+861
+00:40:03,180 --> 00:40:04,260
+the constants fall off.
+
+862
+00:40:04,260 --> 00:40:08,820
+So the heapsort is N log N,
+the same as the quicksort
+
+863
+00:40:08,820 --> 00:40:11,050
+and the merge sort.
+
+864
+00:40:11,050 --> 00:40:12,860
+And it's, in my opinion, easier.
+
+865
+00:40:12,860 --> 00:40:14,530
+You just throw
+everything in a tree,
+
+866
+00:40:14,530 --> 00:40:17,920
+and then take it
+all out in order.
+
+867
+00:40:17,920 --> 00:40:23,080
+So there you go.
+
+868
+00:40:23,080 --> 00:40:25,730
+Finding the average of
+a two-dimensional list.
+
+869
+00:40:25,730 --> 00:40:28,480
+So if I had a spreadsheet that
+had all of your homeworks on it,
+
+870
+00:40:28,480 --> 00:40:30,280
+each row was a student,
+and each column
+
+871
+00:40:30,280 --> 00:40:33,250
+was a homework assignment, what
+would be the order of complexity
+
+872
+00:40:33,250 --> 00:40:35,350
+for me to write an
+algorithm to tell you
+
+873
+00:40:35,350 --> 00:40:38,630
+what is the average homework
+score in this class?
+
+874
+00:40:38,630 --> 00:40:40,120
+In other words,
+what's the average
+
+875
+00:40:40,120 --> 00:40:42,130
+of a two-dimensional list?
+
+876
+00:40:42,130 --> 00:40:42,980
+N squared.
+
+877
+00:40:42,980 --> 00:40:44,385
+How did you know that?
+
+878
+00:40:44,385 --> 00:40:46,405
+STUDENT: [INAUDIBLE]
+
+879
+00:40:46,405 --> 00:40:47,780
+ANDREW BRIM: Yep,
+two dimensions.
+
+880
+00:40:47,780 --> 00:40:50,270
+It has a nested for
+loop to go through it
+
+881
+00:40:50,270 --> 00:40:52,900
+to calculate an average, yep.
+
+882
+00:40:55,610 --> 00:41:02,660
+All right, can you put
+these orders of complexity
+
+883
+00:41:02,660 --> 00:41:05,000
+in order of speed?
+
+884
+00:41:05,000 --> 00:41:07,310
+So let's do it right
+now as a class.
+
+885
+00:41:07,310 --> 00:41:09,750
+Everybody take one minute.
+
+886
+00:41:09,750 --> 00:41:11,970
+Talk with your neighbor
+and people on Zoom.
+
+887
+00:41:11,970 --> 00:41:14,120
+Just go ahead and put your
+answer in the Zoom chat.
+
+888
+00:41:14,120 --> 00:41:16,250
+Take all those orders
+of complexities, N,
+
+889
+00:41:16,250 --> 00:41:22,110
+log N, N log N, N to the 1.5,
+N squared, N cubed, 2 to the N,
+
+890
+00:41:22,110 --> 00:41:26,370
+and put them in order
+fastest to slowest.
+
+891
+00:41:26,370 --> 00:41:27,620
+Ready, set, go.
+
+892
+00:41:27,620 --> 00:41:30,880
+[INTERPOSING VOICES]
+
+893
+00:41:33,800 --> 00:41:35,320
+ANDREW BRIM: They
+are not in order.
+
+894
+00:41:35,320 --> 00:41:35,820
+STUDENT: Oh.
+
+895
+00:41:35,820 --> 00:41:37,584
+[INTERPOSING VOICES]
+
+896
+00:41:37,584 --> 00:41:41,277
+STUDENT: Sort them
+fastest to slowest?
+
+897
+00:41:41,277 --> 00:41:42,610
+ANDREW BRIM: Fastest to slowest.
+
+898
+00:41:42,610 --> 00:41:45,515
+[INTERPOSING VOICES]
+
+899
+00:41:54,389 --> 00:41:57,840
+[WHISTLING]
+
+900
+00:42:05,728 --> 00:42:09,179
+[CHEERFUL ELECTRONIC MUSIC]
+
+901
+00:42:10,792 --> 00:42:12,750
+ANDREW BRIM: Bubble bobble
+music will help you.
+
+902
+00:43:12,480 --> 00:43:13,090
+Pretty good.
+
+903
+00:43:15,358 --> 00:43:16,400
+I like the way you think.
+
+904
+00:43:21,330 --> 00:43:23,250
+STUDENT: [INAUDIBLE] 1.5.
+
+905
+00:43:23,250 --> 00:43:23,750
+1.5.
+
+906
+00:43:23,750 --> 00:43:26,921
+[INTERPOSING VOICES]
+
+907
+00:43:33,642 --> 00:43:35,350
+ANDREW BRIM: You guys
+get it figured out?
+
+908
+00:43:35,350 --> 00:43:38,717
+[ELECTRONIC CHIMES]
+
+909
+00:43:42,990 --> 00:43:45,600
+STUDENT: You're a tad jealous?
+
+910
+00:43:45,600 --> 00:43:47,078
+I would be, too.
+
+911
+00:43:47,078 --> 00:43:49,370
+ANDREW BRIM: This is more
+important than the Mario run?
+
+912
+00:43:49,370 --> 00:43:49,870
+Yes?
+
+913
+00:43:49,870 --> 00:43:55,660
+STUDENT: [INAUDIBLE] in
+the trees [INAUDIBLE].
+
+914
+00:43:55,660 --> 00:43:56,730
+STUDENT: All right.
+
+915
+00:43:56,730 --> 00:43:59,040
+We need to actually
+get some runs.
+
+916
+00:43:59,040 --> 00:44:00,430
+ANDREW BRIM: Yes, it would.
+
+917
+00:44:00,430 --> 00:44:01,200
+It would.
+
+918
+00:44:01,200 --> 00:44:02,650
+Yeah, it'd be N log N, good.
+
+919
+00:44:02,650 --> 00:44:07,290
+Yeah, which is why, in practice,
+everybody uses quicksort.
+
+920
+00:44:07,290 --> 00:44:11,220
+Because the big O notation
+of quicksort and mergesort
+
+921
+00:44:11,220 --> 00:44:14,310
+and heapsort are all N
+log N, but the big theta,
+
+922
+00:44:14,310 --> 00:44:16,810
+or the tight fit-- which is
+basically the real case--
+
+923
+00:44:16,810 --> 00:44:21,490
+quicksort beats the others
+because it's faster.
+
+924
+00:44:21,490 --> 00:44:25,530
+Yeah, but yeah, big O
+notation of all those three, N
+
+925
+00:44:25,530 --> 00:44:28,580
+log N. All right, who
+thinks they've got it.
+
+926
+00:44:32,420 --> 00:44:33,560
+What is the fastest?
+
+927
+00:44:33,560 --> 00:44:35,877
+[INAUDIBLE] did have
+it, but for the benefit
+
+928
+00:44:35,877 --> 00:44:37,460
+of the people in the
+class, I will not
+
+929
+00:44:37,460 --> 00:44:38,590
+show [INAUDIBLE] answer.
+
+930
+00:44:41,460 --> 00:44:43,660
+Yep, log N is fastest.
+
+931
+00:44:43,660 --> 00:44:44,660
+OK, what's next?
+
+932
+00:44:44,660 --> 00:44:45,600
+STUDENT: N.
+
+933
+00:44:45,600 --> 00:44:46,480
+ANDREW BRIM: N, good.
+
+934
+00:44:46,480 --> 00:44:47,670
+What's next?
+
+935
+00:44:47,670 --> 00:44:52,110
+N log N. How come
+it's not N point 1.5?
+
+936
+00:44:52,110 --> 00:44:52,880
+Because it's not?
+
+937
+00:44:52,880 --> 00:44:53,380
+Yeah.
+
+938
+00:44:53,380 --> 00:44:57,450
+[LAUGHS] Yeah, because the
+log N space is shrinking
+
+939
+00:44:57,450 --> 00:45:01,230
+at greater than a 0.5 linear.
+
+940
+00:45:01,230 --> 00:45:05,280
+The 0.5 is the giveaway
+why N log N is faster.
+
+941
+00:45:05,280 --> 00:45:09,180
+The 0.5 is a linear,
+whereas the log N
+
+942
+00:45:09,180 --> 00:45:11,160
+is a exponentially [INAUDIBLE].
+
+943
+00:45:11,160 --> 00:45:12,870
+STUDENT: Literally
+tied to the test.
+
+944
+00:45:12,870 --> 00:45:15,840
+ANDREW BRIM: So N log
+N. So here's the trick.
+
+945
+00:45:15,840 --> 00:45:18,510
+Once you swap log N and
+N, the rest are in order.
+
+946
+00:45:18,510 --> 00:45:21,315
+So N log N, 1.5.
+
+947
+00:45:21,315 --> 00:45:22,740
+N Squared.
+
+948
+00:45:22,740 --> 00:45:24,313
+How about the last
+one, 2 to the N?
+
+949
+00:45:24,313 --> 00:45:26,230
+STUDENT: You're just
+going to do it in one go.
+
+950
+00:45:26,230 --> 00:45:28,688
+ANDREW BRIM: How did you know
+that it was 2 to the N, not--
+
+951
+00:45:28,688 --> 00:45:30,910
+N cubed is [INAUDIBLE], right?
+
+952
+00:45:30,910 --> 00:45:33,650
+STUDENT: It's just the 255.
+
+953
+00:45:33,650 --> 00:45:35,850
+ANDREW BRIM: Yeah, hang on.
+
+954
+00:45:38,840 --> 00:45:42,380
+Yeah, so this is actually--
+
+955
+00:45:42,380 --> 00:45:43,980
+I'm going to ruin
+CNN for you forever.
+
+956
+00:45:43,980 --> 00:45:44,750
+Here we go.
+
+957
+00:45:44,750 --> 00:45:47,510
+So when N-- or if
+you do a y equals
+
+958
+00:45:47,510 --> 00:45:51,560
+mx plus b, when you
+have n in the exponent,
+
+959
+00:45:51,560 --> 00:45:55,210
+that is actually
+exponential growth.
+
+960
+00:45:55,210 --> 00:45:58,720
+N in the base with a
+constant in the exponent
+
+961
+00:45:58,720 --> 00:46:03,750
+is polynomial growth,
+not exponential growth.
+
+962
+00:46:03,750 --> 00:46:06,390
+So 2 to the N is
+exponential growth.
+
+963
+00:46:06,390 --> 00:46:08,660
+Now, here's why everyone's
+saying N, because this
+
+964
+00:46:08,660 --> 00:46:10,230
+gets abused all the time.
+
+965
+00:46:10,230 --> 00:46:13,610
+People will show charts of,
+"This company is experiencing
+
+966
+00:46:13,610 --> 00:46:18,230
+exponential growth," when
+really, it's x is in the base,
+
+967
+00:46:18,230 --> 00:46:21,650
+a constant is in the exponent,
+and that's polynomial growth.
+
+968
+00:46:21,650 --> 00:46:25,610
+Or, "Biden is growing
+exponentially in Detroit."
+
+969
+00:46:25,610 --> 00:46:27,110
+No, he's not.
+
+970
+00:46:27,110 --> 00:46:31,490
+He might be growing by a low
+order polynomial, but not
+
+971
+00:46:31,490 --> 00:46:32,200
+an exponent.
+
+972
+00:46:32,200 --> 00:46:35,960
+Exponent needs x in the
+exponent, or in big O notation
+
+973
+00:46:35,960 --> 00:46:37,200
+and in the exponent.
+
+974
+00:46:37,200 --> 00:46:42,098
+So good luck watching CNN from
+now on because that's me now.
+
+975
+00:46:42,098 --> 00:46:43,140
+Like, nope, you're wrong.
+
+976
+00:46:43,140 --> 00:46:44,310
+That's not exponential.
+
+977
+00:46:44,310 --> 00:46:45,420
+That's polynomial.
+
+978
+00:46:45,420 --> 00:46:45,920
+So--
+
+979
+00:46:45,920 --> 00:46:49,310
+STUDENT: What do you
+[INAUDIBLE] watch [INAUDIBLE]?
+
+980
+00:46:49,310 --> 00:46:50,750
+ANDREW BRIM: I watch them all.
+
+981
+00:46:50,750 --> 00:46:53,400
+CNN's got good
+Russia war coverage.
+
+982
+00:46:53,400 --> 00:46:56,100
+Better than Fox, in
+my humble opinion.
+
+983
+00:46:56,100 --> 00:46:58,740
+STUDENT: [INAUDIBLE]
+
+984
+00:46:58,740 --> 00:46:59,490
+ANDREW BRIM: Yeah.
+
+985
+00:46:59,490 --> 00:47:02,300
+I mean, honestly-- well,
+we won't get into it.
+
+986
+00:47:02,300 --> 00:47:03,792
+STUDENT: [INAUDIBLE]
+
+987
+00:47:03,792 --> 00:47:04,500
+ANDREW BRIM: So--
+
+988
+00:47:04,500 --> 00:47:05,875
+STUDENT: [INAUDIBLE]
+do you cover
+
+989
+00:47:05,875 --> 00:47:07,220
+the [INAUDIBLE] politics of it?
+
+990
+00:47:07,220 --> 00:47:07,670
+ANDREW BRIM: Totally.
+
+991
+00:47:07,670 --> 00:47:08,360
+When I went to--
+
+992
+00:47:08,360 --> 00:47:08,943
+I was shocked.
+
+993
+00:47:08,943 --> 00:47:14,970
+When I went to London, they
+cover, like, Trump a ton.
+
+994
+00:47:14,970 --> 00:47:17,720
+I was just watching
+the news, and they're
+
+995
+00:47:17,720 --> 00:47:21,350
+covering-- literally, half
+the commercials, half the news
+
+996
+00:47:21,350 --> 00:47:25,557
+coverage, is US stuff in London.
+
+997
+00:47:25,557 --> 00:47:27,140
+And I was thinking,
+like, I don't even
+
+998
+00:47:27,140 --> 00:47:31,580
+know who your prime minister is,
+but you guys are, like, addicted
+
+999
+00:47:31,580 --> 00:47:33,210
+to US media.
+
+1000
+00:47:33,210 --> 00:47:34,490
+Exactly.
+
+1001
+00:47:34,490 --> 00:47:36,050
+I know next to
+nothing about you,
+
+1002
+00:47:36,050 --> 00:47:38,390
+except you guys, the
+working class in Britain,
+
+1003
+00:47:38,390 --> 00:47:42,750
+wanted to get out of the EU.
+
+1004
+00:47:42,750 --> 00:47:43,898
+So there was Brexit.
+
+1005
+00:47:43,898 --> 00:47:45,440
+I was there, actually,
+during Brexit,
+
+1006
+00:47:45,440 --> 00:47:47,910
+which was pretty interesting.
+
+1007
+00:47:47,910 --> 00:47:49,280
+But other than Brexit, I had--
+
+1008
+00:47:49,280 --> 00:47:53,120
+I knew nothing about
+their politics or culture,
+
+1009
+00:47:53,120 --> 00:47:55,620
+and they were like--
+
+1010
+00:47:55,620 --> 00:47:57,608
+uh, anyway.
+
+1011
+00:47:57,608 --> 00:47:58,400
+It was fun, though.
+
+1012
+00:47:58,400 --> 00:47:59,400
+London was a lot of fun.
+
+1013
+00:47:59,400 --> 00:48:01,170
+All right, True or False.
+
+1014
+00:48:01,170 --> 00:48:08,210
+If I told you, please write
+an n squared algorithm,
+
+1015
+00:48:08,210 --> 00:48:09,417
+could you do it?
+
+1016
+00:48:09,417 --> 00:48:10,250
+STUDENT: [INAUDIBLE]
+
+1017
+00:48:10,250 --> 00:48:11,910
+ANDREW BRIM: Would you
+write in there a comment,
+
+1018
+00:48:11,910 --> 00:48:14,310
+"I don't know how to do
+this," and submit your exam?
+
+1019
+00:48:14,310 --> 00:48:15,200
+[LAUGHTER]
+
+1020
+00:48:15,200 --> 00:48:16,535
+STUDENT: No.
+
+1021
+00:48:16,535 --> 00:48:18,320
+[LAUGHS]
+
+1022
+00:48:18,320 --> 00:48:20,220
+ANDREW BRIM: Please do
+not write a comment,
+
+1023
+00:48:20,220 --> 00:48:23,120
+"I do not know how to do
+this," and submit your exam.
+
+1024
+00:48:23,120 --> 00:48:25,070
+Enter something, OK?
+
+1025
+00:48:25,070 --> 00:48:27,920
+I can grade something.
+
+1026
+00:48:27,920 --> 00:48:30,230
+OK?
+
+1027
+00:48:30,230 --> 00:48:30,980
+All right.
+
+1028
+00:48:30,980 --> 00:48:33,272
+STUDENT: N squared
+would be like?
+
+1029
+00:48:33,272 --> 00:48:35,480
+ANDREW BRIM: N squared would
+be two nested for loops.
+
+1030
+00:48:35,480 --> 00:48:40,010
+STUDENT: So it would be like
+for I in [INAUDIBLE] right?
+
+1031
+00:48:40,010 --> 00:48:41,640
+ANDREW BRIM: Yep,
+that would work.
+
+1032
+00:48:41,640 --> 00:48:43,820
+How about N, order
+N. If I said, you
+
+1033
+00:48:43,820 --> 00:48:46,758
+have to write an order
+N algorithm right now,
+
+1034
+00:48:46,758 --> 00:48:47,550
+what would you say?
+
+1035
+00:48:47,550 --> 00:48:48,530
+STUDENT: [INAUDIBLE]
+write a for loop.
+
+1036
+00:48:48,530 --> 00:48:50,360
+ANDREW BRIM: Yeah,
+write a for loop.
+
+1037
+00:48:50,360 --> 00:48:54,110
+For item in list, print item.
+
+1038
+00:48:54,110 --> 00:48:58,066
+That would be N.
+How about log N?
+
+1039
+00:48:58,066 --> 00:48:58,566
+[GASPS]
+
+1040
+00:48:58,566 --> 00:49:00,024
+STUDENT: You could
+just [INAUDIBLE]
+
+1041
+00:49:00,024 --> 00:49:01,760
+for the [INAUDIBLE] loop.
+
+1042
+00:49:01,760 --> 00:49:03,590
+ANDREW BRIM: Yeah, you could.
+
+1043
+00:49:03,590 --> 00:49:04,560
+Which one?
+
+1044
+00:49:04,560 --> 00:49:06,860
+Which, what code, would
+you copy and paste
+
+1045
+00:49:06,860 --> 00:49:09,805
+that we've discussed earlier?
+
+1046
+00:49:09,805 --> 00:49:10,775
+STUDENT: [INAUDIBLE]
+
+1047
+00:49:10,775 --> 00:49:11,960
+ANDREW BRIM: In order?
+
+1048
+00:49:11,960 --> 00:49:17,124
+Well, in order is going
+to log N all the items.
+
+1049
+00:49:17,124 --> 00:49:18,295
+STUDENT: Findmin.
+
+1050
+00:49:18,295 --> 00:49:19,170
+ANDREW BRIM: Findmin.
+
+1051
+00:49:19,170 --> 00:49:21,730
+Yeah, exactly, a findmin.
+
+1052
+00:49:21,730 --> 00:49:24,020
+A Findmin would do it.
+
+1053
+00:49:24,020 --> 00:49:24,740
+Good, great.
+
+1054
+00:49:24,740 --> 00:49:27,470
+Great, great answer.
+
+1055
+00:49:27,470 --> 00:49:28,890
+OK, let's see here.
+
+1056
+00:49:28,890 --> 00:49:30,910
+Order, complexion,
+and we'll cover these.
+
+1057
+00:49:30,910 --> 00:49:31,410
+All right.
+
+1058
+00:49:31,410 --> 00:49:35,750
+In a recent court case, a
+judge cited a city for contempt
+
+1059
+00:49:35,750 --> 00:49:38,730
+and ordered a fine of
+$2 for the first day.
+
+1060
+00:49:38,730 --> 00:49:42,690
+Each subsequent day until the
+city filed the judge's order,
+
+1061
+00:49:42,690 --> 00:49:44,203
+the fine was squared.
+
+1062
+00:49:47,670 --> 00:49:49,830
+The fine progressed as follows.
+
+1063
+00:49:49,830 --> 00:49:56,050
+$2, $4, $16, $256, $65,536.
+
+1064
+00:49:56,050 --> 00:49:58,750
+What would the fine be on day N?
+
+1065
+00:50:02,840 --> 00:50:05,010
+Talk with your neighbor
+for 17 seconds.
+
+1066
+00:50:05,010 --> 00:50:07,660
+What would the fine be on day N?
+
+1067
+00:50:08,823 --> 00:50:11,960
+[INTERPOSING VOICES]
+
+1068
+00:50:11,960 --> 00:50:13,490
+ANDREW BRIM: Is it 2 to the n?
+
+1069
+00:50:13,490 --> 00:50:15,690
+If it doubled every
+day, what would it be?
+
+1070
+00:50:15,690 --> 00:50:16,580
+STUDENT: [INAUDIBLE]
+
+1071
+00:50:16,580 --> 00:50:20,240
+ANDREW BRIM: If it doubled every
+day, it would be 2 to the n.
+
+1072
+00:50:20,240 --> 00:50:23,400
+If it's squared every
+day, what is it?
+
+1073
+00:50:28,312 --> 00:50:29,770
+I'll give you more
+than 17 seconds.
+
+1074
+00:50:29,770 --> 00:50:31,000
+Take one minute.
+
+1075
+00:50:34,930 --> 00:50:37,880
+If it doubled every day,
+it would be 2 to the n.
+
+1076
+00:50:37,880 --> 00:50:39,970
+What if it squared every day?
+
+1077
+00:50:39,970 --> 00:50:41,990
+Well, they're playing
+musical chairs at present.
+
+1078
+00:50:41,990 --> 00:50:43,615
+I concur with
+[? Mata. ?] There you go.
+
+1079
+00:50:46,240 --> 00:50:47,370
+Dane, what's your answer.
+
+1080
+00:50:47,870 --> 00:50:51,035
+[INTERPOSING VOICES]
+
+1081
+00:50:52,900 --> 00:50:55,030
+STUDENT: I'm still
+thinking on it.
+
+1082
+00:50:55,030 --> 00:50:55,780
+ANDREW BRIM: Good.
+
+1083
+00:50:55,780 --> 00:50:56,870
+Thinking is good.
+
+1084
+00:50:56,870 --> 00:51:00,307
+[INTERPOSING VOICES]
+
+1085
+00:51:04,235 --> 00:51:07,672
+[WHISTLING]
+
+1086
+00:51:22,402 --> 00:51:28,540
+[SINGING TO THE TUNE OF "HEY,
+JUDE"] N, N, N, N-N-N, N,
+
+1087
+00:51:28,540 --> 00:51:34,160
+N-N-N, N N squared
+
+1088
+00:51:34,160 --> 00:51:35,504
+You guys know that song?
+
+1089
+00:51:35,504 --> 00:51:40,933
+[SINGING "HEY, JUDE"] Nah,
+nah, nah, nah-nah-nah nah
+
+1090
+00:51:40,933 --> 00:51:42,350
+STUDENT: "Hey,
+Jude," [INAUDIBLE].
+
+1091
+00:51:42,350 --> 00:51:45,371
+ANDREW BRIM: Yeah, "Hey, Jude."
+
+1092
+00:51:45,371 --> 00:51:49,070
+[SINGING "HEY, JUDE"]
+Nah-nah-nah nah, Hey, Jude
+
+1093
+00:51:49,070 --> 00:51:49,765
+Hey, Jude!
+
+1094
+00:51:49,765 --> 00:51:50,460
+Hey, Jude!
+
+1095
+00:51:50,460 --> 00:51:50,960
+Hey, Jude!
+
+1096
+00:51:50,960 --> 00:51:51,320
+Hey, Jude!
+
+1097
+00:51:51,320 --> 00:51:51,945
+Hey, Jude, hey!
+
+1098
+00:51:51,945 --> 00:51:53,820
+(SPEAKING) 10 more seconds.
+
+1099
+00:51:53,820 --> 00:51:54,320
+"Hey, N."
+
+1100
+00:51:54,320 --> 00:51:54,862
+There you go.
+
+1101
+00:51:54,862 --> 00:51:55,362
+Awesome.
+
+1102
+00:51:55,362 --> 00:51:55,920
+Good.
+
+1103
+00:51:55,920 --> 00:51:59,385
+[LAUGHTER]
+
+1104
+00:52:02,360 --> 00:52:03,270
+All right.
+
+1105
+00:52:03,270 --> 00:52:05,540
+Who thinks they know the answer?
+
+1106
+00:52:05,540 --> 00:52:07,760
+Yes.
+
+1107
+00:52:07,760 --> 00:52:09,200
+STUDENT: N minus 1 squared.
+
+1108
+00:52:09,200 --> 00:52:11,183
+ANDREW BRIM: N minus 1 squared.
+
+1109
+00:52:14,975 --> 00:52:15,475
+No.
+
+1110
+00:52:18,740 --> 00:52:20,173
+Squared every day.
+
+1111
+00:52:24,720 --> 00:52:28,840
+It is-- [VAMPING] Did I
+put the answers down here?
+
+1112
+00:52:28,840 --> 00:52:35,740
+Yeah, 2 to the 2 to the n.
+
+1113
+00:52:35,740 --> 00:52:37,560
+2 to the 2 to the n.
+
+1114
+00:52:37,560 --> 00:52:39,660
+Which on day-- let's
+say it took them a week
+
+1115
+00:52:39,660 --> 00:52:41,530
+to pay their fines, seven days.
+
+1116
+00:52:41,530 --> 00:52:49,190
+Their fine would be
+2 to the 2 to the 7.
+
+1117
+00:52:49,190 --> 00:52:51,890
+Would be?
+
+1118
+00:52:51,890 --> 00:52:56,750
+3.4 times 10 to the 38.
+
+1119
+00:52:56,750 --> 00:52:58,650
+So they should pay it fast.
+
+1120
+00:52:58,650 --> 00:53:01,700
+[LAUGHTER]
+
+1121
+00:53:01,700 --> 00:53:04,280
+There you go.
+
+1122
+00:53:04,280 --> 00:53:13,620
+OK, so pretty much if you don't
+pay it in the first few days,
+
+1123
+00:53:13,620 --> 00:53:14,640
+just don't pay it.
+
+1124
+00:53:14,640 --> 00:53:16,300
+Just let them-- right?
+
+1125
+00:53:16,300 --> 00:53:18,870
+STUDENT: Just [INAUDIBLE].
+
+1126
+00:53:18,870 --> 00:53:21,180
+ANDREW BRIM: Yeah, let them
+try and charge you greater
+
+1127
+00:53:21,180 --> 00:53:23,280
+than the GDP of
+the entire Earth.
+
+1128
+00:53:23,280 --> 00:53:28,680
+STUDENT: [INAUDIBLE]
+
+1129
+00:53:28,680 --> 00:53:31,290
+ANDREW BRIM: Yes.
+
+1130
+00:53:31,290 --> 00:53:32,740
+Yes, it starts on Day 0.
+
+1131
+00:53:32,740 --> 00:53:34,740
+Yeah, good.
+
+1132
+00:53:34,740 --> 00:53:37,000
+Because 2 to the--
+exactly, 2 to the 1 power.
+
+1133
+00:53:37,000 --> 00:53:41,966
+Yep, OK, please give
+the order of complexity.
+
+1134
+00:53:45,232 --> 00:53:47,190
+You need to be able to
+do the least first four.
+
+1135
+00:53:47,190 --> 00:53:49,728
+The last, the fifth
+one, gets tricky.
+
+1136
+00:53:49,728 --> 00:53:52,020
+All right, what is the order
+of complexity of number 1?
+
+1137
+00:53:52,020 --> 00:53:53,230
+STUDENT: [INAUDIBLE]
+
+1138
+00:53:53,230 --> 00:53:53,980
+ANDREW BRIM: Good.
+
+1139
+00:53:53,980 --> 00:53:57,580
+By the way, this is like
+C code, I realize, but--
+
+1140
+00:53:57,580 --> 00:53:59,620
+and the declarations
+happened before this code.
+
+1141
+00:53:59,620 --> 00:54:02,260
+So just kind of roll with it.
+
+1142
+00:54:02,260 --> 00:54:03,388
+All right, sum equals zero.
+
+1143
+00:54:03,388 --> 00:54:04,430
+We'll call it pseudocode.
+
+1144
+00:54:04,430 --> 00:54:05,270
+There you go, pseudocode.
+
+1145
+00:54:05,270 --> 00:54:07,062
+And then I can do
+whatever the heck I want.
+
+1146
+00:54:07,062 --> 00:54:09,240
+There you go, pseudocode.
+
+1147
+00:54:09,240 --> 00:54:12,635
+Sum equals 0 for I
+equals 0, I less than n.
+
+1148
+00:54:15,460 --> 00:54:19,590
+Yeah, actually, I haven't shown
+you C-style for loops, have I?
+
+1149
+00:54:19,590 --> 00:54:21,340
+STUDENT: But we can
+do that with for, so--
+
+1150
+00:54:21,340 --> 00:54:23,050
+STUDENT: It's going to be for,
+and then [INAUDIBLE] before it
+
+1151
+00:54:23,050 --> 00:54:23,550
+goes?
+
+1152
+00:54:23,550 --> 00:54:26,590
+ANDREW BRIM: Yeah, this means
+it goes from 0 to less than N.
+
+1153
+00:54:26,590 --> 00:54:35,310
+It kicks out, and you increment
+i, Yeah, by 1 each time.
+
+1154
+00:54:35,310 --> 00:54:38,670
+Yep so I'm adding
+to sum each one.
+
+1155
+00:54:38,670 --> 00:54:39,907
+This does it, i, 0--
+
+1156
+00:54:39,907 --> 00:54:40,990
+we'll just do it together.
+
+1157
+00:54:40,990 --> 00:54:42,900
+0 to n minus 1 times--
+
+1158
+00:54:42,900 --> 00:54:46,890
+it is an order n operation.
+
+1159
+00:54:46,890 --> 00:54:47,890
+All right, the next one.
+
+1160
+00:54:47,890 --> 00:54:53,970
+I go from i, from 0 to n minus
+1, j from 0 to n minus 1.
+
+1161
+00:54:53,970 --> 00:54:56,530
+What's the order complexity
+of that nested for loop?
+
+1162
+00:54:56,530 --> 00:54:57,383
+STUDENT: N squared?
+
+1163
+00:54:57,383 --> 00:54:58,550
+ANDREW BRIM: Yep, n squared.
+
+1164
+00:54:58,550 --> 00:54:59,410
+All right, good.
+
+1165
+00:54:59,410 --> 00:55:00,910
+All right, now we're
+getting tricky.
+
+1166
+00:55:00,910 --> 00:55:04,740
+So for the first for loop,
+we go from 0 to n minus 1.
+
+1167
+00:55:04,740 --> 00:55:13,810
+Then, in the next for loop, we
+go from 0 to n squared minus 1.
+
+1168
+00:55:13,810 --> 00:55:19,820
+So we're doing n
+operations n squared times.
+
+1169
+00:55:19,820 --> 00:55:21,530
+n cubed, you got it--
+
+1170
+00:55:21,530 --> 00:55:23,870
+n cubed.
+
+1171
+00:55:23,870 --> 00:55:25,850
+All right, next one.
+
+1172
+00:55:25,850 --> 00:55:30,080
+For loop, we go from
+I is 0 to n minus 1,
+
+1173
+00:55:30,080 --> 00:55:34,003
+and then we go from j is 0 to i.
+
+1174
+00:55:37,520 --> 00:55:39,793
+So it'll look like this.
+
+1175
+00:55:39,793 --> 00:55:41,710
+Let me go to the board
+for the people on Zoom.
+
+1176
+00:55:51,040 --> 00:55:53,140
+Stop sharing-- there we go.
+
+1177
+00:55:53,140 --> 00:55:54,970
+There we go.
+
+1178
+00:55:54,970 --> 00:56:01,813
+So the first time, it would
+be like we're going i and j.
+
+1179
+00:56:01,813 --> 00:56:03,808
+STUDENT: [INAUDIBLE]
+
+1180
+00:56:03,808 --> 00:56:04,850
+ANDREW BRIM: What's that?
+
+1181
+00:56:04,850 --> 00:56:06,870
+STUDENT: I think you
+have to [INAUDIBLE]
+
+1182
+00:56:06,870 --> 00:56:08,350
+ANDREW BRIM: [INAUDIBLE].
+
+1183
+00:56:08,350 --> 00:56:10,515
+Please hold for me
+trying to fix stuff.
+
+1184
+00:56:13,030 --> 00:56:15,010
+How's that?
+
+1185
+00:56:15,010 --> 00:56:16,570
+There we go.
+
+1186
+00:56:16,570 --> 00:56:18,075
+So it would look like this.
+
+1187
+00:56:34,680 --> 00:56:36,436
+Here is the number
+of iterations.
+
+1188
+00:56:40,020 --> 00:56:43,170
+So each time, because the j
+loop is only going up to i,
+
+1189
+00:56:43,170 --> 00:56:47,700
+so it would be 1,
+2, 3, 4, 5, 6 , 7.
+
+1190
+00:56:47,700 --> 00:56:52,336
+So what would the order of
+complexity be on that algorithm?
+
+1191
+00:56:56,118 --> 00:56:56,910
+STUDENT: N squared.
+
+1192
+00:56:56,910 --> 00:56:57,868
+ANDREW BRIM: N squared.
+
+1193
+00:56:57,868 --> 00:56:59,130
+How did you know that?
+
+1194
+00:56:59,130 --> 00:57:01,130
+How come it's not
+n squared over 2?
+
+1195
+00:57:06,142 --> 00:57:07,600
+How come it's not
+n squared over 2?
+
+1196
+00:57:10,130 --> 00:57:12,067
+I have no idea.
+
+1197
+00:57:12,067 --> 00:57:12,900
+Actually, I do know.
+
+1198
+00:57:12,900 --> 00:57:14,340
+I do know why.
+
+1199
+00:57:14,340 --> 00:57:15,240
+[LAUGHTER]
+
+1200
+00:57:15,240 --> 00:57:17,160
+N squared over 2.
+
+1201
+00:57:17,160 --> 00:57:19,890
+What's the constant if
+it's n squared over 2?
+
+1202
+00:57:19,890 --> 00:57:20,760
+1/2.
+
+1203
+00:57:20,760 --> 00:57:21,780
+And constants fall off.
+
+1204
+00:57:21,780 --> 00:57:24,850
+So the constant
+of 1/2 falls off,
+
+1205
+00:57:24,850 --> 00:57:28,724
+it's an order n
+squared operation.
+
+1206
+00:57:28,724 --> 00:57:31,735
+Are your minds blown or bored?
+
+1207
+00:57:31,735 --> 00:57:32,360
+STUDENT: Blown.
+
+1208
+00:57:32,360 --> 00:57:35,780
+ANDREW BRIM: [LAUGHS]
+There you go.
+
+1209
+00:57:35,780 --> 00:57:36,280
+Great.
+
+1210
+00:57:39,370 --> 00:57:42,760
+OK, and then, you really
+don't need this one,
+
+1211
+00:57:42,760 --> 00:57:44,450
+but we'll just for fun.
+
+1212
+00:57:44,450 --> 00:57:48,190
+So we've got ii from 0 to
+n minus 1, j to i squared,
+
+1213
+00:57:48,190 --> 00:57:49,315
+and then k to j--
+
+1214
+00:57:53,930 --> 00:57:55,010
+to the fourth, I think.
+
+1215
+00:57:55,010 --> 00:57:56,968
+So i-- because, then this
+will be to the third.
+
+1216
+00:57:56,968 --> 00:57:58,760
+These two [? nests ?]
+will be to the third,
+
+1217
+00:57:58,760 --> 00:58:00,090
+and then you do an additional--
+
+1218
+00:58:00,090 --> 00:58:01,590
+actually, hang on,
+hang on, hang on.
+
+1219
+00:58:01,590 --> 00:58:02,820
+Fifth-- sorry, sorry, sorry.
+
+1220
+00:58:02,820 --> 00:58:08,040
+Because you've got I here, and
+then you've got j is i squared.
+
+1221
+00:58:08,040 --> 00:58:09,800
+And then you've got k to the j.
+
+1222
+00:58:09,800 --> 00:58:15,750
+So you've got n, n squared, n
+squared, which is- hopefully,
+
+1223
+00:58:15,750 --> 00:58:16,720
+I'm right.
+
+1224
+00:58:16,720 --> 00:58:19,600
+Fifth, yeah.
+
+1225
+00:58:19,600 --> 00:58:20,100
+Don't worry.
+
+1226
+00:58:20,100 --> 00:58:21,350
+That one won't be on the exam.
+
+1227
+00:58:21,350 --> 00:58:24,610
+That's just a go show your
+friends how cool you are.
+
+1228
+00:58:24,610 --> 00:58:29,310
+Now, that's a good-- that's
+a brain teaser, basically.
+
+1229
+00:58:29,310 --> 00:58:33,990
+OK, we talked about
+depth first, preorder.
+
+1230
+00:58:33,990 --> 00:58:35,980
+All right, pop quiz.
+
+1231
+00:58:35,980 --> 00:58:39,950
+How much time we
+got, 15 minutes?
+
+1232
+00:58:39,950 --> 00:58:48,130
+Do a inorder traversal
+of this tree where
+
+1233
+00:58:48,130 --> 00:58:50,200
+the operation is printing.
+
+1234
+00:58:50,200 --> 00:58:55,970
+So do an inorder
+traversal of this tree--
+
+1235
+00:58:55,970 --> 00:58:56,570
+no, sorry.
+
+1236
+00:58:56,570 --> 00:58:58,850
+Yeah, I just said it.
+
+1237
+00:58:58,850 --> 00:59:01,640
+And let me know what,
+what is the output?
+
+1238
+00:59:01,640 --> 00:59:04,645
+What is the output of a
+inorder traversal of this tree?
+
+1239
+00:59:08,130 --> 00:59:11,820
+Remember, inorder. (SINGING) Why
+don't you just meet me in the--
+
+1240
+00:59:11,820 --> 00:59:14,544
+So what's going to be
+in the middle somewhere?
+
+1241
+00:59:14,544 --> 00:59:15,870
+STUDENT: [INAUDIBLE] the roots?
+
+1242
+00:59:15,870 --> 00:59:18,223
+ANDREW BRIM: The roots, yep.
+
+1243
+00:59:18,223 --> 00:59:20,140
+People on Zoom, go ahead
+and throw your answer
+
+1244
+00:59:20,140 --> 00:59:21,620
+in the Zoom chat.
+
+1245
+00:59:21,620 --> 00:59:26,758
+Give me a preorder
+traversal of this tree.
+
+1246
+00:59:26,758 --> 00:59:29,085
+STUDENT: [INAUDIBLE]
+
+1247
+00:59:29,085 --> 00:59:30,210
+ANDREW BRIM: Pre-- inorder.
+
+1248
+00:59:33,010 --> 00:59:33,860
+inorder.
+
+1249
+00:59:33,860 --> 00:59:36,723
+What's the very first thing
+that's going to print here?
+
+1250
+00:59:36,723 --> 00:59:37,710
+STUDENT: A.
+
+1251
+00:59:37,710 --> 00:59:39,213
+ANDREW BRIM: A, yeah.
+
+1252
+00:59:39,213 --> 00:59:40,630
+What's the very
+first thing that's
+
+1253
+00:59:40,630 --> 00:59:43,990
+going to print in any
+inorder traversal?
+
+1254
+00:59:43,990 --> 00:59:46,570
+The minimum.
+
+1255
+00:59:46,570 --> 00:59:52,435
+So A-- well, I'll
+let you guys do it.
+
+1256
+00:59:52,435 --> 00:59:56,970
+(SINGING) Why don't you just
+print the root in the middle?
+
+1257
+00:59:56,970 --> 00:59:59,050
+Just sing that during the test.
+
+1258
+00:59:59,050 --> 01:00:02,195
+(SINGING) Why don't you just
+print the root in the middle?
+
+1259
+01:00:06,780 --> 01:00:08,997
+That's what I do.
+
+1260
+01:00:08,997 --> 01:00:09,955
+I do that all the time.
+
+1261
+01:00:30,978 --> 01:00:34,720
+(SINGING) Why don't you just
+print the root in the middle?
+
+1262
+01:00:34,720 --> 01:00:38,560
+STUDENT: [INAUDIBLE]
+
+1263
+01:00:38,560 --> 01:00:40,560
+ANDREW BRIM: What song
+is this called? (SINGING)
+
+1264
+01:00:40,560 --> 01:00:44,076
+Why don't you print the
+root very first thing?
+
+1265
+01:00:44,076 --> 01:00:44,826
+STUDENT: Preorder.
+
+1266
+01:00:44,826 --> 01:00:45,576
+STUDENT: Preorder.
+
+1267
+01:00:45,576 --> 01:00:50,030
+ANDREW BRIM: That's the
+preorder song, exactly.
+
+1268
+01:00:50,030 --> 01:00:51,980
+And then, what's the
+postorder song. (SINGING)
+
+1269
+01:00:51,980 --> 01:00:54,085
+Why don't you just
+print the root--
+
+1270
+01:00:54,085 --> 01:00:55,010
+STUDENT: At the end?
+
+1271
+01:00:55,010 --> 01:00:55,718
+ANDREW BRIM: Yes!
+
+1272
+01:00:55,718 --> 01:00:56,270
+[LAUGHTER]
+
+1273
+01:00:56,270 --> 01:00:57,908
+I knew you guys
+knew these songs!
+
+1274
+01:00:57,908 --> 01:01:00,450
+STUDENT: Printing the root in
+the middle is just for balance?
+
+1275
+01:01:03,640 --> 01:01:05,090
+ANDREW BRIM: For balanced trees?
+
+1276
+01:01:05,090 --> 01:01:07,240
+I mean, it would
+always be in the middle
+
+1277
+01:01:07,240 --> 01:01:13,357
+unless there was no left subtree
+or no right subtree, yeah.
+
+1278
+01:01:13,357 --> 01:01:15,190
+Yeah, if there was no
+right or left subtree,
+
+1279
+01:01:15,190 --> 01:01:17,655
+then it would be not
+necessarily in the middle.
+
+1280
+01:01:17,655 --> 01:01:19,270
+STUDENT: OK.
+
+1281
+01:01:19,270 --> 01:01:21,520
+ANDREW BRIM: Who thinks they
+have this amazing inorder
+
+1282
+01:01:21,520 --> 01:01:24,010
+traversal?
+
+1283
+01:01:24,010 --> 01:01:25,350
+You need another minute?
+
+1284
+01:01:25,350 --> 01:01:29,620
+(SINGING) Why don't you
+just take another minute.
+
+1285
+01:01:29,620 --> 01:01:32,565
+It will be worth your
+time not to screw this up.
+
+1286
+01:01:32,565 --> 01:01:35,210
+[LAUGHTER]
+
+1287
+01:01:35,210 --> 01:01:37,580
+Do all three.
+
+1288
+01:01:37,580 --> 01:01:42,650
+If you got inorder done,
+try preorder and postorder.
+
+1289
+01:01:42,650 --> 01:01:43,470
+Who's got it done?
+
+1290
+01:01:43,470 --> 01:01:45,012
+Do we need to review
+this as a class?
+
+1291
+01:01:47,197 --> 01:01:48,030
+Take another minute.
+
+1292
+01:01:58,648 --> 01:01:59,315
+Good job, Colin.
+
+1293
+01:02:07,494 --> 01:02:09,907
+STUDENT: [INAUDIBLE]
+
+1294
+01:02:09,907 --> 01:02:10,740
+ANDREW BRIM: Agreed.
+
+1295
+01:02:10,740 --> 01:02:12,330
+Oh, yeah, never mind.
+
+1296
+01:02:12,330 --> 01:02:13,300
+Yep, there we go.
+
+1297
+01:02:13,300 --> 01:02:13,800
+Colin.
+
+1298
+01:02:30,698 --> 01:02:36,300
+(SINGING) I'm losing
+my mind just a little.
+
+1299
+01:02:36,300 --> 01:02:39,700
+What's your guys favorite song?
+
+1300
+01:02:39,700 --> 01:02:43,020
+What's your guys'-- do you
+guys have favorite songs?
+
+1301
+01:02:43,020 --> 01:02:44,378
+Too hard?
+
+1302
+01:02:44,378 --> 01:02:46,050
+STUDENT: Yeah, it's too hard.
+
+1303
+01:02:46,050 --> 01:02:48,480
+ANDREW BRIM: If I was to
+look at your Amazon Music,
+
+1304
+01:02:48,480 --> 01:02:51,490
+what would be the number one
+played song in Amazon Music?
+
+1305
+01:02:51,490 --> 01:02:53,390
+STUDENT: We don't
+use Amazon music.
+
+1306
+01:02:53,390 --> 01:02:55,555
+[LAUGHTER]
+
+1307
+01:02:55,555 --> 01:02:56,430
+ANDREW BRIM: Spotify?
+
+1308
+01:02:56,430 --> 01:02:57,722
+Do you pay for Spotify, though?
+
+1309
+01:02:57,722 --> 01:02:58,793
+[INTERPOSING VOICES]
+
+1310
+01:02:58,793 --> 01:02:59,460
+ANDREW BRIM: No?
+
+1311
+01:02:59,460 --> 01:02:59,960
+You do?
+
+1312
+01:02:59,960 --> 01:03:01,878
+How much do you pay for Spotify?
+
+1313
+01:03:01,878 --> 01:03:02,920
+STUDENT: 5 bucks a month.
+
+1314
+01:03:02,920 --> 01:03:03,725
+ANDREW BRIM: 5 bucks a month?
+
+1315
+01:03:03,725 --> 01:03:05,265
+STUDENT: And I get Hulu with it.
+
+1316
+01:03:05,265 --> 01:03:06,810
+ANDREW BRIM: You
+get Hulu with it?
+
+1317
+01:03:06,810 --> 01:03:08,538
+STUDENT: And [INAUDIBLE].
+
+1318
+01:03:08,538 --> 01:03:09,455
+ANDREW BRIM: Showtime?
+
+1319
+01:03:12,120 --> 01:03:15,360
+Well, I like Amazon Music.
+
+1320
+01:03:15,360 --> 01:03:16,950
+STUDENT: What's your top song.
+
+1321
+01:03:16,950 --> 01:03:17,900
+ANDREW BRIM: I'll
+show you my top song.
+
+1322
+01:03:17,900 --> 01:03:18,460
+You ready?
+
+1323
+01:03:30,100 --> 01:03:31,200
+Here's my top song.
+
+1324
+01:03:39,215 --> 01:03:40,340
+STUDENT: Is that your song?
+
+1325
+01:03:42,980 --> 01:03:45,878
+[LAUGHTER]
+
+1326
+01:03:45,878 --> 01:03:48,355
+ANDREW BRIM: I don't know
+what's so funny about all this.
+
+1327
+01:03:51,530 --> 01:03:52,580
+STUDENT: Is it on pause?
+
+1328
+01:03:52,580 --> 01:03:53,340
+STUDENT: Are you
+gonna play it for us?
+
+1329
+01:03:53,340 --> 01:03:55,050
+ANDREW BRIM: Yeah, no, I can't.
+
+1330
+01:03:55,050 --> 01:03:57,530
+You guys need it-- inorder
+traversal is much more important
+
+1331
+01:03:57,530 --> 01:03:58,375
+than you guys knowing--
+
+1332
+01:03:58,375 --> 01:03:58,875
+[LAUGHTER]
+
+1333
+01:03:58,875 --> 01:04:00,135
+[INTERPOSING VOICES]
+
+1334
+01:04:00,135 --> 01:04:06,233
+ANDREW BRIM: [LAUGHS] I
+need to redo the lyrics.
+
+1335
+01:04:06,233 --> 01:04:08,400
+So if I listen to it right
+now, it'll drive me nuts.
+
+1336
+01:04:08,400 --> 01:04:10,350
+So you can listen to
+it in your own time.
+
+1337
+01:04:10,350 --> 01:04:10,920
+How's that?
+
+1338
+01:04:10,920 --> 01:04:12,003
+STUDENT: Is it on Spotify?
+
+1339
+01:04:12,003 --> 01:04:15,380
+ANDREW BRIM: Yeah, yeah.
+
+1340
+01:04:15,380 --> 01:04:17,660
+Now, inevitably, someone's
+going to play it right now.
+
+1341
+01:04:17,660 --> 01:04:18,270
+That's right.
+
+1342
+01:04:18,270 --> 01:04:18,540
+You play it
+
+1343
+01:04:18,590 --> 01:04:19,930
+STUDENT: We're not going
+to be attention anyways.
+
+1344
+01:04:19,930 --> 01:04:20,930
+ANDREW BRIM: All
+right, so now we've--
+
+1345
+01:04:20,930 --> 01:04:23,095
+I've lost you on all
+things inorder traversal?
+
+1346
+01:04:23,095 --> 01:04:24,590
+[LAUGHTER]
+
+1347
+01:04:24,590 --> 01:04:28,940
+All right, let's do the
+answer for inorder traversal.
+
+1348
+01:04:28,940 --> 01:04:33,140
+Remember, inorder traversal
+is you go left, print,
+
+1349
+01:04:33,140 --> 01:04:36,090
+go right, OK?
+
+1350
+01:04:36,090 --> 01:04:37,290
+So we go left printing.
+
+1351
+01:04:37,290 --> 01:04:41,340
+So the first thing you'll always
+print in inorder is the min.
+
+1352
+01:04:41,340 --> 01:04:47,320
+So we go left, go left A, go
+back up, print plus, go right.
+
+1353
+01:04:47,320 --> 01:04:50,560
+Do we print the star,
+the multiply yet?
+
+1354
+01:04:50,560 --> 01:04:51,060
+No.
+
+1355
+01:04:51,060 --> 01:04:53,800
+Go left, print B, then come up.
+
+1356
+01:04:53,800 --> 01:04:55,270
+Then print the multiply.
+
+1357
+01:04:55,270 --> 01:04:56,560
+Go right.
+
+1358
+01:04:56,560 --> 01:04:59,580
+C is children are null,
+null, so we print c.
+
+1359
+01:04:59,580 --> 01:05:05,040
+Then we return, return, return,
+and now we print the root.
+
+1360
+01:05:05,040 --> 01:05:09,650
+So what character is the root
+going to get printed here?
+
+1361
+01:05:09,650 --> 01:05:11,580
+1, 2, 3, 4, 5, 6.
+
+1362
+01:05:11,580 --> 01:05:13,500
+6, the root will get printed.
+
+1363
+01:05:13,500 --> 01:05:17,020
+Then we do the same
+thing to the right.
+
+1364
+01:05:17,020 --> 01:05:18,743
+We print-- or, you
+guys tell me, what's
+
+1365
+01:05:18,743 --> 01:05:20,160
+the-- when I go
+right here, what's
+
+1366
+01:05:20,160 --> 01:05:21,618
+the first thing
+I'm going to print?
+
+1367
+01:05:21,618 --> 01:05:22,140
+STUDENT: D.
+
+1368
+01:05:22,140 --> 01:05:23,015
+ANDREW BRIM: D, good.
+
+1369
+01:05:23,015 --> 01:05:31,840
+So D times E plus F
+times G. You got it.
+
+1370
+01:05:31,840 --> 01:05:32,780
+Good, all right.
+
+1371
+01:05:32,780 --> 01:05:35,620
+How about preorder traversal?
+
+1372
+01:05:35,620 --> 01:05:39,070
+Preorder, remember, we
+print first, then we go.
+
+1373
+01:05:39,070 --> 01:05:42,060
+So we go plus, yep, plus--
+
+1374
+01:05:42,060 --> 01:05:43,240
+STUDENT: A.
+
+1375
+01:05:43,240 --> 01:05:48,700
+ANDREW BRIM: A, times B,
+C, back, back, back, back,
+
+1376
+01:05:48,700 --> 01:05:57,380
+times plus, times D,
+E, F, G. You got it?
+
+1377
+01:05:57,380 --> 01:05:57,970
+Really fast.
+
+1378
+01:05:57,970 --> 01:05:58,730
+We'll do it again slower?
+
+1379
+01:05:58,730 --> 01:05:59,840
+Let's do it again slower.
+
+1380
+01:05:59,840 --> 01:06:02,870
+Remember, you print first.
+
+1381
+01:06:02,870 --> 01:06:06,600
+So we print plus first, go left.
+
+1382
+01:06:06,600 --> 01:06:09,720
+Print plus first, go left.
+
+1383
+01:06:09,720 --> 01:06:12,320
+Print A first, go
+left, go right.
+
+1384
+01:06:12,320 --> 01:06:14,220
+They're nulls.
+
+1385
+01:06:14,220 --> 01:06:15,140
+Return.
+
+1386
+01:06:15,140 --> 01:06:17,800
+Now we go-- we've
+already gone left.
+
+1387
+01:06:17,800 --> 01:06:19,740
+You guys with me on,
+we're going right next?
+
+1388
+01:06:19,740 --> 01:06:21,720
+STUDENT: So we have 2
+plus n is [INAUDIBLE]?
+
+1389
+01:06:21,720 --> 01:06:23,520
+ANDREW BRIM: Yeah, exactly.
+
+1390
+01:06:23,520 --> 01:06:26,610
+2 plus n ends in a, is what
+Lucy said for those on Zoom.
+
+1391
+01:06:26,610 --> 01:06:28,140
+Then we go right.
+
+1392
+01:06:28,140 --> 01:06:29,130
+We get to a plus.
+
+1393
+01:06:29,130 --> 01:06:29,920
+What do we do?
+
+1394
+01:06:29,920 --> 01:06:30,210
+STUDENT: [INAUDIBLE]
+
+1395
+01:06:30,210 --> 01:06:31,127
+ANDREW BRIM: Preorder.
+
+1396
+01:06:31,127 --> 01:06:33,100
+We print it-- yep,
+print the times.
+
+1397
+01:06:33,100 --> 01:06:35,770
+Then we go left,
+print b, return.
+
+1398
+01:06:35,770 --> 01:06:37,690
+Then we go right,
+print c, return.
+
+1399
+01:06:37,690 --> 01:06:40,717
+Now I'm coming all the way
+back up, return, return,
+
+1400
+01:06:40,717 --> 01:06:41,550
+and I'm at the root.
+
+1401
+01:06:41,550 --> 01:06:43,790
+Do I print the root now?
+
+1402
+01:06:43,790 --> 01:06:46,000
+No, we already printed it--
+preorder traversal, OK?
+
+1403
+01:06:46,000 --> 01:06:49,450
+And then we do the same
+thing on the right subtree.
+
+1404
+01:06:49,450 --> 01:06:52,220
+Print the times, go left.
+
+1405
+01:06:52,220 --> 01:06:54,890
+Print the plus, go left.
+
+1406
+01:06:54,890 --> 01:06:57,440
+Print the times, go left.
+
+1407
+01:06:57,440 --> 01:06:59,900
+Print the D, children
+are both null.
+
+1408
+01:06:59,900 --> 01:07:01,280
+Return, go right.
+
+1409
+01:07:01,280 --> 01:07:03,230
+Print the E, children
+are both null.
+
+1410
+01:07:03,230 --> 01:07:03,940
+Return.
+
+1411
+01:07:03,940 --> 01:07:05,180
+Return to the plus.
+
+1412
+01:07:05,180 --> 01:07:06,350
+Go right.
+
+1413
+01:07:06,350 --> 01:07:08,330
+Print the F. Children
+are both null.
+
+1414
+01:07:08,330 --> 01:07:09,190
+Return.
+
+1415
+01:07:09,190 --> 01:07:11,150
+Return, we've
+already printed this.
+
+1416
+01:07:11,150 --> 01:07:11,870
+Go right.
+
+1417
+01:07:11,870 --> 01:07:13,880
+Print the G. Children
+are both null.
+
+1418
+01:07:13,880 --> 01:07:16,900
+Return, return-- preorder.
+
+1419
+01:07:20,230 --> 01:07:21,880
+Postorder.
+
+1420
+01:07:21,880 --> 01:07:24,730
+What's the last thing we're
+going to print in a postorder
+
+1421
+01:07:24,730 --> 01:07:25,280
+traversal?
+
+1422
+01:07:25,280 --> 01:07:26,530
+STUDENT: The root [INAUDIBLE]?
+
+1423
+01:07:26,530 --> 01:07:30,105
+ANDREW BRIM: The root, yeah.
+
+1424
+01:07:30,105 --> 01:07:30,980
+I just had a thought.
+
+1425
+01:07:30,980 --> 01:07:32,350
+Hang on a second.
+
+1426
+01:07:32,350 --> 01:07:34,570
+I'll finish this, then
+I'll show you my thoughts.
+
+1427
+01:07:34,570 --> 01:07:36,430
+We have six minutes left.
+
+1428
+01:07:36,430 --> 01:07:38,360
+Postorder-- so we
+go left, go right.
+
+1429
+01:07:38,360 --> 01:07:40,120
+So we go left, go left.
+
+1430
+01:07:40,120 --> 01:07:43,090
+I go left and right on my
+nulls, and then print A. Then
+
+1431
+01:07:43,090 --> 01:07:43,602
+I come back.
+
+1432
+01:07:43,602 --> 01:07:44,560
+I don't print plus yet.
+
+1433
+01:07:44,560 --> 01:07:46,643
+Remember, I have to go
+left and right, then print.
+
+1434
+01:07:46,643 --> 01:07:47,780
+Go right.
+
+1435
+01:07:47,780 --> 01:07:48,710
+Go left.
+
+1436
+01:07:48,710 --> 01:07:49,670
+Both children null.
+
+1437
+01:07:49,670 --> 01:07:51,200
+Print B. Return.
+
+1438
+01:07:51,200 --> 01:07:54,860
+Go right, C. Both children
+null, print, return.
+
+1439
+01:07:54,860 --> 01:07:58,570
+Now, what's the first
+operator I'm going to print?
+
+1440
+01:07:58,570 --> 01:08:00,520
+This times right here, yep.
+
+1441
+01:08:00,520 --> 01:08:02,330
+This times return.
+
+1442
+01:08:02,330 --> 01:08:03,560
+This plus return.
+
+1443
+01:08:03,560 --> 01:08:05,180
+Do I print this plus yet?
+
+1444
+01:08:05,180 --> 01:08:06,700
+No, not yet.
+
+1445
+01:08:06,700 --> 01:08:07,930
+Root is printed last.
+
+1446
+01:08:07,930 --> 01:08:09,740
+Go. right-- OK, now I'm here.
+
+1447
+01:08:09,740 --> 01:08:11,180
+Go left, I'm here.
+
+1448
+01:08:11,180 --> 01:08:12,170
+Go left, I'm here.
+
+1449
+01:08:12,170 --> 01:08:13,100
+Go left.
+
+1450
+01:08:13,100 --> 01:08:14,990
+| and right children
+are both null.
+
+1451
+01:08:14,990 --> 01:08:17,479
+Print D. Return here.
+
+1452
+01:08:17,479 --> 01:08:18,319
+Don't print it yet.
+
+1453
+01:08:18,319 --> 01:08:19,010
+Go right.
+
+1454
+01:08:19,010 --> 01:08:19,760
+Go right.
+
+1455
+01:08:19,760 --> 01:08:20,844
+E's children both null.
+
+1456
+01:08:20,844 --> 01:08:22,430
+Print E. Return.
+
+1457
+01:08:22,430 --> 01:08:24,950
+Now that I've gone
+all left children,
+
+1458
+01:08:24,950 --> 01:08:27,010
+all right, I print this times.
+
+1459
+01:08:27,010 --> 01:08:27,890
+Return.
+
+1460
+01:08:27,890 --> 01:08:28,479
+Go right.
+
+1461
+01:08:28,479 --> 01:08:30,710
+Print F. Come back
+up, print plus.
+
+1462
+01:08:30,710 --> 01:08:34,189
+Return, go right,
+print G. Return.
+
+1463
+01:08:34,189 --> 01:08:35,149
+Print star.
+
+1464
+01:08:35,149 --> 01:08:35,939
+Return.
+
+1465
+01:08:35,939 --> 01:08:40,430
+Very last, I print the root--
+
+1466
+01:08:40,430 --> 01:08:42,020
+postorder traversal.
+
+1467
+01:08:42,020 --> 01:08:45,350
+This, if you did that,
+if you did a postorder
+
+1468
+01:08:45,350 --> 01:08:49,819
+traversal of this tree, what
+mathematical expression notation
+
+1469
+01:08:49,819 --> 01:08:50,830
+would it be in?
+
+1470
+01:08:50,830 --> 01:08:51,830
+STUDENT: Reverse Polish.
+
+1471
+01:08:51,830 --> 01:08:54,649
+ANDREW BRIM: Reverse
+Polish Notation, exactly.
+
+1472
+01:08:54,649 --> 01:08:57,890
+A postorder of this, postorder
+traversal of this tree,
+
+1473
+01:08:57,890 --> 01:09:00,600
+would get you the same thing
+as Reverse Polish Notation.
+
+1474
+01:09:00,600 --> 01:09:04,330
+Remember, Po-Po, P-O-P-O.
+Postorder, Polish notation.
+
+1475
+01:09:07,640 --> 01:09:08,850
+All right, that is it.
+
+1476
+01:09:08,850 --> 01:09:10,475
+One last thing I want
+to show you guys.
+
+1477
+01:09:12,910 --> 01:09:15,729
+The University of
+San Francisco--
+
+1478
+01:09:15,729 --> 01:09:24,319
+or University of California,
+San Francisco-- has a--
+
+1479
+01:09:24,319 --> 01:09:24,819
+let's see.
+
+1480
+01:09:24,819 --> 01:09:27,380
+No, it's a tree.
+
+1481
+01:09:27,380 --> 01:09:30,350
+Let's see here,
+binary search tree.
+
+1482
+01:09:30,350 --> 01:09:32,540
+There we go.
+
+1483
+01:09:32,540 --> 01:09:35,630
+They did a really good job with
+a-- here we go-- visualization.
+
+1484
+01:09:38,160 --> 01:09:48,180
+OK, and if you get rid of the
+BST, the datastructure.html,
+
+1485
+01:09:48,180 --> 01:09:50,340
+and then click on--
+
+1486
+01:09:50,340 --> 01:09:52,560
+you've kind of got to
+dig around a little bit.
+
+1487
+01:09:52,560 --> 01:09:57,480
+Here we go, it gives
+you a really good visual
+
+1488
+01:09:57,480 --> 01:10:01,690
+on how all of these work.
+
+1489
+01:10:01,690 --> 01:10:04,780
+And I'm looking for like
+preorder, postorder, or inorder.
+
+1490
+01:10:07,600 --> 01:10:09,255
+Control-F is your best bet.
+
+1491
+01:10:16,880 --> 01:10:22,695
+So Insert-- yeah, It's not
+doing traversals here, though.
+
+1492
+01:10:22,695 --> 01:10:23,820
+Well, this is still useful.
+
+1493
+01:10:23,820 --> 01:10:24,670
+So you can just--
+
+1494
+01:10:24,670 --> 01:10:26,675
+you can just add a bunch
+of stuff to a tree.
+
+1495
+01:10:42,100 --> 01:10:43,930
+OK, now you can do like a find.
+
+1496
+01:10:43,930 --> 01:10:46,970
+Find the-- let's say, find
+something that's not there.
+
+1497
+01:10:46,970 --> 01:10:47,583
+Find the 35.
+
+1498
+01:10:51,190 --> 01:10:51,990
+Element not found.
+
+1499
+01:10:51,990 --> 01:10:52,960
+Actually, what does print do?
+
+1500
+01:10:52,960 --> 01:10:53,490
+Let's see here.
+
+1501
+01:10:53,490 --> 01:10:54,365
+Or, you guys tell me.
+
+1502
+01:10:54,365 --> 01:10:58,900
+On this website, what
+traversal is the tree printed?
+
+1503
+01:10:58,900 --> 01:10:59,650
+Here we go, ready?
+
+1504
+01:11:03,306 --> 01:11:04,385
+STUDENT: Inorder.
+
+1505
+01:11:04,385 --> 01:11:05,260
+ANDREW BRIM: Inorder.
+
+1506
+01:11:05,260 --> 01:11:06,966
+How do you know that?
+
+1507
+01:11:06,966 --> 01:11:07,883
+STUDENT: [INAUDIBLE]
+
+1508
+01:11:07,883 --> 01:11:09,425
+ANDREW BRIM: Yeah,
+let's do it again.
+
+1509
+01:11:15,770 --> 01:11:16,910
+Perfect.
+
+1510
+01:11:16,910 --> 01:11:19,220
+I wonder if I can
+change that traversal.
+
+1511
+01:11:19,220 --> 01:11:21,080
+Doesn't look like I can.
+
+1512
+01:11:21,080 --> 01:11:22,470
+Yeah, but it was inorder.
+
+1513
+01:11:22,470 --> 01:11:24,300
+So go left, print go right.
+
+1514
+01:11:24,300 --> 01:11:27,870
+So go left, go left,
+print, print, print.
+
+1515
+01:11:27,870 --> 01:11:32,040
+Go right, left,
+print, print, print.
+
+1516
+01:11:32,040 --> 01:11:36,510
+And Dane puts something
+awesome in young Daniel--
+
+1517
+01:11:36,510 --> 01:11:38,470
+hey, he was the author
+of a book I looked at.
+
+1518
+01:11:38,470 --> 01:11:40,610
+He's good.
+
+1519
+01:11:40,610 --> 01:11:41,960
+There you go.
+
+1520
+01:11:41,960 --> 01:11:45,333
+All right, final
+questions for the exam.
+
+1521
+01:11:45,333 --> 01:11:48,152
+[HAND DRUMROLL]
+
+1522
+01:11:52,420 --> 01:11:55,215
+Tanner, you can play
+music if it's my song.
+
+1523
+01:11:55,215 --> 01:11:56,580
+[LAUGHTER]
+
+1524
+01:11:56,580 --> 01:11:58,040
+Here.
+
+1525
+01:11:58,040 --> 01:12:00,040
+STUDENT: Possibly open
+enough on Tuesday?
+
+1526
+01:12:00,040 --> 01:12:01,430
+ANDREW BRIM: I gotta listen.
+
+1527
+01:12:01,430 --> 01:12:02,990
+Can I open up on Tuesday?
+
+1528
+01:12:02,990 --> 01:12:04,190
+Maybe, let me know.
+
+1529
+01:12:04,190 --> 01:12:06,870
+DM me.
+
+1530
+01:12:06,870 --> 01:12:09,330
+STUDENT: Dr. Brim, you
+can do pre and postorder
+
+1531
+01:12:09,330 --> 01:12:10,442
+with that link.
+
+1532
+01:12:10,442 --> 01:12:11,400
+ANDREW BRIM: OK, great.
+
+1533
+01:12:11,400 --> 01:12:11,942
+Thanks, Dane.
+
+1534
+01:12:14,720 --> 01:12:15,340
+Here we go.
+
+1535
+01:12:18,440 --> 01:12:20,730
+To close-- actually, hang on.
+
+1536
+01:12:20,730 --> 01:12:22,815
+Let's do YouTube.
+
+1537
+01:12:22,815 --> 01:12:23,315
+YouTube.
+
+1538
+01:12:26,085 --> 01:12:29,050
+Oh, I don't know
+what I'm looking at.
+
+1539
+01:12:29,050 --> 01:12:29,820
+Let's see here.
+
+1540
+01:12:33,650 --> 01:12:35,717
+STUDENT: Oh, we have
+to [INAUDIBLE] manual.
+
+1541
+01:12:35,717 --> 01:12:36,550
+ANDREW BRIM: I know.
+
+1542
+01:12:36,550 --> 01:12:38,150
+That's, I posted--
+
+1543
+01:12:38,150 --> 01:12:39,453
+I post the earlier versions.
+
+1544
+01:12:42,150 --> 01:12:45,690
+Well, I'm still [AUDIO OUT] But
+I get busy with other stuff,
+
+1545
+01:12:45,690 --> 01:12:46,190
+too.
+
+1546
+01:12:46,190 --> 01:12:46,690
+So.
+
+1547
+01:12:50,280 --> 01:12:50,800
+here we go.
+
+1548
+01:12:50,800 --> 01:12:51,820
+Now, let's crank up the views.
+
+1549
+01:12:51,820 --> 01:12:52,320
+Here we go.
+
+1550
+01:12:57,637 --> 01:12:58,970
+[ANDY BRIM, "I BARELY KNEW YOU"]
+
+1551
+01:12:58,970 --> 01:13:00,512
+All right, there's
+our closing music.
+
+1552
+01:13:03,340 --> 01:13:05,260
+Sorry it's so quiet.
+
+1553
+01:13:05,260 --> 01:13:08,690
+And I will perform a
+preorder traversal.
+
+1554
+01:13:08,690 --> 01:13:09,210
+Here we go.
+
+1555
+01:13:12,470 --> 01:13:13,405
+What's the answer?
+
+1556
+01:13:13,405 --> 01:13:13,905
+This guy.
+
+1557
+01:13:17,072 --> 01:13:23,623
+(SINGING) I barely knew you
+
+1558
+01:13:23,623 --> 01:13:24,540
+(SPEAKING) Stay right.
+
+1559
+01:13:24,540 --> 01:13:27,530
+(SINGING) I barely knew you
+
+1560
+01:13:27,530 --> 01:13:30,030
+(SPEAKING) I don't know why it
+got louder, but there you go.
+
+1561
+01:13:30,030 --> 01:13:31,550
+[LAUGHTER]
+
+1562
+01:13:31,550 --> 01:13:35,357
+(SINGING) I barely knew you,
+is what I thought with--
+
+1563
+01:13:35,357 --> 01:13:37,190
+(SPEAKING) All love
+songs are about my wife.
+
+1564
+01:13:37,190 --> 01:13:38,710
+Just let me get that out there.
+
+1565
+01:13:38,710 --> 01:13:39,735
+Get that out there fast.
+
+1566
+01:13:39,735 --> 01:13:42,460
+(SINGING) I barely knew
+you, is what I thought
+
+1567
+01:13:42,460 --> 01:13:45,700
+When I asked you
+out and shared you
+
+1568
+01:13:45,700 --> 01:13:50,440
+(SPEAKING) All right, so
+here's a inorder traversal.
+
+1569
+01:13:50,440 --> 01:13:51,858
+There you go.
+
+1570
+01:13:51,858 --> 01:13:53,900
+I was hoping it would,
+like, go through it, but--
+
+1571
+01:13:57,150 --> 01:13:58,150
+all right, there you go.
+
+1572
+01:13:58,150 --> 01:13:59,720
+Thank you, Dane.
+
+1573
+01:13:59,720 --> 01:14:01,650
+Good luck, you guys.
+
+1574
+01:14:01,650 --> 01:14:03,540
+You guys got this thing.
+
+1575
+01:14:03,540 --> 01:14:07,970
+I want to see 50
+A's on this exam.
+
+1576
+01:14:07,970 --> 01:14:12,330
+(SINGING) You barely know
+me, but I want to see you
+
+1577
+01:14:12,330 --> 01:14:16,467
+[INAUDIBLE] you
+know, she's my baby
+
+1578
+01:14:16,467 --> 01:14:17,550
+(SPEAKING) I wrote it all.
+
+1579
+01:14:17,550 --> 01:14:19,740
+Lyrics, music, everything.
+
+1580
+01:14:19,740 --> 01:14:22,420
+I'm gonna change-- what
+you hear now is the melody.
+
+1581
+01:14:22,420 --> 01:14:30,390
+I'm going to make that a harmony
+and then redo the lyrics.
+
+1582
+01:14:30,390 --> 01:14:33,070
+All the vocals,
+everything, everything.
+
+1583
+01:14:35,750 --> 01:14:36,660
+You know, YouTube?
+
+1584
+01:14:36,660 --> 01:14:38,210
+YouTube takes anybody, Lucy.
+
+1585
+01:14:44,710 --> 01:14:45,495
+Thanks, guys.
+
+1586
+01:14:48,250 --> 01:14:49,810
+See ya.
+
+1587
+01:14:49,810 --> 01:14:50,570
+Thanks, Isaac.
+
+1588
+01:14:50,570 --> 01:14:51,340
+See you, buddy.
+
+1589
+01:14:51,340 --> 01:14:52,340
+Thanks, guys.
+
+1590
+01:14:52,340 --> 01:14:53,790
+Good luck on the exam.
+
+1591
+01:14:53,790 --> 01:14:54,870
+You guys got this.
+
+1592
+01:14:58,120 --> 01:15:00,640
+Thanks, you guys.
+
+1593
+01:15:00,640 --> 01:15:01,976
+Good luck, Reagan.
+
+1594
+01:15:01,976 --> 01:15:06,840
+(SINGING) I barely knew you.
+
+1595
+01:15:06,840 --> 01:15:08,220
+And now you're all that I--
+
+1596
+01:15:08,220 --> 01:15:09,512
+(SPEAKING) Good luck, you guys.
+
+1597
+01:15:09,512 --> 01:15:11,940
+You got this.
+
+1598
+01:15:11,940 --> 01:15:15,360
+Three A's right there.
+
+1599
+01:15:15,360 --> 01:15:16,090
+All right.
+
+1600
+01:15:16,090 --> 01:15:17,340
+See you, buddy.
+
+1601
+01:15:17,340 --> 01:15:17,980
+Thanks, buddy.
+
+1602
+01:15:17,980 --> 01:15:18,480
+See you--
+
+1603
+01:15:18,480 --> 01:15:21,360
+(SINGING) You warm up my
+life, like [INAUDIBLE]
+
+1604
+01:15:21,360 --> 01:15:23,568
+I barely knew you
+
+1605
+01:15:23,568 --> 01:15:25,110
+(SPEAKING) All right,
+people on Zoom,
+
+1606
+01:15:25,110 --> 01:15:27,760
+I'm going to shut it down unless
+you guys have any questions.
+
+1607
+01:15:43,440 --> 01:15:46,880
+(SINGING) I barely knew you.
+
+1608
+01:15:46,880 --> 01:15:50,760
+I barely knew you
+
+1609
+01:15:50,760 --> 01:15:54,334
+And now you're all that I do.
+
+1610
+01:15:54,334 --> 01:15:59,060
+All that I do
+
+1611
+01:15:59,060 --> 01:16:02,080
+Believe me, I hope you can see
+
+1612
+01:16:02,080 --> 01:16:05,850
+You warm up my life
+like a [INAUDIBLE]
+
+1613
+01:16:05,850 --> 01:16:13,031
+I barely knew you,
+I barely knew you
+
+1614
+01:16:13,031 --> 01:16:15,977
+You're all that I do
+
+1615
+01:16:15,977 --> 01:16:20,420
+I barely knew you
+
+1616
+01:16:20,420 --> 01:16:27,770
+I barely knew you
+
+1617
+01:16:27,770 --> 01:16:30,460
+I barely knew you

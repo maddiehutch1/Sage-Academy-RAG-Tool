@@ -1,0 +1,401 @@
+1
+00:00:02,780 --> 00:00:04,540
+Hello everyone and welcome to the content
+
+2
+00:00:04,540 --> 00:00:07,940
+video going over section
+3.7 while statements.
+
+3
+00:00:08,480 --> 00:00:11,080
+You'll actually hear me call
+them while loops instead
+
+4
+00:00:11,080 --> 00:00:13,000
+of while statements, but we
+call them while statements
+
+5
+00:00:13,000 --> 00:00:16,200
+for now because they actually
+act very similarly to an
+
+6
+00:00:16,200 --> 00:00:19,040
+if statement. So let me
+kind of explain what I mean.
+
+7
+00:00:19,620 --> 00:00:26,300
+Let's walk through this one example
+really quick and then I'll show you
+
+8
+00:00:26,300 --> 00:00:28,980
+what I mean. So I like this example
+in the textbook with pseudocode.
+
+9
+00:00:28,980 --> 00:00:33,200
+So when we go shopping we make a list
+of items we need to buy right and
+
+10
+00:00:33,200 --> 00:00:37,340
+so if we were going to write some
+code or an algorithm to cross out an
+
+11
+00:00:37,340 --> 00:00:40,800
+item after we've bought it and move
+to the next item until we run out
+
+12
+00:00:40,800 --> 00:00:44,500
+of items on our list we would pseudo
+code that and say something like
+
+13
+00:00:44,500 --> 00:00:48,880
+wow there are more items on my shopping
+list buy the next item and cross
+
+14
+00:00:48,880 --> 00:00:52,200
+it off my list so as long as there's
+more items keep crossing them
+
+15
+00:00:52,200 --> 00:00:58,320
+off keep buying them crossing them
+off okay um so what I what that looks
+
+16
+00:00:58,320 --> 00:01:03,560
+like when it comes to code is
+actually very similar syntactically to
+
+17
+00:01:03,560 --> 00:01:07,820
+an if statement. And so what you can
+see here in the textbook is while
+
+18
+00:01:07,820 --> 00:01:12,600
+product greater than or equal to 50
+product equal product times three.
+
+19
+00:01:12,980 --> 00:01:17,200
+And what that's essentially saying,
+this is actually doing something
+
+20
+00:01:17,460 --> 00:01:20,200
+slightly different from the
+pseudocode example, but you
+
+21
+00:01:20,200 --> 00:01:23,860
+can see that the while statement
+is looking for a statement
+
+22
+00:01:23,860 --> 00:01:27,000
+of true or false, just
+like the if statement was,
+
+23
+00:01:27,000 --> 00:01:29,980
+right? If it's true or if it's
+false, it will execute that.
+
+24
+00:01:30,460 --> 00:01:34,140
+It will enter the while loop, I
+guess, and it will execute the
+
+25
+00:01:34,140 --> 00:01:37,060
+code underneath. Now, what makes
+a while statement different than
+
+26
+00:01:37,060 --> 00:01:42,400
+an if statement is that the condition
+in the while statement, if it
+
+27
+00:01:42,400 --> 00:01:46,720
+continues to return true, it will
+continue to keep executing the
+
+28
+00:01:46,720 --> 00:01:50,020
+code underneath the statement.
+So, let me show you what I mean.
+
+29
+00:01:51,300 --> 00:01:52,240
+Let's
+
+30
+00:01:54,860 --> 00:02:00,360
+make a simple uh if statement uh
+let's let's check for a condition
+
+31
+00:02:03,100 --> 00:02:07,900
+let's get some input from the
+user's time how are you today
+
+32
+00:02:09,220 --> 00:02:13,220
+and we'll have them enter how
+they're feeling and so we'll say
+
+33
+00:02:13,220 --> 00:02:20,180
+while let's say they enter happy
+while condition equals happy.
+
+34
+00:02:22,820 --> 00:02:28,740
+We'll print out something
+like, wow, I'm so happy that
+
+35
+00:02:28,740 --> 00:02:34,460
+you are, whoops, you are
+happy. Very aggressively. Okay,
+
+36
+00:02:35,180 --> 00:02:37,900
+now let's run this code and
+see what happens. Actually,
+
+37
+00:02:39,010 --> 00:02:41,200
+false. Let me change one thing. Let's
+
+38
+00:02:41,200 --> 00:02:42,310
+change this to an F statement first.
+
+39
+00:02:42,940 --> 00:02:47,520
+let me run this code okay so how
+are you today I am happy wow I'm
+
+40
+00:02:47,520 --> 00:02:50,640
+so happy that you're happy gets
+output to the console right so let's
+
+41
+00:02:50,640 --> 00:02:55,040
+change this back to a while
+statement and you can probably guess
+
+42
+00:02:55,040 --> 00:03:00,660
+what's going to happen already how
+are you today happy and we get this
+
+43
+00:03:00,660 --> 00:03:04,320
+so this just continues to print we
+get wow I'm so happy that you're
+
+44
+00:03:04,320 --> 00:03:07,360
+happy and and you can see that
+it's printed like a million times
+
+45
+00:03:07,360 --> 00:03:10,640
+at this point and like I can't
+even reach the bottom of the scroll
+
+46
+00:03:10,640 --> 00:03:14,920
+back anymore because I was done oh
+there we go yeah so uh you can see
+
+47
+00:03:14,920 --> 00:03:18,450
+it's just going to keep running
+so I'm actually going to um just
+
+48
+00:03:18,520 --> 00:03:22,180
+kill this terminal altogether because
+I don't want it to keep running
+
+49
+00:03:22,180 --> 00:03:28,300
+um what what this condition is
+called is a um oh shoot the name is
+
+50
+00:03:28,300 --> 00:03:31,740
+escaping me basically it's a
+it's an infinite loop right it's
+
+51
+00:03:31,740 --> 00:03:36,460
+something that's going to continue
+running unless we state some condition
+
+52
+00:03:36,460 --> 00:03:41,060
+for it to stop. Or we use something
+called a break or a continue.
+
+53
+00:03:42,360 --> 00:03:46,960
+So our while loop will
+continue to run unless this
+
+54
+00:03:46,960 --> 00:03:52,100
+condition becomes false. Let
+me show you an example where a
+
+55
+00:03:52,100 --> 00:03:54,420
+condition might become false.
+Let's say we have an age.
+
+56
+00:03:54,740 --> 00:04:01,400
+And let's just set it at five. And
+we'll say while age less than 100.
+
+57
+00:04:02,220 --> 00:04:04,960
+We'll do something like grid the age.
+
+58
+00:04:07,620 --> 00:04:15,040
+And then let's say age
+equals age plus one.
+
+59
+00:04:18,120 --> 00:04:21,160
+Oh, you know what? Let me
+comment out this because
+
+60
+00:04:21,160 --> 00:04:23,440
+that will cause an
+infinite loop every time.
+
+61
+00:04:24,220 --> 00:04:27,740
+Okay, let me make this
+a little bit bigger.
+
+62
+00:04:29,220 --> 00:04:34,680
+So you can see on our scroll
+back here that our loop
+
+63
+00:04:34,680 --> 00:04:38,880
+started at age equal 5 and
+then age became 6, 7, etc, etc,
+
+64
+00:04:39,160 --> 00:04:41,640
+until age reached 99.
+
+65
+00:04:41,800 --> 00:04:47,080
+And we printed out age equal
+99 and then age said age equals
+
+66
+00:04:47,080 --> 00:04:50,100
+age plus 1, so we did an
+addition there to make age 100,
+
+67
+00:04:50,100 --> 00:04:53,320
+and then age was no longer
+less than 100 so our loop
+
+68
+00:04:53,320 --> 00:04:57,120
+actually closed. The condition
+became false and so it ended.
+
+69
+00:04:57,480 --> 00:05:01,920
+Now another cool thing about while
+statements or while loops is that
+
+70
+00:05:01,920 --> 00:05:07,040
+similar to if statements we can throw
+an else on the end there. Okay so
+
+71
+00:05:07,040 --> 00:05:10,500
+this is cool because then let's
+say we hit the condition where our
+
+72
+00:05:10,500 --> 00:05:15,710
+age is no longer less than 100. We
+can print out something like hey you
+
+73
+00:05:15,920 --> 00:05:22,800
+got old and we can run this again and
+you can see that our age continues
+
+74
+00:05:22,800 --> 00:05:27,800
+to tally up from 5 to 99 and then
+at the end of it the condition
+
+75
+00:05:27,800 --> 00:05:30,920
+becomes false and remember when an
+if statement in an if statement if
+
+76
+00:05:30,920 --> 00:05:34,620
+you have an if and an else if the if
+statement ever becomes not true or
+
+77
+00:05:34,620 --> 00:05:37,760
+if it isn't true then we automatically
+run the else and that's exactly
+
+78
+00:05:37,760 --> 00:05:42,060
+what's happening here. The wild
+statement becomes false and so we jump
+
+79
+00:05:42,060 --> 00:05:46,140
+down to our else and we print out
+the else at the end of it. So wild
+
+80
+00:05:46,140 --> 00:05:48,820
+statements will continue to repeat
+a condition as long as it's true.
+
+81
+00:05:48,910 --> 00:05:50,480
+And that's kind of the gist of this
+
+82
+00:05:50,480 --> 00:05:52,000
+content video, so thanks for watching.

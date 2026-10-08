@@ -1,0 +1,348 @@
+1
+00:00:03,000 --> 00:00:07,200
+Welcome to the content
+video for chapter 3.2 and
+
+2
+00:00:07,200 --> 00:00:11,580
+3.3 of your textbook,
+Algorithms and Studio Code.
+
+3
+00:00:11,620 --> 00:00:14,080
+In the beginning of
+chapter 3 here, we're going
+
+4
+00:00:14,080 --> 00:00:16,240
+to be going over some
+high-level concepts.
+
+5
+00:00:16,240 --> 00:00:18,780
+So we'll get more into the
+code a little bit later.
+
+6
+00:00:18,780 --> 00:00:20,770
+But for now, we're going
+to go over algorithms.
+
+7
+00:00:21,000 --> 00:00:25,180
+And at a high level, what
+an algorithm really is, is a
+
+8
+00:00:25,280 --> 00:00:28,680
+procedure for solving a problem
+in terms of the actions.
+
+9
+00:00:28,930 --> 00:00:31,960
+kind of like it says here the
+actions to execute in the order in
+
+10
+00:00:31,960 --> 00:00:35,700
+which these actions execute so
+you've probably heard a lot of people
+
+11
+00:00:35,700 --> 00:00:38,900
+talk about like the algorithm
+when they're talking about social
+
+12
+00:00:38,900 --> 00:00:42,920
+media tiktok instagram whatever it
+might be and that's totally true
+
+13
+00:00:42,920 --> 00:00:47,080
+that there are algorithms in play
+um to decide what gets put in front
+
+14
+00:00:47,080 --> 00:00:53,520
+of you um and and um well that
+is true that that is algorithms
+
+15
+00:00:53,520 --> 00:01:00,040
+are also varied in their scope and
+their capacity and what they do.
+
+16
+00:01:00,640 --> 00:01:04,760
+Another algorithm that's somewhat
+well known is called Dijkstra's
+
+17
+00:01:04,760 --> 00:01:07,460
+algorithm. And I'll use that as
+an example here. So Dijkstra's
+
+18
+00:01:07,460 --> 00:01:11,720
+algorithm is an algorithm that
+determines the shortest path between
+
+19
+00:01:11,720 --> 00:01:15,920
+two destinations or two buildings
+or whatever it might be. And
+
+20
+00:01:15,920 --> 00:01:18,420
+you probably use something similar
+to Dijkstra's algorithm every
+
+21
+00:01:18,420 --> 00:01:21,380
+time you walk around on campus,
+right? So if I was trying to go
+
+22
+00:01:21,380 --> 00:01:26,100
+over to Old Main on campus from my
+office, my brain would automatically
+
+23
+00:01:26,100 --> 00:01:28,640
+calculate a set of steps for
+me, right? So in order to get
+
+24
+00:01:28,640 --> 00:01:32,360
+to Old Main, I have to go out my
+office door, walk down the hall,
+
+25
+00:01:32,440 --> 00:01:34,960
+go down a set of stairs,
+exit the building
+
+26
+00:01:34,960 --> 00:01:38,500
+I'm currently in, walk across campus, and
+
+27
+00:01:40,340 --> 00:01:43,980
+get to Old Main, I'd probably walk
+diagonally across the quad, right?
+
+28
+00:01:43,980 --> 00:01:48,680
+And that is because that is the
+shortest path between those two points
+
+29
+00:01:48,680 --> 00:01:53,040
+right my office and Old Main and
+what's what's interesting about this
+
+30
+00:01:53,040 --> 00:01:56,980
+is that my brain kind of automatically
+knows that the order I need to
+
+31
+00:01:56,980 --> 00:02:02,100
+execute those steps as they get to
+be right in front of me and it almost
+
+32
+00:02:02,100 --> 00:02:05,880
+like figures it out before I even
+have to I don't even have to do any
+
+33
+00:02:05,880 --> 00:02:11,620
+like actual thinking there and so
+that's just an example of an algorithm
+
+34
+00:02:11,620 --> 00:02:15,500
+it's really just a set of steps
+saying here's what you need to do
+
+35
+00:02:15,500 --> 00:02:18,460
+and here's the order in which you
+need to do them and so as you code
+
+36
+00:02:18,460 --> 00:02:22,740
+things you are going to essentially
+be writing algorithms right you're
+
+37
+00:02:22,740 --> 00:02:25,460
+going to be writing steps for your
+computer and you're going to be telling
+
+38
+00:02:25,460 --> 00:02:29,020
+your computer in which order they
+need to calculate those steps so
+
+39
+00:02:29,020 --> 00:02:33,880
+that is algorithms and then pseudocode
+it goes really well with algorithms
+
+40
+00:02:33,880 --> 00:02:38,480
+because what pseudocode is um it's
+kind of scoping out your entire
+
+41
+00:02:38,480 --> 00:02:42,140
+algorithm before you write a lick
+of code. I really like pseudocode
+
+42
+00:02:42,140 --> 00:02:46,200
+because it is, like it says in the
+book, it's an informal English-like
+
+43
+00:02:46,200 --> 00:02:49,960
+language for thinking out loud or
+thinking out your algorithms before you
+
+44
+00:02:49,960 --> 00:02:53,920
+write them. And it's kind of like
+when you sit down to write an essay
+
+45
+00:02:53,920 --> 00:02:58,580
+or some kind of a story or a book,
+whatever it might be, usually you
+
+46
+00:02:58,580 --> 00:03:03,160
+have some kind of a high-level idea
+in your mind of how that story or
+
+47
+00:03:03,160 --> 00:03:08,180
+paper or whatever it might be is
+supposed to go and I think we too often
+
+48
+00:03:08,180 --> 00:03:11,240
+as programmers make the mistake
+of we sit down and we know what we
+
+49
+00:03:11,240 --> 00:03:15,560
+want to code and so we just start
+coding and I think that is our biggest
+
+50
+00:03:16,700 --> 00:03:20,740
+pitfall as programmers is that we
+never write things out ahead of
+
+51
+00:03:20,740 --> 00:03:24,240
+time so I like this example of
+pseudocode that they have in the book
+
+52
+00:03:24,690 --> 00:03:28,600
+here's an algorithm that prompts
+the user to enter two integers and
+
+53
+00:03:28,600 --> 00:03:31,660
+this is a fairly simple example
+but just bear with me for a second
+
+54
+00:03:31,960 --> 00:03:35,400
+get two integers from the user
+add them together and store them
+
+55
+00:03:35,400 --> 00:03:38,580
+and display their sum so here it
+is written out in English prompt
+
+56
+00:03:38,580 --> 00:03:41,800
+the user to enter the first integer
+input the first integer prompt
+
+57
+00:03:41,800 --> 00:03:45,160
+the user to enter the second input
+the second add the first integer
+
+58
+00:03:45,160 --> 00:03:48,140
+to the second integer store the
+sum and display the numbers now
+
+59
+00:03:48,140 --> 00:03:51,220
+you would probably never pseudo
+code an example like this because
+
+60
+00:03:51,220 --> 00:03:54,700
+it's pretty simple but when you
+get to something complicated like
+
+61
+00:03:54,700 --> 00:03:59,280
+building an app or a database or
+running an algorithm that will
+
+62
+00:03:59,280 --> 00:04:03,940
+calculate the shortest distance
+between two buildings, I don't know.
+
+63
+00:04:04,260 --> 00:04:08,220
+You don't want to just start coding.
+You want to really map out the
+
+64
+00:04:08,220 --> 00:04:11,080
+variables that you might have,
+what inputs you'll need, what
+
+65
+00:04:11,080 --> 00:04:14,940
+calculations you need to do. And
+this really allows you to use all the
+
+66
+00:04:14,940 --> 00:04:17,720
+tools in your tool belt. And the
+tools that you have are the things
+
+67
+00:04:17,720 --> 00:04:20,760
+that you're learning in this course
+right now. So pseudocoding is
+
+68
+00:04:20,760 --> 00:04:24,240
+a really, really great and important
+resource that most people don't
+
+69
+00:04:24,240 --> 00:04:26,760
+use and it could be your superpower
+to becoming a really great
+
+70
+00:04:26,760 --> 00:04:29,760
+coder so that's everything for this
+content video thanks for watching

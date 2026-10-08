@@ -1,0 +1,513 @@
+1
+00:00:02,870 --> 00:00:04,830
+Hey everybody, welcome
+to the content video
+
+2
+00:00:04,830 --> 00:00:09,050
+going over section 2.4
+and 2.5 of your textbooks.
+
+3
+00:00:09,170 --> 00:00:11,250
+Textbook 1, sorry.
+
+4
+00:00:11,490 --> 00:00:15,710
+Print function and strings
+and also triple quote strings.
+
+5
+00:00:15,730 --> 00:00:18,950
+So the print function,
+as it says here, is
+
+6
+00:00:18,950 --> 00:00:22,210
+something that will print
+out a string, which is a
+
+7
+00:00:22,210 --> 00:00:25,330
+sequence of characters
+enclosed in single quotes.
+
+8
+00:00:25,530 --> 00:00:28,490
+And here in our textbook,
+you can see that
+
+9
+00:00:28,490 --> 00:00:30,710
+it doesn't display the string's quotes,
+
+10
+00:00:31,710 --> 00:00:34,750
+but we'll talk about how to do
+that in a second and so when we
+
+11
+00:00:34,750 --> 00:00:39,010
+say print we really just mean
+output that string to the console
+
+12
+00:00:39,470 --> 00:00:42,890
+and there's a lot of different
+ways that we can do it
+
+13
+00:00:42,890 --> 00:00:45,210
+there's a lot of different
+variables that we can print out and
+
+14
+00:00:45,210 --> 00:00:48,110
+it'll print out the value of the
+variables but let's jump over
+
+15
+00:00:48,110 --> 00:00:54,150
+into VS Code and take a look at
+what we want to print here and
+
+16
+00:00:55,550 --> 00:01:02,190
+and we'll do some examples together
+so uh let's see print function
+
+17
+00:01:02,190 --> 00:01:10,390
+and strings okay so let's say
+we've got a variable called page
+
+18
+00:01:10,390 --> 00:01:13,330
+we'll set it equal to 98 something
+really fun you're all looking
+
+19
+00:01:13,330 --> 00:01:18,870
+forward to being 98 and let's go
+ahead and print out um a comma
+
+20
+00:01:18,870 --> 00:01:22,290
+separated list So what I'm going
+to do here is I'm just going to say
+
+21
+00:01:22,290 --> 00:01:30,370
+comma separated items for lack of
+a confusion. Okay, so what we're
+
+22
+00:01:30,370 --> 00:01:33,470
+going to do is I'm actually going
+to put in two items into my print
+
+23
+00:01:33,470 --> 00:01:36,720
+function. I'm going to put a
+string, and I'm going to say age.
+
+24
+00:01:37,590 --> 00:01:41,080
+And that's the first thing. So you
+can see if I was to just print out
+
+25
+00:01:41,080 --> 00:01:44,610
+age, everything within my quotation
+marks is going to get printed
+
+26
+00:01:44,610 --> 00:01:50,050
+out to the console. so here is age
+and it's just kind of like this empty
+
+27
+00:01:50,050 --> 00:01:54,310
+string if you will it's it's not
+empty but all that we're seeing is
+
+28
+00:01:54,350 --> 00:01:57,390
+agee colon space so then what i'm
+going to do is i'm going to put a
+
+29
+00:01:57,390 --> 00:02:00,890
+comma in here and then i'm going
+to throw my variable in there age
+
+30
+00:02:01,540 --> 00:02:05,450
+and print out that to the print that
+out to the console now you can see
+
+31
+00:02:05,450 --> 00:02:11,090
+that we've got age and the variable
+um there's a lot of different
+
+32
+00:02:11,090 --> 00:02:17,370
+things that we can print but let's
+jump down to some escape characters
+
+33
+00:02:21,130 --> 00:02:25,850
+and what I mean by escape
+characters are these are things that
+
+34
+00:02:27,830 --> 00:02:30,950
+in Python can help us
+to format our strings a
+
+35
+00:02:30,950 --> 00:02:32,910
+little bit better or a
+little bit differently So let
+
+36
+00:02:32,910 --> 00:02:35,250
+me print out a string.
+I'm going to say, oops,
+
+37
+00:02:36,290 --> 00:02:43,490
+print, welcome to Python. And if
+we were to print this out, we would
+
+38
+00:02:43,490 --> 00:02:47,990
+see it appear exactly as it is in
+the console. So welcome to Python.
+
+39
+00:02:47,990 --> 00:02:50,470
+Let me throw in a couple of
+characters. First, what I'm going
+
+40
+00:02:50,470 --> 00:02:54,630
+to do is a new line character.
+See how that is orange right
+
+41
+00:02:54,630 --> 00:02:58,290
+here. So I'm going to put a
+new line character before two.
+
+42
+00:02:58,710 --> 00:03:03,690
+and then Python let's do a new line
+character let's do two new line
+
+43
+00:03:03,690 --> 00:03:07,130
+characters and print that out and
+we'll see what the difference is
+
+44
+00:03:07,290 --> 00:03:10,790
+so you can see welcome is on one
+line and then the new line character
+
+45
+00:03:10,790 --> 00:03:14,950
+before two push it onto a new line
+and then two new line characters
+
+46
+00:03:14,950 --> 00:03:20,670
+pushed Python down to two or two
+two new lines there's also the
+
+47
+00:03:20,670 --> 00:03:25,110
+tab character which indents it
+and there's a couple of there's a
+
+48
+00:03:25,110 --> 00:03:28,370
+couple more but new line and tab
+are kind of the most important ones
+
+49
+00:03:30,370 --> 00:03:36,090
+um if we wanted to this is
+kind of a cool one print the
+
+50
+00:03:36,090 --> 00:03:41,370
+results of an expression we
+can do that in a print function
+
+51
+00:03:41,370 --> 00:03:48,150
+so let's say I wanted to
+say uh sum of five and three
+
+52
+00:03:49,610 --> 00:03:54,530
+then I can just add 3 and
+5 together right here and
+
+53
+00:03:54,530 --> 00:04:00,110
+print that out, which is
+8. So that is working well.
+
+54
+00:04:03,310 --> 00:04:06,590
+And that's kind of all
+I wanted to talk about
+
+55
+00:04:06,590 --> 00:04:09,230
+with the print function.
+So let's jump to triple
+
+56
+00:04:09,230 --> 00:04:11,010
+quote strings because
+these kind of go together.
+
+57
+00:04:15,210 --> 00:04:17,470
+And ironically, I'm using them to
+
+58
+00:04:18,430 --> 00:04:22,750
+write out this section header,
+triple quote string. So anything
+
+59
+00:04:22,750 --> 00:04:27,290
+that's in a triple quote string
+won't show up in your output at all.
+
+60
+00:04:27,290 --> 00:04:31,370
+So, well, sort of. So like if I
+run my code, anything that's in
+
+61
+00:04:31,370 --> 00:04:36,950
+a triple quote string won't be
+taken into account when your code
+
+62
+00:04:36,950 --> 00:04:41,250
+runs. So that's why I use them as
+headers, because they format nicely
+
+63
+00:04:41,250 --> 00:04:43,610
+at the top of my code, and
+they don't impact anything that
+
+64
+00:04:43,610 --> 00:04:47,670
+happens in the algorithms or in the
+code as it's running. so it's also
+
+65
+00:04:47,670 --> 00:04:52,870
+really good for including quotation
+marks in actual strings so
+
+66
+00:04:52,870 --> 00:05:00,110
+let's say that I had a quote this
+is a variable and the quote is
+
+67
+00:05:00,120 --> 00:05:04,960
+I'm terrible at thinking of things
+on the spot the quote is it's
+
+68
+00:05:05,610 --> 00:05:14,150
+nice and sunny today and And then
+I wanted to print out a sentence,
+
+69
+00:05:15,980 --> 00:05:21,850
+my instructor said, actually, I
+don't know why I made that a quote.
+
+70
+00:05:23,570 --> 00:05:24,750
+It's fine.
+
+71
+00:05:24,830 --> 00:05:26,370
+My instructor said,
+
+72
+00:05:26,730 --> 00:05:27,750
+quote,
+
+73
+00:05:28,230 --> 00:05:39,890
+it's nice and sunny today,
+which made me mad. I don't know.
+
+74
+00:05:40,910 --> 00:05:44,150
+So if I try to run this code, you
+probably can already tell it's
+
+75
+00:05:44,150 --> 00:05:46,450
+going to break and it's going to
+break for so many reasons. But
+
+76
+00:05:46,450 --> 00:05:51,790
+part of the reason is because we've
+got a double quotation here that
+
+77
+00:05:51,790 --> 00:05:54,750
+matches this one and then we
+have a single quotation and then
+
+78
+00:05:54,750 --> 00:05:58,850
+another double and then another
+double. So Python doesn't know what's
+
+79
+00:05:58,850 --> 00:06:03,070
+inside of the sequence of characters
+that it would designate as
+
+80
+00:06:03,070 --> 00:06:06,410
+a string and what's not. And so
+this would be a good instance where
+
+81
+00:06:06,410 --> 00:06:12,270
+we could use triple quote strings
+to surround the entire thing.
+
+82
+00:06:12,910 --> 00:06:16,910
+And then if we print this out, you
+can see that we have all of those
+
+83
+00:06:16,910 --> 00:06:20,490
+different things, all those different
+quotation marks and apostrophes,
+
+84
+00:06:20,490 --> 00:06:23,710
+and they're all working just fine.
+And so that's one of the advantages
+
+85
+00:06:23,710 --> 00:06:27,090
+of using triple quote strings in
+your code is that it will capture
+
+86
+00:06:27,090 --> 00:06:30,720
+an entire string or an entire
+sequence of characters and it won't
+
+87
+00:06:30,720 --> 00:06:34,330
+disrupt them at all. and it won't
+you know any like if we had like a
+
+88
+00:06:34,330 --> 00:06:38,450
+like a new line in here or something
+it would keep that and it would it
+
+89
+00:06:38,450 --> 00:06:42,470
+just keeps the formatting really
+really nice so I think that's
+
+90
+00:06:42,470 --> 00:06:46,570
+everything for this content video let
+me just check my notes really quick
+
+91
+00:06:48,630 --> 00:06:51,910
+yeah there's a couple different
+ways that we can include quotation
+
+92
+00:06:51,910 --> 00:06:55,190
+marks in strings but the triple quote
+strings is going to be your easiest
+
+93
+00:06:55,190 --> 00:06:58,290
+and most straightforward one more
+thing that was in my notes, sorry,
+
+94
+00:06:58,290 --> 00:07:07,110
+is a double or single quotation
+mark. So let's say I've got a string
+
+95
+00:07:09,470 --> 00:07:14,430
+and my string is my name. So I'm
+just going to type in Chelsea.
+
+96
+00:07:15,090 --> 00:07:20,390
+Here's, you know, this is okay to
+use a double quotation mark string
+
+97
+00:07:20,390 --> 00:07:24,730
+or it's okay to use a single
+quotation mark to designate string
+
+98
+00:07:24,730 --> 00:07:29,330
+but what's not okay is if you try
+to use a single quotation mark and
+
+99
+00:07:29,330 --> 00:07:32,130
+a double quotation mark this is
+when python kind of breaks so you
+
+100
+00:07:32,130 --> 00:07:35,990
+have to choose one or the other
+you can use them interchangeably in
+
+101
+00:07:35,990 --> 00:07:39,610
+code so like you can see i've got
+double quotation mark string here
+
+102
+00:07:39,610 --> 00:07:43,010
+triple quotation mark string here
+and then single quotation mark
+
+103
+00:07:43,010 --> 00:07:46,690
+string here and they all work just
+fine so you just can't intermix
+
+104
+00:07:46,690 --> 00:07:49,270
+them in a single string so that's
+everything for this content video.

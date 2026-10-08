@@ -1,0 +1,509 @@
+1
+00:00:01,910 --> 00:00:04,970
+Everybody, once again,
+welcome back to more
+
+2
+00:00:04,970 --> 00:00:08,570
+about our data frames
+and pandas in Python.
+
+3
+00:00:08,570 --> 00:00:10,570
+In this content video,
+we're going to talk about
+
+4
+00:00:10,570 --> 00:00:13,610
+descriptive statistics,
+some sorting, and then a
+
+5
+00:00:13,610 --> 00:00:16,290
+really easy way that you
+can transpose a data frame.
+
+6
+00:00:16,450 --> 00:00:18,670
+Descriptive statistics,
+one of the reasons
+
+7
+00:00:19,470 --> 00:00:23,630
+pandas is so awesome is because
+to get statistics on your
+
+8
+00:00:23,630 --> 00:00:27,110
+data frame, it's literally as
+easy as just writing described.
+
+9
+00:00:27,410 --> 00:00:32,290
+Let's actually jump over to our
+code space. we'll go ahead and do
+
+10
+00:00:41,470 --> 00:00:45,130
+an example. So as always import pandas
+
+11
+00:00:46,240 --> 00:00:48,870
+and let's open up our data frame.
+
+12
+00:00:51,570 --> 00:00:54,540
+You really should like type
+this all out so that it's not
+
+13
+00:00:54,540 --> 00:00:58,550
+the same in every single video
+but know that you can fast
+
+14
+00:00:58,550 --> 00:01:02,190
+forward at least ten seconds of
+this video and not miss think.
+
+15
+00:01:04,450 --> 00:01:05,230
+Okay,
+
+16
+00:01:06,670 --> 00:01:09,090
+and there's our data frame,
+perfect. So what we're going to
+
+17
+00:01:09,090 --> 00:01:14,330
+do is we are going to run the
+dataframe.describe function.
+
+18
+00:01:18,750 --> 00:01:23,510
+Okay, so what this gives us is
+statistical overview of our data frame.
+
+19
+00:01:23,640 --> 00:01:25,990
+As you can see, we've got the
+count, the mean, the standard
+
+20
+00:01:25,990 --> 00:01:29,950
+deviation, the min, the max, and a
+couple of percentiles about our data.
+
+21
+00:01:29,950 --> 00:01:33,930
+So for example, we've got in our
+count column, we've got our passenger
+
+22
+00:01:33,930 --> 00:01:38,150
+ID, we've got 891 records of that,
+whereas in age, we've got 714.
+
+23
+00:01:39,230 --> 00:01:42,450
+And that gives us a couple more
+of our different columns. Note
+
+24
+00:01:42,450 --> 00:01:46,510
+that it doesn't give us the
+categorical columns, it's more just
+
+25
+00:01:46,510 --> 00:01:50,140
+giving us the numerical columns,
+right? So I'm not getting one
+
+26
+00:01:52,010 --> 00:01:55,690
+like cabin number, for example,
+because the cabin numbers are
+
+27
+00:01:55,690 --> 00:01:59,130
+strings. And so it can't really
+give me the standard deviation of
+
+28
+00:01:59,130 --> 00:02:03,730
+string values. So we've got the
+mean, the standard deviation,
+
+29
+00:02:04,050 --> 00:02:09,390
+again, the minimum, the maximum,
+and yeah, just percentiles about it.
+
+30
+00:02:09,390 --> 00:02:13,330
+So that's super, super helpful if
+we're wanting to get some quick,
+
+31
+00:02:13,930 --> 00:02:17,150
+just a quick look at our data
+here. So another thing that
+
+32
+00:02:17,150 --> 00:02:23,550
+we can do, let's print out
+the average age, for example.
+
+33
+00:02:23,850 --> 00:02:28,430
+That'll be data frame at the column age.
+
+34
+00:02:32,230 --> 00:02:36,830
+Here's the mean age, 29, super nice.
+
+35
+00:02:36,950 --> 00:02:41,290
+Here's the total survive. Let's
+find the total survivors. That'll
+
+36
+00:02:46,710 --> 00:02:50,570
+be our DataFrame survived.
+
+37
+00:02:54,810 --> 00:02:56,350
+We'll do a sum.
+
+38
+00:02:58,430 --> 00:03:02,110
+So again, these are more
+things that we've used with
+
+39
+00:03:02,110 --> 00:03:08,910
+our regular Python file, but
+now we're able to use them
+
+40
+00:03:08,910 --> 00:03:11,990
+on columns of our DataFrame
+too, which is so helpful.
+
+41
+00:03:12,170 --> 00:03:16,510
+Let's do one more. let's
+find out our unique ports.
+
+42
+00:03:30,890 --> 00:03:32,470
+Do a .unique.
+
+43
+00:03:35,830 --> 00:03:40,090
+So there we go, we've got the
+s, the c, and the q, and then
+
+44
+00:03:40,090 --> 00:03:43,870
+I think a couple of them are
+are blank, so not a number.
+
+45
+00:03:45,050 --> 00:03:49,270
+So I'm not expecting you guys to
+like remember all of these different
+
+46
+00:03:49,270 --> 00:03:51,910
+methods and functions, but just
+kind of being aware of like all
+
+47
+00:03:51,910 --> 00:03:55,550
+the things that we can do with the
+data in our data frames is so so
+
+48
+00:03:55,550 --> 00:04:02,430
+helpful okay let's talk for a
+minute about sorting data frames so
+
+49
+00:04:08,560 --> 00:04:13,860
+there's some basic and easy
+ways to do this let's say we've
+
+50
+00:04:13,860 --> 00:04:16,890
+got a data frame let's call
+it expensive passengers we
+
+51
+00:04:18,140 --> 00:04:22,880
+did this in our last content
+video I believe we'll set that
+
+52
+00:04:22,880 --> 00:04:26,380
+we'll sign out the value of
+data frame dot sorts values.
+
+53
+00:04:27,020 --> 00:04:28,980
+So that's a nice function there.
+
+54
+00:04:29,300 --> 00:04:31,660
+Sort values takes a couple of arguments.
+
+55
+00:04:31,660 --> 00:04:36,120
+So you can say, or you can see
+here, it says by string, sequence
+
+56
+00:04:36,120 --> 00:04:40,340
+string. So what this is
+saying is it's asking for some
+
+57
+00:04:40,340 --> 00:04:44,920
+arguments from us. So I'm going
+to say, let's sort it by our fair.
+
+58
+00:04:45,500 --> 00:04:50,300
+By equals fair. So we're
+assigning a default in a way.
+
+59
+00:04:50,420 --> 00:04:53,840
+So by is fair. And then
+let's say ascending
+
+60
+00:04:54,890 --> 00:04:58,460
+equals false. So it'll
+be descending order.
+
+61
+00:04:58,880 --> 00:05:01,380
+And then let's output
+our expensive passengers.
+
+62
+00:05:03,080 --> 00:05:04,400
+There we go.
+
+63
+00:05:06,180 --> 00:05:07,020
+Oops.
+
+64
+00:05:07,520 --> 00:05:08,820
+What did I do wrong?
+
+65
+00:05:18,330 --> 00:05:20,570
+Did type bool and I gave it a string. Oh,
+
+66
+00:05:20,570 --> 00:05:22,200
+I did give it a string. What about that?
+
+67
+00:05:22,830 --> 00:05:25,870
+I gave it false in quotation
+marks, not false. There
+
+68
+00:05:25,870 --> 00:05:29,490
+we go. Okay, so here's our
+most expensive passenger. It's
+
+69
+00:05:29,490 --> 00:05:34,090
+Mr. Thomas Drake Martinez
+is Cardenza, and he paid
+
+70
+00:05:34,380 --> 00:05:40,450
+512 money units to ride the
+Titanic. I wonder if he had
+
+71
+00:05:41,950 --> 00:05:45,490
+one parent or child with him. He had
+one parent child with him, so I'm
+
+72
+00:05:45,490 --> 00:05:48,410
+not sure what he paid so much for.
+Maybe he had a really good cabin.
+
+73
+00:05:49,590 --> 00:05:54,420
+I guess he was in first class, but
+hey, so were some of our zero paid
+
+74
+00:05:54,930 --> 00:05:58,630
+people, so that's curious. I
+wonder why that is. A data quality
+
+75
+00:05:58,630 --> 00:06:03,730
+question that we can start asking
+now that we can see our our data
+
+76
+00:06:03,730 --> 00:06:07,660
+laid out and we you know we could
+also do something like let's filter
+
+77
+00:06:07,660 --> 00:06:11,250
+this down to name maybe it's too
+much data for us we want to see the
+
+78
+00:06:11,250 --> 00:06:16,650
+name and the fair and their class
+that we've got a little bit less
+
+79
+00:06:16,650 --> 00:06:23,550
+going on we could do that too
+there it is so that simplifies what
+
+80
+00:06:23,550 --> 00:06:32,550
+we're looking at okay let's do a
+sort by multiple columns so let's say
+
+81
+00:06:32,550 --> 00:06:39,950
+we wanted to sort by our class
+and then our name maybe that's a
+
+82
+00:06:39,950 --> 00:06:47,610
+pretty not that pretty normal thing
+to do so sorted titanic we'll assign
+
+83
+00:06:47,610 --> 00:06:52,450
+that to the value of our data
+frame dot sort values this time
+
+84
+00:06:52,450 --> 00:06:59,910
+what we'll do is we'll say by whoops
+by is equal to and we'll give it
+
+85
+00:06:59,910 --> 00:07:08,950
+a data frame we'll say P class and
+then let's do name and then we'll
+
+86
+00:07:08,950 --> 00:07:19,490
+say ascending equals first true and
+then false so ascending and then
+
+87
+00:07:19,490 --> 00:07:22,690
+descending so we want to see first
+second third and then we want
+
+88
+00:07:22,690 --> 00:07:27,350
+to see an alphabetical order going
+down and then let's output that
+
+89
+00:07:27,350 --> 00:07:40,470
+but let's only output the name
+column the p class and their age full
+
+90
+00:07:51,500 --> 00:07:52,600
+ascending right
+
+91
+00:07:54,650 --> 00:07:59,800
+I did oh I left off a
+bracket that'll do it
+
+92
+00:08:02,080 --> 00:08:11,560
+uh-oh extra bracket there we go
+okay so we've got our class oops
+
+93
+00:08:11,560 --> 00:08:14,950
+they're actually in well maybe we
+want this to be true as well they're
+
+94
+00:08:14,950 --> 00:08:19,420
+actually in opposite alphabet of
+quarter there we go okay so here is
+
+95
+00:08:19,420 --> 00:08:23,880
+the passenger with their class
+so in a very first we've got miss
+
+96
+00:08:23,880 --> 00:08:28,000
+elizabeth walton allen who is in first
+class and going on and on and on.
+
+97
+00:08:28,460 --> 00:08:31,420
+Okay, and then last thing for
+this content video is transposing,
+
+98
+00:08:33,340 --> 00:08:36,480
+which is also pretty easy to do.
+
+99
+00:08:36,790 --> 00:08:38,980
+So let's say we've got our data frame.
+
+100
+00:08:39,200 --> 00:08:44,220
+Let's do a head, and let's
+take just the first row,
+
+101
+00:08:44,220 --> 00:08:46,720
+and we want to transpose
+that. We'll just throw
+
+102
+00:08:46,720 --> 00:08:49,540
+a capital T on the end
+there. It's an attribute.
+
+103
+00:08:49,580 --> 00:08:53,700
+And now you can see that
+we've got our very first row,
+
+104
+00:08:53,700 --> 00:08:58,480
+and all of those items that
+were columns are now in rows.
+
+105
+00:08:58,480 --> 00:09:01,240
+So that's going to be everything for this
+
+106
+00:09:01,240 --> 00:09:03,220
+content video. Thank you for watching.

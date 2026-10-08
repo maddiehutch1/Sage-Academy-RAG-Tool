@@ -1,0 +1,662 @@
+1
+00:00:02,950 --> 00:00:04,700
+Hello everyone, and
+welcome to the content
+
+2
+00:00:04,700 --> 00:00:09,050
+video for machine learning
+sentiment analysis example.
+
+3
+00:00:09,050 --> 00:00:12,020
+OK, so sentiment analysis
+is another problem
+
+4
+00:00:12,020 --> 00:00:14,850
+that machine learning models
+have done extremely well with.
+
+5
+00:00:14,850 --> 00:00:17,990
+And the idea is
+basically you take data
+
+6
+00:00:17,990 --> 00:00:21,860
+and you try and determine
+or predict the sentiment,
+
+7
+00:00:21,860 --> 00:00:25,640
+meaning if someone is very
+angry or if someone's very
+
+8
+00:00:25,640 --> 00:00:28,940
+happy or very
+positive or neutral
+
+9
+00:00:28,940 --> 00:00:32,540
+machine learning can determine
+that their sentiment in the data
+
+10
+00:00:32,540 --> 00:00:33,270
+itself.
+
+11
+00:00:33,270 --> 00:00:36,560
+So we've got some data set
+from Amazon, IMDb and Yelp,
+
+12
+00:00:36,560 --> 00:00:41,300
+and then we're going to take
+a look at how models rate
+
+13
+00:00:41,300 --> 00:00:43,280
+the sentiment and then
+compare the output
+
+14
+00:00:43,280 --> 00:00:44,488
+from the different models.
+
+15
+00:00:44,488 --> 00:00:47,030
+I should also mention there's
+a programming activity in here,
+
+16
+00:00:47,030 --> 00:00:50,330
+so I'm going to cover how
+it's done with one model
+
+17
+00:00:50,330 --> 00:00:52,460
+and then the programming
+activity will actually
+
+18
+00:00:52,460 --> 00:00:56,820
+be to then do-it-yourself.
+
+19
+00:00:56,820 --> 00:01:00,290
+So to build multiple
+models, fit the data
+
+20
+00:01:00,290 --> 00:01:03,970
+and then predict the sentiment
+on those multiple models.
+
+21
+00:01:03,970 --> 00:01:05,820
+That's the programming activity.
+
+22
+00:01:05,820 --> 00:01:08,220
+But let's get started
+with the first model.
+
+23
+00:01:08,220 --> 00:01:11,043
+OK, so here we have
+sentiment example.py.
+
+24
+00:01:11,043 --> 00:01:12,460
+And let's take a
+look at the data.
+
+25
+00:01:12,460 --> 00:01:14,130
+The data that will
+probably be helpful.
+
+26
+00:01:14,130 --> 00:01:16,110
+So here are some Amazon reviews.
+
+27
+00:01:16,110 --> 00:01:18,700
+And then this is training data.
+
+28
+00:01:18,700 --> 00:01:25,060
+So it's got a numeric value for
+the sentiment of this review.
+
+29
+00:01:25,060 --> 00:01:28,830
+And then the same
+is true for IMDb,
+
+30
+00:01:28,830 --> 00:01:31,950
+and then the same is true for
+Yelp, essentially a review
+
+31
+00:01:31,950 --> 00:01:37,330
+with a score on whether or
+not it's positive or negative.
+
+32
+00:01:37,330 --> 00:01:40,720
+So then how the heck do we
+build a model to predict that?
+
+33
+00:01:40,720 --> 00:01:45,460
+Well, again, it's loading
+the data, fits the data,
+
+34
+00:01:45,460 --> 00:01:46,283
+predict the data.
+
+35
+00:01:46,283 --> 00:01:47,450
+It's actually pretty simple.
+
+36
+00:01:47,450 --> 00:01:49,870
+But the time and
+the code is spent
+
+37
+00:01:49,870 --> 00:01:52,835
+with the data preprocessing,
+transformations,
+
+38
+00:01:52,835 --> 00:01:53,960
+different things like that.
+
+39
+00:01:53,960 --> 00:01:57,370
+A lot of time in data analytics
+is spent on the data itself,
+
+40
+00:01:57,370 --> 00:01:59,050
+which kind of makes sense.
+
+41
+00:01:59,050 --> 00:01:59,930
+OK, so here we go.
+
+42
+00:01:59,930 --> 00:02:06,320
+So we have our Amazon data,
+Yelp data, and our IMDb data.
+
+43
+00:02:06,320 --> 00:02:07,550
+I have all of those files.
+
+44
+00:02:07,550 --> 00:02:08,539
+So I load the files.
+
+45
+00:02:08,539 --> 00:02:10,789
+I'm going to read them
+into a CSV with Pandas.
+
+46
+00:02:10,789 --> 00:02:14,060
+Pandas library, the functions
+are so great and easy to use.
+
+47
+00:02:14,060 --> 00:02:17,410
+So read CSV, puts it
+into a Pandas data frame,
+
+48
+00:02:17,410 --> 00:02:20,200
+which is essentially an
+in-memory spreadsheet.
+
+49
+00:02:20,200 --> 00:02:23,420
+And then I can concatenate them
+all using the concat method.
+
+50
+00:02:23,420 --> 00:02:27,400
+So now I've got all of my
+data loaded into a data frame,
+
+51
+00:02:27,400 --> 00:02:30,100
+kind of like a spreadsheet, and
+all of it's now in one place
+
+52
+00:02:30,100 --> 00:02:31,360
+that I can look at.
+
+53
+00:02:31,360 --> 00:02:36,380
+OK, now I'm going to
+transform the data little bit
+
+54
+00:02:36,380 --> 00:02:41,060
+so I don't have to fit
+on uppercase, lowercase,
+
+55
+00:02:41,060 --> 00:02:43,800
+different punctuation or
+versions of the words.
+
+56
+00:02:43,800 --> 00:02:47,030
+This kind of just preprocesses
+all of the data to get it
+
+57
+00:02:47,030 --> 00:02:51,020
+lowercase and less
+amount-- the words
+
+58
+00:02:51,020 --> 00:02:52,680
+turn into-- think
+of them like tokens.
+
+59
+00:02:52,680 --> 00:02:58,220
+So the more I can get
+the words themselves
+
+60
+00:02:58,220 --> 00:03:01,070
+into a uniform format,
+the less tokens there are,
+
+61
+00:03:01,070 --> 00:03:03,860
+and then the more accurate
+my fitting can be.
+
+62
+00:03:03,860 --> 00:03:05,152
+OK, so I preprocessed the data.
+
+63
+00:03:05,152 --> 00:03:06,985
+And then here is where
+the learning happens.
+
+64
+00:03:06,985 --> 00:03:08,760
+Remember, it's all
+here in the fitting.
+
+65
+00:03:08,760 --> 00:03:12,150
+So this is where the learning
+happens of, here's the data.
+
+66
+00:03:12,150 --> 00:03:15,260
+Under what circumstances
+do these words
+
+67
+00:03:15,260 --> 00:03:18,080
+have a positive or a
+negative sentiment?
+
+68
+00:03:18,080 --> 00:03:20,010
+That learning is
+done in the fitting.
+
+69
+00:03:20,010 --> 00:03:21,960
+Then I transform the X's.
+
+70
+00:03:21,960 --> 00:03:23,510
+Remember, the X's
+are the inputs.
+
+71
+00:03:23,510 --> 00:03:25,490
+And then the Y's are the output.
+
+72
+00:03:25,490 --> 00:03:27,350
+X's are the
+independent variables.
+
+73
+00:03:27,350 --> 00:03:29,240
+Y is the dependent
+variable, remember,
+
+74
+00:03:29,240 --> 00:03:30,705
+in an independent input.
+
+75
+00:03:30,705 --> 00:03:32,330
+So those are my X's
+that I'm inputting.
+
+76
+00:03:32,330 --> 00:03:34,620
+And then I make my
+predictions on them.
+
+77
+00:03:34,620 --> 00:03:36,980
+And the predictions
+are done in a test set
+
+78
+00:03:36,980 --> 00:03:41,390
+where I can actually gauge,
+were they correct or not?
+
+79
+00:03:41,390 --> 00:03:43,050
+How accurate is this model?
+
+80
+00:03:43,050 --> 00:03:44,430
+And then I can print that out.
+
+81
+00:03:44,430 --> 00:03:46,013
+So let me give that
+a run right there.
+
+82
+00:03:49,800 --> 00:03:51,170
+OK, so on our first model--
+
+83
+00:03:56,950 --> 00:03:57,620
+take a sec.
+
+84
+00:03:57,620 --> 00:03:59,210
+It's still fitting.
+
+85
+00:03:59,210 --> 00:04:00,500
+That's normal.
+
+86
+00:04:00,500 --> 00:04:02,840
+Actually, the
+longest will probably
+
+87
+00:04:02,840 --> 00:04:05,250
+be, for your
+programming activity--
+
+88
+00:04:05,250 --> 00:04:06,898
+if you check down here is MLP.
+
+89
+00:04:06,898 --> 00:04:08,940
+That's a neural network,
+a simple neural network.
+
+90
+00:04:08,940 --> 00:04:10,398
+But that one will
+take the longest.
+
+91
+00:04:10,398 --> 00:04:11,750
+OK, so our first one is done.
+
+92
+00:04:11,750 --> 00:04:13,702
+And our accuracy is 80%.
+
+93
+00:04:13,702 --> 00:04:16,160
+You can see in my output where
+I'm highlighting right here.
+
+94
+00:04:16,160 --> 00:04:19,649
+Model accuracy is 80%,
+which is pretty good.
+
+95
+00:04:19,649 --> 00:04:23,940
+So this model--
+that's the accuracy.
+
+96
+00:04:23,940 --> 00:04:26,750
+So now here's the
+programming activity
+
+97
+00:04:26,750 --> 00:04:28,790
+that I'd like you to do.
+
+98
+00:04:28,790 --> 00:04:31,790
+I created for you all
+of these models now.
+
+99
+00:04:31,790 --> 00:04:33,240
+Let me expand that right there.
+
+100
+00:04:33,240 --> 00:04:36,260
+So now you've got an additional
+six machine learning models
+
+101
+00:04:36,260 --> 00:04:37,990
+that I'd like you
+to fit the data
+
+102
+00:04:37,990 --> 00:04:39,240
+and then make the predictions.
+
+103
+00:04:39,240 --> 00:04:41,795
+And here's the setup right here.
+
+104
+00:04:41,795 --> 00:04:43,850
+Here's the y data right here.
+
+105
+00:04:43,850 --> 00:04:46,910
+You need to fit the
+classifier, transform the X
+
+106
+00:04:46,910 --> 00:04:50,570
+so you can do predictions,
+make the predictions,
+
+107
+00:04:50,570 --> 00:04:55,640
+calculate the accuracy by
+calling accuracy_score, and then
+
+108
+00:04:55,640 --> 00:04:57,750
+printing the model
+and the accuracy.
+
+109
+00:04:57,750 --> 00:05:00,740
+And that's it.
+
+110
+00:05:00,740 --> 00:05:04,983
+The code of the model itself
+is not really complicated.
+
+111
+00:05:04,983 --> 00:05:06,650
+You can see a lot of
+time in the program
+
+112
+00:05:06,650 --> 00:05:09,560
+is spent getting the data in the
+right format or the best format
+
+113
+00:05:09,560 --> 00:05:12,810
+that you can learn from it
+and then make predictions.
+
+114
+00:05:12,810 --> 00:05:15,410
+That's really a lot of your
+time as a data analyst and data
+
+115
+00:05:15,410 --> 00:05:17,780
+scientist is dealing
+with the data.
+
+116
+00:05:17,780 --> 00:05:21,020
+And with your knowledge of how
+machine learning models work
+
+117
+00:05:21,020 --> 00:05:23,090
+and knowing what the
+format the data needs
+
+118
+00:05:23,090 --> 00:05:26,180
+to be in so that
+something can be learned,
+
+119
+00:05:26,180 --> 00:05:28,370
+all that information
+is in your head
+
+120
+00:05:28,370 --> 00:05:32,030
+on how the data needs
+to be formatted and fit
+
+121
+00:05:32,030 --> 00:05:33,510
+into a machine learning model.
+
+122
+00:05:33,510 --> 00:05:35,040
+That's where a lot of
+your time will be spent.
+
+123
+00:05:35,040 --> 00:05:36,415
+Once the data is
+all ready to go,
+
+124
+00:05:36,415 --> 00:05:38,480
+then you can just crank
+through the models
+
+125
+00:05:38,480 --> 00:05:40,940
+like you're going to do in
+your programming activity.
+
+126
+00:05:40,940 --> 00:05:43,130
+I should also mention
+the solution is
+
+127
+00:05:43,130 --> 00:05:45,150
+in sentiment_example_solution.
+
+128
+00:05:45,150 --> 00:05:47,510
+But I highly recommend
+that you do not just
+
+129
+00:05:47,510 --> 00:05:50,250
+go to the solution, read
+through it, think, OK.
+
+130
+00:05:50,250 --> 00:05:51,060
+Yeah, I got this.
+
+131
+00:05:51,060 --> 00:05:51,960
+No problem.
+
+132
+00:05:51,960 --> 00:05:56,550
+Do it with your own two
+hands, go through it.
+
+133
+00:05:56,550 --> 00:05:59,270
+The little issues
+you might run along--
+
+134
+00:05:59,270 --> 00:06:00,970
+figure them out and fix them.
+
+135
+00:06:00,970 --> 00:06:04,290
+That's the really the value,
+the aha moment of, yes, I
+
+136
+00:06:04,290 --> 00:06:05,273
+can do this.
+
+137
+00:06:05,273 --> 00:06:06,190
+I can figure this out.
+
+138
+00:06:06,190 --> 00:06:09,670
+So all right, so give that a
+try, that programming activity.
+
+139
+00:06:09,670 --> 00:06:14,970
+And this concludes our content
+video of Machine Learning--
+
+140
+00:06:14,970 --> 00:06:17,110
+Sentiment Analysis Example.
+
+141
+00:06:17,110 --> 00:06:19,010
+Thanks for watching.

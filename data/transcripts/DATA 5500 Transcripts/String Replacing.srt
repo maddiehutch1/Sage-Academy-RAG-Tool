@@ -1,0 +1,116 @@
+1
+00:00:02,840 --> 00:00:05,080
+Hey everybody and welcome
+to the content video.
+
+2
+00:00:05,080 --> 00:00:07,700
+We're going over section
+8.8, replacing substrings.
+
+3
+00:00:07,720 --> 00:00:12,660
+So when you're working with strings,
+it can happen that strings sometimes
+
+4
+00:00:12,660 --> 00:00:16,280
+have things inside of them that
+you would rather be something else.
+
+5
+00:00:16,280 --> 00:00:20,700
+And I'll tell you what might be
+a case for that is if you have
+
+6
+00:00:20,700 --> 00:00:25,120
+something like a tab character or white
+space within a string that you want
+
+7
+00:00:25,120 --> 00:00:29,820
+replaced with nothing. So the section
+on this is fairly short in the
+
+8
+00:00:29,820 --> 00:00:34,250
+textbook, so I'm going to just go
+ahead and jump over to our Cospace,
+
+9
+00:00:34,380 --> 00:00:42,120
+let's talk about replacing
+substrings or string replacing.
+
+10
+00:00:42,740 --> 00:00:53,060
+Let's say we have a phrase,
+this class is okay, period.
+
+11
+00:00:53,900 --> 00:00:57,480
+We could use the replace function to
+
+12
+00:01:02,210 --> 00:01:08,790
+give it a string like okay
+and replace it with something
+
+13
+00:01:08,790 --> 00:01:13,270
+else. So for example, we could
+replace okay with amazing.
+
+14
+00:01:14,610 --> 00:01:16,060
+I can't spell amazing.
+
+15
+00:01:19,270 --> 00:01:27,050
+And then if we were to print
+out our phrase, we would
+
+16
+00:01:27,050 --> 00:01:29,830
+actually let me print out
+the phrase before and after.
+
+17
+00:01:29,950 --> 00:01:30,350
+So
+
+18
+00:01:30,670 --> 00:01:34,090
+here's our phrase before
+and our phrase after.
+
+19
+00:01:34,810 --> 00:01:38,550
+This class is okay, this class is
+amazing. So that's the gist of how
+
+20
+00:01:38,550 --> 00:01:41,990
+it works. Like I said, sometimes we
+have strings that have like spaces
+
+21
+00:01:41,990 --> 00:01:45,210
+or tabs or whatever else in them
+that maybe we don't want and so more
+
+22
+00:01:45,210 --> 00:01:48,690
+commonly you'll see people looking
+for a space and replacing it with no
+
+23
+00:01:48,690 --> 00:01:52,810
+space. So that's the more common
+usage of the replace function. That's
+
+24
+00:01:52,810 --> 00:01:55,310
+everything for this content video
+though, so thank you for watching.

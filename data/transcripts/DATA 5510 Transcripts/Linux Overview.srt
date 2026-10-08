@@ -1,0 +1,1199 @@
+1
+00:00:02,168 --> 00:00:04,460
+INSTRUCTOR: Hello, everyone,
+and welcome to the content
+
+2
+00:00:04,460 --> 00:00:06,980
+video for Linux overview.
+
+3
+00:00:06,980 --> 00:00:10,820
+So Linux is the operating system
+that we will be using heavily
+
+4
+00:00:10,820 --> 00:00:12,800
+in this course.
+
+5
+00:00:12,800 --> 00:00:17,390
+Linux, a few things about
+Linux, in case you don't know,
+
+6
+00:00:17,390 --> 00:00:20,540
+Linux is very similar to
+the Unix operating system,
+
+7
+00:00:20,540 --> 00:00:22,910
+which was developed in the '60s.
+
+8
+00:00:22,910 --> 00:00:25,100
+Soon after that,
+Windows was developed
+
+9
+00:00:25,100 --> 00:00:29,660
+and then they eventually became
+the three major operating
+
+10
+00:00:29,660 --> 00:00:33,260
+systems that are used today,
+Linux, Unix and Windows.
+
+11
+00:00:33,260 --> 00:00:36,950
+So a little bit of
+history on Linux and Unix.
+
+12
+00:00:36,950 --> 00:00:38,880
+So what you're
+looking at right here,
+
+13
+00:00:38,880 --> 00:00:41,540
+this is all of the
+branches that have come
+
+14
+00:00:41,540 --> 00:00:44,700
+from the Unix operating system.
+
+15
+00:00:44,700 --> 00:00:47,420
+So if you look on this, if you
+can see where my mouse is right
+
+16
+00:00:47,420 --> 00:00:50,440
+here, 1969, that's
+where Unix was
+
+17
+00:00:50,440 --> 00:00:52,940
+born, although it wasn't called
+Unix until a couple of years
+
+18
+00:00:52,940 --> 00:00:53,790
+later.
+
+19
+00:00:53,790 --> 00:00:57,750
+So then Unix was born, and
+the colors you're looking at,
+
+20
+00:00:57,750 --> 00:00:59,720
+the kind of orangish
+color here, is
+
+21
+00:00:59,720 --> 00:01:05,340
+all of the mixed versions of
+Unix that were some were sold
+
+22
+00:01:05,340 --> 00:01:06,100
+and some were not.
+
+23
+00:01:06,100 --> 00:01:09,030
+In the beginning, it was kind of
+the wild west or a free for all
+
+24
+00:01:09,030 --> 00:01:12,060
+in terms of who
+had a copy of Unix
+
+25
+00:01:12,060 --> 00:01:13,810
+and then would
+develop their own.
+
+26
+00:01:13,810 --> 00:01:17,230
+The copyright laws for software
+did not exist back then,
+
+27
+00:01:17,230 --> 00:01:22,650
+so it was common to share
+or, quote unquote, steal.
+
+28
+00:01:22,650 --> 00:01:24,820
+Again, there weren't
+the laws we have today,
+
+29
+00:01:24,820 --> 00:01:29,380
+so stealing might be a strong
+word for what it was back then.
+
+30
+00:01:29,380 --> 00:01:32,070
+But however you
+got it, there were
+
+31
+00:01:32,070 --> 00:01:36,720
+lots of branches that
+came about from Unix.
+
+32
+00:01:36,720 --> 00:01:38,800
+So to explain this
+tree a little bit here,
+
+33
+00:01:38,800 --> 00:01:42,150
+so the top here are the
+first Unix operating systems.
+
+34
+00:01:42,150 --> 00:01:46,770
+And then they kind of branch
+out into the operating systems
+
+35
+00:01:46,770 --> 00:01:48,820
+that were, on the
+right-hand side here,
+
+36
+00:01:48,820 --> 00:01:50,230
+a lot of these are Sun.
+
+37
+00:01:50,230 --> 00:01:54,040
+So Sun Microsystems developed
+their own operating system,
+
+38
+00:01:54,040 --> 00:01:57,040
+and then eventually Sun was
+actually bought by Oracle,
+
+39
+00:01:57,040 --> 00:02:01,860
+and oracle owns the
+Unix operating systems,
+
+40
+00:02:01,860 --> 00:02:04,390
+like Solaris right here, if
+you can see where my mouse is.
+
+41
+00:02:04,390 --> 00:02:08,220
+Solaris is a huge operating
+system that Oracle owns today.
+
+42
+00:02:08,220 --> 00:02:09,880
+And Oracle runs all things Java.
+
+43
+00:02:09,880 --> 00:02:10,860
+So it's Java.
+
+44
+00:02:10,860 --> 00:02:13,770
+For their enterprise
+servers, they
+
+45
+00:02:13,770 --> 00:02:16,480
+will tell you it's
+optimized to run on Solaris,
+
+46
+00:02:16,480 --> 00:02:18,270
+but really Java is
+platform independent.
+
+47
+00:02:18,270 --> 00:02:20,310
+It can run anywhere.
+
+48
+00:02:20,310 --> 00:02:23,200
+Anyway, and then the
+green ones, that's
+
+49
+00:02:23,200 --> 00:02:27,300
+the real focus of what I
+want you to learn here.
+
+50
+00:02:27,300 --> 00:02:30,150
+So the green ones are the
+free Unix operating systems,
+
+51
+00:02:30,150 --> 00:02:32,380
+are not run by a company.
+
+52
+00:02:32,380 --> 00:02:33,910
+They might be
+managed or overseen,
+
+53
+00:02:33,910 --> 00:02:37,380
+but they're free and
+open and available
+
+54
+00:02:37,380 --> 00:02:39,220
+and run by a community.
+
+55
+00:02:39,220 --> 00:02:41,930
+So the founder of Linux, which
+is the operating system we're
+
+56
+00:02:41,930 --> 00:02:43,680
+going to use, if you
+see where my mouse is
+
+57
+00:02:43,680 --> 00:02:48,870
+hovering here over on the
+left, Linux was born in 1991.
+
+58
+00:02:48,870 --> 00:02:52,240
+And as you can see
+here on this graph,
+
+59
+00:02:52,240 --> 00:02:55,210
+Linux did not branch off
+from a version of Unix.
+
+60
+00:02:55,210 --> 00:02:56,890
+That's a common misconception.
+
+61
+00:02:56,890 --> 00:03:00,010
+Although, the founder of
+Linux, let me show you him.
+
+62
+00:03:00,010 --> 00:03:02,710
+This is Linus Torvalds,
+the founder of Linux.
+
+63
+00:03:02,710 --> 00:03:08,440
+He was heavily influenced by
+Unix, both in the how it runs,
+
+64
+00:03:08,440 --> 00:03:12,030
+how it's used, and also
+just the philosophy
+
+65
+00:03:12,030 --> 00:03:18,090
+of a operating system that was
+free, open, and built and run
+
+66
+00:03:18,090 --> 00:03:20,350
+by a community rather
+than a company.
+
+67
+00:03:20,350 --> 00:03:23,080
+So while not directly
+a branch from Unix,
+
+68
+00:03:23,080 --> 00:03:26,670
+it is still heavily influenced
+and very similar to Unix
+
+69
+00:03:26,670 --> 00:03:27,700
+in a lot of ways.
+
+70
+00:03:27,700 --> 00:03:29,590
+So that is Linux.
+
+71
+00:03:29,590 --> 00:03:32,400
+And again, because
+Linux is free and became
+
+72
+00:03:32,400 --> 00:03:35,380
+such a stable and
+robust operating system,
+
+73
+00:03:35,380 --> 00:03:39,790
+it became extremely popular
+in professional use.
+
+74
+00:03:39,790 --> 00:03:43,920
+And then a company called
+Red Hat came onto the scene,
+
+75
+00:03:43,920 --> 00:03:46,590
+and Red Hat is kind of all
+bunched in, in all things Linux
+
+76
+00:03:46,590 --> 00:03:47,820
+right there.
+
+77
+00:03:47,820 --> 00:03:50,940
+Red Hat started to compete with
+professional Unix operating
+
+78
+00:03:50,940 --> 00:03:52,740
+systems, and in
+my opinion, really
+
+79
+00:03:52,740 --> 00:03:56,370
+put them not out of business,
+but just destroyed their market
+
+80
+00:03:56,370 --> 00:03:58,890
+share in professional
+server usage
+
+81
+00:03:58,890 --> 00:04:01,560
+today because Red
+Hat was extremely
+
+82
+00:04:01,560 --> 00:04:04,410
+cheap because the operating
+system itself was free
+
+83
+00:04:04,410 --> 00:04:07,110
+and you're paying
+for the support of it
+
+84
+00:04:07,110 --> 00:04:11,250
+compared to the
+other Unix operating
+
+85
+00:04:11,250 --> 00:04:13,390
+systems of the day, which
+were much more expensive.
+
+86
+00:04:13,390 --> 00:04:15,840
+So Linux started
+to just take over
+
+87
+00:04:15,840 --> 00:04:20,519
+Unix in the commercial
+server world.
+
+88
+00:04:20,519 --> 00:04:22,770
+And it was adopted by AWS.
+
+89
+00:04:22,770 --> 00:04:28,920
+AWS has their own version of
+Linux, Amazon Linux, which
+
+90
+00:04:28,920 --> 00:04:31,140
+is great, but we're I
+prefer you to use Ubuntu,
+
+91
+00:04:31,140 --> 00:04:35,940
+just because Ubuntu is a little
+easier to use and all of us
+
+92
+00:04:35,940 --> 00:04:38,310
+using Ubuntu will keep-- it's
+easier to keep everything
+
+93
+00:04:38,310 --> 00:04:41,370
+in sync and we can share
+commands with each other
+
+94
+00:04:41,370 --> 00:04:43,280
+and use it like that.
+
+95
+00:04:43,280 --> 00:04:45,230
+So Linux versus Windows,
+why not Windows?
+
+96
+00:04:45,230 --> 00:04:46,820
+Again, Linux is free.
+
+97
+00:04:46,820 --> 00:04:48,890
+Windows, although
+really Linux has
+
+98
+00:04:48,890 --> 00:04:52,010
+forced Windows to get a
+lot cheaper over the years.
+
+99
+00:04:52,010 --> 00:04:54,840
+But Windows is still
+not free, at least yet.
+
+100
+00:04:54,840 --> 00:04:55,880
+So Linux is free.
+
+101
+00:04:55,880 --> 00:04:59,750
+Linux is heavily used by
+software developers and software
+
+102
+00:04:59,750 --> 00:05:05,570
+engineers and has proven to be
+very stable, very robust, very
+
+103
+00:05:05,570 --> 00:05:06,780
+good operating system.
+
+104
+00:05:06,780 --> 00:05:11,280
+And the fact that it's free
+makes it widely, widely popular.
+
+105
+00:05:11,280 --> 00:05:15,230
+So that is the operating
+system used by AWS and one
+
+106
+00:05:15,230 --> 00:05:16,650
+we will also use here.
+
+107
+00:05:16,650 --> 00:05:18,300
+So Linux commands
+in the terminal.
+
+108
+00:05:18,300 --> 00:05:20,360
+So the day-to-day
+usage that you'll
+
+109
+00:05:20,360 --> 00:05:24,800
+have in this course with Linux
+will be running your code
+
+110
+00:05:24,800 --> 00:05:26,970
+and also working in a terminal.
+
+111
+00:05:26,970 --> 00:05:31,950
+So in moving over to AWS now,
+as you may or may not know,
+
+112
+00:05:31,950 --> 00:05:34,250
+you can open up a
+terminal and then just
+
+113
+00:05:34,250 --> 00:05:39,690
+enter commands directly
+into the command line here.
+
+114
+00:05:39,690 --> 00:05:42,325
+So here's your code, here's
+the file browser on the left.
+
+115
+00:05:42,325 --> 00:05:43,450
+Your code is in the middle.
+
+116
+00:05:43,450 --> 00:05:46,620
+And then if you open up a
+terminal by plus New Terminal
+
+117
+00:05:46,620 --> 00:05:48,420
+right there, then
+you can directly
+
+118
+00:05:48,420 --> 00:05:50,580
+interact with the
+operating system
+
+119
+00:05:50,580 --> 00:05:52,100
+through commands in a terminal.
+
+120
+00:05:52,100 --> 00:05:52,600
+All right.
+
+121
+00:05:52,600 --> 00:05:55,230
+So I went over to
+GPT and I was curious
+
+122
+00:05:55,230 --> 00:06:00,840
+what GPT's thoughts on
+what the most popular
+
+123
+00:06:00,840 --> 00:06:02,770
+20 Linux commands were.
+
+124
+00:06:02,770 --> 00:06:05,490
+So I threw that into--
+
+125
+00:06:05,490 --> 00:06:06,795
+and you can see on my screen.
+
+126
+00:06:06,795 --> 00:06:09,420
+I just asked it, but I'll just
+ask it again and talk about them
+
+127
+00:06:09,420 --> 00:06:11,770
+as GPT starts cranking them out.
+
+128
+00:06:11,770 --> 00:06:16,980
+So I asked, what are the 20
+most useful Linux commands?
+
+129
+00:06:16,980 --> 00:06:19,185
+And to me, the list
+is almost perfect.
+
+130
+00:06:19,185 --> 00:06:21,070
+Whoop, error generating.
+
+131
+00:06:21,070 --> 00:06:23,760
+Well, let's try again.
+
+132
+00:06:23,760 --> 00:06:25,450
+Now I'm getting a connectivity.
+
+133
+00:06:25,450 --> 00:06:26,820
+That's OK.
+
+134
+00:06:26,820 --> 00:06:29,050
+This is like a cooking show.
+
+135
+00:06:29,050 --> 00:06:33,693
+When I ruin the cake, when I'm
+making a cake and I ruin it,
+
+136
+00:06:33,693 --> 00:06:35,860
+there's already one in the
+oven that I can show you.
+
+137
+00:06:35,860 --> 00:06:36,443
+So here it is.
+
+138
+00:06:36,443 --> 00:06:41,310
+So here's the 20 most useful
+Linux commands according to GPT.
+
+139
+00:06:41,310 --> 00:06:42,970
+And honestly, I love the list.
+
+140
+00:06:42,970 --> 00:06:51,180
+So ls, cd, mkdir, remove, copy,
+move, cat, grep are all those
+
+141
+00:06:51,180 --> 00:06:56,490
+are all commands I use almost
+daily within a Linux terminal.
+
+142
+00:06:56,490 --> 00:06:58,920
+The only one on here
+that I really don't--
+
+143
+00:06:58,920 --> 00:07:00,550
+GPT was almost perfect.
+
+144
+00:07:00,550 --> 00:07:02,350
+The one really not is ifconfig.
+
+145
+00:07:02,350 --> 00:07:05,190
+Ifconfig, if you're a system
+administrator or a network
+
+146
+00:07:05,190 --> 00:07:07,810
+administrator, then yeah, you're
+going to use ifconfig daily.
+
+147
+00:07:07,810 --> 00:07:09,980
+But ifconfig is a configure
+network interfaces,
+
+148
+00:07:09,980 --> 00:07:11,980
+which you're not really
+going to be doing a lot.
+
+149
+00:07:11,980 --> 00:07:14,460
+So last time I used
+ifconfig was when
+
+150
+00:07:14,460 --> 00:07:17,290
+I was working for Bank of
+America's investment bank
+
+151
+00:07:17,290 --> 00:07:18,880
+and trying to figure
+out why computers
+
+152
+00:07:18,880 --> 00:07:19,970
+couldn't talk to each other.
+
+153
+00:07:19,970 --> 00:07:22,303
+So it is useful if you're
+troubleshooting network things
+
+154
+00:07:22,303 --> 00:07:23,540
+or working on network things.
+
+155
+00:07:23,540 --> 00:07:25,510
+But honestly, other
+than that, this list
+
+156
+00:07:25,510 --> 00:07:30,520
+is fantastic and will
+really be heavily the list
+
+157
+00:07:30,520 --> 00:07:31,820
+that you use day to day.
+
+158
+00:07:31,820 --> 00:07:34,820
+So to just play around, I'll
+just grab the first four here.
+
+159
+00:07:34,820 --> 00:07:37,070
+So ls, cd, mkdir, and remove.
+
+160
+00:07:37,070 --> 00:07:39,470
+So if you go into a
+terminal here and do an ls,
+
+161
+00:07:39,470 --> 00:07:42,850
+it'll give you a listing of
+everything in your directory
+
+162
+00:07:42,850 --> 00:07:44,170
+that you're in.
+
+163
+00:07:44,170 --> 00:07:45,473
+And you can see right there--
+
+164
+00:07:45,473 --> 00:07:47,140
+let me do another one
+on that list, pwd.
+
+165
+00:07:47,140 --> 00:07:50,170
+So pwd stands for print
+working directory and that
+
+166
+00:07:50,170 --> 00:07:52,510
+tells me I'm in HOME
+Ubuntu environment.
+
+167
+00:07:52,510 --> 00:07:55,030
+And let me point out something
+about HOME Ubuntu environment
+
+168
+00:07:55,030 --> 00:07:56,110
+in AWS.
+
+169
+00:07:56,110 --> 00:07:59,090
+When you create a Cloud9
+environment, you give it a name,
+
+170
+00:07:59,090 --> 00:08:04,270
+it gives that the location
+of that folder's name.
+
+171
+00:08:04,270 --> 00:08:05,770
+The-- excuse me.
+
+172
+00:08:05,770 --> 00:08:08,840
+It assigns that folder to
+HOME Ubuntu environment.
+
+173
+00:08:08,840 --> 00:08:12,370
+So in other words, I named
+this environment data 5500.
+
+174
+00:08:12,370 --> 00:08:18,020
+That is the folder HOME Ubuntu
+environment on the file system.
+
+175
+00:08:18,020 --> 00:08:20,620
+So when I do a pwd, it's
+HOME Ubuntu environment.
+
+176
+00:08:20,620 --> 00:08:22,090
+And then when I
+do an ls, you can
+
+177
+00:08:22,090 --> 00:08:27,070
+see it's got all of the same
+folders you see on the left
+
+178
+00:08:27,070 --> 00:08:30,070
+here, so data 5500
+code, data 5500
+
+179
+00:08:30,070 --> 00:08:33,110
+file 22, data 5500 spring 2023.
+
+180
+00:08:33,110 --> 00:08:35,559
+All of those are the
+same things you see when
+
+181
+00:08:35,559 --> 00:08:38,270
+you do an ls in the terminal.
+
+182
+00:08:38,270 --> 00:08:40,887
+So that's kind of how you
+can keep an eye on things
+
+183
+00:08:40,887 --> 00:08:42,429
+to make sure
+everything's matching up
+
+184
+00:08:42,429 --> 00:08:44,059
+in the terminal and
+the file system,
+
+185
+00:08:44,059 --> 00:08:46,930
+not that you really need to
+because the terminal will
+
+186
+00:08:46,930 --> 00:08:47,813
+be correct.
+
+187
+00:08:47,813 --> 00:08:49,730
+Another command that's
+really useful is mkdir.
+
+188
+00:08:49,730 --> 00:08:51,910
+So I'm going to do
+mkdir Andy test,
+
+189
+00:08:51,910 --> 00:08:53,600
+and that creates a new folder.
+
+190
+00:08:53,600 --> 00:08:56,110
+So if you look over to the left,
+now there's mkdir Andy test
+
+191
+00:08:56,110 --> 00:08:57,710
+and there's nothing
+in there yet.
+
+192
+00:08:57,710 --> 00:09:00,070
+I'm going to do a
+cd into Andy test.
+
+193
+00:09:00,070 --> 00:09:03,040
+Now do a pwd, you'll see that
+I'm in HOME Ubuntu environment
+
+194
+00:09:03,040 --> 00:09:04,100
+Andy test.
+
+195
+00:09:04,100 --> 00:09:05,700
+And I can do an ls in here.
+
+196
+00:09:05,700 --> 00:09:10,760
+There's nothing in here yet, but
+I can do an echo, hello world,
+
+197
+00:09:10,760 --> 00:09:14,040
+and redirect that to test.txt.
+
+198
+00:09:14,040 --> 00:09:16,500
+And you can see now
+I've got my test.txt.
+
+199
+00:09:16,500 --> 00:09:20,790
+hello world right there
+from my echo command.
+
+200
+00:09:20,790 --> 00:09:25,070
+So that's-- and one more command
+I probably should show you here
+
+201
+00:09:25,070 --> 00:09:30,617
+is a pip3 install NumPy, which
+I already have NumPy installed,
+
+202
+00:09:30,617 --> 00:09:31,950
+but, hey, it's getting me NumPy.
+
+203
+00:09:31,950 --> 00:09:32,492
+There you go.
+
+204
+00:09:32,492 --> 00:09:33,770
+I guess I didn't.
+
+205
+00:09:33,770 --> 00:09:34,680
+That's interesting.
+
+206
+00:09:34,680 --> 00:09:39,320
+So pip3 is a very another very
+useful command for this course
+
+207
+00:09:39,320 --> 00:09:42,110
+because you're going to be where
+you're going to be using Python
+
+208
+00:09:42,110 --> 00:09:44,120
+and you're going to need
+all of the libraries
+
+209
+00:09:44,120 --> 00:09:46,280
+that you'll install with pip.
+
+210
+00:09:46,280 --> 00:09:49,730
+Another note,
+though, pip3 refers
+
+211
+00:09:49,730 --> 00:09:52,200
+to Python 3's version of pip.
+
+212
+00:09:52,200 --> 00:09:54,600
+So these are 2018
+Ubuntu servers.
+
+213
+00:09:54,600 --> 00:09:56,510
+So when you just
+run pip, it's going
+
+214
+00:09:56,510 --> 00:10:01,740
+to give you the 2018 or
+Python 2 version of pip,
+
+215
+00:10:01,740 --> 00:10:06,420
+which Python 2 has been end of
+life and decommissioned already.
+
+216
+00:10:06,420 --> 00:10:07,920
+So it's not in
+production anymore.
+
+217
+00:10:07,920 --> 00:10:10,065
+So that is one little
+annoying thing that you'll
+
+218
+00:10:10,065 --> 00:10:11,690
+have to kind of just
+remember is you'll
+
+219
+00:10:11,690 --> 00:10:16,040
+have to use pip3, not pip.
+
+220
+00:10:16,040 --> 00:10:19,200
+But hopefully AWS gets around to
+upgrading their Ubuntu servers
+
+221
+00:10:19,200 --> 00:10:21,840
+and you don't have to deal
+with pip anymore, or with pip3.
+
+222
+00:10:21,840 --> 00:10:22,882
+You can just call it pip.
+
+223
+00:10:22,882 --> 00:10:27,290
+But for now, use pip3 to install
+any of your Python libraries.
+
+224
+00:10:27,290 --> 00:10:28,040
+OK.
+
+225
+00:10:28,040 --> 00:10:30,540
+I think that is
+about it for Linux.
+
+226
+00:10:30,540 --> 00:10:34,100
+And again, there's so much
+awesome documentation on Linux
+
+227
+00:10:34,100 --> 00:10:37,160
+out there, which means
+that that documentation has
+
+228
+00:10:37,160 --> 00:10:39,300
+been trained by GPT.
+
+229
+00:10:39,300 --> 00:10:43,340
+So GPT is a fantastic
+resource for trying
+
+230
+00:10:43,340 --> 00:10:45,770
+to figure out things or
+learn things or troubleshoot
+
+231
+00:10:45,770 --> 00:10:50,660
+things in Linux and AWS, but
+specifically the documentation
+
+232
+00:10:50,660 --> 00:10:53,520
+is going to be much,
+much wider for Linux.
+
+233
+00:10:53,520 --> 00:10:57,380
+So highly recommend you use
+GPT to work through all things
+
+234
+00:10:57,380 --> 00:10:59,030
+Linux.
+
+235
+00:10:59,030 --> 00:10:59,958
+And that's it.
+
+236
+00:10:59,958 --> 00:11:00,750
+Oh, one more thing.
+
+237
+00:11:00,750 --> 00:11:06,530
+So now that you know a little
+more about Unix and Linux, now
+
+238
+00:11:06,530 --> 00:11:10,740
+you will better understand a
+funny scene in Wayne's World 2.
+
+239
+00:11:10,740 --> 00:11:16,190
+This is Wayne's World 2, when
+Garth and Betty Jo fall in love,
+
+240
+00:11:16,190 --> 00:11:17,460
+and check it out.
+
+241
+00:11:17,460 --> 00:11:18,446
+[VIDEO PLAYBACK]
+
+242
+00:11:18,446 --> 00:11:22,390
+[MUSIC PLAYING]
+
+243
+00:11:22,390 --> 00:11:25,810
+- That's a Unix book.
+
+244
+00:11:25,810 --> 00:11:26,950
+- Yeah.
+
+245
+00:11:26,950 --> 00:11:28,284
+- Cool.
+
+246
+00:11:28,284 --> 00:11:29,040
+[END PLAYBACK]
+
+247
+00:11:29,040 --> 00:11:30,400
+INSTRUCTOR: That's a Unix book.
+
+248
+00:11:30,400 --> 00:11:30,960
+Yeah.
+
+249
+00:11:30,960 --> 00:11:31,870
+Cool.
+
+250
+00:11:31,870 --> 00:11:34,410
+Now you understand that
+it's an operating system
+
+251
+00:11:34,410 --> 00:11:40,090
+and that Garth and Betty
+Jo in Wayne's World 2--
+
+252
+00:11:40,090 --> 00:11:43,120
+Garth and Betty Jo in
+Wayne's World 2 fall in love
+
+253
+00:11:43,120 --> 00:11:45,290
+over a Unix book.
+
+254
+00:11:45,290 --> 00:11:45,960
+That's it.
+
+255
+00:11:45,960 --> 00:11:47,790
+That concludes
+our content video.
+
+256
+00:11:47,790 --> 00:11:49,540
+Thanks for watching.

@@ -1,0 +1,266 @@
+1
+00:00:02,780 --> 00:00:04,940
+Hey everybody, welcome
+to the content video for
+
+2
+00:00:04,940 --> 00:00:11,200
+section 5.9, Searching
+Sequences. So like list sorting,
+
+3
+00:00:11,200 --> 00:00:14,500
+list searching is also a
+very, very complex topic
+
+4
+00:00:14,500 --> 00:00:16,780
+and it gets very complicated with a
+
+5
+00:00:16,780 --> 00:00:20,060
+lot of different searching algorithms
+
+6
+00:00:21,080 --> 00:00:26,220
+and algorithms that take huge
+amounts of computing power.
+
+7
+00:00:26,300 --> 00:00:28,960
+None of that is what we're gonna
+cover in this content video.
+
+8
+00:00:28,960 --> 00:00:32,870
+This one's also going to be
+kind of quick. there's two I
+
+9
+00:00:34,300 --> 00:00:38,340
+guess terms or functions I want
+you to know one is index and
+
+10
+00:00:38,340 --> 00:00:45,120
+the other is in or not in so
+what we're gonna do is do a
+
+11
+00:00:45,120 --> 00:00:49,820
+couple of examples with that
+so this is the searching okay
+
+12
+00:00:52,980 --> 00:00:57,820
+so let's say we have a list of
+I don't know favorite colors.
+
+13
+00:00:59,680 --> 00:01:01,880
+And we'll get a little bit more variety
+
+14
+00:01:01,880 --> 00:01:04,430
+this time. We'll do red. Whoops,
+
+15
+00:01:04,430 --> 00:01:07,380
+should probably put the
+quotation marks on color. Yellow,
+
+16
+00:01:07,660 --> 00:01:16,740
+green, blue, orange, orange,
+
+17
+00:01:19,340 --> 00:01:21,640
+and we'll throw in pink.
+
+18
+00:01:22,910 --> 00:01:24,350
+Those are all the colors.
+
+19
+00:01:24,740 --> 00:01:26,940
+There's no other colors.
+
+20
+00:01:30,360 --> 00:01:34,940
+So what I would want to do is
+maybe if, let's say this list
+
+21
+00:01:34,940 --> 00:01:38,960
+is massive, like thousands
+and thousands and thousands of
+
+22
+00:01:38,960 --> 00:01:43,360
+colors in a data set or in a
+list, and I don't know if a
+
+23
+00:01:43,360 --> 00:01:48,060
+particular color is in that list,
+so I want to do a search on the
+
+24
+00:01:48,060 --> 00:01:51,520
+list to find it. So what I
+could do is I could say print
+
+25
+00:01:51,520 --> 00:01:58,900
+out favorite colors and I want
+the index for the color green.
+
+26
+00:02:02,460 --> 00:02:05,600
+And what this will do, I used the wrong
+
+27
+00:02:05,600 --> 00:02:08,440
+key. I'm bad at typing today, y'all.
+
+28
+00:02:08,860 --> 00:02:11,160
+That's wrong too. Hang on. Okay.
+
+29
+00:02:14,440 --> 00:02:17,040
+What this will do is it will return
+
+30
+00:02:17,040 --> 00:02:19,040
+to me the index of the color green.
+
+31
+00:02:20,280 --> 00:02:23,300
+So it's at the second index.
+And again, imagine with me
+
+32
+00:02:23,300 --> 00:02:27,400
+that this is a huge list with
+so many things in it, and it's
+
+33
+00:02:27,400 --> 00:02:30,600
+going to return to me the first
+instance of that color. So
+
+34
+00:02:30,600 --> 00:02:33,500
+I don't have to worry anymore.
+Green is in this data set.
+
+35
+00:02:33,660 --> 00:02:39,700
+What if I threw another green on
+the end so green it would still just
+
+36
+00:02:39,700 --> 00:02:43,480
+return to me the first index of where
+that item shows up so that's one
+
+37
+00:02:43,480 --> 00:02:49,440
+way to search a list um it is case
+sensitive so if i was to type in
+
+38
+00:02:49,440 --> 00:02:54,860
+capital g green for example and run
+this code it will not find green
+
+39
+00:02:54,860 --> 00:02:58,900
+in the list so we get a value error
+all right so let me switch that
+
+40
+00:02:58,900 --> 00:03:05,700
+back okay the other one is the in
+operator whoops sorry that's some That's
+
+41
+00:03:05,700 --> 00:03:12,670
+not where I wanted. So the in
+operator looks for a true false in if
+
+42
+00:03:12,880 --> 00:03:22,020
+something is in a list or in a
+sequence. So if I was to say, if green
+
+43
+00:03:23,570 --> 00:03:31,520
+in fav colors, that's, yeah, that's
+definitely what I wanted to do.
+
+44
+00:03:35,280 --> 00:03:38,240
+Okay, if green in favorite colors, print.
+
+45
+00:03:39,300 --> 00:03:42,140
+Green is in the list.
+
+46
+00:03:44,460 --> 00:03:48,940
+Okay, so you can see here that green is
+
+47
+00:03:48,940 --> 00:03:52,860
+in our list. What about capital G green?
+
+48
+00:03:53,720 --> 00:03:55,460
+Let's throw one else on here.
+
+49
+00:04:07,210 --> 00:04:10,130
+Okay, so that value is not on
+the list. So the in operator
+
+50
+00:04:10,130 --> 00:04:14,630
+searches the list for that value
+that we specify. If it finds
+
+51
+00:04:14,630 --> 00:04:18,270
+it, it returns true. If it does
+not find it it returns false.
+
+52
+00:04:18,410 --> 00:04:27,670
+Similarly we can use not in and
+not in looks for the opposite just
+
+53
+00:04:27,670 --> 00:04:31,370
+like with a boolean operator not
+just reverses what we're looking or
+
+54
+00:04:31,370 --> 00:04:36,470
+the the truthfulness of the results.
+So not in if normally that would
+
+55
+00:04:36,470 --> 00:04:41,150
+be true now it's false if it's
+normally true it's now false so that
+
+56
+00:04:41,150 --> 00:04:46,170
+is very very complex list searching
+simplified down to a couple of
+
+57
+00:04:46,170 --> 00:04:49,110
+methods and that concludes this
+content video thank you for watching

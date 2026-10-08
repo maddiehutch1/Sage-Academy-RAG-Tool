@@ -1,0 +1,315 @@
+1
+00:00:02,970 --> 00:00:05,250
+Hey everybody, this is the content video
+
+2
+00:00:05,250 --> 00:00:07,410
+going over section 3.12 of your textbook,
+
+3
+00:00:07,410 --> 00:00:10,530
+nested control statements
+or just nested statements.
+
+4
+00:00:10,830 --> 00:00:15,390
+And this, the idea is rather simple.
+In fact, we used a nested statement
+
+5
+00:00:15,390 --> 00:00:20,030
+in the Sentinel Values content
+video. We had a while statement or a
+
+6
+00:00:20,030 --> 00:00:25,750
+while loop. And inside of that while
+loop, we had an if lf lf block. And
+
+7
+00:00:25,750 --> 00:00:29,030
+so really what that's saying is it's
+just a statement within a statement,
+
+8
+00:00:29,030 --> 00:00:33,590
+right? But I wanted to read
+through kind of this example on the
+
+9
+00:00:33,590 --> 00:00:37,970
+section 3.12 here because I think it
+puts forward a good problem that is
+
+10
+00:00:37,970 --> 00:00:41,610
+similar to ones that you might see
+as you code throughout your life. So
+
+11
+00:00:41,610 --> 00:00:45,900
+it says a college offers a course
+that prepares students for state
+
+12
+00:00:45,900 --> 00:00:50,090
+licensing for the state licensing exam
+for real estate brokers. Last year
+
+13
+00:00:50,090 --> 00:00:52,670
+several of the students who completed
+this course took the licensing
+
+14
+00:00:52,670 --> 00:00:55,970
+examination. College wants to know
+how well its students did on the exam
+
+15
+00:00:55,970 --> 00:00:59,950
+and you've been asked to write a
+program to summarize the results. So you
+
+16
+00:00:59,950 --> 00:01:02,510
+have a list of 10 of these students,
+next to each name is written a
+
+17
+00:01:02,510 --> 00:01:07,370
+one if they passed and a two if they
+failed right so if you're just given
+
+18
+00:01:07,370 --> 00:01:10,610
+a problem like that I don't know
+about you guys but my brain kind of
+
+19
+00:01:10,610 --> 00:01:13,270
+short circuits for a second and
+it's like trying to remember all the
+
+20
+00:01:13,270 --> 00:01:17,510
+little details and saying wait wait
+okay hang on we had students in the
+
+21
+00:01:17,510 --> 00:01:21,310
+exam and so this is where we start
+putting together a lot of the ideas
+
+22
+00:01:21,310 --> 00:01:26,030
+that we've started covering pseudo
+code loops nested statements if lf
+
+23
+00:01:26,030 --> 00:01:30,150
+blocks and if you scroll down a
+little bit farther. I think maybe they
+
+24
+00:01:30,240 --> 00:01:36,610
+actually like code out, you know, they've
+got several examples of pseudocoding,
+
+25
+00:01:36,610 --> 00:01:40,210
+right? So analyze exam results,
+decide whether instructors should
+
+26
+00:01:40,210 --> 00:01:44,070
+receive a bonus. Actually, that
+might be something sort of different.
+
+27
+00:01:44,550 --> 00:01:46,370
+Summarize exam results,
+
+28
+00:01:46,770 --> 00:01:48,130
+initialize variables,
+
+29
+00:01:48,330 --> 00:01:53,170
+passes zero, doesn't pass zero, 10
+grade exam or 10 exam grades. And
+
+30
+00:01:53,170 --> 00:01:57,450
+so they They refine it over and
+over. Here's the complete pseudocode.
+
+31
+00:01:58,890 --> 00:02:02,630
+Initialize passes to zero for each
+of the 10 students. Input the exam
+
+32
+00:02:02,630 --> 00:02:05,990
+result. If a student passes, add
+one else, add one to failures,
+
+33
+00:02:05,990 --> 00:02:09,730
+whatever. Right. And here's what the
+actual code looks like. And I think
+
+34
+00:02:09,730 --> 00:02:13,310
+I mentioned this again in the
+pseudocode video. But our initial
+
+35
+00:02:13,310 --> 00:02:16,910
+response to being posed a problem is
+to just start answering it. Right.
+
+36
+00:02:16,910 --> 00:02:20,790
+And a lot of times if we just take
+a step back and actually look at
+
+37
+00:02:20,790 --> 00:02:23,910
+the problem and start to think
+about it in the big picture and what
+
+38
+00:02:23,910 --> 00:02:27,350
+tools we'll need, the result becomes
+a lot clearer. And that's why
+
+39
+00:02:27,350 --> 00:02:31,120
+we're talking about nested statements
+as well is because generally
+
+40
+00:02:31,120 --> 00:02:35,990
+speaking, an algorithm isn't as
+simple as just a single loop on a page
+
+41
+00:02:35,990 --> 00:02:40,750
+or on a file and it just runs
+one thing. Right. Usually we have
+
+42
+00:02:40,750 --> 00:02:45,710
+several layers of different code
+doing different components to solve
+
+43
+00:02:45,710 --> 00:02:48,370
+different parts of the algorithm to
+output the result that we actually
+
+44
+00:02:48,370 --> 00:02:52,210
+want. And so that's why it's worth
+talking about nested statements.
+
+45
+00:02:52,850 --> 00:02:56,950
+And I guess we can code just a
+quick example to kind of show you.
+
+46
+00:02:56,950 --> 00:03:04,190
+I'll just do a quick nested statement
+just to kind of illustrate the
+
+47
+00:03:04,190 --> 00:03:07,620
+point a little bit more. Let's say
+we wanted to do a for loop. let's
+
+48
+00:03:07,850 --> 00:03:18,250
+say for i in range 3 we'll do for
+j in range 4 and what I want to do
+
+49
+00:03:18,250 --> 00:03:24,790
+is I actually just want to print
+out i times j there's mine there it
+
+50
+00:03:24,790 --> 00:03:33,390
+is and we'll do an end equals to
+put them all on the same line where
+
+51
+00:03:33,390 --> 00:03:36,290
+this will make like a multiplication
+table. So if we were to print out,
+
+52
+00:03:36,290 --> 00:03:43,530
+actually let's just run it as is,
+we would see all the multiples of
+
+53
+00:03:43,530 --> 00:03:50,050
+0 to 2 times 0 to 3 and here they
+all are and anything else that we
+
+54
+00:03:50,050 --> 00:03:52,650
+might do after this is just formatting.
+So maybe I want to put like a
+
+55
+00:03:52,650 --> 00:04:00,930
+space in between each of them and
+we'll do end equals so that everything
+
+56
+00:04:00,930 --> 00:04:04,630
+gets printed on the same line and
+then maybe in my outer for loop
+
+57
+00:04:04,630 --> 00:04:09,010
+I'll just do a new line so that
+each of our multiplications get put
+
+58
+00:04:09,010 --> 00:04:12,490
+onto a new row. So here's the output.
+I don't know if the multiplication
+
+59
+00:04:12,490 --> 00:04:15,950
+table is the best example of it
+but this is a loop within a loop.
+
+60
+00:04:15,950 --> 00:04:18,910
+We can do while loops within while
+loops, for loops within while
+
+61
+00:04:18,910 --> 00:04:23,670
+loops, while loops within for
+loops, ifs within for loops, if
+
+62
+00:04:23,670 --> 00:04:26,730
+statements within if statements and
+it can really get pretty complicated.
+
+63
+00:04:26,730 --> 00:04:29,390
+But that's why studio coding
+is such a good tool. And so
+
+64
+00:04:29,390 --> 00:04:32,050
+that wraps everything for this
+content video. Thanks for watching.

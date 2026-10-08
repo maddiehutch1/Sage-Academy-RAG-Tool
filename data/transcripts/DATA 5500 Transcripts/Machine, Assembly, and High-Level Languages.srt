@@ -1,0 +1,443 @@
+1
+00:00:02,910 --> 00:00:06,210
+Hello, everybody, and welcome
+to the content video going over
+
+2
+00:00:06,210 --> 00:00:10,970
+section 1.4 of your textbook, machine
+languages, assembly languages,
+
+3
+00:00:10,970 --> 00:00:14,310
+and high-level languages.
+This section is a great little
+
+4
+00:00:14,310 --> 00:00:17,850
+read. It's pretty short, a little
+something you can read before
+
+5
+00:00:17,850 --> 00:00:21,510
+bed on a Friday night when you're
+not busy doing anything else.
+
+6
+00:00:22,270 --> 00:00:26,090
+But I think it's a great little
+section that sums up the differences
+
+7
+00:00:26,090 --> 00:00:29,030
+between these different languages
+pretty well. So let's jump into it.
+
+8
+00:00:29,290 --> 00:00:35,090
+First, we have machine languages.
+So I like what it says here that
+
+9
+00:00:35,090 --> 00:00:40,750
+machine language consists of
+strings and numbers that instruct
+
+10
+00:00:40,750 --> 00:00:44,530
+computers to perform their most
+elementary operations one at a time.
+
+11
+00:00:44,530 --> 00:00:49,090
+So if you look right here in this
+little block, you can see that,
+
+12
+00:00:49,730 --> 00:00:53,910
+I mean, this is code, right? So
+this code is written entirely
+
+13
+00:00:53,910 --> 00:01:00,690
+in numbers so this often is referred
+to as machine code or machine
+
+14
+00:01:00,830 --> 00:01:05,930
+language those are kind of
+interchangeable ways to say that but
+
+15
+00:01:05,930 --> 00:01:08,910
+this little example here you
+wouldn't believe it I guess it
+
+16
+00:01:08,910 --> 00:01:13,990
+spoils it right here this machine
+language takes it's a payroll
+
+17
+00:01:13,990 --> 00:01:17,670
+program that adds overtime pay
+and it converts it to base pay
+
+18
+00:01:17,670 --> 00:01:21,550
+or sorry it adds overtime pay to
+base pay and stores the result
+
+19
+00:01:21,550 --> 00:01:24,530
+in a number called gross pay.
+You would never know it because
+
+20
+00:01:24,690 --> 00:01:28,350
+plus sign one three zero zero zero
+four two seven seven four doesn't
+
+21
+00:01:28,350 --> 00:01:32,270
+really mean anything to the human
+brain. So let's move down a little
+
+22
+00:01:32,270 --> 00:01:37,850
+bit to assembly languages and
+we'll read a little bit more about
+
+23
+00:01:38,730 --> 00:01:43,550
+how these things all work together.
+So assembly language is written in
+
+24
+00:01:43,550 --> 00:01:51,350
+a lot more of an English-like code
+base. And side note, because I
+
+25
+00:01:51,350 --> 00:01:54,790
+always get distracted, but it's
+actually really interesting. You don't
+
+26
+00:01:54,790 --> 00:01:57,030
+think about this too often, but
+like let's say I speak another
+
+27
+00:01:57,030 --> 00:02:00,970
+language like Spanish or French, for
+example. If I'm learning assembly
+
+28
+00:02:00,970 --> 00:02:05,290
+language or Python or something like
+it, I actually still learn it in
+
+29
+00:02:05,290 --> 00:02:08,490
+English. It's just kind of like a
+weird thing that like Python is,
+
+30
+00:02:08,490 --> 00:02:12,470
+or sorry, a lot of these languages
+are English-based. And so you
+
+31
+00:02:12,470 --> 00:02:15,370
+guys, probably a lot of you are
+lucky that you are native English
+
+32
+00:02:15,370 --> 00:02:18,430
+speakers because you are just
+learning one language. You're not
+
+33
+00:02:18,430 --> 00:02:21,970
+learning English as well as code
+languages. So side note over.
+
+34
+00:02:23,050 --> 00:02:26,650
+So here's that very same code that
+we just barely looked at in machine
+
+35
+00:02:26,650 --> 00:02:31,410
+language, now written in assembly
+language. So a more English-like
+
+36
+00:02:31,410 --> 00:02:37,470
+language that kind of translates that
+machine code into something that we
+
+37
+00:02:37,470 --> 00:02:41,710
+can understand as human beings. So
+here it is, load base pay, add over
+
+38
+00:02:41,710 --> 00:02:46,270
+pay, store gross pay. So like it says
+here, this code's clear to humans.
+
+39
+00:02:46,670 --> 00:02:51,270
+It's actually incomprehensible
+to computers until it's broken
+
+40
+00:02:51,270 --> 00:02:55,070
+down into machine language. So
+assembly language is kind of like
+
+41
+00:02:55,950 --> 00:02:59,630
+like a bridge. It's like it
+helps us to understand it,
+
+42
+00:02:59,630 --> 00:03:02,970
+but it actually still needs
+to be taken a section deeper
+
+43
+00:03:02,970 --> 00:03:07,510
+and broken down into
+binary or broken down into
+
+44
+00:03:07,510 --> 00:03:10,670
+machine code before it can be
+understood by the computer.
+
+45
+00:03:10,930 --> 00:03:13,970
+So very fun little thing there.
+
+46
+00:03:14,680 --> 00:03:18,270
+And binary, I think we may have
+touched on this in another content
+
+47
+00:03:18,270 --> 00:03:22,010
+video, binary is able to be understood
+by your CPU. So if I'm writing
+
+48
+00:03:22,010 --> 00:03:26,110
+code in assembly language, then
+that can be translated into machine
+
+49
+00:03:26,110 --> 00:03:29,510
+code, broken down into binary and
+then understood by my computer.
+
+50
+00:03:30,410 --> 00:03:33,370
+So you can take the set of
+instructions you wrote, move data
+
+51
+00:03:33,370 --> 00:03:37,070
+around, manipulate things, do
+math, take the output that you
+
+52
+00:03:37,070 --> 00:03:41,190
+programmed, send it back to machine
+language, back up to assembly,
+
+53
+00:03:41,190 --> 00:03:44,790
+up to Python, etc., etc., which
+spoiler, that takes us down to
+
+54
+00:03:46,470 --> 00:03:49,630
+our next section, which is high
+-level languages and compilers.
+
+55
+00:03:49,630 --> 00:03:53,050
+So very, very first thing I
+want to say here is that python
+
+56
+00:03:53,050 --> 00:03:58,510
+is a high level language it is
+something that is written near
+
+57
+00:03:59,070 --> 00:04:04,210
+or not near to but like it's it's
+like adjacent to english so the
+
+58
+00:04:04,210 --> 00:04:07,370
+way that i'm speaking to you is
+in english and you understand that
+
+59
+00:04:07,370 --> 00:04:11,990
+because you are an english speaker
+and when we write code it doesn't
+
+60
+00:04:11,990 --> 00:04:15,670
+make like you can't write it the
+same way that you would speak it so
+
+61
+00:04:15,670 --> 00:04:19,530
+like i can't just say to my computer
+output my name it won't do that
+
+62
+00:04:19,530 --> 00:04:24,530
+i have to write it in the correct
+syntax but But what's nice about
+
+63
+00:04:24,530 --> 00:04:26,910
+these high-level languages is
+that you don't have to worry about
+
+64
+00:04:26,910 --> 00:04:34,190
+writing in assembly code or machine
+code because your Python code is
+
+65
+00:04:34,190 --> 00:04:38,490
+turned into other languages that
+the computer understands. And so it
+
+66
+00:04:38,490 --> 00:04:42,150
+makes the job even easier for us
+because it takes away a lot of the
+
+67
+00:04:42,150 --> 00:04:47,650
+complicated steps that make code
+understandable by your computer.
+
+68
+00:04:47,910 --> 00:04:51,370
+So if you want to be able to understand
+it as a person who's learning
+
+69
+00:04:51,370 --> 00:04:54,030
+Python, what I want you to
+understand as a person who's learning
+
+70
+00:04:54,030 --> 00:04:58,050
+Python is that you want to be able
+to communicate with your computer.
+
+71
+00:04:58,270 --> 00:05:02,290
+And part of that is through
+something that I'm going to
+
+72
+00:05:02,290 --> 00:05:04,450
+scroll down a little bit
+further to. Oh, sorry, I skipped
+
+73
+00:05:04,450 --> 00:05:07,130
+the example. Gross pay, equal
+base pay, plus overtime pay.
+
+74
+00:05:07,130 --> 00:05:09,690
+That's very simple from a
+high-level language, Python.
+
+75
+00:05:11,290 --> 00:05:15,030
+So one thing that makes Python unique
+is that we have this thing called
+
+76
+00:05:15,030 --> 00:05:19,330
+an interpreter. So compiling a
+large high-level language program
+
+77
+00:05:19,330 --> 00:05:23,150
+into machine language can take a
+lot of computer time. So interpreted
+
+78
+00:05:23,150 --> 00:05:31,470
+programs like Python, they run line
+by line and they're interpreted line
+
+79
+00:05:31,470 --> 00:05:36,510
+by line into machine code so that
+your computer can understand it.
+
+80
+00:05:36,550 --> 00:05:43,420
+So this may not make as much sense
+to you unless you know other coding
+
+81
+00:05:43,420 --> 00:05:48,230
+languages that are compiled. But
+another language like Java or C will
+
+82
+00:05:48,230 --> 00:05:52,290
+compile all of your code all at once
+and then send that to the compiler.
+
+83
+00:05:52,650 --> 00:05:57,300
+Or sorry, send that to your
+computer, your CPU to execute.
+
+84
+00:05:57,310 --> 00:06:02,350
+But Python, which is a lot more
+popular and common than some of these
+
+85
+00:06:02,350 --> 00:06:05,790
+other compiled languages, will
+take your code, like I said, one
+
+86
+00:06:05,790 --> 00:06:11,050
+line at a time, send it to assembly
+machine code, and then we'll execute
+
+87
+00:06:11,050 --> 00:06:15,190
+it line by line. which brings
+us to some interesting errors at
+
+88
+00:06:15,190 --> 00:06:19,030
+times but we'll probably talk about
+that in another content video for
+
+89
+00:06:19,030 --> 00:06:21,550
+now that's going to wrap up this
+section so thank you for watching

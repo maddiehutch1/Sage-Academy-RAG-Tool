@@ -1,0 +1,490 @@
+1
+00:00:02,908 --> 00:00:05,450
+INSTRUCTOR: Hello, everyone,
+and welcome to the content video
+
+2
+00:00:05,450 --> 00:00:08,630
+for List versus BST.
+
+3
+00:00:08,630 --> 00:00:11,240
+OK, so here, I just put
+together a little bit of code
+
+4
+00:00:11,240 --> 00:00:15,050
+to compare which one's really
+faster, a list versus a BST?
+
+5
+00:00:15,050 --> 00:00:16,550
+So let's take a look at that.
+
+6
+00:00:16,550 --> 00:00:20,450
+It's actually inside
+the code bst.py,
+
+7
+00:00:20,450 --> 00:00:23,503
+although you'll need all of
+the functions for the BST,
+
+8
+00:00:23,503 --> 00:00:24,420
+you'll need completed.
+
+9
+00:00:24,420 --> 00:00:25,438
+So really, check out--
+
+10
+00:00:25,438 --> 00:00:27,230
+if you want to go
+straight to the solution,
+
+11
+00:00:27,230 --> 00:00:31,640
+check out bst_complete.py,
+although I highly recommend
+
+12
+00:00:31,640 --> 00:00:35,540
+to try and do the programming
+activities inside bst.py
+
+13
+00:00:35,540 --> 00:00:38,840
+yourself to make sure that
+you understand and can do them
+
+14
+00:00:38,840 --> 00:00:39,915
+yourself.
+
+15
+00:00:39,915 --> 00:00:41,040
+But let's take a look here.
+
+16
+00:00:41,040 --> 00:00:43,550
+So we have BST_complete.
+
+17
+00:00:43,550 --> 00:00:47,180
+OK, so check out line 225 right
+here that I'm highlighting.
+
+18
+00:00:47,180 --> 00:00:52,400
+Here, I'm creating a list
+of a million random numbers.
+
+19
+00:00:52,400 --> 00:00:56,630
+And all of the numbers
+themselves are between 1
+
+20
+00:00:56,630 --> 00:00:57,450
+and 10,000.
+
+21
+00:00:57,450 --> 00:01:00,200
+So between 1 and 10,000, and
+there's a million of those.
+
+22
+00:01:00,200 --> 00:01:04,410
+All right, then I'm going to
+search for the numbers between 1
+
+23
+00:01:04,410 --> 00:01:06,300
+and 10,000 inside there.
+
+24
+00:01:06,300 --> 00:01:08,810
+So it has to go through the
+list of a million numbers
+
+25
+00:01:08,810 --> 00:01:13,350
+until it finds that specific
+number I'm looking for.
+
+26
+00:01:13,350 --> 00:01:16,850
+So what order of
+complexity is this?
+
+27
+00:01:16,850 --> 00:01:18,590
+Well, for all the
+numbers, it's order n
+
+28
+00:01:18,590 --> 00:01:20,930
+squared, but for each
+individual number, it's order n.
+
+29
+00:01:20,930 --> 00:01:23,600
+Check out lines 231 to 233.
+
+30
+00:01:23,600 --> 00:01:25,460
+So I'm just looping
+through the list
+
+31
+00:01:25,460 --> 00:01:28,430
+until I finally find the
+number, then I break.
+
+32
+00:01:28,430 --> 00:01:32,750
+OK, so I look for those
+numbers 10,000 times,
+
+33
+00:01:32,750 --> 00:01:36,160
+order n 10,000 times, and then
+I keep track of how long that
+
+34
+00:01:36,160 --> 00:01:36,660
+took.
+
+35
+00:01:36,660 --> 00:01:39,270
+And here I'm using the
+time.time function.
+
+36
+00:01:39,270 --> 00:01:40,932
+Have an end1 minus start1.
+
+37
+00:01:40,932 --> 00:01:42,390
+That will tell me
+how long it took.
+
+38
+00:01:42,390 --> 00:01:44,240
+OK, now I'm going to
+do the same thing,
+
+39
+00:01:44,240 --> 00:01:45,780
+but I'm going to
+do it in a tree.
+
+40
+00:01:45,780 --> 00:01:48,170
+So check out lines 240 here.
+
+41
+00:01:48,170 --> 00:01:50,600
+I have a root, which
+is equal to my insert.
+
+42
+00:01:50,600 --> 00:01:53,710
+And then I insert the root and
+then a random number between 1
+
+43
+00:01:53,710 --> 00:01:54,460
+and 10,000.
+
+44
+00:01:54,460 --> 00:01:56,380
+And I do that one million times.
+
+45
+00:01:56,380 --> 00:01:58,230
+So when I'm done
+here, I'll have a list
+
+46
+00:01:58,230 --> 00:02:01,170
+of a million random
+numbers and a tree
+
+47
+00:02:01,170 --> 00:02:02,890
+of a million random numbers.
+
+48
+00:02:02,890 --> 00:02:07,060
+Then I'm going to search
+the tree using findKey.
+
+49
+00:02:07,060 --> 00:02:09,270
+It'll just go looking through
+my binary search tree.
+
+50
+00:02:09,270 --> 00:02:13,300
+And then let's see
+which one is faster.
+
+51
+00:02:13,300 --> 00:02:16,500
+OK, so it's running
+right now for the list.
+
+52
+00:02:16,500 --> 00:02:18,220
+And it just finished
+for the list.
+
+53
+00:02:18,220 --> 00:02:20,448
+So let's look at that
+output right here.
+
+54
+00:02:20,448 --> 00:02:22,740
+So if you can see where I'm
+highlighting in my console,
+
+55
+00:02:22,740 --> 00:02:28,230
+it took 3.12 seconds to build
+the list of a million random
+
+56
+00:02:28,230 --> 00:02:32,310
+numbers and then search it
+10,000 times for the random
+
+57
+00:02:32,310 --> 00:02:34,540
+numbers that's looking for.
+
+58
+00:02:34,540 --> 00:02:37,450
+So then why isn't the tree done?
+
+59
+00:02:37,450 --> 00:02:41,760
+Why isn't-- aren't trees
+supposed to be way more faster?
+
+60
+00:02:41,760 --> 00:02:43,360
+So here's what's going on.
+
+61
+00:02:43,360 --> 00:02:45,570
+Here's why the tree
+one is not done yet.
+
+62
+00:02:45,570 --> 00:02:48,120
+The finds are actually
+extremely fast,
+
+63
+00:02:48,120 --> 00:02:50,460
+but building the tree,
+recursing through it
+
+64
+00:02:50,460 --> 00:02:56,460
+over and over and over again,
+is what's taking longer.
+
+65
+00:02:56,460 --> 00:02:58,370
+So the building
+the tree is longer,
+
+66
+00:02:58,370 --> 00:03:00,920
+but the searching it, as you'll
+see as soon as it finishes,
+
+67
+00:03:00,920 --> 00:03:02,040
+is much faster.
+
+68
+00:03:02,040 --> 00:03:02,790
+And there it is.
+
+69
+00:03:02,790 --> 00:03:07,440
+So how long did it take it
+to search 10,000 numbers?
+
+70
+00:03:07,440 --> 00:03:11,220
+Less than a second,
+4/100 of a second.
+
+71
+00:03:11,220 --> 00:03:14,840
+So how much faster is 4/100
+of a second versus three full
+
+72
+00:03:14,840 --> 00:03:15,980
+seconds?
+
+73
+00:03:15,980 --> 00:03:18,140
+Not quite a-- not quite
+an order of magnitude
+
+74
+00:03:18,140 --> 00:03:21,480
+of 100, but much,
+much, much faster.
+
+75
+00:03:21,480 --> 00:03:23,030
+So the finds were
+definitely faster,
+
+76
+00:03:23,030 --> 00:03:26,850
+but it took a little bit longer
+to build the tree itself.
+
+77
+00:03:26,850 --> 00:03:28,730
+So then if you're
+thinking, well,
+
+78
+00:03:28,730 --> 00:03:31,700
+how do I know then
+which one to use when?
+
+79
+00:03:31,700 --> 00:03:33,870
+I would say if you have to--
+
+80
+00:03:33,870 --> 00:03:37,040
+if your application requires
+you to rebuild your data
+
+81
+00:03:37,040 --> 00:03:39,980
+set over and over and
+over and over and over,
+
+82
+00:03:39,980 --> 00:03:45,110
+then maybe a list, or
+honestly, probably, you're
+
+83
+00:03:45,110 --> 00:03:47,720
+better off using a NumPy Array
+because the underlying data
+
+84
+00:03:47,720 --> 00:03:49,620
+types will be in C,
+that'll be faster.
+
+85
+00:03:49,620 --> 00:03:52,430
+But I would recommend a NumPy
+Array or a Pandas DataFrame.
+
+86
+00:03:52,430 --> 00:03:54,210
+But what if you're
+building something
+
+87
+00:03:54,210 --> 00:03:55,835
+where you're adding
+to it over and over
+
+88
+00:03:55,835 --> 00:03:58,200
+and over again, like
+an index in a database
+
+89
+00:03:58,200 --> 00:04:01,560
+or the nodes in a
+network you're building?
+
+90
+00:04:01,560 --> 00:04:03,310
+You're just adding
+more and more and more.
+
+91
+00:04:03,310 --> 00:04:06,660
+Then I would definitely say a
+list because the find, insert,
+
+92
+00:04:06,660 --> 00:04:10,470
+and deletes are
+going to be quicker.
+
+93
+00:04:10,470 --> 00:04:12,472
+So there you go.
+
+94
+00:04:12,472 --> 00:04:15,000
+You can see tree definitely
+won in finding it,
+
+95
+00:04:15,000 --> 00:04:16,470
+but it took longer to build.
+
+96
+00:04:16,470 --> 00:04:20,910
+So is there one final answer
+for when to use this data
+
+97
+00:04:20,910 --> 00:04:21,810
+structure always?
+
+98
+00:04:21,810 --> 00:04:22,600
+It depends.
+
+99
+00:04:22,600 --> 00:04:25,900
+It depends on your application
+and what exactly you're doing.
+
+100
+00:04:25,900 --> 00:04:29,020
+But tree is a very useful one.
+
+101
+00:04:29,020 --> 00:04:34,230
+It gets you order log
+n time and is fast.
+
+102
+00:04:34,230 --> 00:04:40,000
+OK, so there is our content
+video for list versus trees,
+
+103
+00:04:40,000 --> 00:04:42,520
+in this case, a binary
+search tree in Python.
+
+104
+00:04:42,520 --> 00:04:44,720
+Thanks so much for watching.

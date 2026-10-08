@@ -1,0 +1,418 @@
+1
+00:00:02,910 --> 00:00:04,630
+Hello everyone and welcome to the content
+
+2
+00:00:04,630 --> 00:00:07,370
+video going over section
+2.9 of your textbook.
+
+3
+00:00:07,470 --> 00:00:11,890
+It says intro to data science, basic
+descriptive statistics, but really
+
+4
+00:00:11,890 --> 00:00:15,690
+we're going to talk about min,
+max, and range in this video. So
+
+5
+00:00:15,690 --> 00:00:18,430
+rather than going through the
+textbook and reading through all these
+
+6
+00:00:18,430 --> 00:00:22,970
+examples, I'm just going to jump over
+into my code space and we're just
+
+7
+00:00:22,970 --> 00:00:27,700
+going to do a couple of examples
+together. So min, max, and range.
+
+8
+00:00:28,310 --> 00:00:33,050
+So very first, and the reason
+we're just jumping into examples is
+
+9
+00:00:33,050 --> 00:00:36,290
+because these are fairly straightforward
+concepts. So there's just
+
+10
+00:00:36,290 --> 00:00:38,970
+there are three functions that
+we'll use. The first one is min.
+
+11
+00:00:39,790 --> 00:00:43,070
+Let's make a variable.
+We'll call it minimum.
+
+12
+00:00:44,110 --> 00:00:46,170
+That's probably not
+spelled right. So if I
+
+13
+00:00:46,170 --> 00:00:48,930
+know that's a function.
+Let's call it min.
+
+14
+00:00:49,630 --> 00:00:51,470
+That's my variable name. Whoops.
+
+15
+00:00:52,930 --> 00:00:57,930
+And I am going to set it equal to
+or assign it the value of the result
+
+16
+00:00:57,930 --> 00:01:03,070
+of the function call of the minimum
+function. And what the minimum
+
+17
+00:01:03,070 --> 00:01:07,520
+function needs is it needs some
+kind of a comma separated list of
+
+18
+00:01:07,520 --> 00:01:10,330
+values. So I'm going to give it one.
+I'm going to say one, two, three,
+
+19
+00:01:10,330 --> 00:01:15,710
+four, five, and let's just call it
+good for there. If I run this, we
+
+20
+00:01:15,710 --> 00:01:18,890
+would expect to see the output. Oh,
+I should probably print the output.
+
+21
+00:01:24,030 --> 00:01:26,990
+If I run this, we would
+expect the minimum function
+
+22
+00:01:26,990 --> 00:01:30,090
+to return to us one. But
+what if I was to throw on
+
+23
+00:01:30,090 --> 00:01:33,070
+maybe, I don't know, negative
+five at the end of there?
+
+24
+00:01:33,250 --> 00:01:35,550
+Then the minimum function
+would return to me
+
+25
+00:01:35,550 --> 00:01:38,850
+the smallest value within
+that set of values.
+
+26
+00:01:39,050 --> 00:01:42,410
+And similarly, I'm just
+gonna copy all this code and
+
+27
+00:01:42,410 --> 00:01:45,700
+paste it down here, except
+I'm gonna change it to max.
+
+28
+00:01:47,590 --> 00:01:52,090
+The maximum, or did I say that
+right? Yeah, the maximum function
+
+29
+00:01:52,090 --> 00:01:59,670
+returns us the biggest value in the
+set. So if I run this on the exact
+
+30
+00:01:59,670 --> 00:02:04,370
+same list of numbers, which is why
+I copied it, then we should see
+
+31
+00:02:04,370 --> 00:02:09,690
+our output being 5. And that would
+be true if I threw on a bigger
+
+32
+00:02:09,690 --> 00:02:13,470
+number here, it would give me the
+biggest number in that result list.
+
+33
+00:02:13,910 --> 00:02:20,670
+So then we get to the range
+function which kind of gives us
+
+34
+00:02:20,670 --> 00:02:27,510
+sets of values that we could
+use min or max on so let's write
+
+35
+00:02:27,510 --> 00:02:29,830
+let's do an example here i'm
+going to make a variable i'll call
+
+36
+00:02:29,830 --> 00:02:34,460
+it r and i'm going to assign it
+the value of the range function
+
+37
+00:02:35,030 --> 00:02:38,590
+and let's do a range of 10
+and then let's just print out
+
+38
+00:02:39,550 --> 00:02:45,470
+what that gives me you guys
+can kind of see for yourself
+
+39
+00:02:48,610 --> 00:02:55,650
+oh hang on actually this is accurate
+so it's just kind of a silly
+
+40
+00:02:55,650 --> 00:02:58,910
+example let me let me do something
+slightly different let me say I'm going
+
+41
+00:02:58,910 --> 00:03:01,210
+to do a for loop which you may or
+may not know at this point in the
+
+42
+00:03:01,210 --> 00:03:09,330
+course that's all right I'm going
+to say for i in range 10 print i so
+
+43
+00:03:09,330 --> 00:03:12,710
+what we're doing is instead of just
+printing out the entire range of
+
+44
+00:03:12,710 --> 00:03:17,230
+numbers which this right here in our
+output that did print out the range.
+
+45
+00:03:17,230 --> 00:03:21,110
+0 to 10 is is the range that we
+gave it and that's what it printed
+
+46
+00:03:21,110 --> 00:03:24,150
+out. What we're going to do is we're
+going to we're going to loop through
+
+47
+00:03:24,150 --> 00:03:27,230
+our range. Now we're going to print
+out the numbers one at a time.
+
+48
+00:03:27,610 --> 00:03:32,970
+So now in our output you can see
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+49
+00:03:32,970 --> 00:03:38,250
+Now that is a range of 10 numbers
+right because we start at 0 and
+
+50
+00:03:38,250 --> 00:03:43,790
+0 counts as a number, we go up to
+9. So it is 10 numbers, but it goes
+
+51
+00:03:43,790 --> 00:03:48,230
+up to but not including the number
+that we input into our range.
+
+52
+00:03:48,370 --> 00:03:51,850
+Notice what changes when I say 1,
+
+53
+00:03:52,130 --> 00:03:53,330
+10.
+
+54
+00:03:54,190 --> 00:03:56,870
+So I want a range of
+numbers from 1 to 10.
+
+55
+00:03:57,290 --> 00:04:01,970
+We get 1, 2, 3, 4, 5, 6, 7, 8,
+9. So still not including 10. And
+
+56
+00:04:01,970 --> 00:04:05,000
+in this case, how many numbers
+do we actually output? It's only
+
+57
+00:04:05,000 --> 00:04:08,790
+9 numbers, right? So we got 1,
+2, 3, 4, 5, 6, 7, 8, 9, right? So
+
+58
+00:04:09,170 --> 00:04:14,630
+that's only nine numbers we're
+not getting a range of 10 numbers
+
+59
+00:04:14,630 --> 00:04:18,290
+even though we're giving it
+the value of 10 to give us a
+
+60
+00:04:18,290 --> 00:04:23,730
+range up to so if we wanted to
+include something like 10 in our
+
+61
+00:04:23,730 --> 00:04:26,830
+upper limit we could do a plus
+one on the end of our range
+
+62
+00:04:26,830 --> 00:04:31,370
+function and that would give us
+10 or we could just tell ourselves
+
+63
+00:04:31,370 --> 00:04:33,650
+computers start counting at
+zero and so if I wanted to
+
+64
+00:04:33,650 --> 00:04:36,730
+include a number, I just need to
+go one bigger than that number.
+
+65
+00:04:37,100 --> 00:04:38,490
+And there it is.
+
+66
+00:04:38,630 --> 00:04:44,450
+The range function also has
+a cool thing called a step,
+
+67
+00:04:44,470 --> 00:04:48,690
+and so if I was to throw
+in maybe negative 1 here,
+
+68
+00:04:49,030 --> 00:04:50,770
+actually this might break.
+
+69
+00:04:51,030 --> 00:04:55,250
+Yeah, it didn't really print
+anything. Let's do a range of 1
+
+70
+00:04:55,250 --> 00:05:00,830
+to negative 10, and the step
+of negative 1 is actually going
+
+71
+00:05:00,830 --> 00:05:03,540
+to give us a backwards range.
+So instead of going forwards,
+
+72
+00:05:03,950 --> 00:05:07,630
+one, the default is for it to
+just give us a step of one going
+
+73
+00:05:07,630 --> 00:05:11,210
+forwards. That's why we get a
+normal looking range of numbers. But
+
+74
+00:05:11,210 --> 00:05:13,570
+if I gave it a step of negative
+one, it would count backwards.
+
+75
+00:05:13,750 --> 00:05:15,950
+So here we've got zero,
+negative one. Actually,
+
+76
+00:05:15,950 --> 00:05:19,330
+it starts at one. It
+goes to negative nine.
+
+77
+00:05:20,010 --> 00:05:23,270
+I could also give it a
+step of negative two. And
+
+78
+00:05:23,270 --> 00:05:26,250
+I maybe ask yourself, what
+should that give us before
+
+79
+00:05:26,250 --> 00:05:28,490
+I run the code and maybe
+see if you can guess.
+
+80
+00:05:29,050 --> 00:05:35,050
+So this gives us every other negative
+number going up to negative 9.
+
+81
+00:05:35,430 --> 00:05:39,030
+And the same would be true if
+we change this to positive.
+
+82
+00:05:39,030 --> 00:05:42,790
+So a step of 1 to 10, or
+sorry, a range of 1 to 10, step
+
+83
+00:05:42,790 --> 00:05:46,810
+of 2 would give us positive
+numbers every other number.
+
+84
+00:05:46,810 --> 00:05:49,430
+And we could do that step of
+however many. So that's everything
+
+85
+00:05:49,430 --> 00:05:51,290
+for this content video.
+Thanks Thanks for watching.
